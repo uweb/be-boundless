@@ -1,45 +1,95 @@
 .uw-homepage-slider {
-  height: 500px;
-
+  &.uw-hero-image {
+    height: auto;
+    &:after {
+      left: 0;
+      opacity: .4;
+    }
+  }
+  &.uw-homepage-slider {
+    &:before {
+      display: none;
+    }
+  }
   .hero-container {
     width:1280px;
     padding: 10px 0;
-
+    height: 520px;
+    position: relative;
     h1 {
       color: @purple;
-      font-size: @font-size-base * 3.8;
+      font-weight: @ultra-font-weight;
+      font-size: 80px;
       text-transform: uppercase;
+      padding-right: 60px;
+      margin: 60px 0 0 0;
     }
 
     .udub-slant {
-      display:block;
-      height:17px;
-      width: 260px;
-      background-color:@purple;
-      margin: 35px 0 25px 0;
+      overflow: hidden;
+      display: block;
+      span {
+        transform: skewX(-25deg);
+        display:block;
+        height:15px;
+        width: 290px;
+        background-color:@purple;
+        margin: 25px 0 15px -30px;
+      }
     }
-
-    a {
-      color:@purple;
-      text-transform: uppercase;
-      font-weight:700;
-      margin-left: 5px;
-      padding-right: 20px;
-      background: url(/wp-content/themes/uw-2014/assets/svg/caret.svg) right center no-repeat;
-      background-size: 10%;
+    p {
+//      font-family: @font-family-headline;
+//      font-weight: @body-font-weight;
+      padding-right: 200px;
+      font-size: 18px;
+      line-height: 26px;
+      a {
+        font-family: @font-family-headline;
+        font-weight: 500;
+        color:@purple;
+        text-transform: uppercase;
+        font-weight:700;
+        margin-left: 5px;
+        padding-right: 20px;
+        position: relative;
+        &:after {
+          background: url(/wp-content/themes/uw-2014/assets/svg/uw-sprite.svg) no-repeat -353px -51px;
+          content: "";
+          position: absolute;
+          right: -4px;
+          top: 4px;
+          width: 20px;
+          height: 20px;
+        }        
+      }
     }
-
   }
 
   .uw-boundless {
     position:relative;
-    font-size: @font-size-base * 2;
+    padding-bottom: 35px;
+    display: block;
+    font-size: 40px;
+    font-family: @font-family-headline;
+    font-weight: @ultra-font-weight;
     text-transform: uppercase;
     font-style: italic;
-    font-weight: 700;
     color: white;
     z-index: 1;
+    &:after {
+      background: url(/wp-content/themes/uw-2014/assets/svg/uw-sprite.svg) no-repeat -630px 0px;
+      content: "";
+      position: absolute;
+      right: -44px;
+      bottom: 0                            ;
+      width: 38px;
+      height: 112px;
+    }
   }
-
+  .slideshow-controls {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+  }
 
 }

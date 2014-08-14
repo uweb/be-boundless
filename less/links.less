@@ -7,15 +7,44 @@
   ul {
 
     li {
-      float:left;
-      padding:120px 40px 40px 50px;
-      text-transform:uppercase;
+      
       a {
+        font-family: @font-family-headline;
         color: @purple;
-        font-weight:700;
+        font-weight:800;
+        background: url(assets/svg/icons.svg) no-repeat 52px 10px;
+        text-align: center;
+        display: block;
+        width: 14%;
+        float:left;
+        padding: 70px 0 10px;
+        margin: 50px 0;
+        -moz-box-sizing: border-box; 
+        -webkit-box-sizing: border-box; 
+        box-sizing: border-box;
+        text-transform:uppercase;
+        border-right: 1px solid #EBEBEB;
+      }
+      &:nth-child(2) a {
+        background-position: -66px 10px;
+      }
+      &:nth-child(3) a {
+        background-position: -205px 10px;
+      }
+      &:nth-child(4) a {
+        background-position: -349px 10px;
+      }
+      &:nth-child(5) a {
+        background-position: -498px 10px;
+      }
+      &:nth-child(6) a {
+        background-position: -628px 10px;
+      }
+      &:nth-child(7) a {
+        background-position: -777px 10px;
+        border: none;
       }
     }
-
   }
 
 }

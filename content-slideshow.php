@@ -2,11 +2,11 @@
   <div class="container hero-container vertical-center">
 
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-8">
 
         <h1><?php the_title(); ?></h1>
 
-        <span class="udub-slant"></span>
+        <span class="udub-slant"><span></span></span>
 
         <p> <?php the_content(); ?> </p>
 
@@ -14,10 +14,8 @@
 
     </div>
 
-    <div class="row">
-      <div class="col-md-3 col-md-offset-8">
+    <div class="slideshow-controls">
         <span class="uw-boundless">Be Boundless</span>
-      </div>
     </div>
 
   </div>
