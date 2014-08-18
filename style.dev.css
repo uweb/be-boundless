@@ -1,0 +1,173 @@
+/*!
+Theme Name: UW Boundless
+Theme URI: washington.edu
+Description: The 2014 homepage theme
+Author: UW Web Team
+Author URI: http://uw.edu/
+Template: uw-2014
+Version: 0.1
+*/
+.uw-homepage-slider.uw-hero-image {
+  height: auto;
+}
+.uw-homepage-slider.uw-hero-image:after {
+  left: 0;
+  opacity: .4;
+}
+.uw-homepage-slider.uw-homepage-slider:before {
+  display: none;
+}
+.uw-homepage-slider .hero-container {
+  width: 1280px;
+  padding: 10px 0;
+  height: 520px;
+  position: relative;
+}
+.uw-homepage-slider .hero-container h1 {
+  color: #4b2e83;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 80px;
+  text-transform: uppercase;
+  padding-right: 60px;
+  margin: 60px 0 0 0;
+}
+.uw-homepage-slider .hero-container .udub-slant {
+  overflow: hidden;
+  display: block;
+}
+.uw-homepage-slider .hero-container .udub-slant span {
+  transform: skewX(-25deg);
+  display: block;
+  height: 15px;
+  width: 290px;
+  background-color: #4b2e83;
+  margin: 25px 0 15px -30px;
+}
+.uw-homepage-slider .hero-container p {
+  padding-right: 200px;
+  font-size: 18px;
+  line-height: 26px;
+}
+.uw-homepage-slider .hero-container p a {
+  font-family: "Encode Sans Compressed", sans-serif;
+  font-weight: 500;
+  color: #4b2e83;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-left: 5px;
+  padding-right: 20px;
+  position: relative;
+}
+.uw-homepage-slider .hero-container p a:after {
+  background: url(/wp-content/themes/uw-2014/assets/svg/uw-sprite.svg) no-repeat -353px -51px;
+  content: "";
+  position: absolute;
+  right: -4px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+}
+.uw-homepage-slider .uw-boundless {
+  position: relative;
+  padding-bottom: 35px;
+  display: block;
+  font-size: 40px;
+  font-family: "Encode Sans Compressed", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-style: italic;
+  color: white;
+  z-index: 1;
+}
+.uw-homepage-slider .uw-boundless:after {
+  background: url(/wp-content/themes/uw-2014/assets/svg/uw-sprite.svg) no-repeat -630px 0px;
+  content: "";
+  position: absolute;
+  right: -44px;
+  bottom: 0                            ;
+  width: 38px;
+  height: 112px;
+}
+.uw-homepage-slider .slideshow-controls {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+.uw-links {
+  position: relative;
+  margin-top: -20px;
+  background-color: white;
+}
+.uw-links ul li a {
+  font-family: "Encode Sans Compressed", sans-serif;
+  color: #4b2e83;
+  font-weight: 800;
+  background: url(assets/svg/icons.svg) no-repeat 52px 10px;
+  text-align: center;
+  display: block;
+  width: 14%;
+  float: left;
+  padding: 70px 0 10px;
+  margin: 50px 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  border-right: 1px solid #EBEBEB;
+}
+.uw-links ul li:nth-child(2) a {
+  background-position: -66px 10px;
+}
+.uw-links ul li:nth-child(3) a {
+  background-position: -205px 10px;
+}
+.uw-links ul li:nth-child(4) a {
+  background-position: -349px 10px;
+}
+.uw-links ul li:nth-child(5) a {
+  background-position: -498px 10px;
+}
+.uw-links ul li:nth-child(6) a {
+  background-position: -628px 10px;
+}
+.uw-links ul li:nth-child(7) a {
+  background-position: -777px 10px;
+  border: none;
+}
+.uw-charts {
+  position: relative;
+  padding: 60px;
+  background-color: #ECE9E2;
+}
+.uw-charts h4 {
+  color: #4b2e83;
+}
+.uw-charts .legend {
+  color: #4b2e83;
+  font-weight: 300;
+  margin: 15px 0;
+}
+.uw-charts .legend span {
+  float: left;
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px 0 0;
+}
+.uw-charts .uw-fast-facts {
+  position: absolute;
+  left: 45%;
+  top: 40%;
+  padding: 10px 50px;
+  background-color: #4b2e83;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/*==========  Non-Mobile First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
