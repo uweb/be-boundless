@@ -12,7 +12,7 @@
         font-family: @font-family-headline;
         color: @purple;
         font-weight:800;
-        background: url(assets/svg/icons.svg) no-repeat 52px 10px;
+        background: url(assets/svg/icons.svg) no-repeat 52px -100px;
         text-align: center;
         display: block;
         width: 14%;
@@ -24,25 +24,47 @@
         box-sizing: border-box;
         text-transform:uppercase;
         border-right: 1px solid #EBEBEB;
+        transition: all .1s ease-in-out;
+        &:hover {
+          background-position: 52px 2px;
+        }
       }
       &:nth-child(2) a {
-        background-position: -66px 10px;
+        background-position: -66px -100px;
+        &:hover {
+          background-position: -66px 2px;
+        }
       }
       &:nth-child(3) a {
-        background-position: -205px 10px;
+        background-position: -205px -100px;
+        &:hover {
+          background-position: -205px 2px;
+        }
       }
       &:nth-child(4) a {
-        background-position: -349px 10px;
+        background-position: -349px -100px;
+        &:hover {
+          background-position: -349px 2px;
+        }
       }
       &:nth-child(5) a {
-        background-position: -498px 10px;
+        background-position: -498px -100px;
+        &:hover {
+          background-position: -498px 2px;
+        }
       }
       &:nth-child(6) a {
-        background-position: -628px 10px;
+        background-position: -628px -100px;
+        &:hover {
+          background-position: -628px 2px;
+        }
       }
       &:nth-child(7) a {
-        background-position: -777px 10px;
+        background-position: -777px -100px;
         border: none;
+        &:hover {
+          background-position: -777px 2px;
+        }
       }
     }
   }

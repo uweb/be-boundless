@@ -68,7 +68,8 @@
       }
     ]
     , options = {
-        showTooltips: false
+        showTooltips: false,
+        segmentShowStroke : false
     };
 
     var ctx = document.getElementById('about-the-uw').getContext("2d")
