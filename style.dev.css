@@ -31,7 +31,7 @@ Version: 0.1
   font-weight: 900;
   text-transform: uppercase;
   padding-right: 60px;
-  margin: 60px 0 0 0;
+  margin: 50px 0 0 0;
 }
 .uw-homepage-slider .hero-container .udub-slant {
   overflow: hidden;
@@ -95,7 +95,7 @@ Version: 0.1
     font-size: 80px;
     line-height: 80px;
     padding-right: 60px;
-    margin: 60px 0 0;
+    margin: 50px 0 0;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
@@ -156,7 +156,7 @@ Version: 0.1
     padding: 0 0 140px 0;
   }
   .uw-homepage-slider .hero-container h1 {
-    font-size: 30px;
+    font-size: 27px;
     line-height: 30px;
     padding-right: 0;
     margin: 0;
@@ -198,12 +198,11 @@ Version: 0.1
   font-family: "Encode Sans Compressed", sans-serif;
   color: #4b2e83;
   font-weight: 800;
-  background: url(assets/svg/icons.svg) no-repeat 52px -100px;
   text-align: center;
   display: block;
   width: 14%;
   float: left;
-  padding: 70px 0 10px;
+  padding: 10px 0 0;
   margin: 50px 0;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -212,45 +211,38 @@ Version: 0.1
   border-right: 1px solid #EBEBEB;
   transition: all 0.1s ease-in-out;
 }
-.uw-links ul li a:hover {
-  background-position: 52px 2px;
+.uw-links ul li a:hover svg {
+  transform: scale(1.15);
+  transition: all 0.1s ease;
+  transform-origin: center center;
 }
-.uw-links ul li:nth-child(2) a {
-  background-position: -66px -100px;
+.uw-links ul li a:hover svg path {
+  fill: #4b2e83;
 }
-.uw-links ul li:nth-child(2) a:hover {
-  background-position: -66px 2px;
+.uw-links ul li a span {
+  display: block;
 }
-.uw-links ul li:nth-child(3) a {
-  background-position: -205px -100px;
-}
-.uw-links ul li:nth-child(3) a:hover {
-  background-position: -205px 2px;
-}
-.uw-links ul li:nth-child(4) a {
-  background-position: -349px -100px;
-}
-.uw-links ul li:nth-child(4) a:hover {
-  background-position: -349px 2px;
-}
-.uw-links ul li:nth-child(5) a {
-  background-position: -498px -100px;
-}
-.uw-links ul li:nth-child(5) a:hover {
-  background-position: -498px 2px;
-}
-.uw-links ul li:nth-child(6) a {
-  background-position: -628px -100px;
-}
-.uw-links ul li:nth-child(6) a:hover {
-  background-position: -628px 2px;
-}
-.uw-links ul li:nth-child(7) a {
-  background-position: -777px -100px;
+.uw-links ul li:last-child a {
   border: none;
 }
-.uw-links ul li:nth-child(7) a:hover {
-  background-position: -777px 2px;
+@media only screen and (max-width: 767px) {
+  .uw-links {
+    padding: 3% 0;
+  }
+  .uw-links ul li {
+    padding: 0 5%;
+  }
+  .uw-links ul li a {
+    width: 23%;
+    padding: 10px 0;
+    margin: 10px 5%;
+    font-size: 13px;
+    line-height: 14px;
+    border-right: none;
+  }
+  .uw-links ul li a span {
+    padding-top: 6px;
+  }
 }
 .uw-charts {
   position: relative;

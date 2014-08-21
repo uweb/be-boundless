@@ -12,12 +12,12 @@
         font-family: @font-family-headline;
         color: @purple;
         font-weight:800;
-        background: url(assets/svg/icons.svg) no-repeat 52px -100px;
+//      background: url(assets/svg/icons.svg) no-repeat 52px -100px;
         text-align: center;
         display: block;
         width: 14%;
         float:left;
-        padding: 70px 0 10px;
+        padding: 10px 0 0;
         margin: 50px 0;
         -moz-box-sizing: border-box; 
         -webkit-box-sizing: border-box; 
@@ -25,47 +25,86 @@
         text-transform:uppercase;
         border-right: 1px solid #EBEBEB;
         transition: all .1s ease-in-out;
-        &:hover {
-          background-position: 52px 2px;
+        &:hover svg {
+          // background-position: 52px 2px;                    
+          transform: scale(1.15);
+          transition: all 0.1s ease;
+          transform-origin: center center;
+          path {
+            fill: @purple;
+          }
         }
-      }
-      &:nth-child(2) a {
-        background-position: -66px -100px;
-        &:hover {
-          background-position: -66px 2px;
+        span {
+          display: block;
         }
+
       }
-      &:nth-child(3) a {
-        background-position: -205px -100px;
-        &:hover {
-          background-position: -205px 2px;
-        }
+       &:last-child a  {
+         border: none;
+       }
+
+//     &:nth-child(2) a {
+//       background-position: -66px -100px;
+//       &:hover {
+//         background-position: -66px 2px;
+//       }
+//     }
+//     &:nth-child(3) a {
+//       background-position: -205px -100px;
+//       &:hover {
+//         background-position: -205px 2px;
+//       }
+//     }
+//     &:nth-child(4) a {
+//       background-position: -349px -100px;
+//       &:hover {
+//         background-position: -349px 2px;
+//       }
+//     }
+//     &:nth-child(5) a {
+//       background-position: -498px -100px;
+//       &:hover {
+//         background-position: -498px 2px;
+//       }
+//     }
+//     &:nth-child(6) a {
+//       background-position: -628px -100px;
+//       &:hover {
+//         background-position: -628px 2px;
+//       }
+//     }
+//     &:nth-child(7) a {
+//       background-position: -777px -100px;
+//       border: none;
+//       &:hover {
+//         background-position: -777px 2px;
+//       }
+//     }
+    }
+  }
+
+}
+
+
+// Mobile
+
+@media only screen and (max-width : 767px) {
+
+  .uw-links {
+    padding: 3% 0;
+    ul li {
+      padding: 0 5%;
+      a {
+      width: 23%;
+      padding: 10px 0;
+      margin: 10px 5%;
+      font-size: 13px;
+      line-height: 14px;
+      border-right: none;
+      span {
+        padding-top: 6px;
       }
-      &:nth-child(4) a {
-        background-position: -349px -100px;
-        &:hover {
-          background-position: -349px 2px;
-        }
-      }
-      &:nth-child(5) a {
-        background-position: -498px -100px;
-        &:hover {
-          background-position: -498px 2px;
-        }
-      }
-      &:nth-child(6) a {
-        background-position: -628px -100px;
-        &:hover {
-          background-position: -628px 2px;
-        }
-      }
-      &:nth-child(7) a {
-        background-position: -777px -100px;
-        border: none;
-        &:hover {
-          background-position: -777px 2px;
-        }
-      }
+   }
     }
   }
 
