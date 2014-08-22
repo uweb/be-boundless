@@ -246,11 +246,27 @@ Version: 0.1
 }
 .uw-charts {
   position: relative;
-  padding: 60px;
+  padding: 40px 0 70px;
   background-color: #ECE9E2;
+}
+.uw-charts:after {
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  width: 100%;
+  content: "";
+  background: url('/wp-content/themes/uw-2014/assets/images/stripes-dark.png');
+  opacity: .2;
+}
+.uw-charts .pie {
+  padding: 40px 0 0 60px;
+}
+.uw-charts .cloud {
+  padding: 0 0 0 20px;
 }
 .uw-charts h4 {
   color: #4b2e83;
+  text-align: center;
 }
 .uw-charts .legend {
   color: #4b2e83;
@@ -267,7 +283,7 @@ Version: 0.1
 .uw-charts .uw-fast-facts {
   position: absolute;
   left: 45%;
-  top: 40%;
+  top: 0;
   padding: 10px 50px;
   background-color: #4b2e83;
   color: white;

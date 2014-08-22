@@ -3,6 +3,7 @@
 
     <div class="row">
 
+<!--
       <div class="col-md-3">
         <canvas id="about-the-uw" width="250" height="250"></canvas>
       </div>
@@ -31,9 +32,19 @@
         </div>
 
       </div>
-      <div class="col-md-4 col-md-offset-2">
-        <h4> Interesting items about the UW </h4>
-        <img src="https://dl.dropboxusercontent.com/u/9658902/bar-chart.jpg" />
+
+-->
+
+      <div class="col-md-6">
+        <h4>About the UW</h4>
+        <img class="pie" src="https://dl.dropboxusercontent.com/u/953442/pie.png" />
+        <!-- <canvas id="interesting-uw" width="350" height="250"></canvas> -->
+      </div>
+
+
+      <div class="col-md-6">
+        <h4>Campus life</h4>
+        <img class="cloud" src="https://dl.dropboxusercontent.com/u/953442/chart.png" />
         <!-- <canvas id="interesting-uw" width="350" height="250"></canvas> -->
       </div>
 
