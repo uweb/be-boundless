@@ -248,6 +248,7 @@ Version: 0.1
   position: relative;
   padding: 40px 0 70px;
   background-color: #ECE9E2;
+  text-align: center;
 }
 .uw-charts:after {
   position: absolute;
@@ -258,15 +259,19 @@ Version: 0.1
   background: url('/wp-content/themes/uw-2014/assets/images/stripes-dark.png');
   opacity: .2;
 }
+.uw-charts img {
+  max-width: 100%;
+}
 .uw-charts .pie {
-  padding: 40px 0 0 60px;
+  padding: 40px 0 0 0;
 }
 .uw-charts .cloud {
-  padding: 0 0 0 20px;
+  padding: 0 0 0 30px;
 }
 .uw-charts h4 {
   color: #4b2e83;
   text-align: center;
+  margin: 40px 0 20px 0;
 }
 .uw-charts .legend {
   color: #4b2e83;
@@ -282,7 +287,8 @@ Version: 0.1
 }
 .uw-charts .uw-fast-facts {
   position: absolute;
-  left: 45%;
+  left: 50%;
+  margin-left: -95px;
   top: 0;
   padding: 10px 50px;
   background-color: #4b2e83;

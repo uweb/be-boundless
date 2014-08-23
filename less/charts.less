@@ -1,8 +1,10 @@
+  
 .uw-charts {
 
   position:relative;
   padding: 40px 0 70px;
   background-color: #ECE9E2;
+  text-align: center;
   &:after {
     position: absolute;
     bottom: 0;
@@ -12,19 +14,25 @@
     background: url('/wp-content/themes/uw-2014/assets/images/stripes-dark.png');
     opacity: .2;
   }
+  img {
+    max-width: 100%;
+  }
+
 
 // Temp pie adjustment
 
   .pie {
-    padding: 40px 0 0 60px;
+    padding: 40px 0 0 0;
   }
+
   .cloud {
-    padding: 0 0 0 20px;
+    padding: 0 0 0 30px;
   }
 
   h4 {
     color: @purple;
     text-align: center;
+    margin: 40px 0 20px 0;
   }
 
   .legend {
@@ -42,7 +50,8 @@
 
   .uw-fast-facts {
     position:absolute;
-    left:45%;
+    left: 50%;
+    margin-left: -95px;
     top:0;
     padding:10px 50px;
     background-color:@purple;
