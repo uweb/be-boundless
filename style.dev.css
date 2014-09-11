@@ -194,6 +194,10 @@ Version: 0.1
   margin-top: -20px;
   background-color: white;
 }
+.uw-links ul {
+  padding: 0;
+  list-style: none;
+}
 .uw-links ul li a {
   font-family: "Encode Sans Compressed", sans-serif;
   color: #4b2e83;
