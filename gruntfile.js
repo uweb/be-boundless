@@ -10,12 +10,13 @@ module.exports = function(grunt) {
         libraries: [
         ],
         theme : [
+          'js/uw.slider.js'
         ],
         components : [
           // todo: put just external components here for the uw.js we will give out
         ],
         src: [ 'js/uw.intro.js', '<%= concat.dist.libraries %>', '<%= concat.dist.theme %>', 'js/uw.outro.js' ],
-        dest: 'js/site.dev.js'
+        dest: 'js/homepage.dev.js'
       }
     },
     uglify: {
@@ -24,7 +25,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'js/site.js': ['<%= concat.dist.dest %>']
+          'js/homepage.js': ['<%= concat.dist.dest %>']
         }
       }
     },
