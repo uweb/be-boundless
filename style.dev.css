@@ -7,6 +7,10 @@ Author URI: http://uw.edu/
 Template: uw-2014
 Version: 0.1
 */
+.dropdown-arrow-inverse {
+  border-bottom-color: #4b2e83 !important;
+  border-top-color: #4b2e83 !important;
+}
 .uw-homepage-slider-container {
   position: relative;
   height: 520px;
@@ -14,7 +18,7 @@ Version: 0.1
 .uw-homepage-slider-container .slideshow-controls {
   position: absolute;
   bottom: 0;
-  right: 250px;
+  right: 30%;
 }
 .uw-homepage-slider-container .slideshow-controls .uw-boundless {
   position: relative;
@@ -27,22 +31,49 @@ Version: 0.1
   font-style: italic;
   color: white;
   z-index: 1;
+  text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.4);
 }
 .uw-homepage-slider-container .slideshow-controls .uw-boundless:after {
   background: url(/wp-content/themes/uw-2014/assets/svg/uw-sprite.svg) no-repeat -630px 0px;
   content: "";
   position: absolute;
   right: -44px;
-  bottom: 0                            ;
+  bottom: 0;
   width: 38px;
   height: 112px;
 }
 .uw-homepage-slider-container .slideshow-controls .next-headline {
+  font-family: "Encode Sans Compressed", sans-serif;
+  letter-spacing: .03em;
+  line-height: 1.3;
+  font-weight: 900;
+  text-transform: uppercase;
   position: absolute;
-  top: 50px;
-  color: red;
+  top: 10px;
+  color: white;
   width: 100%;
-  left: 310px;
+  left: 370px;
+  cursor: pointer;
+  text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.uw-homepage-slider-container .slideshow-controls .next-headline:after {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  content: "Next";
+  color: #b7a57a;
+  text-transform: uppercase;
+  font-style: italic;
+  text-shadow: none;
+}
+.uw-homepage-slider-container .slideshow-controls .next-headline:before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 10px;
+  width: 16px;
+  height: 28px;
+  background: url(/wp-content/themes/uw-2014/assets/svg/uw-sprite.svg) no-repeat -474px -55px;
 }
 .uw-homepage-slider-container .uw-homepage-slider.uw-hero-image {
   position: absolute;
@@ -75,9 +106,12 @@ Version: 0.1
 .uw-homepage-slider-container .uw-homepage-slider .hero-container .udub-slant {
   overflow: hidden;
   display: block;
+  margin-bottom: 10px;
 }
 .uw-homepage-slider-container .uw-homepage-slider .hero-container .udub-slant span {
-  transform: skewX(-25deg);
+  -webkit-transform: skew(-25deg, 0);
+  -ms-transform: skewX(-25deg) skewY(0);
+  transform: skew(-25deg, 0);
   display: block;
   height: 15px;
   width: 290px;
@@ -132,7 +166,7 @@ Version: 0.1
     padding-right: 0;
   }
   .uw-homepage-slider-container .slideshow-controls {
-    right: 40px;
+    right: 480px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -142,13 +176,17 @@ Version: 0.1
   .uw-homepage-slider-container .uw-homepage-slider .hero-container h1 {
     font-size: 52px;
     line-height: 52px;
-    padding-right: 40%;
+    padding-right: 10%;
     margin: 60px 0 0;
   }
   .uw-homepage-slider-container .uw-homepage-slider .hero-container p {
-    padding-right: 55%;
+    padding-right: 45%;
     font-size: 16px;
     line-height: 24px;
+  }
+  .uw-homepage-slider-container .slideshow-controls {
+    right: auto;
+    left: 50px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -158,10 +196,14 @@ Version: 0.1
   }
 }
 @media only screen and (max-width: 767px) {
+  .uw-homepage-slider-container {
+    height: auto;
+  }
   .uw-homepage-slider-container .uw-homepage-slider.uw-hero-image {
     padding: 30px;
     background: url(assets/images/venom-mobile.jpg) no-repeat right bottom #feeed7 !important;
     background-size: 278px !important;
+    position: static;
   }
   .uw-homepage-slider-container .uw-homepage-slider .hero-container {
     width: auto;
@@ -186,16 +228,27 @@ Version: 0.1
     width: 160px;
     margin: 20px 0 10px -30px;
   }
-  .uw-homepage-slider-container .uw-homepage-slider .slideshow-controls {
+  .uw-homepage-slider-container .slideshow-controls {
     position: absolute;
-    bottom: 0;
-    right: 30px;
+    left: 30px;
+    bottom: 40px;
   }
-  .uw-homepage-slider-container .uw-homepage-slider .slideshow-controls .uw-boundless {
+  .uw-homepage-slider-container .slideshow-controls .uw-boundless {
+    display: none;
+  }
+  .uw-homepage-slider-container .slideshow-controls .next-headline {
+    position: static;
+    width: auto;
+  }
+  .uw-homepage-slider-container .slideshow-controls .next-headline:before {
+    right: 0;
+    left: auto;
+  }
+  .uw-homepage-slider-container .slideshow-controls .uw-boundless {
     font-size: 23px;
     padding-bottom: 0;
   }
-  .uw-homepage-slider-container .uw-homepage-slider .slideshow-controls .uw-boundless:after {
+  .uw-homepage-slider-container .slideshow-controls .uw-boundless:after {
     bottom: -58px;
   }
 }
@@ -224,6 +277,7 @@ Version: 0.1
   text-transform: uppercase;
   border-right: 1px solid #EBEBEB;
   transition: all 0.1s ease-in-out;
+  line-height: 1.3;
 }
 .uw-links ul li a:hover svg {
   transform: scale(1.15);
@@ -235,6 +289,7 @@ Version: 0.1
 }
 .uw-links ul li a span {
   display: block;
+  margin-top: 10px;
 }
 .uw-links ul li:last-child a {
   border: none;
