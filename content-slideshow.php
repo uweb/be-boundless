@@ -28,7 +28,7 @@
       <div class="slideshow-controls">
           <span class="uw-boundless">Be Boundless</span>
 
-          <span class="next-headline"></span>
+          <p class="next-headline"></p>
       </div>
 
 </div>
