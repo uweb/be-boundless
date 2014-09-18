@@ -1,6 +1,6 @@
 <div class="uw-homepage-slider-container">
 
-  <?php foreach ( UW_Slideshow::get_latest_slideshow() as $slide ) : $slide = (object) $slide; ?>
+  <?php if ( class_exists('UW_Slideshow') ) : foreach ( UW_Slideshow::get_latest_slideshow() as $slide ) : ?>
 
   <div class="uw-hero-image uw-homepage-slider"  style="background:url(<?php echo $slide->image; ?>) no-repeat center; background-size:cover;">
     <div class="container hero-container vertical-center">
@@ -23,7 +23,7 @@
 
   </div>
 
-  <?php endforeach; ?>
+  <?php endforeach; endif;?>
 
       <div class="slideshow-controls">
           <span class="uw-boundless">Be Boundless</span>
