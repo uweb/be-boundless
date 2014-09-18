@@ -136,7 +136,6 @@ Version: 0.1
 .uw-homepage-slider-container .uw-homepage-slider .hero-container a.uw-btn {
   background-color: white;
   position: relative;
-  z-index: 1;
 }
 @media only screen and (min-width: 1401px) {
   .uw-homepage-slider-container .uw-homepage-slider .hero-container h1 {
@@ -198,11 +197,12 @@ Version: 0.1
 }
 @media only screen and (max-width: 767px) {
   .uw-homepage-slider-container {
-    height: auto;
+    height: 500px;
   }
   .uw-homepage-slider-container .uw-homepage-slider.uw-hero-image {
     padding: 30px;
-    position: static;
+    position: absolute;
+    height: 500px;
   }
   .uw-homepage-slider-container .uw-homepage-slider .hero-container {
     width: auto;
@@ -240,7 +240,7 @@ Version: 0.1
     width: auto;
   }
   .uw-homepage-slider-container .slideshow-controls .next-headline:before {
-    right: 0;
+    right: -20px;
     left: auto;
   }
   .uw-homepage-slider-container .slideshow-controls .uw-boundless {

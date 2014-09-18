@@ -126,7 +126,6 @@
         background-color: white;
         // Brings button to the front
         position: relative;
-        z-index: 1;
       }
     }
 
@@ -221,66 +220,61 @@
   }
 
 
-  @media only screen and (max-width : 767px) {
-    .uw-homepage-slider-container {
-      height: auto;
-      .uw-homepage-slider {
-        &.uw-hero-image {
+ @media only screen and (max-width : 767px) {
+   .uw-homepage-slider-container {
+     height: 500px;
+     .uw-homepage-slider {
+       &.uw-hero-image {
           padding: 30px;
-          // background: url(assets/images/venom-mobile.jpg) no-repeat right bottom #feeed7 !important;
-          // background-size: 278px !important;
-          position: static;
-        }
-        .hero-container {
+          position: absolute;
+          height: 500px;
+       }
+       .hero-container {
           width: auto;
           height: auto;
           padding: 0 0 140px 0;
-          h1 {
-            font-size: 27px;
-            line-height: 30px;
-            padding-right: 0;
-            margin: 0;
-          }
-          p {
-            padding-right: 0;
-            font-size: 16px;
-            line-height: 24px;
-          }
-          .udub-slant span {
-            transform: skewX(-25deg);
-            display: block;
-            height: 10px;
-            width: 160px;
-            margin: 20px 0 10px -30px;
-          }
-        }
-      }
-
-
-      .slideshow-controls {
-        position: absolute;
-        left: 30px;
-        bottom: 40px;
-        .uw-boundless {
-          display: none;
-        }
-        .next-headline {
-          position: static;
-          width: auto;
-          &:before {
-            right: 0;
-            left: auto;
-          }
-        }
-        .uw-boundless {
-          font-size: 23px;
-          padding-bottom: 0;
-          &:after {
-            bottom: -58px;
-          }
-        }
-      }
-
-
-    }
-  }
+         h1 {
+           font-size: 27px;
+           line-height: 30px;
+           padding-right: 0;
+           margin: 0;
+         }
+         p {
+           padding-right: 0;
+           font-size: 16px;
+           line-height: 24px;
+         }
+         .udub-slant span {
+           transform: skewX(-25deg);
+           display: block;
+           height: 10px;
+           width: 160px;
+           margin: 20px 0 10px -30px;
+         }
+       }
+     }
+     .slideshow-controls {
+       position: absolute;
+       left: 30px;
+       bottom: 40px;
+       .uw-boundless {
+         display: none;
+       }
+       .next-headline {
+         position: static;
+         width: auto;
+         &:before {
+           right: -20px;
+           left: auto;
+         }
+       }
+       .uw-boundless {
+         font-size: 23px;
+         padding-bottom: 0;
+         &:after {
+           bottom: -58px;
+         }
+       }
+     }
+   }
+ }
