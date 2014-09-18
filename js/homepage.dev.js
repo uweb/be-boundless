@@ -9,7 +9,10 @@ UW.HomepageSlider = Backbone.View.extend({
   el : '.uw-homepage-slider-container',
 
   slides : '.uw-homepage-slider',
+
   headline : '.next-headline',
+
+  template : '<p class="next-headline slide-<%= slide %>" style="display:block;"><%= title %></p>',
 
   events : {
     'click .next-headline' : 'nextSlide',
@@ -17,7 +20,7 @@ UW.HomepageSlider = Backbone.View.extend({
 
   initialize : function( options )
   {
-    _.bindAll( this, 'nextSlide', 'changeNextArticle' )
+    _.bindAll( this, 'render', 'nextSlide', 'changeNextArticle' )
     this.count = this.$el.children( this.slides ).length
     this.showNextHeadline()
     this.changeNextArticle()
@@ -42,9 +45,13 @@ UW.HomepageSlider = Backbone.View.extend({
 
   changeNextArticle: function()
   {
-    var title = this.$el.children( this.slides ).eq( this.count - 2 ).find('h1').text()
-    this.$el.find( this.headline).html( title )
+    this.$el.find( this.headline).replaceWith( this.render )
+  },
 
+  render : function()
+  {
+    var slide = this.$el.children( this.slides ).eq( this.count - 2 )
+    return _.template( this.template, { title: slide.find('h1').text(), slide: slide.data().id })
   }
 
 })
