@@ -201,8 +201,6 @@ Version: 0.1
   }
   .uw-homepage-slider-container .uw-homepage-slider.uw-hero-image {
     padding: 30px;
-    background: url(assets/images/venom-mobile.jpg) no-repeat right bottom #feeed7 !important;
-    background-size: 278px !important;
     position: static;
   }
   .uw-homepage-slider-container .uw-homepage-slider .hero-container {
