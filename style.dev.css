@@ -16,6 +16,13 @@ Version: 0.1
   height: 520px;
   overflow: hidden;
 }
+.uw-homepage-slider-container .slide-15.uw-homepage-slider .hero-container p {
+  color: #fff;
+}
+.uw-homepage-slider-container .slide-16.uw-homepage-slider .hero-container p {
+  color: #fff;
+  padding-right: 250px;
+}
 .uw-homepage-slider-container .slideshow-controls {
   position: absolute;
   bottom: 0;
@@ -121,6 +128,9 @@ Version: 0.1
   padding-right: 200px;
   font-size: 18px;
   line-height: 26px;
+  -webkit-font-smoothing: auto;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 .uw-homepage-slider-container .uw-homepage-slider .hero-container p a {
   font-family: "Encode Sans Compressed", sans-serif;
@@ -267,7 +277,7 @@ Version: 0.1
   width: 14%;
   float: left;
   padding: 10px 0 0;
-  margin: 50px 0;
+  margin: 40px 0 50px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
