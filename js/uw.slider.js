@@ -15,6 +15,7 @@ UW.HomepageSlider = Backbone.View.extend({
   {
     _.bindAll( this, 'nextSlide', 'changeNextArticle' )
     this.count = this.$el.children( this.slides ).length
+    this.showNextHeadline()
     this.changeNextArticle()
   },
 
@@ -30,6 +31,11 @@ UW.HomepageSlider = Backbone.View.extend({
     UW.homepageslider.changeNextArticle()
   },
 
+  showNextHeadline : function()
+  {
+    this.$el.find( this.headline ).show()
+  },
+
   changeNextArticle: function()
   {
     var title = this.$el.children( this.slides ).eq( this.count - 2 ).find('h1').text()
@@ -40,7 +46,8 @@ UW.HomepageSlider = Backbone.View.extend({
 })
 
 UW.HomepageSlider.initialize = function() {
-  UW.homepageslider = new UW.HomepageSlider();
+  if ( $('.uw-homepage-slider').length  > 1 )
+    UW.homepageslider = new UW.HomepageSlider();
 }
 
 $(document).ready( UW.HomepageSlider.initialize )

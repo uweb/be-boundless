@@ -43,6 +43,7 @@ Version: 0.1
   height: 112px;
 }
 .uw-homepage-slider-container .slideshow-controls .next-headline {
+  display: none;
   font-family: "Encode Sans Compressed", sans-serif;
   letter-spacing: .03em;
   line-height: 1.3;
