@@ -14,6 +14,7 @@ Version: 0.1
 .uw-homepage-slider-container {
   position: relative;
   height: 520px;
+  overflow: hidden;
 }
 .uw-homepage-slider-container .slideshow-controls {
   position: absolute;
@@ -85,9 +86,6 @@ Version: 0.1
 .uw-homepage-slider-container .uw-homepage-slider.uw-hero-image:after {
   left: 0;
   opacity: .4;
-}
-.uw-homepage-slider-container .uw-homepage-slider.uw-homepage-slider:before {
-  display: none;
 }
 .uw-homepage-slider-container .uw-homepage-slider .hero-container {
   width: 1280px;
