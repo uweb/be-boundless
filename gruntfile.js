@@ -10,6 +10,7 @@ module.exports = function(grunt) {
         libraries: [
         ],
         theme : [
+          'js/uw.overrides.js',
           'js/uw.slider.js'
         ],
         components : [

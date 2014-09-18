@@ -1,4 +1,7 @@
 UW = UW || {}
+console.log(UW.baseURL)
+UW.baseURL = 'http://www.washington.edu/home/';
+console.log(UW.baseURL)
 
 UW.HomepageSlider = Backbone.View.extend({
 

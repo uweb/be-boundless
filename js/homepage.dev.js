@@ -1,4 +1,11 @@
-UW = UW || {}
+UW.baseUrl = 'http://www.washington.edu/home/'
+UW.sources = {
+  quicklinks : UW.baseUrl + 'wp-admin/admin-ajax.php?action=quicklinks',
+  search     : UW.baseUrl + 'wp-admin/admin-ajax.php'
+};UW = UW || {}
+console.log(UW.baseURL)
+UW.baseURL = 'http://www.washington.edu/home/';
+console.log(UW.baseURL)
 
 UW.HomepageSlider = Backbone.View.extend({
 
