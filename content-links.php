@@ -3,7 +3,7 @@
 
     <li>
 
-          <a href="http://uw.edu/admissions" title="Admissions">
+          <a href="http://uw.edu/discover/admissions" title="Admissions">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              width="40px" height="50px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
           <path fill="#A3A2A3" d="M2.306,39.335c0.295,0,0.608-0.073,0.929-0.217l9.011-4.011c0.775-0.345,1.814-1.06,2.414-1.659
