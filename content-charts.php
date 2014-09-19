@@ -7,10 +7,11 @@
         <span>Fast Facts</span>
       </div>
 
-      <div class="col-md-6">
-        <h4>About the UW</h4>
-        <img class="pie" src="https://dl.dropboxusercontent.com/u/953442/pie.png" />
-        <!-- <canvas id="interesting-uw" width="350" height="250"></canvas> -->
+      <div class="fact-1 col-md-5 col-md-offset-1">
+
+          <div><span>#</span><div id="rank">1</div></div>
+          <p class="fact-text">The UW is top-ranked school in medical education for family, rural and primary care</p>
+
       </div>
 
 
@@ -35,7 +36,7 @@
             <div class="person"></div>
             <div class="person"></div>
             <div class="person bar"></div>
-            <div class="number">17</div>
+            <div class="number">15</div>
           </div>
         </div>
         <div class="row">

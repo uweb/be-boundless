@@ -385,6 +385,37 @@ Version: 0.1
   background-color: #ECE9E2;
   text-align: center;
 }
+.uw-charts .fact-1 {
+  background: url(assets/images/caduceus.png) center top no-repeat;
+  height: 280px;
+  margin: 0;
+  text-align: center;
+}
+.uw-charts .fact-1 div {
+  width: 50px;
+  margin: 0 auto;
+}
+.uw-charts .fact-1 div span {
+  position: absolute;
+  top: 46px;
+  left: -26px;
+  color: #4b2e83;
+  font-size: 50px;
+}
+.uw-charts .fact-1 div div {
+  font-size: 120px;
+  font-family: "Encode Sans Compressed", sans-serif;
+  font-weight: 900;
+  color: #4b2e83;
+  position: relative;
+  display: inline-block;
+}
+.uw-charts h4 {
+  margin-bottom: 30px;
+}
+.uw-charts .row > div {
+  margin-bottom: 15px;
+}
 .uw-charts:after {
   position: absolute;
   bottom: 0;
@@ -410,23 +441,31 @@ Version: 0.1
 }
 .uw-charts .title {
   text-align: right;
+  font-family: "Encode Sans Compressed", sans-serif;
+  font-weight: 500;
 }
 .uw-charts .person {
   float: left;
   width: 15px;
   height: 25px;
   margin: 2px;
-  background-color: #4b2e83;
+  background: url('assets/svg/person.svg') no-repeat 0 0;
   display: none;
 }
 .uw-charts .person.bar {
-  background-color: #4b2e83;
+  background: none no-repeat 0 0 #dddddd;
   width: 2px;
+  height: 25px;
 }
 .uw-charts .number {
   opacity: 0;
   position: absolute;
   left: 0;
+  font-family: "Encode Sans Compressed", sans-serif;
+  font-weight: 900;
+  font-size: 23px;
+  color: #85754d;
+  line-height: 1.35;
 }
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
