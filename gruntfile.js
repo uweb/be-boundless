@@ -11,7 +11,8 @@ module.exports = function(grunt) {
         ],
         theme : [
           'js/uw.overrides.js',
-          'js/uw.slider.js'
+          'js/uw.slider.js',
+          'js/uw.charts.js'
         ],
         components : [
           // todo: put just external components here for the uw.js we will give out
