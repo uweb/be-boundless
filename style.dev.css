@@ -390,31 +390,50 @@ Version: 0.1
   height: 280px;
   margin: 0;
   text-align: center;
+  margin-top: 40px;
 }
 .uw-charts .fact-1 div {
-  width: 50px;
+  width: 70px;
   margin: 0 auto;
+  position: relative;
 }
 .uw-charts .fact-1 div span {
   position: absolute;
-  top: 46px;
+  top: 66px;
   left: -26px;
   color: #4b2e83;
   font-size: 50px;
+  font-weight: 600;
 }
 .uw-charts .fact-1 div div {
   font-size: 120px;
   font-family: "Encode Sans Compressed", sans-serif;
   font-weight: 900;
   color: #4b2e83;
-  position: relative;
   display: inline-block;
+  margin-bottom: -20px;
+}
+.uw-charts .fact-1 p {
+  font-family: "Encode Sans Compressed", sans-serif;
+  font-weight: 500;
+  padding: 0 30px;
+}
+.uw-charts .fact-1:after {
+  position: absolute;
+  right: -90px;
+  width: 1px;
+  content: "";
+  background-color: #bbbbbb;
+  height: 160px;
+  top: 40px;
 }
 .uw-charts h4 {
   margin-bottom: 30px;
+  font-weight: 900;
+  margin-top: 55px;
 }
-.uw-charts .row > div {
-  margin-bottom: 15px;
+.uw-charts .faculty-facts {
+  padding-left: 100px;
 }
 .uw-charts:after {
   position: absolute;
@@ -443,10 +462,11 @@ Version: 0.1
   text-align: right;
   font-family: "Encode Sans Compressed", sans-serif;
   font-weight: 500;
+  margin-bottom: 15px;
 }
 .uw-charts .person {
   float: left;
-  width: 15px;
+  width: 13px;
   height: 25px;
   margin: 2px;
   background: url('assets/svg/person.svg') no-repeat 0 0;

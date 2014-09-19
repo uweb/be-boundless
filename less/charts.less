@@ -9,34 +9,58 @@
     height: 280px;
     margin: 0;
     text-align: center;
+    margin-top: 40px;
     div {
-      width: 50px;
-      margin: 0 auto;
+      width: 70px;
+      margin: 0 auto;     
+      position: relative;
       span {
         position: absolute;
-        top: 46px;
+        top: 66px;
         left: -26px;
-        color: #4b2e83;
+        color: @purple;
         font-size: 50px;
+        font-weight: 600;
       }
       div {
         font-size: 120px;
         font-family: @font-family-headline;
         font-weight: @ultra-font-weight;
         color: @purple;
-        position: relative;
         display: inline-block;
+        margin-bottom: -20px;
       }
+    }
+    p {
+      font-family: @font-family-headline;
+      font-weight: 500;
+      padding: 0 30px;
+    }
+    &:after {
+      position: absolute;
+      right: -90px;
+      width: 1px;
+      content: "";
+      background-color: rgb(187, 187, 187);
+      height: 160px;
+      top: 40px;
     }
   }
 
 
   h4 {
     margin-bottom: 30px;
+    font-weight: 900;
+    margin-top: 55px;
   }
   .row > div {
-    margin-bottom: 15px;
+    // 
   }
+
+  .faculty-facts {
+    padding-left: 100px;
+  }
+
 
   position:relative;
   padding: 40px 0 70px;
@@ -71,12 +95,13 @@
     text-align: right;
     font-family: @font-family-headline;
     font-weight: 500;
+    margin-bottom: 15px;
   }
   .people {
   }
   .person {
     float:left;
-    width:15px;
+    width:13px;
     height:25px;
     margin:2px;
     background: url('assets/svg/person.svg') no-repeat 0 0;
