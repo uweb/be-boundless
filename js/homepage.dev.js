@@ -101,7 +101,7 @@ UW.Facts = Backbone.View.extend({
 
     number.delay( (people.length  -1 )* this.delay ).animate({
      opacity: 1,
-     left: people.length * 20
+     left: people.length * 17 + 6
     })
   },
 
@@ -135,7 +135,7 @@ UW.Facts = Backbone.View.extend({
 
       this_.$rank.text( rank || 1 )
 
-    }, (i + i/1.5 ) * this.delay )
+    }, (i + i * 0.8  ) * this.delay )
   }
 
 
