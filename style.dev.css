@@ -397,29 +397,6 @@ Version: 0.1
 .uw-charts img {
   max-width: 100%;
 }
-.uw-charts .pie {
-  padding: 40px 0 0 0;
-}
-.uw-charts .cloud {
-  padding: 0 0 0 30px;
-}
-.uw-charts h4 {
-  color: #4b2e83;
-  text-align: center;
-  margin: 40px 0 20px 0;
-}
-.uw-charts .legend {
-  color: #4b2e83;
-  font-weight: 300;
-  margin: 15px 0;
-}
-.uw-charts .legend span {
-  float: left;
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin: 0 10px 0 0;
-}
 .uw-charts .uw-fast-facts {
   position: absolute;
   left: 50%;
@@ -430,6 +407,26 @@ Version: 0.1
   color: white;
   font-weight: 700;
   text-transform: uppercase;
+}
+.uw-charts .title {
+  text-align: right;
+}
+.uw-charts .person {
+  float: left;
+  width: 15px;
+  height: 25px;
+  margin: 2px;
+  background-color: #4b2e83;
+  display: none;
+}
+.uw-charts .person.bar {
+  background-color: #4b2e83;
+  width: 2px;
+}
+.uw-charts .number {
+  opacity: 0;
+  position: absolute;
+  left: 0;
 }
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
