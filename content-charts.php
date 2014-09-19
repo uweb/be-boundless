@@ -3,37 +3,9 @@
 
     <div class="row">
 
-<!--
-      <div class="col-md-3">
-        <canvas id="about-the-uw" width="250" height="250"></canvas>
+      <div class="uw-fast-facts">
+        <span>Fast Facts</span>
       </div>
-      <div class="col-md-3">
-        <h4> About the UW </h4>
-
-        <div class="row legend" style="margin-top:40px;">
-          <span class="box" style="background-color:#FFF"></span>
-
-          Other
-
-        </div>
-
-        <div class="row legend">
-          <span class="box" style="background-color:#D0C5AF"></span>
-
-          Out of state
-
-        </div>
-
-        <div class="row legend">
-          <span class="box" style="background-color:#B8A988"></span>
-
-          In-state students
-
-        </div>
-
-      </div>
-
--->
 
       <div class="col-md-6">
         <h4>About the UW</h4>
@@ -42,74 +14,133 @@
       </div>
 
 
-      <div class="col-md-6">
-        <h4>Campus life</h4>
-        <img class="cloud" src="https://dl.dropboxusercontent.com/u/953442/chart.png" />
-        <!-- <canvas id="interesting-uw" width="350" height="250"></canvas> -->
+      <div class="col-md-6 faculty-facts">
+        <h4>Faculty Facts</h4>
+        <div class="row">
+          <div class="col-md-5 title">MacArthur Fellows</div>
+          <div class="col-md-7 people">
+            <div class="person"></div>
+            <div class="person"></div>
+            <div class="person"></div>
+            <div class="person"></div>
+            <div class="person"></div>
+            <div class="person"></div>
+            <div class="person"></div>
+            <div class="person"></div>
+            <div class="person"></div>
+            <div class="person"></div>
+            <div class="person"></div>
+            <div class="person"></div>
+            <div class="person"></div>
+            <div class="person"></div>
+            <div class="person"></div>
+            <div class="person bar"></div>
+            <div class="number">17</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5 title">National Book Award</div>
+          <div class="col-md-7 people">
+            <div class="person"></div>
+            <div class="person"></div>
+            <div class="person bar"></div>
+            <div class="number">2</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5 title">Nobel Prize</div>
+          <div class="col-md-7 people">
+            <div class="person"></div>
+            <div class="person"></div>
+            <div class="person"></div>
+            <div class="person"></div>
+            <div class="person"></div>
+            <div class="person"></div>
+            <div class="person bar"></div>
+            <div class="number">6</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5 title">Pulitzer Prize</div>
+          <div class="col-md-7 people">
+            <div class="person"></div>
+            <div class="person"></div>
+            <div class="person bar"></div>
+            <div class="number">2</div>
+          </div>
+        </div>
       </div>
 
-      <div class="uw-fast-facts">
-        <span>Fast Facts</span>
-      </div>
-
-    </div>
-
-
-    <script src="wp-content/themes/boundless/js/chart.js"></script>
-    <script type="text/javascript">
-
-    var donut = [
-      {
-          value: 10,
-          color:"#FFF",
-          // highlight: "#FF5A5E",
-          label: "Other"
-      },
-      {
-          value: 20,
-          color: "#D0C5AF",
-          // highlight: "#5AD3D1",
-          label: "Out of state"
-      },
-      {
-          value: 70,
-          color: "#B8A988",
-          // highlight: "#FFC870",
-          label: "In-state students"
-      }
-    ]
-    , options = {
-        showTooltips: false,
-        segmentShowStroke : false
-    };
-
-    var ctx = document.getElementById('about-the-uw').getContext("2d")
-      , donut = new Chart( ctx ).Doughnut(donut, options);
-
-    var bar = {
-        labels: ["First thing", "Second", "Third", "Fourth"],
-        datasets: [
-            {
-                label: "My First dataset",
-                // fillColor: "rgba(220,220,220,0.5)",
-                // strokeColor: "rgba(220,220,220,0.8)",
-                // highlightFill: "rgba(220,220,220,0.75)",
-                // highlightStroke: "rgba(220,220,220,1)",
-                data: [65, 59, 80, 81]
-            }
-        ]
-    }, options = {
-      scaleShowLabels : false,
-      showTooltips: false,
-      scaleShowGridLines: false,
-      barStrokeWidth: 1,
-      barValueSpacing: 20
-    }
-
-    // var ctx = document.getElementById('interesting-uw').getContext("2d")
-    //   , barchart = new Chart( ctx ).Bar( bar, options);
-
-
-    </script>
   </div>
 </div>
+
+<script type="text/javascript">
+
+var UW = UW || {}
+
+UW.Facts = Backbone.View.extend({
+  el : window,
+
+  delay : 70,
+
+  charts : '.uw-charts',
+
+  events : {
+    'scroll' : 'inview'
+  },
+
+initialize: function()
+  {
+    _.bindAll( this, 'inview', 'render', 'fade', 'showNumbers' )
+    this.charts           = $( this.charts )
+    this.$people         = $('.person')
+    this.$numbers      = $('.number')
+    this.chartposition = this.charts.position().top + this.charts.height()
+    this.height           = this.$el.height()
+  },
+
+  render : _.once( function() {
+    this.$people.each( this.fade )
+    _.delay( this.showNumbers, this.$people.length * this.delay )
+  }),
+
+  fade : function ( i, elem )
+  {
+    $(elem).delay( i * this.delay ).fadeIn(50);
+  },
+
+  showNumbers : function()
+  {
+    console.log(this.$numbers);_.each( this.$numbers, this.slide );
+  },
+
+  slide : function( elem )
+  {
+    var elem = $(elem)
+    elem.animate({opacity: 1,left: elem.siblings('.person').length * 20 })
+  },
+
+  inview: _.throttle( function()
+  {
+    if (  this.$el.scrollTop() + this.height > this.chartposition )
+      this.render()
+  }, 200)
+
+})
+
+UW.Facts.init = function() {
+  UW.facts = new UW.Facts()
+}
+
+$(document).ready( UW.Facts.init )
+
+</script>
+
+
+
+
+
+
+
+
+

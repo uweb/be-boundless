@@ -1,4 +1,4 @@
-  
+
 .uw-charts {
 
   position:relative;
@@ -17,37 +17,6 @@
   img {
     max-width: 100%;
   }
-
-
-// Temp pie adjustment
-
-  .pie {
-    padding: 40px 0 0 0;
-  }
-
-  .cloud {
-    padding: 0 0 0 30px;
-  }
-
-  h4 {
-    color: @purple;
-    text-align: center;
-    margin: 40px 0 20px 0;
-  }
-
-  .legend {
-    color: @purple;
-    font-weight:300;
-    margin: 15px 0;
-    span {
-      float:left;
-      display:block;
-      width:30px;
-      height:30px;
-      margin: 0 10px 0 0;
-    }
-  }
-
   .uw-fast-facts {
     position:absolute;
     left: 50%;
@@ -59,5 +28,28 @@
     font-weight:700;
     text-transform:uppercase;
   }
+
+
+  .title {
+    text-align: right;
+  }
+  .person {
+    float:left;
+    width:15px;
+    height:25px;
+    margin:2px;
+    background-color:@purple;
+    display: none;
+    &.bar {
+      background-color: @purple;
+      width:2px;
+    }
+  }
+  .number {
+    opacity: 0;
+    position: absolute;
+    left:0;
+  }
+
 
 }
