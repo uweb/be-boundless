@@ -1,27 +1,59 @@
 .on-campus {
-
   position:relative;
-  padding: 80px 0 0 0;
+  padding: 20px 0 0;
   background-color: #6b6b6b;
 
   .uw-on-campus {
-    position:absolute;
-    left: 50%;
-    margin-left: -95px;
-    top:30px;
-    padding:10px 50px;
-    color: white;
-    font-weight: @headings-font-weight;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    height: 49px;
+    margin-bottom: 20px;
+    text-align: center;
+    h2 {
+      margin-bottom: -27px;
+      padding: 0 20px;
+      background-color: rgb(107, 107, 107);
+      display: inline-block;
+      font-size: 24px;
+      color: #fff;
+    }
   }
 
   .tile {
-    background-color: rgb(239,235,235);
+    background-color: #ECE9E2;
     .category {
         color: @lightgold;
+        font-size: 16px;        
     }
     h2 {
         color: @purple;
         font-size: @font-size-h4;
+        margin-top: 5px;
+        font-weight: 900;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      a {
+        font-weight: bold;
+        color: @darkgray;
+        position: relative;
+        &:after {
+          background: url(/wp-content/themes/uw-2014/assets/svg/uw-sprite.svg) no-repeat -206px -492px;
+          content: "";
+          position: absolute;
+          right: -19px;
+          bottom: 0;
+          width: 14px;
+          height: 21px;
+          .rotate(90deg);
+        }
+        &.uw-btn {
+          background-color: white;
+          &:after {            
+            display: none;
+          }
+        }
+      }
     }
   }
 

@@ -261,27 +261,62 @@ Version: 0.1
 }
 .on-campus {
   position: relative;
-  padding: 80px 0 0 0;
+  padding: 20px 0 0;
   background-color: #6b6b6b;
 }
 .on-campus .uw-on-campus {
-  position: absolute;
-  left: 50%;
-  margin-left: -95px;
-  top: 30px;
-  padding: 10px 50px;
-  color: white;
-  font-weight: 800;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  height: 49px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.on-campus .uw-on-campus h2 {
+  margin-bottom: -27px;
+  padding: 0 20px;
+  background-color: #6b6b6b;
+  display: inline-block;
+  font-size: 24px;
+  color: #fff;
 }
 .on-campus .tile {
-  background-color: #efebeb;
+  background-color: #ECE9E2;
 }
 .on-campus .tile .category {
   color: #b7a57a;
+  font-size: 16px;
 }
 .on-campus .tile h2 {
   color: #4b2e83;
   font-size: 21px;
+  margin-top: 5px;
+  font-weight: 900;
+}
+.on-campus .tile p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.on-campus .tile p a {
+  font-weight: bold;
+  color: #5a5a5a;
+  position: relative;
+}
+.on-campus .tile p a:after {
+  background: url(/wp-content/themes/uw-2014/assets/svg/uw-sprite.svg) no-repeat -206px -492px;
+  content: "";
+  position: absolute;
+  right: -19px;
+  bottom: 0;
+  width: 14px;
+  height: 21px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.on-campus .tile p a.uw-btn {
+  background-color: white;
+}
+.on-campus .tile p a.uw-btn:after {
+  display: none;
 }
 .uw-links {
   position: relative;

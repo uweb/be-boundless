@@ -8,7 +8,7 @@
     <div class="row">
 
       <div class="uw-on-campus">
-        <span>On Campus</span>
+        <h2>On Campus</h2>
       </div>
 
         <div class="box-outer">
