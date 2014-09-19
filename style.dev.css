@@ -259,6 +259,30 @@ Version: 0.1
     bottom: -58px;
   }
 }
+.on-campus {
+  position: relative;
+  padding: 80px 0 0 0;
+  background-color: #6b6b6b;
+}
+.on-campus .uw-on-campus {
+  position: absolute;
+  left: 50%;
+  margin-left: -95px;
+  top: 30px;
+  padding: 10px 50px;
+  color: white;
+  font-weight: 800;
+}
+.on-campus .tile {
+  background-color: #efebeb;
+}
+.on-campus .tile .category {
+  color: #b7a57a;
+}
+.on-campus .tile h2 {
+  color: #4b2e83;
+  font-size: 21px;
+}
 .uw-links {
   position: relative;
   margin-top: -20px;

@@ -10,6 +10,8 @@
 
 				get_template_part( 'content', 'links' );
 
+				get_template_part( 'content', 'on-campus' );
+
 				get_template_part( 'content', 'charts' );
 		?>
 

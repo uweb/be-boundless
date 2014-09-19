@@ -2,24 +2,25 @@
   <ul class="center-block">
 
     <li>
-      <a href="#"> 
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   width="40px" height="50px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
-<path fill="#A3A2A3" d="M2.306,39.335c0.295,0,0.608-0.073,0.929-0.217l9.011-4.011c0.775-0.345,1.814-1.06,2.414-1.659
-  L39.265,8.805C39.739,8.332,40,7.699,40,7.026c0-0.674-0.261-1.306-0.735-1.778L34.76,0.734C34.286,0.262,33.655,0,32.983,0
-  s-1.303,0.262-1.775,0.735L5.974,26.007c-0.608,0.607-1.313,1.668-1.641,2.465l-3.439,8.367c-0.374,0.906-0.11,1.521,0.081,1.808
-  C1.267,39.083,1.753,39.335,2.306,39.335z M12.883,31.669L12.883,31.669l-4.505-4.512L29.214,6.289l4.505,4.512L12.883,31.669z
-   M32.983,2.514l4.506,4.514l-1.993,1.995l-4.505-4.512L32.983,2.514z M6.656,29.429c0.037-0.09,0.087-0.191,0.143-0.295l3.902,3.908
-  l-6.769,3.012L6.656,29.429z"/>
-</svg>
 
-<span>Admissions</span>
+          <a href="http://uw.edu/admissions" title="Admissions">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="40px" height="50px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+          <path fill="#A3A2A3" d="M2.306,39.335c0.295,0,0.608-0.073,0.929-0.217l9.011-4.011c0.775-0.345,1.814-1.06,2.414-1.659
+            L39.265,8.805C39.739,8.332,40,7.699,40,7.026c0-0.674-0.261-1.306-0.735-1.778L34.76,0.734C34.286,0.262,33.655,0,32.983,0
+            s-1.303,0.262-1.775,0.735L5.974,26.007c-0.608,0.607-1.313,1.668-1.641,2.465l-3.439,8.367c-0.374,0.906-0.11,1.521,0.081,1.808
+            C1.267,39.083,1.753,39.335,2.306,39.335z M12.883,31.669L12.883,31.669l-4.505-4.512L29.214,6.289l4.505,4.512L12.883,31.669z
+             M32.983,2.514l4.506,4.514l-1.993,1.995l-4.505-4.512L32.983,2.514z M6.656,29.429c0.037-0.09,0.087-0.191,0.143-0.295l3.902,3.908
+            l-6.769,3.012L6.656,29.429z"/>
+          </svg>
+
+          <span>Admissions</span>
 
        </a>
     </li>
 
     <li>
-      <a href="#"> 
+<a href="http://uw.edu/maps" title="Maps">
 
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    width="33px" height="50px" viewBox="0 0 33 46" enable-background="new 0 0 33 46" xml:space="preserve">
@@ -42,7 +43,7 @@
     </li>
 
     <li>
-      <a href="#"> 
+      <a href="http://myuw.washington.edu/" title="MyUW">
 
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    width="41px" height="50px" viewBox="0 0 41 41" enable-background="new 0 0 41 41" xml:space="preserve">
@@ -78,7 +79,7 @@
     </li>
 
     <li>
-      <a href="#"> 
+      <a href="http://gohuskies.com" title="Athletics">
 
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    width="47px" height="50px" viewBox="0 0 47 47" enable-background="new 0 0 47 47" xml:space="preserve">
@@ -109,7 +110,7 @@
     </li>
 
     <li>
-      <a href="#"> 
+      <a href="http://uw.edu/calendar" title="Events">
 
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    width="44px" height="50px" viewBox="0 0 44 39" enable-background="new 0 0 44 39" xml:space="preserve">
@@ -143,7 +144,7 @@
     </li>
 
     <li>
-      <a href="#"> 
+      <a href="http://www.lib.washington.edu" title="Libraries">
 
 
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -181,7 +182,7 @@
     </li>
 
     <li>
-      <a href="#"> 
+      <a href="http://www.uwmedicine.org" title="UW Medicine">
 
 
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
