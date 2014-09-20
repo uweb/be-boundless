@@ -55,7 +55,7 @@ Version: 0.1
   font-weight: 900;
   text-transform: uppercase;
   position: absolute;
-  top: 10px;
+  top: 18px;
   color: white;
   width: 100%;
   left: 370px;
@@ -67,7 +67,7 @@ Version: 0.1
   top: -25px;
   left: 0;
   content: "Next";
-  color: #e8e3d3;
+  color: #b7a57a;
   text-transform: uppercase;
   font-style: italic;
   text-shadow: none;
