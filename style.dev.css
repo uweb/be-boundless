@@ -20,9 +20,6 @@ Version: 0.1
   color: #fff;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
-.uw-homepage-slider-container .slide-16.uw-homepage-slider .hero-container p {
-  padding-right: 250px;
-}
 .uw-homepage-slider-container .slideshow-controls {
   position: absolute;
   bottom: 0;
@@ -70,7 +67,7 @@ Version: 0.1
   top: -25px;
   left: 0;
   content: "Next";
-  color: #b7a57a;
+  color: #e8e3d3;
   text-transform: uppercase;
   font-style: italic;
   text-shadow: none;
