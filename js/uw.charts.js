@@ -82,6 +82,4 @@ UW.Facts.init = function() {
   UW.facts = new UW.Facts()
 }
 
-
-
 $(document).ready( UW.Facts.init )
