@@ -262,7 +262,7 @@ Version: 0.1
   background-color: #6b6b6b;
 }
 .on-campus .uw-on-campus {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   height: 49px;
   margin-bottom: 20px;
   text-align: center;
@@ -483,6 +483,17 @@ Version: 0.1
   font-size: 23px;
   color: #85754d;
   line-height: 1.35;
+}
+@media only screen and (max-width: 767px) {
+  .uw-charts .faculty-facts {
+    padding: 0 30px 30px;
+  }
+  .uw-charts .title {
+    text-align: left;
+  }
+  .box-outer .box.three .tile {
+    margin: 0 0 10px 0;
+  }
 }
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
