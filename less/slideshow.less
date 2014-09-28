@@ -6,14 +6,24 @@
 
    // Individual slides
 
+
    .slide-15 {
      &.uw-homepage-slider .hero-container {
-       // h1 {
-       //   color: #fff;
-       // }
+       h1 {
+         color: #fff;
+       }
        p {
          color: #fff;         
          text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+       }
+       .udub-slant span {
+          background-color: @lightgold;
+       }
+       a.uw-btn {
+          text-shadow: none;
+          &:before {
+            background-color: @lightgold;
+          }
        }
      }
    }
