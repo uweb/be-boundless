@@ -12,7 +12,7 @@
 
           <span class="udub-slant"><span></span></span>
 
-          <p> <?php echo apply_filters( 'the_content', $slide->text ); ?> <?php echo $slide->link; ?> </p>
+          <?php echo apply_filters( 'the_content', $slide->text ); ?> <?php echo $slide->link; ?>
 
         </div>
 
