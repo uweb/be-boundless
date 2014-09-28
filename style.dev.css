@@ -80,6 +80,7 @@ Version: 0.1
   left: 0;
   content: "Next";
   color: #b7a57a;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
   text-transform: uppercase;
   font-style: italic;
   text-shadow: none;
@@ -136,13 +137,15 @@ Version: 0.1
 }
 .uw-homepage-slider-container .uw-homepage-slider .hero-container p {
   padding-right: 200px;
-  font-size: 18px;
-  line-height: 26px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  color: #575757;
   -webkit-font-smoothing: auto;
   margin-bottom: 20px;
+  font-family: "Encode Sans Compressed", sans-serif;
 }
 .uw-homepage-slider-container .uw-homepage-slider .hero-container p a {
-  font-family: "Encode Sans Compressed", sans-serif;
   font-weight: 500;
   color: #4b2e83;
   text-transform: uppercase;
