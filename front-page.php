@@ -6,6 +6,8 @@
 				 * use this in a child theme, then include a file called called content-___.php
 				 * (where ___ is the post format) and that will be used instead.
 				 */
+				get_template_part( 'menu', 'mobile' );
+
 				get_template_part( 'content', 'slideshow' );
 
 				get_template_part( 'content', 'links' );
