@@ -11,6 +11,40 @@ Version: 0.1
   border-bottom-color: #4b2e83 !important;
   border-top-color: #4b2e83 !important;
 }
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  ul.uw-mobile-menu {
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 5px 0 0;
+    box-shadow: 0 0px 3px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+  }
+  ul.uw-mobile-menu a {
+    font-size: 17px;
+  }
+  ul.uw-mobile-menu:before {
+    content: "BE BOUNDLESS";
+    position: absolute;
+    left: 10px;
+    top: 6px;
+    font-size: 30px;
+    font-family: "Encode Sans Compressed", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    color: #EBEBEB;
+  }
+  ul.uw-mobile-menu .uw-mobile-menu-toggle {
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+  .menu-dropdowns-container {
+    margin-top: 55px;
+  }
+}
 .uw-homepage-slider-container {
   position: relative;
   height: 520px;
