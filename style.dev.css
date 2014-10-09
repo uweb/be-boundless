@@ -511,6 +511,25 @@ Version: 0.1
     margin: 0 0 10px 0;
   }
 }
+.single-format-gallery .uw-hero-image {
+  height: 585px;
+}
+.single-format-gallery .text-overlay {
+  position: absolute;
+  top: -395px;
+}
+.single-format-gallery .text-overlay .uw-site-title {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.single-format-gallery .text-overlay .spotlight-blurb {
+  color: white;
+  width: 40%;
+}
+.single-format-gallery .uw-body-copy {
+  padding-top: 40px;
+}
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
