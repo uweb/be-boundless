@@ -1,1 +1,1 @@
-<div class="uw-hero-image" <?php if ( get_header_image() !== '' )  { ?> style="background-image:url('<?php header_image(); ?>');"<?php } ?> ></div>
+<div class="uw-hero-image" <?php if ( has_post_thumbnail($post->ID) )  { $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?> style="background-image:url('<?= $image[0] ?>');"<?php } ?> ></div>
