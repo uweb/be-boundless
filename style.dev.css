@@ -582,7 +582,35 @@ Version: 0.1
   display: none;
 }
 .single-format-gallery .uw-body-copy {
-  padding-top: 40px;
+  padding-top: 20px;
+}
+.single-format-gallery iframe {
+  padding: 40px 0;
+}
+.single-format-gallery blockquote {
+  border-left: none;
+  margin: 1.5em 10px;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+  padding: 0;
+}
+.single-format-gallery blockquote:before,
+.single-format-gallery blockquote:after {
+  font-size: 4em;
+  line-height: 0.1em;
+  color: #ccc;
+  vertical-align: -0.4em;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+}
+.single-format-gallery blockquote:before {
+  content: open-quote;
+  margin-right: 0.25em;
+}
+.single-format-gallery blockquote:after {
+  content: close-quote;
+  margin-left: 0.25em;
+}
+.single-format-gallery blockquote p {
+  display: inline;
 }
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
