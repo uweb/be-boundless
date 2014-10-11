@@ -556,7 +556,7 @@ Version: 0.1
   position: relative;
   top: 0;
   left: 0;
-  width: 640px;
+  width: 670px;
   font-weight: 900;
   line-height: 90px;
   font-size: 90px;
@@ -582,7 +582,7 @@ Version: 0.1
   display: none;
 }
 .single-format-gallery .uw-body-copy {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 .single-format-gallery iframe {
   padding: 40px 0;
@@ -611,6 +611,47 @@ Version: 0.1
 }
 .single-format-gallery blockquote p {
   display: inline;
+}
+@media only screen and (max-width: 767px) {
+  .single-format-gallery .text-overlay {
+    top: -455px;
+  }
+  .single-format-gallery .text-overlay .uw-site-title {
+    font-size: 36px;
+    line-height: 30px;
+    padding-right: 0;
+    margin: 0;
+    color: #fff;
+    background-color: transparent;
+    padding: 0;
+    width: auto;
+  }
+  .single-format-gallery .text-overlay .spotlight-blurb p {
+    padding-right: 0;
+    font-size: 19px;
+    line-height: 24px;
+    width: 90%;
+  }
+  .single-format-gallery .text-overlay .udub-slant span {
+    transform: skewX(-25deg);
+    display: block;
+    height: 10px;
+    width: 160px;
+    margin: 20px 0 10px -30px;
+  }
+  .single-format-gallery .uw-hero-image {
+    width: auto;
+    height: auto;
+    padding: 0 0 140px 0;
+    display: block;
+    height: 450px;
+  }
+  iframe {
+    max-width: 100% !important;
+  }
+  .single-format-gallery .uw-body-copy {
+    padding-top: 0;
+  }
 }
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
