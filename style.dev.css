@@ -550,16 +550,36 @@ Version: 0.1
 }
 .single-format-gallery .text-overlay {
   position: absolute;
-  top: -395px;
+  top: -535px;
 }
 .single-format-gallery .text-overlay .uw-site-title {
   position: relative;
   top: 0;
   left: 0;
+  width: 640px;
+  font-weight: 900;
+  line-height: 90px;
+  font-size: 90px;
+  text-transform: uppercase;
 }
 .single-format-gallery .text-overlay .spotlight-blurb {
   color: white;
-  width: 40%;
+  width: 100%;
+}
+.single-format-gallery .text-overlay .spotlight-blurb p {
+  padding-right: 200px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #fff;
+  -webkit-font-smoothing: auto;
+  margin-bottom: 20px;
+  font-family: "Encode Sans Compressed", sans-serif;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  width: 60%;
+}
+.single-format-gallery .text-overlay .spotlight-blurb a {
+  display: none;
 }
 .single-format-gallery .uw-body-copy {
   padding-top: 40px;

@@ -14,7 +14,7 @@
 
             <div class="udub-slant"><span></span></div>
 
-            <div class="spotlight-blurb"> <?php echo get_the_excerpt() ?> </div>
+            <div class="spotlight-blurb"><p><?php echo get_the_excerpt() ?></p></div>
 
       </div>
 
