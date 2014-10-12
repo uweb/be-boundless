@@ -402,6 +402,7 @@ Version: 0.1
 }
 .on-campus .tile {
   background-color: #ECE9E2;
+  overflow: hidden;
 }
 .on-campus .tile .category {
   color: #b7a57a;
