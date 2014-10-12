@@ -356,12 +356,13 @@ Version: 0.1
 }
 .on-campus .uw-on-campus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  height: 49px;
+  height: 35px;
   margin-bottom: 20px;
   text-align: center;
 }
 .on-campus .uw-on-campus h2 {
   margin-bottom: -27px;
+  margin-top: 17px;
   padding: 0 20px;
   background-color: #6b6b6b;
   display: inline-block;
@@ -426,7 +427,7 @@ Version: 0.1
   width: 14%;
   float: left;
   padding: 10px 0 0;
-  margin: 40px 0 50px;
+  margin: 35px 0 40px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -627,11 +628,22 @@ Version: 0.1
   display: none;
 }
 .single-format-gallery .tenet {
-  font-size: 50px;
-  text-transform: uppercase;
   font-weight: 900;
+  text-transform: uppercase;
   font-style: italic;
-  color: #818181;
+  font-size: 40px;
+  color: #b7a57a;
+  position: relative;
+  margin: -10px 0 40px;
+}
+.single-format-gallery .tenet:after {
+  background: url(assets/svg/slash.svg) 0 0 no-repeat;
+  content: "";
+  position: absolute;
+  left: -83px;
+  top: -60px;
+  width: 80px;
+  height: 130px;
 }
 .single-format-gallery .uw-body-copy {
   padding-top: 40px;
