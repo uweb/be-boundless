@@ -7,17 +7,44 @@
    // Individual slides
 
 
-   .slide-15 {
+    // Eco Car
+
+   .slide-16 {
+     &.uw-homepage-slider .hero-container {
+       h1 {
+         color: @purple;
+       }
+       p {
+         color: @purple;         
+         // text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+       }
+       .udub-slant span {
+          background-color: @lightgold;
+       }
+       a.uw-btn {
+          text-shadow: none;
+          &:before {
+            //background-color: @lightgold;
+          }
+       }
+     }
+   }
+
+ 
+  // Depths
+
+   .slide-17 {
      &.uw-homepage-slider .hero-container {
        h1 {
          color: #fff;
-       }
-       p {
-         color: #fff;         
          text-shadow: 1px 1px 1px rgba(0,0,0,.3);
        }
        .udub-slant span {
           background-color: @lightgold;
+       }
+       p {
+          color: white;
+          text-shadow: 1px 1px 1px rgba(0,0,0,.3);
        }
        a.uw-btn {
           text-shadow: none;
@@ -28,13 +55,50 @@
      }
    }
 
-   .slide-16 {
+  // Siva
+
+   .slide-59 {
      &.uw-homepage-slider .hero-container {
-       // h1 {
-       //   color: #fff;
-       // }
+       h1 {
+         color: #fff;
+         text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+       }
+       .udub-slant span {
+          background-color: @lightgold;
+       }
        p {
-        // padding-right: 250px;
+          color: white;
+          text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+       }
+       a.uw-btn {
+          text-shadow: none;
+          &:before {
+            background-color: @lightgold;
+          }
+       }
+     }
+   }
+
+  // Citizens
+
+   .slide-19 {
+     &.uw-homepage-slider .hero-container {
+       h1 {
+         //color: #fff;
+         //text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+       }
+       .udub-slant span {
+         // background-color: @lightgold;
+       }
+       p {
+          color: white;
+          text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+       }
+       a.uw-btn {
+          text-shadow: none;
+          &:before {
+            background-color: @lightgold;
+          }
        }
      }
    }
@@ -164,6 +228,7 @@
         background-color: white;
         // Brings button to the front
         position: relative;
+        z-index: 0;
       }
 
 
@@ -263,8 +328,13 @@
 
 
  @media only screen and (max-width : 767px) {
+
    .uw-homepage-slider-container {
      height: 500px;
+     .slide-15 {
+        background-size: 1979px !important;
+        background-position: -940px 0 !important;
+    }
      .uw-homepage-slider {
        &.uw-hero-image {
           padding: 30px;
