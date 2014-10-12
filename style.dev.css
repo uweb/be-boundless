@@ -370,6 +370,7 @@ Version: 0.1
   .uw-homepage-slider-container .slideshow-controls .next-headline:before {
     right: -20px;
     left: auto;
+    top: 10px;
   }
   .uw-homepage-slider-container .slideshow-controls .uw-boundless {
     font-size: 23px;
