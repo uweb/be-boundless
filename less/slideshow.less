@@ -330,15 +330,36 @@
 
    .uw-homepage-slider-container {
      height: 500px;
-     .slide-15 {
+     .slide-16 {
         background-size: 1979px !important;
         background-position: -940px 0 !important;
+    }
+    .slide-59 {
+      color: #575757;
+      text-shadow: 1px 1px 3px rgba(255, 255, 255, 1);
     }
      .uw-homepage-slider {
        &.uw-hero-image {
           padding: 30px;
           position: absolute;
           height: 500px;
+          &:before {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 400px;
+            width: 100%;
+            content: "";
+            opacity: .6;
+            background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,1) 99%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(1%,rgba(0,0,0,0)), color-stop(99%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,1) 99%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,1) 99%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,1) 99%,rgba(0,0,0,1) 100%); /* IE10+ */
+            background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,1) 99%,rgba(0,0,0,1) 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+          }
        }
        .hero-container {
           width: auto;

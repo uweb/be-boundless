@@ -293,14 +293,41 @@ Version: 0.1
   .uw-homepage-slider-container {
     height: 500px;
   }
-  .uw-homepage-slider-container .slide-15 {
+  .uw-homepage-slider-container .slide-16 {
     background-size: 1979px !important;
     background-position: -940px 0 !important;
+  }
+  .uw-homepage-slider-container .slide-59 {
+    color: #575757;
+    text-shadow: 1px 1px 3px #ffffff;
   }
   .uw-homepage-slider-container .uw-homepage-slider.uw-hero-image {
     padding: 30px;
     position: absolute;
     height: 500px;
+  }
+  .uw-homepage-slider-container .uw-homepage-slider.uw-hero-image:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 400px;
+    width: 100%;
+    content: "";
+    opacity: .6;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, #000000 99%, #000000 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(1%, rgba(0, 0, 0, 0)), color-stop(99%, #000000), color-stop(100%, #000000));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, #000000 99%, #000000 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, #000000 99%, #000000 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, #000000 99%, #000000 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, #000000 99%, #000000 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=0);
+    /* IE6-9 */
   }
   .uw-homepage-slider-container .uw-homepage-slider .hero-container {
     width: auto;
@@ -677,6 +704,10 @@ Version: 0.1
   display: inline;
 }
 @media only screen and (max-width: 767px) {
+  .single-format-gallery .tenet {
+    font-size: 30px;
+    margin: 10px 0 20px;
+  }
   .single-format-gallery .text-overlay {
     top: -455px;
     padding-top: 90px;
@@ -711,12 +742,12 @@ Version: 0.1
     display: block;
     height: 360px;
   }
-  iframe {
-    max-width: 100% !important;
-    height: auto;
-  }
   .single-format-gallery .uw-body-copy {
     padding-top: 0;
+  }
+  .single-format-gallery iframe {
+    max-width: 100% !important;
+    height: auto;
   }
 }
 /*==========  Non-Mobile First Method  ==========*/
