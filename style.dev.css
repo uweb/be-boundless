@@ -206,7 +206,6 @@ Version: 0.1
 }
 .uw-homepage-slider-container .uw-homepage-slider .hero-container p a {
   font-weight: 500;
-  color: #4b2e83;
   text-transform: uppercase;
   font-weight: 700;
   padding-right: 20px;
@@ -402,6 +401,7 @@ Version: 0.1
 .on-campus .tile {
   background-color: #ECE9E2;
   overflow: hidden;
+  vertical-align: top;
 }
 .on-campus .tile .category {
   color: #b7a57a;
