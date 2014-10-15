@@ -1,10 +1,13 @@
 .on-campus {
   position:relative;
   padding: 20px 0 0;
-  background-color: #6b6b6b;
+  background: url('assets/images/quad.jpg') no-repeat center center fixed #6b6b6b; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
   .uw-on-campus {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     height: 35px;
     margin-bottom: 20px;
     text-align: center;
@@ -12,16 +15,33 @@
       margin-bottom: -27px;
       margin-top: 17px;
       padding: 0 20px;
-      background-color: rgb(107, 107, 107);
       display: inline-block;
       font-size: 24px;
       color: #fff;
+      position: relative;
+      &:before,
+      &:after {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 340px;
+        background-color: rgba(255, 255, 255, 0.2);
+        display: block;
+        bottom: 13px;
+      }
+      &:before {
+        left: -340px;
+      }
+      &:after {
+        right: -340px;
+      }
     }
   }
 
   .tile {
     background-color: #ECE9E2;
     overflow: hidden;
+    vertical-align: top;
     .category {
         color: @lightgold;
         font-size: 16px;        
@@ -57,6 +77,15 @@
         }
       }
     }
+  }
+
+}
+
+
+ @media only screen and (max-width : 767px) {
+  
+  .on-campus {
+    background-size: #6b6b6b;
   }
 
 }
