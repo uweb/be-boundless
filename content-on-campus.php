@@ -20,7 +20,7 @@
               <div class="tile">
 
                 <div>
-                  <?php the_post_thumbnail(array(379,159)) ?>
+                  <?php the_post_thumbnail('homepage_tile'); ?>
                 </div>
 
                 <?php if ( $category[0] ) : ?>
