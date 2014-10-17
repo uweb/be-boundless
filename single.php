@@ -10,7 +10,7 @@
 
       <div class="text-overlay">
 
-            <a href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr( get_bloginfo() ) ?>"><h1 class="uw-site-title"><?php the_title(); ?></h1></a>
+            <h1 class="uw-site-title"><?php the_title(); ?></h1>
 
             <div class="udub-slant"><span></span></div>
 
