@@ -498,7 +498,7 @@ Version: 0.1
 .uw-links ul li:last-child a {
   border: none;
 }
-#uw-container div#uw-container-inner {
+.home #uw-container div#uw-container-inner {
   background-color: #F0EDE3;
 }
 @media only screen and (max-width: 767px) {
@@ -640,11 +640,15 @@ Version: 0.1
   }
 }
 .single-format-gallery .uw-hero-image {
-  height: 585px;
+  height: 515px;
 }
 .single-format-gallery .text-overlay {
   position: absolute;
-  top: -535px;
+  top: -465px;
+}
+.single-format-gallery .text-overlay .udub-slant span {
+  height: 10px;
+  width: 160px;
 }
 .single-format-gallery .text-overlay .uw-site-title {
   position: relative;
@@ -652,8 +656,8 @@ Version: 0.1
   left: 0;
   width: 670px;
   font-weight: 900;
-  line-height: 90px;
-  font-size: 90px;
+  line-height: 66px;
+  font-size: 65px;
   text-transform: uppercase;
 }
 .single-format-gallery .text-overlay .spotlight-blurb {
