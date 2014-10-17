@@ -164,11 +164,11 @@ Version: 0.1
   width: 100%;
   height: auto;
   display: block;
-  bottom: -31px;
 }
 .uw-homepage-slider-container .uw-homepage-slider.uw-hero-image:after {
   left: 0;
   opacity: .3;
+  bottom: -31px;
 }
 .uw-homepage-slider-container .uw-homepage-slider .hero-container {
   width: 1180px;
