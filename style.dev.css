@@ -804,7 +804,7 @@ Version: 0.1
   display: none;
 }
 .postid-266.single-format-gallery .tenet {
-  margin: 80px 0 40px;
+  margin: 10px 0 20px;
 }
 .postid-266 .intro {
   margin-bottom: 50px;
@@ -813,6 +813,9 @@ Version: 0.1
   .postid-266 h1 {
     font-size: 51px;
     line-height: 54px;
+  }
+  .postid-266.single-format-gallery .tenet {
+    margin: 10px 0 20px;
   }
 }
 /*==========  Non-Mobile First Method  ==========*/
