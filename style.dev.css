@@ -803,7 +803,7 @@ Version: 0.1
 .postid-266 .spotlight-blurb {
   display: none;
 }
-.postid-266 .single-format-gallery .tenet {
+.postid-266.single-format-gallery .tenet {
   margin: 80px 0 40px;
 }
 .postid-266 .intro {
