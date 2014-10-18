@@ -292,7 +292,8 @@ Version: 0.1
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   }
   .uw-homepage-slider-container .slide-59.uw-homepage-slider .hero-container p {
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
+    color: #4B2E82;
   }
   .uw-homepage-slider-container .uw-homepage-slider.uw-hero-image {
     padding: 30px;
