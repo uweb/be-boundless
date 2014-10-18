@@ -4,10 +4,6 @@
 
   <div class="uw-hero-image uw-homepage-slider slide-<?php echo $slide->id ?>" data-id="<?php echo $slide->id; ?>" style="background:url(<?php echo $slide->image; ?>) no-repeat center; background-size:cover;">
 
-  <?php if ( isset( $slide->mobileimage ) ) : ?>
-    <img src="<?php echo $slide->mobileimage; ?>" alt="<?php esc_attr( $slide->mobileimage ); ?>" class="mobile-image" />
-  <?php endif; ?>
-
     <div class="container hero-container vertical-center">
 
       <div class="row">
