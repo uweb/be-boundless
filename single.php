@@ -6,8 +6,6 @@
 
   <div class="row">
 
-<?php if ( has_post_thumbnail() ) : ?>
-
     <div <?php uw_content_class(); ?> role='main'>
 
       <div class="text-overlay">
@@ -19,8 +17,6 @@
             <div class="spotlight-blurb"><p><?php echo get_the_excerpt() ?></p></div>
 
       </div>
-
-<?php endif; ?>
 
       <div id='main_content' class="uw-body-copy">
 
