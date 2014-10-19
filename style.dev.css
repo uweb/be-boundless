@@ -673,8 +673,8 @@ Version: 0.1
   left: 0;
   width: 610px;
   font-weight: 900;
-  line-height: 57px;
-  font-size: 54px;
+  line-height: 59px;
+  font-size: 57px;
   text-transform: uppercase;
 }
 .single-format-gallery .text-overlay .spotlight-blurb {
@@ -682,7 +682,7 @@ Version: 0.1
   width: 100%;
 }
 .single-format-gallery .text-overlay .spotlight-blurb p {
-  padding-right: 200px;
+  padding-right: 120px;
   font-weight: 400;
   font-size: 22px;
   line-height: 31px;
