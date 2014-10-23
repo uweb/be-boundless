@@ -33,3 +33,10 @@ $UW->Scripts->SCRIPTS['homepage'] = array (
     'version' => '1.0',
     'admin'   => false,
   );
+
+foreach ($UW->Scripts->SCRIPTS as $id => $script){
+    $script['url'] = $UW->Homepage_Utilities->agnostify_url($script['url']);
+    $UW->Scripts->SCRIPTS[$id] = $script;
+}
+
+?>
