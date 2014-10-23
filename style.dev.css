@@ -42,21 +42,26 @@ Version: 0.1
 .uw-homepage-slider-container .mobile-image {
   display: none;
 }
-.uw-homepage-slider-container .slide-16.uw-homepage-slider .hero-container h1 {
+.uw-homepage-slider-container .slide-16.uw-homepage-slider .hero-container h1,
+.uw-homepage-slider-container .slide-19.uw-homepage-slider .hero-container h1 {
   color: #fff;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
-.uw-homepage-slider-container .slide-16.uw-homepage-slider .hero-container .udub-slant span {
+.uw-homepage-slider-container .slide-16.uw-homepage-slider .hero-container .udub-slant span,
+.uw-homepage-slider-container .slide-19.uw-homepage-slider .hero-container .udub-slant span {
   background-color: #b7a57a;
 }
-.uw-homepage-slider-container .slide-16.uw-homepage-slider .hero-container p {
+.uw-homepage-slider-container .slide-16.uw-homepage-slider .hero-container p,
+.uw-homepage-slider-container .slide-19.uw-homepage-slider .hero-container p {
   color: white;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
-.uw-homepage-slider-container .slide-16.uw-homepage-slider .hero-container a.uw-btn {
+.uw-homepage-slider-container .slide-16.uw-homepage-slider .hero-container a.uw-btn,
+.uw-homepage-slider-container .slide-19.uw-homepage-slider .hero-container a.uw-btn {
   text-shadow: none;
 }
-.uw-homepage-slider-container .slide-16.uw-homepage-slider .hero-container a.uw-btn:before {
+.uw-homepage-slider-container .slide-16.uw-homepage-slider .hero-container a.uw-btn:before,
+.uw-homepage-slider-container .slide-19.uw-homepage-slider .hero-container a.uw-btn:before {
   background-color: #b7a57a;
 }
 .uw-homepage-slider-container .slide-15.uw-homepage-slider .hero-container h1 {
@@ -277,7 +282,7 @@ Version: 0.1
     height: 480px;
     position: absolute;
     right: 0;
-    background-position: center center;
+    background-position: center bottom;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -699,7 +704,6 @@ Version: 0.1
 .single-format-gallery .tenet {
   font-weight: 900;
   text-transform: uppercase;
-  font-style: italic;
   font-size: 40px;
   color: #b7a57a;
   position: relative;
@@ -800,7 +804,6 @@ Version: 0.1
 .postid-266 h1 {
   font-family: "Encode Sans Compressed", sans-serif;
   font-size: 65px;
-  font-style: italic;
   font-weight: 900;
   margin-top: 20px;
   margin-left: -10px;
