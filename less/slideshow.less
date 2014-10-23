@@ -3,37 +3,17 @@
   height: 450px;
   overflow: hidden;
 
+  .mobile-image {
+    display: none;
+  }
 
    // Individual slides
 
 
-    // Eco Car
+    // Eco Car & W Day
 
-   .slide-16 {
-     &.uw-homepage-slider .hero-container {
-       h1 {
-         color: @purple;
-       }
-       p {
-         color: @purple;         
-         // text-shadow: 1px 1px 1px rgba(0,0,0,.3);
-       }
-       .udub-slant span {
-          background-color: @lightgold;
-       }
-       a.uw-btn {
-          text-shadow: none;
-          &:before {
-            //background-color: @lightgold;
-          }
-       }
-     }
-   }
-
- 
-  // Depths
-
-   .slide-17 {
+   .slide-16,
+   .slide-19 {
      &.uw-homepage-slider .hero-container {
        h1 {
          color: #fff;
@@ -55,7 +35,8 @@
      }
    }
 
-  // Siva
+ 
+  // Depths
 
    .slide-15 {
      &.uw-homepage-slider .hero-container {
@@ -79,6 +60,31 @@
      }
    }
 
+  // Siva
+
+   .slide-17 {
+     &.uw-homepage-slider .hero-container {
+       h1 {
+         color: #fff;
+         text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+       }
+       .udub-slant span {
+          background-color: @lightgold;
+       }
+       p {
+          color: white;
+          text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+       }
+       a.uw-btn {
+          text-shadow: none;
+          &:before {
+            background-color: @lightgold;
+          }
+       }
+     }
+   }
+
+
   // Citizens
 
    .slide-59 {
@@ -91,7 +97,7 @@
        }
        p {
           color: white;
-          text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
        }
        a.uw-btn {
           text-shadow: none;
@@ -181,7 +187,8 @@
       display: block;
       &:after {
         left: 0;
-        opacity: .4;
+        opacity: .3;
+        bottom: -31px;        
       }
     }
     .hero-container {
@@ -282,8 +289,8 @@
       .hero-container {
         width: 880px;
         h1 {
-          font-size: 55px;
-          line-height: 55px;
+          font-size: 45px;
+          line-height: 45px;
           padding-right: 0;
         }
       }
@@ -333,9 +340,23 @@
 
 
  @media only screen and (max-width : 767px) {
-
-   .uw-homepage-slider-container {
+     .uw-homepage-slider-container {
      height: 500px;
+  
+    .mobile-image {
+      display: block;
+      top: 0;
+      left: 0;
+      height: 480px;
+      position: absolute;
+      right: 0;
+      background-position: center bottom;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
      .slide-16 {
         background-size: 1979px !important;
         background-position: -940px 0 !important;
@@ -347,7 +368,8 @@
     }
     .slide-59 {
       &.uw-homepage-slider .hero-container p {
-          text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+          text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
+          color: #4B2E82;
       }
     }
      .uw-homepage-slider {
@@ -382,18 +404,24 @@
            line-height: 30px;
            padding-right: 0;
            margin: 0;
+           br {
+            display: none;
+           }
          }
          p {
            padding-right: 0;
            font-size: 16px;
            line-height: 24px;
          }
-         .udub-slant span {
-           transform: skewX(-25deg);
-           display: block;
-           height: 10px;
-           width: 160px;
-           margin: 20px 0 10px -30px;
+         .udub-slant {
+            margin: 5px 0 15px 0 !important;
+            span {
+             transform: skewX(-25deg);
+             display: block;
+             height: 10px;
+             width: 160px;
+             margin: 20px 0 10px -30px;
+           }
          }
        }
      }
@@ -401,14 +429,18 @@
        position: absolute;
        left: 30px;
        bottom: 40px;
+       &:after {
+        display: none;
+       }
        .uw-boundless {
          display: none;
        }
        .next-headline {
          position: static;
          width: auto;
+         padding-right: 5px;
          &:before {
-           right: -20px;
+           right: -25px;
            left: auto;
            top: 10px;
          }

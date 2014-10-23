@@ -1,50 +1,55 @@
 .single-format-gallery {
 
   .uw-hero-image {
-      height: 585px;
+      height: 445px;
   }
 
   .text-overlay {
     position: absolute;
-    top: -535px;
+    top: -405px;
 
-    .uw-site-title {
-      position: relative;
-      top:0;
-      left:0;
-      width: 670px;
-      font-weight: 900;
-      line-height: 90px;
-      font-size: 90px;
-      text-transform: uppercase;
-    }
 
-    .spotlight-blurb {
-      color: white;
-      width: 100%;
-      p {
-        padding-right: 200px;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 33px;
-        color: #fff;
-        -webkit-font-smoothing: auto;
-        margin-bottom: 20px;
-        font-family: @font-family-headline;
-        text-shadow: 1px 1px 1px rgba(0,0,0,.4);
-        width: 60%;
-      }
-      a {
-        display: none;
-      }
+  .udub-slant span {
+      height: 10px;
+      width: 160px;
+  }
+
+  .uw-site-title {
+    position: relative;
+    top:0;
+    left:0;
+    width: 610px;
+    font-weight: 900;
+    line-height: 59px;
+    font-size: 57px;
+    text-transform: uppercase;
+  }
+
+  .spotlight-blurb {
+    color: white;
+    width: 100%;
+    p {
+      padding-right: 120px;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 31px;
+      color: #fff;
+      -webkit-font-smoothing: auto;
+      margin-bottom: 20px;
+      font-family: @font-family-headline;
+      text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+      width: 60%;
     }
+    a {
+      display: none;
+    }
+  }
 
   }
 
   .tenet {
     font-weight: 900;
     text-transform: uppercase;
-    font-style: italic;
     font-size: 40px;
     color: @lightgold;
     position: relative;
@@ -99,6 +104,13 @@
 
 }
 
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+  .single-format-gallery .text-overlay .spotlight-blurb p {
+    padding-right: 40px;
+  }
+
+}
 
  @media only screen and (max-width : 767px) {
 

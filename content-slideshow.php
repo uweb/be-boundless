@@ -3,6 +3,11 @@
   <?php if ( class_exists('UW_Slideshow') ) : foreach ( UW_Slideshow::get_latest_slideshow() as $slide ) : ?>
 
   <div class="uw-hero-image uw-homepage-slider slide-<?php echo $slide->id ?>" data-id="<?php echo $slide->id; ?>" style="background:url(<?php echo $slide->image; ?>) no-repeat center; background-size:cover;">
+
+  <?php if ( isset( $slide->mobileimage ) ) : ?>
+    <div style="background-image:url('<?php echo $slide->mobileimage; ?>')" class="mobile-image"></div>
+  <?php endif; ?>
+
     <div class="container hero-container vertical-center">
 
       <div class="row">
@@ -17,7 +22,6 @@
         </div>
 
       </div>
-
 
     </div>
 
