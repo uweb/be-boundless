@@ -109,7 +109,7 @@ Version: 0.1
   background-color: #b7a57a;
 }
 .uw-homepage-slider-container .slideshow-controls:after {
-  background: url(/wp-content/themes/uw-2014/assets/svg/uw-sprite.svg) no-repeat -630px 0px;
+  background: url(../uw-2014/assets/svg/uw-sprite.svg) no-repeat -630px 0px;
   content: "";
   position: absolute;
   bottom: 0;
@@ -154,7 +154,7 @@ Version: 0.1
   margin-top: -14px;
   width: 16px;
   height: 28px;
-  background: url(/wp-content/themes/uw-2014/assets/svg/uw-sprite.svg) no-repeat -474px -55px;
+  background: url(../uw-2014/assets/svg/uw-sprite.svg) no-repeat -474px -55px;
 }
 .uw-homepage-slider-container .uw-homepage-slider.uw-hero-image {
   position: absolute;
