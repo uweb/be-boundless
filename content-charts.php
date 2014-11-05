@@ -1,10 +1,10 @@
-<div class="uw-charts factive">
+<div class="uw-charts">
   <div class="container">
 
     <div class="row">
 
       <div class="uw-fast-facts">
-        <span>Fact Facts</span>
+        <span>Fast Facts</span>
       </div>
 
       <div class="fact-1 col-md-6 campus-life">
@@ -28,7 +28,7 @@
 
           <div class="fact-4">
             <p>16</p>
-            <span>Coffee shops</span>
+            <span>Coffee Shops</span>
           </div>
 
           <div class="fact-5">
