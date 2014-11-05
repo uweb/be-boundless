@@ -769,6 +769,24 @@ Version: 0.1
   font-weight: 700;
   text-transform: uppercase;
 }
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .faculty-facts {
+    padding-left: 70px;
+    padding-right: 0;
+  }
+  .uw-charts .faculty-facts .people div:after {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .campus-life-facts {
+    margin-left: 70px;
+    position: relative;
+  }
+  .uw-charts .container {
+    padding: 50px 0;
+  }
+}
 @media only screen and (max-width: 767px) {
   .uw-charts .campus-life {
     padding-top: 50px;

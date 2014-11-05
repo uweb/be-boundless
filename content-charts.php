@@ -1,4 +1,4 @@
-<div class="uw-charts">
+<div class="uw-charts factive">
   <div class="container">
 
     <div class="row">
