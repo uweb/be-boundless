@@ -210,13 +210,61 @@
 
     }
 
+
+    // Veterans Fact 
+
+    .veterans-fact {
+        h2 {
+            background: url(assets/svg/laurel.svg) center 33px no-repeat;
+            font-size: 107px;
+            color: @lightgold;
+            padding: 0px 0 30px;
+            margin-bottom: 5px;
+            position: relative;
+            margin-top: 90px;
+            .transition(all 500ms ease-in .1s);
+            opacity: 0;
+            span {
+                font-size: 32px;
+                position: absolute;
+                top: 44px;
+                left: 50%;
+                margin-left: -42px;
+            }
+        }
+        p {
+            font-family: @font-family-headline;
+            font-weight: 600;
+            font-size: 24px;
+            color: #555;
+            small {
+                font-size: 14px;
+            }
+        }
+        small {
+            a {
+                color: inherit;
+            }
+        }
+    }        
+
 }
+
+
+
+
 
 .factive {
     .campus-life-facts div {
         .scale(1,1);
         opacity: 1;
     } 
+    .veterans-fact {
+        h2 {
+            margin-top: 0;
+            opacity: 1;
+        }
+    }
 
     .faculty-facts .people {
         p {

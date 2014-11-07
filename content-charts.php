@@ -45,29 +45,18 @@
       </div>
 
 
-      <div class="col-md-6 faculty-facts">
-        <h4>Faculty Membership</h4>
+      <div class="col-md-6 veterans-fact">
+        <h4>UW Ranking</h4>
 
         <div class="row">
-          <div class="people">
             
-            <div class="fact-1">
-              <p>60</p>
-              <span>Institute of Medicine</span>
-            </div>
-
-            <div class="fact-2">
-              <p>78</p>
-              <span>National Academy of Sciences</span>
-            </div>
-
-            <div class="fact-3">
-              <p>30</p>
-              <span>National Academy of Engineering</span>
+            <div class="fact">
+              <h2><span>#</span>2</h2>
+              <p>Veteran-friendly university<small>*</small></p>
+              <small><a href="http://colleges.usnews.rankingsandreviews.com/best-colleges/rankings/national-universities/veterans">*U.S. News and World Report</a></small>
             </div>
       
 
-          </div>
         </div>
         
       </div>

@@ -113,6 +113,19 @@ Version: 0.1
 .uw-homepage-slider-container .slide-59.uw-homepage-slider .hero-container a.uw-btn:before {
   background-color: #b7a57a;
 }
+.uw-homepage-slider-container .slide-15.uw-homepage-slider .hero-container h1 {
+  color: #4b2e83;
+}
+.uw-homepage-slider-container .slide-15.uw-homepage-slider .hero-container p {
+  color: #4b2e83;
+  text-shadow: none;
+}
+.uw-homepage-slider-container .slide-15.uw-homepage-slider .hero-container a.uw-btn {
+  text-shadow: none;
+}
+.uw-homepage-slider-container .slide-15.uw-homepage-slider .hero-container a.uw-btn:before {
+  background-color: #b7a57a;
+}
 .uw-homepage-slider-container .slideshow-controls:after {
   background: url(../uw-2014/assets/svg/uw-sprite.svg) no-repeat -630px 0px;
   content: "";
@@ -737,10 +750,45 @@ Version: 0.1
   display: block;
   background: url(assets/svg/slash-v2.svg) 0 0 no-repeat;
 }
+.uw-charts .veterans-fact h2 {
+  background: url(assets/svg/laurel.svg) center 33px no-repeat;
+  font-size: 107px;
+  color: #b7a57a;
+  padding: 0px 0 30px;
+  margin-bottom: 5px;
+  position: relative;
+  margin-top: 90px;
+  -webkit-transition: all 500ms ease-in 0.1s;
+  transition: all 500ms ease-in 0.1s;
+  opacity: 0;
+}
+.uw-charts .veterans-fact h2 span {
+  font-size: 32px;
+  position: absolute;
+  top: 44px;
+  left: 50%;
+  margin-left: -42px;
+}
+.uw-charts .veterans-fact p {
+  font-family: "Encode Sans Compressed", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #555;
+}
+.uw-charts .veterans-fact p small {
+  font-size: 14px;
+}
+.uw-charts .veterans-fact small a {
+  color: inherit;
+}
 .factive .campus-life-facts div {
   -webkit-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
   transform: scale(1, 1);
+  opacity: 1;
+}
+.factive .veterans-fact h2 {
+  margin-top: 0;
   opacity: 1;
 }
 .factive .faculty-facts .people p {
