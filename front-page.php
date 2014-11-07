@@ -7,7 +7,9 @@
 				 * (where ___ is the post format) and that will be used instead.
 				 */
 				get_template_part( 'menu', 'mobile' );
-
+        ?>
+                <div class='uw-body-wrap'>
+        <?php
 				get_template_part( 'content', 'slideshow' );
 
 				get_template_part( 'content', 'links' );
@@ -16,5 +18,6 @@
 
 				get_template_part( 'content', 'charts' );
 		?>
+                </div>
 
 <?php get_footer(); ?>
