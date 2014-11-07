@@ -96,7 +96,7 @@
       <a href="http://gohuskies.com" title="Athletics">
 
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   width="48px" height="48.255px" viewBox="0 0 48 48.255" enable-background="new 0 0 48 48.255" xml:space="preserve">
+   width="48px" height="50px" viewBox="0 0 48 48.255" enable-background="new 0 0 48 48.255" xml:space="preserve">
 <path fill="#A3A1A2" d="M45.548,6.95h-8.255V3.572h1.024c0.809,0,1.464-0.655,1.464-1.463s-0.655-1.463-1.464-1.463H9.681
   c-0.808,0-1.463,0.655-1.463,1.463s0.655,1.463,1.463,1.463h1.356V6.95H2.452C1.65,6.95,1,7.582,1,8.383
   C1,9.185,1.65,9.867,2.452,9.867h0.375c0.232,2.597,0.1,8.055,3.351,11.071c1.43,1.326,3.139,2.03,5.086,2.116
@@ -186,7 +186,7 @@
 
 
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   width="55.456px" height="55.393px" viewBox="0 0 55.456 55.393" enable-background="new 0 0 55.456 55.393" xml:space="preserve">
+   width="55.456px" height="50px" viewBox="0 0 55.456 55.393" enable-background="new 0 0 55.456 55.393" xml:space="preserve">
 <path fill="#A3A1A2" d="M24.521,16.487l-0.179-1.861c-2.177-0.068-3.986-0.393-5.488-0.873c-0.689,0.585-2.156,1.735-4.209,2.887
   C17.163,17.015,20.354,17.015,24.521,16.487z M12.157,8.41c-2.44,1.281-5.333,1.69-7.548,1.788c0.612,0.816,1.231,1.616,1.926,2.361
   c3.013-0.662,5.421-1.778,6.705-2.46C12.74,9.48,12.392,8.892,12.157,8.41z M13.003,6.085c0.298,0.117,0.519,0.375,0.59,0.687

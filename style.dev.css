@@ -43,25 +43,30 @@ Version: 0.1
   display: none;
 }
 .uw-homepage-slider-container .slide-16.uw-homepage-slider .hero-container h1,
-.uw-homepage-slider-container .slide-19.uw-homepage-slider .hero-container h1 {
+.uw-homepage-slider-container .slide-19.uw-homepage-slider .hero-container h1,
+.uw-homepage-slider-container .slide-21.uw-homepage-slider .hero-container h1 {
   color: #fff;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 .uw-homepage-slider-container .slide-16.uw-homepage-slider .hero-container .udub-slant span,
-.uw-homepage-slider-container .slide-19.uw-homepage-slider .hero-container .udub-slant span {
+.uw-homepage-slider-container .slide-19.uw-homepage-slider .hero-container .udub-slant span,
+.uw-homepage-slider-container .slide-21.uw-homepage-slider .hero-container .udub-slant span {
   background-color: #b7a57a;
 }
 .uw-homepage-slider-container .slide-16.uw-homepage-slider .hero-container p,
-.uw-homepage-slider-container .slide-19.uw-homepage-slider .hero-container p {
+.uw-homepage-slider-container .slide-19.uw-homepage-slider .hero-container p,
+.uw-homepage-slider-container .slide-21.uw-homepage-slider .hero-container p {
   color: white;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 .uw-homepage-slider-container .slide-16.uw-homepage-slider .hero-container a.uw-btn,
-.uw-homepage-slider-container .slide-19.uw-homepage-slider .hero-container a.uw-btn {
+.uw-homepage-slider-container .slide-19.uw-homepage-slider .hero-container a.uw-btn,
+.uw-homepage-slider-container .slide-21.uw-homepage-slider .hero-container a.uw-btn {
   text-shadow: none;
 }
 .uw-homepage-slider-container .slide-16.uw-homepage-slider .hero-container a.uw-btn:before,
-.uw-homepage-slider-container .slide-19.uw-homepage-slider .hero-container a.uw-btn:before {
+.uw-homepage-slider-container .slide-19.uw-homepage-slider .hero-container a.uw-btn:before,
+.uw-homepage-slider-container .slide-21.uw-homepage-slider .hero-container a.uw-btn:before {
   background-color: #b7a57a;
 }
 .uw-homepage-slider-container .slide-15.uw-homepage-slider .hero-container h1 {
@@ -106,6 +111,19 @@ Version: 0.1
   text-shadow: none;
 }
 .uw-homepage-slider-container .slide-59.uw-homepage-slider .hero-container a.uw-btn:before {
+  background-color: #b7a57a;
+}
+.uw-homepage-slider-container .slide-15.uw-homepage-slider .hero-container h1 {
+  color: #4b2e83;
+}
+.uw-homepage-slider-container .slide-15.uw-homepage-slider .hero-container p {
+  color: #4b2e83;
+  text-shadow: none;
+}
+.uw-homepage-slider-container .slide-15.uw-homepage-slider .hero-container a.uw-btn {
+  text-shadow: none;
+}
+.uw-homepage-slider-container .slide-15.uw-homepage-slider .hero-container a.uw-btn:before {
   background-color: #b7a57a;
 }
 .uw-homepage-slider-container .slideshow-controls:after {
@@ -533,69 +551,262 @@ Version: 0.1
   background-color: #ECE9E2;
   text-align: center;
 }
-.uw-charts .fact-1 {
-  background: url(assets/images/caduceus.png) center top no-repeat;
-  height: 313px;
-  margin: 0;
-  text-align: center;
-  margin-top: 40px;
-}
-.uw-charts .fact-1 div {
-  width: 70px;
-  margin: 0 auto;
-  position: relative;
-}
-.uw-charts .fact-1 div span {
-  position: absolute;
-  top: 66px;
-  left: -26px;
-  color: #4b2e83;
-  font-size: 50px;
-  font-weight: 600;
-}
-.uw-charts .fact-1 div div {
-  font-size: 120px;
-  font-family: "Encode Sans Compressed", sans-serif;
-  font-weight: 900;
-  color: #4b2e83;
-  display: inline-block;
-  margin-bottom: -20px;
-}
-.uw-charts .fact-1 p {
-  font-family: "Encode Sans Compressed", sans-serif;
-  font-weight: 500;
-  padding: 0 30px;
-}
-.uw-charts .fact-1:after {
-  position: absolute;
-  right: -90px;
-  width: 1px;
-  content: "";
-  background-color: #bbbbbb;
-  height: 160px;
-  top: 40px;
-}
 .uw-charts h4 {
-  margin-bottom: 30px;
+  font-size: 21px;
   font-weight: 900;
-  margin-top: 55px;
-}
-.uw-charts .faculty-facts {
-  padding-left: 100px;
+  color: #4b2e83;
 }
 .uw-charts:after {
   position: absolute;
   bottom: 0;
+  left: 0;
   height: 80px;
   width: 100%;
   content: "";
   background: url('../uw-2014/assets/images/stripes-dark.png');
   opacity: .2;
 }
-.uw-charts img {
-  max-width: 100%;
+.uw-charts .campus-life-facts {
+  height: 380px;
 }
-.uw-charts .uw-fast-facts {
+.uw-charts .campus-life-facts div {
+  background-color: white;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 15px 0 0;
+  opacity: 0;
+  -webkit-transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
+  -webkit-transition: all 500ms ease-in 1s;
+  transition: all 500ms ease-in 1s;
+}
+.uw-charts .campus-life-facts p {
+  font-size: 33px;
+  font-family: "Encode Sans Compressed", sans-serif;
+  font-weight: 900;
+  color: #85754d;
+  margin: 0 0 -12px;
+}
+.uw-charts .campus-life-facts span {
+  font-family: "Encode Sans Compressed", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #4b2e83;
+  position: relative;
+}
+.uw-charts .campus-life-facts span:after {
+  position: absolute;
+  left: 50%;
+  margin-left: -15px;
+  bottom: -35px;
+  width: 30px;
+  height: 30px;
+  content: " ";
+  display: block;
+  background: url(assets/svg/campus-life.svg) center top no-repeat;
+}
+.uw-charts .campus-life-facts .fact-1 {
+  left: 40px;
+  top: 30px;
+  width: 150px;
+  height: 150px;
+  -webkit-transition-delay: .03s;
+  /* Safari */
+  transition-delay: .03s;
+}
+.uw-charts .campus-life-facts .fact-1 span:after {
+  background-position: 0px 0px;
+}
+.uw-charts .campus-life-facts .fact-2 {
+  left: 292px;
+  top: 60px;
+  width: 120px;
+  height: 120px;
+  padding: 0 0 0;
+  -webkit-transition-delay: .01s;
+  /* Safari */
+  transition-delay: .01s;
+}
+.uw-charts .campus-life-facts .fact-2 span:after {
+  background-position: 0px -40px;
+}
+.uw-charts .campus-life-facts .fact-3 {
+  left: 419px;
+  top: 80px;
+  width: 115px;
+  height: 115px;
+  padding: 0 0 0;
+  -webkit-transition-delay: .08s;
+  /* Safari */
+  transition-delay: .08s;
+}
+.uw-charts .campus-life-facts .fact-3 span:after {
+  background-position: 0px -196px;
+}
+.uw-charts .campus-life-facts .fact-4 {
+  left: 154px;
+  top: 132px;
+  width: 165px;
+  height: 165px;
+  padding: 25px 0 0;
+  -webkit-transition-delay: .03s;
+  /* Safari */
+  transition-delay: .03s;
+}
+.uw-charts .campus-life-facts .fact-4 span:after {
+  background-position: 0px -152px;
+}
+.uw-charts .campus-life-facts .fact-5 {
+  left: 321px;
+  top: 180px;
+  width: 160px;
+  height: 160px;
+  padding: 20px 0 0;
+  -webkit-transition-delay: .01s;
+  /* Safari */
+  transition-delay: .01s;
+}
+.uw-charts .campus-life-facts .fact-5 span:after {
+  background-position: 0px -230px;
+}
+.uw-charts .campus-life-facts .fact-6 {
+  left: 4px;
+  top: 180px;
+  width: 150px;
+  height: 150px;
+  -webkit-transition-delay: .07s;
+  /* Safari */
+  transition-delay: .07s;
+}
+.uw-charts .campus-life-facts .fact-6 span:after {
+  background-position: 0px -77px;
+}
+.uw-charts .faculty-facts {
+  padding-top: 60px;
+}
+.uw-charts .faculty-facts .people div {
+  float: left;
+  width: 33%;
+  position: relative;
+}
+.uw-charts .faculty-facts .people p {
+  font-size: 60px;
+  font-family: "Encode Sans Compressed", sans-serif;
+  font-weight: 900;
+  color: #b7a57a;
+  position: relative;
+  margin-bottom: 40px;
+  opacity: 0;
+  -webkit-transition: all 500ms ease-in 0s;
+  transition: all 500ms ease-in 0s;
+}
+.uw-charts .faculty-facts .people p:after {
+  position: absolute;
+  left: 50%;
+  margin-left: -15px;
+  bottom: -25px;
+  width: 0;
+  height: 30px;
+  content: " ";
+  display: block;
+  background: url(assets/svg/person-v2.svg) 0 0 repeat-x;
+  -webkit-transition: all 500ms ease-in 0s;
+  transition: all 500ms ease-in 0s;
+}
+.uw-charts .faculty-facts .people span {
+  font-family: "Encode Sans Compressed", sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+  width: 140px;
+  display: inline-block;
+}
+.uw-charts .faculty-facts .fact-2:after {
+  position: absolute;
+  left: -50px;
+  top: 48px;
+  width: 80px;
+  height: 120px;
+  content: " ";
+  display: block;
+  background: url(assets/svg/slash-v2.svg) 0 0 no-repeat;
+}
+.uw-charts .faculty-facts .fact-3:after {
+  position: absolute;
+  left: -39px;
+  top: 48px;
+  width: 80px;
+  height: 120px;
+  content: " ";
+  display: block;
+  background: url(assets/svg/slash-v2.svg) 0 0 no-repeat;
+}
+.uw-charts .veterans-fact h2 {
+  background: url(assets/svg/laurel.svg) center 33px no-repeat;
+  font-size: 107px;
+  color: #b7a57a;
+  padding: 0px 0 30px;
+  margin-bottom: 5px;
+  position: relative;
+  margin-top: 90px;
+  -webkit-transition: all 500ms ease-in 0.1s;
+  transition: all 500ms ease-in 0.1s;
+  opacity: 0;
+}
+.uw-charts .veterans-fact h2 span {
+  font-size: 32px;
+  position: absolute;
+  top: 44px;
+  left: 50%;
+  margin-left: -42px;
+}
+.uw-charts .veterans-fact p {
+  font-family: "Encode Sans Compressed", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #555;
+}
+.uw-charts .veterans-fact p small {
+  font-size: 14px;
+}
+.uw-charts .veterans-fact small a {
+  color: inherit;
+}
+.factive .campus-life-facts div {
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+  opacity: 1;
+}
+.factive .veterans-fact h2 {
+  margin-top: 0;
+  opacity: 1;
+}
+.factive .faculty-facts .people p {
+  opacity: 1;
+}
+.factive .faculty-facts .people .fact-1 p:after {
+  width: 92px;
+  margin-left: -46px;
+}
+.factive .faculty-facts .people .fact-2 p:after {
+  width: 126px;
+  margin-left: -63px;
+}
+.factive .faculty-facts .people .fact-3 p:after {
+  width: 42px;
+  margin-left: -21px;
+}
+.uw-fast-facts {
   position: absolute;
   left: 50%;
   margin-left: -95px;
@@ -606,45 +817,49 @@ Version: 0.1
   font-weight: 700;
   text-transform: uppercase;
 }
-.uw-charts .title {
-  text-align: right;
-  font-family: "Encode Sans Compressed", sans-serif;
-  font-weight: 500;
-  margin-bottom: 15px;
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .faculty-facts {
+    padding-left: 70px;
+    padding-right: 0;
+  }
+  .uw-charts .faculty-facts .people div:after {
+    display: none;
+  }
 }
-.uw-charts .person {
-  float: left;
-  width: 13px;
-  height: 25px;
-  margin: 2px;
-  background: url('assets/svg/person.svg') no-repeat 0 0;
-  display: none;
-}
-.uw-charts .person.bar {
-  background: none no-repeat 0 0 #dddddd;
-  width: 2px;
-  height: 25px;
-}
-.uw-charts .number {
-  opacity: 0;
-  position: absolute;
-  left: 0;
-  font-family: "Encode Sans Compressed", sans-serif;
-  font-weight: 900;
-  font-size: 23px;
-  color: #85754d;
-  line-height: 1.35;
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .campus-life-facts {
+    margin-left: 70px;
+    position: relative;
+  }
+  .uw-charts .container {
+    padding: 50px 0;
+  }
 }
 @media only screen and (max-width: 767px) {
+  .uw-charts .campus-life {
+    padding-top: 50px;
+  }
+  .uw-charts .campus-life-facts {
+    height: auto;
+  }
+  .uw-charts .campus-life-facts div {
+    position: static;
+    margin: 0 auto;
+    margin-bottom: -15px;
+  }
   .uw-charts .faculty-facts {
-    padding: 0 30px 30px;
+    padding-bottom: 50px;
   }
-  .uw-charts .title {
-    text-align: left;
+  .uw-charts .faculty-facts .people div {
+    float: none;
+    width: 100%;
   }
-  .box-outer .box.three .tile {
-    margin: 0 0 10px 0;
+  .uw-charts .faculty-facts .people div:after {
+    display: none;
   }
+}
+.single-format-gallery .postid-496 .uw-site-title {
+  width: 680px;
 }
 .single-format-gallery .uw-hero-image {
   height: 445px;
