@@ -241,7 +241,7 @@ Version: 0.1
     padding-right: 60px;
     margin: 50px 0 0;
   }
-  .uw-homepage-slider-container .uw-homepage-slider .hero-container.slide-23 .col-md-8 {
+  .uw-homepage-slider-container .uw-homepage-slider.slide-23 .col-md-8 {
     padding: 20px 0 0 50px;
   }
 }
@@ -249,7 +249,7 @@ Version: 0.1
   .uw-homepage-slider-container .uw-homepage-slider .hero-container {
     width: 1140px;
   }
-  .uw-homepage-slider-container .uw-homepage-slider .hero-container.slide-23 .col-md-8 {
+  .uw-homepage-slider-container .uw-homepage-slider.slide-23 .col-md-8 {
     padding: 20px 0 0 50px;
   }
 }
