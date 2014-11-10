@@ -8,7 +8,6 @@
 				 */
 				get_template_part( 'menu', 'mobile' );
         ?>
-                <div class='uw-body-wrap'>
         <?php
 				get_template_part( 'content', 'slideshow' );
 
@@ -18,6 +17,5 @@
 
 				get_template_part( 'content', 'charts' );
 		?>
-                </div>
 
 <?php get_footer(); ?>
