@@ -1,10 +1,11 @@
+UW = UW || {};
+
 UW.baseUrl = Backbone.history.location.protocol + '//www.washington.edu/home/'
 UW.sources = {
   quicklinks : UW.baseUrl + 'wp-admin/admin-ajax.php?action=quicklinks',
   search     : UW.baseUrl + 'wp-admin/admin-ajax.php'
-};UW = UW || {}
-
-UW.HomepageSlider = Backbone.View.extend({
+}
+;UW.HomepageSlider = Backbone.View.extend({
 
   el : '.uw-homepage-slider-container',
 
@@ -61,7 +62,8 @@ UW.HomepageSlider.initialize = function() {
     UW.homepageslider = new UW.HomepageSlider();
 }
 
-$(document).ready( UW.HomepageSlider.initialize );var UW = UW || {}
+$(document).ready( UW.HomepageSlider.initialize )
+;var UW = UW || {}
 
 UW.Facts = Backbone.View.extend({
 

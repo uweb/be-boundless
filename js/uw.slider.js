@@ -1,5 +1,3 @@
-UW = UW || {}
-
 UW.HomepageSlider = Backbone.View.extend({
 
   el : '.uw-homepage-slider-container',
