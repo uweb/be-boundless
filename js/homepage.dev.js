@@ -91,7 +91,6 @@ UW.Facts = Backbone.View.extend({
   },
 
   render : _.once( function() {
-    console.log('here');
     UW.$body.addClass( this.ACTIVATE )
   }),
 
