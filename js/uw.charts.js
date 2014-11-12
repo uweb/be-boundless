@@ -1,4 +1,4 @@
-var UW = UW || {}
+UW = UW || {}
 
 UW.Facts = Backbone.View.extend({
 
