@@ -11,6 +11,18 @@ Version: 0.1
   border-bottom-color: #4b2e83 !important;
   border-top-color: #4b2e83 !important;
 }
+body.site-boundless .uw-search-bar-container form,
+body.site-home .uw-search-bar-container form {
+  width: calc(100% - 80px);
+}
+body.site-boundless .uw-search-bar-container div.labels,
+body.site-home .uw-search-bar-container div.labels {
+  display: none;
+}
+body.site-boundless .uw-search-bar-container #mobile-search-select,
+body.site-home .uw-search-bar-container #mobile-search-select {
+  display: none !important;
+}
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
   ul.uw-mobile-menu {

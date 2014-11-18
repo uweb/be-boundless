@@ -63,7 +63,7 @@ UW.HomepageSlider.initialize = function() {
 }
 
 $(document).ready( UW.HomepageSlider.initialize )
-;var UW = UW || {}
+;UW = UW || {}
 
 UW.Facts = Backbone.View.extend({
 
