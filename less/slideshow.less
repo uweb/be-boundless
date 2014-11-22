@@ -13,7 +13,6 @@
     // Eco Car & W Day
    .slide-15,
    .slide-16,
-   .slide-19,
    .slide-21 {
      &.uw-homepage-slider .hero-container {
        h1 {
@@ -36,7 +35,21 @@
      }
    }
 
- 
+  // Techbox
+
+   .slide-19 {
+     &.uw-homepage-slider .hero-container {
+       h1 {
+         color: @purple;
+         text-shadow: none;
+       }
+       p {
+          color: #FFF;
+          text-shadow: none;
+       }
+     }
+   } 
+   
   // Depths
 
    .slide-25 {
@@ -313,6 +326,11 @@
         }
       }
       &.slide-23 {
+          .col-md-8 {
+            padding: 20px 0 0 50px;
+          }
+      }
+      &.slide-25 {
           .col-md-8 {
             padding: 20px 0 0 50px;
           }
