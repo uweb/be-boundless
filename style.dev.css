@@ -85,9 +85,12 @@ body.site-home .uw-search-bar-container #mobile-search-select {
   color: #4b2e83;
   text-shadow: none;
 }
+.uw-homepage-slider-container .slide-19.uw-homepage-slider .hero-container .udub-slant span {
+  background-color: #b7a57a;
+}
 .uw-homepage-slider-container .slide-19.uw-homepage-slider .hero-container p {
   color: #FFF;
-  text-shadow: none;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 .uw-homepage-slider-container .slide-25.uw-homepage-slider .hero-container h1 {
   color: #4b2e83;
