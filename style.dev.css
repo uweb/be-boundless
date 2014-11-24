@@ -89,8 +89,8 @@ body.site-home .uw-search-bar-container #mobile-search-select {
   background-color: #b7a57a;
 }
 .uw-homepage-slider-container .slide-19.uw-homepage-slider .hero-container p {
-  color: #FFF;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  color: #3E3E3E;
+  text-shadow: none;
 }
 .uw-homepage-slider-container .slide-19.uw-homepage-slider .hero-container a.uw-btn {
   text-shadow: none;
