@@ -111,6 +111,8 @@ body.site-home .uw-search-bar-container #mobile-search-select {
 }
 .uw-homepage-slider-container .slide-25.uw-homepage-slider .hero-container a.uw-btn {
   text-shadow: none;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 .uw-homepage-slider-container .slide-25.uw-homepage-slider .hero-container a.uw-btn:before {
   background-color: #b7a57a;
