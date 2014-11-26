@@ -792,36 +792,49 @@ body.site-home .uw-search-bar-container #mobile-search-select {
   display: block;
   background: url(assets/svg/slash-v2.svg) 0 0 no-repeat;
 }
-.uw-charts .veterans-fact h2 {
-  background: url(assets/svg/laurel.svg) center 33px no-repeat;
-  font-size: 107px;
+.uw-charts .contributions-fact h2 {
+  background: url(assets/svg/laurel.svg) center 6px no-repeat;
+  font-size: 56px;
   color: #b7a57a;
   padding: 0px 0 30px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   position: relative;
   margin-top: 90px;
   -webkit-transition: all 500ms ease-in 0.1s;
   transition: all 500ms ease-in 0.1s;
   opacity: 0;
 }
-.uw-charts .veterans-fact h2 span {
-  font-size: 32px;
-  position: absolute;
-  top: 44px;
-  left: 50%;
-  margin-left: -42px;
+.uw-charts .contributions-fact h4 {
+  margin: 80px 0 30px;
+  font-size: 19px;
 }
-.uw-charts .veterans-fact p {
+.uw-charts .contributions-fact p {
   font-family: "Encode Sans Compressed", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
   color: #555;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 21px;
 }
-.uw-charts .veterans-fact p small {
+.uw-charts .contributions-fact p small {
   font-size: 14px;
 }
-.uw-charts .veterans-fact small a {
-  color: inherit;
+.uw-charts .contributions-fact li {
+  width: 33%;
+  float: left;
+  list-style: none;
+  position: relative;
+}
+.uw-charts .contributions-fact li h2:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100px;
+  background-color: #D2D2D2;
+  right: 0;
+  top: 50px;
+}
+.uw-charts .contributions-fact li:last-child h2:after {
+  display: none;
 }
 .factive .campus-life-facts div {
   -webkit-transform: scale(1, 1);
@@ -829,7 +842,7 @@ body.site-home .uw-search-bar-container #mobile-search-select {
   transform: scale(1, 1);
   opacity: 1;
 }
-.factive .veterans-fact h2 {
+.factive .contributions-fact h2 {
   margin-top: 0;
   opacity: 1;
 }

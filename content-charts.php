@@ -45,17 +45,25 @@
       </div>
 
 
-      <div class="col-md-6 veterans-fact">
-        <h4>UW Ranking</h4>
+      <div class="col-md-6 contributions-fact">
+        <h4>Contributions to the UW  this year created</h4>
 
         <div class="row">
             
-            <div class="fact">
-              <h2><span>#</span>2</h2>
-              <p>Veteran-friendly university<small>*</small></p>
-              <small><a href="http://colleges.usnews.rankingsandreviews.com/best-colleges/rankings/national-universities/veterans">*U.S. News and World Report</a></small>
-            </div>
-      
+            <ul>
+              <li class="fact-1">
+                <h2>41</h2>
+                <p>new <br>undergraduate <br>scholarships</p>
+              </li>
+              <li class="fact-2">
+                <h2>57</h2>
+                <p>post-baccalaureate <br>fellowships and <br> awards</p>
+              </li>
+              <li class="fact-3">
+                <h2>81</h2>
+                <p>funds that  <br>directly benefit <br>students</p>
+              </li>
+            </ul>
 
         </div>
         
