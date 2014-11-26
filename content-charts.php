@@ -53,7 +53,7 @@
             <ul>
               <li class="fact-1">
                 <h2>41</h2>
-                <p>new <br>undergraduate <br>scholarships</p>
+                <p>new undergraduate <br>scholarships</p>
               </li>
               <li class="fact-2">
                 <h2>57</h2>
@@ -61,7 +61,7 @@
               </li>
               <li class="fact-3">
                 <h2>81</h2>
-                <p>funds that  <br>directly benefit <br>students</p>
+                <p>funds that directly <br>benefit students</p>
               </li>
             </ul>
 

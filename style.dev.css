@@ -880,6 +880,10 @@ body.site-home .uw-search-bar-container #mobile-search-select {
   .uw-charts .faculty-facts .people div:after {
     display: none;
   }
+  .uw-charts .campus-life-facts .fact-3 {
+    left: -72px;
+    top: 96px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .campus-life-facts {
@@ -911,6 +915,9 @@ body.site-home .uw-search-bar-container #mobile-search-select {
   }
   .uw-charts .faculty-facts .people div:after {
     display: none;
+  }
+  .uw-charts .contributions-fact li {
+    width: 100%;
   }
 }
 .single-format-gallery .postid-496 .uw-site-title {
