@@ -52,16 +52,22 @@
             
             <ul>
               <li class="fact-1">
-                <h2>41</h2>
-                <p>new undergraduate <br>scholarships</p>
+                <p>
+                    <span>41</span>
+                    new undergraduate <br>scholarships
+                </p>
               </li>
               <li class="fact-2">
-                <h2>57</h2>
-                <p>post-baccalaureate <br>fellowships and <br> awards</p>
+                <p>
+                    <span>57</span>
+                    post-baccalaureate <br>fellowships and <br> awards
+                </p>
               </li>
               <li class="fact-3">
-                <h2>81</h2>
-                <p>funds that directly <br>benefit students</p>
+                <p>
+                    <span>81</span>
+                    funds that directly <br>benefit students
+                </p>
               </li>
             </ul>
 

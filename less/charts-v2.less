@@ -216,7 +216,9 @@
     // Veterans Fact 
 
     .contributions-fact {
-        h2 {
+        font-weight: 800;
+        font-family: @font-family-headline;
+        span {
             background: url(assets/svg/laurel.svg) center 6px no-repeat;
             font-size: 56px;
             color: @lightgold;
@@ -224,8 +226,11 @@
             margin-bottom: 15px;
             position: relative;
             margin-top: 90px;
+            height: 102px;
+            line-height: 72px;
             .transition(all 500ms ease-in .1s);
             opacity: 0;
+            display: block;
         }
         h3 {
             margin: 80px 0 30px;
@@ -261,7 +266,7 @@
         opacity: 1;
     } 
     .contributions-fact {
-        h2 {
+        span {
             margin-top: 0;
             opacity: 1;
         }
