@@ -853,6 +853,7 @@ body.site-home .uw-search-bar-container #mobile-search-select {
   color: white;
   font-weight: 700;
   text-transform: uppercase;
+  line-height: inherit;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .faculty-facts {
