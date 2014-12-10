@@ -4,10 +4,11 @@
     background-color: #ECE9E2;
     text-align: center;
 
-    h4 {
+    h3 {
         font-size: 21px;
         font-weight: @ultra-font-weight;
         color: @purple;
+        margin-top: 14.5px;
     }
     
     &:after {
@@ -22,43 +23,44 @@
     }
     .campus-life-facts {
         height: 380px;
-        div {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+            position: absolute;
             background-color: white;
             .border-radius(100%);
             width: 100px;
             height: 100px;
-            position: absolute;
             left: 0;
             top: 0;
             padding: 15px 0 0;
             opacity: 0;
             .scale(.5,.5);
             .transition(all 500ms ease-in 1s);
-        }        
-        p {
-            font-size: 33px;
-            font-family: @font-family-headline;
-            font-weight: @ultra-font-weight;
-            color: @darkgold;
-            margin: 0 0 -12px;
-        }
-        span {
             font-family: @font-family-headline;
             font-weight: 700;
             font-size: 16px;
             color: @purple;
-            position: relative;
             &:after {
                 position: absolute;
                 left: 50%;
                 margin-left: -15px;
-                bottom: -35px;
+                //bottom: -35px;
                 width: 30px;
                 height: 30px;
                 content: " ";
                 display: block;
                 background: url(assets/svg/campus-life.svg) center top no-repeat;
             }
+        }        
+        span {
+            font-size: 33px;
+            font-family: @font-family-headline;
+            font-weight: @ultra-font-weight;
+            color: @darkgold;
+            display:block;
+            margin: 0 0 -10px;
         }
         .fact-1 {
             left: 40px;
@@ -67,7 +69,7 @@
             height: 150px;
             -webkit-transition-delay: .03s; /* Safari */
             transition-delay: .03s;
-            span:after {
+            &:after {
                 background-position: 0px 0px;
             }
         }
@@ -80,7 +82,7 @@
             padding: 0 0 0;
             -webkit-transition-delay: .01s; /* Safari */
             transition-delay: .01s;
-            span:after {
+            &:after {
                 background-position: 0px -40px;
             }
         }
@@ -93,7 +95,7 @@
             padding: 0 0 0;
             -webkit-transition-delay: .08s; /* Safari */
             transition-delay: .08s;
-            span:after {
+            &:after {
                 background-position: 0px -196px;
             }
         }
@@ -106,7 +108,7 @@
             padding: 25px 0 0;
             -webkit-transition-delay: .03s; /* Safari */
             transition-delay: .03s;
-            span:after {
+            &:after {
                 background-position: 0px -152px;
             }
         }
@@ -119,7 +121,7 @@
             padding: 20px 0 0;
             -webkit-transition-delay: .01s; /* Safari */
             transition-delay: .01s;
-            span:after {
+            &:after {
                 background-position: 0px -230px;
             }
         }
@@ -131,7 +133,7 @@
             height: 150px;
             -webkit-transition-delay: .07s; /* Safari */
             transition-delay: .07s;
-            span:after {
+            &:after {
                 background-position: 0px -77px;
             }
         }
@@ -225,7 +227,7 @@
             .transition(all 500ms ease-in .1s);
             opacity: 0;
         }
-        h4 {
+        h3 {
             margin: 80px 0 30px;
             font-size: 19px;
         }
@@ -254,7 +256,7 @@
 
 
 .factive {
-    .campus-life-facts div {
+    .campus-life-facts li {
         .scale(1,1);
         opacity: 1;
     } 
@@ -295,6 +297,9 @@
 }
 
 .uw-fast-facts {
+  margin:0px;
+  font-size:17px;
+  font-family: @font-family-base;
   position:absolute;
   left: 50%;
   margin-left: -95px;

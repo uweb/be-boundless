@@ -3,50 +3,50 @@
 
     <div class="row">
 
-      <div class="uw-fast-facts">
+      <h2 class="uw-fast-facts">
         <span>Fast Facts</span>
-      </div>
+      </h2>
 
       <div class="fact-1 col-md-6 campus-life">
-        <h4>Campus Life</h4>
-        <div class="campus-life-facts">
+        <h3>Campus Life</h3>
+        <ul class="campus-life-facts">
 
-          <div class="fact-1">
-            <p>14</p>
-            <span>Libraries</span>
-          </div>
+          <li class="fact-1">
+            <span>14</span>
+            Libraries
+          </li>
 
-          <div class="fact-2">
-            <p>4</p>
-            <span>Markets</span>
-          </div>
+          <li class="fact-2">
+            <span>4</span>
+            Markets
+          </li>
 
-          <div class="fact-3">
-            <p>3</p>
-            <span>Food Trucks</span>
-          </div>
+          <li class="fact-3">
+            <span>3</span>
+            Food Trucks
+          </li>
 
-          <div class="fact-4">
-            <p>16</p>
-            <span>Coffee Shops</span>
-          </div>
+          <li class="fact-4">
+            <span>16</span>
+            Coffee Shops
+          </li>
 
-          <div class="fact-5">
-            <p>11</p>
-            <span>Residence Halls</span>
-          </div>
+          <li class="fact-5">
+            <span>11</span>
+            Residence Halls
+          </li>
 
-          <div class="fact-6">
-            <p>15</p>
-            <span>Restaurants</span>
-          </div>
+          <li class="fact-6">
+            <span>15</span>
+            Restaurants
+          </li>
 
-        </div>
+        </ul>
       </div>
 
 
       <div class="col-md-6 contributions-fact">
-        <h4>Contributions to the UW  this year created</h4>
+        <h3>Contributions to the UW  this year created</h3>
 
         <div class="row">
             
