@@ -1,5 +1,5 @@
-<div class="uw-homepage-slider-container">
-
+<div role='region' aria-labelledby='slideshow-header' class="uw-homepage-slider-container">
+  <h2 id='slideshow-header' class='offscreen'>Featured Story Slideshow</h2>
   <?php if ( class_exists('UW_Slideshow') ) : foreach ( UW_Slideshow::get_latest_slideshow() as $slide ) : ?>
 
   <div class="uw-hero-image uw-homepage-slider slide-<?php echo $slide->id ?>" data-id="<?php echo $slide->id; ?>" style="background:url(<?php echo $slide->image; ?>) no-repeat center; background-size:cover;">
@@ -13,7 +13,7 @@
       <div class="row">
         <div class="col-md-8">
 
-          <h1><?php echo $slide->title; ?></h1>
+          <h3 id='<?= $slide->id ?>-title' class='slide-title'><?php echo $slide->title; ?></h3>
 
           <span class="udub-slant"><span></span></span>
 
@@ -32,7 +32,7 @@
       <div class="slideshow-controls">
           <span class="uw-boundless">Be Boundless</span>
 
-          <p class="next-headline"></p>
+          <button class="next-headline"></button>
       </div>
 
 </div>

@@ -6,7 +6,7 @@ UW.HomepageSlider = Backbone.View.extend({
 
   headline : '.next-headline',
 
-  template : '<p class="next-headline slide-<%= slide %>" style="display:block;"><%= title %></p>',
+  template : '<button class="next-headline slide-<%= slide %>" style="display:block;"><span>NEXT</span><%= title %></button>',
 
   events : {
     'click .next-headline' : 'nextSlide',
@@ -16,20 +16,25 @@ UW.HomepageSlider = Backbone.View.extend({
   {
     _.bindAll( this, 'render', 'nextSlide', 'changeNextArticle' )
     this.count = this.$el.children( this.slides ).length
+    $(this.slides).hide();
+    $(this.slides).last().show();
     this.showNextHeadline()
-    this.changeNextArticle()
+    this.changeNextArticle(false)
   },
 
   nextSlide : function( e )
   {
-    this.$el.children( this.slides).last().fadeOut( this.rotateSlides )
+    var $element = this.$el.children( this.slides).last()
+    $element.fadeOut()
+    this.rotateSlides($element);
+    this.$el.children(this.slides).last().fadeIn();
   },
 
-  rotateSlides : function()
+  rotateSlides : function($element)
   {
-    var $this    = $( this )
-    $this.insertBefore( $this.siblings(this.slides).first() ).show()
-    UW.homepageslider.changeNextArticle()
+    //var $this    = $( this )
+    $element.insertBefore( $element.siblings(this.slides).first() );
+    UW.homepageslider.changeNextArticle(true);  
   },
 
   showNextHeadline : function()
@@ -37,15 +42,18 @@ UW.HomepageSlider = Backbone.View.extend({
     this.$el.find( this.headline ).show()
   },
 
-  changeNextArticle: function()
+  changeNextArticle: function(edit_focus)
   {
     this.$el.find( this.headline).replaceWith( this.render )
+    if (edit_focus){
+        this.$el.find('button').focus();
+    }
   },
 
   render : function()
   {
     var slide = this.$el.children( this.slides ).eq( this.count - 2 )
-    return _.template( this.template, { title: slide.find('h1').text(), slide: slide.data().id })
+    return _.template( this.template, { title: slide.find('h3').text(), slide: slide.data().id })
   }
 
 })
