@@ -163,7 +163,6 @@ body.site-home .uw-search-bar-container #mobile-search-select {
   right: 15%;
   bottom: 35px;
   width: 240px;
-  width: auto;
 }
 .uw-homepage-slider-container .slideshow-controls .next-headline span {
   position: absolute;
@@ -186,7 +185,7 @@ body.site-home .uw-search-bar-container #mobile-search-select {
   background: url(../uw-2014/assets/svg/uw-sprite.svg) no-repeat -474px -55px;
 }
 .uw-homepage-slider-container .slideshow-controls .next-headline:focus {
-  background-color: white;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
   color: #4b2e83;
 }
 .uw-homepage-slider-container .uw-homepage-slider.uw-hero-image {
