@@ -1,4 +1,4 @@
-<div class="container uw-links">
+<nav aria-label='popular links' class="container uw-links">
   <ul class="center-block">
 
     <li>
@@ -222,4 +222,4 @@
     </li>
 
   </ul>
-</div>
+</nav>
