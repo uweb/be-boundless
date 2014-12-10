@@ -8,6 +8,8 @@
 				 */
 				get_template_part( 'menu', 'mobile' );
         ?>
+        <main>
+        <h1 class='offscreen'>University Of Washington</h1>
         <?php
 				get_template_part( 'content', 'slideshow' );
 
@@ -17,5 +19,6 @@
 
 				get_template_part( 'content', 'charts' );
 		?>
+        </main>
 
 <?php get_footer(); ?>
