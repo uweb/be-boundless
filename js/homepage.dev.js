@@ -21,12 +21,21 @@ UW.sources = {
 
   initialize : function( options )
   {
-    _.bindAll( this, 'render', 'nextSlide', 'changeNextArticle' )
-    this.count = this.$el.children( this.slides ).length
-    $(this.slides).hide();
-    $(this.slides).last().show();
-    this.showNextHeadline()
-    this.changeNextArticle(false)
+    _.bindAll( this, 'render', 'nextSlide', 'changeNextArticle' );
+    this.count = this.$el.children( this.slides ).length;
+    this.prep_slides();
+    this.showNextHeadline();
+    this.changeNextArticle(false);
+  },
+  
+  prep_slides : function () {
+    var $slides = $(this.slides);
+    for (var $slide, i = 0; i < $slides.length; i++){
+        $slide = $slides.eq(i);
+        $slide.find('a.uw-btn').attr('aria-describedby', $slide.find('h3').attr('id'));
+    }
+    $slides.hide();
+    $slides.last().show();
   },
 
   nextSlide : function( e )
@@ -34,7 +43,7 @@ UW.sources = {
     var $element = this.$el.children( this.slides).last()
     $element.fadeOut()
     this.rotateSlides($element);
-    this.$el.children(this.slides).last().fadeIn();
+    this.$el.children(this.slides).last().fadeIn().find('a').focus();
   },
 
   rotateSlides : function($element)
