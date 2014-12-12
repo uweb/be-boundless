@@ -88,59 +88,6 @@
      }
    }
 
-  // Siva
-
-//   .slide-17 {
-//     &.uw-homepage-slider .hero-container {
-//       h3 {
-//         color: #fff;
-//         text-shadow: 1px 1px 1px rgba(0,0,0,.3);
-//       }
-//       .udub-slant span {
-//          background-color: @lightgold;
-//       }
-//       p {
-//          color: white;
-//          text-shadow: 1px 1px 1px rgba(0,0,0,.3);
-//       }
-//       a.uw-btn {
-//          text-shadow: none;
-//          &:before {
-//            background-color: @lightgold;
-//          }
-//       }
-//     }
-//   }
-
-
-
-
-  // Citizens
-
-//   .slide-59 {
-//     &.uw-homepage-slider .hero-container {
-//       h3 {
-//
-//       }
-//       .udub-slant span {
-//
-//       }
-//       p {
-//          color: white;
-//          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-//       }
-//       a.uw-btn {
-//          text-shadow: none;
-//          &:before {
-//            background-color: @lightgold;
-//          }
-//       }
-//     }
-//   }
-
-
-
-
     .slideshow-controls {
       // position: absolute;
       // bottom: 0;
@@ -190,8 +137,9 @@
             text-shadow: 2px 1px 1px rgba(0,0,0,.4);
             position: absolute;
             right: 15%;
-            bottom: 35px;
+            bottom: 50px;
             width: 240px;
+            outline: none;
             span {
               position: absolute;
               top: -25px;
@@ -212,9 +160,21 @@
               height: 28px;
               background: url(../uw-2014/assets/svg/uw-sprite.svg) no-repeat -474px -55px;
             }
+            &:hover,
             &:focus {
-              text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-              color: @purple;
+              text-shadow: 1px 1px 0 #000;
+              color: white;
+              &:after {
+                content: "";
+                position: absolute;
+                left: 0px;
+                bottom: -10px;
+                margin-top: -14px;
+                width: 50px;
+                height: 4px;
+                .skew(-25deg,0);
+                background-color: white;
+              }
             }
         }
     }
@@ -262,8 +222,8 @@
       p {
         padding-right: 200px;
         font-weight: 400;
-        font-size: 20px;
-        line-height: 29px;
+        font-size: 19px;
+        line-height: 28px;
         color: #575757;
         -webkit-font-smoothing: auto;
         margin-bottom: 20px;
