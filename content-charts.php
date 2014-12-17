@@ -54,7 +54,7 @@
               <li class="fact-1">
                 <p>
                     <span>41</span>
-                    &nbps;new undergraduate <br>scholarships
+                    &nbsp;new undergraduate <br>scholarships
                 </p>
               </li>
               <li class="fact-2">
