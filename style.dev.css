@@ -560,6 +560,9 @@ body.site-home .uw-search-bar-container #mobile-search-select {
   display: block;
   margin-top: 10px;
 }
+.uw-links ul li a:focus {
+  text-decoration: none;
+}
 .uw-links ul li:last-child a {
   border: none;
 }
@@ -796,19 +799,23 @@ body.site-home .uw-search-bar-container #mobile-search-select {
   font-family: "Encode Sans Compressed", sans-serif;
 }
 .uw-charts .contributions-fact span {
+  display: block;
+  width: 145px;
+  margin: auto;
+}
+.uw-charts .contributions-fact span.number {
   background: url(assets/svg/laurel.svg) center 6px no-repeat;
   font-size: 56px;
   color: #b7a57a;
   padding: 0px 0 30px;
-  margin-bottom: 15px;
   position: relative;
-  margin-top: 90px;
+  margin: 90px 0 0 15;
+  width: auto;
   height: 102px;
   line-height: 72px;
   -webkit-transition: all 500ms ease-in 0.1s;
   transition: all 500ms ease-in 0.1s;
   opacity: 0;
-  display: block;
 }
 .uw-charts .contributions-fact h3 {
   margin: 80px 0 30px;
@@ -836,7 +843,7 @@ body.site-home .uw-search-bar-container #mobile-search-select {
   transform: scale(1, 1);
   opacity: 1;
 }
-.factive .contributions-fact span {
+.factive .contributions-fact span.number {
   margin-top: 0;
   opacity: 1;
 }
