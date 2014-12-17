@@ -53,20 +53,20 @@
             <ul>
               <li class="fact-1">
                 <p>
-                    <span>41</span>
-                    &nbsp;new undergraduate <br>scholarships
+                    <span class='number'>41</span>&nbsp;
+                    <span>new undergraduate scholarships</span>
                 </p>
               </li>
               <li class="fact-2">
                 <p>
-                    <span>57</span>
-                    &nbsp;post-baccalaureate <br>fellowships and <br> awards
+                    <span class='number'>57</span>&nbsp;
+                    <span>post-baccalaureate fellowships and awards</span>
                 </p>
               </li>
               <li class="fact-3">
                 <p>
-                    <span>81</span>
-                    &nbsp;funds that directly <br>benefit students
+                    <span class='number'>81</span>&nbsp;
+                    <span>funds that directly benefit students</span>
                 </p>
               </li>
             </ul>

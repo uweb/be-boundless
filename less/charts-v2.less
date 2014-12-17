@@ -219,18 +219,22 @@
         font-weight: 800;
         font-family: @font-family-headline;
         span {
+            display: block;
+            width: 145px;
+            margin:auto;
+        }
+        span.number {
             background: url(assets/svg/laurel.svg) center 6px no-repeat;
             font-size: 56px;
             color: @lightgold;
             padding: 0px 0 30px;
-            margin-bottom: 15px;
             position: relative;
-            margin-top: 90px;
+            margin: 90px 0 0 15;
+            width: auto;
             height: 102px;
             line-height: 72px;
             .transition(all 500ms ease-in .1s);
             opacity: 0;
-            display: block;
         }
         h3 {
             margin: 80px 0 30px;
@@ -266,7 +270,7 @@
         opacity: 1;
     } 
     .contributions-fact {
-        span {
+        span.number {
             margin-top: 0;
             opacity: 1;
         }
