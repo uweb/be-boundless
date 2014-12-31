@@ -13,32 +13,32 @@
 
           <li class="fact-1">
             <span>14</span>
-            Libraries
+            &nbsp;Libraries
           </li>
 
           <li class="fact-2">
             <span>4</span>
-            Markets
+            &nbsp;Markets
           </li>
 
           <li class="fact-3">
             <span>3</span>
-            Food Trucks
+            &nbsp;Food Trucks
           </li>
 
           <li class="fact-4">
             <span>16</span>
-            Coffee Shops
+            &nbsp;Coffee Shops
           </li>
 
           <li class="fact-5">
             <span>11</span>
-            Residence Halls
+            &nbsp;Residence Halls
           </li>
 
           <li class="fact-6">
             <span>15</span>
-            Restaurants
+            &nbsp;Restaurants
           </li>
 
         </ul>
@@ -53,20 +53,20 @@
             <ul>
               <li class="fact-1">
                 <p>
-                    <span>41</span>
-                    new undergraduate <br>scholarships
+                    <span class='number'>41</span>&nbsp;
+                    <span>new undergraduate scholarships</span>
                 </p>
               </li>
               <li class="fact-2">
                 <p>
-                    <span>57</span>
-                    post-baccalaureate <br>fellowships and <br> awards
+                    <span class='number'>57</span>&nbsp;
+                    <span>post-baccalaureate fellowships and awards</span>
                 </p>
               </li>
               <li class="fact-3">
                 <p>
-                    <span>81</span>
-                    funds that directly <br>benefit students
+                    <span class='number'>81</span>&nbsp;
+                    <span>funds that directly benefit students</span>
                 </p>
               </li>
             </ul>

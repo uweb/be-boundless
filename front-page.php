@@ -8,7 +8,7 @@
 				 */
 				get_template_part( 'menu', 'mobile' );
         ?>
-        <main>
+        <main id='main_content'>
         <h1 class='offscreen'>University Of Washington</h1>
         <?php
 				get_template_part( 'content', 'slideshow' );
