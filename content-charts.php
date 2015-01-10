@@ -46,30 +46,11 @@
 
 
       <div class="col-md-6 contributions-fact">
-        <h3>Contributions to the UW  this year created</h3>
+        <h3>UW statewide impact</h3>
 
         <div class="row">
-            
-            <ul>
-              <li class="fact-1">
-                <p>
-                    <span class='number'>41</span>&nbsp;
-                    <span>new undergraduate scholarships</span>
-                </p>
-              </li>
-              <li class="fact-2">
-                <p>
-                    <span class='number'>57</span>&nbsp;
-                    <span>post-baccalaureate fellowships and awards</span>
-                </p>
-              </li>
-              <li class="fact-3">
-                <p>
-                    <span class='number'>81</span>&nbsp;
-                    <span>funds that directly benefit students</span>
-                </p>
-              </li>
-            </ul>
+        
+          <img src="wp-content/themes/boundless/assets/images/impact1.png" alt="$12.5 billion economic impact in the state"><img src="wp-content/themes/boundless/assets/images/impact2.png" alt="One out of every 48 jobs in the state is attributable to the UW">
 
         </div>
         
