@@ -1009,6 +1009,21 @@ body.site-home .uw-search-bar-container #mobile-search-select {
 .single-format-gallery blockquote p {
   display: inline;
 }
+.single-format-gallery .profile {
+  background-color: #e8e3d3;
+  padding: 30px 50px;
+  margin: 50px 0;
+  border-top: 6px solid #lightgold;
+  background: url('../uw-2014/assets/images/stripes-dark-tile.png') 0 -20px repeat-x;
+}
+.single-format-gallery .profile span {
+  background: #4B2E83;
+  padding: 6px 12px;
+  color: #FFF;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .single-format-gallery .text-overlay .spotlight-blurb p {
     padding-right: 40px;
