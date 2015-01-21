@@ -1010,11 +1010,10 @@ body.site-home .uw-search-bar-container #mobile-search-select {
   display: inline;
 }
 .single-format-gallery .profile {
-  background-color: #e8e3d3;
   padding: 30px 50px;
   margin: 50px 0;
-  border-top: 6px solid #lightgold;
-  background: url('../uw-2014/assets/images/stripes-dark-tile.png') 0 -20px repeat-x;
+  border-top: 6px solid #b7a57a;
+  background: url('../uw-2014/assets/images/stripes-dark-tile.png') 0 -20px repeat-x #e8e3d3;
 }
 .single-format-gallery .profile span {
   background: #4B2E83;
