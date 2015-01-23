@@ -6,7 +6,7 @@
 				 * use this in a child theme, then include a file called called content-___.php
 				 * (where ___ is the post format) and that will be used instead.
 				 */
-				get_template_part( 'menu', 'mobile' );
+				uw_mobile_front_page_menu('bighero');
         ?>
         <main id='main_content'>
         <h1 class='offscreen'>University Of Washington</h1>
