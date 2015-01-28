@@ -1,7 +1,7 @@
 <?php
 // Basic Wrapper for a custom post type. Allows child themes to easily make a custom post type
 // and extend it if necessary also very easily
-class UW_Custom_Post {
+class Boundless_Custom_Post {
 
     //accepts args as required, which contains args and name. allows users to pass in labels
     //separately if they'd like. Builds the proper structure and registers
@@ -42,6 +42,8 @@ class UW_Custom_Post {
             $this->taxonomy = $args['taxonomy'];
             add_action('init', array($this, 'add_custom_taxonomy'));
         }
+        add_action('admin_init', array($this, 'setup_meta'));
+        add_action('admin_init', array($this, 'save_meta'));
     }
 
     function label_gen(){
@@ -77,5 +79,13 @@ class UW_Custom_Post {
         else if (!in_array($this->taxonomy['name'], get_object_taxonomies($this->name))){
             register_taxonomy_for_object_type($this->taxonomy['name'], $this->name);
         }
+    }
+
+    function setup_meta() {
+        //just for extending
+    }
+
+    function save_meta(){
+        //just for extending
     }
 }
