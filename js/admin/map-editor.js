@@ -107,14 +107,18 @@ var MapEditor = Backbone.View.extend({
 // Initialize the Map Editor Backbone view and attach with desired settings.
 jQuery(document).ready(function( $ ) {
 
-  window.mapEditor = new MapEditor({
-      el : $('#map-editor'),
-      searchInput: $('#map-search'),
-      fields: {
-        latitude: $('#latitude'),
-        longitude: $('#longitude')
-      },
-      center: $('#latitude').val() && $('#longitude').val() ? new google.maps.LatLng( $('#latitude').val(), $('#longitude').val() ) : false
-  })
+  if ( $('#map-editor').length )
+  {
+    window.mapEditor = new MapEditor({
+        el : $('#map-editor'),
+        searchInput: $('#map-search'),
+        fields: {
+          latitude: $('#latitude'),
+          longitude: $('#longitude')
+        },
+        center: $('#latitude').val() && $('#longitude').val() ? new google.maps.LatLng( $('#latitude').val(), $('#longitude').val() ) : false
+    })
+
+  }
 
 })

@@ -1,34 +1,34 @@
 <?php
 
-/**
-*
-*/
+// Custom post type "Map Points"
+//    - Contains title, text and editable map with search functionality to find points of interest
+//    - Registers a JSON API to gather the necessary Map Point attributes
+//    - Registers a custom meta box that uses map-editor.js, which is dependent on Backbone and Google Maps
 
 class Post_Type_Map_Points
 {
 
+  // Version number
   const VERSION = 0.1;
 
-  //
+  // Set the constants for the post type labels and meta box title
   const POST_TYPE  = 'points';
   const POST_TYPE_NAME   = 'Map Point';
   const POST_TYPE_PLURAL = 'Map Points';
   const META_BOX_TITLE  = 'Location';
 
-  /**
-  *
-  */
+  // Register the post type, enqueue the map editor javascript and add the JSON controller
   function __construct()
   {
     add_action( 'init', array( $this, 'register_post_type' ) );
     add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_map_editor_js' ) );
     add_action( 'save_post', array( $this, 'save') );
 
+    add_filter( 'json_api_controllers',  array( $this, 'add_map_point_controller' ) );
+    add_filter( 'json_api_map_point_controller_path',  array( $this, 'set_map_point_controller_path' ) );
   }
 
-  /**
-  *
-  */
+   // Register the custom post type with support for only a few attributes
   function register_post_type()
   {
 
@@ -53,11 +53,14 @@ class Post_Type_Map_Points
 
   }
 
+  // Add the metabox that holds the map editor
   function add_meta_box()
   {
      add_meta_box(self::POST_TYPE, self::META_BOX_TITLE, array( $this, 'meta_box_html'), self::POST_TYPE );
   }
 
+  // The HTML for the map editor.
+  // The hidden latitude and longitude input fields are set by the map editor javascript
   function meta_box_html( $post )
   {
 
@@ -78,8 +81,8 @@ class Post_Type_Map_Points
   }
 
 
+  // Save the post after verification and authentication
   function save( $post_id ) {
-
 
     if ( !wp_verify_nonce( $_POST[ self::POST_TYPE . '_meta_box_nonce'], self::POST_TYPE . '_meta_box') ) {
         return $post_id;
@@ -103,18 +106,29 @@ class Post_Type_Map_Points
     if ( isset( $_POST['longitude'] ) )
         update_post_meta( $post_id, '_longitude', $_POST['longitude'] );
 
-
-
   }
 
 
-function enqueue_map_editor_js()
-{
-  wp_register_script( 'google-maps', 'https://maps.googleapis.com/maps/api/js?libraries=places', array('backbone') , self::VERSION );
-  wp_register_script( 'map-editor', get_template_directory_uri() . '/js/admin/map-editor.js', array('backbone', 'google-maps') , self::VERSION );
-  wp_enqueue_script( 'map-editor' );
-}
+  // Add the map editor javascript along with dependent javascript libraries Backbone and Google Maps
+  function enqueue_map_editor_js()
+  {
+    wp_register_script( 'google-maps', 'https://maps.googleapis.com/maps/api/js?libraries=places', array('backbone') , self::VERSION );
+    wp_register_script( 'map-editor', get_template_directory_uri() . '/js/admin/map-editor.js', array('backbone', 'google-maps') , self::VERSION );
+    wp_enqueue_script( 'map-editor' );
+  }
 
+  // Add the Map Point controller to the JSON API
+  function add_map_point_controller( $controllers )
+  {
+    $controllers[] = 'map_point';
+    return $controllers;
+  }
+
+  // Add the controller path for the Map Point controller to the JSON API
+  function set_map_point_controller_path()
+  {
+    return get_template_directory() . "/controllers/class.map-point-json-controller.php";
+  }
 
 }
 
