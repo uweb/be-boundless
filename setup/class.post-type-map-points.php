@@ -112,9 +112,12 @@ class Post_Type_Map_Points
   // Add the map editor javascript along with dependent javascript libraries Backbone and Google Maps
   function enqueue_map_editor_js()
   {
+    if ( get_post_type() === self::POST_TYPE )
+    {
     wp_register_script( 'google-maps', 'https://maps.googleapis.com/maps/api/js?libraries=places', array('backbone') , self::VERSION );
     wp_register_script( 'map-editor', get_template_directory_uri() . '/js/admin/map-editor.js', array('backbone', 'google-maps') , self::VERSION );
     wp_enqueue_script( 'map-editor' );
+    }
   }
 
   // Add the Map Point controller to the JSON API
