@@ -7,7 +7,6 @@
 
 class Post_Type_Map_Points
 {
-
   // Version number
   const VERSION = 0.1;
 
@@ -18,11 +17,13 @@ class Post_Type_Map_Points
   const META_BOX_TITLE  = 'Location';
 
   // Register the post type, enqueue the map editor javascript and add the JSON controller
+  // Add theme support for thumbnails
   function __construct()
   {
     add_action( 'init', array( $this, 'register_post_type' ) );
     add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_map_editor_js' ) );
     add_action( 'save_post', array( $this, 'save') );
+    add_action( 'after_setup_theme', array( $this, 'add_thumbnail_theme_support' ) );
 
     add_filter( 'json_api_controllers',  array( $this, 'add_map_point_controller' ) );
     add_filter( 'json_api_map_point_controller_path',  array( $this, 'set_map_point_controller_path' ) );
@@ -118,6 +119,12 @@ class Post_Type_Map_Points
     wp_register_script( 'map-editor', get_template_directory_uri() . '/js/admin/map-editor.js', array('backbone', 'google-maps') , self::VERSION );
     wp_enqueue_script( 'map-editor' );
     }
+  }
+
+  // Adds thumbnails meta box to the Map Point post type
+  function add_thumbnail_theme_support()
+  {
+      add_theme_support( 'post-thumbnails' );
   }
 
   // Add the Map Point controller to the JSON API
