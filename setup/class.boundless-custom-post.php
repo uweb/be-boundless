@@ -43,7 +43,7 @@ class Boundless_Custom_Post {
             add_action('init', array($this, 'add_custom_taxonomy'));
         }
         add_action('admin_init', array($this, 'setup_meta'));
-        add_action('admin_init', array($this, 'save_meta'));
+        add_action('save_post', array($this, 'save_meta'));
     }
 
     function label_gen(){
@@ -85,7 +85,7 @@ class Boundless_Custom_Post {
         //just for extending
     }
 
-    function save_meta(){
+    function save_meta($post_id){
         //just for extending
     }
 }
