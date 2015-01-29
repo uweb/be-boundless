@@ -10,9 +10,12 @@ module.exports = function(grunt) {
         libraries: [
         ],
         theme : [
+          'js/core.js',
+          'js/init.js',
+          'js/map.js',
         ],
-        src: [ 'js/uw.intro.js', '<%= concat.dist.libraries %>', '<%= concat.dist.theme %>', 'js/uw.outro.js' ],
-        dest: 'js/site.dev.js'
+        src: [ 'js/intro.js', '<%= concat.dist.libraries %>', '<%= concat.dist.theme %>', 'js/outro.js' ],
+        dest: 'js/boundless.dev.js'
       }
     },
     uglify: {
