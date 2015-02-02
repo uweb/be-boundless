@@ -5,6 +5,7 @@ module.exports = function(grunt) {
     concat: {
       options: {
         separator: ';',
+        sourceMap: true
       },
       dist: {
         libraries: [
@@ -15,16 +16,19 @@ module.exports = function(grunt) {
           'js/map.js',
         ],
         src: [ 'js/intro.js', '<%= concat.dist.libraries %>', '<%= concat.dist.theme %>', 'js/outro.js' ],
-        dest: 'js/boundless.dev.js'
+        dest: 'js/.tmp.boundless.js'
       }
     },
     uglify: {
       options: {
+        sourceMap: true,
+        sourceMapIncludeSources: true,
+        sourceMapIn: 'js/.tmp.boundless.js.map'
         // banner: '/*! <%= pkg.name %> <%= grunt.template.today() %> */\n'
       },
       dist: {
         files: {
-          'js/boundless.js': ['<%= concat.dist.dest %>']
+          'js/boundless.js': ['<%= concat.dist.dest %>'],
         }
       }
     },
@@ -55,17 +59,15 @@ module.exports = function(grunt) {
     less: {
         production: {
 	        options: {
-		        cleancss: true
-			},
-			files: {
-				'style.css': 'less/style.less'
-			}
-		},
-		development: {
-			files: {
-				'style.dev.css': 'less/style.less'
-			}
-		}
+		        compress: true,
+            sourceMap: true,
+            sourceMapFilename: '.style.css.map',
+            sourceMapURL: '.style.css.map'
+			    },
+			    files: {
+				    'style.css': 'less/style.less'
+			    }
+		  }
     },
     watch: {
       config : {
