@@ -1,1 +1,2 @@
 (function(){var a=this,b=function(a){return a instanceof b?a:!this instanceof b?new b(a):void(this._wrapped=a)};a.BOUNDLESS=b,b.VERSION="0.1",b.initialize=function(){},jQuery(document).ready(b.initialize),b.Map=new Backbone.View.extend({})}).call(this);
+//# sourceMappingURL=boundless.js.map
