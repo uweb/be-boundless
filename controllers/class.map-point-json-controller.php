@@ -18,7 +18,7 @@ class JSON_API_Map_Point_Controller
     foreach ( $points as $point )
     {
       $result = new stdClass();
-      $result->title = $point->post_title;
+      $result->title = $point->title;
       $result->text = $point->excerpt;
       $result->image = wp_get_attachment_image_src( get_post_thumbnail_id( $point->ID), 'original' );
       $result->coordinate = array( "latitude" => (double) get_post_meta( $point->id, '_latitude', true ), "longitude" => (double) get_post_meta( $point->id, "_longitude", true ) );
@@ -26,7 +26,8 @@ class JSON_API_Map_Point_Controller
       $results[] = $result;
     }
 
-    return $results;
+    // TODO: This works best with Backbone but isn't the JSON API method
+    wp_send_json( $results );
 
   }
 
