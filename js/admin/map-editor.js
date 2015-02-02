@@ -37,7 +37,7 @@ var MapEditor = Backbone.View.extend({
   initialize: function ( options )
   {
 
-    _.bindAll(this, 'delegateEvents', 'handleMarkerDragEnd', 'handleSearchSelection' )
+    _.bindAll(this, 'delegateGoogleMapEvents', 'handleMarkerDragEnd', 'handleSearchSelection' )
     this.options = _.extend( {}, this.settings, options )
 
     this.options.marker.position = this.options.center || this.options.marker.position
