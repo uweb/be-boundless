@@ -1,0 +1,93 @@
+.logged-in div#thin-strip {
+  top: 32px;
+}
+
+div#thin-strip {
+
+    height: 60px;
+    width: 100%;
+    background: #fff;
+    // padding-top: 22px;
+    position: absolute;
+    z-index: 2;
+    .box-shadow(0 2px 5px rgba(0, 0, 0, 0.3));
+    
+
+  .wordmark {
+    width: 340px;
+    height: 50px;
+    display: block;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url(less/svg/boundless.svg) no-repeat 0 -71px;
+    position: absolute;
+    left: 40px;
+    bottom: -1px;
+  }
+
+  ul {
+
+    float: right;
+    height: 100%;
+
+    li {
+
+      list-style:none;
+      float:left;
+      display: block;
+      margin: 14px 0 0;
+      &.facebook,
+      &.twitter,
+      &.instagram {
+        margin: 13px 8px 0px 0;
+        text-indent: -10000px;
+        width:30px;
+      }
+      &.facebook {     
+        background: url(less/svg/boundless.svg) no-repeat -7px -13px;
+      }
+
+      &.twitter {
+        background: url(less/svg/boundless.svg) no-repeat -48px -13px;
+      }
+
+      &.instagram {
+        background: url(less/svg/boundless.svg) no-repeat -97px -13px;
+        margin-right: 30px;
+      }
+
+      &.search {
+        text-indent: -10000px;
+        width: 40px;
+        height: 40px;
+        background: url(less/svg/boundless.svg) no-repeat -25px -232px;
+
+      }
+
+      a  {
+        color: #797979;
+        position: relative;
+        font-size: 12px;
+        font-family: @font-family-headline;
+        font-weight: 600;
+        font-size: 15px;
+        margin-right: 30px;
+        &.slash {
+          &:after {
+            position: absolute;
+            right: -18px;
+            height: 25px;
+            width: 9px;
+            top: -2px;
+            content: "";
+            background: url(less/svg/boundless.svg) no-repeat -154px -18px;
+          }
+        }
+
+      }
+
+
+    }
+  }
+
+}
