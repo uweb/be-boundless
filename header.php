@@ -19,6 +19,9 @@
     <body <?php body_class(); ?>>
 
     <div id="thin-strip">
+
+        <a class="wordmark" href="http://uw.edu" tabindex="-1" title="University of Washington Home">Home</a> 
+
         <ul>
             <li class="facebook"><a href="#" title="Facebook">Facebook</a>
             <li class="twitter"><a href="#" title="Twitter">Twitter</a>
