@@ -1,0 +1,77 @@
+div#thin-strip {
+
+    height: 60px;
+    width: 100%;
+    background: #fff;
+    // padding-top: 22px;
+    position: relative;
+    z-index: 2;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+  ul {
+
+    float: right;
+    height: 100%;
+
+    li {
+
+      list-style:none;
+      float:left;
+      display: block;
+      margin: 10px 20px 10px 0px;
+
+      &.facebook {
+        margin: 10px 0px;
+        text-indent: -10000px;
+        width:30px;
+        background: url(less/svg/boundless.svg) no-repeat -7px -13px;
+      }
+
+      &.twitter {
+        margin: 10px 0px;
+        text-indent: -10000px;
+        width:30px;
+        background: url(less/svg/boundless.svg) no-repeat -45px -13px;
+      }
+
+      &.instagram {
+        margin: 10px 5px 10px 0;
+        text-indent: -10000px;
+        width: 30px;
+        background: url(less/svg/boundless.svg) no-repeat -97px -13px
+      }
+
+      &.search {
+        text-indent: -10000px;
+        width: 40px;
+        height: 40px;
+        background: url(less/svg/boundless.svg) no-repeat -14px -230px;
+
+      }
+
+      a  {
+        color: #333;
+        position: relative;
+        font-size: 12px;
+        font-weight: 800;
+
+        &.slash {
+          &:after {
+            position: absolute;
+            right: -13px;
+            height: 20px;
+            width: 12px;
+            top: -2px;
+            content: "";
+            background: url(http://www.washington.edu/assets/assets/svg/uw-sprite.svg) no-repeat -696px 0;
+          }
+        }
+
+      }
+
+
+    }
+  }
+
+}

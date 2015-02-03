@@ -20,12 +20,13 @@
 
     <div id="thin-strip">
         <ul>
-            <li><a href="#" title="Facebook" class="facebook">Facebook</a>
-            <li><a href="#" title="Twitter" class="twitter">Twitter</a>
-            <li><a href="#" title="Instagram" class="instagram">Instagram</a>
-            <li><a href="uw.edu/students" title="Students">Students</a>
-            <li><a href="uw.edu/parents" title="Parents">Parents</a>
-            <li><a href="uw.edu/facultystaff" title="Faculty &amp; Staff">Faculty &amp; Staff</a>
-            <li><a href="uw.edu/alumni" title="Alumi">Alumni</a>
+            <li class="facebook"><a href="#" title="Facebook">Facebook</a>
+            <li class="twitter"><a href="#" title="Twitter">Twitter</a>
+            <li class="instagram"><a href="#" title="Instagram">Instagram</a>
+            <li><a href="uw.edu/students" class="slash" title="Students">Students</a>
+            <li><a href="uw.edu/parents" class="slash" title="Parents">Parents</a>
+            <li><a href="uw.edu/facultystaff" class="slash" title="Faculty &amp; Staff">Faculty &amp; Staff</a>
+            <li><a href="uw.edu/alumni" class="slash" title="Alumi">Alumni</a>
+            <li class="search fui-search"><a href="#search" title="Search">Search</a>
         </ul>
     </div>
