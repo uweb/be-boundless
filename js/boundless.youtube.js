@@ -9,28 +9,27 @@
 //       Single: <div id='some-unique-id' class="uw-youtube" data-uw-youtube='youtube_id_here' data-uw-youtube-type='single'></div>
 //       Playlist: <div id='some-unique-id' class="uw-youtube" data-uw-youtube='youtube_playlist_id_here' data-uw-youtube-type='playlist'></div>
 
-BOUNDLESS.YouTube.Collection = Backbone.Collection.extend({
+BOUNDLESS.YouTube = Backbone.Model.extend({
 
-    // Initialize the player embeds
-    // once the player type has been determined, get the associated data
+  defaults: {
+    modest: true,
+    resolution: 'HD1080'
+  },
+
+  // Initialize the player embeds
+  // once the player type has been determined, get the associated data
+
   initialize: function (options) {
     _(this).bindAll('parse');
     this.el = options.el;
     this.$el = $(this.el);
-    this.youtube_id = this.$el.data('uw-youtube');
+    this.youtube_id = options.youtube_id;
     this.setup();
+    this.url = 'https://www.googleapis.com/youtube/v3/videos?part=snippet&id=' + this.youtube_id + '&key=AIzaSyApmhFr5oa8bmKPcpN7bm-h0mekjkUVypU';
+    this.modest = options.modest;
+    this.resolution = options.resolution;
     this.make_view();
     this.fetch({success: this.view.onDataReady});
-  },
-
-  // See if the div.uw-youtube is a playlist or single video
-  // setup the proper request and model type
-  // setup some other relative parameters
-  setup : function (youtube_id) {
-    this.modest = this.$el.data('modest');
-    this.resolution = this.$el.data('resolution');
-    this.model = UW.YouTube.Video;
-    this.url = 'https://www.googleapis.com/youtube/v3/videos?part=snippet&id=' + this.youtube_id + '&key=AIzaSyApmhFr5oa8bmKPcpN7bm-h0mekjkUVypU';
   },
 
   // organize useful information from the ajax request
@@ -43,13 +42,13 @@ BOUNDLESS.YouTube.Collection = Backbone.Collection.extend({
     
   // make the view at the proper time
   make_view: function (type) {
-    this.view = new UW.YouTube.CollectionView({collection: this});
+    this.view = new BOUNDLESS.YouTube.View({model: this});
   },
 
 });
 
 // The CollectionView builds the html for the player and the control structure for the vidoes
-BOUNDLESS.YouTube.CollectionView = Backbone.View.extend({
+BOUNDLESS.YouTube.View = Backbone.View.extend({
     
   // template that all videos get
   template : "<div class='boundless-video-player' role='region' aria-label='video' tabindex=-1><div class='tube-wrapper'></div></div>",
@@ -63,12 +62,6 @@ BOUNDLESS.YouTube.CollectionView = Backbone.View.extend({
     this.data_ready = false;
     this.wrap();
     this.add_iFrame_api();
-    if (this.collection.type == 'playlist'){
-      this.$el.addClass('playlist');
-      this.add_playlist_section();
-      this.scrollbar_visible = false;
-      $(window).resize(this.resized);
-    }
   },
 
   // a resize handler for playlists. Handles the edge case of when a container
@@ -85,46 +78,8 @@ BOUNDLESS.YouTube.CollectionView = Backbone.View.extend({
   wrap: function () {
     this.collection.$el.wrap($(this.template));
     this.$el = this.collection.$el.parents('.boundless-video-player');  //unattached jquery object won't wrap right if we add possible playlist section first
+    this.$el.attr('aria-label', 'video: ' + this.model.get('title'));
     this.el = this.$el[0];
-  },
-
-  // if we don't have a copy of the youtube iframe api yet. add it
-  add_iFrame_api: function () {
-    if (BOUNDLESS.$body.find('script#iFrame').length === 0){
-      BOUNDLESS.$body.append('<script id="iFrame" src="//www.youtube.com/player_api" type="text/javascript"></script>');
-      this.add_iFrame_function();
-    }
-  },
-
-  // at this point, all the collections should be created.
-  // Each gets a uwplayer variable that is a YT.Player corresponding to the collection
-  add_iFrame_function: function () {
-    window.onYouTubeIframeAPIReady = function() {
-      for (var i = 0, length = BOUNDLESS.youtube.length; i < length; i++){
-        var collection = BOUNDLESS.youtube[i], player_vars = {};
-        // if the collection desires no youtube branding, set these parameters
-        if (collection.modest) {
-          player_vars = {
-            'rel'           : 0,
-            'controls'      : 0,
-            'modestbranding': 1,
-          }
-        }
-        // if (collection.resolution !== 'undefined'){
-        //     player_vars.VQ = collection.resolution;
-        // }
-        //attach the YT.player to the relevant view, each view gets one
-        collection.view.uwplayer = new YT.Player(collection.$el.attr('id'), {
-          videoId: '',
-          playerVars: player_vars,
-          events: {
-            //these events will call functions in the relevant view
-           'onReady': collection.view.onReady,
-           'onStateChange': collection.view.onStateChange
-          }
-        });
-      }
-    };
   },
 
   // this is the callback for when the youtube iframe api is ready to go
@@ -146,7 +101,7 @@ BOUNDLESS.YouTube.CollectionView = Backbone.View.extend({
   // Both the data and the player must be ready to go.  Then we play the correct video
   check_all_ready: function() {
     if (this.data_ready && this.player_ready){
-      this.play(this.collection.models[0].get('resourceId').videoId);
+      this.play(this.model.get('resourceId').videoId);
     } 
   },
 
@@ -170,28 +125,4 @@ BOUNDLESS.YouTube.CollectionView = Backbone.View.extend({
     }
   },
 
-});
-
-
-// Video is a model for a single video
-BOUNDLESS.YouTube.Video = Backbone.Model.extend({
-  initialize: function () {
-    if (this.get('resourceId')){
-      this.view = new UW.YouTube.VideoView({model: this});
-    }
-  }
-});
-
-// Video View is a view for single video. Currently does nothing
-BOUNDLESS.YouTube.VideoView = Backbone.View.extend({
-  //template: underscore + html string here,
-  
-  initialize: function () {
-    this.render();
-  },
-
-  render: function () {
-    this.model.collection.view.$el.attr('aria-label', 'video: ' + this.model.get('title'));
-    //var item = this.model.toJSON();
-  }
 });
