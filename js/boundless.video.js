@@ -4,22 +4,25 @@
 BOUNDLESS.Video = Backbone.Model.extend({
 
   initialize: function(options){
+    _.bindAll(this, 'makeView');
     this.videoNum = options.videoNum;
     this.url = '?json=boundless_video.get_video?videoNum=' + this.videoNum;
     this.fetch({success: this.makeView});
   },
 
   makeView: function () {
-    this.view = new BOUNDLESS.Video.view({model:this});
+    this.view = new BOUNDLESS.Video.View({model:this});
   }
 
 });
 
-BOUNDLESS.Video.view = Backbone.View.extend({
+BOUNDLESS.Video.View = Backbone.View.extend({
 
   template : '<div class="fullscreen" style="background-image:url(<%= image %>)"><h2 class="video-title"><%= title %></h2><button class="play"></button><div class="behind" id="video<%= videoId %>"></p><p class="blurb"><%= text %></p></div>',
 
-  initialize : function () {
+  initialize : function (options) {
+    _.bindAll(this, 'render');
+    this.model = options.model;
     this.render();
   },
 
