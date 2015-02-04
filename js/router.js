@@ -18,6 +18,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
   {
       BOUNDLESS.uwtiles = new BOUNDLESS.UWTiles()
       BOUNDLESS.map = new BOUNDLESS.Map()
+      // BOUNDLESS.infowindow = new BOUNDLESS.Map.InfoWindow()
   }
 
 })

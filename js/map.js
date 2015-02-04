@@ -6,7 +6,10 @@ BOUNDLESS.Map = Backbone.View.extend({
   el : '#map',
 
   // The HTML template the map will use
-  template : '<div id="map"></div>',
+  template : '<div id="map"></div><div class="infowindow"></div>',
+
+  // HTML for the info window
+  infoWindow : '<div class="overlay"></div>',
 
    // Google Map settings for the map and the marker
   settings : {
@@ -25,6 +28,12 @@ BOUNDLESS.Map = Backbone.View.extend({
       disableDoubleClickZoom : false,
       mapTypeControl : false
     },
+    icon : {
+      url : 'wp-content/themes/be-boundless/less/svg/map-marker.svg',
+      size : new google.maps.Size(85, 85),
+      origin: new google.maps.Point(0,0),
+      anchor: new google.maps.Point( 42.5, 42.5 )
+    },
     marker: {
       animation: google.maps.Animation.DROP,
     }
@@ -40,6 +49,8 @@ BOUNDLESS.Map = Backbone.View.extend({
 
     this.template = _.template( this.template )
     jQuery('body').html( this.template )
+
+    // this.$infowindow = jQuery( '.infowindow' )
 
     this.points = new BOUNDLESS.Map.Points()
     this.points.on( 'sync', this.render )
@@ -68,6 +79,7 @@ BOUNDLESS.Map = Backbone.View.extend({
   // When the center of the map has changed choose to load the UW Tiles or default Google tiles
   handleCenterChanged : function() {
     this.map.setMapTypeId( this.getMapType() )
+
   },
 
   // When the zoom has changed choose to load the UW Tiles or default Google tiles
@@ -86,7 +98,8 @@ BOUNDLESS.Map = Backbone.View.extend({
   putMarkersOnMap : function( point )
   {
       var marker = new google.maps.Marker( this.settings.marker )
-            , latlng = new google.maps.LatLng( point.get( 'coordinate' ).latitude, point.get( 'coordinate' ).longitude )
+              , latlng = new google.maps.LatLng( point.get( 'coordinate' ).latitude, point.get( 'coordinate' ).longitude )
+              , infowindow = new BOUNDLESS.Map.InfoWindow( this.map, latlng, point )
 
       this.bounds.extend( latlng )
 
@@ -94,8 +107,19 @@ BOUNDLESS.Map = Backbone.View.extend({
       marker.setTitle( point.get('title') )
       marker.setText( point.get('text') )
       marker.setMap( this.map )
+      marker.setIcon( this.settings.icon )
+      marker.set( 'infoWindow', infowindow )
+
+      google.maps.event.addListener( marker, 'click', this.handleClickMarker )
 
       this.map.fitBounds( this.bounds )
+  },
+
+  // Handle the clicking of the marker
+  handleClickMarker : function( marker )
+  {
+    this.getMap().panTo( this.getPosition() )
+    this.infoWindow.setMap( this.getMap() )
   },
 
   show : function()
@@ -131,5 +155,3 @@ BOUNDLESS.Map.Points = Backbone.Collection.extend({
   }
 
 })
-
-
