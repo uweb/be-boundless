@@ -16,6 +16,7 @@ module.exports = function(grunt) {
           'js/uwtiles.js',
           'js/map.js',
           'js/router.js',
+          'js/interaction.js',
         ],
         src: [ 'js/intro.js', '<%= concat.dist.libraries %>', '<%= concat.dist.theme %>', 'js/outro.js' ],
         dest: 'js/.tmp.boundless.js'

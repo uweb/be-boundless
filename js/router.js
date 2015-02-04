@@ -6,6 +6,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
 
   initialize : function(options) {
     _.bindAll( this, 'initializeMap' )
+    BOUNDLESS.interaction = new BOUNDLESS.Interactions()
   },
 
 // If the router is map create a new map

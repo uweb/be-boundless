@@ -1,3 +1,6 @@
+body {
+  background-color: black;
+}
 #message {
   background-image: url(img/rowers.jpg);
   margin: 0;
@@ -10,6 +13,15 @@
   background-size: cover;
   overflow-y: auto;
   overflow-x: hidden;
+  &.blur {
+    .transition(all .6s);
+    -webkit-filter: blur(2px); 
+    -moz-filter: blur(2px); 
+    -o-filter: blur(2px); 
+    -ms-filter: blur(2px); 
+    filter: blur(2px);  
+    opacity: .8;
+  }
   .text {
     position: relative;
     z-index: 1;
@@ -18,9 +30,28 @@
       width: 475px;
       font-weight: bold;
       font-size: 16px;
-      line-height: 1.35;
+      line-height: 1.45;
       color: #fff;
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7)
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+      position: relative;
+      a {
+        position: absolute;
+        right: -180px;
+        bottom: 20px;
+        background: url(less/svg/boundless.svg) no-repeat -165px -140px;    
+        width: 90px;
+        height: 90px;
+      }
+      &:after {        
+        content: "";
+        display: block;
+        position: absolute;
+        background: url(less/svg/boundless.svg) no-repeat -88px -121px;        
+        right: -70px;
+        bottom: -22px;
+        width: 65px;
+        height: 195px;
+      }
     }
   }
   &:after {
@@ -56,7 +87,7 @@
 .udub-slant {
   overflow: hidden;
   display: block;
-  margin: 25px 0 10px;
+  margin: 30px 0 20px;
   span {
     -webkit-transform: skew(-25deg,0);
     -ms-transform: skewX(-25deg) skewY(0);
@@ -96,15 +127,42 @@
   }
 }
 
-// The popout main nav
+// Override for loading bar
 
-.navigation {
-  position: absolute;
-  left: 0;
-  bottom: 50px;  
+body {
+
+  &.logged-in {
+    .ui-mprogress .deter-bar,
+    .ui-mprogress .indeter-bar,
+    .ui-mprogress .query-bar,
+    .ui-mprogress .bar-bg,
+    .ui-mprogress .buffer-bg,
+    .ui-mprogress .mp-ui-dashed {
+      top: 90px;
+    }
+  }
+  
+  .ui-mprogress .deter-bar,
+  .ui-mprogress .indeter-bar,
+  .ui-mprogress .query-bar,
+  .ui-mprogress .bar-bg,
+  .ui-mprogress .buffer-bg,
+  .ui-mprogress .mp-ui-dashed {
+    top: 58px;
+    overflow: hidden;
+    background: @purple;
+  }
+  
+  .ui-mprogress .bar-bg,
+  .ui-mprogress .buffer-bg {
+    z-index: 1031;
+    background: #D8D8D8;
+  }
+  .ui-mprogress .peg {
+    box-shadow: 0 0 10px #000, 0 0 5px #00A2FF;
+  }
+
 }
-
-
 
 
 /* Small Devices, Tablets */
