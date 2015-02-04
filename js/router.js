@@ -2,15 +2,15 @@ BOUNDLESS.Router = Backbone.Router.extend({
 
     routes : {
       "!/map"         : "initializeMap",
-      "!/video:number" : "initializeVideo"
+      "!/video-:video" : "initializeVideo"
     },
 
   initialize : function(options) {
     _.bindAll( this, 'initializeMap' )
   },
 
-  initializeVideo : function (number){
-    BOUNDLESS.video = new BOUNDLESS.Video({videoNum:number});
+  initializeVideo : function (video){
+    BOUNDLESS.videoView = new BOUNDLESS.Video.View({videoNum:video});
   },
 
 // If the router is map create a new map
