@@ -2,6 +2,12 @@
 
 class Boundless_Video_Post extends Boundless_Custom_Post {
 
+  function __construct($args){
+    parent::__construct($args);
+    add_filter( 'json_api_controllers',  array( $this, 'add_boundless_video_controller' ) );
+    add_filter( 'json_api_boundless_video_controller_path',  array( $this, 'set_boundless_video_controller_path' ) );
+  }
+
   function setup_meta(){
     add_meta_box('youtube', 'ID of YouTube Video', array($this, 'youtube_meta_box'), $this->name, 'normal', 'high');
   }
@@ -31,5 +37,16 @@ class Boundless_Video_Post extends Boundless_Custom_Post {
       $youtube = $_POST['youtube'];
       update_post_meta($post_id, 'youtube', $youtube);
     }
+  }
+  
+  function add_boundless_video_controller( $controllers )
+  {
+    $controllers[] = 'boundless_video';
+    return $controllers;
+  }
+
+  function set_boundless_video_controller_path()
+  {
+    return get_template_directory() . "/controllers/class.boundless-video-json-controller.php";
   }
 }
