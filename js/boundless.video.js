@@ -28,6 +28,8 @@ BOUNDLESS.Video.View = Backbone.View.extend({
 
   template : '<div class="fullscreen" style="background-image:url(<%= image %>)"><h2 class="video-title"><%= title %></h2><button class="play"></button><div class="behind boundless-youtube" id="video<%= video %>"></div><div class="blurb"><%= text %></div></div>',
 
+  el : '#message',
+
   initialize : function (options) {
     _.bindAll(this, 'render', 'data_prep');
     //this is the instantiated collection
@@ -54,7 +56,7 @@ BOUNDLESS.Video.View = Backbone.View.extend({
   render : function () {
     var data = this.model.toJSON();
     var template = _.template(this.template, data);
-    jQuery('body').find('#message').html(template);
+    this.$el.html(template);
   }
 
 });
