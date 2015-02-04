@@ -51,6 +51,7 @@ BOUNDLESS.Video.View = Backbone.View.extend({
     //  return video.get('slug') == this.slug;
     //}
     this.render();
+    this.youtube = new BOUNDLESS.YouTube({youtube_id: this.model.get('video'), $el: this.$el.find('#video' + this.model.get('video')), modest: true});
   },
 
   render : function () {

@@ -21,10 +21,8 @@ BOUNDLESS.YouTube = Backbone.Model.extend({
 
   initialize: function (options) {
     _(this).bindAll('parse');
-    this.el = options.el;
-    this.$el = $(this.el);
+    this.$el = options.$el;
     this.youtube_id = options.youtube_id;
-    this.setup();
     this.url = 'https://www.googleapis.com/youtube/v3/videos?part=snippet&id=' + this.youtube_id + '&key=AIzaSyApmhFr5oa8bmKPcpN7bm-h0mekjkUVypU';
     this.modest = options.modest;
     this.resolution = options.resolution;
@@ -34,10 +32,10 @@ BOUNDLESS.YouTube = Backbone.Model.extend({
 
   // organize useful information from the ajax request
   parse: function (response) {
-    return _(response.items).map(function (item) {
-      item.snippet.resourceId = {videoId: youtube_id};
-      return item.snippet;
-    });
+    console.log(response);
+    var item = response.items[0];
+    item.snippet.resourceId = {videoId: this.youtube_id};
+    return item.snippet;
   },
     
   // make the view at the proper time
@@ -53,15 +51,18 @@ BOUNDLESS.YouTube.View = Backbone.View.extend({
   // template that all videos get
   template : "<div class='boundless-video-player' role='region' aria-label='video' tabindex=-1><div class='tube-wrapper'></div></div>",
 
-  // set up the view for this collection
-  // add the youtube iframe api if necessary
   // add the templates
   initialize: function () {
-    _(this).bindAll('onReady', 'onDataReady', 'onStateChange', 'resized');
+    _(this).bindAll('onReady', 'onDataReady', 'onStateChange', 'resized', 'youtube_iframe');
     this.player_ready = false;
     this.data_ready = false;
     this.wrap();
-    this.add_iFrame_api();
+    if (BOUNDLESS.youtube_api_ready){
+      this.youtube_iframe();
+    }
+    else {
+      window.addEventListener('youtube_api_ready', this.youtube_iframe);
+    }
   },
 
   // a resize handler for playlists. Handles the edge case of when a container
@@ -76,8 +77,8 @@ BOUNDLESS.YouTube.View = Backbone.View.extend({
 
   // wraps our collection in the main template and saves references to the container
   wrap: function () {
-    this.collection.$el.wrap($(this.template));
-    this.$el = this.collection.$el.parents('.boundless-video-player');  //unattached jquery object won't wrap right if we add possible playlist section first
+    this.model.$el.wrap(jQuery(this.template));
+    this.$el = this.model.$el.parents('.boundless-video-player');  //unattached jquery object won't wrap right if we add possible playlist section first
     this.$el.attr('aria-label', 'video: ' + this.model.get('title'));
     this.el = this.$el[0];
   },
@@ -87,6 +88,30 @@ BOUNDLESS.YouTube.View = Backbone.View.extend({
   onReady: function () {
     this.player_ready = true;
     this.check_all_ready();
+  },
+
+  youtube_iframe : function () {
+    var player_vars = {};
+    if (this.model.get('modest')) {
+      player_vars = {
+        'rel'           : 0,
+        'controls'      : 0,
+        'modestbranding': 1,
+      }
+    }
+    // if (collection.resolution !== 'undefined'){
+    //     player_vars.VQ = collection.resolution;
+    // }
+    //attach the YT.player to the relevant view, each view gets one
+    this.uwplayer = new YT.Player('video' + this.model.get('videoId'), {
+      videoId: this.model.get('videoId'),
+      playerVars: player_vars,
+      events: {
+        //these events will call functions in the view
+       'onReady': this.onReady,
+       'onStateChange': this.onStateChange
+      }
+    });
   },
 
   // this is the callback for whne the data is loaded into the models
