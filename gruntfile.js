@@ -14,7 +14,11 @@ module.exports = function(grunt) {
           'js/core.js',
           'js/init.js',
           'js/uwtiles.js',
+          'js/boundless.youtube_iframe.js',
+          'js/boundless.youtube.js',
+          'js/boundless.video.js',
           'js/map.js',
+          'js/infowindow.js',
           'js/router.js',
           'js/interaction.js',
         ],
@@ -64,8 +68,8 @@ module.exports = function(grunt) {
 	        options: {
 		        compress: true,
             sourceMap: true,
-            sourceMapFilename: '.style.css.map',
-            sourceMapURL: '.style.css.map'
+            sourceMapFilename: 'style.css.map',
+            sourceMapURL: 'style.css.map'
 			    },
 			    files: {
 				    'style.css': 'less/style.less'
