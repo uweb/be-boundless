@@ -22,18 +22,17 @@ BOUNDLESS.YouTube = Backbone.Model.extend({
   initialize: function (options) {
     _(this).bindAll('parse');
     this.$el = options.$el;
-    this.youtube_id = options.youtube_id;
+    this.set('youtube_id', options.youtube_id);
     this.url = 'https://www.googleapis.com/youtube/v3/videos?part=snippet&id=' + this.youtube_id + '&key=AIzaSyApmhFr5oa8bmKPcpN7bm-h0mekjkUVypU';
-    this.modest = options.modest;
-    this.resolution = options.resolution;
+    this.set('modest', options.modest);
+    this.set('resolution', options.resolution);
     this.make_view();
     this.fetch({success: this.view.onDataReady});
   },
 
   // organize useful information from the ajax request
-  parse: function (response) {
-    console.log(response);
-    var item = response.items[0];
+  parse: function (a) {
+    var item = a.items[0];
     item.snippet.resourceId = {videoId: this.youtube_id};
     return item.snippet;
   },
@@ -103,8 +102,8 @@ BOUNDLESS.YouTube.View = Backbone.View.extend({
     //     player_vars.VQ = collection.resolution;
     // }
     //attach the YT.player to the relevant view, each view gets one
-    this.uwplayer = new YT.Player('video' + this.model.get('videoId'), {
-      videoId: this.model.get('videoId'),
+    this.uwplayer = new YT.Player('video' + this.model.get('youtube_id'), {
+      videoId: this.model.get('youtube_id'),
       playerVars: player_vars,
       events: {
         //these events will call functions in the view
