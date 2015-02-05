@@ -1,7 +1,7 @@
 BOUNDLESS.youtube_api_ready = false;
 BOUNDLESS.YouTubeAPIReady = new Event('youtube_api_ready');
 
-function onYouTubeIframeAPIReady(){
+window.onYouTubeIframeAPIReady = function(){
   BOUNDLESS.youtube_api_ready = true;
-  jQuery(window).dispatch(BOUNDLESS.YouTubeAPIReady);
+  this.dispatchEvent(BOUNDLESS.YouTubeAPIReady);
 }
