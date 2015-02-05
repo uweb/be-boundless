@@ -9,7 +9,6 @@
 
         <?php wp_head(); ?>
 
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
         <link rel='stylesheet' href='<?php bloginfo("template_directory"); ?>/loading-bar/mprogress.css'/>
         <script src='<?php bloginfo("template_directory"); ?>/loading-bar/mprogress.min.js'></script>

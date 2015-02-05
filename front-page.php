@@ -17,6 +17,7 @@
 <div class="navigation">
 
 	<ul>
+	  <li></li>
 	  <?php echo  Navigation::get_navigation() ?>
 	</ul>
 

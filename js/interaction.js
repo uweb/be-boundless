@@ -24,7 +24,7 @@ BOUNDLESS.Interactions = Backbone.View.extend({
 
     // Animate in the entire menu as a whole
     navigation.animate({ 
-    		left: 0   	
+    		left: -230 	
     	},{ 
   			duration: 500, 
   		  	easing: 'easeInOutQuad',
