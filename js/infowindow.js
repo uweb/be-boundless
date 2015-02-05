@@ -31,7 +31,7 @@ BOUNDLESS.Map.InfoWindow.prototype.onAdd = function()
 {
   var panes = this.getPanes()
   this.div.style.display = 'inline'
-  panes.overlayLayer.appendChild( this.div )
+  panes.floatPane.appendChild( this.div )
 }
 
 //  Positions the window in the correct location based on the marker's coordinates
