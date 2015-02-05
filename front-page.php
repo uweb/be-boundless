@@ -22,4 +22,7 @@
 
 </div>
 
+<div id="map"></div>
+<div id="infowindow"></div>
+
 <?php get_footer(); ?>

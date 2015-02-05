@@ -6,7 +6,7 @@ BOUNDLESS.Map = Backbone.View.extend({
   el : '#map',
 
   // The HTML template the map will use
-  template : '<div id="map"></div><div class="infowindow"></div>',
+  // template : '<div id="map"></div><div class="infowindow"></div>',
 
   // HTML for the info window
   infoWindow : '<div class="overlay"></div>',
@@ -35,7 +35,7 @@ BOUNDLESS.Map = Backbone.View.extend({
       anchor: new google.maps.Point( 42.5, 42.5 )
     },
     marker: {
-      animation: google.maps.Animation.DROP,
+      // animation: google.maps.Animation.DROP,
     }
 
 
@@ -46,27 +46,22 @@ BOUNDLESS.Map = Backbone.View.extend({
   initialize : function( options )
   {
     _.bindAll( this, 'delegateGoogleMapEvents', 'handleCenterChanged', 'handleZoomChanged', 'getMapType', 'putMarkersOnMap', 'render', 'show', 'hide' )
-
-    this.template = _.template( this.template )
-    jQuery('body').html( this.template )
-
-    // this.$infowindow = jQuery( '.infowindow' )
-
     this.points = new BOUNDLESS.Map.Points()
     this.points.on( 'sync', this.render )
-
   },
 
   // Render the map
   render : function() {
-    // TODO: This is temporary rendering of the map
-    this.map = new google.maps.Map( document.getElementById('map'), this.settings.map )
+    this.map = new google.maps.Map( this.el, this.settings.map )
     this.map.mapTypes.set( this.settings.name, BOUNDLESS.uwtiles )
     this.map.setMapTypeId( this.settings.name )
 
     this.bounds = new google.maps.LatLngBounds()
     this.points.each( this.putMarkersOnMap )
     this.delegateGoogleMapEvents()
+
+    this.show()
+
   },
 
   // Delegate the Google map events to the Backbone view
@@ -74,6 +69,7 @@ BOUNDLESS.Map = Backbone.View.extend({
   {
     new google.maps.event.addListener( this.map, "center_changed", this.handleCenterChanged )
     new google.maps.event.addListener( this.map, "zoom_changed", this.handleZoomChanged )
+    // new google.maps.event.addListenerOnce( this.map, "idle", this.show )
   },
 
   // When the center of the map has changed choose to load the UW Tiles or default Google tiles
@@ -124,11 +120,14 @@ BOUNDLESS.Map = Backbone.View.extend({
 
   show : function()
   {
-    // Future segue between main screen and map
+    this.$el.hide().css('z-index', 0).fadeIn(1000)
   },
 
   hide : function() {
     // Segue between map and main screen
+    this.$el.fadeOut( 1000, function() {
+      $(this).css('z-index', 0).hide() }
+     )
   }
 
 })

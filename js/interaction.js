@@ -9,33 +9,33 @@ BOUNDLESS.Interactions = Backbone.View.extend({
     var message = $('#message')
 
     // Bounce in the tiles
-    navigation.find("li").each(function () { 		 
+    navigation.find("li").each(function () {
 
   		  $(this).animate({
   		  			marginRight: 20,
   		  			opacity:1
-  		  		},{ 
-  		  			duration: 1500, 
+  		  		},{
+  		  			duration: 1500,
   		  			easing: 'easeOutElastic'
   		  		}
-  		  );  	
+  		  );
 
   	});
 
     // Animate in the entire menu as a whole
-    navigation.animate({ 
-    		left: 0   	
-    	},{ 
-  			duration: 500, 
+    navigation.animate({
+    		left: 0
+    	},{
+  			duration: 500,
   		  	easing: 'easeInOutQuad',
 
   		  	// Was gonna animate left to bounce in
 
   		  	//complete: function() {
   		  	//	navigation.animate({
-  		  	//			left: 0 
-  		  	//		},{ 
-  			//			duration: 500, 
+  		  	//			left: 0
+  		  	//		},{
+  			//			duration: 500,
   		  	//			easing: 'easeOutCubic'
   		  	//	});
   		  	//}
@@ -55,12 +55,12 @@ BOUNDLESS.Interactions = Backbone.View.extend({
 
     // Call bar on click
     navigation.on('click', "li", function(){
-    	mprogress.start() 
+    	mprogress.start()
     	mprogress.set(0.2)
     });
 
     // Blur background
-    navigation.find("li").on({  		
+    navigation.find("li").on({
     	mouseenter: function() {
   		  message.addClass("blur")
   		  $(this).show( "scale", {percent: 100}, 2000 );
