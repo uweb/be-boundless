@@ -23,7 +23,8 @@ class Boundless
   function scripts()
   {
     wp_register_script( 'google-maps', 'https://maps.googleapis.com/maps/api/js?libraries=places' );
-    wp_register_script( 'boundless', get_template_directory_uri() . '/js/boundless.js', array( 'backbone', 'google-maps' ), self::VERSION );
+    wp_register_script( 'youtube-iframe-api', 'https://www.youtube.com/player_api' );
+    wp_register_script( 'boundless', get_template_directory_uri() . '/js/boundless.js', array( 'backbone', 'google-maps', 'youtube-iframe-api' ), self::VERSION );
     wp_enqueue_script( 'boundless' );
   }
 
