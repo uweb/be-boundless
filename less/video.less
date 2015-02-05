@@ -6,6 +6,7 @@ div.fullscreen {
   height: 100%;
   width: 100%;
   z-index: 10;
+  transition: opacity .5s;
   &.behind {
     opacity: 0;
     z-index: -10;
@@ -36,6 +37,7 @@ div.fullscreen {
     top: 0;
     left: 0;
     z-index: 1;
+    transition: opacity .5s;
     &.behind {
       opacity: 0;
       z-index: -10;
