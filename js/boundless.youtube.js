@@ -23,7 +23,7 @@ BOUNDLESS.YouTube = Backbone.Model.extend({
     _(this).bindAll('parse');
     this.$el = options.$el;
     this.set('youtube_id', options.youtube_id);
-    this.url = 'https://www.googleapis.com/youtube/v3/videos?part=snippet&id=' + this.youtube_id + '&key=AIzaSyApmhFr5oa8bmKPcpN7bm-h0mekjkUVypU';
+    this.url = 'https://www.googleapis.com/youtube/v3/videos?part=snippet&id=' + this.get('youtube_id') + '&key=AIzaSyApmhFr5oa8bmKPcpN7bm-h0mekjkUVypU';
     this.set('modest', options.modest);
     this.set('resolution', options.resolution);
     this.make_view();
@@ -31,11 +31,11 @@ BOUNDLESS.YouTube = Backbone.Model.extend({
   },
 
   // organize useful information from the ajax request
-  parse: function (a) {
-    var item = a.items[0];
-    item.snippet.resourceId = {videoId: this.youtube_id};
-    return item.snippet;
-  },
+  //parse: function (response) {
+  //  var item = response.items[0];
+  //  item.snippet.resourceId = {videoId: this.youtube_id};
+  //  return item.snippet;
+  //},
     
   // make the view at the proper time
   make_view: function (type) {
@@ -125,7 +125,7 @@ BOUNDLESS.YouTube.View = Backbone.View.extend({
   // Both the data and the player must be ready to go.  Then we play the correct video
   check_all_ready: function() {
     if (this.data_ready && this.player_ready){
-      this.play(this.model.get('resourceId').videoId);
+      this.play(this.model.get('youtube_id'));
     } 
   },
 
