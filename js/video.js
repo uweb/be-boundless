@@ -86,10 +86,11 @@ BOUNDLESS.Video.View = Backbone.View.extend({
     // if (collection.resolution !== 'undefined'){
     //     player_vars.VQ = collection.resolution;
     // }
-    //attach the YT.player to the relevant view, each view gets one
     this.uwplayer = new YT.Player('video' + this.model.get('video'), {
       videoId: this.model.get('video'),
       playerVars: player_vars,
+      width : '100%',
+      height: '100%',
       events: {
         //these events will call functions in the view
        'onReady': this.onReady,

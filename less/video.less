@@ -1,0 +1,44 @@
+div.fullscreen {
+  background-size: cover;
+  position:relative;
+  padding-top: 50px;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  &.behind {
+    opacity: 0;
+    z-index: -10;
+  }
+  h2 {
+    font-family: "Encode Sans Compressed",sans-serif;
+    font-weight: 900;
+    line-height: 1;
+    font-size: 85px;
+    text-transform: uppercase;
+    color: #4b2e83;
+    color: white;
+  }
+  button.play {
+    display: block;
+    border: none;
+    padding: 0;
+    height: 175px;
+    width: 180px;
+    margin: 0 auto;
+    background-color: transparent;
+    background-image: url(//www.washington.edu/wp-content/themes/uw-2014/assets/svg/uw-sprite.svg);
+    background-size: 4320px 3500px;
+    background-position: -231px -2745px;
+  }
+  .boundless-youtube {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    &.behind {
+      opacity: 0;
+      z-index: -10;
+    }
+  }
+}
