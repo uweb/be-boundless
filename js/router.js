@@ -7,6 +7,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
 
   initialize : function(options) {
     _.bindAll( this, 'initializeMap' )
+    BOUNDLESS.interaction = new BOUNDLESS.Interactions()
   },
 
   initializeVideo : function (video){
@@ -18,6 +19,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
   {
       BOUNDLESS.uwtiles = new BOUNDLESS.UWTiles()
       BOUNDLESS.map = new BOUNDLESS.Map()
+      // BOUNDLESS.infowindow = new BOUNDLESS.Map.InfoWindow()
   }
 
 })

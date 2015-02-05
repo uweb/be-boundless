@@ -18,7 +18,9 @@ module.exports = function(grunt) {
           'js/boundless.youtube.js',
           'js/boundless.video.js',
           'js/map.js',
+          'js/infowindow.js',
           'js/router.js',
+          'js/interaction.js',
         ],
         src: [ 'js/intro.js', '<%= concat.dist.libraries %>', '<%= concat.dist.theme %>', 'js/outro.js' ],
         dest: 'js/.tmp.boundless.js'
