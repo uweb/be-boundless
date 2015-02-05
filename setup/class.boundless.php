@@ -22,9 +22,19 @@ class Boundless
 
   function scripts()
   {
+    // Use externally hosted jQuery
+    // Also gives the $ global without an setup unlike the WP jQuery
+    wp_deregister_script( 'jquery' );
+    wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js');
+
+    // Google Maps API
     wp_register_script( 'google-maps', 'https://maps.googleapis.com/maps/api/js?libraries=places' );
+
+    // YouTube iFrame API
     wp_register_script( 'youtube-iframe-api', 'https://www.youtube.com/player_api' );
-    wp_register_script( 'boundless', get_template_directory_uri() . '/js/boundless.js', array( 'backbone', 'google-maps', 'youtube-iframe-api' ), self::VERSION );
+
+    // Boundless App and dependecies
+    wp_register_script( 'boundless', get_template_directory_uri() . '/js/boundless.js', array( 'jquery', 'underscore', 'backbone', 'google-maps', 'youtube-iframe-api' ), self::VERSION );
     wp_enqueue_script( 'boundless' );
   }
 
