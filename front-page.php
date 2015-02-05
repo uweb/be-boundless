@@ -8,7 +8,7 @@
   </div>
   <div class="stripes">
   	<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span><span></span>
-  </div>	
+  </div>
 
   <h3 class="be-boundless">Be boundless</h3>
 
@@ -17,7 +17,7 @@
 <div class="navigation">
 
 	<ul>
-	  <?php print_r( Navigation::get_navigation() ) ?>
+	  <?php echo  Navigation::get_navigation() ?>
 	</ul>
 
 </div>
