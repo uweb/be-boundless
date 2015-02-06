@@ -17,15 +17,27 @@ div.fullscreen {
   }
   button.play {
     display: block;
-    border: none;
-    padding: 0;
     height: 175px;
     width: 180px;
-    margin: 0 auto;
+    position: absolute;
+    top: calc(~"50% - 175px");
+    right: calc(~"50% - 90px");
+    z-index: 20;
+    border: none;
+    padding: 0;
     background-color: transparent;
     background-image: url(//www.washington.edu/wp-content/themes/uw-2014/assets/svg/uw-sprite.svg);
     background-size: 4320px 3500px;
     background-position: -231px -2745px;
+    transition: all .25s;
+    &.close {
+      height: 44px;
+      width: 45px;
+      background-size: 1080px 875px;
+      background-position: -58px -686px;
+      top: 5px;
+      right: 5px;
+    }
   }
   .boundless-youtube {
     position: absolute;
