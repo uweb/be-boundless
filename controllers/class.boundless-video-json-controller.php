@@ -19,7 +19,8 @@ class JSON_API_Boundless_Video_Controller
     {
       $result = new stdClass();
       $result->title = $video->title;
-      $result->text = $video->content;
+      $result->slug  = $video->slug;
+      $result->text  = $video->content;
       $result->image = wp_get_attachment_url( get_post_thumbnail_id( $video->id));
       $result->video = get_post_meta( $video->id, 'youtube', true );
 

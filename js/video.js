@@ -33,7 +33,7 @@ BOUNDLESS.Videos = Backbone.Collection.extend({
 
 BOUNDLESS.Video.View = Backbone.View.extend({
 
-  template : '<div id="video-<%= videoNum %>" class="fullscreen behind" style="background-image:url(<%= image %>)"><h2 class="video-title"><%= title %></h2><button class="play"></button><div class="behind boundless-youtube" id="video<%= video %>" aria-label="Video: <%= title %>"></div><div class="blurb"><%= text %></div></div>',
+  template : '<div id="<%= slug %>" class="fullscreen behind" style="background-image:url(<%= image %>)"><h2 class="video-title"><%= title %></h2><button class="play"></button><div class="behind boundless-youtube" id="video<%= video %>" aria-label="Video: <%= title %>"></div><div class="blurb"><%= text %></div></div>',
 
   el : '#message',
   is_playing: false,
@@ -47,7 +47,7 @@ BOUNDLESS.Video.View = Backbone.View.extend({
     _.bindAll(this, 'render', 'data_prep', 'onReady', 'buttonClick', 'checkEscape', 'onStateChange', 'youtube_iframe', 'hide', 'show');
     //this is the instantiated collection
     this.collection = BOUNDLESS.videos;
-    this.videoNum = parseInt(options.videoNum);
+    //this.videoNum = parseInt(options.videoNum);
     this.slug = options.slug;
     if (this.collection.is_ready) {
       this.data_prep(options);
@@ -59,26 +59,31 @@ BOUNDLESS.Video.View = Backbone.View.extend({
   },
 
   data_prep: function () {
-    this.model = this.collection.models[this.videoNum];
-    // for later:
-    //this.model = this.collection.models.filter(function(video) {
-    //  return video.get('slug') == this.slug;
-    //}
-    this.render();
-    if (BOUNDLESS.youtube_api_ready){
-      this.youtube_iframe();
+    //this.model = this.collection.models[this.videoNum];
+    for (var i = 0; i < this.collection.models.length; i++){
+      if (this.collection.models[i].get('slug') == this.slug){
+        this.model = this.collection.models[i];
+      }
+    }
+    if (this.model){
+      this.render();
+      if (BOUNDLESS.youtube_api_ready){
+        this.youtube_iframe();
+      }
+      else {
+        window.addEventListener('youtube_api_ready', this.youtube_iframe);
+      }
     }
     else {
-      window.addEventListener('youtube_api_ready', this.youtube_iframe);
+      console.log('no model with slug ' + this.slug);
     }
   },
 
   render : function () {
     var data = this.model.toJSON();
-    data.videoNum = this.videoNum;
     var template = _.template(this.template, data);
     this.$el.append(template);
-    this.$el = this.$el.find('#video-' + this.videoNum);
+    this.$el = this.$el.find('#' + this.slug);
     this.$button = this.$el.find('button.play');
     this.show();
   },

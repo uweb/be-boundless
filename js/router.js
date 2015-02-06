@@ -15,7 +15,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
       BOUNDLESS.videoView = {};
     }
     if (!BOUNDLESS.videoView[video]){
-      BOUNDLESS.videoView[video] = new BOUNDLESS.Video.View({videoNum:video});
+      BOUNDLESS.videoView[video] = new BOUNDLESS.Video.View({slug:video});
     }
     else {
       BOUNDLESS.videoView[video].show();
