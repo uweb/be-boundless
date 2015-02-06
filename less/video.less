@@ -1,16 +1,11 @@
 div.fullscreen {
   background-size: cover;
-  position:relative;
-  padding-top: 50px;
-  opacity: 1;
+  position:absolute;
+  top: 0px;
+  display: none;
   height: 100%;
   width: 100%;
   z-index: 10;
-  transition: opacity .5s;
-  &.behind {
-    opacity: 0;
-    z-index: -10;
-  }
   h2 {
     font-family: "Encode Sans Compressed",sans-serif;
     font-weight: 900;

@@ -33,15 +33,18 @@ BOUNDLESS.Videos = Backbone.Collection.extend({
 
 BOUNDLESS.Video.View = Backbone.View.extend({
 
-  template : '<div class="fullscreen behind" style="background-image:url(<%= image %>)"><h2 class="video-title"><%= title %></h2><button class="play"></button><div class="behind boundless-youtube" id="video<%= video %>" aria-label="Video: <%= title %>"></div><div class="blurb"><%= text %></div></div>',
+  template : '<div id="video-<%= videoNum %>" class="fullscreen behind" style="background-image:url(<%= image %>)"><h2 class="video-title"><%= title %></h2><button class="play"></button><div class="behind boundless-youtube" id="video<%= video %>" aria-label="Video: <%= title %>"></div><div class="blurb"><%= text %></div></div>',
 
   el : '#message',
   is_playing: false,
   
-  events : { 'click button.play': 'buttonClick' },
+  events : {
+    'click button.play': 'buttonClick',
+    'keyup': 'checkEscape'  
+  },
 
   initialize : function (options) {
-    _.bindAll(this, 'render', 'data_prep', 'onReady', 'buttonClick', 'onStateChange', 'youtube_iframe', 'hide', 'show');
+    _.bindAll(this, 'render', 'data_prep', 'onReady', 'buttonClick', 'checkEscape', 'onStateChange', 'youtube_iframe', 'hide', 'show');
     //this is the instantiated collection
     this.collection = BOUNDLESS.videos;
     this.videoNum = parseInt(options.videoNum);
@@ -72,9 +75,10 @@ BOUNDLESS.Video.View = Backbone.View.extend({
 
   render : function () {
     var data = this.model.toJSON();
+    data.videoNum = this.videoNum;
     var template = _.template(this.template, data);
-    this.$el.html(template);
-    this.$container = this.$el.find('.fullscreen');
+    this.$el.append(template);
+    this.$el = this.$el.find('#video-' + this.videoNum);
     this.$button = this.$el.find('button.play');
     this.show();
   },
@@ -109,8 +113,12 @@ BOUNDLESS.Video.View = Backbone.View.extend({
     this.play(this.model.get('video'));
   },
 
-  onStateChange: function (event) {
-    //check for stop playing events
+  onStateChange: function (a) {
+    if (a.data === 0){
+      if (this.is_playing){
+        this.buttonClick();
+      }
+    }
   },
 
   // play the video id passed. If 'playnow' not passed, assume false.
@@ -119,7 +127,7 @@ BOUNDLESS.Video.View = Backbone.View.extend({
     playnow = playnow || false;
     if (playnow) {
       this.uwplayer.loadVideoById(id);
-      this.$el.focus();
+      this.$button.focus();
       this.is_playing = true;
     }
     else {
@@ -128,15 +136,26 @@ BOUNDLESS.Video.View = Backbone.View.extend({
   },
 
   buttonClick: function() {
-    if (this.$button.hasClass('close')){
-      this.uwplayer.stopVideo();
+    if (this.is_playing){
       this.is_playing = false;
+      this.uwplayer.stopVideo();
       this.$button.removeClass('close');
       this.$iframe.addClass('behind');
     }
-    this.$iframe.removeClass('behind');
-    this.play(this.model.get('video'), true);
-    this.$button.addClass('close');
+    else {
+      this.$iframe.removeClass('behind');
+      this.play(this.model.get('video'), true);
+      this.$button.addClass('close');
+    }
+  },
+
+  checkEscape: function (event){
+    if (this.is_playing){
+      if (event.keyCode == 27){
+        event.preventDefault();
+        this.buttonClick();
+      }
+    }
   },
 
   hide: function () {
@@ -146,10 +165,10 @@ BOUNDLESS.Video.View = Backbone.View.extend({
     }
     this.$button.removeClass('close');
     this.$iframe.addClass('behind');
-    this.$container.addClass('behind');
+    this.$el.fadeOut();
   },
 
   show: function () {
-    this.$container.removeClass('behind');
+    this.$el.fadeIn();
   }
 });
