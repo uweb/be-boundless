@@ -33,12 +33,15 @@ BOUNDLESS.Videos = Backbone.Collection.extend({
 
 BOUNDLESS.Video.View = Backbone.View.extend({
 
-  template : '<div class="fullscreen" style="background-image:url(<%= image %>)"><h2 class="video-title"><%= title %></h2><button class="play"></button><div class="behind boundless-youtube" id="video<%= video %>" aria-label="Video: <%= title %>"></div><div class="blurb"><%= text %></div></div>',
+  template : '<div class="fullscreen behind" style="background-image:url(<%= image %>)"><h2 class="video-title"><%= title %></h2><button class="play"></button><div class="behind boundless-youtube" id="video<%= video %>" aria-label="Video: <%= title %>"></div><div class="blurb"><%= text %></div></div>',
 
   el : '#message',
+  is_playing: false,
+  
+  events : { 'click button.play': 'buttonClick' },
 
   initialize : function (options) {
-    _.bindAll(this, 'render', 'data_prep', 'onReady', 'onStateChange', 'resized', 'youtube_iframe');
+    _.bindAll(this, 'render', 'data_prep', 'onReady', 'buttonClick', 'onStateChange', 'youtube_iframe', 'hide', 'show');
     //this is the instantiated collection
     this.collection = BOUNDLESS.videos;
     this.videoNum = parseInt(options.videoNum);
@@ -71,7 +74,9 @@ BOUNDLESS.Video.View = Backbone.View.extend({
     var data = this.model.toJSON();
     var template = _.template(this.template, data);
     this.$el.html(template);
-    this.$button = this.$el.find('button.play')
+    this.$container = this.$el.find('.fullscreen');
+    this.$button = this.$el.find('button.play');
+    this.show();
   },
 
   youtube_iframe : function () {
@@ -97,16 +102,7 @@ BOUNDLESS.Video.View = Backbone.View.extend({
        'onStateChange': this.onStateChange
       }
     });
-  },
-
-  // a resize handler for playlists. Handles the edge case of when a container
-  // is resized to be too small for the list and therefor requires a scrollbar
-  // when none is present or vice versa
-  resized: function() {
-    var viewport_new_width = this.$vidSmall.find('.viewport').width();
-    if (viewport_new_width != this.$viewport_width){
-      this.$viewport_width = viewport_new_width;
-    }
+    this.$iframe = this.$el.find('#video' + this.model.get('video'));
   },
 
   onReady: function () {
@@ -124,9 +120,36 @@ BOUNDLESS.Video.View = Backbone.View.extend({
     if (playnow) {
       this.uwplayer.loadVideoById(id);
       this.$el.focus();
+      this.is_playing = true;
     }
     else {
       this.uwplayer.cueVideoById(id);
     }
+  },
+
+  buttonClick: function() {
+    if (this.$button.hasClass('close')){
+      this.uwplayer.stopVideo();
+      this.is_playing = false;
+      this.$button.removeClass('close');
+      this.$iframe.addClass('behind');
+    }
+    this.$iframe.removeClass('behind');
+    this.play(this.model.get('video'), true);
+    this.$button.addClass('close');
+  },
+
+  hide: function () {
+    if(this.is_playing){
+      if (this.uwplayer )
+      this.uwplayer.stopVideo();
+    }
+    this.$button.removeClass('close');
+    this.$iframe.addClass('behind');
+    this.$container.addClass('behind');
+  },
+
+  show: function () {
+    this.$container.removeClass('behind');
   }
 });

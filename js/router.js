@@ -11,7 +11,16 @@ BOUNDLESS.Router = Backbone.Router.extend({
   },
 
   initializeVideo : function (video){
-    BOUNDLESS.videoView = new BOUNDLESS.Video.View({videoNum:video});
+    if (!BOUNDLESS.videoView){
+      BOUNDLESS.videoView = {};
+    }
+    if (!BOUNDLESS.videoView[video]){
+      BOUNDLESS.videoView[video] = new BOUNDLESS.Video.View({videoNum:video});
+    }
+    else {
+      BOUNDLESS.videoView[video].show();
+    }
+    BOUNDLESS.currentView = BOUNDLESS.videoView[video];
   },
 
   // Animates the initial interaction when the homepage is loaded
