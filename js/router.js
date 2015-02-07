@@ -2,7 +2,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
 
     routes : {
       "!/map"         : "initializeMap",
-      "!/video-:video" : "initializeVideo",
+      "!/video=:video" : "initializeVideo",
       "" : "animateInInteraction"
     },
 
