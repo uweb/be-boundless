@@ -46,11 +46,11 @@
 
 
       <div class="col-md-6 contributions-fact">
-        <h3>UW statewide impact</h3>
+        <h3>Academic milestones</h3>
 
         <div class="row">
         
-          <img src="wp-content/themes/boundless/assets/images/impact1.png" alt="$12.5 billion economic impact in the state"><img src="wp-content/themes/boundless/assets/images/impact2.png" alt="One out of every 48 jobs in the state is attributable to the UW">
+          <img src="wp-content/themes/boundless/assets/images/academic-highlights-1.png" alt="87% of 467 patent applications filed by the UW in 2014 were contributed by students"><img src="wp-content/themes/boundless/assets/images/academic-highlights-2.png" alt=""><img src="wp-content/themes/boundless/assets/images/academic-highlights-3.png" alt="262 National Science Foundation fellows in 2014">
 
         </div>
         

@@ -930,6 +930,9 @@ body.site-home .uw-search-bar-container #mobile-search-select {
   .uw-charts .faculty-facts .people div:after {
     display: none;
   }
+  .uw-charts .contributions-fact {
+    margin: 60px 0 40px;
+  }
   .uw-charts .contributions-fact li {
     width: 100%;
   }
