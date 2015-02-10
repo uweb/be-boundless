@@ -13,6 +13,7 @@ module.exports = function(grunt) {
         theme : [
           'js/core.js',
           'js/init.js',
+          'js/search.js',
           'js/uwtiles.js',
           'js/video.js',
           'js/map.js',
