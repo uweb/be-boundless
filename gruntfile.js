@@ -13,10 +13,9 @@ module.exports = function(grunt) {
         theme : [
           'js/core.js',
           'js/init.js',
+          'js/search.js',
           'js/uwtiles.js',
-          'js/boundless.youtube_iframe.js',
-          'js/boundless.youtube.js',
-          'js/boundless.video.js',
+          'js/video.js',
           'js/map.js',
           'js/infowindow.js',
           'js/router.js',

@@ -2,7 +2,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
 
     routes : {
       "!/map"         : "initializeMap",
-      "!/video-:video" : "initializeVideo",
+      "!/video=:video" : "initializeVideo",
       "" : "animateInInteraction"
     },
 
@@ -12,7 +12,16 @@ BOUNDLESS.Router = Backbone.Router.extend({
   },
 
   initializeVideo : function (video){
-    BOUNDLESS.videoView = new BOUNDLESS.Video.View({videoNum:video});
+    if (!BOUNDLESS.videoView){
+      BOUNDLESS.videoView = {};
+    }
+    if (!BOUNDLESS.videoView[video]){
+      BOUNDLESS.videoView[video] = new BOUNDLESS.Video.View({slug:video});
+    }
+    else {
+      BOUNDLESS.videoView[video].show();
+    }
+    BOUNDLESS.currentView = BOUNDLESS.videoView[video];
   },
 
   stopBar: function() {

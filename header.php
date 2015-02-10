@@ -12,7 +12,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
         <link rel='stylesheet' href='<?php bloginfo("template_directory"); ?>/loading-bar/mprogress.css'/>
         <script src='<?php bloginfo("template_directory"); ?>/loading-bar/mprogress.min.js'></script>
-        
+
 
         <!--[if lt IE 9]>
             <script src="<?php bloginfo("template_directory"); ?>/assets/ie/js/html5shiv.js" type="text/javascript"></script>
@@ -25,8 +25,9 @@
 
     <div id="thin-strip">
 
-        <a class="wordmark" href="http://uw.edu" tabindex="-1" title="University of Washington Home">Home</a> 
+        <a class="wordmark" href="http://uw.edu" tabindex="-1" title="University of Washington Home">Home</a>
 
+        <input type="search" class="search-bar" placeholder="Search" />
         <ul>
             <li class="facebook"><a href="#" title="Facebook">Facebook</a>
             <li class="twitter"><a href="#" title="Twitter">Twitter</a>
@@ -35,6 +36,6 @@
             <li><a href="uw.edu/parents" class="slash" title="Parents">Parents</a>
             <li><a href="uw.edu/facultystaff" class="slash" title="Faculty &amp; Staff">Faculty &amp; Staff</a>
             <li><a href="uw.edu/alumni" class="slash" title="Alumi">Alumni</a>
-            <li class="search fui-search"><a href="#search" title="Search">Search</a>
+            <li class="search fui-search"> <a href="#search" title="Search">Search</a>
         </ul>
     </div>

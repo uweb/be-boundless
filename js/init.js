@@ -9,7 +9,9 @@ BOUNDLESS.initialize = function( $ )
   // get and parse video data now, build view later
   BOUNDLESS.videos = new BOUNDLESS.Videos()
   // Initialize the router
-  BOUNDLESS.router = new BOUNDLESS.Router()
+  BOUNDLESS.router  = new BOUNDLESS.Router()
+  // Initialize the search
+  BOUNDLESS.search = new BOUNDLESS.Search()
   Backbone.history.start()
 }
 
