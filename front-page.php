@@ -20,7 +20,11 @@
 	  <li></li>
 	  <?php echo  Navigation::get_navigation() ?>
 	</ul>
+	<a class="show-nav" href="#">Show navigation</a>
 
 </div>
+
+<div id="map"></div>
+<div id="infowindow"></div>
 
 <?php get_footer(); ?>

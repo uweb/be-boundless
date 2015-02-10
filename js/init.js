@@ -3,6 +3,9 @@
 // Initialize all components when the DOM is ready
 BOUNDLESS.initialize = function( $ )
 {
+
+  BOUNDLESS.currentView = false
+
   // get and parse video data now, build view later
   BOUNDLESS.videos = new BOUNDLESS.Videos()
   // Initialize the router

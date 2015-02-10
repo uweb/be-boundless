@@ -4,12 +4,13 @@ BOUNDLESS.Interactions = Backbone.View.extend({
 
   initialize : function( options )
   {
-    var $ = jQuery
-    var navigation = $(".navigation")
+  	_.bindAll( this, 'hide', 'show', 'animation');
+
+    this.navigation = $(".navigation")
     var message = $('#message')
 
     // Bounce in the tiles
-    navigation.find("li").each(function () { 		 
+    this.navigation.find("li").each(function () { 		 
 
   		  $(this).animate({
   		  			marginRight: 20,
@@ -21,31 +22,13 @@ BOUNDLESS.Interactions = Backbone.View.extend({
   		  );  	
 
   	});
+  	this.navigation.toggleClass("show-nav");
 
     // Animate in the entire menu as a whole
-    navigation.animate({ 
-    		left: -230 	
-    	},{ 
-  			duration: 500, 
-  		  	easing: 'easeInOutQuad',
-
-  		  	// Was gonna animate left to bounce in
-
-  		  	//complete: function() {
-  		  	//	navigation.animate({
-  		  	//			left: 0 
-  		  	//		},{ 
-  			//			duration: 500, 
-  		  	//			easing: 'easeOutCubic'
-  		  	//	});
-  		  	//}
-  		 }
-    );
+	this.animation(-230)
 
 
-    // The progress bar at the top
-
-    //Instantiate
+    //Instantiate load bar
 
     var bufferIntObj = {
  		 template: 3
@@ -54,23 +37,46 @@ BOUNDLESS.Interactions = Backbone.View.extend({
     var mprogress = new Mprogress(bufferIntObj);
 
     // Call bar on click
-    navigation.on('click', "li", function(){
+    this.navigation.on('click', "li", function(){
     	mprogress.start() 
     	mprogress.set(0.2)
     });
 
     // Blur background
-    navigation.find("li").on({  		
+    this.navigation.find("li").on({  		
     	mouseenter: function() {
   		  message.addClass("blur")
-  		  $(this).show( "scale", {percent: 100}, 2000 );
   		}, mouseleave: function() {
   		  message.removeClass("blur")
   		}
     });
 
+    // Show nav bar on click
 
+
+  },
+
+  hide: function(){
+    // Animate in the entire menu as a whole
+    this.animation(-1600)
+  	console.log('Hiding the navigation')
+
+  },
+
+  show: function(){
+  	console.log('Showing the navigation')
+  },
+
+  animation: function(left) {
+    this.navigation.animate({ 
+    		left: left 	
+    	},{ 
+  			duration: 500, 
+  		  	easing: 'easeInOutQuad'
+  		 }
+    );
   }
+
 
 })
 
