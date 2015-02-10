@@ -5,11 +5,11 @@ BOUNDLESS.Map = Backbone.View.extend({
   // The element to put the Google Map
   el : '#map',
 
-  // The HTML template the map will use
-  // template : '<div id="map"></div><div class="infowindow"></div>',
-
   // HTML for the info window
   infoWindow : '<div class="overlay"></div>',
+
+  //
+  googleMapIsLoaded : false,
 
    // Google Map settings for the map and the marker
   settings : {
@@ -45,7 +45,7 @@ BOUNDLESS.Map = Backbone.View.extend({
   // This is executed by the router and only when the route is in place
   initialize : function( options )
   {
-    _.bindAll( this, 'delegateGoogleMapEvents', 'handleCenterChanged', 'handleZoomChanged', 'getMapType', 'putMarkersOnMap', 'render', 'show', 'hide' )
+    _.bindAll( this, 'delegateGoogleMapEvents', 'handleCenterChanged', 'handleZoomChanged', 'getMapType', 'putMarkersOnMap', 'render', 'segueIn', 'hide', 'googleMapLoaded' )
     this.points = new BOUNDLESS.Map.Points()
     this.points.on( 'sync', this.render )
   },
@@ -60,16 +60,16 @@ BOUNDLESS.Map = Backbone.View.extend({
     this.points.each( this.putMarkersOnMap )
     this.delegateGoogleMapEvents()
 
-    this.show()
+    // this.show()
 
   },
 
   // Delegate the Google map events to the Backbone view
   delegateGoogleMapEvents : function()
   {
-    new google.maps.event.addListener( this.map, "center_changed", this.handleCenterChanged )
-    new google.maps.event.addListener( this.map, "zoom_changed", this.handleZoomChanged )
-    // new google.maps.event.addListenerOnce( this.map, "idle", this.show )
+    google.maps.event.addListener( this.map, "center_changed", this.handleCenterChanged )
+    google.maps.event.addListener( this.map, "zoom_changed", this.handleZoomChanged )
+    // google.maps.event.addListenerOnce( this.map, "idle", this.googleMapLoaded )
   },
 
   // When the center of the map has changed choose to load the UW Tiles or default Google tiles
@@ -118,16 +118,29 @@ BOUNDLESS.Map = Backbone.View.extend({
     this.infoWindow.setMap( this.getMap() )
   },
 
-  show : function()
+  segueIn : function()
   {
-    this.$el.hide().css('z-index', 0).fadeIn(1000)
+    console.log('Map segue in')
+    BOUNDLESS.router.trigger('newViewLoaded')
+    this.$el.hide().css('z-index', 0).fadeIn( BOUNDLESS.AnimationDuration )
   },
+
+  show : function ()
+  {
+    console.log('map show')
+    if ( this.googleMapIsLoaded ) this.segueIn() },
 
   hide : function() {
     // Segue between map and main screen
     this.$el.fadeOut( 1000, function() {
       $(this).css('z-index', 0).hide() }
      )
+  },
+
+  // Segues the initial load of the map so the Google Map isn't loading tiles while transition from the main page
+  googleMapLoaded: function() {
+    this.googleMapIsLoaded = true
+    _.delay( this.segueIn, 300 )
   }
 
 })

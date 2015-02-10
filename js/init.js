@@ -1,4 +1,5 @@
 // List out the classes that each component searches for
+BOUNDLESS.AnimationDuration = 1000
 
 // Initialize all components when the DOM is ready
 BOUNDLESS.initialize = function( $ )
@@ -12,6 +13,14 @@ BOUNDLESS.initialize = function( $ )
   BOUNDLESS.router  = new BOUNDLESS.Router()
   // Initialize the search
   BOUNDLESS.search = new BOUNDLESS.Search()
+
+// TODO: when do we load the map?
+  BOUNDLESS.uwtiles = new BOUNDLESS.UWTiles()
+  BOUNDLESS.map = new BOUNDLESS.Map()
+
+  // Initialize the Boundless navigation
+  BOUNDLESS.navigation = new BOUNDLESS.Navigation()
+
   Backbone.history.start()
 }
 

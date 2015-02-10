@@ -1,14 +1,25 @@
 BOUNDLESS.Router = Backbone.Router.extend({
 
-    routes : {
-      "!/map"         : "initializeMap",
-      "!/video=:video" : "initializeVideo",
-      "" : "animateInInteraction"
-    },
+  settings : {
+    mprogress : {
+          template : 3
+    }
+  },
+
+  routes : {
+    "!/map"         : "segueToMap",
+    "!/video=:video" : "initializeVideo",
+    "" : "default"
+  },
 
   initialize : function(options) {
-    _.bindAll( this, 'initializeMap' )
-    this.on("route", this.stopBar)
+
+    _.bindAll( this, 'routeCompleted', 'segueToMap', 'initializeVideo' )
+
+    this.mprogress = new Mprogress( this.settings.mprogress )
+
+    this.on("route", this.routeCompleted)
+    this.on("newViewLoaded", this.newViewLoaded )
   },
 
   initializeVideo : function (video){
@@ -21,12 +32,17 @@ BOUNDLESS.Router = Backbone.Router.extend({
     else {
       BOUNDLESS.videoView[video].show();
     }
-    BOUNDLESS.currentView = BOUNDLESS.videoView[video];
+    this.currentView = BOUNDLESS.videoView[video];
   },
 
-  stopBar: function() {
-    console.log("page is loaded")
-    mprogress.stop()
+
+  default : function() {},
+
+  routeCompleted: function() {
+    console.log("Route is complete")
+
+    if ( this.ready && this.currentView ) this.currentView.segueIn()
+    if ( ! this.ready ) this.ready = true
   },
 
   // Animates the initial interaction when the homepage is loaded
@@ -35,33 +51,42 @@ BOUNDLESS.Router = Backbone.Router.extend({
     BOUNDLESS.interaction = new BOUNDLESS.Interactions()
   },
 
-   execute: function(callback, args) {
+  newViewLoaded : function()
+  {
+    this.mprogress.end()
+    BOUNDLESS.navigation.hide()
+  },
 
-    if ( BOUNDLESS.currentView )
+  // Preforms before each segue
+  // Should hide or show the navigation
+   execute: function(callback, args) {
+    console.log("Route is starting")
+
+    if ( this.ready )
     {
-      BOUNDLESS.currentView.hide()
-      BOUNDLESS.interaction.show()
-    } else {
-      if ( BOUNDLESS.interaction !== undefined )
-        BOUNDLESS.interaction.hide()
+
+        if ( this.currentView )
+        {
+          BOUNDLESS.navigation.segueIn()
+          this.currentView.hide()
+          this.currentView = false
+        }
+        else {
+          this.mprogress.start()
+          BOUNDLESS.navigation.segueOut()
+        }
+
     }
 
-    BOUNDLESS.currentView = false
-    // This could be where we segue the navigation out
     if (callback) callback.apply(this, args);
   },
 
 // If the router is map create a new map
-  initializeMap : function ()
+  segueToMap : function ()
   {
-    if ( ! BOUNDLESS.map )
-    {
-      BOUNDLESS.uwtiles = new BOUNDLESS.UWTiles()
-      BOUNDLESS.map = new BOUNDLESS.Map()
-    }
-
+    console.log('Segue to map')
     // Set the current view reference
-    BOUNDLESS.currentView = BOUNDLESS.map
+    this.currentView = BOUNDLESS.map
 
   }
 

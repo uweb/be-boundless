@@ -1,80 +1,80 @@
-// Map Point View
-// Mostly temporary rendering until segues are established
-BOUNDLESS.Interactions = Backbone.View.extend({
+// Navigation View
+BOUNDLESS.Navigation = Backbone.View.extend({
+
+  el : '.navigation',
+  message : '#message',
+
+  events : {
+    'mouseenter li' : 'addBlur',
+    'mouseleave li' : 'removeBlur',
+    'click .show-nav' : 'segueIn',
+  },
 
   initialize : function( options )
   {
-  	_.bindAll( this, 'hide', 'show', 'animation');
+    _.bindAll( this, 'addBlur', 'removeBlur', 'segueIn', 'segueOut', 'show', 'animate');
 
-    this.navigation = $(".navigation")
-    var message = $('#message')
-
-    // Bounce in the tiles
-    this.navigation.find("li").each(function () { 		 
-
-  		  $(this).animate({
-  		  			marginRight: 20,
-  		  			opacity:1
-  		  		},{ 
-  		  			duration: 1500, 
-  		  			easing: 'easeOutElastic'
-  		  		}
-  		  );  	
-
-  	});
-  	this.navigation.toggleClass("show-nav");
+    this.$message = $('#message')
 
     // Animate in the entire menu as a whole
-	this.animation(-230)
-
-
-    //Instantiate load bar
-
-    var bufferIntObj = {
- 		 template: 3
-	};
-
-    var mprogress = new Mprogress(bufferIntObj);
-
-    // Call bar on click
-    this.navigation.on('click', "li", function(){
-    	mprogress.start() 
-    	mprogress.set(0.2)
-    });
-
-    // Blur background
-    this.navigation.find("li").on({  		
-    	mouseenter: function() {
-  		  message.addClass("blur")
-  		}, mouseleave: function() {
-  		  message.removeClass("blur")
-  		}
-    });
-
-    // Show nav bar on click
-
-
+    this.animate(-230, true )
   },
 
-  hide: function(){
-    // Animate in the entire menu as a whole
-    this.animation(-1600)
-  	console.log('Hiding the navigation')
+  addBlur : function()
+  {
+    this.$message.addClass( 'blur' )
+  },
 
+  removeBlur : function()
+  {
+    this.$message.removeClass("blur")
+  },
+
+  segueOut: function(){
+    // Animate in the entire menu as a whole
+    console.log('Hiding the navigation')
+    this.animate(-1600)
+  },
+
+  segueIn : function()
+  {
+    this.animate(-230, true )
+    this.show()
+  },
+
+  hide : function(){
+    this.$message.fadeOut( BOUNDLESS.AnimationDuration )
+    console.log('Hiding the message')
   },
 
   show: function(){
+      this.$message.fadeIn( BOUNDLESS.AnimationDuration )
   	console.log('Showing the navigation')
   },
 
-  animation: function(left) {
-    this.navigation.animate({ 
-    		left: left 	
-    	},{ 
-  			duration: 500, 
+  animate: function(left, animatingIn ) {
+
+    this.$el.animate({
+    		left: left
+    	},{
+  			duration: 500,
   		  	easing: 'easeInOutQuad'
-  		 }
-    );
+    })
+
+    if ( animatingIn )
+    {
+      console.log('Bounce the tiles')
+
+       // Bounce in the tiles
+      this.$el.find("li").animate({
+                marginRight: 20,
+                opacity:1
+              },{
+                duration: 1500,
+                easing: 'easeOutElastic'
+      })
+    }
+
   }
 
 

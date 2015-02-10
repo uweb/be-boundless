@@ -13,13 +13,13 @@ module.exports = function(grunt) {
         theme : [
           'js/core.js',
           'js/init.js',
+          'js/interaction.js',
           'js/search.js',
           'js/uwtiles.js',
           'js/video.js',
           'js/map.js',
           'js/infowindow.js',
           'js/router.js',
-          'js/interaction.js',
         ],
         src: [ 'js/intro.js', '<%= concat.dist.libraries %>', '<%= concat.dist.theme %>', 'js/outro.js' ],
         dest: 'js/.tmp.boundless.js'
