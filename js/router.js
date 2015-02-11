@@ -8,7 +8,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
 
   routes : {
     "!/map"         : "segueToMap",
-    "!/video=:video" : "initializeVideo",
+    "!/video/:video" : "initializeVideo",
     "" : "default"
   },
 
