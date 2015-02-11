@@ -9,7 +9,7 @@ BOUNDLESS.Map = Backbone.View.extend({
   infoWindow : '<div class="overlay"></div>',
 
   //
-  googleMapIsLoaded : false,
+  // googleMapIsLoaded : false,
 
    // Google Map settings for the map and the marker
   settings : {
@@ -60,8 +60,6 @@ BOUNDLESS.Map = Backbone.View.extend({
     this.points.each( this.putMarkersOnMap )
     this.delegateGoogleMapEvents()
 
-    // this.show()
-
   },
 
   // Delegate the Google map events to the Backbone view
@@ -69,7 +67,7 @@ BOUNDLESS.Map = Backbone.View.extend({
   {
     google.maps.event.addListener( this.map, "center_changed", this.handleCenterChanged )
     google.maps.event.addListener( this.map, "zoom_changed", this.handleZoomChanged )
-    // google.maps.event.addListenerOnce( this.map, "idle", this.googleMapLoaded )
+    google.maps.event.addListenerOnce( this.map, "idle", this.googleMapLoaded )
   },
 
   // When the center of the map has changed choose to load the UW Tiles or default Google tiles
@@ -139,8 +137,9 @@ BOUNDLESS.Map = Backbone.View.extend({
 
   // Segues the initial load of the map so the Google Map isn't loading tiles while transition from the main page
   googleMapLoaded: function() {
-    this.googleMapIsLoaded = true
-    _.delay( this.segueIn, 300 )
+    this.trigger('googlemaploaded')
+  //   this.googleMapIsLoaded = true
+  //   _.delay( this.segueIn, 300 )
   }
 
 })

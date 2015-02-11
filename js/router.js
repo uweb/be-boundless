@@ -39,6 +39,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
   default : function() {},
 
   routeCompleted: function() {
+
     console.log("Route is complete")
 
     if ( this.ready && this.currentView ) this.currentView.segueIn()

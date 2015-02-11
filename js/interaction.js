@@ -5,8 +5,8 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   message : '#message',
 
   events : {
-    'mouseenter li' : 'addBlur',
-    'mouseleave li' : 'removeBlur',
+    'mouseenter' : 'addBlur',
+    'mouseleave' : 'removeBlur',
     'click .show-nav' : 'segueIn',
   },
 

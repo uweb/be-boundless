@@ -9,10 +9,12 @@ module.exports = function(grunt) {
       },
       dist: {
         libraries: [
+          'js/imagesloaded.js',
         ],
         theme : [
           'js/core.js',
           'js/init.js',
+          'js/beginning.js',
           'js/interaction.js',
           'js/search.js',
           'js/uwtiles.js',
