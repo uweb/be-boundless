@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="boundless-slide">
+<div id="boundless-slide" class="slide">
   <div id="message">
     <div class="text">
     	<h1>THE UW <br>EXPERIENCE</h1>
@@ -16,7 +16,7 @@
     </div>
 </div>
 
-<div class="navigation">
+<div class="navigation" class="slide">
 
 	<ul>
 	  <li></li>
@@ -26,7 +26,11 @@
 
 </div>
 
-<div id="map"></div>
+<div id="map-slide">
+    <div id="map-overlay"></div>
+    <div id="map"></div>
+</div>
+
 <div id="infowindow"></div>
 
 <?php get_footer(); ?>

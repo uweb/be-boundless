@@ -1,7 +1,15 @@
 // List out the classes that each component searches for
 BOUNDLESS.AnimationDuration = 1000
 
+BOUNDLESS.begin = function() {
+
 // Initialize all components when the DOM is ready
+  // Initialize the router
+  BOUNDLESS.router  = new BOUNDLESS.Router()
+
+  BOUNDLESS.beginning = new BOUNDLESS.Beginning()
+}
+
 BOUNDLESS.initialize = function( $ )
 {
 
@@ -9,14 +17,9 @@ BOUNDLESS.initialize = function( $ )
 
   // get and parse video data now, build view later
   BOUNDLESS.videos = new BOUNDLESS.Videos()
-  // Initialize the router
-  BOUNDLESS.router  = new BOUNDLESS.Router()
   // Initialize the search
   BOUNDLESS.search = new BOUNDLESS.Search()
 
-// TODO: when do we load the map?
-  BOUNDLESS.uwtiles = new BOUNDLESS.UWTiles()
-  BOUNDLESS.map = new BOUNDLESS.Map()
 
   // Initialize the Boundless navigation
   BOUNDLESS.navigation = new BOUNDLESS.Navigation()
@@ -24,5 +27,5 @@ BOUNDLESS.initialize = function( $ )
   Backbone.history.start()
 }
 
-jQuery(document).ready( BOUNDLESS.initialize )
+jQuery(document).ready( BOUNDLESS.begin )
 
