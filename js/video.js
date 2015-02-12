@@ -132,7 +132,6 @@ BOUNDLESS.Video.View = Backbone.View.extend({
     playnow = playnow || false;
     if (playnow) {
       this.uwplayer.loadVideoById(id);
-      this.$button.focus();
       this.is_playing = true;
     }
     else {
@@ -144,13 +143,16 @@ BOUNDLESS.Video.View = Backbone.View.extend({
     if (this.is_playing){
       this.is_playing = false;
       this.uwplayer.stopVideo();
-      this.$button.removeClass('close');
       this.$iframe.addClass('behind');
+      _.delay(function() { this.$button.removeClass('close')}.bind(this), 250);
     }
     else {
-      this.$iframe.removeClass('behind');
-      this.play(this.model.get('video'), true);
       this.$button.addClass('close');
+      _.delay(function() {
+        this.$iframe.removeClass('behind');
+        this.play(this.model.get('video'), true);
+        this.$button.focus();
+      }.bind(this), 250);
     }
   },
 
