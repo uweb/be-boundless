@@ -8,40 +8,10 @@
       </h2>
 
       <div class="fact-1 col-md-6 campus-life">
-        <h3>Campus Life</h3>
-        <ul class="campus-life-facts">
+        <h3>At a glance</h3>
 
-          <li class="fact-1">
-            <span>14</span>
-            &nbsp;Libraries
-          </li>
+        <img src="wp-content/themes/boundless/assets/images/at-a-glance.png" alt="The UW has three campuses that offer more than 440 degree options across 280 programs">
 
-          <li class="fact-2">
-            <span>4</span>
-            &nbsp;Markets
-          </li>
-
-          <li class="fact-3">
-            <span>3</span>
-            &nbsp;Food Trucks
-          </li>
-
-          <li class="fact-4">
-            <span>16</span>
-            &nbsp;Coffee Shops
-          </li>
-
-          <li class="fact-5">
-            <span>11</span>
-            &nbsp;Residence Halls
-          </li>
-
-          <li class="fact-6">
-            <span>15</span>
-            &nbsp;Restaurants
-          </li>
-
-        </ul>
       </div>
 
 
@@ -50,7 +20,7 @@
 
         <div class="row">
         
-          <img src="wp-content/themes/boundless/assets/images/academic-highlights-1.png" alt="87% of 467 patent applications filed by the UW in 2014 were contributed by students"><img src="wp-content/themes/boundless/assets/images/academic-highlights-2.png" alt=""><img src="wp-content/themes/boundless/assets/images/academic-highlights-3.png" alt="262 National Science Foundation fellows in 2014">
+          <img src="wp-content/themes/boundless/assets/images/academic-highlights-1.png" alt="87% of 467 patent applications filed by the UW in 2014 were contributed by students"><img class="slash" src="wp-content/themes/boundless/assets/images/academic-highlights-2.png" alt=""><img src="wp-content/themes/boundless/assets/images/academic-highlights-3.png" alt="262 National Science Foundation fellows in 2014">
 
         </div>
         
