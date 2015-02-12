@@ -26,17 +26,43 @@ div.fullscreen {
     border: none;
     padding: 0;
     background-color: transparent;
-    background-image: url(//www.washington.edu/wp-content/themes/uw-2014/assets/svg/uw-sprite.svg);
-    background-size: 4320px 3500px;
-    background-position: -231px -2745px;
     transition: all .25s;
+    overflow: hidden;
+    span {
+      display: block;
+      margin:0;
+      width: 120px;
+      height: 4px;
+      background-color: white;
+      transition: all .25s;
+      &.top {
+        transform: rotate(30deg) translate(14px,-37px);
+      }
+      &.left {
+        transform: rotate(90deg) translate(0px,20px);
+      }
+      &.bottom {
+        transform: rotate(150deg) translate(-14px,-37px);
+      }
+    }
     &.close {
       height: 44px;
       width: 45px;
-      background-size: 1080px 875px;
-      background-position: -58px -686px;
       top: 5px;
       right: 5px;
+      span {
+        width: 45px;
+        &.top {
+          transform: rotate(45deg) translate(2px,3px);
+        }
+        &.left {
+          opacity: 0;
+          transform: rotate(90deg) translate(0px,14px);
+        }
+        &.bottom {
+          transform: rotate(135deg) translate(-2px,3px);
+        }
+      }
     }
   }
   .boundless-youtube {
