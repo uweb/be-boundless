@@ -1,11 +1,29 @@
 // Boundless Map Information Window
 // Each marker gets it's own attached window for now.
 // Alternative is one window that moves around from marker to marker.
-BOUNDLESS.Map.InfoWindow = function( map, point, info )
+BOUNDLESS.Map.InfoWindow = function( map )
 {
 
   this.div = document.createElement('div')
   this.div.className = 'infowindow'
+
+  // this.point = point
+  this.setMap( map )
+
+}
+
+// Extend the Google Maps Overlay View
+BOUNDLESS.Map.InfoWindow.prototype = new google.maps.OverlayView()
+
+BOUNDLESS.Map.InfoWindow.prototype.render = function( marker )
+{
+
+  var overlayProjection = this.getProjection()
+      , point = marker.getPosition()
+      , info  = marker.get('information')
+      , position = overlayProjection.fromLatLngToDivPixel( point)
+      , padding = 40
+
   this.div.innerHTML = _.template(
     '<div class="image-mask">' +
       '<div class="image">' +
@@ -21,14 +39,12 @@ BOUNDLESS.Map.InfoWindow = function( map, point, info )
     '<div class="arrow"></div>'
   , { info : info })
 
-  this.point = point
-  this.setMap( map )
+
+
+  this.div.style.top  = position.y - ( this.div.offsetHeight + padding )+ 'px'
+  this.div.style.left = position.x - this.div.offsetWidth / 2 + 'px'
 
 }
-
-
-// Extend the Google Maps Overlay View
-BOUNDLESS.Map.InfoWindow.prototype = new google.maps.OverlayView()
 
 BOUNDLESS.Map.InfoWindow.prototype.segueIn = function()
 {
@@ -49,13 +65,6 @@ BOUNDLESS.Map.InfoWindow.prototype.onAdd = function()
 BOUNDLESS.Map.InfoWindow.prototype.draw = function()
 {
 
-    var overlayProjection = this.getProjection()
-        , position = overlayProjection.fromLatLngToDivPixel( this.point)
-        , padding = 40
-
-
-  this.div.style.top  = position.y - ( this.div.offsetHeight + padding )+ 'px'
-  this.div.style.left = position.x - this.div.offsetWidth / 2 + 'px'
 
 }
 
@@ -63,5 +72,4 @@ BOUNDLESS.Map.InfoWindow.prototype.draw = function()
 BOUNDLESS.Map.InfoWindow.prototype.onRemove = function()
 {
   this.div.style.display = 'none'
-  console.log('remove')
 }

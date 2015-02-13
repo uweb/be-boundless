@@ -21,7 +21,7 @@ BOUNDLESS.Navigation = Backbone.View.extend({
 
   segueOut : function()
   {
-    this.$el.transition({ left : -2300 }, BOUNDLESS.AnimationDuration, 'easeInOutQuad' )
+    this.$el.transition({ left : -300 }, BOUNDLESS.AnimationDuration, 'easeInOutQuad' )
     this.hidden = true
   },
 

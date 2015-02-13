@@ -21,6 +21,12 @@ BOUNDLESS.Map = Backbone.View.extend({
       minZoom:1,
       maxZoom:19,
       disableDoubleClickZoom : false,
+      styles : [{
+        featureType : 'poi',
+        stylers : [{
+            visibility : 'off'
+        }]
+      }]
       // setMapTypeId:  google.maps.MapTypeId.ROADMAP,
       // mapTypeControl : false
     },
@@ -54,6 +60,8 @@ BOUNDLESS.Map = Backbone.View.extend({
     // this.map.mapTypes.set( this.settings.name, BOUNDLESS.uwtiles )
     // this.map.setMapTypeId( this.settings.name )
 
+    this.infowindow = new BOUNDLESS.Map.InfoWindow( this.map )
+
     this.bounds = new google.maps.LatLngBounds()
     this.points.each( this.putMarkersOnMap )
 
@@ -86,22 +94,30 @@ BOUNDLESS.Map = Backbone.View.extend({
 
 
   // Put each vanilla marker on the map and extend the map bounds to show them
-  putMarkersOnMap : function( point )
+  putMarkersOnMap : function( information )
   {
       var marker = new google.maps.Marker( this.settings.marker )
-              , latlng = new google.maps.LatLng( point.get( 'coordinate' ).latitude, point.get( 'coordinate' ).longitude )
-              , infowindow = new BOUNDLESS.Map.InfoWindow( this.map, latlng, point )
+              , latlng = new google.maps.LatLng( information.get( 'coordinate' ).latitude, information.get( 'coordinate' ).longitude )
+              // , infowindow = new BOUNDLESS.Map.InfoWindow( this.map, latlng, point )
 
       this.bounds.extend( latlng )
 
       marker.setPosition(  latlng )
-      marker.setTitle( point.get('title') )
-      marker.setText( point.get('text') )
+      marker.setTitle( information.get('title') )
+      marker.setText( information.get('text') )
       marker.setMap( this.map )
       marker.setIcon( this.settings.icon )
-      marker.set( 'infoWindow', infowindow )
+      // marker.set( 'infoWindow', infowindow )
 
-      google.maps.event.addListener( marker, 'click', this.handleClickMarker )
+      marker.set( 'information', information )
+
+      // this.marker = marker
+
+      // google.maps.event.addListener( marker, 'click', _.bind( this.handleClickMarker, this ) )
+      // google.maps.event.addListener( marker, 'click',  this.handleClickMarker )
+      google.maps.event.addListener( marker, 'click', _.bind( function() {
+        this.handleClickMarker( marker )
+      }, this ) )
 
       this.map.fitBounds( this.bounds )
   },
@@ -109,15 +125,24 @@ BOUNDLESS.Map = Backbone.View.extend({
   // Handle the clicking of the marker
   handleClickMarker : function( marker )
   {
-    this.getMap().panTo( this.getPosition() )
-    this.infoWindow.setMap( this.getMap() )
-    this.infoWindow.segueIn()
+    this.map.panTo( marker.getPosition() )
+    this.infowindow.render( marker )
+    this.infowindow.segueIn()
+
+    // var infowindow = new BOUNDLESS.Map.InfoWindow( this.getMap() , this.getPosition(), this.get('information') )
+    // this.map.panTo( this.marker.getPosition() )
+    // this.infowindow.render( this.marker)
+    // infowindow.segueIn()
+
+    // this.getMap().panTo( this.getPosition() )
+    // infowindow.setMap( this.getMap() )
+    // infowindow.segueIn()
     // google.maps.event.addListenerOnce( this.getMap(), 'idle', _.bind( this.infoWindow.segueIn, this.infoWindow ) )
   },
 
   removeInfoWindows : function()
   {
-    // NOTE: easy
+    // TODO: easy
     $('.infowindow').removeClass('open')
   },
 
