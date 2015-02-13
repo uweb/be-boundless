@@ -1,3 +1,4 @@
+BOUNDLESS.TransitionEvents = 'transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd';
 // List out the classes that each component searches for
 BOUNDLESS.AnimationDuration = 1000
 

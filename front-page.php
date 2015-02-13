@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-    <div id="overlay"></div>
+    <!-- <div id="overlay"></div> -->
 
 
     <div id="boundless-slide" class="slide">
