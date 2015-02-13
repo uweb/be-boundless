@@ -2,80 +2,42 @@
 BOUNDLESS.Navigation = Backbone.View.extend({
 
   el : '.navigation',
+
+  hidden : true,
+
   message : '#message',
 
   events : {
-    'mouseenter' : 'addBlur',
-    'mouseleave' : 'removeBlur',
+    // 'mouseenter' : 'addBlur',
+    // 'mouseleave' : 'removeBlur',
+    'click li' : 'segueOut',
     'click .show-nav' : 'segueIn',
   },
 
   initialize : function( options )
   {
-    _.bindAll( this, 'addBlur', 'removeBlur', 'segueIn', 'segueOut', 'show', 'animate');
-
-    this.$message = $('#message')
-
-    // Animate in the entire menu as a whole
-    this.animate(-230, true )
+    // this.$message = $('#message')
   },
 
-  addBlur : function()
+  segueOut : function()
   {
-    this.$message.addClass( 'blur' )
+    this.$el.transition({ left : -2300 }, BOUNDLESS.AnimationDuration, 'easeInOutQuad' )
+    this.hidden = true
   },
 
-  removeBlur : function()
+  segueIn: function() {
+
+     this.$el.transition({ left : -230 }, BOUNDLESS.AnimationDuration, 'easeInOutQuad' )
+     this.hidden = false
+  },
+
+  segue : function()
   {
-    this.$message.removeClass("blur")
-  },
-
-  segueOut: function(){
-    // Animate in the entire menu as a whole
-    console.log('Hiding the navigation')
-    this.animate(-1600)
-  },
-
-  segueIn : function()
-  {
-    this.animate(-230, true )
-    this.show()
-  },
-
-  hide : function(){
-    this.$message.fadeOut( BOUNDLESS.AnimationDuration )
-    console.log('Hiding the message')
-  },
-
-  show: function(){
-      this.$message.fadeIn( BOUNDLESS.AnimationDuration )
-  	console.log('Showing the navigation')
-  },
-
-  animate: function(left, animatingIn ) {
-
-    this.$el.animate({
-    		left: left
-    	},{
-  			duration: 500,
-  		  	easing: 'easeInOutQuad'
-    })
-
-    if ( animatingIn )
-    {
-      console.log('Bounce the tiles')
-
-       // Bounce in the tiles
-      this.$el.find("li").animate({
-                marginRight: 20,
-                opacity:1
-              },{
-                duration: 1500,
-                easing: 'easeOutElastic'
-      })
-    }
-
+      // Backbone.history.fragement protects against linking directily to a slide
+      if ( this.hidden && ! Backbone.history.fragment ) this.segueIn()
+      if ( ! this.hidden && Backbone.history.fragment.length ) this.segueOut()
   }
+
 
 
 })
