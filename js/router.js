@@ -8,7 +8,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
 
   routes : {
     "!/map" : "segueToMap",
-    // "!/video/:video" : "initializeVideo",
+    "!/video/:video" : "sequeToVideo",
     "" : "default"
   },
 
@@ -16,23 +16,21 @@ BOUNDLESS.Router = Backbone.Router.extend({
 
     _.bindAll( this,
       // 'routeCompleted',
-       'segueToMap', 'initializeVideo', 'unveil' )
+       'segueToMap', 'sequeToVideo', 'unveil' )
 
     this.mprogress = new Mprogress( this.settings.mprogress )
 
   },
 
-  initializeVideo : function (video){
+  sequeToVideo : function (video){
     if (!BOUNDLESS.videoView){
       BOUNDLESS.videoView = {};
     }
     if (!BOUNDLESS.videoView[video]){
       BOUNDLESS.videoView[video] = new BOUNDLESS.Video.View({slug:video});
     }
-    else {
-      BOUNDLESS.videoView[video].show();
-    }
     this.currentView = BOUNDLESS.videoView[video];
+    this.currentView.on('slideloaded', this.unveil);
   },
 
 
