@@ -1,7 +1,7 @@
 div.navigation {
 
   position: absolute;
-  left: -2000px;
+  left: -1600px;
   bottom: 210px;
   width: 1780px;
   overflow: hidden;
@@ -88,6 +88,8 @@ div.navigation {
 
   }
   .show-nav {
+    transform: rotate(0deg);
+    transition-duration: 1s;
     background: url(less/svg/map-marker.svg) center center no-repeat transparent;
     overflow: hidden;
     display: block;
@@ -98,6 +100,10 @@ div.navigation {
     position: absolute;
     right: 30px;
     top: 50%;
+
+    &.close {
+      transform: rotate( 45deg );
+    }
   }
 
 }

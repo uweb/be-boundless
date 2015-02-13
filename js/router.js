@@ -43,7 +43,8 @@ BOUNDLESS.Router = Backbone.Router.extend({
 
     this.mprogress.end()
 
-    this.currentView.unbind('slideloaded')
+    if ( this.currentView ) this.currentView.unbind('slideloaded')
+
     return this.currentView && this.currentView.remove()
   },
 

@@ -16,17 +16,19 @@ BOUNDLESS.Navigation = Backbone.View.extend({
 
   initialize : function( options )
   {
+    this.$toggle = this.$('.show-nav')
     // this.$message = $('#message')
   },
 
   segueOut : function()
   {
-    this.$el.transition({ left : -300 }, BOUNDLESS.AnimationDuration, 'easeInOutQuad' )
+    this.$toggle.addClass( 'close' )
+    this.$el.transition({ left : -1600 }, BOUNDLESS.AnimationDuration, 'easeInOutQuad' )
     this.hidden = true
   },
 
-  segueIn: function() {
-
+  segueIn: function( e ) {
+     this.$toggle.removeClass( 'close' )
      this.$el.transition({ left : -230 }, BOUNDLESS.AnimationDuration, 'easeInOutQuad' )
      this.hidden = false
   },
@@ -36,6 +38,7 @@ BOUNDLESS.Navigation = Backbone.View.extend({
       // Backbone.history.fragement protects against linking directily to a slide
       if ( this.hidden && ! Backbone.history.fragment ) this.segueIn()
       if ( ! this.hidden && Backbone.history.fragment.length ) this.segueOut()
+      if ( Backbone.history.fragment.length ) this.$toggle.addClass( 'close' )
   }
 
 
