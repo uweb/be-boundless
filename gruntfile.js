@@ -21,6 +21,7 @@ module.exports = function(grunt) {
           'js/video.js',
           'js/map.js',
           'js/infowindow.js',
+          'js/utilities.js',
           'js/router.js',
         ],
         src: [ 'js/intro.js', '<%= concat.dist.libraries %>', '<%= concat.dist.theme %>', 'js/outro.js' ],

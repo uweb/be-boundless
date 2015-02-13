@@ -1,0 +1,137 @@
+div.infowindow {
+
+  // opacity: 0;
+  width: 450px;
+  position: absolute;
+  // margin-left: -225px;
+  // margin-top: -345px;
+    .box-shadow(1px 1px 2px rgba(0,0,0,0));
+  transition: box-shadow 1s linear;
+  transition-delay: 0ms;
+  transition-duration: 400ms;
+
+  div.arrow {
+    background: url(img/map-notch.png) no-repeat 0 0 transparent;
+    display: block;
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: -27px;
+    left: 50%;
+    margin-left: -15px;
+
+    transform-origin: 0% 0%;
+    backface-visibility: hidden;
+    transition-duration: 700ms;
+    transition-delay: 0ms;
+    transform: rotateX(-180deg);
+  }
+
+  div.image-mask {
+    overflow: hidden;
+    height:169px; /* Removes CSS3 stutter */
+  }
+
+  div.image {
+    position: relative;
+    display: block;
+    width: 450px;
+    height: 170px;
+    overflow: hidden;
+
+    transform-origin: 50% 100%;
+    backface-visibility: hidden;
+    transition-duration: 700ms;
+    transition-delay: 700ms;
+    transform: rotateX(-180deg);
+
+
+    &:after {
+      content: "";
+      width: 100%;
+      height: 90px;
+      position: absolute;
+      display: block;
+      bottom: 0;
+      background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(207,207,207,0) 19%, rgba(0,0,0,0.6) 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(19%,rgba(207,207,207,0)), color-stop(100%,rgba(0,0,0,0.6))); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(207,207,207,0) 19%,rgba(0,0,0,0.6) 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(207,207,207,0) 19%,rgba(0,0,0,0.6) 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(207,207,207,0) 19%,rgba(0,0,0,0.6) 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(207,207,207,0) 19%,rgba(0,0,0,0.6) 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#99000000',GradientType=0 ); /* IE6-9 */
+
+    }
+    img {
+      position: absolute;
+      // max-width: 100%;
+      height: auto;
+      width: calc(~"100% + 60px");
+      transition: opacity 0.35s, transform 0.35s;
+      transform: translate3d(-30px,0,0) scale(1.12);
+    }
+
+    h3 {
+    position: absolute;
+    bottom: 0px;
+    left: 35px;
+    color: #fff;
+    z-index: 1;
+
+    }
+  }
+
+  div.text
+  {
+    display: block;
+    width: 100%;
+    padding: 30px 35px;
+    background-color:  #fff;
+
+    transform-origin: 50% 0%;
+    transition-delay: 200ms;
+    transition-duration: 1500ms;
+    backface-visibility: hidden;
+    transform: rotateX(-180deg);
+
+    p {
+      color: #666;
+      font-size: 16px;
+      line-height: 1.45;
+    }
+  }
+
+  &.open {
+    opacity: 1;
+    transition-delay: 1100ms;
+    transition-duration: 700ms;
+    .box-shadow(1px 1px 2px rgba(0,0,0,0.3));
+
+    div.image {
+      transform: rotateX(0deg);
+      transition-delay: 0ms;
+      background: @purple;
+
+      &:hover {
+        img {
+          opacity: 0.9;
+          transform: translate3d(0,0,0) scale(1);
+        }
+      }
+
+    }
+
+    div.text {
+      transform: rotateX(0deg);
+    }
+
+    div.arrow {
+      transform: rotateX(0deg);
+      transition-delay: 1000ms;
+    }
+
+  }
+
+
+}

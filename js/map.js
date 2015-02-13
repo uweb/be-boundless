@@ -3,19 +3,12 @@
 BOUNDLESS.Map = Backbone.View.extend({
 
   // The element to put the Google Map
-  // el : '#map',
   id : 'map',
   tagName : 'div',
 
-  // HTML for the info window
-  infoWindow : '<div class="overlay"></div>',
-
-  //
-  // googleMapIsLoaded : false,
-
    // Google Map settings for the map and the marker
   settings : {
-    // name : 'campusmap',
+    name : 'campusmap',
     // These bounds are hardcoded to the coordinates that the branded map encompass
     allowedBounds : new google.maps.LatLngBounds(
                     new google.maps.LatLng( 47.647523,-122.325039 ),
@@ -48,31 +41,31 @@ BOUNDLESS.Map = Backbone.View.extend({
   // This is executed by the router and only when the route is in place
   initialize : function( options )
   {
-    _.bindAll( this, 'delegateGoogleMapEvents', 'handleCenterChanged', 'handleZoomChanged', 'getMapType', 'putMarkersOnMap', 'render', 'segueIn', 'hide', 'googleMapLoaded' )
+    _.bindAll( this, 'delegateGoogleMapEvents', 'handleCenterChanged','removeInfoWindows', 'handleZoomChanged', 'getMapType', 'putMarkersOnMap', 'render', 'segueIn', 'hide', 'googleMapLoaded' )
     this.points = new BOUNDLESS.Map.Points()
     this.points.on( 'sync', this.render )
   },
 
   // Render the map
   render : function() {
-    $('#slide').html( this.el )
-    console.log(this.el, 'here')
+    BOUNDLESS.replaceSlide( this.el )
     this.map = new google.maps.Map( $('#slide').find( '#map').get(0), this.settings.map )
+    this.delegateGoogleMapEvents()
     // this.map.mapTypes.set( this.settings.name, BOUNDLESS.uwtiles )
     // this.map.setMapTypeId( this.settings.name )
 
     this.bounds = new google.maps.LatLngBounds()
     this.points.each( this.putMarkersOnMap )
-    this.delegateGoogleMapEvents()
 
   },
 
   // Delegate the Google map events to the Backbone view
   delegateGoogleMapEvents : function()
   {
+    google.maps.event.addListenerOnce( this.map, "tilesloaded", this.googleMapLoaded )
     google.maps.event.addListener( this.map, "center_changed", this.handleCenterChanged )
     google.maps.event.addListener( this.map, "zoom_changed", this.handleZoomChanged )
-    google.maps.event.addListenerOnce( this.map, "tilesloaded", this.googleMapLoaded )
+    google.maps.event.addListener( this.map, "click", this.removeInfoWindows )
   },
 
   // When the center of the map has changed choose to load the UW Tiles or default Google tiles
@@ -118,18 +111,24 @@ BOUNDLESS.Map = Backbone.View.extend({
   {
     this.getMap().panTo( this.getPosition() )
     this.infoWindow.setMap( this.getMap() )
+    this.infoWindow.segueIn()
+    // google.maps.event.addListenerOnce( this.getMap(), 'idle', _.bind( this.infoWindow.segueIn, this.infoWindow ) )
+  },
+
+  removeInfoWindows : function()
+  {
+    // NOTE: easy
+    $('.infowindow').removeClass('open')
   },
 
   segueIn : function()
   {
-    console.log('Map segue in')
     BOUNDLESS.router.trigger('newViewLoaded')
     this.$el.hide().css('z-index', 0).fadeIn( BOUNDLESS.AnimationDuration )
   },
 
   show : function ()
   {
-    console.log('map show')
     if ( this.googleMapIsLoaded ) this.segueIn() },
 
   hide : function() {
@@ -137,13 +136,11 @@ BOUNDLESS.Map = Backbone.View.extend({
     this.$el.fadeOut( 1000, function() {
       $(this).css('z-index', 0).hide() }
      )
-  },
+    },
 
   // Segues the initial load of the map so the Google Map isn't loading tiles while transition from the main page
   googleMapLoaded: function() {
     this.trigger('slideloaded')
-  //   this.googleMapIsLoaded = true
-  //   _.delay( this.segueIn, 300 )
   }
 
 })
