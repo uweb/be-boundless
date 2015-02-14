@@ -297,6 +297,9 @@ body.site-home .uw-search-bar-container #mobile-search-select {
   .uw-homepage-slider-container .uw-homepage-slider.slide-29 p {
     padding-right: 270px;
   }
+  .uw-homepage-slider-container .uw-homepage-slider.slide-21 p {
+    padding-right: 280px;
+  }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .uw-homepage-slider-container .uw-homepage-slider .hero-container {
@@ -307,6 +310,9 @@ body.site-home .uw-search-bar-container #mobile-search-select {
   }
   .uw-homepage-slider-container .uw-homepage-slider.slide-29 p {
     padding-right: 270px;
+  }
+  .uw-homepage-slider-container .uw-homepage-slider.slide-21 p {
+    padding-right: 240px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
