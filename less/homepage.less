@@ -120,9 +120,23 @@ p {
     height: 13px;
     width: 290px;
     background-color: #fff;
-    margin: 0 0 15px -90px;
+    margin-bottom: 15px;
+    margin-left: -300px;
+    -webkit-animation: margie .5s 1s 1 forwards; /* Safari 4+ */
+    -moz-animation:    margie .5s 1s 1 forwards; /* Fx 5+ */
+    -o-animation:      margie .5s 1s 1 forwards; /* Opera 12+ */
+    animation:         margie .5s 1s 1 forwards; /* IE 10+, Fx 29+ */
   }
 }
+
+
+@-webkit-keyframes margie {
+  0%   { margin-left: -300px; }
+  100% { margin-left: -90px; }
+}
+
+
+
 
 // Lower right Boundless message
 
