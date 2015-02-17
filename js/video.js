@@ -67,12 +67,6 @@ BOUNDLESS.Video.View = Backbone.View.extend({
     }
     if (this.model){
       this.render();
-      if (BOUNDLESS.youtube_api_ready){
-        this.youtube_iframe();
-      }
-      else {
-        window.addEventListener('youtube_api_ready', this.youtube_iframe);
-      }
     }
     else {
       console.log('no model with slug ' + this.slug);
@@ -83,8 +77,13 @@ BOUNDLESS.Video.View = Backbone.View.extend({
     var data = this.model.toJSON();
     var template = _.template(this.template, data);
     this.$el.html(template);
-    this.$el = this.$el.find('#' + this.slug);
     this.$button = this.$el.find('button.play');
+    if (BOUNDLESS.youtube_api_ready){
+      this.youtube_iframe();
+    }
+    else {
+      window.addEventListener('youtube_api_ready', this.youtube_iframe);
+    }
   },
 
   youtube_iframe : function () {
@@ -155,7 +154,15 @@ BOUNDLESS.Video.View = Backbone.View.extend({
       this.is_playing = false;
     }
     this.$iframe.addClass('behind');
-    _.delay(function() { this.$button.removeClass('close')}.bind(this), 250);
+    _.delay(function() {
+      this.$button.removeClass('close');
+    }.bind(this), 250);
+  },
+
+  remove: function ()  {
+    this.stopVideo();
+    this.uwplayer.destroy();
+    this.$el.html('');
   }
 
 });

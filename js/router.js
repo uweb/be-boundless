@@ -27,13 +27,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
   },
 
   sequeToVideo : function (video){
-    if (!BOUNDLESS.videoView){
-      BOUNDLESS.videoView = {};
-    }
-    if (!BOUNDLESS.videoView[video]){
-      BOUNDLESS.videoView[video] = new BOUNDLESS.Video.View({slug:video});
-    }
-    this.currentView = BOUNDLESS.videoView[video];
+    this.currentView = new BOUNDLESS.Video.View({slug:video});
     this.currentView.on('slideloaded', this.reveal);
   },
 
