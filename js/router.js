@@ -17,6 +17,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
     _.bindAll( this,
        'segueToMap',
        'segueToVideo',
+       'defaultWorker',
        'reveal',
        'conceal'
     )
@@ -34,14 +35,20 @@ BOUNDLESS.Router = Backbone.Router.extend({
 
   default : function() {
     // Temp transition
-
-    this.mprogress.end()
-
-    if ( this.currentView ) {
-      this.currentView.unbind('slideloaded');
-      BOUNDLESS.navigation.segueIn();
+    if ( this.currentView) {
+      if (this.currentView.preRemove) {
+        this.currentView.preRemove(this.defaultWorker);
+      }
+      else {
+        this.defaultWorker();
+      }
     }
+  },
 
+  defaultWorker : function () {
+    this.currentView.unbind('slideloaded');
+    BOUNDLESS.navigation.segueIn();
+    this.mprogress.end()
   },
 
   // Preforms before each segue
@@ -70,8 +77,10 @@ BOUNDLESS.Router = Backbone.Router.extend({
   conceal : function(event)
   {
     if (event.target == this.$slide){
-      if ( ! Backbone.history.fragment.length )
+      if ( ! Backbone.history.fragment.length ){
         return this.currentView && this.currentView.remove()
+      }
+      this.mprogress.end()
     }
   }
 
