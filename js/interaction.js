@@ -48,7 +48,7 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   // TODO: is there a better implementation?
   resetMargins : function()
   {
-    // this.$el.find('li').css({ marginRight: 350 })
+    this.$el.find('li').css({ marginRight: 90 })
   }
 
 })
