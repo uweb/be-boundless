@@ -37,7 +37,10 @@ BOUNDLESS.Router = Backbone.Router.extend({
 
     this.mprogress.end()
 
-    if ( this.currentView ) this.currentView.unbind('slideloaded')
+    if ( this.currentView ) {
+      this.currentView.unbind('slideloaded');
+      BOUNDLESS.navigation.segueIn();
+    }
 
   },
 
