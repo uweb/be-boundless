@@ -33,9 +33,11 @@ BOUNDLESS.Videos = Backbone.Collection.extend({
 
 BOUNDLESS.Video.View = Backbone.View.extend({
 
-  template : '<div id="<%= slug %>" class="fullscreen behind" style="background-image:url(<%= image %>)"><h2 class="video-title"><%= title %></h2><button class="play" aria-controls="video<%= video %>"><span class="top"></span><span class="left"></span><span class="bottom"></span></button><div class="behind boundless-youtube" id="video<%= video %>" aria-label="Video: <%= title %>"></div><div class="blurb"><%= text %></div></div>',
+  template : '<h2 class="video-title"><%= title %></h2><button class="play" aria-controls="video<%= video %>"><span class="top"></span><span class="left"></span><span class="bottom"></span></button><div class="behind boundless-youtube" id="video<%= video %>" aria-label="Video: <%= title %>"></div><div class="blurb"><%= text %></div>',
 
-  el : '#slide',
+  tagname: 'div',
+  className: 'fullscreen',
+
   is_playing: false,
   
   events : {
@@ -74,6 +76,8 @@ BOUNDLESS.Video.View = Backbone.View.extend({
   },
 
   render : function () {
+    this.$el.css({'background-image': 'url("' + this.model.get('image') + '")' });
+    BOUNDLESS.replaceSlide(this.el);
     var data = this.model.toJSON();
     var template = _.template(this.template, data);
     this.$el.html(template);
@@ -120,7 +124,8 @@ BOUNDLESS.Video.View = Backbone.View.extend({
     }
   },
 
-  buttonClick: function() {
+  buttonClick: function(event) {
+    event.stopPropagation();
     if (this.is_playing){
       this.stopVideo();
     }
@@ -157,7 +162,10 @@ BOUNDLESS.Video.View = Backbone.View.extend({
     _.delay(function() {
       this.$button.removeClass('close');
       if (callback && typeof(callback) == 'function'){
-        _.delay(callback, 250);
+        _.delay(function(callback) {
+          callback();
+          this.uwplayer.destroy();
+        }.bind(this), 250);
       }
     }.bind(this), 250);
   },
@@ -171,14 +179,10 @@ BOUNDLESS.Video.View = Backbone.View.extend({
         callback();
       }
     }
-    else {
-      console.log(callback);
-    }
   },
 
-  remove: function ()  {
-    this.uwplayer.destroy();
-    this.$el.html('');
-  }
+  //remove: function ()  {
+  //  this.$el.html('');
+  //}
 
 });

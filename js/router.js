@@ -76,7 +76,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
 
   conceal : function(event)
   {
-    if (event.target == this.$slide){
+    if (event.target == this.$slide[0]){
       if ( ! Backbone.history.fragment.length ){
         return this.currentView && this.currentView.remove()
       }
