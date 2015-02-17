@@ -17,38 +17,31 @@ BOUNDLESS.Router = Backbone.Router.extend({
     _.bindAll( this,
        'segueToMap',
        'segueToVideo',
-       'defaultWorker',
        'reveal',
        'conceal'
     )
 
     this.mprogress = new Mprogress( this.settings.mprogress )
     this.$slide = $('#slide')
-    this.$slide.bind( BOUNDLESS.TransitionEvents, this.conceal )
+    this.$homepage = $('#boundless-slide')
+    this.$slide.on( BOUNDLESS.TransitionEvents, this.conceal )
   },
 
-  segueToVideo : function (video){
+ segueToVideo : function (video){
     this.currentView = new BOUNDLESS.Video.View({slug:video});
     this.currentView.on('slideloaded', this.reveal);
   },
 
-
   default : function() {
     // Temp transition
-    if ( this.currentView) {
-      if (this.currentView.preRemove) {
-        this.currentView.preRemove(this.defaultWorker);
-      }
-      else {
-        this.defaultWorker();
-      }
-    }
-  },
 
-  defaultWorker : function () {
-    this.currentView.unbind('slideloaded');
-    BOUNDLESS.navigation.segueIn();
+    this.$slide.removeClass('open')
+    this.$homepage.removeClass('blur')
+
     this.mprogress.end()
+
+    if ( this.currentView ) this.currentView.unbind('slideloaded')
+
   },
 
   // Preforms before each segue
@@ -56,6 +49,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
    execute: function(callback, args) {
 
       this.mprogress.start()
+      this.$homepage.addClass('blur')
       BOUNDLESS.navigation.segue()
 
       if (callback) callback.apply(this, args);
@@ -74,14 +68,11 @@ BOUNDLESS.Router = Backbone.Router.extend({
     this.$slide.addClass('open')
   },
 
-  conceal : function(event)
+  conceal : function( e )
   {
-    if (event.target == this.$slide[0]){
-      if ( ! Backbone.history.fragment.length ){
-        return this.currentView && this.currentView.remove()
-      }
-      this.mprogress.end()
-    }
+    // TODO: is there better exit event to bind to?
+    if ( ! Backbone.history.fragment.length && e.originalEvent.propertyName.indexOf( 'clip-path' )  > -1 )
+      return this.currentView && this.currentView.remove()
   }
 
 })

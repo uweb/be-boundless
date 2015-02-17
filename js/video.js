@@ -19,12 +19,14 @@ BOUNDLESS.Videos = Backbone.Collection.extend({
   initialize: function () {
     _.bindAll(this, 'fetch_success');
     this.url = '?json=boundless_video.get_videos';
+    // TODO: 'this can be done with Backbone (view) events instead of setting booleans
     this.fetch({success: this.fetch_success});
   },
 
   fetch_success: function () {
     this.is_ready = true;
     if(this.view_to_render !== undefined){
+      console.log('never called?')
       this.view_to_render.data_prep();
     }
   }
@@ -33,16 +35,17 @@ BOUNDLESS.Videos = Backbone.Collection.extend({
 
 BOUNDLESS.Video.View = Backbone.View.extend({
 
+<<<<<<< HEAD
   template : '<h2 class="video-title"><%= title %></h2><button class="play" aria-controls="video<%= video %>"><span class="top"></span><span class="left"></span><span class="bottom"></span></button><div class="behind boundless-youtube" id="video<%= video %>" aria-label="Video: <%= title %>"></div><div class="blurb"><%= text %></div>',
 
   tagname: 'div',
   className: 'fullscreen',
 
   is_playing: false,
-  
+
   events : {
     'click button.play': 'buttonClick',
-    'keyup': 'checkEscape'  
+    'keyup': 'checkEscape'
   },
 
   initialize : function (options) {
@@ -51,17 +54,21 @@ BOUNDLESS.Video.View = Backbone.View.extend({
     this.collection = BOUNDLESS.videos;
     //this.videoNum = parseInt(options.videoNum);
     this.slug = options.slug;
+    console.log('here')
     if (this.collection.is_ready) {
       this.data_prep(options);
-    } 
+    }
     else {
+      console.log('never called?')
       this.collection.view_to_render = this;
     }
     this.player_ready = false;
   },
 
   data_prep: function () {
+
     //this.model = this.collection.models[this.videoNum];
+      // TODO: _.pluck should work
     for (var i = 0; i < this.collection.models.length; i++){
       if (this.collection.models[i].get('slug') == this.slug){
         this.model = this.collection.models[i];
@@ -80,12 +87,15 @@ BOUNDLESS.Video.View = Backbone.View.extend({
     BOUNDLESS.replaceSlide(this.el);
     var data = this.model.toJSON();
     var template = _.template(this.template, data);
-    this.$el.html(template);
+
+    BOUNDLESS.replaceSlide( this.$el.html(template) )
+
     this.$button = this.$el.find('button.play');
     if (BOUNDLESS.youtube_api_ready){
       this.youtube_iframe();
     }
     else {
+      console.log('never called?')
       window.addEventListener('youtube_api_ready', this.youtube_iframe);
     }
   },
@@ -117,6 +127,7 @@ BOUNDLESS.Video.View = Backbone.View.extend({
   },
 
   onStateChange: function (a) {
+    console.log('what is ' + a )
     if (a.data === 0){
       if (this.is_playing){
         this.buttonClick();
@@ -146,19 +157,19 @@ BOUNDLESS.Video.View = Backbone.View.extend({
   playVideo: function () {
     this.$button.addClass('close');
     _.delay(function() {
-      this.$iframe.removeClass('behind');
+      // this.$iframe.removeClass('behind');
       this.uwplayer.loadVideoById(this.model.get('video'));
       this.is_playing = true;
       this.$button.focus();
     }.bind(this), 250);
-  }, 
+  },
 
   stopVideo: function (callback) {
     if (this.is_playing) {
       this.uwplayer.stopVideo();
       this.is_playing = false;
     }
-    this.$iframe.addClass('behind');
+    // this.$iframe.addClass('behind');
     _.delay(function() {
       this.$button.removeClass('close');
       if (callback && typeof(callback) == 'function'){
@@ -169,8 +180,9 @@ BOUNDLESS.Video.View = Backbone.View.extend({
       }
     }.bind(this), 250);
   },
- 
+
   preRemove: function (callback) {
+    console.log('never called')
     if (typeof(callback) == 'function'){
       if (this.is_playing){
         this.stopVideo(callback);
@@ -179,10 +191,15 @@ BOUNDLESS.Video.View = Backbone.View.extend({
         callback();
       }
     }
-  },
+    else {
+      console.log(callback);
+    }
+  }
 
-  //remove: function ()  {
-  //  this.$el.html('');
-  //}
+  // TODO: don't override unless you reimplement the default as well
+  // remove: function ()  {
+  //   this.uwplayer.destroy();
+  //   this.$el.html('');
+  // }
 
 });
