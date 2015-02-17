@@ -8,7 +8,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
 
   routes : {
     "!/map" : "segueToMap",
-    "!/video/:video" : "sequeToVideo",
+    "!/video/:video" : "segueToVideo",
     "" : "default"
   },
 
@@ -16,7 +16,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
 
     _.bindAll( this,
        'segueToMap',
-       'sequeToVideo',
+       'segueToVideo',
        'reveal',
        'conceal'
     )
@@ -26,7 +26,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
     this.$slide.bind( BOUNDLESS.TransitionEvents, this.conceal )
   },
 
-  sequeToVideo : function (video){
+  segueToVideo : function (video){
     this.currentView = new BOUNDLESS.Video.View({slug:video});
     this.currentView.on('slideloaded', this.reveal);
   },
@@ -34,8 +34,6 @@ BOUNDLESS.Router = Backbone.Router.extend({
 
   default : function() {
     // Temp transition
-
-    this.$slide.removeClass('open')
 
     this.mprogress.end()
 
@@ -66,10 +64,12 @@ BOUNDLESS.Router = Backbone.Router.extend({
     this.$slide.addClass('open')
   },
 
-  conceal : function()
+  conceal : function(event)
   {
-    if ( ! Backbone.history.fragment.length )
-      return this.currentView && this.currentView.remove()
+    if (event.target == this.$slide){
+      if ( ! Backbone.history.fragment.length )
+        return this.currentView && this.currentView.remove()
+    }
   }
 
 })
