@@ -1,81 +1,86 @@
-div.fullscreen {
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 10;
-  h2 {
-    position: absolute;
-    top: 160px;
-    left: 40px;
-    font-family: "Encode Sans Compressed",sans-serif;
-    font-weight: 900;
-    line-height: 1;
-    font-size: 85px;
-    text-transform: uppercase;
-    color: #4b2e83;
-    color: white;
-  }
-  button.play {
-    display: block;
-    height: 175px;
-    width: 180px;
-    position: absolute;
-    top: calc(~"50% - 175px");
-    right: calc(~"50% - 90px");
-    z-index: 20;
-    border: none;
-    padding: 0;
-    background-color: transparent;
-    transition: all .25s;
-    overflow: hidden;
-    span {
-      display: block;
-      margin:0;
-      width: 120px;
-      height: 4px;
-      background-color: white;
-      transition: all .25s;
-      &.top {
-        transform: rotate(30deg) translate(14px,-37px);
-      }
-      &.left {
-        transform: rotate(90deg) translate(0px,20px);
-      }
-      &.bottom {
-        transform: rotate(150deg) translate(-14px,-37px);
-      }
+div#video {
+  width:100%;
+  height:100%;
+
+    div.fullscreen {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    h2 {
+      position: absolute;
+      top: 160px;
+      left: 40px;
+      font-family: "Encode Sans Compressed",sans-serif;
+      font-weight: 900;
+      line-height: 1;
+      font-size: 85px;
+      text-transform: uppercase;
+      color: #4b2e83;
+      color: white;
     }
-    &.close {
-      height: 44px;
-      width: 45px;
-      top: 85px;
-      right: 5px;
+    button.play {
+      display: block;
+      height: 175px;
+      width: 180px;
+      position: absolute;
+      top: calc(~"50% - 175px");
+      right: calc(~"50% - 90px");
+      z-index: 20;
+      border: none;
+      padding: 0;
+      background-color: transparent;
+      transition: all .25s;
+      overflow: hidden;
       span {
-        width: 45px;
+        display: block;
+        margin:0;
+        width: 120px;
+        height: 4px;
+        background-color: white;
+        transition: all .25s;
         &.top {
-          transform: rotate(45deg) translate(2px,3px);
+          transform: rotate(30deg) translate(14px,-37px);
         }
         &.left {
-          opacity: 0;
-          transform: rotate(90deg) translate(0px,14px);
+          transform: rotate(90deg) translate(0px,20px);
         }
         &.bottom {
-          transform: rotate(135deg) translate(-2px,3px);
+          transform: rotate(150deg) translate(-14px,-37px);
+        }
+      }
+      &.close {
+        height: 44px;
+        width: 45px;
+        top: 85px;
+        right: 5px;
+        span {
+          width: 45px;
+          &.top {
+            transform: rotate(45deg) translate(2px,3px);
+          }
+          &.left {
+            opacity: 0;
+            transform: rotate(90deg) translate(0px,14px);
+          }
+          &.bottom {
+            transform: rotate(135deg) translate(-2px,3px);
+          }
         }
       }
     }
-  }
-  .boundless-youtube {
-    position: absolute;
-    top: 60px;
-    bottom: 0px;
-    left: 0;
-    z-index: 1;
-    transition: opacity .5s;
-    &.behind {
-      opacity: 0;
-      z-index: -10;
+    .boundless-youtube {
+      position: absolute;
+      top: 60px;
+      bottom: 0px;
+      left: 0;
+      z-index: 1;
+      transition: opacity .5s;
+      // &.behind {
+      //   opacity: 0;
+      //   z-index: -10;
+      // }
     }
   }
 }

@@ -1,11 +1,92 @@
-// div#boundless-slide {
-//   background-color: #fff;
+  #message {
 
-//   div#message {
+    h1 {
+      font-family: "Encode Sans Compressed",sans-serif;
+      font-weight: 900;
+      line-height: 1;
+      font-size: 95px;
+      text-transform: uppercase;
+      color: #4b2e83;
+    }
 
 
-
-
-// }
-
-// }
+    margin: 0;
+    padding: 60px 0 0;
+    // display: inline-block;
+    .text {
+      position: relative;
+      z-index: 1;
+      padding: 130px 0 0 80px;
+      p {
+        width: 475px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.45;
+        color: #fff;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+        position: relative;
+        a {
+          position: absolute;
+          right: -180px;
+          bottom: 20px;
+          background: url(less/svg/boundless.svg) no-repeat -165px -140px;
+          width: 90px;
+          height: 90px;
+        }
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          background: url(less/svg/boundless.svg) no-repeat -88px -121px;
+          right: -70px;
+          bottom: -22px;
+          width: 65px;
+          height: 195px;
+        }
+      }
+    }
+    &:after {
+      content: "";
+      background: url(img/overlay-checker.png);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .stripes {
+      position: absolute;
+      z-index: 0;
+      left: -140px;
+      bottom: 0;
+      top: 0;
+      right: 0;
+      overflow: hidden;
+      .skew(-15deg,0);
+      opacity: .3;
+      span {
+        display: block;
+        float: left;
+        height: 3000px;
+        width: 13px;
+        margin-left: 10px;
+        border-right: 1px solid #fff;
+        border-left: 1px solid #fff;
+      }
+    }
+}
+.udub-slant {
+  overflow: hidden;
+  display: block;
+  margin: 30px 0 20px;
+  span {
+    -webkit-transform: skew(-25deg,0);
+    -ms-transform: skewX(-25deg) skewY(0);
+    transform: skew(-25deg,0);
+    display: block;
+    height: 13px;
+    width: 290px;
+    background-color: #fff;
+    margin: 0 0 15px -90px;
+  }
+}

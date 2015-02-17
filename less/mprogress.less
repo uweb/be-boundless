@@ -1,0 +1,36 @@
+// Override for loading bar
+
+body {
+
+  &.logged-in {
+    .ui-mprogress .deter-bar,
+    .ui-mprogress .indeter-bar,
+    .ui-mprogress .query-bar,
+    .ui-mprogress .bar-bg,
+    .ui-mprogress .buffer-bg,
+    .ui-mprogress .mp-ui-dashed {
+      top: 90px;
+    }
+  }
+
+  .ui-mprogress .deter-bar,
+  .ui-mprogress .indeter-bar,
+  .ui-mprogress .query-bar,
+  .ui-mprogress .bar-bg,
+  .ui-mprogress .buffer-bg,
+  .ui-mprogress .mp-ui-dashed {
+    top: 58px;
+    overflow: hidden;
+    background: @purple;
+  }
+
+  .ui-mprogress .bar-bg,
+  .ui-mprogress .buffer-bg {
+    z-index: 1031;
+    background: #D8D8D8;
+  }
+  .ui-mprogress .peg {
+    box-shadow: 0 0 10px #000, 0 0 5px #00A2FF;
+  }
+
+}
