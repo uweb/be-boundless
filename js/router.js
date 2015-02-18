@@ -8,6 +8,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
 
   routes : {
     "!/map" : "segueToMap",
+    "!/gallery" : "segueToGallery",
     "!/video/:video" : "segueToVideo",
     "" : "default"
   },
@@ -55,11 +56,19 @@ BOUNDLESS.Router = Backbone.Router.extend({
       if (callback) callback.apply(this, args);
   },
 
-// If the router is map create a new map
+  // If the router is map create a new map
   segueToMap : function ()
   {
     // Set the current view reference
     this.currentView = new BOUNDLESS.Map()
+    this.currentView.on( 'slideloaded' , this.reveal )
+  },
+
+  // If the router is a gallery create a new gallery
+  segueToGallery : function ()
+  {
+    // Set the current view reference
+    this.currentView = new BOUNDLESS.Gallery()
     this.currentView.on( 'slideloaded' , this.reveal )
   },
 
