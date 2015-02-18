@@ -51,7 +51,6 @@ BOUNDLESS.Video.View = Backbone.View.extend({
     _.bindAll(this, 'render', 'data_prep', 'buttonClick', 'checkEscape', 'onStateChange', 'youtube_iframe', 'remove', 'preRemove');
     //this is the instantiated collection
     this.collection = BOUNDLESS.videos;
-    //this.videoNum = parseInt(options.videoNum);
     this.slug = options.slug;
     console.log('here')
     if (this.collection.is_ready) {
@@ -61,7 +60,6 @@ BOUNDLESS.Video.View = Backbone.View.extend({
       console.log('never called?')
       this.collection.view_to_render = this;
     }
-    this.player_ready = false;
   },
 
   data_prep: function () {
