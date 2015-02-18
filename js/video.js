@@ -65,14 +65,7 @@ BOUNDLESS.Video.View = Backbone.View.extend({
   },
 
   data_prep: function () {
-
-    //this.model = this.collection.models[this.videoNum];
-      // TODO: _.pluck should work
-    for (var i = 0; i < this.collection.models.length; i++){
-      if (this.collection.models[i].get('slug') == this.slug){
-        this.model = this.collection.models[i];
-      }
-    }
+    this.model = this.collection.findWhere({'slug': this.slug});
     if (this.model){
       this.render();
     }
@@ -83,7 +76,6 @@ BOUNDLESS.Video.View = Backbone.View.extend({
 
   render : function () {
     this.$el.css({'background-image': 'url("' + this.model.get('image') + '")' });
-    BOUNDLESS.replaceSlide(this.el);
     var data = this.model.toJSON();
     var template = _.template(this.template, data);
 
