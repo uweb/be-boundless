@@ -1,5 +1,4 @@
 // Map Point View
-// Mostly temporary rendering until segues are established
 BOUNDLESS.Map = Backbone.View.extend({
 
   // The element to put the Google Map
