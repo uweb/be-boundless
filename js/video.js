@@ -199,11 +199,4 @@ BOUNDLESS.Video.View = Backbone.View.extend({
       console.log(callback);
     }
   }
-
-  // TODO: don't override unless you reimplement the default as well
-  // remove: function ()  {
-  //   this.uwplayer.destroy();
-  //   this.$el.html('');
-  // }
-
 });
