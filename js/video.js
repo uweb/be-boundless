@@ -37,8 +37,9 @@ BOUNDLESS.Video.View = Backbone.View.extend({
 
   template : '<h2 class="video-title"><%= title %></h2><button class="play" aria-controls="video<%= video %>"><span class="top"></span><span class="left"></span><span class="bottom"></span></button><div class="behind boundless-youtube" id="video<%= video %>" aria-label="Video: <%= title %>"></div><div class="blurb"><%= text %></div>',
 
-  tagname: 'div',
-  className: 'fullscreen',
+  tagname   : 'div',
+  id        : 'video',
+  className : 'fullscreen',
 
   is_playing: false,
 
@@ -48,7 +49,7 @@ BOUNDLESS.Video.View = Backbone.View.extend({
   },
 
   initialize : function (options) {
-    _.bindAll(this, 'render', 'data_prep', 'buttonClick', 'checkEscape', 'onStateChange', 'youtube_iframe', 'remove', 'preRemove');
+    _.bindAll(this, 'render', 'data_prep', 'buttonClick', 'checkEscape', 'onReady', 'onStateChange', 'youtube_iframe', 'preRemove', 'buttonTransitionDone', 'iframeTransitionDone');
     //this is the instantiated collection
     this.collection = BOUNDLESS.videos;
     this.slug = options.slug;
@@ -72,6 +73,10 @@ BOUNDLESS.Video.View = Backbone.View.extend({
     }
   },
 
+  testBork: function () {
+    console.log('bork?');
+  },
+
   render : function () {
     this.$el.css({'background-image': 'url("' + this.model.get('image') + '")' });
     var data = this.model.toJSON();
@@ -84,7 +89,6 @@ BOUNDLESS.Video.View = Backbone.View.extend({
       this.youtube_iframe();
     }
     else {
-      console.log('never called?')
       //called on slower connections all the time
       window.addEventListener('youtube_api_ready', this.youtube_iframe);
     }
@@ -106,11 +110,17 @@ BOUNDLESS.Video.View = Backbone.View.extend({
       height: '100%',
       events: {
         //these events will call functions in the view
-       'onReady': function() { this.trigger('slideloaded'); }.bind(this),
+       'onReady': this.onReady,
        'onStateChange': this.onStateChange
       }
     });
     this.$iframe = this.$el.find('#video' + this.model.get('video'));
+  },
+  
+  onReady: function () {
+    this.$button.on(BOUNDLESS.TransitionEvents, this.buttonTransitionDone);
+    this.$iframe.on(BOUNDLESS.TransitionEvents, this.iframeTransitionDone);
+    this.trigger('slideloaded');
   },
 
   onStateChange: function (player_state) {
@@ -142,12 +152,15 @@ BOUNDLESS.Video.View = Backbone.View.extend({
 
   playVideo: function () {
     this.$button.addClass('close');
-    _.delay(function() {
+  },
+
+  buttonTransitionDone: function () {
+    if (this.$button.hasClass('close')){
       this.$iframe.removeClass('behind');
       this.uwplayer.loadVideoById(this.model.get('video'));
       this.is_playing = true;
       this.$button.focus();
-    }.bind(this), 250);
+    }
   },
 
   stopVideo: function (callback) {
@@ -156,15 +169,20 @@ BOUNDLESS.Video.View = Backbone.View.extend({
       this.is_playing = false;
     }
     this.$iframe.addClass('behind');
-    _.delay(function() {
+    //_.delay(function() {
+    //  if (callback && typeof(callback) == 'function'){
+    //    _.delay(function(callback) {
+    //      callback();
+    //      this.uwplayer.destroy();
+    //    }.bind(this), 250);
+    //  }
+    //}.bind(this), 250);
+  },
+
+  iframeTransitionDone: function () {
+    if (this.$iframe.hasClass('behind')){
       this.$button.removeClass('close');
-      if (callback && typeof(callback) == 'function'){
-        _.delay(function(callback) {
-          callback();
-          this.uwplayer.destroy();
-        }.bind(this), 250);
-      }
-    }.bind(this), 250);
+    }
   },
 
   preRemove: function (callback) {
