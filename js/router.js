@@ -28,21 +28,30 @@ BOUNDLESS.Router = Backbone.Router.extend({
     this.$slide.on( BOUNDLESS.TransitionEvents, this.conceal )
   },
 
- segueToVideo : function (video){
+  segueToVideo : function (video){
     this.currentView = new BOUNDLESS.Video.View({slug:video});
     this.currentView.on('slideloaded', this.reveal);
   },
 
   default : function() {
-    // Temp transition
+    if (this.currentView && this.currentView.preRemove) {
+      this.currentView.trigger('preRemove').on('removeReady', function() {
+        this.segueToDefault();
+        this.currentView.off('removeReady');
+      }.bind(this));
+    }
+    else {
+      this.segueToDefault();
+    }
+  },
 
+  segueToDefault: function () {
     this.$slide.removeClass('open')
     this.$homepage.removeClass('blur')
 
     this.mprogress.end()
 
     if ( this.currentView ) this.currentView.unbind('slideloaded')
-
   },
 
   // Preforms before each segue
