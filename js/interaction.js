@@ -29,6 +29,18 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   },
 
   segueIn: function( e ) {
+    if (BOUNDLESS.router.currentView && BOUNDLESS.router.currentView.preRemove) {
+      BOUNDLESS.router.currentView.trigger('preRemove').on('removeReady', function() {
+        this.segueInHelper();
+        BOUNDLESS.router.currentView.off('removeReady');
+      }.bind(this));
+    }
+    else {
+      this.segueInHelper();
+    }
+  },
+
+  segueInHelper : function () {
      this.$toggle.removeClass( 'close' )
      this.$el.transition({ left : -230 }, BOUNDLESS.AnimationDuration, 'easeInOutQuad' )
      // TODO: Animate to for the easeOutElastic easing
