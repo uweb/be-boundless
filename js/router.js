@@ -7,19 +7,23 @@ BOUNDLESS.Router = Backbone.Router.extend({
   },
 
   routes : {
-    "!/map"         : "segueToMap",
-    "!/video/:video" : "initializeVideo",
+    "!/map" : "segueToMap",
+    // "!/video/:video" : "initializeVideo",
     "" : "default"
   },
 
   initialize : function(options) {
 
-    _.bindAll( this, 'routeCompleted', 'segueToMap', 'initializeVideo' )
+    _.bindAll( this,
+       'segueToMap',
+       'initializeVideo',
+       'reveal',
+       'conceal'
+    )
 
     this.mprogress = new Mprogress( this.settings.mprogress )
-
-    this.on("route", this.routeCompleted)
-    this.on("newViewLoaded", this.newViewLoaded )
+    this.$slide = $('#slide')
+    this.$slide.bind( BOUNDLESS.TransitionEvents, this.conceal )
   },
 
   initializeVideo : function (video){
@@ -36,59 +40,44 @@ BOUNDLESS.Router = Backbone.Router.extend({
   },
 
 
-  default : function() {},
+  default : function() {
+    // Temp transition
 
-  routeCompleted: function() {
+    this.$slide.removeClass('open')
 
-    console.log("Route is complete")
-
-    if ( this.ready && this.currentView ) this.currentView.segueIn()
-    if ( ! this.ready ) this.ready = true
-  },
-
-  // Animates the initial interaction when the homepage is loaded
-  animateInInteraction : function()
-  {
-    BOUNDLESS.interaction = new BOUNDLESS.Interactions()
-  },
-
-  newViewLoaded : function()
-  {
     this.mprogress.end()
-    BOUNDLESS.navigation.hide()
+
+    if ( this.currentView ) this.currentView.unbind('slideloaded')
+
   },
 
   // Preforms before each segue
   // Should hide or show the navigation
    execute: function(callback, args) {
-    console.log("Route is starting")
 
-    if ( this.ready )
-    {
+      this.mprogress.start()
+      BOUNDLESS.navigation.segue()
 
-        if ( this.currentView )
-        {
-          BOUNDLESS.navigation.segueIn()
-          this.currentView.hide()
-          this.currentView = false
-        }
-        else {
-          this.mprogress.start()
-          BOUNDLESS.navigation.segueOut()
-        }
-
-    }
-
-    if (callback) callback.apply(this, args);
+      if (callback) callback.apply(this, args);
   },
 
 // If the router is map create a new map
   segueToMap : function ()
   {
-    console.log('Segue to map')
     // Set the current view reference
-    this.currentView = BOUNDLESS.map
+    this.currentView = new BOUNDLESS.Map()
+    this.currentView.on( 'slideloaded' , this.reveal )
+  },
 
+  reveal : function () {
+    this.mprogress.end()
+    this.$slide.addClass('open')
+  },
+
+  conceal : function()
+  {
+    if ( ! Backbone.history.fragment.length )
+      return this.currentView && this.currentView.remove()
   }
 
 })
