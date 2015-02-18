@@ -95,6 +95,7 @@ BOUNDLESS.Video.View = Backbone.View.extend({
     }
     else {
       console.log('never called?')
+      //called on slower connections all the time
       window.addEventListener('youtube_api_ready', this.youtube_iframe);
     }
   },
@@ -108,9 +109,6 @@ BOUNDLESS.Video.View = Backbone.View.extend({
         'modestbranding': 1,
       }
     }
-    // if (collection.resolution !== 'undefined'){
-    //     player_vars.VQ = collection.resolution;
-    // }
     this.uwplayer = new YT.Player('video' + this.model.get('video'), {
       videoId: this.model.get('video'),
       playerVars: player_vars,
@@ -125,11 +123,10 @@ BOUNDLESS.Video.View = Backbone.View.extend({
     this.$iframe = this.$el.find('#video' + this.model.get('video'));
   },
 
-  onStateChange: function (a) {
-    console.log('what is ' + a )
-    if (a.data === 0){
+  onStateChange: function (player_state) {
+    if (player_state.data === 0){
       if (this.is_playing){
-        this.buttonClick();
+        this.stopVideo();
       }
     }
   },
@@ -156,7 +153,7 @@ BOUNDLESS.Video.View = Backbone.View.extend({
   playVideo: function () {
     this.$button.addClass('close');
     _.delay(function() {
-      // this.$iframe.removeClass('behind');
+      this.$iframe.removeClass('behind');
       this.uwplayer.loadVideoById(this.model.get('video'));
       this.is_playing = true;
       this.$button.focus();
@@ -168,7 +165,7 @@ BOUNDLESS.Video.View = Backbone.View.extend({
       this.uwplayer.stopVideo();
       this.is_playing = false;
     }
-    // this.$iframe.addClass('behind');
+    this.$iframe.addClass('behind');
     _.delay(function() {
       this.$button.removeClass('close');
       if (callback && typeof(callback) == 'function'){
