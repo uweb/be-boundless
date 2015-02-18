@@ -1,5 +1,4 @@
 // Map Point View
-// Mostly temporary rendering until segues are established
 BOUNDLESS.Map = Backbone.View.extend({
 
   // The element to put the Google Map
@@ -47,7 +46,18 @@ BOUNDLESS.Map = Backbone.View.extend({
   // This is executed by the router and only when the route is in place
   initialize : function( options )
   {
-    _.bindAll( this, 'delegateGoogleMapEvents', 'handleCenterChanged','removeInfoWindows', 'handleZoomChanged', 'getMapType', 'putMarkersOnMap', 'render', 'segueIn', 'hide', 'googleMapLoaded' )
+    _.bindAll( this,
+      'delegateGoogleMapEvents',
+      'handleCenterChanged',
+      'handleZoomChanged',
+      'hide',
+      'getMapType',
+      'googleMapLoaded',
+      'putMarkersOnMap',
+      'removeInfoWindows',
+      'render',
+      'segueIn'
+    )
     this.points = new BOUNDLESS.Map.Points()
     this.points.on( 'sync', this.render )
   },

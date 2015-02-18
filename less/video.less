@@ -1,12 +1,15 @@
 div.fullscreen {
+  width:100%;
+  height:100%;
   background-size: cover;
-  position:absolute;
-  top: 60px;
-  bottom: 0px;
-  display: none;
   width: 100%;
+  height: 100%;
+  position: relative;
   z-index: 10;
   h2 {
+    position: absolute;
+    top: 160px;
+    left: 40px;
     font-family: "Encode Sans Compressed",sans-serif;
     font-weight: 900;
     line-height: 1;
@@ -48,7 +51,7 @@ div.fullscreen {
     &.close {
       height: 44px;
       width: 45px;
-      top: 25px;
+      top: 85px;
       right: 5px;
       span {
         width: 45px;
@@ -67,7 +70,8 @@ div.fullscreen {
   }
   .boundless-youtube {
     position: absolute;
-    top: 0;
+    top: 60px;
+    bottom: 0px;
     left: 0;
     z-index: 1;
     transition: opacity .5s;
