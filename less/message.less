@@ -13,6 +13,8 @@
        color: #fff;
        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
        position: relative;
+       opacity: 0;
+       .animation(margieOpacity .5s 1s 1 forwards);
        a {
          position: absolute;
          right: -180px;
@@ -32,7 +34,7 @@
          height: 195px;
        }
      }
-   
+
     h1 {
       font-family: "Encode Sans Compressed",sans-serif;
       font-weight: 900;
@@ -40,13 +42,24 @@
       font-size: 95px;
       text-transform: uppercase;
       color: #4b2e83;
+      opacity: 0;
+      .animation(margieOpacity .5s 1s 1 forwards);
     }
-
+  
 
     margin: 0;
     padding: 60px 0 0;
     // display: inline-block;
 }
+
+.segue {
+  .homepage-text {
+    h1 {
+      margin-left: 100px;
+    }
+  }
+}
+
 .udub-slant {
   overflow: hidden;
   display: block;
@@ -60,11 +73,21 @@
     width: 290px;
     background-color: #fff;
     margin-bottom: 15px;
-    margin-left: -300px;
-    -webkit-animation: margie .5s 1s 1 forwards; /* Safari 4+ */
-    -moz-animation:    margie .5s 1s 1 forwards; /* Fx 5+ */
-    -o-animation:      margie .5s 1s 1 forwards; /* Opera 12+ */
-    animation:         margie .5s 1s 1 forwards; /* IE 10+, Fx 29+ */
+    margin-left:-390px;
+  }
+
+}
+
+&.segue {
+
+  .udub-slant {
+
+    span {
+      -webkit-animation: margie .5s 1s 1 forwards; /* Safari 4+ */
+      -moz-animation:    margie .5s 1s 1 forwards; /* Fx 5+ */
+      -o-animation:      margie .5s 1s 1 forwards; /* Opera 12+ */
+      animation:         margie .5s 1s 1 forwards; /* IE 10+, Fx 29+ */
+    }
   }
 }
 
@@ -73,3 +96,7 @@
   100% { margin-left: -90px; }
 }
 
+@-webkit-keyframes margieOpacity {
+  0%   { margin-left: 100px; opacity: 0}
+  100% { margin-left: 0; opacity: 1}
+}

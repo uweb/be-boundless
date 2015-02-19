@@ -58,10 +58,10 @@ class Navigation
 
     wp_nonce_field( self::POST_TYPE . '_meta_box', self::POST_TYPE . '_meta_box_nonce' );
     ?>
-    <div id="map-editor-view">
+    <div id="navigation-editor-view">
     <p>
       <label  for="type">This navigation will display as a </label>
-      <select name="type" >
+      <select name="type">
         <option value="gallery" <?php selected( $type, 'gallery' ) ?> >Gallery</option>
         <option value="map"  <?php selected( $type, 'map' ) ?>>Map</option>
         <option value="video"  <?php selected( $type, 'video' ) ?>>Video</option>
@@ -71,9 +71,50 @@ class Navigation
       <p>
         <label  for="route">When clicked this navigation goes to </label>
         <input type="text" id="route" name="route" value="<?php echo $route ?>"></input>
+
+        <span class="selection-options" <?php if ( $type != 'video' ) : ?> style="display:none" <?php endif; ?>>
+          <?php  foreach( get_posts('post_type=boundless_video') as $post ) : ?>
+          <a href="#"><?php echo $post->post_name; ?></a>
+          <?php endforeach; ?>
+          </span>
       </p>
 
     </div>
+
+    <script>
+    (function($) {
+
+        var prefix = '#!/'
+      $('#navigation-editor-view').on('change', 'select', function(e ) {
+
+       switch(this.value)
+       {
+
+        case 'map' :
+        case 'gallery' :
+          $('.selection-options').hide()
+          $('#route').val( prefix + this.value )
+          return
+
+        case 'video' :
+          $('.selection-options').show()
+          $('#route').val('')
+          return
+
+       }
+      })
+
+      $('.selection-options').on('click', 'a', function() {
+
+          $('#route').val( prefix + 'video/' + $(this).html() ).show()
+
+
+      })
+
+
+    })(jQuery)
+
+    </script>
     <?php
   }
 

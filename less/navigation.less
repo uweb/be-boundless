@@ -122,13 +122,18 @@ div.navigation {
     position: absolute;
     right: -55px;
     top: 50%;
-    transform: rotate( 45deg );
-    opacity: 0;
+    opacity: 1;
     transition: all .5s ease-in-out;
     &.close {
       transform: rotate( 0 );
       opacity: 1;
     }
   }
+    &.segue {
+      .show-nav {
+        opacity: 0;
+     }
+   }
 
 }
+

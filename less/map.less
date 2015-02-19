@@ -1,3 +1,6 @@
+#map {
+ margin-top: 92px;
+}
 
 #map-overlay, #map {
   width: 100%;
@@ -16,10 +19,25 @@
     padding:0;
 
     position: absolute;
-    top: 30%;
-    width: 300px;
-    right: 0;
-
+    top: 50%;
+    margin-top: -380px;
+    width: 250px;
+    right: 60px;
+    font-family: @font-family-headline;
+    font-weight: 500;
+    &:after {
+      content: "Explore campus";
+      display: block;
+      position: absolute;
+      top: -58px;
+      width: 100%;
+      left: 0px;
+      font-weight: 700;
+      background-color: #4B2E83;
+      color: #FFF;
+      padding: 15px 29px;
+      font-size: 17px;
+    }
     li {
       top: 65px;
       left: 0px;
@@ -27,22 +45,41 @@
       opacity: 1;
       .transition(all 300ms ease);
       width: 100%;
-      margin: 5px;
-
-
+      border-bottom: 1px solid #EDEDED;       
+      background: #fff;
+      &:hover {
+         background: #eee;
+         // color: #fff;
+      }
       span {
         width: 100%;
-        background: #fff;
-        line-height: 60px;
-        padding: 0 30px 0 75px;
+        line-height: 1.4;
+        padding: 17px 20px 17px 55px;
         display: block;
-        color: #bcbcbc;
+        color: #626262;
         cursor: pointer;
-        font-weight: 700;
-        .box-shadow(0 1px 1px #eee );
-        &:hover {
-          background: #eee;
+        font-size: 16px;
+        position: relative;
+       
+        &:after {
+          position: absolute;
+          content: "";
+          left: 20px;
+          top: 19px;
+          display: block;
+          opacity: .3;
+          width: 20px;
+          height: 20px;
+          background: url(less/svg/boundless.svg) no-repeat -2px -167px;
+        }
+      }
+      &.active {
+        background: #777;
+        span {
           color: #fff;
+          &:after {
+            opacity: 1;
+          }
         }
       }
 
