@@ -26,6 +26,7 @@ BOUNDLESS.Navigation = Backbone.View.extend({
     this.$toggle.addClass( 'close' )
     this.$el.transition({ left : -1600 }, BOUNDLESS.AnimationDuration, 'easeInOutQuad', this.resetMargins )
     this.hidden = true
+    BOUNDLESS.router.navigate( $(e.currentTarget).data().route, { trigger: true} )
   },
 
   segueIn: function( e ) {
