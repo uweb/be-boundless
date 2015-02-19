@@ -9,7 +9,9 @@ module.exports = function(grunt) {
       },
       dist: {
         libraries: [
-          'js/imagesloaded.js',
+          'js/libraries/jquery.inview.js',
+          'js/libraries/imagesloaded.js',
+          'js/libraries/masonry.pkgd.js',
         ],
         theme : [
           'js/core.js',

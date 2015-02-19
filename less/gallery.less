@@ -2,14 +2,99 @@
 
   height: 100%;
   width: 100%;
-  background-color:blue;
+  overflow: scroll;
 
   .container {
+    width: 1000px;
     padding-top: 100px;
+
+
+    #grid {
+      /* flip (based on http://lab.hakim.se/scroll-effects/ by @hakimel) */
+      -webkit-perspective: 1300px;
+      perspective: 1300px;
+
+      list-style: none;
+      // margin: 30px auto;
+      padding: 0;
+
+      li {
+
+        overflow:hidden;
+        display: block;
+        float: left;
+        margin: 10px;
+        opacity: 0;
+        background-color:  white;
+
+        &:after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 35%;
+          height: 140%;
+          background: rgba(255,255,255,0.2);
+          content: '';
+          -webkit-transition: -webkit-transform 0.6s;
+          transition: transform 0.6s;
+          -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+          transform: scale3d(1.9,1.4,1) rotate3d(0, 0, 1, 11deg) translate3d(-110%, -10%, 0);
+        }
+
+        img {
+          opacity: 0.95;
+          -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+          transition: opacity 0.35s, transform 0.35s;
+          -webkit-transform: scale3d(1.05,1.05,1);
+          transform: scale3d(1.05,1.05,1);
+        }
+
+        &.segue {
+
+          -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+          -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+          -webkit-transform: rotateX(-80deg);
+          transform: rotateX(-80deg);
+          -webkit-animation: flip .8s ease-in-out forwards;
+          animation: flip .8s ease-in-out forwards;
+
+        }
+
+        &:hover {
+
+          &:after{
+            transform: scale3d(1.9,1.4,1) rotate3d(0, 0, 1, 11deg) translate3d(110%, -10%, 0);
+          }
+
+          img {
+            opacity:  1;
+            transform: scale3d(1,1,1);
+          }
+
+
+
+        }
+
+
+
+
+      }
+
+    }
+
+
+
+    }
   }
 
+@-webkit-keyframes flip {
+  0% { }
+  100% { -webkit-transform: rotateX(0deg); opacity: 1; }
+}
 
-
-
-
+@keyframes flip {
+  0% { }
+  100% { -webkit-transform: rotateX(0deg); transform: rotateX(0deg); opacity: 1; }
 }

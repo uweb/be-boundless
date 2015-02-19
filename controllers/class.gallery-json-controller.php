@@ -26,8 +26,20 @@ class JSON_API_GAllery_Controller
 
       foreach ( $ids as $id )
       {
-        // $result->images[] = wp_get_attachment_image_src( $id, 'original' );
-        $result->images[] = wp_get_attachment_metadata( $id );
+        $metadata =  wp_get_attachment_metadata( $id );
+        $image_src = wp_get_attachment_image_src( $id, array( 300, 3000) );
+        $metadata['src'] = array(
+          'url' => $image_src[0],
+          'width' => $image_src[1],
+          'height' => $image_src[2]
+          );
+        // $baseurl = explode( '/', $metadata['file'] );
+        // $metadata['baseurl'] = get_site_url() .  '/files/' .implode('/', array_slice( $baseurl, 0, 2 )) . '/';
+        // $metadata['imageurl'] = get_site_url() .  '/files/' . wp_get_attachment_image_src( $id, array( 300, 0) );
+
+        $result->images[] = $metadata;
+        // $result->images[] =$
+
       };
 
       $results[] = $result;
