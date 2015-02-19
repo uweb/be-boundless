@@ -20,12 +20,85 @@ BOUNDLESS.Map = Backbone.View.extend({
       minZoom:1,
       maxZoom:19,
       disableDoubleClickZoom : false,
-      styles : [{
-        featureType : 'poi',
-        stylers : [{
-            visibility : 'off'
-        }]
+      styles : [
+    {
+        "featureType": "landscape.natural",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#e0efef"
+            }
+        ]
+    },
+    {
+      "featureType": "poi",
+      "elementType": "labels",
+      "stylers": [{
+        "visibility": "off"
       }]
+
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#d2d2b8"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "lightness": 100
+            },
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit.station",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            },
+            {
+                "lightness": 700
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#acbcc9"
+            }
+        ]
+    }
+]
       // setMapTypeId:  google.maps.MapTypeId.ROADMAP,
       // mapTypeControl : false
     },
@@ -129,7 +202,7 @@ BOUNDLESS.Map = Backbone.View.extend({
         this.handleClickMarker( marker )
       }, this ) )
 
-      this.map.fitBounds( this.bounds )
+      //this.map.fitBounds( this.bounds )
   },
 
   // Handle the clicking of the marker
