@@ -5,7 +5,7 @@
         <title> <?php wp_title(' | ',TRUE,'right'); bloginfo('name'); ?> </title>
         <meta charset="utf-8">
         <meta name="description" content="<?php bloginfo('description', 'display'); ?>">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width">
 
         <?php wp_head(); ?>
 

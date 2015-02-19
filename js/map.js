@@ -55,6 +55,33 @@ BOUNDLESS.Map = Backbone.View.extend({
 
     },
     {
+      "featureType": "poi.business",
+      "elementType": "labels",
+      "stylers": [
+          {
+              "visibility": "off"
+          }
+      ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.attraction",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
         "featureType": "poi",
         "elementType": "geometry.fill",
         "stylers": [
@@ -62,40 +89,64 @@ BOUNDLESS.Map = Backbone.View.extend({
                 "visibility": "on"
             },
             {
-                "color": "#d2d2b8"
+                "color": "#c5dac6"
             }
         ]
     },
     {
-        "featureType": "road",
+        "featureType": "poi.park",
         "elementType": "geometry",
         "stylers": [
             {
-                "lightness": 100
+                "color": "#c5dac6"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
             },
             {
-                "visibility": "simplified"
+                "lightness": 20
             }
         ]
     },
     {
         "featureType": "road",
-        "elementType": "labels",
+        "elementType": "all",
         "stylers": [
             {
-                "visibility": "off"
+                "lightness": 20
             }
         ]
     },
     {
-        "featureType": "transit.station",
-        "elementType": "labels",
+        "featureType": "road.highway",
+        "elementType": "geometry",
         "stylers": [
             {
-                "visibility": "off"
-            },
+                "color": "#c5c6c6"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
             {
-                "lightness": 700
+                "color": "#fbfaf7"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#fbfaf7"
             }
         ]
     },
@@ -116,7 +167,7 @@ BOUNDLESS.Map = Backbone.View.extend({
       // mapTypeControl : false
     },
     icon : {
-      url : 'wp-content/themes/be-boundless/less/svg/map-marker.svg',
+      url : 'wp-content/themes/be-boundless/less/svg/map-marker-dark.svg',
       size : new google.maps.Size(85, 85),
       origin: new google.maps.Point(0,0),
       anchor: new google.maps.Point( 42.5, 42.5 )

@@ -113,8 +113,8 @@ class Navigation
 
       $url = wp_get_attachment_image_src( get_post_thumbnail_id( $nav->ID ), 'original' );
 
-      echo "<li data-route=\"$route\">
-                  <div style=\"background-image: url({$url[0]})\" class=\"tile-$type\"></div>
+      echo "<li data-route=\"$route\" class=\"tile-$type\">
+                  <div style=\"background-image: url({$url[0]})\"></div>
                   <span>
                     <h3><a title=\"{$nav->post_title}\" href=\"$route\">{$nav->post_title}</a></h3>
                     <p>{$nav->post_excerpt}</p>
