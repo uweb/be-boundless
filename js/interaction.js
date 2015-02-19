@@ -28,8 +28,9 @@ BOUNDLESS.Navigation = Backbone.View.extend({
     this.$el.transition({ left : -1650}, BOUNDLESS.AnimationDuration, 'easeInOutQuad' )
       .find('li').transition({marginRight: 30 }, BOUNDLESS.AnimationDuration)
     this.hidden = true
-    if ( e.currentTarget )
-      BOUNDLESS.router.navigate( $(e.currentTarget).data().route, { trigger: true} )
+    // Allows for clicking any part of the navigation tile
+    // Protected by an event for browser back/forward navigation
+    if ( e ) BOUNDLESS.router.navigate( $(e.currentTarget).data().route, { trigger: true} )
   },
 
   segueIn: function( e ) {
@@ -53,7 +54,6 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   },
 
   // Resets the margins of the navigation LI's to create the elastic bounce in effect
-  // TODO: is there a better implementation?
   resetMargins : function()
   {
     this.$el.find('li').css({ marginRight: 30 })

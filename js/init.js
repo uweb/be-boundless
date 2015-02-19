@@ -21,7 +21,7 @@ BOUNDLESS.initialize = function( $ )
   BOUNDLESS.navigation = new BOUNDLESS.Navigation()
 
   // get and parse video data now, build view later
-  BOUNDLESS.uwtiles = new BOUNDLESS.UWTiles()
+  // BOUNDLESS.uwtiles = new BOUNDLESS.UWTiles()
 
   // get and parse video data now, build view later
   BOUNDLESS.videos = new BOUNDLESS.Videos()
