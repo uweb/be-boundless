@@ -65,21 +65,44 @@ class Post_Type_Gallery
     ?>
 
 <style>
-  .preview-gallery {
-    width: 33%;
-    display: block;
+  .preview-gallery ul {
+    width:100%;
+  }
+  .preview-gallery li {
+    overflow:hidden;
+    display: inline;
+    margin: 10px;
+    background-color:  white;
   }
 </style>
 
       <div id="gallery-editor">
 
           <a href="#" class="button add-gallery">
-            <span class="wp-media-buttons-icon"></span> Add Gallery
+            <span class="wp-media-buttons-icon"></span> Add/Edit Gallery
           </a>
 
-          <input id="gallery-input" type="text" name="gallery" value="<?php echo esc_attr( $gallery ) ?>" />
+          <input id="gallery-input" type="hidden" name="gallery" value="<?php echo esc_attr( $gallery ) ?>" />
 
-          <div class="preview-gallery"></div>
+          <div class="preview-gallery">
+
+             <?php // initial load ?>
+              <ul id="grid">
+            <?php foreach( explode( ',', $gallery) as $id  ) :
+                      $image_src = wp_get_attachment_image_src( $id, array( 300, 3000) );
+                      $url = $image_src[0];
+                      $width = $image_src[1];
+                      $height = $image_src[2];
+                      ?>
+
+                  <li><img src="<?php echo $url ?>" width="<?php echo $width ?>" height="<?php echo $height ?>" />
+
+            <?php endforeach; ?>
+
+              </ul>
+
+          </div>
+
 
       </div>
 
@@ -117,7 +140,9 @@ class Post_Type_Gallery
   {
     if ( get_post_type() === self::POST_TYPE )
     {
-      wp_register_script( 'gallery-editor', get_template_directory_uri() . '/js/admin/gallery-editor.js', array('backbone' ) , self::VERSION );
+      wp_register_script( 'masonry', get_template_directory_uri() . '/js/libraries/imagesloaded.js', array('backbone' ) , self::VERSION );
+      wp_register_script( 'imagesloaded', get_template_directory_uri() . '/js/libraries/masonry.pkgd.js', array('backbone' ) , self::VERSION );
+      wp_register_script( 'gallery-editor', get_template_directory_uri() . '/js/admin/gallery-editor.js', array('backbone', 'imagesloaded', 'masonry' ) , self::VERSION );
       wp_enqueue_script( 'gallery-editor' );
       wp_enqueue_media();
     }

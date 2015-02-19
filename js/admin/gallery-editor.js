@@ -16,7 +16,11 @@ var GalleryEditor = Backbone.View.extend({
     'click .add-gallery' : 'openMediaFrame'
   },
 
-  template : '<% _.each( images, function( image ) { %>  <img src="<%= image.url %>" /> <% }) %>',
+  template : '<ul id="grid">' +
+      '<% _.each( images, function( image ) { %> '+
+        '<li> <img src="<%= image.sizes.medium.url%>" /> '+
+      '<% }) %>' +
+  '</ul>',
 
   initialize : function( options )
   {
@@ -33,19 +37,25 @@ var GalleryEditor = Backbone.View.extend({
 
     this.$el.sortable()
     this.$el.on( 'sortstop', this.reorder )
+    this.$el.find('.preview-gallery').imagesLoaded( this.masonry )
   },
 
   render : function() {
     this.$el.find('.preview-gallery').html(_.template( this.template, {images : this.selection.toJSON() } ))
+    this.$el.find('.preview-gallery').imagesLoaded( this.masonry )
   },
 
+  masonry : function()
+  {
+    this.masonry = new Masonry( document.getElementById('grid'), this.settings )
+  },
 
   openMediaFrame : function( e )
   {
 
     // TODO: must be a way to set the selectino of the current view instead of using an external editing function
-    if ( this.selection )
-      wp.media.gallery.edit( this.$el.find('input').val() ).on('update', this.selectGallery )
+    if ( this.selection || this.$el.find('input').val().length  )
+      wp.media.gallery.edit( '[gallery ids="' + this.$el.find('input').val() + '"]').on('update', this.selectGallery )
    else
       this.mediaframe.open()
 
