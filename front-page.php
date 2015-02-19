@@ -17,7 +17,7 @@
 
     <div id="slide"></div>
 
-            <div class="text">
+            <div class="homepage-text">
                 <h1>THE UW <br>EXPERIENCE</h1>
                 <span class="udub-slant"><span></span></span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac iaculis purus, id facilisis purus. In porta molestie erat, eget dignissim sapien sodales a. Vivamus molestie purus nec dui venenatis bibendum. Etiam eleifend purus ut ante varius adipiscing. Duis ullamcorper, erat sed egestas porta, magna purus mollis quam, sed ullamcorper esx<a href="#"></a></p>

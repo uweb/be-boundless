@@ -1,5 +1,38 @@
-  #message {
+.homepage-text {
 
+     position: absolute;
+     z-index: 1;
+     padding: 130px 0 0 80px;
+     left: 90px;
+     top: 8%;
+     p {
+       width: 475px;
+       font-weight: bold;
+       font-size: 16px;
+       line-height: 1.45;
+       color: #fff;
+       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+       position: relative;
+       a {
+         position: absolute;
+         right: -180px;
+         bottom: 20px;
+         background: url(less/svg/boundless.svg) no-repeat -165px -140px;
+         width: 90px;
+         height: 90px;
+       }
+       &:after {
+         content: "";
+         display: block;
+         position: absolute;
+         background: url(less/svg/boundless.svg) no-repeat -88px -121px;
+         right: -70px;
+         bottom: -22px;
+         width: 65px;
+         height: 195px;
+       }
+     }
+   
     h1 {
       font-family: "Encode Sans Compressed",sans-serif;
       font-weight: 900;
@@ -13,39 +46,6 @@
     margin: 0;
     padding: 60px 0 0;
     // display: inline-block;
-    .text {
-      position: relative;
-      z-index: 1;
-      padding: 130px 0 0 80px;
-      p {
-        width: 475px;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 1.45;
-        color: #fff;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
-        position: relative;
-        a {
-          position: absolute;
-          right: -180px;
-          bottom: 20px;
-          background: url(less/svg/boundless.svg) no-repeat -165px -140px;
-          width: 90px;
-          height: 90px;
-        }
-        &:after {
-          content: "";
-          display: block;
-          position: absolute;
-          background: url(less/svg/boundless.svg) no-repeat -88px -121px;
-          right: -70px;
-          bottom: -22px;
-          width: 65px;
-          height: 195px;
-        }
-      }
-    }
-
 }
 .udub-slant {
   overflow: hidden;
@@ -59,6 +59,17 @@
     height: 13px;
     width: 290px;
     background-color: #fff;
-    margin: 0 0 15px -90px;
+    margin-bottom: 15px;
+    margin-left: -300px;
+    -webkit-animation: margie .5s 1s 1 forwards; /* Safari 4+ */
+    -moz-animation:    margie .5s 1s 1 forwards; /* Fx 5+ */
+    -o-animation:      margie .5s 1s 1 forwards; /* Opera 12+ */
+    animation:         margie .5s 1s 1 forwards; /* IE 10+, Fx 29+ */
   }
 }
+
+@-webkit-keyframes margie {
+  0%   { margin-left: -300px; }
+  100% { margin-left: -90px; }
+}
+

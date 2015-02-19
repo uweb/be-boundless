@@ -37,10 +37,12 @@ BOUNDLESS.Video.View = Backbone.View.extend({
 
   template : '<h2 class="video-title"><%= title %></h2><button class="play" aria-controls="video<%= video %>"><span class="top"></span><span class="left"></span><span class="bottom"></span></button><div class="behind boundless-youtube" id="video<%= video %>" aria-label="Video: <%= title %>"></div><div class="blurb"><%= text %></div>',
 
-  tagname: 'div',
-  className: 'fullscreen',
+  tagname   : 'div',
+  id        : 'video',
+  className : 'fullscreen',
 
   is_playing: false,
+  preRemove : false,
 
   events : {
     'click button.play': 'buttonClick',
@@ -48,10 +50,9 @@ BOUNDLESS.Video.View = Backbone.View.extend({
   },
 
   initialize : function (options) {
-    _.bindAll(this, 'render', 'data_prep', 'buttonClick', 'checkEscape', 'onStateChange', 'youtube_iframe', 'remove', 'preRemove');
+    _.bindAll(this, 'render', 'data_prep', 'buttonClick', 'checkEscape', 'onReady', 'onStateChange', 'youtube_iframe', 'buttonTransitionDone', 'iframeTransitionDone');
     //this is the instantiated collection
     this.collection = BOUNDLESS.videos;
-    //this.videoNum = parseInt(options.videoNum);
     this.slug = options.slug;
     console.log('here')
     if (this.collection.is_ready) {
@@ -61,18 +62,10 @@ BOUNDLESS.Video.View = Backbone.View.extend({
       console.log('never called?')
       this.collection.view_to_render = this;
     }
-    this.player_ready = false;
   },
 
   data_prep: function () {
-
-    //this.model = this.collection.models[this.videoNum];
-      // TODO: _.pluck should work
-    for (var i = 0; i < this.collection.models.length; i++){
-      if (this.collection.models[i].get('slug') == this.slug){
-        this.model = this.collection.models[i];
-      }
-    }
+    this.model = this.collection.findWhere({'slug': this.slug});
     if (this.model){
       this.render();
     }
@@ -83,7 +76,6 @@ BOUNDLESS.Video.View = Backbone.View.extend({
 
   render : function () {
     this.$el.css({'background-image': 'url("' + this.model.get('image') + '")' });
-    BOUNDLESS.replaceSlide(this.el);
     var data = this.model.toJSON();
     var template = _.template(this.template, data);
 
@@ -94,7 +86,6 @@ BOUNDLESS.Video.View = Backbone.View.extend({
       this.youtube_iframe();
     }
     else {
-      console.log('never called?')
       //called on slower connections all the time
       window.addEventListener('youtube_api_ready', this.youtube_iframe);
     }
@@ -116,11 +107,18 @@ BOUNDLESS.Video.View = Backbone.View.extend({
       height: '100%',
       events: {
         //these events will call functions in the view
-       'onReady': function() { this.trigger('slideloaded'); }.bind(this),
+       'onReady': this.onReady,
        'onStateChange': this.onStateChange
       }
     });
     this.$iframe = this.$el.find('#video' + this.model.get('video'));
+  },
+  
+  onReady: function () {
+    this.$button.on(BOUNDLESS.TransitionEvents, this.buttonTransitionDone);
+    this.$iframe.on(BOUNDLESS.TransitionEvents, this.iframeTransitionDone);
+    this.on('preRemove', this.stopVideo);
+    this.trigger('slideloaded');
   },
 
   onStateChange: function (player_state) {
@@ -152,50 +150,38 @@ BOUNDLESS.Video.View = Backbone.View.extend({
 
   playVideo: function () {
     this.$button.addClass('close');
-    _.delay(function() {
+  },
+
+  buttonTransitionDone: function (event) {
+    //all transitions trigger this, including outline (as in focus change)
+    if (event.originalEvent.propertyName != 'top'){
+      //early return if conditions not met
+      return;
+    }
+    if (this.$button.hasClass('close')){
       this.$iframe.removeClass('behind');
       this.uwplayer.loadVideoById(this.model.get('video'));
       this.is_playing = true;
+      this.preRemove = true;
       this.$button.focus();
-    }.bind(this), 250);
+    }
+    else {
+      this.trigger('removeReady');
+    }
   },
 
   stopVideo: function (callback) {
     if (this.is_playing) {
       this.uwplayer.stopVideo();
       this.is_playing = false;
+      this.preRemove = false;
+      this.$iframe.addClass('behind');
     }
-    this.$iframe.addClass('behind');
-    _.delay(function() {
-      this.$button.removeClass('close');
-      if (callback && typeof(callback) == 'function'){
-        _.delay(function(callback) {
-          callback();
-          this.uwplayer.destroy();
-        }.bind(this), 250);
-      }
-    }.bind(this), 250);
   },
 
-  preRemove: function (callback) {
-    console.log('never called')
-    if (typeof(callback) == 'function'){
-      if (this.is_playing){
-        this.stopVideo(callback);
-      }
-      else {
-        callback();
-      }
+  iframeTransitionDone: function () {
+    if (this.$iframe.hasClass('behind')){
+      this.$button.removeClass('close');
     }
-    else {
-      console.log(callback);
-    }
-  }
-
-  // TODO: don't override unless you reimplement the default as well
-  // remove: function ()  {
-  //   this.uwplayer.destroy();
-  //   this.$el.html('');
-  // }
-
+  },
 });
