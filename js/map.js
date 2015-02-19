@@ -3,7 +3,20 @@ BOUNDLESS.Map = Backbone.View.extend({
 
   // The element to put the Google Map
   id : 'map',
+
   tagName : 'div',
+
+  listItems : '<ul class="points-of-interest">' +
+      '<% _.each( points, function(point) { %>' +
+        '<li data-marker="<%= point.title %>"><span><%= point.title  %></span>' +
+      '<% }) %>' +
+    '</ul>',
+
+    events : {
+      'click li' : 'handleClickListItems'
+    },
+
+    markers : [],
 
    // Google Map settings for the map and the marker
   settings : {
@@ -121,15 +134,14 @@ BOUNDLESS.Map = Backbone.View.extend({
   {
     _.bindAll( this,
       'delegateGoogleMapEvents',
-      'handleCenterChanged',
-      'handleZoomChanged',
+      'handleClickListItems',
       'hide',
-      'getMapType',
       'googleMapLoaded',
       'putMarkersOnMap',
       'removeInfoWindows',
       'render',
-      'segueIn'
+      'segueIn',
+      'showListItems'
     )
     this.points = new BOUNDLESS.Map.Points()
     this.points.on( 'sync', this.render )
@@ -140,39 +152,33 @@ BOUNDLESS.Map = Backbone.View.extend({
     BOUNDLESS.replaceSlide( this.el )
     this.map = new google.maps.Map( $('#slide').find( '#map').get(0), this.settings.map )
     this.delegateGoogleMapEvents()
-    // this.map.mapTypes.set( this.settings.name, BOUNDLESS.uwtiles )
-    // this.map.setMapTypeId( this.settings.name )
 
     this.infowindow = new BOUNDLESS.Map.InfoWindow( this.map )
 
     this.bounds = new google.maps.LatLngBounds()
     this.points.each( this.putMarkersOnMap )
+    this.showListItems()
 
+  },
+
+  // Displays a list of the Points of Interest
+  showListItems : function() {
+    this.$el.append( _.template( this.listItems, { points: this.points.toJSON() } ) )
+  },
+
+  handleClickListItems: function( e )
+  {
+      var markerTitle = $(e.currentTarget).data().marker
+          , marker = this.markers[ markerTitle ]
+
+      google.maps.event.trigger( marker, 'click' )
   },
 
   // Delegate the Google map events to the Backbone view
   delegateGoogleMapEvents : function()
   {
     google.maps.event.addListenerOnce( this.map, "tilesloaded", this.googleMapLoaded )
-    google.maps.event.addListener( this.map, "center_changed", this.handleCenterChanged )
-    google.maps.event.addListener( this.map, "zoom_changed", this.handleZoomChanged )
     google.maps.event.addListener( this.map, "click", this.removeInfoWindows )
-  },
-
-  // When the center of the map has changed choose to load the UW Tiles or default Google tiles
-  handleCenterChanged : function() {
-    // this.map.setMapTypeId( this.getMapType() )
-  },
-
-  // When the zoom has changed choose to load the UW Tiles or default Google tiles
-  handleZoomChanged : function() {
-    // this.map.setMapTypeId( this.getMapType() )
-  },
-
-  // Check to see if the current bounds are in the allowed bounds of the map
-  // Returns the maptype to be used depending on the map's view
-  getMapType : function() {
-    // return !this.settings.allowedBounds.contains( this.map.getCenter()) || this.map.getZoom() < this.settings.allowedZoom ? google.maps.MapTypeId.ROADMAP : this.settings.name
   },
 
 
@@ -181,7 +187,6 @@ BOUNDLESS.Map = Backbone.View.extend({
   {
       var marker = new google.maps.Marker( this.settings.marker )
               , latlng = new google.maps.LatLng( information.get( 'coordinate' ).latitude, information.get( 'coordinate' ).longitude )
-              // , infowindow = new BOUNDLESS.Map.InfoWindow( this.map, latlng, point )
 
       this.bounds.extend( latlng )
 
@@ -190,19 +195,16 @@ BOUNDLESS.Map = Backbone.View.extend({
       marker.setText( information.get('text') )
       marker.setMap( this.map )
       marker.setIcon( this.settings.icon )
-      // marker.set( 'infoWindow', infowindow )
 
       marker.set( 'information', information )
 
-      // this.marker = marker
+      this.markers[ information.get('title') ] = marker
 
-      // google.maps.event.addListener( marker, 'click', _.bind( this.handleClickMarker, this ) )
-      // google.maps.event.addListener( marker, 'click',  this.handleClickMarker )
+      // Has to be binded like this to maintain scope in Google Maps Marker object
       google.maps.event.addListener( marker, 'click', _.bind( function() {
         this.handleClickMarker( marker )
       }, this ) )
 
-      //this.map.fitBounds( this.bounds )
   },
 
   // Handle the clicking of the marker
@@ -211,16 +213,6 @@ BOUNDLESS.Map = Backbone.View.extend({
     this.map.panTo( marker.getPosition() )
     this.infowindow.render( marker )
     this.infowindow.segueIn()
-
-    // var infowindow = new BOUNDLESS.Map.InfoWindow( this.getMap() , this.getPosition(), this.get('information') )
-    // this.map.panTo( this.marker.getPosition() )
-    // this.infowindow.render( this.marker)
-    // infowindow.segueIn()
-
-    // this.getMap().panTo( this.getPosition() )
-    // infowindow.setMap( this.getMap() )
-    // infowindow.segueIn()
-    // google.maps.event.addListenerOnce( this.getMap(), 'idle', _.bind( this.infoWindow.segueIn, this.infoWindow ) )
   },
 
   removeInfoWindows : function()

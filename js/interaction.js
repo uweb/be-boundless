@@ -8,15 +8,16 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   message : '#message',
 
   events : {
-    // 'mouseenter' : 'toggleBlur',
-    // 'mouseleave' : 'toggleBlur',
     'click li' : 'segueOut',
     'click .show-nav' : 'segueIn',
   },
 
   initialize : function( options )
   {
-    _.bindAll( this, 'resetMargins')
+    _.bindAll( this,
+     'bounce',
+     'resetMargins'
+     )
     this.$toggle = this.$('.show-nav')
     this.resetMargins()
   },
@@ -24,16 +25,16 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   segueOut : function( e )
   {
     this.$toggle.addClass( 'close' )
-    this.$el.transition({ left : -1600 }, BOUNDLESS.AnimationDuration, 'easeInOutQuad', this.resetMargins )
+    this.$el.transition({ left : -1650}, BOUNDLESS.AnimationDuration, 'easeInOutQuad' )
+      .find('li').transition({marginRight: 30 }, BOUNDLESS.AnimationDuration)
     this.hidden = true
-    BOUNDLESS.router.navigate( $(e.currentTarget).data().route, { trigger: true} )
+    if ( e.currentTarget )
+      BOUNDLESS.router.navigate( $(e.currentTarget).data().route, { trigger: true} )
   },
 
   segueIn: function( e ) {
      this.$toggle.removeClass( 'close' )
-     this.$el.transition({ left : -230 }, BOUNDLESS.AnimationDuration, 'easeInOutQuad' )
-     // TODO: Animate to for the easeOutElastic easing
-     this.$el.find('li').stop().animate({ marginRight: 20 }, 3 * BOUNDLESS.AnimationDuration, 'easeOutElastic' )
+     this.$el.transition({ left : -230 }, BOUNDLESS.AnimationDuration, 'easeInOutQuad', this.bounce )
      this.hidden = false
   },
 
@@ -45,11 +46,17 @@ BOUNDLESS.Navigation = Backbone.View.extend({
       if ( Backbone.history.fragment.length ) this.$toggle.addClass( 'close' )
   },
 
+  bounce : function()
+  {
+     // TODO: Animate to for the easeOutElastic easing
+      this.$el.find('li').animate({ marginRight: 20 }, 2 * BOUNDLESS.AnimationDuration, 'easeOutElastic' )
+  },
+
   // Resets the margins of the navigation LI's to create the elastic bounce in effect
   // TODO: is there a better implementation?
   resetMargins : function()
   {
-    this.$el.find('li').css({ marginRight: 90 })
+    this.$el.find('li').css({ marginRight: 30 })
   }
 
 })
