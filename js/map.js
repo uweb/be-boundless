@@ -173,6 +173,7 @@ BOUNDLESS.Map = Backbone.View.extend({
       var markerTitle = $(e.currentTarget).data().marker
           , marker = this.markers[ markerTitle ]
 
+      $(e.currentTarget).addClass('active').siblings().removeClass('active')
       google.maps.event.trigger( marker, 'click' )
   },
 

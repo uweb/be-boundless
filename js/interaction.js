@@ -24,9 +24,10 @@ BOUNDLESS.Navigation = Backbone.View.extend({
 
   segueOut : function( e )
   {
-    this.$toggle.addClass( 'close' )
+    this.$el.removeClass('segue')
+    // We have to animate the marginRight instead of using 'resetMargins' to avoid an animation jump after its completed
     this.$el.transition({ left : -1650}, BOUNDLESS.AnimationDuration, 'easeInOutQuad' )
-      .find('li').transition({marginRight: 30 }, BOUNDLESS.AnimationDuration)
+      .find('li').transition({marginRight: 30 }, BOUNDLESS.AnimationDuration )
     this.hidden = true
     // Allows for clicking any part of the navigation tile
     // Protected by an event for browser back/forward navigation
@@ -34,7 +35,7 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   },
 
   segueIn: function( e ) {
-     this.$toggle.removeClass( 'close' )
+     this.$el.addClass('segue')
      this.$el.transition({ left : -230 }, BOUNDLESS.AnimationDuration, 'easeInOutQuad', this.bounce )
      this.hidden = false
   },
@@ -44,12 +45,13 @@ BOUNDLESS.Navigation = Backbone.View.extend({
       // Backbone.history.fragement protects against linking directily to a slide
       if ( this.hidden && ! Backbone.history.fragment ) this.segueIn()
       if ( ! this.hidden && Backbone.history.fragment.length ) this.segueOut()
-      if ( Backbone.history.fragment.length ) this.$toggle.addClass( 'close' )
+      // if ( Backbone.history.fragment.length ) this.$toggle.addClass( 'close' )
+      if ( Backbone.history.fragment.length ) this.$el.removeClass( 'segue' )
   },
 
   bounce : function()
   {
-     // TODO: Animate to for the easeOutElastic easing
+     // Animate is used for the easeOutElastic easing
       this.$el.find('li').animate({ marginRight: 20 }, 2 * BOUNDLESS.AnimationDuration, 'easeOutElastic' )
   },
 
@@ -58,5 +60,6 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   {
     this.$el.find('li').css({ marginRight: 30 })
   }
+
 
 })
