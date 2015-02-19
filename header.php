@@ -26,11 +26,13 @@
 
     <div id="thin-strip">
         <a class="wordmark" href="http://uw.edu" tabindex="-1" title="University of Washington Home">Home</a>
-        <input type="search" class="search-bar" placeholder="Search" />
+        <form action="//www.washington.edu/search/" method="get">
+            <input type="search" name="q" class="search-bar" placeholder="Search"  autocomplete="off" />
+        </form>
         <ul>
-            <li class="facebook"><a href="#" title="Facebook">Facebook</a>
-            <li class="twitter"><a href="#" title="Twitter">Twitter</a>
-            <li class="instagram"><a href="#" title="Instagram">Instagram</a>
+            <li class="facebook"><a href="https://www.facebook.com/UofWA" title="Facebook">Facebook</a>
+            <li class="twitter"><a href="https://twitter.com/uw" title="Twitter">Twitter</a>
+            <li class="instagram"><a href="http://instagram.com/uofwa" title="Instagram">Instagram</a>
             <li><a href="uw.edu/students" class="slash" title="Students">Students</a>
             <li><a href="uw.edu/parents" class="slash" title="Parents">Parents</a>
             <li><a href="uw.edu/facultystaff" class="slash" title="Faculty &amp; Staff">Faculty &amp; Staff</a>
