@@ -4,26 +4,60 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   id : 'gallery',
   tagName : 'div',
 
+  events : {
+    'click img' : 'openImage'
+  },
+
+  settings : {
+    itemSelector: 'li',
+    transitionDuration : 0
+  },
+
   template :
   '<div class="container">' +
+    '<ul id="grid" class="masonry">' +
     '<% _.each( images, function( image ) { %> ' +
-     ' <img height="100" width="100" src="<%= Backbone.history.location.pathname + \'/files/\' + image.file %>" />' +
+     '<li><img width="<%= image.src.width %>" height="<% image.src.height %>" src="<%= image.src.url %>" />' +
     ' <% }) %>' +
+    '</ul>' +
   '</div>',
+
+  templateOverlay : '',
 
   // This is executed by the router and only when the route is in place
   initialize : function( options )
   {
-    _.bindAll( this, 'render' )
+    _.bindAll( this,
+      'animateImageIn',
+      'render',
+      'setMasonry'
+    )
     this.images = new BOUNDLESS.Gallery.Images()
     this.images.on( 'sync', this.render )
   },
 
   render : function()
   {
-    console.log(this.images.toJSON() )
     BOUNDLESS.replaceSlide(this.$el.html( _.template( this.template, {images : this.images.toJSON() }) ) )
+    this.$el.imagesLoaded( this.el, this.setMasonry )
+    this.$el.find('li').on('inview', this.animateImageIn )
     this.trigger('slideloaded')
+  },
+
+  setMasonry : function()
+  {
+    this.masonry = new Masonry( document.getElementById('grid'), this.settings )
+  },
+
+  animateImageIn : function(e, isInView, visiblePartX, visiblePartY)
+  {
+    // TODO: reset the images that move off the bottom on scroll up
+    if ( isInView )
+    e.currentTarget.className = 'segue'
+  },
+
+  openImage : function() {
+    console.log('do something with the image')
   }
 
 })
