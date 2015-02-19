@@ -45,7 +45,6 @@ BOUNDLESS.Navigation = Backbone.View.extend({
       // Backbone.history.fragement protects against linking directily to a slide
       if ( this.hidden && ! Backbone.history.fragment ) this.segueIn()
       if ( ! this.hidden && Backbone.history.fragment.length ) this.segueOut()
-      // if ( Backbone.history.fragment.length ) this.$toggle.addClass( 'close' )
       if ( Backbone.history.fragment.length ) this.$el.removeClass( 'segue' )
   },
 

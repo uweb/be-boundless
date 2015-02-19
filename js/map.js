@@ -266,7 +266,7 @@ BOUNDLESS.Map.Points = Backbone.Collection.extend({
 
   error: function( error )
   {
-    console.log('There was an error retrieving the map points.')
+    console.error('There was an error retrieving the map points.')
   }
 
 })
