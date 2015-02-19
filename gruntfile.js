@@ -9,6 +9,7 @@ module.exports = function(grunt) {
       },
       dist: {
         libraries: [
+          'js/libraries/jquery.transit.min.js',
           'js/libraries/jquery.inview.js',
           'js/libraries/imagesloaded.js',
           'js/libraries/masonry.pkgd.js',
