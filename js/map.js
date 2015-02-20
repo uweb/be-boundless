@@ -264,6 +264,7 @@ BOUNDLESS.Map = Backbone.View.extend({
   // Handle the clicking of the marker
   handleClickMarker : function( marker )
   {
+    this.$el.find( 'li[data-marker="'+marker.getTitle() + '"]' ).addClass('active').siblings().removeClass('active')
     this.map.panTo( marker.getPosition() )
     this.infowindow.render( marker )
     this.infowindow.segueIn()

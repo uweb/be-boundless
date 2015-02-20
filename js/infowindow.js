@@ -6,6 +6,7 @@ BOUNDLESS.Map.InfoWindow = function( map )
 
   this.div = document.createElement('div')
   this.div.className = 'infowindow'
+  this.open = false
 
   // this.point = point
   this.setMap( map )
@@ -24,6 +25,11 @@ BOUNDLESS.Map.InfoWindow.prototype.render = function( marker )
       , position = overlayProjection.fromLatLngToDivPixel( point)
       , padding = 40
 
+  console.log( 'render' )
+
+  if ( this.div.className.indexOf('open') != -1 )
+    this.div.className += ' switch'
+
   this.div.innerHTML = _.template(
     '<div class="image-mask">' +
       '<div class="image">' +
@@ -41,7 +47,7 @@ BOUNDLESS.Map.InfoWindow.prototype.render = function( marker )
 
 
 
-  this.div.style.top  = position.y - ( this.div.offsetHeight + padding )+ 'px'
+  this.div.style.top  = position.y - ( this.div.offsetHeight + padding ) + 'px'
   this.div.style.left = position.x - this.div.offsetWidth / 2 + 'px'
 
 }
@@ -49,7 +55,11 @@ BOUNDLESS.Map.InfoWindow.prototype.render = function( marker )
 BOUNDLESS.Map.InfoWindow.prototype.segueIn = function()
 {
   this.div.style.display = 'inline'
-  this.div.className += ' open'
+
+  if ( this.div.className.indexOf('open') === -1 )
+    this.div.className += ' open'
+
+ this.div.className = this.div.className.replace( ' switch' , '' )
 }
 
 // Called when the overlay.setMap function is called
@@ -65,6 +75,7 @@ BOUNDLESS.Map.InfoWindow.prototype.onAdd = function()
 BOUNDLESS.Map.InfoWindow.prototype.draw = function()
 {
 
+  console.log( 'draw' )
 
 }
 
@@ -72,4 +83,5 @@ BOUNDLESS.Map.InfoWindow.prototype.draw = function()
 BOUNDLESS.Map.InfoWindow.prototype.onRemove = function()
 {
   this.div.style.display = 'none'
+  this.div.className = 'infowindow'
 }
