@@ -8,19 +8,26 @@ div.fullscreen {
   z-index: 10;
   h2 {
     position: absolute;
-    top: 160px;
-    left: 40px;
-    font-family: "Encode Sans Compressed",sans-serif;
+    top: calc(~"50% - 195px");
+    left: calc(~"50% - -135px");
     font-weight: 900;
     line-height: 1;
     font-size: 65px;
-    padding: 110px 0 0;
-    width: 95%;
-    text-align: center;
+    width: 200px;
+    text-align: left;
     text-transform: uppercase;
-    color: #4B2E83;
     color: #FFF;
-    margin: 0;
+    margin-left: -450px;
+    &:after {
+      content: "";
+      background: url(less/svg/boundless.svg) no-repeat -90px -142px;
+      display: block;
+      position: absolute;
+      right: -160px;
+      bottom: -60px;
+      width: 58px;
+      height: 240px;
+    }
   }
   button.play {
     display: block;
@@ -28,7 +35,7 @@ div.fullscreen {
     width: 220px;
     position: absolute;
     top: calc(~"50% - 175px");
-    right: calc(~"50% - 90px");
+    right: calc(~"50% - 300px");
     z-index: 20;
     border: none;
     padding: 0;
@@ -43,6 +50,7 @@ div.fullscreen {
     border: 6px solid #FFF;
     border-radius: 100%;
     transform: scale(.8);
+    outline: none;
     span {
       display: block;
       margin:0;
@@ -66,10 +74,13 @@ div.fullscreen {
       width: 45px;
       top: 85px;
       right: 5px;
+      border: none;
+      border-radius: 0;
       span {
         width: 45px;
+        margin: 0;
         &.top {
-          transform: rotate(45deg) translate(2px,3px);
+          transform: rotate(45deg) translate(5px, 5px);
         }
         &.left {
           opacity: 0;
