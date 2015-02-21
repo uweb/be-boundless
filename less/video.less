@@ -13,15 +13,19 @@ div.fullscreen {
     font-family: "Encode Sans Compressed",sans-serif;
     font-weight: 900;
     line-height: 1;
-    font-size: 85px;
+    font-size: 65px;
+    padding: 110px 0 0;
+    width: 95%;
+    text-align: center;
     text-transform: uppercase;
-    color: #4b2e83;
-    color: white;
+    color: #4B2E83;
+    color: #FFF;
+    margin: 0;
   }
   button.play {
     display: block;
-    height: 175px;
-    width: 180px;
+    height: 220px;
+    width: 220px;
     position: absolute;
     top: calc(~"50% - 175px");
     right: calc(~"50% - 90px");
@@ -31,13 +35,22 @@ div.fullscreen {
     background-color: transparent;
     transition: all .25s;
     overflow: hidden;
+    z-index: 20;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all .25s;
+    overflow: hidden;
+    border: 6px solid #FFF;
+    border-radius: 100%;
+    transform: scale(.8);
     span {
       display: block;
       margin:0;
-      width: 120px;
-      height: 4px;
+      width: 121px;
+      height: 5px;
       background-color: white;
       transition: all .25s;
+      margin-left: 29px;
       &.top {
         transform: rotate(30deg) translate(14px,-37px);
       }
