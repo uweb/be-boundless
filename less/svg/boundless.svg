@@ -86,6 +86,7 @@
 <line fill="none" stroke="#CACCCE" stroke-miterlimit="10" x1="162.386" y1="17.299" x2="156.161" y2="41.704"/>
 <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="178.292" y1="17.299" x2="172.066" y2="41.704"/>
 <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="151.565" y1="126.09" x2="89.469" y2="321.251"/>
+<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="240.91" y1="365.434" x2="163.667" y2="606.614"/>
 <g>
 	<path fill="#FFFFFF" d="M57.784,151.259c0,0.322,0.26,0.58,0.58,0.58h17.391c0.32,0,0.58-0.258,0.58-0.58v-10.434
 		c0-0.32-0.26-0.579-0.58-0.579H63.581v-1.159c0-0.32-0.26-0.58-0.58-0.58h-2.898c-0.32,0-0.58,0.26-0.58,0.58v1.159h-1.158
