@@ -182,6 +182,10 @@ BOUNDLESS.Video.View = Backbone.View.extend({
   iframeTransitionDone: function () {
     if (this.$iframe.hasClass('behind')){
       this.$button.removeClass('close');
+      $('body').removeClass('video-active');
+    }
+    else {
+      $('body').addClass('video-active');
     }
   },
 });
