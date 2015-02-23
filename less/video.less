@@ -1,3 +1,14 @@
+
+// Hides superfluous stuff on video play
+.video-active {
+  .navigation,
+  .stripes,
+  .be-boundless {
+    z-index: -1;
+  } 
+
+}
+
 div.fullscreen {
   width:100%;
   height:100%;
@@ -25,7 +36,7 @@ div.fullscreen {
       display: block;
       position: absolute;
       left: -109px;
-      bottom: 30px;
+      top: -100px;
       width: 98px;
       height: 257px;
     }
