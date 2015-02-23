@@ -7,11 +7,4 @@ $UW->Styles->STYLES['uw-style'] = array (
       'version' => '3.6',
       'child'   => true
   );
-
-
-foreach ($UW->Styles->STYLES as $id => $style){
-    $style['url'] = $UW->Homepage_Utilities->agnostify_url($style['url']);
-    $UW->Styles->STYLES[$id] = $style;
-}
-
 ?>
