@@ -49,6 +49,19 @@
           transform: scale3d(1.05,1.05,1);
         }
 
+        span.caption {
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          width: 100%;
+          text-align: center;
+          color: @purple;
+          background-color: white;
+          z-index: 10;
+          opacity: 0;
+          transition: opacity 0.35s;
+        }
+
         &.segue {
 
           -webkit-transform-style: preserve-3d;
@@ -73,7 +86,9 @@
             transform: scale3d(1,1,1);
           }
 
-
+          span.caption {
+            opacity: 1;
+          }
 
         }
 

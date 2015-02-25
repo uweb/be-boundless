@@ -17,7 +17,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   '<div class="container">' +
     '<ul id="grid" class="masonry">' +
     '<% _.each( images, function( image ) { %> ' +
-     '<li><img width="<%= image.src.width %>" height="<% image.src.height %>" src="<%= image.src.url %>" />' +
+     '<li><img width="<%= image.src.width %>" height="<% image.src.height %>" src="<%= image.src.url %>" /><span class="caption"><%= image.caption %></span>' +
     ' <% }) %>' +
     '</ul>' +
   '</div>',
@@ -38,6 +38,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
 
   render : function()
   {
+    console.log(this.images.toJSON());
     BOUNDLESS.replaceSlide(this.$el.html( _.template( this.template, {images : this.images.toJSON() }) ) )
     this.$el.imagesLoaded( this.el, this.setMasonry )
     this.$el.find('li').on('inview', this.animateImageIn )
