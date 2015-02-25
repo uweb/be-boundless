@@ -7,9 +7,9 @@ BOUNDLESS.Router = Backbone.Router.extend({
   },
 
   routes : {
-    "!/map" : "segueToMap",
-    "!/gallery" : "segueToGallery",
-    "!/video/:video" : "segueToVideo",
+    "!/map" : "map",
+    "!/gallery" : "gallery",
+    "!/video/:video" : "video",
     "" : "default"
   },
 
@@ -18,6 +18,8 @@ BOUNDLESS.Router = Backbone.Router.extend({
     _.bindAll( this,
        'segueToMap',
        'segueToVideo',
+       'segueToMap',
+       'segueToDefault',
        'reveal',
        'conceal'
     )
@@ -28,38 +30,37 @@ BOUNDLESS.Router = Backbone.Router.extend({
     this.$slide.on( BOUNDLESS.TransitionEvents, this.conceal )
   },
 
-  segueToVideo : function (video){
-    this.currentView = new BOUNDLESS.Video.View({slug:video});
-    this.currentView.on('slideloaded', this.reveal);
+  map : function () {
+    this.prepSegue(this.defaultView, this.segueToMap);
+  },
+
+  gallery : function () {
+    this.prepSegue(this.defaultView, this.segueToGallery);
+  },
+
+  video : function (video) {
+    this.prepSegue(this.defaultView, this.segueToVideo, video);
   },
 
   default : function() {
-    if (this.currentView && this.currentView.preRemove) {
-      this.currentView.trigger('preRemove').on('removeReady', function() {
-        this.segueToDefault();
-        this.currentView.off('removeReady');
-      }.bind(this));
+    this.prepSegue(this.currentView, this.segueToDefault);
+  },
+  
+  prepSegue : function (activeView, segueCallback, viewargs){
+    if (activeView && activeView.preRemove) {
+      activeView.trigger('preRemove').on('removeReady', function() {
+        segueCallback(viewargs);
+        activeView.off('removeReady');
+      });
     }
     else {
-      this.segueToDefault();
+      segueCallback(viewargs);
     }
-  },
-
-  segueToDefault: function () {
-    if (!this.defaultView) {
-      this.defaultView = new BOUNDLESS.Video.Home({slug:'default'});
-    }
-    this.$slide.removeClass('open')
-    this.$homepage.removeClass('blur')
-
-    this.mprogress.end()
-
-    if ( this.currentView ) this.currentView.unbind('slideloaded')
   },
 
   // Preforms before each segue
   // Should hide or show the navigation
-   execute: function(callback, args) {
+  execute: function(callback, args) {
 
       this.mprogress.start()
       this.$homepage.addClass('blur')
@@ -82,6 +83,23 @@ BOUNDLESS.Router = Backbone.Router.extend({
     // Set the current view reference
     this.currentView = new BOUNDLESS.Gallery()
     this.currentView.on( 'slideloaded' , this.reveal )
+  },
+
+  segueToVideo : function (video){
+    this.currentView = new BOUNDLESS.Video.View({slug:video});
+    this.currentView.on('slideloaded', this.reveal);
+  },
+
+  segueToDefault: function () {
+    if (!this.defaultView) {
+      this.defaultView = new BOUNDLESS.Video.Home({slug:'default'});
+    }
+    this.$slide.removeClass('open')
+    this.$homepage.removeClass('blur')
+
+    this.mprogress.end()
+
+    if ( this.currentView ) this.currentView.unbind('slideloaded')
   },
 
   reveal : function () {
