@@ -79,7 +79,7 @@ BOUNDLESS.Video.View = Backbone.View.extend({
     var data = this.model.toJSON();
     var template = _.template(this.template, data);
 
-    BOUNDLESS.replaceSlide( this.$el.html(template) )
+    BOUNDLESS.replaceSlide( this.$el.html(template) );
 
     this.$button = this.$el.find('button.play');
     if (BOUNDLESS.youtube_api_ready){
@@ -188,4 +188,29 @@ BOUNDLESS.Video.View = Backbone.View.extend({
       $('body').addClass('video-active');
     }
   },
+});
+
+BOUNDLESS.Video.Home = BOUNDLESS.Video.View.extend({
+  
+  el : '#boundless-slide',
+
+  nav_template : '<div class="homepage-text"><h1>Husky</br>Experience</h1><span class="udub-slant"><span></span></span><p><%= text %></p></div>',
+  vid_template : '<button id="main" class="play" aria-controls="video<%= video %>"><span class="top"></span><span class="left"></span><span class="bottom"></span></button><div class="behind boundless-youtube" id="video<%= video %>" aria-label="Video: <%= title %>"></div>',
+
+  render : function () {
+    var data = this.model.toJSON();
+    var text = _.template(this.nav_template, data);
+    var vid  = _.template(this.vid_template, data);
+    this.$el.prepend(vid);
+    this.$el.find('.navigation').prepend(text);
+    this.$button = this.$el.find('button#main');
+    if (BOUNDLESS.youtube_api_ready){
+      this.youtube_iframe();
+    }
+    else {
+      //called on slower connections all the time
+      window.addEventListener('youtube_api_ready', this.youtube_iframe);
+    }
+  }
+
 });

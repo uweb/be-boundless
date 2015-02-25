@@ -46,6 +46,9 @@ BOUNDLESS.Router = Backbone.Router.extend({
   },
 
   segueToDefault: function () {
+    if (!this.defaultView) {
+      this.defaultView = new BOUNDLESS.Video.Home({slug:'default'});
+    }
     this.$slide.removeClass('open')
     this.$homepage.removeClass('blur')
 
