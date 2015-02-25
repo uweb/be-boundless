@@ -195,7 +195,7 @@ BOUNDLESS.Video.Home = BOUNDLESS.Video.View.extend({
   el : '#boundless-slide',
 
   nav_template : '<div class="homepage-text"><h1>Husky</br>Experience</h1><span class="udub-slant"><span></span></span><p><%= text %></p></div>',
-  vid_template : '<button id="main" class="play" aria-controls="video<%= video %>"><span class="top"></span><span class="left"></span><span class="bottom"></span></button><div class="behind boundless-youtube" id="video<%= video %>" aria-label="Video: <%= title %>"></div>',
+  vid_template : '<div class="behind boundless-youtube" id="video<%= video %>" aria-label="Video: <%= title %>"></div>',
 
   render : function () {
     var data = this.model.toJSON();
@@ -204,6 +204,7 @@ BOUNDLESS.Video.Home = BOUNDLESS.Video.View.extend({
     this.$el.prepend(vid);
     this.$el.find('.navigation').prepend(text);
     this.$button = this.$el.find('button#main');
+    this.$button.attr('aria-controls', 'video' + this.model.get('video'));
     if (BOUNDLESS.youtube_api_ready){
       this.youtube_iframe();
     }

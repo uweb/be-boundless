@@ -19,6 +19,7 @@ BOUNDLESS.Navigation = Backbone.View.extend({
      'resetMargins'
      )
     this.$toggle = this.$('.show-nav')
+    this.$home_play = $('button#main');
     this.resetMargins()
   },
 
@@ -29,15 +30,17 @@ BOUNDLESS.Navigation = Backbone.View.extend({
     this.$el.transition({ left : -1650}, BOUNDLESS.AnimationDuration, 'easeInOutQuad' )
       .find('li').transition({marginRight: 30 }, BOUNDLESS.AnimationDuration )
     this.hidden = true
+    this.$home_play.addClass('offcanvas');
     // Allows for clicking any part of the navigation tile
     // Protected by an event for browser back/forward navigation
     if ( e ) BOUNDLESS.router.navigate( $(e.currentTarget).data().route, { trigger: true} )
   },
 
   segueIn: function( e ) {
-     this.$el.addClass('segue')
-     this.$el.transition({ left : -230 }, BOUNDLESS.AnimationDuration, 'easeInOutQuad', this.bounce )
-     this.hidden = false
+    this.$el.addClass('segue')
+    this.$el.transition({ left : -230 }, BOUNDLESS.AnimationDuration, 'easeInOutQuad', this.bounce )
+    this.hidden = false
+    this.$home_play.removeClass('offcanvas');
   },
 
   segue : function()

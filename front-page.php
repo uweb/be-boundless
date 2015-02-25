@@ -6,6 +6,7 @@
     <div id="boundless-slide">
             <div id="boundless-background"></div>
 
+        <button id="main" class="play offcanvas"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>
         <div class="navigation">
           <!--
               <div class="homepage-text">

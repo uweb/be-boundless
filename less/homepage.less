@@ -46,7 +46,7 @@
       position: absolute;
       //top: calc(~"50% - 175px");
       top: calc(~"50% - 165px");
-      right: calc(~"50% - -130px");
+      right: 50%;
       z-index: 20;
       border: none;
       padding: 0;
@@ -102,6 +102,9 @@
           }
         }
       }
+      &.offcanvas {
+        right: calc(~"100% + 220px");
+      }
     }
     .boundless-youtube {
       position: absolute;
@@ -129,6 +132,7 @@
   overflow: hidden;
   .skew(-15deg,0);
   opacity: .3;
+  transition: opacity .5s;
   span {
     display: block;
     float: left;
