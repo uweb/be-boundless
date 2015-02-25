@@ -81,12 +81,16 @@ BOUNDLESS.Gallery.Images = Backbone.Collection.extend({
 
   parse : function( data )
   {
+    if (data.status == 'error'){
+      this.error(data.error);
+      return;
+    }
     return data[0].images
   },
 
   error: function( error )
   {
-    console.error('There was an error retrieving the gallery.')
+    console.error('There was an error retrieving the gallery: ' + error);
   }
 
 
