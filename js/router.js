@@ -18,7 +18,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
     _.bindAll( this,
        'segueToMap',
        'segueToVideo',
-       'segueToMap',
+       'segueToGallery',
        'segueToDefault',
        'reveal',
        'conceal'
