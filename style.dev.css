@@ -111,22 +111,8 @@ body.site-home .uw-search-bar-container #mobile-search-select {
 .uw-homepage-slider-container .slide-22.uw-homepage-slider .hero-container a.uw-btn:before {
   background-color: #b7a57a;
 }
-.uw-homepage-slider-container .slide-19.uw-homepage-slider .hero-container h3 {
-  color: #4b2e83;
-  text-shadow: none;
-}
-.uw-homepage-slider-container .slide-19.uw-homepage-slider .hero-container .udub-slant span {
-  background-color: #b7a57a;
-}
-.uw-homepage-slider-container .slide-19.uw-homepage-slider .hero-container p {
-  color: #3E3E3E;
-  text-shadow: none;
-}
-.uw-homepage-slider-container .slide-19.uw-homepage-slider .hero-container a.uw-btn {
-  text-shadow: none;
-}
-.uw-homepage-slider-container .slide-19.uw-homepage-slider .hero-container a.uw-btn:before {
-  background-color: #b7a57a;
+.uw-homepage-slider-container .slide-23.uw-homepage-slider .hero-container h3 {
+  margin: 90px 0 0;
 }
 .uw-homepage-slider-container .slideshow-controls:after {
   background: url(../uw-2014/assets/svg/uw-sprite.svg) no-repeat -630px 0px;
