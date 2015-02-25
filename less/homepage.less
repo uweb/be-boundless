@@ -57,11 +57,22 @@
       padding: 0;
       background-color: rgba(0, 0, 0, 0);
       transition: all .25s;
-      overflow: hidden;
+      overflow: visible;
       border: 6px solid #FFF;
       border-radius: 100%;
       transform: scale(.8);
       outline: none;
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        background: url(less/svg/boundless.svg) no-repeat -88px -121px;
+        left: -80px;
+        bottom: 10px;
+        width: 65px;
+        height: 195px;
+        transition: opacity .25s;
+      }
       span {
         display: block;
         margin:0;
@@ -87,6 +98,9 @@
         right: 5px;
         border: none;
         border-radius: 0;
+        &:before {
+          opacity: 0;
+        }
         span {
           width: 45px;
           margin: 0;
