@@ -5,7 +5,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   tagName : 'div',
 
   events : {
-    'click img' : 'openImage'
+    'click li' : 'openImage'
   },
 
   settings : {
@@ -40,6 +40,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   {
     console.log(this.images.toJSON());
     BOUNDLESS.replaceSlide(this.$el.html( _.template( this.template, {images : this.images.toJSON() }) ) )
+    this.$image_containers = this.$el.find('li');
     this.$el.imagesLoaded( this.el, this.setMasonry )
     this.$el.find('li').on('inview', this.animateImageIn )
     this.trigger('slideloaded')
@@ -57,8 +58,12 @@ BOUNDLESS.Gallery = Backbone.View.extend({
     e.currentTarget.className = 'segue'
   },
 
-  openImage : function() {
-    console.log('do something with the image')
+  openImage : function(event) {
+    if(!this.$active_container){
+      this.$active_container = $(event.target);
+      this.$image_containers.not(this.$active_container).addClass('inactive');
+      this.$active_container.addClass('active');
+    }
   }
 
 })

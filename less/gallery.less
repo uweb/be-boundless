@@ -93,7 +93,20 @@
         }
 
 
-
+      &.active {
+        z-index: 10;
+        img {
+          opacity: 1;
+        }
+        span.caption {
+          opacity: 1;
+        }
+      }
+      &.inactive {
+        img {
+          opacity: .5;
+        }
+      }
 
       }
 
