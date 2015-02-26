@@ -40,7 +40,6 @@ BOUNDLESS.Navigation = Backbone.View.extend({
     this.$el.addClass('segue')
     this.$el.transition({ left : -230 }, BOUNDLESS.AnimationDuration, 'easeInOutQuad', this.bounce )
     this.hidden = false
-    this.$home_play.removeClass('offcanvas');
   },
 
   segue : function()
@@ -54,7 +53,8 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   bounce : function()
   {
      // Animate is used for the easeOutElastic easing
-      this.$el.find('li').animate({ marginRight: 20 }, 2 * BOUNDLESS.AnimationDuration, 'easeOutElastic' )
+    this.$el.find('li').animate({ marginRight: 20 }, 2 * BOUNDLESS.AnimationDuration, 'easeOutElastic' )
+    this.$home_play.removeClass('offcanvas');
   },
 
   // Resets the margins of the navigation LI's to create the elastic bounce in effect
