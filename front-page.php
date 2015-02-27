@@ -6,7 +6,7 @@
     <div id="boundless-slide">
             <div id="boundless-background"></div>
 
-        <button id="main" class="play offcanvas"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>
+        <button id="topRight" class="play"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>
         <div class="navigation">
           <!--
               <div class="homepage-text">
@@ -17,6 +17,7 @@
               
             -->
 
+            <button id="static" class="play"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>
             <ul>
               <li></li>
               <?php echo  Navigation::get_navigation() ?>
