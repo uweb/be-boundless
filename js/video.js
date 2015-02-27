@@ -35,7 +35,7 @@ BOUNDLESS.Videos = Backbone.Collection.extend({
 
 BOUNDLESS.Video.View = Backbone.View.extend({
 
-  template : '<h2 class="video-title"><%= title %></h2><button class="play" aria-controls="video<%= video %>"><span class="top"></span><span class="left"></span><span class="bottom"></span></button><div class="behind boundless-youtube" id="video<%= video %>" aria-label="Video: <%= title %>"></div><div class="blurb"><%= text %></div>',
+  template : '<div class="title-blurb"><h2 class="video-title"><%= title %></h2><div class="blurb"><%= text %></div></div><button class="play" aria-controls="video<%= video %>"><span class="top"></span><span class="left"></span><span class="bottom"></span></button><div class="behind boundless-youtube" id="video<%= video %>" aria-label="Video: <%= title %>"></div>',
 
   tagname   : 'div',
   id        : 'video',

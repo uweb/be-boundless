@@ -17,27 +17,26 @@
     list-style: none;
     margin:0;
     padding:0;
-
     position: absolute;
     top: 50%;
     margin-top: -380px;
     width: 250px;
-    right: 60px;
+    right: -10px;
     font-family: @font-family-headline;
     font-weight: 500;
-    &:after {
-      content: "Explore campus";
-      display: block;
-      position: absolute;
-      top: -58px;
-      width: 100%;
-      left: 0px;
-      font-weight: 700;
-      background-color: #4B2E83;
-      color: #FFF;
-      padding: 15px 29px;
-      font-size: 17px;
-    }
+//   &:after {
+//     content: "Explore campus";
+//     display: block;
+//     position: absolute;
+//     top: -58px;
+//     width: 100%;
+//     left: 0px;
+//     font-weight: 700;
+//     background-color: #4B2E83;
+//     color: #FFF;
+//     padding: 15px 29px;
+//     font-size: 17px;
+//    }
     li {
       top: 65px;
       left: 0px;
@@ -49,7 +48,7 @@
       background: #fff;
       &:hover {
          background: #eee;
-         .scale(1.05);
+         .translate(-5px,0);
          // color: #fff;
       }
       span {
@@ -76,6 +75,7 @@
       }
       &.active {
         background: #777;
+        .translate(-10px,0);
         span {
           color: #fff;
           &:after {
