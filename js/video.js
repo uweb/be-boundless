@@ -155,7 +155,7 @@ BOUNDLESS.Video.View = Backbone.View.extend({
   buttonTransitionDone: function (event) {
     //all transitions trigger this, including outline (as in focus change)
     //allow opacity and top to progress
-    if (['top', 'opacity'].indexOf(event.originalEvent.propertyName) == -1){
+    if (['right', 'opacity'].indexOf(event.originalEvent.propertyName) == -1){
       //early return if conditions not met
       return;
     }
