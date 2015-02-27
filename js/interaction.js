@@ -19,7 +19,6 @@ BOUNDLESS.Navigation = Backbone.View.extend({
      'resetMargins'
      )
     this.$toggle = this.$('.show-nav')
-    this.$home_play = $('button#main');
     this.resetMargins()
   },
 
@@ -30,7 +29,6 @@ BOUNDLESS.Navigation = Backbone.View.extend({
     this.$el.transition({ left : -1650}, BOUNDLESS.AnimationDuration, 'easeInOutQuad' )
       .find('li').transition({marginRight: 30 }, BOUNDLESS.AnimationDuration )
     this.hidden = true
-    this.$home_play.addClass('offcanvas');
     // Allows for clicking any part of the navigation tile
     // Protected by an event for browser back/forward navigation
     if ( e ) BOUNDLESS.router.navigate( $(e.currentTarget).data().route, { trigger: true} )
@@ -54,7 +52,6 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   {
      // Animate is used for the easeOutElastic easing
     this.$el.find('li').animate({ marginRight: 20 }, 2 * BOUNDLESS.AnimationDuration, 'easeOutElastic' )
-    this.$home_play.removeClass('offcanvas');
   },
 
   // Resets the margins of the navigation LI's to create the elastic bounce in effect
