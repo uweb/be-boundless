@@ -154,7 +154,8 @@ BOUNDLESS.Video.View = Backbone.View.extend({
 
   buttonTransitionDone: function (event) {
     //all transitions trigger this, including outline (as in focus change)
-    if (event.originalEvent.propertyName != 'top'){
+    //allow opacity and top to progress
+    if (['top', 'opacity'].indexOf(event.originalEvent.propertyName) == -1){
       //early return if conditions not met
       return;
     }
@@ -203,7 +204,7 @@ BOUNDLESS.Video.Home = BOUNDLESS.Video.View.extend({
     var vid  = _.template(this.vid_template, data);
     this.$el.prepend(vid);
     this.$el.find('.navigation').prepend(text);
-    this.$button = this.$el.find('button#main');
+    this.$button = this.$el.find('button.play');
     this.$button.attr('aria-controls', 'video' + this.model.get('video'));
     if (BOUNDLESS.youtube_api_ready){
       this.youtube_iframe();
