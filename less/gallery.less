@@ -26,6 +26,8 @@
         margin: 10px;
         opacity: 0;
         background-color:  white;
+        width: 300px;
+        transition: all .5s;
 
         &:after {
           position: absolute;
@@ -105,6 +107,11 @@
       &.inactive {
         img {
           opacity: .5;
+        }
+        &:hover {
+          span.caption {
+            opacity: 0;
+          }
         }
       }
 

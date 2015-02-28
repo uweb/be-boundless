@@ -4,8 +4,11 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   id : 'gallery',
   tagName : 'div',
 
+  $active_container : false,
+
   events : {
-    'click li' : 'openImage'
+    'click' : 'resetContainers',
+    'click li' : 'clickImage'
   },
 
   settings : {
@@ -17,7 +20,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   '<div class="container">' +
     '<ul id="grid" class="masonry">' +
     '<% _.each( images, function( image ) { %> ' +
-     '<li><img width="<%= image.src.width %>" height="<% image.src.height %>" src="<%= image.src.url %>" /><span class="caption"><%= image.caption %></span>' +
+     '<li><img width="100%" src="<%= image.src.url %>" /><span class="caption"><%= image.caption %></span>' +
     ' <% }) %>' +
     '</ul>' +
   '</div>',
@@ -30,19 +33,20 @@ BOUNDLESS.Gallery = Backbone.View.extend({
     _.bindAll( this,
       'animateImageIn',
       'render',
-      'setMasonry'
-    )
+      'setMasonry',
+      'resetContainers'
+    );
     this.images = new BOUNDLESS.Gallery.Images()
     this.images.on( 'sync', this.render )
   },
 
   render : function()
   {
-    console.log(this.images.toJSON());
     BOUNDLESS.replaceSlide(this.$el.html( _.template( this.template, {images : this.images.toJSON() }) ) )
     this.$image_containers = this.$el.find('li');
     this.$el.imagesLoaded( this.el, this.setMasonry )
     this.$el.find('li').on('inview', this.animateImageIn )
+    this.$grid = this.$el.find('#grid');
     this.trigger('slideloaded')
   },
 
@@ -58,11 +62,48 @@ BOUNDLESS.Gallery = Backbone.View.extend({
     e.currentTarget.className = 'segue'
   },
 
-  openImage : function(event) {
+  clickImage : function(event) {
+    event.stopPropagation();
+    var anything = 'fuck you chrome';
+    var $target = $(event.target);
+    if ($target.prop("tagName") != 'LI'){
+      $target = $target.parents('li');
+    }
+    // this behaviour will prevent the thing from closing if you click on it (and not a different one)
+    // closing on any click would allow us to simplify the logic
     if(!this.$active_container){
-      this.$active_container = $(event.target);
-      this.$image_containers.not(this.$active_container).addClass('inactive');
-      this.$active_container.addClass('active');
+      this.openImage($target);
+    }
+    else if($target[0] != this.$active_container[0]){
+      this.resetContainers();
+    }
+  },
+  
+  openImage : function($container){
+    this.$active_container = $container;
+    this.$image_containers.addClass('inactive');
+    $container.removeClass('inactive').addClass('active');
+    $container.data('left', $container.position().left);
+    $container.data('top', $container.position().top);
+    $container.data('width', $container.width());
+    $container.css({
+      left:40,
+      top:0,
+      width:this.$grid.width() - 80
+    });
+  },
+
+  resetContainers : function (){
+    if (this.$active_container){
+      $container = this.$active_container;
+      $container.removeClass('active');
+      $container.css({
+        left:$container.data('left'),
+        top:$container.data('top'),
+        width:$container.data('width')
+      });
+      this.$image_containers.removeClass('inactive');
+      this.$active_container = false;
     }
   }
 
