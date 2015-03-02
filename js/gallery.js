@@ -83,14 +83,24 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   openImage : function($container){
     this.$active_container = $container;
     this.$image_containers.addClass('inactive');
+    var width = $container.width(),
+        left = 0,
+        new_width = this.$grid.width(),
+        max_height = $(window).outerHeight(true) - 150,
+        proj_height = (new_width / width) * $container.height();
     $container.removeClass('inactive').addClass('active');
     $container.data('left', $container.position().left);
     $container.data('top', $container.position().top);
-    $container.data('width', $container.width());
+    $container.data('width', width);
+    if (proj_height > max_height){
+      var adj_new_width = new_width * (max_height / proj_height);
+      left = (new_width - adj_new_width) / 2;
+      new_width = adj_new_width;
+    }
     $container.css({
-      left:0,
-      top:this.$el.scrollTop(),
-      width:this.$grid.width() - 30
+      left  : left,
+      top   : this.$el.scrollTop(),
+      width : new_width,
     });
   },
 
