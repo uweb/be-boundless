@@ -87,7 +87,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
     $container.data('width', $container.width());
     $container.css({
       left:0,
-      top:0,
+      top:this.$el.scrollTop(),
       width:this.$grid.width() - 30
     });
   },
