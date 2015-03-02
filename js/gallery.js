@@ -94,7 +94,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
     $container.data('width', width);
     if (proj_height > max_height){
       var adj_new_width = new_width * (max_height / proj_height);
-      left = (new_width - adj_new_width) / 2;
+      left = (new_width - adj_new_width - 30) / 2;                //adjusting for margins
       new_width = adj_new_width;
     }
     $container.css({
