@@ -61,7 +61,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   {
     // TODO: reset the images that move off the bottom on scroll up
     if ( isInView )
-    e.currentTarget.className = 'segue'
+      $(e.currentTarget).addClass('segue');
   },
 
   clickImage : function(event) {
