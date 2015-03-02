@@ -7,7 +7,8 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   $active_container : false,
 
   events : {
-    'click' : 'resetContainers',
+    'click'    : 'resetContainers',
+    'scroll'   : 'scrollHandler',
     'click li' : 'clickImage'
   },
 
@@ -34,6 +35,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
       'animateImageIn',
       'render',
       'setMasonry',
+      'scrollHandler',
       'resetContainers'
     );
     this.images = new BOUNDLESS.Gallery.Images()
@@ -90,6 +92,12 @@ BOUNDLESS.Gallery = Backbone.View.extend({
       top:this.$el.scrollTop(),
       width:this.$grid.width() - 30
     });
+  },
+
+  scrollHandler : function() {
+    if (this.$active_container){
+      this.resetContainers();
+    }
   },
 
   resetContainers : function (){
