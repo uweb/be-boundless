@@ -64,7 +64,6 @@ BOUNDLESS.Gallery = Backbone.View.extend({
 
   clickImage : function(event) {
     event.stopPropagation();
-    var anything = 'fuck you chrome';
     var $target = $(event.target);
     if ($target.prop("tagName") != 'LI'){
       $target = $target.parents('li');
