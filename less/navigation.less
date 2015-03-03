@@ -8,7 +8,7 @@ div.navigation {
   transition: opacity .5s;
 
   ul {
-    width: 4000px;
+    width: 1730px;
     li {
       float: left;
       display: block;
@@ -198,14 +198,15 @@ div.navigation {
       }
     }
   }
-}
-.udub-slant {
-  margin: 25px 0 15px;
+  .udub-slant {
+    margin: 25px 0 15px;
+  }
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-  .navigation {
+@media only screen and (max-width : 992px), screen and (max-height : 900px) {
+  div.navigation {
+    bottom: 5%;
     ul {
       .scale(.8,.8);
       transform-origin: 0 0;
@@ -214,9 +215,88 @@ div.navigation {
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-  .navigation {
-    ul {
-      
+  div.navigation {
+    bottom: 10px;
+    left: 0px;
+    transform: translateX(230px); //counters js, remove when js is changed
+    width: 100%;
+    div#nav-wrap {
+      width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      position: absolute;
+      bottom:10px;
+      ul {
+        margin-bottom: 0px;
+        overflow-y:hidden;
+        .scale(.8,.8);
+        li {
+          height: 180px;
+          span {
+            margin-top: 20px;
+          }
+        }
+      }
     }
+    .show-nav {
+      margin-top: -90px;
+    }
+  }
+}
+
+@media only screen and (max-width: 320px){
+  div.navigation{
+    .show-nav {
+      right: -1200px;
+    }
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 360px){
+  div.navigation{
+    .show-nav {
+      right: -1155px;
+    }
+  }
+}
+
+@media only screen and (min-width: 361px) and (max-width: 370px){
+  div.navigation{
+    .show-nav {
+      right: -1140px;
+    }
+  }
+}
+
+@media only screen and (min-width: 371px) and (max-width:400px){
+  div.navigation{
+    .show-nav {
+      right: -1120px;
+    }
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width:480px){
+  div.navigation{
+    .show-nav {
+      right: -1100px;
+    }
+  }
+}
+
+@media only screen and (max-width:768px) and (min-height: 650px){
+  div.navigation {
+    div#nav-wrap {
+      ul {
+        margin-bottom: 10px;
+        li {
+          height: 225px;
+          span {
+            margin-top: 40px;
+          }
+        }
+      }
+    }
+    
   }
 }

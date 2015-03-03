@@ -158,8 +158,56 @@
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 767px) {
-
+@media only screen and (max-width : 768px) {
+  #boundless-slide {
+    button.play {
+      right: 0px;
+      width: 80px;
+      height: 80px;
+      bottom: 220px;
+      top:inherit;
+      background-size: 1010px;
+      background-position-y:-390px;
+      &:before {
+        left: -50px;
+        width: 64px;
+        height:80px;
+      }
+      &#topRight {
+        background: transparent;
+      }
+    }
+    .udub-slant {
+      margin: 10px 0 5px;
+      height: 10px;
+    }
+    .navigation {
+      .homepage-text {
+        left: 10px;
+        bottom: 200px;
+        h1 {
+          font-size: 48px;
+        }
+        p {
+          width: 100%;
+          padding-right: 90px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width:768px) and (min-height: 650px){
+  #boundless-slide {
+    button.play {
+      bottom: 320px;
+    }
+    .navigation {
+      .homepage-text {
+        bottom: 300px;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
