@@ -20,7 +20,7 @@
             <button id="static" class="play"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>
             <div id="nav-wrap">
             <ul>
-              <li></li>
+              <li class='spacer'></li> 
               <?php echo  Navigation::get_navigation() ?>
             </ul>
             </div>

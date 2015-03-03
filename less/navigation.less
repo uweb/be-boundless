@@ -235,11 +235,23 @@ div.navigation {
           span {
             margin-top: 20px;
           }
+          &.spacer{
+            display: none;
+          }
         }
       }
     }
     .show-nav {
       margin-top: -90px;
+      opacity: 0;
+    }
+  }
+  #boundless-slide.blur {
+    div.navigation {
+      left: -1650px;
+      .show-nav{
+        opacity: 1;
+      }
     }
   }
 }
