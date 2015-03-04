@@ -195,7 +195,7 @@ BOUNDLESS.Video.Home = BOUNDLESS.Video.View.extend({
   
   el : '#boundless-slide',
 
-  nav_template : '<div class="homepage-text"><h1>Husky</br>Experience</h1><span class="udub-slant"><span></span></span><p><%= text %></p></div>',
+  nav_template : '<div class="homepage-text"><h1>Be boundless</h1><span class="udub-slant"><span></span></span><p><%= text %></p></div>',
   vid_template : '<div class="behind boundless-youtube" id="video<%= video %>" aria-label="Video: <%= title %>"></div>',
 
   render : function () {
