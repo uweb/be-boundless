@@ -13,7 +13,7 @@
        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
        position: relative;
        opacity: 0;
-       .animation(margieOpacity .5s 1s 1 forwards);
+       .animation(margieOpacity 1s 1s 1 forwards);
        a {
          position: absolute;
          right: -180px;
@@ -32,7 +32,7 @@
       text-transform: uppercase;
       color: #4b2e83;
       opacity: 0;
-      .animation(margieOpacity .5s 1s 1 forwards);
+      .animation(margieOpacity 1s 1s 1 forwards);
     }
   
 
@@ -79,6 +79,32 @@
     }
   }
 }
+
+// Webkit
+
+@keyframes margie {
+  0%   { margin-left: -300px; }
+  100% { margin-left: -90px; }
+}
+
+@keyframes margieOpacity {
+  0%   { margin-left: 100px; opacity: 0}
+  100% { margin-left: 0; opacity: 1}
+}
+
+// Moz
+
+@-moz-keyframes margie {
+  0%   { margin-left: -300px; }
+  100% { margin-left: -90px; }
+}
+
+@-moz-keyframes margieOpacity {
+  0%   { margin-left: 100px; opacity: 0}
+  100% { margin-left: 0; opacity: 1}
+}
+
+// All
 
 @-webkit-keyframes margie {
   0%   { margin-left: -300px; }

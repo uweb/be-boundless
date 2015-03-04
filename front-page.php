@@ -8,15 +8,6 @@
 
         <button id="topRight" class="play"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>
         <div class="navigation">
-          <!--
-              <div class="homepage-text">
-                  <h1>Husky <br>EXPERIENCE</h1>
-                  <span class="udub-slant"><span></span></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac iaculis purus, id facilisis purus. In porta molestie erat, eget dignissim sapien sodales a. Vivamus molestie purus nec dui venenatis bibendum. Etiam eleifend purus ut ante varius adipiscing. Duis ullamcorper, erat sed egestas porta, magna purus mollis quam, sed ullamcorper esx<a href="#"></a></p>
-               </div>
-              
-            -->
-
             <button id="static" class="play"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>
             <div id="nav-wrap">
             <ul>

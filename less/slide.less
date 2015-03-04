@@ -8,30 +8,30 @@
 //   background-color: white;
 // }
 
-#slide
-{
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+#slide {
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+	overflow: hidden;
+	// TODO: use .transition less function
+	transition: -webkit-clip-path 700ms ease-in-out;
+	-webkit-clip-path: polygon(40% 100%, 40% 100%, 60% 0%, 60% 0%);
 
-overflow: hidden;
-// TODO: use .transition less function
-transition: -webkit-clip-path 700ms ease-in-out;
--webkit-clip-path: polygon(40% 100%, 40% 100%, 60% 0%, 60% 0%);
+ 	&.open {
+ 	  // -webkit-clip-path: polygon(-5% 100%, 95% 100%, 105% 0%, 5% 0)
+ 	  -webkit-clip-path: polygon(-10% 100%, 100% 100%, 110% 0, 0% 0);
+ 	}
+}
 
- &.open {
-   // -webkit-clip-path: polygon(-5% 100%, 95% 100%, 105% 0%, 5% 0)
-   -webkit-clip-path: polygon(-10% 100%, 100% 100%, 110% 0, 0% 0);
- }
 
-//  -moz-clip-path: polygon(nonzero, 0% 5%, 100% 20%, 100% 85%, 0% 95%);
-// -ms-clip-path: polygon(nonzero, 0% 5%, 100% 20%, 100% 85%, 0% 95%);
-// -o-clip-path: polygon(nonzero, 0% 5%, 100% 20%, 100% 85%, 0% 95%);
-// clip-path: polygon(nonzero, 0% 5%, 100% 20%, 100% 85%, 0% 95%);
-// animation: polygon-anim 0.7s ease-in-out 0s 1 normal none;
-// -moz-animation: polygon-anim 0.7s ease-in-out 0s 1 normal none;
-// -o-animation: polygon-anim 0.7s ease-in-out 0s 1 normal none;
-// -ms-animation: polygon-anim 0.7s ease-in-out 0s 1 normal none;
+@-moz-document url-prefix() {
+  transition: opacity 700ms ease-in-out;
+  #slide {
+	opacity: 0;
+  }
+  &.open {
+	opacity: 1;
+  }
 }
