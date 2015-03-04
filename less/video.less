@@ -7,6 +7,45 @@
     opacity: 0;
   }
 }
+.boundless-button {
+  display: inline-block;
+  border-left: 3px solid #FFF;
+  overflow: hidden;
+  padding:0 30px 0 0;
+  margin-top: 10px;
+  .transition(all .2 ease-in);
+  &:hover {
+    border-color: @lightgold;
+    .translate(0,-5px);
+    span {
+      border-color: @lightgold;
+      a {
+        color: @lightgold;
+      }
+    }
+  }
+  span {
+    border: 3px solid #FFF;
+    display: block;
+    .skew(-15deg,0);
+    overflow: hidden;
+    margin-left: -40px;
+    .transition(all .2 ease-in);
+    a {
+      padding: 10px 20px 10px 60px;
+      font-weight: 900;
+      font-size: 16px;
+      font-family: @font-family-headline;
+      text-transform: uppercase;
+      color: #FFF;
+      .skew(15deg,0);
+      display: inline-block;
+      text-shadow: none;
+      .transition(all .2s ease-in);
+    }
+  }
+}
+
 #slide button.play {
   display: block;
   height: 220px;
@@ -94,6 +133,7 @@ div.fullscreen {
     text-transform: uppercase;
     color: #FFF;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
     &:after {
       content: "";
       background: url(less/svg/boundless.svg) no-repeat -155px -355px;
@@ -111,7 +151,7 @@ div.fullscreen {
       color: white;
       text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
       font-size: 16px;
-      padding-top: 10px;
+      // padding-top: 10px;
     }
   }
   .boundless-youtube {
