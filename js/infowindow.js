@@ -58,6 +58,11 @@ BOUNDLESS.Map.InfoWindow.prototype.segueIn = function()
 
   if ( this.div.className.indexOf('open') === -1 )
     this.div.className += ' open'
+    // can look for an event to bind to, but this should do fine for now
+    _.delay(function () {
+      this.map.panBy(0, (this.div.offsetHeight / -2));
+    }.bind(this), 1100);
+    //}.bind(this), $(this.div).css('transitionDelay'));  must turn that into seconds
 
  this.div.className = this.div.className.replace( ' switch' , '' )
 }

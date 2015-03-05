@@ -88,6 +88,9 @@ BOUNDLESS.Gallery = Backbone.View.extend({
         new_width = this.$grid.width() - 30,
         max_height = $(window).outerHeight(true) - 150,
         proj_height = (new_width / width) * $container.height();
+    if (new_width < width) {
+      new_width = width;
+    }
     $container.removeClass('inactive').addClass('active');
     $container.data('left', $container.position().left);
     $container.data('top', $container.position().top);

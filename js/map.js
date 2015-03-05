@@ -209,7 +209,8 @@ BOUNDLESS.Map = Backbone.View.extend({
     this.infowindow = new BOUNDLESS.Map.InfoWindow( this.map )
 
     this.bounds = new google.maps.LatLngBounds()
-    this.points.each( this.putMarkersOnMap )
+    this.points.each( this.putMarkersOnMap );
+    this.map.fitBounds(this.bounds);
     this.showListItems()
 
   },
