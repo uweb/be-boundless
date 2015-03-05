@@ -130,7 +130,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   },
 
   removeInactive : function (event) {
-    if (this.is_resetting && (event.propertyName != 'width')){
+    if (this.is_resetting && (event.originalEvent.propertyName == 'width')){
       this.$image_containers.removeClass('inactive');
       this.$active_container = false;
       this.is_resetting = false;
