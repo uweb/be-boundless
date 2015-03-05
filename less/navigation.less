@@ -170,7 +170,7 @@ div.navigation {
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1400px) {
 div.navigation {
-    bottom: 10%;
+    top: 50%;
     ul {
       transform: scale(.9, .9);
       transform-origin: 0 0;      
@@ -188,7 +188,7 @@ div.navigation {
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 div.navigation {
-    bottom: 10%;
+    top: 50%;
     ul {
       .scale(.8,.8);
       transform-origin: 0 0;      
@@ -210,7 +210,7 @@ div.navigation {
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px), screen and (max-height : 900px) {
   div.navigation {
-    bottom: 5%;
+    top: 5%;
     ul {
       .scale(.8,.8);
       transform-origin: 0 0;
@@ -219,6 +219,16 @@ div.navigation {
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+  div#thin-strip ul {
+    li {
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6),
+      &:nth-child(7){
+        display: none;
+      }
+    }
+  }
   div.navigation {
     bottom: 10px;
     left: 0px;

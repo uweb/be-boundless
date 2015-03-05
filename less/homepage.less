@@ -133,6 +133,7 @@
 
 }
 
+.home .be-boundless { display: none; }
 
 .stripes {
   pointer-events: none;
@@ -181,18 +182,23 @@
     .udub-slant {
       margin: 10px 0 5px;
       height: 10px;
+      span {
+        .animation(none);
+        margin-left: -200px;
+      }
     }
     .navigation {
       .homepage-text {
         left: 10px;
-        bottom: 200px;
+        padding: 30px;
+        position: static;
         h1 {
           font-size: 48px;
         }
         p {
           width: 100%;
-          padding-right: 90px;
-          font-size: 12px;
+          padding-right: 10px;
+          font-size: 15px;
         }
       }
     }
@@ -205,7 +211,6 @@
     }
     .navigation {
       .homepage-text {
-        bottom: 300px;
       }
     }
   }
