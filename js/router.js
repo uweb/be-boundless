@@ -110,7 +110,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
   conceal : function( e )
   {
     // TODO: is there better exit event to bind to?
-    if ( ! Backbone.history.fragment.length && e.originalEvent.propertyName.indexOf( 'clip-path' )  > -1 )
+    if ( ! Backbone.history.fragment.length && ['clip-path', 'opacity'].indexOf(e.originalEvent.propertyName) != -1 )
       return this.currentView && this.currentView.remove()
   }
 
