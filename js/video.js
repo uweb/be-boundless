@@ -1,11 +1,10 @@
 // Video slide view
 // Temporary rendering
 BOUNDLESS.youtube_api_ready = false;
-BOUNDLESS.YouTubeAPIReady = new Event('youtube_api_ready');
 
 window.onYouTubeIframeAPIReady = function(){
   BOUNDLESS.youtube_api_ready = true;
-  this.dispatchEvent(BOUNDLESS.YouTubeAPIReady);
+  $(this).trigger('youtube_api_ready');
 }
 
 BOUNDLESS.Video = Backbone.Model.extend({});
@@ -26,7 +25,6 @@ BOUNDLESS.Videos = Backbone.Collection.extend({
   fetch_success: function () {
     this.is_ready = true;
     if(this.view_to_render !== undefined){
-      console.log('never called?')
       this.view_to_render.data_prep();
     }
   }
@@ -43,6 +41,7 @@ BOUNDLESS.Video.View = Backbone.View.extend({
 
   is_playing: false,
   preRemove : false,
+  modest    : true,
 
   events : {
     'click button.play': 'buttonClick',
@@ -98,8 +97,10 @@ BOUNDLESS.Video.View = Backbone.View.extend({
         'rel'           : 0,
         'controls'      : 0,
         'modestbranding': 1,
+        'wmode'         : 'transparent'
       }
     }
+    console.log(player_vars)
     this.uwplayer = new YT.Player('video' + this.model.get('video'), {
       videoId: this.model.get('video'),
       playerVars: player_vars,
