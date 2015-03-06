@@ -4,6 +4,7 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   el : '.navigation',
 
   hidden : true,
+  next_slide: undefined,
 
   message : '#message',
 
@@ -33,7 +34,9 @@ BOUNDLESS.Navigation = Backbone.View.extend({
     this.hidden = true
     // Allows for clicking any part of the navigation tile
     // Protected by an event for browser back/forward navigation
-    //if ( e ) BOUNDLESS.router.navigate( $(e.currentTarget).data().route, { trigger: true} )
+    if ( e ) {
+      this.next_slide = $(e.currentTarget).data().route; 
+    }
   },
 
   segueIn: function( e ) {
@@ -54,6 +57,9 @@ BOUNDLESS.Navigation = Backbone.View.extend({
     if (event.originalEvent.propertyName == 'transform'){
       if (this.hidden) {
         //trigger view stuff here
+        if (this.next_slide !== undefined) {
+          BOUNDLESS.router.navigate( this.next_slide, { trigger: true} )
+        }
       }
       else {
         this.bounce();
