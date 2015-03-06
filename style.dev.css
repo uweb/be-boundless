@@ -932,6 +932,9 @@ body.site-home .uw-search-bar-container #mobile-search-select {
 .single-format-gallery .postid-496 .uw-site-title {
   width: 680px;
 }
+.single-format-gallery .tube-wrapper {
+  margin: 50px 0;
+}
 .single-format-gallery .uw-hero-image {
   height: 445px;
 }
@@ -971,9 +974,6 @@ body.site-home .uw-search-bar-container #mobile-search-select {
 }
 .single-format-gallery .text-overlay .spotlight-blurb a {
   display: none;
-}
-.single-format-gallery .text-overlay .spotlight-blurb .tube-wrapper {
-  margin: 50px 0;
 }
 .single-format-gallery .tenet {
   font-weight: 900;
