@@ -972,6 +972,9 @@ body.site-home .uw-search-bar-container #mobile-search-select {
 .single-format-gallery .text-overlay .spotlight-blurb a {
   display: none;
 }
+.single-format-gallery .text-overlay .spotlight-blurb .tube-wrapper {
+  margin: 50px 0;
+}
 .single-format-gallery .tenet {
   font-weight: 900;
   text-transform: uppercase;
