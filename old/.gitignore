@@ -1,0 +1,5 @@
+node_modules
+*.swp
+*.swo
+js/site.*
+assets/fonts/heron.*

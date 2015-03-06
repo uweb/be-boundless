@@ -1,0 +1,187 @@
+.single-format-gallery {
+
+  .postid-496 {
+      .uw-site-title {
+        width: 680px;
+      }
+  }
+
+  .uw-hero-image {
+      height: 445px;
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: -405px;
+
+
+  .udub-slant span {
+      height: 10px;
+      width: 160px;
+  }
+
+  .uw-site-title {
+    position: relative;
+    top:0;
+    left:0;
+    width: 610px;
+    font-weight: 900;
+    line-height: 59px;
+    font-size: 57px;
+    text-transform: uppercase;
+  }
+
+  .spotlight-blurb {
+    color: white;
+    width: 100%;
+    p {
+      padding-right: 120px;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 31px;
+      color: #fff;
+      -webkit-font-smoothing: auto;
+      margin-bottom: 20px;
+      font-family: @font-family-headline;
+      text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+      width: 60%;
+    }
+    a {
+      display: none;
+    }
+  }
+
+  }
+
+  .tenet {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: @lightgold;
+    position: relative;
+    margin: -10px 0 40px;
+    &:after {
+      background: url(assets/svg/slash.svg) 0 0 no-repeat;
+      content: "";
+      position: absolute;
+      left: -83px;
+      top: -60px;
+      width: 80px;
+      height: 130px;
+    }
+  }
+
+  .uw-body-copy {
+    padding-top: 40px;
+  }
+
+// iframe {
+//   padding: 40px 0;
+// }
+
+  blockquote {
+    border-left: none;
+    margin: 1.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    padding: 0;
+  }
+  blockquote:before, 
+  blockquote:after {
+    font-size: 4em;
+    line-height: 0.1em;
+    color: #ccc;
+    vertical-align: -0.4em;
+    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  }
+  blockquote:before {
+    content: open-quote;    
+    margin-right: 0.25em;
+  }
+  blockquote:after {
+    content: close-quote;    
+    margin-left: 0.25em;  
+  }
+
+  blockquote p {
+    display: inline;
+  }
+
+  .profile {    
+    padding: 30px 50px;
+    margin: 50px 0;
+    border-top: 6px solid @lightgold;
+    background: url('../uw-2014/assets/images/stripes-dark-tile.png') 0 -20px repeat-x @ultralightgold;
+    span {
+      background: #4B2E83;
+      padding: 6px 12px;
+      color: #FFF;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+  }
+
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+  .single-format-gallery .text-overlay .spotlight-blurb p {
+    padding-right: 40px;
+  }
+
+}
+
+ @media only screen and (max-width : 767px) {
+
+
+  .single-format-gallery {
+    .tenet {
+      font-size: 30px;
+      margin: 10px 0 20px;
+    }
+    .text-overlay {
+        top: -455px;
+        padding-top: 90px;
+       .uw-site-title {
+         font-size: 36px;
+         line-height: 40px;
+         padding-right: 0;
+         margin: 0;
+         color: #fff;
+         background-color: transparent;
+         padding: 0;
+         width: auto;
+       }
+       .spotlight-blurb p {
+         padding-right: 0;
+         font-size: 19px;
+         line-height: 24px;
+         width: 90%;
+       }
+       .udub-slant span {
+         transform: skewX(-25deg);
+         display: block;
+         height: 10px;
+         width: 160px;
+         margin: 10px 0 10px -30px;
+      }
+    }
+    .uw-hero-image {
+      width: auto;
+      height: auto;
+      padding: 0 0 140px 0;
+      display: block;
+      height: 360px;
+    }
+    .uw-body-copy {
+      padding-top: 0;
+    }
+    iframe {
+      max-width: 100% !important;
+      height: auto;
+    }
+
+  }
+
+}
