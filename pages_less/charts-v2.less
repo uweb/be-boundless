@@ -1,0 +1,390 @@
+.uw-charts {
+    position:relative;
+    padding: 40px 0 40px;
+    background-color: #ECE9E2;
+    text-align: center;
+
+    h3 {
+        font-size: 21px;
+        font-weight: @ultra-font-weight;
+        color: @purple;
+        margin-top: 14.5px;
+    }
+    
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 80px;
+      width: 100%;
+      content: "";
+      background: url('../uw-2014/assets/images/stripes-dark.png');
+      opacity: .2;
+    }
+    .campus-life-facts {
+        height: 380px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+            position: absolute;
+            background-color: white;
+            .border-radius(100%);
+            width: 100px;
+            height: 100px;
+            left: 0;
+            top: 0;
+            padding: 15px 0 0;
+            opacity: 0;
+            .scale(.5,.5);
+            .transition(all 500ms ease-in 1s);
+            font-family: @font-family-headline;
+            font-weight: 700;
+            font-size: 16px;
+            color: @purple;
+            &:after {
+                position: absolute;
+                left: 50%;
+                margin-left: -15px;
+                //bottom: -35px;
+                width: 30px;
+                height: 30px;
+                content: " ";
+                display: block;
+                background: url(assets/svg/campus-life.svg) center top no-repeat;
+            }
+        }        
+        span {
+            font-size: 33px;
+            font-family: @font-family-headline;
+            font-weight: @ultra-font-weight;
+            color: @darkgold;
+            display:block;
+            margin: 0 0 -10px;
+        }
+        .fact-1 {
+            left: 40px;
+            top: 30px;
+            width: 150px;
+            height: 150px;
+            -webkit-transition-delay: .03s; /* Safari */
+            transition-delay: .03s;
+            &:after {
+                background-position: 0px 0px;
+            }
+        }
+
+        .fact-2 {
+            left: 292px;
+            top: 60px;
+            width: 120px;
+            height: 120px;
+            padding: 0 0 0;
+            -webkit-transition-delay: .01s; /* Safari */
+            transition-delay: .01s;
+            &:after {
+                background-position: 0px -40px;
+            }
+        }
+
+        .fact-3 {
+            left: 419px;
+            top: 80px;
+            width: 115px;
+            height: 115px;
+            padding: 0 0 0;
+            -webkit-transition-delay: .08s; /* Safari */
+            transition-delay: .08s;
+            &:after {
+                background-position: 0px -196px;
+            }
+        }
+
+        .fact-4 {
+            left: 154px;
+            top: 132px;
+            width: 165px;
+            height: 165px;
+            padding: 25px 0 0;
+            -webkit-transition-delay: .03s; /* Safari */
+            transition-delay: .03s;
+            &:after {
+                background-position: 0px -152px;
+            }
+        }
+
+        .fact-5 {
+            left: 321px;
+            top: 180px;
+            width: 160px;
+            height: 160px;
+            padding: 20px 0 0;
+            -webkit-transition-delay: .01s; /* Safari */
+            transition-delay: .01s;
+            &:after {
+                background-position: 0px -230px;
+            }
+        }
+
+        .fact-6 {
+            left: 4px;
+            top: 180px;
+            width: 150px;
+            height: 150px;
+            -webkit-transition-delay: .07s; /* Safari */
+            transition-delay: .07s;
+            &:after {
+                background-position: 0px -77px;
+            }
+        }
+
+
+    }
+ 
+    
+
+    // Faculty Facts 
+
+    .faculty-facts {
+        padding-top: 60px;   
+        .people {
+            div {                    
+                float: left;
+                width: 33%;
+                position: relative;
+            }
+            p {
+                font-size: 60px;
+                font-family: @font-family-headline;
+                font-weight: @ultra-font-weight;
+                color: @lightgold;
+                position: relative;
+                margin-bottom: 40px;
+                opacity: 0;
+                .transition(all 500ms ease-in 0s);
+                &:after {
+                    position: absolute;
+                    left: 50%;
+                    margin-left: -15px;
+                    bottom: -25px;
+                    width: 0;
+                    height: 30px;
+                    content: " ";
+                    display: block;
+                    background: url(assets/svg/person-v2.svg) 0 0 repeat-x;
+                    .transition(all 500ms ease-in 0s);
+                }
+            }
+            span {
+                font-family: @font-family-headline;
+                font-weight: 700;
+                line-height: 20px;
+                width: 140px;
+                display: inline-block;
+            }
+        }
+    
+        .fact-2 { 
+            &:after {
+                position: absolute;
+                left: -50px;
+                top: 48px;
+                width: 80px;
+                height: 120px;
+                content: " ";
+                display: block;
+                background: url(assets/svg/slash-v2.svg) 0 0 no-repeat;
+            }
+        }
+        .fact-3 {
+            &:after {
+                position: absolute;
+                left: -39px;
+                top: 48px;
+                width: 80px;
+                height: 120px;
+                content: " ";
+                display: block;
+                background: url(assets/svg/slash-v2.svg) 0 0 no-repeat;
+            }
+        }
+
+
+    }
+
+
+    // Veterans Fact 
+
+    .contributions-fact {
+        font-weight: 800;
+        font-family: @font-family-headline;
+        span {
+            display: block;
+            width: 145px;
+            margin:auto;
+            margin-top: -21px;
+            font-size: 16px;
+        }
+        span.number {
+            background: url(assets/svg/laurel.svg) center 6px no-repeat;
+            font-size: 56px;
+            color: @lightgold;
+            padding: 0px 0 30px;
+            position: relative;
+            margin: 90px 0 15px 0;
+            width: auto;
+            height: 102px;
+            line-height: 72px;
+            .transition(all 500ms ease-in .1s);
+            opacity: 0;
+        }
+        h3 {
+            margin: 18px 0 30px;
+            font-size: 19px;
+        }
+        p {
+            font-family: @font-family-headline;
+            color: #555;
+            font-size: 16px;
+            font-weight: 800;
+            line-height: 21px;
+            small {
+                font-size: 14px;
+            }
+        }
+        li {
+            width: 33%;
+            float: left;
+            list-style: none;
+            position: relative;
+        }
+    }        
+
+}
+
+
+
+
+
+.factive {
+    .campus-life-facts li {
+        .scale(1,1);
+        opacity: 1;
+    } 
+    .contributions-fact {
+        span.number {
+            margin-top: 0;
+            opacity: 1;
+        }
+    }
+
+    .faculty-facts .people {
+        p {
+            opacity: 1;
+        }
+        .fact-1 {
+            p:after {
+                width: 92px;
+                margin-left: -46px
+            }
+        }
+        .fact-2 {                
+            p:after {
+                width: 126px;
+                margin-left: -63px
+            }
+
+        }
+        .fact-3 {
+            p:after {                
+                width: 42px;
+                margin-left: -21px
+            }
+        }
+    }
+
+
+
+}
+
+.uw-fast-facts {
+  margin:0px;
+  font-size:17px;
+  font-family: @font-family-base;
+  position:absolute;
+  left: 50%;
+  margin-left: -95px;
+  top:0;
+  padding:10px 50px;
+  background-color:@purple;
+  color:white;
+  font-weight:700;
+  text-transform:uppercase;
+  line-height: inherit;
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1200px) {
+    .faculty-facts {
+        padding-left: 70px;
+        padding-right: 0;
+    }
+   .uw-charts {
+       .faculty-facts {
+           .people div:after {
+               display: none;
+           }
+       }
+   }
+    .uw-charts .campus-life-facts .fact-3 {
+        left: -72px;
+        top: 96px;
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .uw-charts {
+        .container {
+            padding: 50px 0;
+            .campus-life-facts {
+                margin-left: 70px;
+                position: relative;
+            }
+        }
+    }
+    
+}
+
+
+@media only screen and (max-width : 767px) {
+   .uw-charts {
+       .campus-life {
+           padding-top: 50px;
+       }
+       .campus-life-facts {
+           height: auto;
+           li {
+               position: static;
+               margin: 0 auto;
+               margin-bottom: -15px;
+           }
+       }
+       .faculty-facts {
+           padding-bottom: 50px;
+           .people div {
+               float: none;
+               width: 100%;
+           }
+           .people div:after {
+               display: none;
+           }
+       }       
+        .contributions-fact {
+            margin: 60px 0 40px;
+        }
+   }
+    .uw-charts .contributions-fact li {
+        width: 100%;
+    }
+}
+

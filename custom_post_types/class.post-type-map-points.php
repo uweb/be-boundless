@@ -116,7 +116,7 @@ class Post_Type_Map_Points
     if ( get_post_type() === self::POST_TYPE )
     {
     wp_register_script( 'google-maps', 'https://maps.googleapis.com/maps/api/js?libraries=places', array('backbone') , self::VERSION );
-    wp_register_script( 'map-editor', get_template_directory_uri() . '/js/admin/map-editor.js', array('backbone', 'google-maps') , self::VERSION );
+    wp_register_script( 'map-editor', get_stylesheet_directory_uri() . '/js/admin/map-editor.js', array('backbone', 'google-maps') , self::VERSION );
     wp_enqueue_script( 'map-editor' );
     }
   }
@@ -137,7 +137,7 @@ class Post_Type_Map_Points
   // Add the controller path for the Map Point controller to the JSON API
   function set_map_point_controller_path()
   {
-    return get_template_directory() . "/controllers/class.map-point-json-controller.php";
+    return get_stylesheet_directory() . "/controllers/class.map-point-json-controller.php";
   }
 
 }

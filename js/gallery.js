@@ -5,6 +5,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   tagName : 'div',
 
   $active_container : false,
+  is_resetting      : false,
 
   events : {
     'click'    : 'resetContainers',
@@ -21,7 +22,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   '<div class="container">' +
     '<ul id="grid" class="masonry">' +
     '<% _.each( images, function( image ) { %> ' +
-     '<li><img width="100%" src="<%= image.src.url %>" /><span class="caption"><%= image.caption %></span>' +
+     '<li class="segue"><img width="100%" src="<%= image.src.url %>" /><span class="caption"><%= image.caption %></span>' +
     ' <% }) %>' +
     '</ul>' +
   '</div>',
@@ -36,6 +37,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
       'render',
       'setMasonry',
       'scrollHandler',
+      'removeInactive',
       'resetContainers'
     );
     this.images = new BOUNDLESS.Gallery.Images()
@@ -46,6 +48,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   {
     BOUNDLESS.replaceSlide(this.$el.html( _.template( this.template, {images : this.images.toJSON() }) ) )
     this.$image_containers = this.$el.find('li');
+    this.$image_containers.on(BOUNDLESS.TransitionEvents, this.removeInactive)
     this.$el.imagesLoaded( this.el, this.setMasonry )
     this.$el.find('li').on('inview', this.animateImageIn )
     this.$grid = this.$el.find('#grid');
@@ -61,7 +64,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   {
     // TODO: reset the images that move off the bottom on scroll up
     if ( isInView )
-      $(e.currentTarget).addClass('segue');
+      $(e.currentTarget).removeClass('segue');
   },
 
   clickImage : function(event) {
@@ -122,8 +125,15 @@ BOUNDLESS.Gallery = Backbone.View.extend({
         top:$container.data('top'),
         width:$container.data('width')
       });
+      this.is_resetting = true;
+    }
+  },
+
+  removeInactive : function (event) {
+    if (this.is_resetting && (event.originalEvent.propertyName == 'width')){
       this.$image_containers.removeClass('inactive');
       this.$active_container = false;
+      this.is_resetting = false;
     }
   }
 

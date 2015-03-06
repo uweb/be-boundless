@@ -24,7 +24,7 @@
         display: block;
         float: left;
         margin: 10px;
-        opacity: 0;
+        opacity: 1;
         background-color:  black;
         width: 300px;
         transition: all .5s;
@@ -72,8 +72,9 @@
           transform-origin: 0% 0%;
           -webkit-transform: rotateX(-80deg);
           transform: rotateX(-80deg);
-          -webkit-animation: flip .8s ease-in-out forwards;
-          animation: flip .8s ease-in-out forwards;
+          opacity:0;
+          //-webkit-animation: flip .8s ease-in-out forwards;
+          //animation: flip .8s ease-in-out forwards;
 
         }
 
@@ -105,6 +106,7 @@
         }
       }
       &.inactive {
+        z-index: -1;
         img {
           opacity: .33;
         }

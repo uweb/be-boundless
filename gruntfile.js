@@ -70,17 +70,30 @@ module.exports = function(grunt) {
       }
     },
     less: {
-        production: {
+        app: {
 	        options: {
 		        compress: true,
             sourceMap: true,
-            sourceMapFilename: 'style.css.map',
-            sourceMapURL: 'style.css.map'
+            sourceMapFilename: 'boundless.css.map',
+            sourceMapURL: 'boundless.css.map'
 			    },
 			    files: {
-				    'style.css': 'less/style.less'
+				    'boundless.css': 'less/style.less'
 			    }
-		  }
+		    },
+        pages : {
+	        options: {
+		        compress: true
+          },
+          files: {
+            'style.css': 'pages_less/style.less'
+          }
+        },
+        pages_dev: {
+          files: {
+          'style.dev.css': 'pages_less/style.less'
+          }
+			  }
     },
     watch: {
       config : {
@@ -93,9 +106,13 @@ module.exports = function(grunt) {
         files: ['<%= concat.dist.src %>'],
         tasks: ['js']
       },
-      css: {
+      app_css: {
         files: ['less/*.less'],
-        tasks: ['css']
+        tasks: ['app_css']
+      },
+      page_css: {
+        files: ['pages_less/*.less'],
+        tasks: ['page_css']
       }
     }
   });
@@ -111,5 +128,8 @@ module.exports = function(grunt) {
   grunt.registerTask( 'default', ['jshint', 'concat', 'uglify', 'notify', 'less']);
   grunt.registerTask( 'js', ['jshint', 'concat', 'uglify', 'notify' ]);
   grunt.registerTask( 'css', ['less', 'notify'] );
+  grunt.registerTask( 'app_css', ['less:app', 'notify'] );
+  grunt.registerTask( 'page_css', ['less:pages', 'less:pages_dev', 'notify'] );
+  grunt.registerTask( 'app', ['less:app', 'js'] );
 
 };
