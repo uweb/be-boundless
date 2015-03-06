@@ -47,6 +47,6 @@ class Boundless_Video_Post extends Boundless_Custom_Post {
 
   function set_boundless_video_controller_path()
   {
-    return get_template_directory() . "/controllers/class.boundless-video-json-controller.php";
+    return get_stylesheet_directory() . "/controllers/class.boundless-video-json-controller.php";
   }
 }

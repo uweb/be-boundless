@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php require 'app_header.php'; ?>
 
     <!-- <div id="overlay"></div> -->
 
@@ -31,4 +31,4 @@
 
     <h3 class="be-boundless">Be boundless</h3>
 
-<?php get_footer(); ?>
+<?php require 'app_footer.php'; ?>

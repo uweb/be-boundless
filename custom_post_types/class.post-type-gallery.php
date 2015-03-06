@@ -140,9 +140,9 @@ class Post_Type_Gallery
   {
     if ( get_post_type() === self::POST_TYPE )
     {
-      wp_register_script( 'masonry', get_template_directory_uri() . '/js/libraries/imagesloaded.js', array('backbone' ) , self::VERSION );
-      wp_register_script( 'imagesloaded', get_template_directory_uri() . '/js/libraries/masonry.pkgd.js', array('backbone' ) , self::VERSION );
-      wp_register_script( 'gallery-editor', get_template_directory_uri() . '/js/admin/gallery-editor.js', array('backbone', 'imagesloaded', 'masonry' ) , self::VERSION );
+      wp_register_script( 'masonry', get_stylesheet_directory_uri() . '/js/libraries/imagesloaded.js', array('backbone' ) , self::VERSION );
+      wp_register_script( 'imagesloaded', get_stylesheet_directory_uri() . '/js/libraries/masonry.pkgd.js', array('backbone' ) , self::VERSION );
+      wp_register_script( 'gallery-editor', get_stylesheet_directory_uri() . '/js/admin/gallery-editor.js', array('backbone', 'imagesloaded', 'masonry' ) , self::VERSION );
       wp_enqueue_script( 'gallery-editor' );
       wp_enqueue_media();
     }
@@ -159,7 +159,7 @@ class Post_Type_Gallery
   // Add the controller path for the Gallery controller to the JSON API
   function set_gallery_controller_path()
   {
-    return get_template_directory() . "/controllers/class.gallery-json-controller.php";
+    return get_stylesheet_directory() . "/controllers/class.gallery-json-controller.php";
   }
 
 }

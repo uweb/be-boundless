@@ -70,17 +70,42 @@ module.exports = function(grunt) {
       }
     },
     less: {
-        production: {
+        app: {
 	        options: {
 		        compress: true,
             sourceMap: true,
-            sourceMapFilename: 'style.css.map',
-            sourceMapURL: 'style.css.map'
+            sourceMapFilename: 'boundless.css.map',
+            sourceMapURL: 'boundless.css.map'
 			    },
 			    files: {
-				    'style.css': 'less/style.less'
+				    'boundless.css': 'less/style.less'
 			    }
-		  }
+		    },
+        pages : {
+	        options: {
+		        cleancss: true
+          },
+          files: {
+            'style.css': 'pages_less/style.less'
+          }
+        },
+        pages_dev: {
+          files: {
+          'style.dev.css': 'pages_less/style.less'
+          }
+			  }
+		}
+	},
+    watch: {
+      config : {
+        files : ['gruntfile.js'],
+        options : {
+          reload: true
+        }
+      },
+      js: {
+        files: ['<%= concat.dist.src %>'],
+        }
     },
     watch: {
       config : {
