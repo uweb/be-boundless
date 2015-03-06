@@ -24,14 +24,6 @@ class UW_Boundless_Styles extends UW_Styles
 
       'uw-style' => array (
           'id'      => 'uw-style',
-          'url'     => get_bloginfo('stylesheet_url'),
-          'deps'    => array('uw-master'),
-          'version' => '3.6',
-          'child'   => true
-      ),
-
-      'homepage' => array (
-          'id'      => 'homepage',
           'url'     => get_stylesheet_directory_uri() . '/style' . $this->dev_stylesheet() . '.css',
           'deps'    => array('uw-master'),
           'version' => '3.6',
