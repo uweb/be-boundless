@@ -21,7 +21,7 @@ class Boundless_Video_Post extends Boundless_Custom_Post {
       ?>
       <p>Preview:</p>
       <iframe id='youtube_preview' width="100%" height="auto"
-      src="http://www.youtube.com/embed/<?= $youtube_id ?>">
+      src="https://www.youtube.com/embed/<?php echo $youtube_id ?>">
       </iframe>
       <script type='text/javascript'>
         var preview = jQuery('iframe#youtube_preview');
