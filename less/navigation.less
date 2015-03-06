@@ -1,12 +1,12 @@
 div.navigation {
   
   position: absolute;
-  left: -1650px;
+  transform: translateX(-1650px);
   top: 50%;
   margin-top: 100px;
   width: 1730px;
   z-index: 100;
-  transition: opacity .5s;
+  transition: opacity .5s, transform 1.1s;
 
   ul {
     width: 4850px;
@@ -162,6 +162,7 @@ div.navigation {
     }
   }
     &.segue {
+      transform: translateX(-230px);
       .show-nav {
         opacity: 0;
      }
