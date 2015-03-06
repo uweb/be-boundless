@@ -51,7 +51,7 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   },
 
   transitionDone: function(event) {
-    if (event.originalEvent.propertyName == 'translateX'){
+    if (event.originalEvent.propertyName == 'transform'){
       if (this.hidden) {
         //trigger view stuff here
       }
