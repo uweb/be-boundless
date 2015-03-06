@@ -9,8 +9,7 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   message : '#message',
 
   events : {
-    'click li' : 'segueOut',
-    'click .show-nav' : 'segueIn'
+    'click li' : 'segueOut'
   },
 
   initialize : function( options )
@@ -18,10 +17,12 @@ BOUNDLESS.Navigation = Backbone.View.extend({
     _.bindAll( this,
      'transitionDone',
      'bounce',
+     'segueIn',
      'resetMargins'
      )
     this.$toggle = this.$('.show-nav')
     this.$el.on(BOUNDLESS.TransitionEvents, this.transitionDone);
+    this.on('slideclosed', this.segueIn);
     this.resetMargins()
   },
 
@@ -48,7 +49,9 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   segue : function()
   {
       // Backbone.history.fragement protects against linking directily to a slide
-      if ( this.hidden && ! Backbone.history.fragment ) this.segueIn()
+      if ( this.hidden && ! Backbone.history.fragment ) {
+        BOUNDLESS.router.default();
+      }
       if ( ! this.hidden && Backbone.history.fragment.length ) this.segueOut()
       if ( Backbone.history.fragment.length ) this.$el.removeClass( 'segue' )
   },
@@ -58,6 +61,7 @@ BOUNDLESS.Navigation = Backbone.View.extend({
       if (this.hidden) {
         //trigger view stuff here
         if (this.next_slide !== undefined) {
+          // consider moving this back to segue if transition to slide is too slow
           BOUNDLESS.router.navigate( this.next_slide, { trigger: true} )
         }
       }
