@@ -79,12 +79,15 @@
     margin-left: 29px;
     &.top {
       transform: rotate(30deg) translate(14px,-37px);
+      -webkit-transform: rotate(30deg) translate(14px,-37px);
     }
     &.left {
       transform: rotate(90deg) translate(0px,20px);
+      -webkit-transform: rotate(90deg) translate(0px,20px);
     }
     &.bottom {
       transform: rotate(150deg) translate(-14px,-37px);
+      -webkit-transform: rotate(150deg) translate(-14px,-37px);
     }
   }
   &.close {
@@ -148,10 +151,11 @@ div.fullscreen {
   
   .blurb {
     p {
-      color: white;
-      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+      color: #FFF;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
       font-size: 16px;
-      // padding-top: 10px;
+      font-weight: bold;
+      line-height: 1.6;
     }
   }
   .boundless-youtube {

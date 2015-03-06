@@ -64,30 +64,13 @@
         transition: opacity .25s;
       }
       &#topRight {
-        transform: scale(.8);
+        .scale(.8);
         height: 44px;
         width: 45px;
         top: 85px;
         right: -75px;
         border: none;
         border-radius: 0;
-        span {
-          display: block;
-          background-color: white;
-          height: 5px;
-          width: 45px;
-          margin: 0;
-          &.top {
-            transform: rotate(45deg) translate(5px, 5px);
-          }
-          &.left {
-            opacity: 0;
-            transform: rotate(90deg) translate(0px,14px);
-          }
-          &.bottom {
-            transform: rotate(135deg) translate(-2px,3px);
-          }
-        }
         &.close {
           right: 5px;
         }

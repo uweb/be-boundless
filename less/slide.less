@@ -16,12 +16,14 @@
   	left: 0;
 	overflow: hidden;
 	// TODO: use .transition less function
-	transition: -webkit-clip-path 700ms ease-in-out;
+	transition: all 700ms ease-in-out;
 	-webkit-clip-path: polygon(40% 100%, 40% 100%, 60% 0%, 60% 0%);
+	clip-path: polygon(40% 100%, 40% 100%, 60% 0%, 60% 0%);
 
  	&.open {
  	  // -webkit-clip-path: polygon(-5% 100%, 95% 100%, 105% 0%, 5% 0)
  	  -webkit-clip-path: polygon(-10% 100%, 100% 100%, 110% 0, 0% 0);
+ 	  clip-path: polygon(-10% 100%, 100% 100%, 110% 0, 0% 0);
  	}
 }
 
