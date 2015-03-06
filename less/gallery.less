@@ -53,15 +53,23 @@
 
         span.caption {
           position: absolute;
-          bottom: 0px;
-          left: 0px;
-          width: 100%;
-          text-align: center;
-          color: @purple;
-          background-color: white;
+          bottom: 20px;
+          width: 80%;
+          right: -20px;
+          text-align: left;
+          font-size: 15px;
+          line-height: 1.4;
+          color: #252525;
+          background-color: #FFF;
           z-index: 10;
           opacity: 0;
           transition: opacity 0.35s;
+          .skew(-15deg,0);
+          span {
+            .skew(15deg,0);
+            display: block;
+            padding: 10px 35px 15px 25px;
+          }
         }
 
         &.segue {
