@@ -29,7 +29,7 @@ class JSON_API_GAllery_Controller
         $attachment = get_post($id);
         $metadata =  wp_get_attachment_metadata( $id );
         $metadata['caption'] = $attachment->post_excerpt;
-        $image_src = wp_get_attachment_image_src( $id, large );
+        $image_src = apply_filters('wp_prepare_attachment_for_js', wp_get_attachment_image_src( $id, large ));
         $metadata['src'] = array(
           'url' => $image_src[0],
           'width' => $image_src[1],

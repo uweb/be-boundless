@@ -93,6 +93,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
   segueToDefault: function () {
     if (!this.defaultView) {
       this.defaultView = new BOUNDLESS.Video.Home({slug:'default'});
+      BOUNDLESS.navigation.trigger('slideclosed')
     }
     this.$slide.removeClass('open')
     this.$homepage.removeClass('blur')
@@ -110,8 +111,11 @@ BOUNDLESS.Router = Backbone.Router.extend({
   conceal : function( e )
   {
     // TODO: is there better exit event to bind to?
-    if ( ! Backbone.history.fragment.length && ['clip-path', 'opacity'].indexOf(e.originalEvent.propertyName) != -1 )
+    console.log(e);
+    if ( (Backbone.history.fragment.length === 0) && (['-webkit-clip-path', 'opacity'].indexOf(e.originalEvent.propertyName) != -1)){
+      BOUNDLESS.navigation.trigger('slideclosed');
       return this.currentView && this.currentView.remove()
+    }
   }
 
 })
