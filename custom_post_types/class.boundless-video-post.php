@@ -15,7 +15,7 @@ class Boundless_Video_Post extends Boundless_Custom_Post {
   function youtube_meta_box($post){
     $youtube_id = get_post_meta($post->ID, 'youtube', true);
     ?>
-    <p><input type='text' name='youtube'<?php if (!empty($youtube_id)){ ?> value='<?= $youtube_id ?>'<?php } ?>>
+    <p><input type='text' name='youtube'<?php if (!empty($youtube_id)){ ?> value='<?php echo $youtube_id ?>'<?php } ?>>
     <?php
     if (!empty($youtube_id)){
       ?>
