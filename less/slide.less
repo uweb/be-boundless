@@ -16,7 +16,7 @@
   	left: 0;
 	overflow: hidden;
 	// TODO: use .transition less function
-	transition: all 700ms ease-in-out;
+	transition: clip-path 700ms ease-in-out;
 	-webkit-clip-path: polygon(40% 100%, 40% 100%, 60% 0%, 60% 0%);
 	clip-path: polygon(40% 100%, 40% 100%, 60% 0%, 60% 0%);
 
@@ -29,11 +29,11 @@
 
 
 @-moz-document url-prefix() {
-  transition: opacity 700ms ease-in-out;
   #slide {
-	opacity: 0;
-  }
-  &.open {
-	opacity: 1;
+    transition: opacity 700ms ease-in-out;
+	  opacity: 0;
+    &.open {
+      opacity: 1;
+    }
   }
 }
