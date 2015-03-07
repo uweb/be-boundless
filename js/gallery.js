@@ -22,7 +22,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   '<div class="container">' +
     '<ul id="grid" class="masonry">' +
     '<% _.each( images, function( image ) { %> ' +
-     '<li class="segue"><img width="100%" src="<%= image.src.url %>" /><span class="caption"><span><%= image.caption %></span></span>' +
+     '<li class="segue"><img width="100%" src="<%= image.src.url %>" /><span class="caption"><p><%= image.caption %></p></span>' +
     ' <% }) %>' +
     '</ul>' +
   '</div>',

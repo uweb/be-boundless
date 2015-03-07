@@ -214,7 +214,6 @@ div.navigation {
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px), screen and (max-height : 900px) {
   div.navigation {
-    top: 5%;
     ul {
       .scale(.8,.8);
       transform-origin: 0 0;
@@ -223,6 +222,14 @@ div.navigation {
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+  html, body {
+    overflow-y: visible;
+    height: auto;
+  }
+
+  // Puts the stripes behind
+  #slide.open { z-index: 11 }
+
   div#thin-strip ul {
     li {
       &:nth-child(4),
@@ -234,20 +241,32 @@ div.navigation {
     }
   }
   div.navigation {
-    bottom: 10px;
-    left: 0px;
-    transform: translateX(230px); //counters js, remove when js is changed
+    top: 5%;
+    left: auto !important;
     width: 100%;
+    margin: 0;
+    &.segue {
+      .translate(0,0);
+      .show-nav { 
+        opacity: 1;
+      }
+    }
+    .show-nav {
+      margin-top: -90px;
+      opacity: 1;
+      right: 0;
+    }
     div#nav-wrap {
       width: 100%;
       overflow-x: auto;
       overflow-y: hidden;
-      position: absolute;
-      bottom:10px;
+      position: static;
       ul {
         margin-bottom: 0px;
         overflow-y:hidden;
-        .scale(.8,.8);
+        width: 1850px;
+        .scale(1,1);
+        .translate(-50px,0);
         li {
           height: 180px;
           span {
@@ -259,74 +278,38 @@ div.navigation {
         }
       }
     }
-    .show-nav {
-      margin-top: -90px;
-      opacity: 0;
-    }
+    
   }
-  #boundless-slide.blur {
-    div.navigation {
-      left: -1650px;
-      .show-nav{
-        opacity: 1;
-      }
-    }
-  }
+ // #boundless-slide.blur {
+ //   div.navigation {
+ //     left: -1650px;
+ //     .show-nav{
+ //       opacity: 1;
+ //     }
+ //   }
+ // }
 }
 
 @media only screen and (max-width: 320px){
-  div.navigation{
-    .show-nav {
-      right: -1200px;
-    }
-  }
+
 }
 
 @media only screen and (min-width: 321px) and (max-width: 360px){
-  div.navigation{
-    .show-nav {
-      right: -1155px;
-    }
-  }
+
 }
 
 @media only screen and (min-width: 361px) and (max-width: 370px){
-  div.navigation{
-    .show-nav {
-      right: -1140px;
-    }
-  }
+
 }
 
 @media only screen and (min-width: 371px) and (max-width:400px){
-  div.navigation{
-    .show-nav {
-      right: -1120px;
-    }
-  }
+
 }
 
 @media only screen and (min-width: 401px) and (max-width:480px){
-  div.navigation{
-    .show-nav {
-      right: -1100px;
-    }
-  }
+
 }
 
 @media only screen and (max-width:768px) and (min-height: 650px){
-  div.navigation {
-    div#nav-wrap {
-      ul {
-        margin-bottom: 10px;
-        li {
-          height: 225px;
-          span {
-            margin-top: 40px;
-          }
-        }
-      }
-    }
-    
-  }
+
 }
