@@ -1,4 +1,5 @@
 
+
 #boundless-slide {
 
     position: relative;
@@ -144,13 +145,28 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
+  #boundless-slide.blur {
+    .homepage-text,
+    .play {
+      display: none;
+    }
+    div.navigation div#nav-wrap ul {
+      .translate(-1410px,0);
+    }
+
+  }
+  
   #boundless-slide {
+    #boundless-background{
+      min-height: 800px;
+    }
     button.play {
-      right: 0px;
+      top: 50px;
+      bottom: auto;
+      right: 17px;
       width: 80px;
       height: 80px;
-      bottom: 220px;
-      top:inherit;
       background-size: 1010px;
       background-position-y:-390px;
       &:before {
@@ -160,6 +176,7 @@
       }
       &#topRight {
         background: transparent;
+        display: none;
       }
     }
     .udub-slant {
@@ -172,11 +189,11 @@
     }
     .navigation {
       .homepage-text {
-        left: 10px;
         padding: 30px;
         position: static;
         h1 {
-          font-size: 48px;
+          font-size: 38px;
+          width: 70%;
         }
         p {
           width: 100%;
@@ -188,15 +205,7 @@
   }
 }
 @media only screen and (max-width:768px) and (min-height: 650px){
-  #boundless-slide {
-    button.play {
-      bottom: 320px;
-    }
-    .navigation {
-      .homepage-text {
-      }
-    }
-  }
+
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
