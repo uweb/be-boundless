@@ -25,8 +25,6 @@ BOUNDLESS.Map.InfoWindow.prototype.render = function( marker )
       , position = overlayProjection.fromLatLngToDivPixel( point)
       , padding = 40
 
-  console.log( 'render' )
-
   if ( this.div.className.indexOf('open') != -1 )
     this.div.className += ' switch'
 
@@ -86,7 +84,7 @@ BOUNDLESS.Map.InfoWindow.prototype.onAdd = function()
 BOUNDLESS.Map.InfoWindow.prototype.draw = function()
 {
 
-  console.log( 'draw' )
+  //console.log( 'draw' )
 
 }
 
