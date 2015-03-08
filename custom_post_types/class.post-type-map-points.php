@@ -15,6 +15,7 @@ class Post_Type_Map_Points
   const POST_TYPE_NAME   = 'Map Point';
   const POST_TYPE_PLURAL = 'Map Points';
   const META_BOX_TITLE  = 'Location';
+  const CTA_META_BOX_TITLE  = 'Call to action link';
 
   // Register the post type, enqueue the map editor javascript and add the JSON controller
   // Add theme support for thumbnails
@@ -58,6 +59,7 @@ class Post_Type_Map_Points
   function add_meta_box()
   {
      add_meta_box(self::POST_TYPE, self::META_BOX_TITLE, array( $this, 'meta_box_html'), self::POST_TYPE );
+     add_meta_box('call_to_action', self::CTA_META_BOX_TITLE, array( $this, 'cta_meta_box_html'), self::POST_TYPE );
   }
 
   // The HTML for the map editor.
@@ -77,6 +79,27 @@ class Post_Type_Map_Points
 
       <input type="hidden" id="latitude" name="latitude" value="<?php echo $latitude ?>"></input>
       <input type="hidden" id="longitude" name="longitude" value="<?php echo $longitude ?>"></input>
+    </div>
+    <?php
+  }
+  
+  function cta_meta_box_html($post)
+  {
+     
+    $text = get_post_meta( $post->ID , 'cta_text', true );
+    $url  = get_post_meta( $post->ID , 'cta_url', true );
+
+    ?>
+    <div>
+      <p>
+      <label for='cta_text'>Text:</label>
+      </p><p>
+      <input id='cta_text' name='cta_text' type='text' value='<?php echo $text ?>'></input>
+      </p><p>
+      <label for='cta_url'>URL:</label>
+      </p><p>
+      <input id='cta_url' name='cta_url' type='text' value='<?php echo $url ?>'></input>
+      </p>
     </div>
     <?php
   }
@@ -106,6 +129,12 @@ class Post_Type_Map_Points
 
     if ( isset( $_POST['longitude'] ) )
         update_post_meta( $post_id, '_longitude', $_POST['longitude'] );
+
+    if ( isset( $_POST['cta_text'] ) )
+        update_post_meta( $post_id, 'cta_text', $_POST['cta_text'] );
+
+    if ( isset( $_POST['cta_url'] ) )
+        update_post_meta( $post_id, 'cta_url', $_POST['cta_url'] );
 
   }
 

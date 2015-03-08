@@ -39,13 +39,19 @@ BOUNDLESS.Map.InfoWindow.prototype.render = function( marker )
     '</div>' +
     '<div class="text">'+
       '<p><%= info.get("text") %></p>' +
+      '<% if (info.get("cta").text) { %>' +
+      '<p class="boundless-button">' +
+        '<span>' +
+          '<a href="<%= info.get("cta").url %>"><%= info.get("cta").text %></a>' +
+        '</span>' +
+      '</p>' +
+      '<% } %>' +
       '<span class="close"></span>' +
       '<span class="open"></span>' +
     '</div>' +
-    '<div class="arrow"></div>'
-  , { info : info })
-
-
+    '<div class="arrow"></div>',
+    { info : info }
+  );
 
   this.div.style.top  = position.y - ( this.div.offsetHeight + padding ) + 'px'
   this.div.style.left = position.x - this.div.offsetWidth / 2 + 'px'

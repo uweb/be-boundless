@@ -12,11 +12,12 @@ BOUNDLESS.Map = Backbone.View.extend({
       '<% }) %>' +
     '</ul>',
 
-    events : {
-      'click li' : 'handleClickListItems'
-    },
 
-    markers : [],
+  events : {
+      'click li' : 'handleClickListItems'
+  },
+
+  markers : [],
 
    // Google Map settings for the map and the marker
   settings : {
