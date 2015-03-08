@@ -12,6 +12,8 @@ BOUNDLESS.Map = Backbone.View.extend({
       '<% }) %>' +
     '</ul>',
 
+  header : '<h2 class="map-title">Campus Icons and Hidden Gems</h2>',
+
 
   events : {
       'click li' : 'handleClickListItems'
@@ -195,7 +197,7 @@ BOUNDLESS.Map = Backbone.View.extend({
       'removeInfoWindows',
       'render',
       'segueIn',
-      'showListItems'
+      'showOverlays'
     )
     this.points = new BOUNDLESS.Map.Points()
     this.points.on( 'sync', this.render )
@@ -212,12 +214,13 @@ BOUNDLESS.Map = Backbone.View.extend({
     this.bounds = new google.maps.LatLngBounds()
     this.points.each( this.putMarkersOnMap );
     this.map.fitBounds(this.bounds);
-    this.showListItems()
+    this.showOverlays();
 
   },
 
   // Displays a list of the Points of Interest
-  showListItems : function() {
+  showOverlays : function() {
+    this.$el.append(this.header);
     this.$el.append( _.template( this.listItems, { points: this.points.toJSON() } ) )
   },
 
