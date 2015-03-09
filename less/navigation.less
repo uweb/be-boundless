@@ -1,12 +1,14 @@
 div.navigation {
   
   position: absolute;
-  transform: translateX(-1650px);
+  .translate(-1650px,0);
   top: 50%;
   margin-top: 100px;
   width: 1730px;
   z-index: 100;
   transition: opacity .5s, transform .8s;
+  -webkit-transition: opacity .5s, transform .8s;
+  -moz-transition: opacity .5s, transform .8s;
 
   ul {
     width: 4850px;
@@ -162,7 +164,7 @@ div.navigation {
     }
   }
     &.segue {
-      transform: translateX(-230px);
+      .translate(-230px,0);
       .show-nav {
         opacity: 0;
      }
@@ -227,6 +229,7 @@ div.navigation {
     height: auto;
   }
 
+
   // Puts the stripes behind
   #slide.open { z-index: 11 }
 
@@ -252,9 +255,11 @@ div.navigation {
       }
     }
     .show-nav {
-      margin-top: -90px;
       opacity: 1;
       right: 0;
+      bottom: 50px;
+      top: auto;
+      .translate(1320px, 0);
     }
     div#nav-wrap {
       width: 100%;
