@@ -13,6 +13,8 @@
         <link rel='stylesheet' href='<?php bloginfo("stylesheet_directory"); ?>/loading-bar/mprogress.css'/>
         <script src='<?php bloginfo("stylesheet_directory"); ?>/loading-bar/mprogress.min.js'></script>
 
+        <script src="//cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js"></script>
+
 
         <!--[if lt IE 9]>
             <script src="<?php bloginfo("template_directory"); ?>/assets/ie/js/html5shiv.js" type="text/javascript"></script>

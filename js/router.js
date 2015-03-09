@@ -63,7 +63,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
   execute: function(callback, args) {
 
       this.mprogress.start()
-      this.$homepage.addClass('blur')
+      // this.$homepage.addClass('blur')
       BOUNDLESS.navigation.segue()
 
       if (callback) callback.apply(this, args);
@@ -96,7 +96,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
       BOUNDLESS.navigation.trigger('slideclosed')
     }
     this.$slide.removeClass('open')
-    this.$homepage.removeClass('blur')
+    // this.$homepage.removeClass('blur')
 
     this.mprogress.end()
 
