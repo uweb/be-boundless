@@ -53,12 +53,10 @@ BOUNDLESS.Video.View = Backbone.View.extend({
     //this is the instantiated collection
     this.collection = BOUNDLESS.videos;
     this.slug = options.slug;
-    console.log('here')
     if (this.collection.is_ready) {
       this.data_prep(options);
     }
     else {
-      console.log('never called?')
       this.collection.view_to_render = this;
     }
   },
@@ -100,7 +98,6 @@ BOUNDLESS.Video.View = Backbone.View.extend({
         'wmode'         : 'transparent'
       }
     }
-    console.log(player_vars)
     this.uwplayer = new YT.Player('video' + this.model.get('video'), {
       videoId: this.model.get('video'),
       playerVars: player_vars,

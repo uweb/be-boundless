@@ -25,8 +25,6 @@ BOUNDLESS.Map.InfoWindow.prototype.render = function( marker )
       , position = overlayProjection.fromLatLngToDivPixel( point)
       , padding = 40
 
-  console.log( 'render' )
-
   if ( this.div.className.indexOf('open') != -1 )
     this.div.className += ' switch'
 
@@ -39,13 +37,19 @@ BOUNDLESS.Map.InfoWindow.prototype.render = function( marker )
     '</div>' +
     '<div class="text">'+
       '<p><%= info.get("text") %></p>' +
+      '<% if (info.get("cta").text) { %>' +
+      '<p class="boundless-button">' +
+        '<span>' +
+          '<a href="<%= info.get("cta").url %>"><%= info.get("cta").text %></a>' +
+        '</span>' +
+      '</p>' +
+      '<% } %>' +
       '<span class="close"></span>' +
       '<span class="open"></span>' +
     '</div>' +
-    '<div class="arrow"></div>'
-  , { info : info })
-
-
+    '<div class="arrow"></div>',
+    { info : info }
+  );
 
   this.div.style.top  = position.y - ( this.div.offsetHeight + padding ) + 'px'
   this.div.style.left = position.x - this.div.offsetWidth / 2 + 'px'
@@ -58,13 +62,9 @@ BOUNDLESS.Map.InfoWindow.prototype.segueIn = function()
 
   if ( this.div.className.indexOf('open') === -1 )
     this.div.className += ' open'
-    // can look for an event to bind to, but this should do fine for now
-    _.delay(function () {
-      this.map.panBy(0, (this.div.offsetHeight / -2));
-    }.bind(this), 1100);
-    //}.bind(this), $(this.div).css('transitionDelay'));  must turn that into seconds
 
- this.div.className = this.div.className.replace( ' switch' , '' )
+  this.map.panBy(0, (this.div.offsetHeight / -2));
+  this.div.className = this.div.className.replace( ' switch' , '' )
 }
 
 // Called when the overlay.setMap function is called
@@ -80,7 +80,7 @@ BOUNDLESS.Map.InfoWindow.prototype.onAdd = function()
 BOUNDLESS.Map.InfoWindow.prototype.draw = function()
 {
 
-  console.log( 'draw' )
+  //console.log( 'draw' )
 
 }
 

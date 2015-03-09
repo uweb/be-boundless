@@ -30,6 +30,7 @@ class UW
         require_once($parent . 'class.images.php');
         require_once($parent . 'class.squish_bugs.php');
         require_once($parent . 'class.filters.php');
+        require_once($child  . 'class.uw-boundless-filters.php');
         require_once($parent . 'class.uw-oembeds.php');
         require_once($parent . 'class.googleapps.php');
         require_once($parent . 'class.mimes.php');
@@ -57,7 +58,7 @@ class UW
         $this->Styles            = new UW_Boundless_Styles;
         $this->Images            = new UW_Images;
         $this->SquishBugs        = new UW_SquishBugs;
-        $this->Filters           = new UW_Filters;
+        $this->Filters           = new UW_Boundless_Filters;
         $this->OEmbeds           = new UW_OEmbeds;
         $this->Mimes             = new UW_Mimes;
         $this->Users             = new UW_Users;

@@ -111,7 +111,6 @@ BOUNDLESS.Router = Backbone.Router.extend({
   conceal : function( e )
   {
     // TODO: is there better exit event to bind to?
-    console.log(e);
     if ( (Backbone.history.fragment.length === 0) && (['-webkit-clip-path', 'opacity'].indexOf(e.originalEvent.propertyName) != -1)){
       BOUNDLESS.navigation.trigger('slideclosed');
       return this.currentView && this.currentView.remove()

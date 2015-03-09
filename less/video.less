@@ -51,7 +51,6 @@
   height: 220px;
   width: 220px;
   position: absolute;
-  //top: calc(~"50% - 175px");
   top: calc(~"50% - 132px");
   right: calc(~"50% - -130px");
   z-index: 20;
@@ -166,6 +165,7 @@ div.fullscreen {
     z-index: 1;
     transition: opacity .25s;
     &.behind {
+      pointer-events:none;
       opacity: 0;
       z-index: -10;
     }
@@ -177,14 +177,22 @@ div.fullscreen {
   div.fullscreen {
     h2 {
       font-size: 45px;
+      padding-right: 60px;
+    }
+    .blurb p {
+      font-size: 15px;
+      line-height: 1.5;
     }
     .title-blurb {
         position: static;
-        padding: 100px 50px;
+        padding: 100px 60px 100px 70px;
+        width: auto;
     }
   }
   #slide button.play {
-    position: static;
+    position: absolute;
+    top: 60px;
+    right: -40px;
     .scale(.25,.25);
   }
 }

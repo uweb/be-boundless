@@ -30,14 +30,14 @@
 
     &.blur {
 
-      #boundless-background {
-        -webkit-filter: blur(2px);
-        -moz-filter: blur(2px);
-        -o-filter: blur(2px);
-        -ms-filter: blur(2px);
-        filter: blur(2px);
-        opacity: .8;
-      }
+    #boundless-background {
+      -webkit-filter: blur(2px);
+      -moz-filter: blur(2px);
+      -o-filter: blur(2px);
+      -ms-filter: blur(2px);
+      filter: blur(2px);
+      opacity: .8;
+    }
 
     }
     button.play {
@@ -50,7 +50,7 @@
       z-index: 20;
       border: none;
       outline: none;
-      transition: all .25s;
+      .transition(all .25s);
       background: url(less/svg/boundless.svg) no-repeat  no-repeat 0px -600px;
       background-size: 1650px;
       &:before {
@@ -72,6 +72,25 @@
         right: -75px;
         border: none;
         border-radius: 0;
+        padding:0;
+        background: rgba(0,0,0,0);
+        span {
+          display:block;
+          height: 5px;
+          width: 45px;
+          margin: 0;
+          background-color: white;
+          &.top {
+            transform: rotate(45deg) translate(5px, 5px);
+          }
+          &.left {
+            opacity: 0;
+            transform: rotate(90deg) translate(0px,14px);
+          }
+          &.bottom {
+            transform: rotate(135deg) translate(-2px,3px);
+          }
+        }
         &.close {
           right: 5px;
         }
@@ -147,12 +166,11 @@
 @media only screen and (max-width : 768px) {
 
   #boundless-slide.blur {
-    .homepage-text,
+    .homepage-text {
+      .translate(-1410px,0);
+    }
     .play {
       display: none;
-    }
-    div.navigation div#nav-wrap ul {
-      .translate(-1410px,0);
     }
 
   }
@@ -164,11 +182,15 @@
      right: 0;
      bottom: 0;
      #boundless-background {
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        height: 100%;
+        width: 100%;
         position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        background-position: center center;
+        background-repeat: no-repeat;
      }   
     button.play {
       top: 50px;
