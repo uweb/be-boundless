@@ -36,7 +36,7 @@ BOUNDLESS.Navigation = Backbone.View.extend({
     // Allows for clicking any part of the navigation tile
     // Protected by an event for browser back/forward navigation
     if ( e ) {
-      this.next_slide = $(e.currentTarget).data().route; 
+      this.next_slide = $(e.currentTarget).data().route;
     }
   },
 

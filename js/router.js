@@ -9,7 +9,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
   routes : {
     "!/map" : "map",
     "!/gallery" : "gallery",
-    "!/video/:video" : "video",
+    "!/video/:video" : "segueToVideo",
     "" : "default"
   },
 
@@ -45,17 +45,17 @@ BOUNDLESS.Router = Backbone.Router.extend({
   default : function() {
     this.prepSegue(this.currentView, this.segueToDefault);
   },
-  
+
   prepSegue : function (activeView, segueCallback, viewargs){
-    if (activeView && activeView.preRemove) {
-      activeView.trigger('preRemove').on('removeReady', function() {
-        segueCallback(viewargs);
-        activeView.off('removeReady');
-      });
-    }
-    else {
+    // if (activeView && activeView.preRemove) {
+    //   activeView.trigger('preRemove').on('removeReady', function() {
+    //     segueCallback(viewargs);
+    //     activeView.off('removeReady');
+    //   });
+    // }
+    // else {
       segueCallback(viewargs);
-    }
+    // }
   },
 
   // Preforms before each segue
@@ -86,8 +86,8 @@ BOUNDLESS.Router = Backbone.Router.extend({
   },
 
   segueToVideo : function (video){
-    this.currentView = new BOUNDLESS.Video.View({slug:video});
-    this.currentView.on('slideloaded', this.reveal);
+    // this.currentView = new BOUNDLESS.Video({ slug:video })
+    // this.currentView.on('slideloaded', this.reveal);
   },
 
   segueToDefault: function () {
