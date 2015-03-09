@@ -22,6 +22,28 @@
          width: 90px;
          height: 90px;
        }
+       &.boundless-button {
+         width: auto;
+         float: left;
+         span {
+           a {
+             padding: 10px 30px 10px 70px;
+             margin: 0 -10px 0 -10px;
+             position: static;
+             width: auto;
+             height: auto;
+             right: 0;
+             background: @purple;
+           }
+         }
+         &.right {
+           span {
+            a {
+             padding: 10px 70px 10px 30px;
+            }
+           }
+         }
+       }
      }
 
     h1 {
