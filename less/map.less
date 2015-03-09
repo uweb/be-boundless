@@ -1,5 +1,30 @@
 #map {
  // margin-top: 92px;
+  p.boundless-button{
+    border-color: @purple;
+    span {
+      border-color: @purple;
+      a {
+        color: @purple;
+      }
+    }
+    &:hover {
+      color: @darkgold;
+      border-color: @darkgold;
+      span {
+        border-color: @darkgold;
+        a {
+          color: @darkgold;
+        }
+      }
+    }
+    &#main_cta {
+      position: absolute;
+      bottom: 20px;
+      right: 0px;
+      z-index: 20;
+    }
+  }
 }
 
 #map-overlay, #map {

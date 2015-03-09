@@ -12,7 +12,10 @@ BOUNDLESS.Map = Backbone.View.extend({
       '<% }) %>' +
     '</ul>',
 
-  header : '<h2 class="map-title">Campus Icons and Hidden Gems</h2>',
+  overlays: '<h2 class="map-title">Campus Icons and Hidden Gems</h2>' +
+            '<p id="main_cta" class="boundless-button right"><span>' +
+              '<a href="https://www.uw.edu/maps">Explore more</a>' +
+            '</span></p>',
 
 
   events : {
@@ -220,7 +223,7 @@ BOUNDLESS.Map = Backbone.View.extend({
 
   // Displays a list of the Points of Interest
   showOverlays : function() {
-    this.$el.append(this.header);
+    this.$el.append(this.overlays);
     this.$el.append( _.template( this.listItems, { points: this.points.toJSON() } ) )
   },
 
