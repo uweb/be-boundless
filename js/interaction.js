@@ -27,11 +27,10 @@ BOUNDLESS.Navigation = Backbone.View.extend({
 
   segueOut : function( e )
   {
-    this.$homepage.addClass('blur')
     this.$el.removeClass('segue')
     // We have to animate the marginRight instead of using 'resetMargins' to avoid an animation jump after its completed
     this.$el.velocity({ translateZ: 0, translateX: -1650}, BOUNDLESS.AnimationDuration, 'easeInOutQuad', this.complete )
-      .find('li').animate({marginRight: 30 }, BOUNDLESS.AnimationDuration )
+      // .find('li').animate({marginRight: 30 }, BOUNDLESS.AnimationDuration, this.complete )
 
     this.hidden = true
     // Allows for clicking any part of the navigation tile
@@ -42,11 +41,13 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   complete : function()
   {
     // todo: more sublte way to implementing this
+    this.resetMargins()
+    // this.$homepage.addClass('blur')
     this.trigger('complete')
   },
 
   segueIn: function( e ) {
-     this.$homepage.removeClass('blur')
+     // this.$homepage.removeClass('blur')
      this.$el.addClass('segue')
      this.$el.velocity( "reverse", {complete : this.bounce })
      this.hidden = false

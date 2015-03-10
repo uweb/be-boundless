@@ -49,8 +49,9 @@ BOUNDLESS.Gallery = Backbone.View.extend({
     this.trigger('slideloaded')
   },
 
-  setMasonry : function()
+  setMasonry : function( images )
   {
+    console.log('images loaded', images )
     this.masonry = new Masonry( document.getElementById('grid'), this.settings )
     this.$grid = this.$el.find('#grid');
     this.images.each( this.setDimensions )
@@ -70,16 +71,15 @@ BOUNDLESS.Gallery = Backbone.View.extend({
     $element.attr({ id: model.cid })
 
     var original = {
-      zIndex : 0,
       width : $element.width(),
       left : $element.position().left,
       top : $element.position().top
     } ,
 
     dimensions = _.extend( {
+      translateZ: "0px",
       width : $element.width(),
       left : 0,
-      zIndex : 10
     }, this.getImagePosition( $element ) )
 
     model.set( {'dimensions' : dimensions, 'original' : original } )
@@ -95,12 +95,12 @@ BOUNDLESS.Gallery = Backbone.View.extend({
     // todo : shouldn't need the open variable here
     if ( open ) return this.close()
 
-    $this
-      .css( _.extend( model.get('dimensions'),  { top :  this.$el.scrollTop() } ) )
-      .addClass('active')
-      .siblings().removeClass('active').addClass('inactive')
-
     model.set( 'open', true )
+    $this
+      .addClass('active')
+      .velocity( _.extend( model.get('dimensions'),  { top :  this.$el.scrollTop() } ), 500 )
+      .siblings().addClass('inactive')
+
 
     return false
   },
@@ -112,7 +112,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
     if ( open )
     {
       open.set( 'open', false )
-      return this.$grid.find('#'+open.cid).css( open.get('original') ).siblings().andSelf().removeClass('active inactive')
+      return this.$grid.find('#'+open.cid).velocity( 'reverse' ).siblings().andSelf().removeClass('active inactive')
     }
 
   },
