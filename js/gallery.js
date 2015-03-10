@@ -4,13 +4,9 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   id : 'gallery',
   tagName : 'div',
 
-  $active_container : false,
-  is_resetting      : false,
-
   events : {
-    'click'    : 'resetContainers',
-    'scroll'   : 'scrollHandler',
-    'click li' : 'clickImage'
+    'scroll'   : 'close',
+    'click li' : 'open'
   },
 
   settings : {
@@ -22,7 +18,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   '<div class="container">' +
     '<ul id="grid" class="masonry">' +
     '<% _.each( images, function( image ) { %> ' +
-     '<li class="segue"><img width="100%" src="<%= image.src.url %>" /><span class="caption"><p><%= image.caption %></p></span>' +
+     '<li class="segue" ><img width="100%" src="<%= image.src.url %>" /><span class="caption"><p><%= image.caption %></p></span>' +
     ' <% }) %>' +
     '</ul>' +
   '</div>',
@@ -35,11 +31,12 @@ BOUNDLESS.Gallery = Backbone.View.extend({
     _.bindAll( this,
       'animateImageIn',
       'render',
+      'open',
+      'close',
       'setMasonry',
-      'scrollHandler',
-      'removeInactive',
-      'resetContainers'
-    );
+      'setDimensions',
+      'getImagePosition'
+    )
     this.images = new BOUNDLESS.Gallery.Images()
     this.images.on( 'sync', this.render )
   },
@@ -47,17 +44,16 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   render : function()
   {
     BOUNDLESS.replaceSlide(this.$el.html( _.template( this.template, {images : this.images.toJSON() }) ) )
-    this.$image_containers = this.$el.find('li');
-    this.$image_containers.on(BOUNDLESS.TransitionEvents, this.removeInactive)
     this.$el.imagesLoaded( this.el, this.setMasonry )
     this.$el.find('li').on('inview', this.animateImageIn )
-    this.$grid = this.$el.find('#grid');
     this.trigger('slideloaded')
   },
 
   setMasonry : function()
   {
     this.masonry = new Masonry( document.getElementById('grid'), this.settings )
+    this.$grid = this.$el.find('#grid');
+    this.images.each( this.setDimensions )
   },
 
   animateImageIn : function(e, isInView, visiblePartX, visiblePartY)
@@ -67,83 +63,82 @@ BOUNDLESS.Gallery = Backbone.View.extend({
       $(e.currentTarget).removeClass('segue');
   },
 
-  clickImage : function(event) {
-    event.stopPropagation();
-    var $target = $(event.target);
-    if ($target.prop("tagName") != 'LI'){
-      $target = $target.parents('li');
-    }
-    // this behaviour will prevent the thing from closing if you click on it (and not a different one)
-    // closing on any click would allow us to simplify the logic
-    if(!this.$active_container){
-      this.openImage($target);
-    }
-    else if($target[0] != this.$active_container[0]){
-      this.resetContainers();
-    }
-  },
-  
-  openImage : function($container){
-    this.$active_container = $container;
-    this.$image_containers.addClass('inactive');
-    var width = $container.width(),
-        left = 0,
-        new_width = this.$grid.width() - 30,
-        max_height = $(window).outerHeight(true) - 150,
-        proj_height = (new_width / width) * $container.height();
-    if (new_width < width) {
-      new_width = width;
-    }
-    $container.removeClass('inactive').addClass('active');
-    $container.data('left', $container.position().left);
-    $container.data('top', $container.position().top);
-    $container.data('width', width);
-    if (proj_height > max_height){
-      var adj_new_width = new_width * (max_height / proj_height);
-      left = (new_width - adj_new_width) / 2;
-      new_width = adj_new_width;
-    }
-    $container.css({
-      left  : left,
-      top   : this.$el.scrollTop(),
-      width : new_width,
-    });
+  setDimensions : function( model, index )
+  {
+    var $element = this.$el.find('li').eq( index )
+
+    $element.attr({ id: model.cid })
+
+    var original = {
+      zIndex : 0,
+      width : $element.width(),
+      left : $element.position().left,
+      top : $element.position().top
+    } ,
+
+    dimensions = _.extend( {
+      width : $element.width(),
+      left : 0,
+      zIndex : 10
+    }, this.getImagePosition( $element ) )
+
+    model.set( {'dimensions' : dimensions, 'original' : original } )
+
   },
 
-  scrollHandler : function() {
-    if (this.$active_container){
-      this.resetContainers();
-    }
+  open : function(e){
+
+    var $this = $( e.currentTarget )
+    , model = this.images.get( $this.attr('id'))
+    , open = this.images.findWhere({ open : true } )
+
+    // todo : shouldn't need the open variable here
+    if ( open ) return this.close()
+
+    $this
+      .css( _.extend( model.get('dimensions'),  { top :  this.$el.scrollTop() } ) )
+      .addClass('active')
+      .siblings().removeClass('active').addClass('inactive')
+
+    model.set( 'open', true )
+
+    return false
   },
 
-  resetContainers : function (){
-    if (this.$active_container){
-      $container = this.$active_container;
-      $container.removeClass('active');
-      $container.css({
-        left:$container.data('left'),
-        top:$container.data('top'),
-        width:$container.data('width')
-      });
-      this.is_resetting = true;
+  close : function()
+  {
+    var open = this.images.findWhere({ open : true } )
+
+    if ( open )
+    {
+      open.set( 'open', false )
+      return this.$grid.find('#'+open.cid).css( open.get('original') ).siblings().andSelf().removeClass('active inactive')
     }
+
   },
 
-  removeInactive : function (event) {
-    if (this.is_resetting && (event.originalEvent.propertyName == 'width')){
-      this.$image_containers.removeClass('inactive');
-      this.$active_container = false;
-      this.is_resetting = false;
-    }
+  getImagePosition : function( element )
+  {
+    var adjust = ( this.$grid.width() / element.width() ) * element.height() > $(window).outerHeight() * 0.8
+    , width       =  adjust ? ( element.width() / element.height() ) * $(window).outerHeight() * 0.8 : this.$grid.width()
+    , left           = adjust ? ( this.$grid.width() - width  - 30 ) / 2 : 0
+    return  { width : width, left : left }
+  },
+
+})
+
+// Gallery Image Model
+BOUNDLESS.Gallery.Image = Backbone.Model.extend({
+
+  defaults  : {
+    open : false,
+    original : {},
+    dimensions : {}
   }
 
 })
 
-
-// Map Point Model
-BOUNDLESS.Gallery.Image = Backbone.Model.extend({})
-
-// Map Point Collection
+// Gallery Images Collection
 BOUNDLESS.Gallery.Images = Backbone.Collection.extend({
 
   url : '?json=gallery.get_gallery',
@@ -158,10 +153,9 @@ BOUNDLESS.Gallery.Images = Backbone.Collection.extend({
 
   parse : function( data )
   {
-    if (data.status == 'error'){
-      this.error(data.error);
-      return;
-    }
+    if ( data.status == 'error' )
+      return this.error( data.error )
+
     return data[0].images
   },
 
