@@ -35,7 +35,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
   },
 
   gallery : function () {
-    BOUNDLESS.navigation.on( 'complete', this.segueToGallery )
+    BOUNDLESS.navigation.once( 'complete', this.segueToGallery )
   },
 
   video : function (video) {
@@ -62,7 +62,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
   // Should hide or show the navigation
   execute: function(callback, args) {
 
-      this.mprogress.start()
+      // this.mprogress.start()
 
       BOUNDLESS.navigation.segue()
 
@@ -91,20 +91,20 @@ BOUNDLESS.Router = Backbone.Router.extend({
   },
 
   segueToDefault: function () {
-    if (!this.defaultView) {
-      this.defaultView = new BOUNDLESS.Video.Home({slug:'default'});
-      BOUNDLESS.navigation.trigger('slideclosed')
-    }
+    // if (!this.defaultView) {
+    //   this.defaultView = new BOUNDLESS.Video.Home({slug:'default'});
+    //   BOUNDLESS.navigation.trigger('slideclosed')
+    // }
     this.$slide.removeClass('open')
     // this.$homepage.removeClass('blur')
 
-    this.mprogress.end()
+    // this.mprogress.end()
 
     if ( this.currentView ) this.currentView.unbind('slideloaded')
   },
 
   reveal : function () {
-    this.mprogress.end()
+    // this.mprogress.end()
     this.$slide.addClass('open')
   },
 
