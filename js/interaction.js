@@ -57,9 +57,10 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   },
 
   transitionDone: function(event) {
-    if (event.originalEvent.propertyName == 'transform'){
+    if (['transform', '-webkit-transform', '-moz-transform', '-o-transform', '-ms-transform'].indexOf(event.originalEvent.propertyName) !== -1){
       if (this.hidden) {
         //trigger view stuff here
+        this.resetMargins();
         if (this.next_slide !== undefined) {
           // consider moving this back to segue if transition to slide is too slow
           BOUNDLESS.router.navigate( this.next_slide, { trigger: true} )
