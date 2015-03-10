@@ -35,7 +35,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
   },
 
   gallery : function () {
-    this.prepSegue(this.defaultView, this.segueToGallery);
+    BOUNDLESS.navigation.on( 'complete', this.segueToGallery )
   },
 
   video : function (video) {
@@ -63,10 +63,10 @@ BOUNDLESS.Router = Backbone.Router.extend({
   execute: function(callback, args) {
 
       this.mprogress.start()
-      // this.$homepage.addClass('blur')
+
       BOUNDLESS.navigation.segue()
 
-      if (callback) callback.apply(this, args);
+      if ( callback ) callback.apply(this, args);
   },
 
   // If the router is map create a new map
