@@ -259,14 +259,19 @@ div.navigation {
     &.segue {
       // .translate(0,0);
       .show-nav {
-        opacity: 1;
+        opacity: 0;
+        left: 50%;
       }
     }
     .show-nav {
-      margin-top: -90px;
-      opacity: 1;
+      position:relative;
       right: 0;
-
+      z-index: 100;
+      opacity: 1;
+      left: 100%;
+      transition: left .5s, opacity .5s;
+      margin-top: 0;
+      top: -140px;
     }
     div#nav-wrap {
       width: 100%;
@@ -277,6 +282,7 @@ div.navigation {
         margin-bottom: 0px;
         overflow-y:hidden;
         width: 1850px;
+        z-index: 200;
         .scale(1,1);
         .translate(-50px,0);
 

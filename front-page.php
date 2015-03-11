@@ -4,7 +4,7 @@
         <div id="boundless-background"></div>
         <button id="topRight" class="play"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>
 
-        <div class="navigation">
+        <div class="navigation segue">
 
             <?php while( have_posts() ) :       the_post(); ?>
 
