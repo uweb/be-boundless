@@ -11,7 +11,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
     "!/map" : "map",
     "!/gallery" : "gallery",
     "!/video/:video" : "video",
-    "" : "default"
+    "" : "segueToDefault"
   },
 
   initialize : function(options) {
@@ -32,7 +32,6 @@ BOUNDLESS.Router = Backbone.Router.extend({
   },
 
   map : function () {
-    // this.prepSegue(this.defaultView, this.segueToMap);
     BOUNDLESS.navigation.once( 'complete', this.segueToMap )
   },
 
@@ -43,25 +42,11 @@ BOUNDLESS.Router = Backbone.Router.extend({
   video : function (video) {
     this.videoSlug = video
     BOUNDLESS.navigation.once( 'complete', this.segueToVideo )
-    // this.prepSegue(this.defaultView, this.segueToVideo, video);
   },
 
-  default : function() {
-    NProgress.remove()
-    this.prepSegue(this.currentView, this.segueToDefault);
-  },
-
-  prepSegue : function (activeView, segueCallback, viewargs){
-    // if (activeView && activeView.preRemove) {
-    //   activeView.trigger('preRemove').on('removeReady', function() {
-    //     segueCallback(viewargs);
-    //     activeView.off('removeReady');
-    //   });
-    // }
-    // else {
-      segueCallback(viewargs);
-    // }
-  },
+  // default : function() {
+  //   // this.prepSegue(this.currentView, this.segueToDefault);
+  // },
 
   // Preforms before each segue
   // Should hide or show the navigation
@@ -69,7 +54,6 @@ BOUNDLESS.Router = Backbone.Router.extend({
 
       if ( Backbone.history.fragment.length )
        NProgress.start()
-      // this.mprogress.start()
 
       BOUNDLESS.navigation.segue()
 
@@ -98,14 +82,8 @@ BOUNDLESS.Router = Backbone.Router.extend({
   },
 
   segueToDefault: function () {
-    // if (!this.defaultView) {
-    //   this.defaultView = new BOUNDLESS.Video.Home({slug:'default'});
-    //   BOUNDLESS.navigation.trigger('slideclosed')
-    // }
+    NProgress.remove()
     this.$slide.removeClass('open')
-    // this.$homepage.removeClass('blur')
-
-    // this.mprogress.end()
 
     NProgress.remove()
     if ( this.currentView ) this.currentView.unbind('slideloaded')
@@ -113,7 +91,6 @@ BOUNDLESS.Router = Backbone.Router.extend({
 
   reveal : function () {
     NProgress.done()
-    // this.mprogress.end()
     this.$slide.addClass('open')
   },
 
