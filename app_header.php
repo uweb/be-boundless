@@ -9,10 +9,6 @@
 
         <?php wp_head(); ?>
 
-        <link rel='stylesheet' href='<?php bloginfo("stylesheet_directory"); ?>/loading-bar/mprogress.css'/>
-        <script src='<?php bloginfo("stylesheet_directory"); ?>/loading-bar/mprogress.min.js'></script>
-
-
         <!--[if lt IE 9]>
             <script src="<?php bloginfo("template_directory"); ?>/assets/ie/js/html5shiv.js" type="text/javascript"></script>
             <script src="<?php bloginfo("template_directory"); ?>/assets/ie/js/respond.js" type="text/javascript"></script>

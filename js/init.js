@@ -27,7 +27,9 @@ BOUNDLESS.initialize = function( $ )
   // BOUNDLESS.uwtiles = new BOUNDLESS.UWTiles()
 
   // get and parse video data now, build view later
-  BOUNDLESS.videos = new BOUNDLESS.Videos()
+  // BOUNDLESS.videos = new BOUNDLESS.Videos()
+
+  // BOUNDLESS.api = new BOUNDLESS.Video.API()
   // Initialize the search
   BOUNDLESS.search = new BOUNDLESS.Search()
 

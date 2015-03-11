@@ -1,4 +1,17 @@
 
+// Hides the title from the main boundless video
+
+#video.boundless
+{
+  .title-blurb{ display: none;}
+  .play {
+    visibility: hidden;
+    &.close {
+      visibility: visible;
+    }
+  }
+}
+
 // Hides superfluous stuff on video play
 .video-active {
   .navigation,
@@ -196,7 +209,7 @@ div.fullscreen {
       height: 257px;
     }
   }
-  
+
   .blurb {
     p {
       color: #FFF;

@@ -1,39 +1,18 @@
 // Video slide view
-// Temporary rendering
-BOUNDLESS.youtube_api_ready = false;
 
-window.onYouTubeIframeAPIReady = function(){
-  BOUNDLESS.youtube_api_ready = true;
-  $(this).trigger('youtube_api_ready');
-}
+BOUNDLESS.Video = Backbone.View.extend({
 
-BOUNDLESS.Video = Backbone.Model.extend({});
-
-BOUNDLESS.Videos = Backbone.Collection.extend({
-
-  model: BOUNDLESS.Video,
-  is_ready: false,
-  view_to_render: undefined,
-
-  initialize: function () {
-    _.bindAll(this, 'fetch_success');
-    this.url = '?json=boundless_video.get_videos';
-    // TODO: 'this can be done with Backbone (view) events instead of setting booleans
-    this.fetch({success: this.fetch_success});
-  },
-
-  fetch_success: function () {
-    this.is_ready = true;
-    if(this.view_to_render !== undefined){
-      this.view_to_render.data_prep();
-    }
-  }
-
-});
-
-BOUNDLESS.Video.View = Backbone.View.extend({
-
-  template : '<div class="title-blurb"><h2 class="video-title"><%= title %></h2><div class="blurb"><%= text %></div></div><button class="play" aria-controls="video<%= video %>"><span class="top"></span><span class="left"></span><span class="bottom"></span></button><div class="behind boundless-youtube" id="video<%= video %>" aria-label="Video: <%= title %>"></div>',
+  template :
+     '<div class="title-blurb">' +
+     '<h2 class="video-title"><%= title %></h2>' +
+      '<div class="blurb"><%= text %></div>' +
+    '</div>' +
+    '<button class="play" aria-controls="video<%= video %>">' +
+      '<span class="top"></span>' +
+      '<span class="left"></span>' +
+      '<span class="bottom"></span>' +
+     '</button>' +
+    '<div class="behind boundless-youtube" id="video<%= video %>" aria-label="Video: <%= title %>"></div>',
 
   tagname   : 'div',
   id        : 'video',
@@ -41,62 +20,55 @@ BOUNDLESS.Video.View = Backbone.View.extend({
 
   is_playing: false,
   preRemove : false,
-  modest    : true,
 
   events : {
     'click button.play': 'buttonClick',
     'keyup': 'checkEscape'
   },
 
-  initialize : function (options) {
-    _.bindAll(this, 'render', 'data_prep', 'buttonClick', 'checkEscape', 'onReady', 'onStateChange', 'youtube_iframe', 'buttonTransitionDone', 'iframeTransitionDone');
-    //this is the instantiated collection
-    this.collection = BOUNDLESS.videos;
-    this.slug = options.slug;
-    if (this.collection.is_ready) {
-      this.data_prep(options);
-    }
-    else {
-      this.collection.view_to_render = this;
-    }
-  },
+  initialize : function ( options ) {
+    _.bindAll(this,
+        'render',
+        // 'data_prep',
+        'buttonClick',
+        'checkEscape',
+        'onReady',
+        'onStateChange',
+        'youtube_iframe',
+        'buttonTransitionDone',
+        'iframeTransitionDone'
+      );
 
-  data_prep: function () {
-    this.model = this.collection.findWhere({'slug': this.slug});
-    if (this.model){
-      this.render();
-    }
-    else {
-      console.log('no model with slug ' + this.slug);
-    }
+    //this is the instantiated collection
+    this.slug = options.slug;
+    this.collection = new BOUNDLESS.Video.Collection();
+    this.collection.on( 'sync', this.render )
+
   },
 
   render : function () {
-    this.$el.css({'background-image': 'url("' + this.model.get('image') + '")' });
-    var data = this.model.toJSON();
-    var template = _.template(this.template, data);
+
+    this.model = this.collection.findWhere({'slug': this.slug})
+
+    if ( ! this.model ) return console.error( 'There is no model with slug ' + this.slug )
+
+    this.$el.css({'background-image': 'url("' + this.model.get('image') + '")' }).addClass( this.slug )
+
+    var template = _.template( this.template, this.model.toJSON() )
 
     BOUNDLESS.replaceSlide( this.$el.html(template) );
 
+    this.youtube_iframe();
     this.$button = this.$el.find('button.play');
-    if (BOUNDLESS.youtube_api_ready){
-      this.youtube_iframe();
-    }
-    else {
-      //called on slower connections all the time
-      window.addEventListener('youtube_api_ready', this.youtube_iframe);
-    }
+
   },
 
   youtube_iframe : function () {
-    var player_vars = {};
-    if (this.modest) {
-      player_vars = {
-        'rel'           : 0,
-        'controls'      : 0,
-        'modestbranding': 1,
-        'wmode'         : 'transparent'
-      }
+    var player_vars = {
+      'rel'           : 0,
+      'controls'      : 0,
+      'modestbranding': 1,
+      'wmode'         : 'transparent',
     }
     this.uwplayer = new YT.Player('video' + this.model.get('video'), {
       videoId: this.model.get('video'),
@@ -104,19 +76,21 @@ BOUNDLESS.Video.View = Backbone.View.extend({
       width : '100%',
       height: '100%',
       events: {
-        //these events will call functions in the view
-       'onReady': this.onReady,
-       'onStateChange': this.onStateChange
+          //these events will call functions in the view
+         'onReady': this.onReady,
+         'onStateChange': this.onStateChange
       }
     });
     this.$iframe = this.$el.find('#video' + this.model.get('video'));
   },
-  
+
   onReady: function () {
     this.$button.on(BOUNDLESS.TransitionEvents, this.buttonTransitionDone);
     this.$iframe.on(BOUNDLESS.TransitionEvents, this.iframeTransitionDone);
-    this.on('preRemove', this.stopVideo);
+    // this.on('preRemove', this.stopVideo);
     this.trigger('slideloaded');
+
+    if ( this.slug === 'boundless') this.buttonClick()
   },
 
   onStateChange: function (player_state) {
@@ -128,7 +102,7 @@ BOUNDLESS.Video.View = Backbone.View.extend({
   },
 
   buttonClick: function(event) {
-    event.stopPropagation();
+    if ( event ) event.stopPropagation();
     if (this.is_playing){
       this.stopVideo();
     }
@@ -171,6 +145,11 @@ BOUNDLESS.Video.View = Backbone.View.extend({
 
   stopVideo: function (callback) {
     if (this.is_playing) {
+      if ( this.slug === 'boundless' ) {
+        Backbone.history.navigate('', {trigger:true})
+        $('body').removeClass('video-active')
+        return
+      }
       this.uwplayer.stopVideo();
       this.is_playing = false;
       this.preRemove = false;
@@ -182,6 +161,7 @@ BOUNDLESS.Video.View = Backbone.View.extend({
     if (this.$iframe.hasClass('behind')){
       this.$button.removeClass('close');
       $('body').removeClass('video-active');
+
     }
     else {
       $('body').addClass('video-active');
@@ -189,28 +169,56 @@ BOUNDLESS.Video.View = Backbone.View.extend({
   },
 });
 
-BOUNDLESS.Video.Home = BOUNDLESS.Video.View.extend({
-  
-  el : '#boundless-slide',
 
-  nav_template : '<div class="homepage-text"><h1>Be boundless</h1><span class="udub-slant"><span></span></span><p><%= text %></p></div>',
-  vid_template : '<div class="behind boundless-youtube" id="video<%= video %>" aria-label="Video: <%= title %>"></div>',
+BOUNDLESS.Video.API = Backbone.Model.extend({
 
-  render : function () {
-    var data = this.model.toJSON();
-    var text = _.template(this.nav_template, data);
-    var vid  = _.template(this.vid_template, data);
-    this.$el.prepend(vid);
-    this.$el.find('.navigation').prepend(text);
-    this.$button = this.$el.find('button.play');
-    this.$button.attr('aria-controls', 'video' + this.model.get('video'));
-    if (BOUNDLESS.youtube_api_ready){
-      this.youtube_iframe();
+  defaults : {
+    apiReady : false
+  },
+
+  initialize : function()
+  {
+    _.bindAll( this, 'ready' )
+    if ( YT && YT.Player ) {
+      this.ready()
+      return
     }
-    else {
-      //called on slower connections all the time
-      window.addEventListener('youtube_api_ready', this.youtube_iframe);
-    }
+    window.onYouTubeIframeAPIReady = this.ready
+  },
+
+  ready: function() {
+    this.set( 'apiReady', true )
+  }
+
+})
+
+BOUNDLESS.Video.Model = Backbone.Model.extend({});
+
+BOUNDLESS.Video.Collection = Backbone.Collection.extend({
+
+  url : '?json=boundless_video.get_videos',
+
+  initialize: function () {
+    _.bindAll( this, 'ready' )
+
+    this.api = new BOUNDLESS.Video.API()
+
+    if ( this.api.get('apiReady') ) this.ready()
+    else this.api.on('change:apiReady', this.ready )
+
+    this.on('error', this.error )
+  },
+
+  ready : function()
+  {
+    // putting fetch into the change:apiReady
+    this.fetch()
+  },
+
+  error: function()
+  {
+    console.error( 'There was an error fetching the videos' )
   }
 
 });
+

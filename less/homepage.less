@@ -17,6 +17,9 @@
       background-size: cover;
       overflow-y: auto;
       overflow-x: hidden;
+      -webkit-transform: translateZ(0) ;
+      -moz-transform: translateZ(0) ;
+      transform: translateZ(0) ;
     }
     &:after {
       content: "";
@@ -40,7 +43,7 @@
     }
 
     }
-    button.play {
+    a.play {
       display: block;
       height: 190px;
       width: 170px;
@@ -174,7 +177,7 @@
     }
 
   }
-  
+
   #boundless-slide {
      position: absolute;
      top: 0;
@@ -191,7 +194,7 @@
         position: fixed;
         background-position: center center;
         background-repeat: no-repeat;
-     }   
+     }
     button.play {
       top: 70px;
       bottom: auto;

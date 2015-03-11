@@ -3,119 +3,75 @@ BOUNDLESS.Navigation = Backbone.View.extend({
 
   el : '.navigation',
 
-  scroll_timing : 800,
-
-  hidden : true,
-  next_slide: undefined,
+  hidden : false,
 
   message : '#message',
 
   events : {
-    'click li' : 'segueOut'
+    'click li' : 'segueOut',
+    'click .show-nav' : 'segueIn',
   },
 
   initialize : function( options )
   {
     _.bindAll( this,
-     'transitionDone',
      'bounce',
-     'segueIn',
+     'complete',
      'resetMargins'
      )
     this.$toggle = this.$('.show-nav')
-    this.$el.on(BOUNDLESS.TransitionEvents, this.transitionDone);
-    this.on('slideclosed', this.segueIn);
-    this.setListWidth();
-    this.$navwrap = this.$el.find('#nav-wrap');
-    this.$navwrap.scrollLeft(this.$navwrap.find('ul').width());
-    //this.resetMargins()
-  },
-  
-  setListWidth : function() {
-    if (BOUNDLESS.mobile.is_mobile){
-      this.$el.find('ul').width(function() {
-        var total_width = 0;
-        $(this).children().each(function() {
-          total_width = total_width + $(this).width();
-        });
-        return total_width;
-      });
-    }
+    this.$homepage = $('#boundless-slide')
+
+    this.resetMargins()
   },
 
   segueOut : function( e )
   {
-    if (BOUNDLESS.mobile.is_mobile) {
-      var scroll_width = this.$navwrap.find('ul').width();
-      var scroll_pos = this.$navwrap.scrollLeft();
-      this.$navwrap.animate({scrollLeft: this.$navwrap.find('ul').width()}, this.scroll_timing / ((scroll_width - scroll_pos)/scroll_width), 'linear', function() {
-        this.$el.removeClass('segue')
-      }.bind(this));
-    }
-    else {
-      this.$el.removeClass('segue')
-    }
+    this.$el.removeClass('segue')
     // We have to animate the marginRight instead of using 'resetMargins' to avoid an animation jump after its completed
-    //this.$el.transition({ left : -1650}, BOUNDLESS.AnimationDuration, 'easeInOutQuad' )
-    //  .find('li').transition({marginRight: 30 }, BOUNDLESS.AnimationDuration )
+    this.$el.velocity({ translateX: '-100%'}, BOUNDLESS.AnimationDuration, 'easeInOutQuad', this.complete )
+
     this.hidden = true
     // Allows for clicking any part of the navigation tile
     // Protected by an event for browser back/forward navigation
-    if ( e ) {
-      this.next_slide = $(e.currentTarget).data().route; 
-    }
+    if ( e ) BOUNDLESS.router.navigate( $(e.currentTarget).data().route, { trigger: true} )
+  },
+
+  complete : function()
+  {
+    // todo: more sublte way to implementing this
+    this.resetMargins()
+    this.$homepage.addClass('blur')
+    this.trigger('complete')
   },
 
   segueIn: function( e ) {
-    this.$el.addClass('segue')
-    //this.$el.transition({ left : -230 }, BOUNDLESS.AnimationDuration, 'easeInOutQuad', this.bounce )
-    this.hidden = false
+     this.$homepage.removeClass('blur')
+     this.$el.addClass('segue')
+     // Given the iffyness of the clip mask a delay may be the more robust cross-browser solution
+     this.$el.velocity( "reverse", {complete : this.bounce }) //removed delay: 600
+     this.hidden = false
   },
 
   segue : function()
   {
-      // Backbone.history.fragement protects against linking directily to a slide
-      if ( this.hidden && ! Backbone.history.fragment ) {
-        BOUNDLESS.router.default();
-      }
+      // Backbone.history.fragment protects against linking directily to a slide
+      if ( this.hidden && ! Backbone.history.fragment ) this.segueIn()
       if ( ! this.hidden && Backbone.history.fragment.length ) this.segueOut()
       if ( Backbone.history.fragment.length ) this.$el.removeClass( 'segue' )
-  },
-
-  transitionDone: function(event) {
-    if (['transform', '-webkit-transform', '-moz-transform', '-o-transform', '-ms-transform'].indexOf(event.originalEvent.propertyName) !== -1){
-      if (this.hidden) {
-        //trigger view stuff here
-        this.resetMargins();
-        if (this.next_slide !== undefined) {
-          // consider moving this back to segue if transition to slide is too slow
-          BOUNDLESS.router.navigate( this.next_slide, { trigger: true} )
-        }
-      }
-      else {
-        this.bounce();
-        //trigger default view stuff here
-      }
-    }
   },
 
   bounce : function()
   {
      // Animate is used for the easeOutElastic easing
-    if (BOUNDLESS.mobile.is_mobile) {
-      this.$navwrap.animate({scrollLeft: 0}, this.scroll_timing, 'easeOutBounce');
-    }
-    else {
+     // TODO: why doesn't velocity understand the easing?
       this.$el.find('li').animate({ marginRight: 20 }, 2 * BOUNDLESS.AnimationDuration, 'easeOutElastic' )
-    }
   },
 
   // Resets the margins of the navigation LI's to create the elastic bounce in effect
   resetMargins : function()
   {
-    if (!BOUNDLESS.mobile.isMobile){
-      this.$el.find('li').removeAttr('style');
-    }
+    this.$el.find('li').css({ marginRight: 30 })
   }
 
 
