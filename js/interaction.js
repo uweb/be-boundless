@@ -23,12 +23,34 @@ BOUNDLESS.Navigation = Backbone.View.extend({
     this.$toggle = this.$('.show-nav')
     this.$el.on(BOUNDLESS.TransitionEvents, this.transitionDone);
     this.on('slideclosed', this.segueIn);
-    this.resetMargins()
+    this.setListWidth();
+    this.$navwrap = this.$el.find('#nav-wrap');
+    this.$navwrap.scrollLeft(this.$navwrap.find('ul').width());
+    //this.resetMargins()
+  },
+  
+  setListWidth : function() {
+    if (BOUNDLESS.mobile.is_mobile){
+      this.$el.find('ul').width(function() {
+        var total_width = 0;
+        $(this).children().each(function() {
+          total_width = total_width + $(this).width();
+        });
+        return total_width;
+      });
+    }
   },
 
   segueOut : function( e )
   {
-    this.$el.removeClass('segue')
+    if (BOUNDLESS.mobile.is_mobile) {
+      this.$navwrap.animate({scrollLeft: this.$navwrap.find('ul').width()}, 500, 'linear', function() {
+        this.$el.removeClass('segue')
+      }.bind(this));
+    }
+    else {
+      this.$el.removeClass('segue')
+    }
     // We have to animate the marginRight instead of using 'resetMargins' to avoid an animation jump after its completed
     //this.$el.transition({ left : -1650}, BOUNDLESS.AnimationDuration, 'easeInOutQuad' )
     //  .find('li').transition({marginRight: 30 }, BOUNDLESS.AnimationDuration )
@@ -76,13 +98,18 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   bounce : function()
   {
      // Animate is used for the easeOutElastic easing
-    this.$el.find('li').animate({ marginRight: 20 }, 2 * BOUNDLESS.AnimationDuration, 'easeOutElastic' )
+    if ($(window).width() > 768){
+      this.$el.find('li').animate({ marginRight: 20 }, 2 * BOUNDLESS.AnimationDuration, 'easeOutElastic' )
+    }
+    else {
+      this.$el.find('#nav-wrap').animate({scrollLeft: 0}, 500, 'linear');
+    }
   },
 
   // Resets the margins of the navigation LI's to create the elastic bounce in effect
   resetMargins : function()
   {
-    this.$el.find('li').css({ marginRight: 30 })
+    this.$el.find('li').removeAttr('style');
   }
 
 
