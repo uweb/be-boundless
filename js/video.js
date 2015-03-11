@@ -2,7 +2,17 @@
 
 BOUNDLESS.Video = Backbone.View.extend({
 
-  template : '<div class="title-blurb"><h2 class="video-title"><%= title %></h2><div class="blurb"><%= text %></div></div><button class="play" aria-controls="video<%= video %>"><span class="top"></span><span class="left"></span><span class="bottom"></span></button><div class="behind boundless-youtube" id="video<%= video %>" aria-label="Video: <%= title %>"></div>',
+  template :
+     '<div class="title-blurb">' +
+     '<h2 class="video-title"><%= title %></h2>' +
+      '<div class="blurb"><%= text %></div>' +
+    '</div>' +
+    '<button class="play" aria-controls="video<%= video %>">' +
+      '<span class="top"></span>' +
+      '<span class="left"></span>' +
+      '<span class="bottom"></span>' +
+     '</button>' +
+    '<div class="behind boundless-youtube" id="video<%= video %>" aria-label="Video: <%= title %>"></div>',
 
   tagname   : 'div',
   id        : 'video',
@@ -213,30 +223,3 @@ BOUNDLESS.Video.Collection = Backbone.Collection.extend({
 
 });
 
-
-
-BOUNDLESS.Video.Home = BOUNDLESS.Video.extend({
-
-  el : '#boundless-slide',
-
-  nav_template : '<div class="homepage-text"><h1>Be boundless</h1><span class="udub-slant"><span></span></span><p><%= text %></p></div>',
-  vid_template : '<div class="behind boundless-youtube" id="video<%= video %>" aria-label="Video: <%= title %>"></div>',
-
-  render : function () {
-    var data = this.model.toJSON();
-    var text = _.template(this.nav_template, data);
-    var vid  = _.template(this.vid_template, data);
-    this.$el.prepend(vid);
-    this.$el.find('.navigation').prepend(text);
-    this.$button = this.$el.find('button.play');
-    this.$button.attr('aria-controls', 'video' + this.model.get('video'));
-    if (BOUNDLESS.youtube_api_ready){
-      this.youtube_iframe();
-    }
-    else {
-      //called on slower connections all the time
-      window.addEventListener('youtube_api_ready', this.youtube_iframe);
-    }
-  }
-
-});
