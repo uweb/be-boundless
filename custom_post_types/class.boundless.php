@@ -49,7 +49,7 @@ class Boundless
       wp_register_script( 'jquery-easing', get_stylesheet_directory_uri() . '/js/libraries/jquery.easing.min.js', array('jquery') );
 
       // Boundless App and dependecies
-      wp_register_script( 'boundless', get_stylesheet_directory_uri() . '/js/boundless.js', array( 'jquery', 'underscore', 'backbone', 'google-maps', 'youtube-iframe-api', 'jquery-easing', 'nprogress', 'velocity' ), self::VERSION );
+      wp_register_script( 'boundless', get_stylesheet_directory_uri() . '/js/boundless.js', array( 'youtube-iframe-api', 'jquery', 'underscore', 'backbone', 'google-maps', 'jquery-easing', 'nprogress', 'velocity' ), self::VERSION );
 
       wp_enqueue_script( 'boundless' );
     }
