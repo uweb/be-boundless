@@ -1,14 +1,13 @@
 div.navigation {
 
   position: absolute;
-  .translate(-1650px,0);
+  // left: -230px;
+  // transform: translateX(-1650px);
   top: 50%;
   margin-top: 100px;
   width: 1730px;
   z-index: 100;
-  transition: opacity .5s, transform .8s;
-  -webkit-transition: opacity .5s, transform .8s;
-  -moz-transition: opacity .5s, transform .8s;
+  // transition: opacity .5s, transform .8s;
 
   ul {
     width: 4850px;
@@ -164,7 +163,7 @@ div.navigation {
     }
   }
     &.segue {
-      .translate(-230px,0);
+      // transform: translateX(-230px);
       .show-nav {
         opacity: 0;
      }
@@ -187,9 +186,6 @@ div.navigation {
       }
       p {
         width: 535px;
-        &.boundless-button {
-          width: auto;
-        }
       }
     }
   }
@@ -198,9 +194,9 @@ div.navigation {
 @media only screen and (max-width : 1200px) {
 div.navigation {
     top: 50%;
-    .translate(0,0);
     ul {
       .scale(.8,.8);
+      transform-origin: 0 0;
     }
     .homepage-text {
       h1 {
@@ -208,9 +204,6 @@ div.navigation {
       }
       p {
         width: 535px;
-        &.boundless-button {
-          width: auto;
-        }
       }
     }
   }
@@ -223,6 +216,8 @@ div.navigation {
 @media only screen and (max-width : 992px), screen and (max-height : 900px) {
   div.navigation {
     ul {
+      .scale(.8,.8);
+      transform-origin: 0 0;
     }
   }
 }
@@ -232,7 +227,6 @@ div.navigation {
     overflow-y: visible;
     height: auto;
   }
-
 
   // Puts the stripes behind
   #slide.open { z-index: 11 }
@@ -247,62 +241,21 @@ div.navigation {
       }
     }
   }
-
-  // Nav closed
-
-  .blur {
-
-    div.navigation {
-        right: 100%;
-        .show-nav {
-          right: -70px;
-          left: auto;
-        }
-        div#nav-wrap {
-           ul {
-             transform: translate(-1480px,0) scale(.8,.8);
-             -webkit-transform: translate(-1480px,0) scale(.8,.8);
-             -moz-transform: translate(-1480px,0) scale(.8,.8);
-             li {
-               span {
-               }
-             }
-           }
-        }
-    }
-
-  }
-
   div.navigation {
     top: 5%;
-    right: 0%;
     left: auto !important;
     width: 100%;
     margin: 0;
-    // .animation(all 1.2s ease-in);
-    .homepage-text,
-      #nav-wrap,
-      .play {
-        opacity: 0;
-      }
     &.segue {
-      .translate(0,0);
-      .homepage-text,
-      #nav-wrap,
-      .play {
-        opacity: 1;
-      }
+      // .translate(0,0);
       .show-nav {
         opacity: 1;
       }
     }
     .show-nav {
+      margin-top: -90px;
       opacity: 1;
-      left: -100px;
-      right: auto;
-      bottom: 50px;
-      top: auto;
-      .scale(.7,.7);
+      right: 0;
     }
     div#nav-wrap {
       width: 100%;
@@ -313,10 +266,8 @@ div.navigation {
         margin-bottom: 0px;
         overflow-y:hidden;
         width: 1850px;
-        transform: translate(-200px,0) scale(.8,.8);
-        -webkit-transform: translate(-200px,0) scale(.8,.8);
-        -moz-transform: translate(-200px,0) scale(.8,.8);
-        transform-origin: 0 0;
+        .scale(1,1);
+        .translate(-50px,0);
         li {
           height: 180px;
           span {
