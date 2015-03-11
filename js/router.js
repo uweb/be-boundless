@@ -1,11 +1,12 @@
 BOUNDLESS.Router = Backbone.Router.extend({
 
-  // settings : {
-  //   mprogress : {
-  //     trickle: false
-  //         // template : 3
-  //   }
-  // },
+  settings : {
+    nprogress : {
+      showSpinner: false,
+      trickleSpeed: 800,
+      trickleRate: 0.25
+    }
+  },
 
   routes : {
     "!/map" : "map",
@@ -25,7 +26,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
        'conceal'
     )
 
-    // this.mprogress = NProgress.configure( this.settings.mprogress )
+    NProgress.configure( this.settings.nprogress )
     this.$slide = $('#slide')
     this.$homepage = $('#boundless-slide')
     this.$slide.on( BOUNDLESS.TransitionEvents, this.conceal )
