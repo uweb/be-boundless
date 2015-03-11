@@ -161,7 +161,10 @@ BOUNDLESS.Video.API = Backbone.Model.extend({
   initialize : function()
   {
     _.bindAll( this, 'ready' )
-    if ( YT && YT.Player ) return this.ready()
+    if ( YT && YT.Player ) {
+      this.ready()
+      return
+    }
     window.onYouTubeIframeAPIReady = this.ready
   },
 
@@ -180,12 +183,10 @@ BOUNDLESS.Video.Collection = Backbone.Collection.extend({
   initialize: function () {
     _.bindAll( this, 'ready' )
 
-    // API initialization may be better placed in the router
-    if ( BOUNDLESS.api )
-      return this.ready()
+    this.api = new BOUNDLESS.Video.API()
 
-    BOUNDLESS.api = new BOUNDLESS.Video.API()
-    BOUNDLESS.api.on('change:apiReady', this.ready )
+    if ( this.api.get('apiReady') ) this.ready()
+    else this.api.on('change:apiReady', this.ready )
 
     this.on('error', this.error )
   },
