@@ -33,6 +33,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
       'render',
       'open',
       'close',
+      'removeInactive',
       'setMasonry',
       'setDimensions',
       'getImagePosition'
@@ -93,7 +94,10 @@ BOUNDLESS.Gallery = Backbone.View.extend({
     , open = this.images.findWhere({ open : true } )
 
     // todo : shouldn't need the open variable here
-    if ( open ) return this.close()
+    if ( open ) {
+      this.close()
+      return false
+    }
 
     model.set( 'open', true )
     $this
@@ -112,9 +116,14 @@ BOUNDLESS.Gallery = Backbone.View.extend({
     if ( open )
     {
       open.set( 'open', false )
-      return this.$grid.find('#'+open.cid).velocity( 'reverse' ).siblings().andSelf().removeClass('active inactive')
+      return this.$grid.find('#'+open.cid).velocity( 'reverse', this.removeInactive )
     }
 
+  },
+
+  removeInactive : function()
+  {
+    this.$('li').removeClass('active inactive')
   },
 
   getImagePosition : function( element )
