@@ -250,41 +250,17 @@ div.navigation {
 
   // Nav closed 
 
-  .blur {
-
-    div.navigation {
-        right: 100%;
-        .show-nav {
-          right: -70px;
-          left: auto;
-        }
-        div#nav-wrap {
-           ul {
-             transform: translate(-1480px,0) scale(.8,.8);
-             -webkit-transform: translate(-1480px,0) scale(.8,.8);
-             -moz-transform: translate(-1480px,0) scale(.8,.8);
-             li {
-               span {
-               }
-             }
-           }
-        }
-    }
-
-  }
-
   div.navigation {
     top: 5%;
-    right: 0%;
-    left: auto !important;
     width: 100%;
     margin: 0;      
+    .translate(-100%,0);
     // .animation(all 1.2s ease-in);
     .homepage-text,
-      #nav-wrap,
-      .play {
-        opacity: 0;
-      }
+     // #nav-wrap,
+     // .play {
+     //   opacity: 0;
+     // }
     &.segue {
       .translate(0,0);
       .homepage-text,
@@ -293,16 +269,17 @@ div.navigation {
         opacity: 1;
       }
       .show-nav { 
-        opacity: 1;
+        opacity: 0;
+        right: 0px;
       }
     }
     .show-nav {
-      opacity: 1;
-      left: -100px;
-      right: auto;
+      right: -90px;
       bottom: 50px;
+      opacity: 1;
       top: auto;
       .scale(.7,.7);
+      transition: right .5s, opacity .5s;
     }
     div#nav-wrap {
       width: 100%;
@@ -313,6 +290,8 @@ div.navigation {
         margin-bottom: 0px;
         overflow-y:hidden;
         width: 1850px;
+        position:relative;
+        z-index:20;
         transform: translate(-200px,0) scale(.8,.8);
         -webkit-transform: translate(-200px,0) scale(.8,.8);
         -moz-transform: translate(-200px,0) scale(.8,.8);
