@@ -42,7 +42,7 @@ BOUNDLESS.Video = Backbone.View.extend({
 
     if ( ! this.model ) return console.error( 'There is no model with slug ' + this.slug )
 
-    this.$el.css({'background-image': 'url("' + this.model.get('image') + '")' });
+    this.$el.css({'background-image': 'url("' + this.model.get('image') + '")' }).addClass( this.slug )
 
     var template = _.template( this.template, this.model.toJSON() )
 
@@ -58,8 +58,9 @@ BOUNDLESS.Video = Backbone.View.extend({
       'rel'           : 0,
       'controls'      : 0,
       'modestbranding': 1,
-      'wmode'         : 'transparent'
+      'wmode'         : 'transparent',
     }
+    console.log(player_vars)
     this.uwplayer = new YT.Player('video' + this.model.get('video'), {
       videoId: this.model.get('video'),
       playerVars: player_vars,
@@ -79,6 +80,8 @@ BOUNDLESS.Video = Backbone.View.extend({
     this.$iframe.on(BOUNDLESS.TransitionEvents, this.iframeTransitionDone);
     // this.on('preRemove', this.stopVideo);
     this.trigger('slideloaded');
+
+    if ( this.slug === 'boundless') this.buttonClick()
   },
 
   onStateChange: function (player_state) {
@@ -90,7 +93,7 @@ BOUNDLESS.Video = Backbone.View.extend({
   },
 
   buttonClick: function(event) {
-    event.stopPropagation();
+    if ( event ) event.stopPropagation();
     if (this.is_playing){
       this.stopVideo();
     }
@@ -133,6 +136,11 @@ BOUNDLESS.Video = Backbone.View.extend({
 
   stopVideo: function (callback) {
     if (this.is_playing) {
+      if ( this.slug === 'boundless' ) {
+        Backbone.history.navigate('', {trigger:true})
+        $('body').removeClass('video-active')
+        return
+      }
       this.uwplayer.stopVideo();
       this.is_playing = false;
       this.preRemove = false;
@@ -144,6 +152,7 @@ BOUNDLESS.Video = Backbone.View.extend({
     if (this.$iframe.hasClass('behind')){
       this.$button.removeClass('close');
       $('body').removeClass('video-active');
+
     }
     else {
       $('body').addClass('video-active');
