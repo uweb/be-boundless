@@ -30,7 +30,6 @@ BOUNDLESS.Navigation = Backbone.View.extend({
     this.$el.removeClass('segue')
     // We have to animate the marginRight instead of using 'resetMargins' to avoid an animation jump after its completed
     this.$el.velocity({ translateZ: 0, translateX: -1650}, BOUNDLESS.AnimationDuration, 'easeInOutQuad', this.complete )
-      // .find('li').animate({marginRight: 30 }, BOUNDLESS.AnimationDuration, this.complete )
 
     this.hidden = true
     // Allows for clicking any part of the navigation tile
@@ -49,7 +48,8 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   segueIn: function( e ) {
      // this.$homepage.removeClass('blur')
      this.$el.addClass('segue')
-     this.$el.velocity( "reverse", {complete : this.bounce })
+     // Given the iffyness of the clip mask a delay may be the more robust cross-browser solution
+     this.$el.velocity( "reverse", {complete : this.bounce, delay: 600 })
      this.hidden = false
   },
 
