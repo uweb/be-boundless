@@ -18,7 +18,10 @@ class Boundless
   {
     if (is_front_page()){
       wp_register_style( 'boundless', get_stylesheet_directory_uri() . '/boundless.css' );
+      wp_register_style( 'nprogress', get_bloginfo("stylesheet_directory") . '/js/nprogress.css' );
+
       wp_enqueue_style('boundless');
+      wp_enqueue_style('nprogress');
     }
   }
 
@@ -36,8 +39,14 @@ class Boundless
       // YouTube iFrame API
       wp_register_script( 'youtube-iframe-api', 'https://www.youtube.com/player_api' );
 
+      // Progress bar
+      wp_register_script( 'nprogress', get_bloginfo("stylesheet_directory") . '/js/nprogress.js' );
+
+      // Velocity
+      wp_register_script( 'velocity', get_bloginfo("stylesheet_directory") . '/js/libraries/velocity.min.js' );
+
       // Boundless App and dependecies
-      wp_register_script( 'boundless', get_stylesheet_directory_uri() . '/js/boundless.js', array( 'jquery', 'underscore', 'backbone', 'google-maps', 'youtube-iframe-api' ), self::VERSION );
+      wp_register_script( 'boundless', get_stylesheet_directory_uri() . '/js/boundless.js', array( 'jquery', 'underscore', 'backbone', 'google-maps', 'youtube-iframe-api', 'nprogress', 'velocity' ), self::VERSION );
       wp_enqueue_script( 'boundless' );
     }
   }
