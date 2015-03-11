@@ -27,6 +27,7 @@
             <li class="facebook"><a href="https://www.facebook.com/UofWA" title="Facebook">Facebook</a>
             <li class="twitter"><a href="https://twitter.com/uw" title="Twitter">Twitter</a>
             <li class="instagram"><a href="http://instagram.com/uofwa" title="Instagram">Instagram</a>
+            <li class="youtube"><a href="http://www.youtube.com/uwhuskies" title="YouTube">YouTube</a>
             <li><a href="uw.edu/students" class="slash" title="Students">Students</a>
             <li><a href="uw.edu/parents" class="slash" title="Parents">Parents</a>
             <li><a href="uw.edu/facultystaff" class="slash" title="Faculty &amp; Staff">Faculty &amp; Staff</a>
