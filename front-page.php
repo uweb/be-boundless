@@ -1,4 +1,4 @@
-<?php require 'app_header.php'; ?>
+<?php get_template_part('app_header'); ?>
 
     <!-- <div id="overlay"></div> -->
 
@@ -11,7 +11,7 @@
             <button id="static" class="play"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>
             <div id="nav-wrap">
             <ul>
-              <li class='spacer'></li> 
+              <li class='spacer'></li>
               <?php echo  Navigation::get_navigation() ?>
             </ul>
             </div>
@@ -21,14 +21,14 @@
 
     <div id="slide"></div>
 
-            
+
             <div class="stripes">
                 <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span><span></span>
-            </div> 
+            </div>
 
 
 
 
     <h3 class="be-boundless">Be boundless</h3>
 
-<?php require 'app_footer.php'; ?>
+<?php get_template_part( 'app_footer' ) ?>
