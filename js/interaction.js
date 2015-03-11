@@ -3,6 +3,8 @@ BOUNDLESS.Navigation = Backbone.View.extend({
 
   el : '.navigation',
 
+  scroll_timing : 800,
+
   hidden : true,
   next_slide: undefined,
 
@@ -44,7 +46,9 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   segueOut : function( e )
   {
     if (BOUNDLESS.mobile.is_mobile) {
-      this.$navwrap.animate({scrollLeft: this.$navwrap.find('ul').width()}, 500, 'linear', function() {
+      var scroll_width = this.$navwrap.find('ul').width();
+      var scroll_pos = this.$navwrap.scrollLeft();
+      this.$navwrap.animate({scrollLeft: this.$navwrap.find('ul').width()}, this.scroll_timing / ((scroll_width - scroll_pos)/scroll_width), 'linear', function() {
         this.$el.removeClass('segue')
       }.bind(this));
     }
@@ -98,18 +102,20 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   bounce : function()
   {
      // Animate is used for the easeOutElastic easing
-    if ($(window).width() > 768){
-      this.$el.find('li').animate({ marginRight: 20 }, 2 * BOUNDLESS.AnimationDuration, 'easeOutElastic' )
+    if (BOUNDLESS.mobile.is_mobile) {
+      this.$navwrap.animate({scrollLeft: 0}, this.scroll_timing, 'easeOutBounce');
     }
     else {
-      this.$el.find('#nav-wrap').animate({scrollLeft: 0}, 500, 'linear');
+      this.$el.find('li').animate({ marginRight: 20 }, 2 * BOUNDLESS.AnimationDuration, 'easeOutElastic' )
     }
   },
 
   // Resets the margins of the navigation LI's to create the elastic bounce in effect
   resetMargins : function()
   {
-    this.$el.find('li').removeAttr('style');
+    if (!BOUNDLESS.mobile.isMobile){
+      this.$el.find('li').removeAttr('style');
+    }
   }
 
 
