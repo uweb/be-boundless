@@ -70,7 +70,6 @@ BOUNDLESS.Video = Backbone.View.extend({
       'modestbranding': 1,
       'wmode'         : 'transparent',
     }
-    console.log(player_vars)
     this.uwplayer = new YT.Player('video' + this.model.get('video'), {
       videoId: this.model.get('video'),
       playerVars: player_vars,

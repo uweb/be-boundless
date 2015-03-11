@@ -77,12 +77,7 @@ BOUNDLESS.Map.InfoWindow.prototype.onAdd = function()
 }
 
 //  Positions the window in the correct location based on the marker's coordinates
-BOUNDLESS.Map.InfoWindow.prototype.draw = function()
-{
-
-  //console.log( 'draw' )
-
-}
+BOUNDLESS.Map.InfoWindow.prototype.draw = function() {}
 
 // Called when the overlay.setMap(null) is called
 BOUNDLESS.Map.InfoWindow.prototype.onRemove = function()
