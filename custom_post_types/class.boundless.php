@@ -36,8 +36,11 @@ class Boundless
       // YouTube iFrame API
       wp_register_script( 'youtube-iframe-api', 'https://www.youtube.com/player_api' );
 
+      // YouTube iFrame API
+      wp_register_script( 'jquery-easing', get_stylesheet_directory_uri() . '/js/libraries/jquery.easing.min.js', array('jquery') );
+
       // Boundless App and dependecies
-      wp_register_script( 'boundless', get_stylesheet_directory_uri() . '/js/boundless.js', array( 'jquery', 'underscore', 'backbone', 'google-maps', 'youtube-iframe-api' ), self::VERSION );
+      wp_register_script( 'boundless', get_stylesheet_directory_uri() . '/js/boundless.js', array( 'jquery', 'underscore', 'backbone', 'google-maps', 'youtube-iframe-api', 'jquery-easing' ), self::VERSION );
       wp_enqueue_script( 'boundless' );
     }
   }
