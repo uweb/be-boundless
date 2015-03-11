@@ -29,7 +29,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   initialize : function( options )
   {
     _.bindAll( this,
-      'animateImageIn',
+      // 'animateImageIn',
       'render',
       'open',
       'close',
@@ -46,24 +46,25 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   {
     BOUNDLESS.replaceSlide(this.$el.html( _.template( this.template, {images : this.images.toJSON() }) ) )
     this.$el.imagesLoaded( this.el, this.setMasonry )
-    this.$el.find('li').on('inview', this.animateImageIn )
-    this.trigger('slideloaded')
+    // this.$el.find('li').on('inview', this.animateImageIn )
   },
 
   setMasonry : function( images )
   {
-    console.log('images loaded', images )
-    this.masonry = new Masonry( document.getElementById('grid'), this.settings )
+    this.trigger('slideloaded')
     this.$grid = this.$el.find('#grid');
+
+    this.masonry = new Masonry( this.$grid.get(0), this.settings )
+
     this.images.each( this.setDimensions )
   },
 
-  animateImageIn : function(e, isInView, visiblePartX, visiblePartY)
-  {
-    // TODO: reset the images that move off the bottom on scroll up
-    if ( isInView )
-      $(e.currentTarget).removeClass('segue');
-  },
+  // animateImageIn : function(e, isInView, visiblePartX, visiblePartY)
+  // {
+  //   // TODO: reset the images that move off the bottom on scroll up
+  //   if ( isInView )
+  //     $(e.currentTarget).removeClass('segue');
+  // },
 
   setDimensions : function( model, index )
   {

@@ -11,8 +11,8 @@
 
     #grid {
       /* flip (based on http://lab.hakim.se/scroll-effects/ by @hakimel) */
-      -webkit-perspective: 1300px;
-      perspective: 1300px;
+      // -webkit-perspective: 1300px;
+      // perspective: 1300px;
 
       list-style: none;
       // margin: 30px auto;
@@ -75,19 +75,19 @@
           }
         }
 
-        &.segue {
+        // &.segue {
 
-          -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-          -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-          -webkit-transform: rotateX(-80deg);
-          transform: rotateX(-80deg);
-          opacity:0;
-          //-webkit-animation: flip .8s ease-in-out forwards;
-          //animation: flip .8s ease-in-out forwards;
+        //   -webkit-transform-style: preserve-3d;
+        //   transform-style: preserve-3d;
+        //   -webkit-transform-origin: 0% 0%;
+        //   transform-origin: 0% 0%;
+        //   -webkit-transform: rotateX(-80deg);
+        //   transform: rotateX(-80deg);
+        //   opacity:0;
+        //   //-webkit-animation: flip .8s ease-in-out forwards;
+        //   //animation: flip .8s ease-in-out forwards;
 
-        }
+        // }
 
         &:hover {
 
@@ -137,15 +137,15 @@
     }
   }
 
-@-webkit-keyframes flip {
-  0% { }
-  100% { -webkit-transform: rotateX(0deg); opacity: 1; }
-}
+// @-webkit-keyframes flip {
+//   0% { }
+//   100% { -webkit-transform: rotateX(0deg); opacity: 1; }
+// }
 
-@keyframes flip {
-  0% { }
-  100% { -webkit-transform: rotateX(0deg); transform: rotateX(0deg); opacity: 1; }
-}
+// @keyframes flip {
+//   0% { }
+//   100% { -webkit-transform: rotateX(0deg); transform: rotateX(0deg); opacity: 1; }
+// }
 
 @media only screen and (min-width: 704px) and (max-width: 1024px){
   #gallery {
