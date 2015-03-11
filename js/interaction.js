@@ -41,12 +41,12 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   {
     // todo: more sublte way to implementing this
     this.resetMargins()
-    // this.$homepage.addClass('blur')
+    this.$homepage.addClass('blur')
     this.trigger('complete')
   },
 
   segueIn: function( e ) {
-     // this.$homepage.removeClass('blur')
+     this.$homepage.removeClass('blur')
      this.$el.addClass('segue')
      // Given the iffyness of the clip mask a delay may be the more robust cross-browser solution
      this.$el.velocity( "reverse", {complete : this.bounce, delay: 600 })
