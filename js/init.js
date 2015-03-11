@@ -14,6 +14,9 @@ BOUNDLESS.initialize()
 BOUNDLESS.initialize = function( $ )
 {
 
+  // Initialize mobile checks
+  BOUNDLESS.mobile = new BOUNDLESS.Mobile()
+
   // Initialize the router
   BOUNDLESS.router  = new BOUNDLESS.Router()
 

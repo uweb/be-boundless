@@ -20,6 +20,7 @@ module.exports = function(grunt) {
           'js/beginning.js',
           'js/interaction.js',
           'js/search.js',
+          'js/mobile.js',
           'js/uwtiles.js',
           'js/video.js',
           'js/map.js',

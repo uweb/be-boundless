@@ -25,6 +25,7 @@ div.navigation {
       border-bottom: 6px solid rgba(255, 255, 255, 0.8);
       position: relative;
       // margin-right: 150px;
+      margin-right: 30px;
       .box-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
       transition: width .2s ease-in-out;
       &.spacer {
@@ -268,6 +269,13 @@ div.navigation {
       .play {
         opacity: 1;
       }
+      ul {
+        li{
+          &:hover {
+            width: 255px;
+          }
+        }
+      }
       .show-nav { 
         opacity: 0;
         right: 0px;
@@ -292,9 +300,9 @@ div.navigation {
         width: 1850px;
         position:relative;
         z-index:20;
-        transform: translate(-200px,0) scale(.8,.8);
-        -webkit-transform: translate(-200px,0) scale(.8,.8);
-        -moz-transform: translate(-200px,0) scale(.8,.8);
+        transform: translate(0,0) scale(.8,.8);
+        -webkit-transform: translate(0,0) scale(.8,.8);
+        -moz-transform: translate(0,0) scale(.8,.8);
         transform-origin: 0 0;
         li {
           height: 180px;
