@@ -178,6 +178,10 @@
 
   }
 
+   .stripes {
+      position: fixed;
+   }
+
   #boundless-slide {
      position: absolute;
      top: 0;
@@ -195,6 +199,8 @@
         background-position: center center;
         background-repeat: no-repeat;
      }
+
+
     button.play {
       top: 70px;
       bottom: auto;
@@ -253,6 +259,11 @@
         }
       }
     }
+
+    &:after {
+      position:fixed;
+    }
+
   }
 }
 @media only screen and (max-width:768px) and (min-height: 650px){

@@ -100,8 +100,9 @@ div#thin-strip {
 
 }
 
-@media(max-width:480px){
-  
+// TODO: is this still necessary?
+@media only screen and (max-width : 768px) {
+
   div#thin-strip {
 
       overflow-y: hidden;
@@ -109,7 +110,7 @@ div#thin-strip {
       width: 100%;
       background: #fff;
       // padding-top: 22px;
-      position: absolute;
+      position: fixed;
       z-index: 200;
       .box-shadow(0 2px 5px rgba(0, 0, 0, 0.3));
 
