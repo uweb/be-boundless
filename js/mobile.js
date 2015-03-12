@@ -13,10 +13,14 @@ BOUNDLESS.Mobile = function (){
     this.checkMobile();
     if (this.is_mobile){
       //manipulate slide height here? Make it same (min) height as boundless slide
+      $('#slide').height($('#boundless-slide').height());
+    }
+    else {
+      $('#slide').removeAttr('style');
     }
   }.bind(this);
 
   var MOBILE_BREAKPOINT = 768;
-  this.checkMobile();
+  resized();
   $(window).resize(resized);
 }
