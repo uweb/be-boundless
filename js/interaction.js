@@ -47,7 +47,7 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   {
     // todo: more sublte way to implementing this
     if (BOUNDLESS.mobile.is_mobile){
-      _.delay(function() { $('html,body').animate({scrollTop: 0}, 400) }, 500);
+      $('html,body').animate({scrollTop: 0}, 400);
     }
     this.hidden = true
     this.resetMargins()
