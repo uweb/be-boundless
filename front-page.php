@@ -2,7 +2,9 @@
 
     <div id="boundless-slide">
         <div id="boundless-background"></div>
+        <!--
         <button id="topRight" class="play"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>
+        -->
 
         <div class="navigation segue">
 
