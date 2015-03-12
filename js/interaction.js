@@ -38,7 +38,7 @@ BOUNDLESS.Navigation = Backbone.View.extend({
       BOUNDLESS.router.navigate( $(e.currentTarget).data().route, { trigger: true} );
       if (BOUNDLESS.mobile.is_mobile){
         this.$navwrap.find('li').not(e.currentTarget).addClass('faded');
-        this.$navwrap.velocity({scrollLeft : this.$navwrap.scrollLeft()+$(e.currentTarget).offset().left - 20}, 500);
+        this.$navwrap.animate({scrollLeft : (this.$navwrap.scrollLeft()+$(e.currentTarget).offset().left - 20)}, 500);
       }
     }
   },
@@ -46,6 +46,9 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   complete : function()
   {
     // todo: more sublte way to implementing this
+    if (BOUNDLESS.mobile.is_mobile){
+      $('html,body').animate({scrollTop: 0}, 400);
+    }
     this.hidden = true
     this.resetMargins()
     this.$homepage.addClass('blur')
@@ -53,11 +56,14 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   },
 
   segueIn: function( e ) {
-     this.$homepage.removeClass('blur')
-     this.$el.addClass('segue')
-     // Given the iffyness of the clip mask a delay may be the more robust cross-browser solution
-     //this.$el.velocity( "reverse", {complete : this.bounce }) //removed delay: 600
-     this.$el.velocity({ translateX: '0%' }, BOUNDLESS.AnimationDuration, 'easeInOutQuad', this.bounce );
+    this.$homepage.removeClass('blur')
+    this.$el.addClass('segue')
+    if (BOUNDLESS.mobile.is_mobile){
+      $('html,body').animate({scrollTop: $('#slide').height() - BOUNDLESS.mobile.win_height }, 400);
+    }
+    // Given the iffyness of the clip mask a delay may be the more robust cross-browser solution
+    //this.$el.velocity( "reverse", {complete : this.bounce }) //removed delay: 600
+    this.$el.velocity({ translateX: '0%' }, BOUNDLESS.AnimationDuration, 'easeInOutQuad', this.bounce );
   },
 
   segue : function()
