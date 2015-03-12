@@ -314,7 +314,7 @@ BOUNDLESS.Map.Point = Backbone.Model.extend({})
 // Map Point Collection
 BOUNDLESS.Map.Points = Backbone.Collection.extend({
 
-  url : '?json=map_point.get_map_points',
+  url : '?json=map_point.get_map_points&count=-1',
 
   model : BOUNDLESS.Map.Point,
 
