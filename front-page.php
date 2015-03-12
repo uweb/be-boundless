@@ -1,4 +1,4 @@
-<?php get_template_part('app_header'); ?>
+<?php get_template_part('header', 'app'); ?>
 
     <div id="boundless-slide">
         <div id="boundless-background"></div>
@@ -38,4 +38,4 @@
 
     <h3 class="be-boundless">Be boundless</h3>
 
-<?php get_template_part( 'app_footer' ) ?>
+<?php get_template_part( 'footer', 'app' ) ?>

@@ -16,12 +16,13 @@ class Boundless
 
   function styles()
   {
-    if (is_front_page()){
-      wp_register_style( 'boundless', get_stylesheet_directory_uri() . '/boundless.css' );
-      wp_register_style( 'nprogress', get_bloginfo("stylesheet_directory") . '/js/nprogress.css' );
+    if (is_front_page())
+    {
+      // wp_register_style( 'boundless', get_stylesheet_directory_uri() . '/boundless.css' );
+      // wp_register_style( 'nprogress', get_bloginfo("stylesheet_directory") . '/js/nprogress.css' );
 
-      wp_enqueue_style('boundless');
-      wp_enqueue_style('nprogress');
+      // wp_enqueue_style('nprogress');
+      // wp_enqueue_style('boundless');
     }
   }
 
