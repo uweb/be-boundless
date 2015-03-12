@@ -36,6 +36,8 @@ BOUNDLESS.Map = Backbone.View.extend({
 
     map: {
       zoom: 17,
+      panControl: false,
+      zoomControl:false,
       mapTypeControl: false,
       center: new google.maps.LatLng( 47.653851681095, -122.30780562698 ),
       minZoom:1,
