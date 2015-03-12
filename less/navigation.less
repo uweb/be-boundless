@@ -35,9 +35,12 @@ div.navigation {
       // margin-right: 150px;
       margin-right: 30px;
       .box-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
-      transition: width .2s ease-in-out;
+      transition: width .2s ease-in-out, opacity .5s;
       &.spacer {
         opacity: .5;
+      }
+      &.faded {
+        opacity: 0;
       }
       div {
         position: absolute;
@@ -260,18 +263,18 @@ div.navigation {
       // .translate(0,0);
       .show-nav {
         opacity: 0;
-        left: 50%;
+        right: 90px;
       }
     }
     .show-nav {
-      position:relative;
-      right: 0;
+      position:absolute;
+      right: -90px;
+      top: initial;
+      bottom: 50px;
       z-index: 100;
       opacity: 1;
-      left: 100%;
-      transition: left .5s, opacity .5s;
+      transition: right .8s, opacity .8s;
       margin-top: 0;
-      top: -140px;
     }
     div#nav-wrap {
       width: 100%;

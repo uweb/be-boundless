@@ -20,6 +20,7 @@ BOUNDLESS.Navigation = Backbone.View.extend({
      'resetMargins'
      )
     this.$toggle = this.$('.show-nav')
+    this.$navwrap = this.$('#nav-wrap')
     this.$homepage = $('#boundless-slide')
 
     this.resetMargins()
@@ -34,7 +35,13 @@ BOUNDLESS.Navigation = Backbone.View.extend({
     this.hidden = true
     // Allows for clicking any part of the navigation tile
     // Protected by an event for browser back/forward navigation
-    if ( e ) BOUNDLESS.router.navigate( $(e.currentTarget).data().route, { trigger: true} )
+    if ( e ){
+      BOUNDLESS.router.navigate( $(e.currentTarget).data().route, { trigger: true} );
+      if (BOUNDLESS.mobile.is_mobile){
+        this.$navwrap.find('li').not(e.currentTarget).addClass('faded');
+        this.$navwrap.animate({scrollLeft : this.$navwrap.scrollLeft()+$(e.currentTarget).offset().left - 20}, 500);
+      }
+    }
   },
 
   complete : function()
@@ -65,7 +72,7 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   {
      // Animate is used for the easeOutElastic easing
      // TODO: why doesn't velocity understand the easing?
-      this.$el.find('li').animate({ marginRight: 20 }, 2 * BOUNDLESS.AnimationDuration, 'easeOutElastic' )
+      this.$el.find('li').animate({ marginRight: 20 }, 2 * BOUNDLESS.AnimationDuration, 'easeOutElastic' ).removeClass('faded');
   },
 
   // Resets the margins of the navigation LI's to create the elastic bounce in effect
