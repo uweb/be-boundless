@@ -38,7 +38,7 @@ BOUNDLESS.Navigation = Backbone.View.extend({
       BOUNDLESS.router.navigate( $(e.currentTarget).data().route, { trigger: true} );
       if (BOUNDLESS.mobile.is_mobile){
         this.$navwrap.find('li').not(e.currentTarget).addClass('faded');
-        this.$navwrap.animate({scrollLeft : this.$navwrap.scrollLeft()+$(e.currentTarget).offset().left - 20}, 500);
+        this.$navwrap.velocity({scrollLeft : this.$navwrap.scrollLeft()+$(e.currentTarget).offset().left - 20}, 500);
       }
     }
   },
