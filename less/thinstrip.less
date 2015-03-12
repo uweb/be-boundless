@@ -100,7 +100,17 @@ div#thin-strip {
 
 }
 
-// TODO: is this still necessary?
+@media only screen and (max-width : 992px) {
+
+  div#thin-strip {
+  
+      .wordmark {
+        width: 80px;
+      }
+  }
+
+}
+
 @media only screen and (max-width : 768px) {
 
   div#thin-strip {
@@ -169,7 +179,14 @@ div#thin-strip {
           background: url(less/svg/boundless.svg) no-repeat -25px -232px;
 
         }
-
+        li {
+          &:nth-child(4),
+          &:nth-child(5),
+          &:nth-child(6),
+          &:nth-child(7){
+            display: none;
+          }
+        }
         a  {
           color: #797979;
           position: relative;
