@@ -236,6 +236,7 @@ div.navigation {
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
   html, body {
     overflow-y: visible;
     height: auto;
@@ -280,6 +281,7 @@ div.navigation {
       width: 100%;
       overflow-x: auto;
       overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
       position: static;
       ul {
         margin-bottom: 0px;
@@ -291,8 +293,15 @@ div.navigation {
 
         li {
           height: 180px;
+
+          // We have to skew and then unscew below because -webkit-overflow-scrolling: touch doesn't overflow hidden correctly on matrix transforms
+          transform: translateZ(0px) skew(-10deg);
+          -webkit-transform: translateZ(0px) skew(-10deg);
+
           span {
             margin-top: 20px;
+            transform: skew(10deg);
+            -webkit-transform: skew(10deg);
           }
           &.spacer{
             display: none;
@@ -302,36 +311,4 @@ div.navigation {
     }
 
   }
- // #boundless-slide.blur {
- //   div.navigation {
- //     left: -1650px;
- //     .show-nav{
- //       opacity: 1;
- //     }
- //   }
- // }
-}
-
-@media only screen and (max-width: 320px){
-
-}
-
-@media only screen and (min-width: 321px) and (max-width: 360px){
-
-}
-
-@media only screen and (min-width: 361px) and (max-width: 370px){
-
-}
-
-@media only screen and (min-width: 371px) and (max-width:400px){
-
-}
-
-@media only screen and (min-width: 401px) and (max-width:480px){
-
-}
-
-@media only screen and (max-width:768px) and (min-height: 650px){
-
 }
