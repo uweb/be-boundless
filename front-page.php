@@ -2,9 +2,6 @@
 
     <div id="boundless-slide">
         <div id="boundless-background"></div>
-        <!--
-        <button id="topRight" class="play"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>
-        -->
 
         <div class="navigation segue">
 
@@ -17,6 +14,7 @@
                     <p></p>
                     <p class="p1"><?php the_content(); ?></p>
                 </div>
+
             <?php endwhile; ?>
 
 
@@ -32,13 +30,13 @@
             <a class="show-nav" href="#">Show navigation</a>
         </div>
 
+        <div class="stripes">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span><span></span>
+        </div>
+
     </div>
 
     <div id="slide"></div>
-
-    <div class="stripes">
-        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span><span></span>
-    </div>
 
     <h3 class="be-boundless">Be boundless</h3>
 
