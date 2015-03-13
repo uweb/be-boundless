@@ -65,6 +65,9 @@ BOUNDLESS.Navigation = Backbone.View.extend({
      // Animate is used for the easeOutElastic easing
      // TODO: why doesn't velocity understand the easing?
       this.$navigationItems.animate({ marginRight: 20 }, 2 * BOUNDLESS.AnimationDuration, 'easeOutElastic' )
+
+      // TODO: hack until the navigation scroll is reimplemented better for mobile
+      if ( navigator.userAgent.match(/iPhone/i) ) this.$el.hide().fadeIn(100)
   },
 
   // Resets the margins of the navigation LI's to create the elastic bounce in effect
