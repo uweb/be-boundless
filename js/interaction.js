@@ -28,8 +28,7 @@ BOUNDLESS.Navigation = Backbone.View.extend({
     this.$el.removeClass('segue')
     console.log(this.$navigationItems.first().width() )
     // We have to animate the marginRight instead of using 'resetMargins' to avoid an animation jump after its completed
-    // this.$el.velocity({ translateZ: 0, translateX: -235 * this.$navigationItems.length  }, BOUNDLESS.AnimationDuration, 'easeInOutQuad', this.complete )
-    this.$el.velocity({ translateZ: 0, translateX: -0.95 * this.$navigationItems.first().width() * this.$navigationItems.length  }, BOUNDLESS.AnimationDuration, 'easeInOutQuad', this.complete )
+    this.$el.velocity({ translateZ: 0, translateX: -0.7 * $('#nav-wrap').width()  }, BOUNDLESS.AnimationDuration, 'easeInOutQuad', this.complete )
 
     this.hidden = true
     // Allows for clicking any part of the navigation tile
