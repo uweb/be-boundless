@@ -86,6 +86,8 @@ BOUNDLESS.Navigation = Backbone.View.extend({
      // Animate is used for the easeOutElastic easing
      // TODO: why doesn't velocity understand the easing?
      this.hidden = false
+     //prevent weird in-between state
+     this.$homepage.removeClass('blur');
      this.$el.find('li').animate({ marginRight: 20 }, 2 * BOUNDLESS.AnimationDuration, 'easeOutElastic' ).removeClass('faded');
   },
 
