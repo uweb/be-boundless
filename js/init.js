@@ -32,6 +32,9 @@ BOUNDLESS.initialize = function( $ )
   // BOUNDLESS.api = new BOUNDLESS.Video.API()
   // Initialize the search
   BOUNDLESS.search = new BOUNDLESS.Search()
+ 
+  // analytics logic for boundless
+  BOUNDLESS.analytics = new BOUNDLESS.Analytics();
 
 
   Backbone.history.start()
