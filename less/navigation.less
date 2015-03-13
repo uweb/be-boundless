@@ -46,9 +46,7 @@ div.navigation {
       &:first-child {
         background-color: #3F3F3F;
       }
-      &:hover {
-        width: 280px;
-      }
+      // &:hover {width: 280px; }
       h3 {
         position: relative;
         display: inline-block;
@@ -116,6 +114,8 @@ div.navigation {
     }
 
 
+
+
   }
   .show-nav {
     transform: rotate(0deg);
@@ -128,7 +128,7 @@ div.navigation {
     margin-top: -50px;
     text-indent: -9999px;
     position: absolute;
-    right: -330px;
+    right: -20px;
     top: 50%;
     opacity: 1;
     transition: all .5s ease-in-out;
@@ -138,10 +138,14 @@ div.navigation {
     }
   }
     &.segue {
-//      .translate(-1650px,0);
       .show-nav {
         opacity: 0;
      }
+
+    li:hover {
+      width: 280px;
+    }
+
    }
 
 }
