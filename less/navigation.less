@@ -1,22 +1,11 @@
 div.navigation {
 
   position: absolute;
-//<<<<<<< HEAD
-//  .translate(0,0);
-//  .transition-transform(.8s);
-//=======
   left: -230px;
   right: 0px;
-//  // transform: translateX(-1650px);
-//>>>>>>> 8fa962898336943259eabf24b1f0226d7111f089
   top: 50%;
   margin-top: 100px;
-//  width: 1730px;
   z-index: 100;
-//<<<<<<< HEAD
-//=======
-//  // transition: opacity .5s, transform .8s;
-//>>>>>>> 8fa962898336943259eabf24b1f0226d7111f089
 
   ul {
     width: 4850px;
@@ -271,10 +260,11 @@ div.navigation {
     }
     div#nav-wrap {
       width: 100%;
-      overflow-x: auto;
+      overflow-x: scroll;
       overflow-y: hidden;
       -webkit-overflow-scrolling: touch;
       position: static;
+
       ul {
         margin-bottom: 0px;
         overflow-y:hidden;
@@ -299,6 +289,13 @@ div.navigation {
             display: none;
           }
         }
+      }
+    }
+
+
+    &.velocity-animating {
+      #nav-wrap {
+          width: 10000px;
       }
     }
 
