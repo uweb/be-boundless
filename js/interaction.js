@@ -28,8 +28,11 @@ BOUNDLESS.Navigation = Backbone.View.extend({
 
   segueOut : function( e )
   {
+
+    if ( e && ! $( e.currentTarget ).data().route ) return false;
+
     this.$el.removeClass('segue')
-    // We have to animate the marginRight instead of using 'resetMargins' to avoid an animation jump after its completed
+
     this.$el.velocity({ translateX: '-100%'}, BOUNDLESS.AnimationDuration, 'easeInOutQuad', this.complete )
 
     // Allows for clicking any part of the navigation tile
