@@ -70,7 +70,8 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   // Resets the margins of the navigation LI's to create the elastic bounce in effect
   resetMargins : function()
   {
-    this.$navigationItems.velocity({ marginRight: 30 })
+    //this.$navigationItems.velocity({ marginRight: 30 })
+    this.$navigationItems.animate({ marginRight: 30 }, BOUNDLESS.AnimationDuration, 'easeOutQuad' );
   }
 
 
