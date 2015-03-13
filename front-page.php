@@ -21,12 +21,14 @@
 
 
             <a id="static" class="play" href="#!/video/boundless"><span class="top"></span><span class="left"></span><span class="bottom"></span></a>
+
             <div id="nav-wrap">
-            <ul>
-              <li class="spacer"></li>
-              <?php echo  Navigation::get_navigation() ?>
-            </ul>
+                <ul>
+                  <li class="spacer"></li>
+                  <?php echo  Navigation::get_navigation() ?>
+                </ul>
             </div>
+
             <a class="show-nav" href="#">Show navigation</a>
         </div>
 
