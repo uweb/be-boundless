@@ -26,8 +26,10 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   segueOut : function( e )
   {
     this.$el.removeClass('segue')
+    // To get the width we use getBoudningClientRect because scale CSS is being used to shrink the navigation
+    var width = this.$navigationItems.first().get(0).getBoundingClientRect().width || this.$navigationItems.first().width()
     // We have to animate the marginRight instead of using 'resetMargins' to avoid an animation jump after its completed
-    this.$el.velocity({ translateZ: 0, translateX: -235 * this.$navigationItems.length  }, BOUNDLESS.AnimationDuration, 'easeInOutQuad', this.complete )
+    this.$el.velocity({ translateZ: 0, translateX: -0.75 * width  * this.$navigationItems.length  }, BOUNDLESS.AnimationDuration, 'easeInOutQuad', this.complete )
 
     this.hidden = true
     // Allows for clicking any part of the navigation tile
@@ -73,8 +75,7 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   // Resets the margins of the navigation LI's to create the elastic bounce in effect
   resetMargins : function()
   {
-    //this.$navigationItems.velocity({ marginRight: 30 })
-    this.$navigationItems.animate({ marginRight: 30 }, BOUNDLESS.AnimationDuration, 'easeOutQuad' );
+    this.$navigationItems.velocity({ marginRight: 30 })
   }
 
 

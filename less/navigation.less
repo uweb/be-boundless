@@ -117,26 +117,6 @@ div.navigation {
 
 
   }
-  .show-nav {
-    transform: rotate(0deg);
-    transition-duration: 1s;
-    background: url(less/svg/map-marker.svg) center center no-repeat transparent;
-    overflow: hidden;
-    display: block;
-    width: 100px;
-    height: 100px;
-    margin-top: -50px;
-    text-indent: -9999px;
-    position: absolute;
-    right: -20px;
-    top: 50%;
-    opacity: 1;
-    transition: all .5s ease-in-out;
-    &.close {
-      transform: rotate( 0 );
-      opacity: 1;
-    }
-  }
     &.segue {
       .show-nav {
         opacity: 0;
@@ -149,6 +129,40 @@ div.navigation {
    }
 
 }
+
+
+#boundless-slide {
+
+  .show-nav {
+    transform: rotate(0deg);
+    transition-duration: 1s;
+    background: url(less/svg/map-marker.svg) center center no-repeat transparent;
+    overflow: hidden;
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-top: 170px;
+    text-indent: -9999px;
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    opacity: 1;
+    transition: all .5s ease-in-out;
+    z-index: 999;
+    &.close {
+      transform: rotate( 0 );
+      opacity: 1;
+    }
+  }
+
+  &.blur {
+    .show-nav {
+      left: 20px;
+    }
+  }
+
+}
+
 
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */

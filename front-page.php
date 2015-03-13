@@ -27,8 +27,9 @@
                 </ul>
             </div>
 
-            <a class="show-nav" href="#">Show navigation</a>
         </div>
+
+            <a class="show-nav" href="#">Show navigation</a>
 
         <div class="stripes">
             <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span><span></span>
