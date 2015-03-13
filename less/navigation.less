@@ -46,9 +46,7 @@ div.navigation {
       &:first-child {
         background-color: #3F3F3F;
       }
-      &:hover {
-        width: 280px;
-      }
+      // &:hover {width: 280px; }
       h3 {
         position: relative;
         display: inline-block;
@@ -97,33 +95,6 @@ div.navigation {
         padding: 15px 40px 10px 60px;
         background: rgba( 75,46,131, 0.85 );
         cursor: pointer;
-//        background-image: url(less/svg/boundless.svg);
-//        background-position: -100px -359px;
-//        transition: all .3s ease-out;
-//        p, h3 {
-//          margin-left: 0;
-//          transform: translateX(0);
-//          transition: transform .2s ease-out;
-//
-//        }
-//        &:hover {
-//          background-position: 100px -359px;
-//          p, h3 {
-//            transform: translateX(354px);
-//          }
-//        }
-//      }
-//      &.tile-map span {
-//        background-position: -100px -493px;
-//        &:hover {
-//          background-position: 120px  -493px;
-//        }
-//      }
-//      &.tile-gallery span {
-//        background-position: -100px -621px;
-//        &:hover {
-//          background-position: 120px  -621px;
-//        }
       }
 
       a {
@@ -143,7 +114,25 @@ div.navigation {
     }
 
 
+
+
   }
+    &.segue {
+      .show-nav {
+        opacity: 0;
+     }
+
+    li:hover {
+      width: 280px;
+    }
+
+   }
+
+}
+
+
+#boundless-slide {
+
   .show-nav {
     transform: rotate(0deg);
     transition-duration: 1s;
@@ -152,26 +141,28 @@ div.navigation {
     display: block;
     width: 100px;
     height: 100px;
-    margin-top: -50px;
+    margin-top: 170px;
     text-indent: -9999px;
     position: absolute;
-    right: -330px;
+    left: -100px;
     top: 50%;
     opacity: 1;
     transition: all .5s ease-in-out;
+    z-index: 999;
     &.close {
       transform: rotate( 0 );
       opacity: 1;
     }
   }
-    &.segue {
-//      .translate(-1650px,0);
-      .show-nav {
-        opacity: 0;
-     }
-   }
+
+  &.blur {
+    .show-nav {
+      left: 20px;
+    }
+  }
 
 }
+
 
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
@@ -232,7 +223,7 @@ div.navigation {
   }
 
   // Puts the stripes behind
-  #slide.open { z-index: 11 }
+  // #slide.open { z-index: 11 }
 
 
   div.navigation {
@@ -241,6 +232,7 @@ div.navigation {
     left: auto !important;
     width: 100%;
     margin: 0;
+    top:0;
     &.segue {
       // .translate(0,0);
       .show-nav {

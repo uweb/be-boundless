@@ -26,8 +26,10 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   segueOut : function( e )
   {
     this.$el.removeClass('segue')
+    // To get the width we use getBoudningClientRect because scale CSS is being used to shrink the navigation
+    var width = this.$navigationItems.first().get(0).getBoundingClientRect().width || this.$navigationItems.first().width()
     // We have to animate the marginRight instead of using 'resetMargins' to avoid an animation jump after its completed
-    this.$el.velocity({ translateZ: 0, translateX: -235 * this.$navigationItems.length  }, BOUNDLESS.AnimationDuration, 'easeInOutQuad', this.complete )
+    this.$el.velocity({ translateZ: 0, translateX: -0.75 * width  * this.$navigationItems.length  }, BOUNDLESS.AnimationDuration, 'easeInOutQuad', this.complete )
 
     this.hidden = true
     // Allows for clicking any part of the navigation tile
@@ -65,12 +67,15 @@ BOUNDLESS.Navigation = Backbone.View.extend({
      // Animate is used for the easeOutElastic easing
      // TODO: why doesn't velocity understand the easing?
       this.$navigationItems.animate({ marginRight: 20 }, 2 * BOUNDLESS.AnimationDuration, 'easeOutElastic' )
+
+      // TODO: hack until the navigation scroll is reimplemented better for mobile
+      if ( navigator.userAgent.match(/iPhone/i) ) this.$el.hide().fadeIn(100)
   },
 
   // Resets the margins of the navigation LI's to create the elastic bounce in effect
   resetMargins : function()
   {
-    this.$navigationItems.css({ marginRight: 30 })
+    this.$navigationItems.velocity({ marginRight: 30 })
   }
 
 
