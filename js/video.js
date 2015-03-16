@@ -78,17 +78,22 @@ BOUNDLESS.Video = Backbone.View.extend({
       events: {
           //these events will call functions in the view
          'onReady': this.onReady,
-         'onStateChange': this.onStateChange
+         'onStateChange': this.onStateChange,
+         'onError' : this.onError
       }
     });
     this.$iframe = this.$el.find('#video' + this.model.get('video'));
+    this.trigger('slideloaded');
+  },
+
+  onError : function( error ) {
+      console.error( 'There was an error: ' + error )
   },
 
   onReady: function () {
     this.$button.on(BOUNDLESS.TransitionEvents, this.buttonTransitionDone);
     this.$iframe.on(BOUNDLESS.TransitionEvents, this.iframeTransitionDone);
     // this.on('preRemove', this.stopVideo);
-    this.trigger('slideloaded');
 
     if ( this.slug === 'boundless') this.buttonClick()
   },
