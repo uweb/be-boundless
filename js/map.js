@@ -36,6 +36,7 @@ BOUNDLESS.Map = Backbone.View.extend({
 
     map: {
       zoom: 17,
+      scrollwheel: false,
       panControl: false,
       zoomControl:false,
       mapTypeControl: false,
@@ -177,13 +178,13 @@ BOUNDLESS.Map = Backbone.View.extend({
       // mapTypeControl : false
     },
     icon : {
-      url : 'wp-content/themes/be-boundless/less/svg/map-marker-dark.svg',
+      url : 'wp-content/themes/be-boundless/less/svg/map-marker-dark.png',
       size : new google.maps.Size(85, 85),
       origin: new google.maps.Point(0,0),
       anchor: new google.maps.Point( 42.5, 42.5 )
     },
     marker: {
-      animation: google.maps.Animation.DROP,
+      // animation: google.maps.Animation.DROP,
     }
 
 

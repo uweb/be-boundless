@@ -26,6 +26,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
        'conceal'
     )
 
+    this.on('route', this.resetBodyClasses )
     NProgress.configure( this.settings.nprogress )
     this.$slide = $('#slide')
     this.$homepage = $('#boundless-slide')
@@ -43,6 +44,12 @@ BOUNDLESS.Router = Backbone.Router.extend({
   video : function (video) {
     this.videoSlug = video
     BOUNDLESS.navigation.once( 'complete', this.segueToVideo )
+  },
+
+  // TODO: figure out different mechanism besides toggling a video-active class
+  resetBodyClasses : function()
+  {
+    $('body').removeClass('video-active')
   },
 
   // default : function() {
@@ -99,7 +106,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
   {
     // TODO: is there better exit event to bind to?
     if ( (Backbone.history.fragment.length === 0) && (['-webkit-clip-path', 'opacity'].indexOf(e.originalEvent.propertyName) != -1)){
-      BOUNDLESS.navigation.trigger('slideclosed');
+      // BOUNDLESS.navigation.trigger('slideclosed');
       return this.currentView && this.currentView.remove()
     }
   }
