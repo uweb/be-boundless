@@ -184,7 +184,7 @@ BOUNDLESS.Map = Backbone.View.extend({
       anchor: new google.maps.Point( 42.5, 42.5 )
     },
     marker: {
-      animation: google.maps.Animation.DROP,
+      // animation: google.maps.Animation.DROP,
     }
 
 
