@@ -36,6 +36,7 @@ BOUNDLESS.Map = Backbone.View.extend({
 
     map: {
       zoom: 17,
+      scrollwheel: false,
       panControl: false,
       zoomControl:false,
       mapTypeControl: false,
