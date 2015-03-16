@@ -2,13 +2,13 @@ BOUNDLESS.Analytics = function () {
   
   $('#nav-wrap li').on({
     click: function () {
-      ga('send', 'event', 'nav', 'click', this.id);
+      ga('send', 'event', 'Boundless', 'click', 'Navigation item: ' + this.id);
     }
   });
 
   $('a#static.play').on({
     click: function (){
-      ga('send', 'event', 'play-video', 'click', "Home brand video");
+      ga('send', 'event', 'Boundless', 'click', "Home brand video played");
     }
   });
 
@@ -16,7 +16,7 @@ BOUNDLESS.Analytics = function () {
   $('.boundless-button a').on({
     click: function () {
       //console.log(this.innerHTML);
-      ga('send', 'event', 'call-to-action', 'click', this.innerHTML + ': ' + this.href);
+      ga('send', 'event', 'Boundless', 'click', 'CTA clicked: ' + this.innerHTML + '- ' + this.href);
     }
   });
 
@@ -26,7 +26,7 @@ BOUNDLESS.Analytics = function () {
       if(!$(this).hasClass('close')){
         var video = $(this).attr('aria-controls');
         //console.log($(video).attr('aria-label') + ' played');
-        ga('send', 'event', 'play-video', 'click', $(video).attr('aria-label'));
+        ga('send', 'event', 'Boundless', 'click', 'Slide video played: ' + $(video).attr('aria-label'));
       }
     }
   });
