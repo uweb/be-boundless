@@ -98,6 +98,7 @@ BOUNDLESS.Router = Backbone.Router.extend({
   },
 
   reveal : function () {
+    BOUNDLESS.analytics.trigger('slideloaded');
     NProgress.done()
     this.$slide.addClass('open')
   },

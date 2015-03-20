@@ -1,5 +1,6 @@
 BOUNDLESS.Analytics = function () {
-  
+  _.extend(this, Backbone.Events);
+
   $('#nav-wrap li').on({
     click: function () {
       ga('send', 'event', 'Boundless', 'click', 'Navigation item: ' + this.id);
@@ -12,7 +13,6 @@ BOUNDLESS.Analytics = function () {
     }
   });
 
-  // needs to get attached and detached for slides as well
   $('.boundless-button a').on({
     click: function () {
       //console.log(this.innerHTML);
@@ -20,15 +20,23 @@ BOUNDLESS.Analytics = function () {
     }
   });
 
-  //only relevant in slides
-  $('button.play').on({
-    click: function (){
-      if(!$(this).hasClass('close')){
-        var video = $(this).attr('aria-controls');
-        //console.log($(video).attr('aria-label') + ' played');
-        ga('send', 'event', 'Boundless', 'click', 'Slide video played: ' + $(video).attr('aria-label'));
+  this.on('slideloaded', function () {
+    // needs to get attached and detached for slides as well
+    $('#slide .boundless-button a').on({
+      click: function () {
+        ga('send', 'event', 'Boundless', 'click', 'CTA clicked: ' + this.innerHTML + '- ' + this.href);
       }
-    }
+    });
+
+    //only relevant in slides
+    $('#slide button.play').on({
+      click: function (){
+        if(!$(this).hasClass('close')){
+          var video = $(this).attr('aria-controls');
+          ga('send', 'event', 'Boundless', 'click', 'Slide video played: ' + $(video).attr('aria-label'));
+        }
+      }
+    });
   });
 
   this.ready = true;
