@@ -16,7 +16,7 @@ BOUNDLESS.Analytics = function () {
   $('.boundless-button a').on({
     click: function () {
       //console.log(this.innerHTML);
-      ga('send', 'event', 'Boundless', 'click', 'CTA clicked: ' + this.innerHTML + '- ' + this.href);
+      ga('send', 'event', 'Boundless', 'click', 'Main CTA clicked: ' + this.innerHTML + '- ' + this.href);
     }
   });
 
@@ -24,7 +24,7 @@ BOUNDLESS.Analytics = function () {
     // needs to get attached and detached for slides as well
     $('#slide .boundless-button a').on({
       click: function () {
-        ga('send', 'event', 'Boundless', 'click', 'CTA clicked: ' + this.innerHTML + '- ' + this.href);
+        ga('send', 'event', 'Boundless', 'click', 'Slide CTA clicked: ' + this.innerHTML + '- ' + this.href);
       }
     });
 
@@ -35,6 +35,14 @@ BOUNDLESS.Analytics = function () {
           var video = $(this).attr('aria-controls');
           ga('send', 'event', 'Boundless', 'click', 'Slide video played: ' + $(video).attr('aria-label'));
         }
+      }
+    });
+  });
+
+  this.on('infowindowready', function () {
+    $('.infowindow .boundless-button a').on({
+      click: function () {
+        ga('send', 'event', 'Boundless', 'click', 'Map Point CTA clicked: ' + this.innerHTML + '- ' + this.href);
       }
     });
   });
