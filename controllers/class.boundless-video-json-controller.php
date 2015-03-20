@@ -21,7 +21,7 @@ class JSON_API_Boundless_Video_Controller
       $result->title = $video->title;
       $result->slug  = $video->slug;
       $result->text  = $video->content;
-      $result->image = apply_filters('wp_prepare_attachment_for_js', wp_get_attachment_url( get_post_thumbnail_id( $video->id)));
+      $result->image = apply_filters('wp_prepare_attachment_for_js', apply_filters( 'remove_cms', wp_get_attachment_url( get_post_thumbnail_id( $video->id))) );
       $result->video = get_post_meta( $video->id, 'youtube', true );
 
       $results[] = $result;
@@ -36,9 +36,9 @@ class JSON_API_Boundless_Video_Controller
   //{
   //  global $json_api;
   //  $videoSlug = $json_api->query->videoSlug;
-  //  
+  //
   //  $video = get_page_by_path($videoSlug, OBJECT, 'boundless_video' );
-  //  
+  //
   //  $result = new stdClass();
   //  $result->title = $video->title;
   //  $result->text = $video->content;
