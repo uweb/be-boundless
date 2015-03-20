@@ -54,6 +54,7 @@ BOUNDLESS.Map.InfoWindow.prototype.render = function( marker )
   this.div.style.top  = position.y - ( this.div.offsetHeight + padding ) + 'px'
   this.div.style.left = position.x - this.div.offsetWidth / 2 + 'px'
 
+  BOUNDLESS.analytics.trigger('infowindowready');
 }
 
 BOUNDLESS.Map.InfoWindow.prototype.segueIn = function()
@@ -73,7 +74,6 @@ BOUNDLESS.Map.InfoWindow.prototype.onAdd = function()
   var panes = this.getPanes()
   // this.div.style.display = 'inline'
   panes.floatPane.appendChild( this.div )
-
 }
 
 //  Positions the window in the correct location based on the marker's coordinates
