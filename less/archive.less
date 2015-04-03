@@ -13,6 +13,9 @@ h2.uw-site-title {
 }
 
 .boundless-archive {
+  #main_content {
+    margin: 5% -1%;
+  }
   .text-overlay {
     position: absolute;
     top: -405px;
@@ -45,11 +48,24 @@ h2.uw-site-title {
   }
   .boundless-tile {
     display: inline-block;
-    width: 33%;
+    width: 31%;
+    margin: 1% 1%;
     height: 300px;
     background-size: cover;
+    background-position: center center;
+    position: relative;
+    h3 {
+      position: absolute;
+      color: #fff;
+      font-weight: 900;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: @purple;
+    }
   }
 }
+
 
 //.tenet {
 //  font-weight: 900;
