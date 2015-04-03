@@ -33,9 +33,10 @@
           );
           $posts = get_posts($args);
           foreach ($posts as $post){
+            $image_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID), 'half');
             ?>
             <a href='<?php echo get_post_permalink($post->ID) ?>'>
-            <div class='boundless-tile' style='background-image:url("<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'half')[0] ?>")'>
+            <div class='boundless-tile' style='background-image:url("<?php echo $image_src[0] ?>")'>
               <h3><?php echo $post->post_title ?></h3>
             </div>
             </a>
