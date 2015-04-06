@@ -2,6 +2,8 @@
 
 <?php get_template_part( 'header', 'image' ); ?>
 
+<div class="tan-bg">
+
 <div class="container uw-body boundless-archive">
 
   <div class="row">
@@ -33,7 +35,7 @@
           );
           $posts = get_posts($args);
           foreach ($posts as $post){
-            $image_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID), 'full');
+            $image_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID), 'half');
             ?>
             <div class='boundless-tile'>
               <div class="boundless-image" style='background-image:url("<?php echo $image_src[0] ?>")'></div>
@@ -53,6 +55,8 @@
     </div>
 
   </div>
+
+</div>
 
 </div>
 
