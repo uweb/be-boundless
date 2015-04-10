@@ -42,7 +42,13 @@
               <div class="boundless-text">
                 <h3><a href='<?php echo get_post_permalink($post->ID) ?>'><?php echo $post->post_title ?></a></h3>
                 <p><?php echo $post->post_excerpt ?></p>
-                <a class="more" href='<?php echo get_post_permalink($post->ID) ?>'>More</a>
+                <?php
+                $link = get_post_meta($post->ID, 'source_url', true);
+                if (empty($link)){
+                  $link = get_post_permalink($post->ID);
+                }
+                ?>
+                <a class="more" href='<?php echo $link ?>'>More</a>
               </div>
             </div>
             <?php
