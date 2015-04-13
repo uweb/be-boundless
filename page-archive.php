@@ -35,7 +35,7 @@
           );
           $posts = get_posts($args);
           foreach ($posts as $post){
-            $image_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID), 'half');
+            $image_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID), 'full');
             ?>
             <div class='boundless-tile'>
               <div class="boundless-image" style='background-image:url("<?php echo $image_src[0] ?>")'></div>
