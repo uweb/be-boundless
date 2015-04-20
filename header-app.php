@@ -28,10 +28,10 @@
             <li class="twitter"><a href="https://twitter.com/uw" title="Twitter">Twitter</a>
             <li class="instagram"><a href="http://instagram.com/uofwa" title="Instagram">Instagram</a>
             <li class="youtube"><a href="http://www.youtube.com/uwhuskies" title="YouTube">YouTube</a>
-            <li><a href="uw.edu/students" class="slash" title="Students">Students</a>
-            <li><a href="uw.edu/parents" class="slash" title="Parents">Parents</a>
-            <li><a href="uw.edu/facultystaff" class="slash" title="Faculty &amp; Staff">Faculty &amp; Staff</a>
-            <li><a href="uw.edu/alumni" class="slash" title="Alumi">Alumni</a>
+            <li><a href="http://uw.edu/students" class="slash" title="Students">Students</a>
+            <li><a href="http://uw.edu/parents" class="slash" title="Parents">Parents</a>
+            <li><a href="http://uw.edu/facultystaff" class="slash" title="Faculty &amp; Staff">Faculty &amp; Staff</a>
+            <li><a href="http://uw.edu/alumni" class="slash" title="Alumi">Alumni</a>
             <li class="search fui-search"> <a href="#search" title="Search">Search</a>
         </ul>
     </div>
