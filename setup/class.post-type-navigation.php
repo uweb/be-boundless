@@ -144,7 +144,7 @@ class Navigation
         update_post_meta( $post_id, '_route', $_POST['route'] );
   }
 
-  public function get_navigation()
+  static public function get_navigation()
   {
     $navigations = get_posts( "numberposts=-1&post_type=" . self::POST_TYPE );
     foreach ($navigations as $nav)

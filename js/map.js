@@ -257,7 +257,7 @@ BOUNDLESS.Map = Backbone.View.extend({
 
       marker.setPosition(  latlng )
       marker.setTitle( information.get('title') )
-      marker.setText( information.get('text') )
+      //marker.setText( information.get('text') )
       marker.setMap( this.map )
       marker.setIcon( this.settings.icon )
 
@@ -306,7 +306,7 @@ BOUNDLESS.Map = Backbone.View.extend({
 
   // Segues the initial load of the map so the Google Map isn't loading tiles while transition from the main page
   googleMapLoaded: function() {
-    this.trigger('slideloaded')
+    this.trigger('slideloaded');
   }
 
 })
