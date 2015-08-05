@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     concat: {
       options: {
         separator: ';',
-        sourceMap: true
+        sourceMap: false
       },
       dist: {
         libraries: [
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
           'js/core.js',
           'js/init.js',
           'js/beginning.js',
-          'js/interaction.js',
+          'js/navigation.js',
           'js/search.js',
           'js/mobile.js',
           'js/uwtiles.js',
@@ -31,19 +31,19 @@ module.exports = function(grunt) {
           'js/analytics.js',
         ],
         src: [ 'js/intro.js', '<%= concat.dist.libraries %>', '<%= concat.dist.theme %>', 'js/outro.js' ],
-        dest: 'js/.tmp.boundless.js'
+        dest: 'js/boundless.js'
       }
     },
     uglify: {
       options: {
-        sourceMap: true,
-        sourceMapIncludeSources: true,
-        sourceMapIn: 'js/.tmp.boundless.js.map'
-        // banner: '/*! <%= pkg.name %> <%= grunt.template.today() %> */\n'
+        sourceMap: false,
+        // sourceMapIncludeSources: true,
+        // sourceMapIn: 'js/.tmp.boundless.js.map'
+        banner: '/*! <%= pkg.name %> <%= grunt.template.today() %> */\n'
       },
       dist: {
         files: {
-          'js/boundless.js': ['<%= concat.dist.dest %>'],
+          'js/boundless.min.js': ['<%= concat.dist.dest %>'],
         }
       }
     },

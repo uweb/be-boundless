@@ -72,8 +72,8 @@ BOUNDLESS.Router = Backbone.Router.extend({
   segueToMap : function ()
   {
     // Set the current view reference
-    this.currentView = new BOUNDLESS.Map()
-    this.currentView.on( 'slideloaded' , this.reveal )
+    // this.currentView = new BOUNDLESS.Map()
+    // this.currentView.on( 'slideloaded' , this.reveal )
   },
 
   // If the router is a gallery create a new gallery

@@ -52,8 +52,43 @@ class Boundless
       // Boundless App and dependecies
       wp_register_script( 'boundless', get_stylesheet_directory_uri() . '/js/boundless.js', array( 'youtube-iframe-api', 'jquery', 'underscore', 'backbone', 'google-maps', 'jquery-easing', 'nprogress', 'velocity' ), self::VERSION );
 
+      // Map Points
+      wp_localize_script( 'boundless', 'POINTS', $this->get_map_points() );
+
+
+
       wp_enqueue_script( 'boundless' );
     }
+  }
+
+  function get_map_points()
+  {
+
+    $points = get_posts( array(
+      'post_type' => array( 'points' ),
+      'numberposts' => -1,
+    ));
+
+    foreach ( $points as $point )
+    {
+      $result = new stdClass();
+      $result->title = $point->post_title;
+      $result->text = $point->post_excerpt;
+      $result->image = apply_filters('wp_prepare_attachment_for_js', apply_filters( 'remove_cms', wp_get_attachment_image_src( get_post_thumbnail_id( $point->ID ), 'original' )) );
+      $result->coordinate = array(
+        "latitude"  => (double) get_post_meta( $point->ID, '_latitude', true ),
+        "longitude" => (double) get_post_meta( $point->ID, "_longitude", true )
+      );
+      $result->cta = array(
+        'text'=> get_post_meta($point->ID, 'cta_text', true),
+        'url' => get_post_meta($point->ID, 'cta_url', true)
+      );
+
+      $results[] = $result;
+    }
+
+    return $results;
+
   }
 
 }

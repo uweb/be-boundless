@@ -44,6 +44,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
 
   render : function()
   {
+    this.$('#slide').after( this.el )
     BOUNDLESS.replaceSlide(this.$el.html( _.template( this.template, {images : this.images.toJSON() }) ) )
     this.$el.imagesLoaded( this.el, this.setMasonry )
     // this.$el.find('li').on('inview', this.animateImageIn )

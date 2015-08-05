@@ -4,6 +4,8 @@ BOUNDLESS.Map = Backbone.View.extend({
   // The element to put the Google Map
   id : 'map',
 
+  className : 'slide',
+
   tagName : 'div',
 
   listItems : '<ul class="points-of-interest">' +
@@ -205,14 +207,15 @@ BOUNDLESS.Map = Backbone.View.extend({
       'segueIn',
       'showOverlays'
     )
-    this.points = new BOUNDLESS.Map.Points()
-    this.points.on( 'sync', this.render )
+    this.points = new BOUNDLESS.Map.Points( POINTS )
+    this.render()
   },
 
   // Render the map
   render : function() {
-    BOUNDLESS.replaceSlide( this.el )
-    this.map = new google.maps.Map( $('#slide').find( '#map').get(0), this.settings.map )
+    // BOUNDLESS.replaceSlide( this.el )
+    $('#slides').prepend( this.el )
+    this.map = new google.maps.Map( this.el, this.settings.map )
     this.delegateGoogleMapEvents()
 
     this.infowindow = new BOUNDLESS.Map.InfoWindow( this.map )
@@ -244,6 +247,9 @@ BOUNDLESS.Map = Backbone.View.extend({
   {
     google.maps.event.addListenerOnce( this.map, "tilesloaded", this.googleMapLoaded )
     google.maps.event.addListener( this.map, "click", this.removeInfoWindows )
+    google.maps.event.addListenerOnce( this.map, "idle", function() {
+      BOUNDLESS.app.set( 'map', true )
+    })
   },
 
 
@@ -317,19 +323,19 @@ BOUNDLESS.Map.Point = Backbone.Model.extend({})
 // Map Point Collection
 BOUNDLESS.Map.Points = Backbone.Collection.extend({
 
-  url : '?json=map_point.get_map_points&count=-1',
+  // url : '?json=map_point.get_map_points&count=-1',
 
   model : BOUNDLESS.Map.Point,
 
   initialize : function()
   {
-    this.on( 'error', this.error )
-    this.fetch()
+    // this.on( 'error', this.error )
+    // this.fetch()
   },
 
   error: function( error )
   {
-    console.error('There was an error retrieving the map points.')
+    // console.error('There was an error retrieving the map points.')
   }
 
 })

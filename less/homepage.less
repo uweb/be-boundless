@@ -1,35 +1,5 @@
 
-
 #boundless-slide {
-
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-
-    #boundless-background {
-      .transition(all .6s);
-      background-image: url(img/sunset.jpg);
-      position: relative;
-      width: 100%;
-      height: 100%;
-      background-position: center center;
-      background-size: cover;
-      overflow-y: auto;
-      overflow-x: hidden;
-      -webkit-transform: translateZ(0) ;
-      -moz-transform: translateZ(0) ;
-      transform: translateZ(0) ;
-    }
-    &:after {
-      content: "";
-      background: url(img/overlay-checker.png);
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
 
     &.blur {
 
@@ -42,87 +12,6 @@
       opacity: .8;
     }
 
-    }
-    a.play {
-      display: block;
-      height: 190px;
-      width: 170px;
-      position: absolute;
-      top: calc(~"50% - 385px");
-      left: 930px;
-      z-index: 20;
-      border: none;
-      outline: none;
-      .transition(all .25s);
-      background: url(less/svg/boundless.svg) no-repeat  no-repeat 0px -600px;
-      background-size: 1650px;
-      &:before {
-        content: "";
-        display: block;
-        position: absolute;
-        background: url(less/svg/boundless.svg) no-repeat -88px -121px;
-        left: -80px;
-        bottom: 10px;
-        width: 65px;
-        height: 195px;
-        transition: opacity .25s;
-      }
-      &#topRight {
-        .scale(.8);
-        height: 44px;
-        width: 45px;
-        top: 85px;
-        right: -75px;
-        border: none;
-        border-radius: 0;
-        padding:0;
-        background: rgba(0,0,0,0);
-        span {
-          display:block;
-          height: 5px;
-          width: 45px;
-          margin: 0;
-          background-color: white;
-          &.top {
-            transform: rotate(45deg) translate(5px, 5px);
-          }
-          &.left {
-            opacity: 0;
-            transform: rotate(90deg) translate(0px,14px);
-          }
-          &.bottom {
-            transform: rotate(135deg) translate(-2px,3px);
-          }
-        }
-        &.close {
-          right: 5px;
-        }
-        &:before {
-          display: none;
-        }
-      }
-      //&.close {
-      //  height: 44px;
-      //  width: 45px;
-      //  top: 85px;
-      //  right: 5px;
-      //  border: none;
-      //  border-radius: 0;
-      //  span {
-      //    width: 45px;
-      //    margin: 0;
-      //    &.top {
-      //      transform: rotate(45deg) translate(5px, 5px);
-      //    }
-      //    &.left {
-      //      opacity: 0;
-      //      transform: rotate(90deg) translate(0px,14px);
-      //    }
-      //    &.bottom {
-      //      transform: rotate(135deg) translate(-2px,3px);
-      //    }
-      //  }
-      //}
     }
     .boundless-youtube {
       position: absolute;
@@ -236,7 +125,6 @@
         padding: 30px;
         position: static;
         h1 {
-          color: white;
           font-size: 34px;
           width: 70%;
         }

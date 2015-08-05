@@ -1,0 +1,119 @@
+// The boundless slide
+#boundless-slide {
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+
+// The boundless backgroun
+  #boundless-background {
+    .transition(all .6s);
+    background-image: url(img/sunset.jpg);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-transform: translateZ(0) ;
+    -moz-transform: translateZ(0) ;
+    transform: translateZ(0) ;
+  }
+  &:after {
+    content: "";
+    background: url(img/overlay-checker.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+
+// The message text that displayed when loaded
+  .homepage-text {
+
+    position:absolute;
+    top: 100px;
+    left: 100px;
+    z-index:1;
+
+    h1 {
+      font-family: "Encode Sans Compressed",sans-serif;
+      font-weight: 900;
+      line-height: 1;
+      font-size: 95px;
+      text-transform: uppercase;
+      color: white;
+      opacity: 0;
+      .animation(margieOpacity 1s 1s 1 forwards);
+    }
+
+
+     p {
+       width: 475px;
+       font-weight: bold;
+       font-size: 16px;
+       line-height: 1.45;
+       color: #fff;
+       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+       position: relative;
+       opacity: 0;
+       .animation(margieOpacity 1s 1s 1 forwards);
+       a {
+         position: absolute;
+         right: -180px;
+         bottom: 20px;
+         background: url(less/svg/boundless.svg) no-repeat -165px -140px;
+         width: 90px;
+         height: 90px;
+       }
+       &.boundless-button {
+         width: auto;
+         float: left;
+         span {
+           a {
+             padding: 10px 30px 10px 70px;
+             margin: 0 -10px 0 -10px;
+             position: static;
+             width: auto;
+             height: auto;
+             right: 0;
+             background: @purple;
+           }
+         }
+       }
+     }
+
+   }
+
+// The play button
+  a.play {
+    height: 190px;
+    width: 170px;
+    position: absolute;
+    top: 270px;
+    left: 700px;
+    border: none;
+    outline: none;
+    .transition(all .25s);
+    background: url(less/svg/boundless.svg) no-repeat  no-repeat 0px -600px;
+    background-size: 1650px;
+    z-index: 1;
+    &:before {
+      content: "";
+      position: absolute;
+      background: url(less/svg/boundless.svg) no-repeat -88px -121px;
+      left: -80px;
+      bottom: 10px;
+      width: 65px;
+      height: 195px;
+      transition: opacity .25s;
+    }
+  }
+
+
+
+}
