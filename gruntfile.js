@@ -23,6 +23,7 @@ module.exports = function(grunt) {
           'js/mobile.js',
           'js/uwtiles.js',
           'js/video.js',
+          'js/page.js',
           'js/map.js',
           'js/gallery.js',
           'js/infowindow.js',

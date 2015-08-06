@@ -20,8 +20,13 @@ BOUNDLESS.begin = function() {
   BOUNDLESS.app = new BOUNDLESS.App()
   BOUNDLESS.router  = new BOUNDLESS.Router()
   BOUNDLESS.map = new BOUNDLESS.Map()
-  BOUNDLESS.navigation = new BOUNDLESS.Navigation()
   BOUNDLESS.gallery = new BOUNDLESS.Gallery()
+  BOUNDLESS.navigation = new BOUNDLESS.Navigation()
+  BOUNDLESS.page = []
+  BOUNDLESS.pages = new BOUNDLESS.Pages( PAGES )
+  BOUNDLESS.pages.each( function( page ) {
+    BOUNDLESS.page[ page.get('slug') ] = new BOUNDLESS.Page({ id: 'page-' + page.get('slug') , model: page })
+  })
 
 
 
