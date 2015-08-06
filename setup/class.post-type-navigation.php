@@ -16,7 +16,7 @@ class Navigation
   function  __construct()
   {
     add_action( 'init', array( $this, 'register_post_type' ) );
-    add_action( self::POST_TYPE . '_save_post', array( $this, 'save') );
+    add_action( 'save_post_' . self::POST_TYPE , array( $this, 'save') );
   }
 
   function register_post_type()
@@ -73,11 +73,22 @@ class Navigation
         <label  for="route">When clicked this navigation goes to </label>
         <input type="text" id="route" name="route" value="<?php echo $route ?>"></input>
 
-        <span class="selection-options" <?php if ( $type != 'video' ) : ?> style="display:none" <?php endif; ?>>
+        <span class="selection-video-options" <?php if ( $type != 'video' ) : ?> style="display:none" <?php endif; ?>>
+         <br/><br/>
+          Click a video to select it:<br/>
           <?php  foreach( get_posts('post_type=boundless_video') as $post ) : ?>
-          <a href="#"><?php echo $post->post_name; ?></a>
+          <a href="#"><?php echo $post->post_name; ?></a><br/>
           <?php endforeach; ?>
           </span>
+
+        <span class="selection-page-options" <?php if ( $type != 'page' ) : ?> style="display:none" <?php endif; ?>>
+         <br/><br/>
+          Click a page to select it:<br/>
+          <?php  foreach( get_posts('post_type=page') as $post ) : ?>
+          <a href="#"><?php echo $post->post_name; ?></a><br/>
+          <?php endforeach; ?>
+        </span>
+
       </p>
 
     </div>
@@ -85,31 +96,40 @@ class Navigation
     <script>
     (function($) {
 
-        var prefix = '#!/'
-      $('#navigation-editor-view').on('change', 'select', function(e ) {
+       var prefix = '#!/'
+       $('#navigation-editor-view').on('change', 'select', function(e ) {
 
        switch(this.value)
        {
 
         case 'map' :
         case 'gallery' :
-          $('.selection-options').hide()
+          $('.selection-video-options').hide()
+          $('.selection-page-options').hide()
           $('#route').val( prefix + this.value )
           return
 
         case 'video' :
-          $('.selection-options').show()
+          $('.selection-video-options').show()
+          $('.selection-page-options').hide()
+          $('#route').val('')
+          return
+
+        case 'page':
+          $('.selection-page-options').show()
+          $('.selection-video-options').hide()
           $('#route').val('')
           return
 
        }
       })
 
-      $('.selection-options').on('click', 'a', function() {
-
+      $('.selection-video-options').on('click', 'a', function() {
           $('#route').val( prefix + 'video/' + $(this).html() ).show()
+      })
 
-
+      $('.selection-page-options').on('click', 'a', function() {
+          $('#route').val( prefix + 'page/' + $(this).html() ).show()
       })
 
 
