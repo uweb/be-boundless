@@ -18,6 +18,7 @@ BOUNDLESS.App = Backbone.Model.extend({
 BOUNDLESS.begin = function() {
 
   BOUNDLESS.app = new BOUNDLESS.App()
+  BOUNDLESS.router  = new BOUNDLESS.Router()
   BOUNDLESS.map = new BOUNDLESS.Map()
   BOUNDLESS.navigation = new BOUNDLESS.Navigation()
   BOUNDLESS.gallery = new BOUNDLESS.Gallery()
@@ -37,7 +38,6 @@ BOUNDLESS.initialize = function( $ )
   // BOUNDLESS.mobile = new BOUNDLESS.Mobile()
 
   // Initialize the router
-  // BOUNDLESS.router  = new BOUNDLESS.Router()
 
   // Initialize the Boundless navigation
 

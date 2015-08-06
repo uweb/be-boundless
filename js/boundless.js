@@ -4033,6 +4033,7 @@ BOUNDLESS.App = Backbone.Model.extend({
 BOUNDLESS.begin = function() {
 
   BOUNDLESS.app = new BOUNDLESS.App()
+  BOUNDLESS.router  = new BOUNDLESS.Router()
   BOUNDLESS.map = new BOUNDLESS.Map()
   BOUNDLESS.navigation = new BOUNDLESS.Navigation()
   BOUNDLESS.gallery = new BOUNDLESS.Gallery()
@@ -4052,7 +4053,6 @@ BOUNDLESS.initialize = function( $ )
   // BOUNDLESS.mobile = new BOUNDLESS.Mobile()
 
   // Initialize the router
-  // BOUNDLESS.router  = new BOUNDLESS.Router()
 
   // Initialize the Boundless navigation
 
@@ -5139,13 +5139,13 @@ BOUNDLESS.replaceSlide = function( newSlide )
   this.getSlide().html( newSlide )
 };BOUNDLESS.Router = Backbone.Router.extend({
 
-  settings : {
-    nprogress : {
-      showSpinner: false,
-      trickleSpeed: 800,
-      trickleRate: 0.25
-    }
-  },
+  // settings : {
+  //   nprogress : {
+  //     showSpinner: false,
+  //     trickleSpeed: 800,
+  //     trickleRate: 0.25
+  //   }
+  // },
 
   routes : {
     "!/map" : "map",
@@ -5156,24 +5156,25 @@ BOUNDLESS.replaceSlide = function( newSlide )
 
   initialize : function(options) {
 
-    _.bindAll( this,
-       'segueToMap',
-       'segueToVideo',
-       'segueToGallery',
-       'segueToDefault',
-       'reveal',
-       'conceal'
-    )
+    // _.bindAll( this,
+    //    'segueToMap',
+    //    'segueToVideo',
+    //    'segueToGallery',
+    //    'segueToDefault',
+    //    'reveal',
+    //    'conceal'
+    // )
 
-    this.on('route', this.resetBodyClasses )
-    NProgress.configure( this.settings.nprogress )
-    this.$slide = $('#slide')
-    this.$homepage = $('#boundless-slide')
-    this.$slide.on( BOUNDLESS.TransitionEvents, this.conceal )
+    // this.on('route', this.resetBodyClasses )
+    // NProgress.configure( this.settings.nprogress )
+    this.$slides = $('#slides')
+    // this.$homepage = $('#boundless-slide')
+    // this.$slide.on( BOUNDLESS.TransitionEvents, this.conceal )
   },
 
   map : function () {
-    BOUNDLESS.navigation.once( 'complete', this.segueToMap )
+    this.$slides.children().removeClass('current').not('#map').addClass('segue-out')
+    this.$slides.find('#map').addClass('current')
   },
 
   gallery : function () {
@@ -5197,15 +5198,15 @@ BOUNDLESS.replaceSlide = function( newSlide )
 
   // Preforms before each segue
   // Should hide or show the navigation
-  execute: function(callback, args) {
+  // execute: function(callback, args) {
 
-      if ( Backbone.history.fragment.length )
-       NProgress.start()
+      // if ( Backbone.history.fragment.length )
+      // // //  // NProgress.start()
 
-      BOUNDLESS.navigation.segue()
+      // // BOUNDLESS.navigation.segue()
 
-      if ( callback ) callback.apply(this, args);
-  },
+      // if ( callback ) callback.apply(this, args);
+  // },
 
   // If the router is map create a new map
   segueToMap : function ()
@@ -5229,16 +5230,18 @@ BOUNDLESS.replaceSlide = function( newSlide )
   },
 
   segueToDefault: function () {
-    NProgress.remove()
-    this.$slide.removeClass('open')
+    this.$slides.children().removeClass('current segue-out')
+    this.$slides.find('#boundless-slide').addClass('current')
+    // NProgress.remove()
+    // this.$slide.removeClass('open')
 
-    NProgress.remove()
-    if ( this.currentView ) this.currentView.unbind('slideloaded')
+    // NProgress.remove()
+    // if ( this.currentView ) this.currentView.unbind('slideloaded')
   },
 
   reveal : function () {
     BOUNDLESS.analytics.trigger('slideloaded');
-    NProgress.done()
+    // NProgress.done()
     this.$slide.addClass('open')
   },
 

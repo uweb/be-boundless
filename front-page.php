@@ -15,7 +15,7 @@
 
     <div id="slides">
 
-    <div id="boundless-slide">
+    <div id="boundless-slide" class="slide current">
         <div id="boundless-background"></div>
 
             <a class="play" href="#!/video/boundless"></a>
