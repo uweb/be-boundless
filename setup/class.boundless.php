@@ -54,7 +54,8 @@ class Boundless
 
       // Map Points
       wp_localize_script( 'boundless', 'POINTS', $this->get_map_points() );
-
+      // Gallery information
+      wp_localize_script( 'boundless', 'GALLERY', $this->get_gallery() );
 
 
       wp_enqueue_script( 'boundless' );
@@ -90,6 +91,48 @@ class Boundless
     return $results;
 
   }
+
+  function get_gallery()
+  {
+    $galleries = get_posts( array(
+      'post_type' => array( 'gallery' )
+    ));
+
+
+    foreach ( $galleries as $gallery )
+    {
+      $ids =  explode( ',' , get_post_meta( $gallery->id, '_gallery', true ) );
+
+      $result = new stdClass();
+      $result->title = $gallery->title;
+      $result->text = $gallery->excerpt;
+
+      foreach ( $ids as $id )
+      {
+        $attachment = get_post($id);
+        $metadata =  wp_get_attachment_metadata( $id );
+        $metadata['caption'] = $attachment->post_excerpt;
+        $image_src = apply_filters('wp_prepare_attachment_for_js', wp_get_attachment_image_src( $id, 'large' ));
+        $metadata['src'] = array(
+          'url' => apply_filters( 'remove_cms' ,$image_src[0] ),
+          'width' => $image_src[1],
+          'height' => $image_src[2]
+          );
+        // $baseurl = explode( '/', $metadata['file'] );
+        // $metadata['baseurl'] = get_site_url() .  '/files/' .implode('/', array_slice( $baseurl, 0, 2 )) . '/';
+        // $metadata['imageurl'] = get_site_url() .  '/files/' . wp_get_attachment_image_src( $id, array( 300, 0) );
+
+        $result->images[] = $metadata;
+        // $result->images[] =$
+
+      };
+
+      $results[] = $result;
+    }
+
+    return $results;
+  }
+
 
 }
 

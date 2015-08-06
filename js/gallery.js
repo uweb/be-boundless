@@ -2,6 +2,9 @@
 BOUNDLESS.Gallery = Backbone.View.extend({
 
   id : 'gallery',
+
+  className: 'slide',
+
   tagName : 'div',
 
   events : {
@@ -23,6 +26,16 @@ BOUNDLESS.Gallery = Backbone.View.extend({
     '</ul>' +
   '</div>',
 
+  templateInstagram :
+  '<div class="container">' +
+    '<ul id="grid" class="masonry">' +
+    '<% _.each( images, function( image ) { %> ' +
+     '<li class="segue" ><img src="<%= image.images.standard_resolution.url %>" height="<%= image.images.standard_resolution.height %>" width="<%= image.images.standard_resolution.width %>" />' +
+     '<span class="caption"><p><%= image.caption.text %></p></span>' +
+    ' <% }) %>' +
+    '</ul>' +
+  '</div>',
+
   templateOverlay : '',
 
   // This is executed by the router and only when the route is in place
@@ -38,15 +51,19 @@ BOUNDLESS.Gallery = Backbone.View.extend({
       'setDimensions',
       'getImagePosition'
     )
-    this.images = new BOUNDLESS.Gallery.Images()
-    this.images.on( 'sync', this.render )
+    // this.images = new BOUNDLESS.Gallery.Images()
+    // this.images.on( 'sync', this.render )
+    this.instagram = new BOUNDLESS.Gallery.Instagram()
+    this.instagram.on( 'sync', this.render )
   },
 
   render : function()
   {
-    this.$('#slide').after( this.el )
-    BOUNDLESS.replaceSlide(this.$el.html( _.template( this.template, {images : this.images.toJSON() }) ) )
-    this.$el.imagesLoaded( this.el, this.setMasonry )
+    $('#slides').prepend( this.el )
+
+    this.$el.append( _.template( this.templateInstagram, {images : this.instagram.toJSON() }) )
+
+    // this.$el.imagesLoaded( this.el, this.setMasonry )
     // this.$el.find('li').on('inview', this.animateImageIn )
   },
 
@@ -176,5 +193,28 @@ BOUNDLESS.Gallery.Images = Backbone.Collection.extend({
   }
 
 
+
+})
+
+BOUNDLESS.Gallery.Instagram = Backbone.Collection.extend({
+
+    defaults : {
+        access_token : "201177297.467ede5.d8b1026bbfa741fc8c8d2b391de72fb4",
+        client_id : "d9d55d56f8814f8e83b6492803e9b773",
+        user_id : 201177297,
+        count: 40
+    },
+
+    url: function () {
+      return "https://api.instagram.com/v1/users/" + this.defaults.user_id + "/media/recent";
+    },
+
+    initialize: function() {
+      this.fetch({ data: this.defaults, dataType: 'jsonp', crossDomain: true } );
+    },
+
+    parse : function( response ) {
+      return response.data
+    }
 
 })

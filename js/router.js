@@ -34,12 +34,13 @@ BOUNDLESS.Router = Backbone.Router.extend({
   },
 
   map : function () {
-    this.$slides.children().removeClass('current').not('#map').addClass('segue-out')
+    this.$slides.children().removeClass('segue-back current').not('#map').addClass('segue-out')
     this.$slides.find('#map').addClass('current')
   },
 
   gallery : function () {
-    BOUNDLESS.navigation.once( 'complete', this.segueToGallery )
+    this.$slides.children().removeClass('segue-back current').not('#gallery').addClass('segue-out')
+    this.$slides.find('#gallery').addClass('current')
   },
 
   video : function (video) {
@@ -91,7 +92,8 @@ BOUNDLESS.Router = Backbone.Router.extend({
   },
 
   segueToDefault: function () {
-    this.$slides.children().removeClass('current segue-out')
+    this.$slides.children().removeClass('segue-out')
+    this.$slides.find('.current').not('#boundless-slide').addClass('segue-back').removeClass('current')
     this.$slides.find('#boundless-slide').addClass('current')
     // NProgress.remove()
     // this.$slide.removeClass('open')
