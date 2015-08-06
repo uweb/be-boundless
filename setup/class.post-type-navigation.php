@@ -16,7 +16,7 @@ class Navigation
   function  __construct()
   {
     add_action( 'init', array( $this, 'register_post_type' ) );
-    add_action( 'save_post', array( $this, 'save') );
+    add_action( self::POST_TYPE . '_save_post', array( $this, 'save') );
   }
 
   function register_post_type()
@@ -65,6 +65,7 @@ class Navigation
         <option value="gallery" <?php selected( $type, 'gallery' ) ?> >Gallery</option>
         <option value="map"  <?php selected( $type, 'map' ) ?>>Map</option>
         <option value="video"  <?php selected( $type, 'video' ) ?>>Video</option>
+        <option value="page"  <?php selected( $type, 'page' ) ?>>Page</option>
       </select>
       </p>
 

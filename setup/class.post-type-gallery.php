@@ -19,7 +19,7 @@ class Post_Type_Gallery
   {
     add_action( 'init', array( $this, 'register_post_type' ) );
     add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_gallery_editor_js' ) );
-    add_action( 'save_post', array( $this, 'save') );
+    add_action( self::POST_TYPE . '_save_post', array( $this, 'save') );
 
     add_filter( 'json_api_controllers',  array( $this, 'add_gallery_controller' ) );
     add_filter( 'json_api_gallery_controller_path',  array( $this, 'set_gallery_controller_path' ) );

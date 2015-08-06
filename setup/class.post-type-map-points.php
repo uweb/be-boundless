@@ -23,7 +23,7 @@ class Post_Type_Map_Points
   {
     add_action( 'init', array( $this, 'register_post_type' ) );
     add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_map_editor_js' ) );
-    add_action( 'save_post', array( $this, 'save') );
+    add_action( self::POST_TYPE . '_save_post', array( $this, 'save') );
     add_action( 'after_setup_theme', array( $this, 'add_thumbnail_theme_support' ) );
 
     add_filter( 'json_api_controllers',  array( $this, 'add_map_point_controller' ) );
@@ -82,10 +82,10 @@ class Post_Type_Map_Points
     </div>
     <?php
   }
-  
+
   function cta_meta_box_html($post)
   {
-     
+
     $text = get_post_meta( $post->ID , 'cta_text', true );
     $url  = get_post_meta( $post->ID , 'cta_url', true );
 
@@ -115,7 +115,7 @@ class Post_Type_Map_Points
     if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE )
         return $post_id;
 
-    if ( self::POST_TYPE == $_POST['post_type'] ) {
+    if ( self::POST_TYPE === get_post_type( $post_id ) ) {
         if ( !current_user_can( 'edit_page', $post_id ) )
             return $post_id;
 
