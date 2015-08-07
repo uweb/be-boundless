@@ -144,7 +144,7 @@ class Navigation
   function save( $post_id )
   {
 
-    if ( !wp_verify_nonce( $_POST[ self::POST_TYPE . '_meta_box_nonce'], self::POST_TYPE . '_meta_box') ) {
+    if ( isset( $_POST[self::POST_TYPE . '_meta_box_nonce' ]) && !wp_verify_nonce( $_POST[ self::POST_TYPE . '_meta_box_nonce'], self::POST_TYPE . '_meta_box') ) {
         return $post_id;
     }
 
@@ -169,7 +169,7 @@ class Navigation
 
   static public function get_navigation()
   {
-    $navigations = get_posts( "numberposts=-1&post_type=" . self::POST_TYPE );
+    $navigations = get_posts( "numberposts=-1&orderby=menu_order&post_type=" . self::POST_TYPE );
     foreach ($navigations as $nav)
     {
       $type = get_post_meta( $nav->ID, '_type', true ) ;
@@ -183,7 +183,7 @@ class Navigation
 
   static public function get_navigation_slides()
   {
-    $navigations = get_posts( "numberposts=-1&post_type=" . self::POST_TYPE );
+    $navigations = get_posts( "numberposts=-1&orderby=menu_order&post_type=" . self::POST_TYPE );
     foreach ($navigations as $nav)
     {
       $type = get_post_meta( $nav->ID, '_type', true ) ;
