@@ -1,33 +1,10 @@
 // Note: the !important tags are needed because google maps adds inline style transform : translateZ(0px) which we need to overwrite.
 .slide {
 
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  visibility: hidden;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: block;
 
-  transform: translate3d( 300px, 0, 0 ) !important;
 
-  transition: opacity 700ms ease-in-out,
-                    transform 1s ease-in-out;
-
-  &.segue-out {
-    visibility: hidden;
-    transform: translate3d( -100%, 0, 0 ) !important;
-  }
-
-  // For the current slide that isn't the boundless slide
-  &.segue-back {
-    visibility: visible;
-    transform: translate3d( 300px, 0, 0 ) !important;
-  }
-
-  &.current {
-    transform: translate3d( 0, 0, 0 ) !important;
-    visibility: visible;
-    opacity: 1;
-  }
 }

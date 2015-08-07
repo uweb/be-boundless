@@ -4,16 +4,13 @@
         <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span><span></span>
     </div>
 
-    <div class="navigation segue">
-        <div id="nav-wrap">
-            <ul>
-              <li class="spacer"></li>
-              <?php echo  Navigation::get_navigation() ?>
-            </ul>
-        </div>
-    </div>
+    <ul class="navigation">
+      <?php echo  Navigation::get_navigation() ?>
+    </ul>
 
     <div id="slides">
+
+    <?php  ?>
 
     <div id="boundless-slide" class="slide current">
         <div id="boundless-background"></div>
@@ -31,8 +28,9 @@
 
             <?php endwhile; ?>
 
-
     </div>
+
+    <?php echo  Navigation::get_navigation_slides() ?>
 
     </div>
 

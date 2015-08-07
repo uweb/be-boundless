@@ -69,9 +69,9 @@ class Navigation
       </select>
       </p>
 
-      <p>
+      <p class="navigation-information">
         <label  for="route">When clicked this navigation goes to </label>
-        <input type="text" id="route" name="route" value="<?php echo $route ?>"></input>
+        <input type="text" id="route" name="route" value="<?php echo $route ?>" ></input>
 
         <span class="selection-video-options" <?php if ( $type != 'video' ) : ?> style="display:none" <?php endif; ?>>
          <br/><br/>
@@ -79,7 +79,7 @@ class Navigation
           <?php  foreach( get_posts('post_type=boundless_video') as $post ) : ?>
           <a href="#"><?php echo $post->post_name; ?></a><br/>
           <?php endforeach; ?>
-          </span>
+        </span>
 
         <span class="selection-page-options" <?php if ( $type != 'page' ) : ?> style="display:none" <?php endif; ?>>
          <br/><br/>
@@ -116,8 +116,8 @@ class Navigation
           return
 
         case 'page':
-          $('.selection-page-options').show()
           $('.selection-video-options').hide()
+          $('.selection-page-options').show()
           $('#route').val('')
           return
 
@@ -126,10 +126,12 @@ class Navigation
 
       $('.selection-video-options').on('click', 'a', function() {
           $('#route').val( prefix + 'video/' + $(this).html() ).show()
+          return false;
       })
 
       $('.selection-page-options').on('click', 'a', function() {
           $('#route').val( prefix + 'page/' + $(this).html() ).show()
+          return false;
       })
 
 
@@ -173,16 +175,25 @@ class Navigation
       $type = get_post_meta( $nav->ID, '_type', true ) ;
       $route = get_post_meta( $nav->ID, '_route', true ) ;
 
-      $url = wp_get_attachment_image_src( get_post_thumbnail_id( $nav->ID ), 'original' );
+      // $url = wp_get_attachment_image_src( get_post_thumbnail_id( $nav->ID ), 'original' );
 
-      echo "<li id=\"{$nav->post_name}\" data-route=\"$route\" class=\"tile-$type\">
-                  <div style=\"background-image: url({$url[0]})\"></div>
-                  <span>
-                    <h3><a title=\"{$nav->post_title}\" href=\"$route\">{$nav->post_title}</a></h3>
-                    <p>{$nav->post_excerpt}</p>
-                  </span>";
+      echo "<li id=\"{$nav->post_name}\" data-route=\"$route\"></li>";
     }
+  }
 
+  static public function get_navigation_slides()
+  {
+    $navigations = get_posts( "numberposts=-1&post_type=" . self::POST_TYPE );
+    foreach ($navigations as $nav)
+    {
+      $type = get_post_meta( $nav->ID, '_type', true ) ;
+      $route = get_post_meta( $nav->ID, '_route', true ) ;
+
+      $route = explode( '/' , $route);
+      $route = end( $route);
+
+      echo "<div class=\"slide $type $route\"></div>";
+    }
   }
 
 }

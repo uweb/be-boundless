@@ -25,7 +25,7 @@ BOUNDLESS.begin = function() {
   BOUNDLESS.page = []
   BOUNDLESS.pages = new BOUNDLESS.Pages( PAGES )
   BOUNDLESS.pages.each( function( page ) {
-    BOUNDLESS.page[ page.get('slug') ] = new BOUNDLESS.Page({ id: 'page-' + page.get('slug') , model: page })
+    BOUNDLESS.page[ page.get('slug') ] = new BOUNDLESS.Page({ el: '.page .' + page.get('slug') , model: page })
   })
 
 

@@ -1,11 +1,7 @@
 // Gallery View
 BOUNDLESS.Gallery = Backbone.View.extend({
 
-  id : 'gallery',
-
-  className: 'slide',
-
-  tagName : 'div',
+  el : '.gallery',
 
   events : {
     'scroll'   : 'close',
@@ -59,8 +55,6 @@ BOUNDLESS.Gallery = Backbone.View.extend({
 
   render : function()
   {
-    $('#slides').prepend( this.el )
-
     this.$el.append( _.template( this.templateInstagram, {images : this.instagram.toJSON() }) )
 
     // this.$el.imagesLoaded( this.el, this.setMasonry )
