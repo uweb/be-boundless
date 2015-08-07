@@ -17,6 +17,33 @@ class Navigation
   {
     add_action( 'init', array( $this, 'register_post_type' ) );
     add_action( 'save_post_' . self::POST_TYPE , array( $this, 'save') );
+    add_action( 'manage_edit-navigation_columns', array( $this, 'add_new_navigation_column') );
+    add_action( 'manage_navigation_posts_custom_column',array( $this, 'show_order_column') );
+    add_filter('manage_edit-navigation_sortable_columns',array( $this, 'order_column_register_sortable'));
+
+  }
+
+  function order_column_register_sortable($columns){
+    $columns['menu_order'] = 'menu_order';
+    return $columns;
+  }
+
+  function add_new_navigation_column($navigation_columns) {
+    $navigation_columns['menu_order'] = "Order";
+    return $navigation_columns;
+  }
+
+  function show_order_column($name){
+    global $post;
+
+    switch ($name) {
+      case 'menu_order':
+        $order = $post->menu_order;
+        echo $order;
+        break;
+     default:
+        break;
+     }
   }
 
   function register_post_type()
@@ -169,21 +196,18 @@ class Navigation
 
   static public function get_navigation()
   {
-    $navigations = get_posts( "numberposts=-1&orderby=menu_order&post_type=" . self::POST_TYPE );
+    $navigations = get_posts( "numberposts=-1&orderby=menu_order&order=ASC&post_type=" . self::POST_TYPE );
     foreach ($navigations as $nav)
     {
       $type = get_post_meta( $nav->ID, '_type', true ) ;
       $route = get_post_meta( $nav->ID, '_route', true ) ;
-
-      // $url = wp_get_attachment_image_src( get_post_thumbnail_id( $nav->ID ), 'original' );
-
       echo "<li id=\"{$nav->post_name}\" data-route=\"$route\"></li>";
     }
   }
 
   static public function get_navigation_slides()
   {
-    $navigations = get_posts( "numberposts=-1&orderby=menu_order&post_type=" . self::POST_TYPE );
+    $navigations = get_posts( "numberposts=-1&orderby=menu_order&order=ASC&post_type=" . self::POST_TYPE );
     foreach ($navigations as $nav)
     {
       $type = get_post_meta( $nav->ID, '_type', true ) ;
