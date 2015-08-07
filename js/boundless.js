@@ -4463,6 +4463,7 @@ BOUNDLESS.Video.Collection = Backbone.Collection.extend({
 BOUNDLESS.Page = Backbone.View.extend({
 
   template : '<div class="container">'+
+    '<h3><%= page.title %></h3>' +
     '<%= page.content %>' +
   '</div>',
 
