@@ -159,7 +159,7 @@ class Boundless
     foreach ($pages as $page) {
         $result['title'] = $page->post_title;
         $result['slug'] = $page->post_name;
-        $result['content'] = $page->post_content;
+        $result['content'] = apply_filters( 'the_content' , $page->post_content );
         $results[] = $result;
     }
 
