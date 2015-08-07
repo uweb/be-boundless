@@ -163,7 +163,7 @@ class Boundless
         $results[] = $result;
     }
 
-    return $result;
+    return $results;
 
   }
 
