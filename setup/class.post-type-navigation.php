@@ -178,7 +178,7 @@ class Navigation
     if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE )
         return $post_id;
 
-    if ( self::POST_TYPE == $_POST['post_type'] ) {
+    if ( isset( $_POST['post_type'] ) && self::POST_TYPE == $_POST['post_type'] ) {
         if ( !current_user_can( 'edit_page', $post_id ) )
             return $post_id;
 
