@@ -56,6 +56,8 @@ class Boundless
       wp_localize_script( 'boundless', 'POINTS', $this->get_map_points() );
       // Gallery information
       wp_localize_script( 'boundless', 'GALLERY', $this->get_gallery() );
+      // Gallery information
+      wp_localize_script( 'boundless', 'PAGES', $this->get_pages() );
 
 
       wp_enqueue_script( 'boundless' );
@@ -131,6 +133,38 @@ class Boundless
     }
 
     return $results;
+  }
+
+  function get_pages() {
+
+    $navigation = get_posts( array(
+      'post_type' => array( 'navigation' )
+    ));
+
+    foreach ( $navigation as $nav ) {
+      $type = get_post_meta( $nav->ID, '_type', true );
+      if ( $type === 'page' )
+      {
+        $routes[] = get_post_meta( $nav->ID,  '_route', true );
+      }
+    }
+
+    foreach ( $routes as $route )
+    {
+      $route = explode( '/' , $route);
+      $route = end( $route);
+      $pages[] = get_page_by_path( $route) ;
+    }
+
+    foreach ($pages as $page) {
+        $result['title'] = $page->post_title;
+        $result['slug'] = $page->post_name;
+        $result['content'] = apply_filters( 'the_content' , $page->post_content );
+        $results[] = $result;
+    }
+
+    return $results;
+
   }
 
 

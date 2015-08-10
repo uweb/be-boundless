@@ -16,7 +16,34 @@ class Navigation
   function  __construct()
   {
     add_action( 'init', array( $this, 'register_post_type' ) );
-    add_action( self::POST_TYPE . '_save_post', array( $this, 'save') );
+    add_action( 'save_post_' . self::POST_TYPE , array( $this, 'save') );
+    add_action( 'manage_edit-navigation_columns', array( $this, 'add_new_navigation_column') );
+    add_action( 'manage_navigation_posts_custom_column',array( $this, 'show_order_column') );
+    add_filter('manage_edit-navigation_sortable_columns',array( $this, 'order_column_register_sortable'));
+
+  }
+
+  function order_column_register_sortable($columns){
+    $columns['menu_order'] = 'menu_order';
+    return $columns;
+  }
+
+  function add_new_navigation_column($navigation_columns) {
+    $navigation_columns['menu_order'] = "Order";
+    return $navigation_columns;
+  }
+
+  function show_order_column($name){
+    global $post;
+
+    switch ($name) {
+      case 'menu_order':
+        $order = $post->menu_order;
+        echo $order;
+        break;
+     default:
+        break;
+     }
   }
 
   function register_post_type()
@@ -69,15 +96,26 @@ class Navigation
       </select>
       </p>
 
-      <p>
+      <p class="navigation-information">
         <label  for="route">When clicked this navigation goes to </label>
-        <input type="text" id="route" name="route" value="<?php echo $route ?>"></input>
+        <input type="text" id="route" name="route" value="<?php echo $route ?>" ></input>
 
-        <span class="selection-options" <?php if ( $type != 'video' ) : ?> style="display:none" <?php endif; ?>>
+        <span class="selection-video-options" <?php if ( $type != 'video' ) : ?> style="display:none" <?php endif; ?>>
+         <br/><br/>
+          Click a video to select it:<br/>
           <?php  foreach( get_posts('post_type=boundless_video') as $post ) : ?>
-          <a href="#"><?php echo $post->post_name; ?></a>
+          <a href="#"><?php echo $post->post_name; ?></a><br/>
           <?php endforeach; ?>
-          </span>
+        </span>
+
+        <span class="selection-page-options" <?php if ( $type != 'page' ) : ?> style="display:none" <?php endif; ?>>
+         <br/><br/>
+          Click a page to select it:<br/>
+          <?php  foreach( get_posts('post_type=page') as $post ) : ?>
+          <a href="#"><?php echo $post->post_name; ?></a><br/>
+          <?php endforeach; ?>
+        </span>
+
       </p>
 
     </div>
@@ -85,31 +123,42 @@ class Navigation
     <script>
     (function($) {
 
-        var prefix = '#!/'
-      $('#navigation-editor-view').on('change', 'select', function(e ) {
+       var prefix = '#!/'
+       $('#navigation-editor-view').on('change', 'select', function(e ) {
 
        switch(this.value)
        {
 
         case 'map' :
         case 'gallery' :
-          $('.selection-options').hide()
+          $('.selection-video-options').hide()
+          $('.selection-page-options').hide()
           $('#route').val( prefix + this.value )
           return
 
         case 'video' :
-          $('.selection-options').show()
+          $('.selection-video-options').show()
+          $('.selection-page-options').hide()
+          $('#route').val('')
+          return
+
+        case 'page':
+          $('.selection-video-options').hide()
+          $('.selection-page-options').show()
           $('#route').val('')
           return
 
        }
       })
 
-      $('.selection-options').on('click', 'a', function() {
-
+      $('.selection-video-options').on('click', 'a', function() {
           $('#route').val( prefix + 'video/' + $(this).html() ).show()
+          return false;
+      })
 
-
+      $('.selection-page-options').on('click', 'a', function() {
+          $('#route').val( prefix + 'page/' + $(this).html() ).show()
+          return false;
       })
 
 
@@ -122,14 +171,14 @@ class Navigation
   function save( $post_id )
   {
 
-    if ( !wp_verify_nonce( $_POST[ self::POST_TYPE . '_meta_box_nonce'], self::POST_TYPE . '_meta_box') ) {
+    if ( isset( $_POST[self::POST_TYPE . '_meta_box_nonce' ]) && !wp_verify_nonce( $_POST[ self::POST_TYPE . '_meta_box_nonce'], self::POST_TYPE . '_meta_box') ) {
         return $post_id;
     }
 
     if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE )
         return $post_id;
 
-    if ( self::POST_TYPE == $_POST['post_type'] ) {
+    if ( isset( $_POST['post_type'] ) && self::POST_TYPE == $_POST['post_type'] ) {
         if ( !current_user_can( 'edit_page', $post_id ) )
             return $post_id;
 
@@ -147,22 +196,28 @@ class Navigation
 
   static public function get_navigation()
   {
-    $navigations = get_posts( "numberposts=-1&post_type=" . self::POST_TYPE );
+    $navigations = get_posts( "numberposts=-1&orderby=menu_order&order=ASC&post_type=" . self::POST_TYPE );
+    foreach ($navigations as $nav)
+    {
+      $type = get_post_meta( $nav->ID, '_type', true ) ;
+      $route = get_post_meta( $nav->ID, '_route', true ) ;
+      echo "<li id=\"{$nav->post_name}\" data-route=\"$route\"></li>";
+    }
+  }
+
+  static public function get_navigation_slides()
+  {
+    $navigations = get_posts( "numberposts=-1&orderby=menu_order&order=ASC&post_type=" . self::POST_TYPE );
     foreach ($navigations as $nav)
     {
       $type = get_post_meta( $nav->ID, '_type', true ) ;
       $route = get_post_meta( $nav->ID, '_route', true ) ;
 
-      $url = wp_get_attachment_image_src( get_post_thumbnail_id( $nav->ID ), 'original' );
+      $route = explode( '/' , $route);
+      $route = end( $route);
 
-      echo "<li id=\"{$nav->post_name}\" data-route=\"$route\" class=\"tile-$type\">
-                  <div style=\"background-image: url({$url[0]})\"></div>
-                  <span>
-                    <h3><a title=\"{$nav->post_title}\" href=\"$route\">{$nav->post_title}</a></h3>
-                    <p>{$nav->post_excerpt}</p>
-                  </span>";
+      echo "<div class=\"slide $type $route\"></div>";
     }
-
   }
 
 }

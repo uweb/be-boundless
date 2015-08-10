@@ -4035,8 +4035,13 @@ BOUNDLESS.begin = function() {
   BOUNDLESS.app = new BOUNDLESS.App()
   BOUNDLESS.router  = new BOUNDLESS.Router()
   BOUNDLESS.map = new BOUNDLESS.Map()
-  BOUNDLESS.navigation = new BOUNDLESS.Navigation()
   BOUNDLESS.gallery = new BOUNDLESS.Gallery()
+  BOUNDLESS.navigation = new BOUNDLESS.Navigation()
+  BOUNDLESS.page = []
+  BOUNDLESS.pages = new BOUNDLESS.Pages( PAGES )
+  BOUNDLESS.pages.each( function( page ) {
+    BOUNDLESS.page[ page.get('slug') ] = new BOUNDLESS.Page({ el: '.page .' + page.get('slug') , model: page })
+  })
 
 
 
@@ -4115,78 +4120,11 @@ BOUNDLESS.Navigation = Backbone.View.extend({
   hidden : false,
 
   events : {
-    'click li' : 'segueOut',
-    'click .show-nav' : 'segueIn',
   },
 
   initialize : function( options )
   {
-    _.bindAll( this,
-     'bounce',
-     'complete',
-     'resetMargins'
-     )
-    this.$navigationItems = this.$el.find('li')
-    this.$homepage = $('#boundless-slide')
-
-    this.resetMargins()
   },
-
-  segueOut : function( e )
-  {
-    // this.$el.removeClass('segue')
-    // To get the width we use getBoudningClientRect because scale CSS is being used to shrink the navigation
-    // var width = this.$navigationItems.first().get(0).getBoundingClientRect().width || this.$navigationItems.first().width()
-    // We have to animate the marginRight instead of using 'resetMargins' to avoid an animation jump after its completed
-    // this.$el.velocity({ translateZ: 0, translateX: -0.75 * width  * this.$navigationItems.length  }, BOUNDLESS.AnimationDuration, 'easeInOutQuad', this.complete )
-
-    this.hidden = true
-    // Allows for clicking any part of the navigation tile
-    // Protected by an event for browser back/forward navigation
-    // if ( e ) BOUNDLESS.router.navigate( $(e.currentTarget).data().route, { trigger: true} )
-  },
-
-  complete : function()
-  {
-    // todo: more sublte way to implementing this
-    this.resetMargins()
-    this.$homepage.addClass('blur')
-    this.trigger('complete')
-  },
-
-  segueIn: function( e ) {
-     this.$homepage.removeClass('blur')
-     this.$el.addClass('segue')
-     // Given the iffyness of the clip mask a delay may be the more robust cross-browser solution
-     // this.$el.velocity( "reverse", {complete : this.bounce, delay: 600 })
-     this.$el.velocity({ translateX: '0%' }, BOUNDLESS.AnimationDuration, 'easeInOutQuad', this.bounce );
-     this.hidden = false
-  },
-
-  segue : function()
-  {
-      // Backbone.history.fragment protects against linking directily to a slide
-      if ( this.hidden && ! Backbone.history.fragment ) this.segueIn()
-      if ( ! this.hidden && Backbone.history.fragment.length ) this.segueOut()
-      if ( Backbone.history.fragment.length ) this.$el.removeClass( 'segue' )
-  },
-
-  bounce : function()
-  {
-     // Animate is used for the easeOutElastic easing
-     // TODO: why doesn't velocity understand the easing?
-      this.$navigationItems.animate({ marginRight: 20 }, 2 * BOUNDLESS.AnimationDuration, 'easeOutElastic' )
-
-      // TODO: hack until the navigation scroll is reimplemented better for mobile
-      if ( navigator.userAgent.match(/iPhone/i) ) this.$el.hide().fadeIn(100)
-  },
-
-  // Resets the margins of the navigation LI's to create the elastic bounce in effect
-  resetMargins : function()
-  {
-    this.$navigationItems.velocity({ marginRight: 30 })
-  }
-
 
 })
 ;BOUNDLESS.Search = Backbone.View.extend({
@@ -4521,15 +4459,37 @@ BOUNDLESS.Video.Collection = Backbone.Collection.extend({
 
 });
 
+;// Page view
+BOUNDLESS.Page = Backbone.View.extend({
+
+  template : '<div class="container">'+
+    '<h3><%= page.title %></h3>' +
+    '<%= page.content %>' +
+  '</div>',
+
+  initialize : function( options ) {
+    this.render()
+  },
+
+  render : function() {
+    this.$el.html( _.template( this.template, { page: this.model.toJSON() } ) )
+  }
+
+})
+
+
+BOUNDLESS.Pages = Backbone.Collection.extend({
+})
 ;// Map Point View
 BOUNDLESS.Map = Backbone.View.extend({
 
   // The element to put the Google Map
-  id : 'map',
+  // id : 'map',
+  el : '.map',
 
-  className : 'slide',
+  // className : 'slide',
 
-  tagName : 'div',
+  // tagName : 'div',
 
   listItems : '<ul class="points-of-interest">' +
       '<% _.each( points, function(point) { %>' +
@@ -4737,7 +4697,7 @@ BOUNDLESS.Map = Backbone.View.extend({
   // Render the map
   render : function() {
     // BOUNDLESS.replaceSlide( this.el )
-    $('#slides').prepend( this.el )
+    // $('#slides').append( this.el )
     this.map = new google.maps.Map( this.el, this.settings.map )
     this.delegateGoogleMapEvents()
 
@@ -4865,11 +4825,7 @@ BOUNDLESS.Map.Points = Backbone.Collection.extend({
 ;// Gallery View
 BOUNDLESS.Gallery = Backbone.View.extend({
 
-  id : 'gallery',
-
-  className: 'slide',
-
-  tagName : 'div',
+  el : '.gallery',
 
   events : {
     'scroll'   : 'close',
@@ -4923,8 +4879,6 @@ BOUNDLESS.Gallery = Backbone.View.extend({
 
   render : function()
   {
-    $('#slides').prepend( this.el )
-
     this.$el.append( _.template( this.templateInstagram, {images : this.instagram.toJSON() }) )
 
     // this.$el.imagesLoaded( this.el, this.setMasonry )
@@ -5191,6 +5145,7 @@ BOUNDLESS.replaceSlide = function( newSlide )
     "!/map" : "map",
     "!/gallery" : "gallery",
     "!/video/:video" : "video",
+    "!/page/:page" : "page",
     "" : "segueToDefault"
   },
 
@@ -5222,6 +5177,11 @@ BOUNDLESS.replaceSlide = function( newSlide )
     this.$slides.find('#gallery').addClass('current')
   },
 
+  page : function( page )  {
+    this.$slides.children().removeClass('segue-back current').not('#page-' + page ).addClass('segue-out')
+    this.$slides.find('#page-' + page ).addClass('current')
+  },
+
   video : function (video) {
     this.videoSlug = video
     BOUNDLESS.navigation.once( 'complete', this.segueToVideo )
@@ -5233,68 +5193,31 @@ BOUNDLESS.replaceSlide = function( newSlide )
     $('body').removeClass('video-active')
   },
 
-  // default : function() {
-  //   // this.prepSegue(this.currentView, this.segueToDefault);
-  // },
-
-  // Preforms before each segue
-  // Should hide or show the navigation
-  // execute: function(callback, args) {
-
-      // if ( Backbone.history.fragment.length )
-      // // //  // NProgress.start()
-
-      // // BOUNDLESS.navigation.segue()
-
-      // if ( callback ) callback.apply(this, args);
-  // },
-
-  // If the router is map create a new map
-  segueToMap : function ()
-  {
-    // Set the current view reference
-    // this.currentView = new BOUNDLESS.Map()
-    // this.currentView.on( 'slideloaded' , this.reveal )
-  },
-
-  // If the router is a gallery create a new gallery
-  segueToGallery : function ()
-  {
-    // Set the current view reference
-    this.currentView = new BOUNDLESS.Gallery()
-    this.currentView.on( 'slideloaded' , this.reveal )
-  },
-
   segueToVideo : function (video){
     this.currentView = new BOUNDLESS.Video({ slug: this.videoSlug })
-    this.currentView.on('slideloaded', this.reveal);
+    // this.currentView.on('slideloaded', this.reveal);
   },
 
   segueToDefault: function () {
     this.$slides.children().removeClass('segue-out')
     this.$slides.find('.current').not('#boundless-slide').addClass('segue-back').removeClass('current')
     this.$slides.find('#boundless-slide').addClass('current')
-    // NProgress.remove()
-    // this.$slide.removeClass('open')
-
-    // NProgress.remove()
-    // if ( this.currentView ) this.currentView.unbind('slideloaded')
   },
 
-  reveal : function () {
-    BOUNDLESS.analytics.trigger('slideloaded');
-    // NProgress.done()
-    this.$slide.addClass('open')
-  },
+  // reveal : function () {
+  //   BOUNDLESS.analytics.trigger('slideloaded');
+  //   // NProgress.done()
+  //   this.$slide.addClass('open')
+  // },
 
-  conceal : function( e )
-  {
-    // TODO: is there better exit event to bind to?
-    if ( (Backbone.history.fragment.length === 0) && (['-webkit-clip-path', 'opacity'].indexOf(e.originalEvent.propertyName) != -1)){
-      // BOUNDLESS.navigation.trigger('slideclosed');
-      return this.currentView && this.currentView.remove()
-    }
-  }
+  // conceal : function( e )
+  // {
+  //   // TODO: is there better exit event to bind to?
+  //   if ( (Backbone.history.fragment.length === 0) && (['-webkit-clip-path', 'opacity'].indexOf(e.originalEvent.propertyName) != -1)){
+  //     // BOUNDLESS.navigation.trigger('slideclosed');
+  //     return this.currentView && this.currentView.remove()
+  //   }
+  // }
 
 })
 ;BOUNDLESS.Analytics = function () {

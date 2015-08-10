@@ -2,11 +2,12 @@
 BOUNDLESS.Map = Backbone.View.extend({
 
   // The element to put the Google Map
-  id : 'map',
+  // id : 'map',
+  el : '.map',
 
-  className : 'slide',
+  // className : 'slide',
 
-  tagName : 'div',
+  // tagName : 'div',
 
   listItems : '<ul class="points-of-interest">' +
       '<% _.each( points, function(point) { %>' +
@@ -214,7 +215,7 @@ BOUNDLESS.Map = Backbone.View.extend({
   // Render the map
   render : function() {
     // BOUNDLESS.replaceSlide( this.el )
-    $('#slides').prepend( this.el )
+    // $('#slides').append( this.el )
     this.map = new google.maps.Map( this.el, this.settings.map )
     this.delegateGoogleMapEvents()
 
