@@ -55,6 +55,7 @@ BOUNDLESS.initialize = function( $ )
   // BOUNDLESS.api = new BOUNDLESS.Video.API()
   // Initialize the search
   BOUNDLESS.search = new BOUNDLESS.Search()
+  BOUNDLESS.scroll = new BOUNDLESS.Scroll()
 
   // analytics logic for boundless
   // BOUNDLESS.analytics = new BOUNDLESS.Analytics();

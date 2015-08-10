@@ -4070,6 +4070,7 @@ BOUNDLESS.initialize = function( $ )
   // BOUNDLESS.api = new BOUNDLESS.Video.API()
   // Initialize the search
   BOUNDLESS.search = new BOUNDLESS.Search()
+  BOUNDLESS.scroll = new BOUNDLESS.Scroll()
 
   // analytics logic for boundless
   // BOUNDLESS.analytics = new BOUNDLESS.Analytics();
@@ -5271,4 +5272,49 @@ BOUNDLESS.replaceSlide = function( newSlide )
 
   this.ready = true;
 }
+;// Navigation View
+BOUNDLESS.Scroll = Backbone.View.extend({
+
+  el : window,
+
+  events : {
+  	'scroll' : 'scroller'
+  },
+
+  initialize : function( options )
+  {
+
+
+
+	$('#boundless-slide').bind('inview', function (event, visible, topOrBottomOrBoth) {
+	  if (visible === true) {
+	    // element is now visible in the viewport
+	    if (topOrBottomOrBoth == 'top') {
+	      // top part of element is visible
+	      console.log("top")
+	    } else if (topOrBottomOrBoth == 'bottom') {
+	      // bottom part of element is visible
+	      console.log("bottom")
+	    } else {
+	      // whole part of element is visible
+	      console.log("whole")
+	    }
+	  } else {
+	    // element has gone out of viewport
+	  }
+	})
+
+
+
+
+
+
+
+
+
+
+  },
+
+
+})
 ;}).call(this)

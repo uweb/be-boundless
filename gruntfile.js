@@ -30,6 +30,7 @@ module.exports = function(grunt) {
           'js/utilities.js',
           'js/router.js',
           'js/analytics.js',
+          'js/scroll.js',
         ],
         src: [ 'js/intro.js', '<%= concat.dist.libraries %>', '<%= concat.dist.theme %>', 'js/outro.js' ],
         dest: 'js/boundless.js'
