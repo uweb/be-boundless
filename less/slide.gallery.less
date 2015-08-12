@@ -1,0 +1,40 @@
+.slide.gallery {
+
+
+  ul#grid {
+    list-style: none;
+
+    li {
+      position: relative;
+      float:left;
+      width: 33%;
+      padding: 20px;
+
+      span.caption {
+          position: absolute;
+          bottom: 30px;
+          left: 5%;
+          width: 90%;
+          background-color: white;
+          padding: 10px;
+          opacity: 0;
+          transition: opacity 200ms ease-in-out;
+          p {
+            font-size: 14px;
+          }
+
+      }
+
+      &:hover {
+        span.caption {
+          opacity: 0.9;
+        }
+      }
+
+    }
+
+  }
+
+
+
+}
