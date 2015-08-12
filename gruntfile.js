@@ -12,7 +12,8 @@ module.exports = function(grunt) {
           // 'js/libraries/jquery.transit.min.js',
           'js/libraries/jquery.inview.js',
           'js/libraries/imagesloaded.js',
-          'js/libraries/masonry.pkgd.js',
+          'js/libraries/masonry.pkgd.js',          
+          'js/libraries/curtain.js',
         ],
         theme : [
           'js/core.js',

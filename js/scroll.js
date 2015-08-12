@@ -17,6 +17,10 @@ BOUNDLESS.Scroll = Backbone.View.extend({
 	  	$(this).removeClass( "visible" )
 	  }
 	})
+
+
+	// $('.curtains').curtain();
+
   },
 
   scroller: function(){
@@ -24,10 +28,9 @@ BOUNDLESS.Scroll = Backbone.View.extend({
   	$('.slide').each(function(){
   		var o = $(this),
   			offsets = o.offset().top,
-  			scrollAmount = offsets- $(window).scrollTop()
+  			scrollAmount = offsets - $(window).scrollTop()
 
   		if(o.hasClass('visible')) {
-  			console.log(scrollAmount)
   			var distanceToTop = scrollAmount / 2,
   				bgPos = "center " + distanceToTop + "px";
 

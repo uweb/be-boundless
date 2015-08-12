@@ -8,7 +8,7 @@
       <?php echo  Navigation::get_navigation() ?>
     </ul>
 
-    <div id="slides">
+    <div id="slides" class="curtains">
 
     <?php  ?>
 
