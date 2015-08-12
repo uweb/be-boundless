@@ -8,9 +8,31 @@
     background-position: center -20px;
     z-index: 1;
     background-attachment: fixed;
-   // .transition(all .6s);
-    background-image: url(img/sunset.jpg);
+    // .transition(all .6s);
+    // background-image: url(img/sunset.jpg);
+    background-image: url(img/background.jpg);
     background-color: black;
+    .midground,
+    .foreground {
+    }
+    .midground {
+      width: 100%;
+      position: absolute;
+      bottom: 58%;
+      left: 0;
+    }
+    .foreground {
+      background-image: url(img/foreground.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center bottom;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
     &:after {
       content: "";
       background: url(img/overlay-checker.png);
@@ -23,6 +45,7 @@
 
 
 // The message text that displayed when loaded
+
   .homepage-text {
 
     position:absolute;
@@ -79,6 +102,9 @@
 
    }
 
+
+
+
 // The play button
   a.play {
     height: 190px;
@@ -105,6 +131,20 @@
     }
   }
 
+
+
+// Alt homepage 
+
+.homepage-text {
+    top: 45%;
+    left: 190px;
+   p {
+   }
+}
+ a.play {
+    top: 32%;
+    left: 760px
+}
 
 
 }

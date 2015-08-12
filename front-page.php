@@ -14,6 +14,8 @@
 
     <div id="boundless-slide" class="slide current">
         <div id="boundless-background"></div>
+        <div class="midground"><img width="90%" height="auto" src="<?php echo get_stylesheet_directory_uri(); ?>/img/middleground.png"></div>
+        <div class="foreground"></div>
 
             <a class="play" href="#!/video/boundless"></a>
 
@@ -21,8 +23,8 @@
 
                 <div class="homepage-text">
 
-                    <h1><?php the_title(); ?></h1>
-                    <span class="udub-slant"><span></span></span>
+                   <h1>  <?php # the_title(); ?></h1>
+                   <!-- <span class="udub-slant"><span></span></span> -->
                     <p><?php the_content(); ?></p>
                 </div>
 
