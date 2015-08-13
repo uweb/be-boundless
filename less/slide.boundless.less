@@ -1,13 +1,13 @@
 // The boundless slide
 #boundless-slide {
 
-    position: relative;
-    min-height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center -20px;
-    z-index: 1;
-    background-attachment: fixed;
+//  position: relative;
+//  min-height: 100%;
+//  background-size: cover;
+//  background-repeat: no-repeat;
+//  background-position: center -20px;
+//  z-index: 1;
+//  background-attachment: fixed;
     // .transition(all .6s);
     // background-image: url(img/sunset.jpg);
     background-image: url(img/background.jpg);
@@ -41,6 +41,7 @@
       left: 0;
       right: 0;
       bottom: 0;
+      z-index: -1;
     }
 
 
@@ -51,7 +52,7 @@
     position:absolute;
     top: 25%;
     left: 100px;
-    z-index:1;
+    z-index:0;
 
     h1 {
       font-family: "Encode Sans Compressed",sans-serif;
@@ -103,16 +104,25 @@
    }
 
 
+// The 'scroll' icon
 
+.scroll-more {
+    width: 100px;
+    height: 60px;
+    background: url(less/svg/boundless.svg) no-repeat -252px 0;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 999;
+}
 
 // The play button
   a.play {
     height: 190px;
     width: 170px;
     position: absolute;
-        top: 25%;
-    margin-top: 190px;
-    left: 700px;
+    top: 40px;
+    left: 560px;
     border: none;
     outline: none;
     .transition(all .25s);
@@ -140,10 +150,6 @@
     left: 190px;
    p {
    }
-}
- a.play {
-    top: 32%;
-    left: 760px
 }
 
 

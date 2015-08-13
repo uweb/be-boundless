@@ -4,24 +4,25 @@
         <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span><span></span>
     </div>
 
-    <ul class="navigation">
+    <ul id="dots" class="navigation">
       <?php echo  Navigation::get_navigation() ?>
     </ul>
 
-    <div id="slides" class="curtains">
+    <ul id="slides" class="curtains">
 
     <?php  ?>
 
-    <div id="boundless-slide" class="slide current">
+    <li id="boundless-slide" class="slide current">
         <div id="boundless-background"></div>
         <div class="midground"><img width="90%" height="auto" src="<?php echo get_stylesheet_directory_uri(); ?>/img/middleground.png"></div>
-        <div class="foreground"></div>
 
-            <a class="play" href="#!/video/boundless"></a>
+        <div class="foreground"></div>
 
             <?php while( have_posts() ) :       the_post(); ?>
 
                 <div class="homepage-text">
+                    
+                    <a class="play" href="#!/video/boundless"></a>
 
                    <h1>  <?php # the_title(); ?></h1>
                    <!-- <span class="udub-slant"><span></span></span> -->
@@ -30,10 +31,12 @@
 
             <?php endwhile; ?>
 
-    </div>
+        <p class="scroll-more"></p>
+
+    </li>
 
     <?php echo  Navigation::get_navigation_slides() ?>
 
-    </div>
+    </ul>
 
 <?php get_template_part( 'footer', 'app' ) ?>

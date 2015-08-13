@@ -9,11 +9,11 @@ BOUNDLESS.Map = Backbone.View.extend({
 
   // tagName : 'div',
 
-  listItems : '<ul class="points-of-interest">' +
+  listItems : '<select class="points-of-interest uw-select">' +
       '<% _.each( points, function(point) { %>' +
-        '<li data-marker="<%= point.title %>"><span><%= point.title  %></span>' +
+        '<option data-marker="<%= point.title %>"><span><%= point.title  %></span>' +
       '<% }) %>' +
-    '</ul>',
+    '</select>',
 
   overlays: '<h2 class="map-title">Campus Icons and Hidden Gems</h2>' +
             '<p id="main_cta" class="boundless-button"><span>' +

@@ -12,6 +12,27 @@ ul.navigation {
       border-radius: 100%;
       width:15px;
       height:15px;
+      .box-shadow(1px 1px rgba(0, 0, 0, 0.22));
+      position: relative;
+      &:before  {
+        content: "";
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        width: 0px;
+        height: 0px;
+        border: 3px solid rgba(255,255,255,.8);
+        z-index: -1;
+        border-radius: 100%;
+        .transform-origin(center center);        
+        .transition(all .1s ease-in-out);
+      }
+      &.current-dot:before  {
+        left: -6px;
+        top: -6px;
+        width: 27px;
+        height: 27px;
+      }
     }
 
 }

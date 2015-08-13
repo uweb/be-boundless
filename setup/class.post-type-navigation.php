@@ -215,8 +215,10 @@ class Navigation
 
       $route = explode( '/' , $route);
       $route = end( $route);
-
-      echo "<div class=\"slide $type $route\"></div>";
+      if ( $route === 'map' ) 
+        echo "<li class=\"slide\"><div class=\"map\"></div></li>";
+      else 
+        echo "<li class=\"slide $type $route\"></li>";
     }
   }
 
