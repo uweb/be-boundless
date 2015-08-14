@@ -13,9 +13,12 @@
     <?php  ?>
 
     <li id="boundless-slide" class="slide current">
-        <div id="boundless-background"></div>
-        <div class="midground"><img width="90%" height="auto" src="<?php echo get_stylesheet_directory_uri(); ?>/img/middleground.png"></div>
-
+        
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        
+        <div class="midground"><img width="95%" height="auto" src="<?php echo get_stylesheet_directory_uri(); ?>/img/middleground.png"></div>
+        
         <div class="foreground"></div>
 
             <?php while( have_posts() ) :       the_post(); ?>
@@ -33,7 +36,7 @@
 
         <p class="scroll-more"></p>
 
-    </li>
+    </li>s
 
     <?php echo  Navigation::get_navigation_slides() ?>
 

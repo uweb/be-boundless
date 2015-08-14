@@ -5032,9 +5032,7 @@ BOUNDLESS.Map = Backbone.View.extend({
     '</select>',
 
   overlays: '<h2 class="map-title">Campus Icons and Hidden Gems</h2>' +
-            '<p id="main_cta" class="boundless-button"><span>' +
-              '<a href="https://www.uw.edu/maps">Explore more</a>' +
-            '</span></p>',
+            '<a class="explore-more" href="https://www.uw.edu/maps">Explore more</a>',
 
 
   events : {
@@ -5817,80 +5815,94 @@ BOUNDLESS.Scroll = Backbone.View.extend({
   initialize : function( options )
   {
 
-	$('#boundless-slide, .midground, .homepage-text').bind('inview', function (event, visible ) {
-	  if (visible === true) {
-	  	$(this).addClass( "visible" )
-	  } else {
-	  	$(this).removeClass( "visible" )
-	  }
-	})
+  	// _.bindAll(this,'dotNext','dotPrev')
 
-	$('.curtains').curtain();
-
-  },
-
-  scroller: function(){
-
-  	$('#boundless-slide').each(function(){
-  		var o = $(this),
-  			offsets = o.offset().top,
-  			scrollAmount = offsets - $(window).scrollTop()
-
-  		if(o.hasClass('visible')) {
-  			var distanceToTop = scrollAmount / 4,
-  				bgPos = "center " + distanceToTop + "px";
-
-  			o.css('background-position', bgPos)
-
-  		}
-  	})
-
-  	$('.midground').each(function(){
-  		var o = $('#boundless-slide'),
-  			that = $(this),
-  			offsets = o.offset().top,
-  			scrollAmount = offsets - $(window).scrollTop()
-
-  		if(that.hasClass('visible')) {
-  			var distanceToTop = Math.abs(scrollAmount / 2);
-
-  			that.css('transform','translateY(' + distanceToTop + 'px)')
-
-  		}
-  	})
-
-  	$('.homepage-text').each(function(){
-  		var o = $('#boundless-slide'),
-  			that = $(this),
-  			offsets = o.offset().top,
-  			scrollAmount = offsets - $(window).scrollTop()
-
-  		if(that.hasClass('visible')) {
-  			var distanceToTop = Math.abs(scrollAmount / 1);
-
-  			that.css({
-  				'transform'	: 'translateY(' + distanceToTop + 'px)'
-  			})
-
-  			if($(window).scrollTop() <10 ){
-         		that.fadeIn("slow");
-  			} else {
-         		that.fadeOut("slow");
-   			}
+  	this.$BoundlessSlide = $('#boundless-slide')
 
 
-  		}
-  	})
+	$('.curtains').curtain({
+    	nextSlide: function(){ 
+  			// Figure out how to roll this into one function
+  			var currentSlide = $('.slide.current').index(),
+  			dots = $('#dots li')
+	
+  			dots.each(function(){
+  				dots.removeClass('current-dot')
+  				dots.eq(currentSlide).addClass('current-dot')
+  			})  		
+    	},
+    	prevSlide: function() {
+			// Figure out how to roll this into one function
+  			var currentSlide = $('.slide.current').index(),
+  			dots = $('#dots li')
+	
+  			dots.each(function(){
+  				dots.removeClass('current-dot')
+  				dots.eq(currentSlide).addClass('current-dot')
+  			})  
+    	}
+	});
 
-  	// Assign page to dot
 
-  	var currentSlide = $('.slide.current').index(),
+	(function(){
+		// Figure out how to roll this into one function
+  		var currentSlide = $('.slide.current').index(),
   		dots = $('#dots li')
-
+	
   		dots.each(function(){
   			dots.removeClass('current-dot')
   			dots.eq(currentSlide).addClass('current-dot')
+  		})  
+	})();
+
+  },
+
+
+  scroller: function(){
+
+  	// Set up variables for function
+  	var parentSlide = this.$BoundlessSlide,
+  		midGround = $('.midground'),
+  		homepageText = $('.homepage-text'),
+
+  		offsets = parentSlide.offset().top,
+  		scrollTop = $(window).scrollTop(),
+  		scrollAmount = offsets - scrollTop,
+
+  		midGroundDistance = Math.abs(scrollAmount / 2);
+  		homepageTextDistance = Math.abs(scrollAmount / 1);
+
+
+  	if(parentSlide.hasClass('current')) {
+
+  		var distanceToTop = scrollAmount / 4,
+  			bgPos = "center " + distanceToTop + "px";
+
+  		parentSlide.css('background-position', bgPos)
+
+  		// Midground
+  		midGround.css('transform','translateY(' + midGroundDistance + 'px)')
+
+  		// Homepage Text
+  		homepageText.css({
+  			'transform'	: 'translateY(' + homepageTextDistance + 'px)'
   		})
+
+  		// Fade in and out the homepage text [ Could be done with class switch? ]
+  		if(scrollTop <10 ){
+        	homepageText.fadeIn("slow");
+  		} else {
+        	homepageText.fadeOut("slow");
+   		}
+
+   		// Fixes scrollTop not rendering properly when top of page is scrolled to
+   		if(scrollTop === 0 ){
+   			midGround.css({ 'transform' : 'translateY(0px)' })
+   			homepageText.css({ 'transform'	: 'translateY(0px)' })
+   		}
+
+  	}
+
 
 
   }	

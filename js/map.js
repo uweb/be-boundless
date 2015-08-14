@@ -16,9 +16,7 @@ BOUNDLESS.Map = Backbone.View.extend({
     '</select>',
 
   overlays: '<h2 class="map-title">Campus Icons and Hidden Gems</h2>' +
-            '<p id="main_cta" class="boundless-button"><span>' +
-              '<a href="https://www.uw.edu/maps">Explore more</a>' +
-            '</span></p>',
+            '<a class="explore-more" href="https://www.uw.edu/maps">Explore more</a>',
 
 
   events : {

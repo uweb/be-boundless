@@ -1,10 +1,7 @@
-// Note: the !important tags are needed because google maps adds inline style transform : translateZ(0px) which we need to overwrite.
-.curtains>li{
-
-
-  	
-  background-attachment: fixed !important;
-
+// The Curtains.js library styles
+.curtains>li{  	
+    background-attachment: fixed !important;
+    background-size: cover !important;
     -webkit-transform:translateZ(0);
     background: white;
     position: fixed;
@@ -15,8 +12,6 @@
     min-height: 100%;
     overflow: hidden;
     z-index:1;
-
-
 }
 
 .curtains>li.hidden{display:none;}
