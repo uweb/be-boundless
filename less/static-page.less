@@ -1,5 +1,10 @@
 .slide.page {  
     padding: 160px 0;
+    background-color: white !important;
+    .intro-text {
+      margin-bottom: 50px;
+      margin-top: 30px;
+    }
     h3 {
       color: @purple;
       font-size: 48px;
@@ -8,4 +13,45 @@
       font-weight: 900;
     }
 
+    .box-outer .box.four .tile {
+      padding: 15px 15px 0;
+      position: relative;
+      transition: all .1s ease-in;
+      cursor: pointer;
+      background-color: white;
+      &:hover {
+        .translate(0,-5px);
+        background-color: #f4f4f4;
+      }
+      h3 {
+        padding: 0 10px 10px;
+        font-weight: 900;
+        padding-right: 10px;
+        font-size: 21px;
+        color: #595959;
+        text-transform: none;
+        a {
+          color: inherit;
+        }
+      }
+      p.slide-p {
+        font-size: 16px;
+        line-height: 1.55;
+        padding: 0 10px 60px;
+      }
+      .jump {
+        background: url(less/svg/boundless.svg) no-repeat 0 -745px;
+        width: 50px;
+        height: 45px;
+        overflow: hidden;
+        text-indent: -9999px;
+        display: block;
+        margin: 10px 0 -5px 0;
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+      }
+    }
+
 }
+
