@@ -1,15 +1,6 @@
 // The boundless slide
 #boundless-slide {
 
-//  position: relative;
-//  min-height: 100%;
-//  background-size: cover;
-//  background-repeat: no-repeat;
-//  background-position: center -20px;
-//  z-index: 1;
-//  background-attachment: fixed;
-    // .transition(all .6s);
-    // background-image: url(img/sunset.jpg);
     background-image: url(img/background.jpg);
     background-color: black;
     .midground,
@@ -44,6 +35,19 @@
       z-index: -1;
     }
 
+   .boundless-youtube {
+      position: absolute;
+      top: 60px;
+      bottom: 0px;
+      left: 0;
+      z-index: 1;
+      transition: opacity .25s;
+      &.behind {
+        opacity: 0;
+        z-index: -10;
+      }
+    }
+
 
 // The message text that displayed when loaded
 
@@ -62,7 +66,6 @@
       text-transform: uppercase;
       color: white;
       opacity: 0;
-     // .animation(margieOpacity 1s 1s 1 forwards);
     }
 
 
@@ -75,7 +78,6 @@
        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
        position: relative;
        opacity: 1;
-      // .animation(margieOpacity 1s 1s 1 forwards);
        a {
          position: absolute;
          right: -180px;
@@ -218,5 +220,3 @@
 @media screen and (max-width: 768px) and (max-height: 500px){
 
 }
-
-

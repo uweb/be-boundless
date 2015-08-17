@@ -216,6 +216,7 @@ BOUNDLESS.Map = Backbone.View.extend({
     // $('#slides').append( this.el )
     this.map = new google.maps.Map( this.el, this.settings.map )
     this.delegateGoogleMapEvents()
+    this.$el.data('height', 10000)
 
     this.infowindow = new BOUNDLESS.Map.InfoWindow( this.map )
 
