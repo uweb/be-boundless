@@ -4995,7 +4995,7 @@ BOUNDLESS.Video.Collection = Backbone.Collection.extend({
 ;// Page view
 BOUNDLESS.Page = Backbone.View.extend({
 
-  template : '<div class="container">'+
+  template : '<div id=\'<%= page.slug %>\' class="container">'+
     '<h3><%= page.title %></h3>' +
     '<%= page.content %>' +
   '</div>',
@@ -5007,6 +5007,7 @@ BOUNDLESS.Page = Backbone.View.extend({
   render : function() {
     this.$el.html( _.template( this.template, { page: this.model.toJSON() } ) )
     this.$el.css('background', 'url(' + this.model.get('image') + ')' )
+    console.log(this.model.toJSON().slug)
   }
 
 })
