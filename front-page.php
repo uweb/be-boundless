@@ -27,7 +27,7 @@
                     
                     <a class="play" href="#!/video/boundless"></a>
 
-                   <h1>  <?php # the_title(); ?></h1>
+                   <h1>  <?php the_title(); ?></h1>
                    <!-- <span class="udub-slant"><span></span></span> -->
                     <p><?php the_content(); ?></p>
                 </div>
@@ -36,7 +36,7 @@
 
         <p class="scroll-more"></p>
 
-    </li>s
+    </li>
 
     <?php echo  Navigation::get_navigation_slides() ?>
 

@@ -59,13 +59,7 @@
     z-index:0;
 
     h1 {
-      font-family: "Encode Sans Compressed",sans-serif;
-      font-weight: 900;
-      line-height: 1;
-      font-size: 95px;
-      text-transform: uppercase;
-      color: white;
-      opacity: 0;
+      display: none;
     }
 
 
@@ -144,40 +138,55 @@
   }
 
 }
-@media screen and (max-width: 768px){
-  ul.points-of-interest {
-    display:none;
-  }
-  h2.map-title {
-    z-index: 0; //hide it because there is NO real estate
-    font-size: 36px;
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 100%;
-    margin-top: 80px;
-  }
-  .boundless-button {
-    z-index: 0;
-  }
-}
 
 @media only screen and (max-width:768px) {
+  .curtains>li {
+  }
+  .scroll-more {
+    display: none;
+  }
+
+
+
   #boundless-slide {
+    height: 800px !important;
     .homepage-text {
-      top: 43%;
+      top: 90px;
       p {
-        width: 48%;
+        width: 75%;
+      }
+      h1 {
+        font-family: "Encode Sans Compressed",sans-serif;
+        font-weight: 900;
+        line-height: 1;
+        font-size: 35px;
+        font-style: italic;
+        text-transform: uppercase;
+        color: white;
+        display: block;
       }
     }
-
+    .midground {
+      display: none;
+    }
+    .foreground {
+        background-attachment: initial;
+        height: 300px;
+        top: auto;
+    }
+    .homepage-text,
+    .foreground {
+       transform: translateY(0px) !important;
+    }
     a.play {
-      height: 190px;
-      width: 170px;
-      position: absolute;
-      top: -252px;
-      left: -30px;
-      right: auto;
-      .scale(.7);
+      .transform-origin(0 0);
+      .scale(.6);
+      position: static;
+      display: block;
+      height: 100px;
+      width: 120px;
+      background-position: -10px -645px;
+      margin-bottom: -40px;
       &:before {
         display: none;
       }

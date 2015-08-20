@@ -53,5 +53,23 @@
       }
     }
 
+    &.white-text {
+      h3,
+      p,
+      p.intro {
+        color: white;
+      }
+    }
+
 }
 
+@media only screen and (max-width : 768px) {
+  .slide.page {
+      & > div > h3, 
+      & > div > p { 
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      padding: 100px 0;
+  }
+}
