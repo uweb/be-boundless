@@ -9,14 +9,17 @@ BOUNDLESS.Map = Backbone.View.extend({
 
   // tagName : 'div',
 
-  listItems : '<select class="points-of-interest uw-select">' +
+  listItems : 
+      '<div class="map-navigator"><h2 class="map-title">Campus Icons and Hidden Gems</h2>' +
+      '<select class="points-of-interest uw-select">' +
       '<% _.each( points, function(point) { %>' +
         '<option data-marker="<%= point.title %>"><span><%= point.title  %></span>' +
       '<% }) %>' +
-    '</select>',
+      '</select>' +
+      '<a class="explore-more" href="https://www.uw.edu/maps">Explore more</a></div>',
 
-  overlays: '<h2 class="map-title">Campus Icons and Hidden Gems</h2>' +
-            '<a class="explore-more" href="https://www.uw.edu/maps">Explore more</a>',
+//  overlays: '<h2 class="map-title">Campus Icons and Hidden Gems</h2>' +
+//            '<a class="explore-more" href="https://www.uw.edu/maps">Explore more</a>',
 
 
   events : {
@@ -228,7 +231,7 @@ BOUNDLESS.Map = Backbone.View.extend({
 
   // Displays a list of the Points of Interest
   showOverlays : function() {
-    this.$el.append(this.overlays);
+//    this.$el.append(this.overlays);
     this.$el.append( _.template( this.listItems, { points: this.points.toJSON() } ) )
   },
 
@@ -264,7 +267,7 @@ BOUNDLESS.Map = Backbone.View.extend({
       marker.setTitle( information.get('title') )
       //marker.setText( information.get('text') )
       marker.setMap( this.map )
-      marker.setIcon( this.settings.icon )
+      marker.setIcon( _.first( information.get('thumb') ) || this.settings.icon )
 
       marker.set( 'information', information )
 

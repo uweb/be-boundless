@@ -1,15 +1,6 @@
 // The boundless slide
 #boundless-slide {
 
-//  position: relative;
-//  min-height: 100%;
-//  background-size: cover;
-//  background-repeat: no-repeat;
-//  background-position: center -20px;
-//  z-index: 1;
-//  background-attachment: fixed;
-    // .transition(all .6s);
-    // background-image: url(img/sunset.jpg);
     background-image: url(img/background.jpg);
     background-color: black;
     .midground,
@@ -44,6 +35,19 @@
       z-index: -1;
     }
 
+   .boundless-youtube {
+      position: absolute;
+      top: 60px;
+      bottom: 0px;
+      left: 0;
+      z-index: 1;
+      transition: opacity .25s;
+      &.behind {
+        opacity: 0;
+        z-index: -10;
+      }
+    }
+
 
 // The message text that displayed when loaded
 
@@ -55,14 +59,7 @@
     z-index:0;
 
     h1 {
-      font-family: "Encode Sans Compressed",sans-serif;
-      font-weight: 900;
-      line-height: 1;
-      font-size: 95px;
-      text-transform: uppercase;
-      color: white;
-      opacity: 0;
-     // .animation(margieOpacity 1s 1s 1 forwards);
+      display: none;
     }
 
 
@@ -75,7 +72,6 @@
        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
        position: relative;
        opacity: 1;
-      // .animation(margieOpacity 1s 1s 1 forwards);
        a {
          position: absolute;
          right: -180px;
@@ -142,40 +138,55 @@
   }
 
 }
-@media screen and (max-width: 768px){
-  ul.points-of-interest {
-    display:none;
-  }
-  h2.map-title {
-    z-index: 0; //hide it because there is NO real estate
-    font-size: 36px;
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 100%;
-    margin-top: 80px;
-  }
-  .boundless-button {
-    z-index: 0;
-  }
-}
 
 @media only screen and (max-width:768px) {
+  .curtains>li {
+  }
+  .scroll-more {
+    display: none;
+  }
+
+
+
   #boundless-slide {
+    height: 800px !important;
     .homepage-text {
-      top: 43%;
+      top: 90px;
       p {
-        width: 48%;
+        width: 75%;
+      }
+      h1 {
+        font-family: "Encode Sans Compressed",sans-serif;
+        font-weight: 900;
+        line-height: 1;
+        font-size: 35px;
+        font-style: italic;
+        text-transform: uppercase;
+        color: white;
+        display: block;
       }
     }
-
+    .midground {
+      display: none;
+    }
+    .foreground {
+        background-attachment: initial;
+        height: 300px;
+        top: auto;
+    }
+    .homepage-text,
+    .foreground {
+       transform: translateY(0px) !important;
+    }
     a.play {
-      height: 190px;
-      width: 170px;
-      position: absolute;
-      top: -252px;
-      left: -30px;
-      right: auto;
-      .scale(.7);
+      .transform-origin(0 0);
+      .scale(.6);
+      position: static;
+      display: block;
+      height: 100px;
+      width: 120px;
+      background-position: -10px -645px;
+      margin-bottom: -40px;
       &:before {
         display: none;
       }
@@ -218,5 +229,3 @@
 @media screen and (max-width: 768px) and (max-height: 500px){
 
 }
-
-

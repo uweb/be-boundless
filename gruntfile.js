@@ -10,9 +10,9 @@ module.exports = function(grunt) {
       dist: {
         libraries: [
           // 'js/libraries/jquery.transit.min.js',
-          'js/libraries/jquery.inview.js',
-          'js/libraries/imagesloaded.js',
-          'js/libraries/masonry.pkgd.js',          
+          // 'js/libraries/jquery.inview.js',
+          // 'js/libraries/imagesloaded.js',
+          // 'js/libraries/masonry.pkgd.js',
           'js/libraries/curtain.js',
         ],
         theme : [
@@ -29,7 +29,7 @@ module.exports = function(grunt) {
           'js/gallery.js',
           'js/infowindow.js',
           'js/utilities.js',
-          'js/router.js',
+          // 'js/router.js',
           'js/analytics.js',
           'js/scroll.js',
         ],

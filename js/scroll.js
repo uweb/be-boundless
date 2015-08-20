@@ -16,25 +16,22 @@ BOUNDLESS.Scroll = Backbone.View.extend({
 
 
 	$('.curtains').curtain({
-    	nextSlide: function(){ 
+    	nextSlide: function(){
   			// Figure out how to roll this into one function
   			var currentSlide = $('.slide.current').index(),
   			dots = $('#dots li')
-	
-  			dots.each(function(){
-  				dots.removeClass('current-dot')
-  				dots.eq(currentSlide).addClass('current-dot')
-  			})  		
+
+  			dots.removeClass('current-dot').eq(currentSlide).addClass('current-dot')
     	},
     	prevSlide: function() {
 			// Figure out how to roll this into one function
   			var currentSlide = $('.slide.current').index(),
   			dots = $('#dots li')
-	
+
   			dots.each(function(){
   				dots.removeClass('current-dot')
   				dots.eq(currentSlide).addClass('current-dot')
-  			})  
+  			})
     	}
 	});
 
@@ -43,11 +40,11 @@ BOUNDLESS.Scroll = Backbone.View.extend({
 		// Figure out how to roll this into one function
   		var currentSlide = $('.slide.current').index(),
   		dots = $('#dots li')
-	
+
   		dots.each(function(){
   			dots.removeClass('current-dot')
   			dots.eq(currentSlide).addClass('current-dot')
-  		})  
+  		})
 	})();
 
   },
@@ -61,7 +58,7 @@ BOUNDLESS.Scroll = Backbone.View.extend({
   		homepageText = $('.homepage-text'),
 
   		offsets = parentSlide.offset().top,
-  		scrollTop = $(window).scrollTop(),
+  		scrollTop = this.$el.scrollTop(),
   		scrollAmount = offsets - scrollTop,
 
   		midGroundDistance = Math.abs(scrollAmount / 2);
@@ -100,7 +97,7 @@ BOUNDLESS.Scroll = Backbone.View.extend({
 
 
 
-  }	
+  }
 
 
 })

@@ -55,7 +55,10 @@ BOUNDLESS.Gallery = Backbone.View.extend({
 
   render : function()
   {
+
     this.$el.append( _.template( this.templateInstagram, {images : this.instagram.toJSON() }) )
+    BOUNDLESS.app.set( 'instagram', true )
+    this.$el.attr('data-height', 10000)
 
     // this.$el.imagesLoaded( this.el, this.setMasonry )
     // this.$el.find('li').on('inview', this.animateImageIn )
