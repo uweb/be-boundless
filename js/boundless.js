@@ -1264,7 +1264,7 @@ BOUNDLESS.Map = Backbone.View.extend({
       marker.setTitle( information.get('title') )
       //marker.setText( information.get('text') )
       marker.setMap( this.map )
-      marker.setIcon( this.settings.icon )
+      marker.setIcon( _.first( information.get('thumb') ) || this.settings.icon )
 
       marker.set( 'information', information )
 
