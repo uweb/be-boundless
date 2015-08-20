@@ -569,7 +569,6 @@ BOUNDLESS.App = Backbone.Model.extend({
 
   initialize : function() {
     this.on('change:map', BOUNDLESS.initialize )
-    // this.on('change:instagram', BOUNDLESS.initialize )
   }
 
 })
@@ -584,6 +583,7 @@ BOUNDLESS.begin = function() {
   BOUNDLESS.pages.each( function( page ) {
     BOUNDLESS.page[ page.get('slug') ] = new BOUNDLESS.Page({ el: '.page .' + page.get('slug') , model: page })
   })
+  BOUNDLESS.analytics = new BOUNDLESS.Analytics()
 }
 
 BOUNDLESS.initialize = function( $ )
