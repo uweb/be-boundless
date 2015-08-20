@@ -28,10 +28,11 @@ BOUNDLESS.begin = function() {
   BOUNDLESS.analytics = new BOUNDLESS.Analytics()
 }
 
-BOUNDLESS.initialize = function( $ )
+BOUNDLESS.initialize = function()
 {
   BOUNDLESS.search = new BOUNDLESS.Search()
   BOUNDLESS.scroll = new BOUNDLESS.Scroll()
+  jQuery('ul.uw-select').on( 'click' , 'li.inactive', BOUNDLESS.map.handleClickListItems )
 }
 
 jQuery(document).ready( BOUNDLESS.begin )

@@ -586,10 +586,11 @@ BOUNDLESS.begin = function() {
   BOUNDLESS.analytics = new BOUNDLESS.Analytics()
 }
 
-BOUNDLESS.initialize = function( $ )
+BOUNDLESS.initialize = function()
 {
   BOUNDLESS.search = new BOUNDLESS.Search()
   BOUNDLESS.scroll = new BOUNDLESS.Scroll()
+  jQuery('ul.uw-select').on( 'click' , 'li.inactive', BOUNDLESS.map.handleClickListItems )
 }
 
 jQuery(document).ready( BOUNDLESS.begin )
@@ -1021,7 +1022,6 @@ BOUNDLESS.Map = Backbone.View.extend({
 
 
   events : {
-      'click li' : 'handleClickListItems'
   },
 
   markers : [],
@@ -1236,7 +1236,7 @@ BOUNDLESS.Map = Backbone.View.extend({
 
   handleClickListItems: function( e )
   {
-      var markerTitle = $(e.currentTarget).data().marker
+      var markerTitle = $(e.target).html()
           , marker = this.markers[ markerTitle ]
 
       $(e.currentTarget).addClass('active').siblings().removeClass('active')
