@@ -1,5 +1,6 @@
 .slide.gallery {
 
+  padding: 80px 0;
 
   ul#grid {
     list-style: none;
@@ -12,22 +13,27 @@
 
       span.caption {
           position: absolute;
-          bottom: 30px;
-          left: 5%;
-          width: 90%;
-          background-color: white;
-          padding: 10px;
+          bottom: 10%;
+          left: 10%;
+          right: 10%;
+          top: 10%;
+          background-color: #FFF;
+          padding: 25px;
+          overflow-y: auto;
+          font-weight: bold;
           opacity: 0;
           transition: opacity 200ms ease-in-out;
           p {
             font-size: 14px;
+            line-height: 1.4;
+            font-weight: bold;
           }
 
       }
 
       &:hover {
         span.caption {
-          opacity: 0.9;
+          opacity: 0.95;
         }
       }
 
