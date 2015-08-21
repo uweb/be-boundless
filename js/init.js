@@ -11,7 +11,6 @@ BOUNDLESS.App = Backbone.Model.extend({
 
   initialize : function() {
     this.on('change:map', BOUNDLESS.initialize )
-    // this.on('change:instagram', BOUNDLESS.initialize )
   }
 
 })
@@ -26,12 +25,14 @@ BOUNDLESS.begin = function() {
   BOUNDLESS.pages.each( function( page ) {
     BOUNDLESS.page[ page.get('slug') ] = new BOUNDLESS.Page({ el: '.page .' + page.get('slug') , model: page })
   })
+  BOUNDLESS.analytics = new BOUNDLESS.Analytics()
 }
 
-BOUNDLESS.initialize = function( $ )
+BOUNDLESS.initialize = function()
 {
   BOUNDLESS.search = new BOUNDLESS.Search()
   BOUNDLESS.scroll = new BOUNDLESS.Scroll()
+  jQuery('ul.uw-select').on( 'click' , 'li.inactive', BOUNDLESS.map.handleClickListItems )
 }
 
 jQuery(document).ready( BOUNDLESS.begin )

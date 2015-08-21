@@ -9,7 +9,7 @@ BOUNDLESS.Map = Backbone.View.extend({
 
   // tagName : 'div',
 
-  listItems : 
+  listItems :
       '<div class="map-navigator"><h2 class="map-title">Campus Icons and Hidden Gems</h2>' +
       '<select class="points-of-interest uw-select">' +
       '<% _.each( points, function(point) { %>' +
@@ -23,7 +23,6 @@ BOUNDLESS.Map = Backbone.View.extend({
 
 
   events : {
-      'click li' : 'handleClickListItems'
   },
 
   markers : [],
@@ -44,6 +43,7 @@ BOUNDLESS.Map = Backbone.View.extend({
       panControl: false,
       zoomControl:false,
       mapTypeControl: false,
+      draggable : ( $(window).width() > 768 ),
       center: new google.maps.LatLng( 47.653851681095, -122.30780562698 ),
       minZoom:1,
       maxZoom:19,
@@ -237,7 +237,7 @@ BOUNDLESS.Map = Backbone.View.extend({
 
   handleClickListItems: function( e )
   {
-      var markerTitle = $(e.currentTarget).data().marker
+      var markerTitle = $(e.target).html()
           , marker = this.markers[ markerTitle ]
 
       $(e.currentTarget).addClass('active').siblings().removeClass('active')

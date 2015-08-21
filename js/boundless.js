@@ -569,7 +569,6 @@ BOUNDLESS.App = Backbone.Model.extend({
 
   initialize : function() {
     this.on('change:map', BOUNDLESS.initialize )
-    // this.on('change:instagram', BOUNDLESS.initialize )
   }
 
 })
@@ -584,12 +583,14 @@ BOUNDLESS.begin = function() {
   BOUNDLESS.pages.each( function( page ) {
     BOUNDLESS.page[ page.get('slug') ] = new BOUNDLESS.Page({ el: '.page .' + page.get('slug') , model: page })
   })
+  BOUNDLESS.analytics = new BOUNDLESS.Analytics()
 }
 
-BOUNDLESS.initialize = function( $ )
+BOUNDLESS.initialize = function()
 {
   BOUNDLESS.search = new BOUNDLESS.Search()
   BOUNDLESS.scroll = new BOUNDLESS.Scroll()
+  jQuery('ul.uw-select').on( 'click' , 'li.inactive', BOUNDLESS.map.handleClickListItems )
 }
 
 jQuery(document).ready( BOUNDLESS.begin )
@@ -988,7 +989,6 @@ BOUNDLESS.Page = Backbone.View.extend({
   render : function() {
     this.$el.html( _.template( this.template, { page: this.model.toJSON() } ) )
     this.$el.css('background', 'url(' + this.model.get('image') + ')' )
-    console.log(this.model.toJSON().slug)
   }
 
 })
@@ -1007,7 +1007,7 @@ BOUNDLESS.Map = Backbone.View.extend({
 
   // tagName : 'div',
 
-  listItems : 
+  listItems :
       '<div class="map-navigator"><h2 class="map-title">Campus Icons and Hidden Gems</h2>' +
       '<select class="points-of-interest uw-select">' +
       '<% _.each( points, function(point) { %>' +
@@ -1021,7 +1021,6 @@ BOUNDLESS.Map = Backbone.View.extend({
 
 
   events : {
-      'click li' : 'handleClickListItems'
   },
 
   markers : [],
@@ -1042,6 +1041,7 @@ BOUNDLESS.Map = Backbone.View.extend({
       panControl: false,
       zoomControl:false,
       mapTypeControl: false,
+      draggable : ( $(window).width() > 768 ),
       center: new google.maps.LatLng( 47.653851681095, -122.30780562698 ),
       minZoom:1,
       maxZoom:19,
@@ -1235,7 +1235,7 @@ BOUNDLESS.Map = Backbone.View.extend({
 
   handleClickListItems: function( e )
   {
-      var markerTitle = $(e.currentTarget).data().marker
+      var markerTitle = $(e.target).html()
           , marker = this.markers[ markerTitle ]
 
       $(e.currentTarget).addClass('active').siblings().removeClass('active')
