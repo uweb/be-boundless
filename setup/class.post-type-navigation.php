@@ -212,13 +212,22 @@ class Navigation
     {
       $type = get_post_meta( $nav->ID, '_type', true ) ;
       $route = get_post_meta( $nav->ID, '_route', true ) ;
+      $textcolor = "";
 
       $route = explode( '/' , $route);
       $route = end( $route);
-      if ( $route === 'map' ) 
+      if ( $route === 'map' ) {
         echo "<li class=\"slide\"><div class=\"map\"></div></li>";
-      else 
-        echo "<li class=\"slide $type $route\"></li>";
+      } else { 
+        if ($type == 'page'){
+          $pageid = get_page_by_title($nav->post_title)->ID;
+          $whitetext = get_post_meta( $pageid, 'textcolor', true ) ;
+          if ( !empty($whitetext) ){
+            $textcolor = "white-text";
+          }
+        }
+        echo "<li class=\"slide $type $route $textcolor\"></li>";
+      }
     }
   }
 
