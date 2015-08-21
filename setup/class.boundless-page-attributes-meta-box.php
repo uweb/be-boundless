@@ -81,8 +81,8 @@ class Boundless_Page_Attributes_Meta_Box {
     <?php }
     $sidebar = get_post_meta($post->ID, "sidebar", true);
     wp_nonce_field( 'sidebar_nonce' , 'sidebar_name' );
-    $text = get_post_meta($post->ID, "text", true);
-    wp_nonce_field( 'text_nonce' , 'text_name' );
+    $textcolor = get_post_meta($post->ID, "textcolor", true);
+    wp_nonce_field( 'textcolor_nonce' , 'textcolor_name' );
     ?>
 
     <p><strong><?php _e('Sidebar') ?></strong></p>
@@ -93,9 +93,9 @@ class Boundless_Page_Attributes_Meta_Box {
 
     <p><strong><?php _e('Text') ?></strong></p>
 
-    <label class="screen-reader-text" for="text"><?php _e('Text') ?></label>
+    <label class="screen-reader-text" for="textcolor"><?php _e('Text') ?></label>
 
-    <p><input type="checkbox" id="text_id" name="textcheck" value="on" <?php if( !empty($text) ) { ?>checked="checked"<?php } ?> /><?php _e('White Text') ?></p>
+    <p><input type="checkbox" id="textcolor_id" name="textcolorcheck" value="on" <?php if( !empty($textcolor) ) { ?>checked="checked"<?php } ?> /><?php _e('White Text') ?></p>
 
     <p><strong><?php _e('Order') ?></strong></p>
 
@@ -157,13 +157,13 @@ class Boundless_Page_Attributes_Meta_Box {
       }
     }
 
-    if ( isset( $_POST['text_name'] ) ) { 
-      if ( ! empty( $_POST ) && check_admin_referer( 'text_nonce', 'text_name') ) { //limit to only pages
+    if ( isset( $_POST['textcolor_name'] ) ) { 
+      if ( ! empty( $_POST ) && check_admin_referer( 'textcolor_nonce', 'textcolor_name') ) { //limit to only pages
         if ($post_type) {
-          if(isset($_POST["textcheck"])) {
-            update_post_meta($post_ID, "text", $_POST["textcheck"]);
+          if(isset($_POST["textcolorcheck"])) {
+            update_post_meta($post_ID, "textcolor", $_POST["textcolorcheck"]);
           } else {
-            update_post_meta($post_ID, "text", null); 
+            update_post_meta($post_ID, "textcolor", null); 
           }
         }
       }
