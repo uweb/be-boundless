@@ -34,8 +34,8 @@
 
             <?php endwhile; ?>
 
-        <p class="scroll-more"></p>
-
+        <p class="scroll-more"></p>        
+        <a href="#" class="visit-button">Visit</a>
     </li>
 
     <?php echo  Navigation::get_navigation_slides() ?>
