@@ -16,6 +16,7 @@ BOUNDLESS.Scroll = Backbone.View.extend({
 
 
 	$('.curtains').curtain({
+        curtainLinks : '#dots a',
     	nextSlide: function(){
   			// Figure out how to roll this into one function
   			var currentSlide = $('.slide.current').index(),
@@ -36,16 +37,16 @@ BOUNDLESS.Scroll = Backbone.View.extend({
 	});
 
 
-	(function(){
-		// Figure out how to roll this into one function
-  		var currentSlide = $('.slide.current').index(),
-  		dots = $('#dots li')
+	// (function(){
+	// 	// Figure out how to roll this into one function
+ //  		var currentSlide = $('.slide.current').index(),
+ //  		dots = $('#dots li')
 
-  		dots.each(function(){
-  			dots.removeClass('current-dot')
-  			dots.eq(currentSlide).addClass('current-dot')
-  		})
-	})();
+ //  		dots.each(function(){
+ //  			dots.removeClass('current-dot')
+ //  			dots.eq(currentSlide).addClass('current-dot')
+ //  		})
+	// })();
 
   },
 
