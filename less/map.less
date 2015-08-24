@@ -54,7 +54,7 @@
   .map-navigator {
     position: absolute;
     z-index: 999;
-    bottom: 150px;
+    top: 150px;
     left: 60px;
   }
 
@@ -83,17 +83,31 @@
     line-height: 1.1;
     text-transform: uppercase;
     font-weight: 900;
+    &:before,
+    &:after {
+      top: -40px;
+      height: 230px;
+
+      .skew(-15deg,0);
+    }
+    &:before {
+      content: "";
+      width: 5px;
+      background-color: @lightgold;
+      display: block;
+      position: absolute;
+      left: 523px;
+      
+      z-index: -1;
+    }
     &:after {
       content: "";
       width: 964px;
-      background-color: rgba(255, 255, 255, 0.75);
+      background-color: rgba(255, 255, 255, 1);
       display: block;
       position: absolute;
       left: -440px;
-      top: -40px;
-      height: 230px;
       z-index: -1;
-      .skew(-15deg,0);
     }
   }
 
