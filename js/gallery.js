@@ -17,7 +17,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   '<div class="container">' +
     '<ul id="grid" class="masonry">' +
     '<% _.each( images, function( image ) { %> ' +
-     '<li class="segue" ><img width="100%" src="<%= image.src.url %>" /><span class="caption"><p><%= image.caption %></p></span>' +
+     '<li class="segue" ><img width="100%" src="<%= image.src.url %>" />' +
     ' <% }) %>' +
     '</ul>' +
   '</div>',
@@ -26,9 +26,8 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   '<div class="container">' +
     '<ul id="grid" class="masonry">' +
     '<% _.each( images, function( image ) { %> ' +
-     '<li class="segue" ><img src="<%= image.images.standard_resolution.url %>" height="<%= image.images.standard_resolution.height %>" width="<%= image.images.standard_resolution.width %>" />' +
-     '<span class="caption"><p><%= image.caption.text %></p></span>' +
-    ' <% }) %>' +
+     '<li class="segue" ><a href="<%= image.link %>"><img src="<%= image.images.standard_resolution.url %>" height="<%= image.images.standard_resolution.height %>" width="<%= image.images.standard_resolution.width %>" /></a>' +
+    ' <% }) %>' + 
     '</ul>' +
   '</div>',
 
