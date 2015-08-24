@@ -1,4 +1,25 @@
 .boundless-button {
+  &.dark {
+    span {
+      border: 4px solid @purple;
+      a { 
+        color: @purple;
+        &:after {
+          background-position: -211px -13px;
+        }
+      }
+    }
+    
+    &.sm {
+      border-left: 3px solid @purple;
+      span {
+        border: 3px solid @purple;
+      }
+      &.button-second {
+        border-left: none;
+      }
+    }
+  }
   &.sm {
     border-left: 3px solid #FFF;
     span {
@@ -9,6 +30,7 @@
 
     }
   }
+
   display: inline-block;
   border-left: 4px solid #FFF;
   overflow: hidden;
@@ -55,22 +77,8 @@
         margin-top: -16px;
       }
     }
+    
   }
-//  &.right {
-//    padding: 0 0 0 30px;
-//    border-left: none;
-//    border-right: 4px solid #FFF;
-//    span {
-//      margin-right: -40px;
-//      margin-left: 0px;
-//      a {
-//        padding: 10px 60px 10px 20px;
-//      }
-//    }
-//    &:hover {
-//       border-color:@lightgold;
-//    }
-//  }
 
 }
 
