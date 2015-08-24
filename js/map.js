@@ -2,7 +2,6 @@
 BOUNDLESS.Map = Backbone.View.extend({
 
   // The element to put the Google Map
-  // id : 'map',
   el : '.map',
 
   // className : 'slide',

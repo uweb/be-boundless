@@ -577,20 +577,25 @@ BOUNDLESS.begin = function() {
   BOUNDLESS.app = new BOUNDLESS.App()
   BOUNDLESS.map = new BOUNDLESS.Map()
   BOUNDLESS.gallery = new BOUNDLESS.Gallery()
-  BOUNDLESS.navigation = new BOUNDLESS.Navigation()
+  // BOUNDLESS.navigation = new BOUNDLESS.Navigation()
   BOUNDLESS.page = []
   BOUNDLESS.pages = new BOUNDLESS.Pages( PAGES )
   BOUNDLESS.pages.each( function( page ) {
     BOUNDLESS.page[ page.get('slug') ] = new BOUNDLESS.Page({ el: '.page .' + page.get('slug') , model: page })
   })
   BOUNDLESS.analytics = new BOUNDLESS.Analytics()
+  BOUNDLESS.video = new BOUNDLESS.Video({slug: 'boundless'})
 }
 
 BOUNDLESS.initialize = function()
 {
   BOUNDLESS.search = new BOUNDLESS.Search()
   BOUNDLESS.scroll = new BOUNDLESS.Scroll()
+  // todo: incoorporate into MV*
   jQuery('ul.uw-select').on( 'click' , 'li.inactive', BOUNDLESS.map.handleClickListItems )
+  jQuery( 'a.play').click( function() {
+        new BOUNDLESS.Video({ slug: 'boundless' })
+  } )
 }
 
 jQuery(document).ready( BOUNDLESS.begin )
@@ -788,8 +793,8 @@ BOUNDLESS.Video = Backbone.View.extend({
 
     //this is the instantiated collection
     this.slug = options.slug;
-    this.collection = new BOUNDLESS.Video.Collection();
-    this.collection.on( 'sync', this.render )
+    this.collection = new BOUNDLESS.Video.Collection( VIDEOS );
+    this.render()
 
   },
 
@@ -948,7 +953,7 @@ BOUNDLESS.Video.Model = Backbone.Model.extend({});
 
 BOUNDLESS.Video.Collection = Backbone.Collection.extend({
 
-  url : '?json=boundless_video.get_videos',
+  // url : '?json=boundless_video.get_videos',
 
   initialize: function () {
     _.bindAll( this, 'ready' )
@@ -964,7 +969,7 @@ BOUNDLESS.Video.Collection = Backbone.Collection.extend({
   ready : function()
   {
     // putting fetch into the change:apiReady
-    this.fetch()
+    // this.fetch()
   },
 
   error: function()
@@ -1000,7 +1005,6 @@ BOUNDLESS.Pages = Backbone.Collection.extend({
 BOUNDLESS.Map = Backbone.View.extend({
 
   // The element to put the Google Map
-  // id : 'map',
   el : '.map',
 
   // className : 'slide',
@@ -1720,6 +1724,7 @@ BOUNDLESS.Scroll = Backbone.View.extend({
 
 
 	$('.curtains').curtain({
+        curtainLinks : '#dots a',
     	nextSlide: function(){
   			// Figure out how to roll this into one function
   			var currentSlide = $('.slide.current').index(),
@@ -1740,16 +1745,16 @@ BOUNDLESS.Scroll = Backbone.View.extend({
 	});
 
 
-	(function(){
-		// Figure out how to roll this into one function
-  		var currentSlide = $('.slide.current').index(),
-  		dots = $('#dots li')
+	// (function(){
+	// 	// Figure out how to roll this into one function
+ //  		var currentSlide = $('.slide.current').index(),
+ //  		dots = $('#dots li')
 
-  		dots.each(function(){
-  			dots.removeClass('current-dot')
-  			dots.eq(currentSlide).addClass('current-dot')
-  		})
-	})();
+ //  		dots.each(function(){
+ //  			dots.removeClass('current-dot')
+ //  			dots.eq(currentSlide).addClass('current-dot')
+ //  		})
+	// })();
 
   },
 

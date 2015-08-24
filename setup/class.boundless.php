@@ -59,6 +59,9 @@ class Boundless
       // Gallery information
       wp_localize_script( 'boundless', 'PAGES', $this->get_pages() );
 
+      // Video information
+      wp_localize_script( 'boundless', 'VIDEOS', $this->get_videos() );
+
 
       wp_enqueue_script( 'boundless' );
     }
@@ -92,6 +95,27 @@ class Boundless
     }
 
     return $results;
+
+  }
+
+  function get_videos() {
+    $videos = get_posts( array(
+      'post_type' => array( 'boundless_video' )
+    ));
+
+    foreach ( $videos as $video )
+    {
+      $result = new stdClass();
+      $result->title = $video->post_title;
+      $result->slug  = $video->post_name;
+      $result->text  = $video->post_content;
+      $result->image = apply_filters('wp_prepare_attachment_for_js', apply_filters( 'remove_cms', wp_get_attachment_url( get_post_thumbnail_id( $video->ID))) );
+      $result->video = get_post_meta( $video->ID, 'youtube', true );
+
+      $results[] = $result;
+    }
+
+    return  $results;
 
   }
 

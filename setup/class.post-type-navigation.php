@@ -201,7 +201,9 @@ class Navigation
     {
       $type = get_post_meta( $nav->ID, '_type', true ) ;
       $route = get_post_meta( $nav->ID, '_route', true ) ;
-      echo "<li id=\"{$nav->post_name}\" data-route=\"$route\"></li>";
+      $route = explode( '/' , $route);
+      $route = end( $route);
+      echo "<a href=\"#$route\"></a>";
     }
   }
 
@@ -215,10 +217,10 @@ class Navigation
 
       $route = explode( '/' , $route);
       $route = end( $route);
-      if ( $route === 'map' ) 
-        echo "<li class=\"slide\"><div class=\"map\"></div></li>";
-      else 
-        echo "<li class=\"slide $type $route\"></li>";
+      if ( $route === 'map' )
+        echo "<li id=\"$route\" class=\"slide\"><div class=\"map\"></div></li>";
+      else
+        echo "<li id=\"$route\" class=\"slide $type $route\"></li>";
     }
   }
 
