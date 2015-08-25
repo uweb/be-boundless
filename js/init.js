@@ -36,7 +36,8 @@ BOUNDLESS.initialize = function()
   // todo: incoorporate into MV*
   jQuery('ul.uw-select').on( 'click' , 'li.inactive', BOUNDLESS.map.handleClickListItems )
   jQuery( 'a.play').click( function() {
-        new BOUNDLESS.Video({ slug: 'boundless' })
+        var video = new BOUNDLESS.Video({ slug: 'boundless' })
+        return false;
   } )
 }
 
