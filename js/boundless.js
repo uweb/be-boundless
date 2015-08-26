@@ -594,7 +594,8 @@ BOUNDLESS.initialize = function()
   // todo: incoorporate into MV*
   jQuery('ul.uw-select').on( 'click' , 'li.inactive', BOUNDLESS.map.handleClickListItems )
   jQuery( 'a.play').click( function() {
-        new BOUNDLESS.Video({ slug: 'boundless' })
+        var video = new BOUNDLESS.Video({ slug: 'boundless' })
+        return false;
   } )
 }
 
@@ -1362,7 +1363,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   '<div class="container">' +
     '<ul id="grid" class="masonry">' +
     '<% _.each( images, function( image ) { %> ' +
-     '<li class="segue" ><img width="100%" src="<%= image.src.url %>" /><span class="caption"><p><%= image.caption %></p></span>' +
+     '<li class="segue" ><img width="100%" src="<%= image.src.url %>" />' +
     ' <% }) %>' +
     '</ul>' +
   '</div>',
@@ -1371,9 +1372,8 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   '<div class="container">' +
     '<ul id="grid" class="masonry">' +
     '<% _.each( images, function( image ) { %> ' +
-     '<li class="segue" ><img src="<%= image.images.standard_resolution.url %>" height="<%= image.images.standard_resolution.height %>" width="<%= image.images.standard_resolution.width %>" />' +
-     '<span class="caption"><p><%= image.caption.text %></p></span>' +
-    ' <% }) %>' +
+     '<li class="segue" ><a href="<%= image.link %>"><img src="<%= image.images.standard_resolution.url %>" height="<%= image.images.standard_resolution.height %>" width="<%= image.images.standard_resolution.width %>" /></a>' +
+    ' <% }) %>' + 
     '</ul>' +
   '</div>',
 
@@ -1727,24 +1727,24 @@ BOUNDLESS.Scroll = Backbone.View.extend({
 
 
 	$('.curtains').curtain({
-        curtainLinks : '#dots a',
-    	nextSlide: function(){
-  			// Figure out how to roll this into one function
-  			var currentSlide = $('.slide.current').index(),
-  			dots = $('#dots li')
+           curtainLinks : '#dots a',
+        	nextSlide: function(){
+      			// Figure out how to roll this into one function
+      			var currentSlide = $('.slide.current').index(),
+      			dots = $('#dots li')
 
-  			dots.removeClass('current-dot').eq(currentSlide).addClass('current-dot')
-    	},
-    	prevSlide: function() {
-			// Figure out how to roll this into one function
-  			var currentSlide = $('.slide.current').index(),
-  			dots = $('#dots li')
+      			dots.removeClass('current-dot').eq(currentSlide).addClass('current-dot')
+        	},
+        	prevSlide: function() {
+    			// Figure out how to roll this into one function
+      			var currentSlide = $('.slide.current').index(),
+      			dots = $('#dots li')
 
-  			dots.each(function(){
-  				dots.removeClass('current-dot')
-  				dots.eq(currentSlide).addClass('current-dot')
-  			})
-    	}
+      			dots.each(function(){
+      				dots.removeClass('current-dot')
+      				dots.eq(currentSlide).addClass('current-dot')
+      			})
+        	}
 	});
 
 
@@ -1809,6 +1809,12 @@ BOUNDLESS.Scroll = Backbone.View.extend({
 
   	}
 
+        if ( $('#tagboard').data().position < $(window).scrollTop() )
+        {
+          $('.tagboard-embed').css( {'overflow': 'scroll', 'height': 1000} )
+        } else {
+          $('.tagboard-embed').css( {'overflow': 'hidden', 'height': 1000 } )
+        }
 
 
   }

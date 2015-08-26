@@ -13,18 +13,18 @@
     <?php  ?>
 
     <li id="boundless-slide" class="slide current">
-        
+
         <div class="stars"></div>
         <div class="twinkling"></div>
-        
+
         <div class="midground"><img width="95%" height="auto" src="<?php echo get_stylesheet_directory_uri(); ?>/img/middleground.png"></div>
-        
+
         <div class="foreground"></div>
 
             <?php while( have_posts() ) :       the_post(); ?>
 
                 <div class="homepage-text">
-                    
+
                     <a class="play" href="#!/video/boundless"></a>
 
                    <h1>  <?php the_title(); ?></h1>
@@ -34,12 +34,16 @@
 
             <?php endwhile; ?>
 
-        <p class="scroll-more"></p>        
+        <p class="scroll-more"></p>
         <a href="#" class="visit-button">Visit</a>
     </li>
 
     <?php echo  Navigation::get_navigation_slides() ?>
 
-    </ul>
+    <li id="tagboard" class="slide">
+        <div class="tagboard-embed" tgb-slug="NEWHUSKIES2015" style="overflow:hidden;"></div>
+        <script src="https://static.tagboard.com/public/js/embedAdvanced.js"></script>
+    </li>
+</ul>
 
 <?php get_template_part( 'footer', 'app' ) ?>
