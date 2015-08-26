@@ -118,7 +118,8 @@
     text-transform: uppercase;
     position: relative;
     font-family: @font-family-headline;
-    font-size: 14px;
+    font-size: 13px;
+    margin-left: 20px;
     &:after {
       content: "";
       display: block;
@@ -207,24 +208,6 @@
 
   }
 
-
-@media only screen and (max-height : 800px) {
-    ul.points-of-interest {
-      margin-top: -220px;
-      li span {
-        padding: 10px 20px 10px 55px;
-        &:after {
-          top: 11px;
-        }
-      }
-    }
-    h2.map-title {
-      font-size: 38px;
-    }
-    #map p.boundless-button#main_cta {
-      top: 210px;
-    }
-}
 
 @media screen and (max-width: 768px) and (max-height: 500px){
   h2.map-title {

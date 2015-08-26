@@ -41,8 +41,8 @@ BOUNDLESS.Video = Backbone.View.extend({
 
     //this is the instantiated collection
     this.slug = options.slug;
-    this.collection = new BOUNDLESS.Video.Collection();
-    this.collection.on( 'sync', this.render )
+    this.collection = new BOUNDLESS.Video.Collection( VIDEOS );
+    this.render()
 
   },
 
@@ -201,7 +201,7 @@ BOUNDLESS.Video.Model = Backbone.Model.extend({});
 
 BOUNDLESS.Video.Collection = Backbone.Collection.extend({
 
-  url : '?json=boundless_video.get_videos',
+  // url : '?json=boundless_video.get_videos',
 
   initialize: function () {
     _.bindAll( this, 'ready' )
@@ -217,7 +217,7 @@ BOUNDLESS.Video.Collection = Backbone.Collection.extend({
   ready : function()
   {
     // putting fetch into the change:apiReady
-    this.fetch()
+    // this.fetch()
   },
 
   error: function()

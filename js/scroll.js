@@ -14,8 +14,12 @@ BOUNDLESS.Scroll = Backbone.View.extend({
 
   	this.$BoundlessSlide = $('#boundless-slide')
 
+    this.$MobileCheck =  $('#dots').css('display') == 'none' ? true : false;
+
+
 
 	$('.curtains').curtain({
+        curtainLinks : '#dots a',
     	nextSlide: function(){
   			// Figure out how to roll this into one function
   			var currentSlide = $('.slide.current').index(),
@@ -36,8 +40,8 @@ BOUNDLESS.Scroll = Backbone.View.extend({
 	});
 
 
-	(function(){
-		// Figure out how to roll this into one function
+  (function(){
+  	// Figure out how to roll this into one function
   		var currentSlide = $('.slide.current').index(),
   		dots = $('#dots li')
 
@@ -45,12 +49,14 @@ BOUNDLESS.Scroll = Backbone.View.extend({
   			dots.removeClass('current-dot')
   			dots.eq(currentSlide).addClass('current-dot')
   		})
-	})();
+  })();
 
   },
 
 
   scroller: function(){
+
+
 
   	// Set up variables for function
   	var parentSlide = this.$BoundlessSlide,
@@ -81,11 +87,11 @@ BOUNDLESS.Scroll = Backbone.View.extend({
   		})
 
   		// Fade in and out the homepage text [ Could be done with class switch? ]
-  		if(scrollTop <10 ){
-        	homepageText.fadeIn("slow");
-  		} else {
-        	homepageText.fadeOut("slow");
-   		}
+        if(scrollTop <10 && !this.$MobileCheck ){
+          	homepageText.fadeIn("slow");
+  		  } else if ( !this.$MobileCheck ) {
+          	homepageText.fadeOut("slow");
+   		 }
 
    		// Fixes scrollTop not rendering properly when top of page is scrolled to
    		if(scrollTop === 0 ){
