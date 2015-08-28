@@ -26,7 +26,6 @@ BOUNDLESS.begin = function() {
     BOUNDLESS.page[ page.get('slug') ] = new BOUNDLESS.Page({ el: '.page .' + page.get('slug') , model: page })
   })
   BOUNDLESS.analytics = new BOUNDLESS.Analytics()
-  BOUNDLESS.video = new BOUNDLESS.Video({slug: 'boundless'})
 }
 
 BOUNDLESS.initialize = function()
@@ -36,9 +35,34 @@ BOUNDLESS.initialize = function()
   // todo: incoorporate into MV*
   jQuery('ul.uw-select').on( 'click' , 'li.inactive', BOUNDLESS.map.handleClickListItems )
   jQuery( 'a.play').click( function() {
-        var video = new BOUNDLESS.Video({ slug: 'boundless' })
-        return false;
+    $('#boundless-video').hide()
+    var player = new YT.Player( 'boundless-video', {
+      videoId : '0h33Y9Zw8oQ',
+      player_vars : {
+        'rel' : 0,
+        'controls' : 0,
+        'modestbranding' : 1,
+        'wmode' : 'transparent'
+      },
+      width : $(window).width(),
+      height: $(window).height(),
+      events : {
+        onReady :  function( event ) {
+          event.target.playVideo()
+          $('#boundless-video').hide().fadeIn()
+          $('#close-boundless-video').show()
+        }
+      }
+    })
+    return false;
   } )
+
+  $('#close-boundless-video').click( function() {
+    $('#boundless-video').fadeOut(function() {
+      $(this).replaceWith('<div id="boundless-video"/>')
+    })
+    $(this).hide()
+  })
 }
 
 jQuery(document).ready( BOUNDLESS.begin )

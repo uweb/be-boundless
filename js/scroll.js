@@ -10,9 +10,7 @@ BOUNDLESS.Scroll = Backbone.View.extend({
   initialize : function( options )
   {
 
-  	// _.bindAll(this,'dotNext','dotPrev')
-
-  	this.$BoundlessSlide = $('#boundless-slide')
+    this.$BoundlessSlide = $('#boundless-slide')
 
     this.$MobileCheck =  $('#dots').css('display') == 'none' ? true : false;
 
