@@ -1185,7 +1185,7 @@ BOUNDLESS.Map = Backbone.View.extend({
       // mapTypeControl : false
     },
     icon : {
-      url : 'wp-content/themes/be-boundless/less/svg/map-marker-dark.png',
+      url : $(window).width() < 768 ? 'wp-content/themes/be-boundless/less/svg/map-dot.png' : 'wp-content/themes/be-boundless/less/svg/map-marker-dark.png',
       size : new google.maps.Size(85, 85),
       origin: new google.maps.Point(0,0),
       anchor: new google.maps.Point( 42.5, 42.5 )
@@ -1270,8 +1270,11 @@ BOUNDLESS.Map = Backbone.View.extend({
       marker.setTitle( information.get('title') )
       //marker.setText( information.get('text') )
       marker.setMap( this.map )
-      marker.setIcon( _.first( information.get('thumb') ) || this.settings.icon )
-
+      if ($(window).width() < 768 ) {
+        marker.setIcon( this.settings.icon )
+      } else {
+        marker.setIcon( _.first( information.get('thumb') ) || this.settings.icon )
+      }
       marker.set( 'information', information )
 
       this.markers[ information.get('title') ] = marker
@@ -1779,7 +1782,7 @@ BOUNDLESS.Scroll = Backbone.View.extend({
   		homepageTextDistance = Math.abs(scrollAmount / 1);
 
 
-  	if(parentSlide.hasClass('current')) {
+  	if(parentSlide.hasClass('current') && !this.$MobileCheck) {
 
   		var distanceToTop = scrollAmount / 4,
   			bgPos = "center " + distanceToTop + "px";
@@ -1795,14 +1798,14 @@ BOUNDLESS.Scroll = Backbone.View.extend({
   		})
 
   		// Fade in and out the homepage text [ Could be done with class switch? ]
-        if(scrollTop <10 && !this.$MobileCheck ){
+        if(scrollTop <10){
           	homepageText.fadeIn("slow");
   		  } else if ( !this.$MobileCheck ) {
           	homepageText.fadeOut("slow");
    		 }
 
    		// Fixes scrollTop not rendering properly when top of page is scrolled to
-   		if(scrollTop === 0 ){
+   		if(scrollTop === 0){
    			midGround.css({ 'transform' : 'translateY(0px)' })
    			homepageText.css({ 'transform'	: 'translateY(0px)' })
    		}

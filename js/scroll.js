@@ -71,7 +71,7 @@ BOUNDLESS.Scroll = Backbone.View.extend({
   		homepageTextDistance = Math.abs(scrollAmount / 1);
 
 
-  	if(parentSlide.hasClass('current')) {
+  	if(parentSlide.hasClass('current') && !this.$MobileCheck) {
 
   		var distanceToTop = scrollAmount / 4,
   			bgPos = "center " + distanceToTop + "px";
@@ -87,14 +87,14 @@ BOUNDLESS.Scroll = Backbone.View.extend({
   		})
 
   		// Fade in and out the homepage text [ Could be done with class switch? ]
-        if(scrollTop <10 && !this.$MobileCheck ){
+        if(scrollTop <10){
           	homepageText.fadeIn("slow");
   		  } else if ( !this.$MobileCheck ) {
           	homepageText.fadeOut("slow");
    		 }
 
    		// Fixes scrollTop not rendering properly when top of page is scrolled to
-   		if(scrollTop === 0 ){
+   		if(scrollTop === 0){
    			midGround.css({ 'transform' : 'translateY(0px)' })
    			homepageText.css({ 'transform'	: 'translateY(0px)' })
    		}

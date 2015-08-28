@@ -181,7 +181,7 @@ BOUNDLESS.Map = Backbone.View.extend({
       // mapTypeControl : false
     },
     icon : {
-      url : 'wp-content/themes/be-boundless/less/svg/map-marker-dark.png',
+      url : $(window).width() < 768 ? 'wp-content/themes/be-boundless/less/svg/map-dot.png' : 'wp-content/themes/be-boundless/less/svg/map-marker-dark.png',
       size : new google.maps.Size(85, 85),
       origin: new google.maps.Point(0,0),
       anchor: new google.maps.Point( 42.5, 42.5 )
@@ -266,8 +266,11 @@ BOUNDLESS.Map = Backbone.View.extend({
       marker.setTitle( information.get('title') )
       //marker.setText( information.get('text') )
       marker.setMap( this.map )
-      marker.setIcon( _.first( information.get('thumb') ) || this.settings.icon )
-
+      if ($(window).width() < 768 ) {
+        marker.setIcon( this.settings.icon )
+      } else {
+        marker.setIcon( _.first( information.get('thumb') ) || this.settings.icon )
+      }
       marker.set( 'information', information )
 
       this.markers[ information.get('title') ] = marker
