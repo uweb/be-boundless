@@ -1836,12 +1836,12 @@ BOUNDLESS.Scroll = Backbone.View.extend({
 
   	}
 
-        if ( $('#tagboard').data().position < $(window).scrollTop() )
-        {
-          $('.tagboard-embed').css( {'overflow': 'scroll', 'height': 1000} )
-        } else {
-          $('.tagboard-embed').css( {'overflow': 'hidden', 'height': 1000 } )
-        }
+        // if ( $('#tagboard').data().position < $(window).scrollTop() )
+        // {
+        //   $('.tagboard-embed').css( {'overflow': 'scroll', 'height': 1000} )
+        // } else {
+        //   $('.tagboard-embed').css( {'overflow': 'hidden', 'height': 1000 } )
+        // }
 
 
   }
