@@ -26,8 +26,8 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   '<div class="container">' +
     '<ul id="grid" class="masonry">' +
     '<% _.each( images, function( image ) { %> ' +
-     '<li class="segue" ><a href="<%= image.link %>"><img src="<%= image.images.standard_resolution.url %>" height="<%= image.images.standard_resolution.height %>" width="<%= image.images.standard_resolution.width %>" /></a>' +
-    ' <% }) %>' + 
+     '<li class="segue" ><a href="<%= image.link %>" target="_blank" title="A UW instagram image"><img src="<%= image.images.standard_resolution.url %>" height="<%= image.images.standard_resolution.height %>" width="<%= image.images.standard_resolution.width %>" /></a>' +
+    ' <% }) %>' +
     '</ul>' +
   '</div>',
 
@@ -198,7 +198,7 @@ BOUNDLESS.Gallery.Instagram = Backbone.Collection.extend({
         access_token : "201177297.467ede5.d8b1026bbfa741fc8c8d2b391de72fb4",
         client_id : "d9d55d56f8814f8e83b6492803e9b773",
         user_id : 201177297,
-        count: 40
+        count: 6
     },
 
     url: function () {

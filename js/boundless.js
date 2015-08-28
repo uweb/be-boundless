@@ -584,7 +584,6 @@ BOUNDLESS.begin = function() {
     BOUNDLESS.page[ page.get('slug') ] = new BOUNDLESS.Page({ el: '.page .' + page.get('slug') , model: page })
   })
   BOUNDLESS.analytics = new BOUNDLESS.Analytics()
-  BOUNDLESS.video = new BOUNDLESS.Video({slug: 'boundless'})
 }
 
 BOUNDLESS.initialize = function()
@@ -594,9 +593,34 @@ BOUNDLESS.initialize = function()
   // todo: incoorporate into MV*
   jQuery('ul.uw-select').on( 'click' , 'li.inactive', BOUNDLESS.map.handleClickListItems )
   jQuery( 'a.play').click( function() {
-        var video = new BOUNDLESS.Video({ slug: 'boundless' })
-        return false;
+    $('#boundless-video').hide()
+    var player = new YT.Player( 'boundless-video', {
+      videoId : '0h33Y9Zw8oQ',
+      player_vars : {
+        'rel' : 0,
+        'controls' : 0,
+        'modestbranding' : 1,
+        'wmode' : 'transparent'
+      },
+      width : $(window).width(),
+      height: $(window).height(),
+      events : {
+        onReady :  function( event ) {
+          event.target.playVideo()
+          $('#boundless-video').hide().fadeIn()
+          $('#close-boundless-video').show()
+        }
+      }
+    })
+    return false;
   } )
+
+  $('#close-boundless-video').click( function() {
+    $('#boundless-video').fadeOut(function() {
+      $(this).replaceWith('<div id="boundless-video"/>')
+    })
+    $(this).hide()
+  })
 }
 
 jQuery(document).ready( BOUNDLESS.begin )
@@ -1013,7 +1037,7 @@ BOUNDLESS.Map = Backbone.View.extend({
   // tagName : 'div',
 
   listItems :
-      '<div class="map-navigator"><h2 class="map-title">Campus Icons and Hidden Gems</h2>' +
+      '<div class="map-navigator"><h2 class="map-title">Seattle landmarks</h2>' +
       '<select class="points-of-interest uw-select">' +
       '<% _.each( points, function(point) { %>' +
         '<option data-marker="<%= point.title %>"><span><%= point.title  %></span>' +
@@ -1375,8 +1399,8 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   '<div class="container">' +
     '<ul id="grid" class="masonry">' +
     '<% _.each( images, function( image ) { %> ' +
-     '<li class="segue" ><a href="<%= image.link %>"><img src="<%= image.images.standard_resolution.url %>" height="<%= image.images.standard_resolution.height %>" width="<%= image.images.standard_resolution.width %>" /></a>' +
-    ' <% }) %>' + 
+     '<li class="segue" ><a href="<%= image.link %>" target="_blank" title="A UW instagram image"><img src="<%= image.images.standard_resolution.url %>" height="<%= image.images.standard_resolution.height %>" width="<%= image.images.standard_resolution.width %>" /></a>' +
+    ' <% }) %>' +
     '</ul>' +
   '</div>',
 
@@ -1547,7 +1571,7 @@ BOUNDLESS.Gallery.Instagram = Backbone.Collection.extend({
         access_token : "201177297.467ede5.d8b1026bbfa741fc8c8d2b391de72fb4",
         client_id : "d9d55d56f8814f8e83b6492803e9b773",
         user_id : 201177297,
-        count: 40
+        count: 6
     },
 
     url: function () {
@@ -1721,9 +1745,7 @@ BOUNDLESS.Scroll = Backbone.View.extend({
   initialize : function( options )
   {
 
-  	// _.bindAll(this,'dotNext','dotPrev')
-
-  	this.$BoundlessSlide = $('#boundless-slide')
+    this.$BoundlessSlide = $('#boundless-slide')
 
     this.$MobileCheck =  $('#dots').css('display') == 'none' ? true : false;
 
@@ -1812,12 +1834,12 @@ BOUNDLESS.Scroll = Backbone.View.extend({
 
   	}
 
-        if ( $('#tagboard').data().position < $(window).scrollTop() )
-        {
-          $('.tagboard-embed').css( {'overflow': 'scroll', 'height': 1000} )
-        } else {
-          $('.tagboard-embed').css( {'overflow': 'hidden', 'height': 1000 } )
-        }
+        // if ( $('#tagboard').data().position < $(window).scrollTop() )
+        // {
+        //   $('.tagboard-embed').css( {'overflow': 'scroll', 'height': 1000} )
+        // } else {
+        //   $('.tagboard-embed').css( {'overflow': 'hidden', 'height': 1000 } )
+        // }
 
 
   }
