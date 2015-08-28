@@ -24,10 +24,8 @@
             <?php while( have_posts() ) :       the_post(); ?>
 
                 <div class="homepage-text">
-
-                    <a class="play" href="#!/video/boundless"></a>
-
                    <h1>  <?php the_title(); ?></h1>
+                   <a class="play" href="#!/video/boundless"></a>
                    <!-- <span class="udub-slant"><span></span></span> -->
                     <p><?php the_content(); ?></p>
                 </div>
@@ -35,7 +33,7 @@
             <?php endwhile; ?>
 
         <p class="scroll-more"></p>
-        <a href="#" class="visit-button">Visit</a>
+        <a href="#visit" class="visit-button">Visit</a>
     </li>
 
     <?php echo  Navigation::get_navigation_slides() ?>
