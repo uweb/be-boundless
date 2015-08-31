@@ -222,7 +222,7 @@ class Navigation
         echo "<li id=\"$route\" class=\"slide\"><div class=\"map\"></div></li>";
       } else {
         if ($type == 'page') {
-          $pageid = get_page_by_title($nav->post_title)->ID;
+          $pageid = get_page_by_path($nav->post_title)->ID;
           $whitetext = get_post_meta( $pageid, 'textcolor', true ) ;
           if ( !empty($whitetext) ){
             $textcolor = "white-text";
