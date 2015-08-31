@@ -67,5 +67,5 @@ BOUNDLESS.initialize = function()
 }
 
 
-google.maps.event.addDomListener( window, 'load', BOUNDLESS.begin )
+jQuery(document).ready( BOUNDLESS.begin )
 
