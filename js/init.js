@@ -32,7 +32,8 @@ BOUNDLESS.initialize = function()
 {
   BOUNDLESS.search = new BOUNDLESS.Search()
   BOUNDLESS.scroll = new BOUNDLESS.Scroll()
-  // todo: incoorporate into MV*
+
+  // Simple scripts for the map dropdown and the video player
   jQuery('ul.uw-select').on( 'click' , 'li.inactive', BOUNDLESS.map.handleClickListItems )
   jQuery( 'a.play').click( function() {
     $('#boundless-video').hide()
@@ -65,5 +66,6 @@ BOUNDLESS.initialize = function()
   })
 }
 
-jQuery(document).ready( BOUNDLESS.begin )
+
+google.maps.event.addDomListener( window, 'load', BOUNDLESS.begin )
 

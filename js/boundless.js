@@ -590,7 +590,8 @@ BOUNDLESS.initialize = function()
 {
   BOUNDLESS.search = new BOUNDLESS.Search()
   BOUNDLESS.scroll = new BOUNDLESS.Scroll()
-  // todo: incoorporate into MV*
+
+  // Simple scripts for the map dropdown and the video player
   jQuery('ul.uw-select').on( 'click' , 'li.inactive', BOUNDLESS.map.handleClickListItems )
   jQuery( 'a.play').click( function() {
     $('#boundless-video').hide()
@@ -623,7 +624,8 @@ BOUNDLESS.initialize = function()
   })
 }
 
-jQuery(document).ready( BOUNDLESS.begin )
+
+google.maps.event.addDomListener( window, 'load', BOUNDLESS.begin )
 
 ;
 BOUNDLESS.Beginning = Backbone.View.extend({
@@ -1068,8 +1070,14 @@ BOUNDLESS.Map = Backbone.View.extend({
       zoom: 17,
       scrollwheel: false,
       panControl: false,
-      zoomControl:false,
+      zoomControl: true,
+      zoomControlOptions : {
+        style: google.maps.ZoomControlStyle.SMALL,
+        position: google.maps.ControlPosition.LEFT_CENTER
+      },
+      scaleControl : true,
       mapTypeControl: false,
+      streetViewControl : false,
       draggable : ( $(window).width() > 768 ),
       center: new google.maps.LatLng( 47.653851681095, -122.30780562698 ),
       minZoom:1,
@@ -1755,6 +1763,10 @@ BOUNDLESS.Scroll = Backbone.View.extend({
       			dots = $('#dots li')
 
       			dots.removeClass('current-dot').eq(currentSlide).addClass('current-dot')
+
+                      // Make sure the map fits the full screen tile
+                      google.maps.event.trigger( BOUNDLESS.map.map, 'resize' )
+
         	},
         	prevSlide: function() {
     			// Figure out how to roll this into one function
