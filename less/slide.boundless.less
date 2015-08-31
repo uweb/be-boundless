@@ -54,13 +54,39 @@
     }
 
     .visit-button {
-      position: fixed;
+      position: absolute;
+      display: block;
       left: 0;
       bottom: 0;
       width: 238px;
-      background: url(img/visit.png) no-repeat no-repeat 0 0;
       height: 238px;
       text-indent: -9999px;
+      &:after { 
+        content: "";
+        display: block;
+        position: absolute;
+        left: 40px;
+        top: 120px;
+        width: 78px;
+        height: 100px;
+        background: url(less/svg/boundless.svg) no-repeat -515px 0;
+        .transition(background-position 0.5s ease);
+      }
+      &:hover:after {
+        background-position: -515px -82px;
+      }
+      &:before {
+        content: "";
+        display: block;
+        background-color: @purple;
+        position: absolute;
+        left: -340px;
+        right: 0;
+        width: 500px;
+        height: 450px;
+        .rotate(45deg);
+      }
+
     }
 
 // The message text that displayed when loaded
@@ -196,7 +222,7 @@
     }
     a.play {
       .transform-origin(0 0);
-      .scale(.6);
+      .scale(.7);
       position: static;
       display: block;
       height: 100px;
