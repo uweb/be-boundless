@@ -35,7 +35,7 @@ class Boundless
       wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js');
 
       // Google Maps API
-      wp_register_script( 'google-maps', 'https://maps.googleapis.com/maps/api/js?libraries=places' );
+      wp_register_script( 'google-maps', 'https://maps.googleapis.com/maps/api/js?signed_in=true' );
 
       // YouTube iFrame API
       wp_register_script( 'youtube-iframe-api', 'https://www.youtube.com/player_api' );

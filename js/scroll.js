@@ -24,6 +24,10 @@ BOUNDLESS.Scroll = Backbone.View.extend({
       			dots = $('#dots li')
 
       			dots.removeClass('current-dot').eq(currentSlide).addClass('current-dot')
+
+                      // Make sure the map fits the full screen tile
+                      google.maps.event.trigger( BOUNDLESS.map.map, 'resize' )
+
         	},
         	prevSlide: function() {
     			// Figure out how to roll this into one function

@@ -590,7 +590,8 @@ BOUNDLESS.initialize = function()
 {
   BOUNDLESS.search = new BOUNDLESS.Search()
   BOUNDLESS.scroll = new BOUNDLESS.Scroll()
-  // todo: incoorporate into MV*
+
+  // Simple scripts for the map dropdown and the video player
   jQuery('ul.uw-select').on( 'click' , 'li.inactive', BOUNDLESS.map.handleClickListItems )
   jQuery( 'a.play').click( function() {
     $('#boundless-video').hide()
@@ -622,6 +623,7 @@ BOUNDLESS.initialize = function()
     $(this).hide()
   })
 }
+
 
 jQuery(document).ready( BOUNDLESS.begin )
 
@@ -1068,8 +1070,14 @@ BOUNDLESS.Map = Backbone.View.extend({
       zoom: 17,
       scrollwheel: false,
       panControl: false,
-      zoomControl:false,
+      zoomControl: true,
+      zoomControlOptions : {
+        style: google.maps.ZoomControlStyle.SMALL,
+        position: google.maps.ControlPosition.LEFT_CENTER
+      },
+      scaleControl : true,
       mapTypeControl: false,
+      streetViewControl : false,
       draggable : ( $(window).width() > 768 ),
       center: new google.maps.LatLng( 47.653851681095, -122.30780562698 ),
       minZoom:1,
@@ -1228,12 +1236,9 @@ BOUNDLESS.Map = Backbone.View.extend({
     _.bindAll( this,
       'delegateGoogleMapEvents',
       'handleClickListItems',
-      'hide',
-      'googleMapLoaded',
       'putMarkersOnMap',
       'removeInfoWindows',
       'render',
-      'segueIn',
       'showOverlays'
     )
     this.points = new BOUNDLESS.Map.Points( POINTS )
@@ -1274,8 +1279,8 @@ BOUNDLESS.Map = Backbone.View.extend({
   // Delegate the Google map events to the Backbone view
   delegateGoogleMapEvents : function()
   {
-    google.maps.event.addListenerOnce( this.map, "tilesloaded", this.googleMapLoaded )
     google.maps.event.addListener( this.map, "click", this.removeInfoWindows )
+    google.maps.event.addListener( this.map, "zoom_changed", this.removeInfoWindows )
     google.maps.event.addListenerOnce( this.map, "idle", function() {
       BOUNDLESS.app.set( 'map', true )
     })
@@ -1294,11 +1299,7 @@ BOUNDLESS.Map = Backbone.View.extend({
       marker.setTitle( information.get('title') )
       //marker.setText( information.get('text') )
       marker.setMap( this.map )
-      if ($(window).width() < 768 ) {
-        marker.setIcon( this.settings.icon )
-      } else {
-        marker.setIcon( _.first( information.get('thumb') ) || this.settings.icon )
-      }
+      marker.setIcon( this.settings.icon )
       marker.set( 'information', information )
 
       this.markers[ information.get('title') ] = marker
@@ -1321,31 +1322,8 @@ BOUNDLESS.Map = Backbone.View.extend({
 
   removeInfoWindows : function()
   {
-    // TODO: easy
     $('.infowindow').removeClass('open')
   },
-
-  segueIn : function()
-  {
-    BOUNDLESS.router.trigger('newViewLoaded')
-    this.$el.hide().css('z-index', 0).fadeIn( BOUNDLESS.AnimationDuration )
-  },
-
-  show : function ()
-  {
-    if ( this.googleMapIsLoaded ) this.segueIn() },
-
-  hide : function() {
-    // Segue between map and main screen
-    this.$el.fadeOut( 1000, function() {
-      $(this).css('z-index', 0).hide() }
-     )
-    },
-
-  // Segues the initial load of the map so the Google Map isn't loading tiles while transition from the main page
-  googleMapLoaded: function() {
-    this.trigger('slideloaded');
-  }
 
 })
 
@@ -1355,20 +1333,11 @@ BOUNDLESS.Map.Point = Backbone.Model.extend({})
 // Map Point Collection
 BOUNDLESS.Map.Points = Backbone.Collection.extend({
 
-  // url : '?json=map_point.get_map_points&count=-1',
-
   model : BOUNDLESS.Map.Point,
 
-  initialize : function()
-  {
-    // this.on( 'error', this.error )
-    // this.fetch()
-  },
+  initialize : function() {},
 
-  error: function( error )
-  {
-    // console.error('There was an error retrieving the map points.')
-  }
+  error: function( error ) {}
 
 })
 ;// Gallery View
@@ -1759,6 +1728,10 @@ BOUNDLESS.Scroll = Backbone.View.extend({
       			dots = $('#dots li')
 
       			dots.removeClass('current-dot').eq(currentSlide).addClass('current-dot')
+
+                      // Make sure the map fits the full screen tile
+                      google.maps.event.trigger( BOUNDLESS.map.map, 'resize' )
+
         	},
         	prevSlide: function() {
     			// Figure out how to roll this into one function
