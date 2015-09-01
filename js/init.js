@@ -38,7 +38,7 @@ BOUNDLESS.initialize = function()
   jQuery( 'a.play').click( function() {
     $('#boundless-video').hide()
     var player = new YT.Player( 'boundless-video', {
-      videoId : '0h33Y9Zw8oQ',
+      videoId : '0GFF0LcHfec',
       player_vars : {
         'rel' : 0,
         'controls' : 0,

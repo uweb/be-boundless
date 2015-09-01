@@ -5,6 +5,7 @@
     </div>
 
     <ul id="dots" class="navigation">
+        <li class="active"><a href="#boundless-slide"></a></li>
       <?php echo  Navigation::get_navigation() ?>
     </ul>
 
@@ -48,4 +49,5 @@
 
  </ul>
 
-<?php get_template_part( 'footer', 'app' ) ?>
+<?php //get_template_part( 'footer', 'app' ) ?>
+<?php get_footer(); ?>
