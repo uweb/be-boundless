@@ -5,6 +5,7 @@
     </div>
 
     <ul id="dots" class="navigation">
+        <li class="active"><a href="#boundless-slide"></a></li>
       <?php echo  Navigation::get_navigation() ?>
     </ul>
 
