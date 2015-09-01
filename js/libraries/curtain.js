@@ -58,7 +58,7 @@
             $.iPhone = ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)));
             $.iPad = ((navigator.userAgent.match(/iPad/i)));
             $.iOs4 = (/OS [1-4]_[0-9_]+ like Mac OS X/i.test(navigator.userAgent));
-            
+
             if($.iPhone || $.iPad || $.Android || self.options.disabled){
                 this.options.mobile = true;
                 this.$li.css({position:'relative'});
@@ -97,7 +97,7 @@
                 self.$li.eq(0).addClass('current');
 
                 self.setCache();
-                
+
                 if(!self.options.mobile){
                     if(self.$li.eq(1).length)
                         self.$li.eq(1).nextAll().addClass('hidden');
@@ -133,7 +133,7 @@
                     if(!self.$current.find('.current-step').length){
                         self.$step.eq(0).addClass('current-step');
                     }
-                        
+
                     var $nextStep = (direction === 'up') ? self.$current.find('.current-step').prev('.step') : self.$current.find('.current-step').next('.step');
 
                     if($nextStep.length) {
@@ -165,7 +165,7 @@
                     scrollTop:self.$elDatas[index]['data-position'] || null
                 }, (speed <= self.options.scrollSpeed) ? self.options.scrollSpeed : speed, this.options.easing);
             }
-            
+
         },
         scrollEvent: function() {
             var self = this,
@@ -173,17 +173,17 @@
 
             if(docTop < self.currentP && self.currentIndex > 0){
                 // Scroll to top
-                self._ignoreHashChange = true;
+                // self._ignoreHashChange = true;
 
                 if(self.$current.prev().attr('id'))
                     self.setHash(self.$current.prev().attr('id'));
-                
+
                 self.$current
                     .removeClass('current')
                     .css( (self.webkit) ? {'-webkit-transform': 'translateY(0px) translateZ(0)'} : {marginTop: 0} )
                     .nextAll().addClass('hidden').end()
                     .prev().addClass('current').removeClass('hidden');
-  
+
                 self.setCache();
                 self.options.prevSlide();
 
@@ -210,7 +210,7 @@
                         });
                     }
                 }
-                
+
                 // If there is a step element in the current panel
                 if(self.$stepLength){
                     $.each(self.$step, function(i,el){
@@ -245,7 +245,7 @@
 
             } else {
                 // Scroll bottom
-                self._ignoreHashChange = true;
+                // self._ignoreHashChange = true;
                 if(self.$current.next().attr('id'))
                     self.setHash(self.$current.next().attr('id'));
 
@@ -307,7 +307,7 @@
                 levelHeight = 0,
                 cover = false,
                 height = null;
-            
+
             self.$windowHeight = self.$window.height();
 
             this.$li.each(function(index) {
@@ -331,7 +331,7 @@
                     $self.css({minHeight: height, zIndex: 999-index})
                         .attr('data-height',height)
                         .attr('data-position',levelHeight);
-                    
+
                      self.$elDatas[$self.index()] = {
                         'data-height': parseInt(height, 10),
                         'data-position': parseInt(levelHeight, 10)
@@ -364,7 +364,7 @@
                     self.scrollEvent();
                 });
             }
-            
+
             if(self.options.enableKeys) {
                 self.$document.on('keydown', function(e){
                     if(e.keyCode === 38 || e.keyCode === 37) {
@@ -411,7 +411,7 @@
                 $(self.options.curtainLinks).on('click', function(e){
                     e.preventDefault();
                     var href = $(this).attr('href');
-                    
+
                     if(!self.isHashIsOnList(href.substring(1)) && position)
                         return false;
                     var position = self.$elDatas[$(href).index()]['data-position'] || null;
@@ -439,7 +439,7 @@
                var obj = this.$elDatas[key];
                h += obj['data-height'];
             }
-  
+
             this.options.bodyHeight = h;
             $('body').height(h);
         },
