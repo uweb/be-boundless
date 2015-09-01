@@ -1044,8 +1044,7 @@ BOUNDLESS.Map = Backbone.View.extend({
       '<% _.each( points, function(point) { %>' +
         '<option data-marker="<%= point.title %>"><span><%= point.title  %></span>' +
       '<% }) %>' +
-      '</select>' +
-      '<a class="explore-more" href="https://www.uw.edu/maps">Explore more</a></div>',
+      '</select>',
 
 //  overlays: '<h2 class="map-title">Campus Icons and Hidden Gems</h2>' +
 //            '<a class="explore-more" href="https://www.uw.edu/maps">Explore more</a>',
