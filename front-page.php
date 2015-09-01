@@ -49,4 +49,5 @@
 
  </ul>
 
-<?php get_template_part( 'footer', 'app' ) ?>
+<?php //get_template_part( 'footer', 'app' ) ?>
+<?php get_footer(); ?>
