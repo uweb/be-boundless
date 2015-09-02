@@ -1020,7 +1020,7 @@ BOUNDLESS.Page = Backbone.View.extend({
 
   render : function() {
     this.$el.html( _.template( this.template, { page: this.model.toJSON() } ) )
-    this.$el.css('background', 'url(' + this.model.get('image') + ')' )
+    if( this.model.get('image') ) { this.$el.css('background', 'url(' + this.model.get('image') + ')' ) }
   }
 
 })
