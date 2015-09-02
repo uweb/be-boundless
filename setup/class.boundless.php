@@ -79,6 +79,7 @@ class Boundless
     {
       $result = new stdClass();
       $result->title = $point->post_title;
+      $result->slug = $point->post_name;
       $result->text = $point->post_excerpt;
       $result->thumb = apply_filters('wp_prepare_attachment_for_js', apply_filters( 'remove_cms', wp_get_attachment_image_src( get_post_thumbnail_id( $point->ID ), array( 50, 50 ) )) );
       $result->image = apply_filters('wp_prepare_attachment_for_js', apply_filters( 'remove_cms', wp_get_attachment_image_src( get_post_thumbnail_id( $point->ID ), 'large' )) );
