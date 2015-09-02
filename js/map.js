@@ -186,10 +186,18 @@ BOUNDLESS.Map = Backbone.View.extend({
       // mapTypeControl : false
     },
     icon : {
-      url : $(window).width() < 768 ? 'wp-content/themes/be-boundless/less/svg/map-dot.png' : 'wp-content/themes/be-boundless/less/svg/map-marker-dark.png',
-      size : new google.maps.Size(85, 85),
-      origin: new google.maps.Point(0,0),
-      anchor: new google.maps.Point( 42.5, 42.5 )
+      purple : {
+        url : $(window).width() < 768 ? 'wp-content/themes/be-boundless/less/svg/map-dot.png' : 'wp-content/themes/be-boundless/less/svg/map-marker-dark.png',
+        size : new google.maps.Size(85, 85),
+        origin: new google.maps.Point(0,0),
+        anchor: new google.maps.Point( 42.5, 42.5 )
+      },
+      gold : {
+        url : $(window).width() < 768 ? 'wp-content/themes/be-boundless/less/svg/map-dot.png' : 'wp-content/themes/be-boundless/less/svg/map-marker-gold.png',
+        size : new google.maps.Size(85, 85),
+        origin: new google.maps.Point(0,0),
+        anchor: new google.maps.Point( 42.5, 42.5 )
+      }
     },
     marker: {
       // animation: google.maps.Animation.DROP,
@@ -268,7 +276,8 @@ BOUNDLESS.Map = Backbone.View.extend({
       marker.setTitle( information.get('title') )
       //marker.setText( information.get('text') )
       marker.setMap( this.map )
-      marker.setIcon( this.settings.icon )
+
+      marker.setIcon( information.get('slug') === 'uw' ? this.settings.icon.gold : this.settings.icon.purple  )
       marker.set( 'information', information )
 
       this.markers[ information.get('title') ] = marker
