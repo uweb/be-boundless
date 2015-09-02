@@ -1266,6 +1266,7 @@ BOUNDLESS.Map = Backbone.View.extend({
     this.map.fitBounds(this.bounds);
     this.showOverlays();
 
+
   },
 
   // Displays a list of the Points of Interest
@@ -1276,7 +1277,7 @@ BOUNDLESS.Map = Backbone.View.extend({
 
   handleClickListItems: function( e )
   {
-      var markerTitle = $(e.target).html()
+      var markerTitle = $(e.target).data().slug
           , marker = this.markers[ markerTitle ]
 
       $(e.currentTarget).addClass('active').siblings().removeClass('active')
@@ -1308,6 +1309,7 @@ BOUNDLESS.Map = Backbone.View.extend({
       marker.setMap( this.map )
 
       marker.setIcon( information.get('slug') === 'uw' ? this.settings.icon.gold : this.settings.icon.purple  )
+
       marker.set( 'information', information )
 
       this.markers[ information.get('title') ] = marker
@@ -1722,23 +1724,30 @@ BOUNDLESS.Scroll = Backbone.View.extend({
   initialize : function( options )
   {
 
+    var intializeMap = true;
     this.$BoundlessSlide = $('#boundless-slide')
 
     this.$MobileCheck =  $('#dots').css('display') == 'none' ? true : false;
-
-
 
 	$('.curtains').curtain({
            curtainLinks : '#dots a',
         	nextSlide: function(){
       			// Figure out how to roll this into one function
-      			var currentSlide = $('.slide.current').index(),
+      			var currentSlideElement = $('.slide.current'),
+                      currentSlide = currentSlideElement.index()
       			dots = $('#dots li')
 
       			dots.removeClass('current-dot').eq(currentSlide).addClass('current-dot')
 
+                      if ( currentSlideElement.next().attr('id') === 'map' && intializeMap )
+                      {
                       // Make sure the map fits the full screen tile
-                      google.maps.event.trigger( BOUNDLESS.map.map, 'resize' )
+                        var initialMarker = BOUNDLESS.map.points.findWhere({ slug: 'uw' })
+                        BOUNDLESS.map.handleClickMarker( BOUNDLESS.map.markers[ initialMarker.get( 'title' )] )
+                        google.maps.event.trigger( BOUNDLESS.map.map, 'resize' )
+                        intializeMap = false;
+                      }
+
 
         	},
         	prevSlide: function() {

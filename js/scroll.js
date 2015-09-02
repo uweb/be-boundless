@@ -10,23 +10,30 @@ BOUNDLESS.Scroll = Backbone.View.extend({
   initialize : function( options )
   {
 
+    var intializeMap = true;
     this.$BoundlessSlide = $('#boundless-slide')
 
     this.$MobileCheck =  $('#dots').css('display') == 'none' ? true : false;
-
-
 
 	$('.curtains').curtain({
            curtainLinks : '#dots a',
         	nextSlide: function(){
       			// Figure out how to roll this into one function
-      			var currentSlide = $('.slide.current').index(),
+      			var currentSlideElement = $('.slide.current'),
+                      currentSlide = currentSlideElement.index()
       			dots = $('#dots li')
 
       			dots.removeClass('current-dot').eq(currentSlide).addClass('current-dot')
 
+                      if ( currentSlideElement.next().attr('id') === 'map' && intializeMap )
+                      {
                       // Make sure the map fits the full screen tile
-                      google.maps.event.trigger( BOUNDLESS.map.map, 'resize' )
+                        var initialMarker = BOUNDLESS.map.points.findWhere({ slug: 'uw' })
+                        BOUNDLESS.map.handleClickMarker( BOUNDLESS.map.markers[ initialMarker.get( 'title' )] )
+                        google.maps.event.trigger( BOUNDLESS.map.map, 'resize' )
+                        intializeMap = false;
+                      }
+
 
         	},
         	prevSlide: function() {

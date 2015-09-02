@@ -236,6 +236,7 @@ BOUNDLESS.Map = Backbone.View.extend({
     this.map.fitBounds(this.bounds);
     this.showOverlays();
 
+
   },
 
   // Displays a list of the Points of Interest
@@ -246,7 +247,7 @@ BOUNDLESS.Map = Backbone.View.extend({
 
   handleClickListItems: function( e )
   {
-      var markerTitle = $(e.target).html()
+      var markerTitle = $(e.target).data().slug
           , marker = this.markers[ markerTitle ]
 
       $(e.currentTarget).addClass('active').siblings().removeClass('active')
@@ -278,6 +279,7 @@ BOUNDLESS.Map = Backbone.View.extend({
       marker.setMap( this.map )
 
       marker.setIcon( information.get('slug') === 'uw' ? this.settings.icon.gold : this.settings.icon.purple  )
+
       marker.set( 'information', information )
 
       this.markers[ information.get('title') ] = marker
