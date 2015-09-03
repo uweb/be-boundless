@@ -11,7 +11,8 @@ BOUNDLESS.Map = Backbone.View.extend({
   listItems :
       '<div class="map-navigator"><h2 class="map-title">Seattle landmarks</h2>' +
       '<select class="points-of-interest uw-select">' +
-      '<% _.each( points, function(point) { %>' +
+        '<option data-marker="<%= _.findWhere( points, { slug : "uw" }).title  %>"><span><%= _.findWhere( points, { slug : "uw" }).title   %></span>' +
+      '<% _.each( _.sortBy( points, "title"), function(point) { %>' +
         '<option data-marker="<%= point.title %>"><span><%= point.title  %></span>' +
       '<% }) %>' +
       '</select>',
