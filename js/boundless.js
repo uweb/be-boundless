@@ -418,7 +418,7 @@
 
                     if(!self.isHashIsOnList(href.substring(1)) && position)
                         return false;
-                    var position = self.$elDatas[$(href).index()]['data-position'] || null;
+                    var position = self.$elDatas[$(href).index()]['data-position'] + 5 || null;
 
                     if(position){
                         self.scrollEl.animate({
