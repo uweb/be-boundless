@@ -1077,7 +1077,7 @@ BOUNDLESS.Map = Backbone.View.extend({
       scaleControl : true,
       mapTypeControl: false,
       streetViewControl : false,
-      draggable : true,
+      draggable : ($(window).width() > 768),
       center: new google.maps.LatLng( 47.653851681095, -122.30780562698 ),
       minZoom:1,
       maxZoom:19,
