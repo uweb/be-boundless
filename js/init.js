@@ -58,6 +58,10 @@ BOUNDLESS.initialize = function()
     return false;
   } )
 
+  jQuery( '#dots').on('click', 'a', function( e ) {
+    window.location.hash = $(e.target).attr('href')
+  })
+
   $('#close-boundless-video').click( function() {
     $('#boundless-video').fadeOut(function() {
       $(this).replaceWith('<div id="boundless-video"/>')
