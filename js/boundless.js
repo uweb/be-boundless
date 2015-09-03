@@ -1223,7 +1223,7 @@ BOUNDLESS.Map = Backbone.View.extend({
         anchor: new google.maps.Point( 42.5, 42.5 )
       },
       gold : {
-        url : $(window).width() < 768 ? 'wp-content/themes/be-boundless/less/svg/map-dot-gold.png' : 'wp-content/themes/be-boundless/less/svg/map-marker-gold-light.png',
+        url : $(window).width() < 768 ? 'wp-content/themes/be-boundless/less/svg/map-dot.png' : 'wp-content/themes/be-boundless/less/svg/map-marker-gold-light.png',
         size : new google.maps.Size(85, 85),
         origin: new google.maps.Point(0,0),
         anchor: new google.maps.Point( 42.5, 42.5 )
@@ -1260,7 +1260,6 @@ BOUNDLESS.Map = Backbone.View.extend({
     this.delegateGoogleMapEvents()
 
     this.infowindow = new BOUNDLESS.Map.InfoWindow( this.map )
-    $('.infowindow .image').click( this.removeInfoWindows() )
 
     this.bounds = new google.maps.LatLngBounds()
     this.points.each( this.putMarkersOnMap );
@@ -1288,7 +1287,8 @@ BOUNDLESS.Map = Backbone.View.extend({
   // Delegate the Google map events to the Backbone view
   delegateGoogleMapEvents : function()
   {
-    google.maps.event.addListener( this.map, "mousedown", this.removeInfoWindows )
+    google.maps.event.addListener( this.map, "click", this.removeInfoWindows )
+    google.maps.event.addListener( this.map, "dragstart", this.removeInfoWindows )
     google.maps.event.addListener( this.map, "zoom_changed", this.removeInfoWindows )
     google.maps.event.addListenerOnce( this.map, "idle", function() {
       BOUNDLESS.app.set( 'map', true )
