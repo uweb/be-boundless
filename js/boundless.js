@@ -1260,6 +1260,7 @@ BOUNDLESS.Map = Backbone.View.extend({
     this.delegateGoogleMapEvents()
 
     this.infowindow = new BOUNDLESS.Map.InfoWindow( this.map )
+    $('.infowindow .image').click( this.removeInfoWindows() )
 
     this.bounds = new google.maps.LatLngBounds()
     this.points.each( this.putMarkersOnMap );
