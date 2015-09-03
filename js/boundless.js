@@ -1378,7 +1378,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
 
   templateInstagram :
   '<div class="container">' +
-  '<h4> UW on Instagram</h4>' +
+  '<h4> UW on <a href="https://instagram.com/uofwa/?hl=en" title="Instagram">Instagram</a></h4>' +
     '<ul id="grid" class="masonry">' +
     '<% _.each( images, function( image ) { %> ' +
      '<li class="segue" ><a href="<%= image.link %>" target="_blank" title="A UW instagram image"><img src="<%= image.images.standard_resolution.url %>" height="<%= image.images.standard_resolution.height %>" width="<%= image.images.standard_resolution.width %>" /></a>' +
