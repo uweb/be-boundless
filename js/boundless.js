@@ -1077,7 +1077,7 @@ BOUNDLESS.Map = Backbone.View.extend({
       scaleControl : true,
       mapTypeControl: false,
       streetViewControl : false,
-      draggable : ( $(window).width() > 768 ),
+      draggable : true,
       center: new google.maps.LatLng( 47.653851681095, -122.30780562698 ),
       minZoom:1,
       maxZoom:19,
@@ -1223,7 +1223,7 @@ BOUNDLESS.Map = Backbone.View.extend({
         anchor: new google.maps.Point( 42.5, 42.5 )
       },
       gold : {
-        url : $(window).width() < 768 ? 'wp-content/themes/be-boundless/less/svg/map-dot-gold.png' : 'wp-content/themes/be-boundless/less/svg/map-marker-gold.png',
+        url : $(window).width() < 768 ? 'wp-content/themes/be-boundless/less/svg/map-dot.png' : 'wp-content/themes/be-boundless/less/svg/map-marker-gold-light.png',
         size : new google.maps.Size(85, 85),
         origin: new google.maps.Point(0,0),
         anchor: new google.maps.Point( 42.5, 42.5 )
@@ -1266,6 +1266,7 @@ BOUNDLESS.Map = Backbone.View.extend({
     this.map.fitBounds(this.bounds);
     this.showOverlays();
 
+
   },
 
   // Displays a list of the Points of Interest
@@ -1276,7 +1277,7 @@ BOUNDLESS.Map = Backbone.View.extend({
 
   handleClickListItems: function( e )
   {
-      var markerTitle = $(e.target).html()
+      var markerTitle = $(e.target).data().slug
           , marker = this.markers[ markerTitle ]
 
       $(e.currentTarget).addClass('active').siblings().removeClass('active')
@@ -1308,6 +1309,7 @@ BOUNDLESS.Map = Backbone.View.extend({
       marker.setMap( this.map )
 
       marker.setIcon( information.get('slug') === 'uw' ? this.settings.icon.gold : this.settings.icon.purple  )
+
       marker.set( 'information', information )
 
       this.markers[ information.get('title') ] = marker
@@ -1374,6 +1376,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
 
   templateInstagram :
   '<div class="container">' +
+  '<h4> UW on Instagram</h4>' +
     '<ul id="grid" class="masonry">' +
     '<% _.each( images, function( image ) { %> ' +
      '<li class="segue" ><a href="<%= image.link %>" target="_blank" title="A UW instagram image"><img src="<%= image.images.standard_resolution.url %>" height="<%= image.images.standard_resolution.height %>" width="<%= image.images.standard_resolution.width %>" /></a>' +
@@ -1722,23 +1725,30 @@ BOUNDLESS.Scroll = Backbone.View.extend({
   initialize : function( options )
   {
 
+    var intializeMap = true;
     this.$BoundlessSlide = $('#boundless-slide')
 
     this.$MobileCheck =  $('#dots').css('display') == 'none' ? true : false;
-
-
 
 	$('.curtains').curtain({
            curtainLinks : '#dots a',
         	nextSlide: function(){
       			// Figure out how to roll this into one function
-      			var currentSlide = $('.slide.current').index(),
+      			var currentSlideElement = $('.slide.current'),
+                      currentSlide = currentSlideElement.index()
       			dots = $('#dots li')
 
       			dots.removeClass('current-dot').eq(currentSlide).addClass('current-dot')
 
+                      if ( currentSlideElement.next().attr('id') === 'map' && intializeMap )
+                      {
                       // Make sure the map fits the full screen tile
-                      google.maps.event.trigger( BOUNDLESS.map.map, 'resize' )
+                        var initialMarker = BOUNDLESS.map.points.findWhere({ slug: 'uw' })
+                        BOUNDLESS.map.handleClickMarker( BOUNDLESS.map.markers[ initialMarker.get( 'title' )] )
+                        google.maps.event.trigger( BOUNDLESS.map.map, 'resize' )
+                        intializeMap = false;
+                      }
+
 
         	},
         	prevSlide: function() {
