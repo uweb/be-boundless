@@ -14,6 +14,11 @@ ul.navigation {
       height:15px;
       .box-shadow(1px 1px rgba(0, 0, 0, 0.22));
       position: relative;
+      a {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
       &:before  {
         content: "";
         position: absolute;
@@ -24,7 +29,7 @@ ul.navigation {
         border: 2px solid rgba(232, 232, 232, 0.8);
         z-index: -1;
         border-radius: 100%;
-        .transform-origin(center center);        
+        .transform-origin(center center);
         .transition(all .1s ease-in-out);
       }
       &.current-dot:before  {
