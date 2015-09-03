@@ -1288,6 +1288,7 @@ BOUNDLESS.Map = Backbone.View.extend({
   delegateGoogleMapEvents : function()
   {
     google.maps.event.addListener( this.map, "click", this.removeInfoWindows )
+
     google.maps.event.addListener( this.map, "dragstart", this.removeInfoWindows )
     google.maps.event.addListener( this.map, "zoom_changed", this.removeInfoWindows )
     google.maps.event.addListenerOnce( this.map, "idle", function() {
