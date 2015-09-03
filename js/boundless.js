@@ -1744,7 +1744,6 @@ BOUNDLESS.Scroll = Backbone.View.extend({
 
                       if ( currentSlideElement.next().attr('id') === 'map' && intializeMap )
                       {
-                        $('#gallery').height( $('#gallery').outerHeight() )
                       // Make sure the map fits the full screen tile
                         var initialMarker = BOUNDLESS.map.points.findWhere({ slug: 'uw' })
                         BOUNDLESS.map.handleClickMarker( BOUNDLESS.map.markers[ initialMarker.get( 'title' )] )
