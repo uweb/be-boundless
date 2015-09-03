@@ -1223,7 +1223,7 @@ BOUNDLESS.Map = Backbone.View.extend({
         anchor: new google.maps.Point( 42.5, 42.5 )
       },
       gold : {
-        url : $(window).width() < 768 ? 'wp-content/themes/be-boundless/less/svg/map-dot.png' : 'wp-content/themes/be-boundless/less/svg/map-marker-gold.png',
+        url : $(window).width() < 768 ? 'wp-content/themes/be-boundless/less/svg/map-dot-gold.png' : 'wp-content/themes/be-boundless/less/svg/map-marker-gold.png',
         size : new google.maps.Size(85, 85),
         origin: new google.maps.Point(0,0),
         anchor: new google.maps.Point( 42.5, 42.5 )
