@@ -1077,7 +1077,7 @@ BOUNDLESS.Map = Backbone.View.extend({
       scaleControl : true,
       mapTypeControl: false,
       streetViewControl : false,
-      draggable : true,
+      draggable : ($(window).width() > 768),
       center: new google.maps.LatLng( 47.653851681095, -122.30780562698 ),
       minZoom:1,
       maxZoom:19,
@@ -1288,6 +1288,7 @@ BOUNDLESS.Map = Backbone.View.extend({
   delegateGoogleMapEvents : function()
   {
     google.maps.event.addListener( this.map, "click", this.removeInfoWindows )
+
     google.maps.event.addListener( this.map, "dragstart", this.removeInfoWindows )
     google.maps.event.addListener( this.map, "zoom_changed", this.removeInfoWindows )
     google.maps.event.addListenerOnce( this.map, "idle", function() {
@@ -1377,7 +1378,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
 
   templateInstagram :
   '<div class="container">' +
-  '<h4> UW on Instagram</h4>' +
+  '<h4> UW on <a href="https://instagram.com/uofwa/?hl=en" title="Instagram">Instagram</a></h4>' +
     '<ul id="grid" class="masonry">' +
     '<% _.each( images, function( image ) { %> ' +
      '<li class="segue" ><a href="<%= image.link %>" target="_blank" title="A UW instagram image"><img src="<%= image.images.standard_resolution.url %>" height="<%= image.images.standard_resolution.height %>" width="<%= image.images.standard_resolution.width %>" /></a>' +

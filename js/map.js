@@ -47,7 +47,7 @@ BOUNDLESS.Map = Backbone.View.extend({
       scaleControl : true,
       mapTypeControl: false,
       streetViewControl : false,
-      draggable : true,
+      draggable : ($(window).width() > 768),
       center: new google.maps.LatLng( 47.653851681095, -122.30780562698 ),
       minZoom:1,
       maxZoom:19,
@@ -258,6 +258,7 @@ BOUNDLESS.Map = Backbone.View.extend({
   delegateGoogleMapEvents : function()
   {
     google.maps.event.addListener( this.map, "click", this.removeInfoWindows )
+
     google.maps.event.addListener( this.map, "dragstart", this.removeInfoWindows )
     google.maps.event.addListener( this.map, "zoom_changed", this.removeInfoWindows )
     google.maps.event.addListenerOnce( this.map, "idle", function() {

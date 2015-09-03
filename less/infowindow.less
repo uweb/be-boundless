@@ -161,9 +161,9 @@ div.infowindow {
 
 @media screen and (max-width: 768px){
   div.infowindow {
-    display:none;
+    display:none !important;
     &.open {
-      display: block;
+      display: block !important;
     }
     width: 280px;
     .translate(6px, 60px);
@@ -175,7 +175,7 @@ div.infowindow {
       div.image {
         height: 108px;
         width: 280px;
-      }      
+      }
       .image:before {
         transform: scale(.7);
         transform-origin: top right;
