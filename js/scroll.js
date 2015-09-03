@@ -16,7 +16,7 @@ BOUNDLESS.Scroll = Backbone.View.extend({
     this.$MobileCheck =  $('#dots').css('display') == 'none' ? true : false;
 
 	$('.curtains').curtain({
-           // curtainLinks : '#dots a',
+           curtainLinks : '#dots a',
         	nextSlide: function(){
       			// Figure out how to roll this into one function
       			var currentSlideElement = $('.slide.current'),

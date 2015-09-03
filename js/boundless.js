@@ -616,10 +616,6 @@ BOUNDLESS.initialize = function()
     return false;
   } )
 
-  jQuery( '#dots').on('click', 'a', function( e ) {
-    window.location.hash = $(e.target).attr('href')
-  })
-
   $('#close-boundless-video').click( function() {
     $('#boundless-video').fadeOut(function() {
       $(this).replaceWith('<div id="boundless-video"/>')
@@ -1738,7 +1734,7 @@ BOUNDLESS.Scroll = Backbone.View.extend({
     this.$MobileCheck =  $('#dots').css('display') == 'none' ? true : false;
 
 	$('.curtains').curtain({
-           // curtainLinks : '#dots a',
+           curtainLinks : '#dots a',
         	nextSlide: function(){
       			// Figure out how to roll this into one function
       			var currentSlideElement = $('.slide.current'),
