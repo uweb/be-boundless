@@ -185,7 +185,7 @@ class Boundless
     foreach ($pages as $page) {
         $result['title'] = $page->post_title;
         $result['slug'] = $page->post_name;
-        $result['content'] = apply_filters( 'the_content' , $page->post_content );
+        $result['content'] = apply_filters( 'the_content' , apply_filters( 'remove_cms', $page->post_content ) );
         $result['image'] = wp_get_attachment_url( get_post_thumbnail_id($page->ID) );
         $results[] = $result;
     }
