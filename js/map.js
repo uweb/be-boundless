@@ -47,7 +47,7 @@ BOUNDLESS.Map = Backbone.View.extend({
       scaleControl : true,
       mapTypeControl: false,
       streetViewControl : false,
-      draggable : ($(window).width() > 768),
+      draggable : true,
       center: new google.maps.LatLng( 47.653851681095, -122.30780562698 ),
       minZoom:1,
       maxZoom:19,
@@ -193,7 +193,7 @@ BOUNDLESS.Map = Backbone.View.extend({
         anchor: new google.maps.Point( 42.5, 42.5 )
       },
       gold : {
-        url : $(window).width() < 768 ? 'wp-content/themes/be-boundless/less/svg/map-dot.png' : 'wp-content/themes/be-boundless/less/svg/map-marker-gold-light.png',
+        url : $(window).width() < 768 ? 'wp-content/themes/be-boundless/less/svg/map-dot-gold.png' : 'wp-content/themes/be-boundless/less/svg/map-marker-gold-light.png',
         size : new google.maps.Size(85, 85),
         origin: new google.maps.Point(0,0),
         anchor: new google.maps.Point( 42.5, 42.5 )
@@ -247,7 +247,7 @@ BOUNDLESS.Map = Backbone.View.extend({
 
   handleClickListItems: function( e )
   {
-      var markerTitle = $(e.target).data().slug
+      var markerTitle = $(e.target).html()
           , marker = this.markers[ markerTitle ]
 
       $(e.currentTarget).addClass('active').siblings().removeClass('active')
