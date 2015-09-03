@@ -67,10 +67,10 @@
 
             if(this.options.mobile){
                this.scrollEl =  this.$element;
-            } else if($.mozilla || $.msie) {
-                this.scrollEl = $('html');
+            // } else if($.mozilla || $.msie) {
+            //     this.scrollEl = $('html');
             } else {
-                this.scrollEl = $('body');
+                this.scrollEl = $('html,body');
             }
 
             if(self.options.controls){
@@ -409,7 +409,7 @@
 
             if(self.options.curtainLinks){
                 $(self.options.curtainLinks).on('click', function(e){
-                    e.preventDefault();
+                    // e.preventDefault();
                     var href = $(this).attr('href');
 
                     if(!self.isHashIsOnList(href.substring(1)) && position)
