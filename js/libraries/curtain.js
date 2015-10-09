@@ -67,10 +67,10 @@
 
             if(this.options.mobile){
                this.scrollEl =  this.$element;
-            // } else if($.mozilla || $.msie) {
-            //     this.scrollEl = $('html');
+            } else if($.mozilla || $.msie) {
+                this.scrollEl = $('html');
             } else {
-                this.scrollEl = $('html,body');
+                this.scrollEl = $('body');
             }
 
             if(self.options.controls){
@@ -409,12 +409,12 @@
 
             if(self.options.curtainLinks){
                 $(self.options.curtainLinks).on('click', function(e){
-                    // e.preventDefault();
+                    e.preventDefault();
                     var href = $(this).attr('href');
 
                     if(!self.isHashIsOnList(href.substring(1)) && position)
                         return false;
-                    var position = self.$elDatas[$(href).index()]['data-position'] + 5 || null;
+                    var position = self.$elDatas[$(href).index()]['data-position'] || null;
 
                     if(position){
                         self.scrollEl.animate({
