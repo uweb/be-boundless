@@ -18,6 +18,23 @@
     </head>
     <body <?php body_class(); ?>>
 
+    <!--
+    Start of DoubleClick Floodlight Tag: Please do not remove
+    Activity name of this tag: IP156748 UW Landing Page~IP156748
+    URL of the webpage where the tag is expected to be placed: http://www.washington.edu/boundless/be-boundless/,http://washington.edu/boundless/be-boundless?utm_source=GoodwayGroup&utm_medium=display&utm_campaign=Be%20Boundless,http://washington.edu/boundless?utm_source=GoodwayGroup&utm_medium=display&utm_campaign=Be
+    This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+    Creation Date: 10/02/2015
+    -->
+    <script type="text/javascript">
+    var axel = Math.random() + "";
+    var a = axel * 10000000000000;
+    document.write('<img src="https://ad.doubleclick.net/ddm/activity/src=4532109;type=ip156748;cat=ip15600;ord=' + a + '?" width="1" height="1" alt="" style="display: none;"/>');
+    </script>
+    <noscript>
+    <img src="https://ad.doubleclick.net/ddm/activity/src=4532109;type=ip156748;cat=ip15600;ord=1?" width="1" height="1" alt="" style="display: none;"/>
+    </noscript>
+    <!-- End of DoubleClick Floodlight Tag: Please do not remove -->
+
     <div id="thin-strip">
         <a class="wordmark" href="http://uw.edu" tabindex="-1" title="University of Washington Home">Home</a>
         <form action="//www.washington.edu/search/" method="get">
