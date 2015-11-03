@@ -31,7 +31,7 @@ BOUNDLESS.Map.InfoWindow.prototype.render = function( marker )
   this.div.innerHTML = _.template(
     '<div class="image-mask">' +
       '<div class="image">' +
-         '<img src="<%= _.first(info.get("image")) %>" title="<%= info.get("title") %>" />' +
+         '<img src="<%= info.get("image") %>" title="<%= info.get("title") %>" />' +
         '<h3><%= info.get("title") %></h3>' +
       '</div>' +
     '</div>' +
