@@ -12,7 +12,7 @@
 
       <div class="text-overlay">
 
-            <h1 class="uw-site-title">Boundless Archive</h1>
+            <h1 class="uw-site-title"><?php the_title(); ?></h1>
 
             <div class="udub-slant"><span></span></div>
 
