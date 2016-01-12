@@ -20,7 +20,7 @@ class JSON_API_Map_Point_Controller
       $result = new stdClass();
       $result->title = $point->title;
       $result->text = $point->excerpt;
-      $result->image = apply_filters('wp_prepare_attachment_for_js', wp_get_attachment_image_src( get_post_thumbnail_id( $point->id ), 'original' ));
+      $result->image = apply_filters('wp_prepare_attachment_for_js', apply_filters( 'remove_cms', wp_get_attachment_image_src( get_post_thumbnail_id( $point->id ), 'original' )) );
       $result->coordinate = array(
         "latitude"  => (double) get_post_meta( $point->id, '_latitude', true ),
         "longitude" => (double) get_post_meta( $point->id, "_longitude", true )
