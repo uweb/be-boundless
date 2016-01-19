@@ -177,38 +177,42 @@
       margin: 10px 0 20px;
     }
     .text-overlay {
-        top: -455px;
-        padding-top: 90px;
+       position: static;
+       padding: 40px 0 10px;
        .uw-site-title {
          font-size: 36px;
          line-height: 40px;
          padding-right: 0;
          margin: 0;
-         color: #fff;
+         color: @purple;
          background-color: transparent;
          padding: 0;
          width: auto;
+         // Fixes bug in 2014 theme
+         box-shadow: none;
        }
        .spotlight-blurb p {
-         padding-right: 0;
-         font-size: 19px;
-         line-height: 24px;
-         width: 90%;
+          color: @darkgray;
+          padding-right: 0;
+          font-size: 19px;
+          line-height: 1.6;
+          width: 90%;
+          text-shadow: none;
+          border-bottom: 1px solid #E4E4E4;
+          padding: 0 0 30px;
+          margin-bottom: 20px;
        }
        .udub-slant span {
          transform: skewX(-25deg);
          display: block;
          height: 10px;
-         width: 160px;
+         width: 200px;
          margin: 10px 0 10px -130px;
+         background-color: @darkgold;
       }
     }
     .uw-hero-image {
-      width: auto;
-      height: auto;
-      padding: 0 0 140px 0;
-      display: block;
-      height: 360px;
+      display: none;
     }
     .uw-body-copy {
       padding-top: 0;
