@@ -90,11 +90,38 @@ div.uw-site-title {
 
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
-
-
+  .boundless-archive {  
+    .boundless-tile {    
+      width: 48%;
+      margin: 1% 1%;
+    }
+  }
 }
 
 @media only screen and (max-width : 767px) {
-
+  .boundless-archive {  
+    .text-overlay {
+    position: relative;
+    top: 0;
+    h1.uw-site-title {
+      position: relative;
+      top:10px;
+      left:0;
+      width: auto;
+      font-weight: 800;
+      line-height: 42px;
+      font-size: 40px;
+      text-transform: none;
+      box-shadow: none;
+    }
+    .spotlight-blurb , .udub-slant {
+      display: none;
+    }
+  }
+    .boundless-tile {    
+      width: 98%;
+      margin: 1% 1%;
+    }
+  }
 
 }
