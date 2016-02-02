@@ -82,7 +82,7 @@ class Boundless
       $result->slug = $point->post_name;
       $result->text = $point->post_excerpt;
       $result->thumb = apply_filters('wp_prepare_attachment_for_js', apply_filters( 'remove_cms', wp_get_attachment_image_src( get_post_thumbnail_id( $point->ID ), array( 50, 50 ) )) );
-      $result->image = apply_filters('wp_prepare_attachment_for_js', apply_filters( 'remove_cms', wp_get_attachment_image_src( get_post_thumbnail_id( $point->ID ), 'large' )) );
+      $result->image = apply_filters('wp_prepare_attachment_for_js', wp_get_attachment_image_src( get_post_thumbnail_id( $point->ID ), 'large' ) );
       $result->coordinate = array(
         "latitude"  => (double) get_post_meta( $point->ID, '_latitude', true ),
         "longitude" => (double) get_post_meta( $point->ID, "_longitude", true )
