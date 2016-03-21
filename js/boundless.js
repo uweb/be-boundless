@@ -1802,7 +1802,7 @@ BOUNDLESS.Scroll = Backbone.View.extend({
   		var distanceToTop = scrollAmount / 4,
   			bgPos = "center " + distanceToTop + "px";
 
-  		parentSlide.css('background-position', bgPos)
+  		// parentSlide.css('background-position', bgPos)
 
   		// Midground
   		midGround.css('transform','translateY(' + midGroundDistance + 'px)')

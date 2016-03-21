@@ -18,10 +18,10 @@
         <div id="boundless-video"></div>
         <button id="close-boundless-video" class="play close" aria-controls="boundless-video"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>
 
-        <div class="stars"></div>
-        <div class="twinkling"></div>
+       <!--  <div class="stars"></div>
+        <div class="twinkling"></div>-->
 
-        <div class="midground"><img width="95%" height="auto" src="<?php echo get_stylesheet_directory_uri(); ?>/img/middleground.png"></div>
+        <div class="midground"><img width="95%" height="auto" src="<?php echo get_stylesheet_directory_uri(); ?>/img/middleground.png"></div> 
 
         <div class="foreground"></div>
 
@@ -29,7 +29,7 @@
 
                 <div class="homepage-text">
                    <h1>  <?php the_title(); ?></h1>
-                   <a class="play" href="#!/video/boundless"></a>
+                   <!-- <a class="play" href="#!/video/boundless"></a> -->
                    <!-- <span class="udub-slant"><span></span></span> -->
                     <p><?php the_content(); ?></p>
                 </div>

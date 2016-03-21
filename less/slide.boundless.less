@@ -6,7 +6,7 @@
       position: absolute;
     }
 
-    background-image: url(img/background.jpg);
+    background-image: url(img/bokeh.jpg);
     background-color: black;
     .midground,
     .foreground {
@@ -16,28 +16,40 @@
       position: absolute;
       bottom: 58%;
       left: 0;
+      text-align: center;
     }
     .foreground {
-      background-image: url(img/foreground.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center bottom;
+      background: url(img/slashes.svg);
+      background-position: left top;
       position: absolute;
-      top: 0;
-      left: 0;
+      background-repeat: no-repeat;
+      top: 40px;
       right: 0;
-      bottom: 0;
+      width: 650px;
+      height: 160px;
     }
     &:after {
       content: "";
-      background: url(img/overlay-checker.png);
+     // background: url(img/overlay-checker.png);
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
       z-index: -1;
+    }
+    .slash {
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        background: url(less/svg/boundless.svg) no-repeat -88px -121px;
+        left: -110px;
+        bottom: -10px;
+        width: 65px;
+        height: 195px;
+        transition: opacity .25s;
+      }
     }
 
    .boundless-youtube {
@@ -94,7 +106,7 @@
   .homepage-text {
 
     position:absolute;
-    top: 45%;
+    top: 48%;
     left: 13%;
     z-index:0;
 
@@ -181,6 +193,26 @@
 
 }
 
+@media only screen and (min-width:768px) and (max-width:1024px) {
+  #boundless-slide {
+    .midground {
+      bottom: 68%;
+    }
+     .homepage-text {
+      top: 36%;
+    }
+  }  
+}
+
+@media only screen and (max-width:1024px) {
+  .slash {    
+    margin-top: 50px;
+    &:before {
+      display: none;
+    }
+  }
+}
+
 @media only screen and (max-width:768px) {
   .curtains>li {
   }
@@ -193,10 +225,12 @@
   #boundless-slide {
     height: 800px !important;
     .homepage-text {
-      top: 90px;
-      p {
-        width: 75%;
-      }
+      margin-top: 120px;
+      position: static;
+      // top: 90px;
+      // p {
+      //   width: 75%;
+      // }
       h1 {
         font-family: "Encode Sans Compressed",sans-serif;
         font-weight: 900;
@@ -206,6 +240,7 @@
         text-transform: uppercase;
         color: white;
         display: block;
+        padding-left: 12px;
       }
     }
     .midground {
@@ -220,19 +255,19 @@
     .foreground {
        transform: translateY(0px) !important;
     }
-    a.play {
-      .transform-origin(0 0);
-      .scale(.7);
-      position: static;
-      display: block;
-      height: 100px;
-      width: 120px;
-      background-position: -10px -645px;
-      margin-bottom: -40px;
-      &:before {
-        display: none;
-      }
-    }
+    //  a.play {
+    //    .transform-origin(0 0);
+    //    .scale(.7);
+    //    position: static;
+    //    display: block;
+    //    height: 100px;
+    //    width: 120px;
+    //    background-position: -10px -645px;
+    //    margin-bottom: -40px;
+    //    &:before {
+    //      display: none;
+    //    }
+    //  }
   }
   .visit-button {
       .scale(.5);
@@ -249,7 +284,7 @@
 
   #boundless-slide {
     .homepage-text p {
-      width: 375px;
+      // width: 375px;
     }
   }
 
@@ -260,7 +295,7 @@
 
   #boundless-slide {
     .homepage-text p {
-      width: 475px;
+      // width: 475px;
     }
   }
 
