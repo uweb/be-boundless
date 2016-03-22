@@ -1410,7 +1410,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   render : function()
   {
     console.log(this.$el)
-    $('#gallery-1').append( _.template( this.templateInstagram, {images : this.instagram.toJSON() }) )
+    $('#gallery-1').prepend( _.template( this.templateInstagram, {images : this.instagram.toJSON() }) )
     BOUNDLESS.app.set( 'instagram', true )
     this.$el.attr('data-height', 10000)
 
