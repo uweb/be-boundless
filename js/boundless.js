@@ -1378,7 +1378,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
 
   templateInstagram :
   '<div class="container">' +
-  '<h4> UW on <a href="https://instagram.com/uofwa/?hl=en" title="Instagram">Instagram</a></h4>' +
+  '<h3> UW on <a href="https://instagram.com/uofwa/?hl=en" title="Instagram">Instagram</a></h3>' +
     '<ul id="grid" class="masonry">' +
     '<% _.each( images, function( image ) { %> ' +
      '<li class="segue" ><a href="<%= image.link %>" target="_blank" title="A UW instagram image"><img src="<%= image.images.standard_resolution.url %>" height="<%= image.images.standard_resolution.height %>" width="<%= image.images.standard_resolution.width %>" /></a>' +
@@ -1410,7 +1410,7 @@ BOUNDLESS.Gallery = Backbone.View.extend({
   render : function()
   {
     console.log(this.$el)
-    this.$el.append( _.template( this.templateInstagram, {images : this.instagram.toJSON() }) )
+    this.$el.prepend( _.template( this.templateInstagram, {images : this.instagram.toJSON() }) )
     BOUNDLESS.app.set( 'instagram', true )
     this.$el.attr('data-height', 10000)
 
