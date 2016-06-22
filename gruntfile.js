@@ -47,11 +47,13 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'js/boundless.min.js': ['<%= concat.dist.dest %>'],
+          'immersive-stories/js/common.min.js': ['immersive-stories/js/common.js'],
+          'immersive-stories/js/farmer-brown.min.js': ['immersive-stories/js/farmer-brown.js'],
         }
       }
     },
     jshint: {
-      files: [ 'gruntfile.js', '<%= concat.dist.theme %>' ],
+      files: [ 'gruntfile.js', '<%= concat.dist.theme %>', 'immersive-stories/js/common.js', 'immersive-stories/js/farmer-brown.js' ],
       options: {
         asi: true,
         smarttabs: true,
@@ -83,7 +85,9 @@ module.exports = function(grunt) {
                 sourceMapURL: 'style.css.map'
         	    },
         	    files: {
-        		    'style.css': 'less/style.less'
+                'style.css': 'less/style.less',
+                'immersive-stories/css/common.css': 'immersive-stories/less/common.less',
+        		    'immersive-stories/css/farmer-brown.css': 'immersive-stories/less/farmer-brown.less'
         	    }
         }
     },
@@ -95,11 +99,11 @@ module.exports = function(grunt) {
         }
       },
       js: {
-        files: ['<%= concat.dist.src %>'],
+        files: ['<%= concat.dist.src %>', 'immersive-stories/js/common.js', 'immersive-stories/js/farmer-brown.js'],
         tasks: ['js']
       },
       css : {
-        files: ['less/*.less'],
+        files: ['less/*.less', 'immersive-stories/less/*.less'],
         tasks: ['css']
       }
     }
