@@ -1,0 +1,155 @@
+// All the Variables from the UW 2014 theme
+@import "../../themes/uw-2014/less/uw.variables.less";
+@import "../../themes/uw-2014/less/flat/mixins.less";
+
+@img: "../../immersive-stories/img";
+
+
+div.audio {
+    // Play button
+    font-family: @uni;
+    position: relative;
+    .border-radius(7px);
+    border: 2px solid white;
+    margin: 40px 0 20px;
+    display: inline-block;
+    padding: 8px 10px 9px 52px;
+    color: white;
+    letter-spacing: 2px;
+    background-color: rgba(0,0,0,.2);
+    .transition(all .3s linear);     
+    max-width: 100%;
+    p {
+        font-size: 17px;
+        color: white;
+        margin: 0;
+        text-transform: uppercase;
+        font-family: @uni;
+        font-weight: bold;
+        &.length {
+            visibility: hidden;
+        }
+    }
+    audio {
+        margin-bottom: -8px;
+        display: none;
+        max-width: 100%;
+    }
+    &:hover,
+    &:active,
+    &:focus,
+    {
+        border-color: @lightgold;
+        background-color: #525252;            
+    }
+    &:focus:after,
+    &:active:after,
+    &:hover:after {
+        left: 20px;
+        background-position: -90px 0
+    }
+    &:after {
+        position:absolute;
+        background: url("@{img}/sprite.svg") -60px 0 no-repeat transparent;
+        content:"";
+        width:20px;
+        height:20px;
+        top:25%;
+        left: 17px;
+        .transition(background-position .2s ease-in);
+        pointer-events: none;
+    }
+    .visually-hidden.audio-transcript {
+        display: none;
+    }
+    
+    .audio-transcript {
+        text-align: left;
+        padding: 0px 30px 0 0;
+        overflow-y: auto;
+        display: block;
+        max-height: 300px;
+        margin: 30px 30px 40px 50px;
+        p {
+            font-size: 16px;
+            font-family: @font-family-base;
+            font-weight: 400;
+            color: #FFF;
+            text-transform: none;
+            letter-spacing: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    p.audio-buttons {
+        position: static;
+        button {
+            display: none;
+        }
+        button.audio-play {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: transparent;
+            border: none;
+            padding: 9px 15px 9px 60px;
+            letter-spacing: 1px;
+        }
+    }
+    &.active-audio {             
+        background-color: #525252; 
+        .audio-buttons {
+            position: absolute;
+            bottom: -55px;
+            right: auto;
+            left: 0;
+            button {
+                display: inline-block;                    
+                background-color: transparent;
+                border: none; 
+                width: 38px;
+                height: 38px;
+                text-indent: -999px;
+                overflow: hidden;                   
+                padding: 5px;
+                margin-right: 5px;
+                background: url("@{img}/sprite.svg") 0 0 no-repeat transparent;
+                &:nth-child(1) {
+                    background-position: -187px 0 
+                } 
+                &:nth-child(2) {
+                    background-position: -133px 0 
+                } 
+                &:nth-child(3) {
+                    background-position: -240px 0 
+                }
+                &[aria-pressed="true"],
+                &:hover,
+                &:active,
+                &:focus {
+                    background-position-y: -40px;
+                }
+            }
+            button.audio-play {
+                display: inline-block;
+                position: static;
+                padding: 5px;
+            }
+        } 
+        p.length {
+           display: none;
+        }                 
+        &.audio {
+            padding-left: 8px;
+            .transition(none);  
+            audio {
+                display: inline-block;
+            }
+            &:after {
+                display: none;
+            }
+        }
+    }
+   
+}
