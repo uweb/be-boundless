@@ -638,6 +638,8 @@
                   
                   <p>Brown, who just completed his master’s in social work at the UW, and Wolf have also deepened their organization’s focus on mental health. Each of Growing Veterans’ nine employees has completed a peer-support training program designed to tackle veteran isolation and prevent suicide. </p>
                   
+                  <?php echo do_shortcode('[slideshow id=3197 simple=true]');?>
+                  
                   <p>And beyond providing life-sustaining social support at its farms, Growing Veterans helps people connect with as many meaningful opportunities as possible: through other local and national veteran organizations, business and community networking, and educational projects.</p>
                   
                   <p>There’s plenty of excitement cropping up for Growing Veterans. More community partners. More acreage planted. More people receiving healthy, sustainably grown produce. More veterans beginning the journey to healing.</p>
