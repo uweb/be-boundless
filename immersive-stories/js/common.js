@@ -10,7 +10,16 @@ $(".audio-ctrl").each(function(){
     e.preventDefault();
 
     // Pause all currently playing
-    document.body.getElementsByTagName('audio')[0].pause()
+    var mp3s = document.body.getElementsByTagName('audio');    
+    for (var i = 0; i < mp3s.length; i++ ) {
+      mp3s[i].pause()
+    }
+
+
+   //$('audio').each(function(e){
+   //  console.log($(this))
+   //})
+
 
     var $audio = $(e.target).closest('.audio'),
         audioEl = $audio.find('audio')[0]
@@ -20,6 +29,7 @@ $(".audio-ctrl").each(function(){
     $this.attr("aria-pressed","true");
 
     if($this.hasClass("audio-play")){
+      $('audio')[0].pause();
       setTimeout(function(){
         audioEl.play();
       },1000);
