@@ -40,8 +40,7 @@
               <div class="col-md-10 col-md-offset-1 copy"> 
                 <!-- <h2>For UW students involved in the Pipeline Project, spring break means teaching in classrooms across Washington. Take a deep dive into two schools where Huskies serve.</h2> -->
   
-                <p class="headline-gold">In the name of holistic mental health, Christopher Brown, ’16, created Growing Veterans, an organization that reconnects veterans to each other — and to life. 
-</p>               
+                <p class="headline-gold">In the name of holistic mental health, Christopher Brown, ’16, created <a href="http://growingveterans.org/">Growing Veterans</a>, an organization that reconnects veterans to each other — and to life. </p>               
           </div> 
         </div> 
       </div>   
@@ -61,11 +60,11 @@
           <div class="row">
               <div class="col-md-10 col-md-offset-1 copy padless">             
           
-                <p class="caps">Christopher Brown squats down among rows of garlic. He grasps a thigh-high stalk at its base and tugs it out of the ground with a satisfying crunch. After popping several plants out of the ground, he shakes off excess dirt, plucks off dead leaves, and peels back the bulbs’ papery protective layer. The bulbs are a brilliant, glossy white.</p>
+                <p class="caps">Christopher Brown squats among knee-high rows of green garlic. He grasps a stalk at its base and tugs it from the ground with a satisfying crunch. After popping several plants from the soil, he peels back their papery protective layers, revealing bulbs that are a brilliant, glossy white. </p>
 
-                <p>Six months ago, much of this Skagit Valley farmland was a mucky soup of tangled grass, mud and standing water, dense gray clouds unleashing torrents of cold rain. Today, it’s a pleasant 70 degrees. Rows of produce, from garlic and sugarsnap peas to kale and broccoli, spring out of the valley’s soft loam. </p>
+                <p>Six months ago, much of this Skagit Valley farmland was a mucky soup of tangled grass, mud and standing water under stormy skies. Today, it’s a pleasant 70 degrees. Rows of produce, from garlic and sugar snap peas to kale and broccoli, spring from the valley’s soft loam. </p>
 
-                <p>A three-time Marine combat veteran who served in both Iraq and Afghanistan, Brown struggled to adjust when he returned to the U.S. So, too, did many of those who now harvest produce alongside him — military veterans from all branches, of all ages.</p>
+                <p>Six months ago, much of this Skagit Valley farmland was a mucky soup of tangled grass, mud and standing water under stormy skies. Today, it’s a pleasant 70 degrees. Rows of produce, from garlic and sugar snap peas to kale and broccoli, spring from the valley’s soft loam. </p>
 
             </div> 
         </div> 
@@ -116,11 +115,12 @@
           <div class="row">
               <div class="col-md-10 col-md-offset-1 copy">
                 
-              <p> Welcome to Growing Veterans, the thriving nonprofit that has transformed the life of Brown, its president and co-founder, and the lives of many of its workers and volunteers.</p>
+              <p>Welcome to Growing Veterans, the thriving nonprofit that has transformed the life of Brown, its president and co-founder, and the lives of many of its workers and volunteers.</p>
 
-              <p>Together, they use sustainable practices to plant, grow and harvest a rich variety of produce for sale at farmers markets and donation to food banks. It is satisfying work, but there’s a deeper mission at stake: helping veterans reconnect — to each other, and to the communities they serve. And, in the process, tackling the pervasive isolation that underlies many of the issues they face.</p>
+<p>Together, they use sustainable practices to plant, grow and harvest a rich variety of produce for sale at farmers markets and donation to food banks. It is satisfying work, but there’s a deeper mission at stake: helping veterans reconnect — to each other, and to the communities they serve. And, in the process, tackling the pervasive isolation that underlies many of the issues they face.</p>
 
-              <p>In the morning, they park their cars in the gravel driveway of a former cattle ranch. They greet each other with hugs. As they work, they share stories — funny stories, sad stories, terrifying stories — from their time in the service. They talk politics. Medications. Family. Civilian life.</p>
+<p>In the morning, they park their cars in the gravel driveway of a former cattle ranch. They greet each other with hugs. As they work, they share stories — funny stories, sad stories, terrifying stories — from their time in the service. They talk politics. Medications. Family. Civilian life.</p>
+
     
 
               </div> 
@@ -292,17 +292,17 @@
 
                 <p>Brown has a story of his own. In 2008, he returned from his final tour of duty. “There was a lot of guilt, grief, anger, frustration and anxiety,” he says. He also had to cope with a mild traumatic brain injury and post-traumatic stress disorder (PTSD).</p>
 
-                <p>His struggles were not unique. Along with PTSD, many returning veterans face depression. Substance abuse. Unemployment. Homelessness. And suicide.</p> 
+                <p>His struggles were not unique. Along with PTSD, many returning veterans face depression. Substance abuse. Unemployment. Homelessness. And suicide. </p> 
 
                 <p class="gold-quote headline-gold">There was a lot of guilt, grief, anger, frustration and anxiety<span class="attribute"></span></p>
 
-                <p>Brown’s Marine battalion, the 2/7, has a suicide rate four times that of all young male veterans. At least 15 men from the battalion have taken their own lives since he left the military. </p>
+                <p>Brown’s Marine battalion, the 2/7, has a suicide rate four times that of all young male veterans. At least 15 men from the battalion have taken their own lives since he left the military.  </p>
 
                 <p>“When I went back to get my undergraduate degree,” he says, “I made a commitment to myself that I would pursue an education and a career where those losses would not be in vain.”</p>
 
                 <p>Brown also began working on his own mental health. He spent over two years in group and individual counseling, processing his traumas and learning coping strategies. Following the advice of his counselor, he started growing plants as a way to reconnect with life.</p>
 
-                <p>Soon, he was harvesting food from his own garden for dinner, and he was feeling better and better. “I realized that there really is something to working with food and growing plants,” he says. </p>
+                <p>Soon, he was harvesting food from his own garden for dinner, and he was feeling better and better. “I realized that there really is something to working with food and growing plants,” he says.  </p>
 
                 <p>And then, just before he turned his thoughts to graduate school at the University of Washington, he says, it clicked: Why not combine food and sustainable agriculture with helping veterans?</p>
 
@@ -317,7 +317,7 @@
             <div class="container">
                <div class="row">
                  <div class="col-md-10 col-md-offset-1 copy" style="text-align: center">             
-                     <p>By the numbers</p>
+                     <p>Last year: <br>By the numbers</p>
                  </div> 
              </div> 
            </div>
@@ -609,7 +609,7 @@
             <div class="row">
               <div class="col-md-10 col-md-offset-1 copy">    
                   
-                  <p>For the past four years, he has done just that. Along with counselor-turned-farmer Christina Wolf, who serves as operations manager, Brown                 co-founded Growing Veterans on a 3.5-acre site north of Bellingham. The organization has since leased its expansive Skagit Valley location and a                half-acre spot in Auburn, and continued to deepen its connections with regional farm agencies, veteran service providers and nonprofits. </p>
+                  <p>For the past four years, he has done just that. Along with counselor-turned-farmer Christina Wolf, who serves as operations manager, Brown co-founded Growing Veterans on a 3.5-acre site north of Bellingham. The organization has since leased its expansive Skagit Valley location and a half-acre spot in Auburn, and continued to deepen its connections with regional farm agencies, veteran service providers and nonprofits.  </p>
                   
                   <p>Brown, who just completed his master’s in social work at the UW, and Wolf have also deepened their organization’s focus on mental health. Each of Growing Veterans’ nine employees has completed a peer-support training program designed to tackle veteran isolation and prevent suicide. </p>
                   
@@ -635,9 +635,9 @@
 
                 <p>When Growing Veterans was just getting off its feet, Christopher Brown embarked upon another journey: He took on a master’s degree in social work at the University of Washington.</p>
 
-               <p> A newly minted graduate, Brown recently transitioned from executive director of Growing Veterans to president of the board of directors — freeing up time to launch his career as a PTSD counselor for veterans.</p>
+               <p>Now a newly minted graduate, Brown recently transitioned from executive director of Growing Veterans to president of the board of directors — freeing up time to launch his career as a PTSD counselor for veterans.</p>
 
-                <p>Brown says the UW’s highly flexible <a href="http://socialwork.uw.edu/programs/master-of-social-work-program">M.S.W. extended degree program</a> gave him much more than just the tools and credentials he needed to be a counselor.</p> 
+                <p>Brown says the UW’s highly flexible <a href="http://socialwork.uw.edu/programs/master-of-social-work-program">M.S.W. extended degree program</a> gave him much more than just the tools and credentials he needed to be a counselor. </p>
 
                 <p>His professors supported him as he focused many of his research projects on furthering the mission of Growing Veterans. And, though his concentration was in integrative health and mental health practice, Brown also learned about leadership and community building.</p>
 
@@ -684,6 +684,16 @@
                         1-800-273-8255 (press 1)</p>
                         
                         <p>Confidential counseling: <br><a href="http://www.va.gov/directory/guide/vetcenter.asp">find a vet center</a></p>
+
+                        <br>
+                        <h3 class="headline-gold">Veterans at the UW:</h3>
+
+                        <a href="https://osfa.washington.edu/wp/veterans/">Seattle</a><br>
+                        <a href="http://www.uwb.edu/studentaffairs/veterans">Bothell</a><br>
+                        <a href="https://www.tacoma.uw.edu/veterans-military-services">Tacoma</a>
+
+
+
                   </div>
 
                 </div>  
