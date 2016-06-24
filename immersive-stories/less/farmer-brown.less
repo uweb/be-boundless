@@ -164,7 +164,9 @@ p {
 
 // Remove some of the white space padding per edits
 .text-block .copy.padless {
-    padding: 20px 90px 80px 90px;
+    @media(min-width:768px) {
+        padding: 20px 90px 80px 90px;
+    }
 }
 
 
