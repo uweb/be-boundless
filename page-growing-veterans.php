@@ -141,7 +141,7 @@
                           <p><span>Service: </span>U.S. Navy</p>
                           <p><span>Years: </span>1968–1970</p>
                           <div class="audio"><p class="length">1:01 <span>/ play interview</span></p>
-                            <audio controls class="player">
+                            <audio controls class="player" preload="none">
 
                               <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/farmer-brown/AUDIO_PROFILES_MIKE.mp3' ?>" type="audio/mpeg">
                               <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
@@ -165,7 +165,7 @@
                           <p><span>Service: </span>U.S. Air Force</p>
                           <p><span>Years: </span>2005–2009</p>
                           <div class="audio"><p class="length">2:26 <span>/ play interview</span></p>
-                            <audio controls class="player">
+                            <audio controls class="player" preload="none">
 
                               <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/farmer-brown/AUDIO_PROFILES_SEAN.mp3' ?>" type="audio/mpeg">
                               <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
@@ -188,7 +188,7 @@
                           <h4>Chris Wolf</h4>
                           <p>Co-founder, Growing Veterans</p>
                           <div class="audio"><p class="length">2:35 <span>/ play interview</span></p>
-                            <audio controls class="player">
+                            <audio controls class="player" preload="none">
 
                               <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/farmer-brown/AUDIO_PROFILES_WOLF.mp3' ?>" type="audio/mpeg">
                               <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
@@ -212,7 +212,7 @@
                           <p><span>Service: </span>U.S. Navy</p>
                           <p><span>Years: </span>1983–2005</p>
                           <div class="audio"><p class="length">1:47 <span>/ play interview</span></p>
-                            <audio controls class="player">
+                            <audio controls class="player" preload="none">
 
                               <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/farmer-brown/AUDIO_PROFILES_KENNY.mp3' ?>" type="audio/mpeg">
                               <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
@@ -236,7 +236,7 @@
                           <p><span>Service: </span>U.S. Army</p>
                           <p><span>Years: </span>2010–2014</p>
                           <div class="audio"><p class="length">1:31 <span>/ play interview</span></p>
-                            <audio controls class="player">
+                            <audio controls class="player" preload="none">
 
                               <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/farmer-brown/AUDIO_PROFILES_SCOTTY.mp3' ?>" type="audio/mpeg">
                               <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
@@ -260,7 +260,7 @@
                           <p><span>Service: </span>U.S. Army</p>
                           <p><span>Years: </span>2007–2011</p>
                           <div class="audio"><p class="length">2:13 <span>/ play interview</span></p>
-                            <audio controls class="player">
+                            <audio controls class="player" preload="none">
 
                               <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/farmer-brown/AUDIO_PROFILES_JOEL.mp3' ?>" type="audio/mpeg">
                               <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
@@ -323,12 +323,15 @@
            </div>
           </div> 
 
+
           <div id="veg2" class="plant plant-2">
             <div class="container">
                <div class="row">
                  <div class="col-md-10 col-md-offset-1 copy" style="text-align: center">         
                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                   width="250px" height="251px" viewBox="0 0 250 251" enable-background="new 0 0 250 251" xml:space="preserve">
+                   width="250px" height="251px" viewBox="0 0 250 251" enable-background="new 0 0 250 251" xml:space="preserve" role="img" aria-labelledby="title desc">
+                   <title id="title">Carrots</title>
+                   <desc id="desc">Carrot being plucked fromt he ground</desc>
                  <g>
                   
                     <ellipse fill="none" stroke="#FFFFFF" stroke-width="7.0671" stroke-miterlimit="10" cx="125" cy="126.277" rx="112.669" ry="113.125"/>
@@ -396,6 +399,7 @@
            </div>
           </div> 
 
+
           <div id="veg3" class="plant plant-3">
             <div class="container">
                <div class="row">
@@ -403,7 +407,9 @@
                  
                            
                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             width="250px" height="251px" viewBox="0 0 250 251" enable-background="new 0 0 250 251" xml:space="preserve">
+                             width="250px" height="251px" viewBox="0 0 250 251" enable-background="new 0 0 250 251" xml:space="preserve" role="img" aria-labelledby="title  desc">
+                             <title id="title">Truck</title>
+                             <desc id="desc">Truck bouncing along the road with turnips in the bed</desc>
                            <g>
                             
                               <ellipse fill="none" stroke="#FFFFFF" stroke-width="7.0671" stroke-miterlimit="10" cx="125.375" cy="126.278" rx="112.669" ry="113.125"/>
@@ -540,12 +546,15 @@
            </div>
           </div> 
 
+
           <div id="veg4" class="plant plant-4">
             <div class="container">
                <div class="row">
                  <div class="col-md-10 col-md-offset-1 copy" style="text-align: center">  
                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                   width="250px" height="251px" viewBox="0 0 250 251" enable-background="new 0 0 250 251" xml:space="preserve">
+                   width="250px" height="251px" viewBox="0 0 250 251" enable-background="new 0 0 250 251" xml:space="preserve" role="img" aria-labelledby="title  desc">
+                   <title id="title">Carrot picking</title>
+                   <desc id="desc">Person picking a carrot from the ground</desc>
                  <path fill="none" stroke="#FFFFFF" stroke-width="7.1001" stroke-miterlimit="10" d="M238.685,127.294
                   c-0.556,63.06-51.447,113.724-113.67,113.162C62.793,239.895,12.8,188.319,13.354,125.26
                   c0.555-63.059,51.446-113.723,113.67-113.161C189.245,12.66,239.237,64.235,238.685,127.294z"/>
