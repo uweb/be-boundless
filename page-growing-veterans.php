@@ -697,7 +697,7 @@
                         <br>
                         <h3 class="headline-gold">Veterans at the UW:</h3>
 
-                        <a href="https://osfa.washington.edu/wp/veterans/">Seattle</a><br>
+                        <a href="https://depts.washington.edu/vetlife/">Seattle</a><br>
                         <a href="http://www.uwb.edu/studentaffairs/veterans">Bothell</a><br>
                         <a href="https://www.tacoma.uw.edu/veterans-military-services">Tacoma</a>
 
