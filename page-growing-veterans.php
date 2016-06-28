@@ -91,25 +91,6 @@
     </section>
 
 
-<!--     <section class="text-block">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-10 col-md-offset-1 copy"> 
-
-
-
-<?php echo do_shortcode('[slideshow id=3109 simple=true]');?>
-
-
-
-
-
-          </div> 
-        </div> 
-      </div>   
-    </section>
- -->
-
     <section class="text-block">
       <div class="container">
           <div class="row">
