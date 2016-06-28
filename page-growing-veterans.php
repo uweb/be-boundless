@@ -40,7 +40,7 @@
               <div class="col-md-10 col-md-offset-1 copy"> 
                 <!-- <h2>For UW students involved in the Pipeline Project, spring break means teaching in classrooms across Washington. Take a deep dive into two schools where Huskies serve.</h2> -->
   
-                <p class="headline-gold">In the name of holistic mental health, Christopher Brown, ’16, created <a href="http://growingveterans.org/">Growing Veterans</a>, an organization that reconnects veterans to each other — and to life. </p>               
+                <h2 class="headline-gold">In the name of holistic mental health, Christopher Brown, ’16, created <a href="http://growingveterans.org/">Growing Veterans</a>, an organization that reconnects veterans to each other — and to life. </h2>               
           </div> 
         </div> 
       </div>   
@@ -64,7 +64,7 @@
 
                 <p>Six months ago, much of this Skagit Valley farmland was a mucky soup of tangled grass, mud and standing water under stormy skies. Today, it’s a pleasant 70 degrees. Rows of produce, from garlic and sugar snap peas to kale and broccoli, spring from the valley’s soft loam. </p>
 
-                <p>Six months ago, much of this Skagit Valley farmland was a mucky soup of tangled grass, mud and standing water under stormy skies. Today, it’s a pleasant 70 degrees. Rows of produce, from garlic and sugar snap peas to kale and broccoli, spring from the valley’s soft loam. </p>
+                <p>A three-time Marine combat veteran who served in Iraq and Afghanistan, Brown struggled to adjust when he returned to the U.S. So, too, did many of the men and women who are now harvesting produce alongside him — military veterans from all branches, of all ages.</p>
 
             </div> 
         </div> 
@@ -119,7 +119,7 @@
 
 <p>Together, they use sustainable practices to plant, grow and harvest a rich variety of produce for sale at farmers markets and donation to food banks. It is satisfying work, but there’s a deeper mission at stake: helping veterans reconnect — to each other, and to the communities they serve. And, in the process, tackling the pervasive isolation that underlies many of the issues they face.</p>
 
-<p>In the morning, they park their cars in the gravel driveway of a former cattle ranch. They greet each other with hugs. As they work, they share stories — funny stories, sad stories, terrifying stories — from their time in the service. They talk politics. Medications. Family. Civilian life.</p>
+<p>In the morning, they park their cars in the gravel driveway of a former dairy farm. They greet each other with hugs. As they work, they share stories — funny stories, sad stories, terrifying stories — from their time in the service. They talk politics. Medications. Family. Civilian life.</p>
 
     
 
@@ -137,7 +137,7 @@
               <ul id="people">
                   <li class="pax-1 navy" tabindex="0">
                       <div class="hider">
-                          <h4>Mike Hackett</h4>
+                          <h2>Mike Hackett</h2>
                           <p><span>Service: </span>U.S. Navy</p>
                           <p><span>Years: </span>1968–1970</p>
                           <div class="audio"><p class="length">1:01 <span>/ play interview</span></p>
@@ -152,7 +152,7 @@
                               <p>My name is Mike Hackett, and I was in the U.S. Navy. I am a combat veteran myself. I served about 14 months in a combat zone in 1968 and in 1970, and when I came home from the service, there was nothing for us Vietnam vets. Very little. We had a GI Bill which allowed us to go to college, but there was no help for our heads and our hearts. When I saw that this program had begun, I saw a new way of looking at the world. After all these years, raising a family and having grandkids and dealing with alcohol problems over the years — I’ve been clean and sober now 16 years — but it took a long time to get to that point. I love these guys. They’re mostly young guys, post-9/11 veterans, and they — I learn from them, they learn from me. What can I say?</p>
                             </div>
                             <p class="audio-buttons">
-                              <button class="audio-ctrl audio-play" tabindex="0">1:01 / PLAY INTERVIEW</button>  
+                              <button class="audio-ctrl audio-play" tabindex="0" aria-label="Play interview with Mike, one minute and one second">1:01 / PLAY INTERVIEW</button>  
                               <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
                               <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                             </p>
@@ -161,7 +161,7 @@
                   </li>
                   <li class="pax-2 airforce" tabindex="0">
                       <div class="hider">
-                          <h4>Sean Dalgarn</h4>
+                          <h2>Sean Dalgarn</h2>
                           <p><span>Service: </span>U.S. Air Force</p>
                           <p><span>Years: </span>2005–2009</p>
                           <div class="audio"><p class="length">2:26 <span>/ play interview</span></p>
@@ -176,7 +176,7 @@
                               <p>My name is Sean Dalgarn. I was in the United States Air Force from 2005 to 2009. I deployed three times. Two to Iraq in direct support of the Army during the surge, and then one to Kuwait in 2008. I got out of the military in 2009 — March 14 — went to college, started using my GI Bill up here in Bellingham. I went to Western, graduated with a bachelor’s in human services from the college of education. During that time, I was introduced to Chris Brown, who had also gone through the same program and college that I did, and he was developing this program called Growing Veterans and the idea was really cool, and my best friend of my entire life — 27 years — got a job out here and started volunteering out here and got a job and was telling me how awesome it was, and I was like, “That’s what I want to do.” I got involved with this place, and the things that I love about it was just the people, the hard work, actually doing something in the day and actually seeing some sort of accomplishment, or feeding myself healthy food and knowing where it came from, and also watching it grow from a seed to a finished product was something that really touched me. But most of the time, I can’t believe I get paid to do what I do. And I wouldn’t change it for the world. It’s this really cool — we have people that take our food, buy it, purchase it from us, staff and veterans down there at the hospital, and then they bring us back things that they’ve made with it. Like kimchee, or different things like that, and that’s a really nice reward. For the most part, my favorite part about the market itself is just how people are able to enjoy the food for what it is. “Oh, that’s a beautiful, whatever.” And it starts a conversation and that can lead to either we get somebody out here to the farm or we plug them into some other group that’s able to help them in some way, shape or form. So it’s a very wrap-around, holistic experience that gives people a lot to look forward to, and a lot of hope and nourishment, so it’s a big deal.</p>
                             </div>
                             <p class="audio-buttons">
-                              <button class="audio-ctrl audio-play" tabindex="0">2:26 / PLAY INTERVIEW</button>  
+                              <button class="audio-ctrl audio-play" tabindex="0" aria-label="Play interview with Sean, two minutes and twenty six seconds">2:26 / PLAY INTERVIEW</button> 
                               <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
                               <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                             </p>
@@ -185,7 +185,7 @@
                   </li>
                   <li class="pax-3" tabindex="0">
                       <div class="hider">
-                          <h4>Chris Wolf</h4>
+                          <h2>Chris Wolf</h2>
                           <p>Co-founder, Growing Veterans</p>
                           <div class="audio"><p class="length">2:35 <span>/ play interview</span></p>
                             <audio controls class="player" preload="none">
@@ -199,7 +199,7 @@
                               <p>I’m Chris Wolf. I’m the co-founder and operations manager at Growing Veterans. Before working at Growing Veterans, I worked at a food bank farm where all the food we grew went to the local food bank, and that program actually closed, so the farm was empty and I was without a job. And miraculously I heard about this cool idea that some veterans had gotten together and decided to start a farm for military vets. I just had one of those moments where you see the path ahead of you and you just know what you need to do, so I called up Chris Brown, the director [at the time], and said, “You don’t know me, and I’m not a veteran, but I have a background in organic farming and a background in mental health counseling and working with trauma and traumatic brain injuries, and I would really love to work with veterans and I’d really love to teach them farming and use that therapeutically. So we got together and had a cup of coffee and talked for several hours and then we said, “Okay, let’s do this.” We ended up renting the same farm land that I had worked on previously, and started the first little Growing Veterans farm, about three acres, and after a couple years that was so successful that we added another farm, and then another farm, so now we’re running three really awesome farms. Getting soil on your skin or breathing it on a hike in the woods actually has an antidepressant effect on the brain that can be measured. And that’s in addition to the fact that getting sun exposure fights depression, getting physical exercise fights depression, eating more healthy, fresh fruits and vegetables helps with a lot of mental and emotional conditions. Not to mention the social aspects of working alongside other people, having a purpose, having a mission, feeling like you’re part of something valuable, all of those things fight depression. So we really see the synergistic effect of all of those different angles when we farm together. Growing Veterans has changed my life a lot. I’m the kind of person who really needs to have a purpose in my life. I need to be doing something important in the world, and Growing Veterans has really given me a mission that I can dedicate myself to and everything I do every day, I know that it’s going to help people, to help the planet that we live on. I just feel really, really good about the work that we’re doing. So it’s tremendously fulfilling to me, even when it’s really hard work. I still absolutely want to be here, absolutely want to keep doing it, and it’s very motivating to me.</p>
                             </div>
                             <p class="audio-buttons">
-                              <button class="audio-ctrl audio-play" tabindex="0">2:35 / PLAY INTERVIEW</button>  
+                              <button class="audio-ctrl audio-play" tabindex="0" aria-label="Play interview with Chris, two minutes and thirty five seconds">2:35 / PLAY INTERVIEW</button>  
                               <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
                               <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                             </p>
@@ -208,7 +208,7 @@
                   </li>
                   <li class="pax-4 navy" tabindex="0">
                       <div class="hider">
-                          <h4>Kenny Holzemer</h4>
+                          <h2>Kenny Holzemer</h2>
                           <p><span>Service: </span>U.S. Navy</p>
                           <p><span>Years: </span>1983–2005</p>
                           <div class="audio"><p class="length">1:47 <span>/ play interview</span></p>
@@ -223,7 +223,7 @@
                               <p>My name is Kenny Holzemer. I’m executive director of Growing Veterans. I’m a retired 22-year service member in the United States Navy as an air crewman, in-flight technician and electronic warfare operator on EP-3 reconnaissance aircraft. As veterans go, I guess, I’m middle-aged. I am an Operation Iraqi Freedom and Enduring Freedom veteran, but I joined in 1983, so I’ve been around quite a while. So I can identify with the younger guys who are still associated with — they are fresh veterans from OIF and OEF. But I’m of an age, at age 55, that I associate very well with the guys from the Vietnam era as well. So I’m kind of the missing link, so to speak. When I eventually started volunteering, then I got to know the crowd here better and realized that their mission was very important and worth serving, so I asked if I could volunteer as a grant writer. So I came on as a grant writer, was eventually hired as a development director, and then recently took over as executive director. It’s been absolutely wonderful to watch how people develop once they get here. And we know, without any doubt, that we’re saving lives. We’ve had two of our members tell us directly that if they had not been associated with us that they would by now have taken their own lives. So beyond that there are ways to quantify and qualify what’s good and needs improvement about the organization, but when it comes right down to it, if people tell you they are alive because of what you’re doing, then that’s what really matters. And that’s what I eat, sleep and drink, is the peer support that assures that that remains.</p>
                             </div>
                             <p class="audio-buttons">
-                              <button class="audio-ctrl audio-play" tabindex="0">1:47 / PLAY INTERVIEW</button>  
+                              <button class="audio-ctrl audio-play" tabindex="0" aria-label="Play interview with Kenny, one minute and forty seven seconds">1:47 / PLAY INTERVIEW</button>  
                               <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
                               <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                             </p>
@@ -232,7 +232,7 @@
                   </li>
                   <li class="pax-5 army" tabindex="0">
                       <div class="hider">
-                          <h4>Scotty Irwin</h4>
+                          <h2>Scotty Irwin</h2>
                           <p><span>Service: </span>U.S. Army</p>
                           <p><span>Years: </span>2010–2014</p>
                           <div class="audio"><p class="length">1:31 <span>/ play interview</span></p>
@@ -247,7 +247,7 @@
                               <p>My name is Scotty Irwin, and I was a 68 Whiskey in the Army — it’s a combat medic — for four years, and I was stationed here in Washington. And I am the farmers market manager for Growing Veterans. I got involved with Growing Veterans because a friend of mine that I had served in the military with committed suicide following his last deployment. Someone else I knew, another close friend, also committed suicide a few months after that, also because of PTSD. And a close family member at the time was dealing with PTSD and I was trying to get them to come here with me to start volunteering. I think when I got out of the military, that was something that was a staple for me, you know, it was always there, you were always with your brothers and sisters. Right place, right time, right uniform. There was a lot of predictability in that. And then when you get out, you don’t have that. I really needed that at the time. I had experienced quite a bit of trauma in a short period of time, a number of different things happening, including close friends committing suicide, and just being here and having that camaraderie again and being with your brothers and sisters, and having that, it’s almost like family, really helped me with that transition.</p>
                             </div>
                             <p class="audio-buttons">
-                              <button class="audio-ctrl audio-play" tabindex="0">1:31 / PLAY INTERVIEW</button>  
+                              <button class="audio-ctrl audio-play" tabindex="0" aria-label="Play interview with Scotty, one minute and thirty one seconds">1:31 / PLAY INTERVIEW</button>  
                               <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
                               <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                             </p>
@@ -256,7 +256,7 @@
                   </li>
                   <li class="pax-6 army" tabindex="0">
                       <div class="hider">
-                          <h4>Joel Swenson</h4>
+                          <h2>Joel Swenson</h2>
                           <p><span>Service: </span>U.S. Army</p>
                           <p><span>Years: </span>2007–2011</p>
                           <div class="audio"><p class="length">2:13 <span>/ play interview</span></p>
@@ -271,7 +271,7 @@
                               <p>My name is Joel Swenson. I served in the Army from 2007 to 2011 as a combat medic. I deployed to Afghanistan in 2009 in support of Operation Enduring Freedom. I spent a year over there. Got back and got out in 2011. When I started at Growing Veterans, I was initially a volunteer. I had just graduated, and I worked really hard, and never grew anything in my life. I’ve never been a farmer. I worked hard here. I ended up getting a part-time position, and, you know, turned into full-time. My work here at Growing Veterans — I am head of the research study that Seattle University is putting on, which measures how care farms help veterans with PTSD. I got involved with Growing Veterans just starting out — volunteer work. I was in between jobs, so I started volunteering here and just fell in love with farming right away. The impact that Growing Veterans has had — when I first got out, I was going through a pretty rough time with transition into the civilian world, like a lot of my veteran buddies, and the VA was prescribing me quite a few meds and they weren’t really working. When I started working here — I’m actually on my last med — I actually quit my last med, so I feel like working here is definitely attributed to me getting off medication and just working in the dirt. When we grow stuff and we actually see it — see the starts coming out of the dirt and then we transplant them and, you know, the whole process up to harvesting, and then selling it to veterans down at the VA hospital is really kind of a special experience. It kind of bridges the gap between the older generation of vets, you know, a lot of vets, older-generation vets — they were farmers before they got drafted, and a lot of guys come up: “I used to farm before Vietnam.” They start telling their story, and it’s a real special experience. Kind of gives me goosebumps.</p>
                             </div>
                             <p class="audio-buttons">
-                              <button class="audio-ctrl audio-play" tabindex="0">2:13 / PLAY INTERVIEW</button>  
+                              <button class="audio-ctrl audio-play" tabindex="0" aria-label="Play interview with Joel, two minutes and thirteen seconds">2:13 / PLAY INTERVIEW</button>  
                               <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
                               <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                             </p>
@@ -292,7 +292,7 @@
 
                 <p>Brown has a story of his own. In 2008, he returned from his final tour of duty. “There was a lot of guilt, grief, anger, frustration and anxiety,” he says. He also had to cope with a mild traumatic brain injury and post-traumatic stress disorder (PTSD).</p>
 
-                <p>His struggles were not unique. Along with PTSD, many returning veterans face depression. Substance abuse. Unemployment. Homelessness. And suicide. </p> 
+                <p>His struggles were not unique. Along with PTSD, many returning veterans face depression. Substance abuse. Unemployment. Homelessness. And suicidal thoughts. </p> 
 
                 <p class="gold-quote headline-gold">There was a lot of guilt, grief, anger, frustration and anxiety<span class="attribute"></span></p>
 
@@ -324,12 +324,14 @@
           </div> 
 
 
-          <div id="veg2" class="plant plant-2">
+          <ul>
+
+          <li id="veg2" class="plant plant-2">
             <div class="container">
                <div class="row">
                  <div class="col-md-10 col-md-offset-1 copy" style="text-align: center">         
                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                   width="250px" height="251px" viewBox="0 0 250 251" enable-background="new 0 0 250 251" xml:space="preserve" role="img" aria-labelledby="title desc">
+                   width="250px" height="251px" viewBox="0 0 250 251" enable-background="new 0 0 250 251" xml:space="preserve" role="presentation" aria-labelledby="title desc">
                    <title id="title">Carrots</title>
                    <desc id="desc">Carrot being plucked fromt he ground</desc>
                  <g>
@@ -397,17 +399,17 @@
                  </div> 
              </div> 
            </div>
-          </div> 
+          </li> 
 
-
-          <div id="veg3" class="plant plant-3">
+    
+          <li id="veg3" class="plant plant-3">
             <div class="container">
                <div class="row">
                  <div class="col-md-10 col-md-offset-1 copy" style="text-align: center">   
                  
                            
                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             width="250px" height="251px" viewBox="0 0 250 251" enable-background="new 0 0 250 251" xml:space="preserve" role="img" aria-labelledby="title  desc">
+                             width="250px" height="251px" viewBox="0 0 250 251" enable-background="new 0 0 250 251" xml:space="preserve" role="presentation" aria-labelledby="title  desc">
                              <title id="title">Truck</title>
                              <desc id="desc">Truck bouncing along the road with turnips in the bed</desc>
                            <g>
@@ -540,19 +542,19 @@
                             <ellipse id="rock" fill="#FFFFFF" cx="234.1" cy="155.429" rx="3.569" ry="4.183"/>
                            </g>
                            </svg>
-                     <p>6,200 of lbs.<span> of food donated</p> 
+                     <p>6,200 lbs.<span> of food donated</p> 
                  </div> 
              </div> 
            </div>
-          </div> 
+          </li> 
 
 
-          <div id="veg4" class="plant plant-4">
+          <li id="veg4" class="plant plant-4">
             <div class="container">
                <div class="row">
                  <div class="col-md-10 col-md-offset-1 copy" style="text-align: center">  
                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                   width="250px" height="251px" viewBox="0 0 250 251" enable-background="new 0 0 250 251" xml:space="preserve" role="img" aria-labelledby="title  desc">
+                   width="250px" height="251px" viewBox="0 0 250 251" enable-background="new 0 0 250 251" xml:space="preserve" role="presentation" aria-labelledby="title  desc">
                    <title id="title">Carrot picking</title>
                    <desc id="desc">Person picking a carrot from the ground</desc>
                  <path fill="none" stroke="#FFFFFF" stroke-width="7.1001" stroke-miterlimit="10" d="M238.685,127.294
@@ -599,7 +601,9 @@
                  </div> 
              </div> 
            </div>
-          </div> 
+          </li> 
+
+          </ul>
 
           <div class="parallaxContainer" id="parallaxContainer2">
            <!--  <div class="layer1" style="background-position: 0% 0%;"></div> -->
@@ -646,7 +650,7 @@
 
                <p>Now a newly minted graduate, Brown recently transitioned from executive director of Growing Veterans to president of the board of directors — freeing up time to launch his career as a PTSD counselor for veterans.</p>
 
-                <p>Brown says the UW’s highly flexible <a href="http://socialwork.uw.edu/programs/master-of-social-work-program">M.S.W. extended degree program</a> gave him much more than just the tools and credentials he needed to be a counselor. </p>
+                <p>Brown says the UW’s flexible <a href="http://socialwork.uw.edu/programs/master-of-social-work-program">M.S.W. extended degree program</a> gave him much more than just the tools and credentials he needed to be a counselor. </p>
 
                 <p>His professors supported him as he focused many of his research projects on furthering the mission of Growing Veterans. And, though his concentration was in integrative health and mental health practice, Brown also learned about leadership and community building.</p>
 

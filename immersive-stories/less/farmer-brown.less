@@ -95,16 +95,16 @@ p {
         .copy {
             background-color: transparent;
         }
-        h2 {
-            font-size: 21px;
-            font-weight: normal;
-            margin: 60px 0 50px;
-            color: #909090;
-        }        
-      // .headline-gold {
-      //     font-family: @font-family-headline;
-      //     font-weight: 900;
-      // }
+        //  h2 {
+        //      font-size: 21px;
+        //      font-weight: normal;
+        //      margin: 60px 0 50px;
+        //      color: #909090;
+        //  }        
+        // .headline-gold {
+        //     font-family: @font-family-headline;
+        //     font-weight: 900;
+        // }
     }
     @media(min-width:768px) {
         &.text-block {
@@ -513,9 +513,22 @@ button.close-video {
     z-index: 999;
     iframe {
         margin: 0;
+        &:focus,
+        &:active {
+            outline: 10px solid red;
+        }
+    }
+    &:focus,
+    &:active {
+        outline: 10px solid yellow;
     }
 }
-
+#video {
+    &:focus,
+    &:active {
+        border: 10px solid blue;
+    }
+}
 .audio-block {
     width: 100%;
     padding: 50px 0;
@@ -600,7 +613,7 @@ button.close-video {
                     font-weight: bold;
                 }
             }
-            h4 {
+            h2 {
                 font-size: 26px;
                 text-transform: uppercase;
                 font-family: @uni;
@@ -740,10 +753,16 @@ button.close-video {
 
 #veg {
     position: relative;
+    ul {
+        padding: 0;
+        margin: 0;
+    }
     .plant {
+        display: block;
         background-size: auto 100%;
         background-position: center 0;
         background-repeat: no-repeat;
+        list-style: none;
         p {
             color: #fff;
             font-size: 50px;
