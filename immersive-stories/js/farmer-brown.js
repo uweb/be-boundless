@@ -137,6 +137,10 @@ $(function() {
 		$this.parent().children('li').not($this).removeClass('active');
 	})
 
+	$('.slide a').on('click', function(e){
+		e.preventDefault();
+	})
+
 
 	// Focus on button triggers 
 	$audioPlay.bind("focus blur", function(event){
