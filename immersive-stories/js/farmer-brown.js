@@ -32,7 +32,7 @@ $(function() {
 	    document.getElementById("boundless-video").innerHTML = 
 	    	'<button class="close-video"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>' +
 	    	'<div id="youtube-video">' + 
-			'<iframe id="embedVid" width=' + $video.width() + ' height=' + $video.height() + ' src="https://www.youtube.com/embed/ZUg9zCFZY0Y?autoplay=1" frameborder="0" allowfullscreen autoplay></iframe>' +
+			'<iframe id="embedVid" width=' + $video.width() + ' height=' + $video.height() + ' src="https://www.youtube.com/embed/J1h3wLKCsfQ?rel=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allowfullscreen autoplay></iframe>' +
 	    	'</div>';
 	   	
 	   	setTimeout( function(){
