@@ -22,6 +22,8 @@ function resize(controller){
 }
 
 
+
+
 $(function() {
 
 	 $(".play").click(function(e){
@@ -41,7 +43,6 @@ $(function() {
 	  	});
 
 	 });
-
 	  
 	    // init controller
 	var controller = new ScrollMagic.Controller(),
@@ -131,6 +132,9 @@ $(function() {
 		}
 		$this.parent().children('li').not($this).removeClass('active');
 	})
+
+	// Prevent issues with clicking on slideshow
+	$('.slide a').on('click',function(e){ e.preventDefault()  })
 
 
 	// Focus on button triggers 

@@ -1,0 +1,45 @@
+/*
+	General styles
+*/
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #c7e1ff;
+	font-size: 13px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body, html {
+	height: 100%
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Work Sans', sans-serif;
+	margin-bottom: 10px;
+}
+h1 {
+	font-size: 60px;
+}
+h2 {
+	font-size: 20px;
+}
+a, a:visited {
+	text-decoration: none;
+	color: #2e639e;
+}
+a:hover {
+	text-decoration: underline;
+}
+.touchonly {
+	display: none;
+}
+html.touch .touchonly {
+	display: block;
+}
+
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
