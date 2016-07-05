@@ -138,15 +138,7 @@ $(function() {
 		$this.parent().children('li').not($this).removeClass('active');
 	})
 
-<<<<<<< HEAD
-	$('.slide a').on('click', function(e){
-		e.preventDefault();
-	})
-=======
-	// Prevent issues with clicking on slideshow
 	$('.slide a').on('click',function(e){ e.preventDefault()  })
->>>>>>> 56f953327ca166dc192d41dee2e7fda6d51b3cd9
-
 
 	// Focus on button triggers 
 	$audioPlay.bind("focus blur", function(event){
