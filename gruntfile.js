@@ -89,7 +89,8 @@ module.exports = function(grunt) {
                 'style.css': 'less/style.less',
                 'immersive-stories/css/common.css': 'immersive-stories/less/common.less',
                 'immersive-stories/css/farmer-brown.css': 'immersive-stories/less/farmer-brown.less',
-        		    'campaign/style.css': 'campaign/less/style.less',
+                'campaign/css/campaign-style.css': 'campaign/**/*.less',
+                'campaign/css/header.css': 'campaign/less/header.less',
         	    }
         }
     },

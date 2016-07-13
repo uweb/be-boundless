@@ -75,7 +75,7 @@ $(function() {
 	
 	
 	  // build scenes
-	  new ScrollMagic.Scene({
+	  var scene7 = new ScrollMagic.Scene({
 	            triggerElement: "#intro-vid",
 	            triggerHook: "onEnter",
 	            duration: "100%",
@@ -87,7 +87,7 @@ $(function() {
 
 	
 	 // Parallax scene
-	 var scene = new ScrollMagic.Scene({
+	 var scene8 = new ScrollMagic.Scene({
 	            triggerElement: "#parallaxContainer1",
 	            offset: "60vh",      
 	            duration: 3000
@@ -105,19 +105,19 @@ $(function() {
 	         .setTween(parallaxer2)
 	         .addTo(controller);
 
-	 new ScrollMagic.Scene({triggerElement: "#veg1", offset: "60vh"})
+	 var veg1 = new ScrollMagic.Scene({triggerElement: "#veg1", offset: "60vh"})
 	 				.setClassToggle("#veg1", "active") // add class toggle
 	 				//.addIndicators()
 	 				.addTo(controller);
-	 new ScrollMagic.Scene({triggerElement: "#veg2", offset: "60vh"})
+	 var veg2 = new ScrollMagic.Scene({triggerElement: "#veg2", offset: "60vh"})
 	 				.setClassToggle("#veg2", "active") // add class toggle
 	 				//.addIndicators()
 	 				.addTo(controller);
-	 new ScrollMagic.Scene({triggerElement: "#veg3", offset: "60vh"})
+	 var veg3 = new ScrollMagic.Scene({triggerElement: "#veg3", offset: "60vh"})
 	 				.setClassToggle("#veg3", "active") // add class toggle
 	 				//.addIndicators()
 	 				.addTo(controller);
-	 new ScrollMagic.Scene({triggerElement: "#veg4", offset: "60vh"})
+	 var veg4 = new ScrollMagic.Scene({triggerElement: "#veg4", offset: "60vh"})
 	 				.setClassToggle("#veg4", "active") // add class toggle
 	 				//.addIndicators()
 	 				.addTo(controller);  
