@@ -1,13 +1,97 @@
+// All the Variables from the UW 2014 theme
+@import "../../themes/uw-2014/less/uw.variables.less";
+@import "../../themes/uw-2014/less/flat/mixins.less";
+
 body {
 	background-color: black;
 }
+ section {
+ 	//outline: 1px solid red
+ }
+
+
+
+// Dynamically loaded content
+
+// Dynamic close button
+button#empty {
+	position: fixed;
+	border: none;
+	top: 100px;
+	right: 0;
+	width: 70px;
+	height: 70px;
+	background-color: white;
+	z-index: 3;
+	padding: 0;
+	display: none;
+	line {
+		stroke: #8e8e8e !important;
+	}
+	.dyno_story & {
+		display: block;
+	}
+}
+//Loading div
+div#loadingEl {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: url('../img/w.gif') center center no-repeat white;
+	z-index: 1;
+	opacity: 0;
+	display: none;
+	.loading & {
+		display: block;
+	}
+}
+
+
+#dyno {
+	z-index: -1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+	overflow-y: scroll;
+}
+.dyno_story {
+	#dyno {
+		z-index: 2;
+	}
+
+}
+
+
 .scrollContent {
 	color: white;
+	position: relative;
+	h2 {
+		font-weight: 900;
+		font-size: 4.5vw;
+		margin-top: 12vh;
+		line-height: 1.1;
+		text-transform: uppercase;
+		white-space: normal;
+	}
+	p {
+		color: white;
+	}
 	div {
 		text-align: left;
-		padding: 100px;
+		width: 70vw;
+		padding-left: 200px;
+		position: relative;
+		z-index: 1;
 		h1 {
 			text-transform: uppercase;
+		}
+		* {
+			white-space: normal;
 		}
 	}
 	section {
@@ -20,15 +104,151 @@ body {
 		background-repeat: no-repeat;
 	}
 	section:nth-child(1) {
-		background-image: url(img/camp-bg1.jpg);
+		background-image: url(../img/camp-bg1.jpg);
 	}
 	section:nth-child(2) {
-		background-image: url(img/camp-bg2.jpg);
+		background-image: url(../img/camp-bg2.jpg);
 	}
 	section:nth-child(3) {
-		background-image: url(img/camp-bg3.jpg);
+		background-image: url(../img/camp-bg3.jpg);
+	}
+	section:nth-child(4) {
+		background-image: url(../img/camp-bg4.jpg);
+	}
+	#slide1 {
+		
+	}
+
+	#slide2 {
+		h2 {
+			font-size: 4vw;
+		}
+	}
+
+	#slide3 {
+		h2 {
+			font-size: 4vw;
+		}
+	}
+	@media(min-width:768px) {
+	}
+	@media(max-width:768px) {
 	}
 }
+
+
+
+#arrows {
+
+	// Arrow padding
+	@arrowIn : 30px; 
+
+	a.prevSlide,
+	a.nextSlide {
+		position: fixed;
+		top: 50%;
+		margin-top: -125px;
+		height: 250px;
+		background-image: url(../img/arrow.svg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 100%;
+		width: 7vw;
+		opacity: 1;
+	}
+	a.prevSlide {
+		background-image: url(../img/arrow-prev.svg);
+		.translate(-200px, 0px);
+		left: @arrowIn;
+		.loaded & {
+			.translate(0, 0px);
+			opacity: 1;
+		}
+	}
+	a.nextSlide {
+		.transition(all .5s linear .1s);
+		.translate(200px, 0px);
+		right: @arrowIn;
+		.loaded & {
+			.translate(0, 0px);
+			opacity: 1;
+		}
+
+	}
+	&.hideNext {		
+		.transition(all 1s linear .5s);
+		a.nextSlide {
+			.translate(200px, 0px);
+			opacity: 0;
+		}
+	}
+	&.hidePrev {
+		.transition(all 1s linear .5s);
+		a.prevSlide {
+			.translate(-200px, 0px);
+			opacity: 0;
+		}
+	}
+}
+
+#progress {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background-color: @lightgold;
+	ul {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		li {
+			list-style: none;
+			display: table-cell;
+			height: 1vh;
+			border-right: 2px solid rgba(255, 255, 255, 0.34);
+			position: relative;
+			a {				
+				.skew(-15deg,0);
+				display: block;				
+				.popup {
+					.transition(all .2s linear);
+					.translate(0,300px);
+				}
+				&:hover .popup {
+					.translate(0,0);
+				}
+			}
+			a {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				p {
+					font-weight: 900;
+					font-family: @font-family-headline;
+					text-transform: uppercase;
+					color: @lightgold;
+					display: block;
+					margin-bottom: 20px;
+					line-height: 1.1em;
+					.skew(15deg,0);
+				}
+				.popup {
+					background-color: white;
+					padding: 20px;
+					display: inline-block;
+					border-bottom: 1vh solid @darkgold;
+					* {						
+						
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+
 
 
 #content-wrapper, 

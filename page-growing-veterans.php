@@ -1,7 +1,6 @@
-<?php get_header(); ?>  
-    
-    <?php uw_mobile_front_page_menu('bighero'); ?>
+<?php get_template_part('header', 'campaign'); ?>
 
+<div id="immersive">
 
     <section class="intro" id="intro-vid">          
 
@@ -700,6 +699,7 @@
 
     </main> 
 
+
       
       <!-- **** CSS **** -->
       
@@ -707,6 +707,8 @@
       <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/farmer-brown.css' ?>' type='text/css' media='all' />
       
       <!-- **** JS **** -->      
+
+</div>
 
       <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
