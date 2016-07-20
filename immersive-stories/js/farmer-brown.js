@@ -79,7 +79,7 @@ $(function() {
 	            triggerElement: "#intro-vid",
 	            triggerHook: "onEnter",
 	            duration: "100%",
-	            offset: window.innerHeight - 175
+	            offset: window.innerHeight - 30
 	          })
 	          .setTween(h1Skew)
 	         // .addIndicators()
