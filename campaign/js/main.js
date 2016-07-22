@@ -58,26 +58,44 @@ $(function(){
 		offsetX 	= window.pageXOffset;
 	})
 
-	// ScrollMagic
-	var controllerCampaign = new ScrollMagic.Controller({vertical: false});
 
-	// Build scrubber
+
+	//
+	//
+	//
+	//     Build scrubber
+	//
+	//
+	//
+
 
 	var curXPos 		= 0,
 		mouseX 			= 0,
 	    curDown 		= false,
 	    elm 			= document.getElementById('scrub'),
 	    elmCont 		= document.getElementById('scrubCont'),
-	    elmContWidth 	= elmCont.offsetWidth,
+	    elmContWidth 	= elmCont.offsetWidth - 100,
 	    elmX			= 0
 	
-	elmCont.addEventListener('mousemove', function(e){ 
-	  if(curDown === true){
-	    elm.style.left = ((e.clientX < 50 ? 50 : e.clientX) - (mouseX - elmX)) + 'px';
-		window.scrollTo(widthInner * ($('section').length - 1) / (elmCont.offsetWidth / (e.clientX)), 0);
-		console.log(widthInner * ($('section').length - 1) / (elmCont.offsetWidth / (e.clientX - (mouseX - elmX))))
-	  }
-	});
+
+	// Calculates the scrubber bottom scrubber bar based on scroll
+	function scroller(){
+		if(curDown === false) {
+			requestAnimationFrame(scroller)
+			elm.style.left = (document.body.scrollLeft / (widthInner * ($('section').length - 1))) * elmContWidth + 'px';
+		}
+	}
+
+	// Calculates the scrubber bottom scrubber bar based on mouse drag
+	function mouseMove(e){
+		if(curDown === true){
+		  	elm.style.left = ((e.clientX < 50 ? 50 : e.clientX) - (mouseX - elmX)) + 'px';
+			window.scrollTo(widthInner * ($('section').length - 1) / (elmCont.offsetWidth / (e.clientX)), 0);
+		}
+	}
+
+	// Event listeners for scroll and mouse movement	
+	elmCont.addEventListener('mousemove', mouseMove);
 	
 	elmCont.addEventListener('mousedown', function(e){ 
 		curDown = true; 
@@ -87,15 +105,27 @@ $(function(){
 	});
 	elmCont.addEventListener('mouseup', function(e){ curDown = false; });
 
-	document.addEventListener('scroll', function(e){
-	    elm.style.left = widthInner * ($('section').length - 1) / (elmCont.offsetWidth / document.body.scrollLeft) + 'px'
-	console.log('scroll')
+	document.addEventListener('scroll', function(){
+		requestAnimationFrame(scroller)
 	})
 
 
-widthInner * ($('section').length - 1) / (elmCont.offsetWidth / (e.clientX - (mouseX - elmX)))
 
 
+	//
+	//
+	//
+	//     ScrollMagic/GSAP Timelines
+	//
+	//
+	//
+
+
+	// ScrollMagic controller
+	var controllerCampaign = new ScrollMagic.Controller({vertical: false});
+
+
+	// Animations tweens
 	var fade1 = new TimelineMax()
 		.to('#slide1text', 2, {x: '-100%', ease: Power0.easeInOut }, 0)
 		//.to('#bar', 1, { left: 0 })
@@ -108,11 +138,11 @@ widthInner * ($('section').length - 1) / (elmCont.offsetWidth / (e.clientX - (mo
 	var fade4 = new TimelineMax()
 		.fromTo('#slide4text', 1, {x: '100%', scale: 0.75 }, {x: '0%', scale: 1.025 })
 		//.to('#bar', 1, { left: '103%'})
-	var bar = new TimelineMax()
-		.to('#bar', 1, { left: '100%' }, 0.5)
+	// var bar = new TimelineMax()
+	// 	.to('#bar', 1, { left: '100%' }, 0.5)
 
-	// build scenes
-	
+
+	// Scenes
 
 	// In order to toggle current section, 
 	$('section').each(function(e){
@@ -140,13 +170,14 @@ widthInner * ($('section').length - 1) / (elmCont.offsetWidth / (e.clientX - (mo
 
 
 
-	var scrollBar = new ScrollMagic.Scene({
-		duration: widthAllSlides,
-		triggerElement: 'body',
-		triggerHook: 1
-	})
-		.setTween(bar)
-		.addTo(controllerCampaign);
+	// var scrollBar = new ScrollMagic.Scene({
+	// 	duration: widthAllSlides,
+	// 	triggerElement: 'body',
+	// 	triggerHook: 1
+	// })
+	// 	.setTween(bar)
+	// 	.addTo(controllerCampaign);
+
 
 	// These are to hide the previous and next arrows when we're on the first and last slides
 	var firstSlide = new ScrollMagic.Scene({
@@ -198,8 +229,26 @@ widthInner * ($('section').length - 1) / (elmCont.offsetWidth / (e.clientX - (mo
 	.addTo(controllerCampaign);
 
 
-	// Scroll Inversion
+
+	//
+	//
+	//
+	//     Invert Scroll
+	//
+	//
+	//
+
 	scrollConverter.activate();
+
+
+
+	//
+	//
+	//
+	//     Dynamic content load
+	//
+	//
+	//
 
 
 	$('.uw-btn').on('click',function(){
@@ -221,7 +270,7 @@ widthInner * ($('section').length - 1) / (elmCont.offsetWidth / (e.clientX - (mo
 			    }, 500)
 			});
 
-			scrollConverter.deactivate();	
+			scrollConverter.deactivate(currentOffset);	
 
 		})
 

@@ -50,12 +50,12 @@
 
   <div id="progress">
 
-    <ul>
+    <!-- <ul>
       <li><a href="#"><span class="popup"><p>Be boundless</p></span></a>       </li>
       <li><a href="#"><span class="popup"><p>Together undaunted</p> </span></a></li>
       <li><a href="#"><span class="popup"><p>For a world of good</p></span></a></li>
       <li><a href="#"><span class="popup"><p>We > me</p></span></a>            </li>
-    </ul>
+    </ul> -->
     <a href="" id="bar"></a>
 
     <!-- <img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/ice.jpg'?>"> -->
