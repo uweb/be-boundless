@@ -81,13 +81,13 @@ $(function(){
 	// Calculates the scrubber bottom scrubber bar based on scroll
 	function scroller(){
 		if(curDown === false) {
-			requestAnimationFrame(scroller)
 			elm.style.left = (document.body.scrollLeft / (widthInner * ($('section').length - 1))) * elmContWidth + 'px';
 		}
 	}
 
 	// Calculates the scrubber bottom scrubber bar based on mouse drag
 	function mouseMove(e){
+
 		if(curDown === true){
 		  	elm.style.left = ((e.clientX < 50 ? 50 : e.clientX) - (mouseX - elmX)) + 'px';
 			window.scrollTo(widthInner * ($('section').length - 1) / (elmCont.offsetWidth / (e.clientX)), 0);
@@ -106,7 +106,7 @@ $(function(){
 	elmCont.addEventListener('mouseup', function(e){ curDown = false; });
 
 	document.addEventListener('scroll', function(){
-		requestAnimationFrame(scroller)
+		window.requestAnimationFrame(scroller)
 	})
 
 
