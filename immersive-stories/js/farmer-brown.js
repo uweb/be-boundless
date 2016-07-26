@@ -32,10 +32,15 @@ $(function() {
 	 	e.preventDefault();
 	    $body.toggleClass("playing");
 	    document.getElementById("boundless-video").innerHTML = 
-	    	'<button class="close-video" style="display: inline-block;"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>' +
+	    	'<button class="close-video"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>' +
 	    	'<div id="youtube-video">' + 
-			'<iframe width=' + $video.width() + ' height=' + $video.height() + ' src="https://www.youtube.com/embed/ZUg9zCFZY0Y?autoplay=1" frameborder="0" allowfullscreen autoplay></iframe>' +
+			'<iframe title="YouTube video" id="embedVid" width=' + $video.width() + ' height=' + $video.height() + ' src="https://www.youtube.com/embed/V2svAdaEe30?rel=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allowfullscreen autoplay></iframe>' +
 	    	'</div>';
+	   	
+	   	setTimeout( function(){
+	   		$('#video iframe')[0].focus()
+	   	}, 500 );
+
 	   	$(".close-video").click(function(){
 	   		$(".play").removeClass("hidden");
 	   		$body.toggleClass("playing");
@@ -133,9 +138,7 @@ $(function() {
 		$this.parent().children('li').not($this).removeClass('active');
 	})
 
-	// Prevent issues with clicking on slideshow
 	$('.slide a').on('click',function(e){ e.preventDefault()  })
-
 
 	// Focus on button triggers 
 	$audioPlay.bind("focus blur", function(event){
