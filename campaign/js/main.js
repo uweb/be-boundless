@@ -75,28 +75,31 @@ $(function(){
 	    elm 			= document.getElementById('scrub'),
 	    elmCont 		= document.getElementById('scrubCont'),
 	    elmContWidth 	= elmCont.offsetWidth - 100,
-	    elmX			= 0
+	    elmX			= 0,
+	    scrollWidth		= (widthInner * ($('section').length - 1))
 	
 
-	// Calculates the scrubber bottom scrubber bar based on scroll
-	function scroller(){
-		if(curDown === false) {
-			elm.style.left = (document.body.scrollLeft / (widthInner * ($('section').length - 1))) * elmContWidth + 'px';
-		}
-	}
 
 	// Calculates the scrubber bottom scrubber bar based on mouse drag
-	function mouseMove(e){
-
+	function mouseMove(cliX){
 		if(curDown === true){
-		  	elm.style.left = ((e.clientX < 50 ? 50 : e.clientX) - (mouseX - elmX)) + 'px';
-			window.scrollTo(widthInner * ($('section').length - 1) / (elmCont.offsetWidth / (e.clientX)), 0);
+		  	elm.style.left = Math.ceil(((cliX < 75 ? 75 : cliX) - (mouseX - elmX))) + 'px';
+			window.scrollTo(widthInner * ($('section').length - 1) / (elmCont.offsetWidth / (cliX)), 0);
 		}
 	}
 
 	// Event listeners for scroll and mouse movement	
-	elmCont.addEventListener('mousemove', mouseMove);
-	
+	// Calculates the scrubber bottom scrubber bar based on scroll
+	var cliX = 0;
+
+	window.addEventListener('mousemove', function(e) {
+	  cliX = e.clientX;
+	  window.requestAnimationFrame(function() {
+	    mouseMove(cliX);
+	  });
+	});
+
+
 	elmCont.addEventListener('mousedown', function(e){ 
 		curDown = true; 
 		curXPos = e.pageX; 
@@ -105,12 +108,25 @@ $(function(){
 	});
 	elmCont.addEventListener('mouseup', function(e){ curDown = false; });
 
-	document.addEventListener('scroll', function(){
-		window.requestAnimationFrame(scroller)
-	})
+	
+	// Calculates the scrubber bottom scrubber bar based on scroll
+	var last_known = 0;
 
+	function scroller(last_known){
+		elm.style.left = Math.ceil((last_known / scrollWidth) * elmContWidth) + 'px';
+	}
 
+	window.addEventListener('scroll', function(e) {
+	  last_known = document.body.scrollLeft;
 
+	  if (!curDown) {
+	    window.requestAnimationFrame(function() {
+	      scroller(last_known);
+	    });
+	  }
+	});
+
+	
 
 	//
 	//

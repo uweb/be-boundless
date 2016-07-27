@@ -108,6 +108,7 @@ div#loadingEl {
 		color: white;
 	}
 	div {
+		will-change: transform; 
 		text-align: left;
 		width: 80vw;
 		padding: 0 10vw;
@@ -275,6 +276,11 @@ div#loadingEl {
 		width: 100px;
 		height: 10px;
 		background-color: @purple;
+		cursor: pointer;
+		.transition(height .1s ease-in-out);
+		//&:hover {
+		//	height: 30px;
+		//}
 	}
 }
 

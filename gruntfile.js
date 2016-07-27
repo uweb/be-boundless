@@ -81,7 +81,7 @@ module.exports = function(grunt) {
         app: {
 	        options: {
 	         compress: true,
-                sourceMap: true,
+                sourceMap: false,
                 sourceMapFilename: 'style.css.map',
                 sourceMapURL: 'style.css.map'
         	    },
