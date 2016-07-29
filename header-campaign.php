@@ -27,18 +27,11 @@
 <div id="campaign-header" class="active">
     
     <a class="home" href="#">Home</a>
+
     <div class="thin">
         <a href="#">Support the campaign</a>
-        <button id="campaign-expand">View menu
-            <svg aria-hidden="true" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 width="28.777px" height="28.83px" viewBox="0 0 28.777 28.83" enable-background="new 0 0 28.777 28.83" xml:space="preserve">
-            <rect class="rect-1" x="4.417" y="6.9" fill="#FFFFFF" width="23.5" height="2.5"/>
-            <rect class="rect-2" x="4.417" y="13.026" fill="#FFFFFF" width="23.5" height="2.5"/>
-            <rect class="rect-3" x="4.417" y="19.151" fill="#FFFFFF" width="23.5" height="2.5"/>
-            </svg>
-        </button>
+        
     </div>
-
     <div class="thick">
         <ul>
             <li><a href="#">Experience</a></li>
@@ -47,5 +40,12 @@
             <li><a href="#">Give now</a></li>
         </ul>        
     </div>
-
+    <button id="campaign-expand">View menu
+      <div aria-hidden="true" id="ham">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
 </div>

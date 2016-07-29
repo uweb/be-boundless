@@ -18,19 +18,18 @@ $(function(){
     function scrollIt(el){
     	var $html 		= $('html, body'),
     		$activiado 	= $('.activiado'),
-    		$el 		= $(el),
-    		$type		= 0;
+    		$distance	= 0;
 
     	// Check which anchor was clicked
-    	if ( $(el).hasClass('prevSlide') ) {
-    		$type = $activiado.prev().length ? $activiado.prev().offset().left : 0
+    	if ( el.classList.contains('prevSlide') ) {
+    		$distance = $activiado.prev().length ? $activiado.prev().offset().left : 0
     	} else {
-    		$type = $activiado.next().length ? $activiado.next().offset().left : 0
+    		$distance = $activiado.next().length ? $activiado.next().offset().left : 0
     	}
 
     	// Animated based to element
       	$html.animate({
-      	  scrollLeft: $type
+      	  scrollLeft: $distance
       	}, {
         	duration: 1000,
         	specialEasing: {
@@ -39,6 +38,17 @@ $(function(){
    	 	});
     }         
 
+    // Navigation via keyboard arrows
+
+    document.onkeydown = function(e){
+    	if ( e.keyCode == '37' ) {
+    		$('.prevSlide').click();
+    	} else if ( e.keyCode == '39')  {
+    		$('.nextSlide').click();
+    	} else {
+    		return;
+    	}
+    }
 
 
     // Left/Right arrow event listener
@@ -69,61 +79,82 @@ $(function(){
 	//
 
 
-	var curXPos 		= 0,
-		mouseX 			= 0,
-	    curDown 		= false,
-	    elm 			= document.getElementById('scrub'),
-	    elmCont 		= document.getElementById('scrubCont'),
-	    elmContWidth 	= elmCont.offsetWidth - 100,
-	    elmX			= 0,
-	    scrollWidth		= (widthInner * ($('section').length - 1))
+	var curXPos 			= 0,
+		mouseX 				= 0,
+	    curDown 			= false,
+	    scrubBar			= document.getElementById('scrub'),
+	    scrubContainer		= document.getElementById('scrubCont'),
+	    ScrubContainerWidth	= scrubContainer.offsetWidth - 100,
+	    elmX				= 0,
+	    numSlides			= $('section').length - 1,
+	    scrollWidth			= widthInner * numSlides;
 	
 
 
 	// Calculates the scrubber bottom scrubber bar based on mouse drag
 	function mouseMove(cliX){
 		if(curDown === true){
-		  	elm.style.left = Math.ceil(((cliX < 75 ? 75 : cliX) - (mouseX - elmX))) + 'px';
-			window.scrollTo(widthInner * ($('section').length - 1) / (elmCont.offsetWidth / (cliX)), 0);
+		  	scrubBar.style.left = Math.ceil(((cliX < 75 ? 75 : cliX) - (mouseX - elmX))) + 'px';
+			window.scrollTo(widthInner * numSlides / (scrubContainer.offsetWidth / cliX), 0);
 		}
 	}
 
 	// Event listeners for scroll and mouse movement	
 	// Calculates the scrubber bottom scrubber bar based on scroll
-	var cliX = 0;
+	var cliX = 0,
+		moveFlag = false
 
 	window.addEventListener('mousemove', function(e) {
 	  cliX = e.clientX;
-	  window.requestAnimationFrame(function() {
-	    mouseMove(cliX);
-	  });
+	  if( !moveFlag ) {
+	  	window.requestAnimationFrame(function() {
+	  	  mouseMove(cliX);
+	  	  moveFlag = true;
+	  	});
+	  }
+	  moveFlag = false;
 	});
 
-
-	elmCont.addEventListener('mousedown', function(e){ 
+	// Set variables when clicked
+	scrubContainer.addEventListener('mousedown', function(e){ 
 		curDown = true; 
 		curXPos = e.pageX; 
 		mouseX = e.clientX;
-		elmX = elm.offsetLeft;
+		elmX = scrubBar.offsetLeft;
 	});
-	elmCont.addEventListener('mouseup', function(e){ curDown = false; });
+
+	// Cancel drag event so scrubber doesn't fly around
+	window.addEventListener('mouseup', function(e){ 
+		curDown = false; 
+	});
+	
+	// Test for mouse off of page
+	// document.addEventListener('mouseout', function(e) {
+    //     e = e ? e : window.event;
+    //     var from = e.relatedTarget || e.toElement;
+    //     if (!from || from.nodeName == "HTML") {
+    //         curDown = false;
+    //     }
+    // });
 
 	
 	// Calculates the scrubber bottom scrubber bar based on scroll
-	var last_known = 0;
+	var last_known = 0, 
+		scrollFlag = false;
 
 	function scroller(last_known){
-		elm.style.left = Math.ceil((last_known / scrollWidth) * elmContWidth) + 'px';
+		scrubBar.style.left = Math.ceil((last_known / scrollWidth) * ScrubContainerWidth) + 'px';
 	}
 
 	window.addEventListener('scroll', function(e) {
-	  last_known = document.body.scrollLeft;
-
+	  last_known = window.pageXOffset; 
 	  if (!curDown) {
 	    window.requestAnimationFrame(function() {
 	      scroller(last_known);
+	      scrollFlag = true;
 	    });
 	  }
+	  scrollFlag = false;
 	});
 
 	
@@ -267,8 +298,10 @@ $(function(){
 	//
 
 
-	$('.uw-btn').on('click',function(){
-		currentOffset = window.pageXOffset;
+	$('.uw-btn').on('click',function(e){
+		// currentOffset = window.pageXOffset;
+		e.preventDefault();
+
 		$body.addClass('loading');
 
 		$dyno.load('growing-veterans/ #immersive', function(a,b,c){
@@ -286,7 +319,7 @@ $(function(){
 			    }, 500)
 			});
 
-			scrollConverter.deactivate(currentOffset);	
+			scrollConverter.deactivate();
 
 		})
 
@@ -298,7 +331,7 @@ $(function(){
 			$dyno.empty();
 		}, 500);
 		$body.removeClass('dyno_story');
-		scrollConverter.activate(currentOffset);
+		scrollConverter.activate();
 	})
 
 
