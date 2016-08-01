@@ -297,6 +297,55 @@ $(function(){
 	// 	.addTo(controllerCampaign);
 
 
+	// These are to hide the previous and next arrows when we're on the first and last slides
+	var firstSlide = new ScrollMagic.Scene({
+		duration: '100%',
+		triggerElement: '#slide1',
+		triggerHook: 0
+	})
+		.setClassToggle('#arrows', 'hidePrev')
+		.setTween(fade1)
+		//.addIndicators({name: "1 (duration: 300)"})
+		.addTo(controllerCampaign);
+
+	var secondSlide = new ScrollMagic.Scene({
+		duration: '125%',
+		triggerElement: '#slide2',
+		triggerHook: 0.9
+	})
+		.setTween(fade2)
+		// .addIndicators({name: "2 (duration: 300)"})
+		.addTo(controllerCampaign);
+
+
+	var thirdSlide = new ScrollMagic.Scene({
+		duration: '125%',
+		triggerElement: '#slide3',
+		triggerHook: 0.9
+	})
+		.setTween(fade3)
+		//.addIndicators({name: "2 (duration: 300)"})
+		.addTo(controllerCampaign);
+
+	var fourthSlide = new ScrollMagic.Scene({
+		duration: '125%',
+		triggerElement: '#slide4',
+		triggerHook: 0.9
+	})
+		.setTween(fade4)
+		//.addIndicators({name: "2 (duration: 300)"})
+		.addTo(controllerCampaign);
+
+
+	var lastSlide = new ScrollMagic.Scene({
+		duration: '125%',
+		triggerElement: '#slides section:last-child',
+		triggerHook: 0
+	})
+	.setClassToggle('#arrows', 'hideNext')
+	//.addIndicators({name: "1 (duration: 300)"})
+	.addTo(controllerCampaign);
+
 
 
 	//
@@ -307,7 +356,7 @@ $(function(){
 	//
 	//
 
-
+	scrollConverter.activate();
 
 
 
