@@ -1,5 +1,17 @@
 $(function(){
 
+	// first add raf shim
+	// http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/
+	window.requestAnimFrame = (function(){
+	  return  window.requestAnimationFrame       ||
+	          window.webkitRequestAnimationFrame ||
+	          window.mozRequestAnimationFrame    ||
+	          function( callback ){
+	            window.setTimeout(callback, 1000 / 60);
+	          };
+	})();
+
+
 	// Get the width of the viewport
 	var widthInner 		= window.innerWidth,
 		offsetXes 		= 500,
@@ -27,15 +39,66 @@ $(function(){
     		$distance = $activiado.next().length ? $activiado.next().offset().left : 0
     	}
 
+    	// main function
+    	function scrollToY(scrollTargetXPar, speedPar, easingPar) {
+    	    // scrollTargetY: the target scrollX property of the window
+    	    // speed: time in pixels per second
+    	    // easing: easing equation to use
+    	    
+    	    var scrollX = window.scrollX || document.documentElement.scrollLeft,
+    	        scrollTargetX = scrollTargetXPar || 0,
+    	        speed = speedPar || 2000,
+    	        easing = easingPar || 'easeOutSine',
+    	        currentTime = 0;
+
+    	    // min time .1, max time .8 seconds
+    	    var time = Math.max(0.1, Math.min(Math.abs(scrollX - scrollTargetX) / speed, 1.2));
+
+    	    // easing equations from https://github.com/danro/easing-js/blob/master/easing.js
+    	    var easingEquations = {
+    	    	easeOutSine: function (pos) {
+    	    	    return Math.sin(pos * (Math.PI / 2));
+    	    	},
+    	    	easeInOutSine: function (pos) {
+    	    	    return (-0.5 * (Math.cos(Math.PI * pos) - 1));
+    	    	},
+    	    	easeInOutQuint: function (pos) {
+    	    	    if ((pos /= 0.5) < 1) {
+    	    	        return 0.5 * Math.pow(pos, 5);
+    	    	    }
+    	    	    return 0.5 * (Math.pow((pos - 2), 5) + 2);
+    	    	}
+    	    };
+
+    	    // add animation loop
+    	    function tick() {
+    	        currentTime += 1 / 60;
+    	        var p = currentTime / time;
+    	        var t = easingEquations[easing](p);
+    	        if (p < 1) {
+    	            requestAnimFrame(tick);
+    	            window.scrollTo(scrollX + ((scrollTargetX - scrollX) * t), 0);
+    	        } else {
+    	            window.scrollTo(scrollTargetX, 0);
+    	        }
+    	    }
+
+    	    // call it once to get started
+    	    tick();
+    	}
+
+    	// scroll it!
+    	scrollToY($distance, 1500, 'easeInOutQuint');
+
     	// Animated based to element
-      	$html.animate({
-      	  scrollLeft: $distance
-      	}, {
-        	duration: 1000,
-        	specialEasing: {
-          	//scrollLeft: "easeInQuart"
-        	}
-   	 	});
+      	// $html.animate({
+      	  // scrollLeft: $distance
+      	// }, {
+        	// duration: 1000,
+        	//specialEasing: {
+          	//	scrollLeft: "easeInQuart"
+        	//}
+   	 	// });
     }         
 
     // Navigation via keyboard arrows
@@ -52,7 +115,8 @@ $(function(){
 
 
     // Left/Right arrow event listener
-	$('#arrows a').on('click',function(){
+	$('#arrows a').on('click',function(e){
+		e.preventDefault();
 		scrollIt(this);
 	});
 
@@ -107,7 +171,7 @@ $(function(){
 	window.addEventListener('mousemove', function(e) {
 	  cliX = e.clientX;
 	  if( !moveFlag ) {
-	  	window.requestAnimationFrame(function() {
+	  	window.requestAnimFrame(function() {
 	  	  mouseMove(cliX);
 	  	  moveFlag = true;
 	  	});
@@ -146,10 +210,18 @@ $(function(){
 		scrubBar.style.left = Math.ceil((last_known / scrollWidth) * ScrubContainerWidth) + 'px';
 	}
 
+	window.addEventListener('touchend', function(e) {
+		var head = document.getElementById('campaign-header'),
+			headLeft = head.getBoundingClientRect().left
+
+			console.log(headLeft)
+		//$('#campaign-header').css({left: headLeft + 'px'})
+	});
+	
 	window.addEventListener('scroll', function(e) {
 	  last_known = window.pageXOffset; 
 	  if (!curDown) {
-	    window.requestAnimationFrame(function() {
+	    window.requestAnimFrame(function() {
 	      scroller(last_known);
 	      scrollFlag = true;
 	    });
@@ -198,8 +270,7 @@ $(function(){
 			triggerElement: this,
 			triggerHook: 0.5
 		});
-		
-		// scene.addIndicators()
+		// sceneToggle.addIndicators()
 		sceneToggle.addTo(controllerCampaign);
 		sceneToggle.setClassToggle(this, 'activiado');
 	})
@@ -226,55 +297,6 @@ $(function(){
 	// 	.addTo(controllerCampaign);
 
 
-	// These are to hide the previous and next arrows when we're on the first and last slides
-	var firstSlide = new ScrollMagic.Scene({
-		duration: '100%',
-		triggerElement: '#slide1',
-		triggerHook: 0
-	})
-		.setClassToggle('#arrows', 'hidePrev')
-		.setTween(fade1)
-		//.addIndicators({name: "1 (duration: 300)"})
-		.addTo(controllerCampaign);
-
-	var secondSlide = new ScrollMagic.Scene({
-		duration: '125%',
-		triggerElement: '#slide2',
-		triggerHook: 0.9
-	})
-		.setTween(fade2)
-		// .addIndicators({name: "2 (duration: 300)"})
-		.addTo(controllerCampaign);
-
-
-	var thirdSlide = new ScrollMagic.Scene({
-		duration: '125%',
-		triggerElement: '#slide3',
-		triggerHook: 0.9
-	})
-		.setTween(fade3)
-		//.addIndicators({name: "2 (duration: 300)"})
-		.addTo(controllerCampaign);
-
-	var fourthSlide = new ScrollMagic.Scene({
-		duration: '125%',
-		triggerElement: '#slide4',
-		triggerHook: 0.9
-	})
-		.setTween(fade4)
-		//.addIndicators({name: "2 (duration: 300)"})
-		.addTo(controllerCampaign);
-
-
-	var lastSlide = new ScrollMagic.Scene({
-		duration: '125%',
-		triggerElement: '#slides section:last-child',
-		triggerHook: 0
-	})
-	.setClassToggle('#arrows', 'hideNext')
-	//.addIndicators({name: "1 (duration: 300)"})
-	.addTo(controllerCampaign);
-
 
 
 	//
@@ -285,7 +307,7 @@ $(function(){
 	//
 	//
 
-	scrollConverter.activate();
+
 
 
 
@@ -299,7 +321,7 @@ $(function(){
 
 
 	$('.uw-btn').on('click',function(e){
-		// currentOffset = window.pageXOffset;
+		currentOffset = window.pageXOffset;
 		e.preventDefault();
 
 		$body.addClass('loading');
@@ -319,19 +341,20 @@ $(function(){
 			    }, 500)
 			});
 
-			scrollConverter.deactivate();
+			scrollConverter.deactivate(currentOffset);
 
 		})
 
 	})
 
 
-	$('button#empty').on('click',function(){
+	$('button#empty').on('click',function(e){
+		e.preventDefault();
 		setTimeout(function(){
 			$dyno.empty();
 		}, 500);
 		$body.removeClass('dyno_story');
-		scrollConverter.activate();
+		scrollConverter.activate(currentOffset);
 	})
 
 

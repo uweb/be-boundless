@@ -17,6 +17,11 @@
 	    position: absolute;
 	    right: 0;
 	    top: 0;
+	    &:hover,
+	    &:active,
+	    &:focus {
+			outline: none;
+	    }
 	    #ham {
 	      width: 30px;
 	      height: 33px;
@@ -61,8 +66,7 @@
 	      }
 	    }
 	    &:hover #ham,
-	    &:active #ham,
-	    &:focus #ham  {
+	    &:active #ham {
 			span {
 				background-color: @lightgold;
 				&:nth-child(1) {
