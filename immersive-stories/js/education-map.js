@@ -108,7 +108,7 @@ function onEachSchool(feature, layer) {
 //district pop up box
 function getDistrictPopup(data) {
     graphHeight = 80;
-    asian = Math.round(parseInt(data.properties.PercentAsian) + parseInt(data.properties.PercentAsianPacificIslander));
+    asian = Math.round(parseInt(data.properties.PercentAsian));// + parseInt(data.properties.PercentAsianPacificIslander));
     hispanic = Math.round(data.properties.PercentHispanic);
     white = Math.round(data.properties.PercentWhite);
     african = Math.round(data.properties.PercentBlack);
@@ -141,7 +141,7 @@ function getDistrictPopup(data) {
 //district pop up box
 function getSchoolPopup(data) {
     graphHeight = 75;
-    asian = Math.round(parseInt(data.properties.PercentAsian) + parseInt(data.properties.PercentAsianPacificIslander));
+    asian = Math.round(parseInt(data.properties.PercentAsian));// + parseInt(data.properties.PercentAsianPacificIslander));
     hispanic = Math.round(data.properties.PercentHispanic);
     white = Math.round(data.properties.PercentWhite);
     african = Math.round(data.properties.PercentBlack);
