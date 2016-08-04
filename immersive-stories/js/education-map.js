@@ -12,7 +12,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/
 //add district lines to map from geojson file
 $.ajax({
 dataType: "json",
-url: "../img/education/districts.geojson",
+url: "/cms/boundless/wp-content/themes/be-boundless/immersive-stories/img/education/districts.geojson",
 success: function(e) {
     L.geoJson(e, {
         filter: filterDistrict,
@@ -32,7 +32,7 @@ legend.addTo(mymap);
 //add school sites to map from cloropleth
 $.ajax({
 dataType: "json",
-url: "../img/education/schools.geojson",
+url: "/cms/boundless/wp-content/themes/be-boundless/immersive-stories/img/education/schools.geojson",
 success: function(e) {
     school_sites = L.geoJson(e, {
         filter: filterSchool,
@@ -66,7 +66,7 @@ function schoolPoints(feature, latlng) {
                         iconSize: [40, 40],
                         iconAnchor: [20, 40],
                         popupAnchor:  [0, -40],
-                        iconUrl: '../img/education/education-map-marker.png'
+                        iconUrl: '/cms/boundless/wp-content/themes/be-boundless/immersive-stories/img/education/education-map-marker.png'
                     });
     return L.marker(latlng, {icon: icon});
 
@@ -184,9 +184,7 @@ function legendAdd(map) {
     // loop through our density intervals and generate a label with a colored square for each interval
     for (var i = 0; i < grades.length; i++) {
         div.innerHTML +=
-            '<i style="background:' + getColor(grades[i]) + '">' 
-            + ((i === 0) ? '<p>0</p>' : '')  
-            + ((i === 10) ? '<p class="hundred">100</p>' : '')  + '</i> ';
+            '<i style="background:' + getColor(grades[i]) + '">' + ((i === 0) ? '<p>0</p>' : '') + ((i === 10) ? '<p class="hundred">100</p>' : '')  + '</i> ';
     }
     div.innerHTML += '<br/>' + '<p class="lunchLabel">FREE / REDUCED LUNCH</p>';
 

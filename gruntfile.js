@@ -33,6 +33,16 @@ module.exports = function(grunt) {
           'js/analytics.js',
           'js/scroll.js',
         ],
+        campaign : [
+          'campaign/js/header.js',
+          'immersive-stories/js/common.js',
+          'immersive-stories/js/education.js',
+          'immersive-stories/js/farmer-brown.js',
+          'campaign/js/main.js',
+          'immersive-stories/js/education-map.js',
+          'https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js',
+          'https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.2.1/chroma.min.js',
+        ],
         src: [ 'js/intro.js', '<%= concat.dist.libraries %>', '<%= concat.dist.theme %>', 'js/outro.js' ],
         dest: 'js/boundless.js'
       }
@@ -49,12 +59,23 @@ module.exports = function(grunt) {
           'js/boundless.min.js': ['<%= concat.dist.dest %>'],
           'immersive-stories/js/common.min.js': ['immersive-stories/js/common.js'],
           'immersive-stories/js/farmer-brown.min.js': ['immersive-stories/js/farmer-brown.js'],
-          'campaign/js/main.js': ['campaign/js/main.min.js'],
+          'immersive-stories/js/education.min.js': [
+              'immersive-stories/js/leaflet.js',
+              'immersive-stories/js/chroma.min.js',
+              'immersive-stories/js/education-map.js',
+              'immersive-stories/js/education.js', 
+              'campaign/js/header.js',
+              'immersive-stories/js/common.js',
+          ],
+          'campaign/js/main.min.js': [
+              'campaign/js/main.js',
+              'campaign/js/header.js'
+          ],
         }
       }
     },
     jshint: {
-      files: [ 'gruntfile.js', '<%= concat.dist.theme %>', 'immersive-stories/js/common.js', 'immersive-stories/js/farmer-brown.js', 'campaign/js/main.js' ],
+      files: [ 'gruntfile.js', '<%= concat.dist.theme %>', '<%= concat.dist.campaign %>'],
       options: {
         asi: true,
         smarttabs: true,
@@ -89,7 +110,7 @@ module.exports = function(grunt) {
                 'style.css': 'less/style.less',
                 'immersive-stories/css/common.css': 'immersive-stories/less/common.less',
                 'immersive-stories/css/farmer-brown.css': 'immersive-stories/less/farmer-brown.less',
-                'immersive-stories/css/education-map.css': 'immersive-stories/less/education-map.less',
+                'immersive-stories/css/education.css': 'immersive-stories/less/education.less',
                 'campaign/css/campaign-style.css': 'campaign/**/*.less',
                 'campaign/css/header.css': 'campaign/less/header.less',
         	    }
@@ -103,7 +124,7 @@ module.exports = function(grunt) {
         }
       },
       js: {
-        files: ['<%= concat.dist.src %>', 'immersive-stories/js/common.js', 'immersive-stories/js/farmer-brown.js', 'campaign/js/main.js'],
+        files: ['<%= concat.dist.src %>', '<%= concat.dist.campaign %>'],
         tasks: ['js']
       },
       css : {
