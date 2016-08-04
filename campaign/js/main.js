@@ -370,11 +370,10 @@ $(function(){
 
 		$body.addClass('loading');
 
-		$dyno.load('growing-veterans/ #immersive', function(a,b,c){
+		$dyno.load('education/ #immersive-body', function(a,b,c){
 
 			$.when(
-			    $.getScript( 'http://69.91.242.113/cms/boundless/wp-content/themes/be-boundless/immersive-stories/js/common.min.js' ),
-			    $.getScript( 'http://69.91.242.113/cms/boundless/wp-content/themes/be-boundless/immersive-stories/js/farmer-brown.min.js' ),
+			    $.getScript( 'http://69.91.242.113/cms/boundless/wp-content/themes/be-boundless/immersive-stories/js/education.min.js' ),
 			    $.Deferred(function( deferred ){
 			        $( deferred.resolve );
 			    })
@@ -386,6 +385,8 @@ $(function(){
 			});
 
 			scrollConverter.deactivate(currentOffset);
+
+			// console.log(a,b,c)
 
 		})
 

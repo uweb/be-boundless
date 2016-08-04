@@ -36,7 +36,7 @@
     <div class="thick">
         <ul>
             <li><a href="#">Experience</a></li>
-            <li><a href="#">Campaign Leadership</a></li>
+            <li><a href="#">About the Campaign</a></li>
             <li><a href="#">Find Your Passion</a></li>
             <li><a href="#">Give now</a></li>
         </ul>        

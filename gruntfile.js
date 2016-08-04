@@ -38,7 +38,10 @@ module.exports = function(grunt) {
           'immersive-stories/js/common.js',
           'immersive-stories/js/education.js',
           'immersive-stories/js/farmer-brown.js',
-          'campaign/js/main.js'
+          'campaign/js/main.js',
+          'immersive-stories/js/education-map.js',
+          'https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js',
+          'https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.2.1/chroma.min.js',
         ],
         src: [ 'js/intro.js', '<%= concat.dist.libraries %>', '<%= concat.dist.theme %>', 'js/outro.js' ],
         dest: 'js/boundless.js'
@@ -57,9 +60,12 @@ module.exports = function(grunt) {
           'immersive-stories/js/common.min.js': ['immersive-stories/js/common.js'],
           'immersive-stories/js/farmer-brown.min.js': ['immersive-stories/js/farmer-brown.js'],
           'immersive-stories/js/education.min.js': [
+              'immersive-stories/js/leaflet.js',
+              'immersive-stories/js/chroma.min.js',
+              'immersive-stories/js/education-map.js',
               'immersive-stories/js/education.js', 
               'campaign/js/header.js',
-              'immersive-stories/js/common.js'
+              'immersive-stories/js/common.js',
           ],
           'campaign/js/main.min.js': [
               'campaign/js/main.js',
