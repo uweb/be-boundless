@@ -1,0 +1,161 @@
+#mapid { 
+	height: 500px; 
+}
+
+.leaflet-overlay-pane path {
+    fill-opacity: 0.4;
+    stroke: #fff;
+    stroke-width: 2;
+    &:hover {
+    	fill-opacity: 0.8;
+    }
+}
+
+.legend {
+    line-height: 12px;
+    color: #555;
+    font-size: 10px;
+    text-align: center; 
+    i {
+	    width: 15px;
+	    height: 10px;
+	    float: left;
+	    opacity: 0.7;
+	    p {
+	    	margin: -1px 0 0 0;
+	    	color: white;
+	    	font-size: 8px;
+	    	&.hundred {
+		    	margin-left: 0;
+		    }
+	    }
+	    
+	}
+	p.lunchLabel {
+		margin: 0;
+		&:after,
+		&:before {
+		    content: "";
+		    position: absolute;
+		    width: 18px;
+		    height: 9px;
+		}
+		&:before {
+		    background: url(../img/education/education-map-icons.svg) no-repeat -122px -4px transparent;
+		    left: 0;
+		}
+		&:after {
+			background: url(../img/education/education-map-icons.svg) no-repeat -139px -4px transparent;
+			right: 0;
+		}
+	}	
+}
+
+div.popupbox table{
+	
+    border-collapse: collapse;
+    border-style: hidden;
+	tr.row {
+		&.district-name {
+			text-transform: uppercase;
+			text-align: center;
+		}
+		td {
+			&.label {
+				width:100%;
+				padding-left: 5px;
+			}
+			&.percent,
+			&.label {
+				border: 1px solid #CCC;
+			}
+			&.percent {
+				text-align: center;
+			}
+		}
+		&.graph {
+			height: 100px;
+			td {
+				position: relative;
+				width: 25%;
+				vertical-align: bottom;
+				padding: 0;
+				div.containerGraph {
+					position: relative;
+					div.bar {
+					    width: 25px;
+					    left: 0;
+	    				right: 0;
+					    margin-right: auto;
+					    margin-left: auto;
+				        position: absolute;
+				        bottom: 15px;
+						p{
+							margin-top: -15px; 
+							text-align: center;
+						}
+					}
+					p.tag {
+						//position: absolute;
+						//bottom: -1px;
+						text-align: center;
+						text-transform: uppercase;
+						font-size: 10px;
+						//right: 0;
+					    //left: 0;
+						margin: 0;
+						border-bottom: 1px solid #CCC;
+						border-top: 1px solid #CCC;
+					}
+				}
+				&.asian div.containerGraph div.bar {
+					background-color: #b7a57a;
+				}
+				&.hispanic div.containerGraph div.bar {
+					background-color: #ae9c6b;
+				}
+				&.white div.containerGraph div.bar {
+					background-color: #a68f59;
+				}
+				&.african div.containerGraph div.bar {
+					background-color: #958150;
+				}
+			}
+		}
+		&.data {
+			td.label{
+				padding-left: 20px;
+				&:after,
+				&:before {
+				    content: "";
+				    position: absolute;
+				    width: 14px;
+				    height: 18px;
+				    margin-left: -18px;
+				}
+			}
+
+			&.lunch td.label:before {
+				background: url(../img/education/education-map-icons.svg) no-repeat -73px transparent;
+			}
+			&.grad td.label:before {
+				background: url(../img/education/education-map-icons.svg) no-repeat -24px transparent;
+			}
+			&.esl td.label:before {
+				background: url(../img/education/education-map-icons.svg) no-repeat -42px transparent;
+			}
+			&.cand td.label:before {
+				background: url(../img/education/education-map-icons.svg) no-repeat -106px transparent;
+			}
+			//svg locations
+			//graph = -5
+			//diploma = -24
+			//message = -42
+			//shirt = -59
+			//apple = -73
+			//grad cap = -90
+			//flag = -106
+		}
+	}
+}
+
