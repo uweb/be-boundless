@@ -120,7 +120,7 @@
   <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/ScrollMagic-master/scrollmagic/uncompressed/plugins/debug.addIndicators.js' ?>" type="text/javascript"></script>
 
 
-  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/main.js' ?>" type="text/javascript"></script>
+  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/main.min.js' ?>" type="text/javascript"></script>
 
 
 

@@ -121,11 +121,6 @@ $(function(){
 	});
 
 
-	// Header - move this to common js
-	$('#campaign-expand').on('click', function(){
-	   $('body').toggleClass('active-header');
-	})
-
 	// Listen for resizes
 	window.addEventListener('resize', function(){
 		widthInner 	= window.innerWidth;
@@ -408,7 +403,7 @@ $(function(){
 
 
 	// Hides particular unsavory items
-	$('body').toggleClass('pageLoaded');
+	$('body').toggleClass('pageLoaded active-header');
 
 
 });
