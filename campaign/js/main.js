@@ -90,15 +90,6 @@ $(function(){
     	// scroll it!
     	scrollToY($distance, 1500, 'easeInOutQuint');
 
-    	// Animated based to element
-      	// $html.animate({
-      	  // scrollLeft: $distance
-      	// }, {
-        	// duration: 1000,
-        	//specialEasing: {
-          	//	scrollLeft: "easeInQuart"
-        	//}
-   	 	// });
     }         
 
     // Navigation via keyboard arrows
@@ -119,6 +110,7 @@ $(function(){
 		e.preventDefault();
 		scrollIt(this);
 	});
+
 
 
 	// Listen for resizes
@@ -365,26 +357,39 @@ $(function(){
 
 
 	$('.uw-btn').on('click',function(e){
+		var eTarget = $(e.target),
+			jsFiles = eTarget.data('js') || 'test',
+			title	= eTarget.data('title') || "Immersive story";
+
 		currentOffset = window.pageXOffset;
+		
 		e.preventDefault();
 
+		// Give loading animation
 		$body.addClass('loading');
 
-		$dyno.load('education/ #immersive-body', function(a,b,c){
+		// Change URL to immersive story URL
+		history.pushState({page: title}, title, e.target.href);
 
-			$.when(
-			    $.getScript( 'http://69.91.242.113/cms/boundless/wp-content/themes/be-boundless/immersive-stories/js/education.min.js' ),
-			    $.Deferred(function( deferred ){
-			        $( deferred.resolve );
-			    })
-			).done(function(){
-			    setTimeout(function(){
-			    	$body.addClass('dyno_story');
-			    	$body.removeClass('loading');
-			    }, 500)
-			});
+		$dyno.load(e.target.href + ' #immersive-body', function(){
 
 			scrollConverter.deactivate(currentOffset);
+
+			$.when(
+			    $.getScript( '/wp-content/themes/be-boundless/immersive-stories/js/' + jsFiles + '.min.js' ),
+			    	$.Deferred(function( deferred ){
+			        	$( deferred.resolve );
+			    	}
+			    )
+			).done(function(){
+			    setTimeout(function(){
+			    	$body.toggleClass('dyno_story loading');
+			    	$body.removeClass('active-header');
+			    }, 500)
+			    setTimeout(function(){
+			    	$body.addClass('makeStatic');
+			    }, 1000)
+			});			
 
 			// console.log(a,b,c)
 
@@ -395,16 +400,24 @@ $(function(){
 
 	$('button#empty').on('click',function(e){
 		e.preventDefault();
+		$body.removeClass('makeStatic');
+		document.body.scrollLeft = currentOffset;
 		setTimeout(function(){
 			$dyno.empty();
+			if (userClosedMenu === true) {
+				$body.addClass('active-header');
+			} else {
+				return
+			}
+			scrollConverter.activate(currentOffset);
 		}, 500);
+		history.back();
 		$body.removeClass('dyno_story');
-		scrollConverter.activate(currentOffset);
 	})
 
 
 	// Hides particular unsavory items
-	$('body').toggleClass('pageLoaded active-header');
+	$('body').toggleClass('pageLoaded');
 
 
 });

@@ -17,7 +17,7 @@
           <div id="slide2text">
             <h2>YOU CAN TRANSFORM THE STUDENT EXPERIENCE</h2>
             <p>Ensuring access to excellence for all students is at the core of our public mission. You can support the Husky Experience by championing opportunities that enrich future thought leaders.</p>
-            <a href="#" class="uw-btn btn-sm">Learn more</a>
+            <a href="education" data-js="education" data-title="Bridging the education gap" class="uw-btn btn-sm">Learn more</a>
           </div>
           <span class="slide2-content"></span>
         </section
@@ -25,7 +25,7 @@
           <div id="slide3text">
             <h2>FACULTY AND STAFF WHO UNITE PROMISE WITH POSSIBILITY EVERY DAY </h2>
             <p>To react to horizontal scrolls the simply needs to be initialized using the option.</p>
-            <a href="#" class="uw-btn btn-sm">Learn more</a>
+            <a href="education" data-js="education" data-title="Bridging the education gap" class="uw-btn btn-sm">Learn more</a>
           </div>
           <span class="slide2-content"></span>
         </section
@@ -33,7 +33,7 @@
           <div id="slide4text">
             <h2>YOU CAN DRIVE THE PUBLIC GOOD </h2>
             <p>Serve communities near and far. You can unleash human potential by committing to initiatives that promote health, equity and diversity for our friends and neighbors in Washington and beyond.</p>
-            <a href="#" class="uw-btn btn-sm">Learn more</a>
+            <a href="education" data-js="education" data-title="Bridging the education gap" class="uw-btn btn-sm">Learn more</a>
           </div>
           <span class="slide2-content"></span>
         </section>
@@ -67,11 +67,9 @@
   <!-- Button to close dynamic area -->
   <button id="empty">
     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-       width="70px" height="70.284px" viewBox="0 0 70 70.284" enable-background="new 0 0 70 70.284" xml:space="preserve">
-    <g>
-      <line fill="none" stroke-width="2" stroke="#717375" stroke-miterlimit="10" x1="21.516" y1="48.627" x2="48.484" y2="21.658"/>
-      <line fill="none" stroke-width="2" stroke="#717375" stroke-miterlimit="10" x1="48.484" y1="48.627" x2="21.516" y2="21.658"/>
-    </g>
+       width="34.147px" height="37.833px" viewBox="0 0 34.147 37.833" enable-background="new 0 0 34.147 37.833" xml:space="preserve">
+    <line fill="none" stroke="#A7A9AC" stroke-width="2" stroke-miterlimit="10" x1="9.616" y1="8.449" x2="31.782" y2="30.614"/>
+    <line fill="none" stroke="#A7A9AC" stroke-width="2" stroke-miterlimit="10" x1="31.782" y1="8.449" x2="9.616" y2="30.614"/>
     </svg>
   </button>
 
@@ -121,7 +119,7 @@
 
 
   <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/main.min.js' ?>" type="text/javascript"></script>
-
+  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
 
 
 

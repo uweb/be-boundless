@@ -32,17 +32,19 @@ button#empty {
 	border: none;
 	top: 100px;
 	right: 0;
-	width: 70px;
-	height: 70px;
+	width: 65px;
+	padding: 10px 10px 5px;
 	background-color: white;
 	z-index: 3;
-	padding: 0;
-	display: none;
+	text-align: left;
+	.transition(transform .4s linear);
+	.translate(75px,0);
 	line {
 		stroke: #8e8e8e !important;
 	}
 	.dyno_story & {
-		display: block;
+		// display: block;
+		.translate(0,0);
 	}
 }
 //Loading div
@@ -72,17 +74,30 @@ div#loadingEl {
 	right: 0;
 	bottom: 0;
 	background-color: #fff;
-	overflow-y: scroll;
+	//overflow-y: scroll;
 	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 	.transition(all .5s linear);
 	.translate(0, 100vh);
-	.dyno_story & {
-		.translate(0, 0);
-	}
 }
 .dyno_story {
 	#dyno {
 		z-index: 2;
+		.translate(0, 0);
+		// will-change: transform;
+	}
+}
+
+.makeStatic {
+	#content-wrapper {
+		display: none;
+	}
+	#dyno {
+		position: static;
+		// The following is for a ScrollMagic jump issue on scroll
+		-webkit-transform: none;
+		    -ms-transform: none;
+		    transform: none;
 	}
 }
 
@@ -259,7 +274,7 @@ div#loadingEl {
 
 #scrubCont {
 	position: fixed;
-	z-index: 999;
+	z-index: 0;
 	left: 0;
 	bottom: 0;
 	width: 100%;

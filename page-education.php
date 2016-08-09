@@ -1,12 +1,12 @@
 <?php get_template_part('header', 'campaign'); ?>
 
-<span id="immersive-body">
+<div id="immersive-body">
 
 <div class="intro" id="intro-slide">
   <div class="intro-body">
     <div class="container">
       <div class="row">
-        <div class="col-md-10" id='intro-text'>
+        <div class="col-md-10 col-xs-8 col-xs-offset-1" id='intro-text'>
             <h1>Bridging the education gap</h1>
             <p>In South Seattle and South King County, the UW College of Education is working to close achievement gaps in schools – and open all doors for young learners.</p>
         </div>
@@ -250,7 +250,7 @@
  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/education-map.css' ?>" />
 
 
-</span>
+</div>
 
 
  <!-- **** JS **** -->      
@@ -262,6 +262,7 @@
  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 
  <script src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/js/education.min.js' ?>" type="text/javascript"></script>
+ <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
 
  
 

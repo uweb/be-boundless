@@ -64,12 +64,10 @@ module.exports = function(grunt) {
               'immersive-stories/js/chroma.min.js',
               'immersive-stories/js/education-map.js',
               'immersive-stories/js/education.js', 
-              'campaign/js/header.js',
               'immersive-stories/js/common.js',
           ],
           'campaign/js/main.min.js': [
               'campaign/js/main.js',
-              'campaign/js/header.js'
           ],
         }
       }
@@ -93,8 +91,8 @@ module.exports = function(grunt) {
     notify: {
       watch: {
         options: {
-          title: 'Done',
-          message: 'All is good'
+          title: 'Grunt accomplished',
+          message: 'No problem'
         }
       }
     },

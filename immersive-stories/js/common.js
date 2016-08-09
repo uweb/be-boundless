@@ -52,6 +52,21 @@ $(".audio-ctrl").each(function(){
   });
 });
 
+// Read more link
+
+$('.read-more').on('click', function(e){
+  e.preventDefault();
+  $('html, body').animate({
+        scrollTop: (document.getElementsByTagName('main')[0].getBoundingClientRect().top - 80)
+      }, {
+        duration: 1000,
+        specialEasing: {
+            scrollTop: "easeInQuart"
+        }
+    });
+})
+
+
 // Video pause
 $( "#pause" ).click(function() {     
   var vid =  $( "#intro-vid video" )
