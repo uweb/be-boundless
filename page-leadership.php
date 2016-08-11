@@ -258,10 +258,12 @@
   
   $(function(){
 
+
     var current = document.getElementById('camp-current').innerHTML,
         goal    = document.getElementById('camp-goal').innerHTML,
         height  = window.innerHeight / 1.5,
-        thermo  = document.getElementById('thermo');
+        thermo  = document.getElementById('thermo'),
+        isMobile = window.matchMedia("only screen and (max-width: 768px)");  
 
         thermo.style.backgroundPosition =  Math.ceil(((current / goal) * 95)) + "vw top"
 
@@ -273,6 +275,14 @@
           thermo.classList.add('inactive');
       }
     })
+
+    if (!isMobile.matches) {
+      $('#people li').bind('touchstart touchend', function(e) {
+          e.preventDefault();
+          $(this).toggleClass('hover');
+      });
+    }
+
 
   })
 
