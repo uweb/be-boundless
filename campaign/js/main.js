@@ -29,15 +29,15 @@ $(function(){
 
 	// Reusable scroll to position for arrow navigation
     function scrollIt(el){
-    	var $html 		= $('html, body'),
-    		$activiado 	= $('.activiado'),
-    		$distance	= 0;
+    	var $html 			= $('html, body'),
+    		$activeSection 	= $('.activeSection'),
+    		$distance		= 0;
 
     	// Check which anchor was clicked
     	if ( el.classList.contains('prevSlide') ) {
-    		$distance = $activiado.prev().length ? $activiado.prev().offset().left : 0
+    		$distance = $activeSection.prev().length ? $activeSection.prev().offset().left : 0
     	} else {
-    		$distance = $activiado.next().length ? $activiado.next().offset().left : 0
+    		$distance = $activeSection.next().length ? $activeSection.next().offset().left : 0
     	}
 
     	// main function
@@ -256,7 +256,7 @@ $(function(){
 		});
 		// sceneToggle.addIndicators()
 		sceneToggle.addTo(controllerCampaign);
-		sceneToggle.setClassToggle(this, 'activiado')
+		sceneToggle.setClassToggle(this, 'activeSection')
 		sceneToggle.on('enter', function(){
 			// index + num is the number of slides to look ahead. 1 is only one slide ahead.
 			var sectionIndex = section[index + 1]
