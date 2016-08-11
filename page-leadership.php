@@ -128,7 +128,7 @@
       <h2 class="purpleHeadline"><span>Campaign volunteers</span></h2>
       <div class="container">     
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3 col-md-offset-1">
             <ul>
               <li>Academic Student Affairs</li>
               <li>College of Arts &amp; Sciences</li>
@@ -172,124 +172,76 @@
     <section id="faqs">
       <div class="container">   
 
+          <div><h2>Frequently Asked Questions</h2></div>
 
-<div class="box-outer">
-  <div class="box three box-none">
-    <div class="tile">
-     <div class="row">
-       <div class="col-md-4"> 
-         <p><b>Q:</b></p>
-       </div>
-       <div class="col-md-8"> 
-         <p>Cras Tellus Quam Consectetur?</p>
-       </div>
-     </div>
-    </div>
-    <div class="tile">
-      <p>When you come to the UW’s Seattle campus, you’re part of more than the innovative city that’s brought us everything from legendary music to lifesaving cures. You’re part of something bigger, too. You’re part of a globally connected community that loves to innovate, to explore, to create. Here, you’re part of Seattle’s vibrant history — and the world’s promising future.</p>
-    </div>
-    <div class="tile">
-      <p>When you come to the UW’s Seattle campus, you’re part of more than the innovative city that’s brought us everything from legendary music to lifesaving cures. You’re part of something bigger, too. You’re part of a globally connected community that loves to innovate, to explore, to create. Here, you’re part of Seattle’s vibrant history — and the world’s promising future.</p>
-    </div>
-  </div>
-</div>
+          <div class="box-outer">
+            <div class="box two box-none">
+              <div class="tile">
+                   <p><b>Q:</b></p>
+                   <div>
+                    <p>Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Curabitur blandit tempus porttitor.</p>
+                  </div>
 
+                  <hr>
+
+                   <p><b>A:</b></p>
+                   <div>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna           mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                  </div>
+
+               </div>
+              <div class="tile">
+                   <p><b>Q:</b></p>
+                   <div>
+                    <p>Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                  </div>
+
+                  <hr>
+
+                   <p><b>A:</b></p>
+                   <div>
+                    <p>Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                  </div>
+
+               </div>
+            </div>
+
+          </div>
+          
+          <div class="box-outer">
+            <div class="box two box-none">
+              <div class="tile">
+                   <p><b>Q:</b></p>
+                   <div>
+                    <p>Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Curabitur blandit tempus porttitor.</p>
+                  </div>
+
+                  <hr>
+
+                   <p><b>A:</b></p>
+                   <div>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna           mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                  </div>
+
+               </div>
+              <div class="tile">
+                   <p><b>Q:</b></p>
+                   <div>
+                    <p>Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                  </div>
+
+                  <hr>
+
+                   <p><b>A:</b></p>
+                   <div>
+                    <p>Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                  </div>
+
+               </div>
+            </div>
+          </div>
 
         </div>
-
-
-
-        <div class="row">
-          <div class="col-md-5 box"> 
-
-
-
-            <div class="row">
-              <div class="col-md-4"> 
-                <p><b>A:</b></p>
-              </div>
-              <div class="col-md-8"> 
-                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-              </div>
-            </div>
-                           
-          </div>
- 
-          <div class="col-md-5 col-md-offset-1 box"> 
-
-            <div class="row">
-              <div class="col-md-4"> 
-                <p><b>Q:</b></p>
-              </div>
-              <div class="col-md-8"> 
-                <p>Cras Tellus Quam Consectetur?</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-4"> 
-                <p><b>A:</b></p>
-              </div>
-              <div class="col-md-8"> 
-                <p>Maecenas faucibus mollis interdum. Donec sed odio dui. Curabitur blandit tempus porttitor.</p>
-              </div>
-            </div>
-
-                           
-          </div>
-
-
-      </div>
-
-        <div class="row">
-          <div class="col-md-5 box"> 
-
-            <div class="row">
-              <div class="col-md-4"> 
-                <p><b>Q:</b></p>
-              </div>
-              <div class="col-md-8"> 
-                <p>Cras Tellus Quam Consectetur?</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-4"> 
-                <p><b>A:</b></p>
-              </div>
-              <div class="col-md-8"> 
-                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-              </div>
-            </div>
-                           
-          </div>
-      
-          <div class="col-md-5 col-md-offset-1 box"> 
-
-            <div class="row">
-              <div class="col-md-4"> 
-                <p><b>Q:</b></p>
-              </div>
-              <div class="col-md-8"> 
-                <p>Cras Tellus Quam Consectetur?</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-4"> 
-                <p><b>A:</b></p>
-              </div>
-              <div class="col-md-8"> 
-                <p>Maecenas faucibus mollis interdum. Donec sed odio dui. Curabitur blandit tempus porttitor.</p>
-              </div>
-            </div>
-
-                           
-          </div>
-
-
-      </div>
-
 
     </section>
 
@@ -312,11 +264,6 @@
         thermo  = document.getElementById('thermo');
 
         thermo.style.backgroundPosition =  Math.ceil(((current / goal) * 95)) + "vw top"
-
-    function addCurrent(){
-      thermo.classList.remove('inactive');
-      addCurrent = function(){};
-    }
 
     document.addEventListener('scroll',function(){
       var el    = thermo.getBoundingClientRect().top;

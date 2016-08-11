@@ -71,8 +71,8 @@ main {
     @media(max-width:768px) {
         background-image: url("@{leadership}/columns.jpg");
         position: relative;
-        padding: 80px 0 0;
-        height: 90vh;
+        padding: 80px 0 170px;
+        height: auto;
         h1 {
             font-size: 30px;
         }
@@ -137,9 +137,9 @@ main {
     background-image: url("@{leadership}/thermo.svg");
     background-repeat: no-repeat;
     background-color: @purple;
-    .transition(background-position .6s ease-out);
+    .transition(background-position .7s ease-out);
     &.inactive {
-        background-position: -20vw 0 !important;
+        background-position: -80vw 0 !important;
     }
     ul {
         padding: 0;
@@ -157,8 +157,10 @@ main {
                 div {
                     .skew(-15deg, 0);
                     margin: 0 -25px 0 0;
-                    background-color: white;
+                    background-color: #f3f0e6;
                     padding: 0 20px 0 8px;
+                    height: 48px;
+                    overflow: hidden;
                 }
                 p {
                     .skew(15deg, 0);
@@ -192,7 +194,8 @@ main {
         ul {
             li {
                 &:nth-child(2) div {
-                    padding: 12px 20px 5px 20px;
+                    padding: 12px 20px 5px 11px;
+                    height: 73px;
                 }
                 &:nth-child(1) p {
                     color: #fff;
@@ -200,21 +203,6 @@ main {
                 }
             }
         }
-    }
-}
-
-#faqs {
-    background-color: @ultralightgold;
-    padding: 60px 0;
-    div.box {
-        background-color: white;
-        padding: 40px 50px;
-    }
-    b {
-        font-family: @font-family-headline;
-        color: @purple;
-        font-weight: 900;
-        font-size: 100px;
     }
 }
 
@@ -415,22 +403,7 @@ h2.purpleHeadline {
                     .translate(-100%, 0);
                 }                
             }
-            &:nth-child(1),
-            &:nth-child(5) {
-                &:hover,
-                &:active,
-                &:focus {
-                    div.hider {
-                        .translate(100%, 0);
 
-                        &:before {
-                            .rotate(180deg);
-                            left: -40px;
-                            right: auto;
-                        }
-                    }                
-                }
-            }
             a {
                 text-decoration: underline;
             }
@@ -497,6 +470,22 @@ h2.purpleHeadline {
             li {
                 width: 25%;
                 height: 400px;
+                &:nth-child(1),
+                &:nth-child(5) {
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        div.hider {
+                            .translate(100%, 0);
+
+                            &:before {
+                                .rotate(180deg);
+                                left: -40px;
+                                right: auto;
+                            }
+                        }                
+                    }
+                }
                 div.hider {
                     padding: 0 15%;
                 }
@@ -533,6 +522,7 @@ h2.purpleHeadline {
             li {
                 height: auto;
                 width: 100%;
+                pointer-events: none;
                 div.pax {
                     position: static;
                     height: 400px;
@@ -570,123 +560,76 @@ h2.purpleHeadline {
 }
 
 
-.box-outer {
-    margin: -10px -20px 0px -20px;
-    .box {
-        overflow: hidden;
-        display: table;
-        table-layout: fixed;
-        width: 100%;
-        border-spacing: 20px;
-        margin: 0 0 40px;
-        &.box-centered {
-            text-align: center;
-        }
-        &.two {
-            .tile {
-                // width: 47%;
-                // margin-right: 3%;
-            }
-        }
-        &.three {
-            .tile {
-                // width: 31%;
-                // margin-right: 2%;
-                padding: 0 40px 20px;
-                div {
-                    margin: 0 -41px;
-                }
-            }
-        }
-        &.four {
-            .tile {
-                // width: 24%;
-                // margin-right: 1%;
-                padding: 0 25px 10px;
-                div {
-                    margin: 0 -26px;
-                }
-            }
-        }
-        &.nopad {
-            .tile {
-                padding: 0;
-            }
-        }
-        &.noshadow {
-            .tile {
-                .box-shadow(none);
-                background-color: transparent;
-            }
-        }
-
-        .tile {
-            div {
-                margin: 0 -51px;
-            }
-            display: table-cell;
-            padding: 0 50px 20px;
-            .box-shadow(0px 1px 2px rgba(0, 0, 0, 0.2));
-            vertical-align: top;
-            .shortcode-blogroll-mini {
-                padding-left: 0px;
-                img {
-                    width: 70px;
-                    height: 70px;
-                    margin: 5px 25px 15px 0px;
-                }
-            }
-            img {
-                width: 100%;
-                height: auto;
-                margin: 0 0 30px;
-                display: block;
-            }
-            hr {
-                margin-top: 20px;
-                margin-bottom: 15px;
-            }
-            &.empty {
-              .box-shadow(none);
-            }
+#faqs {
+    background-color: @ultralightgold;
+    padding: 0 0 60px 0;
+    div:nth-child(1) {
+        text-align: center;
+        h2 {
+            display: inline-block;
+            background-color: @purple;
+            text-transform: uppercase;
+            color: white;
+            font-weight: 900;
+            padding: 10px 20px;
+            margin: 0;
         }
     }
-    .box-tan .tile {
-        background-color: #EEEADF;
-    }
-    @media only screen and (max-width : 767px) {
-            .box {
-                overflow: visible;
-                &.two,
-                &.one,
-                &.three,
-                &.four,
-                &.five,
-                &.six,
-                &.seven,
-                &.eight {
-                    .tile {
-                        div {
-                            margin: 0 -21px;
+    .box-outer {
+        margin: -10px -20px -50px -20px;
+        .box {
+            background-color: transparent;
+            padding: 0 50px;
+            border-spacing: 60px;
+            margin: 0;
+            &.two {
+                .tile {
+                }
+            }
+            .tile {
+                padding: 30px 60px;
+                vertical-align: top;
+                background-color: white;
+                 .box-shadow(none);
+                 text-align: left;
+                hr {
+                    margin-top: 20px;
+                    margin-bottom: 35px;
+                }
+            }
+        }
+        @media only screen and (max-width : 767px) {
+                .box {
+                    overflow: visible;
+                    &.two {
+                        .tile {
+                            div {
+                            }
                         }
-                        display: block;
-                        width: 100%;
-                        margin: 0 0 30px 0;
-                        padding: 0 20px 20px;
                     }
                 }
-                &.five,
-                &.six,
-                &.seven,
-                &.eight {
-                    .tile {
-                        width: 50%;
-                        display: inline-block;
-                    }
-                }
-            }
+        }
+    }
+    b {
+        font-family: @font-family-headline;
+        color: @purple;
+        font-weight: 900;
+        font-size: 100px;
+        float: left;
+        margin-right: 30px;
+    }
+    div {
+        overflow: hidden;
+    }
+    p {
+        font-size: 16px;
+        line-height: 1.5;
     }
 }
+
+
+
+
 
 
 
