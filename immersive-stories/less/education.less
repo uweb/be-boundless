@@ -408,12 +408,21 @@ p {
                 height: 500px;
                 display: table;
                 div.hider {
-                    padding: 0 15%;
+                    padding: 0 20%;
                     display: table-cell;
                     position: static;
                 }
                 div.hider > p {
                     font-size: 15px;
+                }
+            }            
+        }
+    }
+    @media(min-width:1200px) {
+        #people {
+            li {
+                div.hider {
+                    padding: 0 35%;
                 }
             }            
         }
@@ -477,6 +486,24 @@ button.close-video {
 .playing .video-block {
     z-index: 9999;
 }
+
+// Blinker animation for video
+
+@keyframes blinker {
+  0%,
+  10% {
+    opacity: 0;
+  }
+  25%,
+  85% {
+    opacity: .7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
 .video-block {
     position: relative;
     z-index: 0;

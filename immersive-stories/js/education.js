@@ -4,7 +4,7 @@ $(function(){
 
   var zoomMap = new TimelineMax ()
       .add([
-        TweenMax.to(".school-pic", 0.5, { transform: 'scale(2,2)' }),
+        TweenMax.to(".school-pic", 1, { transform: 'scale(2,2)' }),
         TweenMax.to(".blurb1", 1, { transform: 'translateY(-300px)', opacity: 0 }),
         TweenMax.to(".blurb2", 1, { transform: 'translateY(0)', opacity: 1 })
       ])
@@ -12,7 +12,7 @@ $(function(){
     // build scenes
     var schoolZoom = new ScrollMagic.Scene({
         triggerElement: ".school-zoom",
-        triggerHook: 0.8,
+        triggerHook: 0.5,
         duration: "100%",
       })
       .setTween(zoomMap)

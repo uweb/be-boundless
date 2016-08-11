@@ -17,6 +17,7 @@ $(function(){
 		offsetXes 		= 500,
 		$dyno 			= $('#dyno'),
 		$body			= $('body'),
+		section			= document.getElementsByTagName('section'),
 		offseter 		= 800,
 		currentOffset	= 0,
 		widthAllSlides 	= widthInner * $('section').length
@@ -26,7 +27,7 @@ $(function(){
 	// $(nodeList[2]).addClass('amar')
 
 
-	// Reusable scroll to position
+	// Reusable scroll to position for arrow navigation
     function scrollIt(el){
     	var $html 		= $('html, body'),
     		$activiado 	= $('.activiado'),
@@ -197,13 +198,10 @@ $(function(){
 		scrubBar.style.left = Math.ceil((last_known / scrollWidth) * ScrubContainerWidth) + 'px';
 	}
 
-	window.addEventListener('touchend', function(e) {
-		var head = document.getElementById('campaign-header'),
-			headLeft = head.getBoundingClientRect().left
-
-			console.log(headLeft)
-		//$('#campaign-header').css({left: headLeft + 'px'})
-	});
+	// window.addEventListener('touchend', function(e) {
+	// 	var head = document.getElementById('campaign-header'),
+	// 		headLeft = head.getBoundingClientRect().left
+	// });
 	
 	window.addEventListener('scroll', function(e) {
 	  last_known = window.pageXOffset; 
@@ -230,7 +228,6 @@ $(function(){
 	// ScrollMagic controller
 	var controllerCampaign = new ScrollMagic.Controller({vertical: false});
 
-
 	// Animations tweens
 	var fade1 = new TimelineMax()
 		.to('#slide1text', 2, {x: '-100%', ease: Power0.easeInOut }, 0)
@@ -251,7 +248,7 @@ $(function(){
 	// Scenes
 
 	// In order to toggle current section, 
-	$('section').each(function(e){
+	$('section').each(function(index,element){
 		var sceneToggle = new ScrollMagic.Scene({
 			duration: '100%',
 			triggerElement: this,
@@ -259,7 +256,19 @@ $(function(){
 		});
 		// sceneToggle.addIndicators()
 		sceneToggle.addTo(controllerCampaign);
-		sceneToggle.setClassToggle(this, 'activiado');
+		sceneToggle.setClassToggle(this, 'activiado')
+		sceneToggle.on('enter', function(){
+			// index + num is the number of slides to look ahead. 1 is only one slide ahead.
+			var sectionIndex = section[index + 1]
+
+			// Focus on slide on enter 
+			$(sectionIndex).focus();
+
+			if (sectionIndex && sectionIndex.style.backgroundImage.length === 0) {
+				// Set the background 2 slides upstream
+				sectionIndex.style.backgroundImage = 'url(' + sectionIndex.getAttribute('data-img') + ')'
+			}			
+		})		
 	})
 
 	$('section div').each(function(){
@@ -272,8 +281,6 @@ $(function(){
 		sceneH2.addTo(controllerCampaign);
 		// sceneH2.setPin(this);
 	})
-
-
 
 	// var scrollBar = new ScrollMagic.Scene({
 	// 	duration: widthAllSlides,

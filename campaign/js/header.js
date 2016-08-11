@@ -10,8 +10,8 @@ $(function(){
 
 	document.getElementById('campaign-expand').addEventListener('click', function(){
 		bodyEl.toggle('active-header')
+		// Register user's preference for menu
 		userClosedMenu = (userClosedMenu === true) ? false : true;
-		console.log(userClosedMenu)
 	});	
 
 	isMobile = window.matchMedia("only screen and (max-width: 768px)"); 
