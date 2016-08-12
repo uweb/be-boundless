@@ -12,7 +12,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/
 //add district lines to map from geojson file
 $.ajax({
 dataType: "json",
-url: "/cms/boundless/wp-content/themes/be-boundless/immersive-stories/img/education/districts.json",
+url: "/cms/wp-content/themes/be-boundless/immersive-stories/img/education/districts.json",
 success: function(e) {
     L.geoJson(e, {
         filter: filterDistrict,
@@ -32,7 +32,7 @@ legend.addTo(mymap);
 //add school sites to map from cloropleth
 $.ajax({
 dataType: "json",
-url: "/cms/boundless/wp-content/themes/be-boundless/immersive-stories/img/education/schools.geojson",
+url: "/cms/wp-content/themes/be-boundless/immersive-stories/img/education/schools.geojson",
 success: function(e) {
     school_sites = L.geoJson(e, {
         filter: filterSchool,
