@@ -66,7 +66,7 @@ function schoolPoints(feature, latlng) {
                         iconSize: [40, 40],
                         iconAnchor: [20, 40],
                         popupAnchor:  [0, -40],
-                        iconUrl: '/cms/boundless/wp-content/themes/be-boundless/immersive-stories/img/education/education-map-marker.png'
+                        iconUrl: '/cms/wp-content/themes/be-boundless/immersive-stories/img/education/education-map-marker.png'
                     });
     return L.marker(latlng, {icon: icon});
 
