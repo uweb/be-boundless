@@ -42,7 +42,7 @@ button#empty {
 	line {
 		stroke: #8e8e8e !important;
 	}
-	.dyno_story & {
+	.active-story & {
 		// display: block;
 		.translate(0,0);
 	}
@@ -80,7 +80,7 @@ div#loadingEl {
 	.transition(all .5s linear);
 	.translate(0, 100vh);
 }
-.dyno_story {
+.active-story {
 	#dyno {
 		z-index: 2;
 		.translate(0, 0);
@@ -108,7 +108,7 @@ div#loadingEl {
 	.transition(all .5s ease-in-out);
 	opacity: 1;
 	.translate(0, 0);
-	.dyno_story & {
+	.active-story & {
 		opacity: 0;
 		.translate(0, -100vh);
 	}
