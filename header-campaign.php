@@ -15,7 +15,7 @@
   <link rel='stylesheet' id='google-font-open-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C700italic%2C400%2C700&#038;' type='text/css' media='all' />
   <link rel='stylesheet' id='uw-style-css'  href='<?php echo get_stylesheet_directory_uri() . '/style.css' ?>' type='text/css' media='all' />
   <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
-  <script type='text/javascript' src='https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js'></script>
+  <!-- <script type='text/javascript' src='https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js'></script> -->
 
   
   
@@ -36,7 +36,7 @@
     <div class="thick">
         <ul>
             <li><a href="#">Experience</a></li>
-            <li><a href="#">About the Campaign</a></li>
+            <li><a href="leadership">About the Campaign</a></li>
             <li><a href="#">Find Your Passion</a></li>
             <li><a href="#">Give now</a></li>
         </ul>        

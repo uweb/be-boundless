@@ -43,6 +43,14 @@ module.exports = function(grunt) {
           'https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js',
           'https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.2.1/chroma.min.js',
         ],
+        animationLibraries : [  
+//       'campaign/ScrollMagic-master/js/lib/highlight.pack.js', 
+//       'campaign/scroll-converter/scroll-converter.min.js', 
+//       'campaign/ScrollMagic-master/js/lib/greensock/TweenMax.min.js', 
+//       'campaign/ScrollMagic-master/scrollmagic/uncompressed/ScrollMagic.js', 
+//       'campaign/ScrollMagic-master/scrollmagic/uncompressed/plugins/animation.gsap.js',
+//       'campaign/ScrollMagic-master/scrollmagic/uncompressed/plugins/debug.addIndicators.js' 
+        ],
         src: [ 'js/intro.js', '<%= concat.dist.libraries %>', '<%= concat.dist.theme %>', 'js/outro.js' ],
         dest: 'js/boundless.js'
       }
@@ -64,13 +72,13 @@ module.exports = function(grunt) {
               'immersive-stories/js/chroma.min.js',
               'immersive-stories/js/education-map.js',
               'immersive-stories/js/education.js', 
-              'campaign/js/header.js',
               'immersive-stories/js/common.js',
           ],
           'campaign/js/main.min.js': [
               'campaign/js/main.js',
-              'campaign/js/header.js'
           ],
+          // Commented out to speed up Grunt / Add back in to remove files from library
+          // 'campaign/js/animationLibraries.min.js': ['<%= concat.dist.animationLibraries %>'],
         }
       }
     },
@@ -93,8 +101,8 @@ module.exports = function(grunt) {
     notify: {
       watch: {
         options: {
-          title: 'Done',
-          message: 'All is good'
+          title: 'Grunt accomplished',
+          message: 'Thumbs up'
         }
       }
     },
@@ -111,6 +119,7 @@ module.exports = function(grunt) {
                 'immersive-stories/css/common.css': 'immersive-stories/less/common.less',
                 'immersive-stories/css/farmer-brown.css': 'immersive-stories/less/farmer-brown.less',
                 'immersive-stories/css/education.css': 'immersive-stories/less/education.less',
+                'immersive-stories/css/leadership.css': 'immersive-stories/less/leadership.less',
                 'campaign/css/campaign-style.css': 'campaign/**/*.less',
                 'campaign/css/header.css': 'campaign/less/header.less',
         	    }
@@ -124,7 +133,12 @@ module.exports = function(grunt) {
         }
       },
       js: {
-        files: ['<%= concat.dist.src %>', '<%= concat.dist.campaign %>'],
+        files: [
+          '<%= concat.dist.src %>', 
+          '<%= concat.dist.campaign %>', 
+          // Commented out to speed up Grunt / Add back in to remove files from library
+          // '<%= concat.dist.animationLibraries %>'
+        ],
         tasks: ['js']
       },
       css : {

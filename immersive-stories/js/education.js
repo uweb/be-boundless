@@ -1,42 +1,19 @@
 $(function(){
 
-
-  // Mobile check
-
-  var isMobile = false;
-
-
-  // On resize listener
-
-  document.addEventListener('resize', resize);
-
-  function resize(){
-      isMobile = window.matchMedia("only screen and (max-width: 768px)");            
-  }
-
-  resize();
-
-
-  // Toggle menu open on desktop
-
-  if(!isMobile.matches) {
-    document.getElementsByTagName('body')[0].classList.toggle('active-header')
-  }
-
   var controllerEducation = new ScrollMagic.Controller()
 
   var zoomMap = new TimelineMax ()
       .add([
-        TweenMax.to(".school-pic", 1, { transform: 'scale(4,4) translateX(-200px)' }),
-        TweenMax.to(".blurb1", 2, { transform: 'translateY(-300px)', opacity: 0 }),
-        TweenMax.to(".blurb2", 2, { transform: 'translateY(0)', opacity: 1 })
+        TweenMax.to(".school-pic", 1, { transform: 'scale(2,2)' }),
+        TweenMax.to(".blurb1", 1, { transform: 'translateY(-300px)', opacity: 0 }),
+        TweenMax.to(".blurb2", 1, { transform: 'translateY(0)', opacity: 1 })
       ])
 
     // build scenes
     var schoolZoom = new ScrollMagic.Scene({
         triggerElement: ".school-zoom",
         triggerHook: 0.5,
-        duration: "30%",
+        duration: "100%",
       })
       .setTween(zoomMap)
       // .on("progress", function (event) {
@@ -60,13 +37,14 @@ $(function(){
     .addTo(controllerEducation);
 
 
-    var frameNumber = 0, // start video at frame 0
-        // lower numbers = faster playback
-        playbackConst = 50, 
-        // select video element         
-        vid = document.getElementById('schoolVideo'); 
-        // var vid = $('#v0')[0]; // jquery option
+  // Control video frame by scrolling: 
 
+   // var frameNumber = 0, // start video at frame 0
+        // lower numbers = faster playback
+   //      playbackConst = 50, 
+        // select video element         
+   //      vid = document.getElementById('schoolVideo'); 
+        // var vid = $('#v0')[0]; // jquery option
 
 
     // Use requestAnimationFrame for smooth playback
@@ -98,9 +76,8 @@ $(function(){
        });
 
     });
+
       
-
-
 
 
 })

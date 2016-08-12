@@ -17,6 +17,7 @@ $(function(){
 		offsetXes 		= 500,
 		$dyno 			= $('#dyno'),
 		$body			= $('body'),
+		section			= document.getElementsByTagName('section'),
 		offseter 		= 800,
 		currentOffset	= 0,
 		widthAllSlides 	= widthInner * $('section').length
@@ -26,17 +27,17 @@ $(function(){
 	// $(nodeList[2]).addClass('amar')
 
 
-	// Reusable scroll to position
+	// Reusable scroll to position for arrow navigation
     function scrollIt(el){
-    	var $html 		= $('html, body'),
-    		$activiado 	= $('.activiado'),
-    		$distance	= 0;
+    	var $html 			= $('html, body'),
+    		$activeSection 	= $('.activeSection'),
+    		$distance		= 0;
 
     	// Check which anchor was clicked
     	if ( el.classList.contains('prevSlide') ) {
-    		$distance = $activiado.prev().length ? $activiado.prev().offset().left : 0
+    		$distance = $activeSection.prev().length ? $activeSection.prev().offset().left : 0
     	} else {
-    		$distance = $activiado.next().length ? $activiado.next().offset().left : 0
+    		$distance = $activeSection.next().length ? $activeSection.next().offset().left : 0
     	}
 
     	// main function
@@ -90,15 +91,6 @@ $(function(){
     	// scroll it!
     	scrollToY($distance, 1500, 'easeInOutQuint');
 
-    	// Animated based to element
-      	// $html.animate({
-      	  // scrollLeft: $distance
-      	// }, {
-        	// duration: 1000,
-        	//specialEasing: {
-          	//	scrollLeft: "easeInQuart"
-        	//}
-   	 	// });
     }         
 
     // Navigation via keyboard arrows
@@ -119,6 +111,7 @@ $(function(){
 		e.preventDefault();
 		scrollIt(this);
 	});
+
 
 
 	// Listen for resizes
@@ -205,13 +198,10 @@ $(function(){
 		scrubBar.style.left = Math.ceil((last_known / scrollWidth) * ScrubContainerWidth) + 'px';
 	}
 
-	window.addEventListener('touchend', function(e) {
-		var head = document.getElementById('campaign-header'),
-			headLeft = head.getBoundingClientRect().left
-
-			console.log(headLeft)
-		//$('#campaign-header').css({left: headLeft + 'px'})
-	});
+	// window.addEventListener('touchend', function(e) {
+	// 	var head = document.getElementById('campaign-header'),
+	// 		headLeft = head.getBoundingClientRect().left
+	// });
 	
 	window.addEventListener('scroll', function(e) {
 	  last_known = window.pageXOffset; 
@@ -238,7 +228,6 @@ $(function(){
 	// ScrollMagic controller
 	var controllerCampaign = new ScrollMagic.Controller({vertical: false});
 
-
 	// Animations tweens
 	var fade1 = new TimelineMax()
 		.to('#slide1text', 2, {x: '-100%', ease: Power0.easeInOut }, 0)
@@ -259,7 +248,7 @@ $(function(){
 	// Scenes
 
 	// In order to toggle current section, 
-	$('section').each(function(e){
+	$('section').each(function(index,element){
 		var sceneToggle = new ScrollMagic.Scene({
 			duration: '100%',
 			triggerElement: this,
@@ -267,7 +256,19 @@ $(function(){
 		});
 		// sceneToggle.addIndicators()
 		sceneToggle.addTo(controllerCampaign);
-		sceneToggle.setClassToggle(this, 'activiado');
+		sceneToggle.setClassToggle(this, 'activeSection')
+		sceneToggle.on('enter', function(){
+			// index + num is the number of slides to look ahead. 1 is only one slide ahead.
+			var sectionIndex = section[index + 1]
+
+			// Focus on slide on enter 
+			$(sectionIndex).focus();
+
+			if (sectionIndex && sectionIndex.style.backgroundImage.length === 0) {
+				// Set the background 2 slides upstream
+				sectionIndex.style.backgroundImage = 'url(' + sectionIndex.getAttribute('data-img') + ')'
+			}			
+		})		
 	})
 
 	$('section div').each(function(){
@@ -280,8 +281,6 @@ $(function(){
 		sceneH2.addTo(controllerCampaign);
 		// sceneH2.setPin(this);
 	})
-
-
 
 	// var scrollBar = new ScrollMagic.Scene({
 	// 	duration: widthAllSlides,
@@ -365,26 +364,39 @@ $(function(){
 
 
 	$('.uw-btn').on('click',function(e){
+		var eTarget = $(e.target),
+			jsFiles = eTarget.data('js') || 'test',
+			title	= eTarget.data('title') || "Immersive story";
+
 		currentOffset = window.pageXOffset;
+		
 		e.preventDefault();
 
+		// Give loading animation
 		$body.addClass('loading');
 
-		$dyno.load('education/ #immersive-body', function(a,b,c){
+		// Change URL to immersive story URL
+		history.pushState({page: title}, title, e.target.href);
 
-			$.when(
-			    $.getScript( 'http://69.91.242.113/cms/boundless/wp-content/themes/be-boundless/immersive-stories/js/education.min.js' ),
-			    $.Deferred(function( deferred ){
-			        $( deferred.resolve );
-			    })
-			).done(function(){
-			    setTimeout(function(){
-			    	$body.addClass('dyno_story');
-			    	$body.removeClass('loading');
-			    }, 500)
-			});
+		$dyno.load(e.target.href + ' #immersive-body', function(){
 
 			scrollConverter.deactivate(currentOffset);
+
+			$.when(
+			    $.getScript( '/wp-content/themes/be-boundless/immersive-stories/js/' + jsFiles + '.min.js' ),
+			    	$.Deferred(function( deferred ){
+			        	$( deferred.resolve );
+			    	}
+			    )
+			).done(function(){
+			    setTimeout(function(){
+			    	$body.toggleClass('dyno_story loading');
+			    	$body.removeClass('active-header');
+			    }, 500)
+			    setTimeout(function(){
+			    	$body.addClass('makeStatic');
+			    }, 1000)
+			});			
 
 			// console.log(a,b,c)
 
@@ -395,16 +407,24 @@ $(function(){
 
 	$('button#empty').on('click',function(e){
 		e.preventDefault();
+		$body.removeClass('makeStatic');
+		document.body.scrollLeft = currentOffset;
 		setTimeout(function(){
 			$dyno.empty();
+			if (userClosedMenu === true) {
+				$body.addClass('active-header');
+			} else {
+				return
+			}
+			scrollConverter.activate(currentOffset);
 		}, 500);
+		history.back();
 		$body.removeClass('dyno_story');
-		scrollConverter.activate(currentOffset);
 	})
 
 
 	// Hides particular unsavory items
-	$('body').toggleClass('pageLoaded active-header');
+	$('body').toggleClass('pageLoaded');
 
 
 });
