@@ -258,6 +258,7 @@
  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/animationLibraries.min.js' ?>" type="text/javascript"></script>
 
  <script src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/js/education.min.js' ?>" type="text/javascript"></script>
+ <script type="text/javascript">mapInit();</script>
  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
 
  
