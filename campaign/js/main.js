@@ -418,7 +418,6 @@ $(function(){
 		if ( typeof(document.body.scrollLeft) !== 'undefined' ) {
 			document.body.scrollLeft = currentOffset;
 		}
-		console.log(typeof(document.body.scrollLeft))
 		if ( typeof(document.documentElement.scrollLeft) !== 'undefined' ) {
 			document.documentElement.scrollLeft = currentOffset;
 		}

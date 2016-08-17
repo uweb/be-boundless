@@ -5,7 +5,7 @@
     <div id="example-wrapper" class="horizontal">
       <div class="scrollContent" id="slides">
 
-        <section class="section" id="slide1" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg1.jpg">
+        <section tabindex="0" class="section" id="slide1" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg1.jpg">
           <div id="slide1text">
             <span>
               <h2>HOW WILL YOU <br>CHANGE THE WORLD?</h2>
@@ -13,7 +13,7 @@
             </span>
           </div>
         </section
-        ><section class="section" id="slide2" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg2.jpg">
+        ><section tabindex="0"  class="section" id="slide2" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg2.jpg">
           <div id="slide2text">
             <h2>YOU CAN TRANSFORM THE STUDENT EXPERIENCE</h2>
             <p>Ensuring access to excellence for all students is at the core of our public mission. You can support the Husky Experience by championing opportunities that enrich future thought leaders.</p>
@@ -21,7 +21,7 @@
           </div>
           <span class="slide2-content"></span>
         </section
-        ><section class="section" id="slide3" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg3.jpg">
+        ><section tabindex="0"  class="section" id="slide3" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg3.jpg">
           <div id="slide3text">
             <h2>FACULTY AND STAFF WHO UNITE PROMISE WITH POSSIBILITY EVERY DAY </h2>
             <p>To react to horizontal scrolls the simply needs to be initialized using the option.</p>
@@ -29,7 +29,7 @@
           </div>
           <span class="slide2-content"></span>
         </section
-        ><section class="section" id="slide4" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg4.jpg">
+        ><section tabindex="0"  class="section" id="slide4" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg4.jpg">
           <div id="slide4text">
             <h2>YOU CAN DRIVE THE PUBLIC GOOD </h2>
             <p>Serve communities near and far. You can unleash human potential by committing to initiatives that promote health, equity and diversity for our friends and neighbors in Washington and beyond.</p>
@@ -49,16 +49,7 @@
 <div id="scrubCont"><div id="padder"><div id="scrub"></div></div></div>
 
   <div id="progress">
-
-    <!-- <ul>
-      <li><a href="#"><span class="popup"><p>Be boundless</p></span></a>       </li>
-      <li><a href="#"><span class="popup"><p>Together undaunted</p> </span></a></li>
-      <li><a href="#"><span class="popup"><p>For a world of good</p></span></a></li>
-      <li><a href="#"><span class="popup"><p>We > me</p></span></a>            </li>
-    </ul> -->
     <a href="" id="bar"></a>
-
-    <!-- <img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/ice.jpg'?>"> -->
   </div>
 
 
