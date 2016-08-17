@@ -30,7 +30,7 @@ $(function(){
 
 	// Animates to position on page, with animation
 
-	function scrollToY(scrollTargetXPar, speedPar, easingPar) {
+	function scrollToX(scrollTargetXPar, speedPar, easingPar) {
 	    // scrollTargetY: the target scrollX property of the window
 	    // speed: time in pixels per second
 	    // easing: easing equation to use
@@ -94,7 +94,7 @@ $(function(){
     	}
 
     	// scroll it!
-    	scrollToY($distance, 1500, 'easeInOutQuint');
+    	scrollToX($distance, 1500, 'easeInOutSine');
 
     }         
 
@@ -105,6 +105,8 @@ $(function(){
     		$('.prevSlide').click();
     	} else if ( e.keyCode == '39')  {
     		$('.nextSlide').click();
+    	} else if ( e.keyCode == '27' && storyUp ) {
+    		$('button#empty').click();
     	} else {
     		return;
     	}
@@ -212,8 +214,8 @@ $(function(){
 	  if ( !storyUp ) {
 	  	clearTimeout(timeout);
 	  	timeout = setTimeout(function(){
-	  		scrollToY($('.activeSection').offset().left, 200, 'easeInOutQuint');	  	
-	  	}, 500);
+	  		scrollToX($('.activeSection').offset().left, 600, 'easeInOutQuint');	  	
+	  	}, 600);
 	  }
 	});
 
@@ -251,7 +253,7 @@ $(function(){
 	// Scenes
 
 	// In order to toggle current section, 
-	$('section').each(function(index,element){
+	$('#content-wrapper section').each(function(index,element){
 		var sceneToggle = new ScrollMagic.Scene({
 			duration: '100%',
 			triggerElement: this,
@@ -259,17 +261,14 @@ $(function(){
 		});
 		// sceneToggle.addIndicators()
 		sceneToggle.addTo(controllerCampaign);
-		sceneToggle.setClassToggle(this, 'activeSection')
+		sceneToggle.setClassToggle(this, 'activeSection');
 		sceneToggle.on('enter', function(){
 			// index + num is the number of slides to look ahead. 1 is only one slide ahead.
 			var sectionIndex = section[index + 1]
 
-			// Focus on slide on enter 
-			$(sectionIndex).focus();
-
 			if (sectionIndex && sectionIndex.style.backgroundImage.length === 0) {
 				// Set the background 2 slides upstream
-				sectionIndex.style.backgroundImage = 'url(' + sectionIndex.getAttribute('data-img') + ')'
+				sectionIndex.style.backgroundImage = 'url(' + sectionIndex.getAttribute('data-img') + ')' || '';
 			}			
 		})		
 	})
@@ -284,14 +283,6 @@ $(function(){
 		sceneH2.addTo(controllerCampaign);
 		// sceneH2.setPin(this);
 	})
-
-	// var scrollBar = new ScrollMagic.Scene({
-	// 	duration: widthAllSlides,
-	// 	triggerElement: 'body',
-	// 	triggerHook: 1
-	// })
-	// 	.setTween(bar)
-	// 	.addTo(controllerCampaign);
 
 
 	// These are to hide the previous and next arrows when we're on the first and last slides
@@ -396,7 +387,7 @@ $(function(){
 			    setTimeout(function(){
 			    	$body.toggleClass('active-story loading');
 			    	$body.removeClass('active-header');
-			    }, 500)
+			    }, 2500)
 			    setTimeout(function(){
 			    	$body.addClass('makeStatic');
 			    }, 1000)
@@ -413,17 +404,24 @@ $(function(){
 
 		e.preventDefault();
 		$body.removeClass('makeStatic');
-		document.body.scrollLeft = currentOffset;
+
 		setTimeout(function(){
 			$dyno.empty();
 			if (userClosedMenu === true) {
 				$body.addClass('active-header');
-			} else {
-				return
-			}
+			} 			
 			scrollConverter.activate(currentOffset);
 		}, 500);
 		history.back();
+
+		// IE fallback
+		if ( typeof(document.body.scrollLeft) !== 'undefined' ) {
+			document.body.scrollLeft = currentOffset;
+		}
+		console.log(typeof(document.body.scrollLeft))
+		if ( typeof(document.documentElement.scrollLeft) !== 'undefined' ) {
+			document.documentElement.scrollLeft = currentOffset;
+		}
 		$body.removeClass('active-story');
 	})
 
