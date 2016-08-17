@@ -119,6 +119,7 @@ module.exports = function(grunt) {
                 'immersive-stories/css/common.css': 'immersive-stories/less/common.less',
                 'immersive-stories/css/farmer-brown.css': 'immersive-stories/less/farmer-brown.less',
                 'immersive-stories/css/education.css': 'immersive-stories/less/education.less',
+                'immersive-stories/css/education-map.css': 'immersive-stories/less/education-map.less',
                 'immersive-stories/css/leadership.css': 'immersive-stories/less/leadership.less',
                 'campaign/css/campaign-style.css': 'campaign/**/*.less',
                 'campaign/css/header.css': 'campaign/less/header.less',
