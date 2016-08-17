@@ -27,18 +27,18 @@
 
 <div id="campaign-header" class="active">
     
-    <a class="home" href="#">Home</a>
+    <a class="home" href="http://www.uw.edu">Home</a>
 
-    <div class="thin">
-        <a href="#">Support the campaign</a>
+    <div tabindex="-1" class="thin" aria-hidden="true">
+        <a href="http://www.uw.edu">Support the campaign</a>
         
     </div>
-    <div class="thick">
+    <div tabindex="-1" class="thick">
         <ul>
             <li><a href="campaign">Experience</a></li>
             <li><a href="leadership">About the Campaign</a></li>
             <li><a href="campaign">Find Your Passion</a></li>
-            <li><a href="#">Give now</a></li>
+            <li><a href="http://www.uw.edu/giving">Give now</a></li>
         </ul>        
     </div>
     <button id="campaign-expand">Toggle menu
