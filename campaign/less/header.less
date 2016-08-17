@@ -7,6 +7,7 @@
 	width: 100vw;
 	height: 50px;
 	z-index: 100;
+	backface-visibility: hidden;
 	background-color: @purple;
 	button {
 		text-indent: -9000px; 
@@ -275,7 +276,16 @@
 		background-repeat: no-repeat;
 		background-position: 0 -87px;
 	}
-	
+	.active-header & {	
+		.thick {
+			visibility: visible;
+		}
+		.thin {
+			visibility: hidden;
+		}
+
+	}
+
 
 	@media(min-width:768px) {
 		.active-header & {	
@@ -317,11 +327,9 @@
 				}
 			}
 			.thick {
-				visibility: visible;
 				.translate(0, -30px);				
 			}
 			.thin {
-				visibility: hidden;
 				a {
 					opacity: 0;
 				}

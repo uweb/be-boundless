@@ -46,7 +46,7 @@
     <a href="#" class="nextSlide"></a>
   </div>
 
-<div id="scrubCont"><div id="padder"><div id="scrub"></div></div></div>
+  <div id="scrubCont"><div id="padder"><div id="scrub"></div></div></div>
 
   <div id="progress">
     <a href="" id="bar"></a>

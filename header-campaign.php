@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="keywords" content="ScrollMagic, example, scrolling, attaching, scrollbar, horizontal, landscape" />
   <!-- <meta name="viewport" content="width=device-width"> -->
-  <meta name="viewport" content="user-scalable=no width=device-width">
-  <!-- <meta name="viewport" content="width=device-width maximum-scale=1.0, user-scalable=no" /> -->
+  <!-- <meta name="viewport" content="initial-scale=1 user-scalable=no width=device-width"> -->
+  <meta name="viewport" content="initial-scale=1 width=device-width maximum-scale=1.0, user-scalable=no" />
   <title> <?php wp_title(' | ',TRUE,'right'); bloginfo('name'); ?> </title>
 
       
