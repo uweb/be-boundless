@@ -33,14 +33,25 @@ button#empty {
 	top: 100px;
 	right: 0;
 	width: 65px;
-	padding: 10px 10px 5px;
+	padding: 10px;
 	background-color: white;
 	z-index: 3;
 	text-align: left;
-	.transition(transform .4s linear);
+	text-transform: capitalize;
+	line-height: 0;
+	color: transparent;
+	.transition(all .2s linear);
 	.translate(75px,0);
+	&:focus,
+	&:active,
+	&:hover {
+		background-color: @lightgold;
+		line {
+			stroke: #fff;
+		}
+	}
 	line {
-		stroke: #8e8e8e !important;
+		stroke: #8e8e8e;
 	}
 	.active-story & {
 		// display: block;
@@ -138,7 +149,7 @@ div#loadingEl {
 		}
 	}
 	section {
-		//outline: 1px solid red;
+		outline: none;
 		position: relative;
 		height: 100%;
 		min-height: 500px;
@@ -223,51 +234,118 @@ div#loadingEl {
 	// Arrow padding
 	@arrowIn : 30px; 
 
-	a.prevSlide,
-	a.nextSlide {
+	button.prevSlide,
+	button.nextSlide {
 		position: fixed;
 		top: 50%;
 		margin-top: -125px;
 		height: 250px;
-		background-image: url(../img/arrow.svg);
+		line-height: 0;
+		color: transparent;
+		background-color: transparent;
+		border: none;
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: 100%;
 		width: 7vw;
 		opacity: 1;
 		z-index: 2;
+		.transition(all .3s linear .1s);
+
+		// Animation for focus/active/hover
+	    &:active,
+	    &:focus {
+			outline: none;
+			&:after {
+				.animation(circlehoverslides .4s 1 ease forwards);
+			}
+	    }
+	    &:after {
+	    	position: absolute;
+	    	content: "";
+	    	width: 50px;
+	    	height: 50px;
+	    	top: 50%;
+	    	margin-top: -25px;
+	    	left: 50%;
+	    	margin-left: -25px;
+	    	border-radius: 100%;
+	    	background-color: white;
+	    	opacity: .2;
+	    	visibility: hidden;
+	    	transform-origin: center center;
+	    }
+
+	    @keyframes circlehoverslides {
+	      0% { 
+	      	visibility: visible;
+	        .scale(0,0);
+	        opacity: .5;
+	      }
+
+	      100% { 
+	        .scale(4.5, 4.5);
+	        opacity: 0;
+	      }
+	    } 
+
+		svg {
+			width: 100%;
+			height: auto;
+		}
+		.pageLoaded & {
+			&:hover,
+			&:active,
+			&:focus {
+				.transition(all .2s ease-in);
+				polygon {
+					fill: @lightgold;
+				}
+			}
+		}
 	}
-	a.prevSlide {
-		background-image: url(../img/arrow-prev.svg);
+	button.prevSlide {
+		// background-image: url(../img/arrow-prev.svg);
 		.translate(-200px, 0px);
 		left: @arrowIn;
 		.pageLoaded & {
 			.translate(0, 0px);
 			opacity: 1;
+			&:hover {
+				.translate(10px, 0px);
+			}
 		}
 	}
-	a.nextSlide {
-		.transition(all .5s linear .1s);
+	button.nextSlide {
 		.translate(200px, 0px);
 		right: @arrowIn;
 		.pageLoaded & {
 			.translate(0, 0px);
 			opacity: 1;
+			&:hover {
+				.translate(-10px, 0px);
+			}
 		}
 
 	}
 	&.hideNext {		
 		.transition(all 1s linear .5s);
-		a.nextSlide {
+		button.nextSlide {
 			.translate(200px, 0px);
 			opacity: 0;
 		}
 	}
 	&.hidePrev {
 		.transition(all 1s linear .5s);
-		a.prevSlide {
+		button.prevSlide {
 			.translate(-200px, 0px);
 			opacity: 0;
+		}
+	}
+	@media(max-width:768px) {    
+		button.nextSlide,
+		button.prevSlide {
+			// background-image: url(../img/arrow-prev-mob.svg);	
 		}
 	}
 }
@@ -404,7 +482,11 @@ a.uw-btn:after {
     transform: rotate(180deg);
     background-position: -190px -405px !important;
 }
-
+a.uw-btn:hover, 
+a.uw-btn:focus {
+    color: #fff;
+    background-color: @lightgold;
+}
 
 
 #content-wrapper, 

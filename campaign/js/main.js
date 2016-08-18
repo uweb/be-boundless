@@ -31,7 +31,7 @@ $(function(){
 	// Animates to position on page, with animation
 
 	function scrollToX(scrollTargetXPar, speedPar, easingPar) {
-	    // scrollTargetY: the target scrollX property of the window
+	    // scrollTargetX: the target scrollX property of the window
 	    // speed: time in pixels per second
 	    // easing: easing equation to use
 	    
@@ -96,15 +96,23 @@ $(function(){
     	// scroll it!
     	scrollToX($distance, 1500, 'easeInOutSine');
 
+    	// Focus on section after scrollToX
+    	setTimeout(function(){
+    		$('.activeSection').focus()
+    	}, 1000)
+
     }         
 
     // Navigation via keyboard arrows
 
     document.onkeydown = function(e){
+    	var $prev = $('.prevSlide'),
+    		$next = $('.nextSlide')
+
     	if ( e.keyCode == '37' ) {
-    		$('.prevSlide').click();
+    		$prev.click().focus();
     	} else if ( e.keyCode == '39')  {
-    		$('.nextSlide').click();
+    		$next.click().focus();
     	} else if ( e.keyCode == '27' && storyUp ) {
     		$('button#empty').click();
     	} else {
@@ -114,7 +122,7 @@ $(function(){
 
 
     // Left/Right arrow event listener
-	$('#arrows a').on('click',function(e){
+	$('#arrows button').on('click',function(e){
 		e.preventDefault();
 		scrollIt(this);
 	});

@@ -19,11 +19,17 @@ $(function(){
 		if (userClosedMenu) {
 			thin.setAttribute('aria-hidden', 'false');
 			thick.setAttribute('aria-hidden', 'true');
-			thin.focus();
+			// Give animation 410ms to play
+			setTimeout(function(){
+				thin.focus();
+			}, 410)
 		} else {
 			thin.setAttribute('aria-hidden', 'true');
 			thick.setAttribute('aria-hidden', 'false');
-			thick.focus();
+			// Give animation 410ms to play
+			setTimeout(function(){
+				thick.focus();
+			}, 410)
 		}
 
 	});	

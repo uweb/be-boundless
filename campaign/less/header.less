@@ -2,13 +2,24 @@
 @import "../../themes/uw-2014/less/uw.variables.less";
 @import "../../themes/uw-2014/less/flat/mixins.less";
 
+header {
+	h1 {
+		display: block;
+    	width: 0;
+    	height: 0;
+    	margin: 0;
+    	padding: 0;
+	}
+}
+
 #campaign-header {
 	position: fixed;
-	width: 100vw;
+	width: 100%;
 	height: 50px;
 	z-index: 100;
 	backface-visibility: hidden;
 	background-color: @purple;
+
 	button {
 		text-indent: -9000px; 
 		text-transform: capitalize;

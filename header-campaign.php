@@ -6,7 +6,7 @@
   <meta name="keywords" content="ScrollMagic, example, scrolling, attaching, scrollbar, horizontal, landscape" />
   <!-- <meta name="viewport" content="width=device-width"> -->
   <!-- <meta name="viewport" content="initial-scale=1 user-scalable=no width=device-width"> -->
-  <meta name="viewport" content="initial-scale=1 width=device-width maximum-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="initial-scale=1 width=device-width maximum-scale=1 user-scalable=no" />
   <title> <?php wp_title(' | ',TRUE,'right'); bloginfo('name'); ?> </title>
 
       
@@ -25,21 +25,22 @@
 </head>
 <body id="immersive" <?php body_class(); ?>>
 
-<div id="campaign-header" class="active">
-    
+<header role="banner">
+  <div id="campaign-header" class="active" role="navigation">
+
     <a class="home" href="http://www.uw.edu">Home</a>
 
     <div tabindex="-1" class="thin" aria-hidden="true">
-        <a href="http://www.uw.edu">Support the campaign</a>
-        
+      <a href="http://www.uw.edu">Support the campaign</a>
+
     </div>
     <div tabindex="-1" class="thick">
-        <ul>
-            <li><a href="campaign">Experience</a></li>
-            <li><a href="leadership">About the Campaign</a></li>
-            <li><a href="campaign">Find Your Passion</a></li>
-            <li><a href="http://www.uw.edu/giving">Give now</a></li>
-        </ul>        
+      <ul>
+        <li><a href="campaign">Experience</a></li>
+        <li><a href="leadership">About the Campaign</a></li>
+        <li><a href="campaign">Find Your Passion</a></li>
+        <li><a href="http://www.uw.edu/giving">Give now</a></li>
+      </ul>        
     </div>
     <button id="campaign-expand">Toggle menu
       <div aria-hidden="true" id="ham">
@@ -49,4 +50,8 @@
         <span></span>
       </div>
     </button>
-</div>
+  </div>
+
+  <h1><?php the_title(); ?></h1>
+
+</header>
