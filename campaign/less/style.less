@@ -40,6 +40,7 @@ button#empty {
 	text-transform: capitalize;
 	line-height: 0;
 	color: transparent;
+	box-shadow: -1px 1px 2px #0003;
 	.transition(all .2s linear);
 	.translate(75px,0);
 	&:focus,
@@ -56,6 +57,13 @@ button#empty {
 	.active-story & {
 		// display: block;
 		.translate(0,0);
+	}
+	@media(max-width:768px) {    
+		width: 45px;
+		padding: 2px;
+		top: 60px;
+		right: 5px;
+		opacity: .7;
 	}
 }
 //Loading div
@@ -217,6 +225,7 @@ div#loadingEl {
 		section {
 			padding-top: 50px;
 			p {
+				font-size: 15px;
 				line-height: 1.2;
 			}
 		}
@@ -232,7 +241,8 @@ div#loadingEl {
 #arrows {
 
 	// Arrow padding
-	@arrowIn : 30px; 
+	@arrowIn 		: 30px; 
+	@arrowInMobile 	: 10px; 
 
 	button.prevSlide,
 	button.nextSlide {
@@ -251,13 +261,26 @@ div#loadingEl {
 		opacity: 1;
 		z-index: 2;
 		.transition(all .3s linear .1s);
-
+		span {
+			width: 100%;
+			display: block;
+			height: auto;
+			position: relative;
+			padding-top: 200%;
+			svg {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
 		// Animation for focus/active/hover
 	    &:active,
 	    &:focus {
 			outline: none;
 			&:after {
-				.animation(circlehoverslides .4s 1 ease forwards);
+				.animation(circlehoverslides .4s 1 ease-in-out forwards);
 			}
 	    }
 	    &:after {
@@ -280,7 +303,7 @@ div#loadingEl {
 	      0% { 
 	      	visibility: visible;
 	        .scale(0,0);
-	        opacity: .5;
+	        opacity: .2;
 	      }
 
 	      100% { 
@@ -289,10 +312,7 @@ div#loadingEl {
 	      }
 	    } 
 
-		svg {
-			width: 100%;
-			height: auto;
-		}
+
 		.pageLoaded & {
 			&:hover,
 			&:active,
@@ -345,7 +365,13 @@ div#loadingEl {
 	@media(max-width:768px) {    
 		button.nextSlide,
 		button.prevSlide {
-			// background-image: url(../img/arrow-prev-mob.svg);	
+			width: 15vw;
+		}
+		button.prevSlide {
+			left: @arrowInMobile;
+		}
+		button.nextSlide {
+			right: @arrowInMobile;
 		}
 	}
 }

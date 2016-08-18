@@ -44,21 +44,25 @@
   <div id="arrows">  
     <button class="prevSlide">
       Previous slide
-      <svg aria-hidden="true" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-         width="46.249px" height="101.1px" viewBox="0 0 46.249 101.1" enable-background="new 0 0 46.249 101.1" xml:space="preserve">
-      <line opacity="0.7" fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" enable-background="new    " x1="17.936" y1="99.887" x2="44.398" y2="1.129"/>
-      <polygon opacity="0.6" fill="#FFFFFF" enable-background="new    " points="0.817,50.635 13.27,63.094 15.465,60.897 5.208,50.632 
-        15.465,40.368 13.269,38.169 0.817,50.629 0.821,50.632 "/>
-      </svg>
+      <span>
+        <svg aria-hidden="true" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           width="46.249px" height="101.1px" viewBox="0 0 46.249 101.1" enable-background="new 0 0 46.249 101.1" xml:space="preserve">
+        <line opacity="0.7" fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" enable-background="new    " x1="17.936" y1="99.887" x2="44.398" y2="1.129"/>
+        <polygon opacity="0.6" fill="#FFFFFF" enable-background="new    " points="0.817,50.635 13.27,63.094 15.465,60.897 5.208,50.632 
+          15.465,40.368 13.269,38.169 0.817,50.629 0.821,50.632 "/>
+        </svg>
+      </span>
     </button>
     <button class="nextSlide">
       Next slide
-      <svg aria-hidden="true" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-         width="46.249px" height="101.1px" viewBox="0 0 46.249 101.1" enable-background="new 0 0 46.249 101.1" xml:space="preserve">
-      <line opacity="0.7" fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" enable-background="new    " x1="27.641" y1="1.129" x2="1.179" y2="99.888"/>
-      <polygon opacity="0.6" fill="#FFFFFF" enable-background="new" points="44.76,50.381 32.307,37.922 30.112,40.119 40.37,50.385 
-        30.112,60.649 32.308,62.848 44.76,50.388 44.756,50.385 "/>
-      </svg>
+      <span>
+        <svg aria-hidden="true" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               width="46.249px" height="101.1px" viewBox="0 0 46.249 101.1" enable-background="new 0 0 46.249 101.1" xml:space="preserve">
+            <line opacity="0.7" fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" enable-background="new    " x1="27.641" y1="1.129" x2="1.179" y2="99.888"/>
+            <polygon opacity="0.6" fill="#FFFFFF" enable-background="new" points="44.76,50.381 32.307,37.922 30.112,40.119 40.37,50.385 
+              30.112,60.649 32.308,62.848 44.76,50.388 44.756,50.385 "/>
+            </svg>
+        </span>
     </button>
   </div>
 

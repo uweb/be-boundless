@@ -98,6 +98,7 @@ $(function(){
 
     	// Focus on section after scrollToX
     	setTimeout(function(){
+    		// Have to look up active section again
     		$('.activeSection').focus()
     	}, 1000)
 
@@ -395,10 +396,10 @@ $(function(){
 			    setTimeout(function(){
 			    	$body.toggleClass('active-story loading');
 			    	$body.removeClass('active-header');
-			    }, 2500)
+			    }, 500);
 			    setTimeout(function(){
 			    	$body.addClass('makeStatic');
-			    }, 1000)
+			    }, 1000);
 			});			
 
 		})
@@ -420,6 +421,7 @@ $(function(){
 			} 			
 			scrollConverter.activate(currentOffset);
 		}, 500);
+		
 		history.back();
 
 		// IE fallback

@@ -26,7 +26,6 @@ $(function(){
 		} else {
 			thin.setAttribute('aria-hidden', 'true');
 			thick.setAttribute('aria-hidden', 'false');
-			// Give animation 410ms to play
 			setTimeout(function(){
 				thick.focus();
 			}, 410)
