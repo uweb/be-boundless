@@ -1,11 +1,11 @@
 <?php get_template_part('header', 'campaign'); ?>
 
 
-  <div id="content-wrapper" class="scroll-pane horizontal-only">
+  <div id="content-wrapper" class="scroll-pane horizontal-only" role="main">
     <div id="example-wrapper" class="horizontal">
       <div class="scrollContent" id="slides">
 
-        <section class="section" id="slide1">
+        <section tabindex="0" class="section" id="slide1" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg1.jpg">
           <div id="slide1text">
             <span>
               <h2>HOW WILL YOU <br>CHANGE THE WORLD?</h2>
@@ -13,27 +13,27 @@
             </span>
           </div>
         </section
-        ><section class="section" id="slide2">
+        ><section tabindex="0"  class="section" id="slide2" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg2.jpg">
           <div id="slide2text">
             <h2>YOU CAN TRANSFORM THE STUDENT EXPERIENCE</h2>
             <p>Ensuring access to excellence for all students is at the core of our public mission. You can support the Husky Experience by championing opportunities that enrich future thought leaders.</p>
-            <a href="#" class="uw-btn btn-sm">Learn more</a>
+            <a href="education" data-js="education" data-title="Bridging the education gap" class="uw-btn btn-sm">Learn more</a>
           </div>
           <span class="slide2-content"></span>
         </section
-        ><section class="section" id="slide3">
+        ><section tabindex="0"  class="section" id="slide3" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg3.jpg">
           <div id="slide3text">
             <h2>FACULTY AND STAFF WHO UNITE PROMISE WITH POSSIBILITY EVERY DAY </h2>
             <p>To react to horizontal scrolls the simply needs to be initialized using the option.</p>
-            <a href="#" class="uw-btn btn-sm">Learn more</a>
+            <a href="education" data-js="education" data-title="Bridging the education gap" class="uw-btn btn-sm">Learn more</a>
           </div>
           <span class="slide2-content"></span>
         </section
-        ><section class="section" id="slide4">
+        ><section tabindex="0"  class="section" id="slide4" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg4.jpg">
           <div id="slide4text">
             <h2>YOU CAN DRIVE THE PUBLIC GOOD </h2>
             <p>Serve communities near and far. You can unleash human potential by committing to initiatives that promote health, equity and diversity for our friends and neighbors in Washington and beyond.</p>
-            <a href="#" class="uw-btn btn-sm">Learn more</a>
+            <a href="education" data-js="education" data-title="Bridging the education gap" class="uw-btn btn-sm">Learn more</a>
           </div>
           <span class="slide2-content"></span>
         </section>
@@ -42,23 +42,34 @@
   </div>
 
   <div id="arrows">  
-    <a href="#" class="prevSlide"></a>
-    <a href="#" class="nextSlide"></a>
+    <button class="prevSlide">
+      Previous slide
+      <span>
+        <svg aria-hidden="true" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           width="46.249px" height="101.1px" viewBox="0 0 46.249 101.1" enable-background="new 0 0 46.249 101.1" xml:space="preserve">
+        <line opacity="0.7" fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" enable-background="new    " x1="17.936" y1="99.887" x2="44.398" y2="1.129"/>
+        <polygon opacity="0.6" fill="#FFFFFF" enable-background="new    " points="0.817,50.635 13.27,63.094 15.465,60.897 5.208,50.632 
+          15.465,40.368 13.269,38.169 0.817,50.629 0.821,50.632 "/>
+        </svg>
+      </span>
+    </button>
+    <button class="nextSlide">
+      Next slide
+      <span>
+        <svg aria-hidden="true" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               width="46.249px" height="101.1px" viewBox="0 0 46.249 101.1" enable-background="new 0 0 46.249 101.1" xml:space="preserve">
+            <line opacity="0.7" fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" enable-background="new    " x1="27.641" y1="1.129" x2="1.179" y2="99.888"/>
+            <polygon opacity="0.6" fill="#FFFFFF" enable-background="new" points="44.76,50.381 32.307,37.922 30.112,40.119 40.37,50.385 
+              30.112,60.649 32.308,62.848 44.76,50.388 44.756,50.385 "/>
+            </svg>
+        </span>
+    </button>
   </div>
 
-<div id="scrubCont"><div id="padder"><div id="scrub"></div></div></div>
+  <div id="scrubCont"><div id="padder"><div id="scrub"></div></div></div>
 
   <div id="progress">
-
-    <!-- <ul>
-      <li><a href="#"><span class="popup"><p>Be boundless</p></span></a>       </li>
-      <li><a href="#"><span class="popup"><p>Together undaunted</p> </span></a></li>
-      <li><a href="#"><span class="popup"><p>For a world of good</p></span></a></li>
-      <li><a href="#"><span class="popup"><p>We > me</p></span></a>            </li>
-    </ul> -->
     <a href="" id="bar"></a>
-
-    <!-- <img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/ice.jpg'?>"> -->
   </div>
 
 
@@ -66,12 +77,11 @@
 
   <!-- Button to close dynamic area -->
   <button id="empty">
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-       width="70px" height="70.284px" viewBox="0 0 70 70.284" enable-background="new 0 0 70 70.284" xml:space="preserve">
-    <g>
-      <line fill="none" stroke-width="2" stroke="#717375" stroke-miterlimit="10" x1="21.516" y1="48.627" x2="48.484" y2="21.658"/>
-      <line fill="none" stroke-width="2" stroke="#717375" stroke-miterlimit="10" x1="48.484" y1="48.627" x2="21.516" y2="21.658"/>
-    </g>
+    Return to story list
+    <svg  aria-hidden="true" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       width="34.147px" height="37.833px" viewBox="0 0 34.147 37.833" enable-background="new 0 0 34.147 37.833" xml:space="preserve">
+      <line fill="none" stroke="#A7A9AC" stroke-width="2" stroke-miterlimit="10" x1="9.616" y1="8.449" x2="31.782" y2="30.614"/>
+      <line fill="none" stroke="#A7A9AC" stroke-width="2" stroke-miterlimit="10" x1="31.782" y1="8.449" x2="9.616" y2="30.614"/>
     </svg>
   </button>
 
@@ -84,7 +94,7 @@
   <!-- Rotate indicator -->
   <div id="rotate">
     <div> 
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <svg aria-hidden="true" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           width="87.5px" height="83px" viewBox="0 90.5 87.5 83" enable-background="new 0 90.5 87.5 83" xml:space="preserve">
         <path fill="#FFFFFF" d="M80.591,163.385v-28.996c0-2.592-2.187-4.859-4.86-4.859H20.619c-2.673,0-4.86,2.187-4.86,4.859v29.077
          c0,2.592,2.187,4.86,4.86,4.86h55.112C78.485,168.245,80.591,166.058,80.591,163.385z M20.619,165.814
@@ -104,24 +114,15 @@
     </div>
   </div>
 
-<!--   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/campaign/ScrollMagic-master/css/normalize.css' ?>" type="text/css">
+  <!--   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/campaign/ScrollMagic-master/css/normalize.css' ?>" type="text/css">
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/campaign/ScrollMagic-master/css/style.css' ?>" type="text/css"> -->
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/campaign/css/campaign-style.css' ?>" type="text/css">
 
-  
-  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/ScrollMagic-master/js/lib/highlight.pack.js' ?>" type="text/javascript"></script>
-
   <!-- Convert to horizontal scroll -->
-  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/scroll-converter/scroll-converter.min.js' ?>" type="text/javascript"></script>
+  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/animationLibraries.min.js' ?>" type="text/javascript"></script>
 
-  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/ScrollMagic-master/js/lib/greensock/TweenMax.min.js' ?>" type="text/javascript"></script>
-  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/ScrollMagic-master/scrollmagic/uncompressed/ScrollMagic.js' ?>" type="text/javascript"></script>
-  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/ScrollMagic-master/scrollmagic/uncompressed/plugins/animation.gsap.js' ?>" type="text/javascript"></script>
-  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/ScrollMagic-master/scrollmagic/uncompressed/plugins/debug.addIndicators.js' ?>" type="text/javascript"></script>
-
-
-  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/main.js' ?>" type="text/javascript"></script>
-
+  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/main.min.js' ?>" type="text/javascript"></script>
+  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
 
 
 

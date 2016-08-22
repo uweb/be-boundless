@@ -2,12 +2,24 @@
 @import "../../themes/uw-2014/less/uw.variables.less";
 @import "../../themes/uw-2014/less/flat/mixins.less";
 
+header {
+	h1 {
+		display: block;
+    	width: 0;
+    	height: 0;
+    	margin: 0;
+    	padding: 0;
+	}
+}
+
 #campaign-header {
 	position: fixed;
-	width: 100vw;
+	width: 100%;
 	height: 50px;
 	z-index: 100;
+	backface-visibility: hidden;
 	background-color: @purple;
+
 	button {
 		text-indent: -9000px; 
 		text-transform: capitalize;
@@ -17,11 +29,40 @@
 	    position: absolute;
 	    right: 0;
 	    top: 0;
-	    &:hover,
+	    .transition(all .2s linear);
 	    &:active,
 	    &:focus {
 			outline: none;
+			&:after {
+				.animation(circlehover .4s 1 ease forwards);
+			}
 	    }
+	    &:after {
+	    	position: absolute;
+	    	content: "";
+	    	width: 50px;
+	    	height: 50px;
+	    	top: 0px;
+	    	left: 5px;
+	    	border-radius: 100%;
+	    	background-color: @lightgold;
+	    	opacity: .2;
+	    	visibility: hidden;
+	    	transform-origin: center center;
+	    }
+
+	    @keyframes circlehover {
+	      0% { 
+	      	visibility: visible;
+	        .scale(0,0);
+	        opacity: 1;
+	      }
+
+	      100% { 
+	        .scale(1.5, 1.5);
+	        opacity: 0;
+	      }
+	    } 
 	    #ham {
 	      width: 30px;
 	      height: 33px;
@@ -36,6 +77,7 @@
 	      transition: .5s ease-in-out;
 	      cursor: pointer;
 	      margin: 13px 13px 0 10px;
+	      z-index: 1;
 	      span {
 	        display: block;
 	        position: absolute;
@@ -65,17 +107,26 @@
 	        }
 	      }
 	    }
-	    &:hover #ham,
-	    &:active #ham {
-			span {
-				background-color: @lightgold;
-				&:nth-child(1) {
-				  .translate(0,-3px);
-				} 				
-				&:nth-child(4) {
-				  .translate(0,3px);
+	    &:hover,  {
+	    	#ham {
+	    		span {
+	    			&:nth-child(1) {
+	    			  .translate(0,-3px);
+	    			} 				
+	    			&:nth-child(4) {
+	    			  .translate(0,3px);
+	    			}
+	    		}
+	    	}			
+	    }
+	    &:active,
+	    &:hover,
+	    &:focus {
+			#ham {
+				span {
+					background-color: @lightgold;
 				}
-			}
+			}	
 	    }
 		.active-header & #ham {
 	      span {
@@ -104,30 +155,17 @@
 	      }
 	      
 	    }
-	    
+	   
 
-	    &:focus {
-
-	    }
-	    &:active,
-	    &:hover {
-	    	.rect-1 {
-	    		.translate(0, -4px);
-	    	}
-	    	.rect-2 {
-	    		
-	    	}
-	    	.rect-3 {
-	    		.translate(0, 4px);
-	    	}
-	    }
 	}
 	.thin {
 		text-align: right;
 		padding: 0 60px 0 0;
+		outline: none;
+		visibility: visible;
 		a, button { display: inline-block; }
 		a {
-			.transition(all .2s cubic-bezier(0.39, 0.58, 0.57, 1));
+			.transition(transform .2s cubic-bezier(0.39, 0.58, 0.57, 1));
 			padding: 10px 10px 0 0;
 			font-size: 16px;
 			vertical-align: top;
@@ -141,6 +179,8 @@
 		padding: 20px 70px 20px 0;
 		text-align: right;
 		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.29);
+		outline: none;
+		visibility: hidden;
 		ul {
 			margin-bottom: 0;
 			li {
@@ -150,6 +190,34 @@
 					padding: 0 15px 0 0;
 					position: relative;
 					font-size: 15px;
+				}
+				&:nth-child(1) a,
+				&:nth-child(2) a,
+				&:nth-child(3) a {
+					&:before {
+					  position: absolute;
+					  top: 100%;
+					  left: 0;
+					  right: 40px;
+					  height: 2px;
+					  background: @lightgold;
+					  content: '';
+					  opacity: 0;
+					  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+					  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+					  transition: opacity 0.3s, transform 0.3s;
+					  -webkit-transform: translateY(15px);
+					  -moz-transform: translateY(15px);
+					  transform: translateY(15px);
+					}
+					&:hover::before, 
+					&:active::before,
+					&:focus::before {
+					  opacity: 1;
+					  -webkit-transform: translateY(5px);
+					  -moz-transform: translateY(5px);
+					  transform: translateY(5px);
+					}
 				}
 				&:nth-child(1) a,
 				&:nth-child(2) a {
@@ -206,7 +274,7 @@
 		}
 	}
 	a.home {
-		.transition(background .3s .2s);
+		.transition(none);
 		position: absolute;
 		bottom: 0;
 		left: 40px;
@@ -219,12 +287,21 @@
 		background-repeat: no-repeat;
 		background-position: 0 -87px;
 	}
-	
+	.active-header & {	
+		.thick {
+			visibility: visible;
+		}
+		.thin {
+			visibility: hidden;
+		}
+
+	}
+
 
 	@media(min-width:768px) {
 		.active-header & {	
 			button {				
-				top: 30px;
+				top: 26px;
 				z-index: 1;
 			    svg {
 			    	rect {
@@ -264,7 +341,6 @@
 				.translate(0, -30px);				
 			}
 			.thin {
-				
 				a {
 					opacity: 0;
 				}
@@ -296,13 +372,19 @@
 	}
 
 	@media(max-width:768px) {
-		.active-header & {	
-			#content-wrapper {
-
-			}	
-			a.home {
-
+		button {
+			top: 2px;
+			padding: 0;	
+		}
+		.thin {
+			a {
+				padding: 10px 0 0 0;
 			}
+		}
+		a.home {
+			left: 20px;
+		}
+		.active-header & {	
 			.thick {
 				.translate(0, 8px);
 				padding: 0 0 30px;
@@ -321,7 +403,7 @@
 					}
 				}
 			}
-			button {		
+			button {
 			    svg {
 			    	rect {
 			    		fill: white;
@@ -342,7 +424,6 @@
 			    }
 			}
 			.thin {
-				
 				a {
 					opacity: 0;
 				}

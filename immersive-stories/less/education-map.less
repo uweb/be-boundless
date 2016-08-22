@@ -33,6 +33,8 @@
 	}
 	p.lunchLabel {
 		margin: 0;
+		font-size: 11px;
+    	line-height: 1;  
 		&:after,
 		&:before {
 		    content: "";
@@ -74,24 +76,24 @@ div.popupbox table{
 			}
 		}
 		&.graph {
-			height: 100px;
+			height: 60px;
 			td {
 				position: relative;
-				width: 25%;
 				vertical-align: bottom;
 				padding: 0;
 				div.containerGraph {
 					position: relative;
 					div.bar {
-					    width: 25px;
+					    height: 15px;
 					    left: 0;
 	    				right: 0;
 					    margin-right: auto;
 					    margin-left: auto;
 				        position: absolute;
-				        bottom: 15px;
+				        bottom: 19px;
+				        background-color: #b7a57a;
 						p{
-							margin-top: -15px; 
+							margin-top: -24px; 
 							text-align: center;
 						}
 					}
@@ -107,18 +109,6 @@ div.popupbox table{
 						border-bottom: 1px solid #CCC;
 						border-top: 1px solid #CCC;
 					}
-				}
-				&.asian div.containerGraph div.bar {
-					background-color: #b7a57a;
-				}
-				&.hispanic div.containerGraph div.bar {
-					background-color: #ae9c6b;
-				}
-				&.white div.containerGraph div.bar {
-					background-color: #a68f59;
-				}
-				&.african div.containerGraph div.bar {
-					background-color: #958150;
 				}
 			}
 		}
