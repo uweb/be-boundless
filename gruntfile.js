@@ -124,6 +124,11 @@ module.exports = function(grunt) {
                 'campaign/css/campaign-style.css': 'campaign/**/*.less',
                 'campaign/css/header.css': 'campaign/less/header.less',
         	    }
+        },
+        development: {
+          files: {
+            'passion/css/tiles.dev.css': 'passion/less/tiles.less'
+          }
         }
     },
     watch: {
@@ -143,7 +148,7 @@ module.exports = function(grunt) {
         tasks: ['js']
       },
       css : {
-        files: ['less/*.less', 'immersive-stories/less/*.less', 'campaign/less/*.less'],
+        files: ['less/*.less', 'immersive-stories/less/*.less', 'campaign/less/*.less', 'passion/less/*.less'],
         tasks: ['css']
       }
     }
