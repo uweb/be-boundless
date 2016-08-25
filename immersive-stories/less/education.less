@@ -18,7 +18,6 @@
        -o-background-size: @cover;
 }
 
-
 body {
     width: 100%;
     height: 100%;
@@ -110,12 +109,17 @@ p {
         a.read-more {
             top: calc(~"100vh - 70px");
         }
+        .intro-body {
+            #intro-text {
+                padding: 0;
+            }
+        }
     }    
     @media(min-width:768px) {
         background-image: url("@{education}/intro.jpg");
         padding: 0;
         h1 {
-            font-size: 7.5vw;
+            font-size: 6vw;
             margin-top: 35vh;
             letter-spacing: -4px;
             -webkit-font-smoothing: antialiased;
@@ -155,6 +159,41 @@ p {
 }
 
 
+// Side pictures that rotate on scroll
+
+.side-pic {
+    width: 50%;
+    height: 205px;
+    overflow: hidden;
+    float: left;
+    margin: 50px 70px 40px 70px;
+    margin-left: -20%;
+    outline: 13px solid #f1f1f1;
+    position: relative;
+    z-index: 5;
+    &.active {
+        overflow: visible;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+    }
+    @media(min-width:768px) {
+       height: 190px;
+       margin-left: -10%;
+    }
+    @media(min-width:1200px) {
+       height: 265px;
+       margin-left: -20%;
+    }
+    @media(max-width:768px) {
+        width: 100%;
+        height: 230px;
+        margin: 30px auto 40px;
+    }
+}
+
 
 // Scroll into school
 
@@ -166,18 +205,14 @@ p {
     margin: 30px 0 50px 0;
     overflow: hidden;
     position: relative;
+    height: 400px;
     .school-pic {
-        background-image: url("@{education}/lakeridge.jpg");
-        background-position: right center;
+
         .background-cover(cover);
+        position: absolute;
+        top: 0;
         width: 100%;
-        height: 50vh;
-    }
-    video {
-        width: 100vw;
-        height: auto;
-        position: relative;
-        z-index: 999;
+        height: 200%;
     }
     h1 {
         font-family: @uni;
@@ -191,35 +226,66 @@ p {
         color: white;
         text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
         font-weight: bold;
-        font-size: 36px;
-        line-height: 1.5;
-        width: 50%;
+        font-size: 34px;
+        line-height: 1.4;
+        width: 40%;
         position: absolute;
         left: 10%;
         &.blurb1 {
-            top: 40%;
+            top: 30%;
             opacity: 1;
         }
         &.blurb2 {
             opacity: 0;
-            top: 40%;
+            top: 30%;
             transform: translateY(300px);
         }
     }
     @media(min-width:768px) {
         padding: 0;
+        .school-pic {
+            background-image: url("@{education}/school.jpg");
+            background-position: right bottom;
+        }
     }
     @media(max-width:768px) {
         position: relative;
         padding: 210px 0;
-        
+        .school-pic {
+            background-position: 75% bottom;
+            background-image: url("@{education}/school-mobile.jpg");
+        }
+        p {
+            font-size: 24px;
+            line-height: 1.2;
+            width: 75%;
+            &.blurb1 {
+                top: 20%;
+                opacity: 1;
+            }
+            &.blurb2 {
+                opacity: 0;
+                top: 20%;
+                transform: translateY(100%);
+            }
+        }
     }
 
 }
 
 
-
-
+.mapSection {
+    position: relative;
+    z-index: 0;
+    margin-bottom: 30px;
+    small {
+        position: relative;
+        z-index: 2;
+        display: block;
+        text-align: center;
+        padding: 20px 70px;
+    }
+}
 
 
 
@@ -445,29 +511,7 @@ p {
 
 // Overwriting the audio player
 
-div.audio {
-    margin: 20px 0;
-    .audio-transcript {
-        position: fixed;
-        left: 20px;
-        top: 20px;
-        right: 20px;
-        bottom: 130px;
-        margin: 0;
-        background-color: #3c3c3c;
-        border: 2px solid #fff;
-        border-radius: 5px;
-        padding: 20px;
-        p {
-            line-height: 19px;
-            font-size: 15px;
-        }
-    }
-    &.active-audio .audio-buttons{
-        left: 50%;
-        margin-left: -70px;
-    }
-}
+
 
 
 // Video player
@@ -513,12 +557,17 @@ button.close-video {
         padding-top: 280px;
         padding-bottom: 30px;
     }
-    p {
+    h2 {
         font-family: @uni;
-        color: white;
+        font-weight: 300;
+        font-size: 22px;
         text-transform: uppercase;
-        font-size: 30px;
-        line-height: 42px;
+        color: white;
+        -webkit-font-smoothing: antialiased;
+        text-align: right;
+    }
+    p {
+        color: white;
         text-align: right;
         span.highlight {
             background-color: rgba(183, 165, 122, 0.3);
@@ -534,12 +583,21 @@ button.close-video {
         }
     }
     a {
+        color: white;
+        border-bottom: 1px solid #fff;
+        &:focus,
+        &:active,
+        &:hover {
+            border-bottom-color: @purple;
+        }
+    }
+    a.play {
         position: relative;
         color: #fff;
         font-family: @uni;
         text-transform: uppercase;
         font-size: 25px;
-
+        border-bottom: none;
         &:before,
         &:after {
             content: "";
@@ -569,10 +627,10 @@ button.close-video {
     }
     @media(min-width:768px) {
         .container {
-            padding-top: 240px;
+            padding-top: 150px;
             padding-bottom: 240px;
         }
-        a {
+        a.play {
             position: absolute;
             bottom: -150px;
             right: 30px;
@@ -595,14 +653,11 @@ button.close-video {
                 outline: 15px solid rgba(183,165,122,0.2);
             }
         }
+        h2 {
+            font-size: 55px;
+        }
         p {            
-            padding-left: 30%;
-            font-size: 50px;
-            line-height: 60px;
-            span.sub {
-                font-size: 29px;
-                line-height: 35px;
-            }
+            padding-left: 50%;
         }
     }
     @media(max-width:768px) {
@@ -642,12 +697,15 @@ button.close-video {
         font-family: @uni;
         text-align: center;
         color: @lightgold;
-        font-size: 24px;
-        line-height: 37px;
+        font-size: 21px;
+        line-height: 1.5;
         font-weight: bold;
         text-transform: uppercase;
         margin-bottom: 40px;
         margin: 10px 0 40px;
+        &.left {
+            text-align: left;
+        }
         a {
             color: #5f5f5f;;
             border-bottom: 1px solid @lightgold;
@@ -753,6 +811,156 @@ button.close-video {
 
 
 
+.profile {
+    background-position: right center;
+    background-color: #DEDDDD;
+    padding: 250px 70px 20px;
+    width: 70%;
+    margin: 50px auto;
+    overflow: hidden;
+    p, h2 {        
+        z-index: 1;
+        position: relative;
+    }
+    h2.name {        
+        color: @purple;
+        text-transform: uppercase;
+        font-family: @uni;
+        font-weight: 900;
+        font-size: 20px;
+        display: inline-block;
+        margin-bottom: 5px;
+        span {
+            color: @lightgold;
+            font-size: 20px;
+            display: block;
+        }
+    }
+    p.studies {
+        font-family: @uni;
+        font-weight: bold;
+        display: block;
+        font-size: 19px;
+        margin-top: -5px;
+        margin-bottom: 5px;
+        color: @darkgold;        
+        // font-weight: bold;
+        text-transform: uppercase;
+
+    }
+    &.right {
+        text-align: right;
+        background-position: top left;
+        p.quotes {   
+            &:before,
+            &:after {
+                right: -70px;
+                left: auto;
+            }
+        }
+        div.audio.active-audio .audio-buttons {
+            left: auto;
+            right: 0;
+        }
+    }
+
+    @media(min-width:768px) {
+        padding: 150px 110px;  
+        position: relative;
+        & > div.skew {
+            .skew(-15deg,0);
+            position: absolute;
+            top: 0;
+            width: 52%;
+            bottom: 0;
+            overflow: hidden;
+            left: -100px;
+            background-color: rgba(185, 162, 122, .25);
+            div {
+                .skew(15deg,0);
+                position: absolute;
+                top: 0;
+                right: -350px;
+                left: 0;
+                bottom: 0;
+            }
+        } 
+        h2.name {
+            font-size: 45px;
+        }
+        p.studies {
+            &.light {
+                color: #808080;
+                text-shadow: none;
+            }
+        }
+        &.active {
+            p.quotes {
+                .translate(0;0);
+                opacity: 1;
+                span {
+                    .translate(0;0);
+                }
+                &:before,
+                &:after {
+                    opacity: 1;
+                }
+            }
+        }
+        
+        &.right {
+            & > div.skew {
+                left: auto;
+                right: -100px;
+                div {                    
+                    right: 0;
+                    left: -350px;                    
+                }
+            }
+        }
+        &.person-1 {
+            background-image: url("@{education}/kert-light.jpg");
+            .background-cover(cover);
+        }
+        &.person-2 {
+            background-image: url("@{education}/nicole-light.jpg");
+            .background-cover(cover);
+        }
+    }
+
+    @media(max-width:1200px) {
+        width: 100%;
+        h2.name {
+            font-size: 31px;
+        }
+    }
+    @media(max-width:768px) {
+        padding: 520px 40px 20px;        
+        background-color: #6D6D6D;
+        h2.name {
+            font-size: 30px;
+            line-height: 28px;
+            color: white;
+        }
+        p.studies {
+            font-size: 16px;
+            line-height: 18px;
+            color: white;
+            margin-top: 5px;
+        }
+        &.person-1 {
+            background-image: url("@{education}/kert-mobile.jpg");
+            background-repeat: no-repeat;
+            background-position: center top;
+        }
+        &.person-2 {
+            background-image: url("@{education}/nicole-mobile.jpg");
+            background-repeat: no-repeat;
+            background-position: center top;
+        }
+    }
+}
+
 // Large photo with headline and //////////'s
 
 
@@ -765,8 +973,12 @@ button.close-video {
 @media(min-width:768px) {
    
 }
-@media(max-width:768px) {    
+@media(max-width:768px) { 
+    .profile {
+        background-color: black;
+    }   
     div.audio {
+        margin: 20px 0 20px;
         p.length {
            line-height: 16px;
         } 
@@ -779,7 +991,7 @@ button.close-video {
         &.active-audio {
             margin-bottom: 80px;       
             .audio-buttons {
-                left: 50%;
+                left: 0;
                 right: auto;
             }
         }
@@ -792,7 +1004,54 @@ button.close-video {
 // Gallery // Slideshow updates
 
 
+.aspectRatioPlaceholder .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
+.zoom-effect .img{
+    cursor: pointer;
+    cursor: -webkit-zoom-in;
+}
+
+.zoom-effect .zoomImg,
+.zoom-effect .zoomImg-wrap {
+    position: relative;
+    z-index: 900;
+    transition: all 300ms;
+}
+
+.zoom-effect .zoomImg-wrap--absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.zoom-effect .zoomImg {
+    cursor: pointer;
+    cursor: -webkit-zoom-out;
+}
+
+
+.zoom-effect .zoomOverlay.show{
+    opacity: .9;
+}
+
+.zoom-effect .zoomOverlay {
+    z-index: 800;
+    background: #fff;
+    position: fixed;
+    transition: opacity 300ms;
+    opacity: 0;
+    cursor: pointer;
+    cursor: -webkit-zoom-out;
+}
 
 
 

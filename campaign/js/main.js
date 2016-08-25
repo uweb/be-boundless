@@ -20,11 +20,64 @@ $(function(){
 		section			= document.getElementsByTagName('section'),
 		offseter 		= 800,
 		currentOffset	= 0,
-		widthAllSlides 	= widthInner * $('section').length
+		widthAllSlides 	= widthInner * $('section').length,
+		storyUp			= false;
 
 	// Get a list of all the slides in an array
 	// var nodeList = Array.prototype.slice.call( document.getElementById('slides').children );
 	// $(nodeList[2]).addClass('amar')
+
+
+	// Animates to position on page, with animation
+
+	function scrollToX(scrollTargetXPar, speedPar, easingPar) {
+	    // scrollTargetX: the target scrollX property of the window
+	    // speed: time in pixels per second
+	    // easing: easing equation to use
+	    
+	    var scrollX = window.scrollX || document.documentElement.scrollLeft,
+	        scrollTargetX = scrollTargetXPar || 0,
+	        speed = speedPar || 2000,
+	        easing = easingPar || 'easeOutSine',
+	        currentTime = 0;
+
+	    // min time .1, max time .8 seconds
+	    var time = Math.max(0.1, Math.min(Math.abs(scrollX - scrollTargetX) / speed, 1.2));
+
+	    // easing equations from https://github.com/danro/easing-js/blob/master/easing.js
+	    var easingEquations = {
+	    	easeOutSine: function (pos) {
+	    	    return Math.sin(pos * (Math.PI / 2));
+	    	},
+	    	easeInOutSine: function (pos) {
+	    	    return (-0.5 * (Math.cos(Math.PI * pos) - 1));
+	    	},
+	    	easeInOutQuint: function (pos) {
+	    	    if ((pos /= 0.5) < 1) {
+	    	        return 0.5 * Math.pow(pos, 5);
+	    	    }
+	    	    return 0.5 * (Math.pow((pos - 2), 5) + 2);
+	    	}
+	    };
+
+	    // add animation loop
+	    function tick() {
+	        currentTime += 1 / 60;
+	        var p = currentTime / time;
+	        var t = easingEquations[easing](p);
+	        if (p < 1) {
+	            requestAnimFrame(tick);
+	            window.scrollTo(scrollX + ((scrollTargetX - scrollX) * t), 0);
+	        } else {
+	            window.scrollTo(scrollTargetX, 0);
+	        }
+	    }
+
+	    // call it once to get started
+	    tick();
+	}
+
+
 
 
 	// Reusable scroll to position for arrow navigation
@@ -40,66 +93,29 @@ $(function(){
     		$distance = $activeSection.next().length ? $activeSection.next().offset().left : 0
     	}
 
-    	// main function
-    	function scrollToY(scrollTargetXPar, speedPar, easingPar) {
-    	    // scrollTargetY: the target scrollX property of the window
-    	    // speed: time in pixels per second
-    	    // easing: easing equation to use
-    	    
-    	    var scrollX = window.scrollX || document.documentElement.scrollLeft,
-    	        scrollTargetX = scrollTargetXPar || 0,
-    	        speed = speedPar || 2000,
-    	        easing = easingPar || 'easeOutSine',
-    	        currentTime = 0;
-
-    	    // min time .1, max time .8 seconds
-    	    var time = Math.max(0.1, Math.min(Math.abs(scrollX - scrollTargetX) / speed, 1.2));
-
-    	    // easing equations from https://github.com/danro/easing-js/blob/master/easing.js
-    	    var easingEquations = {
-    	    	easeOutSine: function (pos) {
-    	    	    return Math.sin(pos * (Math.PI / 2));
-    	    	},
-    	    	easeInOutSine: function (pos) {
-    	    	    return (-0.5 * (Math.cos(Math.PI * pos) - 1));
-    	    	},
-    	    	easeInOutQuint: function (pos) {
-    	    	    if ((pos /= 0.5) < 1) {
-    	    	        return 0.5 * Math.pow(pos, 5);
-    	    	    }
-    	    	    return 0.5 * (Math.pow((pos - 2), 5) + 2);
-    	    	}
-    	    };
-
-    	    // add animation loop
-    	    function tick() {
-    	        currentTime += 1 / 60;
-    	        var p = currentTime / time;
-    	        var t = easingEquations[easing](p);
-    	        if (p < 1) {
-    	            requestAnimFrame(tick);
-    	            window.scrollTo(scrollX + ((scrollTargetX - scrollX) * t), 0);
-    	        } else {
-    	            window.scrollTo(scrollTargetX, 0);
-    	        }
-    	    }
-
-    	    // call it once to get started
-    	    tick();
-    	}
-
     	// scroll it!
-    	scrollToY($distance, 1500, 'easeInOutQuint');
+    	scrollToX($distance, 1500, 'easeInOutSine');
+
+    	// Focus on section after scrollToX
+    	setTimeout(function(){
+    		// Have to look up active section again
+    		$('.activeSection').focus()
+    	}, 1000)
 
     }         
 
     // Navigation via keyboard arrows
 
     document.onkeydown = function(e){
+    	var $prev = $('.prevSlide'),
+    		$next = $('.nextSlide')
+
     	if ( e.keyCode == '37' ) {
-    		$('.prevSlide').click();
+    		$prev.click().focus();
     	} else if ( e.keyCode == '39')  {
-    		$('.nextSlide').click();
+    		$next.click().focus();
+    	} else if ( e.keyCode == '27' && storyUp ) {
+    		$('button#empty').click();
     	} else {
     		return;
     	}
@@ -107,7 +123,7 @@ $(function(){
 
 
     // Left/Right arrow event listener
-	$('#arrows a').on('click',function(e){
+	$('#arrows button').on('click',function(e){
 		e.preventDefault();
 		scrollIt(this);
 	});
@@ -180,15 +196,6 @@ $(function(){
 		curDown = false; 
 	});
 	
-	// Test for mouse off of page
-	// document.addEventListener('mouseout', function(e) {
-    //     e = e ? e : window.event;
-    //     var from = e.relatedTarget || e.toElement;
-    //     if (!from || from.nodeName == "HTML") {
-    //         curDown = false;
-    //     }
-    // });
-
 	
 	// Calculates the scrubber bottom scrubber bar based on scroll
 	var last_known = 0, 
@@ -198,12 +205,11 @@ $(function(){
 		scrubBar.style.left = Math.ceil((last_known / scrollWidth) * ScrubContainerWidth) + 'px';
 	}
 
-	// window.addEventListener('touchend', function(e) {
-	// 	var head = document.getElementById('campaign-header'),
-	// 		headLeft = head.getBoundingClientRect().left
-	// });
-	
-	window.addEventListener('scroll', function(e) {
+
+	// The main scroll listener	
+	var timeout = null;
+
+	window.addEventListener('scroll', function() {
 	  last_known = window.pageXOffset; 
 	  if (!curDown) {
 	    window.requestAnimFrame(function() {
@@ -212,6 +218,14 @@ $(function(){
 	    });
 	  }
 	  scrollFlag = false;
+
+	  // Auto scroll to active section on scroll release / it's a custom scroll end	  
+	  if ( !storyUp ) {
+	  	clearTimeout(timeout);
+	  	timeout = setTimeout(function(){
+	  		scrollToX($('.activeSection').offset().left, 600, 'easeInOutQuint');	  	
+	  	}, 600);
+	  }
 	});
 
 	
@@ -248,7 +262,7 @@ $(function(){
 	// Scenes
 
 	// In order to toggle current section, 
-	$('section').each(function(index,element){
+	$('#content-wrapper section').each(function(index,element){
 		var sceneToggle = new ScrollMagic.Scene({
 			duration: '100%',
 			triggerElement: this,
@@ -256,17 +270,14 @@ $(function(){
 		});
 		// sceneToggle.addIndicators()
 		sceneToggle.addTo(controllerCampaign);
-		sceneToggle.setClassToggle(this, 'activeSection')
+		sceneToggle.setClassToggle(this, 'activeSection');
 		sceneToggle.on('enter', function(){
 			// index + num is the number of slides to look ahead. 1 is only one slide ahead.
 			var sectionIndex = section[index + 1]
 
-			// Focus on slide on enter 
-			$(sectionIndex).focus();
-
 			if (sectionIndex && sectionIndex.style.backgroundImage.length === 0) {
 				// Set the background 2 slides upstream
-				sectionIndex.style.backgroundImage = 'url(' + sectionIndex.getAttribute('data-img') + ')'
+				sectionIndex.style.backgroundImage = 'url(' + sectionIndex.getAttribute('data-img') + ')' || '';
 			}			
 		})		
 	})
@@ -281,14 +292,6 @@ $(function(){
 		sceneH2.addTo(controllerCampaign);
 		// sceneH2.setPin(this);
 	})
-
-	// var scrollBar = new ScrollMagic.Scene({
-	// 	duration: widthAllSlides,
-	// 	triggerElement: 'body',
-	// 	triggerHook: 1
-	// })
-	// 	.setTween(bar)
-	// 	.addTo(controllerCampaign);
 
 
 	// These are to hide the previous and next arrows when we're on the first and last slides
@@ -369,6 +372,7 @@ $(function(){
 			title	= eTarget.data('title') || "Immersive story";
 
 		currentOffset = window.pageXOffset;
+		storyUp 	  = true;
 		
 		e.preventDefault();
 
@@ -390,15 +394,13 @@ $(function(){
 			    )
 			).done(function(){
 			    setTimeout(function(){
-			    	$body.toggleClass('dyno_story loading');
+			    	$body.toggleClass('active-story loading');
 			    	$body.removeClass('active-header');
-			    }, 500)
+			    }, 500);
 			    setTimeout(function(){
 			    	$body.addClass('makeStatic');
-			    }, 1000)
+			    }, 1000);
 			});			
-
-			// console.log(a,b,c)
 
 		})
 
@@ -406,20 +408,30 @@ $(function(){
 
 
 	$('button#empty').on('click',function(e){
+
+		storyUp = false;
+
 		e.preventDefault();
 		$body.removeClass('makeStatic');
-		document.body.scrollLeft = currentOffset;
+
 		setTimeout(function(){
 			$dyno.empty();
 			if (userClosedMenu === true) {
 				$body.addClass('active-header');
-			} else {
-				return
-			}
+			} 			
 			scrollConverter.activate(currentOffset);
 		}, 500);
+		
 		history.back();
-		$body.removeClass('dyno_story');
+
+		// IE fallback
+		if ( typeof(document.body.scrollLeft) !== 'undefined' ) {
+			document.body.scrollLeft = currentOffset;
+		}
+		if ( typeof(document.documentElement.scrollLeft) !== 'undefined' ) {
+			document.documentElement.scrollLeft = currentOffset;
+		}
+		$body.removeClass('active-story');
 	})
 
 

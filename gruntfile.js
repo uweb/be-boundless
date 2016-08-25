@@ -44,12 +44,12 @@ module.exports = function(grunt) {
           'https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.2.1/chroma.min.js',
         ],
         animationLibraries : [  
-//       'campaign/ScrollMagic-master/js/lib/highlight.pack.js', 
-//       'campaign/scroll-converter/scroll-converter.min.js', 
-//       'campaign/ScrollMagic-master/js/lib/greensock/TweenMax.min.js', 
-//       'campaign/ScrollMagic-master/scrollmagic/uncompressed/ScrollMagic.js', 
-//       'campaign/ScrollMagic-master/scrollmagic/uncompressed/plugins/animation.gsap.js',
-//       'campaign/ScrollMagic-master/scrollmagic/uncompressed/plugins/debug.addIndicators.js' 
+         'campaign/ScrollMagic-master/js/lib/highlight.pack.js', 
+         'campaign/scroll-converter/scroll-converter.min.js', 
+         'campaign/ScrollMagic-master/js/lib/greensock/TweenMax.min.js', 
+         'campaign/ScrollMagic-master/scrollmagic/uncompressed/ScrollMagic.js', 
+         'campaign/ScrollMagic-master/scrollmagic/uncompressed/plugins/animation.gsap.js',
+         'campaign/ScrollMagic-master/scrollmagic/uncompressed/plugins/debug.addIndicators.js' 
         ],
         src: [ 'js/intro.js', '<%= concat.dist.libraries %>', '<%= concat.dist.theme %>', 'js/outro.js' ],
         dest: 'js/boundless.js'
@@ -73,12 +73,13 @@ module.exports = function(grunt) {
               'immersive-stories/js/education-map.js',
               'immersive-stories/js/education.js', 
               'immersive-stories/js/common.js',
+              'immersive-stories/js/medium-lightbox.js',
           ],
           'campaign/js/main.min.js': [
               'campaign/js/main.js',
           ],
           // Commented out to speed up Grunt / Add back in to remove files from library
-          // 'campaign/js/animationLibraries.min.js': ['<%= concat.dist.animationLibraries %>'],
+          'campaign/js/animationLibraries.min.js': ['<%= concat.dist.animationLibraries %>'],
         }
       }
     },
@@ -138,7 +139,7 @@ module.exports = function(grunt) {
           '<%= concat.dist.src %>', 
           '<%= concat.dist.campaign %>', 
           // Commented out to speed up Grunt / Add back in to remove files from library
-          // '<%= concat.dist.animationLibraries %>'
+          '<%= concat.dist.animationLibraries %>'
         ],
         tasks: ['js']
       },
