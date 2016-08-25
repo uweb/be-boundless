@@ -277,41 +277,42 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy">
                   
-<p>By the end of the partnership, it was clear that the hard work paid off. Test scores rose across the school. Fifth-grade scores, in particular, saw dramatic change; the percent of students meeting math standards jumped from 20 percent to nearly 80. </p>
+                <p>By the end of the partnership, it was clear that the hard work paid off. Test scores rose across the school. Fifth-grade scores, in particular, saw dramatic change; the percent of students meeting                 math standards jumped from 20 percent to nearly 80. </p>
+                
+                <p>While the scores were something to celebrate, the school saw them as a byproduct of the true victory: students were learning. In fact, Lakeridge considers one of their biggest accomplishments to be                helping students who struggled the most rise from failing to near or at passing-level, a much harder leap to make in terms of learning.</p>
+                
+                <div class="side-pic" id="pic2">
+                  <figure class="zoom-effect">
+                      <div class="aspectRatioPlaceholder" >
+                          <div class="aspect-ratio-fill" style="padding-bottom: 50%;"></div>
+                          <img class="img pic-1" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student3.jpg' ?>" alt="Click on each               school district to learn more about the students">
+                          <p></p>
+                      </div>
+                  </figure>
+                  <figure class="zoom-effect">
+                      <div class="aspectRatioPlaceholder" >
+                          <div class="aspect-ratio-fill" style="padding-bottom: 50%;"></div>
+                          <img class="img pic-2" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student4.jpg' ?>" alt="estudiante">
+                      </div>
+                  </figure>
+                </div>
 
-<p>While the scores were something to celebrate, the school saw them as a byproduct of the true victory: students were learning. In fact, Lakeridge considers one of their biggest accomplishments to be helping students who struggled the most rise from failing to near or at passing-level, a much harder leap to make in terms of learning.</p>
-
-<div class="side-pic" id="pic2">
-  <figure class="zoom-effect">
-      <div class="aspectRatioPlaceholder" >
-          <div class="aspect-ratio-fill" style="padding-bottom: 50%;"></div>
-          <img class="img pic-1" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student3.jpg' ?>" alt="Click on each school district to learn more about the students">
-          <p></p>
-      </div>
-  </figure>
-  <figure class="zoom-effect">
-      <div class="aspectRatioPlaceholder" >
-          <div class="aspect-ratio-fill" style="padding-bottom: 50%;"></div>
-          <img class="img pic-2" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student4.jpg' ?>" alt="estudiante">
-      </div>
-  </figure>
-</div>
-
-<p>“Education opens doors for opportunity, so our goal is to keep all students’ doors open,” says Granger. “If you can change what a child thinks is possible for themself, it will change what they think they can do through education.”</p>
-
-<p>The scalable nature of the program is already enabling Kazemi and other faculty members to build professional learning communities at other schools in the Road Map region. Countless teachers and students stand to benefit, and Kazemi hopes that the work will continue spreading throughout the area.</p>
-
-<p>“Kids are capable regardless of their socioeconomic status, but there’s so much about the professional workplace in poverty-impacted communities that makes it hard for teachers,” she says. “Investing in school leadership and professional development can make that change happen.”</p>
+                 <p>“Education opens doors for opportunity, so our goal is to keep all students’ doors open,” says Granger. “If you can change what a child thinks is possible for themself, it will change what they think they can do through education.”</p>
+                 
+                 <p>The scalable nature of the program is already enabling Kazemi and other faculty members to build professional learning communities at other schools in the Road Map region. Countless teachers and students stand to benefit, and Kazemi hopes that the work will continue spreading throughout the area.</p>
+                 
+                 <p>“Kids are capable regardless of their socioeconomic status, but there’s so much about the professional workplace in poverty-impacted communities that makes it hard for teachers,” she says. “Investing in school leadership and professional development can make that change happen.”</p>
+                 
 
 
+              <hr>
 
----
+              <div style="text-align: center">             
+                <h2 class="headline-gold">You can help bridge the gap</h2>
+                <p>Lakeridge Elementary is just one story of success. With your support, the College of Education can improve teaching quality and transform K-12 learning across the Puget Sound region.</p>
 
-<p>[Giving button/section] You can help bridge the gap</p>
-
-<p>(Link will be to new fund the College of Ed is creating to support the College’s partnerships with local schools/educators. In process of setting up that fund)</p>
-
-<p>Lakeridge Elementary is just one story of success. With your support, the College of Education can improve teaching quality and transform K-12 learning across the Puget Sound region.</p>
+                <a href="#" class="uw-btn">Learn more</a>
+              </div>
 
 
                 </div> 
