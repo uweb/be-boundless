@@ -154,7 +154,7 @@ p {
 
 #main_content {
     background-color: #fff;
-    z-index: 1;
+    z-index: 10;
     position: relative;
 }
 
@@ -527,9 +527,7 @@ button.close-video {
     height: 55px;
     background: url("@{img}/sprite.svg") no-repeat -207px -286px rgba(0,0,0,.2);
 }
-.playing .video-block {
-    z-index: 9999;
-}
+
 
 // Blinker animation for video
 
@@ -547,11 +545,13 @@ button.close-video {
   }
 }
 
+.playing .video-block {
+    z-index: 9999;
+}
 
 .video-block {
     position: relative;
     z-index: 0;
-    background-image: url("@{education}/woman-in-headscarf.jpg");
     .background-cover(cover);
     .container {
         padding-top: 280px;
@@ -564,11 +564,9 @@ button.close-video {
         text-transform: uppercase;
         color: white;
         -webkit-font-smoothing: antialiased;
-        text-align: right;
     }
     p {
         color: white;
-        text-align: right;
         span.highlight {
             background-color: rgba(183, 165, 122, 0.3);
             padding: 0 10px;
@@ -626,6 +624,8 @@ button.close-video {
         }
     }
     @media(min-width:768px) {
+        background-image: url("@{education}/woman-in-headscarf.jpg");
+        text-align: right;
         .container {
             padding-top: 150px;
             padding-bottom: 240px;
@@ -655,16 +655,28 @@ button.close-video {
         }
         h2 {
             font-size: 55px;
+            text-align: right;
         }
         p {            
             padding-left: 50%;
+            text-align: right;
         }
     }
     @media(max-width:768px) {
+        .container {
+            padding-top: 110%;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
         background-position: -65px 0;
-        a {
+        background-image: url("@{education}/woman-in-headscarf-mobile.jpg");
+        h2 {
+            font-size: 40px;
+        }
+        a.play {
             padding: 31px 97px 14px 0;
             display: inline-block;
+            font-size: 20px;
             &:before {
             }
             &:after {
@@ -1047,7 +1059,7 @@ button.close-video {
     z-index: 800;
     background: #fff;
     position: fixed;
-    transition: opacity 300ms;
+    transition: opacity 600ms;
     opacity: 0;
     cursor: pointer;
     cursor: -webkit-zoom-out;

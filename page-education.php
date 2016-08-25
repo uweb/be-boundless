@@ -267,7 +267,7 @@
   <section class="mapSection">
     
     <div id="mapid"></div>
-    <small>Learn more about the school districts served by College of Education students, faculty and alumni.</small>
+    <small>Click on each school district to learn more about the students served by College of Education faculty, students and alumni.</small>
       
   </section>
 
@@ -285,13 +285,14 @@
   <figure class="zoom-effect">
       <div class="aspectRatioPlaceholder" >
           <div class="aspect-ratio-fill" style="padding-bottom: 50%;"></div>
-          <img class="img pic-1" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student3.jpg' ?>">
+          <img class="img pic-1" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student3.jpg' ?>" alt="Click on each school district to learn more about the students">
+          <p></p>
       </div>
   </figure>
   <figure class="zoom-effect">
       <div class="aspectRatioPlaceholder" >
           <div class="aspect-ratio-fill" style="padding-bottom: 50%;"></div>
-          <img class="img pic-2" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student4.jpg' ?>">
+          <img class="img pic-2" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student4.jpg' ?>" alt="estudiante">
       </div>
   </figure>
 </div>

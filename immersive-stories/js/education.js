@@ -89,7 +89,7 @@ $(function(){
     $(".play").click(function(e){
      var $video = $('#video'),
        $body = $("body");
-     e.preventDefault();
+       e.preventDefault();
        $body.toggleClass("playing");
        document.getElementById("boundless-video").innerHTML = 
          '<button class="close-video"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>' +

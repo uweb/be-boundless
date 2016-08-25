@@ -40,10 +40,10 @@ function MediumLightbox(element, options) {
 	//recalc size screen on resize
 	window.addEventListener("resize", updateScreenSize);
 
-
 	function zoom(){
 
-		$(this).parent().toggleClass('active')
+		$(this).parent().toggleClass('active');
+		console.log($(this).find('img').attr('alt'));
 
 		if(!this.isZoomed){
 
@@ -138,7 +138,6 @@ function MediumLightbox(element, options) {
 			//recal scale if zoomed image is more bigger then original
 			if(scale*imgW > realW){
 				scale = realW/imgW;
-				console.log('big')
 			}
 			
                         //Add zommed values: x,y and scale
