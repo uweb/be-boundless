@@ -57,10 +57,10 @@ $(".audio-ctrl").each(function(){
 $('.read-more').on('click', function(e){
   e.preventDefault();
   $('html, body').animate({
-        scrollTop: (document.getElementsByTagName('main')[0].getBoundingClientRect().top - 80)
-      }, {
-        duration: 1000
-    });
+      scrollTop: (document.getElementsByTagName('main')[0].getBoundingClientRect().top - 80)
+    }, {
+      duration: 1000
+  });
 })
 
 
