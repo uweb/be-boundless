@@ -62,7 +62,7 @@
 
  <!-- **** Map **** -->   
 
- <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.css" />  
+ <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />  
  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/education-map.css' ?>" />
 
  <style>

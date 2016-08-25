@@ -2,12 +2,14 @@ function mapInit(){
 
     //init map to specific geo coordinates and zoom level
     var mymap = L.map('mapid').setView([47.45, -121.8], 9);
+    //disable scroll to zoom
+    mymap.scrollWheelZoom.disable();
 
     //create light background map from mapshaper
     L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoidXd3ZWJ0ZWFtIiwiYSI6ImNpcjNyM20zcjAwMTcxN25tOXIycTc1a3MifQ.wCpOJcC1QNSVgkWYhzDHWw', {
         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
         maxZoom: 15,
-        minZoom: 8,
+        minZoom: 9,
     }).addTo(mymap);
 
 
@@ -62,6 +64,8 @@ function mapInit(){
         }
     });
 
+
+
     //make new icon
     function schoolPoints(feature, latlng) {
         var icon = new L.Icon({ 
@@ -83,7 +87,8 @@ function mapInit(){
     //add color of cloropleth to districts
     function styleDistrict(feature) {
         return {
-            fillColor: getColor(feature.properties.freeredlunch)
+            fillColor: getColor(feature.properties.freeredlunch),
+            tabIndex: 0
         };
     }
 
@@ -100,6 +105,8 @@ function mapInit(){
     //for adding district pop-up
     function onEachDistrict(feature, layer) {
         layer.bindPopup(getDistrictPopup(feature));
+        console.log(layer);
+        console.log(layer.Path);
     }
 
     //for adding school pop-up
@@ -113,11 +120,11 @@ function mapInit(){
         nonWhite = 100 - white; 
         return "<div class='popupbox'><table width='200px'>" + 
                     "<tr class='district-name row'><td colspan='4'>" + data.properties.NAME + "</td></tr>" +
-                    "<tr class='lunch data row'><td class='percent'>" + Math.round(data.properties.freeredlunch) + "%" + "</td><td colspan='3' class='label'>% Free / reduced lunch</td></tr>" +
+                    "<tr class='lunch data row'><td class='percent'>" + Math.round(data.properties.freeredlunch) + "%" + "</td><td colspan='3' class='label'>Free / reduced lunch</td></tr>" +
                     "<tr class='grad data row'><td class='percent'>" + Math.round(data.properties.GradRate) + "%" + "</td><td colspan='3' class='label'>Graduation rate</td></tr>" +
-                    "<tr class='esl data row'><td class='percent'>" + Math.round(data.properties.ESL) + "%" + "</td><td colspan='3' class='label'>% ESL</td></tr>" +
+                    "<tr class='esl data row'><td class='percent'>" + Math.round(data.properties.ESL) + "%" + "</td><td colspan='3' class='label'>ESL</td></tr>" +
                     "<tr class='graph row'>" + 
-                        "<td rowspan='5' colspan='4' class='asian'>" + "<div class='containerGraph'>" +
+                        "<td rowspan='5' colspan='4' class='nonWhite'>" + "<div class='containerGraph'>" +
                             "<div class='bar' style='width:" + nonWhite + "%;'><p>" + nonWhite + "%</p></div>" +
                             "<p class='tag'>Students of color</p>" + "</div>" +
                         "</td>" +
@@ -132,12 +139,12 @@ function mapInit(){
         UWCand = data.properties.UWPrincipals + data.properties.UWSI + data.properties.UWTeachers;
         popup = "<div class='popupbox'><table width='220px'>" + 
                     "<tr class='district-name row'><td colspan='4'>" + data.properties.School + "</td></tr>" +
-                    "<tr class='lunch data row'><td class='percent'>" + Math.round(data.properties.PercentFreeorReducedPricedMeals) + "%" + "</td><td colspan='3' class='label'>% Free / reduced lunch</td></tr>";
+                    "<tr class='lunch data row'><td class='percent'>" + Math.round(data.properties.PercentFreeorReducedPricedMeals) + "%" + "</td><td colspan='3' class='label'>Free / reduced lunch</td></tr>";
         popup += (data.properties.GraduationRate === 0) ? "" : "<tr class='grad data row'><td class='percent'>" + Math.round(data.properties.GraduationRate) + "%" + "</td><td colspan='3' class='label'>Graduation rate</td></tr>";
-        popup +=    "<tr class='esl data row'><td class='percent'>" + Math.round(data.properties.PercentESL) + "%" + "</td><td colspan='3' class='label'>% ESL</td></tr>";
+        popup +=    "<tr class='esl data row'><td class='percent'>" + Math.round(data.properties.PercentESL) + "%" + "</td><td colspan='3' class='label'>ESL</td></tr>";
         popup += (UWCand === 0) ? "" : "<tr class='cand data row'><td class='percent'>" + UWCand + "</td><td colspan='3' class='label'>UW leadership candidates</td></tr>";
         popup +=    "<tr class='graph row'>" + 
-                        "<td rowspan='5' colspan='4' class='asian'>" + "<div class='containerGraph'>" +
+                        "<td rowspan='5' colspan='4' class='nonWhite'>" + "<div class='containerGraph'>" +
                             "<div class='bar' style='width:" + nonWhite + "%;'><p>" + nonWhite + "%</p></div>" +
                             "<p class='tag'>Students of color</p>" + "</div>" +
                         "</td>" +
