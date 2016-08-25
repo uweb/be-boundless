@@ -116,7 +116,7 @@ function mapInit(){
         white = Math.round(data.properties.PercentWhite);
         nonWhite = 100 - white; 
         return "<div class='popupbox'><table width='200px'>" + 
-                    "<tr class='district-name row'><td colspan='4'>" + data.properties.NAME + "</td></tr>" +
+                    "<tr class='district-name row'><td colspan='4'><div class='name'>" + data.properties.NAME + "</div></td></tr>" +
                     "<tr class='lunch data row'><td class='percent'>" + Math.round(data.properties.freeredlunch) + "%" + "</td><td colspan='3' class='label'>Free / reduced lunch</td></tr>" +
                     "<tr class='grad data row'><td class='percent'>" + Math.round(data.properties.GradRate) + "%" + "</td><td colspan='3' class='label'>Graduation rate</td></tr>" +
                     "<tr class='esl data row'><td class='percent'>" + Math.round(data.properties.ESL) + "%" + "</td><td colspan='3' class='label'>ESL</td></tr>" +
