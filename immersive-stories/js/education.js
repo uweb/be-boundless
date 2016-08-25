@@ -31,7 +31,7 @@ $(function(){
       triggerHook: 0.5,
       duration: '25%',
     })
-    .setTween(TweenMax.from('#pic1 .pic-2', 1, { y: '-100%', ease: Power0.easeIn }))
+    .setTween(TweenMax.from('#pic1 .pic-2', 1, { x: '100%', ease: Power0.easeIn }))
     //.addIndicators()
     .addTo(controllerEducation);
 
@@ -41,7 +41,7 @@ $(function(){
       triggerHook: 0.6,
       duration: '15%',
     })
-    .setTween(TweenMax.to('#pic2 .pic-2', 1, { y: '-100%', ease: Power0.easeIn }))
+    .setTween(TweenMax.to('#pic2 .pic-2', 1, { x: '100%', ease: Power0.easeIn }))
     //.addIndicators()
     .addTo(controllerEducation);
 
