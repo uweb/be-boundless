@@ -73,6 +73,7 @@ module.exports = function(grunt) {
               'immersive-stories/js/education-map.js',
               'immersive-stories/js/education.js', 
               'immersive-stories/js/common.js',
+              'immersive-stories/js/medium-lightbox.js',
           ],
           'campaign/js/main.min.js': [
               'campaign/js/main.js',

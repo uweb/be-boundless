@@ -29,22 +29,21 @@ $(function(){
     var studentpic1 = new ScrollMagic.Scene({
       triggerElement: "#pic1",
       triggerHook: 0.5,
-      duration: '5%',
+      duration: '25%',
     })
-    .setTween(TweenMax.to('#pic1 .pic-2', 1, { autoAlpha: 0, ease: Power0.easeIn }))
+    .setTween(TweenMax.from('#pic1 .pic-2', 1, { y: '-100%', ease: Power0.easeIn }))
     //.addIndicators()
     .addTo(controllerEducation);
 
 
     var studentpic2 = new ScrollMagic.Scene({
       triggerElement: "#pic2",
-      triggerHook: 0.5,
-      duration: '5%',
+      triggerHook: 0.6,
+      duration: '15%',
     })
-    .setTween(TweenMax.to('#pic2 .pic-2', 1, { autoAlpha: 0, ease: Power0.easeIn }))
+    .setTween(TweenMax.to('#pic2 .pic-2', 1, { y: '-100%', ease: Power0.easeIn }))
     //.addIndicators()
     .addTo(controllerEducation);
-
 
 
     var intro = new ScrollMagic.Scene({
@@ -134,7 +133,9 @@ $(function(){
        }
    });
 
-      
+  // Lightbox plugin
+
+  MediumLightbox('figure.zoom-effect');    
 
 
 })

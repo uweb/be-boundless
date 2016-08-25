@@ -202,6 +202,7 @@
       <div class="container">
           <div class="row">
               <div class="col-md-10 col-md-offset-1 copy"> 
+              <h2>Aisha's story</h2>
               <p>In addition to serving elementary schools, the College of Education supports high school students in the Road Map Region through the Dream Project. </p>
               <p>See Aisha Ali, a graduate of Kent-Meridian High School and freshman at UW Tacoma, describe what being a <a href="http://www.uw.edu/dreamproject">Dream Project</a> mentee means to her and her family.</p>
 
@@ -230,8 +231,18 @@
 <p>“We wanted to develop a culture of learning where teachers felt confident and supported,” says Kazemi. She knew that investing in adult learning would lead to higher-quality learning and improved test scores for students. </p>
 
 <div class="side-pic" id="pic1">
-  <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student1.jpg' ?>" alt="Lakeridge Elementary students" class="pic-1">
-  <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student2.jpg' ?>" alt="Lakeridge Elementary students" class="pic-2">
+  <figure class="zoom-effect">
+      <div class="aspectRatioPlaceholder" >
+          <div class="aspect-ratio-fill" style="padding-bottom: 50%;"></div>
+          <img class="img pic-1" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student1.jpg' ?>">
+      </div>
+  </figure>
+  <figure class="zoom-effect">
+      <div class="aspectRatioPlaceholder" >
+          <div class="aspect-ratio-fill" style="padding-bottom: 50%;"></div>
+          <img class="img pic-2" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student2.jpg' ?>">
+      </div>
+  </figure>
 </div>
 
 <p>Kazemi worked closely with UW Bothell Associate Professor Allison Hintz and several graduate students to come up with a plan. The team proposed that the teachers come together for full-day, immersive sessions known as Math Labs. Teachers would gather in the school’s conference room to learn and practice new strategies, then head to an actual class to try out the lesson — as a team — with students. </p>
@@ -240,6 +251,8 @@
 <p>“Giving and receiving feedback is invaluable in terms of growing professionally,” says Kazemi, but typically, “teachers don’t have ways of making what they’re doing in the classroom more visible to each other, something we aimed to change.”</p>
 
 <p>As the teachers embraced the changes, their students equally adapted, devouring lessons like they never had before. </p>
+
+
 
 <p>“You could see a huge shift in their understanding of math,” says Kert Lin, a fourth-grade teacher at Lakeridge and College of Education alumnus. “I think what’s made it so successful is that we provide kids with tools to show off what they’re learning. You can’t be in an environment like that and not have fun.” </p>
 
@@ -268,8 +281,18 @@
 <p>While the scores were something to celebrate, the school saw them as a byproduct of the true victory: students were learning. In fact, Lakeridge considers one of their biggest accomplishments to be helping students who struggled the most rise from failing to near or at passing-level, a much harder leap to make in terms of learning.</p>
 
 <div class="side-pic" id="pic2">
-  <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student3.jpg' ?>" alt="Lakeridge Elementary students" class="pic-1">
-  <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student4.jpg' ?>" alt="Lakeridge Elementary students" class="pic-2">
+  <figure class="zoom-effect">
+      <div class="aspectRatioPlaceholder" >
+          <div class="aspect-ratio-fill" style="padding-bottom: 50%;"></div>
+          <img class="img pic-1" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student3.jpg' ?>">
+      </div>
+  </figure>
+  <figure class="zoom-effect">
+      <div class="aspectRatioPlaceholder" >
+          <div class="aspect-ratio-fill" style="padding-bottom: 50%;"></div>
+          <img class="img pic-2" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student4.jpg' ?>">
+      </div>
+  </figure>
 </div>
 
 <p>“Education opens doors for opportunity, so our goal is to keep all students’ doors open,” says Granger. “If you can change what a child thinks is possible for themself, it will change what they think they can do through education.”</p>
