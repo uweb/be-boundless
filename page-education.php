@@ -267,6 +267,7 @@
   <section class="mapSection">
     
     <div id="mapid"></div>
+    <small>Learn more about the school districts served by College of Education students, faculty and alumni.</small>
       
   </section>
 
