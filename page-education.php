@@ -6,7 +6,7 @@
   <div class="intro-body">
     <div class="container">
       <div class="row">
-        <div class="col-md-10 col-xs-8 col-xs-offset-1" id='intro-text'>
+        <div class="col-md-10 col-xs-9 col-xs-offset-1 col-xs-offset-1 col-lg-offset-0" id='intro-text'>
             <h1>Nurturing minds, <br>opening doors</h1>
             <p>In South Seattle and south King County, the UW College of Education is partnering with the Road Map Project to close achievement gaps in schools — and open all doors for young learners.
 </p>
@@ -78,7 +78,7 @@
           <p class="studies">Lakeridge Elementary</p>
           <div class="audio"><p class="length">0:44  <span>/ play interview</span></p>
             <audio controls class="player">
-              <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/education/nicole.mp3' ?>" type="audio/mpeg">
+              <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/education/nicole-music.mp3' ?>" type="audio/mpeg">
               <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
               Your browser does not support HTML5 audio.
             </audio>
@@ -105,7 +105,7 @@
           <p class="studies">Lakeridge Elementary</p>
           <div class="audio"><p class="length">1:09 <span>/ play interview</span></p>
             <audio controls class="player">
-              <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/education/kert.mp3' ?>" type="audio/mpeg">
+              <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/education/kert-music.mp3' ?>" type="audio/mpeg">
               <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
               Your browser does not support HTML5 audio.
             </audio>

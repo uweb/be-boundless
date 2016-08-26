@@ -3,17 +3,17 @@ $(function(){
   var controllerEducation = new ScrollMagic.Controller()
 
   var zoomMap = new TimelineMax ()
-      .to(".school-pic", 1, { y: '-50%', ease: Power0.easeOut })
       .add([
-        TweenMax.to(".blurb1", 0.5, { y: '-100%', opacity: 0 }, 0.5),
-        TweenMax.to(".blurb2", 0.5, { transform: 'translateY(0)', opacity: 1 })
+        TweenMax.to(".school-pic", 1, { y: '-50%', ease: Power0.easeOut }),
+        TweenMax.to(".blurb1", 1, { y: '-100%', opacity: 0 }, 1),
+        TweenMax.to(".blurb2", 1, { transform: 'translateY(0)', opacity: 1 })
       ])
 
     // build scenes
     var schoolZoom = new ScrollMagic.Scene({
         triggerElement: ".school-zoom",
         triggerHook: 0.7,
-        duration: "50%",
+        duration: "90%",
       })
       .setTween(zoomMap)
       // .on("progress", function (event) {
