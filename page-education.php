@@ -6,7 +6,7 @@
   <div class="intro-body">
     <div class="container">
       <div class="row">
-        <div class="col-md-10 col-xs-9 col-xs-offset-1 col-xs-offset-1 col-lg-offset-0" id='intro-text'>
+        <div class="col-md-10 col-xs-10 col-xs-offset-1 col-xs-offset-1 col-lg-offset-0" id='intro-text'>
             <h1>Nurturing minds, <br>opening doors</h1>
             <p>In South Seattle and south King County, the UW College of Education is partnering with the Road Map Project to close achievement gaps in schools — and open all doors for young learners.
 </p>
@@ -225,8 +225,6 @@
           <div class="container">
               <div class="row">
                   <div class="col-md-10 col-md-offset-1 copy">
-              
-
 
 <p>“We wanted to develop a culture of learning where teachers felt confident and supported,” says Kazemi. She knew that investing in adult learning would lead to higher-quality learning and improved test scores for students. </p>
 
@@ -234,13 +232,13 @@
   <figure class="zoom-effect">
       <div class="aspectRatioPlaceholder" >
           <div class="aspect-ratio-fill" style="padding-bottom: 50%;"></div>
-          <img class="img pic-1" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student1.jpg' ?>">
+          <img class="img pic-1" alt="Using the overhead projector, Brown leads her students through a math lesson" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student6.jpg' ?>">
       </div>
   </figure>
   <figure class="zoom-effect">
       <div class="aspectRatioPlaceholder" >
           <div class="aspect-ratio-fill" style="padding-bottom: 50%;"></div>
-          <img class="img pic-2" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student2.jpg' ?>">
+          <img class="img pic-2" alt="Lin helps students work through a word problem" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student2.jpg' ?>">
       </div>
   </figure>
 </div>
@@ -285,14 +283,14 @@
                   <figure class="zoom-effect">
                       <div class="aspectRatioPlaceholder" >
                           <div class="aspect-ratio-fill" style="padding-bottom: 50%;"></div>
-                          <img class="img pic-1" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student3.jpg' ?>" alt="Click on each               school district to learn more about the students">
+                          <img class="img pic-1" alt="" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student3.jpg' ?>">
                           <p></p>
                       </div>
                   </figure>
                   <figure class="zoom-effect">
                       <div class="aspectRatioPlaceholder" >
                           <div class="aspect-ratio-fill" style="padding-bottom: 50%;"></div>
-                          <img class="img pic-2" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student4.jpg' ?>" alt="estudiante">
+                          <img class="img pic-2" alt="" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student4.jpg' ?>">
                       </div>
                   </figure>
                 </div>

@@ -94,7 +94,7 @@ $(function(){
        document.getElementById("boundless-video").innerHTML = 
          '<button class="close-video"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>' +
          '<div id="youtube-video">' + 
-       '<iframe title="YouTube video" id="embedVid" width=' + $video.width() + ' height=' + $video.height() + ' src="https://www.youtube.com/embed/V2svAdaEe30?rel=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allowfullscreen autoplay></iframe>' +
+       '<iframe title="YouTube video" id="embedVid" width=' + $video.width() + ' height=' + $video.height() + ' src="https://www.youtube.com/embed/l3SLvfzwVkU?rel=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allowfullscreen autoplay></iframe>' +
          '</div>';
        
        setTimeout( function(){
@@ -136,6 +136,7 @@ $(function(){
   // Lightbox plugin
 
   MediumLightbox('figure.zoom-effect');    
+
 
 
 })

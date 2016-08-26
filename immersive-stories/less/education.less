@@ -57,7 +57,7 @@ p {
     p {
         color: white;
         text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
-        font-weight: bold;
+        // font-weight: bold;
     }
     //video {
     //    position: absolute;
@@ -110,7 +110,7 @@ p {
         }
         .intro-body {
             #intro-text {
-                padding: 0 40px 0 20px;
+                padding: 0 28% 0 20px;
             }
         }
     }    
@@ -145,7 +145,16 @@ p {
            font-size: 6vw;
        }
     }
-
+    @media(max-device-width: 480px) {
+        h1 {
+           margin-top: 46vh;
+       }
+       .intro-body {
+           #intro-text {
+               padding: 0;
+           }
+       }
+    } 
 
 }
 
@@ -942,12 +951,14 @@ button.close-video {
         }
     }
     @media(max-width:768px) {
-        padding: 520px 40px 20px;        
+        padding: 80% 40px 20px;        
         background-color: #6D6D6D;
+        background-size: 100%;
         h2.name {
             font-size: 30px;
             line-height: 28px;
-            color: white;
+            color: @lightgold;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
         }
         p.studies {
             font-size: 16px;
@@ -983,16 +994,19 @@ button.close-video {
 @media(max-width:768px) { 
     .profile {
         background-color: black;
-    }   
+    }  
     div.audio {
         margin: 20px 0 20px;
+        min-height: 40px;
         p.length {
-           line-height: 16px;
+           line-height: 11px
         } 
         p.audio-buttons {
-            font-size: 15px;
+            font-size: 17px;
             button.audio-play {
-                padding: 9px 15px 9px 10px;
+                padding: 0;
+                right: 10px;
+                top: 5px;
             }
         }
         &.active-audio {
@@ -1000,6 +1014,14 @@ button.close-video {
             .audio-buttons {
                 left: 0;
                 right: auto;
+            }
+        } 
+        .audio-transcript {
+            margin: 10px;
+            padding: 0;
+            p {
+                font-size: 15px;
+                line-height: 1.6;
             }
         }
     }
