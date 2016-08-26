@@ -137,6 +137,21 @@ $(function(){
 
   MediumLightbox('figure.zoom-effect');    
 
+  var img = document.getElementsByClassName('img')
+
+  $(img).each(function(index){
+    var imgIndex = img[index],
+        $this = $(this),
+        flag = false;
+
+    imgIndex.addEventListener("mouseover", function(){
+      if (!flag) {
+        $this.after('<p>' + $this.attr('alt') + '</p>')
+        flag = true;
+      }
+    })
+  })
+
 
 
 })

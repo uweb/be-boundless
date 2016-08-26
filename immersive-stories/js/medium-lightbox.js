@@ -43,7 +43,6 @@ function MediumLightbox(element, options) {
 	function zoom(){
 
 		$(this).parent().toggleClass('active');
-		console.log($(this).find('img').attr('alt'));
 
 		if(!this.isZoomed){
 

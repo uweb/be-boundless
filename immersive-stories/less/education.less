@@ -179,6 +179,35 @@ p {
     outline: 13px solid #f1f1f1;
     position: relative;
     z-index: 5;
+    .aspectRatioPlaceholder {
+        p {
+            .translate(0,150px);
+            .transition(transform .2s linear);
+        }
+        &:hover {
+            p {
+                .translate(0,0);
+            }
+        }
+    }
+    &.active {
+        p {
+            display: none;
+        }
+    }
+    p {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        z-index: 9999;
+        background-color: rgba(0, 0, 0, 0.62);
+        padding: 10px 20px;
+        color: white;
+        font-size: 15px;
+        line-height: 1.4;
+        display: inline-block;
+        margin: 0;
+    }
     &.active {
         overflow: visible;
     }

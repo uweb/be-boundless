@@ -231,13 +231,13 @@
 <div class="side-pic" id="pic1">
   <figure class="zoom-effect">
       <div class="aspectRatioPlaceholder" >
-          <div class="aspect-ratio-fill" style="padding-bottom: 50%;"></div>
+          <div class="aspect-ratio-fill""></div>
           <img class="img pic-1" alt="Using the overhead projector, Brown leads her students through a math lesson" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student6.jpg' ?>">
       </div>
   </figure>
   <figure class="zoom-effect">
       <div class="aspectRatioPlaceholder" >
-          <div class="aspect-ratio-fill" style="padding-bottom: 50%;"></div>
+          <div class="aspect-ratio-fill""></div>
           <img class="img pic-2" alt="Lin helps students work through a word problem" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student2.jpg' ?>">
       </div>
   </figure>
@@ -282,15 +282,14 @@
                 <div class="side-pic" id="pic2">
                   <figure class="zoom-effect">
                       <div class="aspectRatioPlaceholder" >
-                          <div class="aspect-ratio-fill" style="padding-bottom: 50%;"></div>
-                          <img class="img pic-1" alt="" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student3.jpg' ?>">
-                          <p></p>
+                          <div class="aspect-ratio-fill""></div>
+                          <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student3.jpg' ?>">
                       </div>
                   </figure>
                   <figure class="zoom-effect">
                       <div class="aspectRatioPlaceholder" >
-                          <div class="aspect-ratio-fill" style="padding-bottom: 50%;"></div>
-                          <img class="img pic-2" alt="" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student4.jpg' ?>">
+                          <div class="aspect-ratio-fill""></div>
+                          <img class="img pic-2" alt="A student in Lin's classroom" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student4.jpg' ?>">
                       </div>
                   </figure>
                 </div>
