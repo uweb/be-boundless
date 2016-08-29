@@ -84,9 +84,9 @@
             </audio>
         
             <div class="visually-hidden audio-transcript" tabindex="0">
-                        <p>Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper.
+              <p>When it was first laid out, Jessica [Granger] just kept saying that it’ll be hands-on; you’ll be right there in the classroom coaching, and I didn’t know what that looked like. As we continued to practice, and I saw the changes in the kids’ thinking, I saw that it was really good work to do, so. I’d say I really enjoyed it. </p>
 
-              Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+              <p>It changed my thinking; I used to love reading, now I love teaching math, actually, more. And the kids learn and grow, I think, from each other, and seeing how different people solve things. And I even learn from them. I tell them every day we’re both coming to teach and learn, so I learn from them just as much as they learn from me.</p>
             </div>
             
             <p class="audio-buttons">
@@ -111,9 +111,9 @@
             </audio>
         
             <div class="visually-hidden audio-transcript" tabindex="0">
-              <p>Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper.
+              <p>I feel like I grew up in kind of two very different worlds. Bailey Gatzert [Elementary], it’s actually where I spent most of my time growing up. And so all my friends were kind of in that Central District area. And that school was very similar to Lakeridge in terms of the population. It’s like a block away from a housing complex. All my friends were of, like…I mean it was so diverse, and that’s kind of where I grew up and where my identity was set. </p>
 
-    Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+              <p>So when I went to Eckstein [in the Ravenna neighborhood] for middle school, it was a huge, huge shift. And I remember going from literally being at the top of my class in fifth grade to, like, really struggling to stay afloat in middle school. And I remember in sixth grade thinking, “Oh man, if I’m having this much trouble in middle school, like, how are my friends doing?” I think that was the first time I realized that there was this idea of inequity in our education system.</p>
             </div>
             
             <p class="audio-buttons">
@@ -124,60 +124,6 @@
           </div>
         </section>
 
-
-    <!-- <section class="content-section text-center audio-block">
-      
-      <ul id="people">
-          <li class="pax-1" tabindex="0">
-              <div class="hider">
-                  <h2>Kert Lin</h2>
-                  <p><span>School: </span>Lakewood</p>
-                  <p><span>Years teaching: </span>15</p>
-                  <div class="audio"><p class="length">1:09 <span>/ play interview</span></p>
-                    <audio controls class="player" preload="none">
-
-                      <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/education/kert.mp3' ?>" type="audio/mpeg">
-                      Your browser does not support HTML5 audio.
-                    </audio>
-
-                    <div class="visually-hidden audio-transcript" tabindex="0">
-                      <p>Interview transcript goes here</p>
-                    </div>
-                    <p class="audio-buttons">
-                      <button class="audio-ctrl audio-play" tabindex="0" aria-label="Play interview with Kert, one minute and one second">1:09 / PLAY INTERVIEW</button>  
-                      <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
-                      <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
-                    </p>
-                  </div>
-              </div>
-          </li>
-          <li class="pax-2" tabindex="0">
-              <div class="hider">
-                  <h2>Nicole Brown</h2>
-                  <p><span>School: </span>Lakewood</p>
-                  <p><span>Years teaching: </span>15</p>
-                  <div class="audio"><p class="length">:44 <span>/ play interview</span></p>
-                    <audio controls class="player" preload="none">
-
-                      <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/education/nicole.mp3' ?>" type="audio/mpeg">
-                      Your browser does not support HTML5 audio.
-                    </audio>
-
-                    <div class="visually-hidden audio-transcript" tabindex="0">
-                      <p>Interview transcript goes here</p>
-                    </div>
-                    <p class="audio-buttons">
-                      <button class="audio-ctrl audio-play" tabindex="0" aria-label="Play interview with Nicle, one minute and forty seven seconds">:44 / PLAY INTERVIEW</button>  
-                      <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
-                      <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
-                    </p>
-                  </div>
-              </div>
-          </li>
-          
-          
-      </ul>
-    </section> -->
 
 
     <section class="text-block">
@@ -232,13 +178,13 @@
   <figure class="zoom-effect">
       <div class="aspectRatioPlaceholder" >
           <div class="aspect-ratio-fill""></div>
-          <img class="img pic-1" alt="Using the overhead projector, Brown leads her students through a math lesson" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student6.jpg' ?>">
+          <img class="img pic-1" alt="Using the overhead projector, Brown leads her students through a math lesson" data-width="800" data-height="533" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student6.jpg' ?>">
       </div>
   </figure>
   <figure class="zoom-effect">
       <div class="aspectRatioPlaceholder" >
           <div class="aspect-ratio-fill""></div>
-          <img class="img pic-2" alt="Lin helps students work through a word problem" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student2.jpg' ?>">
+          <img class="img pic-2" alt="Lin helps students work through a word problem" data-width="800" data-height="533" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student2.jpg' ?>">
       </div>
   </figure>
 </div>
@@ -265,7 +211,8 @@
   <section class="mapSection">
     
     <div id="mapid"></div>
-    <small>Click on each school district to learn more about the students served by College of Education faculty, students and alumni.</small>
+    <small>Click on each school district to learn more. Zoom in to see schools where College of Education students are serving.</small>
+
       
   </section>
 
@@ -283,13 +230,13 @@
                   <figure class="zoom-effect">
                       <div class="aspectRatioPlaceholder" >
                           <div class="aspect-ratio-fill""></div>
-                          <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student3.jpg' ?>">
+                          <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="800" data-height="533" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student3.jpg' ?>">
                       </div>
                   </figure>
                   <figure class="zoom-effect">
                       <div class="aspectRatioPlaceholder" >
                           <div class="aspect-ratio-fill""></div>
-                          <img class="img pic-2" alt="A student in Lin's classroom" data-width="900" data-height="450" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student4.jpg' ?>">
+                          <img class="img pic-2" alt="A student in Lin's classroom" data-width="800" data-height="533" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/education/lakeridge-student4.jpg' ?>">
                       </div>
                   </figure>
                 </div>

@@ -6,7 +6,7 @@ $(function(){
       .add([
         TweenMax.to(".school-pic", 1, { y: '-50%', ease: Power0.easeOut }),
         TweenMax.to(".blurb1", 1, { y: '-100%', opacity: 0 }, 1),
-        TweenMax.to(".blurb2", 1, { transform: 'translateY(0)', opacity: 1 })
+        TweenMax.to(".blurb2", 1, { y: '0', opacity: 1 })
       ])
 
     // build scenes
@@ -142,12 +142,12 @@ $(function(){
   $(img).each(function(index){
     var imgIndex = img[index],
         $this = $(this),
-        flag = false;
+        hasCaption = false;
 
     imgIndex.addEventListener("mouseover", function(){
-      if (!flag) {
+      if (!hasCaption) {
         $this.after('<p>' + $this.attr('alt') + '</p>')
-        flag = true;
+        hasCaption = true;
       }
     })
   })
