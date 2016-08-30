@@ -35,7 +35,7 @@
       </div>   
     </section>
 
-    <section id="stats">
+    <!-- <section id="stats">
       <div class="container">     
         <div class="row">
           <div class="col-md-6">
@@ -45,7 +45,7 @@
              <img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/stat-2.png' ?>">
           </div>
       </div>
-    </section>
+    </section> -->
 
     
     <section id="thermo" class="inactive">

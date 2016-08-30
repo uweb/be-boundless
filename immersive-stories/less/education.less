@@ -18,7 +18,6 @@
        -o-background-size: @cover;
 }
 
-
 body {
     width: 100%;
     height: 100%;
@@ -52,13 +51,13 @@ p {
         font-family: @uni;
         color: white;
         text-transform: uppercase;
-        font-weight: 300;
+        font-weight: normal;
         line-height: 1;
     }
     p {
         color: white;
         text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
-        font-weight: bold;
+        // font-weight: bold;
     }
     //video {
     //    position: absolute;
@@ -97,8 +96,7 @@ p {
         }
     }
     @media(max-width:768px) {
-        background-image: url("@{education}/intro-mobile.jpg");
-        position: relative;
+        background-image: url("@{education}/intro-alt-mobile.jpg");
         padding: 0;
         h1 {
             margin-top: 25vh;
@@ -110,12 +108,17 @@ p {
         a.read-more {
             top: calc(~"100vh - 70px");
         }
+        .intro-body {
+            #intro-text {
+                padding: 0 28% 0 20px;
+            }
+        }
     }    
     @media(min-width:768px) {
-        background-image: url("@{education}/intro.jpg");
+        background-image: url("@{education}/intro-alt.jpg");
         padding: 0;
         h1 {
-            font-size: 7.5vw;
+            font-size: 6vw;
             margin-top: 35vh;
             letter-spacing: -4px;
             -webkit-font-smoothing: antialiased;
@@ -142,7 +145,16 @@ p {
            font-size: 6vw;
        }
     }
-
+    @media(max-device-width: 480px) {
+        h1 {
+           margin-top: 46vh;
+       }
+       .intro-body {
+           #intro-text {
+               padding: 0;
+           }
+       }
+    } 
 
 }
 
@@ -150,10 +162,80 @@ p {
 
 #main_content {
     background-color: #fff;
-    z-index: 1;
+    z-index: 10;
     position: relative;
 }
 
+
+// Side pictures that rotate on scroll
+
+.side-pic {
+    width: 50%;
+    height: 205px;
+    overflow: hidden;
+    float: left;
+    margin: 50px 70px 40px 70px;
+    margin-left: -20%;
+    outline: 13px solid #f1f1f1;
+    position: relative;
+    z-index: 5;
+    .aspectRatioPlaceholder {
+        p {
+            .translate(0,150px);
+            .transition(transform .2s linear);
+        }
+        &:hover {
+            p {
+                .translate(0,0);
+            }
+        }
+    }
+    &.active {
+        p {
+            display: none;
+        }
+        img {
+            .translate(0,0);
+        }
+        #the-overlay {
+            .translate(0,0);
+        }
+    }
+    p {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        z-index: 9999;
+        background-color: rgba(0, 0, 0, 0.62);
+        padding: 10px 20px;
+        color: white;
+        font-size: 15px;
+        line-height: 1.4;
+        display: inline-block;
+        margin: 0;
+    }
+    &.active {
+        overflow: visible;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+    }
+    @media(min-width:768px) {
+       height: 210px;
+       margin-left: -10%;
+    }
+    @media(min-width:1200px) {
+       height: 265px;
+       margin-left: -20%;
+    }
+    @media(max-width:768px) {
+        width: 100%;
+        height: 230px;
+        margin: 30px auto 40px;
+    }
+}
 
 
 // Scroll into school
@@ -166,60 +248,83 @@ p {
     margin: 30px 0 50px 0;
     overflow: hidden;
     position: relative;
+    height: 400px;
     .school-pic {
-        background-image: url("@{education}/lakeridge.jpg");
-        background-position: right center;
+
         .background-cover(cover);
+        position: absolute;
+        top: 0;
         width: 100%;
-        height: 50vh;
-    }
-    video {
-        width: 100vw;
-        height: auto;
-        position: relative;
-        z-index: 999;
-    }
-    h1 {
-        font-family: @uni;
-        color: white;
-        text-transform: uppercase;
-        font-weight: 300;
-        line-height: 1;
+        height: 200%;
     }
     p {
         font-family: @uni;
         color: white;
         text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
         font-weight: bold;
-        font-size: 36px;
-        line-height: 1.5;
-        width: 50%;
+        font-size: 34px;
+        line-height: 1.4;
+        width: 40%;
         position: absolute;
         left: 10%;
         &.blurb1 {
-            top: 40%;
+            top: 30%;
             opacity: 1;
         }
         &.blurb2 {
             opacity: 0;
-            top: 40%;
+            top: 30%;
             transform: translateY(300px);
         }
     }
     @media(min-width:768px) {
         padding: 0;
+        .school-pic {
+            background-image: url("@{education}/school.jpg");
+            background-position: right bottom;
+        }
     }
     @media(max-width:768px) {
         position: relative;
         padding: 210px 0;
-        
+        margin: 30px 0 20px 0;
+        .school-pic {
+            background-position: 75% bottom;
+            background-image: url("@{education}/school-mobile.jpg");
+        }
+        p {
+            font-size: 24px;
+            line-height: 1.2;
+            width: 75%;
+            -webkit-font-smoothing: none; 
+            font-weight: bold;
+            &.blurb1 {
+                top: 20%;
+                opacity: 1;
+            }
+            &.blurb2 {
+                opacity: 0;
+                top: 20%;
+                transform: translateY(100%);
+            }
+        }
     }
 
 }
 
 
-
-
+.mapSection {
+    position: relative;
+    z-index: 0;
+    margin-bottom: 30px;
+    small {
+        position: relative;
+        z-index: 2;
+        display: block;
+        text-align: center;
+        padding: 20px 10%;
+    }
+}
 
 
 
@@ -445,29 +550,7 @@ p {
 
 // Overwriting the audio player
 
-div.audio {
-    margin: 20px 0;
-    .audio-transcript {
-        position: fixed;
-        left: 20px;
-        top: 20px;
-        right: 20px;
-        bottom: 130px;
-        margin: 0;
-        background-color: #3c3c3c;
-        border: 2px solid #fff;
-        border-radius: 5px;
-        padding: 20px;
-        p {
-            line-height: 19px;
-            font-size: 15px;
-        }
-    }
-    &.active-audio .audio-buttons{
-        left: 50%;
-        margin-left: -70px;
-    }
-}
+
 
 
 // Video player
@@ -483,9 +566,7 @@ button.close-video {
     height: 55px;
     background: url("@{img}/sprite.svg") no-repeat -207px -286px rgba(0,0,0,.2);
 }
-.playing .video-block {
-    z-index: 9999;
-}
+
 
 // Blinker animation for video
 
@@ -503,23 +584,28 @@ button.close-video {
   }
 }
 
+.playing .video-block {
+    z-index: 9999;
+}
 
 .video-block {
     position: relative;
     z-index: 0;
-    background-image: url("@{education}/woman-in-headscarf.jpg");
     .background-cover(cover);
     .container {
         padding-top: 280px;
         padding-bottom: 30px;
     }
-    p {
+    h2 {
         font-family: @uni;
-        color: white;
+        font-weight: 300;
+        font-size: 22px;
         text-transform: uppercase;
-        font-size: 30px;
-        line-height: 42px;
-        text-align: right;
+        color: white;
+        -webkit-font-smoothing: antialiased;
+    }
+    p {
+        color: white;
         span.highlight {
             background-color: rgba(183, 165, 122, 0.3);
             padding: 0 10px;
@@ -534,12 +620,21 @@ button.close-video {
         }
     }
     a {
+        color: white;
+        border-bottom: 1px solid #fff;
+        &:focus,
+        &:active,
+        &:hover {
+            border-bottom-color: @purple;
+        }
+    }
+    a.play {
         position: relative;
         color: #fff;
         font-family: @uni;
         text-transform: uppercase;
         font-size: 25px;
-
+        border-bottom: none;
         &:before,
         &:after {
             content: "";
@@ -568,11 +663,13 @@ button.close-video {
         }
     }
     @media(min-width:768px) {
+        background-image: url("@{education}/woman-in-headscarf.jpg");
+        text-align: right;
         .container {
-            padding-top: 240px;
+            padding-top: 150px;
             padding-bottom: 240px;
         }
-        a {
+        a.play {
             position: absolute;
             bottom: -150px;
             right: 30px;
@@ -595,21 +692,30 @@ button.close-video {
                 outline: 15px solid rgba(183,165,122,0.2);
             }
         }
+        h2 {
+            font-size: 55px;
+            text-align: right;
+        }
         p {            
-            padding-left: 30%;
-            font-size: 50px;
-            line-height: 60px;
-            span.sub {
-                font-size: 29px;
-                line-height: 35px;
-            }
+            padding-left: 50%;
+            text-align: right;
         }
     }
     @media(max-width:768px) {
+        .container {
+            padding-top: 110%;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
         background-position: -65px 0;
-        a {
+        background-image: url("@{education}/woman-in-headscarf-mobile.jpg");
+        h2 {
+            font-size: 40px;
+        }
+        a.play {
             padding: 31px 97px 14px 0;
             display: inline-block;
+            font-size: 20px;
             &:before {
             }
             &:after {
@@ -642,12 +748,15 @@ button.close-video {
         font-family: @uni;
         text-align: center;
         color: @lightgold;
-        font-size: 24px;
-        line-height: 37px;
+        font-size: 21px;
+        line-height: 1.5;
         font-weight: bold;
         text-transform: uppercase;
         margin-bottom: 40px;
         margin: 10px 0 40px;
+        &.left {
+            text-align: left;
+        }
         a {
             color: #5f5f5f;;
             border-bottom: 1px solid @lightgold;
@@ -753,6 +862,158 @@ button.close-video {
 
 
 
+.profile {
+    background-position: right center;
+    background-color: #DEDDDD;
+    padding: 250px 70px 20px;
+    width: 70%;
+    margin: 50px auto;
+    overflow: hidden;
+    p, h2 {        
+        z-index: 1;
+        position: relative;
+    }
+    h2.name {        
+        color: @purple;
+        text-transform: uppercase;
+        font-family: @uni;
+        font-weight: 900;
+        font-size: 20px;
+        display: inline-block;
+        margin-bottom: 5px;
+        span {
+            color: @lightgold;
+            font-size: 20px;
+            display: block;
+        }
+    }
+    p.studies {
+        font-family: @uni;
+        font-weight: bold;
+        display: block;
+        font-size: 19px;
+        margin-top: -5px;
+        margin-bottom: 5px;
+        color: @darkgold;        
+        // font-weight: bold;
+        text-transform: uppercase;
+
+    }
+    &.right {
+        text-align: right;
+        background-position: top left;
+        p.quotes {   
+            &:before,
+            &:after {
+                right: -70px;
+                left: auto;
+            }
+        }
+        div.audio.active-audio .audio-buttons {
+            left: auto;
+            right: 0;
+        }
+    }
+
+    @media(min-width:768px) {
+        padding: 150px 110px;  
+        position: relative;
+        & > div.skew {
+            .skew(-15deg,0);
+            position: absolute;
+            top: 0;
+            width: 52%;
+            bottom: 0;
+            overflow: hidden;
+            left: -100px;
+            background-color: rgba(185, 162, 122, .25);
+            div {
+                .skew(15deg,0);
+                position: absolute;
+                top: 0;
+                right: -350px;
+                left: 0;
+                bottom: 0;
+            }
+        } 
+        h2.name {
+            font-size: 45px;
+        }
+        p.studies {
+            &.light {
+                color: #808080;
+                text-shadow: none;
+            }
+        }
+        &.active {
+            p.quotes {
+                .translate(0;0);
+                opacity: 1;
+                span {
+                    .translate(0;0);
+                }
+                &:before,
+                &:after {
+                    opacity: 1;
+                }
+            }
+        }
+        
+        &.right {
+            & > div.skew {
+                left: auto;
+                right: -100px;
+                div {                    
+                    right: 0;
+                    left: -350px;                    
+                }
+            }
+        }
+        &.person-1 {
+            background-image: url("@{education}/kert-light.jpg");
+            .background-cover(cover);
+        }
+        &.person-2 {
+            background-image: url("@{education}/nicole-light.jpg");
+            .background-cover(cover);
+        }
+    }
+
+    @media(max-width:1200px) {
+        width: 100%;
+        h2.name {
+            font-size: 31px;
+        }
+    }
+    @media(max-width:768px) {
+        padding: 80% 40px 20px;        
+        background-color: #6D6D6D;
+        background-size: 100%;
+        h2.name {
+            font-size: 30px;
+            line-height: 28px;
+            color: @lightgold;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+        }
+        p.studies {
+            font-size: 16px;
+            line-height: 18px;
+            color: white;
+            margin-top: 5px;
+        }
+        &.person-1 {
+            background-image: url("@{education}/kert-mobile.jpg");
+            background-repeat: no-repeat;
+            background-position: center top;
+        }
+        &.person-2 {
+            background-image: url("@{education}/nicole-mobile.jpg");
+            background-repeat: no-repeat;
+            background-position: center top;
+        }
+    }
+}
+
 // Large photo with headline and //////////'s
 
 
@@ -765,22 +1026,37 @@ button.close-video {
 @media(min-width:768px) {
    
 }
-@media(max-width:768px) {    
+@media(max-width:768px) { 
+    .profile {
+        background-color: black;
+    }  
     div.audio {
+        margin: 20px 0 20px;
+        min-height: 40px;
         p.length {
-           line-height: 16px;
+           line-height: 11px
         } 
         p.audio-buttons {
-            font-size: 15px;
+            font-size: 17px;
             button.audio-play {
-                padding: 9px 15px 9px 10px;
+                padding: 0;
+                right: 10px;
+                top: 5px;
             }
         }
         &.active-audio {
             margin-bottom: 80px;       
             .audio-buttons {
-                left: 50%;
+                left: 0;
                 right: auto;
+            }
+        } 
+        .audio-transcript {
+            margin: 10px;
+            padding: 0;
+            p {
+                font-size: 15px;
+                line-height: 1.6;
             }
         }
     }
@@ -792,7 +1068,54 @@ button.close-video {
 // Gallery // Slideshow updates
 
 
+.aspectRatioPlaceholder .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
+.zoom-effect .img{
+    cursor: pointer;
+    cursor: -webkit-zoom-in;
+}
+
+.zoom-effect .zoomImg,
+.zoom-effect .zoomImg-wrap {
+    position: relative;
+    z-index: 900;
+    transition: all 300ms;
+}
+
+.zoom-effect .zoomImg-wrap--absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.zoom-effect .zoomImg {
+    cursor: pointer;
+    cursor: -webkit-zoom-out;
+}
+
+
+.zoom-effect .zoomOverlay.show{
+    opacity: .9;
+}
+
+.zoom-effect .zoomOverlay {
+    z-index: 800;
+    background: #fff;
+    position: fixed;
+    transition: opacity 600ms;
+    opacity: 0;
+    cursor: pointer;
+    cursor: -webkit-zoom-out;
+}
 
 
 

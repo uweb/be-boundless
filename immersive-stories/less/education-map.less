@@ -1,13 +1,26 @@
 #mapid { 
 	height: 500px; 
+
+}
+
+// Overwrite of Leaflet 
+
+.leaflet-popup-content-wrapper {
+	border-radius: 0;
+}
+td, th {
+    padding: 4px;
 }
 
 .leaflet-overlay-pane path {
     fill-opacity: 0.4;
     stroke: #fff;
     stroke-width: 2;
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
     	fill-opacity: 0.8;
+    	stroke-width: 4;
     }
 }
 
@@ -55,24 +68,43 @@
 
 div.popupbox table{
 	
+	border-top: none;
     border-collapse: collapse;
     border-style: hidden;
 	tr.row {
 		&.district-name {
-			text-transform: uppercase;
 			text-align: center;
+			font-weight: bold;
+			font-size: 15px;
+			td {
+				height: 22px;
+				div.name {
+					width: 241px;
+				    position: absolute;
+				    left: 0px;
+				    top: 0px;
+				    text-align: center;
+				    padding: 5px 0 5px 0;
+				    background-color: #b7a57a;
+				    color: #fff;
+				    letter-spacing: 1px;
+				}
+			}
+		}
+		&.data {
+		    border-top: 1px solid #CCC;
+		    &.lunch {
+		    	border-top: none;
+		    }
 		}
 		td {
 			&.label {
 				width:100%;
 				padding-left: 5px;
 			}
-			&.percent,
-			&.label {
-				border: 1px solid #CCC;
-			}
 			&.percent {
 				text-align: center;
+				border-right: 1px solid #CCC;
 			}
 		}
 		&.graph {
@@ -106,8 +138,6 @@ div.popupbox table{
 						//right: 0;
 					    //left: 0;
 						margin: 0;
-						border-bottom: 1px solid #CCC;
-						border-top: 1px solid #CCC;
 					}
 				}
 			}
