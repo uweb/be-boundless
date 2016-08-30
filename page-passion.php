@@ -9,7 +9,7 @@
   <!-- <meta name="viewport" content="width=device-width maximum-scale=1.0, user-scalable=no" /> -->
   <title> <?php wp_title(' | ',TRUE,'right'); bloginfo('name'); ?> </title>
 
-   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/passion/css/tiles.dev.css' ?>" type="text/css">
+   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/passion/css/tiles.css' ?>" type="text/css">
    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/campaign/css/campaign-style.css' ?>" type="text/css">
    
       
@@ -223,9 +223,9 @@
            foreach ($funds as $fund ) {
                $fundclasses .= $fund->slug . " "; //IS SLUG A CLASS TO USE ON THIS???
            }
-           if ( $fundcount % $featureOffset == 3 ) {
-                $fundclasses .= "featured ";
-           }
+           // if ( $fundcount % $featureOffset == 3 ) {
+           //      $fundclasses .= "featured ";
+           // }
 
            //spit out html 
            ?>

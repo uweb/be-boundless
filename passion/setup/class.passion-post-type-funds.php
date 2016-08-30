@@ -42,10 +42,12 @@ if ( ! post_type_exists( 'funds' ) ):
 		
 		add_meta_box( 'desc', 'Short description', 'desc_callback', 'funds', 'normal', 'low' );
 
-		remove_meta_box( 'categoriesdiv', 'funds', 'side' );
+		add_meta_box( 'unit', 'Associated Unit', 'unit_callback', 'funds', 'normal', 'low' );
+
+		remove_meta_box( 'causesdiv', 'funds', 'side' );
 		remove_meta_box( 'prioritiesdiv', 'funds', 'side' );
-		add_meta_box( 'categoriesdiv', 'Categories', 'post_categories_meta_box', 'funds', 'normal', 'low', array( 'taxonomy' => 'categories' ) );
-		add_meta_box( 'prioritiesdiv', 'Priorities', 'post_categories_meta_box', 'funds', 'normal', 'low', array( 'taxonomy' => 'priorities' ) );
+		add_meta_box( 'causesdiv', 'Causes', 'post_categories_meta_box', 'funds', 'normal', 'low', array( 'taxonomy' => 'causes' ) );
+		add_meta_box( 'prioritiesdiv', 'Funding Priorities', 'post_categories_meta_box', 'funds', 'normal', 'low', array( 'taxonomy' => 'priorities' ) );
 	}
 
 	function short_callback() {
@@ -69,6 +71,25 @@ if ( ! post_type_exists( 'funds' ) ):
 		?><textarea name="desc" rows="4" cols="100"><?php echo $desc; ?></textarea><?php
 	}
 
+	function unit_callback() {
+		global $post;
+		$custom = get_post_custom($post->ID);
+		$selectUnit = $custom['unit'][0];
+		$units = get_posts(['post_type' => 'units', 'fields' => 'ids']);
+		echo '<select name="unit" id="unit">';
+		echo '<option value="">--Unit--</option>';
+		foreach ($units as $unit => $ID) {
+			$title = get_the_title($ID);
+			$slug = str_replace(" ","-",strtolower($title));
+			$selected = ($selectUnit == $slug) ? "selected='selected'" : "";
+			
+			echo "<option value=" . $slug . " " . $selected . ">" . $title . "</option>";
+        	
+			//print_r($unit . $title . $slug);
+		}
+		echo '</select>';
+	}
+
 	add_action('save_post', 'save_fund_details');
 
 	function save_fund_details() {
@@ -77,6 +98,7 @@ if ( ! post_type_exists( 'funds' ) ):
 			update_post_meta($post->ID, 'short', $_POST['short']);
 			update_post_meta($post->ID, 'code', $_POST['code']);
 			update_post_meta($post->ID, 'desc', $_POST['desc']);
+			update_post_meta($post->ID, 'unit', $_POST['unit']);
 		}
 	}
 

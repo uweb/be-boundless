@@ -123,6 +123,7 @@ module.exports = function(grunt) {
                 'immersive-stories/css/leadership.css': 'immersive-stories/less/leadership.less',
                 'campaign/css/campaign-style.css': 'campaign/**/*.less',
                 'campaign/css/header.css': 'campaign/less/header.less',
+                'passion/css/tiles.css': 'passion/less/tiles.less'
         	    }
         },
         development: {

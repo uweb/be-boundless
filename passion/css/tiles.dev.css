@@ -200,7 +200,7 @@
 }
 #passion .full-bio {
   display: none;
-  margin-left: 32.8%;
+  margin-left: 39.8%;
   overflow: hidden;
   padding: 40px 50px 50px;
 }
@@ -334,7 +334,7 @@
 }
 #passion .grid-sizer.open .front,
 #passion .grid-item.open .front {
-  width: 32.8%;
+  width: 39.8%;
   right: auto;
 }
 #passion .grid-sizer {
@@ -365,6 +365,14 @@
   #passion .grid-item.open {
     width: calc(100%);
   }
+  #passion .grid-sizer.open .front,
+  #passion .grid-item.open .front {
+    width: 24.8%;
+  }
+  #passion .grid-sizer.open .full-bio,
+  #passion .grid-item.open .full-bio {
+    margin-left: 24.8%;
+  }
   #passion .special {
     width: calc(75%);
   }
@@ -385,6 +393,14 @@
   #passion .grid-sizer.open,
   #passion .grid-item.open {
     width: calc(100%);
+  }
+  #passion .grid-sizer.open .front,
+  #passion .grid-item.open .front {
+    width: 33%;
+  }
+  #passion .grid-sizer.open .full-bio,
+  #passion .grid-item.open .full-bio {
+    margin-left: 33%;
   }
   #passion .special {
     width: calc(66.66666667%);
@@ -407,6 +423,21 @@
   #passion .grid-sizer.open,
   #passion .grid-item.open {
     width: calc(100%);
+    height: 945px;
+  }
+  #passion .grid-sizer.open .front,
+  #passion .grid-item.open .front {
+    position: static;
+    width: 100%;
+    height: 350px;
+    background-position: center top;
+  }
+  #passion .grid-sizer.open .full-bio,
+  #passion .grid-item.open .full-bio {
+    position: static;
+    width: 100%;
+    margin-left: 0;
+    padding: 40px 45px 50px;
   }
   #passion .special {
     width: calc(100%);
@@ -429,6 +460,21 @@
   #passion .grid-sizer.open,
   #passion .grid-item.open {
     width: calc(100%);
+    height: 945px;
+  }
+  #passion .grid-sizer.open .front,
+  #passion .grid-item.open .front {
+    position: static;
+    width: 100%;
+    height: 350px;
+    background-position: center top;
+  }
+  #passion .grid-sizer.open .full-bio,
+  #passion .grid-item.open .full-bio {
+    position: static;
+    width: 100%;
+    margin-left: 0;
+    padding: 40px 45px 50px;
   }
   #passion .special {
     width: calc(100%);
@@ -765,7 +811,7 @@
   letter-spacing: .05em;
 }
 #passion .grid-item .front .banner .short-desc {
-  display: hidden;
+  display: none;
 }
 #passion .grid-item .front .banner:after {
   content: "";

@@ -43,8 +43,8 @@ if ( ! post_type_exists( 'units' ) ):
 		add_meta_box( 'volunteer', 'Url for volunteer page', 'volunteer_callback', 'units', 'side', 'low' );
 		add_meta_box( 'leadership', 'Url for leadership page', 'leadership_callback', 'units', 'side', 'low' );
 		
-		add_meta_box( 'quote', 'Quote', 'quote_callback', 'units', 'normal', 'low' );
-		add_meta_box( 'funds', 'Featured funds <small>(by allocation code)</small>', 'funds_callback', 'units', 'normal', 'low' );
+		add_meta_box( 'secondary', 'Right-side content', 'secondary_callback', 'units', 'normal', 'low' );
+		//add_meta_box( 'funds', 'Featured funds <small>(by allocation code)</small>', 'funds_callback', 'units', 'normal', 'low' );
 	}
 
 	function contact_callback() {
@@ -82,11 +82,12 @@ if ( ! post_type_exists( 'units' ) ):
 		?><input name="leadership" value="<?php echo $leadership ?>" /><?php
 	}
 
-	function quote_callback() {
+	function secondary_callback() {
 		global $post;
 		$custom = get_post_custom($post->ID);
-		$quote = $custom['quote'][0];
-		?><textarea name="quote" rows="4" cols="100"><?php echo $quote; ?></textarea><?php
+		$content = $custom['secondary-wysiwyg'][0];
+		$settings = array( 'media_buttons' => true );
+		wp_editor( $content, 'secondary-wysiwyg', $settings );
 	}
 
 	function funds_callback() {
@@ -123,7 +124,8 @@ if ( ! post_type_exists( 'units' ) ):
 			update_post_meta($post->ID, 'funds4', $_POST['funds4']);
 			update_post_meta($post->ID, 'funds5', $_POST['funds5']);
 			update_post_meta($post->ID, 'funds6', $_POST['funds6']);
-			update_post_meta($post->ID, 'quote', $_POST['quote']);
+			update_post_meta($post->ID, 'secondary-wysiwyg', $_POST['secondary-wysiwyg']);
+			update_post_meta($post->ID, 'author', $_POST['author']);
 		}
 	}
 
