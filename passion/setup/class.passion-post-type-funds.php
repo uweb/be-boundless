@@ -72,22 +72,22 @@ if ( ! post_type_exists( 'funds' ) ):
 	}
 
 	function unit_callback() {
-		global $post;
-		$custom = get_post_custom($post->ID);
-		$selectUnit = $custom['unit'][0];
-		$units = get_posts(['post_type' => 'units', 'fields' => 'ids']);
-		echo '<select name="unit" id="unit">';
-		echo '<option value="">--Unit--</option>';
-		foreach ($units as $unit => $ID) {
-			$title = get_the_title($ID);
-			$slug = str_replace(" ","-",strtolower($title));
-			$selected = ($selectUnit == $slug) ? "selected='selected'" : "";
+		// global $post;
+		// $custom = get_post_custom($post->ID);
+		// $selectUnit = $custom['unit'][0];
+		// $units = get_posts(['post_type' => 'units', 'fields' => 'ids']);
+		// echo '<select name="unit" id="unit">';
+		// echo '<option value="">--Unit--</option>';
+		// foreach ($units as $unit => $ID) {
+		// 	$title = get_the_title($ID);
+		// 	$slug = str_replace(" ","-",strtolower($title));
+		// 	$selected = ($selectUnit == $slug) ? "selected='selected'" : "";
 			
-			echo "<option value=" . $slug . " " . $selected . ">" . $title . "</option>";
+		// 	echo "<option value=" . $slug . " " . $selected . ">" . $title . "</option>";
         	
-			//print_r($unit . $title . $slug);
-		}
-		echo '</select>';
+		// 	//print_r($unit . $title . $slug);
+		// }
+		// echo '</select>';
 	}
 
 	add_action('save_post', 'save_fund_details');
