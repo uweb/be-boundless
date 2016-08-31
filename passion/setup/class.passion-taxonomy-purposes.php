@@ -11,7 +11,7 @@ if (!taxonomy_exists('purposes')):
 	function purposes_taxonomy() {
 		register_taxonomy('purposes', 'funds', array(
 			'labels' => array(
-				'name' => 'Funding Purpose',
+				'name' => 'Funding Purposes',
 				'singular_name' => 'funding purpose',
 				'all_items' => 'All purposes',
 				'edit_item' => 'Edit purpose',
