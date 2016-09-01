@@ -1,0 +1,176 @@
+div.span8 {
+	position: relative;
+}
+
+body #filter {
+	position: absolute;
+	top: 15px;
+	right: 0px;
+	height: 35px;
+	width: 150px;
+}
+
+body #filter input {
+	border: 1px solid #DFDFDF;
+	border-radius: 20px;
+	width: 115px;
+	padding-left: 15px;
+	color: #949494;
+}
+
+div.profile-list img {
+    display: block;
+	float: left;
+	margin-right: 20px;
+	margin-top: -5px;
+	width: 80px !important;
+}
+
+/* Temp hide for marketing pics */
+
+.site-marketing div.profile-list img {
+    display: none;
+}
+
+.site-marketing .entry-content img.husky-image {
+	display: none;
+}
+.site-marketing.single-husky div.husky-contact {
+	margin-top: 10px;
+}
+
+
+div.profile-list img.no-pic {
+    opacity: 0;
+}
+
+.searchable-container > h3 {
+	border-bottom: 1px solid #E9E9E9;
+	padding-bottom: 15px;
+	padding-top: 20px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+div.profile-list {
+    display: block;
+    overflow: hidden;
+	margin-bottom: 40px;
+	margin-top: 30px;
+}
+
+div.profile-list p {
+	margin-bottom: 0px;
+}
+
+div.profile-list h3.name {
+	font-weight: bold;
+	margin-bottom: 2px;
+    margin-top: 0px;
+	font-size: 19px;
+}
+
+div.profile-list div.info {
+    float: left;
+    clear: right;
+}
+
+div.profile-list .title, div.husky-contact .title {
+	font-family: 'Droid Serif', serif;
+	font-style: italic;
+	color: #6B6B6B;
+	font-size: 14px;
+	text-rendering: optimizeLegibility;
+	position: relative;
+}
+
+div.husky-contact .title {
+	font-size: 18px;
+	margin-bottom: 1em;
+}
+
+div.husky-contact .contact {
+	padding-top: 20px;
+}
+
+div.husky-contact div.big-contact {
+    padding-top: 10px;
+}
+
+div.husky-contact {
+	margin-top: 30px;
+	display:inline-block;
+    max-width: 300px;
+	margin-left: 0px;
+}
+
+div.big-husky-contact {
+	margin-top: 20px;
+}
+
+div.wide-husky-contact {
+    display: block;
+    margin-top: 40px;
+    margin-left: 20px;
+    max-width: 100%;
+}
+
+img.husky-image {
+	display:inline-block;
+	width: 240px;
+    margin-right: 70px;
+    margin-top: 10px;
+	float:left;
+}
+
+div.husky-info {
+	padding-top: 30px;
+	clear: both;
+}
+
+
+/* Single page */
+
+
+.single-husky .contact p {
+	margin-bottom: 5px;
+}
+.single-husky p.team {
+	margin-bottom: 0;
+}
+.single-husky div.husky-contact {
+	margin-top: 50px;
+}
+.single-husky div.husky-info {
+	padding-top: 40px;
+}
+
+@media (max-width: 979px) {
+    div.husky-contact {
+        max-width: 100%;
+    }
+    img.husky-image {
+        float: none;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+	.single-husky div.husky-contact {
+		margin-left: 0;
+	}
+	.single-husky h1 {
+		margin-left: -25px;
+	}
+}
+@media (max-width: 767px) {
+   	div.profile-list div.info {
+    	max-width: 185px;    	
+	}
+	article > div {
+		padding: 0 20px;
+	}
+	body #filter {
+		position: static;
+		margin: 0 0 0 -5px;
+	}
+}

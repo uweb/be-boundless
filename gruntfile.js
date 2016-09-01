@@ -124,7 +124,13 @@ module.exports = function(grunt) {
                 'immersive-stories/css/leadership.css': 'immersive-stories/less/leadership.less',
                 'campaign/css/campaign-style.css': 'campaign/**/*.less',
                 'campaign/css/header.css': 'campaign/less/header.less',
+                'passion/css/tiles.css': 'passion/less/tiles.less'
         	    }
+        },
+        development: {
+          files: {
+            'passion/css/tiles.dev.css': 'passion/less/tiles.less'
+          }
         }
     },
     watch: {
@@ -144,7 +150,7 @@ module.exports = function(grunt) {
         tasks: ['js']
       },
       css : {
-        files: ['less/*.less', 'immersive-stories/less/*.less', 'campaign/less/*.less'],
+        files: ['less/*.less', 'immersive-stories/less/*.less', 'campaign/less/*.less', 'passion/less/*.less'],
         tasks: ['css']
       }
     }
@@ -152,14 +158,10 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-notify');
   grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
 
-  grunt.registerTask( 'default', ['jshint', 'concat', 'uglify', 'notify', 'less']);
-  grunt.registerTask( 'js', ['jshint', 'concat', 'uglify', 'notify' ]);
+  grunt.registerTask('default', ['notify', 'less']);
   grunt.registerTask( 'css', ['less', 'notify'] );
 
 };
