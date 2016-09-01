@@ -40,7 +40,7 @@ module.exports = function(grunt) {
           'immersive-stories/js/farmer-brown.js',
           'campaign/js/main.js',
           'immersive-stories/js/education-map.js',
-          'https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js',
+          'https://unpkg.com/leaflet@1.0.0-rc.2/dist/leaflet.js',
           'https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.2.1/chroma.min.js',
         ],
         animationLibraries : [  
