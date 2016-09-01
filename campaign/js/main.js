@@ -407,6 +407,8 @@ $(function(){
 	})
 
 
+	// Empty out popup story
+
 	$('button#empty').on('click',function(e){
 
 		storyUp = false;
@@ -435,7 +437,7 @@ $(function(){
 	})
 
 
-	// Hides particular unsavory items
+	// Hides ugliness untila page is loaded
 	$('body').toggleClass('pageLoaded');
 
 
