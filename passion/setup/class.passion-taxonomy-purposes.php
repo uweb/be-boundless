@@ -11,19 +11,19 @@ if (!taxonomy_exists('purposes')):
 	function purposes_taxonomy() {
 		register_taxonomy('purposes', 'funds', array(
 			'labels' => array(
-				'name' => 'Funding Purposes',
-				'singular_name' => 'funding purpose',
-				'all_items' => 'All purposes',
-				'edit_item' => 'Edit purpose',
-				'view_item' => 'View purpose',
-				'add_new_item' => 'Add new purpose',
-				'new_item_name' => 'New purpose name',
-				'search_items' => 'Search purposes',
-				'popular_items' => 'Popular purposes',
-				'parent_item' => 'Parent purpose',
-				'add_or_remove_items' => 'Add or remove purposes',
-				'choose_from_most_used' => 'Choose from the most used purposes',
-				'not_found' => 'No purposes found.'
+				'name' => 'UW priorities',
+				'singular_name' => 'priority',
+				'all_items' => 'All priorities',
+				'edit_item' => 'Edit priority',
+				'view_item' => 'View priority',
+				'add_new_item' => 'Add new priority',
+				'new_item_name' => 'New priority name',
+				'search_items' => 'Search priorities',
+				'popular_items' => 'Popular priorities',
+				'parent_item' => 'Parent priority',
+				'add_or_remove_items' => 'Add or remove priorities',
+				'choose_from_most_used' => 'Choose from the most used priorities',
+				'not_found' => 'No priorities found.'
 			),
 			'hierarchical' => true,
 			'show_tagcloud' => false
