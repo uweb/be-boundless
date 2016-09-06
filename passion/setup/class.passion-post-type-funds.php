@@ -75,7 +75,7 @@ if ( ! post_type_exists( 'funds' ) ):
 		global $post;
 		$custom = get_post_custom($post->ID);
 		$selectUnit = $custom['unit'][0];
-		$args = array('post_type' => 'units', 'fields' => 'ids');
+		$args = array('post_type' => 'units', 'fields' => 'ids', 'numberposts' => '-1');
 		$units = get_posts($args);
 		echo '<select name="unit" id="unit">';
 		echo '<option value="">--Unit--</option>';
