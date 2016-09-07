@@ -1,5 +1,6 @@
 $(function(){
 
+
 	// first add raf shim
 	// http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/
 	window.requestAnimFrame = (function(){
@@ -14,19 +15,22 @@ $(function(){
 
 	// Get the width of the viewport
 	var widthInner 		= window.innerWidth,
-		offsetXes 		= 500,
 		$dyno 			= $('#dyno'),
 		$body			= $('body'),
 		section			= document.getElementsByTagName('section'),
-		offseter 		= 800,
 		currentOffset	= 0,
-		widthAllSlides 	= widthInner * $('section').length,
 		storyUp			= false;
+
+	// Listen for resizes
+	window.addEventListener('resize', function(){
+		widthInner 	= window.innerWidth;
+		offsetX 	= window.pageXOffset;
+	})
+
 
 	// Get a list of all the slides in an array
 	// var nodeList = Array.prototype.slice.call( document.getElementById('slides').children );
 	// $(nodeList[2]).addClass('amar')
-
 
 	// Animates to position on page, with animation
 
@@ -127,14 +131,6 @@ $(function(){
 		e.preventDefault();
 		scrollIt(this);
 	});
-
-
-
-	// Listen for resizes
-	window.addEventListener('resize', function(){
-		widthInner 	= window.innerWidth;
-		offsetX 	= window.pageXOffset;
-	})
 
 
 
@@ -353,8 +349,13 @@ $(function(){
 	//
 	//
 
-	scrollConverter.activate();
-
+	// scrollConverter.activate();
+   	$('html, body, *').mousewheel(function(e, delta) {
+        // multiplying by 40 is the sensitivity, 
+        // increase to scroll faster.
+        this.scrollLeft -= (delta * 5);
+        e.preventDefault();
+    });
 
 
 	//

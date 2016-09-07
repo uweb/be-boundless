@@ -401,6 +401,7 @@ div#loadingEl {
 		background-color: @purple;
 		cursor: pointer;
 		.transition(height .1s ease-in-out);
+		.skew(-15deg,0);
 		//&:hover {
 		//	height: 30px;
 		//}
@@ -474,37 +475,37 @@ div#loadingEl {
 		}
 	}
 }
-#rotate {
-	display: none;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: rgba(0,0,0, 0.75);
-	text-align: center;
-	z-index: 4;
-	padding: 0 60px;
-	overflow: auto;
-	div {
-		.translate(0,50vh);
-		margin-top: -80px;
-	}
-	p {
-		color: white;
-		font-weight: bold;
-		line-height: 1.3;
-	}
-	@media(max-width:400px) { 
-		display: block;
-	}
-}
-body,
-html {
-	@media(max-width:500px) { 
-		overflow-x: hidden;
-	}
-}
+// #rotate {
+// 	display: none;
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	right: 0;
+// 	bottom: 0;
+// 	background-color: rgba(0,0,0, 0.75);
+// 	text-align: center;
+// 	z-index: 4;
+// 	padding: 0 60px;
+// 	overflow: auto;
+// 	div {
+// 		.translate(0,50vh);
+// 		margin-top: -80px;
+// 	}
+// 	p {
+// 		color: white;
+// 		font-weight: bold;
+// 		line-height: 1.3;
+// 	}
+// 	@media(max-width:400px) { 
+// 		display: block;
+// 	}
+// }
+// body,
+// html {
+// 	@media(max-width:500px) { 
+// 		overflow-x: hidden;
+// 	}
+// }
 
 // Tweak the more button
 a.uw-btn:after {
@@ -516,7 +517,12 @@ a.uw-btn:focus {
     color: #fff;
     background-color: @lightgold;
 }
-
+// @media(max-width:768px) {   
+// 	html, body {
+// 		overflow-x: auto;
+// 		-webkit-overflow-scrolling: touch;
+// 	}
+// }
 
 #content-wrapper, 
 #example-wrapper {
