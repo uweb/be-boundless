@@ -81,7 +81,7 @@ if ( ! post_type_exists( 'funds' ) ):
 		echo '<option value="">--Unit--</option>';
 		foreach ($units as $unit => $ID) {
 			$title = get_the_title($ID);
-			$slug = str_replace(" ","-",strtolower($title));
+			$slug = htmlspecialchars( str_replace(" ","-",strtolower($title)) );
 			$selected = ($selectUnit == $slug) ? "selected='selected'" : "";
 			
 			echo "<option value=" . $slug . " " . $selected . ">" . $title . "</option>";
