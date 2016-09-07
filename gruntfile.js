@@ -45,7 +45,7 @@ module.exports = function(grunt) {
         ],
         animationLibraries : [  
          'campaign/ScrollMagic-master/js/lib/highlight.pack.js', 
-         'campaign/scroll-converter/scroll-converter.min.js', 
+         // 'campaign/scroll-converter/scroll-converter.min.js', 
          'campaign/ScrollMagic-master/js/lib/greensock/TweenMax.min.js', 
          'campaign/ScrollMagic-master/scrollmagic/uncompressed/ScrollMagic.js', 
          'campaign/ScrollMagic-master/scrollmagic/uncompressed/plugins/animation.gsap.js',
@@ -158,10 +158,14 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-notify');
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
 
-  grunt.registerTask('default', ['notify', 'less']);
+  grunt.registerTask( 'default', ['jshint', 'concat', 'uglify', 'notify', 'less']);
+  grunt.registerTask( 'js', ['jshint', 'concat', 'uglify', 'notify' ]);
   grunt.registerTask( 'css', ['less', 'notify'] );
 
 };
