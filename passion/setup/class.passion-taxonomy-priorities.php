@@ -11,19 +11,19 @@ if (!taxonomy_exists('priorities')):
 	function priorities_taxonomy() {
 		register_taxonomy('priorities', 'funds', array(
 			'labels' => array(
-				'name' => 'Funding Priorities',
-				'singular_name' => 'funding priority',
-				'all_items' => 'All priorities',
-				'edit_item' => 'Edit priority',
-				'view_item' => 'View priority',
-				'add_new_item' => 'Add new priority',
-				'new_item_name' => 'New priority name',
-				'search_items' => 'Search priorities',
-				'popular_items' => 'Popular priorities',
-				'parent_item' => 'Parent priority',
-				'add_or_remove_items' => 'Add or remove priorities',
-				'choose_from_most_used' => 'Choose from the most used priorities',
-				'not_found' => 'No priorities found.'
+				'name' => 'UW pillars',
+				'singular_name' => 'UW pillar',
+				'all_items' => 'All pillars',
+				'edit_item' => 'Edit pillar',
+				'view_item' => 'View pillar',
+				'add_new_item' => 'Add new pillar',
+				'new_item_name' => 'New pillar name',
+				'search_items' => 'Search pillars',
+				'popular_items' => 'Popular pillars',
+				'parent_item' => 'Parent pillar',
+				'add_or_remove_items' => 'Add or remove pillars',
+				'choose_from_most_used' => 'Choose from the most used pillars',
+				'not_found' => 'No pillars found.'
 			),
 			'hierarchical' => true,
 			'show_tagcloud' => false
