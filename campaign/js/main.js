@@ -443,8 +443,9 @@ $(function(){
 
 	function scrollIphone(){
 		if (window.scrollX > 0 ) {    
-		    $campaignHeader.css({"-webkit-transform":"translate(" + Math.ceil(window.scrollX / 22) + "px,0)"})
-		    $arrows.css({"-webkit-transform":"translate(" + Math.ceil(window.scrollX / 21.5) + "px,0)"})
+			// Bigger divider number moves it left
+		    $campaignHeader.css({"-webkit-transform":"translate(" + Math.ceil(window.scrollX / 24.6) + "px,0)"})
+		    $arrows.css({"-webkit-transform":"translate(" + Math.ceil(window.scrollX / 24.6) + "px,0)"})
 		    
 		} else if (window.scrollX < 0 ) {
 		    $campaignHeader.css({"-webkit-transform":"translate(0px,0px)"})
@@ -461,6 +462,9 @@ $(function(){
 	  var scrollEnd;
 	  var $campaignHeader = $('#campaign-header');
 	  var $arrows = $('#arrows');
+	  var divider = elWidth * 0.1;
+
+	  console.log(divider) 
 
 	  // Set header and arrows
 	  $("#campaign-header").width(widthInner);
