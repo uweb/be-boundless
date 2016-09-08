@@ -470,11 +470,9 @@ $(function(){
 
 	  document.addEventListener('touchstart',function(){
 	  	touchDown = true;
-	  	console.log(touchDown)
 	  }) 
 	  document.addEventListener('touchend',function(){
 	  	touchDown = false;
-	  	console.log(touchDown)
 	  }) 
 
 
