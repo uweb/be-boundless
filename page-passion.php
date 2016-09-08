@@ -85,38 +85,30 @@
         </li>
         <?php
         	//
-            $category_parent_terms = get_terms('categories', array(
+            $category_parent_terms = get_terms('causes', array(
                 'hide_empty' => false,
                 'parent' => 0
             ));
-            $priority_parent_terms = get_terms('priorities', array(
+            $priority_parent_terms = get_terms('purposes', array(
                 'hide_empty' => false,
                 'parent' => 0
             ));
+            echo '<li class="select">' .
+                        '<label>Causes</label>' .
+                         '<select>';
             foreach ($category_parent_terms as $parent) {
-                 echo '<li class="select">' .
-                        '<label>' . $parent->name . '</label>' .
-                         '<select><option>' . 'Select a ' . $parent->name . '</option>';
-    
-                 // foreach ( get_terms( 'filters', array( 'hide_empty' => false, 'parent' => $parent->term_id ) ) as $child ) {
-                 //     echo ( ($child->count > 0) ? '<option value=".' . $child->slug . '">' . $child->name . '</option>' : ''); 
-                 // }
-    
-                 echo '</select>        
-                       </li>';
+                 echo '<option>' . $parent->name . '</option>';
             }
+            echo '</select>        
+                       </li>
+                       <li class="select">' .
+                        '<label>Purposes</label>' .
+                         '<select>';
             foreach ($priority_parent_terms as $parent1) {
-                 echo '<li class="select">' .
-                        '<label>' . $parent1->name . '</label>' .
-                         '<select><option>' . 'Select a ' . $parent1->name . '</option>';
-    
-                 // foreach ( get_terms( 'filters', array( 'hide_empty' => false, 'parent' => $parent->term_id ) ) as $child ) {
-                 //     echo ( ($child->count > 0) ? '<option value=".' . $child->slug . '">' . $child->name . '</option>' : ''); 
-                 // }
-    
-                 echo '</select>        
-                       </li>';
+                 echo '<option>' . $parent1->name . '</option>';
             }
+            echo '</select>        
+                       </li>';
     
             //print_r($filterneum_terms);
             // foreach ($terms as $term) {
@@ -199,9 +191,63 @@
 
         <!-- THE FUN PHP STUFF -->
         <?php
+        
+        $unitcount = 1;
+        foreach ( $units as $unit ) {
+           //gather assets
+           $unitimageurl = wp_get_attachment_image_src( get_post_thumbnail_id($unit->ID) , array(200,150) );
+           $unitimageurl = $unitimageurl[0];
+           $unitimageurlhigh = wp_get_attachment_image_src( get_post_thumbnail_id($unit->ID) , $size = 'large' );
+           $unitimageurlhigh = $unitimageurlhigh[0];
+           if ( !$unitimageurl ) {
+            //set to default image here
+            $unitimageurl = get_stylesheet_directory_uri() . '/passion/assets/building.jpg';
+            $unitimageurlhigh = get_stylesheet_directory_uri() . '/passion/assets/building.jpg';
+           }
+           $campyurl = get_post_meta($unit->ID, 'url', true);
+           $secondary = get_post_meta($unit->ID, 'secondary', true);
+           //FEATURE: do tags also need to be classes? 
+           $unitclasses = "";
+           // foreach ($units as $unit ) {
+           //     $unitclasses .= $unit->slug . " "; //IS SLUG A CLASS TO USE ON THIS???
+           // }
+
+           //spit out html 
+           //
+           //forTESTING
+           if($unit->post_title == 'UW Tacoma'){
+
+          
+           ?>
+           
+            <li tabindex="0" data-name="<?php echo $unit->post_name; ?>" data-img="<?php echo $unitimageurlhigh; ?>" class="flip-container grid-item unit-item open <?php echo $unitclasses; ?>">
+            <div class="flipper" role="button">
+              <div tabindex="0" class="full-bio">
+                <h2><?php echo $unit->post_title; ?></h2>
+                    <!-- INSERT LINK TO PAGE HERE??? -->
+                <div class="bio-text">
+                  <p><?php echo $unit->post_content; ?></p>
+                </div>
+                <div class="give-button">
+                  <a href="#" class="give-link">Give Now</a>
+                </div>
+              </div>
+              <div class="front" style="<?php echo 'background-image:url(' . $unitimageurlhigh . ');'; ?> "></div>
+            </div>
+          </li>
+
+          
+
+
+
+
+        <?php
+            }
+            $unitcount++;
+        }
+
+        
         $fundcount = 1;
-        //$factcount = 0;
-        $featureOffset = 12;
         foreach ( $funds as $fund ) {
            //gather assets
            $fundimageurl = wp_get_attachment_image_src( get_post_thumbnail_id($fund->ID) , array(200,150) );
@@ -213,19 +259,16 @@
             $fundimageurl = get_stylesheet_directory_uri() . '/passion/assets/building.jpg';
             $fundimageurlhigh = get_stylesheet_directory_uri() . '/passion/assets/building.jpg';
            }
-           $short = get_post_meta($person->ID, 'short', true);
-           $code = get_post_meta($person->ID, 'code', true);
-           $desc = get_post_meta($person->ID, 'desc', true);
-           $categories = wp_get_post_terms( $person->ID, 'categories' );
-           $priorities = wp_get_post_terms( $person->ID, 'priorities' );
+           $short = get_post_meta($fund->ID, 'short', true);
+           $code = get_post_meta($fund->ID, 'code', true);
+           $desc = get_post_meta($fund->ID, 'desc', true);
+           $categories = wp_get_post_terms( $fund->ID, 'categories' );
+           $priorities = wp_get_post_terms( $fund->ID, 'priorities' );
            //FEATURE: do tags also need to be classes? 
            $fundclasses = "";
            foreach ($funds as $fund ) {
                $fundclasses .= $fund->slug . " "; //IS SLUG A CLASS TO USE ON THIS???
            }
-           // if ( $fundcount % $featureOffset == 3 ) {
-           //      $fundclasses .= "featured ";
-           // }
 
            //spit out html 
            ?>
@@ -272,6 +315,10 @@
         <?php
             $fundcount++;
         }
+
+
+
+
 
         ?>
 

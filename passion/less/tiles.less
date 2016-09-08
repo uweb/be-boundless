@@ -241,6 +241,10 @@
       .front {
         width: 39.8%;
         right: auto;
+      } 
+      &.unit-item div.front {
+          right: 0;
+          width: calc(39.8% + 21%);  
       }
     }
   }
@@ -273,8 +277,18 @@
         .front {
           width: 24.8%;        
         }
+        &.unit-item div.front {
+          width: calc(24.8% + 21%);
+          &:before {
+            width: 38%;
+          }  
+        }
         .full-bio {
           margin-left: 24.8%;
+        }
+        &.unit-item div.full-bio {
+          margin-right: 24.8%;
+          margin-left: 0;  
         }
       }
     }
@@ -284,6 +298,68 @@
     .infographic {
       .the-width ( 2, 4 ); 
     }
+  }
+
+  .unit-item {
+    div.front {
+      left: auto;
+      background-size: cover;
+      z-index: -99;
+        &:before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0;
+        width: 24%; height: 100%;
+        -webkit-transform-origin: 100% 0;
+        -ms-transform-origin: 100% 0;
+        transform-origin: 100% 0;
+        -webkit-transform: skew(-15deg);
+        -ms-transform: skew(-15deg);
+        transform: skew(-15deg);
+        z-index: -1;
+        background-color: #fff;
+      }
+    }
+    div.full-bio {
+      margin-left: 0;
+      margin-right: 59.8%;  
+    }
+
+    //old stuff
+    div.unit-hero {
+      height:600px;
+      
+    }
+    div.unit-right { 
+      height: 100%;
+      width: 60%;
+      right: 0; 
+      background-image: url('/books.jpg');
+      background-size: cover;
+      z-index: -99;
+    }
+    div.unit-left {
+      left: 0;
+      height: 100%;
+      width: 40%;
+        margin: 0;
+        overflow: hidden;
+    }
+    div.unit-right:before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 21%; height: 100%;
+      -webkit-transform-origin: 100% 0;
+      -ms-transform-origin: 100% 0;
+      transform-origin: 100% 0;
+      -webkit-transform: skew(-15deg);
+      -ms-transform: skew(-15deg);
+      transform: skew(-15deg);
+      z-index: -1;
+      background-color: #fff;
+    }
+    //ends here
   }
 
   /* Medium Devices, Desktops */
@@ -301,8 +377,23 @@
         .front {
           width: 33%;        
         }
+        &.unit-item div.front {
+          position: static;
+          width: 100%;
+          height: 350px;
+          background-position: center top; 
+          &:before {
+            content: none;
+          } 
+        }
         .full-bio {
           margin-left: 33%;
+        }
+        &.unit-item div.full-bio {
+          position: static;
+          width: 100%;
+          margin-left: 0;
+          padding: 40px 45px 50px;  
         }
       }
     }
@@ -339,6 +430,9 @@
           margin-left: 0;
           padding: 40px 45px 50px;
         }
+        &.unit-item div.full-bio {
+          margin-right: 0;  
+        }
       }
     }
     .special {
@@ -373,6 +467,9 @@
           width: 100%;
           margin-left: 0;
           padding: 40px 45px 50px;
+        }
+        &.unit-item div.full-bio {
+          margin-right: 0;  
         }
       }
     }
