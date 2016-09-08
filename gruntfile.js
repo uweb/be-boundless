@@ -45,7 +45,7 @@ module.exports = function(grunt) {
         ],
         animationLibraries : [  
          'campaign/ScrollMagic-master/js/lib/highlight.pack.js', 
-         // 'campaign/scroll-converter/scroll-converter.min.js', 
+         'campaign/scroll-converter/scroll-converter.min.js', 
          'campaign/ScrollMagic-master/js/lib/greensock/TweenMax.min.js', 
          'campaign/ScrollMagic-master/scrollmagic/uncompressed/ScrollMagic.js', 
          'campaign/ScrollMagic-master/scrollmagic/uncompressed/plugins/animation.gsap.js',

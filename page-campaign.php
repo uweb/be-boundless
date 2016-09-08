@@ -128,8 +128,6 @@
   <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/main.min.js' ?>" type="text/javascript"></script>
   <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" type="text/javascript"></script>
-
 
 
 

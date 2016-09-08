@@ -21,6 +21,9 @@ $(function(){
 		currentOffset	= 0,
 		storyUp			= false;
 
+
+
+
 	// Listen for resizes
 	window.addEventListener('resize', function(){
 		widthInner 	= window.innerWidth;
@@ -278,21 +281,21 @@ $(function(){
 		})		
 	})
 
-	$('section div').each(function(){
-		var sceneH2 = new ScrollMagic.Scene({
-			duration: '50%',
-			triggerElement: this,
-			triggerHook: 0
-		});
-		// sceneH2.addIndicators()
-		sceneH2.addTo(controllerCampaign);
-		// sceneH2.setPin(this);
-	})
+	// $('section div').each(function(){
+	// 	var sceneH2 = new ScrollMagic.Scene({
+	// 		duration: '50%',
+	// 		triggerElement: this,
+	// 		triggerHook: 0
+	// 	});
+	// 	// sceneH2.addIndicators()
+	// 	sceneH2.addTo(controllerCampaign);
+	// 	// sceneH2.setPin(this);
+	// })
 
 
 	// These are to hide the previous and next arrows when we're on the first and last slides
 	var firstSlide = new ScrollMagic.Scene({
-		duration: '100%',
+		duration: '90%',
 		triggerElement: '#slide1',
 		triggerHook: 0
 	})
@@ -331,14 +334,13 @@ $(function(){
 
 
 	var lastSlide = new ScrollMagic.Scene({
-		duration: '125%',
+		duration: '100%',
 		triggerElement: '#slides section:last-child',
-		triggerHook: 0
+		triggerHook: 0.5
 	})
 	.setClassToggle('#arrows', 'hideNext')
 	//.addIndicators({name: "1 (duration: 300)"})
 	.addTo(controllerCampaign);
-
 
 
 	//
@@ -349,13 +351,8 @@ $(function(){
 	//
 	//
 
-	// scrollConverter.activate();
-   	$('html, body, *').mousewheel(function(e, delta) {
-        // multiplying by 40 is the sensitivity, 
-        // increase to scroll faster.
-        this.scrollLeft -= (delta * 40);
-        e.preventDefault();
-    });
+	scrollConverter.activate();
+
 
 
 	//
@@ -366,7 +363,7 @@ $(function(){
 	//
 	//
 
-
+	// Add immersive story
 	$('.uw-btn').on('click',function(e){
 		var eTarget = $(e.target),
 			jsFiles = eTarget.data('js') || 'test',
@@ -408,8 +405,7 @@ $(function(){
 	})
 
 
-	// Empty out popup story
-
+	// Empty out dynamin story
 	$('button#empty').on('click',function(e){
 
 		storyUp = false;
@@ -438,8 +434,60 @@ $(function(){
 	})
 
 
-	// Hides ugliness untila page is loaded
+	// Hides ugliness til page is loaded
 	$('body').toggleClass('pageLoaded');
+
+
+
+
+
+	function scrollIphone(){
+		if (window.scrollX > 0 ) {    
+		    $campaignHeader.css({"-webkit-transform":"translate(" + Math.ceil(window.scrollX / 22) + "px,0)"})
+		    $arrows.css({"-webkit-transform":"translate(" + Math.ceil(window.scrollX / 21.5) + "px,0)"})
+		    
+		} else if (window.scrollX < 0 ) {
+		    $campaignHeader.css({"-webkit-transform":"translate(0px,0px)"})
+		    $arrows.css({"-webkit-transform":"translate(0px,0px)"})
+		}
+	}
+
+
+	// Iphone 5 bug where fixed elements drift when horizontally scrolling
+	if ( window.screen.width === 320 && window.screen.height === 568 && !!navigator.userAgent.match(/iPhone/i) ){
+
+	  var elWidth = widthInner * section.length;
+	  var touchDown = false;
+	  var scrollEnd;
+	  var $campaignHeader = $('#campaign-header');
+	  var $arrows = $('#arrows');
+
+	  // Set header and arrows
+	  $("#campaign-header").width(widthInner);
+	  $("#arrows").width(widthInner);
+
+
+
+	  document.addEventListener('touchstart',function(){
+	  	touchDown = true;
+	  	console.log(touchDown)
+	  }) 
+	  document.addEventListener('touchend',function(){
+	  	touchDown = false;
+	  	console.log(touchDown)
+	  }) 
+
+
+	  document.addEventListener('scroll',function(){
+	  	if (!touchDown) {
+	  	  window.requestAnimFrame(function() {
+	  	    scrollIphone();
+	  	  });
+	  	}
+	  })
+
+	}
+
 
 
 });
