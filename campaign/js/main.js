@@ -452,6 +452,7 @@ $(function(){
 		    $campaignHeader.css({"-webkit-transform":"translate(0px,0px)"})
 		    $arrows.css({"-webkit-transform":"translate(0px,0px)"})
 		}
+		tick = true
 	}
 
 	if ( window.screen.width === 320 && window.screen.height === 568 && !!navigator.userAgent.match(/iPhone/i) ){
@@ -461,25 +462,23 @@ $(function(){
 	  var scrollEnd;
 	  var $campaignHeader = $('#campaign-header');
 	  var $arrows = $('#arrows');
+	  var scrollXPos = window.scrollX;
+	  var tick = true;
 
 	  // Set header and arrows
-	  $("#campaign-header").width(widthInner);
-	  $("#arrows").width(widthInner);
+	  $campaignHeader.width(widthInner);
+	  $arrows.width(widthInner);
 
-
-	  document.addEventListener('touchstart',function(){
-	  	touchDown = true;
-	  }) 
-	  document.addEventListener('touchend',function(){
-	  	touchDown = false;
-	  }) 
+	  document.addEventListener('resize',function(){
+	  	$campaignHeader.width(widthInner);
+	  	$arrows.width(widthInner);
+	  })
 
 
 	  document.addEventListener('scroll',function(){
-	  	if (!touchDown) {
-	  	  window.requestAnimFrame(function() {
-	  	    scrollIphone();
-	  	  });
+	  	if (tick) {
+	  	  window.requestAnimFrame(scrollIphone);
+	  	  tick = false;
 	  	}
 	  })
 
