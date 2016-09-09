@@ -301,9 +301,6 @@ $(function(){
 	})
 		.setClassToggle('#arrows', 'hidePrev')
 		.setTween(fade1)
-		.on('start', function () {
-		    console.log("trigger");
-		})
 		//.addIndicators({name: "1 (duration: 300)"})
 		.addTo(controllerCampaign);
 
