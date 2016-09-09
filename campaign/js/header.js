@@ -15,7 +15,6 @@ $(function(){
 		bodyEl.toggle('active-header')
 		// Register user's preference for menu
 		userClosedMenu = (userClosedMenu === true) ? false : true;
-
 		if (userClosedMenu) {
 			thin.setAttribute('aria-hidden', 'false');
 			thick.setAttribute('aria-hidden', 'true');

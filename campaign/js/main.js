@@ -295,12 +295,15 @@ $(function(){
 
 	// These are to hide the previous and next arrows when we're on the first and last slides
 	var firstSlide = new ScrollMagic.Scene({
-		duration: '90%',
-		triggerElement: '#slide1',
+		duration: '100%',
+		triggerElement: 'body',
 		triggerHook: 0
 	})
 		.setClassToggle('#arrows', 'hidePrev')
 		.setTween(fade1)
+		.on('start', function () {
+		    console.log("trigger");
+		})
 		//.addIndicators({name: "1 (duration: 300)"})
 		.addTo(controllerCampaign);
 
@@ -415,8 +418,9 @@ $(function(){
 
 		setTimeout(function(){
 			$dyno.empty();
-			if (userClosedMenu === true) {
-				$body.addClass('active-header');
+			// Open and close menu based on whether the user has closed it.
+			if (!userClosedMenu && !isMobile) {
+				$('body').addClass('active-header');
 			} 			
 			scrollConverter.activate(currentOffset);
 		}, 500);
@@ -439,13 +443,13 @@ $(function(){
 
 
 
-
-
+	// Iphone 5 bug where fixed elements drift when horizontally scrolling
 	function scrollIphone(){
 		if (window.scrollX > 0 ) {    
-			// Bigger divider number moves it left
-		    $campaignHeader.css({"-webkit-transform":"translate(" + Math.ceil(window.scrollX / 24.6) + "px,0)"})
-		    $arrows.css({"-webkit-transform":"translate(" + Math.ceil(window.scrollX / 24.6) + "px,0)"})
+			// Bigger divider number moves it left - 24.6 seems to work well as a divisor 
+			var transXDistance = Math.ceil(window.scrollX * 0.04)
+		    $campaignHeader.css({"-webkit-transform":"translate(" + transXDistance + "px,0)"})
+		    $arrows.css({"-webkit-transform":"translate(" + transXDistance + "px,0)"})
 		    
 		} else if (window.scrollX < 0 ) {
 		    $campaignHeader.css({"-webkit-transform":"translate(0px,0px)"})
@@ -453,8 +457,6 @@ $(function(){
 		}
 	}
 
-
-	// Iphone 5 bug where fixed elements drift when horizontally scrolling
 	if ( window.screen.width === 320 && window.screen.height === 568 && !!navigator.userAgent.match(/iPhone/i) ){
 
 	  var elWidth = widthInner * section.length;
@@ -462,14 +464,10 @@ $(function(){
 	  var scrollEnd;
 	  var $campaignHeader = $('#campaign-header');
 	  var $arrows = $('#arrows');
-	  var divider = elWidth * 0.1;
-
-	  console.log(divider) 
 
 	  // Set header and arrows
 	  $("#campaign-header").width(widthInner);
 	  $("#arrows").width(widthInner);
-
 
 
 	  document.addEventListener('touchstart',function(){
