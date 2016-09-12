@@ -113,6 +113,10 @@ $(function(){
            e.preventDefault();  
            console.log('toogt')
          })
+
+        $('iframe').click(function(){
+          console.log('too')
+        })
       
       } else {
 
