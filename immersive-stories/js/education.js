@@ -98,33 +98,24 @@ $(function(){
     function videoPlay(){
       var videoSrc = "https://www.youtube.com/embed/l3SLvfzwVkU?autoplay=1&rel=0&amp;showinfo=0&amp",          
           $video = $('#video'),
-          $body = $("body");
+          $body = $("body"),
+          boundlessVideo = document.getElementById("boundless-video"),
           videoHTML = 
             '<button class="close-video"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>' +
             '<div id="youtube-video">' + 
             '<iframe title="YouTube video" id="embedVid" width=' + $video.width() + ' height=' + $video.height() + ' src="' + videoSrc + '" frameborder="0" allowfullscreen autoplay></iframe>' +
             '</div>';
 
-      if (isMobile.matches) {
+      if (!!navigator.userAgent.match(/iPhone/i)) {
 
-        document.getElementById("boundless-video").innerHTML = videoHTML;
+        $body.toggleClass('iPhone')
+        boundlessVideo.innerHTML = videoHTML;
 
-        $(".play").click(function(e){
-           e.preventDefault();  
-           console.log('toogt')
-         })
-
-        $('iframe').click(function(){
-          console.log('too')
-        })
-      
       } else {
 
         $(".play").click(function(e){
-
            e.preventDefault();     
-
-           document.getElementById("boundless-video").innerHTML = videoHTML;
+           boundlessVideo.innerHTML = videoHTML;
 
            setTimeout( function(){
              $('#video iframe')[0].focus()
@@ -133,11 +124,10 @@ $(function(){
            $(".close-video").click(function(){
              $(".play").removeClass("hidden");
              $body.toggleClass("playing");
-             document.getElementById("boundless-video").innerHTML = '';
+             boundlessVideo.innerHTML = '';
            });
-
-            $body.toggleClass("playing");
-
+           
+          $body.toggleClass("playing");
         });
 
       }

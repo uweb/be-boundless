@@ -720,12 +720,6 @@ button.close-video {
             padding-top: 110%;
             padding-left: 30px;
             padding-right: 30px;
-            position: relative;
-            z-index: 0;
-        }
-        #boundless-video {
-            z-index: 999;
-            position: relative;
         }
         background-position: -65px 0;
         background-image: url("@{education}/woman-in-headscarf-mobile.jpg");
@@ -736,7 +730,6 @@ button.close-video {
             padding: 31px 97px 14px 0;
             display: inline-block;
             font-size: 20px;
-            pointer-events: none;
             &:before {
             }
             &:after {
@@ -764,20 +757,13 @@ button.close-video {
         bottom: 0;
         z-index: 9999;
     }
-    @media(max-width:768px) {
-        opacity: .01;
-        background-color: transparent;
-        iframe {
-            margin: 0;
-            width: 100%;
-            height: 100px;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            z-index: 999;
+    @media(max-width:768px) {   
+        iframe { 
+            width: 100% !important;
+            height: 42vw !important;
         }
     }
+
 }
 
 
