@@ -441,6 +441,7 @@ $(function(){
 
 
 	// Iphone 5 bug where fixed elements drift when horizontally scrolling
+	// This readjusts the menu and arrows to be a 
 	function scrollIphone(){
 		if (window.scrollX > 0 ) {    
 			// Bigger divider number moves it left - 24.6 seems to work well as a divisor 
@@ -451,15 +452,14 @@ $(function(){
 		} else if (window.scrollX < 0 ) {
 		    $campaignHeader.css({"-webkit-transform":"translate(0px,0px)"})
 		    $arrows.css({"-webkit-transform":"translate(0px,0px)"})
-		}
+		} else if (window.scrollX ) {
+			// widthInner * numSlides
+	  	}
 		tick = true
 	}
 
 	if ( window.screen.width === 320 && window.screen.height === 568 && !!navigator.userAgent.match(/iPhone/i) ){
 
-	  var elWidth = widthInner * section.length;
-	  var touchDown = false;
-	  var scrollEnd;
 	  var $campaignHeader = $('#campaign-header');
 	  var $arrows = $('#arrows');
 	  var scrollXPos = window.scrollX;
@@ -479,7 +479,7 @@ $(function(){
 	  	if (tick) {
 	  	  window.requestAnimFrame(scrollIphone);
 	  	  tick = false;
-	  	}
+	  	} 
 	  })
 
 	}
