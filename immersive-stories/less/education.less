@@ -730,6 +730,7 @@ button.close-video {
             padding: 31px 97px 14px 0;
             display: inline-block;
             font-size: 20px;
+            pointer-events: none;
             &:before {
             }
             &:after {
@@ -737,6 +738,12 @@ button.close-video {
             }
         }
     }
+}
+
+
+
+.video-block {
+    @media(max-width:768px) {    }
 }
 // Popup video
 #youtube-video {
@@ -752,13 +759,14 @@ button.close-video {
         z-index: 9999;
     }
     @media(max-width:768px) {
-        background-color: black;
+        opacity: .01;
+        background-color: transparent;
         iframe {
             margin: 0;
             width: 100%;
-            height: 200px;
+            height: 100px;
             position: absolute;
-            bottom: 30px;
+            bottom: 0;
             right: 0;
             left: 0;
             z-index: 999;
@@ -767,14 +775,6 @@ button.close-video {
 }
 
 
-
-.video-block {
-    @media(max-width:768px) {
-        a.play {
-            pointer-events: none
-        }
-    }
-}
 
 
 
