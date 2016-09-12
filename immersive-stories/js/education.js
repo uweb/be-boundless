@@ -108,6 +108,9 @@ $(function(){
       if (isMobile.matches) {
 
         document.getElementById("boundless-video").innerHTML = videoHTML;
+        $('iframe').click(function(){
+          console.log('too')
+        })
       
       } else {
 
