@@ -61,7 +61,9 @@ $(function(){
       triggerHook: 1
     })
     .on("start", function(){
-
+      if (!isMobile.match) {
+        mapInit();
+      }
     })
     .reverse(false)
     .addTo(controllerEducation);
@@ -108,7 +110,7 @@ $(function(){
 
       if (!!navigator.userAgent.match(/iPhone/i)) {
 
-        $body.toggleClass('iPhone')
+        $body.toggleClass('iPhone');
         boundlessVideo.innerHTML = videoHTML;
 
       } else {
@@ -126,7 +128,7 @@ $(function(){
              $body.toggleClass("playing");
              boundlessVideo.innerHTML = '';
            });
-           
+
           $body.toggleClass("playing");
         });
 
