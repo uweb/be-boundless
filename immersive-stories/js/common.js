@@ -4,8 +4,6 @@ var isMobile = window.matchMedia("only screen and (max-width: 768px)");
 
 $(function(){
 
-  alert(2)
-
   // Audio Player
   $(".audio-ctrl").each(function(){
   
