@@ -1,6 +1,6 @@
 $(function(){
 
-  
+  alert('1')
 // Audio Player
 $(".audio-ctrl").each(function(){
 
