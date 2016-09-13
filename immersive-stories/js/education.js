@@ -5,8 +5,8 @@ $(function(){
   var zoomMap = new TimelineMax ()
       .add([
         TweenMax.to(".school-pic", 1, { y: '-50%', ease: Power0.easeOut }),
-        TweenMax.to(".blurb1", 0.5, { y: '-100%', opacity: 0 }, 1),
-        TweenMax.to(".blurb2", 0.5, { y: '0', opacity: 1 })
+        TweenMax.to(".blurb1", 0.5, { x: '-100%', opacity: 0 }, 1),
+        TweenMax.to(".blurb2", 0.5, { x: '0', opacity: 1 })
       ])
 
     // build scenes
