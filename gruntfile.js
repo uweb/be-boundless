@@ -80,6 +80,7 @@ module.exports = function(grunt) {
           ],
           // Commented out to speed up Grunt / Add back in to remove files from library
           'campaign/js/animationLibraries.min.js': ['<%= concat.dist.animationLibraries %>'],
+          'passion/js/tiles.js':['passion/js/tiles.dev.js']
         }
       }
     },
@@ -145,7 +146,8 @@ module.exports = function(grunt) {
           '<%= concat.dist.src %>', 
           '<%= concat.dist.campaign %>', 
           // Commented out to speed up Grunt / Add back in to remove files from library
-          '<%= concat.dist.animationLibraries %>'
+          '<%= concat.dist.animationLibraries %>',
+          'passion/js/tiles.dev.js'
         ],
         tasks: ['js']
       },

@@ -61,87 +61,63 @@
       <div class="container">     
         <div class="row">
           <h1><?php the_title(); ?></h1>
-          <div class="udub-slant"><span></span></div>
           <?php 
               while ( have_posts() ) : the_post(); 
                 the_content();
               endwhile;
            ?>
+           <div class="circle-button-container">
+             <div class="fyp-filter-triggers" data-name="fyp-causes-filters" tabindex="0"><div class="circle-icon"><p class="ic-heart"></p></div><p class="circle-text">Causes</p></div>
+             <div class="fyp-filter-triggers" data-name="fyp-units-filters" tabindex="0"><div class="circle-icon"><p class="ic-administration"></p></div><p class="circle-text">Schools, Colleges &amp; Campuses</p></div>
+             <div class="fyp-filter-triggers" data-name="fyp-purposes-filters" tabindex="0"><div class="circle-icon"><p class="ic-tools"></p></div><p class="circle-text">Funding Purpose</p></div>
+             <hr align="left">
+             <div id="fyp-filters-box" class="fyp-filters-box">
+               <ul id="fyp-causes-filters" class="fyp-filters">
+                 <?php
+                  $causes_parent_terms = get_terms('causes', array(
+                      'hide_empty' => false,
+                      'parent' => 0
+                  ));
+                  foreach ($causes_parent_terms as $cause) {
+                       echo '<li><p>' . $cause->name . '</p></li>';
+                  }
+                 ?>
+               </ul>
+               <ul id="fyp-units-filters" class="fyp-filters">
+                 <?php
+                  $args = array('post_type' => 'units', 'fields' => 'ids', 'numberposts' => '-1');
+                  $units = get_posts($args);
+                  foreach ($units as $unit => $ID) {
+                      $title = get_the_title($ID);
+                      echo '<li><p>' . $title . '</p></li>';
+                  }
+                 ?>
+               </ul>
+               <ul id="fyp-purposes-filters" class="fyp-filters">
+                 <?php
+                  $purposes_parent_terms = get_terms('purposes', array(
+                      'hide_empty' => false,
+                      'parent' => 0
+                  ));
+                  foreach ($purposes_parent_terms as $purpose) {
+                       echo '<li><p>' . $purpose->name . '</p></li>';
+                  }
+                 ?>
+               </ul>
+             </div>
+           </div>
+           <div class="fyp-search-wrapper">
+              <form class="fyp-search">
+                <label class="fyp-search-label" for="fyp-search-bar"><p>Or search for specific fund:</p></label>
+                <input class="fyp-search-bar" type="search" name="fyp-search-name" value="">
+                <input type="submit" value="search" class="fyp-search-button" tabindex="0">
+              </form>
+            </div>
         </div>
       </div>
     </div>
-    <!-- FEATURE: dynamically load the filters - Now a dropdown structure --> 
 
-    <div role="form" aria-label="Filter Results">
     
-        <ul id="filter">
-        <li class="sort_by">
-          Filter by:
-        </li>
-        <li>
-          <a id="clear" href="#" title="Show all">
-          <svg xmlns="http://www.w3.org/2000/svg" width="35.848" height="35.794" viewBox="0 0 35.848 35.794"><circle fill="#c2c2c2" cx="17.999" cy="17.999" r="16.998"/><g fill="none"    stroke="#FFF" stroke-width="3" stroke-miterlimit="10"><path d="M11.485 24.513l13.027-13.028M24.512 24.513L11.485 11.485"/></g></svg>Show all      
-          </a>
-        </li>
-        <?php
-        	//
-            $category_parent_terms = get_terms('causes', array(
-                'hide_empty' => false,
-                'parent' => 0
-            ));
-            $priority_parent_terms = get_terms('purposes', array(
-                'hide_empty' => false,
-                'parent' => 0
-            ));
-            echo '<li class="select">' .
-                        '<label>Causes</label>' .
-                         '<select>';
-            foreach ($category_parent_terms as $parent) {
-                 echo '<option>' . $parent->name . '</option>';
-            }
-            echo '</select>        
-                       </li>
-                       <li class="select">' .
-                        '<label>Purposes</label>' .
-                         '<select>';
-            foreach ($priority_parent_terms as $parent1) {
-                 echo '<option>' . $parent1->name . '</option>';
-            }
-            echo '</select>        
-                       </li>';
-    
-            //print_r($filterneum_terms);
-            // foreach ($terms as $term) {
-            //     echo '<li>
-            //             <button data-filter=".' . $term->slug . '">' . $term->name . ' <div class="udub-slant"><span></span></div></button>        
-            //           </li>';
-            //     print_r($term);
-            // }
-        ?>
-          <li class="search_slash">
-            <a title="Search button" id="searcher" href="#">
-            <svg version="1.1" aria-hidden="true" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-               width="22.889px" height="59.075px" viewBox="0 0 22.889 59.075" enable-background="new 0 0 22.889 59.075" xml:space="preserve">
-            <path fill="#4C2E84" d="M13.676,0.294c-4.998,0-9.063,4.067-9.063,9.065c0,1.897,0.587,3.658,1.587,5.116l-5.751,5.744l2.225,2.229
-              l5.734-5.726c1.486,1.067,3.302,1.703,5.267,1.703h0.002c4.998,0,9.064-4.067,9.064-9.066C22.741,4.361,18.674,0.294,13.676,0.294z
-               M19.824,9.359c0,3.385-2.754,6.14-6.139,6.14c-3.389,0-6.147-2.754-6.149-6.14c0-3.384,2.759-6.137,6.149-6.137
-              C17.07,3.223,19.824,5.976,19.824,9.359z"/>
-            <line fill="none" stroke="#B8A678" stroke-width="3.5" stroke-miterlimit="10" x1="1.396" y1="52.409" x2="19.614" y2="34.191"/>
-            <line fill="none" stroke="#B8A678" stroke-width="3.5" stroke-miterlimit="10" x1="19.614" y1="52.409" x2="1.396" y2="34.191"/>
-            </svg>
-            </a>        
-          </li>
-        </ul>
-    
-    
-    
-        <div role="search" id="searcher_wrap">
-          <input type="text" class="quicksearch" placeholder="Start typing" />
-        </div>
-      
-    </div>
-
-
     <!-- Add this to  ontouchstart="this.classList.toggle('hover');" -->
     <?php
     //sort of students will all occur here
@@ -191,7 +167,7 @@
 
         <!-- THE FUN PHP STUFF -->
         <?php
-        
+
         $unitcount = 1;
         foreach ( $units as $unit ) {
            //gather assets
@@ -246,7 +222,7 @@
             $unitcount++;
         }
 
-        
+
         $fundcount = 1;
         foreach ( $funds as $fund ) {
            //gather assets

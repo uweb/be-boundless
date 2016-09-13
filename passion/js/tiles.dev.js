@@ -196,6 +196,15 @@ $(window).load(function(){
       })
 
    //  });
+   //  
+   
+   $('.fyp-filter-triggers').on('click', function(e){
+      console.log( $('#'+e.currentTarget.dataset.name) );
+
+      $('hr').addClass('reduce');
+      $('ul.fyp-filters.show').removeClass('show');
+      $('#'+e.currentTarget.dataset.name).addClass('show');
+   })
 
 });  
 
