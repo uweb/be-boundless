@@ -136,29 +136,6 @@ $(function(){
     }
 
 
-  // Audio interviews
-  $('#people li').on('click', function(){
-    var $this = $(this);
-    if( !$this.hasClass('active') ){
-      $this.addClass('active');
-    } else {
-      $this.removeClass('active');
-    }
-    $this.parent().children('li').not($this).removeClass('active');
-  })
-
-
-  // Focus on button triggers 
-  $('.audio-play').bind("focus blur", function(event){
-       event.stopPropagation();
-       if(event.type == "focus")  {
-        $(event.target).closest('li').toggleClass('active-focus');
-       } 
-       else if(event.type == "blur") {
-        $(event.target).closest('li').toggleClass('active-focus');
-       }
-   });
-
   // Lightbox plugin
 
   MediumLightbox('figure.zoom-effect');    
