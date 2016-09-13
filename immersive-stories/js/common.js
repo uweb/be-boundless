@@ -6,7 +6,8 @@ $(function(){
 
   // Audio Player
         // Audio Player
-        alert(1)
+        alert(2)
+
         $(".audio-ctrl").each(function(){
 
           var $this = $(this);
