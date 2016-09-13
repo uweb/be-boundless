@@ -5,15 +5,15 @@ $(function(){
   var zoomMap = new TimelineMax ()
       .add([
         TweenMax.to(".school-pic", 1, { y: '-50%', ease: Power0.easeOut }),
-        TweenMax.to(".blurb1", 1, { y: '-100%', opacity: 0 }, 1),
-        TweenMax.to(".blurb2", 1, { y: '0', opacity: 1 })
+        TweenMax.to(".blurb1", 0.5, { x: '-100%', opacity: 0 }, 1),
+        TweenMax.to(".blurb2", 0.5, { x: '0', opacity: 1 })
       ])
 
     // build scenes
     var schoolZoom = new ScrollMagic.Scene({
         triggerElement: ".school-zoom",
-        triggerHook: 0.7,
-        duration: "90%",
+        triggerHook: 0.45,
+        duration: "100%",
       })
       .setTween(zoomMap)
       // .on("progress", function (event) {
@@ -28,7 +28,7 @@ $(function(){
 
     var studentpic1 = new ScrollMagic.Scene({
       triggerElement: "#pic1",
-      triggerHook: 0.5,
+      triggerHook: 0.4,
       duration: '25%',
     })
     .setTween(TweenMax.from('#pic1 .pic-2', 1, { x: '100%', ease: Power0.easeIn }))
@@ -60,7 +60,22 @@ $(function(){
       triggerElement: '#mapid',
       triggerHook: 1
     })
-    .on("start", mapInit)
+    .on("start", function(){
+      if (!isMobile.match) {
+        mapInit();
+      }
+    })
+    .reverse(false)
+    .addTo(controllerEducation);
+
+
+    var videoTrigger = new ScrollMagic.Scene({
+      triggerElement: '#video',
+      triggerHook: 1
+    })
+    .on("start", function(){
+      videoPlay("https://www.youtube.com/embed/l3SLvfzwVkU?autoplay=1&rel=0&amp;showinfo=0&amp");
+    })
     .reverse(false)
     .addTo(controllerEducation);
 
@@ -85,29 +100,6 @@ $(function(){
     // }
 
 
-
-    $(".play").click(function(e){
-     var $video = $('#video'),
-       $body = $("body");
-       e.preventDefault();
-       $body.toggleClass("playing");
-       document.getElementById("boundless-video").innerHTML = 
-         '<button class="close-video"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>' +
-         '<div id="youtube-video">' + 
-       '<iframe title="YouTube video" id="embedVid" width=' + $video.width() + ' height=' + $video.height() + ' src="https://www.youtube.com/embed/l3SLvfzwVkU?rel=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allowfullscreen autoplay></iframe>' +
-         '</div>';
-       
-       setTimeout( function(){
-         $('#video iframe')[0].focus()
-       }, 500 );
-
-       $(".close-video").click(function(){
-         $(".play").removeClass("hidden");
-         $body.toggleClass("playing");
-         document.getElementById("boundless-video").innerHTML = '';
-       });
-
-    });
 
 
   // Audio interviews

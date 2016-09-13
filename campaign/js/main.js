@@ -21,6 +21,9 @@ $(function(){
 		currentOffset	= 0,
 		storyUp			= false;
 
+
+
+
 	// Listen for resizes
 	window.addEventListener('resize', function(){
 		widthInner 	= window.innerWidth;
@@ -278,22 +281,22 @@ $(function(){
 		})		
 	})
 
-	$('section div').each(function(){
-		var sceneH2 = new ScrollMagic.Scene({
-			duration: '50%',
-			triggerElement: this,
-			triggerHook: 0
-		});
-		// sceneH2.addIndicators()
-		sceneH2.addTo(controllerCampaign);
-		// sceneH2.setPin(this);
-	})
+	// $('section div').each(function(){
+	// 	var sceneH2 = new ScrollMagic.Scene({
+	// 		duration: '50%',
+	// 		triggerElement: this,
+	// 		triggerHook: 0
+	// 	});
+	// 	// sceneH2.addIndicators()
+	// 	sceneH2.addTo(controllerCampaign);
+	// 	// sceneH2.setPin(this);
+	// })
 
 
 	// These are to hide the previous and next arrows when we're on the first and last slides
 	var firstSlide = new ScrollMagic.Scene({
 		duration: '100%',
-		triggerElement: '#slide1',
+		triggerElement: 'body',
 		triggerHook: 0
 	})
 		.setClassToggle('#arrows', 'hidePrev')
@@ -331,14 +334,13 @@ $(function(){
 
 
 	var lastSlide = new ScrollMagic.Scene({
-		duration: '125%',
+		duration: '100%',
 		triggerElement: '#slides section:last-child',
-		triggerHook: 0
+		triggerHook: 0.5
 	})
 	.setClassToggle('#arrows', 'hideNext')
 	//.addIndicators({name: "1 (duration: 300)"})
 	.addTo(controllerCampaign);
-
 
 
 	//
@@ -349,13 +351,8 @@ $(function(){
 	//
 	//
 
-	// scrollConverter.activate();
-   	$('html, body, *').mousewheel(function(e, delta) {
-        // multiplying by 40 is the sensitivity, 
-        // increase to scroll faster.
-        this.scrollLeft -= (delta * 40);
-        e.preventDefault();
-    });
+	scrollConverter.activate();
+
 
 
 	//
@@ -366,7 +363,7 @@ $(function(){
 	//
 	//
 
-
+	// Add immersive story
 	$('.uw-btn').on('click',function(e){
 		var eTarget = $(e.target),
 			jsFiles = eTarget.data('js') || 'test',
@@ -408,8 +405,7 @@ $(function(){
 	})
 
 
-	// Empty out popup story
-
+	// Empty out dynamin story
 	$('button#empty').on('click',function(e){
 
 		storyUp = false;
@@ -419,8 +415,9 @@ $(function(){
 
 		setTimeout(function(){
 			$dyno.empty();
-			if (userClosedMenu === true) {
-				$body.addClass('active-header');
+			// Open and close menu based on whether the user has closed it.
+			if (!userClosedMenu && !isMobile) {
+				$('body').addClass('active-header');
 			} 			
 			scrollConverter.activate(currentOffset);
 		}, 500);
@@ -438,8 +435,55 @@ $(function(){
 	})
 
 
-	// Hides ugliness untila page is loaded
+	// Hides ugliness til page is loaded
 	$('body').toggleClass('pageLoaded');
+
+
+
+	// Iphone 5 bug where fixed elements drift when horizontally scrolling
+	// This readjusts the menu and arrows to be a 
+	function scrollIphone(){
+		if (window.scrollX > 0 ) {    
+			// Bigger divider number moves it left - 24.6 seems to work well as a divisor 
+			var transXDistance = Math.ceil(window.scrollX * 0.04)
+		    $campaignHeader.css({"-webkit-transform":"translate(" + transXDistance + "px,0)"})
+		    $arrows.css({"-webkit-transform":"translate(" + transXDistance + "px,0)"})
+		    
+		} else if (window.scrollX < 0 ) {
+		    $campaignHeader.css({"-webkit-transform":"translate(0px,0px)"})
+		    $arrows.css({"-webkit-transform":"translate(0px,0px)"})
+		} else if (window.scrollX ) {
+			// widthInner * numSlides
+	  	}
+		tick = true
+	}
+
+	if ( window.screen.width === 320 && window.screen.height === 568 && !!navigator.userAgent.match(/iPhone/i) ){
+
+	  var $campaignHeader = $('#campaign-header');
+	  var $arrows = $('#arrows');
+	  var scrollXPos = window.scrollX;
+	  var tick = true;
+
+	  // Set header and arrows
+	  $campaignHeader.width(widthInner);
+	  $arrows.width(widthInner);
+
+	  document.addEventListener('resize',function(){
+	  	$campaignHeader.width(widthInner);
+	  	$arrows.width(widthInner);
+	  })
+
+
+	  document.addEventListener('scroll',function(){
+	  	if (tick) {
+	  	  window.requestAnimFrame(scrollIphone);
+	  	  tick = false;
+	  	} 
+	  })
+
+	}
+
 
 
 });
