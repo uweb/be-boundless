@@ -12,8 +12,8 @@ $(function(){
     // build scenes
     var schoolZoom = new ScrollMagic.Scene({
         triggerElement: ".school-zoom",
-        triggerHook: 0.5,
-        duration: "50%",
+        triggerHook: 0.45,
+        duration: "100%",
       })
       .setTween(zoomMap)
       // .on("progress", function (event) {
@@ -73,7 +73,9 @@ $(function(){
       triggerElement: '#video',
       triggerHook: 1
     })
-    .on("start", videoPlay)
+    .on("start", function(){
+      videoPlay("https://www.youtube.com/embed/l3SLvfzwVkU?autoplay=1&rel=0&amp;showinfo=0&amp");
+    })
     .reverse(false)
     .addTo(controllerEducation);
 
@@ -97,43 +99,7 @@ $(function(){
     //       vid.currentTime  = e;
     // }
 
-    function videoPlay(){
-      var videoSrc = "https://www.youtube.com/embed/l3SLvfzwVkU?autoplay=1&rel=0&amp;showinfo=0&amp",          
-          $video = $('#video'),
-          $body = $("body"),
-          boundlessVideo = document.getElementById("boundless-video"),
-          videoHTML = 
-            '<button class="close-video"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>' +
-            '<div id="youtube-video">' + 
-            '<iframe title="YouTube video" id="embedVid" width=' + $video.width() + ' height=' + $video.height() + ' src="' + videoSrc + '" frameborder="0" allowfullscreen autoplay></iframe>' +
-            '</div>';
 
-      if (!!navigator.userAgent.match(/iPhone/i)) {
-
-        $body.toggleClass('iPhone');
-        boundlessVideo.innerHTML = videoHTML;
-
-      } else {
-
-        $(".play").click(function(e){
-           e.preventDefault();     
-           boundlessVideo.innerHTML = videoHTML;
-
-           setTimeout( function(){
-             $('#video iframe')[0].focus()
-           }, 500 );
-
-           $(".close-video").click(function(){
-             $(".play").removeClass("hidden");
-             $body.toggleClass("playing");
-             boundlessVideo.innerHTML = '';
-           });
-
-          $body.toggleClass("playing");
-        });
-
-      }
-    }
 
 
   // Audio interviews

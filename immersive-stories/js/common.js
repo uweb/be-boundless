@@ -1,6 +1,47 @@
 var isMobile = window.matchMedia("only screen and (max-width: 768px)"); 
 
 
+// Video player for iphone/Android/desktop
+
+function videoPlay(vid){
+  var videoSrc = vid,          
+      $video = $('#video'),
+      $body = $("body"),
+      boundlessVideo = document.getElementById("boundless-video"),
+      videoHTML = 
+        '<button class="close-video"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>' +
+        '<div id="youtube-video">' + 
+        '<iframe title="YouTube video" id="embedVid" width=' + $video.width() + ' height=' + $video.height() + ' src="' + videoSrc + '" frameborder="0" allowfullscreen autoplay></iframe>' +
+        '</div>';
+
+  if (!!navigator.userAgent.match(/iPhone/i)) {
+
+    $body.toggleClass('iPhone');
+    boundlessVideo.innerHTML = videoHTML;
+
+  } else {
+
+    $(".play").click(function(e){
+       e.preventDefault();     
+       boundlessVideo.innerHTML = videoHTML;
+
+       setTimeout( function(){
+         $('#video iframe')[0].focus()
+       }, 500 );
+
+       $(".close-video").click(function(){
+         $(".play").removeClass("hidden");
+         $body.toggleClass("playing");
+         boundlessVideo.innerHTML = '';
+       });
+
+      $body.toggleClass("playing");
+    });
+
+  }
+}
+
+
 
 $(function(){
 
