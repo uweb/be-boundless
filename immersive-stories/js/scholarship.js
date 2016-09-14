@@ -56,6 +56,24 @@ $(function(){
     //.addIndicators()
     .addTo(controllerScholarship);
 
+    var svg5 = new ScrollMagic.Scene({
+      triggerElement: "#section5",
+      triggerHook: 0.7,
+      duration: '100%',
+    })
+    .setTween(TweenMax.to('#svg-planet', 1, { y: '-100%', ease: Power0.easeIn }))
+    //.addIndicators()
+    .addTo(controllerScholarship);
+
+    var svg6 = new ScrollMagic.Scene({
+      triggerElement: "#section6",
+      triggerHook: 0.7,
+      duration: '100%',
+    })
+    .setTween(TweenMax.to('#svg-bike', 1, { y: '-100%', ease: Power0.easeIn }))
+    //.addIndicators()
+    .addTo(controllerScholarship);
+
 
     // var intro = new ScrollMagic.Scene({
     //   triggerElement: '#intro-slide',
