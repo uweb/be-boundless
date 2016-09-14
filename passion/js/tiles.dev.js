@@ -16,7 +16,7 @@ $(window).load(function(){
         masonry: {
           columnWidth: '.grid-sizer'
         },
-        filter: ':not(.title-card)',
+        filter: '.featured',
       });
 
       // Remove overlay once all is loaded
@@ -198,12 +198,18 @@ $(window).load(function(){
    //  });
    //  
    
+   //FYP - Reveal filters under categories
    $('.fyp-filter-triggers').on('click', function(e){
-      console.log( $('#'+e.currentTarget.dataset.name) );
-
       $('hr').addClass('reduce');
       $('ul.fyp-filters.show').removeClass('show');
       $('#'+e.currentTarget.dataset.name).addClass('show');
+   })
+
+   //FYP - Click filter sorts the boxes
+   $('.fyp-filter-click').on('click', function(e){
+      var filterValue = $( this ).attr('data-filter');
+      console.log(filterValue)
+      $grid.isotope({ filter: '.' + filterValue });
    })
 
 });  

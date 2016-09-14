@@ -316,7 +316,8 @@
   //   cursor: url(../assets/x.svg), auto;
   // }
 
-  .open {
+  .open ,
+  .fyp-units {
       .full-bio{
         display: block;
         .give-button {
@@ -368,11 +369,13 @@
       .the-width ( 2, 5 );
       background-color: white;  
       height: 2*@tileHeight;
-      &.open {
+      &.open ,
+      &.fyp-units {
         height: 3*@tileHeight;
       }
     }
-    &.open {
+    &.open ,
+    &.fyp-units {
       .the-width ( 5, 5 );
       height: 3*@tileHeight;
       .front {
@@ -409,7 +412,8 @@
         .the-width ( 2, 4 ); 
         height: 2*@tileHeight;
       }      
-      &.open {
+      &.open ,
+      &.fyp-units {
         .the-width ( 4, 4 );
         .front {
           width: 24.8%;        
@@ -509,7 +513,8 @@
         .the-width ( 2, 3 ); 
         //height: 420px;
       }
-      &.open {
+      &.open ,
+      &.fyp-units {
         .the-width ( 3, 3 );
         .front {
           width: 33%;        
@@ -552,7 +557,8 @@
         .the-width ( 2, 2 ); 
         height: 2*@tileHeight;
       }      
-      &.open {
+      &.open ,
+      .fyp-units {
         .the-width ( 2, 2 );
         height: 4.5*@tileHeight;
         .front {
@@ -591,7 +597,8 @@
         .the-width ( 1, 1 ); 
         height: 12*@tileHeight/7;
       }
-      &.open {
+      &.open ,
+      .fyp-units {
         .the-width ( 1, 1 );
         height: 4.5*@tileHeight;
         .front {
@@ -712,7 +719,8 @@
     p {
       opacity: 0;
     }
-    &.open .front {
+    &.open .front ,
+    &.fyp-units .front {
       width: 100%;
     }
   }
@@ -1072,7 +1080,8 @@
     &.active img {
       width: 200px;
     }
-    &.open {
+    &.open ,
+    &.fyp-units {
       .front .banner {
         display: none;
       }
@@ -1178,7 +1187,8 @@
     }
 
     .grid-item {
-      &.open {
+      &.open ,
+      &.fyp-units {
         height: 900px;
         .flipper {
           position: static;
