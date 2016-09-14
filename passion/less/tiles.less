@@ -117,21 +117,31 @@
               break-inside:avoid;
               p {
                 margin: 0;
+                a {
+                  color: white;
+                  &:hover,
+                  &:active,
+                  &:focus  {
+                    color: #4b2e83;
+                  }
+                }
               }
             }
           }
         }
-        .fyp-filter-triggers:hover,
-        .fyp-filter-triggers:active,
-        .fyp-filter-triggers:focus  {
-          .circle-icon {
-            background-color: #4b2e83;
-            p:before {
-              color: #FFF;
+        .fyp-filter-triggers {
+          a:hover,
+          a:active,
+          a:focus  {
+            .circle-icon {
+              background-color: #4b2e83;
+              p:before {
+                color: #FFF;
+              }
             }
-          }
-          p.circle-text {
-            color: #4b2e83;
+            p.circle-text {
+              color: #4b2e83;
+            }
           }
         }
       }

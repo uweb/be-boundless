@@ -264,19 +264,27 @@
 #passion .module-hero-image .circle-button-container .fyp-filters-box ul.fyp-filters li p {
   margin: 0;
 }
-#passion .module-hero-image .circle-button-container .fyp-filter-triggers:hover .circle-icon,
-#passion .module-hero-image .circle-button-container .fyp-filter-triggers:active .circle-icon,
-#passion .module-hero-image .circle-button-container .fyp-filter-triggers:focus .circle-icon {
+#passion .module-hero-image .circle-button-container .fyp-filters-box ul.fyp-filters li p a {
+  color: white;
+}
+#passion .module-hero-image .circle-button-container .fyp-filters-box ul.fyp-filters li p a:hover,
+#passion .module-hero-image .circle-button-container .fyp-filters-box ul.fyp-filters li p a:active,
+#passion .module-hero-image .circle-button-container .fyp-filters-box ul.fyp-filters li p a:focus {
+  color: #4b2e83;
+}
+#passion .module-hero-image .circle-button-container .fyp-filter-triggers a:hover .circle-icon,
+#passion .module-hero-image .circle-button-container .fyp-filter-triggers a:active .circle-icon,
+#passion .module-hero-image .circle-button-container .fyp-filter-triggers a:focus .circle-icon {
   background-color: #4b2e83;
 }
-#passion .module-hero-image .circle-button-container .fyp-filter-triggers:hover .circle-icon p:before,
-#passion .module-hero-image .circle-button-container .fyp-filter-triggers:active .circle-icon p:before,
-#passion .module-hero-image .circle-button-container .fyp-filter-triggers:focus .circle-icon p:before {
+#passion .module-hero-image .circle-button-container .fyp-filter-triggers a:hover .circle-icon p:before,
+#passion .module-hero-image .circle-button-container .fyp-filter-triggers a:active .circle-icon p:before,
+#passion .module-hero-image .circle-button-container .fyp-filter-triggers a:focus .circle-icon p:before {
   color: #FFF;
 }
-#passion .module-hero-image .circle-button-container .fyp-filter-triggers:hover p.circle-text,
-#passion .module-hero-image .circle-button-container .fyp-filter-triggers:active p.circle-text,
-#passion .module-hero-image .circle-button-container .fyp-filter-triggers:focus p.circle-text {
+#passion .module-hero-image .circle-button-container .fyp-filter-triggers a:hover p.circle-text,
+#passion .module-hero-image .circle-button-container .fyp-filter-triggers a:active p.circle-text,
+#passion .module-hero-image .circle-button-container .fyp-filter-triggers a:focus p.circle-text {
   color: #4b2e83;
 }
 #passion .module-hero-image .fyp-search-wrapper {

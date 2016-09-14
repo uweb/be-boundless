@@ -67,9 +67,9 @@
               endwhile;
            ?>
            <div class="circle-button-container">
-             <div class="fyp-filter-triggers" data-name="fyp-causes-filters" tabindex="0"><div class="circle-icon"><p class="ic-heart"></p></div><p class="circle-text">Causes</p></div>
-             <div class="fyp-filter-triggers" data-name="fyp-units-filters" tabindex="0"><div class="circle-icon"><p class="ic-administration"></p></div><p class="circle-text">Schools, Colleges &amp; Campuses</p></div>
-             <div class="fyp-filter-triggers" data-name="fyp-purposes-filters" tabindex="0"><div class="circle-icon"><p class="ic-tools"></p></div><p class="circle-text">Funding Purpose</p></div>
+             <div class="fyp-filter-triggers" data-name="fyp-causes-filters"><a href="#"><div class="circle-icon"><p class="ic-heart"></p></div><p class="circle-text">Causes</p></a></div>
+             <div class="fyp-filter-triggers" data-name="fyp-units-filters"><a href="#"><div class="circle-icon"><p class="ic-administration"></p></div><p class="circle-text">Schools, Colleges &amp; Campuses</p></a></div>
+             <div class="fyp-filter-triggers" data-name="fyp-purposes-filters"><a href="#"><div class="circle-icon"><p class="ic-tools"></p></div><p class="circle-text">Funding Purpose</p></a></div>
              <hr align="left">
              <div id="fyp-filters-box" class="fyp-filters-box">
                <ul id="fyp-causes-filters" class="fyp-filters">
@@ -79,7 +79,7 @@
                       'parent' => 0
                   ));
                   foreach ($causes_parent_terms as $cause) {
-                       echo '<li><p>' . $cause->name . '</p></li>';
+                       echo '<li><p><a href="#">' . $cause->name . '</a></p></li>';
                   }
                  ?>
                </ul>
@@ -89,7 +89,7 @@
                   $units = get_posts($args);
                   foreach ($units as $unit => $ID) {
                       $title = get_the_title($ID);
-                      echo '<li><p>' . $title . '</p></li>';
+                      echo '<li><p><a href="#">' . $title . '</a></p></li>';
                   }
                  ?>
                </ul>
@@ -100,7 +100,7 @@
                       'parent' => 0
                   ));
                   foreach ($purposes_parent_terms as $purpose) {
-                       echo '<li><p>' . $purpose->name . '</p></li>';
+                       echo '<li><p><a href="#">' . $purpose->name . '</a></p></li>';
                   }
                  ?>
                </ul>
@@ -117,7 +117,7 @@
       </div>
     </div>
 
-    
+
     <!-- Add this to  ontouchstart="this.classList.toggle('hover');" -->
     <?php
     //sort of students will all occur here
