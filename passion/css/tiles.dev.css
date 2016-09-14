@@ -169,6 +169,9 @@
 #passion .row {
   height: 100%;
 }
+#passion .row h1:after {
+  pointer-events: none;
+}
 #passion .module-hero-image {
   margin-top: 50px;
   height: calc(100% - 256px);
