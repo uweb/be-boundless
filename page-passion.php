@@ -20,7 +20,6 @@
   <script type='text/javascript' src='https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js'></script>
 
    <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/main.js' ?>" type="text/javascript"></script>
-  <script src="<?php echo get_stylesheet_directory_uri() . '/passion/js/tiles.dev.js' ?>" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script> 
 
   
@@ -61,84 +60,62 @@
       <div class="container">     
         <div class="row">
           <h1><?php the_title(); ?></h1>
-          <div class="udub-slant"><span></span></div>
           <?php 
               while ( have_posts() ) : the_post(); 
                 the_content();
               endwhile;
            ?>
+           <div class="circle-button-container">
+             <div class="fyp-filter-triggers" data-name="fyp-causes-filters"><a href="#"><div class="circle-icon"><p class="ic-heart"></p></div><p class="circle-text">Causes</p></a></div>
+             <div class="fyp-filter-triggers" data-name="fyp-units-filters"><a href="#"><div class="circle-icon"><p class="ic-administration"></p></div><p class="circle-text">Schools, Colleges &amp; Campuses</p></a></div>
+             <div class="fyp-filter-triggers" data-name="fyp-purposes-filters"><a href="#"><div class="circle-icon"><p class="ic-tools"></p></div><p class="circle-text">Funding Purpose</p></a></div>
+             <hr align="left">
+             <div id="fyp-filters-box" class="fyp-filters-box">
+               <ul id="fyp-causes-filters" class="fyp-filters">
+                 <?php
+                  $causes_parent_terms = get_terms('causes', array(
+                      'hide_empty' => false,
+                      'parent' => 0
+                  ));
+                  foreach ($causes_parent_terms as $cause) {
+                       echo '<li><p><a href="#" class="fyp-filter-click" data-filter="' . $cause->slug . '">' . $cause->name . '</a></p></li>';
+                  }
+                 ?>
+               </ul>
+               <ul id="fyp-units-filters" class="fyp-filters">
+                 <?php
+                  $args = array('post_type' => 'units', 'fields' => 'ids', 'numberposts' => '-1');
+                  $units = get_posts($args);
+                  foreach ($units as $unit => $ID) {
+                      $title = get_the_title($ID);
+                      $search = array(" ","&amp;","&");
+                      $slug = ( str_replace($search,"-",strtolower($title)) );
+                      echo '<li><p><a href="#" class="fyp-filter-click" data-filter="' . $slug . '">' . $title . '</a></p></li>';
+                  }
+                 ?>
+               </ul>
+               <ul id="fyp-purposes-filters" class="fyp-filters">
+                 <?php
+                  $purposes_parent_terms = get_terms('purposes', array(
+                      'hide_empty' => false,
+                      'parent' => 0
+                  ));
+                  foreach ($purposes_parent_terms as $purpose) {
+                       echo '<li><p><a href="#" class="fyp-filter-click" data-filter="' . $purpose->slug . '">' . $purpose->name . '</a></p></li>';
+                  }
+                 ?>
+               </ul>
+             </div>
+           </div>
+           <div class="fyp-search-wrapper">
+              <form class="fyp-search">
+                <label class="fyp-search-label" for="fyp-search-bar"><p>Or search for specific fund:</p></label>
+                <input class="fyp-search-bar" type="search" name="fyp-search-name" value="">
+                <input type="submit" value="search" class="fyp-search-button" tabindex="0">
+              </form>
+            </div>
         </div>
       </div>
-    </div>
-    <!-- FEATURE: dynamically load the filters - Now a dropdown structure --> 
-
-    <div role="form" aria-label="Filter Results">
-    
-        <ul id="filter">
-        <li class="sort_by">
-          Filter by:
-        </li>
-        <li>
-          <a id="clear" href="#" title="Show all">
-          <svg xmlns="http://www.w3.org/2000/svg" width="35.848" height="35.794" viewBox="0 0 35.848 35.794"><circle fill="#c2c2c2" cx="17.999" cy="17.999" r="16.998"/><g fill="none"    stroke="#FFF" stroke-width="3" stroke-miterlimit="10"><path d="M11.485 24.513l13.027-13.028M24.512 24.513L11.485 11.485"/></g></svg>Show all      
-          </a>
-        </li>
-        <?php
-        	//
-            $category_parent_terms = get_terms('causes', array(
-                'hide_empty' => false,
-                'parent' => 0
-            ));
-            $priority_parent_terms = get_terms('purposes', array(
-                'hide_empty' => false,
-                'parent' => 0
-            ));
-            echo '<li class="select">' .
-                        '<label>Causes</label>' .
-                         '<select>';
-            foreach ($category_parent_terms as $parent) {
-                 echo '<option>' . $parent->name . '</option>';
-            }
-            echo '</select>        
-                       </li>
-                       <li class="select">' .
-                        '<label>Purposes</label>' .
-                         '<select>';
-            foreach ($priority_parent_terms as $parent1) {
-                 echo '<option>' . $parent1->name . '</option>';
-            }
-            echo '</select>        
-                       </li>';
-    
-            //print_r($filterneum_terms);
-            // foreach ($terms as $term) {
-            //     echo '<li>
-            //             <button data-filter=".' . $term->slug . '">' . $term->name . ' <div class="udub-slant"><span></span></div></button>        
-            //           </li>';
-            //     print_r($term);
-            // }
-        ?>
-          <li class="search_slash">
-            <a title="Search button" id="searcher" href="#">
-            <svg version="1.1" aria-hidden="true" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-               width="22.889px" height="59.075px" viewBox="0 0 22.889 59.075" enable-background="new 0 0 22.889 59.075" xml:space="preserve">
-            <path fill="#4C2E84" d="M13.676,0.294c-4.998,0-9.063,4.067-9.063,9.065c0,1.897,0.587,3.658,1.587,5.116l-5.751,5.744l2.225,2.229
-              l5.734-5.726c1.486,1.067,3.302,1.703,5.267,1.703h0.002c4.998,0,9.064-4.067,9.064-9.066C22.741,4.361,18.674,0.294,13.676,0.294z
-               M19.824,9.359c0,3.385-2.754,6.14-6.139,6.14c-3.389,0-6.147-2.754-6.149-6.14c0-3.384,2.759-6.137,6.149-6.137
-              C17.07,3.223,19.824,5.976,19.824,9.359z"/>
-            <line fill="none" stroke="#B8A678" stroke-width="3.5" stroke-miterlimit="10" x1="1.396" y1="52.409" x2="19.614" y2="34.191"/>
-            <line fill="none" stroke="#B8A678" stroke-width="3.5" stroke-miterlimit="10" x1="19.614" y1="52.409" x2="1.396" y2="34.191"/>
-            </svg>
-            </a>        
-          </li>
-        </ul>
-    
-    
-    
-        <div role="search" id="searcher_wrap">
-          <input type="text" class="quicksearch" placeholder="Start typing" />
-        </div>
-      
     </div>
 
 
@@ -191,7 +168,7 @@
 
         <!-- THE FUN PHP STUFF -->
         <?php
-        
+
         $unitcount = 1;
         foreach ( $units as $unit ) {
            //gather assets
@@ -213,14 +190,10 @@
            // }
 
            //spit out html 
-           //
-           //forTESTING
-           if($unit->post_title == 'UW Tacoma'){
-
-          
+           
            ?>
            
-            <li tabindex="0" data-name="<?php echo $unit->post_name; ?>" data-img="<?php echo $unitimageurlhigh; ?>" class="flip-container grid-item unit-item open <?php echo $unitclasses; ?>">
+            <li tabindex="0" data-name="<?php echo $unit->post_name; ?>" data-img="<?php echo $unitimageurlhigh; ?>" class="grid-item fyp-units unit-item open <?php echo $unit->post_name; ?>">
             <div class="flipper" role="button">
               <div tabindex="0" class="full-bio">
                 <h2><?php echo $unit->post_title; ?></h2>
@@ -242,11 +215,10 @@
 
 
         <?php
-            }
             $unitcount++;
         }
 
-        
+
         $fundcount = 1;
         foreach ( $funds as $fund ) {
            //gather assets
@@ -259,20 +231,26 @@
             $fundimageurl = get_stylesheet_directory_uri() . '/passion/assets/building.jpg';
             $fundimageurlhigh = get_stylesheet_directory_uri() . '/passion/assets/building.jpg';
            }
-           $short = get_post_meta($fund->ID, 'short', true);
-           $code = get_post_meta($fund->ID, 'code', true);
-           $desc = get_post_meta($fund->ID, 'desc', true);
-           $categories = wp_get_post_terms( $fund->ID, 'categories' );
-           $priorities = wp_get_post_terms( $fund->ID, 'priorities' );
+           //$short = get_post_meta($fund->ID, 'short', true);
+           //$code = get_post_meta($fund->ID, 'code', true);
+           //$desc = get_post_meta($fund->ID, 'desc', true);
+           $fundcauses = wp_get_post_terms( $fund->ID, 'causes' );
+           $fundpriorities = wp_get_post_terms( $fund->ID, 'purposes' );
+           //$fundunit = get_post_meta($fund->ID, 'unit', true);
+           
            //FEATURE: do tags also need to be classes? 
            $fundclasses = "";
-           foreach ($funds as $fund ) {
-               $fundclasses .= $fund->slug . " "; //IS SLUG A CLASS TO USE ON THIS???
+           foreach ($fundcauses as $fundcause ) {
+               $fundclasses .= $fundcause->slug . " ";
            }
+           foreach ($fundpriorities as $fundpriority ) {
+               $fundclasses .= $fundpriority->slug . " ";
+           }
+           $fundclasses .= $fund->unit . " ";
 
            //spit out html 
            ?>
-            <li tabindex="0" data-name="<?php echo $fund->post_name; ?>" data-img="<?php echo $fundimageurlhigh; ?>" class="flip-container grid-item <?php echo $fundclasses; ?>">
+            <li tabindex="0" data-name="<?php echo $fund->post_name; ?>" data-img="<?php echo $fundimageurlhigh; ?>" class="flip-container grid-item fyp-funds <?php echo $fundclasses; ?>">
             <div class="flipper" role="button">
               <div class="front" style="<?php echo 'background-image:url(' . $fundimageurl . ');'; ?> ">
               	<div class="banner">
@@ -282,26 +260,36 @@
               </div>
               <div class="back">
                 <h3><?php echo $fund->post_title; ?></h3>
-                <!-- <p><?php echo $hometown; ?></p> -->
-                <!-- <p class="major"><?php echo $major; ?></p>  -->
+                <p><?php 
+                      $args = array(
+                        'name'        => $fund->slug,
+                        'post_type'   => 'units',
+                        'post_status' => 'publish',
+                        'numberposts' => 1
+                      );
+                      $my_posts = get_posts($args);
+                      if( $my_posts ) :
+                        echo $my_posts[0]->title;
+                      endif;
+                   ?></p>
               </div>
               <div tabindex="0" class="full-bio">
                 <h2><?php echo $fund->post_title; ?>
-    <!-- INSERT LINK TO PAGE HERE??? -->
-                <?php //echo !empty($linkedin) ? '<a target="_blank" class="linkedin" href="' . $linkedin . '">LinkedIn</a>' : '' ?></h2> 
-                <!-- <div class="bio-info">
-                  <p><?php echo $hometown; ?></p>
-                  <p><?php echo $major; ?></p>                
-                  <p><?php echo $minor; ?></p>                
-                </div> -->
+                 <div class="bio-info"> 
+                  <p><?php 
+                      if( $my_posts ) :
+                        echo $my_posts[0]->title;
+                      endif;
+                  ?></p>               
+                </div>
                 <div class="bio-text">
                   <p><?php echo $fund->post_content; ?></p>
                 </div>
-                <!-- <div class="tags">
-                <?php foreach ($tags as $tag ) {
-                    echo '<a href="#">' . $tag->name . '</a>';
-                } ?>
-                </div> -->
+                <div class="tags">
+                <?php //foreach ($tags as $tag ) {
+                    //echo '<a href="#">' . $tag->name . '</a>';
+                //} ?>
+                </div>
                 <div class="give-button">
                 	<a href="#" class="give-link">Give Now</a>
                 </div>

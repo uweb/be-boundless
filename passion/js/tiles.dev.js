@@ -16,7 +16,7 @@ $(window).load(function(){
         masonry: {
           columnWidth: '.grid-sizer'
         },
-        filter: ':not(.title-card)',
+        filter: '.featured',
       });
 
       // Remove overlay once all is loaded
@@ -29,6 +29,7 @@ $(window).load(function(){
      // Fire isotope initially
      $grid.isotope();
 
+//ADJUST THIS FUNCTION FOR THE NEW SEARCH
       // use value of search field to filter
      var $quicksearch = $('.quicksearch').keyup( debounce( function() {
        qsRegex = new RegExp( $quicksearch.val(), 'gi' );
@@ -74,61 +75,63 @@ $(window).load(function(){
         var $this = $(this),
             dataCheck = $this.data('name'),
             dataName = dataCheck && '#name=' + dataCheck;
-
+        console.log("grid-on function")
         if( !$this.hasClass('open') && !$this.hasClass('special') ) {
           $('.grid-item').removeClass('open')
           $this.addClass('open');
           // Switch image
           imageSwitch($this);                           
-
+          console.log("post image switch")
           // Scroll-to portion
           scrollIt($this)
-
+          console.log("post scroll it")
           // Add data attribute 'name' to URL has
           window.location.hash = dataName;          
         } else {
           $this.removeClass('open')
+          console.log('else')
         }
-        $grid.isotope();                
+        $grid.isotope(); 
+        console.log("run blanket isotope")               
       });              
 
-      // bind filter button click
-      $filter.on( 'click', 'button', function() {
-        var filterValue = $( this ).attr('data-filter');
-        $grid.isotope({ filter: filterValue });
-      }); 
+      // // bind filter button click
+      // $filter.on( 'click', 'button', function() {
+      //   var filterValue = $( this ).attr('data-filter');
+      //   $grid.isotope({ filter: filterValue });
+      // }); 
 
-      // Clear select menus and re-isotope
-      $('#clear').on('click', function(el){
-        el.preventDefault();
-        // Clear selects, open class, and hash
-        $('select').prop('selectedIndex',0);
-        $('.grid-item').removeClass('open');
-        $filter.removeClass('select_active')
-        window.location.hash = '';          
-        $grid.isotope({ filter: ':not(.title-card)' });
-      })
+      // // Clear select menus and re-isotope
+      // $('#clear').on('click', function(el){
+      //   el.preventDefault();
+      //   // Clear selects, open class, and hash
+      //   $('select').prop('selectedIndex',0);
+      //   $('.grid-item').removeClass('open');
+      //   $filter.removeClass('select_active')
+      //   window.location.hash = '';          
+      //   $grid.isotope({ filter: ':not(.title-card)' });
+      // })
 
-      // bind filter on select change
-      $filter.on( 'change', 'select', function() {
-        // get filter value from option value
-        var filterValue = this.value;
-        $filter.addClass('select_active')
+      // // bind filter on select change
+      // $filter.on( 'change', 'select', function() {
+      //   // get filter value from option value
+      //   var filterValue = this.value;
+      //   $filter.addClass('select_active')
 
-        // use filterFn if matches value
-        filterValue = filterValue;
-        $grid.isotope({ filter: filterValue });
-      });
+      //   // use filterFn if matches value
+      //   filterValue = filterValue;
+      //   $grid.isotope({ filter: filterValue });
+      // });
 
-      // change is-checked class on buttons
-      $filter.each( function( i, buttonGroup ) {
-        var $buttonGroup = $( buttonGroup );
-        $buttonGroup.on( 'click', 'button', function() {
-          $buttonGroup.find('.is-checked').removeClass('is-checked');
-          $(this).addClass('is-checked');
-        });
-      }); 
-
+      // // change is-checked class on buttons
+      // $filter.each( function( i, buttonGroup ) {
+      //   var $buttonGroup = $( buttonGroup );
+      //   $buttonGroup.on( 'click', 'button', function() {
+      //     $buttonGroup.find('.is-checked').removeClass('is-checked');
+      //     $(this).addClass('is-checked');
+      //   });
+      // }); 
+//ADJUST THIS FUNCTION FOR NEW SEARCH FIELD
       // Search field
       $('#searcher').on('click', function(el){  
 
@@ -159,7 +162,7 @@ $(window).load(function(){
           }
       });
 
-
+//THIS FUNCTION NEEDS WORK FOR SCHOOLS TO USE
       // Open by URL hash
       if(location.hash.match(/^#name/)) {
 
@@ -196,6 +199,21 @@ $(window).load(function(){
       })
 
    //  });
+   //  
+   
+   //FYP - Reveal filters under categories
+   $('.fyp-filter-triggers').on('click', function(e){
+      $('hr').addClass('reduce');
+      $('ul.fyp-filters.show').removeClass('show');
+      $('#'+e.currentTarget.dataset.name).addClass('show');
+   })
+
+   //FYP - Click filter sorts the boxes
+   $('.fyp-filter-click').on('click', function(e){
+      var filterValue = $( this ).attr('data-filter');
+      console.log(filterValue)
+      $grid.isotope({ filter: '.' + filterValue });
+   })
 
 });  
 
