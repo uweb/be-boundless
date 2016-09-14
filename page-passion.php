@@ -274,7 +274,7 @@
                    ?></p>
               </div>
               <div tabindex="0" class="full-bio">
-                <h2><?php echo $fund->post_title; ?>
+                <h2><?php echo $fund->post_title; ?></h2>
                  <div class="bio-info"> 
                   <p><?php 
                       if( $my_posts ) :

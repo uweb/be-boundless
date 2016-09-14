@@ -75,24 +75,19 @@ $(window).load(function(){
         var $this = $(this),
             dataCheck = $this.data('name'),
             dataName = dataCheck && '#name=' + dataCheck;
-        console.log("grid-on function")
         if( !$this.hasClass('open') && !$this.hasClass('special') ) {
           $('.grid-item').removeClass('open')
           $this.addClass('open');
           // Switch image
-          imageSwitch($this);                           
-          console.log("post image switch")
+          imageSwitch($this);              
           // Scroll-to portion
           scrollIt($this)
-          console.log("post scroll it")
           // Add data attribute 'name' to URL has
           window.location.hash = dataName;          
         } else {
           $this.removeClass('open')
-          console.log('else')
         }
-        $grid.isotope(); 
-        console.log("run blanket isotope")               
+        $grid.isotope();                
       });              
 
       // // bind filter button click
