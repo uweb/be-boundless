@@ -1,5 +1,5 @@
+// Set up mobile check
 var isMobile = window.matchMedia("only screen and (max-width: 768px)"); 
-
 
 // Video player for iphone/Android/desktop
 

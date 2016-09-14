@@ -222,9 +222,7 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy">
                   
-                <p>By the end of the partnership, it was clear that the hard work paid off. Test scores rose across the school. Fifth-grade scores, in particular, saw dramatic change; the percent of students meeting                 math standards jumped from 20 percent to nearly 80. </p>
-                
-                <p>While the scores were something to celebrate, the school saw them as a byproduct of the true victory: students were learning. In fact, Lakeridge considers one of their biggest accomplishments to be                helping students who struggled the most rise from failing to near or at passing-level, a much harder leap to make in terms of learning.</p>
+                <p>By the end of the partnership, it was clear that the hard work paid off. Test scores rose across the school. Fifth-grade scores, in particular, saw dramatic change; the percent of students meeting math standards jumped from 20 percent to nearly 80. </p>
                 
                 <div class="side-pic" id="pic2">
                   <figure class="zoom-effect">
@@ -240,6 +238,8 @@
                       </div>
                   </figure>
                 </div>
+                
+                <p>While the scores were something to celebrate, the school saw them as a byproduct of the true victory: students were learning. In fact, Lakeridge considers one of their biggest accomplishments to be                helping students who struggled the most rise from failing to near or at passing-level, a much harder leap to make in terms of learning.</p>
 
                  <p>“Education opens doors for opportunity, so our goal is to keep all students’ doors open,” says Granger. “If you can change what a child thinks is possible for themself, it will change what they think they can do through education.”</p>
                  

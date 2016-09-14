@@ -28,8 +28,8 @@ $(function(){
 
     var studentpic1 = new ScrollMagic.Scene({
       triggerElement: "#pic1",
-      triggerHook: 0.4,
-      duration: '25%',
+      triggerHook: 0.7,
+      duration: '65%',
     })
     .setTween(TweenMax.from('#pic1 .pic-2', 1, { x: '100%', ease: Power0.easeIn }))
     //.addIndicators()
@@ -39,7 +39,7 @@ $(function(){
     var studentpic2 = new ScrollMagic.Scene({
       triggerElement: "#pic2",
       triggerHook: 0.6,
-      duration: '15%',
+      duration: '25%',
     })
     .setTween(TweenMax.to('#pic2 .pic-2', 1, { x: '100%', ease: Power0.easeIn }))
     //.addIndicators()
@@ -81,10 +81,7 @@ $(function(){
 
 
 
-
-
-
-  // Control video frame by scrolling: 
+  // Control video frame by scrolling for future use: 
 
    // var frameNumber = 0, // start video at frame 0
         // lower numbers = faster playback

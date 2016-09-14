@@ -65,7 +65,7 @@
           <div id="slide3text">
             <h2>FACULTY AND STAFF WHO UNITE PROMISE WITH POSSIBILITY EVERY DAY </h2>
             <p>To react to horizontal scrolls the simply needs to be initialized using the option.</p>
-            <a href="education" data-js="education" data-title="Bridging the education gap" class="uw-btn btn-sm">Learn more</a>
+            <a href="scholarship" data-js="scholarship" data-title="Making scholarships" class="uw-btn btn-sm">Learn more</a>
           </div>
           <span class="slide2-content"></span>
         </section
