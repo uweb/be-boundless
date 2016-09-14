@@ -37,6 +37,7 @@ module.exports = function(grunt) {
           'campaign/js/header.js',
           'immersive-stories/js/common.js',
           'immersive-stories/js/education.js',
+          'immersive-stories/js/scholarship.js',
           'immersive-stories/js/farmer-brown.js',
           'campaign/js/main.js',
           'immersive-stories/js/education-map.js',
@@ -68,12 +69,16 @@ module.exports = function(grunt) {
           'immersive-stories/js/common.min.js': ['immersive-stories/js/common.js'],
           'immersive-stories/js/farmer-brown.min.js': ['immersive-stories/js/farmer-brown.js'],
           'immersive-stories/js/education.min.js': [
+              'immersive-stories/js/common.js',
               'immersive-stories/js/leaflet.js',
               'immersive-stories/js/chroma.min.js',
               'immersive-stories/js/education-map.js',
               'immersive-stories/js/education.js', 
-              'immersive-stories/js/common.js',
               'immersive-stories/js/medium-lightbox.js',
+          ],          
+          'immersive-stories/js/scholarship.min.js': [
+              'immersive-stories/js/common.js',
+              'immersive-stories/js/scholarship.js',
           ],
           'campaign/js/main.min.js': [
               'campaign/js/main.js',
@@ -121,6 +126,7 @@ module.exports = function(grunt) {
                 'immersive-stories/css/common.css': 'immersive-stories/less/common.less',
                 'immersive-stories/css/farmer-brown.css': 'immersive-stories/less/farmer-brown.less',
                 'immersive-stories/css/education.css': 'immersive-stories/less/education.less',
+                'immersive-stories/css/scholarship.css': 'immersive-stories/less/scholarship.less',
                 'immersive-stories/css/education-map.css': 'immersive-stories/less/education-map.less',
                 'immersive-stories/css/leadership.css': 'immersive-stories/less/leadership.less',
                 'campaign/css/campaign-style.css': 'campaign/**/*.less',
