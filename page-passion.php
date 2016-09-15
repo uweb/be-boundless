@@ -66,9 +66,9 @@
               endwhile;
            ?>
            <div class="circle-button-container">
-             <div class="fyp-filter-triggers" data-name="fyp-causes-filters"><a href="#"><div class="circle-icon"><p class="ic-heart"></p></div><p class="circle-text">Causes</p></a></div>
-             <div class="fyp-filter-triggers" data-name="fyp-units-filters"><a href="#"><div class="circle-icon"><p class="ic-administration"></p></div><p class="circle-text">Schools, Colleges &amp; Campuses</p></a></div>
-             <div class="fyp-filter-triggers" data-name="fyp-purposes-filters"><a href="#"><div class="circle-icon"><p class="ic-tools"></p></div><p class="circle-text">Funding Purpose</p></a></div>
+             <div class="fyp-filter-triggers" data-name="fyp-causes-filters"><a href="#"><div class="circle-icon"><p class="fyp-filter-icon fyp-heart"></p></div><p class="circle-text">Causes</p></a></div>
+             <div class="fyp-filter-triggers" data-name="fyp-units-filters"><a href="#"><div class="circle-icon"><p class="fyp-filter-icon fyp-school"></p></div><p class="circle-text">Schools, Colleges &amp; Campuses</p></a></div>
+             <div class="fyp-filter-triggers" data-name="fyp-purposes-filters"><a href="#"><div class="circle-icon"><p class="fyp-filter-icon fyp-cert"></p></div><p class="circle-text">Funding Purpose</p></a></div>
              <hr align="left">
              <div id="fyp-filters-box" class="fyp-filters-box">
                <ul id="fyp-causes-filters" class="fyp-filters">

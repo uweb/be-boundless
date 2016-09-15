@@ -215,6 +215,25 @@
 #passion .module-hero-image .circle-button-container div div.circle-icon p:before {
   font-size: 120px;
 }
+#passion .module-hero-image .circle-button-container div div.circle-icon p.fyp-filter-icon:before {
+  content: "";
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin-left: 38px;
+}
+#passion .module-hero-image .circle-button-container div div.circle-icon p.fyp-heart:before {
+  background: url(../assets/heart-purple.png) no-repeat 0 0;
+  background-size: 100px 100px;
+}
+#passion .module-hero-image .circle-button-container div div.circle-icon p.fyp-school:before {
+  background: url(../assets/school-purple.png) no-repeat 0 0;
+  background-size: 100px 100px;
+}
+#passion .module-hero-image .circle-button-container div div.circle-icon p.fyp-cert:before {
+  background: url(../assets/cert-purple.png) no-repeat 0 0;
+  background-size: 100px 100px;
+}
 #passion .module-hero-image .circle-button-container div p.circle-text {
   vertical-align: top;
   margin-top: 30px;
