@@ -172,10 +172,30 @@
 #passion .row h1:after {
   pointer-events: none;
 }
+#passion .FYP-home-button {
+  display: none;
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: 80px;
+  right: 40px;
+  z-index: 999;
+}
+#passion .FYP-home-button.show {
+  display: block;
+}
+#passion .FYP-home-button:hover svg g line,
+#passion .FYP-home-button:active svg g line,
+#passion .FYP-home-button:focus svg g line {
+  stroke: #4b2e83;
+}
 #passion .module-hero-image {
   margin-top: 50px;
   height: calc(100% - 256px);
   min-height: 700px;
+}
+#passion .module-hero-image.hide {
+  display: none;
 }
 #passion .module-hero-image h1 {
   font-size: 65px;
@@ -195,6 +215,10 @@
   margin-left: -70px;
   margin-top: 50px;
 }
+#passion .module-hero-image .circle-button-container div.flip-container {
+  width: 175px;
+  position: relative;
+}
 #passion .module-hero-image .circle-button-container div {
   width: 33%;
   display: inline-block;
@@ -206,7 +230,6 @@
   behavior: url(PIE.htc);
   width: 175px;
   height: 175px;
-  background-color: #FFF;
 }
 #passion .module-hero-image .circle-button-container div div.circle-icon p {
   padding-top: 10px;
@@ -221,17 +244,43 @@
   width: 100px;
   display: block;
   margin-left: 38px;
+  margin-top: 12px;
 }
-#passion .module-hero-image .circle-button-container div div.circle-icon p.fyp-heart:before {
+#passion .module-hero-image .circle-button-container div div.circle-icon.front {
+  background-color: #FFF;
+}
+#passion .module-hero-image .circle-button-container div div.circle-icon.front p.fyp-heart:before {
   background: url(../assets/heart-purple.png) no-repeat 0 0;
   background-size: 100px 100px;
 }
-#passion .module-hero-image .circle-button-container div div.circle-icon p.fyp-school:before {
+#passion .module-hero-image .circle-button-container div div.circle-icon.front p.fyp-school:before {
   background: url(../assets/school-purple.png) no-repeat 0 0;
   background-size: 100px 100px;
+  margin-top: 5px;
 }
-#passion .module-hero-image .circle-button-container div div.circle-icon p.fyp-cert:before {
+#passion .module-hero-image .circle-button-container div div.circle-icon.front p.fyp-cert:before {
   background: url(../assets/cert-purple.png) no-repeat 0 0;
+  background-size: 100px 100px;
+}
+#passion .module-hero-image .circle-button-container div div.circle-icon.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #4b2e83;
+}
+#passion .module-hero-image .circle-button-container div div.circle-icon.back p.fyp-heart:before {
+  background: url(../assets/heart-white.png) no-repeat 0 0;
+  background-size: 100px 100px;
+}
+#passion .module-hero-image .circle-button-container div div.circle-icon.back p.fyp-school:before {
+  background: url(../assets/school-white.png) no-repeat 0 0;
+  background-size: 100px 100px;
+  margin-top: 5px;
+}
+#passion .module-hero-image .circle-button-container div div.circle-icon.back p.fyp-cert:before {
+  background: url(../assets/cert-white.png) no-repeat 0 0;
   background-size: 100px 100px;
 }
 #passion .module-hero-image .circle-button-container div p.circle-text {
@@ -293,16 +342,6 @@
 #passion .module-hero-image .circle-button-container .fyp-filters-box ul.fyp-filters li p a:active,
 #passion .module-hero-image .circle-button-container .fyp-filters-box ul.fyp-filters li p a:focus {
   color: #4b2e83;
-}
-#passion .module-hero-image .circle-button-container .fyp-filter-triggers a:hover .circle-icon,
-#passion .module-hero-image .circle-button-container .fyp-filter-triggers a:active .circle-icon,
-#passion .module-hero-image .circle-button-container .fyp-filter-triggers a:focus .circle-icon {
-  background-color: #4b2e83;
-}
-#passion .module-hero-image .circle-button-container .fyp-filter-triggers a:hover .circle-icon p:before,
-#passion .module-hero-image .circle-button-container .fyp-filter-triggers a:active .circle-icon p:before,
-#passion .module-hero-image .circle-button-container .fyp-filter-triggers a:focus .circle-icon p:before {
-  color: #FFF;
 }
 #passion .module-hero-image .circle-button-container .fyp-filter-triggers a:hover p.circle-text,
 #passion .module-hero-image .circle-button-container .fyp-filter-triggers a:active p.circle-text,
@@ -1362,7 +1401,7 @@
   }
 }
 /* entire container, keeps perspective */
-.flip-container {
+.container {
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
   perspective: 1000;

@@ -57,7 +57,7 @@
 </div>
 
 	<div class="module-hero-image" style="background-image:url('<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>')">
-      <div class="container">     
+      <div class="container">    
         <div class="row">
           <h1><?php the_title(); ?></h1>
           <?php 
@@ -66,9 +66,18 @@
               endwhile;
            ?>
            <div class="circle-button-container">
-             <div class="fyp-filter-triggers" data-name="fyp-causes-filters"><a href="#"><div class="circle-icon"><p class="fyp-filter-icon fyp-heart"></p></div><p class="circle-text">Causes</p></a></div>
-             <div class="fyp-filter-triggers" data-name="fyp-units-filters"><a href="#"><div class="circle-icon"><p class="fyp-filter-icon fyp-school"></p></div><p class="circle-text">Schools, Colleges &amp; Campuses</p></a></div>
-             <div class="fyp-filter-triggers" data-name="fyp-purposes-filters"><a href="#"><div class="circle-icon"><p class="fyp-filter-icon fyp-cert"></p></div><p class="circle-text">Funding Purpose</p></a></div>
+             <div class="fyp-filter-triggers" data-name="fyp-causes-filters"><a href="#"><div class="flip-container">
+               <div class="circle-icon front"><p class="fyp-filter-icon fyp-heart"></p></div>
+               <div class="circle-icon back"><p class="fyp-filter-icon fyp-heart"></p></div>
+             </div><p class="circle-text">Causes</p></a></div>
+             <div class="fyp-filter-triggers" data-name="fyp-units-filters"><a href="#"><div class="flip-container">
+               <div class="circle-icon front"><p class="fyp-filter-icon fyp-school"></p></div>
+               <div class="circle-icon back"><p class="fyp-filter-icon fyp-school"></p></div>
+             </div><p class="circle-text">Schools, Colleges &amp; Campuses</p></a></div>
+             <div class="fyp-filter-triggers" data-name="fyp-purposes-filters"><a href="#"><div class="flip-container">
+               <div class="circle-icon front"><p class="fyp-filter-icon fyp-cert"></p></div>
+               <div class="circle-icon back"><p class="fyp-filter-icon fyp-cert"></p></div>
+             </div><p class="circle-text">Funding Purpose</p></a></div>
              <hr align="left">
              <div id="fyp-filters-box" class="fyp-filters-box">
                <ul id="fyp-causes-filters" class="fyp-filters">
@@ -117,6 +126,16 @@
         </div>
       </div>
     </div>
+
+    <a class="FYP-home-button">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         width="46.75px" height="46.812px" viewBox="0 0 46.75 46.812" enable-background="new 0 0 46.75 46.812" xml:space="preserve">
+      <g>
+        <line fill="none" stroke="#FFF" stroke-miterlimit="10" x1="1.011" y1="1.001" x2="46.011" y2="46.001"/>
+        <line fill="none" stroke="#FFF" stroke-miterlimit="10" x1="46.011" y1="1.001" x2="1.011" y2="46.001"/>
+      </g>
+      </svg>
+    </a> 
 
 
     <!-- Add this to  ontouchstart="this.classList.toggle('hover');" -->

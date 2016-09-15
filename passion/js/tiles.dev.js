@@ -206,8 +206,15 @@ $(window).load(function(){
    //FYP - Click filter sorts the boxes
    $('.fyp-filter-click').on('click', function(e){
       var filterValue = $( this ).attr('data-filter');
-      console.log(filterValue)
+      $('.module-hero-image').addClass('hide');
+      $('.FYP-home-button').addClass('show');
       $grid.isotope({ filter: '.' + filterValue });
+   })
+
+   $('.FYP-home-button').on('click', function(e){
+      $('.module-hero-image').removeClass('hide');
+      $(this).removeClass('show');
+      $grid.isotope({ filter: '.featured' });
    })
 
 });  
