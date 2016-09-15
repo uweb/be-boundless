@@ -129,22 +129,22 @@
       <div class="bio">
         <h2>Austin Wright-Pettibone</h2>
         <div class="class"><p><b>Class of </b></p><p>'17</p></div>
-        <div><p><b>Hometown:</b> Loveland, Colorado</p></div>
+        <div><p><b>Hometown:</b> Kirkland, Washington</p></div>
         <div>
-          <p><b>Major:</b> Environment science and resource management</p>
-          <p><b>Minor:</b> Quantitative science</p>
+          <p><b>Major:</b> Chemical engineering </p>
+          <p><b>Minor:</b> Applied mathematics</p>
         </div>  
         <div>
           <p><b>Scholarships:</b></p>
           <ul>
-            <li>School of Environmental and Forest Sciences Scholarship</li>
-            <li>School of the Environment Scholarship</li>
+            <li>Bernice Frank Scholarship in Chemical Engineering</li>
+            <li>Armstrong Scholarship for Chemical Engineering</li>
+            <li>Neal and Helen Fosseen Endowed Scholarship in International Studies</li>
+            <li>Mary Frances and Frederic L. Crisman Endowed Scholarship</li>
           </ul>
         </div>
       </div>
     </section>
-
-
 
   <section class="text-block" id="section2">
       <div class="container">
@@ -221,22 +221,19 @@
       <div class="bio">
         <h2>Starla Sampaco</h2>
         <div class="class"><p><b>Class of </b></p><p>'17</p></div>
-        <div><p><b>Hometown:</b> Loveland, Colorado</p></div>
+        <div><p><b>Hometown:</b> Bellevue, Washington</p></div>
         <div>
-          <p><b>Major:</b> Environment science and resource management</p>
-          <p><b>Minor:</b> Quantitative science</p>
+          <p><b>Major:</b> Communication / Law, societies and justice </p>
         </div>  
         <div>
           <p><b>Scholarships:</b></p>
           <ul>
-            <li>School of Environmental and Forest Sciences Scholarship</li>
-            <li>School of the Environment Scholarship</li>
+            <li>The Seattle Times/Blethen Family Communications School Minority Scholarship Endowed Fund</li>
+            <li>Pioneer News Group Excellence in Journalism Award for Diversity Journalism</li>
           </ul>
         </div>
       </div>
     </section>
-
-
 
      <section class="text-block" id="section3">
          <div class="container">
@@ -309,7 +306,7 @@
        </section>
 
 
-
+    <!-- Mayowa  -->
 
     <section class="portrait-block right aina arrow">
       <div class="portrait">
@@ -318,16 +315,19 @@
       <div class="bio">
         <h2>Mayowa Aina</h2>
         <div class="class"><p><b>Class of </b></p><p>'17</p></div>
-        <div><p><b>Hometown:</b> Loveland, Colorado</p></div>
+        <div><p><b>Hometown:</b> Tacoma, Washington</p></div>
         <div>
-          <p><b>Major:</b> Environment science and resource management</p>
-          <p><b>Minor:</b> Quantitative science</p>
+          <p><b>Majors:</b> International studies / Informatics</p>
+          <p><b>Minors:</b> Music / Comparative History of Ideas</p>
         </div>  
         <div>
           <p><b>Scholarships:</b></p>
           <ul>
-            <li>School of Environmental and Forest Sciences Scholarship</li>
-            <li>School of the Environment Scholarship</li>
+            <li>UWAA Homecoming Royalty Scholarship</li>
+            <li>Scott Barker Endowed Scholarship for Excellence in Informatics</li>
+            <li>Educational Opportunities Program Merit Scholarship </li>
+            <li>Russell/Thompson Legacy Mentorship Book Scholarship</li>
+            <li>UW Undergraduate Grant</li>
           </ul>
         </div>
       </div>
@@ -366,7 +366,29 @@
 
 <p><b>I studied abroad in Peru through the Comparative History of Ideas program the summer before my junior year.</b> We learned from artists, community leaders and scholars how a post-conflict nation deals with collective memory and trauma. There was this really close relationship between the expression of art and the political things that were happening in the community, and I wanted to continue to unpack that idea in the context of my community here in Seattle. </p>
 <p><b>Through my show on Rainy Dawg Radio, I’ve explored that intersection of art and politics by interviewing local musicians, dancers, visual artists, DJs and producers.</b> I talk with them about what inspires their work, what they’re seeing in our community, and what sort of activism they’re involved in. I’m also working on an audio project called “Letters from Young Activists,” where concerned citizens can write letters to anyone or anything. The theme is “What is your vision for a more just and equitable society?” I wrote my own letter called “Dear Whiteness.” Here is an excerpt: </p>
-<p><b>I love the Husky Marching Band. I’m a total band nerd, and I’m not even going to hide it.</b> I started on piano when I was three, then picked up a clarinet in the fifth grade and continued on that all the way through my fourth year here at the UW. Through the band I met a whole bunch of people and made so many friends — if you play in the band, you’re automatically friends with other band kids wherever you go. It was a blast. </p>
+
+<div class="audio"><p class="length">0:44  <span>/ play interview</span></p>
+            <audio controls class="player">
+              <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/education/nicole-music.mp3' ?>" type="audio/mpeg">
+              <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
+              Your browser does not support HTML5 audio.
+            </audio>
+        
+            <div class="visually-hidden audio-transcript" tabindex="0">
+              <p>When it was first laid out, Jessica [Granger] just kept saying that it’ll be hands-on; you’ll be right there in the classroom coaching, and I didn’t know what that looked like. As we continued to practice, and I saw the changes in the kids’ thinking, I saw that it was really good work to do, so. I’d say I really enjoyed it. </p>
+
+              <p>It changed my thinking; I used to love reading, now I love teaching math, actually, more. And the kids learn and grow, I think, from each other, and seeing how different people solve things. And I even learn from them. I tell them every day we’re both coming to teach and learn, so I learn from them just as much as they learn from me.</p>
+            </div>
+            
+            <p class="audio-buttons">
+              <button class="audio-ctrl audio-play" tabindex="0">0:44 / PLAY INTERVIEW</button>  
+              <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
+              <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
+            </p>
+          </div>
+
+
+<p><b>I love the Husky Marching Band.</b> I’m a total band nerd, and I’m not even going to hide it. I started on piano when I was three, then picked up a clarinet in the fifth grade and continued on that all the way through my fourth year here at the UW. Through the band I met a whole bunch of people and made so many friends — if you play in the band, you’re automatically friends with other band kids wherever you go. It was a blast. </p>
 <p><b>I went to my first Black Student Union meeting my freshman year, and never stopped.</b> It was nice to be around people that look like you who just kind of get it. Last year, I was the president — there are a lot of really difficult but important topics we have to discuss about race and politics and intersectionality, and it was nice to have a space to speak freely while figuring out how to make certain decisions to best advocate for the black students on this campus. </p>
 <p><v>I really benefitted from the smaller scholarships — I think people underestimate the impact of those</v>. People want to support you in whatever you’re doing however they can, and I took advantage of those opportunities. They’ve been extremely helpful throughout my time here at the UW, and allowed me to scale back on working so I could focus on my interests.</p>
     
@@ -406,7 +428,6 @@
                   c39.419-6.868,80.18-13.972,83.504-33.472c2.939-17.202-19.732-34.35-45.979-54.197c-27.007-20.422-57.617-43.567-59.393-67.706
                   c-3.218-43.633,54.504-75.107,60.191-78.095"/>
                  </svg>
-
            </div> 
          </div>   
        </section>
@@ -421,55 +442,211 @@
        </section>
 
 
-<!--     <section class="video-block" id="video">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-10 col-md-offset-1 copy"> 
-              <h2>Aisha's story</h2>
-              <p>In addition to serving elementary schools, the College of Education supports high school students in the Road Map Region through the Dream Project. </p>
-              <p>See Aisha Ali, a graduate of Kent-Meridian High School and freshman at UW Tacoma, describe what being a <a href="http://www.uw.edu/dreamproject">Dream Project</a> mentee means to her and her family.</p>
 
-              <a class="play" href="#">Watch her story <svg aria-hidden="true" x="0px" y="0px"
-   width="14px" height="3px" viewBox="0 0 14 3" enable-background="new 0 0 14 3" xml:space="preserve">
-<rect fill="#FFFFFF" width="14" height="3"/>
-</svg></a></p>
+    <!-- Tyler  -->
 
-          </div> 
-        </div> 
-      </div>   
-      <div id="boundless-video"></div>
-      
-    </section> -->
+    <section class="portrait-block left tyler arrow">
+      <div class="portrait">
 
-
+      </div>
+      <div class="bio">
+        <h2>Tyler Valentine</h2>
+        <div class="class"><p><b>Class of </b></p><p>'18</p></div>
+        <div><p><b>Hometown:</b> Green Acres, Washington</p></div>
+        <div>
+          <p><b>Majors:</b> Applied physics / Earth and space sciences </p>
+        </div>  
+        <div>
+          <p><b>Scholarships:</b> Washington NASA Space Grant Scholarship</p>
+        </div>
+      </div>
+    </section>
 
 
 
+     <section class="text-block" id="section5">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-10 col-md-offset-1 copy padless marginless">
+                   
+                   <div class="fancy-quote grey">
+                   <svg version="1.1"  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      width="136.039px" height="126.094px" viewBox="0 0 136.039 126.094" enable-background="new 0 0 136.039 126.094"
+                      xml:space="preserve">
+                   <g>
+                     <path d="M134.07,115.062c-1.04-1.099-2.377-1.655-3.974-1.655c-2.817,0-4.332,1.514-4.508,4.501
+                       c-1.753-1.248-2.607-3.21-2.607-5.974c0-4.647,3.041-7.702,9.251-9.333c0.873-0.108,0.966-0.678,0.966-0.919
+                       c0-0.177-0.067-0.755-0.925-0.755c-2.115,0-4.567,0.801-7.291,2.384c-4.056,2.39-6.113,6.251-6.113,11.476
+                       c0,3.293,0.83,5.951,2.466,7.896c1.652,1.963,3.923,2.959,6.75,2.959c2.25,0,4.085-0.591,5.454-1.756
+                       c1.385-1.181,2.087-2.76,2.087-4.697C135.628,117.546,135.104,116.158,134.07,115.062z"/>
+                     <path d="M110.08,113.407c-2.818,0-4.333,1.514-4.509,4.503c-1.752-1.245-2.606-3.18-2.606-5.892c0-3.402,1.342-5.841,4.096-7.454
+                       c1.091-0.598,2.845-1.263,5.155-1.962c0.873-0.108,0.967-0.678,0.967-0.919c0-0.177-0.067-0.755-0.925-0.755
+                       c-2.116,0-4.568,0.803-7.292,2.384c-4.056,2.39-6.113,6.251-6.113,11.476c0,3.294,0.83,5.951,2.466,7.896
+                       c1.651,1.963,3.922,2.959,6.75,2.959c2.25,0,4.085-0.591,5.454-1.756c1.385-1.181,2.087-2.76,2.087-4.697
+                       c0-1.7-0.511-3.103-1.517-4.17C113.083,113.95,111.732,113.407,110.08,113.407z"/>
+                   </g>
+                   <circle cx="7.115" cy="7.066" r="6.01"/>
+                   <polyline fill="none" stroke="#000000" stroke-width="1.3538" stroke-miterlimit="10" points="6.979,7.749 6.979,116.071 
+                     100.411,116.071 "/>
+                   </svg>
+                     <h3>I read ‘Cosmos’ by Carl Sagan, and that got me super into planetary science and piqued my interest in space exploration. I love researching space, science and technology, and I love sharing that with others.”</h3>
 
-    <section class="text-block">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-10 col-md-offset-1 copy">
+                 </div>
 
-<p>“We wanted to develop a culture of learning where teachers felt confident and supported,” says Kazemi. She knew that investing in adult learning would lead to higher-quality learning and improved test scores for students. </p>
+<p><b>I asked for a chemistry set for my birthday every year until I turned 16.</b> I never got one! I grew up in a lower-middle-class family, and the only science I really got to practice at home was cooking — cooking is chemistry. But then I took a physics class, and that got me going on the hard physical sciences. I started to teach myself about astronomy and astrophysics, got super interested in planetary science and space exploration, and now I’m obsessed.</p>
+<p><b>I’m part of the Advanced Propulsion Lab, where we work on electric propulsion for cubesats, or small satellites.</b> I’m also a member of the UW CubeSat team. We’re currently designing a small satellite that we’ll be sending up to space in 2017 — we’re testing a communication system and a plasma propulsion system, and my job is to predict when the satellite will pass over Seattle in orbit. </p>
+<p><b>I’m a Washington NASA Space Grant scholar, and this year we’re launching an RSO called SPACE (Scholars Pursuing Academic Celestial Exploration), a community built around research and outreach opportunities to increase the number of minority students in earth and space sciences.</b> We do rocketry showcases around the Pacific Northwest where kids can build their own model rockets and get a mini tour of the solar system — the goal is to encourage curiosity. </p>
+<p><b>I’m really into planetary science and space exploration in general, but my main passion is asteroid mining.</b> The idea is that you can go to an asteroid, latch on a spacecraft, and then extract a bunch of resources from it. My dream is to start my own asteroid mining company after pursuing a Ph.D. in space science and technology. </p>
+<p><b>I transferred to the UW my freshman year with the help of scholarship support, which alleviates so much stress.</b> I was working part-time while going to school full-time and participating in research, which meant I couldn’t fully devote my energy to my studies or my research. Now I can focus on what I really love to do. </p>
 
-<p>Kazemi worked closely with UW Bothell Associate Professor Allison Hintz and several graduate students to come up with a plan. The team proposed that the teachers come together for full-day, immersive sessions known as Math Labs. Teachers would gather in the school’s conference room to learn and practice new strategies, then head to an actual class to try out the lesson — as a team — with students. </p>
+    
+
+                 </div> 
+ 
+                 <svg version="1.1" aria-hidden="true" class="svgTransforms" id="svg-planet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/                xlink" x="0px" y="0px"
+                    width="887px" height="430px" viewBox="0 0 887 430" enable-background="new 0 0 887 430" xml:space="preserve">
+                 <circle fill="none" stroke="#E8E4D3" stroke-width="8" stroke-miterlimit="10" cx="442.917" cy="216.48" r="195.31"/>
+                 <path fill="none" stroke="#E8E4D3" stroke-width="8" stroke-miterlimit="10" d="M637.609,188.294
+                   c111.42,40.408,182.566,86.812,175.204,120.753c-10.85,50.012-188.062,54.02-395.813,8.95S49.627,195.849,60.477,145.836
+                   c7.567-34.882,96.062-47.384,219.401-36.465"/>
+                 <path fill="none" stroke="#E8E4D3" stroke-width="8" stroke-miterlimit="10" d="M632.067,173.941
+                   c154.779,52.119,254.645,118.58,243.654,169.237c-14.404,66.403-218.668,78.454-456.234,26.917
+                   C181.922,318.558,1.015,222.947,15.42,156.544c10.522-48.502,118.557-69.394,270.653-56.302"/>
+                 <path fill="none" stroke="#E8E4D3" stroke-width="8" stroke-miterlimit="10" d="M640.447,208.734
+                   c68.495,29.738,109.456,61.15,104.232,85.229c-9.282,42.789-160.897,46.217-338.643,7.657S91.727,197.115,101.009,154.326
+                   c6.128-28.248,74.285-39.342,171.039-32.526"/>
+                 </svg>
+
+           </div> 
+         </div>   
+       </section>
 
 
-<p>“Giving and receiving feedback is invaluable in terms of growing professionally,” says Kazemi, but typically, “teachers don’t have ways of making what they’re doing in the classroom more visible to each other, something we aimed to change.”</p>
+       <section data-vid="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/scholarship/tyler' ?>" class='video-auto'>
+         <video loop muted autoplay poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/poster-tyler.jpg' ?>" class="autovid">
+             <source class="mp4" type="video/mp4">
+             <source class="webm" type="video/webm">
+         </video>
+         <button class="pause">Pause</button>
+       </section>
 
-<p>As the teachers embraced the changes, their students equally adapted, devouring lessons like they never had before. </p>
+
+    <!-- Veronica  -->
+
+    <section class="portrait-block right veronica arrow">
+      <div class="portrait">
+
+      </div>
+      <div class="bio">
+        <h2>Veronica Guenther</h2>
+        <div class="class"><p><b>Class of </b></p><p>'17</p></div>
+        <div><p><b>Hometown:</b>  Woodinville, Washington</p></div>
+        <div>
+          <p><b>Majors:</b> Economics / Community, environment and planning </p>
+        </div>  
+        <div>
+          <p><b>Scholarships:</b> CoMotion Mary Gates Innovation Scholarship</p>
+        </div>
+      </div>
+    </section>
 
 
 
-<p>“You could see a huge shift in their understanding of math,” says Kert Lin, a fourth-grade teacher at Lakeridge and College of Education alumnus. “I think what’s made it so successful is that we provide kids with tools to show off what they’re learning. You can’t be in an environment like that and not have fun.” </p>
+     <section class="text-block" id="section6">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-10 col-md-offset-1 copy padless marginless">
+                   
+                   <div class="fancy-quote grey">
+                   <svg version="1.1"  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      width="136.039px" height="126.094px" viewBox="0 0 136.039 126.094" enable-background="new 0 0 136.039 126.094"
+                      xml:space="preserve">
+                   <g>
+                     <path d="M134.07,115.062c-1.04-1.099-2.377-1.655-3.974-1.655c-2.817,0-4.332,1.514-4.508,4.501
+                       c-1.753-1.248-2.607-3.21-2.607-5.974c0-4.647,3.041-7.702,9.251-9.333c0.873-0.108,0.966-0.678,0.966-0.919
+                       c0-0.177-0.067-0.755-0.925-0.755c-2.115,0-4.567,0.801-7.291,2.384c-4.056,2.39-6.113,6.251-6.113,11.476
+                       c0,3.293,0.83,5.951,2.466,7.896c1.652,1.963,3.923,2.959,6.75,2.959c2.25,0,4.085-0.591,5.454-1.756
+                       c1.385-1.181,2.087-2.76,2.087-4.697C135.628,117.546,135.104,116.158,134.07,115.062z"/>
+                     <path d="M110.08,113.407c-2.818,0-4.333,1.514-4.509,4.503c-1.752-1.245-2.606-3.18-2.606-5.892c0-3.402,1.342-5.841,4.096-7.454
+                       c1.091-0.598,2.845-1.263,5.155-1.962c0.873-0.108,0.967-0.678,0.967-0.919c0-0.177-0.067-0.755-0.925-0.755
+                       c-2.116,0-4.568,0.803-7.292,2.384c-4.056,2.39-6.113,6.251-6.113,11.476c0,3.294,0.83,5.951,2.466,7.896
+                       c1.651,1.963,3.922,2.959,6.75,2.959c2.25,0,4.085-0.591,5.454-1.756c1.385-1.181,2.087-2.76,2.087-4.697
+                       c0-1.7-0.511-3.103-1.517-4.17C113.083,113.95,111.732,113.407,110.08,113.407z"/>
+                   </g>
+                   <circle cx="7.115" cy="7.066" r="6.01"/>
+                   <polyline fill="none" stroke="#000000" stroke-width="1.3538" stroke-miterlimit="10" points="6.979,7.749 6.979,116.071 
+                     100.411,116.071 "/>
+                   </svg>
+                     <h3>It’s so meaningful to help other students make their vision for a more environmentally conscious campus become a reality. They get to see their idea actually implemented, and then carry the leadership skills they’ve acquired along the way far beyond the UW.” </h3>
 
-        
+                 </div>
 
-                  </div> 
-            </div> 
-          </div>   
-     </section>
+<p><b>I’ve always been excited about the sustainability movement.</b> Given the impending impacts of climate change, we’re at a critical time where we need to change the way our society interacts with the environment. Sustainability is all about meeting the needs of the present generation without compromising the ability of future generations to meet their needs. </p>
+<p><b>I’m interested in using economic tools and community-empowering practices to promote a more sustainable society.</b> I’d love to see more businesses realize that integrating sustainability into long-term business strategy isn’t just about social responsibility, but about long-term economic viability, too. </p>
+<p><b>The UW Campus Sustainability Fund is a student-run, student-funded grant organization that supports student-led sustainability projects.</b> Since our founding in 2010, we’ve funded over 80 projects around campus. My job as the outreach coordinator is to continually seek out new departments and student groups to engage with sustainability, then help promote their work on campus. </p>
+<p><b>I participated in Urban@UW’s NextSeattle: Innovating for Urban Social Challenges workshop,</b> where I was placed on an interdisciplinary team and charged with developing and pitching a solution for a better Seattle. My team won first place — and a scholarship — for our proposal for a homeless youth career center called JobBox. </p>
+<p><b>The big takeaway from NextSeattle was that the best decisions are made when all the voices in a room get heard.</b> In creating this program, we really leveraged our capacity as a cross-disciplinary group. Not only did each UW team member make their own uniquely valuable contribution to the proposal, but we also made the extra effort to seek out and listen to the experiences of homeless youth in the community. It was rewarding to earn the scholarship because it reaffirmed that an inclusive process is important in problem solving, especially in issues of social equity. </p>
+
+
+                 </div> 
+
+
+                 <svg version="1.1" class="svgTransforms" id="svg-bike" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   width="687px" height="418px" viewBox="0 0 687 418" enable-background="new 0 0 687 418" xml:space="preserve">
+                 <g>
+                  <g>
+                    <g>
+                      <g>
+                        <path fill="#E8E4D3" d="M548.176,284.564L432.385,59.657l3.266-3.897c4.073-4.886,14.809-21.037,10.773-30.718
+                          c-0.323-0.774-0.79-1.388-2.033-1.864c-6.844-2.618-22.095,2.749-28.426,5.754l-6.559-13.824
+                          c2.6-1.23,25.775-11.85,40.467-6.215c4.981,1.913,8.674,5.461,10.679,10.264c6.601,15.844-4.188,34.131-10.021,42.32
+                          L561.777,277.56L548.176,284.564z"/>
+                      </g>
+                      <g>
+                        <path fill="#E8E4D3" d="M361.13,288.328l-246.397-0.49l95.871-159.066l257.222-33.691l25.265,49.06L361.13,288.328z
+                           M141.788,272.591l212.619,0.423l120.199-131.34l-15.459-30.024l-239.249,31.336L141.788,272.591z"/>
+                      </g>
+                      <g>
+                        
+                          <rect x="171.433" y="200.558" transform="matrix(0.4631 0.8863 -0.8863 0.4631 320.4067 -112.4802)" fill="#E8E4D3" width="163.212" height="15.301"/>
+                      </g>
+                      <g>
+                        <path fill="#E8E4D3" d="M554.733,403.466c-67.492-0.134-122.295-55.154-122.162-122.647
+                          c0.135-67.492,55.155-122.295,122.647-122.161c67.494,0.134,122.297,55.155,122.162,122.648
+                          C677.247,348.798,622.226,403.601,554.733,403.466z M555.18,179.059c-56.248-0.112-102.096,45.555-102.207,101.801
+                          c-0.111,56.246,45.555,102.094,101.802,102.206c56.246,0.112,102.094-45.554,102.206-101.8
+                          C657.091,225.019,611.425,179.171,555.18,179.059z"/>
+                      </g>
+                      <g>
+                        <path fill="#E8E4D3" d="M128.018,402.619C60.525,402.484,5.723,347.464,5.857,279.972
+                          c0.133-67.492,55.153-122.295,122.646-122.161c67.494,0.134,122.296,55.154,122.162,122.647
+                          C250.53,347.951,195.509,402.754,128.018,402.619z M128.463,178.211C72.216,178.1,26.37,223.766,26.257,280.012
+                          c-0.111,56.247,45.555,102.095,101.801,102.206c56.247,0.112,102.095-45.554,102.206-101.801
+                          C230.375,224.171,184.709,178.323,128.463,178.211z"/>
+                      </g>
+                      <circle fill="#E8E4D3" cx="553.908" cy="284.246" r="27.413"/>
+                      <circle fill="#E8E4D3" cx="128.256" cy="283.4" r="27.414"/>
+                      
+                        <ellipse transform="matrix(1 0.002 -0.002 1 0.2079 -0.3977)" fill="#E8E4D3" cx="199.802" cy="104.224" rx="28.688" ry="11.727"/>
+                      <circle fill="#E8E4D3" cx="333.291" cy="286.315" r="29.921"/>
+                    </g>
+                  </g>
+                 </g>
+                 </svg>
+
+           </div> 
+         </div>   
+       </section>
+
+
+       <section data-vid="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/scholarship/aina' ?>" class='video-auto'>
+         <video loop muted autoplay poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/poster-aina.jpg' ?>" class="autovid">
+             <source class="mp4" type="video/mp4">
+             <source class="webm" type="video/webm">
+         </video>
+         <button class="pause">Pause</button>
+       </section>
+
 
 
 </main>

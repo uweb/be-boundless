@@ -290,6 +290,16 @@ p {
             .portrait {
                 background-image: url("@{scholarship}/aina-mobile.jpg");
             }
+        } 
+        &.tyler {
+            .portrait {
+                background-image: url("@{scholarship}/tyler-mobile.jpg");
+            }
+        }  
+        &.veronica {
+            .portrait {
+                background-image: url("@{scholarship}/veronica-mobile.jpg");
+            }
         }  
     }    
     @media(min-width:768px) {
@@ -319,6 +329,17 @@ p {
         &.aina {
             .portrait {
                 background-image: url("@{scholarship}/aina.jpg");
+            }
+        }  
+
+        &.tyler {
+            .portrait {
+                background-image: url("@{scholarship}/tyler.jpg");
+            }
+        }  
+        &.veronica {
+            .portrait {
+                background-image: url("@{scholarship}/veronica.jpg");
             }
         }  
     }
@@ -384,6 +405,18 @@ p {
             stroke: @purple;
         }
     }
+    &.grey {
+        h3 {
+            color: @darkgray;
+        }
+        circle,
+        path {
+            fill: @darkgray;
+        }
+        polyline {
+            stroke: @darkgray;
+        }
+    }
     &.light-gold {
         h3 {
             color: @darkgold;
@@ -409,6 +442,13 @@ p {
         }    
     }
 
+}
+
+// Audio player overwrite
+
+div.audio {
+    margin: 40px 0 70px 0;
+    background-color: rgba(0, 0, 0, 0.5)
 }
 
 
@@ -848,175 +888,7 @@ button.close-video {
 
 
 
-.profile {
-    background-position: right center;
-    background-color: #DEDDDD;
-    padding: 250px 70px 20px;
-    width: 70%;
-    margin: 50px auto;
-    overflow: hidden;
-    p, h2 {        
-        z-index: 1;
-        position: relative;
-    }
-    h2.name {        
-        color: @purple;
-        text-transform: uppercase;
-        font-family: @uni;
-        font-weight: 900;
-        font-size: 20px;
-        display: inline-block;
-        margin-bottom: 5px;
-        span {
-            color: @lightgold;
-            font-size: 20px;
-            display: block;
-        }
-    }
-    p.studies {
-        font-family: @uni;
-        font-weight: bold;
-        display: block;
-        font-size: 19px;
-        margin-top: -5px;
-        margin-bottom: 5px;
-        color: @darkgold;        
-        // font-weight: bold;
-        text-transform: uppercase;
 
-    }
-    &.right {
-        text-align: right;
-        background-position: top left;
-        p.quotes {   
-            &:before,
-            &:after {
-                right: -70px;
-                left: auto;
-            }
-        }
-        div.audio.active-audio .audio-buttons {
-            left: auto;
-            right: 0;
-        }
-    }
-
-    @media(min-width:768px) {
-        padding: 150px 110px;  
-        position: relative;
-        & > div.skew {
-            .skew(-15deg,0);
-            position: absolute;
-            top: 0;
-            width: 52%;
-            bottom: 0;
-            overflow: hidden;
-            left: -100px;
-            background-color: rgba(185, 162, 122, .25);
-            div {
-                .skew(15deg,0);
-                position: absolute;
-                top: 0;
-                right: -350px;
-                left: 0;
-                bottom: 0;
-            }
-        } 
-        h2.name {
-            font-size: 45px;
-        }
-        p.studies {
-            &.light {
-                color: #808080;
-                text-shadow: none;
-            }
-        }
-        &.active {
-            p.quotes {
-                .translate(0;0);
-                opacity: 1;
-                span {
-                    .translate(0;0);
-                }
-                &:before,
-                &:after {
-                    opacity: 1;
-                }
-            }
-        }
-        
-        &.right {
-            & > div.skew {
-                left: auto;
-                right: -100px;
-                div {                    
-                    right: 0;
-                    left: -350px;                    
-                }
-            }
-        }
-        &.person-1 {
-            background-image: url("@{education}/kert-light.jpg");
-            .background-cover(cover);
-        }
-        &.person-2 {
-            background-image: url("@{education}/nicole-light.jpg");
-            .background-cover(cover);
-        }
-        &.person-3 {
-            background-image: url("@{education}/**-light.jpg");
-            .background-cover(cover);
-        }
-        &.person-4 {
-            background-image: url("@{education}/aina-light.jpg");
-            .background-cover(cover);
-        }
-    }
-
-    @media(max-width:1200px) {
-        width: 100%;
-        h2.name {
-            font-size: 31px;
-        }
-    }
-    @media(max-width:768px) {
-        padding: 80% 40px 20px;        
-        background-color: #6D6D6D;
-        background-size: 100%;
-        h2.name {
-            font-size: 30px;
-            line-height: 28px;
-            color: @lightgold;
-            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
-        }
-        p.studies {
-            font-size: 16px;
-            line-height: 18px;
-            color: white;
-            margin-top: 5px;
-        }
-        &.person-1 {
-            background-image: url("@{education}/kert-mobile.jpg");
-            background-repeat: no-repeat;
-            background-position: center top;
-        }
-        &.person-2 {
-            background-image: url("@{education}/nicole-mobile.jpg");
-            background-repeat: no-repeat;
-            background-position: center top;
-        }
-        &.person-3 {
-            background-image: url("@{education}/**-mobile.jpg");
-            background-repeat: no-repeat;
-            background-position: center top;
-        }
-        &.person-4 {
-            background-image: url("@{education}/aina-mobile.jpg");
-            background-repeat: no-repeat;
-            background-position: center top;
-        }
-    }
-}
 
 // Auto play videos 
 .video-auto {
