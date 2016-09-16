@@ -25,7 +25,7 @@ $(function(){
       triggerHook: 0.7,
       duration: '100%',
     })
-    .setTween(TweenMax.to('#svg-tree', 1, { y: '-100%', ease: Power0.easeIn }))
+    .setTween(TweenMax.to('#svg-tree', 1, { y: '-20%', ease: Power0.easeIn }))
     //.addIndicators()
     .addTo(controllerScholarship);
 
@@ -34,7 +34,7 @@ $(function(){
       triggerHook: 0.7,
       duration: '100%',
     })
-    .setTween(TweenMax.to('#svg-tube', 1, { y: '-100%', ease: Power0.easeIn }))
+    .setTween(TweenMax.to('#svg-tube', 1, { y: '-20%', ease: Power0.easeIn }))
     //.addIndicators()
     .addTo(controllerScholarship);
 
@@ -43,7 +43,7 @@ $(function(){
       triggerHook: 0.7,
       duration: '100%',
     })
-    .setTween(TweenMax.to('#svg-mic', 1, { y: '-100%', ease: Power0.easeIn }))
+    .setTween(TweenMax.to('#svg-mic', 1, { y: '-20%', ease: Power0.easeIn }))
     //.addIndicators()
     .addTo(controllerScholarship);
 
@@ -52,7 +52,7 @@ $(function(){
       triggerHook: 0.7,
       duration: '100%',
     })
-    .setTween(TweenMax.to('#svg-cord', 1, { y: '-100%', ease: Power0.easeIn }))
+    .setTween(TweenMax.to('#svg-cord', 1, { y: '-20%', ease: Power0.easeIn }))
     //.addIndicators()
     .addTo(controllerScholarship);
 
@@ -61,7 +61,7 @@ $(function(){
       triggerHook: 0.7,
       duration: '100%',
     })
-    .setTween(TweenMax.to('#svg-planet', 1, { y: '-100%', ease: Power0.easeIn }))
+    .setTween(TweenMax.to('#svg-planet', 1, { y: '-20%', ease: Power0.easeIn }))
     //.addIndicators()
     .addTo(controllerScholarship);
 
@@ -70,7 +70,7 @@ $(function(){
       triggerHook: 0.7,
       duration: '100%',
     })
-    .setTween(TweenMax.to('#svg-bike', 1, { y: '-100%', ease: Power0.easeIn }))
+    .setTween(TweenMax.to('#svg-bike', 1, { y: '-20%', ease: Power0.easeIn }))
     //.addIndicators()
     .addTo(controllerScholarship);
 
@@ -86,6 +86,8 @@ $(function(){
 
     // In order to toggle current section, 
 
+
+    
 
 
     function videoAdder(el, $el){
@@ -132,6 +134,17 @@ $(function(){
         .reverse(false)
         .addTo(controllerScholarship);
     })
+
+    // Scroll-to photos at the bottom
+    $('.scrollPic').on('click', function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $('#' + e.currentTarget.getAttribute('href')).offset().top - 90
+          }, {
+            duration: 1000
+        });
+    });
+
 
 
 

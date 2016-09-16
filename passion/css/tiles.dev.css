@@ -331,7 +331,7 @@
   z-index: 1;
 }
 #passion .grid {
-  background: url(../assets/stripes.svg) #e8e8e8;
+  background: url(../assets/stripes.svg) #E8E8E8;
 }
 #passion .full-bio {
   display: none;
@@ -773,6 +773,8 @@
     width: calc(100%);
   }
 }
+@media only screen and (max-width: 320px) {
+}
 #passion .grid-item.special {
   background-color: #4b2e83;
   box-sizing: border-box;
@@ -1023,8 +1025,8 @@
 }
 #passion #searcher:focus {
   border: 1px solid #4D90FE;
-  -webkit-box-shadow: 0px 0px 5px #4d90fe;
-  box-shadow: 0px 0px 5px #4d90fe;
+  -webkit-box-shadow: 0px 0px 5px #4D90FE;
+  box-shadow: 0px 0px 5px #4D90FE;
 }
 #passion div#searcher_wrap {
   text-align: center;

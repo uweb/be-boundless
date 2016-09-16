@@ -187,13 +187,13 @@ p {
         padding: 100px;
         div {
             border: 3px solid white;
-            margin-top: -3px;
+            border-bottom: none;
             padding: 10px 20px;
             &.class {
-                display: inline-block;
-                padding: 0;
+                display: block;
+                width: 145px;
                 overflow-x: hidden;
-                margin-bottom: -8px;
+                padding: 0;
                 b {
                     display: inline-block;
                     .skew(15deg, 0);
@@ -250,6 +250,7 @@ p {
             padding: 0px 40px 70px;
             div {
                 border: 3px solid @purple;
+                border-bottom: none;
                 &.class {
                     margin-bottom: 0;
                     p {
@@ -444,6 +445,113 @@ p {
 
 }
 
+
+// Dot navigation 
+
+#dot-nav {
+    position: fixed;
+    z-index: 9999;
+    right: 30px;
+    top: 50%;
+    .translate(0, -50%);
+    li {
+        display: block;
+        margin-bottom: 10px;
+        a {
+            // text-indent: 100%;
+            // white-space: nowrap;
+            // overflow: hidden;
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            .border-radius(100%);
+            .transition(all .1s linear);
+            border: 2px solid rgba(0, 0, 0, 0.25);
+            svg {
+                opacity: 0;
+                height: auto;
+                position: absolute;
+                width: 14px;
+                left: 50%;
+                margin-left: -7px;
+                top: 50%;
+                margin-top: -8px;
+            }
+            &.active,
+            &:hover,
+            &:focus,
+            &:active {
+                margin-bottom: 30px;
+                margin-top: 30px;
+                .scale(2.7,2.7);
+                border:.5px solid white;
+                svg {
+                    opacity: 1;
+                }
+            }
+        }
+        &:nth-child(1) a {
+            background-color: @lightgold;
+        }
+        &:nth-child(2) a {
+            background-color: @ultralightgold;
+        }
+        // &:nth-child(3) a {
+        //     background-color: @lightgold;
+        // }
+        &:nth-child(4) a {
+            background-color: @purple;
+        }
+        &:nth-child(5) a {
+            background-color: @darkgray;
+        }
+        &:nth-child(6) a {
+            background-color: @gray;
+        }
+    }
+}
+
+
+// Scroll to story navigation
+
+
+
+#scrollPics {
+    padding: 100px 0;
+    width: 50%;
+    margin: 0 auto;
+    li {
+        list-style: none;
+        width: 32%;
+        display: inline-block;
+        a {
+            img {
+                .transition(transform .1s linear);
+            }
+            &:hover {
+                img {
+                    .scale(1.05,1.05);
+                    transform-origin: center center;
+                }
+            }
+            img {
+                border-top: 5px solid white;
+                border-left: 5px solid white;
+                border-bottom: 5px solid white;
+            }
+        }
+        
+    }
+    @media(max-width:768px) {
+        display: none;
+    }
+}
+
+
+
+
+
 // Audio player overwrite
 
 div.audio {
@@ -471,7 +579,7 @@ div.audio {
     top: 0;
     opacity: .5;
     z-index: -1;
-    .translate(0, 100%);
+    .translate(0, 20%);
 }
 
 
@@ -852,7 +960,7 @@ button.close-video {
         iframe {
             width: 120%;
             margin: 40px -10% 40px;
-            height: 538px !important;
+            height: auto;
         }
     }
     @media(min-width:768px) {

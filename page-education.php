@@ -50,7 +50,7 @@
 
 
 
-<section class="text-block">
+    <section class="text-block">
       <div class="container">
           <div class="row">
               <div class="col-md-10 col-md-offset-1 copy">
@@ -126,21 +126,19 @@
 
 
 
-    <section class="text-block">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-10 col-md-offset-1 copy">
-                    
+        <section class="text-block">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-10 col-md-offset-1 copy">
 
-<p>That same year, communities from seven school districts in South Seattle and south King County — including Lakeridge’s Renton School District — joined together and with many other organizational partners, including the College of Education, to launch the <a href="http://www.roadmapproject.org/">Road Map Project</a>, a program aimed at closing achievement gaps and making access to a quality education more equitable throughout the region. </p>
-<p>“We know that many of our students come from homes where English isn’t the first language, where there’s poverty and transiency,” explains Jessica Granger, Lakeridge principal from 2011 to 2016. “They face more challenges than the average child, but that can’t be an excuse. You can’t blame children.”</p>
-<p>With math selected as a subject in marked need of improvement, Granger was soon in contact with <a href="https://education.uw.edu/people/faculty/ekazemi">Elham Kazemi</a> at the UW College of Education. Kazemi, the Geda and Phil Condit professor in math and science education, had previously worked with other schools on professional development, but knew that for Lakeridge an intense — and unprecedented — partnership would be needed.</p>  
+                      <p>That same year, communities from seven school districts in South Seattle and south King County — including Lakeridge’s Renton School District — joined together and with many other organizational partners, including the College of Education, to launch the <a href="http://www.roadmapproject.org/">Road Map Project</a>, a program aimed at closing achievement gaps and making access to a quality education more equitable throughout the region. </p>
+                      <p>“We know that many of our students come from homes where English isn’t the first language, where there’s poverty and transiency,” explains Jessica Granger, Lakeridge principal from 2011 to 2016. “They face more challenges than the average child, but that can’t be an excuse. You can’t blame children.”</p>
+                      <p>With math selected as a subject in marked need of improvement, Granger was soon in contact with <a href="https://education.uw.edu/people/faculty/ekazemi">Elham Kazemi</a> at the UW College of Education. Kazemi, the Geda and Phil Condit professor in math and science education, had previously worked with other schools on professional development, but knew that for Lakeridge an intense — and unprecedented — partnership would be needed.</p>  
 
-
-                  </div> 
-            </div> 
-          </div>   
-     </section>
+                      </div> 
+                </div> 
+              </div>   
+         </section>
 
 
 
