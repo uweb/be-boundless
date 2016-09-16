@@ -24,6 +24,7 @@
 
   .row {
     height: 100%;
+    padding-left: 40px;
     h1:after {
       pointer-events: none;
     }
@@ -76,14 +77,14 @@
       }
       .circle-button-container {
         width: 85%;
-        margin-left: -70px;
-        margin-top: 50px;
+        margin: 50px 0 0 -70px;
+        display: inline-block;
         div.flip-container {
           width: 175px;
           position: relative;
         }
         div{
-          width: 33%;
+          width: 32%;
           display: inline-block;
           vertical-align: top;
           text-align: center;
@@ -629,19 +630,16 @@
       &.open ,
       .fyp-units {
         .the-width ( 2, 2 );
-        height: 4.5*@tileHeight;
+        height: 2.5*@tileHeight;
         .front {
-          position: static;
-          width: 100%;
-          height: 350px;
-          background-position: center top;        
+          display: none;        
         }
         .full-bio {
           position: static;
           width: 100%;
           margin-left: 0;
           padding: 40px 45px 50px;
-          height: 595px;
+          height: 495px;
         }
         &.unit-item div.full-bio {
           margin-right: 0;  
@@ -1181,17 +1179,41 @@
 
 }
 @media only screen and (max-width : 1200px) {
-
+  #passion .module-hero-image .circle-button-container {
+     width: 100%;
+  }
 }
 
 @media only screen and (max-width : 992px) {
 
-  #husky100 { 
-    .welcome-intro {
-      .col-md-8 {
-        padding: 60px 50px 0 50px;
-      }
+  #passion .module-hero-image {
+    h1 {
+      margin-top: 20px;
     }
+    .circle-button-container {
+       margin-left: 0;
+       hr {
+        margin-left: 0;
+        width: 95%;
+        &.reduce {
+          margin-left: 0;
+          width: 95%;
+        }
+       }
+       .fyp-filters-box {
+          margin: 0;
+        }
+    }
+  }
+
+  #passion .FYP-home-button.show {
+    top: 60px;
+    right: -10px;
+    svg g line{
+      stroke: #4b2e83;
+    }
+  }
+
     
         
     .module-hero-image {
@@ -1202,13 +1224,47 @@
       }
       .container:after { display: none; }
     }
-    
-
-  }  
 
 }
 
 @media only screen and (max-width : 768px) {
+  #passion .module-hero-image {
+    .row {
+      padding-left: 0;
+      h1 {
+        font-size: 40px;
+      }
+      .fyp-filter-triggers {
+        .flip-container {
+          width: 125px;
+          .circle-icon {
+            width: 125px; 
+            height: 125px;
+            p.fyp-filter-icon:before {
+              background-size: 70px 70px;
+              margin: 0 0 0 27px;
+            } 
+            p.fyp-school:before {
+              margin: -5px 0 0 27px;
+            }  
+          }
+        }
+        .circle-text {
+          font-size: 18px;
+        }
+      }
+      .fyp-filters-box .fyp-filters {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+      }
+    }
+  }
+
+
+
+
+
   #husky100 {    
     .search_slash:before {
       display: none;
@@ -1310,8 +1366,50 @@
 }
 
 @media only screen and (max-width : 480px) {
-  #husky100 {
-       
+  #passion .module-hero-image .row{
+    .circle-button-container {
+      margin-top: 5px;
+      .fyp-filter-triggers {
+          display: block;
+          width: 100%;
+          height: 110px;
+          .flip-container {
+            width: 100px;
+            position: absolute;
+            left: 0;
+            .circle-icon {
+              width: 100px; 
+              height: 100px;
+              p.fyp-filter-icon:before {
+                background-size: 60px 60px;
+                margin: -6px 0 0 21px;
+              } 
+              p.fyp-school:before {
+               margin-top: -10px;
+              }  
+            }
+          }
+          .circle-text {
+            font-size: 17px;
+            margin-left: 110px;
+            text-align: left;
+            width: 160px;
+            display: inline-block;
+            margin-top: 37px;
+          }
+      }
+      hr {
+        margin-top: 10px;
+      }
+      .fyp-filters-box .fyp-filters {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+      }
+    }
+    .fyp-search-wrapper .fyp-search-bar{
+      width: auto;
+    }
   }
 }
 
