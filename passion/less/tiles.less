@@ -28,11 +28,38 @@
       pointer-events: none;
     }
   }
+
+  .FYP-home-button {
+    display: none;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    // background: url(../assets/x.svg) no-repeat 0 0;
+    // background-size: 70px 70px;
+    z-index: 999;
+    &.show {
+      display: block;
+    }
+    &:hover,
+    &:active,
+    &:focus  {
+      svg g line{
+        stroke: #4b2e83;
+      }
+      
+    }
+
+  }
       
   .module-hero-image {
       margin-top: 50px;
       height: calc(~"100% - 256px");
       min-height: 700px;
+      &.hide {
+        display: none;
+      }
       // background-position: center 50px;
       h1 {   
         font-size: 65px; 
@@ -51,6 +78,10 @@
         width: 85%;
         margin-left: -70px;
         margin-top: 50px;
+        div.flip-container {
+          width: 175px;
+          position: relative;
+        }
         div{
           width: 33%;
           display: inline-block;
@@ -61,7 +92,6 @@
             behavior: url(PIE.htc); //IE8
             width: 175px;
             height: 175px;
-            background-color: #FFF;
             //margin-right: 140px;
             p {
                 padding-top: 10px;
@@ -69,6 +99,51 @@
                 &:before {
                   font-size: 120px;
                 }
+            }
+            p.fyp-filter-icon:before {
+              content: "";
+              height: 100px;
+              width: 100px;
+              display: block;
+              margin-left: 38px;
+              margin-top: 12px;
+            }
+            &.front {
+              background-color: #FFF;
+              p.fyp-heart:before {
+                background: url(../assets/heart-purple.png) no-repeat 0 0;
+                background-size: 100px 100px;
+              }
+              p.fyp-school:before {
+                background: url(../assets/school-purple.png) no-repeat 0 0;
+                background-size: 100px 100px;
+                margin-top: 5px;
+              }
+              p.fyp-cert:before {
+                background: url(../assets/cert-purple.png) no-repeat 0 0;
+                background-size: 100px 100px;
+              }
+            }
+            &.back {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-color: #4b2e83;
+              p.fyp-heart:before {
+                background: url(../assets/heart-white.png) no-repeat 0 0;
+                background-size: 100px 100px;
+              }
+              p.fyp-school:before {
+                background: url(../assets/school-white.png) no-repeat 0 0;
+                background-size: 100px 100px;
+                margin-top: 5px;
+              }
+              p.fyp-cert:before {
+                background: url(../assets/cert-white.png) no-repeat 0 0;
+                background-size: 100px 100px;
+              }
             }
           }
           p.circle-text {
@@ -136,12 +211,6 @@
           a:hover,
           a:active,
           a:focus  {
-            .circle-icon {
-              background-color: #4b2e83;
-              p:before {
-                color: #FFF;
-              }
-            }
             p.circle-text {
               color: #4b2e83;
             }
@@ -1274,7 +1343,7 @@
 
 
 /* entire container, keeps perspective */
-.flip-container {
+.container {
   .perspective(1000);
 }
 

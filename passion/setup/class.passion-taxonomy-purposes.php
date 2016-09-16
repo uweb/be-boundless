@@ -47,6 +47,15 @@ if (!taxonomy_exists('purposes')):
 	        <input type="text" name="term_meta[purpose_id]" id="term_meta[purpose_id]" size="25" style="width:60%;" value="<?php echo $term_meta['purpose_id'] ? $term_meta['purpose_id'] : ''; ?>"><br />  
 	        <span class="description"><?php _e('This name will be what displays in the tag cloud of the funds.'); ?></span></br></br>  
 	    </td>  
+	</tr> 
+	<tr class="form-field">  
+	    <th scope="row" valign="top">  
+	        <label for="purpose_image"><?php _e('Image Url'); ?></label>  
+	    </th>  
+	    <td>  
+	        <input type="text" name="term_meta[purpose_image]" id="term_meta[purpose_image]" size="25" style="width:60%;" value="<?php echo $term_meta['purpose_image'] ? $term_meta['purpose_image'] : ''; ?>"><br />  
+	        <span class="description"><?php _e('This image will be used as a featured image.'); ?></span></br></br>  
+	    </td>  
 	</tr>  
 	  
 	<?php  
