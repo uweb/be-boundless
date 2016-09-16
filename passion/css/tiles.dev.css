@@ -168,6 +168,7 @@
 }
 #passion .row {
   height: 100%;
+  padding-left: 40px;
 }
 #passion .row h1:after {
   pointer-events: none;
@@ -191,8 +192,8 @@
 }
 #passion .module-hero-image {
   margin-top: 50px;
-  height: calc(100% - 256px);
-  min-height: 700px;
+  height: auto;
+  padding-bottom: 50px;
 }
 #passion .module-hero-image.hide {
   display: none;
@@ -212,15 +213,15 @@
 }
 #passion .module-hero-image .circle-button-container {
   width: 85%;
-  margin-left: -70px;
-  margin-top: 50px;
+  margin: 50px 0 0 -70px;
+  display: inline-block;
 }
 #passion .module-hero-image .circle-button-container div.flip-container {
   width: 175px;
   position: relative;
 }
 #passion .module-hero-image .circle-button-container div {
-  width: 33%;
+  width: 32%;
   display: inline-block;
   vertical-align: top;
   text-align: center;
@@ -301,7 +302,7 @@
   color: #FFF;
   background-color: #FFF;
   width: 85%;
-  margin: 50px 0 50px 70px;
+  margin: 50px 0 0 70px;
   vertical-align: middle;
 }
 #passion .module-hero-image .circle-button-container hr.reduce {
@@ -701,7 +702,7 @@
   #passion .grid-item.fyp-units.unit-item div.front {
     position: static;
     width: 100%;
-    height: 350px;
+    height: 263px;
     background-position: center top;
   }
   #passion .grid-sizer.open.unit-item div.front:before,
@@ -748,16 +749,13 @@
   #passion .grid-sizer .fyp-units,
   #passion .grid-item .fyp-units {
     width: calc(100%);
-    height: 945px;
+    height: 525px;
   }
   #passion .grid-sizer.open .front,
   #passion .grid-item.open .front,
   #passion .grid-sizer .fyp-units .front,
   #passion .grid-item .fyp-units .front {
-    position: static;
-    width: 100%;
-    height: 350px;
-    background-position: center top;
+    display: none;
   }
   #passion .grid-sizer.open .full-bio,
   #passion .grid-item.open .full-bio,
@@ -767,7 +765,7 @@
     width: 100%;
     margin-left: 0;
     padding: 40px 45px 50px;
-    height: 595px;
+    height: 495px;
   }
   #passion .grid-sizer.open.unit-item div.full-bio,
   #passion .grid-item.open.unit-item div.full-bio,
@@ -1270,22 +1268,76 @@
 #passion .headlines h3 {
   font-size: 25px;
 }
-@media only screen and (max-width: 992px) {
-  #husky100 .welcome-intro .col-md-8 {
-    padding: 60px 50px 0 50px;
+@media only screen and (max-width: 1200px) {
+  #passion .module-hero-image .circle-button-container {
+    width: 100%;
   }
-  #husky100 .module-hero-image {
+}
+@media only screen and (max-width: 992px) {
+  #passion .module-hero-image h1 {
+    margin-top: 20px;
+  }
+  #passion .module-hero-image .circle-button-container {
+    margin-left: 0;
+  }
+  #passion .module-hero-image .circle-button-container hr {
+    margin-left: 0;
+    width: 95%;
+  }
+  #passion .module-hero-image .circle-button-container hr.reduce {
+    margin-left: 0;
+    width: 95%;
+  }
+  #passion .module-hero-image .circle-button-container .fyp-filters-box {
+    margin: 0;
+  }
+  #passion .FYP-home-button.show {
+    top: 60px;
+    right: -10px;
+  }
+  #passion .FYP-home-button.show svg g line {
+    stroke: #4b2e83;
+  }
+  .module-hero-image {
     height: auto;
     padding: 40px 20px 50px 20px;
   }
-  #husky100 .module-hero-image .udub-slant {
+  .module-hero-image .udub-slant {
     margin: 15px 0 0 0;
   }
-  #husky100 .module-hero-image .container:after {
+  .module-hero-image .container:after {
     display: none;
   }
 }
 @media only screen and (max-width: 768px) {
+  #passion .module-hero-image .row {
+    padding-left: 0;
+  }
+  #passion .module-hero-image .row h1 {
+    font-size: 40px;
+  }
+  #passion .module-hero-image .row .fyp-filter-triggers .flip-container {
+    width: 125px;
+  }
+  #passion .module-hero-image .row .fyp-filter-triggers .flip-container .circle-icon {
+    width: 125px;
+    height: 125px;
+  }
+  #passion .module-hero-image .row .fyp-filter-triggers .flip-container .circle-icon p.fyp-filter-icon:before {
+    background-size: 70px 70px;
+    margin: 0 0 0 27px;
+  }
+  #passion .module-hero-image .row .fyp-filter-triggers .flip-container .circle-icon p.fyp-school:before {
+    margin: -5px 0 0 27px;
+  }
+  #passion .module-hero-image .row .fyp-filter-triggers .circle-text {
+    font-size: 18px;
+  }
+  #passion .module-hero-image .row .fyp-filters-box .fyp-filters {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
   #husky100 .search_slash:before {
     display: none;
   }
@@ -1384,6 +1436,51 @@
   }
   #husky100 div#searcher_wrap.active_search {
     height: 70px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #passion .module-hero-image .row .circle-button-container {
+    margin-top: 5px;
+  }
+  #passion .module-hero-image .row .circle-button-container .fyp-filter-triggers {
+    display: block;
+    width: 100%;
+    height: 110px;
+  }
+  #passion .module-hero-image .row .circle-button-container .fyp-filter-triggers .flip-container {
+    width: 100px;
+    position: absolute;
+    left: 0;
+  }
+  #passion .module-hero-image .row .circle-button-container .fyp-filter-triggers .flip-container .circle-icon {
+    width: 100px;
+    height: 100px;
+  }
+  #passion .module-hero-image .row .circle-button-container .fyp-filter-triggers .flip-container .circle-icon p.fyp-filter-icon:before {
+    background-size: 60px 60px;
+    margin: -6px 0 0 21px;
+  }
+  #passion .module-hero-image .row .circle-button-container .fyp-filter-triggers .flip-container .circle-icon p.fyp-school:before {
+    margin-top: -10px;
+  }
+  #passion .module-hero-image .row .circle-button-container .fyp-filter-triggers .circle-text {
+    font-size: 17px;
+    margin-left: 110px;
+    text-align: left;
+    width: 160px;
+    display: inline-block;
+    margin-top: 37px;
+  }
+  #passion .module-hero-image .row .circle-button-container hr {
+    margin-top: 10px;
+  }
+  #passion .module-hero-image .row .circle-button-container .fyp-filters-box .fyp-filters {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+  #passion .module-hero-image .row .fyp-search-wrapper .fyp-search-bar {
+    width: auto;
   }
 }
 @media only screen and (min-width: 481px) {
