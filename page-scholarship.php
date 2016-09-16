@@ -18,7 +18,7 @@
 </div>
 
 <ul id="dot-nav">
-  <li><a title="Anthony Martinez" href="#"><!--  -->
+  <li><a title="Anthony Martinez" href="#anthony"><!--  -->
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          width="47.741px" height="47.727px" viewBox="0 0 47.741 47.727" enable-background="new 0 0 47.741 47.727" xml:space="preserve">
       <polygon fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" points="26.446,44.043 21.675,44.043 21.675,37.333 
@@ -27,7 +27,7 @@
       </svg>
     </a>         
   </li>
-  <li><a title="Austin Wright-Pettibone" href="#">
+  <li><a title="Austin Wright-Pettibone" href="#pettibone">
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          width="47.741px" height="47.727px" viewBox="0 0 47.741 47.727" enable-background="new 0 0 47.741 47.727" xml:space="preserve">
       <path fill="none" stroke="#4B2E83" stroke-width="2" stroke-miterlimit="10" d="M23.812,9.385c-1.377,0-2.677-0.193-3.662-0.545
@@ -47,7 +47,7 @@
       </svg>
     
   </a></li>
-  <li><a title="Starla Sampaco" href="#">
+  <li><a title="Starla Sampaco" href="#starla">
 
   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
      width="47.741px" height="47.727px" viewBox="0 0 47.741 47.727" enable-background="new 0 0 47.741 47.727" xml:space="preserve">
@@ -64,7 +64,7 @@
 
 
   </a></li>
-  <li><a title="Mayowa Aina" href="#">
+  <li><a title="Mayowa Aina" href="#aina">
     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        width="47.741px" height="47.727px" viewBox="0 0 47.741 47.727" enable-background="new 0 0 47.741 47.727" xml:space="preserve">
     <path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M40.939,28.583c0.273-1.286,0.465-2.581,0.571-3.853
@@ -79,7 +79,7 @@
       C43.987,31.813,42.825,29.747,40.939,28.583z"/>
     </svg> 
   </a></li>
-  <li><a title="Tyler Valentine" href="#">
+  <li><a title="Tyler Valentine" href="#tyler">
     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        width="47.741px" height="47.727px" viewBox="0 0 47.741 47.727" enable-background="new 0 0 47.741 47.727" xml:space="preserve">
     <path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M45.623,33.682c-0.54-0.746-1.396-1.524-2.542-2.312
@@ -100,7 +100,7 @@
 
 
   </a></li>
-  <li><a title="Veronica Guenther" href="#">
+  <li><a title="Veronica Guenther" href="#veronica">
     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        width="47.741px" height="47.727px" viewBox="0 0 47.741 47.727" enable-background="new 0 0 47.741 47.727" xml:space="preserve">
     <g>
@@ -151,7 +151,7 @@
       </div>   
     </section>
 
-
+<div class="person">
     <section id="anthony" class="portrait-block left anthony arrow">
       <div class="portrait">
 
@@ -231,7 +231,11 @@
         </video>
         <button class="pause">Pause</button>
       </section>
-   
+</div>
+
+
+
+<div class="person">
 
     <section id="pettibone" class="portrait-block right austin arrow">
       <div class="portrait">
@@ -323,8 +327,10 @@
       <button class="pause">Pause</button>
     </section>
 
+</div>
 
 
+<div class="person">
     <section id="starla" class="portrait-block right starla arrow">
       <div class="portrait">
 
@@ -415,7 +421,10 @@
          </video>
          <button class="pause">Pause</button>
        </section>
+</div>
 
+
+<div class="person">
 
     <!-- Mayowa  -->
 
@@ -478,7 +487,8 @@
 <p><b>I studied abroad in Peru through the Comparative History of Ideas program the summer before my junior year.</b> We learned from artists, community leaders and scholars how a post-conflict nation deals with collective memory and trauma. There was this really close relationship between the expression of art and the political things that were happening in the community, and I wanted to continue to unpack that idea in the context of my community here in Seattle. </p>
 <p><b>Through my show on Rainy Dawg Radio, I’ve explored that intersection of art and politics by interviewing local musicians, dancers, visual artists, DJs and producers.</b> I talk with them about what inspires their work, what they’re seeing in our community, and what sort of activism they’re involved in. I’m also working on an audio project called “Letters from Young Activists,” where concerned citizens can write letters to anyone or anything. The theme is “What is your vision for a more just and equitable society?” I wrote my own letter called “Dear Whiteness.” Here is an excerpt: </p>
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/250711755&amp;color=4b2e83&show_artwork=false"></iframe>
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/283209472&amp;color=4b2e83&show_artwork=false&show_user=false&show_bpm=false"></iframe>
+
 
 <p><b>I love the Husky Marching Band.</b> I’m a total band nerd, and I’m not even going to hide it. I started on piano when I was three, then picked up a clarinet in the fifth grade and continued on that all the way through my fourth year here at the UW. Through the band I met a whole bunch of people and made so many friends — if you play in the band, you’re automatically friends with other band kids wherever you go. It was a blast. </p>
 <p><b>I went to my first Black Student Union meeting my freshman year, and never stopped.</b> It was nice to be around people that look like you who just kind of get it. Last year, I was the president — there are a lot of really difficult but important topics we have to discuss about race and politics and intersectionality, and it was nice to have a space to speak freely while figuring out how to make certain decisions to best advocate for the black students on this campus. </p>
@@ -533,7 +543,10 @@
          <button class="pause">Pause</button>
        </section>
 
+</div>
 
+
+<div class="person">
 
     <!-- Tyler  -->
 
@@ -622,6 +635,10 @@
          <button class="pause">Pause</button>
        </section>
 
+</div>
+
+
+<div class="person">
 
     <!-- Veronica  -->
 
@@ -738,22 +755,15 @@
          </video>
          <button class="pause">Pause</button>
        </section>
-
+</div>
         
-      
-  
-
-
-
-
-
         <ul id="scrollPics">
-          <li><a href="anthony" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-anthony.jpg' ?>"></a></li>
-          <li><a href="pettibone" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-pettibone.jpg' ?>"></a></li>
-          <li><a href="starla" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-starla.jpg' ?>"></a></li>
-          <li><a href="aina" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-aina.jpg' ?>"></a></li>
-          <li><a href="tyler" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-tyler.jpg' ?>"></a></li>
-          <li><a href="veronica" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-veronica.jpg' ?>"></a></li>
+          <li><a href="#anthony" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-anthony.jpg' ?>"></a></li>
+          <li><a href="#pettibone" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-pettibone.jpg' ?>"></a></li>
+          <li><a href="#starla" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-starla.jpg' ?>"></a></li>
+          <li><a href="#aina" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-aina.jpg' ?>"></a></li>
+          <li><a href="#tyler" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-tyler.jpg' ?>"></a></li>
+          <li><a href="#veronica" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-veronica.jpg' ?>"></a></li>
         </ul>
 
 
