@@ -2,25 +2,6 @@ $(function(){
 
     var controllerScholarship = new ScrollMagic.Controller()
 
-
-    // // build scenes
-    // var schoolZoom = new ScrollMagic.Scene({
-    //     triggerElement: ".school-zoom",
-    //     triggerHook: 0.45,
-    //     duration: "100%",
-    //   })
-    //   .setTween(zoomMap)
-    //   // .on("progress", function (event) {
-    //   //      window.requestAnimationFrame(function(){
-    //   //       scollPlay(event.progress * 10)
-    //   //      })
-    //   //      console.log(event.progress * 10)
-    //   // })
-    //   // .setPin(".school-zoom")
-    //   // .addIndicators()
-    //   .addTo(controllerScholarship);
-
-
     var svg1 = new ScrollMagic.Scene({
       triggerElement: "#section1",
       triggerHook: 0.7,
@@ -76,6 +57,19 @@ $(function(){
     .addTo(controllerScholarship);
 
 
+    // Video player
+    var videoTriggerScholarhip = new ScrollMagic.Scene({
+      triggerElement: '#video',
+      triggerHook: 1
+    })
+    .on("start", function(){
+      videoPlay("https://www.youtube.com/embed/l3SLvfzwVkU?autoplay=1&rel=0&amp;showinfo=0&amp");
+    })
+    .reverse(false)
+    .addTo(controllerScholarship);
+
+
+
     // In order to toggle current section, 
     $('.person').each(function(index,element){
         var dotToggle = new ScrollMagic.Scene({
@@ -118,11 +112,7 @@ $(function(){
     }
 
 
-    // Ducktype elements into an array
-    var videoArray = [];
-    [].push.apply(videoArray,document.getElementsByClassName('video-auto'))
-
-    videoArray.forEach(function(element){
+    $('.video-auto').each(function(index,element){
         var $this = $(element);
         var that = element;
         var videoAutoTrigger = new ScrollMagic.Scene({
