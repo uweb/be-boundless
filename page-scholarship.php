@@ -18,12 +18,12 @@
 </div>
 
 <ul id="dot-nav">
-  <li><a title="Anthony Martinez" href="#anthony"><span></span></a></li>
-  <li><a title="Austin Wright-Pettibone" href="#pettibone"><span></span></a></li>
-  <li><a title="Starla Sampaco" href="#starla"><span></span></a></li>
-  <li><a title="Mayowa Aina" href="#aina"><span></span></a></li>
-  <li><a title="Tyler Valentine" href="#tyler"><span></span></a></li>
-  <li><a title="Veronica Guenther" href="#veronica"><span></span></a></li>
+  <li data-tooltip="Aspiring Forest fixer"><a title="Anthony Martinez" href="#anthony"><span></span></a></li>
+  <li data-tooltip="Student advocate"><a title="Austin Wright-Pettibone" href="#pettibone"><span></span></a></li>
+  <li data-tooltip="Impassioned journalist"><a title="Starla Sampaco" href="#starla"><span></span></a></li>
+  <li data-tooltip="Artist-meets-activist"><a title="Mayowa Aina" href="#aina"><span></span></a></li>
+  <li data-tooltip="Self-proclaimed space geek"><a title="Tyler Valentine" href="#tyler"><span></span></a></li>
+  <li data-tooltip="Sustainability evangelist"><a title="Veronica Guenther" href="#veronica"><span></span></a></li>
 </ul>
 
 <main id="main_content">

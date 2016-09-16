@@ -7,7 +7,7 @@ $(function(){
       triggerHook: 0.7,
       duration: '100%',
     })
-    .setTween(TweenMax.to('#svg-tree', 1, { y: '-20%', ease: Power0.easeIn }))
+    .setTween(TweenMax.to('#svg-tree', 1, { y: '-40%', ease: Power0.easeIn }))
     //.addIndicators()
     .addTo(controllerScholarship);
 
@@ -16,7 +16,7 @@ $(function(){
       triggerHook: 0.7,
       duration: '100%',
     })
-    .setTween(TweenMax.to('#svg-tube', 1, { y: '-20%', ease: Power0.easeIn }))
+    .setTween(TweenMax.to('#svg-tube', 1, { y: '-40%', ease: Power0.easeIn }))
     //.addIndicators()
     .addTo(controllerScholarship);
 
@@ -25,7 +25,7 @@ $(function(){
       triggerHook: 0.7,
       duration: '100%',
     })
-    .setTween(TweenMax.to('#svg-mic', 1, { y: '-20%', ease: Power0.easeIn }))
+    .setTween(TweenMax.to('#svg-mic', 1, { y: '-40%', ease: Power0.easeIn }))
     //.addIndicators()
     .addTo(controllerScholarship);
 
@@ -34,7 +34,7 @@ $(function(){
       triggerHook: 0.7,
       duration: '100%',
     })
-    .setTween(TweenMax.to('#svg-cord', 1, { y: '-20%', ease: Power0.easeIn }))
+    .setTween(TweenMax.to('#svg-cord', 1, { y: '-40%', ease: Power0.easeIn }))
     //.addIndicators()
     .addTo(controllerScholarship);
 
@@ -43,7 +43,7 @@ $(function(){
       triggerHook: 0.7,
       duration: '100%',
     })
-    .setTween(TweenMax.to('#svg-planet', 1, { y: '-20%', ease: Power0.easeIn }))
+    .setTween(TweenMax.to('#svg-planet', 1, { y: '-40%', ease: Power0.easeIn }))
     //.addIndicators()
     .addTo(controllerScholarship);
 
@@ -52,7 +52,7 @@ $(function(){
       triggerHook: 0.7,
       duration: '100%',
     })
-    .setTween(TweenMax.to('#svg-bike', 1, { y: '-20%', ease: Power0.easeIn }))
+    .setTween(TweenMax.to('#svg-bike', 1, { y: '-40%', ease: Power0.easeIn }))
     //.addIndicators()
     .addTo(controllerScholarship);
 
