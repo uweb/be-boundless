@@ -137,7 +137,7 @@
       </g>
       </svg>
     </a> 
-    
+
 
 
     <!-- Add this to  ontouchstart="this.classList.toggle('hover');" -->
@@ -214,6 +214,24 @@
             $search = array(" ","&amp;","&");
             $slug = ( str_replace($search,"-",strtolower($unit->post_title)) );
 
+            //get all funds alloc codes
+            $fundargs = array(
+               'post_type' => 'funds',
+               'meta_query' => array(
+                   array(
+                       'key' => 'unit',
+                       'value' => $slug,
+                       'compare' => '=',
+                   )
+               )
+            );
+            $unitquery = new WP_Query($fundargs);
+            $unitcodes = "";
+            foreach ($unitquery->posts as $uq) {
+              $unitcodes .= get_post_meta($uq->ID, 'code', true) . ",";
+            }
+            
+
            //spit out html 
            
            
@@ -228,7 +246,7 @@
                   <p><?php echo apply_filters('the_content', $unit->post_content); ?></p>
                 </div>
                 <div class="give-button">
-                  <a href="#" class="give-link">Give Now</a> 
+                  <a href="#" class="give-link" data-code="<?php echo $unitcodes; ?>">Give Now</a> 
                 </div>
               </div>
               <div class="front" style="<?php echo 'background-image:url(' . $unitimageurlhigh . ');'; ?> "></div>

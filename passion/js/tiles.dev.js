@@ -196,8 +196,10 @@ $(window).load(function(){
    //  });
    //  
    
+   
    //FYP - Reveal filters under categories
    $('.fyp-filter-triggers').on('click', function(e){
+      e.preventDefault();
       $('hr').addClass('reduce');
       $('ul.fyp-filters.show').removeClass('show');
       $('#'+e.currentTarget.dataset.name).addClass('show');
@@ -205,6 +207,7 @@ $(window).load(function(){
 
    //FYP - Click filter sorts the boxes
    $('.fyp-filter-click').on('click', function(e){
+      e.preventDefault();
       var filterValue = $( this ).attr('data-filter');
       $('.module-hero-image').addClass('hide');
       $('.FYP-home-button').addClass('show');
@@ -213,13 +216,15 @@ $(window).load(function(){
    })
 
    $('.FYP-home-button').on('click', function(e){
+      e.preventDefault();
       $('.module-hero-image').removeClass('hide');
-      $(this).removeClass('show');
+      $('.FYP-home-button').removeClass('show');
       $('.fyp-close-button-gradient').removeClass('show');
       $grid.isotope({ filter: '.featured' });
    })
 
    $('.give-link').on('click', function(e){
+      e.preventDefault();
       var allocCode = $( this ).attr('data-code');
       $('.FYP-home-button').removeClass('show');
       $('body').prepend('<div class="fyp-give-widget-container">' +
@@ -228,6 +233,8 @@ $(window).load(function(){
                         '<a class="FYP-give-widget-exit show"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.75px" height="46.812px" viewBox="0 0 46.75 46.812" enable-background="new 0 0 46.75 46.812" xml:space="preserve"><g><line fill="none" stroke="#FFF" stroke-miterlimit="10" x1="1.011" y1="1.001" x2="46.011" y2="46.001"/><line fill="none" stroke="#FFF" stroke-miterlimit="10" x1="46.011" y1="1.001" x2="1.011" y2="46.001"/></g></svg></a>');
 
       $('.FYP-give-widget-exit').on('click', function(e){
+          e.preventDefault();
+          $('.FYP-give-widget-exit').removeClass('show');
           $('.FYP-home-button').addClass('show');
           $('.fyp-give-widget-container').remove();
        });
