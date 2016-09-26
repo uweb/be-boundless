@@ -207,21 +207,26 @@
            // foreach ($units as $unit ) {
            //     $unitclasses .= $unit->slug . " "; //IS SLUG A CLASS TO USE ON THIS???
            // }
+          //
+           //get the slug
+            $search = array(" ","&amp;","&");
+            $slug = ( str_replace($search,"-",strtolower($unit->post_title)) );
 
            //spit out html 
            
+           
            ?>
            
-            <li tabindex="0" data-name="<?php echo $unit->post_name; ?>" data-img="<?php echo $unitimageurlhigh; ?>" class="grid-item fyp-units unit-item open <?php echo $unit->post_name; ?>">
+            <li tabindex="0" data-name="<?php echo $slug; ?>" data-img="<?php echo $unitimageurlhigh; ?>" class="grid-item fyp-units unit-item open <?php echo $slug; ?>">
             <div class="flipper" role="button">
               <div tabindex="0" class="full-bio">
                 <h2><?php echo $unit->post_title; ?></h2>
                     <!-- INSERT LINK TO PAGE HERE??? -->
                 <div class="bio-text">
-                  <p><?php echo $unit->post_content; ?></p>
+                  <p><?php echo apply_filters('the_content', $unit->post_content); ?></p>
                 </div>
                 <div class="give-button">
-                  <a href="#" class="give-link">Give Now</a>
+                  <a href="#" class="give-link">Give Now</a> 
                 </div>
               </div>
               <div class="front" style="<?php echo 'background-image:url(' . $unitimageurlhigh . ');'; ?> "></div>
@@ -274,35 +279,24 @@
               <div class="front" style="<?php echo 'background-image:url(' . $fundimageurl . ');'; ?> ">
               	<div class="banner">
               		<?php echo $fund->short; ?>
-              		<p class="short-desc"><?php echo $fund->desc; ?></p>
               	</div> 
               </div>
               <div class="back">
                 <h3><?php echo $fund->post_title; ?></h3>
-                <p><?php 
-                      $args = array(
-                        'name'        => $fund->slug,
-                        'post_type'   => 'units',
-                        'post_status' => 'publish',
-                        'numberposts' => 1
-                      );
-                      $my_posts = get_posts($args);
-                      if( $my_posts ) :
-                        echo $my_posts[0]->title;
-                      endif;
-                   ?></p>
+                <p class="short-desc"><?php echo $fund->desc; ?></p>
               </div>
               <div tabindex="0" class="full-bio">
                 <h2><?php echo $fund->post_title; ?></h2>
                  <div class="bio-info"> 
                   <p><?php 
-                      if( $my_posts ) :
-                        echo $my_posts[0]->title;
-                      endif;
+                      $search = array(" ","&amp;","&");
+                      $unslug = str_replace("---"," &amp; ",$fund->unit);
+                      $unslug = str_replace("-"," ",$unslug);
+                      echo '<a href="#" class="fyp-filter-click" data-filter="' . $fund->unit . '">' . $unslug . '</a>';
                   ?></p>               
                 </div>
                 <div class="bio-text">
-                  <p><?php echo $fund->post_content; ?></p>
+                  <p><?php echo apply_filters('the_content', $fund->post_content); ?></p>
                 </div>
                 <div class="tags">
                 <?php //foreach ($tags as $tag ) {
@@ -310,7 +304,7 @@
                 //} ?>
                 </div>
                 <div class="give-button">
-                	<a href="#" class="give-link">Give Now</a>
+                	<a href="#" class="give-link" data-code="<?php echo $fund->code; ?>">Give Now</a>
                 </div>
               </div>
             </div>
