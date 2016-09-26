@@ -400,7 +400,7 @@
                  </div>
 
 <p><b>I studied abroad in Peru through the Comparative History of Ideas program the summer before my junior year.</b> We learned from artists, community leaders and scholars how a post-conflict nation deals with collective memory and trauma. There was this really close relationship between the expression of art and the political things that were happening in the community, and I wanted to continue to unpack that idea in the context of my community here in Seattle. </p>
-<p><b>Through my show on Rainy Dawg Radio, I’ve explored that intersection of art and politics by interviewing local musicians, dancers, visual artists, DJs and producers.</b> I talk with them about what inspires their work, what they’re seeing in our community, and what sort of activism they’re involved in. I’m also working on an audio project called “Letters from Young Activists,” where concerned citizens can write letters to anyone or anything. The theme is “What is your vision for a more just and equitable society?” I wrote my own letter called “Dear Whiteness.” Here is an excerpt: </p>
+<p><b>Through my show on Rainy Dawg Radio, I’ve explored that intersection of art and politics by interviewing local musicians, dancers, visual artists, DJs and producers.</b> I talk with them about what inspires their work, what they’re seeing in our community, and what sort of activism they’re involved in. I’m also working on an audio project called “Letters from Young Activists,” where concerned citizens can write letters to anyone or anything. The theme is “What is your vision for a more just and equitable society?” I wrote my own letter called “Dear Whiteness.” Here's an excerpt: </p>
 
 <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/283209472&amp;color=4b2e83&show_artwork=false&show_user=false&show_bpm=false"></iframe>
 
@@ -663,8 +663,8 @@
        </section>
 
 
-       <section data-vid="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/scholarship/aina' ?>" class='video-auto'>
-         <video loop muted autoplay poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/poster-aina.jpg' ?>" class="autovid">
+       <section data-vid="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/scholarship/veronica' ?>" class='video-auto'>
+         <video loop muted autoplay poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/poster-veronica.jpg' ?>" class="autovid">
              <source class="mp4" type="video/mp4">
              <source class="webm" type="video/webm">
          </video>
