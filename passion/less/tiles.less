@@ -409,11 +409,11 @@
 
     }
   }
-  // .grid-item.open {
+  // .grid-item.open:not(.unit-small) {
   //   cursor: url(../assets/x.svg), auto;
   // }
 
-  .open ,
+  .open:not(.unit-small) ,
   .fyp-units {
       .full-bio{
         display: block;
@@ -466,12 +466,12 @@
       .the-width ( 2, 5 );
       background-color: white;  
       height: 2*@tileHeight;
-      &.open ,
+      &.open:not(.unit-small) ,
       &.fyp-units {
         height: 3*@tileHeight;
       }
     }
-    &.open ,
+    &.open:not(.unit-small) ,
     &.fyp-units {
       .the-width ( 5, 5 );
       height: 3*@tileHeight;
@@ -509,7 +509,7 @@
         .the-width ( 2, 4 ); 
         height: 2*@tileHeight;
       }      
-      &.open ,
+      &.open:not(.unit-small) ,
       &.fyp-units {
         .the-width ( 4, 4 );
         .front {
@@ -610,7 +610,7 @@
         .the-width ( 2, 3 ); 
         //height: 420px;
       }
-      &.open ,
+      &.open:not(.unit-small) ,
       &.fyp-units {
         .the-width ( 3, 3 );
         .front {
@@ -654,7 +654,7 @@
         .the-width ( 2, 2 ); 
         height: 2*@tileHeight;
       }      
-      &.open ,
+      &.open:not(.unit-small) ,
       .fyp-units {
         .the-width ( 2, 2 );
         height: 2.5*@tileHeight;
@@ -694,7 +694,7 @@
         .the-width ( 1, 1 ); 
         height: 12*@tileHeight/7;
       }
-      &.open ,
+      &.open:not(.unit-small) ,
       .fyp-units {
         .the-width ( 1, 1 );
         height: 4.5*@tileHeight;
@@ -816,7 +816,7 @@
     p {
       opacity: 0;
     }
-    &.open .front ,
+    &.open:not(.unit-small) .front ,
     &.fyp-units .front {
       width: 100%;
     }
@@ -988,30 +988,30 @@
       background: url(../assets/slash.svg) no-repeat 0 0;
     }
   }
-  #searcher {
-    cursor: pointer;
-    height: 26px;
-    margin-bottom: -10px;
-    width: 50px;
-    margin-left: 40px;
-    display: block;
-    overflow: hidden;
-    &.is-checked {
-      svg {
-        margin-top: -32px;
-      }
-    }
-    &:hover,
-    &:focus {
-      path {
-        fill: @lightgold
-      }
-    }
-    &:focus {
-      border:1px solid #4D90FE;
-      .box-shadow(0px 0px 5px  #4D90FE);
-    }
-  }
+  // #searcher {
+  //   cursor: pointer;
+  //   height: 26px;
+  //   margin-bottom: -10px;
+  //   width: 50px;
+  //   margin-left: 40px;
+  //   display: block;
+  //   overflow: hidden;
+  //   &.is-checked {
+  //     svg {
+  //       margin-top: -32px;
+  //     }
+  //   }
+  //   &:hover,
+  //   &:focus {
+  //     path {
+  //       fill: @lightgold
+  //     }
+  //   }
+  //   &:focus {
+  //     border:1px solid #4D90FE;
+  //     .box-shadow(0px 0px 5px  #4D90FE);
+  //   }
+  // }
 
   div#searcher_wrap {
     text-align: center;
@@ -1178,10 +1178,10 @@
     &.active img {
       width: 200px;
     }
-    &.open ,
+    &.open:not(.unit-small) ,
     &.fyp-units {
       .front .banner {
-        display: none;
+       // display: none;
       }
     }
   }
@@ -1371,7 +1371,7 @@
     }
 
     .grid-item {
-      &.open ,
+      &.open:not(.unit-small) ,
       &.fyp-units {
         height: 900px;
         .flipper {
@@ -1505,14 +1505,14 @@
 }
 
 /*  UPDATED! flip the pane when hovered */
-.flip-container:not(.open) {
+.flip-container:not(.open:not(.unit-small)) {
   &:hover .back,
   &:focus .back,
   &:active .back {
     .rotateY(0deg);
   }
 }
-.flip-container:not(.open) {
+.flip-container:not(.open:not(.unit-small)) {
   &:hover .front,
   &:focus .front,
   &:active .front {
@@ -1521,14 +1521,14 @@
 }
 // Prevent flip on infographics
 .flip-container {
-  &.infographic:not(.open) {
+  &.infographic:not(.open:not(.unit-small)) {
     &:hover .back,
     &:focus .back,
     &:active .back {
       .rotateY(180deg);
     }
   }
-  &.infographic:not(.open) {
+  &.infographic:not(.open:not(.unit-small)) {
     &:hover .front,
     &:focus .front,
     &:active .front {
@@ -1540,7 +1540,7 @@
 
 
 /* flip speed goes here */
-.flipper:not(.open) {
+.flipper:not(.open:not(.unit-small)) {
   -webkit-transition: 0.6s;
   -webkit-transform-style: preserve-3d;
   -webkit-transition-delay: 2s; /* Safari */

@@ -37,7 +37,7 @@ $(window).load(function(){
          filter: function() {
            var $this = $(this);
            var search = qsRegex ? $this.text().match( qsRegex ) : true;
-           return search && $this.is( ':not(.title-card)' );
+           return search && $this.is( ':not(.unit-item)' );
          }
        });
      }, 200 ) );
@@ -212,7 +212,7 @@ $(window).load(function(){
       $('.module-hero-image').addClass('hide');
       $('.FYP-home-button').addClass('show');
       $('.fyp-close-button-gradient').addClass('show');
-      $grid.isotope({ filter: '.' + filterValue });
+      $grid.isotope({ filter: '.' + filterValue + ':not(.unit-small)' });
    })
 
    $('.FYP-home-button').on('click', function(e){
@@ -239,6 +239,16 @@ $(window).load(function(){
           $('.fyp-give-widget-container').remove();
        });
    })
+
+   $('.unit-small').on('click', function(e){
+      console.log('focus');
+      e.preventDefault();
+      var filterValue = $( this ).attr('data-name');
+      $('.module-hero-image').addClass('hide');
+      $('.FYP-home-button').addClass('show');
+      $('.fyp-close-button-gradient').addClass('show');
+      $grid.isotope({ filter: '.' + filterValue + ':not(.unit-small)' });
+   });
 
 
 });  

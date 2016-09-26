@@ -119,7 +119,7 @@
            <div class="fyp-search-wrapper">
               <form class="fyp-search">
                 <label class="fyp-search-label" for="fyp-search-bar"><p>Or search for specific fund:</p></label>
-                <input class="fyp-search-bar" type="search" name="fyp-search-name" value="">
+                <input id="searcher" class="fyp-search-bar quicksearch" type="search" name="fyp-search-name" value="">
                 <input type="submit" value="search" class="fyp-search-button" tabindex="0">
               </form>
             </div>
@@ -254,7 +254,29 @@
           </li>
 
           
-
+          <li tabindex="0" data-name="<?php echo $slug; ?>" data-img="<?php echo $unitimageurlhigh; ?>" class="flip-container grid-item fyp-funds unit-small <?php echo $slug; ?>">
+            <div class="flipper" role="button">
+              <div class="front" style="<?php echo 'background-image:url(' . $unitimageurl . ');'; ?> ">
+                <div class="banner">
+                  <?php echo $unit->post_title; ?>
+                </div> 
+              </div>
+              <div class="back">
+                <h3><?php echo $unit->post_title; ?></h3>
+                <p class="short-desc"><?php //echo $fund->desc; ?></p>
+              </div>
+              <div tabindex="0" class="full-bio">
+                <h2><?php echo $unit->post_title; ?></h2>
+                    <!-- INSERT LINK TO PAGE HERE??? -->
+                <div class="bio-text">
+                  <p><?php echo apply_filters('the_content', $unit->post_content); ?></p>
+                </div>
+                <div class="give-button">
+                  <a href="#" class="give-link" data-code="<?php echo $unitcodes; ?>">Give Now</a> 
+                </div>
+              </div>
+            </div>
+          </li>
 
 
 
