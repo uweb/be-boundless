@@ -285,8 +285,9 @@
                  <div class="bio-info"> 
                   <p><?php 
                       $search = array(" ","&amp;","&");
-                      $slug = ( str_replace($search,"-",strtolower($fund->unit)) );
-                      echo '<a href="#" class="fyp-filter-click" data-filter="' . $slug . '">' . $fund->unit . '</a>';
+                      $unslug = str_replace("---"," &amp; ",$fund->unit);
+                      $unslug = str_replace("-"," ",$unslug);
+                      echo '<a href="#" class="fyp-filter-click" data-filter="' . $fund->unit . '">' . $unslug . '</a>';
                   ?></p>               
                 </div>
                 <div class="bio-text">
