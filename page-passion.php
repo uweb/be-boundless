@@ -207,12 +207,17 @@
            // foreach ($units as $unit ) {
            //     $unitclasses .= $unit->slug . " "; //IS SLUG A CLASS TO USE ON THIS???
            // }
+          //
+           //get the slug
+            $search = array(" ","&amp;","&");
+            $slug = ( str_replace($search,"-",strtolower($unit->post_title)) );
 
            //spit out html 
            
+           
            ?>
            
-            <li tabindex="0" data-name="<?php echo $unit->post_name; ?>" data-img="<?php echo $unitimageurlhigh; ?>" class="grid-item fyp-units unit-item open <?php echo $unit->post_name; ?>">
+            <li tabindex="0" data-name="<?php echo $slug; ?>" data-img="<?php echo $unitimageurlhigh; ?>" class="grid-item fyp-units unit-item open <?php echo $slug; ?>">
             <div class="flipper" role="button">
               <div tabindex="0" class="full-bio">
                 <h2><?php echo $unit->post_title; ?></h2>
