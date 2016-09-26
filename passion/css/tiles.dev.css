@@ -173,22 +173,47 @@
 #passion .row h1:after {
   pointer-events: none;
 }
-#passion .FYP-home-button {
+#passion .fyp-close-button-gradient {
+  display: none;
+  position: absolute;
+  top: -50px;
+  right: -100px;
+  height: 200px;
+  width: 200px;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  z-index: 99;
+  background: rgba(128, 128, 128, 0.3);
+  background: -webkit-linear-gradient(#000000, rgba(128, 128, 128, 0));
+  background: -o-linear-gradient(#000000, rgba(128, 128, 128, 0));
+  background: -moz-linear-gradient(#000000, rgba(128, 128, 128, 0));
+  background: linear-gradient(#000000, rgba(128, 128, 128, 0));
+}
+#passion .fyp-close-button-gradient.show {
+  display: block;
+}
+#passion .FYP-home-button,
+#passion .FYP-give-widget-exit {
   display: none;
   height: 70px;
   width: 70px;
   position: absolute;
-  top: 80px;
-  right: 40px;
+  top: 60px;
+  right: 0px;
   z-index: 999;
 }
-#passion .FYP-home-button.show {
-  display: block;
-}
 #passion .FYP-home-button:hover svg g line,
+#passion .FYP-give-widget-exit:hover svg g line,
 #passion .FYP-home-button:active svg g line,
-#passion .FYP-home-button:focus svg g line {
+#passion .FYP-give-widget-exit:active svg g line,
+#passion .FYP-home-button:focus svg g line,
+#passion .FYP-give-widget-exit:focus svg g line {
   stroke: #4b2e83;
+}
+#passion .FYP-home-button.show,
+#passion .FYP-give-widget-exit.show {
+  display: block;
 }
 #passion .module-hero-image {
   margin-top: 50px;
@@ -1281,21 +1306,8 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: 888;
+  z-index: 88;
   background: rgba(255, 255, 255, 0.7);
-}
-#passion .fyp-give-widget-container .FYP-give-widget-exit {
-  height: 70px;
-  width: 70px;
-  position: absolute;
-  top: 80px;
-  right: 40px;
-  z-index: 999;
-}
-#passion .fyp-give-widget-container .FYP-give-widget-exit:hover svg g line,
-#passion .fyp-give-widget-container .FYP-give-widget-exit:active svg g line,
-#passion .fyp-give-widget-container .FYP-give-widget-exit:focus svg g line {
-  stroke: #4b2e83;
 }
 #passion .fyp-give-widget-container iframe {
   margin-right: auto;
@@ -1324,13 +1336,6 @@
   }
   #passion .module-hero-image .circle-button-container .fyp-filters-box {
     margin: 0;
-  }
-  #passion .FYP-home-button.show {
-    top: 60px;
-    right: -10px;
-  }
-  #passion .FYP-home-button.show svg g line {
-    stroke: #4b2e83;
   }
   .module-hero-image {
     height: auto;

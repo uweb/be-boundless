@@ -30,19 +30,37 @@
     }
   }
 
-  .FYP-home-button {
+  .fyp-close-button-gradient {
+    display: none;
+    position: absolute;
+    top: -50px;
+    right: -100px;
+    height: 200px;
+    width: 200px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg); 
+    -webkit-transform: rotate(45deg);
+    z-index: 99;
+    background: rgba(128,128,128,.3);
+    background: -webkit-linear-gradient(rgb(0, 0, 0), rgba(128,128,128,0)); 
+    background: -o-linear-gradient(rgb(0, 0, 0), rgba(128,128,128,0)); 
+    background: -moz-linear-gradient(rgb(0, 0, 0), rgba(128,128,128,0)); 
+    background: linear-gradient(rgb(0, 0, 0), rgba(128,128,128,0)); 
+    &.show {
+      display: block;
+    }
+  }
+  .FYP-home-button ,
+  .FYP-give-widget-exit {
     display: none;
     height: 70px;
     width: 70px;
     position: absolute;
-    top: 80px;
-    right: 40px;
+    top: 60px;
+    right: 0px;
     // background: url(../assets/x.svg) no-repeat 0 0;
     // background-size: 70px 70px;
     z-index: 999;
-    &.show {
-      display: block;
-    }
     &:hover,
     &:active,
     &:focus  {
@@ -51,9 +69,11 @@
       }
       
     }
-
+    &.show {
+      display: block;
+    }
   }
-      
+
   .module-hero-image {
       margin-top: 50px;
       height: auto;
@@ -1191,22 +1211,22 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: 888;
+    z-index: 88;
     background: rgba(255,255,255,.7);
     .FYP-give-widget-exit {
-      height: 70px;
-      width: 70px;
-      position: absolute;
-      top: 80px;
-      right: 40px;
-      z-index: 999;
-      &:hover,
-      &:active,
-      &:focus  {
-        svg g line{
-          stroke: #4b2e83;
-        }
-      }
+      // height: 70px;
+      // width: 70px;
+      // position: absolute;
+      // top: 80px;
+      // right: 40px;
+      // z-index: 999;
+      // &:hover,
+      // &:active,
+      // &:focus  {
+      //   svg g line{
+      //     stroke: #4b2e83;
+      //   }
+      // }
     }
     iframe {
       margin-right: auto;
@@ -1245,13 +1265,13 @@
     }
   }
 
-  #passion .FYP-home-button.show {
-    top: 60px;
-    right: -10px;
-    svg g line{
-      stroke: #4b2e83;
-    }
-  }
+  // #passion .FYP-home-button.show {
+  //   top: 60px;
+  //   right: -10px;
+  //   svg g line{
+  //     stroke: #4b2e83;
+  //   }
+  // }
 
     
         

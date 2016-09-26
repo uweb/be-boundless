@@ -127,6 +127,7 @@
       </div>
     </div>
 
+    <div class="fyp-close-button-gradient"></div>
     <a class="FYP-home-button">
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          width="46.75px" height="46.812px" viewBox="0 0 46.75 46.812" enable-background="new 0 0 46.75 46.812" xml:space="preserve">
@@ -136,6 +137,7 @@
       </g>
       </svg>
     </a> 
+    
 
 
     <!-- Add this to  ontouchstart="this.classList.toggle('hover');" -->

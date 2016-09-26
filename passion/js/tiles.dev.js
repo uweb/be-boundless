@@ -208,12 +208,14 @@ $(window).load(function(){
       var filterValue = $( this ).attr('data-filter');
       $('.module-hero-image').addClass('hide');
       $('.FYP-home-button').addClass('show');
+      $('.fyp-close-button-gradient').addClass('show');
       $grid.isotope({ filter: '.' + filterValue });
    })
 
    $('.FYP-home-button').on('click', function(e){
       $('.module-hero-image').removeClass('hide');
       $(this).removeClass('show');
+      $('.fyp-close-button-gradient').removeClass('show');
       $grid.isotope({ filter: '.featured' });
    })
 
@@ -221,9 +223,9 @@ $(window).load(function(){
       var allocCode = $( this ).attr('data-code');
       $('.FYP-home-button').removeClass('show');
       $('body').prepend('<div class="fyp-give-widget-container">' +
-                          '<a class="FYP-give-widget-exit"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.75px" height="46.812px" viewBox="0 0 46.75 46.812" enable-background="new 0 0 46.75 46.812" xml:space="preserve"><g><line fill="none" stroke="#FFF" stroke-miterlimit="10" x1="1.011" y1="1.001" x2="46.011" y2="46.001"/><line fill="none" stroke="#FFF" stroke-miterlimit="10" x1="46.011" y1="1.001" x2="1.011" y2="46.001"/></g></svg></a> ' +
                           '<iframe src="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?source_typ=3&source=' + allocCode + '&frame_buster=false" title="Giving at the UW" id="UWFOnlineGivingForm" frameborder="0" scrolling="yes" onload="try{document.domain=\'washington.edu\'}catch(e){}" style="display: block; min-width: 662px; height: 763px;"></iframe>' +
-                        '</div>');
+                        '</div>' +
+                        '<a class="FYP-give-widget-exit show"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.75px" height="46.812px" viewBox="0 0 46.75 46.812" enable-background="new 0 0 46.75 46.812" xml:space="preserve"><g><line fill="none" stroke="#FFF" stroke-miterlimit="10" x1="1.011" y1="1.001" x2="46.011" y2="46.001"/><line fill="none" stroke="#FFF" stroke-miterlimit="10" x1="46.011" y1="1.001" x2="1.011" y2="46.001"/></g></svg></a>');
 
       $('.FYP-give-widget-exit').on('click', function(e){
           $('.FYP-home-button').addClass('show');
