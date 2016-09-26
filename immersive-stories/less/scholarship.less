@@ -247,7 +247,7 @@ p {
             color: @purple;
         }
         .bio {
-            padding: 0px 40px 70px;
+            padding: 0px 40px;
             div {
                 border: 3px solid @purple;
                 border-bottom: none;
@@ -593,19 +593,20 @@ p {
         width: 32%;
         display: inline-block;
         a {
+            display: inline-block;
+            border-top: 5px solid white;
+            border-left: 5px solid white;
+            border-bottom: 3px solid white;
             img {
                 .transition(transform .1s linear);
             }
             &:hover {
                 img {
-                    .scale(1.05,1.05);
-                    transform-origin: center center;
+                    // .scale(1.05,1.05);
+                    // transform-origin: center center;
+                    -webkit-filter: brightness(75%);
+                    filter: brightness(75%);
                 }
-            }
-            img {
-                border-top: 5px solid white;
-                border-left: 5px solid white;
-                border-bottom: 5px solid white;
             }
         }
         
