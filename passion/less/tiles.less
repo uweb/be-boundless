@@ -1187,6 +1187,34 @@
     }
   }
 
+  .fyp-give-widget-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 888;
+    background: rgba(255,255,255,.7);
+    .FYP-give-widget-exit {
+      height: 70px;
+      width: 70px;
+      position: absolute;
+      top: 80px;
+      right: 40px;
+      z-index: 999;
+      &:hover,
+      &:active,
+      &:focus  {
+        svg g line{
+          stroke: #4b2e83;
+        }
+      }
+    }
+    iframe {
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 10%;
+    }
+  }
+
 
 }
 @media only screen and (max-width : 1200px) {

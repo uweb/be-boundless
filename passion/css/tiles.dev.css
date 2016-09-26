@@ -390,7 +390,7 @@
   z-index: 1;
 }
 #passion .grid {
-  background: url(../assets/stripes.svg) #E8E8E8;
+  background: url(../assets/stripes.svg) #e8e8e8;
 }
 #passion .full-bio {
   display: none;
@@ -840,8 +840,6 @@
     width: calc(100%);
   }
 }
-@media only screen and (max-width: 320px) {
-}
 #passion .grid-item.special {
   background-color: #4b2e83;
   box-sizing: border-box;
@@ -1092,8 +1090,8 @@
 }
 #passion #searcher:focus {
   border: 1px solid #4D90FE;
-  -webkit-box-shadow: 0px 0px 5px #4D90FE;
-  box-shadow: 0px 0px 5px #4D90FE;
+  -webkit-box-shadow: 0px 0px 5px #4d90fe;
+  box-shadow: 0px 0px 5px #4d90fe;
 }
 #passion div#searcher_wrap {
   text-align: center;
@@ -1278,6 +1276,31 @@
 }
 #passion .headlines h3 {
   font-size: 25px;
+}
+#passion .fyp-give-widget-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 888;
+  background: rgba(255, 255, 255, 0.7);
+}
+#passion .fyp-give-widget-container .FYP-give-widget-exit {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: 80px;
+  right: 40px;
+  z-index: 999;
+}
+#passion .fyp-give-widget-container .FYP-give-widget-exit:hover svg g line,
+#passion .fyp-give-widget-container .FYP-give-widget-exit:active svg g line,
+#passion .fyp-give-widget-container .FYP-give-widget-exit:focus svg g line {
+  stroke: #4b2e83;
+}
+#passion .fyp-give-widget-container iframe {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10%;
 }
 @media only screen and (max-width: 1200px) {
   #passion .module-hero-image .circle-button-container {

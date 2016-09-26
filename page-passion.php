@@ -226,7 +226,7 @@
                   <p><?php echo apply_filters('the_content', $unit->post_content); ?></p>
                 </div>
                 <div class="give-button">
-                  <a href="#" class="give-link">Give Now</a>
+                  <a href="#" class="give-link">Give Now</a> 
                 </div>
               </div>
               <div class="front" style="<?php echo 'background-image:url(' . $unitimageurlhigh . ');'; ?> "></div>
@@ -304,7 +304,7 @@
                 //} ?>
                 </div>
                 <div class="give-button">
-                	<a href="#" class="give-link" rel="<?php echo $fund->code; ?>">Give Now</a>
+                	<a href="#" class="give-link" data-code="<?php echo $fund->code; ?>">Give Now</a>
                 </div>
               </div>
             </div>
