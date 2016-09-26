@@ -280,20 +280,27 @@
     margin-left: 39.8%;
     overflow: hidden;
     padding: 40px 50px 50px;
-    p {
+    p, li {
       font-size: 14px;
       line-height: 1.5;
-
+    }
+    ul {
+      margin-bottom: 14.5px;
     }
     a {
-      color: white;
-      padding: 5px 10px;
-      background-color: @purple;
-      font-size: 14px;
-      line-height: 1.4;
-    //  white-space: nowrap;
-      margin: 5px 5px 0 0;
-      display: inline-block;      
+      color: #3d3d3d;
+      &:hover,
+      &:active,
+      &:focus {
+        color: @purple;
+      }
+    //   padding: 5px 10px;
+    //   background-color: @purple;
+    //   font-size: 14px;
+    //   line-height: 1.4;
+    // //  white-space: nowrap;
+    //   margin: 5px 5px 0 0;
+    //   display: inline-block;      
     }
     .tags {
       a:hover,
@@ -311,15 +318,15 @@
         margin: 0;
         font-size: 18px;
         line-height: 23px;
-       // text-transform: uppercase;
+        text-transform: uppercase;
         -webkit-font-smoothing: initial;
-        //font-family: @uni;
+        font-family: @uni;
       }
     }
     .bio-text {
       margin: 10px -10px 20px 0;
       padding-right: 10px;
-      max-height: 250px;
+      max-height: 400px;
       overflow-y: auto;
       h4 {
         font-weight: 900;
@@ -640,6 +647,9 @@
           margin-left: 0;
           padding: 40px 45px 50px;
           height: 495px;
+          .bio-text {
+            max-height: 250px;
+          }
         }
         &.unit-item div.full-bio {
           margin-right: 0;  
@@ -1095,6 +1105,7 @@
         margin: 0 0 5px;
         font-size: 16px;
         line-height: 1.3;
+        letter-spacing: 1px;
       }
       p {
         color: white;
@@ -1103,7 +1114,7 @@
         margin-bottom: 0;
         //font-family: @uni;
        // text-transform: uppercase;
-        font-weight: bold;
+        //font-weight: bold;
         &:last-child {
           position: relative;
           &:after {

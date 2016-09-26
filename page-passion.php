@@ -218,7 +218,7 @@
                 <h2><?php echo $unit->post_title; ?></h2>
                     <!-- INSERT LINK TO PAGE HERE??? -->
                 <div class="bio-text">
-                  <p><?php echo $unit->post_content; ?></p>
+                  <p><?php echo apply_filters('the_content', $unit->post_content); ?></p>
                 </div>
                 <div class="give-button">
                   <a href="#" class="give-link">Give Now</a>
@@ -274,35 +274,23 @@
               <div class="front" style="<?php echo 'background-image:url(' . $fundimageurl . ');'; ?> ">
               	<div class="banner">
               		<?php echo $fund->short; ?>
-              		<p class="short-desc"><?php echo $fund->desc; ?></p>
               	</div> 
               </div>
               <div class="back">
                 <h3><?php echo $fund->post_title; ?></h3>
-                <p><?php 
-                      $args = array(
-                        'name'        => $fund->slug,
-                        'post_type'   => 'units',
-                        'post_status' => 'publish',
-                        'numberposts' => 1
-                      );
-                      $my_posts = get_posts($args);
-                      if( $my_posts ) :
-                        echo $my_posts[0]->title;
-                      endif;
-                   ?></p>
+                <p class="short-desc"><?php echo $fund->desc; ?></p>
               </div>
               <div tabindex="0" class="full-bio">
                 <h2><?php echo $fund->post_title; ?></h2>
                  <div class="bio-info"> 
                   <p><?php 
-                      if( $my_posts ) :
-                        echo $my_posts[0]->title;
-                      endif;
+                      $search = array(" ","&amp;","&");
+                      $slug = ( str_replace($search,"-",strtolower($fund->unit)) );
+                      echo '<a href="#" class="fyp-filter-click" data-filter="' . $slug . '">' . $fund->unit . '</a>';
                   ?></p>               
                 </div>
                 <div class="bio-text">
-                  <p><?php echo $fund->post_content; ?></p>
+                  <p><?php echo apply_filters('the_content', $fund->post_content); ?></p>
                 </div>
                 <div class="tags">
                 <?php //foreach ($tags as $tag ) {
@@ -310,7 +298,7 @@
                 //} ?>
                 </div>
                 <div class="give-button">
-                	<a href="#" class="give-link">Give Now</a>
+                	<a href="#" class="give-link" rel="<?php echo $fund->code; ?>">Give Now</a>
                 </div>
               </div>
             </div>
