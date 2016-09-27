@@ -1520,36 +1520,36 @@
   perspective: 1000;
 }
 /*  UPDATED! flip the pane when hovered */
-.flip-container:not(.open:not(.unit-small)):hover .back,
-.flip-container:not(.open:not(.unit-small)):focus .back,
-.flip-container:not(.open:not(.unit-small)):active .back {
+.flip-container:not(.open):hover .back,
+.flip-container:not(.open):focus .back,
+.flip-container:not(.open):active .back {
   -webkit-transform: rotateY(0deg);
   -ms-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
-.flip-container:not(.open:not(.unit-small)):hover .front,
-.flip-container:not(.open:not(.unit-small)):focus .front,
-.flip-container:not(.open:not(.unit-small)):active .front {
+.flip-container:not(.open):hover .front,
+.flip-container:not(.open):focus .front,
+.flip-container:not(.open):active .front {
   -webkit-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
-.flip-container.infographic:not(.open:not(.unit-small)):hover .back,
-.flip-container.infographic:not(.open:not(.unit-small)):focus .back,
-.flip-container.infographic:not(.open:not(.unit-small)):active .back {
+.flip-container.infographic:not(.open):hover .back,
+.flip-container.infographic:not(.open):focus .back,
+.flip-container.infographic:not(.open):active .back {
   -webkit-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
-.flip-container.infographic:not(.open:not(.unit-small)):hover .front,
-.flip-container.infographic:not(.open:not(.unit-small)):focus .front,
-.flip-container.infographic:not(.open:not(.unit-small)):active .front {
+.flip-container.infographic:not(.open):hover .front,
+.flip-container.infographic:not(.open):focus .front,
+.flip-container.infographic:not(.open):active .front {
   -webkit-transform: rotateY(0deg);
   -ms-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
 /* flip speed goes here */
-.flipper:not(.open:not(.unit-small)) {
+.flipper:not(.open) {
   -webkit-transition: 0.6s;
   -webkit-transform-style: preserve-3d;
   -webkit-transition-delay: 2s;
