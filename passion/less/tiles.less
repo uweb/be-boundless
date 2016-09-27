@@ -6,14 +6,23 @@
 @import "../../../../plugins/template-hierarchy/less/parts/fonts.less";
 
 #passion { 
+  .uw-footer {
+    margin-top: 0;
+    display: none;
+  }
   &.logged-in {
     .module-hero-image {
       margin-top: 32px;
+      height: 100%;
+      margin-bottom: calc(-210px - 32px);
     }
   }
   div#main-content {
+    margin-top: 32px;
     ul.grid {
       padding-left: 0;
+      margin-bottom: 0;
+      //margin-top: 32px;
     }
     .grid-item,
     .grid-sizer {
@@ -30,34 +39,54 @@
     }
   }
 
-  .FYP-home-button {
+  .fyp-close-button-gradient {
+    display: none;
+    position: absolute;
+    top: -50px;
+    right: -100px;
+    height: 200px;
+    width: 200px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg); 
+    -webkit-transform: rotate(45deg);
+    z-index: 99;
+    background: rgba(128,128,128,.3);
+    background: -webkit-linear-gradient(rgb(0, 0, 0), rgba(128,128,128,0)); 
+    background: -o-linear-gradient(rgb(0, 0, 0), rgba(128,128,128,0)); 
+    background: -moz-linear-gradient(rgb(0, 0, 0), rgba(128,128,128,0)); 
+    background: linear-gradient(rgb(0, 0, 0), rgba(128,128,128,0)); 
+    &.show {
+      display: block;
+    }
+  }
+  .FYP-home-button ,
+  .FYP-give-widget-exit {
     display: none;
     height: 70px;
     width: 70px;
     position: absolute;
-    top: 80px;
-    right: 40px;
+    top: 60px;
+    right: 0px;
     // background: url(../assets/x.svg) no-repeat 0 0;
     // background-size: 70px 70px;
     z-index: 999;
-    &.show {
-      display: block;
-    }
     &:hover,
     &:active,
     &:focus  {
       svg g line{
-        stroke: #4b2e83;
+        stroke: #b7a57a;
       }
       
     }
-
+    &.show {
+      display: block;
+    }
   }
-      
+
   .module-hero-image {
       margin-top: 50px;
       height: auto;
-      padding-bottom: 50px;
+      //padding-bottom: 50px;
       &.hide {
         display: none;
       }
@@ -389,11 +418,11 @@
 
     }
   }
-  // .grid-item.open {
+  // .grid-item.open:not(.unit-small) {
   //   cursor: url(../assets/x.svg), auto;
   // }
 
-  .open ,
+  .open:not(.unit-small) ,
   .fyp-units {
       .full-bio{
         display: block;
@@ -446,12 +475,12 @@
       .the-width ( 2, 5 );
       background-color: white;  
       height: 2*@tileHeight;
-      &.open ,
+      &.open:not(.unit-small) ,
       &.fyp-units {
         height: 3*@tileHeight;
       }
     }
-    &.open ,
+    &.open:not(.unit-small) ,
     &.fyp-units {
       .the-width ( 5, 5 );
       height: 3*@tileHeight;
@@ -489,7 +518,7 @@
         .the-width ( 2, 4 ); 
         height: 2*@tileHeight;
       }      
-      &.open ,
+      &.open:not(.unit-small) ,
       &.fyp-units {
         .the-width ( 4, 4 );
         .front {
@@ -590,7 +619,7 @@
         .the-width ( 2, 3 ); 
         //height: 420px;
       }
-      &.open ,
+      &.open:not(.unit-small) ,
       &.fyp-units {
         .the-width ( 3, 3 );
         .front {
@@ -634,7 +663,7 @@
         .the-width ( 2, 2 ); 
         height: 2*@tileHeight;
       }      
-      &.open ,
+      &.open:not(.unit-small) ,
       .fyp-units {
         .the-width ( 2, 2 );
         height: 2.5*@tileHeight;
@@ -674,7 +703,7 @@
         .the-width ( 1, 1 ); 
         height: 12*@tileHeight/7;
       }
-      &.open ,
+      &.open:not(.unit-small) ,
       .fyp-units {
         .the-width ( 1, 1 );
         height: 4.5*@tileHeight;
@@ -796,7 +825,7 @@
     p {
       opacity: 0;
     }
-    &.open .front ,
+    &.open:not(.unit-small) .front ,
     &.fyp-units .front {
       width: 100%;
     }
@@ -968,30 +997,30 @@
       background: url(../assets/slash.svg) no-repeat 0 0;
     }
   }
-  #searcher {
-    cursor: pointer;
-    height: 26px;
-    margin-bottom: -10px;
-    width: 50px;
-    margin-left: 40px;
-    display: block;
-    overflow: hidden;
-    &.is-checked {
-      svg {
-        margin-top: -32px;
-      }
-    }
-    &:hover,
-    &:focus {
-      path {
-        fill: @lightgold
-      }
-    }
-    &:focus {
-      border:1px solid #4D90FE;
-      .box-shadow(0px 0px 5px  #4D90FE);
-    }
-  }
+  // #searcher {
+  //   cursor: pointer;
+  //   height: 26px;
+  //   margin-bottom: -10px;
+  //   width: 50px;
+  //   margin-left: 40px;
+  //   display: block;
+  //   overflow: hidden;
+  //   &.is-checked {
+  //     svg {
+  //       margin-top: -32px;
+  //     }
+  //   }
+  //   &:hover,
+  //   &:focus {
+  //     path {
+  //       fill: @lightgold
+  //     }
+  //   }
+  //   &:focus {
+  //     border:1px solid #4D90FE;
+  //     .box-shadow(0px 0px 5px  #4D90FE);
+  //   }
+  // }
 
   div#searcher_wrap {
     text-align: center;
@@ -1158,10 +1187,10 @@
     &.active img {
       width: 200px;
     }
-    &.open ,
+    &.open:not(.unit-small) ,
     &.fyp-units {
       .front .banner {
-        display: none;
+       // display: none;
       }
     }
   }
@@ -1187,31 +1216,25 @@
     }
   }
 
-  .fyp-give-widget-container {
-    position: absolute;
+  .fyp-give-widget-lightbox {
+    position: fixed;
     height: 100%;
     width: 100%;
-    z-index: 888;
+    z-index: 1;
     background: rgba(255,255,255,.7);
-    .FYP-give-widget-exit {
-      height: 70px;
-      width: 70px;
-      position: absolute;
-      top: 80px;
-      right: 40px;
-      z-index: 999;
-      &:hover,
-      &:active,
-      &:focus  {
-        svg g line{
-          stroke: #4b2e83;
-        }
-      }
-    }
+    
+  }
+  .fyp-give-widget-container {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    margin-top: 5%;
     iframe {
       margin-right: auto;
       margin-left: auto;
-      margin-top: 10%;
+      min-width: 662px;
+      display: block;
+      height: 763px;
     }
   }
 
@@ -1245,13 +1268,13 @@
     }
   }
 
-  #passion .FYP-home-button.show {
-    top: 60px;
-    right: -10px;
-    svg g line{
-      stroke: #4b2e83;
-    }
-  }
+  // #passion .FYP-home-button.show {
+  //   top: 60px;
+  //   right: -10px;
+  //   svg g line{
+  //     stroke: #4b2e83;
+  //   }
+  // }
 
     
         
@@ -1267,6 +1290,11 @@
 }
 
 @media only screen and (max-width : 768px) {
+  #passion .fyp-give-widget-container iframe {
+    min-width: 0;
+    width: 90%;
+  }
+
   #passion .module-hero-image {
     .row {
       padding-left: 0;
@@ -1351,7 +1379,7 @@
     }
 
     .grid-item {
-      &.open ,
+      &.open:not(.unit-small) ,
       &.fyp-units {
         height: 900px;
         .flipper {
@@ -1405,6 +1433,13 @@
 }
 
 @media only screen and (max-width : 480px) {
+  #passion .fyp-give-widget-container {
+    margin-top: 80px;
+    iframe {
+      width: 100%;
+    }
+  }
+
   #passion .module-hero-image .row{
     .circle-button-container {
       margin-top: 5px;

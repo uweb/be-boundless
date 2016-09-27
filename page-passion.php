@@ -119,7 +119,7 @@
            <div class="fyp-search-wrapper">
               <form class="fyp-search">
                 <label class="fyp-search-label" for="fyp-search-bar"><p>Or search for specific fund:</p></label>
-                <input class="fyp-search-bar" type="search" name="fyp-search-name" value="">
+                <input id="searcher" class="fyp-search-bar quicksearch" type="search" name="fyp-search-name" value="">
                 <input type="submit" value="search" class="fyp-search-button" tabindex="0">
               </form>
             </div>
@@ -127,6 +127,7 @@
       </div>
     </div>
 
+    <div class="fyp-close-button-gradient"></div>
     <a class="FYP-home-button">
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          width="46.75px" height="46.812px" viewBox="0 0 46.75 46.812" enable-background="new 0 0 46.75 46.812" xml:space="preserve">
@@ -136,6 +137,7 @@
       </g>
       </svg>
     </a> 
+
 
 
     <!-- Add this to  ontouchstart="this.classList.toggle('hover');" -->
@@ -212,6 +214,24 @@
             $search = array(" ","&amp;","&");
             $slug = ( str_replace($search,"-",strtolower($unit->post_title)) );
 
+            //get all funds alloc codes
+            $fundargs = array(
+               'post_type' => 'funds',
+               'meta_query' => array(
+                   array(
+                       'key' => 'unit',
+                       'value' => $slug,
+                       'compare' => '=',
+                   )
+               )
+            );
+            $unitquery = new WP_Query($fundargs);
+            $unitcodes = "";
+            foreach ($unitquery->posts as $uq) {
+              $unitcodes .= get_post_meta($uq->ID, 'code', true) . ",";
+            }
+            
+
            //spit out html 
            
            
@@ -226,7 +246,7 @@
                   <p><?php echo apply_filters('the_content', $unit->post_content); ?></p>
                 </div>
                 <div class="give-button">
-                  <a href="#" class="give-link">Give Now</a> 
+                  <a href="#" class="give-link" data-code="<?php echo $unitcodes; ?>">Give Now</a> 
                 </div>
               </div>
               <div class="front" style="<?php echo 'background-image:url(' . $unitimageurlhigh . ');'; ?> "></div>
@@ -234,7 +254,19 @@
           </li>
 
           
-
+          <li tabindex="0" data-name="<?php echo $slug; ?>" data-img="<?php echo $unitimageurlhigh; ?>" class="flip-container grid-item fyp-funds unit-small <?php echo $slug; ?>">
+            <div class="flipper" role="button">
+              <div class="front" style="<?php echo 'background-image:url(' . $unitimageurl . ');'; ?> ">
+                <div class="banner">
+                  <?php echo $unit->post_title; ?>
+                </div> 
+              </div>
+              <div class="back">
+                <h3><?php echo $unit->post_title; ?></h3>
+                <p class="short-desc"><?php //echo $fund->desc; ?></p>
+              </div>
+            </div>
+          </li>
 
 
 

@@ -155,11 +155,21 @@
   /* Extra Small Devices, Phones */
   /* Custom, iPhone Retina */
 }
+#passion .uw-footer {
+  margin-top: 0;
+  display: none;
+}
 #passion.logged-in .module-hero-image {
+  margin-top: 32px;
+  height: 100%;
+  margin-bottom: calc(-242px);
+}
+#passion div#main-content {
   margin-top: 32px;
 }
 #passion div#main-content ul.grid {
   padding-left: 0;
+  margin-bottom: 0;
 }
 #passion div#main-content .grid-item,
 #passion div#main-content .grid-sizer {
@@ -173,27 +183,51 @@
 #passion .row h1:after {
   pointer-events: none;
 }
-#passion .FYP-home-button {
+#passion .fyp-close-button-gradient {
+  display: none;
+  position: absolute;
+  top: -50px;
+  right: -100px;
+  height: 200px;
+  width: 200px;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  z-index: 99;
+  background: rgba(128, 128, 128, 0.3);
+  background: -webkit-linear-gradient(#000000, rgba(128, 128, 128, 0));
+  background: -o-linear-gradient(#000000, rgba(128, 128, 128, 0));
+  background: -moz-linear-gradient(#000000, rgba(128, 128, 128, 0));
+  background: linear-gradient(#000000, rgba(128, 128, 128, 0));
+}
+#passion .fyp-close-button-gradient.show {
+  display: block;
+}
+#passion .FYP-home-button,
+#passion .FYP-give-widget-exit {
   display: none;
   height: 70px;
   width: 70px;
   position: absolute;
-  top: 80px;
-  right: 40px;
+  top: 60px;
+  right: 0px;
   z-index: 999;
 }
-#passion .FYP-home-button.show {
-  display: block;
-}
 #passion .FYP-home-button:hover svg g line,
+#passion .FYP-give-widget-exit:hover svg g line,
 #passion .FYP-home-button:active svg g line,
-#passion .FYP-home-button:focus svg g line {
-  stroke: #4b2e83;
+#passion .FYP-give-widget-exit:active svg g line,
+#passion .FYP-home-button:focus svg g line,
+#passion .FYP-give-widget-exit:focus svg g line {
+  stroke: #b7a57a;
+}
+#passion .FYP-home-button.show,
+#passion .FYP-give-widget-exit.show {
+  display: block;
 }
 #passion .module-hero-image {
   margin-top: 50px;
   height: auto;
-  padding-bottom: 50px;
 }
 #passion .module-hero-image.hide {
   display: none;
@@ -483,11 +517,11 @@
   height: 5px;
   letter-spacing: .05em;
 }
-#passion .open .full-bio,
+#passion .open:not(.unit-small) .full-bio,
 #passion .fyp-units .full-bio {
   display: block;
 }
-#passion .open .full-bio .give-button,
+#passion .open:not(.unit-small) .full-bio .give-button,
 #passion .fyp-units .full-bio .give-button {
   -webkit-transform: skew(-15deg, 0);
   -ms-transform: skewX(-15deg) skewY(0);
@@ -495,7 +529,7 @@
   background-color: #b7a57a;
   width: 141px;
 }
-#passion .open .full-bio .give-button .give-link,
+#passion .open:not(.unit-small) .full-bio .give-button .give-link,
 #passion .fyp-units .full-bio .give-button .give-link {
   -webkit-transform: skew(15deg, 0);
   -ms-transform: skewX(15deg) skewY(0);
@@ -525,28 +559,28 @@
   background-color: white;
   height: 420px;
 }
-#passion .grid-sizer.featured.open,
-#passion .grid-item.featured.open,
+#passion .grid-sizer.featured.open:not(.unit-small),
+#passion .grid-item.featured.open:not(.unit-small),
 #passion .grid-sizer.featured.fyp-units,
 #passion .grid-item.featured.fyp-units {
   height: 630px;
 }
-#passion .grid-sizer.open,
-#passion .grid-item.open,
+#passion .grid-sizer.open:not(.unit-small),
+#passion .grid-item.open:not(.unit-small),
 #passion .grid-sizer.fyp-units,
 #passion .grid-item.fyp-units {
   width: calc(100%);
   height: 630px;
 }
-#passion .grid-sizer.open .front,
-#passion .grid-item.open .front,
+#passion .grid-sizer.open:not(.unit-small) .front,
+#passion .grid-item.open:not(.unit-small) .front,
 #passion .grid-sizer.fyp-units .front,
 #passion .grid-item.fyp-units .front {
   width: 39.8%;
   right: auto;
 }
-#passion .grid-sizer.open.unit-item div.front,
-#passion .grid-item.open.unit-item div.front,
+#passion .grid-sizer.open:not(.unit-small).unit-item div.front,
+#passion .grid-item.open:not(.unit-small).unit-item div.front,
 #passion .grid-sizer.fyp-units.unit-item div.front,
 #passion .grid-item.fyp-units.unit-item div.front {
   right: 0;
@@ -576,38 +610,38 @@
     width: calc(50%);
     height: 420px;
   }
-  #passion .grid-sizer.open,
-  #passion .grid-item.open,
+  #passion .grid-sizer.open:not(.unit-small),
+  #passion .grid-item.open:not(.unit-small),
   #passion .grid-sizer.fyp-units,
   #passion .grid-item.fyp-units {
     width: calc(100%);
   }
-  #passion .grid-sizer.open .front,
-  #passion .grid-item.open .front,
+  #passion .grid-sizer.open:not(.unit-small) .front,
+  #passion .grid-item.open:not(.unit-small) .front,
   #passion .grid-sizer.fyp-units .front,
   #passion .grid-item.fyp-units .front {
     width: 24.8%;
   }
-  #passion .grid-sizer.open.unit-item div.front,
-  #passion .grid-item.open.unit-item div.front,
+  #passion .grid-sizer.open:not(.unit-small).unit-item div.front,
+  #passion .grid-item.open:not(.unit-small).unit-item div.front,
   #passion .grid-sizer.fyp-units.unit-item div.front,
   #passion .grid-item.fyp-units.unit-item div.front {
     width: calc(45.8%);
   }
-  #passion .grid-sizer.open.unit-item div.front:before,
-  #passion .grid-item.open.unit-item div.front:before,
+  #passion .grid-sizer.open:not(.unit-small).unit-item div.front:before,
+  #passion .grid-item.open:not(.unit-small).unit-item div.front:before,
   #passion .grid-sizer.fyp-units.unit-item div.front:before,
   #passion .grid-item.fyp-units.unit-item div.front:before {
     width: 38%;
   }
-  #passion .grid-sizer.open .full-bio,
-  #passion .grid-item.open .full-bio,
+  #passion .grid-sizer.open:not(.unit-small) .full-bio,
+  #passion .grid-item.open:not(.unit-small) .full-bio,
   #passion .grid-sizer.fyp-units .full-bio,
   #passion .grid-item.fyp-units .full-bio {
     margin-left: 24.8%;
   }
-  #passion .grid-sizer.open.unit-item div.full-bio,
-  #passion .grid-item.open.unit-item div.full-bio,
+  #passion .grid-sizer.open:not(.unit-small).unit-item div.full-bio,
+  #passion .grid-item.open:not(.unit-small).unit-item div.full-bio,
   #passion .grid-sizer.fyp-units.unit-item div.full-bio,
   #passion .grid-item.fyp-units.unit-item div.full-bio {
     margin-right: 24.8%;
@@ -689,20 +723,20 @@
   #passion .grid-item.featured {
     width: calc(66.66666667%);
   }
-  #passion .grid-sizer.open,
-  #passion .grid-item.open,
+  #passion .grid-sizer.open:not(.unit-small),
+  #passion .grid-item.open:not(.unit-small),
   #passion .grid-sizer.fyp-units,
   #passion .grid-item.fyp-units {
     width: calc(100%);
   }
-  #passion .grid-sizer.open .front,
-  #passion .grid-item.open .front,
+  #passion .grid-sizer.open:not(.unit-small) .front,
+  #passion .grid-item.open:not(.unit-small) .front,
   #passion .grid-sizer.fyp-units .front,
   #passion .grid-item.fyp-units .front {
     width: 33%;
   }
-  #passion .grid-sizer.open.unit-item div.front,
-  #passion .grid-item.open.unit-item div.front,
+  #passion .grid-sizer.open:not(.unit-small).unit-item div.front,
+  #passion .grid-item.open:not(.unit-small).unit-item div.front,
   #passion .grid-sizer.fyp-units.unit-item div.front,
   #passion .grid-item.fyp-units.unit-item div.front {
     position: static;
@@ -710,20 +744,20 @@
     height: 263px;
     background-position: center top;
   }
-  #passion .grid-sizer.open.unit-item div.front:before,
-  #passion .grid-item.open.unit-item div.front:before,
+  #passion .grid-sizer.open:not(.unit-small).unit-item div.front:before,
+  #passion .grid-item.open:not(.unit-small).unit-item div.front:before,
   #passion .grid-sizer.fyp-units.unit-item div.front:before,
   #passion .grid-item.fyp-units.unit-item div.front:before {
     content: none;
   }
-  #passion .grid-sizer.open .full-bio,
-  #passion .grid-item.open .full-bio,
+  #passion .grid-sizer.open:not(.unit-small) .full-bio,
+  #passion .grid-item.open:not(.unit-small) .full-bio,
   #passion .grid-sizer.fyp-units .full-bio,
   #passion .grid-item.fyp-units .full-bio {
     margin-left: 33%;
   }
-  #passion .grid-sizer.open.unit-item div.full-bio,
-  #passion .grid-item.open.unit-item div.full-bio,
+  #passion .grid-sizer.open:not(.unit-small).unit-item div.full-bio,
+  #passion .grid-item.open:not(.unit-small).unit-item div.full-bio,
   #passion .grid-sizer.fyp-units.unit-item div.full-bio,
   #passion .grid-item.fyp-units.unit-item div.full-bio {
     position: static;
@@ -749,21 +783,21 @@
     width: calc(100%);
     height: 420px;
   }
-  #passion .grid-sizer.open,
-  #passion .grid-item.open,
+  #passion .grid-sizer.open:not(.unit-small),
+  #passion .grid-item.open:not(.unit-small),
   #passion .grid-sizer .fyp-units,
   #passion .grid-item .fyp-units {
     width: calc(100%);
     height: 525px;
   }
-  #passion .grid-sizer.open .front,
-  #passion .grid-item.open .front,
+  #passion .grid-sizer.open:not(.unit-small) .front,
+  #passion .grid-item.open:not(.unit-small) .front,
   #passion .grid-sizer .fyp-units .front,
   #passion .grid-item .fyp-units .front {
     display: none;
   }
-  #passion .grid-sizer.open .full-bio,
-  #passion .grid-item.open .full-bio,
+  #passion .grid-sizer.open:not(.unit-small) .full-bio,
+  #passion .grid-item.open:not(.unit-small) .full-bio,
   #passion .grid-sizer .fyp-units .full-bio,
   #passion .grid-item .fyp-units .full-bio {
     position: static;
@@ -772,14 +806,14 @@
     padding: 40px 45px 50px;
     height: 495px;
   }
-  #passion .grid-sizer.open .full-bio .bio-text,
-  #passion .grid-item.open .full-bio .bio-text,
+  #passion .grid-sizer.open:not(.unit-small) .full-bio .bio-text,
+  #passion .grid-item.open:not(.unit-small) .full-bio .bio-text,
   #passion .grid-sizer .fyp-units .full-bio .bio-text,
   #passion .grid-item .fyp-units .full-bio .bio-text {
     max-height: 250px;
   }
-  #passion .grid-sizer.open.unit-item div.full-bio,
-  #passion .grid-item.open.unit-item div.full-bio,
+  #passion .grid-sizer.open:not(.unit-small).unit-item div.full-bio,
+  #passion .grid-item.open:not(.unit-small).unit-item div.full-bio,
   #passion .grid-sizer .fyp-units.unit-item div.full-bio,
   #passion .grid-item .fyp-units.unit-item div.full-bio {
     margin-right: 0;
@@ -802,15 +836,15 @@
     width: calc(100%);
     height: 360px;
   }
-  #passion .grid-sizer.open,
-  #passion .grid-item.open,
+  #passion .grid-sizer.open:not(.unit-small),
+  #passion .grid-item.open:not(.unit-small),
   #passion .grid-sizer .fyp-units,
   #passion .grid-item .fyp-units {
     width: calc(100%);
     height: 945px;
   }
-  #passion .grid-sizer.open .front,
-  #passion .grid-item.open .front,
+  #passion .grid-sizer.open:not(.unit-small) .front,
+  #passion .grid-item.open:not(.unit-small) .front,
   #passion .grid-sizer .fyp-units .front,
   #passion .grid-item .fyp-units .front {
     position: static;
@@ -818,8 +852,8 @@
     height: 350px;
     background-position: center top;
   }
-  #passion .grid-sizer.open .full-bio,
-  #passion .grid-item.open .full-bio,
+  #passion .grid-sizer.open:not(.unit-small) .full-bio,
+  #passion .grid-item.open:not(.unit-small) .full-bio,
   #passion .grid-sizer .fyp-units .full-bio,
   #passion .grid-item .fyp-units .full-bio {
     position: static;
@@ -827,8 +861,8 @@
     margin-left: 0;
     padding: 40px 45px 50px;
   }
-  #passion .grid-sizer.open.unit-item div.full-bio,
-  #passion .grid-item.open.unit-item div.full-bio,
+  #passion .grid-sizer.open:not(.unit-small).unit-item div.full-bio,
+  #passion .grid-item.open:not(.unit-small).unit-item div.full-bio,
   #passion .grid-sizer .fyp-units.unit-item div.full-bio,
   #passion .grid-item .fyp-units.unit-item div.full-bio {
     margin-right: 0;
@@ -916,7 +950,7 @@
 #passion .grid-item.infographic p {
   opacity: 0;
 }
-#passion .grid-item.infographic.open .front,
+#passion .grid-item.infographic.open:not(.unit-small) .front,
 #passion .grid-item.infographic.fyp-units .front {
   width: 100%;
 }
@@ -1073,27 +1107,6 @@
   top: -8px;
   content: "";
   background: url(../assets/slash.svg) no-repeat 0 0;
-}
-#passion #searcher {
-  cursor: pointer;
-  height: 26px;
-  margin-bottom: -10px;
-  width: 50px;
-  margin-left: 40px;
-  display: block;
-  overflow: hidden;
-}
-#passion #searcher.is-checked svg {
-  margin-top: -32px;
-}
-#passion #searcher:hover path,
-#passion #searcher:focus path {
-  fill: #b7a57a;
-}
-#passion #searcher:focus {
-  border: 1px solid #4D90FE;
-  -webkit-box-shadow: 0px 0px 5px #4D90FE;
-  box-shadow: 0px 0px 5px #4D90FE;
 }
 #passion div#searcher_wrap {
   text-align: center;
@@ -1256,10 +1269,6 @@
 #passion .grid-item.active img {
   width: 200px;
 }
-#passion .grid-item.open .front .banner,
-#passion .grid-item.fyp-units .front .banner {
-  display: none;
-}
 #passion .headlines {
   margin-top: -170px;
   padding-left: 0;
@@ -1279,30 +1288,25 @@
 #passion .headlines h3 {
   font-size: 25px;
 }
-#passion .fyp-give-widget-container {
-  position: absolute;
+#passion .fyp-give-widget-lightbox {
+  position: fixed;
   height: 100%;
   width: 100%;
-  z-index: 888;
+  z-index: 1;
   background: rgba(255, 255, 255, 0.7);
 }
-#passion .fyp-give-widget-container .FYP-give-widget-exit {
-  height: 70px;
-  width: 70px;
+#passion .fyp-give-widget-container {
+  z-index: 1;
   position: absolute;
-  top: 80px;
-  right: 40px;
-  z-index: 999;
-}
-#passion .fyp-give-widget-container .FYP-give-widget-exit:hover svg g line,
-#passion .fyp-give-widget-container .FYP-give-widget-exit:active svg g line,
-#passion .fyp-give-widget-container .FYP-give-widget-exit:focus svg g line {
-  stroke: #4b2e83;
+  width: 100%;
+  margin-top: 5%;
 }
 #passion .fyp-give-widget-container iframe {
   margin-right: auto;
   margin-left: auto;
-  margin-top: 10%;
+  min-width: 662px;
+  display: block;
+  height: 763px;
 }
 @media only screen and (max-width: 1200px) {
   #passion .module-hero-image .circle-button-container {
@@ -1327,13 +1331,6 @@
   #passion .module-hero-image .circle-button-container .fyp-filters-box {
     margin: 0;
   }
-  #passion .FYP-home-button.show {
-    top: 60px;
-    right: -10px;
-  }
-  #passion .FYP-home-button.show svg g line {
-    stroke: #4b2e83;
-  }
   .module-hero-image {
     height: auto;
     padding: 40px 20px 50px 20px;
@@ -1346,6 +1343,10 @@
   }
 }
 @media only screen and (max-width: 768px) {
+  #passion .fyp-give-widget-container iframe {
+    min-width: 0;
+    width: 90%;
+  }
   #passion .module-hero-image .row {
     padding-left: 0;
   }
@@ -1418,47 +1419,47 @@
     width: 100%;
     margin: 0;
   }
-  #husky100 .grid-item.open,
+  #husky100 .grid-item.open:not(.unit-small),
   #husky100 .grid-item.fyp-units {
     height: 900px;
   }
-  #husky100 .grid-item.open .flipper,
+  #husky100 .grid-item.open:not(.unit-small) .flipper,
   #husky100 .grid-item.fyp-units .flipper {
     position: static;
   }
-  #husky100 .grid-item.open .front,
+  #husky100 .grid-item.open:not(.unit-small) .front,
   #husky100 .grid-item.fyp-units .front {
     position: static;
     width: 100%;
     height: 350px;
     background-position: center top;
   }
-  #husky100 .grid-item.open .front:after,
+  #husky100 .grid-item.open:not(.unit-small) .front:after,
   #husky100 .grid-item.fyp-units .front:after {
     width: 140px;
     height: 62px;
   }
-  #husky100 .grid-item.open .full-bio,
+  #husky100 .grid-item.open:not(.unit-small) .full-bio,
   #husky100 .grid-item.fyp-units .full-bio {
     position: static;
     width: 100%;
     margin-left: 0;
     padding: 40px 45px 50px;
   }
-  #husky100 .grid-item.open .full-bio .bio-text,
+  #husky100 .grid-item.open:not(.unit-small) .full-bio .bio-text,
   #husky100 .grid-item.fyp-units .full-bio .bio-text {
     max-height: 325px;
   }
-  #husky100 .grid-item.open .full-bio .linkedin,
+  #husky100 .grid-item.open:not(.unit-small) .full-bio .linkedin,
   #husky100 .grid-item.fyp-units .full-bio .linkedin {
     margin: 0;
     width: 38px;
   }
-  #husky100 .grid-item.open .full-bio .linkedin:before,
+  #husky100 .grid-item.open:not(.unit-small) .full-bio .linkedin:before,
   #husky100 .grid-item.fyp-units .full-bio .linkedin:before {
     display: none;
   }
-  #husky100 .grid-item.open .tags,
+  #husky100 .grid-item.open:not(.unit-small) .tags,
   #husky100 .grid-item.fyp-units .tags {
     display: none;
   }
@@ -1475,6 +1476,12 @@
   }
 }
 @media only screen and (max-width: 480px) {
+  #passion .fyp-give-widget-container {
+    margin-top: 80px;
+  }
+  #passion .fyp-give-widget-container iframe {
+    width: 100%;
+  }
   #passion .module-hero-image .row .circle-button-container {
     margin-top: 5px;
   }
