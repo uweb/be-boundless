@@ -155,11 +155,21 @@
   /* Extra Small Devices, Phones */
   /* Custom, iPhone Retina */
 }
+#passion .uw-footer {
+  margin-top: 0;
+  display: none;
+}
 #passion.logged-in .module-hero-image {
+  margin-top: 32px;
+  height: 100%;
+  margin-bottom: calc(-242px);
+}
+#passion div#main-content {
   margin-top: 32px;
 }
 #passion div#main-content ul.grid {
   padding-left: 0;
+  margin-bottom: 0;
 }
 #passion div#main-content .grid-item,
 #passion div#main-content .grid-sizer {
@@ -218,7 +228,6 @@
 #passion .module-hero-image {
   margin-top: 50px;
   height: auto;
-  padding-bottom: 50px;
 }
 #passion .module-hero-image.hide {
   display: none;

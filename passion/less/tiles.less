@@ -6,14 +6,23 @@
 @import "../../../../plugins/template-hierarchy/less/parts/fonts.less";
 
 #passion { 
+  .uw-footer {
+    margin-top: 0;
+    display: none;
+  }
   &.logged-in {
     .module-hero-image {
       margin-top: 32px;
+      height: 100%;
+      margin-bottom: calc(-210px - 32px);
     }
   }
   div#main-content {
+    margin-top: 32px;
     ul.grid {
       padding-left: 0;
+      margin-bottom: 0;
+      //margin-top: 32px;
     }
     .grid-item,
     .grid-sizer {
@@ -77,7 +86,7 @@
   .module-hero-image {
       margin-top: 50px;
       height: auto;
-      padding-bottom: 50px;
+      //padding-bottom: 50px;
       &.hide {
         display: none;
       }
