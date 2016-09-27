@@ -4,12 +4,43 @@
 
 <div class="intro" id="intro-slide">
   <div class="intro-body">
+
+  <div id="ytplayer"></div>
+
+  <script>
+    // Load the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/player_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // Replace the 'ytplayer' element with an <iframe> and
+    // YouTube player after the API code downloads.
+    var player;
+    function onYouTubePlayerAPIReady() {
+      player = new YT.Player('ytplayer', {
+        height: '390',
+        width: '640',
+        playerVars: { 
+          'autoplay': 1, 
+          'controls': 0, 
+          'showinfo': 0, 
+          'modestbranding': 1, 
+          'playlist': 'Vkp4OnEnzCE',
+          'loop': 1 
+        },
+        videoId: 'Vkp4OnEnzCE'
+      });
+    }
+  </script>
+
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-xs-10 col-xs-offset-1 col-xs-offset-1 col-lg-offset-0" id='intro-text'>
-            <!-- <h1>Nurturing minds, <br>opening doors</h1>
-            <p>In South Seattle and south King County, the UW College of Education is partnering with the Road Map Project to close achievement gaps in schools — and open all doors for young learners. -->
-</p>
+
+
+
+
         </div>
       </div>      
     </div>
@@ -47,7 +78,7 @@
       </div>   
     </section>
 
-    <section class="video-block" id="video">
+    <!-- <section class="video-block" id="video">
       <div class="container">
           <div class="row">
               <div class="col-md-10 col-md-offset-1 copy"> 
@@ -63,7 +94,7 @@
       <div id="boundless-video"></div>
       <!-- <small>Learn more about the Dream Project at <a href="http://www.uw.edu/dreamproject">uw.edu/dreamproject</a>.</small>       -->
       
-    </section>
+    </section> -->
 
 
 <div class="person">

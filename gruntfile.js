@@ -38,6 +38,8 @@ module.exports = function(grunt) {
           'immersive-stories/js/common.js',
           'immersive-stories/js/education.js',
           'immersive-stories/js/scholarship.js',
+          'immersive-stories/js/engineering.js',
+          'immersive-stories/js/medicine.js',
           'immersive-stories/js/farmer-brown.js',
           'campaign/js/main.js',
           'immersive-stories/js/education-map.js',
@@ -79,6 +81,14 @@ module.exports = function(grunt) {
           'immersive-stories/js/scholarship.min.js': [
               'immersive-stories/js/common.js',
               'immersive-stories/js/scholarship.js',
+          ],          
+          'immersive-stories/js/engineering.min.js': [
+              'immersive-stories/js/common.js',
+              'immersive-stories/js/engineering.js',
+          ],          
+          'immersive-stories/js/medicine.min.js': [
+              'immersive-stories/js/common.js',
+              'immersive-stories/js/medicine.js',
           ],
           'campaign/js/main.min.js': [
               'campaign/js/main.js',
@@ -127,6 +137,8 @@ module.exports = function(grunt) {
                 'immersive-stories/css/farmer-brown.css': 'immersive-stories/less/farmer-brown.less',
                 'immersive-stories/css/education.css': 'immersive-stories/less/education.less',
                 'immersive-stories/css/scholarship.css': 'immersive-stories/less/scholarship.less',
+                'immersive-stories/css/medicine.css': 'immersive-stories/less/medicine.less',
+                'immersive-stories/css/engineering.css': 'immersive-stories/less/engineering.less',
                 'immersive-stories/css/education-map.css': 'immersive-stories/less/education-map.less',
                 'immersive-stories/css/leadership.css': 'immersive-stories/less/leadership.less',
                 'campaign/css/campaign-style.css': 'campaign/**/*.less',
