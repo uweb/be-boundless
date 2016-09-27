@@ -153,6 +153,7 @@ $(window).load(function(){
       // Triggers open upon return key
       $(document).keypress(function(e) {
           if(e.which == 13) {
+              e.preventDefault();
               $(e.target).trigger('click')
           }
       });
@@ -249,6 +250,12 @@ $(window).load(function(){
       $('.fyp-close-button-gradient').addClass('show');
       $grid.isotope({ filter: '.' + filterValue + ':not(.unit-small)' });
    });
+
+   // $('.fyp-search-bar').on('keydown', function(e){
+      // if(e.which == 13) {
+      //         e.preventDefault();
+      // }
+   // })
 
 
 });  

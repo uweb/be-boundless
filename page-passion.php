@@ -265,16 +265,6 @@
                 <h3><?php echo $unit->post_title; ?></h3>
                 <p class="short-desc"><?php //echo $fund->desc; ?></p>
               </div>
-              <div tabindex="0" class="full-bio">
-                <h2><?php echo $unit->post_title; ?></h2>
-                    <!-- INSERT LINK TO PAGE HERE??? -->
-                <div class="bio-text">
-                  <p><?php echo apply_filters('the_content', $unit->post_content); ?></p>
-                </div>
-                <div class="give-button">
-                  <a href="#" class="give-link" data-code="<?php echo $unitcodes; ?>">Give Now</a> 
-                </div>
-              </div>
             </div>
           </li>
 
