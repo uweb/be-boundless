@@ -1223,6 +1223,9 @@
     iframe {
       margin-right: auto;
       margin-left: auto;
+      min-width: 662px;
+      display: block;
+      height: 763px;
     }
   }
 
@@ -1278,6 +1281,11 @@
 }
 
 @media only screen and (max-width : 768px) {
+  #passion .fyp-give-widget-container iframe {
+    min-width: 0;
+    width: 90%;
+  }
+
   #passion .module-hero-image {
     .row {
       padding-left: 0;
@@ -1416,6 +1424,13 @@
 }
 
 @media only screen and (max-width : 480px) {
+  #passion .fyp-give-widget-container {
+    margin-top: 80px;
+    iframe {
+      width: 100%;
+    }
+  }
+
   #passion .module-hero-image .row{
     .circle-button-container {
       margin-top: 5px;
