@@ -159,10 +159,11 @@
   margin-top: 0;
   display: none;
 }
+#passion.logged-in #campaign-header {
+  top: 32px;
+}
 #passion.logged-in .module-hero-image {
-  margin-top: 32px;
-  height: 100%;
-  margin-bottom: calc(-242px);
+  margin-top: 82px;
 }
 #passion div#main-content {
   margin-top: 32px;
@@ -227,7 +228,9 @@
 }
 #passion .module-hero-image {
   margin-top: 50px;
-  height: auto;
+  height: 100%;
+  min-height: 1075px;
+  margin-bottom: calc(-242px);
 }
 #passion .module-hero-image.hide {
   display: none;

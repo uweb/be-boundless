@@ -11,10 +11,11 @@
     display: none;
   }
   &.logged-in {
+    #campaign-header {
+      top: 32px;
+    }
     .module-hero-image {
-      margin-top: 32px;
-      height: 100%;
-      margin-bottom: calc(-210px - 32px);
+      margin-top: 82px;
     }
   }
   div#main-content {
@@ -85,7 +86,9 @@
 
   .module-hero-image {
       margin-top: 50px;
-      height: auto;
+      height: 100%;
+      min-height: 1075px;
+      margin-bottom: calc(-210px - 32px);
       //padding-bottom: 50px;
       &.hide {
         display: none;
