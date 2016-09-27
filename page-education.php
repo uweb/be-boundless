@@ -54,8 +54,8 @@
       <div class="container">
           <div class="row">
               <div class="col-md-10 col-md-offset-1 copy">
-                
 
+<p class="headline-gold left">Lakeridge used to be one of the lowest-achieving schools in Washington</p>
 <p>Teachers like Brown make leading these lessons look easy, but the school’s next-level learning environment actually came about through a deep collaboration between Lakeridge and researchers from the University of Washington <a href="https://education.uw.edu/">College of Education</a>. The three-year partnership produced a total transformation for Lakeridge, marking a complete 180 from where the school had previously been. </p>
 <p>In the fall of 2010, Lakeridge faced a crisis: They were federally designated as one of the persistently lowest-achieving schools in Washington state. Test scores were in the bottom five percent, meaning that only one in five students could comprehend math at their grade level. </p>
 <p>“We were heartbroken,” recalls Brown. “We had been working really hard on reading, and saw scores improve. But then we got the news that it still wasn’t enough.”</p>
@@ -130,7 +130,7 @@
               <div class="container">
                   <div class="row">
                       <div class="col-md-10 col-md-offset-1 copy">
-
+                      <p class="headline-gold left">UW College of Education partnered with seven school districts to bring higher quality education</p>
                       <p>That same year, communities from seven school districts in South Seattle and south King County — including Lakeridge’s Renton School District — joined together and with many other organizational partners, including the College of Education, to launch the <a href="http://www.roadmapproject.org/">Road Map Project</a>, a program aimed at closing achievement gaps and making access to a quality education more equitable throughout the region. </p>
                       <p>“We know that many of our students come from homes where English isn’t the first language, where there’s poverty and transiency,” explains Jessica Granger, Lakeridge principal from 2011 to 2016. “They face more challenges than the average child, but that can’t be an excuse. You can’t blame children.”</p>
                       <p>With math selected as a subject in marked need of improvement, Granger was soon in contact with <a href="https://education.uw.edu/people/faculty/ekazemi">Elham Kazemi</a> at the UW College of Education. Kazemi, the Geda and Phil Condit professor in math and science education, had previously worked with other schools on professional development, but knew that for Lakeridge an intense — and unprecedented — partnership would be needed.</p>  
@@ -170,6 +170,7 @@
               <div class="row">
                   <div class="col-md-10 col-md-offset-1 copy">
 
+<p class="headline-gold left">Kids are capable regardless of their socioeconomic status</p>
 <p>“We wanted to develop a culture of learning where teachers felt confident and supported,” says Kazemi. She knew that investing in adult learning would lead to higher-quality learning and improved test scores for students. </p>
 
 <div class="side-pic" id="pic1">
@@ -219,7 +220,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy">
-                  
+                
+                <p class="headline-gold left">Investing in school leadership can make change happen</p>
                 <p>By the end of the partnership, it was clear that the hard work paid off. Test scores rose across the school. Fifth-grade scores, in particular, saw dramatic change; the percent of students meeting math standards jumped from 20 percent to nearly 80. </p>
                 
                 <div class="side-pic" id="pic2">
