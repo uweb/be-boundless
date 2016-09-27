@@ -185,10 +185,10 @@
   -webkit-transform: rotate(45deg);
   z-index: 99;
   background: rgba(128, 128, 128, 0.3);
-  background: -webkit-linear-gradient(#000000, rgba(128, 128, 128, 0));
-  background: -o-linear-gradient(#000000, rgba(128, 128, 128, 0));
-  background: -moz-linear-gradient(#000000, rgba(128, 128, 128, 0));
-  background: linear-gradient(#000000, rgba(128, 128, 128, 0));
+  background: -webkit-linear-gradient(#000000, rgba(0, 0, 0, 0));
+  background: -o-linear-gradient(#000000, rgba(0, 0, 0, 0));
+  background: -moz-linear-gradient(#000000, rgba(0, 0, 0, 0));
+  background: linear-gradient(#000000, rgba(0, 0, 0, 0));
 }
 #passion .fyp-close-button-gradient.show {
   display: block;
@@ -415,7 +415,7 @@
   z-index: 1;
 }
 #passion .grid {
-  background: url(../assets/stripes.svg) #e8e8e8;
+  background: url(../assets/stripes.svg) #E8E8E8;
 }
 #passion .full-bio {
   display: none;
@@ -864,6 +864,8 @@
   #passion .infographic {
     width: calc(100%);
   }
+}
+@media only screen and (max-width: 320px) {
 }
 #passion .grid-item.special {
   background-color: #4b2e83;
