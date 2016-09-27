@@ -1207,31 +1207,22 @@
     }
   }
 
-  .fyp-give-widget-container {
-    position: absolute;
+  .fyp-give-widget-lightbox {
+    position: fixed;
     height: 100%;
     width: 100%;
-    z-index: 88;
+    z-index: 1;
     background: rgba(255,255,255,.7);
-    .FYP-give-widget-exit {
-      // height: 70px;
-      // width: 70px;
-      // position: absolute;
-      // top: 80px;
-      // right: 40px;
-      // z-index: 999;
-      // &:hover,
-      // &:active,
-      // &:focus  {
-      //   svg g line{
-      //     stroke: #4b2e83;
-      //   }
-      // }
-    }
+    
+  }
+  .fyp-give-widget-container {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    margin-top: 5%;
     iframe {
       margin-right: auto;
       margin-left: auto;
-      margin-top: 10%;
     }
   }
 

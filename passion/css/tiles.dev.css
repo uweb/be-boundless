@@ -1277,17 +1277,22 @@
 #passion .headlines h3 {
   font-size: 25px;
 }
-#passion .fyp-give-widget-container {
-  position: absolute;
+#passion .fyp-give-widget-lightbox {
+  position: fixed;
   height: 100%;
   width: 100%;
-  z-index: 88;
+  z-index: 1;
   background: rgba(255, 255, 255, 0.7);
+}
+#passion .fyp-give-widget-container {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  margin-top: 5%;
 }
 #passion .fyp-give-widget-container iframe {
   margin-right: auto;
   margin-left: auto;
-  margin-top: 10%;
 }
 @media only screen and (max-width: 1200px) {
   #passion .module-hero-image .circle-button-container {
