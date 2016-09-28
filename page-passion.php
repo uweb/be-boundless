@@ -93,7 +93,7 @@
                </ul>
                <ul id="fyp-units-filters" class="fyp-filters">
                  <?php
-                  $args = array('post_type' => 'units', 'fields' => 'ids', 'numberposts' => '-1');
+                  $args = array('post_type' => 'units', 'fields' => 'ids', 'orderby' => 'title', 'order' => 'asc', 'numberposts' => '-1');
                   $units = get_posts($args);
                   foreach ($units as $unit => $ID) {
                       $title = get_the_title($ID);
