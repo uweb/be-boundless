@@ -77,7 +77,7 @@
              <div class="fyp-filter-triggers" data-name="fyp-purposes-filters"><a href="#"><div class="flip-container">
                <div class="circle-icon front"><p class="fyp-filter-icon fyp-cert"></p></div>
                <div class="circle-icon back"><p class="fyp-filter-icon fyp-cert"></p></div>
-             </div><p class="circle-text">Funding Purpose</p></a></div>
+             </div><p class="circle-text">UW Priorities</p></a></div>
              <hr align="left">
              <div id="fyp-filters-box" class="fyp-filters-box">
                <ul id="fyp-causes-filters" class="fyp-filters">
@@ -93,7 +93,7 @@
                </ul>
                <ul id="fyp-units-filters" class="fyp-filters">
                  <?php
-                  $args = array('post_type' => 'units', 'fields' => 'ids', 'numberposts' => '-1');
+                  $args = array('post_type' => 'units', 'fields' => 'ids', 'orderby' => 'title', 'order' => 'asc', 'numberposts' => '-1');
                   $units = get_posts($args);
                   foreach ($units as $unit => $ID) {
                       $title = get_the_title($ID);
@@ -237,7 +237,7 @@
            
            ?>
            
-            <li tabindex="0" data-name="<?php echo $slug; ?>" data-img="<?php echo $unitimageurlhigh; ?>" class="grid-item fyp-units unit-item open <?php echo $slug; ?>">
+            <li tabindex="0" data-name="<?php echo $slug; ?>" id="#<?php echo $slug; ?>" data-img="<?php echo $unitimageurlhigh; ?>" class="grid-item fyp-units unit-item open <?php echo $slug; ?>">
             <div class="flipper" role="button">
               <div tabindex="0" class="full-bio">
                 <h2><?php echo $unit->post_title; ?></h2>

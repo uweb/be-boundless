@@ -58,15 +58,15 @@ $(function(){
 
 
     // Video player
-    var videoTriggerScholarhip = new ScrollMagic.Scene({
-      triggerElement: '#video',
-      triggerHook: 1
-    })
-    .on("start", function(){
-      videoPlay("https://www.youtube.com/embed/l3SLvfzwVkU?autoplay=1&rel=0&amp;showinfo=0&amp");
-    })
-    .reverse(false)
-    .addTo(controllerScholarship);
+    // var videoTriggerScholarhip = new ScrollMagic.Scene({
+    //   triggerElement: '#video',
+    //   triggerHook: 1
+    // })
+    // .on("start", function(){
+    //   videoPlay("https://www.youtube.com/embed/l3SLvfzwVkU?autoplay=1&rel=0&amp;showinfo=0&amp");
+    // })
+    // .reverse(false)
+    // .addTo(controllerScholarship);
 
 
 

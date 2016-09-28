@@ -141,6 +141,10 @@ $(window).load(function(){
         $searcher.toggleClass('is-checked');
       })
 
+      // $('#searcher').on('keyup', function(e){
+      //   scrollIt($("#searcher"));
+      // })
+
       // Close on escape
       $(document).on('keyup',function(evt) {
           if (evt.keyCode == 27 && $( "#searcher" ).hasClass('is-checked')) {
@@ -210,15 +214,17 @@ $(window).load(function(){
    $('.fyp-filter-click').on('click', function(e){
       e.preventDefault();
       var filterValue = $( this ).attr('data-filter');
-      $('.module-hero-image').addClass('hide');
+      //$('.module-hero-image').addClass('hide');
       $('.FYP-home-button').addClass('show');
       $('.fyp-close-button-gradient').addClass('show');
       $grid.isotope({ filter: '.' + filterValue + ':not(.unit-small)' });
+      scrollIt($("#main-content"));
    })
 
    $('.FYP-home-button').on('click', function(e){
       e.preventDefault();
-      $('.module-hero-image').removeClass('hide');
+      scrollIt($('body'));
+      //$('.module-hero-image').removeClass('hide');
       $('.FYP-home-button').removeClass('show');
       $('.fyp-close-button-gradient').removeClass('show');
       $grid.isotope({ filter: '.featured' });
@@ -228,16 +234,19 @@ $(window).load(function(){
       e.preventDefault();
       var allocCode = $( this ).attr('data-code');
       $('.FYP-home-button').removeClass('show');
-      $('body').prepend('<div class="fyp-give-widget-container">' +
-                          '<iframe src="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?source_typ=3&source=' + allocCode + '&frame_buster=false" title="Giving at the UW" id="UWFOnlineGivingForm" frameborder="0" scrolling="yes" onload="try{document.domain=\'washington.edu\'}catch(e){}" style="display: block; min-width: 662px; height: 763px;"></iframe>' +
+      $('body').prepend('<div class="fyp-give-widget-lightbox"></div>' +
+                        '<div class="fyp-give-widget-container">' +
+                          '<iframe src="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?source_typ=3&source=' + allocCode + '&frame_buster=false" title="Giving at the UW" id="UWFOnlineGivingForm" frameborder="0" scrolling="yes" onload="try{document.domain=\'washington.edu\'}catch(e){}"></iframe>' +
                         '</div>' +
                         '<a class="FYP-give-widget-exit show"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.75px" height="46.812px" viewBox="0 0 46.75 46.812" enable-background="new 0 0 46.75 46.812" xml:space="preserve"><g><line fill="none" stroke="#FFF" stroke-miterlimit="10" x1="1.011" y1="1.001" x2="46.011" y2="46.001"/><line fill="none" stroke="#FFF" stroke-miterlimit="10" x1="46.011" y1="1.001" x2="1.011" y2="46.001"/></g></svg></a>');
 
       $('.FYP-give-widget-exit').on('click', function(e){
           e.preventDefault();
-          $('.FYP-give-widget-exit').removeClass('show');
+          scrollIt($('#passion'));
           $('.FYP-home-button').addClass('show');
           $('.fyp-give-widget-container').remove();
+          $('.fyp-give-widget-lightbox').remove();
+          $('.FYP-give-widget-exit').remove();
        });
    })
 
@@ -245,7 +254,7 @@ $(window).load(function(){
       console.log('focus');
       e.preventDefault();
       var filterValue = $( this ).attr('data-name');
-      $('.module-hero-image').addClass('hide');
+      //$('.module-hero-image').addClass('hide');
       $('.FYP-home-button').addClass('show');
       $('.fyp-close-button-gradient').addClass('show');
       $grid.isotope({ filter: '.' + filterValue + ':not(.unit-small)' });

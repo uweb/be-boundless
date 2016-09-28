@@ -6,14 +6,24 @@
 @import "../../../../plugins/template-hierarchy/less/parts/fonts.less";
 
 #passion { 
+  .uw-footer {
+    margin-top: 0;
+    display: none;
+  }
   &.logged-in {
+    #campaign-header {
+      top: 32px;
+    }
     .module-hero-image {
-      margin-top: 32px;
+      margin-top: 82px;
     }
   }
   div#main-content {
+    margin-top: 32px;
     ul.grid {
       padding-left: 0;
+      margin-bottom: 0;
+      //margin-top: 32px;
     }
     .grid-item,
     .grid-sizer {
@@ -32,7 +42,7 @@
 
   .fyp-close-button-gradient {
     display: none;
-    position: absolute;
+    position: fixed;
     top: -50px;
     right: -100px;
     height: 200px;
@@ -55,7 +65,7 @@
     display: none;
     height: 70px;
     width: 70px;
-    position: absolute;
+    position: fixed;
     top: 60px;
     right: 0px;
     // background: url(../assets/x.svg) no-repeat 0 0;
@@ -76,8 +86,10 @@
 
   .module-hero-image {
       margin-top: 50px;
-      height: auto;
-      padding-bottom: 50px;
+      height: 100%;
+      min-height: 1075px;
+      margin-bottom: calc(-210px - 32px);
+      //padding-bottom: 50px;
       &.hide {
         display: none;
       }
@@ -1207,31 +1219,25 @@
     }
   }
 
-  .fyp-give-widget-container {
-    position: absolute;
+  .fyp-give-widget-lightbox {
+    position: fixed;
     height: 100%;
     width: 100%;
-    z-index: 88;
+    z-index: 1;
     background: rgba(255,255,255,.7);
-    .FYP-give-widget-exit {
-      // height: 70px;
-      // width: 70px;
-      // position: absolute;
-      // top: 80px;
-      // right: 40px;
-      // z-index: 999;
-      // &:hover,
-      // &:active,
-      // &:focus  {
-      //   svg g line{
-      //     stroke: #4b2e83;
-      //   }
-      // }
-    }
+    
+  }
+  .fyp-give-widget-container {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    margin-top: 5%;
     iframe {
       margin-right: auto;
       margin-left: auto;
-      margin-top: 10%;
+      min-width: 662px;
+      display: block;
+      height: 763px;
     }
   }
 
@@ -1287,6 +1293,11 @@
 }
 
 @media only screen and (max-width : 768px) {
+  #passion .fyp-give-widget-container iframe {
+    min-width: 0;
+    width: 90%;
+  }
+
   #passion .module-hero-image {
     .row {
       padding-left: 0;
@@ -1425,6 +1436,13 @@
 }
 
 @media only screen and (max-width : 480px) {
+  #passion .fyp-give-widget-container {
+    margin-top: 80px;
+    iframe {
+      width: 100%;
+    }
+  }
+
   #passion .module-hero-image .row{
     .circle-button-container {
       margin-top: 5px;
