@@ -186,7 +186,7 @@
 }
 #passion .fyp-close-button-gradient {
   display: none;
-  position: absolute;
+  position: fixed;
   top: -50px;
   right: -100px;
   height: 200px;
@@ -209,7 +209,7 @@
   display: none;
   height: 70px;
   width: 70px;
-  position: absolute;
+  position: fixed;
   top: 60px;
   right: 0px;
   z-index: 999;

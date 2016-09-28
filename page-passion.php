@@ -237,7 +237,7 @@
            
            ?>
            
-            <li tabindex="0" data-name="<?php echo $slug; ?>" data-img="<?php echo $unitimageurlhigh; ?>" class="grid-item fyp-units unit-item open <?php echo $slug; ?>">
+            <li tabindex="0" data-name="<?php echo $slug; ?>" id="#<?php echo $slug; ?>" data-img="<?php echo $unitimageurlhigh; ?>" class="grid-item fyp-units unit-item open <?php echo $slug; ?>">
             <div class="flipper" role="button">
               <div tabindex="0" class="full-bio">
                 <h2><?php echo $unit->post_title; ?></h2>
