@@ -427,7 +427,7 @@
   z-index: 1;
 }
 #passion .grid {
-  background: url(../assets/stripes.svg) #E8E8E8;
+  background: url(../assets/stripes.svg) #e8e8e8;
 }
 #passion .full-bio {
   display: none;
@@ -647,7 +647,7 @@
   #passion .grid-item.open:not(.unit-small).unit-item div.full-bio,
   #passion .grid-sizer.fyp-units.unit-item div.full-bio,
   #passion .grid-item.fyp-units.unit-item div.full-bio {
-    margin-right: 24.8%;
+    margin-right: 34.8%;
     margin-left: 0;
   }
   #passion .special {
@@ -876,8 +876,6 @@
   #passion .infographic {
     width: calc(100%);
   }
-}
-@media only screen and (max-width: 320px) {
 }
 #passion .grid-item.special {
   background-color: #4b2e83;
