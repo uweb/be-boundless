@@ -77,7 +77,7 @@
              <div class="fyp-filter-triggers" data-name="fyp-purposes-filters"><a href="#"><div class="flip-container">
                <div class="circle-icon front"><p class="fyp-filter-icon fyp-cert"></p></div>
                <div class="circle-icon back"><p class="fyp-filter-icon fyp-cert"></p></div>
-             </div><p class="circle-text">Funding Purpose</p></a></div>
+             </div><p class="circle-text">UW Priorities</p></a></div>
              <hr align="left">
              <div id="fyp-filters-box" class="fyp-filters-box">
                <ul id="fyp-causes-filters" class="fyp-filters">
