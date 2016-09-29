@@ -1310,6 +1310,9 @@
   height: 763px;
 }
 @media only screen and (max-width: 1200px) {
+  #passion .module-hero-image {
+    padding-bottom: 32px;
+  }
   #passion .module-hero-image .circle-button-container {
     width: 100%;
   }
@@ -1347,6 +1350,9 @@
   #passion .fyp-give-widget-container iframe {
     min-width: 0;
     width: 90%;
+  }
+  #passion .module-hero-image {
+    padding-bottom: 152px;
   }
   #passion .module-hero-image .row {
     padding-left: 0;
@@ -1482,6 +1488,9 @@
   }
   #passion .fyp-give-widget-container iframe {
     width: 100%;
+  }
+  #passion .module-hero-image {
+    margin-bottom: 242px;
   }
   #passion .module-hero-image .row .circle-button-container {
     margin-top: 5px;
