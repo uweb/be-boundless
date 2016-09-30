@@ -229,7 +229,7 @@
 
 
 <div class="person">
-    <section id="starla" class="portrait-block right starla arrow">
+    <section id="starla" class="portrait-block left starla arrow">
       <div class="portrait">
 
       </div>

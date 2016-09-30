@@ -22,17 +22,17 @@ $.when(
 var player;
 function onYouTubePlayerAPIReady() {
   player = new YT.Player('ytplayer', {
-    height: '390',
-    width: '640',
+    height: '720',
+    width: '1280',
     playerVars: { 
       'autoplay': 1, 
       'controls': 0, 
       'showinfo': 0, 
       'modestbranding': 1,
       'loop': 1, 
-      'playlist': 'Vkp4OnEnzCE',
+      'playlist': '7_bqqF9fZxI',
     },
-    videoId: 'Vkp4OnEnzCE',
+    videoId: '7_bqqF9fZxI',
     events: {
         onReady: onPlayerReady
     }

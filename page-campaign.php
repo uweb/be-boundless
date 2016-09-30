@@ -55,7 +55,7 @@
         ><section tabindex="0"  class="section" id="slide2" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg2.jpg">
           <div id="slide2text">
             <h2>It starts with the things you hold dear:<br>
-              Your ideas and ideals; <br>
+              Your ideas and ideals. <br>
               Your hopes and dreams. 
             </h2>
           </div>
@@ -63,35 +63,39 @@
         </section
         ><section tabindex="0"  class="section" id="slide3" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg3.jpg">
           <div id="slide3text">
-            <h2>Bring your aspirations to life as you link arms with students, faculty and staff who unite promise with possibility every day.</h2>
+            <h2>Bring your aspirations to life. Link arms with students, faculty and staff who unite promise with possibility.</h2>
           </div>
           <span class="slide3-content"></span>
         </section
         ><section tabindex="0"  class="section" id="slide4" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg4.jpg">
           <div id="slide3text">
             <h2>YOU CAN TRANSFORM THE STUDENT EXPERIENCE   </h2>
-            <p>Ensuring access to excellence for all students is at the core of our public mission. Discover how supporting opportunities that enrich future thought leaders can champion the student experience. </p>
+            <p>Ensuring access to excellence for all students is at the core of our public mission. Discover how supporting opportunities that enrich future thought leaders can champion the student experience for people like Anthony Martinez. </p>
             <a href="scholarship" data-js="scholarship" data-title="Bridging the education gap" class="uw-btn btn-sm">Learn more</a>          
           </div>
           <span class="slide4-content"></span>
         </section><section tabindex="0"  class="section" id="slide5" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg5.jpg">
           <div id="slide4text">
-            
+            <h2>YOU CAN DRIVE <br>THE PUBLIC GOOD </h2>
+            <p>Our foundation is rooted in serving communities near and far. Explore 
+            how committing to initiatives that promote health, equity and diversity can 
+            unleash human potential in our friends and neighbors in the Road Map region 
+            — and beyond. </p>
           </div>
           <span class="slide4-content"></span>
         </section><section tabindex="0"  class="section" id="slide6" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg6.jpg">
           <div id="slide4text">
-            <h2>YOU CAN TRANSFORM THE STUDENT EXPERIENCE   </h2>
-            <p>Ensuring access to excellence for all students is at the core of our
-public mission. Discover how supporting opportunities that enrich 
-future thought leaders can champion the student experience. </p>
+                      <h2>YOU CAN EXPAND OUR IMPACT<br>
+          — EVERYWHERE   </h2>
+                      <p>Unearthing solutions to tomorrow’s grand challenges is what drives us. 
+          The Institute for Stem Cell &amp; Regenerative Medicine is one example of how investing in UW faculty and research can make a mark worldwide.</p>
             <a href="scholarship" data-js="scholarship" data-title="Bridging the education gap" class="uw-btn btn-sm">Learn more</a>
           </div>
           <span class="slide2-content"></span>
         </section><section tabindex="0"  class="section" id="slide7" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg7.jpg">
           <div id="slide4text">
-            <h2>YOU CAN DRIVE THE PUBLIC GOOD </h2>
-            <p>Serve communities near and far. You can unleash human potential by committing to initiatives that promote health, equity and diversity for our friends and neighbors in Washington and beyond.</p>
+            <h2>YOU CAN EMPOWER POSSIBILITY THROUGH INNOVATION  </h2>
+            <p>Creativity is embedded in our DNA. Learn how contributing to the people and programs that fuel our local and global ecosystem can encourage an entrepreneurial, pioneering spirit to help people like Jayna Bean. </p>
             <a href="education" data-js="education" data-title="Bridging the education gap" class="uw-btn btn-sm">Learn more</a>
           </div>
           <span class="slide2-content"></span>
@@ -101,6 +105,7 @@ future thought leaders can champion the student experience. </p>
   </div>
 
   
+
 
   <div id="scrubCont"><div id="padder"><div id="scrub"></div></div></div>
 
