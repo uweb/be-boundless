@@ -10,17 +10,16 @@
   <title> <?php wp_title(' | ',TRUE,'right'); bloginfo('name'); ?> </title>
 
    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/passion/css/tiles.css' ?>" type="text/css">
-   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/campaign/css/campaign-style.css' ?>" type="text/css">
-   
-      
-  <link rel='stylesheet' id='uw-master-css'  href='<?php echo bloginfo("template_directory") . '/style.css' ?>' type='text/css' media='all' />
+   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>" type="text/css">
+   <link rel='stylesheet' id='uw-master-css'  href='<?php echo bloginfo("template_directory") . '/style.css' ?>' type='text/css' media='all' />
   <link rel='stylesheet' id='google-font-open-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C700italic%2C400%2C700&#038;' type='text/css' media='all' />
-  <link rel='stylesheet' id='uw-style-css'  href='<?php echo get_stylesheet_directory_uri() . '/style.css' ?>' type='text/css' media='all' />
+
   <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
   <script type='text/javascript' src='https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js'></script>
 
-   <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/main.js' ?>" type="text/javascript"></script>
+   <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script> 
+  <script src="<?php echo get_stylesheet_directory_uri() . '/passion/js/tiles.js' ?>" type="text/javascript"></script>
 
   
   
@@ -73,11 +72,11 @@
              <div class="fyp-filter-triggers" data-name="fyp-units-filters"><a href="#"><div class="flip-container">
                <div class="circle-icon front"><p class="fyp-filter-icon fyp-school"></p></div>
                <div class="circle-icon back"><p class="fyp-filter-icon fyp-school"></p></div>
-             </div><p class="circle-text">Schools, Colleges &amp; Campuses</p></a></div>
+             </div><p class="circle-text">Schools, colleges, campuses, other key areas</p></a></div>
              <div class="fyp-filter-triggers" data-name="fyp-purposes-filters"><a href="#"><div class="flip-container">
                <div class="circle-icon front"><p class="fyp-filter-icon fyp-cert"></p></div>
                <div class="circle-icon back"><p class="fyp-filter-icon fyp-cert"></p></div>
-             </div><p class="circle-text">Funding Purpose</p></a></div>
+             </div><p class="circle-text">UW Priorities</p></a></div>
              <hr align="left">
              <div id="fyp-filters-box" class="fyp-filters-box">
                <ul id="fyp-causes-filters" class="fyp-filters">
@@ -93,7 +92,7 @@
                </ul>
                <ul id="fyp-units-filters" class="fyp-filters">
                  <?php
-                  $args = array('post_type' => 'units', 'fields' => 'ids', 'numberposts' => '-1');
+                  $args = array('post_type' => 'units', 'fields' => 'ids', 'orderby' => 'title', 'order' => 'asc', 'numberposts' => '-1');
                   $units = get_posts($args);
                   foreach ($units as $unit => $ID) {
                       $title = get_the_title($ID);
@@ -237,7 +236,7 @@
            
            ?>
            
-            <li tabindex="0" data-name="<?php echo $slug; ?>" data-img="<?php echo $unitimageurlhigh; ?>" class="grid-item fyp-units unit-item open <?php echo $slug; ?>">
+            <li tabindex="0" data-name="<?php echo $slug; ?>" id="#<?php echo $slug; ?>" data-img="<?php echo $unitimageurlhigh; ?>" class="grid-item fyp-units unit-item open <?php echo $slug; ?>">
             <div class="flipper" role="button">
               <div tabindex="0" class="full-bio">
                 <h2><?php echo $unit->post_title; ?></h2>
@@ -361,11 +360,7 @@
     </div>
 </div>
 
-
-
-
-
 <!-- ////////////////// -->
 
-
-<?php  get_template_part('footer'); ?>
+</body>
+</html>

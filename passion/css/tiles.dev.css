@@ -159,10 +159,11 @@
   margin-top: 0;
   display: none;
 }
+#passion.logged-in #campaign-header {
+  top: 32px;
+}
 #passion.logged-in .module-hero-image {
-  margin-top: 32px;
-  height: 100%;
-  margin-bottom: calc(-242px);
+  margin-top: 82px;
 }
 #passion div#main-content {
   margin-top: 32px;
@@ -185,7 +186,7 @@
 }
 #passion .fyp-close-button-gradient {
   display: none;
-  position: absolute;
+  position: fixed;
   top: -50px;
   right: -100px;
   height: 200px;
@@ -195,10 +196,10 @@
   -webkit-transform: rotate(45deg);
   z-index: 99;
   background: rgba(128, 128, 128, 0.3);
-  background: -webkit-linear-gradient(#000000, rgba(128, 128, 128, 0));
-  background: -o-linear-gradient(#000000, rgba(128, 128, 128, 0));
-  background: -moz-linear-gradient(#000000, rgba(128, 128, 128, 0));
-  background: linear-gradient(#000000, rgba(128, 128, 128, 0));
+  background: -webkit-linear-gradient(#000000, rgba(0, 0, 0, 0));
+  background: -o-linear-gradient(#000000, rgba(0, 0, 0, 0));
+  background: -moz-linear-gradient(#000000, rgba(0, 0, 0, 0));
+  background: linear-gradient(#000000, rgba(0, 0, 0, 0));
 }
 #passion .fyp-close-button-gradient.show {
   display: block;
@@ -208,7 +209,7 @@
   display: none;
   height: 70px;
   width: 70px;
-  position: absolute;
+  position: fixed;
   top: 60px;
   right: 0px;
   z-index: 999;
@@ -227,7 +228,9 @@
 }
 #passion .module-hero-image {
   margin-top: 50px;
-  height: auto;
+  height: 100%;
+  min-height: 1075px;
+  margin-bottom: calc(-242px);
 }
 #passion .module-hero-image.hide {
   display: none;
@@ -644,7 +647,7 @@
   #passion .grid-item.open:not(.unit-small).unit-item div.full-bio,
   #passion .grid-sizer.fyp-units.unit-item div.full-bio,
   #passion .grid-item.fyp-units.unit-item div.full-bio {
-    margin-right: 24.8%;
+    margin-right: 34.8%;
     margin-left: 0;
   }
   #passion .special {
@@ -1309,6 +1312,9 @@
   height: 763px;
 }
 @media only screen and (max-width: 1200px) {
+  #passion .module-hero-image {
+    padding-bottom: 32px;
+  }
   #passion .module-hero-image .circle-button-container {
     width: 100%;
   }
@@ -1346,6 +1352,9 @@
   #passion .fyp-give-widget-container iframe {
     min-width: 0;
     width: 90%;
+  }
+  #passion .module-hero-image {
+    padding-bottom: 242px;
   }
   #passion .module-hero-image .row {
     padding-left: 0;
@@ -1481,6 +1490,9 @@
   }
   #passion .fyp-give-widget-container iframe {
     width: 100%;
+  }
+  #passion .module-hero-image {
+    padding-bottom: 242px;
   }
   #passion .module-hero-image .row .circle-button-container {
     margin-top: 5px;
