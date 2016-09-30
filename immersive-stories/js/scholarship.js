@@ -1,6 +1,61 @@
+
+//Youtube player API
+
+
+$.when(
+    $.getScript( 'https://www.youtube.com/player_api' ),
+        $.Deferred(function( deferred ){
+            $( deferred.resolve );
+        }
+    )
+).done(onPlayerReady);     
+
+// Load the IFrame Player API code asynchronously.
+// var tag = document.createElement('script');
+// tag.src = "https://www.youtube.com/player_api";
+// var firstScriptTag = document.getElementsByTagName('script')[0];
+// firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
+// Replace the 'ytplayer' element with an <iframe> and
+// YouTube player after the API code downloads.
+var player;
+function onYouTubePlayerAPIReady() {
+  player = new YT.Player('ytplayer', {
+    height: '390',
+    width: '640',
+    playerVars: { 
+      'autoplay': 1, 
+      'controls': 0, 
+      'showinfo': 0, 
+      'modestbranding': 1,
+      'loop': 1, 
+      'playlist': 'Vkp4OnEnzCE',
+    },
+    videoId: 'Vkp4OnEnzCE',
+    events: {
+        onReady: onPlayerReady
+    }
+  });
+}
+
+function onPlayerReady(event){
+    event.target.playVideo();
+}
+
+
 $(function(){
 
     var controllerScholarship = new ScrollMagic.Controller()
+
+    var scholarIntro = new ScrollMagic.Scene({
+      triggerElement: "#intro-slide",
+      triggerHook: 0,
+      duration: '100%',
+    })
+    .setClassToggle("body", 'hide-dots')
+    //.addIndicators()
+    .addTo(controllerScholarship);
 
     var svg1 = new ScrollMagic.Scene({
       triggerElement: "#section1",
@@ -83,8 +138,6 @@ $(function(){
     })
 
 
-
-
     function videoAdder(el, $el){
         $el.addClass('active');
         // Dynamically add video
@@ -110,7 +163,6 @@ $(function(){
             })
         } 
     }
-
 
     $('.video-auto').each(function(index,element){
         var $this = $(element);

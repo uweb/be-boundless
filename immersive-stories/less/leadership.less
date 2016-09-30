@@ -47,7 +47,7 @@ main {
     text-align: center;
     color: white;
     overflow: hidden;
-    text-align: left;
+    text-align: center;
     .udub-slant span {
         margin-left: -100px;
         background-color: @lightgold;
@@ -82,18 +82,10 @@ main {
         .active-header & {
             padding-top: 160px;
         }
-        h1 {
-
-        }
-        p {
-
-        }
 
     }
     @media(min-width:1600px) {
-       h1 {
-        
-       }
+
     }
 }
 
@@ -108,12 +100,14 @@ main {
         font-weight: 300;
         margin: 40px 0;
         text-align: center;
+        line-height: 1.5;
     }
 
     @media(max-width:768px) {
         h3 {
             font-size: 18px;
             margin: 10px 0;
+            line-height: 1.8;
         }
     }
 }
@@ -130,18 +124,30 @@ main {
 
 // Thermo section
 
+.thermo {
+    margin: 40px 0 50px;
+}
 #thermo {
     height: 48px;
     background-image: url("@{leadership}/thermo.svg");
     background-repeat: no-repeat;
     background-color: @purple;
-    .transition(background-position .7s ease-out);
+    .transition(all .7s ease-out);
     overflow: hidden;
     display: block;
     z-index: 10;
     position: relative;
     &.inactive {
         background-position: -80vw 0 !important;
+        ul {
+            li {
+                &:nth-child(1) {
+                    p {
+                        color: #f3f0e6;
+                    }
+                }
+            }
+        }
     }
     ul {
         padding: 0;
@@ -189,6 +195,7 @@ main {
     @media(max-width:768px) {
         height: 73px;
         p {
+            font-size: 25px;
             line-height: 1.3;   
             b {
                 display: block;
@@ -197,14 +204,34 @@ main {
         ul {
             li {
                 &:nth-child(2) div {
-                    padding: 12px 20px 5px 11px;
+                    padding: 12px 20px 5px;
                     height: 73px;
+                    margin-right: -25px;
                 }
                 &:nth-child(1) p {
                     color: #fff;
                     padding: 5px 0 0;
                 }
             }
+        }
+    }
+}
+
+// About the foundation 
+
+#foundation {
+    margin: 40px 0 90px;
+    .callout {
+        outline: 1px solid #e4e4e4;
+        img {
+            width: 100%;
+        }
+        p {
+            margin: 20px 6px 10px 25px;
+            line-height: 1.3;
+        }
+        a {
+            margin: 10px 6px 30px 25px;
         }
     }
 }
@@ -366,16 +393,26 @@ h2.purpleHeadline {
             position: absolute;
             content: "";
             height: 1px;
-            width: 50%;
+            width: 170px;
             display: block;
-            background-color: #ddd;
+            background-color: #cacaca;
             top: 16px;
         }
         &:before {
-            right: -60%;
+            right: -190px;
         }
         &:after {
-            left: -60%;
+            left: -190px;
+        }
+    }
+    @media(max-width:768px) {
+        span {
+            display: inline-block;
+            position: relative;
+            &:before,
+            &:after {
+                display: none;
+            }
         }
     }
 }
@@ -387,7 +424,6 @@ h2.purpleHeadline {
     padding: 50px 0;
     color: white;
     overflow: hidden;
-    
     #people {
         padding-left: 0;
         li {
@@ -415,7 +451,7 @@ h2.purpleHeadline {
                 position: absolute;
                 top: 0;
                 left: 0;
-                right: 0;
+                right: -100%;
                 bottom: 0;
                 padding: 15% 10% 15%;
                 background-color: @purple;
@@ -447,6 +483,7 @@ h2.purpleHeadline {
             p {
                 font-size: 14px;
                 color: white;
+                text-align: left;
             }
             .pax {
                 background-position: center center;
@@ -468,20 +505,21 @@ h2.purpleHeadline {
         .pax-7 .pax { background-image: url("@{leadership}/portrait-jodi.jpg") }
         .pax-8 .pax { background-image: url("@{leadership}/portrait-man-3.jpg") }
     }
-    @media(min-width:768px) {
+    @media(min-width:992px) {
         #people {
 
             li {
                 width: 25%;
-                height: 400px;
+                height: 230px;
                 &:nth-child(1),
-                &:nth-child(5) {
+                &:nth-child(2),
+                &:nth-child(5),
+                &:nth-child(6) {
                     &:hover,
                     &:active,
                     &:focus {
                         div.hider {
-                            .translate(100%, 0);
-
+                            .translate(50%, 0);
                             &:before {
                                 .rotate(180deg);
                                 left: -40px;
@@ -503,6 +541,7 @@ h2.purpleHeadline {
         #people {
             li {
                 width: 50%;
+                &:nth-child(1),
                 &:nth-child(3),
                 &:nth-child(7) {
                     &:hover,
@@ -510,6 +549,7 @@ h2.purpleHeadline {
                     &:focus {
                         div.hider {
                             .translate(100%, 0);
+                            right: 0;
                             &:before {
                                 .rotate(180deg);
                                 left: -40px;
@@ -518,6 +558,13 @@ h2.purpleHeadline {
                         }                
                     }
                 }
+                div.hider {
+                    padding: 0 15%;
+                    right: 0;
+                }
+                div.hider > p {
+                    font-size: 15px;
+                }
             }            
         }
     }
@@ -525,20 +572,19 @@ h2.purpleHeadline {
         #people {
             li {
                 height: auto;
-                width: 100%;
+                width: 50%;
                 div.pax {
                     position: static;
-                    height: 400px;
+                    height: 200px;
                 }
                 div.hider {
                     position: static;
                     padding: 2% 10% 5%;
                     opacity: 1;
                     height: auto;
-                    border-bottom: 5px solid #fff;
                 }
-            }            
-        }
+            }      
+        }  
     }
 }
 
@@ -564,8 +610,108 @@ h2.purpleHeadline {
 }
 
 
-#faqs {
+#leadership {
     background-color: @ultralightgold;
+    padding: 0 0 60px 0;
+
+    
+    b {
+        font-family: @font-family-headline;
+        color: @purple;
+        font-weight: 900;
+        font-size: 100px;
+        float: left;
+        margin-right: 30px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+    }
+    @media only screen and (max-width : 767px) {
+        b {
+            float: none;
+            font-size: 60px;
+        }
+        .box-outer {
+            .box {
+                overflow: visible;
+                padding: 0 0px;
+                border-spacing: 20px;
+                
+            }
+        }
+
+        .padless {
+            padding: 0;
+        }  
+    }
+}
+
+#leaders {
+    div:nth-child(1) {
+        background-image: url("@{leadership}/w-sign.jpg");
+        .background-cover(cover);
+        min-height: 400px;
+        background-position: center center;
+    }
+    div {
+        text-align: left;
+    }
+    .row {
+        background-color: white;
+        margin: 50px 0;
+    }
+    ul {
+        padding: 40px 0 20px 40px;
+        li {
+            list-style: none;
+            font-size: 16px;
+            line-height: 1.3;
+            margin-bottom: 15px;
+            a {
+                color: @darkgray;
+                text-decoration: underline;
+            }
+        }
+    }
+    @media only screen and (max-width : 768px) {
+        ul {
+            padding: 35px 20px 10px;
+        }
+    }
+}
+
+#faqs {
+    .row {
+        margin-top: 70px;
+        margin-bottom: 90px;
+        background-color: @ultralightgold;
+    }
+    p {
+       margin: 30px 10px 25px 0;
+       line-height: 1.6;
+
+    }
+    @media only screen and (min-width : 768px) {
+        img {
+            margin-left: -15px;
+        }
+
+    }
+    @media only screen and (max-width : 768px) {
+        .row {
+            background-color: transparent;
+        }
+        .callout {
+            background-color: @ultralightgold;
+            p {
+                padding: 20px;
+            }
+        }
+    }
+}
+#faqs {
     padding: 0 0 60px 0;
     div:nth-child(1) {
         text-align: center;
@@ -593,12 +739,16 @@ h2.purpleHeadline {
             .tile {
                 padding: 30px 60px;
                 vertical-align: top;
-                background-color: white;
+                background-color: @ultralightgold;
+                div:nth-child(2) p {
+                    font-weight: bold;
+                    font-size: 20px;
+                }
                  .box-shadow(none);
                  text-align: left;
                 hr {
-                    margin-top: 20px;
-                    margin-bottom: 35px;
+                    margin-top: 50px;
+                    margin-bottom: 5px;
                 }
             }
         }
@@ -611,6 +761,7 @@ h2.purpleHeadline {
         font-size: 100px;
         float: left;
         margin-right: 30px;
+        line-height: 1.3;
     }
     div {
         overflow: hidden;
@@ -619,19 +770,28 @@ h2.purpleHeadline {
         font-size: 16px;
         line-height: 1.5;
     }
-    @media only screen and (max-width : 767px) {
+    @media only screen and (max-width : 1100px) {
         b {
             float: none;
             font-size: 60px;
+        }
+        p {
+            margin: 10px 0 5px 0
         }
         .box-outer {
             .box {
                 overflow: visible;
                 padding: 0 0px;
-                border-spacing: 20px;
+                border-spacing: 40px;
+                &.one,
                 &.two {
                     .tile {
+                        padding: 20px 40px;
                         div {
+                            margin: 0;
+                            hr {
+                                margin-top: 10px;
+                            }
                         }
                     }
                 }
@@ -640,37 +800,21 @@ h2.purpleHeadline {
     }
 }
 
-
-
-
-
-
-
-
-
-@media(min-width:768px) {
-   
-}
-@media(max-width:768px) {    
-    div.audio {
-        p.length {
-           line-height: 16px;
-        } 
-        p.audio-buttons {
-            font-size: 15px;
-            button.audio-play {
-                padding: 9px 15px 9px 10px;
-            }
-        }
-        &.active-audio {
-            margin-bottom: 80px;       
-            .audio-buttons {
-                left: 50%;
-                right: auto;
-            }
-        }
+.headlineBox {
+    text-align: center;
+    h2 {
+        display: inline-block;
+        background-color: @purple;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 900;
+        padding: 10px 20px;
+        margin: 0;
     }
 }
+
+
+
 
 
 

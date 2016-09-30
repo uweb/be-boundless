@@ -4,48 +4,18 @@
 
 <div class="intro" id="intro-slide">
   <div class="intro-body">
-
   <div id="ytplayer"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-xs-10 col-xs-offset-1 col-xs-offset-1 col-lg-offset-0" id='intro-text'>
+      
+        <!-- <p>Insert transcript here</p> -->
 
-  <script>
-    // Load the IFrame Player API code asynchronously.
-    var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/player_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    // Replace the 'ytplayer' element with an <iframe> and
-    // YouTube player after the API code downloads.
-    var player;
-    function onYouTubePlayerAPIReady() {
-      player = new YT.Player('ytplayer', {
-        height: '390',
-        width: '640',
-        playerVars: { 
-          'autoplay': 1, 
-          'controls': 0, 
-          'showinfo': 0, 
-          'modestbranding': 1, 
-          'playlist': 'Vkp4OnEnzCE',
-          'loop': 1 
-        },
-        videoId: 'Vkp4OnEnzCE'
-      });
-    }
-  </script>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-xs-10 col-xs-offset-1 col-xs-offset-1 col-lg-offset-0" id='intro-text'>
-
-
-
-
-        </div>
-      </div>      
-    </div>
+      </div>
+    </div>      
   </div>
-  <a class="read-more" href="#main_content">Read the story</a>
+  </div>
+  <a class="read-more" href="#main_content">Read the story</a>  
 </div>
 
 <ul id="dot-nav">
@@ -77,24 +47,6 @@
         </div> 
       </div>   
     </section>
-
-    <!-- <section class="video-block" id="video">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-10 col-md-offset-1 copy"> 
-
-              <a class="play" href="#">Williams Gerard FPO <svg aria-hidden="true" x="0px" y="0px"
-   width="14px" height="3px" viewBox="0 0 14 3" enable-background="new 0 0 14 3" xml:space="preserve">
-<rect fill="#FFFFFF" width="14" height="3"/>
-</svg></a>
-
-          </div> 
-        </div> 
-      </div>   
-      <div id="boundless-video"></div>
-      <!-- <small>Learn more about the Dream Project at <a href="http://www.uw.edu/dreamproject">uw.edu/dreamproject</a>.</small>       -->
-      
-    </section> -->
 
 
 <div class="person">

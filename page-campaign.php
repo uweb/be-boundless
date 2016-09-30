@@ -48,28 +48,47 @@
         <section tabindex="0" class="section" id="slide1" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg1.jpg">
           <div id="slide1text">
             <span>
-              <h2>HOW WILL YOU <br>CHANGE THE WORLD?</h2>
-              <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. <br>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+              <h2>What you care about <br>can change the world.</h2>
             </span>
           </div>
         </section
         ><section tabindex="0"  class="section" id="slide2" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg2.jpg">
           <div id="slide2text">
-            <h2>YOU CAN TRANSFORM THE STUDENT EXPERIENCE</h2>
-            <p>Ensuring access to excellence for all students is at the core of our public mission. You can support the Husky Experience by championing opportunities that enrich future thought leaders.</p>
-            <a href="education" data-js="education" data-title="Bridging the education gap" class="uw-btn btn-sm">Learn more</a>
+            <h2>It starts with the things you hold dear:<br>
+              Your ideas and ideals; <br>
+              Your hopes and dreams. 
+            </h2>
           </div>
-          <span class="slide2-content"></span>
+          <span class="slide3-content"></span>
         </section
         ><section tabindex="0"  class="section" id="slide3" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg3.jpg">
           <div id="slide3text">
-            <h2>FACULTY AND STAFF WHO UNITE PROMISE WITH POSSIBILITY EVERY DAY </h2>
-            <p>To react to horizontal scrolls the simply needs to be initialized using the option.</p>
-            <a href="scholarship" data-js="scholarship" data-title="Making scholarships" class="uw-btn btn-sm">Learn more</a>
+            <h2>Bring your aspirations to life as you link arms with students, faculty and staff who unite promise with possibility every day.</h2>
           </div>
-          <span class="slide2-content"></span>
+          <span class="slide3-content"></span>
         </section
         ><section tabindex="0"  class="section" id="slide4" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg4.jpg">
+          <div id="slide3text">
+            <h2>YOU CAN TRANSFORM THE STUDENT EXPERIENCE   </h2>
+            <p>Ensuring access to excellence for all students is at the core of our public mission. Discover how supporting opportunities that enrich future thought leaders can champion the student experience. </p>
+            <a href="scholarship" data-js="scholarship" data-title="Bridging the education gap" class="uw-btn btn-sm">Learn more</a>          
+          </div>
+          <span class="slide4-content"></span>
+        </section><section tabindex="0"  class="section" id="slide5" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg5.jpg">
+          <div id="slide4text">
+            
+          </div>
+          <span class="slide4-content"></span>
+        </section><section tabindex="0"  class="section" id="slide6" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg6.jpg">
+          <div id="slide4text">
+            <h2>YOU CAN TRANSFORM THE STUDENT EXPERIENCE   </h2>
+            <p>Ensuring access to excellence for all students is at the core of our
+public mission. Discover how supporting opportunities that enrich 
+future thought leaders can champion the student experience. </p>
+            <a href="scholarship" data-js="scholarship" data-title="Bridging the education gap" class="uw-btn btn-sm">Learn more</a>
+          </div>
+          <span class="slide2-content"></span>
+        </section><section tabindex="0"  class="section" id="slide7" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg7.jpg">
           <div id="slide4text">
             <h2>YOU CAN DRIVE THE PUBLIC GOOD </h2>
             <p>Serve communities near and far. You can unleash human potential by committing to initiatives that promote health, equity and diversity for our friends and neighbors in Washington and beyond.</p>
@@ -86,7 +105,7 @@
   <div id="scrubCont"><div id="padder"><div id="scrub"></div></div></div>
 
 
-
+  <img id="boundless-logo" src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/be-boundless.png' ?>" alt="Be boundless">
 
 
   <!-- Button to close dynamic area -->

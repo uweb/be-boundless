@@ -17,10 +17,6 @@
   <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
   <!-- <script type='text/javascript' src='https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js'></script> -->
 
-  
-  
-
-<?php ; ?>
 
 </head>
 <body id="immersive" <?php body_class(); ?>>
@@ -32,14 +28,14 @@
 
     <div tabindex="-1" class="thin" aria-hidden="true">
       <a href="http://www.uw.edu">Support the campaign</a>
-
     </div>
     <div tabindex="-1" class="thick">
       <ul>
-        <li><a href="campaign">Experience</a></li>
+        <li><a href="campaign">Home</a></li>
+        <li><a href="together">Experience</a></li>
         <li><a href="leadership">About the Campaign</a></li>
-        <li><a href="campaign">Find Your Passion</a></li>
-        <li><a href="http://www.uw.edu/giving">Give now</a></li>
+        <li><a href="passion">Find Your Passion</a></li>
+        <li><button id="give-now">Give now</button></li>
       </ul>        
     </div>
     <button id="campaign-expand">Toggle menu
@@ -53,5 +49,7 @@
   </div>
 
   <h1><?php the_title(); ?></h1>
+
+  <div id="give-iframe"></div>
 
 </header>

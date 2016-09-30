@@ -22,7 +22,7 @@ header {
 	backface-visibility: hidden;
 	background-color: @purple;
 
-	button {
+	button#campaign-expand {
 		text-indent: -9000px; 
 		text-transform: capitalize;
 		line-height: 0;
@@ -165,7 +165,7 @@ header {
 		padding: 0 60px 0 0;
 		outline: none;
 		visibility: visible;
-		a, button { display: inline-block; }
+		a, button#campaign-expand { display: inline-block; }
 		a {
 			.transition(transform .2s cubic-bezier(0.39, 0.58, 0.57, 1));
 			padding: 10px 10px 0 0;
@@ -183,6 +183,10 @@ header {
 		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.29);
 		outline: none;
 		visibility: hidden;
+		.give-modal-active & { 
+			.transition(padding .1s linear);
+			padding-right: 30px;
+		}
 		ul {
 			margin-bottom: 0;
 			li {
@@ -195,12 +199,13 @@ header {
 				}
 				&:nth-child(1) a,
 				&:nth-child(2) a,
-				&:nth-child(3) a {
+				&:nth-child(3) a,
+				&:nth-child(4) a {
 					&:before {
 					  position: absolute;
 					  top: 100%;
 					  left: 0;
-					  right: 40px;
+					  right: 30px;
 					  height: 2px;
 					  background: @lightgold;
 					  content: '';
@@ -222,7 +227,8 @@ header {
 					}
 				}
 				&:nth-child(1) a,
-				&:nth-child(2) a {
+				&:nth-child(2) a,
+				&:nth-child(3) a {
 					&:after {
 						content: "";
 						position: absolute;
@@ -246,10 +252,16 @@ header {
 						
 					}
 				}
-				&:nth-child(4) {
+				&:nth-child(5) {
 					.skew(-15deg,0);
 					background-color: @lightgold;
-					a {
+					.give-modal-active & {
+						background-color: white;
+						button {
+							color: @darkgold;
+						}
+					}
+					button {
 						.skew(15deg,0);
 						font-family: @font-family-headline;
 						font-weight: 900;
@@ -257,6 +269,9 @@ header {
 						padding: 10px 30px;
 						display: inline-block;
 						letter-spacing: .1em;
+						background-color: transparent;
+						border: none;
+						color: white;
 						&:active,
 						&:hover,
 						&:focus {
@@ -302,7 +317,7 @@ header {
 
 	@media(min-width:768px) {
 		.active-header & {	
-			button {				
+			button#campaign-expand {				
 				top: 26px;
 				z-index: 1;
 			    svg {
@@ -355,26 +370,29 @@ header {
 
 	}
 	@media(min-width:1200px) {
-		.thick ul li {
-			&:nth-child(1) a,
-			&:nth-child(2) a {
-				&:after {
-					right: 20px;
-				}
-			}
-			a {
-			    padding: 0 40px 0 0;
-			}
-		}
 		.active-header & {	
 			a.home {
 				width: 500px;
 			}
 		}
 	}
+	@media(min-width:1300px) {
+		.thick ul li {
+			&:nth-child(1) a,
+			&:nth-child(2) a,
+			&:nth-child(3) a {
+				&:after {
+					right: 15px;
+				}
+			}
+			a {
+			    padding: 0 30px 0 0;
+			}
+		}
+	}
 
 	@media(max-width:768px) {
-		button {
+		button#campaign-expand {
 			top: 2px;
 			padding: 0;	
 		}
@@ -392,12 +410,13 @@ header {
 				padding: 0 0 30px;
 				text-align: center;
 				ul {
+					padding: 0 20px;
 					li {
 						display: block;
 						margin: 0px 0 12px;
-						&:nth-child(4) {
+						&:nth-child(5) {
 							display: inline-block;
-							margin: 10px 20px 0 0;
+							margin: 10px 15px 0 0;
 						}
 						a:after {
 							visibility: hidden;
@@ -405,7 +424,7 @@ header {
 					}
 				}
 			}
-			button {
+			button#campaign-expand {
 			    svg {
 			    	rect {
 			    		fill: white;
@@ -443,3 +462,38 @@ header {
 #content-wrapper {
 	.transition(padding .2s cubic-bezier(0.39, 0.58, 0.57, 1));
 }	
+
+// Giving modal
+.give-modal-active {
+	#campaign-expand {
+		.transition(opacity .1s linear);
+		opacity: 0;
+		.translate(40px,0)
+	}
+}
+
+#give-iframe {
+	overflow: auto;
+	.translate(0,-100%);
+	.transition(all .5s linear);
+	opacity: 0;
+  	background-color: white;
+  	padding-top: 100px;
+  	z-index: 10;
+  	position: fixed;
+  	left: 0;
+  	right: 0;
+  	bottom: 0;
+  	top: 0;
+  	z-index: 11;
+  	.give-modal-active & {
+		.translate(0,0);
+		opacity: 1;
+  	}
+  	@media(min-width:768px) {
+  	}
+  	@media(max-width:768px) {
+  		padding-top: 30px;
+  	}
+}
+

@@ -1,5 +1,7 @@
-$(function(){
+// Check if you youtube's been played / for script loading issues
+var youtubeFlag = false;
 
+$(function(){
 
 	// first add raf shim
 	// http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/
@@ -416,7 +418,7 @@ $(function(){
 		setTimeout(function(){
 			$dyno.empty();
 			// Open and close menu based on whether the user has closed it.
-			if (!userClosedMenu && !isMobile) {
+			if (!userClosedMenu && !isMobile.match) {
 				$('body').addClass('active-header');
 			} 			
 			scrollConverter.activate(currentOffset);

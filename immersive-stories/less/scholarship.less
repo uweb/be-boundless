@@ -19,17 +19,7 @@
        -o-background-size: @cover;
 }
 
-.intro-body {
-    height: 100%;
-    iframe {
-        margin: 0;
-        width: 100vw;
-        height: 56vw;
-        position: absolute;
-        top: 50%;
-        margin-top: calc(~"-28vw + 20px");
-    }
-}
+
 
 
 
@@ -62,6 +52,21 @@ p {
     color: white;
     overflow: hidden;
     text-align: left;
+    // The video portion
+    .intro-body {
+        height: 100%;
+        position: relative;
+        z-index: 0;
+        iframe {
+            margin: 0;
+            width: 100vw;
+            height: 56vw;
+            max-height: 100%;
+            position: absolute;
+            top: 50%;
+            margin-top: calc(~"-28vw + 20px");
+        }
+    }
     h1 {
         font-family: @uni;
         color: white;
@@ -73,11 +78,6 @@ p {
         color: white;
         text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
         // font-weight: bold;
-    }
-    .intro-body {
-     
-        position: relative;
-        z-index: 2;
     }
     a.read-more {
         display: block;
@@ -116,7 +116,7 @@ p {
         }
     }    
     @media(min-width:768px) {
-        background-image: url("@{scholarship}/FPO.png");
+        background-color: #2d2d2d;
         padding: 0;
         h1 {
             font-size: 6vw;
@@ -463,7 +463,15 @@ p {
 // Dot navigation 
 
 #dot-nav {
+    .hide-dots & {
+        visibility: hidden;
+        opacity: 0;
+    }
     @media(min-width:768px) {
+        .transition(opacity .2s linear);
+        visibility: visible;
+        opacity: 1;
+
         position: fixed;
         z-index: 10;
         right: 30px;

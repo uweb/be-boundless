@@ -139,6 +139,7 @@ div#loadingEl {
 		opacity: 0;
 		.translate(0, -100vh);
 	}
+
 	h2 {
 		font-weight: 900;
 		font-size: 4.5vw;
@@ -177,19 +178,32 @@ div#loadingEl {
 	section:nth-child(1) {
 		background-image: url(../img/camp-bg1.jpg);
 	}
-	// section:nth-child(2) {
-	// 	background-image: url(../img/camp-bg2.jpg);
-	// }
-	// section:nth-child(3) {
-	// 	background-image: url(../img/camp-bg3.jpg);
-	// }
-	// section:nth-child(4) {
-	// 	background-image: url(../img/camp-bg4.jpg);
-	// }
+	section:nth-child(2) {
+		background-image: url(../img/camp-bg2-blur.jpg);
+	}
+	section:nth-child(3) {
+		background-image: url(../img/camp-bg3-blur.jpg);
+	}
+	section:nth-child(4) {
+		background-image: url(../img/camp-bg4-blur.jpg);
+	}
+	section:nth-child(5) {
+		background-image: url(../img/camp-bg5-blur.jpg);
+	}
+	section:nth-child(6) {
+		background-image: url(../img/camp-bg6-blur.jpg);
+	}
+	section:nth-child(7) {
+		background-image: url(../img/camp-bg7-blur.jpg);
+	}
 	#slide1 {
 		opacity: 0;
 		.transition(all 1s ease-in-out);
 		position: relative;
+
+		h2 {
+			margin-top: 35vh;
+		}
 		span {
 			.transition(margin-top 1s ease-in-out);
 			display: block;
@@ -204,16 +218,29 @@ div#loadingEl {
 			}
 		}		
 	}
-
 	#slide2 {
+		div {
+			text-align: center;
+			width: 85vw;
+		}
 		h2 {
-			font-size: 4vw;
+			font-size: 3.2vw;
+			margin-top: 39vh;
 		}
 	}
-
 	#slide3 {
+		div {
+			text-align: center;
+			width: 85vw;
+		}
 		h2 {
-			font-size: 4vw;
+			font-size: 3.2vw;
+			margin-top: 25vh;
+		}
+	}
+	#slide4 {
+		h2 {
+			margin-top: 30vh;
 		}
 	}
 	@media only screen and (min-width : 768px ) and (max-width : 992px) {
@@ -421,6 +448,16 @@ div#loadingEl {
 	@media(max-width:768px) {    
 		display: none;
 	}
+}
+
+#boundless-logo {
+    position: fixed;
+    left: 80px;
+    bottom: 50px;
+    width: 22%;
+    @media(max-width:768px) {
+		display: none;
+    }
 }
 
 #progress {
