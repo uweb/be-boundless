@@ -8,7 +8,7 @@ $.when(
             $( deferred.resolve );
         }
     )
-).done(onPlayerReady);     
+);     
 
 // Load the IFrame Player API code asynchronously.
 // var tag = document.createElement('script');
@@ -34,15 +34,30 @@ function onYouTubePlayerAPIReady() {
     },
     videoId: '7_bqqF9fZxI',
     events: {
-        onReady: onPlayerReady
+        onReady: onPlayerReady,
+        onStateChange: stateChange
     }
   });
 }
 
 function onPlayerReady(event){
-    event.target.playVideo();
+    console.log('totogs')
+    
 }
 
+function stateChange(e){
+    console.log(e)
+    if(e.data === -1){ console.log('unstarted')  }
+    // if(e.data === 0) { console.log('ended') }
+    if(e.data === 1) { console.log('playing') 
+        document.getElementsByTagName('body')[0].classList.add('videoPlay');
+        document.getElementsByTagName('body')[0].classList.remove('videoPaused');
+    }
+    if(e.data === 2) { console.log('paused') 
+         document.getElementsByTagName('body')[0].classList.add('videoPaused');
+    }
+    if(e.data === 3) { console.log('buffering') }
+}
 
 $(function(){
 
