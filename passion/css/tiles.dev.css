@@ -159,9 +159,6 @@
   margin-top: 0;
   display: none;
 }
-#passion.logged-in #campaign-header {
-  top: 32px;
-}
 #passion.logged-in .module-hero-image {
   margin-top: 82px;
 }
@@ -231,6 +228,7 @@
   height: 100%;
   min-height: 1075px;
   margin-bottom: calc(-242px);
+  padding-bottom: calc(242px);
 }
 #passion .module-hero-image.hide {
   display: none;
@@ -392,7 +390,10 @@
 #passion .module-hero-image .fyp-search-wrapper .fyp-search .fyp-search-label {
   color: #FFF;
 }
-#passion .module-hero-image .fyp-search-wrapper .fyp-search .fyp-search-bar {
+#passion .module-hero-image .fyp-search-wrapper .fyp-search div {
+  display: inline-block;
+}
+#passion .module-hero-image .fyp-search-wrapper .fyp-search div .fyp-search-bar {
   width: 400px;
   height: 35px;
   padding: 10px 0 10px 15px;
@@ -401,7 +402,7 @@
   outline: 0;
   background-color: #F1F1F1;
 }
-#passion .module-hero-image .fyp-search-wrapper .fyp-search .fyp-search-button {
+#passion .module-hero-image .fyp-search-wrapper .fyp-search div .fyp-search-button {
   border: none;
   vertical-align: middle;
   font-size: 0;
@@ -1312,9 +1313,6 @@
   height: 763px;
 }
 @media only screen and (max-width: 1200px) {
-  #passion .module-hero-image {
-    padding-bottom: 32px;
-  }
   #passion .module-hero-image .circle-button-container {
     width: 100%;
   }
@@ -1352,9 +1350,6 @@
   #passion .fyp-give-widget-container iframe {
     min-width: 0;
     width: 90%;
-  }
-  #passion .module-hero-image {
-    padding-bottom: 242px;
   }
   #passion .module-hero-image .row {
     padding-left: 0;
