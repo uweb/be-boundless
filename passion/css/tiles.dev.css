@@ -390,7 +390,10 @@
 #passion .module-hero-image .fyp-search-wrapper .fyp-search .fyp-search-label {
   color: #FFF;
 }
-#passion .module-hero-image .fyp-search-wrapper .fyp-search .fyp-search-bar {
+#passion .module-hero-image .fyp-search-wrapper .fyp-search div {
+  display: inline-block;
+}
+#passion .module-hero-image .fyp-search-wrapper .fyp-search div .fyp-search-bar {
   width: 400px;
   height: 35px;
   padding: 10px 0 10px 15px;
@@ -399,7 +402,7 @@
   outline: 0;
   background-color: #F1F1F1;
 }
-#passion .module-hero-image .fyp-search-wrapper .fyp-search .fyp-search-button {
+#passion .module-hero-image .fyp-search-wrapper .fyp-search div .fyp-search-button {
   border: none;
   vertical-align: middle;
   font-size: 0;

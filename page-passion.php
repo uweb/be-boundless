@@ -117,9 +117,11 @@
            </div>
            <div class="fyp-search-wrapper">
               <form class="fyp-search">
-                <label class="fyp-search-label" for="fyp-search-bar"><p>Or search for specific fund:</p></label>
-                <input id="searcher" class="fyp-search-bar quicksearch" type="search" name="fyp-search-name" value="">
-                <input type="submit" value="search" class="fyp-search-button" tabindex="0">
+                <label class="fyp-search-label" for="fyp-search-bar"><p>Search for specific fund:</p></label>
+                <div>
+                  <input id="searcher" class="fyp-search-bar quicksearch" type="search" name="fyp-search-name" value="">
+                  <input type="submit" value="search" class="fyp-search-button" tabindex="0">
+                </div>
               </form>
             </div>
         </div>
