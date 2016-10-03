@@ -29,23 +29,23 @@
 </head>
 <body id="passion" <?php body_class(); ?>>
 
-<div id="campaign-header" class="active">
-    
-    <a class="home" href="#">Home</a>
+  <div id="campaign-header" class="active" role="navigation">
 
-    <div class="thin">
-        <a href="#">Support the campaign</a>
-        
+    <a class="home" href="http://www.uw.edu">Home</a>
+
+    <div tabindex="-1" class="thin" aria-hidden="true">
+      <a href="http://www.uw.edu">Support the campaign</a>
     </div>
-    <div class="thick">
-        <ul>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Campaign Leadership</a></li>
-            <li><a href="#">Find Your Passion</a></li>
-            <li><a href="#">Give now</a></li>
-        </ul>        
+    <div tabindex="-1" class="thick">
+      <ul>
+        <li><a href="campaign">Home</a></li>
+        <li><a href="together">Experience</a></li>
+        <li><a href="leadership">About the Campaign</a></li>
+        <li><a href="passion">Find Your Passion</a></li>
+        <li><button id="give-now">Give now</button></li>
+      </ul>        
     </div>
-    <button id="campaign-expand">View menu
+    <button id="campaign-expand">Toggle menu
       <div aria-hidden="true" id="ham">
         <span></span>
         <span></span>
@@ -53,7 +53,7 @@
         <span></span>
       </div>
     </button>
-</div>
+  </div>
 
 	<div class="module-hero-image" style="background-image:url('<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>')">
       <div class="container">    

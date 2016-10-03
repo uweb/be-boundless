@@ -159,9 +159,6 @@
   margin-top: 0;
   display: none;
 }
-#passion.logged-in #campaign-header {
-  top: 32px;
-}
 #passion.logged-in .module-hero-image {
   margin-top: 82px;
 }
@@ -231,6 +228,7 @@
   height: 100%;
   min-height: 1075px;
   margin-bottom: calc(-242px);
+  padding-bottom: calc(242px);
 }
 #passion .module-hero-image.hide {
   display: none;
@@ -427,7 +425,7 @@
   z-index: 1;
 }
 #passion .grid {
-  background: url(../assets/stripes.svg) #E8E8E8;
+  background: url(../assets/stripes.svg) #e8e8e8;
 }
 #passion .full-bio {
   display: none;
@@ -877,8 +875,6 @@
     width: calc(100%);
   }
 }
-@media only screen and (max-width: 320px) {
-}
 #passion .grid-item.special {
   background-color: #4b2e83;
   box-sizing: border-box;
@@ -1312,9 +1308,6 @@
   height: 763px;
 }
 @media only screen and (max-width: 1200px) {
-  #passion .module-hero-image {
-    padding-bottom: 32px;
-  }
   #passion .module-hero-image .circle-button-container {
     width: 100%;
   }
@@ -1352,9 +1345,6 @@
   #passion .fyp-give-widget-container iframe {
     min-width: 0;
     width: 90%;
-  }
-  #passion .module-hero-image {
-    padding-bottom: 242px;
   }
   #passion .module-hero-image .row {
     padding-left: 0;
