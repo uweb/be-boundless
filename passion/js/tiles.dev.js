@@ -224,7 +224,7 @@ $(window).load(function(){
       $grid.isotope({ filter: '.' + filterValue + ':not(.unit-small)' });
       $()
       $('html, body').animate({
-            scrollTop: ( $("#main-content").offset().top - parseInt( $("#main-content").css("margin-top").replace("px", "") ) )
+            scrollTop: ( $(".fyp-search").offset().top)// - parseInt( $("#main-content").css("margin-top").replace("px", "") ) )
           }, 900);
    })
 
