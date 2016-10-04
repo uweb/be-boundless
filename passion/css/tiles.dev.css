@@ -168,7 +168,7 @@
   text-transform: capitalize;
   line-height: 0;
   color: transparent;
-  box-shadow: -1px 1px 2px #0003 3;
+  box-shadow: -1px 1px 2px #000000 3;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   -webkit-transform: translate(75px, 0);
@@ -475,7 +475,7 @@
   z-index: 1;
 }
 #passion .grid {
-  background: url(../assets/stripes.svg) #E8E8E8;
+  background: url(../assets/stripes.svg) #e8e8e8;
 }
 #passion .full-bio {
   display: none;
@@ -925,8 +925,6 @@
     width: calc(100%);
   }
 }
-@media only screen and (max-width: 320px) {
-}
 #passion .grid-item.special {
   background-color: #4b2e83;
   box-sizing: border-box;
@@ -1271,10 +1269,18 @@
 #passion .grid-item .back h3 {
   color: white;
   text-transform: uppercase;
-  margin: 0 0 5px;
+  margin: 0;
   font-size: 16px;
   line-height: 1.3;
   letter-spacing: 1px;
+}
+#passion .grid-item .back .back-unit-name {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: initial;
+  font-family: "Uni sans", sans-serif;
 }
 #passion .grid-item .back p {
   color: white;

@@ -302,6 +302,9 @@
            }
            $fundclasses .= $fund->unit . " ";
 
+            $unslugUnit = str_replace("---"," &amp; ",$fund->unit);
+            $unslugUnit = str_replace("-"," ",$unslugUnit);
+
            //spit out html 
            ?>
             <li tabindex="0" data-name="<?php echo $fund->post_name; ?>" data-img="<?php echo $fundimageurlhigh; ?>" class="flip-container grid-item fyp-funds <?php echo $fundclasses; ?>">
@@ -313,16 +316,14 @@
               </div>
               <div class="back">
                 <h3><?php echo $fund->post_title; ?></h3>
+                <p class="back-unit-name"><?php echo $unslugUnit; ?></p>
                 <p class="short-desc"><?php echo $fund->desc; ?></p>
               </div>
               <div tabindex="0" class="full-bio">
                 <h2><?php echo $fund->post_title; ?></h2>
                  <div class="bio-info"> 
                   <p><?php 
-                      $search = array(" ","&amp;","&");
-                      $unslug = str_replace("---"," &amp; ",$fund->unit);
-                      $unslug = str_replace("-"," ",$unslug);
-                      echo '<a href="#" class="fyp-filter-click" data-filter="' . $fund->unit . '">' . $unslug . '</a>';
+                      echo '<a href="#" class="fyp-filter-click" data-filter="' . $fund->unit . '">' . $unslugUnit . '</a>';
                   ?></p>               
                 </div>
                 <div class="bio-text">
