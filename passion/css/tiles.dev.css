@@ -175,14 +175,14 @@
   display: inline-block;
   letter-spacing: .1em;
   font-size: 15px;
-  color: #FFF;
+  color: #4b2e83;
   background-color: transparent;
   margin: 2px 0 2px 0;
 }
 #passion .fyp-button:focus .fyp-link,
 #passion .fyp-button:active .fyp-link,
 #passion .fyp-button:hover .fyp-link {
-  color: #4b2e83;
+  color: #FFF;
 }
 #passion button#empty {
   position: fixed;
@@ -621,7 +621,7 @@
   display: inline-block;
   letter-spacing: .1em;
   font-size: 15px;
-  color: #FFF;
+  color: #4b2e83;
   background-color: transparent;
   margin: 2px 0 2px 0;
 }
@@ -631,7 +631,7 @@
 #passion .fyp-units .full-bio .give-button:active .give-link,
 #passion .open:not(.unit-small) .full-bio .give-button:hover .give-link,
 #passion .fyp-units .full-bio .give-button:hover .give-link {
-  color: #4b2e83;
+  color: #FFF;
 }
 #passion .grid-sizer,
 #passion .grid-item {
