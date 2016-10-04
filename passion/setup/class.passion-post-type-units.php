@@ -37,6 +37,7 @@ if ( ! post_type_exists( 'units' ) ):
 	add_action('admin_init', 'unit_admin_init');
 
 	function unit_admin_init(){
+		add_meta_box( 'giveButton', 'Give button', 'giveButton_callback', 'units', 'side', 'low' );
 		add_meta_box( 'contact', 'Contact name', 'contact_callback', 'units', 'side', 'low' );
 		add_meta_box( 'email', 'Contact email', 'email_callback', 'units', 'side', 'low' );
 		add_meta_box( 'url', 'Url for campaign site', 'url_callback', 'units', 'side', 'low' );
@@ -45,6 +46,13 @@ if ( ! post_type_exists( 'units' ) ):
 		
 		add_meta_box( 'secondary', 'Right-side content', 'secondary_callback', 'units', 'normal', 'low' );
 		//add_meta_box( 'funds', 'Featured funds <small>(by allocation code)</small>', 'funds_callback', 'units', 'normal', 'low' );
+	}
+
+	function giveButton_callback() {
+		global $post;
+		$custom = get_post_custom($post->ID);
+		$giveButton = $custom['giveButton'][0];
+		?><input type="checkbox" name="giveButton" value="off" <?php if( !empty($giveButton) ) { ?>checked="checked"<?php } ?> /><?php _e('Disable give button'); 
 	}
 
 	function contact_callback() {
@@ -113,6 +121,7 @@ if ( ! post_type_exists( 'units' ) ):
 	function save_unit_details() {
 		global $post;
 		if (get_post_type($post) == 'units') {
+			update_post_meta($post->ID, 'giveButton', $_POST['giveButton']);
 			update_post_meta($post->ID, 'contact', $_POST['contact']);
 			update_post_meta($post->ID, 'email', $_POST['email']);
 			update_post_meta($post->ID, 'url', $_POST['url']);

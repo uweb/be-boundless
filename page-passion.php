@@ -243,9 +243,12 @@
                 <div class="bio-text">
                   <p><?php echo apply_filters('the_content', $unit->post_content); ?></p>
                 </div>
+
+                <?php if(empty($unit->giveButton)){ ?>
                 <div class="give-button">
                   <a href="#" class="give-link" data-code="<?php echo $unitcodes; ?>">Give Now</a> 
                 </div>
+                <?php } ?>
               </div>
               <div class="front" style="<?php echo 'background-image:url(' . $unitimageurlhigh . ');'; ?> "></div>
             </div>
@@ -334,9 +337,11 @@
                     //echo '<a href="#">' . $tag->name . '</a>';
                 //} ?>
                 </div>
+                <?php if(!empty($fund->code)){ ?>
                 <div class="give-button">
                 	<a href="#" class="give-link" data-code="<?php echo $fund->code; ?>">Give Now</a>
                 </div>
+                <?php } ?>
               </div>
             </div>
           </li>
