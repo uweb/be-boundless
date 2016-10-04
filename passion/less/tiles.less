@@ -7,6 +7,31 @@
 
 #passion { 
 
+  .fyp-button {
+    -webkit-transform: skew(-15deg, 0);
+    -ms-transform: skewX(-15deg) skewY(0);
+    transform: skew(-15deg, 0);
+    background-color: #b7a57a;
+    min-width: 141px;
+    display: inline-block;
+    margin-left: 7px;
+      .fyp-link {
+        -webkit-transform: skew(15deg, 0);
+        -ms-transform: skewX(15deg) skewY(0);
+        transform: skew(15deg, 0);
+        font-family: "Encode Sans Compressed",sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+        padding: 10px 30px;
+        display: inline-block;
+        letter-spacing: .1em;
+        font-size: 15px;
+        color: @purple;
+        background-color: transparent;
+        margin: 2px 0 2px 0;
+      }
+  }
+
   // Dynamic close button
 button#empty {
     position: fixed;
