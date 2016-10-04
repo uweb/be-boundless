@@ -37,7 +37,7 @@ $(window).load(function(){
          filter: function() {
            var $this = $(this);
            var search = qsRegex ? $this.text().match( qsRegex ) : true;
-           return search && $this.is( ':not(.unit-item)' );
+           return (search && $this.is( ':not(.unit-item)' )) || $this.is( '.search-more' );
          }
        });
      }, 200 ) );
@@ -75,7 +75,7 @@ $(window).load(function(){
         var $this = $(this),
             dataCheck = $this.data('name'),
             dataName = dataCheck && '#name=' + dataCheck;
-        if( !$this.hasClass('open') && !$this.hasClass('special') ) {
+        if( !$this.hasClass('open') && !$this.hasClass('special') && !$this.hasClass('search-more') ) {
           $('.grid-item').removeClass('open')
           $this.addClass('open');
           // Switch image
@@ -291,8 +291,19 @@ $(window).load(function(){
       // }
    // })
 
+   //search api call for more search results
+   $('.search-more').on('click', function(e){
+      e.preventDefault();
+      console.log("search clicked");
+      $searchTerm = $('#searcher').val();
+      $.getJSON('http://ua-dev-service.gifts.washington.edu/OnlineAllocation/Search/' + $searchTerm, function(data) {
+          console.log(data);
+          console.log("end data");
+      });
+   })
 
-});  
+}); 
+
 
 // Debounce so filtering doesn't happen every millisecond
 function debounce( fn, threshold ) {

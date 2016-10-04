@@ -506,6 +506,38 @@
 #passion .grid {
   background: url(../assets/stripes.svg) #e8e8e8;
 }
+#passion li.grid-item.search-more div {
+  background-color: #4b2e83;
+  padding: 15px;
+  cursor: pointer;
+}
+#passion li.grid-item.search-more div p.fyp-search-more-label {
+  color: #FFF;
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  font-family: "Encode Sans Compressed", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+#passion li.grid-item.search-more div p.fyp-search-more-label:after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background: url(../assets/plus.svg) 0 0 no-repeat;
+  background-size: 40px 40px;
+}
+#passion li.grid-item.search-more div p.fyp-search-more-label:hover,
+#passion li.grid-item.search-more div p.fyp-search-more-label:active,
+#passion li.grid-item.search-more div p.fyp-search-more-label:focus {
+  color: #b7a57a;
+}
 #passion .full-bio {
   display: none;
   margin-left: 39.8%;
