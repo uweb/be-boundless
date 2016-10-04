@@ -155,6 +155,53 @@
   /* Extra Small Devices, Phones */
   /* Custom, iPhone Retina */
 }
+#passion button#empty {
+  position: fixed;
+  border: none;
+  top: 100px;
+  right: 0;
+  width: 65px;
+  padding: 10px;
+  background-color: white;
+  z-index: 20;
+  text-align: left;
+  text-transform: capitalize;
+  line-height: 0;
+  color: transparent;
+  box-shadow: -1px 1px 2px #0003 3;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  -webkit-transform: translate(75px, 0);
+  -ms-transform: translate(75px, 0);
+  transform: translate(75px, 0);
+}
+#passion button#empty:focus,
+#passion button#empty:active,
+#passion button#empty:hover {
+  background-color: #b7a57a;
+}
+#passion button#empty:focus line,
+#passion button#empty:active line,
+#passion button#empty:hover line {
+  stroke: #fff;
+}
+#passion button#empty line {
+  stroke: #8e8e8e;
+}
+#passion button#empty.active {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+@media (max-width: 768px) {
+  #passion button#empty {
+    width: 45px;
+    padding: 2px;
+    top: 60px;
+    right: 5px;
+    opacity: .7;
+  }
+}
 #passion .uw-footer {
   margin-top: 0;
   display: none;
@@ -428,7 +475,7 @@
   z-index: 1;
 }
 #passion .grid {
-  background: url(../assets/stripes.svg) #e8e8e8;
+  background: url(../assets/stripes.svg) #E8E8E8;
 }
 #passion .full-bio {
   display: none;
@@ -877,6 +924,8 @@
   #passion .infographic {
     width: calc(100%);
   }
+}
+@media only screen and (max-width: 320px) {
 }
 #passion .grid-item.special {
   background-color: #4b2e83;

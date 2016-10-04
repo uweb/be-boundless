@@ -218,8 +218,9 @@ $(window).load(function(){
       e.preventDefault();
       var filterValue = $( this ).attr('data-filter');
       //$('.module-hero-image').addClass('hide');
-      $('.FYP-home-button').addClass('show');
-      $('.fyp-close-button-gradient').addClass('show');
+      $('#empty').addClass('active');
+      $('#empty').addClass('active-filter');
+      //$('.fyp-close-button-gradient').addClass('show');
       $grid.isotope({ filter: '.' + filterValue + ':not(.unit-small)' });
       $()
       $('html, body').animate({
@@ -227,50 +228,60 @@ $(window).load(function(){
           }, 900);
    })
 
-   $('.FYP-home-button').on('click', function(e){
+   $('#empty').on('click', function(e){
       e.preventDefault();
       $('html, body').animate({
             scrollTop: $('body').offset().top
           }, 900);
-      //$('.module-hero-image').removeClass('hide');
-      $('.FYP-home-button').removeClass('show');
-      $('.fyp-close-button-gradient').removeClass('show');
-      $grid.isotope({ filter: '.featured' });
+
+      if($(this).hasClass('active-filter')){
+        $('#empty').removeClass('active');
+        $('#empty').removeClass('active-filter');
+        $grid.isotope({ filter: '.featured' });
+      } 
+
+      if($(this).hasClass('active-give')){
+        $('#empty').addClass('active-filter');
+        $('#empty').removeClass('active-give');
+        $('.fyp-give-widget-container').remove();
+        $('.fyp-give-widget-lightbox').remove();
+      } 
+
    })
 
    $('.give-link').on('click', function(e){
       e.preventDefault();
       var allocCode = $( this ).attr('data-code');
-      $('.FYP-home-button').removeClass('show');
+      $('#empty').addClass('active-give');
+      $('#empty').removeClass('active-filter');
       $('body').prepend('<div class="fyp-give-widget-lightbox"></div>' +
                         '<div id="fyp-give-widget-container" class="fyp-give-widget-container">' +
                           '<iframe src="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?source_typ=3&source=' + allocCode + '&frame_buster=false" title="Giving at the UW" id="UWFOnlineGivingForm" frameborder="0" scrolling="yes" onload="try{document.domain=\'washington.edu\'}catch(e){}"></iframe>' +
-                        '</div>' +
-                        '<a class="FYP-give-widget-exit show"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.75px" height="46.812px" viewBox="0 0 46.75 46.812" enable-background="new 0 0 46.75 46.812" xml:space="preserve"><g><line fill="none" stroke="#FFF" stroke-miterlimit="10" x1="1.011" y1="1.001" x2="46.011" y2="46.001"/><line fill="none" stroke="#FFF" stroke-miterlimit="10" x1="46.011" y1="1.001" x2="1.011" y2="46.001"/></g></svg></a>');
+                        '</div>');
 
       $('html, body').animate({
           scrollTop: ( $("#fyp-give-widget-container").offset().top - $("#campaign-header thick").outerHeight() )
         }, 900);
-      $('.FYP-give-widget-exit').on('click', function(e){
-          e.preventDefault();
-          $('html, body').animate({
-              scrollTop: $('body').offset().top
-            }, 900);
-          $('.FYP-home-button').addClass('show');
-          $('.fyp-give-widget-container').remove();
-          $('.fyp-give-widget-lightbox').remove();
-          $('.FYP-give-widget-exit').remove();
-       });
-
    })
 
+   // // $('#empty.active-give').on('click', function(e){
+   //    e.preventDefault();
+   //    $('html, body').animate({
+   //        scrollTop: $('body').offset().top
+   //      }, 900);
+   //    $('#empty.active-give').addClass('active-filter');
+   //    $('#empty.active-give').removeClass('active-give');
+   //    $('.fyp-give-widget-container').remove();
+   //    $('.fyp-give-widget-lightbox').remove();
+   //    //$('.FYP-give-widget-exit').remove();
+   // })
+
    $('.unit-small').on('click', function(e){
-      console.log('focus');
       e.preventDefault();
       var filterValue = $( this ).attr('data-name');
       //$('.module-hero-image').addClass('hide');
-      $('.FYP-home-button').addClass('show');
-      $('.fyp-close-button-gradient').addClass('show');
+      //$('#empty').addClass('active-filter');
+      //$('#empty').addClass('active');
       $grid.isotope({ filter: '.' + filterValue + ':not(.unit-small)' });
    });
 
