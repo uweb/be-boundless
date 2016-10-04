@@ -59,14 +59,14 @@
         <div class="class"><p><b>Class of </b></p><p>'17</p></div>
         <div><p><b>Hometown:</b> Loveland, Colorado</p></div>
         <div>
-          <p><b>Major:</b> Environment science and resource management</p>
+          <p><b>Major:</b> Environmental Science and Resource Management</p>
           <p><b>Minor:</b> Quantitative science</p>
         </div>  
         <div>
           <p><b>Scholarships:</b></p>
           <ul>
             <li>School of Environmental and Forest Sciences Scholarship</li>
-            <li>School of the Environment Scholarship</li>
+            <li>College of the Environment Scholarship</li>
           </ul>
         </div>
       </div>
@@ -477,7 +477,7 @@
           </ul>
         </div>  
         <div>
-          <p><b>Scholarships:</b> Washington NASA Space Grant Scholarship</p>
+          <p><b>Scholarship:</b> Washington NASA Space Grant Scholarship</p>
         </div>
       </div>
     </section>
@@ -573,7 +573,7 @@
           </ul>
         </div>  
         <div>
-          <p><b>Scholarships:</b> CoMotion Mary Gates Innovation Scholarship</p>
+          <p><b>Scholarship:</b> CoMotion Mary Gates Innovation Scholarship</p>
         </div>
       </div>
     </section>

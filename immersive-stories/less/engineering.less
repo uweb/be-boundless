@@ -6,7 +6,6 @@
 
 @fb: "../../immersive-stories/img/farmer-brown";
 @education: "../../immersive-stories/img/education";
-@medicine: "../../immersive-stories/img/medicine";
 @engineering: "../../immersive-stories/img/engineering";
 @img: "../../immersive-stories/img";
 
@@ -18,6 +17,761 @@
      -moz-background-size: @cover;
           background-size: @cover;
        -o-background-size: @cover;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    .uw-footer {
+        margin-top: 0
+    }
+    video::-webkit-media-controls {
+        display:none !important;
+    }
+    video::-webkit-media-controls-start-playback-button {
+      display: none;
+    }
+}
+p {
+    color: #696969;
+}
+
+@keyframes slidein {
+  0% {
+    .translate(0,-100%);
+    opacity: 0;
+  }
+  100% {
+    .translate(0,0);
+    opacity: 1;
+  }
+}
+
+.intro {
+    background-position: center top;
+    .background-cover(cover);
+    width: 100%;
+    height: 105vh;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    text-align: left;
+    h1 {
+        font-family: @uni;
+        color: @purple;
+        text-transform: uppercase;
+        font-weight: normal;
+        line-height: 1;
+        display: inline-block;
+        position: relative;
+        &:before,
+        &:after {
+        	content: "";
+        	display: block;
+        	position: absolute;
+        	right: 0;
+        	height: 4px;
+        	width: 300%;
+        	background-color: white;
+        }
+        &:before {
+        	top: 0;
+        }
+        &:after {
+        	bottom: 0;
+        }
+        .engineerIntro & {
+        	& > span:first-child span {
+        		.animation(slidein 1.5s .1s ease forwards);
+        	}
+        	& > span:nth-child(2) span {
+        		.animation(slidein 1.5s .3s ease forwards);
+        	}
+        	& > span:last-child span {
+        		.animation(slidein 1.5s .5s ease forwards);
+        	}
+        }
+        & > span {
+        	overflow:hidden;
+        	display: block;
+        	span {
+        		display: block;
+        		.translate(0,-100%);
+        	}
+        }
+        & > span:first-child {
+        	font-size: 3.5vw;
+        	letter-spacing: 0;
+        	margin-top: -57px;
+        	margin-bottom: 20px;
+        }
+        & > span:nth-child(2) {
+        	font-family: @font-family-headline;
+        	font-weight: @ultra;
+        	letter-spacing: 0;
+        }
+        & > span:last-child {
+        }
+    }
+    p {
+        color: @darkgray;
+    }
+    .intro-body {
+        position: relative;
+        z-index: 2;
+    }
+    a.read-more {
+        display: block;
+        position: absolute;
+        left: 50%;
+        margin-left: -20px;
+        text-indent: -999px;
+        overflow: hidden;
+        width: 40px;
+        height: 50px;
+        background: url("@{img}/sprite.svg") 0 0 no-repeat transparent;
+        z-index: 1;
+        &:hover,
+        &:active,
+        &:focus {
+            .translate(0,10px);
+        }
+    }
+    @media(max-width:768px) {
+        background-image: url("@{engineering}/intro-alt-mobile.jpg");
+        padding: 0;
+        h1 {
+            margin-top: 25vh;
+        }
+        p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        a.read-more {
+            top: calc(~"100vh - 70px");
+        }
+        .intro-body {
+            #intro-text {
+                padding: 0 28% 0 20px;
+            }
+        }
+    }    
+    @media(min-width:768px) {
+        background-image: url("@{engineering}/jayna.jpg");
+        padding: 0;
+        h1 {
+            font-size: 6vw;
+            margin-top: 35vh;
+            letter-spacing: -4px;
+            -webkit-font-smoothing: antialiased;
+        }
+        p {
+            padding-right: 20%;
+        }
+        a.read-more {
+            top: calc(~"100vh - 95px");
+            bottom: auto;
+        }
+        .intro-body {
+            .brand-heading {
+                font-size: 100px;
+            }
+            .intro-text {
+                font-size: 26px;
+            }
+        }
+
+    }
+    @media(min-width:1600px) {
+       h1 {
+           font-size: 6vw;
+       }
+    }
+    @media(max-width: 400px) {
+       h1 {
+           margin-top: 46vh;
+       }
+       .intro-body {
+           #intro-text {
+               padding: 0;
+           }
+       }
+    } 
+
+}
+
+
+.text-block {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+
+    .headline-gold {
+        font-family: @uni;
+        text-align: center;
+        color: @purple;
+        font-size: 21px;
+        line-height: 1.5;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        margin: 10px 0 40px;
+        &.left {
+            text-align: left;
+        }
+        a {
+            color: #5f5f5f;;
+            border-bottom: 1px solid @lightgold;
+            &:hover {
+                color: black;
+            }
+        }
+        span {
+            font-family: @font-family-headline;
+            font-weight: @ultra;
+            text-transform: uppercase;
+            color: @purple;
+            display: block;
+            font-size: 30px;
+            margin-top: 14px;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 25px;
+            margin: 25px 0 10px;
+        }
+    }   
+    .gold-quote {
+        position: relative;
+        margin: 140px 0 160px;
+        font-weight: bold;
+        &:after,
+        &:before {
+            content: " ";
+            position: absolute;
+            width: 385px;
+            height: 69px;
+            background: url("@{img}/sprite.svg") 0 -101px no-repeat transparent;
+            display: block;
+            left: 50%;
+            margin-left: -192px;
+        }
+        &:before {
+            top: -100px;
+        }
+        &:after {
+            bottom: -100px;
+            background-position: 0 -195px;
+        }
+    } 
+    .center {
+    	text-align: center;
+    	font-size: 15px;
+    }
+    h3.headline-gold {
+        font-size: 22px;
+        text-align: left;
+        line-height: 31px;
+        margin-bottom: 30px;
+    }
+    
+    .copy {
+        margin-top: 0;        
+        margin-bottom: -30px;
+        background: #FFF;
+        padding: 20px 30px;
+    }
+    p.caps:first-child:first-letter { 
+        float: left; 
+        color: @lightgold;
+        font-size: 65px;
+        line-height: 58px;
+        padding-top: 0;
+        padding-right: 8px; 
+        padding-left: 3px; 
+        font-family: @uni;
+        font-weight: 400; 
+    }
+
+    @media(min-width:1200px) {
+        iframe {
+            width: 120%;
+            margin: 40px -10% 40px;
+            height: 538px !important;
+        }
+    }
+    @media(min-width:768px) {
+        .copy {
+            margin-top: -50px; 
+            padding: 80px 90px;
+        }
+        .headline-gold {
+            font-size: 24px;
+            line-height: 41px;
+        }
+        .gold-quote {
+            font-size: 26px;
+            &.lg-quote {
+                font-size: 36px;
+            }
+        }
+        div.uw-slideshow {
+            width: 120%;
+            margin: 40px -10% 20px;
+            .activeFullscreen & {
+                // Overwrite what I did when in the lines above when the slide show pops up.
+                margin: 40px 0 20px 0;             
+            }
+        }
+        
+    }
+    @media(max-width:768px) {
+    }
+
+
+}
+
+
+
+button.close-video {
+    position: absolute;
+    border: none;
+    top: -55px;
+    right: 0;
+    z-index: 9999;
+    width: 55px;
+    height: 55px;
+    background: url("@{img}/sprite.svg") no-repeat -207px -286px rgba(0,0,0,.2);
+}
+
+
+
+
+// Blinker animation for video
+
+@keyframes blinker {
+  0%,
+  10% {
+    opacity: 0;
+  }
+  25%,
+  85% {
+    opacity: .7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.playing .video-block {
+    z-index: 9999;
+}
+
+.video-block {
+    position: relative;
+    z-index: 0;
+    .background-cover(cover);
+    .container {
+        padding-top: 280px;
+        padding-bottom: 30px;
+    }
+    h2 {
+        font-family: @uni;
+        font-weight: 300;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: white;
+        -webkit-font-smoothing: antialiased;
+    }
+    p {
+        color: white;
+        span.highlight {
+            background-color: rgba(183, 165, 122, 0.3);
+            padding: 0 10px;
+        }
+        span.sub {
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+            display: block;
+            margin-top: 20px;
+            padding-top: 30px;
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+    a {
+        color: white;
+        border-bottom: 1px solid #fff;
+        &:focus,
+        &:active,
+        &:hover {
+            border-bottom-color: @purple;
+        }
+    }
+    a.play {
+        position: relative;
+        color: #fff;
+        font-family: @uni;
+        text-transform: uppercase;
+        font-size: 25px;
+        border-bottom: none;
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            opacity: .8;
+        }
+        &:after {
+            background: url("@{img}/sprite.svg") no-repeat -79px -329px rgba(0,0,0,0);
+            width: 101px;
+            height: 95px;
+            bottom: -15px;
+            right: 0;
+            opacity: .8;
+            .transition(all .1s linear);
+        }
+        &:focus,
+        &:active,
+        &:hover {
+            &:after {
+                .scale(1.1,1.1);
+            }
+        }
+        svg {
+            .animation(blinker 1.2s linear infinite);
+            margin-left: -2px;
+        }
+    }
+    @media(min-width:768px) {
+        background-image: url("@{engineering}/jayna-video.jpg");
+        text-align: left;
+        .container {
+            padding-top: 150px;
+            padding-bottom: 240px;
+        }
+        a.play {
+            position: absolute;
+            bottom: -150px;
+            left: 30px;
+            padding: 14px 150px 13px 20px;
+            line-height: 39px;
+            -webkit-font-smoothing: antialiased;
+            &:before {
+                background: url("@{img}/sprite.svg") no-repeat 9px -289px rgba(0,0,0,0);
+                width: 52px;
+                height: 145px;
+                bottom: -41px;
+                right: 100px;
+                opacity: .8;
+            }
+            &:focus,
+            &:active {                
+                outline: 15px solid rgba(183,165,122,0.4);
+            }
+            &:hover {                
+                outline: 15px solid rgba(183,165,122,0.2);
+            }
+        }
+        h2 {
+            font-size: 55px;
+            text-align: left;
+        }
+        p {            
+            padding-right: 50%;
+            text-align: left;
+        }
+    }
+    @media(max-width:768px) {
+        .container {
+            padding-top: 110%;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        background-position: -65px 0;
+        background-image: url("@{education}/woman-in-headscarf-mobile.jpg");
+        h2 {
+            font-size: 40px;
+        }
+        a.play {
+            .iPhone & {
+                pointer-events: none;
+            }
+            padding: 31px 97px 14px 0;
+            display: inline-block;
+            font-size: 20px;
+            &:before {
+            }
+            &:after {
+                .scale(.75, .75);
+            }
+        }
+    }
+}
+
+// Popup video
+#youtube-video {
+    iframe {
+        margin: 0;
+    }
+    @media(min-width:768px) {
+        position: absolute;
+        top: 0;
+        right: 0;    
+        left: 0;
+        bottom: 0;
+        z-index: 9999;
+    }
+    @media(max-width:768px) {   
+        .iPhone & {
+            iframe {
+                margin: 0;
+                height: 60px !important;
+                position: absolute;
+                right: 0;
+                left: 0;
+                z-index: 999;
+                bottom: 40px;
+                opacity: 0;
+            }
+        }
+        iframe { 
+            width: 100% !important;
+            height: 42vw !important;
+        }
+    }
+
+}
+
+
+
+
+// Auto play videos 
+.video-auto {
+    margin: 15px 0 20px;
+    overflow: hidden;
+    position: relative;
+    .background-cover(cover);
+    .pause {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        text-indent: -999px;
+        overflow-x: hidden;
+        width: 45px;
+        height: 45px;
+        left: 20px;
+        bottom: 30px;
+        border: none;
+        background-image: url("@{img}/pause.svg");
+        background-color: transparent;
+        &:hover,
+        &:focus {
+            background-position-x: -47px;
+        }
+        &:focus {
+            outline-color: rgb(59, 153, 252);
+            outline-style: auto;
+            outline-width: 5px;
+        }
+    }
+    video {
+        width: 100%;
+        height: 28vw;
+        // .translate(0,-10%);
+    }
+    .gold-quote {
+        margin: 140px 0 160px;
+        font-weight: bold;
+        font-family: @uni;
+        color: @purple;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 23px;
+        position: relative;
+        &:after,
+        &:before {
+            content: " ";
+            position: absolute;
+            width: 385px;
+            height: 69px;
+            background: url("@{img}/sprite.svg") -420px -101px no-repeat transparent;
+            display: block;
+            left: 50%;
+            margin-left: -192px;
+        }
+        &:before {
+            top: -100px;
+        }
+        &:after {
+            bottom: -100px;
+            background-position: -420px -195px;
+        }
+    }
+    @media(min-width:768px) {
+        .gold-quote {
+        	position: absolute;
+        	width: 40%;
+        	z-index: 1;
+        	top: 50%;
+        	left: 7%;
+        	margin-top: -60px;
+        }
+
+    }
+    @media(max-width:768px) {
+    }
+    @media(max-width:768px) {
+
+    }
+}
+
+
+// People section 
+
+.audio-block {
+    width: 100%;
+    padding: 50px 0;
+    color: white;
+    overflow: hidden;
+    .container {
+        text-align: right;
+    }
+    #people {
+        padding-left: 0;
+        li {
+            width: 50%;
+            margin: 0;
+            float: left;
+            height: 300px;
+            .background-cover(cover);
+            background-position: center center;
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            outline: 5px solid #fff;
+            &:hover,
+            &:active,
+            &:focus,
+            &.active-focus,
+            &.active {
+                div.hider {
+                    .scale(1,1);
+                    opacity: 1;
+                }                
+            }
+            &.active {
+                div.hider {
+                    &:after {
+                        .translate(0,0);
+                    }
+                } 
+            }
+            a {
+                text-decoration: underline;
+            }
+            div.hider {
+                .scale(2,2);
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                padding: 15% 10% 15%;
+                background-color: rgba(183, 165, 122, 0.69);
+                .transition(all .1s linear);
+                opacity: 0;
+                vertical-align: middle;
+            }
+            .hider > p {
+                font-size: 14px;
+                color: white;
+                padding: 5px 0;
+                border: 4px solid white;
+                margin-bottom: -4px;
+                background-color: @lightgold;
+                span {
+                    font-weight: bold;
+                }
+            }
+            h2 {
+                font-size: 26px;
+                text-transform: uppercase;
+                font-family: @uni;
+                color: @lightgold;
+                background-color: #fff;
+                padding: 5px 0;
+                margin: 0;
+            }
+        }
+        .pax-1 { background-image: url("@{engineering}/raj.jpg") }
+        .pax-2 { background-image: url("@{engineering}/kat.jpg") }
+        .pax-3 { background-image: url("@{engineering}/raj.jpg") }
+        .pax-4 { background-image: url("@{engineering}/chet.jpg")  }
+    }
+    @media(min-width:768px) {
+        #people {
+
+            li {
+                width: 25%;
+                height: 400px;
+                display: table;
+                div.hider {
+                    padding: 0 15%;
+                    display: table-cell;
+                    position: static;
+                }
+                div.hider > p {
+                    font-size: 15px;
+                }
+            }            
+        }
+    }
+    @media only screen and (min-width : 768px ) and (max-width : 992px) {
+        #people {
+            li {
+                width: 50%;
+            }            
+        }
+    }
+    @media(max-width:768px) {
+        #people {
+            li {
+                height: 350px;
+                width: 100%;
+            }            
+        }
+    }
+}
+
+#chart {
+	.center {
+	    text-align: center;
+	}
+	.headline-gold {
+	    font-family: @uni;
+	    text-align: center;
+	    color:@lightgold;
+	    font-size: 33px;
+	    line-height: 1.3;
+	    font-weight: bold;
+	    text-transform: uppercase;
+	    margin-bottom: 40px;;
+    	margin: 50px 0 40px;
+	}
+	margin: 10px 0 40px;
+	text-align: center;
+	@media(min-width:768px) {
+		div {
+			img:nth-child(1),
+			img:nth-child(3) {
+				width: 24.5%;
+			}
+			img:nth-child(2) {
+				width: 47%;
+			}
+		}
+	}
+
+
 }
 
 
