@@ -128,16 +128,13 @@
       </div>
     </div>
 
-    <div class="fyp-close-button-gradient"></div>
-    <a class="FYP-home-button">
-      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-         width="46.75px" height="46.812px" viewBox="0 0 46.75 46.812" enable-background="new 0 0 46.75 46.812" xml:space="preserve">
-      <g>
-        <line fill="none" stroke="#FFF" stroke-miterlimit="10" x1="1.011" y1="1.001" x2="46.011" y2="46.001"/>
-        <line fill="none" stroke="#FFF" stroke-miterlimit="10" x1="46.011" y1="1.001" x2="1.011" y2="46.001"/>
-      </g>
-      </svg>
-    </a> 
+    <button id="empty">
+    Return to story list
+    <svg aria-hidden="true" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34.147px" height="37.833px" viewBox="0 0 34.147 37.833" enable-background="new 0 0 34.147 37.833" xml:space="preserve">
+      <line fill="none" stroke="#A7A9AC" stroke-width="2" stroke-miterlimit="10" x1="9.616" y1="8.449" x2="31.782" y2="30.614"></line>
+      <line fill="none" stroke="#A7A9AC" stroke-width="2" stroke-miterlimit="10" x1="31.782" y1="8.449" x2="9.616" y2="30.614"></line>
+    </svg>
+  </button>
 
 
 
@@ -246,9 +243,12 @@
                 <div class="bio-text">
                   <p><?php echo apply_filters('the_content', $unit->post_content); ?></p>
                 </div>
+
+                <?php if(empty($unit->giveButton)){ ?>
                 <div class="give-button">
                   <a href="#" class="give-link" data-code="<?php echo $unitcodes; ?>">Give Now</a> 
                 </div>
+                <?php } ?>
               </div>
               <div class="front" style="<?php echo 'background-image:url(' . $unitimageurlhigh . ');'; ?> "></div>
             </div>
@@ -305,6 +305,9 @@
            }
            $fundclasses .= $fund->unit . " ";
 
+            $unslugUnit = str_replace("---"," &amp; ",$fund->unit);
+            $unslugUnit = str_replace("-"," ",$unslugUnit);
+
            //spit out html 
            ?>
             <li tabindex="0" data-name="<?php echo $fund->post_name; ?>" data-img="<?php echo $fundimageurlhigh; ?>" class="flip-container grid-item fyp-funds <?php echo $fundclasses; ?>">
@@ -316,16 +319,14 @@
               </div>
               <div class="back">
                 <h3><?php echo $fund->post_title; ?></h3>
+                <p class="back-unit-name"><?php echo $unslugUnit; ?></p>
                 <p class="short-desc"><?php echo $fund->desc; ?></p>
               </div>
               <div tabindex="0" class="full-bio">
                 <h2><?php echo $fund->post_title; ?></h2>
                  <div class="bio-info"> 
                   <p><?php 
-                      $search = array(" ","&amp;","&");
-                      $unslug = str_replace("---"," &amp; ",$fund->unit);
-                      $unslug = str_replace("-"," ",$unslug);
-                      echo '<a href="#" class="fyp-filter-click" data-filter="' . $fund->unit . '">' . $unslug . '</a>';
+                      echo '<a href="#" class="fyp-filter-click" data-filter="' . $fund->unit . '">' . $unslugUnit . '</a>';
                   ?></p>               
                 </div>
                 <div class="bio-text">
@@ -336,9 +337,11 @@
                     //echo '<a href="#">' . $tag->name . '</a>';
                 //} ?>
                 </div>
+                <?php if(!empty($fund->code)){ ?>
                 <div class="give-button">
                 	<a href="#" class="give-link" data-code="<?php echo $fund->code; ?>">Give Now</a>
                 </div>
+                <?php } ?>
               </div>
             </div>
           </li>
@@ -351,10 +354,16 @@
         }
 
 
-
-
-
         ?>
+
+        <li tabindex="0" class="flip-container grid-item search-more">
+            <div class="flipper" role="button">
+              <div>
+                <p class="fyp-search-more-label">Search for more funds</p>
+                <!-- <p class="short-desc">no desc</p> -->
+              </div>
+            </div>
+          </li>
 
 
          </ul>   

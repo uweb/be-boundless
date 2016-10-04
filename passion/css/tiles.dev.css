@@ -155,6 +155,82 @@
   /* Extra Small Devices, Phones */
   /* Custom, iPhone Retina */
 }
+#passion .fyp-button {
+  -webkit-transform: skew(-15deg, 0);
+  -ms-transform: skewX(-15deg) skewY(0);
+  transform: skew(-15deg, 0);
+  background-color: #b7a57a;
+  min-width: 141px;
+  display: inline-block;
+  margin-left: 7px;
+}
+#passion .fyp-button .fyp-link {
+  -webkit-transform: skew(15deg, 0);
+  -ms-transform: skewX(15deg) skewY(0);
+  transform: skew(15deg, 0);
+  font-family: "Encode Sans Compressed", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  display: inline-block;
+  letter-spacing: .1em;
+  font-size: 15px;
+  color: #4b2e83;
+  background-color: transparent;
+  margin: 2px 0 2px 0;
+}
+#passion .fyp-button:focus .fyp-link,
+#passion .fyp-button:active .fyp-link,
+#passion .fyp-button:hover .fyp-link {
+  color: #FFF;
+}
+#passion button#empty {
+  position: fixed;
+  border: none;
+  top: 100px;
+  right: 0;
+  width: 65px;
+  padding: 10px;
+  background-color: white;
+  z-index: 20;
+  text-align: left;
+  text-transform: capitalize;
+  line-height: 0;
+  color: transparent;
+  box-shadow: -1px 1px 2px #0003 3;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  -webkit-transform: translate(75px, 0);
+  -ms-transform: translate(75px, 0);
+  transform: translate(75px, 0);
+}
+#passion button#empty:focus,
+#passion button#empty:active,
+#passion button#empty:hover {
+  background-color: #b7a57a;
+}
+#passion button#empty:focus line,
+#passion button#empty:active line,
+#passion button#empty:hover line {
+  stroke: #fff;
+}
+#passion button#empty line {
+  stroke: #8e8e8e;
+}
+#passion button#empty.active {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+@media (max-width: 768px) {
+  #passion button#empty {
+    width: 45px;
+    padding: 2px;
+    top: 60px;
+    right: 5px;
+    opacity: .7;
+  }
+}
 #passion .uw-footer {
   margin-top: 0;
   display: none;
@@ -430,6 +506,38 @@
 #passion .grid {
   background: url(../assets/stripes.svg) #E8E8E8;
 }
+#passion li.grid-item.search-more div {
+  background-color: #4b2e83;
+  padding: 15px;
+  cursor: pointer;
+}
+#passion li.grid-item.search-more div p.fyp-search-more-label {
+  color: #FFF;
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  font-family: "Encode Sans Compressed", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+#passion li.grid-item.search-more div p.fyp-search-more-label:after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background: url(../assets/plus.svg) 0 0 no-repeat;
+  background-size: 40px 40px;
+}
+#passion li.grid-item.search-more div p.fyp-search-more-label:hover,
+#passion li.grid-item.search-more div p.fyp-search-more-label:active,
+#passion li.grid-item.search-more div p.fyp-search-more-label:focus {
+  color: #b7a57a;
+}
 #passion .full-bio {
   display: none;
   margin-left: 39.8%;
@@ -548,6 +656,14 @@
   color: #4b2e83;
   background-color: transparent;
   margin: 2px 0 2px 0;
+}
+#passion .open:not(.unit-small) .full-bio .give-button:focus .give-link,
+#passion .fyp-units .full-bio .give-button:focus .give-link,
+#passion .open:not(.unit-small) .full-bio .give-button:active .give-link,
+#passion .fyp-units .full-bio .give-button:active .give-link,
+#passion .open:not(.unit-small) .full-bio .give-button:hover .give-link,
+#passion .fyp-units .full-bio .give-button:hover .give-link {
+  color: #FFF;
 }
 #passion .grid-sizer,
 #passion .grid-item {
@@ -1224,10 +1340,18 @@
 #passion .grid-item .back h3 {
   color: white;
   text-transform: uppercase;
-  margin: 0 0 5px;
+  margin: 0;
   font-size: 16px;
   line-height: 1.3;
   letter-spacing: 1px;
+}
+#passion .grid-item .back .back-unit-name {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: initial;
+  font-family: "Uni sans", sans-serif;
 }
 #passion .grid-item .back p {
   color: white;
