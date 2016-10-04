@@ -70,7 +70,7 @@
 
 
        <section data-vid="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/scholarship/pettibone' ?>" class='video-auto'>
-         <video  autobuffer="autobuffer" preload="preload" muted class="autovid" id="scrollVid">
+         <video preload="preload" muted class="autovid" id="scrollVid">
              <source class="mp4" type="video/mp4">
              <source class="webm" type="video/webm">
          </video>

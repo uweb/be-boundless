@@ -103,7 +103,7 @@ p {
         & > span:first-child {
         	font-size: 3.5vw;
         	letter-spacing: 0;
-        	margin-top: -57px;
+        	margin-top: -10%;
         	margin-bottom: 20px;
         }
         & > span:nth-child(2) {
@@ -546,9 +546,10 @@ button.close-video {
 
 // Auto play videos 
 .video-auto {
-    margin: 15px 0 20px;
+    margin: 0 0 20px;
     overflow: hidden;
     position: relative;
+    z-index: 10;
     .background-cover(cover);
     .pause {
         position: absolute;
