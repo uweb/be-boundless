@@ -68,7 +68,7 @@ if ( ! post_type_exists( 'funds' ) ):
 		global $post;
 		$custom = get_post_custom($post->ID);
 		$desc = $custom['desc'][0];
-		?><textarea name="desc" rows="4" cols="100"><?php echo $desc; ?></textarea><?php
+		?><textarea name="desc" rows="4" cols="60"><?php echo $desc; ?></textarea><?php
 	}
 
 	function unit_callback() {
