@@ -4,12 +4,12 @@
 
 <div class="intro" id="intro-slide">
   <div class="intro-body">
+  <button id="pauseVideo">Pause</button>
   <div id="ytplayer"></div>
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-xs-10 col-xs-offset-1 col-xs-offset-1 col-lg-offset-0" id='intro-text'>
       
-        <!-- <p>Insert transcript here</p> -->
 
       </div>
     </div>      
@@ -19,7 +19,7 @@
 </div>
 
 <ul id="dot-nav">
-  <li data-tooltip="Aspiring Forest fixer"><a title="Anthony Martinez" href="#anthony"><span></span></a></li>
+  <li data-tooltip="Aspiring forest fixer"><a title="Anthony Martinez" href="#anthony"><span></span></a></li>
   <li data-tooltip="Student advocate"><a title="Austin Wright-Pettibone" href="#pettibone"><span></span></a></li>
   <li data-tooltip="Impassioned journalist"><a title="Starla Sampaco" href="#starla"><span></span></a></li>
   <li data-tooltip="Artist-meets-activist"><a title="Mayowa Aina" href="#aina"><span></span></a></li>
@@ -238,7 +238,12 @@
         <div class="class"><p><b>Class of </b></p><p>'17</p></div>
         <div><p><b>Hometown:</b> Bellevue, Washington</p></div>
         <div>
-          <p><b>Major:</b> Communication / Law, societies and justice </p>
+          <p><b>Majors:</b></p>
+          <ul>
+            <li>Communication: Journalism</li>
+            <li>Law, societies and justice</li>
+          </ul>
+
         </div>  
         <div>
           <p><b>Scholarships:</b></p>
@@ -335,8 +340,16 @@
         <div class="class"><p><b>Class of </b></p><p>'17</p></div>
         <div><p><b>Hometown:</b> Tacoma, Washington</p></div>
         <div>
-          <p><b>Majors:</b> International studies / Informatics</p>
-          <p><b>Minors:</b> Music / Comparative History of Ideas</p>
+          <p><b>Majors:</b> </p>
+          <ul>
+            <li>International studies</li>
+            <li>Informatics</li>
+          </ul>
+          <p><b>Minors:</b></p>
+          <ul>
+            <li>Music</li>
+            <li>Comparative History of Ideas</li>
+          </ul>
         </div>  
         <div>
           <p><b>Scholarships:</b></p>
@@ -457,7 +470,11 @@
         <div class="class"><p><b>Class of </b></p><p>'18</p></div>
         <div><p><b>Hometown:</b> Green Acres, Washington</p></div>
         <div>
-          <p><b>Majors:</b> Applied physics / Earth and space sciences </p>
+          <p><b>Majors:</b></p>
+          <ul>
+            <li>Applied physics</li>
+            <li>Earth and space sciences</li>
+          </ul>
         </div>  
         <div>
           <p><b>Scholarships:</b> Washington NASA Space Grant Scholarship</p>
@@ -549,7 +566,11 @@
         <div class="class"><p><b>Class of </b></p><p>'17</p></div>
         <div><p><b>Hometown:</b>  Woodinville, Washington</p></div>
         <div>
-          <p><b>Majors:</b> Economics / Community, environment and planning </p>
+          <p><b>Majors:</b></p>
+          <ul>
+            <li>Economics</li>
+            <li>Community, environment and planning</li>
+          </ul>
         </div>  
         <div>
           <p><b>Scholarships:</b> CoMotion Mary Gates Innovation Scholarship</p>

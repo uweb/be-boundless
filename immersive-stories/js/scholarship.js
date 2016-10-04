@@ -41,23 +41,27 @@ function onYouTubePlayerAPIReady() {
 }
 
 function onPlayerReady(event){
-    console.log('totogs')
-    
+    console.log('totogs');    
 }
 
 function stateChange(e){
-    console.log(e)
-    if(e.data === -1){ console.log('unstarted')  }
-    // if(e.data === 0) { console.log('ended') }
     if(e.data === 1) { console.log('playing') 
         document.getElementsByTagName('body')[0].classList.add('videoPlay');
         document.getElementsByTagName('body')[0].classList.remove('videoPaused');
-    }
-    if(e.data === 2) { console.log('paused') 
+    } else if(e.data === 2) {
          document.getElementsByTagName('body')[0].classList.add('videoPaused');
     }
-    if(e.data === 3) { console.log('buffering') }
 }
+
+document.getElementById('pauseVideo').addEventListener('click',function(e){
+    if(document.getElementsByTagName('body')[0].classList.contains('videoPaused') ) {
+        player.playVideo()
+    } else {
+        player.pauseVideo()
+    }
+})
+
+
 
 $(function(){
 

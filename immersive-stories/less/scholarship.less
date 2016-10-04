@@ -46,7 +46,7 @@ p {
     background-position: center center;
     .background-cover(cover);
     width: 100%;
-    height: 105vh;
+    height: 100vh;
     padding: 100px 0;
     text-align: center;
     color: white;
@@ -64,7 +64,7 @@ p {
             max-height: 100%;
             position: absolute;
             top: 50%;
-            margin-top: calc(~"-28vw + 20px");
+            .translate(0,calc(~"-50% + 50px"));
         }
     }
     h1 {
@@ -79,6 +79,36 @@ p {
         text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
         // font-weight: bold;
     }
+    #pauseVideo {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        text-indent: -999px;
+        overflow-x: hidden;
+        width: 45px;
+        height: 45px;
+        left: 45px;
+        bottom: 45px;
+        border: none;
+        background: url("@{img}/pause.svg") no-repeat 0 0 transparent;
+        z-index: 2;
+        .videoPaused & {
+            background-position: 0 -49px;
+        }
+        &:hover,
+        &:focus {
+            background-position-x: -47px;
+        }
+        &:focus {
+            outline-color: rgb(59, 153, 252);
+            outline-style: auto;
+            outline-width: 5px;
+        }
+        @media(max-width:768px) {
+            display: none;
+        }
+    }
+
     a.read-more {
         display: block;
         position: absolute;
@@ -97,7 +127,7 @@ p {
         }
     }
     @media(max-width:768px) {
-        background-image: url("@{scholarship}/FPO-mobile.png");
+        background-image: url("@{scholarship}/mobile.png");
         padding: 0;
         h1 {
             margin-top: 25vh;
@@ -1148,82 +1178,24 @@ body.videoPaused #intro-slide {
 @keyframes colorswitch {
   0%    { background-color: black }
   1%    { background-color: #160059 } // Purple
+  69%   { background-color: #181818 } // Dark gray
   8%    { background-color: #160059 } 
   9%    { background-color: #75613d } // Dark gold
   22%   { background-color: #75613d } 
-  23%   { background-color: #c8a775 } // Light gold
+  23%   { background-color: #c8a775 } // Light gold  
   38%   { background-color: #c8a775 } 
   39%   { background-color: white }
   52%   { background-color: white }
   53%   { background-color: #160059 } // Purple
   68%   { background-color: #160059 } 
-  69%   { background-color: #181818 } // Dark gray
   82%   { background-color: #181818 }
   83%   { background-color: #808080 } // Light gray
-  97%   { background-color: #808080 }
-  98%   { background-color: #160059 }
+  99%   { background-color: #808080 }
+  100%   { background-color: #160059 }
 } 
 
 
 
-
-
-
-
-
-
-
-// Gallery // Slideshow updates
-
-
-.aspectRatioPlaceholder .img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.zoom-effect .img{
-    cursor: pointer;
-    cursor: -webkit-zoom-in;
-}
-
-.zoom-effect .zoomImg,
-.zoom-effect .zoomImg-wrap {
-    position: relative;
-    z-index: 900;
-    transition: all 300ms;
-}
-
-.zoom-effect .zoomImg-wrap--absolute {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-.zoom-effect .zoomImg {
-    cursor: pointer;
-    cursor: -webkit-zoom-out;
-}
-
-
-.zoom-effect .zoomOverlay.show{
-    opacity: .9;
-}
-
-.zoom-effect .zoomOverlay {
-    z-index: 800;
-    background: #fff;
-    position: fixed;
-    transition: opacity 600ms;
-    opacity: 0;
-    cursor: pointer;
-    cursor: -webkit-zoom-out;
-}
 
 
 
