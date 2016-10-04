@@ -26,9 +26,16 @@
         display: inline-block;
         letter-spacing: .1em;
         font-size: 15px;
-        color: @purple;
+        color: #FFF;
         background-color: transparent;
         margin: 2px 0 2px 0;
+      }
+      &:focus,
+      &:active,
+      &:hover {
+        .fyp-link {
+          color: @purple; 
+        }
       }
   }
 
@@ -516,9 +523,16 @@ button#empty {
               display: inline-block;
               letter-spacing: .1em;
               font-size: 15px;
-              color: @purple;
+              color: #FFF;
               background-color: transparent;
               margin: 2px 0 2px 0;
+            }
+            &:focus,
+            &:active,
+            &:hover {
+              .give-link {
+                color: @purple; 
+              }
             }
         }
       }
