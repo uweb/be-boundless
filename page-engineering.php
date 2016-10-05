@@ -149,9 +149,16 @@
       <section id="chart">
         <p class="headline-gold center">ECoG/Brain Activity Controlling <br>Electronic Limb</p> 
         <div>
-          <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-1.png' ?>" alt="">
-          <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-2.png' ?>" alt="">
-          <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-3.png' ?>" alt="">
+          <div>
+            <p><span>1</span>Patient paralyzed due to spinal cord injury - unable to pick up glass of water.</p>
+            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-1.png' ?>" alt="">
+          </div><div>
+            <p><span>2</span>ECoG record brain activity, is tranlsated by an external computer, which sends information to a robotic arm in response to patient's tought.</p>
+            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-2.png' ?>" alt="">
+          </div><div>
+            <p><span>3</span>Robotic arm responds to patient's thoughts.</p>
+            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-3.png' ?>" alt="">
+          </div>
         </div>
       </section>
 
