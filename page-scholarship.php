@@ -468,7 +468,7 @@
       <div class="bio">
         <h2>Tyler Valentine</h2>
         <div class="class"><p><b>Class of </b></p><p>'18</p></div>
-        <div><p><b>Hometown:</b> Green Acres, Washington</p></div>
+        <div><p><b>Hometown:</b> Greenacres, Washington</p></div>
         <div>
           <p><b>Majors:</b></p>
           <ul>

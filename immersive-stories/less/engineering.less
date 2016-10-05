@@ -69,22 +69,6 @@ p {
         line-height: 1;
         display: inline-block;
         position: relative;
-        &:before,
-        &:after {
-        	content: "";
-        	display: block;
-        	position: absolute;
-        	right: 0;
-        	height: 4px;
-        	width: 300%;
-        	background-color: white;
-        }
-        &:before {
-        	top: 0;
-        }
-        &:after {
-        	bottom: 0;
-        }
         .engineerIntro & {
         	& > span:first-child span {
         		.animation(slidein 1.5s .1s ease forwards);
@@ -107,8 +91,6 @@ p {
         & > span:first-child {
         	font-size: 3.5vw;
         	letter-spacing: 0;
-        	margin-top: -10%;
-        	margin-bottom: 20px;
         }
         & > span:nth-child(2) {
         	font-family: @font-family-headline;
@@ -143,7 +125,7 @@ p {
         }
     }
     @media(max-width:768px) {
-        background-image: url("@{engineering}/intro-alt-mobile.jpg");
+        background-image: url("@{engineering}/jayna-mobile.jpg");
         padding: 0;
         h1 {
             margin-top: 25vh;
@@ -153,7 +135,7 @@ p {
             line-height: 1.5;
         }
         a.read-more {
-            top: calc(~"100vh - 70px");
+            top: calc(~"100vh - 55px");
         }
         .intro-body {
             #intro-text {
@@ -161,6 +143,14 @@ p {
             }
         }
     }    
+    @media(max-width:468px) {
+    	background-image: url("@{engineering}/jayna-mobile-portrait.jpg");
+    	h1 {
+    	    & > span:first-child {
+    	    	font-size: 6.5vw;
+    	    }
+    	}
+    }
     @media(min-width:768px) {
         background-image: url("@{engineering}/jayna.jpg");
         padding: 0;
@@ -169,6 +159,26 @@ p {
             margin-top: 35vh;
             letter-spacing: -4px;
             -webkit-font-smoothing: antialiased;
+            & > span:first-child {
+            	margin-top: -10%;
+            	margin-bottom: 20px;
+            }
+            &:before,
+            &:after {
+            	content: "";
+            	display: block;
+            	position: absolute;
+            	right: 0;
+            	height: 4px;
+            	width: 300%;
+            	background-color: white;
+            }
+            &:before {
+            	top: 0;
+            }
+            &:after {
+            	bottom: 0;
+            }
         }
         p {
             padding-right: 20%;
@@ -186,6 +196,7 @@ p {
             }
         }
 
+
     }
     @media(min-width:1600px) {
        h1 {
@@ -194,7 +205,7 @@ p {
     }
     @media(max-width: 400px) {
        h1 {
-           margin-top: 46vh;
+           margin-top: 53vh;
        }
        .intro-body {
            #intro-text {
@@ -330,6 +341,13 @@ p {
         
     }
     @media(max-width:768px) {
+    	.headline-gold {
+    	    // margin: 10px 0 20px;
+    	    span {
+    	    	font-size: 26px;
+    	    	line-height: 1.3;
+    	    }
+    	}
     }
 
 
@@ -374,10 +392,8 @@ button.close-video {
 .video-block {
     position: relative;
     z-index: 0;
-    .background-cover(cover);
-    .container {
-        padding-top: 280px;
-        padding-bottom: 30px;
+    .portrait {
+    	.background-cover(cover);
     }
     h2 {
         font-family: @uni;
@@ -446,18 +462,21 @@ button.close-video {
         }
     }
     @media(min-width:768px) {
-        background-image: url("@{engineering}/jayna-video.jpg");
         text-align: left;
+        .portrait {
+        	background-image: url("@{engineering}/jayna-video.jpg");
+        	position: absolute;
+        	top: 0;
+        	left: 0;
+        	bottom: 0;
+        	right: 0;
+        }
         .container {
-            padding-top: 150px;
-            padding-bottom: 240px;
+            padding: 80px 0;
         }
         a.play {
-            position: absolute;
-            bottom: -150px;
-            left: 30px;
+            line-height: 169px;
             padding: 14px 150px 13px 20px;
-            line-height: 39px;
             -webkit-font-smoothing: antialiased;
             &:before {
                 background: url("@{img}/sprite.svg") no-repeat 9px -289px rgba(0,0,0,0);
@@ -485,29 +504,43 @@ button.close-video {
         }
     }
     @media(max-width:768px) {
-        .container {
-            padding-top: 110%;
-            padding-left: 30px;
-            padding-right: 30px;
-        }
-        background-position: -65px 0;
-        background-image: url("@{education}/woman-in-headscarf-mobile.jpg");
-        h2 {
-            font-size: 40px;
-        }
-        a.play {
-            .iPhone & {
-                pointer-events: none;
-            }
-            padding: 31px 97px 14px 0;
-            display: inline-block;
-            font-size: 20px;
-            &:before {
-            }
-            &:after {
-                .scale(.75, .75);
-            }
-        }
+    	margin: 30px 0;
+    	background-color: @darkgray;
+    	padding: 0 0 40px;
+    	.portrait {
+    		background-image: url("@{engineering}/jayna-video-mobile.jpg");
+			width: 100%;
+			height: 200px;
+    	}
+    	h2 {
+    		font-size: 33px;
+    	}
+    	p {
+    		font-size: 15px;
+    		line-height: 1.4;
+    	}
+    	a.play {
+    		padding-right: 80px;
+    		white-space: nowrap;
+    		svg {
+    			display: none;
+    		}
+    		&:after {
+    			.scale(.5, .5);
+    			bottom: -31px;
+    			pointer-events: none;
+    		}
+    		.iPhone & {
+    		    pointer-events: none;
+    		}
+    	}
+    }
+    @media(max-width:400px) {
+    	.portrait {
+    	 	background-image: url("@{engineering}/jayna-video-mobile-portrait.jpg");
+			width: 100%;
+			height: 200px;
+    	}
     }
 }
 
@@ -554,6 +587,7 @@ button.close-video {
     overflow: hidden;
     position: relative;
     z-index: 10;
+
     .background-cover(cover);
     .pause {
         position: absolute;
@@ -580,8 +614,7 @@ button.close-video {
     }
     video {
         width: 100%;
-        height: 28vw;
-        // .translate(0,-10%);
+        height: 56vw;
     }
     .gold-quote {
         margin: 140px 0 160px;
@@ -612,6 +645,8 @@ button.close-video {
         }
     }
     @media(min-width:768px) {
+    	background-image: url("@{engineering}/ortho-bg.jpg");
+    	padding: 110px 0;
         .gold-quote {
         	position: absolute;
         	width: 40%;
@@ -620,9 +655,21 @@ button.close-video {
         	left: 7%;
         	margin-top: -60px;
         }
+        video {
+        	height: 28vw;
+        	.translate(13%,0);
+        }
 
     }
+    @media(min-width:1100px) {
+    	padding: 0;	
+    }
     @media(max-width:768px) {
+	    .gold-quote {
+			font-size: 20px;
+			line-height: 1.4;
+			padding: 0 20px;
+	    }
     }
     @media(max-width:768px) {
 
@@ -688,8 +735,11 @@ button.close-video {
             }
             .hider > p {
                 font-size: 14px;
+                line-height: 1.4;
+                text-align: left;
+                padding: 11px;
                 color: white;
-                padding: 5px 0;
+                padding: 5px;
                 border: 4px solid white;
                 margin-bottom: -4px;
                 background-color: @lightgold;
@@ -708,9 +758,9 @@ button.close-video {
             }
         }
         .pax-1 { background-image: url("@{engineering}/raj.jpg") }
-        .pax-2 { background-image: url("@{engineering}/kat.jpg") }
-        .pax-3 { background-image: url("@{engineering}/raj.jpg") }
-        .pax-4 { background-image: url("@{engineering}/chet.jpg")  }
+        .pax-2 { background-image: url("@{engineering}/chet.jpg") }
+        .pax-3 { background-image: url("@{engineering}/ojemann.jpg") }
+        .pax-4 { background-image: url("@{engineering}/kat.jpg")  }
     }
     @media(min-width:768px) {
         #people {
@@ -719,7 +769,7 @@ button.close-video {
                 width: 25%;
                 height: 400px;
                 div.hider {
-                    padding: 35% 15% 0;
+                    padding: 11% 15% 0;
                 }
                 div.hider > p {
                     font-size: 15px;
@@ -761,34 +811,37 @@ button.close-video {
 	}
 	margin: 10px 0 40px;
 	text-align: center;
+	& > div {
+		vertical-align: top;
+		p {
+			font-family: @font-family-headline;
+			color: @purple;
+			font-weight: bold;
+			text-align: left;
+			line-height: 1.3;
+			font-size: 17px;
+			padding: 0 20px 0 30px;
+			span {
+				display: inline-block;
+				border: 2px solid @lightgold;
+				color: @lightgold;
+				font-weight: @ultra;
+				.border-radius(100%);
+				padding: 0px 7px;
+				line-height: 1.3;
+				margin-right: 10px;
+				margin-left: -35px;
+			}
+		}
+		div {
+			display: inline-block;
+			vertical-align: top;
+			padding: 20px;
+		}
+	}
 	@media(min-width:768px) {
 		& > div {
-			vertical-align: top;
-			p {
-				font-family: @font-family-headline;
-				color: @purple;
-				font-weight: bold;
-				text-align: left;
-				line-height: 1.3;
-				font-size: 17px;
-				padding: 0 20px 0 30px;
-				span {
-					display: inline-block;
-					border: 2px solid @lightgold;
-					color: @lightgold;
-					font-weight: @ultra;
-					.border-radius(100%);
-    				padding: 0px 7px;
-    				line-height: 1.3;
-    				margin-right: 10px;
-    				margin-left: -35px;
-				}
-			}
-			div {
-				display: inline-block;
-				vertical-align: top;
-				padding: 20px;
-			}
+
 			div:nth-child(1),
 			div:nth-child(3) {
 				width: 24.5%;

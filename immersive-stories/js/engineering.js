@@ -29,7 +29,7 @@ $(function(){
     })
     .on("update", function(event){
       window.requestAnimationFrame(function(){
-        scrollPlay((event.scrollPos - scrollVid.scrollOffset()) / 100);
+        scrollPlay((event.scrollPos - scrollVid.scrollOffset()) / 500);
       })
     })
     .addTo(controllerEngineering);
