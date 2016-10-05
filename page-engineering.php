@@ -180,7 +180,7 @@
 <p>“Eventually, the device could go away because the individual has regained function,” says Moritz. “The individuals, like Jayna, who might one day benefit from what the CSNE is developing are just a wonderful, inspiring, rewarding group of people to work with. This is the kind of research that makes being at the UW so special.” </p>
 
 
-<?php echo do_shortcode('[slideshow id=3197 simple=true]');?>
+<?php echo do_shortcode('[slideshow id=1735 simple=true]');?>
 
 
                    </div> 
