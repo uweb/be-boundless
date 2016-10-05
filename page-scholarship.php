@@ -477,7 +477,11 @@
           </ul>
         </div>  
         <div>
-          <p><b>Scholarship:</b> Washington NASA Space Grant Scholarship</p>
+          <p><b>Scholarships:</b> </p>
+          <ul> 
+            <li>College of the Environment Scholarship</li>
+            <li>Washington NASA Space Grant Scholarship</li>
+          </ul>
         </div>
       </div>
     </section>
