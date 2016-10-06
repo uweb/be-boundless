@@ -86,7 +86,7 @@
           <span class="slide5-content"></span>
         </section><section tabindex="0"  class="section" id="slide6" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg6.jpg">
           <div id="slide6text">
-                      <h2>YOU CAN EXPAND OUR IMPACT<br> — EVERYWHERE</h2>
+                      <h2>YOU CAN EXPAND OUR IMPACT EVERYWHERE</h2>
                       <p>Unearthing solutions to tomorrow’s grand challenges is what drives us. The Institute for Stem Cell &amp; Regenerative Medicine is one example of how investing in UW faculty and research can make a mark worldwide.</p>
             <a href="scholarship" data-js="scholarship" data-title="Bridging the education gap" class="uw-btn btn-sm btn-plus">Learn more</a>
           </div>
