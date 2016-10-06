@@ -54,16 +54,16 @@
         </section
         ><section tabindex="0"  class="section" id="slide2" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg2.jpg">
           <div id="slide2text">
-            <h2>It starts with the things you hold dear:<br>
-              Your ideas and ideals. <br>
-              Your hopes and dreams. 
-            </h2>
+            <h2>It starts with the things you hold dear:</h2>
+            <p class="uni">Your ideas and ideals. <br>
+              Your hopes and dreams. </p>
           </div>
           <span class="slide3-content"></span>
         </section
         ><section tabindex="0"  class="section" id="slide3" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg3.jpg">
           <div id="slide3text">
-            <h2>Bring your aspirations to life. Link arms with students, faculty and staff who unite promise with possibility.</h2>
+            <h2>Bring your aspirations to life. </h2>
+            <p class="uni">Link arms with students, faculty and staff who unite promise with possibility.</p>
           </div>
           <span class="slide3-content"></span>
         </section
