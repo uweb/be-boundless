@@ -100,8 +100,8 @@
           <span class="slide2-content"></span>
         </section><section tabindex="0"  class="section" id="slide8" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg8.jpg">
           <div id="slide4text">
-            <h2>YOU CAN EMPOWER POSSIBILITY THROUGH INNOVATION </h2>
-            <p>Creativity is embedded in our DNA. Learn how contributing to the people and programs that fuel our local and global ecosystem can encourage an entrepreneurial, pioneering spirit to help people like Jayna Bean. </p>
+            <h2>What fuels your passion?</h2>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis.</p>
             <a href="engineering" data-js="engineering" data-title="Bridging the education gap" class="uw-btn btn-sm">Learn more</a>
           </div>
           <span class="slide2-content"></span>
