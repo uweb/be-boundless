@@ -497,3 +497,39 @@ header {
   	}
 }
 
+
+ul.footer-links {
+		margin: 45px 0 15px 0;
+		text-align: center;
+		li {
+			list-style: none;
+			display: inline-block;
+			&:last-child a:after {
+				display: none;
+			}
+			a {
+				color:darken( @gray, 40%);
+				position: relative;
+				margin-right: 20px;
+				font-size: 15px;
+				&:after {
+					content: "/";
+					opacity: .5;
+					position: absolute;
+					right: -14px;
+					top: -2px;
+				}
+                &:focus, &:hover {
+                    color: @lightgold;
+                    text-decoration:none;
+                    &:after {
+                        color: #fff;
+                    }
+                }
+			}
+		}
+	}
+.dateMarker {
+	text-align: center;
+	font-size: 15px;
+}
