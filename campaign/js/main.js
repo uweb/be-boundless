@@ -447,7 +447,7 @@ $(function(){
 	function scrollIphone(){
 		if (window.scrollX > 0 ) {    
 			// Bigger divider number moves it left - 24.6 seems to work well as a divisor 
-			var transXDistance = Math.ceil(window.scrollX * 0.04)
+			var transXDistance = Math.ceil(window.scrollX * 0.02)
 		    $campaignHeader.css({"-webkit-transform":"translate(" + transXDistance + "px,0)"})
 		    $arrows.css({"-webkit-transform":"translate(" + transXDistance + "px,0)"})
 		    
