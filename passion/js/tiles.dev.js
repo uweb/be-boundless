@@ -295,8 +295,8 @@ $(window).load(function(){
    $('.search-more').on('click', function(e){
       e.preventDefault();
       console.log("search clicked");
-      $searchTerm = $('#searcher').val();
-      $.getJSON('http://ua-dev-service.gifts.washington.edu/OnlineAllocation/Search/' + $searchTerm, function(data) {
+      $searchTerm = $('#searcher').val(); 
+      $.getJSON('http://ua-dev-service.gifts.washington.edu/OnlineAllocation/Search/' + $searchTerm + '?callback=?', function(data) {
           console.log(data);
           console.log("end data");
       });
