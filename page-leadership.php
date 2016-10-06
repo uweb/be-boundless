@@ -90,7 +90,7 @@
                               <li class="pax-1" tabindex="0">
                                   <div class="pax"></div>
                                   <div class="hider">
-                                    <h3>Jodi Green</h3>
+                                    <h3>Bill Gates</h3>
                                     <p>Donec id elit non mi porta gravida at eget metus.</p>
                                     <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
                                   </div>
@@ -98,7 +98,7 @@
                               <li class="pax-2" tabindex="0">
                                   <div class="pax"></div>
                                   <div class="hider">
-                                    <h3>Jodi Green</h3>
+                                    <h3>Bob Flowers</h3>
                                     <p>Donec id elit non mi porta gravida at eget metus.</p>
                                     <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
                                   </div>
@@ -106,14 +106,14 @@
                               <li class="pax-3" tabindex="0">
                                   <div class="pax"></div>
                                   <div class="hider">
-                                    <h3>Jodi Green</h3>
+                                    <h3>Janet Smith</h3>
                                     <p>Donec id elit non mi porta gravida at eget metus.</p>
                                     <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
                                   </div >             </li>
                               <li class="pax-4" tabindex="0">
                                   <div class="pax"></div>
                                   <div class="hider">
-                                    <h3>Jodi Green</h3>
+                                    <h3>Jeff Brotman</h3>
                                     <p>Donec id elit non mi porta gravida at eget metus.</p>
                                     <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
                                   </div>              </li>
@@ -127,21 +127,37 @@
                               <li class="pax-6" tabindex="0">
                                   <div class="pax"></div>
                                   <div class="hider">
-                                    <h3>Jodi Green</h3>
+                                    <h3>Mike Halperin</h3>
                                     <p>Donec id elit non mi porta gravida at eget metus.</p>
                                     <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
                                   </div>              </li>
                               <li class="pax-7" tabindex="0">
                                   <div class="pax"></div>
                                   <div class="hider">
-                                    <h3>Jodi Green</h3>
+                                    <h3>Orin Smith</h3>
                                     <p>Donec id elit non mi porta gravida at eget metus.</p>
                                     <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
                                   </div>              </li>
                               <li class="pax-8" tabindex="0">
                                   <div class="pax"></div>
                                   <div class="hider">
-                                    <h3>Jodi Green</h3>
+                                    <h3>Susan Brotman</h3>
+                                    <p>Donec id elit non mi porta gravida at eget metus.</p>
+                                    <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                                  </div>              
+                              </li>
+                              <li class="pax-9" tabindex="0">
+                                  <div class="pax"></div>
+                                  <div class="hider">
+                                    <h3></h3>
+                                    <p>Donec id elit non mi porta gravida at eget metus.</p>
+                                    <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                                  </div>              
+                              </li>
+                              <li class="pax-10" tabindex="0">
+                                  <div class="pax"></div>
+                                  <div class="hider">
+                                    <h3></h3>
                                     <p>Donec id elit non mi porta gravida at eget metus.</p>
                                     <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
                                   </div>              
@@ -155,7 +171,7 @@
 
 
           <div class="container" id="leaders">
-                <h2 class="purpleHeadline"><span>SCHOOL/COLLEGE/CAMPUS/PROGRAM CAMPAIGN LEADERS</span></h2>
+                <h2 class="purpleHeadline"><span>Campaign Volunteers Across the UW</span></h2>
                 <div class="row">
                   <div class="col-md-3">
                   </div>
@@ -206,98 +222,6 @@
     <section id="faqs">
           <div class="headlineBox"><h2>Frequently Asked Questions</h2></div>
 
-          <div class="container">   
-
-              <div class="box-outer">
-                <div class="box one box-none">
-                  <div class="tile">
-                       <p><b>Q:</b></p>
-                       <div>
-                        <p>What kinds of projects will donors be supporting in the UW’s campaign?</p>
-                      </div>
-
-                      <hr>
-
-                       <p><b>A:</b></p>
-                       <div>
-                        <p>Donors will contribute to a variety of programs and projects that support the University’s public mission in virtually every department and unit on campus. These private gifts will support professorships, capital projects, student scholarships, and other University priorities. Many of these priorities reflect areas for which state funding cannot keep pace with the investments required to achieve excellence in particular programs. Some of the gifts raised during the campaign will go toward the University’s endowment for long-term, stable support.</p>
-                      </div>
-
-                   </div>
-                  
-                </div>
-
-              </div>
-              
-              <div class="box-outer">
-                <div class="box two box-none">
-                  <div class="tile">
-                       <p><b>Q:</b></p>
-                       <div>
-                        <p>What gifts count as campaign gifts?</p>
-                      </div>
-
-                      <hr>
-
-                       <p><b>A:</b></p>
-                       <div>
-                        <p> In this comprehensive campaign we will count all gifts and private grants to all areas for all purposes, just as we do when we are not in a campaign. Additionally, we will count pledges and qualifying bequest expectancies.</p>
-                      </div>
-
-                   </div>
-                  <div class="tile">
-                       <p><b>Q:</b></p>
-                       <div>
-                        <p>When did the campaign begin?</p>
-                      </div>
-
-                      <hr>
-
-                       <p><b>A:</b></p>
-                       <div>
-                        <p>The preparation for the campaign began on July 1, 2010, and the nucleus phase commenced on July 1, 2013. The campaign will launch publicly on Oct. 21, 2016.</p>
-                      </div>
-
-                   </div>
-                </div>
-              </div>
-              
-              <div class="box-outer">
-                <div class="box two box-none">
-                  <div class="tile">
-                       <p><b>Q:</b></p>
-                       <div>
-                        <p>When will the campaign conclude?</p>
-                      </div>
-
-                      <hr>
-
-                       <p><b>A:</b></p>
-                       <div>
-                        <p>When we reach our campaign goal of $X billion.</p>
-                      </div>
-
-                   </div>
-                  <div class="tile">
-                       <p><b>Q:</b></p>
-                       <div>
-                        <p>How were funding priorities identified?</p>
-                      </div>
-
-                      <hr>
-
-                       <p><b>A:</b></p>
-                       <div>
-                        <p> Identifying campaign priorities was the result of nearly three years of collaboration between University leadership, academic leadership and community leaders. Clear funding priorities emerged in response to which efforts at the UW could be maximized to address society’s greatest challenges.</p>
-                      </div>
-
-                   </div>
-                </div>
-              </div>
-
-            </div>
-
-
 
           <div class="container">
             <div class="col-md-8 col-md-offset-2">
@@ -319,7 +243,7 @@
 
   </main>
 
-
+<?php get_template_part('footer', 'campaign'); ?>
 
 
  <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />
@@ -338,7 +262,7 @@
         thermoWidth = thermo.getBoundingClientRect().width * ( current / goal),
         isMobile = window.matchMedia("only screen and (max-width: 768px)");  
 
-        thermo.style.backgroundPosition =  (Math.ceil(thermoWidth) - (isMobile.matches ? 0 : 190)) + "px top"
+        thermo.style.backgroundPosition =  (Math.ceil(thermoWidth + 60) - (isMobile.matches ? 0 : 190)) + "px top"
 
     document.addEventListener('scroll',function(){
       var el = thermo.getBoundingClientRect().top;

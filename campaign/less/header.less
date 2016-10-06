@@ -178,7 +178,7 @@ header {
 		.transition(transform .2s cubic-bezier(0.39, 0.58, 0.57, 1));
 		.translate(0, -250px);
 		background-color: @purple;
-		padding: 20px 70px 20px 0;
+		padding: 18px 70px 18px 0;
 		text-align: right;
 		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.29);
 		outline: none;
@@ -497,3 +497,39 @@ header {
   	}
 }
 
+
+ul.footer-links {
+		margin: 45px 0 15px 0;
+		text-align: center;
+		li {
+			list-style: none;
+			display: inline-block;
+			&:last-child a:after {
+				display: none;
+			}
+			a {
+				color:darken( @gray, 40%);
+				position: relative;
+				margin-right: 20px;
+				font-size: 15px;
+				&:after {
+					content: "/";
+					opacity: .5;
+					position: absolute;
+					right: -14px;
+					top: -2px;
+				}
+                &:focus, &:hover {
+                    color: @lightgold;
+                    text-decoration:none;
+                    &:after {
+                        color: #fff;
+                    }
+                }
+			}
+		}
+	}
+.dateMarker {
+	text-align: center;
+	font-size: 15px;
+}

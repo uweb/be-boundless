@@ -248,13 +248,21 @@ $(function(){
 		.to('#slide1text', 2, {x: '-100%', ease: Power0.easeInOut }, 0)
 		//.to('#bar', 1, { left: 0 })
 	var fade2 = new TimelineMax()
-		.fromTo('#slide2text', 1, {x: '100%', scale: 0.75 }, {x: '0%', scale: 1.025 })
+		.fromTo('#slide2text', 1, {x: '60%', scale: 0.75 }, {x: '0%', scale: 1.025 })
 		//.to('#bar', 1, { left: '45%' })
 	var fade3 = new TimelineMax()
-		.fromTo('#slide3text', 1, {x: '100%', scale: 0.75 }, {x: '0%', scale: 1.025 })
+		.fromTo('#slide3text', 1, {x: '60%', scale: 0.75 }, {x: '0%', scale: 1.025 })
 		//.to('#bar', 1, { left: '64%' })
 	var fade4 = new TimelineMax()
-		.fromTo('#slide4text', 1, {x: '100%', scale: 0.75 }, {x: '0%', scale: 1.025 })
+		.fromTo('#slide4text', 1, {x: '60%', scale: 0.75 }, {x: '0%', scale: 1.025 })
+	var fade5 = new TimelineMax()
+		.fromTo('#slide5text', 1, {x: '60%', scale: 0.75 }, {x: '0%', scale: 1.025 })
+	var fade6 = new TimelineMax()
+		.fromTo('#slide6text', 1, {x: '60%', scale: 0.75 }, {x: '0%', scale: 1.025 })
+	var fade7 = new TimelineMax()
+		.fromTo('#slide7text', 1, {x: '60%', scale: 0.75 }, {x: '0%', scale: 1.025 })
+	var fade8 = new TimelineMax()
+		.fromTo('#slide8text', 1, {x: '60%', scale: 0.75 }, {x: '0%', scale: 1.025 })
 		//.to('#bar', 1, { left: '103%'})
 	// var bar = new TimelineMax()
 	// 	.to('#bar', 1, { left: '100%' }, 0.5)
@@ -334,6 +342,34 @@ $(function(){
 		//.addIndicators({name: "2 (duration: 300)"})
 		.addTo(controllerCampaign);
 
+	var fifthSlide = new ScrollMagic.Scene({
+		duration: '125%',
+		triggerElement: '#slide5',
+		triggerHook: 0.9
+	})
+		.setTween(fade5)
+		//.addIndicators({name: "2 (duration: 300)"})
+		.addTo(controllerCampaign);
+
+	var sixthSlide = new ScrollMagic.Scene({
+		duration: '125%',
+		triggerElement: '#slide6',
+		triggerHook: 0.9
+	})
+		.setTween(fade6)
+		//.addIndicators({name: "2 (duration: 300)"})
+		.addTo(controllerCampaign);
+
+	var seventhSlide = new ScrollMagic.Scene({
+		duration: '125%',
+		triggerElement: '#slide7',
+		triggerHook: 0.9
+	})
+		.setTween(fade7)
+		//.addIndicators({name: "2 (duration: 300)"})
+		.addTo(controllerCampaign);
+
+
 
 	var lastSlide = new ScrollMagic.Scene({
 		duration: '100%',
@@ -381,6 +417,11 @@ $(function(){
 
 		// Change URL to immersive story URL
 		history.pushState({page: title}, title, e.target.href);
+
+		// Listen for backbutton
+		document.addEventListener('hashChange',function(e){
+			console.log(e)
+		});
 
 		$dyno.load(e.target.href + ' #immersive-body', function(){
 
@@ -447,7 +488,7 @@ $(function(){
 	function scrollIphone(){
 		if (window.scrollX > 0 ) {    
 			// Bigger divider number moves it left - 24.6 seems to work well as a divisor 
-			var transXDistance = Math.ceil(window.scrollX * 0.04)
+			var transXDistance = Math.ceil(window.scrollX * 0.02)
 		    $campaignHeader.css({"-webkit-transform":"translate(" + transXDistance + "px,0)"})
 		    $arrows.css({"-webkit-transform":"translate(" + transXDistance + "px,0)"})
 		    
