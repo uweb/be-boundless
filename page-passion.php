@@ -359,13 +359,15 @@
         <li tabindex="0" class="flip-container grid-item search-more">
             <div class="flipper" role="button">
               <div>
-                <p class="fyp-search-more-label">Search for more funds</p>
+                <p class="fyp-search-more-label">Show more funds</p>
                 <!-- <p class="short-desc">no desc</p> -->
               </div>
             </div>
           </li>
 
 
+         </ul>
+         <ul class="search-grid">
          </ul>   
 
     </div>
