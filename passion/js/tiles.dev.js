@@ -32,14 +32,20 @@ $(window).load(function(){
 //ADJUST THIS FUNCTION FOR THE NEW SEARCH
       // use value of search field to filter
      var $quicksearch = $('.quicksearch').keyup( debounce( function() {
-       qsRegex = new RegExp( $quicksearch.val(), 'gi' );
-       $grid.isotope({
-         filter: function() {
-           var $this = $(this);
-           var search = qsRegex ? $this.text().match( qsRegex ) : true;
-           return (search && $this.is( ':not(.unit-item)' )) || $this.is( '.search-more' );
-         }
-       });
+      if($quicksearch.val().length > 1){
+         qsRegex = new RegExp( $quicksearch.val(), 'gi' );
+         $grid.isotope({
+           filter: function() {
+             var $this = $(this);
+             var search = qsRegex ? $this.text().match( qsRegex ) : true;
+             return (search && $this.is( ':not(.unit-item)' )) || $this.is( '.search-more' );
+           }
+         });
+         $('#empty').addClass('active');
+         $('#empty').addClass('active-filter');
+      } else {
+        $('#empty').trigger('click'); 
+      }
      }, 200 ) );
 
       // Function to replace the image with the high-rest one
@@ -237,6 +243,8 @@ $(window).load(function(){
       if($(this).hasClass('active-filter')){
         $('#empty').removeClass('active');
         $('#empty').removeClass('active-filter');
+        $('.grid-item.search-item').remove();
+        $('.grid-item.search-more').removeClass('open');
         $grid.isotope({ filter: '.featured' });
       } 
 
@@ -294,13 +302,83 @@ $(window).load(function(){
    //search api call for more search results
    $('.search-more').on('click', function(e){
       e.preventDefault();
-      console.log("search clicked");
       $searchTerm = $('#searcher').val(); 
       $.getJSON('http://ua-dev-service.gifts.washington.edu/OnlineAllocation/Search/' + $searchTerm + '?callback=?', function(data) {
-          console.log(data);
-          console.log("end data");
+          //console.log(data);
+          //$('.grid-item.search-more').addClass('hide');
+          var searchItems = new Array();
+          data.forEach(function(fund){
+            var alloc        = fund.Key,
+                title        = fund.Name,
+                desc         = fund.Description,
+                shortDesc    = (desc.length < 100) ? desc : (desc.substr(0,100) + "...");
+            searchItems.push($(
+                '<li tabindex="0" class="flip-container grid-item search-item ">' +
+                '  <div class="flipper" role="button">' +
+                '    <div class="front">' +
+                '      <p>' + title + '</p>' +
+                '    </div>' +
+                '    <div class="back">' +
+                '      <h3>' + title + '</h3>' +
+                //'      <!-- <p class="back-unit-name">ASSOCIATED UNIT???</p> -->' +
+                '      <p class="short-desc">' + shortDesc + '</p>' +
+                '    </div>' +
+                '    <div tabindex="0" class="full-bio">' +
+                '      <h2>' + title + '</h2>' +
+                '      <div class="bio-text">' +
+                '        <p>' + desc + '</p>' +
+                '      </div>' +
+                '      <div class="give-button">' +
+                '        <a href="#" class="give-link" data-code="' + alloc + '">Give Now</a>' +
+                '      </div>' +
+                '    </div>' +
+                '  </div>' +
+                '</li>'));
+            
+          });
+          //$grid.append(searchItems);
+         // $grid.isotope('appended',searchItems);
+          $('ul.search-grid').append(searchItems);
+          $('.grid-item.search-more').addClass('open');
+          $grid.isotope();
+          $('.search-item').on('click', function(el){
+            el.preventDefault();
+            $('.search-item.open').removeClass('open');
+            $( this ).addClass('open');
+          });
+          $('.give-link').on('click', function(e){
+              e.preventDefault();
+              var allocCode = $( this ).attr('data-code');
+              $('#empty').addClass('active-give');
+              $('#empty').removeClass('active-filter');
+              $('body').prepend('<div class="fyp-give-widget-lightbox"></div>' +
+                                '<div id="fyp-give-widget-container" class="fyp-give-widget-container">' +
+                                  '<iframe src="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?source_typ=3&source=' + allocCode + '&frame_buster=false" title="Giving at the UW" id="UWFOnlineGivingForm" frameborder="0" scrolling="yes" onload="try{document.domain=\'washington.edu\'}catch(e){}"></iframe>' +
+                                '</div>');
+
+              $('html, body').animate({
+                  scrollTop: ( $("#fyp-give-widget-container").offset().top - $("#campaign-header thick").outerHeight() )
+                }, 900);
+           });
+          // $('.search-grid').on( 'click', '.search-item', function() {
+          //       var $this = $(this);
+          //       if( !$this.hasClass('open')) {
+          //         $('.search-item').removeClass('open')
+          //         $this.addClass('open');             
+          //         // Scroll-to portion
+          //         scrollIt($this);          
+          //       } else {
+          //         $this.removeClass('open')
+          //       }                
+          //  });
       });
-   })
+     
+      $('#searcher').on('keyup', function(el){
+        $('.grid-item.search-item').remove();
+        $('.grid-item.search-more').removeClass('open');
+      });
+   });
+  
 
 }); 
 
