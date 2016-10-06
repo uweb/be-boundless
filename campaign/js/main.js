@@ -248,21 +248,21 @@ $(function(){
 		.to('#slide1text', 2, {x: '-100%', ease: Power0.easeInOut }, 0)
 		//.to('#bar', 1, { left: 0 })
 	var fade2 = new TimelineMax()
-		.fromTo('#slide2text', 1, {x: '100%', scale: 0.75 }, {x: '0%', scale: 1.025 })
+		.fromTo('#slide2text', 1, {x: '60%' }, {x: '0%' })
 		//.to('#bar', 1, { left: '45%' })
 	var fade3 = new TimelineMax()
-		.fromTo('#slide3text', 1, {x: '100%', scale: 0.75 }, {x: '0%', scale: 1.025 })
+		.fromTo('#slide3text', 1, {x: '60%' }, {x: '0%' })
 		//.to('#bar', 1, { left: '64%' })
 	var fade4 = new TimelineMax()
-		.fromTo('#slide4text', 1, {x: '100%', scale: 0.75 }, {x: '0%', scale: 1.025 })
+		.fromTo('#slide4text', 1, {x: '60%' }, {x: '0%' })
 	var fade5 = new TimelineMax()
-		.fromTo('#slide5text', 1, {x: '100%', scale: 0.75 }, {x: '0%', scale: 1.025 })
+		.fromTo('#slide5text', 1, {x: '60%' }, {x: '0%' })
 	var fade6 = new TimelineMax()
-		.fromTo('#slide6text', 1, {x: '100%', scale: 0.75 }, {x: '0%', scale: 1.025 })
+		.fromTo('#slide6text', 1, {x: '60%' }, {x: '0%' })
 	var fade7 = new TimelineMax()
-		.fromTo('#slide7text', 1, {x: '100%', scale: 0.75 }, {x: '0%', scale: 1.025 })
+		.fromTo('#slide7text', 1, {x: '60%' }, {x: '0%' })
 	var fade8 = new TimelineMax()
-		.fromTo('#slide8text', 1, {x: '100%', scale: 0.75 }, {x: '0%', scale: 1.025 })
+		.fromTo('#slide8text', 1, {x: '60%' }, {x: '0%' })
 		//.to('#bar', 1, { left: '103%'})
 	// var bar = new TimelineMax()
 	// 	.to('#bar', 1, { left: '100%' }, 0.5)
@@ -302,6 +302,72 @@ $(function(){
 	// 	// sceneH2.setPin(this);
 	// })
 
+
+	// These are to hide the previous and next arrows when we're on the first and last slides
+	var firstSlide = new ScrollMagic.Scene({
+		duration: '100%',
+		triggerElement: 'body',
+		triggerHook: 0
+	})
+		.setClassToggle('#arrows', 'hidePrev')
+		.setTween(fade1)
+		//.addIndicators({name: "1 (duration: 300)"})
+		.addTo(controllerCampaign);
+
+	var secondSlide = new ScrollMagic.Scene({
+		duration: '125%',
+		triggerElement: '#slide2',
+		triggerHook: 0.9
+	})
+		.setTween(fade2)
+		// .addIndicators({name: "2 (duration: 300)"})
+		.addTo(controllerCampaign);
+
+
+	var thirdSlide = new ScrollMagic.Scene({
+		duration: '125%',
+		triggerElement: '#slide3',
+		triggerHook: 0.9
+	})
+		.setTween(fade3)
+		//.addIndicators({name: "2 (duration: 300)"})
+		.addTo(controllerCampaign);
+
+	var fourthSlide = new ScrollMagic.Scene({
+		duration: '125%',
+		triggerElement: '#slide4',
+		triggerHook: 0.9
+	})
+		.setTween(fade4)
+		//.addIndicators({name: "2 (duration: 300)"})
+		.addTo(controllerCampaign);
+
+	var fifthSlide = new ScrollMagic.Scene({
+		duration: '125%',
+		triggerElement: '#slide5',
+		triggerHook: 0.9
+	})
+		.setTween(fade5)
+		//.addIndicators({name: "2 (duration: 300)"})
+		.addTo(controllerCampaign);
+
+	var sixthSlide = new ScrollMagic.Scene({
+		duration: '125%',
+		triggerElement: '#slide6',
+		triggerHook: 0.9
+	})
+		.setTween(fade6)
+		//.addIndicators({name: "2 (duration: 300)"})
+		.addTo(controllerCampaign);
+
+	var seventhSlide = new ScrollMagic.Scene({
+		duration: '125%',
+		triggerElement: '#slide7',
+		triggerHook: 0.9
+	})
+		.setTween(fade7)
+		//.addIndicators({name: "2 (duration: 300)"})
+		.addTo(controllerCampaign);
 
 
 
