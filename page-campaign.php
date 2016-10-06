@@ -85,8 +85,7 @@
           <span class="slide4-content"></span>
         </section><section tabindex="0"  class="section" id="slide6" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg6.jpg">
           <div id="slide4text">
-                      <h2>YOU CAN EXPAND OUR IMPACT<br>
-          — EVERYWHERE   </h2>
+                      <h2>YOU CAN EXPAND OUR IMPACT<br> — EVERYWHERE</h2>
                       <p>Unearthing solutions to tomorrow’s grand challenges is what drives us. 
           The Institute for Stem Cell &amp; Regenerative Medicine is one example of how investing in UW faculty and research can make a mark worldwide.</p>
             <a href="scholarship" data-js="scholarship" data-title="Bridging the education gap" class="uw-btn btn-sm">Learn more</a>
@@ -94,9 +93,16 @@
           <span class="slide2-content"></span>
         </section><section tabindex="0"  class="section" id="slide7" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg7.jpg">
           <div id="slide4text">
-            <h2>YOU CAN EMPOWER POSSIBILITY THROUGH INNOVATION  </h2>
+            <h2>YOU CAN EMPOWER POSSIBILITY THROUGH INNOVATION </h2>
             <p>Creativity is embedded in our DNA. Learn how contributing to the people and programs that fuel our local and global ecosystem can encourage an entrepreneurial, pioneering spirit to help people like Jayna Bean. </p>
-            <a href="education" data-js="education" data-title="Bridging the education gap" class="uw-btn btn-sm">Learn more</a>
+            <a href="engineering" data-js="engineering" data-title="Bridging the education gap" class="uw-btn btn-sm">Learn more</a>
+          </div>
+          <span class="slide2-content"></span>
+        </section><section tabindex="0"  class="section" id="slide8" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg8.jpg">
+          <div id="slide4text">
+            <h2>YOU CAN EMPOWER POSSIBILITY THROUGH INNOVATION </h2>
+            <p>Creativity is embedded in our DNA. Learn how contributing to the people and programs that fuel our local and global ecosystem can encourage an entrepreneurial, pioneering spirit to help people like Jayna Bean. </p>
+            <a href="engineering" data-js="engineering" data-title="Bridging the education gap" class="uw-btn btn-sm">Learn more</a>
           </div>
           <span class="slide2-content"></span>
         </section>
