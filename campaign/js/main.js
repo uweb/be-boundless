@@ -459,7 +459,7 @@ $(function(){
 		setTimeout(function(){
 			$dyno.empty();
 			// Open and close menu based on whether the user has closed it.
-			if (!userClosedMenu && !isMobile.match) {
+			if (!userClosedMenu && !isMobile.matches) {
 				$('body').addClass('active-header');
 			} 			
 			scrollConverter.activate(currentOffset);
