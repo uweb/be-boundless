@@ -382,6 +382,9 @@
   width: 175px;
   height: 175px;
 }
+#passion .module-hero-image .circle-button-container div div.circle-icon.front {
+  z-index: 0;
+}
 #passion .module-hero-image .circle-button-container div div.circle-icon p {
   padding-top: 10px;
   margin-bottom: 36px;
