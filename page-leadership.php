@@ -62,12 +62,12 @@
                   <h4>Campaign FAQs</h4></a>
                 </li>
                 <li>
-                  <a href="#"><img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/link-ways.svg' ?>" alt="Glasses on book"><br>
+                  <a href="#"><img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/link-what.svg' ?>" alt="Glasses on book"><br>
                   <h4>What to give</h4></a>
                 </li>
                 <li>
-                  <a href="#"><img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/link-what.svg' ?>" alt="Glasses on book"><br>
-                  <h4>What to give</h4></a>
+                  <a href="#"><img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/link-ways.svg' ?>" alt="Glasses on book"><br>
+                  <h4>Ways to give</h4></a>
                 </li>
                 <li>
                   <a href="#"><img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/link-matching.svg' ?>" alt="Glasses on book"><br>
