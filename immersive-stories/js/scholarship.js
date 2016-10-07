@@ -53,6 +53,9 @@ function stateChange(e){
         document.getElementsByTagName('body')[0].classList.remove('videoPaused');
     } else if(e.data === 2) {
          document.getElementsByTagName('body')[0].classList.add('videoPaused');
+    } else if(e.data === 0) {
+      console.log('boo')
+         $('.read-more')[0].trigger('click');
     }
 }
 
@@ -78,6 +81,9 @@ $(function(){
       duration: '100%',
     })
     .setClassToggle("body", 'hide-dots')
+    .on('leave', function(){
+      player.pauseVideo();
+    })
     //.addIndicators()
     .addTo(controllerScholarship);
 
