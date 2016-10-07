@@ -621,7 +621,23 @@
   content: " | ";
 }
 #passion .full-bio .bio-info p a:last-child:after {
-  content: "";
+  content: "\e927";
+  font-size: 30px;
+  margin-left: 5px;
+  color: #4b2e83;
+  display: inline-block;
+  font-family: uw-icon;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 #passion .full-bio .bio-text {
   margin: 10px -10px 20px 0;
