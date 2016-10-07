@@ -71,7 +71,7 @@
           <div id="slide4text">
             <h2>YOU CAN TRANSFORM THE STUDENT EXPERIENCE   </h2>
             <p><span class="hidden-xs">Ensuring access to excellence for all students is at the core of our public mission. </span>Discover how supporting opportunities that enrich future thought leaders can champion the student experience for people like Anthony Martinez. </p>
-            <a href="scholarship" data-js="scholarship" data-title="Bridging the education gap" class="uw-btn btn-sm btn-plus">Learn more</a>          
+            <a href="scholarship" data-js="scholarship" data-title="Bridging the education gap" class="uw-btn btn-sm btn-plus">Learn more</a> <a href="education" data-js="education" data-title="Bridging the education gap" class="uw-btn btn-sm">Support area</a>          
           </div>
           <span class="slide4-content"></span>
         </section><section tabindex="0"  class="section" id="slide5" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg5.jpg">
@@ -81,21 +81,21 @@
             how committing to initiatives that promote health, equity and diversity can 
             unleash human potential in our friends and neighbors in the Road Map region 
             — and beyond. </p>
-            <a href="education" data-js="education" data-title="Bridging the education gap" class="uw-btn btn-sm btn-plus">Learn more</a> <a href="education" data-js="education" data-title="Bridging the education gap" class="uw-btn btn-sm">Your passion</a>
+            <a href="education" data-js="education" data-title="Bridging the education gap" class="uw-btn btn-sm btn-plus">Learn more</a> <a href="education" data-js="education" data-title="Bridging the education gap" class="uw-btn btn-sm">Support area</a>
           </div>
           <span class="slide5-content"></span>
         </section><section tabindex="0"  class="section" id="slide6" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg6.jpg">
           <div id="slide6text">
                       <h2>YOU CAN EXPAND OUR IMPACT EVERYWHERE</h2>
                       <p>Unearthing solutions to tomorrow’s grand challenges is what drives us. The Institute for Stem Cell &amp; Regenerative Medicine is one example of how investing in UW faculty and research can make a mark worldwide.</p>
-            <a href="scholarship" data-js="scholarship" data-title="Bridging the education gap" class="uw-btn btn-sm btn-plus">Learn more</a>
+            <a href="scholarship" data-js="scholarship" data-title="Bridging the education gap" class="uw-btn btn-sm btn-plus">Learn more</a> <a href="education" data-js="education" data-title="Bridging the education gap" class="uw-btn btn-sm">Support area</a>
           </div>
           <span class="slide6-content"></span>
         </section><section tabindex="0"  class="section" id="slide7" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg7.jpg">
           <div id="slide7text">
             <h2>YOU CAN EMPOWER POSSIBILITY THROUGH INNOVATION </h2>
             <p><span class="hidden-xs">Creativity is embedded in our DNA. </span>Learn how contributing to the people and programs that fuel our local and global ecosystem can encourage an entrepreneurial, pioneering spirit to help people like Jayna. </p>
-            <a href="engineering" data-js="engineering" data-title="Bridging the education gap" class="uw-btn btn-sm btn-plus">Learn more</a>
+            <a href="engineering" data-js="engineering" data-title="Bridging the education gap" class="uw-btn btn-sm btn-plus">Learn more</a> <a href="education" data-js="education" data-title="Bridging the education gap" class="uw-btn btn-sm">Support area</a>
           </div>
           <span class="slide7-content"></span>
         </section><section tabindex="0"  class="section" id="slide8" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg8.jpg">
