@@ -221,11 +221,14 @@ main {
 
 #quickLinks {
     text-align: center;
+    ul {
+        padding: 0;
+    }
     li {
         display: inline-block;
         list-style: none;
         vertical-align: top;
-        margin: 0 20px;
+        margin: 0 15px;
     }
     a {
         &:hover,
@@ -252,6 +255,11 @@ main {
         margin: 100px 0 0px 0;
         li {
             margin: 0 40px;
+        }
+    }
+    @media(min-width:768px) {
+        li {
+            margin-bottom: 30px;
         }
     }
 }
@@ -473,6 +481,7 @@ h2.purpleHeadline {
             height: 300px;
             position: relative;
             display: inline-block;
+            text-align: center;
             &:hover,
             &:active,
             &:focus,
@@ -520,11 +529,22 @@ h2.purpleHeadline {
                 color: white;
                 font-size: 25px;
             }
-            p {
-                font-size: 14px;
-                color: white;
-                text-align: left;
+            q {
+              font-size: 16px;
+              line-height: 1.2;
+              color: white;
             }
+            q:before,
+            q:after { 
+
+            }
+            q:before {
+                content: open-quote;
+            }
+            q:after {
+                content: close-quote;
+            }
+
             .pax {
                 background-position: center center;
                 .background-cover(cover);
@@ -612,9 +632,17 @@ h2.purpleHeadline {
     }
     @media(max-width:768px) {
         #people {
+            background-color: @purple;
+            overflow: hidden;
             li {
                 height: auto;
                 width: 50%;
+                &:nth-child(3),
+                &:nth-child(5),
+                &:nth-child(7) {
+                    clear: both;
+                    overflow: hidden;
+                }
                 div.pax {
                     position: static;
                     height: 200px;

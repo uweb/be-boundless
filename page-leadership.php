@@ -121,77 +121,71 @@
                                   <div class="pax"></div>
                                   <div class="hider">
                                     <h3>Bill Gates</h3>
-                                    <p>Donec id elit non mi porta gravida at eget metus.</p>
-                                    <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                                    <q>The University of Washington is committed to excellence and prepares and encourages students to succeed.  This campaign will make a major impact in our state, across the nation and around the world.</q>
                                   </div>
                               </li>
-                              <li class="pax-2" tabindex="0">
+                              <li class="pax-10" tabindex="0">
                                   <div class="pax"></div>
                                   <div class="hider">
-                                    <h3>Bob Flowers</h3>
-                                    <p>Donec id elit non mi porta gravida at eget metus.</p>
-                                    <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                                  </div>
+                                    <h3>Mimi Gates</h3>
+                                    <q>By supporting diverse interests, we can enhance UW to benefit our communities.</q>
+                                  </div>              
                               </li>
-                              <li class="pax-3" tabindex="0">
-                                  <div class="pax"></div>
-                                  <div class="hider">
-                                    <h3>Janet Smith</h3>
-                                    <p>Donec id elit non mi porta gravida at eget metus.</p>
-                                    <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                                  </div >             </li>
-                              <li class="pax-4" tabindex="0">
-                                  <div class="pax"></div>
-                                  <div class="hider">
-                                    <h3>Jeff Brotman</h3>
-                                    <p>Donec id elit non mi porta gravida at eget metus.</p>
-                                    <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                                  </div>              </li>
-                              <li class="pax-5" tabindex="0">
-                                  <div class="pax"></div>
-                                  <div class="hider">
-                                    <h3>Jodi Green</h3>
-                                    <p>Donec id elit non mi porta gravida at eget metus.</p>
-                                    <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                                  </div>              </li>
-                              <li class="pax-6" tabindex="0">
-                                  <div class="pax"></div>
-                                  <div class="hider">
-                                    <h3>Mike Halperin</h3>
-                                    <p>Donec id elit non mi porta gravida at eget metus.</p>
-                                    <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                                  </div>              </li>
                               <li class="pax-7" tabindex="0">
                                   <div class="pax"></div>
                                   <div class="hider">
                                     <h3>Orin Smith</h3>
-                                    <p>Donec id elit non mi porta gravida at eget metus.</p>
-                                    <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                                    <q>We’ve seen firsthand how essential donors are in enabling thousands of students to attend the UW and enhancing the quality of education and research required to maintain the UW’s well-earned reputation.</q>
+                                  </div>              </li>
+                              <li class="pax-3" tabindex="0">
+                                  <div class="pax"></div>
+                                  <div class="hider">
+                                    <h3>Janet Smith</h3>
+                                    <q>Knowing the work you’re doing as a donor or volunteer is making a meaningful difference in the lives of tens of thousands of students and citizens now and for generations to come is the most rewarding feeling.</q>
+                                  </div >             </li>
+                              <li class="pax-2" tabindex="0">
+                                  <div class="pax"></div>
+                                  <div class="hider">
+                                    <h3>Bob Flowers</h3>
+                                    <q>We found inspiring mentors and lifelong friends at the UW, and we want to help students — particularly those from underserved communities — have those same advantages.</q>
+                                  </div>
+                              </li>
+                              <li class="pax-9" tabindex="0">
+                                  <div class="pax"></div>
+                                  <div class="hider">
+                                    <h3>Micki Flowers</h3>
+                                    <q>The campaign affords a unique opportunity to garner support for initiatives that will help the University be a leader in its efforts to champion diversity, inclusivity, and equal access to education.</q>
+                                  </div>              
+                              </li>
+                              <li class="pax-4" tabindex="0">
+                                  <div class="pax"></div>
+                                  <div class="hider">
+                                    <h3>Jeff Brotman</h3>
+                                    <p></p>
                                   </div>              </li>
                               <li class="pax-8" tabindex="0">
                                   <div class="pax"></div>
                                   <div class="hider">
                                     <h3>Susan Brotman</h3>
-                                    <p>Donec id elit non mi porta gravida at eget metus.</p>
-                                    <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                                    <q></q>
                                   </div>              
                               </li>
-                              <li class="pax-9" tabindex="0">
+                              <li class="pax-6" tabindex="0">
                                   <div class="pax"></div>
                                   <div class="hider">
-                                    <h3></h3>
-                                    <p>Donec id elit non mi porta gravida at eget metus.</p>
-                                    <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                                  </div>              
-                              </li>
-                              <li class="pax-10" tabindex="0">
+                                    <h3>Mike Halperin</h3>
+                                    <q>The most exciting thing about this campaign is that it serves as rocket fuel for an institution that furthers what I consider to be the highest of human aspirations and ideals.</q>
+                                  </div>              </li>
+                              <li class="pax-5" tabindex="0">
                                   <div class="pax"></div>
                                   <div class="hider">
-                                    <h3></h3>
-                                    <p>Donec id elit non mi porta gravida at eget metus.</p>
-                                    <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                                  </div>              
-                              </li>
+                                    <h3>Jodi Green</h3>
+                                    <q>I want to spread the word, celebrate, feed and bolster the University of Washington. My own friends, as well as local, regional and global communities need to know about the UW's commitment to access, excellence and our unwavering dedication to rigorous study, research and public service.</q>
+                                  </div>              </li>
+                              
+                              
+                              
+                              
                           </ul>
                       </div>
                   </div>
