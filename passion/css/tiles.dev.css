@@ -197,7 +197,7 @@
   text-transform: capitalize;
   line-height: 0;
   color: transparent;
-  box-shadow: -1px 1px 2px #0003 3;
+  box-shadow: -1px 1px 2px #000000 3;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   -webkit-transform: translate(75px, 0);
@@ -481,6 +481,7 @@
   text-align: left;
   -webkit-column-break-inside: avoid;
   -moz-column-break-inside: avoid;
+  page-break-inside: avoid;
   break-inside: avoid;
 }
 #passion .module-hero-image .circle-button-container .fyp-filters-box ul.fyp-filters li p {
@@ -544,7 +545,7 @@
 }
 #passion .grid,
 #passion .search-grid {
-  background: url(../assets/stripes.svg) #E8E8E8;
+  background: url(../assets/stripes.svg) #e8e8e8;
 }
 #passion li.grid-item.search-more div {
   background-color: #4b2e83;
@@ -1049,8 +1050,6 @@
   #passion .infographic {
     width: calc(100%);
   }
-}
-@media only screen and (max-width: 320px) {
 }
 #passion .grid-item.special {
   background-color: #4b2e83;
