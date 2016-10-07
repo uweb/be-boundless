@@ -622,7 +622,7 @@
 }
 #passion .full-bio .bio-info p a:last-child:after {
   content: "\e927";
-  font-size: 30px;
+  font-size: 25px;
   margin-left: 5px;
   color: #4b2e83;
   display: inline-block;
@@ -635,9 +635,9 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
+  transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  -webkit-transform: translateY(4px);
 }
 #passion .full-bio .bio-text {
   margin: 10px -10px 20px 0;
