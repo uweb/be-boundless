@@ -217,6 +217,46 @@ main {
     }
 }
 
+// 
+
+#quickLinks {
+    text-align: center;
+    li {
+        display: inline-block;
+        list-style: none;
+        vertical-align: top;
+        margin: 0 20px;
+    }
+    a {
+        &:hover,
+        &:active,
+        &:focus {
+            img {
+                .scale(1.1,1.1);
+                .transition(transform .1s linear);
+                transform-origin: center center;
+            }
+            h4 {
+                .transition(color .1s linear);
+                color: @lightgold;
+            }
+        }
+        h4 {
+            color: @purple;
+            font-size: 17px;
+            margin-top: 10px;
+            font-weight: 900;
+        }
+    }
+    @media(min-width:768px) {
+        margin: 100px 0 0px 0;
+        li {
+            margin: 0 40px;
+        }
+    }
+}
+
+
 // About the foundation 
 
 #foundation {

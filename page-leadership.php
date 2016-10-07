@@ -52,11 +52,41 @@
       </div>
     </section>
     
+    <section id="quickLinks">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1 copy padless">
+              <ul>
+                <li>
+                  <a href="#"><img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/link-specs.svg' ?>" alt="Glasses on book"><br>
+                  <h4>Campaign FAQs</h4></a>
+                </li>
+                <li>
+                  <a href="#"><img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/link-ways.svg' ?>" alt="Glasses on book"><br>
+                  <h4>What to give</h4></a>
+                </li>
+                <li>
+                  <a href="#"><img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/link-what.svg' ?>" alt="Glasses on book"><br>
+                  <h4>What to give</h4></a>
+                </li>
+                <li>
+                  <a href="#"><img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/link-matching.svg' ?>" alt="Glasses on book"><br>
+                  <h4>Faculty, staff, <br>retiree matching</h4></a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="foundation">
       <div class="container">
         <div class="row">
           <h2 class="purpleHeadline"><span>ABOUT THE FOUNDATION</span></h2>
           <div class="col-md-5 col-md-offset-1">
+
+
+
             <p>The University of Washington Foundation advances the mission of the University of Washington by seeking and securing private support for its programs in service to students and society.</p>
 
             <p>A conduit for giving to UW students, faculty, programs and facilities, the UW Foundation Board also serves as the convening body for capaign volunteers from across the institution.</p>
@@ -166,53 +196,6 @@
                       </div>
                   </div>
             </div>
-          </div>
-          
-
-
-          <div class="container" id="leaders">
-                <h2 class="purpleHeadline"><span>Campaign Volunteers Across the UW</span></h2>
-                <div class="row">
-                  <div class="col-md-3">
-                  </div>
-                  <div class="col-md-3">
-                    <ul>
-                      <li><a href="#">Academic Student Affairs</a></li>
-                      <li><a href="#">College of Arts &amp; Sciences</a></li>
-                      <li><a href="#">Burke Museum</a></li>
-                      <li><a href="#">Henry Gallery</a></li>
-                      <li><a href="#">UW Bothell</a></li>
-                      <li><a href="#">College of Built Environments</a></li>
-                      <li><a href="#">School of Dentistry</a></li>
-                      <li><a href="#">College of Education</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-3"> 
-                    <ul>
-                      <li><a href="#">Daniel J. Evans School of Public Policy   and Governance</a></li>
-                      <li><a href="#">College of Engineering</a></li>
-                      <li><a href="#">College of the Environment</a></li>
-                      <li><a href="#">Michael G. Foster School of Business</a></li>
-                      <li><a href="#">Intercollegiate Athletics</a></li>
-                      <li><a href="#">iSchool</a></li>
-                      <li><a href="#">KEXP</a></li>
-                    </ul>       
-                  </div>
-                  <div class="col-md-3">   
-                    <ul>
-                      <li><a href="#">Law School</a></li>
-                      <li><a href="#">UW Libraries</a></li>
-                      <li><a href="#">UW Medicine</a></li>
-                      <li><a href="#">School of Nursing</a></li>
-                      <li><a href="#">School of Public Health</a></li>
-                      <li><a href="#">School of Social Work</a></li>
-                      <li><a href="#">UW Tacoma </a></li>
-                      <li><a href="#">Katherin Smoak </a></li>
-                      <li><a href="#">Libbie Jacob</a> </li>
-                    </ul>    
-                  </div>
-              </div>
-
           </div>
 
     </section> 

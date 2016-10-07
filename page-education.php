@@ -302,7 +302,7 @@
  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
 
  
-
+ <?php get_template_part('footer', 'campaign'); ?>
 
 
 </body>

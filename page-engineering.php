@@ -132,8 +132,6 @@
       </section>
 
 
-
-
        <section class="text-block">
            <div class="container">
                <div class="row">
@@ -149,7 +147,7 @@
                    </div> 
              </div> 
            </div>   
-         </section>
+       </section>
 
       <section id="chart">
         <p class="headline-gold center">ECoG/Brain Activity Controlling <br>Electronic Limb</p> 
@@ -285,7 +283,7 @@
  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
 
  
-
+<?php get_template_part('footer', 'campaign'); ?>
 
 
 </body>

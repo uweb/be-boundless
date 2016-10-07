@@ -130,8 +130,12 @@ p {
         }
     }
     @media(max-width:768px) {
-        background-image: url("@{scholarship}/mobile.png");
+        background: url("@{scholarship}/mobile-intro.svg") no-repeat center center;
+        background-color: @purple;
         padding: 0;
+        iframe {
+            display: none;
+        }
         h1 {
             margin-top: 25vh;
         }
@@ -703,6 +707,10 @@ div.audio {
     opacity: .5;
     z-index: -1;
     .translate(0, 40%);
+    @media(max-width:768px) {
+        width: 40%;
+        margin-right: -80px;
+    }
 }
 
 

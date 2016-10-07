@@ -20,9 +20,9 @@
 
 <ul id="dot-nav">
   <li data-tooltip="Aspiring forest fixer"><a title="Anthony Martinez" href="#anthony"><span></span></a></li>
-  <li data-tooltip="Student advocate"><a title="Austin Wright-Pettibone" href="#pettibone"><span></span></a></li>
-  <li data-tooltip="Impassioned journalist"><a title="Starla Sampaco" href="#starla"><span></span></a></li>
   <li data-tooltip="Artist-meets-activist"><a title="Mayowa Aina" href="#aina"><span></span></a></li>
+  <li data-tooltip="Impassioned journalist"><a title="Starla Sampaco" href="#starla"><span></span></a></li>
+  <li data-tooltip="Student advocate"><a title="Austin Wright-Pettibone" href="#pettibone"><span></span></a></li>
   <li data-tooltip="Self-proclaimed space geek"><a title="Tyler Valentine" href="#tyler"><span></span></a></li>
   <li data-tooltip="Sustainability evangelist"><a title="Veronica Guenther" href="#veronica"><span></span></a></li>
 </ul>
@@ -130,202 +130,6 @@
         <button class="pause">Pause</button>
       </section>
 </div>
-
-
-
-<div class="person">
-
-    <section id="pettibone" class="portrait-block right austin arrow">
-      <div class="portrait">
-
-      </div>
-      <div class="bio">
-        <h2>Austin Wright-Pettibone</h2>
-        <div class="class"><p><b>Class of </b></p><p>'17</p></div>
-        <div><p><b>Hometown:</b> Kirkland, Washington</p></div>
-        <div>
-          <p><b>Major:</b> Chemical engineering </p>
-          <p><b>Minor:</b> Applied mathematics</p>
-        </div>  
-        <div>
-          <p><b>Scholarships:</b></p>
-          <ul>
-            <li>Bernice Frank Scholarship in Chemical Engineering</li>
-            <li>Armstrong Scholarship for Chemical Engineering</li>
-            <li>Neal and Helen Fosseen Endowed Scholarship in International Studies</li>
-            <li>Mary Frances and Frederic L. Crisman Endowed Scholarship</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-  <section class="text-block" id="section2">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-10 col-md-offset-1 copy padless marginless">
-                
-                <div class="fancy-quote light-gold">
-                <svg version="1.1"  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                   width="136.039px" height="126.094px" viewBox="0 0 136.039 126.094" enable-background="new 0 0 136.039 126.094"
-                   xml:space="preserve">
-                <g>
-                  <path d="M134.07,115.062c-1.04-1.099-2.377-1.655-3.974-1.655c-2.817,0-4.332,1.514-4.508,4.501
-                    c-1.753-1.248-2.607-3.21-2.607-5.974c0-4.647,3.041-7.702,9.251-9.333c0.873-0.108,0.966-0.678,0.966-0.919
-                    c0-0.177-0.067-0.755-0.925-0.755c-2.115,0-4.567,0.801-7.291,2.384c-4.056,2.39-6.113,6.251-6.113,11.476
-                    c0,3.293,0.83,5.951,2.466,7.896c1.652,1.963,3.923,2.959,6.75,2.959c2.25,0,4.085-0.591,5.454-1.756
-                    c1.385-1.181,2.087-2.76,2.087-4.697C135.628,117.546,135.104,116.158,134.07,115.062z"/>
-                  <path d="M110.08,113.407c-2.818,0-4.333,1.514-4.509,4.503c-1.752-1.245-2.606-3.18-2.606-5.892c0-3.402,1.342-5.841,4.096-7.454
-                    c1.091-0.598,2.845-1.263,5.155-1.962c0.873-0.108,0.967-0.678,0.967-0.919c0-0.177-0.067-0.755-0.925-0.755
-                    c-2.116,0-4.568,0.803-7.292,2.384c-4.056,2.39-6.113,6.251-6.113,11.476c0,3.294,0.83,5.951,2.466,7.896
-                    c1.651,1.963,3.922,2.959,6.75,2.959c2.25,0,4.085-0.591,5.454-1.756c1.385-1.181,2.087-2.76,2.087-4.697
-                    c0-1.7-0.511-3.103-1.517-4.17C113.083,113.95,111.732,113.407,110.08,113.407z"/>
-                </g>
-                <circle cx="7.115" cy="7.066" r="6.01"/>
-                <polyline fill="none" stroke="#000000" stroke-width="1.3538" stroke-miterlimit="10" points="6.979,7.749 6.979,116.071 
-                  100.411,116.071 "/>
-                </svg>
-                  <h3>Whether I work in engineering, public policy, or a combination of the two, I want to do work that makes a difference in society, impacts people daily, and informs the direction of our country.”</h3>
-
-              </div>
-
-                  <p><b>I got plugged into President Obama’s campaign when I was in high school.</b> It was such a rush of excitement to be able to not just witness history, but be part of making changes in our society. I think that’s one of the great things about getting involved with the political process. My time volunteering led to an internship at the White House my freshman year. I started the week before Obama’s second inauguration, and got to help with everything from social media to the State of the Union. It was an amazing opportunity. </p>
-                  <p><b>Just recently, Governor Inslee appointed me to the Board of Regents, which is a huge honor.</b> The UW changed my life. Beyond teaching me a whole lot, it’s made me a better person, a better leader, and someone who feels a strong commitment to the state and to the University. To me, being selected is about ensuring everyone who comes to the University has an experience as good as — or better than — mine. I want to share with people the same sense of wonder and excitement I feel. </p>
-                  <p><b>I worked as an undergraduate researcher in the Carothers Lab.</b> I like to explain our work as if we’re flipping a light switch in E. coli in order to get the bacteria to produce industrial plastics. The goal is to sustainably produce chemicals through engineering controls in bacteria. Of all the engineering disciplines, it’s chemical engineering that really sits at the intersection between science and society — there are giant public benefits that can come from research like this.</p>
-                  <p><b>Scholarships are all about creating access and opportunity for students.</b> When you receive a scholarship, it’s saying that somebody believes in you and wants to invest in you so that you can go out and make the difference you want to make in the world. In one part it’s about validation, but it’s also about giving you opportunities you may not have otherwise. </p>         
-                  
-              </div> 
-
-              <svg aria-hidden="true" version="1.1" class="svgTransforms" id="svg-tube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 width="205.596px" height="702.074px" viewBox="0 0 205.596 702.074" enable-background="new 0 0 205.596 702.074"
-                 xml:space="preserve">
-              <g>
-                
-                  <ellipse fill="none" stroke="#E8E3D3" stroke-width="12.8177" stroke-miterlimit="10" cx="102.751" cy="52.037" rx="80.641" ry="28.818"/>
-                
-                  <ellipse fill="none" stroke="#E8E3D3" stroke-width="12.8177" stroke-miterlimit="10" cx="102.751" cy="153.399" rx="80.641" ry="28.818"/>
-                <path fill="none" stroke="#E8E3D3" stroke-width="12.8177" stroke-miterlimit="10" d="M22.111,52.037v550.492h0.019
-                  c0.795,43.849,36.583,79.149,80.622,79.149c44.039,0,79.826-35.301,80.622-79.149h0.019V52.037c0,0-10.454-28.818-80.641-28.818
-                  C32.565,23.219,22.111,52.037,22.111,52.037z"/>
-              </g>
-              <circle fill="none" stroke="#E8E3D3" stroke-width="8.7225" stroke-miterlimit="10" cx="115.609" cy="260.813" r="18.311"/>
-              <circle fill="none" stroke="#E8E3D3" stroke-width="8.7225" stroke-miterlimit="10" cx="72.941" cy="311.492" r="18.311"/>
-              <circle fill="none" stroke="#E8E3D3" stroke-width="8.7225" stroke-miterlimit="10" cx="105.486" cy="357.721" r="14.234"/>
-              </svg>
-
-        </div> 
-      </div>   
-    </section>
-
-
-    <section data-vid="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/scholarship/pettibone' ?>" class='video-auto'>
-      <video loop muted autoplay poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/poster-pettibone.jpg' ?>" class="autovid">
-          <source class="mp4" type="video/mp4">
-          <source class="webm" type="video/webm">
-      </video>
-      <button class="pause">Pause</button>
-    </section>
-
-</div>
-
-
-<div class="person">
-    <section id="starla" class="portrait-block left starla arrow">
-      <div class="portrait">
-
-      </div>
-      <div class="bio">
-        <h2>Starla Sampaco</h2>
-        <div class="class"><p><b>Class of </b></p><p>'17</p></div>
-        <div><p><b>Hometown:</b> Bellevue, Washington</p></div>
-        <div>
-          <p><b>Majors:</b></p>
-          <ul>
-            <li>Communication: Journalism</li>
-            <li>Law, societies and justice</li>
-          </ul>
-
-        </div>  
-        <div>
-          <p><b>Scholarships:</b></p>
-          <ul>
-            <li>The Seattle Times/Blethen Family Communications School Minority Scholarship Endowed Fund</li>
-            <li>Pioneer News Group Excellence in Journalism Award for Diversity Journalism</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-     <section class="text-block" id="section3">
-         <div class="container">
-             <div class="row">
-                 <div class="col-md-10 col-md-offset-1 copy padless marginless">
-                   
-                   <div class="fancy-quote light-gold">
-                   <svg version="1.1"  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      width="136.039px" height="126.094px" viewBox="0 0 136.039 126.094" enable-background="new 0 0 136.039 126.094"
-                      xml:space="preserve">
-                   <g>
-                     <path d="M134.07,115.062c-1.04-1.099-2.377-1.655-3.974-1.655c-2.817,0-4.332,1.514-4.508,4.501
-                       c-1.753-1.248-2.607-3.21-2.607-5.974c0-4.647,3.041-7.702,9.251-9.333c0.873-0.108,0.966-0.678,0.966-0.919
-                       c0-0.177-0.067-0.755-0.925-0.755c-2.115,0-4.567,0.801-7.291,2.384c-4.056,2.39-6.113,6.251-6.113,11.476
-                       c0,3.293,0.83,5.951,2.466,7.896c1.652,1.963,3.923,2.959,6.75,2.959c2.25,0,4.085-0.591,5.454-1.756
-                       c1.385-1.181,2.087-2.76,2.087-4.697C135.628,117.546,135.104,116.158,134.07,115.062z"/>
-                     <path d="M110.08,113.407c-2.818,0-4.333,1.514-4.509,4.503c-1.752-1.245-2.606-3.18-2.606-5.892c0-3.402,1.342-5.841,4.096-7.454
-                       c1.091-0.598,2.845-1.263,5.155-1.962c0.873-0.108,0.967-0.678,0.967-0.919c0-0.177-0.067-0.755-0.925-0.755
-                       c-2.116,0-4.568,0.803-7.292,2.384c-4.056,2.39-6.113,6.251-6.113,11.476c0,3.294,0.83,5.951,2.466,7.896
-                       c1.651,1.963,3.922,2.959,6.75,2.959c2.25,0,4.085-0.591,5.454-1.756c1.385-1.181,2.087-2.76,2.087-4.697
-                       c0-1.7-0.511-3.103-1.517-4.17C113.083,113.95,111.732,113.407,110.08,113.407z"/>
-                   </g>
-                   <circle cx="7.115" cy="7.066" r="6.01"/>
-                   <polyline fill="none" stroke="#000000" stroke-width="1.3538" stroke-miterlimit="10" points="6.979,7.749 6.979,116.071 
-                     100.411,116.071 "/>
-                   </svg>
-                     <h3>The most rewarding stories to tell are the ones that amplify the voices of people who are often silenced or ignored. By giving them that platform, there are a lot of people we can help.”</h3>
-
-                 </div>
-
-<p><b>I was eight years old when I saw Rudi Bakhtiar on CNN’s Headline News, and that’s when I knew I wanted to be in broadcast journalism.</b> I think what really stood out about Rudi was that you could tell she really cared. Even as a child, I picked up on her empathy, and it made me care, too. </p>
-<p><b>Now that I’ve been building my network, a lot of my journalism heroes are people I know personally.</b> We had Seattle Times photographer Erika Schultz teach a photojournalism class at the UW, and she’s become one of my mentors. Erika’s class taught me the importance of diversity and inclusion both in front of the camera and behind the camera. Having the opportunity to interact with people like Erika and have conversations about their work really changed my approach to video journalism. </p>
-<p><b>I was an on-camera reporter for local youth media show “What’s Good, 206?” in high school.</b> By the time I was a freshman at the UW, I had interviewed public figures, local leaders and celebrities like Seattle Seahawk Richard Sherman and Seattle Mayor Ed Murray. That experience really reaffirmed my desire to pursue journalism at the UW. Last spring, I coordinated multimedia stories as The Daily’s digital projects editor. Now, I produce my own videos and intern at KING 5. My dream is to share stories involving immigration and underrepresented communities. </p>
-<p><b>One of the reasons my parents immigrated to the U.S. from the Philippines was to give my sister and I access to a great education, so I always knew I’d go to college.</b> But without scholarship support, I wouldn’t have had opportunities to branch out from the University — and those opportunities opened the doors to more opportunities. Experiences are what set us apart, and I wouldn’t have had some of mine without people helping me along the way.</p>
-    
-
-                 </div> 
-
-                 <svg aria-hidden="true" version="1.1" class="svgTransforms" id="svg-mic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                   width="513.08px" height="502.584px" viewBox="0 0 513.08 502.584" enable-background="new 0 0 513.08 502.584"
-                   xml:space="preserve">
-                 <g>
-                  <path fill="none" stroke="#E8E3D3" stroke-width="12.8177" stroke-miterlimit="10" d="M364.309,229.963
-                    c11.275-9.874,17.878-15.675,17.878-15.675l-0.352-0.397c3.508,0.388,7.068,0.603,10.681,0.603
-                    c53.163,0,96.263-43.097,96.263-96.261s-43.1-96.263-96.263-96.263c-52.85,0-95.733,42.594-96.239,95.324l-0.47-0.531
-                    l-30.771,34.394"/>
-                  <path fill="none" stroke="#E8E3D3" stroke-width="12.8177" stroke-miterlimit="10" d="M169.811,256.76L19.95,423.272
-                    c0,0,10.217,47.369,52.941,52.941c5.83,0,90.191-71.668,169.33-140.027"/>
-                  <path fill="none" stroke="#E8E3D3" stroke-width="12.8177" stroke-miterlimit="10" d="M169.811,256.76"/>
-                  <path fill="none" stroke="#E8E3D3" stroke-width="12.8177" stroke-miterlimit="10" d="M263.208,152.985"/>
-                  <g>
-                      <rect x="172.461" y="152.543" transform="matrix(0.7392 0.6734 -0.6734 0.7392 217.4251 -104.4623)" fill="none" stroke="#E8E3D3" stroke-width="12.8177" stroke-miterlimit="10" width="142.294" height="151.987"/>
-                      <rect x="288.253" y="216.217" transform="matrix(0.7393 0.6734 -0.6734 0.7393 278.5286 -134.9296)" fill="none" stroke="#E8E3D3" stroke-width="12.8177" stroke-miterlimit="10" width="50.502" height="151.987"/>
-                  </g>
-                 </g>
-                 </svg>
-
-
-           </div> 
-         </div>   
-       </section>
-
-
-       <section data-vid="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/scholarship/starla' ?>" class='video-auto'>
-         <video loop muted autoplay poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/poster-starla.jpg' ?>" class="autovid">
-             <source class="mp4" type="video/mp4">
-             <source class="webm" type="video/webm">
-         </video>
-         <button class="pause">Pause</button>
-       </section>
-</div>
-
 
 <div class="person">
 
@@ -453,6 +257,202 @@
          </video>
          <button class="pause">Pause</button>
        </section>
+
+</div>
+
+
+
+
+<div class="person">
+    <section id="starla" class="portrait-block left starla arrow">
+      <div class="portrait">
+
+      </div>
+      <div class="bio">
+        <h2>Starla Sampaco</h2>
+        <div class="class"><p><b>Class of </b></p><p>'17</p></div>
+        <div><p><b>Hometown:</b> Bellevue, Washington</p></div>
+        <div>
+          <p><b>Majors:</b></p>
+          <ul>
+            <li>Communication: Journalism</li>
+            <li>Law, societies and justice</li>
+          </ul>
+
+        </div>  
+        <div>
+          <p><b>Scholarships:</b></p>
+          <ul>
+            <li>The Seattle Times/Blethen Family Communications School Minority Scholarship Endowed Fund</li>
+            <li>Pioneer News Group Excellence in Journalism Award for Diversity Journalism</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+     <section class="text-block" id="section3">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-10 col-md-offset-1 copy padless marginless">
+                   
+                   <div class="fancy-quote light-gold">
+                   <svg version="1.1"  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      width="136.039px" height="126.094px" viewBox="0 0 136.039 126.094" enable-background="new 0 0 136.039 126.094"
+                      xml:space="preserve">
+                   <g>
+                     <path d="M134.07,115.062c-1.04-1.099-2.377-1.655-3.974-1.655c-2.817,0-4.332,1.514-4.508,4.501
+                       c-1.753-1.248-2.607-3.21-2.607-5.974c0-4.647,3.041-7.702,9.251-9.333c0.873-0.108,0.966-0.678,0.966-0.919
+                       c0-0.177-0.067-0.755-0.925-0.755c-2.115,0-4.567,0.801-7.291,2.384c-4.056,2.39-6.113,6.251-6.113,11.476
+                       c0,3.293,0.83,5.951,2.466,7.896c1.652,1.963,3.923,2.959,6.75,2.959c2.25,0,4.085-0.591,5.454-1.756
+                       c1.385-1.181,2.087-2.76,2.087-4.697C135.628,117.546,135.104,116.158,134.07,115.062z"/>
+                     <path d="M110.08,113.407c-2.818,0-4.333,1.514-4.509,4.503c-1.752-1.245-2.606-3.18-2.606-5.892c0-3.402,1.342-5.841,4.096-7.454
+                       c1.091-0.598,2.845-1.263,5.155-1.962c0.873-0.108,0.967-0.678,0.967-0.919c0-0.177-0.067-0.755-0.925-0.755
+                       c-2.116,0-4.568,0.803-7.292,2.384c-4.056,2.39-6.113,6.251-6.113,11.476c0,3.294,0.83,5.951,2.466,7.896
+                       c1.651,1.963,3.922,2.959,6.75,2.959c2.25,0,4.085-0.591,5.454-1.756c1.385-1.181,2.087-2.76,2.087-4.697
+                       c0-1.7-0.511-3.103-1.517-4.17C113.083,113.95,111.732,113.407,110.08,113.407z"/>
+                   </g>
+                   <circle cx="7.115" cy="7.066" r="6.01"/>
+                   <polyline fill="none" stroke="#000000" stroke-width="1.3538" stroke-miterlimit="10" points="6.979,7.749 6.979,116.071 
+                     100.411,116.071 "/>
+                   </svg>
+                     <h3>The most rewarding stories to tell are the ones that amplify the voices of people who are often silenced or ignored. By giving them that platform, there are a lot of people we can help.”</h3>
+
+                 </div>
+
+<p><b>I was eight years old when I saw Rudi Bakhtiar on CNN’s Headline News, and that’s when I knew I wanted to be in broadcast journalism.</b> I think what really stood out about Rudi was that you could tell she really cared. Even as a child, I picked up on her empathy, and it made me care, too. </p>
+<p><b>Now that I’ve been building my network, a lot of my journalism heroes are people I know personally.</b> We had Seattle Times photographer Erika Schultz teach a photojournalism class at the UW, and she’s become one of my mentors. Erika’s class taught me the importance of diversity and inclusion both in front of the camera and behind the camera. Having the opportunity to interact with people like Erika and have conversations about their work really changed my approach to video journalism. </p>
+<p><b>I was an on-camera reporter for local youth media show “What’s Good, 206?” in high school.</b> By the time I was a freshman at the UW, I had interviewed public figures, local leaders and celebrities like Seattle Seahawk Richard Sherman and Seattle Mayor Ed Murray. That experience really reaffirmed my desire to pursue journalism at the UW. Last spring, I coordinated multimedia stories as The Daily’s digital projects editor. Now, I produce my own videos and intern at KING 5. My dream is to share stories involving immigration and underrepresented communities. </p>
+<p><b>One of the reasons my parents immigrated to the U.S. from the Philippines was to give my sister and I access to a great education, so I always knew I’d go to college.</b> But without scholarship support, I wouldn’t have had opportunities to branch out from the University — and those opportunities opened the doors to more opportunities. Experiences are what set us apart, and I wouldn’t have had some of mine without people helping me along the way.</p>
+    
+
+                 </div> 
+
+                 <svg aria-hidden="true" version="1.1" class="svgTransforms" id="svg-mic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   width="513.08px" height="502.584px" viewBox="0 0 513.08 502.584" enable-background="new 0 0 513.08 502.584"
+                   xml:space="preserve">
+                 <g>
+                  <path fill="none" stroke="#E8E3D3" stroke-width="12.8177" stroke-miterlimit="10" d="M364.309,229.963
+                    c11.275-9.874,17.878-15.675,17.878-15.675l-0.352-0.397c3.508,0.388,7.068,0.603,10.681,0.603
+                    c53.163,0,96.263-43.097,96.263-96.261s-43.1-96.263-96.263-96.263c-52.85,0-95.733,42.594-96.239,95.324l-0.47-0.531
+                    l-30.771,34.394"/>
+                  <path fill="none" stroke="#E8E3D3" stroke-width="12.8177" stroke-miterlimit="10" d="M169.811,256.76L19.95,423.272
+                    c0,0,10.217,47.369,52.941,52.941c5.83,0,90.191-71.668,169.33-140.027"/>
+                  <path fill="none" stroke="#E8E3D3" stroke-width="12.8177" stroke-miterlimit="10" d="M169.811,256.76"/>
+                  <path fill="none" stroke="#E8E3D3" stroke-width="12.8177" stroke-miterlimit="10" d="M263.208,152.985"/>
+                  <g>
+                      <rect x="172.461" y="152.543" transform="matrix(0.7392 0.6734 -0.6734 0.7392 217.4251 -104.4623)" fill="none" stroke="#E8E3D3" stroke-width="12.8177" stroke-miterlimit="10" width="142.294" height="151.987"/>
+                      <rect x="288.253" y="216.217" transform="matrix(0.7393 0.6734 -0.6734 0.7393 278.5286 -134.9296)" fill="none" stroke="#E8E3D3" stroke-width="12.8177" stroke-miterlimit="10" width="50.502" height="151.987"/>
+                  </g>
+                 </g>
+                 </svg>
+
+
+           </div> 
+         </div>   
+       </section>
+
+
+       <section data-vid="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/scholarship/starla' ?>" class='video-auto'>
+         <video loop muted autoplay poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/poster-starla.jpg' ?>" class="autovid">
+             <source class="mp4" type="video/mp4">
+             <source class="webm" type="video/webm">
+         </video>
+         <button class="pause">Pause</button>
+       </section>
+</div>
+
+
+<div class="person">
+
+    <section id="pettibone" class="portrait-block right austin arrow">
+      <div class="portrait">
+
+      </div>
+      <div class="bio">
+        <h2>Austin Wright-Pettibone</h2>
+        <div class="class"><p><b>Class of </b></p><p>'17</p></div>
+        <div><p><b>Hometown:</b> Kirkland, Washington</p></div>
+        <div>
+          <p><b>Major:</b> Chemical engineering </p>
+          <p><b>Minor:</b> Applied mathematics</p>
+        </div>  
+        <div>
+          <p><b>Scholarships:</b></p>
+          <ul>
+            <li>Bernice Frank Scholarship in Chemical Engineering</li>
+            <li>Armstrong Scholarship for Chemical Engineering</li>
+            <li>Neal and Helen Fosseen Endowed Scholarship in International Studies</li>
+            <li>Mary Frances and Frederic L. Crisman Endowed Scholarship</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  <section class="text-block" id="section2">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-10 col-md-offset-1 copy padless marginless">
+                
+                <div class="fancy-quote light-gold">
+                <svg version="1.1"  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   width="136.039px" height="126.094px" viewBox="0 0 136.039 126.094" enable-background="new 0 0 136.039 126.094"
+                   xml:space="preserve">
+                <g>
+                  <path d="M134.07,115.062c-1.04-1.099-2.377-1.655-3.974-1.655c-2.817,0-4.332,1.514-4.508,4.501
+                    c-1.753-1.248-2.607-3.21-2.607-5.974c0-4.647,3.041-7.702,9.251-9.333c0.873-0.108,0.966-0.678,0.966-0.919
+                    c0-0.177-0.067-0.755-0.925-0.755c-2.115,0-4.567,0.801-7.291,2.384c-4.056,2.39-6.113,6.251-6.113,11.476
+                    c0,3.293,0.83,5.951,2.466,7.896c1.652,1.963,3.923,2.959,6.75,2.959c2.25,0,4.085-0.591,5.454-1.756
+                    c1.385-1.181,2.087-2.76,2.087-4.697C135.628,117.546,135.104,116.158,134.07,115.062z"/>
+                  <path d="M110.08,113.407c-2.818,0-4.333,1.514-4.509,4.503c-1.752-1.245-2.606-3.18-2.606-5.892c0-3.402,1.342-5.841,4.096-7.454
+                    c1.091-0.598,2.845-1.263,5.155-1.962c0.873-0.108,0.967-0.678,0.967-0.919c0-0.177-0.067-0.755-0.925-0.755
+                    c-2.116,0-4.568,0.803-7.292,2.384c-4.056,2.39-6.113,6.251-6.113,11.476c0,3.294,0.83,5.951,2.466,7.896
+                    c1.651,1.963,3.922,2.959,6.75,2.959c2.25,0,4.085-0.591,5.454-1.756c1.385-1.181,2.087-2.76,2.087-4.697
+                    c0-1.7-0.511-3.103-1.517-4.17C113.083,113.95,111.732,113.407,110.08,113.407z"/>
+                </g>
+                <circle cx="7.115" cy="7.066" r="6.01"/>
+                <polyline fill="none" stroke="#000000" stroke-width="1.3538" stroke-miterlimit="10" points="6.979,7.749 6.979,116.071 
+                  100.411,116.071 "/>
+                </svg>
+                  <h3>Whether I work in engineering, public policy, or a combination of the two, I want to do work that makes a difference in society, impacts people daily, and informs the direction of our country.”</h3>
+
+              </div>
+
+                  <p><b>I got plugged into President Obama’s campaign when I was in high school.</b> It was such a rush of excitement to be able to not just witness history, but be part of making changes in our society. I think that’s one of the great things about getting involved with the political process. My time volunteering led to an internship at the White House my freshman year. I started the week before Obama’s second inauguration, and got to help with everything from social media to the State of the Union. It was an amazing opportunity. </p>
+                  <p><b>Just recently, Governor Inslee appointed me to the Board of Regents, which is a huge honor.</b> The UW changed my life. Beyond teaching me a whole lot, it’s made me a better person, a better leader, and someone who feels a strong commitment to the state and to the University. To me, being selected is about ensuring everyone who comes to the University has an experience as good as — or better than — mine. I want to share with people the same sense of wonder and excitement I feel. </p>
+                  <p><b>I worked as an undergraduate researcher in the Carothers Lab.</b> I like to explain our work as if we’re flipping a light switch in E. coli in order to get the bacteria to produce industrial plastics. The goal is to sustainably produce chemicals through engineering controls in bacteria. Of all the engineering disciplines, it’s chemical engineering that really sits at the intersection between science and society — there are giant public benefits that can come from research like this.</p>
+                  <p><b>Scholarships are all about creating access and opportunity for students.</b> When you receive a scholarship, it’s saying that somebody believes in you and wants to invest in you so that you can go out and make the difference you want to make in the world. In one part it’s about validation, but it’s also about giving you opportunities you may not have otherwise. </p>         
+                  
+              </div> 
+
+              <svg aria-hidden="true" version="1.1" class="svgTransforms" id="svg-tube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="205.596px" height="702.074px" viewBox="0 0 205.596 702.074" enable-background="new 0 0 205.596 702.074"
+                 xml:space="preserve">
+              <g>
+                
+                  <ellipse fill="none" stroke="#E8E3D3" stroke-width="12.8177" stroke-miterlimit="10" cx="102.751" cy="52.037" rx="80.641" ry="28.818"/>
+                
+                  <ellipse fill="none" stroke="#E8E3D3" stroke-width="12.8177" stroke-miterlimit="10" cx="102.751" cy="153.399" rx="80.641" ry="28.818"/>
+                <path fill="none" stroke="#E8E3D3" stroke-width="12.8177" stroke-miterlimit="10" d="M22.111,52.037v550.492h0.019
+                  c0.795,43.849,36.583,79.149,80.622,79.149c44.039,0,79.826-35.301,80.622-79.149h0.019V52.037c0,0-10.454-28.818-80.641-28.818
+                  C32.565,23.219,22.111,52.037,22.111,52.037z"/>
+              </g>
+              <circle fill="none" stroke="#E8E3D3" stroke-width="8.7225" stroke-miterlimit="10" cx="115.609" cy="260.813" r="18.311"/>
+              <circle fill="none" stroke="#E8E3D3" stroke-width="8.7225" stroke-miterlimit="10" cx="72.941" cy="311.492" r="18.311"/>
+              <circle fill="none" stroke="#E8E3D3" stroke-width="8.7225" stroke-miterlimit="10" cx="105.486" cy="357.721" r="14.234"/>
+              </svg>
+
+        </div> 
+      </div>   
+    </section>
+
+
+    <section data-vid="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/scholarship/pettibone' ?>" class='video-auto'>
+      <video loop muted autoplay poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/poster-pettibone.jpg' ?>" class="autovid">
+          <source class="mp4" type="video/mp4">
+          <source class="webm" type="video/webm">
+      </video>
+      <button class="pause">Pause</button>
+    </section>
 
 </div>
 
@@ -682,9 +682,9 @@
         
         <ul id="scrollPics">
           <li><a href="#anthony" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-anthony.jpg' ?>"></a></li>
-          <li><a href="#pettibone" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-pettibone.jpg' ?>"></a></li>
-          <li><a href="#starla" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-starla.jpg' ?>"></a></li>
           <li><a href="#aina" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-aina.jpg' ?>"></a></li>
+          <li><a href="#starla" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-starla.jpg' ?>"></a></li>
+          <li><a href="#pettibone" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-pettibone.jpg' ?>"></a></li>
           <li><a href="#tyler" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-tyler.jpg' ?>"></a></li>
           <li><a href="#veronica" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-veronica.jpg' ?>"></a></li>
         </ul>
@@ -709,7 +709,7 @@
 
  
 
-
+<?php get_template_part('footer', 'campaign'); ?>
 
 </body>
 </html>

@@ -24,8 +24,7 @@ function onYouTubePlayerAPIReady() {
   player = new YT.Player('ytplayer', {
     height: '720',
     width: '1280',
-    playerVars: { 
-      'autoplay': 1, 
+    playerVars: {  
       'controls': 0, 
       'showinfo': 0, 
       'modestbranding': 1,
@@ -34,28 +33,31 @@ function onYouTubePlayerAPIReady() {
     },
     videoId: '7_bqqF9fZxI',
     events: {
+        onReady: initialize,
         onStateChange: stateChange
     }
   });
 }
 
+function initialize(){
+  if(!isMobile.matches) {
+    player.playVideo()
+  }
+}
+
 function onPlayerReady(event){
-   if(youtubeFlag) {
-    onYouTubePlayerAPIReady()
-   }
-   youtubeFlag = true;
+  if(youtubeFlag) {
+   onYouTubePlayerAPIReady()
+  }
+  youtubeFlag = true;
 }
 
 function stateChange(e){
-
     if(e.data === 1) { 
         document.getElementsByTagName('body')[0].classList.add('videoPlay');
         document.getElementsByTagName('body')[0].classList.remove('videoPaused');
     } else if(e.data === 2) {
          document.getElementsByTagName('body')[0].classList.add('videoPaused');
-    } else if(e.data === 0) {
-      console.log('boo')
-         $('.read-more')[0].trigger('click');
     }
 }
 
