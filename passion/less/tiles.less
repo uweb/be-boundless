@@ -504,6 +504,12 @@ button#empty {
         text-transform: uppercase;
         -webkit-font-smoothing: initial;
         font-family: @uni;
+        a:after {
+          content: " | ";
+        }
+        a:last-child:after {
+          content: "";
+        }
       }
     }
     .bio-text {
