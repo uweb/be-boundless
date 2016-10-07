@@ -81,7 +81,7 @@
             how committing to initiatives that promote health, equity and diversity can 
             unleash human potential in our friends and neighbors in the Road Map region 
             — and beyond. </p>
-            <a href="education" data-js="education" data-title="Bridging the education gap" class="uw-btn btn-sm btn-plus">Learn more</a>
+            <a href="education" data-js="education" data-title="Bridging the education gap" class="uw-btn btn-sm btn-plus">Learn more</a> <a href="education" data-js="education" data-title="Bridging the education gap" class="uw-btn btn-sm">Your passion</a>
           </div>
           <span class="slide5-content"></span>
         </section><section tabindex="0"  class="section" id="slide6" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg6.jpg">
