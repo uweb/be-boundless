@@ -162,26 +162,38 @@
 
          <li class="grid-sizer"></li>
 
-         <!-- FILTER BOX -->
+         <!-- FILTERS -->
          <?php 
-         // $filter_terms = get_terms('filters', array(
-         //     'hide_empty' => false,
-         // ));
-         // // foreach ($filter_terms as $term) {
-         // //     echo    '<div class="grid-item special title-card stamp ' . $term->slug . '">
-         // //                <h2>' . $term->name . '</h2>
-         // //                <div class="udub-slant"><span></span></div>
-         // //                <p>' . $term->description . '</p>
-         // //              </div>';
-         // // }
-         // $tag_terms = get_terms('tags');
-         // foreach ($tag_terms as $tag_term) {
-         //     echo    '<div class="grid-item special title-card ' . $tag_term->slug . '">
-         //                <h2 class="tags">' . $tag_term->name . '</h2>
-         //                <div class="udub-slant"><span></span></div>
-         //                <p>' . $tag_term->description . '</p>
-         //              </div>';
-         // }
+          $causes_parent_terms = get_terms('causes', array(
+                'hide_empty' => false,
+                'parent' => 0
+            ));
+            foreach ($causes_parent_terms as $cause) {
+                 //echo '<li><p><a href="#" class="fyp-filter-click" data-filter="' . $cause->slug . '">' . $cause->name . '</a></p></li>';
+                ?> <li tabindex="0" class="flip-container grid-item filter-item <?php echo $cause->slug; ?> open">
+                    <div class="flipper" role="button">
+                      <div>
+                        <p class="fyp-search-more-label"><?php echo $cause->name; ?></p>
+                        <p class="short-desc"><?php echo $cause->description; ?></p>
+                      </div>
+                    </div>
+                  </li> <?php
+            }
+           $purposes_parent_terms = get_terms('purposes', array(
+                'hide_empty' => false,
+                'parent' => 0
+            ));
+            foreach ($purposes_parent_terms as $purpose) {
+                 //echo '<li><p><a href="#" class="fyp-filter-click" data-filter="' . $purpose->slug . '">' . $purpose->name . '</a></p></li>';
+                 ?> <li tabindex="0" class="flip-container grid-item filter-item <?php echo $purpose->slug; ?> open">
+                    <div class="flipper" role="button">
+                      <div>
+                        <p class="fyp-search-more-label"><?php echo $purpose->name; ?></p>
+                        <p class="short-desc"><?php echo $purpose->description; ?></p>
+                      </div>
+                    </div>
+                  </li> <?php
+            }
           ?>
 
 

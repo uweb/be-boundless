@@ -39,7 +39,7 @@ $(window).load(function(){
            filter: function() {
              var $this = $(this);
              var search = qsRegex ? $this.text().match( qsRegex ) : true;
-             return (search && $this.is( ':not(.unit-item)' )) || $this.is( '.search-more' );
+             return (search && $this.is( ':not(.unit-item):not(.filter-item)' )) || $this.is( '.search-more' );
            }
          });
          $('#empty').addClass('active');
@@ -78,12 +78,12 @@ $(window).load(function(){
 
 
       // Main portion that opens and closes the 
-      $grid.on( 'click', '.grid-item', function() {
+      $grid.on( 'click', '.grid-item:not(.filter-item)', function() {
         var $this = $(this),
             dataCheck = $this.data('name'),
             dataName = dataCheck && '#name=' + dataCheck;
         if( !$this.hasClass('open') && !$this.hasClass('special') && !$this.hasClass('search-more') ) {
-          $('.grid-item:not(.search-more)').removeClass('open')
+          $('.grid-item:not(.search-more):not(.filter-item)').removeClass('open')
           $this.addClass('open');
           // Switch image
           imageSwitch($this);              
