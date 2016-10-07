@@ -228,7 +228,9 @@
             foreach ($unitquery->posts as $uq) {
               $unitcodes .= get_post_meta($uq->ID, 'code', true) . ",";
             }
-            
+            $campaign = ($unit->url ? "<a href='" . $unit->url . "'>Campaign</a>" : "");
+            $volunteer = ($unit->volunteer ? "<a href='" . $unit->volunteer . "'>Volunteer</a>" : "" ); 
+            $leadership = ($unit->leadership ? "<a href='" . $unit->leadership . "'>Leadership</a>" : "" ); 
 
            //spit out html 
            
@@ -240,6 +242,14 @@
               <div tabindex="0" class="full-bio">
                 <h2><?php echo $unit->post_title; ?></h2>
                     <!-- INSERT LINK TO PAGE HERE??? -->
+                <div class="bio-info">
+                  <p>
+                    <?php echo $campaign; ?>
+                    <?php echo $volunteer;  ?>
+                    <?php echo $leadership;  ?>
+                  </p>              
+                  <p></p>                
+                </div>
                 <div class="bio-text">
                   <p><?php echo apply_filters('the_content', $unit->post_content); ?></p>
                 </div>

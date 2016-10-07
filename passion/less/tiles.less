@@ -239,6 +239,9 @@ button#empty {
             width: 175px;
             height: 175px;
             //margin-right: 140px;
+            &.front {
+              z-index: 0;
+            }
             p {
                 padding-top: 10px;
                 margin-bottom: 36px;
@@ -338,6 +341,7 @@ button#empty {
               text-align: left;
               -webkit-column-break-inside:avoid;
               -moz-column-break-inside:avoid;
+              page-break-inside:avoid;
               break-inside:avoid;
               p {
                 margin: 0;
@@ -503,6 +507,28 @@ button#empty {
         text-transform: uppercase;
         -webkit-font-smoothing: initial;
         font-family: @uni;
+        a:after {
+          content: " | ";
+        }
+        a:last-child:after {
+          content: "\e927";
+          font-size: 25px;
+          margin-left: 5px;
+          color: #4b2e83;
+          display: inline-block;
+          font-family: uw-icon;
+          speak: none;
+          font-style: normal;
+          font-weight: 400;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          transform: translateY(4px);
+          -ms-transform: translateY(4px); 
+          -webkit-transform: translateY(4px);
+        }
       }
     }
     .bio-text {

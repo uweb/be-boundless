@@ -382,6 +382,9 @@
   width: 175px;
   height: 175px;
 }
+#passion .module-hero-image .circle-button-container div div.circle-icon.front {
+  z-index: 0;
+}
 #passion .module-hero-image .circle-button-container div div.circle-icon p {
   padding-top: 10px;
   margin-bottom: 36px;
@@ -481,6 +484,7 @@
   text-align: left;
   -webkit-column-break-inside: avoid;
   -moz-column-break-inside: avoid;
+  page-break-inside: avoid;
   break-inside: avoid;
 }
 #passion .module-hero-image .circle-button-container .fyp-filters-box ul.fyp-filters li p {
@@ -612,6 +616,28 @@
   text-transform: uppercase;
   -webkit-font-smoothing: initial;
   font-family: "Uni sans", sans-serif;
+}
+#passion .full-bio .bio-info p a:after {
+  content: " | ";
+}
+#passion .full-bio .bio-info p a:last-child:after {
+  content: "\e927";
+  font-size: 25px;
+  margin-left: 5px;
+  color: #4b2e83;
+  display: inline-block;
+  font-family: uw-icon;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  -webkit-transform: translateY(4px);
 }
 #passion .full-bio .bio-text {
   margin: 10px -10px 20px 0;

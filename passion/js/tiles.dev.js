@@ -8,6 +8,7 @@ $(window).load(function(){
           $window = $( window ).height(),
           $window_width = $( window ).width(),
           $filter = $('#filter');
+          //$lastLocation = 0;
 
       // init Isotope
       var $grid = $('.grid').isotope({
@@ -82,7 +83,7 @@ $(window).load(function(){
             dataCheck = $this.data('name'),
             dataName = dataCheck && '#name=' + dataCheck;
         if( !$this.hasClass('open') && !$this.hasClass('special') && !$this.hasClass('search-more') ) {
-          $('.grid-item').removeClass('open')
+          $('.grid-item:not(.search-more)').removeClass('open')
           $this.addClass('open');
           // Switch image
           imageSwitch($this);              
@@ -253,12 +254,14 @@ $(window).load(function(){
         $('#empty').removeClass('active-give');
         $('.fyp-give-widget-container').remove();
         $('.fyp-give-widget-lightbox').remove();
+        //scrollIt($lastLocation);
       } 
 
    })
 
    $('.give-link').on('click', function(e){
       e.preventDefault();
+      //$lastLocation = $(this).offset().top;
       var allocCode = $( this ).attr('data-code');
       $('#empty').addClass('active-give');
       $('#empty').removeClass('active-filter');
@@ -287,6 +290,7 @@ $(window).load(function(){
    $('.unit-small').on('click', function(e){
       e.preventDefault();
       var filterValue = $( this ).attr('data-name');
+      $('#empty').trigger('click'); 
       //$('.module-hero-image').addClass('hide');
       //$('#empty').addClass('active-filter');
       //$('#empty').addClass('active');
@@ -341,42 +345,45 @@ $(window).load(function(){
           $('ul.search-grid').append(searchItems);
           $('.grid-item.search-more').addClass('open');
           $grid.isotope();
-          $('.search-item').on('click', function(el){
-            el.preventDefault();
-            $('.search-item.open').removeClass('open');
-            $( this ).addClass('open');
-          });
+          $('#searcher').on('keyup', function(el){
+              $('.grid-item.search-item').remove();
+              $('.grid-item.search-more').removeClass('open');
+            });
+          // $('.search-item').on('click', function(el){
+          //     el.preventDefault();
+          //     $('.search-item.open').removeClass('open');
+          //     $( this ).addClass('open');
+          //   });
           $('.give-link').on('click', function(e){
-              e.preventDefault();
-              var allocCode = $( this ).attr('data-code');
-              $('#empty').addClass('active-give');
-              $('#empty').removeClass('active-filter');
-              $('body').prepend('<div class="fyp-give-widget-lightbox"></div>' +
-                                '<div id="fyp-give-widget-container" class="fyp-give-widget-container">' +
-                                  '<iframe src="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?source_typ=3&source=' + allocCode + '&frame_buster=false" title="Giving at the UW" id="UWFOnlineGivingForm" frameborder="0" scrolling="yes" onload="try{document.domain=\'washington.edu\'}catch(e){}"></iframe>' +
-                                '</div>');
+                e.preventDefault();
+                //$lastLocation = e.offset().top;
+                var allocCode = $( this ).attr('data-code');
+                $('#empty').addClass('active-give');
+                $('#empty').removeClass('active-filter');
+                $('body').prepend('<div class="fyp-give-widget-lightbox"></div>' +
+                                  '<div id="fyp-give-widget-container" class="fyp-give-widget-container">' +
+                                    '<iframe src="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?source_typ=3&source=' + allocCode + '&frame_buster=false" title="Giving at the UW" id="UWFOnlineGivingForm" frameborder="0" scrolling="yes" onload="try{document.domain=\'washington.edu\'}catch(e){}"></iframe>' +
+                                  '</div>');
 
-              $('html, body').animate({
-                  scrollTop: ( $("#fyp-give-widget-container").offset().top - $("#campaign-header thick").outerHeight() )
-                }, 900);
-           });
-          // $('.search-grid').on( 'click', '.search-item', function() {
-          //       var $this = $(this);
-          //       if( !$this.hasClass('open')) {
-          //         $('.search-item').removeClass('open')
-          //         $this.addClass('open');             
-          //         // Scroll-to portion
-          //         scrollIt($this);          
-          //       } else {
-          //         $this.removeClass('open')
-          //       }                
-          //  });
+                $('html, body').animate({
+                    scrollTop: ( $("#fyp-give-widget-container").offset().top - $("#campaign-header thick").outerHeight() )
+                  }, 900);
+             });
+          $('.search-grid').on( 'click', '.search-item', function() {
+                  var $this = $(this);
+                  if( !$this.hasClass('open')) {
+                    $('.grid-item:not(.search-more)').removeClass('open')
+                    $this.addClass('open');             
+                    // Scroll-to portion
+                    //scrollIt($this);          
+                  } else {
+                    $this.removeClass('open')
+                  }                
+             });
+          
       });
-     
-      $('#searcher').on('keyup', function(el){
-        $('.grid-item.search-item').remove();
-        $('.grid-item.search-more').removeClass('open');
-      });
+      
+      
    });
   
 
@@ -397,6 +404,7 @@ function debounce( fn, threshold ) {
     timeout = setTimeout( delayed, threshold || 100 );
   }
 }
+
 
 // IE10 fix for select menu issue
 if ("onpropertychange" in document && !!window.matchMedia) {

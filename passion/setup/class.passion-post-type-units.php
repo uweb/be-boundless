@@ -124,9 +124,14 @@ if ( ! post_type_exists( 'units' ) ):
 			update_post_meta($post->ID, 'giveButton', $_POST['giveButton']);
 			update_post_meta($post->ID, 'contact', $_POST['contact']);
 			update_post_meta($post->ID, 'email', $_POST['email']);
-			update_post_meta($post->ID, 'url', $_POST['url']);
-			update_post_meta($post->ID, 'volunteer', $_POST['volunteer']);
-			update_post_meta($post->ID, 'leadership', $_POST['leadership']);
+
+			$url = (strpos( $_POST['url'] , 'http' ) === false) ? "http://" . $_POST['url'] : $_POST['url'];
+			$volunteer = (strpos( $_POST['volunteer'] , 'http' ) === false) ? "http://" . $_POST['volunteer'] : $_POST['volunteer'];
+			$leadership = (strpos( $_POST['leadership'] , 'http' ) === false) ? "http://" . $_POST['leadership'] : $_POST['leadership'];
+			update_post_meta($post->ID, 'url', $url);
+			update_post_meta($post->ID, 'volunteer', $volunteer);
+			update_post_meta($post->ID, 'leadership', $leadership);
+			
 			update_post_meta($post->ID, 'funds1', $_POST['funds1']);
 			update_post_meta($post->ID, 'funds2', $_POST['funds2']);
 			update_post_meta($post->ID, 'funds3', $_POST['funds3']);
