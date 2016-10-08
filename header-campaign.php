@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"> 
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="keywords" content="ScrollMagic, example, scrolling, attaching, scrollbar, horizontal, landscape" />
+  <meta name="keywords" content="University of Washington Boundless Campaign" />
   <!-- <meta name="viewport" content="width=device-width"> -->
   <!-- <meta name="viewport" content="initial-scale=1 user-scalable=no width=device-width"> -->
   <meta name="viewport" content="initial-scale=.95 width=device-width maximum-scale=1 user-scalable=no" />
