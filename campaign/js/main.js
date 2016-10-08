@@ -309,7 +309,7 @@ $(function(){
 		triggerElement: 'body',
 		triggerHook: 0
 	})
-		.setClassToggle('#arrows', 'hidePrev')
+		.setClassToggle('body', 'hidePrev')
 		.setTween(fade1)
 		//.addIndicators({name: "1 (duration: 300)"})
 		.addTo(controllerCampaign);
@@ -376,7 +376,7 @@ $(function(){
 		triggerElement: '#slides section:last-child',
 		triggerHook: 0.5
 	})
-	.setClassToggle('#arrows', 'hideNext')
+	.setClassToggle('body', 'hideNext')
 	//.addIndicators({name: "1 (duration: 300)"})
 	.addTo(controllerCampaign);
 
@@ -402,7 +402,7 @@ $(function(){
 	//
 
 	// Add immersive story
-	$('.uw-btn').on('click',function(e){
+	$('.story-link').on('click',function(e){
 		var eTarget = $(e.target),
 			jsFiles = eTarget.data('js') || 'test',
 			title	= eTarget.data('title') || "Immersive story";

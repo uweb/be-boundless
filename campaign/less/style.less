@@ -566,14 +566,14 @@ div#loadingEl {
 		}
 
 	}
-	&.hideNext {		
+	.hideNext & {		
 		.transition(all 1s linear .5s);
 		button.nextSlide {
 			.translate(200px, 0px);
 			opacity: 0;
 		}
 	}
-	&.hidePrev {
+	.hidePrev & {
 		.transition(all 1s linear .5s);
 		button.prevSlide {
 			.translate(-200px, 0px);
@@ -635,7 +635,14 @@ div#loadingEl {
     	display: none;
     }
     @media(max-width:768px) {
-		display: none;
+    	opacity: 0;
+    	left: 65px;
+    	bottom: 30px;
+    	width: 35%;
+    	.transition(opacity 1s linear);
+    	.hidePrev & {
+    		opacity: 1;
+    	}
     }
     @media(min-width:1024px) and (max-height:675px) {
     	left: auto;
