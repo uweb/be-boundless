@@ -730,8 +730,8 @@ div#loadingEl {
 	bottom: 0;
 	background-color: rgba(0,0,0, 0.95);
 	text-align: center;
-	z-index: 4;
-	padding: 0 60px;
+	z-index: 15;
+	padding: 0 20%;
 	overflow: auto;
 	div {
 		.translate(0,50vh);
@@ -742,10 +742,43 @@ div#loadingEl {
 		font-weight: bold;
 		line-height: 1.3;
 	}
-	@media(max-width:400px) { 
+	@media(max-width:450px) { 
 		display: block;
+		div {
+			position: relative;
+		}
+		#arrowSVG {
+			position: absolute;
+			top: -5px;
+			right: 50px;
+		}
+		#phoneSVG {
+			transform-origin: center center;
+			.animation(phone 2s linear infinite);
+		}
 	}
 }
+
+@keyframes phone {
+  0% { 
+    .rotate(-90deg);
+    opacity: 0;
+  }
+  20% {
+	opacity: 1;
+  }
+  66% { 
+    .rotate(0deg);
+  }
+  80% {
+  	opacity: 1;
+  }
+  100% { 
+    .rotate(0deg);
+    opacity: 0;
+  }
+} 
+
 
 // Tweak the more button
 
