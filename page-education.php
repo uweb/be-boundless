@@ -258,7 +258,7 @@
                 <h2 class="headline-gold">You can help bridge the gap</h2>
                 <p>Lakeridge Elementary is just one story of success. With your support, the College of Education can improve teaching quality and transform K-12 learning across the Puget Sound region.</p>
 
-                <a href="#" class="uw-btn">Learn more</a>
+                <a href="#" class="uw-btn">Give</a>
               </div>
 
 
