@@ -20,10 +20,10 @@
 
   <style>
 
-    .uw-body.active-header {
+    body.active-header {
       padding-top: 90px;
     }
-    .uw-body {
+    body {
       padding-top: 50px;
     }
   </style>
