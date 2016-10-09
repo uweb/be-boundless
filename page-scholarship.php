@@ -679,7 +679,9 @@
          <button class="pause">Pause</button>
        </section>
 </div>
-        
+
+
+
         <ul id="scrollPics">
           <li><a href="#anthony" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-anthony.jpg' ?>"></a></li>
           <li><a href="#aina" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-aina.jpg' ?>"></a></li>
@@ -689,7 +691,19 @@
           <li><a href="#veronica" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-veronica.jpg' ?>"></a></li>
         </ul>
 
-
+        <section class="text-block">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-10 col-md-offset-1 copy">
+                        <div style="text-align: center">             
+                          <h2 class="headline-gold">FPO headline</h2>
+                          <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.</p>
+                          <a href="#" class="uw-btn">Give</a>
+                        </div>
+                      </div> 
+                </div> 
+              </div>   
+         </section>
 
 </main>
 

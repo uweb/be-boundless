@@ -208,7 +208,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="callout">
-                    <p>Have a question? Visit the Frequently Asked Questions page below to see common questions and answers concerning the UW campaign. </p>       
+                    <p>Visit the Frequently Asked Questions page to see common questions and answers concerning the UW campaign.</p>       
                     <a href="faqs" class="uw-btn btn-purple btn-sm">FAQs</a>
                   </div>
                 </div>

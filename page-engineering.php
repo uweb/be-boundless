@@ -266,6 +266,21 @@
            </div>   
          </section>
 
+
+         <section class="text-block">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-md-10 col-md-offset-1 copy">
+                         <div style="text-align: center">             
+                           <h2 class="headline-gold">FPO headline</h2>
+                           <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.</p>
+                           <a href="#" class="uw-btn">Give</a>
+                         </div>
+                       </div> 
+                 </div> 
+               </div>   
+          </section>
+          
 </main>
 
  <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />
