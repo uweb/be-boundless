@@ -26,6 +26,12 @@
     body {
       padding-top: 50px;
     }
+    @media only screen and (max-width: 767px) {
+      div.container.uw-body {
+          padding-top: 30px;
+      }
+    }
+
   </style>
 
 

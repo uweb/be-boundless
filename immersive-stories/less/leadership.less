@@ -529,22 +529,37 @@ h2.purpleHeadline {
                 color: white;
                 font-size: 25px;
             }
-            q {
-              line-height: 1.4;
-              font-size: 15px;
-              display: inline-block;
+            blockquote {
+              margin: 0;
+              padding: 0;
+              quotes: "\201C""\201D""\2018""\2019";
+              line-height: .1;
+              border: none;
+            }
+            blockquote:before {
+              color: #ccc;
+              content: open-quote;
+              font-family: Georgia, Times, "Times New Roman", serif;
+              font-size: 3em;
+              line-height: 0.1em;
+              margin-right: .1em;
+              vertical-align: -0.4em;
+            }
+            blockquote:after {
+              color: #ccc;
+              content: close-quote;
+              font-family: Georgia, Times, "Times New Roman", serif;
+              font-size: 3em;
+              line-height: .1em;
+              margin-left: .1em;
+              vertical-align: -.6em;
+            }
+            blockquote p {
+              display: inline;
               color: white;
+              font-size: 15px;
             }
-            q:before,
-            q:after { 
-            
-            }
-            q:before {
-                content: open-quote;
-            }
-            q:after {
-                content: close-quote;
-            }
+
 
             .pax {
                 background-position: center center;
