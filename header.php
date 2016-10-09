@@ -19,8 +19,12 @@
   <!-- <script type='text/javascript' src='https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js'></script> -->
 
   <style>
+
+    .uw-body.active-header {
+      padding-top: 90px;
+    }
     .uw-body {
-      padding-top: 120px;
+      padding-top: 50px;
     }
   </style>
 
