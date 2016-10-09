@@ -18,6 +18,12 @@
   <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
   <!-- <script type='text/javascript' src='https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js'></script> -->
 
+  <style>
+    .uw-body {
+      padding-top: 120px;
+    }
+  </style>
+
 
 </head>
 <body id="immersive" <?php body_class(); ?>>
