@@ -936,6 +936,12 @@
   #passion .grid-item.fyp-units {
     width: calc(100%);
   }
+  #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item,
+  #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item,
+  #passion .grid-sizer.fyp-units.unit-item,
+  #passion .grid-item.fyp-units.unit-item {
+    height: 945px;
+  }
   #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item) .front,
   #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item) .front,
   #passion .grid-sizer.fyp-units .front,
@@ -950,6 +956,7 @@
     width: 100%;
     height: 263px;
     background-position: center top;
+    height: 560px;
   }
   #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.front:before,
   #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.front:before,
@@ -1009,37 +1016,59 @@
   }
   #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item),
   #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item),
-  #passion .grid-sizer .fyp-units,
-  #passion .grid-item .fyp-units {
+  #passion .grid-sizer.fyp-units,
+  #passion .grid-item.fyp-units {
     width: calc(100%);
     height: 525px;
   }
+  #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item,
+  #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item,
+  #passion .grid-sizer.fyp-units.unit-item,
+  #passion .grid-item.fyp-units.unit-item {
+    height: 945px;
+  }
+  #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.front,
+  #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.front,
+  #passion .grid-sizer.fyp-units.unit-item div.front,
+  #passion .grid-item.fyp-units.unit-item div.front {
+    display: block;
+    height: 455px;
+  }
   #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item) .front,
   #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item) .front,
-  #passion .grid-sizer .fyp-units .front,
-  #passion .grid-item .fyp-units .front {
+  #passion .grid-sizer.fyp-units .front,
+  #passion .grid-item.fyp-units .front {
     display: none;
   }
   #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item) .full-bio,
   #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item) .full-bio,
-  #passion .grid-sizer .fyp-units .full-bio,
-  #passion .grid-item .fyp-units .full-bio {
+  #passion .grid-sizer.fyp-units .full-bio,
+  #passion .grid-item.fyp-units .full-bio {
     position: static;
     width: 100%;
     margin-left: 0;
-    padding: 40px 45px 50px;
     height: 495px;
+    padding: 20px;
+  }
+  #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item) .full-bio h2,
+  #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item) .full-bio h2,
+  #passion .grid-sizer.fyp-units .full-bio h2,
+  #passion .grid-item.fyp-units .full-bio h2 {
+    padding: 0;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 24px;
   }
   #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item) .full-bio .bio-text,
   #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item) .full-bio .bio-text,
-  #passion .grid-sizer .fyp-units .full-bio .bio-text,
-  #passion .grid-item .fyp-units .full-bio .bio-text {
+  #passion .grid-sizer.fyp-units .full-bio .bio-text,
+  #passion .grid-item.fyp-units .full-bio .bio-text {
     max-height: 250px;
   }
   #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.full-bio,
   #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.full-bio,
-  #passion .grid-sizer .fyp-units.unit-item div.full-bio,
-  #passion .grid-item .fyp-units.unit-item div.full-bio {
+  #passion .grid-sizer.fyp-units.unit-item div.full-bio,
+  #passion .grid-item.fyp-units.unit-item div.full-bio {
     margin-right: 0;
   }
   #passion .grid-sizer.open.search-more,
@@ -1086,34 +1115,48 @@
   }
   #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item),
   #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item),
-  #passion .grid-sizer .fyp-units,
-  #passion .grid-item .fyp-units {
+  #passion .grid-sizer.fyp-units,
+  #passion .grid-item.fyp-units {
     width: calc(100%);
+    height: 735px;
+  }
+  #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item,
+  #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item,
+  #passion .grid-sizer.fyp-units.unit-item,
+  #passion .grid-item.fyp-units.unit-item {
     height: 945px;
   }
-  #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item) .front,
-  #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item) .front,
-  #passion .grid-sizer .fyp-units .front,
-  #passion .grid-item .fyp-units .front {
+  #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.front,
+  #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.front,
+  #passion .grid-sizer.fyp-units.unit-item div.front,
+  #passion .grid-item.fyp-units.unit-item div.front {
     position: static;
     width: 100%;
     height: 350px;
     background-position: center top;
   }
-  #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item) .full-bio,
-  #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item) .full-bio,
-  #passion .grid-sizer .fyp-units .full-bio,
-  #passion .grid-item .fyp-units .full-bio {
+  #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.full-bio,
+  #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.full-bio,
+  #passion .grid-sizer.fyp-units.unit-item div.full-bio,
+  #passion .grid-item.fyp-units.unit-item div.full-bio {
+    margin-right: 0;
     position: static;
     width: 100%;
     margin-left: 0;
     padding: 40px 45px 50px;
+    height: 670px;
   }
-  #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.full-bio,
-  #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.full-bio,
-  #passion .grid-sizer .fyp-units.unit-item div.full-bio,
-  #passion .grid-item .fyp-units.unit-item div.full-bio {
-    margin-right: 0;
+  #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item) .full-bio,
+  #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item) .full-bio,
+  #passion .grid-sizer.fyp-units .full-bio,
+  #passion .grid-item.fyp-units .full-bio {
+    height: 705px;
+  }
+  #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item) .full-bio .bio-text,
+  #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item) .full-bio .bio-text,
+  #passion .grid-sizer.fyp-units .full-bio .bio-text,
+  #passion .grid-item.fyp-units .full-bio .bio-text {
+    max-height: 425px;
   }
   #passion .grid-sizer.open.filter-item,
   #passion .grid-item.open.filter-item {
