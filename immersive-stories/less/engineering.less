@@ -795,55 +795,70 @@ button.close-video {
         }
     }
 }
-
+.charts {
+    margin: 10px 0 40px;
+    text-align: center;
+    .headline-gold {
+        font-family: @uni;
+        text-align: center;
+        color:@lightgold;
+        font-size: 33px;
+        line-height: 1.3;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 40px;;
+        margin: 50px 0 40px;
+    }
+    img {
+        width: 100%;
+    }        
+    .center {
+        text-align: center;
+    }
+    & > div {
+        vertical-align: top;
+        p {
+            font-family: @font-family-headline;
+            color: @purple;
+            font-weight: bold;
+            text-align: left;
+            line-height: 1.3;
+            font-size: 17px;
+            padding: 0 20px 0 30px;
+            span {
+                display: inline-block;
+                border: 2px solid @lightgold;
+                color: @lightgold;
+                font-weight: @ultra;
+                .border-radius(100%);
+                padding: 0px 7px;
+                line-height: 1.3;
+                margin-right: 10px;
+                margin-left: -35px;
+            }
+        }
+        div {
+            display: inline-block;
+            vertical-align: top;
+            padding: 20px;
+        }
+    }
+}
+#infographic {
+    @media(min-width:768px) {
+        div div {
+            width: 33%;
+        }
+    }
+    @media(min-width:1024px) {
+        div div {
+            width: 20%;
+        }
+    }
+}
 #chart {
-	.center {
-	    text-align: center;
-	}
-	.headline-gold {
-	    font-family: @uni;
-	    text-align: center;
-	    color:@lightgold;
-	    font-size: 33px;
-	    line-height: 1.3;
-	    font-weight: bold;
-	    text-transform: uppercase;
-	    margin-bottom: 40px;;
-    	margin: 50px 0 40px;
-	}
-	margin: 10px 0 40px;
-	text-align: center;
-	& > div {
-		vertical-align: top;
-		p {
-			font-family: @font-family-headline;
-			color: @purple;
-			font-weight: bold;
-			text-align: left;
-			line-height: 1.3;
-			font-size: 17px;
-			padding: 0 20px 0 30px;
-			span {
-				display: inline-block;
-				border: 2px solid @lightgold;
-				color: @lightgold;
-				font-weight: @ultra;
-				.border-radius(100%);
-				padding: 0px 7px;
-				line-height: 1.3;
-				margin-right: 10px;
-				margin-left: -35px;
-			}
-		}
-		div {
-			display: inline-block;
-			vertical-align: top;
-			padding: 20px;
-		}
-	}
 	@media(min-width:768px) {
 		& > div {
-
 			div:nth-child(1),
 			div:nth-child(3) {
 				width: 24.5%;
@@ -853,8 +868,6 @@ button.close-video {
 			}
 		}
 	}
-
-
 }
 
 
