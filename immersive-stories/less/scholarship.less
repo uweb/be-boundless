@@ -60,7 +60,7 @@ p {
         iframe {
             margin: 0;
             width: 100vw;
-            height: 56vw;
+            height: 56.2vw;
             max-height: 100%;
             position: absolute;
             top:50px;
@@ -1178,7 +1178,7 @@ button.close-video {
 
 
 .videoPlay #intro-slide {
-    .animation(colorswitch 50s infinite);
+    .animation(colorswitch 60s infinite);
 }
 body.videoPaused #intro-slide {
     -webkit-animation-play-state: paused; /* Chrome, Safari, Opera */
@@ -1188,21 +1188,21 @@ body.videoPaused #intro-slide {
 
 @keyframes colorswitch {
   0%    { background-color: black }
-  1%    { background-color: #160059 } // Purple
-  69%   { background-color: #181818 } // Dark gray
-  8%    { background-color: #160059 } 
-  9%    { background-color: #75613d } // Dark gold
-  22%   { background-color: #75613d } 
-  23%   { background-color: #c8a775 } // Light gold  
-  38%   { background-color: #c8a775 } 
-  39%   { background-color: white }
-  52%   { background-color: white }
-  53%   { background-color: #160059 } // Purple
-  68%   { background-color: #160059 } 
-  82%   { background-color: #181818 }
-  83%   { background-color: #808080 } // Light gray
-  99%   { background-color: #808080 }
-  100%   { background-color: #160059 }
+  0.5%  { background-color: #52358a } // Purple
+  7.5%    { background-color: #52358a } 
+  8%   { background-color: #846c47 } // Dark gold
+  22%   { background-color: #846c47 } 
+  22.5%   { background-color: #52358a } // Purple  
+  37%   { background-color: #52358a } 
+  37.5%   { background-color: #d5b082 } // Light gold
+  53%   { background-color: #d5b082 }
+  53.5%   { background-color: white } // White
+  68%   { background-color: white } 
+  68.5%   { background-color: #494949 } // Dark gray
+  82.5%   { background-color: #494949 }
+  83%   { background-color: #9d9fa2 } // Light gray
+  99%   { background-color: #9d9fa2 }
+  100%   { background-color: #52358a }
 } 
 
 
