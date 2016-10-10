@@ -104,6 +104,31 @@
             <a href="passion" class="uw-btn btn-sm">Learn more</a>
           </div>
           <span class="slide8-content"></span>
+          <nav id="camp-footer" role="navigation" aria-label="footer links">
+              <svg version="1.1" id="footerSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="37.236px" height="37.81px" viewBox="0 0 37.236 37.81" enable-background="new 0 0 37.236 37.81" xml:space="preserve">
+              <path fill="#FFFFFF" d="M19.791,29.864c-0.312,0-0.605-0.147-0.792-0.396l-2.673-3.565H8.95c-1.121,0-2.033-0.888-2.033-1.98V9.067
+                c0-1.092,0.912-1.98,2.033-1.98h17.721c1.121,0,2.033,0.888,2.033,1.98v14.855c0,1.092-0.912,1.98-2.033,1.98h-3.414l-2.674,3.565
+                C20.397,29.717,20.104,29.864,19.791,29.864z M8.95,9.067L8.898,23.922h7.923c0.312,0,0.605,0.146,0.792,0.396l2.179,2.905
+                l2.18-2.905c0.186-0.25,0.48-0.396,0.792-0.396h3.909l0.052-14.855H8.95z"/>
+              <rect x="10.878" y="11.481" fill="#FFFFFF" width="13.864" height="1.981"/>
+              <rect x="10.878" y="15.443" fill="#FFFFFF" width="13.864" height="1.98"/>
+              <rect x="10.878" y="19.404" fill="#FFFFFF" width="13.864" height="1.98"/>
+              </svg>
+
+              <ul class="footer-links">
+                  <li><a href="http://www.uw.edu/accessibility">Accessibility</a></li>
+                  <li><a href="http://uw.edu/home/siteinfo/form">Contact Us</a></li>
+                  <li><a href="http://www.washington.edu/jobs">Jobs</a></li>
+                  <li><a href="http://www.washington.edu/safety">Campus Safety</a></li>
+                  <li><a href="http://myuw.washington.edu/">My UW</a></li>
+                  <li><a href="http://www.washington.edu/rules/wac">Rules Docket</a></li>
+                  <li><a href="http://www.washington.edu/online/privacy/">Privacy</a></li>
+                  <li><a href="http://www.washington.edu/online/terms/">Terms</a></li>
+              </ul>
+              <p class="dateMarker">&copy; <?php echo date("Y"); ?> University of Washington  |  Seattle, WA</p>
+          </nav>
+
         </section>
       </div>
     </div>

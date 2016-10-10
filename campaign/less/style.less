@@ -779,6 +779,48 @@ div#loadingEl {
   }
 } 
 
+#camp-footer {
+	display: none;
+	@media(min-width:768px) { 
+		display: block;
+		.translate(0,100%);
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 10px;
+		padding: 20px 0px;
+		background-color: white;
+		.transition(transform .2s ease-in-out);
+		&:hover {
+			.translate(0,0);
+		}
+		&:after {
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			content: "";
+			top: -100px;
+			right: 0;
+			background-color: transparent;
+		}
+		#footerSVG {
+			position: absolute;
+			right: 35px;
+			top: -58px;
+		}
+		ul.footer-links {
+			margin: 25px 0 15px 0;
+			li {
+				a {
+					color: #484848;
+				}
+			}
+		}
+		p {
+			color: #484848;
+		}   
+	}
+}
 
 // Tweak the more button
 
