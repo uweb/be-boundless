@@ -47,7 +47,16 @@ if (!taxonomy_exists('priorities')):
 	        <input type="text" name="term_meta[priority_id]" id="term_meta[priority_id]" size="25" style="width:60%;" value="<?php echo $term_meta['priority_id'] ? $term_meta['priority_id'] : ''; ?>"><br />  
 	        <span class="description"><?php _e('This name will be what displays in the tag cloud of the funds.'); ?></span></br></br>  
 	    </td>  
-	</tr>  
+	</tr> 
+	<tr class="form-field">  
+	    <th scope="row" valign="top">  
+	        <label for="priority_image"><?php _e('Image Url'); ?></label>  
+	    </th>  
+	    <td>  
+	        <input type="text" name="term_meta[priority_image]" id="term_meta[priority_image]" size="25" style="width:60%;" value="<?php echo $term_meta['priority_image'] ? $term_meta['priority_image'] : ''; ?>"><br />  
+	        <span class="description"><?php _e('This image will be used as a featured image.'); ?></span></br></br>  
+	    </td>  
+	</tr>    
 	  
 	<?php  
 	}
