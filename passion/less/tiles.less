@@ -93,7 +93,6 @@ button#empty {
     }
   }
   div#main-content {
-    margin-top: 32px;
     ul.grid {
       padding-left: 0;
       margin-bottom: 0;
@@ -146,7 +145,7 @@ button#empty {
   }
 
   .row {
-    height: 100%;
+    height: auto;
     padding-left: 40px;
     h1:after {
       pointer-events: none;
@@ -198,11 +197,11 @@ button#empty {
   }
 
   .module-hero-image {
-      margin-top: 50px;
-      height: 100%;
+      margin-top: 0;
+      height: auto;
       min-height: 1075px;
-      margin-bottom: calc(-210px - 32px);
-      padding-bottom: calc(210px + 32px);
+      margin-bottom: -210px;
+      padding-bottom: 260px;
       &.hide {
         display: none;
       }
