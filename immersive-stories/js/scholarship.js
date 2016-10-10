@@ -29,9 +29,9 @@ function onYouTubePlayerAPIReady() {
       'showinfo': 0, 
       'modestbranding': 1,
       'loop': 1, 
-      'playlist': '7_bqqF9fZxI',
+      'playlist': '_uRxa7q5-As',
     },
-    videoId: '7_bqqF9fZxI',
+    videoId: '_uRxa7q5-As',
     events: {
         onReady: initialize,
         onStateChange: stateChange

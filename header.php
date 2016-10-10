@@ -44,7 +44,7 @@
     <a class="home" href="http://www.uw.edu">Home</a>
 
     <div tabindex="-1" class="thin" aria-hidden="true">
-      <a href="http://www.uw.edu">Support the campaign</a>
+      <a href="http://www.uw.edu">Give</a>
     </div>
     <div tabindex="-1" class="thick">
       <ul>
