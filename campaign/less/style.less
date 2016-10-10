@@ -822,6 +822,38 @@ div#loadingEl {
 	}
 }
 
+// Photo attribute
+
+.photo-cred {
+	&:hover,
+	&:active,
+	&:focus {
+		small {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+	cursor: pointer;
+	position: absolute;
+	right: 20px;
+	bottom: 30px;
+	svg {
+		opacity: .6;
+	}
+	small {
+		.transition(opacity .15s linear);
+		padding-right: 45px;
+		padding-top: 7px;
+		font-size: 14px;
+		color: white;
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
+
 // Tweak the more button
 
 @media(max-width:768px) {
