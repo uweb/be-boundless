@@ -1831,8 +1831,11 @@
     -webkit-column-count: 1;
     column-count: 1;
   }
-  #passion .module-hero-image .row .fyp-search-wrapper .fyp-search-bar {
-    width: auto;
+  #passion .module-hero-image .row .fyp-search-wrapper form.fyp-search div {
+    width: 100%;
+  }
+  #passion .module-hero-image .row .fyp-search-wrapper form.fyp-search div input#searcher {
+    width: 85%;
   }
 }
 @media only screen and (min-width: 481px) {
