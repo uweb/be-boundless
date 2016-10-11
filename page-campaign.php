@@ -80,31 +80,29 @@
         </section
         ><section tabindex="0"  class="section" id="slide4" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg4.jpg">
           <div id="slide4text">
-            <h2>YOU CAN TRANSFORM THE STUDENT EXPERIENCE   </h2>
-            <p><span class="hidden-xs">Ensuring access to excellence for all students is at the core of our public mission. </span>Discover how supporting opportunities that enrich future leaders can champion the student experience for people like Anthony Martinez. </p>
+            <h2>Transform the student experience   </h2>
+            <p><span class="hidden-xs">Ensuring access to excellence for all students is at the core of our public mission. </span>Discover how you can support opportunities that enrich future leaders who can champion the student experience for people like Anthony Martinez.</p>
             <a href="scholarship" data-js="scholarship" data-title="Bridging the education gap" class="uw-btn btn-sm btn-plus story-link">Read story</a> <a href="passion" class="uw-btn btn-sm">Give</a>          
           </div>
           <span class="slide4-content"></span>
         </section><section tabindex="0"  class="section" id="slide5" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg5.jpg">
           <div id="slide5text">
-            <h2>YOU CAN DRIVE <br>THE PUBLIC GOOD </h2>
-            <p><span class="hidden-xs">Our foundation is rooted in serving communities near and far. </span>Explore 
-            how committing to initiatives that promote health, equity and well-being can 
-            unleash human potential in King County's Road Map region  — and beyond. </p>
+            <h2>Drive the public good </h2>
+            <p><span class="hidden-xs">Our foundation is rooted in serving communities near and far. </span>Explore how you can commit to initiatives that promote health, equity and well-being and that can unleash human potential in King County’s Road Map region and beyond. </p>
             <a href="education" data-js="education" data-title="Bridging the education gap" class="uw-btn btn-sm btn-plus story-link">Read story</a> <a href="passion" class="uw-btn btn-sm">Give</a>
           </div>
           <span class="slide5-content"></span>
         </section><section tabindex="0"  class="section" id="slide6" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg6.jpg">
           <div id="slide6text">
-                      <h2>Expand life-changing impact everywhere</h2>
+                      <h2>Expand our impact everywhere</h2>
                       <p>Unearthing solutions to tomorrow’s grand challenges is what drives us. The Institute for Stem Cell &amp; Regenerative Medicine is one example of how investing in UW faculty and research can change – and save – lives worldwide.</p>
             <a href="education" data-js="education" data-title="Bridging the education gap" class="uw-btn btn-sm btn-plus story-link">Read story</a> <a href="passion" class="uw-btn btn-sm">Give</a>
           </div>
           <span class="slide6-content"></span>
         </section><section tabindex="0"  class="section" id="slide7" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg7.jpg">
           <div id="slide7text">
-            <h2>YOU CAN EMPOWER POSSIBILITY THROUGH INNOVATION </h2>
-            <p><span class="hidden-xs">Creativity is embedded in our DNA. </span>Learn how contributing to revolutionary people and programs can lead to inclusive innovation for the benefit of Jayna – and millions more. </p>
+            <h2>Empower possibility through innovation</h2>
+            <p><span class="hidden-xs">Creativity is embedded in our DNA. </span>Learn how you can contribute to revolutionary people and programs that can lead to inclusive innovation for the benefit of Jayna and millions more.</p>
             <a href="engineering" data-js="engineering" data-title="Bridging the education gap" class="uw-btn btn-sm btn-plus story-link">Read story</a> <a href="passion" class="uw-btn btn-sm">Give</a>
           </div>
           <span class="slide7-content"></span>
