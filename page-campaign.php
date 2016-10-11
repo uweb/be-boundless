@@ -48,7 +48,7 @@
         <section tabindex="0" class="section" id="slide1" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg1.jpg">
           <div id="slide1text">
             <span>
-              <h2>What you care about <br>can change the world</h2>
+              <h2>What you care about <br>can change the world</h2> 
             </span>
           </div>
         </section
