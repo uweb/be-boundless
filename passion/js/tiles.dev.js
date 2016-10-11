@@ -271,20 +271,45 @@ $(window).load(function(){
 
    })
 
-   $('.give-link').on('click', function(e){
-      e.preventDefault();
-      //$lastLocation = $(this).offset().top;
-      var allocCode = $( this ).attr('data-code');
-      $('#empty').addClass('active-give');
-      $('#empty').removeClass('active-filter');
-      $('body').prepend('<div class="fyp-give-widget-lightbox"></div>' +
-                        '<div id="fyp-give-widget-container" class="fyp-give-widget-container">' +
-                          '<iframe src="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?source_typ=3&source=' + allocCode + '&frame_buster=false" title="Giving at the UW" id="UWFOnlineGivingForm" frameborder="0" scrolling="yes" onload="try{document.domain=\'washington.edu\'}catch(e){}"></iframe>' +
-                        '</div>');
+   // Check for empty
+  function isEmpty( el ){
+    return !$.trim(el.html())
+  }
 
-      $('html, body').animate({
-          scrollTop: ( $("#fyp-give-widget-container").offset().top - $("#campaign-header thick").outerHeight() )
-        }, 900);
+   $('.give-link').on('click', function(e){
+      e.preventDefault(); 
+      var allocCode = $( this ).attr('data-code');
+
+      if(isEmpty($('#give-iframe'))) {
+        $('<iframe>', {
+          src: 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?source_typ=3&source=' + allocCode + '&frame_buster=false',
+          frameborder: 0,
+          width: '100%',
+          height: '100%',
+        }).appendTo('#give-iframe');
+      }
+      
+      if($('#give-now').innerHTML === 'Give now'){
+        $('#give-now').innerHTML = 'Close';
+      } else {
+        $('#give-now').innerHTML = 'Give now';
+      }
+
+      $('body').toggleClass('give-modal-active');
+
+      // e.preventDefault();
+      // //$lastLocation = $(this).offset().top;
+      // var allocCode = $( this ).attr('data-code');
+      // $('#empty').addClass('active-give');
+      // $('#empty').removeClass('active-filter');
+      // $('body').prepend('<div class="fyp-give-widget-lightbox"></div>' +
+      //                   '<div id="fyp-give-widget-container" class="fyp-give-widget-container">' +
+      //                     '<iframe src="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?source_typ=3&source=' + allocCode + '&frame_buster=false" title="Giving at the UW" id="UWFOnlineGivingForm" frameborder="0" scrolling="yes" onload="try{document.domain=\'washington.edu\'}catch(e){}"></iframe>' +
+      //                   '</div>');
+
+      // $('html, body').animate({
+      //     scrollTop: ( $("#fyp-give-widget-container").offset().top - $("#campaign-header thick").outerHeight() )
+      //   }, 900);
    })
 
    // // $('#empty.active-give').on('click', function(e){
