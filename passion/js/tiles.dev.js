@@ -1,5 +1,6 @@
 $(window).load(function(){    
-
+    //loading test
+    console.log('loaded')
     // $( function() {
 
       var qsRegex,
