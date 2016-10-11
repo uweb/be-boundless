@@ -115,7 +115,7 @@
             ));
             foreach ($causes_parent_terms as $cause) {
                  //echo '<li><p><a href="#" class="fyp-filter-click" data-filter="' . $cause->slug . '">' . $cause->name . '</a></p></li>';
-                ?> <li tabindex="0" class="flip-container grid-item filter-item <?php echo $cause->slug; ?> open">
+                ?> <li tabindex="0" data-sort="1" class="flip-container grid-item filter-item <?php echo $cause->slug; ?> open">
                     <div class="flipper" role="button">
                       <div>
                         <p class="fyp-search-more-label"><?php echo $cause->name; ?></p>
@@ -130,7 +130,7 @@
             ));
             foreach ($purposes_parent_terms as $purpose) {
                  //echo '<li><p><a href="#" class="fyp-filter-click" data-filter="' . $purpose->slug . '">' . $purpose->name . '</a></p></li>';
-                 ?> <li tabindex="0" class="flip-container grid-item filter-item <?php echo $purpose->slug; ?> open">
+                 ?> <li tabindex="0" data-sort="1" class="flip-container grid-item filter-item <?php echo $purpose->slug; ?> open">
                     <div class="flipper" role="button">
                       <div>
                         <p class="fyp-search-more-label"><?php echo $purpose->name; ?></p>
@@ -194,7 +194,7 @@
            
            ?>
            
-            <li tabindex="0" data-name="<?php echo $slug; ?>" id="#<?php echo $slug; ?>" data-img="<?php echo $unitimageurlhigh; ?>" class="grid-item fyp-units unit-item open <?php echo $slug; ?>">
+            <li tabindex="0" data-name="<?php echo $slug; ?>" id="#<?php echo $slug; ?>" data-img="<?php echo $unitimageurlhigh; ?>" data-sort="1" class="grid-item fyp-units unit-item open <?php echo $slug; ?>">
             <div class="flipper" role="button">
               <div tabindex="0" class="full-bio">
                 <h2><?php echo $unit->post_title; ?></h2>
@@ -222,7 +222,7 @@
           </li>
 
           
-          <li tabindex="0" data-name="<?php echo $slug; ?>" data-img="<?php echo $unitimageurlhigh; ?>" class="flip-container grid-item fyp-funds unit-small <?php echo $slug; ?>">
+          <li tabindex="0" data-name="<?php echo $slug; ?>" data-img="<?php echo $unitimageurlhigh; ?>" data-sort="3" class="flip-container grid-item fyp-funds unit-small <?php echo $slug; ?>">
             <div class="flipper" role="button">
               <div class="front" style="<?php echo 'background-image:url(' . $unitimageurl . ');'; ?> ">
                 <div class="banner">
@@ -277,7 +277,7 @@
 
            //spit out html 
            ?>
-            <li tabindex="0" data-name="<?php echo $fund->post_name; ?>" data-img="<?php echo $fundimageurlhigh; ?>" class="flip-container grid-item fyp-funds <?php echo $fundclasses; ?>">
+            <li tabindex="0" data-name="<?php echo $fund->post_name; ?>" data-img="<?php echo $fundimageurlhigh; ?>" data-sort="3" class="flip-container grid-item fyp-funds <?php echo $fundclasses; ?>">
             <div class="flipper" role="button">
               <div class="front" style="<?php echo 'background-image:url(' . $fundimageurl . ');'; ?> ">
               	<div class="banner">
@@ -323,7 +323,7 @@
 
         ?>
 
-        <li tabindex="0" class="flip-container grid-item search-more">
+        <li tabindex="0"  data-sort="5" class="flip-container grid-item search-more">
             <div class="flipper" role="button">
               <div>
                 <p class="fyp-search-more-label">Show more funds</p>
