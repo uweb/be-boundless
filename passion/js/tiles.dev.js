@@ -1,6 +1,6 @@
 $(window).load(function(){    
     //loading test
-    console.log('loaded')
+    console.log('test 1 w/ json')
     // $( function() {
 
       var qsRegex,
