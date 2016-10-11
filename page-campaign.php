@@ -80,7 +80,7 @@
         </section
         ><section tabindex="0"  class="section" id="slide4" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg4.jpg">
           <div id="slide4text">
-            <h2>Transform the student experience   </h2>
+            <h2>Transform the student experience</h2>
             <p><span class="hidden-xs">Ensuring access to excellence for all students is at the core of our public mission. </span>Discover how you can support opportunities that enrich future leaders who can champion the student experience for people like Anthony Martinez.</p>
             <a href="scholarship" data-js="scholarship" data-title="Bridging the education gap" class="uw-btn btn-sm btn-plus story-link">Read story</a> <a href="passion" class="uw-btn btn-sm">Give</a>          
           </div>
