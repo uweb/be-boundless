@@ -18,6 +18,14 @@ $(window).load(function(){
           columnWidth: '.grid-sizer'
         },
         filter: '.featured',
+        getSortData : {
+          selected : function( $item ){
+            $item = $( $item );
+            // sort by selected first, then by original order
+            return ( $item.hasClass('open') ? -1 : 0 ) + $item.data('sort');
+          }
+        },
+        sortBy : 'selected'
       });
 
       // Remove overlay once all is loaded
@@ -78,13 +86,16 @@ $(window).load(function(){
 
 
       // Main portion that opens and closes the 
-      $grid.on( 'click', '.grid-item:not(.filter-item)', function() {
+      $grid.on( 'click', '.grid-item:not(.filter-item):not(.search-more)', function() {
         var $this = $(this),
             dataCheck = $this.data('name'),
             dataName = dataCheck && '#name=' + dataCheck;
-        if( !$this.hasClass('open') && !$this.hasClass('special') && !$this.hasClass('search-more') ) {
-          $('.grid-item:not(.search-more):not(.filter-item)').removeClass('open')
+        if( !$this.hasClass('open') && !$this.hasClass('special') && !$this.hasClass('search-more') && !$this.hasClass('fyp-units') ) {
+          $prevSelect = $('.grid-item.open:not(.search-more):not(.filter-item)');
+          $prevSelect.removeClass('open');
+          $grid.isotope( 'updateSortData', $prevSelect ); 
           $this.addClass('open');
+          $grid.isotope( 'updateSortData', $this);
           // Switch image
           imageSwitch($this);              
           // Scroll-to portion
@@ -93,6 +104,7 @@ $(window).load(function(){
           window.location.hash = dataName;          
         } else {
           $this.removeClass('open')
+          $grid.isotope( 'updateSortData', $this);
         }
         $grid.isotope();                
       });              
