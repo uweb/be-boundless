@@ -1,6 +1,6 @@
 $(window).load(function(){    
     //loading testgit p
-    console.log('test 2 w/ xml')
+    console.log('test 3 w/ xml')
     // $( function() {
 
       var qsRegex,
