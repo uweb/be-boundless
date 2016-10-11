@@ -149,18 +149,18 @@
            </div>   
        </section>
 
-      <section id="chart">
-        <p class="headline-gold center">ECoG/Brain Activity Controlling <br>Electronic Limb</p> 
+      <section id="chart" class="charts">
+        <p class="headline-gold center">Controlling Robotics <br>with the Brain</p> 
         <div>
           <div>
-            <p><span>1</span>Patient paralyzed due to spinal cord injury - unable to pick up glass of water.</p>
-            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-1.png' ?>" alt="">
+            <p><span>1</span>For those who experience paralysis, the intent to move is intact, but the ability is not.   </p>
+            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-1.svg' ?>" alt="">
           </div><div>
-            <p><span>2</span>ECoG record brain activity, is tranlsated by an external computer, which sends information to a robotic arm in response to patient's tought.</p>
-            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-2.png' ?>" alt="">
+            <p><span>2</span>Signals measured directly from the brain using ECoG are sent to an external computer, which is connected to a robotic arm. </p>
+            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-2.svg' ?>" alt="">
           </div><div>
-            <p><span>3</span>Robotic arm responds to patient's thoughts.</p>
-            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-3.png' ?>" alt="">
+            <p><span>3</span>The external computer translates the brain signals, and the robotic arm moves in response to the participant’s thoughts. </p>
+            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-3.svg' ?>" alt="">
           </div>
         </div>
       </section>
@@ -186,18 +186,24 @@
          </section>
 
 
-         <section id="chart">
-           <p class="headline-gold center">ECoG/Brain Activity Controlling <br>Electronic Limb</p> 
+         <section id="infographic" class="charts">
+           <p class="headline-gold center">The Future: Internal BCI  <br>and Healing Connections</p> 
            <div>
              <div>
-               <p><span>1</span>Patient paralyzed due to spinal cord injury - unable to pick up glass of water.</p>
-               <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-1.png' ?>" alt="">
+               <p><span>1</span>For those who experience paralysis, the intent to move is intact, but  the ability is not. </p>
+               <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/info-1.svg' ?>" alt="">
              </div><div>
-               <p><span>2</span>ECoG record brain activity, is tranlsated by an external computer, which sends information to a robotic arm in response to patient's tought.</p>
-               <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-2.png' ?>" alt="">
+               <p><span>2</span>An implantable brain-computer  interface (BCI) is placed below  the injury site. Signals measured  directly from the brain are sent  to the implanted BCI.</p>
+               <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/info-2.svg' ?>" alt="">
              </div><div>
-               <p><span>3</span>Robotic arm responds to patient's thoughts.</p>
-               <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-3.png' ?>" alt="">
+               <p><span>3</span>Electrodes placed in the paralyzed  limb are stimulated with electrical  impulses sent by the BCI, which  cause the muscles to contract.</p>
+               <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/info-3.svg' ?>" alt="">
+             </div><div>
+               <p><span>3</span>With repetition, the brain  and spinal circuits will form  new connections and heal  themselves. </p>
+               <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/info-4.svg' ?>" alt="">
+             </div><div>
+               <p><span>3</span>Eventually, the implanted BCI  can be explanted as the  once-paralyzed limb regains  function.   </p>
+               <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/info-5.svg' ?>" alt="">
              </div>
            </div>
          </section>
@@ -224,22 +230,6 @@
 
 
       
-         <section id="chart">
-           <p class="headline-gold center">ECoG/Brain Activity Controlling <br>Electronic Limb</p> 
-           <div>
-             <div>
-               <p><span>1</span>Patient paralyzed due to spinal cord injury - unable to pick up glass of water.</p>
-               <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-1.png' ?>" alt="">
-             </div><div>
-               <p><span>2</span>ECoG record brain activity, is tranlsated by an external computer, which sends information to a robotic arm in response to patient's tought.</p>
-               <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-2.png' ?>" alt="">
-             </div><div>
-               <p><span>3</span>Robotic arm responds to patient's thoughts.</p>
-               <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-3.png' ?>" alt="">
-             </div>
-           </div>
-         </section>
-
 
 
 <section class="text-block">
@@ -256,7 +246,6 @@
 <p>For Jayna and other survivors of brain injury, a device like this could mean improving or restoring motor function. For those with spinal cord injury and paralysis, it could even mean having the ability to move their own bodies again. </p>
 
 <p>“Eventually, the device could go away because the individual has regained function,” says Moritz. “The individuals, like Jayna, who might one day benefit from what the CSNE is developing are just a wonderful, inspiring, rewarding group of people to work with. This is the kind of research that makes being at the UW so special.” </p>
-
 
 <?php echo do_shortcode('[slideshow id=2374 simple=true]');?>
 
@@ -280,7 +269,7 @@
                  </div> 
                </div>   
           </section>
-          
+
 </main>
 
  <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />

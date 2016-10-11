@@ -23,7 +23,7 @@
   <li data-tooltip="Artist-meets-activist"><a title="Mayowa Aina" href="#aina"><span></span></a></li>
   <li data-tooltip="Impassioned journalist"><a title="Starla Sampaco" href="#starla"><span></span></a></li>
   <li data-tooltip="Student advocate"><a title="Austin Wright-Pettibone" href="#pettibone"><span></span></a></li>
-  <li data-tooltip="Self-proclaimed space geek"><a title="Tyler Valentine" href="#tyler"><span></span></a></li>
+  <li data-tooltip="Future asteroid miner"><a title="Tyler Valentine" href="#tyler"><span></span></a></li>
   <li data-tooltip="Sustainability evangelist"><a title="Veronica Guenther" href="#veronica"><span></span></a></li>
 </ul>
 
@@ -37,11 +37,11 @@
                 
                   <p class="headline-gold center">What is the student experience?<br/> Well, that depends on who you ask. </p>
                   
-                  <p>For some, it’s walking up a creek in chest-high waders, studying salmon and bear interactions in the field, where they happen. A living              laboratory.  </p>
-                  <p>For others, it’s spending spring break volunteering in public schools in rural and tribal communities across Washington, creating a pipeline of              possibility for the next generation of Huskies. </p>
-                  <p>It’s hiking Mt. Rainier. It’s throwing the winning touchdown. It’s scoring the solo, engineering a 3-D printed prosthetic hand, interning at a               local company with a global reach.  </p>
-                  <p>It’s being immersed in a city of self-starters, adventurers and entrepreneurs. It’s being caffeinated, curious, connected — with the Pacific               Northwest in your backyard. </p>
-                  <p>It’s discovering your passion; your place in the world — and it’s knowing the student experience wouldn’t be possible without a community of               supporters rallying to help you get to, through, and beyond the UW. </p>
+                  <p>For some, it’s walking up a creek in chest-high waders, studying salmon and bear interactions in the field, where they happen. A living laboratory.  </p>
+                  <p>For others, it’s spending spring break volunteering in public schools in rural and tribal communities across Washington, creating a pipeline of possibility for the next generation of Huskies. </p>
+                  <p>It’s hiking Mt. Rainier. It’s throwing the winning touchdown. It’s scoring the solo, engineering a 3-D printed prosthetic hand, interning at a local company with a global reach.  </p>
+                  <p>It’s being immersed in a city of self-starters, adventurers and entrepreneurs. It’s being caffeinated, curious, connected — with the Pacific Northwest in your backyard. </p>
+                  <p>It’s discovering your passion; your place in the world — and it’s knowing the student experience wouldn’t be possible without a community of supporters rallying to help you get to, through, and beyond the UW. </p>
                   
               </div> 
         </div> 
@@ -63,7 +63,7 @@
           <p><b>Minor:</b> Quantitative science</p>
         </div>  
         <div>
-          <p><b>Scholarships:</b></p>
+          <p><b>Dreams supported by:</b></p>
           <ul>
             <li>School of Environmental and Forest Sciences Scholarship</li>
             <li>College of the Environment Scholarship</li>
@@ -156,7 +156,7 @@
           </ul>
         </div>  
         <div>
-          <p><b>Scholarships:</b></p>
+          <p><b>Dreams supported by:</b></p>
           <ul>
             <li>UWAA Homecoming Royalty Scholarship</li>
             <li>Scott Barker Endowed Scholarship for Excellence in Informatics</li>
@@ -281,7 +281,7 @@
 
         </div>  
         <div>
-          <p><b>Scholarships:</b></p>
+          <p><b>Dreams supported by:</b></p>
           <ul>
             <li>The Seattle Times/Blethen Family Communications School Minority Scholarship Endowed Fund</li>
             <li>Pioneer News Group Excellence in Journalism Award for Diversity Journalism</li>
@@ -377,7 +377,7 @@
           <p><b>Minor:</b> Applied mathematics</p>
         </div>  
         <div>
-          <p><b>Scholarships:</b></p>
+          <p><b>Dreams supported by:</b></p>
           <ul>
             <li>Bernice Frank Scholarship in Chemical Engineering</li>
             <li>Armstrong Scholarship for Chemical Engineering</li>
@@ -477,7 +477,7 @@
           </ul>
         </div>  
         <div>
-          <p><b>Scholarships:</b> </p>
+          <p><b>Dreams supported by:</b> </p>
           <ul> 
             <li>Washington NASA Space Grant Scholarship</li>
             <li>College of the Environment Scholarship</li>
@@ -577,7 +577,7 @@
           </ul>
         </div>  
         <div>
-          <p><b>Scholarship:</b> CoMotion Mary Gates Innovation Scholarship</p>
+          <p><b>Dreams supported by:</b> CoMotion Mary Gates Innovation Scholarship</p>
         </div>
       </div>
     </section>
