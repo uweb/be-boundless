@@ -114,30 +114,46 @@
                 'parent' => 0
             ));
             foreach ($causes_parent_terms as $cause) {
-                 //echo '<li><p><a href="#" class="fyp-filter-click" data-filter="' . $cause->slug . '">' . $cause->name . '</a></p></li>';
-                ?> <li tabindex="0" data-sort="1" class="flip-container grid-item filter-item <?php echo $cause->slug; ?> open">
+                  $t_id = $cause->term_id;  
+                  $term_meta = get_option( "taxonomy_term_$t_id" ); 
+                  $imageurl = $term_meta['cause_image'];
+                ?> 
+                  <li tabindex="0" data-name="<?php echo $cause->slug; ?>" id="#<?php echo $cause->slug; ?>" data-img="<?php echo $imageurl; ?>" data-sort="1" class="grid-item fyp-units unit-item open <?php echo $cause->slug; ?>">
                     <div class="flipper" role="button">
-                      <div>
-                        <p class="fyp-search-more-label"><?php echo $cause->name; ?></p>
-                        <p class="short-desc"><?php echo $cause->description; ?></p>
+                      <div tabindex="0" class="full-bio">
+                        <h2><?php echo $cause->name; ?></h2>
+                            <!-- INSERT LINK TO PAGE HERE??? -->
+                        <div class="bio-text">
+                          <p><?php echo $cause->description; ?></p>
+                        </div>
                       </div>
+                      <div class="front" style="<?php echo 'background-image:url(' . $imageurl . ');'; ?> "></div>
                     </div>
-                  </li> <?php
+                  </li>
+          <?php
             }
            $purposes_parent_terms = get_terms('purposes', array(
                 'hide_empty' => false,
                 'parent' => 0
             ));
             foreach ($purposes_parent_terms as $purpose) {
-                 //echo '<li><p><a href="#" class="fyp-filter-click" data-filter="' . $purpose->slug . '">' . $purpose->name . '</a></p></li>';
-                 ?> <li tabindex="0" data-sort="1" class="flip-container grid-item filter-item <?php echo $purpose->slug; ?> open">
+                  $t_id = $purpose->term_id;  
+                  $term_meta = get_option( "taxonomy_term_$t_id" ); 
+                  $imageurl = $term_meta['purpose_image'];
+                 ?>  
+                  <li tabindex="0" data-name="<?php echo $purpose->slug; ?>" id="#<?php echo $purpose->slug; ?>" data-img="<?php echo $imageurl; ?>" data-sort="1" class="grid-item fyp-units unit-item open <?php echo $purpose->slug; ?>">
                     <div class="flipper" role="button">
-                      <div>
-                        <p class="fyp-search-more-label"><?php echo $purpose->name; ?></p>
-                        <p class="short-desc"><?php echo $purpose->description; ?></p>
+                      <div tabindex="0" class="full-bio">
+                        <h2><?php echo $purpose->name; ?></h2>
+                            <!-- INSERT LINK TO PAGE HERE??? -->
+                        <div class="bio-text">
+                          <p><?php echo $purpose->description; ?></p>
+                        </div>
                       </div>
+                      <div class="front" style="<?php echo 'background-image:url(' . $imageurl . ');'; ?> "></div>
                     </div>
-                  </li> <?php
+                  </li>
+                  <?php
             }
           ?>
 
