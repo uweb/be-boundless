@@ -125,9 +125,9 @@ if ( ! post_type_exists( 'units' ) ):
 			update_post_meta($post->ID, 'contact', $_POST['contact']);
 			update_post_meta($post->ID, 'email', $_POST['email']);
 
-			$url = (strpos( $_POST['url'] , 'http' ) === false) ? "http://" . $_POST['url'] : $_POST['url'];
-			$volunteer = (strpos( $_POST['volunteer'] , 'http' ) === false) ? "http://" . $_POST['volunteer'] : $_POST['volunteer'];
-			$leadership = (strpos( $_POST['leadership'] , 'http' ) === false) ? "http://" . $_POST['leadership'] : $_POST['leadership'];
+			$url = ( (strpos( $_POST['url'] , 'http' ) === false) && !empty($_POST['url']) ) ? "http://" . $_POST['url'] : $_POST['url'];
+			$volunteer = ( (strpos( $_POST['volunteer'] , 'http' ) === false) && !empty($_POST['url']) ) ? "http://" . $_POST['volunteer'] : $_POST['volunteer'];
+			$leadership = ( (strpos( $_POST['leadership'] , 'http' ) === false) && !empty($_POST['url']) ) ? "http://" . $_POST['leadership'] : $_POST['leadership'];
 			update_post_meta($post->ID, 'url', $url);
 			update_post_meta($post->ID, 'volunteer', $volunteer);
 			update_post_meta($post->ID, 'leadership', $leadership);
