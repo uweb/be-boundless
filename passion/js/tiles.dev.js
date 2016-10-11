@@ -289,10 +289,10 @@ $(window).load(function(){
         }).appendTo('#give-iframe');
       }
       
-      if($('#give-now').innerHTML === 'Give now'){
-        $('#give-now').innerHTML = 'Close';
+      if($('#give-now')[0].innerHTML === 'Give now'){
+        $('#give-now')[0].innerHTML = 'Close';
       } else {
-        $('#give-now').innerHTML = 'Give now';
+        $('#give-now')[0].innerHTML = 'Give now';
       }
 
       $('body').toggleClass('give-modal-active');
