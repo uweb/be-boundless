@@ -89,10 +89,22 @@ main {
     }
 }
 
+// Top logo 
+#boundless-logo {
+    @media(min-width:768px) {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    @media(max-width:768px) {
+        width: 75%;
+    }
+}
+
+
 // Blurb section
 
 #blurb {
-    h3 {
+    p.int {
         text-transform: uppercase;
         font-family: @uni;
         font-size: 23px;
@@ -101,6 +113,13 @@ main {
         margin: 40px 0;
         text-align: center;
         line-height: 1.5;
+    }
+    h2 {
+        text-align: center;
+        font-size: 34px;
+        text-transform: uppercase;
+        font-weight: 900;
+        color: #4b2e83;
     }
 
     @media(max-width:768px) {
@@ -126,6 +145,12 @@ main {
 
 .thermo {
     margin: 40px 0 50px;
+    p {
+        text-align: center;
+        margin: -15px 0 40px;
+        font-weight: bold;
+        letter-spacing: -1px;
+    }
 }
 #thermo {
     height: 48px;
@@ -184,6 +209,7 @@ main {
         font-family: @uni;
         font-size: 30px;
         color: @purple;
+        font-weight: normal;
         margin: 0;
         b {
             font-weight: normal;

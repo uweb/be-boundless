@@ -48,7 +48,7 @@
         <section tabindex="0" class="section" id="slide1" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg1.jpg">
           <div id="slide1text">
             <span>
-              <h2>What you care about <br>can change the world.</h2>
+              <h2>What you care about <br>can change the world</h2>
             </span>
           </div>
         </section
@@ -96,7 +96,7 @@
           <span class="slide5-content"></span>
         </section><section tabindex="0"  class="section" id="slide6" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg6.jpg">
           <div id="slide6text">
-                      <h2>YOU CAN EXPAND OUR IMPACT EVERYWHERE</h2>
+                      <h2>Expand life-changing impact everywhere</h2>
                       <p>Unearthing solutions to tomorrow’s grand challenges is what drives us. The Institute for Stem Cell &amp; Regenerative Medicine is one example of how investing in UW faculty and research can change – and save – lives worldwide.</p>
             <a href="education" data-js="education" data-title="Bridging the education gap" class="uw-btn btn-sm btn-plus story-link">Read story</a> <a href="passion" class="uw-btn btn-sm">Give</a>
           </div>
