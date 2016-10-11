@@ -1,4 +1,4 @@
-<?php get_header( "passion" ); ?> 
+<?php get_header( "passion" ); ?>   
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/passion/css/tiles.css' ?>" type="text/css">
 
 	<div class="module-hero-image" style="background-image:url('<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>')">
