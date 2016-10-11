@@ -155,6 +155,29 @@
                   </li>
                   <?php
             }
+            $priorities_parent_terms = get_terms('priorities', array(
+                'hide_empty' => false,
+                'parent' => 0
+            ));
+            foreach ($priorities_parent_terms as $priority) {
+                  $t_id = $priority->term_id;  
+                  $term_meta = get_option( "taxonomy_term_$t_id" ); 
+                  $imageurl = $term_meta['priority_image'];
+                ?> 
+                  <li tabindex="0" data-name="<?php echo $priority->slug; ?>" id="#<?php echo $priority->slug; ?>" data-img="<?php echo $imageurl; ?>" data-sort="1" class="grid-item fyp-units unit-item open <?php echo $priority->slug; ?>">
+                    <div class="flipper" role="button">
+                      <div tabindex="0" class="full-bio">
+                        <h2><?php echo $priority->name; ?></h2>
+                            <!-- INSERT LINK TO PAGE HERE??? -->
+                        <div class="bio-text">
+                          <p><?php echo $priority->description; ?></p>
+                        </div>
+                      </div>
+                      <div class="front" style="<?php echo 'background-image:url(' . $imageurl . ');'; ?> "></div>
+                    </div>
+                  </li>
+          <?php
+            }
           ?>
 
 
