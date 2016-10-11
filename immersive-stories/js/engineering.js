@@ -104,6 +104,7 @@ $(function(){
 
   $('.engineering-slideshow').slick({
     lazyLoad: 'ondemand',
+    useTransform: true;
     dots: true,
     infinite: false,
     speed: 300,

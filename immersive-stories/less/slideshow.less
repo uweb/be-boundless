@@ -82,6 +82,9 @@
             background-color: transparent;
         }
     }
+    @media(max-width:768px) {
+        margin: 30px 0 50px
+    }
 }
 .slick-list {
     position: relative;
@@ -133,6 +136,7 @@
     height: 100%;
     min-height: 1px;
     position: relative;
+    background-color: @gray;
     [dir="rtl"] & {
         float: right;
     }
@@ -196,6 +200,9 @@
     }
     &.slick-disabled:before {
         opacity: @slick-opacity-not-active;
+    }
+    @media(max-width:768px) {
+        display: none !important;
     }
 }
 
