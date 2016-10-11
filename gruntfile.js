@@ -84,6 +84,8 @@ module.exports = function(grunt) {
           ],          
           'immersive-stories/js/engineering.min.js': [
               'immersive-stories/js/common.js',
+              // Slideshow
+              'immersive-stories/js/slick.js',
               'immersive-stories/js/engineering.js',
           ],          
           'immersive-stories/js/medicine.min.js': [
