@@ -24,7 +24,7 @@
           <div class="row">
               <div class="col-md-10 col-md-offset-1 copy">
                 
-                  <p class="headline-gold center">"The day Jayna Bean Doll was born, May 11, 2006, we noticed seizure-like behavior. After close supervision, her doctor confirmed the seizures and ordered a CT scan of her brain. He closed the door to our room to give us the news… <span>wwe knew right away, our lives were never going to be the same…"</span></p>
+                  <p class="headline-gold center">"The day Jayna Bean Doll was born, May 11, 2006, we noticed seizure-like behavior. After close supervision, her doctor confirmed the seizures and ordered a CT scan of her brain. He closed the door to our room to give us the news… <span>we knew right away, our lives were never going to be the same…"</span></p>
                   <p class="center">– Jayna’s mother Sunshine Glynn, via CaringBridge</p>
                   
               </div> 
@@ -37,11 +37,8 @@
           <div class="container">
               <div class="row">
                   <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 copy"> 
-                  <h2>Jayna's story</h2>
-                  <p>In addition to serving elementary schools, the College of Education supports high school students in the Road Map Region through the Dream Project. </p>
-                  <p>See Aisha Ali, a graduate of Kent-Meridian High School and freshman at UW Tacoma, describe what being a <a href="http://www.uw.edu/dreamproject">Dream Project</a> mentee means to her and her family.</p>
 
-                  <a class="play" href="#">Watch her story <svg aria-hidden="true" x="0px" y="0px"
+                  <a class="play" href="#">Watch Jayna's story <svg aria-hidden="true" x="0px" y="0px"
        width="14px" height="3px" viewBox="0 0 14 3" enable-background="new 0 0 14 3" xml:space="preserve">
     <rect fill="#FFFFFF" width="14" height="3"/>
     </svg></a>
@@ -209,35 +206,15 @@
          </section>
 
 
-       <section class="text-block">
-           <div class="container">
-               <div class="row">
-                   <div class="col-md-10 col-md-offset-1 copy padless marginless">
-
-<p>“Now that we know we can extract activity from the brain and control avatar hands and robotic arms and receive sensory feedback, what happens if we want to control our own paralyzed limb?” poses Moritz. “We can electrically stimulate the spinal cord below the level of the injury using an implantable device, a type of brain-computer interface (BCI).” </p>
-
-<p>The concept is this: the brain activity is recorded, decoded and an algorithm is created. That information is then used to program the implantable BCI — essentially, chips and wires that acts as a pseudo nervous system, creating a bridge to reconnect the brain to the spinal cord below the injury. </p>
-
-<p class="gold-quote headline-gold">The device listens to the brain, and then says ‘Oh, the person wants to do this — let’s help them,’” says Moritz. </p>
-
-<p> “We’re trying to make the algorithms smarter, to allow the device learn in real time. Just as our brain or spinal cord would learn with practice, so would this little implant.” </p>
-
-
-                   </div> 
-             </div> 
-           </div>   
-         </section>
-
-
-      
-
-
 <section class="text-block">
            <div class="container">
                <div class="row">
                    <div class="col-md-10 col-md-offset-1 copy padless marginless">
 
 
+<p>“Now that we know we can extract activity from the brain and control avatar hands and robotic arms and receive sensory feedback, what happens if we want to control our own paralyzed limb?” poses Moritz. “We can electrically stimulate the spinal cord below the level of the injury using an implantable device, a type of brain-computer interface (BCI).” </p>
+
+<p>The concept is this: the brain activity is recorded, decoded and an algorithm is created. That information is then used to program the implantable BCI — essentially, chips and wires that acts as a pseudo nervous system, creating a bridge to reconnect the brain to the spinal cord below the injury. The device listens to the brain, and then says ‘Oh, the person wants to do this — let’s help them,’” says Moritz. “We’re trying to make the algorithms smarter, to allow the device learn in real time. Just as our brain or spinal cord would learn with practice, so would this little implant.” </p>
 
 <p>Another forward-thinking goal at the core of the CSNE is not to just stop at BCI-driven reanimation, but actually help brain and spinal circuits to heal themselves, bringing dormant limbs to life. </p>
 
@@ -247,9 +224,50 @@
 
 <p>“Eventually, the device could go away because the individual has regained function,” says Moritz. “The individuals, like Jayna, who might one day benefit from what the CSNE is developing are just a wonderful, inspiring, rewarding group of people to work with. This is the kind of research that makes being at the UW so special.” </p>
 
-<?php echo do_shortcode('[slideshow id=2374 simple=true]');?>
+
+          <span class="photo-cred">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               width="37.236px" height="37.81px" viewBox="0 0 37.236 37.81" enable-background="new 0 0 37.236 37.81" xml:space="preserve">
+            <circle fill="none" stroke="#FFFFFF" stroke-width="1.4174" stroke-miterlimit="10" cx="18.346" cy="18.364" r="11.684"/>
+            <g>
+              <circle fill="#FFFFFF" cx="18.538" cy="13.309" r="1.393"/>
+              <path fill="#FFFFFF" d="M19.931,23.42c0,0.77-0.624,1.393-1.393,1.393l0,0c-0.769,0-1.393-0.624-1.393-1.393v-5.855
+                c0-0.77,0.624-1.393,1.393-1.393l0,0c0.77,0,1.393,0.624,1.393,1.393V23.42z"/>
+            </g>
+            </svg>
 
 
+
+
+
+<div class="engineering-slideshow">
+  <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/slide-2.jpg' ?>" alt="">
+    <p>CSNE Young Scholars Program participant Emily Boeschoten and electrical engineering postdoctoral fellow Ivana Milvanovic work on optimizing sensory feedback through novel haptic devices in Chet Moritz’ lab.</p>
+  </div>
+
+  <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/slide-3.jpg' ?>" alt="">
+    <p>CSNE and electrical engineering Ph.D. student David Bjanes works with undergraduate and high school students in Chet Moritz’ lab.</p>
+  </div>
+
+  <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/slide-5.jpg' ?>" alt="">
+    <p>Human test subject wearing an electroencephalogram (EEG) cap and bioengineering graduate student Dev Sarma in Rajesh Rao’s lab. In this experiment the EEG cap picks up electrical signals coming from the test subject’s brain and feeds them into a processor that controls a cursor on a video screen the subject is viewing. In effect, it allows the test subject to control the cursor on-screen through her thoughts alone.</p></div>
+
+  
+  <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/slide-4.jpg' ?>" alt="">
+      <p>Close-up of an electrocorticography (ECoG) grid. This ECoG grid is designed to both pick up and transmit electrical signals to and from the surface of the brain.</p></div>
+  
+  <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/slide-1.jpg' ?>" alt="">
+    <p>The CSNE offers research experiences, classroom visits and outreach events for precollege students and educators. Pictured is a demonstration at the Bloomin’ Brains Summer Camp showing how the electrical signal from muscles can power a robotic gripper</p></div>
+
+  
+    <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/slide-6.jpg' ?>" alt="">
+      <p>CSNE neuroethics predoctoral fellow Tim Brown and electrical engineering graduate student Tyson Heo work with electromyography (EMG) sensing and haptic feedback in the UW BioRobotics lab.
+  </p></div>  
+  
+
+</div>
+
+<img />
                    </div> 
              </div> 
            </div>   

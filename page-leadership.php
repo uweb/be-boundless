@@ -68,11 +68,11 @@
                 </li>
                 <li>
                   <a href="#"><img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/link-what.svg' ?>" alt="Glasses on book"><br>
-                  <h4>What to give</h4></a>
+                  <h4>Types of gifts</h4></a>
                 </li>
                 <li>
                   <a href="#"><img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/link-ways.svg' ?>" alt="Glasses on book"><br>
-                  <h4>Ways to give</h4></a>
+                  <h4>How to give</h4></a>
                 </li>
                 <li>
                   <a href="https://www.washington.edu/giving/recognition/"><img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/link-matching.svg' ?>" alt="Glasses on book"><br>
@@ -214,8 +214,6 @@
                       <li><a href="#">School of Public Health</a></li>
                       <li><a href="#">School of Social Work</a></li>
                       <li><a href="#">UW Tacoma </a></li>
-                      <li><a href="#">Katherin Smoak </a></li>
-                      <li><a href="#">Libbie Jacob</a> </li>
                     </ul>    
                   </div>
               </div>
