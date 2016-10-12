@@ -58,8 +58,51 @@
                   <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                 </p>
               </div>
-            </div></section>
-<div class="boundless-button sm"><span><a href="https://www.washington.edu/husky100/about/">Learn more about this award</a></span></div>
+
+            </div>
+            <div style="text-align: center"><div class="boundless-button sm dark"><span><a href="#">Learn more about Dr. Becker</a></span></div></div>
+      </section>
+
+      <section class="text-block">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-10 col-md-offset-1 copy">
+                      
+  <p class="gold-quote headline-gold"><b>We have to do better</b>,” says Dr. Becker. “And if we get it figured out for leukemia, we can figure it out for other cancers too.”</p>
+
+<p>That’s why she’s working with the UW’s Institute for Stem Cell and Regenerative Medicine (ISCRM) to pioneer groundbreaking treatments — and turn the odds in her patients’ favor.</p>
+<p>At ISCRM, a collaborative institute at the forefront of biomedical research, experts take on the most daunting diseases of today — from Alzheimer’s to diabetes to cancer — using cutting-edge technology and research to support promising clinical trials.</p>
+<p>In Dr. Becker’s case, the path from research to next-generation therapies begins by rethinking how the cancers she studies are currently treated.</p>
+<p>Typically, she explains, patients get the same treatment for leukemia: two types of chemotherapy drugs. The drug programs are intensive. They’re costly. They’re toxic, with life-threatening complications and severe side-effects. And for a third of those patients, they don’t help at all.</p>
+<p>“But what if there weren’t just two types of drugs?” asks Dr. Becker. “And what if the drugs we used to fight AML were selected based on each patient’s unique biology?” </p>
+<p>These are the questions she is working to address in her precision medicine approach to cancer treatment, and she’s already making significant progress.</p>
+<p>Though Dr. Becker often thinks of cancer on a scientific level, there’s a point where the science of beating cancer meets the art of empathy. Her mother, who has survived thyroid and breast cancer, was recently diagnosed with lung cancer.</p>
+<p>“I appreciate what it takes to go through all the diagnostic procedures, the treatments, the side effects, the stresses,” Dr. Becker says. “Now, I have an incredible, renewed appreciation for how devastating this is. Not only to the patients, but to their families and friends. I’m always trying to think of how we can make it better, do better — how we can restore quality of life and prolong survival.”</p>
+
+                  </div> 
+            </div> 
+          </div>   
+        </section>
+
+         <section class="video-block" id="video">
+               <div class="portrait"></div>
+               <div class="container">
+                   <div class="row">
+                       <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 copy"> 
+
+                       <a class="play" href="#">Watch Jayna's story <svg aria-hidden="true" x="0px" y="0px"
+            width="14px" height="3px" viewBox="0 0 14 3" enable-background="new 0 0 14 3" xml:space="preserve">
+         <rect fill="#FFFFFF" width="14" height="3"/>
+         </svg></a>
+
+                   </div> 
+                 </div> 
+               </div>   
+               <div id="boundless-video"></div>
+               <!-- <small>Learn more about the Dream Project at <a href="http://www.uw.edu/dreamproject">uw.edu/dreamproject</a>.</small>       -->
+               
+        </section>
+
 
 </main>
 
