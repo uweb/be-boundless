@@ -1,6 +1,5 @@
 $(window).load(function(){    
-    //loading testgit p
-    console.log('test 4 payload v2')
+  
     // $( function() {
 
       var qsRegex,
