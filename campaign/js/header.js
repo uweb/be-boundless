@@ -63,10 +63,10 @@ $(function(){
 		
 		if(give.innerHTML === 'Give now'){
 			give.innerHTML = 'Close';
-			close.className += 'hide';
+			close.className += ' hide';
 		} else {
 			give.innerHTML = 'Give now';
-			close.className.replace(/\bhide\b/,'');
+			close.className = close.className.replace('hide','');
 		}
 
 		$('body').toggleClass('give-modal-active');
