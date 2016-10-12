@@ -5,11 +5,13 @@
       <div class="container">    
         <div class="row">
           <h1><?php the_title(); ?></h1>
+          <div class="explore-content">
           <?php 
               while ( have_posts() ) : the_post(); 
                 the_content();
               endwhile;
            ?>
+           </div>
            <div class="circle-button-container">
              <div class="fyp-filter-triggers" data-name="fyp-causes-filters"><a href="#"><div class="flip-container">
                <div class="circle-icon front"><p class="fyp-filter-icon fyp-heart"></p></div>

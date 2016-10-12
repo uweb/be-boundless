@@ -39,7 +39,15 @@
       }
   }
 
-  ul.footer-links li a,
+  ul.footer-links li a {
+    color: #FFFFFF;
+    &:focus,
+    &:active,
+    &:hover {
+      color: @lightgold;
+      text-decoration: underline;
+    }
+  }
   p.dateMarker {
     color: #FFFFFF;
   }
@@ -151,7 +159,7 @@ button#empty {
 
   .row {
     height: auto;
-    padding-left: 40px;
+    //padding-left: 40px;
     h1:after {
       pointer-events: none;
     }
@@ -192,7 +200,7 @@ button#empty {
     &:active,
     &:focus  {
       svg g line{
-        stroke: #b7a57a;
+        stroke: @lightgold;
       }
       
     }
@@ -215,6 +223,7 @@ button#empty {
       h1 {   
         font-size: 65px; 
         margin-top: 80px;
+        text-align: center;
       }
       .udub-slant {
         margin: 0;
@@ -225,9 +234,15 @@ button#empty {
         margin: 20px 0 13px 0;
         line-height: 1.5;
       }
+      div.explore-content p {
+        text-align: center;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
       .circle-button-container {
-        width: 85%;
-        margin: 50px 0 0 -70px;
+        width: 100%;
+        margin: 50px 0 0 0;
         display: inline-block;
         div.flip-container {
           width: 175px;
@@ -284,7 +299,7 @@ button#empty {
               left: 0;
               right: 0;
               bottom: 0;
-              background-color: #4b2e83;
+              background-color: @lightgold;
               p.fyp-heart:before {
                 background: url(../assets/heart-white.png) no-repeat 0 0;
                 background-size: 100px 100px;
@@ -355,8 +370,8 @@ button#empty {
                   &:hover,
                   &:active,
                   &:focus  {
-                    color: #4b2e83;
-                    text-shadow: none;
+                    color: @lightgold;
+                    //text-shadow: none;
                     text-decoration: underline;
                   }
                 }
@@ -369,7 +384,7 @@ button#empty {
           a:active,
           a:focus  {
             p.circle-text {
-              color: #4b2e83;
+              color: @lightgold;
               text-shadow: none;
             }
           }
@@ -378,6 +393,7 @@ button#empty {
 
       .fyp-search-wrapper {
         vertical-align: bottom;
+        text-align: center;
         .fyp-search {
           .fyp-search-label {
             color: #FFF;
@@ -1588,6 +1604,8 @@ button#empty {
     //padding-bottom: 242px;
     .row {
       padding-left: 0;
+      margin-right: auto;
+      margin-left: auto;
       h1 {
         font-size: 40px;
       }
