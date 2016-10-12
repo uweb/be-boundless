@@ -292,13 +292,8 @@ $(window).load(function(){
       
       if($('#give-now')[0].innerHTML === 'Give now'){
         $('#give-now')[0].innerHTML = 'Close';
-        $('#empty').removeClass('active');
-        $('#give-now').on('click', function(e){
-          $('#empty').addClass('active');
-        });
-      } else {
-        $('#give-now')[0].innerHTML = 'Give now';
-      }
+        $('#empty').addClass('hide');
+      } 
 
       $('body').toggleClass('give-modal-active');
 

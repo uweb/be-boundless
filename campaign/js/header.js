@@ -10,7 +10,8 @@ $(function(){
 		campExpand 	= document.getElementById('campaign-expand'),
 		thin		= document.getElementsByClassName('thin')[0],
 		thick		= document.getElementsByClassName('thick')[0],
-		give 		= document.getElementById('give-now')
+		give 		= document.getElementById('give-now'),
+		close 		= document.getElementById('empty')
 
 	document.getElementById('campaign-expand').addEventListener('click', function(){
 		bodyEl.toggle('active-header')
@@ -62,8 +63,10 @@ $(function(){
 		
 		if(give.innerHTML === 'Give now'){
 			give.innerHTML = 'Close';
+			close.className += 'hide';
 		} else {
 			give.innerHTML = 'Give now';
+			close.className.replace(/\bhide\b/,'');
 		}
 
 		$('body').toggleClass('give-modal-active');
