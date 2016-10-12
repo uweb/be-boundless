@@ -1,6 +1,5 @@
 $(window).load(function(){    
-    //loading testgit p
-    console.log('test 2 w/ xml')
+
     // $( function() {
 
       var qsRegex,
@@ -281,20 +280,19 @@ $(window).load(function(){
       e.preventDefault(); 
       var allocCode = $( this ).attr('data-code');
 
-      if(isEmpty($('#give-iframe'))) {
-        $('<iframe>', {
-          src: 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?source_typ=3&source=' + allocCode + '&frame_buster=false',
-          frameborder: 0,
-          width: '100%',
-          height: '100%',
-        }).appendTo('#give-iframe');
-      }
+      $('#give-iframe').empty();
+
+      $('<iframe>', {
+        src: 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?source_typ=3&source=' + allocCode + '&frame_buster=false',
+        frameborder: 0,
+        width: '100%',
+        height: '100%',
+      }).appendTo('#give-iframe');
       
       if($('#give-now')[0].innerHTML === 'Give now'){
         $('#give-now')[0].innerHTML = 'Close';
-      } else {
-        $('#give-now')[0].innerHTML = 'Give now';
-      }
+        $('#empty').addClass(' hide');
+      } 
 
       $('body').toggleClass('give-modal-active');
 
