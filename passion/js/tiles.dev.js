@@ -51,7 +51,6 @@ $(window).load(function(){
            }
          });
          $('#empty').addClass('active');
-         $('#empty').addClass('active-filter');
       } else {
         $('#empty').trigger('click'); 
       }
@@ -238,12 +237,18 @@ $(window).load(function(){
       var filterValue = $( this ).attr('data-filter');
       //$('.module-hero-image').addClass('hide');
       $('#empty').addClass('active');
-      $('#empty').addClass('active-filter');
       //$('.fyp-close-button-gradient').addClass('show');
       $grid.isotope({ filter: '.' + filterValue + ':not(.unit-small)' });
       $()
       $('html, body').animate({
             scrollTop: ( $(".fyp-search").offset().top)// - parseInt( $("#main-content").css("margin-top").replace("px", "") ) )
+          }, 900);
+   })
+
+   $('#fyp-search-button').on('click', function(e){
+    e.preventDefault();
+    $('html, body').animate({
+            scrollTop: ( $("#fyp-search-button").offset().top)
           }, 900);
    })
 
@@ -253,21 +258,11 @@ $(window).load(function(){
             scrollTop: $('body').offset().top
           }, 900);
 
-      if($(this).hasClass('active-filter')){
-        $('#empty').removeClass('active');
-        $('#empty').removeClass('active-filter');
-        $('.grid-item.search-item').remove();
-        $('.grid-item.search-more').removeClass('open');
-        $grid.isotope({ filter: '.featured' });
-      } 
-
-      if($(this).hasClass('active-give')){
-        $('#empty').addClass('active-filter');
-        $('#empty').removeClass('active-give');
-        $('.fyp-give-widget-container').remove();
-        $('.fyp-give-widget-lightbox').remove();
-        //scrollIt($lastLocation);
-      } 
+      $('#empty').removeClass('active');
+      $('.grid-item.search-item').remove();
+      $('.grid-item.search-more').removeClass('open');
+      $('#searcher').val("");
+      $grid.isotope({ filter: '.featured' }); 
 
    })
 
@@ -394,8 +389,6 @@ $(window).load(function(){
                 e.preventDefault();
                 //$lastLocation = e.offset().top;
                 var allocCode = $( this ).attr('data-code');
-                $('#empty').addClass('active-give');
-                $('#empty').removeClass('active-filter');
                 $('body').prepend('<div class="fyp-give-widget-lightbox"></div>' +
                                   '<div id="fyp-give-widget-container" class="fyp-give-widget-container">' +
                                     '<iframe src="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?source_typ=3&source=' + allocCode + '&frame_buster=false" title="Giving at the UW" id="UWFOnlineGivingForm" frameborder="0" scrolling="yes" onload="try{document.domain=\'washington.edu\'}catch(e){}"></iframe>' +
