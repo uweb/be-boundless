@@ -5,9 +5,9 @@
 <div class="intro" id="intro-slide">
   <div class="intro-body">
       <div class="row">
-        <div class="col-md-6 col-md-offset-1 col-xs-10 col-xs-offset-1 col-xs-offset-1 col-lg-offset-1" id='intro-text'>
+        <div class="col-md-6 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-offset-1" id='intro-text'>
             <h1><span><span>Helping the body </span></span><span><span>heal, feel and </span></span><span><span>move again</span></span> </h1>
-            <p>From the Ability &amp; Innovation Lab to the Center for Sensorimotor Neural Engineering, the <a href="https://www.engr.washington.edu/">College of Engineering</a> is innovating novel devices to help people of all abilities live out their dreams.</p>
+            <p>From the Ability &amp; Innovation Lab to the Center for Sensorimotor Neural Engineering, the College of Engineering is innovating novel devices to help people of all abilities live out their dreams.</p>
         </div>
     </div>
   </div>
@@ -72,7 +72,7 @@
              <source class="mp4" type="video/mp4">
              <source class="webm" type="video/webm">
          </video>
-         <p class="gold-quote headline-gold">With Jayna, we’ve been working on a simple, mechanical solution that’s easy to use in daily life, and we’re really excited by the future opportunities in neural engineering with our partners at the CSNE.</span></p>
+         <p class="gold-quote headline-gold">With Jayna, we’ve been working on a simple, mechanical solution that’s easy to use in daily life, and we’re really excited by the future opportunities in neural engineering with our partners at the CSNE.<span>- Kat Steele</span></p>
          <p></p>
        </section>
 
@@ -133,7 +133,7 @@
            <div class="container">
                <div class="row">
                    <div class="col-md-10 col-md-offset-1 copy padless marginless">
-                      <p> Housed in the College of Engineering, the CSNE is a cross-disciplinary hub that brings together medicine and engineering to develop novel solutions for conditions that range from stroke to spinal cord injury. It’s an ecosystem of innovation centered on a shared mission: empowering people with disabilities through connecting brains with technology.</p> 
+                      <p> Housed in the <a href="https://www.engr.washington.edu/">College of Engineering</a>, the CSNE is a cross-disciplinary hub that brings together medicine and engineering to develop novel solutions for conditions that range from stroke to spinal cord injury. It’s an ecosystem of innovation centered on a shared mission: empowering people with disabilities through connecting brains with technology.</p> 
 
                       <p>“The CSNE has become the catalyst for almost seamless collaboration between neuroscientists, neurosurgeons, neuroethicists and engineers,” says Rao. “Together, we’re paving the way for next-generation neurotechnologies that will help the body heal, feel and move again.”</p>
                       
