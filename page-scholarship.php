@@ -36,13 +36,18 @@
               <div class="col-md-10 col-md-offset-1 copy">
                 
                   <p class="headline-gold center">What is the student experience?<br/> Well, that depends on who you ask. </p>
-                  
-                  <p>For some, it’s walking up a creek in chest-high waders, studying salmon and bear interactions in the field, where they happen. A living laboratory.  </p>
-                  <p>For others, it’s spending spring break volunteering in public schools in rural and tribal communities across Washington, creating a pipeline of possibility for the next generation of Huskies. </p>
-                  <p>It’s hiking Mt. Rainier. It’s throwing the winning touchdown. It’s scoring the solo, engineering a 3-D printed prosthetic hand, interning at a local company with a global reach.  </p>
-                  <p>It’s being immersed in a city of self-starters, adventurers and entrepreneurs. It’s being caffeinated, curious, connected — with the Pacific Northwest in your backyard. </p>
-                  <p>It’s discovering your passion; your place in the world — and it’s knowing the student experience wouldn’t be possible without a community of supporters rallying to help you get to, through, and beyond the UW. </p>
-                  
+                   
+                  <p>For some, it’s installing solar panels on residence hall roofs, creating a greener campus — and world — one project at a time.</p>
+
+<p>For others, it’s putting on rocketry showcases for students across the Pacific Northwest, encouraging a curiosity for earth and space sciences in the next generation of Huskies.</p>
+
+<p>It’s hosting a podcast. It’s playing the halftime show. It’s leading the Black Student Union, reporting the stories that need to be shared, walking the halls of the White House. Conducting forestry research in the forest — your own living laboratory.  </p>
+
+<p>It’s being immersed in a city of self-starters, adventurers and entrepreneurs. It’s being caffeinated, curious and connected, with the Pacific Northwest in your backyard.</p>
+
+<p>It’s discovering your passion; your place in the world — and it’s knowing the student experience wouldn’t be possible without scholarships and a community of supporters rallying to help you get to, through, and beyond the UW. </p>
+
+
               </div> 
         </div> 
       </div>   
@@ -474,6 +479,7 @@
           <ul>
             <li>Applied physics</li>
             <li>Earth and space sciences</li>
+            <li>Astronomy</li>
           </ul>
         </div>  
         <div>
