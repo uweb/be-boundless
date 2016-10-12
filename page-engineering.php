@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col-md-6 col-md-offset-1 col-xs-10 col-xs-offset-1 col-xs-offset-1 col-lg-offset-1" id='intro-text'>
             <h1><span><span>Helping the body </span></span><span><span>heal, feel and </span></span><span><span>move again</span></span> </h1>
-            <p>From the Ability &amp; Innovation Lab to the Center for Sensorimotor Neural Engineering, the College of Engineering is innovating novel devices to help people of all abilities live out their dreams.</p>
+            <p>From the Ability &amp; Innovation Lab to the Center for Sensorimotor Neural Engineering, the <a href="https://www.engr.washington.edu/">College of Engineering</a> is innovating novel devices to help people of all abilities live out their dreams.</p>
         </div>
     </div>
   </div>
@@ -58,9 +58,9 @@
          <div class="container">
              <div class="row">
                  <div class="col-md-10 col-md-offset-1 copy padless marginless">
-                 <p>The diagnosis was hemimegalencephaly, a rare condition in which one half of the brain develops abnormally larger than the other. The seizures, a symptom of the condition, lasted minutes, consuming Jayna’s entire being. Medication didn’t work. The only answer, at 28 days old, was a hemispherectomy — performed on the youngest patient in the world at the time — by Seattle Children’s neurosurgeon and Center for Sensorimotor Neural Engineering (CSNE) member Dr. Jeff Ojemann. The surgery to remove the right hemisphere of her brain was successful, but the outlook was dim: doctors told Jayna’s family she’d likely never walk or talk. That they’d have only a few years with her, at best. </p>
+                 <p>The diagnosis was hemimegalencephaly, a rare condition in which one half of the brain develops abnormally larger than the other. The seizures, a symptom of the condition, lasted minutes, consuming Jayna’s entire being. Medication didn’t work. The only answer, at 28 days old, was a hemispherectomy — performed on the youngest patient in the world at the time — by <a href="http://www.seattlechildrens.org">Seattle Children’s</a> neurosurgeon and <a href="http://www.csne-erc.org">Center for Sensorimotor Neural Engineering</a> (CSNE) member Dr. Jeff Ojemann. The surgery to remove the right hemisphere of her brain was successful, but the outlook was dim: doctors told Jayna’s family she’d likely never walk or talk. That they’d have only a few years with her, at best. </p>
 
-                 <p>Fast-forward a decade, and Jayna — who lives life with partial blindness and hemiplegia, a weakness of the left side of her body — is the happiest walking, talking 10-year-old you’ll ever meet. And, as a participant in the College of Engineering’s Ability &amp; Innovation Lab pioneered by assistant professor of mechanical engineering and CSNE member Kat Steele, Jayna is working with mechanical engineering students to design body-powered orthoses to enrich not just her own life, but the lives of others. </p>
+                 <p>Fast-forward a decade, and Jayna — who lives life with partial blindness and hemiplegia, a weakness of the left side of her body — is the happiest walking, talking 10-year-old you’ll ever meet. And, as a participant in the College of Engineering’s <a href="https://depts.washington.edu/uwsteele/">Ability &amp; Innovation Lab</a> pioneered by assistant professor of <a href="https://www.me.washington.edu/">mechanical engineering</a> and CSNE member Kat Steele, Jayna is working with mechanical engineering students to design body-powered orthoses to enrich not just her own life, but the lives of others. </p>
                  </div> 
            </div> 
          </div>   
@@ -72,7 +72,7 @@
              <source class="mp4" type="video/mp4">
              <source class="webm" type="video/webm">
          </video>
-         <p class="gold-quote headline-gold">With Jayna, we’ve been working on a simple, mechanical solution that’s easy to use in daily life</span></p>
+         <p class="gold-quote headline-gold">With Jayna, we’ve been working on a simple, mechanical solution that’s easy to use in daily life, and we’re really excited by the future opportunities in neural engineering with our partners at the CSNE.</span></p>
          <p></p>
        </section>
 
@@ -141,6 +141,9 @@
                       
                       <p>The brain is the control center for the nervous system, firing neurons full of information and commands through our bodies. At the CSNE, researchers are unpacking what exactly the intent to move looks like by recording brain activity through electrocorticography (ECoG), a monitoring practice in which a grid of electrodes is placed directly on the surface of the brain. </p>     
 
+                      <p>The participants in the CSNE’s ECoG studies are epilepsy patients who have volunteered to assist the CSNE with its research (ECoG is the go-to approach for mapping the origin of seizures) during their one- to two- week hospital stay. There, CSNE researchers supervised by Dr. Ojemann connect the signals measured directly from the brain to a computer translator of sorts and, without physically lifting a finger, the participants practice thinking of controlling a cursor on a screen, an avatar hand, or even a robotic arm. The researchers ask the participant to imagine completing a task — grabbing that cup of coffee, perhaps — then use those signals to enable the participant to control the electronic limb with their brain. </p>
+
+
                    </div> 
              </div> 
            </div>   
@@ -168,14 +171,15 @@
                <div class="row">
                    <div class="col-md-10 col-md-offset-1 copy padless marginless">
 
-<p>The participants in the CSNE’s ECoG studies are epilepsy patients who have volunteered to assist the CSNE with its research (ECoG is the go-to approach for mapping the origin of seizures) during their one- to two- week hospital stay. There, CSNE researchers supervised by Dr. Ojemann connect the signals measured directly from the brain to a computer translator of sorts and, without physically lifting a finger, the participants practice thinking of controlling a cursor on a screen, an avatar hand, or even a robotic arm. The researchers ask the participant to imagine completing a task — grabbing that cup of coffee, perhaps — then use those signals to enable the participant to control the electronic limb with their brain. </p>
-
 <p>Researchers in Dr. Ojemann’s lab are also working with epilepsy patients to explore ways of providing sensory feedback through direct cortical stimulation. In these studies, patients learn to open and close their hand to varying degrees according to feedback they get through the ECoG grid. </p>
 
 <p>“In the future, for someone like Jayna who may not have sensation in parts of the left side of her body, this research holds the potential to restore function. Even if parts of the brain aren’t there, we want to take advantage of the brain’s ability to learn and use other available parts of the brain — and the deep structures within it — to receive sensory feedback,” says Ojemann. </p>
 
 <p>This feedback could mean helping patients who use a robotic limb not just open and close their palm, but apply the right amount of pressure to complete various tasks. </p>
 
+<p>“Now that we know we can extract activity from the brain and control avatar hands and robotic arms and receive sensory feedback, what happens if we want to control our own paralyzed limb?” poses Moritz. “We can electrically stimulate the spinal cord below the level of the injury using an implantable device, a type of brain-computer interface (BCI).” </p>
+
+<p>The concept is this: the brain activity is recorded, decoded and an algorithm is created. That information is then used to program the implantable BCI — essentially, chips and wires that acts as a pseudo nervous system, creating a bridge to reconnect the brain to the spinal cord below the injury. The device listens to the brain, and then says ‘Oh, the person wants to do this — let’s help them,’” says Moritz. “We’re trying to make the algorithms smarter, to allow the device learn in real time. Just as our brain or spinal cord would learn with practice, so would this little implant.” </p>
 
                    </div> 
              </div> 
@@ -211,10 +215,6 @@
                <div class="row">
                    <div class="col-md-10 col-md-offset-1 copy padless marginless">
 
-
-<p>“Now that we know we can extract activity from the brain and control avatar hands and robotic arms and receive sensory feedback, what happens if we want to control our own paralyzed limb?” poses Moritz. “We can electrically stimulate the spinal cord below the level of the injury using an implantable device, a type of brain-computer interface (BCI).” </p>
-
-<p>The concept is this: the brain activity is recorded, decoded and an algorithm is created. That information is then used to program the implantable BCI — essentially, chips and wires that acts as a pseudo nervous system, creating a bridge to reconnect the brain to the spinal cord below the injury. The device listens to the brain, and then says ‘Oh, the person wants to do this — let’s help them,’” says Moritz. “We’re trying to make the algorithms smarter, to allow the device learn in real time. Just as our brain or spinal cord would learn with practice, so would this little implant.” </p>
 
 <p>Another forward-thinking goal at the core of the CSNE is not to just stop at BCI-driven reanimation, but actually help brain and spinal circuits to heal themselves, bringing dormant limbs to life. </p>
 

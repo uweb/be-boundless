@@ -74,6 +74,7 @@
             </div>
         </div>
       </div>
+      <div class="explore-footer"><?php get_footer('campaign') ?></div>
     </div>
 
     <button id="empty">
@@ -383,7 +384,7 @@
 </div>
 
 <!-- ////////////////// -->
-<?php get_footer('campaign') ?>
+
 
 </body>
 <footer>

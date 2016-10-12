@@ -39,17 +39,26 @@
       }
   }
 
-  ul.footer-links li a {
-    color: #FFFFFF;
-    &:focus,
-    &:active,
-    &:hover {
+   
+  div.explore-footer {
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    bottom: 0;
+    ul.footer-links {
+      padding: 0;
+    }
+    ul.footer-links li a ,
+    p.dateMarker {
+      color: #FFFFFF;
+    }
+    ul.footer-links li a:focus,
+    ul.footer-links li a:active,
+    ul.footer-links li a:hover {
       color: @lightgold;
       text-decoration: underline;
     }
-  }
-  p.dateMarker {
-    color: #FFFFFF;
   }
 
   // Dynamic close button
@@ -210,6 +219,7 @@ button#empty {
   }
 
   .module-hero-image {
+      position: relative;
       background-position: center bottom;
       margin-top: 0;
       height: auto;
@@ -1581,8 +1591,9 @@ button#empty {
   //   }
   // }
 
-    
-        
+    #passion div.explore-footer {
+      margin-left: -20px;
+    }  
     .module-hero-image {
       height: auto;
       padding: 40px 20px 50px 20px;
@@ -1601,7 +1612,7 @@ button#empty {
   }
 
   #passion .module-hero-image {
-    //padding-bottom: 242px;
+    //padding-bottom: 130px;
     .row {
       padding-left: 0;
       margin-right: auto;
@@ -1634,8 +1645,10 @@ button#empty {
         column-count: 2;
       }
     }
+    div.explore-footer {
+      bottom: 20px;
+    }  
   }
-
 
 
 
