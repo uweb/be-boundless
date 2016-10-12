@@ -222,13 +222,21 @@ $(window).load(function(){
    //  });
    //  
    
-   
+   // $('.module-hero-image').on('click', function(e){
+   //    $('ul.fyp-filters.show').removeClass('show');
+   //    $('#'+e.currentTarget.dataset.name).addClass('show');
+   //    $('.flip-container.active').removeClass('active');
+   // })
+
    //FYP - Reveal filters under categories
    $('.fyp-filter-triggers').on('click', function(e){
       e.preventDefault();
       $('hr').addClass('reduce');
       $('ul.fyp-filters.show').removeClass('show');
       $('#'+e.currentTarget.dataset.name).addClass('show');
+      $('.flip-container.active').removeClass('active');
+      $( e.currentTarget ).find('.flip-container').addClass('active');
+      //console.log( $(e.currentTarget ' flip-container') );
    })
 
    //FYP - Click filter sorts the boxes

@@ -14,16 +14,22 @@
            </div>
            <div class="circle-button-container">
              <div class="fyp-filter-triggers" data-name="fyp-causes-filters"><a href="#"><div class="flip-container">
+              <div class="flipper" role="button" aria-expanded="false">
                <div class="circle-icon front"><p class="fyp-filter-icon fyp-heart"></p></div>
                <div class="circle-icon back"><p class="fyp-filter-icon fyp-heart"></p></div>
+              </div>
              </div><p class="circle-text">Causes</p></a></div>
              <div class="fyp-filter-triggers" data-name="fyp-units-filters"><a href="#"><div class="flip-container">
+              <div class="flipper" role="button" aria-expanded="false">
                <div class="circle-icon front"><p class="fyp-filter-icon fyp-school"></p></div>
                <div class="circle-icon back"><p class="fyp-filter-icon fyp-school"></p></div>
+              </div>
              </div><p class="circle-text">Schools, colleges, campuses, other key areas</p></a></div>
              <div class="fyp-filter-triggers" data-name="fyp-purposes-filters"><a href="#"><div class="flip-container">
+              <div class="flipper" role="button" aria-expanded="false">
                <div class="circle-icon front"><p class="fyp-filter-icon fyp-cert"></p></div>
                <div class="circle-icon back"><p class="fyp-filter-icon fyp-cert"></p></div>
+              </div>
              </div><p class="circle-text">UW Priorities</p></a></div>
              <hr align="left">
              <div id="fyp-filters-box" class="fyp-filters-box">

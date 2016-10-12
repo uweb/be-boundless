@@ -392,6 +392,9 @@
   width: 175px;
   position: relative;
 }
+#passion .module-hero-image .circle-button-container div.flip-container .flipper {
+  width: 100%;
+}
 #passion .module-hero-image .circle-button-container div {
   width: 32%;
   display: inline-block;
@@ -1498,15 +1501,15 @@
 #passion .grid-item .front .banner {
   bottom: 0;
   position: absolute;
-  padding: 8px 0 5px 8px;
+  padding: 10px 45px 10px 12px;
   width: 100%;
-  height: 40px;
   color: white;
   text-transform: uppercase;
   font-family: "Encode Sans Compressed", sans-serif;
   font-weight: 900;
   font-size: 12px;
   letter-spacing: .05em;
+  line-height: 1.3;
 }
 #passion .grid-item .front .banner .short-desc {
   display: none;
@@ -1514,7 +1517,7 @@
 #passion .grid-item .front .banner:after {
   content: "";
   background: url(../assets/bar.svg) no-repeat top right;
-  margin-top: -2px;
+  margin-top: 0;
   display: block;
   width: 75px;
   height: 3px;
@@ -1900,14 +1903,16 @@
 /*  UPDATED! flip the pane when hovered */
 .flip-container:not(.open):hover .back,
 .flip-container:not(.open):focus .back,
-.flip-container:not(.open):active .back {
+.flip-container:not(.open):active .back,
+.flip-container:not(.open).active .back {
   -webkit-transform: rotateY(0deg);
   -ms-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
 .flip-container:not(.open):hover .front,
 .flip-container:not(.open):focus .front,
-.flip-container:not(.open):active .front {
+.flip-container:not(.open):active .front,
+.flip-container:not(.open).active .front {
   -webkit-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg);

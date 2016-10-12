@@ -257,6 +257,9 @@ button#empty {
         div.flip-container {
           width: 175px;
           position: relative;
+          .flipper {
+            width: 100%;
+          }
         }
         div{
           width: 32%;
@@ -1385,22 +1388,23 @@ button#empty {
       .banner {
         bottom: 0;
         position: absolute;
-        padding: 8px 0 5px 8px;
+        padding: 10px 45px 10px 12px;
         width: 100%;
-        height: 40px;
+        //height: 40px;
         color: white;
         text-transform: uppercase;
         font-family: "Encode Sans Compressed", sans-serif;
         font-weight: 900;
         font-size: 12px;
         letter-spacing: .05em;
+        line-height: 1.3;
         .short-desc {
           display: none;
         }
         &:after {
               content: "";
               background: url(../assets/bar.svg) no-repeat top right;
-              margin-top: -2px;
+              margin-top: 0;
               display: block;
               width: 75px;
               height: 3px;
@@ -1850,14 +1854,16 @@ button#empty {
 .flip-container:not(.open) {
   &:hover .back,
   &:focus .back,
-  &:active .back {
+  &:active .back,
+  &.active .back {
     .rotateY(0deg);
   }
 }
 .flip-container:not(.open) {
   &:hover .front,
   &:focus .front,
-  &:active .front {
+  &:active .front,
+  &.active .front {
     .rotateY(180deg);
   }
 }
