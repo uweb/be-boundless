@@ -1,5 +1,5 @@
 $(window).load(function(){    
-  
+  console.log('test')
     // $( function() {
 
       var qsRegex,
