@@ -1,6 +1,6 @@
 $(window).load(function(){    
     //loading testgit p
-    console.log('test 3 w/ xml')
+    console.log('test 4 payload')
     // $( function() {
 
       var qsRegex,
@@ -292,6 +292,10 @@ $(window).load(function(){
       
       if($('#give-now')[0].innerHTML === 'Give now'){
         $('#give-now')[0].innerHTML = 'Close';
+        $('#empty').removeClass('active');
+        $('#give-now').on('click', function(e){
+          $('#empty').addClass('active');
+        });
       } else {
         $('#give-now')[0].innerHTML = 'Give now';
       }
