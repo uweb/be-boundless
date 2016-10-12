@@ -184,6 +184,10 @@
 #passion .fyp-button:hover .fyp-link {
   color: #FFF;
 }
+#passion ul.footer-links li a,
+#passion p.dateMarker {
+  color: #FFFFFF;
+}
 #passion button#empty {
   position: fixed;
   border: none;
@@ -333,6 +337,7 @@
   display: block;
 }
 #passion .module-hero-image {
+  background-position: center bottom;
   margin-top: 0;
   height: auto;
   min-height: 1075px;

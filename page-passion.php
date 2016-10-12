@@ -381,6 +381,7 @@
 </div>
 
 <!-- ////////////////// -->
+<?php get_footer('campaign') ?>
 
 </body>
 <footer>
