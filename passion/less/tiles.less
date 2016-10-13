@@ -70,7 +70,7 @@ button#empty {
     width: 65px;
     padding: 10px;
     background-color: white;
-    z-index: 20;
+    z-index: 10;
     text-align: left;
     text-transform: capitalize;
     line-height: 0;
@@ -276,13 +276,13 @@ button#empty {
               position: absolute;
               bottom: 10px;
               right: 10px;
-              height: 30px;
-              width: 30px;
+              height: 32px;
+              width: 32px;
               p.ic-custom {
                 margin: 0;
                 padding: 0;
                 &:before {
-                  font-size: 36px;
+                  font-size: 32px;
                   margin-top: -8px;
                   content: "+";
                 }
@@ -326,6 +326,7 @@ button#empty {
               }
               div.plus{
                 background-color: @purple;
+                border: 3px solid white;
                 .ic-custom:before{
                   color: #FFF;
                 }
@@ -353,6 +354,7 @@ button#empty {
               }
               div.plus{
                 background-color: #FFF;
+                border: 3px solid @lightgold;
                 .ic-custom:before{
                   color: @lightgold;
                   text-shadow: none;
@@ -1676,9 +1678,10 @@ button#empty {
               width: 20px;
               right: 8px;
               bottom: 8px;
+              border: 2px;
               p.ic-custom:before {
-                font-size: 26px;
-                margin-top: -6px;
+                font-size: 16px;
+                margin-top: -3px;
               }
             }
           }
@@ -1838,8 +1841,8 @@ button#empty {
                 right: 7px;
                 bottom: 7px;
                 p.ic-custom:before {
-                  font-size: 20px;
-                  margin-top: -6px;
+                  font-size: 12px;
+                  margin-top: -3px;
                 }
               } 
             }

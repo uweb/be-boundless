@@ -279,17 +279,6 @@ $(window).load(function(){
     return !$.trim(el.html())
   }
 
-  //var close     = document.getElementById('empty');
-  //var give      = document.getElementById('give-now');
-  $('#give-now').on('click', function(e){ 
-    if($('#give-now').innerHTML === 'Give now'){
-      $('#empty').addClass('hide');
-    } else {
-      $('#empty').removeClass('hide');
-    }
-
-  })
-
    $('.give-link').on('click', function(e){
       e.preventDefault(); 
       var allocCode = $( this ).attr('data-code');
@@ -305,37 +294,11 @@ $(window).load(function(){
       
       if($('#give-now')[0].innerHTML === 'Give now'){
         $('#give-now')[0].innerHTML = 'Close';
-        $('#empty').addClass(' hide');
       } 
 
       $('body').toggleClass('give-modal-active');
-
-      // e.preventDefault();
-      // //$lastLocation = $(this).offset().top;
-      // var allocCode = $( this ).attr('data-code');
-      // $('#empty').addClass('active-give');
-      // $('#empty').removeClass('active-filter');
-      // $('body').prepend('<div class="fyp-give-widget-lightbox"></div>' +
-      //                   '<div id="fyp-give-widget-container" class="fyp-give-widget-container">' +
-      //                     '<iframe src="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?source_typ=3&source=' + allocCode + '&frame_buster=false" title="Giving at the UW" id="UWFOnlineGivingForm" frameborder="0" scrolling="yes" onload="try{document.domain=\'washington.edu\'}catch(e){}"></iframe>' +
-      //                   '</div>');
-
-      // $('html, body').animate({
-      //     scrollTop: ( $("#fyp-give-widget-container").offset().top - $("#campaign-header thick").outerHeight() )
-      //   }, 900);
    })
 
-   // // $('#empty.active-give').on('click', function(e){
-   //    e.preventDefault();
-   //    $('html, body').animate({
-   //        scrollTop: $('body').offset().top
-   //      }, 900);
-   //    $('#empty.active-give').addClass('active-filter');
-   //    $('#empty.active-give').removeClass('active-give');
-   //    $('.fyp-give-widget-container').remove();
-   //    $('.fyp-give-widget-lightbox').remove();
-   //    //$('.FYP-give-widget-exit').remove();
-   // })
 
    $('.unit-small').on('click', function(e){
       e.preventDefault();
