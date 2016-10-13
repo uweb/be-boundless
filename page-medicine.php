@@ -162,8 +162,8 @@
                           <div class="col-md-10 col-md-offset-1 copy">
                               
                             <h2>AT THE HEART OF THE CURE</h2>
-                            <p>Chuck Murry, M.D., Ph.D., shows off a tiny white scar on his forearm, left over from a biopsy. The cells he had removed are still alive, but they’re no longer skin cells.</p>
-                            <p><b>“I had my own skin turned into stem cells,” he says. “It’s now three-dimensional heart muscle that’s beating in a dish.”</b></p>
+                            <p>Chuck Murry shows off a tiny white scar on his forearm, left over from a biopsy. The cells he had removed are still alive, but they’re no longer skin cells.</p>
+                            <p>“I had my own skin turned into stem cells,” he says. “It’s now three-dimensional heart muscle that’s beating in a dish.”</p>
                             <p>This literally transformative work isn’t a mere exercise. Dr. Murry and researchers in his lab are using stem cells to grow and test heart tissue with the aim of repairing damaged hearts. “And once we get this sorted out for the heart,” he says, “we’d like to do it for other organs.”</p>
                             <div class="callout">
                               <h3>ISCRM <span>BY THE NUMBERS</span></h3>
@@ -174,16 +174,17 @@
                                 <li>Publications by core faculty in 2015–16: <span>142</span></li>
                               </ul>
                             </div>
-                            <p>At the Institute of Stem Cell and Regenerative Medicine (ISCRM), researchers like Dr. Murry are pioneering ways to derive stem cells from skin, blood and even urine samples. These powerful cells have the astounding potential to create next-generation therapies for maladies like heart disease, Alzheimer’s, rheumatoid arthritis, vision loss and cancer.</p>                            
-                            <p>ISCRM was founded by Dr. Murry, UW pharmacologist Randall Moon, Ph.D., and UW hematologist Tony Blau, M.D., in 2006. Dr. Murry describes the institute as the glue that promotes synergy among all the different types of expertise needed to advance our knowledge — from developmental biology to imaging to pathology.</p>
+
+                            <p>At ISCRM, researchers like Dr. Murry are pioneering ways to derive stem cells from skin, blood and even urine samples. These powerful cells have the astounding potential to create next-generation therapies for maladies like heart disease, Alzheimer’s, rheumatoid arthritis, vision loss and cancer.</p>
+                            <p>ISCRM was founded by Dr. Murry, UW pharmacologist Randall Moon, Ph.D., and UW hematologist Tony Blau, M.D., in 2006. Dr. Murry describes the institute as the glue that promotes synergy among all the different types of expertise needed — including developmental biology, imaging, pathology and much more — to advance our knowledge.</p>
                             <p>And, in just a decade, doctors at ISCRM have made significant progress — from developing a potential gene therapy for muscular dystrophy, to using patient-specific stem cells to find treatments for a condition that affects vision. </p>
                             <p>The future of ISCRM holds great possibility, and its success to date has hinged upon generous philanthropic support.</p>
                             <p>“It couldn’t be simpler,” says Dr. Murry. “Without the vision and generosity of our benefactors, there would be no stem cell institute.”</p>
-
                           </div> 
                     </div> 
                   </div>   
                 </section>
+
 
 
 
