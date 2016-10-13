@@ -390,7 +390,28 @@ header {
 			}
 		}
 	}
-
+	
+	@media only screen and (min-width : 768px ) and (max-width : 860px) {
+		.thick ul {
+		    li {
+		    	&:nth-child(1) a,
+		    	&:nth-child(2) a,
+		    	&:nth-child(3) a {
+		    		&:after {
+		    			right: 1px;
+		    		}
+		    	}
+		    	&:nth-child(5) button {
+		    		padding: 10px 20px;
+		    	}
+		    	a {
+		    		
+		    		padding: 0 10px 0 0;
+		    		font-size: 14px;
+		    	}
+		    }
+		}
+	}
 	@media(max-width:768px) {
 		button#campaign-expand {
 			top: 2px;
