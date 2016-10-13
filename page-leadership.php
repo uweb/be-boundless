@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-md-12">
               <img id="boundless-logo" src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/be-boundless.png' ?>" alt="Be boundless">
-              <p>The University of Washington is undertaking the most ambitious campaign in our history. Our goals center on transforming the student experience, driving the public good,  expanding our impact and empowering innovation. By supporting the campaign, you can help us unleash the potential of our students, faculty, programs and partnerships to make a  difference for Washington and the world. </p>
+              <p>The University of Washington is undertaking the most ambitious campaign in our history. Our goals center on transforming the student experience, driving the public good,  expanding our impact and empowering innovation. By supporting the campaign, you can help unleash the potential of our students, faculty, programs and partnerships to make a  difference for Washington and the world. </p>
             </div>
           </div>
       </div>
@@ -20,13 +20,7 @@
 
              <h2>About the campaign</h2>
 
-              <p class="int">What you care about can change the world. When you give in support of your passions at the UW, you’re providing students and faculty with the resources they need to learn, collaborate and research in one of the most innovative places on earth. Supporting what you care about through the UW will result in transformational impact on our world. </p>
-
-              <p>When you support the UW, there are many ways you can make the world a better place. You can build resilient communities, sustain our environment, cure disease, ensure healthy futures for all, create a just and equitable society, enrich arts and culture, unleash innovation, support students and provide access to opportunities, catalyze prosperity, and launch creative change-makers. </p>
-
-              <p>Help us unleash the potential of our students, faculty and programs because together, we move our community, region and world forward. </p>
-
-              <p>Be Boundless — For Washington, For the World. </p> 
+              <p>What you care about can change the world. When you support your passions by giving through the UW, you’re providing students and faculty with the resources they need to learn, collaborate and research in one of the most innovative places on earth. Supporting what you care about through the UW will result in transformational impact on our world. </p>
 
               </div> 
         </div> 
@@ -120,13 +114,15 @@
                                   <div class="hider">
                                     <h3>Orin Smith</h3>
                                     <blockquote><p>We’ve seen firsthand how essential donors are in enabling thousands of students to attend the UW and enhancing the quality of education and research required to maintain the UW’s well-earned reputation.</p></blockquote>
-                                  </div>              </li>
+                                  </div>              
+                              </li>
                               <li class="pax-3" tabindex="0">
                                   <div class="pax"></div>
                                   <div class="hider">
                                     <h3>Janet Smith</h3>
                                     <blockquote><p>Knowing the work you’re doing as a donor or volunteer is making a meaningful difference in the lives of tens of thousands of students and citizens now and for generations to come is the most rewarding feeling.</p></blockquote>
-                                  </div >             </li>
+                                  </div >             
+                                </li>
                               <li class="pax-2" tabindex="0">
                                   <div class="pax"></div>
                                   <div class="hider">
@@ -145,8 +141,9 @@
                                   <div class="pax"></div>
                                   <div class="hider">
                                     <h3>Jeff Brotman</h3>
-                                    <blockquote><p></p></blockquote>
-                                  </div>              </li>
+                                    <blockquote><p>Access to education is the precursor of social mobility and drives our economic engine toward prosperity – for all. I support the UW because it’s the one state institution propelling Washingtonians forward, fortifying the future of our region and our world.</p></blockquote>
+                                  </div>              
+                              </li>
                               <li class="pax-8" tabindex="0">
                                   <div class="pax"></div>
                                   <div class="hider">
@@ -159,17 +156,15 @@
                                   <div class="hider">
                                     <h3>Mike Halperin</h3>
                                     <blockquote><p>The most exciting thing about this campaign is that it serves as rocket fuel for an institution that furthers what I consider to be the highest of human aspirations and ideals.</p></blockquote>
-                                  </div>              </li>
+                                  </div>              
+                              </li>
                               <li class="pax-5" tabindex="0">
                                   <div class="pax"></div>
                                   <div class="hider">
                                     <h3>Jodi Green</h3>
                                     <blockquote><p>I want to spread the word, celebrate, feed and bolster the University of Washington. My own friends, as well as local, regional and global communities need to know about the UW's commitment to access, excellence and our unwavering dedication to rigorous study, research and public service.</p></blockquote>
-                                  </div>              </li>
-                              
-                              
-                              
-                              
+                                  </div>             
+                              </li>
                           </ul>
                       </div>
                   </div>
@@ -229,14 +224,14 @@
     <section id="foundation">
       <div class="container">
         <div class="row">
-          <h2 class="purpleHeadline"><span>ABOUT THE FOUNDATION</span></h2>
+          <div class="headlineBox"><h2>About the Foundation</h2></div>
           <div class="col-md-5 col-md-offset-1">
 
 
 
             <p>The University of Washington Foundation advances the mission of the University of Washington by seeking and securing private support for its programs in service to students and society.</p>
 
-            <p>A conduit for giving to UW students, faculty, programs and facilities, the UW Foundation Board also serves as the convening body for capaign volunteers from across the institution.</p>
+            <p>A conduit for giving to UW students, faculty, programs and facilities, the UW Foundation Board also serves as the convening body for campaign volunteers from across the institution.</p>
           </div>
           <div class="col-md-4 col-md-offset-1">
             <div class="callout">
