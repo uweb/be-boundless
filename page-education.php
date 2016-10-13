@@ -30,8 +30,8 @@
                   <p class="headline-gold center">What is the student experience?<br/> Well, that depends on who you ask. </p>
                   
                   <p>For some, it’s walking up a creek in chest-high waders, studying salmon and bear interactions in the field, where they happen. A living              laboratory.  </p>
-                  <p>For others, it’s spending spring break volunteering in public schools in rural and tribal communities across Washington, creating a pipeline of              possibility for the next generation of Huskies. </p>
-                  <p>It’s hiking Mt. Rainier. It’s throwing the winning touchdown. It’s scoring the solo, engineering a 3-D printed prosthetic hand, interning at a               local company with a global reach.  </p>
+                  <p>For others, it’s spending spring break volunteering in public schools in rural and tribal communities across Washington, creating a pipeline of possibility for the next generation of Huskies. </p>
+                  <p>It’s hiking Mt. Rainier. It’s throwing the winning touchdown. It’s scoring the solo, engineering a 3-D printed prosthetic hand, interning at a local company with a global reach.  </p>
                   <p>It’s being immersed in a city of self-starters, adventurers and entrepreneurs. It’s being caffeinated, curious, connected — with the Pacific               Northwest in your backyard. </p>
                   <p>It’s discovering your passion; your place in the world — and it’s knowing the student experience wouldn’t be possible without a community of               supporters rallying to help you get to, through, and beyond the UW. </p>
                   
@@ -258,7 +258,7 @@
                 <h2 class="headline-gold">You can help bridge the gap</h2>
                 <p>Lakeridge Elementary is just one story of success. With your support, the College of Education can improve teaching quality and transform K-12 learning across the Puget Sound region.</p>
 
-                <a href="#" class="uw-btn">Give</a>
+                <div class="boundless-button sm dark give"><span><a href="http://www.uwmedicine.org/bios/pamela-becker">Give now</a></span></div>
               </div>
 
 
