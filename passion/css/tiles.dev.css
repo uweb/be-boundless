@@ -184,6 +184,26 @@
 #passion .fyp-button:hover .fyp-link {
   color: #FFF;
 }
+#passion div.explore-footer {
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  bottom: 0;
+}
+#passion div.explore-footer ul.footer-links {
+  padding: 0;
+}
+#passion div.explore-footer ul.footer-links li a,
+#passion div.explore-footer p.dateMarker {
+  color: #FFFFFF;
+}
+#passion div.explore-footer ul.footer-links li a:focus,
+#passion div.explore-footer ul.footer-links li a:active,
+#passion div.explore-footer ul.footer-links li a:hover {
+  color: #b7a57a;
+  text-decoration: underline;
+}
 #passion button#empty {
   position: fixed;
   border: none;
@@ -285,7 +305,6 @@
 }
 #passion .row {
   height: auto;
-  padding-left: 40px;
 }
 #passion .row h1:after {
   pointer-events: none;
@@ -333,6 +352,8 @@
   display: block;
 }
 #passion .module-hero-image {
+  position: relative;
+  background-position: center bottom;
   margin-top: 0;
   height: auto;
   min-height: 1075px;
@@ -345,6 +366,7 @@
 #passion .module-hero-image h1 {
   font-size: 65px;
   margin-top: 80px;
+  text-align: center;
 }
 #passion .module-hero-image .udub-slant {
   margin: 0;
@@ -355,14 +377,23 @@
   margin: 20px 0 13px 0;
   line-height: 1.5;
 }
+#passion .module-hero-image div.explore-content p {
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
 #passion .module-hero-image .circle-button-container {
-  width: 85%;
-  margin: 50px 0 0 -70px;
+  width: 100%;
+  margin: 50px 0 0 0;
   display: inline-block;
 }
 #passion .module-hero-image .circle-button-container div.flip-container {
   width: 175px;
   position: relative;
+}
+#passion .module-hero-image .circle-button-container div.flip-container .flipper {
+  width: 100%;
 }
 #passion .module-hero-image .circle-button-container div {
   width: 32%;
@@ -375,6 +406,22 @@
   behavior: url(PIE.htc);
   width: 175px;
   height: 175px;
+}
+#passion .module-hero-image .circle-button-container div div.circle-icon.plus {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  height: 30px;
+  width: 30px;
+}
+#passion .module-hero-image .circle-button-container div div.circle-icon.plus p.ic-custom {
+  margin: 0;
+  padding: 0;
+}
+#passion .module-hero-image .circle-button-container div div.circle-icon.plus p.ic-custom:before {
+  font-size: 36px;
+  margin-top: -8px;
+  content: "+";
 }
 #passion .module-hero-image .circle-button-container div div.circle-icon.front {
   z-index: 0;
@@ -410,13 +457,19 @@
   background: url(../assets/cert-purple.png) no-repeat 0 0;
   background-size: 100px 100px;
 }
+#passion .module-hero-image .circle-button-container div div.circle-icon.front div.plus {
+  background-color: #4b2e83;
+}
+#passion .module-hero-image .circle-button-container div div.circle-icon.front div.plus .ic-custom:before {
+  color: #FFF;
+}
 #passion .module-hero-image .circle-button-container div div.circle-icon.back {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #4b2e83;
+  background-color: #b7a57a;
 }
 #passion .module-hero-image .circle-button-container div div.circle-icon.back p.fyp-heart:before {
   background: url(../assets/heart-white.png) no-repeat 0 0;
@@ -430,6 +483,14 @@
 #passion .module-hero-image .circle-button-container div div.circle-icon.back p.fyp-cert:before {
   background: url(../assets/cert-white.png) no-repeat 0 0;
   background-size: 100px 100px;
+}
+#passion .module-hero-image .circle-button-container div div.circle-icon.back div.plus {
+  background-color: #FFF;
+}
+#passion .module-hero-image .circle-button-container div div.circle-icon.back div.plus .ic-custom:before {
+  color: #b7a57a;
+  text-shadow: none;
+  font-weight: 600;
 }
 #passion .module-hero-image .circle-button-container div p.circle-text {
   vertical-align: top;
@@ -490,18 +551,18 @@
 #passion .module-hero-image .circle-button-container .fyp-filters-box ul.fyp-filters li p a:hover,
 #passion .module-hero-image .circle-button-container .fyp-filters-box ul.fyp-filters li p a:active,
 #passion .module-hero-image .circle-button-container .fyp-filters-box ul.fyp-filters li p a:focus {
-  color: #4b2e83;
-  text-shadow: none;
+  color: #b7a57a;
   text-decoration: underline;
 }
 #passion .module-hero-image .circle-button-container .fyp-filter-triggers a:hover p.circle-text,
 #passion .module-hero-image .circle-button-container .fyp-filter-triggers a:active p.circle-text,
 #passion .module-hero-image .circle-button-container .fyp-filter-triggers a:focus p.circle-text {
-  color: #4b2e83;
+  color: #b7a57a;
   text-shadow: none;
 }
 #passion .module-hero-image .fyp-search-wrapper {
   vertical-align: bottom;
+  text-align: center;
 }
 #passion .module-hero-image .fyp-search-wrapper .fyp-search .fyp-search-label {
   color: #FFF;
@@ -1472,15 +1533,15 @@
 #passion .grid-item .front .banner {
   bottom: 0;
   position: absolute;
-  padding: 8px 0 5px 8px;
+  padding: 10px 45px 10px 12px;
   width: 100%;
-  height: 40px;
   color: white;
   text-transform: uppercase;
   font-family: "Encode Sans Compressed", sans-serif;
   font-weight: 900;
   font-size: 12px;
   letter-spacing: .05em;
+  line-height: 1.3;
 }
 #passion .grid-item .front .banner .short-desc {
   display: none;
@@ -1488,7 +1549,7 @@
 #passion .grid-item .front .banner:after {
   content: "";
   background: url(../assets/bar.svg) no-repeat top right;
-  margin-top: -2px;
+  margin-top: 0;
   display: block;
   width: 75px;
   height: 3px;
@@ -1524,11 +1585,12 @@
   margin: 0;
   font-size: 16px;
   line-height: 1.3;
-  letter-spacing: 1px;
+  font-weight: 500;
+  letter-spacing: 0px;
 }
 #passion .grid-item .back .back-unit-name {
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
   text-transform: uppercase;
   -webkit-font-smoothing: initial;
@@ -1640,6 +1702,9 @@
   #passion .module-hero-image .circle-button-container .fyp-filters-box {
     margin: 0;
   }
+  #passion div.explore-footer {
+    margin-left: -20px;
+  }
   .module-hero-image {
     height: auto;
     padding: 40px 20px 50px 20px;
@@ -1658,6 +1723,8 @@
   }
   #passion .module-hero-image .row {
     padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
   }
   #passion .module-hero-image .row h1 {
     font-size: 40px;
@@ -1676,6 +1743,16 @@
   #passion .module-hero-image .row .fyp-filter-triggers .flip-container .circle-icon p.fyp-school:before {
     margin: -5px 0 0 27px;
   }
+  #passion .module-hero-image .row .fyp-filter-triggers .flip-container .circle-icon.plus {
+    height: 20px;
+    width: 20px;
+    right: 8px;
+    bottom: 8px;
+  }
+  #passion .module-hero-image .row .fyp-filter-triggers .flip-container .circle-icon.plus p.ic-custom:before {
+    font-size: 26px;
+    margin-top: -6px;
+  }
   #passion .module-hero-image .row .fyp-filter-triggers .circle-text {
     font-size: 18px;
   }
@@ -1683,6 +1760,9 @@
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2;
+  }
+  #passion .module-hero-image div.explore-footer {
+    bottom: 20px;
   }
   #husky100 .search_slash:before {
     display: none;
@@ -1818,6 +1898,16 @@
   #passion .module-hero-image .row .circle-button-container .fyp-filter-triggers .flip-container .circle-icon p.fyp-school:before {
     margin-top: -10px;
   }
+  #passion .module-hero-image .row .circle-button-container .fyp-filter-triggers .flip-container .circle-icon.plus {
+    height: 15px;
+    width: 15px;
+    right: 7px;
+    bottom: 7px;
+  }
+  #passion .module-hero-image .row .circle-button-container .fyp-filter-triggers .flip-container .circle-icon.plus p.ic-custom:before {
+    font-size: 20px;
+    margin-top: -6px;
+  }
   #passion .module-hero-image .row .circle-button-container .fyp-filter-triggers .circle-text {
     font-size: 17px;
     margin-left: 110px;
@@ -1866,14 +1956,16 @@
 /*  UPDATED! flip the pane when hovered */
 .flip-container:not(.open):hover .back,
 .flip-container:not(.open):focus .back,
-.flip-container:not(.open):active .back {
+.flip-container:not(.open):active .back,
+.flip-container:not(.open).active .back {
   -webkit-transform: rotateY(0deg);
   -ms-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
 .flip-container:not(.open):hover .front,
 .flip-container:not(.open):focus .front,
-.flip-container:not(.open):active .front {
+.flip-container:not(.open):active .front,
+.flip-container:not(.open).active .front {
   -webkit-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg);

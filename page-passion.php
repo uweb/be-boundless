@@ -5,23 +5,31 @@
       <div class="container">    
         <div class="row">
           <h1><?php the_title(); ?></h1>
+          <div class="explore-content">
           <?php 
               while ( have_posts() ) : the_post(); 
                 the_content();
               endwhile;
            ?>
+           </div>
            <div class="circle-button-container">
              <div class="fyp-filter-triggers" data-name="fyp-causes-filters"><a href="#"><div class="flip-container">
-               <div class="circle-icon front"><p class="fyp-filter-icon fyp-heart"></p></div>
-               <div class="circle-icon back"><p class="fyp-filter-icon fyp-heart"></p></div>
+              <div class="flipper" role="button" aria-expanded="false">
+               <div class="circle-icon front"><p class="fyp-filter-icon fyp-heart"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
+               <div class="circle-icon back"><p class="fyp-filter-icon fyp-heart"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
+              </div>
              </div><p class="circle-text">Causes</p></a></div>
              <div class="fyp-filter-triggers" data-name="fyp-units-filters"><a href="#"><div class="flip-container">
-               <div class="circle-icon front"><p class="fyp-filter-icon fyp-school"></p></div>
-               <div class="circle-icon back"><p class="fyp-filter-icon fyp-school"></p></div>
+              <div class="flipper" role="button" aria-expanded="false">
+               <div class="circle-icon front"><p class="fyp-filter-icon fyp-school"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
+               <div class="circle-icon back"><p class="fyp-filter-icon fyp-school"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
+              </div>
              </div><p class="circle-text">Schools, colleges, campuses, other key areas</p></a></div>
              <div class="fyp-filter-triggers" data-name="fyp-purposes-filters"><a href="#"><div class="flip-container">
-               <div class="circle-icon front"><p class="fyp-filter-icon fyp-cert"></p></div>
-               <div class="circle-icon back"><p class="fyp-filter-icon fyp-cert"></p></div>
+              <div class="flipper" role="button" aria-expanded="false">
+               <div class="circle-icon front"><p class="fyp-filter-icon fyp-cert"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
+               <div class="circle-icon back"><p class="fyp-filter-icon fyp-cert"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
+              </div>
              </div><p class="circle-text">UW Priorities</p></a></div>
              <hr align="left">
              <div id="fyp-filters-box" class="fyp-filters-box">
@@ -63,15 +71,16 @@
            </div>
            <div class="fyp-search-wrapper">
               <form class="fyp-search">
-                <label class="fyp-search-label" for="fyp-search-bar"><p>Search for specific fund:</p></label>
+                <!-- <label class="fyp-search-label" for="fyp-search-bar"><p>Search for specific fund:</p></label> -->
                 <div>
-                  <input id="searcher" class="fyp-search-bar quicksearch" type="search" name="fyp-search-name" value="">
-                  <input type="submit" value="search" class="fyp-search-button" tabindex="0">
+                  <input id="searcher" class="fyp-search-bar quicksearch" type="search" name="fyp-search-name" placeholder="Search for a specific fund" value="">
+                  <input type="submit" value="search" id="fyp-search-button" class="fyp-search-button" tabindex="0">
                 </div>
               </form>
             </div>
         </div>
       </div>
+      <div class="explore-footer"><?php get_footer('campaign') ?></div>
     </div>
 
     <button id="empty">
@@ -315,6 +324,8 @@
             $unslugUnit = str_replace("---"," &amp; ",$fund->unit);
             $unslugUnit = str_replace("-"," ",$unslugUnit);
 
+            $shortDesc = (strlen($fund->desc) > 150 ) ? (substr($fund->desc , 0 , 150) . "...") : $fund->desc;
+
            //spit out html 
            ?>
             <li tabindex="0" data-name="<?php echo $fund->post_name; ?>" data-img="<?php echo $fundimageurlhigh; ?>" data-sort="3" class="flip-container grid-item fyp-funds <?php echo $fundclasses; ?>">
@@ -327,7 +338,7 @@
               <div class="back">
                 <h3><?php echo $fund->post_title; ?></h3>
                 <p class="back-unit-name"><?php echo $unslugUnit; ?></p>
-                <p class="short-desc"><?php echo $fund->desc; ?></p>
+                <p class="short-desc"><?php echo $shortDesc; ?></p>
               </div>
               <div tabindex="0" class="full-bio">
                 <h2><?php echo $fund->post_title; ?></h2>
@@ -381,6 +392,7 @@
 </div>
 
 <!-- ////////////////// -->
+
 
 </body>
 <footer>

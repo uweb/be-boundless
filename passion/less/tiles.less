@@ -39,6 +39,28 @@
       }
   }
 
+   
+  div.explore-footer {
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    bottom: 0;
+    ul.footer-links {
+      padding: 0;
+    }
+    ul.footer-links li a ,
+    p.dateMarker {
+      color: #FFFFFF;
+    }
+    ul.footer-links li a:focus,
+    ul.footer-links li a:active,
+    ul.footer-links li a:hover {
+      color: @lightgold;
+      text-decoration: underline;
+    }
+  }
+
   // Dynamic close button
 button#empty {
     position: fixed;
@@ -146,7 +168,7 @@ button#empty {
 
   .row {
     height: auto;
-    padding-left: 40px;
+    //padding-left: 40px;
     h1:after {
       pointer-events: none;
     }
@@ -187,7 +209,7 @@ button#empty {
     &:active,
     &:focus  {
       svg g line{
-        stroke: #b7a57a;
+        stroke: @lightgold;
       }
       
     }
@@ -197,6 +219,8 @@ button#empty {
   }
 
   .module-hero-image {
+      position: relative;
+      background-position: center bottom;
       margin-top: 0;
       height: auto;
       min-height: 1075px;
@@ -209,6 +233,7 @@ button#empty {
       h1 {   
         font-size: 65px; 
         margin-top: 80px;
+        text-align: center;
       }
       .udub-slant {
         margin: 0;
@@ -219,13 +244,22 @@ button#empty {
         margin: 20px 0 13px 0;
         line-height: 1.5;
       }
+      div.explore-content p {
+        text-align: center;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
       .circle-button-container {
-        width: 85%;
-        margin: 50px 0 0 -70px;
+        width: 100%;
+        margin: 50px 0 0 0;
         display: inline-block;
         div.flip-container {
           width: 175px;
           position: relative;
+          .flipper {
+            width: 100%;
+          }
         }
         div{
           width: 32%;
@@ -238,6 +272,25 @@ button#empty {
             width: 175px;
             height: 175px;
             //margin-right: 140px;
+            &.plus {
+              position: absolute;
+              bottom: 10px;
+              right: 10px;
+              height: 30px;
+              width: 30px;
+              p.ic-custom {
+                margin: 0;
+                padding: 0;
+                &:before {
+                  font-size: 36px;
+                  margin-top: -8px;
+                  content: "+";
+                }
+              }
+              // p.icon-plus {
+              //   background: url('../assets/x.svg') center center no-repeat;
+              // }
+            }
             &.front {
               z-index: 0;
             }
@@ -271,6 +324,12 @@ button#empty {
                 background: url(../assets/cert-purple.png) no-repeat 0 0;
                 background-size: 100px 100px;
               }
+              div.plus{
+                background-color: @purple;
+                .ic-custom:before{
+                  color: #FFF;
+                }
+              }
             }
             &.back {
               position: absolute;
@@ -278,7 +337,7 @@ button#empty {
               left: 0;
               right: 0;
               bottom: 0;
-              background-color: #4b2e83;
+              background-color: @lightgold;
               p.fyp-heart:before {
                 background: url(../assets/heart-white.png) no-repeat 0 0;
                 background-size: 100px 100px;
@@ -291,6 +350,14 @@ button#empty {
               p.fyp-cert:before {
                 background: url(../assets/cert-white.png) no-repeat 0 0;
                 background-size: 100px 100px;
+              }
+              div.plus{
+                background-color: #FFF;
+                .ic-custom:before{
+                  color: @lightgold;
+                  text-shadow: none;
+                  font-weight: 600;
+                }
               }
             }
           }
@@ -349,8 +416,8 @@ button#empty {
                   &:hover,
                   &:active,
                   &:focus  {
-                    color: #4b2e83;
-                    text-shadow: none;
+                    color: @lightgold;
+                    //text-shadow: none;
                     text-decoration: underline;
                   }
                 }
@@ -363,7 +430,7 @@ button#empty {
           a:active,
           a:focus  {
             p.circle-text {
-              color: #4b2e83;
+              color: @lightgold;
               text-shadow: none;
             }
           }
@@ -372,6 +439,7 @@ button#empty {
 
       .fyp-search-wrapper {
         vertical-align: bottom;
+        text-align: center;
         .fyp-search {
           .fyp-search-label {
             color: #FFF;
@@ -1353,22 +1421,23 @@ button#empty {
       .banner {
         bottom: 0;
         position: absolute;
-        padding: 8px 0 5px 8px;
+        padding: 10px 45px 10px 12px;
         width: 100%;
-        height: 40px;
+        //height: 40px;
         color: white;
         text-transform: uppercase;
         font-family: "Encode Sans Compressed", sans-serif;
         font-weight: 900;
         font-size: 12px;
         letter-spacing: .05em;
+        line-height: 1.3;
         .short-desc {
           display: none;
         }
         &:after {
               content: "";
               background: url(../assets/bar.svg) no-repeat top right;
-              margin-top: -2px;
+              margin-top: 0;
               display: block;
               width: 75px;
               height: 3px;
@@ -1405,11 +1474,12 @@ button#empty {
         margin: 0;
         font-size: 16px;
         line-height: 1.3;
-        letter-spacing: 1px;
+        font-weight: 500;
+        letter-spacing: 0px;
       }
       .back-unit-name {
         margin: 0;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 20px;
         text-transform: uppercase;
         -webkit-font-smoothing: initial;
@@ -1559,8 +1629,9 @@ button#empty {
   //   }
   // }
 
-    
-        
+    #passion div.explore-footer {
+      margin-left: -20px;
+    }  
     .module-hero-image {
       height: auto;
       padding: 40px 20px 50px 20px;
@@ -1579,9 +1650,11 @@ button#empty {
   }
 
   #passion .module-hero-image {
-    //padding-bottom: 242px;
+    //padding-bottom: 130px;
     .row {
       padding-left: 0;
+      margin-right: auto;
+      margin-left: auto;
       h1 {
         font-size: 40px;
       }
@@ -1597,7 +1670,17 @@ button#empty {
             } 
             p.fyp-school:before {
               margin: -5px 0 0 27px;
-            }  
+            } 
+            &.plus {
+              height: 20px;
+              width: 20px;
+              right: 8px;
+              bottom: 8px;
+              p.ic-custom:before {
+                font-size: 26px;
+                margin-top: -6px;
+              }
+            }
           }
         }
         .circle-text {
@@ -1610,8 +1693,10 @@ button#empty {
         column-count: 2;
       }
     }
+    div.explore-footer {
+      bottom: 20px;
+    }  
   }
-
 
 
 
@@ -1746,7 +1831,17 @@ button#empty {
               } 
               p.fyp-school:before {
                margin-top: -10px;
-              }  
+              } 
+              &.plus {
+                height: 15px;
+                width: 15px;
+                right: 7px;
+                bottom: 7px;
+                p.ic-custom:before {
+                  font-size: 20px;
+                  margin-top: -6px;
+                }
+              } 
             }
           }
           .circle-text {
@@ -1813,14 +1908,16 @@ button#empty {
 .flip-container:not(.open) {
   &:hover .back,
   &:focus .back,
-  &:active .back {
+  &:active .back,
+  &.active .back {
     .rotateY(0deg);
   }
 }
 .flip-container:not(.open) {
   &:hover .front,
   &:focus .front,
-  &:active .front {
+  &:active .front,
+  &.active .front {
     .rotateY(180deg);
   }
 }
