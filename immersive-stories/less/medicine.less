@@ -108,8 +108,8 @@ p {
         }
     }
     p {
-        color: white;
-        text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+        color: @purple;
+        text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.92);
     }
     .intro-body {
         position: relative;
@@ -153,6 +153,8 @@ p {
             font-size: 14px;
             line-height: 1.5;
             margin-top: 7px;
+            color: white;
+            text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
         }
         a.read-more {
             top: calc(~"100vh - 55px");
@@ -181,8 +183,8 @@ p {
             }
         }
         p {
-        	margin: 40px 20% 0 0;
-        	font-size: 18px;
+        	margin: 40px 25% 0 0;
+        	font-size: 19px;
         	line-height: 1.4;
             padding-right: 20%;
         }
@@ -244,7 +246,7 @@ p {
         font-family: @uni;
         font-weight: 900;
         font-size: 20px;
-        display: inline-block;
+        display: block;
         margin-bottom: 5px;
         span {
             color: @lightgold;
@@ -252,21 +254,32 @@ p {
             display: block;
         }
     }
-    p.studies {
+    p.title {
+        color: white;
+        text-transform: uppercase;
         font-family: @uni;
+        font-weight: 900;
+        font-size: 20px;
+    }
+    p.studies {
         font-weight: bold;
         display: block;
-        font-size: 19px;
+        font-size: 14px;
         margin-top: -5px;
         margin-bottom: 5px;
-        color: white;        
-        // font-weight: bold;
-        text-transform: uppercase;
-
+        line-height: 1.4;
+        color: white;
+        &:last-child {
+            text-transform: none;
+        }
     }
     &.right {
+
         text-align: right;
         background-position: top left;
+        .background-profile {
+            background-position: left center;
+        }
         p.quotes {   
             &:before,
             &:after {
@@ -282,18 +295,23 @@ p {
 
     @media(min-width:768px) {
         .background-profile {
-        	padding: 150px 110px;  
+        	padding: 150px 80px 150px;  
         	position: relative;
         }
-        & > div > div.skew {
+        .name-wrap {
+            width: 45%;
+            position: relative;
+            background-color: rgba(34, 34, 34, 0.38);
+        }
+        div.skew {
             .skew(-15deg,0);
             position: absolute;
             top: 0;
-            width: 52%;
+            width: 60%;
             bottom: 0;
             overflow: hidden;
             left: -100px;
-            background-color: rgba(185, 162, 122, .25);
+            background-color: rgba(185, 162, 122, .85);
             div {
                 .skew(15deg,0);
                 position: absolute;
@@ -303,10 +321,22 @@ p {
                 bottom: 0;
             }
         } 
+        p.title,
+        p.studies {
+            margin-top: -4px;
+            margin-bottom: 0;
+            border: 4px solid white;
+            padding: 10px 20px;
+        }
+
         h2.name {
             font-size: 45px;
+            margin-bottom: 0;
+            border: 4px solid white;
+            padding: 5px 20px;
         }
         p.studies {
+
             &.light {
                 color: #808080;
                 text-shadow: none;
@@ -327,7 +357,7 @@ p {
         }
         
         &.right {
-            & > div.skew {
+            div.skew {
                 left: auto;
                 right: -100px;
                 div {                    
@@ -335,10 +365,20 @@ p {
                     left: -350px;                    
                 }
             }
+            .name-wrap {
+            	width: auto;
+                margin-left: 57%;
+            }
         }
         &.person-1 {
         	.background-profile {
             	background-image: url("@{medicine}/becker.jpg");
+            	.background-cover(cover);
+        	}
+        }
+        &.person-2 {
+        	.background-profile {
+            	background-image: url("@{medicine}/murry.jpg");
             	.background-cover(cover);
         	}
         }
@@ -351,9 +391,12 @@ p {
         }
     }
     @media(max-width:768px) {
-        padding: 80% 40px 20px;        
-        background-color: #6D6D6D;
-        background-size: 100%;
+    	.background-profile {
+    		width: 90%;
+    		padding: 55% 30px 20px;        
+    		background-color:@purple;
+    		background-size: 100%;
+    	}
         h2.name {
             font-size: 30px;
             line-height: 28px;
@@ -373,14 +416,23 @@ p {
         		background-position: center top;
         	}
         }    
+        &.person-2 {
+        	.background-profile {
+        		background-image: url("@{medicine}/murry-mobile.jpg");
+        		background-repeat: no-repeat;
+        		background-position: center top;
+        	}
+        }    
+    }
+    @media only screen and (min-width : 768px ) and (max-width : 1200px) {
+    	.background-profile {
+    	    width: 100%;
+    	}
     }
 }
 
 
 @media(max-width:768px) { 
-    .profile {
-        background-color: black;
-    }  
     div.audio {
         margin: 20px 0 20px;
         min-height: 40px;
@@ -420,6 +472,29 @@ p {
 	}
 }
 
+section.text-block .gold-quote.purple.special,
+section.text-block .gold-quote.purple.special {
+    &:after, 
+    &:before {
+        background: url("@{medicine}/lab.svg") center -525px no-repeat 
+    }
+    &:before {
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+        background-position: center -525px;
+    }
+    &:after {
+        background-position: center -82px;
+        bottom: -170px;
+        width: 200%;
+        height: 225px;
+        left: 50%;
+        margin-left: -100%;
+    }
+}
+
+
 
 // Blinker animation for video
 
@@ -444,6 +519,7 @@ p {
 .video-block {
     position: relative;
     z-index: 0;
+    text-align: center;
     .portrait {
     	.background-cover(cover);
     }
@@ -493,7 +569,7 @@ p {
             opacity: .8;
         }
         &:after {
-            background: url("@{img}/sprite.svg") no-repeat -79px -409px rgba(0,0,0,0);
+            background: url("@{img}/sprite.svg") no-repeat -79px -422px rgba(0,0,0,0);
             width: 101px;
             height: 95px;
             bottom: -15px;
@@ -515,9 +591,8 @@ p {
         }
     }
     @media(min-width:768px) {
-        text-align: left;
         .portrait {
-    	 	background: url("@{medicine}/people-outlines.png") no-repeat center center white;
+    	 	background: url("@{medicine}/people-outlines.png") no-repeat center center @ultralightgold;
         	position: absolute;
         	top: 0;
         	left: 0;
@@ -535,12 +610,14 @@ p {
             outline: 15px solid rgba(183,165,122,0.3);
             background-color: white;
             &:before {
-                background: url("@{img}/sprite.svg") no-repeat 9px -289px rgba(0,0,0,0);
-                width: 52px;
-                height: 145px;
-                bottom: -41px;
-                right: 100px;
-                opacity: .8;
+            	width: 1px;
+            	height: 145px;
+            	bottom: -33px;
+            	right: 128px;
+            	opacity: 1;
+            	background: #bbbbbb;
+            	.skew(-15deg,0);
+
             }
             &:focus,
             &:active {                
@@ -568,8 +645,9 @@ p {
     	margin: 30px 0;
     	background-color: @darkgray;
     	padding: 0;
+
     	.portrait {
-    	 	background: url("@{medicine}/people-outlines-mobile.png") no-repeat center center white;
+    	 	background: url("@{medicine}/people-outlines-mobile.png") no-repeat center top white;
 			width: 100%;
 			height: 200px;
     	}
@@ -587,6 +665,7 @@ p {
     		padding-right: 80px;
     		white-space: nowrap;
             font-size: 23px;
+            color: white;s
     		svg {
     			display: none;
     		}
@@ -606,5 +685,135 @@ p {
 			height: 200px;
     	}
     }
+}
+
+button.close-video {
+    position: absolute;
+    border: none;
+    top: -55px;
+    right: 0;
+    z-index: 9999;
+    width: 55px;
+    height: 55px;
+    background: url("@{img}/sprite.svg") no-repeat -207px -286px rgba(0,0,0,.2);
+}
+
+
+// Popup video
+#youtube-video {
+    iframe {
+        margin: 0;
+    }
+    @media(min-width:768px) {
+        position: absolute;
+        top: 0;
+        right: 0;    
+        left: 0;
+        bottom: 0;
+        z-index: 9999;
+    }
+    @media(max-width:768px) {   
+        .iPhone & {
+            iframe {
+                margin: 0;
+                height: 60px !important;
+                position: absolute;
+                right: 0;
+                left: 0;
+                z-index: 999;
+                bottom: 40px;
+                opacity: 0;
+            }
+        }
+        iframe { 
+            width: 100% !important;
+            height: 42vw !important;
+        }
+    }
+
+}
+
+
+
+// Dr. Murry 
+
+section.person-2 {
+	@media(min-width:768px) {
+		position: static;
+		overflow: visible;
+		padding-top: 50px;
+		margin-top: 20px;
+	    .background-profile {
+	    	margin-bottom: -50px;
+	       	position: relative;
+	       	z-index: 10;
+	    }
+	}
+}
+
+// Callout box on Dr Murry's writeup
+
+.callout {
+	float: right;
+	padding: 30px 40px;
+	background: url("@{medicine}/bg-pattern-callout.svg") no-repeat right top @ultralightgold;
+    min-width: 265px;
+	h3 {
+		font-weight: @ultra;
+		color: @purple;
+		font-size: 40px;
+		margin: 0 0 16px;
+		span {
+			font-size: 20px;
+			display: block;
+		}
+	}
+	ul {
+		padding: 0;
+		li {
+			list-style: none;
+			margin: 13px 0;
+			font-size: 20px;
+			line-height: 1.2;
+			font-weight: normal;
+			font-family: @uni;
+			color: black;
+			span {
+				font-family: @font-family-headline;
+				font-weight: @ultra;
+				color: @darkgold;	
+			}
+		}
+	}
+	@media only screen and (min-width : 768px ) and (max-width : 1200px) {
+
+	}
+	@media(min-width:768px) {
+		width: 40%;
+		margin: 10px -20% 20px 40px;
+	}
+	@media(max-width:768px) {
+		width: 100%;
+		margin: 20px 0 30px;
+	}
+
+}
+
+// Text block overwrite
+
+.text-block.purpleBG {
+	background: url("@{medicine}/bg-pattern-white.svg") no-repeat center top @purple;
+	h2 {
+		color: @lightgold;
+	}
+	.copy {
+		background-color: transparent;
+		p {
+			color: white;
+		}
+	}
+	@media(min-width:768px) {
+	     padding-top: 100px;
+	}
 }
 

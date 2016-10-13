@@ -35,6 +35,9 @@
             font-size: 15px;
             margin-top: 14px;
         }
+        &.purple {
+            color: @purple;
+        }
     }
     h3.headline-gold {
         font-size: 22px;
@@ -63,6 +66,14 @@
         &:after {
             bottom: -100px;
             background-position: 0 -195px;
+        }
+        &.purple {
+            &:after {
+                background-position: -420px -195px;
+            }
+            &:before {
+                background-position: -420px -101px;
+            }
         }
     }
     .copy {
@@ -107,6 +118,7 @@
         }
     }
     @media(max-width:768px) {
+        overflow: hidden;
     }
 
 
