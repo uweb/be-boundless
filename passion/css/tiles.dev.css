@@ -217,7 +217,7 @@
   text-transform: capitalize;
   line-height: 0;
   color: transparent;
-  box-shadow: -1px 1px 2px #000000 3;
+  box-shadow: -1px 1px 2px #0003 3;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   -webkit-transform: translate(75px, 0);
@@ -413,15 +413,15 @@
   right: 10px;
   height: 35px;
   width: 35px;
-  background-color: #4b2e83;
 }
-#passion .module-hero-image .circle-button-container div div.circle-icon.plus p.ic-plus {
+#passion .module-hero-image .circle-button-container div div.circle-icon.plus p.ic-custom {
   margin: 0;
   padding: 0;
 }
-#passion .module-hero-image .circle-button-container div div.circle-icon.plus p.ic-plus:before {
-  font-size: 35px;
-  color: #b7a57a;
+#passion .module-hero-image .circle-button-container div div.circle-icon.plus p.ic-custom:before {
+  font-size: 45px;
+  margin-top: -12px;
+  content: "+";
 }
 #passion .module-hero-image .circle-button-container div div.circle-icon.front {
   z-index: 0;
@@ -457,6 +457,12 @@
   background: url(../assets/cert-purple.png) no-repeat 0 0;
   background-size: 100px 100px;
 }
+#passion .module-hero-image .circle-button-container div div.circle-icon.front div.plus {
+  background-color: #4b2e83;
+}
+#passion .module-hero-image .circle-button-container div div.circle-icon.front div.plus .ic-custom:before {
+  color: #FFF;
+}
 #passion .module-hero-image .circle-button-container div div.circle-icon.back {
   position: absolute;
   top: 0;
@@ -477,6 +483,14 @@
 #passion .module-hero-image .circle-button-container div div.circle-icon.back p.fyp-cert:before {
   background: url(../assets/cert-white.png) no-repeat 0 0;
   background-size: 100px 100px;
+}
+#passion .module-hero-image .circle-button-container div div.circle-icon.back div.plus {
+  background-color: #FFF;
+}
+#passion .module-hero-image .circle-button-container div div.circle-icon.back div.plus .ic-custom:before {
+  color: #b7a57a;
+  text-shadow: none;
+  font-weight: 600;
 }
 #passion .module-hero-image .circle-button-container div p.circle-text {
   vertical-align: top;
@@ -592,7 +606,7 @@
 }
 #passion .grid,
 #passion .search-grid {
-  background: url(../assets/stripes.svg) #e8e8e8;
+  background: url(../assets/stripes.svg) #E8E8E8;
 }
 #passion li.grid-item.search-more div,
 #passion li.grid-item.filter-item div {
@@ -1217,6 +1231,8 @@
   #passion .infographic {
     width: calc(100%);
   }
+}
+@media only screen and (max-width: 320px) {
 }
 #passion .grid-item.special {
   background-color: #4b2e83;

@@ -278,15 +278,18 @@ button#empty {
               right: 10px;
               height: 35px;
               width: 35px;
-              background-color: #4b2e83;
-              p.ic-plus {
+              p.ic-custom {
                 margin: 0;
                 padding: 0;
                 &:before {
-                  font-size: 35px;
-                  color: @lightgold;
+                  font-size: 45px;
+                  margin-top: -12px;
+                  content: "+";
                 }
               }
+              // p.icon-plus {
+              //   background: url('../assets/x.svg') center center no-repeat;
+              // }
             }
             &.front {
               z-index: 0;
@@ -321,6 +324,12 @@ button#empty {
                 background: url(../assets/cert-purple.png) no-repeat 0 0;
                 background-size: 100px 100px;
               }
+              div.plus{
+                background-color: @purple;
+                .ic-custom:before{
+                  color: #FFF;
+                }
+              }
             }
             &.back {
               position: absolute;
@@ -341,6 +350,14 @@ button#empty {
               p.fyp-cert:before {
                 background: url(../assets/cert-white.png) no-repeat 0 0;
                 background-size: 100px 100px;
+              }
+              div.plus{
+                background-color: #FFF;
+                .ic-custom:before{
+                  color: @lightgold;
+                  text-shadow: none;
+                  font-weight: 600;
+                }
               }
             }
           }
