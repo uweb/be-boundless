@@ -1678,11 +1678,16 @@ button#empty {
               width: 20px;
               right: 8px;
               bottom: 8px;
-              border: 2px;
               p.ic-custom:before {
                 font-size: 16px;
                 margin-top: -3px;
               }
+            }
+            &.front .plus {
+              border: 2px solid white;
+            }
+            &.back .plus {
+              border: 2px solid @lightgold;
             }
           }
         }

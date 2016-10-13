@@ -217,7 +217,7 @@
   text-transform: capitalize;
   line-height: 0;
   color: transparent;
-  box-shadow: -1px 1px 2px #000000 3;
+  box-shadow: -1px 1px 2px #0003 3;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   -webkit-transform: translate(75px, 0);
@@ -608,7 +608,7 @@
 }
 #passion .grid,
 #passion .search-grid {
-  background: url(../assets/stripes.svg) #e8e8e8;
+  background: url(../assets/stripes.svg) #E8E8E8;
 }
 #passion li.grid-item.search-more div,
 #passion li.grid-item.filter-item div {
@@ -1234,6 +1234,8 @@
     width: calc(100%);
   }
 }
+@media only screen and (max-width: 320px) {
+}
 #passion .grid-item.special {
   background-color: #4b2e83;
   box-sizing: border-box;
@@ -1748,11 +1750,16 @@
     width: 20px;
     right: 8px;
     bottom: 8px;
-    border: 2px;
   }
   #passion .module-hero-image .row .fyp-filter-triggers .flip-container .circle-icon.plus p.ic-custom:before {
     font-size: 16px;
     margin-top: -3px;
+  }
+  #passion .module-hero-image .row .fyp-filter-triggers .flip-container .circle-icon.front .plus {
+    border: 2px solid white;
+  }
+  #passion .module-hero-image .row .fyp-filter-triggers .flip-container .circle-icon.back .plus {
+    border: 2px solid #b7a57a;
   }
   #passion .module-hero-image .row .fyp-filter-triggers .circle-text {
     font-size: 18px;
