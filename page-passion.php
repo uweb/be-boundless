@@ -324,6 +324,8 @@
             $unslugUnit = str_replace("---"," &amp; ",$fund->unit);
             $unslugUnit = str_replace("-"," ",$unslugUnit);
 
+            $shortDesc = (strlen($fund->desc) > 150 ) ? (substr($fund->desc , 0 , 150) . "...") : $fund->desc;
+
            //spit out html 
            ?>
             <li tabindex="0" data-name="<?php echo $fund->post_name; ?>" data-img="<?php echo $fundimageurlhigh; ?>" data-sort="3" class="flip-container grid-item fyp-funds <?php echo $fundclasses; ?>">
@@ -336,7 +338,7 @@
               <div class="back">
                 <h3><?php echo $fund->post_title; ?></h3>
                 <p class="back-unit-name"><?php echo $unslugUnit; ?></p>
-                <p class="short-desc"><?php echo $fund->desc; ?></p>
+                <p class="short-desc"><?php echo $shortDesc; ?></p>
               </div>
               <div tabindex="0" class="full-bio">
                 <h2><?php echo $fund->post_title; ?></h2>
