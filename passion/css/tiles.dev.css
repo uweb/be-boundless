@@ -217,7 +217,7 @@
   text-transform: capitalize;
   line-height: 0;
   color: transparent;
-  box-shadow: -1px 1px 2px #0003 3;
+  box-shadow: -1px 1px 2px #000000 3;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   -webkit-transform: translate(75px, 0);
@@ -411,16 +411,16 @@
   position: absolute;
   bottom: 10px;
   right: 10px;
-  height: 35px;
-  width: 35px;
+  height: 30px;
+  width: 30px;
 }
 #passion .module-hero-image .circle-button-container div div.circle-icon.plus p.ic-custom {
   margin: 0;
   padding: 0;
 }
 #passion .module-hero-image .circle-button-container div div.circle-icon.plus p.ic-custom:before {
-  font-size: 45px;
-  margin-top: -12px;
+  font-size: 36px;
+  margin-top: -8px;
   content: "+";
 }
 #passion .module-hero-image .circle-button-container div div.circle-icon.front {
@@ -606,7 +606,7 @@
 }
 #passion .grid,
 #passion .search-grid {
-  background: url(../assets/stripes.svg) #E8E8E8;
+  background: url(../assets/stripes.svg) #e8e8e8;
 }
 #passion li.grid-item.search-more div,
 #passion li.grid-item.filter-item div {
@@ -1232,8 +1232,6 @@
     width: calc(100%);
   }
 }
-@media only screen and (max-width: 320px) {
-}
 #passion .grid-item.special {
   background-color: #4b2e83;
   box-sizing: border-box;
@@ -1742,6 +1740,16 @@
   #passion .module-hero-image .row .fyp-filter-triggers .flip-container .circle-icon p.fyp-school:before {
     margin: -5px 0 0 27px;
   }
+  #passion .module-hero-image .row .fyp-filter-triggers .flip-container .circle-icon.plus {
+    height: 20px;
+    width: 20px;
+    right: 8px;
+    bottom: 8px;
+  }
+  #passion .module-hero-image .row .fyp-filter-triggers .flip-container .circle-icon.plus p.ic-custom:before {
+    font-size: 26px;
+    margin-top: -6px;
+  }
   #passion .module-hero-image .row .fyp-filter-triggers .circle-text {
     font-size: 18px;
   }
@@ -1886,6 +1894,16 @@
   }
   #passion .module-hero-image .row .circle-button-container .fyp-filter-triggers .flip-container .circle-icon p.fyp-school:before {
     margin-top: -10px;
+  }
+  #passion .module-hero-image .row .circle-button-container .fyp-filter-triggers .flip-container .circle-icon.plus {
+    height: 15px;
+    width: 15px;
+    right: 7px;
+    bottom: 7px;
+  }
+  #passion .module-hero-image .row .circle-button-container .fyp-filter-triggers .flip-container .circle-icon.plus p.ic-custom:before {
+    font-size: 20px;
+    margin-top: -6px;
   }
   #passion .module-hero-image .row .circle-button-container .fyp-filter-triggers .circle-text {
     font-size: 17px;
