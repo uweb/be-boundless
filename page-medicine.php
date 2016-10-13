@@ -23,11 +23,11 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy">
                   
-                    <p class="headline-gold center">Pamela Becker, M.D., Ph.D., is <br>all too familiar with long odds.</p>
+                    <p class="headline-gold center">Dr. Pamela Becker is all <br>too familiar with long odds. </p>
                     
                     <p>The UW Medicine hematologist who specializes in blood cancer often sees patients with diseases like acute myeloid leukemia (AML), a fast-progressing cancer that takes the lives of three out of every four patients within five years. </p>
 
-                    <p>For AML patients over 65 years old, the survival rate drops to an abysmal 10 percent; even with treatment, these patients survive less than a year on average.</p>
+                    <p>For AML patients over 65 years old, the survival rate drops to an abysmal 10 percent. Even with treatment, these patients survive less than a year on average.</p>
 
                 </div> 
           </div> 
@@ -63,6 +63,7 @@
 
             </div>
             <div style="text-align: center"><div class="boundless-button sm dark"><span><a href="http://www.uwmedicine.org/bios/pamela-becker">Learn more about Dr. Becker</a></span></div></div>
+
       </section>
 
       <section class="text-block">
@@ -70,16 +71,34 @@
               <div class="row">
                   <div class="col-md-10 col-md-offset-1 copy">
                       
-  <p class="gold-quote headline-gold purple special"><b>We have to do better</b>,” says Dr. Becker. “And if we get it figured out for leukemia, we can figure it out for other cancers too.”</p>
+  <p class="gold-quote headline-gold purple special"><b>We have to do better</b>,” says Dr. Becker. “And if we get it figured out for leukemia, we can figure it out for other cancers too.” </p>
 
-<p>That’s why she’s working with the UW’s Institute for Stem Cell and Regenerative Medicine (ISCRM) to pioneer groundbreaking treatments — and turn the odds in her patients’ favor.</p>
-<p>At ISCRM, a collaborative institute at the forefront of biomedical research, experts take on the most daunting diseases of today — from Alzheimer’s to diabetes to cancer — using cutting-edge technology and research to support promising clinical trials.</p>
-<p>In Dr. Becker’s case, the path from research to next-generation therapies begins by rethinking how the cancers she studies are currently treated.</p>
+  <p>That’s why she’s working with the UW’s Institute for Stem Cell and Regenerative Medicine (ISCRM) to pioneer groundbreaking treatments — and turn the odds in her patients’ favor.</p>
+
+  <p>At ISCRM, a collaborative institute at the forefront of biomedical research, experts take on the most daunting diseases of today — from Alzheimer’s to diabetes to cancer — using cutting-edge technology and research to support promising clinical trials.</p>
+
+  <p>In Dr. Becker’s case, the path from research to next-generation therapies begins by rethinking how the cancers she studies are currently treated.</p>
+
+<div class="callout lg">
+  <h3>The art of empathy</h3>
+
+   <p> Though Dr. Becker often thinks of cancer on a scientific level, there’s a point where the science of beating cancer meets the art of empathy. Her mother, who has survived thyroid and breast cancer, was recently diagnosed with lung cancer.</p>
+
+  <p>“I appreciate what it takes to go through all the diagnostic procedures, the treatments, the side effects, the stresses,” Dr. Becker says. “Now, I have an incredible, renewed appreciation for how devastating this is. Not only to the patients, but to their families and friends. I’m always trying to think of how we can make it better, do better — how we can restore quality of life and prolong survival.” </p>
+
+</div>
+
 <p>Typically, she explains, patients get the same treatment for leukemia: two types of chemotherapy drugs. The drug programs are intensive. They’re costly. They’re toxic, with life-threatening complications and severe side-effects. And for a third of those patients, they don’t help at all.</p>
-<p>“But what if there weren’t just two types of drugs?” asks Dr. Becker. “And what if the drugs we used to fight AML were selected based on each patient’s unique biology?” </p>
+
+<p>“But what if there weren’t just two types of drugs?” asks Dr. Becker. “And what if the drugs we used to fight AML were selected based on each patient’s unique biology?” 
+</p>
+
 <p>These are the questions she is working to address in her precision medicine approach to cancer treatment, and she’s already making significant progress.</p>
-<p>Though Dr. Becker often thinks of cancer on a scientific level, there’s a point where the science of beating cancer meets the art of empathy. Her mother, who has survived thyroid and breast cancer, was recently diagnosed with lung cancer.</p>
-<p>“I appreciate what it takes to go through all the diagnostic procedures, the treatments, the side effects, the stresses,” Dr. Becker says. “Now, I have an incredible, renewed appreciation for how devastating this is. Not only to the patients, but to their families and friends. I’m always trying to think of how we can make it better, do better — how we can restore quality of life and prolong survival.”</p>
+
+<p>Crucial to her research has been ISCRM’s Quellos High-throughput Screening Core. Housed in a quiet South Lake Union lab, the facility’s automated machines can test high volumes of drug compounds at different concentrations, finding the best matches for each person’s cancer. And they can do so quickly, giving Dr. Becker and her patients an edge in the race against time.</p>
+
+<p>In a recent clinical trial, Dr. Becker’s team screened cancer cells from several late-stage AML patients against more than 160 drug compounds. Timothy Martins, Ph.D., ’84, director and principal scientist of the Quellos Core, recalls that about 25 years ago, it would take him over a month to test just 20 drug compounds. 
+</p>
 
                   </div> 
             </div> 
@@ -116,20 +135,24 @@
                               
           <p class="gold-quote headline-gold purple">“Now,” he marvels, <b>it only takes five days to test 160 or more compounds</b>. The faster turnaround time is much better for these patients. Treatment can begin much sooner, rather than waiting weeks for the results of other tests.</p>
 
-<p>Crucial to her research has been ISCRM’s Quellos High-throughput Screening Core. Housed in a quiet South Lake Union lab, the facility’s automated machines can test high volumes of drug compounds at different concentrations, finding the best matches for each person’s cancer. And they can do so quickly, giving Dr. Becker and her patients an edge in the race against time.</p>
-<p>In a recent clinical trial, Dr. Becker’s team screened cancer cells from several late-stage AML patients against more than 160 drug compounds. Timothy Martins, Ph.D., ’84, director and principal scientist of the Quellos Core, recalls that about 25 years ago, it would take him over a month to test just 20 drug compounds. </p>
-<p>Once the data were in, Dr. Becker was able to treat her patients with the drugs the screenings showed would be most effective. <b>The results were promising: 13 out of the 14 patients treated with drugs suggested by the study showed a significant drop in leukemia cells</b>, responding to drugs that doctors wouldn’t necessarily have thought to recommend. </p>
+<p>Once the data were in, Dr. Becker was able to treat her patients with the drugs the screenings showed would be most effective. The results were promising: 13 out of the 14 patients treated with drugs suggested by the study showed a significant drop in leukemia cells, responding to drugs that doctors wouldn’t necessarily have thought to recommend. </p>
+
 <p>“I can’t yet pick the home run,” Dr. Becker says. “And I can only find out afterward if we were successful, but the results are often surprising.” In a different trial using the Quellos Core, for example, a leukemia patient responded well to a drug normally used to treat lung cancer. </p>
-<p>But it’s not as simple as identifying a drug that works and sticking with it. A hallmark of cancer is its genetic instability, and cells that survive a treatment regimen often mutate and proliferate. They may grow drug-resistant, making a second round of treatment much less effective, or they may turn into something new. And there’s another challenge: </p>
 
+<p>But it’s not as simple as identifying a drug that works and sticking with it. A hallmark of cancer is its genetic instability, and cells that survive a treatment regimen often mutate and proliferate. They may grow drug-resistant, making a second round of treatment much less effective, or they may turn into something new.</p>
 
-<p class="gold-quote headline-gold purple">“When we say someone has a cancer, they don’t,” explains Dr. Becker. <b>“They have a group of cancers.</b></p>
+<p class="gold-quote headline-gold purple">And there’s another challenge: “When we say someone has a cancer, they don’t,” explains Dr. Becker. <b>“They have a group of cancers.”</b> </p>
 
-<p>In other words, cells from one part of a tumor might have a different genetic makeup than cells from another part. If a drug kills the cells from biopsy A, biopsy B could live on. </p>
+<p>In other words, cells from one part of a tumor might have a different genetic makeup than cells from another part. If a drug kills the cells from biopsy A, biopsy B could live on.</p>
+
 <p>With cancer’s manifold complexities in mind, Dr. Becker is working with other UW faculty to understand what happens when patients relapse.</p>
+
 <p>There’s Lawrence Loeb, M.D., Ph.D., a biochemist and pathologist who’s studying clones and sub-clones of cancer cells that proliferate during a relapse. There’s Ka Yee Yeung-Rhee, Ph.D., a big-data expert who is looking for statistical patterns in cancer patients’ genetic mutations and the drugs they respond to. And there’s Su-In Lee, Ph.D., a computational biologist and engineer who works to identify genes that lead to specific drug sensitivity.</p>
+
 <p>Which cancer cells survive, and why? What are their weaknesses? And what can we learn about new mutations and gene expression that will help current patients — and save lives in the future?</p>
+
 <p>“We’re looking at all these different dimensions,” says Dr. Becker, whose approach to precision medicine is one of the most advanced in the world. “With a more global approach, we’re trying to find new points of vulnerability.”</p>
+
 <p>There is much work to be done to identify and exploit weaknesses in each cancer’s armor, but right now, Dr. Becker’s clinical trials are giving her patients the gifts of time — whether it is months or years — and hope.</p>
 
 <p class="gold-quote headline-gold purple">“I look forward to a day when 100 percent of our AML patients live for five years, rather than just 25 percent,” says Dr. Becker. “A future where we don’t ever have to lose a person to this disease again.”</p>
@@ -183,6 +206,21 @@
                           </div> 
                     </div> 
                   </div>   
+                </section>
+
+
+                <section class="text-block">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1 copy">
+                              <div style="text-align: center">             
+                                <h2 class="headline-gold">FPO</h2>
+                                <p>Lakeridge Elementary is just one story of success. With your support, the College of Education can improve teaching quality and transform K-12   learning across the Puget Sound region.</p>
+                                <div class="boundless-button sm dark give"><span><a href="#">Give now</a></span></div>
+                              </div>
+                            </div>
+                        </div>
+                  </div>
                 </section>
 
 

@@ -1,10 +1,21 @@
-.boundless-button {
+div.boundless-button {
   display: inline-block;
-  border-left: 4px solid #FFF;
+  border-left: none;
   overflow: hidden;
-  padding:0 15px 0 0;
+  padding:1px 15px 0 0;
   margin-top: 10px;
   .transition(all .1s ease-in);
+  cursor: pointer;
+  position: relative;
+  &:after {
+      content: "";
+      left: 0;
+      width: 3px;
+      bottom: 0;
+      top: 2px;
+      background: @purple;
+      position: absolute;
+  }
   &.dark {
     span {
       border: 4px solid @purple;
@@ -12,13 +23,12 @@
       a { 
         color: @purple;
         &:after {
-          background-position: -211px -13px;
+          background-position: -300px 9px;
         }
       }
     }
     
     &.sm {
-      border-left: 3px solid @purple;
       span {
         border: 3px solid @purple;
       }
@@ -28,7 +38,6 @@
     }
   }
   &.sm {
-    border-left: 3px solid #FFF;
     span {
       border: 3px solid #FFF;
     }
@@ -39,8 +48,6 @@
   }
 
   &:hover {
-    border-color: @lightgold;
-    .translate(0,-5px);
     span {
       border-color: @lightgold;
       a {
@@ -48,11 +55,48 @@
       }
     }
   }
+  &.give {
+    .translate(0,0);
+    span {
+      background-color: white;
+      a {
+        padding-right: 40px;
+        color: white;
+        &:hover,
+        &:active,
+        &:focus {
+          &:before {
+            width: 0%;
+          }
+          &:after {
+            right: 15px;
+          }
+          color: @purple;
+        }
+        &:after {
+          .transition(all .3s ease-in);
+          right: 7px;
+        }
+        &:before {
+          .transition(all .3s ease-in);
+          content: "";
+          width: 120%;
+          height: 100%;
+          background: @lightgold;
+          position: absolute;
+          top: 0;
+          z-index: -1;
+          .skew(-15deg,0);
+          right: 25px;
+        }
+      }
+    }
+  }
   span {
     border: 4px solid #FFF;
     display: block;
     .skew(-15deg,0);
-    overflow: hidden;
+    overflow: visible;
     margin-left: -40px;
     .transition(all .1s ease-in);
     a {
@@ -68,7 +112,7 @@
       .transition(all .1s ease-in);
       &:after {
         content: "";
-        background: url(assets/salmon/salmon.svg) no-repeat -189px -13px;
+        background: url("@{img}/sprite.svg") no-repeat -288px 9px;
         display: block;
         position: absolute;
         right: 15px;

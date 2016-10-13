@@ -20,7 +20,7 @@ $(function(){
       triggerHook: 1
     })
     .on("start", function(){
-      videoPlay("https://www.youtube.com/embed/8EsZYYY6sIY?autoplay=1&rel=0&amp;showinfo=0&amp");
+      videoPlay("https://www.youtube.com/embed/8EsZYYY6sIY?theme=light;autoplay=1&rel=0&amp;showinfo=0&amp");
     })
     .reverse(false)
     .addTo(controllerMedicine);

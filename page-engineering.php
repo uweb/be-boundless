@@ -275,18 +275,18 @@
 
 
          <section class="text-block">
-               <div class="container">
-                   <div class="row">
-                       <div class="col-md-10 col-md-offset-1 copy">
-                         <div style="text-align: center">             
-                           <h2 class="headline-gold">FPO headline</h2>
-                           <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.</p>
-                           <a href="#" class="uw-btn">Give</a>
-                         </div>
-                       </div> 
-                 </div> 
-               </div>   
-          </section>
+             <div class="container">
+                 <div class="row">
+                     <div class="col-md-10 col-md-offset-1 copy">
+                       <div style="text-align: center">             
+                         <h2 class="headline-gold">FPO</h2>
+                         <p>Lakeridge Elementary is just one story of success. With your support, the College of Education can improve teaching quality and transform K-12   learning across the Puget Sound region.</p>
+                         <div class="boundless-button sm dark give"><span><a href="#">Give now</a></span></div>
+                       </div>
+                     </div>
+                 </div>
+           </div>
+         </section>
 
 </main>
 

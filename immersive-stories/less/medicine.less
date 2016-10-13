@@ -758,6 +758,21 @@ section.person-2 {
 	padding: 30px 40px;
 	background: url("@{medicine}/bg-pattern-callout.svg") no-repeat right top @ultralightgold;
     min-width: 265px;
+    &.lg {
+        background-image: url("@{medicine}/hands.svg");
+        h3 {
+            display: inline-block;
+            font-size: 30px;
+            font-family:  @uni;
+            text-transform: uppercase;
+            border-bottom: 1px solid white;
+            padding-bottom: 9px;
+        }
+        p {
+            line-height: 1.7;
+            font-size: 16px;
+        }
+    }
 	h3 {
 		font-weight: @ultra;
 		color: @purple;
@@ -789,6 +804,9 @@ section.person-2 {
 
 	}
 	@media(min-width:768px) {
+        &.lg {
+            width: 55%;
+        }
 		width: 40%;
 		margin: 10px -20% 20px 40px;
 	}
@@ -814,6 +832,7 @@ section.person-2 {
 	}
 	@media(min-width:768px) {
 	     padding-top: 100px;
+         margin-bottom: 20px;
 	}
 }
 
