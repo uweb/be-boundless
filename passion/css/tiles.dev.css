@@ -1750,11 +1750,16 @@
     width: 20px;
     right: 8px;
     bottom: 8px;
-    border: 2px;
   }
   #passion .module-hero-image .row .fyp-filter-triggers .flip-container .circle-icon.plus p.ic-custom:before {
     font-size: 16px;
     margin-top: -3px;
+  }
+  #passion .module-hero-image .row .fyp-filter-triggers .flip-container .circle-icon.front .plus {
+    border: 2px solid white;
+  }
+  #passion .module-hero-image .row .fyp-filter-triggers .flip-container .circle-icon.back .plus {
+    border: 2px solid #b7a57a;
   }
   #passion .module-hero-image .row .fyp-filter-triggers .circle-text {
     font-size: 18px;
