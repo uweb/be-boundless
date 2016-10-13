@@ -35,5 +35,10 @@
 
   </style>
 
+  <?php 
+    echo get_post_meta( get_the_ID() , 'javascript' , 'true' ); 
+    echo get_post_meta( get_the_ID() , 'css' , 'true' ); 
+  ?>
+
 
 </head>
