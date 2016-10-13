@@ -8,7 +8,7 @@
     </div>
     <div tabindex="-1" class="thick">
       <ul>
-        <li><a href="campaign">Home</a></li>
+        <li><a href="campaign">Campaign Home</a></li>
         <li><a href="experience">Experience</a></li>
         <li><a href="leadership">About the Campaign</a></li>
         <li><a href="passion">Find Your Passion</a></li>

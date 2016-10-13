@@ -110,7 +110,7 @@
           <div id="slide8text">
             <h2>How will you change the world?</h2> 
             <p>Explore more and find ways to connect your passion with philanthropy.</p>
-            <a href="passion" class="uw-btn btn-sm">Learn more</a>
+            <a href="passion" class="uw-btn btn-sm">Explore the campaign</a>
           </div>
           <span class="slide8-content"></span>
           <nav id="camp-footer" role="navigation" aria-label="footer links">
