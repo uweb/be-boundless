@@ -279,6 +279,17 @@ $(window).load(function(){
     return !$.trim(el.html())
   }
 
+  //var close     = document.getElementById('empty');
+  //var give      = document.getElementById('give-now');
+  $('#give-now').on('click', function(e){ 
+    if($('#give-now').innerHTML === 'Give now'){
+      $('#empty').addClass('hide');
+    } else {
+      $('#empty').removeClass('hide');
+    }
+
+  })
+
    $('.give-link').on('click', function(e){
       e.preventDefault(); 
       var allocCode = $( this ).attr('data-code');
