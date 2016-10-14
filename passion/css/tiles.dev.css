@@ -804,7 +804,6 @@
 #passion .fyp-units .full-bio .give-button:hover .give-link {
   color: #FFF;
 }
-#passion .open:not(.unit-small) div.front,
 #passion .fyp-units div.front {
   z-index: 1;
   transform: skewX(-15deg);
@@ -814,8 +813,8 @@
   -ms-transform-origin: bottom right;
   transform-origin: bottom right;
   overflow: hidden;
+  left: auto;
 }
-#passion .open:not(.unit-small) div.front div,
 #passion .fyp-units div.front div {
   position: absolute;
   top: 0;
@@ -833,7 +832,6 @@
   background-position: center center;
   background-size: cover;
 }
-#passion .open:not(.unit-small) .explore-banner,
 #passion .fyp-units .explore-banner {
   height: 50px;
   position: absolute;
@@ -843,7 +841,6 @@
   z-index: -1;
   text-transform: uppercase;
 }
-#passion .open:not(.unit-small) .explore-banner p,
 #passion .fyp-units .explore-banner p {
   color: #FFF;
   margin-left: 50px;
@@ -964,11 +961,6 @@
   #passion .infographic {
     width: calc(50%);
   }
-}
-#passion .unit-item div.front {
-  left: auto;
-  background-size: cover;
-  z-index: -99;
 }
 #passion .unit-item div.front:before {
   content: '';

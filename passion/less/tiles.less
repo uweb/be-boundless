@@ -720,7 +720,10 @@ button#empty {
               }
             }
         }
-      }
+      }    
+  }
+
+    .fyp-units {
       div.front{
         z-index: 1;
         transform: skewX(-15deg);
@@ -730,8 +733,8 @@ button#empty {
         -ms-transform-origin: bottom right;
         transform-origin: bottom right;
         overflow: hidden;
+        left: auto;
         div {
-          //content: '';
           position: absolute;
           top: 0;
           left: 0;
@@ -744,7 +747,6 @@ button#empty {
           -ms-transform: skew(15deg);
           transform: skew(15deg);
           z-index: -1;
-          //background-image: url('http://cms.dev/boundless/wp-content/themes/be-boundless/passion/assets/building.jpg');
           background-repeat: no-repeat;
           background-position: center center;
           background-size: cover;
@@ -758,33 +760,12 @@ button#empty {
         background-color: @purple;
         z-index: -1;
         text-transform: uppercase;
-        // -webkit-transform: skew(-15deg);
-        // -ms-transform: skew(-15deg);
-        // transform: skew(-15deg);
         p {
-          // -webkit-transform: skew(15deg);
-          // -ms-transform: skew(15deg);
-          // transform: skew(15deg);
           color: #FFF;
           margin-left: 50px;  
           font-size: 22px;
           margin-top: 6px;
         }
-        // &:after {
-        //   content: '';
-        //   position: absolute;
-        //   top: 0;
-        //   right: 0;
-        //   width: 24%;
-        //   height: 100%;
-        //   -webkit-transform-origin: 100% 100%;
-        //   -ms-transform-origin: 100% 100%;
-        //   transform-origin: 100% 100%;
-        //   -webkit-transform: skew(-15deg);
-        //   -ms-transform: skew(-15deg);
-        //   transform: skew(-15deg);
-        //   background-color: @purple;
-        // }
       }
   }
 
@@ -894,9 +875,6 @@ button#empty {
 
   .unit-item {
     div.front {
-      left: auto;
-      background-size: cover;
-      z-index: -99;
         &:before {
         content: '';
         position: absolute;

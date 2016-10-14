@@ -127,6 +127,22 @@
                   $t_id = $cause->term_id;  
                   $term_meta = get_option( "taxonomy_term_$t_id" ); 
                   $imageurl = $term_meta['cause_image'];
+                   $causeargs = array(
+                       'post_type' => 'funds',
+                       'numberposts' => -1,
+                        'tax_query' => array(
+                          array(
+                            'taxonomy' => 'causes',
+                            'field' => 'slug',
+                            'terms' => $cause->slug 
+                          )
+                        )
+                    );
+                    $causequery = new WP_Query($causeargs);
+                    $causecodes = "";
+                    foreach ($causequery->posts as $cq) {
+                      $causecodes .= get_post_meta($cq->ID, 'code', true) . ",";
+                    }
                 ?> 
                   <li tabindex="0" data-name="<?php echo $cause->slug; ?>" id="#<?php echo $cause->slug; ?>" data-img="<?php echo $imageurl; ?>" data-sort="1" class="grid-item fyp-units unit-item open <?php echo $cause->slug; ?>">
                     <div class="flipper" role="button">
@@ -136,8 +152,14 @@
                         <div class="bio-text">
                           <p><?php echo $cause->description; ?></p>
                         </div>
+                          <div class="give-button">
+                            <a href="#" class="give-link" data-code="<?php echo $causecodes; ?>">Give Now</a> 
+                          </div>
                       </div>
-                      <div class="front" style="<?php echo 'background-image:url(' . $imageurl . ');'; ?> "></div>
+                      <div class="front"><div style="<?php echo 'background-image:url(' . $imageurl . ');'; ?> "></div></div>
+                      <div class="explore-banner">
+                        <p>Explore these opportunities</p>
+                      </div>
                     </div>
                   </li>
           <?php
@@ -160,7 +182,10 @@
                           <p><?php echo $purpose->description; ?></p>
                         </div>
                       </div>
-                      <div class="front" style="<?php echo 'background-image:url(' . $imageurl . ');'; ?> "></div>
+                      <div class="front"><div style="<?php echo 'background-image:url(' . $imageurl . ');'; ?> "></div></div>
+                      <div class="explore-banner">
+                        <p>Explore these opportunities</p>
+                      </div>
                     </div>
                   </li>
                   <?php
@@ -183,7 +208,10 @@
                           <p><?php echo $priority->description; ?></p>
                         </div>
                       </div>
-                      <div class="front" style="<?php echo 'background-image:url(' . $imageurl . ');'; ?> "></div>
+                      <div class="front"><div style="<?php echo 'background-image:url(' . $imageurl . ');'; ?> "></div></div>
+                      <div class="explore-banner">
+                        <p>Explore these opportunities</p>
+                      </div>
                     </div>
                   </li>
           <?php
