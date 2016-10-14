@@ -395,8 +395,11 @@
 #passion .module-hero-image .circle-button-container div.flip-container .flipper {
   width: 100%;
 }
+#passion .module-hero-image .circle-button-container div.fyp-filter-triggers-container {
+  width: 100%;
+}
 #passion .module-hero-image .circle-button-container div {
-  width: 32%;
+  width: 36%;
   display: inline-block;
   vertical-align: top;
   text-align: center;
@@ -496,13 +499,15 @@
 }
 #passion .module-hero-image .circle-button-container div p.circle-text {
   vertical-align: top;
-  margin-top: 30px;
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
   text-align: center;
   color: #FFF;
   font-size: 22px;
   font-weight: 600;
   text-transform: uppercase;
-  margin: 15px 0 0 0;
   line-height: 1;
   letter-spacing: -1px;
 }

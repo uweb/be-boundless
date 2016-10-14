@@ -13,24 +13,20 @@
            ?>
            </div>
            <div class="circle-button-container">
-             <div class="fyp-filter-triggers" data-name="fyp-causes-filters"><a href="#"><div class="flip-container">
-              <div class="flipper" role="button" aria-expanded="false">
-               <div class="circle-icon front"><p class="fyp-filter-icon fyp-heart"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
-               <div class="circle-icon back"><p class="fyp-filter-icon fyp-heart"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
-              </div>
-             </div><p class="circle-text">Causes</p></a></div>
-             <div class="fyp-filter-triggers" data-name="fyp-units-filters"><a href="#"><div class="flip-container">
-              <div class="flipper" role="button" aria-expanded="false">
-               <div class="circle-icon front"><p class="fyp-filter-icon fyp-school"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
-               <div class="circle-icon back"><p class="fyp-filter-icon fyp-school"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
-              </div>
-             </div><p class="circle-text">Schools, colleges, campuses, other key areas</p></a></div>
-             <div class="fyp-filter-triggers" data-name="fyp-purposes-filters"><a href="#"><div class="flip-container">
-              <div class="flipper" role="button" aria-expanded="false">
-               <div class="circle-icon front"><p class="fyp-filter-icon fyp-cert"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
-               <div class="circle-icon back"><p class="fyp-filter-icon fyp-cert"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
-              </div>
-             </div><p class="circle-text">UW Priorities</p></a></div>
+             <div class="fyp-filter-triggers-container">
+               <div class="fyp-filter-triggers" data-name="fyp-causes-filters"><a href="#"><div class="flip-container">
+                <div class="flipper" role="button" aria-expanded="false">
+                 <div class="circle-icon front"><p class="fyp-filter-icon fyp-heart"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
+                 <div class="circle-icon back"><p class="fyp-filter-icon fyp-heart"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
+                </div>
+               </div><p class="circle-text">Causes</p></a></div>
+               <div class="fyp-filter-triggers" data-name="fyp-units-filters"><a href="#"><div class="flip-container">
+                <div class="flipper" role="button" aria-expanded="false">
+                 <div class="circle-icon front"><p class="fyp-filter-icon fyp-school"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
+                 <div class="circle-icon back"><p class="fyp-filter-icon fyp-school"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
+                </div>
+               </div><p class="circle-text">Schools, colleges, campuses, other key areas</p></a></div>
+             </div>
              <hr align="left">
              <div id="fyp-filters-box" class="fyp-filters-box">
                <ul id="fyp-causes-filters" class="fyp-filters">
@@ -53,17 +49,6 @@
                       $search = array(" ","&amp;","&");
                       $slug = ( str_replace($search,"-",strtolower($title)) );
                       echo '<li><p><a href="#" class="fyp-filter-click" data-filter="' . $slug . '">' . $title . '</a></p></li>';
-                  }
-                 ?>
-               </ul>
-               <ul id="fyp-purposes-filters" class="fyp-filters">
-                 <?php
-                  $purposes_parent_terms = get_terms('purposes', array(
-                      'hide_empty' => false,
-                      'parent' => 0
-                  ));
-                  foreach ($purposes_parent_terms as $purpose) {
-                       echo '<li><p><a href="#" class="fyp-filter-click" data-filter="' . $purpose->slug . '">' . $purpose->name . '</a></p></li>';
                   }
                  ?>
                </ul>
