@@ -261,8 +261,11 @@ button#empty {
             width: 100%;
           }
         }
+        div.fyp-filter-triggers-container {
+          width: 100%;
+        }
         div{
-          width: 32%;
+          width: 36%;
           display: inline-block;
           vertical-align: top;
           text-align: center;
@@ -365,13 +368,15 @@ button#empty {
           }
           p.circle-text {
             vertical-align: top;
-            margin-top: 30px;
+            max-width: 300px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 15px;
             text-align: center;
             color: #FFF;
             font-size: 22px;
             font-weight: 600; 
             text-transform: uppercase;
-            margin: 15px 0 0 0;
             line-height: 1;
             letter-spacing: -1px;
           }
@@ -720,6 +725,52 @@ button#empty {
               }
             }
         }
+      }    
+  }
+
+    .fyp-units {
+      div.front{
+        z-index: 1;
+        transform: skewX(-15deg);
+        -ms-transform: skewX(-15deg);
+        -webkit-transform: skewX(-15deg);
+        -webkit-transform-origin: bottom right;
+        -ms-transform-origin: bottom right;
+        transform-origin: bottom right;
+        overflow: hidden;
+        left: auto;
+        div {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          -webkit-transform-origin: bottom right;
+          -ms-transform-origin: bottom right;
+          transform-origin: bottom right;
+          -webkit-transform: skew(15deg);
+          -ms-transform: skew(15deg);
+          transform: skew(15deg);
+          z-index: -1;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+        }
+      }
+      .explore-banner {
+        height: 50px;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        background-color: @purple;
+        z-index: -1;
+        text-transform: uppercase;
+        p {
+          color: #FFF;
+          margin-left: 50px;  
+          font-size: 22px;
+          margin-top: 6px;
+        }
       }
   }
 
@@ -803,7 +854,7 @@ button#empty {
         &.unit-item div.front {
           width: calc(24.8% + 21%);
           &:before {
-            width: 38%;
+            //width: 38%;
           }  
         }
         .full-bio {
@@ -829,21 +880,15 @@ button#empty {
 
   .unit-item {
     div.front {
-      left: auto;
-      background-size: cover;
-      z-index: -99;
         &:before {
         content: '';
         position: absolute;
         top: 0; left: 0;
-        width: 24%; height: 100%;
+        width: 5px; height: 101%;
         -webkit-transform-origin: 100% 0;
         -ms-transform-origin: 100% 0;
         transform-origin: 100% 0;
-        -webkit-transform: skew(-15deg);
-        -ms-transform: skew(-15deg);
-        transform: skew(-15deg);
-        z-index: -1;
+        z-index: 1;
         background-color: #fff;
       }
     }
@@ -914,9 +959,25 @@ button#empty {
           height: 263px;
           background-position: center top;
           height: 560px;
+          -webkit-transform: none;
+          -ms-transform: none;
+          transform: none;
           &:before {
             content: none;
           } 
+          div {
+            -webkit-transform: none;
+            -ms-transform: none;
+            transform: none;
+            position: static;
+          }
+        }
+        &.unit-item div.explore-banner {
+          z-index: 1;
+          text-align: center;
+          p {
+            margin-left: 0;
+          }
         }
         .full-bio {
           margin-left: 33%;

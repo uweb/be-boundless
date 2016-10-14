@@ -395,8 +395,11 @@
 #passion .module-hero-image .circle-button-container div.flip-container .flipper {
   width: 100%;
 }
+#passion .module-hero-image .circle-button-container div.fyp-filter-triggers-container {
+  width: 100%;
+}
 #passion .module-hero-image .circle-button-container div {
-  width: 32%;
+  width: 36%;
   display: inline-block;
   vertical-align: top;
   text-align: center;
@@ -496,13 +499,15 @@
 }
 #passion .module-hero-image .circle-button-container div p.circle-text {
   vertical-align: top;
-  margin-top: 30px;
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
   text-align: center;
   color: #FFF;
   font-size: 22px;
   font-weight: 600;
   text-transform: uppercase;
-  margin: 15px 0 0 0;
   line-height: 1;
   letter-spacing: -1px;
 }
@@ -804,6 +809,49 @@
 #passion .fyp-units .full-bio .give-button:hover .give-link {
   color: #FFF;
 }
+#passion .fyp-units div.front {
+  z-index: 1;
+  transform: skewX(-15deg);
+  -ms-transform: skewX(-15deg);
+  -webkit-transform: skewX(-15deg);
+  -webkit-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  transform-origin: bottom right;
+  overflow: hidden;
+  left: auto;
+}
+#passion .fyp-units div.front div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  transform-origin: bottom right;
+  -webkit-transform: skew(15deg);
+  -ms-transform: skew(15deg);
+  transform: skew(15deg);
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#passion .fyp-units .explore-banner {
+  height: 50px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: #4b2e83;
+  z-index: -1;
+  text-transform: uppercase;
+}
+#passion .fyp-units .explore-banner p {
+  color: #FFF;
+  margin-left: 50px;
+  font-size: 22px;
+  margin-top: 6px;
+}
 #passion .grid-sizer,
 #passion .grid-item {
   outline: 1px solid #fff;
@@ -893,12 +941,6 @@
   #passion .grid-item.fyp-units.unit-item div.front {
     width: calc(45.8%);
   }
-  #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.front:before,
-  #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.front:before,
-  #passion .grid-sizer.fyp-units.unit-item div.front:before,
-  #passion .grid-item.fyp-units.unit-item div.front:before {
-    width: 38%;
-  }
   #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item) .full-bio,
   #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item) .full-bio,
   #passion .grid-sizer.fyp-units .full-bio,
@@ -925,25 +967,17 @@
     width: calc(50%);
   }
 }
-#passion .unit-item div.front {
-  left: auto;
-  background-size: cover;
-  z-index: -99;
-}
 #passion .unit-item div.front:before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
-  width: 24%;
-  height: 100%;
+  width: 5px;
+  height: 101%;
   -webkit-transform-origin: 100% 0;
   -ms-transform-origin: 100% 0;
   transform-origin: 100% 0;
-  -webkit-transform: skew(-15deg);
-  -ms-transform: skew(-15deg);
-  transform: skew(-15deg);
-  z-index: -1;
+  z-index: 1;
   background-color: #fff;
 }
 #passion .unit-item div.full-bio {
@@ -1021,12 +1055,37 @@
     height: 263px;
     background-position: center top;
     height: 560px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
   }
   #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.front:before,
   #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.front:before,
   #passion .grid-sizer.fyp-units.unit-item div.front:before,
   #passion .grid-item.fyp-units.unit-item div.front:before {
     content: none;
+  }
+  #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.front div,
+  #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.front div,
+  #passion .grid-sizer.fyp-units.unit-item div.front div,
+  #passion .grid-item.fyp-units.unit-item div.front div {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    position: static;
+  }
+  #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.explore-banner,
+  #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.explore-banner,
+  #passion .grid-sizer.fyp-units.unit-item div.explore-banner,
+  #passion .grid-item.fyp-units.unit-item div.explore-banner {
+    z-index: 1;
+    text-align: center;
+  }
+  #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.explore-banner p,
+  #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.explore-banner p,
+  #passion .grid-sizer.fyp-units.unit-item div.explore-banner p,
+  #passion .grid-item.fyp-units.unit-item div.explore-banner p {
+    margin-left: 0;
   }
   #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item) .full-bio,
   #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item) .full-bio,

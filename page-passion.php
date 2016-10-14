@@ -13,27 +13,23 @@
            ?>
            </div>
            <div class="circle-button-container">
-             <div class="fyp-filter-triggers" data-name="fyp-causes-filters"><a href="#"><div class="flip-container">
-              <div class="flipper" role="button" aria-expanded="false">
-               <div class="circle-icon front"><p class="fyp-filter-icon fyp-heart"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
-               <div class="circle-icon back"><p class="fyp-filter-icon fyp-heart"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
-              </div>
-             </div><p class="circle-text">Causes</p></a></div>
-             <div class="fyp-filter-triggers" data-name="fyp-units-filters"><a href="#"><div class="flip-container">
-              <div class="flipper" role="button" aria-expanded="false">
-               <div class="circle-icon front"><p class="fyp-filter-icon fyp-school"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
-               <div class="circle-icon back"><p class="fyp-filter-icon fyp-school"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
-              </div>
-             </div><p class="circle-text">Schools, colleges, campuses, other key areas</p></a></div>
-             <div class="fyp-filter-triggers" data-name="fyp-purposes-filters"><a href="#"><div class="flip-container">
-              <div class="flipper" role="button" aria-expanded="false">
-               <div class="circle-icon front"><p class="fyp-filter-icon fyp-cert"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
-               <div class="circle-icon back"><p class="fyp-filter-icon fyp-cert"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
-              </div>
-             </div><p class="circle-text">UW Priorities</p></a></div>
-             <hr align="left">
+             <div class="fyp-filter-triggers-container">
+               <div class="fyp-filter-triggers" data-name="fyp-causes-filters"><a href="#"><div class="flip-container active">
+                <div class="flipper" role="button" aria-expanded="false">
+                 <div class="circle-icon front"><p class="fyp-filter-icon fyp-heart"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
+                 <div class="circle-icon back"><p class="fyp-filter-icon fyp-heart"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
+                </div>
+               </div><p class="circle-text">Causes</p></a></div>
+               <div class="fyp-filter-triggers" data-name="fyp-units-filters"><a href="#"><div class="flip-container">
+                <div class="flipper" role="button" aria-expanded="false">
+                 <div class="circle-icon front"><p class="fyp-filter-icon fyp-school"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
+                 <div class="circle-icon back"><p class="fyp-filter-icon fyp-school"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
+                </div>
+               </div><p class="circle-text">Schools, colleges, campuses, other key areas</p></a></div>
+             </div>
+             <hr align="left" class="reduce">
              <div id="fyp-filters-box" class="fyp-filters-box">
-               <ul id="fyp-causes-filters" class="fyp-filters">
+               <ul id="fyp-causes-filters" class="fyp-filters show">
                  <?php
                   $causes_parent_terms = get_terms('causes', array(
                       'hide_empty' => false,
@@ -53,17 +49,6 @@
                       $search = array(" ","&amp;","&");
                       $slug = ( str_replace($search,"-",strtolower($title)) );
                       echo '<li><p><a href="#" class="fyp-filter-click" data-filter="' . $slug . '">' . $title . '</a></p></li>';
-                  }
-                 ?>
-               </ul>
-               <ul id="fyp-purposes-filters" class="fyp-filters">
-                 <?php
-                  $purposes_parent_terms = get_terms('purposes', array(
-                      'hide_empty' => false,
-                      'parent' => 0
-                  ));
-                  foreach ($purposes_parent_terms as $purpose) {
-                       echo '<li><p><a href="#" class="fyp-filter-click" data-filter="' . $purpose->slug . '">' . $purpose->name . '</a></p></li>';
                   }
                  ?>
                </ul>
@@ -127,6 +112,22 @@
                   $t_id = $cause->term_id;  
                   $term_meta = get_option( "taxonomy_term_$t_id" ); 
                   $imageurl = $term_meta['cause_image'];
+                   $causeargs = array(
+                       'post_type' => 'funds',
+                       'numberposts' => -1,
+                        'tax_query' => array(
+                          array(
+                            'taxonomy' => 'causes',
+                            'field' => 'slug',
+                            'terms' => $cause->slug 
+                          )
+                        )
+                    );
+                    $causequery = new WP_Query($causeargs);
+                    $causecodes = "";
+                    foreach ($causequery->posts as $cq) {
+                      $causecodes .= get_post_meta($cq->ID, 'code', true) . ",";
+                    }
                 ?> 
                   <li tabindex="0" data-name="<?php echo $cause->slug; ?>" id="#<?php echo $cause->slug; ?>" data-img="<?php echo $imageurl; ?>" data-sort="1" class="grid-item fyp-units unit-item open <?php echo $cause->slug; ?>">
                     <div class="flipper" role="button">
@@ -136,8 +137,14 @@
                         <div class="bio-text">
                           <p><?php echo $cause->description; ?></p>
                         </div>
+                          <div class="give-button">
+                            <a href="#" class="give-link" data-code="<?php echo $causecodes; ?>">Give Now</a> 
+                          </div>
                       </div>
-                      <div class="front" style="<?php echo 'background-image:url(' . $imageurl . ');'; ?> "></div>
+                      <div class="front"><div style="<?php echo 'background-image:url(' . $imageurl . ');'; ?> "></div></div>
+                      <div class="explore-banner">
+                        <p>Explore these opportunities</p>
+                      </div>
                     </div>
                   </li>
           <?php
@@ -160,7 +167,10 @@
                           <p><?php echo $purpose->description; ?></p>
                         </div>
                       </div>
-                      <div class="front" style="<?php echo 'background-image:url(' . $imageurl . ');'; ?> "></div>
+                      <div class="front"><div style="<?php echo 'background-image:url(' . $imageurl . ');'; ?> "></div></div>
+                      <div class="explore-banner">
+                        <p>Explore these opportunities</p>
+                      </div>
                     </div>
                   </li>
                   <?php
@@ -183,7 +193,10 @@
                           <p><?php echo $priority->description; ?></p>
                         </div>
                       </div>
-                      <div class="front" style="<?php echo 'background-image:url(' . $imageurl . ');'; ?> "></div>
+                      <div class="front"><div style="<?php echo 'background-image:url(' . $imageurl . ');'; ?> "></div></div>
+                      <div class="explore-banner">
+                        <p>Explore these opportunities</p>
+                      </div>
                     </div>
                   </li>
           <?php
@@ -215,7 +228,7 @@
            // }
           //
            //get the slug
-            $search = array(" ","&amp;","&");
+            $search = array(" ","&amp;","&","'","#8217;");
             $slug = ( str_replace($search,"-",strtolower($unit->post_title)) );
 
             //get all funds alloc codes
@@ -266,7 +279,10 @@
                 </div>
                 <?php } ?>
               </div>
-              <div class="front" style="<?php echo 'background-image:url(' . $unitimageurlhigh . ');'; ?> "></div>
+              <div class="front"><div style="<?php echo 'background-image:url(' . $unitimageurlhigh . ');'; ?> "></div></div>
+              <div class="explore-banner">
+                <p>Explore these opportunities</p>
+              </div>
             </div>
           </li>
 
