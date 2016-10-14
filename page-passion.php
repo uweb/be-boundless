@@ -14,7 +14,7 @@
            </div>
            <div class="circle-button-container">
              <div class="fyp-filter-triggers-container">
-               <div class="fyp-filter-triggers" data-name="fyp-causes-filters"><a href="#"><div class="flip-container">
+               <div class="fyp-filter-triggers" data-name="fyp-causes-filters"><a href="#"><div class="flip-container active">
                 <div class="flipper" role="button" aria-expanded="false">
                  <div class="circle-icon front"><p class="fyp-filter-icon fyp-heart"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
                  <div class="circle-icon back"><p class="fyp-filter-icon fyp-heart"></p><div class="circle-icon plus"><p class="ic-custom"></p></div></div>
@@ -27,9 +27,9 @@
                 </div>
                </div><p class="circle-text">Schools, colleges, campuses, other key areas</p></a></div>
              </div>
-             <hr align="left">
+             <hr align="left" class="reduce">
              <div id="fyp-filters-box" class="fyp-filters-box">
-               <ul id="fyp-causes-filters" class="fyp-filters">
+               <ul id="fyp-causes-filters" class="fyp-filters show">
                  <?php
                   $causes_parent_terms = get_terms('causes', array(
                       'hide_empty' => false,
