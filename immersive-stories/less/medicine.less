@@ -325,6 +325,9 @@ div.boundless-button span a#expander:after {
         .background-profile {
         	padding: 150px 80px 150px;  
         	position: relative;
+        }
+
+        &.person-1 .background-profile {
             &:after {
                 position: absolute;
                 right: 10px;
@@ -342,8 +345,7 @@ div.boundless-button span a#expander:after {
                     .scale(1,1);
                 }
             }
-        }
-        
+        }        
         .transform {
             opacity: 0;
             .transition(all .2s linear);
@@ -815,7 +817,7 @@ section.person-2 {
 .callout {
 	float: right;
 	padding: 30px 40px;
-	background: url("@{medicine}/bg-pattern-callout.svg") no-repeat right top @ultralightgold;
+	background: url("@{medicine}/tri.svg") no-repeat right bottom @ultralightgold;
     min-width: 265px;
     &.lg {
         background-image: url("@{medicine}/hands.svg");
@@ -894,8 +896,17 @@ section.person-2 {
 		}
 	}
 	@media(min-width:768px) {
-	     padding-top: 100px;
+         padding-top: 100px;
+	     padding-bottom: 100px;
          margin-bottom: 20px;
 	}
 }
-
+.give-box {
+    @media(min-width:768px) {
+        background: url("@{medicine}/desk.svg") no-repeat right bottom;
+        padding: 0 0 60px;
+        .copy {
+            background: none;
+        }
+    }
+}

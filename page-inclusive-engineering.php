@@ -100,13 +100,27 @@
                           <p><span>Adjunct Professor</span> / Bioengineering, Electrical Engineering</p>
                           <p><span>Faculty Member</span> / Graduate Program in Neuroscience</p>                          
                       </div>
+                      <svg class="svg-plus" xmlns="http://www.w3.org/2000/svg" width="50.98" height="50.6" viewBox="0 0 50.98 50.6"><path fill="#B7A57A" d="M46.684 0v46.684H0"/><g fill="#FFF"><path d="M31.374 25.113h1.98v14.502h-1.98z"/><path d="M25.113 31.374h14.503v1.98H25.113z"/></g></svg>
+
                   </li>
                   <li class="pax-2" tabindex="0">
                       <div class="hider">
                           <h2>Chet Moritz</h2>
                           <p><span>Deputy Director</span> / Center for Sensorimotor Neural Engineering</p>
                           <p><span>Associate Professor</span> / Rehabilitation Medicine, Physiology and Biophysics</p>
+                          <p><span>Faculty Member</span> / Graduate Program in Neuroscience</p>         
+                          <p><span>Adjunct Associate Professor</span> / Electrical Engineering</p>   
                       </div>
+                      <svg class="svg-plus" xmlns="http://www.w3.org/2000/svg" width="50.98" height="50.6" viewBox="0 0 50.98 50.6"><path fill="#B7A57A" d="M46.684 0v46.684H0"/><g fill="#FFF"><path d="M31.374 25.113h1.98v14.502h-1.98z"/><path d="M25.113 31.374h14.503v1.98H25.113z"/></g></svg>
+                  </li>
+                  <li class="pax-4" tabindex="0">
+                      <div class="hider">
+                          <h2>Kat Steele</h2>
+                          <p><span>Director</span> / Ability &amp; Innovation Lab </p>
+                          <p><span>Assistant Professor</span> / Mechanical Engineering</p>
+                          <p><span>Member </span> / Center for Sensorimotor Neural Engineering</p>
+                      </div>
+                      <svg class="svg-plus" xmlns="http://www.w3.org/2000/svg" width="50.98" height="50.6" viewBox="0 0 50.98 50.6"><path fill="#B7A57A" d="M46.684 0v46.684H0"/><g fill="#FFF"><path d="M31.374 25.113h1.98v14.502h-1.98z"/><path d="M25.113 31.374h14.503v1.98H25.113z"/></g></svg>
                   </li>
                   <li class="pax-3" tabindex="0">
                       <div class="hider">
@@ -115,14 +129,7 @@
                           <p><span>Vice Chair for Research and Discovery</span> / Department of Neurological Surgery, UW Medicine</p>
                           <p><span>Professor</span> / Neurological Surgery </p>
                       </div>
-                  </li>
-                  <li class="pax-4" tabindex="0">
-                      <div class="hider">
-                          <h2>Kat Steele</h2>
-                          <p><span>Director</span> / Human Ability &amp; Engineering Laboratory </p>
-                          <p><span>Assistant Professor</span> / Mechanical Engineering</p>
-                          <p><span>Member </span> / Center for Sensorimotor Neural Engineering</p>
-                      </div>
+                      <svg class="svg-plus" xmlns="http://www.w3.org/2000/svg" width="50.98" height="50.6" viewBox="0 0 50.98 50.6"><path fill="#B7A57A" d="M46.684 0v46.684H0"/><g fill="#FFF"><path d="M31.374 25.113h1.98v14.502h-1.98z"/><path d="M25.113 31.374h14.503v1.98H25.113z"/></g></svg>
                   </li>
               </ul>
           </div>
@@ -141,7 +148,7 @@
                       
                       <p>The brain is the control center for the nervous system, firing neurons full of information and commands through our bodies. At the CSNE, researchers are unpacking what exactly the intent to move looks like by recording brain activity through electrocorticography (ECoG), a monitoring practice in which a grid of electrodes is placed directly on the surface of the brain. </p>     
 
-                      <p>The participants in the CSNE’s ECoG studies are epilepsy patients who have volunteered to assist the CSNE with its research (ECoG is the go-to approach for mapping the origin of seizures) during their one- to two- week hospital stay. There, CSNE researchers supervised by Dr. Ojemann connect the signals measured directly from the brain to a computer translator of sorts and, without physically lifting a finger, the participants practice thinking of controlling a cursor on a screen, an avatar hand, or even a robotic arm. The researchers ask the participant to imagine completing a task — grabbing that cup of coffee, perhaps — then use those signals to enable the participant to control the electronic limb with their brain. </p>
+                      <p>The participants in the CSNE’s ECoG studies are epilepsy patients who have volunteered to assist the CSNE with its research (ECoG is the go-to approach for mapping the origin of seizures) during their one- to two-week hospital stay. There, CSNE researchers supervised by Dr. Ojemann connect the signals measured directly from the brain to a computer translator of sorts and, without physically lifting a finger, the participants practice thinking of controlling a cursor on a screen, an avatar hand, or even a robotic arm. The researchers ask the participant to imagine completing a task — grabbing that cup of coffee, perhaps — then use those signals to enable the participant to control the electronic limb with their brain. </p>
 
 
                    </div> 
@@ -175,11 +182,11 @@
 
 <p>“In the future, for someone like Jayna who may not have sensation in parts of the left side of her body, this research holds the potential to restore function. Even if parts of the brain aren’t there, we want to take advantage of the brain’s ability to learn and use other available parts of the brain — and the deep structures within it — to receive sensory feedback,” says Ojemann. </p>
 
-<p>This feedback could mean helping patients who use a robotic limb not just open and close their palm, but apply the right amount of pressure to complete various tasks. </p>
+<p>This feedback could mean helping patients who use a robotic limb not just open and close their palms, but apply the right amount of pressure to complete various tasks. </p>
 
 <p>“Now that we know we can extract activity from the brain and control avatar hands and robotic arms and receive sensory feedback, what happens if we want to control our own paralyzed limb?” poses Moritz. “We can electrically stimulate the spinal cord below the level of the injury using an implantable device, a type of brain-computer interface (BCI).” </p>
 
-<p>The concept is this: the brain activity is recorded, decoded and an algorithm is created. That information is then used to program the implantable BCI — essentially, chips and wires that acts as a pseudo nervous system, creating a bridge to reconnect the brain to the spinal cord below the injury. The device listens to the brain, and then says ‘Oh, the person wants to do this — let’s help them,’” says Moritz. “We’re trying to make the algorithms smarter, to allow the device learn in real time. Just as our brain or spinal cord would learn with practice, so would this little implant.” </p>
+<p>The concept is this: the brain activity is recorded, decoded and an algorithm is created. That information is then used to program the implantable BCI — essentially, chips and wires that act as a pseudo nervous system, creating a bridge to reconnect the brain to the spinal cord below the injury. The device listens to the brain, and then says ‘Oh, the person wants to do this — let’s help them,’” says Moritz. “We’re trying to make the algorithms smarter, to allow the device learn in real time. Just as our brain or spinal cord would learn with practice, so would this little implant.” </p>
 
                    </div> 
              </div> 
@@ -280,7 +287,7 @@
                      <div class="col-md-10 col-md-offset-1 copy">
                        <div style="text-align: center">             
                          <h2 class="headline-gold">FPO</h2>
-                         <p>Lakeridge Elementary is just one story of success. With your support, the College of Education can improve teaching quality and transform K-12   learning across the Puget Sound region.</p>
+                         <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                          <div class="boundless-button sm dark give"><span><a href="#">Give now</a></span></div>
                        </div>
                      </div>
