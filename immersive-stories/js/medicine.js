@@ -1,6 +1,7 @@
 $(function(){
 
-  var controllerMedicine = new ScrollMagic.Controller()
+  var body = document.getElementsByTagName('body')[0];
+  var controllerMedicine = new ScrollMagic.Controller();
 
     var introMedicine = new ScrollMagic.Scene({
       triggerElement: '#intro-slide',
@@ -24,6 +25,13 @@ $(function(){
     })
     .reverse(false)
     .addTo(controllerMedicine);
+
+
+    // Accordion action
+    document.getElementById('expander').addEventListener('click',function(e){
+      e.preventDefault();
+      body.classList.toggle('accord-open');
+    });
 
 
     // Add video for video scroll
