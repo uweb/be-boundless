@@ -155,6 +155,13 @@
   /* Extra Small Devices, Phones */
   /* Custom, iPhone Retina */
 }
+#passion #boundless-logo {
+  width: 400px;
+  position: absolute;
+  bottom: 135px;
+  left: 60px;
+  z-index: 1;
+}
 #passion .fyp-button {
   -webkit-transform: skew(-15deg, 0);
   -ms-transform: skewX(-15deg) skewY(0);
@@ -190,6 +197,7 @@
   margin-left: auto;
   width: 100%;
   bottom: 0;
+  z-index: 1;
 }
 #passion div.explore-footer ul.footer-links {
   padding: 0;
@@ -203,6 +211,14 @@
 #passion div.explore-footer ul.footer-links li a:hover {
   color: #b7a57a;
   text-decoration: underline;
+}
+#passion div.footer-shadow {
+  position: absolute;
+  width: 100%;
+  height: 210px;
+  background-color: rgba(68, 41, 119, 0.5);
+  bottom: 0;
+  z-index: 0;
 }
 #passion button#empty {
   position: fixed;
@@ -1743,6 +1759,11 @@
 @media only screen and (max-width: 1200px) {
   #passion .module-hero-image .circle-button-container {
     width: 100%;
+  }
+  #passion #boundless-logo {
+    width: 300px;
+    bottom: 140px;
+    left: 30px;
   }
 }
 @media only screen and (max-width: 992px) {
