@@ -7,6 +7,14 @@
 
 #passion { 
 
+  #boundless-logo {
+    width: 400px;
+    position: absolute;
+    bottom: 135px;
+    left: 60px;
+    z-index: 1;
+  }
+
   .fyp-button {
     -webkit-transform: skew(-15deg, 0);
     -ms-transform: skewX(-15deg) skewY(0);
@@ -46,6 +54,7 @@
     margin-left: auto;
     width: 100%;
     bottom: 0;
+    z-index: 1;
     ul.footer-links {
       padding: 0;
     }
@@ -59,6 +68,14 @@
       color: @lightgold;
       text-decoration: underline;
     }
+  }
+  div.footer-shadow {
+    position: absolute;
+    width: 100%;
+    height: 210px;
+    background-color: rgba(68, 41, 119, 0.5);
+    bottom: 0;
+    z-index: 0;
   }
 
   // Dynamic close button
@@ -1658,6 +1675,11 @@ button#empty {
     .circle-button-container {
       width: 100%;
     }
+  }
+  #passion #boundless-logo {
+    width: 300px;
+    bottom: 140px;
+    left: 30px;  
   }
 }
 
