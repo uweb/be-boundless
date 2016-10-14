@@ -215,7 +215,7 @@
            // }
           //
            //get the slug
-            $search = array(" ","&amp;","&");
+            $search = array(" ","&amp;","&","'","#8217;");
             $slug = ( str_replace($search,"-",strtolower($unit->post_title)) );
 
             //get all funds alloc codes
@@ -266,7 +266,10 @@
                 </div>
                 <?php } ?>
               </div>
-              <div class="front" style="<?php echo 'background-image:url(' . $unitimageurlhigh . ');'; ?> "></div>
+              <div class="front"><div style="<?php echo 'background-image:url(' . $unitimageurlhigh . ');'; ?> "></div></div>
+              <div class="explore-banner">
+                <p>Explore these opportunities</p>
+              </div>
             </div>
           </li>
 

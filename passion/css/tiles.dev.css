@@ -217,7 +217,7 @@
   text-transform: capitalize;
   line-height: 0;
   color: transparent;
-  box-shadow: -1px 1px 2px #0003 3;
+  box-shadow: -1px 1px 2px #000000 3;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   -webkit-transform: translate(75px, 0);
@@ -608,7 +608,7 @@
 }
 #passion .grid,
 #passion .search-grid {
-  background: url(../assets/stripes.svg) #E8E8E8;
+  background: url(../assets/stripes.svg) #e8e8e8;
 }
 #passion li.grid-item.search-more div,
 #passion li.grid-item.filter-item div {
@@ -803,6 +803,51 @@
 #passion .open:not(.unit-small) .full-bio .give-button:hover .give-link,
 #passion .fyp-units .full-bio .give-button:hover .give-link {
   color: #FFF;
+}
+#passion .open:not(.unit-small) div.front,
+#passion .fyp-units div.front {
+  z-index: 1;
+  transform: skewX(-15deg);
+  -ms-transform: skewX(-15deg);
+  -webkit-transform: skewX(-15deg);
+  -webkit-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  transform-origin: bottom right;
+  overflow: hidden;
+}
+#passion .open:not(.unit-small) div.front div,
+#passion .fyp-units div.front div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  transform-origin: bottom right;
+  -webkit-transform: skew(15deg);
+  -ms-transform: skew(15deg);
+  transform: skew(15deg);
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#passion .open:not(.unit-small) .explore-banner,
+#passion .fyp-units .explore-banner {
+  height: 100px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: #4b2e83;
+  z-index: -1;
+}
+#passion .open:not(.unit-small) .explore-banner p,
+#passion .fyp-units .explore-banner p {
+  color: #FFF;
+  margin-left: 20px;
+  font-size: 22px;
+  margin-top: 25px;
 }
 #passion .grid-sizer,
 #passion .grid-item {
@@ -1021,12 +1066,31 @@
     height: 263px;
     background-position: center top;
     height: 560px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
   }
   #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.front:before,
   #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.front:before,
   #passion .grid-sizer.fyp-units.unit-item div.front:before,
   #passion .grid-item.fyp-units.unit-item div.front:before {
     content: none;
+  }
+  #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.front div,
+  #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.front div,
+  #passion .grid-sizer.fyp-units.unit-item div.front div,
+  #passion .grid-item.fyp-units.unit-item div.front div {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    position: static;
+  }
+  #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.explore-banner,
+  #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.explore-banner,
+  #passion .grid-sizer.fyp-units.unit-item div.explore-banner,
+  #passion .grid-item.fyp-units.unit-item div.explore-banner {
+    z-index: 1;
+    text-align: center;
   }
   #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item) .full-bio,
   #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item) .full-bio,
@@ -1233,8 +1297,6 @@
   #passion .infographic {
     width: calc(100%);
   }
-}
-@media only screen and (max-width: 320px) {
 }
 #passion .grid-item.special {
   background-color: #4b2e83;
