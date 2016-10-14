@@ -835,19 +835,20 @@
 }
 #passion .open:not(.unit-small) .explore-banner,
 #passion .fyp-units .explore-banner {
-  height: 100px;
+  height: 50px;
   position: absolute;
   width: 100%;
   bottom: 0;
   background-color: #4b2e83;
   z-index: -1;
+  text-transform: uppercase;
 }
 #passion .open:not(.unit-small) .explore-banner p,
 #passion .fyp-units .explore-banner p {
   color: #FFF;
-  margin-left: 20px;
+  margin-left: 50px;
   font-size: 22px;
-  margin-top: 25px;
+  margin-top: 6px;
 }
 #passion .grid-sizer,
 #passion .grid-item {
@@ -938,12 +939,6 @@
   #passion .grid-item.fyp-units.unit-item div.front {
     width: calc(45.8%);
   }
-  #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.front:before,
-  #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.front:before,
-  #passion .grid-sizer.fyp-units.unit-item div.front:before,
-  #passion .grid-item.fyp-units.unit-item div.front:before {
-    width: 38%;
-  }
   #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item) .full-bio,
   #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item) .full-bio,
   #passion .grid-sizer.fyp-units .full-bio,
@@ -980,15 +975,12 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 24%;
-  height: 100%;
+  width: 5px;
+  height: 101%;
   -webkit-transform-origin: 100% 0;
   -ms-transform-origin: 100% 0;
   transform-origin: 100% 0;
-  -webkit-transform: skew(-15deg);
-  -ms-transform: skew(-15deg);
-  transform: skew(-15deg);
-  z-index: -1;
+  z-index: 1;
   background-color: #fff;
 }
 #passion .unit-item div.full-bio {
@@ -1091,6 +1083,12 @@
   #passion .grid-item.fyp-units.unit-item div.explore-banner {
     z-index: 1;
     text-align: center;
+  }
+  #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.explore-banner p,
+  #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.explore-banner p,
+  #passion .grid-sizer.fyp-units.unit-item div.explore-banner p,
+  #passion .grid-item.fyp-units.unit-item div.explore-banner p {
+    margin-left: 0;
   }
   #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item) .full-bio,
   #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item) .full-bio,
