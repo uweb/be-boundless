@@ -108,6 +108,7 @@
                           <h2>Chet Moritz</h2>
                           <p><span>Deputy Director</span> / Center for Sensorimotor Neural Engineering</p>
                           <p><span>Associate Professor</span> / Rehabilitation Medicine, Physiology and Biophysics</p>
+                          <p><span>Faculty Member</span> / Graduate Program in Neuroscience</p>         
                           <p><span>Adjunct Associate Professor</span> / Electrical Engineering</p>   
                       </div>
                       <svg class="svg-plus" xmlns="http://www.w3.org/2000/svg" width="50.98" height="50.6" viewBox="0 0 50.98 50.6"><path fill="#B7A57A" d="M46.684 0v46.684H0"/><g fill="#FFF"><path d="M31.374 25.113h1.98v14.502h-1.98z"/><path d="M25.113 31.374h14.503v1.98H25.113z"/></g></svg>
