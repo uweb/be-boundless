@@ -73,13 +73,13 @@ p {
         position: relative;
         .engineerIntro & {
         	& > span:first-child span {
-        		.animation(slidein 1.5s .1s ease forwards);
+        		.animation(slidein 1.5s ease forwards);
         	}
         	& > span:nth-child(2) span {
-        		.animation(slidein 1.5s .3s ease forwards);
+        		.animation(slidein 1.5s .15s ease forwards);
         	}
         	& > span:last-child span {
-        		.animation(slidein 1.5s .5s ease forwards);
+        		.animation(slidein 1.5s .2s ease forwards);
         	}
         }
         & > span {
@@ -87,7 +87,7 @@ p {
         	display: block;
         	span {
         		display: block;
-        		.translate(0,-100%);
+        		.translate(0,-105%);
         	}
         }
         & > span:first-child {
@@ -432,7 +432,7 @@ p {
             background: url("@{img}/sprite.svg") no-repeat -79px -329px rgba(0,0,0,0);
             width: 101px;
             height: 95px;
-            bottom: -15px;
+            bottom: -9px;
             right: 0;
             opacity: .8;
             .transition(all .1s linear);
@@ -468,20 +468,21 @@ p {
             padding: 14px 150px 13px 20px;
             -webkit-font-smoothing: antialiased;
             font-size: 35px;
+            outline: 15px solid rgba(183,165,122,0.3);
             &:before {
                 background: url("@{img}/sprite.svg") no-repeat 9px -289px rgba(0,0,0,0);
                 width: 52px;
                 height: 145px;
-                bottom: -41px;
+                bottom: -29px;
                 right: 100px;
                 opacity: .8;
             }
             &:focus,
             &:active {                
-                outline: 15px solid rgba(183,165,122,0.4);
+                outline: 15px solid rgba(183,165,122,0.8);
             }
             &:hover {                
-                outline: 15px solid rgba(183,165,122,0.2);
+                outline: 15px solid rgba(183,165,122,0.7);
             }
         }
         h2 {
@@ -695,6 +696,11 @@ p {
     .container {
         text-align: right;
     }
+    .svg-plus {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
     #people {
         padding-left: 0;
         li {
@@ -707,7 +713,8 @@ p {
             position: relative;
             overflow: hidden;
             display: inline-block;
-            outline: 5px solid #fff;
+            border-right: 5px solid #fff;
+            border-bottom: 5px solid #fff;
             &:hover,
             &:active,
             &:focus,

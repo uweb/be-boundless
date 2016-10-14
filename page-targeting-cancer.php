@@ -218,7 +218,7 @@
                 </section>
 
 
-                <section class="text-block">
+                <section class="text-block give-box">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-10 col-md-offset-1 copy">
