@@ -45,12 +45,15 @@
                   $args = array('post_type' => 'units', 'fields' => 'ids', 'orderby' => 'title', 'order' => 'asc', 'numberposts' => '-1');
                   $units = get_posts($args);
                   foreach ($units as $unit => $ID) {
-                      $title = get_the_title($ID);
-                      $search = array(" ","&amp;","&");
-                      $slug = ( str_replace($search,"-",strtolower($title)) );
-                      echo '<li><p><a href="#" class="fyp-filter-click" data-filter="' . $slug . '">' . $title . '</a></p></li>';
+                      if($ID != '2760'){
+                        $title = get_the_title($ID);
+                        $search = array(" ","&amp;","&");
+                        $slug = ( str_replace($search,"-",strtolower($title)) );
+                        echo '<li><p><a href="#" class="fyp-filter-click" data-filter="' . $slug . '">' . $title . '</a></p></li>';
+                      }
                   }
                  ?>
+                 <li><p><a href="#" class="fyp-filter-click" data-filter="president-s-fund-for-excellence">President’s fund for excellence</a></p></li>
                </ul>
              </div>
            </div>
