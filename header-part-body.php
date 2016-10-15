@@ -10,7 +10,7 @@
       <ul>
         <li><a href="campaign">Campaign Home</a></li>
         <li><a href="experience">Experience</a></li>
-        <li><a href="about">About the Campaign</a></li>
+        <li><a href="about">About</a></li>
         <li><a href="passion">Explore the Campaign</a></li>
         <li><button id="give-now">Give now</button></li>
       </ul>        
