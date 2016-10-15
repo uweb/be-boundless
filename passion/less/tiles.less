@@ -7,11 +7,19 @@
 
 #passion { 
 
-  #boundless-logo {
-    width: 400px;
-    position: absolute;
-    bottom: 135px;
-    left: 60px;
+  div.boundless-logo {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    margin-bottom: -50px;
+    margin-top: 50px;
+    #boundless-logo {
+      width: 400px;
+      position: relative;
+      margin-left: auto;  
+      margin-right: auto;
+    }
   }
 
   .fyp-button {
@@ -1666,11 +1674,6 @@ button#empty {
       width: 100%;
     }
   }
-  #passion #boundless-logo {
-    width: 300px;
-    bottom: 140px;
-    left: 30px;  
-  }
 }
 
 @media only screen and (max-width : 992px) {
@@ -1714,6 +1717,10 @@ button#empty {
         margin: 15px 0 0 0;
       }
       .container:after { display: none; }
+    }
+
+    #passion div.boundless-logo #boundless-logo {
+        width: 350px; 
     }
 
 }

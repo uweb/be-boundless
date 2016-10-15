@@ -155,11 +155,19 @@
   /* Extra Small Devices, Phones */
   /* Custom, iPhone Retina */
 }
-#passion #boundless-logo {
+#passion div.boundless-logo {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  margin-bottom: -50px;
+  margin-top: 50px;
+}
+#passion div.boundless-logo #boundless-logo {
   width: 400px;
-  position: absolute;
-  bottom: 135px;
-  left: 60px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 #passion .fyp-button {
   -webkit-transform: skew(-15deg, 0);
@@ -1748,11 +1756,6 @@
   #passion .module-hero-image .circle-button-container {
     width: 100%;
   }
-  #passion #boundless-logo {
-    width: 300px;
-    bottom: 140px;
-    left: 30px;
-  }
 }
 @media only screen and (max-width: 992px) {
   #passion .module-hero-image h1 {
@@ -1784,6 +1787,9 @@
   }
   .module-hero-image .container:after {
     display: none;
+  }
+  #passion div.boundless-logo #boundless-logo {
+    width: 350px;
   }
 }
 @media only screen and (max-width: 768px) {

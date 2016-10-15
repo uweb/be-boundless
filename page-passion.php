@@ -65,9 +65,8 @@
             </div>
         </div>
       </div>
-      <img id="boundless-logo" src="http://cmsdev.u.washington.edu/boundless/wp-content/themes/be-boundless/campaign/img/be-boundless.png" alt="Be boundless">
+      <div class="boundless-logo"><img id="boundless-logo" src="http://cmsdev.u.washington.edu/boundless/wp-content/themes/be-boundless/campaign/img/be-boundless.png" alt="Be boundless"></div>
       <div class="explore-footer"><?php get_footer('campaign') ?></div>
-      <!-- <div class="footer-shadow"></div> -->
     </div>
 
     <button id="empty">
