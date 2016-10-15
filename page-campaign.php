@@ -109,7 +109,7 @@
         </section><section tabindex="0"  class="section" id="slide8" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg8.jpg">
           <div id="slide8text">
             <h2>How will you change the world?</h2> 
-            <p>Explore more and find ways to connect your passion with philanthropy.</p>
+            <p>Find ways to connect your passion with philanthropy.</p>
             <a href="passion" class="uw-btn btn-sm">Explore the campaign</a>
           </div>
           <span class="slide8-content"></span>
