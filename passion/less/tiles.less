@@ -779,12 +779,33 @@ button#empty {
         bottom: 0;
         background-color: @purple;
         z-index: -1;
-        text-transform: uppercase;
+        //text-transform: uppercase;
         p {
           color: #FFF;
           margin-left: 50px;  
           font-size: 22px;
           margin-top: 6px;
+          &:after {
+            content: "\e92a";
+            font-size: 26px;
+            color: #FFF;
+            font-family: uw-icon;
+            display: inline-block;
+            speak: none;
+            font-style: normal;
+            font-weight: 400;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            transform: rotate(90deg);
+            -ms-transform: rotate(90deg); 
+            -webkit-transform: rotate(90deg);
+            margin-left: 15px;
+            top: 12px;
+            position: absolute;
+          }
         }
       }
   }
@@ -1114,6 +1135,11 @@ button#empty {
             width: 100%;
             height: 350px;
             background-position: center top; 
+          }
+          div.explore-banner p {
+            font-size: 18px;
+            margin-top: 10px;
+            margin-left: -20px;
           }
         }
         &.unit-item div.full-bio {

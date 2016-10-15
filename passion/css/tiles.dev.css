@@ -858,13 +858,33 @@
   bottom: 0;
   background-color: #4b2e83;
   z-index: -1;
-  text-transform: uppercase;
 }
 #passion .fyp-units .explore-banner p {
   color: #FFF;
   margin-left: 50px;
   font-size: 22px;
   margin-top: 6px;
+}
+#passion .fyp-units .explore-banner p:after {
+  content: "\e92a";
+  font-size: 26px;
+  color: #FFF;
+  font-family: uw-icon;
+  display: inline-block;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  margin-left: 15px;
+  top: 12px;
+  position: absolute;
 }
 #passion .grid-sizer,
 #passion .grid-item {
@@ -1271,6 +1291,14 @@
     width: 100%;
     height: 350px;
     background-position: center top;
+  }
+  #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.explore-banner p,
+  #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.explore-banner p,
+  #passion .grid-sizer.fyp-units.unit-item div.explore-banner p,
+  #passion .grid-item.fyp-units.unit-item div.explore-banner p {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: -20px;
   }
   #passion .grid-sizer.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.full-bio,
   #passion .grid-item.open:not(.unit-small):not(.search-more):not(.filter-item).unit-item div.full-bio,
