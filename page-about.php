@@ -240,7 +240,7 @@
           <div class="col-md-4 col-md-offset-1">
             <div class="callout">
               <img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/w.jpg' ?>">
-              <h4 style="padding-left:25px;margin: 0">CONTACT US</h4>
+              <h4 style="margin: 25px 0 0 25px;color:#4b2e83">CONTACT US</h4>
               <p>We welcome your questions, comments or feedback. <br>
               Phone: 206-543-8222 <br>
               Email: being requested</p>
