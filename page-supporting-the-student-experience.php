@@ -4,18 +4,14 @@
 
 <div class="intro" id="intro-slide">
   <div class="intro-body">
-  <button id="pauseVideo">Pause</button>
-  <div id="ytplayer"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-10 col-xs-10 col-xs-offset-1 col-xs-offset-1 col-lg-offset-0" id='intro-text'>
-      
-
-      </div>
-    </div>      
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 col-xs-12 col-lg-offset-1" id='intro-text'>
+            <h1><span><span>Unleashing the </span></span><span><span>student experience</span></span> </h1>
+            <!-- <p>At the vanguard of next-generation precision medicine, Dr. Pamela Becker’s work through the Institute for Stem Cell and Regenerative Medicine is taking aim at cancer.</p> -->
+        </div>
+    </div>
   </div>
-  </div>
-  <a class="read-more" href="#main_content">Read the story</a>  
+  <a class="read-more" href="#main_content">Read the story</a>
 </div>
 
 <ul id="dot-nav">
@@ -704,7 +700,7 @@
                       <div style="text-align: center">             
                         <h2 class="headline-gold">FPO</h2>
                         <p>Lakeridge Elementary is just one story of success. With your support, the College of Education can improve teaching quality and transform K-12   learning across the Puget Sound region.</p>
-                        <div class="boundless-button sm dark give"><span><a href="#">Give now</a></span></div>
+                        <div class="boundless-button sm dark give"><span><a href="passion/#students">Give now</a></span></div>
                       </div>
                     </div>
                 </div>

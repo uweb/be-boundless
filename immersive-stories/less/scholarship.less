@@ -43,9 +43,25 @@ p {
 
 
 
+
+@keyframes slidein {
+  0% {
+    .translate(0,-110%);
+    opacity: 0;
+  }
+  100% {
+    .translate(0,0);
+    opacity: 1;
+  }
+}
+
+
+
 .intro {
-    background-position: center center;
-    .background-cover(cover);
+    background-position: center bottom;;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: white;
     width: 100%;
     height: 100vh;
     padding: 100px 0;
@@ -53,66 +69,52 @@ p {
     color: white;
     overflow: hidden;
     text-align: left;
-    // The video portion
-    .intro-body {
-        height: 100%;
-        position: relative;
-        z-index: 0;
-        iframe {
-            margin: 0;
-            width: 100vw;
-            height: 56.2vw;
-            max-height: 100%;
-            position: absolute;
-            top:50px;
-            .active-header & {
-                top:90px;
-            }
-            // .translate(0,-50%);
-        }
+    #intro-text {
+        text-align: center;
     }
     h1 {
         font-family: @uni;
-        color: white;
+        color: @purple;
         text-transform: uppercase;
         font-weight: normal;
         line-height: 1;
+        display: inline-block;
+        position: relative;
+        .hide-dots & {
+            & > span:first-child span {
+                .animation(slidein 1.5s .1s ease forwards);
+            }
+            & > span:last-child span {
+                .animation(slidein 1.5s .5s ease forwards);
+            }
+        }
+        & > span {
+            overflow:hidden;
+            display: block;
+            span {
+                display: block;
+                .translate(0,-100%);
+            }
+        }
+        & > span:first-child {
+            letter-spacing: 0;
+        }
+        & > span:nth-child(2) {
+            font-family: @font-family-headline;
+            font-weight: @ultra;
+            letter-spacing: 0;
+        }
+        & > span:last-child {
+        }
     }
     p {
-        color: white;
-        text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
-        // font-weight: bold;
+        color: @purple;
+        text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.92);
     }
-    #pauseVideo {
-        position: absolute;
-        z-index: 1;
-        display: block;
-        text-indent: -999px;
-        overflow-x: hidden;
-        width: 45px;
-        height: 45px;
-        left: 45px;
-        bottom: 45px;
-        border: none;
-        background: url("@{img}/pause.svg") no-repeat 0 0 transparent;
+    .intro-body {
+        position: relative;
         z-index: 2;
-        .videoPaused & {
-            background-position: 0 -49px;
-        }
-        &:hover,
-        &:focus {
-            background-position-x: -47px;
-        }
-        &:focus {
-            outline-color: rgb(59, 153, 252);
-            outline-style: auto;
-            outline-width: 5px;
-        }
-        @media(max-width:768px) {
-            display: none;
-        }
     }
-
     a.read-more {
         display: block;
         position: absolute;
@@ -131,38 +133,36 @@ p {
         }
     }
     @media(max-width:768px) {
-        background: url("@{scholarship}/mobile-intro.svg") no-repeat center center;
-        background-color: @purple;
+        background-image: url("@{scholarship}/intro-mobile.jpg");
         padding: 0;
-        iframe {
-            display: none;
-        }
         h1 {
-            margin-top: 25vh;
+            margin-top: 22vh;
         }
         p {
             font-size: 14px;
             line-height: 1.5;
+            margin-top: 7px;
+            color: white;
+            text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
         }
         a.read-more {
-            top: calc(~"100vh - 70px");
-        }
-        .intro-body {
-            #intro-text {
-                padding: 0 28% 0 20px;
-            }
+            top: calc(~"100vh - 55px");
         }
     }    
+
     @media(min-width:768px) {
-        background-color: black;
-        padding: 0;
+        background-image: url("@{scholarship}/intro.jpg");
         h1 {
-            font-size: 6vw;
-            margin-top: 35vh;
+            font-size: 7vw;
+            margin-top: 17vh;
             letter-spacing: -4px;
             -webkit-font-smoothing: antialiased;
+            text-shadow: 2px 2px 0px rgba(255,255,255,0.4);
         }
         p {
+            margin: 40px 25% 0 0;
+            font-size: 19px;
+            line-height: 1.4;
             padding-right: 20%;
         }
         a.read-more {
@@ -178,23 +178,22 @@ p {
             }
         }
 
+
     }
     @media(min-width:1600px) {
        h1 {
            font-size: 6vw;
        }
     }
-    @media(max-width: 400px) {
-       h1 {
-           margin-top: 46vh;
-       }
-       .intro-body {
-           #intro-text {
-               padding: 0;
-           }
-       }
-    } 
-
+    @media(max-width:468px) {
+        background-image: url("@{scholarship}/intro-mobile-portrait.jpg");
+        h1 {
+            margin-top: 18vh;
+            & > span:first-child {
+                font-size: 9.5vw;
+            }
+        }
+    }
 
 }
 

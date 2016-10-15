@@ -235,12 +235,18 @@
             <p>A conduit for giving to UW students, faculty, programs and facilities, the UW Foundation Board also serves as the convening body for campaign volunteers from across the institution.</p>
 
             <a href="http://www.washington.edu/foundation/" class="uw-btn btn-sm">UW Foundation Board</a>
-            
+
           </div>
           <div class="col-md-4 col-md-offset-1">
             <div class="callout">
               <img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/w.jpg' ?>">
               <p>Learn more about the Foundation by visiting the UW Foundation Board website.</p>
+
+              <h4 style="padding-left:25px;margin: 0">CONTACT US</h4>
+
+              <p>We welcome your questions, comments or feedback. <br>
+              Phone: 206-543-8222 <br>
+              Email: being requested</p>
             </div>
           </div>
         </div>

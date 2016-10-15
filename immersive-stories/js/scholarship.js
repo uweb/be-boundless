@@ -2,13 +2,13 @@
 //Youtube player API
 
 
-$.when(
-    $.getScript( 'https://www.youtube.com/player_api' ),
-        $.Deferred(function( deferred ){
-            $( deferred.resolve );
-        }
-    )
-).done(onPlayerReady);     
+// $.when(
+//     $.getScript( 'https://www.youtube.com/player_api' ),
+//         $.Deferred(function( deferred ){
+//             $( deferred.resolve );
+//         }
+//     )
+// ).done(onPlayerReady);     
 
 // Load the IFrame Player API code asynchronously.
 // var tag = document.createElement('script');
@@ -19,55 +19,55 @@ $.when(
 
 // Replace the 'ytplayer' element with an <iframe> and
 // YouTube player after the API code downloads.
-var player;
-function onYouTubePlayerAPIReady() {
-  player = new YT.Player('ytplayer', {
-    height: '720',
-    width: '1280',
-    playerVars: {  
-      'controls': 0, 
-      'showinfo': 0, 
-      'modestbranding': 1,
-      'loop': 1, 
-      'playlist': '_uRxa7q5-As',
-    },
-    videoId: '_uRxa7q5-As',
-    events: {
-        onReady: initialize,
-        onStateChange: stateChange
-    }
-  });
-}
+// var player;
+// function onYouTubePlayerAPIReady() {
+//   player = new YT.Player('ytplayer', {
+//     height: '720',
+//     width: '1280',
+//     playerVars: {  
+//       'controls': 0, 
+//       'showinfo': 0, 
+//       'modestbranding': 1,
+//       'loop': 1, 
+//       'playlist': '_uRxa7q5-As',
+//     },
+//     videoId: '_uRxa7q5-As',
+//     events: {
+//         onReady: initialize,
+//         onStateChange: stateChange
+//     }
+//   });
+// }
 
-function initialize(){
-  if(!isMobile.matches) {
-    player.playVideo()
-  }
-}
+// function initialize(){
+//   if(!isMobile.matches) {
+//     player.playVideo()
+//   }
+// }
 
-function onPlayerReady(event){
-  if(youtubeFlag) {
-   onYouTubePlayerAPIReady()
-  }
-  youtubeFlag = true;
-}
+// function onPlayerReady(event){
+//   if(youtubeFlag) {
+//    onYouTubePlayerAPIReady()
+//   }
+//   youtubeFlag = true;
+// }
 
-function stateChange(e){
-    if(e.data === 1) { 
-        document.getElementsByTagName('body')[0].classList.add('videoPlay');
-        document.getElementsByTagName('body')[0].classList.remove('videoPaused');
-    } else if(e.data === 2) {
-         document.getElementsByTagName('body')[0].classList.add('videoPaused');
-    }
-}
+// function stateChange(e){
+//     if(e.data === 1) { 
+//         document.getElementsByTagName('body')[0].classList.add('videoPlay');
+//         document.getElementsByTagName('body')[0].classList.remove('videoPaused');
+//     } else if(e.data === 2) {
+//          document.getElementsByTagName('body')[0].classList.add('videoPaused');
+//     }
+// }
 
-document.getElementById('pauseVideo').addEventListener('click',function(e){
-    if(document.getElementsByTagName('body')[0].classList.contains('videoPaused') ) {
-        player.playVideo()
-    } else {
-        player.pauseVideo()
-    }
-})
+// document.getElementById('pauseVideo').addEventListener('click',function(e){
+//     if(document.getElementsByTagName('body')[0].classList.contains('videoPaused') ) {
+//         player.playVideo()
+//     } else {
+//         player.pauseVideo()
+//     }
+// })
 
 
 
@@ -77,17 +77,18 @@ $(function(){
 
     var controllerScholarship = new ScrollMagic.Controller()
 
-    var scholarIntro = new ScrollMagic.Scene({
-      triggerElement: "#intro-slide",
+    var introMedicine = new ScrollMagic.Scene({
+      triggerElement: '#intro-slide',
       triggerHook: 0,
       duration: '100%',
     })
+    .setPin('.intro', {pushFollowers: false})
     .setClassToggle("body", 'hide-dots')
-    .on('leave', function(){
-      player.pauseVideo();
-    })
-    //.addIndicators()
+    .setTween('#intro-text', 1, { opacity: 0, transform: 'translateY(-100px)', ease: Power0.easeIn })
     .addTo(controllerScholarship);
+
+
+
 
     var svg1 = new ScrollMagic.Scene({
       triggerElement: "#section1",

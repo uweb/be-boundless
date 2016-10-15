@@ -142,7 +142,7 @@
       </div>
     </div>
   </div>
-  
+
   <div id="scrubCont"><div id="padder"><div id="scrub"></div></div></div>
 
   <img id="boundless-logo" src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/be-boundless.png' ?>" alt="Be boundless">
@@ -190,8 +190,8 @@
     </div>
   </div>
 
-  <!--   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/campaign/ScrollMagic-master/css/normalize.css' ?>" type="text/css">
-  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/campaign/ScrollMagic-master/css/style.css' ?>" type="text/css"> -->
+
+
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/campaign/css/campaign-style.css' ?>" type="text/css">
 
   <!-- Convert to horizontal scroll -->
