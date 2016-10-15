@@ -179,10 +179,9 @@
                         <div class="name-wrap">
                           <h2 class="name">Chuck Murry</h2>
                           <p class="title">M.D., Ph.D.</p>
-                          <p class="studies">Joint professor, pathology, cardiology and bioengineering
-                          Interim director, Institute for Stem Cell and Regenerative Medicine 
-                          Co-Director, Center for Cardiovascular Biology
-                          </p>
+                          <p class="studies"><span>Joint professor, pathology, cardiology and bioengineering</span>
+                          <span>Interim director, Institute for Stem Cell and Regenerative Medicine</span>
+                          Co-Director, Center for Cardiovascular Biology</p>
                         </div>
                       </div>
                 </section>
