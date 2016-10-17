@@ -14,11 +14,8 @@ function videoPlay(vid){
         '<iframe title="YouTube video" id="embedVid" width=' + $video.width() + ' height=' + $video.height() + ' src="' + videoSrc + '" frameborder="0" allowfullscreen autoplay></iframe>' +
         '</div>';
 
-  if (!!navigator.userAgent.match(/iPhone/i)) {
-
-    $body.toggleClass('iPhone');
+  if (isMobile.matches) {
     boundlessVideo.innerHTML = videoHTML;
-
   } else {
 
     $(".play").click(function(e){
