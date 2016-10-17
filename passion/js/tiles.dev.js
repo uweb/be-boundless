@@ -268,7 +268,7 @@ $(window).load(function(){
    $('.give-link').on('click', function(e){
       e.preventDefault(); 
       var allocCode = $( this ).attr('data-code');
-      var source = (allocCode != "") ? 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?source_typ=3&source=' + allocCode + '&frame_buster=false' : 'https://online.gifts.washington.edu/secure/?tab=0';
+      var source = (allocCode != "") ? 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?source_typ=3&source=' + allocCode + '' : 'https://online.gifts.washington.edu/secure/?tab=0';
 
       $('#give-iframe').empty();
 
@@ -307,7 +307,7 @@ $(window).load(function(){
    $('.search-more').on('click', function(e){
       e.preventDefault();
       $searchTerm = $('#searcher').val(); 
-      $.getJSON('http://ua-dev-service.gifts.washington.edu/OnlineAllocation/Search/' + $searchTerm + '?callback=?', function(data) {
+      $.getJSON('http://service.gifts.washington.edu/OnlineAllocation/Search/' + $searchTerm + '?callback=?', function(data) {
           //console.log(data);
           //$('.grid-item.search-more').addClass('hide');
           var searchItems = new Array();
