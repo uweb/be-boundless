@@ -1,3 +1,6 @@
+</head>
+<body id="immersive" <?php body_class(); ?>>
+
 <header role="banner">
   <div id="campaign-header" class="active" role="navigation">
 

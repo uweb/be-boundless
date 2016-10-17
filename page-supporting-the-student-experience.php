@@ -1,4 +1,5 @@
-<?php get_template_part('header', 'campaign'); ?>
+<?php get_header( "campaign-open" ); ?>
+<?php get_header( "campaign-close" ); ?>
 
 <div id="immersive-body">
 
