@@ -52,7 +52,9 @@ if ( ! post_type_exists( 'units' ) ):
 		global $post;
 		$custom = get_post_custom($post->ID);
 		$giveButton = $custom['giveButton'][0];
-		?><input type="checkbox" name="giveButton" value="off" <?php if( !empty($giveButton) ) { ?>checked="checked"<?php } ?> /><?php _e('Disable give button'); 
+		$customGive = $custom['customGive'][0];
+		?><input type="checkbox" name="giveButton" value="off" <?php if( !empty($giveButton) ) { ?>checked="checked"<?php } ?> /><?php _e('Disable give button'); ?>
+		  <br><br><label>Custom give code:</label><input name="customGive" value="<?php echo $customGive ?>" /><?php
 	}
 
 	function contact_callback() {
@@ -122,6 +124,7 @@ if ( ! post_type_exists( 'units' ) ):
 		global $post;
 		if (get_post_type($post) == 'units') {
 			update_post_meta($post->ID, 'giveButton', $_POST['giveButton']);
+			update_post_meta($post->ID, 'customGive', $_POST['customGive']);
 			update_post_meta($post->ID, 'contact', $_POST['contact']);
 			update_post_meta($post->ID, 'email', $_POST['email']);
 
