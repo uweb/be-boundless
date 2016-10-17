@@ -751,7 +751,7 @@ body {
   -webkit-transform: translateY(4px);
 }
 #passion .full-bio .bio-text {
-  margin: 10px -10px 20px 0;
+  margin: 10px -10px 0 0;
   padding-right: 10px;
   max-height: 400px;
   overflow-y: auto;
@@ -794,7 +794,7 @@ body {
   margin-top: 0;
   line-height: 30px;
   position: relative;
-  padding-right: 70px;
+  padding: 0;
   display: inline-block;
 }
 #passion .full-bio h2:after {
