@@ -254,8 +254,13 @@
             );
             $unitquery = new WP_Query($fundargs);
             $unitcodes = "";
-            foreach ($unitquery->posts as $uq) {
-              $unitcodes .= get_post_meta($uq->ID, 'code', true) != "" ? get_post_meta($uq->ID, 'code', true) . "," : "";
+            $customGive = get_post_meta($unit->ID, 'customGive', true);
+            if($customGive != ""){
+              $unitcodes = $customGive;
+            } else {
+              foreach ($unitquery->posts as $uq) {
+                $unitcodes .= get_post_meta($uq->ID, 'code', true) != "" ? get_post_meta($uq->ID, 'code', true) . "," : "";
+              }
             }
             $campaign = ($unit->url ? "<a href='" . $unit->url . "'>Campaign</a>" : "");
 
