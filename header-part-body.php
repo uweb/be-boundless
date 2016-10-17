@@ -1,10 +1,10 @@
 <header role="banner">
   <div id="campaign-header" class="active" role="navigation">
 
-    <a class="home" href="http://www.uw.edu">Home</a>
+    <a tabindex="-1" class="home" href="http://www.uw.edu">Home</a>
 
-    <div tabindex="-1" class="thin" aria-hidden="true">
-      <a href="http://www.uw.edu">Support the campaign</a>
+    <div id="campaign-expand-sm" tabindex="-1" class="thin" aria-hidden="true">
+      <a href="http://give.uw.edu/">Give</a>
     </div>
     <div tabindex="-1" class="thick">
       <ul>
@@ -25,6 +25,7 @@
     </button>
   </div>
 
+  <!-- <h1><?php the_title(); ?></h1> -->
 
   <div id="give-iframe"></div>
 

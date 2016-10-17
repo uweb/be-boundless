@@ -19,22 +19,6 @@
   <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
   <!-- <script type='text/javascript' src='https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js'></script> -->
 
-  <style>
-
-    body.active-header {
-      padding-top: 90px;
-    }
-    body {
-      padding-top: 50px;
-    }
-    @media only screen and (max-width: 767px) {
-      div.container.uw-body {
-          padding-top: 30px;
-      }
-    }
-
-  </style>
-
   <?php 
     echo get_post_meta( get_the_ID() , 'javascript' , 'true' ); 
     echo get_post_meta( get_the_ID() , 'css' , 'true' ); 

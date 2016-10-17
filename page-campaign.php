@@ -1,5 +1,9 @@
-<?php get_template_part('header', 'campaign'); ?>
+<?php get_header( "campaign-open" ); ?>
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/campaign/css/campaign-style.css' ?>" type="text/css">
+<?php get_header( "campaign-close" ); ?>
 
+
+  
 
   <div id="arrows">  
     <button class="prevSlide">
@@ -192,7 +196,6 @@
 
 
 
-  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/campaign/css/campaign-style.css' ?>" type="text/css">
 
   <!-- Convert to horizontal scroll -->
   <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/animationLibraries.min.js' ?>" type="text/javascript"></script>

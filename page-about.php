@@ -1,4 +1,5 @@
-<?php get_template_part('header', 'campaign'); ?>
+<?php get_header( "campaign-open" ); ?>
+<?php get_header( "campaign-close" ); ?>
 
 
   <main>
@@ -243,7 +244,7 @@
               <h4 style="margin: 25px 0 0 25px;color:#4b2e83">CONTACT US</h4>
               <p>We welcome your questions, comments or feedback. <br>
               Phone: 206-543-8222 <br>
-              Email: being requested</p>
+              Email: <a href="mailto:camphelp@uw.edu">camphelp@uw.edu</a></p>
             </div>
           </div>
         </div>
