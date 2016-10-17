@@ -286,9 +286,11 @@
                 <?php } ?>
               </div>
               <div class="front"><div style="<?php echo 'background-image:url(' . $unitimageurlhigh . ');'; ?> "></div></div>
-              <div class="explore-banner">
-                <p>Explore these opportunities</p>
-              </div>
+              <?php if( count($unitquery->posts) > 0 ) { ?>
+                <div class="explore-banner">
+                  <p>Explore these opportunities</p>
+                </div>
+              <?php } ?>
             </div>
           </li>
 
