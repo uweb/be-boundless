@@ -86,9 +86,9 @@ $(window).load(function(){
 
       // Main portion that opens and closes the 
       $grid.on( 'click', '.grid-item:not(.filter-item):not(.search-more)', function() {
-        var $this = $(this),
-            dataCheck = $this.data('name'),
-            dataName = dataCheck && '#name=' + dataCheck;
+        var $this = $(this);
+            // dataCheck = $this.data('name'),
+            // dataName = dataCheck && '#name=' + dataCheck;
         if( !$this.hasClass('open') && !$this.hasClass('special') && !$this.hasClass('search-more') && !$this.hasClass('fyp-units') ) {
           $prevSelect = $('.grid-item.open:not(.search-more):not(.filter-item)');
           $prevSelect.removeClass('open');
@@ -100,7 +100,7 @@ $(window).load(function(){
           // Scroll-to portion
           scrollIt($this)
           // Add data attribute 'name' to URL has
-          window.location.hash = dataName;          
+          // window.location.hash = dataName;          
         } else {
           $this.removeClass('open')
           $grid.isotope( 'updateSortData', $this);
@@ -183,41 +183,22 @@ $(window).load(function(){
           }
       });
 
-//THIS FUNCTION NEEDS WORK FOR SCHOOLS TO USE
-      // Open by URL hash
-      if(location.hash.match(/^#name/)) {
-
-          var hashName = location.hash.substring(6),
-              $dataName = $('*[data-name="' + hashName + '"]');
-
-          $dataName.toggleClass('open');
-          $grid.isotope();
-
-          // Replace with high quality image
-          imageSwitch($dataName);
-
-          // Scroll-to portion
-          scrollIt($dataName)          
-
-      }               
-
-
       // Search through category tags
-      $('.tags').on('click', 'a', function(els){
-        var $this = $(this),
-            el = els;
-            $text = $this.text();
+      // $('.tags').on('click', 'a', function(els){
+      //   var $this = $(this),
+      //       el = els;
+      //       $text = $this.text();
 
-        el.preventDefault();
-        // Stop propagation, otherwise it will bubble and want to close the slide
-        el.stopPropagation();        
-        $filter.addClass('select_active');
-        $grid.isotope({
-          filter: function() {
-            return $text ? $(this).find('.tags').text().match( $text ) : true;
-          }
-        });
-      })
+      //   el.preventDefault();
+      //   // Stop propagation, otherwise it will bubble and want to close the slide
+      //   el.stopPropagation();        
+      //   $filter.addClass('select_active');
+      //   $grid.isotope({
+      //     filter: function() {
+      //       return $text ? $(this).find('.tags').text().match( $text ) : true;
+      //     }
+      //   });
+      // })
 
    //  });
    //  
@@ -247,10 +228,13 @@ $(window).load(function(){
       $('#empty').addClass('active');
       //$('.fyp-close-button-gradient').addClass('show');
       $grid.isotope({ filter: '.' + filterValue + ':not(.unit-small)' });
-      $()
       $('html, body').animate({
             scrollTop: ( $(".fyp-search").offset().top)// - parseInt( $("#main-content").css("margin-top").replace("px", "") ) )
           }, 900);
+      //ADDS #URL
+      dataCheck = $( this ).data('filter'),
+      dataName = dataCheck && '#name=' + dataCheck;
+      window.location.hash = dataName;
    })
 
    $('#fyp-search-button').on('click', function(e){
@@ -271,6 +255,8 @@ $(window).load(function(){
       $('.grid-item.search-more').removeClass('open');
       $('#searcher').val("");
       $grid.isotope({ filter: '.featured' }); 
+      //removes url hash
+      window.location.hash = "";
 
    })
 
@@ -397,6 +383,34 @@ $(window).load(function(){
       
       
    });
+
+
+//THIS FUNCTION NEEDS WORK FOR SCHOOLS TO USE
+      // Open by URL hash
+      if(location.hash.match(/^#name/)) {
+
+          var hashName = location.hash.substring(6),
+              $dataName = $('*[data-filter="' + hashName + '"]');
+
+              //$dataName.trigger('click'); //This doesnt work for pillars and such that aren't click filters on page...
+              //console.log('clicked');
+          $('#empty').addClass('active');
+          $grid.isotope({ filter: '.' + hashName + ':not(.unit-small)' });
+          $('html, body').animate({
+                scrollTop: ( $(".fyp-search").offset().top)// - parseInt( $("#main-content").css("margin-top").replace("px", "") ) )
+              }, 900);
+
+
+          // //$dataName.toggleClass('open');
+          // $grid.isotope();
+
+          // // Replace with high quality image
+          // imageSwitch($dataName);
+
+          // // Scroll-to portion
+          // scrollIt($dataName)          
+
+      } 
   
 
 }); 
