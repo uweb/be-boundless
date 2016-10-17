@@ -233,7 +233,7 @@ $(window).load(function(){
           }, 900);
       //ADDS #URL
       dataCheck = $( this ).data('filter'),
-      dataName = dataCheck && '#name=' + dataCheck;
+      dataName = dataCheck && '#' + dataCheck;
       window.location.hash = dataName;
    })
 
@@ -387,10 +387,10 @@ $(window).load(function(){
 
 //THIS FUNCTION NEEDS WORK FOR SCHOOLS TO USE
       // Open by URL hash
-      if(location.hash.match(/^#name/)) {
+      if(location.hash != '') {
 
-          var hashName = location.hash.substring(6),
-              $dataName = $('*[data-filter="' + hashName + '"]');
+          var hashName = location.hash.substring(1);
+              //$dataName = $('*[data-filter="' + hashName + '"]');
 
               //$dataName.trigger('click'); //This doesnt work for pillars and such that aren't click filters on page...
               //console.log('clicked');
