@@ -268,7 +268,7 @@ $(window).load(function(){
    $('.give-link').on('click', function(e){
       e.preventDefault(); 
       var allocCode = $( this ).attr('data-code');
-      var source = (allocCode != "") ? 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?source_typ=3&source=' + allocCode + '' : 'https://online.gifts.washington.edu/secure/?tab=0';
+      var source = (allocCode != "") ? 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&source_typ=3&source=' + allocCode + '' : 'https://online.gifts.washington.edu/secure/?nobanner=true&tab=0';
 
       $('#give-iframe').empty();
 
