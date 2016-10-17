@@ -59,7 +59,7 @@
                       }
                   }
                  ?>
-                 <li><p><a href="#" class="fyp-filter-click" data-filter="president-s-fund-for-excellence">President’s fund for excellence</a></p></li>
+                 <li><p><a href="#" class="fyp-filter-click" data-filter="president-s-fund-for-excellence">President’s Fund for Excellence</a></p></li>
                </ul>
              </div>
            </div>
