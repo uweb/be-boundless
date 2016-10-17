@@ -234,7 +234,9 @@ $(window).load(function(){
       //ADDS #URL
       dataCheck = $( this ).data('filter'),
       dataName = dataCheck && '#' + dataCheck;
-      window.location.hash = dataName;
+      var urlParam = location.hash.split("appeal=");
+      var appeal = urlParam[1] ? ( "&appeal=" + urlParam[1].split("&")[0] ) : "";
+      window.location.hash = dataName + appeal;
    })
 
    $('#fyp-search-button').on('click', function(e){
@@ -256,7 +258,9 @@ $(window).load(function(){
       $('#searcher').val("");
       $grid.isotope({ filter: '.featured' }); 
       //removes url hash
-      window.location.hash = "";
+      var urlParam = location.hash.split("appeal=");
+      var appeal = urlParam[1] ? ( "appeal=" + urlParam[1].split("&")[0] ) : "";
+      window.location.hash = "" + appeal;
 
    })
 
@@ -267,8 +271,10 @@ $(window).load(function(){
 
    $('.give-link').on('click', function(e){
       e.preventDefault(); 
+      var urlParam = location.hash.split("appeal=");
+      var appeal = urlParam[1] ? ( "&appeal=" + urlParam[1].split("&")[0] ) : "";
       var allocCode = $( this ).attr('data-code');
-      var source = (allocCode != "") ? 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&source_typ=3&source=' + allocCode + '' : 'https://online.gifts.washington.edu/secure/?nobanner=true&tab=0';
+      var source = (allocCode != "") ? 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&source_typ=3&source=' + allocCode + appeal + '' : 'https://online.gifts.washington.edu/secure/?nobanner=true&tab=0' + appeal + '';
 
       $('#give-iframe').empty();
 
