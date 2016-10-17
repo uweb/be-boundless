@@ -249,7 +249,7 @@
             $unitquery = new WP_Query($fundargs);
             $unitcodes = "";
             foreach ($unitquery->posts as $uq) {
-              $unitcodes .= get_post_meta($uq->ID, 'code', true) . ",";
+              $unitcodes .= get_post_meta($uq->ID, 'code', true) != "" ? get_post_meta($uq->ID, 'code', true) . "," : "";
             }
             $campaign = ($unit->url ? "<a href='" . $unit->url . "'>Campaign</a>" : "");
             $volunteer = ($unit->volunteer ? "<a href='" . $unit->volunteer . "'>Volunteer</a>" : "" ); 
@@ -352,7 +352,7 @@
             <div class="flipper" role="button">
               <div class="front" style="<?php echo 'background-image:url(' . $fundimageurl . ');'; ?> ">
               	<div class="banner">
-              		<?php echo $fund->short; ?>
+              		<?php echo (($fund->short != "") ? $fund->short : $fund->post_title); ?>
               	</div> 
               </div>
               <div class="back">
