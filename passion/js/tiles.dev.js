@@ -395,7 +395,7 @@ $(window).load(function(){
       // Open by URL hash
       if(location.hash != '') {
 
-          var hashName = location.hash.substring(1);
+          var hashName = location.hash.substring(1).split("&")[0];
               //$dataName = $('*[data-filter="' + hashName + '"]');
 
               //$dataName.trigger('click'); //This doesnt work for pillars and such that aren't click filters on page...
