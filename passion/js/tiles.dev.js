@@ -234,9 +234,10 @@ $(window).load(function(){
       //ADDS #URL
       dataCheck = $( this ).data('filter'),
       dataName = dataCheck && '#' + dataCheck;
-      var urlParam = location.hash.split("appeal=");
-      var appeal = urlParam[1] ? ( "&appeal=" + urlParam[1].split("&")[0] ) : "";
-      window.location.hash = dataName + appeal;
+      // var urlParam = location.hash.split("appeal=");
+      // var appeal = urlParam[1] ? ( "&appeal=" + urlParam[1].split("&")[0] ) : "";
+      // window.location.hash = dataName + appeal;
+      window.location.hash = dataName;
    })
 
    $('#fyp-search-button').on('click', function(e){
@@ -258,9 +259,10 @@ $(window).load(function(){
       $('#searcher').val("");
       $grid.isotope({ filter: '.featured' }); 
       //removes url hash
-      var urlParam = location.hash.split("appeal=");
-      var appeal = urlParam[1] ? ( "appeal=" + urlParam[1].split("&")[0] ) : "";
-      window.location.hash = "" + appeal;
+      // var urlParam = location.hash.split("appeal=");
+      // var appeal = urlParam[1] ? ( "appeal=" + urlParam[1].split("&")[0] ) : "";
+      // window.location.hash = "" + appeal;
+      window.location.hash = "";
 
    })
 
@@ -271,10 +273,11 @@ $(window).load(function(){
 
    $('.give-link').on('click', function(e){
       e.preventDefault(); 
-      var urlParam = location.hash.split("appeal=");
-      var appeal = urlParam[1] ? ( "&appeal=" + urlParam[1].split("&")[0] ) : "";
+      // var urlParam = location.hash.split("appeal=");
+      // var appeal = urlParam[1] ? ( "&appeal=" + urlParam[1].split("&")[0] ) : "";
       var allocCode = $( this ).attr('data-code');
-      var source = (allocCode != "") ? 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&source_typ=3&source=' + allocCode + appeal + '' : 'https://online.gifts.washington.edu/secure/?nobanner=true&tab=0' + appeal + '';
+      //var source = (allocCode != "") ? 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&source_typ=3&source=' + allocCode + appeal + '' : 'https://online.gifts.washington.edu/secure/?nobanner=true&tab=0' + appeal + '';
+      var source = (allocCode != "") ? 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&source_typ=3&source=' + allocCode + '&appeal=17XFP' : 'https://online.gifts.washington.edu/secure/?nobanner=true&tab=0&appeal=17XFP';
 
       $('#give-iframe').empty();
 
@@ -393,10 +396,12 @@ $(window).load(function(){
 
 //THIS FUNCTION NEEDS WORK FOR SCHOOLS TO USE
       // Open by URL hash
-      if(location.hash != '' && location.hash) {
+      if(location.hash != '') {
 
-          var hashName = location.hash.substring(1).split("&")[0];
-          if(!hashName.includes('appeal=')) {
+          //var hashName = location.hash.substring(1).split("&")[0];
+          var hashName = location.hash.substring(1);
+
+          //if(!hashName.includes('appeal=')) {
 
               //$dataName = $('*[data-filter="' + hashName + '"]');
 
@@ -407,7 +412,7 @@ $(window).load(function(){
               $('html, body').animate({
                     scrollTop: ( $(".fyp-search").offset().top)// - parseInt( $("#main-content").css("margin-top").replace("px", "") ) )
                   }, 900);
-          }
+          //}
 
           // //$dataName.toggleClass('open');
           // $grid.isotope();
