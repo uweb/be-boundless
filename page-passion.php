@@ -268,7 +268,7 @@
                 $unitcodes .= get_post_meta($uq->ID, 'code', true) != "" ? get_post_meta($uq->ID, 'code', true) . "," : "";
               }
             }
-            $campaign = ($unit->url ? "<a href='" . $unit->url . "'>Campaign</a>" : "");
+            $campaign = ($unit->url ? "<a href='" . $unit->url . "'>Campaign website</a>" : "");
 
            //spit out html 
            
