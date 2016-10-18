@@ -12,7 +12,7 @@
   <div class="intro-body">
       <div class="row">
         <div class="col-md-10 col-md-offset-1 col-xs-12 col-lg-offset-1" id='intro-text'>
-            <h1><span><span>Unleashing the </span></span><span><span>student experience</span></span> </h1>
+            <h1><span><span>Unleashing the </span></span><span><span>Husky experience</span></span> </h1>
             <!-- <p>At the vanguard of next-generation precision medicine, Dr. Pamela Becker’s work through the Institute for Stem Cell and Regenerative Medicine is taking aim at cancer.</p> -->
         </div>
     </div>
