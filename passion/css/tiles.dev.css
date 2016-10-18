@@ -268,23 +268,23 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  padding-top: 30px;
-  font-size: 16px;
-  line-height: 1.3;
+  padding-top: 0;
+  font-size: 15px;
+  line-height: 1.2;
   letter-spacing: 1px;
   font-family: "Encode Sans Compressed", sans-serif;
-  font-weight: 800;
+  font-weight: 600;
 }
 #passion div#main-content ul.search-grid li.search-item .front p:after {
   content: "";
-  width: 25px;
-  height: 25px;
-  margin-top: 20px;
+  width: 22px;
+  height: 22px;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   display: block;
   background: url(../assets/plus.svg) 0 0 no-repeat;
-  background-size: 25px 25px;
+  background-size: 22px 22px;
 }
 #passion div#main-content ul.search-grid li.search-item.open .front p {
   display: none;
@@ -904,6 +904,10 @@ body {
   width: calc(20%);
   margin: 0;
   height: 210px;
+}
+#passion .grid-sizer.search-item,
+#passion .grid-item.search-item {
+  height: 126px;
 }
 #passion .grid-sizer.featured,
 #passion .grid-item.featured {
@@ -1621,6 +1625,24 @@ body {
   background-color: white;
   z-index: 0;
   position: relative;
+}
+#passion .grid-item.search-item .back h3 {
+  font-size: 15px;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  font-family: "Encode Sans Compressed", sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+}
+#passion .grid-item.search-item .back p {
+  line-height: 1.1;
+  font-size: 13px;
+}
+#passion .grid-item.search-item .back p:after {
+  margin-top: 5px;
+  width: 18px;
+  height: 18px;
+  background-size: 18px 18px;
 }
 #passion .grid-item .front,
 #passion .grid-item .back,
