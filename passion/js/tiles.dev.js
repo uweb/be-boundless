@@ -50,10 +50,10 @@ $(window).load(function(){
              return (search && $this.is( ':not(.unit-item):not(.filter-item)' )) || $this.is( '.search-more' );
            }
          });
-         $('#empty').addClass('active');
-      } else {
-        $('#empty').trigger('click'); 
-      }
+         //$('#empty').addClass('active');
+      } //else {
+      //   $('#empty').trigger('click'); 
+      // }
      }, 200 ) );
 
       // Function to replace the image with the high-rest one
@@ -85,11 +85,11 @@ $(window).load(function(){
 
 
       // Main portion that opens and closes the 
-      $grid.on( 'click', '.grid-item:not(.filter-item):not(.search-more)', function() {
+      $grid.on( 'click', '.grid-item:not(.filter-item):not(.search-more):not(.open)', function() {
         var $this = $(this);
             // dataCheck = $this.data('name'),
             // dataName = dataCheck && '#name=' + dataCheck;
-        if( !$this.hasClass('open') && !$this.hasClass('special') && !$this.hasClass('search-more') && !$this.hasClass('fyp-units') ) {
+        if( !$this.hasClass('special') && !$this.hasClass('search-more') && !$this.hasClass('fyp-units') ) {
           $prevSelect = $('.grid-item.open:not(.search-more):not(.filter-item)');
           $prevSelect.removeClass('open');
           $grid.isotope( 'updateSortData', $prevSelect ); 
@@ -101,10 +101,7 @@ $(window).load(function(){
           scrollIt($this)
           // Add data attribute 'name' to URL has
           // window.location.hash = dataName;          
-        } else {
-          $this.removeClass('open')
-          $grid.isotope( 'updateSortData', $this);
-        }
+        } 
         $grid.isotope();                
       });              
 
@@ -157,6 +154,9 @@ $(window).load(function(){
           $('.quicksearch').keyup();                  
         }
         $searcher.toggleClass('is-checked');
+        $prevSelect = $('.grid-item.open:not(.search-more):not(.filter-item)');
+        $prevSelect.removeClass('open');
+        $grid.isotope( 'updateSortData', $prevSelect );
       })
 
       //DO WE WANT THIS???
@@ -225,8 +225,13 @@ $(window).load(function(){
       e.preventDefault();
       var filterValue = $( this ).attr('data-filter');
       //$('.module-hero-image').addClass('hide');
-      $('#empty').addClass('active');
+      //$('#empty').addClass('active');
       //$('.fyp-close-button-gradient').addClass('show');
+      //
+      $prevSelect = $('.grid-item.open:not(.search-more):not(.filter-item)');
+      $prevSelect.removeClass('open');
+      $grid.isotope( 'updateSortData', $prevSelect );
+      //
       $grid.isotope({ filter: '.' + filterValue + ':not(.unit-small)' });
       $('html, body').animate({
             scrollTop: ( $(".fyp-search").offset().top)// - parseInt( $("#main-content").css("margin-top").replace("px", "") ) )
@@ -234,9 +239,10 @@ $(window).load(function(){
       //ADDS #URL
       dataCheck = $( this ).data('filter'),
       dataName = dataCheck && '#' + dataCheck;
-      var urlParam = location.hash.split("appeal=");
-      var appeal = urlParam[1] ? ( "&appeal=" + urlParam[1].split("&")[0] ) : "";
-      window.location.hash = dataName + appeal;
+      // var urlParam = location.hash.split("appeal=");
+      // var appeal = urlParam[1] ? ( "&appeal=" + urlParam[1].split("&")[0] ) : "";
+      // window.location.hash = dataName + appeal;
+      window.location.hash = dataName;
    })
 
    $('#fyp-search-button').on('click', function(e){
@@ -246,22 +252,33 @@ $(window).load(function(){
           }, 900);
    })
 
-   $('#empty').on('click', function(e){
+   // $('#empty').on('click', function(e){
+   //    e.preventDefault();
+   //    $('html, body').animate({
+   //          scrollTop: $('body').offset().top
+   //        }, 900);
+
+   //    $('#empty').removeClass('active');
+   //    $('.grid-item.search-item').remove();
+   //    $('.grid-item.search-more').removeClass('open');
+   //    $('#searcher').val("");
+   //    $grid.isotope({ filter: '.featured' }); 
+   //    //removes url hash
+   //    // var urlParam = location.hash.split("appeal=");
+   //    // var appeal = urlParam[1] ? ( "appeal=" + urlParam[1].split("&")[0] ) : "";
+   //    // window.location.hash = "" + appeal;
+   //    window.location.hash = "";
+
+   // })
+   
+   $('.empty-fund').on('click', function(e){
       e.preventDefault();
-      $('html, body').animate({
-            scrollTop: $('body').offset().top
-          }, 900);
-
-      $('#empty').removeClass('active');
-      $('.grid-item.search-item').remove();
-      $('.grid-item.search-more').removeClass('open');
-      $('#searcher').val("");
-      $grid.isotope({ filter: '.featured' }); 
-      //removes url hash
-      var urlParam = location.hash.split("appeal=");
-      var appeal = urlParam[1] ? ( "appeal=" + urlParam[1].split("&")[0] ) : "";
-      window.location.hash = "" + appeal;
-
+      e.stopPropagation();
+      //close the fund
+      $prevSelect = $('.grid-item.open:not(.search-more):not(.filter-item)');
+      $prevSelect.removeClass('open');
+      $grid.isotope( 'updateSortData', $prevSelect );
+      $grid.isotope();
    })
 
    // Check for empty
@@ -271,10 +288,11 @@ $(window).load(function(){
 
    $('.give-link').on('click', function(e){
       e.preventDefault(); 
-      var urlParam = location.hash.split("appeal=");
-      var appeal = urlParam[1] ? ( "&appeal=" + urlParam[1].split("&")[0] ) : "";
+      // var urlParam = location.hash.split("appeal=");
+      // var appeal = urlParam[1] ? ( "&appeal=" + urlParam[1].split("&")[0] ) : "";
       var allocCode = $( this ).attr('data-code');
-      var source = (allocCode != "") ? 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&source_typ=3&source=' + allocCode + appeal + '' : 'https://online.gifts.washington.edu/secure/?nobanner=true&tab=0' + appeal + '';
+      //var source = (allocCode != "") ? 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&source_typ=3&source=' + allocCode + appeal + '' : 'https://online.gifts.washington.edu/secure/?nobanner=true&tab=0' + appeal + '';
+      var source = (allocCode != "") ? 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&source_typ=3&source=' + allocCode + '&appeal=17XFP' : 'https://online.gifts.washington.edu/secure/?nobanner=true&tab=0&appeal=17XFP';
 
       $('#give-iframe').empty();
 
@@ -296,7 +314,12 @@ $(window).load(function(){
    $('.unit-small').on('click', function(e){
       e.preventDefault();
       var filterValue = $( this ).attr('data-name');
-      $('#empty').trigger('click'); 
+      //$('#empty').trigger('click'); 
+      //
+      $prevSelect = $('.grid-item.open:not(.search-more):not(.filter-item)');
+      $prevSelect.removeClass('open');
+      $grid.isotope( 'updateSortData', $prevSelect );
+      //
       //$('.module-hero-image').addClass('hide');
       //$('#empty').addClass('active-filter');
       //$('#empty').addClass('active');
@@ -312,7 +335,10 @@ $(window).load(function(){
    //search api call for more search results
    $('.search-more').on('click', function(e){
       e.preventDefault();
-      $searchTerm = $('#searcher').val(); 
+      $searchTerm = $('#searcher').val();
+      $prevSelect = $('.grid-item.open:not(.search-more):not(.filter-item)');
+      $prevSelect.removeClass('open');
+      $grid.isotope( 'updateSortData', $prevSelect ); 
       $.getJSON('http://service.gifts.washington.edu/OnlineAllocation/Search/' + $searchTerm + '?callback=?', function(data) {
           //console.log(data);
           //$('.grid-item.search-more').addClass('hide');
@@ -393,21 +419,23 @@ $(window).load(function(){
 
 //THIS FUNCTION NEEDS WORK FOR SCHOOLS TO USE
       // Open by URL hash
-      if(location.hash != '' && location.hash) {
+      if(location.hash != '') {
 
-          var hashName = location.hash.substring(1).split("&")[0];
-          if(!hashName.includes('appeal=')) {
+          //var hashName = location.hash.substring(1).split("&")[0];
+          var hashName = location.hash.substring(1);
+
+          //if(!hashName.includes('appeal=')) {
 
               //$dataName = $('*[data-filter="' + hashName + '"]');
 
               //$dataName.trigger('click'); //This doesnt work for pillars and such that aren't click filters on page...
                   //console.log('clicked');
-              $('#empty').addClass('active');
+              //$('#empty').addClass('active');
               $grid.isotope({ filter: '.' + hashName + ':not(.unit-small)' });
               $('html, body').animate({
                     scrollTop: ( $(".fyp-search").offset().top)// - parseInt( $("#main-content").css("margin-top").replace("px", "") ) )
                   }, 900);
-          }
+          //}
 
           // //$dataName.toggleClass('open');
           // $grid.isotope();

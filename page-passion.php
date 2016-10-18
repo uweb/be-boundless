@@ -78,13 +78,13 @@
       <div class="explore-footer"><?php get_footer('campaign') ?></div>
     </div>
 
-    <button id="empty">
+    <!-- <button id="empty">
     Return to story list
     <svg aria-hidden="true" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34.147px" height="37.833px" viewBox="0 0 34.147 37.833" enable-background="new 0 0 34.147 37.833" xml:space="preserve">
       <line fill="none" stroke="#A7A9AC" stroke-width="2" stroke-miterlimit="10" x1="9.616" y1="8.449" x2="31.782" y2="30.614"></line>
       <line fill="none" stroke="#A7A9AC" stroke-width="2" stroke-miterlimit="10" x1="31.782" y1="8.449" x2="9.616" y2="30.614"></line>
     </svg>
-  </button>
+  </button> -->
 
 
 
@@ -268,7 +268,7 @@
                 $unitcodes .= get_post_meta($uq->ID, 'code', true) != "" ? get_post_meta($uq->ID, 'code', true) . "," : "";
               }
             }
-            $campaign = ($unit->url ? "<a href='" . $unit->url . "'>Campaign</a>" : "");
+            $campaign = ($unit->url ? "<a href='" . $unit->url . "'>Campaign website</a>" : "");
 
            //spit out html 
            
@@ -395,6 +395,13 @@
                 	<a href="#" class="give-link" data-code="<?php echo $fund->code; ?>">Give Now</a>
                 </div>
                 <?php } ?>
+                <button class="empty-fund">
+                  Close current fund
+                  <svg aria-hidden="true" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34.147px" height="37.833px" viewBox="0 0 34.147 37.833" enable-background="new 0 0 34.147 37.833" xml:space="preserve">
+                    <line fill="none" stroke="#A7A9AC" stroke-width="2" stroke-miterlimit="10" x1="9.616" y1="8.449" x2="31.782" y2="30.614"></line>
+                    <line fill="none" stroke="#A7A9AC" stroke-width="2" stroke-miterlimit="10" x1="31.782" y1="8.449" x2="9.616" y2="30.614"></line>
+                  </svg>
+                </button>
               </div>
             </div>
           </li>
