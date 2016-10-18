@@ -15,7 +15,7 @@
       <div class="row">
         <div class="col-md-10 col-xs-10 col-xs-offset-1 col-xs-offset-1 col-lg-offset-0" id='intro-text'>
             <h1>Nurturing minds, <br>opening doors</h1>
-            <p>In South Seattle and south King County, the UW College of Education is partnering with the Road Map Project to close achievement gaps in schools — and open all doors for young learners.</p>
+            <p>Our foundation is rooted in serving communities near and far. Explore how committing to initiatives that promote health, equity and well-being can unleash human potential in King County’s Road Map region — and beyond.</p>
         </div>
       </div>      
     </div>
