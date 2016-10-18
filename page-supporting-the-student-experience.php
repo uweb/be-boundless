@@ -1,4 +1,9 @@
 <?php get_header( "campaign-open" ); ?>
+
+ <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />
+ <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
+ <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/scholarship.css' ?>' type='text/css' media='all' />
+
 <?php get_header( "campaign-close" ); ?>
 
 <div id="immersive-body">
@@ -53,7 +58,7 @@
           <div class="row">
               <div class="col-md-10 col-md-offset-1 copy">
                 
-                  <p class="headline-gold center">What is the student experience?<br/> Well, that depends on who you ask. </p>
+                  <p class="headline-gold center">What is the Husky Experience?<br/> Well, that depends on who you ask. </p>
                    
                   <p>For some, it’s installing solar panels on residence hall roofs, creating a greener campus — and world — one project at a time.</p>
 
@@ -83,7 +88,7 @@
         <div><p><b>Hometown:</b> Loveland, Colorado</p></div>
         <div>
           <p><b>Major:</b> Environmental Science and Resource Management</p>
-          <p><b>Minor:</b> Quantitative science</p>
+          <p><b>Minor:</b> Quantitative Science</p>
         </div>  
         <div>
           <p><b>Dreams supported by:</b></p>
@@ -169,7 +174,7 @@
         <div>
           <p><b>Majors:</b> </p>
           <ul>
-            <li>International studies</li>
+            <li>International Studies</li>
             <li>Informatics</li>
           </ul>
           <p><b>Minors:</b></p>
@@ -299,7 +304,7 @@
           <p><b>Majors:</b></p>
           <ul>
             <li>Communication: Journalism</li>
-            <li>Law, societies and justice</li>
+            <li>Law, Societies and Justice</li>
           </ul>
 
         </div>  
@@ -396,8 +401,8 @@
         <div class="class"><p><b>Class of </b></p><p>'17</p></div>
         <div><p><b>Hometown:</b> Kirkland, Washington</p></div>
         <div>
-          <p><b>Major:</b> Chemical engineering </p>
-          <p><b>Minor:</b> Applied mathematics</p>
+          <p><b>Major:</b> Chemical Engineering </p>
+          <p><b>Minor:</b> Applied Mathematics</p>
         </div>  
         <div>
           <p><b>Dreams supported by:</b></p>
@@ -495,8 +500,8 @@
         <div>
           <p><b>Majors:</b></p>
           <ul>
-            <li>Applied physics</li>
-            <li>Earth and space sciences</li>
+            <li>Applied Physics</li>
+            <li>Earth and Space Sciences</li>
             <li>Astronomy</li>
           </ul>
         </div>  
@@ -597,7 +602,7 @@
           <p><b>Majors:</b></p>
           <ul>
             <li>Economics</li>
-            <li>Community, environment and planning</li>
+            <li>Community, Environment and Planning</li>
           </ul>
         </div>  
         <div>
@@ -722,7 +727,8 @@
                       <div style="text-align: center">             
                         <h2 class="headline-gold">FPO</h2>
                         <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum.</p>
-                        <div class="boundless-button sm dark give"><span><a href="passion/#students">Give now</a></span></div>
+                        <div id="immersive-give-iframe"></div>
+                        <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="ACHSED,HUSPRO,SCHOLU" href="#">Give now</a></span></div>
                       </div>
                     </div>
                 </div>
@@ -731,9 +737,6 @@
 
 </main>
 
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/scholarship.css' ?>' type='text/css' media='all' />
 
 </div>
 

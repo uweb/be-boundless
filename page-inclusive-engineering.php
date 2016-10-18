@@ -1,4 +1,9 @@
 <?php get_header( "campaign-open" ); ?>
+
+<link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />
+<link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
+<link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/engineering.css' ?>' type='text/css' media='all' />
+
 <?php get_header( "campaign-close" ); ?>
 
 
@@ -99,7 +104,7 @@
                           <h2>Rajesh Rao</h2>
                           <p><span>Director</span> / Center for Sensorimotor Neural Engineering</p>
                           <p><span>Professor</span> / Computer Science &amp; Engineering</p>
-                          <p><span>Adjunct Professor</span> / Bioengineering, Electrical Engineering</p>
+                          <p><span>Adjunct Professor</span> / Bioengineering<br> Electrical Engineering</p>
                           <p><span>Faculty Member</span> / Graduate Program in Neuroscience</p>                          
                       </div>
                       <svg class="svg-plus" xmlns="http://www.w3.org/2000/svg" width="50.98" height="50.6" viewBox="0 0 50.98 50.6"><path fill="#B7A57A" d="M46.684 0v46.684H0"/><g fill="#FFF"><path d="M31.374 25.113h1.98v14.502h-1.98z"/><path d="M25.113 31.374h14.503v1.98H25.113z"/></g></svg>
@@ -109,9 +114,9 @@
                       <div class="hider">
                           <h2>Chet Moritz</h2>
                           <p><span>Deputy Director</span> / Center for Sensorimotor Neural Engineering</p>
-                          <p><span>Associate Professor</span> / Rehabilitation Medicine, Physiology and Biophysics</p>
-                          <p><span>Faculty Member</span> / Graduate Program in Neuroscience</p>         
+                          <p><span>Associate Professor</span> / Rehabilitation Medicine<br> Physiology and Biophysics</p>
                           <p><span>Adjunct Associate Professor</span> / Electrical Engineering</p>   
+                          <p><span>Faculty Member</span> / Graduate Program in Neuroscience</p>         
                       </div>
                       <svg class="svg-plus" xmlns="http://www.w3.org/2000/svg" width="50.98" height="50.6" viewBox="0 0 50.98 50.6"><path fill="#B7A57A" d="M46.684 0v46.684H0"/><g fill="#FFF"><path d="M31.374 25.113h1.98v14.502h-1.98z"/><path d="M25.113 31.374h14.503v1.98H25.113z"/></g></svg>
                   </li>
@@ -203,16 +208,16 @@
                <p><span>1</span>For those who experience paralysis, the intent to move is intact, but  the ability is not. </p>
                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/info-1.svg' ?>" alt="">
              </div><div>
-               <p><span>2</span>An implantable brain-computer  interface (BCI) is placed below  the injury site. Signals measured  directly from the brain are sent  to the implanted BCI.</p>
+               <p><span>2</span>An implantable BCI is positioned to bridge the injury site. Signals measured directly from the brain are relayed to the spinal cord below the injury. </p>
                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/info-2.svg' ?>" alt="">
              </div><div>
-               <p><span>3</span>Electrodes placed in the paralyzed  limb are stimulated with electrical  impulses sent by the BCI, which  cause the muscles to contract.</p>
+               <p><span>3</span>Electrodes placed in the spinal cord are stimulated with electrical impulses in time with brain activity, which can cause the muscles to contract.</p>
                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/info-3.svg' ?>" alt="">
              </div><div>
-               <p><span>3</span>With repetition, the brain  and spinal circuits will form  new connections and heal  themselves. </p>
+               <p><span>4</span>With repetition, the brain and spinal circuits may form new connections and heal themselves </p>
                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/info-4.svg' ?>" alt="">
              </div><div>
-               <p><span>3</span>Eventually, the implanted BCI  can be explanted as the  once-paralyzed limb regains  function.   </p>
+               <p><span>5</span>Eventually, the implanted BCI  can be explanted as the  once-paralyzed limb regains  function.   </p>
                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/info-5.svg' ?>" alt="">
              </div>
            </div>
@@ -290,7 +295,8 @@
                        <div style="text-align: center">             
                          <h2 class="headline-gold">FPO</h2>
                          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                         <div class="boundless-button sm dark give"><span><a href="passion/#innovation">Give now</a></span></div>
+                         <div id="immersive-give-iframe"></div>
+                         <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="DREAMD,MATSCH,EDUIIF,ACKPAR" href="#">Give now</a></span></div>
                        </div>
                      </div>
                  </div>
@@ -299,9 +305,6 @@
 
 </main>
 
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/engineering.css' ?>' type='text/css' media='all' />
 
 </div>
 

@@ -1,4 +1,9 @@
 <?php get_header( "campaign-open" ); ?>
+
+<link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />
+<link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
+<link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/education.css' ?>' type='text/css' media='all' />
+
 <?php get_header( "campaign-close" ); ?>
 
 
@@ -259,8 +264,8 @@
               <div style="text-align: center">             
                 <h2 class="headline-gold">You can help bridge the gap</h2>
                 <p>Lakeridge Elementary is just one story of success. With your support, the College of Education can improve teaching quality and transform K-12 learning across the Puget Sound region.</p>
-
-                <div class="boundless-button sm dark give"><span><a href="passion/#public-good">Give now</a></span></div>
+                <div id="immersive-give-iframe"></div>
+                <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="DREAMD,MATSCH,EDUIIF,ACKPAR" href="#">Give now</a></span></div>
               </div>
 
 
@@ -277,12 +282,6 @@
 
 
 
-
-
-
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/education.css' ?>' type='text/css' media='all' />
 
 
 

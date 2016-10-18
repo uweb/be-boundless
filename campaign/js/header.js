@@ -42,18 +42,13 @@ $(function(){
 	 	bodyEl.toggle('active-header')
 	}
 
-	// Check for empty
-	function isEmpty( el ){
-		return !$.trim(el.html())
-	}
-
 	give.addEventListener('click', function(e){
 
 		e.preventDefault();	
 
 		if(isEmpty($('#give-iframe'))) {
 			$('<iframe>', {
-				src: 'https://online.gifts.washington.edu/secure/?tab=0&appeal=17XEX#tabNeeds',
+				src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0',
 				frameborder: 0,
 				width: '100%',
 				height: '100%',

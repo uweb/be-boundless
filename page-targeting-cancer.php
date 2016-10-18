@@ -1,4 +1,9 @@
 <?php get_header( "campaign-open" ); ?>
+
+ <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />
+ <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
+ <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/medicine.css' ?>' type='text/css' media='all' />
+
 <?php get_header( "campaign-close" ); ?>
 
 
@@ -226,7 +231,8 @@
                               <div style="text-align: center">             
                                 <h2 class="headline-gold">FPO</h2>
                                 <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus.</p>
-                                <div class="boundless-button sm dark give"><span><a href="passion/#impact">Give now</a></span></div>
+                                <div id="immersive-give-iframe"></div>
+                                <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="DREAMD,MATSCH,EDUIIF,ACKPAR" href="#">Give now</a></span></div>
                               </div>
                             </div>
                         </div>
@@ -241,9 +247,6 @@
 
 </main>
 
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/medicine.css' ?>' type='text/css' media='all' />
 
 </div>
 

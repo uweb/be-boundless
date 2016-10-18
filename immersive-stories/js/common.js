@@ -1,6 +1,11 @@
 // Set up mobile check
 var isMobile = window.matchMedia("only screen and (max-width: 768px)"); 
 
+// Check for empty
+function isEmpty( el ){
+  return !$.trim(el.html())
+}
+
 // Video player for iphone/Android/desktop
 
 function videoPlay(vid){
@@ -16,8 +21,10 @@ function videoPlay(vid){
 
   if (isMobile.matches) {
     boundlessVideo.innerHTML = videoHTML;
+    $(".play").click(function(e){
+       e.preventDefault();
+    });
   } else {
-
     $(".play").click(function(e){
        e.preventDefault();     
        boundlessVideo.innerHTML = videoHTML;
@@ -34,13 +41,36 @@ function videoPlay(vid){
 
       $body.toggleClass("playing");
     });
-
   }
 }
 
 
 
+
+
+
 $(function(){
+
+  // Giving widget at the bottom of the Immersive stories
+
+  document.getElementById('immersive-give').addEventListener('click', function(e){
+    e.preventDefault(); 
+
+    if(isEmpty($('#immersive-give-iframe'))) {
+      $('<iframe>', {
+        src: 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&source_typ=3&source=' + e.target.getAttribute('data-fund'),
+        frameborder: 0,
+        width: '100%',
+        height: 'auto',
+      }).appendTo('#immersive-give-iframe'); 
+    }
+    
+    $('html, body').animate({
+      scrollTop: ( $("#immersive-give-iframe").offset().top)
+    }, 900);
+
+  })
+
 
   // Audio Player
   $(".audio-ctrl").each(function(){
