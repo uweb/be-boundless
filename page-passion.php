@@ -59,7 +59,7 @@
                       }
                   }
                  ?>
-                 <li><p><a href="#" class="fyp-filter-click" data-filter="president-s-fund-for-excellence">President’s fund for excellence</a></p></li>
+                 <li><p><a href="#" class="fyp-filter-click" data-filter="president-s-fund-for-excellence">President’s Fund for Excellence</a></p></li>
                </ul>
              </div>
            </div>
@@ -152,9 +152,11 @@
                           </div>
                       </div>
                       <div class="front"><div style="<?php echo 'background-image:url(' . $imageurl . ');'; ?> "></div></div>
-                      <div class="explore-banner">
-                        <p>Explore these opportunities</p>
-                      </div>
+                      <?php if( count($causequery->posts) > 0 ) { ?>
+                        <div class="explore-banner">
+                          <p>Explore these opportunities</p>
+                        </div>
+                      <?php } ?>
                     </div>
                   </li>
           <?php
@@ -178,9 +180,11 @@
                         </div>
                       </div>
                       <div class="front"><div style="<?php echo 'background-image:url(' . $imageurl . ');'; ?> "></div></div>
-                      <div class="explore-banner">
-                        <p>Explore these opportunities</p>
-                      </div>
+                      <?php //if( count($unitquery->posts) > 0 ) { ?>
+                        <div class="explore-banner">
+                          <p>Explore these opportunities</p>
+                        </div>
+                      <?php //} ?>
                     </div>
                   </li>
                   <?php
@@ -204,9 +208,11 @@
                         </div>
                       </div>
                       <div class="front"><div style="<?php echo 'background-image:url(' . $imageurl . ');'; ?> "></div></div>
-                      <div class="explore-banner">
-                        <p>Explore these opportunities</p>
-                      </div>
+                      <?php //if( count($unitquery->posts) > 0 ) { ?>
+                        <div class="explore-banner">
+                          <p>Explore these opportunities</p>
+                        </div>
+                      <?php //} ?>
                     </div>
                   </li>
           <?php

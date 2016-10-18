@@ -233,8 +233,10 @@ $(window).load(function(){
           }, 900);
       //ADDS #URL
       dataCheck = $( this ).data('filter'),
-      dataName = dataCheck && '#name=' + dataCheck;
-      window.location.hash = dataName;
+      dataName = dataCheck && '#' + dataCheck;
+      var urlParam = location.hash.split("appeal=");
+      var appeal = urlParam[1] ? ( "&appeal=" + urlParam[1].split("&")[0] ) : "";
+      window.location.hash = dataName + appeal;
    })
 
    $('#fyp-search-button').on('click', function(e){
@@ -256,7 +258,9 @@ $(window).load(function(){
       $('#searcher').val("");
       $grid.isotope({ filter: '.featured' }); 
       //removes url hash
-      window.location.hash = "";
+      var urlParam = location.hash.split("appeal=");
+      var appeal = urlParam[1] ? ( "appeal=" + urlParam[1].split("&")[0] ) : "";
+      window.location.hash = "" + appeal;
 
    })
 
@@ -267,8 +271,10 @@ $(window).load(function(){
 
    $('.give-link').on('click', function(e){
       e.preventDefault(); 
+      var urlParam = location.hash.split("appeal=");
+      var appeal = urlParam[1] ? ( "&appeal=" + urlParam[1].split("&")[0] ) : "";
       var allocCode = $( this ).attr('data-code');
-      var source = (allocCode != "") ? 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?source_typ=3&source=' + allocCode + '&frame_buster=false' : 'https://online.gifts.washington.edu/secure/?tab=0';
+      var source = (allocCode != "") ? 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&source_typ=3&source=' + allocCode + appeal + '' : 'https://online.gifts.washington.edu/secure/?nobanner=true&tab=0' + appeal + '';
 
       $('#give-iframe').empty();
 
@@ -307,7 +313,7 @@ $(window).load(function(){
    $('.search-more').on('click', function(e){
       e.preventDefault();
       $searchTerm = $('#searcher').val(); 
-      $.getJSON('http://ua-dev-service.gifts.washington.edu/OnlineAllocation/Search/' + $searchTerm + '?callback=?', function(data) {
+      $.getJSON('http://service.gifts.washington.edu/OnlineAllocation/Search/' + $searchTerm + '?callback=?', function(data) {
           //console.log(data);
           //$('.grid-item.search-more').addClass('hide');
           var searchItems = new Array();
@@ -387,10 +393,10 @@ $(window).load(function(){
 
 //THIS FUNCTION NEEDS WORK FOR SCHOOLS TO USE
       // Open by URL hash
-      if(location.hash.match(/^#name/)) {
+      if(location.hash != '') {
 
-          var hashName = location.hash.substring(6),
-              $dataName = $('*[data-filter="' + hashName + '"]');
+          var hashName = location.hash.substring(1).split("&")[0];
+              //$dataName = $('*[data-filter="' + hashName + '"]');
 
               //$dataName.trigger('click'); //This doesnt work for pillars and such that aren't click filters on page...
               //console.log('clicked');
