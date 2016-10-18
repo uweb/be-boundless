@@ -159,7 +159,7 @@
     ul.search-grid {
       padding-left: 0;
       margin-bottom: 0;
-      li.search-item {
+      li.search-item:not(.grid-sizer) {
         display: inline-block;
         margin: 0px;
         margin-bottom: -7px;
@@ -867,6 +867,7 @@
 
   //defining constants for tiles
   @tileHeight: 210px;
+  @searchHeight: 130px;
   
 
   // Calculates the total number of columns divided by the columns to span
@@ -881,18 +882,28 @@
     margin: @margin;       
     height: @tileHeight; 
     &.search-item {
-      height: .6*@tileHeight;
+      height: @searchHeight;
+      &.open {
+        height: 3*@searchHeight;
+        .the-width ( 2, 5 );
+        .front {
+          display: none;
+        }
+        .full-bio {
+          margin-left: 0;
+        }
+      }
     }
     &.featured { 
       .the-width ( 2, 5 );
       background-color: white;  
       height: 2*@tileHeight;
-      &.open:not(.unit-small):not(.search-more):not(.filter-item) ,
+      &.open:not(.unit-small):not(.search-more):not(.filter-item):not(.search-item) ,
       &.fyp-units {
         height: 3*@tileHeight;
       }
     }
-    &.open:not(.unit-small):not(.search-more):not(.filter-item) ,
+    &.open:not(.unit-small):not(.search-more):not(.filter-item):not(.search-item) ,
     &.fyp-units {
       .the-width ( 5, 5 );
       height: 3*@tileHeight;
@@ -1558,16 +1569,17 @@
     &.search-item {
       .back {
         h3 {
-          font-size: 15px;
-          line-height: 1.1;
-          letter-spacing: 1px;
-          font-family: "Encode Sans Compressed",sans-serif;
-          font-weight: 600;
-          -webkit-font-smoothing: antialiased;
+          display: none;
+          // font-size: 15px;
+          // line-height: 1.1;
+          // letter-spacing: 1px;
+          // font-family: "Encode Sans Compressed",sans-serif;
+          // font-weight: 600;
+          // -webkit-font-smoothing: antialiased;
         }
         p {
           line-height: 1.1;
-          font-size: 13px;
+          font-size: 15px;
           &:after {
             margin-top: 5px;
             width: 18px;  

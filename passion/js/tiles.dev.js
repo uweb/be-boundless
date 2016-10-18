@@ -345,6 +345,7 @@ $(window).load(function(){
           //console.log(data);
           //$('.grid-item.search-more').addClass('hide');
           var searchItems = new Array();
+          searchItems.push($('<li class="grid-sizer search-item"></li>'));
           data.forEach(function(fund){
             var alloc        = fund.Key,
                 title        = fund.Name,
@@ -412,12 +413,17 @@ $(window).load(function(){
                   var $this = $(this);
                   if( !$this.hasClass('open')) {
                     $('.grid-item:not(.search-more)').removeClass('open')
-                    $this.addClass('open');             
+                    $this.addClass('open');
+                    $('.search-grid').isotope({
+                      itemSelector: '.grid-item',
+                      percentPosition: true,
+                      masonry: {
+                        columnWidth: '.grid-sizer'
+                      }
+                    });     
                     // Scroll-to portion
                     //scrollIt($this);          
-                  } else {
-                    $this.removeClass('open')
-                  }                
+                  }                 
              });
           
       });
