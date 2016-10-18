@@ -12,7 +12,7 @@
   <div class="intro-body">
       <div class="row">
         <div class="col-md-10 col-md-offset-1 col-xs-12 col-lg-offset-1" id='intro-text'>
-            <h1><span><span>Unleashing the </span></span><span><span>student experience</span></span> </h1>
+            <h1><span><span>Unleashing the </span></span><span><span>Husky experience</span></span> </h1>
             <!-- <p>At the vanguard of next-generation precision medicine, Dr. Pamela Becker’s work through the Institute for Stem Cell and Regenerative Medicine is taking aim at cancer.</p> -->
         </div>
     </div>
@@ -728,7 +728,7 @@
                         <h2 class="headline-gold">FPO</h2>
                         <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum.</p>
                         <div id="immersive-give-iframe"></div>
-                        <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="ACHSED,HUSPRO,SCHOLU" href="#">Give now</a></span></div>
+                        <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="ACHSED,HUSPRO,SCHOLU,HUSPRO" href="#">Give now</a></span></div>
                       </div>
                     </div>
                 </div>

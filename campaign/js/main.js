@@ -437,7 +437,7 @@ $(function(){
 			).done(function(){
 			    setTimeout(function(){
 			    	$body.toggleClass('active-story loading');
-			    	$body.removeClass('active-header');
+			    	// $body.removeClass('active-header');
 			    }, 500);
 			    setTimeout(function(){
 			    	$body.addClass('makeStatic');
@@ -462,7 +462,7 @@ $(function(){
 			$('#dynamicCSS').remove();
 			// Open and close menu based on whether the user has closed it.
 			if (!userClosedMenu && !isMobile.matches) {
-				$('body').addClass('active-header');
+				// $('body').addClass('active-header');
 			} 			
 			scrollConverter.activate(currentOffset);
 		}, 500);
