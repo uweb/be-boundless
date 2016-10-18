@@ -590,10 +590,7 @@ p {
     position: relative;
     z-index: 0;
     .background-cover(cover);
-    .container {
-        padding-top: 280px;
-        padding-bottom: 30px;
-    }
+
     h2 {
         font-family: @uni;
         font-weight: 300;
@@ -633,32 +630,7 @@ p {
         text-transform: uppercase;
         font-size: 25px;
         border-bottom: none;
-        &:before,
-        &:after {
-            content: "";
-            position: absolute;
-            opacity: .8;
-        }
-        &:after {
-            background: url("@{img}/sprite.svg") no-repeat -79px -329px rgba(0,0,0,0);
-            width: 101px;
-            height: 95px;
-            bottom: -15px;
-            right: 0;
-            opacity: .8;
-            .transition(all .1s linear);
-        }
-        &:focus,
-        &:active,
-        &:hover {
-            &:after {
-                .scale(1.1,1.1);
-            }
-        }
-        svg {
-            .animation(blinker 1.2s linear infinite);
-            margin-left: -2px;
-        }
+
     }
     @media(min-width:768px) {
         background-image: url("@{education}/woman-in-headscarf.jpg");
@@ -674,6 +646,32 @@ p {
             padding: 14px 150px 13px 20px;
             line-height: 39px;
             -webkit-font-smoothing: antialiased;
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                opacity: .8;
+            }
+            &:after {
+                background: url("@{img}/sprite.svg") no-repeat -79px -329px rgba(0,0,0,0);
+                width: 101px;
+                height: 95px;
+                bottom: -15px;
+                right: 0;
+                opacity: .8;
+                .transition(all .1s linear);
+            }
+            &:focus,
+            &:active,
+            &:hover {
+                &:after {
+                    .scale(1.1,1.1);
+                }
+            }
+            svg {
+                .animation(blinker 1.2s linear infinite);
+                margin-left: -2px;
+            }
             &:before {
                 background: url("@{img}/sprite.svg") no-repeat 9px -289px rgba(0,0,0,0);
                 width: 52px;
@@ -700,28 +698,25 @@ p {
         }
     }
     @media(max-width:768px) {
-        .container {
-            padding-top: 110%;
-            padding-left: 30px;
-            padding-right: 30px;
-        }
-        background-position: -65px 0;
-        background-image: url("@{education}/woman-in-headscarf-mobile.jpg");
-        h2 {
-            font-size: 40px;
-        }
+        padding: 25px 24px 20px;
+        background-image: url("@{education}/mobile-video.jpg");
+        .background-cover(cover);
         a.play {
-            .iPhone & {
-                pointer-events: none;
-            }
-            padding: 31px 97px 14px 0;
-            display: inline-block;
-            font-size: 20px;
-            &:before {
-            }
-            &:after {
-                .scale(.75, .75);
-            }
+            display: none;
+        }
+        a {
+            // color: @purple
+        }
+        h2 {
+            // color: @purple;
+            font-size: 30px;
+        }
+        p {
+            text-align: left;
+            // color: @darkgray;
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 20px;
         }
     }
 }

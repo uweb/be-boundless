@@ -23,9 +23,6 @@ $(function(){
 		currentOffset	= 0,
 		storyUp			= false;
 
-
-
-
 	// Listen for resizes
 	window.addEventListener('resize', function(){
 		widthInner 	= window.innerWidth;
@@ -129,7 +126,6 @@ $(function(){
     		return;
     	}
     }
-
 
     // Left/Right arrow event listener
 	$('#arrows button').on('click',function(e){
@@ -404,7 +400,7 @@ $(function(){
 	// Add immersive story
 	$('.story-link').on('click',function(e){
 		var eTarget = $(e.target),
-			jsFiles = eTarget.data('js') || 'test',
+			jsCssFiles = eTarget.data('js') || 'test',
 			title	= eTarget.data('title') || "Immersive story";
 
 		currentOffset = window.pageXOffset;
@@ -418,17 +414,22 @@ $(function(){
 		// Change URL to immersive story URL
 		history.pushState({page: title}, title, e.target.href);
 
-		// Listen for backbutton
-		document.addEventListener('hashChange',function(e){
-			console.log(e)
-		});
-
 		$dyno.load(e.target.href + ' #immersive-body', function(){
 
+			// Deactivate vertical scroll
 			scrollConverter.deactivate(currentOffset);
 
+			// Dynamically load CSS
+			$('<link/>', {
+			   id: 'dynamicCSS',
+			   rel: 'stylesheet',
+			   type: 'text/css',
+			   href: '/wp-content/themes/be-boundless/immersive-stories/css/' + jsCssFiles + '.css'
+			}).appendTo('head');
+
+			// Add the JS - Does getscript need a promise or is the callback enough?
 			$.when(
-			    $.getScript( '/wp-content/themes/be-boundless/immersive-stories/js/' + jsFiles + '.min.js' ),
+			    $.getScript( '/wp-content/themes/be-boundless/immersive-stories/js/' + jsCssFiles + '.min.js' ),
 			    	$.Deferred(function( deferred ){
 			        	$( deferred.resolve );
 			    	}
@@ -448,7 +449,7 @@ $(function(){
 	})
 
 
-	// Empty out dynamin story
+	// Empty out dynamic story
 	$('button#empty').on('click',function(e){
 
 		storyUp = false;
@@ -458,6 +459,7 @@ $(function(){
 
 		setTimeout(function(){
 			$dyno.empty();
+			$('#dynamicCSS').remove();
 			// Open and close menu based on whether the user has closed it.
 			if (!userClosedMenu && !isMobile.matches) {
 				$('body').addClass('active-header');
