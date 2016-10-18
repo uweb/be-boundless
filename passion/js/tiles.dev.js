@@ -393,19 +393,21 @@ $(window).load(function(){
 
 //THIS FUNCTION NEEDS WORK FOR SCHOOLS TO USE
       // Open by URL hash
-      if(location.hash != '') {
+      if(location.hash != '' && location.hash) {
 
           var hashName = location.hash.substring(1).split("&")[0];
+          if(!hashName.includes('appeal=')) {
+
               //$dataName = $('*[data-filter="' + hashName + '"]');
 
               //$dataName.trigger('click'); //This doesnt work for pillars and such that aren't click filters on page...
-              //console.log('clicked');
-          $('#empty').addClass('active');
-          $grid.isotope({ filter: '.' + hashName + ':not(.unit-small)' });
-          $('html, body').animate({
-                scrollTop: ( $(".fyp-search").offset().top)// - parseInt( $("#main-content").css("margin-top").replace("px", "") ) )
-              }, 900);
-
+                  //console.log('clicked');
+              $('#empty').addClass('active');
+              $grid.isotope({ filter: '.' + hashName + ':not(.unit-small)' });
+              $('html, body').animate({
+                    scrollTop: ( $(".fyp-search").offset().top)// - parseInt( $("#main-content").css("margin-top").replace("px", "") ) )
+                  }, 900);
+          }
 
           // //$dataName.toggleClass('open');
           // $grid.isotope();
