@@ -1,5 +1,6 @@
 <?php get_header( "campaign-open" ); ?>
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/campaign/css/campaign-style.css' ?>" type="text/css">
+<link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
 <?php get_header( "campaign-close" ); ?>
 
 
@@ -80,7 +81,7 @@
                 c0-0.77,0.624-1.393,1.393-1.393l0,0c0.77,0,1.393,0.624,1.393,1.393V23.42z"/>
             </g>
             </svg>
-            <small>Photo Credit: Name of student</small></span>
+            <small>Photo Credit: Soren Johnson</small></span>
         </section
         ><section tabindex="0"  class="section" id="slide4" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg4.jpg">
           <div id="slide4text">

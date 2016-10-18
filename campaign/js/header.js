@@ -42,6 +42,11 @@ $(function(){
 	 	bodyEl.toggle('active-header')
 	}
 
+	// Check for empty
+	function isEmpty( el ){
+	  return !$.trim(el.html())
+	}
+
 	give.addEventListener('click', function(e){
 
 		e.preventDefault();	
