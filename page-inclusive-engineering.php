@@ -171,7 +171,7 @@
             <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-1.svg' ?>" alt="">
           </div><div>
             <p><span>2</span>Signals measured directly from the brain using ECoG are sent to an external computer, which is connected to a robotic arm. </p>
-            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-2.svg' ?>" alt="">
+            <img class="full" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-2.svg' ?>" alt="">
           </div><div>
             <p><span>3</span>The external computer translates the brain signals, and the robotic arm moves in response to the participant’s thoughts. </p>
             <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-3.svg' ?>" alt="">
@@ -293,10 +293,10 @@
                  <div class="row">
                      <div class="col-md-10 col-md-offset-1 copy">
                        <div style="text-align: center">             
-                         <h2 class="headline-gold">FPO</h2>
-                         <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                         <h2 class="headline-gold">Help make a difference</h2>
+                         <p>You can help the University of Washington empower possibility through innovation by contributing to these funds.</p>
                          <div id="immersive-give-iframe"></div>
-                         <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="DREAMD,MATSCH,EDUIIF,ACKPAR" href="#">Give now</a></span></div>
+                         <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="CSNEDI,ENGSEN" href="#">Give now</a></span></div>
                        </div>
                      </div>
                  </div>
@@ -304,7 +304,6 @@
          </section>
 
 </main>
-
 
 </div>
 

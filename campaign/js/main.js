@@ -1,5 +1,6 @@
 // Check if you youtube's been played / for script loading issues
 var youtubeFlag = false;
+var currentController;
 
 $(function(){
 
@@ -276,7 +277,7 @@ $(function(){
 		// sceneToggle.addIndicators()
 		sceneToggle.addTo(controllerCampaign);
 		sceneToggle.setClassToggle(this, 'activeSection');
-		sceneToggle.on('enter', function(){
+		sceneToggle.on('start', function(){
 			// index + num is the number of slides to look ahead. 1 is only one slide ahead.
 			var sectionIndex = section[index + 1]
 
@@ -397,6 +398,9 @@ $(function(){
 	//
 	//
 
+	// For destroying the controller;
+
+
 	// Add immersive story
 	$('.story-link').on('click',function(e){
 		var eTarget = $(e.target),
@@ -456,6 +460,9 @@ $(function(){
 
 		e.preventDefault();
 		$body.removeClass('makeStatic');
+
+		// Important for performance = destroy story's controller after use.
+		currentController.destroy();
 
 		setTimeout(function(){
 			$dyno.empty();

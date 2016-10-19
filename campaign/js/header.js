@@ -39,7 +39,8 @@ $(function(){
 	// Toggle menu open on desktop
 
 	if(!isMobile.matches) {
-	 	bodyEl.toggle('active-header')
+	 	bodyEl.toggle('active-header');
+	 	campExpand.setAttribute('aria-hidden', 'true');
 	}
 
 	// Check for empty

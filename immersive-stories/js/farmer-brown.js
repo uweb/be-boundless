@@ -22,8 +22,6 @@ function resize(controller){
 }
 
 
-
-
 $(function() {
 
 	 $(".play").click(function(e){
@@ -48,6 +46,7 @@ $(function() {
 	  	});
 
 	 });
+
 	  
 	    // init controller
 	var controller = new ScrollMagic.Controller(),
@@ -80,11 +79,11 @@ $(function() {
 	
 	
 	  // build scenes
-	  var scene7 = new ScrollMagic.Scene({
+	  new ScrollMagic.Scene({
 	            triggerElement: "#intro-vid",
 	            triggerHook: "onEnter",
 	            duration: "100%",
-	            offset: window.innerHeight - 30
+	            offset: window.innerHeight - 20
 	          })
 	          .setTween(h1Skew)
 	         // .addIndicators()
@@ -92,7 +91,7 @@ $(function() {
 
 	
 	 // Parallax scene
-	 var scene8 = new ScrollMagic.Scene({
+	 var scene = new ScrollMagic.Scene({
 	            triggerElement: "#parallaxContainer1",
 	            offset: "60vh",      
 	            duration: 3000
@@ -110,19 +109,19 @@ $(function() {
 	         .setTween(parallaxer2)
 	         .addTo(controller);
 
-	 var veg1 = new ScrollMagic.Scene({triggerElement: "#veg1", offset: "60vh"})
+	 new ScrollMagic.Scene({triggerElement: "#veg1", offset: "60vh"})
 	 				.setClassToggle("#veg1", "active") // add class toggle
 	 				//.addIndicators()
 	 				.addTo(controller);
-	 var veg2 = new ScrollMagic.Scene({triggerElement: "#veg2", offset: "60vh"})
+	 new ScrollMagic.Scene({triggerElement: "#veg2", offset: "60vh"})
 	 				.setClassToggle("#veg2", "active") // add class toggle
 	 				//.addIndicators()
 	 				.addTo(controller);
-	 var veg3 = new ScrollMagic.Scene({triggerElement: "#veg3", offset: "60vh"})
+	 new ScrollMagic.Scene({triggerElement: "#veg3", offset: "60vh"})
 	 				.setClassToggle("#veg3", "active") // add class toggle
 	 				//.addIndicators()
 	 				.addTo(controller);
-	 var veg4 = new ScrollMagic.Scene({triggerElement: "#veg4", offset: "60vh"})
+	 new ScrollMagic.Scene({triggerElement: "#veg4", offset: "60vh"})
 	 				.setClassToggle("#veg4", "active") // add class toggle
 	 				//.addIndicators()
 	 				.addTo(controller);  
@@ -138,7 +137,10 @@ $(function() {
 		$this.parent().children('li').not($this).removeClass('active');
 	})
 
-	$('.slide a').on('click',function(e){ e.preventDefault()  })
+	$('.slide a').on('click', function(e){
+		e.preventDefault();
+	})
+
 
 	// Focus on button triggers 
 	$audioPlay.bind("focus blur", function(event){

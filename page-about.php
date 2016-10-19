@@ -36,11 +36,11 @@
         <div class="row">
           <div class="col-md-10 col-md-offset-1 copy padless">
           <h2 class="purpleHeadline"><span>Campaign Progress</span></h2>
-          <p>as of Oct. 1, 2016</p>
+          <p>as of Oct. 21, 2016</p>
             <div id="thermo" class="inactive">  
               <ul>
                 <li>
-                  <p>$<span id="camp-current">3.08</span> billion <b></b></p>
+                  <p>$<span id="camp-current">3.1</span> billion <b></b></p>
                 </li>
                 <li>
                   <div><p><b>Goal</b> $<span id="camp-goal">5.0</span> billion</p></div>

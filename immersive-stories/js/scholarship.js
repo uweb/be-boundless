@@ -70,12 +70,11 @@
 // })
 
 
-
-
-
 $(function(){
 
     var controllerScholarship = new ScrollMagic.Controller()
+    
+    currentController = controllerScholarship;
 
     var introMedicine = new ScrollMagic.Scene({
       triggerElement: '#intro-slide',

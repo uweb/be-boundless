@@ -2,7 +2,9 @@ $(function(){
 
   var controllerEducation = new ScrollMagic.Controller()
 
-  var zoomMap = new TimelineMax ()
+  currentController = controllerEducation;
+
+    var zoomMap = new TimelineMax ()
       .add([
         TweenMax.to(".school-pic", 1, { y: '-50%', ease: Power0.easeOut }),
         TweenMax.to(".blurb1", 0.5, { x: '-100%', opacity: 0 }, 1),

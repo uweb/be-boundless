@@ -94,7 +94,7 @@
           <div id="slide5text">
             <h2>Drive the public good</h2>
             <p><span class="hidden-xs">Our foundation is rooted in serving communities near and far.</span> Explore how committing to initiatives that promote health, equity and well-being can unleash human potential in King County’s Road Map region — and beyond.</p>
-            <a href="expanding-education" data-js="education" data-title="Drive the public good" class="uw-btn btn-sm btn-plus story-link">Read story</a> <a href="passion/#public-good" class="uw-btn btn-sm">Opportunities</a>
+            <a href="expanding-education" data-controller='controllerEducation' data-js="education" data-title="Drive the public good" class="uw-btn btn-sm btn-plus story-link">Read story</a> <a href="passion/#public-good" class="uw-btn btn-sm">Opportunities</a>
           </div>
           <span class="slide5-content"></span>
         </section><section tabindex="0"  class="section" id="slide6" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg6.jpg">

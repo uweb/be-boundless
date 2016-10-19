@@ -179,7 +179,7 @@ header {
 		.transition(transform .2s cubic-bezier(0.39, 0.58, 0.57, 1));
 		.translate(0, -250px);
 		background-color: @purple;
-		padding: 18px 70px 18px 0;
+		padding: 18px 30px 18px 0;
 		text-align: right;
 		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.29);
 		outline: none;
@@ -317,6 +317,9 @@ header {
 
 
 	@media(min-width:768px) {
+		#ham {
+			display: none;
+		}
 		.active-header & {	
 			button#campaign-expand {				
 				top: 26px;
