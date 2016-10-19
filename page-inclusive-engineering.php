@@ -294,9 +294,9 @@
                      <div class="col-md-10 col-md-offset-1 copy">
                        <div style="text-align: center">             
                          <h2 class="headline-gold">FPO</h2>
-                         <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                         <p>You can help the University of Washington empower possibility through innovation by contributing to these funds.</p>
                          <div id="immersive-give-iframe"></div>
-                         <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="DREAMD,MATSCH,EDUIIF,ACKPAR" href="#">Give now</a></span></div>
+                         <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="CSNEDI,ENGSEN" href="#">Give now</a></span></div>
                        </div>
                      </div>
                  </div>
@@ -304,7 +304,6 @@
          </section>
 
 </main>
-
 
 </div>
 

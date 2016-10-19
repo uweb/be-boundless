@@ -221,6 +221,13 @@ p {
 
 }
 
+// Expanding 
+
+#expanding,
+#expanding .copy {
+    background-color: @ultralightgold;
+}
+
 
 // Accordion button
 
@@ -254,7 +261,7 @@ div.boundless-button span a#expander:after {
 
 
 .profile {
-    background: url("@{medicine}/bg-pattern.svg") no-repeat left top white;
+    background-color: white;
     position: relative;
     overflow: hidden;
     z-index: 10;
@@ -310,7 +317,7 @@ div.boundless-button span a#expander:after {
     &.right {
         margin-top: 30px;
         padding-top: 10px;
-        background-color: @ultralightgold;
+        background-color: @purple;
         text-align: right;
         background-position: top left;
         .background-profile {
@@ -641,7 +648,7 @@ section.text-block .gold-quote.purple.special {
     }
     @media(min-width:768px) {
         .portrait {
-    	 	background: url("@{medicine}/people-outlines.png") no-repeat center center @ultralightgold;
+    	 	background: url("@{medicine}/people-outlines.png") no-repeat center center white;
         	position: absolute;
         	top: 0;
         	left: 0;
@@ -859,7 +866,7 @@ section.person-2 {
 // Text block overwrite
 
 .text-block.purpleBG {
-	background: url("@{medicine}/bg-pattern-white.svg") no-repeat center top @purple;
+	background-color:  @purple;
 	h2 {
 		color: @lightgold;
 	}

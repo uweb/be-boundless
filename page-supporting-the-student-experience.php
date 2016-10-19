@@ -726,7 +726,7 @@
                     <div class="col-md-10 col-md-offset-1 copy">
                       <div style="text-align: center">             
                         <h2 class="headline-gold">FPO</h2>
-                        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum.</p>
+                        <p>You can help transform the student experience at the University of Washington by contributing to these funds.</p>
                         <div id="immersive-give-iframe"></div>
                         <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="ACHSED,HUSPRO,SCHOLU,HUSPRO" href="#">Give now</a></span></div>
                       </div>
