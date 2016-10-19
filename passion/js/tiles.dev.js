@@ -50,6 +50,9 @@ $(window).load(function(){
              return (search && $this.is( ':not(.unit-item):not(.filter-item)' )) || $this.is( '.search-more' );
            }
          });
+          if( $grid.data('isotope').filteredItems.length < 5) {
+            $('.search-more').trigger('click');
+          }
          //$('#empty').addClass('active');
       } //else {
       //   $('#empty').trigger('click'); 
@@ -287,7 +290,7 @@ $(window).load(function(){
     return !$.trim(el.html())
   }
 
-   $('.give-link').on('click', function(e){
+   $('body').on('click', '.give-link', function(e){
       e.preventDefault(); 
       // var urlParam = location.hash.split("appeal=");
       // var appeal = urlParam[1] ? ( "&appeal=" + urlParam[1].split("&")[0] ) : "";
@@ -425,6 +428,15 @@ $(window).load(function(){
                     //scrollIt($this);          
                   }                 
              });
+          $('.empty-fund').on('click', function(e){
+              e.preventDefault();
+              e.stopPropagation();
+              //close the fund
+              $prevSelect = $('.search-item.open:not(.search-more)');
+              $prevSelect.removeClass('open');
+              $searchgrid.isotope();
+           });
+
           
       });
       
