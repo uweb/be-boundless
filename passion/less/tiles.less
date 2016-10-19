@@ -159,10 +159,9 @@
     ul.search-grid {
       padding-left: 0;
       margin-bottom: 0;
-      li.search-item {
+      li.search-item:not(.grid-sizer) {
         display: inline-block;
         margin: 0px;
-        margin-bottom: -7px;
         .front {
           background-color: @purple;
           padding: 15px;
@@ -171,22 +170,22 @@
             text-transform: uppercase;
             text-align: center;
             margin: 0;
-            padding-top: 30px;
-            font-size: 16px;
-            line-height: 1.3;
+            padding-top: 0;
+            font-size: 15px;
+            line-height: 1.2;
             letter-spacing: 1px;
             font-family: "Encode Sans Compressed",sans-serif;
-            font-weight: 800;
+            font-weight: 600;
             &:after {
               content: "";
-              width: 25px;
-              height: 25px;
-              margin-top: 20px;
+              width: 22px;
+              height: 22px;
+              margin-top: 10px;
               margin-left: auto;
               margin-right: auto;
               display: block;
               background: url(../assets/plus.svg) 0 0 no-repeat;
-              background-size: 25px 25px;
+              background-size: 22px 22px;
             }
           }
         }
@@ -867,6 +866,7 @@
 
   //defining constants for tiles
   @tileHeight: 210px;
+  @searchHeight: 130px;
   
 
   // Calculates the total number of columns divided by the columns to span
@@ -880,16 +880,29 @@
     .the-width ( 1, 5 );
     margin: @margin;       
     height: @tileHeight; 
+    &.search-item {
+      height: @searchHeight;
+      &.open {
+        height: 3*@searchHeight;
+        .the-width ( 2, 5 );
+        .front {
+          display: none;
+        }
+        .full-bio {
+          margin-left: 0;
+        }
+      }
+    }
     &.featured { 
       .the-width ( 2, 5 );
       background-color: white;  
       height: 2*@tileHeight;
-      &.open:not(.unit-small):not(.search-more):not(.filter-item) ,
+      &.open:not(.unit-small):not(.search-more):not(.filter-item):not(.search-item) ,
       &.fyp-units {
         height: 3*@tileHeight;
       }
     }
-    &.open:not(.unit-small):not(.search-more):not(.filter-item) ,
+    &.open:not(.unit-small):not(.search-more):not(.filter-item):not(.search-item) ,
     &.fyp-units {
       .the-width ( 5, 5 );
       height: 3*@tileHeight;
@@ -930,8 +943,11 @@
       &.featured { 
         .the-width ( 2, 4 ); 
         height: 2*@tileHeight;
+      }
+      &.search-item.open{
+        .the-width ( 2, 4 );
       }      
-      &.open:not(.unit-small):not(.search-more):not(.filter-item) ,
+      &.open:not(.unit-small):not(.search-more):not(.filter-item):not(.search-item) ,
       &.fyp-units {
         .the-width ( 4, 4 );
         .front {
@@ -1030,7 +1046,10 @@
         .the-width ( 2, 3 ); 
         //height: 420px;
       }
-      &.open:not(.unit-small):not(.search-more):not(.filter-item) ,
+      &.search-item.open{
+        .the-width ( 2, 3 );
+      } 
+      &.open:not(.unit-small):not(.search-more):not(.filter-item):not(.search-item) ,
       &.fyp-units {
         .the-width ( 3, 3 );
         &.unit-item {
@@ -1106,8 +1125,11 @@
       &.featured { 
         .the-width ( 2, 2 ); 
         height: 2*@tileHeight;
+      } 
+      &.search-item.open{
+        .the-width ( 2, 2 );
       }      
-      &.open:not(.unit-small):not(.search-more):not(.filter-item) ,
+      &.open:not(.unit-small):not(.search-more):not(.filter-item):not(.search-item) ,
       &.fyp-units {
         .the-width ( 2, 2 );
         height: 2.5*@tileHeight;
@@ -1174,7 +1196,16 @@
         .the-width ( 1, 1 ); 
         height: 12*@tileHeight/7;
       }
-      &.open:not(.unit-small):not(.search-more):not(.filter-item) ,
+      &.search-item.open{
+        .the-width ( 1, 1 );
+        height: 4*@searchHeight;
+        .full-bio h2 {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 1;
+        }
+      } 
+      &.open:not(.unit-small):not(.search-more):not(.filter-item):not(.search-item) ,
       &.fyp-units {
         .the-width ( 1, 1 );
         height: 3.5*@tileHeight;
@@ -1552,6 +1583,29 @@
     background-color: white;
     z-index: 0;
     position: relative;
+    &.search-item {
+      .back {
+        h3 {
+          display: none;
+          // font-size: 15px;
+          // line-height: 1.1;
+          // letter-spacing: 1px;
+          // font-family: "Encode Sans Compressed",sans-serif;
+          // font-weight: 600;
+          // -webkit-font-smoothing: antialiased;
+        }
+        p {
+          line-height: 1.1;
+          font-size: 15px;
+          &:after {
+            margin-top: 5px;
+            width: 18px;  
+            height: 18px;
+            background-size: 18px 18px;
+          }
+        }
+      }
+    }
     .front,
     .back,
     .flipper {

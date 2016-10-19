@@ -276,7 +276,7 @@ $(function(){
 		// sceneToggle.addIndicators()
 		sceneToggle.addTo(controllerCampaign);
 		sceneToggle.setClassToggle(this, 'activeSection');
-		sceneToggle.on('enter', function(){
+		sceneToggle.on('start', function(){
 			// index + num is the number of slides to look ahead. 1 is only one slide ahead.
 			var sectionIndex = section[index + 1]
 

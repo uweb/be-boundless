@@ -50,7 +50,7 @@
                       
   <p class="gold-quote headline-gold purple special"><b>"We have to do better</b>,” says Dr. Becker. “And if we get it figured out for leukemia, we can figure it out for other cancers too.” </p>
 
-  <p>That’s why she’s working with the UW’s Institute for Stem Cell and Regenerative Medicine (ISCRM) to pioneer groundbreaking treatments — and turn the odds in her patients’ favor.</p>
+  <p>That’s why she’s working with the UW Medicine's Institute for Stem Cell and Regenerative Medicine (ISCRM) to pioneer groundbreaking treatments — and turn the odds in her patients’ favor.</p>
 
 
 
@@ -120,16 +120,16 @@
 
 
 
-<p>Typically, she explains, patients get the same treatment for leukemia: two types of chemotherapy drugs. The drug programs are intensive. They’re costly. They’re toxic, with life-threatening complications and severe side-effects. And for a third of those patients, they don’t help at all.</p>
+<p>Typically, she explains, patients get the same treatment for leukemia: two types of chemotherapy drugs. The drug programs are intensive. They’re costly. They’re toxic, with life-threatening complications and severe side effects. And for a third of those patients, they don’t help at all.</p>
 
 <p>“But what if there weren’t just two types of drugs?” asks Dr. Becker. “And what if the drugs we used to fight AML were selected based on each patient’s unique biology?” 
 </p>
 
 <p>These are the questions she is working to address in her precision medicine approach to cancer treatment, and she’s already making significant progress.</p>
 
-<p>Crucial to her research has been ISCRM’s Quellos High-throughput Screening Core. Housed in a quiet South Lake Union lab, the facility’s automated machines can test high volumes of drug compounds at different concentrations, finding the best matches for each person’s cancer. And they can do so quickly, giving Dr. Becker and her patients an edge in the race against time.</p>
+<p>Crucial to her research has been ISCRM’s Quellos High-throughput Screening Core. Housed in a quiet lab at UW Medicine at South Lake Union, the facility’s automated machines can test high volumes of drug compounds at different concentrations, finding the best matches for each person’s cancer. And they can do so quickly, giving Dr. Becker and her patients an edge in the race against time.</p>
 
-<p>In a recent clinical trial, Dr. Becker’s team screened cancer cells from several late-stage AML patients against more than 160 drug compounds. Timothy Martins, Ph.D., ’84, director and principal scientist of the Quellos Core, recalls that about 25 years ago, it would take him over a month to test just 20 drug compounds. 
+<p>In a recent clinical trial, Dr. Becker’s team screened cancer cells from several late-stage AML patients against more than 160 drug compounds. Timothy Martins, Ph.D. ’84, director and principal scientist of the Quellos Core, recalls that about 25 years ago, it would take him over a month to test just 20 drug compounds. 
 </p>
 
                   </div> 
@@ -191,7 +191,7 @@
 
 <p class="gold-quote headline-gold purple">"And there’s another challenge: When we say someone has a cancer, they don’t,” explains Dr. Becker. <b>“They have a group of cancers.”</b> </p>
 
-<p>In other words, cells from one part of a tumor might have a different genetic makeup than cells from another part. If a drug kills the cells from biopsy A, biopsy B could live on.</p>
+<p>In other words, cells from one part of a tumor might have a different genetic makeup than cells from another part. If a drug kills the cells from biopsy A, the cells from biopsy B could live on.</p>
 
 <p>With cancer’s manifold complexities in mind, Dr. Becker is working with other UW faculty to understand what happens when patients relapse.</p>
 
@@ -244,7 +244,7 @@
                             </div>
 
                             <p>At ISCRM, researchers like Dr. Murry are pioneering ways to derive stem cells from skin, blood and even urine samples. These powerful cells have the astounding potential to create next-generation therapies for maladies like heart disease, Alzheimer’s, rheumatoid arthritis, vision loss and cancer.</p>
-                            <p>ISCRM was founded by Dr. Murry, UW pharmacologist Randall Moon, Ph.D., and UW hematologist Tony Blau, M.D., in 2006. Dr. Murry describes the institute as the glue that promotes synergy among all the different types of expertise needed — including developmental biology, imaging, pathology and much more — to advance our knowledge.</p>
+                            <p>ISCRM was founded by Dr. Murry, UW Medicine pharmacologist Randall Moon, Ph.D., and UW Medicine hematologist Tony Blau, M.D., in 2006. Dr. Murry describes the institute as the glue that promotes synergy among all the different types of expertise needed — including developmental biology, imaging, pathology and much more — to advance our knowledge.</p>
                             <p>And, in just a decade, doctors at ISCRM have made significant progress — from developing a potential gene therapy for muscular dystrophy, to using patient-specific stem cells to find treatments for a condition that affects vision. </p>
                             <p>The future of ISCRM holds great possibility, and its success to date has hinged upon generous philanthropic support.</p>
                             <p>“It couldn’t be simpler,” says Dr. Murry. “Without the vision and generosity of our benefactors, there would be no stem cell institute.”</p>
@@ -259,7 +259,7 @@
                         <div class="row">
                             <div class="col-md-10 col-md-offset-1 copy">
                               <div style="text-align: center">             
-                                <h2 class="headline-gold">FPO</h2>
+                                <h2 class="headline-gold">Help make a difference</h2>
                                 <p>You can help the University of Washington expand our impact everywhere by contributing to these funds.</p>
                                 <div id="immersive-give-iframe"></div>
                                 <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="DREAMD,MATSCH,EDUIIF,ACKPAR" href="#">Give now</a></span></div>

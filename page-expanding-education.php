@@ -261,7 +261,7 @@
               <hr>
 
               <div style="text-align: center">             
-                <h2 class="headline-gold">You can help bridge the gap</h2>
+                <h2 class="headline-gold">Help make a difference</h2>
                 <p>You can help the University of Washington drive the public good by contributing to these funds.</p>
                 <div id="immersive-give-iframe"></div>
                 <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="DREAMD,MATSCH,EDUIIF,ACKPAR" href="#">Give now</a></span></div>

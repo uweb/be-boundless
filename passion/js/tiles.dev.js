@@ -157,6 +157,7 @@ $(window).load(function(){
         $prevSelect = $('.grid-item.open:not(.search-more):not(.filter-item)');
         $prevSelect.removeClass('open');
         $grid.isotope( 'updateSortData', $prevSelect );
+        $grid.isotope();
       })
 
       //DO WE WANT THIS???
@@ -339,10 +340,12 @@ $(window).load(function(){
       $prevSelect = $('.grid-item.open:not(.search-more):not(.filter-item)');
       $prevSelect.removeClass('open');
       $grid.isotope( 'updateSortData', $prevSelect ); 
+      // $grid.isotope();
       $.getJSON('http://service.gifts.washington.edu/OnlineAllocation/Search/' + $searchTerm + '?callback=?', function(data) {
           //console.log(data);
           //$('.grid-item.search-more').addClass('hide');
           var searchItems = new Array();
+          searchItems.push($('<li class="grid-sizer search-item"></li>'));
           data.forEach(function(fund){
             var alloc        = fund.Key,
                 title        = fund.Name,
@@ -367,6 +370,13 @@ $(window).load(function(){
                 '      <div class="give-button">' +
                 '        <a href="#" class="give-link" data-code="' + alloc + '">Give Now</a>' +
                 '      </div>' +
+                '      <button class="empty-fund">' +
+                '        Close current fund' +
+                '        <svg aria-hidden="true" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34.147px" height="37.833px" viewBox="0 0 34.147 37.833" enable-background="new 0 0 34.147 37.833" xml:space="preserve">' +
+                '          <line fill="none" stroke="#A7A9AC" stroke-width="2" stroke-miterlimit="10" x1="9.616" y1="8.449" x2="31.782" y2="30.614"></line>' +
+                '          <line fill="none" stroke="#A7A9AC" stroke-width="2" stroke-miterlimit="10" x1="31.782" y1="8.449" x2="9.616" y2="30.614"></line>' +
+                '        </svg>' +
+                '      </button>' +
                 '    </div>' +
                 '  </div>' +
                 '</li>'));
@@ -376,7 +386,13 @@ $(window).load(function(){
          // $grid.isotope('appended',searchItems);
           $('ul.search-grid').append(searchItems);
           $('.grid-item.search-more').addClass('open');
-          $grid.isotope();
+          var $searchgrid = $('.search-grid').isotope({
+                              itemSelector: '.grid-item',
+                              percentPosition: true,
+                              masonry: {
+                                columnWidth: '.grid-sizer'
+                              }
+                            });    
           $('#searcher').on('keyup', function(el){
               $('.grid-item.search-item').remove();
               $('.grid-item.search-more').removeClass('open');
@@ -403,12 +419,11 @@ $(window).load(function(){
                   var $this = $(this);
                   if( !$this.hasClass('open')) {
                     $('.grid-item:not(.search-more)').removeClass('open')
-                    $this.addClass('open');             
+                    $this.addClass('open');
+                    $searchgrid.isotope();     
                     // Scroll-to portion
                     //scrollIt($this);          
-                  } else {
-                    $this.removeClass('open')
-                  }                
+                  }                 
              });
           
       });
