@@ -420,6 +420,7 @@
             <div class="flipper" role="button">
               <div>
                 <p class="fyp-search-more-label">Show more funds</p>
+                <p class="fyp-no-results-label hide">No results. Please try a new search</p>
                 <!-- <p class="short-desc">no desc</p> -->
               </div>
             </div>

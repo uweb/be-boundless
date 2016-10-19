@@ -607,7 +607,9 @@ body {
   cursor: pointer;
 }
 #passion li.grid-item.search-more div p.fyp-search-more-label,
-#passion li.grid-item.filter-item div p.fyp-search-more-label {
+#passion li.grid-item.filter-item div p.fyp-search-more-label,
+#passion li.grid-item.search-more div p.fyp-no-results-label,
+#passion li.grid-item.filter-item div p.fyp-no-results-label {
   color: #FFF;
   margin: 0;
   font-size: 30px;
@@ -628,7 +630,14 @@ body {
   margin-right: 20%;
   text-align: center;
 }
-#passion li.grid-item.search-more div p.fyp-search-more-label:after {
+#passion li.grid-item.search-more.open div {
+  cursor: initial;
+}
+#passion li.grid-item.search-more.open div p {
+  margin-top: 40px;
+  font-size: 40px;
+}
+#passion li.grid-item.search-more:not(.open) div p.fyp-search-more-label:after {
   content: "";
   width: 40px;
   height: 40px;
@@ -639,9 +648,9 @@ body {
   background: url(../assets/plus.svg) 0 0 no-repeat;
   background-size: 40px 40px;
 }
-#passion li.grid-item.search-more div p.fyp-search-more-label:hover,
-#passion li.grid-item.search-more div p.fyp-search-more-label:active,
-#passion li.grid-item.search-more div p.fyp-search-more-label:focus {
+#passion li.grid-item.search-more:not(.open) div p.fyp-search-more-label:hover,
+#passion li.grid-item.search-more:not(.open) div p.fyp-search-more-label:active,
+#passion li.grid-item.search-more:not(.open) div p.fyp-search-more-label:focus {
   color: #b7a57a;
 }
 #passion .full-bio {
@@ -748,6 +757,7 @@ body {
   position: relative;
   padding: 0;
   display: inline-block;
+  overflow: visible;
 }
 #passion .full-bio h2:after {
   content: "";
@@ -765,7 +775,7 @@ body {
   right: 0;
   width: 65px;
   padding: 10px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   z-index: 99;
   text-align: left;
   text-transform: capitalize;
@@ -1180,7 +1190,9 @@ body {
     width: calc(100%);
   }
   #passion .grid-sizer.open.filter-item div p.fyp-search-more-label,
-  #passion .grid-item.open.filter-item div p.fyp-search-more-label {
+  #passion .grid-item.open.filter-item div p.fyp-search-more-label,
+  #passion .grid-sizer.open.filter-item div p.fyp-no-results-label,
+  #passion .grid-item.open.filter-item div p.fyp-no-results-label {
     text-align: left;
   }
   #passion .grid-sizer.open.filter-item div p.short-desc,
@@ -1282,7 +1294,11 @@ body {
   #passion .grid-sizer.open.search-more div p.fyp-search-more-label,
   #passion .grid-item.open.search-more div p.fyp-search-more-label,
   #passion .grid-sizer.open.filter-item div p.fyp-search-more-label,
-  #passion .grid-item.open.filter-item div p.fyp-search-more-label {
+  #passion .grid-item.open.filter-item div p.fyp-search-more-label,
+  #passion .grid-sizer.open.search-more div p.fyp-no-results-label,
+  #passion .grid-item.open.search-more div p.fyp-no-results-label,
+  #passion .grid-sizer.open.filter-item div p.fyp-no-results-label,
+  #passion .grid-item.open.filter-item div p.fyp-no-results-label {
     font-size: 25px;
   }
   #passion .grid-sizer.open.search-more div p.short-desc,

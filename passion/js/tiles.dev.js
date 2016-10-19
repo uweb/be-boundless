@@ -28,6 +28,14 @@ $(window).load(function(){
         sortBy : 'selected'
       });
 
+      var $searchgrid = $('.search-grid').isotope({
+                              itemSelector: '.grid-item',
+                              percentPosition: true,
+                              masonry: {
+                                columnWidth: '.grid-sizer'
+                              }
+                            });
+
       // Remove overlay once all is loaded
       $grid.one( 'arrangeComplete', function() {
         $('#overlay').fadeOut(300, function(){
@@ -50,6 +58,18 @@ $(window).load(function(){
              return (search && $this.is( ':not(.unit-item):not(.filter-item)' )) || $this.is( '.search-more' );
            }
          });
+          if($('.grid-item.search-more').hasClass('open')){
+            $('.grid-item.search-more').removeClass('open');
+            $('.fyp-search-more-label').removeClass('hide');
+            $('.fyp-no-results-label').addClass('hide');
+            $grid.isotope();
+          }
+          // $searchgrid.isotope( 'remove', $('.grid-item.search-item') );
+          // $searchgrid.isotope( 'remove', $('.grid-sizer.search-item') );
+          $('.search-grid').empty();
+          if( $grid.data('isotope').filteredItems.length < 5) {
+            $('.search-more').trigger('click');
+          }
          //$('#empty').addClass('active');
       } //else {
       //   $('#empty').trigger('click'); 
@@ -287,7 +307,7 @@ $(window).load(function(){
     return !$.trim(el.html())
   }
 
-   $('.give-link').on('click', function(e){
+   $('body').on('click', '.give-link', function(e){
       e.preventDefault(); 
       // var urlParam = location.hash.split("appeal=");
       // var appeal = urlParam[1] ? ( "&appeal=" + urlParam[1].split("&")[0] ) : "";
@@ -336,6 +356,7 @@ $(window).load(function(){
    //search api call for more search results
    $('.search-more').on('click', function(e){
       e.preventDefault();
+      e.stopPropagation();
       $searchTerm = $('#searcher').val();
       $prevSelect = $('.grid-item.open:not(.search-more):not(.filter-item)');
       $prevSelect.removeClass('open');
@@ -344,8 +365,17 @@ $(window).load(function(){
       $.getJSON('http://service.gifts.washington.edu/OnlineAllocation/Search/' + $searchTerm + '?callback=?', function(data) {
           //console.log(data);
           //$('.grid-item.search-more').addClass('hide');
+          if(data.length == 0){
+            $('.fyp-search-more-label').addClass('hide');
+            $('.fyp-no-results-label').removeClass('hide');
+          } else {
+            $('.fyp-search-more-label').removeClass('hide');
+            $('.fyp-no-results-label').addClass('hide');
+          }
           var searchItems = new Array();
-          searchItems.push($('<li class="grid-sizer search-item"></li>'));
+          if( !$('.grid-sizer.search-item').length ) {  
+            searchItems.push($('<li class="grid-sizer search-item"></li>')); //this is adding multiple on changed searches
+          }
           data.forEach(function(fund){
             var alloc        = fund.Key,
                 title        = fund.Name,
@@ -384,19 +414,13 @@ $(window).load(function(){
           });
           //$grid.append(searchItems);
          // $grid.isotope('appended',searchItems);
+          $('ul.search-grid').empty();
           $('ul.search-grid').append(searchItems);
+          $searchgrid.isotope('reloadItems');
           $('.grid-item.search-more').addClass('open');
-          var $searchgrid = $('.search-grid').isotope({
-                              itemSelector: '.grid-item',
-                              percentPosition: true,
-                              masonry: {
-                                columnWidth: '.grid-sizer'
-                              }
-                            });    
-          $('#searcher').on('keyup', function(el){
-              $('.grid-item.search-item').remove();
-              $('.grid-item.search-more').removeClass('open');
-            });
+          $grid.isotope();  
+          $searchgrid.isotope();  
+         
           // $('.search-item').on('click', function(el){
           //     el.preventDefault();
           //     $('.search-item.open').removeClass('open');
@@ -425,6 +449,15 @@ $(window).load(function(){
                     //scrollIt($this);          
                   }                 
              });
+          $('.empty-fund').on('click', function(e){
+              e.preventDefault();
+              e.stopPropagation();
+              //close the fund
+              $prevSelect = $('.search-item.open:not(.search-more)');
+              $prevSelect.removeClass('open');
+              $searchgrid.isotope();
+           });
+
           
       });
       
