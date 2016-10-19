@@ -162,7 +162,6 @@
       li.search-item:not(.grid-sizer) {
         display: inline-block;
         margin: 0px;
-        margin-bottom: -7px;
         .front {
           background-color: @purple;
           padding: 15px;
@@ -944,8 +943,11 @@
       &.featured { 
         .the-width ( 2, 4 ); 
         height: 2*@tileHeight;
+      }
+      &.search-item.open{
+        .the-width ( 2, 4 );
       }      
-      &.open:not(.unit-small):not(.search-more):not(.filter-item) ,
+      &.open:not(.unit-small):not(.search-more):not(.filter-item):not(.search-item) ,
       &.fyp-units {
         .the-width ( 4, 4 );
         .front {
@@ -1044,7 +1046,10 @@
         .the-width ( 2, 3 ); 
         //height: 420px;
       }
-      &.open:not(.unit-small):not(.search-more):not(.filter-item) ,
+      &.search-item.open{
+        .the-width ( 2, 3 );
+      } 
+      &.open:not(.unit-small):not(.search-more):not(.filter-item):not(.search-item) ,
       &.fyp-units {
         .the-width ( 3, 3 );
         &.unit-item {
@@ -1120,8 +1125,11 @@
       &.featured { 
         .the-width ( 2, 2 ); 
         height: 2*@tileHeight;
+      } 
+      &.search-item.open{
+        .the-width ( 2, 2 );
       }      
-      &.open:not(.unit-small):not(.search-more):not(.filter-item) ,
+      &.open:not(.unit-small):not(.search-more):not(.filter-item):not(.search-item) ,
       &.fyp-units {
         .the-width ( 2, 2 );
         height: 2.5*@tileHeight;
@@ -1188,7 +1196,16 @@
         .the-width ( 1, 1 ); 
         height: 12*@tileHeight/7;
       }
-      &.open:not(.unit-small):not(.search-more):not(.filter-item) ,
+      &.search-item.open{
+        .the-width ( 1, 1 );
+        height: 4*@searchHeight;
+        .full-bio h2 {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 1;
+        }
+      } 
+      &.open:not(.unit-small):not(.search-more):not(.filter-item):not(.search-item) ,
       &.fyp-units {
         .the-width ( 1, 1 );
         height: 3.5*@tileHeight;

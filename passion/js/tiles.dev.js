@@ -386,7 +386,13 @@ $(window).load(function(){
          // $grid.isotope('appended',searchItems);
           $('ul.search-grid').append(searchItems);
           $('.grid-item.search-more').addClass('open');
-          $grid.isotope();
+          var $searchgrid = $('.search-grid').isotope({
+                              itemSelector: '.grid-item',
+                              percentPosition: true,
+                              masonry: {
+                                columnWidth: '.grid-sizer'
+                              }
+                            });    
           $('#searcher').on('keyup', function(el){
               $('.grid-item.search-item').remove();
               $('.grid-item.search-more').removeClass('open');
@@ -414,13 +420,7 @@ $(window).load(function(){
                   if( !$this.hasClass('open')) {
                     $('.grid-item:not(.search-more)').removeClass('open')
                     $this.addClass('open');
-                    $('.search-grid').isotope({
-                      itemSelector: '.grid-item',
-                      percentPosition: true,
-                      masonry: {
-                        columnWidth: '.grid-sizer'
-                      }
-                    });     
+                    $searchgrid.isotope();     
                     // Scroll-to portion
                     //scrollIt($this);          
                   }                 
