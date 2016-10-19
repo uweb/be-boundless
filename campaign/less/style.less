@@ -30,7 +30,6 @@ section {
 button#empty {
 	position: fixed;
 	border: none;
-	top: 100px;
 	right: 0;
 	width: 65px;
 	padding: 10px;
@@ -58,6 +57,9 @@ button#empty {
 	.active-story & {
 		// display: block;
 		.translate(0,0);
+	}
+	@media(max-width:768px) {    
+		top: 100px;
 	}
 	@media(max-width:768px) {    
 		width: 45px;
