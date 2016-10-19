@@ -1,6 +1,10 @@
+
 $(function(){
 
-  var controllerEngineering = new ScrollMagic.Controller()
+  var controllerEngineering = new ScrollMagic.Controller();
+
+  currentController = controllerEngineering;
+
 
     var introEngineering = new ScrollMagic.Scene({
       triggerElement: '#intro-slide',
