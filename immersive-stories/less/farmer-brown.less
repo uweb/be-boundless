@@ -28,7 +28,14 @@
     bottom: 0;
     z-index: 999;
 }
-
+header {
+    @media(max-width:768px) {
+        margin-bottom: 20px;
+    }
+    @media(min-width:768px) {
+        margin-bottom: 90px;
+    }
+}
 
 @keyframes blinker {
   0%,
@@ -295,7 +302,7 @@ p {
            position: fixed;
            z-index: 1;
            left: 10%;
-           top: 30%;
+           top: 35%;
         }
         h1 {
             // Perspective 
@@ -308,10 +315,10 @@ p {
     @media(min-width:1600px) {
         h1 {
             // Perspective 
-            transform: rotateY(38deg) skew(0deg, -2deg);
-            -webkit-transform: rotateY(38deg) skew(0deg, -2deg);
-            -moz-transform: rotateY(38deg) skew(0deg, -2deg);
-            -ms-transform: rotateY(38deg) skew(0deg, -2deg);
+            transform: rotateY(30deg) skew(0deg, -2deg);
+            -webkit-transform: rotateY(30deg) skew(0deg, -2deg);
+            -moz-transform: rotateY(30deg) skew(0deg, -2deg);
+            -ms-transform: rotateY(30deg) skew(0deg, -2deg);
         }
     }
     @media(min-width:769px) and (max-width:1400px) {

@@ -171,7 +171,7 @@
             <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-1.svg' ?>" alt="">
           </div><div>
             <p><span>2</span>Signals measured directly from the brain using ECoG are sent to an external computer, which is connected to a robotic arm. </p>
-            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-2.svg' ?>" alt="">
+            <img class="full" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-2.svg' ?>" alt="">
           </div><div>
             <p><span>3</span>The external computer translates the brain signals, and the robotic arm moves in response to the participant’s thoughts. </p>
             <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/chart-3.svg' ?>" alt="">

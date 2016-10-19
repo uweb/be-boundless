@@ -1,6 +1,9 @@
-<?php get_template_part('header', 'campaign'); ?>
+<?php get_header( "campaign-open" ); ?>
 
-<div id="immersive">
+ <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />
+ <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
+
+<?php get_header( "campaign-close" ); ?>
 
     <section class="intro" id="intro-vid">          
 
@@ -699,7 +702,6 @@
 
     </main> 
 
-
       
       <!-- **** CSS **** -->
       
@@ -708,17 +710,15 @@
       
       <!-- **** JS **** -->      
 
-</div>
-
       <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
       <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script> -->
 
-      <script src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/js/common.min.js' ?>" type="text/javascript"></script>
       <script src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/js/farmer-brown.min.js' ?>" type="text/javascript"></script>
-
-
+      
+      <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
+      
 
 <?php get_footer(); ?>
 
