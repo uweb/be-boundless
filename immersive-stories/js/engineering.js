@@ -39,6 +39,25 @@ $(function(){
     .addTo(controllerEngineering);
 
 
+    var addSlideshow = new ScrollMagic.Scene({
+      triggerElement: '#eng-slideshow',
+      triggerHook: 1,
+    })
+    .on("enter", function(){
+      $('.engineering-slideshow').slick({
+        lazyLoad: 'ondemand',
+        useTransform: true,
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      });      
+    })
+    .addTo(controllerEngineering);
+
+
+
     // Play Jayna's video
 
     var videoTrigger = new ScrollMagic.Scene({
@@ -106,16 +125,7 @@ $(function(){
        }
    });
 
-  $('.engineering-slideshow').slick({
-    lazyLoad: 'ondemand',
-    useTransform: true,
-    dots: true,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  });
-  
+
 
   // Lightbox plugin
 
