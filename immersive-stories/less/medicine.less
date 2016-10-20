@@ -261,7 +261,7 @@ div.boundless-button span a#expander:after {
 
 
 .profile {
-    background-color: white;
+    background: url("@{medicine}/bg-pattern.svg") no-repeat left top white;
     position: relative;
     overflow: hidden;
     z-index: 10;
@@ -271,6 +271,7 @@ div.boundless-button span a#expander:after {
     	margin: 50px auto;
     	padding: 250px 70px 20px;
     	overflow: hidden;
+        outline: 5px solid white;
     }
     p, h2 {        
         z-index: 1;
@@ -317,7 +318,7 @@ div.boundless-button span a#expander:after {
     &.right {
         margin-top: 30px;
         padding-top: 10px;
-        background-color: @purple;
+        background-color: @ultralightgold;
         text-align: right;
         background-position: top left;
         .background-profile {
@@ -340,6 +341,7 @@ div.boundless-button span a#expander:after {
         .background-profile {
         	padding: 150px 80px 150px;  
         	position: relative;
+            outline: 5px solid white;
             &.active {
 
             }
@@ -648,7 +650,7 @@ section.text-block .gold-quote.purple.special {
     }
     @media(min-width:768px) {
         .portrait {
-    	 	background: url("@{medicine}/people-outlines.png") no-repeat center center white;
+    	 	background: url("@{medicine}/people-outlines-gold.png") no-repeat center center @ultralightgold;
         	position: absolute;
         	top: 0;
         	left: 0;
@@ -866,7 +868,7 @@ section.person-2 {
 // Text block overwrite
 
 .text-block.purpleBG {
-	background-color:  @purple;
+	background: url("@{medicine}/bg-pattern-white.svg") no-repeat center top @purple;
 	h2 {
 		color: @lightgold;
 	}

@@ -249,12 +249,13 @@
                 c0-0.77,0.624-1.393,1.393-1.393l0,0c0.77,0,1.393,0.624,1.393,1.393V23.42z"/>
             </g>
             </svg>
+          </span>
 
 
 
 
 
-<div class="engineering-slideshow">
+<div id="eng-slideshow" class="engineering-slideshow">
   <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/slide-2.jpg' ?>" alt="">
     <p>CSNE Young Scholars Program participant Emily Boeschoten and electrical engineering postdoctoral fellow Ivana Milvanovic work on optimizing sensory feedback through novel haptic devices in Chet Moritz’ lab.</p>
   </div>
@@ -276,12 +277,10 @@
   
     <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/slide-6.jpg' ?>" alt="">
       <p>CSNE neuroethics predoctoral fellow Tim Brown and electrical engineering graduate student Tyson Heo work with electromyography (EMG) sensing and haptic feedback in the UW BioRobotics lab.
-  </p></div>  
-  
+  </p></div>   
 
 </div>
 
-<img />
                    </div> 
              </div> 
            </div>   
