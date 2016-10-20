@@ -165,7 +165,6 @@
                                   <div class="pax"></div>
                                   <div class="hider">
                                     <h3>Susan Brotman</h3>
-                                    <blockquote><p></p></blockquote>
                                   </div>              
                               </li>
                           </ul>
@@ -194,8 +193,8 @@
                   </div>
                   <div class="col-md-3"> 
                     <ul>
-                      <li><a href="http://foster.uw.edu/volunteerleaders">Foster School of Business </a>-- </li>
-                      <li><a href="https://ischool.uw.edu/about/leadership/founding-board">Information School </a>-- </li>
+                      <li><a href="http://foster.uw.edu/volunteerleaders">Foster School of Business </a></li>
+                      <li><a href="https://ischool.uw.edu/about/leadership/founding-board">Information School </a></li>
                       <li><a href="https://www.kexp.org/about/advisoryboard">KEXP</a> </li>
                       <li><a href="http://kuow.org/people/capacity/board-directors ">KUOW</a> </li>
                       <li><a href="uw-dentistry-our-campaign-volunteers/">School of Dentistry </a></li>
@@ -207,7 +206,7 @@
                     <ul>
                       <li><a href="https://sop.washington.edu/alumni-donors/campaign-volunteers/ ">School of Pharmacy</a> </li>
                       <li><a href="http://sph.washington.edu/about/deanscouncil.asp">School of Public Health</a> </li>
-                      <li><a href="http://socialwork.uw.edu/alumni/giving-opportunities">School of Social Work</a>-  </li>
+                      <li><a href="http://socialwork.uw.edu/alumni/giving-opportunities">School of Social Work</a></li>
                       <li><a href="http://www.lib.washington.edu/support/friends ">University Libraries</a> </li>
                       <li><a href="http://www.uwb.edu/give/campaignvolunteers">UW Bothell</a> </li>
                       <li><a href="http://www.acceleratemed.org/leadership">UW Medicine</a> </li>

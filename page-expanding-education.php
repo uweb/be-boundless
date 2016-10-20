@@ -33,13 +33,11 @@
           <div class="row">
               <div class="col-md-10 col-md-offset-1 copy">
                 
-                  <p class="headline-gold center">What is the student experience?<br/> Well, that depends on who you ask. </p>
-                  
-                  <p>For some, it’s walking up a creek in chest-high waders, studying salmon and bear interactions in the field, where they happen. A living              laboratory.  </p>
-                  <p>For others, it’s spending spring break volunteering in public schools in rural and tribal communities across Washington, creating a pipeline of possibility for the next generation of Huskies. </p>
-                  <p>It’s hiking Mt. Rainier. It’s throwing the winning touchdown. It’s scoring the solo, engineering a 3-D printed prosthetic hand, interning at a local company with a global reach.  </p>
-                  <p>It’s being immersed in a city of self-starters, adventurers and entrepreneurs. It’s being caffeinated, curious, connected — with the Pacific               Northwest in your backyard. </p>
-                  <p>It’s discovering your passion; your place in the world — and it’s knowing the student experience wouldn’t be possible without a community of               supporters rallying to help you get to, through, and beyond the UW. </p>
+                <p class="headline-gold left">“There are four children and two sandwiches. If the children want to share the sandwiches, how much would each child get?”</p>
+                <p>In the second-grade classroom at Lakeridge Elementary, students quietly work through the problem in notebooks and with fingers. A student with a mop of brown hair shares his answer — two-fourths — that he reached by dividing each sandwich into four parts and then assigning parts to each child. </p>
+                <p>“Do you agree? Or do you respectfully disagree?” teacher Nicole Brown asks the rest of the class. </p>
+                <p>A girl wearing a bright purple hijab raises her hand to say that she got a different answer; her process resulted in one-half for each child. Brown then poses additional questions for the students to consider: How are the two answers the same? How are they different?</p>
+
                   
               </div> 
         </div> 
@@ -255,8 +253,7 @@
                  <p>The scalable nature of the program is already enabling Kazemi and other faculty members to build professional learning communities at other schools in the Road Map region. Countless teachers and students stand to benefit, and Kazemi hopes that the work will continue spreading throughout the area.</p>
                  
                  <p>“Kids are capable regardless of their socioeconomic status, but there’s so much about the professional workplace in poverty-impacted communities that makes it hard for teachers,” she says. “Investing in school leadership and professional development can make that change happen.”</p>
-                 
-
+                
 
               <hr>
 
