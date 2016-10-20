@@ -722,6 +722,15 @@ body {
   color: #4b2e83;
   font-size: 17px;
 }
+#passion .full-bio .bio-text a {
+  color: #08d;
+}
+#passion .full-bio .bio-text a:hover,
+#passion .full-bio .bio-text a:active,
+#passion .full-bio .bio-text a:focus {
+  color: #b7a57a;
+  text-decoration: underline;
+}
 #passion .full-bio .linkedin {
   background: url(../assets/linkedin.png) no-repeat center center;
   text-indent: -99999px;
