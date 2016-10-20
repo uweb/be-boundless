@@ -27,8 +27,6 @@
         </div> 
       </div>   
     </section>
-    
-
 
 
     <section class="thermo">
@@ -62,11 +60,11 @@
                   <h4>Campaign FAQs</h4></a>
                 </li>
                 <li>
-                  <a href="#"><img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/link-what.svg' ?>" alt="Glasses on book"><br>
+                  <a href="https://www.washington.edu/giving/how-to-give/#types"><img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/link-what.svg' ?>" alt="Glasses on book"><br>
                   <h4>Types of gifts</h4></a>
                 </li>
                 <li>
-                  <a href="#"><img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/link-ways.svg' ?>" alt="Glasses on book"><br>
+                  <a href="https://www.washington.edu/giving/how-to-give/#ways"><img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/link-ways.svg' ?>" alt="Glasses on book"><br>
                   <h4>How to give</h4></a>
                 </li>
                 <li>
