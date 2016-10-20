@@ -253,22 +253,29 @@
                  <p>The scalable nature of the program is already enabling Kazemi and other faculty members to build professional learning communities at other schools in the Road Map region. Countless teachers and students stand to benefit, and Kazemi hopes that the work will continue spreading throughout the area.</p>
                  
                  <p>“Kids are capable regardless of their socioeconomic status, but there’s so much about the professional workplace in poverty-impacted communities that makes it hard for teachers,” she says. “Investing in school leadership and professional development can make that change happen.”</p>
-                
-
-              <hr>
-
-              <div style="text-align: center">             
-                <h2 class="headline-gold">Help make a difference</h2>
-                <p>You can help the University of Washington drive the public good by contributing to these funds.</p>
-                <div id="immersive-give-iframe"></div>
-                <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="DREAMD,MATSCH,EDUIIF,ACKPAR" href="#">Give now</a></span></div>
-              </div>
 
 
                 </div> 
           </div> 
         </div>   
    </section>
+
+
+   <section class="text-block giving-widget">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-10 col-md-offset-1 copy">
+                 <div style="text-align: center">             
+                   <h2 class="headline-gold">Help make a difference</h2>
+                   <p>You can help the University of Washington drive the public good by contributing to these funds.</p>
+                   <div id="immersive-give-iframe"></div>
+                   <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="DREAMD,MATSCH,EDUIIF,ACKPAR" href="#">Give now</a></span></div>
+                 </div>
+               </div>
+           </div>
+     </div>
+   </section>
+
 
 
 

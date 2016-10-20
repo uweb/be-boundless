@@ -41,7 +41,7 @@
                   <p>$<span id="camp-current">3.1</span> billion <b></b></p>
                 </li>
                 <li>
-                  <div><p><b>Goal</b> $<span id="camp-goal">4.0</span> billion</p></div>
+                  <div><p><b>Goal</b> $<span id="camp-goal">5.0</span> billion</p></div>
                 </li>
               </ul>
             </div>
@@ -56,7 +56,7 @@
           <div class="col-md-10 col-md-offset-1 copy padless">
               <ul>
                 <li>
-                  <a href="faqs"><img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/link-specs.svg' ?>" alt="Glasses on book"><br>
+                  <a href="/boundless/faqs"><img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/link-specs.svg' ?>" alt="Glasses on book"><br>
                   <h4>Campaign FAQs</h4></a>
                 </li>
                 <li>
@@ -65,7 +65,7 @@
                 </li>
                 <li>
                   <a href="https://www.washington.edu/giving/how-to-give/#ways"><img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/link-ways.svg' ?>" alt="Glasses on book"><br>
-                  <h4>How to give</h4></a>
+                  <h4>Ways to give</h4></a>
                 </li>
                 <li>
                   <a href="https://www.washington.edu/giving/recognition/"><img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/link-matching.svg' ?>" alt="Glasses on book"><br>

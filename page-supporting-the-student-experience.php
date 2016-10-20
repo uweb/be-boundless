@@ -720,7 +720,7 @@
           <li><a href="#veronica" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-veronica.jpg' ?>"></a></li>
         </ul>
 
-        <section class="text-block">
+        <section class="text-block giving-widget">
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 copy">

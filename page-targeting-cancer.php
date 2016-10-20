@@ -254,7 +254,7 @@
                 </section>
 
 
-                <section class="text-block give-box">
+                <section class="text-block giving-widget">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-10 col-md-offset-1 copy">
@@ -262,7 +262,7 @@
                                 <h2 class="headline-gold">Help make a difference</h2>
                                 <p>You can help the University of Washington expand our impact everywhere by contributing to these funds.</p>
                                 <div id="immersive-give-iframe"></div>
-                                <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="DREAMD,MATSCH,EDUIIF,ACKPAR" href="#">Give now</a></span></div>
+                                <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="HEMATL,PATHCA,STEMCR" href="#">Give now</a></span></div>
                               </div>
                             </div>
                         </div>
