@@ -1,3 +1,31 @@
+//Stuff that needs to be fired immediately
+$(document).ready(function() {
+
+   $('body').on('click', '.fyp-filter-triggers', function(e){
+      e.preventDefault();
+      $('hr').addClass('reduce');
+      $('ul.fyp-filters.show').removeClass('show');
+      $('#'+e.currentTarget.dataset.name).addClass('show');
+      $('.flip-container.active').removeClass('active');
+      $( e.currentTarget ).find('.flip-container').addClass('active');
+      
+   })
+
+
+   $('#fyp-search-button').on('click', function(e){
+    e.preventDefault();
+    $('html, body').animate({
+            scrollTop: ( $("#fyp-search-button").offset().top)
+          }, 900);
+   })
+
+
+
+
+})
+
+
+
 $(window).load(function(){    
 
     
@@ -52,6 +80,30 @@ ga('send', 'pageview');
     
      // Fire isotope initially
      $grid.isotope();
+
+      
+     //FYP - Click filter sorts the boxes
+     $('body').on('click', '.fyp-filter-click', function(e){
+        e.preventDefault();
+        var filterValue = $( this ).attr('data-filter');
+        
+        $prevSelect = $('.grid-item.open:not(.search-more):not(.filter-item)');
+        $prevSelect.removeClass('open');
+        $grid.isotope( 'updateSortData', $prevSelect );
+        
+        $grid.isotope({ filter: '.' + filterValue + ':not(.unit-small)' });
+        $('html, body').animate({
+              scrollTop: ( $(".fyp-search").offset().top)// - parseInt( $("#main-content").css("margin-top").replace("px", "") ) )
+            }, 900);
+        //ADDS #URL
+        dataCheck = $( this ).data('filter'),
+        dataName = dataCheck && '#' + dataCheck;
+        
+        window.location.hash = dataName;
+
+        ga('send', 'event', $(this).attr('data-category'), 'Click', $(this).attr('data-label'));
+     })
+
 
 //ADJUST THIS FUNCTION FOR THE NEW SEARCH
       // use value of search field to filter
@@ -132,43 +184,6 @@ ga('send', 'pageview');
         $grid.isotope();                
       });              
 
-      // // bind filter button click
-      // $filter.on( 'click', 'button', function() {
-      //   var filterValue = $( this ).attr('data-filter');
-      //   $grid.isotope({ filter: filterValue });
-      // }); 
-
-      // // Clear select menus and re-isotope
-      // $('#clear').on('click', function(el){
-      //   el.preventDefault();
-      //   // Clear selects, open class, and hash
-      //   $('select').prop('selectedIndex',0);
-      //   $('.grid-item').removeClass('open');
-      //   $filter.removeClass('select_active')
-      //   window.location.hash = '';          
-      //   $grid.isotope({ filter: ':not(.title-card)' });
-      // })
-
-      // // bind filter on select change
-      // $filter.on( 'change', 'select', function() {
-      //   // get filter value from option value
-      //   var filterValue = this.value;
-      //   $filter.addClass('select_active')
-
-      //   // use filterFn if matches value
-      //   filterValue = filterValue;
-      //   $grid.isotope({ filter: filterValue });
-      // });
-
-      // // change is-checked class on buttons
-      // $filter.each( function( i, buttonGroup ) {
-      //   var $buttonGroup = $( buttonGroup );
-      //   $buttonGroup.on( 'click', 'button', function() {
-      //     $buttonGroup.find('.is-checked').removeClass('is-checked');
-      //     $(this).addClass('is-checked');
-      //   });
-      // }); 
-//ADJUST THIS FUNCTION FOR NEW SEARCH FIELD
       // Search field
       $('#searcher').on('click', function(el){  
 
@@ -210,96 +225,7 @@ ga('send', 'pageview');
               $(e.target).trigger('click')
           }
       });
-
-      // Search through category tags
-      // $('.tags').on('click', 'a', function(els){
-      //   var $this = $(this),
-      //       el = els;
-      //       $text = $this.text();
-
-      //   el.preventDefault();
-      //   // Stop propagation, otherwise it will bubble and want to close the slide
-      //   el.stopPropagation();        
-      //   $filter.addClass('select_active');
-      //   $grid.isotope({
-      //     filter: function() {
-      //       return $text ? $(this).find('.tags').text().match( $text ) : true;
-      //     }
-      //   });
-      // })
-
-   //  });
-   //  
    
-   // $('.module-hero-image').on('click', function(e){
-   //    $('ul.fyp-filters.show').removeClass('show');
-   //    $('#'+e.currentTarget.dataset.name).addClass('show');
-   //    $('.flip-container.active').removeClass('active');
-   // })
-
-   //FYP - Reveal filters under categories
-   $('.fyp-filter-triggers').on('click', function(e){
-      e.preventDefault();
-      $('hr').addClass('reduce');
-      $('ul.fyp-filters.show').removeClass('show');
-      $('#'+e.currentTarget.dataset.name).addClass('show');
-      $('.flip-container.active').removeClass('active');
-      $( e.currentTarget ).find('.flip-container').addClass('active');
-      //console.log( $(e.currentTarget ' flip-container') );
-   })
-
-   //FYP - Click filter sorts the boxes
-   $('.fyp-filter-click').on('click', function(e){
-      e.preventDefault();
-      var filterValue = $( this ).attr('data-filter');
-      //$('.module-hero-image').addClass('hide');
-      //$('#empty').addClass('active');
-      //$('.fyp-close-button-gradient').addClass('show');
-      //
-      $prevSelect = $('.grid-item.open:not(.search-more):not(.filter-item)');
-      $prevSelect.removeClass('open');
-      $grid.isotope( 'updateSortData', $prevSelect );
-      //
-      $grid.isotope({ filter: '.' + filterValue + ':not(.unit-small)' });
-      $('html, body').animate({
-            scrollTop: ( $(".fyp-search").offset().top)// - parseInt( $("#main-content").css("margin-top").replace("px", "") ) )
-          }, 900);
-      //ADDS #URL
-      dataCheck = $( this ).data('filter'),
-      dataName = dataCheck && '#' + dataCheck;
-      // var urlParam = location.hash.split("appeal=");
-      // var appeal = urlParam[1] ? ( "&appeal=" + urlParam[1].split("&")[0] ) : "";
-      // window.location.hash = dataName + appeal;
-      window.location.hash = dataName;
-
-      ga('send', 'event', $(this).attr('data-category'), 'Click', $(this).attr('data-label'));
-   })
-
-   $('#fyp-search-button').on('click', function(e){
-    e.preventDefault();
-    $('html, body').animate({
-            scrollTop: ( $("#fyp-search-button").offset().top)
-          }, 900);
-   })
-
-   // $('#empty').on('click', function(e){
-   //    e.preventDefault();
-   //    $('html, body').animate({
-   //          scrollTop: $('body').offset().top
-   //        }, 900);
-
-   //    $('#empty').removeClass('active');
-   //    $('.grid-item.search-item').remove();
-   //    $('.grid-item.search-more').removeClass('open');
-   //    $('#searcher').val("");
-   //    $grid.isotope({ filter: '.featured' }); 
-   //    //removes url hash
-   //    // var urlParam = location.hash.split("appeal=");
-   //    // var appeal = urlParam[1] ? ( "appeal=" + urlParam[1].split("&")[0] ) : "";
-   //    // window.location.hash = "" + appeal;
-   //    window.location.hash = "";
-
-   // })
    
    $('.empty-fund').on('click', function(e){
       e.preventDefault();
@@ -358,11 +284,6 @@ ga('send', 'pageview');
       $grid.isotope({ filter: '.' + filterValue + ':not(.unit-small)' });
    });
 
-   // $('.fyp-search-bar').on('keydown', function(e){
-      // if(e.which == 13) {
-      //         e.preventDefault();
-      // }
-   // })
 
    //search api call for more search results
    $('.search-more').on('click', function(e){
@@ -423,33 +344,14 @@ ga('send', 'pageview');
                 '</li>'));
             
           });
-          //$grid.append(searchItems);
-         // $grid.isotope('appended',searchItems);
+          
           $('ul.search-grid').empty();
           $('ul.search-grid').append(searchItems);
           $searchgrid.isotope('reloadItems');
           $('.grid-item.search-more').addClass('open');
           $grid.isotope();  
           $searchgrid.isotope();  
-         
-          // $('.search-item').on('click', function(el){
-          //     el.preventDefault();
-          //     $('.search-item.open').removeClass('open');
-          //     $( this ).addClass('open');
-          //   });
-          // $('.give-link').on('click', function(e){
-          //       e.preventDefault();
-          //       //$lastLocation = e.offset().top;
-          //       var allocCode = $( this ).attr('data-code');
-          //       $('body').prepend('<div class="fyp-give-widget-lightbox"></div>' +
-          //                         '<div id="fyp-give-widget-container" class="fyp-give-widget-container">' +
-          //                           '<iframe src="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?source_typ=3&source=' + allocCode + '&frame_buster=false" title="Giving at the UW" id="UWFOnlineGivingForm" frameborder="0" scrolling="yes" onload="try{document.domain=\'washington.edu\'}catch(e){}"></iframe>' +
-          //                         '</div>');
-
-          //       $('html, body').animate({
-          //           scrollTop: ( $("#fyp-give-widget-container").offset().top - $("#campaign-header thick").outerHeight() )
-          //         }, 900);
-          //    });
+       
           $('.search-grid').on( 'click', '.search-item', function() {
                   var $this = $(this);
                   if( !$this.hasClass('open')) {
@@ -496,15 +398,7 @@ ga('send', 'pageview');
                   }, 900);
           //}
 
-          // //$dataName.toggleClass('open');
-          // $grid.isotope();
-
-          // // Replace with high quality image
-          // imageSwitch($dataName);
-
-          // // Scroll-to portion
-          // scrollIt($dataName)          
-
+          
       } 
   
 
