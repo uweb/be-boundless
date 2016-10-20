@@ -227,7 +227,7 @@
                 <section class="text-block purpleBG">
                   <div class="container">
                       <div class="row">
-                          <div class="col-md-10 col-md-offset-1 copy">
+                          <div class="col-md-10 col-md-offset-1 copy no-margin">
                               
                             <h2>AT THE HEART OF THE CURE</h2>
                             <p>Chuck Murry shows off a tiny white scar on his forearm, left over from a biopsy. The cells he had removed are still alive, but they’re no longer skin cells.</p>
@@ -260,7 +260,7 @@
                             <div class="col-md-10 col-md-offset-1 copy">
                               <div style="text-align: center">             
                                 <h2 class="headline-gold">Help make a difference</h2>
-                                <p>You can help the University of Washington expand our impact everywhere by contributing to these funds.</p>
+                                <p>You can help the University of Washington expand our impact everywhere by <br>contributing to these funds.</p>
                                 <div id="immersive-give-iframe"></div>
                                 <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="HEMATL,PATHCA,STEMCR" href="#">Give now</a></span></div>
                               </div>

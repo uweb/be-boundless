@@ -1,4 +1,9 @@
 <?php get_header( "campaign-open" ); ?>
+
+<link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />
+<link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
+<link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/leadership.css' ?>' type='text/css' media='all' />
+
 <?php get_header( "campaign-close" ); ?>
 
 
@@ -282,9 +287,6 @@
 <?php get_template_part('footer', 'campaign'); ?>
 
 
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/leadership.css' ?>' type='text/css' media='all' />
   
 <script type="text/javascript">
   
