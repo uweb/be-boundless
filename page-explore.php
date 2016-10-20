@@ -343,7 +343,8 @@
            //$code = get_post_meta($fund->ID, 'code', true);
            //$desc = get_post_meta($fund->ID, 'desc', true);
            $fundcauses = wp_get_post_terms( $fund->ID, 'causes' );
-           $fundpriorities = wp_get_post_terms( $fund->ID, 'purposes' );
+           $fundpurposes = wp_get_post_terms( $fund->ID, 'purposes' );
+           $fundpriorities = wp_get_post_terms( $fund->ID, 'priorities' );
            //$fundunit = get_post_meta($fund->ID, 'unit', true);
            
            //FEATURE: do tags also need to be classes? 
@@ -353,6 +354,9 @@
            }
            foreach ($fundpriorities as $fundpriority ) {
                $fundclasses .= $fundpriority->slug . " ";
+           }
+           foreach ($fundpurposes as $fundpurpose ) {
+               $fundclasses .= $fundpurpose->slug . " ";
            }
            $fundclasses .= $fund->unit . " ";
 
