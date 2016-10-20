@@ -248,14 +248,12 @@
                   </figure>
                 </div>
                 
-                <p>While the scores were something to celebrate, the school saw them as a byproduct of the true victory: students were learning. In fact, Lakeridge considers one of their biggest accomplishments to be                helping students who struggled the most rise from failing to near or at passing-level, a much harder leap to make in terms of learning.</p>
 
-                 <p>“Education opens doors for opportunity, so our goal is to keep all students’ doors open,” says Granger. “If you can change what a child thinks is possible for themself, it will change what they think they can do through education.”</p>
-                 
-                 <p>The scalable nature of the program is already enabling Kazemi and other faculty members to build professional learning communities at other schools in the Road Map region. Countless teachers and students stand to benefit, and Kazemi hopes that the work will continue spreading throughout the area.</p>
-                 
-                 <p>“Kids are capable regardless of their socioeconomic status, but there’s so much about the professional workplace in poverty-impacted communities that makes it hard for teachers,” she says. “Investing in school leadership and professional development can make that change happen.”</p>
-                 
+                <p class="headline-gold left">“There are four children and two sandwiches. If the children want to share the sandwiches, how much would each child get?”</p>
+                <p>In the second-grade classroom at Lakeridge Elementary, students quietly work through the problem in notebooks and with fingers. A student with a mop of brown hair shares his answer — two-fourths — that he reached by dividing each sandwich into four parts and then assigning parts to each child. </p>
+                <p>“Do you agree? Or do you respectfully disagree?” teacher Nicole Brown asks the rest of the class. </p>
+                <p>A girl wearing a bright purple hijab raises her hand to say that she got a different answer; her process resulted in one-half for each child. Brown then poses additional questions for the students to consider: How are the two answers the same? How are they different?</p>
+
 
 
               <hr>
