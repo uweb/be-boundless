@@ -73,9 +73,10 @@ ga('send', 'pageview');
 
       // Remove overlay once all is loaded
       $grid.one( 'arrangeComplete', function() {
-        $('#overlay').fadeOut(300, function(){
-          $(this).remove();
-        });
+        // $('#overlay').fadeOut(300, function(){
+        //   $(this).remove();
+        // });
+        $('.grid').removeClass('hide');
       });
     
      // Fire isotope initially

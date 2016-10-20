@@ -105,9 +105,8 @@
     <div id="main-content" role="main">
          
          <!-- This hides the stuttering of tiles during load -->
-        <div id="overlay"></div>
 
-         <ul class="grid">
+         <ul class="grid hide">
 
          <li class="grid-sizer"></li>
 
