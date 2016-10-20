@@ -1,6 +1,13 @@
 $(window).load(function(){    
 
-    // $( function() {
+    
+//GA Tracking Script 
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-15747328-7', 'auto');
+ga('send', 'pageview');
 
       var qsRegex,
           $searcher_wrap = $( "#searcher_wrap" ),
@@ -264,6 +271,8 @@ $(window).load(function(){
       // var appeal = urlParam[1] ? ( "&appeal=" + urlParam[1].split("&")[0] ) : "";
       // window.location.hash = dataName + appeal;
       window.location.hash = dataName;
+
+      ga('send', 'event', $(this).attr('data-category'), 'Click', $(this).attr('data-label'));
    })
 
    $('#fyp-search-button').on('click', function(e){
@@ -329,6 +338,8 @@ $(window).load(function(){
       } 
 
       $('body').toggleClass('give-modal-active');
+
+      ga('send', 'event', 'Give Now Button', 'Click', allocCode);
    })
 
 
@@ -520,4 +531,6 @@ function debounce( fn, threshold ) {
 if ("onpropertychange" in document && !!window.matchMedia) {
   $("html").addClass("ie10");
 }
+
+
 

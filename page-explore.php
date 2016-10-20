@@ -3,8 +3,7 @@
 <body id="passion" <?php body_class(); ?>>
 
 <?php get_header( "part-body" ); ?>
-
-  
+ 
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/passion/css/tiles.css' ?>" type="text/css">
 
 	<div class="module-hero-image" style="background-image:url('<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>')">
@@ -42,7 +41,7 @@
                       'parent' => 0
                   ));
                   foreach ($causes_parent_terms as $cause) {
-                       echo '<li><p><a href="#" class="fyp-filter-click" data-filter="' . $cause->slug . '">' . $cause->name . '</a></p></li>';
+                       echo '<li><p><a href="#" class="fyp-filter-click" data-category="Causes Links" data-label="' . $cause->name . '" data-filter="' . $cause->slug . '">' . $cause->name . '</a></p></li>';
                   }
                  ?>
                </ul>
@@ -55,7 +54,7 @@
                         $title = get_the_title($ID);
                         $search = array(" ","&amp;","&");
                         $slug = ( str_replace($search,"-",strtolower($title)) );
-                        echo '<li><p><a href="#" class="fyp-filter-click" data-filter="' . $slug . '">' . $title . '</a></p></li>';
+                        echo '<li><p><a href="#" class="fyp-filter-click" data-category="Areas Links" data-label="' . $title . '" data-filter="' . $slug . '">' . $title . '</a></p></li>';
                       }
                   }
                  ?>
