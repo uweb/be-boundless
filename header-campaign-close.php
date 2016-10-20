@@ -14,7 +14,7 @@
         <li><a href="campaign">Campaign Home</a></li>
         <li><a href="together">Together</a></li>
         <li><a href="about">About</a></li>
-        <li><a href="passion">Explore the Campaign</a></li>
+        <li><a href="explore">Explore the Campaign</a></li>
         <li><button id="give-now">Give now</button></li>
       </ul>        
     </div>

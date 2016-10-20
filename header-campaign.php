@@ -17,6 +17,22 @@
   <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
   <!-- <script type='text/javascript' src='https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js'></script> -->
 
+  <style>
+
+     body.active-header {
+       padding-top: 90px;
+     }
+     body {
+       padding-top: 50px;
+     }
+     @media only screen and (max-width: 767px) {
+       div.container.uw-body {
+           padding-top: 30px;
+       }
+     }
+
+   </style>
+
 
 </head>
 <body id="immersive" <?php body_class(); ?>>
@@ -34,7 +50,7 @@
         <li><a href="campaign">Campaign Home</a></li>
         <li><a href="together">Together</a></li>
         <li><a href="about">About</a></li>
-        <li><a href="passion">Explore the Campaign</a></li>
+        <li><a href="explore">Explore the Campaign</a></li>
         <li><button id="give-now">Give now</button></li>
       </ul>        
     </div>
