@@ -239,20 +239,6 @@
 <p>“Eventually, the device could go away because the individual has regained function,” says Moritz. “The individuals, like Jayna, who might one day benefit from what the CSNE is developing are just a wonderful, inspiring, rewarding group of people to work with. This is the kind of research that makes being at the UW so special.” </p>
 
 
-          <span class="photo-cred">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-               width="37.236px" height="37.81px" viewBox="0 0 37.236 37.81" enable-background="new 0 0 37.236 37.81" xml:space="preserve">
-            <circle fill="none" stroke="#FFFFFF" stroke-width="1.4174" stroke-miterlimit="10" cx="18.346" cy="18.364" r="11.684"/>
-            <g>
-              <circle fill="#FFFFFF" cx="18.538" cy="13.309" r="1.393"/>
-              <path fill="#FFFFFF" d="M19.931,23.42c0,0.77-0.624,1.393-1.393,1.393l0,0c-0.769,0-1.393-0.624-1.393-1.393v-5.855
-                c0-0.77,0.624-1.393,1.393-1.393l0,0c0.77,0,1.393,0.624,1.393,1.393V23.42z"/>
-            </g>
-            </svg>
-          </span>
-
-
-
 
 
 <div id="eng-slideshow" class="engineering-slideshow">

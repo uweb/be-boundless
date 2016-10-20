@@ -54,7 +54,7 @@ $(function(){
 
 		if(isEmpty($('#give-iframe'))) {
 			$('<iframe>', {
-				src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0',
+				src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0&appeal=17XIS',
 				frameborder: 0,
 				width: '100%',
 				height: '100%',
