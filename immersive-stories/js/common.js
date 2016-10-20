@@ -70,9 +70,9 @@ $(function(){
       $immersiveGiveIframe.find('iframe').focus();
     },500)
 
-    $('html, body').animate({
-      scrollTop: ( $immersiveGiveIframe.offset().top - 90)
-    }, 900);
+    // $('html, body').animate({
+    //   scrollTop: ( $immersiveGiveIframe.offset().top - 90)
+    // }, 900);
 
   })
 
