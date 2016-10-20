@@ -188,7 +188,7 @@ body {
   background: radial-gradient(rgba(48, 48, 48, 0.4) 5%, rgba(48, 48, 48, 0) 80%);
   /* Standard syntax */
 }
-#passion .fyp-button {
+#passion div.fyp-button {
   -webkit-transform: skew(-15deg, 0);
   -ms-transform: skewX(-15deg) skewY(0);
   transform: skew(-15deg, 0);
@@ -197,7 +197,7 @@ body {
   display: inline-block;
   margin-left: 7px;
 }
-#passion .fyp-button .fyp-link {
+#passion div.fyp-button a.fyp-link {
   -webkit-transform: skew(15deg, 0);
   -ms-transform: skewX(15deg) skewY(0);
   transform: skew(15deg, 0);
@@ -212,9 +212,9 @@ body {
   background-color: transparent;
   margin: 2px 0 2px 0;
 }
-#passion .fyp-button:focus .fyp-link,
-#passion .fyp-button:active .fyp-link,
-#passion .fyp-button:hover .fyp-link {
+#passion div.fyp-button:focus .fyp-link,
+#passion div.fyp-button:active .fyp-link,
+#passion div.fyp-button:hover .fyp-link {
   color: #FFF;
 }
 #passion div.explore-footer {
@@ -598,7 +598,7 @@ body {
 }
 #passion .grid,
 #passion .search-grid {
-  background: url(../assets/stripes.svg) #E8E8E8;
+  background: url(../assets/stripes.svg) #e8e8e8;
 }
 #passion li.grid-item.search-more div,
 #passion li.grid-item.filter-item div {
@@ -790,7 +790,7 @@ body {
   text-transform: capitalize;
   line-height: 0;
   color: transparent;
-  box-shadow: -1px 1px 2px #0003 3;
+  box-shadow: -1px 1px 2px #000000 3;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
@@ -1409,8 +1409,6 @@ body {
   #passion .infographic {
     width: calc(100%);
   }
-}
-@media only screen and (max-width: 320px) {
 }
 #passion .grid-item.special {
   background-color: #4b2e83;
