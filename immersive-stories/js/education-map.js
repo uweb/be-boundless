@@ -1,7 +1,7 @@
 function mapInit(){
 
     //init map to specific geo coordinates and zoom level
-    var mymap = L.map('mapid').setView([47.45, -121.8], 9);
+    var mymap = L.map('mapid').setView([47.5, -122.2], 12);
     //disable scroll to zoom
     mymap.scrollWheelZoom.disable();
     //create light background map from mapshaper
@@ -42,7 +42,8 @@ function mapInit(){
             onEachFeature: onEachSchool,
             //style: styleSchool
             pointToLayer: schoolPoints
-        });
+        }).addTo(mymap);
+        //mymap.openPopup(L.latLng(-122.239974, 47.49982));
     }
     }).error(function() {});
 
@@ -109,6 +110,9 @@ function mapInit(){
     //for adding school pop-up
     function onEachSchool(feature, layer) {
         layer.bindPopup(getSchoolPopup(feature));
+        if (feature.properties.District == "Renton School District" && feature.properties.School == "Lakeridge Elementary School"){
+            console.log(feature);
+        }
     }
 
     //district pop up box
