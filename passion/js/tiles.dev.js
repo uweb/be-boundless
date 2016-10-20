@@ -37,11 +37,11 @@ $(window).load(function(){
                             });
 
       // Remove overlay once all is loaded
-      // $grid.one( 'arrangeComplete', function() {
-      //   $('#overlay').fadeOut(300, function(){
-      //     $(this).remove();
-      //   });
-      // });
+      $grid.one( 'arrangeComplete', function() {
+        $('#overlay').fadeOut(300, function(){
+          $(this).remove();
+        });
+      });
     
      // Fire isotope initially
      $grid.isotope();
