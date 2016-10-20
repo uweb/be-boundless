@@ -100,7 +100,7 @@
         </section><section tabindex="0"  class="section" id="slide6" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg6.jpg">
           <div id="slide6text">
                       <h2>Expand our impact everywhere</h2>
-                      <p>Unearthing solutions to tomorrow’s grand challenges is what drives us. The Institute for Stem Cell &amp; Regenerative Medicine is one example of how investing in UW faculty and research can change – and save – lives worldwide.</p>
+                      <p>Unearthing solutions to tomorrow’s grand challenges is what drives us. The Institute for Stem Cell and Regenerative Medicine is one example of how investing in UW faculty and research can change &mdash; and save &mdash; lives worldwide.</p>
             <a href="targeting-cancer" data-js="medicine" data-title="Expand our impact everywhere" class="uw-btn btn-sm btn-plus story-link">Read story</a> <a href="explore/#impact" class="uw-btn btn-sm">Opportunities</a>
           </div>
           <span class="slide6-content"></span>
