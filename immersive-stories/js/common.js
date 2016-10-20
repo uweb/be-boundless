@@ -55,8 +55,9 @@ $(function(){
 
   document.getElementById('immersive-give').addEventListener('click', function(e){
     e.preventDefault(); 
+    var $immersiveGiveIframe = $('#immersive-give-iframe');
 
-    if(isEmpty($('#immersive-give-iframe'))) {
+    if(isEmpty($immersiveGiveIframe)) {
       $('<iframe>', {
         src: 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&source_typ=3&source=' + e.target.getAttribute('data-fund'),
         frameborder: 0,
@@ -65,8 +66,12 @@ $(function(){
       }).appendTo('#immersive-give-iframe'); 
     }
     
+    setTimeout(function(){
+      $immersiveGiveIframe.find('iframe').focus();
+    },500)
+
     $('html, body').animate({
-      scrollTop: ( $("#immersive-give-iframe").offset().top)
+      scrollTop: ( $immersiveGiveIframe.offset().top)
     }, 900);
 
   })
