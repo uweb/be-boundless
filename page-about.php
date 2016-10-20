@@ -41,7 +41,7 @@
                   <p>$<span id="camp-current">3.1</span> billion <b></b></p>
                 </li>
                 <li>
-                  <div><p><b>Goal</b> $<span id="camp-goal">4.0</span> billion</p></div>
+                  <div><p><b>Goal</b> $<span id="camp-goal">5.0</span> billion</p></div>
                 </li>
               </ul>
             </div>
