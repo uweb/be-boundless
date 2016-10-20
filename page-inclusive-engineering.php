@@ -205,7 +205,7 @@
            <p class="headline-gold center">The Future: Internal BCI  <br>and Healing Connections</p> 
            <div>
              <div>
-               <p><span>1</span>For those who experience paralysis, the intent to move is intact, but  the ability is not. </p>
+               <p><span>1</span>For those who experience paralysis, the intent to move is intact, but  the ability is not.</p>
                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/info-1.svg' ?>" alt="">
              </div><div>
                <p><span>2</span>An implantable BCI is positioned to bridge the injury site. Signals measured directly from the brain are relayed to the spinal cord below the injury. </p>
@@ -214,10 +214,10 @@
                <p><span>3</span>Electrodes placed in the spinal cord are stimulated with electrical impulses in time with brain activity, which can cause the muscles to contract.</p>
                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/info-3.svg' ?>" alt="">
              </div><div>
-               <p><span>4</span>With repetition, the brain and spinal circuits may form new connections and heal themselves </p>
+               <p><span>4</span>With repetition, the brain and spinal circuits may form new connections and heal themselves.</p>
                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/info-4.svg' ?>" alt="">
              </div><div>
-               <p><span>5</span>Eventually, the implanted BCI  can be explanted as the  once-paralyzed limb regains  function.   </p>
+               <p><span>5</span>Eventually, the implanted BCI  can be explanted as the  once-paralyzed limb regains  function.</p>
                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/info-5.svg' ?>" alt="">
              </div>
            </div>
@@ -252,14 +252,12 @@
 
   <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/slide-5.jpg' ?>" alt="">
     <p>Human test subject wearing an electroencephalogram (EEG) cap and bioengineering graduate student Dev Sarma in Rajesh Rao’s lab. In this experiment the EEG cap picks up electrical signals coming from the test subject’s brain and feeds them into a processor that controls a cursor on a video screen the subject is viewing. In effect, it allows the test subject to control the cursor on-screen through her thoughts alone.</p></div>
-
   
   <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/slide-4.jpg' ?>" alt="">
       <p>Close-up of an electrocorticography (ECoG) grid. This ECoG grid is designed to both pick up and transmit electrical signals to and from the surface of the brain.</p></div>
   
   <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/slide-1.jpg' ?>" alt="">
-    <p>The CSNE offers research experiences, classroom visits and outreach events for precollege students and educators. Pictured is a demonstration at the Bloomin’ Brains Summer Camp showing how the electrical signal from muscles can power a robotic gripper</p></div>
-
+    <p>The CSNE offers research experiences, classroom visits and outreach events for precollege students and educators. Pictured is a demonstration at the Bloomin’ Brains Summer Camp showing how the electrical signal from muscles can power a robotic gripper.</p></div>
   
     <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/slide-6.jpg' ?>" alt="">
       <p>CSNE neuroethics predoctoral fellow Tim Brown and electrical engineering graduate student Tyson Heo work with electromyography (EMG) sensing and haptic feedback in the UW BioRobotics lab.

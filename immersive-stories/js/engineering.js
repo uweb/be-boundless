@@ -40,7 +40,7 @@ $(function(){
 
 
     var addSlideshow = new ScrollMagic.Scene({
-      triggerElement: '#eng-slideshow',
+      triggerElement: '#infographic',
       triggerHook: 1,
     })
     .on("enter", function(){
