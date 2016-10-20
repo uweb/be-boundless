@@ -188,7 +188,7 @@ body {
   background: radial-gradient(rgba(48, 48, 48, 0.4) 5%, rgba(48, 48, 48, 0) 80%);
   /* Standard syntax */
 }
-#passion .fyp-button {
+#passion div.fyp-button {
   -webkit-transform: skew(-15deg, 0);
   -ms-transform: skewX(-15deg) skewY(0);
   transform: skew(-15deg, 0);
@@ -197,7 +197,7 @@ body {
   display: inline-block;
   margin-left: 7px;
 }
-#passion .fyp-button .fyp-link {
+#passion div.fyp-button a.fyp-link {
   -webkit-transform: skew(15deg, 0);
   -ms-transform: skewX(15deg) skewY(0);
   transform: skew(15deg, 0);
@@ -212,9 +212,9 @@ body {
   background-color: transparent;
   margin: 2px 0 2px 0;
 }
-#passion .fyp-button:focus .fyp-link,
-#passion .fyp-button:active .fyp-link,
-#passion .fyp-button:hover .fyp-link {
+#passion div.fyp-button:focus .fyp-link,
+#passion div.fyp-button:active .fyp-link,
+#passion div.fyp-button:hover .fyp-link {
   color: #FFF;
 }
 #passion div.explore-footer {
