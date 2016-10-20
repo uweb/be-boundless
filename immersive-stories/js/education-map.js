@@ -43,10 +43,11 @@ function mapInit(){
             //style: styleSchool
             pointToLayer: schoolPoints
         }).addTo(mymap);
-        //mymap.openPopup(L.latLng(-122.239974, 47.49982));
+
     }
     }).error(function() {});
-
+    mymap.openPopup(L.latLng(-122.239974, 47.49982));
+    
     //filter points out by zoom
     mymap.on('zoomend', function (e) {
         var currentZoom = mymap.getZoom();

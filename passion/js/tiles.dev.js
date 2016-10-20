@@ -81,6 +81,7 @@ ga('send', 'pageview');
     
      // Fire isotope initially
      $grid.isotope();
+     $('.grid').removeClass('hide');
 
       
      //FYP - Click filter sorts the boxes
