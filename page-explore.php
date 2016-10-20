@@ -226,7 +226,7 @@
         $unitcount = 1;
         foreach ( $units as $unit ) {
            //gather assets
-           $unitimageurl = wp_get_attachment_image_src( get_post_thumbnail_id($unit->ID) , array(200,150) );
+           $unitimageurl = wp_get_attachment_image_src( get_post_thumbnail_id($unit->ID) , $size = 'medium' );
            $unitimageurl = $unitimageurl[0];
            $unitimageurlhigh = wp_get_attachment_image_src( get_post_thumbnail_id($unit->ID) , $size = 'large' );
            $unitimageurlhigh = $unitimageurlhigh[0];
@@ -330,7 +330,7 @@
         $fundcount = 1;
         foreach ( $funds as $fund ) {
            //gather assets
-           $fundimageurl = wp_get_attachment_image_src( get_post_thumbnail_id($fund->ID) , array(200,150) );
+           $fundimageurl = wp_get_attachment_image_src( get_post_thumbnail_id($fund->ID) , $size = 'medium' );
            $fundimageurl = $fundimageurl[0];
            $fundimageurlhigh = wp_get_attachment_image_src( get_post_thumbnail_id($fund->ID) , $size = 'large' );
            $fundimageurlhigh = $fundimageurlhigh[0];
