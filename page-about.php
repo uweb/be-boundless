@@ -58,7 +58,7 @@
           <div class="col-md-10 col-md-offset-1 copy padless">
               <ul>
                 <li>
-                  <a href="#"><img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/link-specs.svg' ?>" alt="Glasses on book"><br>
+                  <a href="faqs"><img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/link-specs.svg' ?>" alt="Glasses on book"><br>
                   <h4>Campaign FAQs</h4></a>
                 </li>
                 <li>
@@ -182,36 +182,36 @@
                   </div>
                   <div class="col-md-3">
                     <ul>
-                      <li><a href="#">Academic Student Affairs</a></li>
-                      <li><a href="#">College of Arts &amp; Sciences</a></li>
-                      <li><a href="#">Burke Museum</a></li>
-                      <li><a href="#">Henry Gallery</a></li>
-                      <li><a href="#">UW Bothell</a></li>
-                      <li><a href="#">College of Built Environments</a></li>
-                      <li><a href="#">School of Dentistry</a></li>
-                      <li><a href="#">College of Education</a></li>
+                      <li><a href="http://www.washington.edu/studentlife/about/support-student-life/volunteers">Academic &amp; Student Affairs</a> </li>
+                      <li><a href="http://uwtyeeclub.com/about/board-of-directors/">Athletics</a> </li>
+                      <li><a href="http://artsci.washington.edu/boundless/volunteers ">College of Arts &amp; Sciences </a> </li>
+                      <li><a href="http://be.washington.edu ">College of Built Environments </a> </li>
+                      <li><a href="https://education.uw.edu/alumni-and-friends/college-education-ambassadors-0">College of Education</a>  </li>
+                      <li><a href="http://www.engr.washington.edu/mycoe/committees/visiting">College of Engineering</a> </li>
+                      <li><a href="https://environment.uw.edu/about/office-of-the-dean/advisory-board/">College of the Environment</a> </li>
+                      <li><a href="http://evans.uw.edu/giving">Evans School of Public Policy &amp; Governance</a>   </li>
                     </ul>
                   </div>
                   <div class="col-md-3"> 
                     <ul>
-                      <li><a href="#">Daniel J. Evans School of Public Policy   and Governance</a></li>
-                      <li><a href="#">College of Engineering</a></li>
-                      <li><a href="#">College of the Environment</a></li>
-                      <li><a href="#">Michael G. Foster School of Business</a></li>
-                      <li><a href="#">Intercollegiate Athletics</a></li>
-                      <li><a href="#">iSchool</a></li>
-                      <li><a href="#">KEXP</a></li>
+                      <li><a href="http://foster.uw.edu/volunteerleaders">Foster School of Business </a>-- </li>
+                      <li><a href="https://ischool.uw.edu/about/leadership/founding-board">Information School </a>-- </li>
+                      <li><a href="https://www.kexp.org/about/advisoryboard">KEXP</a> </li>
+                      <li><a href="http://kuow.org/people/capacity/board-directors ">KUOW</a> </li>
+                      <li><a href="uw-dentistry-our-campaign-volunteers/">School of Dentistry </a></li>
+                      <li><a href="https://www.law.uw.edu/donate">School of Law</a> </li>
+                      <li><a href="https://nursing.uw.edu/community/donate/campaign-leadership/">School of Nursing</a> </li>
                     </ul>       
                   </div>
                   <div class="col-md-3">   
                     <ul>
-                      <li><a href="#">Law School</a></li>
-                      <li><a href="#">UW Libraries</a></li>
-                      <li><a href="#">UW Medicine</a></li>
-                      <li><a href="#">School of Nursing</a></li>
-                      <li><a href="#">School of Public Health</a></li>
-                      <li><a href="#">School of Social Work</a></li>
-                      <li><a href="#">UW Tacoma </a></li>
+                      <li><a href="https://sop.washington.edu/alumni-donors/campaign-volunteers/ ">School of Pharmacy</a> </li>
+                      <li><a href="http://sph.washington.edu/about/deanscouncil.asp">School of Public Health</a> </li>
+                      <li><a href="http://socialwork.uw.edu/alumni/giving-opportunities">School of Social Work</a>-  </li>
+                      <li><a href="http://www.lib.washington.edu/support/friends ">University Libraries</a> </li>
+                      <li><a href="http://www.uwb.edu/give/campaignvolunteers">UW Bothell</a> </li>
+                      <li><a href="http://www.acceleratemed.org/leadership">UW Medicine</a> </li>
+                      <li><a href="http://www.tacoma.uw.edu/boundless/volunteers">UW Tacoma</a></li>
                     </ul>    
                   </div>
               </div>
@@ -219,6 +219,13 @@
           </div>
 
     </section> 
+
+
+
+
+
+
+
 
 
 

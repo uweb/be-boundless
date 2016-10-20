@@ -43,6 +43,7 @@ button#empty {
 	box-shadow: -1px 1px 2px #0003;
 	.transition(all .2s linear);
 	.translate(75px,0);
+	top: 100px;
 	&:focus,
 	&:active,
 	&:hover {
@@ -58,8 +59,8 @@ button#empty {
 		// display: block;
 		.translate(0,0);
 	}
-	@media(max-width:768px) {    
-		top: 100px;
+	@media(min-width:768px) {    
+		top: 140px;
 	}
 	@media(max-width:768px) {    
 		width: 45px;
