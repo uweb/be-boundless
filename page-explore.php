@@ -51,7 +51,7 @@
                   $args = array('post_type' => 'units', 'fields' => 'ids', 'orderby' => 'title', 'order' => 'asc', 'numberposts' => '-1');
                   $units = get_posts($args);
                   foreach ($units as $unit => $ID) {
-                      if($ID != '2760'){
+                      if($ID != '2760' && $ID != '3969' ){
                         $title = get_the_title($ID);
                         $search = array(" ","&amp;","&");
                         $slug = ( str_replace($search,"-",strtolower($title)) );
