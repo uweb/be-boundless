@@ -165,7 +165,6 @@
                                   <div class="pax"></div>
                                   <div class="hider">
                                     <h3>Susan Brotman</h3>
-                                    <blockquote><p></p></blockquote>
                                   </div>              
                               </li>
                           </ul>
