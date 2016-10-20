@@ -48,9 +48,9 @@
               <div class="row">
                   <div class="col-md-10 col-md-offset-1 copy">
                       
-  <p class="gold-quote headline-gold purple special"><b>"We have to do better</b>,” says Dr. Becker. “And if we get it figured out for leukemia, we can figure it out for other cancers too.” </p>
+  <p class="gold-quote headline-gold purple special"><b>"We have to do better</b>,” says Dr. Becker. “And if we get it figured out for leukemia, we can figure it out for other cancers, too.” </p>
 
-  <p>That’s why she’s working with the UW Medicine's Institute for Stem Cell and Regenerative Medicine (ISCRM) to pioneer groundbreaking treatments — and turn the odds in her patients’ favor.</p>
+  <p>That’s why she’s working with UW Medicine's Institute for Stem Cell and Regenerative Medicine (ISCRM) to pioneer groundbreaking treatments — and turn the odds in her patients’ favor.</p>
 
 
 
@@ -189,7 +189,7 @@
 
 <p>But it’s not as simple as identifying a drug that works and sticking with it. A hallmark of cancer is its genetic instability, and cells that survive a treatment regimen often mutate and proliferate. They may grow drug-resistant, making a second round of treatment much less effective, or they may turn into something new.</p>
 
-<p class="gold-quote headline-gold purple">"And there’s another challenge: When we say someone has a cancer, they don’t,” explains Dr. Becker. <b>“They have a group of cancers.”</b> </p>
+<p class="gold-quote headline-gold purple">And there’s another challenge: "When we say someone has a cancer, they don’t,” explains Dr. Becker. <b>“They have a group of cancers.”</b> </p>
 
 <p>In other words, cells from one part of a tumor might have a different genetic makeup than cells from another part. If a drug kills the cells from biopsy A, the cells from biopsy B could live on.</p>
 
@@ -216,7 +216,7 @@
                         <div class="name-wrap">
                           <h2 class="name">Chuck Murry</h2>
                           <p class="title">M.D., Ph.D.</p>
-                          <p class="studies"><span>Joint professor, Pathology, Cardiology and Bioengineering</span>
+                          <p class="studies"><span>Joint Professor, Pathology, Cardiology and Bioengineering</span>
                           <span>Interim Director, Institute for Stem Cell and Regenerative Medicine</span>
                           Co-Director, Center for Cardiovascular Biology</p>
                         </div>
@@ -227,7 +227,7 @@
                 <section class="text-block purpleBG">
                   <div class="container">
                       <div class="row">
-                          <div class="col-md-10 col-md-offset-1 copy">
+                          <div class="col-md-10 col-md-offset-1 copy no-margin">
                               
                             <h2>AT THE HEART OF THE CURE</h2>
                             <p>Chuck Murry shows off a tiny white scar on his forearm, left over from a biopsy. The cells he had removed are still alive, but they’re no longer skin cells.</p>
@@ -260,7 +260,7 @@
                             <div class="col-md-10 col-md-offset-1 copy">
                               <div style="text-align: center">             
                                 <h2 class="headline-gold">Help make a difference</h2>
-                                <p>You can help the University of Washington expand our impact everywhere by contributing to these funds.</p>
+                                <p>You can help the University of Washington expand our impact everywhere by <br>contributing to these funds.</p>
                                 <div id="immersive-give-iframe"></div>
                                 <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="HEMATL,PATHCA,STEMCR" href="#">Give now</a></span></div>
                               </div>
