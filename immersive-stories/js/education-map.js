@@ -1,7 +1,7 @@
 function mapInit(){
 
     //init map to specific geo coordinates and zoom level
-    var mymap = L.map('mapid').setView([47.5, -122.2], 12);
+    var mymap = L.map('mapid').setView([47.55, -122.2], 12);
     //disable scroll to zoom
     mymap.scrollWheelZoom.disable();
     //create light background map from mapshaper
@@ -15,7 +15,7 @@ function mapInit(){
     //add district lines to map from geojson file
     $.ajax({
     dataType: "json",
-    url: "/cms/wp-content/themes/be-boundless/immersive-stories/img/education/districts.json",
+    url: "/wp-content/themes/be-boundless/immersive-stories/img/education/districts.json",
     success: function(e) {
         L.geoJson(e, {
             filter: filterDistrict,
@@ -35,7 +35,7 @@ function mapInit(){
     //add school sites to map from cloropleth
     $.ajax({
     dataType: "json",
-    url: "/cms/wp-content/themes/be-boundless/immersive-stories/img/education/schools.geojson",
+    url: "/wp-content/themes/be-boundless/immersive-stories/img/education/schools2.geojson",
     success: function(e) {
         school_sites = L.geoJson(e, {
             filter: filterSchool,
@@ -46,7 +46,6 @@ function mapInit(){
 
     }
     }).error(function() {});
-    mymap.openPopup(L.latLng(-122.239974, 47.49982));
     
     //filter points out by zoom
     mymap.on('zoomend', function (e) {
@@ -73,7 +72,7 @@ function mapInit(){
                             iconSize: [40, 40],
                             iconAnchor: [20, 40],
                             popupAnchor:  [0, -40],
-                            iconUrl: '/cms/wp-content/themes/be-boundless/immersive-stories/img/education/education-map-marker.png'
+                            iconUrl: '/wp-content/themes/be-boundless/immersive-stories/img/education/education-map-marker.png'
                         });
         return L.marker(latlng, {icon: icon});
 
@@ -100,7 +99,7 @@ function mapInit(){
 
     //filter school on whether they have coordinates
     function filterSchool(feature, layer) {
-        return (feature.geometry.coordinates[0] !== 0);
+        return ((feature.geometry.coordinates[0] !== 0) && (feature.properties.StudentTeachers > 0 || feature.properties.StudentTeachers === 0));
     }
 
     //for adding district pop-up
@@ -138,13 +137,16 @@ function mapInit(){
     function getSchoolPopup(data) {
         white = Math.round(data.properties.PercentWhite);
         nonWhite = 100 - white; 
-        UWCand = data.properties.UWPrincipals + data.properties.UWSI + data.properties.UWTeachers;
+        //UWCand = data.properties.UWPrincipals + data.properties.UWSI + data.properties.UWTeachers;
         popup = "<div class='popupbox'><table width='220px'>" + 
                     "<tr class='district-name row'><td colspan='4'>" + data.properties.School + "</td></tr>" +
                     "<tr class='lunch data row'><td class='percent'>" + Math.round(data.properties.PercentFreeorReducedPricedMeals) + "%" + "</td><td colspan='3' class='label'>Free / reduced lunch</td></tr>";
         popup += (data.properties.GraduationRate === 0) ? "" : "<tr class='grad data row'><td class='percent'>" + Math.round(data.properties.GraduationRate) + "%" + "</td><td colspan='3' class='label'>Graduation rate</td></tr>";
         popup +=    "<tr class='esl data row'><td class='percent'>" + Math.round(data.properties.PercentESL) + "%" + "</td><td colspan='3' class='label'>ESL</td></tr>";
-        popup += (UWCand === 0) ? "" : "<tr class='cand data row'><td class='percent'>" + UWCand + "</td><td colspan='3' class='label'>UW leadership candidates</td></tr>";
+        popup += (data.properties.StudentTeachers === 0) ? "" : "<tr class='cand data row'><td class='percent'>" + data.properties.StudentTeachers + "</td><td colspan='3' class='label'>Student Teachers</td></tr>";
+        popup += (data.properties.SchoolLeaderInternships === 0) ? "" : "<tr class='cand data row'><td class='percent'>" + data.properties.SchoolLeaderInternships + "</td><td colspan='3' class='label'>School Leader Interns</td></tr>";
+        popup += (data.properties.ServiceLearningPlacementsCount === 0) ? "" : "<tr class='cand data row'><td class='percent'>" + data.properties.ServiceLearningPlacementsCount + "</td><td colspan='3' class='label'>Undergraduate Service Learning Placements</td></tr>";
+        popup += (data.properties.DreamPlacementCounts === 0) ? "" : "<tr class='cand data row'><td class='percent'>" + data.properties.DreamPlacementCounts + "</td><td colspan='3' class='label'>Dream Project Mentors</td></tr>";
         popup +=    "<tr class='graph row'>" + 
                         "<td rowspan='5' colspan='4' class='nonWhite'>" + "<div class='containerGraph'>" +
                             "<div class='bar' style='width:" + nonWhite + "%;'><p>" + nonWhite + "%</p></div>" +
