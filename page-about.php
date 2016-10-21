@@ -197,7 +197,7 @@
                   <div class="col-md-3"> 
                     <ul>
                       <li><a href="http://foster.uw.edu/volunteerleaders">Foster School of Business </a></li>
-                      <li><a href="https://ischool.uw.edu/about/leadership/founding-board">Information School </a></li>
+                      <li><a href="https://ischool.uw.edu/boundless/co-chairs">Information School </a></li>
                       <li><a href="https://www.kexp.org/about/advisoryboard">KEXP</a> </li>
                       <li><a href="http://kuow.org/people/capacity/board-directors ">KUOW</a> </li>
                       <li><a href="uw-dentistry-our-campaign-volunteers/">School of Dentistry </a></li>
@@ -260,27 +260,6 @@
       </div>
     </section>
 
-    <!-- <section id="faqs">
-          <div class="headlineBox"><h2>Frequently Asked Questions</h2></div>
-
-
-          <div class="container">
-            <div class="col-md-8 col-md-offset-2">
-              <div class="row">
-                <div class="col-md-6">
-                  <img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/leadership/suzzallo.jpg' ?>">
-                </div>
-                <div class="col-md-6">
-                  <div class="callout">
-                    <p>Visit the Frequently Asked Questions page to see common questions and answers concerning the UW campaign.</p>       
-                    <a href="faqs" class="uw-btn btn-purple btn-sm">FAQs</a>
-                  </div>
-                </div>
-              </div>
-            </div>                
-          </div>
-
-    </section> -->
 
   </main>
 
