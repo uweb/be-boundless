@@ -43,9 +43,9 @@
 
 <ul id="dot-nav">
   <li data-tooltip="Aspiring forest fixer"><a title="Anthony Martinez" href="#anthony"><span></span></a></li>
-  <li data-tooltip="Artist-meets-activist"><a title="Mayowa Aina" href="#aina"><span></span></a></li>
+  <li data-tooltip="Artist-meets-activist"><a title="Mayowa Aina" href="#mayowa"><span></span></a></li>
   <li data-tooltip="Impassioned journalist"><a title="Starla Sampaco" href="#starla"><span></span></a></li>
-  <li data-tooltip="Student advocate"><a title="Austin Wright-Pettibone" href="#pettibone"><span></span></a></li>
+  <li data-tooltip="Student advocate"><a title="Austin Wright-Pettibone" href="#austin"><span></span></a></li>
   <li data-tooltip="Future asteroid miner"><a title="Tyler Valentine" href="#tyler"><span></span></a></li>
   <li data-tooltip="Sustainability evangelist"><a title="Veronica Guenther" href="#veronica"><span></span></a></li>
 </ul>
@@ -163,7 +163,7 @@
 
     <!-- Mayowa  -->
 
-    <section id="aina" class="portrait-block right aina arrow">
+    <section id="mayowa" class="portrait-block right aina arrow">
       <div class="portrait">
 
       </div>
@@ -392,7 +392,7 @@
 
 <div class="person">
 
-    <section id="pettibone" class="portrait-block right austin arrow">
+    <section id="austin" class="portrait-block right austin arrow">
       <div class="portrait">
 
       </div>
