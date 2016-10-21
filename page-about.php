@@ -168,6 +168,7 @@
                                   <div class="pax"></div>
                                   <div class="hider">
                                     <h3>Susan Brotman</h3>
+                                    <p>The UW is a big deal. The campaign allows us to communicate about opportunities for students, our ground-breaking research and discovery, successful community partnerships and our reputation as one of the most innovative universities in the world. We take great pride in UW and all it represents.</p>
                                   </div>              
                               </li>
                           </ul>
