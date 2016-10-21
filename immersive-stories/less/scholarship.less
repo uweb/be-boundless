@@ -185,7 +185,7 @@ p {
             .translate(0,10px);
         }
     }
-    @media(max-device-width:768px) {
+    @media(max-width:768px) {
         background-image: url("@{scholarship}/intro-mobile.jpg");
         padding: 0;
         h1 {
@@ -203,7 +203,7 @@ p {
         }
     }    
 
-    @media(min-device-width:768px) {
+    @media(min-width:768px) {
         background-image: url("@{scholarship}/intro.jpg");
         h1 {
             font-size: 7vw;
@@ -233,12 +233,12 @@ p {
 
 
     }
-    @media(min-device-width:1600px) {
+    @media(min-width:1600px) {
        h1 {
            font-size: 6vw;
        }
     }
-    @media(max-device-width:468px) {
+    @media(max-width:468px) {
         background-image: url("@{scholarship}/intro-mobile-portrait.jpg");
         h1 {
             margin-top: 18vh;
@@ -277,7 +277,7 @@ p {
         top:100%;
         border-color: white transparent;
         border-style: solid;
-        border-device-width: 30px 30px 0 30px;
+        border-width: 30px 30px 0 30px;
         height: 0;
         width: 0;
         position: absolute;
@@ -335,7 +335,7 @@ p {
             margin-right: 40%;
         }
     }       
-    @media(max-device-width:768px) {
+    @media(max-width:768px) {
         .portrait {
             height: 50vw;
         }
@@ -407,7 +407,7 @@ p {
             }
         }  
     }    
-    @media(min-device-width:768px) {
+    @media(min-width:768px) {
         .portrait {
             position: absolute;
             top: 0;
@@ -448,7 +448,7 @@ p {
             }
         }  
     }
-    @media(min-device-width:995px) {
+    @media(min-width:995px) {
         &.left {
             .bio {
                 margin-left: 40%;
@@ -460,7 +460,7 @@ p {
             }
         }    
     }
-    @media(min-device-width:1200px) {
+    @media(min-width:1200px) {
         .bio {
             // .translate(0,3%);
         }
@@ -534,14 +534,14 @@ p {
             stroke: @lightgold;
         }
     }
-    @media(min-device-width:768px) {
+    @media(min-width:768px) {
         h3 {
             font-size: 25px;
             line-height: 1.5;
             margin-bottom: 30px;
         }
     }
-    @media(max-device-width:992px) {
+    @media(max-width:992px) {
         svg {
             display: none;
         }    
@@ -557,7 +557,7 @@ p {
         visibility: hidden;
         opacity: 0;
     }
-    @media(min-device-width:768px) {
+    @media(min-width:768px) {
         .transition(opacity .2s linear);
         visibility: visible;
         opacity: 1;
@@ -592,7 +592,7 @@ p {
                 right: 70%;
                 margin-bottom: 5px;
                 padding: 10px 18px 10px 7px;
-                min-device-width: 230px;
+                min-width: 230px;
                 background-color: rgba(255,255,255,0.9);
                 color: @purple;
                 content: attr(data-tooltip);
@@ -642,7 +642,7 @@ p {
                     margin-bottom: 35px;
                     margin-top: 40px;
                     .scale(2.7,2.7);
-                    border-device-width: 1px;
+                    border-width: 1px;
                     span {
                         opacity: 1;
                     }
@@ -686,7 +686,7 @@ p {
         }
 
     }
-    @media(max-device-width:768px) {
+    @media(max-width:768px) {
         display: none;
     }
 }
@@ -724,7 +724,7 @@ p {
         }
         
     }
-    @media(max-device-width:768px) {
+    @media(max-width:768px) {
         display: none;
     }
 }
@@ -761,7 +761,7 @@ div.audio {
     opacity: .5;
     z-index: -1;
     .translate(0, 40%);
-    @media(max-device-width:768px) {
+    @media(max-width:768px) {
         width: 40%;
         margin-right: -80px;
     }
@@ -792,7 +792,7 @@ div.audio {
         //     font-weight: 900;
         // }
     }
-    @media(min-device-width:768px) {
+    @media(min-width:768px) {
         &.text-block {
             .headline-gold {
                 margin: 90px 30px;
@@ -807,7 +807,7 @@ div.audio {
 
 // Remove some of the white space padding per edits
 .text-block .copy {
-    @media(min-device-width:768px) {
+    @media(min-width:768px) {
         &.marginless {
             margin-top: 20px;
         }
@@ -934,7 +934,7 @@ div.audio {
             margin-left: -2px;
         }
     }
-    @media(min-device-width:768px) {
+    @media(min-width:768px) {
         background-image: url("@{scholarship}/wg-video-poster.png");
         text-align: right;
         margin: 20px 0 100px;
@@ -974,7 +974,7 @@ div.audio {
             text-align: right;
         }
     }
-    @media(max-device-width:768px) {
+    @media(max-width:768px) {
         .container {
             padding-top: 110%;
             padding-left: 30px;
@@ -1004,14 +1004,14 @@ div.audio {
 
 
 .video-block {
-    @media(max-device-width:768px) {    }
+    @media(max-width:768px) {    }
 }
 // Popup video
 #youtube-video {
     iframe {
         margin: 0;
     }
-    @media(min-device-width:768px) {
+    @media(min-width:768px) {
         position: absolute;
         top: 0;
         right: 0;    
@@ -1019,7 +1019,7 @@ div.audio {
         bottom: 0;
         z-index: 9999;
     }
-    @media(max-device-width:768px) {   
+    @media(max-width:768px) {   
         .iPhone & {
             iframe {
                 margin: 0;
@@ -1126,14 +1126,14 @@ div.audio {
         font-weight: 400; 
     }
 
-    @media(min-device-width:1200px) {
+    @media(min-width:1200px) {
         iframe {
             width: 120%;
             margin: 40px -10% 40px;
             height: auto;
         }
     }
-    @media(min-device-width:768px) {
+    @media(min-width:768px) {
         .copy {
             margin-top: -50px; 
             padding: 80px 90px;
@@ -1158,7 +1158,7 @@ div.audio {
         }
         
     }
-    @media(max-device-width:768px) {
+    @media(max-width:768px) {
     }
 
 
@@ -1194,10 +1194,10 @@ div.audio {
         &:focus {
             outline-color: rgb(59, 153, 252);
             outline-style: auto;
-            outline-device-width: 5px;
+            outline-width: 5px;
         }
     }
-    @media(min-device-width:768px) {
+    @media(min-width:768px) {
         margin: 0 0 90px 0;
         video {
             width: 100%;
@@ -1205,10 +1205,10 @@ div.audio {
             // .translate(0,-10%);
         }
     }
-    @media(max-device-width:768px) {
+    @media(max-width:768px) {
         display: none;
     }
-    @media(max-device-width:768px) {
+    @media(max-width:768px) {
 
     }
 }
@@ -1253,9 +1253,9 @@ body.videoPaused #intro-slide {
 .example {
     // All
 
-    @media(min-device-width:768px) {
+    @media(min-width:768px) {
     }
-    @media(max-device-width:768px) {
+    @media(max-width:768px) {
     }
 }
 
