@@ -68,12 +68,22 @@ function mapInit(){
 
     //make new icon
     function schoolPoints(feature, latlng) {
-        var icon = new L.Icon({ 
+        var icon;
+        if( feature.properties.DreamPlacementCounts > 0 ) {
+            icon = new L.Icon({ 
                             iconSize: [40, 40],
                             iconAnchor: [20, 40],
                             popupAnchor:  [0, -40],
-                            iconUrl: '/wp-content/themes/be-boundless/immersive-stories/img/education/education-map-marker.png'
+                            iconUrl: '/wp-content/themes/be-boundless/immersive-stories/img/education/education-map-marker-gold.png'
                         });
+        } else {
+            icon = new L.Icon({ 
+                                iconSize: [40, 40],
+                                iconAnchor: [20, 40],
+                                popupAnchor:  [0, -40],
+                                iconUrl: '/wp-content/themes/be-boundless/immersive-stories/img/education/education-map-marker.png'
+                            });
+        }
         return L.marker(latlng, {icon: icon});
 
     }
