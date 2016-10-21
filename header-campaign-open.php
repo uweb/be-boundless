@@ -10,6 +10,7 @@
   <title> <?php wp_title(' | ',TRUE,'right'); bloginfo('name'); ?> </title>
   <meta property="og:title" content="<?php the_title(''); ?>" />
   <meta property="og:url" content="<?php echo get_permalink(); ?>" />
+  <meta property="og:description" content="What you care about can change the world. When you support your passions by giving through the UW, you’re providing students and faculty with the resources they need to learn, collaborate and research in one of the most innovative places on earth." />
   <meta property="og:image" content="http:<?php echo get_stylesheet_directory_uri() . '/campaign/img/og-image.jpg' ?>" />
       
       
