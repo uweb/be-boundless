@@ -99,7 +99,7 @@ function mapInit(){
 
     //filter school on whether they have coordinates
     function filterSchool(feature, layer) {
-        return ((feature.geometry.coordinates[0] !== 0) && (feature.properties.StudentTeachers > 0 || feature.properties.StudentTeachers === 0));
+        return ((feature.geometry.coordinates[0] !== 0) && (feature.properties.StudentTeachers > 0 || feature.properties.StudentTeachers === 0) || (feature.properties.District == "Renton School District" && feature.properties.School == "Lakeridge Elementary School"));
     }
 
     //for adding district pop-up
@@ -110,9 +110,6 @@ function mapInit(){
     //for adding school pop-up
     function onEachSchool(feature, layer) {
         layer.bindPopup(getSchoolPopup(feature));
-        if (feature.properties.District == "Renton School District" && feature.properties.School == "Lakeridge Elementary School"){
-            console.log(feature);
-        }
     }
 
     //district pop up box
@@ -139,14 +136,14 @@ function mapInit(){
         nonWhite = 100 - white; 
         //UWCand = data.properties.UWPrincipals + data.properties.UWSI + data.properties.UWTeachers;
         popup = "<div class='popupbox'><table width='220px'>" + 
-                    "<tr class='district-name row'><td colspan='4'>" + data.properties.School + "</td></tr>" +
+                    "<tr class='district-name row'><td colspan='4'><div class='name'>" + data.properties.School + "</div></td></tr>" +
                     "<tr class='lunch data row'><td class='percent'>" + Math.round(data.properties.PercentFreeorReducedPricedMeals) + "%" + "</td><td colspan='3' class='label'>Free / reduced lunch</td></tr>";
         popup += (data.properties.GraduationRate === 0) ? "" : "<tr class='grad data row'><td class='percent'>" + Math.round(data.properties.GraduationRate) + "%" + "</td><td colspan='3' class='label'>Graduation rate</td></tr>";
         popup +=    "<tr class='esl data row'><td class='percent'>" + Math.round(data.properties.PercentESL) + "%" + "</td><td colspan='3' class='label'>ESL</td></tr>";
-        popup += (data.properties.StudentTeachers === 0) ? "" : "<tr class='cand data row'><td class='percent'>" + data.properties.StudentTeachers + "</td><td colspan='3' class='label'>Student Teachers</td></tr>";
-        popup += (data.properties.SchoolLeaderInternships === 0) ? "" : "<tr class='cand data row'><td class='percent'>" + data.properties.SchoolLeaderInternships + "</td><td colspan='3' class='label'>School Leader Interns</td></tr>";
-        popup += (data.properties.ServiceLearningPlacementsCount === 0) ? "" : "<tr class='cand data row'><td class='percent'>" + data.properties.ServiceLearningPlacementsCount + "</td><td colspan='3' class='label'>Undergraduate Service Learning Placements</td></tr>";
-        popup += (data.properties.DreamPlacementCounts === 0) ? "" : "<tr class='cand data row'><td class='percent'>" + data.properties.DreamPlacementCounts + "</td><td colspan='3' class='label'>Dream Project Mentors</td></tr>";
+        popup += (!data.properties.StudentTeachers || data.properties.StudentTeachers === 0) ? "" : "<tr class='cand data row'><td class='percent'>" + data.properties.StudentTeachers + "</td><td colspan='3' class='label'>Student Teachers</td></tr>";
+        popup += (!data.properties.SchoolLeaderInternships || data.properties.SchoolLeaderInternships === 0) ? "" : "<tr class='cand data row'><td class='percent'>" + data.properties.SchoolLeaderInternships + "</td><td colspan='3' class='label'>School Leader Interns</td></tr>";
+        popup += (!data.properties.ServiceLearningPlacementsCount || data.properties.ServiceLearningPlacementsCount === 0) ? "" : "<tr class='cand data row'><td class='percent'>" + data.properties.ServiceLearningPlacementsCount + "</td><td colspan='3' class='label'>Undergraduate Service Learning Placements</td></tr>";
+        popup += (!data.properties.DreamPlacementCounts || data.properties.DreamPlacementCounts === 0) ? "" : "<tr class='cand data row'><td class='percent'>" + data.properties.DreamPlacementCounts + "</td><td colspan='3' class='label'>Dream Project Mentors</td></tr>";
         popup +=    "<tr class='graph row'>" + 
                         "<td rowspan='5' colspan='4' class='nonWhite'>" + "<div class='containerGraph'>" +
                             "<div class='bar' style='width:" + nonWhite + "%;'><p>" + nonWhite + "%</p></div>" +
