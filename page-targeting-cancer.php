@@ -53,7 +53,6 @@
   <p>That’s why she’s working with UW Medicine's Institute for Stem Cell and Regenerative Medicine (ISCRM) to pioneer groundbreaking treatments — and turn the odds in her patients’ favor.</p>
 
 
-
                   </div> 
             </div> 
           </div>   
@@ -77,7 +76,11 @@
                   </audio>
               
                   <div class="visually-hidden audio-transcript" tabindex="0">
-                    <p></p>
+                    <p>What I focus on is how patients with acute myeloid leukemia … why they don’t respond to the current treatment options. And what we learned was that when we tested individual patient samples against a large panel of different drug agents and drug combinations that each patient had a different response to every single drug. So that no patient looked like any other patient.</p>
+                    <p>We have unique resources here at the Institute for Stem Cell and Regenerative Medicine. We have the Quellos High-throughput Core facility which can do screening of individual patient cell samples to look for the best drug for an individual patient.</p>
+                    <p>So we’re constantly testing new compounds, new combinations of compounds, and trying to improve our therapy.</p>
+                    <p>So patients who have multiple relapses with their acute leukemia, and have had many prior therapies, typically their survival is quite limited. Perhaps less than even three months. And we’ve been able to extend survival. We now have many patients who’ve survived several months, or even a year after they’ve relapsed after a transplant for acute myeloid leukemia, and I think that this ability to keep treating and treating, and having patients survive longer is a consequence of this therapy so far.</p>
+                    <p>And the hope of all of this is that eventually someday we may be able to do much better.</p>
                   </div>
                   
                   <p class="audio-buttons">
