@@ -186,12 +186,12 @@
                     <ul>
                       <li><a href="http://www.washington.edu/studentlife/about/support-student-life/volunteers">Academic &amp; Student Affairs</a> </li>
                       <li><a href="http://uwtyeeclub.com/about/board-of-directors/">Athletics</a> </li>
-                      <li><a href="http://artsci.washington.edu/boundless/volunteers ">College of Arts &amp; Sciences </a> </li>
-                      <li><a href="http://be.washington.edu ">College of Built Environments </a> </li>
+                      <li><a href="https://ar­tsci.washi­ngton.edu/­campaign/v­olunteers">College of Arts &amp; Sciences </a> </li>
+                      <li><a href="http://www­.be.washin­gton.edu/c­ampaign/ca­mpaign-com­mittee/">College of Built Environments </a> </li>
                       <li><a href="https://education.uw.edu/alumni-and-friends/college-education-ambassadors-0">College of Education</a>  </li>
                       <li><a href="http://www.engr.washington.edu/mycoe/committees/visiting">College of Engineering</a> </li>
                       <li><a href="https://environment.uw.edu/about/office-of-the-dean/advisory-board/">College of the Environment</a> </li>
-                      <li><a href="http://evans.uw.edu/giving">Evans School of Public Policy &amp; Governance</a>   </li>
+                      <li><a href="https://ev­ans.uw.edu­/give/camp­aign-evans­-school">Evans School of Public Policy &amp; Governance</a>   </li>
                     </ul>
                   </div>
                   <div class="col-md-3"> 
@@ -211,7 +211,7 @@
                       <li><a href="http://sph.washington.edu/about/deanscouncil.asp">School of Public Health</a> </li>
                       <li><a href="http://socialwork.uw.edu/alumni/giving-opportunities">School of Social Work</a></li>
                       <li><a href="http://www.lib.washington.edu/support/friends ">University Libraries</a> </li>
-                      <li><a href="http://www.uwb.edu/give/campaignvolunteers">UW Bothell</a> </li>
+                      <li><a href="http://www­.uwb.edu/l­eadership/­advisorybo­ard">UW Bothell</a> </li>
                       <li><a href="http://www.acceleratemed.org/leadership">UW Medicine</a> </li>
                       <li><a href="http://www.tacoma.uw.edu/boundless/volunteers">UW Tacoma</a></li>
                     </ul>    

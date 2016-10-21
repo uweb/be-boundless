@@ -93,12 +93,19 @@
         <div>
           <p><b>Dreams supported by:</b></p>
           <ul>
-            <li>School of Environmental and Forest Sciences Scholarship</li>
             <li>College of the Environment Scholarship</li>
+            <li>Clayton Dale Carlisle Memorial Scholarship</li>
+            <li>Morten J. Lauridsen, Jr. Endowed Scholarship Fund in Forest Resources</li>
+            <li>George and Emily Muller Endowed Student Support Fund</li>
+            <li>James Ridgeway Endowed Scholarship</li>
+            <li>David R. M. Scott Endowed</li>
           </ul>
         </div>
       </div>
     </section>
+
+
+
 
     <section class="text-block" id="section1">
         <div class="container">
