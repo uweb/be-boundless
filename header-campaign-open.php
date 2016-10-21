@@ -8,7 +8,9 @@
   <!-- <meta name="viewport" content="initial-scale=1 user-scalable=no width=device-width"> -->
   <meta name="viewport" content="initial-scale=.95 width=device-width maximum-scale=1 user-scalable=no" />
   <title> <?php wp_title(' | ',TRUE,'right'); bloginfo('name'); ?> </title>
-
+  <meta property="og:title" content="<?php the_title(''); ?>" />
+  <meta property="og:url" content="<?php echo get_permalink(); ?>" />
+  <meta property="og:image" content="<?php echo get_stylesheet_directory_uri() . '/campaign/img/og-image.jpg' ?>" />
       
       
   <link rel='stylesheet' id='uw-master-css'  href='<?php echo bloginfo("template_directory") . '/style.css' ?>' type='text/css' media='all' />
