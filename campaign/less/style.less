@@ -59,10 +59,10 @@ button#empty {
 		// display: block;
 		.translate(0,0);
 	}
-	@media(min-width:768px) {    
+	@media(min-device-width:768px) {    
 		top: 140px;
 	}
-	@media(max-width:768px) {    
+	@media(max-device-width:768px) {    
 		width: 45px;
 		padding: 2px;
 		top: 60px;
@@ -85,8 +85,9 @@ div#loadingEl {
 	.loading & {
 		display: block;
 	}
-	@media(max-width:768px) {   
-		background: url('../img/w-sm.gif') 75vw bottom no-repeat transparent;
+	@media(max-device-width:768px) {   
+		background: url('../img/w-sm.gif') 15vw bottom no-repeat transparent;
+		opacity: .5;
 	}
 }
 
@@ -112,7 +113,7 @@ div#loadingEl {
 		.translate(0, 0);
 		// will-change: transform;
 	}
-	@media(max-width:768px) {  
+	@media(max-device-width:768px) {  
 		#campaign-header {
 			.translate(0px, 0px) !important;
 		}
@@ -274,7 +275,7 @@ div#loadingEl {
 			font-size: 3.2vw;
 		}
 	}
-	@media(min-width:768px) { 
+	@media(min-device-width:768px) { 
 		#slide1 {
 			div {
 			}
@@ -347,20 +348,20 @@ div#loadingEl {
 			}
 		}
 	}
-	@media only screen and (min-width : 768px ) and (max-width : 992px) {
+	@media only screen and (min-device-width : 768px ) and (max-device-width : 992px) {
  		div {
  			width: 80vw;
  			padding-left: 20vw;
  		}
 	}
-	@media only screen and (min-width : 1200px) {
+	@media only screen and (min-device-width : 1200px) {
   		.scrollContent {
  			div {
  				
  			}
  		}
 	}
-	@media(max-width:768px) {    
+	@media(max-device-width:768px) {    
 		section {
 			padding-top: 50px;
 			p {
@@ -459,6 +460,9 @@ div#loadingEl {
     left: 0;
     right: 0;
     z-index: 10;
+    @media(max-device-width:768px) {    
+    	top: 53%;
+    }
 }
 
 #arrows {
@@ -584,7 +588,7 @@ div#loadingEl {
 			opacity: 0;
 		}
 	}
-	@media(max-width:768px) {    
+	@media(max-device-width:768px) {    
 		button.nextSlide,
 		button.prevSlide {
 			width: 14vw;
@@ -625,7 +629,7 @@ div#loadingEl {
 		//	height: 30px;
 		//}
 	}
-	@media(max-width:768px) {    
+	@media(max-device-width:768px) {    
 		display: none;
 	}
 }
@@ -638,7 +642,7 @@ div#loadingEl {
     .active-story & {
     	display: none;
     }
-    @media(max-width:768px) {
+    @media(max-device-width:768px) {
     	opacity: 0;
     	left: 65px;
     	bottom: 45px;
@@ -648,7 +652,7 @@ div#loadingEl {
     		opacity: 1;
     	}
     }
-    @media(min-width:1024px) and (max-height:675px) {
+    @media(min-device-width:1024px) and (max-device-width:675px) {
     	left: auto;
     	right: 80px;
     }
@@ -785,7 +789,7 @@ div#loadingEl {
 
 #camp-footer {
 	display: none;
-	@media(min-width:768px) { 
+	@media(min-device-width:768px) { 
 		display: block;
 		.translate(0,100%);
 		position: absolute;
@@ -858,14 +862,14 @@ div#loadingEl {
 			top: 0;
 		}
 	}
-	@media(max-width:768px) {
+	@media(max-device-width:768px) {
 		display: none;
 	}
 }
 
 // Tweak the more button
 
-@media(max-width:768px) {
+@media(max-device-width:768px) {
 	a.uw-btn.btn-sm {
 		padding: 6px 10px;
 		font-size: 13px;

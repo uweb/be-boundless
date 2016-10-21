@@ -36,7 +36,11 @@ p {
     color: #696969;
 }
 
-
+#main_content {
+    @media(max-device-width:768px) {
+        background-color: white;
+    }
+}
 
 .intro {
     background-position: right top;
@@ -62,7 +66,7 @@ p {
     }
     //video {
     //    position: absolute;
-    //    min-width: 100%;
+    //    min-device-width: 100%;
     //    min-height: 100%;
     //    width: auto;
     //    height: auto;
@@ -96,7 +100,7 @@ p {
             .translate(0,10px);
         }
     }
-    @media(max-width:768px) {
+    @media(max-device-width:768px) {
         background-image: url("@{education}/intro-alt-mobile.jpg");
         padding: 0;
         h1 {
@@ -116,7 +120,7 @@ p {
             }
         }
     }    
-    @media(min-width:768px) {
+    @media(min-device-width:768px) {
         background-image: url("@{education}/intro-alt.jpg");
         padding: 0;
         h1 {
@@ -142,12 +146,12 @@ p {
         }
 
     }
-    @media(min-width:1600px) {
+    @media(min-device-width:1600px) {
        h1 {
            font-size: 6vw;
        }
     }
-    @media(max-width: 400px) {
+    @media(max-device-width: 400px) {
        h1 {
            margin-top: 46vh;
        }
@@ -221,19 +225,19 @@ p {
         overflow: visible;
     }
     img {
-        max-width: 100%;
+        max-device-width: 100%;
         height: auto;
         position: absolute;
     }
-    @media(min-width:768px) {
+    @media(min-device-width:768px) {
        height: 210px;
        margin-left: -10%;
     }
-    @media(min-width:1200px) {
+    @media(min-device-width:1200px) {
        height: 265px;
        margin-left: -20%;
     }
-    @media(max-width:768px) {
+    @media(max-device-width:768px) {
         width: 100%;
         height: auto;
         margin: 30px auto 40px;
@@ -291,14 +295,14 @@ p {
             transform: translateX(150%);
         }
     }
-    @media(min-width:768px) {
+    @media(min-device-width:768px) {
         padding: 0;
         .school-pic {
             background-image: url("@{education}/school.jpg");
             background-position: right bottom;
         }
     }
-    @media(max-width:768px) {
+    @media(max-device-width:768px) {
         position: relative;
         padding: 160px 0 100px 0;
         margin: 30px 0 20px 0;
@@ -373,7 +377,7 @@ p {
         //     font-weight: 900;
         // }
     }
-    @media(min-width:768px) {
+    @media(min-device-width:768px) {
         &.text-block {
             .headline-gold {
                 margin: 90px 30px;
@@ -388,7 +392,7 @@ p {
 
 // Remove some of the white space padding per edits
 .text-block .copy.padless {
-    @media(min-width:768px) {
+    @media(min-device-width:768px) {
         padding: 20px 90px 80px 90px;
     }
 }
@@ -506,7 +510,7 @@ p {
             background-position: left center;
         }
     }
-    @media(min-width:768px) {
+    @media(min-device-width:768px) {
         #people {
 
             .pax-1 > div,
@@ -537,7 +541,7 @@ p {
             }            
         }
     }
-    @media(min-width:1200px) {
+    @media(min-device-width:1200px) {
         #people {
             li {
                 div.hider {
@@ -546,13 +550,13 @@ p {
             }            
         }
     }
-    @media only screen and (min-width : 768px ) and (max-width : 992px) {
+    @media only screen and (min-device-width : 768px ) and (max-device-width : 992px) {
         #people {
             li {
             }            
         }
     }
-    @media(max-width:768px) {
+    @media(max-device-width:768px) {
         #people {
             li {
             }            
@@ -632,7 +636,7 @@ p {
         border-bottom: none;
 
     }
-    @media(min-width:768px) {
+    @media(min-device-width:768px) {
         background-image: url("@{education}/woman-in-headscarf.jpg");
         text-align: right;
         .container {
@@ -697,7 +701,7 @@ p {
             text-align: right;
         }
     }
-    @media(max-width:768px) {
+    @media(max-device-width:768px) {
         padding: 25px 24px 20px;
         background-image: url("@{education}/mobile-video.jpg");
         .background-cover(cover);
@@ -724,14 +728,14 @@ p {
 
 
 .video-block {
-    @media(max-width:768px) {    }
+    @media(max-device-width:768px) {    }
 }
 // Popup video
 #youtube-video {
     iframe {
         margin: 0;
     }
-    @media(min-width:768px) {
+    @media(min-device-width:768px) {
         position: absolute;
         top: 0;
         right: 0;    
@@ -739,7 +743,7 @@ p {
         bottom: 0;
         z-index: 9999;
     }
-    @media(max-width:768px) {   
+    @media(max-device-width:768px) {   
         .iPhone & {
             iframe {
                 margin: 0;
@@ -846,14 +850,14 @@ p {
         font-weight: 400; 
     }
 
-    @media(min-width:1200px) {
+    @media(min-device-width:1200px) {
         iframe {
             width: 120%;
             margin: 40px -10% 40px;
             height: 538px !important;
         }
     }
-    @media(min-width:768px) {
+    @media(min-device-width:768px) {
         .copy {
             margin-top: -50px; 
             padding: 80px 90px;
@@ -936,7 +940,7 @@ p {
         }
     }
 
-    @media(min-width:768px) {
+    @media(min-device-width:768px) {
         padding: 150px 110px;  
         position: relative;
         & > div.skew {
@@ -1000,13 +1004,13 @@ p {
         }
     }
 
-    @media(max-width:1200px) {
+    @media(max-device-width:1200px) {
         width: 100%;
         h2.name {
             font-size: 31px;
         }
     }
-    @media(max-width:768px) {
+    @media(max-device-width:768px) {
         padding: 80% 40px 20px;        
         background-color: #6D6D6D;
         background-size: 100%;
@@ -1044,10 +1048,10 @@ p {
 
 
 
-@media(min-width:768px) {
+@media(min-device-width:768px) {
    
 }
-@media(max-width:768px) { 
+@media(max-device-width:768px) { 
     .profile {
         background-color: black;
     }  
@@ -1146,9 +1150,9 @@ p {
 .example {
     // All
 
-    @media(min-width:768px) {
+    @media(min-device-width:768px) {
     }
-    @media(max-width:768px) {
+    @media(max-device-width:768px) {
     }
 }
 

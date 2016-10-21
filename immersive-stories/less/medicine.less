@@ -132,7 +132,7 @@ p {
             .translate(0,10px);
         }
     }
-    @media(max-width:768px) {
+    @media(max-device-width:768px) {
         background-image: url("@{medicine}/intro-mobile.jpg");
         padding: 0;
         h1 {
@@ -166,7 +166,7 @@ p {
         }
     }    
 
-    @media(min-width:768px) {
+    @media(min-device-width:768px) {
         background-image: url("@{medicine}/intro.jpg");
         padding: 0;
         h1 {
@@ -203,12 +203,12 @@ p {
 
 
     }
-    @media(min-width:1600px) {
+    @media(min-device-width:1600px) {
        h1 {
            font-size: 6vw;
        }
     }
-    @media(max-width:468px) {
+    @media(max-device-width:468px) {
     	background-image: url("@{medicine}/intro-mobile-portrait.jpg");
     	h1 {
     		margin-top: 18vh;
@@ -337,7 +337,7 @@ div.boundless-button span a#expander:after {
         }
     }
 
-    @media(min-width:768px) {
+    @media(min-device-width:768px) {
         .background-profile {
         	padding: 150px 80px 150px;  
         	position: relative;
@@ -352,7 +352,6 @@ div.boundless-button span a#expander:after {
                 position: absolute;
                 right: 10px;
                 bottom: 10px;
-                width: 81px;
                 height: 81px;
                 content: "";
                 background: url("@{fb}/sound.svg") no-repeat right bottom;
@@ -463,13 +462,13 @@ div.boundless-button span a#expander:after {
         }
     }
 
-    @media(max-width:1200px) {
+    @media(max-device-width:1200px) {
         width: 100%;
         h2.name {
             font-size: 31px;
         }
     }
-    @media(max-width:768px) {
+    @media(max-device-width:768px) {
     	.background-profile {
     		width: 90%;
     		padding: 55% 30px 20px;        
@@ -507,12 +506,12 @@ div.boundless-button span a#expander:after {
         	}
         }    
     }
-    @media only screen and (min-width : 768px ) and (max-width : 1200px) {
+    @media only screen and (min-device-width : 768px ) and (max-device-width : 1200px) {
     	.background-profile {
     	    width: 100%;
     	}
     }
-    @media(max-width:1200px) {
+    @media(max-device-width:1200px) {
         h2.name {
             font-size: 35px;
         }
@@ -520,7 +519,7 @@ div.boundless-button span a#expander:after {
 }
 
 
-@media(max-width:768px) { 
+@media(max-device-width:768px) { 
     div.audio {
         margin: 20px 0 20px;
         min-height: 40px;
@@ -656,7 +655,7 @@ section.text-block .gold-quote.purple.special {
         border-bottom: none;
 
     }
-    @media(min-width:768px) {
+    @media(min-device-width:768px) {
         .portrait {
     	 	background: url("@{medicine}/people-outlines-gold.png") no-repeat center center @ultralightgold;
         	position: absolute;
@@ -729,12 +728,12 @@ section.text-block .gold-quote.purple.special {
             text-align: left;
         }
     }
-    @media(min-width:992px) {
+    @media(min-device-width:992px) {
         a.play {
             font-size: 45px;
         }
     }
-    @media(max-width:768px) {
+    @media(max-device-width:768px) {
         margin-top: 30px;
         text-align: center;
         a.play {
@@ -756,7 +755,7 @@ section.text-block .gold-quote.purple.special {
     iframe {
         margin: 0;
     }
-    @media(min-width:768px) {
+    @media(min-device-width:768px) {
         position: absolute;
         top: 0;
         right: 0;    
@@ -764,7 +763,7 @@ section.text-block .gold-quote.purple.special {
         bottom: 0;
         z-index: 9999;
     }
-    @media(max-width:768px) {   
+    @media(max-device-width:768px) {   
         .iPhone & {
             iframe {
                 margin: 0;
@@ -790,7 +789,7 @@ section.text-block .gold-quote.purple.special {
 // Dr. Murry 
 
 section.person-2 {
-	@media(min-width:768px) {
+	@media(min-device-width:768px) {
 		position: static;
 		overflow: visible;
 		padding-top: 50px;
@@ -810,7 +809,7 @@ section.person-2 {
 	float: right;
 	padding: 30px 40px;
 	background: url("@{medicine}/tri.svg") no-repeat right bottom white;
-    min-width: 265px;
+    min-device-width: 265px;
     &.lg {
         background-image: url("@{medicine}/hands.svg");
         h3 {
@@ -853,17 +852,17 @@ section.person-2 {
 			}
 		}
 	}
-	@media only screen and (min-width : 768px ) and (max-width : 1200px) {
+	@media only screen and (min-device-width : 768px ) and (max-device-width : 1200px) {
 
 	}
-	@media(min-width:768px) {
+	@media(min-device-width:768px) {
         &.lg {
             width: 55%;
         }
 		width: 40%;
 		margin: 10px -20% 20px 40px;
 	}
-	@media(max-width:768px) {
+	@media(max-device-width:768px) {
 		width: 100%;
 		margin: 20px 0 30px;
 	}
@@ -884,14 +883,14 @@ section.person-2 {
 	.copy {
 		background-color: transparent;
 	}
-	@media(min-width:768px) {
+	@media(min-device-width:768px) {
          padding-top: 70px;
 	     padding-bottom: 100px;
          margin-bottom: 20px;
 	}
 }
 .give-box {
-    @media(min-width:768px) {
+    @media(min-device-width:768px) {
         background: url("@{medicine}/desk.svg") no-repeat right bottom;
         padding: 0 0 60px;
         .copy {
