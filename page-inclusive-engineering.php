@@ -1,4 +1,4 @@
-<?php get_header( "campaign-open" ); ?>
+`<?php get_header( "campaign-open" ); ?>
 
 <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />
 <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
@@ -279,7 +279,7 @@
                          <h2 class="headline-gold">Help make a difference</h2>
                          <p>You can help the University of Washington empower possibility through innovation by contributing to these funds.</p>
                          <div id="immersive-give-iframe"></div>
-                         <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="CSNEDI,ENGSEN" href="#">Give now</a></span></div>
+                         <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="MEHTIF,CSNEDI,ENGSEN" href="#">Give now</a></span></div>
                        </div>
                      </div>
                  </div>
