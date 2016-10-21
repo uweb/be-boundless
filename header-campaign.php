@@ -18,7 +18,11 @@
   <!-- <script type='text/javascript' src='https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js'></script> -->
 
   <style>
-
+     #mobile-relative,
+    .hero-content .uw-site-title,
+    .uw-breadcrumbs {
+       display: none;
+    }
      body.active-header {
        padding-top: 90px;
      }
