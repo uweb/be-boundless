@@ -374,14 +374,18 @@
               </div>
               <div class="back">
                 <h3><?php echo $fund->post_title; ?></h3>
-                <p class="back-unit-name"><?php echo $unslugUnit; ?></p>
+                <p class="back-unit-name"><?php echo (($unslugUnit === "president #8217;s fund for excellence") ? "" : $unslugUnit); ?></p>
                 <p class="short-desc"><?php echo $shortDesc; ?></p>
               </div>
               <div tabindex="0" class="full-bio">
                 <h2><?php echo $fund->post_title; ?></h2>
                  <div class="bio-info"> 
                   <p><?php 
-                      echo '<a href="#" class="fyp-filter-click" data-filter="' . $fund->unit . '">' . $unslugUnit . '</a>';
+                      if($unslugUnit === "president #8217;s fund for excellence") {
+                        echo '<a href="#" class="fyp-filter-click" data-filter="president-s-fund-for-excellence">President\'s Fund for Excellence</a>';
+                      } else { 
+                        echo '<a href="#" class="fyp-filter-click" data-filter="' . $fund->unit . '">' . $unslugUnit . '</a>';
+                      }
                   ?></p>               
                 </div>
                 <div class="bio-text">
