@@ -122,7 +122,7 @@
                   $imageurl = $term_meta['cause_image'];
                    $causeargs = array(
                        'post_type' => 'funds',
-                       'numberposts' => -1,
+                       'posts_per_page' => -1,
                         'tax_query' => array(
                           array(
                             'taxonomy' => 'causes',
