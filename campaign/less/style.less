@@ -892,6 +892,19 @@ a.uw-btn:focus {
     color: #fff;
     background-color: @lightgold;
 }
+a.uw-btn {
+	&.btn-sm.btn-plus {
+		&:focus {
+			&:after {
+				background-image: url(../img/spinner.gif);
+				background-position: 12px 8px !important;
+				background-repeat: no-repeat;
+				background-size: initial;
+			}
+		}
+	}
+}
+
 // @media(max-width:768px) {   
 // 	html, body {
 // 		overflow-x: auto;
