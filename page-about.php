@@ -187,7 +187,7 @@
                     <ul>
                       <li><a href="http://www.washington.edu/studentlife/about/support-student-life/volunteers">Academic &amp; Student Affairs</a> </li>
                       <li><a href="http://uwtyeeclub.com/about/board-of-directors/">Athletics</a> </li>
-                      <li><a href="https://ar­tsci.washi­ngton.edu/­campaign/v­olunteers">College of Arts &amp; Sciences </a> </li>
+                      <li><a href="https://artsci.washington.edu/campaign">College of Arts &amp; Sciences </a> </li>
                       <li><a href="http://www­.be.washin­gton.edu/c­ampaign/ca­mpaign-com­mittee/">College of Built Environments </a> </li>
                       <li><a href="https://education.uw.edu/alumni-and-friends/college-education-ambassadors-0">College of Education</a>  </li>
                       <li><a href="http://www.engr.washington.edu/mycoe/committees/visiting">College of Engineering</a> </li>
@@ -304,7 +304,6 @@
 </script>
 
 
- <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/animationLibraries.min.js' ?>" type="text/javascript"></script>
 
  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
 
