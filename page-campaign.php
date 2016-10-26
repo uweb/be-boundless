@@ -89,7 +89,7 @@
           <div id="slide4text">
             <h2>Transform the student experience</h2>
             <p><span class="hidden-xs">Ensuring access to excellence for all students is at the core of our public mission.</span> Discover how supporting opportunities that enrich future leaders can champion the Husky Experience for students like Anthony Martinez.</p>
-            <a href="supporting-the-student-experience" data-js="scholarship" data-title="Transform the student experience" class="uw-btn btn-sm btn-plus story-link">Read story</a> <a href="http://www.washington.edu/boundless/explore/?utm_source=website&utm_medium=click&utm_campaign=students&utm_term=supporting-the-student-experience#students" class="uw-btn btn-sm">Opportunities</a>          
+            <a href="supporting-the-husky-experience" data-js="scholarship" data-title="Transform the Husky experience" class="uw-btn btn-sm btn-plus story-link">Read story</a> <a href="http://www.washington.edu/boundless/explore/?utm_source=website&utm_medium=click&utm_campaign=students&utm_term=supporting-the-student-experience#students" class="uw-btn btn-sm">Opportunities</a>          
           </div>
           <span class="slide4-content"></span>
         </section><section tabindex="0"  class="section" id="slide5" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg5.jpg">
