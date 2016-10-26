@@ -54,7 +54,6 @@
             </div> 
           </div>   
           <div id="boundless-video"></div>
-          <!-- <small>Learn more about the Dream Project at <a href="http://www.uw.edu/dreamproject">uw.edu/dreamproject</a>.</small>       -->
           
    </section>
 
@@ -65,7 +64,7 @@
          <div class="container">
              <div class="row">
                  <div class="col-md-10 col-md-offset-1 copy padless marginless">
-                 <p>The diagnosis was hemimegalencephaly, a rare condition in which one half of the brain develops abnormally larger than the other. The seizures, a symptom of the condition, lasted minutes, consuming Jayna’s entire being. Medication didn’t work. The only answer, at 28 days old, was a hemispherectomy — performed on the youngest patient in the world at the time — by <a href="http://www.seattlechildrens.org">Seattle Children’s</a> neurosurgeon and <a href="http://www.csne-erc.org">Center for Sensorimotor Neural Engineering</a> (CSNE) member Dr. Jeff Ojemann. The surgery to remove the right hemisphere of her brain was successful, but the outlook was dim: doctors told Jayna’s family she’d likely never walk or talk. That they’d have only a few years with her, at best. </p>
+                 <p>The diagnosis was hemimegalencephaly, a rare condition in which one half of the brain develops abnormally larger than the other. The seizures, a symptom of the condition, lasted minutes, consuming Jayna’s entire being. Medication didn’t work. The only answer, at 28 days old, was a hemispherectomy — performed on the youngest patient in the world at the time — by <a href="http://www.seattlechildrens.org">Seattle Children’s</a> neurosurgeon and <a href="http://www.csne-erc.org">Center for Sensorimotor Neural Engineering</a> (CSNE) member Dr. Jeff Ojemann. The surgery to disconnect the right hemisphere of her brain was successful, but the outlook was dim: doctors told Jayna’s family she’d likely never walk or talk. That they’d have only a few years with her, at best. </p>
 
                  <p>Fast-forward a decade, and Jayna — who lives life with partial blindness and hemiplegia, a weakness of the left side of her body — is the happiest walking, talking 10-year-old you’ll ever meet. And, as a participant in the College of Engineering’s <a href="https://depts.washington.edu/uwsteele/">Ability &amp; Innovation Lab</a> pioneered by assistant professor of <a href="https://www.me.washington.edu/">mechanical engineering</a> and CSNE member Kat Steele, Jayna is working with mechanical engineering students to design body-powered orthoses to enrich not just her own life, but the lives of others. </p>
                  </div> 

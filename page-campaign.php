@@ -1,4 +1,7 @@
 <?php get_header( "campaign-open" ); ?>
+<meta property="og:description" content="What you care about can change the world. When you support your passions by giving through the UW, you’re providing students and faculty with the resources they need to learn, collaborate and research in one of the most innovative places on earth." />
+<meta property="og:image" content="http:<?php echo get_stylesheet_directory_uri() . '/campaign/img/og-image.jpg' ?>" />
+
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/campaign/css/campaign-style.css' ?>" type="text/css">
 <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
 <?php get_header( "campaign-close" ); ?>

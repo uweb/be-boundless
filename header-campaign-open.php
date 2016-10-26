@@ -6,13 +6,10 @@
   <meta name="keywords" content="University of Washington Boundless Campaign" />
   <!-- <meta name="viewport" content="width=device-width"> -->
   <!-- <meta name="viewport" content="initial-scale=1 user-scalable=no width=device-width"> -->
-  <meta name="viewport" content="initial-scale=.95 width=device-width maximum-scale=1 user-scalable=no" />
+  <meta name="viewport" content="initial-scale=1 width=device-width maximum-scale=1 user-scalable=no" />
   <title> <?php wp_title(' | ',TRUE,'right'); bloginfo('name'); ?> </title>
   <meta property="og:title" content="<?php the_title(''); ?>" />
-  <meta property="og:url" content="<?php echo get_permalink(); ?>" />
-  <meta property="og:description" content="What you care about can change the world. When you support your passions by giving through the UW, you’re providing students and faculty with the resources they need to learn, collaborate and research in one of the most innovative places on earth." />
-  <meta property="og:image" content="http:<?php echo get_stylesheet_directory_uri() . '/campaign/img/og-image.jpg' ?>" />
-      
+  <meta property="og:url" content="<?php echo get_permalink(); ?>" />     
       
   <link rel='stylesheet' id='uw-master-css'  href='<?php echo bloginfo("template_directory") . '/style.css' ?>' type='text/css' media='all' />
   <link rel='stylesheet' id='google-font-open-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C700italic%2C400%2C700&#038;' type='text/css' media='all' />
