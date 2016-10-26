@@ -10,7 +10,13 @@
   <title> <?php wp_title(' | ',TRUE,'right'); bloginfo('name'); ?> </title>
   <meta property="og:title" content="<?php the_title(''); ?>" />
   <meta property="og:url" content="<?php echo get_permalink(); ?>" />
-  <meta property="og:image" content="<?php echo (has_post_thumbnail( $post->ID ) ? the_post_thumbnail_url($post->ID) : (get_stylesheet_directory_uri() . '/campaign/img/og_image.jpg')); ?>" />
+  
+  <?php if (has_post_thumbnail( $post->ID ) ): ?>
+  <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?>
+  <meta property="og:image" content="<?php echo $image[0]; ?>" />
+  <?php else : ?>
+  <meta property="og:image" content="<?php echo get_stylesheet_directory_uri() . '/campaign/img/og_image.jpg'; ?>" 
+  <?php endif; ?> 
 
   <link rel='stylesheet' id='uw-master-css'  href='<?php echo bloginfo("template_directory") . '/style.css' ?>' type='text/css' media='all' />
   <link rel='stylesheet' id='google-font-open-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C700italic%2C400%2C700&#038;' type='text/css' media='all' />
