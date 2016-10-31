@@ -8,29 +8,19 @@
 
 
   <main>
-
-    <div class="container" id="leaders">
-                <h2 class="purpleHeadline"><span>Campaign Volunteers Across the UW</span></h2>
-                <div class="row">
-                  <div class="col-md-3">
-                  </div>
-                  
-                  
-                  <div class="col-md-3">   
-                    <ul>
-                      <li><a href="https://sop.washington.edu/alumni-donors/campaign-volunteers/ ">School of Pharmacy</a> </li>
-                      <li><a href="http://sph.washington.edu/about/deanscouncil.asp">School of Public Health</a> </li>
-                      <li><a href="http://socialwork.uw.edu/alumni/giving-opportunities">School of Social Work</a></li>
-                      <li><a href="http://www.lib.washington.edu/support/friends ">University Libraries</a> </li>
-                      <li><a href="http://www.uwb.edu/leadership/advisoryboard">UW Bothell</a> </li>
-                      <li><a href="http://www.acceleratemed.org/leadership">UW Medicine</a> </li>
-                      <li><a href="http://www.tacoma.uw.edu/boundless/volunteers">UW Tacoma</a></li>
-                    </ul>    
-                  </div>
-              </div>
-
-          </div> 
-
+      <?php
+        // Start the Loop.
+        while ( have_posts() ) : the_post();
+    
+          /*
+           * Include the post format-specific template for the content. If you want to
+           * use this in a child theme, then include a file called called content-___.php
+           * (where ___ is the post format) and that will be used instead.
+           */
+          the_content();
+    
+        endwhile;
+      ?>
   </main>
 
 
