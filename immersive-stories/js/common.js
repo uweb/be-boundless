@@ -52,29 +52,28 @@ function videoPlay(vid){
 $(function(){
 
   // Giving widget at the bottom of the Immersive stories
+  var immersiveGive = document.getElementById('immersive-give');
 
-  document.getElementById('immersive-give').addEventListener('click', function(e){
-    e.preventDefault(); 
-    var $immersiveGiveIframe = $('#immersive-give-iframe');
+  if(!!immersiveGive){
+    immersiveGive.addEventListener('click', function(e){
+      e.preventDefault(); 
+      var $immersiveGiveIframe = $('#immersive-give-iframe');
 
-    if(isEmpty($immersiveGiveIframe)) {
-      $('<iframe>', {
-        src: 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&source_typ=3&appeal=17XIS&source=' + e.target.getAttribute('data-fund'),
-        frameborder: 0,
-        width: '100%',
-        height: 'auto',
-      }).appendTo('#immersive-give-iframe'); 
-    }
-    
-    setTimeout(function(){
-      $immersiveGiveIframe.find('iframe').focus();
-    },500)
+      if(isEmpty($immersiveGiveIframe)) {
+        $('<iframe>', {
+          src: 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&source_typ=3&appeal=17XIS&source=' + e.target.getAttribute('data-fund'),
+          frameborder: 0,
+          width: '100%',
+          height: 'auto',
+        }).appendTo('#immersive-give-iframe'); 
+      }
+      
+      setTimeout(function(){
+        $immersiveGiveIframe.find('iframe').focus();
+      },500)
 
-    // $('html, body').animate({
-    //   scrollTop: ( $immersiveGiveIframe.offset().top - 90)
-    // }, 900);
-
-  })
+    })
+  }
 
 
   // Audio Player
@@ -93,12 +92,6 @@ $(function(){
       for (var i = 0; i < mp3s.length; i++ ) {
         mp3s[i].pause()
       }
-  
-  
-     //$('audio').each(function(e){
-     //  console.log($(this))
-     //})
-  
   
       var $audio = $(e.target).closest('.audio'),
           audioEl = $audio.find('audio')[0]

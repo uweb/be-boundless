@@ -96,7 +96,6 @@
             <li>College of the Environment Scholarship</li>
             <li>Clayton Dale Carlisle Memorial Scholarship</li>
             <li>Morten J. Lauridsen, Jr. Endowed Scholarship Fund in Forest Resources</li>
-            <li>George and Emily Muller Endowed Student Support Fund</li>
             <li>James Ridgeway Endowed Scholarship</li>
             <li>David R. M. Scott Endowed Scholarship</li>
           </ul>
