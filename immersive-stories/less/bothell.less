@@ -1,0 +1,406 @@
+// All the Variables from the UW 2014 theme
+@import "../../themes/uw-2014/less/uw.variables.less";
+@import "../../themes/uw-2014/less/flat/mixins.less";
+@import "../../immersive-stories/less/text-block.less";
+@import "../../immersive-stories/less/button.less";
+
+
+@fb: "../../immersive-stories/img/farmer-brown";
+@education: "../../immersive-stories/img/education";
+@medicine: "../../immersive-stories/img/medicine";
+@bothell: "../../immersive-stories/img/bothell";
+@img: "../../immersive-stories/img";
+
+
+
+
+body {
+    width: 100%;
+    height: 100%;
+    .uw-footer {
+        margin-top: 0
+    }
+    video::-webkit-media-controls {
+        display:none !important;
+    }
+    video::-webkit-media-controls-start-playback-button {
+      display: none;
+    }
+}
+p {
+    color: #696969;
+}
+
+// Remove some of the white space padding per edits
+.text-block .copy {
+    @media(min-width:768px) {
+        &.marginless {
+            margin-top: 20px;
+        }
+        &.padless {
+            padding: 20px 90px 80px 90px;
+        }
+    }
+}
+
+@keyframes slidein {
+  0% {
+    .translate(0,-110%);
+    opacity: 0;
+  }
+  100% {
+    .translate(0,0);
+    opacity: 1;
+  }
+}
+
+#bar {
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    height: 18vw;
+    .translate(0,0);
+    .transition(all .5s linear);
+    opacity: 1;
+    z-index: 10;
+    div {
+       width: 79vh;
+       max-width: 70vw;
+       height: 100%;
+       margin: 0 auto;
+       background: url("@{bothell}/bar.png") center bottom no-repeat transparent;
+       background-size: 100%;
+     }
+    .bothellIntro & {
+        .translate(0,19vw);
+        opacity: 0;
+    }
+}
+
+@keyframes buttons {
+  0% {      opacity: 0 }
+  50% {     opacity: 1}
+  100% {    opacity: 0 }
+} 
+
+.intro {
+    background-position: center center;
+    .background-cover(100%);
+    background-repeat: no-repeat;
+    background-color: black;
+    width: 100%;
+    height: 105vh;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    text-align: center;
+    .but {
+        position: absolute;
+        width: 4.6vw;
+        height: 1.6vw;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff1a00+0,000000+100 */
+        background: #ff1a00; /* Old browsers */
+        background: -moz-radial-gradient(center, ellipse cover,  #ff1a00 0%, #000000 100%); /* FF3.6-15 */
+        background: -webkit-radial-gradient(center, ellipse cover,  #ff1a00 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(ellipse at center,  #ff1a00 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1a00', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        top: 50%;
+        left: 50%;
+        .border-radius(100%);
+        border: 2px solid rgba(0, 0, 0, 0.62);
+        .animation(buttons 2.5s ease infinite);
+    }
+    .but-1 { .translate(8.6vw, -8.5vw);   animation-delay: .3s;  }
+    .but-2 { .translate(-4.5vw, 4.8vw);   animation-delay: .4s;  }
+    .but-3 { .translate(-41.8vw, -1.7vw); animation-delay: .5s;  }
+    .but-4 { .translate(17vw, -19.3vw);   animation-delay: .6s;  }
+    .but-5 { .translate(-5.7vw, -28.7vw); animation-delay: .7s;  }
+    .but-6 { .translate(-25vw, 5.5vw);    animation-delay: .8s;  }
+    .but-7 { .translate(-27.9vw, -10vw);  animation-delay: .1s;  }
+
+    h1 {
+        font-family: @uni;
+        color: white;
+        text-transform: uppercase;
+        font-weight: normal;
+        line-height: 1;
+        display: inline-block;
+        position: relative;
+        .bothellIntro & {
+            & > span:first-child span {
+                .animation(slidein 1.5s .1s ease forwards);
+            }
+            & > span:last-child span {
+                .animation(slidein 1.5s .5s ease forwards);
+            }
+        }
+        & > span {
+            overflow:hidden;
+            display: block;
+            span {
+                display: block;
+                .translate(0,-100%);
+            }
+        }
+        & > span:first-child {
+            letter-spacing: 0;
+        }
+        & > span:nth-child(2) {
+            font-family: @font-family-headline;
+            font-weight: @ultra;
+            letter-spacing: 0;
+        }
+        & > span:last-child {
+        }
+    }
+    p {
+        color: white;
+    }
+    .intro-body {
+        position: relative;
+        z-index: 2;
+    }
+    a.read-more {
+        display: block;
+        position: absolute;
+        left: 50%;
+        margin-left: -20px;
+        text-indent: -999px;
+        overflow: hidden;
+        width: 40px;
+        height: 50px;
+        background: url("@{img}/sprite.svg") 0 0 no-repeat transparent;
+        z-index: 1;
+        &:hover,
+        &:active,
+        &:focus {
+            .translate(0,10px);
+        }
+    }
+    @media(max-width:768px) {
+        background-image: url("@{bothell}/game-intro.jpg");
+        padding: 0;
+        h1 {
+            margin-top: 25vh;
+            color: white;
+            &:before,
+            &:after {
+                height: 2px;
+            }
+            &:before {
+                top: -10px;
+            }
+            &:after {
+                bottom: -10px;
+            }
+        }
+        p {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-top: 7px;
+            color: white;
+            text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+        }
+        a.read-more {
+            top: calc(~"100vh - 55px");
+        }
+        .intro-body {
+            #intro-text {
+                padding: 0 28% 0 20px;
+            }
+        }
+    }    
+
+    @media(min-width:768px) {
+        background-image: url("@{bothell}/game-intro.jpg"), url("@{bothell}/game-intro-blur.jpg");
+        padding: 0;
+        h1 {
+            font-size: 7vw;
+            margin-top: 35vh;
+            letter-spacing: -4px;
+            -webkit-font-smoothing: antialiased;
+            text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+            &:before {
+                top: -20px;
+            }
+            &:after {
+                bottom: -20px;
+            }
+        }
+        p {
+            font-family: @uni;
+            -webkit-font-smoothing: auto;
+            text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+            margin: 40px 15% 0;
+            font-size: 24px;
+            line-height: 1.4;
+        }
+        a.read-more {
+            top: calc(~"100vh - 95px");
+            bottom: auto;
+        }
+        .intro-body {
+            .brand-heading {
+                font-size: 100px;
+            }
+            .intro-text {
+                font-size: 26px;
+            }
+        }
+
+
+    }
+    @media(min-width:1600px) {
+       h1 {
+           font-size: 6vw;
+       }
+    }
+    @media(max-width:468px) {
+        background-image: url("@{bothell}/game-intro.jpg");
+        h1 {
+            margin-top: 18vh;
+            color: white;
+            & > span:first-child {
+                font-size: 9.5vw;
+            }
+        }
+    }
+
+}
+@keyframes windmill {
+  0% {      .rotate(0deg) }
+  100% {    .rotate(360deg); }
+} 
+
+
+#jason {
+    position: relative;
+    background-color: #2d254b;
+    #back,
+    #middle,
+    #fore {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-repeat: no-repeat;
+    }
+    #faces { 
+        text-align: center;
+    }
+    #windmill {
+        position: absolute;
+        bottom: 150px;
+        right: 100px;
+        .transition(all);
+        #blades {
+            .transform-origin(center center);
+        }
+        &:hover #blades {
+            .animation(windmill 2.5s infinite);
+        }
+    }
+    .frame {
+        background: url("@{bothell}/frame.jpg");
+        width: 150px;
+        height: 150px;
+        .border-radius(100%);
+        .background-cover(100%);
+        display: inline-block;
+        margin: 0 15px  100px 15px;
+        position: relative;
+        .transition(all 0.2s linear);
+        perspective: 900px;
+        .front,
+        .back {
+            padding: 2em;
+            position: absolute;
+            .background-cover(100%);
+            top: 9%;
+            left: 10%;
+            right: 12%;
+            bottom: 13%;
+            text-align: left;
+            backface-visibility: hidden;
+            transform-style: preserve3d;
+            transition: all 0.4s;
+            .border-radius(100%);
+        }
+        &.lg {
+            width: 200px;
+            height: 200px;
+        }
+        .front {
+        }
+        .back {
+          transform: rotateY(-180deg);
+        }
+        &:hover .back {
+          transform: rotateY(0deg);
+        }
+        &:hover .front {
+          transform: rotateY(180deg);
+        }
+        .pic-1 {
+            .front {
+                background-image: url("@{bothell}/jason-back.jpg");
+            }
+            .back {
+                background-image: url("@{bothell}/jason-front.jpg");
+            }
+        }
+        .pic-2 {
+            .front {
+                background-image: url("@{bothell}/jason-back.jpg");
+            }
+            .back {
+                background-image: url("@{bothell}/jason-front.jpg");
+            }
+        }
+        .pic-3 {
+            .front {
+                background-image: url("@{bothell}/jason-back.jpg");
+            }
+            .back {
+                background-image: url("@{bothell}/jason-front.jpg");
+            }
+        }
+
+    }
+    .copy {
+        background-color: transparent;
+        p {
+            color: white;
+        }
+    }
+    #back {
+        background-image: url("@{bothell}/back.jpg");
+        .background-cover(cover);
+        .translate(0,200px);
+    }
+    #middle {
+        background-image: url("@{bothell}/middle.png");
+        .background-cover(100%);
+        background-position: center bottom;
+        .translate(0,350px);
+    }
+    #fore {
+        background-image: url("@{bothell}/fore.png");
+        .background-cover(100%);
+        background-position: center bottom;
+        .translate(0,500px);
+    }
+    @media (min-width: 768px) {
+        &.text-block .copy {
+            padding: 100px 150px 250px;
+        }
+    }
+}
+
+
+
+
+

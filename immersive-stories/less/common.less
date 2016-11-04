@@ -5,6 +5,13 @@
 @img: "../../immersive-stories/img";
 
 
+// In case 2014 doesn't have background-cover defined
+.background-cover(@cover) {
+  -webkit-background-size: @cover;
+     -moz-background-size: @cover;
+          background-size: @cover;
+       -o-background-size: @cover;
+}
 
 button.close-video {
     display: none;
