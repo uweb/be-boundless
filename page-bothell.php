@@ -12,7 +12,7 @@
 <div class="intro" id="intro-slide">
   <div class="intro-body">
       <div class="row">
-        <div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-1 col-lg-offset-1" id='intro-text'>
+        <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-offset-1" id='intro-text'>
             <h1><span><span>Taking diversity </span></span><span><span>to the next level</span></span> </h1>
             <p>A diverse group of students in the UW Bothell’s Digital Future Lab are creating professional-quality video games for commercial release. Their success comes not in spite of their differences, but because of them.</p>
         </div>
@@ -28,7 +28,7 @@
   <a class="read-more" href="#main_content">Read the story</a>
 </div>
 
-<!-- <div id="bar"><div></div></div> -->
+<div id="bar"><div></div></div>
 
 <main id="main_content"> 
 
@@ -92,39 +92,76 @@
 
 
 
-    </div><div id="fore"></div>
+    </div><div id="robot"></div><div id="fore"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy marginless">
-
-<div id="faces">
-  <div class="frame"><div class="pic pic-1">
-    <div class="front"></div>
-    <div class="back"></div>  
-  </div></div>
-
-  <div class="frame lg"><div class="pic pic-2">
-    <div class="front"></div>
-    <div class="back"></div>  
-  </div></div>
-
-  <div class="frame"><div class="pic pic-3">
-    <div class="front"></div>
-    <div class="back"></div>  
-  </div></div>
-</div>
-
-<p>Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Duis  mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-<p>Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla.</p>
-<p>Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                  <div id="faces">
+                    <div class="frame"><div class="pic pic-1">
+                      <div class="front"></div>
+                      <div class="back"></div>  
+                    </div></div>
+                  
+                    <div class="frame lg"><div class="pic pic-2">
+                      <div class="front"></div>
+                      <div class="back"></div>  
+                    </div></div>
+                  
+                    <div class="frame"><div class="pic pic-3">
+                      <div class="front"></div>
+                      <div class="back"></div>  
+                    </div></div>
+                  </div>
+                  
+                  <p>Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Duis  mollis, est non                  commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                  <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                  <p>Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero,                  a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                  <p>Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus                   mollis interdum. Aenean lacinia bibendum nulla sed consectetur.Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Vestibulum id                   ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                  <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
              </div> 
           </div> 
         </div>   
     </section>
 
-    <section class="text-block">
+    <section class="text-block" id="ghosts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 copy marginless">
+                    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                    
+                    <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                    
+                    <p>Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    
+                    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.
+                    </p>
+             </div> 
+          </div> 
+        </div>   
+        <div class="bottom-smoke"></div>
+    </section>
+    
+
+     <section class="video-block" id="video">
+           <div class="portrait"></div>
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-12 copy"> 
+
+                   <a class="play" href="#">Play video <svg aria-hidden="true" x="0px" y="0px"
+        width="14px" height="3px" viewBox="0 0 14 3" enable-background="new 0 0 14 3" xml:space="preserve">
+     <rect fill="#FFFFFF" width="14" height="3"/>
+     </svg></a>
+
+               </div> 
+             </div> 
+           </div>   
+           <div id="boundless-video"></div>
+    </section>
+
+
+
+    <section class="text-block" id="trees">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy marginless">
@@ -140,7 +177,7 @@
           </div> 
         </div>   
     </section>
-    
+
 
     <section class="text-block giving-widget">
         <div class="container">

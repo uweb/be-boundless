@@ -29,7 +29,12 @@ body {
 }
 p {
     color: #696969;
+    @media(max-width:768px) {
+        line-height: 1.5;
+        font-size: 16px;
+    } 
 }
+
 
 // Remove some of the white space padding per edits
 .text-block .copy {
@@ -59,7 +64,7 @@ p {
     bottom: 50px;
     left: 0;
     right: 0;
-    height: 18vw;
+    height: 12.5vw;
     .translate(0,0);
     .transition(all .5s linear);
     opacity: 1;
@@ -96,29 +101,7 @@ p {
     color: white;
     overflow: hidden;
     text-align: center;
-    .but {
-        position: absolute;
-        width: 4.6vw;
-        height: 1.6vw;
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff1a00+0,000000+100 */
-        background: #ff1a00; /* Old browsers */
-        background: -moz-radial-gradient(center, ellipse cover,  #ff1a00 0%, #000000 100%); /* FF3.6-15 */
-        background: -webkit-radial-gradient(center, ellipse cover,  #ff1a00 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
-        background: radial-gradient(ellipse at center,  #ff1a00 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1a00', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-        top: 50%;
-        left: 50%;
-        .border-radius(100%);
-        border: 2px solid rgba(0, 0, 0, 0.62);
-        .animation(buttons 2.5s ease infinite);
-    }
-    .but-1 { .translate(8.6vw, -8.5vw);   animation-delay: .3s;  }
-    .but-2 { .translate(-4.5vw, 4.8vw);   animation-delay: .4s;  }
-    .but-3 { .translate(-41.8vw, -1.7vw); animation-delay: .5s;  }
-    .but-4 { .translate(17vw, -19.3vw);   animation-delay: .6s;  }
-    .but-5 { .translate(-5.7vw, -28.7vw); animation-delay: .7s;  }
-    .but-6 { .translate(-25vw, 5.5vw);    animation-delay: .8s;  }
-    .but-7 { .translate(-27.9vw, -10vw);  animation-delay: .1s;  }
+
 
     h1 {
         font-family: @uni;
@@ -180,7 +163,8 @@ p {
         }
     }
     @media(max-width:768px) {
-        background-image: url("@{bothell}/game-intro.jpg");
+        background-image: url("@{bothell}/intro-mobile.jpg");
+        .background-cover(cover);
         padding: 0;
         h1 {
             margin-top: 25vh;
@@ -208,7 +192,7 @@ p {
         }
         .intro-body {
             #intro-text {
-                padding: 0 28% 0 20px;
+                // padding: 0 28% 0 20px;
             }
         }
     }    
@@ -229,10 +213,33 @@ p {
                 bottom: -20px;
             }
         }
+        .but {
+            position: absolute;
+            width: 4.6vw;
+            height: 1.6vw;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff1a00+0,000000+100 */
+            background: #ff1a00; /* Old browsers */
+            background: -moz-radial-gradient(center, ellipse cover,  #ff1a00 0%, #000000 100%); /* FF3.6-15 */
+            background: -webkit-radial-gradient(center, ellipse cover,  #ff1a00 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+            background: radial-gradient(ellipse at center,  #ff1a00 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1a00', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            top: 50%;
+            left: 50%;
+            .border-radius(100%);
+            border: 2px solid rgba(0, 0, 0, 0.62);
+            .animation(buttons 2.5s ease infinite);
+        }
+        .but-1 { .translate(8.6vw, -8.5vw);   animation-delay: .3s;  }
+        .but-2 { .translate(-4.5vw, 4.8vw);   animation-delay: .4s;  }
+        .but-3 { .translate(-41.8vw, -1.7vw); animation-delay: .5s;  }
+        .but-4 { .translate(17vw, -19.3vw);   animation-delay: .6s;  }
+        .but-5 { .translate(-5.7vw, -28.7vw); animation-delay: .7s;  }
+        .but-6 { .translate(-25vw, 5.5vw);    animation-delay: .8s;  }
+        .but-7 { .translate(-27.9vw, -10vw);  animation-delay: .1s;  }
         p {
             font-family: @uni;
             -webkit-font-smoothing: auto;
-            text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.88);
             margin: 40px 15% 0;
             font-size: 24px;
             line-height: 1.4;
@@ -258,7 +265,7 @@ p {
        }
     }
     @media(max-width:468px) {
-        background-image: url("@{bothell}/game-intro.jpg");
+        background-image: url("@{bothell}/intro-mobile.jpg");
         h1 {
             margin-top: 18vh;
             color: white;
@@ -269,10 +276,7 @@ p {
     }
 
 }
-@keyframes windmill {
-  0% {      .rotate(0deg) }
-  100% {    .rotate(360deg); }
-} 
+
 
 
 #jason {
@@ -291,32 +295,35 @@ p {
     #faces { 
         text-align: center;
     }
+    @keyframes windmill {
+      0% {      .rotate(0deg) }
+      100% {    .rotate(360deg); }
+    }     
     #windmill {
         position: absolute;
-        bottom: 150px;
-        right: 100px;
+        bottom: 40px;
+        right: 160px;
         .transition(all);
         #blades {
             .transform-origin(center center);
         }
-        &:hover #blades {
-            .animation(windmill 2.5s infinite);
+        #blades {
+            .animation(windmill 6s infinite linear);
         }
     }
     .frame {
-        background: url("@{bothell}/frame.jpg");
-        width: 150px;
-        height: 150px;
+        background: url("@{bothell}/frame.svg");
+        width: 80px;
+        height: 80px;
         .border-radius(100%);
         .background-cover(100%);
         display: inline-block;
-        margin: 0 15px  100px 15px;
+        margin: 0 0 30px 0;
         position: relative;
         .transition(all 0.2s linear);
         perspective: 900px;
         .front,
         .back {
-            padding: 2em;
             position: absolute;
             .background-cover(100%);
             top: 9%;
@@ -330,8 +337,8 @@ p {
             .border-radius(100%);
         }
         &.lg {
-            width: 200px;
-            height: 200px;
+            width: 90px;
+            height: 90px;
         }
         .front {
         }
@@ -379,28 +386,270 @@ p {
     #back {
         background-image: url("@{bothell}/back.jpg");
         .background-cover(cover);
-        .translate(0,200px);
+        .translate(0,400px);
     }
     #middle {
         background-image: url("@{bothell}/middle.png");
         .background-cover(100%);
         background-position: center bottom;
-        .translate(0,350px);
+        .translate(0,500px);
     }
     #fore {
         background-image: url("@{bothell}/fore.png");
         .background-cover(100%);
         background-position: center bottom;
-        .translate(0,500px);
+        .translate(0,600px);
+    }
+    #robot {
+        background: url("@{bothell}/robot.png") center bottom no-repeat transparent;
+        .translate(0,600px);
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -195px;
+        width: 390px;
+        height: 1050px;
     }
     @media (min-width: 768px) {
         &.text-block .copy {
             padding: 100px 150px 250px;
+        }
+        .frame {
+            width: 150px;
+            height: 150px;
+            margin: 0 15px  70px 15px;
+            &.lg {
+                width: 200px;
+                height: 200px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        &.text-block .copy {
+            padding: 20px 30px 260px;
+        }
+    }
+}
+
+#ghosts {
+    position: relative;
+    &.text-block .copy {
+        background-color: transparent;
+        p {
+            color: white;
+        }
+    }
+    @media(min-width:768px) {
+        background: url("@{bothell}/smoke-top.jpg") repeat-x center top black;
+        padding-top: 400px;
+        padding-bottom: 200px;
+        .bottom-smoke {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 200px;
+            background: url("@{bothell}/smoke.jpg") repeat-x center top black;
+            .background-cover(cover);
+        }
+    }
+    @media(max-width:768px) {
+        background: url("@{bothell}/smoke-top-mobile.jpg") repeat-x center top black;
+        &.text-block .copy {
+            padding: 220px 30px 60px;
         }
     }
 }
 
 
 
+.playing .video-block {
+    z-index: 9999;
+}
+
+.video-block {
+    position: relative;
+    z-index: 0;
+    text-align: center;
+
+    // Blinker animation for video
+
+    @keyframes blinker {
+      0%,
+      10% {
+        opacity: 0;
+      }
+      25%,
+      85% {
+        opacity: .7;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+
+    .portrait {
+        .background-cover(cover);
+    }
+    h2 {
+        font-family: @uni;
+        font-weight: 300;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: white;
+        -webkit-font-smoothing: antialiased;
+    }
+    p {
+        color:  @darkgold;
+        span.highlight {
+            background-color: rgba(183, 165, 122, 0.3);
+            padding: 0 10px;
+        }
+        span.sub {
+            border-top: 1px solid rgba(0, 0, 0, 0.5);
+            display: block;
+            margin-top: 20px;
+            padding-top: 30px;
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+    a {
+        color: @darkgold;
+        border-bottom: 1px solid #fff;
+        &:focus,
+        &:active,
+        &:hover {
+            border-bottom-color: @purple;
+        }
+    }
+    a.play {
+        position: relative;
+        color:  @darkgold;
+        font-family: @uni;
+        text-transform: uppercase;
+        font-size: 25px;
+        border-bottom: none;
+
+    }
+    @media(min-width:768px) {
+        .portrait {
+            background-color: @ultralightgold;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+        .container {
+            padding: 16vw 0;
+        }
+        a.play {
+            line-height: 169px;
+            padding: 14px 260px 13px 20px;
+            -webkit-font-smoothing: antialiased;
+            font-size: 35px;
+            color: @purple;
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                opacity: .8;
+            }
+            &:after {
+                background: url("@{bothell}/play.svg") no-repeat 0 0 rgba(0,0,0,0);
+                width: 170px;
+                height: 170px;
+                bottom: -40px;
+                right: 20px;
+                .transition(all .1s linear);
+            }
+            &:focus,
+            &:active,
+            &:hover {
+                color: @darkgold;
+                &:after {
+                    .scale(1.1,1.1);
+                }
+            }
+            svg {
+                .animation(blinker 1.2s linear infinite);
+                margin-left: -2px;
+                rect {
+                    fill: @purple;
+                }
+            }
+            &:before {
+                width: 1px;
+                height: 145px;
+                bottom: -33px;
+                right: 228px;
+                opacity: 1;
+                background: #bbbbbb;
+                .skew(-15deg,0);
+
+            }
+        }
+        h2 {
+            font-size: 55px;
+            text-align: left;
+        }
+        p {            
+            padding-right: 50%;
+            text-align: left;
+        }
+    }
+    @media(min-width:992px) {
+        a.play {
+            font-size: 45px;
+        }
+    }
+    @media(max-width:768px) {
+        margin-top: 30px;
+        text-align: center;
+        a.play {            svg {
+                display: none;
+            }
+        }
+        #boundless-video {
+            margin-top: 15px;
+        }
+    }
+
+}
+
+#trees  {
+    position: relative;
+    &.text-block .copy {
+        background-color: transparent;
+        p {
+            color: white;
+        }
+    }
+    @media(min-width:768px) {
+        background: url("@{bothell}/trees.jpg") no-repeat center bottom black;
+        .background-cover(100%);
+        padding-top: 100px;
+        padding-bottom: 500px;
+        .bottom-smoke {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 200px;
+            background: url("@{bothell}/smoke.jpg") repeat-x center top black;
+            .background-cover(cover);
+        }
+    }
+    @media(max-width:768px) {
+        background: url("@{bothell}/trees.jpg") no-repeat center bottom black;
+        .background-cover(100%);
+        &.text-block .copy {
+            padding: 220px 30px 60px;
+        }
+    }
+}
 
 

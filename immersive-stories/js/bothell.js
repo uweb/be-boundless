@@ -18,17 +18,28 @@ $(function(){
   .addTo(controllerBothell)
 
 
+  var videoTrigger = new ScrollMagic.Scene({
+    triggerElement: '#video',
+    triggerHook: 1
+  })
+  .on("start", function(){
+    videoPlay("https://www.youtube.com/embed/sbELjIqhOZ4?theme=light;autoplay=1&rel=0&amp;showinfo=0&amp");
+  })
+  .reverse(false)
+  .addTo(controllerBothell);
+
+
   var parallaxed = new TimelineMax ()
         .add([
-          TweenMax.to('#back', 0.5,   { transform: 'translateY(0)', ease: Power0.easeIn }),
-          TweenMax.to('#middle', 0.5, { transform: 'translateY(0)', ease: Power0.easeIn }),
-          TweenMax.to('#fore', 0.7,   { transform: 'translateY(0)', ease: Power0.easeIn })
+          TweenMax.to('#back', 1,   { transform: 'translateY(0)', ease: Power0.easeIn }),
+          TweenMax.to('#middle', 0.75, { transform: 'translateY(0)', ease: Power0.easeIn }),
+          TweenMax.to('#fore', 0.65,   { transform: 'translateY(0)', ease: Power0.easeIn }),
+          TweenMax.to('#robot', 0.2,   { transform: 'translateY(100px)', ease: Power0.easeIn })
         ]);
 
   var jason = new ScrollMagic.Scene({
     triggerElement: '#jason',
-    triggerHook: 0.3,
-    duration: '100%',
+    duration: '150%',
   })
   .setTween(parallaxed)
   .addTo(controllerBothell)

@@ -28,6 +28,42 @@ button.close-video {
     }
 }
 
+// Popup video
+#youtube-video {
+    iframe {
+        margin: 0;
+    }
+    @media(min-width:768px) {
+        position: absolute;
+        top: 0;
+        right: 0;    
+        left: 0;
+        bottom: 0;
+        z-index: 9999;
+    }
+    @media(max-width:768px) {   
+        .iPhone & {
+            iframe {
+                margin: 0;
+                height: 60px !important;
+                position: absolute;
+                right: 0;
+                left: 0;
+                z-index: 999;
+                bottom: 40px;
+                opacity: 0;
+            }
+        }
+        iframe { 
+            width: 100% !important;
+            height: 42vw !important;
+        }
+    }
+
+}
+
+
+
 // Giving button at the bottom of the page
 
 #immersive-give-iframe {
