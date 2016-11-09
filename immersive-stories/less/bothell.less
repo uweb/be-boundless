@@ -81,6 +81,9 @@ p {
         .translate(0,19vw);
         opacity: 0;
     }
+    @media(max-width:768px) {
+        display: none;
+    }
 }
 
 @keyframes buttons {
@@ -392,7 +395,7 @@ p {
         background-image: url("@{bothell}/middle.png");
         .background-cover(100%);
         background-position: center bottom;
-        .translate(0,500px);
+        .translate(0,300px);
     }
     #fore {
         background-image: url("@{bothell}/fore.png");
@@ -429,6 +432,10 @@ p {
         &.text-block .copy {
             padding: 20px 30px 260px;
         }
+        #robot {
+            background-size: 50%;
+            .translate(0,40px) !important;
+        }
     }
 }
 
@@ -441,7 +448,7 @@ p {
         }
     }
     @media(min-width:768px) {
-        background: url("@{bothell}/smoke-top.jpg") repeat-x center top black;
+        background: url("@{bothell}/smoke-top.jpg") no-repeat center top black;
         padding-top: 400px;
         padding-bottom: 200px;
         .bottom-smoke {
@@ -647,7 +654,7 @@ p {
         background: url("@{bothell}/trees.jpg") no-repeat center bottom black;
         .background-cover(100%);
         &.text-block .copy {
-            padding: 220px 30px 60px;
+            padding: 60px 30px 60px;
         }
     }
 }

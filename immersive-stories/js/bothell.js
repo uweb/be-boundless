@@ -31,15 +31,16 @@ $(function(){
 
   var parallaxed = new TimelineMax ()
         .add([
-          TweenMax.to('#back', 1,   { transform: 'translateY(0)', ease: Power0.easeIn }),
-          TweenMax.to('#middle', 0.75, { transform: 'translateY(0)', ease: Power0.easeIn }),
-          TweenMax.to('#fore', 0.65,   { transform: 'translateY(0)', ease: Power0.easeIn }),
-          TweenMax.to('#robot', 0.2,   { transform: 'translateY(100px)', ease: Power0.easeIn })
-        ]);
+          TweenMax.to('#back', 1,      { transform: 'translateY(0)', ease: Power0.easeIn }),
+          TweenMax.to('#middle', 0.5,  { transform: 'translateY(0)', ease: Power0.easeIn, delay: 0.0 }),
+          TweenMax.to('#fore', 0.3,    { transform: 'translateY(0)', ease: Power0.easeIn, delay: 0.1 }),
+          TweenMax.to('#robot', 0.2,   { transform: 'translateY(100px)', ease: Power0.easeIn, delay: 0.3 })
+        ])
 
   var jason = new ScrollMagic.Scene({
     triggerElement: '#jason',
-    duration: '150%',
+    triggerHook: 0,
+    duration: '100%',
   })
   .setTween(parallaxed)
   .addTo(controllerBothell)
@@ -47,4 +48,5 @@ $(function(){
 
 
 })
+
 
