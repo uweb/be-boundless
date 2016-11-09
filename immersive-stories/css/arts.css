@@ -4,7 +4,7 @@
 
 
 @font-face {
-  font-family: "UniSans-Light";
+  font-family: "Uni sans",sans-serif;
   src: url("fonts/Fontfabric-UniSansLight.otf");
 }
 
@@ -365,7 +365,7 @@ body.after-start.hide-menu #campaign-header{
     height: 40vw;
     color: #4b2e83;
     text-transform: uppercase;
-    font-family: "UniSans-Light";
+    font-family: "Uni sans",sans-serif;
     letter-spacing: 1px;
     font-size: 14px;
     width: 100%;
@@ -405,7 +405,7 @@ body.after-start.hide-menu #campaign-header{
   line-height: 1.428571429;
   color: #4b2e83;
   text-transform: uppercase;
-  font-family: "UniSans-Light";
+  font-family: "Uni sans",sans-serif;
   letter-spacing: 1px;
 }
 #inspiration .top .left .cell:nth-child(2) .attr:before{
@@ -486,7 +486,7 @@ body.after-start.hide-menu #campaign-header{
 }
 #inspiration .top .right .cell:nth-child(4) .sub{
     text-transform: uppercase;
-    font-family: "UniSans-Light";
+    font-family: "Uni sans",sans-serif;
     letter-spacing: 1px;
     font-size: 1.8vw;
     color: white;
@@ -580,7 +580,7 @@ body.after-start.hide-menu #campaign-header{
 }
 #inspiration .bottom .left .sub{
     text-transform: uppercase;
-    font-family: "UniSans-Light";
+    font-family: "Uni sans",sans-serif;
     letter-spacing: 1px;
     font-size: 1.8vw;
     color: white;
@@ -627,7 +627,7 @@ body.after-start.hide-menu #campaign-header{
 #inspiration .bottom .right .cell:nth-child(4) .quote{
     color: white;
     text-transform: uppercase;
-    font-family: "UniSans-Light";
+    font-family: "Uni sans",sans-serif;
     letter-spacing: 1px;
     font-size: 1.2vw;
     height: 100%;
@@ -672,7 +672,7 @@ body.after-start.hide-menu #campaign-header{
   line-height: 1.428571429;
   color: #4b2e83;
   text-transform: uppercase;
-  font-family: "UniSans-Light";
+  font-family: "Uni sans",sans-serif;
   letter-spacing: 1px;
 }
 #inspiration .bottom .right .cell:nth-child(4) .attr:before{
@@ -726,7 +726,7 @@ body.after-start.hide-menu #campaign-header{
   color: white;
   font-size: 14vw;
   opacity: .2;
-  font-family: "UniSans-Light";
+  font-family: "Uni sans",sans-serif;
   text-transform: uppercase;
   letter-spacing: .02em;
 }
@@ -754,7 +754,7 @@ body.after-start.hide-menu #campaign-header{
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 20;
-    font-family: "UniSans-Light";
+    font-family: "Uni sans",sans-serif;
     letter-spacing: .01em;
     text-transform: uppercase;
 }
@@ -810,7 +810,7 @@ body.after-start.hide-menu #campaign-header{
 #copy-one .person{
     color: #4b2e83;
     text-transform: uppercase;
-    font-family: "UniSans-Light";
+    font-family: "Uni sans",sans-serif;
     letter-spacing: 1px;
     font-size: 16px;
     line-height: 1;
@@ -859,14 +859,14 @@ body.after-start.hide-menu #campaign-header{
     padding-top: 45px;
     background: white;
     text-transform: uppercase;
-    font-family: "UniSans-Light";
+    font-family: "Uni sans",sans-serif;
     letter-spacing: .01em;
     font-size: 26px;
     line-height: 1.5;
 }
 #scroll-one .pullperson{
     text-transform: uppercase;
-    font-family: "UniSans-Light";
+    font-family: "Uni sans",sans-serif;
     letter-spacing: 1px;
     font-size: 12px;
     margin-left: 40%;
@@ -993,7 +993,7 @@ body.after-start.hide-menu #campaign-header{
 #copy-two .person{
   color: #4b2e83;
   text-transform: uppercase;
-  font-family: "UniSans-Light";
+  font-family: "Uni sans",sans-serif;
   letter-spacing: 1px;
   font-size: 16px;
   margin-left: 60%;
@@ -1107,7 +1107,7 @@ body.after-start.hide-menu #campaign-header{
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     font-size: 8vw;
-    font-family: "UniSans-Light";
+    font-family: "Uni sans",sans-serif;
     z-index: 20;
     text-transform: uppercase;
     letter-spacing: .01em;
@@ -1124,7 +1124,7 @@ body.after-start.hide-menu #campaign-header{
     left: 50%;
     transform: translateX(-50%) translateY(-50%) translateY(20vw);
     font-size: 2.4vw;
-    font-family: "UniSans-Light";
+    font-family: "Uni sans",sans-serif;
     z-index: 20;
     text-transform: uppercase;
     letter-spacing: .01em;
@@ -1163,7 +1163,7 @@ body.after-start.hide-menu #campaign-header{
     color: #b7a57a;
     margin: 30px;
     text-transform: uppercase;
-    font-family: "UniSans-Light";
+    font-family: "Uni sans",sans-serif;
     letter-spacing: .01em;
     line-height: 1.6;
     margin-bottom: 15px;
@@ -1264,7 +1264,7 @@ small{
     padding: 30px 30px;
     color: #4b2e83;
     text-transform: uppercase;
-    font-family: "UniSans-Light";
+    font-family: "Uni sans",sans-serif;
     letter-spacing: 1px;
     font-size: 15px;
     margin-right: 60px;
@@ -1599,7 +1599,7 @@ small{
 #ispossible .block{
     display: inline-block;
     font-size: 8vw;
-    font-family: "UniSans-Light";
+    font-family: "Uni sans",sans-serif;
     z-index: 20;
     text-transform: uppercase;
     letter-spacing: .01em;
@@ -1617,7 +1617,7 @@ small{
     left: 50%;
     transform: translateX(-50%) translateY(-50%) translateY(16vw);
     font-size: 2.4vw;
-    font-family: "UniSans-Light";
+    font-family: "Uni sans",sans-serif;
     z-index: 20;
     text-transform: uppercase;
     letter-spacing: .01em;
@@ -1633,7 +1633,7 @@ small{
     transform: translateX(-50%) translateY(50%) translateY(-14vw);
     z-index: 1;
     font-size: 2.4vw;
-    font-family: "UniSans-Light";
+    font-family: "Uni sans",sans-serif;
     z-index: 20;
     text-transform: uppercase;
     letter-spacing: .01em;
@@ -1658,7 +1658,7 @@ small{
 }
 #scroll-two .pullperson{
     text-transform: uppercase;
-    font-family: "UniSans-Light";
+    font-family: "Uni sans",sans-serif;
     letter-spacing: 1px;
     font-size: 12px;
     margin-left: 40%;
