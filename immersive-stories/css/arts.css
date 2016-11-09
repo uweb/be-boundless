@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 .dropdown-arrow-inverse{border-bottom-color:#4b2e83 !important;border-top-color:#4b2e83 !important}div.boundless-button{display:inline-block;border-left:none !important;overflow:hidden;padding:1px 15px 0 0;margin-top:10px;-webkit-transition:all .1s ease-in;transition:all .1s ease-in;cursor:pointer;position:relative}div.boundless-button:after{content:"";left:0;width:3px;bottom:0;top:2px;background:#4b2e83;position:absolute}div.boundless-button.dark span{border:4px solid #4b2e83;background:white}div.boundless-button.dark span a{color:#4b2e83}div.boundless-button.dark span a:after{background-position:-300px 9px}div.boundless-button.dark.sm span{border:3px solid #4b2e83}div.boundless-button.sm span{border:3px solid #FFF}div.boundless-button.sm a{padding:6px 36px 5px 54px}div.boundless-button:hover span{border-color:#b7a57a}div.boundless-button:hover span a{color:#b7a57a}div.boundless-button.give{-webkit-transform:translate(0, 0);-ms-transform:translate(0, 0);transform:translate(0, 0);margin-bottom:40px}div.boundless-button.give span{background-color:white}div.boundless-button.give span a{padding-right:40px;color:white}div.boundless-button.give span a:hover,div.boundless-button.give span a:active,div.boundless-button.give span a:focus{color:#4b2e83}div.boundless-button.give span a:hover:before,div.boundless-button.give span a:active:before,div.boundless-button.give span a:focus:before{width:0}div.boundless-button.give span a:hover:after,div.boundless-button.give span a:active:after,div.boundless-button.give span a:focus:after{right:15px}div.boundless-button.give span a:after{-webkit-transition:all .3s ease-in;transition:all .3s ease-in;right:7px}div.boundless-button.give span a:before{-webkit-transition:all .3s ease-in;transition:all .3s ease-in;content:"";width:120%;height:100%;background:#b7a57a;position:absolute;top:0;z-index:-1;-webkit-transform:skew(-15deg, 0);-ms-transform:skewX(-15deg) skewY(0);transform:skew(-15deg, 0);right:25px}div.boundless-button span{border:4px solid #FFF;display:block;-webkit-transform:skew(-15deg, 0);-ms-transform:skewX(-15deg) skewY(0);transform:skew(-15deg, 0);overflow:visible;margin-left:-40px;-webkit-transition:all .1s ease-in;transition:all .1s ease-in}div.boundless-button span a{padding:10px 40px 10px 60px;font-weight:900;font-size:16px;font-family:"Encode Sans Compressed",sans-serif;text-transform:uppercase;color:#FFF;-webkit-transform:skew(15deg, 0);-ms-transform:skewX(15deg) skewY(0);transform:skew(15deg, 0);display:inline-block;text-shadow:none;-webkit-transition:all .1s ease-in;transition:all .1s ease-in}div.boundless-button span a:after{content:"";background:url("../../immersive-stories/img/sprite.svg") no-repeat -288px 9px;display:block;position:absolute;right:15px;top:50%;width:18px;height:30px;margin-top:-16px}
 
 
 
 
 @font-face {
-  font-family: "Uni sans",sans-serif;
+  font-family: "UniSans-Light";
   src: url("fonts/Fontfabric-UniSansLight.otf");
 }
 
@@ -18,6 +17,7 @@ main{
 }
 *::--webkit-media-controls-play-button {
   display: none!important;
+  -webkit-appearance: none;
   -webkit-appearance: none;
 }
 *::-webkit-media-controls-start-playback-button {
@@ -365,7 +365,7 @@ body.after-start.hide-menu #campaign-header{
     height: 40vw;
     color: #4b2e83;
     text-transform: uppercase;
-    font-family: "Uni sans",sans-serif;
+    font-family: "UniSans-Light";
     letter-spacing: 1px;
     font-size: 14px;
     width: 100%;
@@ -405,7 +405,7 @@ body.after-start.hide-menu #campaign-header{
   line-height: 1.428571429;
   color: #4b2e83;
   text-transform: uppercase;
-  font-family: "Uni sans",sans-serif;
+  font-family: "UniSans-Light";
   letter-spacing: 1px;
 }
 #inspiration .top .left .cell:nth-child(2) .attr:before{
@@ -486,7 +486,7 @@ body.after-start.hide-menu #campaign-header{
 }
 #inspiration .top .right .cell:nth-child(4) .sub{
     text-transform: uppercase;
-    font-family: "Uni sans",sans-serif;
+    font-family: "UniSans-Light";
     letter-spacing: 1px;
     font-size: 1.8vw;
     color: white;
@@ -580,7 +580,7 @@ body.after-start.hide-menu #campaign-header{
 }
 #inspiration .bottom .left .sub{
     text-transform: uppercase;
-    font-family: "Uni sans",sans-serif;
+    font-family: "UniSans-Light";
     letter-spacing: 1px;
     font-size: 1.8vw;
     color: white;
@@ -627,7 +627,7 @@ body.after-start.hide-menu #campaign-header{
 #inspiration .bottom .right .cell:nth-child(4) .quote{
     color: white;
     text-transform: uppercase;
-    font-family: "Uni sans",sans-serif;
+    font-family: "UniSans-Light";
     letter-spacing: 1px;
     font-size: 1.2vw;
     height: 100%;
@@ -672,7 +672,7 @@ body.after-start.hide-menu #campaign-header{
   line-height: 1.428571429;
   color: #4b2e83;
   text-transform: uppercase;
-  font-family: "Uni sans",sans-serif;
+  font-family: "UniSans-Light";
   letter-spacing: 1px;
 }
 #inspiration .bottom .right .cell:nth-child(4) .attr:before{
@@ -726,7 +726,7 @@ body.after-start.hide-menu #campaign-header{
   color: white;
   font-size: 14vw;
   opacity: .2;
-  font-family: "Uni sans",sans-serif;
+  font-family: "UniSans-Light";
   text-transform: uppercase;
   letter-spacing: .02em;
 }
@@ -754,7 +754,7 @@ body.after-start.hide-menu #campaign-header{
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 20;
-    font-family: "Uni sans",sans-serif;
+    font-family: "UniSans-Light";
     letter-spacing: .01em;
     text-transform: uppercase;
 }
@@ -810,7 +810,7 @@ body.after-start.hide-menu #campaign-header{
 #copy-one .person{
     color: #4b2e83;
     text-transform: uppercase;
-    font-family: "Uni sans",sans-serif;
+    font-family: "UniSans-Light";
     letter-spacing: 1px;
     font-size: 16px;
     line-height: 1;
@@ -859,14 +859,14 @@ body.after-start.hide-menu #campaign-header{
     padding-top: 45px;
     background: white;
     text-transform: uppercase;
-    font-family: "Uni sans",sans-serif;
+    font-family: "UniSans-Light";
     letter-spacing: .01em;
     font-size: 26px;
     line-height: 1.5;
 }
 #scroll-one .pullperson{
     text-transform: uppercase;
-    font-family: "Uni sans",sans-serif;
+    font-family: "UniSans-Light";
     letter-spacing: 1px;
     font-size: 12px;
     margin-left: 40%;
@@ -993,7 +993,7 @@ body.after-start.hide-menu #campaign-header{
 #copy-two .person{
   color: #4b2e83;
   text-transform: uppercase;
-  font-family: "Uni sans",sans-serif;
+  font-family: "UniSans-Light";
   letter-spacing: 1px;
   font-size: 16px;
   margin-left: 60%;
@@ -1107,7 +1107,7 @@ body.after-start.hide-menu #campaign-header{
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     font-size: 8vw;
-    font-family: "Uni sans",sans-serif;
+    font-family: "UniSans-Light";
     z-index: 20;
     text-transform: uppercase;
     letter-spacing: .01em;
@@ -1124,7 +1124,7 @@ body.after-start.hide-menu #campaign-header{
     left: 50%;
     transform: translateX(-50%) translateY(-50%) translateY(20vw);
     font-size: 2.4vw;
-    font-family: "Uni sans",sans-serif;
+    font-family: "UniSans-Light";
     z-index: 20;
     text-transform: uppercase;
     letter-spacing: .01em;
@@ -1163,7 +1163,7 @@ body.after-start.hide-menu #campaign-header{
     color: #b7a57a;
     margin: 30px;
     text-transform: uppercase;
-    font-family: "Uni sans",sans-serif;
+    font-family: "UniSans-Light";
     letter-spacing: .01em;
     line-height: 1.6;
     margin-bottom: 15px;
@@ -1264,7 +1264,7 @@ small{
     padding: 30px 30px;
     color: #4b2e83;
     text-transform: uppercase;
-    font-family: "Uni sans",sans-serif;
+    font-family: "UniSans-Light";
     letter-spacing: 1px;
     font-size: 15px;
     margin-right: 60px;
@@ -1599,7 +1599,7 @@ small{
 #ispossible .block{
     display: inline-block;
     font-size: 8vw;
-    font-family: "Uni sans",sans-serif;
+    font-family: "UniSans-Light";
     z-index: 20;
     text-transform: uppercase;
     letter-spacing: .01em;
@@ -1617,7 +1617,7 @@ small{
     left: 50%;
     transform: translateX(-50%) translateY(-50%) translateY(16vw);
     font-size: 2.4vw;
-    font-family: "Uni sans",sans-serif;
+    font-family: "UniSans-Light";
     z-index: 20;
     text-transform: uppercase;
     letter-spacing: .01em;
@@ -1633,7 +1633,7 @@ small{
     transform: translateX(-50%) translateY(50%) translateY(-14vw);
     z-index: 1;
     font-size: 2.4vw;
-    font-family: "Uni sans",sans-serif;
+    font-family: "UniSans-Light";
     z-index: 20;
     text-transform: uppercase;
     letter-spacing: .01em;
@@ -1658,7 +1658,7 @@ small{
 }
 #scroll-two .pullperson{
     text-transform: uppercase;
-    font-family: "Uni sans",sans-serif;
+    font-family: "UniSans-Light";
     letter-spacing: 1px;
     font-size: 12px;
     margin-left: 40%;
@@ -2207,6 +2207,3 @@ small{
     display: none;
   }
 }
-=======
-.dropdown-arrow-inverse{border-bottom-color:#4b2e83 !important;border-top-color:#4b2e83 !important}div.boundless-button{display:inline-block;border-left:none !important;overflow:hidden;padding:1px 15px 0 0;margin-top:10px;-webkit-transition:all .1s ease-in;transition:all .1s ease-in;cursor:pointer;position:relative}div.boundless-button:after{content:"";left:0;width:3px;bottom:0;top:2px;background:#4b2e83;position:absolute}div.boundless-button.dark span{border:4px solid #4b2e83;background:white}div.boundless-button.dark span a{color:#4b2e83}div.boundless-button.dark span a:after{background-position:-300px 9px}div.boundless-button.dark.sm span{border:3px solid #4b2e83}div.boundless-button.sm span{border:3px solid #fff}div.boundless-button.sm a{padding:6px 36px 5px 54px}div.boundless-button:hover span{border-color:#b7a57a}div.boundless-button:hover span a{color:#b7a57a}div.boundless-button.give{-webkit-transform:translate(0, 0);-ms-transform:translate(0, 0);transform:translate(0, 0);margin-bottom:40px}div.boundless-button.give span{background-color:white}div.boundless-button.give span a{padding-right:40px;color:white}div.boundless-button.give span a:hover,div.boundless-button.give span a:active,div.boundless-button.give span a:focus{color:#4b2e83}div.boundless-button.give span a:hover:before,div.boundless-button.give span a:active:before,div.boundless-button.give span a:focus:before{width:0}div.boundless-button.give span a:hover:after,div.boundless-button.give span a:active:after,div.boundless-button.give span a:focus:after{right:15px}div.boundless-button.give span a:after{-webkit-transition:all .3s ease-in;transition:all .3s ease-in;right:7px}div.boundless-button.give span a:before{-webkit-transition:all .3s ease-in;transition:all .3s ease-in;content:"";width:120%;height:100%;background:#b7a57a;position:absolute;top:0;z-index:-1;-webkit-transform:skew(-15deg, 0);-ms-transform:skewX(-15deg) skewY(0);transform:skew(-15deg, 0);right:25px}div.boundless-button span{border:4px solid #fff;display:block;-webkit-transform:skew(-15deg, 0);-ms-transform:skewX(-15deg) skewY(0);transform:skew(-15deg, 0);overflow:visible;margin-left:-40px;-webkit-transition:all .1s ease-in;transition:all .1s ease-in}div.boundless-button span a{padding:10px 40px 10px 60px;font-weight:900;font-size:16px;font-family:"Encode Sans Compressed",sans-serif;text-transform:uppercase;color:#fff;-webkit-transform:skew(15deg, 0);-ms-transform:skewX(15deg) skewY(0);transform:skew(15deg, 0);display:inline-block;text-shadow:none;-webkit-transition:all .1s ease-in;transition:all .1s ease-in}div.boundless-button span a:after{content:"";background:url("../../immersive-stories/img/sprite.svg") no-repeat -288px 9px;display:block;position:absolute;right:15px;top:50%;width:18px;height:30px;margin-top:-16px}
->>>>>>> 13660cba8c982371eb116d188793f63495978851
