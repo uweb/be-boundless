@@ -400,7 +400,7 @@
                             <p>Collin Brampton, BFA, 3D4M: ceramics + sculpture + glass ‘16</p>
                         </section>
                         <section class="content">
-                            <img alt="Wire sculpture on floor"> src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-05.jpg' ?>" />
+                            <img alt="Wire sculpture on floor" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-05.jpg' ?>" />
                         </section>
                     </section>
                 </div>
