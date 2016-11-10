@@ -11,10 +11,10 @@
 main{
   overflow-x: hidden;
 }
-*::-webkit-media-controls-panel {
-  display: none!important;
-  -webkit-appearance: none;
-}
+// *::-webkit-media-controls-panel {
+//   display: none!important;
+//   -webkit-appearance: none;
+// }
 *::--webkit-media-controls-play-button {
   display: none!important;
   -webkit-appearance: none;
@@ -48,6 +48,27 @@ body.after-start.hide-menu #campaign-header{
     transform: translateY(-100px)
 }
 
+.pause-enabled {
+	position: relative;
+}
+
+.pause.paused {
+	background-position: 0 -32px;
+}
+.pause {
+	position: absolute;
+	background-color: transparent;
+	border: none;
+	width: 33px;
+	height: 31px;
+	top: 25px;
+	right: 20px;
+	text-indent: -9999px;
+	overflow-x: hidden;
+	background-image: url('arts/pause.svg');
+	background-repeat: no-repeat;
+	z-index: 10;
+}
 
 .intro, .lead{
     margin-bottom: 0px;
@@ -83,7 +104,9 @@ body.after-start.hide-menu #campaign-header{
     left: 50%;
     transform: translateX(-50%);
 }
-#intro .scrollit h5{
+#intro .scrollit p {
+	font-family: "Encode Sans Compressed",sans-serif;
+	font-weight: 800;
     background: #4b2e83;
     color: white;
     padding: 15px;
@@ -227,6 +250,12 @@ body.after-start.hide-menu #campaign-header{
 #unexpected .object .diamond:hover img{
     opacity: 1!important;
 }
+#unexpected .object .diamond:active img{
+    opacity: 1!important;
+}
+#unexpected .object .diamond:focus img{
+    opacity: 1!important;
+}
 #unexpected .expect-the{
     position: absolute;
     top: 50%;
@@ -367,7 +396,7 @@ body.after-start.hide-menu #campaign-header{
     text-transform: uppercase;
     font-family: "Uni sans",sans-serif;
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 17px;
     width: 100%;
     margin-left: 30px;
 }
@@ -394,14 +423,14 @@ body.after-start.hide-menu #campaign-header{
     transform: translateX(15px) translateY(10px) rotate(180deg);
 }
 #inspiration .top .left .cell:nth-child(2) .attr .name{
-    font-size: 12px;
+    font-size: 16px;
 }
 #inspiration .top .left .cell:nth-child(2) .attr{
   position: absolute;
   bottom: 5vw;
   left: 60px;
   z-index: 20;
-  font-size: 9px;
+  font-size: 12px;
   line-height: 1.428571429;
   color: #4b2e83;
   text-transform: uppercase;
@@ -661,14 +690,14 @@ body.after-start.hide-menu #campaign-header{
     transform: translateX(15px) translateY(1px) rotate(180deg);
 }
 #inspiration .bottom .right .cell:nth-child(4) .attr .name{
-    font-size: 12px;
+    font-size: 16px;
 }
 #inspiration .bottom .right .cell:nth-child(4) .attr{
   position: absolute;
   bottom: 8%;
   left: 60px;
   z-index: 20;
-  font-size: 9px;
+  font-size: 12px;
   line-height: 1.428571429;
   color: #4b2e83;
   text-transform: uppercase;
@@ -730,13 +759,15 @@ body.after-start.hide-menu #campaign-header{
   text-transform: uppercase;
   letter-spacing: .02em;
 }
-#slideplay .ring{
+#slideplay .ring {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 20;
     height: 70%;
+    background: none;
+    border:none;
 }
 .purp{
   color: #4b2e83;
@@ -831,7 +862,13 @@ body.after-start.hide-menu #campaign-header{
     height: 1px;
     background: #4b2e83;
 }
-#copy-one h2:before, #copy-two h2:before{
+blockquote {
+    margin: 0;
+	margin-top: 29px;
+    border-left: none;
+    padding: 0;
+}
+#copy-one blockquote:before, #copy-two blockquote:before{
     content: '';
     background-image: url('arts/quote_purple.svg');
     background-size: contain;
@@ -842,7 +879,7 @@ body.after-start.hide-menu #campaign-header{
     position: absolute;
     transform: translateY(-45px);
 }
-#copy-one h2:after, #copy-two h2:after{
+#copy-one blockquote:after, #copy-two blockquote:after{
     content: '';
     background-image: url('arts/quote_purple.svg');
     background-size: contain;
@@ -853,7 +890,7 @@ body.after-start.hide-menu #campaign-header{
     position: absolute;
     transform: translateX(15px) translateY(15px) rotate(180deg);
 }
-#copy-one h2, #copy-two h2{
+#copy-one blockquote, #copy-two blockquote{
     color: #b7a57a;
     padding: 30px;
     padding-top: 45px;
@@ -891,7 +928,7 @@ body.after-start.hide-menu #campaign-header{
     height: 1px;
     background: #4b2e83;
 }
-#copy-one h2 .callout, #copy-two h2 .callout{
+#copy-one blockquote .callout, #copy-two blockquote .callout{
     color: #4b2e83;
 }
 #copy-one h3, #copy-two h3{
@@ -906,7 +943,7 @@ body.after-start.hide-menu #campaign-header{
 #copy-one p, #copy-one h3{
     margin-right: 30px;
 }
-#copy-one h2{
+#copy-one blockquote{
     margin-right: 0px;
     padding-right: 0px;
     margin-bottom: 0px;
@@ -1018,7 +1055,7 @@ body.after-start.hide-menu #campaign-header{
 #copy-two p, #copy-two h3{
     margin-left: 30px;
 }
-#copy-two h2{
+#copy-two blockquote{
     padding-left: 0px;
     transform: translateX(60px);
     position: relative;
@@ -1172,10 +1209,10 @@ body.after-start.hide-menu #campaign-header{
 .pull strong{
   color: #4b2e83;
 }
-small{
-  font-size: 11px;
-  line-height: 1;
-}
+// small{
+//   font-size: 11px;
+//   line-height: 1;
+// }
 
 
 
@@ -1649,11 +1686,15 @@ small{
 .panel{
   overflow: hidden;
 }
-
-#scroll-two video, #scroll-two img{
+.sm_name {
+	font-size: 13px;
+	margin-top: 25px;
+	font-weight: bold;
+}
+#scroll-two video, #scroll-two img {
     display: none;
 }
-#scroll-two.active video, #scroll-two.active img{
+#scroll-two.active video, #scroll-two.active img {
     display: block;
 }
 #scroll-two .pullperson{
@@ -1987,7 +2028,9 @@ small{
     transform: translate3d(0,-2vw,0);
 }
 
-
+#slideplay.frame {
+	height: 42vw;
+}
 .frame{
     height: 600px;
     height: 100vh;
@@ -2076,7 +2119,7 @@ small{
   #copy-one .left, #copy-one .right{
     width: 100%;
   }
-  #copy-one h2, #copy-two h2, .pull {
+  #copy-one blockquote, #copy-two blockquote, .pull {
     color: #b7a57a;
     padding: 0px;
     font-size: 18px;
