@@ -68,7 +68,7 @@
                 <div class="plus-2"></div>
             </div>
             <div class="diamond">
-                <img alt="Blurry sculpture"> src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/02-01.jpg' ?>" />
+                <img alt="Blurry sculpture" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/02-01.jpg' ?>" />
             </div>
         </div>
         <div class="object">
