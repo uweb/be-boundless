@@ -57,6 +57,50 @@ p {
   }
 }
 
+.drummer {
+    width: 62px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+    span {
+        display: none;
+    }
+    &:after {
+        content: 'Watch Jayna play';
+        position: absolute;
+        font-weight: bold;
+        top: 74px;
+        left: -40px;
+        font-size: 13px;
+        width: 140px;
+        text-align: center;
+        color: @darkgold;
+        opacity: 0;
+        background-color: white;
+        text-transform: uppercase;
+        .transition(all .1s linear);
+    }
+    g {
+        .transition(all .1s linear);
+    }
+    &:hover,
+    &:active,
+    &:focus {
+        &:after {
+            opacity: 1;
+        }
+        path {
+            fill: @darkgold;
+        }
+        g {
+            transform: rotate(5deg) translate(0,-13px);
+            -moz-transform: rotate(5deg) translate(0,-13px);
+            -webkit-transform: rotate(5deg) translate(0,-13px);
+        }
+    }
+}
+
 .intro {
     background-position: center top;
     .background-cover(cover);

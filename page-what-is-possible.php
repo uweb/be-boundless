@@ -169,10 +169,10 @@
                 <section class="left">
                     <section class="cell">
                         <div class="content pause-enabled">
-                            <video muted="" loop="" autoplay="">
+                            <video muted="" loop="" autoplay="" controls>
                                 <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/amie_hands.mp4' ?>">
                             </video>
-                            <button class="pause">Pause</button>
+                            <button style="right: 5px;" class="pause">Pause</button>
 
                         </div>
                     </section>
@@ -260,7 +260,7 @@
 
                     <section class="cell">
                         <blockquote class="text quote">
-                            The name &mdash;<br>Portfolio of<br>Possibilities &mdash;<br>suggests that<br>there's a number<br>of ways to go.<br><strong>The path is<br>not always clear.<br>It's not<br>always straight</strong>.
+                            The name &mdash; Portfolio of Possibilities &mdash; suggests that there's a number of ways to go. <strong>The path is not always clear. It's not always straight</strong>.
                         </blockquote>
                         <div class="attr"><span class="name">Mark Zirpel</span><br>Associate Professor, School of<br>Art + Art History + Design</div>
                         <div class="content">
@@ -386,18 +386,15 @@
                         </section>
                     </section>
                     <section class="cell">
-                        <section class="content">
+                        <section class="content mute-enabled tight">
                           <div class="vidwrap">
                               <video autoplay muted controls poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/students.jpg' ?>">
                                   <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/STUDENTS.webm' ?>">
                                   <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/STUDENTS.mp4' ?>">
-                              </video>
+                              </video> 
+                              <button class="pause">Pause</button>
+                              <button class="unmute">unmute</button>
                           </div>
-                        </section>
-                    </section>
-                    <section class="cell">
-                        <section class="content">
-                            <img alt="Artists working on wire sculpture" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-04.jpg' ?>" />
                         </section>
                     </section>
                     <section class="cell">
@@ -424,13 +421,8 @@
                     </section>
                     <section class="cell">
                         <section class="content">
-                            <div class="vidwrap">
-                                <video autoplay muted controls poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/teachers.jpg' ?>">
-                                    <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/TEACHING.webm' ?>">
-                                    <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/TEACHING.mp4' ?>">
-                                </video>
-                            </div>
-                          </section>
+                            <img alt="Artist using a form to build sculpture" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-10.jpg' ?>" />
+                        </section>
                     </section>
                     <section class="cell">
                         <section class="content">
@@ -438,9 +430,16 @@
                         </section>
                     </section>
                     <section class="cell">
-                        <section class="content">
-                            <img alt="Artist using a form to build sculpture" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-10.jpg' ?>" />
-                        </section>
+                        <section class="content mute-enabled tight">
+                            <div class="vidwrap">
+                                <video autoplay muted controls poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/teachers.jpg' ?>">
+                                    <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/TEACHING.webm' ?>">
+                                    <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/TEACHING.mp4' ?>">
+                                </video>                                
+                                <button class="pause">Pause</button>
+                                <button class="unmute">unmute</button>
+                            </div>
+                          </section>
                     </section>
                     <section class="cell">
                         <section class="content">
@@ -490,7 +489,7 @@
         </div>
     </section>
 
-    <section id="ispossible" class="frame">
+    <section id="ispossible" class="frame pause-enabled">
         <section class="input">
             DISCOVERY
         </section>
@@ -500,11 +499,11 @@
                 Is Possible
             </section>
         </section>
-<!--        <img src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/08.jpg' ?>" />-->
         <video muted="" loop="" autoplay="">
             <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/BALOON.webm' ?>">
             <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/BALOON.mp4' ?>">
         </video>
+        <button class="pause">Pause</button>
     </section>
 
     <section id="scroll-two" class="frame">
@@ -525,11 +524,12 @@
                         </section>
                     </section>
                     <section class="cell">
-                        <section class="content">
+                        <section class="content pause-enabled tight">
                             <div class="videowrap">
                                 <video muted="" autoplay loop>
                                     <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/tube_knot.mp4' ?>">
                                 </video>
+                                <button class="pause">Pause</button>
                             </div>
                         </section>
                     </section>
@@ -625,7 +625,7 @@
                    <h2 class="headline-gold">INVEST IN INNOVATION</h2>
                    <p>You can empower possibility, drive innovation, and enhance the student experience in the College of Arts & Sciences by contributing to these funds.</p>
                    <div id="immersive-give-iframe"></div>
-                   <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="CANART,AHDDIS,ARTGAL,ASUGSF,ASDISCR" href="#">Give now</a></span></div>
+                   <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="DEDISC,CANART,AHDDIS,ARTGAL,ASUGSF,ASDISCR" href="#">Give now</a></span></div>
                  </div>
                </div>
            </div>

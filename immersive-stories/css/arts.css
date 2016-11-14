@@ -11,6 +11,9 @@
 main{
   overflow-x: hidden;
 }
+
+
+
 // *::-webkit-media-controls-panel {
 //   display: none!important;
 //   -webkit-appearance: none;
@@ -47,28 +50,45 @@ body #campaign-header{
 body.after-start.hide-menu #campaign-header{
     transform: translateY(-100px)
 }
+@media (min-width: 728px) {
+	.pause-enabled,
+	.mute-enabled {
+		position: relative;
+	}
 
-.pause-enabled {
-	position: relative;
+	.pause.paused {
+		background-position: 0 -31px;
+	}
+	.pause,
+	.unmute {
+		opacity: .6;
+		position: absolute;
+		background-color: transparent;
+		border: none;
+		width: 33px;
+		height: 31px;
+		top: 20px;
+		right: 20px;
+		text-indent: -9999px;
+		overflow-x: hidden;
+		background-image: url('arts/pause.svg');
+		background-repeat: no-repeat;
+		z-index: 10;
+	}
+	.unmute {
+
+		right: 55px;
+		background-position: 0 -64px;
+	}
+	.unmute.muted {
+		background-position: 0 -95px;
+	}
+	.tight .pause,
+	.tight .unmute {
+		top: 7px;
+	}
 }
 
-.pause.paused {
-	background-position: 0 -32px;
-}
-.pause {
-	position: absolute;
-	background-color: transparent;
-	border: none;
-	width: 33px;
-	height: 31px;
-	top: 25px;
-	right: 20px;
-	text-indent: -9999px;
-	overflow-x: hidden;
-	background-image: url('arts/pause.svg');
-	background-repeat: no-repeat;
-	z-index: 10;
-}
 
 .intro, .lead{
     margin-bottom: 0px;
@@ -660,7 +680,7 @@ body.after-start.hide-menu #campaign-header{
     letter-spacing: 1px;
     font-size: 1.2vw;
     height: 100%;
-    width: 100%;
+    width: 50%;
     height: calc(100% - 1.6vw);
     box-sizing: border-box;
     padding-left: 3vw;
@@ -1246,7 +1266,7 @@ blockquote {
 }
 #scroll-one .scroll-container .inner{
     height: 100%;
-    width: 3300px;
+    width: 3480px;
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
@@ -1256,7 +1276,7 @@ blockquote {
 }
 #scroll-one .scroll-container .inner .panel:nth-child(1){
     height: 100%;
-    width: 720px;
+    width: 900px;
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
@@ -1265,6 +1285,7 @@ blockquote {
     overflow: hidden;
 }
 #scroll-one .scroll-container .inner .panel:nth-child(1) .cell{
+	padding: 0 4vw 0 16vw;
     max-height: 100%;
     overflow: hidden;
 }
@@ -1345,7 +1366,7 @@ blockquote {
 }
 #scroll-one .scroll-container .inner .panel:nth-child(2) .cell:nth-child(3){
     height: 33.33%;
-    width: 50%;
+    width: 100%;
     overflow: hidden;
 }
 #scroll-one .scroll-container .inner .panel:nth-child(2) .cell:nth-child(3) .content{
@@ -1362,40 +1383,40 @@ blockquote {
     width: 100%;
     object-fit: cover;
 }
+// #scroll-one .scroll-container .inner .panel:nth-child(2) .cell:nth-child(4){
+//     height: 33.33%;
+//     width: 50%;
+//     overflow: hidden;
+// }
+// #scroll-one .scroll-container .inner .panel:nth-child(2) .cell:nth-child(4) .content{
+//     padding-right: 15px;
+//     padding-bottom: 15px;
+// }
 #scroll-one .scroll-container .inner .panel:nth-child(2) .cell:nth-child(4){
-    height: 33.33%;
-    width: 50%;
-    overflow: hidden;
-}
-#scroll-one .scroll-container .inner .panel:nth-child(2) .cell:nth-child(4) .content{
-    padding-right: 15px;
-    padding-bottom: 15px;
-}
-#scroll-one .scroll-container .inner .panel:nth-child(2) .cell:nth-child(5){
     height: 33.33%;
     width: 100%;
     overflow: hidden;
     position: relative;
 }
-#scroll-one .scroll-container .inner .panel:nth-child(2) .cell:nth-child(5) .content{
+#scroll-one .scroll-container .inner .panel:nth-child(2) .cell:nth-child(4) .content{
     padding-right: 15px;
     padding-bottom: 15px;
 }
-#scroll-one .scroll-container .inner .panel:nth-child(2) .cell:nth-child(5) .text{
+#scroll-one .scroll-container .inner .panel:nth-child(2) .cell:nth-child(4) .text{
     position: absolute;
     top: 0px;
     left: 0px;
     color: white;
     z-index: 10;
 }
-#scroll-one .scroll-container .inner .panel:nth-child(2) .cell:nth-child(5) .text p{
-    font-size: 9px;
+#scroll-one .scroll-container .inner .panel:nth-child(2) .cell:nth-child(4) .text p{
+    font-size: 1.2vw;
     color: white;
     padding: 15px;
     margin: 0px;
 }
-#scroll-one .scroll-container .inner .panel:nth-child(2) .cell:nth-child(5) .text h3{
-    font-size: 18px;
+#scroll-one .scroll-container .inner .panel:nth-child(2) .cell:nth-child(4) .text h3{
+    font-size: 1.4vw;
     margin: 0px;
     margin: 15px;
     margin-top: 30px;
@@ -1404,7 +1425,7 @@ blockquote {
     letter-spacing: .01em;
     position: relative;;
 }
-#scroll-one .scroll-container .inner .panel:nth-child(2) .cell:nth-child(5) .text h3:before{
+#scroll-one .scroll-container .inner .panel:nth-child(2) .cell:nth-child(4) .text h3:before{
     content: '';
     background-image: url('arts/quote_gold.svg');
     background-size: contain;
@@ -1415,7 +1436,7 @@ blockquote {
     position: absolute;
     transform: translateX(0) translateY(-15px);
 }
-#scroll-one .scroll-container .inner .panel:nth-child(2) .cell:nth-child(5) .text h3:after{
+#scroll-one .scroll-container .inner .panel:nth-child(2) .cell:nth-child(4) .text h3:after{
     content: '';
     background-image: url('arts/quote_gold.svg');
     background-size: contain;
@@ -1462,21 +1483,21 @@ blockquote {
   margin: 15px;
   line-height: 1.2;
 }
-#scroll-one .scroll-container .inner .panel:nth-child(3) .cell:nth-child(3){
+#scroll-one .scroll-container .inner .panel:nth-child(3) .cell:nth-child(5){
     height: 33.33%;
     width: 67%;
     overflow: hidden;
 }
-#scroll-one .scroll-container .inner .panel:nth-child(3) .cell:nth-child(3) .content{
+#scroll-one .scroll-container .inner .panel:nth-child(3) .cell:nth-child(5) .content{
     padding-right: 15px;
     padding-bottom: 15px;
 }
-#scroll-one .scroll-container .inner .panel:nth-child(3) .cell:nth-child(3) .vidwrap{
+#scroll-one .scroll-container .inner .panel:nth-child(3) .cell:nth-child(5) .vidwrap{
     height: 100%;
     width: 100%;
     overflow: hidden;
 }
-#scroll-one .scroll-container .inner .panel:nth-child(3) .cell:nth-child(3) video{
+#scroll-one .scroll-container .inner .panel:nth-child(3) .cell:nth-child(5) video{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -1490,12 +1511,12 @@ blockquote {
     padding-right: 15px;
     padding-bottom: 15px;
 }
-#scroll-one .scroll-container .inner .panel:nth-child(3) .cell:nth-child(5){
+#scroll-one .scroll-container .inner .panel:nth-child(3) .cell:nth-child(3){
     height: 33.33%;
     width: 67%;
     overflow: hidden;
 }
-#scroll-one .scroll-container .inner .panel:nth-child(3) .cell:nth-child(5) .content{
+#scroll-one .scroll-container .inner .panel:nth-child(3) .cell:nth-child(3) .content{
     padding-right: 15px;
     padding-bottom: 15px;
 }
@@ -1697,6 +1718,9 @@ blockquote {
 #scroll-two.active video, #scroll-two.active img {
     display: block;
 }
+#scroll-two .scroll-container .inner .panel:nth-child(1) .cell {
+	padding: 0 0 0 15vw;
+}
 #scroll-two .pullperson{
     text-transform: uppercase;
     font-family: "Uni sans",sans-serif;
@@ -1742,14 +1766,14 @@ blockquote {
 }
 #scroll-two .scroll-container .inner{
     height: 100%;
-    width: 3000px;
+    width: 3180px;
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
 }
 #scroll-two .scroll-container .inner .panel:nth-child(1){
     height: 100%;
-    width: 720px;
+    width: 900px;
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
@@ -2101,6 +2125,12 @@ blockquote {
 }
 
 @media (max-width: 720px) {
+
+	small, .small {
+	    font-size: 10px;
+	    line-height: 1.5;
+	}
+
   #inspiration .top{
     display: block;
   }
@@ -2172,6 +2202,10 @@ blockquote {
   }
   #scroll-one .scroll-container .inner .panel{
     width: 100vw!important;
+  }
+  #scroll-one .scroll-container .inner .panel:nth-child(1) .cell,
+  #scroll-two .scroll-container .inner .panel:nth-child(1) .cell {
+      padding: 0;
   }
   #scroll-one .scroll-container .inner{
     width: 500vw;
