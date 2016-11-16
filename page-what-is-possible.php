@@ -17,15 +17,19 @@
 <main id="main_content">
 
     <section id="intro" class="frame video">
-        <section class="scrollit">
+        <section class="scrollit read-more">
             <p>Scroll Down</p>
+            <div class="mouse">
+              <div class="scroll"></div>
+            </div>
+            
         </section>
-        <video muted="" preload autoplay="">
-            <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/timelapse.webm?v=' . time() ?>">
-            <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/timelapse.mp4?v=' . time() ?>">
+
+        <video muted="" autobuffer="autobuffer" preload="preload">
+           <source  type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/timelapse.webm?v=' . time() ?>">
         </video>
         <section class="text">
-            <div class="one"><h1>What is possible?</h1></div>
+            <div class="one"><h1>What is <span>possible?</span></h1></div>
             <div class="two"><p>In summer of 2016, the tech landscape of South Lake Union became the site of an experiment. Informed by centuries of traditional art making methods, activated by technology, and fueled by a question.</p><p><strong>What is possible when scientific curiosity and artistic mastery <br>are given room to coexist? The answer? Anything</strong>.</p></div>
         </section>
     </section>
@@ -625,7 +629,7 @@
                    <h2 class="headline-gold">INVEST IN INNOVATION</h2>
                    <p>You can empower possibility, drive innovation, and enhance the student experience in the College of Arts & Sciences by contributing to these funds.</p>
                    <div id="immersive-give-iframe"></div>
-                   <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="DEDISC,CANART,AHDDIS,ARTGAL,ASUGSF,ASDISCR" href="#">Give now</a></span></div>
+                   <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="ASDISC,CANART,AHDDIS,ARTGAL,ASUGSF,ASDISCR" href="#">Give now</a></span></div>
                  </div>
                </div>
            </div>

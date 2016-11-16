@@ -14,10 +14,6 @@ main{
 
 
 
-// *::-webkit-media-controls-panel {
-//   display: none!important;
-//   -webkit-appearance: none;
-// }
 *::--webkit-media-controls-play-button {
   display: none!important;
   -webkit-appearance: none;
@@ -43,6 +39,79 @@ main{
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
+
+
+@media (min-width: 767px) {
+  .mouse {
+    position: absolute;
+    width: 22px;
+    height: 42px;
+    bottom: 70px;
+    left: 50%;
+    margin-left: -12px;
+    border-radius: 15px;
+    border: 2px solid white;
+    -webkit-animation: intro 1s;
+    animation: intro 1s;
+  }
+  .scroll {
+    display: block;
+    width: 4px;
+    height: 4px;
+    margin: 6px auto;
+    border-radius: 4px;
+    background: white;
+    -webkit-animation: finger 1.3s infinite;
+    animation: finger 1.3s infinite;
+  }
+  @-webkit-keyframes intro {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(40px);
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  @keyframes intro {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(40px);
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  @-webkit-keyframes finger {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+  }
+  @keyframes finger {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+  }
+}
+
+
+
 
 body #campaign-header{
     transition: transform 240ms;
@@ -108,12 +177,15 @@ body.after-start.hide-menu #campaign-header{
   margin: 0px;
 }
 
-
+#intro {
+	background-color: black;
+}
 #intro video{
     display: none;
 }
 #intro.active video{
     display: block;
+    // opacity: .9;
 }
 #intro .scrollit{
     text-transform: uppercase;
@@ -123,25 +195,26 @@ body.after-start.hide-menu #campaign-header{
     bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 0;
 }
 #intro .scrollit p {
 	font-family: "Encode Sans Compressed",sans-serif;
 	font-weight: 800;
-    background: #4b2e83;
+    // background: #4b2e83;
     color: white;
     padding: 15px;
 }
 #intro .text{
-    position: absolute;
-    bottom: 15%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	width: 100%;
 }
 #intro .text h1, #intro .text p{
     color: white;
-    max-width: 720px;
+    max-width: 880px;
     margin: auto;
     padding: 15px;
     width: 100%;
@@ -149,12 +222,21 @@ body.after-start.hide-menu #campaign-header{
 #intro .text h1{
     display: block;
     text-transform: uppercase;
-    font-size: 64px;
+    font-size: 115px;
+    font-weight: 900;
+    line-height: 100px;
+}
+#intro .text h1 span { 
+	font-family: "Uni sans",sans-serif;
+	display: block;
+	font-weight: 300;
+	font-size: 100px;
 }
 #intro .text p{
     width: 100%;
     padding: 15px;
     margin: auto;
+    text-shadow: 1px 1px 3px rgba(0,0,0,.8);
 }
 
 
