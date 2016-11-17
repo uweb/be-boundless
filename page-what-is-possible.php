@@ -25,7 +25,7 @@
 
         </section>
 
-        <video playsinline muted="" autobuffer="autobuffer" preload="preload" playsinline autoplay>
+        <video playsinline muted="" autobuffer="autobuffer" preload="preload" playsinline autoplay poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/poster-intro.jpg' ?>">
            <source  type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/timelapse.webm?v=' . time() ?>">
            <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/chr.mp4' ?>">
         </video>
@@ -319,7 +319,7 @@
             </section>
             <section class="right">
                 <blockquote>The University of Washington is a place that really supports independent investigation of what faculty members and students find motivating and compelling. For me, <span class="callout">making art is a kind of investigation into what I find most interesting, most necessary to learn more about. The object exists as evidence of the investigation</span>.</blockquote>
-                <div class="person">Mark Zirpel<br><span class="title">Associate Professor,<br>School of Art + Art History + Design” </span></div>
+                <div class="person">Mark Zirpel<br><span class="title">Associate Professor,<br>School of Art + Art History + Design</span></div>
                 <p>The Portfolio of Possibilities embodies what’s unique about being a faculty artist or art student in the College of Arts &amp; Sciences at UW — one of the nation’s top research universities.</p>
                 <p>When McNeel and Zirpel wanted to understand weather patterns for a piece they were creating, they reached out to a colleague in Atmospheric Sciences. When they needed access to precision machining and 3D printing equipment and expertise, they relied on colleagues and students in Mechanical Engineering. From UW Medicine to Applied Math to UW’s CoMotion, McNeel and Zirpel reach across disciplines to infuse their research and creative enterprise with the collective brilliance of the UW.</p>
                 <h3>It’s this culture of collaboration beyond traditional boundaries that infuses our work with almost endless possibility.</h3>
@@ -331,8 +331,9 @@
 
     <section id="bus" class="frame video pause-enabled">
         <video muted="" loop="" autoplay="" playsinline>
-           <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/DEEP_DIVE_MESSAGE_REVEAL_V.3.webmhd.webm' ?>">
             <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/DEEP_DIVE_MESSAGE_REVEAL_V.3.mp4' ?>">
+            <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/DEEP_DIVE_MESSAGE_REVEAL_V.3.webmhd.webm' ?>">
+            
         </video>
         <button class="pause">Pause</button>
     </section>
@@ -373,7 +374,7 @@
                     <section class="cell">
                         <blockquote class="pull">Ultimately I'm interested in teaching because I think, especially in art, it can make a difference. It's a language that can convey meaning that verbal communication can't necessarily convey.</blockquote>
                         <p class="sm_name">Amie McNeil, Associate Professor, School of Art + Art History + Design</p>
-                        <p>When Zirpel and McNeel asked former 3D4M students Collin Bampton and Amy Young to be research assistants on a big project, the two didn’t know quite what they were getting into. But given the opportunity to work alongside such talented and innovative professionals, the answer was an immediate ‘Yes.’</p>
+                        <p>When Zirpel and McNeel asked former 3D4M students Collin Bampton and Tzyy Yi (Amy) Young to be research assistants on a big project, the two didn’t know quite what they were getting into. But given the opportunity to work alongside such talented and innovative professionals, the answer was an immediate ‘Yes.’</p>
                         <p>During the fabrication stage of Portfolio of Possibilities in School of Art + Art History + Design’s Ceramic Metal Arts (CMA) building, Bampton and Young made molds for anvils, welded and fabricated metal parts, and weighed in on design for a couple of the key pieces that would eventually make it to MadArt.</p>
                         <p>But they weren’t the only students that benefitted. Throughout early fabrication, students in classes at the CMA observed Zirpel and McNeel as both teachers and artists — planning, creating, failing, and starting over. They got to see first-hand what it means to be a maker. It’s not always about a clear vision for a final product. It’s about asking meaningful questions and taking bold steps to answer them.</p>
                     </section>
@@ -392,12 +393,12 @@
                     <section class="cell">
                         <section class="content mute-enabled tight">
                           <div class="vidwrap">
-                              <video autoplay muted controls poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/students.jpg' ?>">
+                              <video muted controls poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/students.jpg' ?>">
                                   <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/STUDENTS.webm' ?>">
                                   <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/STUDENTS.mp4' ?>">
                               </video> 
-                              <button class="pause">Pause</button>
-                              <button class="unmute">unmute</button>
+                             <!--  <button class="pause">Pause</button>
+                              <button class="unmute">unmute</button> -->
                           </div>
                         </section>
                     </section>
@@ -436,12 +437,12 @@
                     <section class="cell">
                         <section class="content mute-enabled tight">
                             <div class="vidwrap">
-                                <video autoplay muted controls poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/teachers.jpg' ?>">
+                                <video muted controls poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/teachers.jpg' ?>">
                                     <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/TEACHING.webm' ?>">
                                     <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/TEACHING.mp4' ?>">
                                 </video>                                
-                                <button class="pause">Pause</button>
-                                <button class="unmute">unmute</button>
+                <!--                 <button class="pause">Pause</button>
+                                <button class="unmute">unmute</button> -->
                             </div>
                           </section>
                     </section>
@@ -517,7 +518,7 @@
                     <section class="cell">
                         <h3 class="pull">I think <strong>the scientific process, artistic process, and creative processes are all related to discovery</strong>, they are related to asking questions and then generating answers. So that could happen numerically or in a lab or in the studio. There's a whole sort of developmental process in getting to the bottom of things.</h3>
                         <p class="sm_name">Mark Zirpel, Associate Professor, School of Art + Art History + Design</p>
-                        <p>At a Research 1 University, meaningful research occurs in all disciplines. From the sciences to the arts, faculty are driven by an unending will to understand, to uncover, to make, and to contribute to the world.</p>
+                        <p>At a Research I university, meaningful research occurs in all disciplines. From the sciences to the arts, faculty are driven by an unending will to understand, to uncover, to make, and to contribute to the world.</p>
                         <p>The pieces in the Portfolio of Possibilities evidence the kind of rigorous exploration arts faculty undertake in the process of making. From a complex spinning ring machine built on precise mathematical calculations and informed by tidal fluctuations, to glass forms brought to life by lasers, these works are more than creative, more than imaginative. They are the result of investigation and study — informed by millennia of scientific and artistic knowledge and empowered by a spirit of inquiry.</p>
                     </section>
                 </div>
@@ -566,8 +567,8 @@
                             <img alt="Fabric sculpture" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/11-07.jpg' ?>" />
                             <div class="text">
                               <p><strong>Balloon / Laser</strong></p>
-                              <p>Balloon | Weather balloon, internet, software, motorized blower, fabric. The sculpture inflates every time the International Space Station passes over predetermined locations on earth.</p>
-                              <p>Laser Lure | Blown mirrored glass, water, aluminum and steel, vice, lasers, scientific tripod. Light from the laser reflects off of the water and mirrored glass to create light patterns reminiscent of brain synapses, bone marrow, electrically charged particles from the sun as they enter the earth's atmosphere.</p>
+                              <p><b>Balloon</b> | Weather balloon, internet, software, motorized blower, fabric. The sculpture inflates every time the International Space Station passes over predetermined locations on earth.</p>
+                              <p><b>Laser Lure</b>| Blown mirrored glass, water, aluminum and steel, vice, lasers, scientific tripod. Light from the laser reflects off of the water and mirrored glass to create light patterns reminiscent of brain synapses, bone marrow, electrically charged particles from the sun as they enter the earth's atmosphere.</p>
                             </div>
                         </section>
                     </section>
@@ -616,8 +617,10 @@
     <section id="closing">
         <section class="content">
             <p>In the months since the Portfolio of Possibilities exhibit ended, new sketches and plans cover the walls of the CMA building. Former students Bampton and Young pursue careers as working artists, and new students manipulate glass and metal alongside Zirpel and McNeel.</p>
-            <p>But curiosity continues to spark innovation. Every day faculty and students in the College of Arts &amp; done before. And you can be a part of that. By supporting our students, faculty, and programs, you can join us in expanding what’s possible.</p>
-            <p><small>Photos courtesy Amie McNeil, James Harnois, MadArt Seattle, Collin Bampton, Amy Young.</small></p>
+            <p>But curiosity continues to spark innovation. Every day faculty and students in the College of Arts &amp; Sciences come together to question, explore and push at the edges of what’s been done before. By supporting our students, faculty and programs, you can join us in expanding what’s possible.</p>
+            <p>Learn more about the artwork in the <a href="http://madartseattle.com/exhibits/portfolio-of-possibilities/">Portfolio of Possibilities.</a></p>
+            <hr>
+            <p style="text-align: center"><small>Photos courtesy James Harnois, MadArt Seattle, Amie McNeil, Sam Stubblefield, Collin Bampton, Tzyy Yi (Amy) Young.</small></p>
         </section>
     </section>
 
@@ -627,7 +630,7 @@
                <div class="col-md-10 col-md-offset-1 copy">
                  <div style="text-align: center">
                    <h2 class="headline-gold">INVEST IN INNOVATION</h2>
-                   <p>You can empower possibility, drive innovation, and enhance the student experience in the College of Arts & Sciences by contributing to these funds.</p>
+                   <p>You can empower possibility, drive innovation, and enhance the student experience in the College of Arts &amp; Sciences by contributing to these funds.</p>
                    <div id="immersive-give-iframe"></div>
                    <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="ASDISC,CANART,AHDDIS,ARTGAL,ASUGSF,ASDISCR" href="#">Give now</a></span></div>
                  </div>
