@@ -22,11 +22,12 @@
             <div class="mouse">
               <div class="scroll"></div>
             </div>
-            
+
         </section>
 
-        <video muted="" autobuffer="autobuffer" preload="preload">
+        <video playsinline muted="" autobuffer="autobuffer" preload="preload" playsinline autoplay>
            <source  type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/timelapse.webm?v=' . time() ?>">
+           <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/chr.mp4' ?>">
         </video>
         <section class="text">
             <div class="one"><h1>What is <span>possible?</span></h1></div>
@@ -182,9 +183,9 @@
                     </section>
                     <section class="cell">
                         <blockquote class="text quote">
-                            We've produced<br>pieces that<br>have brought out<br>some really<br>interesting<br>questions in the<br>studio that we've<br>answered physically.<br><strong>We've answered<br>in terms of<br>‘what&mdash;ifs</strong>.
+                            We've produced pieces that have brought out some really interesting questions in the studio that we've answered physically. <strong>We've answered in terms of ‘what&mdash;ifs</strong>.
                         </blockquote>
-                        <div class="attr"><span class="name">Amie McNeel</span><br>Associate Professor, School of<br>Art + Art History + Design</div>
+                        <div class="attr"><div><span class="name">Amie McNeel</span><span>Associate Professor, School of Art + Art History + Design</span></div></div>
                         <div class="content">
                             <img alt="AMIE MCNEEL" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/03-02.jpg' ?>" />
                         </div>
@@ -266,7 +267,7 @@
                         <blockquote class="text quote">
                             The name &mdash; Portfolio of Possibilities &mdash; suggests that there's a number of ways to go. <strong>The path is not always clear. It's not always straight</strong>.
                         </blockquote>
-                        <div class="attr"><span class="name">Mark Zirpel</span><br>Associate Professor, School of<br>Art + Art History + Design</div>
+                        <div class="attr"><div><span class="name">Mark Zirpel</span> <span>Associate Professor, School of Art + Art History + Design</span></div></div>
                         <div class="content">
                             <img alt="Mark Zirpel" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/03-11.jpg' ?>" />
                         </div>
@@ -292,10 +293,9 @@
             </section>
             <img alt="Fabric" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/04.jpg' ?>" />
         </div>
-        <video controls>
-            <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/full_video.mp4' ?>">
-            <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/full_video.webm' ?>">
-        </video>
+
+        <div id="boundless-video"></div>
+
     </section>
 
     <section id="copy-one">
@@ -330,7 +330,7 @@
     </section>
 
     <section id="bus" class="frame video pause-enabled">
-        <video muted="" loop="" autoplay="">
+        <video muted="" loop="" autoplay="" playsinline>
            <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/DEEP_DIVE_MESSAGE_REVEAL_V.3.webmhd.webm' ?>">
             <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/DEEP_DIVE_MESSAGE_REVEAL_V.3.mp4' ?>">
         </video>
@@ -504,8 +504,8 @@
             </section>
         </section>
         <video muted="" loop="" autoplay="">
-            <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/BALOON.webm' ?>">
-            <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/BALOON.mp4' ?>">
+            <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/balloon.webm' ?>">
+            <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/balloon.mp4' ?>">
         </video>
         <button class="pause">Pause</button>
     </section>
@@ -647,7 +647,6 @@
  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/animationLibraries.min.js' ?>" type="text/javascript"></script>
 
  <script src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/js/arts.min.js' ?>" type="text/javascript"></script>
-  <script src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/js/arts/polyfill.object-fit.min.js' ?>" type="text/javascript"></script>
  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
 
  <script>
