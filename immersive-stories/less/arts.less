@@ -34,6 +34,14 @@ h3,
     font-family: @uni;
     text-transform: uppercase;
 }
+h2.main {
+    font-family: @uni;
+    font-weight: normal;
+    span {
+        display: block;
+        color: @lightgold;
+    }
+}
 
 // Popup video
 #youtube-video {
@@ -97,75 +105,92 @@ h3,
 }
 
 
-@media (min-width: 767px) {
-  .mouse {
-    position: absolute;
-    width: 22px;
-    height: 42px;
-    bottom: 70px;
-    left: 50%;
-    margin-left: -12px;
-    border-radius: 15px;
-    border: 2px solid white;
-    -webkit-animation: intro 1s;
-    animation: intro 1s;
-  }
-  .scroll {
-    display: block;
-    width: 4px;
-    height: 4px;
-    margin: 6px auto;
-    border-radius: 4px;
-    background: white;
-    -webkit-animation: finger 1.3s infinite;
-    animation: finger 1.3s infinite;
-  }
-  @-webkit-keyframes intro {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(40px);
-      transform: translateY(40px);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+@media (min-width: 767px) {}
+
+
+.mouse {
+  position: absolute;
+  width: 22px;
+  height: 42px;
+  bottom: 70px;
+  left: 50%;
+  margin-left: -12px;
+  border-radius: 15px;
+  border: 2px solid white;
+  -webkit-animation: intro 1s;
+  animation: intro 1s;
+  &.mouseHorz {
+    &:after {
+        content: "Scroll down";
+        position: absolute;
+        left: -36px;
+        bottom: -40px;
+        font-family: @font-family-headline;
+        font-weight: 800;
+        font-size: 17px;
+        width: 120px;
+        color: white;
+        text-shadow: 1px 1px 2px rgba(0,0,0,.6);
     }
   }
-  @keyframes intro {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(40px);
-      transform: translateY(40px);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-    }
-  }
-  @-webkit-keyframes finger {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      -webkit-transform: translateY(20px);
-      transform: translateY(20px);
-    }
-  }
-  @keyframes finger {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      -webkit-transform: translateY(20px);
-      transform: translateY(20px);
-    }
+  @media (max-width: 728px) {
+    bottom: 0;
   }
 }
-
+.scroll {
+  display: block;
+  width: 4px;
+  height: 4px;
+  margin: 6px auto;
+  border-radius: 4px;
+  background: white;
+  -webkit-animation: finger 1.3s infinite;
+  animation: finger 1.3s infinite;
+}
+@-webkit-keyframes intro {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes intro {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes finger {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+@keyframes finger {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
 
 
 
@@ -175,6 +200,12 @@ body #campaign-header{
 body.after-start.hide-menu #campaign-header{
     transform: translateY(-100px)
 }
+.hide-menu {
+    #intro {
+        visibility: hidden;
+    }
+}
+
 @media (min-width: 728px) {
 	.pause-enabled,
 	.mute-enabled {
@@ -245,7 +276,7 @@ body.after-start.hide-menu #campaign-header{
 		content: '';
 		opacity: .2;
 		background: black;
-		z-index: 1;
+		z-index: 0;
 	}
 }
 #intro video{
@@ -264,13 +295,19 @@ body.after-start.hide-menu #campaign-header{
     left: 50%;
     transform: translateX(-50%);
     z-index: 0;
-}
-#intro .scrollit p {
-	font-family: "Encode Sans Compressed",sans-serif;
-	font-weight: 800;
-    // background: #4b2e83;
-    color: white;
-    padding: 15px;
+     p {
+        font-family: "Encode Sans Compressed",sans-serif;
+        font-weight: 800;
+        // background: #4b2e83;
+        color: white;
+        padding: 15px;
+
+    }
+    @media (max-width: 728px) {
+        p {
+            display: none;
+        }
+    }
 }
 #intro .text{
 	position: absolute;
@@ -676,6 +713,7 @@ body.after-start.hide-menu #campaign-header{
 #inspiration .top .right .cell:nth-child(4) .text{
     top: 4vw;
     left: 3vw;
+    position: absolute;
 }
 #inspiration .top .right .cell:nth-child(4) .main{
     font-size: 6vw;
@@ -763,6 +801,15 @@ body.after-start.hide-menu #campaign-header{
     height: 40vw;
     overflow: hidden;
     height: calc(~"40vw - 15px");
+    &:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(51, 51, 51, 0.5);
+    }
 
 }
 #inspiration .bottom .left .text{
@@ -916,6 +963,7 @@ body.after-start.hide-menu #campaign-header{
   font-family: "Uni sans",sans-serif;
   text-transform: uppercase;
   letter-spacing: .02em;
+  font-weight: normal;
 }
 #slideplay .ring {
     position: absolute;
@@ -1309,25 +1357,21 @@ blockquote {
     padding: 15px;
     padding-top: 60px;
     padding-right: 30px;
-    color: #b7a57a;
+    color: white;
     line-height: 1;
     .purp {
-    	color: white;
+    	color: @lightgold
     }
 }
 #surprise .other{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%) translateY(20vw);
     font-size: 2.4vw;
     font-family: "Uni sans",sans-serif;
     z-index: 20;
     text-transform: uppercase;
     letter-spacing: .01em;
+    margin-top: 2vw;
     color: white;
     width: 100%;
-    text-align: center;
 }
 
 
@@ -1787,62 +1831,58 @@ blockquote {
     position: relative;
     z-index: 0;
 }
-#ispossible .text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 100%;
-    border-top: 1.4vw solid rgba(255,255,255,.2);
-    border-bottom: 1.4vw solid rgba(255,255,255,.2);
-    text-align: center;
-    z-index: 1;
+#ispossible {
+    .text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 20;
+        text-transform: uppercase;
+        letter-spacing: .01em;
+        color: white;
+        line-height: 1;
+    }
+    .block {
+        h3 {
+            font-size: 8vw;
+            font-family: @uni;
+            font-weight: normal;
+            line-height: 1;
+        }
+        span {
+            display: block;
+            color: @lightgold;
+        }
+    }
+    .other{
+        font-family: @uni;
+        z-index: 20;
+        text-transform: uppercase;
+        letter-spacing: .01em;
+        color: white;
+        width: 100%;
+        margin-top: 2vw;
+        z-index: 1;
+        font-size: 2.5vw;
+    }
+    .input{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(50%) translateY(-9vw);
+        z-index: 1;
+        font-size: 2.4vw;
+        font-family: "Uni sans",sans-serif;
+        z-index: 20;
+        text-transform: uppercase;
+        letter-spacing: .01em;
+        line-height: 1;
+        color: white;
+        text-align: center;
+    }
 }
-#ispossible .block{
-    display: inline-block;
-    font-size: 8vw;
-    font-family: "Uni sans",sans-serif;
-    z-index: 20;
-    text-transform: uppercase;
-    letter-spacing: .01em;
-    color: white;
-    border-left: 1.4vw solid rgba(255,255,255,.2);
-    border-right: 1.4vw solid rgba(255,255,255,.2);
-    padding: 30px;
-    padding-bottom: 15px;
-    line-height: 1;
-    z-index: 1;
-}
-#ispossible .other{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%) translateY(16vw);
-    font-size: 2.4vw;
-    font-family: "Uni sans",sans-serif;
-    z-index: 20;
-    text-transform: uppercase;
-    letter-spacing: .01em;
-    color: white;
-    width: 100%;
-    text-align: center;
-    z-index: 1;
-}
-#ispossible .input{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(50%) translateY(-14vw);
-    z-index: 1;
-    font-size: 2.4vw;
-    font-family: "Uni sans",sans-serif;
-    z-index: 20;
-    text-transform: uppercase;
-    letter-spacing: .01em;
-    line-height: 1;
-    color: white;
-    text-align: center;
-}
+
 
 
 
@@ -1904,14 +1944,7 @@ blockquote {
     margin-left: 30px;
     margin-bottom: 15px;
 }
-#scroll-two .scroll-container{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-}
+
 #scroll-two .scroll-container .inner{
     height: 100%;
     width: 3180px;
@@ -2302,8 +2335,24 @@ blockquote {
   }
   #inspiration .top .right .cell:nth-child(4) {
   	.sub {
-  	  	font-size: 21px;
+  	  	font-size: 18px;
   	 }
+     h2.main  {
+        font-size: 11vw;
+        margin-bottom: 0;
+     }
+     .content{
+       height: 50vw;
+       padding: 0px;
+       margin-top: 15px;
+       background-color: black;
+       img {
+           opacity: .7;
+       }
+     }
+     .text {
+         z-index: 1;
+     }
   }
   #inspiration .top .left .cell:nth-child(1) {
   	display: none;
@@ -2328,7 +2377,9 @@ blockquote {
     transform: translateX(0);
     margin: 45px 15px;
   }
-  #scroll-one p, #scroll-two p{
+  #scroll-one p, 
+  #scroll-two p,
+  #closing p {
     margin: 15px;
   }
   #copy-two .right .cell:nth-child(1) .content img{
@@ -2352,18 +2403,19 @@ blockquote {
     width: 100%;
   }
   #surprise .text{
-    font-size: 14vw;
+    font-size: 13vw;
   }
-  #ispossible .block{
-    font-size: 9vw;
-  }
-  #ispossible .other {
-    transform: translateX(-50%) translateY(-50%) translateY(24vw);
-    font-size: 3vw;
-  }
-  #ispossible .input {
-    transform: translateX(-50%) translateY(50%) translateY(-19vw);
-    font-size: 3vw;
+  #ispossible .block {
+    h3 {
+        font-size: 11vw;
+        white-space: nowrap;
+    }
+    .other {
+        font-size: 4vw;
+    }
+    .input {
+        font-size: 3vw;
+    }
   }
   #slideplay .possible h2{
     font-size: 20vw;
@@ -2411,11 +2463,7 @@ blockquote {
     padding: 0px;
     margin: 15px;
   }
-  #inspiration .top .right .cell:nth-child(4) .content{
-    height: 50vw;
-    padding: 0px;
-    padding-top: 15px;
-  }
+
   #inspiration .top .right .cell:nth-child(3) .content, #inspiration .top .right .cell:nth-child(2) .content, #inspiration .top .right .cell:nth-child(1) .content{
     height: 25vw;
   }
@@ -2454,12 +2502,14 @@ blockquote {
   #inspiration .top .right .cell:nth-child(5) .copy .shim{
     display: none;
   }
-
-  // Things to hide on mobile
-  #copy-one .left,
-  #inspiration .top .right .cell:nth-child(4) {
-    display: none !important;
+  #copy-one .left {
+    display: none;
   }
+  // Things to hide on mobile
+  // #copy-one .left,
+  // #inspiration .top .right .cell:nth-child(4) {
+    // display: none !important;
+  // }
   #inspiration .top .left .cell:nth-child(1) .content{
     height: 50vw;
     margin: 15px 0px;
@@ -2478,16 +2528,76 @@ blockquote {
       }
     .content{
         padding-left: 0px;
+        padding-bottom: 0;
     }
   }
   #inspiration .top .left .cell:nth-child(2) {
     background-color: #f6fafd;
     margin: 0px;
   }
+  #scroll-two .scroll-container .inner .panel:nth-child(2),
+  #scroll-two .scroll-container .inner .panel:nth-child(3),
+  #scroll-two .scroll-container .inner .panel:nth-child(4),
+  #scroll-two .scroll-container .inner .panel:nth-child(5),
+
+  #scroll-one .scroll-container .inner .panel:nth-child(2),
+  #scroll-one .scroll-container .inner .panel:nth-child(3),
+  #scroll-one .scroll-container .inner .panel:nth-child(4),
+  #scroll-one .scroll-container .inner .panel:nth-child(5),
+  #scroll-one .scroll-container .inner .panel:nth-child(6) {
+      display: none;
+  }
+  #scroll-two .scroll-container .inner,
+  #scroll-two {
+    height: auto;
+  }
+    
+  
 
 }
 
 @media (min-width: 721px) {
+    
+    .videoPlay {
+        position: absolute; 
+        bottom: 13px;
+        right: 30px;
+        .skew(-15deg,0);
+        background-color: white;
+        a {
+            padding: 8px 52px 8px 20px;
+            font-family: @uni;
+            color: @purple;
+            .skew(15deg,0);
+            display: block;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        svg {
+            position: absolute;
+            right: 12px;
+            top: 5px;
+        }
+    }
+
+    #scroll-two .scroll-container{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+
+    #inspiration .text{
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-size: 14px;
+        line-height: 1.428571429;
+        z-index: 11;
+    }
     #closing hr {
         margin: 60px 0;
     }
@@ -2497,14 +2607,7 @@ blockquote {
 		font-weight: 300;
 		font-size: 100px;
 	}
-	#inspiration .text{
-	    position: absolute;
-	    top: 15px;
-	    left: 15px;
-	    font-size: 14px;
-	    line-height: 1.428571429;
-	    z-index: 11;
-	}
+
 	#inspiration .top .left .cell:nth-child(2){
 	    img{
 	        position: absolute;
@@ -2532,6 +2635,7 @@ blockquote {
             width: 50%;
             height: calc(~"100% - 1.6vw");
             color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,.8);
             &:before{
             }
             &:after{

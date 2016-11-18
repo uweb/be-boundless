@@ -477,8 +477,8 @@ if (true) {
       var surprise = new ScrollMagic.Scene({
           triggerElement: "#surprise",
           duration: 0,
-          offset: -$(window).height()*0.25,
-          triggerHook: 0,
+          offset: 0,
+          triggerHook: 0.5,
           reverse: true
       })
       .setTween(tl4)
@@ -517,6 +517,7 @@ if (true) {
               $(this)[0].play();
           });
       });
+
       $(window).resize(function(){
           scrollOneToggleIn.offset(-$(window).height());
           scrollOneToggleIn.update(true);
@@ -537,27 +538,52 @@ if (true) {
           scrollOneToggleOut.update(true);
       });
 
-      var scrollOne = new ScrollMagic.Scene({
-          triggerElement: "#scroll-one",
-          duration: $("#scroll-one").find(".inner").width() - $(window).width(),
-          triggerHook: 0,
-          reverse: true
-      })
-      .setPin("#scroll-one")
-      .addTo(controller)
-      .on("progress", function (event) {
-          var scene = this.triggerElement();
-          var inner = $(scene).find(".inner");
-          var distance = $(inner).width() - $(window).width()
-          var change = event.progress * distance;
-          $(inner).css("transform", "translateX(-" + change + "px) translateZ(0px)");
-      });
-      $(window).resize(function(){
-          scrollOne.duration($("#scroll-one").find(".inner").width() - $(window).width());
-          scrollOne.update(true);
-      });
 
+      // For the horizontal translation
 
+      if(!isMobile.matches) {
+
+      	var scrollOne = new ScrollMagic.Scene({
+      	    triggerElement: "#scroll-one",
+      	    duration: $("#scroll-one").find(".inner").width() - $(window).width(),
+      	    triggerHook: 0,
+      	    reverse: true
+      	})
+      	.setPin("#scroll-one")
+      	.addTo(controller)
+      	.on("progress", function (event) {
+      	    var scene = this.triggerElement();
+      	    var inner = $(scene).find(".inner");
+      	    var distance = $(inner).width() - $(window).width()
+      	    var change = event.progress * distance;
+      	    $(inner).css("transform", "translateX(-" + change + "px) translateZ(0px)");
+      	});
+      	$(window).resize(function(){
+      	    scrollOne.duration($("#scroll-one").find(".inner").width() - $(window).width());
+      	    scrollOne.update(true);
+      	});
+
+      	var scrollTwo = new ScrollMagic.Scene({
+      	    triggerElement: "#scroll-two",
+      	    duration: $("#scroll-two").find(".inner").width() - $(window).width(),
+      	    triggerHook: 0,
+      	    reverse: true
+      	})
+      	.setPin("#scroll-two")
+      	.addTo(controller)
+      	.on("progress", function (event) {
+      	    var scene = this.triggerElement();
+      	    var inner = $(scene).find(".inner");
+      	    var distance = $(inner).width() - $(window).width()
+      	    var change = event.progress * distance;
+      	    $(inner).css("transform", "translateX(-" + change + "px) translateZ(0px)");
+      	});
+      	$(window).resize(function(){
+      	    scrollTwo.duration($("#scroll-two").find(".inner").width() - $(window).width());
+      	    scrollTwo.update(true);
+      	});
+
+      }
 
 
 
@@ -598,15 +624,14 @@ if (true) {
 
     var tl = new TimelineMax();
       tl
-      .from($("#ispossible").find(".input"), 0.25, {opacity: 0})
       .from($("#ispossible").find(".text"), 0.25, {opacity: 0})
       .from($("#ispossible").find(".other"), 0.25, {opacity: 0});
 
     var isPossible = new ScrollMagic.Scene({
         triggerElement: "#ispossible",
         duration: 0,
-        offset: -$(window).height()*0.25,
-        triggerHook: 0,
+        offset: 0,
+        triggerHook: 0.5,
         reverse: true
     })
     .setTween(tl)
@@ -656,25 +681,7 @@ if (true) {
         scrollTwoToggleOut.update(true);
     });
 
-    var scrollTwo = new ScrollMagic.Scene({
-        triggerElement: "#scroll-two",
-        duration: $("#scroll-two").find(".inner").width() - $(window).width(),
-        triggerHook: 0,
-        reverse: true
-    })
-    .setPin("#scroll-two")
-    .addTo(controller)
-    .on("progress", function (event) {
-        var scene = this.triggerElement();
-        var inner = $(scene).find(".inner");
-        var distance = $(inner).width() - $(window).width()
-        var change = event.progress * distance;
-        $(inner).css("transform", "translateX(-" + change + "px) translateZ(0px)");
-    });
-    $(window).resize(function(){
-        scrollTwo.duration($("#scroll-two").find(".inner").width() - $(window).width());
-        scrollTwo.update(true);
-    });
+
 
 
       var first = true;
@@ -682,7 +689,7 @@ if (true) {
       var lastScrollTop = 0;
       document.addEventListener("scroll", function(){
          var st = window.pageYOffset || document.documentElement.scrollTop;
-         if (st > lastScrollTop && st > ($(window).height() / 2)){
+         if (st > lastScrollTop && st > ($(window).height())){
              $("body").addClass("hide-menu");
          } else {
             $("body").removeClass("hide-menu");

@@ -210,7 +210,7 @@
 
                     <section class="cell">
                         <div class="text">
-                            <h2 class="main">Magic is<br>possible</h2>
+                            <h2 class="main">Magic is <span>possible</span></h2>
                             <p class="sub">when arts researchers<br>have room to investigate</p>
                         </div>
                         <div class="content">
@@ -225,7 +225,7 @@
                                     <div class="two"></div>
                                 </div>
                             </div>
-                            <p>For a span of five months, College of Arts &amp; Sciences professors Mark Zirpel and Amie McNeel, in collaboration with designer Sam Stubblefield, filled Seattle’s MadArt studio space with large-scale sculptures reminiscent of nautical machinery brought to life by natural phenomena. With the help of two former students from the 3D4M (Three Dimensional Forum) Program in the School of Art + Art History + Design, these artist-collaborators embarked on a creative investigation, blurring disciplinary boundaries and uniting art and science.</p>
+                            <p>For a span of five months, <a href="https://artsci.washington.edu/">College of Arts &amp; Sciences</a> professors Mark Zirpel and Amie McNeel, in collaboration with designer Sam Stubblefield, filled Seattle’s MadArt studio space with large-scale sculptures reminiscent of nautical machinery brought to life by natural phenomena. With the help of two former students from the 3D4M (Three Dimensional Forum) Program in the <a href="https://art.washington.edu/">School of Art + Art History + Design</a>, these artist-collaborators embarked on a creative investigation, blurring disciplinary boundaries and uniting art and science.</p>
                             <p>Leveraging 15th century maker techniques and 21st century technologies, the collaborators developed a captivating set of interactive artworks informed by data from space, from the sea, and from the streets of Seattle.</p>
                             <p>The resulting work — known as the Portfolio of Possibilities — emerged as more than an exhibit. It emerged as an investigation into the relationships between art and technology, between process and product, between earth and sky, between investigative rigor and creativity, and between teachers, students, and the community.</p>
                         </div>
@@ -235,7 +235,7 @@
             <section class="bottom">
                 <section class="left">
                     <div class="text">
-                        <h2 class="main">Innovation is possible</h2>
+                        <h2 class="main">Innovation is <span>possible</span></h2>
                         <p class="sub">when curiosity sparks collaboration</p>
                     </div>
                     <div class="content pause-enabled">
@@ -341,7 +341,7 @@
     <section id="copy-two">
         <section class="grid">
             <section class="left">
-                <p>Along Westlake Avenue in South Lake Union, large glass doors open wide to reveal an expansive studio laboratory known as MadArt. Inside, large-scale art installations hang from exposed beams, tower above visitors, and move and change with the shifting light outside.</p>
+                <p>Along Westlake Avenue in South Lake Union, large glass doors open wide to reveal an expansive studio laboratory known as <a href="http://madartseattle.com/">MadArt</a>. Inside, large-scale art installations hang from exposed beams, tower above visitors, and move and change with the shifting light outside.</p>
                 <p>Guided by founder Alison Milliman and director Tim Detweiler, MadArt turns the normally private work of art making into a public act. Once artists are selected for a residency, they are given several months to take their work from conception to reality, the process culminating in an exhibition period. But along the way, the community is welcomed in to interact with the art in process.</p>
                 <p>For Portfolio of Possibilities collaborators, the space was perfect for translating grand and sweeping questions into large-scale pieces of interactive art. Situated in a bustling neighborhood known for tech innovation, MadArt provided the three collaborators a flexible, energetic environment for forging connections through their work — connecting the UW campus to the larger community, connecting centuries-old art making methods and technology, and connecting people of all walks of life to art through an unexpected, multisensory experience.</p>
                 <blockquote>At MadArt, we invite the public in to experience art at each stage of the process — while it’s being made and as a completed exhibit. This access to the stages of art making often redefines how people think about art. <span class="callout">And this is where meaningful communication can start, when people can feel surprised and moved to curiosity and thoughtfulness</span>.</blockquote>
@@ -358,9 +358,10 @@
     </section>
 
     <section id="surprise" class="frame pause-enabled">
-        <section class="text">Inspiration<br>Is <span class="purp">Possible</span></section>
-        <section class="other">When teachers and students become peers</section>
-        <video muted="" loop="" autoplay="">
+        <section class="text">Inspiration<br>Is <span class="purp">Possible</span>
+            <section class="other">When teachers and students<br> become peers</section>
+        </section>
+        <video playsinline muted="" loop="" autoplay="" poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/poster-SPINNINGCONE.jpg' ?>">
             <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/SPINNINGCONE.webm?v=' . time() ?>">
             <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/SPINNINGCONE.mp4?v=' . time() ?>">
         </video>
@@ -393,12 +394,13 @@
                     <section class="cell">
                         <section class="content mute-enabled tight">
                           <div class="vidwrap">
-                              <video muted controls poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/students.jpg' ?>">
-                                  <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/STUDENTS.webm' ?>">
+                              <video muted autoplay poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/students.jpg' ?>">
                                   <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/STUDENTS.mp4' ?>">
+                                  <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/STUDENTS.webm' ?>">
+                                  
                               </video> 
-                             <!--  <button class="pause">Pause</button>
-                              <button class="unmute">unmute</button> -->
+                              <div class="videoPlay"><a href="https://www.youtube.com/watch?v=REzDnA7OnRU" target="_blank">Watch full video <svg xmlns="http://www.w3.org/2000/svg" width="30.332" height="30.281" viewBox="0 0 30.332 30.281"><circle fill="none" stroke="#4B2E83" stroke-width="2" stroke-miterlimit="10" cx="15.103" cy="15.103" r="14.103"/><path fill="#4B2E83" d="M12.69 10.99l6.662 4.448-6.662 4.446"/></svg></a></div>
+                             <button class="pause">Pause</button>
                           </div>
                         </section>
                     </section>
@@ -437,12 +439,12 @@
                     <section class="cell">
                         <section class="content mute-enabled tight">
                             <div class="vidwrap">
-                                <video muted controls poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/teachers.jpg' ?>">
+                                <video muted autoplay poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/teachers.jpg' ?>">
                                     <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/TEACHING.webm' ?>">
                                     <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/TEACHING.mp4' ?>">
-                                </video>                                
-                <!--                 <button class="pause">Pause</button>
-                                <button class="unmute">unmute</button> -->
+                                </video>   
+                                <div class="videoPlay"><a href="https://www.youtube.com/watch?v=WaJUyUfUcus" target="_blank">Watch full video<svg xmlns="http://www.w3.org/2000/svg" width="30.332" height="30.281" viewBox="0 0 30.332 30.281"><circle fill="none" stroke="#4B2E83" stroke-width="2" stroke-miterlimit="10" cx="15.103" cy="15.103" r="14.103"/><path fill="#4B2E83" d="M12.69 10.99l6.662 4.448-6.662 4.446"/></svg></a></div>                             
+                                <button class="pause">Pause</button>
                             </div>
                           </section>
                     </section>
@@ -491,20 +493,26 @@
                     </section>
                 </div>
             </div>
+
+            <div class="mouse mouseHorz">
+              <div class="scroll"></div>
+            </div>
+
         </div>
     </section>
 
     <section id="ispossible" class="frame pause-enabled">
         <section class="input">
-            DISCOVERY
+            
         </section>
-        <section class="other">When we unite art and science</section>
+        
         <section class="text">
             <section class="block">
-                Is Possible
+                <h3>Discovery is <span>possible</span></h3>
+                <p class="other">When we unite art and science</p>
             </section>
         </section>
-        <video muted="" loop="" autoplay="">
+        <video playsinline muted="" loop="" autoplay="">
             <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/balloon.webm' ?>">
             <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/balloon.mp4' ?>">
         </video>
@@ -618,7 +626,7 @@
         <section class="content">
             <p>In the months since the Portfolio of Possibilities exhibit ended, new sketches and plans cover the walls of the CMA building. Former students Bampton and Young pursue careers as working artists, and new students manipulate glass and metal alongside Zirpel and McNeel.</p>
             <p>But curiosity continues to spark innovation. Every day faculty and students in the College of Arts &amp; Sciences come together to question, explore and push at the edges of what’s been done before. By supporting our students, faculty and programs, you can join us in expanding what’s possible.</p>
-            <p>Learn more about the artwork in the <a href="http://madartseattle.com/exhibits/portfolio-of-possibilities/">Portfolio of Possibilities.</a></p>
+            <p>Learn more about the artwork in the <a href="http://www.portfoliopossibilities.com/">Portfolio of Possibilities.</a></p>
             <hr>
             <p style="text-align: center"><small>Photos courtesy James Harnois, MadArt Seattle, Amie McNeil, Sam Stubblefield, Collin Bampton, Tzyy Yi (Amy) Young.</small></p>
         </section>
