@@ -552,10 +552,11 @@ if (true) {
       	.setPin("#scroll-one")
       	.addTo(controller)
       	.on("progress", function (event) {
-      	    var scene = this.triggerElement();
+      	    var scene = this.triggerElement(); 
       	    var inner = $(scene).find(".inner");
       	    var distance = $(inner).width() - $(window).width()
       	    var change = event.progress * distance;
+      	    if (change > 600) { $(scene).addClass('scrollHide') }
       	    $(inner).css("transform", "translateX(-" + change + "px) translateZ(0px)");
       	});
       	$(window).resize(function(){
@@ -577,6 +578,7 @@ if (true) {
       	    var distance = $(inner).width() - $(window).width()
       	    var change = event.progress * distance;
       	    $(inner).css("transform", "translateX(-" + change + "px) translateZ(0px)");
+      	    if (change > 600) { $(scene).addClass('scrollHide') }
       	});
       	$(window).resize(function(){
       	    scrollTwo.duration($("#scroll-two").find(".inner").width() - $(window).width());

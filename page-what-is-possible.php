@@ -494,8 +494,10 @@
                 </div>
             </div>
 
-            <div class="mouse mouseHorz">
-              <div class="scroll"></div>
+            <div class="mouseHorz">
+                <div class="mouse">
+                    <div class="scroll"></div>
+                </div>
             </div>
 
         </div>
@@ -611,8 +613,15 @@
                             </section>
                         </section>
                     </div>
+                </div>            
+            </div>
+
+            <div class="mouseHorz">
+                <div class="mouse">
+                    <div class="scroll"></div>
                 </div>
             </div>
+
         </div>
     </section>
 

@@ -107,7 +107,19 @@ h2.main {
 
 @media (min-width: 767px) {}
 
-
+.mouseHorz {
+    position: absolute;
+    right: -3px;
+    top: 50%;
+    padding: 25px 45px 50px;
+    background: rgba(41, 41, 41, 0.73);
+    border: 2px solid rgba(255, 255, 255, 0.51);
+    .scrollHide & {
+          .transition(opacity .2s linear);
+          opacity: 0;
+          pointer-events: none;
+    }
+}
 .mouse {
   position: absolute;
   width: 22px;
@@ -119,15 +131,19 @@ h2.main {
   border: 2px solid white;
   -webkit-animation: intro 1s;
   animation: intro 1s;
-  &.mouseHorz {
+  .mouseHorz & {
+    position: relative;
+    margin: 0;
+    left: auto;
+    bottom: auto;
     &:after {
         content: "Scroll down";
         position: absolute;
-        left: -36px;
-        bottom: -40px;
-        font-family: @font-family-headline;
+        left: -32px;
+        bottom: -32px;
+        font-family: @font-family-base;
         font-weight: 800;
-        font-size: 17px;
+        font-size: 14px;
         width: 120px;
         color: white;
         text-shadow: 1px 1px 2px rgba(0,0,0,.6);
@@ -1360,7 +1376,7 @@ blockquote {
     color: white;
     line-height: 1;
     .purp {
-    	color: @lightgold
+    	color: @lightgold;
     }
 }
 #surprise .other{
