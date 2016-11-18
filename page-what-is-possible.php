@@ -310,7 +310,7 @@
                     <div class="content pause-enabled">
                         <div class="videowrap">
                             <video muted autoplay loop>
-                                <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/mark_amie.mp4' ?>">
+                                <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/TEACHING.mp4' ?>">
                             </video>
                             <button class="pause">Pause</button>
                         </div>
