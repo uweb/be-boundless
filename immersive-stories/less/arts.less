@@ -124,6 +124,9 @@ h2.main {
           opacity: 0;
           pointer-events: none;
     }
+    @media (max-width: 728px) {
+      display: none;
+    }
 }
 .mouse {
   position: absolute;
@@ -288,6 +291,8 @@ body.after-start.hide-menu #campaign-header{
   margin: 0px;
 }
 
+
+
 #intro {
 	background-color: black;
 	position: relative;
@@ -328,6 +333,7 @@ body.after-start.hide-menu #campaign-header{
 
     }
     @media (max-width: 728px) {
+        bottom: 65px;
         p {
             display: none;
         }
@@ -1121,7 +1127,7 @@ blockquote {
     transform: translateX(15px) translateY(15px) rotate(180deg);
 }
 #copy-one blockquote, #copy-two blockquote{
-    color: #b7a57a;
+    color: @darkgold;
     padding: 30px;
     padding-top: 45px;
     background: white;
@@ -1159,7 +1165,7 @@ blockquote {
     background: #4b2e83;
 }
 #copy-one blockquote .callout, #copy-two blockquote .callout{
-    color: #4b2e83;
+    color: @purple;
 }
 #copy-one h3, #copy-two h3{
     color: #4b2e83;
@@ -2394,7 +2400,7 @@ blockquote {
     width: 100%;
   }
   #copy-one blockquote, #copy-two blockquote, .pull {
-    color: #b7a57a;
+    color: @darkgold;
     padding: 0px;
     font-size: 18px;
     line-height: 1.5;
@@ -2572,11 +2578,14 @@ blockquote {
       display: none;
   }
   #scroll-two .scroll-container .inner,
-  #scroll-two {
+  #scroll-two,
+  #scroll-one,
+  #scroll-one .scroll-container .inner,
+  #scroll-one .scroll-container,
+   {
     height: auto;
+    position: static;
   }
-    
-  
 
 }
 
@@ -2683,8 +2692,27 @@ blockquote {
 
 }
 
+@media (max-width: 350px) {
+    #intro .text h1 {
+        font-size: 42px;
+        span {
+            font-family: @uni;
+            font-size: 40px;
+            display: block;
+        }
+    }
+}
+
+
 @media (min-width: 721px) and (max-width: 1024px) {
     #inspiration .bottom .right .cell:nth-child(4) .attr {
+        display: none;
+    }
+}
+
+
+@media (min-width: 400px) and (max-width: 670px) {
+    #intro strong {
         display: none;
     }
 }

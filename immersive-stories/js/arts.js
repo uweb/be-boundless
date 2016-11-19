@@ -132,9 +132,7 @@ if (true) {
 
       function applyBlur() {
       	var toTop = window.pageYOffset || document.documentElement.scrollTop;
-      	if (toTop < 4) {
-      		blur = 0;
-      	}
+      	if (toTop < 4) { blur = 0; }
         TweenMax.set($("#intro").find(".text"), {webkitFilter:"blur(" + blur + "px)"});
       }
 
