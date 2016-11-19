@@ -12,7 +12,7 @@
  <!-- **** The main area, separated by sections **** -->
 
 <div id="loader">
-  <div class="text">Loading...</div>
+  <div class="text"></div>
 </div>
 <main id="main_content">
 

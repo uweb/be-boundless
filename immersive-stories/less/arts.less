@@ -99,13 +99,18 @@ h2.main {
 }
 #loader .text{
   position: absolute;
+  opacity: .5;
+  width: 100px;
+  height: 100px;
+  .background-size(40%) !important;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  background: url(../../campaign/img/spinner-lg.svg) center center no-repeat transparent;
 }
 
 
-@media (min-width: 767px) {}
+
 
 .mouseHorz {
     position: absolute;
@@ -131,27 +136,30 @@ h2.main {
   border: 2px solid white;
   -webkit-animation: intro 1s;
   animation: intro 1s;
-  .mouseHorz & {
-    position: relative;
-    margin: 0;
-    left: auto;
-    bottom: auto;
-    &:after {
-        content: "Scroll down";
-        position: absolute;
-        left: -32px;
-        bottom: -32px;
-        font-family: @font-family-base;
-        font-weight: 800;
-        font-size: 14px;
-        width: 120px;
-        color: white;
-        text-shadow: 1px 1px 2px rgba(0,0,0,.6);
+  @media (min-width: 767px) {
+    .mouseHorz & {
+      position: relative;
+      margin: 0;
+      left: auto;
+      bottom: auto;
+      &:after {
+          content: "Scroll down";
+          position: absolute;
+          left: -32px;
+          bottom: -32px;
+          font-family: @font-family-base;
+          font-weight: 800;
+          font-size: 14px;
+          width: 120px;
+          color: white;
+          text-shadow: 1px 1px 2px rgba(0,0,0,.6);
+      }
     }
   }
   @media (max-width: 728px) {
     bottom: 0;
   }
+
 }
 .scroll {
   display: block;
