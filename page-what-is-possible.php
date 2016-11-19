@@ -330,7 +330,7 @@
     </section>
 
     <section id="bus" class="frame video pause-enabled">
-        <video muted="" loop="" autoplay="" playsinline>
+        <video muted="" loop="" autoplay="" playsinline poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/surprise-poster.jpg' ?>">
             <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/DEEP_DIVE_MESSAGE_REVEAL_V.3.mp4' ?>">
             <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/DEEP_DIVE_MESSAGE_REVEAL_V.3.webmhd.webm' ?>">
             
