@@ -383,7 +383,7 @@
                 <div class="panel">
                     <section class="cell">
                       <section class="content">
-                          <img alt="Artists showing resin covered hands" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-add-01.jpg' ?>" />
+                          <img class="polyfill" alt="Artists showing resin covered hands" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-add-01.jpg' ?>" />
                       </section>
                     </section>
                     <section class="cell">
