@@ -25,9 +25,9 @@
 
         </section>
 
-        <video class="polyfill" playsinline muted="" autobuffer="autobuffer" preload="preload" playsinline autoplay poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/poster-intro.jpg' ?>">
+        <video playsinline muted="" autobuffer="autobuffer" preload="preload" playsinline autoplay poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/poster-intro.jpg' ?>">
            <source  type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/timelapse.webm?v=' . time() ?>">
-           <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/chr.mp4' ?>">
+           <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/timelapse.mp4' ?>">
         </video>
         <section class="text">
             <div class="one"><h1>What is <span>possible?</span></h1></div>
@@ -238,7 +238,7 @@
                         <h2 class="main">Innovation is <span>possible</span></h2>
                         <p class="sub">when curiosity sparks collaboration</p>
                     </div>
-                    <div class="polyfill" class="content pause-enabled">
+                    <div class="content pause-enabled">
                         <video muted="" loop="" autoplay="">
                           <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/mark_profile.webm?v=' . time() ?>">
                             <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/mark_profile.mp4?v=' . time() ?>">
@@ -350,7 +350,7 @@
             <section class="right">
                 <div class="cell">
                     <div class="content">
-                        <img alt="Artists talking" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/p-03.jpg' ?>" />
+                        <img class="polyfill" alt="Artists talking" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/p-03.jpg' ?>" />
                     </div>
                 </div>
             </section>
