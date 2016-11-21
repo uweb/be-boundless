@@ -498,13 +498,6 @@ if (true) {
 
 
 
-
-
-
-
-
-
-
       var scrollOneToggleIn = new ScrollMagic.Scene({
           triggerElement: "#scroll-one",
           duration: 0,
