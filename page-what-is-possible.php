@@ -25,7 +25,7 @@
 
         </section>
 
-        <video playsinline muted="" autobuffer="autobuffer" preload="preload" playsinline autoplay poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/poster-intro.jpg' ?>">
+        <video class="polyfill" playsinline muted="" autobuffer="autobuffer" preload="preload" playsinline autoplay poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/poster-intro.jpg' ?>">
            <source  type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/timelapse.webm?v=' . time() ?>">
            <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/chr.mp4' ?>">
         </video>
@@ -238,7 +238,7 @@
                         <h2 class="main">Innovation is <span>possible</span></h2>
                         <p class="sub">when curiosity sparks collaboration</p>
                     </div>
-                    <div class="content pause-enabled">
+                    <div class="polyfill" class="content pause-enabled">
                         <video muted="" loop="" autoplay="">
                           <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/mark_profile.webm?v=' . time() ?>">
                             <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/mark_profile.mp4?v=' . time() ?>">
@@ -249,17 +249,17 @@
                 <section class="right">
                     <section class="cell">
                         <div class="content">
-                            <img alt="Amie working on a wire sculpture" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/03-07.jpg' ?>" />
+                            <img class="polyfill" alt="Amie working on a wire sculpture" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/03-07.jpg' ?>" />
                         </div>
                     </section>
                     <section class="cell">
                         <div class="content">
-                            <img alt="Sketches of sculptures" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/03-08.jpg' ?>" />
+                            <img class="polyfill" alt="Sketches of sculptures" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/03-08.jpg' ?>" />
                         </div>
                     </section>
                     <section class="cell">
                         <div class="content">
-                            <img alt="Moving a sculpture" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/03-10.jpg' ?>" />
+                            <img class="polyfill" alt="Moving a sculpture" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/03-10.jpg' ?>" />
                         </div>
                     </section>
 
