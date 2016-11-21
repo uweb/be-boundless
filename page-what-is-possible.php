@@ -194,7 +194,7 @@
                 <section class="right">
                     <section class="cell">
                         <div class="content">
-                            <img class="polyfill"> alt="Rope sculpture" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/03-03.jpg' ?>" />
+                            <img class="polyfill" alt="Rope sculpture" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/03-03.jpg' ?>" />
                         </div>
                     </section>
                     <section class="cell">
