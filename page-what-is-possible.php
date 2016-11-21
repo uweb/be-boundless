@@ -187,24 +187,24 @@
                         </blockquote>
                         <div class="attr"><div><span class="name">Amie McNeel</span><span>Associate Professor, School of Art + Art History + Design</span></div></div>
                         <div class="content">
-                            <img alt="AMIE MCNEEL" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/03-02.jpg' ?>" />
+                            <img class="polyfill" alt="AMIE MCNEEL" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/03-02.jpg' ?>" />
                         </div>
                     </section>
                 </section>
                 <section class="right">
                     <section class="cell">
                         <div class="content">
-                            <img alt="Rope sculpture" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/03-03.jpg' ?>" />
+                            <img class="polyfill"> alt="Rope sculpture" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/03-03.jpg' ?>" />
                         </div>
                     </section>
                     <section class="cell">
                         <div class="content">
-                            <img alt="Man drilling a PVC piece" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/03-04.jpg' ?>" />
+                            <img class="polyfill" alt="Man drilling a PVC piece" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/03-04.jpg' ?>" />
                         </div>
                     </section>
                     <section class="cell">
                         <div class="content">
-                            <img alt="Rusty metal" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/03-05.jpg' ?>" />
+                            <img class="polyfill" alt="Rusty metal" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/03-05.jpg' ?>" />
                         </div>
                     </section>
 
@@ -214,7 +214,7 @@
                             <p class="sub">when arts researchers<br>have room to investigate</p>
                         </div>
                         <div class="content">
-                            <img alt="Light waves on glass" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/03-06.jpg' ?>" />
+                            <img class="polyfill" alt="Light waves on glass" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/03-06.jpg' ?>" />
                         </div>
                     </section>
                     <section class="cell">
@@ -670,11 +670,7 @@
  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
 
  <script>
-    objectFit.polyfill({
-        selector: 'img',
-        fittype: 'cover',
-        disableCrossDomain: 'true'
-    });
+    objectFitImages('img.polyfill');
 </script>
 
 <?php get_template_part('footer', 'campaign'); ?>

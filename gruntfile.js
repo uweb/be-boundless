@@ -93,7 +93,7 @@ module.exports = function(grunt) {
           'immersive-stories/js/arts.min.js': [
               'immersive-stories/js/common.js',
               'immersive-stories/js/arts.js',
-              'immersive-stories/js/arts/polyfill.object-fit.min.js'
+              'immersive-stories/js/arts/ofi.browser.js'
           ],          
           'immersive-stories/js/bothell.min.js': [
               'immersive-stories/js/common.js',
