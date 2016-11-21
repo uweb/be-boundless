@@ -410,14 +410,14 @@
                             <p>Collin Brampton, BFA, 3D4M: ceramics + sculpture + glass ‘16</p>
                         </section>
                         <section class="content">
-                            <img alt="Wire sculpture on floor" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-05.jpg' ?>" />
+                            <img class="polyfill" alt="Wire sculpture on floor" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-05.jpg' ?>" />
                         </section>
                     </section>
                 </div>
                 <div class="panel">
                     <section class="cell">
                         <section class="content">
-                            <img alt="Wire sculpture" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-06.jpg' ?>" />
+                            <img class="polyfill" alt="Wire sculpture" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-06.jpg' ?>" />
                         </section>
                     </section>
                     <section class="cell">
@@ -428,12 +428,12 @@
                     </section>
                     <section class="cell">
                         <section class="content">
-                            <img alt="Artist using a form to build sculpture" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-10.jpg' ?>" />
+                            <img class="polyfill" alt="Artist using a form to build sculpture" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-10.jpg' ?>" />
                         </section>
                     </section>
                     <section class="cell">
                         <section class="content">
-                            <img alt="Sketches of sculptures" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-09.jpg' ?>" />
+                            <img class="polyfill" alt="Sketches of sculptures" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-09.jpg' ?>" />
                         </section>
                     </section>
                     <section class="cell">
@@ -450,7 +450,7 @@
                     </section>
                     <section class="cell">
                         <section class="content">
-                            <img alt="Metal sculpture" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-11.jpg' ?>" />
+                            <img class="polyfill" alt="Metal sculpture" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-11.jpg' ?>" />
                         </section>
                     </section>
                 </div>
@@ -458,29 +458,29 @@
                     <section class="left">
                         <section class="cell">
                             <section class="content">
-                                <img alt="Visitor watching spinning sculpture" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-12.jpg' ?>" />
+                                <img class="polyfill" alt="Visitor watching spinning sculpture" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-12.jpg' ?>" />
                             </section>
                         </section>
                         <section class="cell">
                             <section class="content">
-                                <img alt="Closeup of hands working on circuit board" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-13.jpg' ?>" />
+                                <img class="polyfill" alt="Closeup of hands working on circuit board" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-13.jpg' ?>" />
                             </section>
                         </section>
                     </section>
                     <section class="right">
                         <section class="cell">
                             <section class="content">
-                                <img alt="Group of sculptures" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-14.jpg' ?>" />
+                                <img class="polyfill" alt="Group of sculptures" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-14.jpg' ?>" />
                             </section>
                         </section>
                         <section class="cell">
                             <section class="content">
-                                <img alt="Students working with glass" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-15.jpg' ?>" />
+                                <img class="polyfill" alt="Students working with glass" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-15.jpg' ?>" />
                             </section>
                         </section>
                         <section class="cell">
                             <section class="content">
-                                <img alt="Artist working on metal grate" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-16.jpg' ?>" />
+                                <img class="polyfill" alt="Artist working on metal grate" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-16.jpg' ?>" />
                             </section>
                         </section>
                     </section>
@@ -488,7 +488,7 @@
                 <div class="panel">
                     <section class="cell">
                         <section class="content">
-                            <img alt="Artist unveiling metal anvil" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-17.jpg' ?>" />
+                            <img class="polyfill" alt="Artist unveiling metal anvil" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/07-17.jpg' ?>" />
                         </section>
                     </section>
                 </div>
