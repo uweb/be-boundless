@@ -66,12 +66,12 @@
         <div class="object">
             <div class="diamond"></div>
         </div>
-        <div class="object">
+        <div class="object" tabindex="0">
             <div class="pluses">
                 <div class="plus-1"></div>
                 <div class="plus-2"></div>
             </div>
-            <div class="diamond" tabindex="0">
+            <div class="diamond">
                 <img alt="Blurry sculpture" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/02-01.jpg' ?>" />
             </div>
         </div>
@@ -80,24 +80,24 @@
             <div class="arrow-4"></div>
             <div class="diamond"></div>
         </div>
-        <div class="object">
+        <div class="object" tabindex="0">
             <div class="pluses">
                 <div class="plus-1"></div>
                 <div class="plus-2"></div>
             </div>
-            <div class="diamond" tabindex="0">
+            <div class="diamond">
               <img alt="Steel pendulum ball" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/02-02.jpg' ?>" />
             </div>
         </div>
         <div class="object">
             <div class="diamond"></div>
         </div>
-        <div class="object">
+        <div class="object" tabindex="0">
             <div class="pluses">
                 <div class="plus-1"></div>
                 <div class="plus-2"></div>
             </div>
-            <div class="diamond" tabindex="0">
+            <div class="diamond">
               <img alt="Rusty metal" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/02-03.jpg' ?>" />
             </div>
         </div>
@@ -112,36 +112,36 @@
         <div class="object">
             <div class="diamond"></div>
         </div>
-        <div class="object">
+        <div class="object" tabindex="0">
             <div class="pluses">
                 <div class="plus-1"></div>
                 <div class="plus-2"></div>
             </div>
-            <div class="diamond" tabindex="0" tabindex="0">
+            <div class="diamond">
               <img alt="Wire sculpture" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/02-04.jpg' ?>" />
             </div>
         </div>
         <div class="object">
             <div class="diamond"></div>
         </div>
-        <div class="object">
+        <div class="object" tabindex="0">
             <div class="pluses">
                 <div class="plus-1"></div>
                 <div class="plus-2"></div>
             </div>
-            <div class="diamond" tabindex="0">
+            <div class="diamond">
               <img alt="Light bouncing off a sculpture" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/02-05.jpg' ?>" />
             </div>
         </div>
         <div class="object">
             <div class="diamond"></div>
         </div>
-        <div class="object up">
+        <div class="object up" tabindex="0">
             <div class="pluses">
                 <div class="plus-1"></div>
                 <div class="plus-2"></div>
             </div>
-            <div class="diamond" tabindex="0">
+            <div class="diamond">
               <img alt="Planetary ball bearings" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/02-06.jpg' ?>" />
             </div>
         </div>
@@ -330,8 +330,8 @@
 
     <section id="bus" class="frame video pause-enabled">
         <video muted="" loop="" autoplay="" playsinline poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/surprise-poster.jpg' ?>">
-            <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/DEEP_DIVE_MESSAGE_REVEAL_V.3.mp4' ?>">
-            <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/DEEP_DIVE_MESSAGE_REVEAL_V.3.webmhd.webm' ?>">
+            <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/DEEP_DIVE_MESSAGE_REVEAL.mp4' ?>">
+            <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/DEEP_DIVE_MESSAGE_REVEAL.webm' ?>">
             
         </video>
         <button class="pause">Pause</button>
@@ -398,7 +398,7 @@
                                   <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/STUDENTS.webm' ?>">
                                   
                               </video> 
-                              <div class="videoPlay"><a href="https://www.youtube.com/watch?v=REzDnA7OnRU" target="_blank">Watch full video <svg xmlns="http://www.w3.org/2000/svg" width="30.332" height="30.281" viewBox="0 0 30.332 30.281"><circle fill="none" stroke="#4B2E83" stroke-width="2" stroke-miterlimit="10" cx="15.103" cy="15.103" r="14.103"/><path fill="#4B2E83" d="M12.69 10.99l6.662 4.448-6.662 4.446"/></svg></a></div>
+                              <div class="videoPlay"><a href="https://www.youtube.com/watch?v=dKimXqpt72Y" target="_blank">Watch full video <svg xmlns="http://www.w3.org/2000/svg" width="30.332" height="30.281" viewBox="0 0 30.332 30.281"><circle fill="none" stroke="#4B2E83" stroke-width="2" stroke-miterlimit="10" cx="15.103" cy="15.103" r="14.103"/><path fill="#4B2E83" d="M12.69 10.99l6.662 4.448-6.662 4.446"/></svg></a></div>
                              <button class="pause">Pause</button>
                           </div>
                         </section>
@@ -439,10 +439,11 @@
                         <section class="content mute-enabled tight">
                             <div class="vidwrap">
                                 <video muted autoplay poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/teachers.jpg' ?>">
-                                    <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/TEACHING.webm' ?>">
                                     <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/TEACHING.mp4' ?>">
+                                    <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/TEACHING.webm' ?>">
+                                    
                                 </video>   
-                                <div class="videoPlay"><a href="https://www.youtube.com/watch?v=WaJUyUfUcus" target="_blank">Watch full video<svg xmlns="http://www.w3.org/2000/svg" width="30.332" height="30.281" viewBox="0 0 30.332 30.281"><circle fill="none" stroke="#4B2E83" stroke-width="2" stroke-miterlimit="10" cx="15.103" cy="15.103" r="14.103"/><path fill="#4B2E83" d="M12.69 10.99l6.662 4.448-6.662 4.446"/></svg></a></div>                             
+                                <div class="videoPlay"><a href="https://www.youtube.com/watch?v=GFOBx1_HX9w" target="_blank">Watch full video<svg xmlns="http://www.w3.org/2000/svg" width="30.332" height="30.281" viewBox="0 0 30.332 30.281"><circle fill="none" stroke="#4B2E83" stroke-width="2" stroke-miterlimit="10" cx="15.103" cy="15.103" r="14.103"/><path fill="#4B2E83" d="M12.69 10.99l6.662 4.448-6.662 4.446"/></svg></a></div>                             
                                 <button class="pause">Pause</button>
                             </div>
                           </section>

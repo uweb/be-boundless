@@ -96,28 +96,67 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy marginless">
-                  <div id="faces">
-                    <div class="frame"><div class="pic pic-1">
-                      <div class="front"></div>
-                      <div class="back"></div>  
-                    </div></div>
                   
-                    <div class="frame lg"><div class="pic pic-2">
-                      <div class="front"></div>
-                      <div class="back"></div>  
-                    </div></div>
                   
-                    <div class="frame"><div class="pic pic-3">
-                      <div class="front"></div>
-                      <div class="back"></div>  
-                    </div></div>
-                  </div>
-                  
-                  <p>Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Duis  mollis, est non                  commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                  <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                  <p>Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero,                  a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                  <p>Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus                   mollis interdum. Aenean lacinia bibendum nulla sed consectetur.Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Vestibulum id                   ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                  <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+<p>A day in the lab</p>
+<p>On a Friday morning, students filter into UW Bothell’s Digital Future Lab (DFL) before their weekly check-in meeting.</p>
+<p>Adorning the cozy room’s walls are project timelines, a software architecture flowchart, graphic novel illustrations of a red- and purple-tinted alien world. A giant red beanbag chair is tucked in the corner. Rows of computers, covered in Post-it notes and stickers, compete for space with toys and snacks: stuffed Pokémon, jelly beans, a foam Batman figurine, peanut-butter pretzels, a tiny basketball.</p>
+<p class="callout">It may look like you’d expect a <br>game studio to look, <span>but it doesn’t act like one.</span></p>
+
+<div class="faces aina">
+  <div class="frame"><div class="pic pic-1">
+    <div class="front"></div>
+    <div class="back"></div>  
+  </div></div>
+
+  <div class="frame lg"><div class="pic pic-2">
+    <div class="front"></div>
+    <div class="back"></div>  
+  </div></div>
+
+  <div class="frame"><div class="pic pic-3">
+    <div class="front"></div>
+    <div class="back"></div>  
+  </div></div>
+
+  <div class="names">
+    <p>Aina Braxton</p>
+    <p>program coordinator <br>DIGITAL FUTURES LAB</p>
+  </div>
+
+</div>
+
+
+<p>Aina Braxton, ’12, the lab’s assistant director, kicks off the meeting by asking everyone to gather in a circle to share their names and gender pronouns.</p>
+<p>“Aina. She, her.”</p>
+<p>“Jason. They, them.”</p>
+<p>“Malik. He, him.”</p>
+<p>Braxton and Executive Director Jason Pace remind newcomers that it’s part of their culture to start every meeting this way. They’ve normalized it, Braxton says, “because we don’t want to make assumptions about you or your identity.”</p>
+
+
+<div class="faces jason">
+  <div class="frame"><div class="pic pic-1">
+    <div class="front"></div>
+    <div class="back"></div>  
+  </div></div>
+
+  <div class="frame lg"><div class="pic pic-2">
+    <div class="front"></div>
+    <div class="back"></div>  
+  </div></div>
+
+  <div class="frame"><div class="pic pic-3">
+    <div class="front"></div>
+    <div class="back"></div>  
+  </div></div>
+
+  <div class="names">
+    <p>Jason Pace</p>
+    <p>Executive Director <br>DIGITAL FUTURES LAB</p>
+  </div>
+
+</div>
+
              </div> 
           </div> 
         </div>   
@@ -187,15 +226,12 @@
                     <h2 class="headline-gold">Help make a difference</h2>
                     <p>You can help the University of Washington expand our impact everywhere by <br>contributing to these funds.</p>
                     <div id="immersive-give-iframe"></div>
-                    <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="HEMATL,PATHCA,STEMCR" href="#">Give now</a></span></div>
+                    <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="UBPLAY,UWBSTU,UBSTEM" href="#">Give now</a></span></div>
                   </div>
                 </div>
             </div>
       </div>
     </section>
-
-
-
 
 
 

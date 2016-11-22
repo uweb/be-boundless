@@ -268,7 +268,7 @@ if (true) {
           var scene = this.triggerElement();
           $(scene).toggleClass("active");
           if(isMobile.matches) {
-          	artvideoPlay("https://www.youtube.com/embed/tViVIkxZQOI?autoplay=1&rel=0&amp;showinfo=0&amp");
+          	artvideoPlay("https://www.youtube.com/embed/DwoLpj2kPPU?autoplay=1&rel=0&amp;showinfo=0&amp");
           } else {
           	$("#slideplay").on("click", function(){
           	    $(this).find(".fader").toggleClass("show");
