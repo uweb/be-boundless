@@ -469,34 +469,36 @@ body.after-start.hide-menu #campaign-header{
   position: relative;
   z-index: 10;
 }
-#unexpected .object .diamond{
-    height: 100%;
-    width: 100%;
-    transform-origin: center center;
-    transform: translateX(0px) translateY(0px)  translateZ(0px) perspective(1px) rotate(45deg) scale(.71);
-    border: 2px solid #333;
-    position: relative;
-    z-index: 10;
+#unexpected .object {
+     .diamond{
+        height: 100%;
+        width: 100%;
+        transform-origin: center center;
+        transform: translateX(0px) translateY(0px)  translateZ(0px) perspective(1px) rotate(45deg) scale(.71);
+        border: 2px solid #333;
+        position: relative;
+        z-index: 10;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 400ms;
+            backface-visibility: hidden;
+            transform: translateX(0px) translateY(0px)  translateZ(0px) perspective(1px);
+        }
+    }
+    
+    &:hover,
+    &:active,
+    &:focus {
+        img {
+            opacity: 1!important;
+        }
+    }
 }
-#unexpected .object .diamond img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 400ms;
-    backface-visibility: hidden;
-    transform: translateX(0px) translateY(0px)  translateZ(0px) perspective(1px);
-}
-#unexpected .object .diamond:hover img{
-    opacity: 1!important;
-}
-#unexpected .object .diamond:active img{
-    opacity: 1!important;
-}
-#unexpected .object .diamond:focus img{
-    opacity: 1!important;
-}
-#unexpected .expect-the{
+
+#unexpected .expect-the {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -582,7 +584,9 @@ body.after-start.hide-menu #campaign-header{
 }
 
 
-
+#inspiration {
+    background-color: white;
+}
 
 #inspiration video, #inspiration img{
     display: none;
