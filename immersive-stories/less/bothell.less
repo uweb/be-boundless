@@ -54,6 +54,7 @@ p {
     border-bottom: 1px solid white;
     text-transform: uppercase;
     color: @lightgold;
+    font-family: @uni;
     span {
         font-family: @encode;
         display: block;
@@ -110,7 +111,7 @@ p {
     .translate(0,0);
     .transition(all .5s linear);
     opacity: 1;
-    z-index: 10;
+    z-index: 100s;
     div {
        width: 79vh;
        max-width: 70vw;
@@ -393,6 +394,12 @@ p {
     @media (min-width: 768px) {
         &.text-block .copy {
             padding: 100px 150px 250px;
+            & > p:nth-child(1) {
+                font-family: @uni;
+                text-transform: uppercase;
+                font-size: 40px;
+                text-align: center;
+            }
         }
         .faces {
 
@@ -456,54 +463,30 @@ p {
     }
     &.aina {
         .pic-1 {
-            .front {
-                background-image: url("@{bothell}/aina-front.jpg");
-            }
-            .back {
-                background-image: url("@{bothell}/aina-back.jpg");
-            }
+            .front {    background-image: url("@{bothell}/aina1-front.jpg"); }
+            .back {     background-image: url("@{bothell}/aina1-back.jpg");  }
         }
         .pic-2 {
-            .front {
-                background-image: url("@{bothell}/aina-front.jpg");
-            }
-            .back {
-                background-image: url("@{bothell}/aina-back.jpg");
-            }
+            .front {    background-image: url("@{bothell}/aina-front.jpg"); }
+            .back {     background-image: url("@{bothell}/aina-back.jpg");  }
         }
         .pic-3 {
-            .front {
-                background-image: url("@{bothell}/aina-front.jpg");
-            }
-            .back {
-                background-image: url("@{bothell}/aina-back.jpg");
-            }
+            .front {    background-image: url("@{bothell}/aina2-front.jpg"); }
+            .back {     background-image: url("@{bothell}/aina2-back.jpg");  }
         }
     }
     &.jason {
         .pic-1 {
-            .front {
-                background-image: url("@{bothell}/jason-front.jpg");
-            }
-            .back {
-                background-image: url("@{bothell}/jason-back.jpg");
-            }
+            .front {    background-image: url("@{bothell}/jason1-front.jpg"); }
+            .back {     background-image: url("@{bothell}/jason1-back.jpg");  }
         }
         .pic-2 {
-            .front {
-                background-image: url("@{bothell}/jason-front.jpg");
-            }
-            .back {
-                background-image: url("@{bothell}/jason-back.jpg");
-            }
+            .front {    background-image: url("@{bothell}/jason-front.jpg"); }
+            .back {     background-image: url("@{bothell}/jason-back.jpg");  }
         }
         .pic-3 {
-            .front {
-                background-image: url("@{bothell}/jason-front.jpg");
-            }
-            .back {
-                background-image: url("@{bothell}/jason-back.jpg");
-            }
+            .front {    background-image: url("@{bothell}/jason2-front.jpg"); }
+            .back {     background-image: url("@{bothell}/jason2-back.jpg");  }
         }
     }
     .names {
@@ -588,11 +571,9 @@ p {
 
 #ghosts {
     position: relative;
+    z-index: 21;
     &.text-block .copy {
         background-color: transparent;
-        p {
-            color: white;
-        }
     }
     @media(min-width:768px) {
         background: url("@{bothell}/smoke-top.jpg") no-repeat center top black;
@@ -814,7 +795,6 @@ p {
     display: inline-block;
     position: relative;
     cursor: help;
-    padding: 4px;
     font-weight: bold;
     color: @lightgold;
 }
@@ -823,8 +803,9 @@ p {
     content: attr(data-tooltip);
     display: none;
     position: absolute;
-    background: #252525;
-    color: #fff;
+    background: white;
+    color: #676767;
+    font-weight: normal;
     font-size: 14px;
     line-height: 1.4;
     min-width: 310px;
@@ -861,7 +842,7 @@ p {
 [data-tooltip-position="top"]:after {
     bottom: 100%;
     border-width: 6px 6px 0;
-    border-top-color: #252525;
+    border-top-color: white;
 }
 [data-tooltip]:hover:before,
 [data-tooltip]:hover:after {

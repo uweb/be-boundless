@@ -129,7 +129,7 @@
 
 <p>Aina Braxton, ’12, the lab’s assistant director, kicks off the meeting by asking everyone to gather in a circle to share their names and <span data-tooltip="Helping make communities more trans- and genderqueer-friendly, gender pronoun check-ins are used to recognize the fluidity of gender, and in a respectful effort to avoid making assumptions about others’ gender identification" data-tooltip-position="top">gender pronouns</span>.</p>
 <p>“Aina. She, her.”</p>
-<p>“Jason. They, them.”</p>
+<p>“Jason. <span data-tooltip="Pace uses the gender-neutral pronouns they, their and them" data-tooltip-position="top">They, them</span>.”</p>
 <p>“Malik. He, him.”</p>
 <p>Braxton and Executive Director Jason Pace remind newcomers that it’s part of their culture to start every meeting this way. They’ve normalized it, Braxton says, “because we don’t want to make assumptions about you or your identity.”</p>
 
@@ -166,14 +166,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy marginless">
-                    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                    
-                    <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                    
-                    <p>Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                    
-                    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.
-                    </p>
+ 
+<p class="callout"><span>Working to address the lack of diversity in video games and tech,</span> Pace and Braxton bring difference to the forefront of all they do.</p>
+<p>With a small core of professional staff, the lab’s team of more than 40 students from a variety of backgrounds takes on everything from art, design, music composition and programming to production, project management and marketing. Along the way are constant opportunities to recognize their diversity, to learn about different backgrounds and cultures and, ultimately, to become better communicators.</p>
+<p>The day’s check-in doesn’t last long, though: The agenda is packed.</p>
+<p>Two developers have created a new build for Hug the Line, a tower-defense-style game in which the user helps benevolent creatures navigate a treacherous maze. Then it’s on to critiquing new features for Corrupted, a space-age puzzle game.</p>
+<p>In Pace’s opinion, the team needs to develop a unifying thread that runs throughout the game’s individual levels. Right now, it’s not quite there.</p>
+<p>“Jason has industry-level experience and standards for the work we do,” Lead Designer Emmett Scout says of Pace, who uses the pronouns they, their and them.  “They won’t let us get away with anything less than that.”</p>
+
+
              </div> 
           </div> 
         </div>   

@@ -44,6 +44,7 @@ $(function(){
   })
   .setTween(parallaxed)
   .addTo(controllerBothell)
+  .on('end',function(){console.log('end')})
 
 
 
