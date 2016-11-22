@@ -815,19 +815,21 @@ p {
     position: relative;
     cursor: help;
     padding: 4px;
+    font-weight: bold;
+    color: @lightgold;
 }
 /* Tooltip styling */
 [data-tooltip]:before {
     content: attr(data-tooltip);
     display: none;
     position: absolute;
-    background: #000;
+    background: #252525;
     color: #fff;
-    padding: 4px 8px;
     font-size: 14px;
     line-height: 1.4;
-    min-width: 100px;
-    text-align: center;
+    min-width: 310px;
+    text-align: left;
+    padding: 18px 30px;
     border-radius: 4px;
 }
 /* Dynamic horizontal centering */
@@ -859,7 +861,7 @@ p {
 [data-tooltip-position="top"]:after {
     bottom: 100%;
     border-width: 6px 6px 0;
-    border-top-color: #000;
+    border-top-color: #252525;
 }
 [data-tooltip]:hover:before,
 [data-tooltip]:hover:after {

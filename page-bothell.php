@@ -127,7 +127,7 @@
 </div>
 
 
-<p>Aina Braxton, ’12, the lab’s assistant director, kicks off the meeting by asking everyone to gather in a circle to share their names and gender pronouns.</p>
+<p>Aina Braxton, ’12, the lab’s assistant director, kicks off the meeting by asking everyone to gather in a circle to share their names and <span data-tooltip="Helping make communities more trans- and genderqueer-friendly, gender pronoun check-ins are used to recognize the fluidity of gender, and in a respectful effort to avoid making assumptions about others’ gender identification" data-tooltip-position="top">gender pronouns</span>.</p>
 <p>“Aina. She, her.”</p>
 <p>“Jason. They, them.”</p>
 <p>“Malik. He, him.”</p>
