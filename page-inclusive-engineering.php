@@ -64,6 +64,35 @@
          <div class="container">
              <div class="row">
                  <div class="col-md-10 col-md-offset-1 copy padless marginless">
+
+                 <a href="https://youtu.be/97ZAs49jIfg" target="_blank" class="drummer">
+                   <span>Watch Jayna play</span>
+                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      width="63.625px" height="91.625px" viewBox="0 0 63.625 91.625" enable-background="new 0 0 63.625 91.625" xml:space="preserve">
+                   <path fill="#4B2E83" d="M51.68,30.072c-1.211,0.421-2.795,0.966-4.302,1.47c1.718,1.386,2.672,2.899,2.672,4.361
+                     c0,4.572-9.237,9.667-22.489,9.667c-13.255,0-22.489-5.096-22.489-9.667c0-4.076,7.349-8.557,18.332-9.482
+                     c1.515-1.243,3.724-3.096,5.499-4.593c-0.445-0.012-0.888-0.035-1.342-0.035c-14.755,0-26.311,6.112-26.311,13.915
+                     c0,7.804,11.555,13.917,26.311,13.917c14.752,0,26.308-6.113,26.308-13.917C53.869,33.688,53.082,31.788,51.68,30.072z"/>
+                   <path fill="#4B2E83" d="M37.219,22.74l-5.979,3.646c4.207,0.312,7.907,1.135,10.876,2.272l4.949-2.356
+                     C44.383,24.741,41.036,23.517,37.219,22.74z"/>
+                   <g>
+                     <path fill="#4B2E83" d="M53.542,13.504c0-0.003,0-0.003,0-0.003c-0.401-0.708-1.31-0.957-2.015-0.552L23.149,29.693
+                       c-0.471,0.277-0.636,0.873-0.37,1.341v0.003c0.266,0.459,0.862,0.627,1.341,0.361l28.87-15.877
+                       C53.698,15.117,53.949,14.212,53.542,13.504z"/>
+                     <path fill="#4B2E83" d="M62.923,26.397c0-0.004,0-0.004,0-0.004c-0.249-0.771-1.09-1.189-1.859-0.934L28.359,36.935
+                       c-0.512,0.179-0.792,0.73-0.628,1.237l0.003,0.006c0.162,0.503,0.717,0.785,1.238,0.619L61.98,28.265
+                       C62.752,28.009,63.186,27.172,62.923,26.397z"/>
+                   </g>
+                   <path fill="#4B2E83" d="M39.24,51.861c-3.48,0.873-7.38,1.375-11.521,1.375c-4.339,0-8.421-0.546-12.023-1.5v21.338
+                     c3.603,0.954,7.685,1.498,12.023,1.498c4.143,0,8.043-0.503,11.521-1.376V51.861z"/>
+                   <path fill="#4B2E83" d="M10.839,50.086c-5.701-2.455-9.332-6.125-9.332-10.231c0-0.026,0.006-0.052,0.006-0.078H1.42l0.116,21.694
+                     c0.162,3.989,3.747,7.542,9.303,9.939V50.086z"/>
+                   <path fill="#4B2E83" d="M53.915,61.014V40.031c-0.104,4.153-3.917,7.846-9.818,10.263v21.338c5.849-2.399,9.639-6.051,9.806-10.162
+                     h0.012v-0.104C53.915,61.306,53.915,61.075,53.915,61.014z"/>
+                   <path fill="#4B2E83" d="M53.915,61.075"/>
+                   </svg>
+                 </a>
+                 
                  <p>The diagnosis was hemimegalencephaly, a rare condition in which one half of the brain develops abnormally larger than the other. The seizures, a symptom of the condition, lasted minutes, consuming Jayna’s entire being. Medication didn’t work. The only answer, at 28 days old, was a hemispherectomy — performed on the youngest patient in the world at the time — by <a href="http://www.seattlechildrens.org">Seattle Children’s</a> neurosurgeon and <a href="http://www.csne-erc.org">Center for Sensorimotor Neural Engineering</a> (CSNE) member Dr. Jeff Ojemann. The surgery to disconnect the right hemisphere of her brain was successful, but the outlook was dim: doctors told Jayna’s family she’d likely never walk or talk. That they’d have only a few years with her, at best. </p>
 
                  <p>Fast-forward a decade, and Jayna — who lives life with partial blindness and hemiplegia, a weakness of the left side of her body — is the happiest walking, talking 10-year-old you’ll ever meet. And, as a participant in the College of Engineering’s <a href="https://depts.washington.edu/uwsteele/">Ability &amp; Innovation Lab</a> pioneered by assistant professor of <a href="https://www.me.washington.edu/">mechanical engineering</a> and CSNE member Kat Steele, Jayna is working with mechanical engineering students to design body-powered orthoses to enrich not just her own life, but the lives of others. </p>
@@ -152,33 +181,6 @@
                       
                       <p>When the average able-bodied individual wants to sip a cup of coffee, for instance, they don’t think about bringing the mug to their lips — they just do it. But while the intent to move is still there for individuals who have undergone stroke or spinal cord injury and experience paralysis, there’s a missing link — say, a damaged nerve — in the loop that sends that message from the brain to the muscle. That’s where the CSNE comes in. </p>
                       
-                      <a href="https://youtu.be/97ZAs49jIfg" target="_blank" class="drummer">
-                        <span>Watch Jayna play</span>
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                           width="63.625px" height="91.625px" viewBox="0 0 63.625 91.625" enable-background="new 0 0 63.625 91.625" xml:space="preserve">
-                        <path fill="#4B2E83" d="M51.68,30.072c-1.211,0.421-2.795,0.966-4.302,1.47c1.718,1.386,2.672,2.899,2.672,4.361
-                          c0,4.572-9.237,9.667-22.489,9.667c-13.255,0-22.489-5.096-22.489-9.667c0-4.076,7.349-8.557,18.332-9.482
-                          c1.515-1.243,3.724-3.096,5.499-4.593c-0.445-0.012-0.888-0.035-1.342-0.035c-14.755,0-26.311,6.112-26.311,13.915
-                          c0,7.804,11.555,13.917,26.311,13.917c14.752,0,26.308-6.113,26.308-13.917C53.869,33.688,53.082,31.788,51.68,30.072z"/>
-                        <path fill="#4B2E83" d="M37.219,22.74l-5.979,3.646c4.207,0.312,7.907,1.135,10.876,2.272l4.949-2.356
-                          C44.383,24.741,41.036,23.517,37.219,22.74z"/>
-                        <g>
-                          <path fill="#4B2E83" d="M53.542,13.504c0-0.003,0-0.003,0-0.003c-0.401-0.708-1.31-0.957-2.015-0.552L23.149,29.693
-                            c-0.471,0.277-0.636,0.873-0.37,1.341v0.003c0.266,0.459,0.862,0.627,1.341,0.361l28.87-15.877
-                            C53.698,15.117,53.949,14.212,53.542,13.504z"/>
-                          <path fill="#4B2E83" d="M62.923,26.397c0-0.004,0-0.004,0-0.004c-0.249-0.771-1.09-1.189-1.859-0.934L28.359,36.935
-                            c-0.512,0.179-0.792,0.73-0.628,1.237l0.003,0.006c0.162,0.503,0.717,0.785,1.238,0.619L61.98,28.265
-                            C62.752,28.009,63.186,27.172,62.923,26.397z"/>
-                        </g>
-                        <path fill="#4B2E83" d="M39.24,51.861c-3.48,0.873-7.38,1.375-11.521,1.375c-4.339,0-8.421-0.546-12.023-1.5v21.338
-                          c3.603,0.954,7.685,1.498,12.023,1.498c4.143,0,8.043-0.503,11.521-1.376V51.861z"/>
-                        <path fill="#4B2E83" d="M10.839,50.086c-5.701-2.455-9.332-6.125-9.332-10.231c0-0.026,0.006-0.052,0.006-0.078H1.42l0.116,21.694
-                          c0.162,3.989,3.747,7.542,9.303,9.939V50.086z"/>
-                        <path fill="#4B2E83" d="M53.915,61.014V40.031c-0.104,4.153-3.917,7.846-9.818,10.263v21.338c5.849-2.399,9.639-6.051,9.806-10.162
-                          h0.012v-0.104C53.915,61.306,53.915,61.075,53.915,61.014z"/>
-                        <path fill="#4B2E83" d="M53.915,61.075"/>
-                        </svg>
-                      </a>
 
                       <p>The brain is the control center for the nervous system, firing neurons full of information and commands through our bodies. At the CSNE, researchers are unpacking what exactly the intent to move looks like by recording brain activity through electrocorticography (ECoG), a monitoring practice in which a grid of electrodes is placed directly on the surface of the brain. </p>     
 

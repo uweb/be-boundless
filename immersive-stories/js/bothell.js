@@ -39,12 +39,14 @@ $(function(){
 
   var jason = new ScrollMagic.Scene({
     triggerElement: '#jason',
-    triggerHook: 0,
+    triggerHook: 0.1,
+    offset: $(window).height() / 2,
     duration: '100%',
   })
   .setTween(parallaxed)
   .addTo(controllerBothell)
   .on('end',function(){console.log('end')})
+  .on('start',function(){console.log('start')})
 
 
 
