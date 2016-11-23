@@ -76,13 +76,13 @@ if (true) {
           reverse: true
       })
       .setPin("#intro",  {pushFollowers: false})
+      .on('start',function(){
+      	videdo.play()
+      })
+      .on('end',function(){
+      	videdo.pause()
+      })
       .addTo(controller)
-      .on("progress", function (event) {
-          var scene = this.triggerElement();
-          var distance = videdo.duration;
-          var change = event.progress * distance;
-          videdo.currentTime = Math.floor(change) / 2;
-      });
       $(window).resize(function(){
           videoScrubber.duration($(window).height()*2);
           videoScrubber.update(true);
@@ -605,6 +605,26 @@ if (true) {
           isPossibleToggleIn.update(true);
       });
 
+
+      var anythingIsPossibleToggleIn = new ScrollMagic.Scene({
+          triggerElement: "#anythingispossible",
+          duration: 0,
+          offset: -$(window).height(),
+          triggerHook: 0,
+          reverse: true
+      })
+      .addTo(controller)
+      .on('start', function () {
+          var scene = this.triggerElement();
+          $(scene).toggleClass("active");
+          var vid = $(scene).find("video[autoplay]")[0];
+          vid.play();
+      });
+      $(window).resize(function(){
+          isPossibleToggleIn.offset(-$(window).height());
+          isPossibleToggleIn.update(true);
+      });
+
       var isPossibleToggleOut =  new ScrollMagic.Scene({
         //next element
           triggerElement: "#scroll-two",
@@ -663,22 +683,6 @@ if (true) {
         scrollTwoToggleIn.offset(-$(window).height());
         scrollTwoToggleIn.update(true);
     });
-
-    var scrollTwoToggleOut =  new ScrollMagic.Scene({
-      //next element
-        triggerElement: "#threedvid",
-        duration: 0,
-        triggerHook: 0,
-        reverse: true
-    })
-    .on('start', function () {
-        $("#scroll-two").toggleClass("active");
-    })
-    .addTo(controller);
-    $(window).resize(function(){
-        scrollTwoToggleOut.update(true);
-    });
-
 
 
 

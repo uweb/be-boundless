@@ -303,6 +303,9 @@ body.after-start.hide-menu #campaign-header{
 #intro {
 	background-color: black;
 	position: relative;
+    .pause {
+        top: 110px;
+    }
 	&:after {
 		position: absolute;
 		left: 0;
@@ -1856,23 +1859,27 @@ blockquote {
 
 
 
-#ispossible video, #ispossible img{
-    display: none;
-}
-#ispossible.active video, #ispossible.active img{
-    display: block;
-}
-#ispossible{
+
+
+
+#ispossible,
+#anythingispossible {
     overflow: hidden;
-}
-#ispossible video{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: relative;
-    z-index: 0;
-}
-#ispossible {
+    &.active video, 
+    &.active img {
+        display: block;
+    }
+    video, 
+    img {
+        display: none;
+    }
+    video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+        z-index: 0;
+    }
     .text{
         position: absolute;
         top: 50%;
@@ -1923,7 +1930,22 @@ blockquote {
         text-align: center;
     }
 }
-
+#anythingispossible {
+    height: 70vh;
+    position: relative;
+    background-color: black;
+    position: relative;
+    &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        background-color: black;
+        opacity: .5;
+    }
+}
 
 
 
@@ -2446,6 +2468,7 @@ blockquote {
   #surprise .text{
     font-size: 13vw;
   }
+  #anythingispossible .block,
   #ispossible .block {
     h3 {
         font-size: 11vw;
@@ -2517,7 +2540,7 @@ blockquote {
   #slideplay {
   	margin-bottom: 20px;
   }
-  #slideplay, #ispossible, #surprise{
+  #slideplay, #ispossible, #anythingispossible, #surprise{
     height: 70vw;
   }
   #slideplay .fader.show {

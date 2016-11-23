@@ -15,7 +15,7 @@
 </div>
 <main id="main_content">
 
-    <section id="intro" class="frame video">
+    <section id="intro" class="frame video pause-enabled">
         <section class="scrollit read-more">
             <p>Scroll Down</p>
             <div class="mouse">
@@ -24,7 +24,7 @@
 
         </section>
 
-        <video muted="" autobuffer="autobuffer" preload="preload" playsinline poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/poster-intro.jpg' ?>">
+        <video muted="" autobuffer="autobuffer" autoplay="" preload="preload" playsinline poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/poster-intro.jpg' ?>">
            <source  type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/timelapse.webm?v=' . time() ?>">
            <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/timelapse.mp4' ?>">
         </video>
@@ -32,6 +32,7 @@
             <div class="one"><h1>What is <span>possible?</span></h1></div>
             <div class="two"><p>In summer of 2016, the tech landscape of South Lake Union became the site of an experiment. Informed by centuries of traditional art making methods, activated by technology, and fueled by a question.</p><p><strong>What is possible when scientific curiosity and artistic mastery <br>are given room to coexist? The answer? Anything</strong>.</p></div>
         </section>
+        <button class="pause">Pause</button>
     </section>
 
     <section id="unexpected" class="frame">
@@ -625,13 +626,22 @@
         </div>
     </section>
 
-    <section id="threedvid">
-      <div class="videoWrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/jVbqOKJYhC4" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <section class="text">Anything<br>Is <span class="purp">Possible</span>
-                  <section class="other">in the College of Arts &amp; Sciences</section>
-      </section>
+    <section id="anythingispossible" class="frame pause-enabled">
+        <section class="input">
+            
+        </section>
+        
+        <section class="text">
+            <section class="block">
+                <h3>Anything is <span>possible</span></h3>
+                <p class="other">in the College of Arts &amp; Sciences</p>
+            </section>
+        </section>
+        <video playsinline muted="" loop="" autoplay="" preload="preload">
+            <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/studiopan.mp4' ?>">
+            <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/studiopan.webm' ?>">
+        </video>
+        <button class="pause">Pause</button>
     </section>
 
     <section id="closing">
