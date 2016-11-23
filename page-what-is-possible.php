@@ -627,8 +627,11 @@
 
     <section id="threedvid">
       <div class="videoWrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Busy8XYpsfc" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jVbqOKJYhC4" frameborder="0" allowfullscreen></iframe>
       </div>
+      <section class="text">Anything<br>Is <span class="purp">Possible</span>
+                  <section class="other">in the College of Arts &amp; Sciences</section>
+      </section>
     </section>
 
     <section id="closing">

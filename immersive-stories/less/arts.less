@@ -285,7 +285,7 @@ body.after-start.hide-menu #campaign-header{
 }
 .videoWrapper {
 	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
+	padding-bottom: 54.25%; /* 16:9 */
 	padding-top: 25px;
 	height: 0;
 }
@@ -2599,6 +2599,39 @@ blockquote {
   }
 
 }
+
+#threedvid {
+    position:  relative;
+    .text{
+        position: absolute;
+        bottom: 15%;
+        left: 5%;
+        font-size: 8vw;
+        font-family: "Uni sans",sans-serif;
+        z-index: 20;
+        text-transform: uppercase;
+        letter-spacing: .01em;
+        color: white;
+        line-height: .95;
+        pointer-events: none;
+        text-shadow: 1px 1px 16px rgba(0, 0, 0, 0.4);
+        .purp {
+            color: @lightgold;
+        }
+        .other {
+            font-family: "Uni sans",sans-serif;
+            z-index: 20;
+            text-transform: uppercase;
+            letter-spacing: .01em;
+            color: white;
+            width: 100%;
+            margin-top: 1vw;
+            z-index: 1;
+            font-size: 2.5vw;
+        }
+    }
+}
+
 
 @media (min-width: 721px) {
     
