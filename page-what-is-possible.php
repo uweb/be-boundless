@@ -24,7 +24,7 @@
 
         </section>
 
-        <video muted="" autobuffer="autobuffer" autoplay="" preload="preload" playsinline poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/poster-intro.jpg' ?>">
+        <video muted="" autobuffer="autobuffer" autoplay="" loop="" preload="preload" playsinline poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/poster-intro.jpg' ?>">
            <source  type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/timelapse.webm?v=' . time() ?>">
            <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/timelapse.mp4' ?>">
         </video>
@@ -637,7 +637,7 @@
                 <p class="other">in the College of Arts &amp; Sciences</p>
             </section>
         </section>
-        <video playsinline muted="" loop="" autoplay="" preload="preload">
+        <video playsinline autobuffer="autobuffer" muted="" loop="" autoplay="" preload="preload">
             <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/studiopan.mp4' ?>">
             <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/studiopan.webm' ?>">
         </video>
