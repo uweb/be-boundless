@@ -154,7 +154,6 @@ if (true) {
       $(window).resize(function(){
           intro.duration($(window).height()*2);
           intro.update(true);
-          console.log(intro.duration)
       });
 
 

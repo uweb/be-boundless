@@ -28,7 +28,7 @@
   <a class="read-more" href="#main_content">Read the story</a>
 </div>
 
-<div id="bar"><div></div></div>
+<div id="bar"><div></div><span></span></div>
 
 <main id="main_content"> 
 
@@ -96,8 +96,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy marginless">
-                  
-                  
 <p>A day in the lab</p>
 <p>On a Friday morning, students filter into UW Bothell’s Digital Future Lab (DFL) before their weekly check-in meeting.</p>
 <p>Adorning the cozy room’s walls are project timelines, a software architecture flowchart, graphic novel illustrations of a red- and purple-tinted alien world. A giant red beanbag chair is tucked in the corner. Rows of computers, covered in Post-it notes and stickers, compete for space with toys and snacks: stuffed Pokémon, jelly beans, a foam Batman figurine, peanut-butter pretzels, a tiny basketball.</p>
@@ -123,6 +121,10 @@
     <p>Aina Braxton</p>
     <p>program coordinator <br>DIGITAL FUTURES LAB</p>
   </div>
+
+
+  
+
 
 </div>
 
@@ -157,6 +159,17 @@
 
 </div>
 
+<div class="ghosts">
+  <div class="ghost g-1"><div class="front"></div><div class="back"></div></div>
+  <div class="ghost g-2"><div class="front"></div><div class="back"></div></div>
+  <div class="ghost g-3"><div class="front"></div><div class="back"></div></div>
+  <div class="ghost g-4"><div class="front"></div><div class="back"></div></div>
+  <div class="ghost g-5"><div class="front"></div><div class="back"></div></div>
+  <div class="ghost g-6"><div class="front"></div><div class="back"></div></div>
+  <div class="ghost g-7"><div class="front"></div><div class="back"></div></div>
+  <div class="ghost g-8"><div class="front"></div><div class="back"></div></div>
+</div>
+
              </div> 
           </div> 
         </div>   
@@ -173,6 +186,18 @@
 <p>Two developers have created a new build for Hug the Line, a tower-defense-style game in which the user helps benevolent creatures navigate a treacherous maze. Then it’s on to critiquing new features for Corrupted, a space-age puzzle game.</p>
 <p>In Pace’s opinion, the team needs to develop a unifying thread that runs throughout the game’s individual levels. Right now, it’s not quite there.</p>
 <p>“Jason has industry-level experience and standards for the work we do,” Lead Designer Emmett Scout says of Pace, who uses the pronouns they, their and them.  “They won’t let us get away with anything less than that.”</p>
+
+
+<div class="ghosts">
+  <div class="ghost g-1"><div class="front"></div><div class="back"></div></div>
+  <div class="ghost g-2"><div class="front"></div><div class="back"></div></div>
+  <div class="ghost g-3"><div class="front"></div><div class="back"></div></div>
+  <div class="ghost g-4"><div class="front"></div><div class="back"></div></div>
+  <div class="ghost g-5"><div class="front"></div><div class="back"></div></div>
+  <div class="ghost g-6"><div class="front"></div><div class="back"></div></div>
+  <div class="ghost g-7"><div class="front"></div><div class="back"></div></div>
+  <div class="ghost g-8"><div class="front"></div><div class="back"></div></div>
+</div>
 
 
              </div> 
@@ -201,22 +226,115 @@
 
 
 
-    <section class="text-block" id="trees">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1 copy marginless">
-                    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                    
-                    <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                    
-                    <p>Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                    
-                    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.
-                    </p>
-             </div> 
-          </div> 
-        </div>   
-    </section>
+    <section class="text-block" id="trees"><div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 copy marginless">
+    
+    <p>Behind the mission</p>
+    <p>For Pace, who came out as gay at age 16, the DFL is a chance to combine the activism of their youth with their deep background in tech and gaming.</p>
+    <p>Much of Pace’s two decades of software development experience was spent at Microsoft, where they helped direct and produce everything from casual games to the Xbox flagship title Halo. And while they loved the creative challenge, they learned a lot about the industry that they wanted to change.</p>
+    <p>“Video game studios are still very much a cisgender, white, straight male world,” Pace says. And it’s not often a very tolerant world, either. One need go no further than video game forums, chatrooms or comment boards to see offensive slurs tossed around casually — or, worse, to see targeted hate campaigns.</p>
+    <p>More broadly, the tech industry is often criticized for its dearth of diversity. Employment is skewed in favor of whites and men, and against other groups.</p>
+    <p>So when Pace joined UW Bothell in 2012, they wanted to change that. They started by bringing on Braxton, a UW Bothell graduate who was committed to equity and social justice. Together, the two have focused their efforts on countering bias and toxic work culture. They have baked into the identity of the DFL what they call “radical diversity”: the intentional focus on maximizing and foregrounding difference on a team of people with different backgrounds, abilities and academic focuses.</p>
+
+    <div class="gallery">
+      <div class="side-pic" id="pic2">
+        <figure class="zoom-effect">
+            <div class="aspectRatioPlaceholder" >
+                <div class="aspect-ratio-fill""></div>
+                <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-1.jpg' ?>">
+            </div>
+        </figure>
+      </div>
+      <div class="side-pic" id="pic2">
+        <figure class="zoom-effect">
+            <div class="aspectRatioPlaceholder" >
+                <div class="aspect-ratio-fill""></div>
+                <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-2.jpg' ?>">
+            </div>
+        </figure>
+      </div>
+      <div class="side-pic" id="pic2">
+        <figure class="zoom-effect">
+            <div class="aspectRatioPlaceholder" >
+                <div class="aspect-ratio-fill""></div>
+                <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-3.jpg' ?>">
+            </div>
+        </figure>
+      </div>
+      <div class="side-pic" id="pic2">
+        <figure class="zoom-effect">
+            <div class="aspectRatioPlaceholder" >
+                <div class="aspect-ratio-fill""></div>
+                <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-4.jpg' ?>">
+            </div>
+        </figure>
+      </div>
+      <div class="side-pic" id="pic2">
+        <figure class="zoom-effect">
+            <div class="aspectRatioPlaceholder" >
+                <div class="aspect-ratio-fill""></div>
+                <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-5.jpg' ?>">
+            </div>
+        </figure>
+      </div>
+      <div class="side-pic" id="pic2">
+        <figure class="zoom-effect">
+            <div class="aspectRatioPlaceholder" >
+                <div class="aspect-ratio-fill""></div>
+                <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-6.jpg' ?>">
+            </div>
+        </figure>
+      </div>
+      <div class="side-pic" id="pic2">
+        <figure class="zoom-effect">
+            <div class="aspectRatioPlaceholder" >
+                <div class="aspect-ratio-fill""></div>
+                <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-7.jpg' ?>">
+            </div>
+        </figure>
+      </div>
+      <div class="side-pic" id="pic2">
+        <figure class="zoom-effect">
+            <div class="aspectRatioPlaceholder" >
+                <div class="aspect-ratio-fill""></div>
+                <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-8.jpg' ?>">
+            </div>
+        </figure>
+      </div>
+    </div>
+
+    <p>In planned topic discussions or spontaneous conversations, some students might speak about the racism or sexism they’ve experienced. Some might speak about neurological differences, or neurodiversity. For example, Pace, who has ADHD, likes to talk about how they have drastically different communication needs than people with Asperger’s. </p>
+    <p>And some students, like Scout, who came out in the lab, talk about gender identity:</p>
+    <p class="callout quote">“After four years of working in a space where my identity as a queer person, as a trans person, was not a negative, I feel way more comfortable with who I am,”</p>
+    <p> he says. “Here, we’re not just accommodating different folks. We’re valuing their differences and looking for how they can be beneficial to everyone.”</p>
+    <p>Ghostlight Manor goes commercial</p>
+    <p>In September, a handful of students and staff from the DFL had the opportunity to showcase Ghostlight Manor, their first commercial release, at an open house hosted at Microsoft. Scores of game enthusiasts wandered among rows of computers, chatting with representatives from over 50 developers from around the world that were publishing their games on Xbox and Windows 10 devices.</p>
+    <p>Braxton watched as a woman gave Ghostlight Manor a try. A phalanx of unknown monsters, masked in white, advanced down the screen in serpentine fashion. The only defense was Lightbot, whose beams of light first revealed the monsters — ghosts, demons, vampires — and then scared them away.</p>
+    <p>“Oh my gosh!” said the woman. She had just unmasked a pair of zombies, and they were mad.</p>
+    <p>Braxton smiled. “Just to see how shiny and glitzy our product has become, and to see it standing up next to all these other titles, makes me really proud,” she said.</p>
+    
+    
+    <div class="ghosts">
+      <div class="ghost g-1"><div class="front"></div><div class="back"></div></div>
+      <div class="ghost g-2"><div class="front"></div><div class="back"></div></div>
+      <div class="ghost g-3"><div class="front"></div><div class="back"></div></div>
+      <div class="ghost g-4"><div class="front"></div><div class="back"></div></div>
+      <div class="ghost g-5"><div class="front"></div><div class="back"></div></div>
+      <div class="ghost g-6"><div class="front"></div><div class="back"></div></div>
+      <div class="ghost g-7"><div class="front"></div><div class="back"></div></div>
+      <div class="ghost g-8"><div class="front"></div><div class="back"></div></div>
+    </div>
+    
+    
+                 </div> 
+              </div> 
+            </div>   
+        </div>
+
+    <div class="back"></div><div class="middle"></div><div class="fore"></div>
+  </section>
 
 
     <section class="text-block giving-widget">
