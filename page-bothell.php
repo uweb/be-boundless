@@ -337,13 +337,105 @@
   </section>
 
 
+  <section class="text-block" id="avatars">
+      <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <!-- <h3 class="team">The team</h3> -->
+            <ul id="avatars">
+              <li><img width="127" height="140" alt="Aina" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Aina.png' ?>"><p>Aina</p></li>
+              <li><img width="127" height="140" alt="Emmett" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Emmett.png' ?>"><p>Emmett</p></li>
+              <li><img width="127" height="140" alt="Jason" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Jason.png' ?>"><p>Jason</p></li>
+              <li><img width="127" height="140" alt="Joscelyn" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Joscelyn.png' ?>"><p>Joscelyn</p></li>
+              <li><img width="127" height="140" alt="Lamiya" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Lamiya.png' ?>"><p>Lamiya</p></li>
+              <li><img width="127" height="140" alt="Malik" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Malik.png' ?>" ><p>Malik</p></li>
+              <li><img width="127" height="140" alt="Morgan" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Morgan.png' ?>"><p>Morgan</p></li>
+              <li><img width="127" height="140" alt="Nathan" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Nathan.png' ?>"><p>Nathan</p></li>
+            </ul>
+          </div>
+      </div>
+  </section>
+
+
+
+
+
+      <section class="text-block" id="creating">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-10 col-md-offset-1 copy">
+   
+
+  <div class="calloutBox">
+    <h2>Creating a game at the DFL</h2>
+    <div><p>The game Ghostlight Manor is the product of over three years of work by scores of students, from its humble beginnings as an educational prototype to a highly polished version for the public.</p>
+    <p>“The best thing about watching the game proceed along development is the people who have been able to influence the creative direction.”<small>—Digital Future Lab Executive Director Jason Pace</small></p></div>
+
+  </div>
+
+
+  <ul class="dates">
+    <li>
+      <h3><span>July 2013: </span>Early days</h3>
+      <p>Emmett Scout and Jason Pace begin working with UW Bothell Professor of Computing and Software Systems Kelvin Sung and a number of his undergraduate computer science students. Together, they design and prototype a casual game called Ghostlight. For the next two years, they develop it into a polished game for mobile devices and desktop computers, called Ghostlight Manor.</p>
+    </li>
+
+    <li>
+      <h3><span>April 2014: </span>Prototype</h3>
+      <p>The prototyping team, now including Aina Braxton and other DFL interns, delivers the first proof-of-concept playable Ghostlight demo for Windows PC. There is no sound, no tutorials and only placeholder graphics.</p>
+      <a class="video-popup" data-url="https://www.youtube.com/embed/jO1lp0xcTYQ?autoplay=1&rel=0&amp;showinfo=0&amp" href="http://youtu.be/jO1lp0xcTYQ"><img width="275" height="147" alt="Video" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/video-1.jpg' ?>"></a>
+    </li>
+
+    <li>
+      <h3><span>October 2014: </span>Prototype 2.0</h3>
+      <img width="350" alt="Emoticons" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/icons.png' ?>">
+      <p>The first full production team, about a dozen interns, works over the summer and through the beginning of fall quarter to deliver version one of the Ghostlight educational prototype for Windows PC. This version includes a tutorial system, custom art, music and sound, and five playable levels.</p>
+      <a class="video-popup" data-url="https://www.youtube.com/embed/o2-Kx94EBO0?autoplay=1&rel=0&amp;showinfo=0&amp" href="http://youtu.be/o2-Kx94EBO0"><img width="275" height="167" alt="Video" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/video-2.jpg' ?>"></a>
+    </li>
+
+    <li>
+      <h3><span>October 2015: </span>Game goes mobile</h3>
+      <p>Immediately after releasing the educati class="video-popup"onal prototype, the DFL begins work toward releasing Ghostlight, now called Ghostlight Manor, as their first commercial release, for mobile devices. The team grows to about 25 interns; they design a 50-level progression with a dozen unique game modes and six unique game environments.</p>
+      <a class="video-popup" data-url="https://www.youtube.com/embed/hu-67zhrKu4?autoplay=1&rel=0&amp;showinfo=0&amp" href="http://youtu.be/hu-67zhrKu4"><img width="275" height="167" alt="Video" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/video-2.jpg' ?>"></a>
+    </li>
+
+    <li>
+      <h3><span>Fall 2016: </span>Developing a richer game experience for desktop</h3>
+      <p>After releasing the mobile version of Ghostlight Manor, the DFL decides to prep the game for PC/Mac and raise the quality bar even higher. The team working on the game grows to about 30 interns; in addition to reworking most of the game, they add a robust user research and play testing team that focuses on accessibility, balance — and the “fun factor.”</p>
+      <a class="video-popup" data-url="https://www.youtube.com/embed/ZQSkbD1g7Ug?autoplay=1&rel=0&amp;showinfo=0&amp" href="http://youtu.be/ZQSkbD1g7Ug"><img width="275" height="167" alt="Video" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/video-2.jpg' ?>"></a>
+    </li>
+  </ul>
+
+
+  <div class="ghosts">
+    <div class="ghost g-1"><div class="front"></div><div class="back"></div></div>
+    <div class="ghost g-2"><div class="front"></div><div class="back"></div></div>
+    <div class="ghost g-3"><div class="front"></div><div class="back"></div></div>
+    <div class="ghost g-4"><div class="front"></div><div class="back"></div></div>
+    <div class="ghost g-5"><div class="front"></div><div class="back"></div></div>
+    <div class="ghost g-6"><div class="front"></div><div class="back"></div></div>
+    <div class="ghost g-7"><div class="front"></div><div class="back"></div></div>
+    <div class="ghost g-8"><div class="front"></div><div class="back"></div></div>
+  </div>
+
+
+               </div> 
+            </div> 
+          </div>   
+          <div class="bottom-smoke"></div>
+      </section>
+
+
+
+
+
+
     <section class="text-block giving-widget">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy">
                   <div style="text-align: center">             
                     <h2 class="headline-gold">Help make a difference</h2>
-                    <p>You can help the University of Washington expand our impact everywhere by <br>contributing to these funds.</p>
+                    <p>When you support a student program like the Digital Future Lab, you can help students get hands-on, career-shaping experiences that prepare them for the workforce.</p>
                     <div id="immersive-give-iframe"></div>
                     <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="UBPLAY,UWBSTU,UBSTEM" href="#">Give now</a></span></div>
                   </div>
@@ -357,8 +449,11 @@
 
 </main>
 
-
 </div>
+
+
+<div id="popup"></div>
+
 
 
  <!-- **** JS **** -->      

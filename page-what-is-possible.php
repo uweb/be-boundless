@@ -649,8 +649,6 @@
             <p>In the months since the Portfolio of Possibilities exhibit ended, new sketches and plans cover the walls of the CMA building. Former students Bampton and Young pursue careers as working artists, and new students manipulate glass and metal alongside Zirpel and McNeel.</p>
             <p>But curiosity continues to spark innovation. Every day faculty and students in the College of Arts &amp; Sciences come together to question, explore and push at the edges of what’s been done before. By supporting our students, faculty and programs, you can join us in expanding what’s possible.</p>
             <p>Learn more about the artwork in the <a href="http://www.portfoliopossibilities.com/">Portfolio of Possibilities.</a></p>
-            <hr>
-            <p style="text-align: center"><small>Photos courtesy James Harnois, MadArt Seattle, Amie McNeil, Sam Stubblefield, Collin Bampton, Tzyy Yi (Amy) Young.</small></p>
         </section>
     </section>
 
@@ -669,6 +667,9 @@
      </div>
    </section>
 
+   <hr style="max-width: 720px">
+   <p style="text-align: center;"><small>Photos courtesy James Harnois, MadArt Seattle, Amie McNeil, Sam Stubblefield, Collin Bampton, Tzyy Yi (Amy) Young.</small></p>
+
 </main>
 
 
@@ -678,7 +679,6 @@
  <!-- **** JS **** -->
 
  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/animationLibraries.min.js' ?>" type="text/javascript"></script>
-
  <script src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/js/arts.min.js' ?>" type="text/javascript"></script>
  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
 

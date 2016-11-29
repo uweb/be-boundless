@@ -44,7 +44,43 @@ function videoPlay(vid){
   }
 }
 
+// Video Popup, much like the above, but makes it a modal
 
+
+$('.video-popup').each(function(ed){
+
+  var $body = $("body");
+
+  var boundlessVideo = document.getElementById("popup"),
+  videoHTML = 
+    '<button class="close-video"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>' +
+    '<div id="youtube-video">' + 
+    '<iframe title="YouTube video" id="embedVid" width=' + $body.width() + ' height=' + $body.height() + ' src="' + $(this).data('url') + '" frameborder="0" allowfullscreen autoplay></iframe>' +
+    '</div>';
+
+  if (isMobile.matches) {
+    boundlessVideo.innerHTML = videoHTML;
+  } else {
+    this.addEventListener('click',function(e){
+       e.preventDefault();     
+       boundlessVideo.innerHTML = videoHTML;
+
+       setTimeout( function(){
+         $('#popup iframe')[0].focus()
+       }, 500 );
+
+       $(".close-video").click(function(){
+         $(".play").removeClass("hidden");
+         $body.toggleClass("playingPopup");
+         boundlessVideo.innerHTML = '';
+       });
+
+      $body.toggleClass("playingPopup");
+      
+    });
+  }
+
+})
 
 
 
