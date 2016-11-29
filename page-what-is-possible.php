@@ -374,7 +374,7 @@
                 <div class="panel">
                     <section class="cell">
                         <blockquote class="pull">Ultimately I'm interested in teaching because I think, especially in art, it can make a difference. It's a language that can convey meaning that verbal communication can't necessarily convey.</blockquote>
-                        <p class="sm_name">Amie McNeil, Associate Professor, School of Art + Art History + Design</p>
+                        <p class="sm_name">Amie McNeel, Associate Professor, School of Art + Art History + Design</p>
                         <p>When Zirpel and McNeel asked former 3D4M students Collin Bampton and Tzyy Yi (Amy) Young to be research assistants on a big project, the two didn’t know quite what they were getting into. But given the opportunity to work alongside such talented and innovative professionals, the answer was an immediate ‘Yes.’</p>
                         <p>During the fabrication stage of Portfolio of Possibilities in School of Art + Art History + Design’s Ceramic Metal Arts (CMA) building, Bampton and Young made molds for anvils, welded and fabricated metal parts, and weighed in on design for a couple of the key pieces that would eventually make it to MadArt.</p>
                         <p>But they weren’t the only students that benefitted. Throughout early fabrication, students in classes at the CMA observed Zirpel and McNeel as both teachers and artists — planning, creating, failing, and starting over. They got to see first-hand what it means to be a maker. It’s not always about a clear vision for a final product. It’s about asking meaningful questions and taking bold steps to answer them.</p>
@@ -668,7 +668,7 @@
    </section>
 
    <hr style="max-width: 720px">
-   <p style="text-align: center;"><small>Photos courtesy James Harnois, MadArt Seattle, Amie McNeil, Sam Stubblefield, Collin Bampton, Tzyy Yi (Amy) Young.</small></p>
+   <p style="text-align: center;"><small>Photos courtesy James Harnois, MadArt Seattle, Amie McNeel, Sam Stubblefield, Collin Bampton, Tzyy Yi (Amy) Young.</small></p>
 
 </main>
 

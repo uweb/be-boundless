@@ -340,16 +340,51 @@
   <section class="text-block" id="avatars">
       <div class="row">
           <div class="col-md-10 col-md-offset-1">
-            <!-- <h3 class="team">The team</h3> -->
+
+            <h3 class="team">Meet some of the DFL’s players</h3>
+            <p>The Digital Future Lab is most definitely a multiplayer game. From QA testers just dipping their toes into the gaming world to full-time staff, nobody goes it alone. Meet a few of the DFL’s players.</p>
+
             <ul id="avatars">
-              <li><img width="127" height="140" alt="Aina" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Aina.png' ?>"><p>Aina</p></li>
-              <li><img width="127" height="140" alt="Emmett" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Emmett.png' ?>"><p>Emmett</p></li>
-              <li><img width="127" height="140" alt="Jason" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Jason.png' ?>"><p>Jason</p></li>
-              <li><img width="127" height="140" alt="Joscelyn" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Joscelyn.png' ?>"><p>Joscelyn</p></li>
-              <li><img width="127" height="140" alt="Lamiya" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Lamiya.png' ?>"><p>Lamiya</p></li>
-              <li><img width="127" height="140" alt="Malik" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Malik.png' ?>" ><p>Malik</p></li>
-              <li><img width="127" height="140" alt="Morgan" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Morgan.png' ?>"><p>Morgan</p></li>
-              <li><img width="127" height="140" alt="Nathan" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Nathan.png' ?>"><p>Nathan</p></li>
+              <li>
+               <div> <img width="127" height="140" alt="Aina" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Aina.png' ?>">
+               <p class="name">Aina Braxton <span>Staff // Lead Producer, Assistant Director</span></p></div>
+                <p class="quotes">The biggest challenge I enjoyed tackling at the DFL was coming in with no background knowledge of the parts and pieces that went into software development. I learned to rely heavily on research, humility and my own creative instincts.</p>
+              </li>
+              <li>
+                <div><img width="127" height="140" alt="Emmett" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Emmett.png' ?>">
+                <p class="name">Emmett Scout <span>Senior // Major: Interactive Media and Social Justice</span></p></div>
+                <p class="quotes">I’m a much better designer for having shared studio space with so many different kinds of brains, skills and disciplines.</p>    
+              </li>
+              <li>
+                <div><img width="127" height="140" alt="Jason" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Jason.png' ?>">
+                <p class="name">Jason Pace <span>Staff // Executive Director</span></p></div>
+                <p class="quotes">The DFL has ignited my passion to make tech industry careers accessible to a more diverse workforce.</p>
+              </li>
+              <li>
+                <div><img width="127" height="140" alt="Joscelyn" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Joscelyn.png' ?>">
+                <p class="name">Joscelyn Kim <span>Senior // Major: Computer Science and Software Engineering</span></p></div>
+                <p class="quotes">The DFL has given me the chance to work in a professional environment and experience the challenges of game development. I’ve gained confidence in my programming skills through working with and learning from other developers.</p>
+              </li>
+              <li>
+                <div><img width="127" height="140" alt="Lamiya" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Lamiya.png' ?>">
+                <p class="name">Lamiya Kazi <span>Junior // Intended Major: Electrical Engineering</span></p></div>
+                <p class="quotes">The biggest challenge I’ve faced at the DFL would have to be crunch week. It can be pretty stressful, but it highlights how well our team works together through thick and thin.</p>
+              </li>
+              <li>
+                <div><img width="127" height="140" alt="Malik" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Malik.png' ?>" >
+                <p class="name">Malik Bseikri<span>Senior // Major: Information Systems and Finance</span></p></div>
+                <p class="quotes">The DFL has taught me a ton about communication styles, but I’ve also learned how to be more cognizant of the environment I am in, and to react and communicate accordingly.</p>
+              </li>
+              <li>
+                <div><img width="127" height="140" alt="Morgan" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Morgan.png' ?>">
+                <p class="name">Morgan Thomas <span>Sophomore // Intended Major: Undecided</span></p></div>
+                <p class="quotes">I’ve learned how to use a whole host of art programs since joining! I started off only knowing how to use basic 2-D art programs, and now I know a small variety of both 2-D and 3-D software.</p>
+              </li>
+              <li>
+                <div><img width="127" height="140" alt="Nathan" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Nathan.png' ?>">
+                <p class="name">Nathan Evers <span>Staff // Lead Artist</span></p></div>
+                <p class="quotes">Seeing young professionals of all disciplines, ethnicity, backgrounds and identities engage passionately in interactive media production is hugely encouraging for the future of our industry.</p>
+              </li>
             </ul>
           </div>
       </div>
@@ -394,7 +429,7 @@
 
     <li>
       <h3><span>October 2015: </span>Game goes mobile</h3>
-      <p>Immediately after releasing the educati class="video-popup"onal prototype, the DFL begins work toward releasing Ghostlight, now called Ghostlight Manor, as their first commercial release, for mobile devices. The team grows to about 25 interns; they design a 50-level progression with a dozen unique game modes and six unique game environments.</p>
+      <p>Immediately after releasing the educational prototype, the DFL begins work toward releasing Ghostlight, now called Ghostlight Manor, as their first commercial release, for mobile devices. The team grows to about 25 interns; they design a 50-level progression with a dozen unique game modes and six unique game environments.</p>
       <a class="video-popup" data-url="https://www.youtube.com/embed/hu-67zhrKu4?autoplay=1&rel=0&amp;showinfo=0&amp" href="http://youtu.be/hu-67zhrKu4"><img width="275" height="167" alt="Video" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/video-2.jpg' ?>"></a>
     </li>
 
