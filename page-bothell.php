@@ -359,42 +359,42 @@
 
             <ul id="avatars">
               <li>
-               <div> <img width="127" height="140" alt="Aina" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Aina.png' ?>">
+               <div> <img width="127" height="140" alt="Aina" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/avatars/Avatar_Aina.png' ?>">
                <p class="name">Aina Braxton <span>Staff // Lead Producer, Assistant Director</span></p></div>
                 <p class="quotes">The biggest challenge I enjoyed tackling at the DFL was coming in with no background knowledge of the parts and pieces that went into software development. I learned to rely heavily on research, humility and my own creative instincts.</p>
               </li>
               <li>
-                <div><img width="127" height="140" alt="Emmett" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Emmett.png' ?>">
+                <div><img width="127" height="140" alt="Emmett" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/avatars/Avatar_Emmett.png' ?>">
                 <p class="name">Emmett Scout <span>Senior // Major: Interactive Media and Social Justice</span></p></div>
                 <p class="quotes">I’m a much better designer for having shared studio space with so many different kinds of brains, skills and disciplines.</p>    
               </li>
               <li>
-                <div><img width="127" height="140" alt="Jason" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Jason.png' ?>">
+                <div><img width="127" height="140" alt="Jason" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/avatars/Avatar_Jason.png' ?>">
                 <p class="name">Jason Pace <span>Staff // Executive Director</span></p></div>
                 <p class="quotes">The DFL has ignited my passion to make tech industry careers accessible to a more diverse workforce.</p>
               </li>
               <li>
-                <div><img width="127" height="140" alt="Joscelyn" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Joscelyn.png' ?>">
+                <div><img width="127" height="140" alt="Joscelyn" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/avatars/Avatar_Joscelyn.png' ?>">
                 <p class="name">Joscelyn Kim <span>Senior // Major: Computer Science and Software Engineering</span></p></div>
                 <p class="quotes">The DFL has given me the chance to work in a professional environment and experience the challenges of game development. I’ve gained confidence in my programming skills through working with and learning from other developers.</p>
               </li>
               <li>
-                <div><img width="127" height="140" alt="Lamiya" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Lamiya.png' ?>">
+                <div><img width="127" height="140" alt="Lamiya" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/avatars/Avatar_Lamiya.png' ?>">
                 <p class="name">Lamiya Kazi <span>Junior // Intended Major: Electrical Engineering</span></p></div>
                 <p class="quotes">The biggest challenge I’ve faced at the DFL would have to be crunch week. It can be pretty stressful, but it highlights how well our team works together through thick and thin.</p>
               </li>
               <li>
-                <div><img width="127" height="140" alt="Malik" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Malik.png' ?>" >
+                <div><img width="127" height="140" alt="Malik" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/avatars/Avatar_Malik.png' ?>" >
                 <p class="name">Malik Bseikri<span>Senior // Major: Information Systems and Finance</span></p></div>
                 <p class="quotes">The DFL has taught me a ton about communication styles, but I’ve also learned how to be more cognizant of the environment I am in, and to react and communicate accordingly.</p>
               </li>
               <li>
-                <div><img width="127" height="140" alt="Morgan" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Morgan.png' ?>">
+                <div><img width="127" height="140" alt="Morgan" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/avatars/Avatar_Morgan.png' ?>">
                 <p class="name">Morgan Thomas <span>Sophomore // Intended Major: Undecided</span></p></div>
                 <p class="quotes">I’ve learned how to use a whole host of art programs since joining! I started off only knowing how to use basic 2-D art programs, and now I know a small variety of both 2-D and 3-D software.</p>
               </li>
               <li>
-                <div><img width="127" height="140" alt="Nathan" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Nathan.png' ?>">
+                <div><img width="127" height="140" alt="Nathan" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/avatars/Avatar_Nathan.png' ?>">
                 <p class="name">Nathan Evers <span>Staff // Lead Artist</span></p></div>
                 <p class="quotes">Seeing young professionals of all disciplines, ethnicity, backgrounds and identities engage passionately in interactive media production is hugely encouraging for the future of our industry.</p>
               </li>
