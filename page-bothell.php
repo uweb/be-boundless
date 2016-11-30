@@ -316,6 +316,19 @@
     <p>Braxton smiled. “Just to see how shiny and glitzy our product has become, and to see it standing up next to all these other titles, makes me really proud,” she said.</p>
     
     
+    <div class="giving">
+      <h2>Teaching, learning — and creating</h2>
+      <p>All of the Digital Future Lab’s games start as research prototypes led by DFL and Professor of Computing and Software Systems (CSS) Kelvin Sung. Funded by a National Science Foundation grant and support from Google and Microsoft, Sung’s program gives introductory computer science students the opportunity to learn basic programming concepts by building casual games. </p>
+      <p>Successful prototypes like Ghostlight Manor make their way into the co-curricular commercial pipeline of the DFL, opening up educational opportunities across all disciplines — from computer science and communication to social justice and art. Students can get involved through credit capstones and independent study projects, or even a course taught by Pace, who is core faculty in Interactive Media Design (IMD), and affiliate faculty in CSS and Interdisciplinary Arts & Sciences (IAS). </p>
+      <p>Other students dip their toes into the world of game creation as game testers or junior designers or developers. Only a few students, though, hold paid senior internships, something Pace and Braxton wish to change.</p>
+      <p>“Unpaid internships aren’t sustainable,” says Braxton. “To create a truly equitable workplace, we need paid internships for more students — not just those who can afford to work without pay.”</p>  
+      <h3 class="headline-gold">Help make a difference</h3>
+      <p>When you support a student program like the Digital Future Lab, you can help students get hands-on, career-shaping experiences that prepare them for the workforce.</p>
+      <div id="immersive-give-II-iframe"></div>
+      <div style="text-align: center;"><div class="boundless-button sm dark give"><span><a id="immersive-give-II" data-fund="UBPLAY,UWBSTU,UBSTEM" href="#">Give now</a></span></div></div>    
+    </div>
+
+
     <div class="ghosts">
       <div class="ghost g-1"><div class="front"></div><div class="back"></div></div>
       <div class="ghost g-2"><div class="front"></div><div class="back"></div></div>
@@ -417,26 +430,30 @@
     <li>
       <h3><span>April 2014: </span>Prototype</h3>
       <p>The prototyping team, now including Aina Braxton and other DFL interns, delivers the first proof-of-concept playable Ghostlight demo for Windows PC. There is no sound, no tutorials and only placeholder graphics.</p>
-      <a class="video-popup" data-url="https://www.youtube.com/embed/jO1lp0xcTYQ?autoplay=1&rel=0&amp;showinfo=0&amp" href="http://youtu.be/jO1lp0xcTYQ"><img width="275" height="147" alt="Video" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/video-1.jpg' ?>"></a>
+      <a class="video-popup" data-lity href="https://www.youtube.com/embed/jO1lp0xcTYQ?autoplay=1&rel=0&amp;showinfo=0&amp"><img width="275" height="147" alt="Video" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/video-1.jpg' ?>"></a>
+      <div class="popup"></div>
     </li>
 
     <li>
       <h3><span>October 2014: </span>Prototype 2.0</h3>
       <img width="350" alt="Emoticons" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/icons.png' ?>">
       <p>The first full production team, about a dozen interns, works over the summer and through the beginning of fall quarter to deliver version one of the Ghostlight educational prototype for Windows PC. This version includes a tutorial system, custom art, music and sound, and five playable levels.</p>
-      <a class="video-popup" data-url="https://www.youtube.com/embed/o2-Kx94EBO0?autoplay=1&rel=0&amp;showinfo=0&amp" href="http://youtu.be/o2-Kx94EBO0"><img width="275" height="167" alt="Video" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/video-2.jpg' ?>"></a>
+      <a class="video-popup" data-lity href="https://www.youtube.com/embed/o2-Kx94EBO0?autoplay=1&rel=0&amp;showinfo=0&amp"><img width="275" height="167" alt="Video" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/video-2.jpg' ?>"></a>
+      <div class="popup"></div>
     </li>
 
     <li>
       <h3><span>October 2015: </span>Game goes mobile</h3>
       <p>Immediately after releasing the educational prototype, the DFL begins work toward releasing Ghostlight, now called Ghostlight Manor, as their first commercial release, for mobile devices. The team grows to about 25 interns; they design a 50-level progression with a dozen unique game modes and six unique game environments.</p>
-      <a class="video-popup" data-url="https://www.youtube.com/embed/hu-67zhrKu4?autoplay=1&rel=0&amp;showinfo=0&amp" href="http://youtu.be/hu-67zhrKu4"><img width="275" height="167" alt="Video" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/video-2.jpg' ?>"></a>
+      <a class="video-popup" data-lity href="https://www.youtube.com/embed/hu-67zhrKu4?autoplay=1&rel=0&amp;showinfo=0&amp"><img width="275" height="167" alt="Video" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/video-2.jpg' ?>"></a>
+      <div class="popup"></div>
     </li>
 
     <li>
       <h3><span>Fall 2016: </span>Developing a richer game experience for desktop</h3>
       <p>After releasing the mobile version of Ghostlight Manor, the DFL decides to prep the game for PC/Mac and raise the quality bar even higher. The team working on the game grows to about 30 interns; in addition to reworking most of the game, they add a robust user research and play testing team that focuses on accessibility, balance — and the “fun factor.”</p>
-      <a class="video-popup" data-url="https://www.youtube.com/embed/ZQSkbD1g7Ug?autoplay=1&rel=0&amp;showinfo=0&amp" href="http://youtu.be/ZQSkbD1g7Ug"><img width="275" height="167" alt="Video" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/video-2.jpg' ?>"></a>
+      <a class="video-popup" data-lity href="https://www.youtube.com/embed/ZQSkbD1g7Ug?autoplay=1&rel=0&amp;showinfo=0&amp"><img width="275" height="167" alt="Video" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/video-2.jpg' ?>"></a>
+      <div class="popup"></div>
     </li>
   </ul>
 

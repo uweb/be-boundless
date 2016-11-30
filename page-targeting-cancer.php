@@ -263,7 +263,7 @@
                             <div class="col-md-10 col-md-offset-1 copy">
                               <div style="text-align: center">             
                                 <h2 class="headline-gold">Help make a difference</h2>
-                                <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless – For Washington, For the World. You can help UW Medicine expand our impact everywhere by contributing to these funds.</p>
+                                <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless &mdash; For Washington, For the World. You can help UW Medicine expand our impact everywhere by contributing to these funds.</p>
                                 <div id="immersive-give-iframe"></div>
                                 <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="HEMATL,PATHCA,STEMCR" href="#">Give now</a></span></div>
                               </div>

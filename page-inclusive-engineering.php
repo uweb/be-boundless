@@ -306,7 +306,7 @@
                      <div class="col-md-10 col-md-offset-1 copy">
                        <div style="text-align: center">             
                          <h2 class="headline-gold">Help make a difference</h2>
-                         <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless – For Washington, For the World. You can help the College of Engineering empower possibility through innovation by contributing to these funds.</p>
+                         <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless &mdash; For Washington, For the World. You can help the College of Engineering empower possibility through innovation by contributing to these funds.</p>
                          <div id="immersive-give-iframe"></div>
                          <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="MEHTIF,CSNEDI,ENGSEN" href="#">Give now</a></span></div>
                        </div>
