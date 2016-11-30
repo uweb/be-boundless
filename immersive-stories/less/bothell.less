@@ -293,7 +293,7 @@ p {
             text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
         }
         a.read-more {
-            top: calc(~"100vh - 55px");
+            bottom: 50px;
         }
         .intro-body {
             #intro-text {
@@ -491,6 +491,12 @@ p {
     .copy {
         background-color: transparent;
         position: relative;
+        & > p:nth-child(1) {
+            font-family: @uni;
+            text-transform: uppercase;
+            font-size: 30px;
+            text-align: center;
+        }
     }
     #back {
         background-image: url("@{bothell}/back.jpg");
@@ -509,28 +515,22 @@ p {
         background-position: center bottom;
         .translate(0,600px);
     }
-    #robot {
-        background: url("@{bothell}/robot.png") center bottom no-repeat transparent;
-        .translate(0,600px);
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        margin-left: -195px;
-        width: 390px;
-        height: 1050px;
-    }
     @media (min-width: 768px) {
         &.text-block .copy {
             padding: 100px 150px 250px;
             & > p:nth-child(1) {
-                font-family: @uni;
-                text-transform: uppercase;
                 font-size: 40px;
-                text-align: center;
             }
         }
-        .faces {
-
+        #robot {
+            background: url("@{bothell}/robot.png") center bottom no-repeat transparent;
+            .translate(0,600px);
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -195px;
+            width: 390px;
+            height: 1050px;
         }
     }
     @media (max-width: 768px) {
@@ -1427,7 +1427,7 @@ p {
 .zoom-effect .img{
     cursor: pointer;
     cursor: -webkit-zoom-in;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .zoom-effect .zoomImg,
@@ -1475,59 +1475,15 @@ p {
         height: 100px;
         position: relative;
         margin: 0 0 0 0;
-        // .aspectRatioPlaceholder {
-        //     p {
-        //         .translate(0,150px);
-        //         .transition(transform .2s linear);
-        //     }
-        //     &:hover {
-        //         p {
-        //             .translate(0,0);
-        //         }
-        //     }
-        // }
         &.active {
             p {
                 display: none;
             }
-            // img {
-            //     .translate(0,0);
-            // }
-            // #the-overlay {
-            //     .translate(0,0);
-            // }
         }
         p {
             display: none;
         }
-        // p {
-        //     position: absolute;
-        //     width: 100%;
-        //     bottom: 0;
-        //     z-index: 9999;
-        //     background-color: rgba(0, 0, 0, 0.62);
-        //     padding: 10px 20px;
-        //     color: white;
-        //     font-size: 15px;
-        //     line-height: 1.4;
-        //     display: inline-block;
-        //     margin: 0;
-        // }
-        // &.active {
-        //     overflow: visible;
-        // }
-        &:not(.active) img {
-            max-width: 100%;
-            height: auto;
-            position: absolute;
-            .transition(transform .1s linear);
-            &:hover,
-            &:active,
-            &:focus {
-                .scale(1.1,1.1);
-                z-index: 100;
-            }
-        }
+        
 
     }
     @media @desktop-up { 
@@ -1535,20 +1491,23 @@ p {
         margin: 10% -10%;
         .side-pic {
             height: 140px;
+            &:not(.active) img {
+                max-width: 100%;
+                height: auto;
+                position: absolute;
+                .transition(transform .1s linear);
+                &:hover,
+                &:active,
+                &:focus {
+                    .scale(1.1,1.1);
+                    z-index: 100;
+                }
+            }
         }        
     }
     @media @phone-only {
         .side-pic {
-            width: 44%;
-            height: auto;
-            .aspectRatioPlaceholder {
-                .img {
-                    position: relative;
-                    -webkit-transform: translate(0) !important;
-                    -ms-transform: translate(0) !important;
-                    transform: translate(0) !important;         
-                }
-            }
+            width: 34.5%;
         }
     }
 }
