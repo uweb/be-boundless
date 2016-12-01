@@ -119,7 +119,7 @@
 
   <div class="names">
     <p>Aina Braxton</p>
-    <p>program coordinator <br>DIGITAL FUTURES LAB</p>
+    <p>program coordinator <br>DIGITAL FUTURE LAB</p>
   </div>
 
 
@@ -154,7 +154,7 @@
 
   <div class="names">
     <p>Jason Pace</p>
-    <p>Executive Director <br>DIGITAL FUTURES LAB</p>
+    <p>Executive Director <br>DIGITAL FUTURE LAB</p>
   </div>
 
 </div>
@@ -246,7 +246,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-1.jpg' ?>">
+                <img class="img pic-1" alt="Fusce dapibus, tellus ac cursus commodo" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-1.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -254,7 +254,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-2.jpg' ?>">
+                <img class="img pic-1" alt="Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh," data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-2.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -262,7 +262,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-3.jpg' ?>">
+                <img class="img pic-1" alt="Fusce dapibus, tellus ac cursus commodo, tortor " data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-3.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -270,7 +270,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-4.jpg' ?>">
+                <img class="img pic-1" alt="Fusce dapibus, tellus ac cursus commodo, tortor mauris " data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-4.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -278,7 +278,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-5.jpg' ?>">
+                <img class="img pic-1" alt="SFusce dapibus, tellus ac cursus commodo, tortor " data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-5.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -286,7 +286,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-6.jpg' ?>">
+                <img class="img pic-1" alt="Fusce dapibus, tellus ac cursus" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-6.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -294,7 +294,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-7.jpg' ?>">
+                <img class="img pic-1" alt="Fusce dapibus, tellus ac cursus commodo, ." data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-7.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -302,7 +302,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-8.jpg' ?>">
+                <img class="img pic-1" alt="Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-8.jpg' ?>">
             </div>
         </figure>
       </div>
