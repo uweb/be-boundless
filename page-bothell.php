@@ -97,7 +97,7 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy marginless">
 <p>A day in the lab</p>
-<p>On a Friday morning, students filter into UW Bothell’s Digital Future Lab (DFL) before their weekly check-in meeting.</p>
+<p>On a Friday morning, students filter into UW Bothell’s <a href="http://digitalfuturelab.com/">Digital Future Lab</a> (DFL) before their weekly check-in meeting.</p>
 <p>Adorning the cozy room’s walls are project timelines, a software architecture flowchart, graphic novel illustrations of a red- and purple-tinted alien world. A giant red beanbag chair is tucked in the corner. Rows of computers, covered in Post-it notes and stickers, compete for space with toys and snacks: stuffed Pokémon, jelly beans, a foam Batman figurine, peanut-butter pretzels, a tiny basketball.</p>
 <p class="callout">It may look like you’d expect a <br>game studio to look, <span>but it doesn’t act like one.</span></p>
 
@@ -238,7 +238,7 @@
     <p>For Pace, who came out as gay at age 16, the DFL is a chance to combine the activism of their youth with their deep background in tech and gaming.</p>
     <p>Much of Pace’s two decades of software development experience was spent at Microsoft, where they helped direct and produce everything from casual games to the Xbox flagship title Halo. And while they loved the creative challenge, they learned a lot about the industry that they wanted to change.</p>
     <p>“Video game studios are still very much a cisgender, white, straight male world,” Pace says. And it’s not often a very tolerant world, either. One need go no further than video game forums, chatrooms or comment boards to see offensive slurs tossed around casually — or, worse, to see targeted hate campaigns.</p>
-    <p>More broadly, the tech industry is often criticized for its dearth of diversity. Employment is skewed in favor of whites and men, and against other groups.</p>
+    <p>More broadly, the tech industry is often criticized for its dearth of diversity. <a href="https://www.eeoc.gov/eeoc/statistics/reports/hightech/?utm_content=&utm_medium=email&utm_name=&utm_source=govdelivery&utm_term=">Employment is skewed</a> in favor of whites and men, and against other groups.</p>
     <p>So when Pace joined UW Bothell in 2012, they wanted to change that. They started by bringing on Braxton, a UW Bothell graduate who was committed to equity and social justice. Together, the two have focused their efforts on countering bias and toxic work culture. They have baked into the identity of the DFL what they call “radical diversity”: the intentional focus on maximizing and foregrounding difference on a team of people with different backgrounds, abilities and academic focuses.</p>
     
     <div class="gallery">

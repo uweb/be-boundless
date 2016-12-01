@@ -36,8 +36,14 @@ body {
     video::-webkit-media-controls-start-playback-button {
       display: none;
     }
-
 }
+.copy {
+    a {
+        color: @lightgold;
+        border-bottom: 1px solid rgba(183, 165, 122, 0.53);
+    }
+}
+
 p {
     color: white;
     @media(max-width:768px) {
@@ -971,8 +977,8 @@ p {
         .background-size(100%);
     }
     div.giving {
-        background: #dbb147;
-        border-radius: 15px;
+        background: rgba(0, 0, 0, 0.47);
+        border-radius: 35px;
         border: 3px solid #6d5523;
         padding: 0 5% 3% 5%;
         margin-top: 30px;
@@ -991,10 +997,8 @@ p {
             text-align: center;
             color: white;
             font-size: 25px;
-            color: #313131;
         }
         p {
-            color: #313131;
             font-size: 16px;
             line-height: 1.6;
         }
@@ -1061,7 +1065,7 @@ p {
     }
     @media @tablet-landscape-up { // (min-width: 900px)
         div.giving {
-            border-radius: 85px;
+            border-radius: 50px;
             padding: 0 10% 3% 10%;
             margin-top: 110px;
             h2 {
