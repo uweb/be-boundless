@@ -80,12 +80,49 @@ $(function(){
   .addTo(controllerBothell)
 
 
+
+  // Swamp section
+
+  var clouds = new TimelineMax ()
+        .add([
+          TweenMax.to('#cloud-1', 1,    { transform: 'translateY(0)', ease: Power0.easeIn, delay: 0.1 }),
+          TweenMax.to('#cloud-2', 1,    { transform: 'translateY(-100%)', ease: Power0.easeIn }),
+          TweenMax.to('#moon', 1,    { transform: 'translateY(0)', ease: Power0.easeIn, delay: 0.1 }),
+        ])
+
+  var cloudMoon = new ScrollMagic.Scene({
+    triggerElement: '#video',
+    triggerHook: 0.1,
+    offset: $('#video').height() - $windowHeight,
+    duration: '200%',
+  })
+  .setTween(clouds)
+  .addTo(controllerBothell)
+
+  // Swamp section
+
+  var swamp = new TimelineMax ()
+        .add([
+          TweenMax.to('#swamp', 1,    { transform: 'translateY(0)', ease: Power0.easeIn, delay: 0.1 }),
+        ])
+
+  var creating = new ScrollMagic.Scene({
+    triggerElement: '#creating',
+    triggerHook: 0.1,
+    offset: $('#creating').height() - $windowHeight,
+    duration: '100%',
+  })
+  .setTween(swamp)
+  .addTo(controllerBothell)
+
+
   // Update all scenes on resize
 
   $(window).resize(function(){
       introBothell.update(true);
       trees.update(true);
       jason.update(true);
+      creating.update(true);
   });
 
 

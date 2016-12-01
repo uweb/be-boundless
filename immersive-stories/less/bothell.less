@@ -438,13 +438,33 @@ p {
             }
             &:hover .back   { transform: rotateY(0deg);   }
             &:hover .front  { transform: rotateY(180deg); }
-            .front  { background-image: url("@{bothell}/ghost-2.png"); }
-            .back   { background-image: url("@{bothell}/ghost-1.png"); }
+            .front  { 
+                background-image: url("@{bothell}/ghost-2.png"); 
+                &.red {
+                    background-image: url("@{bothell}/ghost-1-red.png"); 
+                    opacity: .4;
+                }
+                &.green {
+                    background-image: url("@{bothell}/ghost-1-green.png"); 
+                    opacity: .4;
+                }
+                &.franken {
+                    background-image: url("@{bothell}/ghost-1-franken.png"); 
+                    opacity: .4;
+                }
+                &.monster {
+                    background-image: url("@{bothell}/ghost-1-monster.png"); 
+                    opacity: .5;
+                }
+            }
+            .back   { 
+                background-image: url("@{bothell}/ghost-1.png"); 
+            }
             &.g-1 { left: -10vw; top:  -21vh   ; .animation(swing 7s infinite ease-in-out .1s); }
             &.g-2 { left: -3vw;  top:  -58vh   ; .animation(swing 7s infinite ease-in-out .4s); }
             &.g-3 { left: -5vw;  top:  13vh    ; .animation(swing 7s infinite ease-in-out .6s); }
             &.g-4 { left: -10vw; top:  33vh    ; .animation(swing 7s infinite ease-in-out .8s); }
-            &.g-5 { right: -20vw;top:  -13vw  ;  .animation(swing 7s infinite ease-in-out .9s); }
+            &.g-5 { right: -1vwv;top:  -13vw  ;  .animation(swing 7s infinite ease-in-out .9s); }
             &.g-6 { right: -10vw;top:  38vh   ;  .animation(swing 7s infinite ease-in-out .2s); }
             &.g-7 { right: -10vw;top:  -43vh  ;  .animation(swing 7s infinite ease-in-out .4s); }
             &.g-8 { right: -1vw; top:  6vh    ;  .animation(swing 7s infinite ease-in-out 1s); }
@@ -890,29 +910,36 @@ p {
         background-color: transparent;
         position: relative;
     }
-    @media @tablet-portrait-up {
-        background: url("@{bothell}/trees-bottom.jpg") no-repeat center bottom black;
-        .background-cover(100%);
-        & > div {
-            padding-top: 100px;
-            padding-bottom: 500px;
-            background: url("@{bothell}/trees-top.jpg") no-repeat center top transparent;
-        }
-        .copy > p:nth-child(1) {
-            font-family: @uni;
-            text-transform: uppercase;
-            font-size: 40px;
-            text-align: center;
-        }
-        .bottom-smoke {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 200px;
-            background: url("@{bothell}/smoke.jpg") repeat-x center top black;
-            .background-cover(cover);
-        }
+
+    #cloud-1,
+    #cloud-2 { 
+        position: absolute;
+        width: 30vw;
+        height: 25vw;
+    }
+    #cloud-1 {
+        top: 2%;
+        right: 0;
+        background: url("@{bothell}/cloud.png") no-repeat center top transparent;
+        .background-size(100%);
+        .translate(0,600px);
+    }
+    #cloud-2 {
+        top: 10%;
+        background: url("@{bothell}/cloud-2.png") no-repeat center top transparent;
+        .background-size(100%);
+        left: 0;
+        .translate(0,900px);
+    }
+    #moon {
+        position: absolute;
+        background: url("@{bothell}/moon.png") no-repeat center top transparent;
+        .background-size(100%);
+        width: 15vw;
+        height: 15vw;
+        right: 4vw;
+        top: -10%;
+        .translate(0,1200px);
     }
     .back,
     .middle,
@@ -935,11 +962,13 @@ p {
         .background-cover(100%);
         background-position: center bottom;
         .translate(0,300px);
+        .background-size(100%);
     }
     .fore {
         background-image: url("@{bothell}/tree-fore.png");
         background-position: left bottom;
         .translate(0,600px);
+        .background-size(100%);
     }
     div.giving {
         background: #dbb147;
@@ -992,11 +1021,43 @@ p {
     @media @phone-only {
         background: url("@{bothell}/trees.jpg") no-repeat center bottom black;
         .background-cover(100%);
+        padding-bottom: 100px;
         &.text-block .copy {
             padding: 60px 30px 60px;
         }
+        #cloud-1,
+        #cloud-2 { 
+            width: 50vw;
+            height: 40vw;
+        }
+        #moon {
+            width: 30vw;
+            height: 30vw;
+        }
     }
-    @media @tablet-portrait-up { // (min-width: 600px)
+    @media @tablet-portrait-up {
+        background: url("@{bothell}/trees-bottom.jpg") no-repeat center bottom black;
+        .background-cover(100%);
+        & > div:first-child {
+            padding-top: 100px;
+            padding-bottom: 500px;
+            background: url("@{bothell}/trees-top.jpg") no-repeat center top transparent;
+        }
+        .copy > p:nth-child(1) {
+            font-family: @uni;
+            text-transform: uppercase;
+            font-size: 40px;
+            text-align: center;
+        }
+        .bottom-smoke {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 200px;
+            background: url("@{bothell}/smoke.jpg") repeat-x center top black;
+            .background-cover(cover);
+        }
     }
     @media @tablet-landscape-up { // (min-width: 900px)
         div.giving {
@@ -1070,6 +1131,8 @@ p {
                 line-height: 1.5;
                 opacity: 0;
                 height: 100px;
+                pointer-events: none;
+                .border-radius(10px);
                 span {
                     display: block;
                     font-weight: normal;
@@ -1147,13 +1210,13 @@ p {
         }
     }
     @media @phone-only { 
-        padding-left: 9%;
-        padding-right: 9%;
+        padding-left: 5%;
+        padding-right: 5%;
         .team {
             font-size: 24px;
         }
         li {
-
+            max-width: 41%;
         }
     }
     @media @tablet-portrait-up { // (min-width: 600px)
@@ -1210,6 +1273,22 @@ p {
 
 #creating {
     background: url("@{bothell}/trees-bottom.jpg") no-repeat center bottom black;
+    padding-bottom: 100px;
+    #swamp {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+    #swamp {
+        background-image: url("@{bothell}/swamp.png");
+        background-position: left bottom;
+        .translate(0,600px);
+        .background-size(100%);
+    }
     &.text-block .copy {
         background-color: transparent;
         position: relative;
@@ -1507,7 +1586,7 @@ p {
     }
     @media @phone-only {
         .side-pic {
-            width: 34.5%;
+            width: 46.5%;
         }
     }
 }
