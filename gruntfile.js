@@ -71,7 +71,10 @@ module.exports = function(grunt) {
         files: {
           'js/boundless.min.js': ['<%= concat.dist.dest %>'],
           'immersive-stories/js/common.min.js': ['immersive-stories/js/common.js'],
-          'immersive-stories/js/farmer-brown.min.js': ['immersive-stories/js/farmer-brown.js'],
+          'immersive-stories/js/farmer-brown.min.js': [
+            'immersive-stories/js/farmer-brown.js',
+            'immersive-stories/js/common.js'
+          ],
           'immersive-stories/js/education.min.js': [
               'immersive-stories/js/common.js',
               'immersive-stories/js/leaflet.js',
