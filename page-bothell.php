@@ -97,7 +97,7 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy marginless">
 <p>A day in the lab</p>
-<p>On a Friday morning, students filter into UW Bothell’s Digital Future Lab (DFL) before their weekly check-in meeting.</p>
+<p>On a Friday morning, students filter into UW Bothell’s <a href="http://digitalfuturelab.com/">Digital Future Lab</a> (DFL) before their weekly check-in meeting.</p>
 <p>Adorning the cozy room’s walls are project timelines, a software architecture flowchart, graphic novel illustrations of a red- and purple-tinted alien world. A giant red beanbag chair is tucked in the corner. Rows of computers, covered in Post-it notes and stickers, compete for space with toys and snacks: stuffed Pokémon, jelly beans, a foam Batman figurine, peanut-butter pretzels, a tiny basketball.</p>
 <p class="callout">It may look like you’d expect a <br>game studio to look, <span>but it doesn’t act like one.</span></p>
 
@@ -119,7 +119,7 @@
 
   <div class="names">
     <p>Aina Braxton</p>
-    <p>program coordinator <br>DIGITAL FUTURES LAB</p>
+    <p>program coordinator <br>DIGITAL FUTURE LAB</p>
   </div>
 
 
@@ -154,7 +154,7 @@
 
   <div class="names">
     <p>Jason Pace</p>
-    <p>Executive Director <br>DIGITAL FUTURES LAB</p>
+    <p>Executive Director <br>DIGITAL FUTURE LAB</p>
   </div>
 
 </div>
@@ -227,6 +227,9 @@
 
 
     <section class="text-block" id="trees"><div>
+          <div id="moon"></div>
+          <div id="cloud-1"></div>
+          <div id="cloud-2"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 copy marginless">
@@ -235,15 +238,15 @@
     <p>For Pace, who came out as gay at age 16, the DFL is a chance to combine the activism of their youth with their deep background in tech and gaming.</p>
     <p>Much of Pace’s two decades of software development experience was spent at Microsoft, where they helped direct and produce everything from casual games to the Xbox flagship title Halo. And while they loved the creative challenge, they learned a lot about the industry that they wanted to change.</p>
     <p>“Video game studios are still very much a cisgender, white, straight male world,” Pace says. And it’s not often a very tolerant world, either. One need go no further than video game forums, chatrooms or comment boards to see offensive slurs tossed around casually — or, worse, to see targeted hate campaigns.</p>
-    <p>More broadly, the tech industry is often criticized for its dearth of diversity. Employment is skewed in favor of whites and men, and against other groups.</p>
+    <p>More broadly, the tech industry is often criticized for its dearth of diversity. <a href="https://www.eeoc.gov/eeoc/statistics/reports/hightech/?utm_content=&utm_medium=email&utm_name=&utm_source=govdelivery&utm_term=">Employment is skewed</a> in favor of whites and men, and against other groups.</p>
     <p>So when Pace joined UW Bothell in 2012, they wanted to change that. They started by bringing on Braxton, a UW Bothell graduate who was committed to equity and social justice. Together, the two have focused their efforts on countering bias and toxic work culture. They have baked into the identity of the DFL what they call “radical diversity”: the intentional focus on maximizing and foregrounding difference on a team of people with different backgrounds, abilities and academic focuses.</p>
-
+    
     <div class="gallery">
       <div class="side-pic" id="pic2">
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-1.jpg' ?>">
+                <img class="img pic-1" alt="Fusce dapibus, tellus ac cursus commodo" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-1.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -251,7 +254,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-2.jpg' ?>">
+                <img class="img pic-1" alt="Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh," data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-2.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -259,7 +262,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-3.jpg' ?>">
+                <img class="img pic-1" alt="Fusce dapibus, tellus ac cursus commodo, tortor " data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-3.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -267,7 +270,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-4.jpg' ?>">
+                <img class="img pic-1" alt="Fusce dapibus, tellus ac cursus commodo, tortor mauris " data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-4.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -275,7 +278,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-5.jpg' ?>">
+                <img class="img pic-1" alt="SFusce dapibus, tellus ac cursus commodo, tortor " data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-5.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -283,7 +286,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-6.jpg' ?>">
+                <img class="img pic-1" alt="Fusce dapibus, tellus ac cursus" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-6.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -291,7 +294,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-7.jpg' ?>">
+                <img class="img pic-1" alt="Fusce dapibus, tellus ac cursus commodo, ." data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-7.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -299,7 +302,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Students in Brown’s second-grade classroom" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-8.jpg' ?>">
+                <img class="img pic-1" alt="Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-8.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -316,15 +319,28 @@
     <p>Braxton smiled. “Just to see how shiny and glitzy our product has become, and to see it standing up next to all these other titles, makes me really proud,” she said.</p>
     
     
+    <div class="giving">
+      <h2>Teaching, learning — and creating</h2>
+      <p>All of the Digital Future Lab’s games start as research prototypes led by DFL and Professor of Computing and Software Systems (CSS) Kelvin Sung. Funded by a National Science Foundation grant and support from Google and Microsoft, Sung’s program gives introductory computer science students the opportunity to learn basic programming concepts by building casual games. </p>
+      <p>Successful prototypes like Ghostlight Manor make their way into the co-curricular commercial pipeline of the DFL, opening up educational opportunities across all disciplines — from computer science and communication to social justice and art. Students can get involved through credit capstones and independent study projects, or even a course taught by Pace, who is core faculty in Interactive Media Design (IMD), and affiliate faculty in CSS and Interdisciplinary Arts & Sciences (IAS). </p>
+      <p>Other students dip their toes into the world of game creation as game testers or junior designers or developers. Only a few students, though, hold paid senior internships, something Pace and Braxton wish to change.</p>
+      <p>“Unpaid internships aren’t sustainable,” says Braxton. “To create a truly equitable workplace, we need paid internships for more students — not just those who can afford to work without pay.”</p>  
+      <h3 class="headline-gold">Help make a difference</h3>
+      <p>When you support a student program like the Digital Future Lab, you can help students get hands-on, career-shaping experiences that prepare them for the workforce.</p>
+      <div id="immersive-give-II-iframe"></div>
+      <div style="text-align: center;"><div class="boundless-button sm dark give"><span><a id="immersive-give-II" data-fund="UBPLAY,UWBSTU,UBSTEM" href="#">Give now</a></span></div></div>    
+    </div>
+
+
     <div class="ghosts">
-      <div class="ghost g-1"><div class="front"></div><div class="back"></div></div>
-      <div class="ghost g-2"><div class="front"></div><div class="back"></div></div>
+      <div class="ghost g-1"><div class="front red"></div><div class="back"></div></div>
+      <div class="ghost g-2"><div class="front red"></div><div class="back"></div></div>
       <div class="ghost g-3"><div class="front"></div><div class="back"></div></div>
       <div class="ghost g-4"><div class="front"></div><div class="back"></div></div>
-      <div class="ghost g-5"><div class="front"></div><div class="back"></div></div>
+      <div class="ghost g-5"><div class="front red"></div><div class="back"></div></div>
       <div class="ghost g-6"><div class="front"></div><div class="back"></div></div>
-      <div class="ghost g-7"><div class="front"></div><div class="back"></div></div>
-      <div class="ghost g-8"><div class="front"></div><div class="back"></div></div>
+      <div class="ghost g-7"><div class="front red"></div><div class="back"></div></div>
+      <div class="ghost g-8"><div class="front red"></div><div class="back"></div></div>
     </div>
     
     
@@ -334,6 +350,7 @@
         </div>
 
     <div class="back"></div><div class="middle"></div><div class="fore"></div>
+
   </section>
 
 
@@ -346,42 +363,42 @@
 
             <ul id="avatars">
               <li>
-               <div> <img width="127" height="140" alt="Aina" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Aina.png' ?>">
+               <div> <img width="127" height="140" alt="Aina" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/avatars/Avatar_Aina.png' ?>">
                <p class="name">Aina Braxton <span>Staff // Lead Producer, Assistant Director</span></p></div>
                 <p class="quotes">The biggest challenge I enjoyed tackling at the DFL was coming in with no background knowledge of the parts and pieces that went into software development. I learned to rely heavily on research, humility and my own creative instincts.</p>
               </li>
               <li>
-                <div><img width="127" height="140" alt="Emmett" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Emmett.png' ?>">
+                <div><img width="127" height="140" alt="Emmett" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/avatars/Avatar_Emmett.png' ?>">
                 <p class="name">Emmett Scout <span>Senior // Major: Interactive Media and Social Justice</span></p></div>
                 <p class="quotes">I’m a much better designer for having shared studio space with so many different kinds of brains, skills and disciplines.</p>    
               </li>
               <li>
-                <div><img width="127" height="140" alt="Jason" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Jason.png' ?>">
+                <div><img width="127" height="140" alt="Jason" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/avatars/Avatar_Jason.png' ?>">
                 <p class="name">Jason Pace <span>Staff // Executive Director</span></p></div>
                 <p class="quotes">The DFL has ignited my passion to make tech industry careers accessible to a more diverse workforce.</p>
               </li>
               <li>
-                <div><img width="127" height="140" alt="Joscelyn" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Joscelyn.png' ?>">
+                <div><img width="127" height="140" alt="Joscelyn" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/avatars/Avatar_Joscelyn.png' ?>">
                 <p class="name">Joscelyn Kim <span>Senior // Major: Computer Science and Software Engineering</span></p></div>
                 <p class="quotes">The DFL has given me the chance to work in a professional environment and experience the challenges of game development. I’ve gained confidence in my programming skills through working with and learning from other developers.</p>
               </li>
               <li>
-                <div><img width="127" height="140" alt="Lamiya" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Lamiya.png' ?>">
+                <div><img width="127" height="140" alt="Lamiya" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/avatars/Avatar_Lamiya.png' ?>">
                 <p class="name">Lamiya Kazi <span>Junior // Intended Major: Electrical Engineering</span></p></div>
                 <p class="quotes">The biggest challenge I’ve faced at the DFL would have to be crunch week. It can be pretty stressful, but it highlights how well our team works together through thick and thin.</p>
               </li>
               <li>
-                <div><img width="127" height="140" alt="Malik" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Malik.png' ?>" >
+                <div><img width="127" height="140" alt="Malik" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/avatars/Avatar_Malik.png' ?>" >
                 <p class="name">Malik Bseikri<span>Senior // Major: Information Systems and Finance</span></p></div>
                 <p class="quotes">The DFL has taught me a ton about communication styles, but I’ve also learned how to be more cognizant of the environment I am in, and to react and communicate accordingly.</p>
               </li>
               <li>
-                <div><img width="127" height="140" alt="Morgan" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Morgan.png' ?>">
+                <div><img width="127" height="140" alt="Morgan" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/avatars/Avatar_Morgan.png' ?>">
                 <p class="name">Morgan Thomas <span>Sophomore // Intended Major: Undecided</span></p></div>
                 <p class="quotes">I’ve learned how to use a whole host of art programs since joining! I started off only knowing how to use basic 2-D art programs, and now I know a small variety of both 2-D and 3-D software.</p>
               </li>
               <li>
-                <div><img width="127" height="140" alt="Nathan" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/Avatars/Avatar_Nathan.png' ?>">
+                <div><img width="127" height="140" alt="Nathan" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/avatars/Avatar_Nathan.png' ?>">
                 <p class="name">Nathan Evers <span>Staff // Lead Artist</span></p></div>
                 <p class="quotes">Seeing young professionals of all disciplines, ethnicity, backgrounds and identities engage passionately in interactive media production is hugely encouraging for the future of our industry.</p>
               </li>
@@ -398,65 +415,69 @@
           <div class="container">
               <div class="row">
                   <div class="col-md-10 col-md-offset-1 copy">
-   
-
-  <div class="calloutBox">
-    <h2>Creating a game at the DFL</h2>
-    <div><p>The game Ghostlight Manor is the product of over three years of work by scores of students, from its humble beginnings as an educational prototype to a highly polished version for the public.</p>
-    <p>“The best thing about watching the game proceed along development is the people who have been able to influence the creative direction.”<small>—Digital Future Lab Executive Director Jason Pace</small></p></div>
-
-  </div>
 
 
-  <ul class="dates">
-    <li>
-      <h3><span>July 2013: </span>Early days</h3>
-      <p>Emmett Scout and Jason Pace begin working with UW Bothell Professor of Computing and Software Systems Kelvin Sung and a number of his undergraduate computer science students. Together, they design and prototype a casual game called Ghostlight. For the next two years, they develop it into a polished game for mobile devices and desktop computers, called Ghostlight Manor.</p>
-    </li>
+                    <div class="calloutBox">
+                      <h2>Creating a game at the DFL</h2>
+                      <div><p>The game Ghostlight Manor is the product of over three years of work by scores of students, from its humble beginnings as an educational prototype to a highly polished version for the public.</p>
+                      <p>“The best thing about watching the game proceed along development is the people who have been able to influence the creative direction.”<small>—Digital Future Lab Executive Director Jason Pace</small></p></div>
 
-    <li>
-      <h3><span>April 2014: </span>Prototype</h3>
-      <p>The prototyping team, now including Aina Braxton and other DFL interns, delivers the first proof-of-concept playable Ghostlight demo for Windows PC. There is no sound, no tutorials and only placeholder graphics.</p>
-      <a class="video-popup" data-url="https://www.youtube.com/embed/jO1lp0xcTYQ?autoplay=1&rel=0&amp;showinfo=0&amp" href="http://youtu.be/jO1lp0xcTYQ"><img width="275" height="147" alt="Video" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/video-1.jpg' ?>"></a>
-    </li>
-
-    <li>
-      <h3><span>October 2014: </span>Prototype 2.0</h3>
-      <img width="350" alt="Emoticons" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/icons.png' ?>">
-      <p>The first full production team, about a dozen interns, works over the summer and through the beginning of fall quarter to deliver version one of the Ghostlight educational prototype for Windows PC. This version includes a tutorial system, custom art, music and sound, and five playable levels.</p>
-      <a class="video-popup" data-url="https://www.youtube.com/embed/o2-Kx94EBO0?autoplay=1&rel=0&amp;showinfo=0&amp" href="http://youtu.be/o2-Kx94EBO0"><img width="275" height="167" alt="Video" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/video-2.jpg' ?>"></a>
-    </li>
-
-    <li>
-      <h3><span>October 2015: </span>Game goes mobile</h3>
-      <p>Immediately after releasing the educational prototype, the DFL begins work toward releasing Ghostlight, now called Ghostlight Manor, as their first commercial release, for mobile devices. The team grows to about 25 interns; they design a 50-level progression with a dozen unique game modes and six unique game environments.</p>
-      <a class="video-popup" data-url="https://www.youtube.com/embed/hu-67zhrKu4?autoplay=1&rel=0&amp;showinfo=0&amp" href="http://youtu.be/hu-67zhrKu4"><img width="275" height="167" alt="Video" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/video-2.jpg' ?>"></a>
-    </li>
-
-    <li>
-      <h3><span>Fall 2016: </span>Developing a richer game experience for desktop</h3>
-      <p>After releasing the mobile version of Ghostlight Manor, the DFL decides to prep the game for PC/Mac and raise the quality bar even higher. The team working on the game grows to about 30 interns; in addition to reworking most of the game, they add a robust user research and play testing team that focuses on accessibility, balance — and the “fun factor.”</p>
-      <a class="video-popup" data-url="https://www.youtube.com/embed/ZQSkbD1g7Ug?autoplay=1&rel=0&amp;showinfo=0&amp" href="http://youtu.be/ZQSkbD1g7Ug"><img width="275" height="167" alt="Video" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/video-2.jpg' ?>"></a>
-    </li>
-  </ul>
+                    </div>
 
 
-  <div class="ghosts">
-    <div class="ghost g-1"><div class="front"></div><div class="back"></div></div>
-    <div class="ghost g-2"><div class="front"></div><div class="back"></div></div>
-    <div class="ghost g-3"><div class="front"></div><div class="back"></div></div>
-    <div class="ghost g-4"><div class="front"></div><div class="back"></div></div>
-    <div class="ghost g-5"><div class="front"></div><div class="back"></div></div>
-    <div class="ghost g-6"><div class="front"></div><div class="back"></div></div>
-    <div class="ghost g-7"><div class="front"></div><div class="back"></div></div>
-    <div class="ghost g-8"><div class="front"></div><div class="back"></div></div>
-  </div>
+                    <ul class="dates">
+                      <li>
+                        <h3><span>July 2013: </span>Early days</h3>
+                        <p>Emmett Scout and Jason Pace begin working with UW Bothell Professor of Computing and Software Systems Kelvin Sung and a number of his undergraduate computer science students. Together, they design and prototype a casual game called Ghostlight. For the next two years, they develop it into a polished game for mobile devices and desktop computers, called Ghostlight Manor.</p>
+                      </li>
+
+                      <li>
+                        <h3><span>April 2014: </span>Prototype</h3>
+                        <p>The prototyping team, now including Aina Braxton and other DFL interns, delivers the first proof-of-concept playable Ghostlight demo for Windows PC. There is no sound, no tutorials and only placeholder graphics.</p>
+                        <a class="video-popup" data-lity href="https://www.youtube.com/embed/jO1lp0xcTYQ?autoplay=1&rel=0&amp;showinfo=0&amp"><img width="275" height="147" alt="Video" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/video-1.jpg' ?>"></a>
+                        <div class="popup"></div>
+                      </li>
+
+                      <li>
+                        <h3><span>October 2014: </span>Prototype 2.0</h3>
+                        <img width="350" alt="Emoticons" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/icons.png' ?>">
+                        <p>The first full production team, about a dozen interns, works over the summer and through the beginning of fall quarter to deliver version one of the Ghostlight educational prototype for Windows PC. This version includes a tutorial system, custom art, music and sound, and five playable levels.</p>
+                        <a class="video-popup" data-lity href="https://www.youtube.com/embed/o2-Kx94EBO0?autoplay=1&rel=0&amp;showinfo=0&amp"><img width="275" height="167" alt="Video" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/video-2.jpg' ?>"></a>
+                        <div class="popup"></div>
+                      </li>
+
+                      <li>
+                        <h3><span>October 2015: </span>Game goes mobile</h3>
+                        <p>Immediately after releasing the educational prototype, the DFL begins work toward releasing Ghostlight, now called Ghostlight Manor, as their first commercial release, for mobile devices. The team grows to about 25 interns; they design a 50-level progression with a dozen unique game modes and six unique game environments.</p>
+                        <a class="video-popup" data-lity href="https://www.youtube.com/embed/hu-67zhrKu4?autoplay=1&rel=0&amp;showinfo=0&amp"><img width="275" height="167" alt="Video" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/video-2.jpg' ?>"></a>
+                        <div class="popup"></div>
+                      </li>
+
+                      <li>
+                        <h3><span>Fall 2016: </span>Developing a richer game experience for desktop</h3>
+                        <p>After releasing the mobile version of Ghostlight Manor, the DFL decides to prep the game for PC/Mac and raise the quality bar even higher. The team working on the game grows to about 30 interns; in addition to reworking most of the game, they add a robust user research and play testing team that focuses on accessibility, balance — and the “fun factor.”</p>
+                        <a class="video-popup" data-lity href="https://www.youtube.com/embed/ZQSkbD1g7Ug?autoplay=1&rel=0&amp;showinfo=0&amp"><img width="275" height="167" alt="Video" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/video-2.jpg' ?>"></a>
+                        <div class="popup"></div>
+                      </li>
+                    </ul>
+
+
+                    <div class="ghosts">
+                      <div class="ghost g-1"><div class="front"></div><div class="back"></div></div>
+                      <div class="ghost g-2"><div class="front franken"></div><div class="back"></div></div>
+                      <div class="ghost g-3"><div class="front"></div><div class="back"></div></div>
+                      <div class="ghost g-4"><div class="front monster"></div><div class="back"></div></div>
+                      <div class="ghost g-5"><div class="front monster"></div><div class="back"></div></div>
+                      <div class="ghost g-6"><div class="front red"></div><div class="back"></div></div>
+                      <div class="ghost g-7"><div class="front green"></div><div class="back"></div></div>
+                      <div class="ghost g-8"><div class="front"></div><div class="back"></div></div>
+                    </div>
 
 
                </div> 
             </div> 
           </div>   
-          <div class="bottom-smoke"></div>
+          <div id="swamp"></div>
       </section>
 
 

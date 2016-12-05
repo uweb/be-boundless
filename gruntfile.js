@@ -102,6 +102,7 @@ module.exports = function(grunt) {
               'immersive-stories/js/common.js',
               'immersive-stories/js/bothell.js',
               'immersive-stories/js/medium-lightbox.js',
+              'immersive-stories/js/lity.js',
           ],          
           'immersive-stories/js/medicine.min.js': [
               'immersive-stories/js/common.js',
