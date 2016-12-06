@@ -235,18 +235,18 @@
                     <div class="col-md-10 col-md-offset-1 copy marginless">
     
     <p>Behind the mission</p>
-    <p>For Pace, who came out as gay at age 16, the DFL is a chance to combine the activism of their youth with their deep background in tech and gaming.</p>
-    <p>Much of Pace’s two decades of software development experience was spent at Microsoft, where they helped direct and produce everything from casual games to the Xbox flagship title Halo. And while they loved the creative challenge, they learned a lot about the industry that they wanted to change.</p>
-    <p>“Video game studios are still very much a cisgender, white, straight male world,” Pace says. And it’s not often a very tolerant world, either. One need go no further than video game forums, chatrooms or comment boards to see offensive slurs tossed around casually — or, worse, to see targeted hate campaigns.</p>
+    <p>For Pace, who came out as gay at age 16, the DFL is a chance to combine the activism of <span data-tooltip="Pace uses the gender-neutral pronouns they and them" data-tooltip-position="top">their</span> youth with <span data-tooltip="Pace uses the gender-neutral pronouns they and them" data-tooltip-position="top">their</span> deep background in tech and gaming.</p>
+    <p>Much of Pace’s two decades of software development experience was spent at Microsoft, where <span data-tooltip="Pace uses the gender-neutral pronouns they and them" data-tooltip-position="top">they</span> helped direct and produce everything from casual games to the Xbox flagship title Halo. And while <span data-tooltip="Pace uses the gender-neutral pronouns they and them" data-tooltip-position="top">they</span> loved the creative challenge, <span data-tooltip="Pace uses the gender-neutral pronouns they and them" data-tooltip-position="top">they</span> learned a lot about the industry that <span data-tooltip="Pace uses the gender-neutral pronouns they and them" data-tooltip-position="top">they</span> wanted to change.</p>
+    <p>“Video game studios are still very much a <span data-tooltip="When a person’s gender identity conforms with the gender they were assigned at birth; not transgender" data-tooltip-position="top">cisgender</span>, white, straight male world,” Pace says. And it’s not often a very tolerant world, either. One need go no further than video game forums, chatrooms or comment boards to see offensive slurs tossed around casually — or, worse, to see targeted hate campaigns.</p>
     <p>More broadly, the tech industry is often criticized for its dearth of diversity. <a href="https://www.eeoc.gov/eeoc/statistics/reports/hightech/?utm_content=&utm_medium=email&utm_name=&utm_source=govdelivery&utm_term=">Employment is skewed</a> in favor of whites and men, and against other groups.</p>
-    <p>So when Pace joined UW Bothell in 2012, they wanted to change that. They started by bringing on Braxton, a UW Bothell graduate who was committed to equity and social justice. Together, the two have focused their efforts on countering bias and toxic work culture. They have baked into the identity of the DFL what they call “radical diversity”: the intentional focus on maximizing and foregrounding difference on a team of people with different backgrounds, abilities and academic focuses.</p>
+    <p>So when Pace joined UW Bothell in 2012, <span data-tooltip="Pace uses the gender-neutral pronouns they and them" data-tooltip-position="top">they</span> wanted to change that. <span data-tooltip="Pace uses the gender-neutral pronouns they and them" data-tooltip-position="top">They</span> started by bringing on Braxton, a UW Bothell graduate who was committed to equity and social justice. Together, the two have focused their efforts on countering bias and toxic work culture. They have baked into the identity of the DFL what they call “radical diversity”: the intentional focus on maximizing and foregrounding difference on a team of people with different backgrounds, abilities and academic focuses.</p>
     
     <div class="gallery">
       <div class="side-pic" id="pic2">
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Fusce dapibus, tellus ac cursus commodo" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-1.jpg' ?>">
+                <img class="img pic-1" alt="Sophia Mallouk (intended major: Environmental Science), a member of the DFL’s audio and music composition team, shares the lab’s giant red beanbag chair — and a laptop — with artist Rena Chen (major: Interdisciplinary Arts; applying to Interactive Media Design)" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-1.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -254,7 +254,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh," data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-2.jpg' ?>">
+                <img class="img pic-1" alt="Lead artist Nathan Evers (staff) works on his shooting form during a slow moment at the DFL" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-2.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -262,7 +262,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Fusce dapibus, tellus ac cursus commodo, tortor " data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-3.jpg' ?>">
+                <img class="img pic-1" alt="Associate producer Hannah Kane (major: Culture, Literature & the Arts) sits in on a Friday check-in meeting" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-3.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -270,7 +270,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Fusce dapibus, tellus ac cursus commodo, tortor mauris " data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-4.jpg' ?>">
+                <img class="img pic-1" alt="Developer Steven Roberts (major: Computer Science and Software Engineering) takes members of the lab through an early build of Hug the Line, a tower-defense-style game that is beginning to take shape at the DFL" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-4.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -278,7 +278,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="SFusce dapibus, tellus ac cursus commodo, tortor " data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-5.jpg' ?>">
+                <img class="img pic-1" alt="A student sketches some fine evening wear for Lightbot, the friendly robotic helper that helps scare away monsters in Ghostlight Manor" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-5.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -286,7 +286,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Fusce dapibus, tellus ac cursus" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-6.jpg' ?>">
+                <img class="img pic-1" alt="Lead designer Emmett Scout (major: Interactive Media and Social Justice) concentrates during a busy day at the Digital Future Lab" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-6.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -294,7 +294,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Fusce dapibus, tellus ac cursus commodo, ." data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-7.jpg' ?>">
+                <img class="img pic-1" alt="The newest iteration of Ghostlight Manor, just released, is available for download on Steam" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-7.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -302,13 +302,13 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-8.jpg' ?>">
+                <img class="img pic-1" alt="Assistant Director and lead producer Aina Braxton, ’12 (staff), composer Bryce Villanueva, ’16, and test-team member JC Ignacio (major: Interactive Media Design) share a laugh in the recording room" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-8.jpg' ?>">
             </div>
         </figure>
       </div>
     </div>
 
-    <p>In planned topic discussions or spontaneous conversations, some students might speak about the racism or sexism they’ve experienced. Some might speak about neurological differences, or neurodiversity. For example, Pace, who has ADHD, likes to talk about how they have drastically different communication needs than people with Asperger’s. </p>
+    <p>In planned topic discussions or spontaneous conversations, some students might speak about the racism or sexism they’ve experienced. Some might speak about neurological differences, or <span data-tooltip="Short for neurological diversity, neurodiversity acknowledges the immense variation in human brains and minds as natural, and embraces all as a valuable form of diversity" data-tooltip-position="top">neurodiversity</span>. For example, Pace, who has ADHD, likes to talk about how <span data-tooltip="Pace uses the gender-neutral pronouns they and them" data-tooltip-position="top">they</span> have drastically different communication needs than people with Asperger’s. </p>
     <p>And some students, like Scout, who came out in the lab, talk about gender identity:</p>
     <p class="callout quote">“After four years of working in a space where my identity as a queer person, as a trans person, was not a negative, I feel way more comfortable with who I am,” he says.</p>
     <p>“Here, we’re not just accommodating different folks. We’re valuing their differences and looking for how they can be beneficial to everyone.”</p>
@@ -317,6 +317,8 @@
     <p>Braxton watched as a woman gave Ghostlight Manor a try. A phalanx of unknown monsters, masked in white, advanced down the screen in serpentine fashion. The only defense was Lightbot, whose beams of light first revealed the monsters — ghosts, demons, vampires — and then scared them away.</p>
     <p>“Oh my gosh!” said the woman. She had just unmasked a pair of zombies, and they were mad.</p>
     <p>Braxton smiled. “Just to see how shiny and glitzy our product has become, and to see it standing up next to all these other titles, makes me really proud,” she said.</p>
+    <p>Test your Ghostlight Manor mettle with a free 11-level demo, available for download <a href="example.com">here</a>.</p>
+    <p>The full PC/Mac version, just released, is available for full download on <a href="example.com">Steam</a>.</p>
     
     
     <div class="giving">
@@ -485,7 +487,7 @@
 
 
 
-    <section class="text-block giving-widget">
+<!--     <section class="text-block giving-widget">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy">
@@ -498,7 +500,7 @@
                 </div>
             </div>
       </div>
-    </section>
+    </section> -->
 
 
 
@@ -521,7 +523,7 @@
 
  
 
- <?php get_template_part('footer', 'campaign'); ?>
+ <div class="bothell-footer"><?php get_template_part('footer', 'campaign'); ?></div>
 
 
 </body>
