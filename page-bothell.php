@@ -361,7 +361,7 @@
             <h3 class="team">Now Playing:</h3>
             <p>The DFL is most definitely a multiplayer lab. From QA testers just dipping their toes into the gaming world to full-time staff, nobody goes it alone. Meet a few members of the DFL’s highly collaborative team.</p>
 
-            <ul id="avatars">
+            <ul>
               <li>
                <div> <img width="127" height="140" alt="Aina" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/avatars/Avatar_Aina.png' ?>">
                <p class="name">Aina Braxton <span>Staff // Lead Producer, Assistant Director</span></p></div>

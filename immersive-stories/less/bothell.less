@@ -736,7 +736,7 @@ p {
         background: url("@{bothell}/smoke-top.jpg") no-repeat center top black;
         padding-top: 400px;
         padding-bottom: 200px;
-
+        .background-cover(100%);
         .bottom-smoke {
             position: absolute;
             bottom: 0;
@@ -1054,7 +1054,7 @@ p {
             font-family: @uni;
             text-transform: uppercase;
             font-size: 40px;
-            text-align: center;
+            // text-align: center;
         }
         .bottom-smoke {
             position: absolute;
@@ -1085,12 +1085,13 @@ p {
 }
 
 #avatars {
-    background-color: black;
-    z-index: 2;
+    background: url("@{bothell}/bg-strip.jpg") repeat-x top left black;
     text-align: center;
     overflow: visible;
     padding-left: 13%;
     padding-right: 13%;
+    position: relative;
+    z-index: 0;
     .team {
         text-align: center;
         font-family: @encode;
@@ -1102,6 +1103,7 @@ p {
     ul {
         text-align: center;
         position: relative;
+        z-index: 2;
         li {
             display: inline-block;
             list-style: none;
@@ -1232,6 +1234,7 @@ p {
     @media @tablet-landscape-up { // (min-width: 900px)
         padding-top: 100px;
         ul {
+            padding: 50px 0;
             li {
                 max-width: 23%;
             }
@@ -1281,6 +1284,7 @@ p {
 #creating {
     background: url("@{bothell}/trees-bottom.jpg") no-repeat center bottom black;
     padding-bottom: 100px;
+    z-index: -1;
     #swamp {
         position: absolute;
         top: 0;
