@@ -517,7 +517,8 @@ p {
     .copy {
         background-color: transparent;
         position: relative;
-        & > p:nth-child(1) {
+        & > p:nth-child(1) ,
+        & > p:nth-child(12) {
             font-family: @uni;
             text-transform: uppercase;
             font-size: 30px;
@@ -544,7 +545,8 @@ p {
     @media (min-width: 768px) {
         &.text-block .copy {
             padding: 100px 150px 250px;
-            & > p:nth-child(1) {
+            & > p:nth-child(1) , 
+            & > p:nth-child(12) {
                 font-size: 40px;
             }
         }
@@ -1047,7 +1049,8 @@ p {
             padding-bottom: 500px;
             background: url("@{bothell}/trees-top.jpg") no-repeat center top transparent;
         }
-        .copy > p:nth-child(1) {
+        .copy > p:nth-child(1) , 
+        .copy > p:nth-child(12) {
             font-family: @uni;
             text-transform: uppercase;
             font-size: 40px;

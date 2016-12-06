@@ -14,7 +14,7 @@
       <div class="row">
         <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-offset-1" id='intro-text'>
             <h1><span><span>Taking diversity </span></span><span><span>to the next level</span></span> </h1>
-            <p>A diverse group of students in the UW Bothell’s Digital Future Lab are creating professional-quality video games for commercial release. Their success comes not in spite of their differences, but because of them.</p>
+            <p>Students and staff in UW Bothell’s Digital Future Lab (DFL) are not only creating professional-quality video games for commercial release, they’re also addressing the lack of diversity in the technology industry.</p>
         </div>
     </div>
   </div>
@@ -131,7 +131,7 @@
 
 <p>Aina Braxton, ’12, the lab’s assistant director, kicks off the meeting by asking everyone to gather in a circle to share their names and <span data-tooltip="Helping make communities more trans- and genderqueer-friendly, gender pronoun check-ins are used to recognize the fluidity of gender, and in a respectful effort to avoid making assumptions about others’ gender identification" data-tooltip-position="top">gender pronouns</span>.</p>
 <p>“Aina. She, her.”</p>
-<p>“Jason. <span data-tooltip="Pace uses the gender-neutral pronouns they, their and them" data-tooltip-position="top">They, them</span>.”</p>
+<p>“Jason. <span data-tooltip="Pace uses the gender-neutral pronouns they and them" data-tooltip-position="top">They, them</span>.”</p>
 <p>“Malik. He, him.”</p>
 <p>Braxton and Executive Director Jason Pace remind newcomers that it’s part of their culture to start every meeting this way. They’ve normalized it, Braxton says, “because we don’t want to make assumptions about you or your identity.”</p>
 
@@ -185,7 +185,7 @@
 <p>The day’s check-in doesn’t last long, though: The agenda is packed.</p>
 <p>Two developers have created a new build for Hug the Line, a tower-defense-style game in which the user helps benevolent creatures navigate a treacherous maze. Then it’s on to critiquing new features for Corrupted, a space-age puzzle game.</p>
 <p>In Pace’s opinion, the team needs to develop a unifying thread that runs throughout the game’s individual levels. Right now, it’s not quite there.</p>
-<p>“Jason has industry-level experience and standards for the work we do,” Lead Designer Emmett Scout says of Pace, who uses the pronouns they, their and them.  “They won’t let us get away with anything less than that.”</p>
+<p>“Jason has industry-level experience and standards for the work we do,” lead designer Emmett Scout says of Pace, who uses the pronouns they, their and them.  “They won’t let us get away with anything less than that.”</p>
 
 
 <div class="ghosts">
@@ -310,10 +310,10 @@
 
     <p>In planned topic discussions or spontaneous conversations, some students might speak about the racism or sexism they’ve experienced. Some might speak about neurological differences, or neurodiversity. For example, Pace, who has ADHD, likes to talk about how they have drastically different communication needs than people with Asperger’s. </p>
     <p>And some students, like Scout, who came out in the lab, talk about gender identity:</p>
-    <p class="callout quote">“After four years of working in a space where my identity as a queer person, as a trans person, was not a negative, I feel way more comfortable with who I am,”</p>
-    <p> he says. “Here, we’re not just accommodating different folks. We’re valuing their differences and looking for how they can be beneficial to everyone.”</p>
+    <p class="callout quote">“After four years of working in a space where my identity as a queer person, as a trans person, was not a negative, I feel way more comfortable with who I am,” he says.</p>
+    <p>“Here, we’re not just accommodating different folks. We’re valuing their differences and looking for how they can be beneficial to everyone.”</p>
     <p>Ghostlight Manor goes commercial</p>
-    <p>In September, a handful of students and staff from the DFL had the opportunity to showcase Ghostlight Manor, their first commercial release, at an open house hosted at Microsoft. Scores of game enthusiasts wandered among rows of computers, chatting with representatives from over 50 developers from around the world that were publishing their games on Xbox and Windows 10 devices.</p>
+    <p>In September, a handful of students and staff from the DFL had the opportunity to showcase their first commercial release, Ghostlight Manor — a game that is inspired by classic monster movies and arcade strategy games — at an open house hosted at Microsoft. Scores of game enthusiasts wandered among rows of computers, chatting with representatives from over 50 developers from around the world that were publishing their games on Xbox and Windows 10 devices.</p>
     <p>Braxton watched as a woman gave Ghostlight Manor a try. A phalanx of unknown monsters, masked in white, advanced down the screen in serpentine fashion. The only defense was Lightbot, whose beams of light first revealed the monsters — ghosts, demons, vampires — and then scared them away.</p>
     <p>“Oh my gosh!” said the woman. She had just unmasked a pair of zombies, and they were mad.</p>
     <p>Braxton smiled. “Just to see how shiny and glitzy our product has become, and to see it standing up next to all these other titles, makes me really proud,” she said.</p>
@@ -321,7 +321,7 @@
     
     <div class="giving">
       <h2>Teaching, learning — and creating</h2>
-      <p>All of the Digital Future Lab’s games start as research prototypes led by DFL and Professor of Computing and Software Systems (CSS) Kelvin Sung. Funded by a National Science Foundation grant and support from Google and Microsoft, Sung’s program gives introductory computer science students the opportunity to learn basic programming concepts by building casual games. </p>
+      <p>All of the Digital Future Lab’s games start as research prototypes led by the DFL and Professor of Computing and Software Systems (CSS) Kelvin Sung. Funded by a National Science Foundation grant and support from Google and Microsoft, Sung’s program gives introductory computer science students the opportunity to learn basic programming concepts by building casual games. </p>
       <p>Successful prototypes like Ghostlight Manor make their way into the co-curricular commercial pipeline of the DFL, opening up educational opportunities across all disciplines — from computer science and communication to social justice and art. Students can get involved through credit capstones and independent study projects, or even a course taught by Pace, who is core faculty in Interactive Media Design (IMD), and affiliate faculty in CSS and Interdisciplinary Arts & Sciences (IAS). </p>
       <p>Other students dip their toes into the world of game creation as game testers or junior designers or developers. Only a few students, though, hold paid senior internships, something Pace and Braxton wish to change.</p>
       <p>“Unpaid internships aren’t sustainable,” says Braxton. “To create a truly equitable workplace, we need paid internships for more students — not just those who can afford to work without pay.”</p>  
@@ -358,8 +358,8 @@
       <div class="row">
           <div class="col-md-10 col-md-offset-1">
 
-            <h3 class="team">Meet some of the DFL’s players</h3>
-            <p>The Digital Future Lab is most definitely a multiplayer game. From QA testers just dipping their toes into the gaming world to full-time staff, nobody goes it alone. Meet a few of the DFL’s players.</p>
+            <h3 class="team">Now Playing:</h3>
+            <p>The DFL is most definitely a multiplayer lab. From QA testers just dipping their toes into the gaming world to full-time staff, nobody goes it alone. Meet a few members of the DFL’s highly collaborative team.</p>
 
             <ul id="avatars">
               <li>
@@ -394,7 +394,7 @@
               </li>
               <li>
                 <div><img width="127" height="140" alt="Morgan" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/avatars/Avatar_Morgan.png' ?>">
-                <p class="name">Morgan Thomas <span>Sophomore // Intended Major: Undecided</span></p></div>
+                <p class="name">Morgan Thomas <span>Sophomore // </br>Intended Major: Undecided</span></p></div>
                 <p class="quotes">I’ve learned how to use a whole host of art programs since joining! I started off only knowing how to use basic 2-D art programs, and now I know a small variety of both 2-D and 3-D software.</p>
               </li>
               <li>
