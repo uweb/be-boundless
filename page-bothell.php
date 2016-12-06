@@ -361,7 +361,7 @@
             <h3 class="team">Meet some of the DFL’s players</h3>
             <p>The Digital Future Lab is most definitely a multiplayer game. From QA testers just dipping their toes into the gaming world to full-time staff, nobody goes it alone. Meet a few of the DFL’s players.</p>
 
-            <ul id="avatars">
+            <ul>
               <li>
                <div> <img width="127" height="140" alt="Aina" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/avatars/Avatar_Aina.png' ?>">
                <p class="name">Aina Braxton <span>Staff // Lead Producer, Assistant Director</span></p></div>
