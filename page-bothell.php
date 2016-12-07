@@ -14,7 +14,7 @@
       <div class="row">
         <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 col-lg-offset-1" id='intro-text'>
             <h1><span><span>Taking diversity </span></span><span><span>to the next level</span></span> </h1>
-            <p>Students and staff in UW Bothell’s Digital Future Lab (DFL) are not only creating professional-quality video games for commercial release, they’re also addressing the lack of diversity in the technology industry.</p>
+            <p>Students and staff in UW Bothell’s Digital Future Lab are not only creating professional-quality video games for commercial release, they’re also addressing the lack of diversity in the technology industry.</p>
         </div>
     </div>
   </div>
@@ -246,7 +246,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Sophia Mallouk (intended major: Environmental Science), a member of the DFL’s audio and music composition team, shares the lab’s giant red beanbag chair — and a laptop — with artist Rena Chen (major: Interdisciplinary Arts; applying to Interactive Media Design)" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-1.jpg' ?>">
+                <img class="img pic-1" alt="Sophia Mallouk, a member of the DFL’s audio and music composition team, shares the lab’s giant red beanbag chair — and a laptop — with artist Rena Chen" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-1.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -254,7 +254,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Lead artist Nathan Evers (staff) works on his shooting form during a slow moment at the DFL" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-2.jpg' ?>">
+                <img class="img pic-1" alt="Lead artist Nathan Evers works on his shooting form during a slow moment at the DFL" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-2.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -262,7 +262,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Associate producer Hannah Kane (major: Culture, Literature & the Arts) sits in on a Friday check-in meeting" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-3.jpg' ?>">
+                <img class="img pic-1" alt="Associate producer Hannah Kane sits in on a Friday check-in meeting" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-3.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -270,7 +270,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Developer Steven Roberts (major: Computer Science and Software Engineering) takes members of the lab through an early build of Hug the Line, a tower-defense-style game that is beginning to take shape at the DFL" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-4.jpg' ?>">
+                <img class="img pic-1" alt="Developer Steven Roberts takes members of the lab through an early build of Hug the Line, a tower-defense-style game that is beginning to take shape at the DFL" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-4.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -286,7 +286,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Lead designer Emmett Scout (major: Interactive Media and Social Justice) concentrates during a busy day at the Digital Future Lab" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-6.jpg' ?>">
+                <img class="img pic-1" alt="Lead designer Emmett Scout concentrates during a busy day at the Digital Future Lab" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-6.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -302,7 +302,7 @@
         <figure class="zoom-effect">
             <div class="aspectRatioPlaceholder" >
                 <div class="aspect-ratio-fill""></div>
-                <img class="img pic-1" alt="Assistant Director and lead producer Aina Braxton, ’12 (staff), composer Bryce Villanueva, ’16, and test-team member JC Ignacio (major: Interactive Media Design) share a laugh in the recording room" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-8.jpg' ?>">
+                <img class="img pic-1" alt="Assistant Director and lead producer Aina Braxton, ’12, composer Bryce Villanueva, ’16, and test-team member JC Ignacio share a laugh in the recording room" data-width="1290" data-height="857" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/gallery-8.jpg' ?>">
             </div>
         </figure>
       </div>
@@ -317,8 +317,11 @@
     <p>Braxton watched as a woman gave Ghostlight Manor a try. A phalanx of unknown monsters, masked in white, advanced down the screen in serpentine fashion. The only defense was Lightbot, whose beams of light first revealed the monsters — ghosts, demons, vampires — and then scared them away.</p>
     <p>“Oh my gosh!” said the woman. She had just unmasked a pair of zombies, and they were mad.</p>
     <p>Braxton smiled. “Just to see how shiny and glitzy our product has become, and to see it standing up next to all these other titles, makes me really proud,” she said.</p>
-    <p>Test your Ghostlight Manor mettle with a free 11-level demo, available for download <a href="example.com">here</a>.</p>
-    <p>The full PC/Mac version, just released, is available for full download on <a href="example.com">Steam</a>.</p>
+    <p class="callout">
+      Test your Ghostlight Manor mettle with a free 11-level demo, <span>available for download <a href="example.com">here</a>.</span>
+      </br>
+      The full PC/Mac version, just released, is <span>available for full download on <a href="example.com">Steam</a>.</span>
+    </p>
     
     
     <div class="giving">
