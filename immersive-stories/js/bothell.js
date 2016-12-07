@@ -171,14 +171,6 @@ $(function(){
     })
   })
 
-  $('figure.zoom-effect').on("click", function(){
-      //if (!hasCaption) {
-        console.log(this);
-       // $this.after('<p>' + $this.attr('alt') + '</p>')
-       // hasCaption = true;
-      //}
-  })
-
 
 })
 

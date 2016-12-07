@@ -1604,9 +1604,7 @@ p {
                 .translate(0,150px);
                 .transition(transform .2s linear);
             }
-            &:hover,
-            &:focus,
-            &:active {
+            &:hover {
                 p {
                     .translate(0,0);
                 }
@@ -1614,7 +1612,7 @@ p {
         }
         &.active {
             overflow: visible;
-            z-index: 9999;
+            z-index: 99999;
             p {
                 //display: none;
                 width: 100%;
@@ -1668,6 +1666,9 @@ p {
     @media @phone-only {
         .side-pic {
             width: 46.5%;
+            &:not(.active) p {
+                display: none;
+            }
         }
     }
 }
