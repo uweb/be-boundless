@@ -532,7 +532,6 @@ p {
             font-size: 30px;
             text-align: center;
             color: #FFF;
-            line-height: 1.72222;
             margin: 0 0 14.5px;
             font-weight: 400;
             -webkit-font-smoothing: antialiased;
@@ -560,13 +559,6 @@ p {
             padding: 100px 150px 250px;
             & > h2 {
                 font-size: 40px;
-                font-family: @uni;
-                text-transform: uppercase;
-                color: #FFF;
-                line-height: 1.72222;
-                margin: 0 0 14.5px;
-                font-weight: 400;
-                -webkit-font-smoothing: antialiased;
             }
         }
         #robot {
@@ -936,6 +928,16 @@ p {
     &.text-block .copy {
         background-color: transparent;
         position: relative;
+        & > h2 {
+            font-family: @uni;
+            text-transform: uppercase;
+            font-size: 30px;
+            text-align: center;
+            color: #FFF;
+            margin: 0 0 14.5px;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+        }
     }
 
     #cloud-1,
@@ -1069,14 +1071,7 @@ p {
             background: url("@{bothell}/trees-top.jpg") no-repeat center top transparent;
         }
         .copy > h2 {
-            font-family: @uni;
-            text-transform: uppercase;
             font-size: 40px;
-            color: #FFF;
-            line-height: 1.72222;
-            margin: 0 0 14.5px;
-            font-weight: 400;
-            -webkit-font-smoothing: antialiased;
         }
         .bottom-smoke {
             position: absolute;
@@ -1608,7 +1603,9 @@ p {
                 .translate(0,150px);
                 .transition(transform .2s linear);
             }
-            &:hover {
+            &:hover,
+            &:focus,
+            &:active {
                 p {
                     .translate(0,0);
                 }
@@ -1616,8 +1613,10 @@ p {
         }
         &.active {
             overflow: visible;
+            z-index: 9999;
             p {
-                display: none;
+                //display: none;
+                width: 100%;
             }
         }
         p {
