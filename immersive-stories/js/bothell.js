@@ -171,6 +171,16 @@ $(function(){
     })
   })
 
+  //Tooltip for mobile 
+  
+  $("[data-tooltip]").click(function () {
+    var $title = $(this).find(".title");
+    if (!$title.length) {
+      $(this).append('<span class="title">' + $(this).attr("data-tooltip") + '</span>');
+    } else {
+      $title.remove();
+    }
+  })
 
 
 })

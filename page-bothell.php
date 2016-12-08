@@ -96,7 +96,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy marginless">
-<p>A day in the lab</p>
+<h2>A day in the lab</h2>
 <p>On a Friday morning, students filter into UW Bothell’s <a href="http://digitalfuturelab.com/">Digital Future Lab</a> (DFL) before their weekly check-in meeting.</p>
 <p>Adorning the cozy room’s walls are project timelines, a software architecture flowchart, graphic novel illustrations of a red- and purple-tinted alien world. A giant red beanbag chair is tucked in the corner. Rows of computers, covered in Post-it notes and stickers, compete for space with toys and snacks: stuffed Pokémon, jelly beans, a foam Batman figurine, peanut-butter pretzels, a tiny basketball.</p>
 <p class="callout">It may look like you’d expect a <br>game studio to look, <span>but it doesn’t act like one.</span></p>
@@ -235,7 +235,7 @@
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 copy marginless">
     
-    <p>Behind the mission</p>
+    <h2>Behind the mission</h2>
     <p>For Pace, who came out as gay at age 16, the DFL is a chance to combine the activism of <span data-tooltip="Pace uses the gender-neutral pronouns they and them" data-tooltip-position="top">their</span> youth with <span data-tooltip="Pace uses the gender-neutral pronouns they and them" data-tooltip-position="top">their</span> deep background in tech and gaming.</p>
     <p>Much of Pace’s two decades of software development experience was spent at Microsoft, where <span data-tooltip="Pace uses the gender-neutral pronouns they and them" data-tooltip-position="top">they</span> helped direct and produce everything from casual games to the Xbox flagship title Halo. And while <span data-tooltip="Pace uses the gender-neutral pronouns they and them" data-tooltip-position="top">they</span> loved the creative challenge, <span data-tooltip="Pace uses the gender-neutral pronouns they and them" data-tooltip-position="top">they</span> learned a lot about the industry that <span data-tooltip="Pace uses the gender-neutral pronouns they and them" data-tooltip-position="top">they</span> wanted to change.</p>
     <p>“Video game studios are still very much a <span data-tooltip="When a person’s gender identity conforms with the gender they were assigned at birth; not transgender" data-tooltip-position="top">cisgender</span>, white, straight male world,” Pace says. And it’s not often a very tolerant world, either. One need go no further than video game forums, chatrooms or comment boards to see offensive slurs tossed around casually — or, worse, to see targeted hate campaigns.</p>
@@ -313,7 +313,7 @@
     <p>And some students, like Scout, who came out in the lab, talk about gender identity:</p>
     <p class="callout quote">“After four years of working in a space where my identity as a queer person, as a trans person, was not a negative, I feel way more comfortable with who I am,” he says.</p>
     <p>“Here, we’re not just accommodating different folks. We’re valuing their differences and looking for how they can be beneficial to everyone.”</p>
-    <p>Ghostlight Manor goes commercial</p>
+    <h2>Ghostlight Manor goes commercial</h2>
     <p>In September, a handful of students and staff from the DFL had the opportunity to showcase their first commercial release, Ghostlight Manor — a game that is inspired by classic monster movies and arcade strategy games — at an open house hosted at Microsoft. Scores of game enthusiasts wandered among rows of computers, chatting with representatives from over 50 developers from around the world that were publishing their games on Xbox and Windows 10 devices.</p>
     <p>Braxton watched as a woman gave Ghostlight Manor a try. A phalanx of unknown monsters, masked in white, advanced down the screen in serpentine fashion. The only defense was Lightbot, whose beams of light first revealed the monsters — ghosts, demons, vampires — and then scared them away.</p>
     <p>“Oh my gosh!” said the woman. She had just unmasked a pair of zombies, and they were mad.</p>
