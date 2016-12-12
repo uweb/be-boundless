@@ -319,9 +319,9 @@
     <p>“Oh my gosh!” said the woman. She had just unmasked a pair of zombies, and they were mad.</p>
     <p>Braxton smiled. “Just to see how shiny and glitzy our product has become, and to see it standing up next to all these other titles, makes me really proud,” she said.</p>
     <p class="callout">
-      Test your Ghostlight Manor mettle with a free 11-level demo, <span>available for download <a href="example.com">here</a>.</span>
-      </br>
-      The full PC/Mac version, just released, is <span>available for full download on <a href="example.com">Steam</a>.</span>
+      <!-- Test your Ghostlight Manor mettle with a free 11-level demo, <span>available for download <a href="example.com">here</a>.</span>
+      </br> -->
+      The full PC/Mac version, just released, is <span>available for full download on <a href="http://store.steampowered.com/app/559250">Steam</a>.</span>
     </p>
     
     
