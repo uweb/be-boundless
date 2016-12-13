@@ -163,7 +163,7 @@ $(function(){
         $this = $(this),
         hasCaption = false;
 
-    imgIndex.addEventListener("mouseover", function(){
+    imgIndex.addEventListener("click", function(){
       if (!hasCaption) {
         $this.after('<p>' + $this.attr('alt') + '</p>')
         hasCaption = true;

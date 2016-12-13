@@ -1639,21 +1639,25 @@ span.title {
         overflow: hidden;
         .aspectRatioPlaceholder {
             p {
-                .translate(0,150px);
-                .transition(transform .2s linear);
+                // .translate(0,150px);
+                // .transition(transform .2s linear);
+                display: none;
             }
-            &:hover {
-                p {
-                    .translate(0,0);
-                }
-            }
+            // &:hover {
+            //     p {
+            //         .translate(0,0);
+            //     }
+            // }
         }
         &.active {
             overflow: visible;
             z-index: 99999;
             p {
-                //display: none;
-                width: 100%;
+                display: block;
+                position: fixed;
+                bottom: 50px;
+                left: 100px;
+                width: 50%;
             }
         }
         p {
