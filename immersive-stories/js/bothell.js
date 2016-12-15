@@ -47,17 +47,19 @@ $(function(){
 
   var parallaxed = new TimelineMax ()
         .add([
-          TweenMax.to('#back', 1,      { transform: 'translateY(0)', ease: Power0.easeIn }),
-          TweenMax.to('#middle', 0.5,  { transform: 'translateY(0)', ease: Power0.easeIn, delay: 0.0 }),
-          TweenMax.to('#fore', 0.3,    { transform: 'translateY(0)', ease: Power0.easeIn, delay: 0.1 }),
-          TweenMax.to('#robot', 0.2,   { transform: 'translateY(100px)', ease: Power0.easeIn, delay: 0.3 })
+          TweenMax.to('#back', 1,      { transform: 'translateY(-30px)', ease: Power0.easeIn }),
+          TweenMax.to('#middle', 1,  { transform: 'translateY(16vh)', ease: Power0.easeIn, delay: 0.0 }),
+          TweenMax.to('#middle2', 1,  { transform: 'translateY(8vh)', ease: Power0.easeIn, delay: 0.0 }),
+          TweenMax.to('#middle3', 1,  { transform: 'translateY(14vh)', ease: Power0.easeIn, delay: 0.0 }),
+          // TweenMax.to('#fore', 0.3,    { transform: 'translateY(0)', ease: Power0.easeIn, delay: 0.1 }),
+          TweenMax.to('#robot', 1,   { transform: 'translateY(-100px)', ease: Power0.easeIn, delay: 0.3 })
         ])
 
   var jason = new ScrollMagic.Scene({
     triggerElement: '#jason',
     triggerHook: 0.1,
     offset: $('#jason').height() - $windowHeight,
-    duration: '100%',
+    duration: '120%',
   })
   .setTween(parallaxed)
   .addTo(controllerBothell)

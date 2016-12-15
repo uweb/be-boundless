@@ -495,6 +495,9 @@ p {
     background-color: #2d254b;
     #back,
     #middle,
+    #middle2,
+    #middle3,
+    #middle4,
     #fore {
         position: absolute;
         top: 0;
@@ -512,8 +515,8 @@ p {
     }     
     #windmill {
         position: absolute;
-        bottom: 40px;
-        right: 160px;
+        bottom: 100px;
+        right: 130px;
         .transition(all);
         #blades {
             .transform-origin(center center);
@@ -540,19 +543,31 @@ p {
     #back {
         background-image: url("@{bothell}/back.jpg");
         .background-cover(cover);
-        .translate(0,400px);
+        .translate(0,200px);
     }
     #middle {
-        background-image: url("@{bothell}/middle.png");
+        background-image: url("@{bothell}/middle2.png");
         .background-cover(100%);
         background-position: center bottom;
-        .translate(0,300px);
+        .translate(0,-13vh);
+    }
+    #middle2 {
+        background-image: url("@{bothell}/middle3.png");
+        .background-cover(100%);
+        background-position: center bottom;
+        .translate(0,-5vh);
+    }
+    #middle3 {
+        background-image: url("@{bothell}/tree.png");
+        .background-cover(100%);
+        background-position: center bottom;
+        .translate(0,0);
     }
     #fore {
         background-image: url("@{bothell}/fore.png");
         .background-cover(100%);
         background-position: center bottom;
-        .translate(0,600px);
+        .translate(0,0);
     }
     @media (min-width: 768px) {
         &.text-block .copy {
@@ -563,7 +578,7 @@ p {
         }
         #robot {
             background: url("@{bothell}/robot.png") center bottom no-repeat transparent;
-            .translate(0,600px);
+            .translate(0,250px);
             position: absolute;
             bottom: 0;
             left: 50%;
@@ -575,6 +590,10 @@ p {
     @media (max-width: 768px) {
         &.text-block .copy {
             padding: 20px 30px 260px;
+        }
+        #windmill {
+            bottom: -10px;
+            right: 50px;
         }
         #robot {
             background-size: 50%;
@@ -743,17 +762,19 @@ p {
         background-color: transparent;
         position: relative;
     }
+    .top-smoke {
+        position: absolute;
+        top: -15vw;
+        left: 0;
+        height: 15vw;
+        width: 100%;
+    }
     @media @tablet-portrait-up {
         background: url("@{bothell}/smoke-top.jpg") no-repeat center top black;
         padding-top: 400px;
         padding-bottom: 200px;
         .background-cover(100%);
         .top-smoke {
-            position: absolute;
-            top: -15vw;
-            left: 0;
-            height: 15vw;
-            width: 100%;
             background: url("@{bothell}/smoke-top-trans.png") repeat-x center bottom transparent;
             .background-cover(100%);
         }
@@ -769,6 +790,10 @@ p {
     }
     @media @phone-only {
         background: url("@{bothell}/smoke-top-mobile.jpg") repeat-x center top black;
+        overflow: visible;
+        .top-smoke {
+            background: url("@{bothell}/smoke-top-mobile.png") repeat-x center bottom transparent;
+        }
         &.text-block .copy {
             padding: 220px 30px 60px;
         }
