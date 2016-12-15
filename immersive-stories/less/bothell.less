@@ -503,7 +503,7 @@ p {
 
 #jason {
     position: relative;
-    z-index: 20;
+    z-index: 1;
     background-color: #2d254b;
     #back,
     #middle,
@@ -774,7 +774,7 @@ p {
 
 #ghosts {
     position: relative;
-    z-index: 21;
+    z-index: 2;
     &.text-block .copy {
         background-color: transparent;
         position: relative;
@@ -980,6 +980,7 @@ p {
     &.text-block .copy {
         background-color: transparent;
         position: relative;
+        z-index: 1;
         & > h2 {
             font-family: @uni;
             text-transform: uppercase;
@@ -1032,6 +1033,7 @@ p {
         bottom: 0;
         background-repeat: no-repeat;
         z-index: 0;
+        pointer-events: none;
     }
     .background {
         background-image: url("@{bothell}/tree-back.jpg");
@@ -1119,7 +1121,7 @@ p {
         .background-cover(100%);
         & > div:first-child {
             padding-top: 100px;
-            padding-bottom: 500px;
+            padding-bottom: 300px;
             background: url("@{bothell}/trees-top.jpg") no-repeat center top transparent;
             .background-size(100%);
         }
