@@ -450,9 +450,10 @@ p {
             }
             .back {
               transform: rotateY(-180deg);
+              -webkit-transform: rotateY(-180deg);
             }
-            &:hover .back   { transform: rotateY(0deg);   }
-            &:hover .front  { transform: rotateY(180deg); }
+            &:hover .back   { transform: -webkit-rotateY(0deg);   }
+            &:hover .front  { transform: -webkit-rotateY(180deg); }
             .front  { 
                 background-image: url("@{bothell}/ghost-2.png"); 
                 &.red {
@@ -639,12 +640,15 @@ p {
         }
         .back {
           transform: rotateY(-180deg);
+          -webkit-transform: rotateY(-180deg);
         }
         &:hover .back {
           transform: rotateY(0deg);
+          -webkit-transform: rotateY(0deg);
         }
         &:hover .front {
           transform: rotateY(180deg);
+          -webkit-transform: rotateY(180deg);
         }
     }
     &.aina {
@@ -772,7 +776,7 @@ p {
     }
     @media @tablet-portrait-up {
         background: url("@{bothell}/smoke-top.jpg") no-repeat center top black;
-        padding-top: 400px;
+        padding-top: 15vw;
         padding-bottom: 200px;
         .background-cover(100%);
         .top-smoke {
@@ -1129,7 +1133,7 @@ p {
                 background: url("@{bothell}/headline.svg") no-repeat center center transparent;
                 margin-top: -50px;
                 padding: 2.6vw 0;
-                .background-size(100%);
+                .background-size(100% auto);
                 font-size: 25px;
             }
         }
@@ -1394,7 +1398,7 @@ p {
             text-transform: uppercase;
             font-weight: 900;
             text-align: center;
-            .background-size(100% 100%);
+            .background-size(100% auto);
             padding: 5.6vw 0;
             margin-bottom: -5vw;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
