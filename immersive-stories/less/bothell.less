@@ -452,8 +452,14 @@ p {
               transform: rotateY(-180deg);
               -webkit-transform: rotateY(-180deg);
             }
-            &:hover .back   { transform: -webkit-rotateY(0deg);   }
-            &:hover .front  { transform: -webkit-rotateY(180deg); }
+            &:hover .back   { 
+                transform: -webkit-rotateY(0deg);   
+                transform: -rotateY(0deg);   
+            }
+            &:hover .front  { 
+                transform: -webkit-rotateY(180deg); 
+                transform: rotateY(180deg); 
+            }
             .front  { 
                 background-image: url("@{bothell}/ghost-2.png"); 
                 &.red {
@@ -1382,7 +1388,7 @@ p {
             font-size: 33px;
         }
         li {
-            list-style: none;
+            list-style: none;  
             font-weight: 900;
             color: white;
             span {
