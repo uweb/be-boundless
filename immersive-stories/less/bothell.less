@@ -53,6 +53,10 @@ body {
     }
 }
 
+main#main_content {
+    overflow: hidden;
+}
+
 p {
     color: white;
     @media(max-width:768px) {
@@ -441,6 +445,7 @@ p {
                 .background-cover(100%);
                 text-align: left;
                 backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
                 transform-style: preserve3d;
                 .transition(transform 0.4s);
             }
@@ -454,7 +459,7 @@ p {
             }
             &:hover .back   { 
                 transform: -webkit-rotateY(0deg);   
-                transform: -rotateY(0deg);   
+                transform: rotateY(0deg);   
             }
             &:hover .front  { 
                 transform: -webkit-rotateY(180deg); 
@@ -634,6 +639,7 @@ p {
             bottom: 13%;
             text-align: left;
             backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
             transform-style: preserve3d;
             transition: all 0.4s;
             .border-radius(100%);
@@ -1025,7 +1031,7 @@ p {
         right: 0;
         bottom: 0;
         background-repeat: no-repeat;
-        z-index: -1;
+        z-index: 0;
     }
     .background {
         background-image: url("@{bothell}/tree-back.jpg");
