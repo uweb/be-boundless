@@ -50,7 +50,7 @@ $(function(){
         var dotToggle = new ScrollMagic.Scene({
             duration: this.offsetHeight + 'px',
             triggerElement: this,
-            triggerHook: 0.5
+            triggerHook: 0.75
         });
         dotToggle.on("start", function(){
             $(element).addClass('active');

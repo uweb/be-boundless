@@ -279,9 +279,11 @@ p {
     .background-cover(cover);
     background-position: center center;
     padding: 10vw 0;
+    opacity: 0;
+    .transition(opacity .8s linear);
     .break-animate {
         opacity: 0;
-        h2, p { .transition(all .5s linear); }
+        h2, p { .transition(transform .8s linear); }
         h2 {
             .translate(0,-50px);
         }
@@ -298,12 +300,16 @@ p {
             .translate(0,0);
         }
     }
+    &.active  {
+        opacity: 1;
+    }
     h2 {
         text-transform: uppercase;
         color: white;      
         font-weight: 900;
         font-size: 3.5vw; 
         text-shadow: 1px 1px 8px rgba(0,0,0,.9);
+        margin-bottom: 0;
     }
     p {
         color: white;

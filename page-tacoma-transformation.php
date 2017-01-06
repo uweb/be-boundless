@@ -34,7 +34,7 @@
           <div class="row">
               <div class="col-md-10 col-md-offset-1 copy">
                 
-                <p class="gold-quote headline-gold purple">At UW Tacoma, it doesn’t matter where you came from. Once you’re there, you’re starting over. Once you’re there, you’re part of a family.” <b>– Tom Rochat</b></p>
+                <p class="gold-quote headline-gold purple">At UW Tacoma, it doesn’t matter where you came from. Once you’re there, you’re starting over. Once you’re there, you’re part of a family. </p>
 
                   <p>When Tom Rochat, ’13, purchased his first home in the sleepy, waterside town of Kingston, Washington, he wasn’t caught up in the three bedrooms or the endless backyard or the wood-burning stove. He was concerned about one thing, and one thing only: signal strength. He did his homework — complete with maps and diagrams — and calculated exactly where he’d get the strongest Wi-Fi connection. Only then did he sign the papers. </p>
 
@@ -55,7 +55,7 @@
         
         <div class="break-animate">
           <h2>The four-story fall</h2>
-          <span class="udub-slant"><span></span></span>
+          <!-- <span class="udub-slant"><span></span></span> -->
           <p>&mdash; and a knack for hacking</p>
         </div>
 
@@ -100,7 +100,7 @@
       <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
         <div class="break-animate">
           <h2>Top of the class at UW Tacoma </h2>
-          <span class="udub-slant"><span></span></span>
+          <!-- <span class="udub-slant"><span></span></span> -->
           <p>&mdash; and beyond</p>
         </div>
 
@@ -118,13 +118,13 @@
 
 <p>Rochat’s cohort was one of the first to go through UW Tacoma’s brand-new information technology program. “I thought I was going to be a bottom-rung student and need everybody’s help,” he says. “I quickly found myself near the top in almost every class. I didn’t realize what was common sense and easy to me was actually an extremely valuable skillset.”</p>
 
-<p class="gold-quote headline-gold purple">UW Tacoma saw what I was capable of before I knew my own potential. They really fostered my confidence, and I now understand my worth. <b>– Tom Rochat</b></p>
+<p class="gold-quote headline-gold purple">UW Tacoma saw what I was capable of before I knew my own potential. They really fostered my confidence, and I now understand my worth.</p>
 
 <p>Rochat threw himself into campus organizations, joining the Safe Secure Computing Research Group and becoming the chief technical officer and eventual president of the computer security–focused Greyhat Group — all while selling foraged chanterelles for gas money just to make it to class every day. “I took every possible opportunity because it was a massive opportunity for me to even be at UW Tacoma.” </p>
 
 <p>Seizing those opportunities paid off; Rochat wrote a white paper about next-generation security systems with the Safe Security Computing Research Group, and UW Tacoma flew him to Florida to present his work. An employee of Avanade, a Microsoft partner and test bed, saw Rochat’s presentation, called his boss and said, “You need to hire this guy right away.” Rochat had a phone interview with Avanade that day, and they hired him as an intern on the spot. </p>
 
-<p class="gold-quote headline-gold purple">I never would have had these opportunities if I hadn’t received scholarships to attend UW Tacoma. It’s all thanks to this place and these people. <b>– Tom Rochat</b></p>
+<p class="gold-quote headline-gold purple">I never would have had these opportunities if I hadn’t received scholarships to attend UW Tacoma. It’s all thanks to this place and these people. </p>
 
 <p>Six months later, his status changed to senior analyst. He was working full time before he even graduated from UW Tacoma, switching between homework and work work. Three years and five promotions later, he’s an operations service owner up for another promotion — this time, to manager. </p>
 
@@ -144,7 +144,7 @@
       <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
         <div class="break-animate">
           <h2>The history &mdash; and <br>future &mdash; of Tacoma </h2>
-          <span class="udub-slant"><span></span></span>
+          <!-- <span class="udub-slant"><span></span></span> -->
         </div>
       </div> 
   </div>
