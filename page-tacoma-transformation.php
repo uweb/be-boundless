@@ -373,7 +373,7 @@
                         <h2 class="headline-gold">Help make a difference</h2>
                         <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. You can help UW Tacoma transform the lives of more students like Tom Rochat by contributing to these funds.</p>
                         <div id="immersive-give-iframe"></div>
-                        <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="ACHSED,HUSPRO,SCHOLU,HUSPRO" href="#">Give now</a></span></div>
+                        <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="TACTEC,AMOCAT" href="#">Give now</a></span></div>
                       </div>
                     </div>
                 </div>
