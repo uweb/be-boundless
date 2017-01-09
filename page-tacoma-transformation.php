@@ -15,7 +15,7 @@
         <div class="col-md-10 col-md-offset-1 col-xs-10 col-lg-offset-1 col-xs-offset-1" id='intro-text'>
             <h1><span><span>The transformative </span></span><span><span>power of UW Tacoma</span></span> </h1>
             <span class="udub-slant"><span></span></span>
-            <p>Five years ago, Tom Rochat was foraging for mushrooms just to get by. Today, he’s on the fast track to senior-level management at a global IT company — and he credits it all to his time at UW Tacoma.</p>
+            <p>Five years ago, Tom Rochat, ’13, was foraging for mushrooms just to get by. Today, he’s on the fast track to senior-level management at a global IT company — and he credits it all to his time at UW Tacoma.</p>
         </div>
     </div>
   </div>
@@ -373,7 +373,7 @@
                         <h2 class="headline-gold">Help make a difference</h2>
                         <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. You can help UW Tacoma transform the lives of more students like Tom Rochat by contributing to these funds.</p>
                         <div id="immersive-give-iframe"></div>
-                        <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="TACTEC,AMOCAT" href="#">Give now</a></span></div>
+                        <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="SCHTAC,AMOCAT" href="#">Give now</a></span></div>
                       </div>
                     </div>
                 </div>

@@ -136,7 +136,7 @@ p {
         font-family: @uni;
         font-weight: bold;
         font-size: 24px;
-        text-shadow: 0px 0px 50px rgb(255, 255, 255);
+        text-shadow: 0px 0px 10px rgb(255, 255, 255);
     }
     .intro-body {
         position: relative;
@@ -226,14 +226,17 @@ p {
 
     }
     @media(min-width:996px) {
-
+        p {
+            font-size: 22px;
+        }
     }
     @media(min-width:1200px) {
-        p {
-            font-size: 25px;
-        }
+
     }   
     @media(min-width:1600px) {
+       p {
+           font-size: 25px;
+       }
        h1 {
            font-size: 4vw;
        }
@@ -827,7 +830,7 @@ div.audio {
     }
     .gold-quote {
         position: relative;
-        margin: 140px 0 160px;
+        margin: 130px 0 ;
         font-weight: bold;
         &:after,
         &:before {
