@@ -40,7 +40,7 @@
 
                   <p>When you work from home as an operations service owner at Avanade — a test bed for the latest Microsoft technologies — Wi-Fi is key. Rochat, a magna cum laude graduate of UW Tacoma’s information technology program, made sure solving global IT problems from his remote office wouldn’t be an issue. </p>
 
-                  <p>But before he found his way at UW Tacoma, Rochat was faced with a much heavier issue than a weak Wi-Fi signal: how he and his family were going to escape homelessness from one month to the next.</p>
+                  <p>But before he found his way at <a href="https://www.tacoma.uw.edu/">UW Tacoma</a>, Rochat was faced with a much heavier issue than a weak Wi-Fi signal: how he and his family were going to escape homelessness from one month to the next.</p>
 
               </div> 
       </div> 
@@ -116,7 +116,7 @@
               <div class="col-md-10 col-md-offset-1 copy">
                 
 
-<p>Rochat’s cohort was one of the first to go through UW Tacoma’s brand-new information technology program. “I thought I was going to be a bottom-rung student and need everybody’s help,” he says. “I quickly found myself near the top in almost every class. I didn’t realize what was common sense and easy to me was actually an extremely valuable skillset.”</p>
+<p>Rochat’s cohort was one of the first to go through UW Tacoma’s brand-new <a href="https://www.tacoma.uw.edu/institute-technology/institute-technology">information technology program</a>. “I thought I was going to be a bottom-rung student and need everybody’s help,” he says. “I quickly found myself near the top in almost every class. I didn’t realize what was common sense and easy to me was actually an extremely valuable skillset.”</p>
 
 <p class="gold-quote headline-gold purple">UW Tacoma saw what I was capable of before I knew my own potential. They really fostered my confidence, and I now understand my worth.</p>
 
@@ -160,13 +160,12 @@
 <p>But 30 years ago, the “City of Destiny” was a city of lost hope. It started with the collapse of the railroad industry after WWII. The jobs left, and Union Station was forgotten. Interstate 5 came through, followed by the Tacoma Mall. Retailers fled downtown for the new shopping center, and in the midst of everything, the beautiful old structures that made up the core of Tacoma became blighted old structures as squatters, street gangs, crime and drugs moved in.</p>
 <p>But then, it happened. The University of Washington was going to create UW Tacoma, and they were going to put it right where Tacoma needed it most: the downtown core. UW Tacoma held its inaugural classes in its one degree offering — liberal studies — in 1990. </p>
 <p>Since then, UW Tacoma has blossomed into a Washington Monthly–crowned “best bang for the buck” university. With nine schools and programs and an urban-serving campus that preserved and revitalized the city’s historic warehouse district, UW Tacoma has earned a reputation for transforming not just the brick-and-mortar bones of Tacoma, but the students who learn there, too. </p>
-<p>And it’s growing. In the next 25 years, UW Tacoma will continue to provide financial aid to students who straddle the qualifying line, meaning those who are strapped for resources can have a well-rounded student experience and a future that once felt out of reach. It will grow in its offerings: STEM programming, engineering degrees, a business incubator — opportunities that will fuel economic growth and innovation in a wanting world. And just like UW Tacoma transformed Tacoma, it will continue to transform the lives of students like Tom Rochat.</p> 
+<p>And it’s growing. In the next 25 years, UW Tacoma will continue to provide financial aid to students who straddle the qualifying line, meaning those who are strapped for resources can have a well-rounded student experience and a future that once felt out of reach. It will grow in its offerings: STEM programming, engineering degrees, a business incubator — opportunities that will fuel economic growth and innovation in a wanting world. And just like UW Tacoma <a href="http://www.tacoma.uw.edu/advancement/25th-anniversary-scrolling-timeline">transformed Tacoma</a>, it will continue to transform the lives of students like Tom Rochat.</p> 
 
       </div> 
     </div> 
   </div>   
 </section>
-
 
 
 <div class="person">
@@ -181,8 +180,8 @@
         <div>
           <ul>
             <li>Entrepreneur and owner behind Pop Up Coffee, a technology and operations company that helps people open their own coffee shops in underutilized spaces for less than $1,000 </li>
-            <li>Bachelor of Arts in Business Administration, UW Tacoma, ’12</li>
-            <li>Masters of Business Administration, UW Tacoma, ’15</li>
+            <li><a href="http://www.tacoma.uw.edu/milgard/baba/overview">Bachelor of Arts in Business Administration</a>, UW Tacoma, ’12</li>
+            <li><a href="http://www.tacoma.uw.edu/milgard/mba/overview">Masters of Business Administration</a>, UW Tacoma, ’15</li>
           </ul>
         </div>
       </div>
