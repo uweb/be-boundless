@@ -36,11 +36,11 @@
                 
                 <p class="gold-quote headline-gold purple">At UW Tacoma, it doesn’t matter where you came from. Once you’re there, you’re starting over. Once you’re there, you’re part of a family. </p>
 
-                  <p>When Tom Rochat, ’13, purchased his first home in the sleepy, waterside town of Kingston, Washington, he wasn’t caught up in the three bedrooms or the endless backyard or the wood-burning stove. He was concerned about one thing, and one thing only: signal strength. He did his homework — complete with maps and diagrams — and calculated exactly where he’d get the strongest Wi-Fi connection. Only then did he sign the papers. </p>
+                  <p>When Tom Rochat, ’13, purchased his first home in the sleepy, waterside town of Kingston, Washington, he wasn’t caught up in the three bedrooms or the endless backyard or the wood-burning stove. He was concerned about one thing, and one thing only: signal strength. He did his homework — complete with maps and diagrams — and calculated exactly where he’d get the strongest internet connection. Only then did he sign the papers. </p>
 
-                  <p>When you work from home as an operations service owner at Avanade — a test bed for the latest Microsoft technologies — Wi-Fi is key. Rochat, a magna cum laude graduate of UW Tacoma’s information technology program, made sure solving global IT problems from his remote office wouldn’t be an issue. </p>
+                  <p>When you work from home as an operations service owner at Avanade — a test bed for the latest Microsoft technologies — connectivity is key. Rochat, a magna cum laude graduate of UW Tacoma’s information technology program, made sure solving global IT problems from his remote office wouldn’t be an issue. </p>
 
-                  <p>But before he found his way at <a href="https://www.tacoma.uw.edu/">UW Tacoma</a>, Rochat was faced with a much heavier issue than a weak Wi-Fi signal: how he and his family were going to escape homelessness from one month to the next.</p>
+                  <p>But before he found his way at <a href="https://www.tacoma.uw.edu/">UW Tacoma</a>, Rochat was faced with a much heavier issue than a weak signal: how he and his family were going to escape homelessness from one month to the next.</p>
 
               </div> 
       </div> 
