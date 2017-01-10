@@ -2,7 +2,7 @@
 
  <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />
  <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/tacoma.css' ?>' type='text/css' media='all' />
+ <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/tacoma.css?v=' . time() ?>' type='text/css' media='all' />
 
 <?php get_header( "campaign-close" ); ?>
 
