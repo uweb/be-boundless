@@ -254,6 +254,11 @@
           </ul>
 
           <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/301086371&amp;color=4b2e83&show_artwork=false&show_user=false&show_bpm=false"></iframe>
+
+          <p class="transcript" tabindex="0">Really, UW Tacoma services a large part of the South Sound. Their technology programs really do help support the entire region, the Puget Sound region. It will grow bigger and bigger, and I’m happy to see that happen. But it still feels, you feel pretty darn connected to your instructors, to your professors, and that’s all really great. I think it’s fabulous. It’s one of the best things about UW Tacoma.</p> 
+
+          <a href="#" class="transcript-trigger">Read full transcript</a>
+
         </div>
       </div>
     </section>
@@ -345,6 +350,15 @@
           </ul>
 
           <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/301086779&amp;color=4b2e83&show_artwork=false&show_user=false&show_bpm=false"></iframe>
+          
+          
+          <p class="transcript" tabindex="0">Tacoma really feels like a small town. But I like to say that Tacoma’s small enough that you can make a difference, but it’s big enough that that matters; That someone can come in here and say like, I’m going to do this, whether that’s art or politics or something, and everyone’s going be like, yeah okay, do that. And it works.
+That ability for people to come in and actually make a dent in the universe and do something here is pretty cool.
+And I see that the people coming out of UW can really make a difference. And the more people that come to UW and then stay in Tacoma is good for Tacoma.
+Sometimes I feel like the whole ‘jobs of the future’ thing is kind of a joke, but here it’s actually real, where you see the computer programmers and you see all of those people who are doing those new jobs, those ‘jobs of the future,’ and they’re getting trained here. And hopefully that means that they’ll stay and contribute to the local economy.</p>
+          
+          <a href="#" class="transcript-trigger">Read full transcript</a>
+
         </div>
       </div>
     </section>

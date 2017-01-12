@@ -18,6 +18,12 @@ $(function(){
         introMedicine.update(true);
     });
 
+    $('.transcript-trigger').on('click',function(e){
+        e.preventDefault();
+        var close = $(this).closest('.bio');
+        close.toggleClass('active')
+        close.find('.transcript').focus();
+    })
 
     function videoAdder(el, $el){
         $el.addClass('active');
