@@ -29,7 +29,7 @@ $(function(){
             TweenMax.to('#fore', 1,   { transform: 'translateY(-40vh)', ease: Power0.easeIn})
           ])
 
-    var jason = new ScrollMagic.Scene({
+    var dentistPara = new ScrollMagic.Scene({
       triggerElement: '#intro-slide',
       triggerHook: 0.1,
       offset: $('#intro-slide').height() - $windowHeight,
@@ -37,7 +37,9 @@ $(function(){
     })
     .setTween(parallaxed)
     .addTo(controllerDentistry)
-
+    $(window).resize(function(){
+        dentistPara.update(true);
+    });
 
 
 

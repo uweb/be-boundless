@@ -227,10 +227,10 @@ h2 {
             text-shadow: 2px 2px 0px rgba(255,255,255,0.4);
         }
         p {
-            margin: 40px 0 0 0;
+            margin: 0;
             line-height: 1.4;
-            font-size: 20px;
-            padding-right: 35%;
+            font-size: 16px;
+            padding-right: 65%;
         }
         a.read-more {
             top: calc(~"100vh - 95px");
@@ -286,6 +286,12 @@ h2 {
             font-size: 5vw;
             margin-top: 35vh;
         }
+        p {
+            margin: 40px 0 0 0;
+            line-height: 1.4;
+            font-size: 20px;
+            padding-right: 35%;
+        }
     } 
    
 
@@ -326,10 +332,6 @@ h2 {
     // @media @desktop-up { }            (min-width: 1200px)
     // @media @desktop-only { }          (min-width: 1200px) and (max-width: 1799px)"
     // @media @big-desktop-up { }        (min-width: 1800px) 
-
-}
-
-#intro-slide {
 
 }
 
@@ -402,6 +404,17 @@ h2 {
             min-height: 25vw;
         }  
     }   
+    @media @tablet-landscape-up { 
+        .column {
+            &:active,
+            &:focus,
+            &:hover {
+                p {
+                   .translate(0, -50%);
+                }
+            }
+        } 
+    }
     @media @desktop-up { 
         .column {
             p {
@@ -505,7 +518,7 @@ h2 {
             background-color: @purple;
         }
         .back   { 
-            background-color: @lightgold;
+            background-color: @darkgold;
             display: -ms-flexbox;
             display: -webkit-flex;
             display: flex;
@@ -717,6 +730,7 @@ h2 {
 .photo-break {
     padding: 10vw 0;
     position: relative;
+
     & > div:first-child {
         .background-cover(cover);
         background-image: url("@{dentistry}/keturah-mobile.jpg");
@@ -797,6 +811,15 @@ h2 {
     }
     img {
     }
+    blockquote {
+        font-family: @uni;
+        font-weight: normal;
+        border: none;
+        color: white;
+        padding: 0;
+        font-size: 25px;
+        line-height: 1.4;
+    }
     .copy div {
         vertical-align: top;
         display: inline-block;
@@ -827,6 +850,9 @@ h2 {
             &:nth-of-type(2) {
                 max-width: 31.5%;
             }
+        }
+        blockquote {
+            font-size: 30px;
         }
     }
 }
@@ -958,7 +984,7 @@ h2 {
         font-weight: bold;
         text-transform: uppercase;
         margin-bottom: 40px;
-        margin: 10px 0 40px;
+        margin: 40px 0 40px;
         &.left {
             text-align: left;
         }

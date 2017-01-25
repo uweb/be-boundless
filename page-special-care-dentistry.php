@@ -37,7 +37,7 @@
                 
                  <p class="gold-quote headline-gold purple">This might seem like a typical dental appointment, but DECOD, which stands for Dental Education in the Care of Persons with Disabilities, is anything but average.</p>
                  
-                <p>The DECOD clinic, <a href="#"></a>>which is supported in part by private donations</a>, provides care to patients with developmental or acquired disabilities, including people with autism, multiple sclerosis or — like Santana — cerebral palsy, meaning they often need care beyond what a typical dental office provides. </p>
+                <p>The DECOD clinic, <a href="#">which is supported in part by private donations</a>, provides care to patients with developmental or acquired disabilities, including people with autism, multiple sclerosis or — like Santana — cerebral palsy, meaning they often need care beyond what a typical dental office provides. </p>
 
 
                 <iframe width="1280" height="720" src="https://www.youtube.com/embed/jQjeTrAUjAs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -59,14 +59,15 @@
 
 <section class="photo-break">  
   <div></div>
-  <div class="row">
-      <div class="col-md-4 col-md-offset-2 col-xs-10 col-xs-offset-1">
-        <div class="break-animate">
-          <h2>Embracing the unexpected</h2>
-          <p>Dr. Keturah Lowe is a second-year general practice resident in the School of Dentistry’s Department of Oral and Maxillofacial Surgery, focusing on special care dentistry. Most of the week, she can be found at the DECOD clinic in the UW Health Sciences Center, treating patients with developmental disabilities and occasionally working with dental students. </p>
-        </div>
-
-      </div> 
+  <div class="container">
+   <div class="row">
+       <div class="col-md-4 col-md-offset-2 col-xs-10 col-xs-offset-1">
+         <div class="break-animate">
+           <h2>Embracing the unexpected</h2>
+           <p>Dr. Keturah Lowe is a second-year general practice resident in the School of Dentistry’s Department of Oral and Maxillofacial Surgery, focusing on special care dentistry. Most of the week,   she can be found at the DECOD clinic in the UW Health Sciences Center, treating patients with developmental disabilities and occasionally working with dental students. </p>
+         </div>
+       </div> 
+   </div>
   </div>
 </section>
 
@@ -154,7 +155,8 @@
 
           <p>After DECOD’s inaugural grant from the Robert Wood Johnson Foundation ended, Stiefel and her team, including Dr. Edmund Truelove, then the school’s chair of Oral Medicine worked to secure federal grants from the U.S. Department of Education, which allowed them to expand dental training in special-needs patient care and open the DECOD clinic.</p>
           <p>Then in 1984, after Stiefel testified on key dental issues at the state capitol and contacted legislators, DECOD secured state funds to increase access to dental care for Washington state residents with disabilities, as well as the training of local dentists.</p>
-          <p>Stiefel and her team also developed the learning modules for UW dental students that are reflected in the curriculum today. “It was truly a team effort at every level,” says Stiefel. </p>
+          <p>Stiefel and her team also developed the learning modules for UW dental students that are reflected in the curriculum today.  </p>
+          <blockquote>“It was truly a team effort at every level,” says Stiefel.</blockquote>
           <p>Read more about the <a href="#">history of DECOD</a> and the <a href="#">Center for Pediatric Dentistry</a>.</p>
       </div> 
     </div> 
