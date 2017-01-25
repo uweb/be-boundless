@@ -174,7 +174,7 @@
                   <h2 class="headline-gold">Support the future of Dentistry</h2>
                   <p>You can help expand access to dental care for adults and children with special needs. </p>
                   <div id="immersive-give-iframe"></div>
-                  <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="SCHTAC,AMOCAT" href="#">Give now</a></span></div>
+                  <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="UNCOMP" href="#">Give now</a></span></div>
                 </div>
               </div>
           </div>
