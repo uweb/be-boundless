@@ -1,0 +1,200 @@
+<?php get_header( "campaign-open" ); ?>
+
+ <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />
+ <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
+ <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/dentistry.css?v=' . time() ?>' type='text/css' media='all' />
+
+<?php get_header( "campaign-close" ); ?>
+
+<div id="immersive-body">
+
+<div class="intro" id="intro-slide"><div id="back"></div><div id="middle"></div><div id="fore"></div>
+  <div class="with-tom"></div>
+  <div class="intro-body">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-1 col-xs-11 col-lg-offset-1 col-xs-offset-1" id='intro-text'>
+            <h1><span><span>Special care </span></span><span><span>for healthy <br>smiles</span></span> </h1>
+            <p>Finding a dentist can be challenging for people with disabilities. But through two clinics and a cutting-edge curriculum in special care dentistry, the UW School of Dentistry is working to ensure all patients receive quality dental care.</p>
+        </div>
+    </div>
+  </div>
+   
+
+  <a class="read-more" href="#main_content">Read the story</a>
+</div>
+
+
+
+<main id="main_content">
+
+
+  <section class="text-block">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-10 col-md-offset-1 copy">
+
+                <p>Ruben Santana looks forward to his dental appointments. He knows that when he arrives at the UW School of Dentistry’s DECOD clinic, front desk assistant Juana Rashid will greet him with a warm smile and chat with him and his mother in Spanish. And when it’s time for his appointment, his dentist will talk him through each step of the cleaning — when they’re not discussing the Seahawks. </p>
+                
+                 <p class="gold-quote headline-gold purple">This might seem like a typical dental appointment, but DECOD, which stands for Dental Education in the Care of Persons with Disabilities, is anything but average.</p>
+                 
+                <p>The DECOD clinic, <a href="#"></a>>which is supported in part by private donations</a>, provides care to patients with developmental or acquired disabilities, including people with autism, multiple sclerosis or — like Santana — cerebral palsy, meaning they often need care beyond what a typical dental office provides. </p>
+
+
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/jQjeTrAUjAs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+
+                <p>Most dental care providers have minimal training in special care dentistry, leaving them unable to address patients’ behavioral and physical needs. Additionally, many patients with special needs are afraid of dental procedures, and may have had past treatment while under general anesthesia. This means their fears are never assuaged, and appointments can remain challenging for both patient and dental care provider.</p>
+
+                <p>At the DECOD clinic, however, providers work with patients to help them get comfortable in the exam chair. And those treating the patients include UW dental students working under faculty supervision, ensuring that more oral health care professionals will be able to treat patients — a one-two punch to change the future of special care dentistry.</p>
+
+                <p>In partnership with DECOD is the UW’s Center for Pediatric Dentistry; while the DECOD clinic treats adults, the center sees younger patients with special needs. Through both clinics, as well as the accompanying curriculum in special care dentistry, the School of Dentistry is leading the charge to improve access to dental care for all patients. </p>
+
+
+              </div> 
+      </div> 
+    </div>   
+  </section>
+
+
+
+<section class="photo-break">  
+  <div></div>
+  <div class="row">
+      <div class="col-md-4 col-md-offset-2 col-xs-10 col-xs-offset-1">
+        <div class="break-animate">
+          <h2>Embracing the unexpected</h2>
+          <p>Dr. Keturah Lowe is a second-year general practice resident in the School of Dentistry’s Department of Oral and Maxillofacial Surgery, focusing on special care dentistry. Most of the week, she can be found at the DECOD clinic in the UW Health Sciences Center, treating patients with developmental disabilities and occasionally working with dental students. </p>
+        </div>
+
+      </div> 
+  </div>
+</section>
+
+
+
+<section class="text-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1 copy">
+        <p>Her training in this field has taught her to expect the unexpected when caring for her patients. “Each patient is an individual with individual needs,” she says. “And sometimes those needs change moment by moment.”</p>
+        <p>Some patients start out with a series of appointments to simply get used to the clinic, slowly building up to receiving treatment. Others feel more at ease if an assistant holds their hand, or if they can take breaks from keeping their mouth open. And many benefit from the positive encouragement given throughout procedures. </p>
+        <p>Despite a growing demand, DECOD is one of only a few special care dental clinics in Washington state. Dr. Kimberly Espinoza, director of DECOD, has heard story after story of patients getting rejected from offices where dentists weren’t equipped to treat them. “Families were so frustrated,” she says. </p>
+        <p class="gold-quote headline-gold purple">Some tried several different clinics before they found us.</p>
+        <p>Families at the Center for Pediatric Dentistry echo similar hardships; while the DECOD clinic has been in operation since 1979, the center opened its doors six years ago, to the relief of countless families of special-needs children. Last year alone, they had 21,000 patient visits, about 20 percent of which were children with special needs. </p>
+      </div> 
+    </div> 
+  </div>   
+</section>
+
+
+<section class="grid info-tiles">
+    <div class="column"></div>
+    <div class="column"><div tabIndex="0" class="flip"><div class="front"></div><div class="back"><p>The DECOD program has trained dental providers from Canada, Mexico, Australia, Japan, Europe and South America.</p></div></div></div>
+    <div class="column"></div>
+    <div class="column"><div tabIndex="0" class="flip"><div class="front"></div><div class="back"><p>Patients with special needs also often face financial hardships; many rely on Medicaid.</p></div></div></div>
+    <div class="column"></div>
+    <div class="column"><div tabIndex="0" class="flip"><div class="front"></div><div class="back"><p>The Center for Pediatric Dentistry has a social work department to help families deal with issues that may hamper children’s treatment.</p></div></div></div>
+</section>
+
+
+<section class="text-block text-image-block">
+  <div class="container">
+      <div>
+        <h2>The root of the problem</h2>
+        <p>The DECOD clinic and the Center for Pediatric Dentistry are important centers of care for Washingtonians, but to meaningfully increase the number of oral health care providers who treat patients with special needs, the School of Dentistry is working to increase the number of dental students properly trained for the field. </p>
+        <p>“A good percentage of dentists haven’t seen a patient with an intellectual or developmental disability while they were in dental school,” says Espinoza. “Then in your practice, you might come in with existing assumptions about what is needed to treat someone with autism, for example. It really puts those students at a disadvantage when they’re going out into practice.”</p>
+        <p>The School of Dentistry is tackling this head on. Students in each year of dental school learn about special care dentistry, from attending lectures on patient behavioral needs, to completing rotations through the DECOD clinic, to providing outpatient services at area nursing homes.</p>
+        <p>“At my last program, most of my patients with special needs received dental treatment in an operating room under general anesthesia,” says Lowe. “When I work with UW students, I like to make them aware that not every dental school has a program like this; they’re very fortunate.” So, too, are the patients they serve.</p>
+      </div> 
+      <div>
+        <img alt="Dr. Kimberly Espinoza" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/espinoza.jpg' ?>" alt="">
+        <p><b>Dr. Kimberly Espinoza</b><br> Director of the DECOD Program</p>
+      </div> 
+  </div>   
+</section>
+
+<section class="grid photo-tiles">
+    <div tabindex="0" class="column"><img alt="DECOD patient Ruben Santana shares a laugh with dental student Meg Hurd during his appointment." src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/scene-1.jpg' ?>" alt=""><p>DECOD patient Ruben Santana shares a laugh with dental student Meg Hurd during his appointment.</p></div>
+    <div tabindex="0" class="column"><img alt="Dr. Keturah Lowe chats with a DECOD patient." src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/scene-2.jpg' ?>" alt=""><p>Dr. Keturah Lowe chats with a DECOD patient.</p></div>
+    <div tabindex="0" class="column"><img alt="Meg Hurd is one of many School of Dentistry students who complete a rotation through the DECOD clinic as part of their education." src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/scene-3.jpg' ?>" alt=""><p>Meg Hurd is one of many School of Dentistry students who complete a rotation through the DECOD clinic as part of their education.</p></div>
+    <div tabindex="0" class="column"><img alt="Meg Hurd cleans Ruben Santana's teeth in a private exam room, which helps alleviate feelings of fear and nervousness for many patients." src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/scene-4.jpg' ?>" alt=""><p>Meg Hurd cleans Ruben Santana's teeth in a private exam room, which helps alleviate feelings of fear and nervousness for many patients.</p></div>
+</section>
+
+
+
+
+
+
+<section class="text-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1 copy marginless">
+        <h2>The future of dentistry</h2>
+           <p>Back in the examination room, Ruben Santana’s appointment is over. He bids goodbye to the dental student who treated him, then he and his mother head toward the front desk to schedule his next cleaning. “That wasn’t too bad,” he says, smiling. </p>
+           <p>As each successive class graduates from the School of Dentistry and more residents like Lowe receive specialized training, the pool of oral health care providers who can treat patients like Santana grows. Lowe hopes that more students will be inspired to include special care dentistry in their future practice, something she sees not as just an additional skill, but a duty.</p>
+           <p class="gold-quote headline-gold purple">I want to be able to treat whoever walks in the door,” she says. “As a dentist, it’s my responsibility — and my honor — to treat all patients.</p>
+      </div> 
+    </div> 
+  </div>   
+</section>
+
+<section class="text-block special-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1 copy marginless">
+        <h2>The story of DECOD</h2>
+          <p>DECOD has been at the forefront of special care dentistry since its founding in 1974.</p>
+          <p>And as director of DECOD from 1975 to 1994, Dr. Doris Stiefel was instrumental in guiding the program to where it is today. Stiefel, the first woman to graduate from the School of Dentistry, was selected for the position after years of working as an oral biology researcher at the UW. Undaunted by the task ahead of her, she set out to grow the DECOD program, including the launch of its clinic in 1979.</p>
+
+          <div><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/group.jpg' ?>" alt="">
+          <p>Dr. Stiefel (second from right), withfellow Dentistry faculty and DECOD members in the 1980s.</p></div>
+
+          <div><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/group-2.jpg' ?>" alt="">
+          <p>Dr. Edmund Truelove and Dr. Doris Stiefel at Dr. Stiefel's retirement celebration in 1994.</p></div>
+
+          <p>After DECOD’s inaugural grant from the Robert Wood Johnson Foundation ended, Stiefel and her team, including Dr. Edmund Truelove, then the school’s chair of Oral Medicine worked to secure federal grants from the U.S. Department of Education, which allowed them to expand dental training in special-needs patient care and open the DECOD clinic.</p>
+          <p>Then in 1984, after Stiefel testified on key dental issues at the state capitol and contacted legislators, DECOD secured state funds to increase access to dental care for Washington state residents with disabilities, as well as the training of local dentists.</p>
+          <p>Stiefel and her team also developed the learning modules for UW dental students that are reflected in the curriculum today. “It was truly a team effort at every level,” says Stiefel. </p>
+          <p>Read more about the <a href="#">history of DECOD</a> and the <a href="#">Center for Pediatric Dentistry</a>.</p>
+      </div> 
+    </div> 
+  </div>   
+</section>
+
+
+
+
+  <section class="text-block giving-widget">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-10 col-md-offset-1 copy">
+                <div style="text-align: center">             
+                  <h2 class="headline-gold">Support the future of Dentistry</h2>
+                  <p>You can help expand access to dental care for adults and children with special needs. </p>
+                  <div id="immersive-give-iframe"></div>
+                  <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="SCHTAC,AMOCAT" href="#">Give now</a></span></div>
+                </div>
+              </div>
+          </div>
+    </div>
+  </section>
+
+</main>
+
+
+</div>
+
+
+ <!-- **** JS **** -->      
+
+ <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/animationLibraries.min.js' ?>" type="text/javascript"></script>
+
+ <script src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/js/dentistry.min.js' ?>" type="text/javascript"></script>
+ <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
+
+ 
+
+<?php get_template_part('footer', 'campaign'); ?>
+
+</body>
+</html>
