@@ -35,7 +35,7 @@
 
                 <p>Ruben Santana looks forward to his dental appointments. He knows that when he arrives at the UW School of Dentistry’s DECOD clinic, front desk assistant Juana Rashid will greet him with a warm smile and chat with him and his mother in Spanish. And when it’s time for his appointment, his dentist will talk him through each step of the cleaning — when they’re not discussing the Seahawks. </p>
                 
-                 <p class="gold-quote headline-gold purple">This might seem like a typical dental appointment, but DECOD, which stands for Dental Education in the Care of Persons with Disabilities, is anything but average.</p>
+                 <p class="headline-gold purple">This might seem like a typical dental appointment, but DECOD, which stands for Dental Education in the Care of Persons with Disabilities, is anything but average.</p>
                  
                 <p>The DECOD clinic, <a href="#">which is supported in part by private donations</a>, provides care to patients with developmental or acquired disabilities, including people with autism, multiple sclerosis or — like Santana — cerebral palsy, meaning they often need care beyond what a typical dental office provides. </p>
 
