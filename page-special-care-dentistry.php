@@ -33,11 +33,11 @@
           <div class="row">
               <div class="col-md-10 col-md-offset-1 copy">
 
-                <p>Ruben Santana looks forward to his dental appointments. He knows that when he arrives at the UW School of Dentistry’s DECOD clinic, front desk assistant Juana Rashid will greet him with a warm smile and chat with him and his mother in Spanish. And when it’s time for his appointment, his dentist will talk him through each step of the cleaning — when they’re not discussing the Seahawks. </p>
+                <p>Ruben Santana looks forward to his dental appointments. He knows that when he arrives at the <a href="https://dental.washington.edu/">UW School of Dentistry’s</a> DECOD clinic, front desk assistant Juana Rashid will greet him with a warm smile and chat with him and his mother in Spanish. And when it’s time for his appointment, his dentist will talk him through each step of the cleaning — when they’re not discussing the Seahawks. </p>
                 
                  <p class="headline-gold purple">This might seem like a typical dental appointment, but DECOD, which stands for Dental Education in the Care of Persons with Disabilities, is anything but average.</p>
                  
-                <p>The DECOD clinic, <a href="#">which is supported in part by private donations</a>, provides care to patients with developmental or acquired disabilities, including people with autism, multiple sclerosis or — like Santana — cerebral palsy, meaning they often need care beyond what a typical dental office provides. </p>
+                <p>The <a href="https://dental.washington.edu/patient/clinics/decod/">DECOD clinic</a>, which is supported in part by private donations, provides care to patients with developmental or acquired disabilities, including people with autism, multiple sclerosis or — like Santana — cerebral palsy, meaning they often need care beyond what a typical dental office provides. </p>
 
 
                 <iframe width="1280" height="720" src="https://www.youtube.com/embed/jQjeTrAUjAs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -47,7 +47,7 @@
 
                 <p>At the DECOD clinic, however, providers work with patients to help them get comfortable in the exam chair. And those treating the patients include UW dental students working under faculty supervision, ensuring that more oral health care professionals will be able to treat patients — a one-two punch to change the future of special care dentistry.</p>
 
-                <p>In partnership with DECOD is the UW’s Center for Pediatric Dentistry; while the DECOD clinic treats adults, the center sees younger patients with special needs. Through both clinics, as well as the accompanying curriculum in special care dentistry, the School of Dentistry is leading the charge to improve access to dental care for all patients. </p>
+                <p>In partnership with DECOD is the UW’s <a href="https://thecenterforpediatricdentistry.com/">Center for Pediatric Dentistry</a>; while the DECOD clinic treats adults, the center sees younger patients with special needs. Through both clinics, as well as the accompanying curriculum in special care dentistry, the School of Dentistry is leading the charge to improve access to dental care for all patients. </p>
 
 
               </div> 
@@ -133,7 +133,7 @@
         <h2>The future of dentistry</h2>
            <p>Back in the examination room, Ruben Santana’s appointment is over. He bids goodbye to the dental student who treated him, then he and his mother head toward the front desk to schedule his next cleaning. “That wasn’t too bad,” he says, smiling. </p>
            <p>As each successive class graduates from the School of Dentistry and more residents like Lowe receive specialized training, the pool of oral health care providers who can treat patients like Santana grows. Lowe hopes that more students will be inspired to include special care dentistry in their future practice, something she sees not as just an additional skill, but a duty.</p>
-           <p class="gold-quote headline-gold purple">I want to be able to treat whoever walks in the door,” she says. “As a dentist, it’s my responsibility — and my honor — to treat all patients.</p>
+           <p class="gold-quote headline-gold purple">I want to be able to treat whoever walks in the door. As a dentist, it’s my responsibility — and my honor — to treat all patients.</p>
       </div> 
     </div> 
   </div>   
@@ -148,16 +148,16 @@
           <p>And as director of DECOD from 1975 to 1994, Dr. Doris Stiefel was instrumental in guiding the program to where it is today. Stiefel, the first woman to graduate from the School of Dentistry, was selected for the position after years of working as an oral biology researcher at the UW. Undaunted by the task ahead of her, she set out to grow the DECOD program, including the launch of its clinic in 1979.</p>
 
           <div><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/group.jpg' ?>" alt="">
-          <p>Dr. Stiefel (second from right), withfellow Dentistry faculty and DECOD members in the 1980s.</p></div>
+          <p>Dr. Stiefel (second from right), with fellow Dentistry faculty and DECOD members in the 1980s.</p></div>
 
           <div><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/group-2.jpg' ?>" alt="">
           <p>Dr. Edmund Truelove and Dr. Doris Stiefel at Dr. Stiefel's retirement celebration in 1994.</p></div>
 
-          <p>After DECOD’s inaugural grant from the Robert Wood Johnson Foundation ended, Stiefel and her team, including Dr. Edmund Truelove, then the school’s chair of Oral Medicine worked to secure federal grants from the U.S. Department of Education, which allowed them to expand dental training in special-needs patient care and open the DECOD clinic.</p>
+          <p>After DECOD’s inaugural grant from the Robert Wood Johnson Foundation ended, Stiefel and her team, including Dr. Edmund Truelove, then the school’s chair of Oral Medicine, worked to secure federal grants from the U.S. Department of Education, which allowed them to expand dental training in special-needs patient care and open the DECOD clinic.</p>
           <p>Then in 1984, after Stiefel testified on key dental issues at the state capitol and contacted legislators, DECOD secured state funds to increase access to dental care for Washington state residents with disabilities, as well as the training of local dentists.</p>
           <p>Stiefel and her team also developed the learning modules for UW dental students that are reflected in the curriculum today.  </p>
           <blockquote>“It was truly a team effort at every level,” says Stiefel.</blockquote>
-          <p>Read more about the <a href="#">history of DECOD</a> and the <a href="#">Center for Pediatric Dentistry</a>.</p>
+          <p>Read more about the <a href="https://dental.washington.edu/wp-content/media/alumni/DANSpring2015.pdf">history of DECOD</a> and the Center for Pediatric Dentistry.</p>
       </div> 
     </div> 
   </div>   
