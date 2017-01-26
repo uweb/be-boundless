@@ -44,13 +44,11 @@ body {
     .uw-footer {
         margin-top: 0
     }
-    video::-webkit-media-controls {
-        display:none !important;
-    }
-    video::-webkit-media-controls-start-playback-button {
-      display: none;
-    }
 }
+iframe[src*="youtu.be"], iframe[src*="youtube.com"], iframe[src*="www.facebook.com/plugins/video"] {
+    max-height: 34vw;
+}
+
 p {
     color: #696969;
 }
@@ -60,9 +58,7 @@ h2 {
     color: @purple;      
     font-weight: 900;
     font-size: 40px; 
-    @media @phone-only { 
-        font-size: 25px;
-    }
+
 }
 
 .udub-slant {
@@ -191,10 +187,7 @@ h2 {
         }
     }
     @media @phone-only {
-        background-position: right bottom;
-        .with-tom {
-            background-image: url("@{dentistry}/intro-portrait.jpg");
-        }
+        background-image: url("@{dentistry}/intro-portrait.jpg");
         h1 {
             margin-top: 37vh;
             color: white;
@@ -217,6 +210,7 @@ h2 {
             top: calc(~"100vh - 70px");
         }
     }
+
     @media @tablet-portrait-up {
         background-image: url("@{dentistry}/intro-mobile.jpg");
         padding: 0;
@@ -230,7 +224,7 @@ h2 {
             margin: 0;
             line-height: 1.4;
             font-size: 16px;
-            padding-right: 65%;
+            padding-right: 62%;
         }
         a.read-more {
             top: calc(~"100vh - 95px");
@@ -294,6 +288,45 @@ h2 {
         }
     } 
    
+    /* ----------- iPhone 5 and 5S Portrait ----------- */
+
+    @media only screen 
+        and (min-device-width: 320px) 
+        and (max-device-width: 568px)
+        and (-webkit-min-device-pixel-ratio: 2)
+        and (orientation: landscape) {
+        .background-cover(cover);
+        background-image: url("@{dentistry}/intro-mobile-landscape.jpg");
+        padding: 0;
+        h1 {
+            font-size: 5vw;
+            -webkit-font-smoothing: antialiased;
+            text-shadow: none;
+            margin-top: 25vh;
+            span {
+                font-size: 6vw;
+            }
+        }
+        p {
+            margin: 0;
+            line-height: 1.4;
+            font-size: 14px;
+            padding-right: 46%;
+        }
+        a.read-more {
+            top: calc(~"100vh - 55px");
+            bottom: auto;
+        }
+        .intro-body {
+            .brand-heading {
+                font-size: 100px;
+            }
+            .intro-text {
+                font-size: 26px;
+            }
+        }
+    }
+
 
     //iPad portrait 
     @media only screen 
@@ -556,7 +589,7 @@ h2 {
             width: 50%;
             .back   { 
                 p {
-                    font-size: 14px;
+                    font-size: 13px;
                     margin: 0 18px;
                 }
             }
