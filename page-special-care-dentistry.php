@@ -33,15 +33,16 @@
           <div class="row">
               <div class="col-md-10 col-md-offset-1 copy">
 
-                <p>Ruben Santana looks forward to his dental appointments. He knows that when he arrives at the <a href="https://dental.washington.edu/">UW School of Dentistry’s</a> DECOD clinic, front desk assistant Juana Rashid will greet him with a warm smile and chat with him and his mother in Spanish. And when it’s time for his appointment, his dentist will talk him through each step of the cleaning — when they’re not discussing the Seahawks. </p>
+                <p>Patients at the UW School of Dentistry’s DECOD clinic look forward to their dental appointments. They know that when they arrive, the front desk assistant will greet them with a warm smile. And when it’s time for their appointment, the dentist will talk through each step of the cleaning — when they’re not discussing the Seahawks or the latest movies.</p>
                 
-                 <p class="headline-gold purple">This might seem like a typical dental appointment, but DECOD, which stands for Dental Education in the Care of Persons with Disabilities, is anything but average.</p>
+                 <p class="headline-gold purple left">This might seem like a typical dental appointment, but DECOD, which stands for Dental Education in the Care of Persons with Disabilities, is anything but average.</p>
                  
-                <p>The <a href="https://dental.washington.edu/patient/clinics/decod/">DECOD clinic</a>, which is supported in part by private donations, provides care to patients with developmental or acquired disabilities, including people with autism, multiple sclerosis or — like Santana — cerebral palsy, meaning they often need care beyond what a typical dental office provides. </p>
+                <p>The <a href="https://dental.washington.edu/patient/clinics/decod/">DECOD clinic</a>, which is supported in part by private donations, provides care to patients with developmental or acquired disabilities, including people with autism, multiple sclerosis or cerebral palsy, meaning they often need care beyond what a typical dental office provides. </p>
 
 
                 <iframe width="1280" height="720" src="https://www.youtube.com/embed/jQjeTrAUjAs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-
+                
+                <small>Providers at the Center for Pediatric Dentistry see children both with and without special needs. At the center’s Autism Clinic, Dr. Travis Nelson is helping children get comfortable going to the dentist at an early age. Follow along as brothers Ayden and Gabriel head to the Center for Pediatric Dentistry for an appointment, and learn about the deeper impact the center has had on their family.</small>
 
                 <p>Most dental care providers have minimal training in special care dentistry, leaving them unable to address patients’ behavioral and physical needs. Additionally, many patients with special needs are afraid of dental procedures, and may have had past treatment while under general anesthesia. This means their fears are never assuaged, and appointments can remain challenging for both patient and dental care provider.</p>
 
@@ -80,8 +81,8 @@
         <p>Her training in this field has taught her to expect the unexpected when caring for her patients. “Each patient is an individual with individual needs,” she says. “And sometimes those needs change moment by moment.”</p>
         <p>Some patients start out with a series of appointments to simply get used to the clinic, slowly building up to receiving treatment. Others feel more at ease if an assistant holds their hand, or if they can take breaks from keeping their mouth open. And many benefit from the positive encouragement given throughout procedures. </p>
         <p>Despite a growing demand, DECOD is one of only a few special care dental clinics in Washington state. Dr. Kimberly Espinoza, director of DECOD, has heard story after story of patients getting rejected from offices where dentists weren’t equipped to treat them. “Families were so frustrated,” she says. </p>
-        <p class="gold-quote headline-gold purple">Some tried several different clinics before they found us.</p>
-        <p>Families at the Center for Pediatric Dentistry echo similar hardships; while the DECOD clinic has been in operation since 1979, the center opened its doors six years ago, to the relief of countless families of special-needs children. Last year alone, they had 21,000 patient visits, about 20 percent of which were children with special needs. </p>
+        <p class="headline-gold purple left">"Some tried several different clinics before they found us."</p>
+        <p>Families at the Center for Pediatric Dentistry echo similar hardships; while the DECOD clinic has been in operation <a href="https://dental.washington.edu/wp-content/media/alumni/DANSpring2015.pdf">since 1979</a>, the center opened its doors six years ago, to the relief of countless families of special-needs children. Last year alone, they had 21,000 patient visits, about 20 percent of which were children with special needs. </p>
       </div> 
     </div> 
   </div>   
@@ -103,9 +104,9 @@
       <div>
         <h2>The root of the problem</h2>
         <p>The DECOD clinic and the Center for Pediatric Dentistry are important centers of care for Washingtonians, but to meaningfully increase the number of oral health care providers who treat patients with special needs, the School of Dentistry is working to increase the number of dental students properly trained for the field. </p>
-        <p>“A good percentage of dentists haven’t seen a patient with an intellectual or developmental disability while they were in dental school,” says Espinoza. “Then in your practice, you might come in with existing assumptions about what is needed to treat someone with autism, for example. It really puts those students at a disadvantage when they’re going out into practice.”</p>
+        <p>“A good percentage of dentists haven’t seen a patient with an intellectual or developmental disability while they were in dental school,” says DECOD Director Espinoza. “Then in your practice, you might come in with existing assumptions about what is needed to treat someone with autism, for example. It really puts those students at a disadvantage when they’re going out into practice.”</p>
         <p>The School of Dentistry is tackling this head on. Students in each year of dental school learn about special care dentistry, from attending lectures on patient behavioral needs, to completing rotations through the DECOD clinic, to providing outpatient services at area nursing homes.</p>
-        <p>“At my last program, most of my patients with special needs received dental treatment in an operating room under general anesthesia,” says Lowe. “When I work with UW students, I like to make them aware that not every dental school has a program like this; they’re very fortunate.” So, too, are the patients they serve.</p>
+        <p>“At my last program, most of my patients with special needs received dental treatment in an operating room under general anesthesia,” says Lowe, the second-year general practice resident who is focusing on special care dentistry. “When I work with UW students, I like to make them aware that not every dental school has a program like this; they’re very fortunate.” So, too, are the patients they serve.</p>
       </div> 
       <div>
         <img alt="Dr. Kimberly Espinoza" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/espinoza.jpg' ?>" alt="">
@@ -115,12 +116,11 @@
 </section>
 
 <section class="grid photo-tiles">
-    <div tabindex="0" class="column"><img alt="DECOD patient Ruben Santana shares a laugh with dental student Meg Hurd during his appointment." src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/scene-1.jpg' ?>" alt=""><p>DECOD patient Ruben Santana shares a laugh with dental student Meg Hurd during his appointment.</p></div>
-    <div tabindex="0" class="column"><img alt="Meg Hurd is one of many School of Dentistry students who complete a rotation through the DECOD clinic as part of their education." src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/scene-2.jpg' ?>" alt=""><p>Meg Hurd is one of many School of Dentistry students who complete a rotation through the DECOD clinic as part of their education.</p></div>
-    <div tabindex="0" class="column"><img alt="Dr. Keturah Lowe chats with a DECOD patient." src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/scene-3.jpg' ?>" alt=""><p>Dr. Keturah Lowe chats with a DECOD patient.</p></div>
-    <div tabindex="0" class="column"><img alt="Meg Hurd cleans Ruben Santana's teeth in a private exam room, which helps alleviate feelings of fear and nervousness for many patients." src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/scene-4.jpg' ?>" alt=""><p>Meg Hurd cleans Ruben Santana's teeth in a private exam room, which helps alleviate feelings of fear and nervousness for many patients.</p></div>
+    <div tabindex="0" class="column"><img alt="When patient Ruben Santana arrives at the DECOD clinic for an appointment, he’s always welcomed by front desk assistant Juana Rashid, who greets him with a warm smile and often chats with him and his mother in Spanish. " src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/scene-1.jpg' ?>" alt=""><p>When patient Ruben Santana arrives at the DECOD clinic for an appointment, he’s always welcomed by front desk assistant Juana Rashid, who greets him with a warm smile and often chats with him and his mother in Spanish. </p></div>
+    <div tabindex="0" class="column"><img alt="Dental student Meg Hurd is working with Santana today. She’s one of many School of Dentistry students who complete a rotation through DECOD as part of their education." src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/scene-2.jpg' ?>" alt=""><p>Dental student Meg Hurd is working with Santana today. She’s one of many School of Dentistry students who complete a rotation through DECOD as part of their education.</p></div>
+    <div tabindex="0" class="column"><img alt="DECOD care providers treat patients with a wide range of special needs, including those with autism, multiple sclerosis or — like Santana — cerebral palsy." src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/scene-3.jpg' ?>" alt=""><p>DECOD care providers treat patients with a wide range of special needs, including those with autism, multiple sclerosis or — like Santana — cerebral palsy.</p></div>
+    <div tabindex="0" class="column"><img alt="Meg Hurd cleans Ruben Santana's teeth in a private exam room, which helps alleviate feelings of fear and nervousness for many patients." src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/scene-4.jpg' ?>" alt=""><p>Meg Hurd cleans Ruben Santana's teeth in a private exam room, which helps alleviate feelings of fear and nervousness for many patients. “That wasn’t so bad,” Santana says, smiling, after his cleaning is over.</p></div>
 </section>
-
 
 
 
@@ -131,9 +131,8 @@
     <div class="row">
       <div class="col-md-10 col-md-offset-1 copy marginless">
         <h2>The future of dentistry</h2>
-           <p>Back in the examination room, Ruben Santana’s appointment is over. He bids goodbye to the dental student who treated him, then he and his mother head toward the front desk to schedule his next cleaning. “That wasn’t too bad,” he says, smiling. </p>
-           <p>As each successive class graduates from the School of Dentistry and more residents like Lowe receive specialized training, the pool of oral health care providers who can treat patients like Santana grows. Lowe hopes that more students will be inspired to include special care dentistry in their future practice, something she sees not as just an additional skill, but a duty.</p>
-           <p class="gold-quote headline-gold purple">I want to be able to treat whoever walks in the door. As a dentist, it’s my responsibility — and my honor — to treat all patients.</p>
+           <p>As each successive class graduates from the School of Dentistry and more residents like Lowe receive specialized training, the pool of oral health care providers who can treat special-needs patients grows. </p>
+           <p class="headline-gold purple left">"I want to be able to treat whoever walks in the door. As a dentist, it’s my responsibility — and my honor — to treat all patients."</p>
       </div> 
     </div> 
   </div>   
@@ -163,6 +162,7 @@
   </div>   
 </section>
 
+ 
 
 
 
@@ -172,7 +172,7 @@
               <div class="col-md-10 col-md-offset-1 copy">
                 <div style="text-align: center">             
                   <h2 class="headline-gold">Support the future of Dentistry</h2>
-                  <p>You can help expand access to dental care for adults and children with special needs. </p>
+                  <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. By supporting the School of Dentistry, you can help expand access to dental care for adults and children with special needs. </p>
                   <div id="immersive-give-iframe"></div>
                   <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="UNCOMP" href="#">Give now</a></span></div>
                 </div>
