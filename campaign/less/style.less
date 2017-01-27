@@ -162,7 +162,7 @@ div#loadingEl {
 	p {
 		color: white;
 	}
-	div {
+	section > div {
 		will-change: transform; 
 		text-align: left;
 		width: 80vw;
@@ -187,31 +187,95 @@ div#loadingEl {
 		background-repeat: no-repeat;
 		h3 {
 			position: relative;
+			position: relative;
+			text-transform: uppercase;
+			font-weight: 900;
+			margin-bottom: 30px;
+			font-size: 20px;
 			&:after {
-				width: 100px;
+				width: 120px;
+				position: absolute;
 				content: '';
 				height: 1px;
 				background: white;
-				bottom: 10px;
+				bottom: -10px;
 				left: 0;
 			}
 		}
 		div div {
 			a {
-				background-image: url(../img/camp-bg1.jpg);
-				width: 50px;
-				height: 50px;
+				background-image: url(../img/test-thumb.jpg);
+				.background-cover(100%);
+				background-position: center center;
+				width: 65px;
+				height: 65px;
+				display: inline-block;
+				position: relative;
+				border-radius: 100%;
+				border: 2px solid white;
+				text-decoration: none;
+				margin-right: 10px;
+				&:after {
+					position: absolute;
+					content: '+';
+					height: 1px;
+					top: -15px;
+					right: -10px;
+					color: white;
+				}
+				span {
+					position: absolute;
+					.transition(all .2s linear);
+					opacity: 0;
+					pointer-events: none;
+					top: -60px;
+					left: 50%;
+					background: white;
+					pointer-events: none;
+					font-size: 15px;
+					font-weight: 900;
+					padding: 10px 15px;
+					line-height: 1.3;
+					width: 130px;
+					text-align: center;
+					margin-left: -65px;
+					color: black;
+					&:after {
+						position: absolute;
+						content: '';
+						bottom: -9px;
+						left: 50%;
+						margin-left: -10px;
+						color: white;
+						width: 0;
+						height: 0;
+						border-left: 10px solid transparent;
+						border-right: 10px solid transparent;
+						border-top: 10px solid #fff;
+					}
+				}
+				&:hover,
+				&:active,
+				&:focus {
+					span {
+						opacity: 1;
+					}
+				}
 			}
 		}
 	}
 	section:nth-child(1) {
 		background-image: url(../img/camp-bg1.jpg);
+
 	}
 	section:nth-child(2) {
 		background-image: url(../img/camp-bg2-blur.jpg);
 	}
 	section:nth-child(3) {
 		background-image: url(../img/camp-bg3-blur.jpg);
+		div.related a {
+			background-image: url(../img/thumb-scholarship.jpg);
+		}
 	}
 	section:nth-child(4) {
 		background-image: url(../img/camp-bg4-blur.jpg);
@@ -268,12 +332,7 @@ div#loadingEl {
 		h2 {
 			font-size: 3.2vw;
 		}
-		h2 {
-			color: @purple;
-		}
-		p {
-			color: darken(@darkgray, 10%);
-		}
+
 	}
 	#slide6 {
 		h2 {
@@ -316,7 +375,7 @@ div#loadingEl {
 				padding-left: 15vw;
 			}
 			h2 {
-				margin-top: 25vh;
+				margin-top: 17vh;
 			}
 		}
 		#slide4 {
@@ -325,7 +384,7 @@ div#loadingEl {
 				padding-left: 12vw;
 			}
 			h2 {
-				margin-top: 30vh;
+				margin-top: 22vh;
 			}
 		}
 		#slide5 {
@@ -334,17 +393,17 @@ div#loadingEl {
 				padding-left: 12vw;
 			}
 			h2 {
-				margin-top: 30vh;
+				margin-top: 22vh;
 			}
 
 		}
 		#slide6 {
-			& > iv {
+			& > div {
 				width: 70vw;
 				padding-left: 12vw;
 			}
 			h2 {
-				margin-top: 30vh;
+				margin-top: 22vh;
 			}
 		}
 		#slide7 {
@@ -353,7 +412,7 @@ div#loadingEl {
 				padding-left: 12vw;
 			}
 			h2 {
-				margin-top: 30vh;
+				margin-top: 22vh;
 			}
 		}
 		#slide8 {
