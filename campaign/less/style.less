@@ -185,6 +185,24 @@ div#loadingEl {
 		height: 100vh;		
 		background-size: 100%;
 		background-repeat: no-repeat;
+		h3 {
+			position: relative;
+			&:after {
+				width: 100px;
+				content: '';
+				height: 1px;
+				background: white;
+				bottom: 10px;
+				left: 0;
+			}
+		}
+		div div {
+			a {
+				background-image: url(../img/camp-bg1.jpg);
+				width: 50px;
+				height: 50px;
+			}
+		}
 	}
 	section:nth-child(1) {
 		background-image: url(../img/camp-bg1.jpg);
@@ -277,7 +295,7 @@ div#loadingEl {
 	}
 	@media(min-device-width:768px) { 
 		#slide1 {
-			div {
+			& > div {
 			}
 			h2 {
 				margin-top: 35vh;
@@ -285,7 +303,7 @@ div#loadingEl {
 		
 		}
 		#slide2 {
-			div {
+			& > div {
 				width: 90vw;
 			}
 			h2 {
@@ -293,7 +311,7 @@ div#loadingEl {
 			}
 		}
 		#slide3 {
-			div {
+			& > div {
 				width: 75vw;
 				padding-left: 15vw;
 			}
@@ -302,7 +320,7 @@ div#loadingEl {
 			}
 		}
 		#slide4 {
-			div {
+			& > div {
 				width: 70vw;
 				padding-left: 12vw;
 			}
@@ -311,7 +329,7 @@ div#loadingEl {
 			}
 		}
 		#slide5 {
-			div {
+			& > div {
 				width: 60vw;
 				padding-left: 12vw;
 			}
@@ -321,7 +339,7 @@ div#loadingEl {
 
 		}
 		#slide6 {
-			div {
+			& > iv {
 				width: 70vw;
 				padding-left: 12vw;
 			}
@@ -330,7 +348,7 @@ div#loadingEl {
 			}
 		}
 		#slide7 {
-			div {
+			& > div {
 				width: 60vw;
 				padding-left: 12vw;
 			}
@@ -340,7 +358,7 @@ div#loadingEl {
 		}
 		#slide8 {
 			overflow: hidden;
-			div {
+			& > div {
 				width: 100vw;
 			}
 			h2 {
@@ -378,7 +396,7 @@ div#loadingEl {
 			font-size: 3vw;
 		}
 		#slide1 {
-			div {
+			& > div {
 				width: 80vw;
 			}
 			h2 {
@@ -386,7 +404,7 @@ div#loadingEl {
 			}
 		}
 		#slide2 {
-			div {
+			& > div {
 				width: 90vw;
 			    padding-left: 15vw;
 			}
@@ -395,7 +413,7 @@ div#loadingEl {
 			}
 		}
 		#slide3 {
-			div {
+			& > div {
 				width: 90vw;
 			    padding-left: 15vw;
 			}
@@ -404,7 +422,7 @@ div#loadingEl {
 			}
 		}
 		#slide4 {
-			div {
+			& > div {
 				padding-left: 15vw;
 			}
 			h2 {
@@ -415,7 +433,7 @@ div#loadingEl {
 			p {
 				text-shadow: none;
 			}
-			div {
+			& > div {
 				padding-left: 15vw;
 			}
 			h2 {
@@ -424,7 +442,7 @@ div#loadingEl {
 
 		}
 		#slide6 {
-			div {
+			& > div {
 				width: 80vw;
 				padding-left: 15vw;
 			}
@@ -433,7 +451,7 @@ div#loadingEl {
 			}
 		}
 		#slide7 {
-			div {
+			& > div {
 				padding-left: 15vw;
 			}
 			h2 {
@@ -441,7 +459,7 @@ div#loadingEl {
 			}
 		}
 		#slide8 {
-			div {
+			& > div {
 				width: 100vw;
 				padding-left: 20vw;
 			}

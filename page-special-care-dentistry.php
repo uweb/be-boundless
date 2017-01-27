@@ -132,7 +132,8 @@
       <div class="col-md-10 col-md-offset-1 copy marginless">
         <h2>The future of dentistry</h2>
            <p>As each successive class graduates from the School of Dentistry and more residents like Lowe receive specialized training, the pool of oral health care providers who can treat special-needs patients grows. </p>
-           <p class="headline-gold purple left">"I want to be able to treat whoever walks in the door. As a dentist, it’s my responsibility — and my honor — to treat all patients."</p>
+           <p>Lowe hopes that more students will be inspired to include special care dentistry in their future practice, something she sees not as just an additional skill, but a duty.</p>
+           <p class="headline-gold purple left">"I want to be able to treat whoever walks in the door. As a dentist, it’s my responsibility &mdash; and my honor &mdash; to treat all patients."</p>
       </div> 
     </div> 
   </div>   
