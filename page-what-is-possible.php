@@ -670,6 +670,12 @@
    <hr style="max-width: 720px">
    <p style="text-align: center;"><small>Photos courtesy James Harnois, MadArt Seattle, Amie McNeel, Sam Stubblefield, Collin Bampton, Tzyy Yi (Amy) Young.</small></p>
 
+
+
+ <script>
+    objectFitImages('img.polyfill');
+</script>
+
 </main>
 
 
@@ -682,9 +688,8 @@
  <script src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/js/arts.min.js?v=' . time() ?>" type="text/javascript"></script>
  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
 
- <script>
-    objectFitImages('img.polyfill');
-</script>
+
+
 
 <?php get_template_part('footer', 'campaign'); ?>
 
