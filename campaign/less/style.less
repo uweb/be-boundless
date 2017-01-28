@@ -162,7 +162,7 @@ div#loadingEl {
 	p {
 		color: white;
 	}
-	div {
+	section > div {
 		will-change: transform; 
 		text-align: left;
 		width: 80vw;
@@ -185,9 +185,88 @@ div#loadingEl {
 		height: 100vh;		
 		background-size: 100%;
 		background-repeat: no-repeat;
+		h3 {
+			position: relative;
+			position: relative;
+			text-transform: uppercase;
+			font-weight: 900;
+			margin-bottom: 30px;
+			font-size: 20px;
+			&:after {
+				width: 120px;
+				position: absolute;
+				content: '';
+				height: 1px;
+				background: white;
+				bottom: -10px;
+				left: 0;
+			}
+		}
+		div div {
+			a {
+				background-image: url(../img/test-thumb.jpg);
+				.background-cover(100%);
+				background-position: center center;
+				width: 65px;
+				height: 65px;
+				display: inline-block;
+				position: relative;
+				border-radius: 100%;
+				border: 2px solid white;
+				text-decoration: none;
+				margin-right: 10px;
+				&:after {
+					position: absolute;
+					content: '+';
+					height: 1px;
+					top: -15px;
+					right: -10px;
+					color: white;
+				}
+				span {
+					position: absolute;
+					.transition(all .2s linear);
+					opacity: 0;
+					pointer-events: none;
+					top: -60px;
+					left: 50%;
+					background: white;
+					pointer-events: none;
+					font-size: 15px;
+					font-weight: 900;
+					padding: 10px 15px;
+					line-height: 1.3;
+					width: 130px;
+					text-align: center;
+					margin-left: -65px;
+					color: black;
+					&:after {
+						position: absolute;
+						content: '';
+						bottom: -9px;
+						left: 50%;
+						margin-left: -10px;
+						color: white;
+						width: 0;
+						height: 0;
+						border-left: 10px solid transparent;
+						border-right: 10px solid transparent;
+						border-top: 10px solid #fff;
+					}
+				}
+				&:hover,
+				&:active,
+				&:focus {
+					span {
+						opacity: 1;
+					}
+				}
+			}
+		}
 	}
 	section:nth-child(1) {
 		background-image: url(../img/camp-bg1.jpg);
+
 	}
 	section:nth-child(2) {
 		background-image: url(../img/camp-bg2-blur.jpg);
@@ -197,15 +276,43 @@ div#loadingEl {
 	}
 	section:nth-child(4) {
 		background-image: url(../img/camp-bg4-blur.jpg);
+		div.related {
+			a {
+				&:nth-of-type(1) {
+					background-image: url(../img/thumb-scholarship.jpg);
+				}
+			}
+		}
 	}
 	section:nth-child(5) {
 		background-image: url(../img/camp-bg5-blur.jpg);
+		div.related {
+			a {
+				&:nth-of-type(1) {
+					background-image: url(../img/thumb-education.jpg);
+				}
+			}
+		}
 	}
 	section:nth-child(6) {
 		background-image: url(../img/camp-bg6-blur.jpg);
+		div.related {
+			a {
+				&:nth-of-type(1) {
+					background-image: url(../img/cancer-thumb.jpg);
+				}
+			}
+		}
 	}
 	section:nth-child(7) {
 		background-image: url(../img/camp-bg7-blur.jpg);
+		div.related {
+			a {
+				&:nth-of-type(1) {
+					background-image: url(../img/jayna-thumb.jpg);
+				}
+			}
+		}
 	}
 	#slide1 {
 		opacity: 0;
@@ -250,12 +357,7 @@ div#loadingEl {
 		h2 {
 			font-size: 3.2vw;
 		}
-		h2 {
-			color: @purple;
-		}
-		p {
-			color: darken(@darkgray, 10%);
-		}
+
 	}
 	#slide6 {
 		h2 {
@@ -277,7 +379,7 @@ div#loadingEl {
 	}
 	@media(min-device-width:768px) { 
 		#slide1 {
-			div {
+			& > div {
 			}
 			h2 {
 				margin-top: 35vh;
@@ -285,7 +387,7 @@ div#loadingEl {
 		
 		}
 		#slide2 {
-			div {
+			& > div {
 				width: 90vw;
 			}
 			h2 {
@@ -293,54 +395,54 @@ div#loadingEl {
 			}
 		}
 		#slide3 {
-			div {
+			& > div {
 				width: 75vw;
 				padding-left: 15vw;
 			}
 			h2 {
-				margin-top: 25vh;
+				margin-top: 17vh;
 			}
 		}
 		#slide4 {
-			div {
+			& > div {
 				width: 70vw;
 				padding-left: 12vw;
 			}
 			h2 {
-				margin-top: 30vh;
+				margin-top: 22vh;
 			}
 		}
 		#slide5 {
-			div {
+			& > div {
 				width: 60vw;
 				padding-left: 12vw;
 			}
 			h2 {
-				margin-top: 30vh;
+				margin-top: 22vh;
 			}
 
 		}
 		#slide6 {
-			div {
+			& > div {
 				width: 70vw;
 				padding-left: 12vw;
 			}
 			h2 {
-				margin-top: 30vh;
+				margin-top: 22vh;
 			}
 		}
 		#slide7 {
-			div {
+			& > div {
 				width: 60vw;
 				padding-left: 12vw;
 			}
 			h2 {
-				margin-top: 30vh;
+				margin-top: 22vh;
 			}
 		}
 		#slide8 {
 			overflow: hidden;
-			div {
+			& > div {
 				width: 100vw;
 			}
 			h2 {
@@ -378,7 +480,7 @@ div#loadingEl {
 			font-size: 3vw;
 		}
 		#slide1 {
-			div {
+			& > div {
 				width: 80vw;
 			}
 			h2 {
@@ -386,7 +488,7 @@ div#loadingEl {
 			}
 		}
 		#slide2 {
-			div {
+			& > div {
 				width: 90vw;
 			    padding-left: 15vw;
 			}
@@ -395,7 +497,7 @@ div#loadingEl {
 			}
 		}
 		#slide3 {
-			div {
+			& > div {
 				width: 90vw;
 			    padding-left: 15vw;
 			}
@@ -404,7 +506,7 @@ div#loadingEl {
 			}
 		}
 		#slide4 {
-			div {
+			& > div {
 				padding-left: 15vw;
 			}
 			h2 {
@@ -415,7 +517,7 @@ div#loadingEl {
 			p {
 				text-shadow: none;
 			}
-			div {
+			& > div {
 				padding-left: 15vw;
 			}
 			h2 {
@@ -424,7 +526,7 @@ div#loadingEl {
 
 		}
 		#slide6 {
-			div {
+			& > div {
 				width: 80vw;
 				padding-left: 15vw;
 			}
@@ -433,7 +535,7 @@ div#loadingEl {
 			}
 		}
 		#slide7 {
-			div {
+			& > div {
 				padding-left: 15vw;
 			}
 			h2 {
@@ -441,7 +543,7 @@ div#loadingEl {
 			}
 		}
 		#slide8 {
-			div {
+			& > div {
 				width: 100vw;
 				padding-left: 20vw;
 			}
