@@ -35,7 +35,7 @@
 
                 <p>Patients at the UW School of Dentistry’s DECOD clinic look forward to their dental appointments. They know that when they arrive, the front desk assistant will greet them with a warm smile. And when it’s time for their appointment, the dentist will talk through each step of the cleaning — when they’re not discussing the Seahawks or the latest movies.</p>
                 
-                 <p class="headline-gold purple left">This might seem like a typical dental appointment, but DECOD, which stands for Dental Education in the Care of Persons with Disabilities, is anything but average.</p>
+                 <p class="headline-gold purple left">That might seem like a typical dental appointment, but DECOD, which stands for Dental Education in the Care of Persons with Disabilities, is anything but average.</p>
                  
                 <p>The <a href="https://dental.washington.edu/patient/clinics/decod/">DECOD clinic</a>, which is supported in part by private donations, provides care to patients with developmental or acquired disabilities, including people with autism, multiple sclerosis or cerebral palsy, meaning they often need care beyond what a typical dental office provides. </p>
 
@@ -116,11 +116,14 @@
 </section>
 
 <section class="grid photo-tiles">
-    <div tabindex="0" class="column"><img alt="When patient Ruben Santana arrives at the DECOD clinic for an appointment, he’s always welcomed by front desk assistant Juana Rashid, who greets him with a warm smile and often chats with him and his mother in Spanish. " src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/scene-1.jpg' ?>" alt=""><p>When patient Ruben Santana arrives at the DECOD clinic for an appointment, he’s always welcomed by front desk assistant Juana Rashid, who greets him with a warm smile and often chats with him and his mother in Spanish. </p></div>
-    <div tabindex="0" class="column"><img alt="Dental student Meg Hurd is working with Santana today. She’s one of many School of Dentistry students who complete a rotation through DECOD as part of their education." src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/scene-2.jpg' ?>" alt=""><p>Dental student Meg Hurd is working with Santana today. She’s one of many School of Dentistry students who complete a rotation through DECOD as part of their education.</p></div>
-    <div tabindex="0" class="column"><img alt="DECOD care providers treat patients with a wide range of special needs, including those with autism, multiple sclerosis or — like Santana — cerebral palsy." src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/scene-3.jpg' ?>" alt=""><p>DECOD care providers treat patients with a wide range of special needs, including those with autism, multiple sclerosis or — like Santana — cerebral palsy.</p></div>
-    <div tabindex="0" class="column"><img alt="Meg Hurd cleans Ruben Santana's teeth in a private exam room, which helps alleviate feelings of fear and nervousness for many patients." src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/scene-4.jpg' ?>" alt=""><p>Meg Hurd cleans Ruben Santana's teeth in a private exam room, which helps alleviate feelings of fear and nervousness for many patients. “That wasn’t so bad,” Santana says, smiling, after his cleaning is over.</p></div>
+    <div tabindex="0" class="column"><img alt="DECOD clinic patient Ruben Santana shares a laugh with dental student Meg Hurd. DECOD care providers talk through each step of the process with patients, and give them breaks as needed." src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/scene-1.jpg' ?>" alt=""><p>DECOD clinic patient Ruben Santana shares a laugh with dental student Meg Hurd. DECOD care providers talk through each step of the process with patients, and give them breaks as needed.</p></div>
+    <div tabindex="0" class="column"><img alt="Meg Hurd is one of many School of Dentistry students who complete a rotation through the DECOD clinic as part of their education." src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/scene-2.jpg' ?>" alt=""><p>Meg Hurd is one of many School of Dentistry students who complete a rotation through the DECOD clinic as part of their education.</p></div>
+    <div tabindex="0" class="column"><img alt="DECOD dentists, like second-year general practice resident Dr. Keturah Lowe, treat patients who have a wide range of special needs, including those with autism, multiple sclerosis or cerebral palsy." src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/scene-3.jpg' ?>" alt=""><p>DECOD dentists, like second-year general practice resident Dr. Keturah Lowe, treat patients who have a wide range of special needs, including those with autism, multiple sclerosis or cerebral palsy.</p></div>
+    <div tabindex="0" class="column"><img alt="Student Meg Hurd cleans a patient’s teeth in a private exam room, which helps alleviate feelings of fear and nervousness for many patients." src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/dentistry/scene-4.jpg' ?>" alt=""><p>Student Meg Hurd cleans a patient’s teeth in a private exam room, which helps alleviate feelings of fear and nervousness for many patients.
+</p></div>
 </section>
+
+
 
 
 
