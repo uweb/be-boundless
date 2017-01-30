@@ -53,13 +53,7 @@ p {
     color: #696969;
 }
 
-h2 {
-    text-transform: uppercase;
-    color: @purple;      
-    font-weight: 900;
-    font-size: 40px; 
 
-}
 
 .udub-slant {
     padding-bottom: 5px;
@@ -96,6 +90,15 @@ h2 {
         text-align: center;
         display: inline-block;
         margin: -10px 0 50px;
+    }
+    h2 {
+        text-transform: uppercase;
+        color: @purple;      
+        font-weight: 900;
+        font-size: 40px; 
+        @media @phone-only { 
+            font-size: 30px; 
+        }
     }
 }
 
@@ -373,6 +376,39 @@ h2 {
 
 }
 
+.photo-tiles-headline {
+    text-align: center;
+    margin-bottom: -8px;
+    position: relative;
+    z-index: 10;
+    h2 {
+        text-transform: uppercase;
+        color: @purple;
+        font-family: @uni;
+        font-weight: normal;
+        display: inline-block;
+        background: #f1f1f1;
+        padding: 10px 20px 7px;
+        margin: -27px 0 0 0;
+        font-size: 32px;
+        border: 10px solid white;
+    }
+    @media @phone-only { 
+        h2 {
+            font-size: 17px;
+        }
+    }
+    @media @tablet-portrait-up { 
+        h2 {
+            font-size: 20px;
+        }
+    }   
+    @media @tablet-landscape-up { 
+        h2 {
+            font-size: 30px;
+        }
+    }
+}
 
 .photo-tiles.grid {
     .column {
@@ -402,7 +438,7 @@ h2 {
             &:after {
                 content: '+';
                 position: absolute;
-                top: -65px;
+                top: -85px;
                 right: 15px;
                 font-size: 50px;
                 text-shadow: 1px 1px 3px rgba(0,0,0,.6);
@@ -426,6 +462,7 @@ h2 {
     
     @media @phone-only { 
         height: 100vw;
+        margin-top: 40px;
         .column {
             width: 50%;
             min-height: 50vw;
