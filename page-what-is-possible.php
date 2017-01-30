@@ -6,7 +6,7 @@
 
 <?php get_header( "campaign-close" ); ?>
 
-<section id="immersive-body">
+<section id="immersive-body" class="arts">
 
  <!-- **** The main area, separated by sections **** -->
 
@@ -672,9 +672,6 @@
 
 
 
- <script>
-    objectFitImages('img.polyfill');
-</script>
 
 </main>
 
@@ -693,5 +690,8 @@
 
 <?php get_template_part('footer', 'campaign'); ?>
 
+ <script>
+    objectFitImages('img.polyfill');
+</script>
 </body>
 </html>

@@ -45,6 +45,7 @@ body {
         margin-top: 0
     }
 }
+
 iframe[src*="youtu.be"], iframe[src*="youtube.com"], iframe[src*="www.facebook.com/plugins/video"] {
     max-height: 34vw;
 }
@@ -53,13 +54,6 @@ p {
     color: #696969;
 }
 
-h2 {
-    text-transform: uppercase;
-    color: @purple;      
-    font-weight: 900;
-    font-size: 40px; 
-
-}
 
 .udub-slant {
     padding-bottom: 5px;
@@ -85,6 +79,14 @@ h2 {
 // Text Block overwrite
 
 .text-block {
+    h2 {
+        text-transform: uppercase;
+        color: @purple;      
+        font-weight: 900;
+        font-size: 40px; 
+
+    }
+
     iframe {
         height: 404px !important;
     }
@@ -251,7 +253,6 @@ h2 {
         &#intro-slide {
             position: relative;
             z-index: 1;
-            background-color: #2d254b;
             #back,
             #middle,
             #fore {

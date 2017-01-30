@@ -5,11 +5,14 @@ var isMobile = (function(a){return /(android|bb\d+|meego).+mobile|avantgo|bada\/
 // we'd only like to use iScroll for mobile...
 if (true) {
 
-    var controller = new ScrollMagic.Controller();
+    var artsController = new ScrollMagic.Controller();
+    currentController = artsController;
     var ready = false;
     var videdo = $("#intro").find("video")[0];
 
-    $(window).load(function(){
+
+    $(document).ready(function() {
+
 
     	$("#loader").fadeOut();
 
@@ -25,7 +28,6 @@ if (true) {
     	        '</div>';
 
     	  if (isMobile.matches) {
-    	  	console.log('tru')
     	    boundlessVideo.innerHTML = videoHTML;
     	    $(".play").click(function(e){
     	       e.preventDefault();
@@ -82,7 +84,7 @@ if (true) {
       .on('end',function(){
       	videdo.pause()
       })
-      .addTo(controller)
+      .addTo(artsController)
       $(window).resize(function(){
           videoScrubber.duration($(window).height()*2);
           videoScrubber.update(true);
@@ -98,7 +100,7 @@ if (true) {
           triggerHook: 0,
           reverse: true
       })
-      .addTo(controller)
+      .addTo(artsController)
       .on('start', function () {
           var scene = this.triggerElement();
           $(scene).toggleClass("active");
@@ -118,7 +120,7 @@ if (true) {
           triggerHook: 0,
           reverse: true
       })
-      .addTo(controller)
+      .addTo(artsController)
       .on('start', function () {
           $("#intro").toggleClass("active");
       });
@@ -150,7 +152,7 @@ if (true) {
       .on('progress', function(e){
       	blur = e.progress * 25;
       })
-      .addTo(controller);
+      .addTo(artsController);
       $(window).resize(function(){
           intro.duration($(window).height()*2);
           intro.update(true);
@@ -165,7 +167,7 @@ if (true) {
           triggerHook: 0,
           reverse: true
       })
-      .addTo(controller)
+      .addTo(artsController)
       .on('start', function () {
           var scene = this.triggerElement();
           $(scene).toggleClass("active");
@@ -188,7 +190,7 @@ if (true) {
       .on('start', function () {
           $("#unexpected").toggleClass("active");
       })
-      .addTo(controller);
+      .addTo(artsController);
       $(window).resize(function(){
           unexpectedToggleOut.update(true);
       });
@@ -207,7 +209,7 @@ if (true) {
           reverse: true
       })
       .setTween(tl3)
-      .addTo(controller);
+      .addTo(artsController);
       $(window).resize(function(){
           unexpected.offset(-$(window).height()*0.25);
           unexpected.update(true);
@@ -225,7 +227,7 @@ if (true) {
           triggerHook: 0,
           reverse: true
       })
-      .addTo(controller)
+      .addTo(artsController)
       .on('start', function () {
           var scene = this.triggerElement();
           $(scene).toggleClass("active");
@@ -247,7 +249,7 @@ if (true) {
       .on('start', function () {
           $("#inspiration").toggleClass("active");
       })
-      .addTo(controller);
+      .addTo(artsController);
       $(window).resize(function(){
           inspirationToggleOut.update(true);
       });
@@ -262,7 +264,7 @@ if (true) {
           triggerHook: 0,
           reverse: true
       })
-      .addTo(controller)
+      .addTo(artsController)
       .on('start', function () {
           var scene = this.triggerElement();
           $(scene).toggleClass("active");
@@ -291,7 +293,7 @@ if (true) {
       .on('start', function () {
           $("#slideplay").toggleClass("active");
       })
-      .addTo(controller);
+      .addTo(artsController);
       $(window).resize(function(){
           slideplayToggleOut.update(true);
       });
@@ -311,7 +313,7 @@ if (true) {
           reverse: true
       })
       .setTween(tl1)
-      .addTo(controller);
+      .addTo(artsController);
       $(window).resize(function(){
           slideplay.offset(-$(window).height()*0.25);
           slideplay.update(true);
@@ -329,7 +331,7 @@ if (true) {
           triggerHook: 0,
           reverse: true
       })
-      .addTo(controller)
+      .addTo(artsController)
       .on('start', function () {
           var scene = this.triggerElement();
           $(scene).toggleClass("active");
@@ -351,7 +353,7 @@ if (true) {
       .on('start', function () {
           $("#copy-one").toggleClass("active");
       })
-      .addTo(controller);
+      .addTo(artsController);
       $(window).resize(function(){
           copyoneToggleOut.update(true);
       });
@@ -369,7 +371,7 @@ if (true) {
           triggerHook: 0,
           reverse: true
       })
-      .addTo(controller)
+      .addTo(artsController)
       .on('start', function () {
           var scene = this.triggerElement();
           $(scene).toggleClass("active");
@@ -391,7 +393,7 @@ if (true) {
       .on('start', function () {
           $("#bus").toggleClass("active");
       })
-      .addTo(controller);
+      .addTo(artsController);
       $(window).resize(function(){
           busToggleOut.update(true);
       });
@@ -407,7 +409,7 @@ if (true) {
           triggerHook: 0,
           reverse: true
       })
-      .addTo(controller)
+      .addTo(artsController)
       .on('start', function () {
           var scene = $("#copy-two");
           $(scene).toggleClass("active");
@@ -427,7 +429,7 @@ if (true) {
       .on('start', function () {
           $("#copy-two").toggleClass("active");
       })
-      .addTo(controller);
+      .addTo(artsController);
       $(window).resize(function(){
           copytwoToggleOut.update(true);
       });
@@ -444,7 +446,7 @@ if (true) {
           triggerHook: 0,
           reverse: true
       })
-      .addTo(controller)
+      .addTo(artsController)
       .on('start', function () {
           var scene = this.triggerElement();
           $(scene).toggleClass("active");
@@ -466,7 +468,7 @@ if (true) {
       .on('start', function () {
           $("#surprise").toggleClass("active");
       })
-      .addTo(controller);
+      .addTo(artsController);
       $(window).resize(function(){
           surpriseToggleOut.update(true);
       });
@@ -484,7 +486,7 @@ if (true) {
           reverse: true
       })
       .setTween(tl4)
-      .addTo(controller);
+      .addTo(artsController);
       $(window).resize(function(){
           surprise.offset(-$(window).height()*0.25);
           surprise.update(true);
@@ -504,7 +506,7 @@ if (true) {
           triggerHook: 0,
           reverse: true
       })
-      .addTo(controller)
+      .addTo(artsController)
       .on('start', function () {
           var scene = this.triggerElement();
           $(scene).toggleClass("active");
@@ -528,7 +530,7 @@ if (true) {
       .on('start', function () {
           $("#scroll-one").toggleClass("active");
       })
-      .addTo(controller);
+      .addTo(artsController);
       $(window).resize(function(){
           scrollOneToggleOut.update(true);
       });
@@ -545,7 +547,7 @@ if (true) {
       	    reverse: true
       	})
       	.setPin("#scroll-one")
-      	.addTo(controller)
+      	.addTo(artsController)
       	.on("progress", function (event) {
       	    var scene = this.triggerElement(); 
       	    var inner = $(scene).find(".inner");
@@ -566,7 +568,7 @@ if (true) {
       	    reverse: true
       	})
       	.setPin("#scroll-two")
-      	.addTo(controller)
+      	.addTo(artsController)
       	.on("progress", function (event) {
       	    var scene = this.triggerElement();
       	    var inner = $(scene).find(".inner");
@@ -592,7 +594,7 @@ if (true) {
           triggerHook: 0,
           reverse: true
       })
-      .addTo(controller)
+      .addTo(artsController)
       .on('start', function () {
           var scene = this.triggerElement();
           $(scene).toggleClass("active");
@@ -612,7 +614,7 @@ if (true) {
           triggerHook: 0,
           reverse: true
       })
-      .addTo(controller)
+      .addTo(artsController)
       .on('start', function () {
           var scene = this.triggerElement();
           $(scene).toggleClass("active");
@@ -634,7 +636,7 @@ if (true) {
       .on('start', function () {
           $("#ispossible").toggleClass("active");
       })
-      .addTo(controller);
+      .addTo(artsController);
       $(window).resize(function(){
           isPossibleToggleOut.update(true);
       });
@@ -652,7 +654,7 @@ if (true) {
         reverse: true
     })
     .setTween(tl)
-    .addTo(controller);
+    .addTo(artsController);
     $(window).resize(function(){
         isPossible.offset(-$(window).height()*0.25);
         isPossible.update(true);
@@ -670,7 +672,7 @@ if (true) {
         triggerHook: 0,
         reverse: true
     })
-    .addTo(controller)
+    .addTo(artsController)
     .on('start', function () {
         var scene = this.triggerElement();
         $(scene).toggleClass("active");
@@ -705,5 +707,6 @@ if (true) {
 
 } else {
   $("#loader").hide();
+  console.log('hide')
   $("#intro, #inspiration, #slideplay, #copy-one, #bus, #copy-two, #ispossible").addClass("active");
 }

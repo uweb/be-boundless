@@ -196,7 +196,7 @@ div#loadingEl {
 				width: 120px;
 				position: absolute;
 				content: '';
-				height: 1px;
+				height: 2px;
 				background: white;
 				bottom: -10px;
 				left: 0;
@@ -228,18 +228,18 @@ div#loadingEl {
 					.transition(all .2s linear);
 					opacity: 0;
 					pointer-events: none;
-					top: -60px;
+					bottom: 80px;
 					left: 50%;
-					background: white;
+					background: @darkgold;
 					pointer-events: none;
-					font-size: 15px;
+					font-size: 13px;
 					font-weight: 900;
 					padding: 10px 15px;
-					line-height: 1.3;
-					width: 130px;
+					line-height: 1.2;
+					width: 150px;
 					text-align: center;
-					margin-left: -65px;
-					color: black;
+					margin-left: -75px;
+					color: white;
 					&:after {
 						position: absolute;
 						content: '';
@@ -251,7 +251,7 @@ div#loadingEl {
 						height: 0;
 						border-left: 10px solid transparent;
 						border-right: 10px solid transparent;
-						border-top: 10px solid #fff;
+						border-top: 10px solid @darkgold;
 					}
 				}
 				&:hover,
@@ -280,6 +280,9 @@ div#loadingEl {
 			a {
 				&:nth-of-type(1) {
 					background-image: url(../img/thumb-scholarship.jpg);
+				}
+				&:nth-of-type(2) {
+					background-image: url(../img/thumb-dentistry.jpg);
 				}
 			}
 		}
@@ -405,7 +408,7 @@ div#loadingEl {
 		}
 		#slide4 {
 			& > div {
-				width: 70vw;
+				width: 62vw;
 				padding-left: 12vw;
 			}
 			h2 {
@@ -428,7 +431,7 @@ div#loadingEl {
 				padding-left: 12vw;
 			}
 			h2 {
-				margin-top: 22vh;
+				margin-top: 30vh;
 			}
 		}
 		#slide7 {

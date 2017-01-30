@@ -44,9 +44,9 @@
                 
                 <small>Providers at the Center for Pediatric Dentistry see children both with and without special needs. At the center’s Autism Clinic, Dr. Travis Nelson is helping children get comfortable going to the dentist at an early age. Follow along as brothers Ayden and Gabriel head to the Center for Pediatric Dentistry for an appointment, and learn about the deeper impact the center has had on their family.</small>
 
-                <p>Most dental care providers have minimal training in special care dentistry, leaving them unable to address patients’ behavioral and physical needs. Additionally, many patients with special needs are afraid of dental procedures, and may have had past treatment while under general anesthesia. This means their fears are never assuaged, and appointments can remain challenging for both patient and dental care provider.</p>
+                <p>Most dental care providers have minimal training in special care dentistry, often leaving them unable to address patients’ behavioral and physical needs. Additionally, many patients with special needs are afraid of dental procedures, and may have had past treatment while under general anesthesia. This means their fears are never assuaged, and appointments can remain challenging for both patient and dental care provider.</p>
 
-                <p>At the DECOD clinic, however, providers work with patients to help them get comfortable in the exam chair. And those treating the patients include UW dental students working under faculty supervision, ensuring that more oral health care professionals will be able to treat patients — a one-two punch to change the future of special care dentistry.</p>
+                <p>At the DECOD clinic, however, providers work with patients to help them get comfortable in the exam chair. And those treating the patients include UW dental students working under faculty supervision, ensuring that more oral health care professionals will be able to treat patients — a one-two punch to elevate the quality of special care dentistry.</p>
 
                 <p>In partnership with DECOD is the UW’s <a href="https://thecenterforpediatricdentistry.com/">Center for Pediatric Dentistry</a>; while the DECOD clinic treats adults, the center sees younger patients with special needs. Through both clinics, as well as the accompanying curriculum in special care dentistry, the School of Dentistry is leading the charge to improve access to dental care for all patients. </p>
 
@@ -80,7 +80,7 @@
       <div class="col-md-10 col-md-offset-1 copy">
         <p>Her training in this field has taught her to expect the unexpected when caring for her patients. “Each patient is an individual with individual needs,” she says. “And sometimes those needs change moment by moment.”</p>
         <p>Some patients start out with a series of appointments to simply get used to the clinic, slowly building up to receiving treatment. Others feel more at ease if an assistant holds their hand, or if they can take breaks from keeping their mouth open. And many benefit from the positive encouragement given throughout procedures. </p>
-        <p>Despite a growing demand, DECOD is one of only a few special care dental clinics in Washington state. Dr. Kimberly Espinoza, director of DECOD, has heard story after story of patients getting rejected from offices where dentists weren’t equipped to treat them. “Families were so frustrated,” she says. </p>
+        <p>Despite a growing demand, DECOD is one of only a few special care dental clinics in Washington state. Dr. Kimberly Espinoza, director of DECOD, has heard story after story of patients being turned away by dentists who weren’t equipped to treat them. “Families were so frustrated,” she says. </p>
         <p class="headline-gold purple left">"Some tried several different clinics before they found us."</p>
         <p>Families at the Center for Pediatric Dentistry echo similar hardships; while the DECOD clinic has been in operation <a href="https://dental.washington.edu/wp-content/media/alumni/DANSpring2015.pdf">since 1979</a>, the center opened its doors six years ago, to the relief of countless families of special-needs children. Last year alone, they had 21,000 patient visits, about 20 percent of which were children with special needs. </p>
       </div> 
@@ -157,7 +157,7 @@
           <p>Then in 1984, after Stiefel testified on key dental issues at the state capitol and contacted legislators, DECOD secured state funds to increase access to dental care for Washington state residents with disabilities, as well as the training of local dentists.</p>
           <p>Stiefel and her team also developed the learning modules for UW dental students that are reflected in the curriculum today.  </p>
           <blockquote>“It was truly a team effort at every level,” says Stiefel.</blockquote>
-          <p>Read more about the <a href="https://dental.washington.edu/wp-content/media/alumni/DANSpring2015.pdf">history of DECOD</a> and the Center for Pediatric Dentistry.</p>
+          <p>Read more about the <a href="https://dental.washington.edu/wp-content/media/alumni/DANSpring2015.pdf">history of DECOD</a> and the <a href="https://thecenterforpediatricdentistry.com/">Center for Pediatric Dentistry</a>.</p>
       </div> 
     </div> 
   </div>   
