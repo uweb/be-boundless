@@ -192,15 +192,6 @@ div#loadingEl {
 			font-weight: 900;
 			margin-bottom: 30px;
 			font-size: 20px;
-			&:after {
-				width: 120px;
-				position: absolute;
-				content: '';
-				height: 2px;
-				background: white;
-				bottom: -10px;
-				left: 0;
-			}
 		}
 		div div {
 			a {
@@ -281,9 +272,6 @@ div#loadingEl {
 				&:nth-of-type(1) {
 					background-image: url(../img/thumb-scholarship.jpg);
 				}
-				&:nth-of-type(2) {
-					background-image: url(../img/thumb-dentistry.jpg);
-				}
 			}
 		}
 	}
@@ -293,6 +281,9 @@ div#loadingEl {
 			a {
 				&:nth-of-type(1) {
 					background-image: url(../img/thumb-education.jpg);
+				}
+				&:nth-of-type(2) {
+					background-image: url(../img/thumb-dentistry.jpg);
 				}
 			}
 		}
@@ -381,6 +372,19 @@ div#loadingEl {
 		}
 	}
 	@media(min-device-width:768px) { 
+		section {
+			h3 {
+				&:after {
+					width: 120px;
+					position: absolute;
+					content: '';
+					height: 2px;
+					background: white;
+					bottom: -10px;
+					left: 0;
+				}
+			}
+		}
 		#slide1 {
 			& > div {
 			}
@@ -469,13 +473,81 @@ div#loadingEl {
 	@media(max-device-width:768px) {    
 		section {
 			padding-top: 50px;
+			.related {
+				.transition(all .4s linear);
+				position: relative;
+				z-index: 10;
+				height: 23px;
+				overflow: hidden;
+				margin-bottom: -7px;
+				display: inline-block;
+			}
+			& > div {
+				& > h2,
+				& > p, 
+				& > a {
+					.transition(opacity .2s linear);
+				}
+				.related {
+					a {
+						opacity: 0;
+					}
+				}
+			}
+			& > div {
+				&.related-active {
+					&:before {
+					    content: '';
+					    background: rgba(0, 0, 0, 0.65);
+					    width: 140vw;
+					    margin-left: -20vw;
+					    height: 200vh;
+					    top: -60px;
+					    left: 0;
+					    display: block;
+					    position: fixed;
+					}
+					.related {
+						height: 120px;
+						.translate(0,-60%);
+						a {
+							opacity: 1;
+						}
+					}
+					& > h2,
+					& > p, 
+					& > a {
+						opacity: 0;
+					}
+					h3 {
+						.transition(all .3s linear);
+						color: @lightgold;
+						&:after {
+							background-position: 0 -30px;
+						}
+					}
+				}
+			}
+			h3 {
+				font-size: 14px;
+				margin: 0 0 20px;
+				// display: inline-block;
+				&:after {
+					content: '';
+					display: inline-block;
+					width: 23px;
+					height: 23px;
+					margin: 0 0 -7px 5px;
+					background: url(../img/mobile-buttons.svg); 
+				}
+			}
 			p {
 				font-size: 14px;
 				line-height: 1.2;
 				text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)
 			}
 		}
-		div {
+		& > div {
 			width: 70vw;
 			padding: 0 10vw;
 		}	
@@ -510,6 +582,7 @@ div#loadingEl {
 		}
 		#slide4 {
 			& > div {
+				width: 68vw;
 				padding-left: 15vw;
 			}
 			h2 {
@@ -521,6 +594,7 @@ div#loadingEl {
 				text-shadow: none;
 			}
 			& > div {
+				width: 65vw;
 				padding-left: 15vw;
 			}
 			h2 {
@@ -539,6 +613,7 @@ div#loadingEl {
 		}
 		#slide7 {
 			& > div {
+				width: 70vw;
 				padding-left: 15vw;
 			}
 			h2 {
@@ -752,6 +827,7 @@ div#loadingEl {
     	left: 65px;
     	bottom: 35px;
     	width: 35%;
+    	pointer-events: none;
     	.transition(opacity 1s linear);
     	.hidePrev & {
     		opacity: 1;

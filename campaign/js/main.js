@@ -30,7 +30,6 @@ $(function(){
 		offsetX 	= window.pageXOffset;
 	})
 
-
 	// Get a list of all the slides in an array
 	// var nodeList = Array.prototype.slice.call( document.getElementById('slides').children );
 	// $(nodeList[2]).addClass('amar')
@@ -452,6 +451,14 @@ $(function(){
 
 	})
 
+	//  Bring up related stories
+	if(!isMobile.matches) {
+		$('.related h3').on('click', function(e){
+			$(e.target).parent().parent().toggleClass('related-active')
+		})
+	}
+
+
 
 	// Empty out dynamic story
 	$('button#empty').on('click',function(e){
@@ -489,8 +496,6 @@ $(function(){
 
 	// Hides ugliness til page is loaded
 	$('body').toggleClass('pageLoaded');
-
-
 
 	// Iphone 5 bug where fixed elements drift when horizontally scrolling
 	// This readjusts the menu and arrows to be a 
