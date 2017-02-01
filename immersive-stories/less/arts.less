@@ -27,29 +27,25 @@
     position: static !important;
 }
 
+.arts {
+  main {
+    overflow-x: hidden;
+  }
 
-@font-face {
-  font-family: "Uni sans",sans-serif;
-  src: url("fonts/Fontfabric-UniSansLight.otf");
-}
-
-main{
-  overflow-x: hidden;
-}
-
-h3,
-.headline-gold {
-    font-family: @uni;
-    text-transform: uppercase;
-    color: @lightgold;
-}
-h2.main {
-    font-family: @uni;
-    font-weight: normal;
-    span {
-        display: block;
-        color: @lightgold;
-    }
+  h3,
+  .headline-gold {
+      font-family: @uni;
+      text-transform: uppercase;
+      color: @lightgold;
+  }
+  h2.main {
+      font-family: @uni;
+      font-weight: normal;
+      span {
+          display: block;
+          color: @lightgold;
+      }
+  }
 }
 
 // Popup video
@@ -643,7 +639,7 @@ body.after-start.hide-menu #campaign-header{
         padding: 0 25px;
         color: #4b2e83;
         text-transform: uppercase;
-        font-family: "Uni sans",sans-serif;
+        font-family: @uni;
         letter-spacing: 1px;
         font-size: 19px;
         &:before{
@@ -686,7 +682,7 @@ body.after-start.hide-menu #campaign-header{
       line-height: 1.428571429;
       color: #4b2e83;
       text-transform: uppercase;
-      font-family: "Uni sans",sans-serif;
+      font-family: @uni;
       letter-spacing: 1px;
       padding: 5px 10px 5px 20px;
       .skew(-15deg,0);
@@ -771,7 +767,7 @@ body.after-start.hide-menu #campaign-header{
 }
 #inspiration .top .right .cell:nth-child(4) .sub{
     text-transform: uppercase;
-    font-family: "Uni sans",sans-serif;
+    font-family: @uni;
     letter-spacing: 1px;
     font-size: 1.8vw;
     color: white;
@@ -875,7 +871,7 @@ body.after-start.hide-menu #campaign-header{
 }
 #inspiration .bottom .left .sub{
     text-transform: uppercase;
-    font-family: "Uni sans",sans-serif;
+    font-family: @uni;
     letter-spacing: 1px;
     font-size: 1.8vw;
     color: white;
@@ -921,7 +917,7 @@ body.after-start.hide-menu #campaign-header{
     .quote{
         color: @purple;
         text-transform: uppercase;
-        font-family: "Uni sans",sans-serif;
+        font-family: @uni;
         letter-spacing: 1px;
         font-size: 1.2vw;
         box-sizing: border-box;
@@ -956,7 +952,7 @@ body.after-start.hide-menu #campaign-header{
       line-height: 1.428571429;
       color: #4b2e83;
       text-transform: uppercase;
-      font-family: "Uni sans",sans-serif;
+      font-family: @uni;
       letter-spacing: 1px;
       padding: 10px 20px 5px 30px;
       .skew(-15deg,0);
@@ -1005,7 +1001,7 @@ body.after-start.hide-menu #campaign-header{
   color: white;
   font-size: 14vw;
   opacity: .2;
-  font-family: "Uni sans",sans-serif;
+  font-family: @uni;
   text-transform: uppercase;
   letter-spacing: .02em;
   font-weight: normal;
@@ -1036,7 +1032,7 @@ body.after-start.hide-menu #campaign-header{
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 20;
-    font-family: "Uni sans",sans-serif;
+    font-family: @uni;
     letter-spacing: .01em;
     text-transform: uppercase;
 }
@@ -1092,7 +1088,7 @@ body.after-start.hide-menu #campaign-header{
 #copy-one .person{
     color: #4b2e83;
     text-transform: uppercase;
-    font-family: "Uni sans",sans-serif;
+    font-family: @uni;
     letter-spacing: 1px;
     font-size: 16px;
     line-height: 1.2;
@@ -1147,14 +1143,14 @@ blockquote {
     padding-top: 45px;
     background: white;
     text-transform: uppercase;
-    font-family: "Uni sans",sans-serif;
+    font-family: @uni;
     letter-spacing: .01em;
     font-size: 26px;
     line-height: 1.5;
 }
 #scroll-one .pullperson{
     text-transform: uppercase;
-    font-family: "Uni sans",sans-serif;
+    font-family: @uni;
     letter-spacing: 1px;
     font-size: 12px;
     margin-left: 40%;
@@ -1281,7 +1277,7 @@ blockquote {
 #copy-two .person{
   color: #4b2e83;
   text-transform: uppercase;
-  font-family: "Uni sans",sans-serif;
+  font-family: @uni;
   letter-spacing: 1px;
   font-size: 16px;
   margin-left: 60%;
@@ -1395,7 +1391,7 @@ blockquote {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     font-size: 8vw;
-    font-family: "Uni sans",sans-serif;
+    font-family: @uni;
     z-index: 20;
     text-transform: uppercase;
     letter-spacing: .01em;
@@ -1410,7 +1406,7 @@ blockquote {
 }
 #surprise .other{
     font-size: 2.4vw;
-    font-family: "Uni sans",sans-serif;
+    font-family: @uni;
     z-index: 20;
     text-transform: uppercase;
     letter-spacing: .01em;
@@ -1449,7 +1445,7 @@ blockquote {
     color: #b7a57a;
     margin: 30px;
     text-transform: uppercase;
-    font-family: "Uni sans",sans-serif;
+    font-family: @uni;
     letter-spacing: .01em;
     line-height: 1.45;
     margin-bottom: 15px;
@@ -1553,7 +1549,7 @@ blockquote {
     padding: 30px 30px;
     color: #4b2e83;
     text-transform: uppercase;
-    font-family: "Uni sans",sans-serif;
+    font-family: @uni;
     letter-spacing: 1px;
     font-size: 15px;
     margin-right: 60px;
@@ -1923,7 +1919,7 @@ blockquote {
         transform: translateX(-50%) translateY(50%) translateY(-9vw);
         z-index: 1;
         font-size: 2.4vw;
-        font-family: "Uni sans",sans-serif;
+        font-family: @uni;
         z-index: 20;
         text-transform: uppercase;
         letter-spacing: .01em;
@@ -1976,7 +1972,7 @@ blockquote {
 }
 #scroll-two .pullperson{
     text-transform: uppercase;
-    font-family: "Uni sans",sans-serif;
+    font-family: @uni;
     letter-spacing: 1px;
     font-size: 12px;
     margin-left: 40%;
@@ -2632,7 +2628,7 @@ blockquote {
         bottom: 15%;
         left: 5%;
         font-size: 8vw;
-        font-family: "Uni sans",sans-serif;
+        font-family: @uni;
         z-index: 20;
         text-transform: uppercase;
         letter-spacing: .01em;
@@ -2644,7 +2640,7 @@ blockquote {
             color: @lightgold;
         }
         .other {
-            font-family: "Uni sans",sans-serif;
+            font-family: @uni;
             z-index: 20;
             text-transform: uppercase;
             letter-spacing: .01em;
@@ -2704,7 +2700,7 @@ blockquote {
         margin: 60px 0;
     }
 	#intro .text h1 span { 
-		font-family: "Uni sans",sans-serif;
+		font-family: @uni;
 		display: block;
 		font-weight: 300;
 		font-size: 100px;
