@@ -40,6 +40,7 @@ module.exports = function(grunt) {
           'immersive-stories/js/scholarship.js',
           'immersive-stories/js/tacoma.js',
           'immersive-stories/js/dentistry.js',
+          'immersive-stories/js/public-health.js',
           'immersive-stories/js/engineering.js',
           'immersive-stories/js/medicine.js',
           'immersive-stories/js/arts.js',
@@ -96,6 +97,10 @@ module.exports = function(grunt) {
           'immersive-stories/js/dentistry.min.js': [
               'immersive-stories/js/common.js',
               'immersive-stories/js/dentistry.js',
+          ],           
+          'immersive-stories/js/public-health.min.js': [
+              'immersive-stories/js/common.js',
+              'immersive-stories/js/public-health.js',
           ],          
           'immersive-stories/js/engineering.min.js': [
               'immersive-stories/js/common.js',
@@ -170,6 +175,7 @@ module.exports = function(grunt) {
                 'immersive-stories/css/scholarship.css': 'immersive-stories/less/scholarship.less',
                 'immersive-stories/css/tacoma.css': 'immersive-stories/less/tacoma.less',
                 'immersive-stories/css/dentistry.css': 'immersive-stories/less/dentistry.less',
+                'immersive-stories/css/public-health.css': 'immersive-stories/less/public-health.less',
                 'immersive-stories/css/medicine.css': 'immersive-stories/less/medicine.less',
                 'immersive-stories/css/arts.css': 'immersive-stories/less/arts.less',
                 'immersive-stories/css/bothell.css': 'immersive-stories/less/bothell.less',
