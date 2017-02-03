@@ -103,8 +103,8 @@
             <a href="tacoma-transformation" data-controller='controllerEducation' data-js="tacoma" data-title="Drive the public good" class="uw-btn btn-sm btn-plus story-link">Read story</a> <!-- <a href="http://www.washington.edu/boundless/explore/?utm_source=website&utm_medium=click&utm_campaign=public-good&utm_term=expanding-education#public-good" class="uw-btn btn-sm">Opportunities</a> -->
             <div class="related">
               <h3>Related stories</h3>
-              <a href="expanding-education" data-js="education" data-title="Nurturing Minds, Opening Doors" class="arts-thumb story-link"><span>Nurturing Minds, Opening Doors</span></a>
-              <a href="special-care-dentistry" data-js="dentistry" data-title="Arts" class="arts-thumb story-link"><span>Special Care for Healthy Smiles</span></a>
+              <a href="expanding-education" data-js="education" data-title="Nurturing minds, opening doors" class="arts-thumb story-link"><span>Nurturing minds, opening doors</span></a>
+              <a href="special-care-dentistry" data-js="dentistry" data-title="Special care for healthy smiles" class="arts-thumb story-link"><span>Special care for healthy smiles</span></a>
             </div>
 
           </div>
@@ -123,7 +123,7 @@
             <a href="bothell-gaming" data-js="bothell" data-title="Empower possibility through innovation" class="uw-btn btn-sm btn-plus story-link">Read story</a> <!-- <a href="http://www.washington.edu/boundless/explore/?utm_source=website&utm_medium=click&utm_campaign=innovation&utm_term=inclusive-engineering#innovation" class="uw-btn btn-sm">Opportunities</a> -->
             <div class="related">
               <h3>Related stories</h3>
-              <a href="inclusive-engineering" data-js="engineering" data-title="Empower possibility through innovation" class="arts-thumb story-link"><span>Helping the Body Heal, Feel and Move Again</span></a>
+              <a href="inclusive-engineering" data-js="engineering" data-title="Helping the body heal, feel and move again" class="arts-thumb story-link"><span>Helping the body heal, feel and move again</span></a>
             </div>
 
           </div>
