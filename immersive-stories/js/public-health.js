@@ -1,32 +1,40 @@
 $(function(){
 
   var body = document.getElementsByTagName('body')[0];
-  var controllerMedicine = new ScrollMagic.Controller();
+  var controllerPublic = new ScrollMagic.Controller();
 
-  currentController = controllerMedicine;
-
-    // var introMedicine = new ScrollMagic.Scene({
-    //   triggerElement: '#intro-slide',
-    //   triggerHook: 0,
-    //   duration: '100%',
-    // })
-    // .setPin('.intro', {pushFollowers: false})
-    // .setClassToggle("body", 'medicineIntro')
-    // .setTween('#intro-text', 1, { opacity: 0, transform: 'translateY(-100px)', ease: Power0.easeIn })
-    // .addTo(controllerMedicine);
+  currentController = controllerPublic;
 
 
-    // Play Jayna's video
 
-    // var videoTrigger = new ScrollMagic.Scene({
-    //   triggerElement: '#video',
-    //   triggerHook: 1
-    // })
-    // .on("start", function(){
-    //   videoPlay("https://www.youtube.com/embed/sbELjIqhOZ4?theme=light;autoplay=1&rel=0&amp;showinfo=0&amp");
-    // })
-    // .reverse(false)
-    // .addTo(controllerMedicine);
+    var fade = new TimelineMax()
+      .to('#slide-0', 0.2, {opacity: 0, ease: Power0.easeInOut }, 0)
+      .to('#slide-1', 0.2, {opacity: 1, ease: Power0.easeInOut, delay: 0.2 }, 0)
+      .to('#slide-2', 0.2, {opacity: 1, ease: Power0.easeInOut, delay: 0.4 }, 0)
+      .to('#slide-3', 0.2, {opacity: 1, ease: Power0.easeInOut, delay: 0.6 }, 0)
+
+
+
+    var introMedicine = new ScrollMagic.Scene({
+      triggerElement: body,
+      triggerHook: 0,
+      duration: '200%',
+    })
+    .on('enter',function(){
+      $('video').get(0).play()
+    })
+    .setPin('#intro-vid', {pushFollowers: true})
+    .setTween(fade)
+    .addTo(controllerPublic);
+
+  //     .add([
+  //       TweenMax.to('#back', 1,      { transform: 'translateY(-30px)', ease: Power0.easeIn }),
+  //       TweenMax.to('#middle', 1,  { transform: 'translateY(16vh)', ease: Power0.easeIn, delay: 0.0 }),
+  //       TweenMax.to('#middle2', 1,  { transform: 'translateY(8vh)', ease: Power0.easeIn, delay: 0.0 }),
+  //       TweenMax.to('#middle3', 1,  { transform: 'translateY(14vh)', ease: Power0.easeIn, delay: 0.0 }),
+  //       // TweenMax.to('#fore', 0.3,    { transform: 'translateY(0)', ease: Power0.easeIn, delay: 0.1 }),
+  //       TweenMax.to('#robot', 1,   { transform: 'translateY(-100px)', ease: Power0.easeIn, delay: 0.3 })
+  //     ])
 
 
     // Accordion action

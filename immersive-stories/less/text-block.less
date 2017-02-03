@@ -38,6 +38,7 @@
         &.purple {
             color: @purple;
         }
+
     }
     h3.headline-gold {
         font-size: 22px;
@@ -49,6 +50,10 @@
         position: relative;
         margin: 140px 0 160px;
         font-weight: bold;
+        b {
+            font-family: @font-family-headline;
+            font-weight: @ultra;
+        }
         &:after,
         &:before {
             content: " ";
@@ -66,6 +71,20 @@
         &:after {
             bottom: -100px;
             background-position: 0 -195px;
+        }
+        &.smaller {
+            margin: 90px 0 110px;
+            &:before,
+            &:after {
+                .scale(.5,.5);
+                transform-origin: center bottom;
+            }
+            &:before {
+                top: -85px;
+            }
+            &:after {
+                bottom: -50px;
+            }
         }
         &.purple {
             &:after {
@@ -105,7 +124,7 @@
     @media(min-width:768px) {
         .copy {
             margin-top: -50px; 
-            padding: 80px 90px;
+            padding: 70px 90px 60px 90px;
         }
         .headline-gold {
             font-size: 28px;
@@ -120,7 +139,10 @@
     }
     @media(max-width:768px) {
         overflow: hidden;
+        &.visible {
+            overflow: visible;
+        }
     }
-
+    
 
 }

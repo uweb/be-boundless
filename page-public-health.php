@@ -13,7 +13,7 @@
 
 
   <button id="pause">Pause</button>
-  <video loop muted autoplay poster="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/img/header.jpg' ?>" class="fullscreen-bg__video">
+  <video loop muted autoplay poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/header.jpg' ?>" class="fullscreen-bg__video">
       <!-- <source src="img/street-bw-webm.webm" type="video/webm"> -->
       <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/public-health/header.mp4' ?>" type="video/mp4">
       <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/public-health/header.webm' ?>" type="video/webm">
@@ -21,16 +21,32 @@
 
 
   <div class="intro-body">
-    <h1>Bridging the <span>“know-do” gap</span></h1>   
-    <p>Home to the world’s first Ph.D. program in implementation science, the School of Public Health’s DeWorm3 project is turning research into action to interrupt the transmission of parasitic worms in developing countries.</p>                 
+    <div id="slide-0">
+      <h1>Bridging the <span>“know-do” gap</span></h1>   
+      <p>Home to the world’s first Ph.D. program in implementation science, the School of Public Health’s DeWorm3 project is turning research into action to interrupt the transmission of parasitic worms in developing countries.</p>     
+    </div>            
+    <div class="slides">
+      <div id="slide-1"><p>Anemia.</p></div>            
+      <div id="slide-2"><p>Weakness.</p></div>            
+      <div id="slide-3"><p>Malaise,</p></div>
+    </div> 
+
+
   </div>
 
-<!-- Anemia. 
-Weakness. 
-Malaise, stomach aches, interrupted mental and physical development.  -->
+  <!-- Anemia. 
+  Weakness. 
+  Malaise, stomach aches, interrupted mental and physical development.  -->
+
+  <section class="scrollit read-more">
+      <p>Scroll Down</p>
+      <div class="mouse">
+        <div class="scroll"></div>
+      </div>
+  </section>
 
 
-  <a class="read-more" href="#main_content">Read the story</a>
+
 </section>
 
 
@@ -251,7 +267,7 @@ Malaise, stomach aches, interrupted mental and physical development.  -->
         </g>
         <g>
           <text transform="matrix(1 0 0 1 501.1572 338.2817)" class="st6 st0 st8">PARTNERS:</text>
-          <text transform="matrix(1 0 0 1 501.1572 353.8818)"><tspan x="0" y="0" class="st6 st2 st8">• Christian Medical College (CMC) Vellore</tspan><tspan x="0" y="13.2" class="st6 st2 st8">• KEM Hospital Research Centre Pune    </tspan></text>
+          <text transform="matrix(1 0 0 1 501.1572 353.8818)"><tspan x="0" y="0" class="st6 st2 st8">• Christian Medical College (CMC) Vellore</tspan><tspan x="0" y="13.2" class="st6 st2 st8">• Imperial College London</tspan></text>
           <g>
             <text transform="matrix(1 0 0 1 500.8262 308.0503)" class="st5 st7 st9">India</text>
           </g>
@@ -267,7 +283,7 @@ Malaise, stomach aches, interrupted mental and physical development.  -->
                   
                     <p>It’s here in the Department of Global Health, in partnership with the School of Medicine, that the first-ever Ph.D. program in metrics and implementation science is transforming the way people approach population health to improve lives. Implementation science is also key to the UW’s <a href="http://uw.edu/populationhealth">Population Health Initiative</a>, launched in 2016 with the goal of improving human health, environmental resilience and social and economic equity around the world.</p>
 
-                    <p class="gold-quote headline-gold purple">Implementation science works to equally value voices on the ground, giving as much weight to feedback from community members as it does to local health officials and funders. <b>– Arianna Means</b></p>
+                    <p class="gold-quote headline-gold purple smaller">Implementation science works to equally value voices on the ground, giving as much weight to feedback from community members as it does to local health officials and funders. <b>– Arianna Means</b></p>
 
 
                 </div> 
@@ -310,7 +326,7 @@ Malaise, stomach aches, interrupted mental and physical development.  -->
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy marginless padless">
                   
-                <p class="gold-quote headline-gold purple">Implementation science is research-based and scientific, but it’s also action-oriented. It’s actually taking that next step, bridging the ‘know-do’ gap.<b> – Arianna Means</b></p>
+                <p class="gold-quote headline-gold purple smaller">Implementation science is research-based and scientific, but it’s also action-oriented. It’s actually taking that next step, bridging the ‘know-do’ gap.<b> – Arianna Means</b></p>
 
 
                   <div class="row">
@@ -318,11 +334,10 @@ Malaise, stomach aches, interrupted mental and physical development.  -->
                       <p>Means, a former Gates Foundation research analyst who’s slated to earn her Ph.D. this January, came to the UW to earn her master’s in epidemiology after serving in the Peace Corps. As a Peace Corps volunteer, she was stationed in rural Zambia, working on community-led malaria prevention campaigns and HIV testing and treatments. “There’s no substitute for that level of real world experience,” says the Atlanta native. “It’s one thing to study diseases related to poverty, but it’s another to live with people who have been subject to it for years.”</p>
                     </div>
                     <div class="col-md-5 video-popup">
-                      <a data-lity href="https://www.youtube.com/embed/o2-Kx94EBO0?autoplay=1&rel=0&amp;showinfo=0&amp"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/video-kenny.jpg' ?>" alt=""></a>
+                      <a data-lity href="https://www.youtube.com/embed/asxw3S3TMQc?autoplay=1&rel=0&amp;showinfo=0&amp"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/video-kenny.jpg' ?>" alt=""></a>
                       <p class="caption">Implementation science: Learn more about how implementation science is closing the “know-do” gap</p>
                     </div>
                   </div>
-                
 
                 </div> 
           </div> 
@@ -413,13 +428,13 @@ Malaise, stomach aches, interrupted mental and physical development.  -->
 
                   </div>
                   <div class="col-md-5 video-popup">
-                    <a data-lity href="https://www.youtube.com/embed/o2-Kx94EBO0?autoplay=1&rel=0&amp;showinfo=0&amp"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/video-arianna.jpg' ?>" alt=""></a>
+                    <a data-lity href="https://www.youtube.com/embed/Qga5YcHqccM?autoplay=1&rel=0&amp;showinfo=0&amp"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/video-arianna.jpg' ?>" alt=""></a>
                     <p class="caption">Implementation science: Learn more about how implementation science is closing the “know-do” gap</p>
                   </div>
                 </div>
               
 
-              <p class="gold-quote headline-gold purple">We’re trying to see what happens if we actually treat the entire community — pre-school-aged children to adults — and compare that to the current standard of only treating kids. <b>– Arianna Means</b></p>
+              <p class="gold-quote headline-gold purple smaller">We’re trying to see what happens if we actually treat the entire community — pre-school-aged children to adults — and compare that to the current standard of only treating kids. <b>– Arianna Means</b></p>
 
 
               </div> 
@@ -429,14 +444,14 @@ Malaise, stomach aches, interrupted mental and physical development.  -->
 
 
 
-  <section class="text-block">
+  <section class="text-block visible">
       <div class="boundless-headline sm dark"><span><h2>Implementation science at work</h2></span></div>
       <div class="container">
           <div class="row">
-              <div class="col-md-10 col-md-offset-1 copy marginless transparent">
+              <div class="col-md-10 col-md-offset-1 copy marginless transparent reduced-pad">
                 <p>Mass drug administration programs have targeted entire communities before, and the strategy works. A large-scale effort to squash another parasitic disease, lymphatic filariasis (commonly known as elephantiasis), kicked off in 2000. Community-wide treatment helped transmission rates drop 43 percent in just 15 years. More than 800  million people have been treated so far, and in some countries, the transmission cycle has been interrupted. By 2020, the hope is for lymphatic filariasis to be eliminated completely.  </p>
               
-                <p>There’s an opportunity here, says Means, to leverage the existing treatment platforms already in place in Benin, Malawi and India for DeWorm3’s efforts. In fact, both   lymphatic filariasis and intestinal worm treatments co-share a drug: albendazole. </p>
+                <p>There's an opportunity here, says Means, to leverage the existing treatment platforms already in place in Benin, Malawi and India for DeWorm3’s efforts. In fact, both lymphatic filariasis and intestinal worm treatments co-share a drug: albendazole. </p>
               
                 <p>This is what implementation science is all about.  </p>
             </div>
@@ -451,13 +466,13 @@ Malaise, stomach aches, interrupted mental and physical development.  -->
                       <div class="hider">
                           <h2>Arianna Means</h2>
                           <p><span>Research Scientist /</span> DeWorm3</p>
-                          <p><span>Former Research Analyst /</span> Bill & Melinda Gates Foundation </p>
+                          <p><span>Former Research Analyst /</span> Bill &amp; Melinda Gates Foundation </p>
                           <p><span>Peace Corps Alum</span></p>
                           <p><span>Bachelor of Arts in International Relations and Community Health, Tufts University, ‘09</span></p>
                           <p><span>Master of Public Health in Epidemiology, University of Washington, ‘13</span></p>
                           <p><span>Ph.D. in Global Health: Metrics and Implementation Science, University of Washington, ‘16</span></p>
-
                       </div>
+                      <svg class="svg-plus" xmlns="http://www.w3.org/2000/svg" width="50.98" height="50.6" viewBox="0 0 50.98 50.6"><path fill="#B7A57A" d="M46.684 0v46.684H0"/><g fill="#FFF"><path d="M31.374 25.113h1.98v14.502h-1.98z"/><path d="M25.113 31.374h14.503v1.98H25.113z"/></g></svg>
                   </li>
                   <li class="pax-2" tabindex="0">
                       <div class="hider">
@@ -467,8 +482,8 @@ Malaise, stomach aches, interrupted mental and physical development.  -->
                           <p><span>Associate Professor /</span> Global Health</p>
                           <p><span>Adjunct Associate Professor /</span>< Epidemiology/p>
                           <p><span>Adjunct Associate Professor /</span> Industrial & Systems Engineering</p>
-
                       </div>
+                      <svg class="svg-plus" xmlns="http://www.w3.org/2000/svg" width="50.98" height="50.6" viewBox="0 0 50.98 50.6"><path fill="#B7A57A" d="M46.684 0v46.684H0"/><g fill="#FFF"><path d="M31.374 25.113h1.98v14.502h-1.98z"/><path d="M25.113 31.374h14.503v1.98H25.113z"/></g></svg>
                   </li>
                   <li class="pax-3" tabindex="0">
                       <div class="hider">
@@ -479,9 +494,8 @@ Malaise, stomach aches, interrupted mental and physical development.  -->
                           <p><span>Associate Professor /</span> Allergy and Infectious Diseases</p>
                           <p><span>Associate Professor /</span> Pediatrics</p>
                           <p><span>Adjunct Associate Professor /</span> Epidemiology</p>
-
-                          
                       </div>
+                      <svg class="svg-plus" xmlns="http://www.w3.org/2000/svg" width="50.98" height="50.6" viewBox="0 0 50.98 50.6"><path fill="#B7A57A" d="M46.684 0v46.684H0"/><g fill="#FFF"><path d="M31.374 25.113h1.98v14.502h-1.98z"/><path d="M25.113 31.374h14.503v1.98H25.113z"/></g></svg>
                   </li>
               </ul>
           </div>
@@ -489,10 +503,10 @@ Malaise, stomach aches, interrupted mental and physical development.  -->
 
       <div class="container">
           <div class="row">
-              <div class="col-md-10 col-md-offset-1 copy marginless transparent">
+              <div class="col-md-10 col-md-offset-1 copy marginless transparent reduced-pad">
 
                 <div class="video-popup right-float">
-                  <a data-lity href="https://www.youtube.com/embed/o2-Kx94EBO0?autoplay=1&rel=0&amp;showinfo=0&amp"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/video-judd.jpg' ?>" alt=""></a>
+                  <a data-lity href="https://www.youtube.com/embed/5gV6JkXKebA?autoplay=1&rel=0&amp;showinfo=0&amp"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/video-judd.jpg' ?>" alt=""></a>
                   <p class="caption">DeWorm3 goals: Learn more about the three main objectives of DeWorm3, and the importance of working with the World Health Organization and   Ministries of Health</p>
                 </div>
 
@@ -503,7 +517,7 @@ Malaise, stomach aches, interrupted mental and physical development.  -->
                 <p>The potential impact of DeWorm3’s work for an infection-free world is unparalleled, says Means. “For a parent, just knowing your kid isn’t at risk of contracting an     infection is huge,” she says. “There’s peace of mind in knowing your child can run around barefoot without getting a belly full of worms.”  
                 </p>
     
-                <p class="gold-quote headline-gold purple">Health is a human right. The UW and the School of Public Health are working toward equity, and I think that’s pretty unique to the culture here. <b>– Arianna Means</b></p>
+                <p class="gold-quote headline-gold purple smaller">Health is a human right. The UW and the School of Public Health are working toward equity, and I think that’s pretty unique to the culture here. <b>– Arianna Means</b></p>
           </div>
         </div> 
       </div>

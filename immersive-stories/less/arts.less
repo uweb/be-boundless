@@ -14,6 +14,87 @@
     font-family: 'object-fit: contain;'
 }
 
+#intro {
+  background-color: black;
+  position: relative;
+    .pause {
+        top: 110px;
+    }
+  &:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    content: '';
+    opacity: .2;
+    background: black;
+    z-index: 0;
+  }
+}
+#intro video{
+    display: none;
+}
+#intro.active video{
+    display: block;
+    // opacity: .9;
+}
+#intro .scrollit{
+    text-transform: uppercase;
+    letter-spacing: .01em;
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+     p {
+        font-family: "Encode Sans Compressed",sans-serif;
+        font-weight: 800;
+        // background: #4b2e83;
+        color: white;
+        padding: 15px;
+
+    }
+    @media (max-width: 728px) {
+        bottom: 65px;
+        p {
+            display: none;
+        }
+    }
+}
+#intro .text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  .translate(-50%,-50%);
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+}
+#intro .text h1, #intro .text p{
+    color: white;
+    max-width: 880px;
+    margin: auto;
+    padding: 15px;
+    width: 100%;
+}
+#intro .text h1{
+    display: block;
+    text-transform: uppercase;
+    font-size: 115px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+#intro .text p{
+    width: 100%;
+    padding: 15px;
+    margin: auto;
+    text-shadow: 1px 1px 3px rgba(0,0,0,.8);
+}
+
+
 
 // In case 2014 doesn't have background-cover defined
 .background-cover(@cover) {
