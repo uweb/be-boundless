@@ -22,13 +22,17 @@
 
   <div class="intro-body">
     <div id="slide-0">
-      <h1>Bridging the <span>“know-do” gap</span></h1>   
+      <h1>Bridging the <span>“know-do” gap</span></h1>  
+      <hr> 
       <p>Home to the world’s first Ph.D. program in implementation science, the School of Public Health’s DeWorm3 project is turning research into action to interrupt the transmission of parasitic worms in developing countries.</p>     
     </div>            
     <div class="slides">
       <div id="slide-1"><p>Anemia.</p></div>            
       <div id="slide-2"><p>Weakness.</p></div>            
-      <div id="slide-3"><p>Malaise,</p></div>
+      <div id="slide-3">
+        <p>Malaise,</p>
+        <p>stomach aches, interrupted mental and physical development.</p>
+      </div>
     </div> 
 
 
@@ -36,7 +40,7 @@
 
   <!-- Anemia. 
   Weakness. 
-  Malaise, stomach aches, interrupted mental and physical development.  -->
+  Malaise,   -->
 
   <section class="scrollit read-more">
       <p>Scroll Down</p>

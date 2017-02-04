@@ -68,7 +68,7 @@ p {
 
     }
     @media (max-width: 728px) {
-        bottom: 65px;
+        bottom: 16px;
         p {
             display: none;
         }
@@ -154,14 +154,13 @@ p {
     width: 100vw;
     background: black;
     .slides {
-        .translate(15%,-100%);
+        .translate(0,-80%);
         p {
             font-family: @headline;
             font-weight: @ultra;
             text-transform: uppercase;
-            font-size: 5.5vw;
+            font-size: 9.5vw;
             line-height: 1.1;
-            text-align: left;
         }
         #slide-1 {
             opacity: 0;
@@ -171,12 +170,24 @@ p {
         }
         #slide-3 {
             opacity: 0;
+            p:last-child {
+                margin-top: 20px;
+                font-weight: bold;
+                font-size: 27px;
+            }
         }
+    }
+    p {
+        color: white;
+    }
+    hr {
+        width: 120px;
     }
     h1 {
         text-transform: uppercase;
         color: white;
-        line-height: 1.2;
+        line-height: 1.1;
+        text-shadow: 0px 0px 3px rgba(37, 37, 37, 0.65);
         span {
             display: block;
         }
@@ -194,12 +205,18 @@ p {
         left: 0;
         width: 100%;
         text-align: center;
-        margin-top: -120px;
+        margin-top: -200px;
+
+    }
+    #slide-0 {
         p {
+            font-weight: bold;
+            text-shadow: 0px 0px 3px rgba(37, 37, 37, 0.65);
             color: white;
             max-width: 90%;
             margin: 0 auto;
-        }
+            font-size: 19px;
+        }  
     }
     a.read-more {
         display: block;
@@ -220,9 +237,21 @@ p {
     }
     @media @phone-only { 
         h1 {
-            font-size: 8.5vw;
+            font-size: 5.5vw;
+        }
+        hr {
+            display: none;
         }
         .intro-body {
+            position: absolute;
+            z-index: 1;
+            top: 15vh;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            margin-top: 0;
+        }
+        #slide-0 {
             p {
                 max-width: 85%;
                 line-height: 1.5;
@@ -245,11 +274,15 @@ p {
             bottom: auto;
         }
         .intro-body {
+
+        }
+        #slide-0 {
             p {
-                max-width: 60%;
+                max-width: 55%;
                 margin: 0 auto;
             }
         }
+
     }      //  (min-width: 600px) 
     @media @tablet-portait-only { }     //  (min-width: 600px) and (max-width: 899px) 
     @media @tablet-landscape-up { }     //  (min-width: 900px)
