@@ -154,12 +154,13 @@ p {
     width: 100vw;
     background: black;
     .slides {
-        .translate(0,-80%);
+        .translate(0,-110%);
         p {
             font-family: @headline;
             font-weight: @ultra;
             text-transform: uppercase;
-            font-size: 9.5vw;
+            margin-bottom: 10px;
+            font-size: 5.5vw;
             line-height: 1.1;
         }
         #slide-1 {
@@ -171,9 +172,10 @@ p {
         #slide-3 {
             opacity: 0;
             p:last-child {
-                margin-top: 20px;
                 font-weight: bold;
-                font-size: 27px;
+                font-size: 15px;
+                max-width: 75%;
+                margin: 0 auto;
             }
         }
     }
@@ -266,6 +268,18 @@ p {
         }
     }              //  (max-width: 599px)          
     @media @tablet-portrait-up { 
+        .slides {
+            .translate(0,-80%);
+            p {
+                font-size: 9.5vw;
+            }
+            #slide-3 {
+                p:last-child {
+                    margin-top: 20px;
+                    font-size: 27px;
+                }
+            }
+        }
         h1 {
             font-size: 5.5vw;
         }
