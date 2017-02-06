@@ -13,7 +13,7 @@
 
 
   <button id="pause">Pause</button>
-  <video muted autoplay class="media" data-object-fit loop muted autoplay poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/header.jpg' ?>" class="fullscreen-bg__video">
+  <video  muted="" autobuffer="autobuffer" autoplay="" loop="" preload="preload" playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/header.jpg' ?>" class="fullscreen-bg__video">
       <!-- <source src="img/street-bw-webm.webm" type="video/webm"> -->
       <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/public-health/header.mp4' ?>" type="video/mp4">
       <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/public-health/header.webm' ?>" type="video/webm">
