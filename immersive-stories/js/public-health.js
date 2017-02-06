@@ -9,10 +9,12 @@ $(function(){
 
     var fade = new TimelineMax()
       .to('#slide-0', 0.2, {opacity: 0, ease: Power0.easeInOut }, 0)
-      .to('#slide-1', 0.2, {opacity: 1, ease: Power0.easeInOut, delay: 0.2 }, 0)
-      .to('#slide-2', 0.2, {opacity: 1, ease: Power0.easeInOut, delay: 0.4 }, 0)
-      .to('#slide-3', 0.2, {opacity: 1, ease: Power0.easeInOut, delay: 0.6 }, 0)
+      .to('#slide-1 span', 0.2, {width: '60%', ease: Power0.easeInOut, delay: 0.2 }, 0)
 
+      .to('#word-1', 0.2, {opacity: 1, transform: 'translateY(0px)',  ease: Power0.easeInOut, delay: 0.4 }, 0)
+      .to('#word-2', 0.2, {opacity: 1, transform: 'translateY(0px)',  ease: Power0.easeInOut, delay: 0.4 }, 0)
+
+      .to('#slide-3', 0.2, {opacity: 1, ease: Power0.easeInOut, delay: 0.6 }, 0)
 
 
     var introMedicine = new ScrollMagic.Scene({

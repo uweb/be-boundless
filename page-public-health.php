@@ -15,9 +15,8 @@
   <button id="pause">Pause</button>
   <video loop muted autoplay poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/header.jpg' ?>" class="fullscreen-bg__video">
       <!-- <source src="img/street-bw-webm.webm" type="video/webm"> -->
-      <source  type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/timelapse.webm?v=' . time() ?>">
       <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/public-health/header.mp4' ?>" type="video/mp4">
-      
+      <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/public-health/header.webm' ?>" type="video/webm">
   </video>
 
 
@@ -28,8 +27,10 @@
       <p>Home to the world’s first Ph.D. program in implementation science, the School of Public Health’s DeWorm3 project is turning research into action to interrupt the transmission of parasitic worms in developing countries.</p>     
     </div>            
     <div class="slides">
-      <div id="slide-1"><p>Anemia.</p></div>            
-      <div id="slide-2"><p>Weakness.</p></div>            
+      <div id="slide-1"><span><p>Anemia.</p></span></div>            
+      <div id="slide-2">
+        <p><span id="word-1">Weak</span><span id="word-2">ness.</span></p>
+      </div>            
       <div id="slide-3">
         <p>Malaise,</p>
         <p>stomach aches, interrupted mental and physical development.</p>
@@ -301,7 +302,7 @@
       <section class="profile person-1 teacher"><div class="background-profile"><div class="transform">
                     <div class="skew"><div></div></div>
                     <h2 class="name">MEET DR. PETER CHERUTICH, ’06, ‘15</h2>
-                    <p class="studies">Learn how the UW’s first implementation science Ph.D. graduate put his education to work to avert 5,000 new HIV infections through pro-condom advertisements and large-scale male circumcision campaigns in his home country of Kenya.</p>
+                    <p class="studies">Learn how the School of Public Health's first implementation science Ph.D. graduate put his education to work to avert 5,000 new HIV infections through pro-condom advertisements and large-scale male circumcision campaigns in his home country of Kenya.</p>
                   </div></div>
             <div style="text-align: center"><div class="boundless-button sm dark"><span><a id="expander" href="http://www.uwmedicine.org/bios/pamela-becker">Learn more about Peter</a></span></div></div>
       </section>
@@ -336,10 +337,12 @@
 
                   <div class="row">
                     <div class="col-md-7">
-                      <p>Means, a former Gates Foundation research analyst who’s slated to earn her Ph.D. this January, came to the UW to earn her master’s in epidemiology after serving in the Peace Corps. As a Peace Corps volunteer, she was stationed in rural Zambia, working on community-led malaria prevention campaigns and HIV testing and treatments. “There’s no substitute for that level of real world experience,” says the Atlanta native. “It’s one thing to study diseases related to poverty, but it’s another to live with people who have been subject to it for years.”</p>
+                      <p>Means, a Ph.D. candidate in the School of Public Health and former Gates Foundation research analyst, came to the UW to earn her master’s in epidemiology after serving in the Peace Corps. As a Peace Corps volunteer, she was stationed in rural Zambia, working on community-led malaria prevention campaigns and HIV testing and treatments. “There’s no substitute for that level of real world experience,” says the Atlanta native. “It’s one thing to study diseases related to poverty, but it’s another to live with people who have been subject to it for years.”</p>
                     </div>
                     <div class="col-md-5 video-popup">
                       <a data-lity href="https://www.youtube.com/embed/asxw3S3TMQc?autoplay=1&rel=0&amp;showinfo=0&amp"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/video-kenny.jpg' ?>" alt=""></a>
+                      <h4>Kenny Sherr</h4>
+                      <small> Co-Director / Global Health: Metrics and Implementation Science</small>
                       <p class="caption">Implementation science: Learn more about how implementation science is closing the “know-do” gap</p>
                     </div>
                   </div>
@@ -434,7 +437,9 @@
                   </div>
                   <div class="col-md-5 video-popup">
                     <a data-lity href="https://www.youtube.com/embed/Qga5YcHqccM?autoplay=1&rel=0&amp;showinfo=0&amp"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/video-arianna.jpg' ?>" alt=""></a>
-                    <p class="caption">Implementation science: Learn more about how implementation science is closing the “know-do” gap</p>
+                    <h4>Arianna Means</h4>
+                    <small>Research Scientist / DeWorm3</small>
+                    <p class="caption">Prevention and treatment: Learn more about the current treatment and transmission of worms, and DeWorm3’s plan for community-wide efforts to prevent further infections </p>
                   </div>
                 </div>
               
@@ -512,12 +517,14 @@
 
                 <div class="video-popup right-float">
                   <a data-lity href="https://www.youtube.com/embed/5gV6JkXKebA?autoplay=1&rel=0&amp;showinfo=0&amp"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/video-judd.jpg' ?>" alt=""></a>
+                  <h4>Judd Walson</h4>
+                  <small>Principal Investigator / DeWorm3 </small>
                   <p class="caption">DeWorm3 goals: Learn more about the three main objectives of DeWorm3, and the importance of working with the World Health Organization and   Ministries of Health</p>
                 </div>
 
                 <p>Starting in 2017, at the end of the lymphatic filariasis programs in these countries, DeWorm3 will randomly assign communities to either maintain the standard program of only treating preschool- and school-aged children for intestinal worms, or go to a highly intensive treatment plan where they treat everyone in the community twice per year. And they will conduct further implementation science research activities along the way to understand best practices in intervention delivery and opportunities to maximize community participation. In 2020, both types of communities will stop all treatment. Two years later, DeWorm3 will compare the groups and determine whether the intensified treatment program was more successful. If so, they’ll work with policymakers to develop relevant guidelines that could be used to bring the intensified intervention to scale. </p>
     
-                <p>Collaboration is the key to it all, says Means, who will continue working with DeWorm3 post-graduation. “In each country, there’s a really passionate and amazing group of partners who are helping implement this work. It’s really rewarding to be sitting in a room full of people from all over the world who are all working toward the same goal.” </p>
+                <p>Collaboration is the key to it all, says Means, who plans to continue working with DeWorm3 after earning her Ph.D. from the School of Public Health this year. “In each country, there’s a really passionate and amazing group of partners who are helping implement this work. It’s really rewarding to be sitting in a room full of people from all over the world who are all working toward the same goal.” </p>
     
                 <p>The potential impact of DeWorm3’s work for an infection-free world is unparalleled, says Means. “For a parent, just knowing your kid isn’t at risk of contracting an     infection is huge,” she says. “There’s peace of mind in knowing your child can run around barefoot without getting a belly full of worms.”  
                 </p>
