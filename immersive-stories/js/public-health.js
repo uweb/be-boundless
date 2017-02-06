@@ -29,15 +29,6 @@ $(function(){
     .setTween(fade)
     .addTo(controllerPublic);
 
-  //     .add([
-  //       TweenMax.to('#back', 1,      { transform: 'translateY(-30px)', ease: Power0.easeIn }),
-  //       TweenMax.to('#middle', 1,  { transform: 'translateY(16vh)', ease: Power0.easeIn, delay: 0.0 }),
-  //       TweenMax.to('#middle2', 1,  { transform: 'translateY(8vh)', ease: Power0.easeIn, delay: 0.0 }),
-  //       TweenMax.to('#middle3', 1,  { transform: 'translateY(14vh)', ease: Power0.easeIn, delay: 0.0 }),
-  //       // TweenMax.to('#fore', 0.3,    { transform: 'translateY(0)', ease: Power0.easeIn, delay: 0.1 }),
-  //       TweenMax.to('#robot', 1,   { transform: 'translateY(-100px)', ease: Power0.easeIn, delay: 0.3 })
-  //     ])
-
 
     // Accordion action
     document.getElementById('expander').addEventListener('click',function(e){

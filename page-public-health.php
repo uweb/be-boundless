@@ -13,7 +13,7 @@
 
 
   <button id="pause">Pause</button>
-  <video loop muted autoplay poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/header.jpg' ?>" class="fullscreen-bg__video">
+  <video class="media" data-object-fit loop muted autoplay poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/header.jpg' ?>" class="fullscreen-bg__video">
       <!-- <source src="img/street-bw-webm.webm" type="video/webm"> -->
       <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/public-health/header.mp4' ?>" type="video/mp4">
       <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/public-health/header.webm' ?>" type="video/webm">
@@ -410,13 +410,13 @@
      <h3>The current deworming treatment</h3> 
     <div>
       <div>
-        <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/stage-1.png' ?>" alt="">
+        <img width="239px" height="268px" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/stage-1.png' ?>" alt="">
         <p>A pill called albendazole is administered to preschool- and school-aged children once or twice a year </p>
       </div><div>
-        <img class="full" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/stage-2.png' ?>" alt="">
+        <img width="239px" height="268px" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/stage-2.png' ?>" alt="">
         <p>The pill sterilizes eggs, larvae and full-grown worms living in  the child's gut and sapping their nutrients </p>
       </div><div>
-        <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/stage-3.png' ?>" alt="">
+        <img width="239px" height="268px" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/stage-3.png' ?>" alt="">
         <p>The eggs, larvae and full-grown worms are then passed in feces, and the child is rid of the infection  </p>
       </div>
     </div>

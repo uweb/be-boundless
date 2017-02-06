@@ -102,6 +102,7 @@ module.exports = function(grunt) {
               'immersive-stories/js/common.js',
               'immersive-stories/js/public-health.js',
               'immersive-stories/js/lity.js',
+              'immersive-stories/js/objectFitPolyfill.basic.js',
           ],          
           'immersive-stories/js/engineering.min.js': [
               'immersive-stories/js/common.js',
