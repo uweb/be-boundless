@@ -15,8 +15,8 @@
   <button id="pause">Pause</button>
   <video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/header.jpg' ?>" class="fullscreen-bg__video">
       <!-- <source src="img/street-bw-webm.webm" type="video/webm"> -->
-      <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/public-health/header.mp4' ?>" type="video/mp4">
-      <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/public-health/header.webm' ?>" type="video/webm">
+      <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/public-health/header-new.mp4' ?>" type="video/mp4">
+      <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/public-health/header-new.webm' ?>" type="video/webm">
   </video>
 
 
@@ -36,13 +36,8 @@
         <p>stomach aches, interrupted mental and physical development.</p>
       </div>
     </div> 
-
-
   </div>
 
-  <!-- Anemia. 
-  Weakness. 
-  Malaise,   -->
 
   <section class="scrollit read-more">
       <p>Scroll Down</p>

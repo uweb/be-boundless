@@ -87,8 +87,9 @@
         </section
         ><section tabindex="0"  class="section" id="slide4" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg4-v2.jpg">
           <div id="slide4text">
+
             <h2>Transform the student experience</h2>
-            <p><span class="hidden-xs">At the UW, Huskies have unlimited opportunities to engage in education and research with leading faculty and immerse themselves in a diverse and dynamic campus and city. </span>Discover how supporting opportunities like the Portfolio of Possibilities can champion students who become catalysts for positive change.</p>
+            <p><span class="hidden-xs">Our foundation is rooted in serving people and communities near and far. </span>Explore how committing to scholarships and initiatives that support access to excellence for all students can transform the lives of people like UW Tacoma's Tom Rochat, '13.</p>            
             <a href="what-is-possible" data-js="arts" data-title="Transform the student experience" class="uw-btn btn-sm btn-plus story-link">Read story</a> <!-- <a href="http://www.washington.edu/boundless/explore/?utm_source=website&utm_medium=click&utm_campaign=students&utm_term=supporting-the-student-experience#students" class="uw-btn btn-sm">Opportunities</a> -->          
             <div class="related">
               <h3>Related stories</h3>
@@ -99,21 +100,24 @@
         </section><section tabindex="0"  class="section" id="slide5" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg5-v2.jpg">
           <div id="slide5text">
             <h2>Drive the public good</h2>
-            <p><span class="hidden-xs">Our foundation is rooted in serving people and communities near and far. </span>Explore how committing to scholarships and initiatives that support access to excellence for all students can transform the lives of people like UW Tacoma's Tom Rochat, '13.</p>
+            <p><span class="hidden-xs">Our foundation is rooted in serving people and communities near and far. </span>Explore how committing to programs that promote quality care for all patients can transform the future of dentistry in Washington state — and beyond.</p>
             <a href="tacoma-transformation" data-controller='controllerEducation' data-js="tacoma" data-title="Drive the public good" class="uw-btn btn-sm btn-plus story-link">Read story</a> <!-- <a href="http://www.washington.edu/boundless/explore/?utm_source=website&utm_medium=click&utm_campaign=public-good&utm_term=expanding-education#public-good" class="uw-btn btn-sm">Opportunities</a> -->
             <div class="related">
               <h3>Related stories</h3>
               <a href="expanding-education" data-js="education" data-title="Nurturing minds, opening doors" class="arts-thumb story-link"><span>Nurturing minds, opening doors</span></a>
-              <a href="special-care-dentistry" data-js="dentistry" data-title="Special care for healthy smiles" class="arts-thumb story-link"><span>Special care for healthy smiles</span></a>
             </div>
 
           </div>
           <span class="slide5-content"></span>
         </section><section tabindex="0"  class="section" id="slide6" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg6-v2.jpg">
           <div id="slide6text">
-                      <h2>Expand our impact everywhere</h2>
-                      <p>Unearthing solutions to tomorrow’s grand challenges is what drives us. The Institute for Stem Cell and Regenerative Medicine is one example of how investing in UW faculty and research can change &mdash; and save &mdash; lives worldwide.</p>
-            <a href="targeting-cancer" data-js="medicine" data-title="Expand our impact everywhere" class="uw-btn btn-sm btn-plus story-link">Read story</a> <!-- <a href="http://www.washington.edu/boundless/explore/?utm_source=website&utm_medium=click&utm_campaign=impact&utm_term=targeting-cancer#impact" class="uw-btn btn-sm">Opportunities</a> -->
+              <h2>Expand our impact everywhere</h2>
+              <p><span class="hidden-xs">At the UW, Huskies have unlimited opportunities to engage in education and research with leading faculty and immerse themselves in a diverse and dynamic campus and city. </span>Discover how supporting opportunities like the Portfolio of Possibilities can champion students who become catalysts for positive change.</p>            
+              <a href="targeting-cancer" data-js="medicine" data-title="Expand our impact everywhere" class="uw-btn btn-sm btn-plus story-link">Read story</a> 
+              <div class="related">
+                <h3>Related stories</h3>
+                <a href="targeting-cancer" data-js="medicine" data-title="Targeting cancer, precisely" class="medicine-thumb story-link"><span>Targeting cancer, precisely</span></a>
+              </div>
           </div>
           <span class="slide6-content"></span>
         </section><section tabindex="0"  class="section" id="slide7" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg7-v2.jpg">
