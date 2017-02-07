@@ -1,8 +1,7 @@
 
 $(function(){
 
-    var controllerDentistry = new ScrollMagic.Controller(),
-        $windowHeight = $(window).height()
+    var controllerDentistry = new ScrollMagic.Controller();
     
     currentController = controllerDentistry;
 
@@ -32,7 +31,7 @@ $(function(){
     var dentistPara = new ScrollMagic.Scene({
       triggerElement: '#intro-slide',
       triggerHook: 0.1,
-      offset: $('#intro-slide').height() - $windowHeight,
+      offset: 0,
       duration: '120%',
     })
     .setTween(parallaxed)
