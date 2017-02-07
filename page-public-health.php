@@ -13,7 +13,7 @@
 
 
   <button id="pause">Pause</button>
-  <video  muted="" autobuffer="autobuffer" autoplay="" loop="" preload="preload" playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/header.jpg' ?>" class="fullscreen-bg__video">
+  <video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/header.jpg' ?>" class="fullscreen-bg__video">
       <!-- <source src="img/street-bw-webm.webm" type="video/webm"> -->
       <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/public-health/header.mp4' ?>" type="video/mp4">
       <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/public-health/header.webm' ?>" type="video/webm">
@@ -67,7 +67,7 @@
                     <p class="headline-gold center">For two billion people across the planet, these symptoms are part of daily life.</p>
 
                     <p>They’re part of sitting in class, trying to learn. They’re part of going to work, trying to provide. They’re part of living with soil-transmitted helminths (STH) — more commonly known as intestinal worms — inhabiting victims’ bellies, sapping their nutrients, and stunting their physical and cognitive development. </p> 
-                    <p>In countries where the disease is prevalent, soil-transmitted helminths have long been a public health problem and a human rights issue — and the UW School of Public Health’s DeWorm3 project is doing something about it. In partnership with London’s Natural History Museum and funded by the Bill &amp; Melinda Gates Foundation, DeWorm3 is providing the platform for one of the largest implementation science projects in the field to date. Its core mission? To interrupt the transmission of intestinal worms. </p>
+                    <p>In countries where the disease is prevalent, soil-transmitted helminths have long been a public health problem and a human rights issue — and the <a href="http://sph.washington.edu/">UW School of Public Health</a>’s <a href="http://www.nhm.ac.uk/our-science/our-work/sustainability/deworm3.html">DeWorm3 project</a> is doing something about it. In partnership with London’s Natural History Museum and funded by the <a href="http://www.gatesfoundation.org/">Bill &amp; Melinda Gates Foundation</a>, DeWorm3 is providing the platform for one of the largest implementation science projects in the field to date. Its core mission? To interrupt the transmission of intestinal worms. </p>
 
                 </div> 
           </div> 
@@ -79,7 +79,7 @@
    <section class="infographic">
 
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           width="740px" height="500px" viewBox="0 0 740 500" style="enable-background:new 0 0 740 500;" xml:space="preserve">
+           width="740px" height="500px" viewBox="0 0 740 500" style="enable-background:new 0 0 740 500;" loxml:space="preserve">
         <style type="text/css">
         <![CDATA[
           .st0{font-family:'Open Sans';}
@@ -287,7 +287,7 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy transparent">
                   
-                    <p>It’s here in the Department of Global Health, in partnership with the School of Medicine, that the first-ever Ph.D. program in metrics and implementation science is transforming the way people approach population health to improve lives. Implementation science is also key to the UW’s <a href="http://uw.edu/populationhealth">Population Health Initiative</a>, launched in 2016 with the goal of improving human health, environmental resilience and social and economic equity around the world.</p>
+                    <p>It’s here in the <a href="http://globalhealth.washington.edu/">Department of Global Health</a>, in partnership with the <a href="http://www.uwmedicine.org/">School of Medicine</a>, that the first-ever Ph.D. program in metrics and implementation science is transforming the way people approach population health to improve lives. Implementation science is also key to the UW’s <a href="http://uw.edu/populationhealth">Population Health Initiative</a>, launched in 2016 with the goal of improving human health, environmental resilience and social and economic equity around the world.</p>
 
                     <p class="gold-quote headline-gold purple smaller">Implementation science works to equally value voices on the ground, giving as much weight to feedback from community members as it does to local health officials and funders. <b>– Arianna Means</b></p>
 
@@ -417,7 +417,7 @@
         <p>The pill sterilizes eggs, larvae and full-grown worms living in  the child's gut and sapping their nutrients </p>
       </div><div>
         <img width="239px" height="268px" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/stage-3.png' ?>" alt="">
-        <p>The eggs, larvae and full-grown worms are then passed in feces, and the child is rid of the infection  </p>
+        <p>The worms pass through feces. The child is rid of the infection, but is at risk of being re-infected through contaminated water or untreated adults</p>
       </div>
     </div>
 
@@ -491,7 +491,7 @@
                           <p><span>Director /</span> Mozambique Programs, Health Alliance International</p>
                           <p><span>Associate Professor /</span> Global Health</p>
                           <p><span>Adjunct Associate Professor /</span>< Epidemiology/p>
-                          <p><span>Adjunct Associate Professor /</span> Industrial & Systems Engineering</p>
+                          <p><span>Adjunct Associate Professor /</span> Industrial &amp; Systems Engineering</p>
                       </div>
                       <svg class="svg-plus" xmlns="http://www.w3.org/2000/svg" width="50.98" height="50.6" viewBox="0 0 50.98 50.6"><path fill="#B7A57A" d="M46.684 0v46.684H0"/><g fill="#FFF"><path d="M31.374 25.113h1.98v14.502h-1.98z"/><path d="M25.113 31.374h14.503v1.98H25.113z"/></g></svg>
                   </li>
