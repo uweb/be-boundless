@@ -90,7 +90,7 @@
 
             <h2>Transform the student experience</h2>
             <p><span class="hidden-xs">Our foundation is rooted in serving people and communities near and far. </span>Explore how committing to scholarships and initiatives that support access to excellence for all students can transform the lives of people like UW Tacoma's Tom Rochat, '13.</p>            
-            <a href="what-is-possible" data-js="arts" data-title="Transform the student experience" class="uw-btn btn-sm btn-plus story-link">Read story</a> <!-- <a href="http://www.washington.edu/boundless/explore/?utm_source=website&utm_medium=click&utm_campaign=students&utm_term=supporting-the-student-experience#students" class="uw-btn btn-sm">Opportunities</a> -->          
+             <a href="tacoma-transformation" data-controller='controllerTacoma' data-js="tacoma" data-title="Transform the student experience" class="uw-btn btn-sm btn-plus story-link">Read story</a><!-- <a href="http://www.washington.edu/boundless/explore/?utm_source=website&utm_medium=click&utm_campaign=students&utm_term=supporting-the-student-experience#students" class="uw-btn btn-sm">Opportunities</a> -->          
             <div class="related">
               <h3>Related stories</h3>
               <a href="supporting-the-student-experience" data-js="scholarship" data-title="Arts" class="arts-thumb story-link"><span>Unleashing the Husky Experience</span></a>
@@ -101,10 +101,10 @@
           <div id="slide5text">
             <h2>Drive the public good</h2>
             <p><span class="hidden-xs">Our foundation is rooted in serving people and communities near and far. </span>Explore how committing to programs that promote quality care for all patients can transform the future of dentistry in Washington state — and beyond.</p>
-            <a href="tacoma-transformation" data-controller='controllerEducation' data-js="tacoma" data-title="Drive the public good" class="uw-btn btn-sm btn-plus story-link">Read story</a> <!-- <a href="http://www.washington.edu/boundless/explore/?utm_source=website&utm_medium=click&utm_campaign=public-good&utm_term=expanding-education#public-good" class="uw-btn btn-sm">Opportunities</a> -->
+             <a href="special-care-dentistry" data-controller='controllerDentistry' data-js="dentistry" data-title="Drive the public good" class="uw-btn btn-sm btn-plus story-link">Read story</a><!-- <a href="http://www.washington.edu/boundless/explore/?utm_source=website&utm_medium=click&utm_campaign=public-good&utm_term=expanding-education#public-good" class="uw-btn btn-sm">Opportunities</a> -->
             <div class="related">
               <h3>Related stories</h3>
-              <a href="expanding-education" data-js="education" data-title="Nurturing minds, opening doors" class="arts-thumb story-link"><span>Nurturing minds, opening doors</span></a>
+              <a href="expanding-education" data-js="education" data-controller='controllerEducation' data-title="Nurturing minds, opening doors" class="arts-thumb story-link"><span>Nurturing minds, opening doors</span></a>
             </div>
 
           </div>
@@ -113,7 +113,7 @@
           <div id="slide6text">
               <h2>Expand our impact everywhere</h2>
               <p><span class="hidden-xs">At the UW, Huskies have unlimited opportunities to engage in education and research with leading faculty and immerse themselves in a diverse and dynamic campus and city. </span>Discover how supporting opportunities like the Portfolio of Possibilities can champion students who become catalysts for positive change.</p>            
-              <a href="targeting-cancer" data-js="medicine" data-title="Expand our impact everywhere" class="uw-btn btn-sm btn-plus story-link">Read story</a> 
+              <a href="what-is-possible" data-js="arts" data-title="Transform the student experience" class="uw-btn btn-sm btn-plus story-link">Read story</a>
               <div class="related">
                 <h3>Related stories</h3>
                 <a href="targeting-cancer" data-js="medicine" data-title="Targeting cancer, precisely" class="medicine-thumb story-link"><span>Targeting cancer, precisely</span></a>
@@ -124,10 +124,10 @@
           <div id="slide7text">
             <h2>Empower possibility through innovation</h2>
             <p><span class="hidden-xs">Creativity is embedded in our DNA. </span>Learn how contributing to revolutionary people and programs &mdash;  like UW Bothell's diversity-focused Digital Future Lab &mdash;  can lead to inclusive innovation for the benefit of millions.</p>
-            <a href="bothell-gaming" data-js="bothell" data-title="Empower possibility through innovation" class="uw-btn btn-sm btn-plus story-link">Read story</a> <!-- <a href="http://www.washington.edu/boundless/explore/?utm_source=website&utm_medium=click&utm_campaign=innovation&utm_term=inclusive-engineering#innovation" class="uw-btn btn-sm">Opportunities</a> -->
+            <a href="bothell-gaming" data-js="bothell" data-controller='controllerBothell' data-title="Empower possibility through innovation" class="uw-btn btn-sm btn-plus story-link">Read story</a> <!-- <a href="http://www.washington.edu/boundless/explore/?utm_source=website&utm_medium=click&utm_campaign=innovation&utm_term=inclusive-engineering#innovation" class="uw-btn btn-sm">Opportunities</a> -->
             <div class="related">
               <h3>Related stories</h3>
-              <a href="inclusive-engineering" data-js="engineering" data-title="Helping the body heal, feel and move again" class="arts-thumb story-link"><span>Helping the body heal, feel and move again</span></a>
+              <a href="inclusive-engineering" data-js="engineering"  data-controller='controllerEngineering' data-title="Helping the body heal, feel and move again" class="arts-thumb story-link"><span>Helping the body heal, feel and move again</span></a>
             </div>
 
           </div>
