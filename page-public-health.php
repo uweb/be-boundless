@@ -490,7 +490,7 @@
                           <p><span>Co-Director /</span> Global Health: Metrics and Implementation Science</p>
                           <p><span>Director /</span> Mozambique Programs, Health Alliance International</p>
                           <p><span>Associate Professor /</span> Global Health</p>
-                          <p><span>Adjunct Associate Professor /</span>< Epidemiology/p>
+                          <p><span>Adjunct Associate Professor /</span> Epidemiology</p>
                           <p><span>Adjunct Associate Professor /</span> Industrial &amp; Systems Engineering</p>
                       </div>
                       <svg class="svg-plus" xmlns="http://www.w3.org/2000/svg" width="50.98" height="50.6" viewBox="0 0 50.98 50.6"><path fill="#B7A57A" d="M46.684 0v46.684H0"/><g fill="#FFF"><path d="M31.374 25.113h1.98v14.502h-1.98z"/><path d="M25.113 31.374h14.503v1.98H25.113z"/></g></svg>
