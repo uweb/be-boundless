@@ -373,7 +373,7 @@
     <section class="text-block special info-3 marginless">
       <h3>THE LIFE CYCLE OF INTESTINAL WORMS</h3>
       <div>
-        <img alt="Life cycle of intestinal worms"> src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/cycle.png' ?>" alt="">
+        <img alt="Life cycle of intestinal worms" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/cycle.png' ?>" alt="">
         <ul>
           <li>Eggs attach to fruits and vegetables, which often go unwashed before they're eaten (whipworm and roundworm)</li>
           <li>Eggs and larvae make their way to the gut, where they sap nutrients and grow</li>
