@@ -296,7 +296,7 @@
 
       <section class="profile person-1 teacher"><div class="background-profile"><div class="transform">
                     <div class="skew"><div></div></div>
-                    <h2 class="name">MEET DR. PETER CHERUTICH, ’06, ‘15</h2>
+                    <h2 class="name">MEET DR. PETER CHERUTICH, '06, '15</h2>
                     <p class="studies">Learn how the School of Public Health's first implementation science Ph.D. graduate put his education to work to avert 5,000 new HIV infections through pro-condom advertisements and large-scale male circumcision campaigns in his home country of Kenya.</p>
                   </div></div>
             <div style="text-align: center"><div class="boundless-button sm dark"><span><a id="expander" href="http://www.uwmedicine.org/bios/pamela-becker">Learn more about Peter</a></span></div></div>
@@ -439,7 +439,7 @@
                 </div>
               
 
-              <p class="gold-quote headline-gold purple smaller">We’re trying to see what happens if we actually treat the entire community — pre-school-aged children to adults — and compare that to the current standard of only treating kids. <b>– Arianna Means</b></p>
+              <p class="gold-quote headline-gold purple smaller">We’re trying to see what happens if we actually treat the entire community — preschool-aged children to adults — and compare that to the current standard of only treating kids. <b>– Arianna Means</b></p>
 
 
               </div> 
@@ -475,7 +475,7 @@
                           <p><span>Peace Corps Alum</span></p>
                           <p><span>Bachelor of Arts in International Relations and Community Health, Tufts University, ‘09</span></p>
                           <p><span>Master of Public Health in Epidemiology, University of Washington, ‘13</span></p>
-                          <p><span>Ph.D. in Global Health: Metrics and Implementation Science, University of Washington, ‘16</span></p>
+                          <p><span>Ph.D. in Global Health: Metrics and Implementation Science, University of Washington, ‘17</span></p>
                       </div>
                       <svg class="svg-plus" xmlns="http://www.w3.org/2000/svg" width="50.98" height="50.6" viewBox="0 0 50.98 50.6"><path fill="#B7A57A" d="M46.684 0v46.684H0"/><g fill="#FFF"><path d="M31.374 25.113h1.98v14.502h-1.98z"/><path d="M25.113 31.374h14.503v1.98H25.113z"/></g></svg>
                   </li>
