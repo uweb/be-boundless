@@ -299,7 +299,7 @@
                     <h2 class="name">MEET DR. PETER CHERUTICH, '06, '15</h2>
                     <p class="studies">Learn how the School of Public Health's first implementation science Ph.D. graduate put his education to work to avert 5,000 new HIV infections through pro-condom advertisements and large-scale male circumcision campaigns in his home country of Kenya.</p>
                   </div></div>
-            <div style="text-align: center"><div class="boundless-button sm dark"><span><a id="expander" href="http://www.uwmedicine.org/bios/pamela-becker">Learn more about Peter</a></span></div></div>
+            <div style="text-align: center"><div class="boundless-button sm dark"><span><a role="button" id="expander" href="http://www.uwmedicine.org/bios/pamela-becker">Learn more about Peter</a></span></div></div>
       </section>
 
     
@@ -373,7 +373,7 @@
     <section class="text-block special info-3 marginless">
       <h3>THE LIFE CYCLE OF INTESTINAL WORMS</h3>
       <div>
-        <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/cycle.png' ?>" alt="">
+        <img alt="Life cycle of intestinal worms"> src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/cycle.png' ?>" alt="">
         <ul>
           <li>Eggs attach to fruits and vegetables, which often go unwashed before they're eaten (whipworm and roundworm)</li>
           <li>Eggs and larvae make their way to the gut, where they sap nutrients and grow</li>
