@@ -30,6 +30,19 @@ $(function(){
     .addTo(controllerPublic);
 
 
+    // Intro out
+
+    var infoToggle = new ScrollMagic.Scene({
+      //next scene
+        triggerElement: ".info-3",
+        duration: 0,
+        triggerHook: 0.5,
+        reverse: true
+    })
+    .setClassToggle(".info-3", 'active')
+    .addTo(controllerPublic);
+
+
     // Accordion action
     document.getElementById('expander').addEventListener('click',function(e){
       e.preventDefault();

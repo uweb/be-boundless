@@ -570,15 +570,104 @@ p {
 
 // Infographic section
 
+@-moz-keyframes bubble{
+    0%{     -moz-transform:scale(.5)    }
+    85%{    -moz-transform:scale(1.1)   }
+    100%{   -moz-transform:scale(1)     }
+}
+@-webkit-keyframes bubble{
+    0%{     -webkit-transform:scale(.5)  }
+    85%{    -webkit-transform:scale(1.1) }
+    100%{   -webkit-transform:scale(1)   }
+}
+
+@keyframes bubble{
+    0%{     -webkit-transform:scale(.5)  }
+    85%{    -webkit-transform:scale(1.1) }
+    100%{   -webkit-transform:scale(1)   }
+}
+
+@-moz-keyframes rotate{
+    0%{-moz-transform:rotate(0deg)}
+    100%{-moz-transform:rotate(360deg)}
+}
+@-webkit-keyframes rotate{
+    0%{-webkit-transform:rotate(0deg)}
+    100%{-webkit-transform:rotate(360deg)}
+}
+@keyframes rotate{
+    0%{transform:rotate(0deg)}
+    100%{transform:rotate(360deg)}
+}
+
+
 .info-3 {
     background-image: url("@{public}/sprinkles.jpg");
     padding: 40px 0;
+    .hide-small {
+        display: none;
+    }
+
     .background-cover(cover);
-    div {
+    & > div {
         position: relative;
         width: 100%;
         margin: 0 auto;
             width: 80%;
+    }
+    & > div > img {
+        width: 100%;
+        position: relative;
+        &.circle {
+            position: absolute;
+            .animation(rotate 25s infinite linear);
+        }
+    }
+    &.active {
+        span {
+            img {
+                .animation(bubble 0.3s .1s ease-out forwards);
+            }
+            div:nth-child(1) img {
+            }
+            div:nth-child(2) img {
+                animation-delay: .3s;
+            }
+            div:nth-child(3) img {
+                animation-delay: .5s;
+            }
+        }
+        // .animation(swing 1s infinite ease-in-out .1s);
+    }
+    span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        img {
+            .scale(.5,.5);
+        }
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 22%;
+        }
+        div:nth-child(1) {
+            margin-top: -50%;
+            margin-left: -16%;
+        }   
+        div:nth-child(2) {
+            margin-top: -39%;
+            margin-left: 15%;
+            width: 28%;
+        }   
+        div:nth-child(3) {
+            margin-top: 2%;
+            margin-left: 20%;
+            width: 19%;
+        }   
     }
     ul {
         li {
@@ -633,11 +722,17 @@ p {
     @media @tablet-portrait-up { }      //  (min-width: 600px) 
     @media @tablet-portait-only { }     //  (min-width: 600px) and (max-width: 899px) 
     @media @tablet-landscape-up { 
-
+        .hide-large {
+            display: none;
+        }
+        .hide-small {
+            display: block;
+        }
         div {
             width: 50%;
-
+            margin-top: 20px;
         }
+
         ul {
             position: absolute;
             top: 0;
