@@ -1216,6 +1216,7 @@ div.boundless-button span a#expander:after {
     a {
         position: relative;
         display: inline-block;
+
         &:after {
             content: "";
             position: absolute;
@@ -1236,6 +1237,10 @@ div.boundless-button span a#expander:after {
             &:after {
                 .scale(1.1,1.1);
             }
+        }
+        &:focus,
+        &:active {
+            outline: 10px solid @lightgold;
         }
     }
     @media @tablet-landscape-up { 

@@ -24,7 +24,7 @@
     <div id="slide-0">
       <h1>Bridging the <span>“know-do” gap</span></h1>  
       <hr> 
-      <p>Home to the world’s first Ph.D. program in implementation science, the School of Public Health’s DeWorm3 project is turning research into action to interrupt the transmission of parasitic worms in developing countries.</p>     
+      <p>Home to the world’s first Ph.D. program in implementation science, the School of Public Health is helping turn research into action to interrupt the transmission of parasitic worms in developing countries.</p>     
     </div>            
     <div class="slides">
       <div id="slide-1"><span><p>Anemia.</p></span></div>            
