@@ -62,13 +62,12 @@
                     <p class="headline-gold center">For two billion people across the planet, these symptoms are part of daily life.</p>
 
                     <p>They’re part of sitting in class, trying to learn. They’re part of going to work, trying to provide. They’re part of living with soil-transmitted helminths (STH) — more commonly known as intestinal worms — inhabiting victims’ bellies, sapping their nutrients, and stunting their physical and cognitive development. </p> 
-                    <p>In countries where the disease is prevalent, soil-transmitted helminths have long been a public health problem and a human rights issue — and the <a href="http://sph.washington.edu/">UW School of Public Health</a>’s <a href="http://www.nhm.ac.uk/our-science/our-work/sustainability/deworm3.html">DeWorm3 project</a> is doing something about it. In partnership with London’s Natural History Museum and funded by the <a href="http://www.gatesfoundation.org/">Bill &amp; Melinda Gates Foundation</a>, DeWorm3 is providing the platform for one of the largest implementation science projects in the field to date. Its core mission? To interrupt the transmission of intestinal worms. </p>
+                    <p>In countries where the disease is prevalent, soil-transmitted helminths have long been a public health problem and a human rights issue — and the <a href="http://sph.washington.edu/">UW School of Public Health</a> is doing something about it. Researchers are playing a leading role in <a href="http://www.nhm.ac.uk/our-science/our-work/sustainability/deworm3.html">DeWorm3</a>, a project coordinated by the Natural History Museum in London and funded by the <a href="http://www.gatesfoundation.org/">Bill &amp; Melinda Gates Foundation</a>. DeWorm3 is providing the platform for one of the largest implementation science projects in the field to date. Its core mission? To interrupt the transmission of intestinal worms.</p>
 
                 </div> 
           </div> 
         </div>   
       </section>
-
 
 
    <section class="infographic">
