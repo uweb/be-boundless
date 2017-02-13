@@ -334,7 +334,7 @@
                       <p>Means, a Ph.D. candidate in the School of Public Health and former Gates Foundation research analyst, came to the UW to earn her master’s in epidemiology after serving in the Peace Corps. As a Peace Corps volunteer, she was stationed in rural Zambia, working on community-led malaria prevention campaigns and HIV testing and treatments. “There’s no substitute for that level of real world experience,” says the Atlanta native. “It’s one thing to study diseases related to poverty, but it’s another to live with people who have been subject to it for years.”</p>
                     </div>
                     <div class="col-md-5 video-popup">
-                      <a data-lity href="https://www.youtube.com/embed/asxw3S3TMQc?autoplay=1&rel=0&amp;showinfo=0&amp"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/video-kenny.jpg' ?>" alt=""></a>
+                      <a data-lity href="https://www.youtube.com/embed/asxw3S3TMQc?autoplay=1&rel=0&showinfo=0"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/video-kenny.jpg' ?>" alt=""></a>
                       <h4>Kenny Sherr</h4>
                       <small> Co-Director / Global Health: Metrics and Implementation Science</small>
                       <p class="caption">Implementation science: Learn more about how implementation science is closing the “know-do” gap</p>
@@ -437,7 +437,7 @@
 
                   </div>
                   <div class="col-md-5 video-popup">
-                    <a data-lity href="https://www.youtube.com/embed/Qga5YcHqccM?autoplay=1&rel=0&amp;showinfo=0&amp"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/video-arianna.jpg' ?>" alt=""></a>
+                    <a data-lity href="https://www.youtube.com/embed/Qga5YcHqccM?autoplay=1&rel=0&showinfo=0"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/video-arianna.jpg' ?>" alt=""></a>
                     <h4>Arianna Means</h4>
                     <small>Research Scientist / DeWorm3</small>
                     <p class="caption">Prevention and treatment: Learn more about the current treatment and transmission of worms, and DeWorm3’s plan for community-wide efforts to prevent further infections </p>
@@ -517,7 +517,7 @@
               <div class="col-md-10 col-md-offset-1 copy marginless transparent reduced-pad">
 
                 <div class="video-popup right-float">
-                  <a data-lity href="https://www.youtube.com/embed/5gV6JkXKebA?autoplay=1&rel=0&amp;showinfo=0&amp"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/video-judd.jpg' ?>" alt=""></a>
+                  <a data-lity href="https://www.youtube.com/embed/5gV6JkXKebA?autoplay=1&rel=0&showinfo=0"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/video-judd.jpg' ?>" alt=""></a>
                   <h4>Judd Walson</h4>
                   <small>Principal Investigator / DeWorm3 </small>
                   <p class="caption">DeWorm3 goals: Learn more about the three main objectives of DeWorm3, and the importance of working with the World Health Organization and   Ministries of Health</p>
