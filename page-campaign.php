@@ -100,7 +100,7 @@
         </section><section tabindex="0"  class="section" id="slide5" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg5-v2.jpg">
           <div id="slide5text">
             <h2>Drive the public good</h2>
-            <p>Through cutting-edge curriculum in special care dentistry, the UW is working to ensure all patients receive quality dental care.</p>
+            <p>Learn how supporting cutting-edge curriculum in special care dentistry can ensure all patients receive quality dental care.</p>
              <a href="special-care-dentistry" data-controller='controllerDentistry' data-js="dentistry" data-title="Drive the public good" class="uw-btn btn-sm btn-plus story-link">Read story</a><!-- <a href="http://www.washington.edu/boundless/explore/?utm_source=website&utm_medium=click&utm_campaign=public-good&utm_term=expanding-education#public-good" class="uw-btn btn-sm">Opportunities</a> -->
             <div class="related">
               <h3>Related stories</h3>
@@ -123,7 +123,7 @@
         </section><section tabindex="0"  class="section" id="slide7" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg7-v2.jpg">
           <div id="slide7text">
             <h2>Empower possibility through innovation</h2>
-            <p>Revolutionary people and programs &mdash; like UW Bothell's diversity-focused Digital Future Lab &mdash; can lead to inclusive innovation for the benefit of millions.</p>
+            <p>Explore how your support of revolutionary people and programs &mdash; like UW Bothell's diversity-focused Digital Future Lab &mdash; can lead to inclusive innovation for the benefit of millions.</p>
             <a href="bothell-gaming" data-js="bothell" data-controller='controllerBothell' data-title="Empower possibility through innovation" class="uw-btn btn-sm btn-plus story-link">Read story</a> <!-- <a href="http://www.washington.edu/boundless/explore/?utm_source=website&utm_medium=click&utm_campaign=innovation&utm_term=inclusive-engineering#innovation" class="uw-btn btn-sm">Opportunities</a> -->
             <div class="related">
               <h3>Related stories</h3>
