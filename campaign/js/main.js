@@ -276,15 +276,17 @@ $(function(){
 		// sceneToggle.addIndicators()
 		sceneToggle.addTo(controllerCampaign);
 		sceneToggle.setClassToggle(this, 'activeSection');
-		sceneToggle.on('start', function(){
-			// index + num is the number of slides to look ahead. 1 is only one slide ahead.
-			var sectionIndex = section[index + 1]
+		// sceneToggle.on('start', function(){
+		// 	// index + num is the number of slides to look ahead. 1 is only one slide ahead.
+		// 	var sectionIndex = section[index + 1]
 
-			if (sectionIndex && sectionIndex.style.backgroundImage.length === 0) {
-				// Set the background 2 slides upstream
-				sectionIndex.style.backgroundImage = 'url(' + sectionIndex.getAttribute('data-img') + ')' || '';
-			}			
-		})		
+		// 	if (sectionIndex && sectionIndex.style.backgroundImage.length === 0) {
+		// 		// Set the background 2 slides upstream
+		// 		setTimeout(function(){
+		// 			sectionIndex.style.backgroundImage = 'url(' + sectionIndex.getAttribute('data-img') + ')' || '';
+		// 		},2000)
+		// 	}			
+		// })		
 	})
 
 	// $('section div').each(function(){
