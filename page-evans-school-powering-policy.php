@@ -184,7 +184,7 @@
                     
                     <h2 class="slant"><span><span>Impact</span></span> abroad</h2>
 
-                    <p><b>The Evans School Policy Analysis and Research Group (EPAR)</b></p>
+                    <p class="bolder"><b>The Evans School Policy Analysis and Research Group (EPAR)</b></p>
 
                     <p>The Evans School is a policy partner with impact far beyond the city of Seattle. By partnering with the Bill & Melinda Gates Foundation, students at the Evans School are able to reach and influence global communities.</p>
                     <p>Reducing poverty around the world is graduate student Matthew Fowle’s dream. As a student researcher with EPAR, he’s looking for evidence-based solutions to the problem.</p>
