@@ -600,7 +600,7 @@
       
 
 
-      <section class="text-block">
+      <section class="text-block" id="slideshow">
         <div class="container">
             <div class="row">
               <div class="col-md-10 col-md-offset-1 copy">    
@@ -609,7 +609,37 @@
                   
                   <p>Brown, who just completed his master’s in social work at the UW, and Wolf have also deepened their organization’s focus on mental health. Each of Growing Veterans’ nine employees has completed a peer-support training program designed to tackle veteran isolation and prevent suicide. </p>
                   
-                  <?php echo do_shortcode('[slideshow id=3197 simple=true]');?>
+                  <div id="eng-slideshow" class="engineering-slideshow">
+                  
+                    <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/farmer-brown/slide-6.jpg' ?>" alt="">
+                      <p>The Skagit Valley’s sweeping views are just one of the many intangible rewards for a day of hard work.</p>
+                    </div>
+
+                    <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/farmer-brown/slide-1.jpg' ?>" alt="">
+                      <p>The Growing Veterans farmers market stand at the VA Hospital in Seattle.</p>
+                    </div>
+                  
+                    <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/farmer-brown/slide-2.jpg' ?>" alt="">
+                      <p>Nurturing starts in greenhouses during the early spring helps Growing Veterans get a jumpstart on the growing season.</p>
+                    </div>
+                  
+                    <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/farmer-brown/slide-3.jpg' ?>" alt="">
+                      <p>After calming down the bees with smoke, workers check on the hives at the Skagit Valley farm.</p>
+                    </div>
+                  
+                    <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/farmer-brown/slide-4.jpg' ?>" alt="">
+                      <p>Employees and volunteers get their hands dirty at the Skagit Valley farm.</p>
+                    </div>
+
+                    <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/farmer-brown/slide-5.jpg' ?>" alt="">
+                      <p>Growing Veterans Co-Founder and President Chris Brown, ’16.</p>
+                    </div>
+
+                    
+
+
+                  </div>
+
 
                   <p>And beyond providing life-sustaining social support at its farms, Growing Veterans helps people connect with as many meaningful opportunities as possible: through other local and national veteran organizations, business and community networking, and educational projects.</p>
                   

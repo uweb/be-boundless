@@ -67,7 +67,7 @@
           <!-- 50% -->
           <div class="col-b">
               <p>Do you think that the minimum wage law will have an impact on your life in some way?</p>
-              <div><quote><span>&ldquo;</span>Hopefully. I hope the minimum wage law also incentivizes companies to pay more even if they are already paying $15, just to maintain those pay structures [for other employees.]<span>&rdquo;</span></quote></div>
+              <div><blockquote><span>&ldquo;</span>Hopefully. I hope the minimum wage law also incentivizes companies to pay more even if they are already paying $15, just to maintain those pay structures [for other employees.]<span>&rdquo;</span></blockquote></div>
               <small><b>Nikki Something</b> / Sed posuere consectetur est at lobortis.</small>
           </div>
 
@@ -86,7 +86,7 @@
           <!-- 50% -->
           <div class="col-b">
               <p>Do you think that the minimum wage law will have an impact on your life in some way?</p>
-              <div><quote><span>&ldquo;</span>Hopefully. I hope the minimum wage law also incentivizes companies to pay more even if they are already paying $15, just to maintain those pay structures [for other employees.]<span>&rdquo;</span></quote></div>
+              <div><blockquote><span>&ldquo;</span>Hopefully. I hope the minimum wage law also incentivizes companies to pay more even if they are already paying $15, just to maintain those pay structures [for other employees.]<span>&rdquo;</span></blockquote></div>
               <small><b>Lisa Ulrich</b> / Assistant Retail Manager </small>
           </div>
 
@@ -125,7 +125,7 @@
           <!-- 50% -->
           <div class="col-b">
               <p>What are your thoughts on the minimum wage law?</p>
-              <div><quote><span>&ldquo;</span>Working in the restaurant industry used to be an entry-level job. But circumstances have changed. Now, you have adults working those jobs trying to make enough money to have a reasonable life. That needs to be considered whether people support a $15 minimum wage or are against it. <span>&rdquo;</span></quote></div>
+              <div><blockquote><span>&ldquo;</span>Working in the restaurant industry used to be an entry-level job. But circumstances have changed. Now, you have adults working those jobs trying to make enough money to have a reasonable life. That needs to be considered whether people support a $15 minimum wage or are against it. <span>&rdquo;</span></blockquote></div>
               <small><b>Daisley Gordon</b> / Owner and Executive Chef</small>
           </div>
 
@@ -133,7 +133,59 @@
       </section>
 
       
+      <section class="text-block abroad">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 copy reduced-pad">
+                    
+                    <h2 class="slant"><span><span>Impact</span></span> abroad</h2>
 
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+
+                    <p>Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                </div> 
+          </div> 
+        </div>   
+
+        <div class="featured-full">
+          <div><img alt="Photo of Hilary Wething" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/evans-school/cash.jpg' ?>"></div>
+          <div>
+            <blockquote><span>&ldquo;</span>I remember watching mothers boiling murky water to make it safe for their families to drink, he says <span>&rdquo;</span></blockquote>
+            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper.</p>
+          </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 copy reduced-pad">
+                    
+
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+
+                    <p>Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                    <div class="wide border"><img alt="Photo of Hilary Wething" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/evans-school/matthew.jpg' ?>"><p><span><b>Hilary Wething</b> / Research Assistant / City of Seattle Minimum Wage Study</span></p></div>
+
+
+                    <p>Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                    <p>Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                    <p>Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                    <img alt="Photo of Hilary Wething" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/evans-school/van.jpg' ?>">
+
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+
+
+                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui.</p>
+
+                    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                </div> 
+          </div> 
+        </div>   
+      </section>
   
 
 

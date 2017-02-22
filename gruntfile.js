@@ -77,6 +77,7 @@ module.exports = function(grunt) {
           'immersive-stories/js/common.min.js': ['immersive-stories/js/common.js'],
           'immersive-stories/js/farmer-brown.min.js': [
             'immersive-stories/js/farmer-brown.js',
+            'immersive-stories/js/slick.js',
             'immersive-stories/js/common.js'
           ],
           'immersive-stories/js/education.min.js': [
