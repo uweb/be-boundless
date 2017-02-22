@@ -133,7 +133,6 @@ $(function() {
 	   triggerHook: 1,
 	 })
 	 .on("enter", function(){
-	 	alert('hi')
 	   $('.engineering-slideshow').slick({
 	     lazyLoad: 'ondemand',
 	     useTransform: true,
