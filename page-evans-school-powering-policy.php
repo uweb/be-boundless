@@ -186,7 +186,7 @@
 
                     <p class="bolder"><b>The Evans School Policy Analysis &amp; Research Group (EPAR)</b></p>
 
-                    <p>The Evans School is a policy partner with impact far beyond the city of Seattle. With support from the Bill &amp; Melinda Gates Foundation, students at the Evans School are able to reach and influence global communities.</p>
+                    <p>The Evans School is a policy partner with impact far beyond the city of Seattle. By partnering with local and international development organizations, students at the Evans School are able to reach and influence global communities.</p>
 
                     <p>Reducing poverty around the world is graduate student Matthew Fowle’s dream. As a student researcher with the Evans School Policy Analysis &amp; Research Group (EPAR), he's looking for evidence-based solutions to the problem.</p>
 
@@ -213,7 +213,9 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy reduced-pad">
 
-                    <p>EPAR is led by C. Leigh Anderson, the Marc Lindenberg Professor for Humanitarian Action, International Development, Global Citizenship, and co-principal investigator Professor Travis Reynolds (Ph.D. '11), an Evans School alumnus. EPAR, established in 2008, is comprised of 15 graduate research assistants and a network of other UW faculty. The group's mission is to conduct objective research and analysis to help inform international stakeholders who tackle some of the world’s most complex and pressing financial, agricultural, public health and environmental challenges.</p>
+                <p>With support from the Bill & Melinda Gates Foundation, EPAR was established in 2008 by C. Leigh Anderson, the Marc Lindenberg Professor for Humanitarian Action, International Development, and Global Citizenship at the Evans School.</p>
+
+                <p>Led by Anderson and co-principal investigator Professor Travis Reynolds, ’11, an Evans School alumnus, EPAR is comprised of 15 graduate research assistants and a network of other UW faculty. The group's mission is to conduct objective research and analysis to help inform international stakeholders who tackle some of the world’s most complex and pressing financial, agricultural, public health and environmental challenges.</p>
 
                     <div class="wide border"><img alt="Photo of Hilary Wething" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/evans-school/matthew.jpg' ?>"><p><span><b>Matthew Fowle</b> / Research Assistant / Evans School Policy Analysis &amp; Research Group</span></p></div>
                      
