@@ -128,7 +128,7 @@
 
       <section class="mosaic campagne" id="profile-3">
         <div>
-          <p>Bike works</p>
+          <p>Cafe Campagne</p>
         </div>
         <div>
           <!-- 100% -->
