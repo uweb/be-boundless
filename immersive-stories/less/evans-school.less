@@ -145,11 +145,6 @@ p {
 .intro {
     .background-cover(cover);
     background-position: center top;
-    display: flex;
-    display: -webkit-flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
     height: 103vh;
     width: 100vw;
     background-color: black;
@@ -207,6 +202,11 @@ p {
     }
     @media @phone-only { 
         background-image: url("@{evans}/intro-tablet.jpg");
+        display: flex;
+        display: -webkit-flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
         #slide {
             h1 {
                 font-size: 22px;
@@ -232,15 +232,20 @@ p {
     @media @tablet-portait-only { 
         background-image: url("@{evans}/intro-tablet.jpg");
         background-attachment:fixed;
+        display: flex;
+        display: -webkit-flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
         #slide {
             h1 {
-                font-size: 51px;
+                font-size: 3.4vw;
                 margin-left: 10%;
                 margin-right: 10%;
             }
             p {
                 line-height: 1.5;
-                font-size: 17px;
+                font-size: 15px;
             }
         }
         a.read-more {
@@ -262,7 +267,11 @@ p {
             bottom: auto;
         }
         #slide {
-            max-width: 45%;
+            width: 100%;
+            padding: 0 30%;
+            position: absolute;
+            top: 50%;
+            margin-top: -220px;
         }
 
     }     //  (min-width: 900px)
@@ -512,6 +521,7 @@ div.boundless-button span a#expander:after {
 
 .mosaic {
     display: flex;
+    display: -ms-flexbox;
     position: relative;
     &.bike {
         & > div:nth-child(1) {
@@ -619,6 +629,7 @@ div.boundless-button span a#expander:after {
                 overflow: hidden;
                 &:nth-of-type(2) {
                     display: flex;
+                    display: -ms-flexbox;
                     flex-grow: 1;
                     flex-direction: column;
                 }
@@ -725,7 +736,9 @@ div.boundless-button span a#expander:after {
         &.georgetown {
             & > div:nth-child(2) {
                 display: flex;
+                display: -ms-flexbox;
                 flex-direction: column;
+                -ms-flex-direction: column;
                 div.col-a {
                     order: 1
                 }
@@ -785,7 +798,9 @@ div.boundless-button span a#expander:after {
         &.georgetown {
             & > div:nth-child(2) {
                 display: flex;
+                display: -ms-flexbox;
                 flex-direction: column;
+                -ms-flex-direction: column;
                 div.col-a {
                     order: 1
                 }
@@ -813,6 +828,7 @@ div.boundless-button span a#expander:after {
             }
             div.col-a {
                 display: flex;
+                display: -ms-flexbox;
                 border-bottom: 10px solid white;
                 &:after {
                 }
@@ -856,8 +872,10 @@ div.boundless-button span a#expander:after {
         }
         & > div:nth-child(2) {
             width: 90%;
-            display: flex;
+            display: flex;           
+            display: -ms-flexbox;
             flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
             .background-cover(cover);
             & > div:nth-child(1) {
                 background: url('@{evans}/lines.png') 0 0;
@@ -898,7 +916,9 @@ div.boundless-button span a#expander:after {
                 width: 50%;
                 position: relative;
                 flex-direction: column;
+                -ms-flex-direction: column;
                 display: flex;
+                display: -ms-flex;
                 video {
                     min-height: 200px;
                 }
@@ -1100,6 +1120,7 @@ div.boundless-button span a#expander:after {
     // @media @tablet-portait-only { }     //  (min-width: 600px) and (max-width: 899px) 
     @media @tablet-landscape-up {  
         display: flex;
+        display: -ms-flexbox;
         & > div:nth-of-type(1) {
             width: 50%;
             height: auto;
@@ -1109,7 +1130,9 @@ div.boundless-button span a#expander:after {
             padding: 0 50px;
             width: 45%;
             display: flex;
+            display: -ms-flexbox;
             flex-direction: column;
+            -ms-flex-direction: column;
             justify-content: center;
         }
         blockquote {
@@ -1124,6 +1147,11 @@ div.boundless-button span a#expander:after {
 .abroad {
     overflow: hidden;
     position: relative;
+    .container,
+    .featured-full {
+        position: relative;
+        z-index: 1
+    }
     &:before {
         content: '';
         display: block;
@@ -1135,7 +1163,7 @@ div.boundless-button span a#expander:after {
         position: absolute;
         right: 0;
         top: 40px;
-        z-index: -1;
+        z-index: 0;
     }
     @media @phone-only { 
         content: '';

@@ -57,6 +57,7 @@ $(function(){
       $this.toggleClass('paused');
     });
 
+    // flexibility(document.getElementById('intro-vid'));
 
 })
 
