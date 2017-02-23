@@ -75,7 +75,7 @@
           <div class="col-a">
             <div><img alt="Nikki McThewsonw working on a bike" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/evans-school/bike-works-woman.jpg' ?>"></div>
               <div class="content pause-enabled">
-                <video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/  public-health/header.jpg' ?>" class="fullscreen-bg__video">
+                <video  autoplay loop muted playsinline class="media" poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/  public-health/header.jpg' ?>" class="fullscreen-bg__video">
                   <!-- <source src="img/street-bw-webm.webm" type="video/webm"> -->
                   <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/evans-school/BIKEWORKS_609.mp4' ?>" type="video/mp4">
                   <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/public-health/header-new.webm' ?>" type="video/webm">
@@ -138,7 +138,7 @@
           <div class="col-a">
             <div><img alt="Daisley Gordon standing in restaurant" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/evans-school/campagne-man.jpg' ?>"></div>
             <div class="content pause-enabled">
-              <video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/  header.jpg' ?>" class="fullscreen-bg__video">
+              <video  autoplay loop muted playsinline class="media" poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/  header.jpg' ?>" class="fullscreen-bg__video">
                   <!-- <source src="img/street-bw-webm.webm" type="video/webm"> -->
                   <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/evans-school/CAMPANGE_609.mp4' ?>" type="video/mp4">
                   <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/public-health/header-new.webm' ?>" type="video/webm">
