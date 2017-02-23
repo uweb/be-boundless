@@ -114,7 +114,7 @@
           <div class="col-a">
             <div><img alt="Lisa Ulrich standing by brewing vats" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/evans-school/georgetown-woman.jpg' ?>"></div>
             <div class="content pause-enabled">
-              <video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/  header.jpg' ?>" class="fullscreen-bg__video">
+              <video  autoplay loop muted playsinline class="media" poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/  header.jpg' ?>" class="fullscreen-bg__video">
                   <!-- <source src="img/street-bw-webm.webm" type="video/webm"> -->
                   <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/evans-school/GEORGETOWN_609.mp4' ?>" type="video/mp4">
                   <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/public-health/header-new.webm' ?>" type="video/webm">
@@ -238,7 +238,7 @@
                   
                   <p>In just the eight years since EPAR has been in operation, Anderson has seen the immense benefit of the EPAR experience to students’ careers. “Combined with their Evans School professional training, this makes them phenomenal policy researchers. They learn great technical tools for finding, analyzing and communicating information; they learn from each other; and they push themselves beyond the threshold of what's considered 'quality' work," she says. "They get hired very quickly after they graduate."</p>
 
-                  <iframe width="1280" height="720" src="https://www.youtube.com/embed/QI50yL8rAIU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                  <iframe width="1280" height="720" src="https://www.youtube.com/embed/Mz-NPAq924g?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                   <small class="video-caption">Learn more about how the Evans School is impacting communities around the world through its partnerships with international development organizations. </small>
 
                   <p>EPAR alumni have taken up positions with global development organizations such as USAID, the Center for Global Development, the Research Triangle Institute and PATH.</p>

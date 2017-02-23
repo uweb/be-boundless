@@ -209,7 +209,7 @@ p {
         justify-content: center;
         #slide {
             h1 {
-                font-size: 22px;
+                font-size: 6vh;
                 margin-top: 25vh;
             }
             p {
@@ -299,7 +299,6 @@ p {
             top: calc(~"100vh - 55px");
             bottom: auto;
         }
-
     }
 
     /* ----------- iPhone 5 and 5S Portrait ----------- */
@@ -313,6 +312,7 @@ p {
         h1 {
             margin-left: 10%;
             margin-right: 10%;
+            font-size: 3
         }
     }
     
@@ -1166,11 +1166,13 @@ div.boundless-button span a#expander:after {
         z-index: 0;
     }
     @media @phone-only { 
-        content: '';
-        display: block;
-        width: 100%;
-        opacity: .7;
-        top: 0;
+        &:before {
+            content: '';
+            display: block;
+            width: 100%;
+            opacity: .7;
+            top: 0;
+        }    
     } //  (max-width: 599px)   
 }
 // Remove some of the white space padding per edits
