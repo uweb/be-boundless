@@ -186,10 +186,14 @@
 
                     <p class="bolder"><b>The Evans School Policy Analysis &amp; Research Group (EPAR)</b></p>
 
-                    <p>The Evans School is a policy partner with impact far beyond the city of Seattle. By partnering with the Bill &amp; Melinda Gates Foundation, students at the Evans School are able to reach and influence global communities.</p>
+                    <p>The Evans School is a policy partner with impact far beyond the city of Seattle. With support from the Bill &amp; Melinda Gates Foundation, students at the Evans School are able to reach and influence global communities.</p>
+
                     <p>Reducing poverty around the world is graduate student Matthew Fowle’s dream. As a student researcher with the Evans School Policy Analysis &amp; Research Group (EPAR), he's looking for evidence-based solutions to the problem.</p>
+
                     <p>Fowle, an M.P.A. candidate at the Evans School, was fairly young when he first decided to work for a more equitable world. He grew up in the English countryside. His mother was born in a small town in Southern Malaysia. He recalls travelling with her to visit his Malaysia relatives.</p>
+                    
                     <p>“I remember watching mothers boiling murky water to make it safe for their families to drink,” he says. “I started to question the reasons for poverty and to grapple with the inequity between my living conditions in England and the living conditions in my mother's hometown.” This led him to develop a commitment to work on behalf of people without access to safe water, shelter, adequate nutrition or formal education.</p>
+                    
                     <p> He went on to study evidence-based social intervention and policy evaluation at the University of Oxford, which intensified his commitment to equity. “I became determined to find evidence-based solutions that would more effectively reduce poverty.” </p>
                     
                     <p>That desire led him to the Evans School, to learn how to turn research into action. </p>
@@ -210,7 +214,7 @@
                 <div class="col-md-10 col-md-offset-1 copy reduced-pad">
                     
 
-                    <p>In partnership with the Bill &amp; Melinda Gates Foundation, EPAR was established in 2008 by C. Leigh Anderson, the Marc Lindenberg Professor for Humanitarian Action, International Development, and Global Citizenship at the Evans School. </p>
+                    <p>With support from the Bill &amp; Melinda Gates Foundation, EPAR was established in 2008 by C. Leigh Anderson, the Marc Lindenberg Professor for Humanitarian Action, International Development, and Global Citizenship at the Evans School. </p>
                     <p>Led by Anderson and co-principal investigator Professor Travis Reynolds, ’11, an Evans School alumnus, EPAR is comprised of 15 graduate research assistants and a network of other UW faculty. The group's mission is to conduct objective research and analysis to help inform international stakeholders who tackle some of the world’s most complex and pressing financial, agricultural, public health and environmental challenges.</p>
 
 
@@ -235,7 +239,7 @@
                   <p>In just the eight years since EPAR has been in operation, Anderson has seen the immense benefit of the EPAR experience to students’ careers. “Combined with their Evans School professional training, this makes them phenomenal policy researchers. They learn great technical tools for finding, analyzing and communicating information; they learn from each other; and they push themselves beyond the threshold of what's considered 'quality' work," she says. "They get hired very quickly after they graduate."</p>
 
                   <iframe width="1280" height="720" src="https://www.youtube.com/embed/QI50yL8rAIU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                  <small class="video-caption">Learn more about how the Evans School is impacting communities around the world through its partnership with the Bill &amp; Melinda Gates Foundation. </small>
+                  <small class="video-caption">Learn more about how the Evans School is impacting communities around the world through its partnerships with international development organizations. </small>
 
                   <p>EPAR alumni have taken up positions with global development organizations such as USAID, the Center for Global Development, the Research Triangle Institute and PATH.</p>
                   
