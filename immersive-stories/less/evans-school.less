@@ -39,6 +39,7 @@ p {
 
 // Namespace to prevent bleeding into uw.edu/boundless/ when popped up
 #immersive-body {
+    overflow: hidden;
     h1, h2, h3, h4, h5 {
         font-family: @headline;
         font-weight: @ultra;
@@ -146,6 +147,8 @@ p {
     background-attachment:fixed;
     background-position: center top;
     display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
     height: 103vh;
@@ -204,12 +207,16 @@ p {
         }
     }
     @media @phone-only { 
-
+        background-image: url("@{evans}/intro-tablet.jpg");
         #slide {
+            h1 {
+                font-size: 22px;
+                margin-top: 25vh;
+            }
             p {
                 max-width: 85%;
-                line-height: 1.5;
-                font-size: 14px;
+                line-height: 1.4;
+                font-size: 12px;
             }
         }
         video {
@@ -224,10 +231,17 @@ p {
 
     }      //  (min-width: 600px) 
     @media @tablet-portait-only { 
+        background-image: url("@{evans}/intro-tablet.jpg");
+
         #slide {
+            h1 {
+                font-size: 51px;
+                margin-left: 10%;
+                margin-right: 10%;
+            }
             p {
                 line-height: 1.5;
-                font-size: 14px;
+                font-size: 17px;
             }
         }
         a.read-more {
@@ -253,22 +267,56 @@ p {
         }
 
     }     //  (min-width: 900px)
-    @media @tablet-landscape-only { }   //  (min-width: 900px) and (max-width: 1199px) 
+    @media @tablet-landscape-only { 
+        background-image: url("@{evans}/intro-mid.jpg");
+    }   //  (min-width: 900px) and (max-width: 1199px) 
     @media @desktop-up { }              //  (min-width: 1200px)     
     @media @desktop-only { }            //  (min-width: 1200px) and (max-width: 1799px)"     
     @media @big-desktop-up { }          //  (min-width: 1800px)     
     
 
-    /* ----------- iPhone 5 and 5S Portrait ----------- */
+    /* ----------- iPhone 5 and 5S Landscape ----------- */
 
     @media only screen 
         and (min-device-width: 320px) 
         and (max-device-width: 568px)
         and (-webkit-min-device-pixel-ratio: 2)
         and (orientation: landscape) {
+        background-image: url("@{evans}/intro-landscape.jpg");
+        h1 {
+        }
+        p {
+        }
+        a.read-more {
+            top: calc(~"100vh - 55px");
+            bottom: auto;
+        }
+
+    }
+
+    /* ----------- iPhone 5 and 5S Portrait ----------- */
+
+    @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 568px) 
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation : portrait) { /* STYLES GO HERE */ 
+        background-image: url("@{evans}/intro-portrait.jpg");
+        h1 {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    }
+    
+
+
+    //iPad portrait 
+    @media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) 
+    and (orientation : portrait) { 
 
         h1 {
-
         }
         p {
 
@@ -465,12 +513,15 @@ div.boundless-button span a#expander:after {
 
 .mosaic {
     display: flex;
+    position: relative;
     &.bike {
         & > div:nth-child(1) {
             p {
                 margin-top: 24vh;
                 &:after {
                     background: url('@{evans}/icon-bike.png') 0 0 no-repeat white;
+                    top: -50px;
+                    height: 148px;
                 }
             }
         }
@@ -538,31 +589,9 @@ div.boundless-button span a#expander:after {
             width: 100%;
             overflow: hidden;
             position: relative;
-            background: url('@{evans}/lines.png') 0 0;
             border-bottom: 10px solid white;
-            &:after {
-                content: "";
-                left: 0px;
-                border-color: transparent white;
-                border-style: solid;
-                border-width: 15px 0 15px 15px;
-                height: 0;
-                width: 0;
-                position: absolute;
-                top: 50%;
-                margin-top: -15px;
-            }
             div {
-                .skew(-15deg,0);
-                display: inline-block;
-                background-color: rgba(255, 255, 255, 0.75);
-                max-width: 75%;
-                margin: 0 0 0 -50px;
-                span {
-                    .skew(15deg,0);
-                    display: inline-block;
-                    padding: 25px 60px 25px 110px;
-                }
+
                 h3 {
                     color: @purple;
                 }
@@ -570,7 +599,6 @@ div.boundless-button span a#expander:after {
                     line-height: 1.3;
                 }
             }
-
         }
         & > div:nth-child(2) {
         }
@@ -590,6 +618,11 @@ div.boundless-button span a#expander:after {
             }
             div {
                 overflow: hidden;
+                &:nth-of-type(2) {
+                    display: flex;
+                    flex-grow: 1;
+                    flex-direction: column;
+                }
                 img {
                     .scale(1,1);
                     transform-origin: center center;
@@ -597,7 +630,7 @@ div.boundless-button span a#expander:after {
             }
             video {
                 width: 100%;
-                height: auto;
+                height: 100%;
                 border-top: 10px solid white;
                 margin-bottom: -7px;
                 object-fit: cover;
@@ -682,6 +715,14 @@ div.boundless-button span a#expander:after {
 
 
     @media @phone-only { 
+        margin: 15px 0 30px 0;
+        &.bike {
+            & > div:nth-child(1) {
+                p {
+                    margin-top: 35vh;
+                }
+            }
+        }
         &.georgetown {
             & > div:nth-child(2) {
                 display: flex;
@@ -696,11 +737,14 @@ div.boundless-button span a#expander:after {
         }
         & > div:nth-child(2) {
             & > div:nth-child(1) {
-                &:after {
-                }
-                p {
-                    max-width: 95%;
+                padding: 0 20px 20px 20px;
+                background: rgba(255, 255, 255, 0.63);
+                div {
                     span {
+                    }
+                    h3 {
+                    }
+                    p {
                     }
                 }
             }
@@ -708,6 +752,7 @@ div.boundless-button span a#expander:after {
             }
             div.col-a {
                 &:after {
+                    display: none;
                 }
                 div {
                     img {
@@ -750,15 +795,21 @@ div.boundless-button span a#expander:after {
                 }
             }
         }
-        & > div:nth-child(2) {
-            & > div:nth-child(1) {
-                &:after {
+        & > div:nth-child(1) {
+            &:after {
+            }
+            div {
+                span {
+                }
+                h3 {
                 }
                 p {
-                    span {
-                    }
                 }
             }
+
+        }
+        & > div:nth-child(2) {
+            
             & > div:nth-child(2) {
             }
             div.col-a {
@@ -772,11 +823,14 @@ div.boundless-button span a#expander:after {
                     border-right: 10px solid white;
                     z-index: 1;
                     position: relative;
+                    &:nth-of-type(2) {
+                        border-right: none;
+                    }
                     img {
                     }
                 }
                 video {
-                    width: 50%;
+                    border-top: none;
                 }
             }
             div.col-b {
@@ -807,9 +861,36 @@ div.boundless-button span a#expander:after {
             flex-wrap: wrap;
             .background-cover(cover);
             & > div:nth-child(1) {
+                background: url('@{evans}/lines.png') 0 0;
+                &:after {
+                    content: "";
+                    left: 0px;
+                    border-color: transparent white;
+                    border-style: solid;
+                    border-width: 15px 0 15px 15px;
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -15px;
+                }
 
-
-
+                div {
+                    .skew(-15deg,0);
+                    display: inline-block;
+                    background-color: rgba(255, 255, 255, 0.75);
+                    max-width: 75%;
+                    margin: 0 0 0 -50px;
+                    span {
+                        .skew(15deg,0);
+                        display: inline-block;
+                        padding: 25px 60px 25px 110px;
+                    }
+                    h3 {
+                    }
+                    p {
+                    }
+                }
             }
             & > div:nth-child(2) {
                 border-right: 10px solid white;
@@ -918,36 +999,46 @@ div.boundless-button span a#expander:after {
 
     }
     div.wide {
-        width: 120%;
-        height: auto;
-        margin: 35px -10% 30px;
-        max-width: none;
-        position: relative;
-        overflow: hidden;
-        &.border {
-            outline: 10px solid white;
-        }
         p {
-            position: absolute;
             font-size: 14px;
-            right: -10px;
             padding: 4px 20px 4px 14px;
-            bottom: 0;
-            margin: 0;
-            .skew(15deg,0);
-            display: inline-block;
             background-color: @ultralightgold;
-            span {
-                display: inline-block;
-                .skew(-15deg,0);
-            }
         }
     }
     .no-margin {
         margin: 0;
     }
-    // @media @phone-only { }              //  (max-width: 599px)          
-    // @media @tablet-portrait-up { }      //  (min-width: 600px) 
+    @media @phone-only { 
+        h2.slant {
+            font-size: 3rem;
+        }
+    }              //  (max-width: 599px)          
+    @media @tablet-portrait-up { 
+        div.wide {
+            width: 120%;
+            height: auto;
+            margin: 35px -10% 30px;
+            max-width: none;
+            position: relative;
+            overflow: hidden;
+            &.border {
+                outline: 10px solid white;
+            }
+            p {
+                bottom: 0;
+                margin: 0;
+                right: -10px;
+                position: absolute;
+                .skew(15deg,0);
+                display: inline-block;
+                span {
+                    display: inline-block;
+                    .skew(-15deg,0);
+                }
+            }
+        }
+
+    }      //  (min-width: 600px) 
     // @media @tablet-portait-only { }     //  (min-width: 600px) and (max-width: 899px) 
     @media @tablet-landscape-up { 
         h2.slant {
@@ -1045,6 +1136,13 @@ div.boundless-button span a#expander:after {
         top: 40px;
         z-index: -1;
     }
+    @media @phone-only { 
+        content: '';
+        display: block;
+        width: 100%;
+        opacity: .7;
+        top: 0;
+    } //  (max-width: 599px)   
 }
 // Remove some of the white space padding per edits
 .text-block {
@@ -1056,11 +1154,20 @@ div.boundless-button span a#expander:after {
             font-size: 14px;
             color: gray;
         }
+        small.video-caption {
+            text-align: center;
+            display: inline-block;
+            margin: -10px 0 50px;
+        }
+        iframe {
+            height: 404px !important;
+        }
         .bolder {
             font-weight: 700;
             color: @lightgold;
             font-family: @headline;
             font-size: 21px;
+            line-height: 1.3;
         }
         & > img {
             margin: 25px 0 20px;
@@ -1084,7 +1191,7 @@ div.boundless-button span a#expander:after {
 
 // Video pauser
 
-@media (min-width: 728px) {
+@media @tablet-portrait-up {
     .pause-enabled,
     .mute-enabled {
         position: relative;
@@ -1123,4 +1230,11 @@ div.boundless-button span a#expander:after {
     }
 }
 
+@media @phone-only { 
+    .pause-enabled {
+        button {
+            display: none;
+        }
+    }
+}
 
