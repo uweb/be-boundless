@@ -34,7 +34,7 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy">
                   
-                    <p>The Evans School uses the world as their laboratory. Diving deep into pressing public policy and governance issues of today, the Evans School strives to create leaders who will solve the issues of tomorrow. </p>
+                    <p>The <a href="http://evans.uw.edu/">Evans School</a> uses the world as their laboratory. Diving deep into pressing public policy and governance issues of today, the Evans School strives to create leaders who will solve the issues of tomorrow. </p>
                     <p>From guiding investments in developing countries to shaping policy in Washington state, research undertaken by Evans School faculty with assistance from graduate students informs policymaking around the world. </p>
                     <p>Ph.D. student Hilary Wething and M.P.A. candidate Matthew Fowle are making the most of their experiences at the UW. Thanks to the generosity of donors like you, both Wething and Fowle received scholarships that enable them to focus on academic pursuits and research with real-world influence: Wething studies the effects of Seattle’s historic minimum wage law, and Fowle is working to find evidence-based solutions to reduce poverty in developing countries.</p>
 
@@ -45,9 +45,9 @@
                     
                     <p>In January 2014, Seattle made history when it became the first major city in the U.S. to adopt a $15 minimum wage. </p>
                     <p>When the new law took effect the following year, policymakers were entering uncharted waters, as were workers and businesses. No one knew how the increase would play out with real people in the real world.</p>
-                    <p>With the rest of the nation watching to see how it would unfold — and waiting to see if they should follow suit — the City of Seattle contracted with an interdisciplinary team of UW faculty from the Evans School, the School of Social Work and the School of Public Health to conduct a multi-year study of the new law and its effects.</p>
+                    <p>With the rest of the nation watching to see how it would unfold — and waiting to see if they should follow suit — the City of Seattle contracted with an interdisciplinary team of UW faculty from the Evans School, the School of Social Work and the School of Public Health to conduct a <a href="http://evans.uw.edu/policy-impact/minimum-wage-study">multi-year study</a> of the new law and its effects.</p>
                     <p>For researchers at the Evans School, the wage increase presented an unprecedented opportunity: the ability to track and study the effects of a new policy in real time. </p>
-                    <p>“Often when you’re studying public policy, you either come in after a policy has been implemented, or your team helps design a program and then studies it from the beginning,” explains Heather Hill, an associate professor at the Evans School and co-investigator for the study. “But this is different. We get to evaluate as it happens.”                     </p>
+                    <p>“Often when you’re studying public policy, you either come in after a policy has been implemented, or your team helps design a program and then studies it from the beginning,” explains <a href="http://evans.uw.edu/profile/hill">Heather Hill</a>, an associate professor at the Evans School and co-investigator for the study. “But this is different. We get to evaluate as it happens.”                     </p>
                     <p>As the new wages were implemented, the researchers tracked potential bellwethers of the law’s impact, including wages, the number of hours employees worked and the prices of local goods. </p>
                     <p>But numbers can only say so much. </p>
 
@@ -191,7 +191,7 @@
 
                     <p>The Evans School is a policy partner with impact far beyond the city of Seattle. By partnering with local and international development organizations, students at the Evans School are able to reach and influence global communities.</p>
 
-                    <p>Reducing poverty around the world is graduate student Matthew Fowle’s dream. As a student researcher with the Evans School Policy Analysis &amp; Research Group (EPAR), he's looking for evidence-based solutions to the problem.</p>
+                    <p>Reducing poverty around the world is graduate student Matthew Fowle’s dream. As a student researcher with the <a href="http://evans.uw.edu/policy-impact/epar">Evans School Policy Analysis &amp; Research Group</a> (EPAR), he's looking for evidence-based solutions to the problem.</p>
 
                     <p>Fowle, an M.P.A. candidate at the Evans School, was fairly young when he first decided to work for a more equitable world. He grew up in the English countryside. His mother was born in a small town in Southern Malaysia. He recalls travelling with her to visit his Malaysian relatives.</p>
                     
@@ -216,7 +216,7 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy reduced-pad">
 
-                <p>With support from the Bill & Melinda Gates Foundation, EPAR was established in 2008 by C. Leigh Anderson, the Marc Lindenberg Professor for Humanitarian Action, International Development, and Global Citizenship at the Evans School.</p>
+                <p>With support from the <a href="http://www.gatesfoundation.org/">Bill &amp; Melinda Gates Foundation</a>, EPAR was established in 2008 by <a href="http://evans.uw.edu/profile/anderson">C. Leigh Anderson</a>, the Marc Lindenberg Professor for Humanitarian Action, International Development, and Global Citizenship at the Evans School.</p>
 
                 <p>Led by Anderson and co-principal investigator Professor Travis Reynolds, ’11, an Evans School alumnus, EPAR is comprised of 15 graduate research assistants and a network of other UW faculty. The group's mission is to conduct objective research and analysis to help inform international stakeholders who tackle some of the world’s most complex and pressing financial, agricultural, public health and environmental challenges.</p>
 
