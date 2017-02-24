@@ -74,8 +74,8 @@
 
           <!-- 50% -->
           <div class="col-b">
-              <p>Do you think that the minimum wage law will have an impact on your life in some way?</p>
-              <div><blockquote><span>&ldquo;</span>Hopefully. I hope the minimum wage law also incentivizes companies to pay more even if they are already paying $15, just to maintain those pay structures.<span>&rdquo;</span></blockquote></div>
+              <p>When did Georgetown Brewing start talking about the minimum wage law?</p>
+              <div><blockquote><span>&ldquo;</span>When I first heard about this happening, I sent [owners] Manny and Roger an e-mail saying let’s implement this now and get ahead of the game. They knew what I was talking about and were both on board with it.<span>&rdquo;</span></blockquote></div>
               <small><b>Lisa Ulrich</b> / Assistant Retail Manager </small>
           </div>
 
