@@ -172,7 +172,7 @@
                   <p>As the team embarks on final interviews this spring, Wething and Hill hope their data will help create a more complete picture in conjunction with the analysis of state administrative data and survey responses from employers. </p>
                   <p>“For instance, if we see that there were positive, negative, or no effects of the minimum wage change on workers, their earnings or their employment, then the interviews from the workers study could provide insight into why that’s the case,” says Hill.</p>
                   <p>For Wething, the opportunity to be part of the qualitative team has not only provided a one-of-a-kind research experience, it also helped her define her post-Ph.D. path. Inspired by collaborating with Evans School faculty, she hopes to follow in their footsteps and pursue a career in academia, which would enable her to continue researching the lives of low-wage workers and their families.</p>
-                  <p>To be involved with the Minimum Wage Study is a privilege,” she says.</p>
+                  <p>"To be involved with the Minimum Wage Study is a privilege,” she says.</p>
                   <blockquote><span>&ldquo;</span>People nationwide have eyes on what we’re doing. I feel inspired and grateful every day to get to work on this.<span>&rdquo;</span></blockquote>
 
                 </div> 
@@ -251,7 +251,7 @@
                   
                   <p>“It’s a rich and collaborative environment,” he says, “and a unique opportunity to conduct research with a dedicated team of talented colleagues and mentors who are renowned experts. Working with EPAR has enabled me to help tackle the complex equity problems that stirred my passions so strongly as a boy.”</p>
                   
-                  <p>Both Wething’s and Fowle’s extraordinary experiences have been fueled by the generosity of donors like you.  Your gifts make student scholarships, fellowships, and faculty professorships possible--and ensure that the Evans School's extraordinary real-world research will continue to make an impact.</p>
+                  <p>Both Wething’s and Fowle’s extraordinary experiences have been fueled by the generosity of donors like you.  Your gifts make student scholarships, fellowships and faculty professorships possible&mdash;and ensure that the Evans School's extraordinary real&mdash;world research will continue to make an impact.</p>
                   
                   <p>“Giving enables students to focus on being their best and brightest research selves,” says Wething. “I don’t have to worry about making ends meet. I can just be fully immersed in this process.”</p>
 
