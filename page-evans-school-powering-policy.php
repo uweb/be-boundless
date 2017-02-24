@@ -34,9 +34,9 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy">
                   
-                    <p>The <a href="http://evans.uw.edu/">Evans School</a> uses the world as their laboratory. Diving deep into pressing public policy and governance issues of today, the Evans School strives to create leaders who will solve the issues of tomorrow. </p>
-                    <p>From guiding investments in developing countries to shaping policy in Washington state, research undertaken by Evans School faculty with assistance from graduate students informs policymaking around the world. </p>
-                    <p>Ph.D. student Hilary Wething and M.P.A. candidate Matthew Fowle are making the most of their experiences at the UW. Thanks to the generosity of donors like you, both Wething and Fowle received scholarships that enable them to focus on academic pursuits and research with real-world influence: Wething studies the effects of Seattle’s historic minimum wage law, and Fowle is working to find evidence-based solutions to reduce poverty in developing countries.</p>
+                    <p>The <a href="http://evans.uw.edu/">Evans School</a> uses the world as their laboratory. Diving deep into the pressing public policy and governance issues of today, the Evans School strives to create leaders who will solve the issues of tomorrow. </p>
+                    <p>From guiding investments in developing countries to shaping policy in Washington state, research undertaken by Evans School faculty in collaboration with graduate students informs policymaking around the world. </p>
+                    <p>Ph.D. student Hilary Wething and MPA candidate Matthew Fowle are making the most of their experiences at the UW. Thanks to the generosity of donors like you, both Wething and Fowle received scholarships that enable them to focus on academic pursuits and research with real-world influence: Wething studies the effects of Seattle’s historic minimum wage law, and Fowle is working to find evidence-based solutions to reduce poverty in developing countries.</p>
 
                     <div class="wide"><img alt="Photo of Hilary Wething" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/evans-school/hilary.jpg' ?>"><p><span><b>Hilary Wething</b> / Research Assistant / City of Seattle Minimum Wage Study</span></p></div>
                     <h2 class="slant"><span><span>Local</span></span> Impact</h2>
@@ -133,7 +133,7 @@
                   
                   <p>“While administrative data will give comprehensive results about changes in the number of jobs and hours worked, it doesn’t tell us how workers affected by the minimum wage view their quality of life,” explains Hilary Wething, a Ph.D. student at the Evans School and member of the Minimum Wage Study.</p>
                   <p>Wething, Hill and a team of other UW students make up a subgroup of the Minimum Wage Study aimed at collecting qualitative data related to the adoption of the new law. </p>
-                  <p>Over two years, their team conducted interviews with 55 local low-income workers, all of whom were working for no more than $15 per hour. All 55 participants have children, and more than half are immigrants. At the start of the study, all were working for no more than $15 per hour. </p>
+                  <p>Over two years, their team conducted interviews with 55 local low-income workers, all of whom were working for no more than $15 per hour. All 55 participants have children. At the start of the study, all were working for no more than $15 per hour. </p>
                   <p>Beyond hours worked or tips received, the workers divulged more detailed and complex aspects of their lives. “We asked how well their work hours fit with their family life, what works about that and what doesn't,” explains Wething. “We asked questions that allowed them to provide a lot of detail that otherwise wouldn’t be given.”</p>
                   <p>Wething previously worked primarily with quantitative data on low-wage work, and was surprised by the intimate nature of qualitative research. </p>
                   <blockquote ><span>&ldquo;</span>Hearing people’s stories was not only moving, it also provided a lot of context about the perspective they bring to their work lives and how they view their roles as a parent,<span>&rdquo;</span></blockquote>
@@ -156,13 +156,13 @@
                     
                     <h2 class="slant"><span><span>Global</span></span> impact</h2>
 
-                    <p class="bolder"><b>The Evans School Policy Analysis &amp; Research Group (EPAR)</b></p>
+                    <p class="bolder"><b>The Evans School Policy Analysis &amp; Research Group</b></p>
 
                     <p>The Evans School is a policy partner with impact far beyond the city of Seattle. By partnering with local and international development organizations, students at the Evans School are able to reach and influence global communities.</p>
 
                     <p>Reducing poverty around the world is graduate student Matthew Fowle’s dream. As a student researcher with the <a href="http://evans.uw.edu/policy-impact/epar">Evans School Policy Analysis &amp; Research Group</a> (EPAR), he's looking for evidence-based solutions to the problem.</p>
 
-                    <p>Fowle, an M.P.A. candidate at the Evans School, was fairly young when he first decided to work for a more equitable world. He grew up in the English countryside. His mother was born in a small town in Southern Malaysia. He recalls travelling with her to visit his Malaysian relatives.</p>
+                    <p>Fowle, an MPA candidate at the Evans School, was fairly young when he first decided to work for a more equitable world. He grew up in the English countryside. His mother was born in a small town in Southern Malaysia. He recalls travelling with her to visit his Malaysian relatives.</p>
                     
                     <p>“I remember watching mothers boiling murky water to make it safe for their families to drink,” he says. “I started to question the reasons for poverty and to grapple with the inequity between my living conditions in England and the living conditions in my mother's hometown.” This led him to develop a commitment to work on behalf of people without access to safe water, shelter, adequate nutrition or formal education.</p>
                     
@@ -187,11 +187,11 @@
 
                 <p>With support from the <a href="http://www.gatesfoundation.org/">Bill &amp; Melinda Gates Foundation</a>, EPAR was established in 2008 by <a href="http://evans.uw.edu/profile/anderson">C. Leigh Anderson</a>, the Marc Lindenberg Professor for Humanitarian Action, International Development, and Global Citizenship at the Evans School.</p>
 
-                <p>Led by Anderson and co-principal investigator Professor Travis Reynolds, ’11, an Evans School alumnus, EPAR is comprised of 15 graduate research assistants and a network of other UW faculty. The group's mission is to conduct objective research and analysis to help inform international stakeholders who tackle some of the world’s most complex and pressing financial, agricultural, public health and environmental challenges.</p>
+                <p>Led by Anderson and co-principal investigator Travis Reynolds (Ph.D. ’11), an Evans School alumnus, EPAR is comprised of 15 graduate research assistants and a network of other UW faculty. The group's mission is to conduct objective research and analysis to help inform international stakeholders who tackle some of the world’s most complex and pressing financial, agricultural, public health and environmental challenges.</p>
 
                     <div class="wide border"><img alt="Photo of Hilary Wething" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/evans-school/matthew.jpg' ?>"><p><span><b>Matthew Fowle</b> / Research Assistant / Evans School Policy Analysis &amp; Research Group</span></p></div>
                      
-                    <p>To date, EPAR’s evidence reviews have been used by development practitioners, including those at the MasterCard Foundation, the International Telecommunications Union, the Bill &amp; Melinda Gates Foundation, developing country government ministries and international non-governmental organizations. </p>
+                    <p>To date, EPAR’s evidence reviews have been used by development practitioners, including those at the MasterCard Foundation, the International Telecommunications Union, developing country government ministries and international non-governmental organizations. </p>
                     <p>One of Fowle’s EPAR research projects analyzes the use of digital financial services in developing countries. </p>
 
                     <p>“Many people in low-income countries lack access to basic financial services,” he says, whether because they live in a remote area far from a bank or because banks do not offer suitable services. “Globally, there are about two billion individuals without a bank account, a large proportion of whom are women.”</p>
@@ -220,7 +220,7 @@
                   
                   <p>“It’s a rich and collaborative environment,” he says, “and a unique opportunity to conduct research with a dedicated team of talented colleagues and mentors who are renowned experts. Working with EPAR has enabled me to help tackle the complex equity problems that stirred my passions so strongly as a boy.”</p>
                   
-                  <p>Both Wething’s and Fowle’s extraordinary experiences have been fueled by the generosity of donors like you.  Your gifts make student scholarships, fellowships and faculty professorships possible&mdash;and ensure that the Evans School's extraordinary real&mdash;world research will continue to make an impact.</p>
+                  <p>Both Wething’s and Fowle’s extraordinary experiences have been fueled by the generosity of donors like you.  Your gifts make student scholarships, fellowships and faculty professorships possible&mdash;and ensure that the Evans School's extraordinary real-world research will continue to make an impact.</p>
                   
                   <p>“Giving enables students to focus on being their best and brightest research selves,” says Wething. “I don’t have to worry about making ends meet. I can just be fully immersed in this process.”</p>
 

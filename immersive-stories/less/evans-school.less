@@ -1180,22 +1180,7 @@ div.boundless-button span a#expander:after {
 }
 // Remove some of the white space padding per edits
 .text-block {
-    &.start {
-        background-image: url("@{evans}/space-needle.svg");
-        background-position: right 75%;
-        background-repeat: no-repeat;
-        .copy {
-            &:after {
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 100%;
-                background-color: white;
-                content: '';
-                height: 60px;
-            }
-        }
-    }
+
     .copy {
         & > blockquote {
             font-family: @uni;
@@ -1260,6 +1245,24 @@ div.boundless-button span a#expander:after {
             }
             &.reduced-pad {
                 padding: 50px 90px 40px 90px;
+            }
+        }
+    }
+    @media(min-width:768px) {
+        &.start {
+            background-image: url("@{evans}/space-needle.svg");
+            background-position: right 75%;
+            background-repeat: no-repeat;
+            .copy {
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 100%;
+                    background-color: white;
+                    content: '';
+                    height: 60px;
+                }
             }
         }
     }
