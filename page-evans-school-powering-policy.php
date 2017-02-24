@@ -56,9 +56,9 @@
         </div>   
       </section>
 
-      <section class="mosaic bike" id="profile-1">
+      <section class="mosaic georgetown" id="profile-1">
         <div>
-          <p>Bike works</p>
+          <p>Georgetown Brewing Company</p>
         </div>
         <div>
           <!-- 100% -->
@@ -70,38 +70,6 @@
               </span>
             </div>
           </div>
-          
-          <!-- 50% -->
-          <div class="col-a">
-            <div><img alt="Nikki McThewsonw working on a bike" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/evans-school/bike-works-woman.jpg' ?>"></div>
-              <div class="content pause-enabled">
-                <video  autoplay loop muted playsinline class="media" poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/bikeworks.jpg' ?>" class="fullscreen-bg__video">
-                  <!-- <source src="img/street-bw-webm.webm" type="video/webm"> -->
-                  <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/evans-school/BIKEWORKS_609.mp4' ?>" type="video/mp4">
-                  <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/public-health/BIKEWORKS_609.webm' ?>" type="video/webm">
-                </video>
-                <button class="pause">Pause</button>
-              </div>
-          </div>
-
-          <!-- 50% -->
-          <div class="col-b">
-              <p>Do you think that the minimum wage law will have an impact on your life in some way?</p>
-              <div><blockquote><span>&ldquo;</span>Yes. Besides my job here at Bike Works, I deliver food on my bike as a second source of income. With a higher wage here, I can spend more time with my family instead of working multiple jobs.<span>&rdquo;</span></blockquote></div>
-              <small><b>Nikki McThewson</b> / Retail Coordinator and Shop Mechanic</small>
-          </div>
-
-        </div>
-      </section>
-
-
-      <section class="mosaic georgetown" id="profile-2">
-        <div>
-          <p>Georgetown Brewing Company</p>
-        </div>
-        <div>
-          <!-- 100% -->
-          <div></div>
 
           <!-- 50% -->
           <div class="col-b">
@@ -122,19 +90,18 @@
               <button class="pause">Pause</button>
             </div>
           </div>
+
         </div>
       </section>
 
 
-      <section class="mosaic campagne" id="profile-3">
+      <section class="mosaic campagne" id="profile-2">
         <div>
           <p>Cafe Campagne</p>
         </div>
         <div>
           <!-- 100% -->
           <div></div>
-          
-          <!-- 50% -->
           <div class="col-a">
             <div><img alt="Daisley Gordon standing in restaurant" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/evans-school/campagne-man.jpg' ?>"></div>
             <div class="content pause-enabled">
@@ -153,9 +120,10 @@
               <div><blockquote><span>&ldquo;</span>Working in the restaurant industry used to be an entry-level job. But circumstances have changed. Now, you have adults working those jobs trying to make enough money to have a reasonable life. That needs to be considered whether people support a $15 minimum wage or are against it. <span>&rdquo;</span></blockquote></div>
               <small><b>Daisley Gordon</b> / Owner and Executive Chef</small>
           </div>
-
         </div>
       </section>
+
+
 
       <section class="text-block white">
         <div class="container">
