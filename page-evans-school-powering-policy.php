@@ -65,11 +65,12 @@
           <div>
             <div>
               <span>
-                <h3>What’s it like to be a minimum wage worker in Seattle? </h3>
-                <p>We spoke with employees from a few local companies (who were not involved in the Evans School’s study) about their experiences with work-life balance, what they enjoy about their jobs and how they think the minimum wage law will impact their lives</p>
+                <h3>More than just higher wages</h3>
+                <p>Three years into the new minimum wage law, we spoke with local workers about how they’ve been impacted.</p>
               </span>
             </div>
           </div>
+
 
           <!-- 50% -->
           <div class="col-b">
