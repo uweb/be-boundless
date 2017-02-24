@@ -75,10 +75,10 @@
           <div class="col-a">
             <div><img alt="Nikki McThewsonw working on a bike" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/evans-school/bike-works-woman.jpg' ?>"></div>
               <div class="content pause-enabled">
-                <video  autoplay loop muted playsinline class="media" poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/  public-health/header.jpg' ?>" class="fullscreen-bg__video">
+                <video  autoplay loop muted playsinline class="media" poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/bikeworks.jpg' ?>" class="fullscreen-bg__video">
                   <!-- <source src="img/street-bw-webm.webm" type="video/webm"> -->
                   <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/evans-school/BIKEWORKS_609.mp4' ?>" type="video/mp4">
-                  <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/public-health/header-new.webm' ?>" type="video/webm">
+                  <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/public-health/BIKEWORKS_609.webm' ?>" type="video/webm">
                 </video>
                 <button class="pause">Pause</button>
               </div>
@@ -114,10 +114,10 @@
           <div class="col-a">
             <div><img alt="Lisa Ulrich standing by brewing vats" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/evans-school/georgetown-woman.jpg' ?>"></div>
             <div class="content pause-enabled">
-              <video  autoplay loop muted playsinline class="media" poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/  header.jpg' ?>" class="fullscreen-bg__video">
+              <video  autoplay loop muted playsinline class="media" poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/georgetown.jpg' ?>" class="fullscreen-bg__video">
                   <!-- <source src="img/street-bw-webm.webm" type="video/webm"> -->
                   <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/evans-school/GEORGETOWN_609.mp4' ?>" type="video/mp4">
-                  <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/public-health/header-new.webm' ?>" type="video/webm">
+                  <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/public-health/GEORGETOWN_609.webm' ?>" type="video/webm">
               </video>
               <button class="pause">Pause</button>
             </div>
@@ -138,10 +138,10 @@
           <div class="col-a">
             <div><img alt="Daisley Gordon standing in restaurant" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/evans-school/campagne-man.jpg' ?>"></div>
             <div class="content pause-enabled">
-              <video  autoplay loop muted playsinline class="media" poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/  header.jpg' ?>" class="fullscreen-bg__video">
+              <video  autoplay loop muted playsinline class="media" poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/campagne.jpg' ?>" class="fullscreen-bg__video">
                   <!-- <source src="img/street-bw-webm.webm" type="video/webm"> -->
                   <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/evans-school/CAMPANGE_609.mp4' ?>" type="video/mp4">
-                  <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/public-health/header-new.webm' ?>" type="video/webm">
+                  <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/public-health/CAMPANGE_609.webm' ?>" type="video/webm">
               </video>
               <button class="pause">Pause</button>
             </div>
@@ -167,11 +167,14 @@
                   <p>Over two years, their team conducted interviews with 55 local low-income workers, all of whom were working for no more than $15 per hour. All 55 participants have children, and more than half are immigrants. At the start of the study, all were working for no more than $15 per hour. </p>
                   <p>Beyond hours worked or tips received, the workers divulged more detailed and complex aspects of their lives. “We asked how well their work hours fit with their family life, what works about that and what doesn't,” explains Wething. “We asked questions that allowed them to provide a lot of detail that otherwise wouldn’t be given.”</p>
                   <p>Wething previously worked primarily with quantitative data on low-wage work, and was surprised by the intimate nature of qualitative research. </p>
-                  <p>“Hearing people’s stories was not only moving, it also provided a lot of context about the perspective they bring to their work lives and how they view their roles as a parent,” she says. “It feels like you’re going from black and white to full color.”</p>
+                  <blockquote ><span>&ldquo;</span>Hearing people’s stories was not only moving, it also provided a lot of context about the perspective they bring to their work lives and how they view their roles as a parent,<span>&rdquo;</span></blockquote>
+                  <p>she says. “It feels like you’re going from black and white to full color.”</p>
                   <p>As the team embarks on final interviews this spring, Wething and Hill hope their data will help create a more complete picture in conjunction with the analysis of state administrative data and survey responses from employers. </p>
                   <p>“For instance, if we see that there were positive, negative, or no effects of the minimum wage change on workers, their earnings or their employment, then the interviews from the workers study could provide insight into why that’s the case,” says Hill.</p>
                   <p>For Wething, the opportunity to be part of the qualitative team has not only provided a one-of-a-kind research experience, it also helped her define her post-Ph.D. path. Inspired by collaborating with Evans School faculty, she hopes to follow in their footsteps and pursue a career in academia, which would enable her to continue researching the lives of low-wage workers and their families.</p>
-                  <p>“To be involved with the Minimum Wage Study is a privilege,” she says. “People nationwide have eyes on what we’re doing. I feel inspired and grateful every day to get to work on this.”</p>
+                  <p>To be involved with the Minimum Wage Study is a privilege,” she says.</p>
+                  <blockquote><span>&ldquo;</span>People nationwide have eyes on what we’re doing. I feel inspired and grateful every day to get to work on this.<span>&rdquo;</span></blockquote>
+
                 </div> 
           </div> 
         </div>   
@@ -190,7 +193,7 @@
 
                     <p>Reducing poverty around the world is graduate student Matthew Fowle’s dream. As a student researcher with the Evans School Policy Analysis &amp; Research Group (EPAR), he's looking for evidence-based solutions to the problem.</p>
 
-                    <p>Fowle, an M.P.A. candidate at the Evans School, was fairly young when he first decided to work for a more equitable world. He grew up in the English countryside. His mother was born in a small town in Southern Malaysia. He recalls travelling with her to visit his Malaysia relatives.</p>
+                    <p>Fowle, an M.P.A. candidate at the Evans School, was fairly young when he first decided to work for a more equitable world. He grew up in the English countryside. His mother was born in a small town in Southern Malaysia. He recalls travelling with her to visit his Malaysian relatives.</p>
                     
                     <p>“I remember watching mothers boiling murky water to make it safe for their families to drink,” he says. “I started to question the reasons for poverty and to grapple with the inequity between my living conditions in England and the living conditions in my mother's hometown.” This led him to develop a commitment to work on behalf of people without access to safe water, shelter, adequate nutrition or formal education.</p>
                     
@@ -219,7 +222,7 @@
 
                     <div class="wide border"><img alt="Photo of Hilary Wething" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/evans-school/matthew.jpg' ?>"><p><span><b>Matthew Fowle</b> / Research Assistant / Evans School Policy Analysis &amp; Research Group</span></p></div>
                      
-                    <p>To date, EPAR’s evidence reviews have been used by development practitioners, including those at the MasterCard Foundation, the International Telecommunications Union,, the Bill &amp; Melinda Gates Foundation, developing country government ministries and international non-governmental organizations. </p>
+                    <p>To date, EPAR’s evidence reviews have been used by development practitioners, including those at the MasterCard Foundation, the International Telecommunications Union, the Bill &amp; Melinda Gates Foundation, developing country government ministries and international non-governmental organizations. </p>
                     <p>One of Fowle’s EPAR research projects analyzes the use of digital financial services in developing countries. </p>
 
                     <p>“Many people in low-income countries lack access to basic financial services,” he says, whether because they live in a remote area far from a bank or because banks do not offer suitable services. “Globally, there are about two billion individuals without a bank account, a large proportion of whom are women.”</p>
@@ -229,7 +232,9 @@
 
                     <p>In examining populations without access to banks, researchers began looking instead at what resources are widely available: phones. </p>
 
-                  <p>“Half of the unbanked population has a mobile phone,” says Fowle. “In Kenya, for example, almost 90 percent of the population has a mobile device, which represents a significant opportunity for financial inclusion.”</p>
+                    <blockquote><span>&ldquo;</span>Half of the unbanked population has a mobile phone,<span>&rdquo;</span></blockquote>
+
+                  <p>says Fowle. “In Kenya, for example, almost 90 percent of the population has a mobile device, which represents a significant opportunity for financial inclusion.”</p>
                   
                   <p>Through money transfer apps available on mobile phones, people can save, send and receive money, creating greater financial inclusion and — ideally — a pathway out of poverty.  </p>
                   
