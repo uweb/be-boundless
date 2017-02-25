@@ -136,8 +136,11 @@
                   <p>Over two years, their team conducted interviews with 55 local low-income workers, all of whom were working for no more than $15 per hour. All 55 participants have children. At the start of the study, all were working for no more than $15 per hour. </p>
                   <p>Beyond hours worked or tips received, the workers divulged more detailed and complex aspects of their lives. “We asked how well their work hours fit with their family life, what works about that and what doesn't,” explains Wething. “We asked questions that allowed them to provide a lot of detail that otherwise wouldn’t be given.”</p>
                   <p>Wething previously worked primarily with quantitative data on low-wage work, and was surprised by the intimate nature of qualitative research. </p>
-                  <blockquote ><span>&ldquo;</span>Hearing people’s stories was not only moving, it also provided a lot of context about the perspective they bring to their work lives and how they view their roles as a parent,<span>&rdquo;</span></blockquote>
-                  <p>she says. “It feels like you’re going from black and white to full color.”</p>
+                  
+                  <p>Hearing people’s stories was not only moving, it also provided a lot of context about the perspective they bring to their work lives and how they view their roles as a parent, she says.</p>
+
+                  <blockquote ><span>&ldquo;</span>It feels like you’re going from black and white to full color.<span>&rdquo;</span></blockquote>
+
                   <p>As the team embarks on final interviews this spring, Wething and Hill hope their data will help create a more complete picture in conjunction with the analysis of state administrative data and survey responses from employers. </p>
                   <p>“For instance, if we see that there were positive, negative, or no effects of the minimum wage change on workers, their earnings or their employment, then the interviews from the workers study could provide insight into why that’s the case,” says Hill.</p>
                   <p>For Wething, the opportunity to be part of the qualitative team has not only provided a one-of-a-kind research experience, it also helped her define her post-Ph.D. path. Inspired by collaborating with Evans School faculty, she hopes to follow in their footsteps and pursue a career in academia, which would enable her to continue researching the lives of low-wage workers and their families.</p>
