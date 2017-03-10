@@ -14,7 +14,7 @@
     <div id="slide">
       <h1>Powering policy locally and globally</h1>  
       <hr> 
-      <p>How can you change the world through the University of Washington? Two students at the Evans School of Public Policy &amp; Governance share their stories.
+      <p>How can you change the world? Two students at the Evans School of Public Policy &amp; Governance share their stories.
 </p>     
     </div>            
     <section class="scrollit read-more">
@@ -204,9 +204,9 @@
 
                     <p>In examining populations without access to banks, researchers began looking instead at what resources are widely available: phones. </p>
 
-                    <blockquote><span>&ldquo;</span>Half of the unbanked population has a mobile phone,<span>&rdquo;</span></blockquote>
+                    <blockquote><span>&ldquo;</span>Half of the unbanked population has a mobile phone.<span>&rdquo;</span></blockquote>
 
-                  <p>says Fowle. “In Kenya, for example, almost 90 percent of the population has a mobile device, which represents a significant opportunity for financial inclusion.”</p>
+                  <p>Fowle continues, “In Kenya, for example, almost 90 percent of the population has a mobile device, which represents a significant opportunity for financial inclusion.”</p>
                   
                   <p>Through money transfer apps available on mobile phones, people can save, send and receive money, creating greater financial inclusion and — ideally — a pathway out of poverty.  </p>
                   

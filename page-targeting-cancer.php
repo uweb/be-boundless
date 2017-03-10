@@ -150,7 +150,7 @@
                       <div class="row">
                           <div class="col-md-10 col-md-offset-1 copy">
                               
-          <p class="gold-quote headline-gold purple">“Now,” he marvels, <b>"it only takes five days to test 160 or more compounds</b>. The faster turnaround time is much better for these patients. Treatment can begin much sooner, rather than waiting weeks for the results of other tests."</p>
+          <p class="gold-quote headline-gold purple">“Now,” he marvels, <b>"it only takes five days to test 160 or more compounds.</b> The faster turnaround time is much better for these patients. Treatment can begin much sooner, rather than waiting weeks for the results of other tests."</p>
 
                     </div> 
               </div> 
