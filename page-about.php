@@ -67,7 +67,7 @@
 
  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
 
- 
+ <iframe width="0" height="0" name="Trade Desk Tracking - IP1714153_University of Washington Primary Conv_Core" frameborder="0" scrolling="no" src="//insight.adsrvr.org/tags/4uvcj6dn/wocltll/iframe"></iframe>
 
 
 
