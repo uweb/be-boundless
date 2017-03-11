@@ -546,7 +546,7 @@
                                 <h2 class="headline-gold">Help make a difference</h2>
                                 <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. You can help the School of Public Health drive the public good and improve lives around the world by contributing to these funds.</p>
                                 <div id="immersive-give-iframe"></div>
-                                <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="SPHENF,GLOBPH" href="#">Give now</a></span></div>
+                                <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="GHFEND,WACHPH" href="#">Give now</a></span></div>
                               </div>
                             </div>
                         </div>

@@ -61,7 +61,7 @@ $(function(){
     var map = new ScrollMagic.Scene({
         triggerElement: ".bus-map",
         duration: $(window).height() * 0.7,
-        offset: $(window).height() * 0.7,
+        offset: $(".bus-map").height() * 0.8,
         triggerHook: 1,
         reverse: true
     })
@@ -79,7 +79,7 @@ $(function(){
 
     // Parallax photos 
 
-    var clouds = new TimelineMax ()
+    var picsParallax = new TimelineMax ()
           .add([
             TweenMax.to('.inset-pics', 1,    { transform: 'translateY(0)', ease: Power0.easeIn }),
             TweenMax.to('.inset-pics div:nth-child(2)', 1,    { transform: 'translateY(-50px)', ease: Power0.easeIn }),
@@ -93,7 +93,7 @@ $(function(){
       duration: '150%',
       reverse: true
     })
-    .setTween(clouds)
+    .setTween(picsParallax)
     .addTo(controllerFoster)
 
 
