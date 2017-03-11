@@ -7,7 +7,7 @@
 @import "../../immersive-stories/less/queries.less";
 @import "../../immersive-stories/less/lity.less";
 @import "../../immersive-stories/less/slideshow.less";
-@import "../../immersive-stories/css/libraries/leaflet.css";
+// @import "../../immersive-stories/css/libraries/leaflet.css";
 
 @fb: "../../immersive-stories/img/farmer-brown";
 @public: "../../immersive-stories/img/public-health";
@@ -177,6 +177,9 @@ p {
         hr {
             display: block;
         }
+        video {
+            object-position: 100% 50%;
+        }
         a.read-more {
             top: calc(~"100vh - 95px");
             bottom: auto;
@@ -298,6 +301,7 @@ p {
     }
     &.profile-2 {
         min-height: 32vw;
+        margin-bottom: 50px;
         .cutout {
             width: 46%;
             div {
@@ -358,6 +362,7 @@ p {
             }
 
             .text-block .copy {
+                // padding: 20px;
                 blockquote {
                     font-size: 14px;
                     margin-top: 10px;
@@ -385,7 +390,7 @@ p {
         p {
         }
         .text-block .copy {
-
+            padding: 30px;
         }
     }
    }     //  (min-width: 600px) and (max-width: 899px) 
@@ -397,23 +402,29 @@ p {
         padding: 70px 90px 60px 90px;
     }
     &.profile-1 {
-        p {
+        .text-block .copy {
+            blockquote {
+                margin-left: 42%;
+            }
         }
-
     }
     &.profile-2 {
         p {
         }
         .text-block .copy {
-            blockquote {
-                margin-right: 8%;
-            }
+            padding: 50px 50px 50px 150px;
         }
     }
 
    }     //  (min-width: 900px)
     // @media @tablet-landscape-only { }   //  (min-width: 900px) and (max-width: 1199px) 
-    // @media @desktop-up { }              //  (min-width: 1200px)     
+    @media @desktop-up { 
+        &.profile-2 {
+            .text-block .copy {
+                padding: 70px 90px 60px 180px;
+            }
+        }
+    }              //  (min-width: 1200px)     
     // @media @desktop-only { }            //  (min-width: 1200px) and (max-width: 1799px)"     
     // @media @big-desktop-up { }          //  (min-width: 1800px)    
 }
@@ -475,7 +486,50 @@ p {
     // @media @big-desktop-up { }          //  (min-width: 1800px)     
 }
 
-
+.bus-map {
+    height: 61vw;
+    background-image: url("@{foster}/map.jpg");
+    .background-cover(cover);
+    position: relative;
+    margin-top: -25vw;
+    margin-bottom: 10px;
+    svg {
+        width: 100%;
+        height: auto;
+    }
+    .path {
+      stroke-dasharray: 1500;
+      -webkit-filter: drop-shadow( -5px -5px 5px #000 );
+              filter: drop-shadow( -5px -5px 5px #000 );
+     // stroke-dashoffset: 1300;
+     // animation: dash 5s linear alternate infinite;
+    }
+    .miles {
+        position: absolute;
+        left: 50%;
+        margin-left: -66px;
+        min-width: 132px;
+        bottom: 12%;
+        z-index: 1;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        padding: 20px 0;
+        text-align: center;
+        p {
+            color: white;
+            font-weight: bold;
+            margin: 0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8)
+        }
+        #counter {
+            font-size: 4em;
+            font-family: @headline;
+            font-weight: @ultra;
+            color: @lightgold;
+            line-height: 1;
+        }
+    }
+}
 
 
 div.boundless-headline {
@@ -824,6 +878,7 @@ div.boundless-headline {
 
 .text-block {
     .inset-pics {
+        .translate(0,-100px);
         div {
             overflow:hidden;
             img {
