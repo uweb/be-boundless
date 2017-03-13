@@ -135,8 +135,8 @@
                   <p>One Saturday each month throughout her senior year, Yesenia awoke at 4 a.m. to make the several-hour journey to Seattle, sometimes escorted by her family, sometimes alone on the bus. These treks                   were richly rewarded with practical information and profound inspiration.</p>
                   <p>“No matter the trouble to get there,” she says, “it was worth it.”</p>
                   <p>Hearing the stories of each session’s featured speaker — senior executives who look like and come from the same backgrounds as the students — she began to visualize what she could become. Even the                   location stirred the soul.</p>
-                  <p>Yesenia recalls how her first YEOC session was the first time she’d visited a college campus. “It was amazing,” she says, “walking into the giant atrium of PACCAR Hall and thinking, okay, <i>this is possible</i>. I can see myself here.”</p>
-
+                  <p>Yesenia recalls how her first YEOC session was the first time she’d visited a college campus. “It was amazing,” she says,</p>
+                  <blockquote><span>&ldquo;</span>walking into the giant atrium of PACCAR Hall and thinking, okay, <i>this is possible</i>. I can see myself here.<span>&rdquo;</span></blockquote>
 
                 </div> 
           </div> 
@@ -330,7 +330,7 @@ partner with the UW. </p>
               <div class="row">
                   <div class="col-md-10 col-md-offset-1 copy ">
                     <div style="text-align: center">             
-                      <h2 class="headline-gold">Help make a difference</h2>
+                      <h2 class="headline-gold">Support tomorrow's business leaders</h2>
                       <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. You can help the Foster School of Business and Young Executives of Color transform the lives of more students like Yesenia Velasquez by contributing to these funds.</p>
                       <div id="immersive-give-iframe"></div>
                       <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="GSPAED,EVAN50" href="#">Give now</a></span></div>
