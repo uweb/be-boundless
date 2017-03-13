@@ -317,8 +317,9 @@ partner with the UW. </p>
                <div class="cutout"><div></div></div>
                <div class="copy">
                  <blockquote><span>&ldquo;</span>We are a purpose-driven organization. Our goal is to build a better working world. And part of that goal is building a more diverse working world. Diverse teams are better teams. When we bring diversity — of ethnicity, gender, experience, thought — to the table, we present better solutions to our clients.<span>&rdquo;</span></blockquote>
-                 <span><b>Christian Tinder </b>// Principal, EY</span>
+                 
                </div>
+               <span><b>Christian Tinder </b>// Principal, EY</span>
              </div> 
            </section>
 
