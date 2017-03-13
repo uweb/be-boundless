@@ -60,8 +60,8 @@ $(function(){
 
     var map = new ScrollMagic.Scene({
         triggerElement: ".bus-map",
-        duration: $(window).height() * 0.7,
-        offset: $(".bus-map").height() * 0.8,
+        duration: $(window).height() - ($(".bus-map").height() * 0.5),
+        offset: $(".bus-map").height() * 0.9,
         triggerHook: 1,
         reverse: true
     })
