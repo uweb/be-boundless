@@ -49,7 +49,8 @@ $(function(){
 
     var strokeLength = Math.round(document.querySelector('.path').getTotalLength() * 1.3),
         strokeDashoffset = strokeLength,
-        miles = document.getElementById('counter');
+        miles = document.getElementById('counter'),
+        $busMapHeight = $(".bus-map").height();
 
     function applyStroke() {
       TweenMax.set($(".path"), { strokeDashoffset:strokeDashoffset });
@@ -60,8 +61,8 @@ $(function(){
 
     var map = new ScrollMagic.Scene({
         triggerElement: ".bus-map",
-        duration: $(window).height() - ($(".bus-map").height() * 0.5),
-        offset: $(".bus-map").height() * 0.9,
+        duration: $windowHeight - ($busMapHeight * 0.5),
+        offset: $busMapHeight * 0.9,
         triggerHook: 1,
         reverse: true
     })

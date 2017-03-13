@@ -396,7 +396,7 @@ p {
             .cutout {
                 position: relative;
                 height: 200px;
-                width: 76%;
+                width: 90%;
             }
             .text-block .copy {
                 position: static;
@@ -477,6 +477,14 @@ p {
    }     //  (min-width: 900px)
     // @media @tablet-landscape-only { }   //  (min-width: 900px) and (max-width: 1199px) 
     @media @desktop-up { 
+        min-height: 42vw;
+        &.profile-1 {
+            .text-block .copy {
+                blockquote {
+                    font-size: 2vw;
+                }
+            }
+        }
         &.profile-2 {
             .text-block .copy {
                 padding: 70px 90px 60px 180px;
