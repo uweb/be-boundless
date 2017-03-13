@@ -29,19 +29,19 @@
 
 // Leaflet
 
-#mapid { 
-    height: 43vw; 
-    // @media @phone-only { }              //  (max-width: 599px)          
-    @media @tablet-portrait-up { 
-        margin: 50px -70px 100px;
-    }      //  (min-width: 600px) 
-    // @media @tablet-portait-only { }     //  (min-width: 600px) and (max-width: 899px) 
-    // @media @tablet-landscape-up { }     //  (min-width: 900px)
-    // @media @tablet-landscape-only { }   //  (min-width: 900px) and (max-width: 1199px) 
-    // @media @desktop-up { }              //  (min-width: 1200px)     
-    // @media @desktop-only { }            //  (min-width: 1200px) and (max-width: 1799px)"     
-    // @media @big-desktop-up { }          //  (min-width: 1800px)
-}
+// #mapid { 
+//     height: 43vw; 
+//     // @media @phone-only { }              //  (max-width: 599px)          
+//     @media @tablet-portrait-up { 
+//         margin: 50px -70px 100px;
+//     }      //  (min-width: 600px) 
+//     // @media @tablet-portait-only { }     //  (min-width: 600px) and (max-width: 899px) 
+//     // @media @tablet-landscape-up { }     //  (min-width: 900px)
+//     // @media @tablet-landscape-only { }   //  (min-width: 900px) and (max-width: 1199px) 
+//     // @media @desktop-up { }              //  (min-width: 1200px)     
+//     // @media @desktop-only { }            //  (min-width: 1200px) and (max-width: 1799px)"     
+//     // @media @big-desktop-up { }          //  (min-width: 1800px)
+// }
 
 
 body {
@@ -53,6 +53,14 @@ body {
 }
 p {
     color: #696969;
+}
+
+
+// Top put it over the top of the opening video
+#main_content {
+    background-color: white;
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -120,9 +128,7 @@ p {
         a {
             p {
                 font-weight: bold;
-                margin-left: 20px;
                 display: inline-block;
-                .translate(0,-30px);
                 text-transform: uppercase;
             }
         }
@@ -136,7 +142,25 @@ p {
             width: 100%;
             text-align: center;
             margin-top: 0;
-            transform: translateY(-30%);
+            .translate(0,-50%);
+        }
+        p {
+            line-height: 1.4;
+            font-size: .65em;
+        }
+        #intro-text {
+            a {
+                p {
+                    .translate(0,-10px);
+                }
+            }
+            svg {
+                height: auto;
+                width: 35px;
+            }
+        }
+        .udub-slant { 
+            display: none;
         }
         video {
             object-position: 10% 50%;
@@ -146,7 +170,14 @@ p {
         }
     }              //  (max-width: 599px)          
     @media @tablet-portrait-up { 
-
+        #intro-text {
+            a {
+                p {
+                    margin-left: 20px;
+                    .translate(0,-30px);
+                }
+            }
+        }
 
     }      //  (min-width: 600px) 
     @media @tablet-portait-only { 
@@ -324,7 +355,7 @@ p {
             blockquote {
                 margin-left: 0;
                 margin-right: 10%;
-                font-size: 1.8vw;            
+                font-size: 2vw;            
             }
         }
     }
@@ -334,15 +365,17 @@ p {
             bottom: 10px;
             width: 40%;
         }
-        .text-block .copy {
-            blockquote {
-                text-indent: 15px;
-                font-size: 14px;
-                span {
-                    font-size: 35px;
-                    &:nth-of-type(1) {
-                        left: -22px;
-                        top: -10px;
+        .text-block {
+            .copy {
+                blockquote {
+                    text-indent: 15px;
+                    font-size: 14px;
+                    span {
+                        font-size: 35px;
+                        &:nth-of-type(1) {
+                            left: -22px;
+                            top: -10px;
+                        }
                     }
                 }
             }
@@ -360,11 +393,17 @@ p {
         &.profile-2 {
             p {
             }
-
+            .cutout {
+                position: relative;
+                height: 200px;
+                width: 76%;
+            }
             .text-block .copy {
-                // padding: 20px;
+                position: static;
+                width: 100%;
+                padding: 20px;
                 blockquote {
-                    font-size: 14px;
+                    font-size: 16px;
                     margin-top: 10px;
                 }
             }
@@ -378,6 +417,22 @@ p {
     .copy {
         padding: 40px 50px 40px 50px;
     }
+    .text-block {
+        background-color: transparent;
+        .copy {
+                blockquote {
+                    text-indent: 15px;
+                    font-size: 15px;
+                    span {
+                        font-size: 35px;
+                        &:nth-of-type(1) {
+                            left: -22px;
+                            top: -10px;
+                        }
+                    }
+                }
+            }
+    }
     &.profile-1 {
         p {
             margin-top: 4vw;
@@ -387,6 +442,9 @@ p {
         }
     }
     &.profile-2 {
+        .cutout {
+            width: 36%;
+        }
         p {
         }
         .text-block .copy {
@@ -495,7 +553,7 @@ p {
     margin-bottom: 10px;
     svg {
         width: 100%;
-        height: auto;
+        height: 61vw;
     }
     .path {
       stroke-dasharray: 1500;
@@ -529,6 +587,24 @@ p {
             line-height: 1;
         }
     }
+    @media @phone-only {  //  (max-width: 599px)  
+        svg {
+            g  {
+                display: none;
+            }
+        }
+        
+    }                      
+    @media @tablet-portrait-up { //  (min-width: 600px) 
+
+    }      
+    // @media @tablet-portait-only { }     //  (min-width: 600px) and (max-width: 899px) 
+    // @media @tablet-landscape-up { }     //  (min-width: 900px)
+    // @media @tablet-landscape-only { }   //  (min-width: 900px) and (max-width: 1199px) 
+    // @media @desktop-up { }              //  (min-width: 1200px)     
+    // @media @desktop-only { }            //  (min-width: 1200px) and (max-width: 1799px)"     
+    // @media @big-desktop-up { }          //  (min-width: 1800px)     
+        
 }
 
 

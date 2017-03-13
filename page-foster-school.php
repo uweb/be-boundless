@@ -103,6 +103,9 @@
                 <p>And then she discovered the Young Executives of Color (YEOC) Program at the University of Washington Foster School of Business.</p>
 
                 <div id="eng-slideshow" class="foster-slideshow">
+                   <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-3.jpg' ?>" alt="">
+                    <p>Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue.</p></div>
+
                   <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-1.jpg' ?>" alt="">
                     <p>Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue.</p>
                   </div>
@@ -110,10 +113,7 @@
                   <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-2.jpg' ?>" alt="">
                     <p>Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue.</p>
                   </div>
-
-                  <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-3.jpg' ?>" alt="">
-                    <p>Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue.</p></div>
-                  
+                 
                   <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-4.jpg' ?>" alt="">
                       <p>Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue.</p></div>
                   
