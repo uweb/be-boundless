@@ -47,36 +47,7 @@ $(function(){
     
     // Map
 
-    var strokeLength = Math.round(document.querySelector('.path').getTotalLength() * 1.3),
-        strokeDashoffset = strokeLength,
-        miles = document.getElementById('counter'),
-        $busMapHeight = $(".bus-map").height();
-
-    function applyStroke() {
-      TweenMax.set($(".path"), { strokeDashoffset:strokeDashoffset });
-    }
-
-    var tl2 = new TimelineMax();
-        tl2.to($(".bus-map"), 4, { onUpdate:applyStroke })
-
-    var map = new ScrollMagic.Scene({
-        triggerElement: ".bus-map",
-        duration: $windowHeight - ($busMapHeight * 0.5),
-        offset: $busMapHeight * 0.9,
-        triggerHook: 1,
-        reverse: true
-    })
-    .setTween(tl2)
-    .on('progress', function(e){
-      strokeDashoffset = (1 - e.progress) * strokeLength;
-      miles.innerHTML = Math.round(e.progress * 144);
-    })
-    .addTo(controllerFoster);
-    $(window).resize(function(){
-        map.duration($(window).height());
-        map.update(true);
-    });
-
+    
 
     // Parallax photos 
 

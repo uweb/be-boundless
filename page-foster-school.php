@@ -14,7 +14,7 @@
 
 
   <button id="pause">Pause</button>
-  <video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/header.jpg' ?>" class="fullscreen-bg__video">
+  <video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/bus.jpg' ?>" class="fullscreen-bg__video">
       <!-- <source src="img/street-bw-webm.webm" type="video/webm"> -->
       <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/foster-school/top.mp4' ?>" type="video/mp4">
       <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/foster-school/top.webm' ?>" type="video/webm">
@@ -23,7 +23,7 @@
 
   <div class="intro-body">
         <div class="row">
-          <div class="col-md-10 col-md-offset-1 col-xs-10 col-lg-offset-1 col-xs-offset-1" id='intro-text'>
+          <div class="col-md-10 col-lg-7 col-md-offset-1 col-xs-10 col-lg-offset-2 col-xs-offset-1" id='intro-text'>
               <h1><span><span>Where Will </span></span><span><span>Meets Way</span></span> </h1>
               <span class="udub-slant"><span></span></span>
               <p>For Yakima-born Yesenia Velasquez, the Young Executives of Color Program at the Foster School of Business has opened the door to a promising future she never knew existed.</p>
@@ -217,11 +217,6 @@
         </g>
         </svg>
 
-
-        <div class="miles">
-          <p id="counter"></p><p> Miles</p>
-        </div>
-
       </section>      
 
       <section class="text-block bus arrow">
@@ -238,8 +233,8 @@
         </div>   
         <video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/header.jpg' ?>" class=" fullscreen-bg__video">
             <!-- <source src="img/street-bw-webm.webm" type="video/webm"> -->
-            <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/foster-school/bus1.mp4' ?>" type="video/mp4">
-            <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/foster-school/bus1.webm' ?>" type="video/webm">
+            <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/foster-school/Bus1.mp4' ?>" type="video/mp4">
+            <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/foster-school/Bus1.webm' ?>" type="video/webm">
         </video>
       </section>
 
@@ -322,10 +317,10 @@ partner with the UW. </p>
            <section class="profile profile-2">
              <div class="text-block">
                <div class="cutout"><div></div></div>
+               <span><b>Christian Tinder </b>// Principal, EY</span>
                <div class="copy">
                  <blockquote><span>&ldquo;</span>We are a purpose-driven organization. Our goal is to build a better working world. And part of that goal is building a more diverse working world. Diverse teams are better teams. When we bring diversity — of ethnicity, gender, experience, thought — to the table, we present better solutions to our clients.<span>&rdquo;</span></blockquote>
                </div>
-               <span><b>Christian Tinder </b>// Principal, EY</span>
              </div> 
            </section>
 
