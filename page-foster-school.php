@@ -14,7 +14,7 @@
 
 
   <button id="pause">Pause</button>
-  <video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/bus.jpg' ?>" class="fullscreen-bg__video">
+  <video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/header.jpg' ?>" class="fullscreen-bg__video">
       <!-- <source src="img/street-bw-webm.webm" type="video/webm"> -->
       <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/foster-school/top.mp4' ?>" type="video/mp4">
       <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/foster-school/top.webm' ?>" type="video/webm">
@@ -217,24 +217,23 @@
         </g>
         </svg>
 
+
+        <div class="miles">
+          <p id="counter"></p><p> Miles</p>
+        </div>
+
       </section>      
 
       <section class="text-block bus arrow">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-1 col-xs-10 col-lg-offset-1 col-xs-offset-1 copy">
-                    
-                  
 
+                <div class="col-md-5 col-md-offset-6 col-xs-10 col-lg-offset-6 col-xs-offset-1 copy">
                   <p>Yesenia awoke at 4 a.m. to make the several-hour journey to Seattle, sometimes escorted by her family, sometimes alone on the bus.</p>
-
                 </div> 
-          </div> 
-        </div>   
-        <video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/header.jpg' ?>" class=" fullscreen-bg__video">
+ 
+        <video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/bus2.jpg' ?>" class=" fullscreen-bg__video">
             <!-- <source src="img/street-bw-webm.webm" type="video/webm"> -->
-            <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/foster-school/Bus1.mp4' ?>" type="video/mp4">
-            <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/foster-school/Bus1.webm' ?>" type="video/webm">
+            <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/foster-school/Bus2.mp4' ?>" type="video/mp4">
+            <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/foster-school/Bus2.webm' ?>" type="video/webm">
         </video>
       </section>
 

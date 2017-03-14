@@ -140,7 +140,6 @@ p {
             top: 50%;
             left: 0;
             width: 100%;
-            text-align: center;
             margin-top: 0;
             .translate(0,-50%);
         }
@@ -188,9 +187,23 @@ p {
             top: 50%;
             left: 0;
             width: 100%;
-            text-align: center;
             margin-top: 0;
-            .translate(0,-30%);
+            .translate(0,-50%);
+        }
+        p {
+            line-height: 1.4;
+            font-size: .65em;
+        }
+        #intro-text {
+            a {
+                p {
+                    .translate(0,-10px);
+                }
+            }
+            svg {
+                height: auto;
+                width: 35px;
+            }
         }
         video {
             object-position: 10% 50%;
@@ -551,16 +564,18 @@ p {
     // background-position: right center;
     position: relative;
     overflow: hidden;
-    .container {
+    .copy {
         z-index: 1;
         position: relative;
     }
     video {
         position: absolute;
-        top: 0;
+        bottom: 0;
         right: 0;
-        width: 100%;
+        min-width: 100%;
+        left: 0;
         z-index: 0;
+        min-height: 100%;
     }
     p {
         font-family: @uni;
@@ -592,11 +607,7 @@ p {
         // background-image: url("@{foster}/bus-ride-mobile.jpg");
         background-color: black;
         video {
-            position: absolute;
-            top: 0;
-            width: auto;
-            z-index: 0;
-            height: 100%;
+
             opacity: .5;
         }
     }              //  (max-width: 599px)          
@@ -615,7 +626,13 @@ p {
             }
         }
      }      //  (min-width: 600px) 
-    // @media @tablet-portait-only { }     //  (min-width: 600px) and (max-width: 899px) 
+    @media @tablet-portait-only {
+        background-color: black;
+        video {
+
+            opacity: .5;
+        }
+    }     //  (min-width: 600px) and (max-width: 899px) 
     // @media @tablet-landscape-up { }     //  (min-width: 900px)
     // @media @tablet-landscape-only { }   //  (min-width: 900px) and (max-width: 1199px) 
     // @media @desktop-up { }              //  (min-width: 1200px)     
@@ -625,10 +642,10 @@ p {
 
 .bus-map {
     height: 61vw;
-    background-image: url("@{foster}/map-temp.jpg");
+    background-image: url("@{foster}/map.jpg");
     .background-cover(cover);
     position: relative;
-    margin-top: 25vw;
+    margin-top: -25vw;
     margin-bottom: 10px;
     vertical-align: top;
     display: inline-block;
@@ -640,15 +657,10 @@ p {
     }
     .path {
       stroke-dasharray: 1500;
-      stroke-dashoffset: 1500;
-      animation: dash 5s linear forwards infinite;
-      animation-delay: 2s;
-    }
-
-    @keyframes dash {
-      to {
-        stroke-dashoffset: 0;
-      }
+      -webkit-filter: drop-shadow( -5px -5px 5px #000 );
+              filter: drop-shadow( -5px -5px 5px #000 );
+     // stroke-dashoffset: 1300;
+     // animation: dash 5s linear alternate infinite;
     }
     .miles {
         position: absolute;
@@ -1174,7 +1186,7 @@ div.boundless-headline {
         .inset-pics {
             width: 65%;
             margin-right: -20%;
-            margin-top: -15%;
+            margin-top: -11%;
             float: right;
             padding: 0 0 20px 60px;
         }
