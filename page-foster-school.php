@@ -59,7 +59,7 @@
                     
                     <p class="bolder"><b>From her first day of kindergarten, Yesenia Velasquez knew that she would have to work harder than the other kids.</b></p>
                     
-                    <p>She arrived in school without English or many advantages, save for wit and genuine grit. Her parents had immigrated to the Yakima Valley from Jalisco, Mexico, before she was born. To make a life in                    
+                    <p>She arrived in school without many advantages, save for wit and genuine grit. Her parents had immigrated to the Yakima Valley from Jalisco, Mexico, before she was born. To make a life in                    
                     the United States, they worked hard at thankless jobs, Gonzalo forging bricks and Catalina packing produce.</p>
                     
                     <p>But they wanted more for their three daughters.</p>

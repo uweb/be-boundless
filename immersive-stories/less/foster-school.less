@@ -241,6 +241,9 @@ p {
                 display: block;
             }
         }
+        video {
+            object-position: 100% 50%;
+        }
     }              //  (min-width: 1200px)     
     @media @desktop-only { }            //  (min-width: 1200px) and (max-width: 1799px)"     
     @media @big-desktop-up { }          //  (min-width: 1800px)     
@@ -1047,6 +1050,7 @@ div.boundless-headline {
         overflow:hidden;
         img {
             .transition(transform .3s linear);
+            width: 100%;
             &:hover {
                 .scale(1.2,1.2);
             }
