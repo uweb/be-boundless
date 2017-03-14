@@ -52,7 +52,7 @@
                   foreach ($units as $unit => $ID) {
                       if($ID != '2760' && $ID != '3969' ){
                         $title = get_the_title($ID);
-                        $search = array(" ","&amp;","&");
+                        $search = array(" ","&amp;","&",".");
                         $slug = ( str_replace($search,"-",strtolower($title)) );
                         echo '<li><p><a href="#" class="fyp-filter-click" data-category="Areas Links" data-label="' . $title . '" data-filter="' . $slug . '">' . $title . '</a></p></li>';
                       }
