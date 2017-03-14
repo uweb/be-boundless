@@ -16,8 +16,8 @@
   <button id="pause">Pause</button>
   <video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/header.jpg' ?>" class="fullscreen-bg__video">
       <!-- <source src="img/street-bw-webm.webm" type="video/webm"> -->
-      <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/foster-school/STANDING_LOOP.mp4' ?>" type="video/mp4">
-      <!-- <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/foster-school/foster.webm' ?>" type="video/webm"> -->
+      <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/foster-school/top.mp4' ?>" type="video/mp4">
+      <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/foster-school/top.webm' ?>" type="video/webm">
   </video>
 
 
@@ -136,7 +136,7 @@
                   <p>“No matter the trouble to get there,” she says, “it was worth it.”</p>
                   <p>Hearing the stories of each session’s featured speaker — senior executives who look like and come from the same backgrounds as the students — she began to visualize what she could become. Even the                   location stirred the soul.</p>
                   <p>Yesenia recalls how her first YEOC session was the first time she’d visited a college campus. “It was amazing,” she says,</p>
-                  <blockquote><span>&ldquo;</span>walking into the giant atrium of PACCAR Hall and thinking, okay, <i>this is possible</i>. I can see myself here.<span>&rdquo;</span></blockquote>
+                  <blockquote><span>&ldquo;</span>Walking into the giant atrium of PACCAR Hall and thinking, okay, <i>this is possible</i>. I can see myself here.<span>&rdquo;</span></blockquote>
 
                 </div> 
           </div> 
@@ -229,11 +229,18 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-1 col-xs-10 col-lg-offset-1 col-xs-offset-1 copy">
                     
+                  
+
                   <p>Yesenia awoke at 4 a.m. to make the several-hour journey to Seattle, sometimes escorted by her family, sometimes alone on the bus.</p>
 
                 </div> 
           </div> 
         </div>   
+        <video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/header.jpg' ?>" class=" fullscreen-bg__video">
+            <!-- <source src="img/street-bw-webm.webm" type="video/webm"> -->
+            <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/foster-school/bus1.mp4' ?>" type="video/mp4">
+            <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/foster-school/bus1.webm' ?>" type="video/webm">
+        </video>
       </section>
 
   
@@ -317,7 +324,6 @@ partner with the UW. </p>
                <div class="cutout"><div></div></div>
                <div class="copy">
                  <blockquote><span>&ldquo;</span>We are a purpose-driven organization. Our goal is to build a better working world. And part of that goal is building a more diverse working world. Diverse teams are better teams. When we bring diversity — of ethnicity, gender, experience, thought — to the table, we present better solutions to our clients.<span>&rdquo;</span></blockquote>
-                 
                </div>
                <span><b>Christian Tinder </b>// Principal, EY</span>
              </div> 

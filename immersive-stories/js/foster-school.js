@@ -82,7 +82,7 @@ $(function(){
 
     var picsParallax = new TimelineMax ()
           .add([
-            TweenMax.to('.inset-pics', 1,    { transform: 'translateY(0)', ease: Power0.easeIn }),
+            TweenMax.to('.inset-pics', 1,    { transform: 'translateY(-50px)', ease: Power0.easeIn }),
             TweenMax.to('.inset-pics div:nth-child(2)', 1,    { transform: 'translateY(-50px)', ease: Power0.easeIn }),
             TweenMax.to('.inset-pics div:nth-child(3)', 1,    { transform: 'translateY(-100px)', ease: Power0.easeIn, delay: 0.5 }),
           ])
