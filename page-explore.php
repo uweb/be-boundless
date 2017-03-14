@@ -242,7 +242,7 @@
            // }
           //
            //get the slug
-            $search = array(" ","&amp;","&","'","#8217;");
+            $search = array(" ","&amp;","&","'","#8217;",".");
             $slug = ( str_replace($search,"-",strtolower($unit->post_title)) );
 
             //get all funds alloc codes
