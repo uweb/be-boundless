@@ -59,6 +59,8 @@ $(function(){
       e.preventDefault(); 
       var $immersiveGiveIframe = $('#immersive-give-iframe');
 
+      $('.giving-widget').addClass('active');
+      
       if(isEmpty($immersiveGiveIframe)) {
         $('<iframe>', {
           src: 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&source_typ=3&appeal=17XIS&source=' + e.target.getAttribute('data-fund'),

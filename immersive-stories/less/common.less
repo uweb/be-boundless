@@ -82,24 +82,6 @@ button.close-video {
     }
 }
 
-// Giving button at the bottom of the page
-
-#immersive-give-iframe {
-    iframe {
-        width: 100% !important;
-    }
-    @media(min-width:768px) {
-        iframe {
-            height: 74vw !important;
-        }
-    }
-    @media(min-width:1200px) {
-        iframe {
-            height: 56vw !important;
-        }
-    }
-}
-
 
 div.audio {
     // Play button
@@ -251,14 +233,50 @@ div.audio {
 }
 
 
+// Giving button at the bottom of the page
+
+#immersive-give-iframe {
+    iframe {
+        height: 0 !important;
+        .transition(all 5s linear);
+        transition-delay: 5s;
+    }
+    .active & {
+       @media(min-width:768px) {
+           iframe {
+               height: 74vw !important;
+           }
+       }
+       @media(min-width:1200px) {
+           iframe {
+               height: 760px !important;
+           }
+       }
+    }
+    iframe {
+        width: 100% !important;
+    }
+
+}
+
 
 .text-block.giving-widget {
     background-color: @ultralightgold;
+
     &.branded {
         background-image: url("@{common}/mountain.jpg");
         .background-cover(cover);
         background-position: center bottom;
+        background-repeat: no-repeat;
         margin-top: 70px;
+        background-color: #04030b;
+        &.active {
+            .background-cover(100% auto);
+            background-position: center top;
+            .boundless-button {
+                display: none;
+            }
+        }
         h2.headline-gold {
             color: white;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
