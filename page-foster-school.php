@@ -17,7 +17,7 @@
   <video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/header.jpg' ?>" class="fullscreen-bg__video">
       <!-- <source src="img/street-bw-webm.webm" type="video/webm"> -->
       <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/foster-school/top.mp4' ?>" type="video/mp4">
-      <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/foster-school/top.webm' ?>" type="video/webm">
+      <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/foster-school/top.webm' ?>" type="video/webm">
   </video>
 
 
@@ -232,8 +232,8 @@
  
         <video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/bus2.jpg' ?>" class=" fullscreen-bg__video">
             <!-- <source src="img/street-bw-webm.webm" type="video/webm"> -->
-            <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/foster-school/Bus2.mp4' ?>" type="video/mp4">
-            <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/foster-school/Bus2.webm' ?>" type="video/webm">
+            <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/foster-school/bus2.mp4' ?>" type="video/mp4">
+            <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/foster-school/bus2.webm' ?>" type="video/webm">
         </video>
       </section>
 
