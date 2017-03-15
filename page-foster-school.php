@@ -104,24 +104,14 @@
 
                 <div id="eng-slideshow" class="foster-slideshow">
                    <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-3.jpg' ?>" alt="">
-                    <p>Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue.</p></div>
+                    <p>Yesenia (right) Velasquez with one of her two younger sisters, Diana Guadalupe, at their childhood home in Yakima.</p></div>
 
                   <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-1.jpg' ?>" alt="">
-                    <p>Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue.</p>
+                    <p>Yesenia’s parents, Catalina and Gonzalo Velasquez, at the plaza in Tepatitlán de Morelos, Jalisco, Mexico.</p>
                   </div>
-
-                  <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-2.jpg' ?>" alt="">
-                    <p>Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue.</p>
-                  </div>
-                 
-                  <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-4.jpg' ?>" alt="">
-                      <p>Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue.</p></div>
-                  
-                  <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-5.jpg' ?>" alt="">
-                    <p>Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue.</p></div>
-                  
-                    <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-6.jpg' ?>" alt="">
-                      <p>Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue.</p></div>      
+                
+                  <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-6.jpg' ?>" alt="">
+                      <p>Yesenia (far right) with others from her soccer team, the Shooting Stars, after a game in the Tri-Cities. “That’s where my dad’s pride would come out a lot — he loves soccer,” says Yesenia.</p></div>      
 
 
                 </div>
@@ -331,7 +321,7 @@ partner with the UW. </p>
               <div class="row">
                   <div class="col-md-10 col-md-offset-1 copy ">
                     <div style="text-align: center">             
-                      <h2 class="headline-gold">What you care about can change the world</h2>
+                      <h2 class="headline-gold">What you care about <br>can change the world</h2>
                       <p>You can help the University of Washington empower possibility <br>through innovation by contributing to these funds.</p>
                       <div id="immersive-give-iframe"></div>
                       <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="GSPAED,EVAN50" href="#">Give now</a></span></div>
