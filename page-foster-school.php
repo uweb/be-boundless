@@ -131,11 +131,11 @@
 
                   <h3>Ambition meets opportunity</h3>
 
-                  <p>A partnership of the Foster School and the accounting firm Ernst &amp; Young (EY), YEOC is a nine-month program that provides an introduction to business careers, professional development, college                   preparation and mentoring to some of the most promising high school students from underrepresented minority communities around the state. The goal is to unlock potential, offer opportunity and,                   ultimately, to expand prosperity.</p>
+                  <p>A partnership of the Foster School and the professional services firm Ernst &amp; Young (EY), YEOC is a nine-month program that provides an introduction to business careers, professional development, college                   preparation and mentoring to some of the most promising high school students from underrepresented minority communities around the state. The goal is to unlock potential, offer opportunity and,                   ultimately, to expand prosperity.</p>
                   <p>One Saturday each month throughout her senior year, Yesenia awoke at 4 a.m. to make the several-hour journey to Seattle, sometimes escorted by her family, sometimes alone on the bus. These treks                   were richly rewarded with practical information and profound inspiration.</p>
                   <p>“No matter the trouble to get there,” she says, “it was worth it.”</p>
                   <p>Hearing the stories of each session’s featured speaker — senior executives who look like and come from the same backgrounds as the students — she began to visualize what she could become. Even the                   location stirred the soul.</p>
-                  <p>Yesenia recalls how her first YEOC session was the first time she’d visited a college campus. “It was amazing,” she says,</p>
+                  <p>Yesenia recalls how her first YEOC session was the first time she’d visited a college campus. “It was amazing,” she says.</p>
                   <blockquote><span>&ldquo;</span>Walking into the giant atrium of PACCAR Hall and thinking, okay, <i>this is possible</i>. I can see myself here.<span>&rdquo;</span></blockquote>
 
                 </div> 
@@ -296,15 +296,15 @@
 
 <p>The Young Executives of Color program was established at the University of Washington Foster School of Business in 2006. Its mission is to cultivate the academic potential of underrepresented high school student leaders in Washington state.</p>
 
-<p>YEOC began with 36 students from 17 high schools. Today, the partnership with the accounting firm EY brings 170 sophomores, juniors and seniors from 75 high schools around the state to the Foster campus one Saturday a month during the academic year.</p>
+<p>YEOC began with 36 students from 17 high schools. Today, the partnership with the professional services firm EY brings 170 sophomores, juniors and seniors from 75 high schools around the state to the Foster campus one Saturday a month during the academic year.</p>
 
 
 <h3>Fostering diversity</h3>
 
-<p>The accounting firm EY doesn’t just underwrite the UW Foster School’s Young Executives of Color Program. It also provides volunteers, recruits high-level executives as keynote 
+<p>EY doesn’t just underwrite the UW Foster School’s Young Executives of Color Program. It also provides volunteers, recruits high-level executives as keynote 
 speakers, delivers professional development exercises and offers invaluable consulting on curriculum, topics and activities. </p>
 
-<p>“The mission of YEOC really aligns with EY’s passion around fostering diversity,” says Christian Tinder, ’99, a principal in EY’s advisory practice and the firm’s coordinating 
+<p>“The mission of YEOC aligns with EY's passion for promoting equity in the workforce — championing diversity and inclusiveness — which is at the very heart of EY's values,” says Christian Tinder, ’99, a principal in EY’s advisory practice and the firm’s coordinating 
 partner with the UW. </p>
 
                 </div> 
@@ -326,13 +326,13 @@ partner with the UW. </p>
 
 
 
-      <section class="text-block giving-widget">
+      <section class="text-block giving-widget branded arrow">
           <div class="container">
               <div class="row">
                   <div class="col-md-10 col-md-offset-1 copy ">
                     <div style="text-align: center">             
-                      <h2 class="headline-gold">Support tomorrow's business leaders</h2>
-                      <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. You can help the Foster School of Business and Young Executives of Color transform the lives of more students like Yesenia Velasquez by contributing to these funds.</p>
+                      <h2 class="headline-gold">What you care about can change the world</h2>
+                      <p>You can help the University of Washington empower possibility <br>through innovation by contributing to these funds.</p>
                       <div id="immersive-give-iframe"></div>
                       <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="GSPAED,EVAN50" href="#">Give now</a></span></div>
                     </div>
