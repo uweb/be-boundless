@@ -94,8 +94,7 @@
                 <div class="col-md-10 col-md-offset-1 copy">
 
 
-                <p>That craving eventually earned her a spot in the rigorous Running Start program in high school. The flexible schedule allowed her to work longer shifts at McDonald’s, where she earned enough to 
-                afford some of the “extras” that many teenagers take for granted: school clothes, textbooks, band travel, graphing calculators.</p>
+                <p>That craving eventually led her to participate in the rigorous Running Start program in high school. The flexible schedule allowed her to work longer shifts at McDonald’s, where she earned enough to afford some of the “extras” that many teenagers take for granted: school clothes, textbooks, band travel, graphing calculators.</p>
 
                 <p>But no matter how hard she worked or how much she learned, college looked no less expensive or intimidating to Velasquez. Besides, what would she study? Growing up in a working-class Hispanic 
                 community, the possibilities seemed abstract at best. Law? Medicine? She had never even heard of accounting.</p>
@@ -103,14 +102,14 @@
                 <p>And then she discovered the Young Executives of Color (YEOC) Program at the University of Washington Foster School of Business.</p>
 
                 <div id="eng-slideshow" class="foster-slideshow">
-                   <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-3.jpg' ?>" alt="">
+                   <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-3.jpg' ?>" alt="Velasquez with one of her two younger sisters">
                     <p>Yesenia (right) Velasquez with one of her two younger sisters, Diana Guadalupe, at their childhood home in Yakima.</p></div>
 
-                  <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-1.jpg' ?>" alt="">
+                  <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-1.jpg' ?>" alt="Yesenia’s parents">
                     <p>Yesenia’s parents, Catalina and Gonzalo Velasquez, at the plaza in Tepatitlán de Morelos, Jalisco, Mexico.</p>
                   </div>
                 
-                  <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-6.jpg' ?>" alt="">
+                  <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-6.jpg' ?>" alt="Yesenia with others from her soccer team">
                       <p>Yesenia (far right) with others from her soccer team, the Shooting Stars, after a game in the Tri-Cities. “That’s where my dad’s pride would come out a lot — he loves soccer,” says Yesenia.</p></div>      
 
 
@@ -124,7 +123,7 @@
                   <p>A partnership of the Foster School and the professional services firm Ernst &amp; Young (EY), YEOC is a nine-month program that provides an introduction to business careers, professional development, college                   preparation and mentoring to some of the most promising high school students from underrepresented minority communities around the state. The goal is to unlock potential, offer opportunity and,                   ultimately, to expand prosperity.</p>
                   <p>One Saturday each month throughout her senior year, Velasquez awoke at 4 a.m. to make the several-hour journey to Seattle, sometimes escorted by her family, sometimes alone on the bus. These treks                   were richly rewarded with practical information and profound inspiration.</p>
                   <p>“No matter the trouble to get there,” she says, “it was worth it.”</p>
-                  <p>Hearing the stories of each session’s featured speaker — senior executives who look like and come from the same backgrounds as the students — she began to visualize what she could become. Even the                   location stirred the soul.</p>
+                  <p>Hearing the stories of each session’s featured speaker — senior executives who look like and come from similar backgrounds as many of the students — she began to visualize what she could become. Even the                   location stirred the soul.</p>
                   <p>Velasquez recalls how her first YEOC session was the first time she’d visited a college campus. “It was amazing,” she says.</p>
                   <blockquote><span>&ldquo;</span>Walking into the giant atrium of PACCAR Hall and thinking, okay, <i>this is possible</i>. I can see myself here.<span>&rdquo;</span></blockquote>
 
@@ -137,7 +136,7 @@
 
 
 
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <svg aria-hidden="true" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            width="1500px" height="916px" viewBox="0 0 1500 916" enable-background="new 0 0 1500 916" xml:space="preserve">
         <path class="path" style="stroke-dashoffset: 1600px;" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
           M1247.608,823.186l-3.04-5.742c0,0,0.677-4.729,2.027-4.729s4.391,1.014,4.729,0s4.392-6.418,5.742-8.782s2.702-3.716,4.729-2.702
@@ -234,9 +233,9 @@
                 <div class="col-md-10 col-md-offset-1 copy">
                   
                     <div class="inset-pics">
-                      <div><img alt="Photo" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/studying-2.jpg' ?>"></div>
-                      <div><img alt="Photo" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/talking.jpg' ?>"></div>
-                      <div><img alt="Photo" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/studying.jpg' ?>"></div>
+                      <div><img alt="Yesenia studying" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/studying-2.jpg' ?>"></div>
+                      <div><img alt="Students talking" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/talking.jpg' ?>"></div>
+                      <div><img alt="Yesenia working" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/studying.jpg' ?>"></div>
                     </div>
 
 
@@ -270,7 +269,7 @@
 
       
       <section class="callout">
-        <img alt="Photo" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/smith-tower.jpg' ?>">
+        <img alt="Yesenia looking out from Smith Tower" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/smith-tower.jpg' ?>">
       </section>
 
 
