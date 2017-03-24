@@ -12,16 +12,12 @@ $(function(){
 
 
     var introMedicine = new ScrollMagic.Scene({
-      triggerElement: body,
+      triggerElement: '#intro-vid',
       triggerHook: 0,
-      duration: '50%',
-      reverse: true
-    })
-    .on('enter',function(){
-      $('video').get(0).play()
+      duration: '100%',
     })
     .setClassToggle("body", 'activated')
-    .setPin('#intro-vid', {pushFollowers: false})
+    .setPin('.intro', {pushFollowers: false})
     .setTween(fade)
     .addTo(controllerEvans);
 

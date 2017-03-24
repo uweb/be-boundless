@@ -85,11 +85,11 @@
             </svg>
             <small>Photo Credit: Soren Johnson</small></span>
         </section
-        ><section tabindex="0"  class="section" id="slide4" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg4-v2.jpg">
+        ><section tabindex="0"  class="section" id="slide4" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg4-v3.jpg">
           <div id="slide4text">
 
             <h2>Transform the student experience</h2>
-            <p><span class="hidden-xs">Explore how committing to scholarships and initiatives that support access to excellence for all students can transform the lives of people like the UW Tacoma's Tom Rochat.</p>            
+            <p>Explore how committing to scholarships and initiatives that support access to excellence for all students can transform the lives of people like the UW Tacoma's Tom Rochat.</p>            
              <a href="tacoma-transformation" data-controller='controllerTacoma' data-js="tacoma" data-title="Transform the student experience" class="uw-btn btn-sm btn-plus story-link">Read story</a><!-- <a href="http://www.washington.edu/boundless/explore/?utm_source=website&utm_medium=click&utm_campaign=students&utm_term=supporting-the-student-experience#students" class="uw-btn btn-sm">Opportunities</a> -->          
             <div class="related">
               <h3>Related stories</h3>
@@ -97,33 +97,35 @@
             </div>
           </div>
           <span class="slide4-content"></span>
-        </section><section tabindex="0"  class="section" id="slide5" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg5-v2.jpg">
+        </section><section tabindex="0"  class="section" id="slide5" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg5-v3.jpg">
           <div id="slide5text">
             <h2>Drive the public good</h2>
-            <p>Learn how supporting cutting-edge curriculum in special care dentistry can ensure all patients receive quality dental care.</p>
-             <a href="special-care-dentistry" data-controller='controllerDentistry' data-js="dentistry" data-title="Drive the public good" class="uw-btn btn-sm btn-plus story-link">Read story</a><!-- <a href="http://www.washington.edu/boundless/explore/?utm_source=website&utm_medium=click&utm_campaign=public-good&utm_term=expanding-education#public-good" class="uw-btn btn-sm">Opportunities</a> -->
+            <p>Learn how you can improve population health by supporting research projects like DeWorm3, which aims to stop the transmission of parasitic worms in developing countries.</p>
+             <a href="improving-public-health" data-controller='controllerPublic' data-js="public-health" data-title="Drive the public good" class="uw-btn btn-sm btn-plus story-link">Read story</a><!-- <a href="http://www.washington.edu/boundless/explore/?utm_source=website&utm_medium=click&utm_campaign=public-good&utm_term=expanding-education#public-good" class="uw-btn btn-sm">Opportunities</a> -->
             <div class="related">
               <h3>Related stories</h3>
               <a href="expanding-education" data-js="education" data-controller='controllerEducation' data-title="Nurturing minds, opening doors" class="arts-thumb story-link"><span>Nurturing minds, opening doors</span></a>
+              <a href="special-care-dentistry" data-controller='controllerDentistry' data-js="dentistry" data-title="Drive the public good" class="story-link"><span>Special care for healthy smiles</span></a>
             </div>
 
           </div>
           <span class="slide5-content"></span>
-        </section><section tabindex="0"  class="section" id="slide6" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg6-v2.jpg">
+        </section><section tabindex="0"  class="section" id="slide6" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg6-v3.jpg">
           <div id="slide6text">
               <h2>Expand our impact everywhere</h2>
-              <p>Discover how supporting opportunities like the Portfolio of Possibilities can champion students who become catalysts for positive change.</p>            
-              <a href="what-is-possible" data-js="arts" data-title="Transform the student experience" class="uw-btn btn-sm btn-plus story-link">Read story</a>
+              <p>Discover how support of educational programs and fellowships gives students opportunities that change not only their lives, but lives around the world.</p>            
+              <a href="evans-school-powering-policy" data-controller='controllerEvans'  data-js="evans-school" data-title="Transform the student experience" class="uw-btn btn-sm btn-plus story-link">Read story</a>
               <div class="related">
                 <h3>Related stories</h3>
                 <a href="targeting-cancer" data-js="medicine" data-title="Targeting cancer, precisely" class="medicine-thumb story-link"><span>Targeting cancer, precisely</span></a>
+                <a href="what-is-possible" data-js="arts" data-title="Transform the student experience" class="story-link"><span>What is possible?</span></a>
               </div>
           </div>
           <span class="slide6-content"></span>
-        </section><section tabindex="0"  class="section" id="slide7" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg7-v2.jpg">
+        </section><section tabindex="0"  class="section" id="slide7" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg7-v3.jpg">
           <div id="slide7text">
             <h2>Empower possibility through innovation</h2>
-            <p>Explore how your support of revolutionary people and programs &mdash; like UW Bothell's diversity-focused Digital Future Lab &mdash; can lead to inclusive innovation for the benefit of millions.</p>
+            <p>Find out how your support of revolutionary people and programs &mdash; like UW Bothell's diversity-focused Digital Future Lab &mdash; can lead to inclusive innovation for the benefit of millions.</p>
             <a href="bothell-gaming" data-js="bothell" data-controller='controllerBothell' data-title="Empower possibility through innovation" class="uw-btn btn-sm btn-plus story-link">Read story</a> <!-- <a href="http://www.washington.edu/boundless/explore/?utm_source=website&utm_medium=click&utm_campaign=innovation&utm_term=inclusive-engineering#innovation" class="uw-btn btn-sm">Opportunities</a> -->
             <div class="related">
               <h3>Related stories</h3>
