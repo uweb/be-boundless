@@ -225,8 +225,8 @@
                   
                     <div class="inset-pics">
                       <div><img alt="Yesenia studying" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/paccar.jpg' ?>"></div>
-                      <div><img alt="Students talking" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/talking.jpg' ?>"></div>
                       <div><img alt="Yesenia working" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/studying-3.jpg' ?>"></div>
+                      <div><img alt="Students talking" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/talking-2.jpg' ?>"></div>
                     </div>
 
 
@@ -251,7 +251,7 @@
                     <p>Velasquez sees mentoring as the first installment of a lifelong payback plan. From that first day of school, she has remained motivated both by her own expectations and by the pride and pressures of 
                     her family.  “My parents came from nothing and worked so hard for me to have these opportunities,” she says. “I want to pay them back. I want to make them proud.”</p>
 
-                    <p>Reflecting on everyone’s hard work, she muses, “Every now and then it hits me. I’m in college. I work in a skyscraper. I’ve been to New York and San Francisco and Morocco. All of these things I could never have imagined when I was in middle school,” Velasquez says. “No matter how hard I worked, I wouldn’t be where I am without YEOC.”</p>
+                    <p>Reflecting on everyone’s hard work, she muses, “Every now and then it hits me. I’m in college. I work in a skyscraper. I’ve been to New York and San Francisco and Morocco. All of these things I could never have imagined when I was in middle school,” Velasquez says.</p>
 
                 </div> 
           </div> 
@@ -260,7 +260,12 @@
 
       
       <section class="callout">
-        <img alt="Yesenia smiling" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/yesenia-2.jpg' ?>">
+        <div class="text-block">
+          <div class="copy"> 
+            <img alt="Yesenia smiling" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/yesenia-3.jpg' ?>">
+            <blockquote><span>&ldquo;</span>No matter how hard I worked, I wouldn’t be where I am without YEOC.<span>&rdquo;</span></blockquote>
+          </div>
+        </div>
       </section>
 
 
