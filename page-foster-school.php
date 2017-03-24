@@ -14,7 +14,7 @@
 
   <div class="intro-body">
         <div class="row">
-          <div class="col-md-6 col-lg-7 col-md-offset-1 col-xs-10 col-lg-offset-2 col-xs-offset-1" id='intro-text'>
+          <div class="col-md-6 col-lg-7 col-md-offset-1 col-xs-8 col-lg-offset-2 col-xs-offset-1" id='intro-text'>
               <h1><span><span>Where Will </span></span><span><span>Meets Way</span></span> </h1>
               <span class="udub-slant"><span></span></span>
               <p>For Yakima-born Yesenia Velasquez, the Young Executives of Color Program at the Foster School of Business has opened the door to a promising future she never knew existed.</p>

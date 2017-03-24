@@ -135,7 +135,12 @@ p {
             }
         }
     }
+
     @media @phone-only { 
+
+        background-image: url("@{foster}/yesenia-mobile.jpg");
+        .background-cover(cover);
+        background-position: right center;
         .intro-body {
             position: absolute;
             z-index: 1;
@@ -169,7 +174,16 @@ p {
         a.read-more {
             top: calc(~"100vh - 70px");
         }
-    }              //  (max-width: 599px)          
+    }              //  (max-width: 599px)   
+    @media (max-width: 500px) {
+        background-image: url("@{foster}/yesenia-mobile-portrait.jpg");
+        .intro-body {
+            top: 68%;
+            .col-xs-8 {
+                width: 85%;
+            }
+        }
+    }               //  (max-width: 599px)         
     @media @tablet-portrait-up { 
         #intro-text {
             a {
@@ -182,7 +196,8 @@ p {
 
     }      //  (min-width: 600px) 
     @media @tablet-portait-only { 
-
+         background-image: url("@{foster}/yesenia-tablet.jpg");
+         background-position: right center;
         .intro-body {
             position: absolute;
             z-index: 1;
@@ -194,7 +209,6 @@ p {
         }
         p {
             line-height: 1.4;
-            font-size: .65em;
         }
         #intro-text {
             a {
@@ -206,9 +220,6 @@ p {
                 height: auto;
                 width: 35px;
             }
-        }
-        video {
-            object-position: 10% 50%;
         }
         a.read-more {
             top: calc(~"100vh - 70px");
