@@ -100,7 +100,7 @@
         </section><section tabindex="0"  class="section" id="slide5" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg5-v3.jpg">
           <div id="slide5text">
             <h2>Drive the public good</h2>
-            <p>Learn how you can improve population health by supporting research projects like DeWorm3, which aims to stop the transmission of parasitic worms in developing countries.</p>
+            <p>Learn how you can improve population health by supporting efforts that use implementation science to turn discoveries into solutions for communities around the world.</p>
              <a href="improving-public-health" data-controller='controllerPublic' data-js="public-health" data-title="Drive the public good" class="uw-btn btn-sm btn-plus story-link">Read story</a><!-- <a href="http://www.washington.edu/boundless/explore/?utm_source=website&utm_medium=click&utm_campaign=public-good&utm_term=expanding-education#public-good" class="uw-btn btn-sm">Opportunities</a> -->
             <div class="related">
               <h3>Related stories</h3>

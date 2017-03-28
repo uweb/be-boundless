@@ -43,6 +43,7 @@ module.exports = function(grunt) {
           'immersive-stories/js/public-health.js',
           'immersive-stories/js/evans-school.js',
           'immersive-stories/js/foster-school.js',
+          'immersive-stories/js/ischool.js',
           'immersive-stories/js/engineering.js',
           'immersive-stories/js/medicine.js',
           'immersive-stories/js/arts.js',
@@ -117,10 +118,17 @@ module.exports = function(grunt) {
               // Popup video
               'immersive-stories/js/lity.js',
               // Leaflet
-              'immersive-stories/js/leaflet.js',
-              'immersive-stories/js/libraries/heatmap.min.js',
-              'immersive-stories/js/libraries/leaflet-heatmap.js',
               'immersive-stories/js/foster-school.js',
+              // Slideshow
+              'immersive-stories/js/slick.js',
+              'immersive-stories/js/objectFitPolyfill.basic.js',
+          ],           
+          'immersive-stories/js/ischool.min.js': [
+              'immersive-stories/js/common.js',
+              // Popup video
+              'immersive-stories/js/lity.js',
+              // Leaflet
+              'immersive-stories/js/ischool.js',
               // Slideshow
               'immersive-stories/js/slick.js',
               'immersive-stories/js/objectFitPolyfill.basic.js',
@@ -201,6 +209,7 @@ module.exports = function(grunt) {
                 'immersive-stories/css/public-health.css': 'immersive-stories/less/public-health.less',
                 'immersive-stories/css/evans-school.css': 'immersive-stories/less/evans-school.less',
                 'immersive-stories/css/foster-school.css': 'immersive-stories/less/foster-school.less',
+                'immersive-stories/css/ischool.css': 'immersive-stories/less/ischool.less',
                 'immersive-stories/css/medicine.css': 'immersive-stories/less/medicine.less',
                 'immersive-stories/css/arts.css': 'immersive-stories/less/arts.less',
                 'immersive-stories/css/bothell.css': 'immersive-stories/less/bothell.less',
