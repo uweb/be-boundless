@@ -722,12 +722,12 @@ body {
   color: #4b2e83;
   font-size: 17px;
 }
-#passion .full-bio .bio-text a {
+#passion .full-bio .bio-text a:not(.fyp-link) {
   color: #08d;
 }
-#passion .full-bio .bio-text a:hover,
-#passion .full-bio .bio-text a:active,
-#passion .full-bio .bio-text a:focus {
+#passion .full-bio .bio-text a:not(.fyp-link):hover,
+#passion .full-bio .bio-text a:not(.fyp-link):active,
+#passion .full-bio .bio-text a:not(.fyp-link):focus {
   color: #b7a57a;
   text-decoration: underline;
 }
