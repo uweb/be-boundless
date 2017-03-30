@@ -173,7 +173,7 @@
 
 
               <div class="pic">
-                <img alt="Ken Frye" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/ken.jpg' ?>">
+                <img alt="Martez Mott works on Smart Touch with Provail participant Ken Frye" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/ken.jpg' ?>">
                 <p>Martez Mott works on Smart Touch with Provail participant Ken Frye</p>
               </div>
 
@@ -203,7 +203,7 @@
 
 
           <div class="b-1">           
-              <h2 class="mixed"><span>Touch screens,</span>everywhere</h2>
+              <h2 class="mixed"><span>Touch screens, </span>everywhere</h2>
               
               <p>Failure is part of the learning process, and now — “after a <i>lot</i> of learning,” says Mott, laughing — he has a system up and running. And as he creates newer versions of Smart Touch over the next few years, retooling algorithms to improve accuracy and creating better designs for performance gains, the iterations will only get better. 
 </p>
@@ -232,7 +232,7 @@
         <div class="block">
 
           <div class="b-2">
-            <img alt="Ken Frye" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/kexp.jpg' ?>">
+            <img alt="Ken Frye chats with KEXP DJ Cheryl Waters" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/kexp.jpg' ?>">
             <p>Ken Frye chats with KEXP DJ Cheryl Waters</p>
             <iframe src="https://open.spotify.com/embed?uri=spotify%3Auser%3Auofwa%3Aplaylist%3A0c3eH0VDqfviySoeAzOKQE" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
             <p style="padding-top: 0"><b>Listen:</b> Ken Frye’s 10 favorite songs</p>
@@ -245,9 +245,7 @@
             </div>
           </div>
 
-          <div class="ken">
-            
-          </div>
+          <div class="ken"></div>
 
         </div>
       </section>
