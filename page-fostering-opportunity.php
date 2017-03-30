@@ -317,7 +317,7 @@ partner with the UW. </p>
                   <div class="col-md-10 col-md-offset-1 copy ">
                     <div style="text-align: center">             
                       <h2 class="headline-gold">What you care about <br>can change the world</h2>
-                      <p>You can help the University of Washington empower possibility <br>through innovation by contributing to these funds.</p>
+                      <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. You can help the Foster School of Business and Young Executives of Color transform the lives of more students like Yesenia Velasquez by contributing to these funds.</p>
                       <div id="immersive-give-iframe"></div>
                       <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="BEDDIS,UNDDIV,ACOUNT,YVBEND,EYEXCL" href="#">Give now</a></span></div>
                     </div>
@@ -325,7 +325,6 @@ partner with the UW. </p>
               </div>
         </div>
       </section>
-
 
 </main>
 
