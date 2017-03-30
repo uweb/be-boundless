@@ -1078,7 +1078,7 @@ div.boundless-headline {
     @media @phone-only { 
         .text-block .copy {
             padding: 0;
-            & >blockquote {
+            & > blockquote {
                 font-size: 17px;
             }
         }
@@ -1097,7 +1097,15 @@ div.boundless-headline {
     // @media @tablet-portait-only { }     //  (min-width: 600px) and (max-width: 899px) 
     // @media @tablet-landscape-up { }     //  (min-width: 900px)
     // @media @tablet-landscape-only { }   //  (min-width: 900px) and (max-width: 1199px) 
-    // @media @desktop-up { }              //  (min-width: 1200px)     
+    @media @desktop-up { 
+        .text-block .copy {
+            & > blockquote {
+                font-size: 40px;
+            }
+        }
+    }
+
+                  //  (min-width: 1200px)     
     // @media @desktop-only { }            //  (min-width: 1200px) and (max-width: 1799px)"     
     // @media @big-desktop-up { }          //  (min-width: 1800px)    
 }

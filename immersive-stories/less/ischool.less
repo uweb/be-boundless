@@ -55,7 +55,7 @@ p, li {
     background-position: center top;
     height: 103vh;
     width: 100vw;
-    background-color: #ffd300;
+    background-color: @yellow;
     text-align: center;
     .text {
         position: absolute;
@@ -84,7 +84,7 @@ p, li {
         left: -10vw;
         right: -10vw;
         bottom: -15vh;
-        background: #ffd300;
+        background: @yellow;
         .bottom-left,
         .bottom,
         .left,
@@ -204,8 +204,8 @@ p, li {
         }
         .devices {
             top: -27vh;
-            left: -3vw;
-            right: -10vw;
+            left: -23vw;
+            right: -20vw;
             bottom: -34vh;
         }
 
@@ -264,6 +264,13 @@ p, li {
         }
         p {
 
+        }
+    }
+
+     // Special for smaller laptops
+    @media screen and (min-width:1200px) and ( max-height: 950px ){
+        .text {
+            left: 15vw;
         }
     }
 
@@ -377,6 +384,7 @@ p, li {
                 blockquote {
                     font-size: 24px;
                     margin: 20px;
+                    margin-bottom: 60px;
                     &:before,
                     &:after {
                         font-size: 50px;
@@ -393,8 +401,12 @@ p, li {
     }              //  (max-width: 599px)          
     @media @tablet-portrait-up {
         h2 {
-            margin: -115px 20px 10px;
-            font-size: 66px;
+            margin: -33px 20px 10px;
+            font-size: 42px;
+            white-space: nowrap;
+            br {
+                display: none;
+            }
         }
         .block {
             position: relative;
@@ -437,6 +449,10 @@ p, li {
 
     }     //  (min-width: 600px) and (max-width: 899px) 
     @media @tablet-landscape-up {
+        h2 {
+            margin: -51px 20px 10px;
+            font-size: 66px;
+        }
         .block {
             .b-0 {
             }
@@ -547,7 +563,7 @@ div.boundless-headline {
 }
 
 .section-2 {
-    background: url("@{ischool}/comp-bg.jpg") center center no-repeat @yellow;
+    background: url("@{ischool}/comp-bg-II.jpg") center center no-repeat @yellow;
     .background-size(100%);
     padding: 20px 0 100px;
    -webkit-flex-flow: row wrap;
@@ -591,7 +607,7 @@ div.boundless-headline {
         }
     }
     @media @phone-only { 
-        padding: 80px 0 40px;
+        padding: 10px 0 40px;
         h2 {
         }
         .b-0 {
@@ -620,6 +636,7 @@ div.boundless-headline {
     }              //  (max-width: 599px)          
     @media @tablet-portrait-up {
         h2 {
+
         }
         .b-0 {
             p {
@@ -751,6 +768,7 @@ div.boundless-headline {
                 div:first-child {
                     height: 490px;
                     margin-top: -120px;
+                    overflow: hidden;
                 }                
                 div:last-child {
                     padding: 0 20px;
@@ -775,12 +793,15 @@ div.boundless-headline {
     }              //  (max-width: 599px)          
     @media @tablet-portrait-up {
         h2 {
-            margin: -115px 0 30px;
+            margin: -54px 0 30px;
             font-size: 66px;
+            br {
+                display: none;
+            }
         }
-        #martez {
-            .translate(0,200px);
-        }
+       // #martez {
+       //     .translate(0,200px);
+       // }
         .block {
             position: relative;
             width: 88%;
@@ -811,10 +832,21 @@ div.boundless-headline {
                     right: -40px;
                     bottom: -50px
                 }
-                div:first-child {
+                & > div:first-child {
                     width: 30%;
                     margin-top: -10%;
                     overflow: hidden;
+                    position: relative;
+                    #martez-II {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-image: url("@{ischool}/smart-II.png");
+                        .background-cover(cover);
+                        opacity: 0;
+                    }
                 }
                 div:last-child {
                     width: 70%;
@@ -850,7 +882,7 @@ div.boundless-headline {
             .b-1 {
                 &:after {
                 }
-                div:first-child {
+                & > div:first-child {
                     display: -webkit-flex;
                     display: flex;
                     -webkit-flex-direction: row; 
@@ -864,7 +896,7 @@ div.boundless-headline {
             }
         }
         h2 {
-            margin: -80px 0 30px;
+            margin: -40px 0 30px;
             font-size: 47px;
         }
     }     //  (min-width: 600px) and (max-width: 899px) 
@@ -883,7 +915,7 @@ div.boundless-headline {
             .b-1 {
                 &:after {
                 }
-                div:first-child {
+                & > div:first-child {
                     img {
                         object-fit: cover;
                         object-position: 0 0;
@@ -965,6 +997,14 @@ div.boundless-headline {
         .b-1 {
             background: white;
             box-shadow: 15px 15px 0 rgba(0, 0, 0, 0.14);
+            div.pic {
+                p {
+                    font-size: 15px;
+                    line-height: 1.3;
+                    color: black;
+                    margin: 15px 0 20px 0;
+                }
+            }
         }
         .b-2 {
             display: -webkit-flex;
@@ -1005,13 +1045,11 @@ div.boundless-headline {
         }
     }
     @media @phone-only { 
-        padding: 80px 0 40px;
+        padding: 50px 0 40px;
         h2 {
-            margin: -61px 0 10px;
+            margin: -31px 0 10px;
             font-size: 36px;
-            span {
-                text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.49);
-            }
+            white-space: nowrap;
         }
         .block {
             width: 100%;
@@ -1019,6 +1057,8 @@ div.boundless-headline {
             .b-2 {
             }
             .b-1 {
+                padding: 0 20px;
+                margin: 0 15px;
             }
             .b-2 {
                 blockquote {
@@ -1042,7 +1082,7 @@ div.boundless-headline {
         -webkit-align-items: flex-end;
         align-items: flex-end;
         h2 {
-            margin: -56px 0 30px;
+            margin: -55px 0 30px;
             font-size: 66px;
         }
         .block {
@@ -1070,11 +1110,6 @@ div.boundless-headline {
                     float: right;
                     img {
                         box-shadow: 15px 15px 0 rgba(0, 0, 0, 0.14);
-                    }
-                    p {
-                        font-size: 15px;
-                        color: black;
-                        margin: 20px 0 0 0px;
                     }
                 }
                 &:after {
@@ -1126,8 +1161,9 @@ div.boundless-headline {
             }
         }
         h2 {
-            margin: -80px 0 30px;
+            margin: -39px 0 30px;
             font-size: 47px;
+            white-space: nowrap;
         }
     }     //  (min-width: 600px) and (max-width: 899px) 
     @media @tablet-landscape-up {
@@ -1197,9 +1233,9 @@ div.boundless-headline {
     padding: 100px 15%;
     background-color: white;
     h2 {
-        font-size: 80px;
         color: @yellow;
         text-transform: uppercase;
+        line-height: 1.1;
     }
     div {
         position: relative;
@@ -1213,10 +1249,33 @@ div.boundless-headline {
             top: -170px;
         }
     }
-    // @media @phone-only { }              //  (max-width: 599px)          
-    // @media @tablet-portrait-up { }      //  (min-width: 600px) 
+    @media @phone-only {
+        padding: 25px;
+        div {
+            span {
+                width: 130px;
+                height: 127px;
+                right: 0;
+                top: -70px;
+            }
+        }
+        h2 {
+            font-size: 30px;
+            width: 65%;
+            margin: 0;
+        }
+    }              //  (max-width: 599px)          
+    @media @tablet-portrait-up { 
+        h2 {
+            font-size: 50px;
+        }
+    }      //  (min-width: 600px) 
     // @media @tablet-portait-only { }     //  (min-width: 600px) and (max-width: 899px) 
-    // @media @tablet-landscape-up { }     //  (min-width: 900px)
+    @media @tablet-landscape-up { 
+        h2 {
+            font-size: 80px;
+        }
+    }     //  (min-width: 900px)
     // @media @tablet-landscape-only { }   //  (min-width: 900px) and (max-width: 1199px) 
     // @media @desktop-up { }              //  (min-width: 1200px)     
     // @media @desktop-only { }            //  (min-width: 1200px) and (max-width: 1799px)"     
@@ -1229,7 +1288,7 @@ div.boundless-headline {
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 100%; 
-    background-color: @yellow;
+    background-color: transparent;
     padding: 140px 0 100px;
     h2 {
         margin-top: -54px;
@@ -1293,7 +1352,7 @@ div.boundless-headline {
         padding: 80px 0 40px;
         h2 {
             margin: -61px 0 10px;
-            font-size: 36px;
+            font-size: 30px;
         }
         .block {
             width: 100%;
@@ -1302,6 +1361,7 @@ div.boundless-headline {
             }
             .b-1 {
                 padding: 30px;
+                margin: 0 15px;
             }
             .b-2 {
                 blockquote {
@@ -1347,17 +1407,17 @@ div.boundless-headline {
                 padding: 0 60px 40px 60px;
                 margin-bottom: 50px;
                 position: relative;
-                &:after {
-                    content: "";
-                    display: block;
-                    position: absolute;
-                    width: 60px; 
-                    height: 200px;
-                    .rotate(15deg);
-                    background-color: @yellow;
-                    right: -40px;
-                    bottom: -50px
-                }
+              //  &:after {
+              //      content: "";
+              //      display: block;
+              //      position: absolute;
+              //      width: 60px; 
+              //      height: 200px;
+              //      .rotate(15deg);
+              //      background-color: @yellow;
+              //      right: -40px;
+              //      bottom: -50px
+              //  }
             }
             .b-2 {
                 width: 20%;
@@ -1480,6 +1540,8 @@ div.boundless-headline {
         font-weight: @ultra;
         color: @yellow;
         text-transform: uppercase;
+        z-index: 1;
+        position: relative;
         span {
             color: white;
             display: block;
@@ -1508,69 +1570,99 @@ div.boundless-headline {
 
 
 
+
+
 .section-7 {
-    background-image: url("@{ischool}/lines.svg"), url("@{ischool}/pointer-icons-II.svg");
-    background-position: 0 0, 96% top;
+    background-image: url("@{ischool}/lines.svg");
+    background-position: 0 0;
     background-repeat: no-repeat;
-    background-size: 100%, auto; 
-    background-color: @yellow;
-    padding: 140px 0 30px;
+    background-size: 100%; 
+    background-color: transparent;
+    padding: 140px 0 0;
     h2 {
         margin-top: -54px;
         line-height: .9;
     }
     .block {
-        width: 85%;
         display: -webkit-flex;
         display: flex;
         -webkit-flex-flow: row wrap;
         flex-flow: row wrap;
+        -webkit-align-items: center;
+        align-items: center;
         .b-1 ,
         .b-2 {
         }
         .b-1 {
             background: white;
-            box-shadow: -15px 15px 0 rgba(0, 0, 0, 0.14);
-        }
-        .b-2 {
+            box-shadow: 15px 15px 0 rgba(0, 0, 0, 0.14);
             display: -webkit-flex;
             display: flex;
             -webkit-flex-direction: row; 
             flex-direction: row;
             -webkit-align-items: center;
             align-items: center;
-            blockquote {
+            p {
                 color: @purple;
-                -webkit-font-smoothing: antialiased;
-                border: none;
-                padding: 0;
-                margin: 0;
-                font-size: 21px;
-                font-weight: normal;
-                margin-right: 50px;
-                line-height: 1.2;
+                font-weight: bold;
+            }
+            blockquote {
+                font-family: @uni;
+                color: @darkgold;
+                font-size: 25px;
+                line-height: 1.3;
                 position: relative;
-                &:before,
-                &:after {
-                    content: "+";
-                    display: block;
+                border: none;
+                text-indent: 25px;
+                margin-bottom: 20px;
+                margin-top: 30px;
+                padding-left: 0;
+                span {
+                    font-family: @encode;
+                    font-weight: @ultra;
+                    color: @lightgold;
+                    font-size: 80px;
                     position: absolute;
-                    text-shadow: -3px 4px 0px rgba(0,0,0,0.2);
-                }
-                &:before {
-                    top: -100px;
-                    left: 0;
-
-                }
-                &:after {
-                    bottom: -100px;
-                    right: 0;
+                    &:nth-of-type(1) {
+                        left: -50px;
+                        top: -20px;
+                    }
+                    &:nth-of-type(2) {
+                        margin-left: -5px;
+                        margin-top: -5px;
+                    }
                 }
             }
         }
+        .b-2 {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column; 
+            flex-direction: column;
+            -webkit-align-items: center;
+            align-items: center;
+            p {
+                color: black;
+                font-size: 14px;
+                line-height: 1.4;
+                padding: 17px 15px 5px 13px;
+            }
+            iframe {
+                width: 90%;
+                margin: 40px 0 40px;
+                height: 350px !important;
+                max-width: 100%;
+                box-shadow: 15px 15px 0 rgba(0, 0, 0, 0.14);
+            }
+            img {
+                max-width: 90%;
+                box-shadow: 15px 15px 0 rgba(0, 0, 0, 0.14);
+            }
+            
+        }
     }
     @media @phone-only { 
-        padding: 80px 0 40px;
+        padding: 20px 0 0;
         h2 {
             margin: -61px 0 10px;
             font-size: 36px;
@@ -1578,18 +1670,22 @@ div.boundless-headline {
                 text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.49);
             }
         }
+        .ken {
+            width: 100%;
+            height: 90vw;
+            background: url("@{ischool}/ken-transparent.png");
+            .background-cover(cover);
+            margin-top: -80px;
+        }
         .block {
-            width: 95%;
+            width: 100%;
             .b-1 ,
             .b-2 {
             }
             .b-1 {
-                div:first-child {
-                    height: 490px;
-                    margin-top: -120px;
-                }                
-                div:last-child {
-                    padding: 0 20px;
+                margin: 0 24px;
+                & > div {
+                    padding: 10px 55px 50px 50px;
                 }
             }
             .b-2 {
@@ -1610,61 +1706,56 @@ div.boundless-headline {
         }
     }              //  (max-width: 599px)          
     @media @tablet-portrait-up {
+
+        -webkit-align-items: flex-end;
+        align-items: flex-end;
         h2 {
-            margin: -115px 0 30px;
+            margin: -56px 0 30px;
             font-size: 66px;
-        }
-        #martez {
-            .translate(0,200px);
         }
         .block {
             position: relative;
-            width: 88%;
+            width: 100%;
             .callout {
                 color: @purple;
                 font-size: 27px;
                 line-height: 1.3;
             }
-            .b-0 {
+            .ken {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 48%;
+                height: 51vw;
+                z-index: 3;
+                background: url("@{ischool}/ken-transparent.png");
+                .background-cover(cover);
             }
             .b-1 ,
             .b-2 {
             }
             .b-1 {
                 padding: 0;
-                display: -webkit-flex;
-                display: flex;
+                width: 70%;
+                padding: 40px 37% 40px 60px;
                 position: relative;
-                width: 100%;
                 &:after {
                     content: "";
                     display: block;
                     position: absolute;
                     width: 60px; 
                     height: 200px;
-                    .rotate(15deg);
+                    .rotate(-15deg);
                     background-color: @yellow;
-                    right: -40px;
-                    bottom: -50px
-                }
-                div:last-child {
-                    width: 30%;
-                    margin-top: -10%;
-                    overflow: hidden;
-                }
-                div:first-child {
-                    width: 70%;
-                    padding: 0 60px 40px 40px;
-                    b {
-                        font-family: @headline;
-                        color: @purple;
-                        font-weight: @ultra;
-                        text-transform: uppercase;
-                    }
+                    left: -40px;
+                    bottom: -50px;
                 }
             }
             .b-2 {
-                width: 100%;
+                width: 30%;
+                position: relative;
+                z-index: 1;
+                padding: 0 40px;
                 blockquote {
                     font-size: 30px;
                     margin: 60px;
@@ -1682,21 +1773,22 @@ div.boundless-headline {
         }
      }      //  (min-width: 600px) 
     @media @tablet-portait-only { 
+        padding: 30px 0 60px;
         .block {
+            -webkit-align-items: flex-start;
+            align-items: flex-start;
             .b-1 {
+                // order: 1;
+                padding: 40px 16% 40px 60px;
+                position: relative;
+                z-index: 2;
                 &:after {
+                    display: none;
                 }
-                div:last-child {
-                    display: -webkit-flex;
-                    display: flex;
-                    -webkit-flex-direction: row; 
-                    flex-direction: row;
-                    -webkit-align-items: flex-end;
-                    align-items: flex-end;
-                }
-                div:first-child {
-                    padding: 0 60px 40px 0;
-                }
+            }
+            .b-2 {
+                // order: 2;
+                width: 100%;
             }
         }
         h2 {
@@ -1717,31 +1809,12 @@ div.boundless-headline {
             .b-2 {
             }
             .b-1 {
-                &:after {
-                }
-                div:last-child {
-                    img {
-                        object-fit: cover;
-                        object-position: 0 0;
-                        height: 100%;
-                    }
-
-                }
-                div:first-child {
+                blockquote {
+                    font-size: 30px;
                 }
             }
             .b-2 {
-                blockquote {
-                    font-size: 40px;
-                    &:before,
-                    &:after {
-                    }
-                    &:before {
 
-                    }
-                    &:after {
-                    }
-                }
             }
         }
      }     //  (min-width: 900px)
@@ -1757,20 +1830,11 @@ div.boundless-headline {
             .b-2 {
             }
             .b-1 {
-                width: 70%;
+                blockquote {
+                    font-size: 35px;
+                }
             }
             .b-2 {
-                width: 30%;
-                blockquote {
-                    &:before,
-                    &:after {
-                    }
-                    &:before {
-
-                    }
-                    &:after {
-                    }
-                }
             }
         }
     }              //  (min-width: 1200px)     
@@ -1778,7 +1842,19 @@ div.boundless-headline {
     // @media @big-desktop-up { }          //  (min-width: 1800px)
 }
 
-
+.paraBackground {
+    background-color: @yellow;
+    position: relative;
+    .paraBG {
+        background: url("@{ischool}/phones-bg.jpg") no-repeat center center transparent;
+        width: 100%;
+         height: 80vw;
+        .background-cover(100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
 
 
 // Remove some of the white space padding per edits

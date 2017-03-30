@@ -60,14 +60,14 @@
       <section class="text-block yellow section-1">
         <div class="block">
 
-          <div class="b-0"><h2 class="mixed"><span>The many definitions</span> of “touch”</h2></div>
+          <div class="b-0"><h2 class="mixed"><span>The many <br>definitions</span> of “touch”</h2></div>
 
           <div class="b-1">
             <p>“I’m pretty sure if you went around and asked, ‘Hey, what do you think a touch is?’, you might get different answers, but it would probably converge around something that looks like this,” says Martez Mott, raising his pointer finger before tapping it on the table in front of him. “For the participants in my studies, that was not the case at all.”</p>
           
-              <p>Mott is a Ph.D. candidate in the UW’s Information School and an active member of the MAD (Mobile + Accessible Design) Lab and the DUB (Design. Use. Build.) Group, where his research centers on making touch screens accessible for people who live with motor impairments, from cerebral palsy to muscular dystrophy to Parkinson’s disease. </p>
+              <p>Mott is a Ph.D. candidate in the UW’s Information School and an active member of the philanthropy-funded MAD (Mobile + Accessible Design) Lab and the DUB (Design. Use. Build.) Group, where his research centers on making touch screens accessible for people who live with motor impairments, from cerebral palsy to muscular dystrophy to Parkinson’s disease. </p>
           
-              <p>“Touch screens were developed for a certain type of use,” says the Detroit native. It’s simple: If you want to interact with something on your device, you have to be able to extend a finger and touch it cleanly and accurately. “That’s it,” he says. “Everything else is relegated to some other type of functionality — if you touch your phone with two fingers, it thinks you’re trying to zoom.” </p>
+              <p>“Touch screens were developed for a certain type of use,” says Mott, who received financial support through the University of Washington Graduate Opportunity Award. It’s simple: If you want to interact with something on your device, you have to be able to extend a finger and touch it cleanly and accurately. “That’s it,” he says. “Everything else is relegated to some other type of functionality — if you touch your phone with two fingers, it thinks you’re trying to zoom.” </p>
           
               <p>For those who live with cerebral palsy, however, touch might look like patting the screen with the back of the hand, or dragging a palm or a fist. “When that happens, the screen picks up a big blobby area,” says Mott, “and the system has no idea what to do with it.”  </p>
           
@@ -85,16 +85,16 @@
       <section class="text-block yellow section-2">
         <div class="b-0">
           <div class="boundless-headline sm dark"><span><h2>How we touch</h2></span></div>
-          <p>What would happen if you couldn’t touch your device with one finger?</p>
+          <p>What happens if you can’t touch your device with a single finger?</p>
         </div>
         <div class="block">         
           <div>
             <img alt="ipad" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/ipad.png' ?>">
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis.</p>
+            <p>When a single finger makes contact with the screen, the device registers the center of that point as the user’s intended touch point. </p>
           </div>     
           <div>
             <img alt="ipad" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/ipad.png' ?>">
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis.</p>
+            <p>When the back or side of the hand makes multiple points of contact with the screen, the device can’t register which point is the user’s intended touch point. </p>
           </div>
         </div>
       </section>
@@ -109,11 +109,12 @@
           <div class="b-1">
             
             <div>
+              <div id="martez-II"></div>
              <img id="martez" alt="Martez Mott" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/smart.png' ?>">
             </div>
 
             <div>
-              <h2 class="mixed"><span>The many definitions</span> of “touch”</h2>
+              <h2 class="mixed"><span>Say hello </span>to smart<br> touch</h2>
               
               <p class="callout">Calibration software for touch-screen accessibility </p>
 
@@ -186,12 +187,15 @@
         <div>
           <span></span>
           <iframe width="1280" height="720" src="https://www.youtube.com/embed/jQjeTrAUjAs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+          <p>Ken Frye, a Provail participant in Mott’s study who has cerebral palsy, has been in the radio industry for over 40 years, with an impressive career that includes gigs at Seattle’s very own KEXP and Centralia’s Live 95.1. Today, he hosts his own radio show "Ken’s Ten," which features music from the ’20s to today “because all music can and <i>should</i> live together” — but that doesn’t come without its challenges. Watch to learn how Smart Touch could transform the way Frye navigates the world. </p>
         </div>
       </section>
 
       
 
-
+  <div class="paraBackground">
+      <div class="paraBG"></div>
       <section class="text-block yellow section-6">
         <div class="block">
 
@@ -199,12 +203,10 @@
           <div class="b-1">           
               <h2 class="mixed"><span>Touch screens,</span>everywhere</h2>
               
-              <p class="callout">With real-life users</p>
+              <p>Failure is part of the learning process, and now — “after a <i>lot</i> of learning,” says Mott, laughing — he has a system up and running. And as he creates newer versions of Smart Touch over the next few years, retooling algorithms to improve accuracy and creating better designs for performance gains, the iterations will only get better. 
+</p>
 
-
-              <p>But failure is part of the learning process, and now — “after a lot of learning,” says Mott, laughing — he has a system up and running. And as he creates newer versions of Smart Touch over the next few years, retooling algorithms to improve accuracy and creating better designs for performance gains, the iterations will only get better. </p>
-
-              <p>“The hope is that you could buy a device, turn on an accessibility setting, and then go through a calibration procedure for better touch performance so you can use your phone or tablet however you like,” says Mott, who’s slated to wrap up his dissertation by 2019. </p>
+              <p>“The hope is that you could buy a device, turn on an accessibility setting, and then go through a calibration procedure for better touch performance so you can use your phone or tablet however <i>you</i> like,” says Mott, who’s slated to wrap up his dissertation by 2019. </p>
 
 
               <p>“This research isn’t just a theoretical contribution; it’s a practical one,” he says. “Hearing my participants tell me how important and impactful this work can be in their daily lives is the most rewarding thing. It’s what drives me.” </p>
@@ -224,53 +226,45 @@
 
 
       
-      
-  
+      <section class="text-block yellow section-7">
+        <div class="block">
 
-  <section class="text-block yellow section-7">
-    <div class="block">
+          <div class="b-2">
+            <img alt="Ken Frye" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/kexp.jpg' ?>">
+            <p>Ken Frye chats with KEXP DJ Cheryl Waters</p>
+            <iframe src="https://open.spotify.com/embed?uri=spotify%3Auser%3Auofwa%3Aplaylist%3A0c3eH0VDqfviySoeAzOKQE" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+          </div>
 
-  
-      <div class="b-2">
-        <iframe src="https://open.spotify.com/embed?uri=spotify%3Auser%3Auofwa%3Aplaylist%3A0c3eH0VDqfviySoeAzOKQE" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-      </div>
+          <div class="b-1">           
+            <div>
+              <blockquote><span>&ldquo;</span>My hope for technology is that somebody like me can be clearly understood. Having a device I could use would mean freedom.<span>&rdquo;</span></blockquote>
+              <p>Ken Frye</p>
+            </div>
+          </div>
 
-      <div class="b-1">
-        
-        <div>
-          <h2 class="mixed"><span>The many definitions</span> of “touch”</h2>
-          
-          <p class="callout">Calibration software for touch-screen accessibility </p>
-
-          <blockquote>My hope for technology is that somebody like me can be clearly understood. Having a device I could use would mean freedom.</blockquote>
-          <p>My hope for technology is that somebody like me can be clearly understood. Having a device I could use would mean freedom.</p>
+          <div class="ken">
+            
+          </div>
 
         </div>
-
-        <div>
-         <img id="martez" alt="Martez Mott" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/ken-transparent.png' ?>">
-        </div>
-
-      </div>
-
-    </div>
-  </section>
+      </section>
+  </div>
 
 
-                <section class="text-block giving-widget">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 col-md-offset-1 copy ">
-                              <div style="text-align: center">             
-                                <h2 class="headline-gold">Help make a difference</h2>
-                                <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. By supporting the Evans School of Public Policy &amp; Governance, more students can take part in opportunities that change not only their lives, but also those of people around the world.</p>
-                                <div id="immersive-give-iframe"></div>
-                                <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="GSPAED,EVAN50" href="#">Give now</a></span></div>
-                              </div>
-                            </div>
-                        </div>
+      <section class="text-block giving-widget branded arrow">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-10 col-md-offset-1 copy ">
+                    <div style="text-align: center">             
+                      <h2 class="headline-gold">What you care about <br>can change the world</h2>
+                      <p>You can help the University of Washington empower possibility <br>through innovation by contributing to these funds.</p>
+                      <div id="immersive-give-iframe"></div>
+                      <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="GSPAED,EVAN50" href="#">Give now</a></span></div>
+                    </div>
                   </div>
-                </section>
+              </div>
+        </div>
+      </section>
 
 
 
