@@ -89,12 +89,12 @@
         </div>
         <div class="block">         
           <div>
-            <img alt="ipad" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/ipad.png' ?>">
+            <img alt="ipad screen showing user touching with finger" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/ipad.png' ?>">
             <img class="animation" loop alt="ipad" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/single-loop.gif' ?>">
             <p>When a single finger makes contact with the screen, the device registers the center of that point as the user’s intended touch point. </p>
           </div>     
           <div>
-            <img alt="ipad" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/ipad.png' ?>">
+            <img alt="ipad screen showing user touching with whole hand" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/ipad.png' ?>">
             <img class="animation" loop alt="ipad" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/multiple-loop.gif' ?>">
             <p>When the back or side of the hand makes multiple points of contact with the screen, the device can’t register which point is the user’s intended touch point. </p>
           </div>
