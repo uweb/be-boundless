@@ -65,7 +65,7 @@
           <div class="b-1">
             <p>“I’m pretty sure if you went around and asked, ‘Hey, what do you think a touch is?’, you might get different answers, but it would probably converge around something that looks like this,” says Martez Mott, raising his pointer finger before tapping it on the table in front of him. “For the participants in my studies, that was not the case at all.”</p>
           
-              <p>Mott is a Ph.D. candidate in the UW’s Information School and an active member of the philanthropy-funded MAD (Mobile + Accessible Design) Lab and the DUB (Design. Use. Build.) Group, where his research centers on making touch screens accessible for people who live with motor impairments, from cerebral palsy to muscular dystrophy to Parkinson’s disease. </p>
+              <p>Mott is a Ph.D. candidate in the UW’s <a href="https://ischool.uw.edu/">Information School</a> and an active member of the philanthropy-funded <a href="http://depts.washington.edu/madlab/">MAD</a> (Mobile + Accessible Design) Lab and the <a href="https://dub.washington.edu/">DUB</a> (Design. Use. Build.) Group, where his research centers on making touch screens accessible for people who live with motor impairments, from cerebral palsy to muscular dystrophy to Parkinson’s disease. </p>
           
               <p>“Touch screens were developed for a certain type of use,” says Mott, who received financial support through the University of Washington Graduate Opportunity Award. It’s simple: If you want to interact with something on your device, you have to be able to extend a finger and touch it cleanly and accurately. “That’s it,” he says. “Everything else is relegated to some other type of functionality — if you touch your phone with two fingers, it thinks you’re trying to zoom.” </p>
           
@@ -90,10 +90,12 @@
         <div class="block">         
           <div>
             <img alt="ipad" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/ipad.png' ?>">
+            <img class="animation" loop alt="ipad" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/single-loop.gif' ?>">
             <p>When a single finger makes contact with the screen, the device registers the center of that point as the user’s intended touch point. </p>
           </div>     
           <div>
             <img alt="ipad" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/ipad.png' ?>">
+            <img class="animation" loop alt="ipad" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/multiple-loop.gif' ?>">
             <p>When the back or side of the hand makes multiple points of contact with the screen, the device can’t register which point is the user’s intended touch point. </p>
           </div>
         </div>
@@ -159,7 +161,7 @@
           </div>
 
           <div class="b-1">           
-              <h2 class="mixed"><span>Making smart</span> a reality</h2>
+              <h2 class="mixed"><span>Making smart</span> touch a reality</h2>
               
               <p class="callout">With real-life users</p>
 
@@ -172,7 +174,7 @@
 
               <div class="pic">
                 <img alt="Ken Frye" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/ken.jpg' ?>">
-                <p>Mott works on Smart Touch with Provail participant Ken Frye</p>
+                <p>Martez Mott works on Smart Touch with Provail participant Ken Frye</p>
               </div>
 
           </div>
@@ -233,6 +235,7 @@
             <img alt="Ken Frye" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/kexp.jpg' ?>">
             <p>Ken Frye chats with KEXP DJ Cheryl Waters</p>
             <iframe src="https://open.spotify.com/embed?uri=spotify%3Auser%3Auofwa%3Aplaylist%3A0c3eH0VDqfviySoeAzOKQE" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+            <p style="padding-top: 0"><b>Listen:</b> Ken Frye’s 10 favorite songs</p>
           </div>
 
           <div class="b-1">           

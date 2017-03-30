@@ -251,7 +251,7 @@
                     <p>Velasquez sees mentoring as the first installment of a lifelong payback plan. From that first day of school, she has remained motivated both by her own expectations and by the pride and pressures of 
                     her family.  “My parents came from nothing and worked so hard for me to have these opportunities,” she says. “I want to pay them back. I want to make them proud.”</p>
 
-                    <p>Reflecting on everyone’s hard work, she muses, “Every now and then it hits me. I’m in college. I work in a skyscraper. I’ve been to New York and San Francisco and Morocco. All of these things I could never have imagined when I was in middle school,” Velasquez says.</p>
+                    <p>Reflecting on everyone’s hard work, she muses, “Every now and then it hits me. I’m in college. I work in a skyscraper. I’ve been to New York and San Francisco and Morocco. All of these things I could never have imagined when I was in middle school,” Velasquez says. "No matter how hard I worked, I wouldn’t be where I am without YEOC."</p>
 
                 </div> 
           </div> 
@@ -286,7 +286,7 @@
 
 <h3>Fostering diversity</h3>
 
-<p>EY doesn’t just underwrite the UW Foster School’s Young Executives of Color Program. It also provides volunteers, recruits high-level executives as keynote 
+<p>EY doesn’t just underwrite the UW Foster School’s Young Executives of Color program. It also provides volunteers, recruits high-level executives as keynote 
 speakers, delivers professional development exercises and offers invaluable consulting on curriculum, topics and activities. </p>
 
 <p>“The mission of YEOC aligns with EY's passion for promoting equity in the workforce — championing diversity and inclusiveness — which is at the very heart of EY's values,” says Christian Tinder, ’99, a principal in EY’s advisory practice and the firm’s coordinating 
@@ -319,17 +319,12 @@ partner with the UW. </p>
                       <h2 class="headline-gold">What you care about <br>can change the world</h2>
                       <p>You can help the University of Washington empower possibility <br>through innovation by contributing to these funds.</p>
                       <div id="immersive-give-iframe"></div>
-                      <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="GSPAED,EVAN50" href="#">Give now</a></span></div>
+                      <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="BEDDIS,UNDDIV,ACOUNT,YVBEND,EYEXCL" href="#">Give now</a></span></div>
                     </div>
                   </div>
               </div>
         </div>
       </section>
-
-
-
-
-
 
 
 </main>
