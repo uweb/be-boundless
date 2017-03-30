@@ -259,7 +259,7 @@
                       <h2 class="headline-gold">What you care about <br>can change the world</h2>
                       <p>You can help the University of Washington empower possibility <br>through innovation by contributing to these funds.</p>
                       <div id="immersive-give-iframe"></div>
-                      <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="GSPAED,EVAN50" href="#">Give now</a></span></div>
+                      <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="WOBDIS" href="#">Give now</a></span></div>
                     </div>
                   </div>
               </div>
