@@ -112,7 +112,7 @@
             
             <div>
               <div id="martez-II"></div>
-             <img id="martez" alt="Martez Mott" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/smart.png' ?>">
+             <img data-object-fit="contain" id="martez" alt="Martez Mott" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/smart.png' ?>">
             </div>
 
             <div>
@@ -213,7 +213,7 @@
 
               <p>“This research isn’t just a theoretical contribution; it’s a practical one,” he says. “Hearing my participants tell me how important and impactful this work can be in their daily lives is the most rewarding thing. It’s what drives me.” </p>
 
-              <img alt="Ken Frye" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/surface.jpg' ?>">
+              <img alt="Ken Frye using a touch device" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/surface.jpg' ?>">
 
               <p>And as far as rolling it into the market? That’s a few years away, but Mott has a vision — starting with buy-in from the tech industry. “I would love to see every touch-enabled device — public or private — be accessible, with this technology integrated into every operating system, quietly running in the background. I want to see a check-out kiosk at the grocery store embedded with intelligence that can infer people’s behaviors based on their unique touch,” he says. “We can do it. We just haven’t done it yet.” </p>
 

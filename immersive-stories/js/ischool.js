@@ -58,6 +58,7 @@ $(function(){
       viewport = $(window).width()
     })
 
+
   // var jason = new ScrollMagic.Scene({
   //   triggerElement: '#jason',
   //   triggerHook: 0.1,
