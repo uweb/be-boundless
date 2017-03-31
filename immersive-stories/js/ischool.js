@@ -28,6 +28,10 @@ $(function(){
     .addTo(controllerIschool);
 
 
+    $(window).resize(function(){
+        introIschool.update(true);
+    });
+
     var paraBG = new ScrollMagic.Scene({
       triggerElement: '.paraBackground',
       triggerHook: 0.5,
