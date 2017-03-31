@@ -153,6 +153,15 @@
 
 
       <section class="text-block yellow section-4">
+
+        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           width="562.154px" height="363.897px" viewBox="0 0 562.154 363.897" enable-background="new 0 0 562.154 363.897"
+           xml:space="preserve">
+        <polygon opacity="0.06" points="562.154,357.488 0,206.206 1.175,12.544 562.154,161.334 "/>
+        </svg>
+
+
         <div class="block">
 
           <div class="b-0"></div>
@@ -188,7 +197,7 @@
         <h2>A DJ with a dream</h2>
         <div>
           <span></span>
-          <iframe width="1280" height="720" src="https://www.youtube.com/embed/jQjeTrAUjAs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <iframe width="1280" height="720" src="https://www.youtube.com/embed/euKdt_XjJ9I?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
           <p>Ken Frye, a Provail participant in Mott’s study who has cerebral palsy, has been in the radio industry for over 40 years, with an impressive career that includes gigs at Seattle’s very own KEXP and Centralia’s Live 95.1. Today, he hosts his own radio show "Ken’s Ten," which features music from the ’20s to today “because all music can and <i>should</i> live together” — but that doesn’t come without its challenges. Watch to learn how Smart Touch could transform the way Frye navigates the world. </p>
         </div>
