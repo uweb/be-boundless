@@ -27,7 +27,6 @@ $(function(){
     .setTween(fade)
     .addTo(controllerIschool);
 
-
     $(window).resize(function(){
         introIschool.update(true);
     });

@@ -222,7 +222,10 @@
 
               <p>“This research isn’t just a theoretical contribution; it’s a practical one,” he says. “Hearing my participants tell me how important and impactful this work can be in their daily lives is the most rewarding thing. It’s what drives me.” </p>
 
-              <img alt="Ken Frye using a touch device" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/surface.jpg' ?>">
+              <div class="pic">
+                <img alt="Ken Frye using a touch device" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/surface.jpg' ?>">
+                <p>Ken Frye interacts with a touch-screen device</p>
+              </div>
 
               <p>And as far as rolling it into the market? That’s a few years away, but Mott has a vision — starting with buy-in from the tech industry. “I would love to see every touch-enabled device — public or private — be accessible, with this technology integrated into every operating system, quietly running in the background. I want to see a check-out kiosk at the grocery store embedded with intelligence that can infer people’s behaviors based on their unique touch,” he says. “We can do it. We just haven’t done it yet.” </p>
 
@@ -243,8 +246,25 @@
           <div class="b-2">
             <img alt="Ken Frye chats with KEXP DJ Cheryl Waters" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/kexp.jpg' ?>">
             <p>Ken Frye chats with KEXP DJ Cheryl Waters</p>
-            <iframe src="https://open.spotify.com/embed?uri=spotify%3Auser%3Auofwa%3Aplaylist%3A0c3eH0VDqfviySoeAzOKQE" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-            <p style="padding-top: 0"><b>Listen:</b> Ken Frye’s 10 favorite songs</p>
+
+            <div class="spotify">
+              <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/spotify.png' ?>" alt="Spotify">
+              <p>Ken Frye’s 10 favorite songs</p>
+              <a href="spotify:user:uofwa:playlist:0c3eH0VDqfviySoeAzOKQE">Listen</a>
+            </div>
+            
+<!--             <ul>
+              <li>The Wreck Of The Edmund Fitzgerald - Gordon Lightfoot</li>
+              <li>Stayin' Alive - Bee Gees</li>
+              <li>I’m So Excited - The Pointer Sisters</li>
+              <li>Blue Suede Shoes - Carl Perkins</li>
+              <li>And The Tide Rushes In - The Moody Blues</li>
+              <li>Been So Long - The Pastels</li>
+              <li>Yep - Duane Eddy</li>
+              <li>Movin’ N’ Grovin’ - Duane Eddy</li>
+              <li>Rumble - Link Wray & His Ray Men</li>
+              <li>Call Me The Breeze - J.J. Cale</li>
+            </ul> --> 
           </div>
 
           <div class="b-1">           
@@ -267,7 +287,7 @@
                   <div class="col-md-10 col-md-offset-1 copy ">
                     <div style="text-align: center">             
                       <h2 class="headline-gold">What you care about <br>can change the world</h2>
-                      <p>You can help the University of Washington empower possibility <br>through innovation by contributing to these funds.</p>
+                      <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. You can be part of Mott’s project and help iSchool students like him make technology accessible for everyone by contributing to the MAD (Mobile + Accessible Design) Lab.</p>
                       <div id="immersive-give-iframe"></div>
                       <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="WOBDIS" href="#">Give now</a></span></div>
                     </div>
