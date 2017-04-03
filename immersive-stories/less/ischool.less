@@ -804,12 +804,23 @@ div.boundless-headline {
             .b-2 {
             }
             .b-1 {
+                img {
+                    display: none;
+                }
+                h2  {
+                    margin-top: -114px;
+                }
                 div:first-child {
                     height: 490px;
-                    margin-top: -120px;
                     overflow: hidden;
                     #martez-II {
-                        display: none;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-image: url("@{ischool}/smart-II-mobile.png");
+                        .background-cover(cover);
                     }
                 }                
                 div:last-child {
