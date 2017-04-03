@@ -59,8 +59,8 @@ p, li {
     text-align: center;
     .text {
         position: absolute;
-        left: 8vw;
-        top: 45vh;
+        left: 13vw;
+        top: 49vh;
         width: 76vw;
         text-align: left;
         .translate(0,-50%);
@@ -80,10 +80,10 @@ p, li {
     }
     .devices {
         position: absolute;
-        top: -20vh;
+        top: -30vh;
         left: -10vw;
         right: -10vw;
-        bottom: -15vh;
+        bottom: -35vh;
         background: @yellow;
         .bottom-left,
         .bottom,
@@ -268,8 +268,22 @@ p, li {
         }
     }
 
-     // Special for smaller laptops
+     // Special for widescreens
     @media screen and (min-width:1200px) and ( max-height: 1024px ){
+        .text {
+            left: 15vw;
+            top: 55vh;
+        }
+        .devices {
+            top: -50vh;
+            left: -10vw;
+            right: -10vw;
+            bottom: -65vh;
+        }
+    }
+
+     // Special for widescreens
+    @media screen and (min-width:1600px) and ( max-height: 1100px ){
         .text {
             left: 15vw;
             top: 55vh;
@@ -1929,6 +1943,7 @@ div.boundless-headline {
 // Remove some of the white space padding per edits
 .text-block {
 
+
     .copy {
         & > blockquote {
             font-family: @uni;
@@ -1996,9 +2011,11 @@ div.boundless-headline {
             }
         }
     }
-    @media(min-width:768px) {
-        
-    }
+    @media @desktop-up { 
+        iframe {
+            height: 48vw !important;
+        }
+    } 
 }
 
 
