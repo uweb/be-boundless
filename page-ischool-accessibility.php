@@ -251,6 +251,7 @@
               <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/spotify.png' ?>" alt="Spotify">
               <p>Ken Frye’s 10 favorite songs</p>
               <a href="spotify:user:uofwa:playlist:0c3eH0VDqfviySoeAzOKQE">Listen</a>
+              <p>(Requires <a href="https://www.spotify.com/us/download/other/">Spotify player</a>)</p>
             </div>
             
 <!--             <ul>
