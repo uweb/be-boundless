@@ -326,6 +326,10 @@ partner with the UW. </p>
         </div>
       </section>
 
+
+      <div id="mapid"></div>
+
+
 </main>
 
 <div id="popup"></div>
@@ -333,7 +337,8 @@ partner with the UW. </p>
 
 </div>
 
-
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
  <!-- **** JS **** -->      
 
  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/animationLibraries.min.js' ?>" type="text/javascript"></script>
