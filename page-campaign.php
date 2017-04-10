@@ -110,7 +110,7 @@
 
           </div>
           <span class="slide5-content"></span>
-        </section><section tabindex="0"  class="section" id="slide6" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg6-v3.jpg">
+        </section><section tabindex="0"  class="section" id="slide6" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg6-v4.jpg">
           <div id="slide6text">
               <h2>Expand our impact everywhere</h2>
               <p>Discover how support of educational programs and fellowships gives students opportunities that change not only their lives, but lives around the world.</p>            
@@ -122,19 +122,20 @@
               </div>
           </div>
           <span class="slide6-content"></span>
-        </section><section tabindex="0"  class="section" id="slide7" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg7-v3.jpg">
+        </section><section tabindex="0"  class="section" id="slide7" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg7-v4.jpg">
           <div id="slide7text">
             <h2>Empower possibility through innovation</h2>
-            <p>Find out how your support of revolutionary people and programs &mdash; like UW Bothell's diversity-focused Digital Future Lab &mdash; can lead to inclusive innovation for the benefit of millions.</p>
-            <a href="bothell-gaming" data-js="bothell" data-controller='controllerBothell' data-title="Empower possibility through innovation" class="uw-btn btn-sm btn-plus story-link">Read story</a> <!-- <a href="http://www.washington.edu/boundless/explore/?utm_source=website&utm_medium=click&utm_campaign=innovation&utm_term=inclusive-engineering#innovation" class="uw-btn btn-sm">Opportunities</a> -->
+            <p>Students and faculty at the iSchool are working to make technology accessible for everyone. Learn how supporting this work can help make an impact on the lives of those with motor impairments.</p>
+            <a href="ischool-accessibility" data-js="ischool" data-controller='controllerIschool' data-title="Empower possibility through innovation" class="uw-btn btn-sm btn-plus story-link">Read story</a> <!-- <a href="http://www.washington.edu/boundless/explore/?utm_source=website&utm_medium=click&utm_campaign=innovation&utm_term=inclusive-engineering#innovation" class="uw-btn btn-sm">Opportunities</a> -->
             <div class="related">
               <h3>Related stories</h3>
               <a href="inclusive-engineering" data-js="engineering"  data-controller='controllerEngineering' data-title="Helping the body heal, feel and move again" class="arts-thumb story-link"><span>Helping the body heal, feel and move again</span></a>
+              <a href="bothell-gaming" data-js="bothell"  data-controller='controllerBothell' data-title="Empower possibility through innovation" class="arts-thumb story-link"><span>Taking diversity to the next level</span></a>
             </div>
 
           </div>
           <span class="slide7-content"></span>
-        </section><section tabindex="0"  class="section" id="slide8" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg8-v2.jpg">
+        </section><section tabindex="0"  class="section" id="slide8" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg8-v4.jpg">
           <div id="slide8text">
             <h2>How will you change the world?</h2> 
             <p>Find ways to connect your passion with philanthropy.</p>

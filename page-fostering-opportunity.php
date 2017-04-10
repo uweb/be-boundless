@@ -327,7 +327,7 @@ partner with the UW. </p>
       </section>
 
 
-      <div id="mapid"></div>
+      <!-- <div id="mapid"></div> -->
 
 
 </main>
