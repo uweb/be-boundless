@@ -19,7 +19,7 @@
     </div>      
     <span class="name-about">
       <h4>Mary Ruiz</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+      <p>Smart Home Study participant</p>
     </span>      
     <section class="scrollit read-more">
         <p>Scroll Down</p>
@@ -57,9 +57,7 @@
       <div class="container">
           <div class="row">
               <div class="col-md-10 col-md-offset-1 copy"> 
-              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
-
-              <a data-lity class="play" href="https://www.youtube.com/embed/Qga5YcHqccM?autoplay=1&rel=0&showinfo=0">Watch her story <svg aria-hidden="true" x="0px" y="0px"
+              <a data-lity class="play" href="https://www.youtube.com/embed/Qga5YcHqccM?autoplay=1&rel=0&showinfo=0">Step inside<br> Smart Home <svg aria-hidden="true" x="0px" y="0px"
    width="14px" height="3px" viewBox="0 0 14 3" enable-background="new 0 0 14 3" xml:space="preserve">
 <rect fill="#FFFFFF" width="14" height="3"/></svg></a>
 
@@ -92,12 +90,12 @@
 
                 </div> 
           </div> 
-          <blockquote><span>&ldquo;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>&rdquo;</span></blockquote>
+          <blockquote><span>&ldquo;</span>I believe that technology can empower older adults.<span>&rdquo;</span></blockquote>
 
         </div>   
         <span class="name-about name-2">
           <h4>George Demiris</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+          <p>Alumni Endowed Professor in Nursing</p>
         </span>  
       </section>
 
@@ -142,54 +140,136 @@
           <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/house.svg' ?>" alt="">
           <ul>
             <li>
-              <a href="#" class="tip" aria-describedby="#tip-1">
+              <a href="#" class="tip" aria-describedby="#tip-1"><p class="smart-numb">1</p>
                 <span class="left top" id="tip-1"> 
                   <h3>Bathroom wall</h3>
-                  <p class="sub">Multi-sensor</p>
-                  <hr>
-                  <img width="80px" height="86px" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/device-1.png' ?>" alt="Home device">
-                  <p>Tracks a variety of data, including temperature, humidity and brightness of lights.</p>
+                  <p class="sub">Multisensor</p>
+                  <p>Tracks temperature, humidity and brightness of lights.</p>
+                  <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/multisensor.svg' ?>" alt="Video camera">
                 </span>
               </a>
             </li>
             <li>
-              <a href="#" class="tip" aria-describedby="#tip-2">
-                <span class="right top" id="tip-2"> 
-                  <h3>Bathroom wall</h3>
-                  <p class="sub">Multi-sensor</p>
-                  <hr>
-                  <img width="80px" height="86px" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/device-1.png' ?>" alt="Home device">
-                  <p>Tracks a variety of data, including temperature, humidity and brightness of lights.</p>
+              <a href="#" class="tip" aria-describedby="#tip-2"><p class="smart-numb">2</p>
+                <span class="left top" id="tip-2"> 
+                  <h3>Bathroom door</h3>
+                  <p class="sub">Small sensor</p>
+                  <p>Tracks how many times the door is opened.</p>
+                  <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/smallsensor.svg' ?>" alt="Video camera">
                 </span>
               </a>
             </li>
             <li>
-              <a href="#" class="tip" aria-describedby="#tip-3">
-                <span class="left bottom" id="tip-3"> 
-                  <h3>Bathroom wall</h3>
-                  <p class="sub">Multi-sensor</p>
-                  <hr>
-                  <img width="80px" height="86px" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/device-1.png' ?>" alt="Home device">
-                  <p>Tracks a variety of data, including temperature, humidity and brightness of lights.</p>
+              <a href="#" class="tip" aria-describedby="#tip-3"><p class="smart-numb">3</p>
+                <span class="right top" id="tip-3"> 
+                  <h3>Nightstand</h3>
+                  <p class="sub">Multisensor</p>
+                  <p>Motion sensor that tracks how many times you get out of bed.</p>
+                  <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/multisensor.svg' ?>" alt="Video camera">
                 </span>
               </a>
             </li>
             <li>
-              <a href="#" class="tip" aria-describedby="#tip-4">
+              <a href="#" class="tip" aria-describedby="#tip-4"><p class="smart-numb">4</p>
                 <span class="right bottom" id="tip-4"> 
-                  <h3>Bathroom wall</h3>
-                  <p class="sub">Multi-sensor</p>
-                  <hr>
-                  <img width="80px" height="86px" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/device-1.png' ?>" alt="Home device">
-                  <p>Tracks a variety of data, including temperature, humidity and brightness of lights.</p>
+                  <h3>Front door</h3>
+                  <p class="sub">Small sensor</p>
+                  <p>Tracks how many times the door is opened.</p>
+                  <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/smallsensor.svg' ?>" alt="Video camera">
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="tip" aria-describedby="#tip-5"><p class="smart-numb">5</p>
+                <span class="left bottom" id="tip-5"> 
+                  <h3>Refrigerator door</h3>
+                  <p class="sub">Small sensor</p>
+                  <p>Opening the refrigerator multiple times in an hour can be an early sign of dementia.</p>
+                  <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/smallsensor.svg' ?>" alt="Video camera">
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="tip" aria-describedby="#tip-6"><p class="smart-numb">6</p>
+                <span class="left bottom" id="tip-6"> 
+                  <h3>Window</h3>
+                  <p class="sub">Small sensor</p>
+                  <p>Tracks how many times the window is opened.</p>
+                  <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/smallsensor.svg' ?>" alt="Video camera">
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="tip" aria-describedby="#tip-7"><p class="smart-numb">7</p>
+                <span class="left bottom" id="tip-7"> 
+                  <h3>Living room wall</h3>
+                  <p class="sub">Multisensor</p>
+                  <p>Tracks temperature, humidity and brightness of lights.</p>
+                  <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/multisensor.svg' ?>" alt="Video camera">
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="tip" aria-describedby="#tip-8"><p class="smart-numb">8</p>
+                <span class="left bottom" id="tip-8"> 
+                  <h3>Side table</h3>
+                  <p class="sub">Video camera</p>
+                  <img class="float" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/camera.svg' ?>" alt="Video camera">
+                  <p>Used for a variety of purposes, including tracking activity levels.</p>
                 </span>
               </a>
             </li>
           </ul>
+
         </div>
+
+        <ul class="home-list">
+          <li>
+                <h3>1. Bathroom wall</h3>
+                <p class="sub">Multisensor</p>
+                <p>Tracks temperature, humidity and brightness of lights.</p>
+          </li>
+          <li>
+                <h3>2. Bathroom door</h3>
+                <p class="sub">Small sensor</p>
+                <p>Tracks how many times the door is opened.</p>
+          </li>
+          <li>
+                <h3>3. Nightstand</h3>
+                <p class="sub">Multisensor</p>
+                <p>Motion sensor that tracks how many times you get out of bed.</p>
+          </li>
+          <li>
+                <h3>4. Front door</h3>
+                <p class="sub">Small sensor</p>
+                <p>Tracks how many times the door is opened.</p>
+          </li>
+          <li>
+                <h3>5. Refrigerator door</h3>
+                <p class="sub">Small sensor</p>
+                <p>Opening the refrigerator multiple times in an hour can be an early sign of dementia.</p>
+          </li>
+          <li>
+                <h3>6. Window</h3>
+                <p class="sub">Small sensor</p>
+                <p>Tracks how many times the window is opened.</p>
+          </li>
+          <li>
+              <span class="left bottom" id="tip-7"> 
+                <h3>7. Living room wall</h3>
+                <p class="sub">Multisensor</p>
+                <p>Tracks temperature, humidity and brightness of lights.</p>
+          </li>
+          <li>
+                <h3>8. Side table</h3>
+                <p class="sub">Video camera</p>
+                <p>Used for a variety of purposes, including tracking activity levels.</p>
+          </li>
+        </ul>
+
       </section>
 
-
+      
 
       <section class="text-block white start">
         <div class="container">
@@ -239,15 +319,7 @@
                       <p>XXX</p>
                     </div>
 
-                    <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/slide-6.jpg' ?>" alt="">
-                      <p>XXX</p>
-                    </div>
-
                     <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/slide-7.jpg' ?>" alt="">
-                      <p>XXX</p>
-                    </div>
-
-                    <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/slide-8.jpg' ?>" alt="">
                       <p>XXX</p>
                     </div>
 
@@ -304,7 +376,7 @@
                       <h2 class="headline-gold">What you care about <br>can change the world</h2>
                       <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. By supporting the School of Nursing, you can help more faculty and students undertake research with the potential to transform lives not just here and now, but around the world and into the future.</p>
                       <div id="immersive-give-iframe"></div>
-                      <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="WOBDIS" href="#">Give now</a></span></div>
+                      <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="BHNIAG" href="#">Give now</a></span></div>
                     </div>
                   </div>
               </div>
