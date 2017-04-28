@@ -143,7 +143,7 @@
           <ul>
             <li>
               <a href="#" class="tip" aria-describedby="#tip-1">
-                <span class="left" id="tip-1"> 
+                <span class="left top" id="tip-1"> 
                   <h3>Bathroom wall</h3>
                   <p class="sub">Multi-sensor</p>
                   <hr>
@@ -154,7 +154,7 @@
             </li>
             <li>
               <a href="#" class="tip" aria-describedby="#tip-2">
-                <span class="right" id="tip-2"> 
+                <span class="right top" id="tip-2"> 
                   <h3>Bathroom wall</h3>
                   <p class="sub">Multi-sensor</p>
                   <hr>
@@ -165,7 +165,7 @@
             </li>
             <li>
               <a href="#" class="tip" aria-describedby="#tip-3">
-                <span class="left" id="tip-3"> 
+                <span class="left bottom" id="tip-3"> 
                   <h3>Bathroom wall</h3>
                   <p class="sub">Multi-sensor</p>
                   <hr>
@@ -176,7 +176,7 @@
             </li>
             <li>
               <a href="#" class="tip" aria-describedby="#tip-4">
-                <span class="right" id="tip-4"> 
+                <span class="right bottom" id="tip-4"> 
                   <h3>Bathroom wall</h3>
                   <p class="sub">Multi-sensor</p>
                   <hr>

@@ -471,34 +471,8 @@ p {
                 width: 250px;
                 position: absolute;
 
-                top: -370%;
                 z-index: 10;
                 display: none;
-                &.right {
-                    right: 60px;
-                    &:before {
-                        border: 17px solid transparent; /* arrow size */
-                        border-left-color: @purple;  /* arrow color */
-                        right: -35px;
-                    }
-                }
-                &.left {
-                    left: 60px;
-                    &:before {
-                        border: 17px solid transparent; /* arrow size */
-                        border-right-color: @purple;  /* arrow color */
-                        left: -35px;
-                    }
-                }
-                &:before {
-                    content: ' ';
-                    height: 0;
-                    position: absolute;
-                    width: 0;
-                    position: absolute;
-                    top: 106px;
-                    z-index: 2;
-                }
                 hr {
                     border-top: 6px solid #4b2e83;
                     clear: both;
@@ -533,7 +507,79 @@ p {
         & > div {
             width:  90vw;
         }
+        ul {
+            li {
+
+            }
+            a {
+                span {
+                    right: -348%;
+                    &.top {
+                        bottom: 60%;
+                        &:before {
+                            border: 17px solid transparent; /* arrow size */
+                            border-top-color: @purple;  /* arrow color */
+                            bottom: -35px;
+                        }
+                    }
+                    &.bottom {
+                        top: 110%;
+                        &:before {
+                            border: 17px solid transparent; /* arrow size */
+                            border-bottom-color: @purple;  /* arrow color */
+                            top: -35px;
+                        }
+                    }
+                    &:before {
+                        content: ' ';
+                        height: 0;
+                        position: absolute;
+                        width: 0;
+                        position: absolute;
+                        z-index: 2;
+                        left: 45%;
+                    }
+                }
+            }
+        }
     }              //  (max-width: 599px)
+    @media @tablet-portrait-up { 
+        ul {
+            li {
+
+            }
+            a {
+                span {
+                    top: -370%;
+                    &.right {
+                        right: 60px;
+                        &:before {
+                            border: 17px solid transparent; /* arrow size */
+                            border-left-color: @purple;  /* arrow color */
+                            right: -35px;
+                        }
+                    }
+                    &.left {
+                        left: 60px;
+                        &:before {
+                            border: 17px solid transparent; /* arrow size */
+                            border-right-color: @purple;  /* arrow color */
+                            left: -35px;
+                        }
+                    }
+                    &:before {
+                        content: ' ';
+                        height: 0;
+                        position: absolute;
+                        width: 0;
+                        position: absolute;
+                        top: 106px;
+                        z-index: 2;
+                    }
+                }
+            }
+        }
+    }      //  (min-width: 600px) 
 }
 
 #slideshow {
@@ -688,6 +734,7 @@ p {
         padding: 125px 24px 20px;
         background-image: url("@{nursing}/studying-computer.jpg");
         .background-cover(cover);
+        background-position: right center;
         a.play {
             display: inline-block;
             padding: 14px 68px 13px 0;
