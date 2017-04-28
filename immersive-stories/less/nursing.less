@@ -441,8 +441,7 @@ p {
               }
             } 
             &:hover,
-            &:focus,
-            &:active {
+            &:focus {
                 span {
                     display: inline-block;
                 }
@@ -523,7 +522,7 @@ p {
                         }
                     }
                     &.bottom {
-                        top: 110%;
+                        top: 140%;
                         &:before {
                             border: 17px solid transparent; /* arrow size */
                             border-bottom-color: @purple;  /* arrow color */
@@ -1016,6 +1015,7 @@ div.boundless-button span a#expander:after {
     .copy {
         h2.leadin {
             font-family: @uni;
+            font-weight: 300;
             color: @lightgold;
         }
         & > blockquote {
