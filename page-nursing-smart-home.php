@@ -58,7 +58,7 @@
           <div class="row">
               <div class="col-md-10 col-md-offset-1 copy"> 
               <h2>Mary’s home supports her health — and her curiosity.</h2>
-              <a data-lity class="play" href="https://www.youtube.com/embed/Qga5YcHqccM?autoplay=1&rel=0&showinfo=0">See her story <svg aria-hidden="true" x="0px" y="0px"
+              <a data-lity class="play" href="https://www.youtube.com/embed/EIyakFZS5YI?autoplay=1&rel=0&showinfo=0">See her story <svg aria-hidden="true" x="0px" y="0px"
    width="14px" height="3px" viewBox="0 0 14 3" enable-background="new 0 0 14 3" xml:space="preserve">
 <rect fill="#FFFFFF" width="14" height="3"/></svg></a>
 
