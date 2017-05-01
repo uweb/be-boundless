@@ -298,37 +298,37 @@
               <div class="col-md-10 col-md-offset-1 copy">    
 
                   <div id="eng-slideshow" class="slick-slideshows">
-                  
-                    <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/slide-1.jpg' ?>" alt="">
-                      <p>XXX</p>
+
+                    <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/slide-4.jpg' ?>" alt="">
+                      <p>Researcher Yong Choi meets with Smart Home study participant Mary Ruiz. </p>
                     </div>
 
                     <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/slide-2.jpg' ?>" alt="">
-                      <p>XXX</p>
+                      <p>Ph.D. student Yong Choi installed the sensors in each participant's home. </p>
                     </div>
-                  
-                    <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/slide-3.jpg' ?>" alt="">
-                      <p>XXX</p>
-                    </div>
-                  
-                    <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/slide-4.jpg' ?>" alt="">
-                      <p>XXX</p>
-                    </div>
-                  
-                    <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/slide-5.jpg' ?>" alt="">
-                      <p>XXX</p>
+                 
+                    <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/slide-10.jpg' ?>" alt="">
+                      <p> Mary Ruiz would often use the video camera to watch her cat, Sparky.</p>
                     </div>
 
                     <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/slide-7.jpg' ?>" alt="">
-                      <p>XXX</p>
+                      <p>Mary Ruiz fills her humidifier. Sensors in her home alerted her to the fact that humidity levels were low.</p>
+                    </div>
+                  
+                    <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/slide-5.jpg' ?>" alt="">
+                      <p>Yong Choi installs a sensor on Mary Ruiz's front door.</p>
+                    </div>
+                  
+                    <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/slide-3.jpg' ?>" alt="">
+                      <p>Mary Ruiz, a participant in the Smart Home study.</p>
+                    </div>
+
+                    <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/slide-1.jpg' ?>" alt="">
+                      <p>One sensor that Mary Ruiz hopes will eventually be available is one that can turn her lights off after she falls asleep.</p>
                     </div>
 
                     <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/slide-9.jpg' ?>" alt="">
-                      <p>XXX</p>
-                    </div>
-
-                    <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/slide-10.jpg' ?>" alt="">
-                      <p>XXX</p>
+                      <p>A small multi sensor rests on Mary Ruiz's nightstand. It measures temperature, humidity and brightness.</p>
                     </div>
 
                   </div>
@@ -376,7 +376,7 @@
                       <h2 class="headline-gold">What you care about <br>can change the world</h2>
                       <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. By supporting the School of Nursing, you can help more faculty and students undertake research with the potential to transform lives not just here and now, but around the world and into the future.</p>
                       <div id="immersive-give-iframe"></div>
-                      <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="BHNIAG" href="#">Give now</a></span></div>
+                      <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="NAGING" href="#">Give now</a></span></div>
                     </div>
                   </div>
               </div>
