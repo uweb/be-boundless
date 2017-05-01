@@ -57,7 +57,8 @@
       <div class="container">
           <div class="row">
               <div class="col-md-10 col-md-offset-1 copy"> 
-              <a data-lity class="play" href="https://www.youtube.com/embed/Qga5YcHqccM?autoplay=1&rel=0&showinfo=0">Step inside<br> Smart Home <svg aria-hidden="true" x="0px" y="0px"
+              <h2>Mary’s home supports her health — and her curiosity.</h2>
+              <a data-lity class="play" href="https://www.youtube.com/embed/Qga5YcHqccM?autoplay=1&rel=0&showinfo=0">See her story <svg aria-hidden="true" x="0px" y="0px"
    width="14px" height="3px" viewBox="0 0 14 3" enable-background="new 0 0 14 3" xml:space="preserve">
 <rect fill="#FFFFFF" width="14" height="3"/></svg></a>
 
@@ -376,7 +377,7 @@
                       <h2 class="headline-gold">What you care about <br>can change the world</h2>
                       <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. By supporting the School of Nursing, you can help more faculty and students undertake research with the potential to transform lives not just here and now, but around the world and into the future.</p>
                       <div id="immersive-give-iframe"></div>
-                      <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="NAGING" href="#">Give now</a></span></div>
+                      <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="BNHIAG" href="#">Give now</a></span></div>
                     </div>
                   </div>
               </div>

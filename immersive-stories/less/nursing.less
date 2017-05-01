@@ -718,13 +718,14 @@ p {
     position: relative;
     z-index: 0;
     .background-cover(cover);
-        h2 {
-            font-weight: 900;
-            font-size: 50px;
-            text-transform: uppercase;
-            color: white;
-            -webkit-font-smoothing: antialiased;
-        }
+    h2 {
+        font-family: @uni;
+        font-weight: 300;
+        font-size: 50px;
+        text-transform: uppercase;
+        color: white;
+        -webkit-font-smoothing: antialiased;
+    }
     p {
         color: white;
         span.highlight {
@@ -752,10 +753,10 @@ p {
     a.play {
         position: relative;
         color: #fff;
-        font-family: @headline;
-        font-weight: 900;
+        font-family: @uni;
+        font-weight: 300;
         text-transform: uppercase;
-        font-size: 46px;
+        font-size: 34px;
         border-bottom: none;
         padding: 14px 150px 13px 10px;
         display: inline-block;
@@ -771,7 +772,7 @@ p {
             background: url("@{img}/sprite.svg") no-repeat -79px -329px rgba(0,0,0,0);
             width: 101px;
             height: 95px;
-            bottom: 15px;
+            bottom: -18px;
             right: 0;
             opacity: .8;
             .transition(all .1s linear);
@@ -791,7 +792,7 @@ p {
             background: url("@{img}/sprite.svg") no-repeat 9px -289px rgba(0,0,0,0);
             width: 52px;
             height: 145px;
-            bottom: -11px;
+            bottom: -31px;
             right: 100px;
             opacity: .8;
         }
@@ -805,6 +806,9 @@ p {
     }
     @media(min-width:768px) {
         background-image: url("@{nursing}/studying-computer.jpg");
+        h2 {
+            width: 50%;
+        }
         .container {
             padding-top: 27vw;
             padding-bottom: 10vw;
@@ -1098,7 +1102,7 @@ div.boundless-button span a#expander:after {
         h2.leadin {
             font-family: @uni;
             font-weight: 300;
-            color: @lightgold;
+            color: @purple;
         }
         & > blockquote {
             font-family: @uni;
