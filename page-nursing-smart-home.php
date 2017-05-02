@@ -14,7 +14,7 @@
     <div id="slide">
       <div class="skew">
         <h1><span>Creating safer,</span> smarter homes</h1>   
-        <p>At the University of Washington School of Nursing, Professor George Demiris is harnessing the power of everyday items to turn houses into smart homes — and allowing older adults to live independently, thanks to modern technology. </p>     
+        <p>At the University of Washington School of Nursing, Professor George Demiris is harnessing the power of everyday items to turn houses into smart homes <span>— and allowing older adults to live independently, thanks to modern technology. </span></p>     
       </div>
     </div>      
     <span class="name-about">
