@@ -299,6 +299,10 @@ p {
             span {
                 display: none;
             }
+            &:after {
+                content: '.';
+                margin-left: -2px;
+            }
         }
         a.read-more {
             top: calc(~"100vh - 55px");
@@ -318,6 +322,10 @@ p {
             p {
                 span {
                     display: none;
+                }
+                &:after {
+                    content: '.';
+                    margin-left: -2px;
                 }
             }
         }
