@@ -113,12 +113,13 @@
         </section><section tabindex="0"  class="section" id="slide6" data-img="/wp-content/themes/be-boundless/campaign/img/camp-bg6-v4.jpg">
           <div id="slide6text">
               <h2>Expand our impact everywhere</h2>
-              <p>Discover how support of educational programs and fellowships gives students opportunities that change not only their lives, but lives around the world.</p>            
-              <a href="evans-school-powering-policy" data-controller='controllerEvans'  data-js="evans-school" data-title="Transform the student experience" class="uw-btn btn-sm btn-plus story-link">Read story</a>
+              <p>Students and faculty at the UW School of Nursing are using modern technology to help older adults live more independently. Find out how your support of their research can make life better for an aging population.</p>            
+              <a href="nursing-smart-home" data-controller='controllerNursing'  data-js="nursing" data-title="Transform the student experience" class="uw-btn btn-sm btn-plus story-link">Read story</a>
               <div class="related">
                 <h3>Related stories</h3>
                 <a href="targeting-cancer" data-js="medicine" data-title="Targeting cancer, precisely" class="medicine-thumb story-link"><span>Targeting cancer, precisely</span></a>
                 <a href="what-is-possible" data-js="arts" data-title="Transform the student experience" class="story-link"><span>What is possible?</span></a>
+                <a href="evans-school-powering-policy" data-js="evans-school" data-title="Transform the student experience" class="story-link"><span>What is possible?</span></a>
               </div>
           </div>
           <span class="slide6-content"></span>
