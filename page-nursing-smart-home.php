@@ -114,7 +114,7 @@
 
                   <p>Instead he turned to common household devices such as video cameras, digital thermometers and door, window and motion sensors. In the right combination, Demiris discovered, these ordinary devices can turn an average house into a smart home — one that’s easy for a non-technophile to manage.</p>
 
-                  <blockquote class="float"><span>&ldquo;</span>If someone opens the refrigerator several times over the course of an hour, or if they’re becoming more sedentary or using the bathroom more frequently, these could all be early indicators of a specific condition or health issue<span>&rdquo;</span></blockquote>
+                  <blockquote class="float"><span>&ldquo;</span>If someone opens the refrigerator several times over the course of an hour, or if they’re becoming more sedentary or using the bathroom more frequently, these could all be early indicators of a specific condition or health issue.<span>&rdquo;</span></blockquote>
 
                   <p>The devices catch deviations from a daily routine that a person may not notice, but which, over a period of time, can often mean something more serious.</p>
 
@@ -375,7 +375,7 @@
                   <div class="col-md-10 col-md-offset-1 copy ">
                     <div style="text-align: center">             
                       <h2 class="headline-gold">What you care about <br>can change the world</h2>
-                      <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. By supporting the School of Nursing, you can help more faculty and students can undertake research with the potential to transform lives, not just around the world, but now and in the future.</p>
+                      <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. By supporting the School of Nursing, you can help more faculty and students undertake research with the potential to transform lives not just here and now, but around the world and in the future.</p>
                       <div id="immersive-give-iframe"></div>
                       <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="BNHIAG" href="#">Give now</a></span></div>
                     </div>
