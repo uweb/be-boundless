@@ -119,7 +119,7 @@
                 <h3>Related stories</h3>
                 <a href="targeting-cancer" data-js="medicine" data-title="Targeting cancer, precisely" class="medicine-thumb story-link"><span>Targeting cancer, precisely</span></a>
                 <a href="what-is-possible" data-js="arts" data-title="Transform the student experience" class="story-link"><span>What is possible?</span></a>
-                <a href="evans-school-powering-policy" data-js="evans-school" data-title="Transform the student experience" class="story-link"><span>What is possible?</span></a>
+                <a href="evans-school-powering-policy" data-js="evans-school" data-title="Transform the student experience" class="story-link"><span>Powering policy locally and globally</span></a>
               </div>
           </div>
           <span class="slide6-content"></span>
