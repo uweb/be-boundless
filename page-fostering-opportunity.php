@@ -119,7 +119,7 @@
 
                   <p>Her first YEOC session was the first time she’d visited a college campus. “It was amazing,” she recalls. </p>
 
-                  <blockquote><span>&ldquo;</span>Walking into the giant atrium of PACCAR Hall and thinking, OK, <i>this is possible</i>. I can see myself here.<span>&rdquo;</span></blockquote>
+                  <blockquote><span>&ldquo;</span>Walking into the giant atrium of PACCAR Hall and thinking, <i>'OK, this is possible</i>. I can see myself here.'<span>&rdquo;</span></blockquote>
 
                 </div> 
           </div> 
@@ -247,7 +247,7 @@
 
 <p>“Yesenia wants to follow those in front of her and help others behind her,” says Pamela Lacson, associate director of Foster’s Undergraduate Diversity Services. “This is what sets YEOC apart: having mentors who look like her, who provide real answers and real possibilities to young people who have the drive but lack the social capital that comes with a lineage of college education.”</p>
 
-<p>Velasquez sees mentoring as the first installment of a lifelong payback plan. From that first day of school, she has remained motivated both by her own expectations and by the pride and pressures of her family.  “My parents came from nothing and worked so hard for me to have these opportunities,” she says. “I want to pay them back. I want to make them proud.”</p>
+<p>Velasquez sees mentoring as the first installment of a lifelong payback plan. From that first day of school, she has remained motivated both by her own expectations and by the pride and pressures of her family. “My parents came from nothing and worked so hard for me to have these opportunities,” she says. “I want to pay them back. I want to make them proud.”</p>
 
 <p>Reflecting on everyone’s hard work, she muses, “Every now and then it hits me. I’m in college. I work in a skyscraper. I’ve been to New York and San Francisco and Morocco. All of these things I could never have imagined when I was in middle school,” Velasquez says. "No matter how hard I worked, I wouldn’t be where I am without YEOC."</p>
 
