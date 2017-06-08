@@ -50,8 +50,7 @@
                     
                     <p class="bolder"><b>From her first day of kindergarten, Yesenia Velasquez knew that she would have to work harder than the other kids.</b></p>
                     
-                    <p>She arrived in school without many advantages, save for wit and genuine grit. Her parents had immigrated to the Yakima Valley from Jalisco, Mexico, before she was born. To make a life in                    
-                    the United States, they worked hard at thankless jobs, Gonzalo forging bricks and Catalina packing produce.</p>
+                    <p>She started school without many advantages, save for wit and genuine grit. Her parents had immigrated to the Yakima Valley from Jalisco, Mexico, before she was born. To make a life in the United States, they worked hard at thankless jobs – Gonzalo forged bricks and Catalina packed produce.</p>
                     
                     <p>But they wanted more for their three daughters.</p>
                     
@@ -87,10 +86,9 @@
 
                 <p>That craving eventually led her to participate in the rigorous Running Start program in high school. The flexible schedule allowed her to work longer shifts at McDonald’s, where she earned enough to afford some of the “extras” that many teenagers take for granted: school clothes, textbooks, band travel, graphing calculators.</p>
 
-                <p>But no matter how hard she worked or how much she learned, college looked no less expensive or intimidating to Velasquez. Besides, what would she study? Growing up in a working-class Hispanic 
-                community, the possibilities seemed abstract at best. Law? Medicine? She had never even heard of accounting.</p>
+                <p>But no matter how how much she learned or how well she did in school, college looked no less expensive or intimidating to Velasquez. Besides, what would she study? Growing up in a working-class Hispanic community, she saw most career possibilities as abstract at best. Maybe law or medicine? She had never even heard of accounting.</p>
 
-                <p>And then she discovered the Young Executives of Color (YEOC) Program at the University of Washington Foster School of Business.</p>
+                <p>Then she discovered the Young Executives of Color (YEOC) Program at the University of Washington Foster School of Business.</p>
 
                 <div id="eng-slideshow" class="foster-slideshow">
                    <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-3.jpg' ?>" alt="Velasquez with one of her two younger sisters">
@@ -111,11 +109,14 @@
 
                   <h3>Ambition meets opportunity</h3>
 
-                  <p>A partnership of the Foster School and the professional services firm Ernst &amp; Young (EY), YEOC is a nine-month program that provides an introduction to business careers, professional development, college                   preparation and mentoring to some of the most promising high school students from underrepresented minority communities around the state. The goal is to unlock potential, offer opportunity and,                   ultimately, to expand prosperity.</p>
-                  <p>One Saturday each month throughout her senior year, Velasquez awoke at 4 a.m. to make the several-hour journey to Seattle, sometimes escorted by her family, sometimes alone on the bus. These treks                   were richly rewarded with practical information and profound inspiration.</p>
+                  <p>A partnership between the Foster School and the professional services firm EY (formerly Ernst & Young), YEOC is a nine-month program that provides an introduction to business careers, professional development, college preparation and mentoring to some of the most promising high school students from underrepresented minority communities around the state. The goal is to unlock potential, offer opportunity and, ultimately, to expand prosperity.</p>
+
+                  <p>One Saturday each month throughout her senior year, Velasquez woke up at 4 a.m. to make the several-hour journey to Seattle, sometimes escorted by her family, sometimes alone on the bus. These treks were richly rewarded with practical information and profound inspiration.</p>
+
                   <p>“No matter the trouble to get there,” she says, “it was worth it.”</p>
-                  <p>Hearing the stories of each session’s featured speaker — senior executives who look like and come from similar backgrounds as many of the students — she began to visualize what she could become. Even the                   location stirred the soul.</p>
-                  <p>Velasquez recalls how her first YEOC session was the first time she’d visited a college campus. “It was amazing,” she says.</p>
+
+                  <p>Her first YEOC session was the first time she’d visited a college campus. “It was amazing,” she recalls. </p>
+
                   <blockquote><span>&ldquo;</span>Walking into the giant atrium of PACCAR Hall and thinking, okay, <i>this is possible</i>. I can see myself here.<span>&rdquo;</span></blockquote>
 
                 </div> 
@@ -207,7 +208,7 @@
       <section class="text-block bus arrow">
 
                 <div class="col-md-5 col-md-offset-6 col-xs-10 col-lg-offset-6 col-xs-offset-1 copy">
-                  <p>Yesenia awoke at 4 a.m. to make the several-hour journey to Seattle, sometimes escorted by her family, sometimes alone on the bus.</p>
+                  <p>Yesenia woke up at 4 a.m. to make the several-hour journey to Seattle, sometimes escorted by her family, sometimes alone on the bus.</p>
                 </div> 
  
         <video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/bus2.jpg' ?>" class=" fullscreen-bg__video">
@@ -232,26 +233,22 @@
 
                     <h3>Making the most of an opportunity</h3>
 
-                    <p>And here she is. Velasquez earned her place at the UW and the Foster School, where she has flourished. With ongoing support from the school’s office of Undergraduate Diversity Services and a mosaic of scholarships — donated by EY, Microsoft and Costco, among others — she has been able to engage fully at the UW and beyond.</p>
-                    
+                   <p> And here she is. Velasquez earned her place at the UW and the Foster School, where she has flourished. With ongoing support from the school’s office of Undergraduate Diversity Services and a mosaic of scholarships — donated by EY, Microsoft and Costco, among others — she has been able to engage fully at the UW and beyond.</p>
                     <p>Velasquez serves in leadership roles at the Association of Latino Professionals for America and in the Kappa Delta Chi cultural sorority. She has also represented the UW at the Indiana University Kelley School of Business National Diversity Case Competition, and has studied abroad in Morocco.</p>
-                    
-                    <p>Her Foster education has continued to open doors. Perhaps most significantly, Velasquez landed an internship at EY after her first year on campus. After rotating between the firm’s audit, advisory and tax practices for the past two summers, she will return this summer for the national tax internship, working with some of EY’s largest clients.</p>
-                    
+                    <p>Her Foster education has continued to open doors. Perhaps most significantly, Velasquez landed an internship at EY after her first year on campus. After rotating between the firm’s audit, advisory and tax practices for the past two summers, she is spending this summer as a national tax intern, working with some of EY’s largest clients.</p>
                     <p>“Yesenia brings a can-do positivity that shows up in everything she does,” says EY recruiter Katie Campbell. “She’s already proven herself to be smart, driven and hard-working. We believe she can do anything she sets her mind to.”</p>
+
 
                     <h3>From mentee to mentor</h3>
 
-                    <p>Now a junior at the UW with a clear path to success that is unprecedented in her family, Velasquez has returned to YEOC in the role of mentor. She brings that positivity — and a wealth of wisdom — to 
-                    the current class of high school students searching for their own futures.</p>
+<p>Now an incoming senior at the UW with a clear path to success that is unprecedented in her family, Velasquez has returned to YEOC as a mentor. She brings that positivity — and a wealth of wisdom — to high school students searching for their own futures.</p>
 
-                    <p>“Yesenia wants to follow those in front of her and help others behind her,” says Pamela Lacson, associate director of Foster’s Undergraduate Diversity Services. “This is what sets YEOC apart: having 
-                    mentors who look like her, who provide real answers and real possibilities to young people who have the drive but lack the social capital that comes with a lineage of college education.”</p>
+<p>“Yesenia wants to follow those in front of her and help others behind her,” says Pamela Lacson, associate director of Foster’s Undergraduate Diversity Services. “This is what sets YEOC apart: having mentors who look like her, who provide real answers and real possibilities to young people who have the drive but lack the social capital that comes with a lineage of college education.”</p>
 
-                    <p>Velasquez sees mentoring as the first installment of a lifelong payback plan. From that first day of school, she has remained motivated both by her own expectations and by the pride and pressures of 
-                    her family.  “My parents came from nothing and worked so hard for me to have these opportunities,” she says. “I want to pay them back. I want to make them proud.”</p>
+<p>Velasquez sees mentoring as the first installment of a lifelong payback plan. From that first day of school, she has remained motivated both by her own expectations and by the pride and pressures of her family.  “My parents came from nothing and worked so hard for me to have these opportunities,” she says. “I want to pay them back. I want to make them proud.”</p>
 
-                    <p>Reflecting on everyone’s hard work, she muses, “Every now and then it hits me. I’m in college. I work in a skyscraper. I’ve been to New York and San Francisco and Morocco. All of these things I could never have imagined when I was in middle school,” Velasquez says. "No matter how hard I worked, I wouldn’t be where I am without YEOC."</p>
+<p>Reflecting on everyone’s hard work, she muses, “Every now and then it hits me. I’m in college. I work in a skyscraper. I’ve been to New York and San Francisco and Morocco. All of these things I could never have imagined when I was in middle school,” Velasquez says. "No matter how hard I worked, I wouldn’t be where I am without YEOC."</p>
+
 
                 </div> 
           </div> 
@@ -275,22 +272,19 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy">
 
+                  <h3>YEOC: Mission and history</h3>
 
+                  <p>The Young Executives of Color program was established at the University of Washington Foster School of Business in 2006. Its mission is to cultivate the academic potential of underrepresented high school student leaders in Washington state.</p>
+                  <p>YEOC began with 36 students from 17 high schools. In the 2016–17 academic year, the partnership with the professional services firm EY brought 170 sophomores, juniors and seniors from 75 high schools around the state to the Foster campus one Saturday a month.</p>
+                  <p>While YEOC helps increase access to excellence at the UW, the pipeline program helps cultivate leaders that attend college all over the state — and the country. Says Lacson, “Historically, 100 percent of our high school seniors have gone on to college. They not only go to the UW; they are getting in to schools across the country. That’s a win for the business community and for college access.” </p>
 
-<h3>YEOC: Mission and history</h3>
+                  <div style="text-align: center; margin-bottom: 30px"><img alt="Since the YEOC program was founded in 2006, 755 students have attended from 155 high schools across Washington State" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/map.png' ?>"></div>
 
-<p>The Young Executives of Color program was established at the University of Washington Foster School of Business in 2006. Its mission is to cultivate the academic potential of underrepresented high school student leaders in Washington state.</p>
+                  <h3>Fostering diversity</h3>
 
-<p>YEOC began with 36 students from 17 high schools. Today, the partnership with the professional services firm EY brings 170 sophomores, juniors and seniors from 75 high schools around the state to the Foster campus one Saturday a month during the academic year.</p>
-
-
-<h3>Fostering diversity</h3>
-
-<p>EY doesn’t just underwrite the UW Foster School’s Young Executives of Color program. It also provides volunteers, recruits high-level executives as keynote 
-speakers, delivers professional development exercises and offers invaluable consulting on curriculum, topics and activities. </p>
-
-<p>“The mission of YEOC aligns with EY's passion for promoting equity in the workforce — championing diversity and inclusiveness — which is at the very heart of EY's values,” says Christian Tinder, ’99, a principal in EY’s advisory practice and the firm’s coordinating 
-partner with the UW. </p>
+                  <p>EY doesn’t just underwrite the UW Foster School’s Young Executives of Color program. It also provides volunteers, recruits high-level executives as keynote speakers, delivers professional development exercises and offers invaluable consulting on curriculum, topics and activities.</p>
+                  <p>“The mission of YEOC aligns with EY's passion for promoting equity in the workforce — championing diversity and inclusiveness — which is at the very heart of EY's values,” says Christian Tinder, ’99, a principal in EY’s advisory practice and the firm’s coordinating partner with the UW.</p>
+                  <p>“They are partners in this program and our success is really tied to their partnership,” says Lacson.</p>
 
                 </div> 
           </div> 
