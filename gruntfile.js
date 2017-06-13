@@ -43,6 +43,7 @@ module.exports = function(grunt) {
           'immersive-stories/js/public-health.js',
           'immersive-stories/js/evans-school.js',
           'immersive-stories/js/nursing.js',
+          'immersive-stories/js/built-env.js',
           'immersive-stories/js/foster-school.js',
           'immersive-stories/js/ischool.js',
           'immersive-stories/js/engineering.js',
@@ -119,6 +120,11 @@ module.exports = function(grunt) {
               'immersive-stories/js/nursing.js',
               'immersive-stories/js/lity.js',
               'immersive-stories/js/slick.js',
+              'immersive-stories/js/objectFitPolyfill.basic.js',
+          ],        
+          'immersive-stories/js/built-env.min.js': [
+              'immersive-stories/js/common.js',
+              'immersive-stories/js/built-env.js',
               'immersive-stories/js/objectFitPolyfill.basic.js',
           ],            
           'immersive-stories/js/foster-school.min.js': [
@@ -219,6 +225,7 @@ module.exports = function(grunt) {
                 'immersive-stories/css/public-health.css': 'immersive-stories/less/public-health.less',
                 'immersive-stories/css/evans-school.css': 'immersive-stories/less/evans-school.less',
                 'immersive-stories/css/nursing.css': 'immersive-stories/less/nursing.less',
+                'immersive-stories/css/built-env.css': 'immersive-stories/less/built-env.less',
                 'immersive-stories/css/foster-school.css': 'immersive-stories/less/foster-school.less',
                 'immersive-stories/css/ischool.css': 'immersive-stories/less/ischool.less',
                 'immersive-stories/css/medicine.css': 'immersive-stories/less/medicine.less',
