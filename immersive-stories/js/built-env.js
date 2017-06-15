@@ -23,27 +23,6 @@ $(function(){
         introMedicine.update(true);
     });
 
-    var addSlideshow = new ScrollMagic.Scene({
-      triggerElement: '.profile',
-      triggerHook: 1,
-    })
-    .on("enter", function(){
-      if ( slideshowFlag ) {
-        $('.foster-slideshow').slick({
-          lazyLoad: 'ondemand',
-          useTransform: true,
-          dots: true,
-          infinite: false,
-          speed: 300,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        });    
-        slideshowFlag = false;
-      }
-  
-    })
-    .addTo(controllerBuilt);
-
 
     $( document )
       .on( "mousemove", ".para", function( event ) {
@@ -81,7 +60,7 @@ $(function(){
       var martez = new ScrollMagic.Scene({
         triggerElement: '.transSection',
         triggerHook: 0,
-        offset: -$(window).height() / 2.5,
+        offset: -$('.transSection').height() / 2,
         duration: '50%',
       })
       .setTween(delacruzAnimation)
