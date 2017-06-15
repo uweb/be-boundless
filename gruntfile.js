@@ -124,6 +124,7 @@ module.exports = function(grunt) {
           ],        
           'immersive-stories/js/built-env.min.js': [
               'immersive-stories/js/common.js',
+              'immersive-stories/js/lity.js',
               'immersive-stories/js/built-env.js',
               'immersive-stories/js/objectFitPolyfill.basic.js',
           ],            

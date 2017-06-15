@@ -14,7 +14,7 @@ $(function(){
     })
     .setPin('.intro', {pushFollowers: false})
     .setClassToggle("body", 'medicineIntro')
-    .setTween('#intro-text', 1, { opacity: 0, transform: 'translateY(-100px)', ease: Power0.easeIn })
+    .setTween('.intro-body', 1, { opacity: 0, transform: 'translateY(-100px)', ease: Power0.easeIn })
     .on('enter',function(){
       $('video').get(0).play()
     })
@@ -60,7 +60,6 @@ $(function(){
       var degY  = ( ( coorX / halfW ) * -10 ) + 'deg'; // max. degree = 10
 
       $( this ).css( 'transform', function() {
-
         return 'perspective( 5500px ) translate3d( 0, -2px, 0 ) scale(1.01) rotateX('+ degX +') rotateY('+ degY +')';
       } )
 
@@ -81,22 +80,13 @@ $(function(){
 
       var martez = new ScrollMagic.Scene({
         triggerElement: '.transSection',
-        triggerHook: 0.4,
+        triggerHook: 0,
+        offset: -$(window).height() / 3,
         duration: '50%',
       })
       .setTween(delacruzAnimation)
       .addTo(controllerBuilt)
 
-
-
-
-    // var studentpic3 = new ScrollMagic.Scene({
-    //   triggerElement: "#profile-3",
-    //   triggerHook: 0.7,
-    //   duration: '80%',
-    // })
-    // .setTween(TweenMax.to('#profile-3 .col-a img', 1, { scaleX:2, scaleY:2, ease: Power0.easeIn }))
-    // .addTo(controllerBuilt);
 
     $( ".pause" ).click(function(e) { 
       var $this = $(e.target);        
