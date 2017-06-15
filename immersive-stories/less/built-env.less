@@ -133,6 +133,7 @@ p {
         }
     }
     @media @phone-only {
+        margin: 6vw 0;
         h3 {
             padding: 7vw 0 6vw 20px;
             margin: 7vw 0 6vw 30px;
@@ -172,6 +173,7 @@ p {
 
     }      //  (min-width: 600px) 
     @media @tablet-portait-only { 
+        margin: 6vw 0;
         transform: none !important;
         -webkit-transform: none !important;
         -moz-transform: none !important;
@@ -872,6 +874,107 @@ section.cactus {
 }
 
 
+@-webkit-keyframes cloudAnimate {
+   0% { margin-left: 20%; opacity: .5; }
+  10% { opacity: 0.75; }
+  90% { opacity: 0.75; }
+  100% { margin-left: -100%; opacity: .5; }
+}
+
+@-moz-keyframes cloudAnimate {
+   0% { margin-left: 20%; opacity: .5; }
+  10% { opacity: 0.75; }
+  90% { opacity: 0.75; }
+  100% { margin-left: -100%; opacity: .5; }
+}
+
+@-o-keyframes cloudAnimate {
+   0% { margin-left: 20%; opacity: .5; }
+  10% { opacity: 0.75; }
+  90% { opacity: 0.75; }
+  100% { margin-left: -100%; opacity: .5; }
+}
+
+@keyframes cloudAnimate {
+   0% { margin-left: 20%; opacity: .5; }
+  10% { opacity: 0.75; }
+  90% { opacity: 0.75; }
+  100% { margin-left: -100%; opacity: .5; }
+}
+
+
+// Clouds 
+
+.clouds {
+    position: relative;
+    background: url("@{built}/backyard.jpg");
+    .background-cover(cover);
+    .mask {
+        width: 100%;
+        height: 67.4vw;
+        mask: url("@{built}/mask.png");
+        -webkit-mask: url("@{built}/mask.png");
+        mask-size: cover;
+        -webkit-mask-size: cover;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        &.cloud-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+             -webkit-animation: cloudAnimate 200s linear infinite;
+             -moz-animation: cloudAnimate 200s linear infinite;
+             -o-animation: cloudAnimate 200s linear infinite;
+             animation: cloudAnimate 200s linear infinite;
+        }
+    }
+    .text {
+        .flex-display(flex);
+        .align-items(flex-end);
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        div {
+            width: 50%;
+            .skew(-15deg,0);
+            .flex-display(flex);
+            .align-items(center);
+            height: 46%;
+            p {
+                font-family: @headline;
+                font-weight: @ultra;
+                color: white;
+                font-size: 3.5vw;
+                text-transform: uppercase;
+                width: 70%;
+                line-height: 1.2;
+                padding-bottom: 4vw;
+                text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.37);
+            }
+            &:nth-child(1) {
+               .justify-content(flex-end);
+               text-align: right;
+               padding-right: 2vw;
+            }
+            &:nth-child(2) {
+                border-left: 2px solid white;
+                padding-left: 2vw;
+                p {
+                 width: 70%;
+                 font-family: @font-family-base;
+                 font-weight: 300;
+                }
+            }
+        }
+    }
+}
+
 
 .yardSection {
     width: 100%;
@@ -921,7 +1024,18 @@ section.cactus {
             }
         }
     }
-
+    @media @phone-only { 
+        p {
+            font-size: 4vw;
+        }
+    }              //  (max-width: 599px)          
+    // @media @tablet-portrait-up { }      //  (min-width: 600px) 
+    // @media @tablet-portait-only { }     //  (min-width: 600px) and (max-width: 899px) 
+    // @media @tablet-landscape-up { }     //  (min-width: 900px)
+    // @media @tablet-landscape-only { }   //  (min-width: 900px) and (max-width: 1199px) 
+    // @media @desktop-up { }              //  (min-width: 1200px)     
+    // @media @desktop-only { }            //  (min-width: 1200px) and (max-width: 1799px)"     
+    // @media @big-desktop-up { }          //  (min-width: 1800px) 
 }
 
 
@@ -1395,15 +1509,17 @@ div.boundless-headline {
         
     }              //  (max-width: 599px)          
     @media @tablet-portrait-up { 
-        font-size: 33px;
     }      //  (min-width: 600px) 
     // @media @tablet-portait-only { }     //  (min-width: 600px) and (max-width: 899px) 
-    // @media @tablet-landscape-up { }     //  (min-width: 900px)
+    @media @tablet-landscape-up { 
+        font-size: 33px;
+    }     //  (min-width: 900px)
     // @media @tablet-landscape-only { }   //  (min-width: 900px) and (max-width: 1199px) 
     // @media @desktop-up { }              //  (min-width: 1200px)     
     // @media @desktop-only { }            //  (min-width: 1200px) and (max-width: 1799px)"     
     // @media @big-desktop-up { }          //  (min-width: 1800px)    
 }
+
 
 
 // Video pauser

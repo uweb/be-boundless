@@ -81,7 +81,7 @@ $(function(){
       var martez = new ScrollMagic.Scene({
         triggerElement: '.transSection',
         triggerHook: 0,
-        offset: -$(window).height() / 3,
+        offset: -$(window).height() / 2.5,
         duration: '50%',
       })
       .setTween(delacruzAnimation)

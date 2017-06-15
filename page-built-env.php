@@ -252,18 +252,14 @@
         </div>   
       </section>
 
-  
-
-      <section class="text-block yardSection">
-
-          <div class="text">
-            <div><p>His mission isn't to lead</p></div>
-            <div><p id="fade-text">but to help community members realize their leadership potential</p></div>
-          </div>
-
-      </section>
-
-
+      <div class="clouds">
+        <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/built-env/clouds.png' ?>" alt="">
+        <div class="mask"><img alt="David de la Cruz" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/built-env/backyard.jpg' ?>" alt=""></div>
+        <div class="text">
+          <div><p>His mission isn't to lead</p></div>
+          <div><p id="fade-text">but to help community members realize their leadership potential</p></div>
+        </div>
+      </div>
 
 
       <section class="text-block giving-widget branded arrow">
