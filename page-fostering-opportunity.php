@@ -107,7 +107,7 @@
 
 
 
-                  <h3>Ambition meets opportunity</h3>
+                  <h3>Ambition unlocked</h3>
 
                   <p>A partnership between the Foster School and the professional services firm EY (formerly Ernst &amp; Young), YEOC is a nine-month program that provides an introduction to business careers, professional development, college preparation and mentoring to some of the most promising high school students from underrepresented minority communities around the state. The goal is to unlock potential, offer opportunity and, ultimately, to expand prosperity.</p>
 
