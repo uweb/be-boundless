@@ -37,7 +37,7 @@ $(function(){
       var degY  = ( ( coorX / halfW ) * -10 ) + 'deg'; // max. degree = 10
 
       $( this ).css( 'transform', function() {
-        return 'perspective( 5500px ) translate3d( 0, -2px, 0 ) scale(1.01) rotateX('+ degX +') rotateY('+ degY +')';
+        return 'perspective( 5500px ) scale(1.01) rotateX('+ degX +') rotateY('+ degY +')';
       } )
 
     } )

@@ -17,11 +17,11 @@
           <div class="col-md-6 col-lg-7 col-md-offset-1 col-xs-8 col-lg-offset-2 col-xs-offset-1" id='intro-text'>
               <h1><span><span>Where Will </span></span><span><span>Meets Way</span></span> </h1>
               <span class="udub-slant"><span></span></span>
-              <p>For Yakima-born Yesenia Velasquez, the Young Executives of Color Program at the Foster School of Business has opened the door to a promising future she never knew existed.</p>
+              <p>For Yakima-born Yesenia Velasquez, the Young Executives of Color program at the Foster School of Business has opened the door to a promising future she never knew existed.</p>
               <a data-lity href="https://www.youtube.com/embed/LB6eMB4g2B0?autoplay=1&rel=0&showinfo=0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="75.649" height="75.625" viewBox="0 0 75.649 75.625"><circle fill="none" stroke="#FFF" stroke-width="4.649" stroke-miterlimit="10" cx="37.785" cy="37.822" r="34.703"/><path fill="#FFF" d="M25.88 19.814l32.885 18.008-32.886 18.01"/></svg>
                 </svg>
-                <p>See Yesenia's story</p>
+                <p>See Yesenia&rsquo;s story</p>
               </a>
           </div>
       </div>
