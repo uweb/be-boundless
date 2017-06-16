@@ -88,7 +88,7 @@
 
                 <p>But no matter how much she learned or how well she did in school, college looked no less expensive or intimidating to Velasquez. Besides, what would she study? Growing up in a working-class Hispanic community, she saw most career possibilities as abstract at best. Maybe law or medicine? She had never even heard of accounting.</p>
 
-                <p>Then she discovered the Young Executives of Color (YEOC) Program at the University of Washington Foster School of Business.</p>
+                <p>Then she discovered the Young Executives of Color (YEOC) program at the University of Washington Foster School of Business.</p>
 
                 <div id="eng-slideshow" class="foster-slideshow">
                    <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-3.jpg' ?>" alt="Velasquez with one of her two younger sisters">
