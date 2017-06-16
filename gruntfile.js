@@ -133,8 +133,8 @@ module.exports = function(grunt) {
               // Popup video
               'immersive-stories/js/lity.js',
               // Leaflet
-              'immersive-stories/js/libraries/heatmap.min.js',
-              'immersive-stories/js/libraries/leaflet-heatmap.js',
+              //'immersive-stories/js/libraries/heatmap.min.js',
+              //'immersive-stories/js/libraries/leaflet-heatmap.js',
               'immersive-stories/js/foster-school.js',
               // Slideshow
               'immersive-stories/js/slick.js',
