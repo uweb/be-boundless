@@ -33,8 +33,6 @@ $(function(){
       var coorX = ( halfW - ( event.pageX - this.offsetLeft ) );
       var coorY = ( halfH - ( event.pageY - $(this).offset().top ) ); // this is the problem
 
-      console.log(this.offsetTop )
-
       var degX  = ( ( coorY / halfH ) * 10 ) + 'deg'; // max. degree = 10 /// this is the problem
       var degY  = ( ( coorX / halfW ) * -10 ) + 'deg'; // max. degree = 10
 
