@@ -235,7 +235,7 @@
                     <h3>Making the most of an opportunity</h3>
 
                    <p> And here she is. Velasquez earned her place at the UW and the Foster School, where she has flourished. With ongoing support from the school’s office of Undergraduate Diversity Services and a mosaic of scholarships — donated by EY, Microsoft and Costco, among other organizations — she has been able to engage fully at the UW and beyond.</p>
-                    <p>Velasquez serves in leadership roles at the Association of Latino Professionals for America and in the Kappa Delta Chi cultural sorority. She has also represented the UW at the Indiana University Kelley School of Business National Diversity Case Competition, and she has studied abroad in Morocco.</p>
+                    <p>Velasquez serves in leadership roles at the Association of Latino Professionals for America and in the Kappa Delta Chi cultural sorority. She has also represented the UW at the Indiana University Kelley School of Business National Diversity Case Competition, and she has <a href="http://www.washington.edu/global/opportunities/#yesenia">studied abroad in Morocco</a>.</p>
                     <p>Her Foster education has continued to open doors. Perhaps most significantly, Velasquez landed an internship at EY after her first year on campus. After rotating between the firm’s audit, advisory and tax practices for the past two summers, she is spending this summer as a national tax intern, working with some of EY’s largest clients.</p>
                     <p>“Yesenia brings a can-do positivity that shows up in everything she does,” says EY recruiter Katie Campbell. “She’s already proven herself to be smart, driven and hardworking. We believe she can do anything she sets her mind to.”</p>
 
