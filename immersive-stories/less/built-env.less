@@ -88,7 +88,6 @@ p {
         position: relative;
         z-index: 1;
         transform: translateY(150px);
-        font-style: normal;
         span {
             transform: skew(-15deg,0) translateZ(50px);
             display: inline-block;
@@ -98,7 +97,8 @@ p {
         i {
             font-family: @font-family-base;
             font-weight: 300;
-            font-style: none;
+            font-style: normal;
+            display: block;
         }
     }
     .cutout {
@@ -250,6 +250,22 @@ section.cactus {
     .background-cover(cover);
     background-position: center center;
     background-color: black;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;             
+    background: -webkit-linear-gradient(bottom left, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%);
+    background: -o-linear-gradient(bottom left, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%);
+    background: linear-gradient(to top right, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bd000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+    .scrollit {
+        z-index: 1;
+    }
     p {
         color: white;
         font-weight: bold;

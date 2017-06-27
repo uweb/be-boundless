@@ -69,16 +69,16 @@ $(function(){
 
     var delacruzAnimation = new TimelineMax ()
           .add([
-            TweenMax.to('#photo-1', 1, {  opacity: 1,  ease: Power0.easeIn }),
             TweenMax.to('#photo-2', 1,    {  opacity: 0, ease: Power0.easeIn, delay: 0.0 }),
-            TweenMax.to('#fade-text', 1,    {  opacity: 1, ease: Power0.easeIn, delay: 1 })
+            TweenMax.to('#fade-text', 1,    {  opacity: 1, ease: Power0.easeIn, delay: 0.0 })
           ])
+    var transHeight = -$('.transSection').height();
 
     var martez = new ScrollMagic.Scene({
       triggerElement: '.transSection',
       triggerHook: 0,
       offset: -$('.transSection').height() / 2,
-      duration: '50%',
+      duration:  ($('.transSection').height() / 2) + 'px',
     })
     .setTween(delacruzAnimation)
     .addTo(controllerBuilt)
