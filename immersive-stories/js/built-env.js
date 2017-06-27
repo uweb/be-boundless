@@ -24,45 +24,64 @@ $(function(){
     });
 
 
-    $( document )
-      .on( "mousemove", ".para", function( event ) {
+//   $( document )
+//     .on( "mousemove", ".para", function( event ) {
 
-      var halfW = ( this.clientWidth / 2 );
-      var halfH = ( this.clientHeight / 2 );
+//     var halfW = ( this.clientWidth / 2 );
+//     var halfH = ( this.clientHeight / 2 );
 
-      var coorX = ( halfW - ( event.pageX - this.offsetLeft ) );
-      var coorY = ( halfH - ( event.pageY - $(this).offset().top ) ); // this is the problem
+//     var coorX = ( halfW - ( event.pageX - this.offsetLeft ) );
+//     var coorY = ( halfH - ( event.pageY - $(this).offset().top ) ); // this is the problem
 
-      var degX  = ( ( coorY / halfH ) * 10 ) + 'deg'; // max. degree = 10 /// this is the problem
-      var degY  = ( ( coorX / halfW ) * -10 ) + 'deg'; // max. degree = 10
+//     var degX  = ( ( coorY / halfH ) * 10 ) + 'deg'; // max. degree = 10 /// this is the problem
+//     var degY  = ( ( coorX / halfW ) * -10 ) + 'deg'; // max. degree = 10
 
-      $( this ).css( 'transform', function() {
-        return 'perspective( 1500px ) translate3d( 0, 0, 30px )  rotateX('+ degX +') rotateY('+ degY +')';
-      } )
+//     $( this ).css( 'transform', function() {
+//       return 'perspective( 1500px ) translate3d( 0, 0, 30px )  rotateX('+ degX +') rotateY('+ degY +')';
+//     } )
 
-    } )
-      .on( "mouseout", ".para", function() {
-      $( this ).removeAttr( 'style' )
-    } );
+//   } )
+//     .on( "mouseout", ".para", function() {
+//     $( this ).removeAttr( 'style' )
+//   } );
+
+
+  // In order to toggle current section, 
+  $('.para').each(function(index,element){
+      var el = $(this).find('.cutout');
+      var elH3 = $(this).find('h3');
+      var elHeight = $(this).height();
+      var paraMove = new ScrollMagic.Scene({
+          duration: (this.offsetHeight + elHeight) + 'px',
+          triggerElement: this,
+          triggerHook: 1
+      })
+      .setTween(new TimelineMax().add([
+          TweenMax.to(elH3, 1, { transform: 'translateY(-150px)', ease: Power0.easeIn }),
+          TweenMax.to(el, 1, { transform: 'translateY(-75px)', ease: Power0.easeIn })
+      ]));
+      paraMove.addTo(controllerBuilt);    
+  })
+
 
 
     // Parallax photos 
 
-      var delacruzAnimation = new TimelineMax ()
-            .add([
-              TweenMax.to('#photo-1', 1, {  opacity: 1,  ease: Power0.easeIn }),
-              TweenMax.to('#photo-2', 1,    {  opacity: 0, ease: Power0.easeIn, delay: 0.0 }),
-              TweenMax.to('#fade-text', 1,    {  opacity: 1, ease: Power0.easeIn, delay: 1 })
-            ])
+    var delacruzAnimation = new TimelineMax ()
+          .add([
+            TweenMax.to('#photo-1', 1, {  opacity: 1,  ease: Power0.easeIn }),
+            TweenMax.to('#photo-2', 1,    {  opacity: 0, ease: Power0.easeIn, delay: 0.0 }),
+            TweenMax.to('#fade-text', 1,    {  opacity: 1, ease: Power0.easeIn, delay: 1 })
+          ])
 
-      var martez = new ScrollMagic.Scene({
-        triggerElement: '.transSection',
-        triggerHook: 0,
-        offset: -$('.transSection').height() / 2,
-        duration: '50%',
-      })
-      .setTween(delacruzAnimation)
-      .addTo(controllerBuilt)
+    var martez = new ScrollMagic.Scene({
+      triggerElement: '.transSection',
+      triggerHook: 0,
+      offset: -$('.transSection').height() / 2,
+      duration: '50%',
+    })
+    .setTween(delacruzAnimation)
+    .addTo(controllerBuilt)
 
 
     $( ".pause" ).click(function(e) { 

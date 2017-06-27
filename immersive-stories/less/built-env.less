@@ -80,9 +80,6 @@ p {
         font-size: 2.5vw;
         color: white;
         text-transform: uppercase;
-        border-left: 2px solid white;
-        transform: skew(-15deg,0) translateZ(50px);
-        padding: 7vw 0 6vw 50px;
         margin: 7vw 0 6vw 90px;
         font-size: 4.5vw;
         width: 40%;
@@ -90,9 +87,18 @@ p {
         text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.12);
         position: relative;
         z-index: 1;
+        transform: translateY(150px);
+        font-style: normal;
         span {
+            transform: skew(-15deg,0) translateZ(50px);
+            display: inline-block;
+            border-left: 2px solid white;
+            padding: 7vw 0 6vw 50px;
+        }
+        i {
             font-family: @font-family-base;
             font-weight: 300;
+            font-style: none;
         }
     }
     .cutout {
@@ -101,7 +107,7 @@ p {
         top:  4vw;
         bottom: 4vw;
         width: 50%;
-        transform: translateZ(50px);
+        transform: translateY(75px);
         .pic {
             position: absolute;
             left: 0;
@@ -160,7 +166,7 @@ p {
 
         h3 {
             font-size: 4.5vw;
-            width: 40%;
+            width: 50%;
         }
         .cutout {
             .location {
@@ -183,7 +189,6 @@ p {
         transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
         transform: perspective(1500px) translateZ(50px);
         transform-style: preserve-3d;
-        margin-top: 50px;
         margin: 50px 100px 0;
         .cutout {
             .location {

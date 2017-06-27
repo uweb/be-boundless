@@ -16,7 +16,7 @@
   <button id="pause">Pause</button>
   <video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/built-env/header.jpg' ?>" class="fullscreen-bg__video">
       <!-- <source src="img/street-bw-webm.webm" type="video/webm"> -->
-      <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/built-env/header.mp4' ?>" type="video/mp4">
+      <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/built-env/header-slow.mp4' ?>" type="video/mp4">
       <!-- <source src="<?php echo plugins_url('uw-template-hierarchy') . '/assets/asb/video/public-health/header-new.webm' ?>" type="video/webm"> -->
   </video>
 
@@ -61,7 +61,7 @@
 
 
       <section class="para p-1">
-        <h3>Where you live affects <span>how you live</span></h3>
+        <h3><span>Where you live affects <i>how you live</i></span></h3>
         <div class="cutout">
             <div class="pic arrow-right"></div>
             <div class="location">
@@ -94,7 +94,7 @@
       </section>
       
       <section class="para p-2">
-        <h3>A legacy of pollution  </h3>
+        <h3><span>A legacy of pollution</span>  </h3>
         <div class="cutout">
             <div class="pic arrow-right"></div>
             <div class="location">
@@ -130,7 +130,7 @@
       </section>
 
       <section class="para p-3">
-        <h3>From the <br>ground up</h3>
+        <h3><span>From the <br>ground up</span></h3>
         <div class="cutout">
             <div class="location">
               <p>Gould Hall</p>
@@ -164,7 +164,7 @@
 
 
       <section class="para p-4">
-        <h3>Green for the greater good</h3>
+        <h3><span>Green for the greater good</span></h3>
         <div class="cutout">
             <div class="pic arrow-right"></div>
             <div class="location">
@@ -215,7 +215,7 @@
 
   
       <section class="para p-5">
-        <h3>Envisioning a garden city</h3>
+        <h3><span>Envisioning a garden city</span></h3>
         <div class="cutout">
             <div class="pic arrow-right"></div>
             <div class="location">

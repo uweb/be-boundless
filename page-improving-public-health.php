@@ -260,7 +260,7 @@
         </g>
         <g>
           <text transform="matrix(1 0 0 1 191.4966 435.6128)"><tspan x="0" y="0" class="st6 st0 st8">P</tspan><tspan x="6.5" y="0" class="st6 st0 st8">A</tspan><tspan x="14.1" y="0" class="st6 st0 st8">R</tspan><tspan x="21.3" y="0" class="st6 st0 st8">TNERS:</tspan></text>
-          <text transform="matrix(1 0 0 1 191.4966 451.2109)"><tspan x="0" y="0" class="st6 st2 st8">• Blantyre Institute for Community Ophtalmology (BICO)</tspan><tspan x="0" y="13.2" class="st6 st2 st8">• London School of Hygiene and Tropical Medicine</tspan></text>
+          <text transform="matrix(1 0 0 1 191.4966 451.2109)"><tspan x="0" y="0" class="st6 st2 st8">• Blantyre Institute for Community Ophthalmology (BICO)</tspan><tspan x="0" y="13.2" class="st6 st2 st8">• London School of Hygiene and Tropical Medicine</tspan></text>
           <g>
             <text transform="matrix(1 0 0 1 190.3242 405.5503)" class="st5 st7 st9">Malawi</text>
           </g>
