@@ -123,7 +123,7 @@
 
                       </div>                 
                       <div class="col-md-5 col-md-offset-1">
-                          <p class="bolder">The projects still house low-income black, Latino and Cambodian communities. And decades of inequity have left a void of opportunity that negatively affects the health, happiness and well-being of residents, who have limited ways to make change.</p>
+                          <p class="bolder">Nearly 80 years later, the projects still house low-income black, Latino and Cambodian communities. And decades of inequity have left a void of opportunity that negatively affects the health, happiness and well-being of residents, who have limited ways to make change.</p>
                       </div> 
                     </div>
                 </div>
