@@ -123,8 +123,9 @@
 
                       </div>                 
                       <div class="col-md-5 col-md-offset-1">
-                          <p class="bolder">Nearly 80 years later, the projects still house low-income black, Latino and Cambodian communities. And decades of inequity have left a void of opportunity that negatively affects the health, happiness and well-being of residents, who have limited ways to make change.</p>
-                      </div> 
+                      <blockquote><span>&ldquo;</span>The community engagement work produced by the College of Built Environment’s landscape architecture department is what compelled me to apply to the UW. I’m interested in collaborating on socially responsible designs that strive for community well-being.<span>&rdquo;</span></blockquote>
+                          <p class="attribute"> David de la Cruz, ’17</p>
+                      </div>
                     </div>
                 </div>
           </div> 
