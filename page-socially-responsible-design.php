@@ -26,7 +26,7 @@
           <div class="col-md-6 col-lg-4 col-md-offset-1 col-xs-10 col-lg-offset-2 col-xs-offset-1" id='intro-text'>
               <h1>Garden <br>cities</h1>
               <span class="udub-slant"><span></span></span>
-              <p>At the UW’s College of Built Environments, students like David de la Cruz, ’17, are partnering with some of the world’s most vulnerable communities in the fight for environmental justice.</p>
+              <p>At the UW’s College of Built Environments, students like David de la Cruz, ’17, are partnering with some of the world’s most vulnerable communities in the fight for environmental justice. </p>
               
           </div>          
           <div class="col-md-6 col-lg-3 col-md-offset-1 col-xs-12 col-lg-offset-1 col-xs-offset-1 play-button" >
@@ -83,6 +83,8 @@
 <p>David de la Cruz has a question about power. “When we think about toxic sites and where they’re placed in relation to where people live, who’s left out of making those decisions?” </p>
 <p>“Often,” he answers, “it’s the people who live there. It’s low-income communities, working-class communities and communities of color who don’t have a say. They’re the ones who have to deal with the consequences of living close to a grain mill facility that constantly sees truck traffic, or living close to a yard that has trains passing back and forth.” </p>
 <p>And while these communities have some autonomy, he says, people are moving into areas that are already extensively polluted. There’s often no decision to be made — pollution is part of the package.</p>
+
+
 <p><i>Where</i> you live affects <i>how</i> you live. </p>
 
                       </div>                 
@@ -146,8 +148,12 @@
                     <div class="row">
                       <div class="col-md-6">
 
-<p>The spirit of what the College of Built Environments calls “emergent-convergent design” — community-driven projects that start small but contribute to a large-scale vision — pulses through the College. But it may run strongest where de la Cruz found his academic home: the Informal Urban Communities Initiative, a donor-supported design activism, research and education program cofounded by associate professor of landscape architecture Ben Spencer.</p>
+<p>The spirit of what the College of Built Environments calls “emergent-convergent design” — community-driven projects that start small but contribute to a large-scale vision — pulses through the College. But it may run strongest where de la Cruz found his academic home at the UW: the Informal Urban Communities Initiative, a donor-supported design activism, research and education program cofounded by associate professor of landscape architecture Ben Spencer.</p>
+
 <p>“I was really interested in working with landscape architecture professors like Ben Spencer who have this emphasis on community engagement,” says de la Cruz, whose work was supported by the Margaret and Fritz Wagner Family Endowed Fellowship, the Norman J. Johnston Endowed Scholarship, and the University of Washington Graduate Opportunity Award.</p>
+
+<p>That emphasis is what inspired de la Cruz to apply to the UW, where socially responsible design is a solution to some of the world’s greatest health and equity challenges.</p> 
+
 <p>He was also inspired by his mother, a longtime community leader in Pueblo del Rio whose outreach has included setting up neighborhood food banks and hosting support groups for widows and women who have experienced domestic violence. “Seeing my mother’s commitment to this idea of the collective well-being of her community — and the faith her community has in her — has shaped the work that I do.”</p>
 
                       </div>                 
@@ -237,6 +243,9 @@
 <p>As the 2017 National Olmstead Scholar — named by the premier national award program for landscape architecture students — he’ll have the chance to pursue this goal as he returns to South Central LA to address its most urgent threats: pollution, gentrification, displacement. (The restoration of the Los Angeles River, which involves all three, is high on his list.) He’s already applied his studies to the real world, hosting two workshops back in South Central LA that pulled in artists, park rangers, housing services coordinators and residents to mobilize de la Cruz’s community and imagine a neighborhood that trades industrial sites for green space. </p>
 <p>The work has started, says de la Cruz. “People have found ways to thrive in these environments regardless of the systemic issues that suppress them. Walk down a few aisles from here, and you can see all these plants that people grow,” he says from his mother’s kitchen table, motioning outside to the grassy lawns separating the rows of apartments. “They’ve found a way to connect to the soil that’s here, which the plants have the potential to clean up. Even though it’s not at a systemic level, people have found ways to have some sort of control over their own health through the way they intervene right in their front yards.”</p>
 <p>By applying this community knowledge on a larger scale, landscape architecture can combat widespread issues at the systemic level. “There are leaders in these communities,” says de la Cruz. “The intention is that they collaborate to take on projects at a front-yard level using local knowledge.” From there, he explains, they can scale up and shape healthier environments. </p>
+
+<p>The impact of landscape architecture on the well-being of residents in Los Angeles, Seattle and around the world is monumental — and thanks in part to private gifts of support, de la Cruz has gained the knowledge to work toward ensuring a strong, positive future for everyone. </p>
+
 <p>“Through community involvement and participation, I’m hoping to work with residents to articulate how we can transform these larger infrastructures — ghosted railways, abandoned factories, the Los Angeles River — in a way that benefits them,” says de la Cruz. “So much knowledge already exists in these communities, and there are opportunities to have more landscape architects who come from diverse backgrounds. My mission isn’t to lead, but to help community members realize their leadership potential.” </p>
 
                       </div>                 
@@ -269,7 +278,7 @@
                   <div class="col-md-10 col-md-offset-1 copy ">
                     <div style="text-align: center">             
                       <h2 class="headline-gold">What you care about <br>can change the world</h2>
-                      <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless, For Washington, For the World. Join in the fight for environmental justice and healthier, more fulfilling futures for all by investing in students like David de la Cruz. </p>
+                      <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. Invest in environmental justice and healthier, more fulfilling futures for all by contributing to the College of Built Environments and students like David de la Cruz. </p>
                       <div id="immersive-give-iframe"></div>
                       <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="AUPGEN,CBEIIN,LAPERU" href="#">Give now</a></span></div>
                     </div>

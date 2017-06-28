@@ -87,7 +87,6 @@ p {
         text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.12);
         position: relative;
         z-index: 1;
-        transform: translateY(150px);
         span {
             transform: skew(-15deg,0) translateZ(50px);
             display: inline-block;
@@ -103,17 +102,16 @@ p {
     }
     .cutout {
         position: absolute;
-        right: 20px;
+        right: 0;
         top:  4vw;
         bottom: 4vw;
         width: 50%;
-        transform: translateY(75px);
         .pic {
             position: absolute;
             left: 0;
             top:  0;
             bottom: 0;
-            width: 80%;
+            width: 100%;
             .background-cover(cover);
             background-position: center center;
         }
@@ -165,10 +163,16 @@ p {
     @media @tablet-portrait-up { 
 
         h3 {
+            transform: translateY(150px);
             font-size: 4.5vw;
             width: 50%;
         }
         .cutout {
+            right: 20px;
+            transform: translateY(75px);
+            .pic {
+                width: 80%;
+            }
             .location {
                 bottom: -25px;
                 p {
