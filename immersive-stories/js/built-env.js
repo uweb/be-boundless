@@ -64,8 +64,8 @@ $(function(){
             triggerHook: 1
         })
         .setTween(new TimelineMax().add([
-            TweenMax.to(elH3, 1, { transform: 'translateY(-150px)', ease: Power0.easeIn }),
-            TweenMax.to(el, 1, { transform: 'translateY(-75px)', ease: Power0.easeIn })
+            TweenMax.to(elH3, 1, { transform: 'translateY(-90px)', ease: Power0.easeIn }),
+            TweenMax.to(el, 1, { transform: 'translateY(-30px)', ease: Power0.easeIn })
         ]));
         paraMove.addTo(controllerBuilt);    
     })
@@ -83,9 +83,8 @@ $(function(){
 
     var martez = new ScrollMagic.Scene({
       triggerElement: '.transSection',
-      triggerHook: 0,
-      offset: -$('.transSection').height() / 2,
-      duration:  $('.transSection').height() / 3,
+      triggerHook: 0.5,
+      duration:  '45%',
     })
     .setTween(delacruzAnimation)
     .addTo(controllerBuilt)
