@@ -100,7 +100,6 @@
           </div>
         </div>
       </section>
-
       
 
       <section class="text-block yellow section-3">
@@ -150,6 +149,26 @@
         </div>
       </section>
 
+
+      <section class="text-block giving-widget-promoted">
+              <div class="row">
+                  <div class="first-col col-md-5 col-md-offset-4 col-sm-8 col-sm-offset-1 col-xs-offset-1 col-xs-10">
+                    <div>             
+                      <h2 class="headline-gold">You can make inclusive technology possible</h2>
+                      <p>Mott is just one of many UW students and researchers working to make digital innovations accessible for everyone. By giving to the iSchool’s Human Computer Interaction Research Fund, you can fuel life-changing tech solutions for people of all abilities.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-offset-1 ">
+                    <div>                                 
+                      <div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="WOBDIS" href="#">Give now</a></span></div>
+                      <button id="close-give">Close</button>
+                    </div>
+                  </div>
+
+
+              </div>
+             <div id="immersive-give-iframe-promoted"></div>
+      </section>
 
 
       <section class="text-block yellow section-4">

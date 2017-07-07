@@ -78,6 +78,42 @@ $(function(){
   }
 
 
+  // Promoted giving widget found within stories // I should really combine this with the old giving iframe code
+  var immersiveGivePromoted = document.getElementById('immersive-give-promoted');
+
+  if(!!immersiveGivePromoted){
+    immersiveGivePromoted.addEventListener('click', function(e){
+      e.preventDefault(); 
+      var $immersiveGiveIframe = $('#immersive-give-iframe-promoted');
+
+      $('.giving-widget-promoted').toggleClass('active');
+      
+      if(isEmpty($immersiveGiveIframe)) {
+        $('<iframe>', {
+          src: 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&source_typ=3&appeal=17XIS&source=' + e.target.getAttribute('data-fund'),
+          frameborder: 0,
+          width: '100%',
+          height: 'auto',
+        }).appendTo('#immersive-give-iframe-promoted'); 
+      }
+      
+
+
+      setTimeout(function(){
+        $immersiveGiveIframe.find('iframe').focus();
+      },500)
+
+    })
+    $('#close-give').click(function(){
+      $('#immersive-give-iframe-promoted').empty();
+      $('.giving-widget-promoted').toggleClass('active');
+    });
+
+  }
+
+
+
+
   // Audio Player
   $(".audio-ctrl").each(function(){
   
