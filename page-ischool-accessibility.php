@@ -160,12 +160,10 @@
                   </div>
                   <div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-offset-1 ">
                     <div>                                 
-                      <div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="WOBDIS" href="#">Give now</a></span></div>
+                      <div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="WOBDIS" href="#giving-widget-promoted">Give now</a></span></div>
                       <button id="close-give">Close</button>
                     </div>
                   </div>
-
-
               </div>
              <div id="immersive-give-iframe-promoted"></div>
       </section>
@@ -338,8 +336,17 @@
  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
 
  
+<?php get_template_part('footer', 'campaign'); ?>
 
- <?php get_template_part('footer', 'campaign'); ?>
+<script type="text/javascript">
+$(document).ready(function () {
+  $('#immersive-give-promoted').click(function(){
+    console.log('working')
+    var match = $(this).attr('href').match(/#\S+/);
+    ga('send', 'pageview', location.pathname + match[0]);
+  });
+});
+</script>
 
 
 </body>
