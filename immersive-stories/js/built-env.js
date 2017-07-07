@@ -89,6 +89,22 @@ $(function(){
     .setTween(delacruzAnimation)
     .addTo(controllerBuilt)
 
+    // Parallax photos 
+
+    var delacruzAnimationII = new TimelineMax ()
+          .add([
+            TweenMax.to('.mask', 1,    {  opacity: 0, ease: Power0.easeIn, delay: 0.0 }),
+          ])
+    var transHeightII = -$('.transSection').height();
+
+    var martezII = new ScrollMagic.Scene({
+      triggerElement: '.clouds',
+      triggerHook: 0.5,
+      duration:  '45%',
+    })
+    .setTween(delacruzAnimationII)
+    .addTo(controllerBuilt)
+
 
     $( ".pause" ).click(function(e) { 
       var $this = $(e.target);        
