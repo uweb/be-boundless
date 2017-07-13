@@ -26,7 +26,7 @@
           <div class="col-md-6 col-lg-4 col-md-offset-1 col-xs-10 col-lg-offset-2 col-xs-offset-1" id='intro-text'>
               <h1>Garden <br>cities</h1>
               <span class="udub-slant"><span></span></span>
-              <p>At the UW’s College of Built Environments, students like David de la Cruz, ’17, are partnering with some of the world’s most vulnerable communities in the fight for environmental justice. </p>
+              <p>At the UW’s <a href="http://be.uw.edu/">College of Built Environments</a>, students like David de la Cruz, ’17, are partnering with some of the world’s most vulnerable communities in the fight for environmental justice. </p>
               
           </div>          
           <div class="col-md-6 col-lg-3 col-md-offset-1 col-xs-12 col-lg-offset-1 col-xs-offset-1 play-button" >
@@ -114,7 +114,7 @@
                     <div class="row">
                       <div class="col-md-6">
 
-<p>De la Cruz, a 2017 graduate of the College of Built Environments’ master of landscape architecture program, grew up in Pueblo del Rio, a public housing project in South Central Los Angeles located just southwest of the Los Angeles River. </p>
+<p>De la Cruz, a 2017 graduate of the College of Built Environments’ master of <a href="http://larch.be.uw.edu/">landscape architecture program</a>, grew up in Pueblo del Rio, a public housing project in South Central Los Angeles located just southwest of the Los Angeles River. </p>
 <p>The “garden city” complex — named for the open, grassy spaces that separate the rows of two-story buildings — went up in the early 1940s to support low-income, primarily black laborers who were flooding into the city to work in the defense industry in the wake of the Great Depression. South Central LA is the industrial center of the city, which has some of the most polluted air in the nation.</p>
 <p>Nearly 80 years later, the projects still house low-income black, Latino and Cambodian communities. And decades of inequity have left a void of opportunity that negatively affects the health, happiness and well-being of residents, who have limited ways to make change.</p>
 <p>But de la Cruz has a vision for change. Now, he’s returning from the UW to the community that raised him to partner with locals to help make the projects — and the world — a more environmentally equitable place for all. </p>
