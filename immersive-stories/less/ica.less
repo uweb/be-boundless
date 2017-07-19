@@ -480,6 +480,19 @@ section.cactus {
             top: calc(~"100vh - 95px");
             bottom: auto;
         }
+        #intro-text {
+            position: relative;
+            &:after {
+                content: "";
+                width: 2px;
+                height: 200%;
+                top: 0;
+                .rotate(15deg);
+                right: -70px;
+                position: absolute;
+                background-color: white;
+            }
+        }
         .intro-body {
             .intro-body {
                 & > div {
@@ -495,17 +508,7 @@ section.cactus {
                     position: relative;
                     .flex-display(flex);
                     .align-items(center);
-                    &:after {
-                        content: "";
-                        width: 2px;
-                        height: 100%;
-                        left: 0;
-                        top: 0;
-                        .rotate(15deg);
-                        left: -70px;
-                        position: absolute;
-                        background-color: white;
-                    }
+
 
                 }
             }
