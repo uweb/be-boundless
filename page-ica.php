@@ -9,7 +9,7 @@
 
 <div id="immersive-body">
 
-<section class="intro">          
+<section class="intro" id="intro-vid">          
   <div class="pic-fade"></div>
 
   <div class="intro-body">

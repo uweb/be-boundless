@@ -183,7 +183,7 @@ iframe {
             right: 20px;
             // transform: translateY(-35px);
             .pic {
-                width: 80%;
+                width: 100%;
             }
             .location {
                 bottom: -25px;
@@ -850,11 +850,21 @@ section.cactus {
     // .translate(50px,0);
 }
 .first-block {
-    .row {
-        .flex-display(flex);
-        .align-items(center);
-        height: 100%;
-    }
+    @media @desktop-only { 
+        .row {
+            .flex-display(flex);
+            .align-items(center);
+            height: 100%;
+        }
+    }            //  (min-width: 1200px) and (max-width: 1799px)"     
+    @media @big-desktop-up { 
+        .row {
+            .flex-display(flex);
+            .align-items(center);
+            height: 100%;
+        }
+    }          //  (min-width: 1800px)    
+
 }
 
 
@@ -909,6 +919,8 @@ section.cactus {
     width: 100%;
     height: 50vw;
     position: relative;
+    margin:3vw 0 7vw 0;
+
     & > div {
         position: absolute;
         left: 0;
@@ -918,22 +930,16 @@ section.cactus {
         .background-cover(cover);
     }
     p {
-        background-color: rgba(232, 227, 211, 0.21);
+        background-color: rgba(0, 0, 0, 0.84);
         padding: 11px 25px 10px 25px;
-        font-size: 14px;
+        font-size: 13px;
         line-height: 1.3;
-        max-width: 50%;
         color: white;
         bottom: 0;
         margin: 0;
         left: -10px;
         position: absolute;
-        .skew(-15deg,0);
         display: inline-block;
-        span {
-            display: inline-block;
-            .skew(15deg,0);
-        }
     }
     #photo-1 {
         background-image: url("@{ica}/photo-2.jpg");
@@ -943,6 +949,19 @@ section.cactus {
         .background-cover(cover);
         background-image: url("@{ica}/photo-1.jpg");
         background-position: center center;
+    }
+    @media @tablet-portrait-up { 
+        margin: 2vw 0 7vw 0;
+        p {
+            background-color: rgba(232, 227, 211, 0.21);
+            max-width: 50%;
+            .skew(-15deg,0);
+            font-size: 14px;
+            span {
+                display: inline-block;
+                .skew(15deg,0);
+            }
+        }
     }
 }
 

@@ -1,7 +1,7 @@
 $(function(){
 
   var body = document.getElementsByTagName('body')[0];
-  var controllerBuilt = new ScrollMagic.Controller();
+  var controllerICA = new ScrollMagic.Controller();
   var slideshowFlag = true;
   var $windowHeight = $(window).height();
 // detect if mobile browser. regex -> http://detectmobilebrowsers.com
@@ -10,7 +10,7 @@ $(function(){
 
 
 
-  currentController = controllerBuilt;
+  currentController = controllerICA;
 
     var introMedicine = new ScrollMagic.Scene({
       triggerElement: '#intro-vid',
@@ -20,7 +20,7 @@ $(function(){
     .setPin('.intro', {pushFollowers: false})
     .setClassToggle("body", 'medicineIntro')
     .setTween('.pic-fade', 1, { opacity: 1, ease: Power0.easeIn })
-    .addTo(controllerBuilt);
+    .addTo(controllerICA);
     $(window).resize(function(){
         introMedicine.update(true);
     });
@@ -64,7 +64,7 @@ $(function(){
             TweenMax.to(elH3, 1, { transform: 'translateY(-90px)', ease: Power0.easeIn }),
             // TweenMax.to(el, 1, { transform: 'translateY(30px)', ease: Power0.easeIn })
         ]));
-        paraMove.addTo(controllerBuilt);    
+        paraMove.addTo(controllerICA);    
     })
   } 
 
@@ -79,11 +79,11 @@ $(function(){
 
     var martez = new ScrollMagic.Scene({
       triggerElement: '.transSection',
-      triggerHook: 0.5,
-      duration:  '45%',
+      triggerHook: 0.3,
+      duration:  '25%',
     })
     .setTween(delacruzAnimation)
-    .addTo(controllerBuilt)
+    .addTo(controllerICA)
 
     // Parallax photos 
 
@@ -99,15 +99,9 @@ $(function(){
     //   duration:  '45%',
     // })
     // .setTween(delacruzAnimationII)
-    // .addTo(controllerBuilt)
+    // .addTo(controllerICA)
 
 
-    $( ".pause" ).click(function(e) { 
-      var $this = $(e.target);        
-      var $vid = $(e.target).parent().find('video');
-      if( $vid.get(0).paused ) { $vid.get(0).play() } else { $vid.get(0).pause() }
-      $this.toggleClass('paused');
-    });
 
 
 
