@@ -89,11 +89,12 @@
           <div id="slide4text">
 
             <h2>Transform the student experience</h2>
-            <p>Explore how committing to scholarships and initiatives that support access to excellence for all students can transform the lives of people like the UW Tacoma's Tom Rochat.</p>            
-             <a href="tacoma-transformation" data-controller='controllerTacoma' data-js="tacoma" data-title="Transform the student experience" class="uw-btn btn-sm btn-plus story-link">Read story</a><!-- <a href="http://www.washington.edu/boundless/explore/?utm_source=website&utm_medium=click&utm_campaign=students&utm_term=supporting-the-student-experience#students" class="uw-btn btn-sm">Opportunities</a> -->          
+            <p><span  class="hidden-xs">“No matter how hard I worked, I wouldn’t be where I am without the Young Executives of Color program.”</span> Through hard work, determination and donor support, Yesenia Velasquez has let nothing stand in her way on her road to the UW — and beyond.</p>            
+             <a href="fostering-opportunity" data-controller='controllerFoster' data-js="foster-school" data-title="Transform the student experience" class="uw-btn btn-sm btn-plus story-link">Read story</a><!-- <a href="http://www.washington.edu/boundless/explore/?utm_source=website&utm_medium=click&utm_campaign=students&utm_term=supporting-the-student-experience#students" class="uw-btn btn-sm">Opportunities</a> -->          
             <div class="related">
               <h3>Related stories</h3>
               <a href="supporting-the-student-experience" data-js="scholarship" data-title="Arts" class="arts-thumb story-link"><span>Unleashing the Husky Experience</span></a>
+              <a href="tacoma-transformation" data-js="tacoma" data-title="Tacoma" class="tacoma-thumb story-link"><span>The transformative power of UW Tacoma</span></a>
             </div>
           </div>
           <span class="slide4-content"></span>
