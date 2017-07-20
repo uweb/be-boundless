@@ -161,6 +161,25 @@
         </div>   
       </section>
 
+      <section class="text-block giving-widget-promoted">
+              <div class="row">
+                  <div class="first-col col-md-5 col-md-offset-4 col-sm-8 col-sm-offset-1 col-xs-offset-1 col-xs-10">
+                    <div>             
+                      <h2 class="headline-gold">You can be a game changer</h2>
+                      <p>Havana McElvaine is one of countless student-athletes with dreams on the playing field and in life — yet many cannot afford to pursue either. By giving to the Competitive Edge Fund, you can give them the edge they need — in competition, in school and in life.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-offset-1 ">
+                    <div>                                 
+                      <div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="WOBDIS" href="#giving-widget-promoted">Give now</a></span></div>
+                      <button id="close-give">Close</button>
+                    </div>
+                  </div>
+              </div>
+             <div id="immersive-give-iframe-promoted"></div>
+      </section>
+
+
 
       <section class="para arrow-top p-4">
         <h3><span>Sparking a <i>community conversation</i></span></h3>
