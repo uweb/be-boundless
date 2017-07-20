@@ -166,12 +166,12 @@
                   <div class="first-col col-md-5 col-md-offset-4 col-sm-8 col-sm-offset-1 col-xs-offset-1 col-xs-10">
                     <div>             
                       <h2 class="headline-gold">You can be a game changer</h2>
-                      <p>Havana McElvaine is one of countless student-athletes with dreams on the playing field and in life — yet many cannot afford to pursue either. By giving to the Competitive Edge Fund, you can give them the edge they need — in competition, in school and in life.</p>
+                      <p>Havana McElvaine is one of countless student-athletes with big dreams on the field and off — but many cannot afford to pursue them. By giving to the Competitive Edge Fund, you can help these students get the edge they need in competition, in school and in life.</p>
                     </div>
                   </div>
                   <div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-offset-1 ">
                     <div>                                 
-                      <div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="WOBDIS" href="#giving-widget-promoted">Give now</a></span></div>
+                      <div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="CPEDGE" href="#giving-widget-promoted">Give now</a></span></div>
                       <button id="close-give">Close</button>
                     </div>
                   </div>
@@ -280,7 +280,7 @@
                       <h2 class="headline-gold">What you care about <br>can change the world</h2>
                       <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. By supporting Husky Athletics, you can transform the Husky Experience and help more student-athletes like Havana McElvaine pursue their passions. </p>
                       <div id="immersive-give-iframe"></div>
-                      <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="AUPGEN,CBEIIN,LAPERU" href="#">Give now</a></span></div>
+                      <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="CPEDGE" href="#">Give now</a></span></div>
                     </div>
                   </div>
               </div>
