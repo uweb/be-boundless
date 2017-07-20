@@ -52,9 +52,9 @@
                       <div class="col-md-6">
 
                           <p>If you ask a group of six-year-olds what they want to be when they grow up, there’s a good chance most of them will say “athlete.” In reality, the vast majority of those kids will wind up doing something else — but Havana McElvaine was determined to beat the odds. </p>
-                          <p>It started when she joined the local rec soccer team, the Pink Flamingos, because all her friends had. They kicked the ball around the park every weekend, playing until the golden summer sun dipped below the horizon. “I loved it,” says the Denver native. </p>
-                          <p>Soon the game turned into more than a hobby — it was her life. “By the time I was 13 or 14, I said, ‘OK, I’m really going to do this,’” she says. By 15, she was getting calls from the UW.</p>
-                          <p>The UW was one of the first universities that recruited McElvaine, who earned her bachelor’s in sociology in 2017. “I remember sitting in Coach Gallimore’s office when I was a junior in high school and hearing her offer me a scholarship,” she says. “My mom and I just looked at each other like, ‘What? That’s huge.’ Someone cared enough about me doing something I loved that they were willing to support it so I could do it without any financial burden, and that’s a massive privilege.” </p>
+                          <p>It started when she joined the local rec soccer team, the Pink Flamingos, because all her friends had. They kicked the ball around the park every weekend, playing until the golden summer sun dipped below the horizon. “I <i>loved</i> it,” says the Denver native. </p>
+                          <p>Soon the game turned into more than a hobby — it was her life. “By the time I was 13 or 14, I said, ‘OK, I’m really going to do this,’” she says. By 15, she was getting calls from the University of Washington.</p>
+                          <p>The University of Washington was one of the first universities that recruited McElvaine, who earned her bachelor’s in sociology in 2017. “I remember sitting in Coach Gallimore’s office when I was a junior in high school and hearing her offer me a scholarship,” she says. “My mom and I just looked at each other like, ‘What? That’s <i>huge</i>.’ Someone cared enough about me doing something I loved that they were willing to support it so I could do it without any financial burden, and that’s a massive privilege.” </p>
                           <p>For McElvaine, soccer — not school — had always been her sole identity. When she became a Husky, that all changed. </p>
 
                       </div>       
@@ -96,7 +96,7 @@
                     <div class="row">
                       <div class="col-md-6">
 
-<p>“The first time I saw myself as someone who could be good at soccer and scholarly was when I got to the UW,” says McElvaine, a four-year defender for the Huskies. “The culture of my team and of the entire athletic department is that it’s cool and important to do well in school. My athletic experience was only as valuable as how I supplemented it with my academics, and vice versa.”</p>
+<p>“The first time I saw myself as someone who could be good at soccer <i>and</i> scholarly was when I got to the UW,” says McElvaine, a four-year defender for the Huskies. “The culture of my team and of the entire athletic department is that it’s cool and important to do well in school. My athletic experience was only as valuable as how I supplemented it with my academics, and vice versa.”</p>
 
 <p>As an incoming freshman, McElvaine wasn’t set on a major. She knew she liked talking about race and equity and social justice, but when she enrolled in Professor Alexes Harris’ course “Race and Ethnicity in the United States,” she discovered that not only could she study these topics that were so personal to her, but there were other women of color already doing it.</p>
 
@@ -118,7 +118,7 @@
           <div id="photo-1"></div>
           <div id="photo-2"></div>
       
-          <p><span>McElvaine and her mentors (from left): Lesle Gallimore, Head Coach, Husky Women’s Soccer; Dorothy Bullitt, Senior Lecturer, Evans School; Alexes Harris, Professor, Department of Sociology</span></p>
+          <p><span>McElvaine and her mentors <i>(from left)</i>: Lesle Gallimore, Head Coach, Husky Women’s Soccer; Dorothy Bullitt, Senior Lecturer, Evans School; Alexes Harris, Professor, Department of Sociology</span></p>
 
       </section>
 
@@ -152,12 +152,8 @@
 
                       </div>                 
                       <div class="col-md-5 col-md-offset-1">
-                        <blockquote><span>&ldquo;</span>I think to create connection, healing and togetherness, you need an ability to empathize with people who are different from you.<span>&rdquo;</span></blockquote>
-                          <p class="attribute"> Havana McElvaine, ‘17</p>
-                        <div class="featured-full arrow-right">
-                          <img alt="" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ica/students.jpg' ?>">
-                        </div>
-
+                        <blockquote><span>&ldquo;</span>Havana's journey to figure out who she was and what she stood for was one of the most interesting examples of soul searching I've witnessed in a young person.<span>&rdquo;</span></blockquote>
+                          <p class="attribute"> Lesle Gallimore, Head Coach, Husky Women’s Soccer</p>                  
                       </div> 
                     </div>
                 </div>
@@ -186,7 +182,7 @@
                       <div class="col-md-6">
 
 <p>A major priority supported by the UW’s Race &amp; Equity Initiative, the movement for racial equity and social justice was also top of mind for McElvaine’s teammates and other student-athletes. “It became apparent that we needed to initiate these uncomfortable conversations and build a community around these topics,” she says. </p>
-<p>So her team created a new culture where they opened up the floor and talked about everything, looping in coaches, administrators and academic advisers. “It was this really poignant time for all of us to be student-athletes and to have this platform and this space to talk,” says McElvaine, who stepped into a leadership role as a senior and team captain. </p>
+<p>So her team created a new culture where they opened up the floor and talked about <i>everything</i>, looping in coaches, administrators and academic advisers. “It was this really poignant time for all of us to be student-athletes and to have this platform and this space to talk,” says McElvaine, who stepped into a leadership role as a senior and team captain. </p>
 <p>But the poignancy ran even deeper for McElvaine. In her 21 years, she’d always seen her identities as separate: On the field, she was a soccer player. In the classroom, a student. In her community, a champion for change. Now she was everything at once.</p>
 <p>During her four years at the UW, McElvaine learned about education and policy reform and public housing. She helped a professor track how children’s perceptions of race and identity change over time. Then, for her senior honors thesis, she created her own research project, analyzing the impact that repeated video exposure to police violence and shootings has on black male college students.  </p>
 <p>In a series of focus groups with black men on campus, McElvaine asked them what it meant to see these incredibly violent incidents happening in real time — over and over again. “The conversations were heavy,” says McElvaine, “but so important.” </p>
@@ -194,8 +190,14 @@
 
                       </div>                 
                       <div class="col-md-5 col-md-offset-1">
-                        <blockquote><span>&ldquo;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit ac turpis et mollis. Nullam iaculis vitae purus tincidunt ultrices. <span>&rdquo;</span></blockquote>
-                        <p class="attribute">Quote from coach Gallimore</p>
+                        <blockquote><span>&ldquo;</span>I was proud beyond belief when Havana was selected for the Bonderman. She'll soak in each and every one of her experiences abroad, and I know whatever she does down the road will be impactful<span>&rdquo;</span></blockquote>
+                        <p class="attribute">Havana McElvaine, ’17</p>
+
+                        <div class="featured-full arrow-right">
+                          <img alt="" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ica/students.jpg' ?>">
+                          <small>McElvaine and fellow student-athletes at the 47th annual Celebration, hosted by the UW Office of Minority Affairs & Diversity and the Friends of the Educational Opportunity Program.</small>
+                        </div>
+
                       </div> 
                     </div>
                 </div>
@@ -236,6 +238,9 @@
 
                       </div>                 
                       <div class="col-md-5 col-md-offset-1">
+                        <blockquote><span>&ldquo;</span>I was proud beyond belief when Havana was selected for the Bonderman. She'll soak in each and every one of her experiences abroad, and I know whatever she does down the road will be impactful.<span>&rdquo;</span></blockquote>
+                        <p class="attribute">Lesle Gallimore, Head Coach, Husky Women’s Soccer</p>
+
                         <div class="featured-full arrow-right">
                           <img alt="" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ica/havana.jpg' ?>">
                         </div>
@@ -254,7 +259,7 @@
                   <div class="col-md-10 col-md-offset-1 copy ">
                     <div style="text-align: center">             
                       <h2 class="headline-gold">What you care about <br>can change the world</h2>
-                      <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless, For Washington, For the World. By supporting Husky Athletics, you can transform the Husky Experience and help more student-athletes like Havana McElvaine pursue their passions.</p>
+                      <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. By supporting Husky Athletics, you can transform the Husky Experience and help more student-athletes like Havana McElvaine pursue their passions. </p>
                       <div id="immersive-give-iframe"></div>
                       <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="AUPGEN,CBEIIN,LAPERU" href="#">Give now</a></span></div>
                     </div>
