@@ -46,6 +46,7 @@ module.exports = function(grunt) {
           'immersive-stories/js/built-env.js',
           'immersive-stories/js/foster-school.js',
           'immersive-stories/js/ischool.js',
+          'immersive-stories/js/ica.js',
           'immersive-stories/js/engineering.js',
           'immersive-stories/js/medicine.js',
           'immersive-stories/js/arts.js',
@@ -156,6 +157,16 @@ module.exports = function(grunt) {
               // Slideshow
               'immersive-stories/js/slick.js',
               'immersive-stories/js/objectFitPolyfill.basic.js',
+          ],      
+          'immersive-stories/js/ica.min.js': [
+              'immersive-stories/js/common.js',
+              // Popup video
+              'immersive-stories/js/lity.js',
+              // Leaflet
+              'immersive-stories/js/ica.js',
+              // Slideshow
+              'immersive-stories/js/slick.js',
+              'immersive-stories/js/objectFitPolyfill.basic.js',
           ],          
           'immersive-stories/js/engineering.min.js': [
               'immersive-stories/js/common.js',
@@ -236,6 +247,7 @@ module.exports = function(grunt) {
                 'immersive-stories/css/built-env.css': 'immersive-stories/less/built-env.less',
                 'immersive-stories/css/foster-school.css': 'immersive-stories/less/foster-school.less',
                 'immersive-stories/css/ischool.css': 'immersive-stories/less/ischool.less',
+                'immersive-stories/css/ica.css': 'immersive-stories/less/ica.less',
                 'immersive-stories/css/medicine.css': 'immersive-stories/less/medicine.less',
                 'immersive-stories/css/arts.css': 'immersive-stories/less/arts.less',
                 'immersive-stories/css/bothell.css': 'immersive-stories/less/bothell.less',
