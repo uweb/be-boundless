@@ -51,6 +51,7 @@ module.exports = function(grunt) {
           'immersive-stories/js/arts.js',
           'immersive-stories/js/bothell.js',
           'immersive-stories/js/farmer-brown.js',
+          'immersive-stories/js/environment.js',
           'campaign/js/main.js',
           'immersive-stories/js/education-map.js',
           'https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js',
@@ -126,6 +127,12 @@ module.exports = function(grunt) {
               'immersive-stories/js/common.js',
               'immersive-stories/js/lity.js',
               'immersive-stories/js/built-env.js',
+              'immersive-stories/js/objectFitPolyfill.basic.js',
+          ], 
+          'immersive-stories/js/environment.min.js': [
+              'immersive-stories/js/common.js',
+              'immersive-stories/js/lity.js',
+              'immersive-stories/js/environment.js',
               'immersive-stories/js/objectFitPolyfill.basic.js',
           ],            
           'immersive-stories/js/foster-school.min.js': [
@@ -235,6 +242,7 @@ module.exports = function(grunt) {
                 'immersive-stories/css/engineering.css': 'immersive-stories/less/engineering.less',
                 'immersive-stories/css/education-map.css': 'immersive-stories/less/education-map.less',
                 'immersive-stories/css/leadership.css': 'immersive-stories/less/leadership.less',
+                'immersive-stories/css/environment.css': 'immersive-stories/less/environment.less',
                 'campaign/css/campaign-style.css': 'campaign/**/*.less',
                 'campaign/css/header.css': 'campaign/less/header.less',
                 'passion/css/tiles.css': 'passion/less/tiles.less'
