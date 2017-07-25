@@ -39,7 +39,7 @@ $(function(){
     var degY  = ( ( coorX / halfW ) * -5 ) + 'deg'; // max. degree = 10
 
     $( this ).css( 'transform', function() {
-      return 'perspective( 1500px ) translate3d( 0, 0, 30px )  rotateX('+ degX +') rotateY('+ degY +')';
+      return 'perspective( 1023px ) translate3d( 0, 0, 30px )  rotateX('+ degX +') rotateY('+ degY +')';
     } )
 
   } )
@@ -76,10 +76,11 @@ $(function(){
             TweenMax.to('#photo-2', 1,    {  opacity: 0, ease: Power0.easeIn, delay: 0.0 }),
           ])
     var transHeight = -$('.transSection').height();
+    var hook = (isMobile) ? 0.5 : 0.3;
 
     var martez = new ScrollMagic.Scene({
       triggerElement: '.transSection',
-      triggerHook: 0.3,
+      triggerHook: hook,
       duration:  '25%',
     })
     .setTween(delacruzAnimation)

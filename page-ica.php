@@ -54,7 +54,7 @@
                           <p>If you ask a group of six-year-olds what they want to be when they grow up, there’s a good chance most of them will say “athlete.” In reality, the vast majority of those kids will wind up doing something else — but Havana McElvaine was determined to beat the odds. </p>
                           <p>It started when she joined the local rec soccer team, the Pink Flamingos, because all her friends had. They kicked the ball around the park every weekend, playing until the golden summer sun dipped below the horizon. “I <i>loved</i> it,” says the Denver native. </p>
                           <p>Soon the game turned into more than a hobby — it was her life. “By the time I was 13 or 14, I said, ‘OK, I’m really going to do this,’” she says. By 15, she was getting calls from the University of Washington.</p>
-                          <p>The University of Washington was one of the first universities that recruited McElvaine, who earned her bachelor’s in sociology in 2017. “I remember sitting in Coach Gallimore’s office when I was a junior in high school and hearing her offer me a scholarship,” she says. “My mom and I just looked at each other like, ‘What? That’s <i>huge</i>.’ Someone cared enough about me doing something I loved that they were willing to support it so I could do it without any financial burden, and that’s a massive privilege.” </p>
+                          <p>The UW was one of the first universities that recruited McElvaine, who earned her bachelor’s in sociology in 2017. “I remember sitting in Coach Gallimore’s office when I was a junior in high school and hearing her offer me a scholarship,” she says. “My mom and I just looked at each other like, ‘What? That’s <i>huge</i>.’ Someone cared enough about me doing something I loved that they were willing to support it so I could do it without any financial burden, and that’s a massive privilege.” </p>
                           <p>For McElvaine, soccer — not school — had always been her sole identity. When she became a Husky, that all changed. </p>
 
                       </div>       
@@ -113,7 +113,7 @@
         </div>   
       </section>
 
-      <section class="text-block transSection">
+      <section class="text-block transSection mentors-caption">
 
           <div id="photo-1"></div>
           <div id="photo-2"></div>
@@ -152,7 +152,7 @@
 
                       </div>                 
                       <div class="col-md-5 col-md-offset-1">
-                        <blockquote><span>&ldquo;</span>Havana's journey to figure out who she was and what she stood for was one of the most interesting examples of soul searching I've witnessed in a young person.<span>&rdquo;</span></blockquote>
+                        <blockquote><span>&ldquo;</span>Havana’s journey to figure out who she was and what she stood for was one of the most interesting examples of soul-searching I’ve witnessed in a young person.<span>&rdquo;</span></blockquote>
                           <p class="attribute"> Lesle Gallimore, Head Coach, Husky Women’s Soccer</p>                  
                       </div> 
                     </div>
@@ -165,8 +165,8 @@
               <div class="row">
                   <div class="first-col col-md-5 col-md-offset-4 col-sm-8 col-sm-offset-1 col-xs-offset-1 col-xs-10">
                     <div>             
-                      <h2 class="headline-gold">You can be a game changer</h2>
-                      <p>Havana McElvaine is one of countless student-athletes with big dreams on the field and off — but many cannot afford to pursue them. By giving to the Competitive Edge Fund, you can help these students get the edge they need in competition, in school and in life.</p>
+                      <h2 class="headline-gold">You can be a game-changer</h2>
+                      <p>Havana McElvaine is one of countless student-athletes with big dreams on the field and off — but many cannot afford to pursue them. You can help these students get the edge they need in competition, in school and in life.</p>
                     </div>
                   </div>
                   <div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-offset-1 ">
@@ -209,7 +209,7 @@
 
                       </div>                 
                       <div class="col-md-5 col-md-offset-1">
-                        <blockquote><span>&ldquo;</span>I was proud beyond belief when Havana was selected for the Bonderman. She'll soak in each and every one of her experiences abroad, and I know whatever she does down the road will be impactful<span>&rdquo;</span></blockquote>
+                        <blockquote><span>&ldquo;</span>I think to create connection, healing and togetherness, you need an ability to empathize with people who are different from you.<span>&rdquo;</span></blockquote>
                         <p class="attribute">Havana McElvaine, ’17</p>
 
                         <div class="featured-full arrow-right">
@@ -257,7 +257,7 @@
 
                       </div>                 
                       <div class="col-md-5 col-md-offset-1">
-                        <blockquote><span>&ldquo;</span>I was proud beyond belief when Havana was selected for the Bonderman. She'll soak in each and every one of her experiences abroad, and I know whatever she does down the road will be impactful.<span>&rdquo;</span></blockquote>
+                        <blockquote><span>&ldquo;</span>I was proud beyond belief when Havana was selected for the Bonderman. She’ll soak in each and every one of her experiences abroad, and I know that whatever she does down the road will be impactful.<span>&rdquo;</span></blockquote>
                         <p class="attribute">Lesle Gallimore, Head Coach, Husky Women’s Soccer</p>
 
                         <div class="featured-full arrow-right">
@@ -270,7 +270,14 @@
         </div>   
       </section>
 
+      <section class="text-block transSection bottom-map">
 
+          <!-- <div id="photo-1"></div>
+          <div id="photo-2"></div> -->
+      
+          <p>FPO Map</p>
+
+      </section>
 
       <section class="text-block giving-widget branded arrow">
           <div class="container">

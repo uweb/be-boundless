@@ -49,7 +49,15 @@ iframe {
 }
 
 .text-block.giving-widget-promoted {
-    background-image: url("@{ica}/giving.jpg")
+    background-image: url("@{ica}/giving.jpg");
+    @media @phone-only {
+        div.row {
+            padding-bottom: 0;
+        }
+        div.first-col {
+            padding-top: 20px;
+        }
+    }
 }
 
 
@@ -959,6 +967,10 @@ section.cactus {
         background-image: url("@{ica}/photo-1.jpg");
         background-position: center center;
     }
+    &.bottom-map {
+        background-color: grey;
+        margin-bottom: 0;
+    }
     @media @tablet-portrait-up { 
         margin: 2vw 0 7vw 0;
         p {
@@ -969,6 +981,16 @@ section.cactus {
             span {
                 display: inline-block;
                 .skew(15deg,0);
+            }
+        }
+    }
+    @media @phone-only {
+        &.mentors-caption {
+            margin: 3vw 0 28vw 0;
+            overflow: visible;
+            p {
+                top: 99%;
+                bottom: inherit;
             }
         }
     }
