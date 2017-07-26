@@ -281,7 +281,7 @@
                       <h2 class="headline-gold">What you care about <br>can change the world</h2>
                       <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. Invest in environmental justice and healthier, more fulfilling futures for all by contributing to the College of Built Environments and students like David de la Cruz. </p>
                       <div id="immersive-give-iframe"></div>
-                      <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="AUPGEN,CBEIIN,LSCHOLR" href="#">Give now</a></span></div>
+                      <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="AUPGEN,CBEIIN,LSCHOL" href="#">Give now</a></span></div>
                     </div>
                   </div>
               </div>
