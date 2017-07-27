@@ -35,11 +35,14 @@ $(function(){
     var coorX = ( halfW - ( event.pageX - this.offsetLeft ) );
     var coorY = ( halfH - ( event.pageY - $(this).offset().top ) ); // this is the problem
 
-    var degX  = ( ( coorY / halfH ) * 5 ) + 'deg'; // max. degree = 10 /// this is the problem
-    var degY  = ( ( coorX / halfW ) * -5 ) + 'deg'; // max. degree = 10
+    var degX  = ( ( coorY / halfH ) * 2 ) + 'deg'; // max. degree = 10 /// this is the problem
+    var degY  = ( ( coorX / halfW ) * -2 ) + 'deg'; // max. degree = 10
+
+    //var degX  = ( degX > 1.1 ? 1.1 : degX ) + 'deg'; 
+    //var degY  = ( degY > 1.35 ? 1.35 : degY ) + 'deg'; 
 
     $( this ).css( 'transform', function() {
-      return 'perspective( 1023px ) translate3d( 0, 0, 30px )  rotateX('+ degX +') rotateY('+ degY +')';
+      return 'perspective( 1023px ) translate3d( 0, 0, 50px )  rotateX('+ degX +') rotateY('+ degY +')';
     } )
 
   } )
@@ -76,11 +79,11 @@ $(function(){
             TweenMax.to('#photo-2', 1,    {  opacity: 0, ease: Power0.easeIn, delay: 0.0 }),
           ])
     var transHeight = -$('.transSection').height();
-    var hook = (isMobile) ? 0.5 : 0.3;
+    //var hook = (isMobile) ? 0.5 : 0.3;
 
     var martez = new ScrollMagic.Scene({
       triggerElement: '.transSection',
-      triggerHook: hook,
+      triggerHook: 0.5,
       duration:  '25%',
     })
     .setTween(delacruzAnimation)
