@@ -276,7 +276,7 @@ section.cactus {
     align-items: center;
     justify-content: center;
     height: 103vh;
-    background-image: url("@{ica}/ica-off.jpg");
+    //Fbackground-image: url("@{ica}/ica-off.jpg");
     .background-cover(cover);
     background-position: center center;
     background-color: black;
@@ -1438,3 +1438,48 @@ div.boundless-headline {
     }
 }
 
+// Pause button
+
+#pause {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    text-indent: -999px;
+    overflow-x: hidden;
+    width: 45px;
+    height: 45px;
+    right: 20px;
+    top: 120px;
+    border: none;
+    background: url("@{img}/pause.svg") no-repeat 0 0 transparent;
+    z-index: 2;
+    &:hover,
+    &:focus {
+        background-position-x: -47px;
+    }
+    &:focus {
+        outline-color: rgb(59, 153, 252);
+        outline-style: auto;
+        outline-width: 5px;
+    }
+    @media(max-width:768px) {
+        display: none;
+    }
+}
+&.paused {
+    video {
+        opacity: .6;
+        -webkit-filter: blur(5px);
+    }
+    #pause { 
+        background-position: 0 -49px;
+        &:hover {
+            background-position-x: -47px;
+        }
+        &:focus {
+            outline-color: rgb(59, 153, 252);
+            outline-style: auto;
+            outline-width: 5px;
+        }
+    }
+}
