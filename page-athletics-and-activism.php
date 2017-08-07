@@ -13,7 +13,7 @@
   <!-- <div class="pic-fade"></div> -->
 
   <button id="pause">Pause</button>
-  <video muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ica/header.jpg' ?>" class="fullscreen-bg__video" id="full-bg-video">
+  <video autoplay muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ica/header.jpg' ?>" class="fullscreen-bg__video" id="full-bg-video">
       <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/ica/header.mp4' ?>" type="video/mp4">
   </video>
 
