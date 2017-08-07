@@ -257,6 +257,7 @@ module.exports = function(grunt) {
                 'immersive-stories/css/environment.css': 'immersive-stories/less/environment.less',
                 'campaign/css/campaign-style.css': 'campaign/**/*.less',
                 'campaign/css/header.css': 'campaign/less/header.less',
+                'campaign/css/campaignv2-style.css': 'campaign/less/campaignv2-style.less',
                 'passion/css/tiles.css': 'passion/less/tiles.less'
         	    }
         },

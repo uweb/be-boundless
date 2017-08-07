@@ -11,3 +11,5 @@ require 'setup/class.url-meta-field.php';
 require 'setup/custom-post-types.php';
 
 require( 'passion/functions.php' );
+
+require 'setup/class.campaign-functions.php';
