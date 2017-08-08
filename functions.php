@@ -12,4 +12,4 @@ require 'setup/custom-post-types.php';
 
 require( 'passion/functions.php' );
 
-require 'setup/class.campaign-functions.php';
+//require 'setup/class.campaign-functions.php';
