@@ -243,6 +243,9 @@ $(function(){
 	var fade1 = new TimelineMax()
 		.to('#slide1text', 2, {x: '-100%', ease: Power0.easeInOut }, 0)
 		//.to('#bar', 1, { left: 0 })
+	var fadeBrotman = new TimelineMax()
+		.fromTo('#brotman', 1, {opacity: 1.0 }, {opacity: 0.0 })
+		//
 	var fade2 = new TimelineMax()
 		.fromTo('#slide2text', 1, {x: '60%', scale: 0.75 }, {x: '0%', scale: 1.025 })
 		//.to('#bar', 1, { left: '45%' })
@@ -310,6 +313,15 @@ $(function(){
 		.setClassToggle('body', 'hidePrev')
 		.setTween(fade1)
 		//.addIndicators({name: "1 (duration: 300)"})
+		.addTo(controllerCampaign);
+
+	var brotmanSlide = new ScrollMagic.Scene({
+		duration: '25%',
+		triggerElement: '#slide2',
+		triggerHook: 0.9
+	})
+		.setTween(fadeBrotman)
+		// .addIndicators({name: "2 (duration: 300)"})
 		.addTo(controllerCampaign);
 
 	var secondSlide = new ScrollMagic.Scene({

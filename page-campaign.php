@@ -177,7 +177,7 @@
   <div id="scrubCont"><div id="padder"><div id="scrub"></div></div></div>
 
   <img id="boundless-logo" src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/be-boundless.png' ?>" alt="Be boundless">
-
+  <p id="brotman"><a href="http://www.washington.edu/president/2017/08/01/celebrating-the-life-and-impact-of-jeff-brotman" class="brotman ic-external sm">Celebrating the life and <br>impact of Jeff Brotman</a></p>
 
   <!-- Button to close dynamic area -->
   <button id="empty">

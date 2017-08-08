@@ -859,14 +859,14 @@ div#loadingEl {
             opacity: 1;
         }
     }
-    @media (min-device-width:1024px) and (max-device-width:675px) {
-        left: auto;
-        right: 80px;
-    }
-    @media (min-device-width:1024px)  and (max-height: 900px) {
-      	left: auto;
-      	right: 80px;
-    }
+    // @media (min-device-width:1024px) and (max-device-width:675px) {
+    //     left: auto;
+    //     right: 80px;
+    // }
+    // @media (min-device-width:1024px)  and (max-height: 900px) {
+    //   	left: auto;
+    //   	right: 80px;
+    // }
 }
 
 #progress {
@@ -1152,4 +1152,46 @@ a.uw-btn {
     display: inline-block;
     vertical-align: top;
     height: 100%;
+}
+
+a.brotman {
+    position: absolute;
+    right: 80px;
+    bottom: 30px;
+    color: rgba(255, 255, 255, 0.75);
+    opacity: 1;
+    font-size: 17px;
+    line-height: 1.72222;
+    font-weight: 400;
+    .transition(all 1s linear);
+    &:before {
+        content: "\e93a";
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 25px;
+        line-height: 1.5;
+        right: 0;
+        top: 0;
+        position: absolute;
+        margin: -12px -20px;
+        .transition(all .1s linear);
+    }
+    &:hover,
+    &:active,
+    &:focus {
+        &:before {
+            font-size: 35px;
+            margin: -20px -30px;
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+    @media(max-device-width:767px) { 
+        font-size: 13px;
+        line-height: 1.2;
+        right: 30px;
+        bottom: 15px; 
+        &:before {
+            font-size: 18px;
+            margin: -15px -18px;
+        }
+    }
 }
