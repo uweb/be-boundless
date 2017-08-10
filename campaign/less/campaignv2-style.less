@@ -1,0 +1,155 @@
+// All the Variables from the UW 2014 theme
+@import "../../themes/uw-2014/less/uw.variables.less";
+@import "../../themes/uw-2014/less/flat/mixins.less";
+
+#full-width-body {
+  margin-top: 92px; //accounts for header
+  min-height: 100%;
+}
+
+.campaign-excerpt {
+  height: 340px;
+  position: relative;
+  .container {
+    width: 55%;
+    height: 100%;
+    position: absolute;
+    .row {
+
+    }
+  }
+  .container-text {
+    z-index: 1;
+    transform: skewX(-15deg);
+    -ms-transform: skewX(-15deg);
+    -webkit-transform: skewX(-15deg);
+    -webkit-transform-origin: bottom right;
+    -ms-transform-origin: bottom right;
+    transform-origin: bottom right;
+    overflow: hidden;
+    &.bg-purple {
+      background-color: @purple;
+      //text coloring adjust
+    }
+    &.bg-white {
+      background-color: white;
+      //text coloring adjust
+    }
+    &.container-left {
+      left: -110px;
+      padding-left: 12vw;
+    }
+    &.container-right {
+      right: -110px;
+      padding-right: 12vw;
+    }
+    .row {
+      -webkit-transform: skew(15deg);
+      -ms-transform: skew(15deg);
+      transform: skew(15deg);
+      z-index: -1;
+      h2 {
+        font-size: 60px;
+        color: @lightgold; //light gold
+        text-shadow: none;
+        margin-top: 60px;
+        //text-shadow: 5px 0px 15px white;
+        &:after {
+          background: none;
+        }
+      }
+    }
+    &:before {
+      //angled background
+    }
+    &:after {
+      //notch in slant
+    }
+  }
+  .container-image {
+    padding: 0;
+    div.row {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      background-repeat: no-repeat;
+      background-position: left center;
+      .background-size(cover);
+    }
+  }
+  .container-left {
+    left: 0;
+  }
+  .container-right {
+    right: 0;
+  }
+
+  .container:after { display: none; }
+}
+
+
+//NEED TO DO EDITS FOR ALL MOBILE SIZING
+@media only screen and (max-width : 1200px) {
+  .campaign-excerpt .container .row h2 {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .campaign-excerpt {
+    //height: auto;
+    padding: 0px 20px 50px 20px;
+    .udub-slant {
+      margin: 15px 0 90px 0;
+    }
+    .container {
+      width: 60%;
+      row h1 {
+        font-size: 42px;
+      }
+    }
+    .container:after { display: none; }
+  } 
+}
+
+@media only screen and (max-width : 768px) {
+  
+  .campaign-excerpt {
+    height: 250px;
+    //background-position: left top;
+    .container {
+      width: 70%;
+      padding-left: 100px;
+      .row {
+        h2 {
+          font-size: 32px;
+          margin-top: 40px;
+        }
+      }
+    }
+    .feat-img {
+      height: 250px;
+      width: 53%;
+    }
+  }
+  
+}
+
+@media only screen and (max-width : 480px) {
+  .campaign-excerpt {
+    height: 200px;
+    .container {
+      width: 90%;
+      padding-left: 110px;
+      .row {
+        h2 {
+          font-size: 24px;
+          margin-top: 30px;
+        }
+      }
+    }
+    .feat-img {
+      height: 200px;
+    }
+  }
+}

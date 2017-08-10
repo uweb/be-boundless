@@ -144,17 +144,41 @@ if ( ! post_type_exists( 'excerpt' ) ):
     $post_content = get_post($post_id);
     $title = $post_content->post_title;
     $content = $post_content->post_content;
-    $image = get_the_post_thumbnail_url( $post_id );
+    $image = wp_get_attachment_url( get_post_thumbnail_id($post_id) );
     // $video_id = get_post_meta( $post->ID, 'video-id', true );
     // $video = $video_id ? wp_get_attachment_url( $video_id ) : '';
     $video = get_post_meta( $post_id, 'youtube', true );
     $buttonLink = get_post_meta( $post_id, 'buttonLink', true );
     $buttonText = get_post_meta( $post_id, 'buttonText', true );
     //echo do_shortcode( $content );//executing shortcodes
+    $bgClass = 'bg-' . $atts['color'];
     
+    $return =   '<div class="campaign-excerpt">' . 
+                '  <div class="container container-left ';
+    $return .= ($atts['align'] === 'right') ? ('' .
+                'container-text ' . $bgClass . '"> ' .    
+                '    <div class="row">' .
+                '      <h2>' . $title . '</h2>' .
+                '      <hr>' .
+                '      <p>' . $content . '</p>' .
+                '    </div>' .
+                '  </div>' .
+                '  <div class="container container-right container-image">' .
+                '    <div class="row" style="background-image:url(' . $image . ')">' ) : ('' . //this is the switch
+                'container-image"> ' .    
+                '    <div class="row" style="background-image:url(' . $image . ')">' . //add button link here
+                '    </div>' .
+                '  </div>' .
+                '  <div class="container container-right container-text ' . $bgClass . '">' .
+                '    <div class="row">' .
+                '      <h2>' . $title . '</h2>' .
+                '      <hr>' .
+                '      <p>' . $content . '</p>' ) ;
+    $return .=  '    </div>' .
+                '  </div>' .
+                '</div>'; 
 
-
-    return "not ready yet"; //$return;
+    return $return;
 
     
 
