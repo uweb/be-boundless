@@ -28,62 +28,139 @@ if ( ! post_type_exists( 'excerpt' ) ):
             'supports' => array( 'title' , 'editor' , 'thumbnail', 'custom-fields', 'page-attributes' )
         );
 
-        register_post_type('excerpts', $args);
+        register_post_type('excerpt', $args);
 
     }
 
     add_action('admin_init', 'excerpt_admin_init');
 
     function excerpt_admin_init(){
-        // add_meta_box( 'url', 'Vimeo ID Code', 'url_callback', 'videos', 'side', 'default' );
-        // add_meta_box( 'date', 'Year Created', 'date_callback', 'videos', 'side', 'default' );
-        // add_meta_box( 'client', 'Client', 'client_callback', 'videos', 'side', 'default' );
-        // add_meta_box( 'order', 'Order', 'order_callback', 'videos', 'side', 'default' );
+        add_meta_box( 'button', 'Button', 'campaign_button_callback', 'excerpt', 'side', 'default' );
 
-        // remove_meta_box( 'categorydiv', 'videos', 'side' );
-        // add_meta_box( 'categorydiv', 'Category', 'post_categories_meta_box', 'videos', 'normal', 'low', array( 'taxonomy' => 'category' ) );
+        add_meta_box( 'video', 'Video (optional)', 'campaign_youtube_callback', 'excerpt', 'side', 'default' );
         
-        // add_action('save_post', 'save_video_details');
+        add_action('save_post', 'save_video_details');
+
+        add_filter( 'manage_excerpt_posts_columns', 'add_excerpt_shortcode_column' );
+        add_action( 'manage_posts_custom_column' , 'add_excerpt_shortcode_column_content', 10, 2 );
+
+        // add_shortcode( 'excerpt', 'excerpt_shortcode' );
+     
     }
 
-    function url_callback() {
+    function campaign_button_callback() {
         global $post;
         $custom = get_post_custom($post->ID);
-        $url = $custom['url'][0];
-        ?><input name="url" value="<?php echo $url ?>" /><?php
+        $buttonLink = $custom['buttonLink'][0];
+        $buttonText = $custom['buttonText'][0];
+        ?><label for="buttonText"><?php _e('Button Text') ?></label><p><input name="buttonText" value="<?php echo $buttonText ?>" /></p>
+        <label for="buttonLink"><?php _e('Button Link') ?></label><p><input name="buttonLink" value="<?php echo $buttonLink ?>" /></p><?php
     }
 
-    function date_callback() {
+    function campaign_youtube_callback() {
         global $post;
         $custom = get_post_custom($post->ID);
-        $date = $custom['date'][0];
-        ?><input name="date" value="<?php echo $date ?>" /><?php
+        $youtube = $custom['youtube'][0];
+        ?><label for="youtube"><?php _e('Video Url') ?></label><p><input name="youtube" value="<?php echo $youtube ?>" /></p><?php
     }
 
-    function client_callback() {
-        global $post;
-        $custom = get_post_custom($post->ID);
-        $client = $custom['client'][0];
-        ?><input name="client" value="<?php echo $client ?>" /><?php
-    }
+    function campaign_video_callback() {
+        wp_register_script( 'meta-box-video_js', get_stylesheet_directory_uri() . '/setup/campaign/js/meta-box-video.js', false, '1.0.0' );
+        wp_enqueue_script( 'meta-box-video_js' );
 
-    function order_callback() {
         global $post;
-        $custom = get_post_custom($post->ID);
-        $order = $custom['order'][0];
-        ?><input name="order" value="<?php echo $order ?>" /> </br>
-        <small>Order starts at 1, emtpy values result in page not showing. Ties are sorted by date. For those you want unordered at the bottom, just set order to 100.</small> <?php
+
+        // Get WordPress' media upload URL
+        $upload_link = esc_url( get_upload_iframe_src( 'image', $post->ID ) );
+
+        // See if there's a media id already saved as post meta
+        $video_id = get_post_meta( $post->ID, 'video-id', true );
+
+        // Get the image src
+        $video_src = wp_get_attachment_url( $video_id );
+
+        // For convenience, see if the array is valid
+        // $video_img = is_array( $video_src );
+        // print_r($video_src)
+        ?>
+
+        <!-- Your image container, which can be manipulated with js -->
+        <div class="video-container">
+            <?php if ( $video_src ) : ?>
+                <video src="<?php echo $video_src ?>" alt="" style="max-width:100%;" />
+            <?php endif; ?>
+        </div>
+
+        <!-- Your add & remove image links -->
+        <p class="hide-if-no-js">
+            <a class="upload-video <?php if ( $video_src  ) { echo 'hidden'; } ?>" 
+               href="<?php echo $upload_link ?>">
+                <?php _e('Set video image') ?>
+            </a>
+            <a class="delete-video <?php if ( ! $video_src  ) { echo 'hidden'; } ?>" 
+              href="#">
+                <?php _e('Remove video') ?>
+            </a>
+        </p>
+
+        <!-- A hidden input to set and post the chosen image id -->
+        <input class="video-id" name="video-id" type="hidden" value="<?php echo esc_attr( $video_id ); ?>" /> <?php
     }
 
     function save_video_details() {
         global $post;
-        if (get_post_type($post) == 'videos') {
-            update_post_meta($post->ID, 'url', $_POST['url']);
-            update_post_meta($post->ID, 'date', $_POST['date']);
-            update_post_meta($post->ID, 'client', $_POST['client']);
-            update_post_meta($post->ID, 'order', $_POST['order']);
+        if (get_post_type($post) == 'excerpt') {
+            update_post_meta($post->ID, 'buttonText', $_POST['buttonText']);
+            update_post_meta($post->ID, 'buttonLink', $_POST['buttonLink']);
+            update_post_meta($post->ID, 'youtube', $_POST['youtube']);
+            //update_post_meta($post->ID, 'video-id', $_POST['video-id']);
         }
     }
+
+    function add_excerpt_shortcode_column( $columns )
+  {
+    return array_merge( array_slice( $columns, 0, 2 ), array('excerptShortcode'=>'Shortcode'), array_slice( $columns, 2, null ));
+  }
+
+  function add_excerpt_shortcode_column_content( $column, $post_id )
+  {
+    if ( $column == 'excerptShortcode' ) echo '[excerpt id='. $post_id .']';
+  }
+
+  function excerpt_shortcode( $atts )
+  {
+
+    $atts = shortcode_atts( array(
+      'id' => null,
+      'align' => 'right', //or left
+      'color' => 'purple', //or white
+      'video' => false, //or true
+      'text'  => 'light' //or dark
+    ), $atts);
+
+    if ( ! $atts['id'] ) return;
+
+    $post_id = $atts['id'];
+    $post_content = get_post($post_id);
+    $title = $post_content->post_title;
+    $content = $post_content->post_content;
+    $image = get_the_post_thumbnail_url( $post_id );
+    // $video_id = get_post_meta( $post->ID, 'video-id', true );
+    // $video = $video_id ? wp_get_attachment_url( $video_id ) : '';
+    $video = get_post_meta( $post_id, 'youtube', true );
+    $buttonLink = get_post_meta( $post_id, 'buttonLink', true );
+    $buttonText = get_post_meta( $post_id, 'buttonText', true );
+    //echo do_shortcode( $content );//executing shortcodes
+    
+
+
+    return "not ready yet"; //$return;
+
+    
+
+
+  }
+  add_shortcode( 'excerpt', 'excerpt_shortcode' );
 
     
 endif;

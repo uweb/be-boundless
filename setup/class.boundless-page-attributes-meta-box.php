@@ -116,8 +116,9 @@ class Boundless_Page_Attributes_Meta_Box {
 
     echo "<div class='uw-admin-template'>";
     $checked = checked( $default, 'default', false );
-    echo "<p><input type='radio' name='page_template' value='default' $checked >Default Template</input> (<a id='enchanced-preview' href='#'>preview<span><img src='" . get_stylesheet_directory_uri() . $previews['Default Template'] . "' alt='' width='300px' height='' />
-</span></a>)</p>";
+    echo "<p><input type='radio' name='page_template' value='default' $checked >Default Template</input> (<a id='enchanced-preview' href='#'>preview<span><img src='"; 
+    echo file_exists(get_stylesheet_directory_uri() . $previews['Default Template']) ? (get_stylesheet_directory_uri() . $previews['Default Template']) : (get_template_directory_uri() . $previews['Default Template']); 
+    echo "' alt='' width='300px' height='' /></span></a>)</p>";
     foreach ( array_keys( $templates ) as $template )
     {
       if( in_array($template, $this->HIDDEN ))
@@ -126,8 +127,13 @@ class Boundless_Page_Attributes_Meta_Box {
       }
 
       $checked = checked( $default, $templates[ $template ], false );
-      echo "<p><input type='radio' name='page_template' value='" . $templates[ $template ] . "' $checked >$template</input> (<a id='enchanced-preview' href='#'>preview<span><img src='" . get_stylesheet_directory_uri() . $previews[$template] . "' alt='' width='300px' height='' />
-</span></a>)</p>";
+      echo "<p><input type='radio' name='page_template' value='" . $templates[ $template ] . "' $checked >$template</input> ";
+      if (array_key_exists($template , $previews)) {
+        echo "(<a id='enchanced-preview' href='#'>preview<span><img src='";
+        echo file_exists(get_stylesheet_directory_uri() . $previews[$template]) ? (get_stylesheet_directory_uri() . $previews[$template]) : (get_template_directory_uri() . $previews[$template]);
+        echo "' alt='' width='300px' height='' /></span></a>)";
+      }
+      echo "</p>";
     }
     echo "</div>";
 
