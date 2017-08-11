@@ -153,7 +153,7 @@ if ( ! post_type_exists( 'excerpt' ) ):
     //echo do_shortcode( $content );//executing shortcodes
     $bgClass = 'bg-' . $atts['color'];
     
-    $return =   '<div class="campaign-excerpt">' . 
+    $return =   '<section class="campaign-excerpt">' . 
                 '  <div class="container container-left ';
     $return .= ($atts['align'] === 'right') ? ('' .
                 'container-text ' . $bgClass . '"> ' .    
@@ -176,7 +176,7 @@ if ( ! post_type_exists( 'excerpt' ) ):
                 '      <p>' . $content . '</p>' ) ;
     $return .=  '    </div>' .
                 '  </div>' .
-                '</div>'; 
+                '</section>'; 
 
     return $return;
 
