@@ -53,6 +53,8 @@ module.exports = function(grunt) {
           'immersive-stories/js/bothell.js',
           'immersive-stories/js/farmer-brown.js',
           'immersive-stories/js/environment.js',
+          'immersive-stories/js/socialwork.js',
+          'immersive-stories/js/pharmacy.js',
           'campaign/js/main.js',
           'immersive-stories/js/education-map.js',
           'https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js',
@@ -189,6 +191,14 @@ module.exports = function(grunt) {
               'immersive-stories/js/common.js',
               'immersive-stories/js/medicine.js',
           ],
+          'immersive-stories/js/socialwork.min.js': [
+              'immersive-stories/js/common.js',
+              'immersive-stories/js/socialwork.js',
+          ],
+          'immersive-stories/js/pharmacy.min.js': [
+              'immersive-stories/js/common.js',
+              'immersive-stories/js/pharmacy.js',
+          ],
           'campaign/js/main.min.js': [
               'campaign/js/main.js',
           ],
@@ -255,6 +265,8 @@ module.exports = function(grunt) {
                 'immersive-stories/css/education-map.css': 'immersive-stories/less/education-map.less',
                 'immersive-stories/css/leadership.css': 'immersive-stories/less/leadership.less',
                 'immersive-stories/css/environment.css': 'immersive-stories/less/environment.less',
+                'immersive-stories/css/socialwork.css': 'immersive-stories/less/socialwork.less',
+                'immersive-stories/css/pharmacy.css': 'immersive-stories/less/pharmacy.less',
                 'campaign/css/campaign-style.css': 'campaign/**/*.less',
                 'campaign/css/header.css': 'campaign/less/header.less',
                 'campaign/css/campaignv2-style.css': 'campaign/less/campaignv2-style.less',
