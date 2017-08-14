@@ -3,8 +3,38 @@
 @import "../../themes/uw-2014/less/flat/mixins.less";
 
 #full-width-body {
-  margin-top: 92px; //accounts for header
+  position: absolute;
+  top: 137px;
+  left: 0;
+  width: 100%;
   min-height: 100%;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: @lightgold;
+  font-family: @font-family-headline;
+}
+
+#impact-stories {
+  height: 500px;
+  .container {
+    width: 1000px; 
+    margin-right: auto;
+    margin-left: auto;
+    .story {
+      width: 300px; 
+      display: inline-block;
+      .image-equalizer {
+        width: 300px;
+        height: 200px;
+        .background-size(cover);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    }
+  }
 }
 
 .campaign-excerpt {
