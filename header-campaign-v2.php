@@ -60,44 +60,51 @@
 			<div class="cv2-header-grey" role="navigation">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						<p>Lorem ipsum dolor sit amet</p>
+						<p class="header">MORE GIVING OPPORTUNITIES</p>
 					</div><!-- .col-xs-12 .col-sm-12 .col-md-12 .col-lg-12 -->
 				</div><!-- .row -->
 				<div class="row">
 					<div class="col-sm-4 col-md-4 col-lg-4">
+						<p class="subheader">Campuses</p>
 						<ul class="list-unstyled">
-							<li><a href="#">Academic &amp; Student Affairs</a></li>
-							<li><a href="#">Athletics</a></li>
+							<li><a href="#">UW Bothell</a></li>
+							<li><a href="#">UW Medicine</a></li>
+							<li><a href="#">UW Tacoma</a></li>
+						</ul>
+						<p class="subheader">Colleges</p>
+						<ul class="list-unstyled">
 							<li><a href="#">College of Arts &amp; Sciences</a></li>
 							<li><a href="#">College of Built Environments</a></li>
 							<li><a href="#">College of Education</a></li>
 							<li><a href="#">College of Engineering</a></li>
 							<li><a href="#">College of the Environment</a></li>
-							<li><a href="#">Evans School of Public Policy &amp; Governance</a></li>
-							<li><a href="#">Foster School of Business</a></li>
 						</ul>
 					</div><!-- .col-md-4 .col-lg-4 -->
 					<div class="col-sm-4 col-md-4 col-lg-4">
+						<p class="subheader">Schools</p>
 						<ul class="list-unstyled">
+							<li><a href="#">Evans School of Public Policy &amp; Governance</a></li>
+							<li><a href="#">Foster School of Business</a></li>
 							<li><a href="#">Information School</a></li>
-							<li><a href="#">KEXP</a></li>
-							<li><a href="#">KUOW</a></li>
-							<li><a href="#">Paul G. Allen School of Computer Science &amp; Engineering</a></li>
 							<li><a href="#">School of Dentistry</a></li>
 							<li><a href="#">School of Law</a></li>
 							<li><a href="#">School of Nursing</a></li>
 							<li><a href="#">School of Pharmacy</a></li>
+							<li><a href="#">School of Public Health</a></li>
+							<li><a href="#">School of Social Work</a></li>
 						</ul>
 					</div><!-- .col-md-4 .col-lg-4 -->
 					<div class="col-sm-4 col-md-4 col-lg-4">
+						<p class="subheader">Departments</p>
 						<ul class="list-unstyled">
-							<li><a href="#">School of Public Health</a></li>
-							<li><a href="#">School of Social Work</a></li>
+							<li><a href="#">Academic &amp; Student Affairs</a></li>
+							<li><a href="#">Athletics</a></li>
 							<li><a href="#">University Libraries</a></li>
-							<li><a href="#">UW Bothell</a></li>
-							<li><a href="#">UW Medicine</a></li>
-							<li><a href="#">UW Tacoma</a></li>
-							<li><a href="#">President’s Fund for Excellence</a></li>
+						</ul>
+						<p class="subheader">Media</p>
+						<ul class="list-unstyled">
+							<li><a href="#">KEXP</a></li>
+							<li><a href="#">KUOW</a></li>
 						</ul>
 					</div><!-- .col-md-4 .col-lg-4 -->
 		</header><!-- .cv2-header -->
