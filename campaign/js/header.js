@@ -24,7 +24,7 @@ $(function(){
 	// 	thin		= document.getElementsByClassName('thin')[0],
 	// 	thick		= document.getElementsByClassName('thick')[0],
 	 	// give 		= document.getElementById('give-now')
-	 	give 		= document.getElementById('cv2-give')
+	 	var give 		= document.getElementById('cv2-give');
 
 	// document.getElementById('campaign-expand').addEventListener('click', function(){
 	// 	bodyEl.toggle('active-header')
