@@ -61,28 +61,28 @@ $(function(){
 	//   return !$.trim(el.html())
 	// }
 
-	give.addEventListener('click', function(e){
+	// give.addEventListener('click', function(e){
 
-		e.preventDefault();
+	// 	e.preventDefault();
 
-		if(isEmpty($('#give-iframe'))) {
-			$('<iframe>', {
-				src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0&appeal=17XBS',
-				frameborder: 0,
-				width: '100%',
-				height: '100%',
-			}).appendTo('#give-iframe');
-		}
+	// 	if(isEmpty($('#give-iframe'))) {
+	// 		$('<iframe>', {
+	// 			src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0&appeal=17XBS',
+	// 			frameborder: 0,
+	// 			width: '100%',
+	// 			height: '100%',
+	// 		}).appendTo('#give-iframe');
+	// 	}
 
-		if(give.innerHTML === 'Give now'){
-			give.innerHTML = 'Close';
-		} else {
-			give.innerHTML = 'Give now';
-		}
+	// 	if(give.innerHTML === 'Give now'){
+	// 		give.innerHTML = 'Close';
+	// 	} else {
+	// 		give.innerHTML = 'Give now';
+	// 	}
 
-		$('body').toggleClass('give-modal-active');
+	// 	$('body').toggleClass('give-modal-active');
 
-	})
+	// })
 
 
 
