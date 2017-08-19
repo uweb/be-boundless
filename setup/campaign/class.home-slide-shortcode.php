@@ -19,7 +19,7 @@ class Campaign_Intro
 
     function intro_handler($atts, $content)
     {
-        global $post;
+        //global $post;
 
         $classes = array('campaign-intro');
 
