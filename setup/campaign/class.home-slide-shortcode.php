@@ -23,7 +23,7 @@ class Campaign_Intro
 
         $classes = array('campaign-intro');
 
-        $attributes = (object) shortcode_atts( array(
+        $attributes = shortcode_atts( array(
             'image' => wp_get_attachment_image_src( get_post_thumbnail_id() , 'full')[0],
             'branding' => true,
             'title' => get_the_title(), 
