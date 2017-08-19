@@ -89,7 +89,7 @@ if ( ! post_type_exists( 'stories' ) ):
                 
                 $return .= '<div class="story"><a class="story-link" href="' . get_post_meta( get_the_ID(), 'url', true ) . '">' . 
                                 '<h3>' . get_the_title() . '</h3>' .
-                                '<div class="image-equalizer" style="background-image: url(' . '' . ');"></div>' .
+                                '<div class="image-equalizer" style="background-image: url(' . $image . ');"></div>' .
                                 '<hr>' .
                                 '<p class="subheader">' . get_the_content() . '</p>' .
                             '</a></div>';
