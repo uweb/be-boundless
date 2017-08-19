@@ -81,19 +81,19 @@ if ( ! post_type_exists( 'stories' ) ):
         'orderby'   => 'menu_order',
     );              
     $the_query = new WP_Query( $args );
-    $count = 0;
-    if ( $the_query->have_posts() ) :
-        while ( $the_query->have_posts() ) : $the_query->the_post();
-                $return .= '<div class="story"><a class="story-link" href="' . get_post_meta( get_the_ID(), 'url', true ) . '">' . 
-                                '<h3>' . get_the_title() . '</h3>' .
-                                '<div class="image-equalizer" style="background-image: url(' . wp_get_attachment_image_src( get_post_thumbnail_id() , array(300,200))[0] . ');"></div>' .
-                                '<hr>' .
-                                '<p class="subheader">' . get_the_content() . '</p>' .
-                            '</a></div>';
-        endwhile;
-    endif;
-    // Reset Post Data
-    wp_reset_postdata();
+    // $count = 0;
+    // if ( $the_query->have_posts() ) :
+    //     while ( $the_query->have_posts() ) : $the_query->the_post();
+    //             $return .= '<div class="story"><a class="story-link" href="' . get_post_meta( get_the_ID(), 'url', true ) . '">' . 
+    //                             '<h3>' . get_the_title() . '</h3>' .
+    //                             '<div class="image-equalizer" style="background-image: url(' . wp_get_attachment_image_src( get_post_thumbnail_id() , array(300,200))[0] . ');"></div>' .
+    //                             '<hr>' .
+    //                             '<p class="subheader">' . get_the_content() . '</p>' .
+    //                         '</a></div>';
+    //     endwhile;
+    // endif;
+    // // Reset Post Data
+    // wp_reset_postdata();
     
 
     //print in sections of 3 ie class= section1/2/3/4...
