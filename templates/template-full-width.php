@@ -13,7 +13,7 @@
 <?php get_header( "campaign-close" ); ?>
 
 
-<div id="full-width-body">
+<div id="full-width-body" class="full-width-body">
 
 
 <!-- <section class="intro" id="intro-vid">          
@@ -58,6 +58,8 @@
  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/animationLibraries.min.js' ?>" type="text/javascript"></script>
 <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/campaign-new.js' ?>" type="text/javascript"></script>
  <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
+  <script src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/js/lity.js' ?>" type="text/javascript"></script>
+ <script src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/js/common.min.js' ?>" type="text/javascript"></script>
 
  
 

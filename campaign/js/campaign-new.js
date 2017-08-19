@@ -51,12 +51,12 @@ $(function(){
     //get number of slides in stories of impact
     var $storyCount = $(".story").length,
     	$isMobile = $(window).width() < 768,
-    	$storySlides = (!$isMobile) ? $storyCount%3 : $storyCount%2, //Desktop or mobile
+    	$storySlides = (!$isMobile) ? Math.ceil($storyCount/3) : Math.ceil($storyCount/2), //Desktop or mobile
     	$storyWidth = $(".story").first().outerWidth(true),
     	$slideWidth = (!$isMobile ? $storyWidth*3 : $storyWidth*2) + 90;
     	$currentSlide = 1;
 
-    	console.log($slideWidth)
+console.log($storySlides)
 
     // Right/Left arrow event listener
 	$('#impact-stories button').on('click',function(e){
@@ -69,6 +69,7 @@ $(function(){
 			$currentSlide++;
 			$currentSlide = $currentSlide > $storySlides ? 1 : $currentSlide;
 		}
+		
 		$("#story-slider").css({
 		  '-webkit-transform' : 'translate(-' + $slideWidth*($currentSlide-1) + 'px, 0)',
 		  '-ms-transform'     : 'translate(-' + $slideWidth*($currentSlide-1) + 'px, 0)',
@@ -76,9 +77,23 @@ $(function(){
 		});
 	});
 
+	$('a.video').on('click', function(e) {
+		e.stopPropagation();
+		e.preventDefault();
+		$(this).closest('.play-button').children('a').trigger('click');
+	});
 
+	$('.campaign-button').on('click', function(e) {
+		e.stopPropagation();
+		e.preventDefault();
+		$(this).find('a').trigger('click');
+		//console.log($(this).find('a')[0].trigger)
+	});
 
-
+	$('a:not([data-lity]):not(".video")').on('click', function(e) {
+		e.stopPropagation();
+		this.click();
+	});
 
 	
 

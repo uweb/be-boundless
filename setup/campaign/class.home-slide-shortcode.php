@@ -2,7 +2,7 @@
 
 /*
  *  Boundless Image shortcode allows for styled image slide to be added to content
- *  [intro image='false' branding='true' title='false']Content Text[/intro]
+ *  r
  *  optional image url, assumes featured image by default 
  *  optional title, assumes page title by default (uses false to disable)
  *  optional array of classes to insert
@@ -13,22 +13,22 @@ class Campaign_Intro
 
     function __construct()
     {
-        add_shortcode('intro', array($this, 'intro_handler'));
+        remove_shortcode( 'full-page-intro' );
+        add_shortcode('full-page-intro', array($this, 'intro_handler'));
     }
 
     function intro_handler($atts, $content)
     {
-        $attributes = (object) $atts;
+        global $post;
 
         $classes = array('campaign-intro');
 
-        $attributes = shortcode_atts( array(
-            'image' => get_the_post_thumbnail_url(),
+        $attributes = (object) shortcode_atts( array(
+            'image' => wp_get_attachment_image_src( get_post_thumbnail_id() , 'full')[0],
             'branding' => true,
             'title' => get_the_title(), 
             'classes' => []
         ), $atts );
-
 
         if(empty($content)){
             echo 'No text in this slide';
@@ -45,7 +45,8 @@ class Campaign_Intro
 
         $class_string = implode($classes, ' ');
 
-        return sprintf('<section id="intro" class="intro %s" style="background-image: %s"><div class="container">%s%s</div></section>', $attributes->classes, $attributes->image, $attributes->title, $content);
+        return sprintf('<section id="campaign-intro" class="intro %s" style="background-image: url(%s)">%s<div class="container">%s</div><img id="boundless-logo" src="%s" alt="Be boundless"><section class="scrollit read-more"><p>Scroll Down</p><div class="mouse"><div class="scroll"></div></div></section><img id="block-w-logo" src="%s" alt=""></section>', $class_string, $attributes->image, $attributes->title, $content, get_stylesheet_directory_uri() . '/campaign/img/be-boundless.png', get_stylesheet_directory_uri() . '/campaign/img/W-Logo_White.png');
+        //return "tomato";
     }
 }
 new Campaign_Intro();

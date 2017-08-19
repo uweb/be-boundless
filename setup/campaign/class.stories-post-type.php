@@ -84,7 +84,7 @@ if ( ! post_type_exists( 'stories' ) ):
     $count = 0;
     if ( $the_query->have_posts() ) :
         while ( $the_query->have_posts() ) : $the_query->the_post();
-                $return .= '<div class="story"><a href="' . get_post_meta( get_the_ID(), 'url', true ) . '">' . 
+                $return .= '<div class="story"><a class="story-link" href="' . get_post_meta( get_the_ID(), 'url', true ) . '">' . 
                                 '<h3>' . get_the_title() . '</h3>' .
                                 '<div class="image-equalizer" style="background-image: url(' . wp_get_attachment_image_src( get_post_thumbnail_id() , array(300,200))[0] . ');"></div>' .
                                 '<hr>' .

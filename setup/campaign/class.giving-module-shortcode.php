@@ -18,18 +18,19 @@ class Campaign_Giving
 
     function giving_handler($atts)
     {
+        global $post;
         $attributes = (object) $atts;
 
         //$classes = array('campaign-intro');
 
         $attributes = shortcode_atts( array(
-            'image' => get_the_post_thumbnail_url(), 
+            'image' => wp_get_attachment_image_src( get_post_thumbnail_id() , 'full')[0], 
             'align' => 'left'
         ), $atts );
 
         $alignClass = 'align-' . $attributes['align'];
 
-        return sprintf('<section id="giving" class="giving" style="background-image: %s"><div class="container %s"></div></section>', $attributes->image, $alignClass);
+        return sprintf('<section id="giving" class="giving" style="background-image: url(%s)"><div class="container %s"></div></section>', $attributes['image'], $alignClass);
     }
 }
 new Campaign_Giving();

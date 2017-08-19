@@ -69,8 +69,8 @@ if ( ! post_type_exists( 'facts' ) ):
         //$title = $post_content->post_title;
         $alt = $post_content->post_content;
         $image = wp_get_attachment_url( get_post_thumbnail_id($v) );
-        $return .=      '<div class="facts-image col-md-' . (12/count($id_array)) . '">' .  
-                            '<img alt="' . $alt . '" src="' . $image . '">' .     
+        $return .=      '<div class="facts-image col-xs-6 col-sm-' . (12/count($id_array)) . '">' .  
+                            '<span class="helper"></span><img alt="' . $alt . '" src="' . $image . '">' .     
                         '</div>';
 
     } 
