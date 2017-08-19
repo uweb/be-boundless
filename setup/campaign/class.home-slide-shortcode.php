@@ -44,7 +44,9 @@ class Campaign_Intro
 
 
         $class_string = implode($classes, ' ');
-return '';
+        
+        //return '';
+
     //     return sprintf('<section id="campaign-intro" class="intro %s" style="background-image: url(%s)">%s<div class="container">%s</div><img id="boundless-logo" src="%s" alt="Be boundless"><section class="scrollit read-more"><p>Scroll Down</p><div class="mouse"><div class="scroll"></div></div></section><img id="block-w-logo" src="%s" alt=""></section>', $class_string, $attributes->image, $attributes->title, $content, get_stylesheet_directory_uri() . '/campaign/img/be-boundless.png', get_stylesheet_directory_uri() . '/campaign/img/W-Logo_White.png');
     //     //return "tomato";
     }
