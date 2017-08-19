@@ -39,6 +39,8 @@ class Campaign_Intro
 
         $attributes->image = (!$attributes->image) ? wp_get_attachment_image_src( get_post_thumbnail_id() , 'full') : $attributes->image;
 
+        $attributes->image = is_array($attributes->image) ? $attributes->image[0] : $attributes->image;
+
         $attributes->title = $attributes->title ? '<h1>' . $attributes->title . '</h1>' : '';
         
         if (!$attributes->branding){
