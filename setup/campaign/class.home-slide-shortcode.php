@@ -13,8 +13,8 @@ class Campaign_Intro
 
     function __construct()
     {
-        //remove_shortcode( 'full-page-intro' );
-        //add_shortcode('full-page-intro', array($this, 'intro_handler'));
+        remove_shortcode( 'full-page-intro' );
+        add_shortcode('full-page-intro', array($this, 'intro_handler'));
     }
 
     function intro_handler($atts, $content)
@@ -30,10 +30,12 @@ class Campaign_Intro
             'classes' => null
         ), $atts );
 
-        // if(empty($content)){
-        //     echo 'No text in this slide';
-        //     return;
-        // }
+        if(empty($content)){
+            echo 'No text in this slide';
+            return;
+        }
+
+        $attributes->classes = (!$attributes->classes) ? [] : $attributes->classes;
 
         // $attributes->title = $attributes->title ? '<h1>' . $attributes->title . '</h1>' : '';
         
