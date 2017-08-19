@@ -51,4 +51,3 @@ class Campaign_Intro
 }
 new Campaign_Intro();
 
-?>
