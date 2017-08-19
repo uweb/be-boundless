@@ -17,7 +17,7 @@ class Campaign_Intro
         //add_shortcode('full-page-intro', array($this, 'intro_handler'));
     }
 
-    function full_page_intro_handler($atts, $content)
+    function full_page_intro($atts, $content)
     {
         global $post;
 
