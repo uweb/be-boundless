@@ -19,16 +19,16 @@ class Campaign_Intro
 
     function intro_handler($atts, $content)
     {
-        //global $post;
+        global $post;
 
         $classes = array('campaign-intro');
 
-        // $attributes = (object) shortcode_atts( array(
-        //     'image' => wp_get_attachment_image_src( get_post_thumbnail_id() , 'full')[0],
-        //     'branding' => true,
-        //     'title' => get_the_title(), 
-        //     'classes' => []
-        // ), $atts );
+        $attributes = (object) shortcode_atts( array(
+            'image' => wp_get_attachment_image_src( get_post_thumbnail_id() , 'full')[0],
+            'branding' => true,
+            'title' => get_the_title(), 
+            'classes' => []
+        ), $atts );
 
         // if(empty($content)){
         //     echo 'No text in this slide';
