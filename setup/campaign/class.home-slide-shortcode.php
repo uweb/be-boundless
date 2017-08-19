@@ -35,7 +35,7 @@ class Campaign_Intro
             return;
         }
 
-        $attributes->classes = (!$attributes->classes) ? [] : $attributes->classes;
+        $attributes->classes = (!$attributes->classes) ? array() : $attributes->classes;
 
         // $attributes->title = $attributes->title ? '<h1>' . $attributes->title . '</h1>' : '';
         
