@@ -49,5 +49,5 @@ class Campaign_Intro
         //return "tomato";
     }
 }
-new Campaign_Intro();
+//new Campaign_Intro();
 
