@@ -24,9 +24,13 @@ class Campaign_Giving
         //$classes = array('campaign-intro');
 
         $attributes = shortcode_atts( array(
-            'image' => wp_get_attachment_image_src( get_post_thumbnail_id() , 'full')[0], 
+            'image' => null, 
             'align' => 'left'
         ), $atts );
+
+        $attributes['image'] = (!$attributes['image']) ? wp_get_attachment_image_src( get_post_thumbnail_id() , 'full') : $attributes['image'];
+
+        $attributes['image'] = is_array($attributes['image']) ? $attributes['image'][0] : $attributes['image'];
 
         $alignClass = 'align-' . $attributes['align'];
 
