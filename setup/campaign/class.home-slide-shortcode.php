@@ -37,15 +37,17 @@ class Campaign_Intro
 
         $attributes->classes = (!$attributes->classes) ? array() : $attributes->classes;
 
-        // $attributes->title = $attributes->title ? '<h1>' . $attributes->title . '</h1>' : '';
+        $attributes->image = (!$attributes->image) ? wp_get_attachment_image_src( get_post_thumbnail_id() , 'full')[0] : $attributes->image;
+
+        $attributes->title = $attributes->title ? '<h1>' . $attributes->title . '</h1>' : '';
         
-        // if (!$attributes->branding){
-        //     //set to featured image
-        //     array_push($attributes->classes, 'hide-branding');
-        // }
+        if (!$attributes->branding){
+            //set to featured image
+            array_push($attributes->classes, 'hide-branding');
+        }
 
 
-        // $class_string = implode($classes, ' ');
+        $class_string = implode($classes, ' ');
         
         //return '';
 
