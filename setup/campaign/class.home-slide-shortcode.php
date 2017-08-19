@@ -23,27 +23,27 @@ class Campaign_Intro
 
         $classes = array('campaign-intro');
 
-        $attributes = (object) shortcode_atts( array(
-            'image' => wp_get_attachment_image_src( get_post_thumbnail_id() , 'full')[0],
-            'branding' => true,
-            'title' => get_the_title(), 
-            'classes' => []
-        ), $atts );
+        // $attributes = (object) shortcode_atts( array(
+        //     'image' => wp_get_attachment_image_src( get_post_thumbnail_id() , 'full')[0],
+        //     'branding' => true,
+        //     'title' => get_the_title(), 
+        //     'classes' => []
+        // ), $atts );
 
-        if(empty($content)){
-            echo 'No text in this slide';
-            return;
-        }
+        // if(empty($content)){
+        //     echo 'No text in this slide';
+        //     return;
+        // }
 
-        $attributes->title = $attributes->title ? '<h1>' . $attributes->title . '</h1>' : '';
+        // $attributes->title = $attributes->title ? '<h1>' . $attributes->title . '</h1>' : '';
         
-        if (!$attributes->branding){
-            //set to featured image
-            array_push($attributes->classes, 'hide-branding');
-        }
+        // if (!$attributes->branding){
+        //     //set to featured image
+        //     array_push($attributes->classes, 'hide-branding');
+        // }
 
 
-        $class_string = implode($classes, ' ');
+        // $class_string = implode($classes, ' ');
         
         //return '';
 
