@@ -27,7 +27,7 @@ class Campaign_Intro
             'image' => null, //wp_get_attachment_image_src( get_post_thumbnail_id() , 'full')[0]
             'branding' => true,
             'title' => null, //get_the_title() 
-            'classes' => []
+            'classes' => null
         ), $atts );
 
         // if(empty($content)){
