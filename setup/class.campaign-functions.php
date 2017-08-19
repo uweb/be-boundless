@@ -2,7 +2,7 @@
 //New header for giving with editable fields
 //require 'campaign/class.header-giving.php';
 //Home slide shortcode
-//require 'campaign/class.home-slide-shortcode.php';
+require 'campaign/class.home-slide-shortcode.php';
 //side by side img text post type & shortcode
 //require 'campaign/class.excerpt-post-type.php';
 //fast facts post type and shortcode
