@@ -10,6 +10,6 @@ require 'campaign/class.fast-fact-post-type.php';
 //giving shortcode
 //require 'campaign/class.giving-module-shortcode.php';
 //stories of impact shortcode and additional archive controls
-require 'campaign/class.stories-post-type.php';
-//require 'campaign/class.story-page-attributes-meta-box.php';
+//require 'campaign/class.stories-post-type.php';
+require 'campaign/class.story-page-attributes-meta-box.php';
 ?>
