@@ -54,8 +54,10 @@ global $styles;
 					<div class="col-sm-8 col-md-8 col-lg-8">
 						<form>
 							<label>Make your gift today</label>
-							<input type="text" />
-							<button id="cv2-give">Give &rarr;</button>
+							<span class="dollar">
+							$<input type="text" />
+							</span>
+							<button id="cv2-give">Give</button>
 						</form>
 					</div><!-- .col-sm-8 .col-md-7 .col-lg-6 -->
 					<div class="col-sm-4 col-md-4 col-lg-4 cv2-mobile-grey">

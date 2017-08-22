@@ -34,7 +34,24 @@ class Campaign_Giving
 
         $alignClass = 'align-' . $attributes['align'];
 
-        return sprintf('<section id="giving" class="giving" style="background-image: url(%s)"><div class="container %s"></div></section>', $attributes['image'], $alignClass);
+        $givingWidget = '<div class="donate-widget">' .
+                          '<form action="<?php echo get_permalink( get_page_by_path(\'make-a-gift\') ); ?>" id="make-a-gift-widget">' .
+                          '<input name="page" type="hidden" value="make" />' .
+                          '<input id="recurring" name="RecurringGift" type="hidden" value="yes" />' .
+                          '<input id="frequency" name="RecurringFrequency" type="hidden" value="monthly" />' .
+                          '<input id="duration" name="RecurringDuration" type="hidden" value="0" />' .
+                          '<input name="FastForward" type="hidden" value="yes" />' .
+                          '<input name="appeal" type="hidden" value="17XEX" />' .
+                          '<input name="code" type="hidden" value="HUSPRO" />' .
+                            '<h2>Make your gift today</h2>' .
+                            '<div class="amount"><span>$</span><input type="text" name="amount" /></div>' .
+                            '<button class="monthly" type="submit" class="" data-frequency="monthly" data-recurring="yes" data-duration="0">Monthly</button>' .
+                           '<button class="now" type="submit" class="" data-frequency="one-time" data-recurring="no" data-duration="1">Give</button>' .
+                           '<hr>' .
+                          '</form>' .
+                        '</div>';
+
+        return sprintf('<section id="giving" class="giving" style="background-image: url(%s)"><div class="container %s">%s</div></section>', $attributes['image'], $alignClass, $givingWidget);
     }
 }
 new Campaign_Giving();

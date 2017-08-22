@@ -9,11 +9,18 @@ $(function(){
 	/////////////////
 	// CAMPAIGN V2 //
 	/////////////////
-		$("#cv2-toggle").click(function(){
+		$("#cv2-toggle").on( 'click', function(e){
+			e.stopPropagation();
 			$(".cv2-header-mobile").slideToggle("slow");
 			$(".cv2-header-white").slideToggle("slow");
+			//close cv2-more
+			if($("#cv2-more").hasClass("active")){
+				$("#cv2-more").trigger("click");
+			}
 		});
-		$("#cv2-more").click(function(){
+		$("#cv2-more").on( 'click', function(e){
+			e.stopPropagation();
+			$("#cv2-more").toggleClass("active");
 			$("#cv2-more span").toggleClass("expando");
 			$("#cv2-more span").toggleClass("collapso");
 			$(".cv2-header-grey").slideToggle("slow");
