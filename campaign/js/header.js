@@ -31,7 +31,8 @@ $(function(){
 	// 	thin		= document.getElementsByClassName('thin')[0],
 	// 	thick		= document.getElementsByClassName('thick')[0],
 	 	// give 		= document.getElementById('give-now')
-	 	var give 		= document.getElementById('cv2-give');
+	 	var give 		= document.getElementById('cv2-give'),
+	 		close 		= document.getElementById('cv2-close');
 
 	// document.getElementById('campaign-expand').addEventListener('click', function(){
 	// 	bodyEl.toggle('active-header')
@@ -68,28 +69,42 @@ $(function(){
 	//   return !$.trim(el.html())
 	// }
 
-	// give.addEventListener('click', function(e){
+	give.addEventListener('click', function(e){
 
-	// 	e.preventDefault();
+		e.preventDefault();
 
-	// 	if(isEmpty($('#give-iframe'))) {
-	// 		$('<iframe>', {
-	// 			src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0&appeal=17XBS',
-	// 			frameborder: 0,
-	// 			width: '100%',
-	// 			height: '100%',
-	// 		}).appendTo('#give-iframe');
-	// 	}
+		$('#give-iframe').toggleClass("active");
 
-	// 	if(give.innerHTML === 'Give now'){
-	// 		give.innerHTML = 'Close';
-	// 	} else {
-	// 		give.innerHTML = 'Give now';
-	// 	}
+		if(isEmpty($('#give-iframe .container'))) {
+			$('<iframe>', {
+				src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0&appeal=17XBS&page=make&code=' + 'PREMER' + '&amount=' + $("#cv2-header-give-amount").val(),
+				frameborder: 0,
+				width: '100%',
+				height: '100%',
+			}).appendTo('#give-iframe');
+		}
 
-	// 	$('body').toggleClass('give-modal-active');
+		// if(give.innerHTML === 'Give now'){
+		// 	give.innerHTML = 'Close';
+		// } else {
+		// 	give.innerHTML = 'Give now';
+		// }
 
-	// })
+		$('body').toggleClass('give-modal-active');
+
+	})
+
+	close.addEventListener('click', function(e) {
+
+		e.preventDefault();
+
+		$('#give-iframe').toggleClass("active");
+
+		$('#give-iframe iframe').remove();
+			
+
+		$('body').toggleClass('give-modal-active');
+	})
 
 
 

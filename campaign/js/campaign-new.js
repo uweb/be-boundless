@@ -15,6 +15,12 @@ $(function(){
 	          };
 	})();
 
+	$( "#pause" ).click(function(e) { 
+      var $this = $(e.target);        
+      var $vid = $(e.target).parent().find('video');
+      if( $vid.get(0).paused ) { $vid.get(0).play() } else { $vid.get(0).pause() }
+      $this.parent().toggleClass('paused');
+    });
 
 	// // Get the width of the viewport
 	// var widthInner 		= window.innerWidth,
@@ -96,8 +102,55 @@ console.log($storySlides)
 	});
 
 	
+	$("#cv2-give-now").on('click', function(e){
 
+		e.preventDefault();
 
+		$('#give-iframe').toggleClass("active");
+
+		if(isEmpty($('#give-iframe .container'))) {
+			$('<iframe>', {
+				src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0&appeal=17XBS&page=make&code=' + 'PREMER' + '&amount=' + $("#cv2-widget-give-amount").val(),
+				frameborder: 0,
+				width: '100%',
+				height: '100%',
+			}).appendTo('#give-iframe');
+		}
+
+		// if(give.innerHTML === 'Give now'){
+		// 	give.innerHTML = 'Close';
+		// } else {
+		// 	give.innerHTML = 'Give now';
+		// }
+
+		$('body').toggleClass('give-modal-active');
+
+	})
+
+	$("#cv2-give-monthly").on('click', function(e){
+
+		e.preventDefault();
+
+		$('#give-iframe').toggleClass("active");
+
+		if(isEmpty($('#give-iframe .container'))) {
+			$('<iframe>', {
+				src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0&appeal=17XBS&page=make&RecurringGift=yes&RecurringFrequency=monthly&code=' + 'PREMER' + '&amount=' + $("#cv2-widget-give-amount").val(),
+				frameborder: 0,
+				width: '100%',
+				height: '100%',
+			}).appendTo('#give-iframe');
+		}
+
+		// if(give.innerHTML === 'Give now'){
+		// 	give.innerHTML = 'Close';
+		// } else {
+		// 	give.innerHTML = 'Give now';
+		// }
+
+		$('body').toggleClass('give-modal-active');
+
+	})
 
 
 	//

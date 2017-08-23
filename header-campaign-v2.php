@@ -55,7 +55,7 @@ global $styles;
 						<form>
 							<label>Make your gift today</label>
 							<span class="dollar">
-							$<input type="text" />
+							$<input type="text" id="cv2-header-give-amount" />
 							</span>
 							<button id="cv2-give">Give</button>
 						</form>
@@ -115,4 +115,8 @@ global $styles;
 							<li><a href="#">KUOW</a></li>
 						</ul>
 					</div><!-- .col-md-4 .col-lg-4 -->
+				</div>
+			</div>
+
 		</header><!-- .cv2-header -->
+		<div id="give-iframe"><span id="cv2-close" role="button"></span><div class="container"></div></div>

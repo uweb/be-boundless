@@ -1,6 +1,7 @@
 // All the Variables from the UW 2014 theme
 @import "../../themes/uw-2014/less/uw.variables.less";
 @import "../../themes/uw-2014/less/flat/mixins.less";
+@import "../../themes/uw-2014/less/flexbox.less";
 // @import "../../immersive-stories/less/text-block-new.less";
 // @import "../../immersive-stories/less/button.less";
 @import "../../immersive-stories/less/common.less";
@@ -60,6 +61,44 @@
   }
 }
 
+#give-iframe.active {
+  // height: calc(~"100vh - 171px"); //@headerHeight
+  // margin-top: 171px;
+  
+}
+
+#cv2-close {
+  position: absolute;
+  top: 50px;
+  right: 50px; 
+  height: 50px;
+  width: 50px;
+}
+#cv2-close:before {
+  content: "\e911";
+  font-size: 60px;
+  color: @purple;
+  display: block;
+  font-family: uw-icon;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  margin: -5px 0 0 -5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  .transition(all .2s linear);
+}
+#cv2-close:hover{
+  cursor: pointer;
+}
+#cv2-close:hover:before,
+#cv2-close:focus:before,
+#cv2-close:active:before{
+  color: @lightgold;
+}
 #campaign-intro {
   height: calc(~"100vh - 171px"); //@headerHeight
   width: 100vw;
@@ -67,7 +106,12 @@
   background-position: center bottom;
   text-align: center;
   padding-top: 10vh;
+  overflow: hidden;
   color: white;
+  video,
+  #pause {
+    display: none;
+  }
   .container {
     width: 50vw;
     margin-top: 5vh;
@@ -102,6 +146,70 @@
       width: 20px;
       height: 38px;
       bottom: 62px;
+    }
+  }
+}
+@media only screen and (min-width : 769px) {
+  #campaign-intro.cv2-home-slide-video{
+    padding: 0;
+    background: black !important;
+    video {
+        object-fit: cover;
+        height: calc(~"100vh - 171px");
+        width: 100%;
+        object-position: 100% 50%;
+        display: inline-block;
+    }
+    .main-content {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      .translate(0, -50%);
+    }
+    #pause {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        text-indent: -999px;
+        overflow-x: hidden;
+        width: 45px;
+        height: 45px;
+        right: 20px;
+        top: 200px;
+        border: none;
+        background: url("@{img}/pause.svg") no-repeat 0 0 transparent;
+        z-index: 2;
+        &:hover,
+        &:focus {
+            background-position-x: -47px;
+        }
+        &:focus {
+            outline-color: rgb(59, 153, 252);
+            outline-style: auto;
+            outline-width: 5px;
+        }
+        @media(max-width:768px) {
+            display: none;
+        }
+    }
+    &.paused {
+        video {
+            opacity: .6;
+            -webkit-filter: blur(5px);
+        }
+        #pause { 
+            background-position: 0 -49px;
+            &:hover {
+                background-position-x: -47px;
+            }
+            &:focus {
+                outline-color: rgb(59, 153, 252);
+                outline-style: auto;
+                outline-width: 5px;
+            }
+        }
     }
   }
 }
@@ -868,21 +976,23 @@ button.nextSlide {
 }
 
 @media only screen and (min-height : 800px) and (max-width : 992px) {
-  #campaign-intro {
+  #campaign-intro:not(.cv2-home-slide-video) {
     padding-top: 6vh;
   }
 }
 
 //NEED TO DO EDITS FOR ALL MOBILE SIZING
 @media only screen and (max-height : 800px) {
-  #campaign-intro {
+  #campaign-intro:not(.cv2-home-slide-video) {
     padding-top: 4vh;
   }
 }
 
 @media only screen and (max-height : 700px) {
   #campaign-intro {
-    padding-top: 2vh;
+    &:not(.cv2-home-slide-video){
+      padding-top: 2vh;
+    }
     .container { 
       margin-top: 3vh;
     }
