@@ -277,10 +277,9 @@
 
       <section class="text-block transSection bottom-map">
 
-          <!-- <div id="photo-1"></div>
-          <div id="photo-2"></div> -->
+          <!-- <div id="photo-map"></div> -->
       
-          <p>FPO Map</p>
+          <p>FPO Map Decription that describes map...</p>
 
       </section>
 

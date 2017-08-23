@@ -1,11 +1,7 @@
 <?php 
 
 /*
- *  Boundless Image shortcode allows for styled image slide to be added to content
- *  [intro image='false' branding='true' title='false']Content Text[/intro]
- *  optional image url, assumes featured image by default 
- *  optional title, assumes page title by default (uses false to disable)
- *  optional array of classes to insert
+ *  
  */
 
 class Campaign_Giving
