@@ -1,10 +1,20 @@
-<?php get_header( "campaign-open" ); ?>
+<?php
 
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/environment.css' ?>' type='text/css' media='all' />
+  global $meta;
+  global $styles;
+  global $scripts;
 
-<?php get_header( "campaign-close" ); ?>
+
+  $meta = '';
+  $styles =  "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' />" . 
+            "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' />" . 
+            "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/environment.css' type='text/css' media='all' />";
+  $scripts =  "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script>" .
+              "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/header.js' type='text/javascript'></script>" .
+              "<script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/environment.min.js' type='text/javascript'></script>";
+
+  get_header( "campaign-v2" );
+?>
 
 
 <div id="immersive-body">
@@ -87,7 +97,7 @@
 
  
 
- <?php get_template_part('footer', 'campaign'); ?>
+ <?php get_template_part('footer', 'campaign-v2'); ?>
 
 
 </body>

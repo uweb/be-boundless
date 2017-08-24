@@ -10,7 +10,7 @@
 @import "../../immersive-stories/less/slideshow.less";
 
 //@foster: "../../immersive-stories/img/foster-school";
-@built: "../../immersive-stories/img/environment";
+@enviro: "../../immersive-stories/img/environment";
 @img: "../../immersive-stories/img";
 
 // @media @phone-only { }              //  (max-width: 599px)          
@@ -56,11 +56,23 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 103vh;
+    height: calc(~"100vh - 171px");
     // background-image: url("@{foster}/yesenia.jpg");
     .background-cover(cover);
     background-position: center center;
     background-color: black;
+    &:before {
+        content: '';
+        display: block; 
+        position: absolute;
+        right: -22%;
+        bottom: -5%;
+        width: 70%;
+        height: 60%;
+        opacity: 0.2;
+        background: url("@{enviro}/mountains.png") left top no-repeat transparent;
+        .background-cover(cover);
+    }
     &:after {
         content: '';
         display: block;
@@ -69,10 +81,10 @@ p {
         top: 0;
         height: 100%;
         width: 100%;             
-    background: -webkit-linear-gradient(bottom left, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%);
-    background: -o-linear-gradient(bottom left, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%);
-    background: linear-gradient(to top right, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bd000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        background: -webkit-linear-gradient(bottom left, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%);
+        background: -o-linear-gradient(bottom left, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%);
+        background: linear-gradient(to top right, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bd000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     }
     .scrollit {
         z-index: 1;
@@ -109,14 +121,14 @@ p {
         line-height: 0.85;
         text-shadow: 0px 0px 3px rgba(37, 37, 37, 0.65);
         font-size: 30px;
-        text-indent: -999999px;
+        //text-indent: -999999px;
         span {
             display: block;
             margin-left: -5px;
         }
     }
-    img.h1-image {
-    	
+    img.h1-image { //h1 with texture
+    	display: none;
     }
     .udub-slant span { 
         height: 5px;
@@ -374,7 +386,7 @@ p {
     width: 45px;
     height: 45px;
     right: 20px;
-    top: 120px;
+    top: 200px;
     border: none;
     background: url("@{img}/pause.svg") no-repeat 0 0 transparent;
     z-index: 2;
