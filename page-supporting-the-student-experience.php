@@ -451,9 +451,9 @@
     </div>
     <ul id="scrollPics">
       <li><a href="#anthony" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-anthony.jpg' ?>"></a></li>
-      <li><a href="#aina" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-aina.jpg' ?>"></a></li>
+      <li><a href="#mayowa" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-aina.jpg' ?>"></a></li>
       <li><a href="#starla" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-starla.jpg' ?>"></a></li>
-      <li><a href="#pettibone" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-pettibone.jpg' ?>"></a></li>
+      <li><a href="#austin" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-pettibone.jpg' ?>"></a></li>
       <li><a href="#tyler" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-tyler.jpg' ?>"></a></li>
       <li><a href="#veronica" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-veronica.jpg' ?>"></a></li>
     </ul>
