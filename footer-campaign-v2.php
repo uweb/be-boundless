@@ -1,6 +1,9 @@
+<?php
+global $scripts;
+?>
 		<div class="cv2-footer">
 			<div class="row">
-				<div class="col-md-4 col-lg-4 cv2-connect">
+				<div class="col-md-4 col-lg-3 col-lg-offset-2 cv2-connect">
 					<div class="cv2-col-inner">
 						<h4>Connect with us</h4>
 						<nav aria-label="social networking">
@@ -17,7 +20,7 @@
 						</nav>
 					</div><!-- .cv2-col-inner -->
 				</div><!-- .col-md-4 .col-lg-4 -->
-				<div class="col-md-8 col-lg-8 cv2-newsletter">
+				<div class="col-md-8 col-lg-5 cv2-newsletter">
 					<div class="cv2-col-inner">
 						<h4>Campaign newsletter</h4>
 						<form>
@@ -28,12 +31,12 @@
 				</div><!-- .col-md-8 .col-lg-8 -->
 			</div><!-- .row -->
 			<div class="row">
-				<div class="col-md-4 col-lg-4">
+				<div class="col-md-4 col-lg-3 col-lg-offset-2">
 					<div class="cv2-col-inner">
 						<img src="<?php echo get_stylesheet_directory_uri() . '/campaign/img/be-boundless.png' ?>" alt="BE BOUNDLESS FOR WASHINGTON / FOR THE WORLD" class="cv2-boundless-logo" />
 					</div><!-- .cv2-col-inner -->
 				</div><!-- .col-md-4 .col-lg-4 -->
-				<div class="col-md-8 col-lg-8">
+				<div class="col-md-8 col-lg-7">
 					<div class="cv2-col-inner">
 						<nav aria-label="footer navigation">
 							<ul class="cv2-list-links list-inline">

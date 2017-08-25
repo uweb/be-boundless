@@ -55,7 +55,7 @@ if ( ! post_type_exists( 'stories' ) ):
         }
     }
 
-  function stories_shortcode( $atts )
+  function campaign_stories_shortcode( $atts )
   {
 
     $atts = shortcode_atts( array(
@@ -84,9 +84,12 @@ if ( ! post_type_exists( 'stories' ) ):
     $count = 0;
     if ( $the_query->have_posts() ) :
         while ( $the_query->have_posts() ) : $the_query->the_post();
-                $return .= '<div class="story"><a href="' . get_post_meta( get_the_ID(), 'url', true ) . '">' . 
+                $image = wp_get_attachment_image_src( get_post_thumbnail_id() , array(300,200));
+                $image = is_array($image) ? $image[0] : $image;
+                
+                $return .= '<div class="story"><a class="story-link" href="' . get_post_meta( get_the_ID(), 'url', true ) . '">' . 
                                 '<h3>' . get_the_title() . '</h3>' .
-                                '<div class="image-equalizer" style="background-image: url(' . wp_get_attachment_image_src( get_post_thumbnail_id() , array(300,200))[0] . ');"></div>' .
+                                '<div class="image-equalizer" style="background-image: url(' . $image . ');"></div>' .
                                 '<hr>' .
                                 '<p class="subheader">' . get_the_content() . '</p>' .
                             '</a></div>';
@@ -121,7 +124,7 @@ if ( ! post_type_exists( 'stories' ) ):
 
 
   }
-  add_shortcode( 'stories', 'stories_shortcode' );
+  add_shortcode( 'stories', 'campaign_stories_shortcode' );
 
     
 endif;

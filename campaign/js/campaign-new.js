@@ -15,6 +15,12 @@ $(function(){
 	          };
 	})();
 
+	$( "#pause" ).click(function(e) { 
+      var $this = $(e.target);        
+      var $vid = $(e.target).parent().find('video');
+      if( $vid.get(0).paused ) { $vid.get(0).play() } else { $vid.get(0).pause() }
+      $this.parent().toggleClass('paused');
+    });
 
 	// // Get the width of the viewport
 	// var widthInner 		= window.innerWidth,
@@ -51,12 +57,12 @@ $(function(){
     //get number of slides in stories of impact
     var $storyCount = $(".story").length,
     	$isMobile = $(window).width() < 768,
-    	$storySlides = (!$isMobile) ? $storyCount%3 : $storyCount%2, //Desktop or mobile
+    	$storySlides = (!$isMobile) ? Math.ceil($storyCount/3) : Math.ceil($storyCount/2), //Desktop or mobile
     	$storyWidth = $(".story").first().outerWidth(true),
     	$slideWidth = (!$isMobile ? $storyWidth*3 : $storyWidth*2) + 90;
     	$currentSlide = 1;
 
-    	console.log($slideWidth)
+console.log($storySlides)
 
     // Right/Left arrow event listener
 	$('#impact-stories button').on('click',function(e){
@@ -69,6 +75,7 @@ $(function(){
 			$currentSlide++;
 			$currentSlide = $currentSlide > $storySlides ? 1 : $currentSlide;
 		}
+		
 		$("#story-slider").css({
 		  '-webkit-transform' : 'translate(-' + $slideWidth*($currentSlide-1) + 'px, 0)',
 		  '-ms-transform'     : 'translate(-' + $slideWidth*($currentSlide-1) + 'px, 0)',
@@ -76,13 +83,74 @@ $(function(){
 		});
 	});
 
+	$('a.video').on('click', function(e) {
+		e.stopPropagation();
+		e.preventDefault();
+		$(this).closest('.play-button').children('a').trigger('click');
+	});
 
+	$('.campaign-button').on('click', function(e) {
+		e.stopPropagation();
+		e.preventDefault();
+		$(this).find('a').trigger('click');
+		//console.log($(this).find('a')[0].trigger)
+	});
 
-
+	$('a:not([data-lity]):not(".video")').on('click', function(e) {
+		e.stopPropagation();
+		this.click();
+	});
 
 	
+	$("#cv2-give-now").on('click', function(e){
 
+		e.preventDefault();
 
+		$('#give-iframe').toggleClass("active");
+
+		if(isEmpty($('#give-iframe .container'))) {
+			$('<iframe>', {
+				src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0&appeal=17XBS&page=make&code=' + 'EXCELL' + '&amount=' + $("#cv2-widget-give-amount").val().replace(/,/g, ''),
+				frameborder: 0,
+				width: '100%',
+				height: '100%',
+			}).appendTo('#give-iframe');
+		}
+
+		// if(give.innerHTML === 'Give now'){
+		// 	give.innerHTML = 'Close';
+		// } else {
+		// 	give.innerHTML = 'Give now';
+		// }
+
+		$('body').toggleClass('give-modal-active');
+
+	})
+
+	$("#cv2-give-monthly").on('click', function(e){
+
+		e.preventDefault();
+
+		$('#give-iframe').toggleClass("active");
+
+		if(isEmpty($('#give-iframe .container'))) {
+			$('<iframe>', {
+				src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0&appeal=17XBS&page=make&RecurringGift=yes&RecurringFrequency=monthly&code=' + 'EXCELL' + '&amount=' + $("#cv2-widget-give-amount").val().replace(/,/g, ''),
+				frameborder: 0,
+				width: '100%',
+				height: '100%',
+			}).appendTo('#give-iframe');
+		}
+
+		// if(give.innerHTML === 'Give now'){
+		// 	give.innerHTML = 'Close';
+		// } else {
+		// 	give.innerHTML = 'Give now';
+		// }
+
+		$('body').toggleClass('give-modal-active');
+
+	})
 
 
 	//

@@ -968,7 +968,11 @@ section.cactus {
         background-position: center center;
     }
     &.bottom-map {
-        background-color: grey;
+        .background-cover(cover);
+        background-image: url("@{ica}/MAP_V.4.jpg");
+        height: 0;
+        width: 100%;
+        padding-bottom: 51.5vw;
         margin-bottom: 0;
     }
     @media @tablet-portrait-up { 

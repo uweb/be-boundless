@@ -1,11 +1,7 @@
 <?php 
 
 /*
- *  Boundless Image shortcode allows for styled image slide to be added to content
- *  [intro image='false' branding='true' title='false']Content Text[/intro]
- *  optional image url, assumes featured image by default 
- *  optional title, assumes page title by default (uses false to disable)
- *  optional array of classes to insert
+ *  
  */
 
 class Campaign_Giving
@@ -18,18 +14,40 @@ class Campaign_Giving
 
     function giving_handler($atts)
     {
+        global $post;
         $attributes = (object) $atts;
 
         //$classes = array('campaign-intro');
 
         $attributes = shortcode_atts( array(
-            'image' => get_the_post_thumbnail_url(), 
+            'image' => null, 
             'align' => 'left'
         ), $atts );
 
+        $attributes['image'] = (!$attributes['image']) ? wp_get_attachment_image_src( get_post_thumbnail_id() , 'full') : $attributes['image'];
+
+        $attributes['image'] = is_array($attributes['image']) ? $attributes['image'][0] : $attributes['image'];
+
         $alignClass = 'align-' . $attributes['align'];
 
-        return sprintf('<section id="giving" class="giving" style="background-image: %s"><div class="container %s"></div></section>', $attributes->image, $alignClass);
+        $givingWidget = '<div class="donate-widget">' .
+                          '<form action="<?php echo get_permalink( get_page_by_path(\'make-a-gift\') ); ?>" id="make-a-gift-widget">' .
+                          '<input name="page" type="hidden" value="make" />' .
+                          '<input id="recurring" name="RecurringGift" type="hidden" value="yes" />' .
+                          '<input id="frequency" name="RecurringFrequency" type="hidden" value="monthly" />' .
+                          '<input id="duration" name="RecurringDuration" type="hidden" value="0" />' .
+                          '<input name="FastForward" type="hidden" value="yes" />' .
+                          '<input name="appeal" type="hidden" value="17XEX" />' .
+                          '<input name="code" type="hidden" value="HUSPRO" />' .
+                            '<h2>Make your gift today</h2>' .
+                            '<div class="amount"><span>$</span><input type="text" name="amount" id="cv2-widget-give-amount" /></div>' .
+                            '<button class="monthly" id="cv2-give-monthly" type="submit" class="" data-frequency="monthly" data-recurring="yes" data-duration="0">Monthly</button>' .
+                           '<button class="now" id="cv2-give-now" type="submit" class="" data-frequency="one-time" data-recurring="no" data-duration="1">Give</button>' .
+                           '<hr>' .
+                          '</form>' .
+                        '</div>';
+
+        return sprintf('<section id="giving" class="giving" style="background-image: url(%s)"><div class="container %s">%s</div></section>', $attributes['image'], $alignClass, $givingWidget);
     }
 }
 new Campaign_Giving();

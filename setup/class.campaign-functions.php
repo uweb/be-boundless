@@ -3,6 +3,7 @@
 //require 'campaign/class.header-giving.php';
 //Home slide shortcode
 require 'campaign/class.home-slide-shortcode.php';
+require 'campaign/class.full-width-featured-video.php';
 //side by side img text post type & shortcode
 require 'campaign/class.excerpt-post-type.php';
 //fast facts post type and shortcode

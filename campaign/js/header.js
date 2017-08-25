@@ -9,11 +9,18 @@ $(function(){
 	/////////////////
 	// CAMPAIGN V2 //
 	/////////////////
-		$("#cv2-toggle").click(function(){
+		$("#cv2-toggle").on( 'click', function(e){
+			e.stopPropagation();
 			$(".cv2-header-mobile").slideToggle("slow");
 			$(".cv2-header-white").slideToggle("slow");
+			//close cv2-more
+			if($("#cv2-more").hasClass("active")){
+				$("#cv2-more").trigger("click");
+			}
 		});
-		$("#cv2-more").click(function(){
+		$("#cv2-more").on( 'click', function(e){
+			e.stopPropagation();
+			$("#cv2-more").toggleClass("active");
 			$("#cv2-more span").toggleClass("expando");
 			$("#cv2-more span").toggleClass("collapso");
 			$(".cv2-header-grey").slideToggle("slow");
@@ -23,7 +30,9 @@ $(function(){
 	// 	campExpand 	= document.getElementById('campaign-expand'),
 	// 	thin		= document.getElementsByClassName('thin')[0],
 	// 	thick		= document.getElementsByClassName('thick')[0],
-	// 	give 		= document.getElementById('give-now')
+	 	// give 		= document.getElementById('give-now')
+	 	var give 		= document.getElementById('cv2-give'),
+	 		close 		= document.getElementById('cv2-close');
 
 	// document.getElementById('campaign-expand').addEventListener('click', function(){
 	// 	bodyEl.toggle('active-header')
@@ -64,23 +73,37 @@ $(function(){
 
 		e.preventDefault();
 
-		if(isEmpty($('#give-iframe'))) {
+		$('#give-iframe').toggleClass("active");
+
+		if(isEmpty($('#give-iframe .container'))) {
 			$('<iframe>', {
-				src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0&appeal=17XBS',
+				src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0&appeal=17XBS&page=make&code=' + 'EXCELL' + '&amount=' + $("#cv2-header-give-amount").val().replace(/,/g, ''),
 				frameborder: 0,
 				width: '100%',
 				height: '100%',
 			}).appendTo('#give-iframe');
 		}
 
-		if(give.innerHTML === 'Give now'){
-			give.innerHTML = 'Close';
-		} else {
-			give.innerHTML = 'Give now';
-		}
+		// if(give.innerHTML === 'Give now'){
+		// 	give.innerHTML = 'Close';
+		// } else {
+		// 	give.innerHTML = 'Give now';
+		// }
 
 		$('body').toggleClass('give-modal-active');
 
+	})
+
+	close.addEventListener('click', function(e) {
+
+		e.preventDefault();
+
+		$('#give-iframe').toggleClass("active");
+
+		$('#give-iframe iframe').remove();
+			
+
+		$('body').toggleClass('give-modal-active');
 	})
 
 

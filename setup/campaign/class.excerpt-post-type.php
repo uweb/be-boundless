@@ -25,7 +25,7 @@ if ( ! post_type_exists( 'excerpt' ) ):
             'labels' => $labels,
             'show_ui' => true,
             'show_in_menu' => true,
-            'supports' => array( 'title' , 'editor' , 'thumbnail', 'custom-fields', 'page-attributes' )
+            'supports' => array( 'title' , 'editor' , 'thumbnail', 'custom-fields' )
         );
 
         register_post_type('excerpt', $args);
@@ -44,7 +44,7 @@ if ( ! post_type_exists( 'excerpt' ) ):
         add_filter( 'manage_excerpt_posts_columns', 'add_excerpt_shortcode_column' );
         add_action( 'manage_posts_custom_column' , 'add_excerpt_shortcode_column_content', 10, 2 );
 
-        // add_shortcode( 'excerpt', 'excerpt_shortcode' );
+        //add_shortcode( 'excerpt', 'excerpt_shortcode' );
      
     }
 
@@ -127,6 +127,7 @@ if ( ! post_type_exists( 'excerpt' ) ):
     if ( $column == 'excerptShortcode' ) echo '[excerpt id='. $post_id .']';
   }
 
+  // [excerpt id=null align="right" color="purple" video="true" text="light" dub=false]
   function excerpt_shortcode( $atts )
   {
 
@@ -135,7 +136,8 @@ if ( ! post_type_exists( 'excerpt' ) ):
       'align' => 'right', //or left
       'color' => 'purple', //or white
       'video' => false, //or true
-      'text'  => 'light' //or dark
+      'text'  => 'light', //or dark
+      'dub'   => false
     ), $atts);
 
     if ( ! $atts['id'] ) return;
@@ -152,11 +154,26 @@ if ( ! post_type_exists( 'excerpt' ) ):
     $buttonText = get_post_meta( $post_id, 'buttonText', true );
     //echo do_shortcode( $content );//executing shortcodes
     $bgClass = 'bg-' . $atts['color'];
+    $dubsClass = ($atts['dub'] ? 'add-dubs' : '');
+    $videoClass = ($atts['video'] ? 'video' : '');
+    $videoHtml = ($atts['video'] ? '' .
+        '<div class="play-button" >' .
+              '<a data-lity href="' . $video . '">' .
+              '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="137.909px" height="137.131px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131" xml:space="preserve">' . 
+              '<ellipse fill="none" stroke="#FFFFFF" stroke-width="7.8281" stroke-miterlimit="10" cx="68.399" cy="68.344" rx="57.675" ry="59.214"/>' .
+              '<polygon fill="#FFFFFF" points="48.611,37.617 103.268,68.345 48.611,99.072 "/>' . 
+              '</svg>' .
+              '<p></p>' .
+              '</a>' : '');
+    $videoHtmlClose = ($atts['video'] ?  '</div>' : '');
+    $button = '<div class="button-container">' . $videoHtml . '<div class="campaign-button ' . $videoClass .'"><div>';
+    $button .= $buttonLink ? ('<a href="' . $buttonLink . '">' . $buttonText . '</a>') : '<a class="' . $videoClass . '" disabled>' . $buttonText . '</a>';
+    $button .= '</div></div>' . $videoHtmlClose . '</div>';
     
-    $return =   '<section class="campaign-excerpt">' . 
-                '  <div class="container container-left ';
+    $return =   '<section class="campaign-excerpt ' . $bgClass . '">' . 
+                '  <div class="container ';
     $return .= ($atts['align'] === 'right') ? ('' .
-                'container-text ' . $bgClass . '"> ' .    
+                'container-left container-text ' . $bgClass . ' ' . $dubsClass . '"> ' .    
                 '    <div class="row">' .
                 '      <h2>' . $title . '</h2>' .
                 '      <hr>' .
@@ -164,16 +181,26 @@ if ( ! post_type_exists( 'excerpt' ) ):
                 '    </div>' .
                 '  </div>' .
                 '  <div class="container container-right container-image">' .
-                '    <div class="row" style="background-image:url(' . $image . ')">' ) : ('' . //this is the switch
-                'container-image"> ' .    
-                '    <div class="row" style="background-image:url(' . $image . ')">' . //add button link here
-                '    </div>' .
-                '  </div>' .
-                '  <div class="container container-right container-text ' . $bgClass . '">' .
+                '    <div class="row" style="background-image:url(' . $image . ')">' . $button ) : ('' . //this is the switch
+                'container-right container-text ' . $bgClass . ' ' . $dubsClass . '"> ' .    
                 '    <div class="row">' .
                 '      <h2>' . $title . '</h2>' .
                 '      <hr>' .
-                '      <p>' . $content . '</p>' ) ;
+                '      <p>' . $content . '</p>' .
+                '    </div>' .
+                '  </div>' .
+                '  <div class="container container-left container-image">' .
+                '    <div class="row" style="background-image:url(' . $image . ')">' . $button );
+                // 'container-leftcontainer-image"> ' .    
+                // '    <div class="row" style="background-image:url(' . $image . ')">' . //add button link here
+                //         $button .
+                // '    </div>' .
+                // '  </div>' .
+                // '  <div class="container container-right container-text ' . $bgClass . ' ' . $dubsClass . '">' .
+                // '    <div class="row">' .
+                // '      <h2>' . $title . '</h2>' .
+                // '      <hr>' .
+                // '      <p>' . $content . '</p>' ) ;
     $return .=  '    </div>' .
                 '  </div>' .
                 '</section>'; 
