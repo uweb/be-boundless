@@ -44,7 +44,7 @@ global $styles;
 						<ul class="list-unstyled text-center">
 							<li><a href="campaign">Campaign Home</a></li>
 							<li><a href="about">About</a></li>
-							<li><a href="explore">Stories</a></li>
+							<li><a href="/boundless/archive/">Stories</a></li>
 						</ul>
 					</div><!-- .col-xs-12 .col-sm-12 .col-md-12 .col-lg-12 -->
 				</div><!-- .row -->
@@ -75,44 +75,46 @@ global $styles;
 					<div class="col-sm-4 col-md-4 col-lg-4">
 						<p class="subheader">Campuses</p>
 						<ul class="list-unstyled">
-							<li><a href="#">UW Bothell</a></li>
-							<li><a href="#">UW Medicine</a></li>
-							<li><a href="#">UW Tacoma</a></li>
+							<li><a href="http://www.uwb.edu/give">UW Bothell</a></li>
+							<li><a href="http://www.acceleratemed.org/">UW Medicine</a></li>
+							<li><a href="http://www.tacoma.uw.edu/boundless">UW Tacoma</a></li>
 						</ul>
 						<p class="subheader">Colleges</p>
 						<ul class="list-unstyled">
-							<li><a href="#">College of Arts &amp; Sciences</a></li>
-							<li><a href="#">College of Built Environments</a></li>
-							<li><a href="#">College of Education</a></li>
-							<li><a href="#">College of Engineering</a></li>
-							<li><a href="#">College of the Environment</a></li>
+							<li><a href="http://artsci.washington.edu/boundless">College of Arts &amp; Sciences</a></li>
+							<!-- <li><a href="#">College of Built Environments</a></li> -->
+							<li><a href="http://education.uw.edu/campaign">College of Education</a></li>
+							<li><a href="http://www.engr.washington.edu/giving/impact">College of Engineering</a></li>
+							<li><a href="https://environment.uw.edu/alumni-and-community/giving-to-the-college/">College of the Environment</a></li>
 						</ul>
 					</div><!-- .col-md-4 .col-lg-4 -->
 					<div class="col-sm-4 col-md-4 col-lg-4">
 						<p class="subheader">Schools</p>
 						<ul class="list-unstyled">
-							<li><a href="#">Evans School of Public Policy &amp; Governance</a></li>
-							<li><a href="#">Foster School of Business</a></li>
-							<li><a href="#">Information School</a></li>
-							<li><a href="#">School of Dentistry</a></li>
-							<li><a href="#">School of Law</a></li>
-							<li><a href="#">School of Nursing</a></li>
-							<li><a href="#">School of Pharmacy</a></li>
-							<li><a href="#">School of Public Health</a></li>
-							<li><a href="#">School of Social Work</a></li>
+							<li><a href="http://evans.uw.edu/giving">Evans School of Public Policy &amp; Governance</a></li>
+							<li><a href="http://foster.uw.edu/campaign">Foster School of Business</a></li>
+							<!-- <li><a href="#">The Henry M. Jackson School of International Studies</a></li> -->
+							<li><a href="https://ischool.uw.edu/boundless">Information School</a></li>
+							<li><a href="https://www.cs.washington.edu/supportcse">Paul G. Allen School of Computer Science &amp; Engineering</a></li>
+							<li><a href="https://dental.washington.edu/alumni-friends/give/make-a-gift/">School of Dentistry</a></li>
+							<li><a href="https://www.law.uw.edu/donate">School of Law</a></li>
+							<li><a href="https://nursing.uw.edu/community/donate/">School of Nursing</a></li>
+							<li><a href="https://sop.washington.edu/alumni-donors/give-to-the-school/">School of Pharmacy</a></li>
+							<li><a href="http://sph.washington.edu/giving/">School of Public Health</a></li>
+							<li><a href="http://socialwork.uw.edu/">School of Social Work</a></li>
 						</ul>
 					</div><!-- .col-md-4 .col-lg-4 -->
 					<div class="col-sm-4 col-md-4 col-lg-4">
 						<p class="subheader">Departments</p>
 						<ul class="list-unstyled">
-							<li><a href="#">Academic &amp; Student Affairs</a></li>
-							<li><a href="#">Athletics</a></li>
-							<li><a href="#">University Libraries</a></li>
+							<!-- <li><a href="#">Academic &amp; Student Affairs</a></li> -->
+							<li><a href="http://uwtyeeclub.org/">Athletics</a></li>
+							<li><a href="http://www.lib.washington.edu/support/">University Libraries</a></li>
 						</ul>
 						<p class="subheader">Media</p>
 						<ul class="list-unstyled">
-							<li><a href="#">KEXP</a></li>
-							<li><a href="#">KUOW</a></li>
+							<li><a href="http://www.kexp.org/support/benefitsofgiving">KEXP</a></li>
+							<li><a href="http://kuow.org/support-kuows-capitol-campaign">KUOW</a></li>
 						</ul>
 					</div><!-- .col-md-4 .col-lg-4 -->
 				</div>
