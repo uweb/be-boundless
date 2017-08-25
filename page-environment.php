@@ -36,13 +36,13 @@
               <img class="h1-image col-md-offset-1 col-xs-offset-1" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/h1-trans.png' ?>" alt="A week in the wild">
               <span class="udub-slant col-lg-offset-0"><span></span></span>
               <p class="col-md-6 col-md-offset-1 col-xs-offset-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis elementum nisl ac feugiat. Cras feugiat sapien ac congue tincidunt. Cras tortor nisl, bibendum ut imperdiet quis, efficitur ac turpis. </p>
-              <span class="gold-tilt gold-tilt-1"></span>
-              <span class="gold-tilt gold-tilt-2"></span>
-              <span class="slashes"></span>
-              
           </div>          
       </div>
   </div>
+
+  <span class="gold-tilt gold-tilt-1"></span>
+  <span class="gold-tilt gold-tilt-2"></span>
+  <span class="slashes"></span>
 
   <section class="scrollit read-more">
       <!-- <p>Scroll Down</p>

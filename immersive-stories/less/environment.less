@@ -53,6 +53,7 @@ p {
 }
 
 .intro {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,6 +86,22 @@ p {
         background: -o-linear-gradient(bottom left, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%);
         background: linear-gradient(to top right, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bd000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+    span.gold-tilt {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background-color: @darkgold;
+        opacity: 0.3;
+        .skew(15deg, 0);
+        &.gold-tilt-1{
+            left: 5%;
+            width: 150px;
+        }
+        &.gold-tilt-2{
+            left: 60%;
+            width: 400px;
+        }
     }
     .scrollit {
         z-index: 1;
@@ -143,7 +160,7 @@ p {
     .intro-body {
         position: absolute;
         z-index: 1;
-        top: 50%;
+        top: 43%;
         left: 0;
         width: 100%;
         .translate(0,-50%);
@@ -386,7 +403,7 @@ p {
     width: 45px;
     height: 45px;
     right: 20px;
-    top: 200px;
+    top: 20px;
     border: none;
     background: url("@{img}/pause.svg") no-repeat 0 0 transparent;
     z-index: 2;
