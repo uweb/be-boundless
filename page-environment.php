@@ -35,7 +35,9 @@
               <h1 class="col-md-offset-1 col-xs-offset-1">A week in <span>the wild</span></h1>
               <img class="h1-image col-md-offset-1 col-xs-offset-1" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/h1-trans.png' ?>" alt="A week in the wild">
               <span class="udub-slant col-lg-offset-0"><span></span></span>
-              <p class="col-md-6 col-md-offset-1 col-xs-offset-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis elementum nisl ac feugiat. Cras feugiat sapien ac congue tincidunt. Cras tortor nisl, bibendum ut imperdiet quis, efficitur ac turpis. </p>
+              <p class="col-md-6 col-md-offset-1 col-xs-offset-1">
+                  Over spring break, 16 UW students and three professors from the College of the Environment made a classroom out of one of the most closely monitored ecosystems in the world: Yellowstone National Park. Explore their learning experience below.
+              </p>
           </div>          
       </div>
   </div>
@@ -69,6 +71,31 @@
 <main id="main_content">
   
   <!-- Sections go here -->
+
+  <section class="text-block start white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 copy">
+                
+                <h3>More than wolves</h3>
+
+                <!-- <p class="bolder"><b></b></p> -->
+                
+                <p>Through the shimmering heat waves of a midafternoon sunbreak, hundreds of yards across the silent expanse of the Lamar Valley, students see three wolves through a spotting scope. Barely visible — even through the scope — the wolves are curled up in the snow, camouflaged against a backdrop of brown sage.</p>
+                
+                <p>All week long, during a course in Yellowstone National Park, UW students have been hoping to catch a glimpse of the iconic predator. They’ve seen scientists scanning the hills with their binoculars, some holding up receivers that pick up faint radio signals from collared wolves somewhere in the backcountry. They’ve met with wolf experts and seen wolf footprints in mud and snow. Some have heard distant, eerie howls. Now, the payoff: The students take turns sharing the scope, each of them getting a brief but precious look at the elusive animals. It’s the class’s last day in the park, and while this much-hoped-for sighting is the exclamation point on their pilgrimage, the experience has been about so much more than wolves.</p>
+
+                <h3>Learning in the field</h3>
+
+                <p>A week of intensive fieldwork followed by a research project and presentation, “Wildlife Conservation in Northwest Ecosystems” teaches the UW’s Environmental Science and Resource Management (ESRM) students about the intertwined ecosystem of America’s oldest national park — from bison and ravens to cougars and grizzly bears, alders and willows to biologists and ranchers. But how does Yellowstone relate to Washington state? The park has long been a bellwether for scientists to study how ecosystems work. Learning about both wildlife and humans there gives students an experience they’ll carry into their careers in Washington — and beyond. As this year’s class kicks off, some students have already done several animal surveys at the UW. Others are just dipping their toes into fieldwork and have never been to a national park. All are excited about what comes next. </p>
+
+                <p>Leading the students in the field are environmental and forest sciences professors John Marzluff, Aaron Wirsing and Beth Gardner. Marzluff is a bird expert with a particular interest in corvids: crows, ravens, magpies and jays. Wirsing studies how land and ocean predators shape the behavior of animals in their ecosystem through their mere presence. Gardner uses mathematical models to help monitor and manage wildlife, plant and fisheries populations. Together, they teach their students about the rigors of science, about life in the field — and about what their futures might look like.</p>
+
+            </div> 
+      </div> 
+    </div>   
+  </section>
+
 
 
   <section class="text-block giving-widget branded arrow">
