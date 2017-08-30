@@ -9,7 +9,7 @@
 @import "../../immersive-stories/less/lity.less";
 @import "../../immersive-stories/less/slideshow.less";
 
-//@foster: "../../immersive-stories/img/foster-school";
+@foster: "../../immersive-stories/img/foster-school";
 @enviro: "../../immersive-stories/img/environment";
 @img: "../../immersive-stories/img";
 
@@ -57,7 +57,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(~"100vh - 171px");
+    height: calc(~"100vh - 171px"); //full height - header
     // background-image: url("@{foster}/yesenia.jpg");
     .background-cover(cover);
     background-position: center center;
@@ -271,7 +271,6 @@ p {
             }
         }
 
-
     }      //  (min-width: 600px) 
     @media @tablet-portait-only { 
          // background-image: url("@{foster}/yesenia-tablet.jpg");
@@ -392,6 +391,29 @@ p {
 
 }
 
+.text-block {
+    .copy {
+        h2, h3 {
+            color: @darkgold;
+            text-transform: uppercase;
+        }
+        .box-page-break {
+            text-align: center;
+            margin: -100px auto 100px;
+            span {
+                display: inline-block;
+                padding: 10px;
+                border: 2px solid @purple;
+                background-color: white;
+            }
+        }
+    }
+    &.border-top-overlap {
+        border-top: 1px solid @purple;
+        margin-top: 70px;
+    }
+}
+
 // Pause button
 
 #pause {
@@ -436,6 +458,297 @@ p {
             outline-width: 5px;
         }
     }
+}
+
+.bus-map {
+    height: 61vw;
+    background-image: url("@{enviro}/map.jpg");
+    .background-cover(cover);
+    position: relative;
+    margin-top: -22vw;
+    margin-bottom: 10px;
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    svg {
+        width: 100%;
+        height: 61vw;
+        display: block;
+    }
+    .path {
+      stroke-dasharray: 1700;
+      -webkit-filter: drop-shadow( -5px -5px 5px #000 );
+              filter: drop-shadow( -5px -5px 5px #000 );
+     // stroke-dashoffset: 1300;
+     // animation: dash 5s linear alternate infinite;
+    }
+    .miles {
+        position: absolute;
+        left: 50%;
+        margin-left: -66px;
+        min-width: 132px;
+        bottom: 12%;
+        z-index: 1;
+        padding: 20px 0;
+        text-align: center;
+        p {
+            color: white;
+            font-weight: bold;
+            margin: 0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8)
+        }
+        #counter {
+            font-size: 2em;
+            font-family: @headline;
+            font-weight: @ultra;
+            color: @lightgold;
+            line-height: 1;
+        }
+    }
+    @media @phone-only {  //  (max-width: 599px)  
+        margin-top: -15vw;
+        svg > g:nth-of-type(1) {
+            transform: scale(2.4);
+            transform-origin: right bottom;
+        }        
+        svg > g:nth-of-type(2) {
+            transform: scale(2.4);
+            transform-origin: left bottom;
+        }
+        
+    }                      
+    @media @tablet-portrait-up { //  (min-width: 600px) 
+        .miles {
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            #counter {
+                font-size: 4em;
+            }
+        }
+    }      
+    // @media @tablet-portait-only { }     //  (min-width: 600px) and (max-width: 899px) 
+    // @media @tablet-landscape-up { }     //  (min-width: 900px)
+    // @media @tablet-landscape-only { }   //  (min-width: 900px) and (max-width: 1199px) 
+    // @media @desktop-up { }              //  (min-width: 1200px)     
+    // @media @desktop-only { }            //  (min-width: 1200px) and (max-width: 1799px)"     
+    // @media @big-desktop-up { }          //  (min-width: 1800px)     
+        
+}
+
+.bus {
+    // .background-cover(cover);
+    // background-position: right center;
+    margin-top: -41vw;
+    height: 41vw;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    border-bottom: 10px solid @darkgold;
+    .copy {
+        z-index: 1;
+        position: relative;
+    }
+    video {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        min-width: 100%;
+        left: 0;
+        z-index: 0;
+        min-height: 100%;
+    }
+    p {
+        font-family: @uni;
+        color: white;
+        line-height: 1.4;    
+        text-transform: uppercase;
+        font-size: 3em;
+        padding: 17vw 72px 17vw 0;
+        position: relative;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        span {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-size: 0.5em
+        }
+        &:after, 
+        &:before {
+            content: '';
+            display: block;
+            width: 30%;
+            position: absolute;
+            height: 20px;
+            background: url("@{enviro}/squiggle.svg") no-repeat;
+            .background-size(contain);
+        }
+        &:before {
+            left: 35%;
+            top: 12vw;
+        }
+        &:after {
+            bottom: 10vw;
+            right: 35%;
+        }
+    }
+    @media @phone-only {
+        // background-image: url("@{foster}/bus-ride-mobile.jpg");
+        background-color: black;
+        video {
+
+            opacity: .5;
+        }
+    }              //  (max-width: 599px)          
+    @media @tablet-portrait-up {
+        // background-image: url("@{foster}/bus-ride.jpg");
+        p {
+            font-size: 3em;
+            padding: 7vw 0;
+            &:before {
+                left: 35%;
+                top: 5vw;
+            }
+            &:after {
+                bottom: 5vw;
+                right: 35%;
+            }
+        }
+     }      //  (min-width: 600px) 
+    @media @tablet-portait-only {
+        background-color: black;
+        video {
+
+            opacity: .5;
+        }
+    }     //  (min-width: 600px) and (max-width: 899px) 
+    // @media @tablet-landscape-up { }     //  (min-width: 900px)
+    // @media @tablet-landscape-only { }   //  (min-width: 900px) and (max-width: 1199px) 
+    // @media @desktop-up { }              //  (min-width: 1200px)     
+    // @media @desktop-only { }            //  (min-width: 1200px) and (max-width: 1799px)"     
+    // @media @big-desktop-up { }          //  (min-width: 1800px)     
+}
+
+.full-image-section {
+    width: 100vw;
+    height: 100vh;
+    border-bottom: 10px solid @darkgold;
+    background-image: url("@{enviro}/student-valley.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    .background-cover(cover);
+    div {
+        margin-top: 10%;
+        padding: 50px 80px;
+        background: rgba(0,0,0,0.4);
+        p {
+            color: white;
+            font-size: 16px;
+            //font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.55);
+            text-align: center;
+            &.pull-text {
+                font-family: @headline;
+                line-height: 1.4;    
+                text-transform: uppercase;
+                font-size: 1.2em;
+                padding-top: 40px;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+                position: relative;
+                &:before {
+                    content: '';
+                    display: block;
+                    width: 50%;
+                    position: absolute;
+                    height: 20px;
+                    left: 25%;
+                    top: 0;
+                    background: url("@{enviro}/squiggle.svg") no-repeat;
+                    .background-size(contain);
+                }
+            }
+        }
+    }
+}
+
+// Transition of photos section
+
+// .transSection {
+//     width: 100%;
+//     height: 50vw;
+//     position: relative;
+//     margin:3vw 0 7vw 0;
+
+//     & > div {
+//         position: absolute;
+//         left: 0;
+//         top: 0;
+//         bottom: 0;
+//         width: 100%;
+//         .background-cover(cover);
+//     }
+//     p {
+//         background-color: rgba(0, 0, 0, 0.84);
+//         padding: 11px 25px 10px 25px;
+//         font-size: 13px;
+//         line-height: 1.3;
+//         color: white;
+//         bottom: 0;
+//         margin: 0;
+//         left: -10px;
+//         position: absolute;
+//         display: inline-block;
+//     }
+//     #photo-1 {
+//         background-image: url("@{ica}/photo-2.jpg");
+//         background-position: center center;
+//     }
+//     #photo-2 {
+//         .background-cover(cover);
+//         background-image: url("@{ica}/photo-1.jpg");
+//         background-position: center center;
+//     }
+//     &.bottom-map {
+//         .background-cover(cover);
+//         background-image: url("@{ica}/MAP_V.4.jpg");
+//         height: 0;
+//         width: 100%;
+//         padding-bottom: 51.5vw;
+//         margin-bottom: 0;
+//     }
+//     @media @tablet-portrait-up { 
+//         margin: 2vw 0 7vw 0;
+//         p {
+//             background-color: rgba(232, 227, 211, 0.21);
+//             max-width: 50%;
+//             .skew(-15deg,0);
+//             font-size: 14px;
+//             span {
+//                 display: inline-block;
+//                 .skew(15deg,0);
+//             }
+//         }
+//     }
+//     @media @phone-only {
+//         &.mentors-caption {
+//             margin: 3vw 0 28vw 0;
+//             overflow: visible;
+//             p {
+//                 top: 99%;
+//                 bottom: inherit;
+//             }
+//         }
+//     }
+// }
+
+ @media @tablet-portrait-up { 
+
+    .text-block .copy.reduced-pad {
+        padding: 50px 90px 40px 90px;
+    }
+
+
 }
 
 

@@ -1,7 +1,7 @@
 $(function(){
 
   var body = document.getElementsByTagName('body')[0];
-  var controllerBuilt = new ScrollMagic.Controller();
+  var controllerEnviro = new ScrollMagic.Controller();
   var slideshowFlag = true;
   var $windowHeight = $(window).height();
 // detect if mobile browser. regex -> http://detectmobilebrowsers.com
@@ -10,7 +10,7 @@ $(function(){
 
 
 
-  currentController = controllerBuilt;
+  currentController = controllerEnviro;
 
     // var introMedicine = new ScrollMagic.Scene({
     //   triggerElement: '#intro-vid',
@@ -28,6 +28,38 @@ $(function(){
     //     introMedicine.update(true);
     // });
 
+
+// Map
+
+    var strokeLength = Math.round(document.querySelector('.path').getTotalLength() * 1.0),
+        strokeDashoffset = strokeLength,
+        miles = document.getElementById('counter'),
+        $busMapHeight = $(".bus-map").height();
+
+    function applyStroke() {
+      TweenMax.set($(".path"), { strokeDashoffset:strokeDashoffset });
+    }
+
+    var tl2 = new TimelineMax();
+        tl2.to($(".bus-map"), 4, { onUpdate:applyStroke })
+
+    var map = new ScrollMagic.Scene({
+        triggerElement: ".bus-map",
+        duration: $windowHeight - ($busMapHeight * 0.6),
+        offset: $busMapHeight * 0.6,
+        triggerHook: 1,
+        reverse: true
+    })
+    .setTween(tl2)
+    .on('progress', function(e){
+      strokeDashoffset = (1 - e.progress) * strokeLength;
+      miles.innerHTML = Math.round(e.progress * 144);
+    })
+    .addTo(currentController);
+    $(window).resize(function(){
+        map.duration($(window).height());
+        map.update(true);
+    });
 
   // $( document )
   //   .on( "mousemove", ".para", function( event ) {
@@ -74,20 +106,20 @@ $(function(){
 
     // Parallax photos 
 
-    // var delacruzAnimation = new TimelineMax ()
-    //       .add([
-    //         TweenMax.to('#photo-2', 1,    {  opacity: 0, ease: Power0.easeIn, delay: 0.0 }),
-    //         TweenMax.to('#fade-text', 1,    {  opacity: 1, ease: Power0.easeIn, delay: 0.0 })
-    //       ])
-    // var transHeight = -$('.transSection').height();
+    var delacruzAnimation = new TimelineMax ()
+          .add([
+            TweenMax.to('#map-animation', 1,    {  opacity: 0, ease: Power0.easeIn, delay: 0.0 }),
+            TweenMax.to('#drone-vid', 1,    {  opacity: 1, ease: Power0.easeIn, delay: 0.0 })
+          ])
+    var transHeight = -$('#drone-vid').height();
 
-    // var martez = new ScrollMagic.Scene({
-    //   triggerElement: '.transSection',
-    //   triggerHook: 0.5,
-    //   duration:  '45%',
-    // })
-    // .setTween(delacruzAnimation)
-    // .addTo(controllerBuilt)
+    var martez = new ScrollMagic.Scene({
+      triggerElement: '#drone-vid',
+      triggerHook: 0.3,
+      duration:  '25%',
+    })
+    .setTween(delacruzAnimation)
+    .addTo(currentController)
 
     // Parallax photos 
 
