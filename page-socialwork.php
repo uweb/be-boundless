@@ -1,248 +1,212 @@
-<?php get_header( "campaign-open" ); ?>
-<link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />
-<link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
-<link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/socialwork.css' ?>' type='text/css' media='all' />
-<?php get_header( "campaign-close" ); ?>
+<?php
+	$meta = '';
+	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/socialwork.css' type='text/css' media='all' />";
+	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/socialwork.min.js' type='text/javascript'></script>";
+	$storyCodes = 'ESIEND';
+	$storyAppeal = 'Your support of students like Stephan Blount and programs like Communities That Care propels our global community forward, giving all children the chance to reach their fullest potential.';
+	get_header( "campaign-v2" );
+?>
+
 <div id="immersive-body">
 	<section class="intro" id="intro-vid">
 		<div class="intro-body">
 			<div class="row">
-				<div class="col-md-6 col-lg-7 col-md-offset-1 col-xs-8 col-lg-offset-2 col-xs-offset-1" id='intro-text'>
-					<!--<h1><span><span>Where Will </span></span><span><span>Meets Way</span></span> </h1>-->
-					<h1>SOCIAL WORK</h1>
+				<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-1 col-md-offset-1 col-lg-offset-2" id='intro-text'>
+					<h1>Creating communities that care</h1>
 					<span class="udub-slant"><span></span></span>
-					<p>For Yakima-born Yesenia Velasquez, the Young Executives of Color program at the Foster School of Business has opened the door to a promising future she never knew existed.</p>
-					<a data-lity href="https://www.youtube.com/embed/LB6eMB4g2B0?autoplay=1&rel=0&showinfo=0">
-						<svg xmlns="http://www.w3.org/2000/svg" width="75.649" height="75.625" viewBox="0 0 75.649 75.625">
-							<circle fill="none" stroke="#FFF" stroke-width="4.649" stroke-miterlimit="10" cx="37.785" cy="37.822" r="34.703"/>
-							<path fill="#FFF" d="M25.88 19.814l32.885 18.008-32.886 18.01"/>
-						</svg>
-						<!-- </svg> -->
-						<p>See Yesenia&rsquo;s story</p>
-					</a>
-				</div>
-			</div>
-		</div>
+					<p>In communities across Seattle, students from the UW School of Social Work are working to increase the chance of young people to achieve success.</p>
+				</div><!-- .col-xs-8 .col-sm-8 .col-md-8 .col-lg-8 .col-xs-offset-1 .col-md-offset-1 .col-lg-offset-2 #intro-text -->
+			</div><!-- .row -->
+		</div><!-- .intro-body -->
 		<section class="scrollit read-more">
 			<p>Scroll Down</p>
-				<div class="mouse">
-					<div class="scroll"></div>
-			</div>
-		</section>
-	</section>
+			<div class="mouse">
+				<div class="scroll"></div>
+			</div><!-- .mouse -->
+		</section><!-- .scrollit .read-more -->
+	</section><!-- .intro #intro-vid -->
 	<main id="main_content">
 		<section class="text-block start white">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
-						<p class="bolder"><b>From her first day of kindergarten, Yesenia Velasquez knew that she would have to work harder than the other kids.</b></p>
-						<p>She started school without many advantages, save for wit and genuine grit. Her parents had immigrated to the Yakima Valley from Jalisco, Mexico, before she was born. To make a life in the United States, they worked hard at thankless jobs &mdash; Gonzalo forged bricks and Catalina packed produce.</p>
-						<p>But they wanted more for their three daughters.</p>
-						<p>“My parents always taught me that education is the key to success,” says Velasquez. “That’s what made me an independent learner. I’ve always craved education.”</p>
-					</div>
-				</div>
+						<p>Stephan Blount stands before a group of Madrona Elementary sixth-graders eager to be set free after sitting in classrooms all day. On this particular afternoon, he’s teaching these young students about the best and worst ways to communicate.</p>
+						<p>“Let’s try a game,” Blount tells them, and the children’s faces light up instantly. “Everyone get in a circle. I’m going to whisper something in the ear of one of you. I want you to whisper that to the next person. When it’s gone around the circle, we’ll check how close it is to what we started with.”</p>
+						<p>It may seem simple — but through games like this one, Blount, a second-year master’s candidate at the University of Washington School of Social Work, is working to change outcomes for youth through the principles of a program developed at the UW. It’s called Communities That Care (CTC), and its evidence-based content is now used around the world.</p>
+					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</section><!-- .text-block .start .white -->
+		<section class="text-block profile white">
+			<div class="background"></div>
+			<div class="text">
+				<p class="name">STEPHAN BLOUNT</p>
+				<p class="title">Master’s Candidate,<br />School of Social Work</p>
 			</div>
-		</section>
-		<section class="profile profile-1">
-			<div class="text-block">
-				<!-- <img alt="Photo of Yesenia Velasquez" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/portrait-yesenia.jpg' ?>"> -->
-				<div class="cutout"><div></div></div>
-				<div class="copy">
-					<p>Yesenia Velasquez</p>
-					<blockquote><span>&ldquo;</span>My parents always taught me that education is the key to success. That’s what made me an independent learner. I’ve always craved education.<span>&rdquo;</span></blockquote>
-				</div>
-			</div>
-		</section>
-		<section class="text-block transparent">
+			<div class="photograph"></div>
+		</section><!-- .profile .profile-1 -->
+		<section class="text-block white">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
-						<p>That craving eventually led her to participate in the rigorous Running Start program in high school. The flexible schedule allowed her to work longer shifts at McDonald’s, where she earned enough to afford some of the “extras” that many teenagers take for granted: school clothes, textbooks, band travel, graphing calculators.</p>
-						<p>But no matter how much she learned or how well she did in school, college looked no less expensive or intimidating to Velasquez. Besides, what would she study? Growing up in a working-class Hispanic community, she saw most career possibilities as abstract at best. Maybe law or medicine? She had never even heard of accounting.</p>
-						<p>Then she discovered the Young Executives of Color (YEOC) program at the University of Washington Foster School of Business.</p>
-						<div id="eng-slideshow" class="foster-slideshow">
-							<div>
-								<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-3.jpg' ?>" alt="Velasquez with one of her two younger sisters" />
-								<p>Yesenia (right) Velasquez with one of her two younger sisters, Diana Guadalupe, at their childhood home in Yakima.</p>
-							</div>
-							<div>
-								<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-1.jpg' ?>" alt="Yesenia’s parents" />
-								<p>Yesenia’s parents, Catalina and Gonzalo Velasquez, at the plaza in Tepatitlán de Morelos, Jalisco, Mexico.</p>
-							</div>
-							<div>
-								<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-6.jpg' ?>" alt="Yesenia with others from her soccer team" />
-								<p>Yesenia (far right) with others from her soccer team, the Shooting Stars, after a game in the Tri-Cities. “That’s where my dad’s pride would come out a lot — he loves soccer,” says Yesenia.</p>
-							</div>
-						</div>
-						<h3>Ambition unlocked</h3>
-						<p>A partnership between the Foster School and the professional services firm EY (formerly Ernst &amp; Young), YEOC is a nine-month program that provides an introduction to business careers, professional development, college preparation and mentoring to some of the most promising high school students from underrepresented minority communities around the state. The goal is to unlock potential, offer opportunity and, ultimately, to expand prosperity.</p>
-						<p>One Saturday each month throughout her senior year, Velasquez woke up at 4 a.m. to make the several-hour journey to Seattle, sometimes escorted by her family, sometimes alone on the bus. These treks were richly rewarded with practical information and profound inspiration.</p>
-						<p>“No matter the trouble to get there,” she says, “it was worth it.”</p>
-						<p>Hearing stories from each session’s featured speaker &mdash; senior executives who look like and come from similar backgrounds as many of the students &mdash; Velasquez began to visualize what she could become. Even the location stirred the soul.</p>
-						<p>Her first YEOC session was the first time she’d visited a college campus. &ldquo;It was amazing,&rdquo; she recalls. &ldquo;Walking into the giant atrium of PACCAR Hall and thinking, &lsquo;OK, this is possible. I can see myself here.&rsquo;&rdquo;</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="bus-map">
-			<svg aria-hidden="true" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1500px" height="916px" viewBox="0 0 1500 916" enable-background="new 0 0 1500 916" xml:space="preserve">
-				<path class="path" style="stroke-dashoffset: 1600px;" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M1247.608,823.186l-3.04-5.742c0,0,0.677-4.729,2.027-4.729s4.391,1.014,4.729,0s4.392-6.418,5.742-8.782s2.702-3.716,4.729-2.702
-s7.431-0.675,10.809-1.688s3.378-1.352,6.418-3.378s4.053-5.066,7.769-5.404s6.08-2.027,8.444-3.378s3.377-3.377,7.093-4.391
-s3.716-3.716,3.716-3.716s-4.053-4.392-2.364-5.742s6.417-3.716,6.755-8.106s-1.014-7.094,0.338-8.106s-0.676-7.431-2.702-7.431
-s-7.432-3.715-8.782-4.729s-14.187-5.405-18.239-7.77s-8.781-3.378-12.159-4.729s-6.757-2.026-10.472-4.729
-s-18.238-8.782-27.696-8.444s-17.228-6.418-18.24-10.809s-6.418-8.106-16.551-8.444s-21.617-5.404-27.359-7.431
-s-11.822-9.458-19.591-10.809s-16.214-5.743-22.631-6.418s-19.59-3.715-23.306-4.391s-7.769-3.715-10.471-4.729
-s-11.147-3.04-14.862-2.702s-5.741-2.028-9.457-4.729s-15.538-5.404-17.902-5.404s-4.729-1.352-8.783-5.405
-s-2.364-6.755-11.484-7.769s-1.013-0.339-12.497-1.689s-18.579-2.702-27.022-5.404s-22.968-3.378-31.074-2.702
-s-20.604,1.352-30.062,0.676s-12.161-0.675-20.604-4.053s-19.252-5.066-24.994-5.066s-14.188-2.366-21.28-4.73
-s-9.457-4.391-17.226-6.417s-27.022-4.392-31.413-4.392s-15.537-3.715-16.213-6.417s-11.485-7.431-17.227-8.106
-s-7.769-4.053-13.173-5.742s-11.484-2.026-13.849-8.444s-1.35-8.106-8.781-8.106s-8.106,0.675-8.782-3.716s-3.715-5.065-8.106-3.715
-s-22.294,8.78-35.805,7.092s-23.645-0.676-30.399-2.702s-20.265-6.08-32.763-6.08s-23.645-4.391-28.373-4.391
-s-21.279-8.782-29.724-8.106s-20.604-1.013-25.671-4.391s-10.808-5.067-17.226-5.067s-19.252,0-24.319,0.338
-s-18.915-4.053-30.062-6.417s-17.564-1.689-22.631-0.676s-20.941-1.013-29.724-4.391s-12.498-5.066-17.902-5.404
-s-11.146-1.014-16.213-0.676s-16.212,0.674-26.008-0.339s-18.916-5.066-25.671-4.729s-19.252,2.026-23.306,0
-s-4.054-2.026-4.054-2.026"/>
-				<g>
-					<path fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" d="M1259.377,826.684
-c-0.55-2.579-4.976-4.536-9.931-4.638l0,0c-4.951-0.099-9.455,1.669-10.115,4.227l0,0c-0.752,2.911,3.64,5.681,9.9,5.811l0,0
-C1255.496,832.214,1259.997,829.622,1259.377,826.684L1259.377,826.684z"/>
-					<line fill="none" stroke="#4C2E82" stroke-width="1.9032" stroke-linecap="round" stroke-miterlimit="10" x1="1248.992" y1="778.213" x2="1248.992" y2="826.506"/>
-					<polygon fill="#4C2E82" points="1182.854,809.262 1249.24,809.262 1249.24,784.021 1175.56,784.021  "/>
-					<g>
-						<path fill="#FFFFFF" d="M1195.322,798.19l-3.099-5.564h2.673l1.233,2.477l0.349,0.896h0.109l0.338-0.896l1.244-2.477h2.651
-l-3.044,5.488v2.586h-2.455V798.19z"/>
-						<path fill="#FFFFFF" d="M1199.697,800.58l2.488-7.954h3.644l2.488,7.954v0.12h-2.368l-0.491-1.647h-2.913l-0.479,1.647h-2.368
-V800.58z M1204.924,797.187l-0.338-1.2l-0.48-1.69h-0.196l-0.491,1.713l-0.327,1.178H1204.924z"/>
-						<path fill="#FFFFFF" d="M1208.929,792.626h2.454v3.077h0.906l1.571-3.077h2.717l-2.019,3.514l-0.633,0.294v0.099l0.654,0.306
-l2.193,3.862h-2.717l-1.626-3.12h-1.048v3.12h-2.454V792.626z"/>
-						<path fill="#FFFFFF" d="M1217.308,792.626h2.454v8.074h-2.454V792.626z"/>
-						<path fill="#FFFFFF" d="M1221.104,792.626h3.35l1.2,3.284l0.414,1.626h0.065l0.426-1.626l1.2-3.284h3.339v8.074h-2.16v-5.423
-h-0.099l-0.665,2.183l-1.103,2.913h-1.942l-1.102-2.913l-0.666-2.183h-0.098v5.423h-2.16V792.626z"/>
-						<path fill="#FFFFFF" d="M1231.71,800.58l2.488-7.954h3.644l2.488,7.954v0.12h-2.368l-0.491-1.647h-2.913l-0.479,1.647h-2.368
-V800.58z M1236.937,797.187l-0.338-1.2l-0.48-1.69h-0.196l-0.491,1.713l-0.327,1.178H1236.937z"/>
-					</g>
-				</g>
-				<g>
-					<path fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" d="M320.875,508.553
-c-0.55-2.579-4.976-4.536-9.931-4.638l0,0c-4.951-0.099-9.455,1.669-10.115,4.227l0,0c-0.752,2.911,3.64,5.681,9.9,5.811l0,0
-C316.995,514.083,321.496,511.491,320.875,508.553L320.875,508.553z"/>
-					<line fill="none" stroke="#4C2E82" stroke-width="1.9032" stroke-linecap="round" stroke-miterlimit="10" x1="310.427" y1="460.49" x2="310.427" y2="508.782"/>
-					<polygon fill="#4C2E82" points="386.526,491.538 310.62,491.538 310.62,466.299 393.819,466.299   "/>
-					<g>
-						<path fill="#FFFFFF" d="M327.303,483.105c-0.233,0-0.482-0.007-0.748-0.021s-0.538-0.038-0.818-0.071
-c-0.28-0.032-0.558-0.069-0.834-0.109c-0.276-0.039-0.539-0.089-0.786-0.146v-1.965c0.589,0.132,1.124,0.231,1.604,0.301
-s0.927,0.104,1.342,0.104c0.437,0,0.744-0.04,0.922-0.12c0.178-0.08,0.267-0.215,0.267-0.403c0-0.211-0.1-0.366-0.3-0.464
-c-0.2-0.099-0.515-0.177-0.944-0.235c-0.458-0.065-0.864-0.161-1.217-0.289c-0.353-0.127-0.649-0.298-0.889-0.513
-c-0.24-0.214-0.42-0.476-0.54-0.785s-0.18-0.679-0.18-1.107c0-0.786,0.304-1.396,0.911-1.833s1.457-0.655,2.548-0.655
-c0.189,0,0.376,0.006,0.562,0.017c0.185,0.011,0.385,0.029,0.6,0.055c0.214,0.025,0.447,0.058,0.698,0.099
-c0.251,0.04,0.536,0.093,0.856,0.158v1.941c-0.189-0.058-0.389-0.108-0.6-0.152s-0.424-0.082-0.638-0.114
-c-0.215-0.033-0.426-0.059-0.633-0.077c-0.208-0.018-0.398-0.027-0.573-0.027c-0.778,0-1.167,0.179-1.167,0.535
-c0,0.232,0.109,0.411,0.328,0.534c0.218,0.124,0.567,0.226,1.047,0.306c0.458,0.08,0.854,0.184,1.189,0.312
-c0.334,0.127,0.612,0.285,0.834,0.475c0.222,0.188,0.387,0.416,0.497,0.682c0.109,0.266,0.164,0.576,0.164,0.933
-C330.806,482.226,329.638,483.105,327.303,483.105z"/>
-						<path fill="#FFFFFF" d="M331.711,474.9h6.329v1.877h-3.874v1.222h3.458v1.877h-3.458v1.211h3.982v1.888h-6.438V474.9z"/>
-						<path fill="#FFFFFF" d="M338.454,482.854l2.488-7.954h3.645l2.487,7.954v0.12h-2.368l-0.491-1.647h-2.914l-0.48,1.647h-2.368
-V482.854z M343.681,479.461l-0.338-1.2l-0.48-1.69h-0.196l-0.491,1.713l-0.327,1.178H343.681z"/>
-						<path fill="#FFFFFF" d="M348.667,476.788h-2.193V474.9h6.841v1.888h-2.193v6.187h-2.455V476.788z"/>
-						<path fill="#FFFFFF" d="M355.944,476.788h-2.193V474.9h6.841v1.888h-2.193v6.187h-2.455V476.788z"/>
-						<path fill="#FFFFFF" d="M361.476,474.9h2.455v6.197h3.317v1.877h-5.772V474.9z"/>
-						<path fill="#FFFFFF" d="M368.055,474.9h6.329v1.877h-3.874v1.222h3.458v1.877h-3.458v1.211h3.982v1.888h-6.438V474.9z"/>
-					</g>
-				</g>
-			</svg>
-			<div class="miles">
-				<p id="counter"></p><p> Miles</p>
-			</div>
-		</section>
-		<section class="text-block bus arrow">
-			<div class="col-md-5 col-md-offset-6 col-xs-10 col-lg-offset-6 col-xs-offset-1 copy">
-				<p>Yesenia woke up at 4 a.m. to make the several-hour journey to Seattle, sometimes escorted by her family, sometimes alone on the bus.</p>
-			</div>
-			<video autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/bus2.jpg' ?>" class=" fullscreen-bg__video">
-				<!-- <source src="img/street-bw-webm.webm" type="video/webm"> -->
-				<source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/foster-school/bus2.mp4' ?>" type="video/mp4">
-				<source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/foster-school/bus2.webm' ?>" type="video/webm">
-			</video>
-		</section>
-		<section class="text-block white transparent">
+						<h3>Changing futures, one student at a time</h3>
+						<p>For his social work practicum, Blount is helping implement CTC principles through Communities in Action, a program where Seattle residents come together to increase protective factors and reduce risk factors to promote healthy child development.</p>
+						<p>Along with fellow UW master’s candidates Kelley Pascoe and Eric Agyemang, Blount is teaching students from schools in southeast and central Seattle.</p>
+						<p>“We’re working to deliver life skills training to middle schoolers,” Blount explains. “Our part began after a group of agencies came together to address things in their communities affecting their youth that they wanted to work through.”</p>
+					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</section><!-- .text-block white -->
+		<section id="video" class="text-block black">
+			<iframe width="1280" height="720" src="https://www.youtube.com/embed/QI50yL8rAIU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		</section><!-- #video .text-block .white -->
+		<section id="inforgraphics" class="text-block white">
+			<div id="slide1" class="infographic slide1">
+				<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/SocialDev_graphic-v8-01.png" />
+			</div><!-- .infographic .slide1 -->
+			<div id="slide2" class="infographic slide2">
+				<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/SocialDev_graphic-v8-02.png" />
+			</div><!-- .infographic .slide2 -->
+			<div id="slide3" class="infographic slide3">
+				<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/SocialDev_graphic-v8-03.png" />
+			</div><!-- .infographic .slide3 -->
+			<div id="slide4" class="infographic slide4">
+				<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/SocialDev_graphic-v8-04.png" />
+			</div><!-- .infographic .slide4 -->
+			<div id="slide5" class="infographic slide5">
+				<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/SocialDev_graphic-v8-05.png" />
+			</div><!-- .infographic .slide5 -->
+		</section><!-- #inforgraphics .text-block .white -->
+		<section class="text-block white">
 			<div class="container">
+				<div class="row">
+					<div class="col-md-5 col-md-offset-1 two-column-copy-left">
+						<p>Communities in Action began in 2013, when more than 2,300 students in grades six, eight, 10 and 12 responded to a survey about the challenges in their daily lives. Like CTC’s data, the results showed that the students faced bullying, fighting, drug use and depression.</p>
+						<p>Margaret Spearmon, Ph.D., chief officer of Community Engagement and Diversity at the School of Social Work, oversees Communities in Action with project manager Vaughnetta J. Barton, M.S.W. Their goal is to help communities use data about their youth to make informed decisions on how to meet kids’ needs — and develop a plan of action to meet those needs. While the communities drive the plan, local organizations and schools put it in play.</p>
+					</div><!-- .col-md-5 .col-md-offset-1 .two-column-copy-left -->
+					<div class="col-md-5 two-column-copy-right">
+						<div class="pull-quote">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/foster-school/paccar.jpg" alt="Photograph of Margaret Spearmon, Ph.D." class="img-inset pull-left" />
+							<p class="meta">
+								<span class="name">Margaret Spearmon, Ph.D.</span><br />
+								<span class="title">Chief Officer of Community Engagement and Diversity, School of Social Work</span>
+							</p>
+							<div class="clearfix"></div>
+							<p class="quote">“The most exciting part about partnering with the UW to implement Communities in Action has been having the opportunity to work with knowledgeable, creative and talented partners who are committed to excellence in promoting healthy youth development through prevention programs.”</p>
+						</div><!-- .pull-quote -->
+						<div class="pull-quote">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/foster-school/paccar.jpg" alt="Photograph of Vaughnetta Barton, M.S.W." class="img-inset pull-left" />
+							<p class="meta">
+								<span class="name">Vaughnetta Barton, M.S.W.</span><br />
+								<span class="title">Project Manager, Communities in Action, School of Social Work</span>
+							</p>
+							<div class="clearfix"></div>
+							<p class="quote">“Community-based initiatives are about empowerment. When communities use their own voice and data to identify challenges and make decisions about what they need to do, they are empowered and real change happens.”</p>
+					</div><!-- .col-md-5 .two-column-copy-right -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</section><!-- .text-block white -->
+		<section class="text-block grey">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 col-md-offset-1 two-column-copy-left">
+						<blockquote>
+							<p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam.</p>
+							<cite>
+								<p>
+									<span>Keley Pascoe</span><br />
+									Master’s Candidate,<br />
+									School of Social Work
+								</p>
+							</cite>
+						</blockquote>
+					</div><!-- .col-md-5 .col-md-offset-1 .two-column-copy-left -->
+					<div class="col-md-5 two-column-copy-right">
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/foster-school/yesenia-cutout.jpg" />
+					</div><!-- .col-md-5 .two-column-copy-right -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</section><!-- .text-block white -->
+		<section class="text-block grey">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 col-md-offset-1 two-column-copy-left">
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/foster-school/yesenia-cutout.jpg" />
+					</div><!-- .col-md-5 .col-md-offset-1 .two-column-copy-left -->
+					<div class="col-md-5 two-column-copy-right">
+						<blockquote>
+							<p class="quote">Students have gained a lot of tools on decision making and self-image, and this will go a long way to help them make good decisions in their daily lives and become responsible citizens.</p>
+							<cite>
+								<p>
+									<span>Eric Agyemang</span><br />
+									Master’s Candidate,<br />
+									School of Social Work<br />
+									Supported by TBD, Frances M. Burnley Endowed Scholarship and the Excellence in Social Impact Endowed Scholarship
+								</p>
+							</cite>
+						</blockquote>
+					</div><!-- .col-md-5 .two-column-copy-right -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</section><!-- .text-block white -->
+		<section class="text-block giving-widget-promoted">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-lg-8 col-md-offset-1 col-lg-offset-1">
+						<h3>You can help today’s youth</h3>
+						<p>By supporting the efforts of students like Stephan Blount, you can help children access a brighter future for themselves and their communities.</p>
+						<div class="visible-md-block visible-lg-block">
+							<div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="<?php echo $storyCodes; ?>" href="#giving-widget-promoted">Give now</a></span></div>
+							<button id="close-give">Close</button>
+							<div id="immersive-give-iframe-promoted"></div>
+						</div><!-- .visible-md-block .visible-lg-block -->
+						<div class="visible-xs-block visible-sm-block">
+							<div class="boundless-button sm dark give"><span><a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=3&source=<?php echo $storyCodes; ?>">Give now</a></span></div>
+						</div><!-- .visible-xs-block .visible-sm-block -->
+					</div><!-- .col-md-8 .col-lg-8 .col-md-offset-1 .col-lg-offset-1 .copy -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</section><!-- .text-block gold -->
+		<section class="text-block white">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 col-md-offset-1 two-column-copy-left">
+						<h3>Inspired by his mother</h3>
+						<p>Communities That Care is close to Blount’s heart. He was born to a 16-year-old single mother in Anchorage, Alaska, and during his childhood they often relied on outside assistance to cope with the challenges of everyday life.</p>
+						<p>“My mom was so young when she had me,” he says. “We had a lot of help from human service agencies while I was growing up. It taught me the importance of that type of work, and it gave me a lot of empathy for others facing similar challenges.”</p>
+						<p>It also gave him a direction in life: social work. To support himself while earning an undergraduate degree in human services at the University of Alaska, Blount took a job working in a group home for adults with developmental disabilities.</p>
+						<p>“It was just such cool work,” he says. “One resident at the group home was around my age. I could see how he became more independent when you gave him opportunities to do so.”</p>
+					</div><!-- .col-md-5 .col-md-offset-1 .two-column-copy-left -->
+					<div class="col-md-5 two-column-copy-right">
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/foster-school/yesenia-cutout.jpg" class="two-column-image-margin" />
+					</div><!-- .col-md-5 .two-column-copy-right -->
+				</div><!-- .row -->
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
-						<div class="inset-pics">
-							<div><img alt="Yesenia studying" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/paccar.jpg' ?>" /></div>
-							<div><img alt="Yesenia working" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/studying-3.jpg' ?>" /></div>
-							<div><img alt="Students talking" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/talking-2.jpg' ?>" /></div>
-						</div>
-						<h3>Making the most of an opportunity</h3>
-						<p> And here she is. Velasquez earned her place at the UW and the Foster School, where she has flourished. With ongoing support from the school’s office of Undergraduate Diversity Services and a mosaic of scholarships — donated by EY, Microsoft and Costco, among other organizations — she has been able to engage fully at the UW and beyond.</p>
-						<p>Velasquez serves in leadership roles at the Association of Latino Professionals for America and in the Kappa Delta Chi cultural sorority. She has also represented the UW at the Indiana University Kelley School of Business National Diversity Case Competition, and she has <a href="http://www.washington.edu/global/opportunities/#yesenia">studied abroad in Morocco</a>.</p>
-						<p>Her Foster education has continued to open doors. Perhaps most significantly, Velasquez landed an internship at EY after her first year on campus. After rotating between the firm’s audit, advisory and tax practices for the past two summers, she is spending this summer as a national tax intern, working with some of EY’s largest clients.</p>
-						<p>“Yesenia brings a can-do positivity that shows up in everything she does,” says EY recruiter Katie Campbell. “She’s already proven herself to be smart, driven and hardworking. We believe she can do anything she sets her mind to.”</p>
-						<h3>From mentee to mentor</h3>
-						<p>Now an incoming senior at the UW with a clear path to success that is unprecedented in her family, Velasquez has returned to YEOC as a mentor. She brings that positivity — and a wealth of wisdom — to high school students searching for their own futures.</p>
-						<p>“Yesenia wants to follow those in front of her and help others behind her,” says Pamela Lacson, associate director of Foster’s Undergraduate Diversity Services. “This is what sets YEOC apart: having mentors who look like her, who provide real answers and real possibilities to young people who have the drive but lack the social capital that comes with a lineage of college education.”</p>
-						<p>Velasquez sees mentoring as the first installment of a lifelong payback plan. From that first day of school, she has remained motivated both by her own expectations and by the pride and pressures of her family. “My parents came from nothing and worked so hard for me to have these opportunities,” she says. “I want to pay them back. I want to make them proud.”</p>
-						<p>Reflecting on her family’s efforts, she muses, “Every now and then, it hits me. I’m in college. I work in a skyscraper. I’ve been to New York and San Francisco and Morocco — all of these things I could never have imagined when I was in middle school. No matter how hard I worked, I wouldn’t be where I am without YEOC.”</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="callout">
-			<div class="text-block">
-				<div class="copy">
-					<img alt="Yesenia smiling" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/yesenia-3.jpg' ?>" />
-					<blockquote><span>&ldquo;</span>No matter how hard I worked, I wouldn’t be where I am without YEOC.<span>&rdquo;</span></blockquote>
-				</div>
-			</div>
-		</section>
-		<section class="text-block white transparent">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1 copy">
-						<h3>YEOC: Mission and history</h3>
-						<p>The Young Executives of Color program was established at the University of Washington Foster School of Business in 2006. Its mission is to cultivate the academic potential of underrepresented high school student leaders in Washington state.</p>
-						<p>YEOC began with 36 students from 17 high schools. In the 2016–17 academic year, the partnership with the professional services firm EY brought 170 sophomores, juniors and seniors from 75 high schools around the state to the Foster campus one Saturday a month.</p>
-						<p>While YEOC helps increase access to excellence at the UW, the pipeline program helps cultivate leaders who attend college all over the state — and the country. Says Lacson, “Historically, 100 percent of our high school seniors have gone on to college. They not only go to the UW, but they are getting into schools across the country. That’s a win for the business community and for college access.” </p>
-						<div style="text-align: center; margin-bottom: 50px"><img width="500" height="200" alt="Since the YEOC program was founded in 2006, 755 students have attended from 155 high schools across Washington State" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/map.png' ?>" /></div>
-						<h3>Fostering diversity</h3>
-						<p>EY doesn’t just underwrite the UW Foster School’s Young Executives of Color program. It also provides volunteers, recruits high-level executives as keynote speakers, delivers professional development exercises and offers invaluable consulting on curriculum, topics and activities.</p>
-						<p>“The mission of YEOC aligns with EY's passion for promoting equity in the workforce — championing diversity and inclusiveness — which is at the very heart of EY's values,” says Christian Tinder, ’99, a principal in EY’s advisory practice and the firm’s coordinating partner with the UW.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="profile profile-2">
-			<div class="text-block">
-				<div class="cutout"><div></div></div>
-				<span><b>Christian Tinder </b>// Principal, EY</span>
-				<div class="copy">
-					<blockquote><span>&ldquo;</span>We are a purpose-driven organization. Our goal is to build a better working world. And part of that goal is building a more diverse working world. Diverse teams are better teams. When we bring diversity — of ethnicity, gender, experience, thought — to the table, we present better solutions to our clients.<span>&rdquo;</span></blockquote>
-				</div>
-			</div>
-		</section>
-		<section class="text-block giving-widget branded arrow">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1 copy ">
-						<div style="text-align: center">
-							<h2 class="headline-gold">What you care about <br>can change the world</h2>
-							<p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. You can help the Foster School of Business and Young Executives of Color transform the lives of more students like Yesenia Velasquez by contributing to these funds.</p>
-							<div id="immersive-give-iframe"></div>
-							<div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="BEDDIS,UNDDIV,ACOUNT,YVBEND,EYEXCL" href="#">Give now</a></span></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- <div id="mapid"></div> -->
-	</main>
+						<h3>A community leader’s perspective</h3>
+						<iframe width="1280" height="720" src="https://www.youtube.com/embed/QI50yL8rAIU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+						<p class="caption">Edith Elion, ’74, ’77, is on the Board Leadership Workgroup for Communities in Action, and is the executive director of the Atlantic Street Center.</p>
+						<h3>Healthy behaviors and hopeful futures</h3>
+						<p>A critical component of the CTC program is that it must develop organically with the help of its stakeholders, rather than be imposed on them by an outside agency that thinks it knows best what a given group needs or wants.</p>
+						<p>In the case of Blount’s group, the agencies involved decided for themselves what outcomes would be most beneficial to the youth in their community, as well as how to get there. The children were then surveyed about what they perceived to be their biggest struggles. Only after that work was complete did the stakeholders choose what to tackle.</p>
+						<p>In the end, they determined that it was critical to help youth resist the lures of underage drinking and smoking — behaviors that put them at risk for delinquency — and instead opt to stay in school and choose peaceful behavior over violence.</p>
+						<p><strong>IMAGE BLOCK</strong></p>
+						<p>Because the CTC program is evidence-based and draws on the strengths of the community it serves, Blount says he’s confident the program will change the outcomes of the sixth-graders he works with.</p>
+						<p>“I’m just implementing what the stakeholders have chosen,” he says. “They’re the experts on what they need.”</p>
+						<p>It’s clear that the model works. In the years since CTC was first implemented, numerous scientific studies have shown just how effective it is. Data from one CTC model shows that youth who participated in the program were 25 to 37 percent less likely to have health and behavior problems like smoking, drug and alcohol use, or delinquency.</p>
+						<p>In addition to improving lives, the program also offers significant cost savings: For every dollar invested in CTC, $5.30 is returned in the form of lower substance abuse and delinquency costs.</p>
+						<p><strong>INFOGRAPHIC</strong></p>
+						<p>Alongside the valuable partnerships with community members, a big part of the success of CTC and Communities in Action has been donor support of scholarships. Blount, Agyemang and Pascoe all received scholarships originating from the Ballmer Endowed Deanship in Social Work. Created by Steve and Connie Ballmer, this gift enables Dean Edwina Uehara to invest in students and programs working in community partnerships.</p>
+						<p>For Blount, this financial support has meant that he can focus time and energy on his studies and the young students he works with. Even more important, it has helped him explore the career he knows he was meant to pursue. “I have always been set on doing some sort of human services or social work,” he says. “I don’t see myself doing anything else.”</p>
+					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</section><!-- .text-block white -->
+	</main><!-- #main_content -->
 	<div id="popup"></div>
-</div>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/animationLibraries.min.js' ?>" type="text/javascript"></script>
-<script src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/js/foster-school.min.js' ?>" type="text/javascript"></script>
-<script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
-<?php get_template_part('footer', 'campaign'); ?>
-</body>
-</html>
+</div><!-- #immersive-body -->
+
+<?php
+	include(locate_template('include-giving.php'));
+	get_template_part('footer','campaign-v2');
+?>
