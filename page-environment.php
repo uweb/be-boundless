@@ -230,19 +230,25 @@
       <div class="student student5"><a href="#student5"><image class="student student5" alt="student five" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait5.png' ?>"></a></div>
       <!-- <div class="student student6"><a href="#student6"><image class="student student6" alt="student six" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait6.png' ?>"></a></div> -->
     </section>
-    <section class="student student1">
+    <section id="student1" class="student student1">
       <div class="name">
         <h3>First</br>Last</h3>
         <p class="major">Major</p>
-        <span class="uw-slant"></span>
+        <span class="udub-slant"><span></span></span>
         <!-- <p>lorem ipsum</p> -->
       </div>
       <div class="quote">
-        <p>"lorem ipsum"</p>
-      <div>
-      <image class="full-student" alt="student one" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/profile1.png' ?>">
+        <blockquote><span>&ldquo;</span>There’s an essence we get to experience in the field that you can’t get by reading papers and being in the classroom<span>&rdquo;</span></blockquote>
+      </div>
+      <image class="full-student" alt="student one" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/profile_1.png' ?>">
     </section>
-    <button id="close-modal" class="close-video">Close</button>
+    <button id="close-modal">
+      Close
+      <svg aria-hidden="true" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34.147px" height="37.833px" viewBox="0 0 34.147 37.833" enable-background="new 0 0 34.147 37.833" xml:space="preserve">
+        <line fill="none" stroke="#A7A9AC" stroke-width="2" stroke-miterlimit="10" x1="9.616" y1="8.449" x2="31.782" y2="30.614"></line>
+        <line fill="none" stroke="#A7A9AC" stroke-width="2" stroke-miterlimit="10" x1="31.782" y1="8.449" x2="9.616" y2="30.614"></line>
+      </svg>
+    </button>
   </section>
 
 

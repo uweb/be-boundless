@@ -643,6 +643,7 @@ p {
         margin-top: 10%;
         padding: 50px 80px;
         background: rgba(0,0,0,0.4);
+        opacity: 0;
         p {
             color: white;
             font-size: 16px;
@@ -715,7 +716,13 @@ p {
             .background-cover(cover);
         }
     }
-    section.student {
+    section.student ,
+    #student1 ,
+    #student2 ,
+    #student3 ,
+    #student4 ,
+    #student5 ,
+    #student6 {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -725,45 +732,84 @@ p {
         opacity: 1;
         div.name {
             position: absolute;
-            top: 5%;
+            top: 15%;
             left: 5%;
             width: 300px;
             h3 {
-                //h3 indo
+                font-family: @font-family-base;
+                font-weight: 900;
+                font-size: 3.5em;
+                color: white;
+                text-transform: uppercase;
+                line-height: 1;
             }
-            p {
-                //this is the major
+            p.major {
+                font-family: @font-family-base;
+                font-weight: 500;
+                font-size: 1.5em;
+                color: white;
+                text-transform: uppercase;
+                line-height: 1;
             }
-            //maybe styling for the line? 
+            .udub-slant span {
+                width: 35%;
+            }
             
 
         }
         div.quote {
             position: absolute;
-            top: 5%;
+            top: 30%;
             right: 5%;
-            width: 300px;
-            p {
-                //p info 
-                //before and after psuedo for quotes
+            max-width: 400px;
+            blockquote {
+                font-family: @uni;
+                font-weight: 700;
+                font-size: 1.5em;
+                color: white;
+                border: none;
+                span {
+                    font-family: @font-family-headline;
+                    font-weight: 900;
+                    font-size: 80px;
+                    color: white;
+                    position: absolute;
+                }
+                span:nth-of-type(1) {
+                    top: -60px;
+                    left: 15px;
+                }
+                span:nth-of-type(2) {
+                    bottom: -70px;
+                    right: 30px;
+                }
             }
         }
-
+        img {
+            position: absolute;
+            bottom: 0;
+            left: 30%;
+            height: 80%;
+            width: auto;
+        }
     }
     //close button
-    button.close-video {
+    button#close-modal {
     // display: none;
     // @media(min-width:768px) {
         display: block;
         position: absolute;
         border: none;
-        top: -55px;
-        right: 0;
+        top: 25px;
+        right: 25px;
         z-index: 9999;
-        width: 55px;
-        height: 55px;
-        background: url("@{img}/sprite.svg") no-repeat -207px -286px rgba(0,0,0,.2);
+        width: 100px;
+        height: 100px;
+        //background: url("@{img}/sprite.svg") no-repeat -207px -286px rgba(0,0,0,.2);
         opacity: 1;
+        line-height: 0;
+        color: transparent;
+        background: none;
     }
 }
 
