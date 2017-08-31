@@ -633,12 +633,13 @@ p {
 .full-image-section {
     width: 100vw;
     height: 100vh;
+    position: relative;
     border-bottom: 10px solid @darkgold;
     background-image: url("@{enviro}/student-valley.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     .background-cover(cover);
-    div {
+    div.copy {
         margin-top: 10%;
         padding: 50px 80px;
         background: rgba(0,0,0,0.4);
@@ -668,6 +669,67 @@ p {
                     .background-size(contain);
                 }
             }
+        }
+    }
+    div.student {
+        position: absolute;
+        bottom: 0; 
+        //width: 150px;
+        //height: auto;
+        &.student1 {
+            right: 3%;
+            //width: 175px; 
+        }
+        &.student2 {
+            //width: 125px;
+            left: 25%; 
+        }
+        &.student3 {
+            //width: 130px;
+            right: 20%; 
+        }
+        &.student4 {
+            //width: 135px;
+            left: 45%;  
+        }
+        &.student5 {
+            left: 3%;
+            //width: 180px; 
+        }
+        &.student6 {
+            display: none;  
+        }
+        img {
+            width: 150px;
+            height: auto;
+            &.student1 {
+                width: 175px; 
+            }
+            &.student2 {
+                width: 125px;
+            }
+            &.student3 {
+                width: 130px;
+            }
+            &.student4 {
+                width: 135px; 
+            }
+            &.student5 {
+                width: 180px; 
+            }
+            &.student6 {
+                //display: none;  
+            }
+        }
+        &:before {
+            content: '';
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            top: 0; 
+            right: 0;
+            background: url("@{enviro}/people-circle.svg") no-repeat center center;
+            .background-cover(cover);
         }
     }
 }
