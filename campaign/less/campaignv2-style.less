@@ -37,7 +37,7 @@
     letter-spacing: 2px;
   }
   h2{
-    font-size: 24px;
+    font-size: 30px;
     color: @lightgold;
     font-weight: 500;
   }
@@ -114,6 +114,7 @@
   }
   .container {
     width: 50vw;
+    max-width: 800px; 
     margin-top: 5vh;
     p {
       color: white;
@@ -215,19 +216,27 @@
 }
 
 #impact-stories {
-  //height: 500px;
-  margin-top: 40px;
+  //height: 570px;
+  margin-top: 70px;
   text-align: center;
   position: relative;
   .content {
     width: 650px;
     margin-left: auto;
     margin-right: auto;
+    h2 {
+      font-weight: 600;
+      letter-spacing: 4px;
+    }
+    hr {
+      margin-bottom: 40px;
+    }
   }
   .container {
     width: 1000px; 
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 50px;
     //overflow: hidden;
     padding: 0 16px;
     position: relative;
@@ -238,7 +247,7 @@
     #story-slider {
       width: 99999999px; //wide enough for all stories next to one another
       text-align: left;
-      .transition(all .3s linear .1s);
+      .transition(all .7s ease-in-out .1s);
       @media only screen and (min-width : 769px) {
         .story:nth-child(3n+3) {
           margin-right: 100px;
@@ -261,6 +270,16 @@
       }
       p {
         font-family: @uni;
+      }
+      h3 {
+        margin-top: 0;
+        font-size: 18px;
+        letter-spacing: 3px;
+        background-color: transparent;
+        color: @purple;
+        padding: 7px 12px;
+        display: inline-block;
+        .transition(all .2s linear .1s);
       }
       .image-equalizer {
         width: 300px;
@@ -311,7 +330,8 @@
           opacity: 1;
         }
         h3 {
-          //text-decoration: underline;
+          background: @purple;
+          color: white;
         }
       }
     }
@@ -320,7 +340,7 @@
 
 section.campaign-facts {
   width: 100%;
-  height: 300px;
+  height: 425px;
   background: #ece9e2;
   .facts-container {
     margin: 0 auto;
@@ -355,7 +375,7 @@ section.campaign-facts {
 }
 
 .campaign-excerpt {
-  height: 500px;
+  height: 600px;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -364,7 +384,16 @@ section.campaign-facts {
     height: 100%;
     position: absolute;
     .row {
-
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      div h2 {
+        font-size: 22px;
+        letter-spacing: 3px;
+      }
+      p {
+        font-size: 18px;
+      }
     }
   }
   .container-text {
@@ -420,6 +449,7 @@ section.campaign-facts {
       transform: skew(15deg);
       z-index: -1;
       width: 65%;
+      max-width: 500px;
       margin: 20% auto 0; 
       text-align: center;
       h2 {
@@ -448,77 +478,78 @@ section.campaign-facts {
   }
   .container-image {
     padding: 0;
+    border-width: 0px;
+    border-color: white;
+    border-style: solid;
+    .transition(all .2s ease-in-out .1s);
+    &.bg-purple {
+      border-color: @purple;
+    }
     div.row {
       width: 100%;
       height: 100%;
       margin: 0;
       background-repeat: no-repeat;
-      background-position: left center;
+      background-position: left top;
       .background-size(cover);
       .button-container {
-        position: absolute;
-        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
-        bottom: 30px;
+        height: 100%;
         text-align: center;
         .campaign-button {
           .skew(-15deg, 0);
           border: 2px solid white;
+          background: rgba(0,0,0,.2);
           display: inline-block;
           padding: 5px 15px;
-          .transition(all .2s linear);
+          .transition(all .2s ease-in-out .1s);
           div {
             .skew(15deg, 0);
             a {
               color: white;
               text-transform: uppercase;
-              font-size: 15px;
+              font-size: 17px;
               .transition(all .2s linear);
-              &.video:hover {
-                cursor: pointer;
-              }
             }
-          }
-          &:hover,
-          &:focus,
-          &:active {
-            border: 2px solid @lightgold;
-            a {
-              color: @lightgold;
-            }
-          }
-          &:hover {
-            cursor: pointer;
           }
         }
         .play-button {
-          margin: -200px auto 0;
+          margin: 0 -15% -7% 0;
           float: none;
           width: inherit;
+          svg {
+            width: 180px;
+            height: 180px;
+          }
           a svg ellipse,
           a svg polygon {
-            .transition(all .2s linear);
+            .transition(all .2s ease-in-out .1s);
           }
-          a:hover,
-          a:focus,
-          a:active {
-            svg { 
-              ellipse { stroke: @lightgold; }
-              polygon { fill: @lightgold; }
-            }
+          p {
+            margin-bottom: 30px;
           }
+        }
+        &.no-video .play-button a.vid {
+          visibility: hidden;
         }
       }
     }
-    &.container-left .row .campaign-button:not(.video) {
-      margin-left: -15%;
+    &.container-left div.row {
+      background-position: right top;
+      .button-container .play-button {
+        margin: 0 0 -7% -10%;
+      }
     }
-    &.container-right .row .campaign-button:not(.video) {
-      margin-right: -15%;
+    &:hover {
+      cursor: pointer; 
     }
   }
   .container-left {
     left: 0;
+
   }
   .container-right {
     right: 0;
@@ -564,9 +595,39 @@ section.campaign-facts {
     right: 6%;
     opacity: 0.04;
   }
+  .bg-white.add-dubs:after {
+    content: '';
+    background: url(../img/purple-w.png) no-repeat center center;
+    .background-cover(cover);
+    .skew(15deg, 0);
+    height: 350px;
+    width: 515px;
+    //background-position: center center;
+    //background-size: color(string)
+    position: absolute;
+    display: inline-block;
+    bottom: 10%;
+    left: 4%;
+    opacity: 0.04;
+  }
+  &:hover,
+  &:active { //whole section
+    .container-image{
+      border-width: 8px;
+      .play-button svg { 
+        ellipse { fill: white; }
+        polygon { fill: @purple; }
+      }
+      div.row .button-container .play-button .campaign-button {
+        background: white;
+        a { color: @purple; }
+      }
+    }
+    
+  }
 }
 
-@arrowIn        : -100px; 
+@arrowIn        : -200px; 
 @arrowInMobile  : -100px; 
 button.prevSlide,
 button.nextSlide {
@@ -584,13 +645,13 @@ button.nextSlide {
     opacity: 1;
     z-index: 2;
     overflow: hidden;
-    .transition(all .3s linear .1s);
+    .transition(all .3s ease-in-out .1s);
     span {
         width: 100%;
         display: block;
         height: 100%;
         position: relative;
-        .transition(all .3s linear .1s);
+        .transition(all .3s ease-in-out .1s);
         svg {
             width: 100%;
             height: 100%;
@@ -600,13 +661,12 @@ button.nextSlide {
         }
         #arrow1 path,
         #arrow2 path {
-          .transition(all .3s linear .1s);
+          .transition(all .3s ease-in-out .1s);
         }
     }
     // Animation for focus/active/hover
     &:hover,
-    &:active,
-    &:focus {
+    &:active {
         &.prevSlide { .translate(-20px, 0); }
         &.nextSlide { .translate(20px, 0); }
         span { .scale(.9, .9); }
@@ -619,9 +679,17 @@ button.prevSlide {
 button.nextSlide {
     right: @arrowIn;
 }
+@media only screen and (max-width : 1320px) {
+  button.prevSlide {
+    left: @arrowInMobile;
+  }
+  button.nextSlide {
+      right: @arrowInMobile;
+  }
+}
 
 #giving {
-  height: 500px;
+  height: 600px;
   background-position: center right;
   .background-cover(cover);
   .container { position: relative; }
@@ -630,7 +698,7 @@ button.nextSlide {
     height: 300px;
     background-color: white;
     position: absolute;
-    top: 100px;
+    top: 150px;
     left: 0;
     form {
       height: 100%;
@@ -640,6 +708,8 @@ button.nextSlide {
         text-align: center;
         color: @purple;
         font-weight: 700;
+        font-size: 22px;
+        letter-spacing: 3px;
       }
       .amount {
         width: 100%;
@@ -732,9 +802,6 @@ button.nextSlide {
 
 //NEED TO DO EDITS FOR ALL MOBILE SIZING
 @media only screen and (max-width : 1200px) {
-  .campaign-excerpt .container-image div.row .button-container .play-button {
-        margin: -200px 0 0 10%;
-  }
   #campaign-intro {
     //padding-top: 9vh;
   }
@@ -756,13 +823,13 @@ button.nextSlide {
 @media only screen and (max-width : 992px) {
   #campaign-intro {
     //padding-top: 6vh;
-    h1 { font-size: 5vw; }
+    h1 { font-size: 6vw; }
     .container { width: 70vw; }
   }
 
 
   .campaign-excerpt {
-    height: 400px;
+    height: 500px;
     .container.container-text .row {
       margin-top: 11%;  
     }
@@ -778,11 +845,16 @@ button.nextSlide {
 
 
   #impact-stories {
+    margin-top: 20px;
     .content {
       width: 90%;
+      hr {
+        margin: 0 auto;
+      }
     }
     .container {
       width: calc(~"70vw + 72px"); //width and margins plus padding
+      margin: 0 auto;
       .story {
         width: 35vw;
         .image-equalizer {
@@ -830,7 +902,8 @@ button.nextSlide {
     div.container.container-right {
       left: inherit;
       right: inherit;
-      height: 250px;
+      height: auto;
+      min-height: 250px;
       width: 100%;
       position: relative;
       -webkit-transform: none;
@@ -849,8 +922,9 @@ button.nextSlide {
         }
       &.container-image {
         height: 400px;
-        .play-button {
-          margin: -150px auto 0;
+        .play-button,
+        &.container-left .play-button {
+          margin: 0;
         }
         .campaign-button:not(.video) {
           margin-left: 0;
@@ -899,7 +973,7 @@ button.nextSlide {
 @media only screen and (max-width : 600px) {
   .full-width-body {
     p {
-      font-size: 13px;
+      font-size: 17px;
       line-height: 1.2;
     }
   }
@@ -914,7 +988,7 @@ button.nextSlide {
       font-size: 4vw;
     }
     p {
-      font-size: 13px;
+      font-size: 17px;
       line-height: 1.2;
     }
   }
@@ -947,6 +1021,15 @@ button.nextSlide {
         height: 300px;
         .button-container {
           bottom: 0;
+          .play-button a.vid {
+            p {
+              margin-bottom: 14.5px;
+            }
+            svg {
+              height: 150px;
+              width: 150px;
+            }
+          }
         }
       }
     }
@@ -1488,7 +1571,7 @@ button.nextSlide {
         background-color:#d9d9d9;
         position: absolute;
         width: 100%;
-        z-index: 1;
+        z-index: 3;
       }
       .cv2-header-grey .row{
         margin-left:0;

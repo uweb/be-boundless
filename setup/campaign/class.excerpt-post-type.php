@@ -155,18 +155,18 @@ if ( ! post_type_exists( 'excerpt' ) ):
     //echo do_shortcode( $content );//executing shortcodes
     $bgClass = 'bg-' . $atts['color'];
     $dubsClass = ($atts['dub'] ? 'add-dubs' : '');
-    $videoClass = ($atts['video'] ? 'video' : '');
-    $videoHtml = ($atts['video'] ? '' .
+    $videoClass = ($atts['video'] ? 'video' : 'no-video');
+    $videoHtml = '' .
         '<div class="play-button" >' .
-              '<a data-lity href="' . $video . '">' .
+              '<a data-lity class="vid" href="' . $video . '">' .
               '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="137.909px" height="137.131px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131" xml:space="preserve">' . 
-              '<ellipse fill="none" stroke="#FFFFFF" stroke-width="7.8281" stroke-miterlimit="10" cx="68.399" cy="68.344" rx="57.675" ry="59.214"/>' .
+              '<ellipse fill="rgba(255,255,255,0)" stroke="#FFFFFF" stroke-width="7.8281" stroke-miterlimit="10" cx="68.399" cy="68.344" rx="57.675" ry="59.214"/>' .
               '<polygon fill="#FFFFFF" points="48.611,37.617 103.268,68.345 48.611,99.072 "/>' . 
               '</svg>' .
               '<p></p>' .
-              '</a>' : '');
-    $videoHtmlClose = ($atts['video'] ?  '</div>' : '');
-    $button = '<div class="button-container">' . $videoHtml . '<div class="campaign-button ' . $videoClass .'"><div>';
+              '</a>' ;
+    $videoHtmlClose = '</div>';
+    $button = '<div class="button-container ' . $videoClass . '">' . $videoHtml . '<div class="campaign-button ' . $videoClass .'"><div>';
     $button .= $buttonLink ? ('<a href="' . $buttonLink . '">' . $buttonText . '</a>') : '<a class="' . $videoClass . '" disabled>' . $buttonText . '</a>';
     $button .= '</div></div>' . $videoHtmlClose . '</div>';
     
@@ -174,22 +174,22 @@ if ( ! post_type_exists( 'excerpt' ) ):
                 '  <div class="container ';
     $return .= ($atts['align'] === 'right') ? ('' .
                 'container-left container-text ' . $bgClass . ' ' . $dubsClass . '"> ' .    
-                '    <div class="row">' .
+                '    <div class="row"><div>' .
                 '      <h2>' . $title . '</h2>' .
                 '      <hr>' .
                 '      <p>' . $content . '</p>' .
-                '    </div>' .
+                '    </div></div>' .
                 '  </div>' .
-                '  <div class="container container-right container-image">' .
+                '  <div class="container container-right container-image '. $bgClass .'">' .
                 '    <div class="row" style="background-image:url(' . $image . ')">' . $button ) : ('' . //this is the switch
                 'container-right container-text ' . $bgClass . ' ' . $dubsClass . '"> ' .    
-                '    <div class="row">' .
+                '    <div class="row"><div>' .
                 '      <h2>' . $title . '</h2>' .
                 '      <hr>' .
                 '      <p>' . $content . '</p>' .
-                '    </div>' .
+                '    </div></div>' .
                 '  </div>' .
-                '  <div class="container container-left container-image">' .
+                '  <div class="container container-left container-image '. $bgClass .'">' .
                 '    <div class="row" style="background-image:url(' . $image . ')">' . $button );
                 // 'container-leftcontainer-image"> ' .    
                 // '    <div class="row" style="background-image:url(' . $image . ')">' . //add button link here

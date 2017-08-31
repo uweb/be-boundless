@@ -96,6 +96,17 @@ console.log($storySlides)
 		//console.log($(this).find('a')[0].trigger)
 	});
 
+	$('section.campaign-excerpt').on('click', function(e) {
+		e.stopPropagation();
+		e.preventDefault();
+		if( $(this).find('.campaign-button').hasClass("video") ){
+			console.log('clicks')
+			$(this).find('a[data-lity]').trigger('click.lity');
+		} else {
+			$(this).find('.campaign-button').trigger('click');
+		}
+	});
+
 	$('a:not([data-lity]):not(".video")').on('click', function(e) {
 		e.stopPropagation();
 		this.click();
