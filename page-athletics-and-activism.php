@@ -279,7 +279,7 @@
 
           <!-- <div id="photo-map"></div> -->
       
-          <p>FPO Map Decription that describes map...</p>
+          <p>McElvaine’s Bonderman journey</p>
 
       </section>
 

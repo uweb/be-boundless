@@ -81,29 +81,29 @@ $(function(){
 
 
 
-  $( document )
-    .on( "mousemove", ".para", function( event ) {
+  // $( document )
+  //   .on( "mousemove", ".para", function( event ) {
 
-    var halfW = ( this.clientWidth / 2 );
-    var halfH = ( this.clientHeight / 2 );
+  //   var halfW = ( this.clientWidth / 2 );
+  //   var halfH = ( this.clientHeight / 2 );
 
-    var coorX = ( halfW - ( event.pageX - this.offsetLeft ) );
-    var coorY = ( halfH - ( event.pageY - $(this).offset().top ) ); // this is the problem
+  //   var coorX = ( halfW - ( event.pageX - this.offsetLeft ) );
+  //   var coorY = ( halfH - ( event.pageY - $(this).offset().top ) ); // this is the problem
 
-    var degX  = ( ( coorY / halfH ) * 2 ) + 'deg'; // max. degree = 10 /// this is the problem
-    var degY  = ( ( coorX / halfW ) * -2 ) + 'deg'; // max. degree = 10
+  //   var degX  = ( ( coorY / halfH ) * 2 ) + 'deg'; // max. degree = 10 /// this is the problem
+  //   var degY  = ( ( coorX / halfW ) * -2 ) + 'deg'; // max. degree = 10
 
-    //var degX  = ( degX > 1.1 ? 1.1 : degX ) + 'deg'; 
-    //var degY  = ( degY > 1.35 ? 1.35 : degY ) + 'deg'; 
+  //   //var degX  = ( degX > 1.1 ? 1.1 : degX ) + 'deg'; 
+  //   //var degY  = ( degY > 1.35 ? 1.35 : degY ) + 'deg'; 
 
-    $( this ).css( 'transform', function() {
-      return 'perspective( 1023px ) translate3d( 0, 0, 50px )  rotateX('+ degX +') rotateY('+ degY +')';
-    } )
+  //   $( this ).css( 'transform', function() {
+  //     return 'perspective( 1023px ) translate3d( 0, 0, 50px )  rotateX('+ degX +') rotateY('+ degY +')';
+  //   } )
 
-  } )
-    .on( "mouseout", ".para", function() {
-    $( this ).removeAttr( 'style' )
-  } );
+  // } )
+  //   .on( "mouseout", ".para", function() {
+  //   $( this ).removeAttr( 'style' )
+  // } );
 
 
   // In order to toggle current section, 

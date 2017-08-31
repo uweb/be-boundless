@@ -171,10 +171,16 @@ iframe {
             width: 60%;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.55);
         } 
+        &.p-2 {
+            h3 {
+                margin-left: 0;
+                margin-top: 0;  
+            }
+        }
         &.p-3 { 
             //background-image: url("@{built}/para-3-inset.jpg"); 
             h3 {
-                margin: 11vw 0 11vw 20px;
+                margin: 0 0 11vw 0;
             }
             .cutout { 
                // .pic { background-image: url("@{built}/para-3-popout.jpg"); }
@@ -239,9 +245,7 @@ section.la-river {
     .background-cover(100% auto);
     background-position: center bottom;
     background-repeat: no-repeat;
-    padding-bottom: 35vw;
-    @media @phone-only { 
-    }              //  (max-width: 599px)          
+    padding-bottom: 35vw;                  
     @media @tablet-portrait-up { 
     }      //  (min-width: 600px) 
     // @media @tablet-portait-only { }     //  (min-width: 600px) and (max-width: 899px) 
