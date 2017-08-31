@@ -674,27 +674,28 @@ p {
     div.student {
         position: absolute;
         bottom: 0; 
+        opacity: 0;
         //width: 150px;
         //height: auto;
         &.student1 {
             right: 3%;
-            //width: 175px; 
+            img { width: 175px; } 
         }
         &.student2 {
-            //width: 125px;
             left: 25%; 
+            img { width: 125px; }
         }
         &.student3 {
-            //width: 130px;
             right: 20%; 
+            img { width: 130px; }
         }
         &.student4 {
-            //width: 135px;
-            left: 45%;  
+            left: 45%;
+            img { width: 135px; }  
         }
         &.student5 {
             left: 3%;
-            //width: 180px; 
+            img { width: 180px; }
         }
         &.student6 {
             display: none;  
@@ -702,24 +703,6 @@ p {
         img {
             width: 150px;
             height: auto;
-            &.student1 {
-                width: 175px; 
-            }
-            &.student2 {
-                width: 125px;
-            }
-            &.student3 {
-                width: 130px;
-            }
-            &.student4 {
-                width: 135px; 
-            }
-            &.student5 {
-                width: 180px; 
-            }
-            &.student6 {
-                //display: none;  
-            }
         }
         &:before {
             content: '';
@@ -732,7 +715,58 @@ p {
             .background-cover(cover);
         }
     }
+    section.student {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.6);
+        opacity: 1;
+        div.name {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 300px;
+            h3 {
+                //h3 indo
+            }
+            p {
+                //this is the major
+            }
+            //maybe styling for the line? 
+            
+
+        }
+        div.quote {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            width: 300px;
+            p {
+                //p info 
+                //before and after psuedo for quotes
+            }
+        }
+
+    }
+    //close button
+    button.close-video {
+    // display: none;
+    // @media(min-width:768px) {
+        display: block;
+        position: absolute;
+        border: none;
+        top: -55px;
+        right: 0;
+        z-index: 9999;
+        width: 55px;
+        height: 55px;
+        background: url("@{img}/sprite.svg") no-repeat -207px -286px rgba(0,0,0,.2);
+        opacity: 1;
+    }
 }
+
 
 // Transition of photos section
 

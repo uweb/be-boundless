@@ -223,15 +223,26 @@
         <p class="pull-text">Nature is not fair and meals are just as oftern stolen as they are earned</p>
       </div>
 
-      <div class="student student1"><image class="student student1" alt="student one" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait1.png' ?>"></div>
-      <div class="student student2"><image class="student student2" alt="student two" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait2.png' ?>"></div>
-      <div class="student student3"><image class="student student3" alt="student three" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait3.png' ?>"></div>
-      <div class="student student4"><image class="student student4" alt="student four" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait4.png' ?>"></div>
-      <div class="student student5"><image class="student student5" alt="student five" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait5.png' ?>"></div>
-      <!-- <div class="student student6"><image class="student student6" alt="student six" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait6.png' ?>"></div> -->
+      <div class="student student1"><a href="#student1"><image class="student student1" alt="student one" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait1.png' ?>"></a></div>
+      <div class="student student2"><a href="#student2"><image class="student student2" alt="student two" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait2.png' ?>"></a></div>
+      <div class="student student3"><a href="#student3"><image class="student student3" alt="student three" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait3.png' ?>"></a></div>
+      <div class="student student4"><a href="#student4"><image class="student student4" alt="student four" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait4.png' ?>"></a></div>
+      <div class="student student5"><a href="#student5"><image class="student student5" alt="student five" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait5.png' ?>"></a></div>
+      <!-- <div class="student student6"><a href="#student6"><image class="student student6" alt="student six" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait6.png' ?>"></a></div> -->
     </section>
-    <section class="student studentsNAME">
+    <section class="student student1">
+      <div class="name">
+        <h3>First</br>Last</h3>
+        <p class="major">Major</p>
+        <span class="uw-slant"></span>
+        <!-- <p>lorem ipsum</p> -->
+      </div>
+      <div class="quote">
+        <p>"lorem ipsum"</p>
+      <div>
+      <image class="full-student" alt="student one" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/profile1.png' ?>">
     </section>
+    <button id="close-modal" class="close-video">Close</button>
   </section>
 
 
