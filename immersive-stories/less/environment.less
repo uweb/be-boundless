@@ -635,6 +635,7 @@ p {
     height: 100vh;
     position: relative;
     border-bottom: 10px solid @darkgold;
+    overflow: hidden;
     background-image: url("@{enviro}/student-valley.jpg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -825,12 +826,28 @@ p {
     height: 100vh;
     position: relative;
     border-bottom: 10px solid @darkgold;
-    background-image: url("@{enviro}/student-valley.jpg");
+    overflow: hidden;
+    background-image: url("@{enviro}/pred-bg-fg-span.jpg");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: bottom right;
     .background-cover(cover);
+    img.foreground {
+        position: absolute;
+        bottom: -15%;
+        right: 0;
+        height: auto;
+        width: 100%;
+        z-index: 1;
+    }
+    &.enable-scroll {
+        overflow-y: scroll;
+    }
+    section {
+        width: 100%;
+        height: 100%;
+    }
     div.copy {
-        margin-top: 10%;
+        margin-top: calc(~"26vh + 200px"); 
         padding: 20px 30px;
         background: rgba(0,0,0,0.4);
         position: relative;
@@ -842,15 +859,17 @@ p {
             font-size: 35px;
             letter-spacing: 3px;
             text-transform: uppercase;
-            position: relative;     
+            position: relative; 
+            margin-bottom: 40px;    
             &:after {
                 content: '';
                 display: block;
-                width: 50%;
+                width: 360px;
                 position: absolute;
                 height: 20px;
-                left: 25%;
-                bottom: -20px;
+                left: calc(~"50% - 180px");
+                bottom: -30px;
+                //margin: 20px auto;
                 background: url("@{enviro}/squiggle.svg") no-repeat;
                 .background-size(contain);
             }
@@ -875,6 +894,18 @@ p {
             }
             
         }
+        &:before {
+            content: '';
+            display: block;
+            width: 26vh;
+            height: 26vh;
+            position: absolute;
+            left: calc(~"50% - 13vh");
+            top: calc(~"-100px - 26vh");;
+            margin: 20px auto;
+            background: url("@{enviro}/icon-pred.svg") no-repeat;
+            .background-size(contain);
+        }
         &:after {
             content: "";
             border-color: rgba(0, 0, 0, 0) transparent;
@@ -887,6 +918,42 @@ p {
             right: 0;
             margin-top: -30px;
 
+        }
+    }
+    &:after {
+        content:'INTRO';
+        font-family: @font-family-base;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 60px;
+        position: fixed;
+        bottom: 260px;
+        right: 0;
+        z-index: 1;
+        color: white;
+        opacity: 0.4;
+        transform-origin: bottom right;
+        .rotate(-90deg);
+    }
+    &.in-the-field:after {
+        content: 'IN THE FIELD';
+        bottom: 520px;
+    }
+    span.lines {
+        position: fixed;
+        height: 100%;
+        width: 30%;
+        opacity: 0.4;
+        top: 0;
+        left: 0;
+        background: url('@{img}/lines2.svg') no-repeat;
+        background-position: center right;
+        display: block;
+        .background-cover(cover);
+        &.right {
+            background-position: center left;
+            left: auto;
+            right: 0;
         }
     }
 }

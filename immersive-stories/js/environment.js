@@ -149,4 +149,20 @@ $(function(){
 
 
 
+//toggle scroll for pred
+  new ScrollMagic.Scene({triggerElement: "#pred-content"})
+          .setClassToggle("#predators", "enable-scroll") // add class toggle
+          .triggerHook("onEnter")
+          .addIndicators() // add indicators (requires plugin)
+          .addTo(currentController);
+//toggle scroll for pred
+  new ScrollMagic.Scene({triggerElement: "#in-the-field"})
+          .setClassToggle("#predators", "in-the-field") // add class toggle
+          .triggerHook("onEnter")
+          .addIndicators() // add indicators (requires plugin)
+          .addTo(currentController);
+
+
+
+
 })
