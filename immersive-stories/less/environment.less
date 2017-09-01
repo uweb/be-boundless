@@ -643,7 +643,7 @@ p {
         margin-top: 10%;
         padding: 50px 80px;
         background: rgba(0,0,0,0.4);
-        opacity: 0;
+        opacity: 1;
         p {
             color: white;
             font-size: 16px;
@@ -675,7 +675,7 @@ p {
     div.student {
         position: absolute;
         bottom: 0; 
-        opacity: 0;
+        opacity: 1;
         //width: 150px;
         //height: auto;
         &.student1 {
@@ -729,12 +729,13 @@ p {
         left: 0;
         right: 0;
         background-color: rgba(0,0,0,0.6);
-        opacity: 1;
+        opacity: 0;
         div.name {
             position: absolute;
             top: 15%;
             left: 5%;
             width: 300px;
+            z-index: 1;
             h3 {
                 font-family: @font-family-base;
                 font-weight: 900;
@@ -761,7 +762,9 @@ p {
             position: absolute;
             top: 30%;
             right: 5%;
+            width: 30vw;
             max-width: 400px;
+            z-index: 1;
             blockquote {
                 font-family: @uni;
                 font-weight: 700;
@@ -806,13 +809,84 @@ p {
         width: 120px;
         height: 120px;
         //background: url("@{img}/sprite.svg") no-repeat -207px -286px rgba(0,0,0,.2);
-        opacity: 1;
+        opacity: 0;
         line-height: 0;
         color: transparent;
         background: none;
         svg {
             height: 120px;
             width: 120px;
+        }
+    }
+}
+
+.enviro-section {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    border-bottom: 10px solid @darkgold;
+    background-image: url("@{enviro}/student-valley.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    .background-cover(cover);
+    div.copy {
+        margin-top: 10%;
+        padding: 20px 30px;
+        background: rgba(0,0,0,0.4);
+        position: relative;
+        opacity: 1;
+        h2 {
+            color: white;
+            text-align: center;
+            font-family: @font-family-headline;
+            font-size: 35px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            position: relative;     
+            &:after {
+                content: '';
+                display: block;
+                width: 50%;
+                position: absolute;
+                height: 20px;
+                left: 25%;
+                bottom: -20px;
+                background: url("@{enviro}/squiggle.svg") no-repeat;
+                .background-size(contain);
+            }
+        }
+        p {
+            color: white;
+            font-size: 17px;
+            //font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.55);
+            text-align: center;
+            // &.pull-text {
+            //     font-family: @headline;
+            //     line-height: 1.4;    
+            //     text-transform: uppercase;
+            //     font-size: 1.2em;
+            //     padding-top: 40px;
+            //     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+            //     position: relative;
+            //  }
+            &:first-child:before {
+                
+            }
+            
+        }
+        &:after {
+            content: "";
+            border-color: rgba(0, 0, 0, 0) transparent;
+            border-style: solid;
+            border-width: 30px 10px 0 0;
+            height: 0;
+            width: 0;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin-top: -30px;
+
         }
     }
 }
