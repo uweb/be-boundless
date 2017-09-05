@@ -9,12 +9,12 @@ global $scripts;
 						<nav aria-label="social networking">
 							<ul class="cv2-list-social list-inline">
 								<li><a class="icon-sm facebook" href="http://www.facebook.com/UofWA">Facebook</a></li>
-								<li><a class="icon-sm tumblr" href="http://uofwa.tumblr.com/">Tumblr</a></li>
-								<li><a class="icon-sm pinterest" href="http://www.pinterest.com/uofwa/">Pinterest</a></li>
+								<!-- <li><a class="icon-sm tumblr" href="http://uofwa.tumblr.com/">Tumblr</a></li> -->
+								<!-- <li><a class="icon-sm pinterest" href="http://www.pinterest.com/uofwa/">Pinterest</a></li> -->
 								<li><a class="icon-sm twitter" href="http://twitter.com/UW">Twitter</a></li>
 								<li><a class="icon-sm youtube" href="http://www.youtube.com/user/uwhuskies">YouTube</a></li>
 								<li><a class="icon-sm linkedin" href="http://www.linkedin.com/company/university-of-washington">LinkedIn</a></li>
-								<li><a class="icon-sm google" href="https://plus.google.com/+universityofwashington/posts">Google+</a></li>
+								<!-- <li><a class="icon-sm google" href="https://plus.google.com/+universityofwashington/posts">Google+</a></li> -->
 								<!-- <li><a class="icon-sm instagram" href="http://instagram.com/uofwa">Instagram</a></li> -->
 							</ul>
 						</nav>
