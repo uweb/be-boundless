@@ -66,7 +66,7 @@ if(campExpand){
 	// Toggle menu open on desktop
 	if(!isMobile.matches) {
 	 	bodyEl.toggle('active-header');
-	 	campExpand.setAttribute('aria-hidden', 'true');
+	 	if(campExpand){ campExpand.setAttribute('aria-hidden', 'true'); }
 	}
 
 	// Check for empty

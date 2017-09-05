@@ -833,6 +833,14 @@ p {
     background-repeat: no-repeat;
     background-position: bottom right;
     .background-cover(cover);
+    // div.background {
+    //     height: 100vh;
+    //     width: 100vw;
+    //     background-image: url("@{enviro}/pred-bg-fg-span.jpg");
+    //     background-repeat: no-repeat;
+    //     background-position: bottom right;
+    //     .background-cover(cover);
+    // }
     img.foreground {
         position: absolute;
         bottom: -15%;
@@ -842,11 +850,12 @@ p {
         z-index: 1;
     }
     &.enable-scroll {
-        overflow-y: scroll;
+        //overflow-y: scroll;
     }
     section {
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        //height: 100%;
+        min-height: 100vh;
     }
     div.copy {
         margin-top: calc(~"26vh + 200px"); 

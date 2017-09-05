@@ -162,6 +162,24 @@ $(function(){
           .addIndicators() // add indicators (requires plugin)
           .addTo(currentController);
 
+new ScrollMagic.Scene({triggerElement: "#predators", duration: "200%"})
+          .setTween("#predators > div.content", {y: "50%", ease: Linear.easeNone})
+          .addTo(currentController);
+
+// get all slides
+// var slides = document.querySelectorAll("#predators > section");
+
+// // create scene for every slide
+// for (var i=0; i<slides.length; i++) {
+//   new ScrollMagic.Scene({
+//       triggerElement: slides[i]
+//     })
+//     .triggerHook('onLeave')
+//     .setPin(slides[i])
+//     //.addIndicators() // add indicators (requires plugin)
+//     .addTo(currentController);
+//     }
+
 
 //click students
 //

@@ -255,26 +255,28 @@
     <!-- <span class="lines right"></span>
     <span class="lines left"></span> -->
     <!-- <img class="foreground" alt="bear" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/pred-fore.png' ?>"> -->
-    <section class="section-home">
-      <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 copy">
-        <h2 class="pull-text">Predators</h2>
-        <p>Cras sagittis id tellus id tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus lacinia, tortor sed placerat fringilla, Cras sagittis id tellus id tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
-      </div>
-      <!-- <div class="student student6"><a href="#student6"><image class="student student6" alt="student six" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait6.png' ?>"></a></div> -->
-    </section>
-    <section id="pred-content" class="section-content">
-      <div class="col-md-6 col-md-offset-2 col-xs-10 col-xs-offset-1">
-        <h2 id="in-the-field" class="pull-text">Behind the scenes</br>with biologists</h2>
-        <p>Cras sagittis id tellus id tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus lacinia, tortor sed placerat fringilla, Cras sagittis id tellus id tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
-        <p>Cras sagittis id tellus id tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
-        <div class="outset">
-          <img src="" alt="photo of bear">
-          <blockquote><span>&ldquo;</span>There’s an essence we get to experience in the field that you can’t get by reading papers and being in the classroom<span>&rdquo;</span></blockquote>
+
+    <section class="content">
+      <section class="section-home">
+        <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 copy">
+          <h2 class="pull-text">Predators</h2>
+          <p>Cras sagittis id tellus id tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus lacinia, tortor sed placerat fringilla, Cras sagittis id tellus id tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
         </div>
-        <img class="snapchat" src="" alt="snapchat video of ...">
-      </div>
+        <!-- <div class="student student6"><a href="#student6"><image class="student student6" alt="student six" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait6.png' ?>"></a></div> -->
+      </section>
+      <section id="pred-content" class="section-content">
+        <div class="col-md-6 col-md-offset-2 col-xs-10 col-xs-offset-1">
+          <h2 id="in-the-field" class="pull-text">Behind the scenes</br>with biologists</h2>
+          <p>Cras sagittis id tellus id tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus lacinia, tortor sed placerat fringilla, Cras sagittis id tellus id tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+          <p>Cras sagittis id tellus id tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+          <div class="outset">
+            <img src="" alt="photo of bear">
+            <blockquote><span>&ldquo;</span>There’s an essence we get to experience in the field that you can’t get by reading papers and being in the classroom<span>&rdquo;</span></blockquote>
+          </div>
+          <img class="snapchat" src="" alt="snapchat video of ...">
+        </div>
+      </section>
     </section>
-    
   </section>
 
 
