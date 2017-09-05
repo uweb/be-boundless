@@ -972,12 +972,22 @@ section.cactus {
         background-position: center center;
     }
     &.bottom-map {
-        .background-cover(cover);
-        background-image: url("@{ica}/MAP_V.5.jpg");
-        height: 0;
+        // .background-cover(cover);
+        // background-image: url("@{ica}/Map_V.5.jpg");
+        height: 100%;
         width: 100%;
-        padding-bottom: 51.5vw;
+        padding-bottom: 0;
         margin-bottom: 0;
+        video {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            object-position: 0% 0%;
+        }
+        #pause {
+            top: 20px;
+            display: none;
+        }
     }
     @media @tablet-portrait-up { 
         margin: 2vw 0 7vw 0;

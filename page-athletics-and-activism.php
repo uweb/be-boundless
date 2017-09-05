@@ -77,9 +77,7 @@
         </div>   
       </section>
       
-      <iframe width="1280" height="720" src="https://www.youtube.com/embed/Mz-NPAq924g?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-
- 
+      <iframe width="1280" height="720" src="https://www.youtube.com/embed/sYfkdUA2Rxw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 
       <section class="para arrow-top p-2">
@@ -277,7 +275,10 @@
 
       <section class="text-block transSection bottom-map">
 
-          <!-- <div id="photo-map"></div> -->
+          <button id="pause">Pause</button>
+          <video muted playsinline class="media" id="map-video" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ica/Map_V.5.jpg' ?>" class="fullscreen-bg__video" id="full-bg-video">
+              <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/ica/Havana-Map.mp4' ?>" type="video/mp4">
+          </video>
       
           <p>McElvaine’s Bonderman journey</p>
 
