@@ -32,12 +32,14 @@ $(function(){
 		campExpand 	= document.getElementById('campaign-expand'),
 		thin		= document.getElementsByClassName('thin')[0],
 		thick		= document.getElementsByClassName('thick')[0],
-	 	give 		= document.getElementById('give-now'), /* end V1 */
+	 	give 		= document.getElementById('give-now'), 
+/* end V1 */
 	 	giveNew		= document.getElementById('cv2-give'),
 	 	close 		= document.getElementById('cv2-close');
 
 /* V1 */
-	document.getElementById('campaign-expand').addEventListener('click', function(){
+if(campExpand){
+	campExpand.addEventListener('click', function(){
 		bodyEl.toggle('active-header')
 		// Register user's preference for menu
 		userClosedMenu = (userClosedMenu === true) ? false : true;
@@ -57,7 +59,7 @@ $(function(){
 		}
 
 	});
-
+}
 	isMobile = window.matchMedia("only screen and (max-width: 768px)");
 
 
@@ -71,7 +73,7 @@ $(function(){
 	function isEmpty( el ){
 	  return !$.trim(el.html())
 	}
-
+if(give){
 	give.addEventListener('click', function(e){
 
 		e.preventDefault();
@@ -94,9 +96,9 @@ $(function(){
 		$('body').toggleClass('give-modal-active');
 
 	})
-
+}
 /* end V1 */
-
+if(giveNew){
 	giveNew.addEventListener('click', function(e){
 
 		e.preventDefault();
@@ -123,7 +125,8 @@ $(function(){
 		$('body').toggleClass('give-modal-active');
 
 	})
-
+}
+if(close){
 	close.addEventListener('click', function(e) {
 
 		e.preventDefault();
@@ -135,7 +138,7 @@ $(function(){
 
 		$('body').toggleClass('give-modal-active');
 	})
-
+}
 
 
 });
