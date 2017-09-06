@@ -1,4 +1,4 @@
-$(function(){
+ $(function(){
 
   var body = document.getElementsByTagName('body')[0];
   var controllerEnviro = new ScrollMagic.Controller();
@@ -150,20 +150,26 @@ $(function(){
 
 
 //toggle scroll for pred
-  new ScrollMagic.Scene({triggerElement: "#pred-content"})
-          .setClassToggle("#predators", "enable-scroll") // add class toggle
-          .triggerHook("onEnter")
-          .addIndicators() // add indicators (requires plugin)
-          .addTo(currentController);
+  // new ScrollMagic.Scene({triggerElement: "#pred-content"})
+  //         .setClassToggle("#predators", "enable-scroll") // add class toggle
+  //         .triggerHook("onEnter")
+  //         .addIndicators() // add indicators (requires plugin)
+  //         .addTo(currentController);
 //toggle scroll for pred
-  new ScrollMagic.Scene({triggerElement: "#in-the-field"})
-          .setClassToggle("#predators", "in-the-field") // add class toggle
-          .triggerHook("onEnter")
-          .addIndicators() // add indicators (requires plugin)
-          .addTo(currentController);
+  // new ScrollMagic.Scene({triggerElement: "#in-the-field"})
+  //         .setClassToggle("#predators", "in-the-field") // add class toggle
+  //         .triggerHook("onEnter")
+  //         .addIndicators() // add indicators (requires plugin)
+  //         .addTo(currentController);
 
-new ScrollMagic.Scene({triggerElement: "#predators", duration: "200%"})
-          .setTween("#predators > div.content", {y: "50%", ease: Linear.easeNone})
+// var opacityAnimation = new TimelineMax ()
+//           .add([
+//             TweenMax.to('#predators', 1,    {  opacity: 1, ease: Power0.easeIn, delay: 0.0 })
+//           ])
+
+new ScrollMagic.Scene({triggerElement: "#predators", duration: "100%", triggerHook:0})
+          .setPin("#predators > .enviro-bg")
+          .setTween("#predators > ..enviro-bg:after", {opacity: 1, ease: Power0.easeIn, delay: 0.0 })
           .addTo(currentController);
 
 // get all slides

@@ -1,4 +1,4 @@
-// All the Variables from the UW 2014 theme
+    // All the Variables from the UW 2014 theme
 @import "../../themes/uw-2014/less/uw.variables.less";
 @import "../../themes/uw-2014/less/flat/mixins.less";
 @import "../../themes/uw-2014/less/flexbox.less";
@@ -825,22 +825,33 @@ p {
 
 .enviro-section {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     position: relative;
     border-bottom: 10px solid @darkgold;
     overflow: hidden;
-    background-image: url("@{enviro}/pred-bg-fg-span.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    .background-cover(cover);
-    // div.background {
-    //     height: 100vh;
-    //     width: 100vw;
-    //     background-image: url("@{enviro}/pred-bg-fg-span.jpg");
-    //     background-repeat: no-repeat;
-    //     background-position: bottom right;
-    //     .background-cover(cover);
-    // }
+    // background-image: url("@{enviro}/pred-bg-fg-span.jpg");
+    // background-repeat: no-repeat;
+    // background-position: bottom right;
+    // .background-cover(cover);
+    div.enviro-bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100vw;
+        background-image: url("@{enviro}/pred-bg-fg-span.jpg");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        .background-cover(cover);
+        &:after {
+            content: '';
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            .transition(all .5s ease-in);
+        }
+    }
     img.foreground {
         position: absolute;
         bottom: -15%;
@@ -856,6 +867,9 @@ p {
         width: 100vw;
         //height: 100%;
         min-height: 100vh;
+    }
+    section.section-content {
+        background: rgba(0, 0, 0, 0.5);
     }
     div.copy {
         margin-top: calc(~"26vh + 200px"); 

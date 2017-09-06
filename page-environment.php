@@ -255,7 +255,7 @@
     <!-- <span class="lines right"></span>
     <span class="lines left"></span> -->
     <!-- <img class="foreground" alt="bear" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/pred-fore.png' ?>"> -->
-
+    <div class="enviro-bg"></div>
     <section class="content">
       <section class="section-home">
         <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 copy">
