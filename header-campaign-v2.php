@@ -91,7 +91,7 @@ global $styles;
 					<div class="col-sm-4 col-md-4 col-lg-4">
 						<p class="subheader">Schools</p>
 						<ul class="list-unstyled">
-							<li><a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=2&source=ECM">Henry M. Jackson School of International Studies</a></li>
+							<!-- <li><a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=2&source=ECM">Henry M. Jackson School of International Studies</a></li> -->
 							<li><a href="https://ischool.uw.edu/boundless">Information School</a></li>
 							<li><a href="http://foster.uw.edu/campaign">Michael G. Foster School of Business</a></li>
 							<li><a href="https://www.cs.washington.edu/supportcse">Paul G. Allen School of Computer Science &amp; Engineering</a></li>
