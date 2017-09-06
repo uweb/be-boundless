@@ -10,6 +10,7 @@
 @import "../../immersive-stories/less/slideshow.less";
 
 @foster: "../../immersive-stories/img/foster-school";
+@fb: "../../immersive-stories/img/farmer-brown";
 @enviro: "../../immersive-stories/img/environment";
 @img: "../../immersive-stories/img";
 
@@ -847,9 +848,54 @@ p {
             content: '';
             height: 100%;
             width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
             background: rgba(0, 0, 0, 0.5);
             opacity: 0;
-            .transition(all .5s ease-in);
+            .transition(all 2s ease-in);
+        }
+        &.darken {
+            h2 { 
+                opacity: 0;
+                &.in-the-field {
+                    opacity: 0.4;
+                }
+            }
+            div.audio { opacity: 1; }
+            &:after {
+                opacity: 1;
+            }
+        }
+        h2 {
+            position: absolute;
+            right: 0;
+            bottom: 100px;
+            transform-origin: top;
+            font-family: @font-family-base;
+            font-weight: 600;
+            letter-spacing: 2px;
+            font-size: 60px;
+            opacity: 0.4;
+            .rotate(-90deg);
+            .transition(all 1s ease-in);
+        }
+        h2.in-the-field {
+            opacity: 0;
+            bottom: 180px;
+            right: -110px;
+        }
+        div.audio {
+            z-index: 1;
+            position: absolute;
+            right: 3%;
+            top: 0px;
+            opacity: 0;
+            .transition(all 1s ease-in);
+            .audio-buttons {
+                left: auto;
+                right: 0;
+            }
         }
     }
     img.foreground {
@@ -869,15 +915,54 @@ p {
         min-height: 100vh;
     }
     section.section-content {
-        background: rgba(0, 0, 0, 0.5);
+        h2,
+        p {
+            text-align: left;
+        }
+        img {
+            height: auto;
+            width: 60%;
+            &.snapchat {
+                height: 60%; 
+                border-radius: 50%;
+                float: right;
+                margin-right: -20%;
+            }
+        }
+        .outset {
+            //margin-left: -10%;
+            margin: 50px 0 50px -10%;
+            position: relative;
+            blockquote {
+                display: inline-block;
+                position: absolute;
+                top: 20%;
+                width: 30%;
+                font-family: @uni;
+                font-weight: 700;
+                font-size: 1.5em;
+                color: white;
+                border: none;
+                span {
+                    font-family: @font-family-headline;
+                    font-weight: 900;
+                    font-size: 80px;
+                    color: white;
+                    position: absolute;
+                }
+                span:nth-of-type(1) {
+                    top: -60px;
+                    left: 15px;
+                }
+                span:nth-of-type(2) {
+                    bottom: -70px;
+                    right: 30px;
+                }
+            }
+
+        }
     }
-    div.copy {
-        margin-top: calc(~"26vh + 200px"); 
-        padding: 20px 30px;
-        background: rgba(0,0,0,0.4);
-        position: relative;
-        opacity: 1;
-        h2 {
+    h2 {
             color: white;
             text-align: center;
             font-family: @font-family-headline;
@@ -886,7 +971,21 @@ p {
             text-transform: uppercase;
             position: relative; 
             margin-bottom: 40px;    
-            &:after {
+    }
+    p {
+        color: white;
+        font-size: 17px;
+        //font-weight: bold;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.55);
+        text-align: center;
+    }
+    div.copy {
+        margin-top: calc(~"26vh + 200px"); 
+        padding: 20px 30px;
+        background: rgba(0,0,0,0.4);
+        position: relative;
+        opacity: 1;
+        h2:after {
                 content: '';
                 display: block;
                 width: 360px;
@@ -897,27 +996,6 @@ p {
                 //margin: 20px auto;
                 background: url("@{enviro}/squiggle.svg") no-repeat;
                 .background-size(contain);
-            }
-        }
-        p {
-            color: white;
-            font-size: 17px;
-            //font-weight: bold;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.55);
-            text-align: center;
-            // &.pull-text {
-            //     font-family: @headline;
-            //     line-height: 1.4;    
-            //     text-transform: uppercase;
-            //     font-size: 1.2em;
-            //     padding-top: 40px;
-            //     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-            //     position: relative;
-            //  }
-            &:first-child:before {
-                
-            }
-            
         }
         &:before {
             content: '';
@@ -944,25 +1022,6 @@ p {
             margin-top: -30px;
 
         }
-    }
-    &:after {
-        content:'INTRO';
-        font-family: @font-family-base;
-        font-weight: 600;
-        letter-spacing: 2px;
-        font-size: 60px;
-        position: fixed;
-        bottom: 260px;
-        right: 0;
-        z-index: 1;
-        color: white;
-        opacity: 0.4;
-        transform-origin: bottom right;
-        .rotate(-90deg);
-    }
-    &.in-the-field:after {
-        content: 'IN THE FIELD';
-        bottom: 520px;
     }
     span.lines {
         position: fixed;
@@ -1062,5 +1121,6 @@ p {
 
 
 }
+
 
 

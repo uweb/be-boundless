@@ -255,7 +255,30 @@
     <!-- <span class="lines right"></span>
     <span class="lines left"></span> -->
     <!-- <img class="foreground" alt="bear" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/pred-fore.png' ?>"> -->
-    <div class="enviro-bg"></div>
+    <div class="enviro-bg">
+        <h2>Intro</h2>
+        <h2 class="in-the-field">In the field</h2>
+        <div class="audio"><p class="length">0:44  <span>/ play interview</span></p>
+          <audio controls class="player">
+            <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/education/nicole-music.mp3' ?>" type="audio/mpeg">
+            <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
+            Your browser does not support HTML5 audio.
+          </audio>
+          
+          <p class="audio-buttons">
+            <button class="audio-ctrl audio-play" tabindex="0">0:44 / PLAY INTERVIEW</button>  
+            <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
+            <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
+          </p>
+
+          <div class="visually-hidden audio-transcript" tabindex="0">
+            <p>When it was first laid out, Jessica [Granger] just kept saying that it’ll be hands-on; you’ll be right there in the classroom coaching, and I didn’t know what that looked like. As we continued to practice, and I saw the changes in the kids’ thinking, I saw that it was really good work to do, so. I’d say I really enjoyed it. </p>
+
+            <p>It changed my thinking; I used to love reading, now I love teaching math, actually, more. And the kids learn and grow, I think, from each other, and seeing how different people solve things. And I even learn from them. I tell them every day we’re both coming to teach and learn, so I learn from them just as much as they learn from me.</p>
+          </div>
+          
+        </div>
+    </div>
     <section class="content">
       <section class="section-home">
         <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 copy">
@@ -270,10 +293,10 @@
           <p>Cras sagittis id tellus id tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus lacinia, tortor sed placerat fringilla, Cras sagittis id tellus id tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
           <p>Cras sagittis id tellus id tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
           <div class="outset">
-            <img src="" alt="photo of bear">
+            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/pred-outlet.jpg' ?>" alt="photo of bear">
             <blockquote><span>&ldquo;</span>There’s an essence we get to experience in the field that you can’t get by reading papers and being in the classroom<span>&rdquo;</span></blockquote>
           </div>
-          <img class="snapchat" src="" alt="snapchat video of ...">
+          <img class="snapchat" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/pred-outlet.jpg' ?>" alt="snapchat video of ...">
         </div>
       </section>
     </section>

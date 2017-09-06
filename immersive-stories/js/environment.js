@@ -169,7 +169,8 @@
 
 new ScrollMagic.Scene({triggerElement: "#predators", duration: "100%", triggerHook:0})
           .setPin("#predators > .enviro-bg")
-          .setTween("#predators > ..enviro-bg:after", {opacity: 1, ease: Power0.easeIn, delay: 0.0 })
+          .setClassToggle(".enviro-bg", "darken")
+          //.setTween("#predators > .enviro-bg:after", 1, {opacity: 1, ease: Power0.easeIn, delay: 0.0 })
           .addTo(currentController);
 
 // get all slides
@@ -190,6 +191,17 @@ new ScrollMagic.Scene({triggerElement: "#predators", duration: "100%", triggerHo
 //click students
 //
 
+//audio
+// Focus on button triggers 
+  $('.audio-play').bind("focus blur", function(event){
+       event.stopPropagation();
+       if(event.type == "focus")  {
+        $(event.target).closest('li').toggleClass('active-focus');
+       } 
+       else if(event.type == "blur") {
+        $(event.target).closest('li').toggleClass('active-focus');
+       }
+   });
 
 
 
