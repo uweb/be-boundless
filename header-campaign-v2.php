@@ -76,25 +76,24 @@ global $styles;
 						<p class="subheader">Campuses</p>
 						<ul class="list-unstyled">
 							<li><a href="http://www.uwb.edu/give">UW Bothell</a></li>
-							<li><a href="http://www.acceleratemed.org/">UW Medicine</a></li>
 							<li><a href="http://www.tacoma.uw.edu/boundless">UW Tacoma</a></li>
 						</ul>
-						<p class="subheader">Colleges</p>
+						<p class="subheader">Colleges &amp; Schools</p>
 						<ul class="list-unstyled">
 							<li><a href="http://artsci.washington.edu/boundless">College of Arts &amp; Sciences</a></li>
-							<!-- <li><a href="#">College of Built Environments</a></li> -->
+							<li><a href="http://be.washington.edu/support-be/">College of Built Environments</a></li>
 							<li><a href="http://education.uw.edu/campaign">College of Education</a></li>
 							<li><a href="http://www.engr.washington.edu/giving/impact">College of Engineering</a></li>
 							<li><a href="https://environment.uw.edu/alumni-and-community/giving-to-the-college/">College of the Environment</a></li>
+							<li><a href="http://evans.uw.edu/giving">Daniel J. Evans School of Public Policy &amp; Governance</a></li>
 						</ul>
 					</div><!-- .col-md-4 .col-lg-4 -->
 					<div class="col-sm-4 col-md-4 col-lg-4">
 						<p class="subheader">Schools</p>
 						<ul class="list-unstyled">
-							<li><a href="http://evans.uw.edu/giving">Evans School of Public Policy &amp; Governance</a></li>
-							<li><a href="http://foster.uw.edu/campaign">Foster School of Business</a></li>
-							<!-- <li><a href="#">The Henry M. Jackson School of International Studies</a></li> -->
+							<!-- <li><a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=2&source=ECM">Henry M. Jackson School of International Studies</a></li> -->
 							<li><a href="https://ischool.uw.edu/boundless">Information School</a></li>
+							<li><a href="http://foster.uw.edu/campaign">Michael G. Foster School of Business</a></li>
 							<li><a href="https://www.cs.washington.edu/supportcse">Paul G. Allen School of Computer Science &amp; Engineering</a></li>
 							<li><a href="https://dental.washington.edu/alumni-friends/give/make-a-gift/">School of Dentistry</a></li>
 							<li><a href="https://www.law.uw.edu/donate">School of Law</a></li>
@@ -105,9 +104,13 @@ global $styles;
 						</ul>
 					</div><!-- .col-md-4 .col-lg-4 -->
 					<div class="col-sm-4 col-md-4 col-lg-4">
+						<p class="subheader">Health System</p>
+						<ul class="list-unstyled">
+							<li><a href="http://www.acceleratemed.org/">UW Medicine</a></li>
+						</ul>
 						<p class="subheader">Departments</p>
 						<ul class="list-unstyled">
-							<!-- <li><a href="#">Academic &amp; Student Affairs</a></li> -->
+							<li><a href="http://www.washington.edu/uaa/support/">Academic &amp; Student Affairs</a></li>
 							<li><a href="http://uwtyeeclub.org/">Athletics</a></li>
 							<li><a href="http://www.lib.washington.edu/support/">University Libraries</a></li>
 						</ul>
