@@ -66,7 +66,7 @@
                       <div class="col-md-5 col-md-offset-1">
 
                           <div class="featured-full arrow-right">
-                            <img alt="" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ica/players.jpg' ?>">
+                            <img alt="Husky women’s soccer standout Havana McElvaine, ’17." title="Husky women’s soccer standout Havana McElvaine, ’17." src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ica/players.jpg' ?>">
                           </div>
 
                       </div>                 
@@ -77,10 +77,10 @@
         </div>   
       </section>
       
-      <iframe width="1280" height="720" src="https://www.youtube.com/embed/sYfkdUA2Rxw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      <iframe width="2560" height="1440" src="https://www.youtube.com/embed/sYfkdUA2Rxw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 
-      <section class="para arrow-top p-2">
+      <section class="para arrow-top p-2" title="McElvaine outside the King County Courthouse, where she interned.">
         <h3><span>The academic <i>and the activist</i></span></h3>
         <div class="cutout">
             <div class="pic arrow-bottom"></div>
@@ -129,7 +129,7 @@
 
       <section class="para arrow-top p-3">
         <h3><span>Social justice <i>takes center field</i></span></h3>
-        <div class="cutout">
+        <div class="cutout" title="McElvaine gives her thesis presentation in 2017.">
             <div class="pic arrow-bottom"></div>
 <!--             <div class="location">
               <p>Gould Hall</p>
@@ -216,7 +216,7 @@
                         <p class="attribute">Havana McElvaine, ’17</p>
 
                         <div class="featured-full arrow-right">
-                          <img alt="" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ica/students.jpg' ?>">
+                          <img  elebration" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ica/students.jpg' ?>">
                           <small>McElvaine and fellow student-athletes at the 47th annual Celebration, hosted by the UW Office of Minority Affairs & Diversity and the Friends of the Educational Opportunity Program.</small>
                         </div>
 
@@ -233,7 +233,7 @@
   
       <section class="para arrow-top p-5">
         <h3><span>The opportunity <i>of a lifetime</i></span></h3>
-        <div class="cutout">
+        <div class="cutout" title="UW President Ana Mari Cauce presents McElvaine with the University of Washington Athletic Scholar award at the 47th annual Celebration.">
             <div class="pic arrow-bottom"></div>
 <!--             <div class="location">
               <p>Augustus F. Hawkins Nature Park</p>
@@ -264,7 +264,7 @@
                         <p class="attribute">Lesle Gallimore, Head Coach, Husky Women’s Soccer</p>
 
                         <div class="featured-full arrow-right">
-                          <img alt="" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ica/havana.jpg' ?>">
+                          <img alt="McElvaine at home in the classroom." title="McElvaine at home in the classroom." src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ica/havana.jpg' ?>">
                         </div>
                       </div> 
                     </div>
@@ -280,7 +280,7 @@
               <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/ica/Havana-Map.mp4' ?>" type="video/mp4">
           </video>
       
-          <p>McElvaine’s Bonderman journey</p>
+          <p>McElvaine’s international journey will be supported by a Bonderman Fellowship.</p>
 
       </section>
 
