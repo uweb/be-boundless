@@ -49,11 +49,11 @@ global $styles;
 					</div><!-- .col-xs-12 .col-sm-12 .col-md-12 .col-lg-12 -->
 				</div><!-- .row -->
 			</div><!-- .cv2-header-mobile -->
-			<div class="cv2-header-white" role="navigation">
+			<div class="cv2-header-white">
 				<div class="row">
 					<div class="col-sm-8 col-md-8 col-lg-8">
-						<form>
-							<label>Make your gift today</label>
+						<form role="form">
+							<label for="cv2-header-give-amount">Make your gift today</label>
 							<span class="dollar">
 							$<input type="text" id="cv2-header-give-amount" />
 							</span>
@@ -89,7 +89,6 @@ global $styles;
 						</ul>
 					</div><!-- .col-md-4 .col-lg-4 -->
 					<div class="col-sm-4 col-md-4 col-lg-4">
-						<p class="subheader">Schools</p>
 						<ul class="list-unstyled">
 							<!-- <li><a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=2&source=ECM">Henry M. Jackson School of International Studies</a></li> -->
 							<li><a href="https://ischool.uw.edu/boundless">Information School</a></li>

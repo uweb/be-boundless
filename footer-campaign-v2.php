@@ -9,22 +9,23 @@ global $scripts;
 						<nav aria-label="social networking">
 							<ul class="cv2-list-social list-inline">
 								<li><a class="icon-sm facebook" href="http://www.facebook.com/UofWA">Facebook</a></li>
-								<!-- <li><a class="icon-sm tumblr" href="http://uofwa.tumblr.com/">Tumblr</a></li> -->
-								<!-- <li><a class="icon-sm pinterest" href="http://www.pinterest.com/uofwa/">Pinterest</a></li> -->
 								<li><a class="icon-sm twitter" href="http://twitter.com/UW">Twitter</a></li>
 								<li><a class="icon-sm youtube" href="http://www.youtube.com/user/uwhuskies">YouTube</a></li>
 								<li><a class="icon-sm linkedin" href="http://www.linkedin.com/company/university-of-washington">LinkedIn</a></li>
-								<!-- <li><a class="icon-sm google" href="https://plus.google.com/+universityofwashington/posts">Google+</a></li> -->
-								<!-- <li><a class="icon-sm instagram" href="http://instagram.com/uofwa">Instagram</a></li> -->
+								<?php /*<li><a class="icon-sm tumblr" href="http://uofwa.tumblr.com/">Tumblr</a></li>
+								<li><a class="icon-sm pinterest" href="http://www.pinterest.com/uofwa/">Pinterest</a></li>
+								<li><a class="icon-sm google" href="https://plus.google.com/+universityofwashington/posts">Google+</a></li>
+								<li><a class="icon-sm instagram" href="http://instagram.com/uofwa">Instagram</a></li>*/?>
 							</ul>
 						</nav>
 					</div><!-- .cv2-col-inner -->
 				</div><!-- .col-md-5 .col-lg-5 .col-lg-offset-1 .cv2-connect -->
 				<div class="col-md-7 col-lg-5 cv2-newsletter">
 					<div class="cv2-col-inner">
-						<h4>Campaign newsletter</h4>
-						<form>
-							<input type="text" placeholder="Enter your email address" />
+						<h4 id="signup-form-label">Campaign newsletter</h4>
+						<form role="form" aria-labeledby="signup-form-label">
+							<label for="signup-input" class="sr-only">Enter your email address</label>
+							<input type="text" id="signup-input" placeholder="Enter your email address" />
 							<button type="Submit">Sign Up</button>
 						</form>
 					</div><!-- .cv2-col-inner -->
