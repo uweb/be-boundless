@@ -68,9 +68,10 @@
 			<iframe width="1280" height="720" src="https://www.youtube.com/embed/QI50yL8rAIU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 		</section><!-- #video .text-block .white -->
 		<section id="inforgraphics" class="text-block white">
-			<div class="foo">
-				<h3>It takes a tame</h3>
+			<div class="sr-only">
+				<h3>It takes a team</h3>
 				<p>Through the social development model taught to community leaders like Aaron Parker, children are learning to choose behaviros thtat lead to great success in life.  Like with a baseball team, it takes dedication, practice and team bonding to successfully learn these behaviors.</p>
+			</div>
 			<div id="slide1" class="infographic slide1">
 				<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/SocialDev_graphic-v8-01.png" alt="1 - Opportunities: with the social development model, children are given an opportunity to learn new skills and behaviors." />
 			</div><!-- .infographic .slide1 -->
