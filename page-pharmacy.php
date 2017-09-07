@@ -1,248 +1,158 @@
-<?php get_header( "campaign-open" ); ?>
-<link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />
-<link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
-<link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/socialwork.css' ?>' type='text/css' media='all' />
-<?php get_header( "campaign-close" ); ?>
+<?php
+	$meta = '';
+	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/pharmacy.css' type='text/css' media='all' />";
+	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/pharmacy.min.js' type='text/javascript'></script>";
+	$storyCodes = 'ESIEND';
+	$storyAppeal = 'Support groundbreaking research and the future of health care by contributing to the School of Pharmacy.';
+	get_header( "campaign-v2" );
+?>
+
 <div id="immersive-body">
 	<section class="intro" id="intro-vid">
 		<div class="intro-body">
 			<div class="row">
-				<div class="col-md-6 col-lg-7 col-md-offset-1 col-xs-8 col-lg-offset-2 col-xs-offset-1" id='intro-text'>
-					<!--<h1><span><span>Where Will </span></span><span><span>Meets Way</span></span> </h1>-->
-					<h1>PHARMACY</h1>
-					<span class="udub-slant"><span></span></span>
-					<p>For Yakima-born Yesenia Velasquez, the Young Executives of Color program at the Foster School of Business has opened the door to a promising future she never knew existed.</p>
-					<a data-lity href="https://www.youtube.com/embed/LB6eMB4g2B0?autoplay=1&rel=0&showinfo=0">
-						<svg xmlns="http://www.w3.org/2000/svg" width="75.649" height="75.625" viewBox="0 0 75.649 75.625">
-							<circle fill="none" stroke="#FFF" stroke-width="4.649" stroke-miterlimit="10" cx="37.785" cy="37.822" r="34.703"/>
-							<path fill="#FFF" d="M25.88 19.814l32.885 18.008-32.886 18.01"/>
-						</svg>
-						<!-- </svg> -->
-						<p>See Yesenia&rsquo;s story</p>
-					</a>
-				</div>
-			</div>
-		</div>
+				<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-1 col-md-offset-1 col-lg-offset-2" id='intro-text'>
+					<h1>A Pocket-Size Research Revolution</h1>
+					<p>With a device that can model a real kidney, researchers at the UW School of Pharmacy are giving new hope to people with kidney conditions — as well as astronauts who hope to explore the farthest reaches of space.</p>
+				</div><!-- .col-xs-8 .col-sm-8 .col-md-8 .col-lg-8 .col-xs-offset-1 .col-md-offset-1 .col-lg-offset-2 #intro-text -->
+			</div><!-- .row -->
+		</div><!-- .intro-body -->
 		<section class="scrollit read-more">
 			<p>Scroll Down</p>
-				<div class="mouse">
-					<div class="scroll"></div>
-			</div>
-		</section>
-	</section>
+			<div class="mouse">
+				<div class="scroll"></div>
+			</div><!-- .mouse -->
+		</section><!-- .scrollit .read-more -->
+	</section><!-- .intro #intro-vid -->
 	<main id="main_content">
 		<section class="text-block start white">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
-						<p class="bolder"><b>From her first day of kindergarten, Yesenia Velasquez knew that she would have to work harder than the other kids.</b></p>
-						<p>She started school without many advantages, save for wit and genuine grit. Her parents had immigrated to the Yakima Valley from Jalisco, Mexico, before she was born. To make a life in the United States, they worked hard at thankless jobs &mdash; Gonzalo forged bricks and Catalina packed produce.</p>
-						<p>But they wanted more for their three daughters.</p>
-						<p>“My parents always taught me that education is the key to success,” says Velasquez. “That’s what made me an independent learner. I’ve always craved education.”</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="profile profile-1">
-			<div class="text-block">
-				<!-- <img alt="Photo of Yesenia Velasquez" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/portrait-yesenia.jpg' ?>"> -->
-				<div class="cutout"><div></div></div>
-				<div class="copy">
-					<p>Yesenia Velasquez</p>
-					<blockquote><span>&ldquo;</span>My parents always taught me that education is the key to success. That’s what made me an independent learner. I’ve always craved education.<span>&rdquo;</span></blockquote>
-				</div>
-			</div>
-		</section>
-		<section class="text-block transparent">
+						<p>Imagine that you live in a house on the beach.</p>
+						<p>Day to day, your view of the ocean never seems to change. But after 10 or 15 years, you look outside one morning and see the water lapping at your porch.</p>
+						<p>For many, that’s what it’s like to have kidney disease. “It slowly progresses over years, maybe even decades, but people often don’t know it until something goes wrong — until the water is at their door,” explains Catherine Yeung, Pharm.D., Ph.D., a research assistant professor at the UW School of Pharmacy.</p>
+						<p>The Centers for Disease Control and Prevention (CDC) estimates that while 15 percent of American adults have chronic kidney disease, most of them don’t even know it. Only when the disease is in its later stages — when it’s often too late for reversal — do more severe symptoms cause people to seek help, says Yeung.</p>
+						<p>An inability to track the early stages of chronic kidney disease leaves researchers like Yeung at a loss for what early biological markers might look like. There’s also much to learn about how kidney problems affect the body’s ability to eliminate medications.</p>
+						<p>At the University of Washington School of Pharmacy, an interdisciplinary team is undertaking revolutionary work that could change the future of precision medicine and kidney research — all with a device the size of a credit card.</p>
+					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</section><!-- .text-block .start .white -->
+		<section id="video" class="text-block black">
+			<iframe width="1280" height="720" src="https://www.youtube.com/embed/QI50yL8rAIU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		</section><!-- #video .text-block .white -->
+		<section class="text-block white">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
-						<p>That craving eventually led her to participate in the rigorous Running Start program in high school. The flexible schedule allowed her to work longer shifts at McDonald’s, where she earned enough to afford some of the “extras” that many teenagers take for granted: school clothes, textbooks, band travel, graphing calculators.</p>
-						<p>But no matter how much she learned or how well she did in school, college looked no less expensive or intimidating to Velasquez. Besides, what would she study? Growing up in a working-class Hispanic community, she saw most career possibilities as abstract at best. Maybe law or medicine? She had never even heard of accounting.</p>
-						<p>Then she discovered the Young Executives of Color (YEOC) program at the University of Washington Foster School of Business.</p>
-						<div id="eng-slideshow" class="foster-slideshow">
-							<div>
-								<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-3.jpg' ?>" alt="Velasquez with one of her two younger sisters" />
-								<p>Yesenia (right) Velasquez with one of her two younger sisters, Diana Guadalupe, at their childhood home in Yakima.</p>
-							</div>
-							<div>
-								<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-1.jpg' ?>" alt="Yesenia’s parents" />
-								<p>Yesenia’s parents, Catalina and Gonzalo Velasquez, at the plaza in Tepatitlán de Morelos, Jalisco, Mexico.</p>
-							</div>
-							<div>
-								<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-6.jpg' ?>" alt="Yesenia with others from her soccer team" />
-								<p>Yesenia (far right) with others from her soccer team, the Shooting Stars, after a game in the Tri-Cities. “That’s where my dad’s pride would come out a lot — he loves soccer,” says Yesenia.</p>
-							</div>
-						</div>
-						<h3>Ambition unlocked</h3>
-						<p>A partnership between the Foster School and the professional services firm EY (formerly Ernst &amp; Young), YEOC is a nine-month program that provides an introduction to business careers, professional development, college preparation and mentoring to some of the most promising high school students from underrepresented minority communities around the state. The goal is to unlock potential, offer opportunity and, ultimately, to expand prosperity.</p>
-						<p>One Saturday each month throughout her senior year, Velasquez woke up at 4 a.m. to make the several-hour journey to Seattle, sometimes escorted by her family, sometimes alone on the bus. These treks were richly rewarded with practical information and profound inspiration.</p>
-						<p>“No matter the trouble to get there,” she says, “it was worth it.”</p>
-						<p>Hearing stories from each session’s featured speaker &mdash; senior executives who look like and come from similar backgrounds as many of the students &mdash; Velasquez began to visualize what she could become. Even the location stirred the soul.</p>
-						<p>Her first YEOC session was the first time she’d visited a college campus. &ldquo;It was amazing,&rdquo; she recalls. &ldquo;Walking into the giant atrium of PACCAR Hall and thinking, &lsquo;OK, this is possible. I can see myself here.&rsquo;&rdquo;</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="bus-map">
-			<svg aria-hidden="true" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1500px" height="916px" viewBox="0 0 1500 916" enable-background="new 0 0 1500 916" xml:space="preserve">
-				<path class="path" style="stroke-dashoffset: 1600px;" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M1247.608,823.186l-3.04-5.742c0,0,0.677-4.729,2.027-4.729s4.391,1.014,4.729,0s4.392-6.418,5.742-8.782s2.702-3.716,4.729-2.702
-s7.431-0.675,10.809-1.688s3.378-1.352,6.418-3.378s4.053-5.066,7.769-5.404s6.08-2.027,8.444-3.378s3.377-3.377,7.093-4.391
-s3.716-3.716,3.716-3.716s-4.053-4.392-2.364-5.742s6.417-3.716,6.755-8.106s-1.014-7.094,0.338-8.106s-0.676-7.431-2.702-7.431
-s-7.432-3.715-8.782-4.729s-14.187-5.405-18.239-7.77s-8.781-3.378-12.159-4.729s-6.757-2.026-10.472-4.729
-s-18.238-8.782-27.696-8.444s-17.228-6.418-18.24-10.809s-6.418-8.106-16.551-8.444s-21.617-5.404-27.359-7.431
-s-11.822-9.458-19.591-10.809s-16.214-5.743-22.631-6.418s-19.59-3.715-23.306-4.391s-7.769-3.715-10.471-4.729
-s-11.147-3.04-14.862-2.702s-5.741-2.028-9.457-4.729s-15.538-5.404-17.902-5.404s-4.729-1.352-8.783-5.405
-s-2.364-6.755-11.484-7.769s-1.013-0.339-12.497-1.689s-18.579-2.702-27.022-5.404s-22.968-3.378-31.074-2.702
-s-20.604,1.352-30.062,0.676s-12.161-0.675-20.604-4.053s-19.252-5.066-24.994-5.066s-14.188-2.366-21.28-4.73
-s-9.457-4.391-17.226-6.417s-27.022-4.392-31.413-4.392s-15.537-3.715-16.213-6.417s-11.485-7.431-17.227-8.106
-s-7.769-4.053-13.173-5.742s-11.484-2.026-13.849-8.444s-1.35-8.106-8.781-8.106s-8.106,0.675-8.782-3.716s-3.715-5.065-8.106-3.715
-s-22.294,8.78-35.805,7.092s-23.645-0.676-30.399-2.702s-20.265-6.08-32.763-6.08s-23.645-4.391-28.373-4.391
-s-21.279-8.782-29.724-8.106s-20.604-1.013-25.671-4.391s-10.808-5.067-17.226-5.067s-19.252,0-24.319,0.338
-s-18.915-4.053-30.062-6.417s-17.564-1.689-22.631-0.676s-20.941-1.013-29.724-4.391s-12.498-5.066-17.902-5.404
-s-11.146-1.014-16.213-0.676s-16.212,0.674-26.008-0.339s-18.916-5.066-25.671-4.729s-19.252,2.026-23.306,0
-s-4.054-2.026-4.054-2.026"/>
-				<g>
-					<path fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" d="M1259.377,826.684
-c-0.55-2.579-4.976-4.536-9.931-4.638l0,0c-4.951-0.099-9.455,1.669-10.115,4.227l0,0c-0.752,2.911,3.64,5.681,9.9,5.811l0,0
-C1255.496,832.214,1259.997,829.622,1259.377,826.684L1259.377,826.684z"/>
-					<line fill="none" stroke="#4C2E82" stroke-width="1.9032" stroke-linecap="round" stroke-miterlimit="10" x1="1248.992" y1="778.213" x2="1248.992" y2="826.506"/>
-					<polygon fill="#4C2E82" points="1182.854,809.262 1249.24,809.262 1249.24,784.021 1175.56,784.021  "/>
-					<g>
-						<path fill="#FFFFFF" d="M1195.322,798.19l-3.099-5.564h2.673l1.233,2.477l0.349,0.896h0.109l0.338-0.896l1.244-2.477h2.651
-l-3.044,5.488v2.586h-2.455V798.19z"/>
-						<path fill="#FFFFFF" d="M1199.697,800.58l2.488-7.954h3.644l2.488,7.954v0.12h-2.368l-0.491-1.647h-2.913l-0.479,1.647h-2.368
-V800.58z M1204.924,797.187l-0.338-1.2l-0.48-1.69h-0.196l-0.491,1.713l-0.327,1.178H1204.924z"/>
-						<path fill="#FFFFFF" d="M1208.929,792.626h2.454v3.077h0.906l1.571-3.077h2.717l-2.019,3.514l-0.633,0.294v0.099l0.654,0.306
-l2.193,3.862h-2.717l-1.626-3.12h-1.048v3.12h-2.454V792.626z"/>
-						<path fill="#FFFFFF" d="M1217.308,792.626h2.454v8.074h-2.454V792.626z"/>
-						<path fill="#FFFFFF" d="M1221.104,792.626h3.35l1.2,3.284l0.414,1.626h0.065l0.426-1.626l1.2-3.284h3.339v8.074h-2.16v-5.423
-h-0.099l-0.665,2.183l-1.103,2.913h-1.942l-1.102-2.913l-0.666-2.183h-0.098v5.423h-2.16V792.626z"/>
-						<path fill="#FFFFFF" d="M1231.71,800.58l2.488-7.954h3.644l2.488,7.954v0.12h-2.368l-0.491-1.647h-2.913l-0.479,1.647h-2.368
-V800.58z M1236.937,797.187l-0.338-1.2l-0.48-1.69h-0.196l-0.491,1.713l-0.327,1.178H1236.937z"/>
-					</g>
-				</g>
-				<g>
-					<path fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" d="M320.875,508.553
-c-0.55-2.579-4.976-4.536-9.931-4.638l0,0c-4.951-0.099-9.455,1.669-10.115,4.227l0,0c-0.752,2.911,3.64,5.681,9.9,5.811l0,0
-C316.995,514.083,321.496,511.491,320.875,508.553L320.875,508.553z"/>
-					<line fill="none" stroke="#4C2E82" stroke-width="1.9032" stroke-linecap="round" stroke-miterlimit="10" x1="310.427" y1="460.49" x2="310.427" y2="508.782"/>
-					<polygon fill="#4C2E82" points="386.526,491.538 310.62,491.538 310.62,466.299 393.819,466.299   "/>
-					<g>
-						<path fill="#FFFFFF" d="M327.303,483.105c-0.233,0-0.482-0.007-0.748-0.021s-0.538-0.038-0.818-0.071
-c-0.28-0.032-0.558-0.069-0.834-0.109c-0.276-0.039-0.539-0.089-0.786-0.146v-1.965c0.589,0.132,1.124,0.231,1.604,0.301
-s0.927,0.104,1.342,0.104c0.437,0,0.744-0.04,0.922-0.12c0.178-0.08,0.267-0.215,0.267-0.403c0-0.211-0.1-0.366-0.3-0.464
-c-0.2-0.099-0.515-0.177-0.944-0.235c-0.458-0.065-0.864-0.161-1.217-0.289c-0.353-0.127-0.649-0.298-0.889-0.513
-c-0.24-0.214-0.42-0.476-0.54-0.785s-0.18-0.679-0.18-1.107c0-0.786,0.304-1.396,0.911-1.833s1.457-0.655,2.548-0.655
-c0.189,0,0.376,0.006,0.562,0.017c0.185,0.011,0.385,0.029,0.6,0.055c0.214,0.025,0.447,0.058,0.698,0.099
-c0.251,0.04,0.536,0.093,0.856,0.158v1.941c-0.189-0.058-0.389-0.108-0.6-0.152s-0.424-0.082-0.638-0.114
-c-0.215-0.033-0.426-0.059-0.633-0.077c-0.208-0.018-0.398-0.027-0.573-0.027c-0.778,0-1.167,0.179-1.167,0.535
-c0,0.232,0.109,0.411,0.328,0.534c0.218,0.124,0.567,0.226,1.047,0.306c0.458,0.08,0.854,0.184,1.189,0.312
-c0.334,0.127,0.612,0.285,0.834,0.475c0.222,0.188,0.387,0.416,0.497,0.682c0.109,0.266,0.164,0.576,0.164,0.933
-C330.806,482.226,329.638,483.105,327.303,483.105z"/>
-						<path fill="#FFFFFF" d="M331.711,474.9h6.329v1.877h-3.874v1.222h3.458v1.877h-3.458v1.211h3.982v1.888h-6.438V474.9z"/>
-						<path fill="#FFFFFF" d="M338.454,482.854l2.488-7.954h3.645l2.487,7.954v0.12h-2.368l-0.491-1.647h-2.914l-0.48,1.647h-2.368
-V482.854z M343.681,479.461l-0.338-1.2l-0.48-1.69h-0.196l-0.491,1.713l-0.327,1.178H343.681z"/>
-						<path fill="#FFFFFF" d="M348.667,476.788h-2.193V474.9h6.841v1.888h-2.193v6.187h-2.455V476.788z"/>
-						<path fill="#FFFFFF" d="M355.944,476.788h-2.193V474.9h6.841v1.888h-2.193v6.187h-2.455V476.788z"/>
-						<path fill="#FFFFFF" d="M361.476,474.9h2.455v6.197h3.317v1.877h-5.772V474.9z"/>
-						<path fill="#FFFFFF" d="M368.055,474.9h6.329v1.877h-3.874v1.222h3.458v1.877h-3.458v1.211h3.982v1.888h-6.438V474.9z"/>
-					</g>
-				</g>
-			</svg>
-			<div class="miles">
-				<p id="counter"></p><p> Miles</p>
-			</div>
-		</section>
-		<section class="text-block bus arrow">
-			<div class="col-md-5 col-md-offset-6 col-xs-10 col-lg-offset-6 col-xs-offset-1 copy">
-				<p>Yesenia woke up at 4 a.m. to make the several-hour journey to Seattle, sometimes escorted by her family, sometimes alone on the bus.</p>
-			</div>
-			<video autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/bus2.jpg' ?>" class=" fullscreen-bg__video">
-				<!-- <source src="img/street-bw-webm.webm" type="video/webm"> -->
-				<source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/foster-school/bus2.mp4' ?>" type="video/mp4">
-				<source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/foster-school/bus2.webm' ?>" type="video/webm">
-			</video>
-		</section>
-		<section class="text-block white transparent">
+						<h2 class="h3">A breakthrough for pharmaceutical scientists</h3>
+						<p>It’s called kidney-on-a-chip. Inside its small frame are thousands of live kidney cells that can model the functions of a human kidney. For pharmacy researchers, this device has opened up countless possibilities, as kidneys play a major role in the body’s ability to process medications.</p>
+						<p>“Kidneys are part of the ‘holy trinity’ of drug clearance,” says Edward Kelly, Ph.D., associate professor at the School of Pharmacy. “The intestine is involved in absorption, the liver is involved in metabolism and the kidneys are involved in excretion,” meaning they help the body clear medication via urine.</p>
+						<p>People with failing kidneys might not be able to process medications as efficiently as those with healthy kidneys. On top of that, there’s the possibility that certain medications could further compromise their kidneys. This is critical, as unlike the liver and other organs, the kidney lacks the ability to regenerate.</p>
+						<p>This is what Yeung and Kelly are focusing on with kidney-on-a-chip.</p>
+					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</section><!-- .text-block white -->
+		<section class="text-block white">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 col-md-offset-1 two-column-copy-left">
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/foster-school/yesenia-cutout.jpg" alt="Photograph of the Kidney on a Chip" />
+					</div><!-- .col-md-5 .col-md-offset-1 .two-column-copy-left -->
+					<div class="col-md-5 two-column-copy-right">
+						<p>The design of the chip — created by UW spin-out Nortis, with input from the UW team — allows researchers to run medications through the system, which functions as the organ normally would.</p>
+						<p>Previously, researchers would put kidney cells on a plate, add medications and examine the interaction. “But that’s not what happens in the body,” says Yeung. “In the body, there’s always blood flowing — and one of the things that we’ve been able to address with kidney-on-a-chip is that we have flow. This big advance allows us to study the kidney in a very native, natural environment.”</p>
+						<p>With a closed system, drugs can flow through the chip without requiring gravity to keep the fluids in contact with the cells. This distinguishing factor helped the UW team be selected for special research that they’ll conduct in a place where liquids don’t follow the laws of gravity — but more on that later.</p>
+					</div><!-- .col-md-5 .two-column-copy-right -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</section><!-- .text-block white -->
+		<section class="text-block white">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
-						<div class="inset-pics">
-							<div><img alt="Yesenia studying" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/paccar.jpg' ?>" /></div>
-							<div><img alt="Yesenia working" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/studying-3.jpg' ?>" /></div>
-							<div><img alt="Students talking" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/talking-2.jpg' ?>" /></div>
-						</div>
-						<h3>Making the most of an opportunity</h3>
-						<p> And here she is. Velasquez earned her place at the UW and the Foster School, where she has flourished. With ongoing support from the school’s office of Undergraduate Diversity Services and a mosaic of scholarships — donated by EY, Microsoft and Costco, among other organizations — she has been able to engage fully at the UW and beyond.</p>
-						<p>Velasquez serves in leadership roles at the Association of Latino Professionals for America and in the Kappa Delta Chi cultural sorority. She has also represented the UW at the Indiana University Kelley School of Business National Diversity Case Competition, and she has <a href="http://www.washington.edu/global/opportunities/#yesenia">studied abroad in Morocco</a>.</p>
-						<p>Her Foster education has continued to open doors. Perhaps most significantly, Velasquez landed an internship at EY after her first year on campus. After rotating between the firm’s audit, advisory and tax practices for the past two summers, she is spending this summer as a national tax intern, working with some of EY’s largest clients.</p>
-						<p>“Yesenia brings a can-do positivity that shows up in everything she does,” says EY recruiter Katie Campbell. “She’s already proven herself to be smart, driven and hardworking. We believe she can do anything she sets her mind to.”</p>
-						<h3>From mentee to mentor</h3>
-						<p>Now an incoming senior at the UW with a clear path to success that is unprecedented in her family, Velasquez has returned to YEOC as a mentor. She brings that positivity — and a wealth of wisdom — to high school students searching for their own futures.</p>
-						<p>“Yesenia wants to follow those in front of her and help others behind her,” says Pamela Lacson, associate director of Foster’s Undergraduate Diversity Services. “This is what sets YEOC apart: having mentors who look like her, who provide real answers and real possibilities to young people who have the drive but lack the social capital that comes with a lineage of college education.”</p>
-						<p>Velasquez sees mentoring as the first installment of a lifelong payback plan. From that first day of school, she has remained motivated both by her own expectations and by the pride and pressures of her family. “My parents came from nothing and worked so hard for me to have these opportunities,” she says. “I want to pay them back. I want to make them proud.”</p>
-						<p>Reflecting on her family’s efforts, she muses, “Every now and then, it hits me. I’m in college. I work in a skyscraper. I’ve been to New York and San Francisco and Morocco — all of these things I could never have imagined when I was in middle school. No matter how hard I worked, I wouldn’t be where I am without YEOC.”</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="callout">
-			<div class="text-block">
-				<div class="copy">
-					<img alt="Yesenia smiling" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/yesenia-3.jpg' ?>" />
-					<blockquote><span>&ldquo;</span>No matter how hard I worked, I wouldn’t be where I am without YEOC.<span>&rdquo;</span></blockquote>
-				</div>
-			</div>
-		</section>
-		<section class="text-block white transparent">
+						<h2 class="h3">Revolutionizing research — and patients’ lives</h2>
+						<p>By giving researchers the ability to test multiple drugs at the same time, the chip may lead to a quicker and safer approval process for new medications. Because the harmful effects of medications would be detected with the chip, the need for human and animal test subjects would drop dramatically.</p>
+						<p>The chip also stands to transform what researchers know about the effects of kidney conditions on drug clearance.</p>
+						<p>“I think it’ll lead to breakthroughs in choosing the right drug and the right dose the first time, instead of a lot of trial and error,” says Yeung.</p>
+						<p><strong>INFOGRAPHIC - 15% OF ADULTS IN THE U.S. HAVE CRONIC KIDNEY DISEASE</strong></p>
+					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</section><!-- .text-block white -->
+		<section class="text-block white">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
-						<h3>YEOC: Mission and history</h3>
-						<p>The Young Executives of Color program was established at the University of Washington Foster School of Business in 2006. Its mission is to cultivate the academic potential of underrepresented high school student leaders in Washington state.</p>
-						<p>YEOC began with 36 students from 17 high schools. In the 2016–17 academic year, the partnership with the professional services firm EY brought 170 sophomores, juniors and seniors from 75 high schools around the state to the Foster campus one Saturday a month.</p>
-						<p>While YEOC helps increase access to excellence at the UW, the pipeline program helps cultivate leaders who attend college all over the state — and the country. Says Lacson, “Historically, 100 percent of our high school seniors have gone on to college. They not only go to the UW, but they are getting into schools across the country. That’s a win for the business community and for college access.” </p>
-						<div style="text-align: center; margin-bottom: 50px"><img width="500" height="200" alt="Since the YEOC program was founded in 2006, 755 students have attended from 155 high schools across Washington State" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/map.png' ?>" /></div>
-						<h3>Fostering diversity</h3>
-						<p>EY doesn’t just underwrite the UW Foster School’s Young Executives of Color program. It also provides volunteers, recruits high-level executives as keynote speakers, delivers professional development exercises and offers invaluable consulting on curriculum, topics and activities.</p>
-						<p>“The mission of YEOC aligns with EY's passion for promoting equity in the workforce — championing diversity and inclusiveness — which is at the very heart of EY's values,” says Christian Tinder, ’99, a principal in EY’s advisory practice and the firm’s coordinating partner with the UW.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="profile profile-2">
-			<div class="text-block">
-				<div class="cutout"><div></div></div>
-				<span><b>Christian Tinder </b>// Principal, EY</span>
-				<div class="copy">
-					<blockquote><span>&ldquo;</span>We are a purpose-driven organization. Our goal is to build a better working world. And part of that goal is building a more diverse working world. Diverse teams are better teams. When we bring diversity — of ethnicity, gender, experience, thought — to the table, we present better solutions to our clients.<span>&rdquo;</span></blockquote>
-				</div>
-			</div>
-		</section>
-		<section class="text-block giving-widget branded arrow">
+						<p><strong>PHOTOGRAPH</strong></p>
+						<p>The UW team has already begun testing various drugs, including antibiotics that are less harmful to kidneys.</p>
+						<p>“In one instance, we tested two antibiotics against each other,” describes Wade Washington, a sophomore at the UW and a researcher in Kelly’s lab. “With the chips, we could tell that at certain dosages, one drug was less nephrotoxic [damaging to the kidneys] than the other.”</p>
+						<p>Washington knows firsthand the impact this research could have. He was born with chronic kidney disease and underwent a successful transplant when he was 15.</p>
+						<p>“I took antibiotics after my transplant surgery,” Washington says. “For people like me with kidney disease, antibiotics can really be a double-edged sword. I see the chips as definitely a better way to test for nephrotoxicity in new drugs.”</p>
+					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</section><!-- .text-block white -->
+		<section class="text-block giving-widget-promoted">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-10 col-md-offset-1 copy ">
-						<div style="text-align: center">
-							<h2 class="headline-gold">What you care about <br>can change the world</h2>
-							<p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. You can help the Foster School of Business and Young Executives of Color transform the lives of more students like Yesenia Velasquez by contributing to these funds.</p>
-							<div id="immersive-give-iframe"></div>
-							<div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="BEDDIS,UNDDIV,ACOUNT,YVBEND,EYEXCL" href="#">Give now</a></span></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- <div id="mapid"></div> -->
-	</main>
+					<div class="col-md-8 col-lg-8 col-md-offset-1 col-lg-offset-1">
+						<h2 class="h3">A brighter future for patients everywhere</h2>
+						<p>Kidney-on-a-chip is one of many School of Pharmacy endeavors that aim to improve disease treatment and prevention through precision medicine. By supporting funds/initiatives/etc. like the [TBD PHARMACY CAMPAIGN FUND], you can help develop solutions for the world’s biggest medical challenges.</p>
+						<div class="visible-md-block visible-lg-block">
+							<div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="<?php echo $storyCodes; ?>" href="#giving-widget-promoted">Give now</a></span></div>
+							<button id="close-give">Close</button>
+							<div id="immersive-give-iframe-promoted"></div>
+						</div><!-- .visible-md-block .visible-lg-block -->
+						<div class="visible-xs-block visible-sm-block">
+							<div class="boundless-button sm dark give"><span><a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=3&source=<?php echo $storyCodes; ?>">Give now</a></span></div>
+						</div><!-- .visible-xs-block .visible-sm-block -->
+					</div><!-- .col-md-8 .col-lg-8 .col-md-offset-1 .col-lg-offset-1 .copy -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</section><!-- .text-block .giving-widget-promoted -->
+		<section class="text-block white">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 copy">
+						<p><strong>PHOTOGRAPH</strong></p>
+						<h2 class="h3">Kidney-on-a-chip lifts off</h2>
+						<p>What if you could speed up the development of kidney disease? What if you could see the water creep up to your front door inch by inch?</p>
+						<p>In 2018, the UW team will have that opportunity to find out. They’re sending kidney-on-a-chip to the one place where time does speed up: outer space.</p>
+						<p>Microgravity acts as an accelerant, so kidney problems that take decades to develop on Earth need only weeks or months on the International Space Station (ISS), where astronauts will study the chips over the course of a few weeks.</p>
+						<p>“Use of the kidney-on-a chip here on Earth has already taught us a lot about kidney function and kidney diseases,” says Jonathan Himmelfarb, M.D., director of the Kidney Research Institute and endowed chair in kidney research at the UW School of Medicine. “The opportunity to study how the loss of gravitational forces affect kidney cellular function has the potential to improve the health of people on Earth, as well as prevent medical complications that astronauts experience from weightlessness.”</p>
+						<p><strong>INFOGRAPHIC - ASTRONAUTS LOSE UP TO 2% OF BONE MASS PER MONTH, SEVERAL TIMES MORE THAN IS LOST BY PRATIENTS WITH OSTEOPOROSIS.</strong></p>
+						<p>Bone loss is a major concern for astronauts, Kelly says. “That’s why astronauts exercise and employ other means to counter this issue when they’re in space. Kidneys synthesize the active form of Vitamin D, which is necessary to maintain healthy bones, so we’ll be asking if kidney cells still perform that function in microgravity.”</p>
+						<p>Sending the chips to the ISS also stands to benefit another group of space travelers: the first Mars colonists.</p>
+						<p>The current record for the most consecutive days in space is 438 — but in theory, Mars colonists would remain for decades. After studying chips on the ISS, researchers might have a better idea of how to help the human body withstand the effects of spending so much time in a lower-gravity environment.</p>
+						<p>“Sending cells to space like this has never been done before,” says Yeung. “This is experimental in the truest sense of the word, which is incredibly exciting.”</p>
+					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</section><!-- .text-block white -->
+		<section class="text-block white">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 col-md-offset-1 two-column-copy-left">
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/foster-school/yesenia-cutout.jpg" alt="Photograph of reasearchers working on the Kidney on a Chip" />
+					</div><!-- .col-md-5 .col-md-offset-1 .two-column-copy-left -->
+					<div class="col-md-5 two-column-copy-right">
+						<h2 class="h3">Real-life impact on patients</h2>
+						<p>After the chips return from space, the UW team plans to use their improved understanding of kidney mechanics to test whether kidney-on-a-chip can be used to cure diseases, in addition to treating and preventing them.</p>
+						<p>“We’ll see if we can advance drug development by using a method that is a lot faster and a lot cheaper than finding people with polycystic kidney disease, for example, and giving them experimental drugs and hoping they work,” says Yeung.</p>
+						<p>For the researchers involved, kidney-on-a-chip might very well bring about changes in their lifetime, a rarity for big medical breakthroughs. With the help of donor support, the School of Pharmacy hopes to see this kind of development in other areas of research, from drug safety to geriatric pharmacy.</p>
+						<p>“As a pharmacist, I’m very satisfied to be able to show people what we’re doing and where their research dollars are going,” says Yeung. “With kidney-on-a-chip, we have an actual chance to impact the lives of patients.”</p>
+					</div><!-- .col-md-5 .two-column-copy-right -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</section><!-- .text-block white -->
+	</main><!-- #main_content -->
 	<div id="popup"></div>
-</div>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/animationLibraries.min.js' ?>" type="text/javascript"></script>
-<script src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/js/foster-school.min.js' ?>" type="text/javascript"></script>
-<script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
-<?php get_template_part('footer', 'campaign'); ?>
-</body>
-</html>
+</div><!-- #immersive-body -->
+
+<?php
+	include(locate_template('include-giving.php'));
+	get_template_part('footer','campaign-v2');
+?>
