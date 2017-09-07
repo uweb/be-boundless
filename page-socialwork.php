@@ -40,8 +40,15 @@
 		<section class="text-block profile white">
 			<div class="background"></div>
 			<div class="text">
-				<p class="name">STEPHAN BLOUNT</p>
-				<p class="title">Master’s Candidate,<br />School of Social Work</p>
+				<h2>
+					Stephan Blount<br />
+					<small>
+						Master’s Candidate,<br />
+						School of Social Work
+					</small>
+				</h2>
+				<!--<p class="name">STEPHAN BLOUNT</p>
+				<p class="title">Master’s Candidate,<br />School of Social Work</p>-->
 			</div>
 			<div class="photograph"></div>
 		</section><!-- .profile .profile-1 -->
@@ -61,20 +68,23 @@
 			<iframe width="1280" height="720" src="https://www.youtube.com/embed/QI50yL8rAIU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 		</section><!-- #video .text-block .white -->
 		<section id="inforgraphics" class="text-block white">
+			<div class="foo">
+				<h3>It takes a tame</h3>
+				<p>Through the social development model taught to community leaders like Aaron Parker, children are learning to choose behaviros thtat lead to great success in life.  Like with a baseball team, it takes dedication, practice and team bonding to successfully learn these behaviors.</p>
 			<div id="slide1" class="infographic slide1">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/SocialDev_graphic-v8-01.png" />
+				<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/SocialDev_graphic-v8-01.png" alt="1 - Opportunities: with the social development model, children are given an opportunity to learn new skills and behaviors." />
 			</div><!-- .infographic .slide1 -->
 			<div id="slide2" class="infographic slide2">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/SocialDev_graphic-v8-02.png" />
+				<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/SocialDev_graphic-v8-02.png" alt="2 - Skills: the children learn new skills to help them choose healthy behaviors over unhealthy ones." />
 			</div><!-- .infographic .slide2 -->
 			<div id="slide3" class="infographic slide3">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/SocialDev_graphic-v8-03.png" />
+				<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/SocialDev_graphic-v8-03.png" alt="3 - Recognition: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
 			</div><!-- .infographic .slide3 -->
 			<div id="slide4" class="infographic slide4">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/SocialDev_graphic-v8-04.png" />
+				<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/SocialDev_graphic-v8-04.png" alt="4 - Healthy Behaviors: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
 			</div><!-- .infographic .slide4 -->
 			<div id="slide5" class="infographic slide5">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/SocialDev_graphic-v8-05.png" />
+				<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/SocialDev_graphic-v8-05.png" alt="5 - Bonding: with other childing, family members and the community, bonding happens during each step of the social development strategy, and it's what helps make healthy behaviors ultimately stick." />
 			</div><!-- .infographic .slide5 -->
 		</section><!-- #inforgraphics .text-block .white -->
 		<section class="text-block white">
@@ -122,7 +132,7 @@
 						</blockquote>
 					</div><!-- .col-md-5 .col-md-offset-1 .two-column-copy-left -->
 					<div class="col-md-5 two-column-copy-right">
-						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/foster-school/yesenia-cutout.jpg" />
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/foster-school/yesenia-cutout.jpg" alt="Photograph of Keley Pascoe" />
 					</div><!-- .col-md-5 .two-column-copy-right -->
 				</div><!-- .row -->
 			</div><!-- .container -->
@@ -131,7 +141,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-5 col-md-offset-1 two-column-copy-left">
-						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/foster-school/yesenia-cutout.jpg" />
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/foster-school/yesenia-cutout.jpg" alt="Photograph of Eric Agyemang" />
 					</div><!-- .col-md-5 .col-md-offset-1 .two-column-copy-left -->
 					<div class="col-md-5 two-column-copy-right">
 						<blockquote>
@@ -178,7 +188,7 @@
 						<p>“It was just such cool work,” he says. “One resident at the group home was around my age. I could see how he became more independent when you gave him opportunities to do so.”</p>
 					</div><!-- .col-md-5 .col-md-offset-1 .two-column-copy-left -->
 					<div class="col-md-5 two-column-copy-right">
-						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/foster-school/yesenia-cutout.jpg" class="two-column-image-margin" />
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/foster-school/yesenia-cutout.jpg" class="two-column-image-margin" alt="Photograph of Stephen Blount's mother" />
 					</div><!-- .col-md-5 .two-column-copy-right -->
 				</div><!-- .row -->
 				<div class="row">
@@ -186,7 +196,7 @@
 						<h3>A community leader’s perspective</h3>
 						<iframe width="1280" height="720" src="https://www.youtube.com/embed/QI50yL8rAIU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 						<p class="caption">Edith Elion, ’74, ’77, is on the Board Leadership Workgroup for Communities in Action, and is the executive director of the Atlantic Street Center.</p>
-						<h3>Healthy behaviors and hopeful futures</h3>
+						<h2 class="h3">Healthy behaviors and hopeful futures</h2>
 						<p>A critical component of the CTC program is that it must develop organically with the help of its stakeholders, rather than be imposed on them by an outside agency that thinks it knows best what a given group needs or wants.</p>
 						<p>In the case of Blount’s group, the agencies involved decided for themselves what outcomes would be most beneficial to the youth in their community, as well as how to get there. The children were then surveyed about what they perceived to be their biggest struggles. Only after that work was complete did the stakeholders choose what to tackle.</p>
 						<p>In the end, they determined that it was critical to help youth resist the lures of underage drinking and smoking — behaviors that put them at risk for delinquency — and instead opt to stay in school and choose peaceful behavior over violence.</p>

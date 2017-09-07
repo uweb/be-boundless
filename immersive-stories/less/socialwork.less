@@ -187,7 +187,7 @@
 			position:absolute;
 			top:0;
 
-			p.name{
+			h2{
 				position:relative;
 				font-family:@headline;
 				font-weight:@ultra;
@@ -199,10 +199,13 @@
 				line-height:1.1;
 			}
 
-			p.title{
-				font-size:1.5vw;
+			h2 small{
+				font-family:@font-family-base;
+				font-weight:@font-weight-base;
 				color:@purple;
-				line-height:1.5;
+				text-transform:none;
+				font-size:1.5vw;
+				line-height:1 !important;
 			}
 
 		}
@@ -215,11 +218,11 @@
 				top:1vw;
 			}
 			.text{
-				margin:8vw 5vw;
-				p.name{
+				margin:5vw 5vw;
+				h2{
 					font-size:3.5vw;
 				}
-				p.title{
+				h2 small{
 					font-size:2.25vw;
 				}
 			}
@@ -235,11 +238,11 @@
 				top:1.75vw;
 			}
 			.text{
-				margin:8vw 5vw;
-				p.name{
+				margin:5vw 5vw;
+				h2{
 					font-size:3.75vw;
 				}
-				p.title{
+				h2 small{
 					font-size:2.25vw;
 				}
 			}
@@ -277,6 +280,7 @@
  * Other bits and bobs *
  ***********************/
 	.copy h3,
+	.copy h2.h3,
 	.two-column-copy-left h3,
 	.two-column-copy-right h3{
 		color:#b7a57a;
