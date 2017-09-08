@@ -53,7 +53,7 @@
     .setTween(tl2)
     .on('progress', function(e){
       strokeDashoffset = (1 - e.progress) * strokeLength;
-      miles.innerHTML = Math.round(e.progress * 144);
+     // miles.innerHTML = Math.round(e.progress * 144);
     })
     .addTo(currentController);
     $(window).resize(function(){
@@ -145,7 +145,7 @@
     //   $this.toggleClass('paused');
     // });
 
-    $( "#pause" ).trigger('click');
+    //$( "#pause" ).trigger('click');
 
 
 
@@ -167,10 +167,45 @@
 //             TweenMax.to('#predators', 1,    {  opacity: 1, ease: Power0.easeIn, delay: 0.0 })
 //           ])
 
-new ScrollMagic.Scene({triggerElement: "#predators", duration: "100%", triggerHook:0})
+var sectionHeight = $('#pred-content').height() + 20;
+var scavHeight = $('#scav-content').height() + 20;
+var peopleHeight = $('#people-content').height() + 20;
+var preyHeight = $('#prey-content').height() + 20;
+
+//pred
+new ScrollMagic.Scene({triggerElement: "#predators", duration: sectionHeight, triggerHook:0})
           .setPin("#predators > .enviro-bg")
+          .addTo(currentController);
+
+new ScrollMagic.Scene({triggerElement: "#pred-content", duration: (0.5*sectionHeight), triggerHook:0.5})
           .setClassToggle(".enviro-bg", "darken")
-          //.setTween("#predators > .enviro-bg:after", 1, {opacity: 1, ease: Power0.easeIn, delay: 0.0 })
+          .addTo(currentController);
+
+//scav
+new ScrollMagic.Scene({triggerElement: "#scavengers", duration: scavHeight, triggerHook:0})
+          .setPin("#scavengers > .enviro-bg")
+          .addTo(currentController);
+
+new ScrollMagic.Scene({triggerElement: "#scav-content", duration: (0.5*scavHeight), triggerHook:0.5})
+          .setClassToggle(".enviro-bg", "darken")
+          .addTo(currentController);
+
+//prey
+new ScrollMagic.Scene({triggerElement: "#prey", duration: preyHeight, triggerHook:0})
+          .setPin("#prey > .enviro-bg")
+          .addTo(currentController);
+
+new ScrollMagic.Scene({triggerElement: "#prey-content", duration: (0.5*preyHeight), triggerHook:0.5})
+          .setClassToggle(".enviro-bg", "darken")
+          .addTo(currentController);
+
+//people
+new ScrollMagic.Scene({triggerElement: "#people", duration: peopleHeight, triggerHook:0})
+          .setPin("#people > .enviro-bg")
+          .addTo(currentController);
+
+new ScrollMagic.Scene({triggerElement: "#people-content", duration: (0.5*peopleHeight), triggerHook:0.5})
+          .setClassToggle(".enviro-bg", "darken")
           .addTo(currentController);
 
 // get all slides
@@ -189,7 +224,23 @@ new ScrollMagic.Scene({triggerElement: "#predators", duration: "100%", triggerHo
 
 
 //click students
-//
+$('.student-link').on('click', function(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  var hash = this.hash;
+  $('#all-students').addClass("not-active");
+  $(hash).addClass("active");
+  $('#close-modal').addClass("active");
+});
+
+$('#close-modal').on('click', function(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  $('#all-students').removeClass("not-active");
+  $('section.student').removeClass("active");
+  $('#close-modal').removeClass("active");
+});
+
 
 //audio
 // Focus on button triggers 
@@ -203,6 +254,88 @@ new ScrollMagic.Scene({triggerElement: "#predators", duration: "100%", triggerHo
        }
    });
 
+//
+  //
+  //
+  //     Build scrubber
+  //
+  //
+  //
+
+
+  // var curXPos       = 0,
+  //   mouseX        = 0,
+  //     curDown       = false,
+  //     widthInner    = window.innerWidth,
+  //     scrubBar      = document.getElementById('scrub'),
+  //     scrubContainer    = document.getElementById('scrubCont'),
+  //     ScrubContainerWidth = scrubContainer.offsetWidth - 100,
+  //     elmX        = 0,
+  //     numSlides     = $('section').length - 1,
+  //     scrollWidth     = widthInner * numSlides;
+  
+
+
+  // // Calculates the scrubber bottom scrubber bar based on mouse drag
+  // function mouseMove(cliX){
+  //   if(curDown === true){
+  //       scrubBar.style.left = Math.ceil(((cliX < 75 ? 75 : cliX) - (mouseX - elmX))) + 'px';
+  //     window.scrollTo(widthInner * numSlides / (scrubContainer.offsetWidth / cliX), 0);
+  //   }
+  // }
+
+  // // Event listeners for scroll and mouse movement  
+  // // Calculates the scrubber bottom scrubber bar based on scroll
+  // var cliX = 0,
+  //   moveFlag = false
+
+  // window.addEventListener('mousemove', function(e) {
+  //   cliX = e.clientX;
+  //   if( !moveFlag ) {
+  //     window.requestAnimFrame(function() {
+  //       mouseMove(cliX);
+  //       moveFlag = true;
+  //     });
+  //   }
+  //   moveFlag = false;
+  // });
+
+  // // Set variables when clicked
+  // scrubContainer.addEventListener('mousedown', function(e){ 
+  //   curDown = true; 
+  //   curXPos = e.pageX; 
+  //   mouseX = e.clientX;
+  //   elmX = scrubBar.offsetLeft;
+  // });
+
+  // // Cancel drag event so scrubber doesn't fly around
+  // window.addEventListener('mouseup', function(e){ 
+  //   curDown = false; 
+  // });
+  
+  
+  // // Calculates the scrubber bottom scrubber bar based on scroll
+  // var last_known = 0, 
+  //   scrollFlag = false;
+
+  // function scroller(last_known){
+  //   scrubBar.style.left = Math.ceil((last_known / scrollWidth) * ScrubContainerWidth) + 'px';
+  // }
+
+
+  // // The main scroll listener 
+  // var timeout = null;
+
+  // window.addEventListener('scroll', function() {
+  //   last_known = window.pageXOffset; 
+  //   if (!curDown) {
+  //     window.requestAnimFrame(function() {
+  //       scroller(last_known);
+  //       scrollFlag = true;
+  //     });
+  //   }
+  //   scrollFlag = false;
+  // });
 
 
 })

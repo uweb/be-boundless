@@ -674,6 +674,15 @@ p {
             }
         }
     }
+    #all-students {
+        visibility: visible;
+        opacity: 1;
+        .transition(all .5s ease-in-out);
+        &.not-active {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
     div.student {
         position: absolute;
         bottom: 0; 
@@ -701,7 +710,9 @@ p {
             img { width: 180px; }
         }
         &.student6 {
-            display: none;  
+            left: 60%;
+            bottom: -150px;
+            img { width: 150px; }  
         }
         img {
             width: 150px;
@@ -716,6 +727,17 @@ p {
             right: 0;
             background: url("@{enviro}/people-circle.svg") no-repeat center center;
             .background-cover(cover);
+        }
+        &:hover:before,
+        &:focus:before {
+            content: '';
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            top: 0; 
+            right: 0;
+            background: url("@{enviro}/people-circle-gold.svg") no-repeat center center;
+            .background-cover(cover);  
         }
     }
     section.student ,
@@ -734,6 +756,10 @@ p {
         opacity: 0;
         visibility: hidden;
         .transition(all .5s ease-in);
+        &.active {
+            visibility: visible;
+            opacity: 1;
+        }
         div.name {
             position: absolute;
             top: 15%;
@@ -814,12 +840,18 @@ p {
         height: 120px;
         //background: url("@{img}/sprite.svg") no-repeat -207px -286px rgba(0,0,0,.2);
         opacity: 0;
+        visibility: hidden;
         line-height: 0;
         color: transparent;
         background: none;
+        .transition(all .5s ease-in);
         svg {
             height: 120px;
             width: 120px;
+        }
+        &.active {
+            visibility: visible;
+            opacity: 1;
         }
     }
 }
@@ -864,6 +896,9 @@ p {
             }
             div.audio { opacity: 1; }
             &:after {
+                opacity: 1;
+            }
+            #scrubCont {
                 opacity: 1;
             }
         }
@@ -922,12 +957,22 @@ p {
         img {
             height: auto;
             width: 60%;
-            &.snapchat {
-                height: 60%; 
-                border-radius: 50%;
-                float: right;
-                margin-right: -20%;
+        }
+        .snapchat {
+            height: 400px;
+            width: 400px; 
+            border-radius: 50%;
+            float: right;
+            margin-right: -25%;
+            overflow: hidden;
+            video {
+                height: 430px;
+                width: 430px;
+                margin: -15px 0 0 -15px;
             }
+        }
+        .row {
+            padding-bottom: 50px;
         }
         .outset {
             //margin-left: -10%;
@@ -955,8 +1000,20 @@ p {
                     left: 15px;
                 }
                 span:nth-of-type(2) {
-                    bottom: -70px;
-                    right: 30px;
+                    bottom: -105px;
+                    right: 5px;
+                }
+                span.acknowledgement {
+                    font-family: @uni;
+                    color: white;
+                    line-height: 1.4;    
+                    text-transform: uppercase;
+                    font-size: .6em;
+                    position: absolute;
+                    bottom: -35px;
+                    left: 20px;
+                    text-align: right;
+                    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
                 }
             }
 
@@ -1023,6 +1080,21 @@ p {
 
         }
     }
+    &#scavenger div.copy:before {
+        background: url("@{enviro}/icon-scav.svg") no-repeat;
+        .background-size(contain);
+    }
+    &#predators div.copy:before {
+        //
+    }
+    &#prey div.copy:before {
+        background: url("@{enviro}/icon-prey.svg") no-repeat;
+        .background-size(contain);
+    }
+    &#people div.copy:before {
+        background: url("@{enviro}/icon-house.svg") no-repeat;
+        .background-size(contain);
+    }
     span.lines {
         position: fixed;
         height: 100%;
@@ -1042,6 +1114,81 @@ p {
     }
 }
 
+section.field-notes {
+    height: 70vh;
+    max-height: 1600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 10px solid @darkgold;
+    background: url("@{enviro}/PRED_OUTRO_PHOTO.jpg") no-repeat top right;
+    .background-cover(cover);
+    &.larger {
+        height: auto;
+        min-height: 70vh;
+    }
+    &.scavenger {
+        background: url("@{enviro}/SCAV_OUTRO_PHOTO.jpg") no-repeat center left;
+        .background-cover(cover);
+    }
+    &.predator {
+        //diff photo
+    }
+    &.prey {
+        background: url("@{enviro}/PREY_OUTRO_PHOTO.jpg") no-repeat bottom left;
+        .background-cover(cover);
+    }
+    &.people {
+        background: url("@{enviro}/RANCHER_OUTRO_PHOTO.jpg") no-repeat center left;
+        .background-cover(cover);
+    }
+    h2.normal {
+        color: white;
+        text-align: center;
+        font-family: @font-family-headline;
+        font-size: 35px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        position: relative; 
+        margin-bottom: 40px; 
+    }
+    h2:not(.normal) {
+        position: absolute;
+        right: -100px;
+        bottom: 150px;
+        transform-origin: top;
+        font-family: @font-family-base;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 60px;
+        color: white;
+        text-transform: uppercase;
+        opacity: 0.4;
+        .rotate(-90deg);
+    }
+    div {
+        width: 70%;
+        padding: 70px;
+    }
+    p {
+        font-family: "Uni sans",sans-serif;
+        font-weight: 700;
+        font-size: 1.5em;
+        color: white;
+        //border: none;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: rgba(0,0,0,.4);
+        z-index: -1;
+    }
+}
 
 // Transition of photos section
 
@@ -1122,5 +1269,42 @@ p {
 
 }
 
+iframe {
+    width: 100%;
+    max-height: none;
+    //height: 537px;
+}
 
+#scrubCont {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    opacity: 0;
+    //padding: 30px 0 10px;
+    #padder {
+        background-color: @lightgold;
+        width: 100%;
+        height: 10px;
+    }
+    #scrub {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100px;
+        height: 10px;
+        background-color: @purple;
+        cursor: pointer;
+        .transition(height .1s ease-in-out);
+        .skew(-15deg,0);
+        //&:hover {
+        //  height: 30px;
+        //}
+    }
+    @media(max-device-width:768px) {    
+        //display: none;
+    }
+}
 
