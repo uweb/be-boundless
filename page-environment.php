@@ -431,12 +431,12 @@
               <video autoplay loop muted playsinline class="media" data-object-fit>
                   <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/snapchat2.mp4' ?>" type="video/mp4">
               </video>
+            </div>
               <img class="left" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_2.jpg' ?>" alt="Student peering at a hawk">
               <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_3.jpg' ?>" alt="A bear sighted in the distance">
               <img class="right" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_4.jpg' ?>" alt="A student taking field notes">
               <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_5.jpg' ?>" alt="A group of students using telescopes to spot wildlife">
               <img class="left" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_6.jpg' ?>" alt="A group of students hiking through the field">
-            </div>
           </div>
         </div>
       </section>
