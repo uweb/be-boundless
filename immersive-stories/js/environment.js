@@ -172,6 +172,11 @@ var scavHeight = $('#scav-content').height() + 20;
 var peopleHeight = $('#people-content').height() + 20;
 var preyHeight = $('#prey-content').height() + 20;
 
+console.log(sectionHeight);
+console.log(scavHeight);
+console.log(peopleHeight);
+console.log(preyHeight);
+
 //pred
 new ScrollMagic.Scene({triggerElement: "#predators", duration: sectionHeight, triggerHook:0})
           .setPin("#predators > .enviro-bg")
