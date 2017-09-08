@@ -320,21 +320,20 @@
       <div class="foreground"></div>
         <h2>Intro</h2>
         <h2 class="in-the-field">In the field</h2>
-        <div class="audio"><p class="length">0:44  <span>/ play interview</span></p>
+        <div class="audio"><p class="length">0:21  <span>/ play interview</span></p>
           <audio controls class="player">
-            <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/education/nicole-music.mp3' ?>" type="audio/mpeg">
+            <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/SCAVENGER_LECTURE.mp3' ?>" type="audio/mpeg">
             <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
             Your browser does not support HTML5 audio.
           </audio>
           
           <p class="audio-buttons">
-            <button class="audio-ctrl audio-play" tabindex="0">0:44 / PLAY INTERVIEW</button>  
+            <button class="audio-ctrl audio-play" tabindex="0">0:21 / PLAY INTERVIEW</button>  
             <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
             <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
           </p>
           <div class="visually-hidden audio-transcript" tabindex="0">
-            <p>When it was first laid out, Jessica [Granger] just kept saying that it’ll be hands-on; you’ll be right there in the classroom coaching, and I didn’t know what that looked like. As we continued to practice, and I saw the changes in the kids’ thinking, I saw that it was really good work to do, so. I’d say I really enjoyed it. </p>
-            <p>It changed my thinking; I used to love reading, now I love teaching math, actually, more. And the kids learn and grow, I think, from each other, and seeing how different people solve things. And I even learn from them. I tell them every day we’re both coming to teach and learn, so I learn from them just as much as they learn from me.</p>
+            <p>lorem ipsum</p>
           </div>
         </div>
         <div id="scrubCont"><div id="padder"><div id="scrub"></div></div></div>
@@ -389,21 +388,20 @@
       <div class="foreground"></div>
         <h2>Intro</h2>
         <h2 class="in-the-field">In the field</h2>
-        <div class="audio"><p class="length">0:44  <span>/ play interview</span></p>
+        <div class="audio"><p class="length">0:18  <span>/ play interview</span></p>
           <audio controls class="player">
-            <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/education/nicole-music.mp3' ?>" type="audio/mpeg">
+            <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/PREDATOR_LECTURE.mp3' ?>" type="audio/mpeg">
             <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
             Your browser does not support HTML5 audio.
           </audio>
           
           <p class="audio-buttons">
-            <button class="audio-ctrl audio-play" tabindex="0">0:44 / PLAY INTERVIEW</button>  
+            <button class="audio-ctrl audio-play" tabindex="0">0:18 / PLAY INTERVIEW</button>  
             <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
             <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
           </p>
           <div class="visually-hidden audio-transcript" tabindex="0">
-            <p>When it was first laid out, Jessica [Granger] just kept saying that it’ll be hands-on; you’ll be right there in the classroom coaching, and I didn’t know what that looked like. As we continued to practice, and I saw the changes in the kids’ thinking, I saw that it was really good work to do, so. I’d say I really enjoyed it. </p>
-            <p>It changed my thinking; I used to love reading, now I love teaching math, actually, more. And the kids learn and grow, I think, from each other, and seeing how different people solve things. And I even learn from them. I tell them every day we’re both coming to teach and learn, so I learn from them just as much as they learn from me.</p>
+            <p>LOREM IPSUM</p>
           </div>
         </div>
         <div id="scrubCont"><div id="padder"><div id="scrub"></div></div></div>
@@ -460,21 +458,20 @@
         <div class="foreground"></div>
         <h2>Intro</h2>
         <h2 class="in-the-field">In the field</h2>
-        <div class="audio"><p class="length">0:44  <span>/ play interview</span></p>
+        <div class="audio"><p class="length">0:20  <span>/ play interview</span></p>
           <audio controls class="player">
-            <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/education/nicole-music.mp3' ?>" type="audio/mpeg">
+            <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/PREY_LECTURE.mp3' ?>" type="audio/mpeg">
             <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
             Your browser does not support HTML5 audio.
           </audio>
           
           <p class="audio-buttons">
-            <button class="audio-ctrl audio-play" tabindex="0">0:44 / PLAY INTERVIEW</button>  
+            <button class="audio-ctrl audio-play" tabindex="0">0:20 / PLAY INTERVIEW</button>  
             <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
             <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
           </p>
           <div class="visually-hidden audio-transcript" tabindex="0">
-            <p>When it was first laid out, Jessica [Granger] just kept saying that it’ll be hands-on; you’ll be right there in the classroom coaching, and I didn’t know what that looked like. As we continued to practice, and I saw the changes in the kids’ thinking, I saw that it was really good work to do, so. I’d say I really enjoyed it. </p>
-            <p>It changed my thinking; I used to love reading, now I love teaching math, actually, more. And the kids learn and grow, I think, from each other, and seeing how different people solve things. And I even learn from them. I tell them every day we’re both coming to teach and learn, so I learn from them just as much as they learn from me.</p>
+            <p>lorem ipsum delores</p>
           </div>
         </div>
         <div id="scrubCont"><div id="padder"><div id="scrub"></div></div></div>
@@ -529,21 +526,20 @@
       <div class="foreground"></div>
         <h2>Intro</h2>
         <h2 class="in-the-field">In the field</h2>
-        <div class="audio"><p class="length">0:44  <span>/ play interview</span></p>
+        <div class="audio"><p class="length">0:32  <span>/ play interview</span></p>
           <audio controls class="player">
-            <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/education/nicole-music.mp3' ?>" type="audio/mpeg">
+            <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/RANCHER_LECTURE.mp3' ?>" type="audio/mpeg">
             <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
             Your browser does not support HTML5 audio.
           </audio>
           
           <p class="audio-buttons">
-            <button class="audio-ctrl audio-play" tabindex="0">0:44 / PLAY INTERVIEW</button>  
+            <button class="audio-ctrl audio-play" tabindex="0">0:32 / PLAY INTERVIEW</button>  
             <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
             <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
           </p>
           <div class="visually-hidden audio-transcript" tabindex="0">
-            <p>When it was first laid out, Jessica [Granger] just kept saying that it’ll be hands-on; you’ll be right there in the classroom coaching, and I didn’t know what that looked like. As we continued to practice, and I saw the changes in the kids’ thinking, I saw that it was really good work to do, so. I’d say I really enjoyed it. </p>
-            <p>It changed my thinking; I used to love reading, now I love teaching math, actually, more. And the kids learn and grow, I think, from each other, and seeing how different people solve things. And I even learn from them. I tell them every day we’re both coming to teach and learn, so I learn from them just as much as they learn from me.</p>
+            <p>lorem ipsum delored</p>
           </div>
         </div>
         <div id="scrubCont"><div id="padder"><div id="scrub"></div></div></div>
