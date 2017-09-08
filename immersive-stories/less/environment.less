@@ -872,10 +872,21 @@ p {
         right: 0;
         height: 100vh;
         width: 100vw;
-        background-image: url("@{enviro}/pred-bg-fg-span.jpg");
+        background-image: url("@{enviro}/pred-bg.jpg");
         background-repeat: no-repeat;
         background-position: bottom right;
         .background-cover(cover);
+        div.foreground {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            bottom: -200px;
+            left: 0;
+            background-image: url("@{enviro}/pred-fore.png");
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            .background-size(contain);
+        }
         &:after {
             content: '';
             height: 100%;
@@ -933,14 +944,53 @@ p {
             }
         }
     }
-    img.foreground {
-        position: absolute;
-        bottom: -15%;
-        right: 0;
-        height: auto;
-        width: 100%;
-        z-index: 1;
+    &#prey div.enviro-bg {
+        background-image: url("@{enviro}/PREY-bkg.jpg");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        .background-cover(cover);
+        div.foreground {
+            bottom: 0;
+            background-image: url("@{enviro}/PREY-forground.png");
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            .background-size(cover);
+        }
     }
+    &#scavengers div.enviro-bg {
+        background-image: url("@{enviro}/Scavenger-bkg.jpg");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        .background-cover(cover);
+        div.foreground {
+            bottom: 0;
+            background-image: url("@{enviro}/Scavenger-forground.png");
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            .background-size(contain);
+        }
+    }
+    &#people div.enviro-bg {
+        background-image: url("@{enviro}/Rancher-bkg.jpg");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        .background-cover(cover);
+        div.foreground {
+            bottom: 0;
+            background-image: url("@{enviro}/Rancher-forground.png");
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            .background-size(contain);
+        }
+    }
+    // img.foreground {
+    //     position: absolute;
+    //     bottom: -15%;
+    //     right: 0;
+    //     height: auto;
+    //     width: 100%;
+    //     z-index: 1;
+    // }
     &.enable-scroll {
         //overflow-y: scroll;
     }
@@ -1127,6 +1177,8 @@ section.field-notes {
     &.larger {
         height: auto;
         min-height: 70vh;
+        background: url("@{enviro}/STUD_PRES.jpg") no-repeat center right;
+        .background-cover(cover);
     }
     &.scavenger {
         background: url("@{enviro}/SCAV_OUTRO_PHOTO.jpg") no-repeat center left;
@@ -1272,7 +1324,11 @@ section.field-notes {
 iframe {
     width: 100%;
     max-height: none;
-    //height: 537px;
+    margin: 0;
+}
+
+section.text-block.giving-widget.branded {
+    margin-top: 30px;
 }
 
 #scrubCont {

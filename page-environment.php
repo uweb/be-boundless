@@ -24,7 +24,7 @@
 <section class="intro" id="intro-vid">          
 
   <button id="pause">Pause</button>
-  <video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/header.jpg' ?>" class="fullscreen-bg__video">
+  <video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/header-poster.png' ?>" class="fullscreen-bg__video">
      <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/HEADER_30_SECOND.mp4' ?>" type="video/mp4">
   </video>
 
@@ -317,6 +317,7 @@
     <span class="lines left"></span> -->
     <!-- <img class="foreground" alt="bear" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/pred-fore.png' ?>"> -->
     <div class="enviro-bg">
+      <div class="foreground"></div>
         <h2>Intro</h2>
         <h2 class="in-the-field">In the field</h2>
         <div class="audio"><p class="length">0:44  <span>/ play interview</span></p>
@@ -381,6 +382,7 @@
     <span class="lines left"></span> -->
     <!-- <img class="foreground" alt="bear" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/pred-fore.png' ?>"> -->
     <div class="enviro-bg">
+      <div class="foreground"></div>
         <h2>Intro</h2>
         <h2 class="in-the-field">In the field</h2>
         <div class="audio"><p class="length">0:44  <span>/ play interview</span></p>
@@ -446,6 +448,7 @@
     <span class="lines left"></span> -->
     <!-- <img class="foreground" alt="bear" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/pred-fore.png' ?>"> -->
     <div class="enviro-bg">
+        <div class="foreground"></div>
         <h2>Intro</h2>
         <h2 class="in-the-field">In the field</h2>
         <div class="audio"><p class="length">0:44  <span>/ play interview</span></p>
@@ -510,6 +513,7 @@
     <span class="lines left"></span> -->
     <!-- <img class="foreground" alt="bear" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/pred-fore.png' ?>"> -->
     <div class="enviro-bg">
+      <div class="foreground"></div>
         <h2>Intro</h2>
         <h2 class="in-the-field">In the field</h2>
         <div class="audio"><p class="length">0:44  <span>/ play interview</span></p>
@@ -554,7 +558,7 @@
             </div>
             <div class="snapchat">
               <video autoplay loop muted playsinline class="media" data-object-fit>
-                  <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/snapchat4.mp4' ?>" type="video/mp4">
+                  <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/snapchat4.mp4' ?>" type="video/mp4"> 
               </video>
             </div>
           </div>
