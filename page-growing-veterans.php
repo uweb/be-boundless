@@ -1,11 +1,13 @@
-<?php get_header( "campaign-open" ); ?>
+<?php
+	$meta = '';
+	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/farmer-brown.css' type='text/css' media='all' />";
+	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/farmer-brown.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/campaign/js/header.js' type='text/javascript'></script><script src='//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js' type='text/javascript'></script><script src='//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js' type='text/javascript'></script><script src='//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js' type='text/javascript'></script>";
+	$storyCodes = 'ESIEND';
+	$storyAppeal = 'Your support of students like Stephan Blount and programs like Communities That Care propels our global community forward, giving all children the chance to reach their fullest potential.';
+	get_header( "campaign-v2" );
+?>
 
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
-
-<?php get_header( "campaign-close" ); ?>
-
-    <section class="intro" id="intro-vid">          
+<section class="intro" id="intro-vid">          
 
       <div class="fullscreen-bg">
           <!-- <button id="pause">Pause</button>
@@ -731,26 +733,7 @@
     
 
     </main> 
-
-      
-      <!-- **** CSS **** -->
-      
-      <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
-      <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/farmer-brown.css' ?>' type='text/css' media='all' />
-      
-      <!-- **** JS **** -->      
-
-      <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
-      <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script> -->
-
-      <script src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/js/farmer-brown.min.js' ?>" type="text/javascript"></script>
-      
-      <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
-      
-
-<?php get_footer(); ?>
-
-
-
+<?php
+	//include(locate_template('include-giving.php'));
+	get_template_part('footer','campaign-v2');
+?>

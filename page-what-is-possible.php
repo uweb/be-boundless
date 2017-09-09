@@ -1,10 +1,11 @@
-<?php get_header( "campaign-open" ); ?>
-
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/arts.css?v=' . time() ?>' type='text/css' media='all' />
-
-<?php get_header( "campaign-close" ); ?>
+<?php
+	$meta = '';
+	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/arts.css?v=" . time() . "' type='text/css' media='all' />";
+	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/arts.min.js?v=" . time() . "' type='text/javascript'></script>";
+	$storyCodes = 'ASDISC,CANART,AHDDIS,ARTGAL,ASUGSF,ASDISCR';
+	$storyAppeal = 'You can empower possibility, drive innovation, and enhance the student experience in the College of Arts &amp; Sciences by contributing to these funds.';
+	get_header( "campaign-v2" );
+?>
 
 <section id="immersive-body" class="arts">
 
@@ -652,7 +653,7 @@
         </section>
     </section>
 
-    <section class="text-block giving-widget">
+    <?php /*<section class="text-block giving-widget">
        <div class="container">
            <div class="row">
                <div class="col-md-10 col-md-offset-1 copy">
@@ -665,7 +666,7 @@
                </div>
            </div>
      </div>
-   </section>
+   </section>*/?>
 
    <hr style="max-width: 720px">
    <p style="text-align: center;"><small>Photos courtesy James Harnois, MadArt Seattle, Amie McNeel, Sam Stubblefield, Collin Bampton, Tzyy Yi (Amy) Young.</small></p>
@@ -677,21 +678,10 @@
 
 
 </section>
-
-
- <!-- **** JS **** -->
-
- <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/animationLibraries.min.js' ?>" type="text/javascript"></script>
- <script src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/js/arts.min.js?v=' . time() ?>" type="text/javascript"></script>
- <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
-
-
-
-
-<?php get_template_part('footer', 'campaign'); ?>
-
  <script>
     objectFitImages('img.polyfill');
 </script>
-</body>
-</html>
+<?php
+	include(locate_template('include-giving.php'));
+	get_template_part('footer','campaign-v2');
+?>

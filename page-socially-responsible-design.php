@@ -1,11 +1,11 @@
-<?php get_header( "campaign-open" ); ?>
-
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/built-env.css' ?>' type='text/css' media='all' />
-
-<?php get_header( "campaign-close" ); ?>
-
+<?php
+	$meta = '';
+	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/built-env.css' type='text/css' media='all' />";
+	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/built-env.min.js' type='text/javascript'></script>";
+	$storyCodes = 'AUPGEN,LSCHOL,LAPERU';
+	$storyAppeal = 'Invest in environmental justice and healthier, more fulfilling futures for all by contributing to the College of Built Environments and students like David de la Cruz.';
+	get_header( "campaign-v2" );
+?>
 
 <div id="immersive-body">
 
@@ -273,7 +273,7 @@
       </div>
 
 
-      <section class="text-block giving-widget branded arrow">
+      <?php /*<section class="text-block giving-widget branded arrow">
           <div class="container">
               <div class="row">
                   <div class="col-md-10 col-md-offset-1 copy ">
@@ -286,7 +286,7 @@
                   </div>
               </div>
         </div>
-      </section>
+      </section>*/?>
 
 
       <!-- <div id="mapid"></div> -->
@@ -298,17 +298,7 @@
 
 
 </div>
-
-
- <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/animationLibraries.min.js' ?>" type="text/javascript"></script>
-
- <script src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/js/built-env.min.js' ?>" type="text/javascript"></script>
- <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
-
- 
-
- <?php get_template_part('footer', 'campaign'); ?>
-
-
-</body>
-</html>
+<?php
+	include(locate_template('include-giving.php'));
+	get_template_part('footer','campaign-v2');
+?>

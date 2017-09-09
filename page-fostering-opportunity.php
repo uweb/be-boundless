@@ -1,11 +1,11 @@
-<?php get_header( "campaign-open" ); ?>
-
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/foster-school.css' ?>' type='text/css' media='all' />
-
-<?php get_header( "campaign-close" ); ?>
-
+<?php
+	$meta = '';
+	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/foster-school.css' type='text/css' media='all' /><link rel='stylesheet' href='//unpkg.com/leaflet@1.0.3/dist/leaflet.css' />";
+	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/foster-school.min.js' type='text/javascript'></script><script src='//unpkg.com/leaflet@1.0.3/dist/leaflet.js' type='text/javascript'></script>";
+	$storyCodes = 'BEDDIS,UNDDIV,ACOUNT,YVBEND,EYEXCL';
+	$storyAppeal = 'You can help the Foster School of Business and Young Executives of Color transform the lives of more students like Yesenia Velasquez by contributing to these funds.';
+	get_header( "campaign-v2" );
+?>
 
 <div id="immersive-body">
 
@@ -305,7 +305,7 @@
 
 
 
-      <section class="text-block giving-widget branded arrow">
+      <?php /*<section class="text-block giving-widget branded arrow">
           <div class="container">
               <div class="row">
                   <div class="col-md-10 col-md-offset-1 copy ">
@@ -318,7 +318,7 @@
                   </div>
               </div>
         </div>
-      </section>
+      </section>*/?>
 
 
       <!-- <div id="mapid"></div> -->
@@ -330,20 +330,7 @@
 
 
 </div>
-
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
- <!-- **** JS **** -->      
-
- <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/animationLibraries.min.js' ?>" type="text/javascript"></script>
-
- <script src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/js/foster-school.min.js' ?>" type="text/javascript"></script>
- <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
-
- 
-
- <?php get_template_part('footer', 'campaign'); ?>
-
-
-</body>
-</html>
+<?php
+	include(locate_template('include-giving.php'));
+	get_template_part('footer','campaign-v2');
+?>

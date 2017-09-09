@@ -1,10 +1,11 @@
-<?php get_header( "campaign-open" ); ?>
-
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/tacoma.css?v=' . time() ?>' type='text/css' media='all' />
-
-<?php get_header( "campaign-close" ); ?>
+<?php
+	$meta = '';
+	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/tacoma.css?v=" . time() . "' type='text/css' media='all' />";
+	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/tacoma.min.js' type='text/javascript'></script>";
+	$storyCodes = 'SCHTAC,AMOCAT';
+	$storyAppeal = 'You can help UW Tacoma transform the lives of more students like Tom Rochat by contributing to these funds.';
+	get_header( "campaign-v2" );
+?>
 
 <div id="immersive-body">
 
@@ -378,7 +379,7 @@ Sometimes I feel like the whole ‘jobs of the future’ thing is kind of a joke
 
         
 
-        <section class="text-block giving-widget">
+        <?php /*<section class="text-block giving-widget">
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 copy">
@@ -391,24 +392,13 @@ Sometimes I feel like the whole ‘jobs of the future’ thing is kind of a joke
                     </div>
                 </div>
           </div>
-        </section>
+        </section>*/?>
 
 </main>
 
 
 </div>
-
-
- <!-- **** JS **** -->      
-
- <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/animationLibraries.min.js' ?>" type="text/javascript"></script>
-
- <script src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/js/tacoma.min.js' ?>" type="text/javascript"></script>
- <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
-
- 
-
-<?php get_template_part('footer', 'campaign'); ?>
-
-</body>
-</html>
+<?php
+	include(locate_template('include-giving.php'));
+	get_template_part('footer','campaign-v2');
+?>

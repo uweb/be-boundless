@@ -1,11 +1,11 @@
-<?php get_header( "campaign-open" ); ?>
-
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/header.css' ?>' type='text/css' media='all' />
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/common.css' ?>' type='text/css' media='all' />
- <link rel='stylesheet' href='<?php echo get_stylesheet_directory_uri() . '/immersive-stories/css/ischool.css' ?>' type='text/css' media='all' />
-
-<?php get_header( "campaign-close" ); ?>
-
+<?php
+	$meta = '';
+	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/ischool.css' type='text/css' media='all' />";
+	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/ischool.min.js' type='text/javascript'></script>";
+	$storyCodes = 'WOBDIS';
+	$storyAppeal = 'You can be part of Mott’s project and help iSchool students like him make technology accessible for everyone at the MAD (Mobile + Accessible Design) Lab by making a gift to the Human Computer Interaction Research Fund.';
+	get_header( "campaign-v2" );
+?>
 
 <div id="immersive-body">
 
@@ -299,7 +299,7 @@
   </div>
 
 
-      <section class="text-block giving-widget branded arrow">
+      <?php /*<section class="text-block giving-widget branded arrow">
           <div class="container">
               <div class="row">
                   <div class="col-md-10 col-md-offset-1 copy ">
@@ -312,7 +312,7 @@
                   </div>
               </div>
         </div>
-      </section>
+      </section>*/?>
 
 
 
@@ -326,18 +326,6 @@
 
 
 </div>
-
-
- <!-- **** JS **** -->      
-
- <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/animationLibraries.min.js' ?>" type="text/javascript"></script>
-
- <script src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/js/ischool.min.js' ?>" type="text/javascript"></script>
- <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script>
-
- 
-<?php get_template_part('footer', 'campaign'); ?>
-
 <script type="text/javascript">
 $(document).ready(function () {
   $('#immersive-give-promoted').click(function(){
@@ -347,7 +335,7 @@ $(document).ready(function () {
   });
 });
 </script>
-
-
-</body>
-</html>
+<?php
+	include(locate_template('include-giving.php'));
+	get_template_part('footer','campaign-v2');
+?>
