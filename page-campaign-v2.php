@@ -1,8 +1,7 @@
 <?php
-	$meta = '';
-	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' />";
-	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script>
-<script src='" . get_stylesheet_directory_uri() . "/campaign/js/header.js' type='text/javascript'></script>";
+	$meta = "";
+	$styles = "";
+	$scripts = "";
 	get_header( "campaign-v2" );
 ?>
 <div id="immersive-body">

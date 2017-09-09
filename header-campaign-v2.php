@@ -30,10 +30,10 @@ global $styles;
 					</div><!-- .col-sm-6 .col-md-6 .col-lg-6 -->
 					<div class="col-sm-6 col-md-6 col-lg-6 cv2-header-menu">
 						<ul class="list-inline hidden-xs">
-							<li><a href="campaign">Campaign Home</a></li>
-							<li><a href="about">About</a></li>
-							<li><a href="explore">Stories</a></li>
-						</ul>
+						<li><a href="<?php echo get_site_url(); ?>/?utm_source=boundless&utm_medium=purple-topnav&utm_campaign=topnav-campaign-home">Campaign Home</a></li>
+						<li><a href="<?php echo get_site_url(); ?>/about/?utm_source=boundless&utm_medium=purple-topnav&utm_campaign=topnav-about-campaign">About</a></li>
+						<li><a href="<?php echo get_site_url(); ?>/archive/?utm_source=boundless&utm_medium=purple-topnav&utm_campaign=topnav-campaign-stories">Stories</a></li>
+					</ul>
 						<button id="cv2-toggle" class="visible-xs-inline-block">Menu</button>
 					</div><!-- .col-sm-6 .col-md-6 .col-lg-6 .cv2-header-menu -->
 				</div><!-- .row -->
@@ -42,9 +42,9 @@ global $styles;
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<ul class="list-unstyled text-center">
-							<li><a href="campaign">Campaign Home</a></li>
-							<li><a href="about">About</a></li>
-							<li><a href="/boundless/archive/">Stories</a></li>
+							<li><a href="<?php echo get_site_url(); ?>/?utm_source=boundless&utm_medium=purple-topnav&utm_campaign=topnav-campaign-home">Campaign Home</a></li>
+							<li><a href="<?php echo get_site_url(); ?>/about/?utm_source=boundless&utm_medium=purple-topnav&utm_campaign=topnav-about-campaign">About</a></li>
+							<li><a href="<?php echo get_site_url(); ?>/archive/?utm_source=boundless&utm_medium=purple-topnav&utm_campaign=topnav-campaign-stories">Stories</a></li>
 						</ul>
 					</div><!-- .col-xs-12 .col-sm-12 .col-md-12 .col-lg-12 -->
 				</div><!-- .row -->
@@ -75,52 +75,51 @@ global $styles;
 					<div class="col-sm-4 col-md-4 col-lg-4">
 						<p class="subheader">Campuses</p>
 						<ul class="list-unstyled">
-							<li><a href="http://www.uwb.edu/give">UW Bothell</a></li>
-							<li><a href="http://www.tacoma.uw.edu/boundless">UW Tacoma</a></li>
+							<li><a href="http://www.uwb.edu/give/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-uw-bothell">UW Bothell</a></li>
+							<li><a href="http://www.tacoma.uw.edu/boundless/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-uw-tacoma">UW Tacoma</a></li>
 						</ul>
 						<p class="subheader">Colleges &amp; Schools</p>
 						<ul class="list-unstyled">
-							<li><a href="http://artsci.washington.edu/boundless">College of Arts &amp; Sciences</a></li>
-							<li><a href="http://be.washington.edu/support-be/">College of Built Environments</a></li>
-							<li><a href="http://education.uw.edu/campaign">College of Education</a></li>
-							<li><a href="http://www.engr.washington.edu/giving/impact">College of Engineering</a></li>
-							<li><a href="https://environment.uw.edu/alumni-and-community/giving-to-the-college/">College of the Environment</a></li>
-							<li><a href="http://evans.uw.edu/giving">Daniel J. Evans School of Public Policy &amp; Governance</a></li>
+							<li><a href="https://artsci.washington.edu/campaign/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-arts-sciences">College of Arts &amp; Sciences</a></li>
+							<li><a href="http://be.washington.edu/support-be/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-cbe">College of Built Environments</a></li>
+							<li><a href="http://education.uw.edu/campaign/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-education">College of Education</a></li>
+							<li><a href="http://www.engr.washington.edu/giving/impact/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-engineering">College of Engineering</a></li>
+							<li><a href="https://environment.uw.edu/alumni-and-community/giving-to-the-college/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-environment">College of the Environment</a></li>
+							<li><a href="http://evans.uw.edu/giving/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-evans">Daniel J. Evans School of Public Policy &amp; Governance</a></li>
 						</ul>
 					</div><!-- .col-md-4 .col-lg-4 -->
 					<div class="col-sm-4 col-md-4 col-lg-4">
 						<ul class="list-unstyled">
 							<!-- <li><a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=2&source=ECM">Henry M. Jackson School of International Studies</a></li> -->
-							<li><a href="https://ischool.uw.edu/boundless">Information School</a></li>
-							<li><a href="http://foster.uw.edu/campaign">Michael G. Foster School of Business</a></li>
-							<li><a href="https://www.cs.washington.edu/supportcse">Paul G. Allen School of Computer Science &amp; Engineering</a></li>
-							<li><a href="https://dental.washington.edu/alumni-friends/give/make-a-gift/">School of Dentistry</a></li>
-							<li><a href="https://www.law.uw.edu/donate">School of Law</a></li>
-							<li><a href="https://nursing.uw.edu/community/donate/">School of Nursing</a></li>
-							<li><a href="https://sop.washington.edu/alumni-donors/give-to-the-school/">School of Pharmacy</a></li>
-							<li><a href="http://sph.washington.edu/giving/">School of Public Health</a></li>
-							<li><a href="http://socialwork.uw.edu/">School of Social Work</a></li>
+							<li><a href="https://ischool.uw.edu/boundless/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-ischool">Information School</a></li>
+							<li><a href="http://foster.uw.edu/campaign/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-business">Michael G. Foster School of Business</a></li>
+							<li><a href="https://www.cs.washington.edu/supportcse/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-cse">Paul G. Allen School of Computer Science &amp; Engineering</a></li>
+							<li><a href="https://dental.washington.edu/alumni-friends/give/make-a-gift/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-dentistry">School of Dentistry</a></li>
+							<li><a href="https://www.law.uw.edu/donate/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-law">School of Law</a></li>
+							<li><a href="https://nursing.uw.edu/community/donate/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-nursing">School of Nursing</a></li>
+							<li><a href="https://sop.washington.edu/alumni-donors/give-to-the-school/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-pharmacy">School of Pharmacy</a></li>
+							<li><a href="http://sph.washington.edu/giving/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-public-health">School of Public Health</a></li>
+							<li><a href="http://socialwork.uw.edu/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-social-work">School of Social Work</a></li>
 						</ul>
 					</div><!-- .col-md-4 .col-lg-4 -->
 					<div class="col-sm-4 col-md-4 col-lg-4">
 						<p class="subheader">Health System</p>
 						<ul class="list-unstyled">
-							<li><a href="http://www.acceleratemed.org/">UW Medicine</a></li>
+							<li><a href="http://www.acceleratemed.org/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-medicine">UW Medicine</a></li>
 						</ul>
 						<p class="subheader">Departments</p>
 						<ul class="list-unstyled">
-							<li><a href="http://www.washington.edu/uaa/support/">Academic &amp; Student Affairs</a></li>
-							<li><a href="http://uwtyeeclub.org/">Athletics</a></li>
-							<li><a href="http://www.lib.washington.edu/support/">University Libraries</a></li>
+							<li><a href="http://www.washington.edu/uaa/support/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-uaa">Academic &amp; Student Affairs</a></li>
+							<li><a href="http://uwtyeeclub.org/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-athletics">Athletics</a></li>
+							<li><a href="http://www.lib.washington.edu/support/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-libraries">University Libraries</a></li>
 						</ul>
 						<p class="subheader">Media</p>
 						<ul class="list-unstyled">
-							<li><a href="http://www.kexp.org/support/benefitsofgiving">KEXP</a></li>
-							<li><a href="http://kuow.org/support-kuows-capitol-campaign">KUOW</a></li>
+							<li><a href="http://www.kexp.org/support/benefitsofgiving/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-kexp">KEXP</a></li>
+							<li><a href="http://kuow.org/support-kuows-capitol-campaign/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-kuow">KUOW</a></li>
 						</ul>
 					</div><!-- .col-md-4 .col-lg-4 -->
 				</div>
 			</div>
-
 		</header><!-- .cv2-header -->
 		<div id="give-iframe"><span id="cv2-close" role="button"></span><div class="container"></div></div>
