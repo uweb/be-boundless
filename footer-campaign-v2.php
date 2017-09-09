@@ -23,11 +23,18 @@ global $scripts;
 				<div class="col-md-7 col-lg-5 cv2-newsletter">
 					<div class="cv2-col-inner">
 						<h4 id="signup-form-label">Campaign newsletter</h4>
-						<form role="form" aria-labeledby="signup-form-label">
-							<label for="signup-input" class="sr-only">Enter your email address</label>
-							<input type="text" id="signup-input" placeholder="Enter your email address" />
-							<button type="Submit">Sign Up</button>
-						</form>
+						<?php /*
+						<script type="text/javascript" src="https://subscribe.gifts.washington.edu/Scripts/SubManBuilder/submanbuilder.js" id="uwSubscriptionManager"></script>
+						<script type="text/javascript">
+							SUBMANBUILDER.makeIframe({
+								subscriptionID: 3, //REQUIRED: Subscription ID people will be signing up to
+								fromName: "University of Washington", //OPTIONAL: From name of the confirmation email
+								fromEmail: "uwcmpgn@uw.edu", //OPTIONAL: From email of the confirmation email
+								showHeader: true //OPTIONAL: Defaults to true
+							});
+						</script>
+						*/ ?>
+						<iframe id="campnews" src="http://depts.washington.edu/uweb/campaignnewsletter/index.php"></iframe>
 					</div><!-- .cv2-col-inner -->
 				</div><!-- .col-md-7 .col-lg-5 .cv2-newsletter -->
 			</div><!-- .row -->
