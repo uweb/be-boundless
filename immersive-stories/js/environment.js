@@ -190,11 +190,13 @@
  // new ScrollMagic.Scene({triggerElement: ".field-notes.people", triggerHook:0})
  //    .setClassToggle("#dot-nav" , "active")
  //    .addTo(currentController);
+ //    
+ $(window).on("load resize", function (e) {
 
-var sectionHeight = $('#pred-content').height() + 20;
-var scavHeight = $('#scav-content').height() + 20;
-var peopleHeight = $('#people-content').height() + 20;
-var preyHeight = $('#prey-content').height() + 20;  
+var sectionHeight = $('#pred-content').outerHeight() + 20;
+var scavHeight = $('#scav-content').outerHeight() + 20;
+var peopleHeight = $('#people-content').outerHeight() + 20;
+var preyHeight = $('#prey-content').outerHeight() + 20;  
 
 console.log(sectionHeight);
 console.log(scavHeight);
@@ -236,6 +238,8 @@ new ScrollMagic.Scene({triggerElement: "#people", duration: peopleHeight, trigge
 new ScrollMagic.Scene({triggerElement: "#people-content", duration: (0.8*peopleHeight), triggerHook:0.7})
           .setClassToggle(".enviro-bg", "darken")
           .addTo(currentController);
+
+});
 
 // get all slides
 // var slides = document.querySelectorAll("#predators > section");
