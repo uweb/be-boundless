@@ -12,6 +12,22 @@
 
   currentController = controllerEnviro;
 
+  // var introMedicine = new ScrollMagic.Scene({
+  //     triggerElement: '#intro-vid',
+  //     triggerHook: 0,
+  //     duration: '100%',
+  //   })
+  //   .setPin('.intro', {pushFollowers: false})
+  //   .setClassToggle("body", 'hide-dots')
+  //   .setTween('.intro-body', 1, { opacity: 0, transform: 'translateY(-100px)', ease: Power0.easeIn })
+  //   .on('enter',function(){
+  //     $('video').get(0).play()
+  //   })
+  //   .addTo(currentController);
+  //   $(window).resize(function(){
+  //       introMedicine.update(true);
+  //   });
+
     // var introMedicine = new ScrollMagic.Scene({
     //   triggerElement: '#intro-vid',
     //   triggerHook: 0,
@@ -166,11 +182,19 @@
 //           .add([
 //             TweenMax.to('#predators', 1,    {  opacity: 1, ease: Power0.easeIn, delay: 0.0 })
 //           ])
+//        
+ new ScrollMagic.Scene({triggerElement: "#scavengers", triggerHook:0})
+    .setClassToggle("#dot-nav" , "active")
+    .addTo(currentController);
+
+ // new ScrollMagic.Scene({triggerElement: ".field-notes.people", triggerHook:0})
+ //    .setClassToggle("#dot-nav" , "active")
+ //    .addTo(currentController);
 
 var sectionHeight = $('#pred-content').height() + 20;
 var scavHeight = $('#scav-content').height() + 20;
 var peopleHeight = $('#people-content').height() + 20;
-var preyHeight = $('#prey-content').height() + 20;
+var preyHeight = $('#prey-content').height() + 20;  
 
 console.log(sectionHeight);
 console.log(scavHeight);
@@ -342,5 +366,24 @@ $('#close-modal').on('click', function(e) {
   //   scrollFlag = false;
   // });
 
+
+
+/* 
+DOT NAVIGATIOM
+*/
+
+    //when get to where want to turn on: .setClassToggle("body", 'hide-dots');
+
+    // In order to toggle current section, 
+    $('.enviro-section').each(function(index,element){
+        var dotToggle = new ScrollMagic.Scene({
+            duration: this.offsetHeight + 'px',
+            triggerElement: this,
+            triggerHook: 0.5
+        });
+        dotToggle.setClassToggle('#dot-nav li:nth-child(' + (parseInt(index) + 1) + ') a', 'active');
+        dotToggle.addTo(currentController);
+  
+    })
 
 })

@@ -52,7 +52,7 @@ module.exports = function(grunt) {
           'immersive-stories/js/arts.js',
           'immersive-stories/js/bothell.js',
           'immersive-stories/js/farmer-brown.js',
-          'immersive-stories/js/environment.js',
+          //'immersive-stories/js/environment.js',
           'immersive-stories/js/socialwork.js',
           'immersive-stories/js/pharmacy.js',
           'campaign/js/main.js',
@@ -135,7 +135,7 @@ module.exports = function(grunt) {
           'immersive-stories/js/environment.min.js': [
               'immersive-stories/js/common.js',
               'immersive-stories/js/lity.js',
-              'immersive-stories/js/environment.js',
+              //'immersive-stories/js/environment.js',
               'immersive-stories/js/objectFitPolyfill.basic.js',
           ],            
           'immersive-stories/js/foster-school.min.js': [

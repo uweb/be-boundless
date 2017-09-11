@@ -11,8 +11,8 @@
             "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/environment.css' type='text/css' media='all' />";
   $scripts =  "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script>" .
               "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/header.js' type='text/javascript'></script>" .
-              "<script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/environment.min.js' type='text/javascript'></script>";
-              //"<script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/environment.js' type='text/javascript'></script>";
+              "<script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/environment.min.js' type='text/javascript'></script>" .
+              "<script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/environment.js' type='text/javascript'></script>";
 
   get_header( "campaign-v2" );
 ?>
@@ -65,7 +65,12 @@
 
 </section>
 
-
+<ul id="dot-nav">
+  <li data-tooltip="Scavengers"><a title="Scavengers" href="#scavengers"><span></span></a></li>
+  <li data-tooltip="Predators"><a title="Predators" href="#predators"><span></span></a></li>
+  <li data-tooltip="Prey"><a title="Prey" href="#prey"><span></span></a></li>
+  <li data-tooltip="People"><a title="People" href="#people"><span></span></a></li>
+</ul>
 
 <main id="main_content">
   
