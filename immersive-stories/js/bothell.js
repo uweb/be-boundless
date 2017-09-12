@@ -29,7 +29,7 @@ $(function(){
   })
   .setPin('.intro', {pushFollowers: false})
   .setClassToggle("body", 'bothellIntro')
-  .setTween('#intro-text', 0.5, { opacity: 0, transform: 'translateY(-100px)', ease: Power0.easeIn })
+  .setTween('#intro-text', 0.5, { opacity: 0, transform: 'translateY(100px)', ease: Power0.easeIn })
   .addTo(controllerBothell)
 
 
