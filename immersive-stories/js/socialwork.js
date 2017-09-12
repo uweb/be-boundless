@@ -14,18 +14,19 @@ $(function(){
         introSW.update(true);
     });
 
-	var infographics = document.querySelectorAll('div.infographic');
-	for(var i=0;i<infographics.length;i++){
-		j = i + 1;
-		new ScrollMagic.Scene({
-			triggerElement:infographics[i],
-			triggerHook:0,
-			duration:'100%',
-		})
-		.setPin(infographics[i],{pushFollowers:false})
-		// .setTween(infographics[j],1,{opacity:0,ease:Power0.easeIn,delay:0.0})
-		.addIndicators()
-		.addTo(controllerSW);
-	}
+	var photo2Tween = new TimelineMax()
+		.add([
+			TweenMax.to('#photo-2',1,{opacity:0,ease:Power0.easeIn,delay:0.0}),
+	])
+	var photo2Scene = new ScrollMagic.Scene({
+		triggerElement:'.transSection',
+		triggerHook:0,
+		duration:'100%',
+		reverse: true,
+	})
+	.setPin('.transSection')
+	.setTween(photo2Tween)
+	.addIndicators()
+	.addTo(controllerSW);
 
 });

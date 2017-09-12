@@ -67,27 +67,17 @@
 		<section id="video" class="text-block black">
 			<iframe width="1280" height="720" src="https://www.youtube.com/embed/QI50yL8rAIU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 		</section><!-- #video .text-block .white -->
-		<section id="inforgraphics" class="text-block white">
-			<div class="sr-only">
-				<h3>It takes a team</h3>
-				<p>Through the social development model taught to community leaders like Aaron Parker, children are learning to choose behaviros thtat lead to great success in life.  Like with a baseball team, it takes dedication, practice and team bonding to successfully learn these behaviors.</p>
-			</div>
-			<div id="slide1" class="infographic slide1">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/SocialDev_graphic-v8-01.png" alt="1 - Opportunities: with the social development model, children are given an opportunity to learn new skills and behaviors." />
-			</div><!-- .infographic .slide1 -->
-			<div id="slide2" class="infographic slide2">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/SocialDev_graphic-v8-02.png" alt="2 - Skills: the children learn new skills to help them choose healthy behaviors over unhealthy ones." />
-			</div><!-- .infographic .slide2 -->
-			<div id="slide3" class="infographic slide3">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/SocialDev_graphic-v8-03.png" alt="3 - Recognition: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
-			</div><!-- .infographic .slide3 -->
-			<div id="slide4" class="infographic slide4">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/SocialDev_graphic-v8-04.png" alt="4 - Healthy Behaviors: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
-			</div><!-- .infographic .slide4 -->
-			<div id="slide5" class="infographic slide5">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/SocialDev_graphic-v8-05.png" alt="5 - Bonding: with other childing, family members and the community, bonding happens during each step of the social development strategy, and it's what helps make healthy behaviors ultimately stick." />
-			</div><!-- .infographic .slide5 -->
-		</section><!-- #inforgraphics .text-block .white -->
+		<section class="text-block transSection">
+			<div id="photo-1"></div>
+			<div id="photo-2"></div>
+			<!-- <div id="photo-3"></div> -->
+			<!-- <div id="photo-4"></div> -->
+			<!-- <div id="photo-5"></div> -->
+		</section><!-- .text-block .transSection -->
+		<div class="sr-only">
+			<h3>It takes a team</h3>
+			<p>Through the social development model taught to community leaders like Aaron Parker, children are learning to choose behaviros thtat lead to great success in life.  Like with a baseball team, it takes dedication, practice and team bonding to successfully learn these behaviors.</p>
+		</div><!-- .sr-only -->
 		<section class="text-block white">
 			<div class="container">
 				<div class="row">
