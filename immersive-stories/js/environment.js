@@ -208,7 +208,7 @@ new ScrollMagic.Scene({triggerElement: "#predators", duration: sectionHeight, tr
           .setPin("#predators > .enviro-bg")
           .addTo(currentController);
 
-new ScrollMagic.Scene({triggerElement: "#pred-content", duration: (0.8*sectionHeight), triggerHook:0.7})
+new ScrollMagic.Scene({triggerElement: "#pred-content", duration: (0.9*sectionHeight), triggerHook:0.9})
           .setClassToggle(".enviro-bg", "darken")
           .addTo(currentController);
 
@@ -217,7 +217,7 @@ new ScrollMagic.Scene({triggerElement: "#scavengers", duration: scavHeight, trig
           .setPin("#scavengers > .enviro-bg")
           .addTo(currentController);
 
-new ScrollMagic.Scene({triggerElement: "#scav-content", duration: (0.8*scavHeight), triggerHook:0.7})
+new ScrollMagic.Scene({triggerElement: "#scav-content", duration: (0.9*scavHeight), triggerHook:0.9})
           .setClassToggle(".enviro-bg", "darken")
           .addTo(currentController);
 
@@ -226,7 +226,7 @@ new ScrollMagic.Scene({triggerElement: "#prey", duration: preyHeight, triggerHoo
           .setPin("#prey > .enviro-bg")
           .addTo(currentController);
 
-new ScrollMagic.Scene({triggerElement: "#prey-content", duration: (0.8*preyHeight), triggerHook:0.7})
+new ScrollMagic.Scene({triggerElement: "#prey-content", duration: (0.9*preyHeight), triggerHook:0.9})
           .setClassToggle(".enviro-bg", "darken")
           .addTo(currentController);
 
@@ -235,7 +235,7 @@ new ScrollMagic.Scene({triggerElement: "#people", duration: peopleHeight, trigge
           .setPin("#people > .enviro-bg")
           .addTo(currentController);
 
-new ScrollMagic.Scene({triggerElement: "#people-content", duration: (0.8*peopleHeight), triggerHook:0.7})
+new ScrollMagic.Scene({triggerElement: "#people-content", duration: (0.9*peopleHeight), triggerHook:0.9})
           .setClassToggle(".enviro-bg", "darken")
           .addTo(currentController);
 

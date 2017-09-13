@@ -37,7 +37,18 @@
               <p class="col-md-6 col-md-offset-1 col-xs-offset-1">
                   Over spring break, 16 UW students and three professors from the College of the Environment made a classroom out of one of the most closely monitored ecosystems in the world: Yellowstone National Park. Explore their learning experience below.
               </p>
-          </div>          
+          </div>  
+          <div class="col-md-6 col-md-offset-1 col-xs-9 col-xs-offset-1 play-button" >
+              <a data-lity href="https://www.youtube.com/embed/Tr6KBzdaM0o?autoplay=1&rel=0&showinfo=0">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="137.909px" height="137.131px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131"
+                 xml:space="preserve">
+              <ellipse fill="none" stroke="#FFFFFF" stroke-width="7.8281" stroke-miterlimit="10" cx="68.399" cy="68.344" rx="57.675" ry="59.214"/>
+              <polygon fill="#FFFFFF" points="48.611,37.617 103.268,68.345 48.611,99.072 "/>
+              </svg>
+                <p>Play full video</p>
+              </a>
+          </div>        
       </div>
   </div>
 
@@ -208,7 +219,7 @@
   <section id="drone-vid" class="text-block bus arrow">
 
 
-    <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1 copy">
+    <div class="col-md-8 col-xs-12 copy">
       <p>“Going to Yellowstone with wildlife biologists is like going behind the scenes of a play.”
       <span>— Nicki Furner, ’18</span>
       </p>
@@ -222,7 +233,7 @@
 
   <section id="students" class="full-image-section">
     <section id="all-students" class="all-students">
-      <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 copy">
+      <div class="col-md-6 col-md-offset-3 col-xs-12 copy">
         <p>Cras sagittis id tellus id tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus lacinia, tortor sed placerat fringilla, Cras sagittis id tellus id tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
         <p class="pull-text">Nature is not fair and meals are just as often stolen as they are earned</p>
       </div>
