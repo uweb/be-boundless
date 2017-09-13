@@ -34,7 +34,19 @@ global $scripts;
 							});
 						</script>
 						*/ ?>
-						<iframe id="campnews" src="http://depts.washington.edu/uweb/campaignnewsletter/index.php"></iframe>
+						<?php /*<script type="text/javascript" src="https://subscribe.gifts.washington.edu/Scripts/SubManBuilder/submanbuilder.js" id="uwSubscriptionManager"></script>*/?>
+						<script type="text/javascript" src="https://ua-dev-subscribe.gifts.washington.edu/Scripts/submanbuilder/submanbuilder.js" id="uwSubscriptionManager"></script>
+						<script type="text/javascript">
+							SUBMANBUILDER.makeIframe({
+								subscriptionID: 27,
+								fromName: "University of Washington", //OPTIONAL: From Name of the confirmation email
+								fromEmail: "uwcmpgn@uw.edu",
+								showPlaceHolders: true,
+								hideLabels: true,
+								signUpTemplate: "campaign"
+							});
+						</script>
+						<?php /*<iframe id="campnews" src="http://depts.washington.edu/uweb/campaignnewsletter/index.php"></iframe>*/?>
 					</div><!-- .cv2-col-inner -->
 				</div><!-- .col-md-7 .col-lg-5 .cv2-newsletter -->
 			</div><!-- .row -->
