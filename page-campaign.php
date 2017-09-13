@@ -14,7 +14,7 @@
       <span>
 
         <svg aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           width="46.25px" height="101.1px" viewBox="0 0 46.25 101.1" enable-background="new 0 0 46.25 101.1" xml:space="preserve">
+           width="46.25px" height="101.1px" viewBox="0 0 46.25 101.1" enable-background="new 0 0 46.25 101.1" xml:space="preserve" preserveAspectRatio="xMidYMid meet">
           <polygon opacity="0.2" enable-background="new    " points="19.007,100.951 17.886,100.647 18.082,99.922 18.478,100.03 
             44.717,2.245 45.442,2.439 "/>
           <line opacity="0.7" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" enable-background="new    " x1="18.005" y1="99.887" x2="44.467" y2="1.129"/>
@@ -31,7 +31,7 @@
       Next slide
       <span>
       <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-         width="46.25px" height="101.1px" viewBox="0 0 46.25 101.1" enable-background="new 0 0 46.25 101.1" xml:space="preserve">
+         width="46.25px" height="101.1px" viewBox="0 0 46.25 101.1" enable-background="new 0 0 46.25 101.1" xml:space="preserve" preserveAspectRatio="xMidYMid meet">
         <polygon opacity="0.2" enable-background="new    " points="2.045,100.822 0.924,100.517 1.12,99.792 1.516,99.9 27.755,2.115 
           28.48,2.309 "/>
         <line opacity="0.7" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" enable-background="new    " x1="1.043" y1="99.757" x2="27.505" y2="0.999"/>

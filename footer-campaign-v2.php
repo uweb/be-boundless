@@ -44,7 +44,8 @@ global $scripts;
 									fromEmail: "uwcmpgn@uw.edu",
 									showPlaceHolders: true,
 									hideLabels: true,
-									signUpTemplate: "campaign"
+									signUpTemplate: "campaign",
+									managePreferences: false
 								});
 							</script>
 							<?php /*<iframe id="campnews" src="http://depts.washington.edu/uweb/campaignnewsletter/index.php"></iframe>*/?>
