@@ -22,31 +22,33 @@ global $scripts;
 				</div><!-- .col-md-5 .col-lg-5 .col-lg-offset-1 .cv2-connect -->
 				<div class="col-md-7 col-lg-5 cv2-newsletter">
 					<div class="cv2-col-inner">
-						<h4 id="signup-form-label">Campaign newsletter</h4>
-						<?php /*
-						<script type="text/javascript" src="https://subscribe.gifts.washington.edu/Scripts/SubManBuilder/submanbuilder.js" id="uwSubscriptionManager"></script>
-						<script type="text/javascript">
-							SUBMANBUILDER.makeIframe({
-								subscriptionID: 3, //REQUIRED: Subscription ID people will be signing up to
-								fromName: "University of Washington", //OPTIONAL: From name of the confirmation email
-								fromEmail: "uwcmpgn@uw.edu", //OPTIONAL: From email of the confirmation email
-								showHeader: true //OPTIONAL: Defaults to true
-							});
-						</script>
-						*/ ?>
-						<?php /*<script type="text/javascript" src="https://subscribe.gifts.washington.edu/Scripts/SubManBuilder/submanbuilder.js" id="uwSubscriptionManager"></script>*/?>
-						<script type="text/javascript" src="https://ua-dev-subscribe.gifts.washington.edu/Scripts/submanbuilder/submanbuilder.js" id="uwSubscriptionManager"></script>
-						<script type="text/javascript">
-							SUBMANBUILDER.makeIframe({
-								subscriptionID: 27,
-								fromName: "University of Washington", //OPTIONAL: From Name of the confirmation email
-								fromEmail: "uwcmpgn@uw.edu",
-								showPlaceHolders: true,
-								hideLabels: true,
-								signUpTemplate: "campaign"
-							});
-						</script>
-						<?php /*<iframe id="campnews" src="http://depts.washington.edu/uweb/campaignnewsletter/index.php"></iframe>*/?>
+						<div class="cv2-campnews">
+							<h4 id="signup-form-label">Campaign newsletter</h4>
+							<?php /*
+							<script type="text/javascript" src="https://subscribe.gifts.washington.edu/Scripts/SubManBuilder/submanbuilder.js" id="uwSubscriptionManager"></script>
+							<script type="text/javascript">
+								SUBMANBUILDER.makeIframe({
+									subscriptionID: 3, //REQUIRED: Subscription ID people will be signing up to
+									fromName: "University of Washington", //OPTIONAL: From name of the confirmation email
+									fromEmail: "uwcmpgn@uw.edu", //OPTIONAL: From email of the confirmation email
+									showHeader: true //OPTIONAL: Defaults to true
+								});
+							</script>
+							*/ ?>
+							<?php /*<script type="text/javascript" src="https://subscribe.gifts.washington.edu/Scripts/SubManBuilder/submanbuilder.js" id="uwSubscriptionManager"></script>*/?>
+							<script type="text/javascript" src="https://ua-dev-subscribe.gifts.washington.edu/Scripts/submanbuilder/submanbuilder.js" id="uwSubscriptionManager"></script>
+							<script type="text/javascript">
+								SUBMANBUILDER.makeIframe({
+									subscriptionID: 27,
+									fromName: "University of Washington", //OPTIONAL: From Name of the confirmation email
+									fromEmail: "uwcmpgn@uw.edu",
+									showPlaceHolders: true,
+									hideLabels: true,
+									signUpTemplate: "campaign"
+								});
+							</script>
+							<?php /*<iframe id="campnews" src="http://depts.washington.edu/uweb/campaignnewsletter/index.php"></iframe>*/?>
+						</div><!-- .cv2-campnews -->
 					</div><!-- .cv2-col-inner -->
 				</div><!-- .col-md-7 .col-lg-5 .cv2-newsletter -->
 			</div><!-- .row -->
