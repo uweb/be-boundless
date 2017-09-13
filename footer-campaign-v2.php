@@ -21,8 +21,8 @@ global $scripts;
 					</div><!-- .cv2-col-inner -->
 				</div><!-- .col-md-5 .col-lg-5 .col-lg-offset-1 .cv2-connect -->
 				<div class="col-md-7 col-lg-5 cv2-newsletter">
-					<div class="cv2-col-inner">
-						<div class="cv2-campnews">
+					<div class="cv2-col-inner cv2-col-inner-campnews">
+						<div class="cv2-campnews hidden-xs hidden-sm">
 							<h4 id="signup-form-label">Campaign newsletter</h4>
 							<?php /*
 							<script type="text/javascript" src="https://subscribe.gifts.washington.edu/Scripts/SubManBuilder/submanbuilder.js" id="uwSubscriptionManager"></script>
