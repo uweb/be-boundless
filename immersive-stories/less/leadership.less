@@ -63,7 +63,7 @@ main {
     }
 
     @media(max-width:768px) {
-        background-image: url("@{leadership}/columns.jpg");
+        background-image: url("@{leadership}/bg_about.jpg");
         position: relative;
         padding: 80px 0 170px;
         height: auto;
@@ -76,7 +76,7 @@ main {
         }
     }    
     @media(min-width:768px) {
-        background-image: url("@{leadership}/columns.jpg");
+        background-image: url("@{leadership}/bg_about.jpg");
         padding: 100px 0 310px;
         .transition(padding .2s ease-in-out .2s);
         .active-header & {
@@ -91,13 +91,17 @@ main {
 
 // Top logo 
 #boundless-logo {
+    position: absolute;
+    bottom:-100%;
     @media(min-width:768px) {
-        width: 50%;
+        width: 25%;
         margin-bottom: 30px;
+        left:0;
     }
     @media(max-width:768px) {
-        width: 75%;
+        width: 50%;
         margin-bottom: 20px;
+        left:25%;
     }
 }
 
@@ -963,3 +967,31 @@ h2.purpleHeadline {
     }
 }
 
+
+/*******************
+ * Camp v2 headers *
+ *******************/
+.cv2-headline-gold{
+    margin:20px 0;
+    padding:0 0 5px 0;
+    font-family: "Encode Sans Compressed", sans-serif;
+    text-transform: uppercase;
+    font-size:28px;
+    font-weight:700;
+    color:#b7a57a;
+    letter-spacing: 5px;
+    border-bottom:1px solid #4b2e83;
+    text-align:center;
+}
+.cv2-headline-purple{
+    margin:20px 0;
+    padding:0 0 5px 0;
+    font-family: "Encode Sans Compressed", sans-serif;
+    text-transform: uppercase;
+    font-size:24px;
+    font-weight:700;
+    color:#4b2e83;
+    letter-spacing: 5px;
+    border-bottom:1px solid #b7a57a;
+    text-align:center;
+}
