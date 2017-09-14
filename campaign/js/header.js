@@ -80,7 +80,7 @@ if(give){
 
 		if(isEmpty($('#give-iframe'))) {
 			$('<iframe>', {
-				src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0&appeal=17XBS',
+				src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0&appeal=17XBS&code=IMPFND',
 				frameborder: 0,
 				width: '100%',
 				height: '100%',
@@ -107,7 +107,7 @@ if(giveNew){
 
 		if(isEmpty($('#give-iframe .container'))) {
 			$('<iframe>', {
-				src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0&appeal=17XBS&page=make&code=' + 'EXCELL' + '&amount=' + $("#cv2-header-give-amount").val().replace(/,/g, ''),
+				src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0&appeal=17XBS&page=make&code=' + 'IMPFND' + '&amount=' + $("#cv2-header-give-amount").val().replace(/,/g, ''),
 				frameborder: 0,
 				width: '100%',
 				height: '100%',

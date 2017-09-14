@@ -121,7 +121,7 @@ console.log($storySlides)
 
 		if(isEmpty($('#give-iframe .container'))) {
 			$('<iframe>', {
-				src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0&appeal=17XBS&page=make&code=' + 'EXCELL' + '&amount=' + $("#cv2-widget-give-amount").val().replace(/,/g, ''),
+				src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0&appeal=17XBS&page=make&code=' + 'IMPFND' + '&amount=' + $("#cv2-widget-give-amount").val().replace(/,/g, ''),
 				frameborder: 0,
 				width: '100%',
 				height: '100%',
@@ -146,7 +146,7 @@ console.log($storySlides)
 
 		if(isEmpty($('#give-iframe .container'))) {
 			$('<iframe>', {
-				src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0&appeal=17XBS&page=make&RecurringGift=yes&RecurringFrequency=monthly&code=' + 'EXCELL' + '&amount=' + $("#cv2-widget-give-amount").val().replace(/,/g, ''),
+				src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0&appeal=17XBS&page=make&RecurringGift=yes&RecurringFrequency=monthly&code=' + 'IMPFND' + '&amount=' + $("#cv2-widget-give-amount").val().replace(/,/g, ''),
 				frameborder: 0,
 				width: '100%',
 				height: '100%',
