@@ -45,7 +45,8 @@ global $scripts;
 									showPlaceHolders: true,
 									hideLabels: true,
 									signUpTemplate: "campaign",
-									managePreferences: false
+									managePreferences: false,
+									returnURL: "http://www.washington.edu/boundless/subscription-center/",
 								});
 							</script>
 							<?php /*<iframe id="campnews" src="http://depts.washington.edu/uweb/campaignnewsletter/index.php"></iframe>*/?>
