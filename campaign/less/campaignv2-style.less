@@ -100,7 +100,8 @@
   color: @lightgold;
 }
 #campaign-intro {
-  height: calc(~"100vh - 171px"); //@headerHeight
+//   height: calc(~"100vh - 171px"); //@headerHeight
+height:100%;
   width: 100vw;
   background-size: cover;
   background-position: center bottom;
@@ -157,7 +158,8 @@
     background: black !important;
     video {
         object-fit: cover;
-        height: calc(~"100vh - 171px");
+		// height: calc(~"100vh - 171px");
+		height:100%;
         width: 100%;
         object-position: 100% 50%;
         display: inline-block;
@@ -1775,6 +1777,15 @@ button.nextSlide {
           margin-bottom: 15px;
         }
       }
+      body.cv2-header-hold header.cv2-header{
+		position:absolute;
+		top:0;
+		z-index:2000;
+		width:100%;
+	  }
+	  body.cv2-header-hold header.cv2-header ~ #immersive-body{
+		  margin-top:130px;
+	  }
 
 /*******************
  * Campaign Footer *
