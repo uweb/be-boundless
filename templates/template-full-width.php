@@ -74,6 +74,7 @@ get_header( "campaign-v2" );
  <!-- <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script> -->
   <script src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/js/lity.js' ?>" type="text/javascript"></script>
  <script src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/js/common.min.js' ?>" type="text/javascript"></script>
+  <script src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/js/objectFitPolyfill.basic.js' ?>" type="text/javascript"></script>
 
  
 
