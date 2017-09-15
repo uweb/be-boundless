@@ -1,5 +1,7 @@
 $(function(){
 
+  $('body').addClass('activated');
+
   var body = document.getElementsByTagName('body')[0];
   var controllerEvans = new ScrollMagic.Controller();
 
@@ -16,7 +18,7 @@ $(function(){
       triggerHook: 0,
       duration: '100%',
     })
-    .setClassToggle("body", 'activated')
+    // .setClassToggle("body", 'activated')
     .setPin('.intro', {pushFollowers: false})
     .setTween(fade)
     .addTo(controllerEvans);

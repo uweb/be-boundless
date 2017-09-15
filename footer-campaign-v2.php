@@ -21,20 +21,24 @@ global $scripts;
 					</div><!-- .cv2-col-inner -->
 				</div><!-- .col-md-5 .col-lg-5 .col-lg-offset-1 .cv2-connect -->
 				<div class="col-md-7 col-lg-5 cv2-newsletter">
-					<div class="cv2-col-inner">
-						<h4 id="signup-form-label">Campaign newsletter</h4>
-						<?php /*
-						<script type="text/javascript" src="https://subscribe.gifts.washington.edu/Scripts/SubManBuilder/submanbuilder.js" id="uwSubscriptionManager"></script>
-						<script type="text/javascript">
-							SUBMANBUILDER.makeIframe({
-								subscriptionID: 3, //REQUIRED: Subscription ID people will be signing up to
-								fromName: "University of Washington", //OPTIONAL: From name of the confirmation email
-								fromEmail: "uwcmpgn@uw.edu", //OPTIONAL: From email of the confirmation email
-								showHeader: true //OPTIONAL: Defaults to true
-							});
-						</script>
-						*/ ?>
-						<iframe id="campnews" src="http://depts.washington.edu/uweb/campaignnewsletter/index.php"></iframe>
+					<div class="cv2-col-inner cv2-col-inner-campnews">
+						<div class="cv2-campnews hidden-xs hidden-sm">
+							<h4 id="signup-form-label">Campaign newsletter</h4>
+							<script type="text/javascript" src="https://subscribe.gifts.washington.edu/Scripts/submanbuilder/submanbuilder.js" id="uwSubscriptionManager"></script>
+							<script type="text/javascript">
+								SUBMANBUILDER.makeIframe({
+									subscriptionID: 205,
+									fromName: "University of Washington", //OPTIONAL: From Name of the confirmation email
+									fromEmail: "uwcmpgn@uw.edu",
+									showPlaceHolders: true,
+									hideLabels: true,
+									signUpTemplate: "campaign",
+									managePreferences: false,
+									returnURL: "http://www.washington.edu/boundless/subscription-center/",
+								});
+							</script>
+							<?php /*<iframe id="campnews" src="http://depts.washington.edu/uweb/campaignnewsletter/index.php"></iframe>*/?>
+						</div><!-- .cv2-campnews -->
 					</div><!-- .cv2-col-inner -->
 				</div><!-- .col-md-7 .col-lg-5 .cv2-newsletter -->
 			</div><!-- .row -->

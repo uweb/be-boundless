@@ -4,6 +4,13 @@
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/public-health.min.js' type='text/javascript'></script>";
 	$storyCodes = 'GHFEND,WACHPH';
 	$storyAppeal = 'You can help the School of Public Health drive the public good and improve lives around the world by contributing to these funds.';
+
+	function prefix_conditional_body_class( $classes ) {
+		$classes[] = 'cv2-header-hold';
+		return $classes;
+	}
+	add_filter( 'body_class', 'prefix_conditional_body_class' );
+
 	get_header( "campaign-v2" );
 ?>
 

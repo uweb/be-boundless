@@ -59,83 +59,51 @@
     var tl2 = new TimelineMax();
         tl2.to($(".bus-map"), 4, { onUpdate:applyStroke })
 
-    var map = new ScrollMagic.Scene({
-        triggerElement: ".bus-map",
-        duration: $windowHeight - ($busMapHeight * 0.6),
-        offset: $busMapHeight * 0.6,
-        triggerHook: 1,
-        reverse: true
-    })
-    .setTween(tl2)
-    .on('progress', function(e){
-      strokeDashoffset = (1 - e.progress) * strokeLength;
-     // miles.innerHTML = Math.round(e.progress * 144);
-    })
-    .addTo(currentController);
+    // var map = new ScrollMagic.Scene({
+    //     triggerElement: ".bus-map",
+    //     duration: $windowHeight - ($busMapHeight * 0.6),
+    //     offset: $busMapHeight * 0.6,
+    //     triggerHook: 1,
+    //     reverse: true
+    // })
+    // .setTween(tl2)
+    // .on('progress', function(e){
+    //   strokeDashoffset = (1 - e.progress) * strokeLength;
+    //  // miles.innerHTML = Math.round(e.progress * 144);
+    // })
+    // .addTo(currentController);
     $(window).resize(function(){
         map.duration($(window).height());
         map.update(true);
     });
 
-  // $( document )
-  //   .on( "mousemove", ".para", function( event ) {
-
-  //   var halfW = ( this.clientWidth / 2 );
-  //   var halfH = ( this.clientHeight / 2 );
-
-  //   var coorX = ( halfW - ( event.pageX - this.offsetLeft ) );
-  //   var coorY = ( halfH - ( event.pageY - $(this).offset().top ) ); // this is the problem
-
-  //   var degX  = ( ( coorY / halfH ) * 5 ) + 'deg'; // max. degree = 10 /// this is the problem
-  //   var degY  = ( ( coorX / halfW ) * -5 ) + 'deg'; // max. degree = 10
-
-  //   $( this ).css( 'transform', function() {
-  //     return 'perspective( 1500px ) translate3d( 0, 0, 30px )  rotateX('+ degX +') rotateY('+ degY +')';
-  //   } )
-
-  // } )
-  //   .on( "mouseout", ".para", function() {
-  //   $( this ).removeAttr( 'style' )
-  // } );
-
-
-  // In order to toggle current section, 
-
-  // if (!isMobile) {
-  //   $('.para').each(function(index,element){
-  //       var el = $(this).find('.cutout');
-  //       var elH3 = $(this).find('h3');
-  //       var elHeight = $(this).height();
-  //       var paraMove = new ScrollMagic.Scene({
-  //           duration: (this.offsetHeight + elHeight) + 'px',
-  //           triggerElement: this,
-  //           triggerHook: 1
-  //       })
-  //       .setTween(new TimelineMax().add([
-  //           TweenMax.to(elH3, 1, { transform: 'translateY(-90px)', ease: Power0.easeIn }),
-  //           TweenMax.to(el, 1, { transform: 'translateY(-30px)', ease: Power0.easeIn })
-  //       ]));
-  //       paraMove.addTo(controllerBuilt);    
-  //   })
-  // } 
-
+new ScrollMagic.Scene({triggerElement: "#drone-vid", duration: '100%', triggerHook:1})
+          .setTween(tl2)
+          .on('progress', function(e){
+            strokeDashoffset = (1 - e.progress) * strokeLength;
+           // miles.innerHTML = Math.round(e.progress * 144);
+          })
+          .setPin("#map-animation")
+          //.setPin("#drone-vid")
+          .addIndicators()
+          .addTo(currentController);
 
     // Parallax photos 
 
-    var delacruzAnimation = new TimelineMax ()
-          .add([
-            TweenMax.to('#map-animation', 1,    {  opacity: 0, ease: Power0.easeIn, delay: 0.0 }),
-            TweenMax.to('#drone-vid', 1,    {  opacity: 1, ease: Power0.easeIn, delay: 0.0 })
-          ])
-    var transHeight = -$('#drone-vid').height();
+    // var delacruzAnimation = new TimelineMax ()
+    //       .add([
+    //         TweenMax.to('#map-animation', 1,    {  opacity: 0, ease: Power0.easeIn, delay: 0.0 }),
+    //         TweenMax.to('#drone-vid', 1,    {  opacity: 1, ease: Power0.easeIn, delay: 0.0 })
+    //       ])
+    // var transHeight = -$('#drone-vid').height();
 
-    var martez = new ScrollMagic.Scene({
-      triggerElement: '#drone-vid',
-      triggerHook: 0.3,
-      duration:  '25%',
-    })
-    .setTween(delacruzAnimation)
-    .addTo(currentController)
+    // var martez = new ScrollMagic.Scene({
+    //   triggerElement: '#drone-vid',
+    //   triggerHook: 0.3,
+    //   duration:  '25%',
+    // })
+    // .setTween(delacruzAnimation)
+    // .addTo(currentController)
 
     // Parallax photos 
 
@@ -186,6 +154,7 @@
  new ScrollMagic.Scene({triggerElement: "#scavengers", triggerHook:0})
     .setClassToggle("#dot-nav" , "active")
     .addTo(currentController);
+
 
  // new ScrollMagic.Scene({triggerElement: ".field-notes.people", triggerHook:0})
  //    .setClassToggle("#dot-nav" , "active")

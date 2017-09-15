@@ -100,7 +100,8 @@
   color: @lightgold;
 }
 #campaign-intro {
-  height: calc(~"100vh - 171px"); //@headerHeight
+//   height: calc(~"100vh - 171px"); //@headerHeight
+  height:calc(~"100vh - 171px");
   width: 100vw;
   background-size: cover;
   background-position: center bottom;
@@ -118,7 +119,7 @@
     margin-top: 5vh;
     p {
       color: white;
-      text-align: justify;
+      text-align: center;
     }
   }
   #boundless-logo {
@@ -131,7 +132,8 @@
   }
   #block-w-logo {
     position: absolute;
-    right: 2vw;
+	// right: 2vw;
+	right:0;
     bottom: -1px;
     max-width: 200px;
     width: 12vw;
@@ -156,7 +158,8 @@
     background: black !important;
     video {
         object-fit: cover;
-        height: calc(~"100vh - 171px");
+		// height: calc(~"100vh - 171px");
+		height:100%;
         width: 100%;
         object-position: 100% 50%;
         display: inline-block;
@@ -269,7 +272,8 @@
         display: block;
       }
       p {
-        font-family: @uni;
+		font-family: @uni;
+		font-size:19px;
       }
       h3 {
         margin-top: 0;
@@ -340,7 +344,7 @@
 
 section.campaign-facts {
   width: 100%;
-  height: 425px;
+  height: 375px;
   background: #ece9e2;
   .facts-container {
     margin: 0 auto;
@@ -375,7 +379,7 @@ section.campaign-facts {
 }
 
 .campaign-excerpt {
-  height: 600px;
+  height: 400px;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -440,7 +444,7 @@ section.campaign-facts {
         left: -29px;
       }
       .row {
-        margin: 20% 0 0 15%;
+        margin: 0;
       }
     }
     .row {
@@ -450,7 +454,8 @@ section.campaign-facts {
       z-index: -1;
       width: 65%;
       max-width: 500px;
-      margin: 20% auto 0; 
+      height: 100%;
+      margin: 0 auto; 
       text-align: center;
       h2 {
         font-size: 20px;
@@ -474,6 +479,13 @@ section.campaign-facts {
       position: absolute;
       top: 50%;
       margin-top: -45px;
+    }
+  }
+  &.about-excerpt .container-text.container-right .row{
+    margin-top:10%;
+    a,a:link,a:visited{
+      color:white;
+      text-decoration:underline;
     }
   }
   .container-image {
@@ -547,6 +559,10 @@ section.campaign-facts {
       cursor: pointer; 
     }
   }
+  &.about-excerpt .container-image.container-left div.row{
+    background-position:right center;
+  }
+
   .container-left {
     left: 0;
 
@@ -676,10 +692,12 @@ button.nextSlide {
     } 
 }
 button.prevSlide {
-    left: @arrowIn;
+    // left: @arrowIn;
+    left:-100px;
 }
 button.nextSlide {
-    right: @arrowIn;
+    // right: @arrowIn;
+    right:-100px;
 }
 @media only screen and (max-width : 1320px) {
   button.prevSlide {
@@ -691,7 +709,7 @@ button.nextSlide {
 }
 
 #giving {
-  height: 600px;
+  height: 500px;
   background-position: center right;
   .background-cover(cover);
   .container { position: relative; }
@@ -700,7 +718,7 @@ button.nextSlide {
     height: 300px;
     background-color: white;
     position: absolute;
-    top: 150px;
+    top: 100px;
     left: 0;
     form {
       height: 100%;
@@ -815,6 +833,13 @@ button.nextSlide {
         width: 23.8vw;
         height: 0;
         padding-bottom: 66%;
+        &:after {
+          margin-top: 0;
+          position: absolute;
+          height: auto;
+          width: 100%;
+          top: 20%;
+        }
       }
     }
     button.left { left: -80px; }
@@ -831,11 +856,24 @@ button.nextSlide {
 
 
   .campaign-excerpt {
-    height: 500px;
+    height: 400px;
     .container.container-text .row {
-      margin-top: 11%;  
+      margin-top: 11%;
     }
-  } 
+  }
+  &.about-excerpt .container{
+    width:60%;
+    .row div h2{
+      font-size:20px;
+    }
+    .row p{
+      font-size:16px;
+    }
+  }
+  &.about-excerpt .container-text.container-right .row{
+    margin-top:4% !important;
+  }
+
 
   #impact-stories .container {
     button.left { left: -(7vw); }
@@ -958,7 +996,7 @@ button.nextSlide {
     .donate-widget {
       max-width: 350px;
       width: 90%;
-      top: 50px;
+      top: 50px !important;
       left: 0;
       right: 0;
       margin: auto;
@@ -1596,7 +1634,10 @@ button.nextSlide {
         text-transform:uppercase;
         color:#4c2b85;
         letter-spacing: 2px;
-      }
+	  }
+	  .cv2-header-grey ul{
+		  text-align:left;
+	  }
       .cv2-header-grey ul li{
         font-family:"Uni sans", sans-serif;
       }
@@ -1746,6 +1787,15 @@ button.nextSlide {
           margin-bottom: 15px;
         }
       }
+      body.cv2-header-hold header.cv2-header{
+		position:absolute;
+		top:0;
+		z-index:2000;
+		width:100%;
+	  }
+	  body.cv2-header-hold header.cv2-header ~ #immersive-body{
+		  margin-top:130px;
+	  }
 
 /*******************
  * Campaign Footer *
@@ -1774,6 +1824,9 @@ button.nextSlide {
 
     .cv2-col-inner{
       padding:50px;
+    }
+    .cv2-col-inner-campnews{
+      padding-bottom:0 !important;
     }
     
     .cv2-col-inner form input{
@@ -1808,8 +1861,8 @@ button.nextSlide {
       height:45px;
       display: inline-block;
       text-indent:-999999px;
-      // background-image:url('../img/sprite_socialmedia.png');
-      background-image:url('/cms/wp-content/themes/be-boundless/campaign/img/sprite_socialmedia.png');
+      background-image:url('../img/sprite_socialmedia.png');
+    //   background-image:url('/cms/wp-content/themes/be-boundless/campaign/img/sprite_socialmedia.png');
       background-repeat: no-repeat;
       transition:none;
     }
@@ -1921,11 +1974,17 @@ button.nextSlide {
       color:white;
       font-size: 10px;
     }
-    iframe#campnews{
+    /*iframe#campnews{
       margin:0;
       padding:0;
       width:100%;
       height:78px !important;
+      border:none;
+    }*/
+    .cv2-campnews iframe{
+      margin:0;
+      padding:0;
+      height:auto !important;
       border:none;
     }
     @media only screen and (max-width:992px){

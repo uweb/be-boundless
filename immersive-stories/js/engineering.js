@@ -1,6 +1,8 @@
 
 $(function(){
 
+  $('body').addClass('engineerIntro');
+
   var controllerEngineering = new ScrollMagic.Controller();
 
   currentController = controllerEngineering;
@@ -12,7 +14,7 @@ $(function(){
       duration: '100%',
     })
     .setPin('.intro', {pushFollowers: false})
-    .setClassToggle("body", 'engineerIntro')
+    // .setClassToggle("body", 'engineerIntro')
     .setTween('#intro-text', 1, { opacity: 0, transform: 'translateY(-100px)', ease: Power0.easeIn })
     .addTo(controllerEngineering);
 

@@ -1,6 +1,8 @@
 
 $(function(){
 
+  $('body').addClass('medicineIntro');
+
     var controllerTacoma = new ScrollMagic.Controller()
     
     currentController = controllerTacoma;
@@ -11,7 +13,7 @@ $(function(){
       duration: '100%',
     })
     .setPin('.intro', {pushFollowers: false})
-    .setClassToggle("body", 'medicineIntro')
+    // .setClassToggle("body", 'medicineIntro')
     .setTween('#intro-text', 1, { opacity: 0, transform: 'translateY(-100px)', ease: Power0.easeIn })
     .addTo(controllerTacoma);
     $(window).resize(function(){

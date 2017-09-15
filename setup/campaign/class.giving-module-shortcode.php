@@ -38,7 +38,7 @@ class Campaign_Giving
                           '<input id="duration" name="RecurringDuration" type="hidden" value="0" />' .
                           '<input name="FastForward" type="hidden" value="yes" />' .
                           '<input name="appeal" type="hidden" value="17XEX" />' .
-                          '<input name="code" type="hidden" value="HUSPRO" />' .
+                          '<input name="code" type="hidden" value="IMPFND" />' .
                             '<h2>Make your gift today</h2>' .
                             '<div class="amount"><span>$</span><input type="text" name="amount" id="cv2-widget-give-amount" /></div>' .
                             '<button class="monthly" id="cv2-give-monthly" type="submit" class="" data-frequency="monthly" data-recurring="yes" data-duration="0">Monthly</button>' .
