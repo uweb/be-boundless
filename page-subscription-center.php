@@ -6,7 +6,7 @@
 <script type="text/javascript" src="https://subscribe.gifts.washington.edu/Scripts/SubManBuilder/submanbuilder.js" id="uwSubscriptionManager"></script>
 <script type="text/javascript">
 	SUBMANBUILDER.makeIframe({
-		preferenceID: 27,
+		preferenceID: 205,
 		managePreferences: true,
 		fromName: "University of Washington",
 		fromEmail: "uwcmpgn@uw.edu",

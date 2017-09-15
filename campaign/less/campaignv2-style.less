@@ -101,7 +101,7 @@
 }
 #campaign-intro {
 //   height: calc(~"100vh - 171px"); //@headerHeight
-height:100%;
+  height:calc(~"100vh - 171px");
   width: 100vw;
   background-size: cover;
   background-position: center bottom;
@@ -379,7 +379,7 @@ section.campaign-facts {
 }
 
 .campaign-excerpt {
-  height: 500px;
+  height: 400px;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -444,7 +444,7 @@ section.campaign-facts {
         left: -29px;
       }
       .row {
-        margin: 20% 0 0 15%;
+        margin: 15% 0 0 15%;
       }
     }
     .row {
@@ -454,7 +454,7 @@ section.campaign-facts {
       z-index: -1;
       width: 65%;
       max-width: 500px;
-      margin: 20% auto 0; 
+      margin: 15% auto 0; 
       text-align: center;
       h2 {
         font-size: 20px;
@@ -691,10 +691,12 @@ button.nextSlide {
     } 
 }
 button.prevSlide {
-    left: @arrowIn;
+    // left: @arrowIn;
+    left:-100px;
 }
 button.nextSlide {
-    right: @arrowIn;
+    // right: @arrowIn;
+    right:-100px;
 }
 @media only screen and (max-width : 1320px) {
   button.prevSlide {
@@ -830,6 +832,13 @@ button.nextSlide {
         width: 23.8vw;
         height: 0;
         padding-bottom: 66%;
+        &:after {
+          margin-top: 0;
+          position: absolute;
+          height: auto;
+          width: 100%;
+          top: 20%;
+        }
       }
     }
     button.left { left: -80px; }
