@@ -109,9 +109,15 @@
   padding-top: 10vh;
   overflow: hidden;
   color: white;
+  position: relative;
   video,
   #pause {
     display: none;
+  }
+  .main-content {
+    // top: 20%;
+    // -webkit-transform: none;
+    // transform: none;
   }
   .container {
     width: 50vw;
@@ -167,10 +173,10 @@
     .main-content {
       position: absolute;
       z-index: 1;
-      top: 50%;
+      top: 15%;
       left: 0;
       width: 100%;
-      .translate(0, -50%);
+      //.translate(0, -50%);
     }
     #pause {
         position: absolute;
@@ -181,7 +187,7 @@
         width: 45px;
         height: 45px;
         right: 20px;
-        top: 200px;
+        top: 20px;
         border: none;
         background: url("@{img}/pause.svg") no-repeat 0 0 transparent;
         z-index: 2;
@@ -1110,6 +1116,9 @@ button.nextSlide {
 @media only screen and (max-height : 800px) {
   #campaign-intro:not(.cv2-home-slide-video) {
     padding-top: 4vh;
+  }
+  #campaign-intro.cv2-home-slide-video .main-content {
+    top: 0;
   }
 }
 
