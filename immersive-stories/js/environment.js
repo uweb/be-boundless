@@ -56,9 +56,6 @@
       TweenMax.set($(".path"), { strokeDashoffset:strokeDashoffset });
     }
 
-    var tl2 = new TimelineMax();
-        tl2.to($(".bus-map"), 4, { onUpdate:applyStroke })
-
     // var map = new ScrollMagic.Scene({
     //     triggerElement: ".bus-map",
     //     duration: $windowHeight - ($busMapHeight * 0.6),
@@ -77,13 +74,40 @@
         map.update(true);
     });
 
-new ScrollMagic.Scene({triggerElement: "#drone-vid", duration: '100%', triggerHook:1})
+    var tl2 = new TimelineMax();
+
+    tl2.add([
+            TweenMax.to($(".bus-map"), 1, { onUpdate:applyStroke }),
+            TweenMax.to('#map-animation', .3,    {  opacity: 0, ease: Power0.easeIn, delay: .7 }),
+            TweenMax.to('#drone-vid', .3,    {  opacity: 1, ease: Power0.easeIn, delay: .7 })
+          ]);
+
+// new ScrollMagic.Scene({triggerElement: "#drone-vid", duration: '100%', triggerHook:1})
+//           .setTween(tl2)
+//           .on('progress', function(e){
+//             strokeDashoffset = (1 - e.progress) * strokeLength;
+//            // miles.innerHTML = Math.round(e.progress * 144);
+//           })
+//           .setPin("#map-animation")
+//           //.setPin("#drone-vid")
+//           .addIndicators()
+//           .addTo(currentController);
+
+// new ScrollMagic.Scene({triggerElement: "#drone-vid", duration: '40%', triggerHook:0})
+//           .setTween(delacruzAnimation)
+//           // .setPin("#map-animation")
+//           .setPin("#drone-vid")
+//           // .addIndicators()
+//           .addTo(currentController);
+//           
+new ScrollMagic.Scene({triggerElement: "#map-transition", duration: '100%', triggerHook:0})
+          //.setTween(delacruzAnimation)
           .setTween(tl2)
           .on('progress', function(e){
             strokeDashoffset = (1 - e.progress) * strokeLength;
            // miles.innerHTML = Math.round(e.progress * 144);
           })
-          .setPin("#map-animation")
+          .setPin("#map-transition")
           //.setPin("#drone-vid")
           .addIndicators()
           .addTo(currentController);

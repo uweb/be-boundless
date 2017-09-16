@@ -124,7 +124,7 @@
             </div>
         </div>
   </section>
-
+<div id="map-transition">
   <section id="map-animation" class="bus-map transSection">
 
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="2200px"
@@ -229,7 +229,7 @@
         <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/DRONE_REVEAL_LOOP_compressed.mp4' ?>" type="video/mp4">
     </video>
   </section>
-  
+</div>
 
   <section id="students" class="full-image-section">
     <section id="all-students" class="all-students">
