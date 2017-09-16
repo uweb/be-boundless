@@ -71,57 +71,7 @@ global $styles;
 						<p class="header">MORE GIVING OPPORTUNITIES</p>
 					</div><!-- .col-xs-12 .col-sm-12 .col-md-12 .col-lg-12 -->
 				</div><!-- .row -->
-				<?php /*
-				<div class="row">
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<p class="subheader">Campuses</p>
-						<ul class="list-unstyled">
-							<li><a href="http://www.uwb.edu/give/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-uw-bothell">UW Bothell</a></li>
-							<li><a href="http://www.tacoma.uw.edu/boundless/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-uw-tacoma">UW Tacoma</a></li>
-						</ul>
-						<p class="subheader">Colleges &amp; Schools</p>
-						<ul class="list-unstyled">
-							<li><a href="https://artsci.washington.edu/campaign/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-arts-sciences">College of Arts &amp; Sciences</a></li>
-							<li><a href="http://be.washington.edu/support-be/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-cbe">College of Built Environments</a></li>
-							<li><a href="http://education.uw.edu/campaign/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-education">College of Education</a></li>
-							<li><a href="http://www.engr.washington.edu/giving/impact/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-engineering">College of Engineering</a></li>
-							<li><a href="https://environment.uw.edu/alumni-and-community/giving-to-the-college/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-environment">College of the Environment</a></li>
-							<li><a href="http://evans.uw.edu/giving/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-evans">Daniel J. Evans School of Public Policy &amp; Governance</a></li>
-						</ul>
-					</div><!-- .col-md-4 .col-lg-4 -->
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<ul class="list-unstyled">
-							<!-- <li><a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=2&source=ECM">Henry M. Jackson School of International Studies</a></li> -->
-							<li><a href="https://ischool.uw.edu/boundless/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-ischool">Information School</a></li>
-							<li><a href="http://foster.uw.edu/campaign/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-business">Michael G. Foster School of Business</a></li>
-							<li><a href="https://www.cs.washington.edu/supportcse/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-cse">Paul G. Allen School of Computer Science &amp; Engineering</a></li>
-							<li><a href="https://dental.washington.edu/alumni-friends/give/make-a-gift/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-dentistry">School of Dentistry</a></li>
-							<li><a href="https://www.law.uw.edu/donate/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-law">School of Law</a></li>
-							<li><a href="https://nursing.uw.edu/community/donate/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-nursing">School of Nursing</a></li>
-							<li><a href="https://sop.washington.edu/alumni-donors/give-to-the-school/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-pharmacy">School of Pharmacy</a></li>
-							<li><a href="http://sph.washington.edu/giving/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-public-health">School of Public Health</a></li>
-							<li><a href="http://socialwork.uw.edu/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-social-work">School of Social Work</a></li>
-						</ul>
-					</div><!-- .col-md-4 .col-lg-4 -->
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<p class="subheader">Health System</p>
-						<ul class="list-unstyled">
-							<li><a href="http://www.acceleratemed.org/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-medicine">UW Medicine</a></li>
-						</ul>
-						<p class="subheader">Departments</p>
-						<ul class="list-unstyled">
-							<li><a href="http://www.washington.edu/uaa/support/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-uaa">Academic &amp; Student Affairs</a></li>
-							<li><a href="http://uwtyeeclub.org/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-athletics">Athletics</a></li>
-							<li><a href="http://www.lib.washington.edu/support/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-libraries">University Libraries</a></li>
-						</ul>
-						<p class="subheader">Media</p>
-						<ul class="list-unstyled">
-							<li><a href="http://www.kexp.org/support/benefitsofgiving/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-kexp">KEXP</a></li>
-							<li><a href="http://kuow.org/support-kuows-capitol-campaign/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-kuow">KUOW</a></li>
-						</ul>
-					</div><!-- .col-md-4 .col-lg-4 -->
-				</div>
-				*/ ?>
+
 				<div class="row">
 					<div class="col-sm-4 col-md-4 col-lg-4">
 						<ul class="list-unstyled">
@@ -137,11 +87,11 @@ global $styles;
 					</div><!-- .col-md-4 .col-lg-4 -->
 					<div class="col-sm-4 col-md-4 col-lg-4">
 						<ul class="list-unstyled">
-							<!-- <li><a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=2&source=ECM">Henry M. Jackson School of International Studies</a></li> -->
+							<li><a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=2&source=ECM">Henry M. Jackson School of International Studies</a></li>
 							<li><a href="https://ischool.uw.edu/boundless/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-ischool">Information School</a></li>
-							<li><a href="http://foster.uw.edu/campaign/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-business">Michael G. Foster School of Business</a></li>
 							<li><a href="http://www.kexp.org/support/benefitsofgiving/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-kexp">KEXP</a></li>
 							<li><a href="http://kuow.org/support-kuows-capitol-campaign/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-kuow">KUOW</a></li>
+							<li><a href="http://foster.uw.edu/campaign/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-business">Michael G. Foster School of Business</a></li>
 							<li><a href="https://www.cs.washington.edu/supportcse/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-cse">Paul G. Allen School of Computer Science &amp; Engineering</a></li>
 							<li><a href="https://dental.washington.edu/alumni-friends/give/make-a-gift/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-dentistry">School of Dentistry</a></li>
 							<li><a href="https://www.law.uw.edu/donate/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-law">School of Law</a></li>
