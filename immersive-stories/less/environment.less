@@ -84,7 +84,7 @@ p {
         position: absolute;
         left: 0;
         top: 0;
-        bottom: -20px;
+        bottom: 0;
         width: 100%;             
         background: -webkit-linear-gradient(bottom left, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%);
         background: -o-linear-gradient(bottom left, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%);
@@ -94,7 +94,7 @@ p {
     span.gold-tilt {
         position: absolute;
         top: 0;
-        bottom: -20px;
+        bottom: 0;
         background-color: @darkgold;
         opacity: 0.3;
         .skew(15deg, 0);
@@ -220,6 +220,12 @@ p {
             line-height: 1.4;
             font-size: .65em;
         }
+        h1 {
+            font-size: 8vw;
+            span {
+                font-size: 12vw;
+            }
+        }
         #intro-text {
             a {
                 p {
@@ -290,6 +296,9 @@ p {
         }
         h1 {
             font-size: 6.5vw;
+            span {
+                font-size: 10vw;
+            }
         }
         p {
             line-height: 1.4;
@@ -696,6 +705,28 @@ p {
                 }
             }
         }
+        h2 {
+            color: white;
+            text-align: center;
+            font-family: @font-family-headline;
+            font-size: 35px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            position: relative; 
+            margin-bottom: 40px;    
+        }
+        h2:after {
+            content: '';
+            display: block;
+            width: 360px;
+            position: absolute;
+            height: 20px;
+            left: calc(~"50% - 160px");
+            bottom: -30px;
+            //margin: 20px auto;
+            background: url("@{enviro}/squiggle.svg") no-repeat;
+            .background-size(contain);
+        }
     }
     #all-students {
         visibility: visible;
@@ -751,7 +782,7 @@ p {
             width: 150px;
             height: auto;
         }
-        &:before {
+        a:before {
             content: '';
             height: 25px;
             width: 25px;
@@ -773,13 +804,7 @@ p {
             .background-cover(cover);  
         }
     }
-    section.student ,
-    #student1 ,
-    #student2 ,
-    #student3 ,
-    #student4 ,
-    #student5 ,
-    #student6 {
+    section.student {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -1037,23 +1062,25 @@ p {
         p {
             text-align: left;
         }
-        img {
-            height: auto;
-            width: 60%;
-            margin-top: 50px;
-            &.left {
-                margin-left: -20%;
+        .img-gal{
+            margin-top: -150px;
+            margin-left: -10%;
+            img {
+                height: auto;
+                width: 60%;
+                margin-top: 50px;
             }
-            &.right {
-                margin-left: 20%;
+        }
+        .foster-slideshow {
+            display: none;
+            img {
+                width: 100%;
             }
         }
         .snapchat {
             height: 400px;
             width: 400px; 
             border-radius: 50%;
-            float: right;
-            margin-right: -25%;
             overflow: hidden;
             video {
                 height: 430px;
@@ -1071,7 +1098,7 @@ p {
             blockquote {
                 display: inline-block;
                 position: absolute;
-                top: 20%;
+                top: 0;
                 width: 54%;
                 font-family: @uni;
                 font-weight: 700;
@@ -1139,7 +1166,7 @@ p {
                 width: 360px;
                 position: absolute;
                 height: 20px;
-                left: calc(~"50% - 180px");
+                left: calc(~"50% - 160px");
                 bottom: -30px;
                 //margin: 20px auto;
                 background: url("@{enviro}/squiggle.svg") no-repeat;
@@ -1206,8 +1233,8 @@ p {
 }
 
 section.field-notes {
-    height: 70vh;
-    max-height: 1600px;
+    min-height: 70vh;
+    //max-height: 1600px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -1219,7 +1246,15 @@ section.field-notes {
         height: auto;
         min-height: 70vh;
         background: url("@{enviro}/STUD_PRES.jpg") no-repeat center right;
+        border-bottom: none;
         .background-cover(cover);
+    }
+    &.bg-gold {
+        height: auto;
+        background: @darkgold;
+        &:after {
+            content: none;
+        }
     }
     &.scavenger {
         background: url("@{enviro}/SCAV_OUTRO_PHOTO.jpg") no-repeat center left;
@@ -1366,6 +1401,22 @@ iframe {
     width: 100%;
     max-height: none;
     margin: 0;
+}
+
+section.iframe {
+    position: relative;
+}
+section.iframe.arrow:after {
+    content: "";
+    border-color: #85754d transparent;
+    border-style: solid;
+    border-width: 30px 30px 0 30px;
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -30px;
 }
 
 section.text-block.giving-widget.branded {
@@ -1582,6 +1633,18 @@ section.text-block.giving-widget.branded {
         div.student4 { left: 36%; }
         div.student6 { left: 51%; }
     }
+    .enviro-section section.section-content {
+        .outset {
+            margin-left: 0;
+        }
+        .img-gal {
+            margin-top: 0;
+            margin-left: 0;
+        }
+    }
+    section.field-notes div {
+        padding: 70px 0;
+    }
 }
 
 @media only screen and (max-width:767px){
@@ -1593,6 +1656,13 @@ section.text-block.giving-widget.branded {
     }
     h2.box-page-break {
             margin: -30px auto 30px;
+    }
+    section.text-block.border-top-overlap {
+        overflow: visible;
+        .copy .box-page-break {
+            margin: 0 auto;
+            .translate(0,-50%);
+        }
     }
 }
 
@@ -1609,7 +1679,7 @@ section.text-block.giving-widget.branded {
     }
     .full-image-section #all-students {
         div.copy {
-            margin-top: 0;
+            margin-top: 5vh;
         }
         img.student { width: 120px; }
         img.student1 { width: 125px; }
@@ -1625,9 +1695,165 @@ section.text-block.giving-widget.branded {
         div.student5 { left: 0; }
         div.student6 { left: 51%; }
     }
+    .full-image-section section.student {
+        div.quote {
+            display: none;
+        }
+        div.name {
+            top: 0;
+        }
+    }
+    .enviro-section section.section-content {
+        .outset blockquote {
+            width: 45%;
+        }
+        .snapchat {
+            margin-top: 100px;
+        }
+        .img-gal {
+            display: none;
+        }
+        .foster-slideshow {
+            display: inherit;
+        }
+    }
+    section.field-notes div {
+        width: 80%;
+        padding: 70px 0;
+    }
+    #map-transition {
+        margin-top: -50vw;
+    }
 }
 
 //  (max-width: 599px)
 @media @phone-only { 
-    //
+    //CHANGES
+    //all h2 to font size 1.4em
+    //P to line heignht 1.2 and font size 17
+    .enviro-section section.section-content {
+        .outset {
+            margin-left: 0;
+            blockquote {
+                display: block;
+                width: 100%;
+                position: relative;
+                margin-top: 30px;
+            }
+        }
+        .img-gal {
+            display: none;
+        }
+        .foster-slideshow {
+            display: inherit;
+            p {
+                color: #3d3d3d;
+            }
+            ul.slick-dots {
+                //bottom: 10px;
+                li button:before {
+                    color: #FFF;
+                    opacity: 0.5;
+                }
+                li.slick-active button:before {
+                    color: #FFF;
+                    opacity: 0.9;
+                }
+            }
+        }
+        .snapchat {
+            height: 90vw;
+            width: 90vw;
+            margin-left: 0;
+            video{
+                height: 100vw;
+                width: 100vw;
+                margin: -5vw 0 0 -5vw;
+            }
+        }
+    }
+    section.field-notes div {
+        width: 90%;
+        padding: 50px 0;
+    }
+    #map-transition {
+        margin-top: -50vh;
+    }
+    .bus {
+        p {
+            padding: 17vw 0 17vw 0;
+            font-size: 1.4em;
+        }
+    }
+    //less for slideshow of students 
+    section.full-image-section {
+        #all-students {
+            .student{
+                display: none;
+            }
+            .copy {
+                margin-top: 0;
+                height: 30vh;
+                padding: 0vh 20px;
+                background: rgba(0,0,0,0.6);
+            }
+        }
+        div.student-container {
+            height: calc(~"70vh - 10px");
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: 0;
+            &.slick-initialized {
+                div.slick-track,
+                div.slick-list {
+                    height: 100%;
+                }
+                ul.slick-dots {
+                    bottom: 10px;
+                    li button:before {
+                        color: #FFF;
+                        opacity: 0.5;
+                    }
+                    li.slick-active button:before {
+                        color: #FFF;
+                        opacity: 0.9;
+                    }
+                }
+                section.student p.major {
+                    position: relative;
+                    background-color: transparent;
+                    opacity: 1;
+                    padding: 0;
+                    .transition(transform none);
+                    .translate(0,0);
+                    &:before ,
+                    &:after {
+                        content: none;
+                    }
+                }
+            }
+        }
+        section.student {
+            visibility: visible;
+            opacity: 1;
+            height: 100%;
+            width: 100%;
+            position: relative;
+            div.name {
+                top: 0;
+                h3 {
+                    font-size: 2.0em;
+                }
+                p.major {
+                    font-size: 1.1em;
+                    width: 70%;
+                }
+            }
+            div.quote {
+                display: none;
+            }
+        }
+    }
 }             

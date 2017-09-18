@@ -90,7 +90,7 @@
   <section class="text-block transparent no-pad first-block">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 copy reduced-pad">
+            <div class="col-md-10 col-md-offset-1 copy">
                 
                 <h3>More than wolves</h3>
 
@@ -233,9 +233,8 @@
 
   <section id="students" class="full-image-section">
     <section id="all-students" class="all-students">
-      <div class="col-md-6 col-md-offset-3 col-xs-12 copy">
-        <p>Cras sagittis id tellus id tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus lacinia, tortor sed placerat fringilla, Cras sagittis id tellus id tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
-        <p class="pull-text">Nature is not fair and meals are just as often stolen as they are earned</p>
+      <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12 copy">
+        <h2 class="pull-text">From the student...<br>[insert here]</h2>
       </div>
 
       <div class="student student1"><a class="student-link" href="#student1"><image class="student student1" alt="student one" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait1.png' ?>"></a></div>
@@ -245,6 +244,7 @@
       <div class="student student5"><a class="student-link" href="#student5"><image class="student student5" alt="student five" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait5.png' ?>"></a></div>
       <div class="student student6"><a class="student-link" href="#student6"><image class="student student6" alt="student six" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait6.png' ?>"></a></div>
     </section>
+    <div class="student-container">
     <section id="student1" class="student student1">
       <div class="name">
         <h3>Loma</br>Pendergraft, M.S. and Ph.D. student</h3>
@@ -317,6 +317,7 @@
       </div>
       <image class="full-student" alt="student one" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/profile_1.png' ?>">
     </section>
+    </div>
     <button id="close-modal">
       Close
       <svg aria-hidden="true" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34.147px" height="37.833px" viewBox="0 0 34.147 37.833" enable-background="new 0 0 34.147 37.833" xml:space="preserve">
@@ -372,15 +373,33 @@
               <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_1.jpg' ?>" alt="Female student looking through binoculars">
               <blockquote><span>&ldquo;</span>To be able to do your own bird surveys — and learn how professionals in the park do their surveys — is really valuable.<span>&rdquo;</span><span class="acknowledgement">— Courtney Straight, ’18</span></blockquote>
             </div>
-            <div class="snapchat">
+            <div class="snapchat col-md-offset-10 col-sm-offset-6 col-xs-offset-4">
               <video autoplay loop muted playsinline class="media" data-object-fit>
                   <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/snapchat1.mp4' ?>" type="video/mp4">
               </video>
             </div>
-            <img class="left" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_2.jpg' ?>" alt="Crows perched on a tree">
-            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_3.jpg' ?>" alt="A crow feather">
-            <img class="right" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_4.jpg' ?>" alt="Students listening to a lecture in the field">
-            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_5.jpg' ?>" alt="A student examining animal remnants">
+            <div class="img-gal">
+              <img class="" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_2.jpg' ?>" alt="Crows perched on a tree" data-lity>
+              <img class="col-md-offset-10 col-xs-offset-5" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_3.jpg' ?>" alt="A crow feather" data-lity>
+              <img class="" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_4.jpg' ?>" alt="Students listening to a lecture in the field" data-lity>
+              <img class="col-md-offset-10 col-xs-offset-5" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_5.jpg' ?>" alt="A student examining animal remnants" data-lity>
+            </div>
+
+            <div id="eng-slideshow" class="foster-slideshow">
+               <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_2.jpg' ?>" alt="Crows perched on a tree" data-lity>
+                <p>Image Two Caption Filler</p></div>
+
+              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_3.jpg' ?>" alt="A crow feather" data-lity>
+                <p>Image Three Caption Filler</p>
+              </div>
+            
+              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_4.jpg' ?>" alt="Students listening to a lecture in the field" data-lity>
+                  <p>Image Four Caption Filler</p></div>      
+
+              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_5.jpg' ?>" alt="A student examining animal remnants" data-lity>
+                  <p>Image Five Caption Filler</p></div> 
+
+            </div>
           </div>
         </div>
       </section>
@@ -441,16 +460,36 @@
               <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_1.jpg' ?>" alt="Students examine the wing of a hawk.">
               <blockquote><span>&ldquo;</span>To actually go there and get a sense of where a cougar hunts helps you understand how they interact with their environment.<span>&rdquo;</span><span class="acknowledgement">— Matthew Malone, ’18</span></blockquote>
             </div>
-            <div class="snapchat">
+            <div class="snapchat col-md-offset-10 col-sm-offset-6 col-xs-offset-4">
               <video autoplay loop muted playsinline class="media" data-object-fit>
                   <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/snapchat2.mp4' ?>" type="video/mp4">
               </video>
             </div>
-              <img class="left" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_2.jpg' ?>" alt="Student peering at a hawk">
-              <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_3.jpg' ?>" alt="A bear sighted in the distance">
-              <img class="right" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_4.jpg' ?>" alt="A student taking field notes">
-              <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_5.jpg' ?>" alt="A group of students using telescopes to spot wildlife">
-              <img class="left" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_6.jpg' ?>" alt="A group of students hiking through the field">
+            <div class="img-gal">
+              <img class="" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_2.jpg' ?>" alt="Student peering at a hawk" data-lity>
+              <img class="col-md-offset-10 col-xs-offset-5" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_3.jpg' ?>" alt="A bear sighted in the distance" data-lity>
+              <img class="" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_4.jpg' ?>" alt="A student taking field notes" data-lity>
+              <img class="col-md-offset-10 col-xs-offset-5" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_5.jpg' ?>" alt="A group of students using telescopes to spot wildlife" data-lity>
+              <img class="" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_6.jpg' ?>" alt="A group of students hiking through the field" data-lity>
+            </div>
+            <div id="eng-slideshow" class="foster-slideshow">
+               <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_2.jpg' ?>" alt="Student peering at a hawk" data-lity>
+                <p>Image Two Caption Filler</p></div>
+
+              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_3.jpg' ?>" alt="A bear sighted in the distance" data-lity>
+                <p>Image Three Caption Filler</p>
+              </div>
+            
+              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_4.jpg' ?>" alt="A student taking field notes" data-lity>
+                  <p>Image Four Caption Filler</p></div>      
+
+              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_5.jpg' ?>" alt="A group of students using telescopes to spot wildlife" data-lity>
+                  <p>Image Five Caption Filler</p></div> 
+
+              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_6.jpg' ?>" alt="A group of students hiking through the field" data-lity>
+                  <p>Image Six Caption Filler</p></div> 
+
+            </div>
           </div>
         </div>
       </section>
@@ -510,15 +549,32 @@
               <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_1.jpg' ?>" alt="Students listening to a National Parks Ranger">
               <blockquote><span>&ldquo;</span>The value of this trip, of doing research with the people who work in the field, is that we get to experience what the career of a wildlife biologist is really like.<span>&rdquo;</span><span class="acknowledgement">— Danyan Leng, ’18</span></blockquote>
             </div>
-            <div class="snapchat">
+            <div class="snapchat col-md-offset-10 col-sm-offset-6 col-xs-offset-4">
               <video autoplay loop muted playsinline class="media" data-object-fit>
                   <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/snapchat3.mp4' ?>" type="video/mp4">
               </video>
             </div>
-            <img class="left" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_2.jpg' ?>" alt="A Buffalo spotted at a watering hole">
-            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_3.jpg' ?>" alt="A student taking notes">
-            <img class="right" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_4.jpg' ?>" alt="A view of a ram in the wilderness">
-            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_5.jpg' ?>" alt="A groupshot of the students in Yellowstone National Park.">
+            <div class="img-gal">
+              <img class="" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_2.jpg' ?>" alt="A Buffalo spotted at a watering hole" data-lity>
+              <img class="col-md-offset-10 col-xs-offset-5" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_3.jpg' ?>" alt="A student taking notes" data-lity>
+              <img class="" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_4.jpg' ?>" alt="A view of a ram in the wilderness" data-lity>
+              <img class="col-md-offset-10 col-xs-offset-5" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_5.jpg' ?>" alt="A groupshot of the students in Yellowstone National Park." data-lity>
+            </div>
+            <div id="eng-slideshow" class="foster-slideshow">
+               <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_2.jpg' ?>" alt="A Buffalo spotted at a watering hole" data-lity>
+                <p>Image Two Caption Filler</p></div>
+
+              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_3.jpg' ?>" alt="A student taking notes" data-lity>
+                <p>Image Three Caption Filler</p>
+              </div>
+            
+              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_4.jpg' ?>" alt="A view of a ram in the wilderness" data-lity>
+                  <p>Image Four Caption Filler</p></div>      
+
+              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_5.jpg' ?>" alt="A groupshot of the students in Yellowstone National Park." data-lity>
+                  <p>Image Five Caption Filler</p></div> 
+
+            </div>
           </div>
         </div>
       </section>
@@ -581,15 +637,32 @@
               <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_1.jpg' ?>" alt="Students setting up camp for dinner">
               <blockquote><span>&ldquo;</span>It was really cool talking to the ranchers and hearing how hard they’re trying to coexist with the landscape and the wildlife on it.<span>&rdquo;</span><span class="acknowledgement">— Andrew Wang, ’17</span></blockquote>
             </div>
-            <div class="snapchat">
+            <div class="snapchat col-md-offset-10 col-sm-offset-6 col-xs-offset-4">
               <video autoplay loop muted playsinline class="media" data-object-fit>
                   <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/snapchat4.mp4' ?>" type="video/mp4"> 
               </video>
             </div>
-            <img class="left" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_2.jpg' ?>" alt="Students socializing">
-            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_3.jpg' ?>" alt="Horses grazing around the ranch">
-            <img class="right" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_4.jpg' ?>" alt="The Anderson family at their ranch">
-            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_5.jpg' ?>" alt="Students hiking in the field">
+            <div class="img-gal">
+              <img class="" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_2.jpg' ?>" alt="Students socializing" data-lity>
+              <img class="col-md-offset-10 col-xs-offset-5" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_3.jpg' ?>" alt="Horses grazing around the ranch" data-lity>
+              <img class="" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_4.jpg' ?>" alt="The Anderson family at their ranch" data-lity>
+              <img class="col-md-offset-10 col-xs-offset-5" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_5.jpg' ?>" alt="Students hiking in the field" data-lity>
+            </div>
+            <div id="eng-slideshow" class="foster-slideshow">
+               <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_2.jpg' ?>" alt="Students socializing" data-lity>
+                <p>Image Two Caption Filler</p></div>
+
+              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_3.jpg' ?>" alt="Horses grazing around the ranch" data-lity>
+                <p>Image Three Caption Filler</p>
+              </div>
+            
+              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_4.jpg' ?>" alt="The Anderson family at their ranch" data-lity>
+                  <p>Image Four Caption Filler</p></div>      
+
+              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_5.jpg' ?>" alt="Students hiking in the field" data-lity>
+                  <p>Image Five Caption Filler</p></div> 
+
+            </div>
           </div>
         </div>
       </section>
@@ -611,13 +684,20 @@
       <p>In late May, the students reconvene in Anderson Hall on the UW campus. They’ve spent weeks preparing presentations that demonstrate how research in Yellowstone is relevant to Washingtonians.</p>
       <p>One group analyzed how human roads and trails affect the hunting habits of wolves and cougars, and what this might mean as our state’s wolf population continues to recover and expand. Another group looked at the dining habits of scavengers such as ravens, eagles and bears, making predictions about how those populations might fluctuate as wolf populations grow — and what the effect of climate change might be on scavengers’ diets.</p>
       <p>A third group studied bison migration inside and outside Yellowstone, as well as the complexities, worries and politics involved. Hannah Booth’s big takeaway was that, whether it was for wildlife management in Yellowstone or here in Washington, “There’s room for education on both sides of any conservation debate.”</p>
+    </div>
+  </section>
+  <section class="field-notes text-block bg-gold">
+    <div>
       <h2 class="normal">FIELDWORK GIVES UW STUDENTS VALUABLE HANDS-ON EXPERIENCE</h2>
       <p>The UW wants to make experiences like this accessible to students who want to learn in the field, regardless their ability to pay. Donors like composer Alex Shapiro believe in the power of immersive learning to change careers — and lives. Hear what she has to say about the power of field research at the UW.</p>
     </div>
   </section>
+  
 
 <!-- video -->
-<iframe width="2560" height="1440" src="https://www.youtube.com/embed/sYfkdUA2Rxw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+<section class="arrow iframe">
+    <iframe width="2560" height="1440" src="https://www.youtube.com/embed/sYfkdUA2Rxw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</section>
 
 <!--        GIVING SECTION        -->
   <section class="text-block giving-widget branded arrow">

@@ -136,6 +136,7 @@ module.exports = function(grunt) {
               'immersive-stories/js/common.js',
               'immersive-stories/js/lity.js',
               //'immersive-stories/js/environment.js',
+              'immersive-stories/js/slick.js',
               'immersive-stories/js/objectFitPolyfill.basic.js',
           ],            
           'immersive-stories/js/foster-school.min.js': [
