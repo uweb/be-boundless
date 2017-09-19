@@ -21,7 +21,7 @@
 <div id="immersive-body">
 
 
-<section class="intro" id="intro-vid">          
+<section class="intro dot-nav-section" id="intro-vid">          
 
   <button id="pause">Pause</button>
   <video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/header-poster.png' ?>" class="fullscreen-bg__video">
@@ -77,10 +77,14 @@
 </section>
 
 <ul id="dot-nav">
+  <li data-tooltip="Intro"><a title="Intro" href="#intro-vid"><span></span></a></li>
+  <li data-tooltip="Student profiles"><a title="Student profiles" href="#students"><span></span></a></li>
   <li data-tooltip="Scavengers"><a title="Scavengers" href="#scavengers"><span></span></a></li>
   <li data-tooltip="Predators"><a title="Predators" href="#predators"><span></span></a></li>
   <li data-tooltip="Prey"><a title="Prey" href="#prey"><span></span></a></li>
   <li data-tooltip="People"><a title="People" href="#people"><span></span></a></li>
+  <li data-tooltip="In the classroom"><a title="In the classroom" href="#in-the-classroom"><span></span></a></li>
+  <li data-tooltip="Donor video"><a title="Donor video" href="#donor-video"><span></span></a></li>
 </ul>
 
 <main id="main_content">
@@ -231,7 +235,7 @@
   </section>
 </div>
 
-  <section id="students" class="full-image-section">
+  <section id="students" class="full-image-section dot-nav-section">
     <section id="all-students" class="all-students">
       <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12 copy">
         <h2 class="pull-text">From the student...<br>[insert here]</h2>
@@ -329,14 +333,15 @@
 
 
 <!-- svavengers -->
-  <section id="scavengers" class="enviro-section">
-    <!-- <span class="lines right"></span>
-    <span class="lines left"></span> -->
+  <section id="scavengers" class="enviro-section dot-nav-section">
     <!-- <img class="foreground" alt="bear" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/pred-fore.png' ?>"> -->
     <div class="enviro-bg">
+      <span class="lines right"></span>
+      <span class="lines left"></span>
+      <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/CLOUDS.png' ?>" alt=""> 
       <div class="foreground"></div>
-        <h2>Intro</h2>
-        <h2 class="in-the-field">In the field</h2>
+        <h2 aria-hidden="true">Intro</h2>
+        <h2 class="in-the-field" aria-hidden="true">In the field</h2>
         <div class="audio"><p class="length">0:21  <span>/ play interview</span></p>
           <audio controls class="player">
             <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/SCAVENGER_LECTURE.mp3' ?>" type="audio/mpeg">
@@ -357,7 +362,7 @@
     </div>
     <section class="content">
       <section class="section-home">
-        <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 copy">
+        <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12 copy">
           <h2 class="pull-text">Scavengers</h2>
           <p>Scavengers are an integral part of the Yellowstone ecosystem, and they’ll travel far and wide for a meal — fresh or not. Ravens and eagles soar above looking for anything to eat, from bloated carcasses to new kills. When they descend, others take notice. Coyotes often join in the fray. And if an omnivorous grizzly, king of them all, arrives, the others must retreat and bide their time. Nature is not fair, and meals here are just as often stolen as earned.</p>
         </div>
@@ -406,6 +411,7 @@
     </section>
   </section>
   <section class="field-notes text-block scavenger">
+      <!-- <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/OUTRO_FOG.png' ?>" alt=""> -->
     <h2>Field Notes</h2>
     <!-- <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1 copy"> -->
     <div>
@@ -415,14 +421,17 @@
   </section>
 
 <!-- predator -->
-  <section id="predators" class="enviro-section">
+  <section id="predators" class="enviro-section dot-nav-section">
     <!-- <span class="lines right"></span>
     <span class="lines left"></span> -->
     <!-- <img class="foreground" alt="bear" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/pred-fore.png' ?>"> -->
     <div class="enviro-bg">
+      <span class="lines right"></span>
+      <span class="lines left"></span>
+      <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/FOG.png' ?>" alt="">
       <div class="foreground"></div>
-        <h2>Intro</h2>
-        <h2 class="in-the-field">In the field</h2>
+        <h2 aria-hidden="true">Intro</h2>
+        <h2 class="in-the-field" aria-hidden="true">In the field</h2>
         <div class="audio"><p class="length">0:18  <span>/ play interview</span></p>
           <audio controls class="player">
             <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/PREDATOR_LECTURE.mp3' ?>" type="audio/mpeg">
@@ -443,7 +452,7 @@
     </div>
     <section class="content">
       <section class="section-home">
-        <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 copy">
+        <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12 copy">
           <h2 class="pull-text">Predators</h2>
           <p>Predators shape life and landscape in the greater Yellowstone ecosystem, and biologists study just about every aspect of their behavior. Beyond tracking and killing, predators instill fear. They keep prey from grazing in certain areas, allowing plants like alders and willows to grow, or “release” — it’s a domino effect known as a trophic cascade. And when predators make a kill, their leftovers often become main courses for opportunistic scavengers.</p>
         </div>
@@ -505,14 +514,14 @@
   </section>
 
 <!-- prey -->
-  <section id="prey" class="enviro-section">
+  <section id="prey" class="enviro-section dot-nav-section">
     <!-- <span class="lines right"></span>
     <span class="lines left"></span> -->
     <!-- <img class="foreground" alt="bear" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/pred-fore.png' ?>"> -->
     <div class="enviro-bg">
         <div class="foreground"></div>
-        <h2>Intro</h2>
-        <h2 class="in-the-field">In the field</h2>
+        <h2 aria-hidden="true">Intro</h2>
+        <h2 class="in-the-field" aria-hidden="true">In the field</h2>
         <div class="audio"><p class="length">0:20  <span>/ play interview</span></p>
           <audio controls class="player">
             <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/PREY_LECTURE.mp3' ?>" type="audio/mpeg">
@@ -533,7 +542,7 @@
     </div>
     <section class="content">
       <section class="section-home">
-        <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 copy">
+        <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12 copy">
           <h2 class="pull-text">Prey</h2>
           <p>When one animal population rises in Yellowstone, another falls, which may create an opportunity for yet another. Since wolves were reintroduced in 1995 (and cougars and bears recovered on their own), the elk population in the park’s northern range has dropped, and the bison population has grown. But how interconnected are these populations? There are many variables to identify, and many questions that today’s students — and tomorrow’s ecologists — must ask.</p>
         </div>
@@ -590,14 +599,14 @@
   </section>
 
 <!-- people -->
-  <section id="people" class="enviro-section">
+  <section id="people" class="enviro-section dot-nav-section">
     <!-- <span class="lines right"></span>
     <span class="lines left"></span> -->
     <!-- <img class="foreground" alt="bear" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/pred-fore.png' ?>"> -->
     <div class="enviro-bg">
       <div class="foreground"></div>
-        <h2>Intro</h2>
-        <h2 class="in-the-field">In the field</h2>
+        <h2 aria-hidden="true">Intro</h2>
+        <h2 class="in-the-field" aria-hidden="true">In the field</h2>
         <div class="audio"><p class="length">0:32  <span>/ play interview</span></p>
           <audio controls class="player">
             <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/RANCHER_LECTURE_V2.mp3' ?>" type="audio/mpeg">
@@ -618,7 +627,7 @@
     </div>
     <section class="content">
       <section class="section-home">
-        <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 copy">
+        <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12 copy">
           <h2 class="pull-text">People</h2>
           <p>Human-drawn boundaries mean nothing to animals. Elk, bison, wolves and grizzlies migrate out of Yellowstone every year. They roam through farms and ranches or make dens in the hills above people’s homes. How do you coexist with hungry wolves and grizzlies when you’re trying to raise cattle? Is it possible for park animals to spread disease to livestock? Many questions surround highly emotional conflicts about how to manage parks for wildlife and people.</p>
         </div>
@@ -678,7 +687,7 @@
   </section>
 
   <!--closing statements-->
-  <section class="field-notes text-block larger">
+  <section class="field-notes text-block larger dot-nav-section" id="in-the-classroom">
     <div>
       <h2 class="normal">FROM YELLOWSTONE TO WASHINGTON</h2>
       <p>In late May, the students reconvene in Anderson Hall on the UW campus. They’ve spent weeks preparing presentations that demonstrate how research in Yellowstone is relevant to Washingtonians.</p>
@@ -695,9 +704,18 @@
   
 
 <!-- video -->
-<section class="arrow iframe">
+<section class="arrow iframe dot-nav-section" id="donor-video">
     <iframe width="2560" height="1440" src="https://www.youtube.com/embed/sYfkdUA2Rxw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 </section>
+
+<!-- <div class="clouds">
+  <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/built-env/clouds.png' ?>" alt=""> 
+  <div class="mask"><img alt="David de la Cruz" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/built-env/david.jpg' ?>" alt=""></div>
+  <div class="text">
+    <div><p>His mission isn't to lead</p></div>
+    <div><p id="fade-text">but to help community members realize their leadership potential</p></div>
+  </div>
+</div> -->
 
 <!--        GIVING SECTION        -->
   <section class="text-block giving-widget branded arrow">

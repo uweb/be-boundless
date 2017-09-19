@@ -112,7 +112,7 @@
 //           ])
 //  
 //        TOGGLE ON THE NAVIGATION      
- new ScrollMagic.Scene({triggerElement: "#scavengers", triggerHook:0})
+ new ScrollMagic.Scene({triggerElement: "#main_content", triggerHook:0})
     .setClassToggle("#dot-nav" , "active")
     .addTo(currentController);
 
@@ -137,13 +137,17 @@
           .on("enter", function (event) {
               $('video').get(1).play(); //scene has second video on page
            })
-          .on("progress", function(event) {
-              console.log($(".path"))
-          })
           .addTo(currentController);
 
 
-var addSlideshow = new ScrollMagic.Scene({
+
+
+
+
+$(window).on("load resize", function (e) {
+
+if (window.innerWidth < 600) {
+  var addSlideshow = new ScrollMagic.Scene({
       triggerElement: '.enviro-section',
       triggerHook: 1,
     })
@@ -185,12 +189,7 @@ var addStudentSlideshow = new ScrollMagic.Scene({
   
     })
     .addTo(currentController);
-
-
-
- $(window).on("load resize", function (e) {
-
-
+}
 
 
 //sectionsssss
@@ -270,6 +269,14 @@ $('#close-modal').on('click', function(e) {
   $('#close-modal').removeClass("active");
 });
 
+$('section.student').on('click', function(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  console.log("click")
+  $('#all-students').removeClass("not-active");
+  $('section.student').removeClass("active");
+  $('#close-modal').removeClass("active");
+});
 
 //audio
 // Focus on button triggers 
@@ -282,6 +289,25 @@ $('#close-modal').on('click', function(e) {
         $(event.target).closest('li').toggleClass('active-focus');
        }
    });
+
+
+
+    // Parallax photos CLOUDSSSS
+
+    // var delacruzAnimationII = new TimelineMax ()
+    //       .add([
+    //         TweenMax.to('.mask', 1,    {  opacity: 0, ease: Power0.easeIn, delay: 0.0 }),
+    //       ])
+    // //var transHeightII = -$('.transSection').height();
+
+    // var martezII = new ScrollMagic.Scene({
+    //   triggerElement: '.clouds',
+    //   triggerHook: 0.5,
+    //   duration:  '45%',
+    // })
+    // .setTween(delacruzAnimationII)
+    // .addTo(currentController)
+
 
 //
   //
@@ -375,7 +401,7 @@ DOT NAVIGATIOM
     //when get to where want to turn on: .setClassToggle("body", 'hide-dots');
 
     // In order to toggle current section, 
-    $('.enviro-section').each(function(index,element){
+    $('.dot-nav-section').each(function(index,element){
         var dotToggle = new ScrollMagic.Scene({
             duration: this.offsetHeight + 'px',
             triggerElement: this,
