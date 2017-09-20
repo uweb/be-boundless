@@ -44,7 +44,8 @@
 					Stephan Blount<br />
 					<small>
 						Master’s Candidate,<br />
-						School of Social Work
+						School of Social Work<br />
+						Supported by TBD scholarship
 					</small>
 				</h2>
 				<!--<p class="name">STEPHAN BLOUNT</p>
@@ -67,13 +68,12 @@
 		<section id="video" class="text-block black">
 			<iframe width="1280" height="720" src="https://www.youtube.com/embed/QI50yL8rAIU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 		</section><!-- #video .text-block .white -->
-		<section class="text-block transSection">
-			<div id="photo-1"></div>
-			<div id="photo-2"></div>
-			<!-- <div id="photo-3"></div> -->
-			<!-- <div id="photo-4"></div> -->
-			<!-- <div id="photo-5"></div> -->
-		</section><!-- .text-block .transSection -->
+		<section class="text-block slides">
+			<div id="slide-1"></div>
+			<div id="slide-2"></div>
+			<div id="slide-3"></div>
+			<div id="slide-4"></div>
+		</section><!-- .text-block .slides -->
 		<div class="sr-only">
 			<h3>It takes a team</h3>
 			<p>Through the social development model taught to community leaders like Aaron Parker, children are learning to choose behaviros thtat lead to great success in life.  Like with a baseball team, it takes dedication, practice and team bonding to successfully learn these behaviors.</p>
@@ -93,16 +93,16 @@
 								<span class="title">Chief Officer of Community Engagement and Diversity, School of Social Work</span>
 							</p>
 							<div class="clearfix"></div>
-							<p class="quote">“The most exciting part about partnering with the UW to implement Communities in Action has been having the opportunity to work with knowledgeable, creative and talented partners who are committed to excellence in promoting healthy youth development through prevention programs.”</p>
+							<p class="quote">“The most exciting part about partnering with the UW to implement Communities in Action has been having the opportunity to work with knowledgeable, creative and talented partners who are commited to excelence in promoting healthy youth development through prevention programs.”</p>
 						</div><!-- .pull-quote -->
 						<div class="pull-quote">
 							<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/foster-school/paccar.jpg" alt="Photograph of Vaughnetta Barton, M.S.W." class="img-inset pull-left" />
 							<p class="meta">
 								<span class="name">Vaughnetta Barton, M.S.W.</span><br />
-								<span class="title">Project Manager, Communities in Action, School of Social Work</span>
+								<span class="title">Project Manager, Communities in Action</span>
 							</p>
 							<div class="clearfix"></div>
-							<p class="quote">“Community-based initiatives are about empowerment. When communities use their own voice and data to identify challenges and make decisions about what they need to do, they are empowered and real change happens.”</p>
+							<p class="quote">“Community-based initiatives are about empowerment. When communities use their own voice and data to identify chalenges and make decisions about what they need to do, they are empowered and real change happens.”</p>
 					</div><!-- .col-md-5 .two-column-copy-right -->
 				</div><!-- .row -->
 			</div><!-- .container -->
@@ -117,7 +117,8 @@
 								<p>
 									<span>Keley Pascoe</span><br />
 									Master’s Candidate,<br />
-									School of Social Work
+									School of Social Work<br />
+									Supported by TBD scholarship
 								</p>
 							</cite>
 						</blockquote>
@@ -142,7 +143,7 @@
 									<span>Eric Agyemang</span><br />
 									Master’s Candidate,<br />
 									School of Social Work<br />
-									Supported by TBD, Frances M. Burnley Endowed Scholarship and the Excellence in Social Impact Endowed Scholarship
+									Supported by TBD scholarship
 								</p>
 							</cite>
 						</blockquote>
@@ -150,7 +151,7 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block white -->
-		<section class="text-block giving-widget-promoted">
+		<?php /*<section class="text-block giving-widget-promoted">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-lg-8 col-md-offset-1 col-lg-offset-1">
@@ -167,26 +168,18 @@
 					</div><!-- .col-md-8 .col-lg-8 .col-md-offset-1 .col-lg-offset-1 .copy -->
 				</div><!-- .row -->
 			</div><!-- .container -->
-		</section><!-- .text-block gold -->
+		</section><!-- .text-block gold -->*/?>
 		<section class="text-block white">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-5 col-md-offset-1 two-column-copy-left">
+					<div class="col-md-10 col-md-offset-1 copy">
 						<h3>Inspired by his mother</h3>
 						<p>Communities That Care is close to Blount’s heart. He was born to a 16-year-old single mother in Anchorage, Alaska, and during his childhood they often relied on outside assistance to cope with the challenges of everyday life.</p>
 						<p>“My mom was so young when she had me,” he says. “We had a lot of help from human service agencies while I was growing up. It taught me the importance of that type of work, and it gave me a lot of empathy for others facing similar challenges.”</p>
 						<p>It also gave him a direction in life: social work. To support himself while earning an undergraduate degree in human services at the University of Alaska, Blount took a job working in a group home for adults with developmental disabilities.</p>
 						<p>“It was just such cool work,” he says. “One resident at the group home was around my age. I could see how he became more independent when you gave him opportunities to do so.”</p>
-					</div><!-- .col-md-5 .col-md-offset-1 .two-column-copy-left -->
-					<div class="col-md-5 two-column-copy-right">
-						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/foster-school/yesenia-cutout.jpg" class="two-column-image-margin" alt="Photograph of Stephen Blount's mother" />
-					</div><!-- .col-md-5 .two-column-copy-right -->
-				</div><!-- .row -->
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1 copy">
-						<h3>A community leader’s perspective</h3>
 						<iframe width="1280" height="720" src="https://www.youtube.com/embed/QI50yL8rAIU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-						<p class="caption">Edith Elion, ’74, ’77, is on the Board Leadership Workgroup for Communities in Action, and is the executive director of the Atlantic Street Center.</p>
+						<p class="caption">EdithElion, ’74, ’77, is the executive director of the Atlantic Street Center, a Seattle nonprofit that is part of Communities That Care and Communities in Action.</p>
 						<h2 class="h3">Healthy behaviors and hopeful futures</h2>
 						<p>A critical component of the CTC program is that it must develop organically with the help of its stakeholders, rather than be imposed on them by an outside agency that thinks it knows best what a given group needs or wants.</p>
 						<p>In the case of Blount’s group, the agencies involved decided for themselves what outcomes would be most beneficial to the youth in their community, as well as how to get there. The children were then surveyed about what they perceived to be their biggest struggles. Only after that work was complete did the stakeholders choose what to tackle.</p>
@@ -194,10 +187,10 @@
 						<p><strong>IMAGE BLOCK</strong></p>
 						<p>Because the CTC program is evidence-based and draws on the strengths of the community it serves, Blount says he’s confident the program will change the outcomes of the sixth-graders he works with.</p>
 						<p>“I’m just implementing what the stakeholders have chosen,” he says. “They’re the experts on what they need.”</p>
-						<p>It’s clear that the model works. In the years since CTC was first implemented, numerous scientific studies have shown just how effective it is. Data from one CTC model shows that youth who participated in the program were 25 to 37 percent less likely to have health and behavior problems like smoking, drug and alcohol use, or delinquency.</p>
+						<p>It’s clear that the strategy works. In the years since CTC was first implemented, numerous scientific studies have shown just how effective it is. Data from one CTC model shows that youth who participated in the program were 25 to 37 percent less likely to have health and behavior problems like smoking, drug and alcohol use, or delinquency.</p>
 						<p>In addition to improving lives, the program also offers significant cost savings: For every dollar invested in CTC, $5.30 is returned in the form of lower substance abuse and delinquency costs.</p>
 						<p><strong>INFOGRAPHIC</strong></p>
-						<p>Alongside the valuable partnerships with community members, a big part of the success of CTC and Communities in Action has been donor support of scholarships. Blount, Agyemang and Pascoe all received scholarships originating from the Ballmer Endowed Deanship in Social Work. Created by Steve and Connie Ballmer, this gift enables Dean Edwina Uehara to invest in students and programs working in community partnerships.</p>
+						<p>Alongside the valuable partnerships with community members, a big part of the success of CTC and Communities in Action has been student support from the Excellence in Social Impact Scholarship. Blount, Agyemang and Pascoe all received scholarships from the scholarship fund, which was established in 2016 to help reduce the debt load of social work students. The fund is transforming the school’s ability to prepare highly gifted students to lead, innovate and serve in local, national and global communities.</p>
 						<p>For Blount, this financial support has meant that he can focus time and energy on his studies and the young students he works with. Even more important, it has helped him explore the career he knows he was meant to pursue. “I have always been set on doing some sort of human services or social work,” he says. “I don’t see myself doing anything else.”</p>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 				</div><!-- .row -->
