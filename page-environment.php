@@ -35,7 +35,7 @@
               <img class="h1-image col-md-offset-1 col-xs-offset-1" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/h1-trans.png' ?>" alt="A week in the wild">
               <span class="udub-slant col-lg-offset-0"><span></span></span>
               <p class="col-md-6 col-md-offset-1 col-xs-offset-1">
-                  Over spring break, 16 UW students and three professors from the College of the Environment made a classroom out of one of the most closely monitored ecosystems in the world: Yellowstone National Park. Explore their learning experience below.
+                  Over spring break, three UW professors and 16 students from the College of the Environment made a classroom out of one of the most closely monitored ecosystems in the world: Yellowstone National Park. Explore their learning experience below.
               </p>
           </div>  
           <div class="col-md-6 col-md-offset-1 col-xs-9 col-xs-offset-1 play-button" >
@@ -101,13 +101,19 @@
                 <!-- <p class="bolder"><b></b></p> -->
                 <p>Through the shimmering heat waves of a midafternoon sunbreak, hundreds of yards across the silent expanse of the Lamar Valley, students see three wolves through a spotting scope. Barely visible — even through the scope — the wolves are curled up in the snow, camouflaged against a backdrop of brown sage.</p>
                 
-                <p>All week long, during a course in Yellowstone National Park, UW students have been hoping to catch a glimpse of the iconic predator. They’ve seen scientists scanning the hills with their binoculars, some holding up receivers that pick up faint radio signals from collared wolves somewhere in the backcountry. They’ve met with wolf experts and seen wolf footprints in mud and snow. Some have heard distant, eerie howls. Now, the payoff: The students take turns sharing the scope, each of them getting a brief but precious look at the elusive animals. It’s the class’s last day in the park, and while this much-hoped-for sighting is the exclamation point on their pilgrimage, the experience has been about so much more than wolves.</p>
+                <img class="section-break" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SECTION_BREAK_1.jpg' ?>" alt="" data-lity>
+
+                <p>All week long, during a course in Yellowstone National Park, UW students have been hoping to catch a glimpse of the iconic predator. They’ve seen scientists scanning the hills with binoculars, some holding up receivers that pick up faint radio signals from collared wolves in the backcountry. They’ve met with wolf experts and seen wolf footprints in mud and snow. Some have heard distant, eerie howls. Now, the payoff: The students take turns sharing the scope, each of them getting a brief but precious look at the elusive animals. It’s the class’s last day in the park, and while this much-hoped-for sighting is the exclamation point on their pilgrimage, the experience has been about so much more than wolves.</p>
 
                 <h3>Learning in the field</h3>
 
-                <p>A week of intensive fieldwork followed by a research project and presentation, “Wildlife Conservation in Northwest Ecosystems” teaches the UW’s Environmental Science and Resource Management (ESRM) students about the intertwined ecosystem of America’s oldest national park — from bison and ravens to cougars and grizzly bears, alders and willows to biologists and ranchers. But how does Yellowstone relate to Washington state? The park has long been a bellwether for scientists to study how ecosystems work. Learning about both wildlife and humans there gives students an experience they’ll carry into their careers in Washington — and beyond. As this year’s class kicks off, some students have already done several animal surveys at the UW. Others are just dipping their toes into fieldwork and have never been to a national park. All are excited about what comes next.  </p>
+                <p>A week of intensive fieldwork followed by a research project and presentation, “Wildlife Conservation in Northwest Ecosystems” teaches the UW’s Environmental Science and Resource Management (ESRM) students about the intertwined ecosystem of America’s oldest national park — from bison and ravens to cougars and grizzly bears, alders and willows to biologists and ranchers. But how does Yellowstone relate to Washington state?</p> 
 
-                <p>Leading the students in the field are environmental and forest sciences professors John Marzluff, Aaron Wirsing and Beth Gardner. Marzluff is a bird expert with a particular interest in corvids: crows, ravens, magpies and jays. Wirsing studies how land and ocean predators shape the behavior of animals in their ecosystem through their mere presence. Gardner uses mathematical models to help monitor and manage wildlife, plant and fisheries populations. Together, they teach their students about the rigors of science, about life in the field — and about what their futures might look like.</p>
+                </p>The park has long been a bellwether for scientists to study how ecosystems work. Learning about both wildlife and humans there gives students an experience they’ll carry into their careers in Washington — and beyond. As this year’s class kicks off, some students have already done several animal surveys at the UW. Others are just dipping their toes into fieldwork and have never been to a national park. All are excited about what comes next.</p>
+
+                <img class="section-break" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SECTION_BREAK_2.jpg' ?>" alt="" data-lity>
+
+                <p>Leading the students in the field are environmental and forest sciences professors <a href="https://environment.uw.edu/faculty/john-marzluff/">John Marzluff</a>, <a href="https://environment.uw.edu/faculty/aaron-wirsing/">Aaron Wirsing</a> and <a href="https://environment.uw.edu/faculty/beth-gardner/">Beth Gardner</a>. Marzluff is a bird expert with a particular interest in corvids: crows, ravens, magpies and jays. Wirsing studies how land and ocean predators shape the behavior of animals in their ecosystem through their mere presence. Gardner uses mathematical models to help monitor and manage wildlife, plant and fisheries populations. Together, they teach their students about the rigors of science, about life in the field — and about what their futures might look like.</p>
 
             </div> 
       </div> 
@@ -225,7 +231,7 @@
 
     <div class="col-md-8 col-xs-12 copy">
       <p>“Going to Yellowstone with wildlife biologists is like going behind the scenes of a play.”
-      <span>— Nicki Furner, ’18</span>
+      <span>— Nikki Furner, ’18</span>
       </p>
     </div> 
 
@@ -238,7 +244,7 @@
   <section id="students" class="full-image-section dot-nav-section">
     <section id="all-students" class="all-students">
       <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12 copy">
-        <h2 class="pull-text">From the student...<br>[insert here]</h2>
+        <h2 class="pull-text">In their words</h2>
       </div>
 
       <div class="student student1"><a class="student-link" href="#student1"><image class="student student1" alt="student one" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait1.png' ?>"></a></div>
@@ -257,7 +263,7 @@
         <!-- <p>lorem ipsum</p> -->
       </div>
       <div class="quote">
-        <blockquote><span>&ldquo;</span>It’s important for undergraduates to get involved in field research because it’s experience they can put on their resume. It’s also a great way to get your foot in the door and network with other scientists in the field.<span>&rdquo;</span></blockquote>
+        <blockquote><span>&ldquo;</span>It’s important for undergraduates to get involved in field research because it’s experience they can put on their résumés. It’s also a great way to get your foot in the door and network with other scientists in the field.<span>&rdquo;</span></blockquote>
       </div>
       <image class="full-student" alt="student one" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/profile_5.png' ?>">
     </section>
@@ -281,7 +287,7 @@
         <!-- <p>lorem ipsum</p> -->
       </div>
       <div class="quote">
-        <blockquote><span>&ldquo;</span>I didn’t have a lot of field experience before this trip. I didn’t know if I could hack it, how difficult it would be or if I would even enjoy it. But now I’m really excited about field work. I’m definitely going to pursue it.<span>&rdquo;</span></blockquote>
+        <blockquote><span>&ldquo;</span>I didn’t have a lot of field experience before this trip. I didn’t know if I could hack it, how difficult it would be or if I would even enjoy it. But now I’m really excited about fieldwork. I’m definitely going to pursue it.<span>&rdquo;</span></blockquote>
       </div>
       <image class="full-student" alt="student one" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/profile_6.png' ?>">
     </section>
@@ -305,7 +311,7 @@
         <!-- <p>lorem ipsum</p> -->
       </div>
       <div class="quote">
-        <blockquote><span>&ldquo;</span>It’s pretty cool being out here with the professors because they’re so into it. Even though they’ve see these things a million times, they still get so excited about it. They’re having a good time and teaching us a lot.<span>&rdquo;</span></blockquote>
+        <blockquote><span>&ldquo;</span>It’s pretty cool being out here with the professors because they’re so into it. Even though they’ve seen these things a million times, they still get so excited about it. They’re having a good time and teaching us a lot.<span>&rdquo;</span></blockquote>
       </div>
       <image class="full-student" alt="student one" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/profile_4.png' ?>">
     </section>
@@ -317,7 +323,7 @@
         <!-- <p>lorem ipsum</p> -->
       </div>
       <div class="quote">
-        <blockquote><span>&ldquo;</span>There’s an essence we get to experience in the field that you can’t get by reading papers and being in the classroom<span>&rdquo;</span></blockquote>
+        <blockquote><span>&ldquo;</span>There’s an essence we get to experience in the field that you can’t get by reading papers and being in the classroom.<span>&rdquo;</span></blockquote>
       </div>
       <image class="full-student" alt="student one" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/profile_1.png' ?>">
     </section>
@@ -341,8 +347,8 @@
       <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/CLOUDS.png' ?>" alt=""> 
       <div class="foreground"></div>
         <h2 aria-hidden="true">Intro</h2>
-        <h2 class="in-the-field" aria-hidden="true">In the field</h2>
-        <div class="audio"><p class="length">0:21  <span>/ play interview</span></p>
+        <h2 class="in-the-field" aria-hidden="true"></h2>
+        <div class="audio"><p class="length">0:21  <span>/ play lesson</span></p>
           <audio controls class="player">
             <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/SCAVENGER_LECTURE.mp3' ?>" type="audio/mpeg">
             <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
@@ -350,12 +356,14 @@
           </audio>
           
           <p class="audio-buttons">
-            <button class="audio-ctrl audio-play" tabindex="0">0:21 / PLAY INTERVIEW</button>  
+            <button class="audio-ctrl audio-play" tabindex="0">0:21 / PLAY LESSON</button>  
             <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
             <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
           </p>
           <div class="visually-hidden audio-transcript" tabindex="0">
-            <p>lorem ipsum</p>
+            <p>First speaker: Doug Smith, senior wolf biologist and Wolf Restoration Project leader, Yellowstone National Park</p>
+            <p>Second speaker: Rick Wallen, lead wildlife biologist for the bison program, Yellowstone National Park</p>
+            <p>One quarter to one third of all bison consumption by wolves is carcasses. Starlings will use buffalo as a foraging area. They will walk around all over them picking off ticks and bugs and all kinds of stuff. They’re picking around those buffalo chips that get left behind.</p>
           </div>
         </div>
         <div id="scrubCont"><div id="padder"><div id="scrub"></div></div></div>
@@ -364,7 +372,7 @@
       <section class="section-home">
         <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12 copy">
           <h2 class="pull-text">Scavengers</h2>
-          <p>Scavengers are an integral part of the Yellowstone ecosystem, and they’ll travel far and wide for a meal — fresh or not. Ravens and eagles soar above looking for anything to eat, from bloated carcasses to new kills. When they descend, others take notice. Coyotes often join in the fray. And if an omnivorous grizzly, king of them all, arrives, the others must retreat and bide their time. Nature is not fair, and meals here are just as often stolen as earned.</p>
+          <p>Scavengers are an integral part of the Yellowstone ecosystem, and they’ll travel far and wide for a meal — fresh or not. Ravens and eagles soar above looking for anything to eat. When they descend, others take notice. Coyotes often join in the fray. And if an omnivorous grizzly, king of them all, arrives, the others must retreat and bide their time. Nature is not fair, and meals here are just as often stolen as earned.</p>
         </div>
         <!-- <div class="student student6"><a href="#student6"><image class="student student6" alt="student six" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait6.png' ?>"></a></div> -->
       </section>
@@ -375,34 +383,41 @@
             <p>John Marzluff and a group of students have pulled over at Blacktail Ponds. Some 150 yards from the road, a grizzly is feasting on the remains of a bison that plunged through thin ice and drowned over the winter. Nearby, ravens fight over the scraps of another unfortunate bison. Marzluff “translates” their vocalizations: “That one’s begging. That one’s asserting dominance. That one’s just been pecked.”</p>
             <p>The students are in the middle of a bird survey — they’re shuttled every half-mile to make note of how many ravens, magpies, golden eagles and bald eagles they see. They’ve stopped to watch the grizzly, but soon they’ll return to their data quest, adding to a decades-deep database that shows scavenger dispersal throughout the park. It’s valuable information: Scientists can use it to look into where scavengers go, when and why.</p>
             <div class="outset">
-              <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_1.jpg' ?>" alt="Female student looking through binoculars">
+              <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_1.jpg' ?>" alt="Female student looking through binoculars" data-lity>
+
               <blockquote><span>&ldquo;</span>To be able to do your own bird surveys — and learn how professionals in the park do their surveys — is really valuable.<span>&rdquo;</span><span class="acknowledgement">— Courtney Straight, ’18</span></blockquote>
+              <p>Celestina Davidson scans, or “glasses,” the hills for wildlife.</p>
             </div>
-            <div class="snapchat col-md-offset-10 col-sm-offset-6 col-xs-offset-4">
+            <div class="snapchat col-md-offset-10 col-sm-offset-6 col-xs-offset-4 draw-line-link">
               <video autoplay loop muted playsinline class="media" data-object-fit>
-                  <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/snapchat1.mp4' ?>" type="video/mp4">
+                  <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/SCAVENGER_SNAP.mp4' ?>" type="video/mp4">
               </video>
             </div>
+            <p class="snap-cap"><b>Student’s-eye view:</b> Slogs through mud and slush are rewarded with a picnic.</p>
             <div class="img-gal">
-              <img class="" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_2.jpg' ?>" alt="Crows perched on a tree" data-lity>
-              <img class="col-md-offset-10 col-xs-offset-5" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_3.jpg' ?>" alt="A crow feather" data-lity>
-              <img class="" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_4.jpg' ?>" alt="Students listening to a lecture in the field" data-lity>
-              <img class="col-md-offset-10 col-xs-offset-5" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_5.jpg' ?>" alt="A student examining animal remnants" data-lity>
+              <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_2.jpg' ?>" alt="Two ravens make their presence known in the otherwise silent expanse of the Lamar Valley." data-lity>
+              <p>Two ravens make their presence known in the otherwise silent expanse of the Lamar Valley.</p>
+              <img class="col-md-offset-10 col-xs-offset-5 draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_3.jpg' ?>" alt="The close-up intricacies of a feather." data-lity>
+              <p class="col-md-offset-10 col-xs-offset-5">The close-up intricacies of a feather.</p>
+              <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_4.jpg' ?>" alt="At the site of a wolf-killed elk, biologist Kai Koitzsch explains how to conduct a necropsy, studying everything from the elk’s worn molars and bone marrow health to nearby wolf paw prints and raven droppings." data-lity>
+              <p>At the site of a wolf-killed elk, biologist Kai Koitzsch explains how to conduct a necropsy, studying everything from the elk’s worn molars and bone marrow health to nearby wolf paw prints and raven droppings.</p>
+              <!-- <img class="col-md-offset-10 col-xs-offset-5 draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_5.jpg' ?>" alt="A student examining animal remnants" data-lity>
+              <p class="col-md-offset-10 col-xs-offset-5">Image Five Caption Filler</p> -->
             </div>
 
             <div id="eng-slideshow" class="foster-slideshow">
-               <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_2.jpg' ?>" alt="Crows perched on a tree" data-lity>
-                <p>Image Two Caption Filler</p></div>
+               <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_2.jpg' ?>" alt="Two ravens make their presence known in the otherwise silent expanse of the Lamar Valley." data-lity>
+                <p>Two ravens make their presence known in the otherwise silent expanse of the Lamar Valley.</p></div>
 
-              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_3.jpg' ?>" alt="A crow feather" data-lity>
-                <p>Image Three Caption Filler</p>
+              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_3.jpg' ?>" alt="The close-up intricacies of a feather." data-lity>
+                <p>The close-up intricacies of a feather.</p>
               </div>
             
-              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_4.jpg' ?>" alt="Students listening to a lecture in the field" data-lity>
-                  <p>Image Four Caption Filler</p></div>      
+              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_4.jpg' ?>" alt="At the site of a wolf-killed elk, biologist Kai Koitzsch explains how to conduct a necropsy, studying everything from the elk’s worn molars and bone marrow health to nearby wolf paw prints and raven droppings." data-lity>
+                  <p>At the site of a wolf-killed elk, biologist Kai Koitzsch explains how to conduct a necropsy, studying everything from the elk’s worn molars and bone marrow health to nearby wolf paw prints and raven droppings.</p></div>      
 
-              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_5.jpg' ?>" alt="A student examining animal remnants" data-lity>
-                  <p>Image Five Caption Filler</p></div> 
+              <!-- <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_5.jpg' ?>" alt="A student examining animal remnants" data-lity>
+                  <p>Image Five Caption Filler</p></div>  -->
 
             </div>
           </div>
@@ -411,7 +426,7 @@
     </section>
   </section>
   <section class="field-notes text-block scavenger">
-      <!-- <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/OUTRO_FOG.png' ?>" alt=""> -->
+      <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/OUTRO_FOG.png' ?>" alt="">
     <h2>Field Notes</h2>
     <!-- <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1 copy"> -->
     <div>
@@ -428,11 +443,11 @@
     <div class="enviro-bg">
       <span class="lines right"></span>
       <span class="lines left"></span>
-      <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/FOG.png' ?>" alt="">
+      <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/CLOUDS.png' ?>" alt="">
       <div class="foreground"></div>
         <h2 aria-hidden="true">Intro</h2>
-        <h2 class="in-the-field" aria-hidden="true">In the field</h2>
-        <div class="audio"><p class="length">0:18  <span>/ play interview</span></p>
+        <h2 class="in-the-field" aria-hidden="true"></h2>
+        <div class="audio"><p class="length">0:18  <span>/ play lesson</span></p>
           <audio controls class="player">
             <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/PREDATOR_LECTURE.mp3' ?>" type="audio/mpeg">
             <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
@@ -440,12 +455,13 @@
           </audio>
           
           <p class="audio-buttons">
-            <button class="audio-ctrl audio-play" tabindex="0">0:18 / PLAY INTERVIEW</button>  
+            <button class="audio-ctrl audio-play" tabindex="0">0:18 / PLAY LESSON</button>  
             <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
             <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
           </p>
           <div class="visually-hidden audio-transcript" tabindex="0">
-            <p>LOREM IPSUM</p>
+            <p>Speaker: Rick McIntyre, wolf interpreter, Yellowstone National Park</p>
+            <p>There’s no two species on earth that are so similar in social behavior as wolves and humans. The most common cause of death for adult wolves in Yellowstone is to die fighting to protect your family and your territory from a rival pack.</p>
           </div>
         </div>
         <div id="scrubCont"><div id="padder"><div id="scrub"></div></div></div>
@@ -462,41 +478,46 @@
         <div class="row">
           <div class="col-md-6 col-md-offset-2 col-xs-10 col-xs-offset-1">
             <h2 id="in-the-field" class="pull-text">Behind the scenes</br>with biologists</h2>
-            <p>ESRM major Nikki Furner trudges through mud and patches of snow, back to the Hellroaring Creek trailhead. She and the rest of the class just met in the backcountry with Connor Meyer, ’15, who took this very class two years ago and now works in the park as a wildlife technician on a cougar survey. After leading the students on a hike to the remnants of a cougar-killed elk, Meyer explained how he helps monitor cougar populations in the park. He also gave the class a glimpse into how they might track and gather data on wild animals someday.</p>
+            <p>Nikki Furner trudges through mud and patches of snow, back to the Hellroaring Creek trailhead. She and the rest of the class just met in the backcountry with Connor Meyer, ’15, who took this very class two years ago and now works in the park as a wildlife technician on a cougar survey. After leading the students on a hike to the remnants of a cougar-killed elk, Meyer explained how he helps monitor cougar populations in the park. He also gave the class a glimpse into how they might track and gather data on wild animals someday.</p>
             <p>“Going to Yellowstone with wildlife biologists is like going behind the scenes of a play,” says Furner. She definitely sees a future doing fieldwork, she adds.</p>
-            <p>Reading about predators in a book is one thing. Seeing — and tracking, listening, collecting data and asking questions of experts in the field — is believing.</p>
+            <p>Reading about predators is one thing. Seeing — and tracking, listening, collecting data and asking questions of experts in the field — is believing.</p>
             <div class="outset">
-              <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_1.jpg' ?>" alt="Students examine the wing of a hawk.">
+              <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_1.jpg' ?>" alt="Students examine the wing of a hawk." data-lity>
               <blockquote><span>&ldquo;</span>To actually go there and get a sense of where a cougar hunts helps you understand how they interact with their environment.<span>&rdquo;</span><span class="acknowledgement">— Matthew Malone, ’18</span></blockquote>
             </div>
-            <div class="snapchat col-md-offset-10 col-sm-offset-6 col-xs-offset-4">
+            <div class="snapchat col-md-offset-10 col-sm-offset-6 col-xs-offset-4 draw-line-link">
               <video autoplay loop muted playsinline class="media" data-object-fit>
-                  <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/snapchat2.mp4' ?>" type="video/mp4">
+                  <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/PREDATOR_SNAP.mp4' ?>" type="video/mp4">
               </video>
             </div>
             <div class="img-gal">
-              <img class="" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_2.jpg' ?>" alt="Student peering at a hawk" data-lity>
-              <img class="col-md-offset-10 col-xs-offset-5" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_3.jpg' ?>" alt="A bear sighted in the distance" data-lity>
-              <img class="" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_4.jpg' ?>" alt="A student taking field notes" data-lity>
-              <img class="col-md-offset-10 col-xs-offset-5" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_5.jpg' ?>" alt="A group of students using telescopes to spot wildlife" data-lity>
-              <img class="" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_6.jpg' ?>" alt="A group of students hiking through the field" data-lity>
+              <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_2.jpg' ?>" alt="Tyler, a TK title, holds a golden eagle. After drawing blood, weighing and measuring the bird, he releases it." data-lity>
+              <p>Tyler, a TK title, holds a golden eagle. After drawing blood, weighing and measuring the bird, he releases it.</p>
+              <img class="col-md-offset-10 col-xs-offset-5 draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_3.jpg' ?>" alt="After awaking from hibernation, a grizzly bear makes its way to an easy meal: a nearby bison carcass. While fattening up for winter, the omnivorous grizzly feasts on everything from berries to cutthroat trout to insects." data-lity>
+              <p class="col-md-offset-10 col-xs-offset-5">After awaking from hibernation, a grizzly bear makes its way to an easy meal: a nearby bison carcass. While fattening up for winter, the omnivorous grizzly feasts on everything from berries to cutthroat trout to insects.</p>
+              <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_4.jpg' ?>" alt="During the weeklong course, students found many opportunities to record data that would be used for presentations at the end of the quarter." data-lity>
+              <p>During the weeklong course, students found many opportunities to record data that would be used for presentations at the end of the quarter.</p>
+              <img class="col-md-offset-10 col-xs-offset-5 draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_5.jpg' ?>" alt="On a foggy day, Aaron Wirsing points out possible locations where wolves could be on a distant ridge." data-lity>
+              <p class="col-md-offset-10 col-xs-offset-5">On a foggy day, Aaron Wirsing points out possible locations where wolves could be on a distant ridge.</p>
+              <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_6.jpg' ?>" alt="Students scan a far-off hillside for an elk carcass they’ve heard is in the area. Where there’s a carcass, there are often large — and hungry — animals." data-lity>
+              <p>Students scan a far-off hillside for an elk carcass they’ve heard is in the area. Where there’s a carcass, there are often large — and hungry — animals.</p>
             </div>
             <div id="eng-slideshow" class="foster-slideshow">
-               <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_2.jpg' ?>" alt="Student peering at a hawk" data-lity>
-                <p>Image Two Caption Filler</p></div>
+               <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_2.jpg' ?>" alt="Tyler, a TK title, holds a golden eagle. After drawing blood, weighing and measuring the bird, he releases it." data-lity>
+                <p>Tyler, a TK title, holds a golden eagle. After drawing blood, weighing and measuring the bird, he releases it.</p></div>
 
-              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_3.jpg' ?>" alt="A bear sighted in the distance" data-lity>
-                <p>Image Three Caption Filler</p>
+              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_3.jpg' ?>" alt="After awaking from hibernation, a grizzly bear makes its way to an easy meal: a nearby bison carcass. While fattening up for winter, the omnivorous grizzly feasts on everything from berries to cutthroat trout to insects." data-lity>
+                <p>After awaking from hibernation, a grizzly bear makes its way to an easy meal: a nearby bison carcass. While fattening up for winter, the omnivorous grizzly feasts on everything from berries to cutthroat trout to insects.</p>
               </div>
             
-              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_4.jpg' ?>" alt="A student taking field notes" data-lity>
-                  <p>Image Four Caption Filler</p></div>      
+              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_4.jpg' ?>" alt="During the weeklong course, students found many opportunities to record data that would be used for presentations at the end of the quarter." data-lity>
+                  <p>During the weeklong course, students found many opportunities to record data that would be used for presentations at the end of the quarter.</p></div>      
 
-              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_5.jpg' ?>" alt="A group of students using telescopes to spot wildlife" data-lity>
-                  <p>Image Five Caption Filler</p></div> 
+              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_5.jpg' ?>" alt="On a foggy day, Aaron Wirsing points out possible locations where wolves could be on a distant ridge." data-lity>
+                  <p>On a foggy day, Aaron Wirsing points out possible locations where wolves could be on a distant ridge.</p></div> 
 
-              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_6.jpg' ?>" alt="A group of students hiking through the field" data-lity>
-                  <p>Image Six Caption Filler</p></div> 
+              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_6.jpg' ?>" alt="Students scan a far-off hillside for an elk carcass they’ve heard is in the area. Where there’s a carcass, there are often large — and hungry — animals." data-lity>
+                  <p>Students scan a far-off hillside for an elk carcass they’ve heard is in the area. Where there’s a carcass, there are often large — and hungry — animals.</p></div> 
 
             </div>
           </div>
@@ -505,6 +526,7 @@
     </section>
   </section>
   <section class="field-notes text-block predator">
+    <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/OUTRO_FOG.png' ?>" alt="">
     <h2>Field Notes</h2>
     <!-- <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1 copy"> -->
     <div>
@@ -519,10 +541,13 @@
     <span class="lines left"></span> -->
     <!-- <img class="foreground" alt="bear" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/pred-fore.png' ?>"> -->
     <div class="enviro-bg">
+      <span class="lines right"></span>
+      <span class="lines left"></span>
+      <!-- <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/CLOUDS.png' ?>" alt=""> -->
         <div class="foreground"></div>
         <h2 aria-hidden="true">Intro</h2>
-        <h2 class="in-the-field" aria-hidden="true">In the field</h2>
-        <div class="audio"><p class="length">0:20  <span>/ play interview</span></p>
+        <h2 class="in-the-field" aria-hidden="true"></h2>
+        <div class="audio"><p class="length">0:20  <span>/ play lesson</span></p>
           <audio controls class="player">
             <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/PREY_LECTURE.mp3' ?>" type="audio/mpeg">
             <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
@@ -530,12 +555,14 @@
           </audio>
           
           <p class="audio-buttons">
-            <button class="audio-ctrl audio-play" tabindex="0">0:20 / PLAY INTERVIEW</button>  
+            <button class="audio-ctrl audio-play" tabindex="0">0:20 / PLAY LESSON</button>  
             <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
             <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
           </p>
           <div class="visually-hidden audio-transcript" tabindex="0">
-            <p>lorem ipsum delores</p>
+            <p>First speaker: Aaron Wirsing, associate professor of environmental and forest sciences, University of Washington</p>
+            <p>Second speaker: Doug Smith, senior wolf biologist and Wolf Restoration Project leader, Yellowstone National Park</p>
+            <p>It’s not just about being in a group. It’s about where you are in the group. If your in the center of the group you’re protected by all the other individuals that are around you, diluting your risk. Wolves don’t want to kill bison. They are not killing them in proportion to their availability. Because they are really hard to kill. Look at a bison and look at an elk, who would you want to bring down with your bare hands.</p>
           </div>
         </div>
         <div id="scrubCont"><div id="padder"><div id="scrub"></div></div></div>
@@ -552,36 +579,42 @@
         <div class="row">
           <div class="col-md-6 col-md-offset-2 col-xs-10 col-xs-offset-1">
             <h2 id="in-the-field" class="pull-text">Watching and waiting</h2>
-            <p>It’s 7:08 a.m. Aaron Wirsing and students Andrew Wang, Jenny Brent, Hannah Booth and Suzannah Yu crouch behind snow-covered sagebrush and spy on a group of elk on a ridge across the Yellowstone River. They’re gathering data for a project Wirsing has been running since 2012. How do elk behave in relation to their landscape? Their herd size? Their position within the herd?</p>
-            <p>Booth keeps the scope on a single elk for 15 minutes, noting every 30 seconds what it’s doing: “Foraging.” “Bedded.” “Vigilant.” Yu keeps the time, and Wong notes the behaviors. Field research like this is often tedious, painstaking and uncomfortable. But once those 15 minutes are up, there’s a sense of accomplishment. It may be one sheet of data among sheaths, but it’s important, and the students have contributed.</p>
+            <p>It’s 7:08 a.m. Professor Aaron Wirsing and students Andrew Wang, Jenny Brent, Hannah Booth and Suzannah Yu crouch behind snow-covered sagebrush and spy on a group of elk on a ridge across the Yellowstone River. They’re gathering data for a project Wirsing has been running since 2012. How do elk behave in relation to their landscape? Their herd size? Their position within the herd?</p>
+            <p>Booth keeps the scope on a single elk for 15 minutes, noting every 30 seconds what it’s doing: “Foraging.” “Bedded.” “Vigilant.” Yu keeps the time, and Wang notes the behaviors. Field research like this is often tedious, painstaking and uncomfortable. But once those 15 minutes are up, there’s a sense of accomplishment. It may be one sheet of data among sheaths, but it’s important, and the students have contributed.</p>
             <div class="outset">
-              <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_1.jpg' ?>" alt="Students listening to a National Parks Ranger">
+              <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_1.jpg' ?>" alt="Students listening to a National Parks Ranger" data-lity>
               <blockquote><span>&ldquo;</span>The value of this trip, of doing research with the people who work in the field, is that we get to experience what the career of a wildlife biologist is really like.<span>&rdquo;</span><span class="acknowledgement">— Danyan Leng, ’18</span></blockquote>
+              <p>Rick Wallen, the lead biologist for bison in Yellowstone, talks to students about his work.</p>
             </div>
-            <div class="snapchat col-md-offset-10 col-sm-offset-6 col-xs-offset-4">
+            <div class="snapchat col-md-offset-10 col-sm-offset-6 col-xs-offset-4 draw-line-link">
               <video autoplay loop muted playsinline class="media" data-object-fit>
-                  <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/snapchat3.mp4' ?>" type="video/mp4">
+                  <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/PREY_SNAP.mp4' ?>" type="video/mp4">
               </video>
             </div>
+            <p class="snap-cap">Student’s-eye view: Captured on Snapchat glasses at a picnic. A curious — and extremely intelligent — raven lingers nearby.</p>
             <div class="img-gal">
-              <img class="" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_2.jpg' ?>" alt="A Buffalo spotted at a watering hole" data-lity>
-              <img class="col-md-offset-10 col-xs-offset-5" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_3.jpg' ?>" alt="A student taking notes" data-lity>
-              <img class="" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_4.jpg' ?>" alt="A view of a ram in the wilderness" data-lity>
-              <img class="col-md-offset-10 col-xs-offset-5" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_5.jpg' ?>" alt="A groupshot of the students in Yellowstone National Park." data-lity>
+              <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_2.jpg' ?>" alt="As snow begins to melt in the valleys in the spring, grazers congregate — and predators aren’t far behind." data-lity>
+              <p>As snow begins to melt in the valleys in the spring, grazers congregate — and predators aren’t far behind.</p>
+              <img class="col-md-offset-10 col-xs-offset-5 draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_3.jpg' ?>" alt="UW student Gavin Forster helps collect data for John Marzluff’s ongoing bird survey." data-lity>
+              <p class="col-md-offset-10 col-xs-offset-5">UW student Gavin Forster helps collect data for John Marzluff’s ongoing bird survey.</p>
+              <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_4.jpg' ?>" alt="Bighorn sheep are just one of the many animals that congregate in Yellowstone, often called the Serengeti of North America." data-lity>
+              <p>Bighorn sheep are just one of the many animals that congregate in Yellowstone, often called the Serengeti of North America.</p>
+              <img class="col-md-offset-10 col-xs-offset-5 draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_5.jpg' ?>" alt="Tyler and Eric, titles, show students how to set a net gun to trap bald and golden eagles in order to study their health." data-lity>
+              <p class="col-md-offset-10 col-xs-offset-5">Tyler and Eric, titles, show students how to set a net gun to trap bald and golden eagles in order to study their health.</p>
             </div>
             <div id="eng-slideshow" class="foster-slideshow">
-               <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_2.jpg' ?>" alt="A Buffalo spotted at a watering hole" data-lity>
-                <p>Image Two Caption Filler</p></div>
+               <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_2.jpg' ?>" alt="As snow begins to melt in the valleys in the spring, grazers congregate — and predators aren’t far behind." data-lity>
+                <p>As snow begins to melt in the valleys in the spring, grazers congregate — and predators aren’t far behind.</p></div>
 
-              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_3.jpg' ?>" alt="A student taking notes" data-lity>
-                <p>Image Three Caption Filler</p>
+              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_3.jpg' ?>" alt="UW student Gavin Forster helps collect data for John Marzluff’s ongoing bird survey." data-lity>
+                <p>UW student Gavin Forster helps collect data for John Marzluff’s ongoing bird survey.</p>
               </div>
             
-              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_4.jpg' ?>" alt="A view of a ram in the wilderness" data-lity>
-                  <p>Image Four Caption Filler</p></div>      
+              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_4.jpg' ?>" alt="Bighorn sheep are just one of the many animals that congregate in Yellowstone, often called the Serengeti of North America." data-lity>
+                  <p>Bighorn sheep are just one of the many animals that congregate in Yellowstone, often called the Serengeti of North America.</p></div>      
 
-              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_5.jpg' ?>" alt="A groupshot of the students in Yellowstone National Park." data-lity>
-                  <p>Image Five Caption Filler</p></div> 
+              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_5.jpg' ?>" alt="Tyler and Eric, titles, show students how to set a net gun to trap bald and golden eagles in order to study their health." data-lity>
+                  <p>Tyler and Eric, titles, show students how to set a net gun to trap bald and golden eagles in order to study their health.</p></div> 
 
             </div>
           </div>
@@ -590,6 +623,7 @@
     </section>
   </section>
   <section class="field-notes text-block prey">
+    <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/OUTRO_FOG.png' ?>" alt="">
     <h2>Field Notes</h2>
     <!-- <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1 copy"> -->
     <div>
@@ -604,10 +638,13 @@
     <span class="lines left"></span> -->
     <!-- <img class="foreground" alt="bear" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/pred-fore.png' ?>"> -->
     <div class="enviro-bg">
+      <span class="lines right"></span>
+      <span class="lines left"></span>
+      <!-- <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/CLOUDS.png' ?>" alt=""> -->
       <div class="foreground"></div>
         <h2 aria-hidden="true">Intro</h2>
-        <h2 class="in-the-field" aria-hidden="true">In the field</h2>
-        <div class="audio"><p class="length">0:32  <span>/ play interview</span></p>
+        <h2 class="in-the-field" aria-hidden="true"></h2>
+        <div class="audio"><p class="length">0:32  <span>/ play lesson</span></p>
           <audio controls class="player">
             <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/RANCHER_LECTURE_V2.mp3' ?>" type="audio/mpeg">
             <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
@@ -615,12 +652,13 @@
           </audio>
           
           <p class="audio-buttons">
-            <button class="audio-ctrl audio-play" tabindex="0">0:32 / PLAY INTERVIEW</button>  
+            <button class="audio-ctrl audio-play" tabindex="0">0:32 / PLAY LESSON</button>  
             <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
             <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
           </p>
           <div class="visually-hidden audio-transcript" tabindex="0">
-            <p>lorem ipsum delored</p>
+            <p>Speaker: Malou Anderson-Ramirez, rancher</p>
+            <p>Humans love dominating, that’s part of the human condition. And so everyday we have to sort of step back and ask ourselves why we have to feel the need to dominate and control. Because that is what has mucked everything up from day one. We could just share and learn from each other and be open to what the landscape wants to teach us then there is a lot that we learn and become really grateful for being here.</p>
           </div>
         </div>
         <div id="scrubCont"><div id="padder"><div id="scrub"></div></div></div>
@@ -638,38 +676,38 @@
           <div class="col-md-6 col-md-offset-2 col-xs-10 col-xs-offset-1">
             <h2 id="in-the-field" class="pull-text">Common ground</h2>
             <p>High up in Montana’s Tom Miner Basin, the Anderson Ranch is only five miles north of the Yellowstone border. Inevitably, wild animals migrate in and out of the park, many making their homes on the ranch’s 1,760 acres. The basin is also home to a growing collective of ranchers who work to coexist with wild animals. Hilary Anderson is one of them.</p>
-            <p>On a blustery day, she explains best practices for raising livestock on land that predators frequent: Fladry — brightly colored flags strung up on property borders — serves as a visual deterrent to wolves. Moving dead livestock away from a herd, or vice versa, is an example of carcass management, and it aims to put a distance between livestock and hungry scavengers. And finally, there’s range riding: traveling the acreage via horse, demonstrating a human presence and keeping predators at bay.</p>
+            <p>On a blustery day, she explains best practices for raising livestock on land that predators frequent: Fladry — brightly colored flags strung up on property borders — serves as a visual deterrent to wolves. Moving dead livestock away from a herd, or vice versa, is an example of carcass management, and it aims to put distance between livestock and hungry scavengers. And finally, there’s range riding: traveling the acreage via horse, demonstrating a human presence and keeping predators at bay.</p>
             <p>Anderson also speaks to the value of working to find common ground among the basin’s residents, a crucial step to overcoming widely differing opinions on how to handle an increase in predator levels. Building trust, she explains, is invaluable.</p>
             <p>“But how do you win people over to your side?” a student asks.</p>
             <p>“By not making it a side,” Anderson says.</p>
             <div class="outset">
-              <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_1.jpg' ?>" alt="Students setting up camp for dinner">
+              <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_2.jpg' ?>" alt="Malou Anderson-Ramirez gives students a tour of the Anderson Ranch." data-lity>
               <blockquote><span>&ldquo;</span>It was really cool talking to the ranchers and hearing how hard they’re trying to coexist with the landscape and the wildlife on it.<span>&rdquo;</span><span class="acknowledgement">— Andrew Wang, ’17</span></blockquote>
+              <p>Malou Anderson-Ramirez gives students a tour of the Anderson Ranch.</p>
             </div>
-            <div class="snapchat col-md-offset-10 col-sm-offset-6 col-xs-offset-4">
+            <div class="snapchat col-md-offset-10 col-sm-offset-6 col-xs-offset-4 draw-line-link">
               <video autoplay loop muted playsinline class="media" data-object-fit>
-                  <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/snapchat4.mp4' ?>" type="video/mp4"> 
+                  <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/PEOPLE.mp4' ?>" type="video/mp4"> 
               </video>
             </div>
             <div class="img-gal">
-              <img class="" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_2.jpg' ?>" alt="Students socializing" data-lity>
-              <img class="col-md-offset-10 col-xs-offset-5" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_3.jpg' ?>" alt="Horses grazing around the ranch" data-lity>
-              <img class="" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_4.jpg' ?>" alt="The Anderson family at their ranch" data-lity>
-              <img class="col-md-offset-10 col-xs-offset-5" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_5.jpg' ?>" alt="Students hiking in the field" data-lity>
+              <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_3.jpg' ?>" alt="Horses, longhorns, goats and other domesticated animals pepper the many ranches in the expansive Tom Miner Basin, just miles from the Yellowstone Park border." data-lity>
+              <p>Horses, longhorns, goats and other domesticated animals pepper the many ranches in the expansive Tom Miner Basin, just miles from the Yellowstone Park border.</p>
+              <img class="col-md-offset-10 col-xs-offset-5 draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_4.jpg' ?>" alt="The Anderson family at their ranch" data-lity>
+              <p class="col-md-offset-10 col-xs-offset-5">Going to replace this photo</p>
+              <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_5.jpg' ?>" alt="Students tour the Anderson Ranch." data-lity>
+              <p>Students tour the Anderson Ranch.</p>
             </div>
             <div id="eng-slideshow" class="foster-slideshow">
-               <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_2.jpg' ?>" alt="Students socializing" data-lity>
-                <p>Image Two Caption Filler</p></div>
-
-              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_3.jpg' ?>" alt="Horses grazing around the ranch" data-lity>
-                <p>Image Three Caption Filler</p>
+               <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_3.jpg' ?>" alt="Horses, longhorns, goats and other domesticated animals pepper the many ranches in the expansive Tom Miner Basin, just miles from the Yellowstone Park border." data-lity>
+                <p>Horses, longhorns, goats and other domesticated animals pepper the many ranches in the expansive Tom Miner Basin, just miles from the Yellowstone Park border.</p>
               </div>
             
               <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_4.jpg' ?>" alt="The Anderson family at their ranch" data-lity>
                   <p>Image Four Caption Filler</p></div>      
 
-              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_5.jpg' ?>" alt="Students hiking in the field" data-lity>
-                  <p>Image Five Caption Filler</p></div> 
+              <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RANCH_GAL_5.jpg' ?>" alt="Students tour the Anderson Ranch." data-lity>
+                  <p>Students tour the Anderson Ranch.</p></div> 
 
             </div>
           </div>
@@ -690,7 +728,7 @@
   <section class="field-notes text-block larger dot-nav-section" id="in-the-classroom">
     <div>
       <h2 class="normal">FROM YELLOWSTONE TO WASHINGTON</h2>
-      <p>In late May, the students reconvene in Anderson Hall on the UW campus. They’ve spent weeks preparing presentations that demonstrate how research in Yellowstone is relevant to Washingtonians.</p>
+      <p>In late May, the students reconvened in Anderson Hall on the UW campus. They’ve spent weeks preparing presentations that demonstrate how research in Yellowstone is relevant to Washingtonians.</p>
       <p>One group analyzed how human roads and trails affect the hunting habits of wolves and cougars, and what this might mean as our state’s wolf population continues to recover and expand. Another group looked at the dining habits of scavengers such as ravens, eagles and bears, making predictions about how those populations might fluctuate as wolf populations grow — and what the effect of climate change might be on scavengers’ diets.</p>
       <p>A third group studied bison migration inside and outside Yellowstone, as well as the complexities, worries and politics involved. Hannah Booth’s big takeaway was that, whether it was for wildlife management in Yellowstone or here in Washington, “There’s room for education on both sides of any conservation debate.”</p>
     </div>
@@ -698,7 +736,7 @@
   <section class="field-notes text-block bg-gold">
     <div>
       <h2 class="normal">FIELDWORK GIVES UW STUDENTS VALUABLE HANDS-ON EXPERIENCE</h2>
-      <p>The UW wants to make experiences like this accessible to students who want to learn in the field, regardless their ability to pay. Donors like composer Alex Shapiro believe in the power of immersive learning to change careers — and lives. Hear what she has to say about the power of field research at the UW.</p>
+      <p>The UW wants to make experiences like this accessible to students who want to learn in the field, regardless of their ability to pay. Donors like composer Alex Shapiro believe in the power of immersive learning to change careers — and lives. Hear what she has to say about the power of field research at the UW.</p>
     </div>
   </section>
   
@@ -726,7 +764,7 @@
                   <h2 class="headline-gold">What you care about <br>can change the world</h2>
                   <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. Invest XXX </p>
                   <div id="immersive-give-iframe"></div>
-                  <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="<!-- Funds go here, comma separated; eg: AUPGEN,CBEIIN,LAPERU -->" href="#">Give now</a></span></div>
+                  <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="CELEND" href="#">Give now</a></span></div>
                 </div>
               </div>
           </div>

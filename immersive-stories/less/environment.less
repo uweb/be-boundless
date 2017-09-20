@@ -893,7 +893,7 @@ p {
         position: absolute;
         border: none;
         top: 25px;
-        right: 35px;
+        left: 15px;
         z-index: 9999;
         width: 120px;
         height: 120px;
@@ -975,9 +975,9 @@ p {
         }
         h2 {
             position: absolute;
-            right: 0;
-            bottom: 100px;
-            transform-origin: top;
+            left: 0;
+            bottom: -50px;
+            transform-origin: top left;
             font-family: @font-family-base;
             font-weight: 600;
             letter-spacing: 2px;
@@ -988,8 +988,8 @@ p {
         }
         h2.in-the-field {
             opacity: 0;
-            bottom: 180px;
-            right: -110px;
+            bottom: -50px;
+            right: auto;
         }
         div.audio {
             z-index: 1;
@@ -1072,6 +1072,9 @@ p {
                 width: 60%;
                 margin-top: 50px;
             }
+            p {
+                width: 60%;
+            }
         }
         .foster-slideshow {
             display: none;
@@ -1084,11 +1087,23 @@ p {
             width: 400px; 
             border-radius: 50%;
             overflow: hidden;
+            position: relative;
             video {
                 height: 430px;
                 width: 430px;
                 margin: -15px 0 0 -15px;
             }
+        }
+        .snap-cap {
+            float: right;
+            width: 60%;
+            margin-right: -45%;
+        }
+        .img-gal p,
+        p.snap-cap {
+            font-family: @font-family-base;
+            font-size: 14px;
+            line-height: 1.2;
         }
         .row {
             padding-bottom: 50px;
@@ -1136,7 +1151,12 @@ p {
                     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
                 }
             }
-
+            p {
+                width: 40%;
+                font-family: @font-family-base;
+                font-size: 14px;
+                line-height: 1.2;
+            }
         }
     }
     h2 {
@@ -1251,6 +1271,16 @@ section.field-notes {
         background: url("@{enviro}/STUD_PRES.jpg") no-repeat center right;
         border-bottom: none;
         .background-cover(cover);
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: rgba(0,0,0,0.7);
+            z-index: -1;
+        }
     }
     &.bg-gold {
         height: auto;
@@ -1286,9 +1316,9 @@ section.field-notes {
     }
     h2:not(.normal) {
         position: absolute;
-        right: -100px;
-        bottom: 150px;
-        transform-origin: top;
+        left: 0;
+        bottom: -50px;
+        transform-origin: top left;
         font-family: @font-family-base;
         font-weight: 600;
         letter-spacing: 2px;
@@ -1301,6 +1331,7 @@ section.field-notes {
     div {
         width: 70%;
         padding: 70px;
+        z-index: 1;
     }
     p {
         font-family: "Uni sans",sans-serif;
@@ -1995,12 +2026,14 @@ CLOUDSSSS
 
 //.clouds {
     img.cloud-img {
-          position: relative;
+          position: absolute;
           top: 0;
+          //bottom: 0;
           left: -20%;
           width: 220%;
           max-width: none;
-          height: auto;
+          height: 100%;
+          //max-height: 100%;
            -webkit-animation: cloudAnimate 100s linear infinite;
            -moz-animation: cloudAnimate 100s linear infinite;
            -o-animation: cloudAnimate 100s linear infinite;
@@ -2010,3 +2043,14 @@ CLOUDSSSS
            }
     }
 //}
+img.section-break {
+        margin: 10px 0 24.5px 0;
+}
+
+div.line{
+    .transform-origin(0 100%);
+    height: 3px; /* Line width of 3 */
+    background: #FFF; /* White fill */
+    z-index: 1;
+    opacity: 0.4;
+}

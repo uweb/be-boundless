@@ -189,7 +189,7 @@ var addStudentSlideshow = new ScrollMagic.Scene({
   
     })
     .addTo(currentController);
-}
+} //end if
 
 
 //sectionsssss
@@ -234,7 +234,49 @@ new ScrollMagic.Scene({triggerElement: "#people-content", duration: (1.0*peopleH
           .setClassToggle(".enviro-bg", "darken")
           .addTo(currentController);
 
+
+//draw lines dynamically
+//
+//foreach img in img-gal
+//rand whether line touches top middle or bottom [0, .5, 1]*height of obj (to start just use middle)
+//draw line from [i] bottom inside to [i+1] top inside 
+//add plus symbol at end of eash side
+//finish at i < length -1
+
+var elems,
+    x1,
+    y1,
+    x2,
+    y2;
+
+$('.section-content').each(function(){
+  //find all with class .draw-line-link
+  elems = $(this).find('.draw-line-link');
+  //draw initial
+  x1 = $(elems[0]).offset().left + $(elems[0]).innerWidth() - 50;
+  y1 = $(elems[0]).offset().top + ($(elems[0]).innerHeight() / 2);
+  for (i = 1; i < (elems.length); i++) { 
+    var xOff = 50;
+    //if [i] is even then use right as inside, else left is inside
+    if(i%2==0) { 
+      xOff = $(elems[i]).innerWidth() - 50;
+    }
+    x2 = $(elems[i]).offset().left + xOff;
+    y2 = $(elems[i]).offset().top + ($(elems[i]).innerHeight() / 2);
+
+    //draw line
+    if(i%2==0) { 
+      createLine(x1,y1,x2,y2);
+    } else {
+      createLine(x1,y1,x2,y2);
+    }
+    //move x2,y2 to x1,y1
+    x1 = x2;
+    y1 = y2;
+  }
 });
+
+}); //end on load / resize
 
 // get all slides
 // var slides = document.querySelectorAll("#predators > section");
@@ -292,21 +334,6 @@ $('section.student').on('click', function(e) {
 
 
 
-    // Parallax photos CLOUDSSSS
-
-    // var delacruzAnimationII = new TimelineMax ()
-    //       .add([
-    //         TweenMax.to('.mask', 1,    {  opacity: 0, ease: Power0.easeIn, delay: 0.0 }),
-    //       ])
-    // //var transHeightII = -$('.transSection').height();
-
-    // var martezII = new ScrollMagic.Scene({
-    //   triggerElement: '.clouds',
-    //   triggerHook: 0.5,
-    //   duration:  '45%',
-    // })
-    // .setTween(delacruzAnimationII)
-    // .addTo(currentController)
 
 
 //
@@ -413,3 +440,21 @@ DOT NAVIGATIOM
     })
 
 })
+
+ //DRAW LINES
+function createLine(x1,y1, x2,y2){
+    var length = Math.sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2));
+  var angle  = Math.atan2(y2 - y1, x2 - x1) * 180 / Math.PI;
+  var transform = 'rotate('+angle+'deg)';
+
+    var line = $('<div>')
+        .appendTo('#immersive')
+        .addClass('line')
+        .css({
+          'position': 'absolute',
+          'transform': transform
+        })
+        .width(length)
+        .offset({left: x1 < x2 ? x1 : x1 - (x1-x2), top: y1 < y2 ? y1 : y1 - (y1-y2)});
+    return line;
+}
