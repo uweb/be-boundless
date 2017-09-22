@@ -194,6 +194,7 @@ module.exports = function(grunt) {
           ],
           'immersive-stories/js/socialwork.min.js': [
               'immersive-stories/js/common.js',
+              'immersive-stories/js/lity.js',
               'immersive-stories/js/socialwork.js',
           ],
           'immersive-stories/js/pharmacy.min.js': [
