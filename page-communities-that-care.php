@@ -43,8 +43,7 @@
 				<h2>Stephan Blount</h2>
 				<p>
 					Master’s Candidate,<br />
-					School of Social Work<br />
-					Supported by TBD scholarship
+					School of Social Work
 				</p>
 			</div>
 			<div class="photograph"></div>
@@ -66,7 +65,7 @@
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
 						<h3>How does Communities in Action bring about change?</h3>
-						<p>By partnering with leaders like Aaron Parker, the Rainier Branch manager of Therapeutic Health Services, who take the evidence-based programming of Communities in Action and apply it to their organizations. Parker takes it one step further: A long-time Little League coach, he’s using Communities in Action principles to help his team, both on the field and off.</p>
+						<p>By partnering with leaders like Aaron Parker, the Rainier Branch manager of Therapeutic Health Services, who take the evidence-based programming of Communities in Action and apply it to their organizations. Parker takes it one step further: A longtime Little League coach, he’s using Communities in Action principles to help his team, both on the field and off.</p>
 						<p>
 							<a data-lity href="https://www.youtube.com/embed/3DvGGqEh0ug?autoplay=1&rel=0&showinfo=0">
 								<svg xmlns="http://www.w3.org/2000/svg" width="75.649" height="75.625" viewBox="0 0 75.649 75.625">
@@ -105,16 +104,16 @@
 								<span class="title">Chief Officer of Community Engagement and Diversity, School of Social Work</span>
 							</p>
 							<div class="clearfix"></div>
-							<p class="quote">“The most exciting part about partnering with the UW to implement Communities in Action has been having the opportunity to work with knowledgeable, creative and talented partners who are commited to excelence in promoting healthy youth development through prevention programs.”</p>
+							<p class="quote">“The most exciting part about partnering with the UW to implement Communities in Action has been having the opportunity to work with knowledgeable, creative and talented partners who are committed to excellence in promoting healthy youth development through prevention programs.”</p>
 						</div><!-- .pull-quote -->
 						<div class="pull-quote">
 							<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/VaughnettaBarton.png" alt="Photograph of Vaughnetta Barton, M.S.W." class="img-inset pull-left" />
 							<p class="meta">
 								<span class="name">Vaughnetta Barton, M.S.W.</span><br />
-								<span class="title">Project Manager, Communities in Action</span>
+								<span class="title">Project Manager, Communities in Action, School of Social Work</span>
 							</p>
 							<div class="clearfix"></div>
-							<p class="quote">“Community-based initiatives are about empowerment. When communities use their own voice and data to identify chalenges and make decisions about what they need to do, they are empowered and real change happens.”</p>
+							<p class="quote">“Community-based initiatives are about empowerment. When communities use their own voice and data to identify challenges and make decisions about what they need to do, they are empowered and real change happens.”</p>
 					</div><!-- .col-md-5 .two-column-copy-right -->
 				</div><!-- .row -->
 			</div><!-- .container -->
@@ -124,13 +123,12 @@
 				<div class="row">
 					<div class="col-md-5 col-md-offset-1 two-column-copy-left">
 						<blockquote>
-							<p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam.</p>
+							<p class="quote">I really enjoyed watching the students help each other. When we led games or discussions, students were always willing to help and support their classmates in understanding the material at hand.</p>
 							<cite>
 								<p>
 									<span>Keley Pascoe</span><br />
 									Master’s Candidate,<br />
-									School of Social Work<br />
-									Supported by TBD scholarship
+									School of Social Work
 								</p>
 							</cite>
 						</blockquote>
@@ -154,8 +152,7 @@
 								<p>
 									<span>Eric Agyemang</span><br />
 									Master’s Candidate,<br />
-									School of Social Work<br />
-									Supported by TBD scholarship
+									School of Social Work
 								</p>
 							</cite>
 						</blockquote>
@@ -191,8 +188,9 @@
 						<p>“My mom was so young when she had me,” he says. “We had a lot of help from human service agencies while I was growing up. It taught me the importance of that type of work, and it gave me a lot of empathy for others facing similar challenges.”</p>
 						<p>It also gave him a direction in life: social work. To support himself while earning an undergraduate degree in human services at the University of Alaska, Blount took a job working in a group home for adults with developmental disabilities.</p>
 						<p>“It was just such cool work,” he says. “One resident at the group home was around my age. I could see how he became more independent when you gave him opportunities to do so.”</p>
+						<h3>A community leader’s perspective</h3>
 						<iframe width="1280" height="720" src="https://www.youtube.com/embed/9CTe-yBWu_Y?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-						<p class="caption">EdithElion, ’74, ’77, is the executive director of the Atlantic Street Center, a Seattle nonprofit that is part of Communities That Care and Communities in Action.</p>
+						<p class="caption">Edith Elion, ’74, ’77, is on the Board Leadership Workgroup for Communities in Action, and is the executive director of the Atlantic Street Center.</p>
 						<h2 class="h3">Healthy behaviors and hopeful futures</h2>
 						<p>A critical component of the CTC program is that it must develop organically with the help of its stakeholders, rather than be imposed on them by an outside agency that thinks it knows best what a given group needs or wants.</p>
 						<p>In the case of Blount’s group, the agencies involved decided for themselves what outcomes would be most beneficial to the youth in their community, as well as how to get there. The children were then surveyed about what they perceived to be their biggest struggles. Only after that work was complete did the stakeholders choose what to tackle.</p>
@@ -202,7 +200,7 @@
 			</div><!-- .container -->
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
-						<h3 class="fancypants">Youth from communities that use Communities That Care were less likely to have a number of health and behavior problems.</h3>
+						<h3 class="fancypants">Youth from communities that use Communities That Care were less likely to have a number of health and behavior problems.</h3>
 					</div><!-- .col-md-8 .col-md-offset-2 -->
 				</div><!-- .row -->
 				<div class="row row-purple">
