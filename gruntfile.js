@@ -199,6 +199,8 @@ module.exports = function(grunt) {
           ],
           'immersive-stories/js/pharmacy.min.js': [
               'immersive-stories/js/common.js',
+              'immersive-stories/js/lity.js',
+              'immersive-stories/js/slick.js',
               'immersive-stories/js/pharmacy.js',
           ],
           'campaign/js/main.min.js': [

@@ -2,21 +2,21 @@
  * Importing from UW2014 and other immersives *
  **********************************************/
 
- @import "../../themes/uw-2014/less/uw.variables.less";
- @import "../../themes/uw-2014/less/flat/mixins.less";
- @import "../../immersive-stories/less/text-block-new.less";
- @import "../../immersive-stories/less/button.less";
- @import "../../immersive-stories/less/common.less";
- @import "../../immersive-stories/less/queries.less";
- @import "../../immersive-stories/less/lity.less";
- @import "../../immersive-stories/less/slideshow.less";
+@import "../../themes/uw-2014/less/uw.variables.less";
+@import "../../themes/uw-2014/less/flat/mixins.less";
+@import "../../immersive-stories/less/text-block-new.less";
+@import "../../immersive-stories/less/button.less";
+@import "../../immersive-stories/less/common.less";
+@import "../../immersive-stories/less/queries.less";
+@import "../../immersive-stories/less/lity.less";
+@import "../../immersive-stories/less/slideshow.less";
 
- @fb: "../../immersive-stories/img/farmer-brown";
- @public: "../../immersive-stories/img/public-health";
- @foster: "../../immersive-stories/img/foster-school";
- @evans: "../../immersive-stories/img/evans-school";
- @img: "../../immersive-stories/img";
- @socialwork: "../../immersive-stories/img/socialwork";
+@fb: "../../immersive-stories/img/farmer-brown";
+@public: "../../immersive-stories/img/public-health";
+@foster: "../../immersive-stories/img/foster-school";
+@evans: "../../immersive-stories/img/evans-school";
+@img: "../../immersive-stories/img";
+@pharmacy: "../../immersive-stories/img/pharmacy";
 
 
 
@@ -24,16 +24,21 @@
 * Namespacing to prevent bleed over to /boundless *
 ***************************************************/
 
- #immersive-body {
-	 overflow: hidden;
+html{
+	margin:0;
+	padding:0;
+	height:100%;
+}
+#immersive-body {
+	overflow: hidden;
 
-	 h2,
-	 h3,
-	 h4,
-	 h5 {
-		 font-family: @headline;
-		 font-weight: @ultra;
-	 }
+	h2,
+	h3,
+	h4,
+	h5 {
+		font-family: @headline;
+		font-weight: @ultra;
+	}
 
 	h1{
 		font-family:@uni;
@@ -47,267 +52,257 @@
 /*******************************
 * Intro and associated styles *
 *******************************/
+.intro {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: calc(~"103vh - 171px");
+	background-image:url("@{pharmacy}/img-hero.png");
+	.background-cover(cover);
+	background-position: center center;
+	text-align:left;
+	color:white;
 
- .intro {
-	 display: flex;
-	 align-items: center;
-	 justify-content: center;
-	 height: calc(~"103vh - 171px");
-	//  background-image:url("@{foster}/yesenia.jpg");
-	 .background-cover(cover);
-	 background-position: center center;
-	 text-align: center;
-	 color:@purple;
+	#intro-text{
+		width:51%;
+		left:22px;
+	}
 
-	 h1 {
-		 text-transform: uppercase;
-		 line-height: 1.1;
-		 font-size: 31px;
-	 }
+	h1 {
+		text-transform: uppercase;
+		line-height: 1.1;
+		font-size: 31px;
+	}
 
-	 p{
-		text-align: center;
+	p{
+		text-align:left;
+		color:white;
+	}
+
+	.intro-body {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 100%;
+		margin-top: -200px;
+	}
+
+	@media @phone-only {
+		background-image:url("@{pharmacy}/img-hero-phone.png");
+		width:100%;
+		height:300px;
+		background-position: right center;
+
+		#intro-text{
+			width:100%;
+			left:0;
+			padding:0 30px;
+		}
+
+		.intro-body {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			margin-top: 0;
+			.translate(0, -50%);
+		}
+
+		h1{
+			font-size:1em;
+			text-shadow: 1px 1px #333;
+		}
+
+		p{
+			line-height: 1.4;
+			font-size: .65em;
+			text-shadow: 1px 1px #333;
+		}
+
+	}
+
+	@media (max-width: 500px) {
+		.intro-body {
+			.col-xs-8 {
+				width: 85%;
+			}
+		}
+	}
+
+	@media @tablet-portrait-up {}
+
+	@media @tablet-portait-only {
+		.intro-body {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			margin-top: 0;
+			.translate(0,
+			-50%);
+		}
+
+		p {
+			line-height: 1.4;
+		}
+	}
+
+	@media @tablet-landscape-up {
+
+		h1 {
+			font-size: 4.5vw;
+		}
+
+	}
+
+	@media @tablet-landscape-only {}
+	@media @desktop-up {}
+	@media @desktop-only {}
+	@media @big-desktop-up {}
+}
+
+
+
+/*********
+ * Video *
+ *********/
+#video.text-block{
+	background:#e7e5e4 url("@{pharmacy}/bkg-video.png") bottom center;
+
+	h3{
 		color:@purple;
-	 }
+	}
+	p{
+		color:@purple;
+	}
 
-	 .intro-body {
-		 position: absolute;
-		 top: 50%;
-		 left: 0;
-		 width: 100%;
-		 margin-top: -200px;
-	 }
+	a{
+		text-decoration:none;
+		border:none;
 
-	 @media @phone-only {
-		//  background-image:url("@{foster}/yesenia-mobile.jpg");
-		 .background-cover(cover);
-		 background-position: right center;
-
-		 .intro-body {
-			 position: absolute;
-			 top: 50%;
-			 left: 0;
-			 width: 100%;
-			 margin-top: 0;
-			 .translate(0,
-			 -50%);
-		 }
-
-		 p {
-			 line-height: 1.4;
-			 font-size: .65em;
-		 }
-
-		 .udub-slant {
-			 display: none;
-		 }
-	 }
-
-	 @media (max-width: 500px) {
-		//  background-image:url("@{foster}/yesenia-mobile-portrait.jpg");
-
-		 .intro-body {
-			 .col-xs-8 {
-				 width: 85%;
-			 }
-		 }
-	 }
-
-	 @media @tablet-portrait-up {}
-
-	 @media @tablet-portait-only {
-		//  background-image:url("@{foster}/yesenia-tablet.jpg");
-		//  background-position: right center;
-
-		 .intro-body {
-			 position: absolute;
-			 top: 50%;
-			 left: 0;
-			 width: 100%;
-			 margin-top: 0;
-			 .translate(0,
-			 -50%);
-		 }
-
-		 p {
-			 line-height: 1.4;
-		 }
-	 }
-
-	 @media @tablet-landscape-up {
-
-		 h1 {
-			 font-size: 4.5vw;
-		 }
-
-	 }
-
-	 @media @tablet-landscape-only {}
-	 @media @desktop-up {}
-	 @media @desktop-only {}
-	 @media @big-desktop-up {}
- }
+		span{
+			color:@purple;
+			text-decoration:none;
+			display: inline-block;
+			position:relative;
+			top:-32px;
+		}
+	}
+}
 
 
 
-/************
-* Profile? *
-************/
+/***************
+ * Text Blocks *
+ ***************/
+.text-block.graphpaper-white{
+	background:#e7e5e4 url("@{pharmacy}/bkg-graphpaper-white.png") top center;
+	.background-cover(cover);
+}
+.text-block.graphpaper-white.first{
+	padding:70px 0;
+}
+.text-block.graphpaper-white.second{
+	margin-top:100px;
+	.copy{
+		padding-top:0;
+	}
+	iframe{
+		margin-top:-100px;
+		border:10px solid #e2dad0;
+	}
+}
+.text-block.giving-widget-promoted{
+	background-color: white;
+	color:@purple;
+	text-align: center;
+	p{
+		color:@purple;
+	}
+}
+.text-block.graphpaper-black{
+	background:black url("@{pharmacy}/bkg-graphpaper-black.jpg") top center;
+	.background-cover(cover);
 
- .profile {
-	 margin-bottom: -15px;
-
-	 .background {
-		 // height:50vw;
-		 height: 29vw;
-		 max-height: 29vw;
-		 width: 70%;
-		 margin-top: -2px;
-		 margin-left: -14vw;
-		 background-color: #efece1;
-		 .skew(-15deg,
-		 0);
-	 }
-
-	 .photograph {
-		 background-image:url("@{foster}/yesenia-cutout.jpg");
-		 background-repeat: no-repeat;
-		 .background-cover(cover);
-		 background-position: left top;
-		 width: 60%; // height:46vw;
-		 height: 25vw;
-		 max-height: 25vw;
-		 position: absolute;
-		 top: 1.5vw;
-		 right: -150px;
-		 .skew(-15deg,
-		 0);
-	 }
-	 .text {
-		 margin: 10vw 5vw;
-		 padding: 0;
-		 width: 50%;
-		 position: absolute;
-		 top: 0;
-
-		 h2 {
-			 position: relative;
-			 font-family: @headline;
-			 font-weight: @ultra;
-			 color: @purple;
-			 text-transform: uppercase;
-			 font-size: 2.5vw;
-			 display: inline-block;
-			 margin-bottom: 0;
-			 line-height: 1.1;
-		 }
-
-		 h2 small {
-			 font-family: @font-family-base;
-			 font-weight: @font-weight-base;
-			 color: @purple;
-			 text-transform: none;
-			 font-size: 1.5vw;
-			 line-height: 1 !important;
-		 }
-	 }
-
-	 @media @phone-only {
-		 .photograph {
-			 height: 24vw;
-			 max-height: 24vw;
-			 right: -40px;
-			 top: 1vw;
-		 }
-		 .text {
-			 margin: 5vw 5vw;
-			 h2 {
-				 font-size: 3.5vw;
-			 }
-			 h2 small {
-				 font-size: 2.25vw;
-			 }
-		 }
-	 }
-
-	 @media (max-width: 500px) {}
-
-	 @media @tablet-portrait-up {
-		 .photograph {
-			 height: 24vw;
-			 max-height: 24vw;
-			 right: -70px;
-			 top: 1.75vw;
-		 }
-		 .text {
-			 margin: 5vw 5vw;
-			 h2 {
-				 font-size: 3.75vw;
-			 }
-			 h2 small {
-				 font-size: 2.25vw;
-			 }
-		 }
-	 }
-	 @media @tablet-portait-only {}
-	 @media @tablet-landscape-up {}
-	 @media @tablet-landscape-only {}
-	 @media @desktop-up {}
-	 @media @desktop-only {}
-	 @media @big-desktop-up {}
- }
-
-
-
-/***********************
-* Infographics, baby! *
-***********************/
- .transSection{
-	 width:100%;
-	 height:66vw;
-	 position:relative;
-	 margin:0;
-
-	 &>div {
-		 position:absolute;
-		 left:0;
-		 top:0;
-		 bottom:0;
-		 width:100%;
-		 .background-cover(cover);
-	 }
-
-	 #photo-1{
-		 background-image:url("@{socialwork}/SocialDev_graphic-v8-01.png");
-		 background-position:center center;
-	 }
-
-	 #photo-2{
-		 .background-cover(cover);
-		 background-image:url("@{socialwork}/SocialDev_graphic-v8-02.png");
-		 background-position:center center;
-	 }
-
-	 /*#photo-3{
-		 .background-cover(cover);
-		 background-image:url("@{socialwork}/SocialDev_graphic-v8-03.png");
-		 background-position:center center;
-	 }
-
-	 #photo-4{
-		 .background-cover(cover);
-		 background-image:url("@{socialwork}/SocialDev_graphic-v8-04.png");
-		 background-position:center center;
-	 }
-
-	 #photo-5{
-		 .background-cover(cover);
-		 background-image:url("@{socialwork}/SocialDev_graphic-v8-05.png");
-		 background-position:center center;
-	 }*/
- }
-
-
+	h2{
+		color:white;
+	}
+	p{
+		color:white;
+	}
+	.satellite{
+		display: block;
+		position: absolute;
+		left:2px;
+		width:249px;
+		height:452px;
+		z-index: -1;
+		background:url("@{pharmacy}/bkg-satellite.png") top center no-repeat;
+	}
+	.planet{
+		display: block;
+		position: absolute;
+		right:0;
+		bottom:40%;
+		width:259px;
+		height:561px;
+		z-index: -1;
+		background:url("@{pharmacy}/bkg-planet.png") top center no-repeat;
+	}
+}
+.giving-widget{
+	margin-top:100px;
+	h2{
+		text-transform: uppercase;
+		text-align: center;
+	}
+	p{
+		text-align:center;
+	}
+	.img-world{
+		width:100%;
+		height:auto;
+		position:relative;
+		bottom:-60px;
+	}
+}
+div.boundless-button.dark.sm span{
+	border:none;
+}
+div.boundless-button:after{
+	background:none;
+}
+@media (max-width:768px){
+	.text-block.graphpaper-white.second{
+		overflow:visible;
+	}
+	.text-block.giving-widget-promoted>div:first-child{
+		background:transparent;
+	}
+	.text-block.graphpaper-black{
+		.satellite{
+			display:none;
+		}
+		.planet{
+			display:none;
+		}
+	}
+}
+@media @tablet-landscape-up{
+	.text-block.giving-widget-promoted>div:first-child{
+		background:transparent;
+	}
+}
+@media @tablet-portrait-up{
+	.text-block.giving-widget-promoted>div:first-child{
+		background:transparent;
+	}
+}
+@media @phone-only{
+	.text-block.giving-widget-promoted>div:first-child{
+		background:transparent;
+	}
+}
 
 /***********************
 * Other bits and bobs *
@@ -335,7 +330,15 @@ h3{
 	color:@purple;
 	text-align:center;
 }
-
+.img-border{
+	border:10px solid #e2dad0;
+}
+p.caption{
+	font-size:.65em;
+	text-align: center;
+	font-style: italic;
+	color:@purple;
+}
 
 /*
  @media @phone-only{}
