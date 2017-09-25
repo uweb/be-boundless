@@ -16,6 +16,12 @@
 				</div><!-- .col-xs-8 .col-sm-8 .col-md-8 .col-lg-8 .col-xs-offset-1 .col-md-offset-1 .col-lg-offset-2 #intro-text -->
 			</div><!-- .row -->
 		</div><!-- .intro-body -->
+		<section class="scrollit read-more">
+			<p>Scroll Down</p>
+			<div class="mouse">
+				<div class="scroll"></div>
+			</div><!-- .mouse -->
+		</section><!-- .scrollit .read-more -->
 	</section><!-- .intro #intro-vid -->
 	<main id="main_content">
 		<section class="text-block start white">
@@ -40,7 +46,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
-						<iframe width="1280" height="720" src="https://www.youtube.com/embed/9CTe-yBWu_Y?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+						<!--<iframe width="1280" height="720" src="https://www.youtube.com/embed/9CTe-yBWu_Y?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>-->
+						<span></span>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 				</div><!-- .row -->
 			</div><!-- .container -->
@@ -101,22 +108,26 @@
 						<div id="slideshow">
 							<div class="slick-slideshows">
 								<div>
-									<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/slide-4.jpg' ?>" alt="">
-									<p>Researcher Yong Choi meets with Smart Home study participant Mary Ruiz.</p>
+									<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/pharmacy/slide-1.jpg' ?>" alt="">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 								</div>
 								<div>
-									<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/slide-2.jpg' ?>" alt="">
-									<p>Ph.D. student Yong Choi installed the sensors in each participant's home.</p>
+									<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/pharmacy/slide-2.jpg' ?>" alt="">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 								</div>
 								<div>
-									<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/slide-10.jpg' ?>" alt="">
-									<p>Mary Ruiz would often use the video camera to watch her cat, Sparky.</p>
+									<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/pharmacy/slide-3.jpg' ?>" alt="">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 								</div>
 								<div>
-									<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/nursing/slide-7.jpg' ?>" alt="">
-									<p>Mary Ruiz fills her humidifier. Sensors in her home alerted her to the fact that humidity levels were low.</p>
+									<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/pharmacy/slide-4.jpg' ?>" alt="">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 								</div>
-							</div><!-- .slick-slideshows -->
+								<div>
+									<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/pharmacy/slide-5.jpg' ?>" alt="">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								</div>
+						</div><!-- .slick-slideshows -->
 						</div><!-- #slideshow -->
 						<p>Washington knows firsthand the impact this research could have. He was born with chronic kidney disease and underwent a successful transplant when he was 15.</p>
 						<p>“I took antibiotics after my transplant surgery,” Washington says. “For people like me with kidney disease, antibiotics can be a double-edged sword. I see the chips as definitely a better way to test for nephrotoxicity in new drugs.”</p>
@@ -128,8 +139,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
-						<p><strong></strong></p>
-						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/pharmacy/img-edkelly.jpg" alt="Photograph of Ed Kelly" class="img-responsive center-block img-border" />
+					<iframe width="1280" height="720" src="https://www.youtube.com/embed/-NZueNYSwnY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen class="video-pull center-block"></iframe>
 						<h2 class="h3">A brighter future for patients everywhere</h2>
 						<p>Kidney-on-a-chip is one of many School of Pharmacy endeavors that aim to improve disease treatment and prevention through precision medicine. By supporting the Pharmaceutics Fund for Excellence, you can help develop solutions for the world’s biggest medical challenges.</p>
 						<div class="visible-md-block visible-lg-block">
@@ -179,7 +189,7 @@
 									<div class="boundless-button sm dark give"><span><a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=3&source=<?php echo $storyCodes; ?>">Give now</a></span></div>
 								</div><!-- .text-center -->
 							</div><!-- .visible-xs-block .visible-sm-block -->
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/pharmacy/bkg-world.png" alt="Illustration of earth from space" class="img-responsive center-block img-world" />
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/pharmacy/bkg-globe.png" alt="Illustration of earth from space" class="img-responsive center-block img-world" />
 						</div><!-- .giving-widget -->
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 				</div><!-- .row -->

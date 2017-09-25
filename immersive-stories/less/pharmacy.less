@@ -88,7 +88,7 @@ html{
 	}
 
 	@media @phone-only {
-		background-image:url("@{pharmacy}/img-hero-phone.png");
+		background-image:url("@{pharmacy}/img-hero-phone.jpg");
 		width:100%;
 		height:300px;
 		background-position: right center;
@@ -169,6 +169,11 @@ html{
 #video.text-block{
 	background:#e7e5e4 url("@{pharmacy}/bkg-video.png") bottom center;
 
+	span{
+		display: block;
+		height:720px;
+	}
+
 	h3{
 		color:@purple;
 	}
@@ -219,6 +224,9 @@ html{
 	p{
 		color:@purple;
 	}
+	iframe{
+		border:10px solid #e2dad0;
+	}
 }
 .text-block.graphpaper-black{
 	background:black url("@{pharmacy}/bkg-graphpaper-black.jpg") top center;
@@ -262,8 +270,7 @@ html{
 	.img-world{
 		width:100%;
 		height:auto;
-		position:relative;
-		bottom:-60px;
+		margin-bottom:-490px;
 	}
 }
 div.boundless-button.dark.sm span{
@@ -284,6 +291,11 @@ div.boundless-button:after{
 			display:none;
 		}
 		.planet{
+			display:none;
+		}
+	}
+	.giving-widget{
+		.img-world{
 			display:none;
 		}
 	}
