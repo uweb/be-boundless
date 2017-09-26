@@ -32,10 +32,7 @@
 						<p>Day to day, your view of the ocean never seems to change. But after 10 or 15 years, you look outside one morning and see the water lapping at your porch.</p>
 						<p>For many, that’s what it’s like to have kidney disease. “It slowly progresses over years, maybe even decades, but people often don’t know it until something goes wrong — until the water is at their door,” explains Catherine Yeung, Pharm.D., Ph.D., research assistant professor at the University of Washington School of Pharmacy.</p>
 						<p>The Centers for Disease Control and Prevention (CDC) estimates that while 15 percent of American adults have chronic kidney disease, most of them don’t know it. Only when the disease is in its later stages — when it’s often too late for reversal — do more severe symptoms cause people to seek help.</p>
-						<blockquote>
-							<p>“This big advance allows us to study the kidney in a very native, natural environment.”</p>
-							<cite>&mdash; Catherine Yeung, Research Assistant Professor, UW School of Pharmacy</cite>
-						</blockquote>
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/pharmacy/img-infographic.png" alt="15% of adults in the U.S. have chronic kidney disease" class="img-responsive center-block" />
 						<p>An inability to track the early stages of chronic kidney disease leaves researchers like Yeung at a loss for what early biological markers might look like. There’s also much to learn about how kidney problems affect the body’s ability to eliminate medications.</p>
 						<p>At the School of Pharmacy, an interdisciplinary team is undertaking revolutionary work that could change the future of precision medicine and kidney research — all with a device the size of a credit card.</p>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
@@ -56,7 +53,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
-						<h2 class="h3">A breakthrough in kidney research</h2>
+						<h2>A breakthrough in kidney research</h2>
 						<p>It’s called kidney-on-a-chip. Inside its small frame are thousands of live kidney cells that can model the functions of a human kidney. For pharmacy researchers, this device has opened up countless possibilities, as kidneys play a major role in the body’s ability to process medications.</p>
 						<p>“Kidneys are part of the ‘holy trinity’ of drug clearance,” says Edward Kelly, Ph.D., associate professor at the School of Pharmacy and lead investigator on the project. “The intestine is involved in absorption, the liver is involved in metabolism and the kidneys are involved in excretion,” he says, meaning that they help the body clear medication via urine.</p>
 						<p>People with failing kidneys might not be able to process medications as efficiently as those with healthy kidneys. On top of that, there’s the possibility that certain medications could further compromise unhealthy kidneys. This is critical because — unlike the liver and other organs — the kidney lacks the ability to regenerate.</p>
@@ -78,8 +75,8 @@
 						<p>That’s where the UW is focusing with kidney-on-a-chip.</p>
 						<p>Working alongside Kelly and Yeung are Kenneth Thummel, Ph.D., the Milo Gibaldi endowed chair of the UW’s Department of Pharmaceutics, and Jonathan Himmelfarb, M.D., the Joseph W. Eschbach endowed chair in kidney research at the UW School of Medicine and the internationally renowned director of the Kidney Research Institute, a collaborative effort between UW Medicine and Northwest Kidney Centers. With support from both the UW and Northwest Kidney Centers, team members brought their expertise together for the kidney-on-a-chip project.</p>
 						<blockquote>
-							<p>“Kidneys synthesize the active form of vitamin D, which is necessary to maintain healthy bones, so we’ll be asking if kidney cells still perform that function in microgravity.”</p>
-							<cite>&mdash; Edward Kelly, Associate Professor, UW School of Pharmacy</cite>
+							<p>“This big advance allows us to study the kidney in a very native, natural environment.”</p>
+							<cite>&mdash; Catherine Yeung, Research Assistant Professor, UW School of Pharmacy</cite>
 						</blockquote>
 						<p>The team was also instrumental in the design of the chip. They worked with UW spin-out Nortis to create a device that allows researchers to run medications through the system. Previously, researchers would put kidney cells on a plate, add medications and examine the interaction. “But that’s not what happens in the body,” says Yeung. “In the body, there’s always blood flowing, and one of the things that we’ve been able to address with kidney-on-a-chip is that we have flow.” As a result, the chip functions as a kidney normally would. “We push media through the chip using a syringe, and it flows out,” says Kelly. The fluid is then collected and tested.</p>
 						<p>With a closed system, drugs can flow through the chip without requiring gravity to keep the fluids in contact with the cells. This distinguishing factor helped the UW team be selected for special research that they’ll conduct in a place where liquids don’t follow the laws of gravity — but more on that later.</p>
@@ -93,7 +90,6 @@
 					<div class="col-md-10 col-md-offset-1 copy">
 						<h2 class="h3">A faster, safer method for testing medications</h2>
 						<p>By giving researchers the ability to test multiple drugs at the same time, the chip may lead to a quicker and safer approval process for new medications. Because the harmful effects of medications would be detected with the chip, the need for human and animal test subjects would drop dramatically.</p>
-						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/pharmacy/img-infographic.png" alt="15% of adults in the U.S. have chronic kidney disease" class="img-responsive center-block" />
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 				</div><!-- .row -->
 			</div><!-- .container -->
@@ -102,30 +98,30 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
-						<iframe width="1280" height="720" src="https://www.youtube.com/embed/Y-PNrzjxGUc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen class="video-pull center-block"></iframe>
+						<iframe width="100%" src="https://www.youtube.com/embed/Y-PNrzjxGUc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen class="video-pull center-block"></iframe>
 						<p>The UW team has already begun testing various drugs, including antibiotics that are less harmful to kidneys.</p>
 						<p>“In one instance, we tested two antibiotics against each other,” describes Wade Washington, a sophomore at the UW and a researcher in Kelly’s lab. “With the chips, we could tell that at certain dosages, one drug was less nephrotoxic [damaging to the kidneys] than the other.”</p>
 						<div id="slideshow">
 							<div class="slick-slideshows">
 								<div>
-									<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/pharmacy/slide-1.jpg' ?>" alt="">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/pharmacy/slide-1.jpg' ?>" alt=""/>
+									<p>Edward Kelly, associate professor at the UW School of Pharmacy, holds a kidney-on-a-chip.</p>
 								</div>
 								<div>
-									<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/pharmacy/slide-2.jpg' ?>" alt="">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/pharmacy/slide-3.jpg' ?>" alt=""/>
+									<p>Catherine Yeung (left), research assistant professor, and Edward Kelly (right) at work in Kelly’s lab.</p>
 								</div>
 								<div>
-									<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/pharmacy/slide-3.jpg' ?>" alt="">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/pharmacy/slide-2.jpg' ?>" alt=""/>
+									<p>Inside kidney-on-a-chip are thousands of live kidney cells that model the functions of a human kidney.</p>
 								</div>
 								<div>
-									<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/pharmacy/slide-4.jpg' ?>" alt="">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/pharmacy/slide-4.jpg' ?>" alt=""/>
+									<p>By giving researchers the ability to test multiple drugs at the same time, kidney-on-a-chip may lead to a quicker and safer approval process for new medications.</p>
 								</div>
 								<div>
-									<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/pharmacy/slide-5.jpg' ?>" alt="">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/pharmacy/slide-5.jpg' ?>" alt=""/>
+									<p>Wade Washington (left), a sophomore at the UW, is part of the kidney-on-a-chip team, alongside School of Pharmacy graduate students such as Elijah Weber (right).</p>
 								</div>
 						</div><!-- .slick-slideshows -->
 						</div><!-- #slideshow -->
@@ -169,12 +165,16 @@
 						<p>Sending kidney-on-a-chip to the ISS also stands to benefit another group of space travelers: the first Mars colonists.</p>
 						<p>The current record for the most consecutive days in space is 438 — but in theory, Mars colonists would remain for decades. After studying chips on the ISS, researchers might have a better idea of how to help the human body withstand the effects of spending so much time in a lower-gravity environment.</p>
 						<p>“Sending cells to space like this has never been done before,” says Yeung. “This is experimental in the truest sense of the word, which is incredibly exciting.”</p>
-						<h2 class="h3">Real-life impact for people with kidney disease</h2 class="h3">
+						<blockquote>
+							<p>“Kidneys synthesize the active form of vitamin D, which is necessary to maintain healthy bones, so we’ll be asking if kidney cells still perform that function in microgravity.”</p>
+							<cite>&mdash; Edward Kelly, Associate Professor, UW School of Pharmacy</cite>
+						</blockquote>
+						<h2 class="h3 extraspace">Real-life impact for people with kidney disease</h2 class="h3">
 						<p>After the chips return from space, the UW team plans to use their improved understanding of kidney mechanics to test whether kidney-on-a-chip can be used to cure diseases, in addition to treating and preventing them.</p>
 						<p>Instead of giving patients experimental treatments that may or may not work, “We could see the effects in kidney-on-a-chip before we test them in humans,” says Kelly.</p>
 						<p>For the researchers involved, kidney-on-a-chip might very well bring about changes in their lifetime, a rarity for big medical breakthroughs. This trailblazing science is made possible in large part byharmaceutics Fund for Excellence, which invests in startup research projects like kidney-on-a-chip.</p>
-						<p>A mission to improve the lives of people around the world — and the solar system — is shared across the UW as part of the Population Health Initiative. By leveraging capabilities and opportunities on and beyond, researchers will have the tools to create healthier and more fulfilling lives for all.</p>
-						<p>“As a pharmacist, I’m very satisfied to be able to show people what we’re doing and where theigoing,” says Yeung. “With kidney-on-a-chip, we have an actual chance to impact the lives of patients.”</p>
+						<p>A mission to improve the lives of people around the world — and the solar system — is shared across the UW as part of the <a href="http://www.washington.edu/populationhealth">Population Health Initiative</a>. By leveraging capabilities and opportunities on and beyond, researchers will have the tools to create healthier and more fulfilling lives for all.</p>
+						<p>“As a pharmacist, I’m very satisfied to be able to show people what we’re doing and where their research dollars are going,” says Yeung. “With kidney-on-a-chip, we have an actual chance to impact the lives of patients.”</p>
 						<div class="giving-widget">
 							<h2>What you care about can change the world</h2>
 							<p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. Support groundbreaking research and the future of health care by contributing to the School of Pharmacy.</p>

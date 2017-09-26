@@ -42,7 +42,7 @@ html{
 
 	h1{
 		font-family:@uni;
-		font-weight:100;
+		font-weight:bold;
 	}
 
 }
@@ -72,11 +72,14 @@ html{
 		text-transform: uppercase;
 		line-height: 1.1;
 		font-size: 31px;
+		text-shadow: 0 0 3px rgba(37, 37, 37, 0.65);
 	}
 
 	p{
 		text-align:left;
 		color:white;
+		font-weight:bold;
+		text-shadow: 0 0 3px rgba(37, 37, 37, 0.65);
 	}
 
 	.intro-body {
@@ -155,10 +158,10 @@ html{
 
 	}
 
-	@media @tablet-landscape-only {}
-	@media @desktop-up {}
-	@media @desktop-only {}
-	@media @big-desktop-up {}
+	// @media @tablet-landscape-only {}
+	// @media @desktop-up {}
+	// @media @desktop-only {}
+	// @media @big-desktop-up {}
 }
 
 
@@ -215,6 +218,7 @@ html{
 	iframe{
 		margin-top:-100px;
 		border:10px solid #e2dad0;
+		height:40vw;
 	}
 }
 .text-block.giving-widget-promoted{
@@ -234,9 +238,27 @@ html{
 
 	h2{
 		color:white;
+		line-height: 2;
 	}
 	p{
 		color:white;
+		line-height: 2;
+	}
+	cite{
+		color:white;
+	}
+	a,
+	a:link,
+	a:visited{
+		color:white;
+		border:none;
+		text-decoration:underline;
+	}
+	a:hover,
+	a:active,
+	a:focus{
+		color:darken(white,25%);
+		border:none;
 	}
 	.satellite{
 		display: block;
@@ -256,6 +278,9 @@ html{
 		height:561px;
 		z-index: -1;
 		background:url("@{pharmacy}/bkg-planet.png") top center no-repeat;
+	}
+	.extraspace{
+		margin-top:90px;
 	}
 }
 .giving-widget{
@@ -280,6 +305,9 @@ div.boundless-button:after{
 	background:none;
 }
 @media (max-width:768px){
+	.text-block.graphpaper-white.first{
+		padding-bottom:0;
+	}
 	.text-block.graphpaper-white.second{
 		overflow:visible;
 	}
@@ -309,10 +337,22 @@ div.boundless-button:after{
 	.text-block.giving-widget-promoted>div:first-child{
 		background:transparent;
 	}
+	.text-block.graphpaper-white.second iframe{
+		height:50vw;
+	}
 }
 @media @phone-only{
 	.text-block.giving-widget-promoted>div:first-child{
 		background:transparent;
+	}
+	.text-block.graphpaper-white.second iframe{
+		height:50vw;
+	}
+}
+@media(min-width:1200px){
+	.text-block iframe{
+		width:100%;
+		margin:40px 0 40px;
 	}
 }
 
@@ -337,6 +377,7 @@ blockquote{
 		// color:lighten(@purple,25%);
 	}
 }
+h2,
 h2.h3,
 h3{
 	color:@purple;
