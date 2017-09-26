@@ -95,6 +95,28 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block .white -->
+		<section class="text-block giving-widget-promoted">
+			<div class="row">
+				<div class="first-col col-md-5 col-md-offset-4 col-sm-8 col-sm-offset-1 col-xs-offset-1 col-xs-10">
+					<div>
+						<h2>A brighter future for patients everywhere</h2>
+						<p>Kidney-on-a-chip is one of many School of Pharmacy endeavors that aim to improve disease treatment and prevention through precision medicine. By supporting the Pharmaceutics Fund for Excellence, you can help develop solutions for the world’s biggest medical challenges.</p>
+					</div>
+				</div>
+				<div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-offset-1 visible-md-block visible-lg-block">
+					<div>
+						<div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="PHARSU" href="#giving-widget-promoted">Give now</a></span></div>
+						<button id="close-give">Close</button>
+					</div>
+				</div><!-- .col-md-2 .col-md-offset-1 .col-sm-3 .col-xs-offset-1 .visible-md-block .visible-lg-block -->
+				<div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-offset-1 visible-xs-block visible-sm-block">
+					<div>
+						<div class="boundless-button sm dark give"><span><a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=3&source=<?php echo $storyCodes; ?>">Give now</a></span></div>
+					</div>
+				</div><!-- .col-md-2 .col-md-offset-1 .col-sm-3 .col-xs-offset-1 .visible-xs-block .visible-sm-block -->
+			</div><!-- .row -->
+			<div id="immersive-give-iframe-promoted"></div>
+		</section>
 		<section class="text-block graphpaper-white second">
 			<div class="container">
 				<div class="row">
@@ -124,7 +146,7 @@
 									<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/pharmacy/slide-5.jpg' ?>" alt=""/>
 									<p>Wade Washington (left), a sophomore at the UW, is part of the kidney-on-a-chip team, alongside School of Pharmacy graduate students such as Elijah Weber (right).</p>
 								</div>
-						</div><!-- .slick-slideshows -->
+							</div><!-- .slick-slideshows -->
 						</div><!-- #slideshow -->
 						<p>Washington knows firsthand the impact this research could have. He was born with chronic kidney disease and underwent a successful transplant when he was 15.</p>
 						<p>“I took antibiotics after my transplant surgery,” Washington says. “For people like me with kidney disease, antibiotics can be a double-edged sword. I see the chips as definitely a better way to test for nephrotoxicity in new drugs.”</p>
@@ -132,25 +154,15 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block .graphpaper-white .second -->
-		<section class="text-block giving-widget-promoted">
+		<section class="text-block white video2">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
-					<iframe width="1280" height="720" src="https://www.youtube.com/embed/-NZueNYSwnY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen class="video-pull center-block"></iframe>
-						<h2 class="h3">A brighter future for patients everywhere</h2>
-						<p>Kidney-on-a-chip is one of many School of Pharmacy endeavors that aim to improve disease treatment and prevention through precision medicine. By supporting the Pharmaceutics Fund for Excellence, you can help develop solutions for the world’s biggest medical challenges.</p>
-						<div class="visible-md-block visible-lg-block">
-							<div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="<?php echo $storyCodes; ?>" href="#giving-widget-promoted">Give now</a></span></div>
-							<button id="close-give">Close</button>
-							<div id="immersive-give-iframe-promoted"></div>
-						</div><!-- .visible-md-block .visible-lg-block -->
-						<div class="visible-xs-block visible-sm-block">
-							<div class="boundless-button sm dark give"><span><a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=3&source=<?php echo $storyCodes; ?>">Give now</a></span></div>
-						</div><!-- .visible-xs-block .visible-sm-block -->
+						<iframe width="1280" height="720" src="https://www.youtube.com/embed/-NZueNYSwnY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="" class="video-pull center-block"></iframe>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 				</div><!-- .row -->
 			</div><!-- .container -->
-		</section><!-- .text-block .giving-widget-promoted -->
+		</section><!-- .text-block .white -->
 		<section class="text-block graphpaper-black">
 			<div class="satellite"></div>
 			<div class="container">

@@ -212,6 +212,7 @@ html{
 }
 .text-block.graphpaper-white.second{
 	margin-top:100px;
+	padding-bottom:200px;
 	.copy{
 		padding-top:0;
 	}
@@ -221,16 +222,25 @@ html{
 		height:40vw;
 	}
 }
-.text-block.giving-widget-promoted{
-	background-color: white;
-	color:@purple;
-	text-align: center;
-	p{
-		color:@purple;
-	}
+.text-block.video2{
+	margin-top:-100px;
 	iframe{
 		border:10px solid #e2dad0;
+		height:40vw;
+		margin-top:-200px;
 	}
+}
+.text-block.giving-widget-promoted{
+	margin-bottom:200px;
+	background:#b7a57a url("@{pharmacy}/wyca2.jpg") -16% center no-repeat;
+	h2,p{
+		color:@purple;
+		text-align:left;
+	}
+}
+.text-block.giving-widget-promoted.active{
+	background-size:auto auto;
+	background-position:top left;
 }
 .text-block.graphpaper-black{
 	background:black url("@{pharmacy}/bkg-graphpaper-black.jpg") top center;
@@ -309,11 +319,24 @@ div.boundless-button:after{
 	background:none;
 }
 @media (max-width:768px){
+	.text-block.giving-widget-promoted{
+		margin-bottom:160px;
+		background-image:none;
+	}
 	.text-block.graphpaper-white.first{
 		padding-bottom:0;
 	}
 	.text-block.graphpaper-white.second{
 		overflow:visible;
+		padding-bottom:0;
+	}
+	.text-block.video2{
+		margin-top:0;
+		iframe{
+			border:10px solid #e2dad0;
+			height:40vw;
+			margin-top:0;
+		}
 	}
 	.text-block.giving-widget-promoted>div:first-child{
 		background:transparent;
