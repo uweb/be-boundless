@@ -1,7 +1,7 @@
 <?php
 	$meta = '';
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/socialwork.css' type='text/css' media='all' />";
-	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/socialwork.min.js' type='text/javascript'></script>";
+	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/lazyload.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/socialwork.min.js' type='text/javascript'></script>";
 	$storyCodes = 'ESIEND';
 	$storyAppeal = 'Your support of students like Stephan Blount and programs like Communities That Care propels our global community forward, giving all children the chance to reach their fullest potential.';
 	get_header( "campaign-v2" );
@@ -9,6 +9,10 @@
 
 <div id="immersive-body">
 	<section class="intro" id="intro-vid">
+		<button id="pause">Pause</button>
+		<video autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/socialwork/poster.jpg' ?>" class="fullscreen-bg__video">
+			<source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/socialwork/header.mp4' ?>" type="video/mp4">
+		</video>
 		<div class="intro-body">
 			<div class="row">
 				<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-1 col-md-offset-1 col-lg-offset-2" id='intro-text'>
@@ -60,7 +64,7 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block white -->
-		<section id="video" class="text-block">
+		<section id="video2" class="text-block">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
@@ -87,7 +91,23 @@
 		</section><!-- .text-block .slides -->
 		<div class="sr-only">
 			<h3>It takes a team</h3>
-			<p>Through the social development model taught to community leaders like Aaron Parker, children are learning to choose behaviros thtat lead to great success in life.  Like with a baseball team, it takes dedication, practice and team bonding to successfully learn these behaviors.</p>
+			<p>Applying the social development strategy lets community leaders like Aaron Parker help young people learn how to choose healthy behaviros that lead to bright futures. Life, like baseball, is a team sport that requires good habits, hard work and supportive relationships.</p>
+			<h4>Coach</h4>
+			<p>The coach is the committed and clear-headed adult who sets the standards, such as showing up on time and playing by the rules of the game.</p>
+			<h4>Team</h4>
+			<p>The team is a unified group with diverse players that share a common goal and follow the same rules, but also get the celbrate their differences and develop their strengths.</p>
+			<h4>Community</h4>
+			<p>Communities are emplowered when they connect with young people and provide meaningful opportunities for youth to thrive and flourish.</p>
+			<h4>Bonding</h4>
+			<p>Bonding &mdash; with other youth, coaches, teachers and family and community members &mdash; is teh magic that makes the social development strategy work, and it's what fosters lasting, healthy behaviors. Bonding is waht motivates young poeple to follow standards for healthy behaviors, and stengthens each step of the strategy.</p>
+			<h4>Opportunities</h4>
+			<p>The social development st4rategy emphasizes the importance of providing real-world opportunities for young people so that they can develop new skills.</p>
+			<h4>Skills</h4>
+			<p>As young people master new skills, tehy build pride in themselves and confidence in their communities, which stand behind them.</p>
+			<h4>Recognition</h4>
+			<p>Recognizing a young person's newly acquired skills cements their sense of accomplishment, and builds trust with the poisitive adults and peers in their lives.</p>
+			<h4>Healthy behaviors</h4>
+			<p>Now that they've learned the social developments trategy, the children are more likely to choose healthy behaviors &mdash; like conflict resolution &mdash; over unhealthy ones, like drinking or doing drugs.</p>
 		</div><!-- .sr-only -->
 		<section class="text-block white">
 			<div class="container">
@@ -188,14 +208,22 @@
 						<p>“My mom was so young when she had me,” he says. “We had a lot of help from human service agencies while I was growing up. It taught me the importance of that type of work, and it gave me a lot of empathy for others facing similar challenges.”</p>
 						<p>It also gave him a direction in life: social work. To support himself while earning an undergraduate degree in human services at the University of Alaska, Blount took a job working in a group home for adults with developmental disabilities.</p>
 						<p>“It was just such cool work,” he says. “One resident at the group home was around my age. I could see how he became more independent when you gave him opportunities to do so.”</p>
+					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
+				</div><!-- .row -->
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 copy notop">
 						<h3>A community leader’s perspective</h3>
 						<iframe width="1280" height="720" src="https://www.youtube.com/embed/9CTe-yBWu_Y?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 						<p class="caption">Edith Elion, ’74, ’77, is on the Board Leadership Workgroup for Communities in Action, and is the executive director of the Atlantic Street Center.</p>
+					</div><!-- .col-md-10 .col-md-offset-1 .copy .notop -->
+				</div><!-- .row -->
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 copy notop">
 						<h2 class="h3">Healthy behaviors and hopeful futures</h2>
 						<p>A critical component of the CTC program is that it must develop organically with the help of its stakeholders, rather than be imposed on them by an outside agency that thinks it knows best what a given group needs or wants.</p>
 						<p>In the case of Blount’s group, the agencies involved decided for themselves what outcomes would be most beneficial to the youth in their community, as well as how to get there. The children were then surveyed about what they perceived to be their biggest struggles. Only after that work was complete did the stakeholders choose what to tackle.</p>
 						<p>In the end, they determined that it was critical to help youth resist the lures of underage drinking and smoking — behaviors that put them at risk for delinquency — and instead opt to stay in school and choose peaceful behavior over violence.</p>
-					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
+					</div><!-- .col-md-10 .col-md-offset-1 .copy .notop -->
 				</div><!-- .row -->
 			</div><!-- .container -->
 				<div class="row">
@@ -205,16 +233,16 @@
 				</div><!-- .row -->
 				<div class="row row-purple">
 					<div class="col-xs-3 col-sm-3 col-md-3">
-						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-01.png" alt="25% less likely to start engaging in crimes" class="img-responsive" />
+						<img data-src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-01.gif" alt="25% less likely to start engaging in crimes" class="img-responsive lazyload" />
 					</div><!-- .col-xs-3 .col-sm-3  .col-md-3 -->
 					<div class="col-xs-3 col-sm-3 col-md-3">
-						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-02.png" alt="32% less likely to start drinking alcohol" class="img-responsive" />
+						<img data-src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-02.gif" alt="32% less likely to start drinking alcohol" class="img-responsive lazyload" />
 					</div><!-- .col-xs-3 .col-sm-3 .col-md-3 -->
 					<div class="col-xs-3 col-sm-3 col-md-3">
-						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-03.png" alt="33% less likely to start smoking cigarettes" class="img-responsive" />
+						<img data-src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-03.gif" alt="33% less likely to start smoking cigarettes" class="img-responsive lazyload" />
 					</div><!-- .col-xs-3 .col-sm-3 .col-md-3 -->
 					<div class="col-xs-3 col-sm-3 col-md-3">
-						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-04.png" alt="37 less likely to binge-drink" class="img-responsive" />
+						<img data-src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-04.gif" alt="37 less likely to binge-drink" class="img-responsive lazyload" />
 					</div><!-- .col-xs-3 .col-sm-3 .col-md-3 -->
 				</div><!-- .row -->
 			<div class="container">
@@ -224,7 +252,7 @@
 						<p>“I’m just implementing what the stakeholders have chosen,” he says. “They’re the experts on what they need.”</p>
 						<p>It’s clear that the strategy works. In the years since CTC was first implemented, numerous scientific studies have shown just how effective it is. Data from one CTC model shows that youth who participated in the program were 25 to 37 percent less likely to have health and behavior problems like smoking, drug and alcohol use, or delinquency.</p>
 						<p>In addition to improving lives, the program also offers significant cost savings: For every dollar invested in CTC, $5.30 is returned in the form of lower substance abuse and delinquency costs.</p>
-						<p class="text-center"><img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-05.png" alt="$1 invested in the CTC program equals $5.31 in savings for community health" class="img-responsive center-block" /></p>
+						<p class="text-center"><img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-05.gif" alt="$1 invested in the CTC program equals $5.31 in savings for community health" class="img-responsive center-block" /></p>
 						<p class="caption">*Washington State Institute for Public Policy, May 2017</p>
 						<p>Alongside the valuable partnerships with community members, a big part of the success of CTC and Communities in Action has been student support from the Excellence in Social Impact Scholarship. Blount, Agyemang and Pascoe all received scholarships from the scholarship fund, which was established in 2016 to help reduce the debt load of social work students. The fund is transforming the school’s ability to prepare highly gifted students to lead, innovate and serve in local, national and global communities.</p>
 						<p>For Blount, this financial support has meant that he can focus time and energy on his studies and the young students he works with. Even more important, it has helped him explore the career he knows he was meant to pursue. “I have always been set on doing some sort of human services or social work,” he says. “I don’t see myself doing anything else.”</p>

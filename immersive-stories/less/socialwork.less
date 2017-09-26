@@ -9,13 +9,13 @@
 	@import "../../immersive-stories/less/common.less";
 	@import "../../immersive-stories/less/queries.less";
 	@import "../../immersive-stories/less/lity.less";
-	@import "../../immersive-stories/less/slideshow.less";
+	// @import "../../immersive-stories/less/slideshow.less";
 
-	@fb: "../../immersive-stories/img/farmer-brown";
-	@public: "../../immersive-stories/img/public-health";
-	@foster: "../../immersive-stories/img/foster-school";
-	@evans: "../../immersive-stories/img/evans-school";
-	@img: "../../immersive-stories/img";
+	// @fb: "../../immersive-stories/img/farmer-brown";
+	// @public: "../../immersive-stories/img/public-health";
+	// @foster: "../../immersive-stories/img/foster-school";
+	// @evans: "../../immersive-stories/img/evans-school";
+	// @img: "../../immersive-stories/img";
 	@socialwork: "../../immersive-stories/img/socialwork";
 
 
@@ -47,6 +47,50 @@
  * Intro and associated styles *
  *******************************/
 
+	video {
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+		object-position: 50% 50%;
+	}
+	#pause {
+		position: absolute;
+		display: block;
+		text-indent: -999px;
+		overflow-x: hidden;
+		width: 45px;
+		height: 45px;
+		right: 20px;
+		top: 190px;
+		border: none;
+		background: url("@{img}/pause.svg") no-repeat 0 0 transparent;
+		z-index: 2;
+		&:hover,
+		&:focus {
+			background-position-x: -47px;
+		}
+		&:focus {
+			outline-color: rgb(59, 153, 252);
+			outline-style: auto;
+			outline-width: 5px;
+		}
+		@media(max-width:768px) {
+			display: none;
+		}
+	}
+	&.paused {
+		#pause {
+			background-position: 0 -49px;
+			&:hover {
+				background-position-x: -47px;
+			}
+			&:focus {
+				outline-color: rgb(59, 153, 252);
+				outline-style: auto;
+				outline-width: 5px;
+			}
+		}
+	}
 	.intro {
 		display: flex;
 		align-items: center;
@@ -58,6 +102,7 @@
 
 		p {
 			color: white;
+			text-shadow: 0 0 3px rgba(37, 37, 37, 0.65);
 		}
 
 		h1 {
@@ -405,8 +450,10 @@
 /*********
  * Video *
  *********/
-	#video.text-block{
+	#video2.text-block{
 		background:#999596 url("@{socialwork}/baseball.png") bottom center;
+		.background-cover(cover);
+		background-position:center center;
 
 		h3{
 			color:@purple;
@@ -532,6 +579,9 @@
 		}
 		.two-column-copy-right {
 			padding: 70px 90px 60px 30px;
+		}
+		.copy.notop{
+			padding-top:0 !important;
 		}
 	}
 
