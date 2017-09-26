@@ -1,24 +1,6 @@
 $(function(){
-	// Video play
-	$("#full-bg-video")[0].addEventListener("timeupdate", function(){
-		if(this.currentTime >= (this.duration - 0.8)) {
-			this.pause();
-			$('#intro-vid').addClass('paused');
-		}
-	});
-	// Video pause
-	$("video").get(0).play();
-	$("#pause").unbind("click").click(function(){
-		var vid = $("#intro-vid video");
-		if(vid.get(0).paused){
-			vid.get(0).currentTime = 0;
-			vid.get(0).play();
-		}
-		else{
-			vid.get(0).pause();
-		}
-		$('#intro-vid').toggleClass('paused');
-	});
+
+	$('#intro-vid video').get(0).play();
 
 	var controllerSW = new ScrollMagic.Controller();
 

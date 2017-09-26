@@ -10,7 +10,7 @@
 <div id="immersive-body">
 	<section class="intro" id="intro-vid">
 		<button id="pause">Pause</button>
-		<video autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/socialwork/poster.jpg' ?>" class="fullscreen-bg__video">
+		<video autoplay muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/socialwork/poster.jpg' ?>" class="fullscreen-bg__video" id="full-bg-video">
 			<source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/socialwork/header.mp4' ?>" type="video/mp4">
 		</video>
 		<div class="intro-body">
