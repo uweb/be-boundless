@@ -88,10 +88,10 @@
 		<section class="text-block white">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-10 col-md-offset-1 copy">
+					<div class="col-md-10 col-md-offset-1 copy lessspaceforjj">
 						<h2 class="h3">A faster, safer method for testing medications</h2>
 						<p>By giving researchers the ability to test multiple drugs at the same time, the chip may lead to a quicker and safer approval process for new medications. Because the harmful effects of medications would be detected with the chip, the need for human and animal test subjects would drop dramatically.</p>
-					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
+					</div><!-- .col-md-10 .col-md-offset-1 .copy .lessspaceforjj -->
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block .white -->
