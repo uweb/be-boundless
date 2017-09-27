@@ -71,7 +71,7 @@
 					<div class="col-md-3 col-md-offset-1 two-column-copy-left">
 						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/pharmacy/img-chip.png" alt="Photograph of the Kidney on a Chip" class="img-responsive center-block" />
 					</div><!-- .col-md-3 .col-md-offset-1 .two-column-copy-left -->
-					<div class="col-md-7 two-column-copy-right">
+					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-7 two-column-copy-right">
 						<p>That’s where the UW is focusing with kidney-on-a-chip.</p>
 						<p>Working alongside Kelly and Yeung is Jonathan Himmelfarb, M.D., the Joseph W. Eschbach, M.D., Endowed Chair in Kidney Research at the UW School of Medicine and the internationally renowned director of the Kidney Research Institute, a collaborative effort between UW Medicine and Northwest Kidney Centers.</p>
 						<blockquote>
@@ -96,25 +96,27 @@
 			</div><!-- .container -->
 		</section><!-- .text-block .white -->
 		<section class="text-block giving-widget-promoted">
-			<div class="row">
-				<div class="first-col col-md-5 col-md-offset-4 col-sm-8 col-sm-offset-1 col-xs-offset-1 col-xs-10">
-					<div>
-						<h2>A brighter future for patients everywhere</h2>
-						<p>Kidney-on-a-chip is one of many School of Pharmacy endeavors that aim to improve disease treatment and prevention through precision medicine. By supporting the Pharmaceutics Fund for Excellence, you can help develop solutions for the world’s biggest medical challenges.</p>
-					</div>
-				</div>
-				<div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-offset-1 visible-md-block visible-lg-block">
-					<div>
-						<div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="PHARSU" href="#giving-widget-promoted">Give now</a></span></div>
-						<button id="close-give">Close</button>
-					</div>
-				</div><!-- .col-md-2 .col-md-offset-1 .col-sm-3 .col-xs-offset-1 .visible-md-block .visible-lg-block -->
-				<div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-offset-1 visible-xs-block visible-sm-block">
-					<div>
-						<div class="boundless-button sm dark give"><span><a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=3&source=<?php echo $storyCodes; ?>">Give now</a></span></div>
-					</div>
-				</div><!-- .col-md-2 .col-md-offset-1 .col-sm-3 .col-xs-offset-1 .visible-xs-block .visible-sm-block -->
-			</div><!-- .row -->
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-5 col-lg-6 col-lg-offset-4">
+						<div>
+							<h2>A brighter future for patients everywhere</h2>
+							<p>Kidney-on-a-chip is one of many School of Pharmacy endeavors that aim to improve disease treatment and prevention through precision medicine. By supporting the Pharmaceutics Fund for Excellence, you can help develop solutions for the world’s biggest medical challenges.</p>
+						</div>
+					</div><!-- .first-col .col-xs-12 .col-sm-6 .col-sm-offset-6 .col-md-4 .col-md-offset-4 -->
+					<div class="col-sec col-md-3 col-lg-2 visible-md-block visible-lg-block">
+						<div>
+							<div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="PHARSU" href="#giving-widget-promoted">Give now</a></span></div>
+							<button id="close-give">Close</button>
+						</div>
+					</div><!-- .col-md-2 .col-md-offset-1 .col-sm-3 .col-xs-offset-1 .visible-md-block .visible-lg-block -->
+					<div class="col-sec col-sm-6 col-sm-offset-6 visible-xs-block visible-sm-block">
+						<div>
+							<div class="boundless-button sm dark give"><span><a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=3&source=<?php echo $storyCodes; ?>">Give now</a></span></div>
+						</div>
+					</div><!-- .col-md-2 .col-md-offset-1 .col-sm-3 .col-xs-offset-1 .visible-xs-block .visible-sm-block -->
+				</div><!-- .row -->
+			</div><!-- .container -->
 			<div id="immersive-give-iframe-promoted"></div>
 		</section>
 		<section class="text-block graphpaper-white second">
@@ -173,15 +175,15 @@
 						<p>In 2018, the UW team will have the opportunity to find out. They’re sending kidney-on-a-chip to the one place where time does speed up: outer space.</p>
 						<p>Microgravity acts as an accelerant, so kidney problems that take decades to develop on Earth need only weeks or months on the International Space Station, where astronauts will study the chips over the course of a few weeks.</p>
 						<p>“Use of the kidney-on-a chip here on Earth has already taught us a lot about kidney function and kidney diseases,” says Himmelfarb. “The opportunity to study how the loss of gravitational forces affects kidney cellular function has the potential to improve the health of people on Earth, as well as prevent medical complications that astronauts experience from weightlessness.”</p>
+						<blockquote>
+							<p>“Kidneys synthesize the active form of vitamin D, which is necessary to maintain healthy bones, so we’ll be asking if kidney cells still perform that function in microgravity.”</p>
+							<cite>&mdash; Edward Kelly, Associate Professor, UW School of Pharmacy</cite>
+						</blockquote>
 						<p>Team member Kenneth Thummel, the Milo Gibaldi Endowed Chair in Pharmaceutics at the School of Pharmacy, has previous experience keeping astronauts healthy. With long-standing research interests in vitamin D metabolism and the regulation of mineral homeostasis, a key component of kidney function, Thummel was part of a special National Research Council committee that established guidelines for chemical exposure in spacecraft air and water.</p>
 						<p>Bone loss is also a major concern for astronauts, Kelly says. “That’s why astronauts exercise and employ other means to counter this issue when they’re in space. Kidneys synthesize the active form of vitamin D, which is necessary to maintain healthy bones, so we’ll be asking if kidney cells still perform that function in microgravity.”</p>
 						<p>Sending kidney-on-a-chip to the Space Station also stands to benefit another group of interstellar travelers: the first Mars colonists.</p>
 						<p>The current record for the most consecutive days in space is 438 — but in theory, Mars colonists would remain for decades. After studying chips on the Space Station, researchers might have a better idea of how to help the human body withstand the effects of spending so much time in a lower-gravity environment.</p>
 						<p>“Sending cells to space like this has never been done before,” says Yeung. “This is experimental in the truest sense of the word, which is incredibly exciting.”</p>
-						<blockquote>
-							<p>“Kidneys synthesize the active form of vitamin D, which is necessary to maintain healthy bones, so we’ll be asking if kidney cells still perform that function in microgravity.”</p>
-							<cite>&mdash; Edward Kelly, Associate Professor, UW School of Pharmacy</cite>
-						</blockquote>
 						<h2 class="h3 extraspace">Real-life impact for people with kidney disease</h2 class="h3">
 						<p>After the chips return from space, the UW team plans to use their improved understanding of kidney mechanics to test whether kidney-on-a-chip can be used to cure diseases, in addition to treating and preventing them.</p>
 						<p>Instead of giving patients experimental treatments that may or may not work, “We could see the effects in kidney-on-a-chip before we test them in humans,” says Kelly.</p>

@@ -203,12 +203,17 @@ html{
 /***************
  * Text Blocks *
  ***************/
+@media(max-width:992px){
+	.two-column-copy-left{
+		margin-bottom:60px;
+	}
+}
 .text-block.graphpaper-white{
 	background:#e7e5e4 url("@{pharmacy}/bkg-graphpaper-white.png") top center;
 	.background-cover(cover);
 }
 .text-block.graphpaper-white.first{
-	padding:70px 0;
+	padding:70px 0 40px 0;
 }
 .text-block.graphpaper-white.second{
 	margin-top:100px;
@@ -219,28 +224,63 @@ html{
 	iframe{
 		margin-top:-100px;
 		border:10px solid #e2dad0;
-		height:40vw;
+		height:30vw !important;
 	}
 }
 .text-block.video2{
 	margin-top:-100px;
 	iframe{
 		border:10px solid #e2dad0;
-		height:40vw;
+		height:30vw !important;
 		margin-top:-200px;
 	}
 }
 .text-block.giving-widget-promoted{
 	margin-bottom:200px;
-	background:#b7a57a url("@{pharmacy}/wyca2.jpg") -16% center no-repeat;
 	h2,p{
 		color:@purple;
 		text-align:left;
 	}
 }
-.text-block.giving-widget-promoted.active{
-	background-size:auto auto;
-	background-position:top left;
+@media(min-width:1200px){
+	.text-block.giving-widget-promoted{
+		background:#b7a57a url("@{pharmacy}/wyca2.jpg") -15% center no-repeat;
+	}
+	.text-block.giving-widget-promoted.active{
+		background-size:auto auto;
+		background-position:-15% center;
+	}
+}
+@media(min-width:992px) and (max-width:1200px){
+	.text-block.giving-widget-promoted{
+		background:#b7a57a url("@{pharmacy}/wyca2.jpg") -30% center no-repeat;
+	}
+	.text-block.giving-widget-promoted.active{
+		background-size:auto auto;
+		background-position:-30% center;
+	}
+}
+@media(min-width:768px) and (max-width:992px){
+	.text-block.giving-widget-promoted{
+		background:#b7a57a url("@{pharmacy}/wyca2.jpg") -60% center no-repeat;
+	}
+	.text-block.giving-widget-promoted.active{
+		background-size:auto auto;
+		background-position:-150% center;
+	}
+}
+@media(max-width:768px){
+	.text-block.giving-widget-promoted{
+		background-image:none;
+		background-color:#b7a57a;
+	}
+}
+.text-block.giving-widget-promoted .first-col:after{
+	display: none;
+}
+.col-sec{
+	padding-top:20px;
+	padding-bottom:20px;
 }
 .text-block.graphpaper-black{
 	background:black url("@{pharmacy}/bkg-graphpaper-black.jpg") top center;
@@ -258,7 +298,6 @@ html{
 		color:#b7a57a;
 	}
 	cite{
-		// color:white;
 		color:#b7a57a;
 	}
 	a,
@@ -319,12 +358,11 @@ div.boundless-button:after{
 	background:none;
 }
 .text-block .copy.lessspaceforjj{
-	padding-top:40px;
+	padding-top:0;
 }
 @media (max-width:768px){
 	.text-block.giving-widget-promoted{
-		margin-bottom:160px;
-		background-image:none;
+		margin-bottom:140px;
 	}
 	.text-block.graphpaper-white.first{
 		padding-bottom:0;
@@ -337,12 +375,14 @@ div.boundless-button:after{
 		margin-top:0;
 		iframe{
 			border:10px solid #e2dad0;
-			height:40vw;
+			height:30vw !important;
 			margin-top:0;
 		}
 	}
 	.text-block.giving-widget-promoted>div:first-child{
 		background:transparent;
+		padding-bottom:20px;
+		margin-bottom:-20px;
 	}
 	.text-block.graphpaper-black{
 		.satellite{
@@ -404,7 +444,6 @@ blockquote{
 	cite{
 		font-size:17px;
 		color:@purple;
-		// color:lighten(@purple,25%);
 	}
 }
 h2,
