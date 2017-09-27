@@ -11,10 +11,6 @@
 @import "../../immersive-stories/less/lity.less";
 @import "../../immersive-stories/less/slideshow.less";
 
-@fb: "../../immersive-stories/img/farmer-brown";
-@public: "../../immersive-stories/img/public-health";
-@foster: "../../immersive-stories/img/foster-school";
-@evans: "../../immersive-stories/img/evans-school";
 @img: "../../immersive-stories/img";
 @pharmacy: "../../immersive-stories/img/pharmacy";
 
@@ -130,9 +126,10 @@ html{
 				width: 85%;
 			}
 		}
+		.scrollit{
+			display:none;
+		}
 	}
-
-	@media @tablet-portrait-up {}
 
 	@media @tablet-portait-only {
 		.intro-body {
@@ -151,17 +148,10 @@ html{
 	}
 
 	@media @tablet-landscape-up {
-
 		h1 {
 			font-size: 4.5vw;
 		}
-
 	}
-
-	// @media @tablet-landscape-only {}
-	// @media @desktop-up {}
-	// @media @desktop-only {}
-	// @media @big-desktop-up {}
 }
 
 
@@ -224,14 +214,12 @@ html{
 	iframe{
 		margin-top:-100px;
 		border:10px solid #e2dad0;
-		height:30vw !important;
 	}
 }
 .text-block.video2{
 	margin-top:-100px;
 	iframe{
 		border:10px solid #e2dad0;
-		height:30vw !important;
 		margin-top:-200px;
 	}
 }
@@ -250,6 +238,9 @@ html{
 		background-size:auto auto;
 		background-position:-15% center;
 	}
+	.video1 iframe,.video2 iframe{
+		height:40vw;
+	}
 }
 @media(min-width:992px) and (max-width:1200px){
 	.text-block.giving-widget-promoted{
@@ -258,6 +249,9 @@ html{
 	.text-block.giving-widget-promoted.active{
 		background-size:auto auto;
 		background-position:-30% center;
+	}
+	.video1 iframe,.video2 iframe{
+		height:40vw;
 	}
 }
 @media(min-width:768px) and (max-width:992px){
@@ -268,11 +262,20 @@ html{
 		background-size:auto auto;
 		background-position:-150% center;
 	}
+	.video1 iframe,.video2 iframe{
+		height:35vw;
+	}
 }
 @media(max-width:768px){
 	.text-block.giving-widget-promoted{
 		background-image:none;
 		background-color:#b7a57a;
+	}
+	.video1 iframe,.video2 iframe{
+		height:50vw;
+	}
+	.text-block.video2 iframe{
+		margin-top:10px;
 	}
 }
 .text-block.giving-widget-promoted .first-col:after{
@@ -374,9 +377,6 @@ div.boundless-button:after{
 	.text-block.video2{
 		margin-top:0;
 		iframe{
-			border:10px solid #e2dad0;
-			height:30vw !important;
-			margin-top:0;
 		}
 	}
 	.text-block.giving-widget-promoted>div:first-child{
@@ -407,16 +407,10 @@ div.boundless-button:after{
 	.text-block.giving-widget-promoted>div:first-child{
 		background:transparent;
 	}
-	.text-block.graphpaper-white.second iframe{
-		height:50vw;
-	}
 }
 @media @phone-only{
 	.text-block.giving-widget-promoted>div:first-child{
 		background:transparent;
-	}
-	.text-block.graphpaper-white.second iframe{
-		height:50vw;
 	}
 }
 @media(min-width:1200px){

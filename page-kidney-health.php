@@ -119,7 +119,7 @@
 			</div><!-- .container -->
 			<div id="immersive-give-iframe-promoted"></div>
 		</section>
-		<section class="text-block graphpaper-white second">
+		<section class="text-block graphpaper-white second video1">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
@@ -155,7 +155,7 @@
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 				</div><!-- .row -->
 			</div><!-- .container -->
-		</section><!-- .text-block .graphpaper-white .second -->
+		</section><!-- .text-block .graphpaper-white .second .video1 -->
 		<section class="text-block white video2">
 			<div class="container">
 				<div class="row">
