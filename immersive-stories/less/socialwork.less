@@ -9,13 +9,7 @@
 	@import "../../immersive-stories/less/common.less";
 	@import "../../immersive-stories/less/queries.less";
 	@import "../../immersive-stories/less/lity.less";
-	// @import "../../immersive-stories/less/slideshow.less";
 
-	// @fb: "../../immersive-stories/img/farmer-brown";
-	// @public: "../../immersive-stories/img/public-health";
-	// @foster: "../../immersive-stories/img/foster-school";
-	// @evans: "../../immersive-stories/img/evans-school";
-	// @img: "../../immersive-stories/img";
 	@socialwork: "../../immersive-stories/img/socialwork";
 
 
@@ -96,7 +90,6 @@
 		align-items: center;
 		justify-content: center;
 		height: calc(~"103vh - 171px");
-		background-image:url("@{socialwork}/fpo.png");
 		.background-cover(cover);
 		background-position: center center;
 
@@ -122,7 +115,6 @@
 		}
 
 		@media @phone-only {
-			background-image:url("@{socialwork}/fpo.png");
 			.background-cover(cover);
 			background-position: right center;
 
@@ -147,8 +139,6 @@
 		}
 
 		@media (max-width: 500px) {
-			background-image:url("@{socialwork}/fpo.png");
-
 			.intro-body {
 				.col-xs-8 {
 					width: 85%;
@@ -159,7 +149,6 @@
 		@media @tablet-portrait-up {}
 
 		@media @tablet-portait-only {
-			background-image:url("@{socialwork}/fpo.png");
 			background-position: right center;
 
 			.intro-body {
@@ -210,17 +199,12 @@
 			height: 50vw;
 			max-height: 50vw;
 			width: 75%;
-			margin-top: -2px;
 			margin-left: -14vw;
 			background-color: #efece1;
-			.skew(-15deg,
-			0);
 		}
 
 		.photograph {
-			background-image:url("@{socialwork}/fpo.png");
 			background-repeat: no-repeat;
-			.background-cover(cover);
 			background-position: left top;
 			width: 65%;
 			height: 50vw;
@@ -228,8 +212,16 @@
 			position: absolute;
 			top: 0;
 			right: -60px;
-			.skew(-15deg,
-			0);
+		}
+		#blount-1 {
+			.background-cover(cover);
+			background-image: url("@{socialwork}/blount-2.jpg");
+			background-position: center center;
+		}
+		#blount-2 {
+			.background-cover(cover);
+			background-image: url("@{socialwork}/blount-1.jpg");
+			background-position: center center;
 		}
 
 		.text {
@@ -270,17 +262,12 @@
 				height: 25vw;
 				max-height: 25vw;
 				width: 75%;
-				margin-top: -2px;
 				margin-left: -14vw;
 				background-color: #efece1;
-				.skew(-15deg,
-				0);
 			}
 
 			.photograph {
-				background-image:url("@{socialwork}/fpo.png");
 				background-repeat: no-repeat;
-				.background-cover(cover);
 				background-position: left top;
 				width: 50%;
 				height: 25vw;
@@ -288,8 +275,6 @@
 				position: absolute;
 				top: 0;
 				right: -60px;
-				.skew(-15deg,
-				0);
 			}
 
 			.text {
@@ -331,26 +316,19 @@
 				height: 25vw;
 				max-height: 25vw;
 				width: 65%;
-				margin-top: -2px;
 				margin-left: -14vw;
 				background-color: #efece1;
-				.skew(-15deg,
-				0);
 			}
 
 			.photograph {
-				background-image:url("@{socialwork}/fpo.png");
 				background-repeat: no-repeat;
-				.background-cover(cover);
 				background-position: left top;
 				width: 60%;
-				height: 22vw;
-				max-height: 22vw;
+				height: 25vw;
+				max-height: 25vw;
 				position: absolute;
-				top: .9vw;
+				top:0;
 				right: -60px;
-				.skew(-15deg,
-				0);
 			}
 
 			.text {
@@ -392,26 +370,19 @@
 				height: 25vw;
 				max-height: 25vw;
 				width: 65%;
-				margin-top: -2px;
 				margin-left: -14vw;
 				background-color: #efece1;
-				.skew(-15deg,
-				0);
 			}
 
 			.photograph {
-				background-image:url("@{socialwork}/fpo.png");
 				background-repeat: no-repeat;
-				.background-cover(cover);
 				background-position: left top;
 				width: 60%;
-				height: 22vw;
-				max-height: 22vw;
+				height: 25vw;
+				max-height: 25vw;
 				position: absolute;
-				top: .9vw;
+				top:0;
 				right: -60px;
-				.skew(-15deg,
-				0);
 			}
 
 			.text {
@@ -450,7 +421,7 @@
 /*********
  * Video *
  *********/
-	#video2.text-block{
+	#video.text-block{
 		background:#999596 url("@{socialwork}/baseball.png") bottom center;
 		.background-cover(cover);
 		background-position:center center;
@@ -477,13 +448,13 @@
 	}
 
 
+
 /***********************
  * Infographics, baby! *
  ***********************/
 	.slides{
 		width:100%;
 		height:66vw;
-		// height:100%;
 		position:relative;
 		margin:0;
 
@@ -518,6 +489,37 @@
 			background-image:url("@{socialwork}/SocialDev_graphic-04.png");
 		}
 
+	}
+
+
+
+/***************************
+ * Quote photo backgrounds *
+ ***************************/
+	#pascoe,
+	#agyemang {
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	#pascoe.photo1 {
+		.background-cover(cover);
+		background-image: url("@{socialwork}/pascoe-2.jpg");
+		background-position: center center;
+	}
+	#pascoe.photo1.photo2 {
+		.background-cover(cover);
+		background-image: url("@{socialwork}/pascoe-1.jpg");
+		background-position: center center;
+	}
+	#agyemang.photo1 {
+		.background-cover(cover);
+		background-image: url("@{socialwork}/agyemang-2.jpg");
+		background-position: center center;
+	}
+	#agyemang.photo1.photo2 {
+		.background-cover(cover);
+		background-image: url("@{socialwork}/agyemang-1.jpg");
+		background-position: center center;
 	}
 
 

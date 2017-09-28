@@ -50,8 +50,9 @@
 					School of Social Work
 				</p>
 			</div>
-			<div class="photograph"></div>
-		</section><!-- .profile .profile-1 -->
+			<div id="blount-1" class="photograph"></div>
+			<div id="blount-2" class="photograph"></div>
+		  </section><!-- .profile .profile-1 -->
 		<section class="text-block white">
 			<div class="container">
 				<div class="row">
@@ -64,7 +65,7 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block white -->
-		<section id="video2" class="text-block">
+		<section id="video" class="text-block">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
@@ -138,7 +139,7 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block white -->
-		<section class="text-block grey">
+		<section id="pascoe" class="text-block grey photo1">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-5 col-md-offset-1 two-column-copy-left">
@@ -153,19 +154,13 @@
 							</cite>
 						</blockquote>
 					</div><!-- .col-md-5 .col-md-offset-1 .two-column-copy-left -->
-					<div class="col-md-5 two-column-copy-right">
-						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/fpo.png" alt="Photograph of Keley Pascoe" />
-					</div><!-- .col-md-5 .two-column-copy-right -->
 				</div><!-- .row -->
 			</div><!-- .container -->
-		</section><!-- .text-block white -->
-		<section class="text-block grey">
+		</section><!-- .text-block .grey -->
+		<section id="agyemang" class="text-block grey photo1">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-5 col-md-offset-1 two-column-copy-left">
-						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/fpo.png" alt="Photograph of Eric Agyemang" />
-					</div><!-- .col-md-5 .col-md-offset-1 .two-column-copy-left -->
-					<div class="col-md-5 two-column-copy-right">
+					<div class="col-md-5 col-md-offset-6 two-column-copy-right">
 						<blockquote>
 							<p class="quote">Students have gained a lot of tools on decision making and self-image, and this will go a long way to help them make good decisions in their daily lives and become responsible citizens.</p>
 							<cite>
@@ -179,7 +174,7 @@
 					</div><!-- .col-md-5 .two-column-copy-right -->
 				</div><!-- .row -->
 			</div><!-- .container -->
-		</section><!-- .text-block white -->
+		</section><!-- .text-block .grey .quote2 -->
 		<section class="text-block giving-widget-promoted">
 			<div class="container">
 				<div class="row">
