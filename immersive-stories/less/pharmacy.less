@@ -160,16 +160,8 @@ html{
  * Video *
  *********/
 #video.text-block{
-	background:#e7e5e4 url("@{pharmacy}/bkg-video.png") bottom center;
+	// background:#e7e5e4 url("@{pharmacy}/bkg-video.png") bottom center;
 
-	span{
-		display: block;
-		height:720px;
-	}
-
-	h3{
-		color:@purple;
-	}
 	p{
 		color:@purple;
 	}
@@ -203,7 +195,7 @@ html{
 	.background-cover(cover);
 }
 .text-block.graphpaper-white.first{
-	padding:70px 0 40px 0;
+	// padding:70px 0 40px 0;
 }
 .text-block.graphpaper-white.second{
 	margin-top:100px;
@@ -224,7 +216,8 @@ html{
 	}
 }
 .text-block.giving-widget-promoted{
-	margin-bottom:200px;
+	margin-bottom:40px;
+	padding-bottom:29px;
 	h2,p{
 		color:@purple;
 		text-align:left;
@@ -236,7 +229,7 @@ html{
 	}
 	.text-block.giving-widget-promoted.active{
 		background-size:auto auto;
-		background-position:-15% center;
+		background-position:-15% top;
 	}
 	.video1 iframe,.video2 iframe{
 		height:40vw;
@@ -248,7 +241,7 @@ html{
 	}
 	.text-block.giving-widget-promoted.active{
 		background-size:auto auto;
-		background-position:-30% center;
+		background-position:-30% top;
 	}
 	.video1 iframe,.video2 iframe{
 		height:40vw;
@@ -260,7 +253,7 @@ html{
 	}
 	.text-block.giving-widget-promoted.active{
 		background-size:auto auto;
-		background-position:-150% center;
+		background-position:-60% top;
 	}
 	.video1 iframe,.video2 iframe{
 		height:35vw;
@@ -276,6 +269,10 @@ html{
 	}
 	.text-block.video2 iframe{
 		margin-top:10px;
+	}
+	.text-block.graphpaper-white.first{
+		margin-top:40px;
+		padding:40px 0;
 	}
 }
 .text-block.giving-widget-promoted .first-col:after{
@@ -376,8 +373,6 @@ div.boundless-button:after{
 	}
 	.text-block.video2{
 		margin-top:0;
-		iframe{
-		}
 	}
 	.text-block.giving-widget-promoted>div:first-child{
 		background:transparent;
@@ -448,6 +443,12 @@ h3{
 }
 .img-border{
 	border:10px solid #e2dad0;
+}
+.img-teammate{
+	margin-top:60px;
+}
+.img-chip{
+	padding-right:40px;
 }
 p.caption{
 	font-size:.65em;
