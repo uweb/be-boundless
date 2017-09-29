@@ -147,7 +147,7 @@
 								</div>
 								<div>
 									<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/pharmacy/slide-3.jpg' ?>" alt=""/>
-									<p>Catherine Yeung (left), research assistant professor, and Edward Kelly (right) at work in Kelly’s lab.</p>
+									<p>Catherine Yeung (left), research assistant professor, and Edward Kelly at work in Kelly’s lab.</p>
 								</div>
 								<div>
 									<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/pharmacy/slide-2.jpg' ?>" alt=""/>
@@ -159,7 +159,7 @@
 								</div>
 								<div>
 									<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/pharmacy/slide-5.jpg' ?>" alt=""/>
-									<p>Wade Washington (left), a sophomore at the UW, is part of the kidney-on-a-chip team, alongside School of Pharmacy graduate students such as Elijah Weber (right).</p>
+									<p>Wade Washington (left), a sophomore at the UW, is part of the kidney-on-a-chip team, alongside School of Pharmacy graduate students such as Elijah Weber.</p>
 								</div>
 							</div><!-- .slick-slideshows -->
 						</div><!-- #slideshow -->
@@ -186,7 +186,7 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block .white -->
-		<section class="text-block graphpaper-black">
+		<section class="text-block graphpaper-black graphpaper-black-1">
 			<div class="satellite"></div>
 			<div class="container">
 				<div class="row">
@@ -205,7 +205,15 @@
 						<p>Sending kidney-on-a-chip to the Space Station also stands to benefit another group of interstellar travelers: the first Mars colonists.</p>
 						<p>The current record for the most consecutive days in space is 438 — but in theory, Mars colonists would remain for decades. After studying chips on the Space Station, researchers might have a better idea of how to help the human body withstand the effects of spending so much time in a lower-gravity environment.</p>
 						<p>“Sending cells to space like this has never been done before,” says Yeung. “This is experimental in the truest sense of the word, which is incredibly exciting.”</p>
-						<h2 class="h3 extraspace">Real-life impact for people with kidney disease</h2 class="h3">
+					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</section><!-- .text-block .graphpaper-black -->
+		<section class="text-block graphpaper-black graphpaper-black-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 copy">
+						<h2 class="h3">Real-life impact for people with kidney disease</h2>
 						<p>After the chips return from space, the UW team plans to use their improved understanding of kidney mechanics to test whether kidney-on-a-chip can be used to cure diseases, in addition to treating and preventing them.</p>
 						<p>Instead of giving patients experimental treatments that may or may not work, “We could see the effects in kidney-on-a-chip before we test them in humans,” says Kelly.</p>
 						<p>For the researchers involved, kidney-on-a-chip might very well bring about changes in their lifetime, a rarity for big medical breakthroughs. This trailblazing science is made possible in large part by donors who support the Pharmaceutics Fund for Excellence, which invests in startup research projects like kidney-on-a-chip.</p>
