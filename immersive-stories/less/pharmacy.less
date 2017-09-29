@@ -338,11 +338,11 @@ html{
 	.background-cover(cover);
 
 	h2{
-		color:white;
+		color:@purple;
 		line-height: 2;
 	}
 	p{
-		color:white;
+		color:@purple;
 		line-height: 2;
 	}
 	blockquote p{
@@ -385,6 +385,19 @@ html{
 	}
 	.extraspace{
 		margin-top:90px;
+	}
+	&:before {
+		content: '';
+		height: 100px;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgba(255, 255, 255, 1.0); /* For browsers that do not support gradients */
+	    background: -webkit-linear-gradient(rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 0.1)); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 0.1)); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 0.1)); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 0.1)); /* Standard syntax */
 	}
 }
 .giving-widget{
