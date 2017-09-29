@@ -336,12 +336,12 @@ html{
 .text-block.graphpaper-black{
 	// background:black url("@{pharmacy}/bkg-graphpaper-fade.png") top center;
 	// .background-cover(cover);
-	background: white;
+	background-color: white;
 	&.graphpaper-black-1 {
 		padding-bottom: 70px;
 	}
 	&.graphpaper-black-2 {
-		background: black;
+		background-color: black;
 		h2{
 		color:white;
 		}
@@ -402,7 +402,20 @@ html{
 	.copy {
 		padding-top: 10px;
 	}
-	&:before {
+	&.graphpaper-black-1:before {
+		content: '';
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		//bottom: 0;	
+		left: 0;
+		//right: 0;
+		z-index: -1;
+		background: url("@{pharmacy}/Trans-grid.png") bottom right;
+		.background-cover(cover);
+	}
+	&.graphpaper-black-2:before {
 		content: '';
 		height: 100%;
 		width: 100%;
