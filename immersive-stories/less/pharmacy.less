@@ -154,18 +154,21 @@ html{
 	}
 }
 
-section.video-ani a p {
-	color:@purple;
-	text-transform:uppercase;
-	position:relative;
-	display: block;
-	top:-32px;
-	background-color: white;
-	outline: 15px solid rgba(183,165,122,0.3);
-	margin-top: 32px;
-    font-weight: 900;
-    font-size: 1.7em;
-    font-family: @headline;
+section.video-ani a {
+	// align-self: center;
+	p {
+		color:@purple;
+		text-transform:uppercase;
+		position:relative;
+		display: block;
+		top:-32px;
+		background-color: white;
+		outline: 15px solid rgba(183,165,122,0.3);
+		margin-top: 32px;
+	    font-weight: 900;
+	    font-size: 1.7em;
+	    font-family: @headline;
+	}
 }
 
 //section overlap
@@ -195,12 +198,16 @@ section.video-ani a p {
  .video{
 	height:35vw;
 	max-height: 425px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
 	a{
 		position: relative;
-		top:15vw;
+		//top:15vw;
+		top: 0 !important;
 		text-decoration:none;
 		border:none;
-
+		// align-self: flex-end;
 		p{
 			color:@purple;
 			text-decoration:none;
