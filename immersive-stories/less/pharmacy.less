@@ -194,6 +194,7 @@ section.video-ani a p {
  **********/
  .video{
 	height:35vw;
+	max-height: 425px;
 	a{
 		position: relative;
 		top:15vw;
@@ -211,9 +212,20 @@ section.video-ani a p {
 }
 section.video-ani{
 	//margin:0px 90px;
-	background: white url("@{pharmacy}/bkg-ani.jpg") center center no-repeat;
+	background: white url("@{pharmacy}/bkg-ani.jpg") top center no-repeat;
 	.background-cover(cover);
 }
+div.video-ani {
+	height: 50vw;
+	max-height: 80vh;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+    	top: 0;
+    }
+}
+
 .video-1{
 	margin:-110px 0 40px 0;
 	background:url("@{pharmacy}/bkg-cathyyeung.jpg") center center no-repeat;
