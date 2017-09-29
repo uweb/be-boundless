@@ -24,7 +24,7 @@
 		</section><!-- .scrollit .read-more -->
 	</section><!-- .intro #intro-vid -->
 	<main id="main_content">
-		<section class="text-block start white">
+		<section class="text-block start white before">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
@@ -39,24 +39,25 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block .start .white -->
-		<section id="video" class="text-block white">
+		<section id="video" class="video-block video-ani">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1">
 						<div class="video video-ani center-block text-center">
 							<a data-lity href="https://www.youtube.com/embed/CYBrpCUkdVQ?autoplay=1&rel=0&showinfo=0">
+								<p class="play-text">What is kidney-on-a-chip?</p>
 								<svg xmlns="http://www.w3.org/2000/svg" width="75.649" height="75.625" viewBox="0 0 75.649 75.625">
 									<circle fill="none" stroke="#4b2e83" stroke-width="4.649" stroke-miterlimit="10" cx="37.785" cy="37.822" r="34.703"/>
 									<path fill="#4b2e83" d="M25.88 19.814l32.885 18.008-32.886 18.01"/>
 								</svg>
-								<span>What is kidney-on-a-chip?</span>
 							</a>
 						</div><!-- .video .video-ani .center-block .text-center -->
 					</div><!-- .col-md-10 .col-md-offset-1 -->
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- #video .text-block .white -->
-		<section class="text-block white">
+
+		<section class="text-block white after">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">

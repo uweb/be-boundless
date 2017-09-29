@@ -154,6 +154,39 @@ html{
 	}
 }
 
+section.video-ani a p {
+	color:@purple;
+	text-transform:uppercase;
+	position:relative;
+	display: block;
+	top:-32px;
+	background-color: white;
+	outline: 15px solid rgba(183,165,122,0.3);
+	margin-top: 32px;
+    font-weight: 900;
+    font-size: 1.7em;
+    font-family: @headline;
+}
+
+//section overlap
+@media(min-width:768px) {
+	section.before .copy {
+		margin-bottom: -30px;
+	}
+	section.after .copy {
+		margin-top: -50px;
+	}
+}
+@media(max-width:768px) {
+	section.video-ani a p {
+		font-size: 1.3em;
+	}
+}
+@media(max-width:480px) {
+	section.video-ani a p {
+		font-size: 1.0em;
+	}
+}
 
 
 /**********
@@ -167,7 +200,7 @@ html{
 		text-decoration:none;
 		border:none;
 
-		span{
+		p{
 			color:@purple;
 			text-decoration:none;
 			display: inline-block;
@@ -176,8 +209,8 @@ html{
 		}
 	}
 }
-.video-ani{
-	margin:0px 90px;
+section.video-ani{
+	//margin:0px 90px;
 	background:url("@{pharmacy}/bkg-ani.jpg") center center no-repeat;
 	.background-cover(cover);
 }
