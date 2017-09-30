@@ -129,15 +129,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
-						<div class="video video-1 center-block text-center">
-							<a data-lity href="https://www.youtube.com/embed/Y-PNrzjxGUc?autoplay=1&rel=0&showinfo=0">
-								<svg xmlns="http://www.w3.org/2000/svg" width="75.649" height="75.625" viewBox="0 0 75.649 75.625">
-									<circle fill="none" stroke="#b7a57a" stroke-width="4.649" stroke-miterlimit="10" cx="37.785" cy="37.822" r="34.703"/>
-									<path fill="#b7a57a" d="M25.88 19.814l32.885 18.008-32.886 18.01"/>
-								</svg>
-								<span>How will kidney-on-a-chip help pharmacists? Catherine Yeung explains.</span>
-							</a>
-						</div><!-- .video .video-1 .center-block .text-center -->
+						<iframe width="1280" height="666" src="https://www.youtube.com/embed/Y-PNrzjxGUc?rel=0&amp;showinfo=0" title="How will kidney-on-a-chip help pharmacists? Catherine Yeung explains." frameborder="0" allowfullscreen></iframe>
 						<p>The UW team has already begun testing various drugs, including antibiotics that are less harmful to kidneys.</p>
 						<p>“In one instance, we tested two antibiotics against each other,” describes Wade Washington, a sophomore at the UW and a researcher in Kelly’s lab. “With the chips, we could tell that at certain dosages, one drug was less nephrotoxic [damaging to the kidneys] than the other.”</p>
 						<div id="slideshow">
@@ -170,23 +162,15 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block .graphpaper-white .second .video1 -->
-		<section class="text-block white video2">
+		<section class="text-block">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
-						<div class="video video-2 center-block text-center">
-							<a data-lity href="https://www.youtube.com/embed/-NZueNYSwnY?autoplay=1&rel=0&showinfo=0">
-								<svg xmlns="http://www.w3.org/2000/svg" width="75.649" height="75.625" viewBox="0 0 75.649 75.625">
-									<circle fill="none" stroke="#b7a57a" stroke-width="4.649" stroke-miterlimit="10" cx="37.785" cy="37.822" r="34.703"/>
-									<path fill="#b7a57a" d="M25.88 19.814l32.885 18.008-32.886 18.01"/>
-								</svg>
-								<span>How does kidney-on-a-chip work? Edward Kelly explains.</span>
-							</a>
-						</div><!-- .video .video-1 .center-block .text-center -->
-					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
-				</div><!-- .row -->
-			</div><!-- .container -->
-		</section><!-- .text-block .white -->
+						<iframe width="1280" height="666" src="https://www.youtube.com/embed/-NZueNYSwnY?rel=0&amp;showinfo=0" title="How does kidney-on-a-chip work? Edward Kelly explains." frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
 		<section class="text-block graphpaper-black graphpaper-black-1">
 			<div class="satellite"></div>
 			<div class="container">
