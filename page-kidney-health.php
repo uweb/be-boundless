@@ -129,7 +129,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
-						<iframe width="1280" height="666" src="https://www.youtube.com/embed/Y-PNrzjxGUc?rel=0&amp;showinfo=0" title="How will kidney-on-a-chip help pharmacists? Catherine Yeung explains." frameborder="0" allowfullscreen></iframe>
+						<div class="iframe-pic iframe-1">
+							<iframe width="1280" height="666" src="https://www.youtube.com/embed/Y-PNrzjxGUc?rel=0&amp;showinfo=0" title="How will kidney-on-a-chip help pharmacists? Catherine Yeung explains." frameborder="0" allowfullscreen></iframe>
+						</div>
 						<p>The UW team has already begun testing various drugs, including antibiotics that are less harmful to kidneys.</p>
 						<p>“In one instance, we tested two antibiotics against each other,” describes Wade Washington, a sophomore at the UW and a researcher in Kelly’s lab. “With the chips, we could tell that at certain dosages, one drug was less nephrotoxic [damaging to the kidneys] than the other.”</p>
 						<div id="slideshow">
@@ -166,7 +168,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
-						<iframe width="1280" height="666" src="https://www.youtube.com/embed/-NZueNYSwnY?rel=0&amp;showinfo=0" title="How does kidney-on-a-chip work? Edward Kelly explains." frameborder="0" allowfullscreen></iframe>
+						<div class="iframe-pic iframe-2">
+							<iframe width="1280" height="666" src="https://www.youtube.com/embed/-NZueNYSwnY?rel=0&amp;showinfo=0" title="How does kidney-on-a-chip work? Edward Kelly explains." frameborder="0" allowfullscreen></iframe>
+						</div>
 					</div>
 				</div>
 			</div>

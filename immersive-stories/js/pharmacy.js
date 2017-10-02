@@ -31,5 +31,12 @@ $(function(){
     $('.givebutton2').hide();
     console.log('a.givebutton2 clicked!');
   });
+  $('.iframe-pic').on('click', function(e){
+      //e.preventDefault();
+      //e.stopPropagation();
+      $(this).toggleClass('active');
+      $(this).find('iframe')[0].src += "&autoplay=1";
+      //$(this).unbind("click");
+  });
 })
 

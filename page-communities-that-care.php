@@ -18,7 +18,7 @@
 				<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-1 col-md-offset-1 col-lg-offset-2" id='intro-text'>
 					<h1>Creating communities that care</h1>
 					<span class="udub-slant"><span></span></span>
-					<p>In communities across Seattle, students from the UW School of Social Work are working to increase the chance of young people to achieve success.</p>
+					<p>In communities across Seattle, students from the UW School of Social Work are dedicated to increasing young people’s chances of achieving success.</p>
 				</div><!-- .col-xs-8 .col-sm-8 .col-md-8 .col-lg-8 .col-xs-offset-1 .col-md-offset-1 .col-lg-offset-2 #intro-text -->
 			</div><!-- .row -->
 		</div><!-- .intro-body -->
@@ -58,7 +58,7 @@
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
 						<h3>Changing futures, one student at a time</h3>
-						<p>For his social work practicum, Blount is helping implement CTC principles through Communities in Action, a program where Seattle residents come together to increase protective factors and reduce risk factors to promote healthy child development.</p>
+						<p>For his social work practicum, Blount is helping implement Communities That Care principles through Communities in Action, a program where Seattle residents come together to increase protective factors and reduce risk factors to promote healthy child development.</p>
 						<p>Along with fellow UW master’s candidates Kelley Pascoe and Eric Agyemang, Blount is teaching students from schools in southeast and central Seattle.</p>
 						<p>“We’re working to deliver life skills training to middle schoolers,” Blount explains. “Our part began after a group of agencies came together to address things in their communities affecting their youth that they wanted to work through.”</p>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
@@ -70,7 +70,7 @@
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
 						<h3>How does Communities in Action bring about change?</h3>
-						<p>By partnering with leaders like Aaron Parker, the Rainier Branch manager of Therapeutic Health Services, who take the evidence-based programming of Communities in Action and apply it to their organizations. Parker takes it one step further: A longtime Little League coach, he’s using Communities in Action principles to help his team, both on the field and off.</p>
+						<p>By partnering with leaders like Therapeutic Health Services’ Aaron Parker who take the evidence-based programming of Communities in Action and apply it to their organizations. Parker takes it one step further: A longtime Little League coach, he’s using Communities in Action principles to help his team both on the field and off.</p>
 						<p>
 							<a data-lity href="https://www.youtube.com/embed/3DvGGqEh0ug?autoplay=1&rel=0&showinfo=0">
 								<svg xmlns="http://www.w3.org/2000/svg" width="75.649" height="75.625" viewBox="0 0 75.649 75.625">
@@ -92,7 +92,7 @@
 		</section><!-- .text-block .slides -->
 		<div class="sr-only">
 			<h3>It takes a team</h3>
-			<p>Applying the social development strategy lets community leaders like Aaron Parker help young people learn how to choose healthy behaviros that lead to bright futures. Life, like baseball, is a team sport that requires good habits, hard work and supportive relationships.</p>
+			<p>Applying Communities That Care’s social development strategy lets community leaders like Aaron Parker help young people learn how to choose healthy behaviors that lead to bright futures. Life, like baseball, is a team sport that requires good habits, hard work and supportive relationships.</p>
 			<h4>Coach</h4>
 			<p>The coach is the committed and clear-headed adult who sets the standards, such as showing up on time and playing by the rules of the game.</p>
 			<h4>Team</h4>
@@ -102,19 +102,19 @@
 			<h4>Bonding</h4>
 			<p>Bonding &mdash; with other youth, coaches, teachers and family and community members &mdash; is teh magic that makes the social development strategy work, and it's what fosters lasting, healthy behaviors. Bonding is waht motivates young poeple to follow standards for healthy behaviors, and stengthens each step of the strategy.</p>
 			<h4>Opportunities</h4>
-			<p>The social development st4rategy emphasizes the importance of providing real-world opportunities for young people so that they can develop new skills.</p>
+			<p>The social development strategy emphasizes the importance of providing real-world opportunities for young people so they can develop new skills.</p>
 			<h4>Skills</h4>
-			<p>As young people master new skills, tehy build pride in themselves and confidence in their communities, which stand behind them.</p>
+			<p>As young people master new skills, they build pride in themselves and confidence in their communities, which stand behind them.</p>
 			<h4>Recognition</h4>
-			<p>Recognizing a young person's newly acquired skills cements their sense of accomplishment, and builds trust with the poisitive adults and peers in their lives.</p>
+			<p>Recognizing a young person’s newly acquired skills cements their sense of accomplishment and helps them build trust with the positive adults and peers in their lives.</p>
 			<h4>Healthy behaviors</h4>
-			<p>Now that they've learned the social developments trategy, the children are more likely to choose healthy behaviors &mdash; like conflict resolution &mdash; over unhealthy ones, like drinking or doing drugs.</p>
+			<p>Now that they’ve learned the social development strategy, children are more likely to choose healthy behaviors, like conflict resolution, over unhealthy ones, like drinking or doing drugs.</p>
 		</div><!-- .sr-only -->
 		<section class="text-block white">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-5 col-md-offset-1 two-column-copy-left">
-						<p>Communities in Action began in 2013, when more than 2,300 students in grades six, eight, 10 and 12 responded to a survey about the challenges in their daily lives. Like CTC’s data, the results showed that the students faced bullying, fighting, drug use and depression.</p>
+						<p>Communities in Action began in 2013, when more than 2,300 students in grades six, eight, 10 and 12 responded to a survey about the challenges in their daily lives. Like the data from Communities That Care, the results showed that the students faced bullying, fighting, drug use and depression.</p>
 						<p>Margaret Spearmon, Ph.D., chief officer of Community Engagement and Diversity at the School of Social Work, oversees Communities in Action with project manager Vaughnetta J. Barton, M.S.W. Their goal is to help communities use data about their youth to make informed decisions on how to meet kids’ needs — and develop a plan of action to meet those needs. While the communities drive the plan, local organizations and schools put it in play.</p>
 					</div><!-- .col-md-5 .col-md-offset-1 .two-column-copy-left -->
 					<div class="col-md-5 two-column-copy-right">
@@ -144,11 +144,11 @@
 				<div class="row">
 					<div class="col-md-5 col-md-offset-1 two-column-copy-left">
 						<blockquote>
-							<p class="quote">I really enjoyed watching the students help each other. When we led games or discussions, students were always willing to help and support their classmates in understanding the material at hand.</p>
+							<p class="quote">I really enjoyed watching the students help each other. When we led games or discussions, students were always willing to support their classmates in understanding the material at hand.</p>
 							<cite>
 								<p>
 									<span>Keley Pascoe</span><br />
-									Master’s Candidate,<br />
+									Master’s candidate,<br />
 									School of Social Work
 								</p>
 							</cite>
@@ -162,11 +162,11 @@
 				<div class="row">
 					<div class="col-md-5 col-md-offset-6 two-column-copy-right">
 						<blockquote>
-							<p class="quote">Students have gained a lot of tools on decision making and self-image, and this will go a long way to help them make good decisions in their daily lives and become responsible citizens.</p>
+							<p class="quote">Students have gained a lot of tools for decision-making and self-image, and this will go a long way toward helping them make good decisions in their daily lives and become responsible citizens.</p>
 							<cite>
 								<p>
 									<span>Eric Agyemang</span><br />
-									Master’s Candidate,<br />
+									Master’s candidate,<br />
 									School of Social Work
 								</p>
 							</cite>
@@ -209,7 +209,7 @@
 					<div class="col-md-10 col-md-offset-1 copy notop">
 						<h3>A community leader’s perspective</h3>
 						<iframe width="1280" height="720" src="https://www.youtube.com/embed/9CTe-yBWu_Y?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-						<p class="caption">Edith Elion, ’74, ’77, is on the Board Leadership Workgroup for Communities in Action, and is the executive director of the Atlantic Street Center.</p>
+						<p class="caption">Edith Elion, ’74, ’77, is on the board leadership workgroup for Communities in Action, and she is the executive director of Atlantic Street Center.</p>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy .notop -->
 				</div><!-- .row -->
 				<div class="row">
@@ -223,7 +223,8 @@
 			</div><!-- .container -->
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
-						<h3 class="fancypants">Youth from communities that use Communities That Care were less likely to have a number of health and behavior problems.</h3>
+						<h3 class="fancypants">Youth whose communities participate in Communities That Care are less likely to engage in risky behaviors.</h3>
+						<!-- <p>Community Youth Development Study, Month 20XX</p> -->
 					</div><!-- .col-md-8 .col-md-offset-2 -->
 				</div><!-- .row -->
 				<div class="row row-purple">
@@ -245,10 +246,10 @@
 					<div class="col-md-10 col-md-offset-1 copy">
 						<p>Because the CTC program is evidence-based and draws on the strengths of the community it serves, Blount says he’s confident the program will change the outcomes of the sixth-graders he works with.</p>
 						<p>“I’m just implementing what the stakeholders have chosen,” he says. “They’re the experts on what they need.”</p>
-						<p>It’s clear that the strategy works. In the years since CTC was first implemented, numerous scientific studies have shown just how effective it is. Data from one CTC model shows that youth who participated in the program were 25 to 37 percent less likely to have health and behavior problems like smoking, drug and alcohol use, or delinquency.</p>
+						<p>It’s clear that the model works. In the years since CTC was first implemented, numerous scientific studies have shown just how effective it is. Data from one CTC model shows that youth who participated in the program were 25 to 37 percent less likely to have health and behavior problems like smoking, drug and alcohol use, or delinquency.</p>
 						<p>In addition to improving lives, the program also offers significant cost savings: For every dollar invested in CTC, $5.30 is returned in the form of lower substance abuse and delinquency costs.</p>
 						<p class="text-center"><img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-05.gif" alt="$1 invested in the CTC program equals $5.31 in savings for community health" class="img-responsive center-block" /></p>
-						<p class="caption">*Washington State Institute for Public Policy, May 2017</p>
+						<p class="caption">*Archives of Pediatrics and Adolescent Medicine, 2009</p>
 						<p>Alongside the valuable partnerships with community members, a big part of the success of CTC and Communities in Action has been student support from the Excellence in Social Impact Scholarship. Blount, Agyemang and Pascoe all received scholarships from the scholarship fund, which was established in 2016 to help reduce the debt load of social work students. The fund is transforming the school’s ability to prepare highly gifted students to lead, innovate and serve in local, national and global communities.</p>
 						<p>For Blount, this financial support has meant that he can focus time and energy on his studies and the young students he works with. Even more important, it has helped him explore the career he knows he was meant to pursue. “I have always been set on doing some sort of human services or social work,” he says. “I don’t see myself doing anything else.”</p>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->

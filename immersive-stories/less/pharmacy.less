@@ -329,7 +329,7 @@ div.video-ani {
 		padding-top:0;
 	}
 	iframe{
-		margin-top:-100px;
+		//margin-top:-100px;
 		//border:10px solid #e2dad0;
 	}
 }
@@ -609,6 +609,29 @@ p.caption{
 	//font-style: italic;
 	color:@purple;
 }
+
+div.iframe-pic {
+	iframe {
+		visibility: hidden;
+		margin: 0;
+	}
+	&.iframe-1 {
+		background: white url("http://img.youtube.com/vi/Y-PNrzjxGUc/0.jpg") right center no-repeat;
+		.background-cover(cover);
+	}
+	&.iframe-2 {
+		background: white url("http://img.youtube.com/vi/-NZueNYSwnY/0.jpg") right center no-repeat;
+		.background-cover(cover);
+	}
+	&.active {
+		background: white;
+		iframe {
+			visibility: visible;
+		}
+	}
+
+}
+
 
 /*
  @media @phone-only{}
