@@ -121,7 +121,7 @@
 						<div class="pull-quote">
 							<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/MargaretSpearmon.png" alt="Photograph of Margaret Spearmon, Ph.D." class="img-inset pull-left" />
 							<p class="meta">
-								<span class="name">Margaret Spearmon, Ph.D.</span><br />
+								<span class="name">Margaret Spearmon</span><br />
 								<span class="title">Chief Officer of Community Engagement and Diversity, School of Social Work</span>
 							</p>
 							<div class="clearfix"></div>
@@ -130,7 +130,7 @@
 						<div class="pull-quote">
 							<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/VaughnettaBarton.png" alt="Photograph of Vaughnetta Barton, M.S.W." class="img-inset pull-left" />
 							<p class="meta">
-								<span class="name">Vaughnetta Barton, M.S.W.</span><br />
+								<span class="name">Vaughnetta Barton</span><br />
 								<span class="title">Project Manager, Communities in Action, School of Social Work</span>
 							</p>
 							<div class="clearfix"></div>
