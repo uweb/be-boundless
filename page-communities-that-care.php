@@ -208,8 +208,13 @@
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy notop">
 						<h3>A community leader’s perspective</h3>
-						<iframe width="1280" height="720" src="https://www.youtube.com/embed/9CTe-yBWu_Y?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-						<p class="caption">Edith Elion, ’74, ’77 </br>Member, Communities in Action Board Leadership Workgroup </br>Executive Director, Atlantic Street Center</p>
+						<div class="youtube-container">
+							<iframe width="1280" height="720" src="https://www.youtube.com/embed/9CTe-yBWu_Y?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+							<div class="youtube-caption">
+								<p class="big">How does Communities in Action help local nonprofits?</p>
+								<p class="small">Edith Elion, ’74, ’77 </br>Member, Communities in Action Board Leadership Workgroup </br>Executive Director, Atlantic Street Center</p>
+							</div>
+						</div>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy .notop -->
 				</div><!-- .row -->
 				<div class="row">
