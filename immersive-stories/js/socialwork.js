@@ -14,15 +14,18 @@ $(function(){
         introSW.update(true);
     });
 
-     var introSWVid = new ScrollMagic.Scene({
-      triggerElement: '#intro-vid',
-      triggerHook: 1,
-      duration: '100%',
-    })
-    .on('enter',function(){
-      $('video').get(0).play()
-    })
-    .addTo(controllerSW);
+    //Play video through pin
+    $('video').get(0).play();
+
+    //  var introSWVid = new ScrollMagic.Scene({
+    //   triggerElement: '#intro-vid',
+    //   triggerHook: 1,
+    //   duration: '100%',
+    // })
+    // .on('enter',function(){
+    //   $('video').get(0).play()
+    // })
+    // .addTo(controllerSW);
 
 	// Parallax photos
 	var aniBlount = new TimelineMax ()
@@ -114,7 +117,13 @@ $(function(){
 	.setTween(ani4)
 	.addTo(controllerSW)
 
-	// lazyloading in 3... 2... 1...
-	lazyload();
+	// lazyloading (not IE) in 3... 2... 1...
+	var ua = window.navigator.userAgent;
+    var msie = ua.indexOf("MSIE ");
+
+    if (msie < 0) // If NOT Internet Explorer
+    {
+        lazyload();
+    }
 
 });
