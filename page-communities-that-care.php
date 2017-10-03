@@ -1,7 +1,7 @@
 <?php
 	$meta = '';
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/socialwork.css' type='text/css' media='all' />";
-	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/lazyload.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/socialwork.min.js' type='text/javascript'></script>";
+	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/socialwork.min.js' type='text/javascript'></script>";
 	$storyCodes = 'ESIEND';
 	$storyAppeal = 'Your support of students like Stephan Blount and programs like Communities That Care propels our global community forward, giving all children the chance to reach their fullest potential.';
 	get_header( "campaign-v2" );
@@ -46,7 +46,7 @@
 			<div class="text">
 				<h2>Stephan Blount</h2>
 				<p>
-					Master’s Candidate,<br />
+					Master’s candidate,<br />
 					School of Social Work
 				</p>
 			</div>
@@ -70,14 +70,14 @@
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
 						<h3>How does Communities in Action bring about change?</h3>
-						<p>By partnering with leaders like Therapeutic Health Services’ Aaron Parker who take the evidence-based programming of Communities in Action and apply it to their organizations. Parker takes it one step further: A longtime Little League coach, he’s using Communities in Action principles to help his team both on the field and off.</p>
+						<p>Little League coach Aaron Parker is using Communities in Action principles to help his team succeed both on the field and off.</p>
 						<p>
 							<a data-lity href="https://www.youtube.com/embed/3DvGGqEh0ug?autoplay=1&rel=0&showinfo=0">
 								<svg xmlns="http://www.w3.org/2000/svg" width="75.649" height="75.625" viewBox="0 0 75.649 75.625">
 									<circle fill="none" stroke="#FFF" stroke-width="4.649" stroke-miterlimit="10" cx="37.785" cy="37.822" r="34.703"/>
 									<path fill="#FFF" d="M25.88 19.814l32.885 18.008-32.886 18.01"/>
 								</svg>
-								<span>Watch video</span>
+								<span>See his story</span>
 							</a>
 						</p>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
@@ -115,22 +115,22 @@
 				<div class="row">
 					<div class="col-md-5 col-md-offset-1 two-column-copy-left">
 						<p>Communities in Action began in 2013, when more than 2,300 students in grades six, eight, 10 and 12 responded to a survey about the challenges in their daily lives. Like the data from Communities That Care, the results showed that the students faced bullying, fighting, drug use and depression.</p>
-						<p>Margaret Spearmon, Ph.D., chief officer of Community Engagement and Diversity at the School of Social Work, oversees Communities in Action with project manager Vaughnetta J. Barton, M.S.W. Their goal is to help communities use data about their youth to make informed decisions on how to meet kids’ needs — and develop a plan of action to meet those needs. While the communities drive the plan, local organizations and schools put it in play.</p>
+						<p>Margaret Spearmon, chief officer of community engagement and diversity at the School of Social Work, oversees Communities in Action with project manager Vaughnetta J. Barton. Their goal is to help communities use data about their youth to make informed decisions on how to meet kids’ needs — and develop a plan of action to meet those needs. While the communities drive the plan, local organizations and schools put it in play.</p>
 					</div><!-- .col-md-5 .col-md-offset-1 .two-column-copy-left -->
 					<div class="col-md-5 two-column-copy-right">
 						<div class="pull-quote">
 							<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/MargaretSpearmon.png" alt="Photograph of Margaret Spearmon, Ph.D." class="img-inset pull-left" />
 							<p class="meta">
-								<span class="name">Margaret Spearmon</span><br />
+								<span class="name">Margaret Spearmon, Ph.D.</span><br />
 								<span class="title">Chief Officer of Community Engagement and Diversity, School of Social Work</span>
 							</p>
 							<div class="clearfix"></div>
-							<p class="quote">“The most exciting part about partnering with the UW to implement Communities in Action has been having the opportunity to work with knowledgeable, creative and talented partners who are committed to excellence in promoting healthy youth development through prevention programs.”</p>
+							<p class="quote">“The most exciting part about partnering with the UW has been the opportunity to work with knowledgeable, creative and talented partners who are committed to excellence in promoting healthy youth development through prevention programs.”</p>
 						</div><!-- .pull-quote -->
 						<div class="pull-quote">
 							<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/VaughnettaBarton.png" alt="Photograph of Vaughnetta Barton, M.S.W." class="img-inset pull-left" />
 							<p class="meta">
-								<span class="name">Vaughnetta Barton</span><br />
+								<span class="name">Vaughnetta Barton, M.S.W.</span><br />
 								<span class="title">Project Manager, Communities in Action, School of Social Work</span>
 							</p>
 							<div class="clearfix"></div>
@@ -147,7 +147,7 @@
 							<p class="quote">I really enjoyed watching the students help each other. When we led games or discussions, students were always willing to support their classmates in understanding the material at hand.</p>
 							<cite>
 								<p>
-									<span>Keley Pascoe</span><br />
+									<span>Kelley Pascoe</span><br />
 									Master’s candidate,<br />
 									School of Social Work
 								</p>
@@ -209,7 +209,7 @@
 					<div class="col-md-10 col-md-offset-1 copy notop">
 						<h3>A community leader’s perspective</h3>
 						<iframe width="1280" height="720" src="https://www.youtube.com/embed/9CTe-yBWu_Y?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-						<p class="caption">Edith Elion, ’74, ’77, is on the board leadership workgroup for Communities in Action, and she is the executive director of Atlantic Street Center.</p>
+						<p class="caption">Edith Elion, ’74, ’77 </br>Member, Communities in Action Board Leadership Workgroup </br>Executive Director, Atlantic Street Center</p>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy .notop -->
 				</div><!-- .row -->
 				<div class="row">
@@ -224,21 +224,21 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
 						<h3 class="fancypants">Youth whose communities participate in Communities That Care are less likely to engage in risky behaviors.</h3>
-						<!-- <p>Community Youth Development Study, Month 20XX</p> -->
+						<p class="caption fancy">*Archives of Pediatrics and Adolescent Medicine, 2009</p>
 					</div><!-- .col-md-8 .col-md-offset-2 -->
 				</div><!-- .row -->
 				<div class="row row-purple">
 					<div class="col-xs-3 col-sm-3 col-md-3">
-						<img data-src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-01.gif" alt="25% less likely to start engaging in crimes" class="img-responsive lazyload" />
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-01.gif" alt="25% less likely to start engaging in crimes" class="img-responsive lazyload" />
 					</div><!-- .col-xs-3 .col-sm-3  .col-md-3 -->
 					<div class="col-xs-3 col-sm-3 col-md-3">
-						<img data-src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-02.gif" alt="32% less likely to start drinking alcohol" class="img-responsive lazyload" />
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-02.gif" alt="32% less likely to start drinking alcohol" class="img-responsive lazyload" />
 					</div><!-- .col-xs-3 .col-sm-3 .col-md-3 -->
 					<div class="col-xs-3 col-sm-3 col-md-3">
-						<img data-src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-03.gif" alt="33% less likely to start smoking cigarettes" class="img-responsive lazyload" />
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-03.gif" alt="33% less likely to start smoking cigarettes" class="img-responsive lazyload" />
 					</div><!-- .col-xs-3 .col-sm-3 .col-md-3 -->
 					<div class="col-xs-3 col-sm-3 col-md-3">
-						<img data-src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-04.gif" alt="37 less likely to binge-drink" class="img-responsive lazyload" />
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-04.gif" alt="37 less likely to binge-drink" class="img-responsive lazyload" />
 					</div><!-- .col-xs-3 .col-sm-3 .col-md-3 -->
 				</div><!-- .row -->
 			<div class="container">
@@ -249,8 +249,8 @@
 						<p>It’s clear that the model works. In the years since CTC was first implemented, numerous scientific studies have shown just how effective it is. Data from one CTC model shows that youth who participated in the program were 25 to 37 percent less likely to have health and behavior problems like smoking, drug and alcohol use, or delinquency.</p>
 						<p>In addition to improving lives, the program also offers significant cost savings: For every dollar invested in CTC, $5.30 is returned in the form of lower substance abuse and delinquency costs.</p>
 						<p class="text-center"><img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-05.gif" alt="$1 invested in the CTC program equals $5.31 in savings for community health" class="img-responsive center-block" /></p>
-						<p class="caption">*Archives of Pediatrics and Adolescent Medicine, 2009</p>
-						<p>Alongside the valuable partnerships with community members, a big part of the success of CTC and Communities in Action has been student support from the Excellence in Social Impact Scholarship. Blount, Agyemang and Pascoe all received scholarships from the scholarship fund, which was established in 2016 to help reduce the debt load of social work students. The fund is transforming the school’s ability to prepare highly gifted students to lead, innovate and serve in local, national and global communities.</p>
+						<p class="caption">*Washington State Institute for Public Policy, May 2017</p>
+						<p>Alongside the valuable partnerships with community members, a big part of the success of CTC and Communities in Action has been student support from the Excellence in Social Impact Scholarship. Blount, Agyemang and Pascoe all received scholarships from this fund, which was established in 2016 to help reduce the debt load of social work students. The fund is transforming the school’s ability to prepare highly gifted students to lead, innovate and serve in local, national and global communities.</p>
 						<p>For Blount, this financial support has meant that he can focus time and energy on his studies and the young students he works with. Even more important, it has helped him explore the career he knows he was meant to pursue. “I have always been set on doing some sort of human services or social work,” he says. “I don’t see myself doing anything else.”</p>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 				</div><!-- .row -->
