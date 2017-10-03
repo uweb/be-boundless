@@ -830,6 +830,89 @@
 	// }
 
 
+/***********************
+ * Baseball Play Btn *
+ ***********************/
+	a.play {
+        position: relative;
+        color: @purple;
+        font-family: @uni;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 34px;
+        border-bottom: none;
+        padding: 14px 150px 13px 10px;
+        display: inline-block;
+        line-height: 1.1;
+        -webkit-font-smoothing: antialiased;
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            opacity: .8;
+        }
+        &:after {
+            background: url("@{img}/sprite.svg") no-repeat -79px -504px rgba(0,0,0,0);
+            width: 101px;
+            height: 95px;
+            bottom: -18px;
+            right: 0;
+            opacity: .8;
+            .transition(all .1s linear);
+        }
+        &:focus,
+        &:active,
+        &:hover {
+            &:after {
+                .scale(1.1,1.1);
+            }
+        }
+        svg {
+            .animation(blinker 1.2s linear infinite);
+            margin-left: -2px;
+        }
+        &:before {
+            background: url("@{img}/sprite.svg") no-repeat 9px -445px rgba(0,0,0,0);
+            width: 52px;
+            height: 145px;
+            bottom: -31px;
+            right: 100px;
+            opacity: .8;
+        }
+        &:focus,
+        &:active {                
+            outline: 15px solid rgba(183,165,122,0.4);
+        }
+        &:hover {                
+            outline: 15px solid rgba(183,165,122,0.2);
+        }
+    }
+    p.play-container {
+    	text-align: right;
+    	margin-right: 50px;
+    }
+	@media(max-width:768px) {
+        a.play {
+            display: inline-block;
+            padding: 14px 68px 13px 0;
+            font-size: 20px;
+            &:after {
+                .scale(.5,.5);
+                transform-origin: 0 center;
+                bottom: -20px;
+                right: -52px;
+            }
+            &:before {
+                right: 44px;
+                bottom: -70px;
+            }
+        }
+    }
+    @media @desktop-up {
+    	#video {
+    		height: 600px;
+    	}
+    }
 
 /******
 	@media @phone-only{}

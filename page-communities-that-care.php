@@ -65,25 +65,28 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block white -->
+
+
+
 		<section id="video" class="text-block">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
 						<h3>How does Communities in Action bring about change?</h3>
 						<p>Little League coach Aaron Parker is using Communities in Action principles to help his team succeed both on the field and off.</p>
-						<p>
-							<a data-lity href="https://www.youtube.com/embed/3DvGGqEh0ug?autoplay=1&rel=0&showinfo=0">
-								<svg xmlns="http://www.w3.org/2000/svg" width="75.649" height="75.625" viewBox="0 0 75.649 75.625">
-									<circle fill="none" stroke="#FFF" stroke-width="4.649" stroke-miterlimit="10" cx="37.785" cy="37.822" r="34.703"/>
-									<path fill="#FFF" d="M25.88 19.814l32.885 18.008-32.886 18.01"/>
-								</svg>
-								<span>See his story</span>
+						<p class="play-container">
+							<a data-lity class="play" href="https://www.youtube.com/embed/3DvGGqEh0ug?autoplay=1&rel=0&showinfo=0">
+								See his story 
+								<svg aria-hidden="true" x="0px" y="0px" width="14px" height="3px" viewBox="0 0 14 3" enable-background="new 0 0 14 3" xml:space="preserve"><rect fill="#4b2e83" width="14" height="3"/></svg>
 							</a>
 						</p>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- #video .text-block .white -->
+
+
+
 		<section class="slides">
 			<div id="slide-1" class="slide"></div>
 			<div id="slide-2" class="slide"></div>
