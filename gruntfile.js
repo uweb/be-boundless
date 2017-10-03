@@ -55,6 +55,7 @@ module.exports = function(grunt) {
           //'immersive-stories/js/environment.js',
           'immersive-stories/js/socialwork.js',
           'immersive-stories/js/pharmacy.js',
+          'immersive-stories/js/lovejoy.js',
           'campaign/js/main.js',
           'immersive-stories/js/education-map.js',
           'https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js',
@@ -204,8 +205,13 @@ module.exports = function(grunt) {
               'immersive-stories/js/slick.js',
               'immersive-stories/js/pharmacy.js',
           ],
+          'immersive-stories/js/lovejoy.min.js': [
+            'immersive-stories/js/common.js',
+            'immersive-stories/js/lity.js',
+            'immersive-stories/js/lovejoy.js',
+          ],
           'campaign/js/main.min.js': [
-              'campaign/js/main.js',
+            'campaign/js/main.js',
           ],
           // Commented out to speed up Grunt / Add back in to remove files from library
           'campaign/js/animationLibraries.min.js': ['<%= concat.dist.animationLibraries %>'],
@@ -272,6 +278,7 @@ module.exports = function(grunt) {
                 'immersive-stories/css/environment.css': 'immersive-stories/less/environment.less',
                 'immersive-stories/css/socialwork.css': 'immersive-stories/less/socialwork.less',
                 'immersive-stories/css/pharmacy.css': 'immersive-stories/less/pharmacy.less',
+                'immersive-stories/css/lovejoy.css': 'immersive-stories/less/lovejoy.less',
                 'campaign/css/campaign-style.css': 'campaign/**/*.less',
                 'campaign/css/header.css': 'campaign/less/header.less',
                 'campaign/css/campaignv2-style.css': 'campaign/less/campaignv2-style.less',

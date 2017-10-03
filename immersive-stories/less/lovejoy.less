@@ -1,0 +1,190 @@
+/**********************************************
+ * Importing from UW2014 and other immersives *
+ **********************************************/
+
+ @import "../../themes/uw-2014/less/uw.variables.less";
+ @import "../../themes/uw-2014/less/flat/mixins.less";
+ @import "../../immersive-stories/less/text-block-new.less";
+ @import "../../immersive-stories/less/button.less";
+ @import "../../immersive-stories/less/common.less";
+ @import "../../immersive-stories/less/queries.less";
+ @import "../../immersive-stories/less/lity.less";
+ @import "../../immersive-stories/less/slideshow.less";
+ 
+ @img: "../../immersive-stories/img";
+ @lovejoy: "../../immersive-stories/img/lovejoy";
+ 
+ 
+ 
+ /***************************************************
+ * Namespacing to prevent bleed over to /boundless *
+ ***************************************************/
+ 
+html{
+	margin:0;
+	padding:0;
+	height:100%;
+}
+#immersive-body {
+	overflow: hidden;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		font-family: @headline;
+		font-weight: @ultra;
+	}
+
+}
+ 
+ 
+ 
+ /*******************************
+ * Intro and associated styles *
+ *******************************/
+.intro {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: calc(~"103vh - 171px");
+	background-image:url("@{lovejoy}/fpo.png");
+	.background-cover(cover);
+	background-position: center center;
+	text-align:left;
+	color:white;
+	z-index: -1;
+	// #intro-text{
+	// 	width:51%;
+	// 	left:22px;
+	// }
+
+	h1 {
+		text-transform: uppercase;
+		line-height: 1.1;
+		font-size: 31px;
+		text-shadow: 0px 0px 3px rgba(37, 37, 37, 0.65);
+	}
+
+	p{
+		text-align:left;
+		color:white;
+		font-weight:bold;
+		text-shadow: 0px 0px 3px rgba(37, 37, 37, 0.65);
+	}
+
+	.intro-body {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 100%;
+		margin-top: -200px;
+	}
+
+	@media @phone-only {
+		background-image:url("@{lovejoy}/fpo.png");
+		width:100%;
+		height:300px;
+		background-position: right center;
+
+		#intro-text{
+			width:100%;
+			left:0;
+			padding:0 30px;
+		}
+
+		.intro-body {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			margin-top: 0;
+			.translate(0, -50%);
+		}
+
+		h1{
+			font-size:1em;
+			text-shadow: 1px 1px #333;
+		}
+
+		p{
+			line-height: 1.4;
+			font-size: .65em;
+			text-shadow: 1px 1px #333;
+		}
+
+	}
+
+	@media (max-width: 500px) {
+		.intro-body {
+			.col-xs-8 {
+				width: 85%;
+			}
+		}
+		.scrollit{
+			display:none;
+		}
+	}
+
+	@media @tablet-portait-only {
+		.intro-body {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			margin-top: 0;
+			.translate(0,
+			-50%);
+		}
+
+		p {
+			line-height: 1.4;
+		}
+	}
+
+	@media @tablet-landscape-up {
+		h1 {
+			font-size: 4.5vw;
+		}
+	}
+}
+
+/***************
+ * Text blocks *
+ ***************/
+#video{
+	height:30vw;
+	background-color:#ccc;
+	a{
+		margin-top:12vw;
+		text-align:center;
+	}
+}
+.text-block.black{
+	background-color:black;
+	color:white;
+
+	p{
+		color:white;
+	}
+}
+
+
+
+/*
+@media(min-width:1200px){}
+@media(min-width:992px) and (max-width:1200px){}
+@media(min-width:768px) and (max-width:992px){}
+@media(max-width:768px){}
+
+@media @phone-only{}
+@media (max-width: 500px){}
+@media @tablet-portrait-up{}
+@media @tablet-portait-only{}
+@media @tablet-landscape-up{}
+@media @tablet-landscape-only{}
+@media @desktop-up{}
+@media @desktop-only{}
+@media @big-desktop-up{}
+*/
