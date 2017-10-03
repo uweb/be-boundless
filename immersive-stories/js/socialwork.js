@@ -14,6 +14,16 @@ $(function(){
         introSW.update(true);
     });
 
+     var introSWVid = new ScrollMagic.Scene({
+      triggerElement: '#intro-vid',
+      triggerHook: 1,
+      duration: '100%',
+    })
+    .on('enter',function(){
+      $('video').get(0).play()
+    })
+    .addTo(controllerSW);
+
 	// Parallax photos
 	var aniBlount = new TimelineMax ()
 		.add([
@@ -73,6 +83,7 @@ $(function(){
 		duration:2000
 	})
 	.setPin('.slides')
+	//.setPin('#video')
 	.addTo(controllerSW)
 
 	// scene used to fade the images
