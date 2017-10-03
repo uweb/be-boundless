@@ -819,15 +819,64 @@
  * Youtube Custom Iframe *
  ***********************/
 
-	// .youtube-container {
-	// 	.background-cover(cover);
-	// 	background-image: url("@{socialwork}/edith.png");
-	// 	background-position: center center;
-	// 	position: relative;
-	// 	.youtube-caption {
-	// 		with
-	// 	}
-	// }
+	.youtube-container {
+		.background-cover(cover);
+		background-image: url("@{socialwork}/edith.png");
+		background-position: center center;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		overflow: visible;
+		cursor: pointer;
+		iframe {
+			margin: 0;
+			z-index: -1;
+			&.playing {
+				z-index: 1;
+			}
+		}
+		.youtube-caption {
+			position: absolute;
+			right: 15px;
+			width: 45%;
+			p.h3 {
+				color: white;
+			}
+			p.small {
+				color: @purple;
+				margin-left: 100px;
+				span {
+					font-weight: 600;
+				}
+				&:before {
+					content: '';
+					position: absolute;
+					background: url("@{img}/sprite.svg") no-repeat -79px -504px rgba(0,0,0,0);
+		            width: 101px;
+		            height: 95px;
+		            bottom: 22px;
+    				left: -15px;
+		            opacity: .8;
+		            .transition(all .1s linear);
+				}
+			}
+		}
+		.youtube-caption:hover {
+			cursor: pointer;
+			p.small:before {
+				content: '';
+				position: absolute;
+				background: url("@{img}/sprite.svg") no-repeat -79px -415px rgba(0,0,0,0);
+	            width: 101px;
+	            height: 95px;
+	            bottom: 22px;
+				left: -15px;
+	            opacity: .8;
+	            .transition(all .1s linear);
+			}
+		}
+	}
 
 
 /***********************

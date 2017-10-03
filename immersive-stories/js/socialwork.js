@@ -121,9 +121,17 @@ $(function(){
 	var ua = window.navigator.userAgent;
     var msie = ua.indexOf("MSIE ");
 
-    if (msie < 0) // If NOT Internet Explorer
-    {
-        lazyload();
-    }
+    // if (msie < 0) // If NOT Internet Explorer
+    // {
+    //     lazyload();
+    // }
+
+    //play youtube video
+    $('.youtube-caption').on('click', function(event){
+    	event.stopPropagation();
+    	var iframe = $(this).siblings('iframe').get(0);
+    	$(iframe).toggleClass("playing");
+    	$(iframe).trigger("click");
+    });
 
 });

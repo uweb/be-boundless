@@ -214,8 +214,8 @@
 						<div class="youtube-container">
 							<iframe width="1280" height="720" src="https://www.youtube.com/embed/9CTe-yBWu_Y?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 							<div class="youtube-caption">
-								<p class="big">How does Communities in Action help local nonprofits?</p>
-								<p class="small">Edith Elion, ’74, ’77 </br>Member, Communities in Action Board Leadership Workgroup </br>Executive Director, Atlantic Street Center</p>
+								<p class="h3">How does Communities in Action help local nonprofits?</p>
+								<p class="small"><span>Edith Elion, ’74, ’77 </span></br>Member, Communities in Action Board Leadership Workgroup </br>Executive Director, Atlantic Street Center</p>
 							</div>
 						</div>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy .notop -->
