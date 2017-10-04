@@ -237,16 +237,16 @@
 				</div><!-- .row -->
 				<div class="row row-purple">
 					<div class="col-xs-3 col-sm-3 col-md-3">
-						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-01-1.gif" alt="25% less likely to start engaging in crimes" class="img-responsive lazyload" />
+						<img data-src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-01-1.gif" src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-01-1.gif" alt="25% less likely to start engaging in crimes" class="img-responsive lazyload" />
 					</div><!-- .col-xs-3 .col-sm-3  .col-md-3 -->
 					<div class="col-xs-3 col-sm-3 col-md-3">
-						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-02-1.gif" alt="32% less likely to start drinking alcohol" class="img-responsive lazyload" />
+						<img data-src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-02-1.gif" src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-02-1.gif" alt="32% less likely to start drinking alcohol" class="img-responsive lazyload" />
 					</div><!-- .col-xs-3 .col-sm-3 .col-md-3 -->
 					<div class="col-xs-3 col-sm-3 col-md-3">
-						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-03-1.gif" alt="33% less likely to start smoking cigarettes" class="img-responsive lazyload" />
+						<img data-src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-03-1.gif" src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-03-1.gif" alt="33% less likely to start smoking cigarettes" class="img-responsive lazyload" />
 					</div><!-- .col-xs-3 .col-sm-3 .col-md-3 -->
 					<div class="col-xs-3 col-sm-3 col-md-3">
-						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-04-1.gif" alt="37 less likely to binge-drink" class="img-responsive lazyload" />
+						<img data-src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-04-1.gif" src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-04-1.gif" alt="37 less likely to binge-drink" class="img-responsive lazyload" />
 					</div><!-- .col-xs-3 .col-sm-3 .col-md-3 -->
 				</div><!-- .row -->
 			<div class="container">
@@ -256,7 +256,7 @@
 						<p>“I’m just implementing what the stakeholders have chosen,” he says. “They’re the experts on what they need.”</p>
 						<p>It’s clear that the model works. In the years since CTC was first implemented, numerous scientific studies have shown just how effective it is. Data from one CTC model shows that youth who participated in the program were 25 to 37 percent less likely to have health and behavior problems like smoking, drug and alcohol use, or delinquency.</p>
 						<p>In addition to improving lives, the program also offers significant cost savings: For every dollar invested in CTC, $5.30 is returned in the form of lower substance abuse and delinquency costs.</p>
-						<p class="text-center"><img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-05.gif" alt="$1 invested in the CTC program equals $5.31 in savings for community health" class="img-responsive center-block" /></p>
+						<p class="text-center"><img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-05-1.gif" alt="$1 invested in the CTC program equals $5.31 in savings for community health" class="img-responsive center-block" /></p>
 						<p class="caption">*Washington State Institute for Public Policy, May 2017</p>
 						<p>Alongside the valuable partnerships with community members, a big part of the success of CTC and Communities in Action has been student support from the Excellence in Social Impact Scholarship. Blount, Agyemang and Pascoe all received scholarships from this fund, which was established in 2016 to help reduce the debt load of social work students. The fund is transforming the school’s ability to prepare highly gifted students to lead, innovate and serve in local, national and global communities.</p>
 						<p>For Blount, this financial support has meant that he can focus time and energy on his studies and the young students he works with. Even more important, it has helped him explore the career he knows he was meant to pursue. “I have always been set on doing some sort of human services or social work,” he says. “I don’t see myself doing anything else.”</p>
