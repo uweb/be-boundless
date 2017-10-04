@@ -75,47 +75,47 @@ $(function(){
 	// 	.addTo(controllerSW);
 
 	// Slideshow
-	var ani2 = TweenMax.to('#slide-2', 1, {autoAlpha: 1});
-	var ani3 = TweenMax.to('#slide-3', 1, {autoAlpha: 1});
-	var ani4 = TweenMax.to('#slide-4', 1, {autoAlpha: 1});
+	// var ani2 = TweenMax.to('#slide-2', 1, {autoAlpha: 1});
+	// var ani3 = TweenMax.to('#slide-3', 1, {autoAlpha: 1});
+	// var ani4 = TweenMax.to('#slide-4', 1, {autoAlpha: 1});
 
 	// scene used to pin the container
-	var pinScene = new ScrollMagic.Scene({
-		triggerHook: 0,
-		triggerElement: '.slides',
-		duration:2000
-	})
-	.setPin('.slides')
-	//.setPin('#video')
-	.addTo(controllerSW)
+	// var pinScene = new ScrollMagic.Scene({
+	// 	triggerHook: 0,
+	// 	triggerElement: '.slides',
+	// 	duration:2000
+	// })
+	// .setPin('.slides')
+	// //.setPin('#video')
+	// .addTo(controllerSW)
 
 	// scene used to fade the images
-	var slide2 = new ScrollMagic.Scene({
-		triggerHook: 0,
-		triggerElement: '.slides',
-		offset: 500,
-		duration: 100
-	})
-	.setTween(ani2)
-	.addTo(controllerSW)
+	// var slide2 = new ScrollMagic.Scene({
+	// 	triggerHook: 0,
+	// 	triggerElement: '.slides',
+	// 	offset: 500,
+	// 	duration: 100
+	// })
+	// .setTween(ani2)
+	// .addTo(controllerSW)
 
-	var slide3 = new ScrollMagic.Scene({
-		triggerHook: 0,
-		triggerElement: '.slides',
-		offset: 1000,
-		duration: 100
-	})
-	.setTween(ani3)
-	.addTo(controllerSW)
+	// var slide3 = new ScrollMagic.Scene({
+	// 	triggerHook: 0,
+	// 	triggerElement: '.slides',
+	// 	offset: 1000,
+	// 	duration: 100
+	// })
+	// .setTween(ani3)
+	// .addTo(controllerSW)
 
-	var slide4 = new ScrollMagic.Scene({
-		triggerHook: 0,
-		triggerElement: '.slides',
-		offset: 1500,
-		duration: 100
-	})
-	.setTween(ani4)
-	.addTo(controllerSW)
+	// var slide4 = new ScrollMagic.Scene({
+	// 	triggerHook: 0,
+	// 	triggerElement: '.slides',
+	// 	offset: 1500,
+	// 	duration: 100
+	// })
+	// .setTween(ani4)
+	// .addTo(controllerSW)
 
 	// lazyloading (not IE) in 3... 2... 1...
 	var ua = window.navigator.userAgent;
@@ -131,7 +131,8 @@ $(function(){
     	event.stopPropagation();
     	var iframe = $(this).siblings('iframe').get(0);
     	$(iframe).toggleClass("playing");
-    	$(iframe).trigger("click");
+    	$(iframe).attr('src', $(iframe, parent).attr('src') + '&autoplay=1');
+    	//$(iframe).trigger("click");
     });
 
 });

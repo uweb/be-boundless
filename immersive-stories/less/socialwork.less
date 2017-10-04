@@ -489,7 +489,8 @@
 
 		#slide-1{
 			opacity:1;
-			background-image:url("@{socialwork}/SocialDev_graphic-01.png");
+			background-image:url("@{socialwork}/SocialDev_graphic-static.png");
+			// background-image:url("@{socialwork}/SocialDev_graphic-01.png");
 		}
 
 		#slide-2{
@@ -875,6 +876,17 @@
 	            opacity: .8;
 	            .transition(all .1s linear);
 			}
+		}
+	}
+	@media @phone-only {
+		.youtube-container {
+			background: none;
+			iframe {
+				z-index: 1;
+			}
+			.youtube-caption {
+				display: none;
+	    	}
 		}
 	}
 

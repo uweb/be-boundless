@@ -10,7 +10,7 @@
 <div id="immersive-body">
 	<section class="intro" id="intro-vid">
 		<button id="pause">Pause</button>
-		<video autoplay muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/socialwork/poster.png' ?>" class="fullscreen-bg__video" id="full-bg-video">
+		<video autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/socialwork/poster.png' ?>" class="fullscreen-bg__video" id="full-bg-video">
 			<source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/socialwork/header.mp4' ?>" type="video/mp4">
 		</video>
 		<div class="intro-body">
@@ -89,9 +89,9 @@
 
 		<section class="slides">
 			<div id="slide-1" class="slide"></div>
-			<div id="slide-2" class="slide"></div>
+			<!-- <div id="slide-2" class="slide"></div>
 			<div id="slide-3" class="slide"></div>
-			<div id="slide-4" class="slide"></div>
+			<div id="slide-4" class="slide"></div> -->
 		</section><!-- .text-block .slides -->
 		<div class="sr-only">
 			<h3>It takes a team</h3>
@@ -183,7 +183,7 @@
 				<div class="row">
 					<div class="col-md-6 copy">
 						<h3>You can help today’s youth</h3>
-						<p>By supporting the efforts of students like Stephan Blount, you can help children access a brighter future for themselves and their communities.</p>
+						<p>By supporting students like Stephan, Kelley and Eric you can help children access a brighter future for themselves and their communities.</p>
 						<div class="visible-md-block visible-lg-block">
 							<div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="<?php echo $storyCodes; ?>" href="#giving-widget-promoted">Give now</a></span></div>
 							<button id="close-give">Close</button>
@@ -222,7 +222,7 @@
 				</div><!-- .row -->
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy notop">
-						<h2 class="h3">Healthy behaviors and hopeful futures</h2>
+						<h2 class="h3">Healthy behaviors and bright futures</h2>
 						<p>A critical component of the CTC program is that it must develop organically with the help of its stakeholders, rather than be imposed on them by an outside agency that thinks it knows best what a given group needs or wants.</p>
 						<p>In the case of Blount’s group, the agencies involved decided for themselves what outcomes would be most beneficial to the youth in their community, as well as how to get there. The children were then surveyed about what they perceived to be their biggest struggles. Only after that work was complete did the stakeholders choose what to tackle.</p>
 						<p>In the end, they determined that it was critical to help youth resist the lures of underage drinking and smoking — behaviors that put them at risk for delinquency — and instead opt to stay in school and choose peaceful behavior over violence.</p>
@@ -237,16 +237,16 @@
 				</div><!-- .row -->
 				<div class="row row-purple">
 					<div class="col-xs-3 col-sm-3 col-md-3">
-						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-01.gif" alt="25% less likely to start engaging in crimes" class="img-responsive lazyload" />
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-01-1.gif" alt="25% less likely to start engaging in crimes" class="img-responsive lazyload" />
 					</div><!-- .col-xs-3 .col-sm-3  .col-md-3 -->
 					<div class="col-xs-3 col-sm-3 col-md-3">
-						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-02.gif" alt="32% less likely to start drinking alcohol" class="img-responsive lazyload" />
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-02-1.gif" alt="32% less likely to start drinking alcohol" class="img-responsive lazyload" />
 					</div><!-- .col-xs-3 .col-sm-3 .col-md-3 -->
 					<div class="col-xs-3 col-sm-3 col-md-3">
-						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-03.gif" alt="33% less likely to start smoking cigarettes" class="img-responsive lazyload" />
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-03-1.gif" alt="33% less likely to start smoking cigarettes" class="img-responsive lazyload" />
 					</div><!-- .col-xs-3 .col-sm-3 .col-md-3 -->
 					<div class="col-xs-3 col-sm-3 col-md-3">
-						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-04.gif" alt="37 less likely to binge-drink" class="img-responsive lazyload" />
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-04-1.gif" alt="37 less likely to binge-drink" class="img-responsive lazyload" />
 					</div><!-- .col-xs-3 .col-sm-3 .col-md-3 -->
 				</div><!-- .row -->
 			<div class="container">
