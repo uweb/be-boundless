@@ -167,7 +167,7 @@
 		<section class="text-block">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-10 col-md-offset-1 copy">
+					<div class="col-md-10 col-md-offset-1 copy lessspaceforjj">
 						<div class="iframe-pic iframe-2">
 							<iframe width="1280" height="666" src="https://www.youtube.com/embed/-NZueNYSwnY?rel=0&amp;showinfo=0" title="How does kidney-on-a-chip work? Edward Kelly explains." frameborder="0" allowfullscreen></iframe>
 						</div>
@@ -183,6 +183,7 @@
 						<h2 class="h3">Kidney-on-a-chip heads to outer space</h2>
 						<p>What if you could speed up the development of kidney disease? What if you could see the water creeping toward your front door inch by inch?</p>
 						<p>In 2018, the UW team will have the opportunity to find out. They’re sending kidney-on-a-chip to the one place where time does speed up: outer space.</p>
+						<p>Thanks to federal grants from the <span data-tooltip="The four-year, $3 million grant (1 UG3 TR002178-01) was awarded by National Center for Advancing Translational Sciences (NCATS), part of the National Institutes of Health (NIH). The Center for the Advancement of Science in Space (CASIS), the organization tasked by NASA to manage the International Space Station U.S. National Laboratory, will contribute the space flight, time in station, and Space Station crew costs, for an in-kind total of $8 million. The content of this story is solely the responsibility of the authors and does not necessarily represent the official views of these agencies." data-tooltip-position="top">National Institutes of Health</span> and NASA’s <span data-tooltip="The four-year, $3 million grant (1 UG3 TR002178-01) was awarded by National Center for Advancing Translational Sciences (NCATS), part of the National Institutes of Health (NIH). The Center for the Advancement of Science in Space (CASIS), the organization tasked by NASA to manage the International Space Station U.S. National Laboratory, will contribute the space flight, time in station, and Space Station crew costs, for an in-kind total of $8 million. The content of this story is solely the responsibility of the authors and does not necessarily represent the official views of these agencies." data-tooltip-position="top">Center for the Advancement of Science in Space</span>, kidney-on-a-chip will be sent to the one place where time does speed up: outer space.</p>
 						<p>Microgravity acts as an accelerant, so kidney problems that take decades to develop on Earth need only weeks or months on the International Space Station, where astronauts will study the chips over the course of a few weeks.</p>
 						<p>“Use of the kidney-on-a chip here on Earth has already taught us a lot about kidney function and kidney diseases,” says Himmelfarb. “The opportunity to study how the loss of gravitational forces affects kidney cellular function has the potential to improve the health of people on Earth, as well as prevent medical complications that astronauts experience from weightlessness.”</p>
 						<blockquote>
