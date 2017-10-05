@@ -3,7 +3,7 @@
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/socialwork.css' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/socialwork.min.js' type='text/javascript'></script>";
 	$storyCodes = 'ESIEND';
-	$storyAppeal = 'Your support of students like Stephan Blount and programs like Communities That Care propels our global community forward, giving all children the chance to reach their fullest potential.';
+	$storyAppeal = 'Your support of students like Stephan Blount, Kelley Pascoe and Eric Agyemang and programs like Communities That Care propels our global community forward, giving all children the chance to reach their fullest potential.';
 	get_header( "campaign-v2" );
 ?>
 
@@ -36,7 +36,7 @@
 					<div class="col-md-10 col-md-offset-1 copy">
 						<p>Stephan Blount stands before a group of Madrona Elementary sixth-graders eager to be set free after sitting in classrooms all day. On this particular afternoon, he’s teaching these young students about the best and worst ways to communicate.</p>
 						<p>“Let’s try a game,” Blount tells them, and the children’s faces light up instantly. “Everyone get in a circle. I’m going to whisper something in the ear of one of you. I want you to whisper that to the next person. When it’s gone around the circle, we’ll check how close it is to what we started with.”</p>
-						<p>It may seem simple — but through games like this one, Blount, a second-year master’s candidate at the University of Washington School of Social Work, is working to change outcomes for youth through the principles of a program developed at the UW. It’s called Communities That Care (CTC), and its evidence-based content is now used around the world.</p>
+						<p>It may seem simple — but through games like telephone, Blount, a second-year master’s candidate at the University of Washington School of Social Work, is working to change outcomes for youth through the principles of a program developed at the UW. It’s called Communities That Care (CTC), and its evidence-based content is now used around the world.</p>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 				</div><!-- .row -->
 			</div><!-- .container -->
@@ -202,7 +202,7 @@
 				<div class="row">
 					<div class="col-md-6 copy">
 						<h3>You can help today’s youth</h3>
-						<p>By supporting students like Stephan, Kelley and Eric you can help children access a brighter future for themselves and their communities.</p>
+						<p>By supporting UW students like Stephan Blount, Kelley and Eric, you can help children access a brighter future for themselves and their communities.</p>
 						<div class="visible-md-block visible-lg-block">
 							<div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="<?php echo $storyCodes; ?>" href="#giving-widget-promoted">Give now</a></span></div>
 							<button id="close-give">Close</button>
@@ -242,7 +242,7 @@
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy notop">
 						<h2 class="h3">Healthy behaviors and bright futures</h2>
-						<p>A critical component of the CTC program is that it must develop organically with the help of its stakeholders, rather than be imposed on them by an outside agency that thinks it knows best what a given group needs or wants.</p>
+						<p>Fostering healthy, resilient communities is part of the UW’s <a href="http://www.washington.edu/populationhealth/">Population Health Initiative</a>, as well as a critical component of CTC. In particular, a major focus of the CTC program is that change must develop organically with the help of community stakeholders, rather than be imposed on them by an outside agency that thinks it knows best what a given group needs or wants.</p>
 						<p>In the case of Blount’s group, the agencies involved decided for themselves what outcomes would be most beneficial to the youth in their community, as well as how to get there. The children were then surveyed about what they perceived to be their biggest struggles. Only after that work was complete did the stakeholders choose what to tackle.</p>
 						<p>In the end, they determined that it was critical to help youth resist the lures of underage drinking and smoking — behaviors that put them at risk for delinquency — and instead opt to stay in school and choose peaceful behavior over violence.</p>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy .notop -->
@@ -274,11 +274,11 @@
 						<p>Because the CTC program is evidence-based and draws on the strengths of the community it serves, Blount says he’s confident the program will change the outcomes of the sixth-graders he works with.</p>
 						<p>“I’m just implementing what the stakeholders have chosen,” he says. “They’re the experts on what they need.”</p>
 						<p>It’s clear that the model works. In the years since CTC was first implemented, numerous scientific studies have shown just how effective it is. Data from one CTC model shows that youth who participated in the program were 25 to 37 percent less likely to have health and behavior problems like smoking, drug and alcohol use, or delinquency.</p>
-						<p>In addition to improving lives, the program also offers significant cost savings: For every dollar invested in CTC, $5.30 is returned in the form of lower substance abuse and delinquency costs.</p>
+						<p>In addition to improving lives, the program also offers significant cost savings: For every dollar invested in CTC, $5.31 is returned in the form of lower substance abuse and delinquency costs.</p>
 						<p class="text-center"><img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-05-1.gif" alt="$1 invested in the CTC program equals $5.31 in savings for community health" class="img-responsive center-block" /></p>
 						<p class="caption">*Washington State Institute for Public Policy, May 2017</p>
 						<p>Alongside the valuable partnerships with community members, a big part of the success of CTC and Communities in Action has been student support from the Excellence in Social Impact Scholarship. Blount, Agyemang and Pascoe all received scholarships from this fund, which was established in 2016 to help reduce the debt load of social work students. The fund is transforming the school’s ability to prepare highly gifted students to lead, innovate and serve in local, national and global communities.</p>
-						<p>For Blount, this financial support has meant that he can focus time and energy on his studies and the young students he works with. Even more important, it has helped him explore the career he knows he was meant to pursue. “I have always been set on doing some sort of human services or social work,” he says. “I don’t see myself doing anything else.”</p>
+						<p>For Blount, this financial support meant that he could focus time and energy on his studies and his students at Madrona Elementary. Even more important, it has helped him explore the career he knows he was meant to pursue. “I have always been set on doing some sort of human services or social work,” he says. “I don’t see myself doing anything else.”</p>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 				</div><!-- .row -->
 			</div><!-- .container -->
