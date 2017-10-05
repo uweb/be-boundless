@@ -41,7 +41,7 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block .start .white -->
-		<section class="text-block profile white">
+<!-- 		<section class="text-block profile white">
 			<div class="background"></div>
 			<div class="text">
 				<h2>Stephan Blount</h2>
@@ -52,11 +52,28 @@
 			</div>
 			<div id="blount-1" class="photograph"></div>
 			<div id="blount-2" class="photograph"></div>
-		  </section><!-- .profile .profile-1 -->
+		  </section> --><!-- .profile .profile-1 -->
+		  <section id="blount" class="text-block grey photo1">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 col-md-offset-1 two-column-copy-left">
+						<blockquote>
+							<cite>
+								<p>
+									<span>Stephan Blount</span><br />
+									Master’s candidate,<br />
+									School of Social Work
+								</p>
+							</cite>
+						</blockquote>
+					</div><!-- .col-md-5 .col-md-offset-1 .two-column-copy-left -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</section><!-- .text-block .grey -->
 		<section class="text-block white">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-10 col-md-offset-1 copy">
+					<div class="col-md-10 col-md-offset-1 copy reduced-top">
 						<h3>Changing futures, one student at a time</h3>
 						<p>For his social work practicum, Blount is helping implement Communities That Care principles through Communities in Action, a program where Seattle residents come together to increase protective factors and reduce risk factors to promote healthy child development.</p>
 						<p>Along with fellow UW master’s candidates Kelley Pascoe and Eric Agyemang, Blount is teaching students from schools in southeast and central Seattle.</p>
@@ -88,10 +105,12 @@
 
 
 		<section class="slides">
-			<div id="slide-1" class="slide"></div>
+			<!-- <div id="slide-1" class="slide"></div> -->
 			<!-- <div id="slide-2" class="slide"></div>
 			<div id="slide-3" class="slide"></div>
 			<div id="slide-4" class="slide"></div> -->
+			<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/SocialDev_graphic-static.png" aria-hidden class="img-responsive" />
+			<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/SocialDev_graphic-static-mobile.png" aria-hidden class="img-responsive mobile" />
 		</section><!-- .text-block .slides -->
 		<div class="sr-only">
 			<h3>It takes a team</h3>
@@ -199,7 +218,7 @@
 		<section class="text-block white">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-10 col-md-offset-1 copy">
+					<div class="col-md-10 col-md-offset-1 copy reduced-top no-bottom">
 						<h3>Inspired by his mother</h3>
 						<p>Communities That Care is close to Blount’s heart. He was born to a 16-year-old single mother in Anchorage, Alaska, and during his childhood they often relied on outside assistance to cope with the challenges of everyday life.</p>
 						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/mother.png" alt="Photograph of Stephen Bount's Mother" class="img-responsive pull-image" />
@@ -209,7 +228,7 @@
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 				</div><!-- .row -->
 				<div class="row">
-					<div class="col-md-10 col-md-offset-1 copy notop">
+					<div class="col-md-10 col-md-offset-1 copy notop no-bottom">
 						<h3>A community leader’s perspective</h3>
 						<div class="youtube-container">
 							<iframe width="1280" height="720" src="https://www.youtube.com/embed/9CTe-yBWu_Y?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -236,16 +255,16 @@
 					</div><!-- .col-md-8 .col-md-offset-2 -->
 				</div><!-- .row -->
 				<div class="row row-purple">
-					<div class="col-xs-3 col-sm-3 col-md-3">
+					<div class="col-xs-6 col-sm-3 col-md-3">
 						<img data-src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-01-1.gif" src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-01-1.gif" alt="25% less likely to start engaging in crimes" class="img-responsive lazyload" />
 					</div><!-- .col-xs-3 .col-sm-3  .col-md-3 -->
-					<div class="col-xs-3 col-sm-3 col-md-3">
+					<div class="col-xs-6 col-sm-3 col-md-3">
 						<img data-src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-02-1.gif" src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-02-1.gif" alt="32% less likely to start drinking alcohol" class="img-responsive lazyload" />
 					</div><!-- .col-xs-3 .col-sm-3 .col-md-3 -->
-					<div class="col-xs-3 col-sm-3 col-md-3">
+					<div class="col-xs-6 col-sm-3 col-md-3">
 						<img data-src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-03-1.gif" src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-03-1.gif" alt="33% less likely to start smoking cigarettes" class="img-responsive lazyload" />
 					</div><!-- .col-xs-3 .col-sm-3 .col-md-3 -->
-					<div class="col-xs-3 col-sm-3 col-md-3">
+					<div class="col-xs-6 col-sm-3 col-md-3">
 						<img data-src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-04-1.gif" src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-04-1.gif" alt="37 less likely to binge-drink" class="img-responsive lazyload" />
 					</div><!-- .col-xs-3 .col-sm-3 .col-md-3 -->
 				</div><!-- .row -->
