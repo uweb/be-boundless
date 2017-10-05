@@ -410,6 +410,7 @@ span.title{
 	}
 }
 .text-block.graphpaper-white{
+	margin-top:-10px;
 	background:#e7e5e4 url("@{pharmacy}/bkg-graphpaper-white.png") top center;
 	.background-cover(cover);
 }
@@ -523,8 +524,6 @@ span.title{
 		display: block;
 		position: absolute;
 		left:2px;
-		width:249px;
-		height:452px;
 		z-index: -1;
 		background:url("@{pharmacy}/bkg-satellite.png") top center no-repeat;
 	}
@@ -533,8 +532,6 @@ span.title{
 		position: absolute;
 		right:0;
 		bottom:40%;
-		width:259px;
-		height:561px;
 		z-index: -1;
 		background:url("@{pharmacy}/bkg-planet.png") top center no-repeat;
 	}
@@ -607,6 +604,48 @@ div.boundless-button:after{
 }
 .text-block .copy.lessspaceforjj{
 	padding:0 90px;
+}
+@media(min-width:1200px){
+	.text-block.graphpaper-black{
+		.satellite{
+			width:200px;
+			height:363px;
+			background-size:200px 363px;
+		}
+		.planet{
+			width:200px;
+			height:433px;
+			background-size:200px 433px;
+		}
+	}
+}
+@media(min-width:992px) and (max-width:1200px){
+	.text-block.graphpaper-black{
+		.satellite{
+			width:175px;
+			height:318px;
+			background-size:175px 318px;
+		}
+		.planet{
+			width:175px;
+			height:379px;
+			background-size:175px 379px;
+		}
+	}
+}
+@media(min-width:768px) and (max-width:992px){
+	.text-block.graphpaper-black{
+		.satellite{
+			width:135px;
+			height:245px;
+			background-size:135px 245px;
+		}
+		.planet{
+			width:135px;
+			height:292px;
+			background-size:135px 292px;
+		}
+	}
 }
 @media (max-width:768px){
 	.text-block.graphpaper-white.first{

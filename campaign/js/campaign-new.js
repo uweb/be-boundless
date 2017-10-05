@@ -97,20 +97,22 @@ console.log($storySlides)
 		//console.log($(this).find('a')[0].trigger)
 	});
 
-	$('section.campaign-excerpt').on('click', function(e) {
-		e.stopPropagation();
-		e.preventDefault();
-		if( $(this).find('.campaign-button').hasClass("video") ){
-			console.log('clicks')
-			$(this).find('a[data-lity]').trigger('click.lity');
-		} else {
-			$(this).find('.campaign-button').trigger('click');
-		}
-	});
+	// $('section.campaign-excerpt').on('click', function(e) {
+	// 	e.stopPropagation();
+	// 	e.preventDefault();
+	// 	if( $(this).find('.campaign-button').hasClass("video") ){
+	// 		console.log('camp button video click event');
+	// 		$(this).find('a[data-lity]').trigger('click.lity');
+	// 	} else {
+	// 		$(this).find('.campaign-button').trigger('click');
+	// 		console.log('camp button non-video click event');
+	// 	}
+	// });
 
 	$('a:not([data-lity]):not(".video")').on('click', function(e) {
 		e.stopPropagation();
 		this.click();
+		console.log('a not lity, not video click event');
 	});
 
 	
