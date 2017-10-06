@@ -220,26 +220,26 @@
 			background-color: #efece1;
 		}
 
-		.photograph {
-			background-repeat: no-repeat;
-			background-position: left top;
-			width: 65%;
-			height: 50vw;
-			max-height: 50vw;
-			position: absolute;
-			top: 0;
-			right: -60px;
-		}
-		#blount-1 {
-			.background-cover(cover);
-			background-image: url("@{socialwork}/blount-2.jpg");
-			background-position: center center;
-		}
-		#blount-2 {
-			.background-cover(cover);
-			background-image: url("@{socialwork}/blount-1.jpg");
-			background-position: center center;
-		}
+		// .photograph {
+		// 	background-repeat: no-repeat;
+		// 	background-position: left top;
+		// 	width: 65%;
+		// 	height: 50vw;
+		// 	max-height: 50vw;
+		// 	position: absolute;
+		// 	top: 0;
+		// 	right: -60px;
+		// }
+		// #blount-1 {
+		// 	.background-cover(cover);
+		// 	background-image: url("@{socialwork}/blount-2.jpg");
+		// 	background-position: center center;
+		// }
+		// #blount-2 {
+		// 	.background-cover(cover);
+		// 	background-image: url("@{socialwork}/blount-1.jpg");
+		// 	background-position: center center;
+		// }
 
 		.text {
 			margin: 5vw 5vw;
@@ -494,6 +494,7 @@
 		// }
 		img.mobile {
 			display: none;
+			margin-bottom: 30px;
 		}
 
 
@@ -546,39 +547,44 @@
 	#pascoe,
 	#agyemang,
 	#blount {
-		background-repeat: no-repeat;
-		background-position: center center;
+		//background-position: center center;
 		height: 350px;
 	}
-	#blount.photo1 {
-		.background-cover(cover);
-		background-image: url("@{socialwork}/blount-1.jpg");
-		background-position: 50% 30%;
-	}
-	#blount.photo1.photo2 {
+	#blount-1 {
 		.background-cover(cover);
 		background-image: url("@{socialwork}/blount-2.jpg");
 		background-position: 50% 30%;
+		background-repeat: no-repeat;
 	}
-	#pascoe.photo1 {
+	#blount-2 {
+		.background-cover(cover);
+		background-image: url("@{socialwork}/blount-1.jpg");
+		background-position: 50% 30%;
+		background-repeat: no-repeat;
+	}
+	#pascoe-1 {
 		.background-cover(cover);
 		background-image: url("@{socialwork}/pascoe-2.jpg");
 		background-position: center center;
+		background-repeat: no-repeat;
 	}
-	#pascoe.photo1.photo2 {
+	#pascoe-2 {
 		.background-cover(cover);
 		background-image: url("@{socialwork}/pascoe-1.jpg");
 		background-position: center center;
+		background-repeat: no-repeat;
 	}
-	#agyemang.photo1 {
-		.background-cover(cover);
-		background-image: url("@{socialwork}/agyemang-2.jpg");
-		background-position: 50% 15%;
-	}
-	#agyemang.photo1.photo2 {
+	#agyemang-1 {
 		.background-cover(cover);
 		background-image: url("@{socialwork}/agyemang-1.jpg");
-		background-position: 50% 15%;
+		background-position: 50% 30%;
+		background-repeat: no-repeat;
+	}
+	#agyemang-2 {
+		.background-cover(cover);
+		background-image: url("@{socialwork}/agyemang-2.jpg");
+		background-position: 50% 30%;
+		background-repeat: no-repeat;
 	}
 	#agyemang blockquote cite p {
 		text-align: right;
@@ -598,6 +604,13 @@
 		    	}
 		    }
 	    }
+	}
+	.photograph {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
 	}
 
 	@media @desktop-up {
@@ -635,8 +648,8 @@
 				margin-left: 0; 
 			}
 		}
-		#agyemang.photo1,
-		#agyemang.photo1.photo2 {
+		#agyemang-1,
+		#agyemang-2 {
 			background-position: 50% 30%;
 		}
 	}
@@ -808,6 +821,10 @@
 		margin: 0;
 	}
 
+	#gif5 {
+		margin-top: 50px;
+	}
+
 	.caption {
 		font-size: .75em;
 		text-align: center;
@@ -817,6 +834,9 @@
 		    top: 45px;
 		    position: relative;
 		    color: white;
+		}
+		&:not(.fancy){
+			margin-bottom: 50px;
 		}
 	}
 

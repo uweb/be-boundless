@@ -54,6 +54,8 @@
 			<div id="blount-2" class="photograph"></div>
 		  </section> --><!-- .profile .profile-1 -->
 		  <section id="blount" class="text-block grey photo1">
+			<div id="blount-1" class="photograph"></div>
+			<div id="blount-2" class="photograph"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-5 col-md-offset-1 two-column-copy-left">
@@ -122,7 +124,7 @@
 			<h4>Community</h4>
 			<p>Communities are emplowered when they connect with young people and provide meaningful opportunities for youth to thrive and flourish.</p>
 			<h4>Bonding</h4>
-			<p>Bonding &mdash; with other youth, coaches, teachers and family and community members &mdash; is teh magic that makes the social development strategy work, and it's what fosters lasting, healthy behaviors. Bonding is waht motivates young poeple to follow standards for healthy behaviors, and stengthens each step of the strategy.</p>
+			<p>Bonding &mdash; with other youth, coaches, teachers and family and community members &mdash; is the magic that makes the social development strategy work, and it's what fosters lasting, healthy behaviors. Bonding is waht motivates young poeple to follow standards for healthy behaviors, and stengthens each step of the strategy.</p>
 			<h4>Opportunities</h4>
 			<p>The social development strategy emphasizes the importance of providing real-world opportunities for young people so they can develop new skills.</p>
 			<h4>Skills</h4>
@@ -162,6 +164,8 @@
 			</div><!-- .container -->
 		</section><!-- .text-block white -->
 		<section id="pascoe" class="text-block grey photo1">
+			<div id="pascoe-1" class="photograph"></div>
+			<div id="pascoe-2" class="photograph"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-5 col-md-offset-1 two-column-copy-left">
@@ -179,24 +183,6 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block .grey -->
-		<section id="agyemang" class="text-block grey photo1">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-5 col-md-offset-6 two-column-copy-right">
-						<blockquote>
-							<p class="quote">Students have gained a lot of tools for decision-making and self-image, and this will go a long way toward helping them make good decisions in their daily lives and become responsible citizens.</p>
-							<cite>
-								<p>
-									<span>Eric Agyemang</span><br />
-									Master’s candidate,<br />
-									School of Social Work
-								</p>
-							</cite>
-						</blockquote>
-					</div><!-- .col-md-5 .two-column-copy-right -->
-				</div><!-- .row -->
-			</div><!-- .container -->
-		</section><!-- .text-block .grey .quote2 -->
 		<section class="text-block giving-widget-promoted">
 			<div class="container">
 				<div class="row">
@@ -215,6 +201,26 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block gold -->
+		<section id="agyemang" class="text-block grey photo1">
+			<div id="agyemang-1" class="photograph"></div>
+			<div id="agyemang-2" class="photograph"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 col-md-offset-6 two-column-copy-right">
+						<blockquote>
+							<p class="quote">Students have gained a lot of tools for decision-making and self-image, and this will go a long way toward helping them make good decisions in their daily lives and become responsible citizens.</p>
+							<cite>
+								<p>
+									<span>Eric Agyemang</span><br />
+									Master’s candidate,<br />
+									School of Social Work
+								</p>
+							</cite>
+						</blockquote>
+					</div><!-- .col-md-5 .two-column-copy-right -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</section><!-- .text-block .grey .quote2 -->
 		<section class="text-block white">
 			<div class="container">
 				<div class="row">
@@ -225,22 +231,7 @@
 						<p>“My mom was so young when she had me,” he says. “We had a lot of help from human service agencies while I was growing up. It taught me the importance of that type of work, and it gave me a lot of empathy for others facing similar challenges.”</p>
 						<p>It also gave him a direction in life: social work. To support himself while earning an undergraduate degree in human services at the University of Alaska, Blount took a job working in a group home for adults with developmental disabilities.</p>
 						<p>“It was just such cool work,” he says. “One resident at the group home was around my age. I could see how he became more independent when you gave him opportunities to do so.”</p>
-					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
-				</div><!-- .row -->
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1 copy notop no-bottom">
-						<h3>A community leader’s perspective</h3>
-						<div class="youtube-container">
-							<iframe width="1280" height="720" src="https://www.youtube.com/embed/9CTe-yBWu_Y?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-							<div class="youtube-caption">
-								<p class="h3">How does Communities in Action help local nonprofits?</p>
-								<p class="small"><span>Edith Elion, ’74, ’77 </span></br>Member, Communities in Action Board Leadership Workgroup </br>Executive Director, Atlantic Street Center</p>
-							</div>
-						</div>
-					</div><!-- .col-md-10 .col-md-offset-1 .copy .notop -->
-				</div><!-- .row -->
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1 copy notop">
+						<iframe width="1280" height="720" src="https://www.youtube.com/embed/RqxO42abHhc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 						<h2 class="h3">Healthy behaviors and bright futures</h2>
 						<p>Fostering healthy, resilient communities is part of the UW’s <a href="http://www.washington.edu/populationhealth/">Population Health Initiative</a>, as well as a critical component of CTC. In particular, a major focus of the CTC program is that change must develop organically with the help of community stakeholders, rather than be imposed on them by an outside agency that thinks it knows best what a given group needs or wants.</p>
 						<p>In the case of Blount’s group, the agencies involved decided for themselves what outcomes would be most beneficial to the youth in their community, as well as how to get there. The children were then surveyed about what they perceived to be their biggest struggles. Only after that work was complete did the stakeholders choose what to tackle.</p>
@@ -256,16 +247,16 @@
 				</div><!-- .row -->
 				<div class="row row-purple">
 					<div class="col-xs-6 col-sm-3 col-md-3">
-						<img data-src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-01-1.gif" src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-01-1.gif" alt="25% less likely to start engaging in crimes" class="img-responsive lazyload" />
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-01-1.gif" alt="25% less likely to start engaging in crimes" id="gif1" class="img-responsive" />
 					</div><!-- .col-xs-3 .col-sm-3  .col-md-3 -->
 					<div class="col-xs-6 col-sm-3 col-md-3">
-						<img data-src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-02-1.gif" src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-02-1.gif" alt="32% less likely to start drinking alcohol" class="img-responsive lazyload" />
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-02-1.gif" alt="32% less likely to start drinking alcohol" id="gif2" class="img-responsive" />
 					</div><!-- .col-xs-3 .col-sm-3 .col-md-3 -->
 					<div class="col-xs-6 col-sm-3 col-md-3">
-						<img data-src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-03-1.gif" src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-03-1.gif" alt="33% less likely to start smoking cigarettes" class="img-responsive lazyload" />
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-03-1.gif" alt="33% less likely to start smoking cigarettes" id="gif3" class="img-responsive" />
 					</div><!-- .col-xs-3 .col-sm-3 .col-md-3 -->
 					<div class="col-xs-6 col-sm-3 col-md-3">
-						<img data-src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-04-1.gif" src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-04-1.gif" alt="37 less likely to binge-drink" class="img-responsive lazyload" />
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-04-1.gif" alt="37 less likely to binge-drink" id="gif4" class="img-responsive" />
 					</div><!-- .col-xs-3 .col-sm-3 .col-md-3 -->
 				</div><!-- .row -->
 			<div class="container">
@@ -275,7 +266,7 @@
 						<p>“I’m just implementing what the stakeholders have chosen,” he says. “They’re the experts on what they need.”</p>
 						<p>It’s clear that the model works. In the years since CTC was first implemented, numerous scientific studies have shown just how effective it is. Data from one CTC model shows that youth who participated in the program were 25 to 37 percent less likely to have health and behavior problems like smoking, drug and alcohol use, or delinquency.</p>
 						<p>In addition to improving lives, the program also offers significant cost savings: For every dollar invested in CTC, $5.31 is returned in the form of lower substance abuse and delinquency costs.</p>
-						<p class="text-center"><img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-05-1.gif" alt="$1 invested in the CTC program equals $5.31 in savings for community health" class="img-responsive center-block" /></p>
+						<p class="text-center"><img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-05-1.gif" alt="$1 invested in the CTC program equals $5.31 in savings for community health" id="gif5" class="img-responsive center-block" /></p>
 						<p class="caption">*Washington State Institute for Public Policy, May 2017</p>
 						<p>Alongside the valuable partnerships with community members, a big part of the success of CTC and Communities in Action has been student support from the Excellence in Social Impact Scholarship. Blount, Agyemang and Pascoe all received scholarships from this fund, which was established in 2016 to help reduce the debt load of social work students. The fund is transforming the school’s ability to prepare highly gifted students to lead, innovate and serve in local, national and global communities.</p>
 						<p>For Blount, this financial support meant that he could focus time and energy on his studies and his students at Madrona Elementary. Even more important, it has helped him explore the career he knows he was meant to pursue. “I have always been set on doing some sort of human services or social work,” he says. “I don’t see myself doing anything else.”</p>
