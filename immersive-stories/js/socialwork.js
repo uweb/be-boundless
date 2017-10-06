@@ -129,15 +129,6 @@ $(function(){
 	// .setTween(ani4)
 	// .addTo(controllerSW)
 
-	// lazyloading (not IE) in 3... 2... 1...
-	var ua = window.navigator.userAgent;
-    var msie = ua.indexOf("MSIE ");
-
-    if (msie < 0) // If NOT Internet Explorer
-    {
-        lazyload();
-    }
-
     //play youtube video
     $('.youtube-caption').on('click', function(event){
     	event.stopPropagation();
@@ -146,5 +137,14 @@ $(function(){
     	$(iframe).attr('src', $(iframe, parent).attr('src') + '&autoplay=1');
     	//$(iframe).trigger("click");
     });
+
+    // lazyloading (not IE) in 3... 2... 1...
+	var ua = window.navigator.userAgent;
+    var msie = ua.indexOf("MSIE ");
+
+    if (msie < 0) // If NOT Internet Explorer
+    {
+        lazyload();
+    }
 
 });

@@ -251,7 +251,7 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
 						<h3 class="fancypants">Youth whose communities participate in Communities That Care are less likely to engage in risky behaviors.</h3>
-						<p class="caption fancy">*Archives of Pediatrics and Adolescent Medicine, 2009</p>
+						<p class="caption fancy"><a href="https://www.ncbi.nlm.nih.gov/pubmed/19736331">Archives of Pediatrics and Adolescent Medicine</a>, 2009</p>
 					</div><!-- .col-md-8 .col-md-offset-2 -->
 				</div><!-- .row -->
 				<div class="row row-purple">
