@@ -170,7 +170,7 @@
 				<div class="row">
 					<div class="col-md-5 col-md-offset-1 two-column-copy-left">
 						<blockquote>
-							<p class="quote">I really enjoyed watching the students help each other. When we led games or discussions, students were always willing to support their classmates in understanding the material at hand.</p>
+							<p class="quote">I really enjoyed watching the students help each other. When we led games or discussions, students were always willing to support their classmates in understanding the material at hand.<span></span></p>
 							<cite>
 								<p>
 									<span>Kelley Pascoe</span><br />
@@ -208,7 +208,7 @@
 				<div class="row">
 					<div class="col-md-5 col-md-offset-6 two-column-copy-right">
 						<blockquote>
-							<p class="quote">Students have gained a lot of tools for decision-making and self-image, and this will go a long way toward helping them make good decisions in their daily lives and become responsible citizens.</p>
+							<p class="quote">Students have gained a lot of tools for decision-making and self-image, and this will go a long way toward helping them make good decisions in their daily lives and become responsible citizens.<span></span></p>
 							<cite>
 								<p>
 									<span>Eric Agyemang</span><br />
