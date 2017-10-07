@@ -10,7 +10,7 @@
 <div id="immersive-body">
 	<section class="intro" id="intro-vid">
 		<button id="pause">Pause</button>
-		<video autoplay muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/socialwork/poster.png' ?>" class="fullscreen-bg__video" id="full-bg-video">
+		<video autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/socialwork/poster.png' ?>" class="fullscreen-bg__video" id="full-bg-video">
 			<source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/socialwork/header.mp4' ?>" type="video/mp4">
 		</video>
 		<div class="intro-body">
@@ -18,7 +18,7 @@
 				<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-1 col-md-offset-1 col-lg-offset-2" id='intro-text'>
 					<h1>Creating communities that care</h1>
 					<span class="udub-slant"><span></span></span>
-					<p>In communities across Seattle, students from the UW School of Social Work are dedicated to increasing young people’s chances of achieving success.</p>
+					<p>In central and southeast Seattle, students from the UW School of Social Work are joining with community leaders to increase young people’s chances of achieving success.</p>
 				</div><!-- .col-xs-8 .col-sm-8 .col-md-8 .col-lg-8 .col-xs-offset-1 .col-md-offset-1 .col-lg-offset-2 #intro-text -->
 			</div><!-- .row -->
 		</div><!-- .intro-body -->
@@ -77,7 +77,7 @@
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy reduced-top">
 						<h3>Changing futures, one student at a time</h3>
-						<p>For his social work practicum, Blount is helping implement Communities That Care principles through Communities in Action, a program where Seattle residents come together to increase protective factors and reduce risk factors to promote healthy child development.</p>
+						<p>For his social work practicum, Blount is helping implement Communities That Care principles through Communities in Action, a program where Seattle community-based organizations come together to increase protective factors and reduce risk factors to promote healthy child development.</p>
 						<p>Along with fellow UW master’s candidates Kelley Pascoe and Eric Agyemang, Blount is teaching students from schools in southeast and central Seattle.</p>
 						<p>“We’re working to deliver life skills training to middle schoolers,” Blount explains. “Our part began after a group of agencies came together to address things in their communities affecting their youth that they wanted to work through.”</p>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
@@ -188,7 +188,7 @@
 				<div class="row">
 					<div class="col-md-6 copy">
 						<h3>You can help today’s youth</h3>
-						<p>By supporting UW students like Stephan Blount, Kelley and Eric, you can help children access a brighter future for themselves and their communities.</p>
+						<p>By supporting UW students like Stephan, Kelley and Eric, you can help children access a brighter future for themselves and their communities.</p>
 						<div class="visible-md-block visible-lg-block">
 							<div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="<?php echo $storyCodes; ?>" href="#giving-widget-promoted">Give now</a></span></div>
 							<button id="close-give">Close</button>
@@ -233,9 +233,7 @@
 						<p>“It was just such cool work,” he says. “One resident at the group home was around my age. I could see how he became more independent when you gave him opportunities to do so.”</p>
 						<iframe width="1280" height="720" src="https://www.youtube.com/embed/RqxO42abHhc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 						<h2 class="h3">Healthy behaviors and bright futures</h2>
-						<p>Fostering healthy, resilient communities is part of the UW’s <a href="http://www.washington.edu/populationhealth/">Population Health Initiative</a>, as well as a critical component of CTC. In particular, a major focus of the CTC program is that change must develop organically with the help of community stakeholders, rather than be imposed on them by an outside agency that thinks it knows best what a given group needs or wants.</p>
-						<p>In the case of Blount’s group, the agencies involved decided for themselves what outcomes would be most beneficial to the youth in their community, as well as how to get there. The children were then surveyed about what they perceived to be their biggest struggles. Only after that work was complete did the stakeholders choose what to tackle.</p>
-						<p>In the end, they determined that it was critical to help youth resist the lures of underage drinking and smoking — behaviors that put them at risk for delinquency — and instead opt to stay in school and choose peaceful behavior over violence.</p>
+						<p>Fostering healthy, resilient communities is part of the UW’s <a href="http://www.washington.edu/populationhealth/">Population Health Initiative</a>, as well as a critical component of Communities That Care. In particular, a key tenet of the CTC program is that change must develop organically with the help of community stakeholders, rather than be imposed on them by an outside agency that thinks it knows best what a given group needs or wants.</p>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy .notop -->
 				</div><!-- .row -->
 			</div><!-- .container -->
@@ -268,7 +266,7 @@
 						<p>In addition to improving lives, the program also offers significant cost savings: For every dollar invested in CTC, $5.31 is returned in the form of lower substance abuse and delinquency costs.</p>
 						<p class="text-center"><img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/CTC-Communities-Illustration-05-1.gif" alt="$1 invested in the CTC program equals $5.31 in savings for community health" id="gif5" class="img-responsive center-block" /></p>
 						<p class="caption">*Washington State Institute for Public Policy, May 2017</p>
-						<p>Alongside the valuable partnerships with community members, a big part of the success of CTC and Communities in Action has been student support from the Excellence in Social Impact Scholarship. Blount, Agyemang and Pascoe all received scholarships from this fund, which was established in 2016 to help reduce the debt load of social work students. The fund is transforming the school’s ability to prepare highly gifted students to lead, innovate and serve in local, national and global communities.</p>
+						<p>Alongside the valuable partnerships with community members, a big part of the success of CTC and Communities in Action has been student support from the Excellence in Social Impact Scholarship. Blount, Agyemang and Pascoe all received scholarships from this fund, which was established in 2016 to help reduce the debt load of social work students. The fund is transforming the School of Social Work’s ability to prepare highly gifted students to lead, innovate and serve in local, national and global communities.</p>
 						<p>For Blount, this financial support meant that he could focus time and energy on his studies and his students at Madrona Elementary. Even more important, it has helped him explore the career he knows he was meant to pursue. “I have always been set on doing some sort of human services or social work,” he says. “I don’t see myself doing anything else.”</p>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 				</div><!-- .row -->
