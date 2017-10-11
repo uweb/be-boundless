@@ -469,13 +469,139 @@
 /***********************
  * Infographics, baby! *
  ***********************/
-	.slides{
+
+	#bb-infographic {
 		width:100%;
-		//height:100vh;
 		position:relative;
 		margin: 0;
-		//margin-top: calc(~"-100vh + 66vw");
-		//background-color: @purple;
+		padding: 30px 0;
+		background-color: @purple;
+		.container .row {
+			//color: white;
+			h3 {
+				color: white;
+				text-transform: uppercase;
+				font-size: 32px;
+			}
+			h4 {
+				color: @lightgold;
+				font-family: @uni;
+				font-size: 24px;
+				margin-bottom: 5px;
+				&:nth-child(1):before{
+					//
+				}
+			}
+			h4.move-back {
+				font-family: @headline;
+				text-transform: uppercase;
+				font-size: 30px;
+				margin-left: -180px;
+    			margin-bottom: -52px;
+			}
+			p {
+				color: white;
+				line-height: 1.4;
+				&:not(.normal){
+					font-size: 15px;
+					line-height: 1.3;
+				}
+			}
+			span {
+				width: 100%;
+    			height: 0px;
+    			display: block;
+    			border-top: 1px solid white;
+    			margin-bottom: 15px;
+			}
+			.numbered {
+				padding-left: 50px;
+				h4 {
+					color: white;
+					&:before {
+						content: '1';
+						border-radius: 50%;
+					    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+					    width: 24px;
+					    height: 24px;
+					    //padding: 6px;
+					    background: @lightgold;
+					    border: 2px solid @lightgold;
+					    color: white;
+					    font-family: @uni;
+						font-size: 18px;
+					    text-align: center;
+					    position: absolute;
+					    left: 0px;
+					    margin-top: 3px; 
+					}
+					&:nth-of-type(1):before {
+						content: '1';
+					}
+					&:nth-of-type(2):before {
+						content: '2';
+					}
+					&:nth-of-type(3):before {
+						content: '3';
+					}
+					&:nth-of-type(4):before {
+						content: '4';
+					}
+				}
+				span {
+					width: 90%;
+					margin-left: -50px;
+				}
+
+			}
+			div:nth-child(3) h4:before {
+				content: '';
+				height: 40px;
+				width: 40px;
+				background: url("@{socialwork}/bb-coach.png") no-repeat;
+				background-size: contain;
+				position: absolute;
+				left: -40px;
+				top: 10px;
+			}
+			div:nth-child(4) h4:before {
+				content: '';
+				height: 50px;
+				width: 65px;
+				background: url("@{socialwork}/bb-team.png") no-repeat;
+				background-size: contain;
+				position: absolute;
+				left: -65px;
+				top: 10px;
+			}
+			div:nth-child(5) h4:before {
+				content: '';
+				height: 65px;
+				width: 65px;
+				background: url("@{socialwork}/bb-community.png") no-repeat;
+				background-size: contain;
+				position: absolute;
+				left: -65px;
+				top: 10px;
+			}
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+
+
+
+	}
+
+	// .slides{
+	// 	width:100%;
+	// 	//height:100vh;
+	// 	position:relative;
+	// 	margin: 0;
+	// 	//margin-top: calc(~"-100vh + 66vw");
+	// 	background-color: @purple;
 		// .slide {
 		// 	position:absolute;
 		// 	left:0;
@@ -492,10 +618,10 @@
 		// 	background-image:url("@{socialwork}/SocialDev_graphic-static.png");
 		// 	// background-image:url("@{socialwork}/SocialDev_graphic-01.png");
 		// }
-		img.mobile {
-			display: none;
-			margin-bottom: 30px;
-		}
+		// img.mobile {
+		// 	display: none;
+		// 	margin-bottom: 30px;
+		// }
 
 
 		// #slide-2{
@@ -513,31 +639,31 @@
 		// 	background-image:url("@{socialwork}/SocialDev_graphic-04.png");
 		// }
 
-		@media @phone-only{
-			// #slide-1 {
-			// 	background-image:url("@{socialwork}/SocialDev_graphic-static-mobile.png");
-			// }
-			img {
-				display: none;
-				&.mobile {
-					display: inherit;
-				}
-			}
-		}
+	// 	@media @phone-only{
+	// 		// #slide-1 {
+	// 		// 	background-image:url("@{socialwork}/SocialDev_graphic-static-mobile.png");
+	// 		// }
+	// 		img {
+	// 			display: none;
+	// 			&.mobile {
+	// 				display: inherit;
+	// 			}
+	// 		}
+	// 	}
 		
-		@media @tablet-portait-only{
-			// #slide-1 {
-			// 	background-image:url("@{socialwork}/SocialDev_graphic-static-mobile.png");
-			// }
-			img {
-				display: none;
-				&.mobile {
-					display: inherit;
-				}
-			}
-		}
+	// 	@media @tablet-portait-only{
+	// 		// #slide-1 {
+	// 		// 	background-image:url("@{socialwork}/SocialDev_graphic-static-mobile.png");
+	// 		// }
+	// 		img {
+	// 			display: none;
+	// 			&.mobile {
+	// 				display: inherit;
+	// 			}
+	// 		}
+	// 	}
 
-	}
+	// }
 
 
 

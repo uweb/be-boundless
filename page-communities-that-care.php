@@ -106,34 +106,52 @@
 
 
 
-		<section class="slides">
-			<!-- <div id="slide-1" class="slide"></div> -->
-			<!-- <div id="slide-2" class="slide"></div>
-			<div id="slide-3" class="slide"></div>
-			<div id="slide-4" class="slide"></div> -->
-			<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/SocialDev_graphic-static.png" aria-hidden class="img-responsive" />
-			<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/SocialDev_graphic-static-mobile.png" aria-hidden class="img-responsive mobile" />
-		</section><!-- .text-block .slides -->
-		<div class="sr-only">
-			<h3>It takes a team</h3>
-			<p>Applying Communities That Care’s social development strategy lets community leaders like Aaron Parker help young people learn how to choose healthy behaviors that lead to bright futures. Life, like baseball, is a team sport that requires good habits, hard work and supportive relationships.</p>
-			<h4>Coach</h4>
-			<p>The coach is the committed and clear-headed adult who sets the standards, such as showing up on time and playing by the rules of the game.</p>
-			<h4>Team</h4>
-			<p>The team is a unified group with diverse players that share a common goal and follow the same rules, but also get the celbrate their differences and develop their strengths.</p>
-			<h4>Community</h4>
-			<p>Communities are emplowered when they connect with young people and provide meaningful opportunities for youth to thrive and flourish.</p>
-			<h4>Bonding</h4>
-			<p>Bonding &mdash; with other youth, coaches, teachers and family and community members &mdash; is the magic that makes the social development strategy work, and it's what fosters lasting, healthy behaviors. Bonding is waht motivates young poeple to follow standards for healthy behaviors, and stengthens each step of the strategy.</p>
-			<h4>Opportunities</h4>
-			<p>The social development strategy emphasizes the importance of providing real-world opportunities for young people so they can develop new skills.</p>
-			<h4>Skills</h4>
-			<p>As young people master new skills, they build pride in themselves and confidence in their communities, which stand behind them.</p>
-			<h4>Recognition</h4>
-			<p>Recognizing a young person’s newly acquired skills cements their sense of accomplishment and helps them build trust with the positive adults and peers in their lives.</p>
-			<h4>Healthy behaviors</h4>
-			<p>Now that they’ve learned the social development strategy, children are more likely to choose healthy behaviors, like conflict resolution, over unhealthy ones, like drinking or doing drugs.</p>
-		</div><!-- .sr-only -->
+		<section id="bb-infographic" class="slides">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<h3>It takes a team</h3>
+						<p class="normal">Applying Communities That Care’s social development strategy lets community leaders like Aaron Parker help young people learn how to choose healthy behaviors that lead to bright futures. Life, like baseball, is a team sport that requires good habits, hard work and supportive relationships.</p>
+					</div>
+					<div class="col-xs-12">
+						<span></span><!--line-->
+					</div>
+					<div class="col-xs-10 col-xs-offset-2 col-md-3 col-md-offset-1">
+						<h4>Coach</h4>
+						<p>The coach is the committed and clear-headed adult who sets the standards, such as showing up on time and playing by the rules of the game.</p>
+					</div>
+					<div class="col-xs-10 col-xs-offset-2 col-md-3 col-md-offset-1">
+						<h4>Team</h4>
+						<p>The team is a unified group with diverse players that share a common goal and follow the same rules, but also get the celbrate their differences and develop their strengths.</p>
+					</div>
+					<div class="col-xs-10 col-xs-offset-2 col-md-3 col-md-offset-1">
+						<h4>Community</h4>
+						<p>Communities are emplowered when they connect with young people and provide meaningful opportunities for youth to thrive and flourish.</p>
+					</div>
+					<div class="col-xs-12">
+						<span></span><!--line-->
+					</div>
+					<div class="col-xs-8 col-xs-offset-4 col-md-7 col-md-offset-5">
+						<h4 class="move-back">Bonding</h4>
+						<p>Bonding &mdash; with other youth, coaches, teachers and family and community members &mdash; is the magic that makes the social development strategy work, and it's what fosters lasting, healthy behaviors. Bonding is waht motivates young poeple to follow standards for healthy behaviors, and stengthens each step of the strategy.</p>
+					</div>
+					<div class="col-md-7">
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/gg-diamond.png" alt="Baseball diagram" class="" />
+					</div>
+					<div class="col-md-4 col-md-offset-1 numbered">
+						<h4>Opportunities</h4>
+						<p>The social development strategy emphasizes the importance of providing real-world opportunities for young people so they can develop new skills.</p>
+						<h4>Skills</h4>
+						<p>As young people master new skills, they build pride in themselves and confidence in their communities, which stand behind them.</p>
+						<h4>Recognition</h4>
+						<p>Recognizing a young person’s newly acquired skills cements their sense of accomplishment and helps them build trust with the positive adults and peers in their lives.</p>
+						<span class="short"></span><!--line-->
+						<h4>Healthy behaviors</h4>
+						<p>Now that they’ve learned the social development strategy, children are more likely to choose healthy behaviors, like conflict resolution, over unhealthy ones, like drinking or doing drugs.</p>
+					</div>
+				</div>	
+			</div>
+		</section>
 		<section class="text-block white">
 			<div class="container">
 				<div class="row">
