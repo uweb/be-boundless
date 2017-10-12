@@ -176,33 +176,57 @@ html{
 /*********************
  * Horizontal Scroll *
  *********************/
-#content-wrapper, 
+// #content-wrapper, 
+// #example-wrapper {
+//     height: 100%;
+// }
+// #example-wrapper .scrollContent {
+//     height: 100%;
+// }
+// #example-wrapper.horizontal {
+//     white-space: nowrap;
+// }
+
+// .horizontal section, .horizontal section#titlechart {
+//     display: inline-block;
+//     vertical-align: top;
+//     height: 100%;
+// }
+
+// .horizontal section {
+// 	height: 100vh;
+//     width: 100vw;
+//     white-space: normal;
+//     .container {
+//     	height: 100%;
+// 	    display: flex;
+// 	    align-items: center;
+// 	    justify-content: center;
+//     }
+// }
+
+// .scrollContent {
+//     color: white;
+//     position: relative;
+//     .transition(all .5s ease-in-out);
+//     opacity: 1;
+//     .translate(0, 0);
+// }
+#content-wrapper {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		-webkit-perspective: 1000;
+		        perspective: 1000;
+}
 #example-wrapper {
-    height: 100%;
-}
-#example-wrapper .scrollContent {
-    height: 100%;
-}
-#example-wrapper.horizontal {
-    white-space: nowrap;
-}
-
-.horizontal section, .horizontal section#titlechart {
-    display: inline-block;
-    vertical-align: top;
-    height: 100%;
-}
-
-.horizontal section {
-	height: 100vh;
-    width: 100vw;
-    white-space: normal;
-    .container {
-    	height: 100%;
-	    display: flex;
-	    align-items: center;
-	    justify-content: center;
-    }
+	width: 300%; /* to contain 4 panels, each with 100% of window width */
+	height: 100%;
+	section {
+		height: 100%;
+		width: 33%; /* relative to parent -> 25% of 400% = 100% of window width */
+		float: left;
+	}
 }
 
 /*

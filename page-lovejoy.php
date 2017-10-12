@@ -76,7 +76,7 @@
 
 <div id="content-wrapper" class="scroll-pane horizontal-only">
     <div id="example-wrapper" class="horizontal">
-      <div class="scrollContent" id="slides">
+      <!-- <div class="scrollContent" id="slides"> -->
         <!-- START HORIZONTAL -->
 
 		<section class="text-block black">
@@ -120,7 +120,7 @@
 		</section><!-- .text-block .black -->
 
         <!-- END HORIZONTAL -->
-  	</div>
+  	<!-- </div> -->
   </div>
 </div><!-- #content-wrapper -->
 		<section class="text-block white">
