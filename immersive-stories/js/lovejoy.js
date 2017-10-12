@@ -1,6 +1,7 @@
 $(function(){
 
 	var controllerLJ = new ScrollMagic.Controller();
+	var controllerLJHorizontal = new ScrollMagic.Controller({vertical: false});
 
 	var introLJ = new ScrollMagic.Scene({
 		triggerElement:'#intro-vid',

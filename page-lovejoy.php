@@ -73,7 +73,12 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block .white -->
-<div id="foo">
+
+<div id="content-wrapper" class="scroll-pane horizontal-only">
+    <div id="example-wrapper" class="horizontal">
+      <div class="scrollContent" id="slides">
+        <!-- START HORIZONTAL -->
+
 		<section class="text-block black">
 			<div class="container">
 				<div class="row">
@@ -113,7 +118,11 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block .black -->
-</div><!-- #foo -->
+
+        <!-- END HORIZONTAL -->
+  	</div>
+  </div>
+</div><!-- #content-wrapper -->
 		<section class="text-block white">
 			<div class="container">
 				<div class="row">

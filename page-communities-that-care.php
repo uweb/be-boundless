@@ -133,7 +133,7 @@
 					</div>
 					<div class="col-xs-12 col-md-7 col-md-offset-5">
 						<h4 class="move-back">Bonding</h4>
-						<p>Bonding &mdash; with other youth, coaches, teachers and family and community members &mdash; is the magic that makes the social development strategy work, and it's what fosters lasting, healthy behaviors. Bonding is waht motivates young poeple to follow standards for healthy behaviors, and stengthens each step of the strategy.</p>
+						<p>Bonding &mdash; with other youth, coaches, teachers and family and community members &mdash; is the magic that makes the social development strategy work, and it's what fosters lasting, healthy behaviors. Bonding is what motivates young poeple to follow standards for healthy behaviors, and stengthens each step of the strategy.</p>
 					</div>
 					<div class="col-md-7">
 						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/gg-diamond.png" alt="Baseball diagram" class="" />
