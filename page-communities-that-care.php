@@ -116,22 +116,22 @@
 					<div class="col-xs-12">
 						<span></span><!--line-->
 					</div>
-					<div class="col-xs-10 col-xs-offset-2 col-md-3 col-md-offset-1">
+					<div class="col-xs-10 col-xs-offset-1 col-md-3 col-md-offset-1">
 						<h4>Coach</h4>
 						<p>The coach is the committed and clear-headed adult who sets the standards, such as showing up on time and playing by the rules of the game.</p>
 					</div>
-					<div class="col-xs-10 col-xs-offset-2 col-md-3 col-md-offset-1">
+					<div class="col-xs-10 col-xs-offset-1 col-md-3 col-md-offset-1">
 						<h4>Team</h4>
 						<p>The team is a unified group with diverse players that share a common goal and follow the same rules, but also get the celbrate their differences and develop their strengths.</p>
 					</div>
-					<div class="col-xs-10 col-xs-offset-2 col-md-3 col-md-offset-1">
+					<div class="col-xs-10 col-xs-offset-1 col-md-3 col-md-offset-1">
 						<h4>Community</h4>
 						<p>Communities are emplowered when they connect with young people and provide meaningful opportunities for youth to thrive and flourish.</p>
 					</div>
 					<div class="col-xs-12">
 						<span></span><!--line-->
 					</div>
-					<div class="col-xs-8 col-xs-offset-4 col-md-7 col-md-offset-5">
+					<div class="col-xs-12 col-md-7 col-md-offset-5">
 						<h4 class="move-back">Bonding</h4>
 						<p>Bonding &mdash; with other youth, coaches, teachers and family and community members &mdash; is the magic that makes the social development strategy work, and it's what fosters lasting, healthy behaviors. Bonding is waht motivates young poeple to follow standards for healthy behaviors, and stengthens each step of the strategy.</p>
 					</div>
