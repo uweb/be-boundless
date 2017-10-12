@@ -7,7 +7,141 @@
 @import "../../immersive-stories/less/common.less";
 @import "../../immersive-stories/less/lity.less";
 
+/************
+ * About v2 *
+ ************/
+#cv2-leadership{
+  margin:80px 0 100px;
+  p.cv2-name{
+    font-family:@font-family-headline;
+    font-size:14px;
+    font-weight:bold;
+    text-align:center;
+    text-transform: uppercase;
+    letter-spacing:2px;
+    color:@purple;
+  }
+  p.cv2-inmemoriam{
+    font-family:@uni;
+    font-weight:bold;
+    text-align:center;
+  }
+}
+.cv2-excerpt{
+  &.cv2-image-right .campaign-excerpt .container-image.container-left div.row{
+    background-position:right center;
+    max-height:400px;
+  }
+  &.cv2-image-center .campaign-excerpt .container-image div.row{
+    background-position:center center;
+  }
+  &.cv2-nolink .campaign-excerpt .container-image div.row .button-container .campaign-button{
+    display:none;
+  }
+}
+#cv2-leaderquote{
+  margin:0;
+  padding:50px 0;
+  background-color:#e7e6dd;
+  blockquote{
+    margin:0;
+    padding:0;
+    border:none;
+    p.quote{
+      font-family:@uni;
+      font-size:36px;
+      letter-spacing:-1px;
+      color:@purple;
+      span.open{
+        font-family: @headline;
+        font-weight: @ultra;
+        color: @lightgold;
+        font-size: 60px;
+        position: relative;
+        top: 25px;
+        left: -10px;
+        line-height: 0;
+        display: block;
+        // content: "\201C";
+        float: left;
+        margin-left: -30px;
+      }
+      span.close{
+        font-family: @headline;
+        font-weight: @ultra;
+        color: @lightgold;
+        font-size: 60px;
+        position: relative;
+        top: 36px;
+        right: -7px;
+        line-height: 0;
+        display: inline-block;
+        float: none;
+        margin-top: -10px;
+      }
+    }
+    p.first{
+      text-align:center;
+      color:@purple;
+      font-family:@uni;
+      font-size:18px;
+    }
+    p.second{
+      text-align:center;
+      color:@lightgold;
+      font-family:@uni;
+      font-weight:bold;
+      font-size:14px;
+    }
+  }
 
+}
+#cv2-volunteers{
+  margin:80px 0 100px;
+  ul,ul li{
+    margin:0;
+    padding:0;
+    list-style: none;
+    list-style-type: none;
+  }
+  li{
+    font-family:@uni;
+    font-size:15px;
+  }
+  a,a:link,a:visited,a:hover,a:active,a:focus{
+    text-decoration:underline;
+  }
+  a,a:link,a:visited{
+    color:@text-color;
+  }
+  a:hover,a:active,a:focus{
+    color:@lightgold;
+  }
+}
+#cv2-learnmore{
+  margin:80px 0 100px;
+  .campaign-button{
+    .skew(-15deg, 0);
+    border:2px solid @purple;
+    display:inline-block;
+    padding:15px 30px 0 30px;
+    .transition(all .2s ease-in-out .1s);
+    div {
+      .skew(15deg, 0);
+      a,a:link,a:visited{
+        color:@purple;
+        text-transform:uppercase;
+        font-size:15px;
+        font-weight:bold;
+        letter-spacing:2px;
+        .transition(all .2s linear);
+      }
+    }
+  }
+  .campaign-button:hover{
+    background:rgba(0,0,0,.2);
+  }
+}
 
 
 
