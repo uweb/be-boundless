@@ -17,25 +17,17 @@ $(function(){
 
 
 	var wipeAnimation = new TimelineMax()
-			// animate to second panel
-			//.to("#example-wrapper", 0.5, {z: -150})		// move back in 3D space
-			.to("#example-wrapper", 1,   {x: "-25%"})	// move in to first panel
-			//.to("#example-wrapper", 0.5, {z: 0})				// move back to origin in 3D space
-			// animate to third panel
-			//.to("#example-wrapper", 0.5, {z: -150, delay: 1})
-			.to("#example-wrapper", 1,   {x: "-50%"})
-			//.to("#example-wrapper", 0.5, {z: 0})
-			// animate to forth panel
-			//.to("#example-wrapper", 0.5, {z: -150, delay: 1})
-			.to("#example-wrapper", 1,   {x: "-75%"})
-			//.to("#example-wrapper", 0.5, {z: 0});
+			.to("#secondary-wrapper", 1,   {x: "-25%"})
+			.to("#secondary-wrapper", 1,   {x: "-50%"})
+			.to("#secondary-wrapper", 1,   {x: "-75%"})
+			//.to("#secondary-wrapper", 1,   {x: "-75%"})
 
 	var goHorizontal = new ScrollMagic.Scene({
-		triggerElement: '#content-wrapper',
+		triggerElement: '#primary-wrapper',
 		triggerHook: "onLeave",
-		duration:'400%',
+		duration:'500%',
 	})
-		.setPin('#content-wrapper')
+		.setPin('#primary-wrapper')
 		.setTween(wipeAnimation)
 		// .on("enter", function(){
 		// 	console.log("enter");

@@ -37,6 +37,10 @@ html{
 		font-weight: @ultra;
 	}
 
+	h2 {
+		color: @purple;
+	}
+
 }
  
  
@@ -49,9 +53,9 @@ html{
 	align-items: center;
 	justify-content: center;
 	height: calc(~"103vh - 171px");
-	background-image:url("@{lovejoy}/fpo.png");
+	background-image:url("@{lovejoy}/header.jpg");
 	.background-cover(cover);
-	background-position: center center;
+	background-position: top 20%;
 	text-align:left;
 	color:white;
 	z-index: -1;
@@ -65,10 +69,11 @@ html{
 		line-height: 1.1;
 		font-size: 31px;
 		text-shadow: 0px 0px 3px rgba(37, 37, 37, 0.65);
+		text-align:right;
 	}
 
 	p{
-		text-align:left;
+		text-align:right;
 		color:white;
 		font-weight:bold;
 		text-shadow: 0px 0px 3px rgba(37, 37, 37, 0.65);
@@ -145,7 +150,7 @@ html{
 
 	@media @tablet-landscape-up {
 		h1 {
-			font-size: 4.5vw;
+			font-size: 3.5vw;
 		}
 	}
 }
@@ -155,14 +160,20 @@ html{
  ***************/
 #video{
 	height:30vw;
-	background-color:#ccc;
+	background: white url("@{lovejoy}/video.jpg") center center no-repeat;
+	.background-cover(cover);
 	a{
 		margin-top:12vw;
 		text-align:center;
 	}
 }
+#video-body{
+	height:30vw;
+	background: white url("@{lovejoy}/lj-body.jpg") center center no-repeat;
+	.background-cover(cover);
+}
 .text-block.black{
-	background-color:black;
+	background-color:transparent;
 	color:white;
 
 	p{
@@ -170,6 +181,10 @@ html{
 	}
 }
 
+.text-block p.purple {
+	color:@purple;
+	font-size: 22px; 
+}
 
 
 
@@ -212,22 +227,41 @@ html{
 //     opacity: 1;
 //     .translate(0, 0);
 // }
-#content-wrapper {
+// 
+#side-slider {
+	height: 100%;
+	min-height: 100vh;
+	width: 100%;
+	background-color: black;
+	//padding-bottom: 100%;
+
+}
+#primary-wrapper {
 		width: 100%;
 		height: 100%;
+		min-height: 100vh;
 		overflow: hidden;
+		z-index: 2;
+		background: black;
 		-webkit-perspective: 1000;
 		        perspective: 1000;
 }
-#example-wrapper {
-	width: 300%; /* to contain 4 panels, each with 100% of window width */
+#secondary-wrapper {
+	width: 400%; /* to contain 4 panels, each with 100% of window width */
 	height: 100%;
+	//overflow: hidden;
 	section {
 		height: 100%;
-		width: 33%; /* relative to parent -> 25% of 400% = 100% of window width */
+		min-height: 100vh;
+		width: 25%; /* relative to parent -> 25% of 400% = 100% of window width */
 		float: left;
+		// &:last-child {
+		// 	width: 34%;
+		// }
 	}
 }
+
+
 
 /*
 @media(min-width:1200px){}
