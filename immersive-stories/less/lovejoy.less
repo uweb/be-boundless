@@ -37,13 +37,12 @@ html{
 		font-weight: @ultra;
 	}
 
-	h2 {
-		color: @purple;
-	}
-
 }
  
- 
+ h2 {
+		color: @purple;
+		//font-size: 32px;
+	}
  
  /*******************************
  * Intro and associated styles *
@@ -168,7 +167,7 @@ html{
 	}
 }
 #video-body{
-	height:30vw;
+	height:40vw;
 	background: white url("@{lovejoy}/lj-body.jpg") center center no-repeat;
 	.background-cover(cover);
 }
@@ -176,7 +175,7 @@ html{
 	background-color:transparent;
 	color:white;
 
-	p{
+	p , h2{
 		color:white;
 	}
 }
@@ -184,6 +183,14 @@ html{
 .text-block p.purple {
 	color:@purple;
 	font-size: 22px; 
+}
+
+.gold-quote.white {
+	color: white;
+}
+
+.no-h2 {
+	margin-top: 79.5px;
 }
 
 
@@ -258,6 +265,27 @@ html{
 		// &:last-child {
 		// 	width: 34%;
 		// }
+	}
+}
+#horizontal-static-images {
+	// position: absolute;
+	// height: 100%;
+	// width: 100%;
+	// right: 0;
+	// top: 0;
+	img {
+		position: absolute;
+		height: 100%;
+		width: auto;
+		max-width: 100%;
+		right: 0;
+		bottom: 0;
+		opacity: 0;
+		//visibility: hidden;
+	}
+	#horizontal-image-1 {
+		opacity: 1;
+		// visibility: visible;
 	}
 }
 

@@ -57,7 +57,7 @@
 						<p>Mental illness often arrives in full force in youth, as it did for Lovejoy. But when she set off for college, the Seattle native had big dreams.</p>
 						<p>“I always wanted to do great things, to do things in the world,” she says.</p>
 						<p>Unfortunately, she brought more than dreams to Bard College. She brought depression, mania and an ever-present sense of loneliness. Lovejoy lost sleep, lied to her teachers, stole a friend’s phone card and skipped classes. “I completely fell apart in a short amount of time,” she says. She left school and returned to Seattle, defeated.</p>
-						<p class="gold-quote headline-gold white">I called it 'the darkness.'</br>It felt like I was falling down a chute.</p>
+						<p class="gold-quote headline-gold">I called it 'the darkness.'</br>It felt like I was falling down a chute.</p>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 				</div><!-- .row -->
 			</div><!-- .container -->
@@ -65,6 +65,12 @@
 
 <section id="side-slider">
 <div id="primary-wrapper" class="scroll-pane horizontal-only">
+	<div id="horizontal-static-images">
+		<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/side-1.jpg' ?>" alt="image" class="img-responsive" id="horizontal-image-1" />
+		<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/side-2.jpg' ?>" alt="image" class="img-responsive" id="horizontal-image-2" />
+		<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/side-3.jpg' ?>" alt="image" class="img-responsive" id="horizontal-image-3" />
+		<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/side-4.jpg' ?>" alt="image" class="img-responsive" id="horizontal-image-4" />
+	</div>
     <div id="secondary-wrapper" class="horizontal">
       <!-- <div class="scrollContent" id="slides"> -->
         <!-- START HORIZONTAL -->
@@ -86,7 +92,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
-						<p>It was the first of three hospitalizations that year. But instead of turning a corner, Lovejoy felt her life begin to dissolve.</p>
+						<p class="no-h2">It was the first of three hospitalizations that year. But instead of turning a corner, Lovejoy felt her life begin to dissolve.</p>
 						<p>Her boss gently told her not to come back to work. She lost her apartment and moved in with her boyfriend — “a bad move,” she says. And in a decision that she still regrets, Lovejoy surrendered custody rights to her children, Zola and Delilah, saying that she felt like “a horrible mother.”</p>
 						<p>Then she found a lifeline at Harborview Medical Center: dialectical behavioral therapy, or DBT.</p> 
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
@@ -122,7 +128,7 @@
         <!-- END HORIZONTAL -->
   	<!-- </div> -->
   </div>
-</div><!-- #content-wrapper -->
+</div><!-- #primary-wrapper -->
 </section>
 		<section class="text-block white">
 			<div class="container">
@@ -150,12 +156,7 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block .white -->
-		<section id="video" class="text-block white">
-			<div class="container">
-				<div class="row">
-				</div><!-- .row -->
-			</div><!-- .container -->
-		</section><!-- #video .text-block .white -->
+		<section id="video-body"></section><!-- #video-body-->
 		<section class="text-block white">
 			<div class="container">
 				<div class="row">
