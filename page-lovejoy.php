@@ -183,19 +183,27 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block .white -->
-		<section class="text-block white">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1 copy">
-						<h2>Insert Giving</h2>
-					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
-				</div><!-- .row -->
-			</div><!-- .container -->
-		</section><!-- .text-block .white -->
+		      <section class="text-block giving-widget-promoted">
+              <div class="row">
+                  <div class="first-col col-md-5 col-md-offset-4 col-sm-8 col-sm-offset-1 col-xs-offset-1 col-xs-10">
+                    <div>             
+                      <h2 class="headline-gold white">You deserve good mental health care.</h2>
+                      <p>Everyone does. Help us make recovery possible for everyone, by supporting the UW Medicine Behavioral Health Institute at Harborview.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-offset-1 ">
+                    <div>                                 
+                      <div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="HCPSYD" href="#giving-widget-promoted">Give now</a></span></div>
+                      <button id="close-give">Close</button>
+                    </div>
+                  </div>
+              </div>
+             <div id="immersive-give-iframe-promoted"></div>
+      </section>
 	</main><!-- #main_content -->
 	<div id="popup"></div>
 </div><!-- #immersive-body -->
 <?php
-	include(locate_template('include-giving.php'));
+	//include(locate_template('include-giving.php'));
 	get_template_part('footer','campaign-v2');
 ?>
