@@ -41,13 +41,16 @@
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1">
 						<a data-lity href="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&rel=0&showinfo=0" class="center-block">
-							<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/play.png' ?>" alt="play button" height="170px" width="170px" />
+							<svg xmlns="http://www.w3.org/2000/svg" width="75.649" height="75.625" viewBox="0 0 75.649 75.625">
+								<circle fill="none" stroke="#fff" stroke-width="4.649" stroke-miterlimit="10" cx="37.785" cy="37.822" r="34.703"/>
+								<path fill="#fff" d="M25.88 19.814l32.885 18.008-32.886 18.01"/>
+							</svg>
 						</a>
 					</div><!-- .col-md-10 .col-md-offset-1 -->
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- #video .text-block .white -->
-		<section class="text-block white">
+		<section class="text-block white gradient-ending">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
@@ -57,7 +60,7 @@
 						<p>Mental illness often arrives in full force in youth, as it did for Lovejoy. But when she set off for college, the Seattle native had big dreams.</p>
 						<p>“I always wanted to do great things, to do things in the world,” she says.</p>
 						<p>Unfortunately, she brought more than dreams to Bard College. She brought depression, mania and an ever-present sense of loneliness. Lovejoy lost sleep, lied to her teachers, stole a friend’s phone card and skipped classes. “I completely fell apart in a short amount of time,” she says. She left school and returned to Seattle, defeated.</p>
-						<p class="gold-quote headline-gold">I called it 'the darkness.'</br>It felt like I was falling down a chute.</p>
+						<p class="gold-quote headline-gold white">I called it 'the darkness.'</br>It felt like I was falling down a chute.</p>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 				</div><!-- .row -->
 			</div><!-- .container -->
@@ -70,6 +73,18 @@
 		<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/side-2.jpg' ?>" alt="image" class="img-responsive" id="horizontal-image-2" />
 		<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/side-3.jpg' ?>" alt="image" class="img-responsive" id="horizontal-image-3" />
 		<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/side-4.jpg' ?>" alt="image" class="img-responsive" id="horizontal-image-4" />
+		<section class="text-block black"  id="find-help"  role="complimentary"> <!-- BLANK PLACE HOLDER FOR CRISIS COMM -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 copy">
+						<h2>Where to find help</h2>    
+						<p>If you’re in crisis, please call the <b>Crisis Clinic of King County: 866-4-CRISIS (866-427-4747)</b> or <b>206-461-3222</b>. They can schedule next-day crisis appointments at Harborview or other local sites with behavioral health clinics.</p>
+						<p>Other resources include the <b>National Suicide Prevention Lifeline (888-628-9454)</b>, the <b>Lifeline Crisis Chat</b> (crisischat.org) and <b>911</b>.</p>
+						<p>If you are anxious, depressed or unhappy, or have other health-related concerns, <b>please don’t suffer in silence. There are solutions — and treatment works</b>. Start by reaching out to your family doctor, your school counselor or anyone else you trust.</p> 
+					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</section><!-- .text-block .black -->
 	</div>
     <div id="secondary-wrapper" class="horizontal">
       <!-- <div class="scrollContent" id="slides"> -->
@@ -99,17 +114,7 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block .black -->
-		<section class="text-block black">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1 copy">
-						<h2>Where to find help</h2>    
-						<p>If you’re in crisis, please call the Crisis Clinic of King County: 866-4-CRISIS (866-427-4747) or 206-461-3222. They can schedule next-day crisis appointments at Harborview or other local sites with behavioral health clinics.</p>
-						<p>Other resources include the National Suicide Prevention Lifeline (888-628-9454), the Lifeline Crisis Chat (crisischat.org) and 911.</p>
-						<p>If you are anxious, depressed or unhappy, or have other health-related concerns, please don’t suffer in silence. There are solutions — and treatment works. Start by reaching out to your family doctor, your school counselor or anyone else you trust.</p> 
-					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
-				</div><!-- .row -->
-			</div><!-- .container -->
+		<section class="text-block black"> <!-- BLANK PLACE HOLDER FOR CRISIS COMM -->
 		</section><!-- .text-block .black -->
 		<section class="text-block black">
 			<div class="container">
@@ -130,15 +135,24 @@
   </div>
 </div><!-- #primary-wrapper -->
 </section>
-		<section class="text-block white">
+		<section class="text-block white charts">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 copy">
-						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/fpo.png' ?>" alt="image" class="img-responsive" />
-					</div><!-- .col-md-6 .copy -->
-					<div class="col-md-6 copy">
-						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/fpo.png' ?>" alt="image" class="img-responsive" />
-					</div><!-- .col-md-6 .copy -->
+					<div class="copy">
+						<h2 class="orange">Who do you know?</h2>
+						<div class="col-md-6">
+							<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/chart-1.jpg' ?>" alt="" class="img-responsive" />
+							<p class="highlight orange">1 <span>in</span> 5</p>
+							<p class="orange">adults has a mental health condition</p>
+							<p>1,049,000 in Washington State</p>
+						</div><!-- .col-md-6 .copy -->
+						<div class="col-md-6">
+							<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/chart-2.jpg' ?>" alt="" class="img-responsive" />
+							<p class="highlight orange">60%</p>
+							<p class="orange">do not receive any treatment</p>
+							<p>635,000 in Washington State</p>
+						</div><!-- .col-md-6 .copy -->
+					</div>
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block .white -->

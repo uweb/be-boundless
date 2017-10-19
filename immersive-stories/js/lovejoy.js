@@ -18,9 +18,22 @@ $(function(){
 
 	var wipeAnimation = new TimelineMax()
 			.to("#secondary-wrapper", 1,   {x: "-25%"})
+			.to("#horizontal-image-2", 1,   {opacity: 1, visibility: "visible"}, "-=1.0")
+			.to("#horizontal-image-1", 1,   {opacity: 0}, "-=1.0")
 			.to("#secondary-wrapper", 1,   {x: "-50%"})
+			.to("#horizontal-image-3", 1,   {opacity: 1, visibility: "visible"}, "-=1.0")
+			.to("#find-help", 1,   {opacity: 1, visibility: "visible"}, "-=1.0")
+			.to("#horizontal-image-2", 1,   {opacity: 0}, "-=1.0")
 			.to("#secondary-wrapper", 1,   {x: "-75%"})
+			.to("#horizontal-image-4", 1,   {opacity: 1, visibility: "visible"}, "-=1.0")
+			.to("#horizontal-image-3", 1,   {opacity: 0}, "-=1.0")
+			.to("#find-help", 1,   {opacity: 0}, "-=1.0")
 			//.to("#secondary-wrapper", 1,   {x: "-75%"})
+
+	// var imageAnimation1 = new TimelineMax()
+	// 		.to("#horizontal-image-1", 1,   {x: "-25%"})
+	// 		.to("#secondary-wrapper", 1,   {x: "-50%"})
+	// 		.to("#secondary-wrapper", 1,   {x: "-75%"})
 
 	var goHorizontal = new ScrollMagic.Scene({
 		triggerElement: '#primary-wrapper',
@@ -37,6 +50,6 @@ $(function(){
 		// 	console.log("leave");
 		// 	//scrollConverter.deactivate();
 		// })
-		.addIndicators()
+		//.addIndicators()
 		.addTo(controllerLJ);
 });
