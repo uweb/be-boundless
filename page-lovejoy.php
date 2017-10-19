@@ -159,7 +159,7 @@
 		<section class="text-block white">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-10 col-md-offset-1 copy">
+					<div class="col-md-10 col-md-offset-1 copy no-top">
 						<p class="gold-quote headline-gold purple">You’re not a healthcare provider if all you do is what you bill for.</p>
 						<h2>Providing more than healthcare</h2>
 						<p>Today, Lovejoy works at the Housing and Recovery Through Peer Services (HARPS) program, funded by King County and administered at Harborview. HARPS staff help patients transfer into housing after they leave hospital-based behavioral health programs.</p>

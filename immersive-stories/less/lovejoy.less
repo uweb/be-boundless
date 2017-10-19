@@ -200,7 +200,13 @@ html{
 	margin-top: 79.5px;
 }
 
+.no-top {
+	padding-top: 0;
+}
 
+// TO DO 
+// get rid of side scroll for mobile
+// change video div size on mobile
 
 /*********************
  * Horizontal Scroll *
@@ -282,7 +288,8 @@ html{
 	// top: 0;
 	img {
 		position: absolute;
-		height: 100%;
+		height: auto;
+		max-height: 100%;
 		width: auto;
 		max-width: 100%;
 		right: 0;
@@ -355,6 +362,14 @@ section.charts {
 			}
 		}
 	}
+	.copy div {
+		margin-bottom: 30px;
+	}
+	// @media(max-width:992px) {
+	// 	.copy div:nth-of-type(1) {
+	// 		margin-bottom: 30px;
+	// 	}
+	// }
 }
 
 .text-block.giving-widget-promoted {
