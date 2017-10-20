@@ -85,6 +85,11 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block .black -->
+		<section id="sidescroll">
+			<p>Scroll</p>
+			<p class="sideways"><span>></span><span>></span><span>></span></p>
+			<p class="down"><span>></span><span>></span><span>></span></p>
+		</section>
 	</div>
     <div id="secondary-wrapper" class="horizontal">
       <!-- <div class="scrollContent" id="slides"> -->
@@ -114,9 +119,19 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block .black -->
-		<section class="text-block black"> <!-- BLANK PLACE HOLDER FOR CRISIS COMM -->
+		<section class="text-block black find-help-blank"> <!-- BLANK PLACE HOLDER FOR CRISIS COMM -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 copy">
+						<h2>Where to find help</h2>    
+						<p>If you’re in crisis, please call the <b>Crisis Clinic of King County: 866-4-CRISIS (866-427-4747)</b> or <b>206-461-3222</b>. They can schedule next-day crisis appointments at Harborview or other local sites with behavioral health clinics.</p>
+						<p>Other resources include the <b>National Suicide Prevention Lifeline (888-628-9454)</b>, the <b>Lifeline Crisis Chat</b> (crisischat.org) and <b>911</b>.</p>
+						<p>If you are anxious, depressed or unhappy, or have other health-related concerns, <b>please don’t suffer in silence. There are solutions — and treatment works</b>. Start by reaching out to your family doctor, your school counselor or anyone else you trust.</p> 
+					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
+				</div><!-- .row -->
+			</div><!-- .container -->
 		</section><!-- .text-block .black -->
-		<section class="text-block black">
+		<section class="text-block black gradient">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
@@ -144,13 +159,13 @@
 							<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/chart-1.jpg' ?>" alt="" class="img-responsive" />
 							<p class="highlight orange">1 <span>in</span> 5</p>
 							<p class="orange">adults has a mental health condition</p>
-							<p>1,049,000 in Washington State</p>
+							<p>1,049,000 in Washington state</p>
 						</div><!-- .col-md-6 .copy -->
 						<div class="col-md-6">
 							<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/chart-2.jpg' ?>" alt="" class="img-responsive" />
 							<p class="highlight orange">60%</p>
 							<p class="orange">do not receive any treatment</p>
-							<p>635,000 in Washington State</p>
+							<p>635,000 in Washington state</p>
 						</div><!-- .col-md-6 .copy -->
 					</div>
 				</div><!-- .row -->
@@ -170,7 +185,9 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block .white -->
-		<section id="video-body"></section><!-- #video-body-->
+		<section id="video-body" class="text-block transSection mentors-caption">
+			<p><span>Lovejoy and her family.</span></p>
+		</section><!-- #video-body-->
 		<section class="text-block white">
 			<div class="container">
 				<div class="row">

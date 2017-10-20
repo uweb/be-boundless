@@ -1,5 +1,7 @@
 $(function(){
 
+	var isMobile = ($(window).width() < 768) ? true : false;
+
 	var controllerLJ = new ScrollMagic.Controller();
 	//var controllerLJHorizontal = new ScrollMagic.Controller({vertical: false});
 
@@ -16,7 +18,9 @@ $(function(){
 	});
 
 
-	var wipeAnimation = new TimelineMax()
+	if(!isMobile) {
+
+		var wipeAnimation = new TimelineMax()
 			.to("#secondary-wrapper", 1,   {x: "-25%"})
 			.to("#horizontal-image-2", 1,   {opacity: 1, visibility: "visible"}, "-=1.0")
 			.to("#horizontal-image-1", 1,   {opacity: 0}, "-=1.0")
@@ -27,29 +31,18 @@ $(function(){
 			.to("#secondary-wrapper", 1,   {x: "-75%"})
 			.to("#horizontal-image-4", 1,   {opacity: 1, visibility: "visible"}, "-=1.0")
 			.to("#horizontal-image-3", 1,   {opacity: 0}, "-=1.0")
-			.to("#find-help", 1,   {opacity: 0}, "-=1.0")
-			//.to("#secondary-wrapper", 1,   {x: "-75%"})
+			.to("#find-help", 1,   {opacity: 0}, "-=1.0");
 
-	// var imageAnimation1 = new TimelineMax()
-	// 		.to("#horizontal-image-1", 1,   {x: "-25%"})
-	// 		.to("#secondary-wrapper", 1,   {x: "-50%"})
-	// 		.to("#secondary-wrapper", 1,   {x: "-75%"})
-
-	var goHorizontal = new ScrollMagic.Scene({
-		triggerElement: '#primary-wrapper',
-		triggerHook: "onLeave",
-		duration:'500%',
-	})
-		.setPin('#primary-wrapper')
-		.setTween(wipeAnimation)
-		// .on("enter", function(){
-		// 	console.log("enter");
-		// 	//convert scroll to translate of #content-wrapper
-		// })
-		// .on("leave", function(){
-		// 	console.log("leave");
-		// 	//scrollConverter.deactivate();
-		// })
-		//.addIndicators()
-		.addTo(controllerLJ);
+		var goHorizontal = new ScrollMagic.Scene({
+			triggerElement: '#primary-wrapper',
+			triggerHook: "onLeave",
+			duration:'500%',
+		})
+			.setPin('#primary-wrapper')
+			.setTween(wipeAnimation)
+			.on('leave', function(){
+				$('#sidescroll').toggleClass("down");
+			})
+			.addTo(controllerLJ);
+	}
 });

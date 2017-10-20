@@ -158,11 +158,11 @@ html{
  * Text blocks *
  ***************/
 #video{
-	height:30vw;
+	height:40vw;
 	background: white url("@{lovejoy}/video.jpg") center center no-repeat;
 	.background-cover(cover);
 	a{
-		margin-top:12vw;
+		margin-top:15vw;
 		text-align:center;
 	}
 }
@@ -180,7 +180,7 @@ html{
 	}
 }
 
-.text-block p.purple {
+.text-block p.purple:not(.headline-gold) {
 	color:@purple;
 	font-size: 22px; 
 }
@@ -204,9 +204,40 @@ html{
 	padding-top: 0;
 }
 
-// TO DO 
-// get rid of side scroll for mobile
-// change video div size on mobile
+section.transSection {
+	p {
+        background-color: rgba(0, 0, 0, 0.84);
+        padding: 11px 25px 10px 25px;
+        font-size: 13px;
+        line-height: 1.3;
+        color: white;
+        bottom: 0;
+        margin: 0;
+        left: -10px;
+        position: absolute;
+        display: inline-block;
+    }
+    @media @tablet-portrait-up { 
+        p {
+            background-color: rgba(0, 0, 0, 0.4);
+            max-width: 50%;
+            .skew(-15deg,0);
+            font-size: 14px;
+            span {
+                display: inline-block;
+                .skew(15deg,0);
+            }
+        }
+    }
+    @media @phone-only {
+        margin: 0 0 28vw 0;
+        overflow: visible;
+        p {
+            top: 99%;
+            bottom: inherit;
+        }
+    }
+}
 
 /*********************
  * Horizontal Scroll *
@@ -275,9 +306,9 @@ html{
 		min-height: 100vh;
 		width: 25%; /* relative to parent -> 25% of 400% = 100% of window width */
 		float: left;
-		// &:last-child {
-		// 	width: 34%;
-		// }
+		&.gradient {
+			background-color: rgba(0, 0, 0, 0.4);
+		} 
 	}
 }
 #horizontal-static-images {
@@ -302,7 +333,7 @@ html{
 		visibility: visible;
 	}
 }
-#find-help {
+section#find-help {
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -311,6 +342,14 @@ html{
 	top: 0;
 	opacity: 0;
 	visibility: hidden;
+}
+
+section.find-help-blank {
+	visibility: hidden;
+}
+
+section.find-help-blank.text-block.black ,
+section#find-help {
 	h2 {
 		text-transform: uppercase;
     	color: #c35316;
@@ -373,7 +412,7 @@ section.charts {
 }
 
 .text-block.giving-widget-promoted {
-    background-image: url("@{lovejoy}/giving.jpg");
+    background-image: url("@{lovejoy}/giving-2.jpg");
     h2.headline-gold.white {
     	color: white;
     }
@@ -385,6 +424,134 @@ section.charts {
             padding-top: 20px;
         }
     }
+}
+
+#sidescroll {
+	position: absolute;
+	right: 50px;
+    bottom: 0px;
+	text-align: center;
+	z-index: 1;
+	p {
+		color: rgba(255, 255, 255, 0.9);
+		line-height: 0.5;
+		font-weight: 600;
+		.transition(all 1s);
+		span {
+			margin: 0 7px;
+			font-size: 20px;
+			color: white;
+			&:nth-of-type(1){
+				-webkit-animation: mymove1 2s ease-in-out infinite;
+				animation: mymove1 2s ease-in-out infinite;
+			}
+			&:nth-of-type(2){
+				-webkit-animation: mymove2 2s ease-in-out infinite;
+				animation: mymove2 2s ease-in-out infinite;
+			}
+			&:nth-of-type(3){
+				-webkit-animation: mymove3 2s ease-in-out infinite;
+				animation: mymove3 2s ease-in-out infinite;
+			}
+		}
+		&.sideways {
+			opacity: 1;
+		    visibility: visible;
+		}
+		&.down {
+			opacity: 0;
+		    visibility: hidden;
+		    margin-top: -20px;
+			span {
+				display: block;
+			    margin: 7px 0;
+			    .rotate(90deg);
+			}
+		}
+	}
+	&.down {
+		p.sideways {
+			opacity: 0;
+			visibility: hidden;
+		}
+		p.down {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+@media (max-width: 768px) {  //MOBILE
+	#sidescroll {
+		display: none;
+	}
+	#side-slider {
+		min-height: auto;
+		//margin-bottom: 250px;
+	}
+	#primary-wrapper {
+			min-height: auto;
+	}
+	#secondary-wrapper {
+		width: 100%; 
+		section {
+			height: auto;
+			min-height: auto;
+			width: 100%; 
+			float: none;
+			position: relative;
+		}
+	}
+	#horizontal-static-images #horizontal-image-1 {
+		opacity: 0;
+		visibility: hidden;
+	}
+	#find-help {
+		display: none;
+	}
+	section.find-help-blank {
+		visibility: visible;
+	}
+	// section.charts {
+	// 	padding-top: 50px;
+	// 	&:before {
+	// 		content: '';
+	// 		position: absolute;
+	// 		width: 100%;
+	// 		height: 100px;
+	// 		top: 0;
+	// 		left: 0;
+	// 		right: 0;
+	// 		z-index: -1;
+	// 		background: rgba(0, 0, 0, 0.0); /* For browsers that do not support gradients */
+	// 	    background: -webkit-linear-gradient(rgba(0, 0, 0, 1.0), rgba(0,0,0,0.5), rgba(0, 0, 0, 0.0));  For Safari 5.1 to 6.0 
+	// 	    background: -o-linear-gradient(rgba(0, 0, 0, 1.0), rgba(0,0,0,0.5), rgba(0, 0, 0, 0.0)); /* For Opera 11.1 to 12.0 */
+	// 	    background: -moz-linear-gradient(rgba(0, 0, 0, 1.0), rgba(0,0,0,0.5), rgba(0, 0, 0, 0.0)); /* For Firefox 3.6 to 15 */
+	// 	    background: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0,0,0,0.5), rgba(0, 0, 0, 0.0)); /* Standard syntax */
+	// 	}
+	// }
+}
+
+@keyframes mymove1 {
+    0%   {opacity: 0.1;}
+    40%  {opacity: 1.0;}
+    90%  {opacity: 1.0;}
+	100%  {opacity: 0.1;}
+}
+
+@keyframes mymove2 {
+    0%   {opacity: 0.1;}
+	 30%   {opacity: 0.1;}
+    70%  {opacity: 1.0;}
+    90%  {opacity: 1.0;}
+	100%  {opacity: 0.1;}
+}
+
+@keyframes mymove3 {
+    0%   {opacity: 0.1;}
+	 60%   {opacity: 0.1;}
+    90%  {opacity: 1.0;}
+	100%  {opacity: 0.1;}
 }
 
 /*
