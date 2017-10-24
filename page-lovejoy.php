@@ -71,31 +71,29 @@
 	<div id="horizontal-static-images">
 		<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/side-1.jpg' ?>" alt="image" class="img-responsive" id="horizontal-image-1" />
 		<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/side-2.jpg' ?>" alt="image" class="img-responsive" id="horizontal-image-2" />
-		<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/side-3.jpg' ?>" alt="image" class="img-responsive" id="horizontal-image-3" />
-		<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/side-4.jpg' ?>" alt="image" class="img-responsive" id="horizontal-image-4" />
-		<section class="text-block black"  id="find-help"  role="complimentary"> <!-- BLANK PLACE HOLDER FOR CRISIS COMM -->
-			<div class="container">
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1 copy">
-						<h2>Where to find help</h2>    
-						<p>If you’re in crisis, please call the <b>Crisis Clinic of King County: 866-4-CRISIS (866-427-4747)</b> or <b>206-461-3222</b>. They can schedule next-day crisis appointments at Harborview or other local sites with behavioral health clinics.</p>
-						<p>Other resources include the <b>National Suicide Prevention Lifeline (888-628-9454)</b>, the <b>Lifeline Crisis Chat</b> (crisischat.org) and <b>911</b>.</p>
-						<p>If you are anxious, depressed or unhappy, or have other health-related concerns, <b>please don’t suffer in silence. There are solutions — and treatment works</b>. Start by reaching out to your family doctor, your school counselor or anyone else you trust.</p> 
-					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
-				</div><!-- .row -->
-			</div><!-- .container -->
-		</section><!-- .text-block .black -->
+		<!-- <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/side-3.jpg' ?>" alt="image" class="img-responsive" id="horizontal-image-3" /> -->
+		<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/side-4.jpg' ?>" alt="image" class="img-responsive" id="horizontal-image-3" />
 		<section id="sidescroll">
 			<p>Scroll</p>
-			<p class="sideways"><span>></span><span>></span><span>></span></p>
-			<p class="down"><span>></span><span>></span><span>></span></p>
+			<p class="sideways">
+				<a id="marker-1" data-href="#slide-1"></a>
+				<a id="marker-2" data-href="#slide-2"></a>
+				<a id="marker-3" data-href="#slide-3"></a>
+				<a id="marker-4" class="down" data-href="#charts"></a>
+			</p>
 		</section>
+		<!-- <section id="scrollit" class="scrollit read-more scroll-down-mid-story">
+			<p>Scroll Down</p>
+			<div class="mouse">
+				<div class="scroll"></div>
+			</div>
+		</section> -->
 	</div>
     <div id="secondary-wrapper" class="horizontal">
       <!-- <div class="scrollContent" id="slides"> -->
         <!-- START HORIZONTAL -->
 
-		<section class="text-block black">
+		<section class="text-block black" id="slide-1">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
@@ -108,7 +106,7 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block .black -->
-		<section class="text-block black">
+		<section class="text-block black" id="slide-2">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
@@ -119,19 +117,7 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block .black -->
-		<section class="text-block black find-help-blank"> <!-- BLANK PLACE HOLDER FOR CRISIS COMM -->
-			<div class="container">
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1 copy">
-						<h2>Where to find help</h2>    
-						<p>If you’re in crisis, please call the <b>Crisis Clinic of King County: 866-4-CRISIS (866-427-4747)</b> or <b>206-461-3222</b>. They can schedule next-day crisis appointments at Harborview or other local sites with behavioral health clinics.</p>
-						<p>Other resources include the <b>National Suicide Prevention Lifeline (888-628-9454)</b>, the <b>Lifeline Crisis Chat</b> (crisischat.org) and <b>911</b>.</p>
-						<p>If you are anxious, depressed or unhappy, or have other health-related concerns, <b>please don’t suffer in silence. There are solutions — and treatment works</b>. Start by reaching out to your family doctor, your school counselor or anyone else you trust.</p> 
-					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
-				</div><!-- .row -->
-			</div><!-- .container -->
-		</section><!-- .text-block .black -->
-		<section class="text-block black gradient">
+		<section class="text-block black gradient" id="slide-3">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
@@ -150,7 +136,7 @@
   </div>
 </div><!-- #primary-wrapper -->
 </section>
-		<section class="text-block white charts">
+		<section id="charts" class="text-block white charts">
 			<div class="container">
 				<div class="row">
 					<div class="copy">
@@ -200,6 +186,18 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block .white -->
+		<section class="text-block find-help-blank"> <!-- BLANK PLACE HOLDER FOR CRISIS COMM -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 copy">
+						<h2>Where to find help</h2>    
+						<p>If you’re in crisis, please call the <b>Crisis Clinic of King County: 866-4-CRISIS (866-427-4747)</b> or <b>206-461-3222</b>. They can schedule next-day crisis appointments at Harborview or other local sites with behavioral health clinics.</p>
+						<p>Other resources include the <b>National Suicide Prevention Lifeline (888-628-9454)</b>, the <b>Lifeline Crisis Chat</b> (crisischat.org) and <b>911</b>.</p>
+						<p>If you are anxious, depressed or unhappy, or have other health-related concerns, <b>please don’t suffer in silence. There are solutions — and treatment works</b>. Start by reaching out to your family doctor, your school counselor or anyone else you trust.</p> 
+					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</section><!-- .text-block .black -->
 		      <section class="text-block giving-widget-promoted">
               <div class="row">
                   <div class="first-col col-md-5 col-md-offset-4 col-sm-8 col-sm-offset-1 col-xs-offset-1 col-xs-10">
