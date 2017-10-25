@@ -10,7 +10,7 @@
 	<section class="intro" id="intro-vid">
 		<div class="intro-body container">
 			<div class="row">
-				<div class="col-md-5 col-md-offset-6 col-xs-7 col-xs-offset-4" id='intro-text'>
+				<div class="col-md-5 col-md-offset-6 col-xs-10 col-xs-offset-2" id='intro-text'>
 					<h1>A Lifeline</br>to Mental Health</h1>
 					<p>Lisa Lovejoy, a program coordinator at Harborview Medical Center, suffered for years with mental illness. By sharing her story, she hopes to inspire others to find their way to better health.</p>
 				</div><!-- .col-sm-8 .col-md-8 .col-lg-8 .col-md-offset-1 .col-lg-offset-2 #intro-text -->
@@ -41,9 +41,9 @@
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1">
 						<a data-lity href="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&rel=0&showinfo=0" class="center-block">
-							<svg xmlns="http://www.w3.org/2000/svg" width="75.649" height="75.625" viewBox="0 0 75.649 75.625">
-								<circle fill="none" stroke="#fff" stroke-width="4.649" stroke-miterlimit="10" cx="37.785" cy="37.822" r="34.703"/>
-								<path fill="#fff" d="M25.88 19.814l32.885 18.008-32.886 18.01"/>
+							<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+								<circle id="play-cir" fill="none" stroke="#fff" stroke-width="4.649" stroke-miterlimit="10" cx="75" cy="75" r="70"/>
+								<path id="play-tri" fill="#fff" d="M57.767,46.187L110.382,75l-52.616,28.816"/>
 							</svg>
 						</a>
 					</div><!-- .col-md-10 .col-md-offset-1 -->
@@ -60,7 +60,7 @@
 						<p>Mental illness often arrives in full force in youth, as it did for Lovejoy. But when she set off for college, the Seattle native had big dreams.</p>
 						<p>“I always wanted to do great things, to do things in the world,” she says.</p>
 						<p>Unfortunately, she brought more than dreams to Bard College. She brought depression, mania and an ever-present sense of loneliness. Lovejoy lost sleep, lied to her teachers, stole a friend’s phone card and skipped classes. “I completely fell apart in a short amount of time,” she says. She left school and returned to Seattle, defeated.</p>
-						<p class="gold-quote headline-gold white">I called it 'the darkness.'</br>It felt like I was falling down a chute.</p>
+						<p class="gold-quote headline-gold white">I called it 'the darkness.'</br>It felt like I was falling down a chute. <b>– Lisa Lovejoy</b></p>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 				</div><!-- .row -->
 			</div><!-- .container -->
@@ -74,7 +74,7 @@
 		<!-- <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/side-3.jpg' ?>" alt="image" class="img-responsive" id="horizontal-image-3" /> -->
 		<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/side-4.jpg' ?>" alt="image" class="img-responsive" id="horizontal-image-3" />
 		<section id="sidescroll">
-			<p>Scroll</p>
+			<p>Continue scrolling</p>
 			<p class="sideways">
 				<a id="marker-1" data-href="#slide-1"></a>
 				<a id="marker-2" data-href="#slide-2"></a>
@@ -98,7 +98,7 @@
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
 						<h2>Losing her way</h2>
-						<p>Over the next two decades, Lovejoy handled her mental health issues as best she could. She took a series of easy jobs, but felt ashamed of them; she clearly wasn’t living up to her potential. She married a man, even though she thought she might be gay.</p> 
+						<p>OOver the next two decades, Lovejoy handled her mental health issues as best she could. She took a series of easy jobs, but felt ashamed of them; she clearly wasn’t living up to her potential. She married a man, even though she thought she might be gay.</p> 
 						<p>At the same time, Lovejoy was carrying a serious burden: a creeping sense of despair. “Every time I went to that place in my head, I called it ‘the darkness,’” she says. “It felt like I was falling down a chute.”</p> 
 						<p>In 2007, as she entered the final year of her 30s, Lovejoy found herself divorced and living in an attic apartment with her two children. She was manic, depressed, worn out and barely maintaining her job. Then, at a doctor’s appointment, she broke down and wept — and the doctor admitted her to the psychiatric unit at UW Medical Center.</p>
 						<p>“Finally, someone noticed that I was miserable,” Lovejoy says.</p> 
@@ -142,17 +142,18 @@
 					<div class="copy">
 						<h2 class="orange">Who do you know?</h2>
 						<div class="col-md-6">
-							<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/chart-1.jpg' ?>" alt="" class="img-responsive" />
+							<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/chart-1.jpg' ?>" alt="1 in 5 adults have a mental health condition; 1,049,000 in Washington state." class="img-responsive" />
 							<p class="highlight orange">1 <span>in</span> 5</p>
 							<p class="orange">adults has a mental health condition</p>
 							<p>1,049,000 in Washington state</p>
 						</div><!-- .col-md-6 .copy -->
 						<div class="col-md-6">
-							<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/chart-2.jpg' ?>" alt="" class="img-responsive" />
+							<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/chart-2.jpg' ?>" alt="60% do not receive adequate care; 635,000 in Washington state." class="img-responsive" />
 							<p class="highlight orange">60%</p>
 							<p class="orange">do not receive any treatment</p>
 							<p>635,000 in Washington state</p>
 						</div><!-- .col-md-6 .copy -->
+						<p class="caption fancy"><a href="http://www.mentalhealthamerica.net/issues/state-mental-health-america">The State of Mental Health in America</a>, 2017</p>
 					</div>
 				</div><!-- .row -->
 			</div><!-- .container -->
@@ -161,18 +162,19 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy no-top">
-						<p class="gold-quote headline-gold purple">You’re not a healthcare provider if all you do is what you bill for.</p>
+						<p class="gold-quote headline-gold purple">You’re not a healthcare provider if all you do is what you bill for. <b>— Darcy Jaffe, Chief Nursing Officer, Harborview Medical Center</b></p>
 						<h2>Providing more than healthcare</h2>
 						<p>Today, Lovejoy works at the Housing and Recovery Through Peer Services (HARPS) program, funded by King County and administered at Harborview. HARPS staff help patients transfer into housing after they leave hospital-based behavioral health programs.</p>
-						<p>Harborview and its faculty and staff offer more than physical health care. Their patients come from all walks of life, and some are hungry, poor and homeless. “All of these components have an impact on health,” says Darcy Jaffe, Harborview’s chief nursing officer and senior associate for patient care services. “You’re not a healthcare provider if all you do is what you bill for.”</p>
-						<p>In the area of mental health and wellness, Harborview is part of a team, working with government and nonprofits on programs like HARPS. Employees like Lovejoy — formerly a hands-on client liaison, or “peer bridger,” and now a program coordinator — develop deep bonds with the people they help.</p>
+						<p>Harborview and its faculty and staff offer more than physical health care. Their patients come from all walks of life, and some are hungry, poor and homeless. “All of these components have an impact on health,” says Darcy Jaffe, Harborview’s chief nursing officer and senior associate for patient care services. “You’re not a health care provider if all you do is what you bill for.”</p>
+						<p>In the area of mental health and wellness, Harborview is part of a team, working with the government and nonprofits on programs like HARPS. The forthcoming UW Medicine Behavioral Health Institute, a key element of the <a href="http://www.acceleratemed.org">Campaign for UW Medicine</a> and the UW’s <a href="http://www.washington.edu/populationhealth">Population Health Initiative</a>, will further accelerate mental health work at Harborview — making the organization’s efforts in research, advocacy, training and patient care even more effective.</p>
+						<p>When it comes to care, focused personal attention is essential. Harborview depends on employees like Lovejoy — formerly a hands-on client liaison, or “peer bridger,” and now a program coordinator — because they develop deep bonds with the people they help.</p>
 						<p>“So much of what we do is working with motivation and hope,” says Brigitte Folz, the head of HARPS. “Lisa seemed like a perfect fit for the HARPS program.”</p>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block .white -->
 		<section id="video-body" class="text-block transSection mentors-caption">
-			<p><span>Lovejoy and her family.</span></p>
+			<p><span>Lisa Lovejoy with one of her daughters, Delilah, and her wife, Robie Flannagan.</span></p>
 		</section><!-- #video-body-->
 		<section class="text-block white">
 			<div class="container">
@@ -183,16 +185,17 @@
 						<p>As Lovejoy says, recovery is not a straight upward line — there are hills and valleys, stops and starts. This is a truth that patients need to hear, especially when they’re having a hard time.</p>
 						<p>“You can get back to that high point again,” she tells them. “It’s a zigzag. It’s a journey. And it’s hard and joyous.”</p>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
+					<hr>
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block .white -->
 		<section class="text-block find-help-blank"> <!-- BLANK PLACE HOLDER FOR CRISIS COMM -->
 			<div class="container">
 				<div class="row">
-					<div class="col-md-10 col-md-offset-1 copy">
+					<div class="col-md-10 col-md-offset-1 copy no-top">
 						<h2>Where to find help</h2>    
-						<p>If you’re in crisis, please call the <b>Crisis Clinic of King County: 866-4-CRISIS (866-427-4747)</b> or <b>206-461-3222</b>. They can schedule next-day crisis appointments at Harborview or other local sites with behavioral health clinics.</p>
-						<p>Other resources include the <b>National Suicide Prevention Lifeline (888-628-9454)</b>, the <b>Lifeline Crisis Chat</b> (crisischat.org) and <b>911</b>.</p>
+						<p>If you’re in crisis, please call the <b>Crisis Clinic of King County: 866-4-CRISIS (866-427-4747)</b>. They can schedule next-day crisis appointments at Harborview or other local sites with behavioral health clinics.</p>
+						<p>Other resources include the <b>National Suicide Prevention Lifeline (1-800-273-8255)</b>, the <b>Lifeline Crisis Chat (crisischat.org)</b> and <b>911</b>.</p>
 						<p>If you are anxious, depressed or unhappy, or have other health-related concerns, <b>please don’t suffer in silence. There are solutions — and treatment works</b>. Start by reaching out to your family doctor, your school counselor or anyone else you trust.</p> 
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 				</div><!-- .row -->
@@ -203,7 +206,7 @@
                   <div class="first-col col-md-5 col-md-offset-4 col-sm-8 col-sm-offset-1 col-xs-offset-1 col-xs-10">
                     <div>             
                       <h2 class="headline-gold white">You deserve good mental health care.</h2>
-                      <p>Everyone does. Help us make recovery possible for everyone, by supporting the UW Medicine Behavioral Health Institute at Harborview.</p>
+                      <p>Everyone does. Help us make recovery possible for everyone by supporting the UW Medicine Behavioral Health Institute at Harborview.</p>
                     </div>
                   </div>
                   <div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-offset-1 ">

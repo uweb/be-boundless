@@ -2,9 +2,9 @@ $(function(){
 
 	var isMobile = ($(window).width() < 768) ? true : false;
 
-	var xOffset = {'#slide-1': '0%',
-						'#slide-2': '33%',
-						'#slide-3': '67%'};
+	var xOffset = {'#slide-1': '0.0',
+						'#slide-2': '0.5',
+						'#slide-3': '1.0'};
 
 	var controllerLJ = new ScrollMagic.Controller();
 	//var controllerLJHorizontal = new ScrollMagic.Controller({vertical: false});
@@ -54,9 +54,9 @@ $(function(){
 		$destination = $(this).attr("data-href");
 		if($destination != "#charts") {
 			$xOff = xOffset[$destination];
-		    $('#secondary-wrapper').animate({
-		            transform: "translate(" + $xOff + ", 0%) translate3d(0px, 0px, 0px)"
-		    }, 1000);
+		    TweenLite.to(wipeAnimation, 1, {progress:$xOff, ease:Power2.easeOut});
+		    wipeAnimation.progress( $xOff, true );
+		    goHorizontal.update(true);
 		} else {
 			$('html, body').animate({
 		        scrollTop: $($destination).offset().top

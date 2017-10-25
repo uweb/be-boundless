@@ -87,13 +87,13 @@ html{
 	}
 
 	@media @phone-only {
-		background-image:url("@{lovejoy}/fpo.png");
+		//background-image:url("@{lovejoy}/fpo.png");
 		width:100%;
 		height:300px;
 		background-position: right center;
 
 		#intro-text{
-			width:100%;
+			//width:100%;
 			left:0;
 			padding:0 30px;
 		}
@@ -121,11 +121,11 @@ html{
 	}
 
 	@media (max-width: 500px) {
-		.intro-body {
-			.col-xs-8 {
-				width: 85%;
-			}
-		}
+		// .intro-body {
+		// 	.col-xs-8 {
+		// 		width: 85%;
+		// 	}
+		// }
 		.scrollit{
 			display:none;
 		}
@@ -164,7 +164,36 @@ html{
 	a{
 		margin-top:15vw;
 		text-align:center;
+		svg,
+		#play-cir,
+		#play-tri {
+			.transition(all .2s);
+		}
+		&:hover {
+			cursor: pointer;
+			#play-cir {
+				stroke: @lightgold;
+			}
+			#play-tri {
+				fill: @lightgold;
+			}
+			svg {
+				transform-origin: center center;
+				.scale(1.2, 1.2);
+			}
+		}
 	}
+	@media @phone-only {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            margin-top: 0;
+            svg {
+            	.scale(0.6,0.6);
+            }
+        }
+    }
 }
 #video-body{
 	height:40vw;
@@ -185,6 +214,10 @@ html{
 	font-size: 22px; 
 }
 
+.gold-quote b {
+	font-weight: 700;
+}
+
 .gold-quote.white {
 	color: white;
 	z-index: 1;
@@ -194,13 +227,32 @@ html{
 	&:after {
 		background-position: -420px -374px;
 	}
+	b {
+		color: white;
+	}
+}
+
+section.charts p.caption {
+	font-size: .75em;
+	font-weight: 100;
+	text-align: center;
+	font-style: italic;
+	// &.fancy {
+	// 	z-index: 1;
+	//     top: 45px;
+	//     position: relative;
+	//     color: white;
+	// }
+	// &:not(.fancy){
+	// 	margin-bottom: 50px;
+	// }
 }
 
 .no-h2 {
 	margin-top: 79.5px;
 }
 
-.no-top {
+div.copy.no-top {
 	padding-top: 0;
 }
 
@@ -308,6 +360,7 @@ section.transSection {
 		float: left;
 		&.gradient {
 			background-color: rgba(0, 0, 0, 0.4);
+			//GRADIENT ON LEFT
 		} 
 	}
 }
