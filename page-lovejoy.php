@@ -40,7 +40,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1">
-						<a data-lity href="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&rel=0&showinfo=0" class="center-block">
+						<a data-lity href="https://www.youtube.com/embed/7AYdC1iNhZs?autoplay=1&rel=0&showinfo=0" class="center-block">
 							<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
 								<circle id="play-cir" fill="none" stroke="#fff" stroke-width="4.649" stroke-miterlimit="10" cx="75" cy="75" r="70"/>
 								<path id="play-tri" fill="#fff" d="M57.767,46.187L110.382,75l-52.616,28.816"/>
