@@ -164,10 +164,27 @@ html{
 	a{
 		margin-top:15vw;
 		text-align:center;
+		height: 150px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		svg,
 		#play-cir,
-		#play-tri {
+		#play-tri,
+		span,
+		&:before {
 			.transition(all .2s);
+		}
+		svg {
+			position: absolute;
+    		right: 0;
+		}
+		span {
+			color: white;
+			font-size: 28px;
+			margin-right: 200px;
+			display: inline-block;
+			//width: calc(~"50vw - 200px");
 		}
 		&:hover {
 			cursor: pointer;
@@ -179,8 +196,27 @@ html{
 			}
 			svg {
 				transform-origin: center center;
-				.scale(1.2, 1.2);
+				//.scale(1.2, 1.2);
 			}
+			span {
+				color: @lightgold;
+			}
+			&:before {
+				background: @lightgold;
+			}
+		}
+		&:before {
+		    content: '';
+		    width: 2px;
+		    position: absolute;
+		    height: 150px;
+		    bottom: 0;
+		    right: 200px;
+		    opacity: 1;
+		    background: #FFF;
+		    -webkit-transform: skew(-15deg, 0);
+		    -ms-transform: skewX(-15deg) skewY(0);
+		    transform: skew(-15deg, 0);
 		}
 	}
 	@media @phone-only {
@@ -190,7 +226,29 @@ html{
         a {
             margin-top: 0;
             svg {
+            	.scale(0.5,0.5);
+            	right: -20px;
+            }
+            span {
+				font-size: 17px;
+				margin-right: 80px;
+            }
+            &:before {
+            	display: none;
+            }
+        }
+    }
+    @media @tablet-portait-only {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            margin-top: 0;
+            svg {
             	.scale(0.6,0.6);
+            }
+            span {
+				font-size: 22px;
             }
         }
     }
