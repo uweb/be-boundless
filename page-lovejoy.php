@@ -31,7 +31,7 @@
 						<p class="purple">“We looked like the perfect family,” says Lisa Lovejoy. “Everything looked so nice on the outside.”</p>
 						<p>Family photos prove her point. Lovejoy had a beautiful mother and a handsome father who enjoyed spending time with friends and family. When she was a toddler, Lovejoy and her mother wore matching outfits. Later on, Lovejoy would star in high-school plays. She was talented, vibrant, going places.</p>
 						<p>But those photos tell only a portion of the truth. “The discrepancy between what was real and what it looked like from the outside made me angry,” says Lovejoy. Her parents argued, then divorced. Her mother, who had mental health challenges, abused her. She spent years as a child, then as an adult, struggling with anxiety and depression.</p>
-						<p>“It took me a long time to get help,” Lovejoy says. But eventually she did — at Harborview Medical Center.</p>
+						<p>“It took me a long time to get help,” Lovejoy says. But eventually she did &mdash; at Harborview Medical Center.</p>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 				</div><!-- .row -->
 			</div><!-- .container -->
@@ -62,7 +62,7 @@
 						<p>Mental illness often arrives in full force in youth, as it did for Lovejoy. But when she set off for college, the Seattle native had big dreams.</p>
 						<p>“I always wanted to do great things, to do things in the world,” she says.</p>
 						<p>Unfortunately, she brought more than dreams to Bard College. She brought depression, mania and an ever-present sense of loneliness. Lovejoy lost sleep, lied to her teachers, stole a friend’s phone card and skipped classes. “I completely fell apart in a short amount of time,” she says. She left school and returned to Seattle, defeated.</p>
-						<p class="gold-quote headline-gold white">I called it 'the darkness.'</br>It felt like I was falling down a chute. <b>– Lisa Lovejoy</b></p>
+						<p class="gold-quote headline-gold white">I called it &#8216;the darkness.&#8217;</br>It felt like I was falling down a chute. <b>&mdash; Lisa Lovejoy</b></p>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 				</div><!-- .row -->
 			</div><!-- .container -->
@@ -100,9 +100,9 @@
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
 						<h2>Losing her way</h2>
-						<p>OOver the next two decades, Lovejoy handled her mental health issues as best she could. She took a series of easy jobs, but felt ashamed of them; she clearly wasn’t living up to her potential. She married a man, even though she thought she might be gay.</p> 
-						<p>At the same time, Lovejoy was carrying a serious burden: a creeping sense of despair. “Every time I went to that place in my head, I called it ‘the darkness,’” she says. “It felt like I was falling down a chute.”</p> 
-						<p>In 2007, as she entered the final year of her 30s, Lovejoy found herself divorced and living in an attic apartment with her two children. She was manic, depressed, worn out and barely maintaining her job. Then, at a doctor’s appointment, she broke down and wept — and the doctor admitted her to the psychiatric unit at UW Medical Center.</p>
+						<p>Over the next two decades, Lovejoy handled her mental health issues as best she could. She took a series of easy jobs, but felt ashamed of them; she clearly wasn’t living up to her potential. She married a man, even though she thought she might be gay.</p> 
+						<p>At the same time, Lovejoy was carrying a serious burden: a creeping sense of despair. “Every time I went to that place in my head, I called it &#8216;the darkness,&#8217;” she says. “It felt like I was falling down a chute.”</p> 
+						<p>In 2007, as she entered the final year of her 30s, Lovejoy found herself divorced and living in an attic apartment with her two children. She was manic, depressed, worn out and barely maintaining her job. Then, at a doctor’s appointment, she broke down and wept &mdash; and the doctor admitted her to the psychiatric unit at UW Medical Center.</p>
 						<p>“Finally, someone noticed that I was miserable,” Lovejoy says.</p> 
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 				</div><!-- .row -->
@@ -113,7 +113,7 @@
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
 						<p class="no-h2">It was the first of three hospitalizations that year. But instead of turning a corner, Lovejoy felt her life begin to dissolve.</p>
-						<p>Her boss gently told her not to come back to work. She lost her apartment and moved in with her boyfriend — “a bad move,” she says. And in a decision that she still regrets, Lovejoy surrendered custody rights to her children, Zola and Delilah, saying that she felt like “a horrible mother.”</p>
+						<p>Her boss gently told her not to come back to work. She lost her apartment and moved in with her boyfriend &mdash; “a bad move,” she says. And in a decision that she still regrets, Lovejoy surrendered custody rights to her children, Zola and Delilah, saying that she felt like “a horrible mother.”</p>
 						<p>Then she found a lifeline at Harborview Medical Center: dialectical behavioral therapy, or DBT.</p> 
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 				</div><!-- .row -->
@@ -164,12 +164,12 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy no-top">
-						<p class="gold-quote headline-gold purple">You’re not a healthcare provider if all you do is what you bill for. <b>— Darcy Jaffe, Chief Nursing Officer, Harborview Medical Center</b></p>
-						<h2>Providing more than healthcare</h2>
+						<p class="gold-quote headline-gold purple">You’re not a health care provider if all you do is what you bill for. <b>&mdash; Darcy Jaffe, Chief Nursing Officer, Harborview Medical Center</b></p>
+						<h2>Providing more than health care</h2>
 						<p>Today, Lovejoy works at the Housing and Recovery Through Peer Services (HARPS) program, funded by King County and administered at Harborview. HARPS staff help patients transfer into housing after they leave hospital-based behavioral health programs.</p>
 						<p>Harborview and its faculty and staff offer more than physical health care. Their patients come from all walks of life, and some are hungry, poor and homeless. “All of these components have an impact on health,” says Darcy Jaffe, Harborview’s chief nursing officer and senior associate for patient care services. “You’re not a health care provider if all you do is what you bill for.”</p>
-						<p>In the area of mental health and wellness, Harborview is part of a team, working with the government and nonprofits on programs like HARPS. The forthcoming UW Medicine Behavioral Health Institute, a key element of the <a href="http://www.acceleratemed.org">Campaign for UW Medicine</a> and the UW’s <a href="http://www.washington.edu/populationhealth">Population Health Initiative</a>, will further accelerate mental health work at Harborview — making the organization’s efforts in research, advocacy, training and patient care even more effective.</p>
-						<p>When it comes to care, focused personal attention is essential. Harborview depends on employees like Lovejoy — formerly a hands-on client liaison, or “peer bridger,” and now a program coordinator — because they develop deep bonds with the people they help.</p>
+						<p>In the area of mental health and wellness, Harborview is part of a team, working with the government and nonprofits on programs like HARPS. The forthcoming UW Medicine Behavioral Health Institute, a key element of the <a href="http://www.acceleratemed.org">Campaign for UW Medicine</a> and the UW’s <a href="http://www.washington.edu/populationhealth">Population Health Initiative</a>, will further accelerate mental health work at Harborview &mdash; making the organization’s efforts in research, advocacy, training and patient care even more effective.</p>
+						<p>When it comes to care, focused personal attention is essential. Harborview depends on employees like Lovejoy &mdash; formerly a hands-on client liaison, or “peer bridger,” and now a program coordinator &mdash; because they develop deep bonds with the people they help.</p>
 						<p>“So much of what we do is working with motivation and hope,” says Brigitte Folz, the head of HARPS. “Lisa seemed like a perfect fit for the HARPS program.”</p>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 				</div><!-- .row -->
@@ -184,7 +184,7 @@
 					<div class="col-md-10 col-md-offset-1 copy">
 						<h2>A hard, joyous journey to recovery</h2>
 						<p>Now 50, Lovejoy has a smile that lights up the room and a lively, self-aware sense of humor. In addition to having a job she loves, she recently married her wife, Robie, and she has reconciled with her mother and her children. Lovejoy is in therapy, and she meditates; lithium helps, too. There are still bad days, but DBT has given her the tools to cope.</p>
-						<p>As Lovejoy says, recovery is not a straight upward line — there are hills and valleys, stops and starts. This is a truth that patients need to hear, especially when they’re having a hard time.</p>
+						<p>As Lovejoy says, recovery is not a straight upward line &mdash; there are hills and valleys, stops and starts. This is a truth that patients need to hear, especially when they’re having a hard time.</p>
 						<p>“You can get back to that high point again,” she tells them. “It’s a zigzag. It’s a journey. And it’s hard and joyous.”</p>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 					<hr>
@@ -198,7 +198,7 @@
 						<h2>Where to find help</h2>    
 						<p>If you’re in crisis, please call the <b>Crisis Clinic of King County: 866-4-CRISIS (866-427-4747)</b>. They can schedule next-day crisis appointments at Harborview or other local sites with behavioral health clinics.</p>
 						<p>Other resources include the <b>National Suicide Prevention Lifeline (1-800-273-8255)</b>, the <b>Lifeline Crisis Chat (crisischat.org)</b> and <b>911</b>.</p>
-						<p>If you are anxious, depressed or unhappy, or have other health-related concerns, <b>please don’t suffer in silence. There are solutions — and treatment works</b>. Start by reaching out to your family doctor, your school counselor or anyone else you trust.</p> 
+						<p>If you are anxious, depressed or unhappy, or have other health-related concerns, <b>please don’t suffer in silence. There are solutions &mdash; and treatment works</b>. Start by reaching out to your family doctor, your school counselor or anyone else you trust.</p> 
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 				</div><!-- .row -->
 			</div><!-- .container -->
@@ -207,7 +207,7 @@
               <div class="row">
                   <div class="first-col col-md-5 col-md-offset-4 col-sm-8 col-sm-offset-1 col-xs-offset-1 col-xs-10">
                     <div>             
-                      <h2 class="headline-gold white">You deserve good mental health care.</h2>
+                      <h2 class="headline-gold white">You deserve good mental health care</h2>
                       <p>Everyone does. Help us make recovery possible for everyone by supporting the UW Medicine Behavioral Health Institute at Harborview.</p>
                     </div>
                   </div>
