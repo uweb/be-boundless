@@ -76,7 +76,7 @@
 		<!-- <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/side-3.jpg' ?>" alt="image" class="img-responsive" id="horizontal-image-3" /> -->
 		<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/side-4.jpg' ?>" alt="image" class="img-responsive" id="horizontal-image-3" />
 		<section id="sidescroll">
-			<p>Continue scrolling</p>
+			<p>Continue scrolling down</p>
 			<p class="sideways">
 				<a id="marker-1" data-href="#slide-1"></a>
 				<a id="marker-2" data-href="#slide-2"></a>
