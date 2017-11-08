@@ -102,7 +102,7 @@ global $styles;
 							<li><a href="https://nursing.uw.edu/community/donate/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-nursing">School of Nursing</a></li>
 							<li><a href="https://sop.washington.edu/alumni-donors/give-to-the-school/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-pharmacy">School of Pharmacy</a></li>
 							<li><a href="http://sph.washington.edu/giving/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-public-health">School of Public Health</a></li>
-							<li><a href="http://socialwork.uw.edu/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-social-work">School of Social Work</a></li>
+							<li><a href="https://socialwork.uw.edu/giving-opportunities/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-social-work">School of Social Work</a></li>
 							<li><a href="http://www.lib.washington.edu/support/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-libraries">University Libraries</a></li>
 							<li><a href="http://www.uwb.edu/give/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-uw-bothell">UW Bothell</a></li>
 							<li><a href="http://www.acceleratemed.org/?utm_source=boundless&utm_medium=giving-opportunities&utm_campaign=giving-medicine">UW Medicine</a></li>
