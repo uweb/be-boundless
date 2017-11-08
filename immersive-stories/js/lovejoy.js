@@ -24,6 +24,18 @@ $(function(){
 
 	if(!isMobile) {
 
+		var gif5 = new ScrollMagic.Scene({
+			triggerElement: '#lazyloadgif',
+			triggerHook: 0.5,
+			reverse: false,
+		})
+		.on('start', function(){
+			$gif5 = $('#lazyloadgif');
+			$src5 = $gif5.attr('src');
+			$gif5.attr('src','');
+			$gif5.attr('src',$src5 + "?");
+		});
+
 		var wipeAnimation = new TimelineMax()
 			.to("#secondary-wrapper", 1,   {x: "-33%"}) //step 2
 			.to("#horizontal-image-2", 1,   {opacity: 1, visibility: "visible"}, "-=1.0")
@@ -47,7 +59,24 @@ $(function(){
 		})
 			.setPin('#primary-wrapper')
 			.setTween(wipeAnimation)
+			.on('end', function(){
+				$('#lazyloadgif').addClass('active');
+				gif5.addTo(controllerLJ);
+			})
 			.addTo(controllerLJ);
+	} else {
+		var gif = new ScrollMagic.Scene({
+			triggerElement: '#lazyloadgif',
+			triggerHook: 0.5,
+			reverse: false,
+		})
+		.on('start', function(){
+			$gif5 = $('#lazyloadgif');
+			$src5 = $gif5.attr('src');
+			$gif5.attr('src','');
+			$gif5.attr('src',$src5 + "?");
+		})
+		.addTo(controllerLJ);
 	}
 
 	$("[data-href]").click(function() {
@@ -64,17 +93,5 @@ $(function(){
 		}
 	});
 
-	var gif5 = new ScrollMagic.Scene({
-			triggerElement: '#lazyloadgif',
-			triggerHook: 0.1,
-			reverse: false,
-		})
-		.on('start', function(){
-			$gif5 = $('#lazyloadgif');
-			$src5 = $gif5.attr('src');
-			$gif5.attr('src','');
-			$gif5.attr('src',$src5 + "?");
-		})
-		.addIndicators()
-		.addTo(controllerLJ);
+
 });
