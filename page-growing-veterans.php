@@ -665,7 +665,7 @@
 
                <p>Now a newly minted graduate, Brown recently transitioned from executive director of Growing Veterans to president of the board of directors — freeing up time to launch his career as a PTSD counselor for veterans.</p>
 
-                <p>Brown says the UW’s flexible <a href="http://socialwork.uw.edu/programs/master-of-social-work-program">M.S.W. extended degree program</a> gave him much more than just the tools and credentials he needed to be a counselor. </p>
+                <p>Brown says the UW’s flexible <a href="http://socialwork.uw.edu/programs/msw/msw-extended-degree-program">M.S.W. extended degree program</a> gave him much more than just the tools and credentials he needed to be a counselor. </p>
 
                 <p>His professors supported him as he focused many of his research projects on furthering the mission of Growing Veterans. And, though his concentration was in integrative health and mental health practice, Brown also learned about leadership and community building.</p>
 
@@ -692,8 +692,8 @@
 
                          <p><b>At the UW</b><br>
                                          206-685-SAFE (7233)<br>
-                                         <a href="http://www.washington.edu/safecampus/index.html">SafeCampus</a><br>
-                                         <a href="http://www.washington.edu/safecampus/student/resources-uw.html">Student resources</a></p>
+                                         <a href="http://www.washington.edu/safecampus/">SafeCampus</a><br>
+                                         <a href="http://www.washington.edu/safecampus/resources/">Student resources</a></p>
 
                          <p><b>In Seattle/King County</b><br>
                                          866-4-CRISIS (427-4747)<br>
