@@ -63,4 +63,18 @@ $(function(){
 		    }, 1000);
 		}
 	});
+
+	var gif5 = new ScrollMagic.Scene({
+			triggerElement: '#lazyloadgif',
+			triggerHook: 0.1,
+			reverse: false,
+		})
+		.on('start', function(){
+			$gif5 = $('#lazyloadgif');
+			$src5 = $gif5.attr('src');
+			$gif5.attr('src','');
+			$gif5.attr('src',$src5 + "?");
+		})
+		.addIndicators()
+		.addTo(controllerLJ);
 });

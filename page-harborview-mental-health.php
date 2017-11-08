@@ -143,14 +143,13 @@
 				<div class="row">
 					<div class="copy">
 						<h2 class="orange">Who do you know?</h2>
+						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/medicine.gif' ?>" alt="1 in 5 adults have a mental health condition; 1,049,000 in Washington state. 60% do not recieve any treatment; 635,000 in Washington state." class="img-responsive lazyload" id="lazyloadgif" />
 						<div class="col-md-6">
-							<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/chart-1.jpg' ?>" alt="1 in 5 adults have a mental health condition; 1,049,000 in Washington state." class="img-responsive" />
 							<p class="highlight orange">1 <span>in</span> 5</p>
 							<p class="orange">adults has a mental health condition</p>
 							<p>1,049,000 in Washington state</p>
 						</div><!-- .col-md-6 .copy -->
 						<div class="col-md-6">
-							<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/lovejoy/chart-2.jpg' ?>" alt="60% do not receive adequate care; 635,000 in Washington state." class="img-responsive" />
 							<p class="highlight orange">60%</p>
 							<p class="orange">do not receive any treatment</p>
 							<p>635,000 in Washington state</p>
