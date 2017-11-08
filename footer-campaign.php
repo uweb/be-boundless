@@ -25,6 +25,15 @@ if($_SERVER['HTTP_HOST'] != 'localhost'){
         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
         ga('create', 'UA-15747328-1', 'auto');
         ga('send', 'pageview');
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15747328-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-15747328-1');
         </script><?php
     }
 ?>
