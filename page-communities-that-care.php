@@ -118,22 +118,22 @@
 					</div>
 					<div class="col-xs-10 col-xs-offset-1 col-md-3 col-md-offset-1">
 						<h4>Coach</h4>
-						<p>The coach is the committed and clear-headed adult who sets the standards, such as showing up on time and playing by the rules of the game.</p>
+						<p>The coach is the committed and clearheaded adult who sets the standards, such as showing up on time and playing by the rules of the game.</p>
 					</div>
 					<div class="col-xs-10 col-xs-offset-1 col-md-3 col-md-offset-1">
 						<h4>Team</h4>
-						<p>The team is a unified group with diverse players that share a common goal and follow the same rules, but also get the celbrate their differences and develop their strengths.</p>
+						<p>The team is a unified group of diverse players who share a common goal and follow the same rules, but also get to celebrate their differences and develop their strengths.</p>
 					</div>
 					<div class="col-xs-10 col-xs-offset-1 col-md-3 col-md-offset-1">
 						<h4>Community</h4>
-						<p>Communities are emplowered when they connect with young people and provide meaningful opportunities for youth to thrive and flourish.</p>
+						<p>Communities are empowered when they connect with young people and provide meaningful opportunities for youth to thrive.</p>
 					</div>
 					<div class="col-xs-12">
 						<span></span><!--line-->
 					</div>
 					<div class="col-xs-12 col-md-7 col-md-offset-5">
 						<h4 class="move-back">Bonding</h4>
-						<p>Bonding &mdash; with other youth, coaches, teachers and family and community members &mdash; is the magic that makes the social development strategy work, and it's what fosters lasting, healthy behaviors. Bonding is what motivates young poeple to follow standards for healthy behaviors, and stengthens each step of the strategy.</p>
+						<p>Bonding &mdash; with other youth, coaches, teachers and family and community members &mdash; is the magic that makes the social development strategy work, and it's what fosters lasting, healthy behaviors. Bonding is what motivates young people to follow standards for healthy behaviors and strengthens each step of the strategy.</p>
 					</div>
 					<div class="col-md-7">
 						<img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/socialwork/gg-diamond.png" alt="Baseball diagram" class="" />
