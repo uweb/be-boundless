@@ -1,6 +1,6 @@
 <?php
 
-  $twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/ica/players.jpg';
+  $twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/ica/twitter_card.png';
   $twitter_title = 'Havana McElvaine: Changing the game';
   $twitter_description = 'A champion for racial equity and social justice, Husky women’s soccer standout Havana McElvaine, ’17, is exploring what it means to be black in America — and around the globe. ';
   $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
