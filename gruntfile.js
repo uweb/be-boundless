@@ -69,6 +69,12 @@ module.exports = function(grunt) {
          'campaign/ScrollMagic-master/scrollmagic/uncompressed/plugins/animation.gsap.js',
          'campaign/ScrollMagic-master/scrollmagic/uncompressed/plugins/debug.addIndicators.js' 
         ],
+        environmentLibraries : [
+          'immersive-stories/js/libraries/jquery.easings.min.js',
+          'immersive-stories/js/libraries/scrolloverflow.min.js',
+          'immersive-stories/js/libraries/fullpage.fadingEffect.min.js',
+          'immersive-stories/js/libraries/jquery.fullpage.extensions.min.js'
+        ],
         src: [ 'js/intro.js', '<%= concat.dist.libraries %>', '<%= concat.dist.theme %>', 'js/outro.js' ],
         dest: 'js/boundless.js'
       }
@@ -215,7 +221,8 @@ module.exports = function(grunt) {
           ],
           // Commented out to speed up Grunt / Add back in to remove files from library
           'campaign/js/animationLibraries.min.js': ['<%= concat.dist.animationLibraries %>'],
-          'passion/js/tiles.js':['passion/js/tiles.dev.js']
+          'passion/js/tiles.js':['passion/js/tiles.dev.js'],
+          'immersive-stories/js/environmentLibraries.min.js': ['<%= concat.dist.environmentLibraries %>']
         }
       }
     },
@@ -276,6 +283,7 @@ module.exports = function(grunt) {
                 'immersive-stories/css/education-map.css': 'immersive-stories/less/education-map.less',
                 'immersive-stories/css/leadership.css': 'immersive-stories/less/leadership.less',
                 'immersive-stories/css/environment.css': 'immersive-stories/less/environment.less',
+                'immersive-stories/css/environment-old.css': 'immersive-stories/less/environment-old.less',
                 'immersive-stories/css/socialwork.css': 'immersive-stories/less/socialwork.less',
                 'immersive-stories/css/pharmacy.css': 'immersive-stories/less/pharmacy.less',
                 'immersive-stories/css/lovejoy.css': 'immersive-stories/less/lovejoy.less',
@@ -304,7 +312,8 @@ module.exports = function(grunt) {
           '<%= concat.dist.campaign %>', 
           // Commented out to speed up Grunt / Add back in to remove files from library
           '<%= concat.dist.animationLibraries %>',
-          'passion/js/tiles.dev.js'
+          'passion/js/tiles.dev.js',
+          '<%= concat.dist.environmentLibraries %>'
         ],
         tasks: ['js']
       },

@@ -145,6 +145,33 @@
   }
 }
 
+#cv2-header-white-collapse {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  //display: block;
+  text-indent: -999px;
+  overflow-x: hidden;
+  width: 50px;
+  height: 36px;
+  right: 20px;
+  top: 115px;
+  border: none;
+  background: url("@{img}/hamburger.svg") no-repeat 0 0 transparent;
+  z-index: 2;
+  &:hover,
+  &:focus {
+      background-position-x: -72px;
+  }
+  &:focus {
+      outline-color: rgb(59, 153, 252);
+      outline-style: auto;
+      outline-width: 5px;
+  }
+  // @media(max-width:768px) {
+  //     display: none;
+  // }
+}
 
 
 
