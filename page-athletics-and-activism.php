@@ -1,5 +1,10 @@
 <?php
-	$meta = '';
+
+  $twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/ica/twitter_card.png';
+  $twitter_title = 'Havana McElvaine: Changing the game';
+  $twitter_description = 'A champion for racial equity and social justice, Husky women’s soccer standout Havana McElvaine, ’17, is exploring what it means to be black in America — and around the globe. ';
+  $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
+
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/ica.css' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/ica.min.js' type='text/javascript'></script>";
 	$storyCodes = 'CPEDGE';

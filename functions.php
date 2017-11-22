@@ -14,4 +14,16 @@ require 'setup/class.url-meta-field.php';
 
 require 'setup/class.campaign-functions.php';
 
+
+function twitter_card($photo, $title, $descrpition) {
+	$meta = '';
+	if ($title) { 
+		$meta .= '<meta property="og:title" content="' . $title . '"/>' . PHP_EOL . "\t\t";
+		$meta .= '<meta property="og:description" content="' . $descrpition . '"/>' . PHP_EOL . "\t\t";
+		$meta .= '<meta property="og:image" content="' . $photo . '"/>' . PHP_EOL;
+	}
+
+	return $meta;
+}
+
 ?>
