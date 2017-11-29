@@ -21,7 +21,7 @@
 ?>
 
 <div id="immersive-body">
-  <section class="section slide1" id="intro-vid">
+  <section class="section fp-noscroll slide1" id="intro-vid">
     <div class="background">
       <button id="pause">Pause</button>
       <video  autoplay data-autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/header-poster.png' ?>" class="fullscreen-bg__video">
@@ -64,7 +64,7 @@
   </section>
 
 
-  <section class="section" id="intro-yellow">
+  <section class="section fp-noscroll" id="intro-yellow">
     <div class="background">
       <button id="pause-yellow">Pause</button>
       <video  autoplay data-autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/DRONE_REVEAL.jpg' ?>" class="fullscreen-bg__video">
@@ -99,7 +99,7 @@
   </section>
 
 
-  <section class="section" id="students">
+  <section class="section fp-noscroll"  id="students">
     <div class="background">
       
       <section id="all-students" class="all-students">
@@ -223,13 +223,13 @@
 
 
 
-  <section class="fixed-section" id="predators">
+  <section class="fixed-section blank" id="fixed-section">
     <div class="background">
       <span class="lines right"></span>
       <span class="lines left"></span>
       <!-- <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/CLOUDS.png' ?>" alt=""> -->
       <div class="foreground"></div>
-      <div class="intro-body">
+      <div class="intro-body move-higher">
          <div class="row">
               <div class="text-box">
                   <div class="icon"></div>
@@ -246,7 +246,7 @@
     </div>
   </section>
 
-  <section class="section blank-section">
+  <section class="section fp-noscroll blank-section">
       <div class="background">
         <div class="section-caption"><p>Predators // Explore</p></div>
         <section class="scrollit read-more">
@@ -258,16 +258,17 @@
       </div>
   </section>
 
-  <section class="section transparent-section">
+  <section class="section fp-noscroll transparent-section">
       <div class="background">
         <div class="section-caption"><p>Predators // Lecture in the field</p></div>
         <div class="intro-body">
          <div class="row">
               <div class="text-box">
                   <div class="row centered">
-                    <p class="col-md-4 col-xs-10">
-                        secibd tecerj spring break, three UW professors and 16 students from the College of the Environment made a classroom out of one of the most closely monitored ecosystems in the world: Yellowstone National Park. Explore their learning experience below.
+                    <p class="col-md-6 col-xs-10 quote">
+                        secibd tecerj spring break, three UW professors and 16 students from the College of the Environment made.
                     </p>
+                    
                   </div>
               </div>         
           </div>
@@ -281,6 +282,101 @@
       </div>
     </section>
 
+    <section class="section transparent-section fp-auto-height">
+        <div class="background photos">
+        <div class="section-caption"><p>Predators // The student experience</p></div>
+        <!-- <div class="intro-body"> -->
+         <!-- <div class="row"> -->
+              <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_2.jpg' ?>" alt="Tyler, a TK title, holds a golden eagle. After drawing blood, weighing and measuring the bird, he releases it." data-lity>
+              <p>Tyler, a TK title, holds a golden eagle. After drawing blood, weighing and measuring the bird, he releases it.</p>
+              <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_3.jpg' ?>" alt="After awaking from hibernation, a grizzly bear makes its way to an easy meal: a nearby bison carcass. While fattening up for winter, the omnivorous grizzly feasts on everything from berries to cutthroat trout to insects." data-lity>
+              <p class="">After awaking from hibernation, a grizzly bear makes its way to an easy meal: a nearby bison carcass. While fattening up for winter, the omnivorous grizzly feasts on everything from berries to cutthroat trout to insects.</p>
+              <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_4.jpg' ?>" alt="During the weeklong course, students found many opportunities to record data that would be used for presentations at the end of the quarter." data-lity>
+              <p>During the weeklong course, students found many opportunities to record data that would be used for presentations at the end of the quarter.</p>
+              <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_5.jpg' ?>" alt="On a foggy day, Aaron Wirsing points out possible locations where wolves could be on a distant ridge." data-lity>
+              <p class="">On a foggy day, Aaron Wirsing points out possible locations where wolves could be on a distant ridge.</p>
+              <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_6.jpg' ?>" alt="Students scan a far-off hillside for an elk carcass they’ve heard is in the area. Where there’s a carcass, there are often large — and hungry — animals." data-lity>
+              <p>Students scan a far-off hillside for an elk carcass they’ve heard is in the area. Where there’s a carcass, there are often large — and hungry — animals.</p>      
+         <!--  </div> -->
+        <!-- </div> -->
+      </div>     
+    </section>
+
+      <section class="section fp-noscroll transparent-section">
+      <div class="background">
+        <div class="section-caption"><p>Predators // Lecture in the field</p></div>
+        <div class="intro-body">
+         <div class="row">
+              <div class="text-box">
+                  <div class="row centered">
+                    <p class="col-md-6 col-xs-10 quote">
+                        secibd tecerj spring break, three UW professors and 16 students from the College of the Environment made.
+                    </p>
+                    
+                  </div>
+              </div>         
+          </div>
+        </div>
+        <section class="scrollit read-more">
+            <p>Scroll to continue</p>  
+            <div class="mouse">
+              <div class="scroll"></div>
+            </div> 
+        </section>
+      </div>
+    </section>
+
+    <section class="section fp-noscroll" id="backto">
+    <div class="background">
+      <!-- <div class="section-caption"><p>The experience begins</p></div> -->
+      <div class="intro-body">
+         <div class="row">
+              <div class="text-box" id=''>
+                  <h1 class="">Back to Washington</h1>
+                  <div class="row centered">
+                    <p class="col-md-8 col-xs-10">
+                        secibd tecerj spring break, three UW professors and 16 students from the College of the Environment made a classroom out of one of the most closely monitored ecosystems in the world: Yellowstone National Park. Explore their learning experience below.
+                    </p>
+                  </div>
+                  <div class="row centered spaced">
+                    <p class="col-md-7 col-xs-9 no-top no-bottom">
+                        explore text spring break, three UW professors and 16 students from the College of the Environment made a classroom out of one of the most closely monitored ecosystems in the world: Yellowstone National Park. Explore their learning experience below.
+                    </p>
+                  </div>
+                  <a href="#" class="explore">click to explore</a>
+              </div>         
+          </div>
+      </div>
+      <section class="scrollit read-more">
+          <p>Scroll to continue</p>  
+          <div class="mouse">
+            <div class="scroll"></div>
+          </div> 
+      </section>
+    </div>
+  </section>
+
+  <section class="section fp-noscroll" id="giving">
+    <div class="background">
+      <!-- <div class="section-caption"><p>The experience begins</p></div> -->
+      <div class="intro-body move-higher">
+         <div class="row">
+              <div class="text-box" id=''>
+                  <h1 class="">What you care about </br>can change the world</h1>
+                  <div class="row centered add-spacing">
+                    <p class="col-md-7 col-xs-10 no-top no-bottom add-bottom">
+                        explore text spring break, three UW professors and 16 students from the College of the Environment made a classroom out of one of the most closely monitored ecosystems in the world: Yellowstone National Park. Explore their learning experience below.
+                    </p>
+                  </div>
+                  <div class="visible-md-block visible-lg-block">
+                    <div id="immersive-give-iframe"></div>
+                    <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="ESIEND" href="#">Give now</a></span></div>
+                  </div>
+              </div>         
+          </div>
+      </div>
+    </div>
+  </section>
 
 
 </div>

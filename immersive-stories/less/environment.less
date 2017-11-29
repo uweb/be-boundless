@@ -177,15 +177,15 @@ section.slide1 div.background {
                 position: absolute;
                 height: 20px;
                 opacity: 0.6;
-                background: url("@{enviro}/squiggle.svg") no-repeat;
+                background: url("@{enviro}/squiggle.svg") no-repeat center center;
                 .background-size(contain);
             }
             &:before {
                 left: 20%;
-                top: 11vw;
+                top: -35px;
             }
             &:after {
-                bottom: 11vw;
+                bottom: -35px;
                 right: 20%;
             }
         }
@@ -516,15 +516,15 @@ section.fixed-section div.background {
                 position: absolute;
                 height: 20px;
                 opacity: 0.6;
-                background: url("@{enviro}/squiggle.svg") no-repeat;
+                background: url("@{enviro}/squiggle.svg") no-repeat center center;
                 .background-size(contain);
             }
             &:before {
                 left: 20%;
-                top: 11vw;
+                top: -35px;
             }
             &:after {
-                bottom: 11vw;
+                bottom: -35px;
                 right: 20%;
             }
             &.no-top {
@@ -547,8 +547,15 @@ section.fixed-section div.background {
             height: 20px;
             margin: 5px auto;
             //opacity: 0.6;
-            background: url("@{enviro}/squiggle.svg") no-repeat;
+            background: url("@{enviro}/squiggle.svg") no-repeat center center;
             .background-size(contain);
+        }
+        div.spaced {
+            margin-top: 30px;
+        }
+        p.read-bold {
+            //font-family: @headline;
+            font-size: 18px;
         }
     }
 
@@ -760,7 +767,11 @@ section.transparent-section {
     z-index: 1;
 }
 .transparent-section div.background {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+div.background.photos {
+    padding: 10vh 10vw 20vh; 
 }
 
 section.fixed-section {
@@ -777,6 +788,11 @@ section.fixed-section {
 
 section.blank-section {
     //
+}
+
+section.section div.background .intro-body.move-higher,
+section.fixed-section div.background .intro-body.move-higher {
+    top: 37%;
 }
 
 
@@ -1087,6 +1103,7 @@ div.background {
         // align-items: center;
         // justify-content: center;
         width: 100%;
+        margin: 0;
     }
     .intro-body {
         position: absolute;
@@ -1140,7 +1157,7 @@ div.background {
     }              
 }
 
-#predators div.background {
+#fixed-section div.background {
     background-image: url("@{enviro}/pred-bg.jpg");
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -1197,9 +1214,88 @@ div.background {
     }
 }
 
+#fixed-section.blank div.background {
+    visibility: hidden;
+}
 
+#fixed-section.blank {
+    background-color: #000;
+}
 
+#fixed-section.predator div.background {
+    //DEFAULT
+}
+#fixed-section.prey div.background {
+    //
+}
+#fixed-section.scavenger div.background {
+    //
+}
+#fixed-section.people div.background {
+    //
+}
 
+#backto div.background {
+    background-image: url("@{enviro}/back2wa.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    .background-cover(cover);
+    a.explore {
+        text-transform: uppercase;
+        color: white;
+        //border: 
+        //font-family: "Uni sans",sans-serif;
+        font-weight: 600;
+        position: relative;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        border-radius: 7px;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: 2px solid white;
+        margin: 40px 0 20px;
+        display: inline-block;
+        padding: 8px 10px 9px 52px;
+        color: white;
+        letter-spacing: 1px;
+        background-color: rgba(0,0,0,0.5);
+        -webkit-transition: all .3s linear;
+        transition: all .3s linear;
+        max-width: 100%;
+        &:before {
+            position: absolute;
+            background: url("@{enviro}/explore.png") 0 0 no-repeat transparent;
+            background-size: 25px 25px;
+            content: "";
+            width: 25px;
+            height: 25px;
+            top: 50%;
+            .translate(0,-50%);
+            left: 17px;
+            pointer-events: none;
+        }
+    }
+}
+
+#giving div.background {
+    background-image: url("@{enviro}/WYCA.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    .background-cover(cover);
+    .add-spacing {
+        margin: 30px 0;
+    }
+    div.boundless-button {
+        &.dark.sm span {
+            border: 3px solid white;
+        }
+        &:after {
+            background: white;
+            bottom: 1px;
+        }
+    }
+}
 
 
 

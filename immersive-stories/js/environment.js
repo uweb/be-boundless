@@ -48,7 +48,7 @@ $('#immersive-body').fullpage({
     fadingEffect: true,
     fadingEffectKey: 'dXcuZWR1X0VBNlptRmthVzVuUldabVpXTjBDZGI=',
     // normalScrollElements: '#element1, .element2',
-    // scrollOverflow: true,
+    scrollOverflow: true,
     // scrollOverflowReset: false,
     // scrollOverflowOptions: null,
     // touchSensitivity: 15,
@@ -81,9 +81,20 @@ $('#immersive-body').fullpage({
 
     //events
     onLeave: function(index, nextIndex, direction){
-      if( (index == 1 && nextIndex == 2) || (index == 2 && nextIndex == 1) ){
+      //switching in/out of first slide
+      if( (index == 1 && nextIndex == 2) || (index == 2 && nextIndex == 1) ){ 
         $('#immersive').toggleClass("hide-white-menu");
       }
+      //switching bg between black and pred
+      if( (index == 3 && nextIndex == 2) || (index == 2 && nextIndex == 3) ){
+        $('#fixed-section').toggleClass("blank");
+        //console.log("test")
+      }
+
+      //switch from pred to prey
+      // if( (index == 7 && nextIndex == 8) || (index == 8 && nextIndex == 7) ){
+      //   $('#fixed-section').toggleClass("prey");
+      // }
     },
     // afterLoad: function(anchorLink, index){},
     // afterRender: function(){},
