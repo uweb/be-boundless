@@ -35,28 +35,35 @@
 
 div.background {
     height: 100%;
+    max-height: calc(~"100vh - 90px");
     width: 100%;
     .background-cover(cover);
+    @media(max-width:768px) {
+        max-height: calc(~"100vh - 60px");
+    }
 }
-div.background.red {
-    background-image: url("@{enviro}/header-poster.png");
-    //.background-cover(cover);
-}
-div.background.green {
-    background-image: url("@{enviro}/header.jpg");
-    //.background-cover(cover);
-}
-div.background.blue {
-    background-image: url("@{enviro}/map.jpg");
-    //.background-cover(cover);
-}
-div.background.yellow {
-    background-image: url("@{enviro}/RANCHER_OUTRO_PHOTO.jpg");
-    //.background-cover(cover);
-}
+// div.background.red {
+//     background-image: url("@{enviro}/header-poster.png");
+//     //.background-cover(cover);
+// }
+// div.background.green {
+//     background-image: url("@{enviro}/header.jpg");
+//     //.background-cover(cover);
+// }
+// div.background.blue {
+//     background-image: url("@{enviro}/map.jpg");
+//     //.background-cover(cover);
+// }
+// div.background.yellow {
+//     background-image: url("@{enviro}/RANCHER_OUTRO_PHOTO.jpg");
+//     //.background-cover(cover);
+// }
 
 section.slide1 div.background {
     padding-top: 81px;
+    @media(max-width:768px) {
+        padding-top: 0;
+    }
 }
 
 #intro-vid div.background,
@@ -202,6 +209,32 @@ section.slide1 div.background {
         font-weight: 600;
         svg {
             height: 80px;
+            width: 80px;
+            float: none;
+            display: block;
+            margin: 0 auto;
+        }
+        p {
+            display: block;
+            float: none;
+            margin: 0 0 14.5px 0;
+        }
+        &.mobile {
+            display: none;
+            position: relative;
+            margin-top: 20px;
+            left: 0;
+            svg {
+                display: block;
+                margin: 0 auto;
+            }
+            p {
+                display: inline-block;
+                background: rgba(183,165,122,0.4);
+                padding: 0 5px;
+                margin-top: 5px;
+                font-weight: 700;
+            }
         }
     }
 
@@ -221,7 +254,7 @@ section.slide1 div.background {
         }
         p {
             line-height: 1.4;
-            font-size: .65em;
+            font-size: 14px;
         }
         h1 {
             font-size: 10vw;
@@ -575,7 +608,7 @@ section.fixed-section div.background {
         }
         p {
             line-height: 1.4;
-            font-size: .65em;
+            font-size: 14px;
         }
         h1 {
             font-size: 10vw;
@@ -784,6 +817,9 @@ section.fixed-section {
     &.active {
         z-index: 0;
     }
+    @media(max-width:768px) {
+        padding-top: 60px;
+    }
 }
 
 section.blank-section {
@@ -816,6 +852,9 @@ section.fixed-section div.background .intro-body.move-higher {
     }
     #intro-text-yellow {
         padding-top: 0;
+        .row.centered {
+            margin-bottom: 15px;
+        }
         .section-links {
             height: 150px;
             opacity: 0.6;
@@ -1104,6 +1143,7 @@ div.background {
         // justify-content: center;
         width: 100%;
         margin: 0;
+        padding: 0 15px;
     }
     .intro-body {
         position: absolute;
@@ -1298,16 +1338,225 @@ div.background {
 }
 
 
+/***************
+*****MOBILE*****
+***************/
 
+@media(max-width:768px) {
+    #cv2-header {
+        height: 60px;
+    }
 
+    #intro-vid div.background, 
+    #intro-yellow div.background {
+        .intro-body {
+            top: 50%;
+            #intro-text {
+                padding-top: 0;
+            }
+        }
+        div.play-button {
+            display: none;
+            &.mobile {
+                display: block;
+            }
+        }
+        #intro-text-yellow .section-links {
+            height: 100px;
+        }
+        #intro-text-yellow .row.centered {
+            margin-bottom: 0;
+        }
+        h1 {
+            margin-top: 0;
+        }
+    }
 
+    #intro-yellow div.background h1 {
+        font-size: 6.4vw;
+        letter-spacing: 8px;
+        span {
+            font-size: 10vw;
+            letter-spacing: 8px;
+        }
+    }
 
+    #students div.background h1 {
+        font-size: 7.5vw;
+        letter-spacing: 8px;
+        span {
+            font-size: 10vw;
+            letter-spacing: 8px;
+        }
+    }
 
+    .section-caption {
+        display: none;
+    }
 
+    #students div.background {
+        #all-students {
+            background: rgba(0,0,0,0.6);
+            div.student {
+                display: none;
+            }
+            &.mobile-slide:not(.active) .intro-body {
+                visibility: hidden;
+            }
+        }
+        section.student.mobile-slide {
+            // visibility: visible;
+            // opacity: 1;
+            div.name {
+                top: 0;
+                left: 15px;
+                width: 250px;
+                //max-width: 95%;
+                h3 {
+                    font-size: 24px;
+                    margin: 20px 0 5px;
+                }
+                p.major {
+                    font-size: 12px;
+                }
+                span.udub-slant {
+                    //???
+                }
+            }
+            div.quote {
+                top: 28%;
+                right: auto;
+                left: 50%;
+                .translate( -50%, 0);
+                width: 100%;
+                max-width: 600px;
+                blockquote {
+                    font-size: 14px;
+                    line-height: 1.3;
+                    span {
+                        font-size: 40px;
+                        &:nth-of-type(1) {
+                            top: -30px;
+                        }
+                        &:nth-of-type(2) {
+                            bottom: -10px;
+                            right: 15px;
+                        }
+                    }
+                }
+            }
+            img {
+                height: 55%; 
+                left: 50%;
+                .translate(-50%, 0);
+            }
+            &#student3 img {
+                height: 70%;
+            }
+        }
+        #close-modal {
+            display: none;
+        }
+    }
 
+    #fixed-section div.background {
+        div.foreground {
+            height: 35vh;
+            bottom: -100px;
+            right: 0;
+            background-position: 70% 0%;
+            .background-size(cover);
+        }
+        h1 {
+            font-size: 7.2vw;
+            letter-spacing: 5px;
+            margin: 15px 0 0;
+        }
+    }
 
+    div.background.photos {
+        padding: 0 50px;
+        //background-color: rgba(0,0,0,0.8);
+    }
 
+    .transparent-section div.background {
+        background-color: rgba(0,0,0,0.85);
+    }
 
+    #backto div.background {
+        h1 {
+            letter-spacing: 7px;
+            font-size: 7.2vw;
+            line-height: 1.1;
+        }
+        div.row.centered:nth-of-type(2) {
+            display: none;
+        }
+        a.explore {
+            font-size: 14px;
+            padding: 8px 10px 8px 43px;
+            &:before {
+                background-size: 20px 20px;
+                width: 20px;
+                height: 20px;
+                left: 12px;
+            }
+        }
+    }
+
+    #giving div.background {
+        h1 {
+            letter-spacing: 1px;
+            font-size: 6.2vw;
+            line-height: 1.1;
+            margin-bottom: 0;
+        }
+        .intro-body {
+            top: 45%;
+        }
+    }
+
+}
+
+@media(max-width:380px) {
+    #intro-vid div.background, 
+    #intro-yellow div.background {
+        div.play-button.mobile svg{
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+}
+
+div.fp-controlArrow {
+    // height: 101px;
+    // width: 50px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    border-right: 2px solid #FFF;
+    border-bottom: 2px solid #FFF;
+    border-radius: 0;
+    border-style: none solid solid none;
+    background-color: transparent;
+    &.fp-prev {
+        border-width: 2px;
+        border-color: #fff;
+        width: 30px;
+        .rotate(135deg);
+    }
+    &.fp-next {
+        border-width: 2px;
+        border-color: #fff;
+        .rotate(-45deg);
+    }
+}
+
+/*******************
+*****END MOBILE*****
+*******************/
 
 
 #immersive.hide-white-menu {
@@ -1323,6 +1572,18 @@ div.background {
     #pause,
     #pause-yellow {
         top: 80px;
+    }
+    @media(max-width:768px) {
+        #cv2-header {
+            height: 60px;
+        }
+        #cv2-header-white-collapse {
+            display: none;
+        }
+        // #pause,
+        // #pause-yellow {
+        //     top: 80px;
+        // }
     }
 }
 
