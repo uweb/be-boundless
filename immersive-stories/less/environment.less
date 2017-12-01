@@ -843,6 +843,8 @@ section.transparent-section {
 
 div.background.photos {
     padding: 10vh 10vw 20vh; 
+    max-width: 1200px;
+    margin: 0 auto;
     img {
         position: relative;
         z-index: 1;
@@ -857,6 +859,8 @@ div.background.photos {
         @media(min-width:769px) {
             width: 450px;
             margin-bottom: 100px;
+            position: relative;
+            z-index: 1;
             img {
                 width: 450px;
                 height: auto;
@@ -868,11 +872,47 @@ div.background.photos {
             &.float-right {
                 float: right; 
                 margin-top: -50px;
-                .translate(0, -50%);
+            }
+            &:after {
+                content: "\e93a";
+                font-size: 40px;
+                color: @darkgold;
+                background: rgba(255, 255, 255, 0.5);
+                border-radius: 50%;
+                display: block;
+                font-family: uw-icon;
+                speak: none;
+                font-style: normal;
+                font-weight: 400;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                //margin-top: -143px;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                z-index: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                opacity: 0;
+                visibility: hidden;
+                -webkit-transition: all .2s linear .1s;
+                transition: all .2s linear .1s;
+            }
+            &:hover {
+                &:after {
+                    visibility: visible;
+                    opacity: 0.9;
+                }
             }
             // &.snapchat {
             //     width: 300px;
             // }
+        }
+        @media(min-width:1130px) {
+            &.float-right {
+                .translate(0, -50%);
+            }
         }
         .snapchat {
             height: 400px;
@@ -1417,11 +1457,38 @@ section.icon-section {
     background-image: url("@{enviro}/PREY-bkg.jpg");
     background-position: bottom right;
     .background-cover(cover);
+    span.lines {
+        display: block;
+    }
     div.foreground {
         bottom: -125px;
-        background-image: url("@{enviro}/PREY-forground-v2.png");
+        background-image: url("@{enviro}/PREY_FOREGROUND.png");
         background-position: bottom right;
         .background-size(100% auto);
+    }
+    div.extra1 {
+        display: block;
+        position: absolute;
+        top: 100px;
+        left: 2vw;
+        width: 400px;
+        height: 120px;
+        background-image: url("@{enviro}/PREY-forground-birds.png");
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        .background-size(contain);
+    }
+    div.extra2 {
+        display: block;
+        position: absolute;
+        bottom: 55px;
+        left: 25vw;
+        width: 120px;
+        height: 180px;
+        background-image: url("@{enviro}/PREY_DEER.png");
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        .background-size(contain);
     }
 }
 #fixed-section.scavenger div.background {
@@ -1434,6 +1501,30 @@ section.icon-section {
         background-position: bottom right;
         .background-size(100% auto);
     }
+    div.extra1 {
+        display: block;
+        position: absolute;
+        top: 18vh;
+        left: 8vw;
+        width: 150px;
+        height: 120px;
+        background-image: url("@{enviro}/SCAV-raven_2.png");
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        .background-size(contain);
+    }
+    div.extra2 {
+        display: block;
+        position: absolute;
+        bottom: 80px;
+        right: -2vw;
+        width: 300px;
+        height: 130px;
+        background-image: url("@{enviro}/SCAV-coyote.png");
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        .background-size(contain);
+    }
 }
 #fixed-section.people div.background {
     background-image: url("@{enviro}/Rancher-bkg.jpg");
@@ -1444,6 +1535,18 @@ section.icon-section {
         background-image: url("@{enviro}/Rancher-forground-v2.png");
         background-position: bottom right;
         .background-size(100% auto);
+    }
+    div.extra1 {
+        display: block;
+        position: absolute;
+        bottom: -9px;
+        right: 22vw;
+        width: 165px;
+        height: 250px;
+        background-image: url("@{enviro}/RANCHERS_CUT.png");
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        .background-size(contain);
     }
 }
 
@@ -1895,3 +1998,63 @@ div.fp-controlArrow {
         opacity: 1;
   }
 }
+
+
+
+
+/*
+/
+/
+CLOUDSSSS
+ \
+ \
+ \
+ \
+ */           
+
+@-webkit-keyframes cloudAnimate {
+   0% { margin-left: 20%; opacity: .6; }
+  10% { opacity: 0.75; }
+  90% { opacity: 0.75; }
+  100% { margin-left: -100%; opacity: .6; }
+}
+
+@-moz-keyframes cloudAnimate {
+   0% { margin-left: 20%; opacity: .6; }
+  10% { opacity: 0.75; }
+  90% { opacity: 0.75; }
+  100% { margin-left: -100%; opacity: .6; }
+}
+
+@-o-keyframes cloudAnimate {
+   0% { margin-left: 20%; opacity: .6; }
+  10% { opacity: 0.75; }
+  90% { opacity: 0.75; }
+  100% { margin-left: -100%; opacity: .6; }
+}
+
+@keyframes cloudAnimate {
+   0% { margin-left: 20%; opacity: .6; }
+  10% { opacity: 0.75; }
+  90% { opacity: 0.75; }
+  100% { margin-left: -100%; opacity: .6; }
+}
+
+//.clouds {
+    img.cloud-img {
+          position: absolute;
+          top: 0;
+          //bottom: 0;
+          left: -20%;
+          width: 220%;
+          max-width: none;
+          height: 100%;
+          //max-height: 100%;
+           -webkit-animation: cloudAnimate 100s linear infinite;
+           -moz-animation: cloudAnimate 100s linear infinite;
+           -o-animation: cloudAnimate 100s linear infinite;
+           animation: cloudAnimate 100s linear infinite;
+           &:nth-of-type(2) {
+            left: 80%;
+           }
+    }

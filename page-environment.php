@@ -39,7 +39,7 @@
               </div>         
           </div>
           <div class="play-button mobile" >
-              <a data-lity href="https://www.youtube.com/embed/Tr6KBzdaM0o?autoplay=1&rel=0&showinfo=0">
+              <a data-lity href="https://www.youtube.com/embed/bdxE1rqezB8?autoplay=1&rel=0&showinfo=0">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="137.909px" height="137.131px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131"
                  xml:space="preserve">
@@ -247,8 +247,10 @@
     <div class="background">
       <span class="lines right"></span>
       <span class="lines left"></span>
-      <!-- <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/CLOUDS.png' ?>" alt=""> -->
+      <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/CLOUDS.png' ?>" alt="">
       <div class="foreground"></div>
+      <div class="extra1"></div>
+      <div class="extra2"></div>
     </div>
   </section>
 
