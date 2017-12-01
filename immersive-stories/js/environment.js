@@ -22,7 +22,7 @@ $('#immersive-body').fullpage({
     //Navigation
     // menu: '#menu',
     // lockAnchors: false,
-    // anchors:['firstPage', 'secondPage'],
+    anchors:['home', 'experience', 'meet', 'predator', 'predator-gallery', 'predator-lecture', 'prey', 'prey-gallery', 'prey-lecture', 'scavenger', 'scavenger-gallery', 'scavenger-lecture', 'people', 'people-gallery', 'people-lecture', 'explore', 'give'],
     // navigation: true,
     // navigationPosition: 'left',
     // navigationTooltips: ['firstSlide', 'secondSlide'],
@@ -90,15 +90,29 @@ $('#immersive-body').fullpage({
         $('#immersive').toggleClass("hide-white-menu");
       }
       //switching bg between black and pred
-      if( (index == 3 && nextIndex == 2) || (index == 2 && nextIndex == 3) ){
+      if( (index == 2 && nextIndex == 3) || (index == 3 && nextIndex == 2) ){
         $('#fixed-section').toggleClass("blank");
+        $('#fixed-section').toggleClass("predator");
         //console.log("test")
       }
 
       //switch from pred to prey
-      // if( (index == 7 && nextIndex == 8) || (index == 8 && nextIndex == 7) ){
-      //   $('#fixed-section').toggleClass("prey");
-      // }
+      if( (index == 6 && nextIndex == 7) || (index == 7 && nextIndex == 6) ){
+        $('#fixed-section').toggleClass("predator");
+        $('#fixed-section').toggleClass("prey");
+      }
+
+      //switch from prey to scav
+      if( (index == 9 && nextIndex == 10) || (index == 10 && nextIndex == 9) ){
+        $('#fixed-section').toggleClass("prey");
+        $('#fixed-section').toggleClass("scavenger");
+      }
+
+      //switch from scav to people
+      if( (index == 12 && nextIndex == 13) || (index == 13 && nextIndex == 12) ){
+        $('#fixed-section').toggleClass("scavenger");
+        $('#fixed-section').toggleClass("people");
+      }
     },
     // afterLoad: function(anchorLink, index){},
     // afterRender: function(){},
@@ -114,7 +128,7 @@ $('#immersive-body').fullpage({
     //Navigation
     // menu: '#menu',
     // lockAnchors: false,
-    // anchors:['firstPage', 'secondPage'],
+    anchors:['home', 'experience', 'meet', 'predator', 'predator-gallery', 'predator-lecture', 'prey', 'prey-gallery', 'prey-lecture', 'scavenger', 'scavenger-gallery', 'scavenger-lecture', 'people', 'people-gallery', 'people-lecture', 'explore', 'give'],
     // navigation: true,
     // navigationPosition: 'left',
     // navigationTooltips: ['firstSlide', 'secondSlide'],
@@ -182,15 +196,29 @@ $('#immersive-body').fullpage({
         $('#immersive').toggleClass("hide-white-menu");
       }
       //switching bg between black and pred
-      if( (index == 3 && nextIndex == 2) || (index == 2 && nextIndex == 3) ){
+      if( (index == 2 && nextIndex == 3) || (index == 3 && nextIndex == 2) ){
         $('#fixed-section').toggleClass("blank");
+        $('#fixed-section').toggleClass("predator");
         //console.log("test")
       }
 
       //switch from pred to prey
-      // if( (index == 7 && nextIndex == 8) || (index == 8 && nextIndex == 7) ){
-      //   $('#fixed-section').toggleClass("prey");
-      // }
+      if( (index == 6 && nextIndex == 7) || (index == 7 && nextIndex == 6) ){
+        $('#fixed-section').toggleClass("predator");
+        $('#fixed-section').toggleClass("prey");
+      }
+
+      //switch from prey to scav
+      if( (index == 9 && nextIndex == 10) || (index == 10 && nextIndex == 9) ){
+        $('#fixed-section').toggleClass("prey");
+        $('#fixed-section').toggleClass("scavenger");
+      }
+
+      //switch from scav to people
+      if( (index == 12 && nextIndex == 13) || (index == 13 && nextIndex == 12) ){
+        $('#fixed-section').toggleClass("scavenger");
+        $('#fixed-section').toggleClass("people");
+      }
     },
     // afterLoad: function(anchorLink, index){},
     // afterRender: function(){},
@@ -249,6 +277,11 @@ $('section.student').on('click', function(e) {
   $('section.student').removeClass("active");
   $('#close-modal').removeClass("active");
 });
+
+$('a.section-links').on('click', function(e) {
+  $('#fixed-section').removeClass("blank");
+  $('#fixed-section').addClass(this.hash.split('#',2)[1]);
+})
 
 
 
