@@ -450,7 +450,7 @@
               <!-- 8.3 -->
               <div class="mobile-slide float-right">
                 <div class="snapchat draw-line-link">
-                  <video autoplay loop muted playsinline class="media" data-object-fit>
+                  <video autoplay data-autoplay loop muted playsinline class="media" data-object-fit data-lity>
                       <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/PREY_SNAP.mp4' ?>" type="video/mp4">
                   </video>
                 </div>
@@ -599,7 +599,7 @@
               <!-- 11.2 -->
               <div class="mobile-slide float-right">
                 <div class="snapchat draw-line-link">
-                  <video autoplay loop muted playsinline class="media" data-object-fit>
+                  <video autoplay data-autoplay loop muted playsinline class="media" data-object-fit data-lity>
                       <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/SCAVENGER_SNAP.mp4' ?>" type="video/mp4">
                   </video>
                 </div>
