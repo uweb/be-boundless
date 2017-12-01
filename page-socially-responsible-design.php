@@ -249,6 +249,8 @@
 
 <p>“Through community involvement and participation, I’m hoping to work with residents to articulate how we can transform these larger infrastructures — ghosted railways, abandoned factories, the Los Angeles River — in a way that benefits them,” says de la Cruz. “So much knowledge already exists in these communities, and there are opportunities to have more landscape architects who come from diverse backgrounds. My mission isn’t to lead, but to help community members realize their leadership potential.” </p>
 
+<p><i>Update</i>: After returning to his hometown, de la Cruz started working as a project manager for the Los Angeles Neighborhood Land Trust, an organization that creates parks and community gardens in underserved neighborhoods that have limited or no access to green space. He has also led an urban agriculture and community gardening workshop for local youth that was promoted by College Track, an organization focused on increasing educational attainment rates in communities of color nationwide.</p>
+
                       </div>                 
                       <div class="col-md-5 col-md-offset-1">
                         <blockquote><span>&ldquo;</span>People lose their way a little bit because of the example that’s been set for them, but David is a different example. He shows kids that you can go away to school and be all you want to be, and that you can bring it back and pay it forward.<span>&rdquo;</span></blockquote>

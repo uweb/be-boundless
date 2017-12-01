@@ -287,6 +287,7 @@ section.cactus {
     .background-cover(cover);
     background-position: center center;
     background-color: black;
+    position: relative;
     &:after {
         content: '';
         display: block;
@@ -299,6 +300,9 @@ section.cactus {
     background: -o-linear-gradient(bottom left, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%);
     background: linear-gradient(to top right, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bd000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+    #pause {
+        top: 20px;
     }
     .scrollit {
         z-index: 1;
@@ -336,7 +340,7 @@ section.cactus {
     .intro-body {
         position: absolute;
         z-index: 1;
-        top: 50%;
+        top: 35%;
         left: 0;
         width: 100%;
         .translate(0,-50%);
