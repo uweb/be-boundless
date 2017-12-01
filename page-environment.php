@@ -95,10 +95,10 @@
                     </p>
                   </div>
                   <div class="col-md-7 col-xs-12">
-                    <a href="#" class="col-sm-3 col-xs-3 section-links">Predators</a>
-                    <a href="#" class="col-sm-3 col-xs-3 section-links">Prey</a>
-                    <a href="#" class="col-sm-3 col-xs-3 section-links">Scavengers</a>
-                    <a href="#" class="col-sm-3 col-xs-3 section-links">People</a>
+                    <a href="#predator" class="col-sm-3 col-xs-3 section-links">Predators</a>
+                    <a href="#prey" class="col-sm-3 col-xs-3 section-links">Prey</a>
+                    <a href="#scavenger" class="col-sm-3 col-xs-3 section-links">Scavengers</a>
+                    <a href="#people" class="col-sm-3 col-xs-3 section-links">People</a>
                   </div>
               </div>         
           </div>
@@ -253,7 +253,7 @@
   </section>
 
    <!--4. PREDATOR - OPENING SLIDE-->
-  <section class="section fp-noscroll icon-section predator">
+  <section data-anchor="predator" class="section fp-noscroll icon-section">
       <div class="background">
         <div class="section-caption"><p>Predators // Explore</p></div>
         <div class="intro-body move-higher">
@@ -398,13 +398,13 @@
     </section>
 
      <!--7. PREY - OPENING SLIDE-->
-  <section class="section fp-noscroll icon-section predator">
+  <section data-anchor="prey" class="section fp-noscroll icon-section">
       <div class="background">
         <div class="section-caption"><p>Prey // Explore</p></div>
         <div class="intro-body move-higher">
          <div class="row">
               <div class="text-box">
-                  <div class="icon"></div>
+                  <div class="icon prey"></div>
                   <h1 class="">Prey</h1>
                   <span class="col-md-4 col-xs-10"><span class="squiggle"></span></span>
                   <div class="audio"><p class="length">0:21  <span>/ play lesson</span></p>
@@ -547,13 +547,13 @@
     </section>
 
      <!--10. SCAVENGER - OPENING SLIDE-->
-  <section class="section fp-noscroll icon-section predator">
+  <section data-anchor="scavenger" class="section fp-noscroll icon-section">
       <div class="background">
         <div class="section-caption"><p>Scavengers // Explore</p></div>
         <div class="intro-body move-higher">
          <div class="row">
               <div class="text-box">
-                  <div class="icon"></div>
+                  <div class="icon scav"></div>
                   <h1 class="">Scavengers</h1>
                   <span class="col-md-4 col-xs-10"><span class="squiggle"></span></span>
                   <div class="audio"><p class="length">0:18  <span>/ play lesson</span></p>
@@ -696,13 +696,13 @@
     </section>
 
      <!--13. PEOPLE - OPENING SLIDE-->
-  <section class="section fp-noscroll icon-section predator">
+  <section data-anchor="people" class="section fp-noscroll icon-section">
       <div class="background">
         <div class="section-caption"><p>People // Explore</p></div>
         <div class="intro-body move-higher">
          <div class="row">
               <div class="text-box">
-                  <div class="icon"></div>
+                  <div class="icon people"></div>
                   <h1 class="">People</h1>
                   <span class="col-md-4 col-xs-10"><span class="squiggle"></span></span>
                   <div class="audio"><p class="length">0:37  <span>/ play lesson</span></p>

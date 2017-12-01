@@ -22,7 +22,7 @@ $('#immersive-body').fullpage({
     //Navigation
     // menu: '#menu',
     // lockAnchors: false,
-    // anchors:['firstPage', 'secondPage'],
+    anchors:['home', 'experience', 'meet', 'predator', 'predator-gallery', 'predator-lecture', 'prey', 'prey-gallery', 'prey-lecture', 'scavenger', 'scavenger-gallery', 'scavenger-lecture', 'people', 'people-gallery', 'people-lecture', 'explore', 'give'],
     // navigation: true,
     // navigationPosition: 'left',
     // navigationTooltips: ['firstSlide', 'secondSlide'],
@@ -128,7 +128,7 @@ $('#immersive-body').fullpage({
     //Navigation
     // menu: '#menu',
     // lockAnchors: false,
-    // anchors:['firstPage', 'secondPage'],
+    anchors:['home', 'experience', 'meet', 'predator', 'predator-gallery', 'predator-lecture', 'prey', 'prey-gallery', 'prey-lecture', 'scavenger', 'scavenger-gallery', 'scavenger-lecture', 'people', 'people-gallery', 'people-lecture', 'explore', 'give'],
     // navigation: true,
     // navigationPosition: 'left',
     // navigationTooltips: ['firstSlide', 'secondSlide'],
@@ -277,6 +277,11 @@ $('section.student').on('click', function(e) {
   $('section.student').removeClass("active");
   $('#close-modal').removeClass("active");
 });
+
+$('a.section-links').on('click', function(e) {
+  $('#fixed-section').removeClass("blank");
+  $('#fixed-section').addClass(this.hash.split('#',2)[1]);
+})
 
 
 
