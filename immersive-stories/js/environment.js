@@ -50,7 +50,7 @@ $('#immersive-body').fullpage({
     // offsetSections: false,
     // resetSliders: false,
     fadingEffect: true,
-    fadingEffectKey: 'dXcuZWR1X0VBNlptRmthVzVuUldabVpXTjBDZGI=',
+    fadingEffectKey: 'd2FzaGluZ3Rvbi5lZHVfVVc4Wm1Ga2FXNW5SV1ptWldOME9oQQ==',
     // normalScrollElements: '#element1, .element2',
     scrollOverflow: true,
     // scrollOverflowReset: false,
@@ -156,7 +156,7 @@ $('#immersive-body').fullpage({
     // offsetSections: false,
     // resetSliders: false,
     fadingEffect: true,
-    fadingEffectKey: 'dXcuZWR1X0VBNlptRmthVzVuUldabVpXTjBDZGI=',
+    fadingEffectKey: 'd2FzaGluZ3Rvbi5lZHVfVVc4Wm1Ga2FXNW5SV1ptWldOME9oQQ==',
     // normalScrollElements: '#element1, .element2',
     scrollOverflow: true,
     // scrollOverflowReset: false,
@@ -283,6 +283,10 @@ $('a.section-links').on('click', function(e) {
   $('#fixed-section').addClass(this.hash.split('#',2)[1]);
 })
 
+$("#cv2-header-white-collapse").on('click', function(e) {
+    $('#cv2-header .cv2-header-white').toggle();
+    $("#cv2-header-white-collapse").toggleClass("close");
+})
 
 
 /*****************/

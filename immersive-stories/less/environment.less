@@ -532,21 +532,22 @@ section.fixed-section div.background {
         color: white;
         border-left: none; 
         padding: 0; 
-        span {
-            font-family: @uni;
-            font-weight: 100;
-            font-size: 100px;
-            color: white;
-            position: absolute;
-            &:nth-of-type(1) {
-                top: -65px;
-                left: -5px;
-            }
-            &:nth-of-type(2) {
-                bottom: -125px;
-                right: -5px;
-            }
-        }
+        font-size: 1.7em; 
+        // span {
+        //     font-family: @uni;
+        //     font-weight: 100;
+        //     font-size: 100px;
+        //     color: white;
+        //     position: absolute;
+        //     &:nth-of-type(1) {
+        //         top: -65px;
+        //         left: -5px;
+        //     }
+        //     &:nth-of-type(2) {
+        //         bottom: -125px;
+        //         right: -5px;
+        //     }
+        // }
     }
     .intro-body {
         position: absolute;
@@ -1030,29 +1031,47 @@ section.fixed-section div.background .intro-body.move-higher {
         opacity: 1;
         z-index: 1;
         &.student1 {
-            right: 3%;
-            img { width: 175px; } 
+            left: 81%;
+            img { 
+                min-width: 175px; 
+                width: 12.8vw;
+            } 
         }
         &.student2 {
-            left: 25%; 
-            img { width: 125px; }
+            left: 22%; 
+            img { 
+                min-width: 125px; 
+                width: 9.2vw;
+            }
         }
         &.student3 {
-            right: 20%; 
-            img { width: 130px; }
+            left: 68%; 
+            img { 
+                min-width: 130px; 
+                width: 9.5vw;
+            }
         }
         &.student4 {
-            left: 45%;
-            img { width: 135px; }  
+            left: 37%;
+            img { 
+                min-width: 135px; 
+                width: 10vw;
+            }  
         }
         &.student5 {
-            left: 3%;
-            img { width: 180px; }
+            left: 1%;
+            img { 
+                min-width: 180px; 
+                width: 13.2vw;
+            }
         }
         &.student6 {
-            left: 60%;
-            bottom: -150px;
-            img { width: 150px; }  
+            left: 52%;
+            bottom: -10vw;
+            img { 
+                min-width: 150px; 
+                width: 11vw;
+            }  
         }
         img {
             width: 150px;
@@ -1159,6 +1178,9 @@ section.fixed-section div.background .intro-body.move-higher {
             left: 30%;
             height: 80%;
             width: auto;
+            &.bigger {
+                height: 100%;
+            }
         }
     }
     //close button
@@ -1707,17 +1729,17 @@ img.circle.quote {
     section.section div.background {
         blockquote {
             font-size: 14px;
-            span {
-                font-size: 60px;
-                &:nth-of-type(1){
-                    top: -36px;
-                    left: -3px;
-                }
-                &:nth-of-type(2){
-                    bottom: -72px;
-                    right: -3px;
-                }
-            }
+            // span {
+            //     font-size: 60px;
+            //     &:nth-of-type(1){
+            //         top: -36px;
+            //         left: -3px;
+            //     }
+            //     &:nth-of-type(2){
+            //         bottom: -72px;
+            //         right: -3px;
+            //     }
+            // }
         }
         p.attribute {
             font-size: 12px;

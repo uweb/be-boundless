@@ -168,6 +168,19 @@
       outline-style: auto;
       outline-width: 5px;
   }
+  &.close {
+    width: 45px;
+    height: 45px;
+    right: 80px;
+    top: 170px;
+    background: url("@{img}/close.svg") no-repeat ~"3px 5px/30px 30px" transparent; 
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    &:hover,
+    &:focus {
+        border: 2px solid @darkgold;
+    }
+  }
   // @media(max-width:768px) {
   //     display: none;
   // }

@@ -26,7 +26,7 @@
     <div class="background">
       <button id="pause">Pause</button>
       <video  autoplay data-autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/header-poster.png' ?>" class="fullscreen-bg__video">
-         <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/HEADER_30_SECOND.mp4' ?>" type="video/mp4">
+         <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/HEADER_LOOP.mp4' ?>" type="video/mp4">
       </video>
 
       <div class="intro-body">
@@ -179,7 +179,7 @@
           <div class="quote">
             <blockquote><span>&ldquo;</span>I didn’t have a lot of field experience before this trip. I didn’t know if I could hack it, how difficult it would be or if I would even enjoy it. But now I’m really excited about fieldwork. I’m definitely going to pursue it.<span>&rdquo;</span></blockquote>
           </div>
-          <image class="full-student" alt="student one" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/profile_6.png' ?>">
+          <image class="full-student bigger" alt="student one" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/profile_6.png' ?>">
         </section>
          <!-- 3.5 -->
         <section id="student4" class="student student4 mobile-slide">
@@ -857,7 +857,7 @@
                         Read more about who the students met in Yellowstone, the animals they saw and studied, and what they discovered about the challenges and rewards of careers in wildlife management. 
                     </p>
                   </div>
-                  <a href="#" class="explore">click to explore</a>
+                  <a href="http://cmsdev.u.washington.edu/boundless/2017/11/07/a-week-in-the-wild/" class="explore">click to explore</a>
               </div>         
           </div>
       </div>
@@ -885,7 +885,7 @@
                   </div>
                   <div class="col-xs-12">
                     <div id="immersive-give-iframe"></div>
-                    <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="ESIEND" href="#">Give now</a></span></div>
+                    <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="CELEND" href="#">Give now</a></span></div>
                   </div>
               </div>         
           </div>
