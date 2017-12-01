@@ -33,7 +33,7 @@
     z-index: 9;
 }
 
-div.background {
+section:not(.fp-auto-height) div.background {
     height: 100%;
     max-height: calc(~"100vh - 90px");
     width: 100%;
@@ -125,6 +125,10 @@ section.slide1 div.background {
             -webkit-animation: downarrow 1.3s infinite;
             animation: downarrow 1.3s infinite;
         }
+    }
+    .scrollit.scroll-down {
+        visibility: hidden;
+        opacity: 0;
     }
     p {
         color: white;
@@ -455,6 +459,16 @@ section.slide1 div.background {
 /****************
 *****GENERIC*****
 ****************/
+// section.fixed-section {
+//     z-index: 1;
+//     div.audio {
+//         //z-index: 3;
+//     }
+// }
+// section.section:not(.blank-section).active {
+//     z-index: 2;
+// }
+
 section.section div.background ,
 section.fixed-section div.background {
     position: relative;
@@ -514,6 +528,26 @@ section.fixed-section div.background {
         height: 100%;
         width: 100%;
     }
+    blockquote {
+        color: white;
+        border-left: none; 
+        padding: 0; 
+        span {
+            font-family: @uni;
+            font-weight: 100;
+            font-size: 100px;
+            color: white;
+            position: absolute;
+            &:nth-of-type(1) {
+                top: -65px;
+                left: -5px;
+            }
+            &:nth-of-type(2) {
+                bottom: -125px;
+                right: -5px;
+            }
+        }
+    }
     .intro-body {
         position: absolute;
         z-index: 1;
@@ -538,38 +572,40 @@ section.fixed-section div.background {
         h1 {
             width: 100%;
         }
-        p {
-            line-height: 1.4;
-            margin: 30px 0; 
-            &:after, 
-            &:before {
-                content: '';
-                display: block;
-                width: 60%;
-                position: absolute;
-                height: 20px;
-                opacity: 0.6;
-                background: url("@{enviro}/squiggle.svg") no-repeat center center;
-                .background-size(contain);
-            }
-            &:before {
-                left: 20%;
-                top: -35px;
-            }
-            &:after {
-                bottom: -35px;
-                right: 20%;
-            }
-            &.no-top {
-                margin-top: 0;
-                &:after {
-                    content: none;
-                }
-            }
-            &.no-bottom {
-                margin-bottom: 0;
+        div:not(.audio) {
+            p {
+                line-height: 1.4;
+                margin: 30px 0; 
+                &:after, 
                 &:before {
-                   content: none;
+                    content: '';
+                    display: block;
+                    width: 60%;
+                    position: absolute;
+                    height: 20px;
+                    opacity: 0.6;
+                    background: url("@{enviro}/squiggle.svg") no-repeat center center;
+                    .background-size(contain);
+                }
+                &:before {
+                    left: 20%;
+                    top: -35px;
+                }
+                &:after {
+                    bottom: -35px;
+                    right: 20%;
+                }
+                &.no-top {
+                    margin-top: 0;
+                    &:after {
+                        content: none;
+                    }
+                }
+                &.no-bottom {
+                    margin-bottom: 0;
+                    &:before {
+                       content: none;
+                    }
                 }
             }
         }
@@ -801,10 +837,70 @@ section.transparent-section {
 }
 .transparent-section div.background {
     background-color: rgba(0, 0, 0, 0.95);
+
 }
 
 div.background.photos {
     padding: 10vh 10vw 20vh; 
+    img {
+        position: relative;
+        z-index: 1;
+    }
+    .row.centered.pad-top {
+        margin-top: 300px;
+    }
+    .row.centered.pad-bottom {
+        margin-bottom: 300px;
+    }
+    .mobile-slide {
+        @media(min-width:769px) {
+            width: 450px;
+            margin-bottom: 100px;
+            img {
+                width: 450px;
+                height: auto;
+            }
+            &.centered {
+                margin-left: 50%;
+                .translate(-50%, 0);
+            }
+            &.float-right {
+                float: right; 
+                margin-top: -50px;
+                .translate(0, -50%);
+            }
+            // &.snapchat {
+            //     width: 300px;
+            // }
+        }
+        .snapchat {
+            height: 400px;
+            width: 400px; 
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+            video {
+                height: 430px;
+                width: 430px;
+                margin: -15px 0 0 -15px;
+            }
+            @media(max-width:450px) {
+                height: 90vw;
+                width: 90vw;
+                video {
+                    height: 100vw;
+                    width: 100vw;
+                }
+            }
+        }
+        p{
+            font-size: 14px;
+            line-height: 1.3;
+            margin: 10px 0 30px;
+        }
+    }
 }
 
 section.fixed-section {
@@ -1211,7 +1307,7 @@ div.background {
         background-image: url("@{enviro}/pred-fore.png");
         background-repeat: no-repeat;
         background-position: bottom right;
-        .background-size(contain);
+        .background-size(100% auto);
     }
     &:after {
         content: '';
@@ -1225,6 +1321,7 @@ div.background {
         .transition(all 1s ease-in);
     }
     span.lines {
+        display: none;
         position: absolute;
         height: 100%;
         width: 30%;
@@ -1234,7 +1331,7 @@ div.background {
         left: 0;
         background: url('@{img}/lines2.svg') no-repeat;
         background-position: center right;
-        display: block;
+        //display: block;
         .background-cover(cover);
         &.right {
             background-position: center left;
@@ -1242,15 +1339,38 @@ div.background {
             right: 0;
         }
     }
-    div.icon {
-        content: '';
-        display: block;
-        width: 225px;
-        height: 225px;
-        margin: 20px auto;
-        opacity: 0.6;
-        background: url("@{enviro}/icon-pred.svg") no-repeat;
-        .background-size(contain);
+}
+section.icon-section {
+    z-index: 2;
+    div.background {
+        .intro-body h1 {
+            margin: 0;
+        }
+        div.icon {
+            content: '';
+            display: block;
+            width: 225px;
+            height: 225px;
+            margin: 20px auto;
+            opacity: 0.6;
+            background: url("@{enviro}/icon-pred.svg") no-repeat;
+            .background-size(contain);
+            &.prey{
+                background: url("@{enviro}/icon-prey.svg") no-repeat;
+                .background-size(contain);
+            }
+            &.scav{
+                background: url("@{enviro}/icon-scav.svg") no-repeat;
+                .background-size(contain);
+            }
+            &.people{
+                background: url("@{enviro}/icon-house.svg") no-repeat;
+                .background-size(contain);
+            }
+        }
+        div.audio {
+            margin: 20px 0;
+        }
     }
 }
 
@@ -1264,15 +1384,51 @@ div.background {
 
 #fixed-section.predator div.background {
     //DEFAULT
+    // div.foreground {
+    //     background-image: url("@{enviro}/pred-fore.png");
+    // }
+    span.lines {
+        display: block;
+    }
 }
 #fixed-section.prey div.background {
-    //
+    background-image: url("@{enviro}/PREY-bkg.jpg");
+    background-position: bottom right;
+    .background-cover(cover);
+    div.foreground {
+        bottom: -125px;
+        background-image: url("@{enviro}/PREY-forground-v2.png");
+        background-position: bottom right;
+        .background-size(100% auto);
+    }
 }
 #fixed-section.scavenger div.background {
-    //
+    background-image: url("@{enviro}/Scavenger-bkg.jpg");
+    background-position: bottom right;
+    .background-cover(cover);
+    div.foreground {
+        bottom: 0;
+        background-image: url("@{enviro}/Scavenger-forground-v2.png");
+        background-position: bottom right;
+        .background-size(100% auto);
+    }
 }
 #fixed-section.people div.background {
-    //
+    background-image: url("@{enviro}/Rancher-bkg.jpg");
+    background-position: bottom right;
+    .background-cover(cover);
+    div.foreground {
+        bottom: 0;
+        background-image: url("@{enviro}/Rancher-forground-v2.png");
+        background-position: bottom right;
+        .background-size(100% auto);
+    }
+}
+
+img.circle.quote {
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
 }
 
 #backto div.background {
@@ -1345,6 +1501,16 @@ div.background {
 @media(max-width:768px) {
     #cv2-header {
         height: 60px;
+    }
+
+    #intro-vid div.background .scrollit {
+        &.scroll-down {
+            visibility: visible;
+            opacity: 1;
+        }
+        &.click-section {
+            display: none;
+        }
     }
 
     #intro-vid div.background, 
@@ -1474,9 +1640,31 @@ div.background {
         }
     }
 
+    #fixed-section.prey div.background div.foreground {
+            height: 75vh;
+            bottom: -60px;
+            left: 0;
+            right: auto;
+            background-position: 0% 0;
+            .background-size(cover);
+    }
+    #fixed-section.scavenger div.background div.foreground {
+            height: 90vh;
+            bottom: -40px;
+            right: 0;
+            background-position: 100% 0;
+            .background-size(cover);
+    }
+    #fixed-section.people div.background div.foreground {
+            height: 35vh;
+            bottom: 0;
+            right: 0;
+            background-position: 50% 0;
+            .background-size(cover);
+    }
+
     div.background.photos {
         padding: 0 50px;
-        //background-color: rgba(0,0,0,0.8);
     }
 
     .transparent-section div.background {
@@ -1516,6 +1704,33 @@ div.background {
         }
     }
 
+    section.section div.background {
+        blockquote {
+            font-size: 14px;
+            span {
+                font-size: 60px;
+                &:nth-of-type(1){
+                    top: -36px;
+                    left: -3px;
+                }
+                &:nth-of-type(2){
+                    bottom: -72px;
+                    right: -3px;
+                }
+            }
+        }
+        p.attribute {
+            font-size: 12px;
+        }
+        img.circle.quote {
+            height: 80px;
+            width: 80px;
+        }
+        div.audio.desktop {
+            display: none;
+        }
+    }
+
 }
 
 @media(max-width:380px) {
@@ -1527,6 +1742,24 @@ div.background {
         }
     }
 
+}
+
+@media(min-width:769px) {
+    #intro-vid div.background .scrollit {
+        &.scroll-down {
+            -webkit-animation: scrollfade 1s 5s;
+                animation: scrollfade 1s 5s;
+            animation-fill-mode: forwards;
+        }
+        &.click-section {
+            -webkit-animation: scrollfade 1s 5s reverse;
+                animation: scrollfade 1s 5s reverse;
+            animation-fill-mode: forwards;
+        }
+    }
+    section.icon-section div.audio {
+        display: none;
+    }
 }
 
 div.fp-controlArrow {
@@ -1605,5 +1838,38 @@ div.fp-controlArrow {
     opacity: 0;
     -webkit-transform: translateY(20px) rotate(45deg);
     transform: translateY(20px) rotate(45deg);
+  }
+}
+
+@-webkit-keyframes scrollfade {
+  0% {
+    .scroll-down {
+        visibility: hidden;
+        opacity: 0;
+    }
+    .click-section {
+        visibility: visible;
+        opacity: 1;
+    }
+  }
+  100% {
+    .scroll-down {
+        visibility: visible;
+        opacity: 1;
+    }
+    .click-section {
+        visibility: hidden;
+        opacity: 0;
+    }
+  }
+} 
+@keyframes scrollfade {
+  0% {
+        visibility: hidden;
+        opacity: 0;
+  }
+  100% {
+        visibility: visible;
+        opacity: 1;
   }
 }
