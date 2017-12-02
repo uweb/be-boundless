@@ -197,35 +197,23 @@ $('#immersive-body').fullpage({
     //events
     onLeave: function(index, nextIndex, direction){
       //switching in/out of first slide
-      if( (index == 1 && nextIndex == 2) || (index == 2 && nextIndex == 1) ){ 
-        $('#immersive').toggleClass("hide-white-menu");
-      }
-      //switching bg between black and pred
-      if( (index == 2 && nextIndex == 3) || (index == 3 && nextIndex == 2) ){
-        $('#fixed-section').toggleClass("blank");
-        $('#fixed-section').toggleClass("predator");
-        //console.log("test")
-      }
+      // if( (index == 1) || (nextIndex == 1) ){ 
+      //   $('#immersive').toggleClass("hide-white-menu");
+      // }
+      
+      setFixedBG();
 
-      //switch from pred to prey
-      if( (index == 6 && nextIndex == 7) || (index == 7 && nextIndex == 6) ){
-        $('#fixed-section').toggleClass("predator");
-        $('#fixed-section').toggleClass("prey");
-      }
-
-      //switch from prey to scav
-      if( (index == 9 && nextIndex == 10) || (index == 10 && nextIndex == 9) ){
-        $('#fixed-section').toggleClass("prey");
-        $('#fixed-section').toggleClass("scavenger");
-      }
-
-      //switch from scav to people
-      if( (index == 12 && nextIndex == 13) || (index == 13 && nextIndex == 12) ){
-        $('#fixed-section').toggleClass("scavenger");
-        $('#fixed-section').toggleClass("people");
-      }
+      //Scrollbar action
+      //$('#full-line').width(indexArray[nextIndex - 1] + "%");
+      //console.log(indexArray[nextIndex - 1]);
     },
-    // afterLoad: function(anchorLink, index){},
+    afterLoad: function(anchorLink, index){
+      // if( ( window.location.hash.indexOf("home") == -1 ) && (window.location.hash) ) {
+      //   $('#immersive').addClass("hide-white-menu");
+      // }
+
+      setFixedBG();
+    },
     // afterRender: function(){},
     // afterResize: function(){},
     // afterResponsive: function(isResponsive){},
