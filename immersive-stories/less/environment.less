@@ -470,7 +470,7 @@ section.slide1 div.background {
 // }
 
 section.section div.background ,
-section.fixed-section div.background {
+section#fixed-section div.background {
     position: relative;
     &:before {
         content: '';
@@ -796,7 +796,7 @@ section.fixed-section div.background {
 
 
 section.section div.background ,
-section.fixed-section div.background {
+section#fixed-section div.background {
     &:before {
         content: none;
     }
@@ -837,14 +837,17 @@ section.transparent-section {
     z-index: 1;
 }
 .transparent-section div.background {
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.9);
 
 }
 
 div.background.photos {
-    padding: 10vh 10vw 20vh; 
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 10vh 10vw 20vh;
+    .container {
+        max-width: 1200px; 
+        width: auto;
+        margin: 0 auto;
+    }
     img {
         position: relative;
         z-index: 1;
@@ -909,7 +912,7 @@ div.background.photos {
             //     width: 300px;
             // }
         }
-        @media(min-width:1130px) {
+        @media(min-width:1175px) {
             &.float-right {
                 .translate(0, -50%);
             }
@@ -944,7 +947,7 @@ div.background.photos {
     }
 }
 
-section.fixed-section {
+section#fixed-section {
     height: 100%;
     width: 100%;
     padding-top: 90px;
@@ -964,7 +967,7 @@ section.blank-section {
 }
 
 section.section div.background .intro-body.move-higher,
-section.fixed-section div.background .intro-body.move-higher {
+section#fixed-section div.background .intro-body.move-higher {
     top: 37%;
 }
 
@@ -1415,18 +1418,18 @@ section.icon-section {
             height: 225px;
             margin: 20px auto;
             opacity: 0.6;
-            background: url("@{enviro}/icon-pred.svg") no-repeat;
+            background: url("@{enviro}/PRED.svg") no-repeat;
             .background-size(contain);
             &.prey{
-                background: url("@{enviro}/icon-prey.svg") no-repeat;
+                background: url("@{enviro}/PREY.svg") no-repeat;
                 .background-size(contain);
             }
             &.scav{
-                background: url("@{enviro}/icon-scav.svg") no-repeat;
+                background: url("@{enviro}/SCAV.svg") no-repeat;
                 .background-size(contain);
             }
             &.people{
-                background: url("@{enviro}/icon-house.svg") no-repeat;
+                background: url("@{enviro}/PEOPLE.svg") no-repeat;
                 .background-size(contain);
             }
         }
@@ -1793,7 +1796,7 @@ img.circle.quote {
     }
 
     .transparent-section div.background {
-        background-color: rgba(0,0,0,0.85);
+        background-color: rgba(0,0,0,0.6);
     }
 
     #backto div.background {
@@ -1909,6 +1912,118 @@ div.fp-controlArrow {
         border-width: 2px;
         border-color: #fff;
         .rotate(-45deg);
+    }
+}
+
+@media(min-width:769px) {
+    #scrollbar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30px;
+        background: @darkgold;
+        p {
+            color: #FFFFFF;
+            text-transform: uppercase;
+            font-size: 14px;
+            margin-top: 3px;
+            width: 10%;
+            text-align: center;
+        }
+        div.black {
+            position: absolute;
+            bottom: 3px;
+            right: -1%;
+            width: 91%;
+            height: 24px;
+            background: #000000;
+            .skew(-15deg, 0);
+            div.empty-line {
+                position: absolute;
+                bottom: 11px;
+                right: 5%;
+                height: 2px;
+                width: 85%;
+                background: @darkgray;
+                overflow: visible;
+                .skew(15deg, 0);
+                #full-line {
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0;
+                    height: 2px;
+                    width: 0%;
+                    background: #FFFFFF;
+                    .transition(all 1s ease-in-out);
+                }
+                a.dot {
+                    position: absolute;
+                    bottom: -4px;
+                    left: -5px;
+                    height: 10px;
+                    width: 0px;
+                    background: @purple;
+                    border-radius: 12px;
+                    overflow: visible;
+                    z-index: 1;
+                    .transition(all .5s ease-in-out);
+                    span {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        height: 10px;
+                        width: 10px;
+                        background: @gray;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        .transition(all .5s ease-in-out);
+                        p {
+                            margin: 2px 0 0 30px;
+                            font-size: 12px;
+                        }
+                    }
+                    &:hover {
+                        width: 12.5%;
+                        height: 24px;
+                        bottom: -11px;
+                        span {
+                            height: 24px;
+                            width: 24px;
+                            overflow: visible;
+                        }
+
+                    }
+                }
+                a.dot1 {}
+                a.dot2 { left: calc(~"12.5% - 5px"); }
+                a.dot3 { left: calc(~"25% - 5px");   }
+                a.dot4 { left: calc(~"37.5% - 5px"); }
+                a.dot5 { left: calc(~"50% - 5px");   }
+                a.dot6 { left: calc(~"62.5% - 5px"); }
+                a.dot7 { left: calc(~"75% - 5px");   }
+                a.dot8 { left: calc(~"87.5% - 5px"); }
+                a.dot9 { left: calc(~"100% - 5px");  }
+                span.dash {
+                    position: absolute;
+                    bottom: 0;
+                    //left: -5px;
+                    height: 7px;
+                    width: 2px;
+                    border-radius: 10%;
+                    background: @darkgold;
+                    overflow: hidden;
+                }
+                span.dash41 { left: 41.65%; }
+                span.dash42 { left: 45.8%;  }
+                span.dash51 { left: 54.15%; }
+                span.dash52 { left: 58.3%;  }
+                span.dash61 { left: 66.65%; }
+                span.dash62 { left: 70.8%;  }
+                span.dash71 { left: 79.15%; }
+                span.dash72 { left: 83.3%;  }
+            }
+        }
     }
 }
 

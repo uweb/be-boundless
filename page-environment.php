@@ -243,7 +243,7 @@
    <!--****************************************
     *****FIXED BACKGROUND FOR ALL SECTIONS*****
     *****************************************-->
-  <section class="fixed-section blank" id="fixed-section">
+  <section class="" id="fixed-section">
     <div class="background">
       <span class="lines right"></span>
       <span class="lines left"></span>
@@ -297,8 +297,7 @@
     <section class="section transparent-section fp-auto-height">
         <div class="background photos">
           <div class="section-caption"><p>Predators // The student experience</p></div>
-          <!-- <div class="intro-body"> -->
-         <!-- <div class="row"> -->
+           <div class="container">
                <!-- 5.1 -->
                <div class="mobile-slide"> 
                 <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_1.jpg' ?>" alt="On a foggy day, Aaron Wirsing points out possible locations where wolves could be on a distant ridge." data-lity>
@@ -338,8 +337,7 @@
                   Matthew Malone, ’18
                 </p>
               </div>
-         <!--  </div> -->
-        <!-- </div> -->
+        </div> 
         <section class="scrollit read-more">
           <p>Scroll to continue</p>  
           <div class="mouse">
@@ -364,7 +362,7 @@
                     </blockquote>
                   </div>
                   <div class="row centered">
-                    <!-- <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/DOUG_SMITH_QUOTE_PORTRAIT.png' ?>" alt="Doug Smith"> -->
+                    <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RICK_QUOTE_PORTRAIT.png' ?>" alt="Rick McIntyre">
                     <p class="attribute no-top no-bottom">
                       Rick McIntyre, wolf interpreter,</br>
                       Yellowstone National Park
@@ -894,6 +892,32 @@
       </div>
     </div>
   </section>
+
+ <section id="scrollbar">
+   <p>explore</p>
+   <div class="black">
+     <div class="empty-line">
+       <span id="full-line"></span>
+       <a href="#home" class="dot dot1"><span><p>Intro</p></span></a>
+       <a href="#experience" class="dot dot2"><span><p>Experience</p></span></a>
+       <a href="#meet" class="dot dot3"><span><p>Students</p></span></a>
+       <a href="#predator" class="dot dot4"><span><p>Predators</p></span></a>
+       <a href="#prey" class="dot dot5"><span><p>Prey</p></span></a>
+       <a href="#scavenger" class="dot dot6"><span><p>Scavengers</p></span></a>
+       <a href="#people" class="dot dot7"><span><p>People</p></span></a>
+       <a href="#explore" class="dot dot8"><span><p>Explore</p></span></a>
+       <a href="#give" class="dot dot9"><span><p>Give</p></span></a>
+       <span class="dash dash41"></span>
+       <span class="dash dash42"></span>
+       <span class="dash dash51"></span>
+       <span class="dash dash52"></span>
+       <span class="dash dash61"></span>
+       <span class="dash dash62"></span>
+       <span class="dash dash71"></span>
+       <span class="dash dash72"></span>
+     </div>
+   </div>
+ </section>
 
 
 </div>
