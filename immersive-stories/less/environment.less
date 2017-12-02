@@ -1073,6 +1073,9 @@ section#fixed-section div.background .intro-body.move-higher {
     background-repeat: no-repeat;
     background-position: center center;
     .background-cover(cover);
+    &:after {
+        background: rgba(0,0,0,0.6);
+    }
     h1 {
         //line-height: 0.85;
         font-size: 5.2vw;
@@ -1085,6 +1088,9 @@ section#fixed-section div.background .intro-body.move-higher {
     }
     .text-box {
         margin-top: -20vw;
+    }
+    .intro-body {
+        z-index: 2;
     }
     #all-students {
         visibility: visible;
@@ -1100,6 +1106,7 @@ section#fixed-section div.background .intro-body.move-higher {
         bottom: 0; 
         opacity: 1;
         z-index: 1;
+        max-height: 60vh;
         &.student1 {
             left: 81%;
             img { 
@@ -1108,14 +1115,16 @@ section#fixed-section div.background .intro-body.move-higher {
             } 
         }
         &.student2 {
-            left: 22%; 
+            left: 22%;
+            max-height: 48vh; 
             img { 
                 min-width: 125px; 
                 width: 9.2vw;
             }
         }
         &.student3 {
-            left: 68%; 
+            left: 68%;
+            max-height: 48vh; 
             img { 
                 min-width: 130px; 
                 width: 9.5vw;
@@ -1123,6 +1132,7 @@ section#fixed-section div.background .intro-body.move-higher {
         }
         &.student4 {
             left: 37%;
+            max-height: 41vh;
             img { 
                 min-width: 135px; 
                 width: 10vw;
@@ -1137,7 +1147,8 @@ section#fixed-section div.background .intro-body.move-higher {
         }
         &.student6 {
             left: 52%;
-            bottom: -10vw;
+            //bottom: -10vw;
+            max-height: 47vh;
             img { 
                 min-width: 150px; 
                 width: 11vw;
