@@ -33,6 +33,12 @@
     z-index: 9;
 }
 
+.scrollit:not(.click-section){
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.7;
+}
+
 section:not(.fp-auto-height) div.background {
     height: 100%;
     max-height: calc(~"100vh - 90px");
@@ -129,6 +135,7 @@ section.slide1 div.background {
     .scrollit.scroll-down {
         visibility: hidden;
         opacity: 0;
+       // bottom: 0;
     }
     p {
         color: white;
