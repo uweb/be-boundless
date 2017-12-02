@@ -279,6 +279,7 @@
                     <div id="transcript1"class="visually-hidden audio-transcript" tabindex="0">
                       <p>Speaker: Rick McIntyre, wolf interpreter, Yellowstone National Park</p>
                       <p>There was a British anthropologist that once said that there is no two species on Earth that are so similar in social behavior as wolves in humans. For example we found here that the most common cause of death for adult wolves in Yellowstone since we don't have any human hunting or trapping the most common cause of death is to die fighting to protect your family and your territory from a rival pack</p>
+                      <span class="close-transcript"></span>
                     </div>
                   </div>
               </div>         
@@ -300,27 +301,27 @@
            <div class="container">
                <!-- 5.1 -->
                <div class="mobile-slide"> 
-                <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_1.jpg' ?>" alt="On a foggy day, Aaron Wirsing points out possible locations where wolves could be on a distant ridge." data-lity>
+                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_1.jpg' ?>" alt="On a foggy day, Aaron Wirsing points out possible locations where wolves could be on a distant ridge." data-lity></span>
                 <p class="">On a foggy day, Aaron Wirsing points out possible locations where wolves could be on a distant ridge.</p>
               </div>
               <!-- 5.2 -->
               <div class="mobile-slide float-right">
-                <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_2.jpg' ?>" alt="After awaking from hibernation, a grizzly bear makes its way to an easy meal: a nearby bison carcass. While fattening up for winter, the omnivorous grizzly feasts on everything from berries to cutthroat trout to insects." data-lity>
+                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_2.jpg' ?>" alt="After awaking from hibernation, a grizzly bear makes its way to an easy meal: a nearby bison carcass. While fattening up for winter, the omnivorous grizzly feasts on everything from berries to cutthroat trout to insects." data-lity></span>
                 <p class="">After awaking from hibernation, a grizzly bear makes its way to an easy meal: a nearby bison carcass. While fattening up for winter, the omnivorous grizzly feasts on everything from berries to cutthroat trout to insects.</p>
               </div>
               <!-- 5.3 -->
               <div class="mobile-slide">
-                <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_3.jpg' ?>" alt="Tyler, a TK title, holds a golden eagle. After drawing blood, weighing and measuring the bird, he releases it." data-lity>
+                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_3.jpg' ?>" alt="Tyler, a TK title, holds a golden eagle. After drawing blood, weighing and measuring the bird, he releases it." data-lity></span>
                 <p>Tyler, a TK title, holds a golden eagle. After drawing blood, weighing and measuring the bird, he releases it.</p>
               </div>
               <!-- 5.4 -->
               <div class="mobile-slide float-right">
-                <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_4.jpg' ?>" alt="During the weeklong course, students found many opportunities to record data that would be used for presentations at the end of the quarter." data-lity>
+                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_4.jpg' ?>" alt="During the weeklong course, students found many opportunities to record data that would be used for presentations at the end of the quarter." data-lity></span>
                 <p>During the weeklong course, students found many opportunities to record data that would be used for presentations at the end of the quarter.</p>
               </div> 
               <!-- 5.5 -->
               <div class="mobile-slide">
-                <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_5.jpg' ?>" alt="At the site of a wolf-killed elk, biologist Kai Koitzsch explains how to conduct a necropsy, studying everything from the elk’s worn molars and bone marrow health to nearby wolf pawprints and raven droppings." data-lity>
+                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_5.jpg' ?>" alt="At the site of a wolf-killed elk, biologist Kai Koitzsch explains how to conduct a necropsy, studying everything from the elk’s worn molars and bone marrow health to nearby wolf pawprints and raven droppings." data-lity></span>
                 <p>At the site of a wolf-killed elk, biologist Kai Koitzsch explains how to conduct a necropsy, studying everything from the elk’s worn molars and bone marrow health to nearby wolf pawprints and raven droppings.</p>
               </div> 
               <!--IGNORED ON MOBILE -->
@@ -383,6 +384,7 @@
                       <div class="visually-hidden audio-transcript" tabindex="0">
                         <p>Speaker: Rick McIntyre, wolf interpreter, Yellowstone National Park</p>
                         <p>There was a British anthropologist that once said that there is no two species on Earth that are so similar in social behavior as wolves in humans. For example we found here that the most common cause of death for adult wolves in Yellowstone since we don't have any human hunting or trapping the most common cause of death is to die fighting to protect your family and your territory from a rival pack.</p>
+                        <span class="close-transcript"></span>
                       </div>
                     </div>
               </div>         
@@ -422,6 +424,7 @@
                     <div id="transcript1"class="visually-hidden audio-transcript" tabindex="0">
                       <!-- <p>Speaker: Rick McIntyre, wolf interpreter, Yellowstone National Park</p> -->
                       <p>Animals that are in really good condition have the luxury of not having to feed so much they can actually be quite vigilant whereas animals that are emaciated desperate tend to have to focus all their time eating and not looking for predators. So simply put if you can see the ribs and you can see the parts of the backbone and the hip bones sticking out that animals not doing very well.</p>
+                      <span class="close-transcript"></span>
                     </div>
                   </div>
               </div>         
@@ -444,11 +447,11 @@
          <!-- <div class="row"> -->
               <!-- 8.1 -->
               <div class="mobile-slide">
-                <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_1.jpg' ?>" alt="Rick Wallen, the lead biologist for bison in Yellowstone, talks to students about his work." data-lity>
+                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_1.jpg' ?>" alt="Rick Wallen, the lead biologist for bison in Yellowstone, talks to students about his work." data-lity></span>
                 <p>Rick Wallen, the lead biologist for bison in Yellowstone, talks to students about his work.</p>
               </div>
               <!-- 8.3 -->
-              <div class="mobile-slide float-right">
+              <div class="mobile-slide float-right snapchat-vid">
                 <div class="snapchat draw-line-link">
                   <video autoplay data-autoplay loop muted playsinline class="media" data-object-fit data-lity>
                       <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/PREY_SNAP.mp4' ?>" type="video/mp4">
@@ -458,12 +461,12 @@
               </div> 
               <!-- 8.2 -->
               <div class="mobile-slide">
-                <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_2.jpg' ?>" alt="Bighorn sheep are just one of the many animals that congregate in Yellowstone" data-lity>
+                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_2.jpg' ?>" alt="Bighorn sheep are just one of the many animals that congregate in Yellowstone" data-lity></span>
                 <p class="">Bighorn sheep are just one of the many animals that congregate in Yellowstone</p>
               </div>
               <!-- 8.4 -->
               <div class="mobile-slide centered"> 
-                <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_3.jpg' ?>" alt="Gavin Forster, ’18,  helps collect data for John Marzluff’s ongoing bird survey." data-lity>
+                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_3.jpg' ?>" alt="Gavin Forster, ’18,  helps collect data for John Marzluff’s ongoing bird survey." data-lity></span>
                 <p class="">Gavin Forster, ’18,  helps collect data for John Marzluff’s ongoing bird survey.</p>
               </div>
               <!-- 8.5 -->
@@ -532,6 +535,7 @@
                       <div class="visually-hidden audio-transcript" tabindex="0">
                         <!-- <p>Speaker: Rick McIntyre, wolf interpreter, Yellowstone National Park</p> -->
                         <p>Animals that are in really good condition have the luxury of not having to feed so much they can actually be quite vigilant whereas animals that are emaciated desperate tend to have to focus all their time eating and not looking for predators. So simply put if you can see the ribs and you can see the parts of the backbone and the hip bones sticking out that animals not doing very well.</p>
+                        <span class="close-transcript"></span>
                       </div>
                     </div>
               </div>         
@@ -556,7 +560,7 @@
                   <div class="icon scav"></div>
                   <h1 class="">Scavengers</h1>
                   <span class="col-md-4 col-xs-10"><span class="squiggle"></span></span>
-                  <div class="audio"><p class="length">0:18  <span>/ play lesson</span></p>
+                  <div class="audio"><p class="length">0:21  <span>/ play lesson</span></p>
                     <audio controls class="player">
                       <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/Lecture_SCAVENGER.mp3' ?>" type="audio/mpeg">
                       <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
@@ -564,13 +568,14 @@
                     </audio>
                     
                     <p class="audio-buttons">
-                      <button class="audio-ctrl audio-play" tabindex="0">0:18 / PLAY LESSON</button>  
+                      <button class="audio-ctrl audio-play" tabindex="0">0:21 / PLAY LESSON</button>  
                       <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
                       <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                     </p>
                     <div id="transcript1"class="visually-hidden audio-transcript" tabindex="0">
                       <!-- <p>Speaker: Rick McIntyre, wolf interpreter, Yellowstone National Park</p> -->
                       <p>A quarter to a third of all bison consumption by wolves is carcasses. And so rather than risk your life killing a bison they wait for a carcass to show up especially this time of year especially during the rut. So this could be a huge subsidy for wolves and could be important in that the impact of wolves and elk.</p>
+                      <span class="close-transcript"></span>
                     </div>
                   </div>
               </div>         
@@ -593,11 +598,11 @@
          <!-- <div class="row"> -->
               <!-- 11.1 -->
               <div class="mobile-slide">
-                <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_1.jpg' ?>" alt="Celestina Davidson, ’17, scans, or “glasses,” the hills for wildlife." data-lity>
+                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_1.jpg' ?>" alt="Celestina Davidson, ’17, scans, or “glasses,” the hills for wildlife." data-lity></span>
                 <p>Celestina Davidson, ’17, scans, or “glasses,” the hills for wildlife.</p>
               </div>
               <!-- 11.2 -->
-              <div class="mobile-slide float-right">
+              <div class="mobile-slide float-right snapchat-vid">
                 <div class="snapchat draw-line-link">
                   <video autoplay data-autoplay loop muted playsinline class="media" data-object-fit data-lity>
                       <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/SCAVENGER_SNAP.mp4' ?>" type="video/mp4">
@@ -607,12 +612,12 @@
               </div>
               <!-- 11.3 -->
               <div class="mobile-slide">
-                <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_2.jpg' ?>" alt="The close-up intricacies of a feather." data-lity>
+                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_2.jpg' ?>" alt="The close-up intricacies of a feather." data-lity></span>
                 <p>The close-up intricacies of a feather.</p>
               </div> 
               <!-- 11.4 -->
               <div class="mobile-slide centered"> 
-                <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_3.jpg' ?>" alt="Two ravens make their presence known in the otherwise silent expanse of the Lamar Valley." data-lity>
+               <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_3.jpg' ?>" alt="Two ravens make their presence known in the otherwise silent expanse of the Lamar Valley." data-lity></span>
                 <p class="">Two ravens make their presence known in the otherwise silent expanse of the Lamar Valley.</p>
               </div>
               <!-- 11.5 -->
@@ -666,7 +671,7 @@
                       Yellowstone National Park
                     </p>
                   </div>
-                    <div class="audio desktop"><p class="length">0:18  <span>/ play lesson</span></p>
+                    <div class="audio desktop"><p class="length">0:21  <span>/ play lesson</span></p>
                       <audio controls class="player">
                         <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/Lecture_SCAVENGER.mp3' ?>" type="audio/mpeg">
                         <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
@@ -674,13 +679,14 @@
                       </audio>
                       
                       <p class="audio-buttons">
-                        <button class="audio-ctrl audio-play" tabindex="0">0:18 / PLAY LESSON</button>  
+                        <button class="audio-ctrl audio-play" tabindex="0">0:21 / PLAY LESSON</button>  
                         <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
                         <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                       </p>
                       <div class="visually-hidden audio-transcript" tabindex="0">
                         <!-- <p>Speaker: Rick McIntyre, wolf interpreter, Yellowstone National Park</p> -->
                         <p>A quarter to a third of all bison consumption by wolves is carcasses. And so rather than risk your life killing a bison they wait for a carcass to show up especially this time of year especially during the rut. So this could be a huge subsidy for wolves and could be important in that the impact of wolves and elk.</p>
+                        <span class="close-transcript"></span>
                       </div>
                     </div>
               </div>         
@@ -720,6 +726,7 @@
                     <div id="transcript1"class="visually-hidden audio-transcript" tabindex="0">
                       <!-- <p>Speaker: Rick McIntyre, wolf interpreter, Yellowstone National Park</p> -->
                       <p>We use a lot of electric fence to keep them bunched together so that they relearn that herd instinct to keep their young close and in the middle. The animals that get killed go off, way off on their own. Wolves do not want to get killed. Wolves are very very smart hunters. They would much rather go kill rabbit or a fawn and so when a wolf or a pack of wolves comes up on 300 head of cattle that are all staring them down their not going to get themselves killed over one meal.</p>
+                      <span class="close-transcript"></span>
                     </div>
                   </div>
               </div>         
@@ -742,17 +749,17 @@
          <!-- <div class="row"> -->
               <!-- 14.1 -->
               <div class="mobile-slide">
-                <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOPLE_GAL_1.jpg' ?>" alt="Malou Anderson-Ramirez gives students a tour of the Anderson Ranch." data-lity>
+                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOPLE_GAL_1.jpg' ?>" alt="Malou Anderson-Ramirez gives students a tour of the Anderson Ranch." data-lity></span>
                 <p>Malou Anderson-Ramirez gives students a tour of the Anderson Ranch.</p>
               </div>
               <!-- 14.2 -->
               <div class="mobile-slide float-right">
-                <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOPLE_GAL_1.1.jpg' ?>" alt="Students tour the Anderson Ranch." data-lity>
+                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOPLE_GAL_1.1.jpg' ?>" alt="Students tour the Anderson Ranch." data-lity></span>
                 <p class="">Students tour the Anderson Ranch.</p>
               </div>
               <!-- 14.3 -->
               <div class="mobile-slide">
-                <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOPLE_GAL_2.jpg' ?>" alt="Horses, longhorns, goats and other domesticated animals pepper the many ranches in the expansive Tom Miner Basin, just miles from the Yellowstone Park border." data-lity>
+                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOPLE_GAL_2.jpg' ?>" alt="Horses, longhorns, goats and other domesticated animals pepper the many ranches in the expansive Tom Miner Basin, just miles from the Yellowstone Park border." data-lity></span>
                 <p>Horses, longhorns, goats and other domesticated animals pepper the many ranches in the expansive Tom Miner Basin, just miles from the Yellowstone Park border.</p>
               </div> 
               <!-- 14.4 -->
@@ -825,6 +832,7 @@
                       <div class="visually-hidden audio-transcript" tabindex="0">
                         <!-- <p>Speaker: Rick McIntyre, wolf interpreter, Yellowstone National Park</p> -->
                         <p>We use a lot of electric fence to keep them bunched together so that they relearn that herd instinct to keep their young close and in the middle. The animals that get killed go off, way off on their own. Wolves do not want to get killed. Wolves are very very smart hunters. They would much rather go kill rabbit or a fawn and so when a wolf or a pack of wolves comes up on 300 head of cattle that are all staring them down their not going to get themselves killed over one meal.</p>
+                        <span class="close-transcript"></span>
                       </div>
                     </div>
               </div>         

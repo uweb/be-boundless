@@ -876,12 +876,29 @@ div.background.photos {
                 float: right; 
                 margin-top: -50px;
             }
-            &:after {
-                content: "\e93a";
-                font-size: 40px;
-                color: @darkgold;
-                background: rgba(255, 255, 255, 0.5);
-                border-radius: 50%;
+            span {
+                display: block;
+                position: relative;
+            }
+            span:before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                height: 0;
+                width: 0;
+                opacity: 0.0;
+                visibility: hidden;
+                z-index: 2;
+                border-top: 100px solid transparent;
+                border-left: 60px solid transparent;
+                border-bottom: 100px solid @darkgold;
+                .transition(all .2s linear .1s);
+            }
+            span:after {
+                content: "\e907";
+                font-size: 38px;
+                color: #FFFFFF;
                 display: block;
                 font-family: uw-icon;
                 speak: none;
@@ -892,18 +909,21 @@ div.background.photos {
                 line-height: 1;
                 //margin-top: -143px;
                 position: absolute;
-                top: 10px;
-                right: 10px;
-                z-index: 1;
+                bottom: 5px;
+                right: 1px;
+                z-index: 2;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
                 opacity: 0;
                 visibility: hidden;
-                -webkit-transition: all .2s linear .1s;
-                transition: all .2s linear .1s;
+                .transition(all .2s linear .1s);
             }
             &:hover {
-                &:after {
+                span:before {
+                    visibility: visible;
+                    opacity: 0.7;
+                }
+                span:after {
                     visibility: visible;
                     opacity: 0.9;
                 }
@@ -2031,6 +2051,19 @@ div.fp-controlArrow {
 *****END MOBILE*****
 *******************/
 
+span.close-transcript {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 10px;
+    right: 10px;
+    background: url(../../immersive-stories/img/close.svg) no-repeat ~"-2.6px -.5px / 30px 30px" transparent;
+    .transition(all .5s ease-in-out);
+    &:hover {
+        border-radius: 50%;
+        background-color: @darkgold;
+    }
+}
 
 #immersive.hide-white-menu {
     #cv2-header {

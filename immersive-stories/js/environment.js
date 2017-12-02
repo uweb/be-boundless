@@ -293,49 +293,72 @@ $("#cv2-header-white-collapse").on('click', function(e) {
     $("#cv2-header-white-collapse").toggleClass("close");
 })
 
+// Audio Player
+  $(".audio-ctrl").each(function(){
+  
+    var $this = $(this);
+    $this.unbind();
+  
+    // Set ARIA attribute to false
+    $this.attr("aria-pressed","false");
+  
+    $this.click(function(e){
+      e.preventDefault();
+      e.stopPropagation();
 
-/*****************/
-/***SCROLLMAGIC***/
-/*****************/
- // currentController = controllerEnviro;
+      var $audio = $(e.target).closest('.audio'),
+           audioEl = $audio.find('audio')[0];
+  
+      if( !($audio.hasClass("active-audio")) ) {
+        // Pause all currently playing
+        var mp3s = document.body.getElementsByTagName('audio');    
+        for (var i = 0; i < mp3s.length; i++ ) {
+          mp3s[i].pause()
+        }
+      }
+      $audio.addClass('active-audio');
+      $audio.find('button').attr("aria-pressed","false");
+      $this.attr("aria-pressed","true");
+  
+      if($this.hasClass("audio-play")){
+        $('audio')[0].pause();
+        setTimeout(function(){
+          audioEl.play();
+        },1000);
+      }
+      if($this.hasClass("audio-pause")){
+        audioEl.pause();             
+      }
+      if($this.hasClass("audio-read")){
+        $audio.find(".audio-transcript").removeClass("visually-hidden").focus();
+        $audio.toggleClass("trans");
+        if($this.hasClass('active-transcript')){
+          $audio.find(".audio-transcript").addClass("visually-hidden")
+          $this.removeClass('active-transcript');
+          $audio.toggleClass("trans");
+        } else {                
+          $this.addClass('active-transcript');
+        }              
+      } 
+    });
+  });
 
-//sectionsssss
+  $("span.close-transcript").on('click', function(e) { 
+    e.preventDefault();
+    e.stopPropagation();
+    //$("button.audio-ctrl.audio-read").trigger('click');
+    var $audio = $(e.target).closest('.audio');
+    var $this = $(this).closest('.audio-transcript').siblings().find('.audio-read');
 
-// var fadeInOut = new TimelineMax()
-//     //slide two
-//     .call(function(){
-//       $('section.test.active').toggleClass('active');
-//     }, null, null, "+=1")
-//     .call(function(){
-//       $('section.test.green').toggleClass('active');
-//     }, null, null, "+=0")
-//     //slide three
-//     .call(function(){
-//       $('section.test.active').toggleClass('active');
-//     }, null, null, "+=1")
-//     .call(function(){
-//       $('section.test.blue').toggleClass('active');
-//     }, null, null, "+=0")
-//     //slide four
-//     .call(function(){
-//       $('section.test.active').toggleClass('active');
-//     }, null, null, "+=1")
-//     .call(function(){
-//       $('section.test.yellow').toggleClass('active');
-//     }, null, null, "+=0");
-    
-
-// new ScrollMagic.Scene({
-//     triggerElement: "#pinContainer", 
-//     triggerHook:'onLeave', 
-//     reverse: true,
-//     duration: "500%"
-//   })
-//   .setPin("#pinContainer")
-//   .setTween(fadeInOut)
-//   .addIndicators()
-//   .addTo(currentController);
-
-
+    $audio.find(".audio-transcript").removeClass("visually-hidden").focus();
+    $audio.toggleClass("trans");
+    if($this.hasClass('active-transcript')){
+      $audio.find(".audio-transcript").addClass("visually-hidden")
+      $this.removeClass('active-transcript');
+      $audio.toggleClass("trans");
+    } else {                
+      $this.addClass('active-transcript'); 
+    }
+  })
 
 });
