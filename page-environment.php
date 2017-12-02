@@ -132,13 +132,13 @@
                 </div>         
             </div>
         </div>
-
-        <div class="student student1"><a class="student-link" href="#student1"><image class="student student1" alt="student one" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait1.png' ?>"></a></div>
-        <div class="student student2"><a class="student-link" href="#student2"><image class="student student2" alt="student two" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait2.png' ?>"></a></div>
-        <div class="student student3"><a class="student-link" href="#student3"><image class="student student3" alt="student three" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait3.png' ?>"></a></div>
-        <div class="student student4"><a class="student-link" href="#student4"><image class="student student4" alt="student four" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait4.png' ?>"></a></div>
-        <div class="student student5"><a class="student-link" href="#student5"><image class="student student5" alt="student five" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait5.png' ?>"></a></div>
-        <div class="student student6"><a class="student-link" href="#student6"><image class="student student6" alt="student six" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait6.png' ?>"></a></div>
+       <!--  <div class="student-container"> -->
+          <div class="student student1"><a class="student-link" href="#student1"><image class="student student1" alt="student one" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait1.png' ?>"></a></div>
+          <div class="student student2"><a class="student-link" href="#student2"><image class="student student2" alt="student two" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait2.png' ?>"></a></div>
+          <div class="student student3"><a class="student-link" href="#student3"><image class="student student3" alt="student three" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait3.png' ?>"></a></div>
+          <div class="student student4"><a class="student-link" href="#student4"><image class="student student4" alt="student four" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait4.png' ?>"></a></div>
+          <div class="student student5"><a class="student-link" href="#student5"><image class="student student5" alt="student five" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait5.png' ?>"></a></div>
+          <div class="student student6"><a class="student-link" href="#student6"><image class="student student6" alt="student six" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait6.png' ?>"></a></div>
       </section>
 
         <!-- STUDENTS - PROFILES -->
@@ -312,7 +312,7 @@
               <!-- 5.3 -->
               <div class="mobile-slide">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_3.jpg' ?>" alt="Tyler, a TK title, holds a golden eagle. After drawing blood, weighing and measuring the bird, he releases it." data-lity></span>
-                <p>Tyler, a TK title, holds a golden eagle. After drawing blood, weighing and measuring the bird, he releases it.</p>
+                <p>Tyler Bain, a research assistant, holds a goldeneagle. After drawing blood, weighing and measuring the bird, he releases it.</p>
               </div>
               <!-- 5.4 -->
               <div class="mobile-slide float-right">
@@ -453,7 +453,7 @@
               <!-- 8.3 -->
               <div class="mobile-slide float-right snapchat-vid">
                 <div class="snapchat draw-line-link">
-                  <video autoplay data-autoplay loop muted playsinline class="media" data-object-fit data-lity>
+                  <video autoplay data-autoplay loop muted playsinline class="media" data-object-fit data-lity data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/PREY_SNAP.mp4' ?>">
                       <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/PREY_SNAP.mp4' ?>" type="video/mp4">
                   </video>
                 </div>
@@ -604,7 +604,7 @@
               <!-- 11.2 -->
               <div class="mobile-slide float-right snapchat-vid">
                 <div class="snapchat draw-line-link">
-                  <video autoplay data-autoplay loop muted playsinline class="media" data-object-fit data-lity>
+                  <video autoplay data-autoplay loop muted playsinline class="media" data-object-fit data-lity data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/SCAVENGER_SNAP.mp4' ?>">
                       <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/SCAVENGER_SNAP.mp4' ?>" type="video/mp4">
                   </video>
                 </div>
