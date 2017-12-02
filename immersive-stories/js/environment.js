@@ -114,7 +114,7 @@ $('#immersive-body').fullpage({
       //console.log(indexArray[nextIndex - 1]);
     },
     afterLoad: function(anchorLink, index){
-      if(window.location.hash.indexOf("home") == -1) {
+      if( ( window.location.hash.indexOf("home") == -1 ) && (window.location.hash) ) {
         $('#immersive').addClass("hide-white-menu");
       }
 
