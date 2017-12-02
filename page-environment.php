@@ -514,7 +514,7 @@
                     </blockquote>
                   </div>
                   <div class="row centered">
-                    <!-- <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/DOUG_SMITH_QUOTE_PORTRAIT.png' ?>" alt="Doug Smith"> -->
+                    <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/AARON_QUOTE_PORTRAIT.png' ?>" alt="Doug Smith">
                     <p class="attribute no-top no-bottom">
                       Aaron Wirsing, Associate Professor of Environmental and Forest Sciences,</br>
                       University of Washington
@@ -812,7 +812,7 @@
                     </blockquote>
                   </div>
                   <div class="row centered">
-                    <!-- <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/DOUG_SMITH_QUOTE_PORTRAIT.png' ?>" alt="Doug Smith"> -->
+                    <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/MALOU_QUOTE_PORTRAIT.png' ?>" alt="Doug Smith">
                     <p class="attribute no-top no-bottom">
                       Mallow Anderson-Ramirez, Rancher
                     </p>
