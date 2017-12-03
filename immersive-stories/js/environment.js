@@ -127,6 +127,52 @@ $('#immersive-body').fullpage({
     // onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
   });
 
+
+/****************/
+/*****EXTRAS*****/
+/**DESKTOP ONLY**/
+/****************/
+
+// Video pause
+  $( "#pause-yellow" ).click(function() {     
+    var vid =  $( "#intro-yellow video" )
+    if ( vid.get(0).paused ) {
+      vid.get(0).play() } 
+    else { 
+      vid.get(0).pause();
+    }
+    $('#intro-yellow').toggleClass('paused');
+  });
+
+//click students
+$('.student-link').on('click', function(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  var hash = this.hash;
+  $('#all-students').addClass("not-active");
+  $(hash).addClass("active");
+  $('#close-modal').addClass("active");
+});
+
+$('#close-modal').on('click', function(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  $('#all-students').removeClass("not-active");
+  $('section.student').removeClass("active");
+  $('#close-modal').removeClass("active");
+});
+
+$('section.student').on('click', function(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  console.log("click")
+  $('#all-students').removeClass("not-active");
+  $('section.student').removeClass("active");
+  $('#close-modal').removeClass("active");
+});
+
+
+
 } else {
   //MOBILE INIT
 $('#immersive-body').fullpage({
@@ -232,44 +278,6 @@ $('#immersive-body').fullpage({
 /****************/
 /*****EXTRAS*****/
 /****************/
-
-// Video pause
-  $( "#pause-yellow" ).click(function() {     
-    var vid =  $( "#intro-yellow video" )
-    if ( vid.get(0).paused ) {
-      vid.get(0).play() } 
-    else { 
-      vid.get(0).pause();
-    }
-    $('#intro-yellow').toggleClass('paused');
-  });
-
-//click students
-$('.student-link').on('click', function(e) {
-  e.preventDefault();
-  e.stopPropagation();
-  var hash = this.hash;
-  $('#all-students').addClass("not-active");
-  $(hash).addClass("active");
-  $('#close-modal').addClass("active");
-});
-
-$('#close-modal').on('click', function(e) {
-  e.preventDefault();
-  e.stopPropagation();
-  $('#all-students').removeClass("not-active");
-  $('section.student').removeClass("active");
-  $('#close-modal').removeClass("active");
-});
-
-$('section.student').on('click', function(e) {
-  e.preventDefault();
-  e.stopPropagation();
-  console.log("click")
-  $('#all-students').removeClass("not-active");
-  $('section.student').removeClass("active");
-  $('#close-modal').removeClass("active");
-});
 
 $('a.section-links').on('click', function(e) {
   $('#fixed-section').removeClass("blank");
