@@ -1789,8 +1789,25 @@ img.circle.quote {
         }
     }
 
+    #intro-vid div.background {
+        background-image: url("@{enviro}/header-poster.png");
+    } 
+    #intro-yellow div.background {
+        background-image: url("@{enviro}/DRONE_REVEAL.jpg");
+    }
+
     #intro-vid div.background, 
     #intro-yellow div.background {
+        &:after {
+            background: rgba(0, 0, 0, 0.6);
+        }
+        background-position: center;
+        background-repeat: no-repeat;
+        .background-size(cover);                
+        video,
+        #pause {
+            display: none;
+        }
         .intro-body {
             top: 50%;
             #intro-text {
