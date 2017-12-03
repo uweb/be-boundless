@@ -857,7 +857,7 @@ section.transparent-section {
 div.background.photos {
     padding: 10vh 10vw 20vh;
     .container {
-        max-width: 1200px; 
+        //max-width: 1200px; 
         width: auto;
         margin: 0 auto;
     }
@@ -879,7 +879,8 @@ div.background.photos {
     }
     .mobile-slide {
         @media(min-width:769px) {
-            width: 450px;
+            min-width: 450px;
+            width: 45%;
             margin-bottom: 100px;
             position: relative;
             z-index: 1;
@@ -887,7 +888,8 @@ div.background.photos {
                 margin: 10px 0 30px;
             }
             img {
-                width: 450px;
+                width: 100%;
+                
                 height: auto;
             }
             &.centered {
@@ -1050,17 +1052,21 @@ div.background.photos {
             }
         }
         .snapchat {
-            height: 400px;
-            width: 400px; 
+            min-height: 400px;
+            min-width: 400px; 
+            height: 35vw;
+            width: 35vw; 
             margin-left: auto;
             margin-right: auto;
             border-radius: 50%;
             overflow: hidden;
             position: relative;
             video {
-                height: 430px;
-                width: 430px;
-                margin: -15px 0 0 -15px;
+                // min-height: 430px;
+                // min-width: 430px;
+                height: 110%;
+                width: 110%;
+                margin: -5% 0 0 -5%;
             }
             @media(max-width:450px) {
                 height: 90vw;
