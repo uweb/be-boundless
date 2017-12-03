@@ -483,7 +483,7 @@
                 </blockquote>
               </div>
               <div class="row centered pad-bottom">
-                <!-- <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/DOUG_SMITH_QUOTE_PORTRAIT.png' ?>" alt="Doug Smith"> -->
+                <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/HANNAH_QUOTE_PORTRAIT.png' ?>" alt="Hannah Booth, '18">
                 <p class="attribute no-top no-bottom">
                   Hannah Booth, '18
                 </p>
@@ -634,7 +634,7 @@
                 </blockquote>
               </div>
               <div class="row centered pad-bottom">
-                <<!-- img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/DOUG_SMITH_QUOTE_PORTRAIT.png' ?>" alt="Doug Smith"> -->
+                <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/ANDREW_QUOTE_PORTRAIT.png' ?>" alt="Andrew Wang, '18">
                 <p class="attribute no-top no-bottom">
                   Andrew Wang, '17'
                 </p>
