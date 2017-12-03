@@ -33,10 +33,16 @@
     z-index: 9;
 }
 
+section:not(.active):not(#fixed-section){
+    z-index: 0;
+}
+
 .scrollit:not(.click-section){
-    bottom: 0;
     z-index: 1;
     opacity: 0.7;
+    @media(min-width:769px) {
+        bottom: 0;
+    }
 }
 
 section:not(.fp-auto-height) div.background {
@@ -865,12 +871,21 @@ div.background.photos {
     .row.centered.pad-bottom {
         margin-bottom: 300px;
     }
+    @media(max-width:768px) {
+        .row.centered {
+            display: none;
+        }
+        padding: 0;
+    }
     .mobile-slide {
         @media(min-width:769px) {
             width: 450px;
             margin-bottom: 100px;
             position: relative;
             z-index: 1;
+            p {
+                margin: 10px 0 30px;
+            }
             img {
                 width: 450px;
                 height: auto;
@@ -944,6 +959,96 @@ div.background.photos {
                 .translate(0, -50%);
             }
         }
+        @media(max-width:768px) {
+            span {
+                display: none;
+            }
+            p {
+                position: absolute;
+                background: rgba(0, 0, 0, 0.8);
+                color: white;
+                width: 100%;
+                height: auto;
+                bottom: 0;
+                left: 0;
+                margin: 0;
+                padding: 20px 0 20px 57px;
+                text-align: center;
+                &:before {
+                    content: "i";
+                    position: absolute;
+                    left: 15px;
+                    width: 26px;
+                    height: 26px;
+                    bottom: calc(~"50% - 13px");
+                    color: white;
+                    // font-family: ???
+                    font-weight: 900;
+                    font-size: 18px;
+                    border: 2px solid white;
+                    border-radius: 50%;
+
+                }
+            }
+            &:not(.snapchat-vid) {
+                //insert pics for mobile
+                background-position: center;
+                background-repeat: no-repeat;
+                .background-size(cover);
+                &.pred {
+                    &:nth-of-type(1) {
+                        background-image: url("@{enviro}/PRED_1_MOBILE.jpg");
+                    }
+                    &:nth-of-type(2) {
+                        background-image: url("@{enviro}/PRED_2_MOBILE.jpg");
+                    }
+                    &:nth-of-type(3) {
+                        background-image: url("@{enviro}/PRED_3_MOBILE.jpg");
+                    }
+                    &:nth-of-type(4) {
+                        background-image: url("@{enviro}/PRED_4_MOBILE.jpg");
+                    }
+                    &:nth-of-type(5) {
+                        background-image: url("@{enviro}/PRED_5_MOBILE.jpg");
+                    }
+                }
+                &.prey {
+                    &:nth-of-type(1) {
+                        background-image: url("@{enviro}/PREY_1_MOBILE.jpg");
+                    }
+                    &:nth-of-type(2) {} //snapchat
+                    &:nth-of-type(3) {
+                        background-image: url("@{enviro}/PREY_2_MOBILE.jpg");
+                    }
+                    &:nth-of-type(4) {
+                        background-image: url("@{enviro}/PREY_3_MOBILE.jpg");
+                    }
+                }
+                &.scav {
+                    &:nth-of-type(1) {
+                        background-image: url("@{enviro}/SCAV_1_MOBILE.jpg");
+                    }
+                    &:nth-of-type(2) {} //snapchat
+                    &:nth-of-type(3) {
+                        background-image: url("@{enviro}/SCAV_2_MOBILE.jpg");
+                    }
+                    &:nth-of-type(4) {
+                        background-image: url("@{enviro}/SCAV_3_MOBILE.jpg");
+                    }
+                }
+                &.peop {
+                    &:nth-of-type(1) {
+                        background-image: url("@{enviro}/RANCH_1_MOBILE.jpg");
+                    }
+                    &:nth-of-type(2) {
+                        background-image: url("@{enviro}/RANCH_2_MOBILE.jpg");
+                    }
+                    &:nth-of-type(3) {
+                        background-image: url("@{enviro}/RANCH_3_MOBILE.jpg");
+                    }
+                }
+            }
+        }
         .snapchat {
             height: 400px;
             width: 400px; 
@@ -969,7 +1074,6 @@ div.background.photos {
         p{
             font-size: 14px;
             line-height: 1.3;
-            margin: 10px 0 30px;
         }
     }
 }
@@ -1574,7 +1678,7 @@ section.icon-section {
     .background-cover(cover);
     div.foreground {
         bottom: 0;
-        background-image: url("@{enviro}/Rancher-forground-v2.png");
+        background-image: url("@{enviro}/human-fore.png");
         background-position: bottom right;
         .background-size(100% auto);
     }
@@ -1668,6 +1772,10 @@ img.circle.quote {
 @media(max-width:768px) {
     #cv2-header {
         height: 60px;
+    }
+
+    #scrollbar {
+        display: none;
     }
 
     #intro-vid div.background .scrollit {
@@ -1831,7 +1939,7 @@ img.circle.quote {
     }
 
     div.background.photos {
-        padding: 0 50px;
+        padding: 0;
     }
 
     .transparent-section div.background {

@@ -300,27 +300,27 @@
           <div class="section-caption"><p>Predators // The student experience</p></div>
            <div class="container">
                <!-- 5.1 -->
-               <div class="mobile-slide"> 
+               <div class="mobile-slide pred"> 
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_1.jpg' ?>" alt="On a foggy day, Aaron Wirsing points out possible locations where wolves could be on a distant ridge." data-lity></span>
                 <p class="">On a foggy day, Aaron Wirsing points out possible locations where wolves could be on a distant ridge.</p>
               </div>
               <!-- 5.2 -->
-              <div class="mobile-slide float-right">
+              <div class="mobile-slide pred float-right">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_2.jpg' ?>" alt="After awaking from hibernation, a grizzly bear makes its way to an easy meal: a nearby bison carcass. While fattening up for winter, the omnivorous grizzly feasts on everything from berries to cutthroat trout to insects." data-lity></span>
                 <p class="">After awaking from hibernation, a grizzly bear makes its way to an easy meal: a nearby bison carcass. While fattening up for winter, the omnivorous grizzly feasts on everything from berries to cutthroat trout to insects.</p>
               </div>
               <!-- 5.3 -->
-              <div class="mobile-slide">
+              <div class="mobile-slide pred">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_3.jpg' ?>" alt="Tyler, a TK title, holds a golden eagle. After drawing blood, weighing and measuring the bird, he releases it." data-lity></span>
                 <p>Tyler Bain, a research assistant, holds a goldeneagle. After drawing blood, weighing and measuring the bird, he releases it.</p>
               </div>
               <!-- 5.4 -->
-              <div class="mobile-slide float-right">
+              <div class="mobile-slide pred float-right">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_4.jpg' ?>" alt="During the weeklong course, students found many opportunities to record data that would be used for presentations at the end of the quarter." data-lity></span>
                 <p>During the weeklong course, students found many opportunities to record data that would be used for presentations at the end of the quarter.</p>
               </div> 
               <!-- 5.5 -->
-              <div class="mobile-slide">
+              <div class="mobile-slide pred">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_5.jpg' ?>" alt="At the site of a wolf-killed elk, biologist Kai Koitzsch explains how to conduct a necropsy, studying everything from the elk’s worn molars and bone marrow health to nearby wolf pawprints and raven droppings." data-lity></span>
                 <p>At the site of a wolf-killed elk, biologist Kai Koitzsch explains how to conduct a necropsy, studying everything from the elk’s worn molars and bone marrow health to nearby wolf pawprints and raven droppings.</p>
               </div> 
@@ -446,12 +446,12 @@
           <!-- <div class="intro-body"> -->
          <!-- <div class="row"> -->
               <!-- 8.1 -->
-              <div class="mobile-slide">
+              <div class="mobile-slide prey">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_1.jpg' ?>" alt="Rick Wallen, the lead biologist for bison in Yellowstone, talks to students about his work." data-lity></span>
                 <p>Rick Wallen, the lead biologist for bison in Yellowstone, talks to students about his work.</p>
               </div>
               <!-- 8.3 -->
-              <div class="mobile-slide float-right snapchat-vid">
+              <div class="mobile-slide prey float-right snapchat-vid">
                 <div class="snapchat draw-line-link">
                   <video autoplay data-autoplay loop muted playsinline class="media" data-object-fit data-lity data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/PREY_SNAP.mp4' ?>">
                       <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/PREY_SNAP.mp4' ?>" type="video/mp4">
@@ -460,12 +460,12 @@
                 <p>Student’s-eye view: Captured on Snapchat glasses at a picnic. A curious — and extremely intelligent — raven lingers nearby.</p>
               </div> 
               <!-- 8.2 -->
-              <div class="mobile-slide">
+              <div class="mobile-slide prey">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_2.jpg' ?>" alt="Bighorn sheep are just one of the many animals that congregate in Yellowstone" data-lity></span>
                 <p class="">Bighorn sheep are just one of the many animals that congregate in Yellowstone</p>
               </div>
               <!-- 8.4 -->
-              <div class="mobile-slide centered"> 
+              <div class="mobile-slide prey centered"> 
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_3.jpg' ?>" alt="Gavin Forster, ’18,  helps collect data for John Marzluff’s ongoing bird survey." data-lity></span>
                 <p class="">Gavin Forster, ’18,  helps collect data for John Marzluff’s ongoing bird survey.</p>
               </div>
@@ -597,12 +597,12 @@
           <!-- <div class="intro-body"> -->
          <!-- <div class="row"> -->
               <!-- 11.1 -->
-              <div class="mobile-slide">
+              <div class="mobile-slide scav">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_1.jpg' ?>" alt="Celestina Davidson, ’17, scans, or “glasses,” the hills for wildlife." data-lity></span>
                 <p>Celestina Davidson, ’17, scans, or “glasses,” the hills for wildlife.</p>
               </div>
               <!-- 11.2 -->
-              <div class="mobile-slide float-right snapchat-vid">
+              <div class="mobile-slide scav float-right snapchat-vid">
                 <div class="snapchat draw-line-link">
                   <video autoplay data-autoplay loop muted playsinline class="media" data-object-fit data-lity data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/SCAVENGER_SNAP.mp4' ?>">
                       <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/SCAVENGER_SNAP.mp4' ?>" type="video/mp4">
@@ -611,12 +611,12 @@
                 <p class="">Student’s-eye view: Slogs through mud and slush are rewarded with a picnic.</p>
               </div>
               <!-- 11.3 -->
-              <div class="mobile-slide">
+              <div class="mobile-slide scav">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_2.jpg' ?>" alt="The close-up intricacies of a feather." data-lity></span>
                 <p>The close-up intricacies of a feather.</p>
               </div> 
               <!-- 11.4 -->
-              <div class="mobile-slide centered"> 
+              <div class="mobile-slide scav centered"> 
                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_3.jpg' ?>" alt="Two ravens make their presence known in the otherwise silent expanse of the Lamar Valley." data-lity></span>
                 <p class="">Two ravens make their presence known in the otherwise silent expanse of the Lamar Valley.</p>
               </div>
@@ -748,17 +748,17 @@
           <!-- <div class="intro-body"> -->
          <!-- <div class="row"> -->
               <!-- 14.1 -->
-              <div class="mobile-slide">
+              <div class="mobile-slide peop">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOPLE_GAL_1.jpg' ?>" alt="Malou Anderson-Ramirez gives students a tour of the Anderson Ranch." data-lity></span>
                 <p>Malou Anderson-Ramirez gives students a tour of the Anderson Ranch.</p>
               </div>
               <!-- 14.2 -->
-              <div class="mobile-slide float-right">
+              <div class="mobile-slide peop float-right">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOPLE_GAL_1.1.jpg' ?>" alt="Students tour the Anderson Ranch." data-lity></span>
                 <p class="">Students tour the Anderson Ranch.</p>
               </div>
               <!-- 14.3 -->
-              <div class="mobile-slide">
+              <div class="mobile-slide peop">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOPLE_GAL_2.jpg' ?>" alt="Horses, longhorns, goats and other domesticated animals pepper the many ranches in the expansive Tom Miner Basin, just miles from the Yellowstone Park border." data-lity></span>
                 <p>Horses, longhorns, goats and other domesticated animals pepper the many ranches in the expansive Tom Miner Basin, just miles from the Yellowstone Park border.</p>
               </div> 
