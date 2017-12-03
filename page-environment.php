@@ -255,7 +255,7 @@
   </section>
 
    <!--4. PREDATOR - OPENING SLIDE-->
-  <section data-anchor="predator" class="section fp-noscroll icon-section">
+  <section data-anchor="predator" class="bg-pred section fp-noscroll icon-section">
       <div class="background">
         <div class="section-caption"><p>Predators // Explore</p></div>
         <div class="intro-body move-higher">
@@ -295,7 +295,7 @@
   </section>
 
      <!--5. PREDATOR - GALLERY-->
-    <section class="section transparent-section fp-auto-height">
+    <section class="section transparent-section fp-auto-height bg-pred">
         <div class="background photos">
           <div class="section-caption"><p>Predators // The student experience</p></div>
            <div class="container">
@@ -349,7 +349,7 @@
     </section>
 
     <!--6. PREDATOR - LECTURE-->
-    <section class="section fp-noscroll transparent-section">
+    <section class="section fp-noscroll transparent-section bg-pred">
       <div class="background">
         <div class="section-caption"><p>Predators // Lecture in the field</p></div>
         <div class="intro-body">
@@ -400,7 +400,7 @@
     </section>
 
      <!--7. PREY - OPENING SLIDE-->
-  <section data-anchor="prey" class="section fp-noscroll icon-section">
+  <section data-anchor="prey" class="section fp-noscroll bg-prey icon-section">
       <div class="background">
         <div class="section-caption"><p>Prey // Explore</p></div>
         <div class="intro-body move-higher">
@@ -440,7 +440,7 @@
   </section>
 
      <!--8. PREY - GALLERY-->
-    <section class="section transparent-section fp-auto-height">
+    <section class="section transparent-section bg-prey fp-auto-height">
         <div class="background photos">
           <div class="section-caption"><p>Prey // The student experience</p></div>
           <!-- <div class="intro-body"> -->
@@ -500,7 +500,7 @@
     </section>
 
     <!--9. PREY - LECTURE-->
-    <section class="section fp-noscroll transparent-section">
+    <section class="section fp-noscroll bg-prey transparent-section">
       <div class="background">
         <div class="section-caption"><p>Prey // Lecture in the field</p></div>
         <div class="intro-body">
@@ -551,7 +551,7 @@
     </section>
 
      <!--10. SCAVENGER - OPENING SLIDE-->
-  <section data-anchor="scavenger" class="section fp-noscroll icon-section">
+  <section data-anchor="scavenger" class="section bg-scav fp-noscroll icon-section">
       <div class="background">
         <div class="section-caption"><p>Scavengers // Explore</p></div>
         <div class="intro-body move-higher">
@@ -591,7 +591,7 @@
   </section>
 
      <!--11. SCAVENGER - GALLERY-->
-    <section class="section transparent-section fp-auto-height">
+    <section class="section transparent-section bg-scav fp-auto-height">
         <div class="background photos">
           <div class="section-caption"><p>Scavengers // The student experience</p></div>
           <!-- <div class="intro-body"> -->
@@ -651,7 +651,7 @@
     </section>
 
     <!--12. SCAVENGER - LECTURE-->
-    <section class="section fp-noscroll transparent-section">
+    <section class="section fp-noscroll bg-scav transparent-section">
       <div class="background">
         <div class="section-caption"><p>Scavengers // Lecture in the field</p></div>
         <div class="intro-body">
@@ -702,7 +702,7 @@
     </section>
 
      <!--13. PEOPLE - OPENING SLIDE-->
-  <section data-anchor="people" class="section fp-noscroll icon-section">
+  <section data-anchor="people" class="section bg-peop fp-noscroll icon-section">
       <div class="background">
         <div class="section-caption"><p>People // Explore</p></div>
         <div class="intro-body move-higher">
@@ -742,7 +742,7 @@
   </section>
 
      <!--14. PEOPLE - GALLERY-->
-    <section class="section transparent-section fp-auto-height">
+    <section class="section transparent-section bg-peop fp-auto-height">
         <div class="background photos">
           <div class="section-caption"><p>People // The student experience</p></div>
           <!-- <div class="intro-body"> -->
@@ -798,7 +798,7 @@
     </section>
 
     <!--15. PEOPLE - LECTURE-->
-    <section class="section fp-noscroll transparent-section">
+    <section class="section fp-noscroll bg-peop transparent-section">
       <div class="background">
         <div class="section-caption"><p>People // Lecture in the field</p></div>
         <div class="intro-body">

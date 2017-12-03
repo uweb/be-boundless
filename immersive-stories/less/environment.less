@@ -1818,8 +1818,12 @@ img.circle.quote {
     }
 
     #students div.background {
+        background-position: center;
+        background-repeat: no-repeat;
+        .background-size(cover);
+        background-image: url("@{enviro}/STUDENT_PROFILE_BG_MOBILE.jpg");
         #all-students {
-            background: rgba(0,0,0,0.6);
+           // background: rgba(0,0,0,0.6);
             div.student {
                 display: none;
             }
@@ -1830,6 +1834,7 @@ img.circle.quote {
         section.student.mobile-slide {
             // visibility: visible;
             // opacity: 1;
+            background: none;
             div.name {
                 top: 0;
                 left: 15px;
@@ -1880,6 +1885,38 @@ img.circle.quote {
         #close-modal {
             display: none;
         }
+    }
+
+    section.bg-pred {
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        .background-size(cover);
+        background-image: url("@{enviro}/PREDATOR_MOBLIE_BG.PNG");
+    }
+
+    section.bg-prey {
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        .background-size(cover);
+        background-image: url("@{enviro}/PREY_MOBILE_BG.jpg");
+    }
+
+    section.bg-scav {
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        .background-size(cover);
+        background-image: url("@{enviro}/SCAV_MOBILE_BG.jpg");
+    }
+
+    section.bg-peop {
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        .background-size(cover);
+        background-image: url("@{enviro}/HUMAN_MOBILE_BG.jpg");
+    }
+
+    #fixed-section {
+        display: none;
     }
 
     #fixed-section div.background {
@@ -2119,6 +2156,7 @@ div.fp-controlArrow {
                         span {
                             height: 24px;
                             width: 24px;
+                            background: #000000; //or @darkgold
                             overflow: visible;
                         }
 
