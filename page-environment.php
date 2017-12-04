@@ -126,7 +126,8 @@
                       <p class="col-md-6 col-xs-10 no-top no-bottom">
                           Who went to Yellowstone — and why? See what a handful of students had to say about their experience in the park.
                           <span class="squiggle"></span>
-                          Learn more about how you can support immersive learning experiences at the College of the Environment and help propel students toward the careers of their dreams.
+                          <!-- &frame_buster=false -->
+                          <a data-fund="CELEND" href="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&source_typ=3&appeal=17XIS&source=CELEND" data-lity>Learn more</a> about how you can support immersive learning experiences at the College of the Environment and help propel students toward the careers of their dreams.
                       </p>
                     </div>
                 </div>         
