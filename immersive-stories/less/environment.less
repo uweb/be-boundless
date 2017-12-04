@@ -33,7 +33,7 @@
     z-index: 9;
 }
 
-section:not(.active):not(#fixed-section){
+section:not(.active):not(#fixed-section):not(.scrollit){
     z-index: 0;
 }
 
@@ -218,7 +218,7 @@ section.slide1 div.background {
         position: absolute;
         text-align: center;
         text-transform: uppercase;
-        bottom: 0;
+        bottom: 10px;
         left: 10px;
         z-index: 1;
         opacity: 0.6;
@@ -1329,6 +1329,7 @@ section#fixed-section div.background .intro-body.move-higher {
         &.active {
             visibility: visible;
             opacity: 1;
+            z-index: 1;
         }
         div.name {
             position: absolute;

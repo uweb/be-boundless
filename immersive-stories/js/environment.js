@@ -174,7 +174,7 @@ $('#close-modal').on('click', function(e) {
 $('section.student').on('click', function(e) {
   e.preventDefault();
   e.stopPropagation();
-  console.log("click")
+  //console.log("click")
   $('#all-students').removeClass("not-active");
   $('section.student').removeClass("active");
   $('#close-modal').removeClass("active");
