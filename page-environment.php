@@ -243,7 +243,7 @@
    <!--****************************************
     *****FIXED BACKGROUND FOR ALL SECTIONS*****
     *****************************************-->
-  <section class="predator fixed-section" id="fixed-section1">
+  <!-- <section class="predator fixed-section" id="fixed-section1">
     <div class="background">
       <span class="lines right"></span>
       <span class="lines left"></span>
@@ -286,15 +286,9 @@
       <div class="extra2"></div>
     </div>
   </section>
-
-  <section class="blank fixed-section" id="fixed-section5">
+ -->
+  <section class="blank fixed-section active" id="fixed-section5">
     <div class="background">
-      <span class="lines right"></span>
-      <span class="lines left"></span>
-      <!-- <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/CLOUDS.png' ?>" alt=""> -->
-      <div class="foreground"></div>
-      <div class="extra1"></div>
-      <div class="extra2"></div>
     </div>
   </section>
    <!--*****************
@@ -302,8 +296,14 @@
     *****************-->
 
    <!--4. PREDATOR - OPENING SLIDE-->
-  <section data-anchor="predator" class="bg-pred section fp-noscroll icon-section">
+  <section data-anchor="predator" class="dbg-pred bg-pred section fp-noscroll icon-section">
       <div class="background">
+        <span class="lines right"></span>
+        <span class="lines left"></span>
+        <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/CLOUDS.png' ?>" alt="">
+        <div class="foreground"></div>
+        <div class="extra1"></div>
+        <div class="extra2"></div>
         <div class="section-caption"><p>Predators // Explore</p></div>
         <div class="intro-body move-higher">
          <div class="row">
@@ -378,8 +378,14 @@
     </section>
 
     <!--6. PREDATOR - LECTURE-->
-    <section class="section fp-noscroll transparent-section bg-pred">
+    <section class="section fp-noscroll transparent-section bg-pred dbg-pred">
       <div class="background">
+        <span class="lines right"></span>
+        <span class="lines left"></span>
+        <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/CLOUDS.png' ?>" alt="">
+        <div class="foreground"></div>
+        <div class="extra1"></div>
+        <div class="extra2"></div>
         <div class="section-caption"><p>Predators // Lecture in the field</p></div>
         <div class="intro-body">
          <div class="row">
@@ -428,8 +434,14 @@
     </section>
 
      <!--7. PREY - OPENING SLIDE-->
-  <section data-anchor="prey" class="section fp-noscroll bg-prey icon-section">
+  <section data-anchor="prey" class="section fp-noscroll bg-prey icon-section dbg-prey">
       <div class="background">
+        <span class="lines right"></span>
+        <span class="lines left"></span>
+        <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/CLOUDS.png' ?>" alt="">
+        <div class="foreground"></div>
+        <div class="extra1"></div>
+        <div class="extra2"></div>
         <div class="section-caption"><p>Prey // Explore</p></div>
         <div class="intro-body move-higher">
          <div class="row">
@@ -510,8 +522,14 @@
     </section>
 
     <!--9. PREY - LECTURE-->
-    <section class="section fp-noscroll bg-prey transparent-section">
+    <section class="section fp-noscroll bg-prey transparent-section dbg-prey">
       <div class="background">
+        <span class="lines right"></span>
+        <span class="lines left"></span>
+        <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/CLOUDS.png' ?>" alt="">
+        <div class="foreground"></div>
+        <div class="extra1"></div>
+        <div class="extra2"></div>
         <div class="section-caption"><p>Prey // Lecture in the field</p></div>
         <div class="intro-body">
          <div class="row">
@@ -560,8 +578,14 @@
     </section>
 
      <!--10. SCAVENGER - OPENING SLIDE-->
-  <section data-anchor="scavenger" class="section bg-scav fp-noscroll icon-section">
+  <section data-anchor="scavenger" class="section bg-scav fp-noscroll icon-section dbg-scav">
       <div class="background">
+        <span class="lines right"></span>
+        <span class="lines left"></span>
+        <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/CLOUDS.png' ?>" alt="">
+        <div class="foreground"></div>
+        <div class="extra1"></div>
+        <div class="extra2"></div>
         <div class="section-caption"><p>Scavengers // Explore</p></div>
         <div class="intro-body move-higher">
          <div class="row">
@@ -642,8 +666,14 @@
     </section>
 
     <!--12. SCAVENGER - LECTURE-->
-    <section class="section fp-noscroll bg-scav transparent-section">
+    <section class="section fp-noscroll bg-scav transparent-section dbg-scav">
       <div class="background">
+        <span class="lines right"></span>
+        <span class="lines left"></span>
+        <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/CLOUDS.png' ?>" alt="">
+        <div class="foreground"></div>
+        <div class="extra1"></div>
+        <div class="extra2"></div>
         <div class="section-caption"><p>Scavengers // Lecture in the field</p></div>
         <div class="intro-body">
          <div class="row">
@@ -692,8 +722,14 @@
     </section>
 
      <!--13. PEOPLE - OPENING SLIDE-->
-  <section data-anchor="people" class="section bg-peop fp-noscroll icon-section">
+  <section data-anchor="people" class="section bg-peop fp-noscroll icon-section dbg-peop">
       <div class="background">
+        <span class="lines right"></span>
+        <span class="lines left"></span>
+        <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/CLOUDS.png' ?>" alt="">
+        <div class="foreground"></div>
+        <div class="extra1"></div>
+        <div class="extra2"></div>
         <div class="section-caption"><p>People // Explore</p></div>
         <div class="intro-body move-higher">
          <div class="row">
@@ -770,8 +806,14 @@
     </section>
 
     <!--15. PEOPLE - LECTURE-->
-    <section class="section fp-noscroll bg-peop transparent-section">
+    <section class="section fp-noscroll bg-peop transparent-section dbg-peop">
       <div class="background">
+        <span class="lines right"></span>
+        <span class="lines left"></span>
+        <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/CLOUDS.png' ?>" alt="">
+        <div class="foreground"></div>
+        <div class="extra1"></div>
+        <div class="extra2"></div>
         <div class="section-caption"><p>People // Lecture in the field</p></div>
         <div class="intro-body">
          <div class="row">

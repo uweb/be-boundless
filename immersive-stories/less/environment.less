@@ -1117,6 +1117,11 @@ div.background.photos {
     }
 }
 
+
+section.icon-section.bg-show {
+    visibility: visible;
+    opacity: 1.0;
+}
 section.fixed-section {
     height: 100%;
     width: 100%;
@@ -1129,6 +1134,32 @@ section.fixed-section {
     }
     @media(max-width:768px) {
         padding-top: 60px;
+    }
+}
+
+[class^='dbg-'], [class*=' dbg-']{
+    // section.fixed-section {
+    //     height: 100%;
+    //     width: 100%;
+    //     padding-top: 90px;
+    //     position: absolute;
+    //     top: 0;
+    //     z-index: -1;
+    //     &.active {
+    //         z-index: 0;
+    //     }
+    //     @media(max-width:768px) {
+    //         padding-top: 60px;
+    //     }
+    // }
+    &.transparent-section:after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.9);
     }
 }
 
@@ -1541,7 +1572,9 @@ div.background {
     }              
 }
 
-.fixed-section div.background {
+.fixed-section div.background ,
+[class^='dbg-'] div.background, 
+[class*=' dbg-'] div.background {
     background-image: url("@{enviro}/pred-bg.jpg");
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -1631,7 +1664,8 @@ section.icon-section {
     background-color: #000;
 }
 
-.fixed-section.predator div.background {
+.fixed-section.predator div.background ,
+.dbg-pred div.background {
     //DEFAULT
     // div.foreground {
     //     background-image: url("@{enviro}/pred-fore.png");
@@ -1640,7 +1674,8 @@ section.icon-section {
         display: block;
     }
 }
-.fixed-section.prey div.background {
+.fixed-section.prey div.background ,
+.dbg-prey div.background {
     background-image: url("@{enviro}/PREY-bkg.jpg");
     background-position: bottom right;
     .background-cover(cover);
@@ -1666,7 +1701,8 @@ section.icon-section {
         .background-size(contain);
     }
 }
-.fixed-section.scavenger div.background {
+.fixed-section.scavenger div.background ,
+.dbg-scav div.background {
     background-image: url("@{enviro}/Scavenger-bkg.jpg");
     background-position: bottom right;
     .background-cover(cover);
@@ -1689,7 +1725,8 @@ section.icon-section {
         .background-size(contain);
     }
 }
-.fixed-section.people div.background {
+.fixed-section.people div.background ,
+.dbg-peop div.background {
     background-image: url("@{enviro}/Rancher-bkg.jpg");
     background-position: bottom right;
     .background-cover(cover);
@@ -1782,6 +1819,23 @@ img.circle.quote {
 @media(max-width:768px) {
     #cv2-header {
         height: 60px;
+    }
+
+    [class^='dbg-'], [class*=' dbg-'] {
+        div.background {
+            background: none;
+            span.lines,
+            div.foreground,
+            .cloud-img,
+            div.extra1,
+            div.extra2 {
+                display: none;
+            }
+        }
+        &.transparent-section:after,
+        &.transparent-section div.background:after {
+            background: rgba(0,0,0,0);
+        }
     }
 
     #scrollbar {

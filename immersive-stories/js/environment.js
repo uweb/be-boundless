@@ -15,17 +15,30 @@ if( isMobile ){
 
 function setFixedBG() {
   //$("#fixed-section").removeClass();
-  $(".fixed-section").removeClass('active');
+  // $(".fixed-section").removeClass('active');
+  // if(window.location.hash.indexOf("predator") != -1) {
+  //   $(".fixed-section.predator").addClass("active");
+  // } else if(window.location.hash.indexOf("prey") != -1) {
+  //   $(".fixed-section.prey").addClass("active");
+  // } else if(window.location.hash.indexOf("scavenger") != -1) {
+  //   $(".fixed-section.scavenger").addClass("active");
+  // } else if(window.location.hash.indexOf("people") != -1) {
+  //   $(".fixed-section.people").addClass("active");
+  // } else {
+  //   $(".fixed-section.blank").addClass("active");
+  // }
+
+  $(".icon-section").removeClass('bg-show');
   if(window.location.hash.indexOf("predator") != -1) {
-    $(".fixed-section.predator").addClass("active");
+    $(".icon-section.dbg-pred").addClass("bg-show");
   } else if(window.location.hash.indexOf("prey") != -1) {
-    $(".fixed-section.prey").addClass("active");
+    $(".icon-section.dbg-prey").addClass("bg-show");
   } else if(window.location.hash.indexOf("scavenger") != -1) {
-    $(".fixed-section.scavenger").addClass("active");
+    $(".icon-section.dbg-scav").addClass("bg-show");
   } else if(window.location.hash.indexOf("people") != -1) {
-    $(".fixed-section.people").addClass("active");
+    $(".icon-section.dbg-peop").addClass("bg-show");
   } else {
-    $(".fixed-section.blank").addClass("active");
+    //$(".fixed-section.blank").addClass("active");
   }
 }
 /*****************/
@@ -87,7 +100,7 @@ $('#immersive-body').fullpage({
     // sectionsColor : ['#ccc', '#fff'],
     paddingTop: '90px',
     paddingBottom: '30px',
-    fixedElements: '#cv2-header, .fixed-section, #scrollbar', //eventually will add scrollbar on bottom.
+    fixedElements: '#cv2-header, .fixed-section:not(.section), #scrollbar', //eventually will add scrollbar on bottom.
     // responsiveWidth: 0,
     // responsiveHeight: 0,
     // responsiveSlides: false,
@@ -307,7 +320,7 @@ $('#immersive-body').fullpage({
     // sectionsColor : ['#ccc', '#fff'],
     paddingTop: '60px',
     paddingBottom: '0',
-    fixedElements: '#cv2-header, .fixed-section, #scrollbar', //eventually will add scrollbar on bottom.
+    fixedElements: '#cv2-header, .fixed-section:not(.section), #scrollbar', //eventually will add scrollbar on bottom.
     // responsiveWidth: 0,
     // responsiveHeight: 0,
     // responsiveSlides: false,
