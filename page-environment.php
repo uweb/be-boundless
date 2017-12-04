@@ -821,14 +821,14 @@
                   <div class="row centered">
                     <blockquote class="col-md-8 col-xs-12 quote">
                         <span>&ldquo;</span>
-                        Wolves do not want to get killed. Wolves are very very smart hunters. They would much rather go kill rabbit or a fawn and so when a wolf or a pack of wolves comes up on 300 head of cattle that are all staring them down.
+                        We use a lot of electric fence to keep our animals tightly bunched together, so they relearn that herd instinct to keep their young close in the middle &mdash; like wild herds of buffalo do.
                         <span>&rdquo;</span>
                     </blockquote>
                   </div>
                   <div class="row centered atts-pic">
                     <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/MALOU_QUOTE_PORTRAIT.png' ?>" alt="Mallow Anderson-Ramirez">
                     <p class="attribute no-top no-bottom">
-                      Mallow Anderson-Ramirez, Rancher
+                      Malou Anderson-Ramirez, Rancher
                     </p>
                   </div>
                     <div class="audio desktop"><p class="length">0:37  <span>/ play lesson</span></p>
