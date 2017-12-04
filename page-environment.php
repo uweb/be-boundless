@@ -305,27 +305,27 @@
                 <p class="">On a foggy day, Aaron Wirsing points out possible locations where wolves could be on a distant ridge.</p>
               </div>
               <!-- 5.2 -->
-              <div class="mobile-slide pred float-right">
+              <!-- <div class="mobile-slide pred float-right">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_2.jpg' ?>" alt="After awaking from hibernation, a grizzly bear makes its way to an easy meal: a nearby bison carcass. While fattening up for winter, the omnivorous grizzly feasts on everything from berries to cutthroat trout to insects." data-lity></span>
                 <p class="">After awaking from hibernation, a grizzly bear makes its way to an easy meal: a nearby bison carcass. While fattening up for winter, the omnivorous grizzly feasts on everything from berries to cutthroat trout to insects.</p>
-              </div>
+              </div> -->
               <!-- 5.3 -->
-              <div class="mobile-slide pred">
+              <!-- <div class="mobile-slide pred">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_3.jpg' ?>" alt="Tyler, a TK title, holds a golden eagle. After drawing blood, weighing and measuring the bird, he releases it." data-lity></span>
                 <p>Tyler Bain, a research assistant, holds a goldeneagle. After drawing blood, weighing and measuring the bird, he releases it.</p>
-              </div>
+              </div> -->
               <!-- 5.4 -->
-              <div class="mobile-slide pred float-right">
+              <!-- <div class="mobile-slide pred float-right">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_4.jpg' ?>" alt="During the weeklong course, students found many opportunities to record data that would be used for presentations at the end of the quarter." data-lity></span>
                 <p>During the weeklong course, students found many opportunities to record data that would be used for presentations at the end of the quarter.</p>
-              </div> 
+              </div>  -->
               <!-- 5.5 -->
-              <div class="mobile-slide pred">
+              <!-- <div class="mobile-slide pred">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_5.jpg' ?>" alt="At the site of a wolf-killed elk, biologist Kai Koitzsch explains how to conduct a necropsy, studying everything from the elk’s worn molars and bone marrow health to nearby wolf pawprints and raven droppings." data-lity></span>
                 <p>At the site of a wolf-killed elk, biologist Kai Koitzsch explains how to conduct a necropsy, studying everything from the elk’s worn molars and bone marrow health to nearby wolf pawprints and raven droppings.</p>
-              </div> 
+              </div>  -->
               <!--IGNORED ON MOBILE -->
-              <div class="row centered pad-top">
+              <!-- <div class="row centered pad-top">
                 <blockquote class="col-xs-10 quote">
                     <span>&ldquo;</span>
                     To actually go there and get a sense of where a cougar hunts helps you understand how they interact with their environment.
@@ -337,7 +337,7 @@
                 <p class="attribute no-top no-bottom">
                   Matthew Malone, ’18
                 </p>
-              </div>
+              </div> -->
         </div> 
         <section class="scrollit read-more">
           <p>Scroll to continue</p>  
