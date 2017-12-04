@@ -10,10 +10,10 @@
             "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' />" . 
             "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/libraries/jquery.fullpage.min.css' type='text/css' media='all' />" .
             "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/environment.css' type='text/css' media='all' />";
-  $scripts =  "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/header.js' type='text/javascript'></script>" .
+  // $scripts =  "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/header.js' type='text/javascript'></script>" .
               // "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script>" .
               // "<script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/libraries/fullpage.fadingEffect.min.js' type='text/javascript'></script>" .
-              "<script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/environmentLibraries.min.js' type='text/javascript'></script>" .
+    $scripts = "<script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/environmentLibraries.min.js' type='text/javascript'></script>" .
               "<script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/environment.min.js' type='text/javascript'></script>" .
               "<script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/environment.js' type='text/javascript'></script>";
 
@@ -88,10 +88,10 @@
               <div class="text-box" id='intro-text-yellow'>
                   <h1 class=""><span>Experience</span> Yellowstone</h1>
                   <div class="row centered">
-                    <p class="col-md-6 col-xs-12">
+                    <p class="col-md-6 col-xs-12 mobile-shorten">
                         Yellowstone is a complex ecosystem that predators, prey and scavengers call home. And it includes people: those who study, monitor and protect the animals within the park, as well as those whose livelihoods intersect with animals that know no formal boundaries.
                         </br></br>
-                        See what the UW students saw, hear what they heard and learn what they learned about wildlife management in Yellowstone. Click on any section to start exploring.
+                        <span>See what the UW students saw, hear what they heard and learn what they learned about wildlife management in Yellowstone. </span>Click on any section to start exploring.
                     </p>
                   </div>
                   <div class="col-md-7 col-xs-12">
@@ -243,7 +243,7 @@
    <!--****************************************
     *****FIXED BACKGROUND FOR ALL SECTIONS*****
     *****************************************-->
-  <section class="" id="fixed-section">
+  <section class="predator fixed-section" id="fixed-section1">
     <div class="background">
       <span class="lines right"></span>
       <span class="lines left"></span>
@@ -253,6 +253,53 @@
       <div class="extra2"></div>
     </div>
   </section>
+
+  <section class="prey fixed-section" id="fixed-section2">
+    <div class="background">
+      <span class="lines right"></span>
+      <span class="lines left"></span>
+      <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/CLOUDS.png' ?>" alt="">
+      <div class="foreground"></div>
+      <div class="extra1"></div>
+      <div class="extra2"></div>
+    </div>
+  </section>
+
+  <section class="scavenger fixed-section" id="fixed-section3">
+    <div class="background">
+      <span class="lines right"></span>
+      <span class="lines left"></span>
+      <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/CLOUDS.png' ?>" alt="">
+      <div class="foreground"></div>
+      <div class="extra1"></div>
+      <div class="extra2"></div>
+    </div>
+  </section>
+
+  <section class="people fixed-section" id="fixed-section4">
+    <div class="background">
+      <span class="lines right"></span>
+      <span class="lines left"></span>
+      <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/CLOUDS.png' ?>" alt="">
+      <div class="foreground"></div>
+      <div class="extra1"></div>
+      <div class="extra2"></div>
+    </div>
+  </section>
+
+  <section class="blank fixed-section" id="fixed-section5">
+    <div class="background">
+      <span class="lines right"></span>
+      <span class="lines left"></span>
+      <!-- <img  class="cloud-img" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/CLOUDS.png' ?>" alt=""> -->
+      <div class="foreground"></div>
+      <div class="extra1"></div>
+      <div class="extra2"></div>
+    </div>
+  </section>
+   <!--*****************
+    *****END FIXED******
+    *****************-->
 
    <!--4. PREDATOR - OPENING SLIDE-->
   <section data-anchor="predator" class="bg-pred section fp-noscroll icon-section">
@@ -264,24 +311,6 @@
                   <div class="icon"></div>
                   <h1 class="">Predators</h1>
                   <span class="col-md-4 col-xs-10"><span class="squiggle"></span></span>
-                  <div class="audio"><p class="length">0:29  <span>/ play lesson</span></p>
-                    <audio controls class="player">
-                      <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/Lecture_PREDATOR.mp3' ?>" type="audio/mpeg">
-                      <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
-                      Your browser does not support HTML5 audio.
-                    </audio>
-                    
-                    <p class="audio-buttons">
-                      <button class="audio-ctrl audio-play" tabindex="0">0:29 / PLAY LESSON</button>  
-                      <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
-                      <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
-                    </p>
-                    <div id="transcript1"class="visually-hidden audio-transcript" tabindex="0">
-                      <p>Speaker: Rick McIntyre, wolf interpreter, Yellowstone National Park</p>
-                      <p>There was a British anthropologist that once said that there is no two species on Earth that are so similar in social behavior as wolves in humans. For example we found here that the most common cause of death for adult wolves in Yellowstone since we don't have any human hunting or trapping the most common cause of death is to die fighting to protect your family and your territory from a rival pack</p>
-                      <span class="close-transcript"></span>
-                    </div>
-                  </div>
               </div>         
           </div>
       </div>
@@ -362,7 +391,7 @@
                         <span>&rdquo;</span>
                     </blockquote>
                   </div>
-                  <div class="row centered">
+                  <div class="row centered atts-pic">
                     <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RICK_QUOTE_PORTRAIT.png' ?>" alt="Rick McIntyre">
                     <p class="attribute no-top no-bottom">
                       Rick McIntyre, wolf interpreter,</br>
@@ -382,8 +411,7 @@
                         <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                       </p>
                       <div class="visually-hidden audio-transcript" tabindex="0">
-                        <p>Speaker: Rick McIntyre, wolf interpreter, Yellowstone National Park</p>
-                        <p>There was a British anthropologist that once said that there is no two species on Earth that are so similar in social behavior as wolves in humans. For example we found here that the most common cause of death for adult wolves in Yellowstone since we don't have any human hunting or trapping the most common cause of death is to die fighting to protect your family and your territory from a rival pack.</p>
+                        <p class="tran-lit">There was a British anthropologist that once said that there is no two species on Earth that are so similar in social behavior as wolves in humans. For example we found here that the most common cause of death for adult wolves in Yellowstone since we don't have any human hunting or trapping the most common cause of death is to die fighting to protect your family and your territory from a rival pack.</p>
                         <span class="close-transcript"></span>
                       </div>
                     </div>
@@ -409,24 +437,6 @@
                   <div class="icon prey"></div>
                   <h1 class="">Prey</h1>
                   <span class="col-md-4 col-xs-10"><span class="squiggle"></span></span>
-                  <div class="audio"><p class="length">0:21  <span>/ play lesson</span></p>
-                    <audio controls class="player">
-                      <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/Lecture_PREY.mp3' ?>" type="audio/mpeg">
-                      <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
-                      Your browser does not support HTML5 audio.
-                    </audio>
-                    
-                    <p class="audio-buttons">
-                      <button class="audio-ctrl audio-play" tabindex="0">0:21 / PLAY LESSON</button>  
-                      <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
-                      <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
-                    </p>
-                    <div id="transcript1"class="visually-hidden audio-transcript" tabindex="0">
-                      <!-- <p>Speaker: Rick McIntyre, wolf interpreter, Yellowstone National Park</p> -->
-                      <p>Animals that are in really good condition have the luxury of not having to feed so much they can actually be quite vigilant whereas animals that are emaciated desperate tend to have to focus all their time eating and not looking for predators. So simply put if you can see the ribs and you can see the parts of the backbone and the hip bones sticking out that animals not doing very well.</p>
-                      <span class="close-transcript"></span>
-                    </div>
-                  </div>
               </div>         
           </div>
       </div>
@@ -451,7 +461,7 @@
                 <p>Rick Wallen, the lead biologist for bison in Yellowstone, talks to students about his work.</p>
               </div>
               <!-- 8.3 -->
-              <div class="mobile-slide prey float-right snapchat-vid">
+              <div class="prey float-right snapchat-vid">
                 <div class="snapchat draw-line-link">
                   <video autoplay data-autoplay loop muted playsinline class="media" data-object-fit data-lity data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/PREY_SNAP.mp4' ?>">
                       <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/PREY_SNAP.mp4' ?>" type="video/mp4">
@@ -513,8 +523,8 @@
                         <span>&rdquo;</span>
                     </blockquote>
                   </div>
-                  <div class="row centered">
-                    <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/AARON_QUOTE_PORTRAIT.png' ?>" alt="Doug Smith">
+                  <div class="row centered atts-pic">
+                    <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/AARON_QUOTE_PORTRAIT.png' ?>" alt="Aaron Wirsing">
                     <p class="attribute no-top no-bottom">
                       Aaron Wirsing, Associate Professor of Environmental and Forest Sciences,</br>
                       University of Washington
@@ -533,8 +543,7 @@
                         <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                       </p>
                       <div class="visually-hidden audio-transcript" tabindex="0">
-                        <!-- <p>Speaker: Rick McIntyre, wolf interpreter, Yellowstone National Park</p> -->
-                        <p>Animals that are in really good condition have the luxury of not having to feed so much they can actually be quite vigilant whereas animals that are emaciated desperate tend to have to focus all their time eating and not looking for predators. So simply put if you can see the ribs and you can see the parts of the backbone and the hip bones sticking out that animals not doing very well.</p>
+                        <p class="tran-lit">Animals that are in really good condition have the luxury of not having to feed so much they can actually be quite vigilant whereas animals that are emaciated desperate tend to have to focus all their time eating and not looking for predators. So simply put if you can see the ribs and you can see the parts of the backbone and the hip bones sticking out that animals not doing very well.</p>
                         <span class="close-transcript"></span>
                       </div>
                     </div>
@@ -560,24 +569,6 @@
                   <div class="icon scav"></div>
                   <h1 class="">Scavengers</h1>
                   <span class="col-md-4 col-xs-10"><span class="squiggle"></span></span>
-                  <div class="audio"><p class="length">0:21  <span>/ play lesson</span></p>
-                    <audio controls class="player">
-                      <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/Lecture_SCAVENGER.mp3' ?>" type="audio/mpeg">
-                      <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
-                      Your browser does not support HTML5 audio.
-                    </audio>
-                    
-                    <p class="audio-buttons">
-                      <button class="audio-ctrl audio-play" tabindex="0">0:21 / PLAY LESSON</button>  
-                      <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
-                      <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
-                    </p>
-                    <div id="transcript1"class="visually-hidden audio-transcript" tabindex="0">
-                      <!-- <p>Speaker: Rick McIntyre, wolf interpreter, Yellowstone National Park</p> -->
-                      <p>A quarter to a third of all bison consumption by wolves is carcasses. And so rather than risk your life killing a bison they wait for a carcass to show up especially this time of year especially during the rut. So this could be a huge subsidy for wolves and could be important in that the impact of wolves and elk.</p>
-                      <span class="close-transcript"></span>
-                    </div>
-                  </div>
               </div>         
           </div>
       </div>
@@ -602,7 +593,7 @@
                 <p>Celestina Davidson, ’17, scans, or “glasses,” the hills for wildlife.</p>
               </div>
               <!-- 11.2 -->
-              <div class="mobile-slide scav float-right snapchat-vid">
+              <div class="scav float-right snapchat-vid">
                 <div class="snapchat draw-line-link">
                   <video autoplay data-autoplay loop muted playsinline class="media" data-object-fit data-lity data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/SCAVENGER_SNAP.mp4' ?>">
                       <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/SCAVENGER_SNAP.mp4' ?>" type="video/mp4">
@@ -664,7 +655,7 @@
                         <span>&rdquo;</span>
                     </blockquote>
                   </div>
-                  <div class="row centered">
+                  <div class="row centered atts-pic">
                     <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/DOUG_SMITH_QUOTE_PORTRAIT.png' ?>" alt="Doug Smith">
                     <p class="attribute no-top no-bottom">
                       Doug Smith, wolf biologist,</br>
@@ -684,8 +675,7 @@
                         <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                       </p>
                       <div class="visually-hidden audio-transcript" tabindex="0">
-                        <!-- <p>Speaker: Rick McIntyre, wolf interpreter, Yellowstone National Park</p> -->
-                        <p>A quarter to a third of all bison consumption by wolves is carcasses. And so rather than risk your life killing a bison they wait for a carcass to show up especially this time of year especially during the rut. So this could be a huge subsidy for wolves and could be important in that the impact of wolves and elk.</p>
+                        <p class="tran-lit">A quarter to a third of all bison consumption by wolves is carcasses. And so rather than risk your life killing a bison they wait for a carcass to show up especially this time of year especially during the rut. So this could be a huge subsidy for wolves and could be important in that the impact of wolves and elk.</p>
                         <span class="close-transcript"></span>
                       </div>
                     </div>
@@ -711,24 +701,6 @@
                   <div class="icon people"></div>
                   <h1 class="">People</h1>
                   <span class="col-md-4 col-xs-10"><span class="squiggle"></span></span>
-                  <div class="audio"><p class="length">0:37  <span>/ play lesson</span></p>
-                    <audio controls class="player">
-                      <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/Lecture_HUMAN.mp3' ?>" type="audio/mpeg">
-                      <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
-                      Your browser does not support HTML5 audio.
-                    </audio>
-                    
-                    <p class="audio-buttons">
-                      <button class="audio-ctrl audio-play" tabindex="0">0:37 / PLAY LESSON</button>  
-                      <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
-                      <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
-                    </p>
-                    <div id="transcript1"class="visually-hidden audio-transcript" tabindex="0">
-                      <!-- <p>Speaker: Rick McIntyre, wolf interpreter, Yellowstone National Park</p> -->
-                      <p>We use a lot of electric fence to keep them bunched together so that they relearn that herd instinct to keep their young close and in the middle. The animals that get killed go off, way off on their own. Wolves do not want to get killed. Wolves are very very smart hunters. They would much rather go kill rabbit or a fawn and so when a wolf or a pack of wolves comes up on 300 head of cattle that are all staring them down their not going to get themselves killed over one meal.</p>
-                      <span class="close-transcript"></span>
-                    </div>
-                  </div>
               </div>         
           </div>
       </div>
@@ -811,8 +783,8 @@
                         <span>&rdquo;</span>
                     </blockquote>
                   </div>
-                  <div class="row centered">
-                    <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/MALOU_QUOTE_PORTRAIT.png' ?>" alt="Doug Smith">
+                  <div class="row centered atts-pic">
+                    <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/MALOU_QUOTE_PORTRAIT.png' ?>" alt="Mallow Anderson-Ramirez">
                     <p class="attribute no-top no-bottom">
                       Mallow Anderson-Ramirez, Rancher
                     </p>
@@ -830,8 +802,7 @@
                         <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                       </p>
                       <div class="visually-hidden audio-transcript" tabindex="0">
-                        <!-- <p>Speaker: Rick McIntyre, wolf interpreter, Yellowstone National Park</p> -->
-                        <p>We use a lot of electric fence to keep them bunched together so that they relearn that herd instinct to keep their young close and in the middle. The animals that get killed go off, way off on their own. Wolves do not want to get killed. Wolves are very very smart hunters. They would much rather go kill rabbit or a fawn and so when a wolf or a pack of wolves comes up on 300 head of cattle that are all staring them down their not going to get themselves killed over one meal.</p>
+                        <p class="tran-lit">We use a lot of electric fence to keep them bunched together so that they relearn that herd instinct to keep their young close and in the middle. The animals that get killed go off, way off on their own. Wolves do not want to get killed. Wolves are very very smart hunters. They would much rather go kill rabbit or a fawn and so when a wolf or a pack of wolves comes up on 300 head of cattle that are all staring them down their not going to get themselves killed over one meal.</p>
                         <span class="close-transcript"></span>
                       </div>
                     </div>
