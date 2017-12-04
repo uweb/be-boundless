@@ -159,6 +159,7 @@
   border: none;
   background: url("@{img}/hamburger.svg") no-repeat 0 0 transparent;
   z-index: 2;
+  .transition(all .5s ease-in-out);
   &:hover,
   &:focus {
       background-position-x: -72px;
@@ -171,8 +172,8 @@
   &.close {
     width: 45px;
     height: 45px;
-    right: 80px;
-    top: 170px;
+    right: 20px;
+    top: 180px;
     background: url("@{img}/close.svg") no-repeat ~"3px 5px/30px 30px" transparent; 
     border-radius: 50%;
     border: 2px solid #FFFFFF;
@@ -1676,7 +1677,16 @@ button.nextSlide {
         font-family: "Encode Sans Compressed", sans-serif;
         text-transform: uppercase;
         color:#4c2b85;
+        opacity: 1;
+        visibility: visible;
+        height: 81px;
+        .transition(all .5s ease-in-out);
       }
+      .cv2-header-white.hidemenu{
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+       } 
       .cv2-header-white .row{
         margin-left:0;
         margin-right:0;

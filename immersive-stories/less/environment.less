@@ -424,8 +424,7 @@ section.slide1 div.background {
 
 // Pause button
 
-#pause,
-#pause-yellow {
+#pause {
     position: absolute;
     z-index: 1;
     display: block;
@@ -435,6 +434,32 @@ section.slide1 div.background {
     height: 45px;
     right: 20px;
     top: 101px;
+    border: none;
+    background: url("@{img}/pause.svg") no-repeat 0 0 transparent;
+    z-index: 2;
+    &:hover,
+    &:focus {
+        background-position-x: -47px;
+    }
+    &:focus {
+        outline-color: rgb(59, 153, 252);
+        outline-style: auto;
+        outline-width: 5px;
+    }
+    @media(max-width:768px) {
+        display: none;
+    }
+}
+#pause-yellow {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    text-indent: -999px;
+    overflow-x: hidden;
+    width: 45px;
+    height: 45px;
+    left: 20px;
+    bottom: 20px;
     border: none;
     background: url("@{img}/pause.svg") no-repeat 0 0 transparent;
     z-index: 2;
@@ -2217,7 +2242,9 @@ span.close-transcript {
         background-color: @darkgold;
     }
 }
-
+#cv2-header-white-collapse.showicon {
+        display: block;
+    }
 #immersive.hide-white-menu {
     #cv2-header {
         height: 90px;
@@ -2230,7 +2257,7 @@ span.close-transcript {
     }
     #pause,
     #pause-yellow {
-        top: 80px;
+        //top: 80px;
     }
     @media(max-width:768px) {
         #cv2-header {
