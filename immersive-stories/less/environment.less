@@ -880,6 +880,9 @@ section.transparent-section {
 }
 .transparent-section div.background {
     background-color: rgba(0, 0, 0, 0.9);
+    &.photos {
+        background-color: rgba(0,0,0,0);
+    }
 
 }
 
@@ -929,6 +932,7 @@ div.background.photos {
             &.float-right {
                 float: right; 
                 margin-top: -50px;
+                margin-bottom: 0;
             }
             span {
                 display: block;
@@ -1117,10 +1121,25 @@ div.background.photos {
     }
 }
 
-
-section.icon-section.bg-show {
-    visibility: visible;
-    opacity: 1.0;
+@media(min-width:769px) {
+    section.icon-section.bg-show {
+        visibility: visible;
+        opacity: 1.0;
+        &:not(.active){
+            .intro-body {
+                z-index: 0;
+            }
+            &:after{
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.9);
+            }
+        }
+    }
 }
 section.fixed-section {
     height: 100%;
@@ -1935,6 +1954,23 @@ img.circle.quote {
         h1 {
             margin-top: 0;
         }
+        .intro-body.less-margins {
+            top: 47%;
+            #intro-text-yellow div.row.centered {
+                h1 {
+                    //margin-bottom: 10px;
+                }
+                p {
+                    margin: 0;
+                    &:before {
+                        top: -20px;
+                    }
+                    &:after {
+                        bottom: -20px;
+                    }
+                }
+            }
+        }
     }
 
     #intro-yellow div.background h1 {
@@ -2181,6 +2217,25 @@ img.circle.quote {
             //display: none;
         }
 
+        .intro-body.less-margins {
+            top: 45%;
+            div.text-box div.row.centered,
+            div.text-box#intro-text-yellow div.row.centered {
+                h1 {
+                    //margin-bottom: 10px;
+                }
+                p {
+                    margin: 0;
+                    &:before {
+                        top: -20px;
+                    }
+                    &:after {
+                        bottom: -20px;
+                    }
+                }
+            }
+        }
+
     }
 
 }
@@ -2308,7 +2363,8 @@ div.fp-controlArrow {
                     left: -5px;
                     height: 10px;
                     width: 0px;
-                    background: @purple;
+                    background: #000000;
+                    border: solid 1px transparent;
                     border-radius: 12px;
                     overflow: visible;
                     z-index: 1;
@@ -2332,9 +2388,10 @@ div.fp-controlArrow {
                         width: 12.5%;
                         height: 24px;
                         bottom: -11px;
+                        border: solid 1px @gray;
                         span {
-                            height: 24px;
-                            width: 24px;
+                            height: 22px;
+                            width: 22px;
                             background: #000000; //or @darkgold
                             overflow: visible;
                         }
@@ -2477,6 +2534,8 @@ span.close-transcript {
         opacity: 1;
   }
 }
+
+
 
 
 

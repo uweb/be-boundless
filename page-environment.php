@@ -83,7 +83,7 @@
          <source data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/DRONE_REVEAL_LOOP_compressed.mp4' ?>" type="video/mp4">
       </video>
       <div class="section-caption"><p>The experience begins</p></div>
-      <div class="intro-body">
+      <div class="intro-body less-margins">
          <div class="row">
               <div class="text-box" id='intro-text-yellow'>
                   <h1 class=""><span>Experience</span> Yellowstone</h1>
@@ -865,7 +865,7 @@
     <section class="section fp-noscroll" id="backto">
     <div class="background">
       <!-- <div class="section-caption"><p>The experience begins</p></div> -->
-      <div class="intro-body">
+      <div class="intro-body less-margins">
          <div class="row">
               <div class="text-box" id=''>
                   <h1 class="">Back to Washington</h1>

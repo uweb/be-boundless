@@ -159,6 +159,8 @@
   border: none;
   background: url("@{img}/hamburger.svg") no-repeat 0 0 transparent;
   z-index: 2;
+  // -webkit-animation: fade-in-out 1s;
+  //           animation: fade-in-out 1s;
   .transition(all .5s ease-in-out);
   &:hover,
   &:focus {
@@ -177,6 +179,8 @@
     background: url("@{img}/close.svg") no-repeat ~"3px 5px/30px 30px" transparent; 
     border-radius: 50%;
     border: 2px solid #FFFFFF;
+    -webkit-animation: fade-in-out 1s;
+            animation: fade-in-out 1s;
     &:hover,
     &:focus {
         border: 2px solid @darkgold;
@@ -187,6 +191,16 @@
   // }
 }
 
+@-webkit-keyframes fade-in-out {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+} 
+@keyframes fade-in-out {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
 
 /********************************
