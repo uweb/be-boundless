@@ -89,16 +89,17 @@
                   <h1 class=""><span>Experience</span> Yellowstone</h1>
                   <div class="row centered">
                     <p class="col-md-6 col-xs-12 mobile-shorten">
-                        Yellowstone is a complex ecosystem that predators, prey and scavengers call home. And it includes people: those who study, monitor and protect the animals within the park, as well as those whose livelihoods intersect with animals that know no formal boundaries.
+                        Yellowstone hosts a complex ecosystem of predators, prey, scavengers and people — those who work with animals inside the park, as well as ranchers and others living just outside its borders.
                         </br></br>
                         <span>See what the UW students saw, hear what they heard and learn what they learned about wildlife management in Yellowstone. </span>Click on any section to start exploring.
                     </p>
                   </div>
                   <div class="col-md-7 col-xs-12">
-                    <a href="#predator" class="col-sm-3 col-xs-3 section-links">Predators</a>
-                    <a href="#prey" class="col-sm-3 col-xs-3 section-links">Prey</a>
-                    <a href="#scavenger" class="col-sm-3 col-xs-3 section-links">Scavengers</a>
-                    <a href="#people" class="col-sm-3 col-xs-3 section-links">People</a>
+                    <a href="#students" class="col-sm-2 col-sm-offset-1 col-xs-2 col-xs-offset-1 section-links">Students</a>
+                    <a href="#predator" class="col-sm-2 col-xs-2 section-links">Predators</a>
+                    <a href="#prey" class="col-sm-2 col-xs-2 section-links">Prey</a>
+                    <a href="#scavenger" class="col-sm-2 col-xs-2 section-links">Scavengers</a>
+                    <a href="#people" class="col-sm-2 col-xs-2 section-links">Staff and neighbors</a>
                   </div>
               </div>         
           </div>
@@ -127,7 +128,7 @@
                           Who went to Yellowstone — and why? See what a handful of students had to say about their experience in the park.
                           <span class="squiggle"></span>
                           <!-- &frame_buster=false -->
-                          <a data-fund="CELEND" href="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&source_typ=3&appeal=17XIS&source=CELEND" data-lity>Learn more</a> about how you can support immersive learning experiences at the College of the Environment and help propel students toward the careers of their dreams.
+                           You can <a class="underline" data-fund="CELEND" href="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&source_typ=3&appeal=17XIS&source=CELEND" data-lity>support</a> immersive learning experiences at the College of the Environment and help propel students toward the careers of their dreams.
                       </p>
                     </div>
                 </div>         
@@ -159,7 +160,7 @@
          <!-- 3.3 -->
         <section id="student2" class="student student2 mobile-slide desktop-slide">
           <div class="name">
-            <h3>Danyan</br>Leng, '18</h3>
+            <h3>Danyan</br>Leng, &rsquo;18</h3>
             <p class="major">Majors: Environmental science and terrestrial resource management; economics</p>
             <span class="udub-slant"><span></span></span>
             <!-- <p>lorem ipsum</p> -->
@@ -172,7 +173,7 @@
          <!-- 3.4 -->
         <section id="student3" class="student student3 mobile-slide desktop-slide">
           <div class="name">
-            <h3>Hannah</br>Booth, '18</h3>
+            <h3>Hannah</br>Booth, &rdquo;18</h3>
             <p class="major">Major: Environmental science and terrestrial resource management</p>
             <span class="udub-slant"><span></span></span>
             <!-- <p>lorem ipsum</p> -->
@@ -185,7 +186,7 @@
          <!-- 3.5 -->
         <section id="student4" class="student student4 mobile-slide desktop-slide">
           <div class="name">
-            <h3>Gavin</br>Forster, '18</h3>
+            <h3>Gavin</br>Forster, &rdquo;18</h3>
             <p class="major">Major: Environmental science and terrestrial resource management</p>
             <span class="udub-slant"><span></span></span>
             <!-- <p>lorem ipsum</p> -->
@@ -198,7 +199,7 @@
          <!-- 3.6 -->
         <section id="student5" class="student student5 mobile-slide desktop-slide">
           <div class="name">
-            <h3>Courtney</br>Straight, '18</h3>
+            <h3>Courtney</br>Straight, &rdquo;18</h3>
             <p class="major">Major: Environmental science and terrestrial resource management</p>
             <span class="udub-slant"><span></span></span>
             <!-- <p>lorem ipsum</p> -->
@@ -211,7 +212,7 @@
          <!-- 3.7 -->
         <section id="student6" class="student student6 mobile-slide desktop-slide">
           <div class="name">
-            <h3>Andrew</br>Wang, '17</h3>
+            <h3>Andrew</br>Wang, &rdquo;17</h3>
             <p class="major">Major: Environmental science and terrestrial resource management</p>
             <span class="udub-slant"><span></span></span>
             <!-- <p>lorem ipsum</p> -->
@@ -305,7 +306,7 @@
         <div class="foreground"></div>
         <div class="extra1"></div>
         <div class="extra2"></div>
-        <div class="section-caption"><p>Predators // Explore</p></div>
+        <div class="section-caption"><p>Predators</p></div>
         <div class="intro-body move-higher">
          <div class="row">
               <div class="text-box">
@@ -332,7 +333,7 @@
                <!-- 5.1 -->
                <div class="mobile-slide predgal"> 
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_1.jpg' ?>" alt="On a foggy day, Aaron Wirsing points out possible locations where wolves could be on a distant ridge." data-lity></span>
-                <p class="">On a foggy day, Aaron Wirsing points out possible locations where wolves could be on a distant ridge.</p>
+                <p class="">On a foggy day, professor Aaron Wirsing points out possible locations where wolves could be on a distant ridge.</p>
               </div>
               <!-- 5.2 -->
               <div class="mobile-slide predgal float-right">
@@ -342,7 +343,7 @@
               <!-- 5.3 -->
               <div class="mobile-slide predgal">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_3.jpg' ?>" alt="Tyler, a TK title, holds a golden eagle. After drawing blood, weighing and measuring the bird, he releases it." data-lity></span>
-                <p>Tyler Bain, a research assistant, holds a goldeneagle. After drawing blood, weighing and measuring the bird, he releases it.</p>
+                <p>Tyler Bain, a research assistant, holds a golden eagle. After drawing blood, weighing and measuring the bird, he releases it.</p>
               </div>
               <!-- 5.4 -->
               <div class="mobile-slide predgal float-right">
@@ -365,7 +366,8 @@
               <div class="row centered pad-bottom">
                 <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/MATT_QUOTE_PORTRAIT.png' ?>" alt="Matthew Malone, '18">
                 <p class="attribute no-top no-bottom">
-                  Matthew Malone, ’18
+                  Matthew Malone, &rsquo;18 </br>
+                  Environmental Science and Terrestrial Resource Management
                 </p>
               </div>
         <!-- </div> --> 
@@ -394,14 +396,14 @@
                   <div class="row centered">
                     <blockquote class="col-md-8 col-xs-12 quote">
                         <span>&ldquo;</span>
-                        There is no two species on Earth that are so similar in social behavior as wolves in humans.
+                        The most common cause of death for adult wolves in Yellowstone is fighting to protect your family and your territory from a rival pack.
                         <span>&rdquo;</span>
                     </blockquote>
                   </div>
                   <div class="row centered atts-pic">
                     <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/RICK_QUOTE_PORTRAIT.png' ?>" alt="Rick McIntyre">
                     <p class="attribute no-top no-bottom">
-                      Rick McIntyre, wolf interpreter,</br>
+                      Rick McIntyre, Wolf Interpreter,</br>
                       Yellowstone National Park
                     </p>
                   </div>
@@ -418,7 +420,7 @@
                         <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                       </p>
                       <div class="visually-hidden audio-transcript" tabindex="0">
-                        <p class="tran-lit">There was a British anthropologist that once said that there is no two species on Earth that are so similar in social behavior as wolves in humans. For example we found here that the most common cause of death for adult wolves in Yellowstone since we don't have any human hunting or trapping the most common cause of death is to die fighting to protect your family and your territory from a rival pack.</p>
+                        <p class="tran-lit">There was a British anthropologist that once said that there’s no two species on earth that are so similar in social behavior as wolves and humans. For example, we found here that the most common cause of death for adult wolves in Yellowstone, since we don’t have any human hunting or trapping, the most common cause of death is to die fighting to protect your family and your territory from a rival pack.</p>
                         <span class="close-transcript"></span>
                       </div>
                     </div>
@@ -443,7 +445,7 @@
         <div class="foreground"></div>
         <div class="extra1"></div>
         <div class="extra2"></div>
-        <div class="section-caption"><p>Prey // Explore</p></div>
+        <div class="section-caption"><p>Prey</p></div>
         <div class="intro-body move-higher">
          <div class="row">
               <div class="text-box">
@@ -485,12 +487,12 @@
               <!-- 8.2 -->
               <div class="mobile-slide prey">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_2.jpg' ?>" alt="Bighorn sheep are just one of the many animals that congregate in Yellowstone" data-lity></span>
-                <p class="">Bighorn sheep are just one of the many animals that congregate in Yellowstone</p>
+                <p class="">Bighorn sheep are just one of the many species of animals that congregate in Yellowstone.</p>
               </div>
               <!-- 8.4 -->
               <div class="mobile-slide prey centered"> 
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_3.jpg' ?>" alt="Gavin Forster, ’18,  helps collect data for John Marzluff’s ongoing bird survey." data-lity></span>
-                <p class="">Gavin Forster, ’18,  helps collect data for John Marzluff’s ongoing bird survey.</p>
+                <p class="">Gavin Forster, &rsquo;18,  helps collect data for John Marzluff’s ongoing bird survey.</p>
               </div>
               <!-- 8.5 -->
               <!-- <div class="mobile-slide">
@@ -508,7 +510,8 @@
               <div class="row centered pad-bottom">
                 <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/HANNAH_QUOTE_PORTRAIT.png' ?>" alt="Hannah Booth, '18">
                 <p class="attribute no-top no-bottom">
-                  Hannah Booth, '18
+                  Hannah Booth, &rsquo;18 </br>
+                  Environmental Science and Terrestrial Resource Management
                 </p>
               </div>
          <!--  </div> -->
@@ -538,7 +541,7 @@
                   <div class="row centered">
                     <blockquote class="col-md-8 col-xs-12 quote">
                         <span>&ldquo;</span>
-                        Animals that are in really good condition have the luxury of not having to feed so much can actually be quite vigilant.
+                        Animals that are in really good condition have the luxury of not having to feed so much, so they can actually be quite vigilant.
                         <span>&rdquo;</span>
                     </blockquote>
                   </div>
@@ -562,7 +565,7 @@
                         <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                       </p>
                       <div class="visually-hidden audio-transcript" tabindex="0">
-                        <p class="tran-lit">Animals that are in really good condition have the luxury of not having to feed so much they can actually be quite vigilant whereas animals that are emaciated desperate tend to have to focus all their time eating and not looking for predators. So simply put if you can see the ribs and you can see the parts of the backbone and the hip bones sticking out that animals not doing very well.</p>
+                        <p class="tran-lit">Animals that are in really good condition have the luxury of not having to feed so much, so they can actually be quite vigilant — whereas animals that are emaciated and desperate tend to have to focus all their time eating and not looking for predators. So, simply put, if you can see the ribs, and you can see the parts of the backbone and the hip bone sticking out, that animal’s not doing very well.</p>
                         <span class="close-transcript"></span>
                       </div>
                     </div>
@@ -587,7 +590,7 @@
         <div class="foreground"></div>
         <div class="extra1"></div>
         <div class="extra2"></div>
-        <div class="section-caption"><p>Scavengers // Explore</p></div>
+        <div class="section-caption"><p>Scavengers</p></div>
         <div class="intro-body move-higher">
          <div class="row">
               <div class="text-box">
@@ -624,7 +627,7 @@
                       <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/SCAVENGER_SNAP.mp4' ?>" type="video/mp4">
                   </video>
                 </div>
-                <p class="">Student’s-eye view: Slogs through mud and slush are rewarded with a picnic.</p>
+                <p class="">Student’s-eye view: Slogs through mud and slush are rewarded with a picnic. A curious — and extremely intelligent — raven lingers nearby.</p>
               </div>
               <!-- 11.3 -->
               <div class="mobile-slide scav">
@@ -650,9 +653,10 @@
                 </blockquote>
               </div>
               <div class="row centered pad-bottom">
-                <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/ANDREW_QUOTE_PORTRAIT.png' ?>" alt="Andrew Wang, '18">
+                <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/ANDREW_QUOTE_PORTRAIT.png' ?>" alt="Andrew Wang, '17">
                 <p class="attribute no-top no-bottom">
-                  Andrew Wang, '17'
+                  Andrew Wang, &rsquo;17 </br>
+                  Environmental Science and Terrestrial Resource Management
                 </p>
               </div>
          <!--  </div> -->
@@ -682,14 +686,14 @@
                   <div class="row centered">
                     <blockquote class="col-md-8 col-xs-12 quote">
                         <span>&ldquo;</span>
-                        And so rather than risk your life killing a bison they wait for a carcass to show up especially this time of year.
+                        So rather than risk your life killing a bison, they wait for a carcass to show up — especially this time of year.
                         <span>&rdquo;</span>
                     </blockquote>
                   </div>
                   <div class="row centered atts-pic">
                     <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/DOUG_SMITH_QUOTE_PORTRAIT.png' ?>" alt="Doug Smith">
                     <p class="attribute no-top no-bottom">
-                      Doug Smith, wolf biologist,</br>
+                      Doug Smith, Wolf Biologist,</br>
                       Yellowstone National Park
                     </p>
                   </div>
@@ -706,7 +710,7 @@
                         <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                       </p>
                       <div class="visually-hidden audio-transcript" tabindex="0">
-                        <p class="tran-lit">A quarter to a third of all bison consumption by wolves is carcasses. And so rather than risk your life killing a bison they wait for a carcass to show up especially this time of year especially during the rut. So this could be a huge subsidy for wolves and could be important in that the impact of wolves and elk.</p>
+                        <p class="tran-lit">A quarter to a third of all bison consumption by wolves is carcasses. And so rather than risk your life killing a bison, they wait for a carcass show up — especially this time of year, especially during the rut. So this could be a huge subsidy for wolves and could be important in the impact of wolves on elk.</p>
                         <span class="close-transcript"></span>
                       </div>
                     </div>
@@ -731,12 +735,12 @@
         <div class="foreground"></div>
         <div class="extra1"></div>
         <div class="extra2"></div>
-        <div class="section-caption"><p>People // Explore</p></div>
+        <div class="section-caption"><p>Staff and neighbors</p></div>
         <div class="intro-body move-higher">
          <div class="row">
               <div class="text-box">
                   <div class="icon people"></div>
-                  <h1 class="">People</h1>
+                  <h1 class="">Staff and neighbors</h1>
                   <span class="col-md-4 col-xs-10"><span class="squiggle"></span></span>
               </div>         
           </div>
@@ -753,7 +757,7 @@
      <!--14. PEOPLE - GALLERY-->
     <section class="section transparent-section bg-peop fp-auto-height">
         <div class="background photos">
-          <div class="section-caption"><p>People // The student experience</p></div>
+          <div class="section-caption"><p>Staff and neighbors // The student experience</p></div>
           <!-- <div class="intro-body"> -->
          <!-- <div class="row"> -->
               <!-- 14.1 -->
@@ -792,7 +796,8 @@
               <div class="row centered pad-bottom">
                 <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/NIKKI_QUOTE_PORTRAIT.png' ?>" alt="Nikki Furner, '18">
                 <p class="attribute no-top no-bottom">
-                  Nikki Furner, '18
+                  Nikki Furner, &rsquo;18 </br>
+                  Environmental Science and Terrestrial Resource Management
                 </p>
               </div>
          <!--  </div> -->
@@ -815,7 +820,7 @@
         <div class="foreground"></div>
         <div class="extra1"></div>
         <div class="extra2"></div>
-        <div class="section-caption"><p>People // Lecture in the field</p></div>
+        <div class="section-caption"><p>Staff and neighbors // Lecture in the field</p></div>
         <div class="intro-body">
          <div class="row">
               <div class="text-box">
@@ -879,7 +884,7 @@
                         Read more about who the students met in Yellowstone, the animals they saw and studied, and what they discovered about the challenges and rewards of careers in wildlife management. 
                     </p>
                   </div>
-                  <a href="http://cmsdev.u.washington.edu/boundless/2017/11/07/a-week-in-the-wild/" class="explore">click to explore</a>
+                  <a href="http://cmsdev.u.washington.edu/boundless/2017/11/07/a-week-in-the-wild/" class="explore">Read more</a>
               </div>         
           </div>
       </div>
