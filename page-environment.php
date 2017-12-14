@@ -113,7 +113,7 @@
   </section>
 
    <!--3. STUDENTS START-->
-  <section class="section fp-noscroll"  id="students">
+  <section class="section fp-noscroll no-arrows"  id="students">
     <div class="background">
        <!--3.1 STUDENTS - HOME-->
       <section id="all-students" class="all-students mobile-slide">
@@ -144,7 +144,7 @@
 
         <!-- STUDENTS - PROFILES -->
         <!-- 3.2 -->
-        <section id="student1" class="student student1 mobile-slide">
+        <section id="student1" class="student student1 mobile-slide desktop-slide">
           <div class="name">
             <h3>Loma</br>Pendergraft, M.S. and Ph.D. student</h3>
             <p class="major">Focus: Crow communication</p>
@@ -157,7 +157,7 @@
           <image class="full-student" alt="student one" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/profile_5.png' ?>">
         </section>
          <!-- 3.3 -->
-        <section id="student2" class="student student2 mobile-slide">
+        <section id="student2" class="student student2 mobile-slide desktop-slide">
           <div class="name">
             <h3>Danyan</br>Leng, '18</h3>
             <p class="major">Majors: Environmental science and terrestrial resource management; economics</p>
@@ -170,7 +170,7 @@
           <image class="full-student" alt="student one" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/profile_2.png' ?>">
         </section>
          <!-- 3.4 -->
-        <section id="student3" class="student student3 mobile-slide">
+        <section id="student3" class="student student3 mobile-slide desktop-slide">
           <div class="name">
             <h3>Hannah</br>Booth, '18</h3>
             <p class="major">Major: Environmental science and terrestrial resource management</p>
@@ -183,7 +183,7 @@
           <image class="full-student bigger" alt="student one" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/profile_6.png' ?>">
         </section>
          <!-- 3.5 -->
-        <section id="student4" class="student student4 mobile-slide">
+        <section id="student4" class="student student4 mobile-slide desktop-slide">
           <div class="name">
             <h3>Gavin</br>Forster, '18</h3>
             <p class="major">Major: Environmental science and terrestrial resource management</p>
@@ -196,7 +196,7 @@
           <image class="full-student" alt="student one" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/profile_3.png' ?>">
         </section>
          <!-- 3.6 -->
-        <section id="student5" class="student student5 mobile-slide">
+        <section id="student5" class="student student5 mobile-slide desktop-slide">
           <div class="name">
             <h3>Courtney</br>Straight, '18</h3>
             <p class="major">Major: Environmental science and terrestrial resource management</p>
@@ -209,7 +209,7 @@
           <image class="full-student" alt="student one" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/profile_4.png' ?>">
         </section>
          <!-- 3.7 -->
-        <section id="student6" class="student student6 mobile-slide">
+        <section id="student6" class="student student6 mobile-slide desktop-slide">
           <div class="name">
             <h3>Andrew</br>Wang, '17</h3>
             <p class="major">Major: Environmental science and terrestrial resource management</p>

@@ -109,7 +109,7 @@ $('#immersive-body').fullpage({
 
     //Custom selectors
     sectionSelector: 'section.section',
-    slideSelector: '.slide',
+    slideSelector: '.desktop-slide',
 
     lazyLoading: true,
 
@@ -166,6 +166,9 @@ $('#immersive-body').fullpage({
     $('#intro-yellow').toggleClass('paused');
   });
 
+//REMOVE FIRST ACTIVE
+$(".student.desktop-slide").removeClass("active");
+
 //click students
 $('.student-link').on('click', function(e) {
   e.preventDefault();
@@ -174,6 +177,7 @@ $('.student-link').on('click', function(e) {
   $('#all-students').addClass("not-active");
   $(hash).addClass("active");
   $('#close-modal').addClass("active");
+  $('#students').removeClass("no-arrows");
 });
 
 $('#close-modal').on('click', function(e) {
@@ -182,6 +186,7 @@ $('#close-modal').on('click', function(e) {
   $('#all-students').removeClass("not-active");
   $('section.student').removeClass("active");
   $('#close-modal').removeClass("active");
+  $('#students').addClass("no-arrows");
 });
 
 $('section.student').on('click', function(e) {
@@ -191,6 +196,7 @@ $('section.student').on('click', function(e) {
   $('#all-students').removeClass("not-active");
   $('section.student').removeClass("active");
   $('#close-modal').removeClass("active");
+  $('#students').addClass("no-arrows");
 });
 
 $("#cv2-header-white-collapse").on('click', function(e) {
@@ -366,9 +372,6 @@ $('#immersive-body').fullpage({
 /*****MOBILE*****/
 /****************/
 
-  $('.fp-prev').append('<span></span>');
-  $('.fp-next').append('<span></span>');
-
   $('button.audio-ctrl.audio-read').unbind();
   $('button.audio-ctrl.audio-read').on('click', function(e) {
     var tran = $(this).closest(".audio-buttons").siblings(".audio-transcript").html();
@@ -400,11 +403,55 @@ $('#immersive-body').fullpage({
 /*****EXTRAS*****/
 /****************/
 
+$('.fp-prev').append('<span></span>');
+$('.fp-next').append('<span></span>');
+
 $('a.section-links').on('click', function(e) {
   $('#fixed-section').removeClass("blank");
   $('#fixed-section').addClass(this.hash.split('#',2)[1]);
 })
 
+
+/****************/
+/***LITY EXTRA***/
+/****************/
+
+// $('[data-lity]').on('click', function(e){
+//   e.preventDefault();
+//   e.stopPropagation();
+//   console.log("test1");
+//   lity({
+//         //'esc': false,
+//         'template': '<div class="lity" role="dialog" aria-label="Dialog Window (Press escape to close)" tabindex="-1"><div class="lity-wrap" data-lity-close role="document"><div class="testtest"></div><div class="lity-loader" aria-hidden="true">Loading...</div><div class="lity-container"><div class="lity-content"></div><button class="lity-close" type="button" aria-label="Close (Press escape to close)" data-lity-close>&times;</button></div></div></div>',
+//     });
+// });
+
+$(document).on('lity:ready', function(event, lightbox) {
+    $(event.currentTarget.activeElement).find('.lity-content').prepend('<div class="lity-arrows fp-controlArrow fp-prev"><span></span></div><div class="lity-arrows fp-controlArrow fp-next"><span></span></div>');
+    $current = lightbox.opener().closest('.mobile-slide');
+
+    $(':not(#students) div.lity-arrows.fp-controlArrow').on('click', function(e) {
+      $classes = $current.attr('class').split(/\s+/);
+      $section = false;
+      $.each($classes , function(index){
+        if(this.indexOf("gal") != -1) { $section = "" + this; }
+      });
+      if( $(this).hasClass("fp-next") ){
+        $next = $current.nextAll('.mobile-slide').first();
+        if( $next.length == 0 ) {
+          $next = $current.prevAll('.mobile-slide').last();;
+        }
+      } else { //fp-prev
+        $next = $current.prevAll('.mobile-slide').first();
+        if( $next.length == 0 ) {
+          $next = $current.nextAll('.mobile-slide').last();;
+        }
+      }
+      $nextImage = $next.find('img').attr('src');
+      $(event.currentTarget.activeElement).find('.lity-content img').attr('src', $nextImage);
+      $current = $next;
+    });
+});
 
 
 });
