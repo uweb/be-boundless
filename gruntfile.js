@@ -56,6 +56,7 @@ module.exports = function(grunt) {
           'immersive-stories/js/socialwork.js',
           'immersive-stories/js/pharmacy.js',
           'immersive-stories/js/lovejoy.js',
+          'immersive-stories/js/libraries.js',
           'campaign/js/main.js',
           'immersive-stories/js/education-map.js',
           'https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js',
@@ -209,7 +210,17 @@ module.exports = function(grunt) {
             'immersive-stories/js/common.js',
             'immersive-stories/js/lity.js',
             'immersive-stories/js/lovejoy.js',
-          ],
+          ],        
+          'immersive-stories/js/libraries.min.js': [
+              'immersive-stories/js/common.js',
+              // Popup video
+              'immersive-stories/js/lity.js',
+              // Slideshow
+              'immersive-stories/js/slick.js',
+              'immersive-stories/js/libraries.js',
+              'immersive-stories/js/objectFitPolyfill.basic.js',
+              // 'immersive-stories/js/libraries/animsition.min.js',
+          ],     
           'campaign/js/main.min.js': [
             'campaign/js/main.js',
           ],
@@ -279,6 +290,7 @@ module.exports = function(grunt) {
                 'immersive-stories/css/socialwork.css': 'immersive-stories/less/socialwork.less',
                 'immersive-stories/css/pharmacy.css': 'immersive-stories/less/pharmacy.less',
                 'immersive-stories/css/lovejoy.css': 'immersive-stories/less/lovejoy.less',
+                'immersive-stories/css/libraries.css': 'immersive-stories/less/libraries.less',
                 'campaign/css/campaign-style.css': 'campaign/**/*.less',
                 'campaign/css/header.css': 'campaign/less/header.less',
                 'campaign/css/campaignv2-style.css': 'campaign/less/campaignv2-style.less',
