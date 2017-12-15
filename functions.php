@@ -26,4 +26,12 @@ function twitter_card($photo, $title, $descrpition) {
 	return $meta;
 }
 
+add_filter( 'body_class', 'custom_class' );
+function custom_class( $classes ) {
+    if ( is_page( 'The Heart of Research' ) || is_page('Libraries Korean') ) {
+        $classes[] = 'animsition';
+    }
+    return $classes;
+}
+
 ?>
