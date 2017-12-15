@@ -145,7 +145,62 @@
   }
 }
 
+#cv2-header-white-collapse {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  //display: block;
+  text-indent: -999px;
+  overflow-x: hidden;
+  width: 50px;
+  height: 36px;
+  right: 20px;
+  top: 115px;
+  border: none;
+  background: url("@{img}/hamburger.svg") no-repeat 0 0 transparent;
+  z-index: 2;
+  // -webkit-animation: fade-in-out 1s;
+  //           animation: fade-in-out 1s;
+  .transition(all .5s ease-in-out);
+  &:hover,
+  &:focus {
+      background-position-x: -72px;
+  }
+  &:focus {
+      outline-color: rgb(59, 153, 252);
+      outline-style: auto;
+      outline-width: 5px;
+  }
+  &.close {
+    width: 45px;
+    height: 45px;
+    right: 20px;
+    top: 180px;
+    background: url("@{img}/close.svg") no-repeat ~"3px 5px/30px 30px" transparent; 
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    -webkit-animation: fade-in-out 1s;
+            animation: fade-in-out 1s;
+    &:hover,
+    &:focus {
+        border: 2px solid @darkgold;
+    }
+  }
+  // @media(max-width:768px) {
+  //     display: none;
+  // }
+}
 
+@-webkit-keyframes fade-in-out {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+} 
+@keyframes fade-in-out {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
 
 /********************************
@@ -1636,7 +1691,16 @@ button.nextSlide {
         font-family: "Encode Sans Compressed", sans-serif;
         text-transform: uppercase;
         color:#4c2b85;
+        opacity: 1;
+        visibility: visible;
+        height: 81px;
+        .transition(all .5s ease-in-out);
       }
+      .cv2-header-white.hidemenu{
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+       } 
       .cv2-header-white .row{
         margin-left:0;
         margin-right:0;
@@ -2149,4 +2213,8 @@ button.nextSlide {
         margin-bottom:5px;
       }
     }
-
+    @-moz-document url-prefix(){
+      .cv2-header-white input{
+        padding:0 !important;
+      }
+    }

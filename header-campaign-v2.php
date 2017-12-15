@@ -25,11 +25,12 @@ global $styles;
 		<link rel='stylesheet' id='uw-boundless-css'  href='<?php echo get_stylesheet_directory_uri() . '/style.css' ?>' type='text/css' media='all' />
 		<link rel='stylesheet' id='uw-campaign-css'  href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/campaignv2-style.css' ?>' type='text/css' media='all' />
 		<?php echo $styles; ?>
-		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+		<!-- <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script> -->
+		<script type='text/javascript' src='<?php echo get_stylesheet_directory_uri() . '/campaign/js/vendor/jquery-1.11.3.min.js' ?>'></script>
 		<script type='text/javascript' src='<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>'></script>
 	</head>
 	<body id="immersive" <?php body_class(); ?>>
-		<header class="cv2-header" role="banner">
+		<header id="cv2-header" class="cv2-header" role="banner">
 			<div class="cv2-header-purple" role="navigation">
 				<div class="row">
 					<div class="col-sm-6 col-md-6 col-lg-6">
@@ -117,5 +118,6 @@ global $styles;
 						</ul>
 					</div><!-- .col-md-4 .col-lg-4 -->
 				</div>			</div>
+			<div id="cv2-header-white-collapse"></div>
 		</header><!-- .cv2-header -->
 		<div id="give-iframe"><span id="cv2-close" role="button"></span><div class="container"></div></div>
