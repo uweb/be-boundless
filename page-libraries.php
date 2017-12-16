@@ -233,7 +233,7 @@
 
 
 		<!-- Donor Appeal Section w/ background + Video -->
-		<section class="text-block grey no-pad">
+		<section class="text-block grey no-pad donor-appeal">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
