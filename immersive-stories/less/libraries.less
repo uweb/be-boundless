@@ -1,0 +1,743 @@
+// All the Variables from the UW 2014 theme
+@import "../../themes/uw-2014/less/uw.variables.less";
+@import "../../themes/uw-2014/less/flat/mixins.less";
+@import "../../themes/uw-2014/less/flexbox.less";
+@import "../../immersive-stories/less/text-block-new.less";
+@import "../../immersive-stories/less/button.less";
+@import "../../immersive-stories/less/common.less";
+@import "../../immersive-stories/less/queries.less";
+@import "../../immersive-stories/less/lity.less";
+@import "../../immersive-stories/less/slideshow.less";
+// @import "../../immersive-stories/css/libraries/animsition.min.css";
+
+@foster: "../../immersive-stories/img/foster-school";
+@built: "../../immersive-stories/img/built-env";
+@ica: "../../immersive-stories/img/ica";
+@img: "../../immersive-stories/img";
+@libraries: "../../immersive-stories/img/libraries";
+
+
+// @media @phone-only { }              //  (max-width: 599px)          
+// @media @tablet-portrait-up { }      //  (min-width: 600px) 
+// @media @tablet-portait-only { }     //  (min-width: 600px) and (max-width: 899px) 
+// @media @tablet-landscape-up { }     //  (min-width: 900px)
+// @media @tablet-landscape-only { }   //  (min-width: 900px) and (max-width: 1199px) 
+// @media @desktop-up { }              //  (min-width: 1200px)     
+// @media @desktop-only { }            //  (min-width: 1200px) and (max-width: 1799px)"     
+// @media @big-desktop-up { }          //  (min-width: 1800px)     
+    
+
+
+body {
+    width: 100%;
+    height: 100%;
+    .uw-footer {
+        margin-top: 0
+    }
+}
+p {
+    color: #696969;
+}
+iframe {
+    width: 100%;
+    max-height: none;
+}
+
+.headline-gold {
+    color: @lightgold !important;
+}
+
+.container {
+    @media (min-width: 1600px) { 
+        width: 1570px;
+    }                
+}
+
+.text-block.giving-widget-promoted {
+    background-image: url("@{libraries}/2139x389.png");
+    @media @phone-only {
+        div.row {
+            padding-bottom: 0;
+        }
+        div.first-col {
+            padding-top: 20px;
+        }
+    }
+}
+
+
+
+// Top put it over the top of the opening video
+#main_content {
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    padding-top: 1%;
+}
+
+// Namespace to prevent bleeding into uw.edu/boundless/ when popped up
+#immersive-body {
+    overflow: hidden;
+    h1, h2, h3, h4, h5 {
+        font-family: @headline;
+        font-weight: @ultra;
+    }
+    h2 {
+        color: @purple;
+    }
+}
+
+
+.intro {
+    #version-switch {
+        position: absolute;
+        width: 100%;
+        background-color: rgba(0,0,0,0.1);
+        top: 0;
+        height: 85px;
+        z-index: 1;
+        button {
+            position: absolute;
+            padding: 5px 30px;
+            border: none;
+            background-color: #4c2b85;
+            color: white;
+            -webkit-transition: all .2s linear;
+            transition: all .2s linear;
+            top: 20px;
+            right: 10px;
+        }
+    }
+    #pause {
+        top: 100px;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(~"103vh - 171px");
+    .background-cover(cover);
+    background-position: center center;
+    background-color: black;
+    position: relative;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;             
+    background: -webkit-linear-gradient(bottom left, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%);
+    background: -o-linear-gradient(bottom left, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%);
+    background: linear-gradient(to top right, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bd000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+    .scrollit {
+        z-index: 1;
+    }
+    p {
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.55);
+    }
+    h1 {
+        text-transform: uppercase;
+        color: white;
+        line-height: 1.1;
+        text-shadow: 0px 0px 3px rgba(37, 37, 37, 0.65);
+        .skew(-15deg,0);
+        font-size: 20px;
+        span {
+            // display: block;
+        }
+    }
+    video {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+
+    }
+    .intro-body {
+        position: absolute;
+        z-index: 1;
+        top: 40%;
+        left: 0;
+        width: 100%;
+        .translate(0,-50%);
+        & > div {
+            .play-button {
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+    }
+    a.read-more {
+        display: block;
+        position: absolute;
+        left: 50%;
+        margin-left: -20px;
+        text-indent: -999px;
+        overflow: hidden;
+        width: 40px;
+        height: 50px;
+        background: url("@{img}/sprite.svg") 0 0 no-repeat transparent;
+        z-index: 1;
+        &:hover,
+        &:active,
+        &:focus {
+            .translate(0,10px);
+        }
+    }
+    #intro-text {
+        position: relative;
+        a {
+            p {
+                font-weight: bold;
+                display: inline-block;
+                text-transform: uppercase;
+            }
+        }
+        &:after {
+            content: "";
+            width: 2px;
+            height: 200%;
+            top: 0;
+            .rotate(15deg);
+            right: -70px;
+            position: absolute;
+            background-color: white;
+        }
+    }
+
+    @media @phone-only { 
+
+        // background-image: url("@{foster}/yesenia-mobile.jpg");
+        .background-cover(cover);
+        background-position: right center;
+        .intro-body {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            margin-top: 0;
+            .translate(0,-50%);
+        }
+        p {
+            line-height: 1.4;
+            font-size: .65em;
+        }
+        #intro-text {
+            a {
+                p {
+                    .translate(0,-10px);
+                }
+            }
+            svg {
+                height: auto;
+                width: 35px;
+            }
+        }
+        .udub-slant { 
+            display: none;
+        }
+        video {
+            object-position: 50% 50%;
+        }
+        a.read-more {
+            top: calc(~"100vh - 70px");
+        }
+    }              //  (max-width: 599px)   
+    @media @phone-only {
+        // background-image: url("@{foster}/yesenia-mobile-portrait.jpg");
+        .intro-body {
+            top: 50%;
+            .col-xs-8 {
+                width: 85%;
+            }
+        }
+        video {
+            object-position: 75% 50%;
+        }
+        a { 
+            svg {
+                float: left;
+                height: 30px;
+                width: 30px;
+            }
+            p {
+                display: inline-block;
+                float: left;
+                margin: 2px 0 0 10px;
+            }
+        }
+    }               //  (max-width: 599px)         
+    @media @tablet-portrait-up { 
+        #intro-text {
+            a {
+                p {
+                    margin-left: 20px;
+                    .translate(0,-30px);
+                }
+            }
+        }
+
+
+    }      //  (min-width: 600px) 
+    @media @tablet-portait-only { 
+        background-position: right center;
+        .intro-body {
+            position: absolute;
+            z-index: 1;
+            top: 45%;
+            left: 0;
+            width: 100%;
+            margin-top: 0;
+            .translate(0,-50%);
+        }
+        h1 {
+            font-size: 6.5vw;
+        }
+        p {
+            line-height: 1.4;
+        }
+        a { 
+            svg {
+                float: left;
+                height: 30px;
+                width: 30px;
+            }
+            p {
+                display: inline-block;
+                float: left;
+                margin: 2px 0 0 10px;
+            }
+        }
+        #intro-text {
+        }
+        a.read-more {
+            top: calc(~"100vh - 70px");
+        }
+
+    }     //  (min-width: 600px) and (max-width: 899px) 
+    @media @tablet-landscape-up { 
+
+        h1 {
+            font-size: 4vw;
+        }
+        hr {
+            display: block;
+        }
+        video {
+            object-position: 100% 50%;
+        }
+        a.read-more {
+            top: calc(~"100vh - 95px");
+            bottom: auto;
+        }
+        .intro-body {
+            .intro-body {
+                & > div {
+                    .play-button {
+                    }
+                }
+            }
+            & > div {
+
+                .flex-display(flex);
+                .align-content(center);
+                .play-button {
+                    position: relative;
+                    .flex-display(flex);
+                    .align-items(center);
+                    &:after {
+                        content: "";
+                        width: 2px;
+                        height: 100%;
+                        left: 0;
+                        top: 0;
+                        .rotate(15deg);
+                        left: -70px;
+                        position: absolute;
+                        background-color: white;
+                    }
+
+                }
+            }
+        }
+    }     //  (min-width: 900px)
+    @media @tablet-landscape-only { }   //  (min-width: 900px) and (max-width: 1199px) 
+    @media @desktop-up { 
+        h1 {
+            span {
+                display: block;
+            }
+        }
+        video {
+            object-position: 100% 50%;
+        }
+    }              //  (min-width: 1200px)     
+    @media @desktop-only { }            //  (min-width: 1200px) and (max-width: 1799px)"     
+    @media @big-desktop-up { }          //  (min-width: 1800px)     
+    
+
+    /* ----------- iPhone 5 and 5S Portrait ----------- */
+
+    @media only screen 
+        and (min-device-width: 320px) 
+        and (max-device-width: 568px)
+        and (-webkit-min-device-pixel-ratio: 2)
+        and (orientation: landscape) {
+
+        h1 {
+
+        }
+        p {
+
+        }
+    }
+
+}
+
+// Yesenia profile
+
+
+.arrow-right {
+    &:after {
+        content: "";
+        border-color: rgba(255, 255, 255, 0) white;
+        border-style: solid;
+        border-width: 30px 0 30px 30px;
+        height: 0;
+        width: 0;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -30px;
+    }
+}
+.arrow-top {
+    &:after {
+        content: "";
+        border-color: white rgba(255, 255, 255, 0);
+        border-style: solid;
+        border-width: 30px 30px 0 30px;
+        height: 0;
+        width: 0;
+        position: absolute;
+        top: 0;
+        left: 20%;
+        margin-left: -30px;
+    }
+}
+
+.arrow-bottom {
+    &:after {
+        content: "";
+        border-color: rgb(255, 255, 255) rgba(255, 255, 255, 0);
+        border-style: solid;
+        border-width: 0 100px 60px 100px;
+        height: 0;
+        width: 0;
+        position: absolute;
+        top: auto;
+        left: 50%;
+        bottom: 0;
+        margin-left: -100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.text-block {
+    .inset-pics {
+        .translate(0,-50px);
+        div {
+            overflow:hidden;
+            img {
+                .transition(transform .2s linear);
+                &:hover {
+                    .scale(1.2,1.2);
+                }
+            }
+        }
+    }
+    .copy {
+        h3 {
+            font-size:1.3em;
+            color: @darkgold;
+        }
+        > img {
+            margin: 40px 0;
+        }
+        .attribute {
+            position: relative;
+            font-family: @uni;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 19px;
+            -webkit-font-smoothing: auto;
+            &:after {
+                position: absolute;
+                left: -15px;
+                top: -5px;
+                content: '';
+                width:1px;
+                height: 40px;
+                background-color: #c1c1c1;
+                display: block;
+                .skew(-15deg,0);
+            }
+        }
+        small {
+            display: block;
+            font-size: 14px;
+            -webkit-font-smoothing: antialiased;
+            color: @darkgray;
+            margin-top: -5px;
+        }
+        blockquote {
+            //font-family: @uni;
+            color: @darkgold;
+            //font-size: 27px;
+            line-height: 1.3;
+            position: relative;
+            border: none;
+            // text-indent: 25px;
+            margin-bottom: 50px;
+            margin-top: 60px;
+            padding-left: 0;
+            span {
+                font-family: @encode;
+                font-weight: @ultra;
+                color: @lightgold;
+                font-size: 80px;
+                position: absolute;
+                &:nth-of-type(1) {
+                    left: -50px;
+                    top: -20px;
+                }
+                &:nth-of-type(2) {
+                    margin-left: -5px;
+                    margin-top: -5px;
+                }
+            }
+            &.breakout-quote {
+                //font-family: "Open Sans", sans-serif;
+                font-weight: @ultra;
+                &:before, &:after {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    position: absolute;
+                    height: 2px;
+                    background-color: @darkgold;
+                }
+                &:before {
+                    top: -15px;
+                }
+                &:after {
+                    bottom: -18px;
+                }
+            }
+        }
+        small.photo-caption {
+            margin: -5px 0 40px;
+            display: inline-block;
+            font-size: 14px;
+            color: gray;
+        }
+        small.video-caption {
+            text-align: center;
+            display: inline-block;
+            margin: -10px 0 50px;
+        }
+        iframe {
+            height: 537px !important;
+            width: 100%;
+            margin: 40px 0;
+        }
+
+        & > img {
+            margin: 25px 0 20px;
+        }
+        &.transparent {
+            background-color: transparent;
+        }
+        @media(min-width:768px) {
+            &.marginless {
+                margin-top: 0;
+            }
+            &.padless {
+                padding: 50px 90px 40px 90px;
+            }
+            &.reduced-pad {
+                padding: 50px 90px 40px 90px;
+            }
+            .slick-slider {
+                margin: 50px -50px 100px;
+            }
+        }
+    }
+
+    &.grey {
+        background-color: #434343;
+        color: #fff;
+        p,h2 {
+            color: #fff !important;
+        }
+    }
+    @media @phone-only { 
+        .inset-pics {
+            margin-top: 20px;
+            img:nth-of-type(1) {
+                display: none;
+            }
+        }
+        .copy {
+            h3 {
+                font-size:1.1em;
+            }
+            blockquote {
+                font-size: 20px;
+                line-height: 1.3;
+                position: relative;
+                text-indent: 25px;
+                margin-bottom: 20px;
+                margin-top: 30px;
+                padding-left: 0;
+                span {
+                    font-size: 40px;
+                    position: absolute;
+                    &:nth-of-type(1) {
+                        left: -27px;
+                        top: -10px;
+                    }
+                    &:nth-of-type(2) {
+                        margin-left: -15px;
+                    }
+                }
+            }
+        }
+
+    }              //  (max-width: 599px)          
+    @media @tablet-portrait-up { 
+        .inset-pics {
+            width: 65%;
+            margin-right: -20%;
+            margin-top: -11%;
+            float: right;
+            padding: 0 0 20px 60px;
+        }
+    }      //  (min-width: 600px) 
+    // @media @tablet-portait-only { }     //  (min-width: 600px) and (max-width: 899px) 
+    // @media @tablet-landscape-up { }     //  (min-width: 900px)
+    // @media @tablet-landscape-only { }   //  (min-width: 900px) and (max-width: 1199px) 
+    // @media @desktop-up { }              //  (min-width: 1200px)     
+    // @media @desktop-only { }            //  (min-width: 1200px) and (max-width: 1799px)"     
+    // @media @big-desktop-up { }          //  (min-width: 1800px)    
+}
+
+// Video pauser
+
+@media @tablet-portrait-up {
+    .pause-enabled,
+    .mute-enabled {
+        position: relative;
+    }
+
+    .pause.paused {
+        background-position: 0 -31px;
+    }
+    .pause,
+    .unmute {
+        opacity: .5;
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        width: 33px;
+        height: 31px;
+        top: 20px;
+        right: 10px;
+        text-indent: -9999px;
+        overflow-x: hidden;
+        background-image: url('arts/pause.svg');
+        background-repeat: no-repeat;
+        z-index: 10;
+    }
+    .unmute {
+
+        right: 55px;
+        background-position: 0 -64px;
+    }
+    .unmute.muted {
+        background-position: 0 -95px;
+    }
+    .tight .pause,
+    .tight .unmute {
+        top: 7px;
+    }
+}
+
+@media @phone-only { 
+    .pause-enabled {
+        button {
+            display: none;
+        }
+    }
+}
+
+// Pause button
+
+#pause {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    text-indent: -999px;
+    overflow-x: hidden;
+    width: 45px;
+    height: 45px;
+    right: 20px;
+    top: 120px;
+    border: none;
+    background: url("@{img}/pause.svg") no-repeat 0 0 transparent;
+    z-index: 2;
+    &:hover,
+    &:focus {
+        background-position-x: -47px;
+    }
+    &:focus {
+        outline-color: rgb(59, 153, 252);
+        outline-style: auto;
+        outline-width: 5px;
+    }
+    @media(max-width:768px) {
+        display: none;
+    }
+}
+&.paused {
+    video {
+        // opacity: .6;
+        // -webkit-filter: blur(5px);
+    }
+    #pause { 
+        background-position: 0 -49px;
+        &:hover {
+            background-position-x: -47px;
+        }
+        &:focus {
+            outline-color: rgb(59, 153, 252);
+            outline-style: auto;
+            outline-width: 5px;
+        }
+    }
+}
