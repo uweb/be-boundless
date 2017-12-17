@@ -95,11 +95,11 @@
                     </p>
                   </div>
                   <div class="col-md-7 col-xs-12">
-                    <a href="#students" class="col-sm-2 col-sm-offset-1 col-xs-2 col-xs-offset-1 section-links">Students</a>
-                    <a href="#predator" class="col-sm-2 col-xs-2 section-links">Predators</a>
-                    <a href="#prey" class="col-sm-2 col-xs-2 section-links">Prey</a>
-                    <a href="#scavenger" class="col-sm-2 col-xs-2 section-links">Scavengers</a>
-                    <a href="#people" class="col-sm-2 col-xs-2 section-links">Staff and neighbors</a>
+                    <a href="#students" class="col-sm-2 col-sm-offset-1 col-xs-2 col-xs-offset-1 section-links"><span>Students</span></a>
+                    <a href="#predator" class="col-sm-2 col-xs-2 section-links"><span>Predators</span></a>
+                    <a href="#prey" class="col-sm-2 col-xs-2 section-links"><span>Prey</span></a>
+                    <a href="#scavenger" class="col-sm-2 col-xs-2 section-links"><span>Scavengers</span></a>
+                    <a href="#people" class="col-sm-2 col-xs-2 section-links"><span>Staff and neighbors</span></a>
                   </div>
               </div>         
           </div>
@@ -356,27 +356,29 @@
                 <p>At the site of a wolf-killed elk, biologist Kai Koitzsch explains how to conduct a necropsy, studying everything from the elk’s worn molars and bone marrow health to nearby wolf pawprints and raven droppings.</p>
               </div> 
               <!--IGNORED ON MOBILE -->
-              <div class="row centered pad-top">
-                <blockquote class="col-xs-10 quote">
-                    <span>&ldquo;</span>
-                    To actually go there and get a sense of where a cougar hunts helps you understand how they interact with their environment.
-                    <span>&rdquo;</span>
-                </blockquote>
-              </div>
-              <div class="row centered pad-bottom">
-                <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/MATT_QUOTE_PORTRAIT.png' ?>" alt="Matthew Malone, '18">
-                <p class="attribute no-top no-bottom">
-                  Matthew Malone, &rsquo;18 </br>
-                  Environmental Science and Terrestrial Resource Management
-                </p>
+              <div class="student-quote predgal float-right">
+                <!-- <div class="row centered pad-top"> -->
+                  <blockquote class="col-xs-12 quote">
+                      <span>&ldquo;</span>
+                      To actually go there and get a sense of where a cougar hunts helps you understand how they interact with their environment.
+                      <span>&rdquo;</span>
+                  </blockquote>
+                <!-- </div>
+                <div class="row centered pad-bottom"> -->
+                  <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/MATTHEW_QUOTE_PORTRAIT.png' ?>" alt="Matthew Malone, '18">
+                  <p class="attribute no-top no-bottom">
+                    Matthew Malone, &rsquo;18 </br>
+                    Environmental Science and Terrestrial Resource Management
+                  </p>
+               <!--  </div> -->
               </div>
         <!-- </div> --> 
-        <section class="scrollit read-more">
+        <!-- <section class="scrollit read-more">
           <p>Scroll to continue</p>  
           <div class="mouse">
             <div class="scroll"></div>
           </div> 
-      </section>
+      </section> -->
       </div>     
     </section>
 
@@ -490,7 +492,7 @@
                 <p class="">Bighorn sheep are just one of the many species of animals that congregate in Yellowstone.</p>
               </div>
               <!-- 8.4 -->
-              <div class="mobile-slide prey centered"> 
+              <div class="mobile-slide prey float-right"> 
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_3.jpg' ?>" alt="Gavin Forster, ’18,  helps collect data for John Marzluff’s ongoing bird survey." data-lity></span>
                 <p class="">Gavin Forster, &rsquo;18,  helps collect data for John Marzluff’s ongoing bird survey.</p>
               </div>
@@ -500,14 +502,15 @@
                 <p>Students scan a far-off hillside for an elk carcass they’ve heard is in the area. Where there’s a carcass, there are often large — and hungry — animals.</p>
               </div>  -->
               <!--IGNORED ON MOBILE -->
-              <div class="row centered pad-top">
-                <blockquote class="col-xs-10 quote">
+              <div class="student-quote prey">
+              <!-- <div class="row centered pad-top"> -->
+                <blockquote class="col-xs-12 quote">
                     <span>&ldquo;</span>
                     The conditions weren’t perfect for the elk survey. It wasn’t nice out and it wasn’t easy, but it was something I was really happy doing.
                     <span>&rdquo;</span>
                 </blockquote>
-              </div>
-              <div class="row centered pad-bottom">
+              <!-- </div> -->
+              <!-- <div class="row centered pad-bottom"> -->
                 <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/HANNAH_QUOTE_PORTRAIT.png' ?>" alt="Hannah Booth, '18">
                 <p class="attribute no-top no-bottom">
                   Hannah Booth, &rsquo;18 </br>
@@ -516,12 +519,12 @@
               </div>
          <!--  </div> -->
         <!-- </div> -->
-        <section class="scrollit read-more">
+        <!-- <section class="scrollit read-more">
           <p>Scroll to continue</p>  
           <div class="mouse">
             <div class="scroll"></div>
           </div> 
-      </section>
+      </section> -->
       </div>     
     </section>
 
@@ -546,7 +549,7 @@
                     </blockquote>
                   </div>
                   <div class="row centered atts-pic">
-                    <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/AARON_QUOTE_PORTRAIT.png' ?>" alt="Aaron Wirsing">
+                    <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/AARON_PROFILE_QUOTE.png' ?>" alt="Aaron Wirsing">
                     <p class="attribute no-top no-bottom">
                       Aaron Wirsing, Associate Professor of Environmental and Forest Sciences,</br>
                       University of Washington
@@ -635,7 +638,7 @@
                 <p>The close-up intricacies of a feather.</p>
               </div> 
               <!-- 11.4 -->
-              <div class="mobile-slide scav centered"> 
+              <div class="mobile-slide scav float-right"> 
                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_3.jpg' ?>" alt="Two ravens make their presence known in the otherwise silent expanse of the Lamar Valley." data-lity></span>
                 <p class="">Two ravens make their presence known in the otherwise silent expanse of the Lamar Valley.</p>
               </div>
@@ -645,14 +648,15 @@
                 <p>Students scan a far-off hillside for an elk carcass they’ve heard is in the area. Where there’s a carcass, there are often large — and hungry — animals.</p>
               </div>  -->
               <!--IGNORED ON MOBILE-->
-              <div class="row centered pad-top">
-                <blockquote class="col-xs-10 quote">
+              <div class="student-quote scav">
+              <!-- <div class="row centered pad-top"> -->
+                <blockquote class="col-xs-12 quote">
                     <span>&ldquo;</span>
                     When we were watching the bears at the bison carcass at Blacktail Pond, there were also a lot of ravens, and John Marzluff told us all about their different social behaviors and interactions.
                     <span>&rdquo;</span>
                 </blockquote>
-              </div>
-              <div class="row centered pad-bottom">
+              <!-- </div>
+              <div class="row centered pad-bottom"> -->
                 <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/ANDREW_QUOTE_PORTRAIT.png' ?>" alt="Andrew Wang, '17">
                 <p class="attribute no-top no-bottom">
                   Andrew Wang, &rsquo;17 </br>
@@ -661,12 +665,12 @@
               </div>
          <!--  </div> -->
         <!-- </div> -->
-        <section class="scrollit read-more">
+        <!-- <section class="scrollit read-more">
           <p>Scroll to continue</p>  
           <div class="mouse">
             <div class="scroll"></div>
           </div> 
-      </section>
+      </section> -->
       </div>     
     </section>
 
@@ -691,7 +695,7 @@
                     </blockquote>
                   </div>
                   <div class="row centered atts-pic">
-                    <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/DOUG_SMITH_QUOTE_PORTRAIT.png' ?>" alt="Doug Smith">
+                    <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/DOUG_QUOTE_PORTRAIT.png' ?>" alt="Doug Smith">
                     <p class="attribute no-top no-bottom">
                       Doug Smith, Wolf Biologist,</br>
                       Yellowstone National Park
@@ -762,38 +766,39 @@
          <!-- <div class="row"> -->
               <!-- 14.1 -->
               <div class="mobile-slide peop">
-                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOPLE_GAL_1.jpg' ?>" alt="Malou Anderson-Ramirez gives students a tour of the Anderson Ranch." data-lity></span>
-                <p>Malou Anderson-Ramirez gives students a tour of the Anderson Ranch.</p>
+                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOPLE_GAL_1.1.jpg' ?>" alt="• Malou Anderson-Ramirez (far right) talks to students about the challenges and rewards of ranching on the Yellowstone border." data-lity></span>
+                <p class="">• Malou Anderson-Ramirez (far right) talks to students about the challenges and rewards of ranching on the Yellowstone border.</p>
               </div>
               <!-- 14.2 -->
               <div class="mobile-slide peop float-right">
-                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOPLE_GAL_1.1.jpg' ?>" alt="Students tour the Anderson Ranch." data-lity></span>
-                <p class="">Students tour the Anderson Ranch.</p>
-              </div>
-              <!-- 14.3 -->
-              <div class="mobile-slide peop">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOPLE_GAL_2.jpg' ?>" alt="Horses, longhorns, goats and other domesticated animals pepper the many ranches in the expansive Tom Miner Basin, just miles from the Yellowstone Park border." data-lity></span>
                 <p>Horses, longhorns, goats and other domesticated animals pepper the many ranches in the expansive Tom Miner Basin, just miles from the Yellowstone Park border.</p>
               </div> 
+              <!-- 14.3 -->
+              <div class="mobile-slide peop"> 
+                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOP-4.jpg' ?>" alt="" data-lity></span>
+                <p class=""></p>
+              </div>
               <!-- 14.4 -->
-              <!-- <div class="mobile-slide"> 
-                <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_5.jpg' ?>" alt="On a foggy day, Aaron Wirsing points out possible locations where wolves could be on a distant ridge." data-lity>
-                <p class="">On a foggy day, Aaron Wirsing points out possible locations where wolves could be on a distant ridge.</p>
-              </div> -->
+              <div class="mobile-slide peop float-right">
+                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOP-5.jpg' ?>" alt="" data-lity></span>
+                <p></p>
+              </div> 
               <!-- 14.5 -->
-              <!-- <div class="mobile-slide">
-                <img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_6.jpg' ?>" alt="Students scan a far-off hillside for an elk carcass they’ve heard is in the area. Where there’s a carcass, there are often large — and hungry — animals." data-lity>
-                <p>Students scan a far-off hillside for an elk carcass they’ve heard is in the area. Where there’s a carcass, there are often large — and hungry — animals.</p>
-              </div>  -->
+              <div class="mobile-slide peop">
+                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOP-6.jpg' ?>" alt="" data-lity></span>
+                <p></p>
+              </div> 
               <!--IGNORED ON MOBILE-->
-              <div class="row centered pad-top">
-                <blockquote class="col-xs-10 quote">
+              <div class="student-quote peop float-right">
+              <!-- <div class="row centered pad-top"> -->
+                <blockquote class="col-xs-12 quote">
                     <span>&ldquo;</span>
                     Going to Yellowstone with wildlife biologists is like going behind the scenes of a play.
                     <span>&rdquo;</span>
                 </blockquote>
-              </div>
-              <div class="row centered pad-bottom">
+              <!-- </div>
+              <div class="row centered pad-bottom"> -->
                 <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/NIKKI_QUOTE_PORTRAIT.png' ?>" alt="Nikki Furner, '18">
                 <p class="attribute no-top no-bottom">
                   Nikki Furner, &rsquo;18 </br>
@@ -802,12 +807,12 @@
               </div>
          <!--  </div> -->
         <!-- </div> -->
-        <section class="scrollit read-more">
+        <!-- <section class="scrollit read-more">
           <p>Scroll to continue</p>  
           <div class="mouse">
             <div class="scroll"></div>
           </div> 
-      </section>
+      </section> -->
       </div>     
     </section>
 
@@ -913,6 +918,7 @@
                   <div class="col-xs-12">
                     <div id="immersive-give-iframe"></div>
                     <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="CELEND" href="#">Give now</a></span></div>
+                    <!-- <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="CELEND" href="#" data-lity data-lity-target="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&frame_buster=false&source_typ=3&appeal=17XIS&source=CELEND">Give now</a></span></div> -->
                   </div>
               </div>         
           </div>
