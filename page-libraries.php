@@ -214,7 +214,7 @@
 
 						<p>By September 2017, Kwon was ready to return to South Korea. She spent two weeks interviewing women for her research and visiting with her family — and thanks to the help she received from Nam and Yi, all her conversations went smoothly.</p>
 
-						<blockquote class="breakout-quote">By September 2017, Kwon was ready to return to South Korea. She spent two weeks interviewing women for her research and visiting with her family — and thanks to the help she received from Nam and Yi, all her conversations went smoothly.</blockquote>
+						<blockquote class="breakout-quote"><span class="left-quote">&ldquo;</span>By September 2017, Kwon was ready to return to South Korea. She spent two weeks interviewing women for her research and visiting with her family — and thanks to the help she received from Nam and Yi, all her conversations went smoothly.<span class="right-quote">&rdquo;</span></blockquote>
 
 						<h2>Putting her thesis to the test</h2>
 						<p>There was a lot riding on the trip: As she analyzes her interviews over the next few months, Kwon might find that they disprove her hypothesis entirely.</p>
