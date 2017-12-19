@@ -131,7 +131,22 @@ $('#immersive-body').fullpage({
 
       //Scrollbar action
       $('#full-line').width(indexArray[nextIndex - 1] + "%");
-      //console.log(indexArray[nextIndex - 1]);
+      if( nextIndex > index ) {
+        if( $('.dot' + nextIndex).length ) {
+          $('a.dot').removeClass('active');
+          $('.dot' + nextIndex).addClass('active');
+        } 
+      } else { //nextIndex < index
+        if( $('.dot' + index).length ) {
+          $('a.dot').removeClass('active');
+          if( $('.dot' + nextIndex).length ) { 
+            $('.dot' + nextIndex).addClass('active');
+          } else { //gallery sections
+            $('.dot' + (nextIndex - 2)).addClass('active');
+          }
+        } 
+        
+      }
     },
     afterLoad: function(anchorLink, index){
       if( ( window.location.hash.indexOf("home") == -1 ) && (window.location.hash) ) {
@@ -427,30 +442,33 @@ $('a.section-links').on('click', function(e) {
 // });
 
 $(document).on('lity:ready', function(event, lightbox) {
-    $(event.currentTarget.activeElement).find('.lity-content').prepend('<div class="lity-arrows fp-controlArrow fp-prev"><span></span></div><div class="lity-arrows fp-controlArrow fp-next"><span></span></div>');
-    $current = lightbox.opener().closest('.mobile-slide');
+    if ( $('section.active').first().hasClass('fp-auto-height') ) { //if gallery image or student section only
+      
+        $(event.currentTarget.activeElement).find('.lity-content').prepend('<div class="lity-arrows fp-controlArrow fp-prev"><span></span></div><div class="lity-arrows fp-controlArrow fp-next"><span></span></div>');
+        $current = lightbox.opener().closest('.mobile-slide');
 
-    $(':not(#students) div.lity-arrows.fp-controlArrow').on('click', function(e) {
-      $classes = $current.attr('class').split(/\s+/);
-      $section = false;
-      $.each($classes , function(index){
-        if(this.indexOf("gal") != -1) { $section = "" + this; }
-      });
-      if( $(this).hasClass("fp-next") ){
-        $next = $current.nextAll('.mobile-slide').first();
-        if( $next.length == 0 ) {
-          $next = $current.prevAll('.mobile-slide').last();;
-        }
-      } else { //fp-prev
-        $next = $current.prevAll('.mobile-slide').first();
-        if( $next.length == 0 ) {
-          $next = $current.nextAll('.mobile-slide').last();;
-        }
-      }
-      $nextImage = $next.find('img').attr('src');
-      $(event.currentTarget.activeElement).find('.lity-content img').attr('src', $nextImage);
-      $current = $next;
-    });
+        $(':not(#students) div.lity-arrows.fp-controlArrow').on('click', function(e) {
+          $classes = $current.attr('class').split(/\s+/);
+          $section = false;
+          $.each($classes , function(index){
+            if(this.indexOf("gal") != -1) { $section = "" + this; }
+          });
+          if( $(this).hasClass("fp-next") ){
+            $next = $current.nextAll('.mobile-slide').first();
+            if( $next.length == 0 ) {
+              $next = $current.prevAll('.mobile-slide').last();;
+            }
+          } else { //fp-prev
+            $next = $current.prevAll('.mobile-slide').first();
+            if( $next.length == 0 ) {
+              $next = $current.nextAll('.mobile-slide').last();;
+            }
+          }
+          $nextImage = $next.find('img').attr('src');
+          $(event.currentTarget.activeElement).find('.lity-content img').attr('src', $nextImage);
+          $current = $next;
+        });
+    } 
 });
 
 

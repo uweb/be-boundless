@@ -89,13 +89,13 @@
                   <h1 class=""><span>Experience</span> Yellowstone</h1>
                   <div class="row centered">
                     <p class="col-md-6 col-xs-12 mobile-shorten">
-                        Yellowstone hosts a complex ecosystem of predators, prey, scavengers and people — those who work with animals inside the park, as well as ranchers and others living just outside its borders.
+                        Yellowstone hosts a complex ecosystem of predators, prey, scavengers and people — those who work with animals inside the park, as well as ranchers and others operating just outside its borders.
                         </br></br>
                         <span>See what the UW students saw, hear what they heard and learn what they learned about wildlife management in Yellowstone. </span>Click on any section to start exploring.
                     </p>
                   </div>
                   <div class="col-md-7 col-xs-12">
-                    <a href="#students" class="col-sm-2 col-sm-offset-1 col-xs-2 col-xs-offset-1 section-links"><span>Students</span></a>
+                    <a href="#meet" class="col-sm-2 col-sm-offset-1 col-xs-2 col-xs-offset-1 section-links"><span>Students</span></a>
                     <a href="#predator" class="col-sm-2 col-xs-2 section-links"><span>Predators</span></a>
                     <a href="#prey" class="col-sm-2 col-xs-2 section-links"><span>Prey</span></a>
                     <a href="#scavenger" class="col-sm-2 col-xs-2 section-links"><span>Scavengers</span></a>
@@ -128,7 +128,7 @@
                           Who went to Yellowstone — and why? See what a handful of students had to say about their experience in the park.
                           <span class="squiggle"></span>
                           <!-- &frame_buster=false -->
-                           You can <a class="underline" data-fund="CELEND" href="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&source_typ=3&appeal=17XIS&source=CELEND" data-lity>support</a> immersive learning experiences at the College of the Environment and help propel students toward the careers of their dreams.
+                           You can <a class="underline no-arrows" data-fund="CELEND" href="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&frame_buster=flase&source_typ=3&appeal=17XIS&source=CELEND" data-lity>support</a> immersive learning experiences at the College of the Environment and help propel students toward the careers of their dreams.
                       </p>
                     </div>
                 </div>         
@@ -147,7 +147,7 @@
         <!-- 3.2 -->
         <section id="student1" class="student student1 mobile-slide desktop-slide">
           <div class="name">
-            <h3>Loma</br>Pendergraft, M.S. and Ph.D. student</h3>
+            <h3>Loma</br>Pendergraft, Graduate student</h3>
             <p class="major">Focus: Crow communication</p>
             <span class="udub-slant"><span></span></span>
             <!-- <p>lorem ipsum</p> -->
@@ -173,7 +173,7 @@
          <!-- 3.4 -->
         <section id="student3" class="student student3 mobile-slide desktop-slide">
           <div class="name">
-            <h3>Hannah</br>Booth, &rdquo;18</h3>
+            <h3>Hannah</br>Booth, &rsquo;18</h3>
             <p class="major">Major: Environmental science and terrestrial resource management</p>
             <span class="udub-slant"><span></span></span>
             <!-- <p>lorem ipsum</p> -->
@@ -186,7 +186,7 @@
          <!-- 3.5 -->
         <section id="student4" class="student student4 mobile-slide desktop-slide">
           <div class="name">
-            <h3>Gavin</br>Forster, &rdquo;18</h3>
+            <h3>Gavin</br>Forster, &rsquo;18</h3>
             <p class="major">Major: Environmental science and terrestrial resource management</p>
             <span class="udub-slant"><span></span></span>
             <!-- <p>lorem ipsum</p> -->
@@ -199,7 +199,7 @@
          <!-- 3.6 -->
         <section id="student5" class="student student5 mobile-slide desktop-slide">
           <div class="name">
-            <h3>Courtney</br>Straight, &rdquo;18</h3>
+            <h3>Courtney</br>Straight, &rsquo;18</h3>
             <p class="major">Major: Environmental science and terrestrial resource management</p>
             <span class="udub-slant"><span></span></span>
             <!-- <p>lorem ipsum</p> -->
@@ -212,7 +212,7 @@
          <!-- 3.7 -->
         <section id="student6" class="student student6 mobile-slide desktop-slide">
           <div class="name">
-            <h3>Andrew</br>Wang, &rdquo;17</h3>
+            <h3>Andrew</br>Wang, &rsquo;17</h3>
             <p class="major">Major: Environmental science and terrestrial resource management</p>
             <span class="udub-slant"><span></span></span>
             <!-- <p>lorem ipsum</p> -->
@@ -767,7 +767,7 @@
               <!-- 14.1 -->
               <div class="mobile-slide peop">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOPLE_GAL_1.1.jpg' ?>" alt="• Malou Anderson-Ramirez (far right) talks to students about the challenges and rewards of ranching on the Yellowstone border." data-lity></span>
-                <p class="">• Malou Anderson-Ramirez (far right) talks to students about the challenges and rewards of ranching on the Yellowstone border.</p>
+                <p class="">Malou Anderson-Ramirez (far right) talks to students about the challenges and rewards of ranching on the Yellowstone border.</p>
               </div>
               <!-- 14.2 -->
               <div class="mobile-slide peop float-right">
@@ -776,18 +776,18 @@
               </div> 
               <!-- 14.3 -->
               <div class="mobile-slide peop"> 
-                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOP-4.jpg' ?>" alt="" data-lity></span>
-                <p class=""></p>
+                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOP-6.jpg' ?>" alt="At the site of a wolf-killed elk, wildlife biologist Ky Koitzsch (center) explains to students how to conduct a necropsy." data-lity></span>
+                <p class="">At the site of a wolf-killed elk, wildlife biologist Ky Koitzsch (center) explains to students how to conduct a necropsy.</p>
               </div>
               <!-- 14.4 -->
               <div class="mobile-slide peop float-right">
-                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOP-5.jpg' ?>" alt="" data-lity></span>
-                <p></p>
+                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOP-5.jpg' ?>" alt="Zach Gregory, ’15, a wildlife technician working alongside Koitzsch, shows Jenny Brent, ’19, how to enter data on a necropsy form. Gregory took this class as an undergraduate." data-lity></span>
+                <p>Zach Gregory, ’15, a wildlife technician working alongside Koitzsch, shows Jenny Brent, ’19, how to enter data on a necropsy form. Gregory took this class as an undergraduate.</p>
               </div> 
               <!-- 14.5 -->
               <div class="mobile-slide peop">
-                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOP-6.jpg' ?>" alt="" data-lity></span>
-                <p></p>
+                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOP-4.jpg' ?>" alt="Like Gregory, Connor Meyer (left, facing camera), ’16, took this class as an undergraduate and works in the park as a wildlife technician. He leads Wirsing (right, facing camera) and the rest of the class to the site of a cougar-killed elk." data-lity></span>
+                <p>Like Gregory, Connor Meyer (left, facing camera), ’16, took this class as an undergraduate and works in the park as a wildlife technician. He leads Wirsing (right, facing camera) and the rest of the class to the site of a cougar-killed elk.</p>
               </div> 
               <!--IGNORED ON MOBILE-->
               <div class="student-quote peop float-right">
@@ -917,7 +917,7 @@
                   </div>
                   <div class="col-xs-12">
                     <div id="immersive-give-iframe"></div>
-                    <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="CELEND" href="#">Give now</a></span></div>
+                    <div class="boundless-button sm dark give"><span><a data-fund="CELEND" href="#" data-lity data-lity-target="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&frame_buster=flase&source_typ=3&appeal=17XIS&source=CELEND">Give now</a></span></div>
                     <!-- <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="CELEND" href="#" data-lity data-lity-target="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&frame_buster=false&source_typ=3&appeal=17XIS&source=CELEND">Give now</a></span></div> -->
                   </div>
               </div>         
@@ -927,7 +927,7 @@
   </section>
 
  <section id="scrollbar">
-   <p>explore</p>
+   <p>Navigate</p>
    <div class="black">
      <div class="empty-line">
        <span id="full-line"></span>
@@ -935,11 +935,11 @@
        <a href="#experience" class="dot dot2"><span><p>Experience</p></span></a>
        <a href="#meet" class="dot dot3"><span><p>Students</p></span></a>
        <a href="#predator" class="dot dot4"><span><p>Predators</p></span></a>
-       <a href="#prey" class="dot dot5"><span><p>Prey</p></span></a>
-       <a href="#scavenger" class="dot dot6"><span><p>Scavengers</p></span></a>
-       <a href="#people" class="dot dot7"><span><p>People</p></span></a>
-       <a href="#explore" class="dot dot8"><span><p>Explore</p></span></a>
-       <a href="#give" class="dot dot9"><span><p>Give</p></span></a>
+       <a href="#prey" class="dot dot7"><span><p>Prey</p></span></a>
+       <a href="#scavenger" class="dot dot10"><span><p>Scavengers</p></span></a>
+       <a href="#people" class="dot dot13"><span><p>People</p></span></a>
+       <a href="#explore" class="dot dot16"><span><p>Explore</p></span></a>
+       <a href="#give" class="dot dot17"><span><p>Give</p></span></a>
        <span class="dash dash41"></span>
        <span class="dash dash42"></span>
        <span class="dash dash51"></span>

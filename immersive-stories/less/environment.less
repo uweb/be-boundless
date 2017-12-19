@@ -37,6 +37,16 @@
     z-index: 1;
 }
 
+.lity-active,
+.lity-active body {
+    overflow: hidden;
+}
+
+.lity-iframe-container {
+    overflow: hidden;
+    padding-top: 100%;
+}
+
 section:not(.active):not(.fixed-section):not(.scrollit){
     z-index: 0;
 }
@@ -890,7 +900,7 @@ section.transparent-section {
 }
 
 div.background.photos {
-    padding: 10vh 10vw 30vw;
+    padding: 10vh 10vw 30vh;
     .container {
         //max-width: 1200px; 
         width: auto;
@@ -1133,13 +1143,13 @@ div.background.photos {
                         background-image: url("@{enviro}/RANCH_3_MOBILE.jpg");
                     }
                     &:nth-of-type(3) {
-                        background-image: url("@{enviro}/PEOP-4_MOBILE.jpg");
+                        background-image: url("@{enviro}/PEOP-6_MOBILE.jpg");
                     }
                     &:nth-of-type(4) {
                         background-image: url("@{enviro}/PEOP-5_MOBILE.jpg");
                     }
                     &:nth-of-type(5) {
-                        background-image: url("@{enviro}/PEOP-6_MOBILE.jpg");
+                        background-image: url("@{enviro}/PEOP-4_MOBILE.jpg");
                     }
                 }
             }
@@ -1319,7 +1329,8 @@ section.fixed-section div.background .intro-body.move-higher {
                 width: 100%;
                 line-height: 1.0;
                 color: #FFFFFF;
-                margin-bottom: -10px;
+                margin-bottom: -5px;
+                .translate(0, 50%);
             }
         }
     }
@@ -2437,102 +2448,140 @@ div.fp-controlArrow {
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 30px;
+        height: 60px;
         background: @darkgold;
         z-index: 2;
         p {
             color: #FFFFFF;
             text-transform: uppercase;
-            font-size: 14px;
-            margin-top: 3px;
+            font-size: 23px;
+            font-weight: 900;
+            margin-top: 10px;
             width: 10%;
             text-align: center;
         }
         div.black {
             position: absolute;
-            bottom: 3px;
+            bottom: 5px;
             right: -1%;
             width: 91%;
-            height: 24px;
-            background: #000000;
+            height: 50px;
+            background: #FFFFFF;
             .skew(-15deg, 0);
             div.empty-line {
                 position: absolute;
-                bottom: 11px;
+                bottom: 23px;
                 right: 5%;
-                height: 2px;
+                height: 4px;
                 width: 85%;
-                background: @darkgray;
+                background: @ultralightgold;
+                //opacity: 0.6;
                 overflow: visible;
                 .skew(15deg, 0);
                 #full-line {
                     position: absolute;
                     bottom: 0px;
                     left: 0;
-                    height: 2px;
+                    height: 4px;
                     width: 0%;
-                    background: #FFFFFF;
+                    background: @purple;
                     .transition(all 1s ease-in-out);
                 }
                 a.dot {
                     position: absolute;
-                    bottom: -4px;
+                    // bottom: -5px;
                     left: -5px;
-                    height: 10px;
+                    // height: 14px;
                     width: 0px;
-                    background: #000000;
-                    border: solid 1px transparent;
-                    border-radius: 12px;
+                    background: #EEE; //@gray;
+                    //border: solid 1px transparent;
+                    //border-radius: 12px;
                     overflow: visible;
                     z-index: 1;
+                    //width: 12.5%;
+                    height: 50px;
+                    bottom: -23px;
+                    margin-left: 7px;
+                    // opacity: 0;
                     .transition(all .5s ease-in-out);
                     span {
                         position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        height: 10px;
-                        width: 10px;
-                        background: @gray;
+                        bottom: 18px;
+                        left: -7px;
+                        height: 14px;
+                        width: 14px;
+                        background: @darkgold;
                         border-radius: 50%;
                         overflow: hidden;
-                        .transition(all .5s ease-in-out);
+                        .transition(background .5s ease-in-out);
                         p {
-                            margin: 2px 0 0 30px;
-                            font-size: 12px;
+                            //margin: 2px 0 0 30px;
+                            margin: -10px 0 0 30px;
+                            font-size: 20px;
+                            color: @darkgold;
                         }
+                    }
+                    &.active span {
+                        //border: 4px solid white;
+                        background: @purple;
+                        // height: 14px;
+                        // width: 14px;
+                        // bottom: 0px;
+                        // left: 0px; 
                     }
                     &:hover {
+                        //opacity: 1;
                         width: 12.5%;
-                        height: 24px;
-                        bottom: -11px;
-                        border: solid 1px @gray;
+                        // // height: 24px;
+                        // // bottom: -11px;
+                        // //border: solid 1px @gray;
+                        // height: 50px;
+                        // bottom: -23px;
+                        // margin-left: 7px;
                         span {
+                            //height: 22px;
+                            //width: 22px;
+                            background: @purple; //or @darkgray
+                            overflow: visible;
+                            // bottom: 18px;
+                            // left: -7px;
+                            border: 4px solid white;
                             height: 22px;
                             width: 22px;
-                            background: #000000; //or @darkgold
-                            overflow: visible;
+                            bottom: 14px;
+                            left: -11px;
                         }
-
+                        + a span {
+                            border: 4px solid white;
+                            height: 22px;
+                            width: 22px;
+                            bottom: 14px;
+                            left: -11px;
+                        }
+                        /*********************************************
+                        *****FORMAT FOR LESS THAN 1200px (>768px)*****
+                        *********************************************/
                     }
                 }
-                a.dot1 {}
-                a.dot2 { left: calc(~"12.5% - 5px"); }
-                a.dot3 { left: calc(~"25% - 5px");   }
-                a.dot4 { left: calc(~"37.5% - 5px"); }
-                a.dot5 { left: calc(~"50% - 5px");   }
-                a.dot6 { left: calc(~"62.5% - 5px"); }
-                a.dot7 { left: calc(~"75% - 5px");   }
-                a.dot8 { left: calc(~"87.5% - 5px"); }
-                a.dot9 { left: calc(~"100% - 5px");  }
+                a.dot1  {}
+                a.dot2  { left: calc(~"12.5% - 5px"); }
+                a.dot3  { left: calc(~"25% - 5px");   }
+                a.dot4  { left: calc(~"37.5% - 5px"); }
+                a.dot7  { left: calc(~"50% - 5px");   }
+                a.dot10 { left: calc(~"62.5% - 5px"); }
+                a.dot13 { left: calc(~"75% - 5px");   }
+                a.dot16 { left: calc(~"87.5% - 5px"); }
+                a.dot17 { left: calc(~"100% - 5px");  }
                 span.dash {
-                    position: absolute;
-                    bottom: 0;
-                    //left: -5px;
-                    height: 7px;
-                    width: 2px;
-                    border-radius: 10%;
-                    background: @darkgold;
-                    overflow: hidden;
+                    // position: absolute;
+                    // bottom: -5px;
+                    // //left: -5px;
+                    // height: 14px;
+                    // width: 2px;
+                    // border-radius: 10%;
+                    // background: @darkgold;
+                    // overflow: hidden;
+                    display: none;
                 }
                 span.dash41 { left: 41.65%; }
                 span.dash42 { left: 45.8%;  }
