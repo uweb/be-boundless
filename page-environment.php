@@ -480,11 +480,11 @@
               <!-- 8.3 -->
               <div class="prey float-right snapchat-vid">
                 <div class="snapchat draw-line-link">
-                  <video autoplay data-autoplay loop muted playsinline class="media" data-object-fit data-lity data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/PREY_SNAP.mp4' ?>">
-                      <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/PREY_SNAP.mp4' ?>" type="video/mp4">
+                  <video autoplay data-autoplay loop muted playsinline class="media" data-object-fit data-lity data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/PREY_SNAP_V.3.mp4' ?>">
+                      <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/PREY_SNAP_V.3.mp4' ?>" type="video/mp4">
                   </video>
                 </div>
-                <p>Student’s-eye view: Captured on Snapchat glasses at a picnic. A curious — and extremely intelligent — raven lingers nearby.</p>
+                <p>Student’s-eye view: a morning drive; a talk about what animals to look for; exploring the surroundings for elk, bison, wolves and more.</p>
               </div> 
               <!-- 8.2 -->
               <div class="mobile-slide prey">
@@ -832,30 +832,30 @@
                   <div class="row centered">
                     <blockquote class="col-md-8 col-xs-12 quote">
                         <span>&ldquo;</span>
-                        We use a lot of electric fence to keep our animals tightly bunched together, so they relearn that herd instinct to keep their young close in the middle &mdash; like wild herds of buffalo do.
+                        Here at Yellowstone, we try to do a census of the bison population every year.
                         <span>&rdquo;</span>
                     </blockquote>
                   </div>
                   <div class="row centered atts-pic">
-                    <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/MALOU_QUOTE_PORTRAIT.png' ?>" alt="Mallow Anderson-Ramirez">
+                    <img class="circle quote" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PORTRAIT_QUOTE_RICK_WALLEN.png' ?>" alt="Rick Wallen">
                     <p class="attribute no-top no-bottom">
-                      Malou Anderson-Ramirez, Rancher
+                      Rick Wallen, Bison Biologist, Yellowstone National Park
                     </p>
                   </div>
-                    <div class="audio desktop"><p class="length">0:37  <span>/ play lesson</span></p>
+                    <div class="audio desktop"><p class="length">0:22  <span>/ play lesson</span></p>
                       <audio controls class="player">
-                        <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/Lecture_HUMAN.mp3' ?>" type="audio/mpeg">
+                        <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/RACHERS_LECTURE_V1.mp3' ?>" type="audio/mpeg">
                         <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
                         Your browser does not support HTML5 audio.
                       </audio>
                       
                       <p class="audio-buttons">
-                        <button class="audio-ctrl audio-play" tabindex="0">0:37 / PLAY LESSON</button>  
+                        <button class="audio-ctrl audio-play" tabindex="0">0:22 / PLAY LESSON</button>  
                         <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
                         <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                       </p>
                       <div class="visually-hidden audio-transcript" tabindex="0">
-                        <p class="tran-lit">We use a lot of electric fence to keep them bunched together so that they relearn that herd instinct to keep their young close and in the middle. The animals that get killed go off, way off on their own. Wolves do not want to get killed. Wolves are very very smart hunters. They would much rather go kill rabbit or a fawn and so when a wolf or a pack of wolves comes up on 300 head of cattle that are all staring them down their not going to get themselves killed over one meal.</p>
+                        <p class="tran-lit">Your most effective way of conserving wild bison is to take political science classes, take communication classes, get really good at giving speeches and writing speeches, and writing papers. Writing opinion columns for your local newspapers and all the magazines and organizations that you belong to.</p>
                         <span class="close-transcript"></span>
                       </div>
                     </div>
@@ -937,9 +937,9 @@
        <a href="#predator" class="dot dot4"><span><p>Predators</p></span></a>
        <a href="#prey" class="dot dot7"><span><p>Prey</p></span></a>
        <a href="#scavenger" class="dot dot10"><span><p>Scavengers</p></span></a>
-       <a href="#people" class="dot dot13"><span><p>People</p></span></a>
+       <a href="#people" class="dot dot13"><span><p>Staff</p></span></a>
        <a href="#explore" class="dot dot16"><span><p>Explore</p></span></a>
-       <a href="#give" class="dot dot17"><span><p>Give</p></span></a>
+       <a href="#give" class="dot dot17"><span></span><p>Give</p><span class="coverup"></span></a>
        <span class="dash dash41"></span>
        <span class="dash dash42"></span>
        <span class="dash dash51"></span>
