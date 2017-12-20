@@ -164,7 +164,7 @@ section.slide1 div.background {
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.55);
         &.intro-copy { width: 60%; }
     }
-    h1 {
+    h1, h2 {
         text-transform: uppercase;
         color: white;
         line-height: 0.85;
@@ -192,6 +192,14 @@ section.slide1 div.background {
                 text-transform: uppercase;
             }
         }
+        .play-button {
+            position: relative;
+            display: flex;
+            margin-top: 30px;
+            a {
+                margin: 0 auto;
+            }
+        }
     }
     #intro-text,
     #intro-text-yellow {
@@ -201,7 +209,7 @@ section.slide1 div.background {
         justify-content: center;
         flex-wrap: wrap;
         padding-top: 10vw;
-        h1 {
+        h1, h2{
             width: 100%;
         }
         p {
@@ -251,7 +259,7 @@ section.slide1 div.background {
             margin: 0 0 14.5px 0;
         }
         &.mobile {
-            display: none;
+            display: block;
             position: relative;
             margin-top: 20px;
             left: 0;
@@ -287,7 +295,7 @@ section.slide1 div.background {
             line-height: 1.4;
             font-size: 14px;
         }
-        h1 {
+        h1, h2 {
             font-size: 10vw;
         }
         #intro-text {
@@ -352,7 +360,7 @@ section.slide1 div.background {
             margin-top: 0;
             .translate(0,-50%);
         }
-        h1 {
+        h1, h2 {
             font-size: 7vw;
         }
         p {
@@ -379,7 +387,7 @@ section.slide1 div.background {
     }     //  (min-width: 600px) and (max-width: 899px) 
     @media @tablet-landscape-up { 
 
-        h1 {
+        h1, h2 {
             font-size: 7vw;
         }
         hr {
@@ -568,7 +576,7 @@ section.fixed-section div.background {
             font-size: 1.1em;
         }
     }
-    h1 {
+    h1, h2 {
         text-transform: uppercase;
         color: white;
         line-height: 0.85;
@@ -625,7 +633,7 @@ section.fixed-section div.background {
         justify-content: center;
         flex-wrap: wrap;
         padding-top: 10vw;
-        h1 {
+        h1, h2 {
             width: 100%;
         }
         div:not(.audio) {
@@ -702,7 +710,7 @@ section.fixed-section div.background {
             line-height: 1.4;
             font-size: 14px;
         }
-        h1 {
+        h1, h2 {
             font-size: 10vw;
         }
         .text-box {
@@ -767,7 +775,7 @@ section.fixed-section div.background {
             margin-top: 0;
             .translate(0,-50%);
         }
-        h1 {
+        h1, h2 {
             font-size: 7vw;
         }
         p {
@@ -792,7 +800,7 @@ section.fixed-section div.background {
     }     //  (min-width: 600px) and (max-width: 899px) 
     @media @tablet-landscape-up { 
 
-        h1 {
+        h1, h2 {
             font-size: 7vw;
         }
         hr {
@@ -855,7 +863,7 @@ section.fixed-section div.background {
     &:before {
         content: none;
     }
-    h1 {
+    h1, h2 {
         line-height: 0.85;
         font-size: 5.2vw;
         span {
@@ -869,19 +877,19 @@ section.fixed-section div.background {
         padding-top: 0;
     }
     @media @phone-only { 
-        h1 {
+        h1, h2 {
             //font-size: 10vw;
             span {}
         }
     }
     @media @tablet-portait-only { 
-        h1 {
+        h1, h2 {
             //font-size: 7vw;
             span {}
         }
     } 
     @media @tablet-landscape-up { 
-        h1 {
+        h1, h2 {
             //font-size: 7vw;
             span {}
         }
@@ -941,7 +949,7 @@ div.background.photos {
             }
 
             //.atts-pic
-            display: block;
+            display: inline-block;
             img {
                 margin: 0;
             }
@@ -1278,7 +1286,7 @@ section.fixed-section div.background .intro-body.move-higher {
     &:before {
         content: none;
     }
-    h1 {
+    h1, h2 {
         line-height: 0.85;
         font-size: 5.2vw;
         span {
@@ -1335,19 +1343,19 @@ section.fixed-section div.background .intro-body.move-higher {
         }
     }
     @media @phone-only { 
-        h1 {
+        h1, h2 {
             //font-size: 10vw;
             span {}
         }
     }
     @media @tablet-portait-only { 
-        h1 {
+        h1, h2 {
             //font-size: 7vw;
             span {}
         }
     } 
     @media @tablet-landscape-up { 
-        h1 {
+        h1, h2 {
             //font-size: 7vw;
             span {}
         }
@@ -1362,7 +1370,7 @@ section.fixed-section div.background .intro-body.move-higher {
     &:after {
         background: rgba(0,0,0,0.6);
     }
-    h1 {
+    h1, h2 {
         //line-height: 0.85;
         font-size: 5.2vw;
         span {
@@ -1575,8 +1583,8 @@ section.fixed-section div.background .intro-body.move-higher {
         display: block;
         position: absolute;
         border: none;
-        top: 25px;
-        left: 15px;
+        top: 0px;
+        left: 0;
         z-index: 9999;
         width: 120px;
         height: 120px;
@@ -1588,8 +1596,8 @@ section.fixed-section div.background .intro-body.move-higher {
         background: none;
         .transition(all .5s ease-in);
         svg {
-            height: 120px;
-            width: 120px;
+            height: 100px;
+            width: 100px;
         }
         &.active {
             visibility: visible;
@@ -1597,19 +1605,19 @@ section.fixed-section div.background .intro-body.move-higher {
         }
     }
     @media @phone-only { 
-        h1 {
+        h1, h2 {
             //font-size: 10vw;
             span {}
         }
     }
     @media @tablet-portait-only { 
-        h1 {
+        h1, h2 {
             //font-size: 7vw;
             span {}
         }
     } 
     @media @tablet-landscape-up { 
-        h1 {
+        h1, h2 {
             //font-size: 7vw;
             span {}
         }
@@ -1656,7 +1664,7 @@ div.background {
         width: 100%;
         .translate(0,-50%);
     }
-    h1 {
+    h1, h2 {
         line-height: 0.85;
         font-size: 5.2vw;
         text-transform: uppercase;
@@ -1681,19 +1689,19 @@ div.background {
         flex-wrap: wrap;
     }
     @media @phone-only { 
-        h1 {
+        h1, h2 {
             //font-size: 10vw;
             span {}
         }
     }
     @media @tablet-portait-only { 
-        h1 {
+        h1, h2 {
             //font-size: 7vw;
             span {}
         }
     } 
     @media @tablet-landscape-up { 
-        h1 {
+        h1, h2 {
             //font-size: 7vw;
             span {}
         }
@@ -1752,7 +1760,8 @@ div.background {
 section.icon-section {
     z-index: 2;
     div.background {
-        .intro-body h1 {
+        .intro-body h1,
+        .intro-body h2 {
             margin: 0;
         }
         div.icon {
@@ -2040,7 +2049,7 @@ img.circle.quote {
             }
         }
         div.play-button {
-            display: none;
+            display: block;
             &.mobile {
                 display: block;
             }
@@ -2055,13 +2064,13 @@ img.circle.quote {
         #intro-text-yellow .row.centered {
             margin-bottom: 0;
         }
-        h1 {
+        h1, h2 {
             margin-top: 0;
         }
         .intro-body.less-margins {
             top: 47%;
             #intro-text-yellow div.row.centered {
-                h1 {
+                h1, h2 {
                     //margin-bottom: 10px;
                 }
                 p {
@@ -2077,7 +2086,8 @@ img.circle.quote {
         }
     }
 
-    #intro-yellow div.background h1 {
+    #intro-yellow div.background h1 ,
+    #intro-yellow div.background h2 {
         font-size: 6.4vw;
         letter-spacing: 8px;
         span {
@@ -2086,7 +2096,8 @@ img.circle.quote {
         }
     }
 
-    #students div.background h1 {
+    #students div.background h1 ,
+    #students div.background h2 {
         font-size: 7.5vw;
         letter-spacing: 8px;
         span {
@@ -2210,7 +2221,7 @@ img.circle.quote {
             background-position: 70% 0%;
             .background-size(cover);
         }
-        h1 {
+        h1, h2 {
             font-size: 7.2vw;
             letter-spacing: 5px;
             margin: 15px 0 0;
@@ -2262,7 +2273,7 @@ img.circle.quote {
     }
 
     #backto div.background {
-        h1 {
+        h1, h2 {
             letter-spacing: 7px;
             font-size: 7.2vw;
             line-height: 1.1;
@@ -2283,7 +2294,7 @@ img.circle.quote {
     }
 
     #giving div.background {
-        h1 {
+        h1, h2 {
             letter-spacing: 1px;
             font-size: 6.2vw;
             line-height: 1.1;
@@ -2325,7 +2336,7 @@ img.circle.quote {
             top: 45%;
             div.text-box div.row.centered,
             div.text-box#intro-text-yellow div.row.centered {
-                h1 {
+                h1, h2 {
                     //margin-bottom: 10px;
                 }
                 p {
@@ -2668,6 +2679,118 @@ div.fp-controlArrow {
 /*******************
 *****END MOBILE*****
 *******************/
+@media(max-height:750px) {
+    #intro-vid div.background {
+        //sections to top
+        //move watch button
+        h1, h2 {
+            font-size: 6vw;
+        }
+        .intro-body {
+            position: absolute;
+            top: 100px;
+            transform: none;
+            #intro-text {
+                padding-top: 0;
+                p {
+                    margin: 10px 0;
+                    &:before {
+                        top: -25px;                        
+                    }
+                    &:after {
+                        bottom: -25px;
+                    }
+                }
+            }
+            .play-button {
+                min-height: 1px;
+                padding-left: 15px;
+                padding-right: 15px;
+                svg {
+                    float: left;
+                    height: 30px;
+                    width: 30px;
+                }
+                p {
+                    display: inline-block;
+                    float: left;
+                    margin: 2px 0 0 10px;
+                }
+            }
+        }
+    }
+    #intro-yellow div.background {
+        //sections to top
+        //move watch button
+        h2 {
+            font-size: 5vw;
+            span {
+                font-size: 8vw;
+            }
+        }
+        .intro-body {
+            position: absolute;
+            top: 0px;
+            transform: none;
+            #intro-text-yellow {
+                padding-top: 0;
+                p {
+                    margin: 10px 0;
+                    &:before {
+                        top: -25px;                        
+                    }
+                    &:after {
+                        bottom: -25px;
+                    }
+                    // br:nth-of-type(2) {
+                    //     display: none;
+                    // }
+                    span {
+                        display: none;
+                    }
+                }
+                .section-links {
+                    height: 110px;
+                }
+            }
+        }
+    }
+    section.section div.background {
+        h2 {
+            margin: 10px 0;
+            font-size: 5vw;
+            span {
+                font-size: 8vw;
+            }
+        }
+        .intro-body,
+        .intro-body.move-higher {
+            position: absolute;
+            top: 10px;
+            transform: none;
+            .text-box {
+                margin-top: 0;
+                padding-top: 0;
+                p {
+                    margin: 10px 0;
+                    &:before {
+                        top: -25px;                        
+                    }
+                    &:after {
+                        bottom: -25px;
+                    }
+                }
+            }
+        }
+    }
+    #students div.background .text-box {
+        margin-top: 0;
+    }
+    button#close-modal svg {
+        height: 70px;
+        width: 70px;
+    }
+}
 
 span.close-transcript {
     position: absolute;

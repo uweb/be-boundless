@@ -38,7 +38,7 @@
                   </p>
               </div>         
           </div>
-          <div class="play-button mobile" >
+          <!-- <div class="play-button mobile" >
               <a data-lity href="https://www.youtube.com/embed/bdxE1rqezB8?autoplay=1&rel=0&showinfo=0">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="137.909px" height="137.131px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131"
@@ -48,19 +48,19 @@
               </svg>
                 <p>Watch video</p>
               </a>
-          </div> 
+          </div> --> 
+          <div class="play-button" >
+            <a data-lity href="https://www.youtube.com/embed/bdxE1rqezB8?autoplay=1&rel=0&showinfo=0">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               width="137.909px" height="137.131px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131"
+               xml:space="preserve">
+            <ellipse fill="none" stroke="#FFFFFF" stroke-width="7.8281" stroke-miterlimit="10" cx="68.399" cy="68.344" rx="57.675" ry="59.214"/>
+            <polygon fill="#FFFFFF" points="48.611,37.617 103.268,68.345 48.611,99.072 "/>
+            </svg>
+              <p>Play full video</p>
+            </a>
+        </div> 
       </div>
-      <div class="play-button" >
-          <a data-lity href="https://www.youtube.com/embed/bdxE1rqezB8?autoplay=1&rel=0&showinfo=0">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             width="137.909px" height="137.131px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131"
-             xml:space="preserve">
-          <ellipse fill="none" stroke="#FFFFFF" stroke-width="7.8281" stroke-miterlimit="10" cx="68.399" cy="68.344" rx="57.675" ry="59.214"/>
-          <polygon fill="#FFFFFF" points="48.611,37.617 103.268,68.345 48.611,99.072 "/>
-          </svg>
-            <p>Play full video</p>
-          </a>
-      </div> 
       <span class="gold-tilt gold-tilt-2"></span>
       <section class="scrollit read-more click-section">
           <p>Click on any section to jump ahead</p>
@@ -86,7 +86,7 @@
       <div class="intro-body less-margins">
          <div class="row">
               <div class="text-box" id='intro-text-yellow'>
-                  <h1 class=""><span>Experience</span> Yellowstone</h1>
+                  <h2 class=""><span>Experience</span> Yellowstone</h2>
                   <div class="row centered">
                     <p class="col-md-6 col-xs-12 mobile-shorten">
                         Yellowstone hosts a complex ecosystem of predators, prey, scavengers and people — those who work with animals inside the park, as well as ranchers and others operating just outside its borders.
@@ -122,7 +122,7 @@
         <div class="intro-body">
            <div class="row">
                 <div class="text-box">
-                    <h1 class=""><span>Meet the</span> students</h1>
+                    <h2 class=""><span>Meet the</span> students</h2>
                     <div class="row centered">
                       <p class="col-md-6 col-xs-10 no-top no-bottom">
                           Who went to Yellowstone — and why? See what a handful of students had to say about their experience in the park.
@@ -311,7 +311,7 @@
          <div class="row">
               <div class="text-box">
                   <div class="icon"></div>
-                  <h1 class="">Predators</h1>
+                  <h2 class="">Predators</h2>
                   <span class="col-md-4 col-xs-10"><span class="squiggle"></span></span>
               </div>         
           </div>
@@ -452,7 +452,7 @@
          <div class="row">
               <div class="text-box">
                   <div class="icon prey"></div>
-                  <h1 class="">Prey</h1>
+                  <h2 class="">Prey</h2>
                   <span class="col-md-4 col-xs-10"><span class="squiggle"></span></span>
               </div>         
           </div>
@@ -598,7 +598,7 @@
          <div class="row">
               <div class="text-box">
                   <div class="icon scav"></div>
-                  <h1 class="">Scavengers</h1>
+                  <h2 class="">Scavengers</h2>
                   <span class="col-md-4 col-xs-10"><span class="squiggle"></span></span>
               </div>         
           </div>
@@ -744,7 +744,7 @@
          <div class="row">
               <div class="text-box">
                   <div class="icon people"></div>
-                  <h1 class="">Staff and neighbors</h1>
+                  <h2 class="">Staff and neighbors</h2>
                   <span class="col-md-4 col-xs-10"><span class="squiggle"></span></span>
               </div>         
           </div>
@@ -878,7 +878,7 @@
       <div class="intro-body less-margins">
          <div class="row">
               <div class="text-box" id=''>
-                  <h1 class="">Back to Washington</h1>
+                  <h2 class="">Back to Washington</h2>
                   <div class="row centered">
                     <p class="col-md-8 col-xs-12">
                         Yellowstone National Park has long been a bellwether for scientists to study how ecosystems work. Learning about both wildlife and humans there has given students an experience they’ll bring back to their classrooms in Washington — and their careers in the wide landscape beyond.
@@ -909,7 +909,7 @@
       <div class="intro-body move-higher">
          <div class="row">
               <div class="text-box" id=''>
-                  <h1 class="">What you care about </br>can change the world</h1>
+                  <h2 class="">What you care about </br>can change the world</h2>
                   <div class="row centered add-spacing">
                     <p class="col-md-7 col-xs-12 no-top no-bottom add-bottom">
                         The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. When you support immersive learning experiences at the College of the Environment, you can make it possible for students to get hands-on experiences that propel them toward the careers of their dreams.
@@ -917,7 +917,7 @@
                   </div>
                   <div class="col-xs-12">
                     <div id="immersive-give-iframe"></div>
-                    <div class="boundless-button sm dark give"><span><a data-fund="CELEND" href="#" data-lity data-lity-target="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&frame_buster=flase&source_typ=3&appeal=17XIS&source=CELEND">Give now</a></span></div>
+                    <div class="boundless-button sm dark give"><span><a data-fund="CELEND" href="#" data-lity data-lity-target="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&frame_buster=false&source_typ=3&appeal=17XIS&source=CELEND">Give now</a></span></div>
                     <!-- <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="CELEND" href="#" data-lity data-lity-target="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&frame_buster=false&source_typ=3&appeal=17XIS&source=CELEND">Give now</a></span></div> -->
                   </div>
               </div>         
