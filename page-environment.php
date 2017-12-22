@@ -917,7 +917,7 @@
                   </div>
                   <div class="col-xs-12">
                     <div id="immersive-give-iframe"></div>
-                    <div class="boundless-button sm dark give"><span><a data-fund="CELEND" href="#" data-lity data-lity-target="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&frame_buster=false&source_typ=3&appeal=17XIS&source=CELEND">Give now</a></span></div>
+                    <div class="boundless-button sm dark give"><span><a id="give-now-button" data-fund="CELEND" href="#" data-lity data-lity-target="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&frame_buster=false&source_typ=3&appeal=17XIS&source=CELEND">Give now</a></span></div>
                     <!-- <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="CELEND" href="#" data-lity data-lity-target="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&frame_buster=false&source_typ=3&appeal=17XIS&source=CELEND">Give now</a></span></div> -->
                   </div>
               </div>         

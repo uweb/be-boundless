@@ -21,6 +21,8 @@
 //     prevWidth = currentWidth;
 // });
 
+
+
 $(window).resize(function() {
     setTimeout(function(){ 
       if($(window).height() != $('section.active').first().outerHeight()){
@@ -217,6 +219,7 @@ $('#immersive-body').fullpage({
 /*****EXTRAS*****/
 /**DESKTOP ONLY**/
 /****************/
+
 
 
 // Video pause
@@ -524,10 +527,16 @@ $(document).on('lity:ready', function(event, lightbox) {
           '  <line fill="none" stroke="#A7A9AC" stroke-width="2" stroke-miterlimit="10" x1="31.782" y1="8.449" x2="9.616" y2="30.614"></line>' +
           '</svg>'); 
     //$(event.currentTarget.activeElement).find('.lity-close').blur();
-    lightbox.opener().blur();
+    //lightbox.opener().blur();
     //   document.activeElement = null;
     // })
+    
+    
 });
 
-$(document).on('lity:close', function() { document.activeElement = null; });
+  $(document).on('lity:close', function() { 
+      $('#give-now-button').blur();
+  });
+
+
 });
