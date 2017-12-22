@@ -373,12 +373,12 @@
                <!--  </div> -->
               </div>
         <!-- </div> --> 
-        <!-- <section class="scrollit read-more">
+        <section class="scrollit read-more">
           <p>Scroll to continue</p>  
           <div class="mouse">
             <div class="scroll"></div>
           </div> 
-      </section> -->
+      </section>
       </div>     
     </section>
 
@@ -519,12 +519,12 @@
               </div>
          <!--  </div> -->
         <!-- </div> -->
-        <!-- <section class="scrollit read-more">
+        <section class="scrollit read-more">
           <p>Scroll to continue</p>  
           <div class="mouse">
             <div class="scroll"></div>
           </div> 
-      </section> -->
+      </section>
       </div>     
     </section>
 
@@ -665,12 +665,12 @@
               </div>
          <!--  </div> -->
         <!-- </div> -->
-        <!-- <section class="scrollit read-more">
+        <section class="scrollit read-more">
           <p>Scroll to continue</p>  
           <div class="mouse">
             <div class="scroll"></div>
           </div> 
-      </section> -->
+      </section>
       </div>     
     </section>
 
@@ -807,12 +807,12 @@
               </div>
          <!--  </div> -->
         <!-- </div> -->
-        <!-- <section class="scrollit read-more">
+        <section class="scrollit read-more">
           <p>Scroll to continue</p>  
           <div class="mouse">
             <div class="scroll"></div>
           </div> 
-      </section> -->
+      </section>
       </div>     
     </section>
 

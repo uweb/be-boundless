@@ -1,5 +1,34 @@
  $(function(){
 
+// var prevHeight = 0;
+// var prevWidth = 0;
+
+// $(document).ready(function() {
+//     prevHeight = $(window).height();
+//     prevWidth = $(window).width();
+// });
+
+// $(window).resize(function() {
+//     var currentHeight = $(window).height();
+//     var currentWidth = $(window).width();
+
+//     //do difference stuff
+//     if(currentHeight > prevHeight){
+//       location.reload();
+//     }
+
+//     prevHeight = currentHeight;
+//     prevWidth = currentWidth;
+// });
+
+$(window).resize(function() {
+    setTimeout(function(){ 
+      if($(window).height() != $('section.active').first().outerHeight()){
+      location.reload();
+    }
+    }, 1000);
+});
+
   var body = document.getElementsByTagName('body')[0];
   //var controllerEnviro = new ScrollMagic.Controller();
   var $windowHeight = $(window).height();
@@ -118,11 +147,24 @@ $('#immersive-body').fullpage({
       //switching in/out of first slide
       if( index == 1 ){ 
         $('#immersive').toggleClass("hide-menu");
+        $(".cv2-header-white").slideUp("slow");
+        //$(".cv2-header-white").fadeOut("slow");
+        //console.log(1);
+        // setTimeout(function() {
+        //     $('.cv2-header-white').css('display', 'none');
+        // }, 500);
         // $('#cv2-header .cv2-header-white').addClass("hidemenu");
         // $('#cv2-header-white-collapse').addClass("showicon");
       }
       if( nextIndex == 1 ){ 
         $('#immersive').toggleClass("hide-menu");
+        $(".cv2-header-white").slideDown("slow");
+        //$(".cv2-header-white").fadeIn("slow");
+        //$(".cv2-header-white").slideToggle("slow");
+        //console.log(2);
+        // setTimeout(function() {
+        //     $('.cv2-header-white').css('display', 'block');
+        // }, 500);
         // $('#cv2-header .cv2-header-white').removeClass("hidemenu");
         // $('#cv2-header-white-collapse').removeClass("showicon");
       }
@@ -151,6 +193,12 @@ $('#immersive-body').fullpage({
     afterLoad: function(anchorLink, index){
       if( ( window.location.hash.indexOf("home") == -1 ) && (window.location.hash) ) {
         $('#immersive').addClass("hide-menu");
+        $(".cv2-header-white").slideUp("slow");
+        //$(".cv2-header-white").slideToggle("slow");
+        //console.log(3);
+        // setTimeout(function() {
+        //     $('.cv2-header-white').css('display', 'none');
+        // }, 500);
         // $('#cv2-header .cv2-header-white').addClass("hidemenu");
         // $('#cv2-header-white-collapse').addClass("showicon");
       }
