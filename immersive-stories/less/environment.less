@@ -1004,9 +1004,14 @@ div.background.photos {
         @media(min-width:769px) {
             min-width: 450px;
             width: 45%;
-            margin-bottom: 100px;
+            margin-bottom: 200px;
+            //opacity: 0;
             position: relative;
             z-index: 1;
+            //.transition(opacity 0.5s ease-in-out);
+            // &.animate {
+            //     opacity: 1;
+            // }
             p {
                 margin: 10px 0 30px;
             }
@@ -2870,12 +2875,14 @@ span.close-transcript {
 .cv2-header-purple {
     .transition(height .5s ease-in-out);
 }
-.cv2-header-white {
-    display: block;
-    height: 81px;
-    position: relative;
-    overflow: hidden;
-    //.transition(all .5s ease-in-out);
+@media(min-width:769px) {
+    .cv2-header-white {
+        display: block;
+        height: 81px;
+        position: relative;
+        overflow: hidden;
+        .transition(all .5s ease-in-out);
+    }
 }
 #immersive.hide-menu {
     .cv2-header{

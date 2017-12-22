@@ -218,6 +218,7 @@ $('#immersive-body').fullpage({
 /**DESKTOP ONLY**/
 /****************/
 
+
 // Video pause
   $( "#pause-yellow" ).click(function() {     
     var vid =  $( "#intro-yellow video" )
