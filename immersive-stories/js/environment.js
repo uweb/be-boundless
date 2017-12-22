@@ -62,7 +62,7 @@ $('#immersive-body').fullpage({
 
     //Scrolling
     // css3: true,
-    scrollingSpeed: 1000,
+    scrollingSpeed: 1200,
     // autoScrolling: true,
     // fitToSection: true,
     // fitToSectionDelay: 1000,
@@ -468,8 +468,17 @@ $(document).on('lity:ready', function(event, lightbox) {
           $(event.currentTarget.activeElement).find('.lity-content img').attr('src', $nextImage);
           $current = $next;
         });
-    } 
+    }
+    $(event.currentTarget.activeElement).find('.lity-close').html('' +
+          '<svg aria-hidden="true" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34.147px" height="37.833px" viewBox="0 0 34.147 37.833" enable-background="new 0 0 34.147 37.833" xml:space="preserve">' +
+          '  <line fill="none" stroke="#A7A9AC" stroke-width="2" stroke-miterlimit="10" x1="9.616" y1="8.449" x2="31.782" y2="30.614"></line>' +
+          '  <line fill="none" stroke="#A7A9AC" stroke-width="2" stroke-miterlimit="10" x1="31.782" y1="8.449" x2="9.616" y2="30.614"></line>' +
+          '</svg>'); 
+    //$(event.currentTarget.activeElement).find('.lity-close').blur();
+    lightbox.opener().blur();
+    //   document.activeElement = null;
+    // })
 });
 
-
+$(document).on('lity:close', function() { document.activeElement = null; });
 });

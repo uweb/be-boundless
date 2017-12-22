@@ -842,20 +842,20 @@
                       Rick Wallen, Bison Biologist, Yellowstone National Park
                     </p>
                   </div>
-                    <div class="audio desktop"><p class="length">0:22  <span>/ play lesson</span></p>
+                    <div class="audio desktop"><p class="length">0:36  <span>/ play lesson</span></p>
                       <audio controls class="player">
-                        <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/RACHERS_LECTURE_V1.mp3' ?>" type="audio/mpeg">
+                        <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/LECTURE_RICK_WALLEN.mp3' ?>" type="audio/mpeg">
                         <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
                         Your browser does not support HTML5 audio.
                       </audio>
                       
                       <p class="audio-buttons">
-                        <button class="audio-ctrl audio-play" tabindex="0">0:22 / PLAY LESSON</button>  
+                        <button class="audio-ctrl audio-play" tabindex="0">0:36 / PLAY LESSON</button>  
                         <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
                         <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                       </p>
                       <div class="visually-hidden audio-transcript" tabindex="0">
-                        <p class="tran-lit">Your most effective way of conserving wild bison is to take political science classes, take communication classes, get really good at giving speeches and writing speeches, and writing papers. Writing opinion columns for your local newspapers and all the magazines and organizations that you belong to.</p>
+                        <p class="tran-lit">Us humans in the United States do a census every 10 years of the population. Well here at Yellowstone we try and do a census of the bison population every year. So I will have my team for about two weeks go out in pairs, and split up, and classify every single group that we can find on the landscape. The way we do that is we put a couple people in the airplane and we fly around, and it helps us figure out the distribution of the animals. It helps us organize our daily expeditions to get out in the field and go find all of those groups.</p>
                         <span class="close-transcript"></span>
                       </div>
                     </div>
@@ -931,14 +931,14 @@
    <div class="black">
      <div class="empty-line">
        <span id="full-line"></span>
-       <a href="#home" class="dot dot1"><span><p>Intro</p></span></a>
-       <a href="#experience" class="dot dot2"><span><p>Experience</p></span></a>
-       <a href="#meet" class="dot dot3"><span><p>Students</p></span></a>
-       <a href="#predator" class="dot dot4"><span><p>Predators</p></span></a>
-       <a href="#prey" class="dot dot7"><span><p>Prey</p></span></a>
-       <a href="#scavenger" class="dot dot10"><span><p>Scavengers</p></span></a>
-       <a href="#people" class="dot dot13"><span><p>Staff</p></span></a>
-       <a href="#explore" class="dot dot16"><span><p>Explore</p></span></a>
+       <a href="#home" class="dot dot1"><span></span><p>Intro</p></a>
+       <a href="#experience" class="dot dot2"><span></span><p>Experience</p></a>
+       <a href="#meet" class="dot dot3"><span></span><p>Students</p></a>
+       <a href="#predator" class="dot dot4"><span></span><p>Predators</p></a>
+       <a href="#prey" class="dot dot7"><span></span><p>Prey</p></a>
+       <a href="#scavenger" class="dot dot10"><span></span><p>Scavengers</p></a>
+       <a href="#people" class="dot dot13"><span></span><p>Staff</p></a>
+       <a href="#explore" class="dot dot16"><span></span><p>Explore</p></a>
        <a href="#give" class="dot dot17"><span></span><p>Give</p><span class="coverup"></span></a>
        <span class="dash dash41"></span>
        <span class="dash dash42"></span>

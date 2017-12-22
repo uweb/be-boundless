@@ -47,6 +47,32 @@
     padding-top: 100%;
 }
 
+button.lity-close {
+// display: none;
+// min
+    // display: block;
+    // position: absolute;
+    // border: none;
+    top: 0px;
+    left: 0;
+    // z-index: 9999;
+    width: 120px;
+    height: 120px;
+    //background: url("@{img}/sprite.svg") no-repeat -207px -286px rgba(0,0,0,.2);
+    // opacity: 0;
+    // visibility: hidden;
+    // line-height: 0;
+    // tab-index: -9999px;
+    // color: transparent;
+    // background: none;
+    .transition(all .5s ease-in);
+    svg {
+        height: 100px;
+        width: 100px;
+        pointer-events: none;
+    }
+}
+
 section:not(.active):not(.fixed-section):not(.scrollit){
     z-index: 0;
 }
@@ -1311,7 +1337,7 @@ section.fixed-section div.background .intro-body.move-higher {
             background-repeat: no-repeat;
             .background-size(contain);
             &:nth-of-type(1) {
-                background-image: url("@{enviro}/STUDENT.svg");
+                background-image: url("@{enviro}/STUDENT_WHITE.svg");
             }
             &:nth-of-type(2) {
                 background-image: url("@{enviro}/PRED_OPENING.svg");
@@ -1578,6 +1604,7 @@ section.fixed-section div.background .intro-body.move-higher {
     }
     //close button
     button#close-modal {
+    //button.lity-close {
     // display: none;
     // min
         display: block;
@@ -2500,6 +2527,9 @@ div.fp-controlArrow {
                 }
                 a.dot {
                     position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     // bottom: -5px;
                     left: -5px;
                     // height: 14px;
@@ -2525,15 +2555,22 @@ div.fp-controlArrow {
                         border-radius: 50%;
                         overflow: hidden;
                         .transition(background .5s ease-in-out);
-                        p {
-                            //margin: 2px 0 0 30px;
-                            margin: -10px 0 0 30px;
-                            font-size: 20px;
-                            color: @darkgold;
-                            @media(max-width:1600px) {
-                                margin: -8px 0 0 22px;
-                                font-size: 17px;
-                            }
+                    }
+                    p {
+                        //margin: 2px 0 0 30px;
+                        // margin: 50% 0 0 20px;
+                        // font-size: 1.2vw;
+                        width: 100%;
+                        margin: 0;
+                        text-align: center;
+                        font-size: 1.2vw;
+                        color: @darkgold;
+                        opacity: 0;
+                        //.translate(0,-50%);
+                        .transition(all .5s ease-in-out);
+                        @media(max-width:1600px) {
+                            //margin: -8px 0 0 22px;
+                            //font-size: 17px;
                         }
                     }
                     &.active span {
@@ -2544,7 +2581,7 @@ div.fp-controlArrow {
                         // bottom: 0px;
                         // left: 0px; 
                     }
-                    &:hover {
+                    &:not(.dot17):hover {
                         //opacity: 1;
                         width: 12.5%;
                         // // height: 24px;
@@ -2573,6 +2610,9 @@ div.fp-controlArrow {
                             bottom: 14px;
                             left: -11px;
                         }
+                        p {
+                            opacity: 1;
+                        }
                         /*********************************************
                         *****FORMAT FOR LESS THAN 1200px (>768px)*****
                         *********************************************/
@@ -2586,7 +2626,7 @@ div.fp-controlArrow {
                 a.dot10 { left: calc(~"62.5% - 5px"); }
                 a.dot13 { left: calc(~"75% - 5px");   }
                 a.dot16 { left: calc(~"87.5% - 5px"); }
-                //a.dot17 { left: calc(~"100% - 5px");  }
+                a.dot17 { left: calc(~"100% - 5px");  }
                 span.dash {
                     // position: absolute;
                     // bottom: -5px;
@@ -2607,37 +2647,37 @@ div.fp-controlArrow {
                 span.dash71 { left: 79.15%; }
                 span.dash72 { left: 83.3%;  }
 
-                a.dot17 {
-                    left: calc(~"100% - 5px");
-                    width: 0%;
-                    //background: rgba(255,255,255,0);
-                    span:not(.coverup) {
-                        margin-left: 100%;
-                        //p { margin-left: -80px; }
-                    }
-                    span.coverup {
-                        opacity: 0;
-                        background: @darkgold;
-                        .transition(opacity .5s ease-in-out);
-                    }
-                    p {
-                        margin: 7px 0 0 30px;
-                        font-size: 20px;
-                        color: @darkgold;
-                        opacity: 0;
-                    }
-                    &:hover {
-                        background: #EEE;
-                        left: calc(~"87.5% - 5px");
-                        width: 12.5%;
-                        p {
-                            opacity: 1;
-                        }
-                        span.coverup {
-                            opacity: 1;
-                        }
-                    }
-                }
+                // a.dot17 {
+                //     left: calc(~"100% - 5px");
+                //     width: 0%;
+                //     //background: rgba(255,255,255,0);
+                //     span:not(.coverup) {
+                //         margin-left: 100%;
+                //         //p { margin-left: -80px; }
+                //     }
+                //     span.coverup {
+                //         opacity: 0;
+                //         background: @darkgold;
+                //         .transition(opacity .5s ease-in-out);
+                //     }
+                //     p {
+                //         margin: 7px 0 0 30px;
+                //         font-size: 20px;
+                //         color: @darkgold;
+                //         opacity: 0;
+                //     }
+                //     &:hover {
+                //         background: #EEE;
+                //         left: calc(~"87.5% - 5px");
+                //         width: 12.5%;
+                //         p {
+                //             opacity: 1;
+                //         }
+                //         span.coverup {
+                //             opacity: 1;
+                //         }
+                //     }
+                // }
             }
         }
     }
@@ -2653,8 +2693,8 @@ div.fp-controlArrow {
                 div.empty-line {
                     width: 90%;
                     a.dot span p {
-                        font-size: 17px;
-                        margin-top: -8px;
+                        //font-size: 17px;
+                        //margin-top: -8px;
                     }
                     a.dot:hover {
                         width: 25%;
@@ -2786,7 +2826,8 @@ div.fp-controlArrow {
     #students div.background .text-box {
         margin-top: 0;
     }
-    button#close-modal svg {
+    button#close-modal svg ,
+    button.lity-close svg {
         height: 70px;
         width: 70px;
     }
