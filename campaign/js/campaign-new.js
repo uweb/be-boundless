@@ -16,8 +16,8 @@ $(function(){
 	          };
 	})();
 
-	$( "#pause" ).click(function(e) { 
-      var $this = $(e.target);        
+	$( "#pause" ).click(function(e) {
+      var $this = $(e.target);
       var $vid = $(e.target).parent().find('video');
       if( $vid.get(0).paused ) { $vid.get(0).play() } else { $vid.get(0).pause() }
       $this.parent().toggleClass('paused');
@@ -35,7 +35,7 @@ $(function(){
 	// window.addEventListener('resize', function(){
 	// 	widthInner 	= window.innerWidth;
 	// 	offsetX 	= window.pageXOffset;
-	// })  
+	// })
 
     // Navigation via keyboard arrows
 
@@ -53,7 +53,7 @@ $(function(){
     // 		return;
     // 	}
     // }
-    
+
 
     //get number of slides in stories of impact
     var $storyCount = $(".story").length,
@@ -76,7 +76,7 @@ console.log($storySlides)
 			$currentSlide++;
 			$currentSlide = $currentSlide > $storySlides ? 1 : $currentSlide;
 		}
-		
+
 		$("#story-slider").css({
 		  '-webkit-transform' : 'translate(-' + $slideWidth*($currentSlide-1) + 'px, 0)',
 		  '-ms-transform'     : 'translate(-' + $slideWidth*($currentSlide-1) + 'px, 0)',
@@ -115,7 +115,7 @@ console.log($storySlides)
 		console.log('a not lity, not video click event');
 	});
 
-	
+
 	$("#cv2-give-now").on('click', function(e){
 
 		e.preventDefault();
@@ -186,7 +186,7 @@ console.log($storySlides)
 
 	// 	currentOffset = window.pageXOffset;
 	// 	storyUp 	  = true;
-		
+
 	// 	e.preventDefault();
 
 	// 	// Give loading animation
@@ -223,7 +223,7 @@ console.log($storySlides)
 	// 		    setTimeout(function(){
 	// 		    	$body.addClass('makeStatic');
 	// 		    }, 1000);
-	// 		});			
+	// 		});
 
 	// 	})
 
@@ -247,10 +247,10 @@ console.log($storySlides)
 	// 		// Open and close menu based on whether the user has closed it.
 	// 		if (!userClosedMenu && !isMobile.matches) {
 	// 			// $('body').addClass('active-header');
-	// 		} 			
+	// 		}
 	// 		scrollConverter.activate(currentOffset);
 	// 	}, 500);
-		
+
 	// 	history.back();
 
 	// 	// IE fallback
@@ -266,4 +266,3 @@ console.log($storySlides)
 
 
 });
-

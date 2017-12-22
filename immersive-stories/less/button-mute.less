@@ -1,0 +1,72 @@
+.mute-btn {
+  display   : block;
+  position  : absolute;
+  z-index   : 2;
+  border    : none;
+  background: none;
+  overflow  : hidden;
+
+  .icon,
+  .text {
+    display       : inline-block;
+    vertical-align: middle;
+  }
+
+  .icon {
+    overflow-x         : hidden;
+    width              : 33px;
+    height             : 33px;
+    background-color   : transparent;
+    background-image   : url("@{img}/mute.svg");
+    background-repeat  : no-repeat;
+    background-position: 0 0;
+    background-size    : 200%;
+  }
+
+  .text {
+    font-size     : 15px;
+    font-weight   : 700;
+    text-transform: uppercase;
+    color         : @gray;
+  }
+
+  &:hover {
+    .icon {
+      background-position: -35px 0;
+    }
+
+    .text {
+      color: @lightgold;
+    }
+  }
+
+  &:focus {
+    outline-color: @link;
+    outline-style: auto;
+    outline-width: 5px;
+  }
+
+}
+
+/**
+ * be sure to add the .muted class to mute btns parent on click
+ */
+.muted {
+  .mute-btn {
+    .icon {
+      background-position: 0 -36px;
+    }
+
+    &:hover {
+      .icon {
+        background-position: -35px -36px;
+      }
+    }
+
+    &:focus {
+      outline-color: @link;
+      outline-style: auto;
+      outline-width: 5px;
+    }
+  }
+}
