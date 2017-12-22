@@ -56,19 +56,22 @@ module.exports = function(grunt) {
           'immersive-stories/js/socialwork.js',
           'immersive-stories/js/pharmacy.js',
           'immersive-stories/js/lovejoy.js',
+          'immersive-stories/js/law.js',
           'immersive-stories/js/libraries.js',
           'campaign/js/main.js',
           'immersive-stories/js/education-map.js',
           'https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js',
           'https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.2.1/chroma.min.js',
         ],
-        animationLibraries : [  
-         'campaign/ScrollMagic-master/js/lib/highlight.pack.js', 
-         'campaign/scroll-converter/scroll-converter.min.js', 
-         'campaign/ScrollMagic-master/js/lib/greensock/TweenMax.min.js', 
-         'campaign/ScrollMagic-master/scrollmagic/uncompressed/ScrollMagic.js', 
+        animationLibraries : [
+         'campaign/ScrollMagic-master/js/lib/highlight.pack.js',
+         'campaign/scroll-converter/scroll-converter.min.js',
+         'campaign/ScrollMagic-master/js/lib/greensock/TweenMax.min.js',
+         'campaign/ScrollMagic-master/scrollmagic/uncompressed/ScrollMagic.js',
          'campaign/ScrollMagic-master/scrollmagic/uncompressed/plugins/animation.gsap.js',
-         'campaign/ScrollMagic-master/scrollmagic/uncompressed/plugins/debug.addIndicators.js' 
+         'campaign/ScrollMagic-master/scrollmagic/uncompressed/plugins/debug.addIndicators.js',
+         'campaign/ScrollMagic-master/js/lib/greensock/plugins/CSSPlugin.min.js',
+         'campaign/ScrollMagic-master/js/lib/greensock/plugins/CSSRulePlugin.min.js'
         ],
         environmentLibraries : [
           'immersive-stories/js/libraries/jquery.easings.min.js',
@@ -101,52 +104,52 @@ module.exports = function(grunt) {
               'immersive-stories/js/leaflet.js',
               'immersive-stories/js/chroma.min.js',
               'immersive-stories/js/education-map.js',
-              'immersive-stories/js/education.js', 
+              'immersive-stories/js/education.js',
               'immersive-stories/js/medium-lightbox.js',
-          ],          
+          ],
           'immersive-stories/js/scholarship.min.js': [
               'immersive-stories/js/common.js',
               'immersive-stories/js/scholarship.js',
-          ],         
+          ],
           'immersive-stories/js/tacoma.min.js': [
               'immersive-stories/js/common.js',
               'immersive-stories/js/tacoma.js',
-          ],         
+          ],
           'immersive-stories/js/dentistry.min.js': [
               'immersive-stories/js/common.js',
               'immersive-stories/js/dentistry.js',
-          ],           
+          ],
           'immersive-stories/js/public-health.min.js': [
               'immersive-stories/js/common.js',
               'immersive-stories/js/public-health.js',
               'immersive-stories/js/lity.js',
               'immersive-stories/js/objectFitPolyfill.basic.js',
-          ],           
+          ],
           'immersive-stories/js/evans-school.min.js': [
               'immersive-stories/js/common.js',
               'immersive-stories/js/evans-school.js',
               'immersive-stories/js/objectFitPolyfill.basic.js',
-          ],          
+          ],
           'immersive-stories/js/nursing.min.js': [
               'immersive-stories/js/common.js',
               'immersive-stories/js/nursing.js',
               'immersive-stories/js/lity.js',
               'immersive-stories/js/slick.js',
               'immersive-stories/js/objectFitPolyfill.basic.js',
-          ],        
+          ],
           'immersive-stories/js/built-env.min.js': [
               'immersive-stories/js/common.js',
               'immersive-stories/js/lity.js',
               'immersive-stories/js/built-env.js',
               'immersive-stories/js/objectFitPolyfill.basic.js',
-          ], 
+          ],
           'immersive-stories/js/environment.min.js': [
               'immersive-stories/js/common.js',
               'immersive-stories/js/lity.js',
               //'immersive-stories/js/environment.js',
               'immersive-stories/js/slick.js',
               'immersive-stories/js/objectFitPolyfill.basic.js',
-          ],            
+          ],
           'immersive-stories/js/foster-school.min.js': [
               'immersive-stories/js/common.js',
               // Popup video
@@ -158,7 +161,7 @@ module.exports = function(grunt) {
               // Slideshow
               'immersive-stories/js/slick.js',
               'immersive-stories/js/objectFitPolyfill.basic.js',
-          ],           
+          ],
           'immersive-stories/js/ischool.min.js': [
               'immersive-stories/js/common.js',
               // Popup video
@@ -168,7 +171,7 @@ module.exports = function(grunt) {
               // Slideshow
               'immersive-stories/js/slick.js',
               'immersive-stories/js/objectFitPolyfill.basic.js',
-          ],      
+          ],
           'immersive-stories/js/ica.min.js': [
               'immersive-stories/js/common.js',
               // Popup video
@@ -178,24 +181,24 @@ module.exports = function(grunt) {
               // Slideshow
               'immersive-stories/js/slick.js',
               'immersive-stories/js/objectFitPolyfill.basic.js',
-          ],          
+          ],
           'immersive-stories/js/engineering.min.js': [
               'immersive-stories/js/common.js',
               // Slideshow
               'immersive-stories/js/slick.js',
               'immersive-stories/js/engineering.js',
-          ],          
+          ],
           'immersive-stories/js/arts.min.js': [
               'immersive-stories/js/common.js',
               'immersive-stories/js/arts.js',
               'immersive-stories/js/arts/ofi.browser.js'
-          ],          
+          ],
           'immersive-stories/js/bothell.min.js': [
               'immersive-stories/js/common.js',
               'immersive-stories/js/bothell.js',
               'immersive-stories/js/medium-lightbox.js',
               'immersive-stories/js/lity.js',
-          ],          
+          ],
           'immersive-stories/js/medicine.min.js': [
               'immersive-stories/js/common.js',
               'immersive-stories/js/medicine.js',
@@ -216,7 +219,12 @@ module.exports = function(grunt) {
             'immersive-stories/js/common.js',
             'immersive-stories/js/lity.js',
             'immersive-stories/js/lovejoy.js',
-          ],        
+          ],
+          'immersive-stories/js/law.min.js': [
+            'immersive-stories/js/common.js',
+            'immersive-stories/js/lity.js',
+            'immersive-stories/js/law.js',
+          ],
           'immersive-stories/js/libraries.min.js': [
               'immersive-stories/js/common.js',
               // Popup video
@@ -226,7 +234,7 @@ module.exports = function(grunt) {
               'immersive-stories/js/libraries.js',
               'immersive-stories/js/objectFitPolyfill.basic.js',
               // 'immersive-stories/js/libraries/animsition.min.js',
-          ],     
+          ],
           'campaign/js/main.min.js': [
             'campaign/js/main.js',
           ],
@@ -298,6 +306,7 @@ module.exports = function(grunt) {
                 'immersive-stories/css/socialwork.css': 'immersive-stories/less/socialwork.less',
                 'immersive-stories/css/pharmacy.css': 'immersive-stories/less/pharmacy.less',
                 'immersive-stories/css/lovejoy.css': 'immersive-stories/less/lovejoy.less',
+                'immersive-stories/css/law.css': 'immersive-stories/less/law.less',
                 'immersive-stories/css/libraries.css': 'immersive-stories/less/libraries.less',
                 'campaign/css/campaign-style.css': 'campaign/**/*.less',
                 'campaign/css/header.css': 'campaign/less/header.less',
@@ -320,8 +329,8 @@ module.exports = function(grunt) {
       },
       js: {
         files: [
-          '<%= concat.dist.src %>', 
-          '<%= concat.dist.campaign %>', 
+          '<%= concat.dist.src %>',
+          '<%= concat.dist.campaign %>',
           // Commented out to speed up Grunt / Add back in to remove files from library
           '<%= concat.dist.animationLibraries %>',
           'passion/js/tiles.dev.js',
