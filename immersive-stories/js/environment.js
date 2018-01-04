@@ -204,6 +204,7 @@ $('#immersive-body').fullpage({
         // $('#cv2-header .cv2-header-white').addClass("hidemenu");
         // $('#cv2-header-white-collapse').addClass("showicon");
       }
+      $('h1,h2').attr('tabindex','0');
 
       setFixedBG();
     },
@@ -220,6 +221,37 @@ $('#immersive-body').fullpage({
 /**DESKTOP ONLY**/
 /****************/
 
+// $(document).keydown(keydownHandler);
+
+// function keydownHandler(e) {
+
+//     // if(keydownId) { 
+//     //   clearTimeout(keydownId);
+//     // } else {
+//     //   var keydownId;
+//     // }
+
+   
+
+//     // keydownId = setTimeout(function(){
+//     //       onkeydown(e);
+//     //   },150);
+
+//     if( e.which == 9 ) {
+//       var activeElement = $(':focus');
+//       console.log(activeElement);
+
+//       var currentSection = $('.fp-section.active');
+//       console.log(currentSection);
+
+//       //if active element is in next section -> switch to next section
+//       // if( !$.contains(currentSection, activeElement) ) {
+//       //   console.log('switch')
+//       // }
+//       console.log($.contains(currentSection.get( 0 ), activeElement.get( 0 )));
+//       console.log($(':focus'))
+//     }
+// }
 
 
 // Video pause
@@ -240,7 +272,7 @@ $(".student.desktop-slide").removeClass("active");
 $('.student-link').on('click', function(e) {
   e.preventDefault();
   e.stopPropagation();
-  var hash = this.hash;
+  var hash = $(this).data('href');
   $('#all-students').addClass("not-active");
   $(hash).addClass("active");
   $('#close-modal').addClass("active");

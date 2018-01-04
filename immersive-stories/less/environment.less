@@ -83,7 +83,7 @@ section:not(.active):not(.fixed-section):not(.scrollit){
 }
 
 .scrollit:not(.click-section){
-    z-index: 1;
+    z-index: 2;
     opacity: 0.7;
     @media(min-width:769px) {
         bottom: 0;
@@ -274,9 +274,12 @@ section.slide1 div.background {
         bottom: 10px;
         left: 10px;
         z-index: 1;
-        opacity: 0.6;
+        //opacity: 0.6;
         font-size: 14px;
         font-weight: 600;
+        // a {
+        //     opacity: 0.6;
+        // }
         svg {
             height: 80px;
             width: 80px;
@@ -1459,7 +1462,7 @@ section.fixed-section div.background .intro-body.move-higher {
         position: absolute;
         bottom: 0; 
         opacity: 1;
-        z-index: 1;
+        z-index: 2;
         max-height: 60vh;
         &.student1 {
             left: 81%;
@@ -2507,12 +2510,14 @@ div.fp-controlArrow {
         height: 60px;
         background: @darkgold;
         z-index: 2;
-        p {
+        p,h2 {
             color: #FFFFFF;
+            font-family: @font-family-base;
             text-transform: uppercase;
             font-size: 23px;
+            line-height: 1.72222;
             font-weight: 900;
-            margin-top: 10px;
+            margin: 10px 0 14.5px 0;
             width: 10%;
             text-align: center;
         }
@@ -2599,7 +2604,8 @@ div.fp-controlArrow {
                         // bottom: 0px;
                         // left: 0px; 
                     }
-                    &:not(.dot17):hover {
+                    &:not(.dot17):hover ,
+                    &:not(.dot17):focus {
                         //opacity: 1;
                         width: 12.5%;
                         // // height: 24px;
@@ -2701,7 +2707,7 @@ div.fp-controlArrow {
     }
     @media(max-width:1200px) {
         #scrollbar {
-            p{
+            p,h2{
                 font-size: 17px;
                 margin-top: 15px;
                 margin-left: 5px;
@@ -2714,7 +2720,8 @@ div.fp-controlArrow {
                         //font-size: 17px;
                         //margin-top: -8px;
                     }
-                    a.dot:hover {
+                    a.dot:hover ,
+                    a.dot:focus {
                         width: 25%;
                         + a span {
                             opacity: 0;
@@ -3147,3 +3154,43 @@ CLOUDSSSS
            }
     }
 
+
+
+/************************
+******ACCESSIBILITY******
+************************/
+h1:focus ,
+h2:focus {
+    outline-color: rgb(59, 153, 252);
+    outline-style: auto;
+    outline-width: 5px;
+}
+// .fp-section {
+//     z-index: 1;
+// }
+// #cv2-header {
+//     z-index: 2;
+// }
+// #scrollbar {
+//     z-index: 1;
+// }
+div.play-button a {
+    opacity: 0.6;
+}
+div.play-button a:hover ,
+div.play-button a:focus {
+    opacity: 1.0;
+}
+div.play-button a:focus {
+    outline-color: rgb(59, 153, 252);
+    outline-style: auto;
+    outline-width: 5px;
+}
+a.student-link {
+    //z-index: 1;
+    &:focus {
+        outline-color: rgb(59, 153, 252);
+        outline-style: auto;
+        outline-width: 5px;
+    }
+}

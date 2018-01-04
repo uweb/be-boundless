@@ -32,9 +32,9 @@
       <div class="intro-body">
          <div class="row">
               <div class="" id='intro-text'>
-                  <h1 class="=">A week in </br>the wild</h1>
+                  <h1 class="">A week in </br>the wild</h1>
                   <p class="col-md-4 col-sm-10 col-xs-12">
-                      In March 2017, professors and students from the College of the Environment made a classroom out of one of the most closely monitored ecosystems in the world: Yellowstone National Park. Explore their learning experience below.
+                      Students and professors from the College of the Environment made a classroom out of one of the world’s most closely monitored ecosystems: Yellowstone National Park. Explore their learning experience below.
                   </p>
               </div>         
           </div>
@@ -50,7 +50,7 @@
               </a>
           </div> --> 
           <div class="play-button" >
-            <a data-lity href="https://www.youtube.com/embed/TLyNpX2-baE&?autoplay=1&rel=0&showinfo=0">
+            <a data-lity href="https://www.youtube.com/embed/TLyNpX2-baE&?autoplay=1&rel=0&showinfo=0&yt:crop=16:9">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                width="137.909px" height="137.131px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131"
                xml:space="preserve">
@@ -135,12 +135,12 @@
             </div>
         </div>
        <!--  <div class="student-container"> -->
-          <div class="student student1"><a class="student-link" href="#student1"><image class="student student1" alt="student one" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait1.png' ?>"></a></div>
-          <div class="student student2"><a class="student-link" href="#student2"><image class="student student2" alt="student two" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait2.png' ?>"></a></div>
-          <div class="student student3"><a class="student-link" href="#student3"><image class="student student3" alt="student three" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait3.png' ?>"></a></div>
-          <div class="student student4"><a class="student-link" href="#student4"><image class="student student4" alt="student four" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait4.png' ?>"></a></div>
-          <div class="student student5"><a class="student-link" href="#student5"><image class="student student5" alt="student five" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait5.png' ?>"></a></div>
-          <div class="student student6"><a class="student-link" href="#student6"><image class="student student6" alt="student six" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait6.png' ?>"></a></div>
+          <div class="student student1"><a class="student-link" href="#" data-href="#student1" aria-label="Learn more about Loma Pendergraft."><image class="student student1" alt="student one" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait1.png' ?>"></a></div>
+          <div class="student student2"><a class="student-link" href="#" data-href="#student2" aria-label="Learn more about Danyan Leng."><image class="student student2" alt="student two" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait2.png' ?>"></a></div>
+          <div class="student student3"><a class="student-link" href="#" data-href="#student3" aria-label="Learn more about Hannah Booth."><image class="student student3" alt="student three" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait3.png' ?>"></a></div>
+          <div class="student student4"><a class="student-link" href="#" data-href="#student4" aria-label="Learn more about Gavin Forster."><image class="student student4" alt="student four" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait4.png' ?>"></a></div>
+          <div class="student student5"><a class="student-link" href="#" data-href="#student5" aria-label="Learn more about Courtney Straight."><image class="student student5" alt="student five" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait5.png' ?>"></a></div>
+          <div class="student student6"><a class="student-link" href="#" data-href="#student6" aria-label="Learn more about Andrew Wang."><image class="student student6" alt="student six" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/portrait6.png' ?>"></a></div>
       </section>
 
         <!-- STUDENTS - PROFILES -->
@@ -915,19 +915,19 @@
                         The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. When you support immersive learning experiences at the College of the Environment, you can make it possible for students to get hands-on experiences that propel them toward the careers of their dreams.
                     </p>
                   </div>
-                  <div class="col-xs-12">
-                    <div id="immersive-give-iframe"></div>
-                    <div class="boundless-button sm dark give"><span><a id="give-now-button" data-fund="CELEND" href="#" data-lity data-lity-target="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&frame_buster=false&source_typ=3&appeal=17XIS&source=CELEND">Give now</a></span></div>
-                    <!-- <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="CELEND" href="#" data-lity data-lity-target="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&frame_buster=false&source_typ=3&appeal=17XIS&source=CELEND">Give now</a></span></div> -->
-                  </div>
-              </div>         
+              <div class="col-xs-12">
+                <div id="immersive-give-iframe"></div>
+                <div class="boundless-button sm dark give"><span><a id="give-now-button" data-fund="CELEND" href="#" data-lity data-lity-target="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&frame_buster=false&source_typ=3&appeal=17XIS&source=CELEND">Give now</a></span></div>
+                <!-- <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="CELEND" href="#" data-lity data-lity-target="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&frame_buster=false&source_typ=3&appeal=17XIS&source=CELEND">Give now</a></span></div> -->
+              </div>
+            </div>         
           </div>
       </div>
     </div>
   </section>
 
  <section id="scrollbar">
-   <p>Navigate</p>
+   <h2>Navigate</h2>
    <div class="black">
      <div class="empty-line">
        <span id="full-line"></span>
@@ -973,8 +973,30 @@
 
  
 
- <?php get_template_part('footer', 'campaign-v2'); ?>
+ <?php //get_template_part('footer', 'campaign-v2'); ?>
+    
+    <?php echo $scripts; ?>
+    <?php if($_SERVER['HTTP_HOST'] != 'localhost'){ ?>
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-15747328-1', 'auto');
+        ga('send', 'pageview');
+      </script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15747328-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-
-</body>
+        gtag('config', 'UA-15747328-1');
+      </script> -->
+    <?php } ?>
+  </body>
 </html>
+<!-- 
+</body>
+</html> -->
