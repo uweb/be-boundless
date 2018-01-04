@@ -15,7 +15,7 @@
             <span class="icon"></span>
             <span class="text">Turn Audio On / Off</span>
         </button>
-		<video autoplay loop muted playsinline id="full-bg-video" class="media fullscreen-bg__video" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/law/poster.jpg' ?>">
+		<video autoplay loop muted playsinline id="full-bg-video" style="height: 100%;" class="media fullscreen-bg__video" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/law/poster.jpg' ?>">
 			<source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/law/header.mp4' ?>" type="video/mp4">
 		</video>
 		<div class="intro-body">
