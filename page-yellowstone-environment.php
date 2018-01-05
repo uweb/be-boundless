@@ -873,7 +873,7 @@
                         Read more about who the students met in Yellowstone, the animals they saw and studied, and what they discovered about the challenges and rewards of careers in wildlife management. 
                     </p>
                   </div>
-                  <a href="http://cmsdev.u.washington.edu/boundless/2017/11/07/a-week-in-the-wild/" class="explore">Read more</a>
+                  <a href="http://www.washington.edu/boundless/yellowstone-students/" class="explore">Read more</a>
               </div>         
           </div>
       </div>
