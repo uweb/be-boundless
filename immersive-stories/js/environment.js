@@ -93,7 +93,7 @@ $('#immersive-body').fullpage({
 
     //Scrolling
     // css3: true,
-    scrollingSpeed: 1200,
+    scrollingSpeed: 1400,
     // autoScrolling: true,
     // fitToSection: true,
     // fitToSectionDelay: 1000,
@@ -204,7 +204,7 @@ $('#immersive-body').fullpage({
         // $('#cv2-header .cv2-header-white').addClass("hidemenu");
         // $('#cv2-header-white-collapse').addClass("showicon");
       }
-      $('h1,h2').attr('tabindex','0');
+     // $('h1,h2').attr('tabindex','0');
 
       setFixedBG();
     },

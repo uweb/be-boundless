@@ -99,7 +99,7 @@
                     <a href="#predator" class="col-sm-2 col-xs-2 section-links"><span>Predators</span></a>
                     <a href="#prey" class="col-sm-2 col-xs-2 section-links"><span>Prey</span></a>
                     <a href="#scavenger" class="col-sm-2 col-xs-2 section-links"><span>Scavengers</span></a>
-                    <a href="#people" class="col-sm-2 col-xs-2 section-links"><span>Staff and neighbors</span></a>
+                    <a href="#people" class="col-sm-2 col-xs-2 section-links"><span>Neighbors</span></a>
                   </div>
               </div>         
           </div>
@@ -352,16 +352,14 @@
               </div> 
               <!-- 5.5 -->
               <div class="mobile-slide predgal">
-                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_5.jpg' ?>" alt="At the site of a wolf-killed elk, biologist Kai Koitzsch explains how to conduct a necropsy, studying everything from the elk’s worn molars and bone marrow health to nearby wolf pawprints and raven droppings." data-lity></span>
-                <p>At the site of a wolf-killed elk, biologist Kai Koitzsch explains how to conduct a necropsy, studying everything from the elk’s worn molars and bone marrow health to nearby wolf pawprints and raven droppings.</p>
+                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_5.jpg' ?>" alt="At the site of a wolf-killed elk, biologist Ky Koitzsch explains how to conduct a necropsy, studying everything from the elk’s worn molars and bone marrow health to nearby wolf pawprints and raven droppings." data-lity></span>
+                <p>At the site of a wolf-killed elk, biologist Ky Koitzsch explains how to conduct a necropsy, studying everything from the elk’s worn molars and bone marrow health to nearby wolf pawprints and raven droppings.</p>
               </div> 
               <!--IGNORED ON MOBILE -->
               <div class="student-quote predgal float-right">
                 <!-- <div class="row centered pad-top"> -->
                   <blockquote class="col-xs-12 quote">
-                      <span>&ldquo;</span>
-                      To actually go there and get a sense of where a cougar hunts helps you understand how they interact with their environment.
-                      <span>&rdquo;</span>
+                      &ldquo; To actually go there and get a sense of where a cougar hunts helps you understand how they interact with their environment.&rdquo;
                   </blockquote>
                 <!-- </div>
                 <div class="row centered pad-bottom"> -->
@@ -397,9 +395,7 @@
               <div class="text-box">
                   <div class="row centered">
                     <blockquote class="col-md-8 col-xs-12 quote">
-                        <span>&ldquo;</span>
-                        The most common cause of death for adult wolves in Yellowstone is fighting to protect your family and your territory from a rival pack.
-                        <span>&rdquo;</span>
+                        &ldquo; The most common cause of death for adult wolves in Yellowstone is fighting to protect your family and your territory from a rival pack.&rdquo;
                     </blockquote>
                   </div>
                   <div class="row centered atts-pic">
@@ -422,7 +418,7 @@
                         <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                       </p>
                       <div class="visually-hidden audio-transcript" tabindex="0">
-                        <p class="tran-lit">There was a British anthropologist that once said that there’s no two species on earth that are so similar in social behavior as wolves and humans. For example, we found here that the most common cause of death for adult wolves in Yellowstone, since we don’t have any human hunting or trapping, the most common cause of death is to die fighting to protect your family and your territory from a rival pack.</p>
+                        <p class="tran-lit">There was a British anthropologist who once said that there’s no two species on earth that are so similar in social behavior as wolves and humans. For example, we found here that the most common cause of death for adult wolves in Yellowstone — since we don’t have any human hunting or trapping — the most common cause of death is to die fighting to protect your family and your territory from a rival pack.</p>
                         <span class="close-transcript"></span>
                       </div>
                     </div>
@@ -505,9 +501,7 @@
               <div class="student-quote prey">
               <!-- <div class="row centered pad-top"> -->
                 <blockquote class="col-xs-12 quote">
-                    <span>&ldquo;</span>
-                    The conditions weren’t perfect for the elk survey. It wasn’t nice out and it wasn’t easy, but it was something I was really happy doing.
-                    <span>&rdquo;</span>
+                    &ldquo; The conditions weren’t perfect for the elk survey. It wasn’t nice out and it wasn’t easy, but it was something I was really happy doing.&rdquo;
                 </blockquote>
               <!-- </div> -->
               <!-- <div class="row centered pad-bottom"> -->
@@ -543,9 +537,7 @@
               <div class="text-box">
                   <div class="row centered">
                     <blockquote class="col-md-8 col-xs-12 quote">
-                        <span>&ldquo;</span>
-                        Animals that are in really good condition have the luxury of not having to feed so much, so they can actually be quite vigilant.
-                        <span>&rdquo;</span>
+                       &ldquo; Animals that are in really good condition have the luxury of not having to feed so much, so they can actually be quite vigilant.&rdquo;
                     </blockquote>
                   </div>
                   <div class="row centered atts-pic">
@@ -651,9 +643,7 @@
               <div class="student-quote scav">
               <!-- <div class="row centered pad-top"> -->
                 <blockquote class="col-xs-12 quote">
-                    <span>&ldquo;</span>
-                    When we were watching the bears at the bison carcass at Blacktail Pond, there were also a lot of ravens, and John Marzluff told us all about their different social behaviors and interactions.
-                    <span>&rdquo;</span>
+                    &ldquo; When we were watching the bears at the bison carcass at Blacktail Pond, there were also a lot of ravens, and John Marzluff told us all about their different social behaviors and interactions.&rdquo;
                 </blockquote>
               <!-- </div>
               <div class="row centered pad-bottom"> -->
@@ -689,9 +679,7 @@
               <div class="text-box">
                   <div class="row centered">
                     <blockquote class="col-md-8 col-xs-12 quote">
-                        <span>&ldquo;</span>
-                        So rather than risk your life killing a bison, they wait for a carcass to show up — especially this time of year.
-                        <span>&rdquo;</span>
+                        &ldquo; Rather than risk your life killing a bison, they wait for a carcass to show up — especially this time of year.&rdquo;
                     </blockquote>
                   </div>
                   <div class="row centered atts-pic">
@@ -714,7 +702,7 @@
                         <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                       </p>
                       <div class="visually-hidden audio-transcript" tabindex="0">
-                        <p class="tran-lit">A quarter to a third of all bison consumption by wolves is carcasses. And so rather than risk your life killing a bison, they wait for a carcass show up — especially this time of year, especially during the rut. So this could be a huge subsidy for wolves and could be important in the impact of wolves on elk.</p>
+                        <p class="tran-lit">A quarter to a third of all bison consumption by wolves is carcasses. And so rather than risk your life killing a bison, they wait for a carcass to show up — especially this time of year, especially during the rut. So this could be a huge subsidy for wolves and could be important in the impact of wolves on elk.</p>
                         <span class="close-transcript"></span>
                       </div>
                     </div>
@@ -739,12 +727,12 @@
         <div class="foreground"></div>
         <div class="extra1"></div>
         <div class="extra2"></div>
-        <div class="section-caption"><p>Staff and neighbors</p></div>
+        <div class="section-caption"><p>Neighbors</p></div>
         <div class="intro-body move-higher">
          <div class="row">
               <div class="text-box">
                   <div class="icon people"></div>
-                  <h2 class="">Staff and neighbors</h2>
+                  <h2 class="">Neighbors</h2>
                   <span class="col-md-4 col-xs-10"><span class="squiggle"></span></span>
               </div>         
           </div>
@@ -761,7 +749,7 @@
      <!--14. PEOPLE - GALLERY-->
     <section class="section transparent-section bg-peop fp-auto-height">
         <div class="background photos">
-          <div class="section-caption"><p>Staff and neighbors // The student experience</p></div>
+          <div class="section-caption"><p>Neighbors // The student experience</p></div>
           <!-- <div class="intro-body"> -->
          <!-- <div class="row"> -->
               <!-- 14.1 -->
@@ -782,7 +770,7 @@
               <!-- 14.4 -->
               <div class="mobile-slide peop float-right">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOP-5.jpg' ?>" alt="Zach Gregory, ’15, a wildlife technician working alongside Koitzsch, shows Jenny Brent, ’19, how to enter data on a necropsy form. Gregory took this class as an undergraduate." data-lity></span>
-                <p>Zach Gregory, ’15, a wildlife technician working alongside Koitzsch, shows Jenny Brent, ’19, how to enter data on a necropsy form. Gregory took this class as an undergraduate.</p>
+                <p>Zach Gregory (right), ’15, a wildlife technician working alongside Koitzsch, shows Jenny Brent, ’19, how to enter data on a necropsy form. Gregory took this class as an undergraduate.</p>
               </div> 
               <!-- 14.5 -->
               <div class="mobile-slide peop">
@@ -793,9 +781,7 @@
               <div class="student-quote peop float-right">
               <!-- <div class="row centered pad-top"> -->
                 <blockquote class="col-xs-12 quote">
-                    <span>&ldquo;</span>
-                    Going to Yellowstone with wildlife biologists is like going behind the scenes of a play.
-                    <span>&rdquo;</span>
+                    &ldquo; Going to Yellowstone with wildlife biologists is like going behind the scenes of a play.&rdquo;
                 </blockquote>
               <!-- </div>
               <div class="row centered pad-bottom"> -->
@@ -825,15 +811,13 @@
         <div class="foreground"></div>
         <div class="extra1"></div>
         <div class="extra2"></div>
-        <div class="section-caption"><p>Staff and neighbors // Lecture in the field</p></div>
+        <div class="section-caption"><p>Neighbors // Lecture in the field</p></div>
         <div class="intro-body">
          <div class="row">
               <div class="text-box">
                   <div class="row centered">
                     <blockquote class="col-md-8 col-xs-12 quote">
-                        <span>&ldquo;</span>
-                        Here at Yellowstone, we try to do a census of the bison population every year.
-                        <span>&rdquo;</span>
+                        &ldquo;  Here at Yellowstone, we try to do a census of the bison population every year.&rdquo;
                     </blockquote>
                   </div>
                   <div class="row centered atts-pic">
@@ -855,7 +839,7 @@
                         <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                       </p>
                       <div class="visually-hidden audio-transcript" tabindex="0">
-                        <p class="tran-lit">Us humans in the United States do a census every 10 years of the population. Well here at Yellowstone we try and do a census of the bison population every year. So I will have my team for about two weeks go out in pairs, and split up, and classify every single group that we can find on the landscape. The way we do that is we put a couple people in the airplane and we fly around, and it helps us figure out the distribution of the animals. It helps us organize our daily expeditions to get out in the field and go find all of those groups.</p>
+                        <p class="tran-lit">Us humans in the United States do a census every 10 years of the population. Well here at Yellowstone we try and do a census of the bison population every year. So I will have my team for about two weeks go out in pairs, and split up, and classify every single group that we can find on the landscape. The way we do that is we put a couple people in the airplane on Sunday or Monday and we fly around, and it helps us figure out the distribution of the animals. It helps us organize our daily expeditions to get out in the field and go find all of those groups.</p>
                         <span class="close-transcript"></span>
                       </div>
                     </div>
@@ -937,7 +921,7 @@
        <a href="#predator" class="dot dot4"><span></span><p>Predators</p></a>
        <a href="#prey" class="dot dot7"><span></span><p>Prey</p></a>
        <a href="#scavenger" class="dot dot10"><span></span><p>Scavengers</p></a>
-       <a href="#people" class="dot dot13"><span></span><p>Staff</p></a>
+       <a href="#people" class="dot dot13"><span></span><p>Neighbors</p></a>
        <a href="#explore" class="dot dot16"><span></span><p>Explore</p></a>
        <a href="#give" class="dot dot17"><span></span><p>Give</p><span class="coverup"></span></a>
        <span class="dash dash41"></span>
