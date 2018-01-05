@@ -339,8 +339,8 @@ $(function () {
   // lazyloading (not IE) in 3... 2... 1...
   if (detectIE) {
     // fallback for object-fit: cover - header bg video
-    $('#section-intro video')
-      .css('height', 'auto');
+    // $('#section-intro video')
+    //   .css('height', 'auto');
   } else {
     // TODO: re-enable this
     // lazyload();
