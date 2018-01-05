@@ -691,7 +691,7 @@
                   </div>
                     <div class="audio desktop"><p class="length">0:21  <span>/ play lesson</span></p>
                       <audio controls class="player">
-                        <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/Lecture_SCAVENGER.mp3' ?>" type="audio/mpeg">
+                        <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/Lecture_SCAVENGER2.mp3' ?>" type="audio/mpeg">
                         <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
                         Your browser does not support HTML5 audio.
                       </audio>
@@ -828,7 +828,7 @@
                   </div>
                     <div class="audio desktop"><p class="length">0:36  <span>/ play lesson</span></p>
                       <audio controls class="player">
-                        <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/LECTURE_RICK_WALLEN.mp3' ?>" type="audio/mpeg">
+                        <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/environment/LECTURE_RICK_WALLEN2.mp3' ?>" type="audio/mpeg">
                         <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
                         Your browser does not support HTML5 audio.
                       </audio>
