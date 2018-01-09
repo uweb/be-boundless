@@ -39,7 +39,7 @@ $(function(){
        // .setTween("#stats-slides", 0, {
        //      right: window.innerWidth,
        //      }) // trigger a TweenMax.to tween
-      .addIndicators()
+      // .addIndicators()
       .addTo(controllerLibraries);
 
 
@@ -54,7 +54,7 @@ $(function(){
        // .setTween("#stats-slides", 0, {
        //      right: window.innerWidth,
        //      }) // trigger a TweenMax.to tween
-      .addIndicators()
+      // .addIndicators()
       .addTo(controllerLibraries);
 
 
