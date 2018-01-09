@@ -94,7 +94,20 @@ html {
       margin    : 0 auto;
       width     : 80%;
 
-      h1 {}
+      h1 {
+        color: #fff;
+        font-size: 52px;
+
+        @media @tablet-landscape-up {
+          font-size: 80px;
+        }
+      }
+
+      h2 {
+        color: #fff;
+        margin-top: 0;
+        text-transform: uppercase;
+      }
 
       p {
         border-top   : 1px solid white;
@@ -317,10 +330,12 @@ html {
   }
 }
 /*******************************
-* SECTION - BODY *
+* SECTION - INTRO + BODY *
 *******************************/
-#section-body {
+#section-body,
+#section-story {
   background: #efeeea;
+  position: relative;
 
   .callout {
     width: 100%;
