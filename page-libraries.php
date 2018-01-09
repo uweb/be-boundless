@@ -21,7 +21,7 @@
 <div id="immersive-body">
 	<section class="intro" id="intro-vid">
 		<div id="version-switch">
-			<button id="korean" href="libraries" class="animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">View Korean version</button>
+			<button id="korean" href="libraries-korean" class="animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">View Korean version</button>
 		</div>
 		<button id="pause">Pause</button>
 		<video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/built-env/header.jpg' ?>" class="fullscreen-bg__video">
@@ -151,7 +151,7 @@
 							</div>                 
 							<div class="col-md-5 col-md-offset-1">
 								<blockquote class="quote">I’ve always wanted to research Korea because I feel a strong sense of pride for my country, but I’ve never had the chance to explore it academically.</blockquote>
-								<span class="rq">&rdquo;</span><p class="attribute">Kristy Kwon, ’18</p>
+								<span class="rq">&rdquo;</span><p class="attribute">Kristy Kwon, Senior</p>
 
 								<div class="arrow-right"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/deborah-porter.jpg' ?>" alt="ADD ALT TEXT"></div>
 
@@ -173,23 +173,15 @@
 			<div id="women-slides">
 					<div class="statistic stat-1">
 						<div class="stat-text">
-							University Libraries provides<br />
-							<span class="large">9,000,000</span><span class="large plus">+</span><br />
-							total volumes (inclduing e-books)
+							<span class="large">67</span><span class="large plus">%</span><br />
+							of Korean television viewers watched the finale of "Your and I"
 						</div>
 					</div>
 					<div class="statistic stat-2">
 						<div class="stat-text">
-							The East Asia Library Houses<br />
-							<span class="large">770,000</span><span class="large plus">+</span><br />
-							<span class="snap-right">Volumes</span>
-						</div>
-					</div>
-					<div class="statistic stat-3">
-						<div class="stat-text">
-							University Libraries provides<br />
-							<span class="large">11,000</span><span class="large plus">+</span><br />
-							Documents lent to scholars, government agencies and institutions around the world
+							The drama "Dae Jan Geum" was distributed to<br />
+							<span class="large">91</span><br />
+							<span class="snap-right">countries</span>
 						</div>
 					</div>
 			</div>
@@ -314,7 +306,7 @@
 				</div> 
 			</div>
 			<div id="version-switch">
-				<button id="korean" href="libraries" class="animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">View Korean version</button>
+				<button id="korean" href="libraries-korean" class="animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">View Korean version</button>
 			</div>
 		</section>
 

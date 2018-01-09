@@ -11,7 +11,7 @@ $(function(){
 
 
   var wipeAnimationKorea = new TimelineMax()
-    .to("#women-slides", 1,   {x: "-60%"});
+    .to("#women-slides", 1,   {x: "-40%"});
 
   currentController = controllerLibraries;
 
@@ -47,7 +47,7 @@ $(function(){
       var koreaStats = new ScrollMagic.Scene({
         triggerElement: '#korea-stats',
         triggerHook: 0,
-        duration: "400%",
+        duration: "100%",
       })
       .setPin("#korea-stats")
       .setTween(wipeAnimationKorea)
