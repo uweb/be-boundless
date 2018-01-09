@@ -139,7 +139,7 @@
 
 								<p>Similar to American soap operas, K-dramas feature idealized characters on quests for true love. Nearly 67 percent of Korea watched the finale of the late ’90s drama “You and I,” and audiences from Spain to Zimbabwe have been captivated by these hugely popular shows: “Dae Jang Geum” (“Jewel in the Palace”), about an orphan who becomes the first female royal physician, was distributed to 91 countries.</p> 
 
-								<p>“Dramas are a huge cultural thing in Korea,” says Kwon. “I grew up watching them. And since I was born there, I feel a sense of belonging when I watch the shows.”</p>
+								<p class="callout">“Dramas are a huge cultural thing in Korea,” says Kwon. “I grew up watching them. And since I was born there, I feel a sense of belonging when I watch the shows.”</p>
 
 								<p>But in 2016, while watching an episode of “Father Is Strange,” Kwon grew frustrated. “Usually in Korean society, the eldest son is preferred,” she explains. “This drama focused on a woman who graduated from a prestigious university and became a very successful lawyer, while her brother did not.” Yet the brother’s misbehavior was treated lightly, Kwon says, while the daughter’s resulted in harsher punishment. This imbalance gave her pause.</p>
 
@@ -206,7 +206,7 @@
 
 								<p>Hyokyoung Yi, the Korean Studies librarian, began working closely with Kwon. “From the first meeting, I could see her great curiosity and passion for her paper,” Yi says. Together they navigated online resources, including the KISS Korean-language database of academic journals, to find the material Kwon needed. </p>
 
-								<p>“Even though it took hours, Ms. Yi was so passionate about helping me,” says Kwon. “I was really thankful for that dedication.”</p>
+								<p class="callout">“Even though it took hours, Ms. Yi was so passionate about helping me,” says Kwon. “I was really thankful for that dedication.”</p>
 
 								<p>After combing through the available materials, Kwon decided to collect her own data by traveling to Seoul to interview South Korean women. The trip would also give her a chance to reunite with her grandmother and aunts, whom she hadn’t seen in more than a decade.</p>
 
