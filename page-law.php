@@ -53,57 +53,13 @@
 
     <section id="section-map">
       <div class="item-1 item">
-	         <h2 class="headline">The number of incarcerated drug offenders has increased twelvefold since 1980.</h2>
+           <h2 class="headline">The number of incarcerated non-violent drug offenders has increased twelvefold since 1980 in the United States. <span class="source">SOURCE: The Sentencing Project</span></h2>
       </div>
       <div class="item-2 item">
-	         <h2 class="headline">*FPO Stat that relates to Washington State for these types of offenses*</h2>
-      </div>
-      <div class="item-3 item">
 	         <h2 class="headline">The wellness court is changing the paradigm.</h2>
       </div>
       <div class="background-1 background"></div>
       <div class="background-2 background"></div>
-      <div class="background-3 background"></div>
-      <div class="background-graph background">
-          <div class="graph-line">
-              <svg id="map-graph-line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 734.5 418">
-                  <defs>
-                      <style>
-                          .graph-circ {
-                              fill: #fff;
-                              stroke: #939393;
-                              stroke-width: 2px;
-                          }
-                          .graph-circ,
-                          .graph-path {
-                              stroke-miterlimit: 10;
-                          }
-                          .graph-path {
-                              fill: none;
-                              stroke: #fff;
-                          }
-                      </style>
-                  </defs>
-                    <g id="graph-line-group">
-                      <circle id="point1" class="graph-circ" cx="6" cy="412" r="5"/>
-                      <circle id="point2" class="graph-circ" cx="192.5" cy="347.5" r="5"/>
-                      <circle id="point3" class="graph-circ" cx="361" cy="202" r="5"/>
-                      <circle id="point4" class="graph-circ" cx="495.5" cy="114.5" r="5"/>
-                      <circle id="point5" class="graph-circ" cx="728.5" cy="6" r="5"/>
-                      <path id="path1" class="graph-path" d="M6,412l186.5-64.5"/>
-                      <path id="path2" class="graph-path" d="M192.5,347.5,361,202"/>
-                      <path id="path3" class="graph-path" d="M361,202l134.5-87.5"/>
-                      <path id="path4" class="graph-path" d="M495.5,114.5,728.5,6"/>
-                    </g>
-              </svg>
-          </div>
-      </div>
-
-      <div class="scroll-indicator">
-          <div class="mouse">
-              <div class="scroll"></div>
-          </div>
-      </div>
 
 		</section><!-- #section-map -->
 
