@@ -324,7 +324,7 @@
 		<section id="section-end">
 			<div class="inner">
 				<div class="col-xs-8 col-xs-offset-2">
-					<h1><img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/law/logo-weteb-altx.svg" alt=""></h1>
+					<h1><img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/law/lushootseed.svg" alt=""></h1>
           <h2>What you care about can change the world</h2>
           <p>The University of Washington is undertaking the most ambitious campaign in our history: Be Boundless — For Washington, For the World. By contributing to the Native American Law Center Fund, Excellence in Law Fund and Law Student Scholarship Fund, you can help students like Brian Kilgore gain hands-on legal experience as part of their studies at the School of Law.</p>
 					<div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="ESIEND" href="#giving-widget-promoted">Give now</a></span></div>
