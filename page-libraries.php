@@ -11,7 +11,7 @@
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/libraries/animsition.min.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/libraries.css' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/libraries.min.js' type='text/javascript'></script>";
 	$scripts .= "<script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/libraries/animsition.min.js' type='text/javascript'></script>";
-	$storyCodes = '';
+	$storyCodes = 'KORCAT,LIBDIS'; //,LSEEND,RENEWU,LIBFHL,LIBBOT,BUSFUN,LIBRAR
 	$storyAppeal = 'Support undergraduate research and the future of invaluable library collections by contributing to the University Libraries.';
 	get_header( "campaign-v2" );
 
@@ -63,8 +63,9 @@
 
 
 					</div>                 
-					<div class="col-md-6 arrow-right">
-						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/kristy-kwon.jpg' ?>" alt="ADD ALT TEXT">
+					<div class="col-md-6">
+						<div class="arrow-right"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/kristy-kwon.jpg' ?>" alt="Kristy Kwon"></div>
+						<div class="caption">Kristy Kwon / Senior, economics and international studies</div>
 					</div> 
 				</div>
 			</div>   
@@ -151,9 +152,10 @@
 							</div>                 
 							<div class="col-md-5 col-md-offset-1">
 								<blockquote class="quote">I’ve always wanted to research Korea because I feel a strong sense of pride for my country, but I’ve never had the chance to explore it academically.</blockquote>
-								<span class="rq">&rdquo;</span><p class="attribute">Kristy Kwon, Senior</p>
+								<!-- <span class="rq">&rdquo;</span> --><div class="attribute">Kristy Kwon, Senior</div>
 
-								<div class="arrow-right"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/deborah-porter.jpg' ?>" alt="ADD ALT TEXT"></div>
+								<div class="arrow-right" style="clear: both;"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/deborah-porter.jpg' ?>" alt="Deborah Porter"></div>
+								<div class="caption">Deborah Porter / Associate Professor, Jackson School of International Studies</div>
 
 							</div> 
 						</div>
@@ -174,7 +176,7 @@
 					<div class="statistic stat-1">
 						<div class="stat-text">
 							<span class="large">67</span><span class="large plus">%</span><br />
-							of Korean television viewers watched the finale of "Your and I"
+							of Korean television viewers watched the finale of "You and I"
 						</div>
 					</div>
 					<div class="statistic stat-2">
@@ -214,8 +216,8 @@
 							</div>                 
 							<div class="col-md-5 col-md-offset-1 arrow-right">
 
-								<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/hyokyoung-yi.jpg' ?>" alt="ADD ALT TEXT">
-
+								<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/hyokyoung-yi.jpg' ?>" alt="Hyokyoung Yi">
+								<div class="caption">Hyokyoung Yi / Korean Studies Librarian, East Asia Library</div>
 							</div> 
 						</div>
 					</div>

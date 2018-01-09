@@ -11,7 +11,7 @@
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/libraries/animsition.min.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/libraries.css' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/libraries.min.js' type='text/javascript'></script>";
 	$scripts .= "<script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/libraries/animsition.min.js' type='text/javascript'></script>";
-	$storyCodes = '';
+	$storyCodes = 'KORCAT,LIBDIS'; //,LSEEND,RENEWU,LIBFHL,LIBBOT,BUSFUN,LIBRAR
 	$storyAppeal = 'Support undergraduate research and the future of invaluable library collections by contributing to the University Libraries.';
 	get_header( "campaign-v2" );
 
@@ -65,6 +65,7 @@
 					</div>                 
 					<div class="col-md-6 arrow-right">
 						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/kristy-kwon.jpg' ?>" alt="ADD ALT TEXT">
+						<div class="caption">Kristy Kwon / Senior, economics and international studies</div>
 					</div> 
 				</div>
 			</div>   
@@ -151,9 +152,10 @@
 							</div>                 
 							<div class="col-md-5 col-md-offset-1">
 								<blockquote class="quote">"나는 한국에 대한 강한 자부심을 느끼기 때문에 항상 한국을 연구하고 싶었지만 학문적으로 탐구 할 기회는 없었습니다."</blockquote>
-								<span class="rq">&rdquo;</span><p class="attribute">Kristy Kwon, 졸업반</p>
+								<!-- <span class="rq">&rdquo;</span> --><div class="attribute">Kristy Kwon, 졸업반</div>
 
-								<div class="arrow-right"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/deborah-porter.jpg' ?>" alt="ADD ALT TEXT"></div>
+								<div class="arrow-right" style="clear: both;"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/deborah-porter.jpg' ?>" alt="Deborah Porter"></div>
+								<div class="caption">Deborah Porter / Associate Professor, Jackson School of International Studies</div>
 
 							</div> 
 						</div>
@@ -214,7 +216,8 @@
 							</div>                 
 							<div class="col-md-5 col-md-offset-1 arrow-right">
 
-								<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/hyokyoung-yi.jpg' ?>" alt="ADD ALT TEXT">
+								<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/hyokyoung-yi.jpg' ?>" alt="Hyokyoung Yi">
+								<div class="caption">Hyokyoung Yi / Korean Studies Librarian, East Asia Library</div>
 
 							</div> 
 						</div>
