@@ -256,8 +256,6 @@
 
 						<p>Yi, who travels to Korea frequently, was happy to help prepare Kwon for the cultural aspects of her trip. She also introduced Kwon to Hwasook Nam, the James B. Palais Endowed Associate Professor in Korea Studies at the Jackson School and the Department of History. Nam connected Kwon with a colleague at Ewha Womans University in Seoul who invited Kwon to visit her classroom and recruit interview participants. </p>
 
-						<p>By September 2017, Kwon was ready to return to South Korea. She spent two weeks interviewing women for her research and visiting with her family — and thanks to the help she received from Nam and Yi, all her conversations went smoothly. </p>
-
 						<blockquote class="breakout-quote"><span class="left-quote">&ldquo;</span>By September 2017, Kwon was ready to return to South Korea. She spent two weeks interviewing women for her research and visiting with her family — and thanks to the help she received from Nam and Yi, all her conversations went smoothly.<span class="right-quote">&rdquo;</span></blockquote>
 
 						<h2>Putting her <br />thesis to the test</h2>
@@ -290,12 +288,15 @@
 
 						<p>“It’s an asset for people to know that this collection will be kept for the next generation,” Ryoo says. “Second-generation, third-generation Korean Americans will be able to access these resources, many of which are not available anywhere else in the U.S.”</p>
 
-						<h3>Why I give to the East Asia Library</h3>
-						Heija Ryoo, an East Asia Library cataloger and donor, helped resurface artifacts that had been hidden away for years.
 						<div id="heija-video">
 
 							<a data-lity href="https://www.youtube.com/watch?v=b7P3vganmHI?autoplay=1&rel=0&showinfo=0" class="center-block play"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/heija-ryoo.jpg' ?>" class="img-responsive">
+								<div class="video-caption">
+									<!-- Why I give to the East Asia Library -->
+									<!-- Heija Ryoo, an East Asia Library cataloger and donor, helped resurface artifacts that had been hidden away for years. -->
+								</div>
 								<div class="playit">
+								Why I give to the</br>East Asia Library
 									<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150" class="opening-slash">
 										<circle id="play-cir" fill="none" stroke="#fff" stroke-width="4.649" stroke-miterlimit="10" cx="75" cy="75" r="70"/>
 										<path id="play-tri" fill="#fff" d="M57.767,46.187L110.382,75l-52.616,28.816"/>
