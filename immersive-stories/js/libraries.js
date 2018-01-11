@@ -8,10 +8,12 @@ $(function(){
   // define movement of panels
   var wipeAnimation = new TimelineMax()
     .to("#stats-slides", 1,   {x: "-60%"});
+  var wipeAnimationSVG = new TimelineMax()
+    .to("#svg-stats", 1,   {x: "-20%"});
 
 
-  var wipeAnimationKorea = new TimelineMax()
-    .to("#women-slides", 1,   {x: "-40%"});
+  // var wipeAnimationKorea = new TimelineMax()
+  //   .to("#women-slides", 1,   {x: "-40%"});
 
   currentController = controllerLibraries;
 
@@ -42,20 +44,34 @@ $(function(){
       // .addIndicators()
       .addTo(controllerLibraries);
 
-
-
-      var koreaStats = new ScrollMagic.Scene({
-        triggerElement: '#korea-stats',
+          // create scene to pin and link animation
+    var horizonSVG = new ScrollMagic.Scene({
+        triggerElement: '#img-stats',
         triggerHook: 0,
-        duration: "100%",
+        duration: 1000,
       })
-      .setPin("#korea-stats")
-      .setTween(wipeAnimationKorea)
+      .setPin("#img-stats", {pushFollowers: 1})
+      .setTween(wipeAnimationSVG)
        // .setTween("#stats-slides", 0, {
        //      right: window.innerWidth,
        //      }) // trigger a TweenMax.to tween
       // .addIndicators()
       .addTo(controllerLibraries);
+
+
+
+      // var koreaStats = new ScrollMagic.Scene({
+      //   triggerElement: '#korea-stats',
+      //   triggerHook: 0,
+      //   duration: "100%",
+      // })
+      // .setPin("#korea-stats")
+      // .setTween(wipeAnimationKorea)
+      //  // .setTween("#stats-slides", 0, {
+      //  //      right: window.innerWidth,
+      //  //      }) // trigger a TweenMax.to tween
+      // // .addIndicators()
+      // .addTo(controllerLibraries);
 
 
 

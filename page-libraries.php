@@ -170,21 +170,14 @@
 
 		<!-- Korean Women Stats -->
 		<!-- Libraries Stats -->
-		<section id="korea-stats">
+		<section id="img-stats">
 
-			<div id="women-slides">
-					<div class="statistic stat-1">
-						<div class="stat-text">
-							<span class="large">67</span><span class="large plus">%</span><br />
-							of Korean television viewers watched the finale of "You and I"
-						</div>
+			<div id="svg-stats">
+					<div class="statsvg one">
+							<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/kdrama-stats2.svg' ?>">
 					</div>
-					<div class="statistic stat-2">
-						<div class="stat-text">
-							The drama "Dae Jan Geum" was distributed to<br />
-							<span class="large">91</span><br />
-							<span class="snap-right">countries</span>
-						</div>
+					<div class="statsvg two">
+							<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/kdrama-stats.svg' ?>">
 					</div>
 			</div>
 
