@@ -74,7 +74,19 @@
 		<!-- Libraries Stats -->
 		<section id="libraries-stats">
 
-			<div id="stats-slides">
+			<div id="svg-stats-1">
+				<div class="statsvg one">
+					<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS1.svg' ?>">
+				</div>
+				<div class="statsvg two">
+					<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS2.svg' ?>">
+				</div>
+				<div class="statsvg three">
+					<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS3.svg' ?>">
+				</div>
+			</div>
+
+			<!-- <div id="stats-slides">
 					<div class="statistic stat-1">
 						<div class="stat-text">
 							University Libraries provides<br />
@@ -96,7 +108,7 @@
 							Documents lent to scholars, government agencies and institutions around the world
 						</div>
 					</div>
-			</div>
+			</div> -->
 
 		</section>
 
@@ -169,7 +181,6 @@
 
 
 		<!-- Korean Women Stats -->
-		<!-- Libraries Stats -->
 		<section id="img-stats">
 
 			<div id="svg-stats">

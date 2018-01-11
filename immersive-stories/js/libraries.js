@@ -7,9 +7,9 @@ $(function(){
   var isMobile = ($(window).width() < 768) ? true : false;
   // define movement of panels
   var wipeAnimation = new TimelineMax()
-    .to("#stats-slides", 1,   {x: "-60%"});
+    .to("#svg-stats-1", 1,   {x: "-55%"});
   var wipeAnimationSVG = new TimelineMax()
-    .to("#svg-stats", 1,   {x: "-20%"});
+    .to("#svg-stats", 1,   {x: "-22%"});
 
 
   // var wipeAnimationKorea = new TimelineMax()
@@ -36,7 +36,7 @@ $(function(){
         triggerHook: 0,
         duration: 1000,
       })
-      .setPin("#libraries-stats")
+      .setPin("#libraries-stats", {pushFollowers: 1})
       .setTween(wipeAnimation)
        // .setTween("#stats-slides", 0, {
        //      right: window.innerWidth,
