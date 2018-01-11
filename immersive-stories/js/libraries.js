@@ -6,10 +6,6 @@ $(function(){
   var $windowHeight = $(window).height();
   var isMobile = ($(window).width() < 768) ? true : false;
   // define movement of panels
-  var wipeAnimation = new TimelineMax()
-    .to("#svg-stats-1", 1,   {x: "-55%"});
-  var wipeAnimationSVG = new TimelineMax()
-    .to("#svg-stats", 1,   {x: "-22%"});
 
 
   // var wipeAnimationKorea = new TimelineMax()
@@ -30,6 +26,12 @@ $(function(){
       })
       .addTo(controllerLibraries);
 
+
+if(!isMobile) {
+    var wipeAnimation = new TimelineMax()
+      .to("#svg-stats-1", 1,   {x: "-55%"});
+    var wipeAnimationSVG = new TimelineMax()
+      .to("#svg-stats", 1,   {x: "-22%"});
     // create scene to pin and link animation
     var horizon = new ScrollMagic.Scene({
         triggerElement: '#libraries-stats',
@@ -73,22 +75,11 @@ $(function(){
       // // .addIndicators()
       // .addTo(controllerLibraries);
 
-
+}
 
   $(window).resize(function(){
       introLibraries.update(true);
   });
-    if ( slideshowFlag ) {
-      $('.library-slideshow').slick({
-        lazyLoad: 'ondemand',
-        useTransform: true,
-        dots: true,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      });
-    }
 
   $( ".pause" ).click(function(e) { 
     var $this = $(e.target);        

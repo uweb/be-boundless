@@ -46,10 +46,6 @@ iframe {
     max-height: none;
 }
 
-.headline-gold {
-    color: @lightgold !important;
-}
-
 .container {
     @media (min-width: 1600px) { 
         width: 1570px;
@@ -632,6 +628,12 @@ iframe {
             }
         }
     }
+    @media(max-width:768px) {
+        height: 50vh;
+        a div {
+            display: none;
+        }
+    }
 }
 
 section {
@@ -642,6 +644,9 @@ section {
     width: 100%;
     #svg-stats, #svg-stats-1 {
         width: calc(75vw * 3);
+        @media(max-width:768px) {
+            width: 100vw;
+        }
         .statsvg {
             float: left;
             padding: 0 75px;
@@ -659,6 +664,18 @@ section {
             }
             &.three {
                 border-color: @lightgold;
+            }
+
+            @media(max-width:768px) {
+                // border-bottom: none;
+                border-bottom: @purple 3vh solid;
+                line-height: normal;
+                width: 100vw;
+                height: auto;
+                padding: 10% 75px;
+                img {
+                    width: auto;
+                }
             }
         }
     }
@@ -693,55 +710,55 @@ section {
 //         display: block;
 //     }
 // }
-#korea-stats{
-    #women-slides {
-        width: (75vw * 2);
-    }
-}
-.statistic {
-    float: left;
-    height: calc(~"100vh - 30px");
-    width: 75vw;
-    .stat-text {
-        font-family: @uni;
-        font-size: 1.5vw;
-        padding: 150px 15% 150px 15%;
-        height: 100%;
-        text-transform: uppercase;
-        .large {
-            font-size: 5.5vw;
-            line-height: normal;
-            font-family: "Encode Sans Normal", sans-serif;
-            font-weight: @ultra;
-        }
-    }
-    &.stat-1 {
-        color: @darkgold;
-        &:after {
-            background-color: @darkgold;
-        }
-    }
-    &.stat-2 {
-        color: @purple;
-        &:after{
-            background-color: @purple;
-        }
-    }
-    &.stat-3 {
-        color: @lightgold;
-        &:after {
-            background-color: @lightgold;
-        }
-    }
-    &:after{
-        content: "";
-        display: block;
-        position: absolute;
-        //background-color: @purple;
-        height: 30px;
-        width: 100%;
-    }
-}
+// #korea-stats{
+//     #women-slides {
+//         width: (75vw * 2);
+//     }
+// }
+// .statistic {
+//     float: left;
+//     height: calc(~"100vh - 30px");
+//     width: 75vw;
+//     .stat-text {
+//         font-family: @uni;
+//         font-size: 1.5vw;
+//         padding: 150px 15% 150px 15%;
+//         height: 100%;
+//         text-transform: uppercase;
+//         .large {
+//             font-size: 5.5vw;
+//             line-height: normal;
+//             font-family: "Encode Sans Normal", sans-serif;
+//             font-weight: @ultra;
+//         }
+//     }
+//     &.stat-1 {
+//         color: @darkgold;
+//         &:after {
+//             background-color: @darkgold;
+//         }
+//     }
+//     &.stat-2 {
+//         color: @purple;
+//         &:after{
+//             background-color: @purple;
+//         }
+//     }
+//     &.stat-3 {
+//         color: @lightgold;
+//         &:after {
+//             background-color: @lightgold;
+//         }
+//     }
+//     &:after{
+//         content: "";
+//         display: block;
+//         position: absolute;
+//         //background-color: @purple;
+//         height: 30px;
+//         width: 100%;
+//     }
+// }
 
 
 
@@ -797,6 +814,10 @@ section {
         left: 50%;
         bottom: 0;
         margin-left: -100px;
+        @media(max-width:768px) {
+            margin-left: -50px;
+            border-width: 0 50px 30px 50px;
+        }
     }
 }
 
