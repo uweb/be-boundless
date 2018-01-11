@@ -365,6 +365,33 @@ html {
       font-size     : 22px;
       text-transform: none;
     }
+
+    .banner {
+      align-items: stretch;
+      background-color: #b7a57a;
+      display: flex;
+
+      p {
+        color: #fff;
+        flex: 0 1 60%;
+        font-size: 12px;
+        line-height: 1.8em;
+        margin: 20px 35px;
+      }
+
+      a {
+        background-color: #84754c;
+        color: #fff;
+        display: block;
+        flex: 0 1 40%;
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        &:hover {
+          background-color: #483584;
+        }
+      }
+    }
   }
 
   @media @phone-only {
@@ -611,6 +638,8 @@ html {
   }
 
 }
+
+
 
 /*******************************
 * SECTION - VIDEO-INTRO *

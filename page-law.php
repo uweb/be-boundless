@@ -96,7 +96,10 @@
             <p>According to the latest information available from the Washington Department of Health, drug- and alcohol-related deaths in Washington state amount to 32.4 per 100,000 people annually. In Tulalip, that number skyrockets to 278.7 per 100,000 people — and as the Tulalip Tribes and Kilgore recognized, years of traditional punishment haven't proved effective at breaking the cycle.</p>
             <p>In search of a more supportive and productive path for nonviolent offenders imprisoned on drug charges, Kilgore worked with Tulalip community members and a team of professionals to kick-start a tribal drug court. In January 2017, the Healing to Wellness Court welcomed its first participants.</p>
 
-            <p style="text-align: center;">[INSERT BANNER]</p>
+            <div class="banner">
+              <p>Helping people achieve emotional, psychological and social well-being through motivation and behavior change is a core goal of the UW’s Population Health Initiative, which aims to advance the health of communities worldwide.</p>
+              <a href="http://www.washington.edu/populationhealth">Give Now</a>
+            </div>
 
             <h2 class="headline">A holistic path to "wellbriety"</h2>
             <p>Each week, stories of addiction come across Kilgore's desk, slipped inside a packet with a cover sheet from the police department outlining each offender's history.</p>
