@@ -21,7 +21,7 @@
 <div id="immersive-body">
 	<section class="intro" id="intro-vid">
 		<div id="version-switch">
-			<button id="korean" href="libraries" class="animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">View English version</button>
+			<button id="korean" href="research-korean-dramas" class="animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">View English version</button>
 		</div>
 		<button id="pause">Pause</button>
 		<video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/built-env/header.jpg' ?>" class="fullscreen-bg__video">
@@ -307,7 +307,7 @@
 				</div> 
 			</div>
 			<div id="version-switch">
-				<button id="korean" href="libraries" class="animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">View English version</button>
+				<button id="korean" href="research-korean-dramas" class="animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">View English version</button>
 			</div>
 		</section>
 
