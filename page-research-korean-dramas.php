@@ -42,7 +42,7 @@
 		</section>
 	</section>
 	<div class="version-switch">
-		<a href="../libraries-korean"><button id="korean" href="../libraries-korean" class="animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">View Korean version</button></a>
+		<a href="../research-korean-dramas-kr"><button id="korean" href="../research-korean-dramas-kr" class="animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">View Korean version</button></a>
 	</div>
 
 	<main id="main_content">
@@ -308,7 +308,7 @@
 						</div>
 
 						<div class="version-switch">
-							<a href="../libraries-korean"><button id="korean" href="../libraries-korean" class="animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">View Korean version</button></a>
+							<a href="../research-korean-dramas-kr"><button id="korean" href="../research-korean-dramas-kr" class="animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">View Korean version</button></a>
 						</div>
 					</div>
 				</div> 
