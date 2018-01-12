@@ -94,7 +94,20 @@ html {
       margin    : 0 auto;
       width     : 80%;
 
-      h1 {}
+      h1 {
+        color: #fff;
+        font-size: 52px;
+
+        @media @tablet-landscape-up {
+          font-size: 80px;
+        }
+      }
+
+      h2 {
+        color: #fff;
+        margin-top: 0;
+        text-transform: uppercase;
+      }
 
       p {
         border-top   : 1px solid white;
@@ -205,6 +218,13 @@ html {
       border-top    : 1px solid white;
       border-bottom : 1px solid white;
       text-shadow   : 0 0 3px rgba(37,37,37,0.65);
+
+      .source {
+        font-size: 16px;
+        position: absolute;
+        right: 0;
+        bottom: -30px;
+      }
     }
 
     .headline:after,
@@ -317,10 +337,12 @@ html {
   }
 }
 /*******************************
-* SECTION - BODY *
+* SECTION - INTRO + BODY *
 *******************************/
-#section-body {
+#section-body,
+#section-story {
   background: #efeeea;
+  position: relative;
 
   .callout {
     width: 100%;
@@ -342,6 +364,56 @@ html {
       color         : #3e3d3d;
       font-size     : 22px;
       text-transform: none;
+    }
+
+    .banner {
+      background-color: #b7a57a;
+      display: flex;
+
+      p {
+        color: #fff;
+        flex: 0 1 60%;
+        font-size: 12px;
+        line-height: 1.8em;
+        margin: 20px 35px;
+      }
+
+      a {
+        background-color: #84754c;
+        color: #fff;
+        display: flex;
+        flex: 0 1 40%;
+        flex-direction: column;
+        font-size: 30px;
+        font-weight: bold;
+        justify-content: center;
+        line-height: 1.15em;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        z-index: 1;
+
+        &::before {
+          background-color: #84754c;
+          content: '';
+          height: 100%;
+          position: absolute;
+          right: 0;
+          transition: .25s;
+          transform: skew(-15deg, 0);
+          transform-origin: top left;
+          width: 100%;
+          z-index: -1;
+        }
+
+        &:hover {
+          background-color: #483584;
+
+          &::before  {
+            background-color: #483584;
+          }
+        }
+      }
     }
   }
 
@@ -590,6 +662,8 @@ html {
 
 }
 
+
+
 /*******************************
 * SECTION - VIDEO-INTRO *
 *******************************/
@@ -721,6 +795,12 @@ html {
     height     : 100%;
 
     h1 {}
+
+    h2 {
+      color: #fff;
+      margin-top: 0;
+      text-transform: uppercase;
+    }
 
     p {
       font-size    : 18px;

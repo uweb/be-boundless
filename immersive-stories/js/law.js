@@ -120,10 +120,8 @@ $(function () {
   // animation vars
   var before1 = CSSRulePlugin.getRule("#section-map .item-1 .headline:before");
   var before2 = CSSRulePlugin.getRule("#section-map .item-2 .headline:before");
-  var before3 = CSSRulePlugin.getRule("#section-map .item-3 .headline:before");
   var after1 = CSSRulePlugin.getRule("#section-map .item-1 .headline:after");
   var after2 = CSSRulePlugin.getRule("#section-map .item-2 .headline:after");
-  var after3 = CSSRulePlugin.getRule("#section-map .item-3 .headline:after");
 
 
 
@@ -131,41 +129,12 @@ $(function () {
    * Animation: Map
    ***************************/
 
-  // graph line SVG
-  var graphPaths = $('#map-graph-line .graph-path'),
-    graphCircs = $('#map-graph-line .graph-circ');
-
-  for (var i = 0; i < graphPaths.length; i++) {
-    initSvgPath(graphPaths[i]);
-  }
-
-  function initSvgPath(path) {
-    var pathLength = path.getTotalLength();
-    path.style.strokeDasharray = pathLength;
-    path.style.strokeDashoffset = pathLength;
-    path.style.opacity = 1;
-  }
-
   // build tween
   var tweenMap = new TimelineMax()
-    // graph svg lines
-    .to(graphPaths[0], 0.75, { css: { strokeDashoffset: 0 } }, 0)
-    .to(graphPaths[1], 0.75, { css: { strokeDashoffset: 0 } }, 0.75)
-    .to(graphPaths[2], 0.75, { css: { strokeDashoffset: 0 } }, 1.5)
-    .to(graphPaths[3], 0.75, { css: { strokeDashoffset: 0 } }, 2.25)
-
-    // graph svg points
-    .from(graphCircs[0], 0.25, { scale: 0, transformOrigin: '50% 50%', ease: Back.easeOut }, 0)
-    .from(graphCircs[1], 0.25, { scale: 0, transformOrigin: '50% 50%', ease: Back.easeOut }, 0.75)
-    .from(graphCircs[2], 0.25, { scale: 0, transformOrigin: '50% 50%', ease: Back.easeOut }, 1.5)
-    .from(graphCircs[3], 0.25, { scale: 0, transformOrigin: '50% 50%', ease: Back.easeOut }, 2.25)
-    .from(graphCircs[4], 0.25, { scale: 0, transformOrigin: '50% 50%', ease: Back.easeOut }, 3)
 
     // headline fades
     .to("#section-map .item-1", 1, { opacity: 0 }, 0)
     .to("#section-map .item-2", 1, { opacity: 1 }, 1)
-    .to("#section-map .item-2", 1, { opacity: 0 }, 2)
-    .to("#section-map .item-3", 1, { opacity: 1 }, 3)
 
     // border animation
     .to(before1, 1, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, 0)
@@ -173,18 +142,10 @@ $(function () {
 
     .from(before2, 1, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, 1)
     .from(after2, 1, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, 1)
-    .to(before2, 1, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, 2)
-    .to(after2, 1, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, 2)
-
-    .from(before3, 1, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, 3)
-    .from(after3, 1, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, 3)
 
     // image scaling
     .to("#section-map .background-1", 1, { scale: 1.2, opacity: 0, transformOrigin: '15% 15%' }, 1)
     .to("#section-map .background-2", 1, { scale: 1, transformOrigin: '15% 15%' }, 1)
-    .to("#section-map .background-2", 1, { scale: 1.2, opacity: 0, transformOrigin: '15% 15%' }, 3)
-    .to("#section-map .background-3", 1, { scale: 1, transformOrigin: '15% 15%' }, 3)
-    .to("#section-map .background-graph", 1, { opacity: 0 }, 3)
 
   var sceneMap = new ScrollMagic.Scene({
       triggerElement: '#section-map',
