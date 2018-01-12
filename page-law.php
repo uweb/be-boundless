@@ -98,7 +98,7 @@
 
             <div class="banner">
               <p>Helping people achieve emotional, psychological and social well-being through motivation and behavior change is a core goal of the UW’s Population Health Initiative, which aims to advance the health of communities worldwide.</p>
-              <a href="http://www.washington.edu/populationhealth">Give Now</a>
+              <a href="http://www.washington.edu/populationhealth"><span>Give Now</span></a>
             </div>
 
             <h2 class="headline">A holistic path to "wellbriety"</h2>

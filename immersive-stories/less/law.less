@@ -367,7 +367,6 @@ html {
     }
 
     .banner {
-      align-items: stretch;
       background-color: #b7a57a;
       display: flex;
 
@@ -382,13 +381,37 @@ html {
       a {
         background-color: #84754c;
         color: #fff;
-        display: block;
+        display: flex;
         flex: 0 1 40%;
+        flex-direction: column;
         font-size: 30px;
+        font-weight: bold;
+        justify-content: center;
+        line-height: 1.15em;
+        position: relative;
         text-align: center;
         text-transform: uppercase;
+        z-index: 1;
+
+        &::before {
+          background-color: #84754c;
+          content: '';
+          height: 100%;
+          position: absolute;
+          right: 0;
+          transition: .25s;
+          transform: skew(-15deg, 0);
+          transform-origin: top left;
+          width: 100%;
+          z-index: -1;
+        }
+
         &:hover {
           background-color: #483584;
+
+          &::before  {
+            background-color: #483584;
+          }
         }
       }
     }
