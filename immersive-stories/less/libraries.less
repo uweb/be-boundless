@@ -100,23 +100,47 @@ iframe {
     }
 }
 
-#version-switch {
+.version-switch {
     position: absolute;
     width: 100%;
     background-color: rgba(0,0,0,0.1);
-    top: 0;
-    height: 85px;
+    top: 171px;
+    height: 75px;
     z-index: 1;
     button {
         position: absolute;
-        padding: 5px 30px;
+        padding: 5px 25px;
         border: none;
         background-color: #4c2b85;
         color: white;
         -webkit-transition: all .2s linear;
         transition: all .2s linear;
-        top: 20px;
+        top: 15px;
         right: 10px;
+    }
+    @media (max-width: 768px) {
+        background-color: transparent;
+        top: 60px;
+        button {
+            right: auto;
+            left: 10px;
+            font-size: 14px;
+        }
+    }
+}
+
+.grey .version-switch {
+    top: auto;
+    bottom: 0;
+    @media (max-width: 768px) {
+
+        position: inherit;
+        height: auto;
+        margin-bottom: 25px;
+        button {
+            position: inherit;
+            width: 100%;
+        }
     }
 }
 
@@ -127,7 +151,8 @@ iframe {
 
 .intro {
     #pause {
-        top: 100px;
+        bottom: 50px;
+        top: auto;
     }
     display: flex;
     align-items: center;
@@ -418,6 +443,7 @@ iframe {
 }
 
 #heija-video{
+    margin-bottom: 50px;
     a {
         position: relative;
         justify-content: center;
@@ -440,12 +466,15 @@ iframe {
             // text-shadow: 0 0 3px rgba(37,37,37,0.65);
             //width: calc(~"50vw - 200px");
         }
+
         span {
             display: block;
-            color: white;
+            // color: white;
+            color: @purple;
             font-family: @uni;
             text-transform: uppercase;
             font-size: 26px;
+            font-weight: bold;
             // text-shadow: 0 0 3px rgba(37,37,37,0.65);
 
         }
@@ -459,7 +488,7 @@ iframe {
             }
             svg {
                 transform-origin: center center;
-                text-shadow: 0 0 3px rgba(37,37,37,0.65);
+                // text-shadow: 0 0 3px rgba(37,37,37,0.65);
                 //.scale(1.2, 1.2);
             }
             div, span {
@@ -477,10 +506,10 @@ iframe {
         a {
             margin-top: 0;
             svg {
-                .scale(0.5,0.5);
+                .scale(0.7,0.7);
                 right: -20px;
             }
-            div {
+            div, span {
                 font-size: 17px;
                 // margin-right: 80px;
             }
@@ -495,7 +524,7 @@ iframe {
         justify-content: center;
         a {
             svg {
-                .scale(0.6,0.6);
+                .scale(0.8,0.8);
             }
             div {
                 font-size: 22px;
@@ -505,20 +534,23 @@ iframe {
     .playit {
         position: absolute;
         top: 20%;
-        right: 0;
-        text-shadow: 0 0 3px rgba(37,37,37,0.65);
-            color: white;
+        left: 66%;
+        // text-shadow: 0 0 3px rgba(37,37,37,0.65);
+            // color: white;
+            color: @purple;
             font-size: 25px;
             display: block;
             text-align: center;
     }
-    .video-caption {
-        color: white;
-        font-weight: bold;
-        font-family: @encode;
-        position: absolute;
-        top: 20%;
-        right: 30px;
+
+    @media (max-width: 768px ) {
+        .video-caption {
+            display: none;
+        }
+        .playit {
+            top: 0;
+        }
+        
     }
 }
 
@@ -639,6 +671,9 @@ section {
         }
 
     }
+    @media (max-width: 768px ) {
+        margin-top: 12vh;
+    }
 }
 
 
@@ -751,7 +786,7 @@ section {
             text-transform: uppercase;
             margin: 0;
             font-size: 14px;
-            margin-bottom: 150px;
+            margin-bottom: 30px;
             -webkit-font-smoothing: auto;
             &:before {
                     // content: '\201D';
@@ -788,6 +823,10 @@ section {
                 left: -70px;
                 line-height: 0.8;
                 display: inline-block;
+            }
+
+            @media(min-width:768px) {
+                margin-bottom: 150px;
             }
             
         }
@@ -951,9 +990,9 @@ section {
                 font-size: 20px;
                 line-height: 1.3;
                 position: relative;
-                text-indent: 25px;
+                // text-indent: 25px;
                 margin-bottom: 20px;
-                margin-top: 30px;
+                // margin-top: 30px;
                 padding-left: 0;
                 span {
                     font-size: 40px;

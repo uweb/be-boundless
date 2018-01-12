@@ -20,10 +20,6 @@
 
 <div id="immersive-body">
 	<section class="intro" id="intro-vid">
-
-		<div id="version-switch">
-			<button id="korean" href="libraries-korean" class="animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">View Korean version</button>
-		</div>
 		<button id="pause">Pause</button>
 		<video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/header-kristy-kwon.jpg' ?>" class="fullscreen-bg__video">
 			<source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/libraries/header-kristy-kwon.mp4' ?>" type="video/mp4">
@@ -45,6 +41,9 @@
 			</div>
 		</section>
 	</section>
+	<div class="version-switch">
+		<a href="../libraries-korean"><button id="korean" href="../libraries-korean" class="animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">View Korean version</button></a>
+	</div>
 
 	<main id="main_content">
 
@@ -239,14 +238,14 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
-						<h2>Returning to <br />her roots</h2>
+						<h2>Returning to her roots</h2>
 						<p>To make the most of her time in Seoul, Kwon wanted to improve her spoken and written Korean — and make sure that her research methods wouldn’t clash with Korean societal norms.</p>
 
 						<p>Yi, who travels to Korea frequently, was happy to help prepare Kwon for the cultural aspects of her trip. She also introduced Kwon to Hwasook Nam, the James B. Palais Endowed Associate Professor in Korea Studies at the Jackson School and the Department of History. Nam connected Kwon with a colleague at Ewha Womans University in Seoul who invited Kwon to visit her classroom and recruit interview participants. </p>
 
 						<p class="callout">By September 2017, Kwon was ready to return to South Korea. She spent two weeks interviewing women for her research and visiting with her family — and thanks to the help she received from Nam and Yi, all her conversations went smoothly.</p>
 
-						<h2>Putting her <br />thesis to the test</h2>
+						<h2>Putting her thesis to the test</h2>
 						<p>There was a lot riding on the trip: As she analyzes her interviews over the next few months, Kwon might find that the data she collected disproves her hypothesis entirely.</p>
 
 						<p>That may sound defeating, but Kwon’s thesis adviser believes it can create another opportunity. “I love it when that happens, because it means we’re on to something,” says Porter. “Kristy is really seeing how we let data speak to us.”</p>
@@ -267,7 +266,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 copy">
-						<h2>Preserving a <br />historic collection</h2>
+						<h2>Preserving a historic collection</h2>
 						<p>The extensive Korean Collection that Kristy Kwon used for her research is maintained in large part because of donors like Heija Ryoo, who also works as a cataloger at the East Asia Library.</p>
 
 						<p>When she noticed a glut of backlogged items in the Korean Collection, Ryoo saw an opportunity. In partnership with librarian Hyokyoung Yi, she established the <a href="http://www.lib.washington.edu/support/priorities/other-needs/korean-cataloging-project">Korean Cataloging Fund</a>. Supported by generous local donors, the fund enables the East Asia Library to enter backlogged items into the University Libraries online database and WorldCat, an international bibliographic database. These resources are now available to students, researchers, faculty and other users worldwide for the first time in decades.</p>
@@ -279,12 +278,8 @@
 						<div id="heija-video">
 
 							<a data-lity href="https://www.youtube.com/watch?v=Re83dft9EI0?autoplay=1&rel=0&showinfo=0" class="center-block play"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/heija-ryoo.jpg' ?>" class="img-responsive">
-								<div class="video-caption">
-									<!-- Why I give to the East Asia Library -->
-									<!-- Heija Ryoo, an East Asia Library cataloger and donor, helped resurface artifacts that had been hidden away for years. -->
-								</div>
 								<div class="playit">
-								Why I give to the</br>East Asia Library
+									<div class="video-caption">Why I give to the</br>East Asia Library</div>
 									<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150" class="opening-slash">
 										<circle id="play-cir" fill="none" stroke="#fff" stroke-width="4.649" stroke-miterlimit="10" cx="75" cy="75" r="70"/>
 										<path id="play-tri" fill="#fff" d="M57.767,46.187L110.382,75l-52.616,28.816"/>
@@ -293,11 +288,12 @@
 								</div>
 							</a>
 						</div>
+
+						<div class="version-switch">
+							<a href="../libraries-korean"><button id="korean" href="../libraries-korean" class="animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">View Korean version</button></a>
+						</div>
 					</div>
 				</div> 
-			</div>
-			<div id="version-switch">
-				<button id="korean" href="libraries-korean" class="animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">View Korean version</button>
 			</div>
 		</section>
 
