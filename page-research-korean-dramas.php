@@ -97,7 +97,7 @@
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3">
 						<!-- INSERT SLASH BEFORE PLAY BUTTON -->
-						<a data-lity href="https://www.youtube.com/embed/QJbElftoy4E?autoplay=1&rel=0&showinfo=0" class="center-block play">
+						<a data-lity href="https://www.youtube.com/embed/-zYESWG9HxE?autoplay=1&rel=0&showinfo=0" class="center-block play">
 							<div><h3>Taking research to the next level</h3>
 							UW senior Kristy Kwon and Korean Studies librarian Hyokyoung Yi talk about Kwon’s research on Korean TV dramas.</div>
 							<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150" class="opening-slash">
@@ -235,26 +235,44 @@
 
 		<!-- Returning to her roots Text + Breakout Quote + Putting her thesis to the test Text -->
 		<section class="text-block transparent no-pad">
-			<div class="container">
+			<div class="container copy">
 				<div class="row">
-					<div class="col-md-10 col-md-offset-1 copy">
-						<h2>Returning to her roots</h2>
-						<p>To make the most of her time in Seoul, Kwon wanted to improve her spoken and written Korean — and make sure that her research methods wouldn’t clash with Korean societal norms.</p>
+					<div class="col-md-10 col-md-offset-1 ">
+						<div class="row">
+							<div class="col-md-12"><h2>Returning to <br />her roots</h2></div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								
+								<p>To make the most of her time in Seoul, Kwon wanted to improve her spoken and written Korean — and make sure that her research methods wouldn’t clash with Korean societal norms.</p>
 
-						<p>Yi, who travels to Korea frequently, was happy to help prepare Kwon for the cultural aspects of her trip. She also introduced Kwon to Hwasook Nam, the James B. Palais Endowed Associate Professor in Korea Studies at the Jackson School and the Department of History. Nam connected Kwon with a colleague at Ewha Womans University in Seoul who invited Kwon to visit her classroom and recruit interview participants. </p>
+								<p>Yi, who travels to Korea frequently, was happy to help prepare Kwon for the cultural aspects of her trip. She also introduced Kwon to Hwasook Nam, the James B. Palais Endowed Associate Professor in Korea Studies at the Jackson School and the Department of History. Nam connected Kwon with a colleague at Ewha Womans University in Seoul who invited Kwon to visit her classroom and recruit interview participants. </p>
 
-						<p class="callout">By September 2017, Kwon was ready to return to South Korea. She spent two weeks interviewing women for her research and visiting with her family — and thanks to the help she received from Nam and Yi, all her conversations went smoothly.</p>
+								<p class="callout">By September 2017, Kwon was ready to return to South Korea. She spent two weeks interviewing women for her research and visiting with her family — and thanks to the help she received from Nam and Yi, all her conversations went smoothly.</p>
 
-						<h2>Putting her thesis to the test</h2>
-						<p>There was a lot riding on the trip: As she analyzes her interviews over the next few months, Kwon might find that the data she collected disproves her hypothesis entirely.</p>
 
-						<p>That may sound defeating, but Kwon’s thesis adviser believes it can create another opportunity. “I love it when that happens, because it means we’re on to something,” says Porter. “Kristy is really seeing how we let data speak to us.”</p>
+							</div>                 
+							<div class="col-md-5 col-md-offset-1">
 
-						<p>Kwon will defend her thesis in the spring, and she plans to apply for an undergraduate research award through the University Libraries. After graduation, she hopes to earn a J.D. in immigrant or criminal law and study the impact of U.S. government policies on the lives of marginalized communities. </p>
-						
-						<p>She credits the East Asia Library with providing crucial help for her work, as well as the connections to pursue a topic so close to her heart. “I want to use this research to show that although South Korea created a lot of laws to ensure positive change for women, it’s not enough,” Kwon says. “We need to keep having these conversations.”</p>
-						
-						<p>Through the University Libraries, students like Kwon gain access to knowledge in every format from everywhere around the globe — and the journey that begins with undergraduate research can end up changing the world.</p>
+								<div class="arrow-right"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/kristy-seoul.jpg' ?>" alt="Hyokyoung Yi"></div>
+								<div class="caption">Kristy Kwon visitng Seoul, Korea</div>
+							</div> 
+						</div>
+						<div class="row">
+
+							<div class="col-md-12">
+								<h2>Putting her thesis to the test</h2>
+								<p>There was a lot riding on the trip: As she analyzes her interviews over the next few months, Kwon might find that the data she collected disproves her hypothesis entirely.</p>
+
+								<p>That may sound defeating, but Kwon’s thesis adviser believes it can create another opportunity. “I love it when that happens, because it means we’re on to something,” says Porter. “Kristy is really seeing how we let data speak to us.”</p>
+
+								<p>Kwon will defend her thesis in the spring, and she plans to apply for an undergraduate research award through the University Libraries. After graduation, she hopes to earn a J.D. in immigrant or criminal law and study the impact of U.S. government policies on the lives of marginalized communities. </p>
+								
+								<p>She credits the East Asia Library with providing crucial help for her work, as well as the connections to pursue a topic so close to her heart. “I want to use this research to show that although South Korea created a lot of laws to ensure positive change for women, it’s not enough,” Kwon says. “We need to keep having these conversations.”</p>
+								
+								<p>Through the University Libraries, students like Kwon gain access to knowledge in every format from everywhere around the globe — and the journey that begins with undergraduate research can end up changing the world.</p>
+							</div>
+						</div>
 					</div>
 				</div> 
 			</div>   
