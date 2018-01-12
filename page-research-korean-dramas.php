@@ -20,12 +20,13 @@
 
 <div id="immersive-body">
 	<section class="intro" id="intro-vid">
+
 		<div id="version-switch">
 			<button id="korean" href="libraries-korean" class="animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">View Korean version</button>
 		</div>
 		<button id="pause">Pause</button>
-		<video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/built-env/header.jpg' ?>" class="fullscreen-bg__video">
-			<source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/built-env/header-slow.mp4' ?>" type="video/mp4">
+		<video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/header-kristy-kwon.jpg' ?>" class="fullscreen-bg__video">
+			<source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/libraries/header-kristy-kwon.mp4' ?>" type="video/mp4">
 		</video>
 
 		<div class="intro-body">
@@ -49,9 +50,9 @@
 
 		<!-- Kristy Intro + Slideshow -->
 		<section class="text-block transparent no-pad">
-			<div class="container">
+			<div class="container copy">
 				<div class="row">
-					<div class="col-md-5 col-md-offset-1 copy">
+					<div class="col-md-5 col-md-offset-1">
 
 						<p>When Kristy Kwon was 6 years old, her family moved from South Korea to Kent, Washington. Until last year, she hadn’t had the chance to go back — so when it came time to plan her senior honors thesis at the University of Washington, the economics and international studies major knew she wanted to study the homeland she’d always heard about.</p>
 
@@ -74,7 +75,7 @@
 		<!-- Libraries Stats -->
 		<section id="libraries-stats">
 
-			<div id="svg-stats-1">
+			<!-- <div id="svg-stats-1">
 				<div class="statsvg one">
 					<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS1.svg' ?>">
 				</div>
@@ -84,30 +85,50 @@
 				<div class="statsvg three">
 					<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS3.svg' ?>">
 				</div>
+			</div> -->
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 stat-one">
+						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS_LIBRARIES_SVG-01.svg' ?>">
+					</div>
+
+					<div class="col-md-4 stat-two">
+						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS_LIBRARIES_SVG-02.svg' ?>">
+					</div>
+					
+					<div class="col-md-4 stat-three">
+						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS_LIBRARIES_SVG-03.svg' ?>">
+					</div>
+				</div>
 			</div>
 
-			<!-- <div id="stats-slides">
-					<div class="statistic stat-1">
+<!-- 			<div class="container">
+				<div id="stats-slides" class="row">
+					<div class="col-md-4 statistic stat-1">
 						<div class="stat-text">
-							University Libraries provides<br />
+							University libraries provides<br />
 							<span class="large">9,000,000</span><span class="large plus">+</span><br />
 							total volumes (inclduing e-books)
 						</div>
 					</div>
-					<div class="statistic stat-2">
+
+					<div class="col-md-4 statistic stat-2">
 						<div class="stat-text">
-							The East Asia Library Houses<br />
+							The East Asia Library houses<br />
 							<span class="large">770,000</span><span class="large plus">+</span><br />
-							<span class="snap-right">Volumes</span>
+							<span class="snap-right">volumes</span>
 						</div>
 					</div>
-					<div class="statistic stat-3">
+
+					<div class="col-md-4 statistic stat-3">
 						<div class="stat-text">
-							University Libraries provides<br />
+							University libraries has lent<br />
 							<span class="large">11,000</span><span class="large plus">+</span><br />
-							Documents lent to scholars, government agencies and institutions around the world
+							documents to scholars, government agencies and institutions around the world
 						</div>
 					</div>
+				</div>
 			</div> -->
 
 		</section>
@@ -181,15 +202,18 @@
 
 
 		<!-- Korean Women Stats -->
-		<section id="img-stats">
+		<section id="korea-stats">
 
-			<div id="svg-stats">
-					<div class="statsvg one">
-							<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/kdrama-stats2.svg' ?>">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 stat-one">
+						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS_LIBRARIES_SVG-04.svg' ?>">
 					</div>
-					<div class="statsvg two">
-							<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/kdrama-stats.svg' ?>">
+
+					<div class="col-md-6 stat-two">
+						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS_LIBRARIES_SVG-05.svg' ?>">
 					</div>
+				</div>
 			</div>
 
 		</section>
@@ -260,7 +284,7 @@
 
 						<p>Yi, who travels to Korea frequently, was happy to help prepare Kwon for the cultural aspects of her trip. She also introduced Kwon to Hwasook Nam, the James B. Palais Endowed Associate Professor in Korea Studies at the Jackson School and the Department of History. Nam connected Kwon with a colleague at Ewha Womans University in Seoul who invited Kwon to visit her classroom and recruit interview participants. </p>
 
-						<blockquote class="breakout-quote"><span class="left-quote">&ldquo;</span>By September 2017, Kwon was ready to return to South Korea. She spent two weeks interviewing women for her research and visiting with her family — and thanks to the help she received from Nam and Yi, all her conversations went smoothly.<span class="right-quote">&rdquo;</span></blockquote>
+						<p class="callout">By September 2017, Kwon was ready to return to South Korea. She spent two weeks interviewing women for her research and visiting with her family — and thanks to the help she received from Nam and Yi, all her conversations went smoothly.</p>
 
 						<h2>Putting her <br />thesis to the test</h2>
 						<p>There was a lot riding on the trip: As she analyzes her interviews over the next few months, Kwon might find that the data she collected disproves her hypothesis entirely.</p>
