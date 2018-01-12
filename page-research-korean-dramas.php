@@ -13,7 +13,7 @@
 	$scripts .= "<script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/libraries/animsition.min.js' type='text/javascript'></script>";
 	$storyCodes = 'KORCAT,LIBDIS'; //,LSEEND,RENEWU,LIBFHL,LIBBOT,BUSFUN,LIBRAR
 	$storyAppeal = 'Support undergraduate research and the future of invaluable library collections by contributing to the University Libraries.';
-	get_header( "campaign-v2" ); 
+	get_header( "campaign-v2" );
 
 
 ?>

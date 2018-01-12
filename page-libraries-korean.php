@@ -72,7 +72,6 @@
 		</section>
 
 		<!-- Libraries Stats -->
-		<section id="libraries-stats">
 
 			<div id="stats-slides">
 					<div class="statistic stat-1">
