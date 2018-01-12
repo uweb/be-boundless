@@ -11,7 +11,7 @@
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/libraries/animsition.min.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/libraries.css' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/libraries.min.js' type='text/javascript'></script>";
 	$scripts .= "<script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/libraries/animsition.min.js' type='text/javascript'></script>";
-	$storyCodes = 'KORCAT,LIBDIS'; //,LSEEND,RENEWU,LIBFHL,LIBBOT,BUSFUN,LIBRAR
+	$storyCodes = 'KORCAT,LIBDIS';
 	$storyAppeal = 'Support undergraduate research and the future of invaluable library collections by contributing to the University Libraries.';
 	get_header( "campaign-v2" );
 
@@ -75,61 +75,21 @@
 		<!-- Libraries Stats -->
 		<section id="libraries-stats">
 
-			<!-- <div id="svg-stats-1">
-				<div class="statsvg one">
-					<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS1.svg' ?>">
-				</div>
-				<div class="statsvg two">
-					<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS2.svg' ?>">
-				</div>
-				<div class="statsvg three">
-					<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS3.svg' ?>">
-				</div>
-			</div> -->
-
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4 stat-one">
+					<div class="col-md-6 stat-one">
 						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS_LIBRARIES_SVG-01.svg' ?>">
 					</div>
 
-					<div class="col-md-4 stat-two">
+					<div class="col-md-6 stat-two">
 						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS_LIBRARIES_SVG-02.svg' ?>">
 					</div>
 					
-					<div class="col-md-4 stat-three">
+					<!-- <div class="col-md-4 stat-three">
 						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS_LIBRARIES_SVG-03.svg' ?>">
-					</div>
+					</div> -->
 				</div>
 			</div>
-
-<!-- 			<div class="container">
-				<div id="stats-slides" class="row">
-					<div class="col-md-4 statistic stat-1">
-						<div class="stat-text">
-							University libraries provides<br />
-							<span class="large">9,000,000</span><span class="large plus">+</span><br />
-							total volumes (inclduing e-books)
-						</div>
-					</div>
-
-					<div class="col-md-4 statistic stat-2">
-						<div class="stat-text">
-							The East Asia Library houses<br />
-							<span class="large">770,000</span><span class="large plus">+</span><br />
-							<span class="snap-right">volumes</span>
-						</div>
-					</div>
-
-					<div class="col-md-4 statistic stat-3">
-						<div class="stat-text">
-							University libraries has lent<br />
-							<span class="large">11,000</span><span class="large plus">+</span><br />
-							documents to scholars, government agencies and institutions around the world
-						</div>
-					</div>
-				</div>
-			</div> -->
 
 		</section>
 
@@ -138,7 +98,7 @@
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3">
 						<!-- INSERT SLASH BEFORE PLAY BUTTON -->
-						<a data-lity href="https://www.youtube.com/embed/7AYdC1iNhZs?autoplay=1&rel=0&showinfo=0" class="center-block play">
+						<a data-lity href="https://www.youtube.com/embed/QJbElftoy4E?autoplay=1&rel=0&showinfo=0" class="center-block play">
 							<div><h3>Taking research to the next level</h3>
 							UW senior Kristy Kwon and Korean Studies librarian Hyokyoung Yi talk about Kwon’s research on Korean TV dramas.</div>
 							<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150" class="opening-slash">
@@ -147,10 +107,10 @@
 							</svg>
 							<span>Play Full Video _</span>
 						</a>
-					</div><!-- .col-md-10 .col-md-offset-1 -->
-				</div><!-- .row -->
-			</div><!-- .container -->
-		</section><!-- #video .text-block .white -->
+					</div>
+				</div>
+			</div>
+		</section>
 
 
 
@@ -242,9 +202,9 @@
 
 
 							</div>                 
-							<div class="col-md-5 col-md-offset-1 arrow-right">
+							<div class="col-md-5 col-md-offset-1">
 
-								<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/hyokyoung-yi.jpg' ?>" alt="Hyokyoung Yi">
+								<div class="arrow-right"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/hyokyoung-yi.jpg' ?>" alt="Hyokyoung Yi"></div>
 								<div class="caption">Hyokyoung Yi / Korean Studies Librarian, East Asia Library</div>
 							</div> 
 						</div>
@@ -257,15 +217,15 @@
 		<!-- Giving Widget -->
 		<section class="text-block giving-widget-promoted">
 			<div class="row">
-				<div class="first-col col-md-5 col-md-offset-4 col-sm-8 col-sm-offset-1 col-xs-offset-1 col-xs-10">
+				<div class="first-col col-md-5 col-md-offset-2 col-sm-8 col-sm-offset-1 col-xs-offset-1 col-xs-10">
 					<div>             
 						<h2>Advance undergraduate research</h2>
 						<p>By supporting the University Libraries, you can help students like Kristy Kwon access the resources they need to do research that makes an impact.</p>
 					</div>
 				</div>
-				<div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-offset-1 ">
+				<div class="col-md-2 col-md-offset-2 col-sm-3 col-xs-offset-1 ">
 					<div>                                 
-						<div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="CPEDGE" href="#giving-widget-promoted">Give now</a></span></div>
+						<div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="KORCAT,LIBDIS" href="#giving-widget-promoted">Give now</a></span></div>
 						<button id="close-give">Close</button>
 					</div>
 				</div>
@@ -318,7 +278,7 @@
 
 						<div id="heija-video">
 
-							<a data-lity href="https://www.youtube.com/watch?v=b7P3vganmHI?autoplay=1&rel=0&showinfo=0" class="center-block play"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/heija-ryoo.jpg' ?>" class="img-responsive">
+							<a data-lity href="https://www.youtube.com/watch?v=Re83dft9EI0?autoplay=1&rel=0&showinfo=0" class="center-block play"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/heija-ryoo.jpg' ?>" class="img-responsive">
 								<div class="video-caption">
 									<!-- Why I give to the East Asia Library -->
 									<!-- Heija Ryoo, an East Asia Library cataloger and donor, helped resurface artifacts that had been hidden away for years. -->
