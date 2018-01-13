@@ -255,7 +255,7 @@
 							<div class="col-md-5 col-md-offset-1">
 
 								<div class="arrow-right"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/kristy-seoul.jpg' ?>" alt="Hyokyoung Yi"></div>
-								<div class="caption">Kristy Kwon visitng Seoul, Korea</div>
+								<div class="caption">Kristy Kwon visiting Seoul, Korea</div>
 							</div> 
 						</div>
 						<div class="row">
