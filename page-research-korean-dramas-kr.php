@@ -97,7 +97,7 @@
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3">
 						<!-- INSERT SLASH BEFORE PLAY BUTTON -->
-						<a data-lity href="https://www.youtube.com/embed/QJbElftoy4E?autoplay=1&rel=0&showinfo=0" class="center-block play">
+						<a data-lity href="https://www.youtube.com/embed/-zYESWG9HxE?autoplay=1&rel=0&showinfo=0" class="center-block play">
 							<div><h3>연구를 한단계 격상</h3>
 							UW 졸업반 권 크리스티와 한국학 사서 이효경씨는 크리스티의 한국 드라마에 대한 연구에 대해 이야기 합니다.</div>
 							<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150" class="opening-slash">
