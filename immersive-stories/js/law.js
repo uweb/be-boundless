@@ -133,39 +133,27 @@ $(function () {
   var tweenMap = new TimelineMax()
 
     // headline fades
-    .to("#section-map .item-1", 1, { opacity: 0 }, 0)
-    .to("#section-map .item-2", 1, { opacity: 1 }, 1)
+    .to("#section-map .item-1", 0.5, { opacity: 0 }, 0)
+    .to("#section-map .item-2", 0.5, { opacity: 1 }, 0.5)
 
     // border animation
-    .to(before1, 1, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, 0)
-    .to(after1, 1, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, 0)
+    .to(before1, 0.5, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, 0)
+    .to(after1, 0.5, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, 0)
 
-    .from(before2, 1, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, 1)
-    .from(after2, 1, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, 1)
+    .from(before2, 0.5, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, 0.5)
+    .from(after2, 0.5, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, 0.5)
 
     // image scaling
-    .to("#section-map .background-1", 1, { scale: 1.2, opacity: 0, transformOrigin: '15% 15%' }, 1)
-    .to("#section-map .background-2", 1, { scale: 1, transformOrigin: '15% 15%' }, 1)
+    .to("#section-map .background-1", 0.5, { scale: 1.2, opacity: 0 }, 0)
+    .to("#section-map .background-2", 0.5, { scale: 1 }, 0.5);
 
   var sceneMap = new ScrollMagic.Scene({
       triggerElement: '#section-map',
-      triggerHook: 0,
-      duration: '500%'
+      triggerHook: 0
     })
-    .setPin('#section-map', { pushFollowers: true })
+    //.setPin('#section-map', { pushFollowers: true })
     .setTween(tweenMap)
-    .addTo(controllerLaw)
-    .on('progress', function (event) {
-      // console.log('Progress :: ', event.progress);
-      // console.log(this.triggerElement());
-      if (event.progress > 0.5) {
-        $(this.triggerElement())
-          .addClass('scrollHide');
-      } else {
-        $(this.triggerElement())
-          .removeClass('scrollHide');
-      }
-    });
+    .addTo(controllerLaw);
 
 
   /***************************
@@ -184,16 +172,14 @@ $(function () {
 
   var sceneBodyLeft = new ScrollMagic.Scene({
       triggerElement: '#section-body .callout.left',
-      duration: '100%',
-      offset: -550
+      offset: -200
     })
     .setTween(tweenBodyLeft)
     .addTo(controllerLaw);
 
   var sceneBodyRight = new ScrollMagic.Scene({
       triggerElement: '#section-body .callout.right',
-      duration: '100%',
-      offset: -550
+      offset: -200
     })
     .setTween(tweenBodyRight)
     .addTo(controllerLaw);
