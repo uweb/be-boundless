@@ -43,9 +43,10 @@
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
             <p><em>This story was produced in collaboration with the Tulalip Tribes. The University of Washington is grateful for their cooperation and support.</em></p>
-            <p>When Everest was 12 years old, an inline skating accident left her with a compound fracture. The excruciating break was made bearable only by Percocet, a high-octane prescription of acetaminophen and oxycodone.</p>
+            <p>When Everest* was 12 years old, an inline skating accident left her with a compound fracture. The excruciating break was made bearable only by Percocet, a high-octane prescription of acetaminophen and oxycodone.</p>
             <p>The combination is fairly standard, but dangerously addictive. Everest, a member of Snohomish County's Tulalip Tribes, became dependent before she even realized it. Percocet led to meth, which quickly gave way to heroin. Fifteen years later, Everest has more than 20 drug charges on her record and jail time hanging over her head.</p>
             <p>Her story is a common one across America. But Tulalip Tribal Court prosecutor and University of Washington School of Law graduate Brian Kilgore, '11, believes that jail time and a criminal record are not the way these stories should end — and neither does the community he serves.</p>
+            <p>*Name has been changed.</p>
           </div>
         </div>
       </div>
@@ -97,8 +98,8 @@
             <p>In search of a more supportive and productive path for nonviolent offenders imprisoned on drug charges, Kilgore worked with Tulalip community members and a team of professionals to kick-start a tribal drug court. In January 2017, the Healing to Wellness Court welcomed its first participants.</p>
 
             <div class="banner">
-              <p>Helping people achieve emotional, psychological and social well-being through motivation and behavior change is a core goal of the UW’s Population Health Initiative, which aims to advance the health of communities worldwide.</p>
-              <a href="http://www.washington.edu/populationhealth"><span>Give Now</span></a>
+              <p>Helping people achieve emotional, psychological and social well-being through motivation and behavior change is a core goal of the UW’s <a href="http://www.washington.edu/populationhealth">Population Health Initiative</a>, which aims to advance the health of communities worldwide.</p>
+              <a href="#giving-widget-promoted"><span>Give Now</span></a>
             </div>
 
             <h2 class="headline">A holistic path to "wellbriety"</h2>
