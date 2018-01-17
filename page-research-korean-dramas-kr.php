@@ -200,12 +200,12 @@
 					<div class="col-md-6 statistic stat-one">
 						<div class="stat-text">
 							<div class="large third">67</div>
-							<div class="two-thirds"><span class="plus">%</span>에 가까운 한국의 TV 시청자가 90 년대 후반의 드라마 '너와 나'의 피날레를 보았습니다</div>
+							<div class="two-thirds"><span class="plus">%</span>에 가까운 한국의 <br />TV 시청자가 90 년대 후반의 <br />드라마 '너와 나'의 피날레를 보았습니다</div>
 						</div>
 					</div>
 					<div class="col-md-6 statistic stat-two">
 						<div class="stat-text">
-							<span class="left">최초의 여성 어의가 된 고아의 이야기를 다룬 드라마 '대장금'(궁전의 보석)은</span>
+							<span class="left">최초의 여성 어의가 <br />된 고아의 이야기를 다룬 드라마 <br />'대장금'(궁전의 보석)은</span>
 							<span class="large">91<span class="snap-right"> 개국에 배포되었습니다</span></span>
 						</div>
 					</div>

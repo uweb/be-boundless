@@ -92,7 +92,7 @@
 						<div class="stat-text">
 							University Libraries provides<br />
 							<span class="large">9,000,000<span class="plus">+</span></span><br />
-							total volumes (inclduing e-books)
+							total volumes (including e-books)
 						</div>
 					</div>
 					<div class="col-md-6 statistic stat-two">
@@ -200,12 +200,12 @@
 					<div class="col-md-6 statistic stat-one">
 						<div class="stat-text">
 							<div class="large third">67</div>
-							<div class="two-thirds"><span class="plus">%</span>of Korean television viewers watched the finale of “You and I.”</div>
+							<div class="two-thirds"><span class="plus">%</span>of Korean television <br />viewers watched the finale <br />of “You and I.”</div>
 						</div>
 					</div>
 					<div class="col-md-6 statistic stat-two">
 						<div class="stat-text">
-							<span class="left">The drama “Dae Jang Geum” was distributed to</span>
+							<span class="left">The drama <br />“Dae Jang  <br />Geum” was <br />distributed to</span>
 							<span class="large">91<span class="snap-right"> countries</span></span>
 						</div>
 					</div>
