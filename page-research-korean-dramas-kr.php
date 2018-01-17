@@ -76,16 +76,38 @@
 
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 stat-one">
+					<!-- <div class="col-md-6 stat-one">
 						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS_LIBRARIES_SVG-01.svg' ?>">
 					</div>
 
 					<div class="col-md-6 stat-two">
 						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS_LIBRARIES_SVG-02.svg' ?>">
-					</div>
+					</div> -->
 					
 					<!-- <div class="col-md-4 stat-three">
 						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS_LIBRARIES_SVG-03.svg' ?>">
+					</div> -->
+
+					<div class="col-md-6 statistic stat-one">
+						<div class="stat-text">
+							총<br />
+							<span class="large">9,000,000<span class="plus">+</span></span><br />
+							권 (전자 서적 포함)
+						</div>
+					</div>
+					<div class="col-md-6 statistic stat-two">
+						<div class="stat-text">
+							동아시아 도서관에는 전국에서 두 번째로 큰 한국어 장서를 포함하여<br />
+							<span class="large">770,000<span class="plus">+</span></span><br />
+							<span class="snap-right">권이 넘게 보관되어 있습니다.</span>
+						</div>
+					</div>
+					<!-- <div class="col-md-4 statistic stat-3">
+						<div class="stat-text"> 
+							University Libraries provides<br />
+							<span class="large">11,000<span class="large plus">+</span></span><br />
+							documents to scholars, government agencies and institutions around the world
+						</div>
 					</div> -->
 				</div>
 			</div>
@@ -165,12 +187,27 @@
 
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 stat-one">
+					<!-- <div class="col-md-6 stat-one">
 						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS_LIBRARIES_SVG-04.svg' ?>">
 					</div>
 
 					<div class="col-md-6 stat-two">
 						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS_LIBRARIES_SVG-05.svg' ?>">
+					</div> -->
+
+
+
+					<div class="col-md-6 statistic stat-one">
+						<div class="stat-text">
+							<div class="large third">67</div>
+							<div class="two-thirds"><span class="plus">%</span>에 가까운 한국의 TV 시청자가 90 년대 후반의 드라마 '너와 나'의 피날레를 보았습니다</div>
+						</div>
+					</div>
+					<div class="col-md-6 statistic stat-two">
+						<div class="stat-text">
+							<span class="left">최초의 여성 어의가 된 고아의 이야기를 다룬 드라마 '대장금'(궁전의 보석)은</span>
+							<span class="large">91<span class="snap-right"> 개국에 배포되었습니다</span></span>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -253,7 +290,7 @@
 							<div class="col-md-5 col-md-offset-1">
 
 								<div class="arrow-right"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/kristy-seoul.jpg' ?>" alt="Hyokyoung Yi"></div>
-								<div class="caption">Kristy Kwon visiting Seoul, Korea</div>
+								<div class="caption">서울을 방문한 크리스티 권</div>
 							</div> 
 						</div>
 						<div class="row">

@@ -76,16 +76,38 @@
 
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 stat-one">
+					<!-- <div class="col-md-6 stat-one">
 						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS_LIBRARIES_SVG-01.svg' ?>">
 					</div>
 
 					<div class="col-md-6 stat-two">
 						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS_LIBRARIES_SVG-02.svg' ?>">
-					</div>
+					</div> -->
 					
 					<!-- <div class="col-md-4 stat-three">
 						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS_LIBRARIES_SVG-03.svg' ?>">
+					</div> -->
+
+					<div class="col-md-6 statistic stat-one">
+						<div class="stat-text">
+							University Libraries provides<br />
+							<span class="large">9,000,000<span class="plus">+</span></span><br />
+							total volumes (inclduing e-books)
+						</div>
+					</div>
+					<div class="col-md-6 statistic stat-two">
+						<div class="stat-text">
+							The East Asia Library houses<br />
+							<span class="large">770,000<span class="plus">+</span></span><br />
+							<span class="snap-right">Volumes</span>
+						</div>
+					</div>
+					<!-- <div class="col-md-4 statistic stat-3">
+						<div class="stat-text"> 
+							University Libraries provides<br />
+							<span class="large">11,000<span class="large plus">+</span></span><br />
+							documents to scholars, government agencies and institutions around the world
+						</div>
 					</div> -->
 				</div>
 			</div>
@@ -165,12 +187,27 @@
 
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 stat-one">
+					<!-- <div class="col-md-6 stat-one">
 						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS_LIBRARIES_SVG-04.svg' ?>">
 					</div>
 
 					<div class="col-md-6 stat-two">
 						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS_LIBRARIES_SVG-05.svg' ?>">
+					</div> -->
+
+
+
+					<div class="col-md-6 statistic stat-one">
+						<div class="stat-text">
+							<div class="large third">67</div>
+							<div class="two-thirds"><span class="plus">%</span>of Korean television viewers watched the finale of “You and I.”</div>
+						</div>
+					</div>
+					<div class="col-md-6 statistic stat-two">
+						<div class="stat-text">
+							<span class="left">The drama “Dae Jang Geum” was distributed to</span>
+							<span class="large">91<span class="snap-right"> countries</span></span>
+						</div>
 					</div>
 				</div>
 			</div>
