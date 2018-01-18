@@ -452,7 +452,7 @@ iframe {
         #play-cir,
         #play-tri,
         span,
-        div,
+        .video-caption,
         &:before {
             .transition(all .2s);
         }
@@ -470,32 +470,32 @@ iframe {
         span {
             display: block;
             // color: white;
-            color: @purple;
+            color: white;
             font-family: @uni;
             text-transform: uppercase;
             font-size: 26px;
             font-weight: bold;
-            // text-shadow: 0 0 3px rgba(37,37,37,0.65);
+            text-shadow: 0 0 3px rgba(37,37,37,0.65);
 
         }
         &:hover {
             cursor: pointer;
             #play-cir {
-                stroke: @purple;
+                stroke: @lightgold;
             }
             #play-tri {
-                fill: @purple;
+                fill: @lightgold;
             }
             svg {
                 transform-origin: center center;
-                // text-shadow: 0 0 3px rgba(37,37,37,0.65);
+                text-shadow: 0 0 3px rgba(37,37,37,0.65);
                 //.scale(1.2, 1.2);
             }
             div, span {
-                color: @purple;
+                color: @lightgold;
             }
             &:before {
-                background: @purple;
+                background: @lightgold;
             }
         }
     }
@@ -535,9 +535,9 @@ iframe {
         position: absolute;
         top: 20%;
         left: 66%;
-        // text-shadow: 0 0 3px rgba(37,37,37,0.65);
-            // color: white;
-            color: @purple;
+        text-shadow: 0 0 3px rgba(37,37,37,0.65);
+            color: white;
+            // color: @purple;
             font-size: 25px;
             display: block;
             text-align: center;
