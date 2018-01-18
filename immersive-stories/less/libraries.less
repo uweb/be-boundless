@@ -444,6 +444,7 @@ iframe {
 
 #heija-video{
     margin-bottom: 50px;
+    overflow: hidden;
     a {
         position: relative;
         justify-content: center;
@@ -476,6 +477,9 @@ iframe {
             font-size: 26px;
             font-weight: bold;
             text-shadow: 0 0 3px rgba(37,37,37,0.65);
+            @media (max-width: 499px){
+                display: none;
+            }
 
         }
         &:hover {
@@ -504,8 +508,9 @@ iframe {
         align-items: center;
         justify-content: center;
         a {
-            margin-top: 0;
+            // margin-top: 0;
             svg {
+                margin-top: 0;
                 .scale(0.7,0.7);
                 right: -20px;
             }
@@ -524,7 +529,7 @@ iframe {
         justify-content: center;
         a {
             svg {
-                .scale(0.8,0.8);
+                .scale(0.9,0.9);
             }
             div {
                 font-size: 22px;
@@ -534,7 +539,7 @@ iframe {
     .playit {
         position: absolute;
         top: 20%;
-        left: 66%;
+        left: 55%;
         text-shadow: 0 0 3px rgba(37,37,37,0.65);
             color: white;
             // color: @purple;
@@ -547,10 +552,6 @@ iframe {
         .video-caption {
             display: none;
         }
-        .playit {
-            top: 0;
-        }
-        
     }
 }
 

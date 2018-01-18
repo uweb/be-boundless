@@ -334,7 +334,7 @@
 
 							<a data-lity href="https://www.youtube.com/watch?v=Re83dft9EI0?autoplay=1&rel=0&showinfo=0" class="center-block play"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/heija-ryoo.jpg' ?>" class="img-responsive">
 								<div class="playit">
-									<div class="video-caption">Why I give to the</br>East Asia Library</div>
+									<div class="video-caption">Why I give to the East Asia Library</div>
 									<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150" class="opening-slash">
 										<circle id="play-cir" fill="none" stroke="#fff" stroke-width="4.649" stroke-miterlimit="10" cx="75" cy="75" r="70"/>
 										<path id="play-tri" fill="#fff" d="M57.767,46.187L110.382,75l-52.616,28.816"/>
