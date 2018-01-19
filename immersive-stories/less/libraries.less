@@ -67,6 +67,8 @@ iframe {
         color: white !important;
     }
     @media @phone-only {
+        h2 {
+            font-size: 27px !important;        }
         div.row {
             padding-bottom: 0;
         }
@@ -154,10 +156,11 @@ iframe {
         bottom: 50px;
         top: auto;
     }
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(~"103vh - 171px");
+    height: calc(~"100vh - 171px");
     .background-cover(cover);
     background-position: center center;
     background-color: black;
@@ -560,6 +563,7 @@ iframe {
     clear: both;
     height:90vh;
     background: white url("@{libraries}/interview-video.jpg") center bottom no-repeat;
+    overflow: hidden;
     .background-cover(cover);
     a{
         margin-top:15vw;
@@ -624,7 +628,7 @@ iframe {
         a {
             margin-top: 0;
             svg {
-                .scale(0.5,0.5);
+                .scale(0.7,0.7);
                 right: -20px;
             }
             div {
@@ -643,7 +647,7 @@ iframe {
         a {
             margin-top: 0;
             svg {
-                .scale(0.6,0.6);
+                .scale(0.7,0.7);
             }
             div {
                 font-size: 22px;

@@ -22,7 +22,7 @@
 	<section class="intro" id="intro-vid">
 		<button id="pause">Pause</button>
 		<video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/header-kristy-kwon.jpg' ?>" class="fullscreen-bg__video">
-			<source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/libraries/header-kristy-kwon.mp4' ?>" type="video/mp4">
+			<source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/libraries/2.mp4' ?>" type="video/mp4">
 		</video>
 
 		<div class="intro-body">
