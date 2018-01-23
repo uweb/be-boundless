@@ -117,41 +117,44 @@ $(function () {
     .get(0)
     .play();
 
-  // animation vars
-  var before1 = CSSRulePlugin.getRule("#section-map .item-1 .headline:before");
-  var before2 = CSSRulePlugin.getRule("#section-map .item-2 .headline:before");
-  var after1 = CSSRulePlugin.getRule("#section-map .item-1 .headline:after");
-  var after2 = CSSRulePlugin.getRule("#section-map .item-2 .headline:after");
-
 
 
   /***************************
    * Animation: Map
    ***************************/
 
+  // animation vars
+  var before1 = CSSRulePlugin.getRule("#section-map .item-1 .headline:before");
+  var before2 = CSSRulePlugin.getRule("#section-map .item-2 .headline:before");
+  var after1 = CSSRulePlugin.getRule("#section-map .item-1 .headline:after");
+  var after2 = CSSRulePlugin.getRule("#section-map .item-2 .headline:after");
+  var tweenMapDuration = 0.1;
+
   // build tween
   var tweenMap = new TimelineMax()
 
-    // headline fades
-    .to("#section-map .item-1", 0.5, { opacity: 0 }, 0)
-    .to("#section-map .item-2", 0.5, { opacity: 1 }, 0.5)
+    // section 1 out
+    .to("#section-map .item-1", tweenMapDuration, { opacity: 0 }, 0)
+    .to(before1, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, 0)
+    .to(after1, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, 0)
+    .to("#section-map .background-1", tweenMapDuration, { scale: 1.2, opacity: 0 }, 0)
 
-    // border animation
-    .to(before1, 0.5, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, 0)
-    .to(after1, 0.5, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, 0)
+    // section 2 in
+    .to("#section-map .item-2", tweenMapDuration, { opacity: 1 }, tweenMapDuration / 2)
+    .from(before2, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, tweenMapDuration / 2)
+    .from(after2, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, tweenMapDuration / 2)
+    .to("#section-map .background-2", 0, { opacity: 1, scale: 1 }, 0)
 
-    .from(before2, 0.5, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, 0.5)
-    .from(after2, 0.5, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, 0.5)
-
-    // image scaling
-    .to("#section-map .background-1", 0.5, { scale: 1.2, opacity: 0 }, 0)
-    .to("#section-map .background-2", 0.5, { scale: 1 }, 0.5);
+    // fade out
+    .to("#section-map .item-2", tweenMapDuration, { opacity: 0 }, tweenMapDuration * 2)
+    .to("#section-map .background-2", tweenMapDuration, { opacity: 0 }, tweenMapDuration * 2);
 
   var sceneMap = new ScrollMagic.Scene({
       triggerElement: '#section-map',
-      triggerHook: 0
+      triggerHook: 0,
+      duration: '100%'
     })
-    //.setPin('#section-map', { pushFollowers: true })
+    .setPin('#section-map', { pushFollowers: false })
     .setTween(tweenMap)
     .addTo(controllerLaw);
 
@@ -159,6 +162,7 @@ $(function () {
   /***************************
    * Animation: Body
    ***************************/
+
   var calloutLeft = $('#section-body .callout.left'),
     calloutRight = $('#section-body .callout.right');
 
@@ -189,34 +193,37 @@ $(function () {
    * Animation: Profiles
    ***************************/
 
-  var tweenProfiles = new TimelineMax()
-    .set("#section-profiles .item-2", { autoAlpha: 0 })
-    .set("#section-profiles .item-1 .nav", { autoAlpha: 1 })
-    .set("#section-profiles .item-2 .nav", { autoAlpha: 0 })
+  var profileImg1 = $('#section-profiles .item-1 .img');
+  var profileImg2 = $('#section-profiles .item-2 .img');
 
-    .to("#section-profiles .item-1", 1, { autoAlpha: 0 }, 0)
-    .to("#section-profiles .item-2", 1, { autoAlpha: 1 }, 0)
-    .to("#section-profiles .item-1 .nav", 0.5, { autoAlpha: 0 }, 0)
-    .to("#section-profiles .item-2 .nav", 0.5, { autoAlpha: 1 }, 0.5);
+  var tweenProfile1 = new TimelineMax()
+    .to(profileImg1, 0.5, { autoAlpha: 1 });
 
-  tweenProfiles.addCallback(bringProfileElToTop, 0, ['.item-1']);
-  tweenProfiles.addCallback(bringProfileElToTop,
-    tweenProfiles.duration() / 2, ['.item-2']);
+  var tweenProfile2 = new TimelineMax()
+    .to(profileImg1, 0.5, { autoAlpha: 0 }, 0)
+    .to(profileImg2, 0.5, { autoAlpha: 1 }, 0);
 
-  function bringProfileElToTop(el) {
-    $('#section-profiles .item')
-      .css('z-index', 0); // set all to 0
-    $('#section-profiles ' + el)
-      .css('z-index', 1); // bring passed to top
-  }
+  var tweenProfile3 = new TimelineMax()
+    .to(profileImg2, 0.5, { autoAlpha: 0 });
 
-  var sceneProfiles = new ScrollMagic.Scene({
-      triggerElement: '#section-profiles',
-      triggerHook: 0,
-      duration: '200%'
+  var sceneProfiles1 = new ScrollMagic.Scene({
+      triggerElement: '#section-profiles .item-1',
+      offset: -200
     })
-    .setPin('#section-profiles', { pushFollowers: true })
-    .setTween(tweenProfiles)
+    .setTween(tweenProfile1)
+    .addTo(controllerLaw);
+
+  var sceneProfiles2 = new ScrollMagic.Scene({
+      triggerElement: '#section-profiles .item-2',
+      offset: 150
+    })
+    .setTween(tweenProfile2)
+    .addTo(controllerLaw);
+
+  var sceneProfiles3 = new ScrollMagic.Scene({
+      triggerElement: '#section-profiles .profiles-fade-out-trigger',
+    })
+    .setTween(tweenProfile3)
     .addTo(controllerLaw);
 
 
@@ -225,41 +232,51 @@ $(function () {
    * Animation: Photos
    ***************************/
 
-  var tweenPhotos = new TimelineMax()
-    .set("#section-photos .item-2", { autoAlpha: 0 })
-    .set("#section-photos .item-3", { autoAlpha: 0 })
-    .set("#section-photos .item-1 .nav", { autoAlpha: 1 })
-    .set("#section-photos .item-2 .nav", { autoAlpha: 0 })
-    .set("#section-photos .item-3 .nav", { autoAlpha: 0 })
+  var photosImg1 = $('#section-photos .item-1 .img');
+  var photosImg2 = $('#section-photos .item-2 .img');
+  var photosImg3 = $('#section-photos .item-3 .img');
 
-    .to("#section-photos .item-1", 1, { autoAlpha: 0 }, 0)
-    .to("#section-photos .item-2", 1, { autoAlpha: 1 }, 0)
-    .to("#section-photos .item-3", 1, { autoAlpha: 1 }, 1)
-    .to("#section-photos .item-1 .nav", 0.5, { autoAlpha: 0 }, 0)
-    .to("#section-photos .item-2 .nav", 0.5, { autoAlpha: 1 }, 0.5)
-    .to("#section-photos .item-3 .nav", 0.5, { autoAlpha: 1 }, 1.5);
+ var tweenPhoto1 = new TimelineMax()
+   .to(photosImg1, 0.5, { autoAlpha: 1 });
 
-  tweenPhotos.addCallback(bringPhotoElToTop, 0, ['.item-1']);
-  tweenPhotos.addCallback(bringPhotoElToTop,
-    tweenPhotos.duration() / 3, ['.item-2']);
-  tweenPhotos.addCallback(bringPhotoElToTop, (tweenPhotos.duration() /
-    3) * 2, ['.item-3']);
+ var tweenPhoto2 = new TimelineMax()
+   .to(photosImg1, 0.5, { autoAlpha: 0 }, 0)
+   .to(photosImg2, 0.5, { autoAlpha: 1 }, 0);
 
-  function bringPhotoElToTop(el) {
-    $('#section-photos .item')
-      .css('z-index', 0); // set all to 0
-    $('#section-photos ' + el)
-      .css('z-index', 1); // bring passed to top
-  }
+ var tweenPhoto3 = new TimelineMax()
+   .to(photosImg2, 0.5, { autoAlpha: 0 }, 0)
+   .to(photosImg3, 0.5, { autoAlpha: 1 }, 0);
 
-  var scenePhotos = new ScrollMagic.Scene({
-      triggerElement: '#section-photos',
-      triggerHook: 0,
-      duration: '200%'
-    })
-    .setPin('#section-photos', { pushFollowers: true })
-    .setTween(tweenPhotos)
-    .addTo(controllerLaw);
+ var tweenPhoto4 = new TimelineMax()
+   .to(photosImg3, 0.5, { autoAlpha: 0 });
+
+ var scenePhotos1 = new ScrollMagic.Scene({
+     triggerElement: '#section-photos .item-1',
+     offset: -200
+   })
+   .setTween(tweenPhoto1)
+   .addTo(controllerLaw);
+
+ var scenePhotos2 = new ScrollMagic.Scene({
+     triggerElement: '#section-photos .item-2',
+     offset: 150
+   })
+   .setTween(tweenPhoto2)
+   .addTo(controllerLaw);
+
+ var scenePhotos3 = new ScrollMagic.Scene({
+     triggerElement: '#section-photos .item-3',
+     offset: 150
+   })
+   .setTween(tweenPhoto3)
+   .addTo(controllerLaw);
+
+ var scenePhotos4 = new ScrollMagic.Scene({
+     triggerElement: '#section-photos .photos-fade-out-trigger',
+     offset: 150
+   })
+   .setTween(tweenPhoto4)
+   .addTo(controllerLaw);
 
 
 
@@ -273,8 +290,12 @@ $(function () {
       sceneMap.update(true);
       sceneBodyLeft.update(true);
       sceneBodyRight.update(true);
-      sceneProfiles.update(true);
-      scenePhotos.update(true);
+      sceneProfiles1.update(true);
+      sceneProfiles2.update(true);
+      scenePhotos1.update(true);
+      scenePhotos2.update(true);
+      scenePhotos3.update(true);
+      scenePhotos4.update(true);
     });
 
 
@@ -283,7 +304,6 @@ $(function () {
    * Misc scripts
    ***************************/
 
-  // lazyloading (not IE) in 3... 2... 1...
   if (detectIE) {
     // fallback for object-fit: cover - header bg video
     // $('#section-intro video')

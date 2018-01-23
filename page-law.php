@@ -110,9 +110,13 @@
         </div>
       </div>
 
+    </section><!-- #section-body -->
+
       <section id="section-profiles">
+
         <div class="item-1 item">
-          <div class="inner">
+          <div class="img"></div>
+          <div class="caption">
             <div class="group">
               <div class="nav">
                 <h4 class="headline">Header</h4>
@@ -130,8 +134,10 @@
             </div>
           </div>
         </div>
+
         <div class="item-2 item">
-          <div class="inner">
+          <div class="img"></div>
+          <div class="caption">
             <div class="group">
               <div class="nav">
                 <h4 class="headline">Header</h4>
@@ -149,7 +155,10 @@
             </div>
           </div>
         </div>
-      </section>
+
+        <div class="profiles-fade-out-trigger" style="height: 0; opacity: 0;"></div>
+
+    </section><!-- #section-profiles -->
 
       <div class="text-content container">
         <div class="row">
@@ -161,8 +170,10 @@
       </div>
 
       <section id="section-photos">
+
         <div class="item-1 item">
-          <div class="inner">
+          <div class="img"></div>
+          <div class="caption">
             <div class="group">
               <div class="nav">
                 <h4 class="headline">Header 1</h4>
@@ -180,8 +191,10 @@
             </div>
           </div>
         </div>
+
         <div class="item-2 item">
-          <div class="inner">
+          <div class="img"></div>
+          <div class="caption">
             <div class="group">
               <div class="nav">
                 <h4 class="headline">Header 2</h4>
@@ -199,8 +212,10 @@
             </div>
           </div>
         </div>
+
         <div class="item-3 item">
-          <div class="inner">
+          <div class="img"></div>
+          <div class="caption">
             <div class="group">
               <div class="nav">
                 <h4 class="headline">Header 3</h4>
@@ -218,7 +233,10 @@
             </div>
           </div>
         </div>
-      </section>
+
+        <div class="photos-fade-out-trigger" style="height: 0; opacity: 0;"></div>
+
+    </section><!-- #section-photos -->
 
       <div class="text-content container">
         <div class="row">
