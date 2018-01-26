@@ -5,7 +5,8 @@ global $styles;
 ?>
 
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="<? echo ( is_page('research-korean-dramas-kr') ? "ko" : "en" ); ?>">
+
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />

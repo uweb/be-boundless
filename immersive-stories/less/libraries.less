@@ -119,6 +119,16 @@ iframe {
         transition: all .2s linear;
         top: 15px;
         right: 10px;
+        &:focus,
+        &:hover,
+        &:active {
+            color: @lightgold;            
+        }
+        &:focus {
+            outline-color: #3b99fc;
+            outline-style: auto;
+            outline-width: 5px;
+        }
     }
     @media (max-width: 768px) {
         background-color: transparent;
@@ -153,8 +163,10 @@ iframe {
 
 .intro {
     #pause {
-        bottom: 50px;
-        top: auto;
+        // bottom: 50px;
+        // top: auto;
+        top: 15px;
+        left: 20px;
     }
     overflow: hidden;
     display: flex;
