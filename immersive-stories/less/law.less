@@ -52,7 +52,48 @@ html {
   .text-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
+
+    &--full {
+      display: flex;
+      align-items: center;
+      height: 100vh;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
+}
+
+/*******************************
+ * STACKING ORDER *
+ *******************************/
+#section-intro {
+  z-index: 0;
+}
+
+#section-story {
+  z-index: 1;
+}
+
+#section-map {
+  z-index: 2;
+}
+
+#section-body {
+  z-index: 3;
+}
+
+#section-profiles {
+  z-index: 4;
+  background-color: #efeeea;
+}
+
+#section-photos {
+  z-index: 5;
+  background-color: #efeeea;
+}
+
+#section-video-intro {
+  z-index: 6;
 }
 
 /*******************************
@@ -126,7 +167,9 @@ html {
 
   .scrollit {
     z-index: 1;
+    display: none;
   }
+
   @media @tablet-portrait-up {
     .intro-body {
       .intro-text {
@@ -137,6 +180,11 @@ html {
         font-size: 28px;
       }
     }
+
+    .scrollit {
+      display: block;
+    }
+
   }
   // @media @phone-only {
   // 	.background-cover(cover);
@@ -196,7 +244,6 @@ html {
  *******************************/
 #section-map {
   position: relative;
-  z-index: 99;
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -349,7 +396,6 @@ html {
 #section-story {
   background: #efeeea;
   position: relative;
-  z-index: 1;
 
   .callout {
     width: 100%;
@@ -515,8 +561,9 @@ html {
   }
 
 }
+
 /*******************************
-* SECTION - BODY *
+* SECTION - PROFILES *
 *******************************/
 #section-profiles {
   .item-1 {
@@ -529,6 +576,7 @@ html {
     .img {
       background-image: url("../img/law/profile-2.jpg");
     }
+
   }
 
 }
@@ -537,7 +585,6 @@ html {
 #section-profiles {
 
   position: relative;
-  z-index: 2;
 
   .item {
     position: relative;
@@ -572,7 +619,7 @@ html {
 
   .caption {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
     width: 100%;
     height: 100vh;
@@ -584,6 +631,13 @@ html {
 #section-photos .item,
 #section-profiles .item {
   .group {
+    // display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    height: 0;
+    align-self:center; 
+
     .nav {
       text-align: left;
       margin-left: 5%;
@@ -650,26 +704,22 @@ html {
 
   @media @tablet-portrait-up {
     .group {
-      width: 50%;
+      display:flex;
+      width: 75%;
       margin-left: 100px;
-      display: flex;
-      flex-wrap: nowrap;
     }
   }
 
   @media @desktop-up {
     .caption {
       display: flex;
-      align-items: center;
-      align-items: center;
+      align-items: flex-start;
     }
 
     .group {
       width: 60%;
       margin-top: 50vh;
       margin-bottom: 0;
-      display: flex;
-      flex-wrap: nowrap;
 
       .nav {
         margin-left: 100px;
@@ -814,7 +864,6 @@ html {
   background-size: cover;
   text-align: center;
   position: relative;
-  height: 100vh;
   min-height: 100vh;
 
   .inner {
@@ -822,7 +871,7 @@ html {
     background: rgba(0,0,0,0.56);
     display: flex;
     align-items: center;
-    height: 100%;
+    min-height: 100vh;
 
     h1 {}
 

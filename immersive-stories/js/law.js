@@ -128,33 +128,42 @@ $(function () {
   var before2 = CSSRulePlugin.getRule("#section-map .item-2 .headline:before");
   var after1 = CSSRulePlugin.getRule("#section-map .item-1 .headline:after");
   var after2 = CSSRulePlugin.getRule("#section-map .item-2 .headline:after");
-  var tweenMapDuration = 0.1;
+  var tweenMapDuration = 0.5;
 
   // build tween
   var tweenMap = new TimelineMax()
 
     // section 1 out
-    .to("#section-map .item-1", tweenMapDuration, { opacity: 0 }, 0)
     .to(before1, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, 0)
     .to(after1, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, 0)
-    .to("#section-map .background-1", tweenMapDuration, { scale: 1.2, opacity: 0 }, 0)
+    .to("#section-map .item-1", tweenMapDuration * 0.25, { opacity: 0 }, tweenMapDuration * 0.75)
+    .to("#section-map .background-1", tweenMapDuration * 0.25, { scale: 1.2, opacity: 0 }, tweenMapDuration * 0.75)
 
     // section 2 in
-    .to("#section-map .item-2", tweenMapDuration, { opacity: 1 }, tweenMapDuration / 2)
-    .from(before2, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, tweenMapDuration / 2)
-    .from(after2, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, tweenMapDuration / 2)
-    .to("#section-map .background-2", 0, { opacity: 1, scale: 1 }, 0)
-
-    // fade out
-    .to("#section-map .item-2", tweenMapDuration, { opacity: 0 }, tweenMapDuration * 2)
-    .to("#section-map .background-2", tweenMapDuration, { opacity: 0 }, tweenMapDuration * 2);
+    .from(before2, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, tweenMapDuration)
+    .from(after2, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, tweenMapDuration)
+    .to("#section-map .item-2", tweenMapDuration * 0.25, { opacity: 1 }, tweenMapDuration)
+    .to("#section-map .background-2", tweenMapDuration * 0.25, { opacity: 1, scale: 1 }, tweenMapDuration)
 
   var sceneMap = new ScrollMagic.Scene({
       triggerElement: '#section-map',
       triggerHook: 0,
       duration: '100%'
     })
-    .setPin('#section-map', { pushFollowers: false })
+    .setPin('#section-map', { pushFollowers: true })
+    .on('leave', function(e) {
+      if(e.scrollDirection === 'REVERSE') {
+        $('#section-map').css({
+          'position': 'relative'
+        });
+      } else {
+        $('#section-map').css({
+          'position': 'fixed',
+          'top': 0,
+          'left': 0
+        });
+      }
+    })
     .setTween(tweenMap)
     .addTo(controllerLaw);
 
@@ -167,12 +176,12 @@ $(function () {
     calloutRight = $('#section-body .callout.right');
 
   var tweenBodyLeft = new TimelineMax()
-    .from(calloutLeft, 0.5, { alpha: 0 })
-    .from(calloutLeft, 0.6, { x: '-=200px' }, 0);
+    .from(calloutLeft, 0.5, { alpha: 0, overwrite: false })
+    .from(calloutLeft, 0.6, { x: '-=200px', overwrite: false, immediateRender: false }, 0);
 
   var tweenBodyRight = new TimelineMax()
-    .from(calloutRight, 0.5, { alpha: 0 })
-    .from(calloutRight, 0.6, { x: '+=200px' }, 0);
+    .from(calloutRight, 0.5, { alpha: 0, overwrite: false })
+    .from(calloutRight, 0.6, { x: '+=200px', overwrite: false, immediateRender: false }, 0);
 
   var sceneBodyLeft = new ScrollMagic.Scene({
       triggerElement: '#section-body .callout.left',
@@ -197,31 +206,47 @@ $(function () {
   var profileImg2 = $('#section-profiles .item-2 .img');
 
   var tweenProfile1 = new TimelineMax()
-    .to(profileImg1, 0.5, { autoAlpha: 1 });
+    .fromTo(profileImg1, 0.25, { opacity: 0 }, { opacity: 1, overwrite: false });
 
   var tweenProfile2 = new TimelineMax()
-    .to(profileImg1, 0.5, { autoAlpha: 0 }, 0)
-    .to(profileImg2, 0.5, { autoAlpha: 1 }, 0);
+    .fromTo(profileImg1, 0.25, { opacity: 1 }, { opacity: 0, overwrite: false, immediateRender: false, delay: 0.25 }, 0)
+    .fromTo(profileImg2, 0.25, { opacity: 0 }, { opacity: 1, overwrite: false }, 0);
 
   var tweenProfile3 = new TimelineMax()
-    .to(profileImg2, 0.5, { autoAlpha: 0 });
+    .fromTo(profileImg2, 0.25, { opacity: 1 }, { opacity: 0, overwrite: false, immediateRender: false, delay: 0.25 });
 
   var sceneProfiles1 = new ScrollMagic.Scene({
       triggerElement: '#section-profiles .item-1',
-      offset: -200
+      triggerHook: 'onCenter',
+      // offset: 250
     })
     .setTween(tweenProfile1)
+    .on('enter leave', function(e) {
+      // console.log('direction :: ', e.scrollDirection);
+      if(e.scrollDirection === 'FORWARD') {
+        $('#section-map').css({
+          'visibility': 'hidden'
+        });
+      } else {
+        $('#section-map').css({
+          'visibility': 'visible'
+        });
+      }
+    })
     .addTo(controllerLaw);
 
   var sceneProfiles2 = new ScrollMagic.Scene({
       triggerElement: '#section-profiles .item-2',
-      offset: 150
+      triggerHook: 'onCenter',
+      // offset: 250
     })
     .setTween(tweenProfile2)
     .addTo(controllerLaw);
 
   var sceneProfiles3 = new ScrollMagic.Scene({
       triggerElement: '#section-profiles .profiles-fade-out-trigger',
+      triggerHook: 'onCenter',
+      // offset: 250
     })
     .setTween(tweenProfile3)
     .addTo(controllerLaw);
@@ -237,28 +262,29 @@ $(function () {
   var photosImg3 = $('#section-photos .item-3 .img');
 
  var tweenPhoto1 = new TimelineMax()
-   .to(photosImg1, 0.5, { autoAlpha: 1 });
+   .fromTo(photosImg1, 0.25, { autoAlpha: 0 }, { autoAlpha: 1, overwrite: false });
 
  var tweenPhoto2 = new TimelineMax()
-   .to(photosImg1, 0.5, { autoAlpha: 0 }, 0)
-   .to(photosImg2, 0.5, { autoAlpha: 1 }, 0);
+   .fromTo(photosImg1, 0.25, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: false, immediateRender: false, delay: 0.25 }, 0)
+   .fromTo(photosImg2, 0.25, { autoAlpha: 0 }, { autoAlpha: 1, overwrite: false }, 0);
 
  var tweenPhoto3 = new TimelineMax()
-   .to(photosImg2, 0.5, { autoAlpha: 0 }, 0)
-   .to(photosImg3, 0.5, { autoAlpha: 1 }, 0);
+   .fromTo(photosImg2, 0.25, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: false, immediateRender: false, delay: 0.25 }, 0)
+   .fromTo(photosImg3, 0.25, { autoAlpha: 0 }, { autoAlpha: 1, overwrite: false }, 0);
 
  var tweenPhoto4 = new TimelineMax()
-   .to(photosImg3, 0.5, { autoAlpha: 0 });
+   .fromTo(photosImg3, 0.25, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: false, immediateRender: false, delay: 0.25 });
 
  var scenePhotos1 = new ScrollMagic.Scene({
      triggerElement: '#section-photos .item-1',
-     offset: -200
+     triggerHook: 'onCenter'
    })
    .setTween(tweenPhoto1)
    .addTo(controllerLaw);
 
  var scenePhotos2 = new ScrollMagic.Scene({
      triggerElement: '#section-photos .item-2',
+     triggerHook: 'onCenter',
      offset: 150
    })
    .setTween(tweenPhoto2)
@@ -266,6 +292,7 @@ $(function () {
 
  var scenePhotos3 = new ScrollMagic.Scene({
      triggerElement: '#section-photos .item-3',
+     triggerHook: 'onCenter',
      offset: 150
    })
    .setTween(tweenPhoto3)
@@ -273,6 +300,7 @@ $(function () {
 
  var scenePhotos4 = new ScrollMagic.Scene({
      triggerElement: '#section-photos .photos-fade-out-trigger',
+     triggerHook: 'onCenter',
      offset: 150
    })
    .setTween(tweenPhoto4)
@@ -292,6 +320,7 @@ $(function () {
       sceneBodyRight.update(true);
       sceneProfiles1.update(true);
       sceneProfiles2.update(true);
+      sceneProfiles3.update(true);
       scenePhotos1.update(true);
       scenePhotos2.update(true);
       scenePhotos3.update(true);

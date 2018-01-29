@@ -7,6 +7,7 @@
     get_header("campaign-v2");
 ?>
 
+
 <div id="immersive-body">
 
 	<section id="section-intro">
@@ -160,7 +161,7 @@
 
     </section><!-- #section-profiles -->
 
-      <div class="text-content container">
+      <div class="text-content text-content--full container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
             <p>Participants must also appear in Wellness Court every week to check in with their team and speak face-to-face with Judge Whitener. They share how many days they've been sober — often to cheers of encouragement — and talk through their successes and struggles. If it was a good week, Judge Whitener may reward them with incentives such as fewer court appearances and later curfews. After a hard week, there will likely be sanctions. Either way, the team is there to help the participant succeed.</p>
