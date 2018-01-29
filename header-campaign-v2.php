@@ -5,7 +5,7 @@ global $styles;
 ?>
 
 <!DOCTYPE html>
-<html class="no-js" lang="<? echo ( is_page('research-korean-dramas-kr') ? "ko" : "en" ); ?>">
+<html class="no-js" lang="<?php echo ( is_page('research-korean-dramas-kr') ? "ko" : "en" ); ?>">
 
 	<head>
 		<meta charset="utf-8" />
