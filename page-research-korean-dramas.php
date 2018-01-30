@@ -64,7 +64,7 @@
 
 					</div>                 
 					<div class="col-md-6">
-						<div class="arrow-right"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/kristy-kwon.jpg' ?>" alt="Kristy Kwon"></div>
+						<div class="arrow-right"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/kristy-kwon-stacks.jpg' ?>" alt="Kristy Kwon"></div>
 						<div class="caption">Kristy Kwon / Senior, economics and international studies</div>
 					</div> 
 				</div>
@@ -154,11 +154,9 @@
 
 								<p>Similar to American soap operas, K-dramas feature idealized characters on quests for true love. Nearly 67 percent of Korea watched the finale of the late ’90s drama “You and I,” and audiences from Spain to Zimbabwe have been captivated by these hugely popular shows: “Dae Jang Geum” (“Jewel in the Palace”), about an orphan who becomes the first female royal physician, was distributed to 91 countries.</p> 
 
-								<p class="callout">“Dramas are a huge cultural thing in Korea,” says Kwon. “I grew up watching them. And since I was born there, I feel a sense of belonging when I watch the shows.”</p>
+								<p class="callout">“Dramas are a huge cultural thing in Korea,” says Kwon. “I grew up watching them. And since I was born there, I feel a sense of belonging when I watch the shows.” However, she adds, she also recognizes the stark gender and generational contrasts portrayed in K-dramas. </p>
 
-								<p>But in 2016, while watching an episode of “Father Is Strange,” Kwon grew frustrated. “Usually in Korean society, the eldest son is preferred,” she explains. “This drama focused on a woman who graduated from a prestigious university and became a very successful lawyer, while her brother did not.” Yet the brother’s misbehavior was treated lightly, Kwon says, while the daughter’s resulted in harsher punishment. This imbalance gave her pause.</p>
-
-								<p>South Korean women have made huge strides toward equality, particularly in the workplace. Even so, many young professional women watch dramas that depict more conservative gender roles. For her thesis project, Kwon decided to explore this apparent paradox, as well as its economic and social implications.</p>
+								<p>South Korean women have made huge strides toward equality, particularly in the workplace. Even so, many young professional women watch dramas that depict more conservative gender roles. For her thesis project, Kwon decided to explore this apparent paradox, as well as its economic and social implications. </p>
 
 								<p>Her current hypothesis argues that modern Korean women can watch and enjoy K-dramas because they’re able to differentiate the conservative world of the shows from the more progressive reality in which they were raised and educated.</p>
 
@@ -168,7 +166,7 @@
 								<blockquote class="quote">I’ve always wanted to research Korea because I feel a strong sense of pride for my country, but I’ve never had the chance to explore it academically.</blockquote>
 								<!-- <span class="rq">&rdquo;</span> --><div class="attribute">Kristy Kwon, Senior</div>
 
-								<div class="arrow-right" style="clear: both;"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/deborah-porter.jpg' ?>" alt="Deborah Porter"></div>
+								<div class="arrow-right" style="clear: both;"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/deborah-porter-stacks.jpg' ?>" alt="Deborah Porter"></div>
 								<div class="caption">Deborah Porter / Associate Professor, Jackson School of International Studies</div>
 
 							</div> 
@@ -240,7 +238,7 @@
 							</div>                 
 							<div class="col-md-5 col-md-offset-1">
 
-								<div class="arrow-right"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/hyokyoung-yi.jpg' ?>" alt="Hyokyoung Yi"></div>
+								<div class="arrow-right"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/hyokyoung-yi-stacks.jpg' ?>" alt="Hyokyoung Yi"></div>
 								<div class="caption">Hyokyoung Yi / Korean Studies Librarian, East Asia Library</div>
 							</div> 
 						</div>
@@ -324,7 +322,7 @@
 						<h2>Preserving a historic collection</h2>
 						<p>The extensive Korean Collection that Kristy Kwon used for her research is maintained in large part because of donors like Heija Ryoo, who also works as a cataloger at the East Asia Library.</p>
 
-						<p>When she noticed a glut of backlogged items in the Korean Collection, Ryoo saw an opportunity. In partnership with librarian Hyokyoung Yi, she established the <a href="http://www.lib.washington.edu/support/priorities/other-needs/korean-cataloging-project">Korean Cataloging Fund</a>. Supported by generous local donors, the fund enables the East Asia Library to enter backlogged items into the University Libraries online database and WorldCat, an international bibliographic database. These resources are now available to students, researchers, faculty and other users worldwide for the first time in decades.</p>
+						<p>When she noticed a glut of unprocessed titles in the Korean Collection, Ryoo saw an opportunity. After discussing the backlog with librarian Hyokyoung Yi, Ryoo established the <a href="http://www.lib.washington.edu/support/priorities/other-needs/korean-cataloging-project">Korean Cataloging Fund</a>. Supported by generous local donors, the fund enables the East Asia Library to enter backlogged items into the University Libraries online database and WorldCat, an international bibliographic database. These resources are now available to students, researchers, faculty and other users worldwide for the first time in decades.</p>
 
 						<p>The library’s efforts are already attracting attention: Visitors from the National Library of Korea have come to see if the collection includes any treasures that have been hiding in plain sight.</p>
 
