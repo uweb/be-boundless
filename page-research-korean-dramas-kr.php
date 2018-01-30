@@ -65,7 +65,7 @@
 					</div>                 
 					<div class="col-md-6">
 						<div class="arrow-right"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/kristy-kwon-stacks.jpg' ?>" alt="크리스티 권"></div>
-						<div class="caption">크리스티 권 / 경제학 국제한 복수 전공 졸업반</div>
+						<div class="caption">크리스티 권 / 경제학 국제학 복수 전공 졸업반</div>
 					</div> 
 				</div>
 			</div>   
