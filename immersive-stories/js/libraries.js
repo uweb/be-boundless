@@ -1,3 +1,28 @@
+$(document).ready(function() {
+    $(".animsition").animsition({
+      inClass: 'fade-in',
+      outClass: 'fade-out',
+      inDuration: 500,
+      outDuration: 500,
+      linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+  });
+
 $(function(){
 
   var body = document.getElementsByTagName('body')[0];
@@ -35,57 +60,6 @@ $(function(){
     //Play video through pin
     $('video').get(0).play();
 
-
-// if(!isMobile) {
-//     var wipeAnimation = new TimelineMax()
-//       .to("#svg-stats-1", 1,   {x: "-55%"});
-//     var wipeAnimationSVG = new TimelineMax()
-//       .to("#svg-stats", 1,   {x: "-22%"});
-//     // create scene to pin and link animation
-//     var horizon = new ScrollMagic.Scene({
-//         triggerElement: '#libraries-stats',
-//         triggerHook: 0,
-//         duration: 1000,
-//       })
-//       .setPin("#libraries-stats", {pushFollowers: 1})
-//       .setTween(wipeAnimation)
-//        // .setTween("#stats-slides", 0, {
-//        //      right: window.innerWidth,
-//        //      }) // trigger a TweenMax.to tween
-//       // .addIndicators()
-//       .addTo(controllerLibraries);
-
-//           // create scene to pin and link animation
-//     var horizonSVG = new ScrollMagic.Scene({
-//         triggerElement: '#img-stats',
-//         triggerHook: 0,
-//         duration: 1000,
-//       })
-//       .setPin("#img-stats", {pushFollowers: 1})
-//       .setTween(wipeAnimationSVG)
-//        // .setTween("#stats-slides", 0, {
-//        //      right: window.innerWidth,
-//        //      }) // trigger a TweenMax.to tween
-//       // .addIndicators()
-//       .addTo(controllerLibraries);
-
-
-
-//       // var koreaStats = new ScrollMagic.Scene({
-//       //   triggerElement: '#korea-stats',
-//       //   triggerHook: 0,
-//       //   duration: "100%",
-//       // })
-//       // .setPin("#korea-stats")
-//       // .setTween(wipeAnimationKorea)
-//       //  // .setTween("#stats-slides", 0, {
-//       //  //      right: window.innerWidth,
-//       //  //      }) // trigger a TweenMax.to tween
-//       // // .addIndicators()
-//       // .addTo(controllerLibraries);
-
-// }
-
   $(window).resize(function(){
       introLibraries.update(true);
   });
@@ -97,6 +71,4 @@ $(function(){
     $this.toggleClass('paused');
   });
 
-
 })
-

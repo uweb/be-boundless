@@ -10,7 +10,7 @@
 
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/libraries/animsition.min.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/libraries.css' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/libraries.min.js' type='text/javascript'></script>";
-	$scripts .= "<script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/libraries/animsition.min.js' type='text/javascript'></script>";
+	// $scripts .= "<script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/libraries/animsition.min.js' type='text/javascript'></script>";
 	$storyCodes = 'KORCAT,LIBDIS';
 	$storyAppeal = 'Support undergraduate research and the future of invaluable library collections by contributing to the University Libraries.';
 	get_header( "campaign-v2" );
@@ -78,16 +78,21 @@
 				<div class="row">
 					<div class="col-md-6 statistic stat-one">
 						<div class="stat-text">
-							University Libraries provides<br />
-							<span class="large">9,000,000<span class="plus">+</span></span><br />
-							total volumes (including e-books)
+							University Libraries 관련 통계자료<br />
+							<span class="large">9백만<span class="plus"><!--+--></span></span><br />
+							권 이상 (전자책 포함)의 장서 보유
 						</div>
 					</div>
 					<div class="col-md-6 statistic stat-two">
 						<div class="stat-text">
-							The East Asia Library houses<br />
-							<span class="large">770,000<span class="plus">+</span></span><br />
-							<span class="snap-right">Volumes</span>
+							동아시아 도서관은<br />
+							<span class="large">77만<span class="plus"><!--+--></span></span><br />
+							<span class="snap-right">권 이상의 장서를 보유 – 미국에서 두 번째로 큰 한국어 장서</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 source">
+							출처: University Libraries, 2016
 						</div>
 					</div>
 				</div>
@@ -166,16 +171,26 @@
 
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 statistic stat-one">
-						<div class="stat-text">
-							<div class="large third">67</div>
-							<div class="two-thirds"><span class="plus">%</span>의 한국 시청자들이 90년대 <br />후반 드라마 “그대 그리고 <br />나”의 마지막 회를 시청했다.</div>
+					<div class="col-md-6">
+						<div class="statistic stat-one">
+							<div class="stat-text">
+								<div class="large third">67</div>
+								<div class="two-thirds"><span class="plus">%</span>의 한국 시청자들이 90년대 <br />후반 드라마 “그대 그리고 <br />나”의 마지막 회를 시청했다.</div>
+							</div>
+						</div>
+						<div class="source">
+							출처: <a href="http://www.imbc.com/drama/youandi/concept/fram4.html">IMBC</a>
 						</div>
 					</div>
-					<div class="col-md-6 statistic stat-two">
-						<div class="stat-text">
-							<span class="left">고아가 최초의 여성 어의가 되는 <br />이야기를 다룬 드라마 <br />“대장금(Jewel in the Palace)”은 </span>
-							<span class="large">91<span class="snap-right"> 개의 나라에 배포되었다</span></span>
+					<div class="col-md-6">
+						<div class="statistic stat-two">
+							<div class="stat-text">
+								<span class="left">고아가 최초의 여성 어의가 되는 <br />이야기를 다룬 드라마 <br />“대장금”은 </span>
+								<span class="large">91<span class="snap-right"> 개의 나라에 배포되었다</span></span>
+							</div>
+						</div>
+						<div class="source">
+							출처: Korean Embassy
 						</div>
 					</div>
 				</div>
@@ -320,36 +335,20 @@
 				</div> 
 			</div>
 		</section>
+		<div class="text-block transparent no-pad">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p style="margin-top: 15px;">대표이미지: 한국드라마“응답하라 1997” 시작장면</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
 	</main>
 
 </div>
-<script type="text/javascript">
-	$(document).ready(function() {
-  $(".animsition").animsition({
-    inClass: 'fade-in',
-    outClass: 'fade-out',
-    inDuration: 500,
-    outDuration: 500,
-    linkElement: '.animsition-link',
-    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-    loading: true,
-    loadingParentElement: 'body', //animsition wrapper element
-    loadingClass: 'animsition-loading',
-    loadingInner: '', // e.g '<img src="loading.svg" />'
-    timeout: false,
-    timeoutCountdown: 5000,
-    onLoadEvent: true,
-    browser: [ 'animation-duration', '-webkit-animation-duration'],
-    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-    overlay : false,
-    overlayClass : 'animsition-overlay-slide',
-    overlayParentElement : 'body',
-    transition: function(url){ window.location.href = url; }
-  });
-});
-</script>
+
 <?php
 	include(locate_template('include-giving.php'));
 	get_template_part('footer','campaign-v2');

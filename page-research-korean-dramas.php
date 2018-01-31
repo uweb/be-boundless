@@ -10,7 +10,7 @@
 
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/libraries/animsition.min.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/libraries.css' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/libraries.min.js' type='text/javascript'></script>";
-	$scripts .= "<script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/libraries/animsition.min.js' type='text/javascript'></script>";
+	// $scripts .= "<script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/libraries/animsition.min.js' type='text/javascript'></script>";
 	$storyCodes = 'KORCAT,LIBDIS';
 	$storyAppeal = 'Support undergraduate research and the future of invaluable library collections by contributing to the University Libraries.';
 	get_header( "campaign-v2" );
@@ -76,18 +76,6 @@
 
 			<div class="container">
 				<div class="row">
-					<!-- <div class="col-md-6 stat-one">
-						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS_LIBRARIES_SVG-01.svg' ?>">
-					</div>
-
-					<div class="col-md-6 stat-two">
-						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS_LIBRARIES_SVG-02.svg' ?>">
-					</div> -->
-					
-					<!-- <div class="col-md-4 stat-three">
-						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS_LIBRARIES_SVG-03.svg' ?>">
-					</div> -->
-
 					<div class="col-md-6 statistic stat-one">
 						<div class="stat-text">
 							University Libraries provides<br />
@@ -102,13 +90,11 @@
 							<span class="snap-right">Volumes</span>
 						</div>
 					</div>
-					<!-- <div class="col-md-4 statistic stat-3">
-						<div class="stat-text"> 
-							University Libraries provides<br />
-							<span class="large">11,000<span class="large plus">+</span></span><br />
-							documents to scholars, government agencies and institutions around the world
-						</div>
-					</div> -->
+				</div>
+				<div class="row">
+					<div class="col-md-6 source">
+						Source: University Libraries, 2016
+					</div>
 				</div>
 			</div>
 
@@ -185,26 +171,26 @@
 
 			<div class="container">
 				<div class="row">
-					<!-- <div class="col-md-6 stat-one">
-						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS_LIBRARIES_SVG-04.svg' ?>">
-					</div>
-
-					<div class="col-md-6 stat-two">
-						<img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/STATS_LIBRARIES_SVG-05.svg' ?>">
-					</div> -->
-
-
-
-					<div class="col-md-6 statistic stat-one">
-						<div class="stat-text">
-							<div class="large third">67</div>
-							<div class="two-thirds"><span class="plus">%</span>of Korean television <br />viewers watched the finale <br />of “You and I.”</div>
+					<div class="col-md-6">
+						<div class="statistic stat-one">
+							<div class="stat-text">
+								<div class="large third">67</div>
+								<div class="two-thirds"><span class="plus">%</span>of Korean television <br />viewers watched the finale <br />of “You and I.”</div>
+							</div>
+						</div>
+						<div class="source">
+							Source: <a href="http://www.imbc.com/drama/youandi/concept/fram4.html">IMBC</a>
 						</div>
 					</div>
-					<div class="col-md-6 statistic stat-two">
-						<div class="stat-text">
-							<span class="left">The drama <br />“Dae Jang  <br />Geum” was <br />distributed to</span>
-							<span class="large">91<span class="snap-right"> countries</span></span>
+					<div class="col-md-6">
+						<div class="statistic stat-two">
+							<div class="stat-text">
+								<span class="left">The drama <br />“Dae Jang  <br />Geum” was <br />distributed to</span>
+								<span class="large">91<span class="snap-right"> countries</span></span>
+							</div>
+						</div>
+						<div class="source">
+							Source: Korean Embassy
 						</div>
 					</div>
 				</div>
@@ -349,36 +335,18 @@
 				</div> 
 			</div>
 		</section>
-
+		<div class="text-block transparent no-pad">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p style="margin-top: 15px;">Title image: Opening sequence for the K-drama “Reply 1997.”</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
 
 </div>
-<script type="text/javascript">
-	$(document).ready(function() {
-  $(".animsition").animsition({
-    inClass: 'fade-in',
-    outClass: 'fade-out',
-    inDuration: 500,
-    outDuration: 500,
-    linkElement: '.animsition-link',
-    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-    loading: true,
-    loadingParentElement: 'body', //animsition wrapper element
-    loadingClass: 'animsition-loading',
-    loadingInner: '', // e.g '<img src="loading.svg" />'
-    timeout: false,
-    timeoutCountdown: 5000,
-    onLoadEvent: true,
-    browser: [ 'animation-duration', '-webkit-animation-duration'],
-    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-    overlay : false,
-    overlayClass : 'animsition-overlay-slide',
-    overlayParentElement : 'body',
-    transition: function(url){ window.location.href = url; }
-  });
-});
-</script>
 <?php
 	include(locate_template('include-giving.php'));
 	get_template_part('footer','campaign-v2');

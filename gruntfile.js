@@ -227,13 +227,11 @@ module.exports = function(grunt) {
           ],
           'immersive-stories/js/libraries.min.js': [
               'immersive-stories/js/common.js',
-              // Popup video
               'immersive-stories/js/lity.js',
-              // Slideshow
               'immersive-stories/js/slick.js',
               'immersive-stories/js/libraries.js',
-              'immersive-stories/js/objectFitPolyfill.basic.js',
-              // 'immersive-stories/js/libraries/animsition.min.js',
+              // 'immersive-stories/js/objectFitPolyfill.basic.js',
+              'immersive-stories/js/libraries/animsition.min.js',
           ],
           'campaign/js/main.min.js': [
             'campaign/js/main.js',
