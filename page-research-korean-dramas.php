@@ -93,7 +93,7 @@
 				</div>
 				<div class="row">
 					<div class="col-md-6 source">
-						Source: University Libraries, 2016
+						Source: University Libraries, 2017
 					</div>
 				</div>
 			</div>

@@ -92,7 +92,7 @@
 					</div>
 					<div class="row">
 						<div class="col-md-6 source">
-							출처: University Libraries, 2016
+							출처: University Libraries, 2017
 						</div>
 					</div>
 				</div>
