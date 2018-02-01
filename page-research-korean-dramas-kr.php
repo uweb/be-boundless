@@ -77,17 +77,17 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 statistic stat-one">
-						<div class="stat-text">
-							University Libraries 관련 통계자료<br />
+						<div class="stat-text kr">
+							University Libraries <br />관련 통계자료<br />
 							<span class="large">9백만<span class="plus"><!--+--></span></span><br />
-							권 이상 (전자책 포함)의 장서 보유
+							권 이상 (전자책 포함)<br />의 장서 보유
 						</div>
 					</div>
 					<div class="col-md-6 statistic stat-two">
-						<div class="stat-text">
+						<div class="stat-text kr">
 							동아시아 도서관은<br />
 							<span class="large">77만<span class="plus"><!--+--></span></span><br />
-							<span class="snap-right">권 이상의 장서를 보유 – 미국에서 두 번째로 큰 한국어 장서</span>
+							<span class="snap-right">권 이상의 장서를 <br />보유 – 미국에서 두 <br />번째로 큰 한국어 장서</span>
 						</div>
 					</div>
 					<div class="row">
@@ -173,7 +173,7 @@
 				<div class="row">
 					<div class="col-md-6">
 						<div class="statistic stat-one">
-							<div class="stat-text">
+							<div class="stat-text kr">
 								<div class="large third">67</div>
 								<div class="two-thirds"><span class="plus">%</span>의 한국 시청자들이 90년대 <br />후반 드라마 “그대 그리고 <br />나”의 마지막 회를 시청했다.</div>
 							</div>
@@ -184,8 +184,8 @@
 					</div>
 					<div class="col-md-6">
 						<div class="statistic stat-two">
-							<div class="stat-text">
-								<span class="left">고아가 최초의 여성 어의가 되는 <br />이야기를 다룬 드라마 <br />“대장금”은 </span>
+							<div class="stat-text kr">
+								<span class="left">고아가 최초의 <br />여성 어의가 되는 <br />이야기를 다룬 <br />드라마 “대장금”은 </span>
 								<span class="large">91<span class="snap-right"> 개의 나라에 배포되었다</span></span>
 							</div>
 						</div>
@@ -339,7 +339,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<p style="margin-top: 15px;">대표이미지: 한국드라마“응답하라 1997” 시작장면</p>
+						<p style="margin-top: 15px;">처음배경화면이미지: 한국드라마“응답하라 1997” 시작장면</p>
 					</div>
 				</div>
 			</div>

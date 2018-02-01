@@ -712,6 +712,13 @@ section {
             display: block;
             text-align: right;
         }
+        &.kr {
+            font-size: 20px !important;
+            line-height: normal !important;
+            .snap-right {
+                text-align: left;
+            }
+        }
     }
     .large, .plus {
         font-size: 5vw;
@@ -721,6 +728,9 @@ section {
         @media (max-width: 992px) {
             font-size: 13vw;
         }
+    }
+    & .kr .large {
+        line-height: 0.9;
     }
     .plus {
         vertical-align: top;
@@ -792,6 +802,13 @@ section {
                     font-size: 15px;
                 }
             }
+        }
+
+        .stat-text.kr, &.stat-two .snap-right {
+            font-size: 14px !important;
+        }
+        .stat-text.kr .large {
+            font-size: 14vh !important;
         }
     }
 }
