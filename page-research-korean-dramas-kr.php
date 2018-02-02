@@ -175,7 +175,7 @@
 						<div class="statistic stat-one">
 							<div class="stat-text kr">
 								<div class="large third">67</div>
-								<div class="two-thirds"><span class="plus">%</span>의 한국 시청자들이 90년대 <br />후반 드라마 “그대 그리고 <br />나”의 마지막 회를 시청했다.</div>
+								<div class="two-thirds"><span class="plus">%</span>의 한국 시청자들이 90년대 <br />후반 드라마 “그대 그리고 <br />나”의 마지막 회를 시청했다</div>
 							</div>
 						</div>
 						<div class="source">

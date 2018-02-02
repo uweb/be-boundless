@@ -65,7 +65,7 @@
 					</div>                 
 					<div class="col-md-6">
 						<div class="arrow-right"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/kristy-kwon-stacks.jpg' ?>" alt="Kristy Kwon"></div>
-						<div class="caption">Kristy Kwon / Senior, economics and international studies</div>
+						<div class="caption">Kristy Kwon / Senior, Economics and International Studies</div>
 					</div> 
 				</div>
 			</div>   
@@ -175,7 +175,7 @@
 						<div class="statistic stat-one">
 							<div class="stat-text">
 								<div class="large third">67</div>
-								<div class="two-thirds"><span class="plus">%</span>of Korean television <br />viewers watched the finale <br />of “You and I.”</div>
+								<div class="two-thirds"><span class="plus">%</span>of Korean television <br />viewers watched the finale <br />of “You and I”</div>
 							</div>
 						</div>
 						<div class="source">
@@ -339,7 +339,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<p style="margin-top: 15px;">Title image: Opening sequence for the K-drama “Reply 1997.”</p>
+						<p style="margin-top: 15px;">Title image: Opening sequence for the K-drama “Reply 1997”</p>
 					</div>
 				</div>
 			</div>
