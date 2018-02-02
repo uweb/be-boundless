@@ -65,13 +65,9 @@ $(function () {
   }
 
   // show / hide description text in profiles and photos sections
-  var $profilesMoreBtns = $('#section-profiles a.read-more')
-    .off();
-  var $photosMoreBtns = $('#section-photos a.read-more')
-    .off();
-  var $allMoreBtns = $profilesMoreBtns.add($photosMoreBtns);
+  var $moreBtns = $('#section-profiles .item, #section-photos .item')
 
-  $allMoreBtns.click(function (e) {
+  $moreBtns.click(function (e) {
     e.preventDefault();
     $(this)
       .closest('.item')
@@ -152,16 +148,17 @@ $(function () {
     })
     .setPin('#section-map', { pushFollowers: true })
     .on('leave', function(e) {
+      console.log ( 'map leave' );
       if(e.scrollDirection === 'REVERSE') {
         $('#section-map').css({
           'position': 'relative'
         });
       } else {
-        $('#section-map').css({
-          'position': 'fixed',
-          'top': 0,
-          'left': 0
-        });
+        // $('#section-map').css({
+        //   'position': 'fixed',
+        //   'top': 0,
+        //   'left': 0
+        // });
       }
     })
     .setTween(tweenMap)
@@ -202,109 +199,133 @@ $(function () {
    * Animation: Profiles
    ***************************/
 
-  var profileImg1 = $('#section-profiles .item-1 .img');
-  var profileImg2 = $('#section-profiles .item-2 .img');
+  var controllerProfile1 = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: 'onEnter', duration: '200%'}});
+  new ScrollMagic.Scene({triggerElement: '#section-profiles .item-1'})
+    .setTween('#section-profiles .item-1 .img', {y:'30%', ease: Linear.easeNone})
+    .addTo(controllerProfile1);
 
-  var tweenProfile1 = new TimelineMax()
-    .fromTo(profileImg1, 0.25, { opacity: 0 }, { opacity: 1, overwrite: false });
+  var controllerProfile2 = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: 'onEnter', duration: '200%'}});
+  new ScrollMagic.Scene({triggerElement: '#section-profiles .item-2'})
+    .setTween('#section-profiles .item-2 .img', {y:'30%', ease: Linear.easeNone})
+    .addTo(controllerProfile2);
 
-  var tweenProfile2 = new TimelineMax()
-    .fromTo(profileImg1, 0.25, { opacity: 1 }, { opacity: 0, overwrite: false, immediateRender: false, delay: 0.25 }, 0)
-    .fromTo(profileImg2, 0.25, { opacity: 0 }, { opacity: 1, overwrite: false }, 0);
-
-  var tweenProfile3 = new TimelineMax()
-    .fromTo(profileImg2, 0.25, { opacity: 1 }, { opacity: 0, overwrite: false, immediateRender: false, delay: 0.25 });
-
-  var sceneProfiles1 = new ScrollMagic.Scene({
-      triggerElement: '#section-profiles .item-1',
-      triggerHook: 'onCenter',
-      // offset: 250
-    })
-    .setTween(tweenProfile1)
-    .on('enter leave', function(e) {
-      // console.log('direction :: ', e.scrollDirection);
-      if(e.scrollDirection === 'FORWARD') {
-        $('#section-map').css({
-          'visibility': 'hidden'
-        });
-      } else {
-        $('#section-map').css({
-          'visibility': 'visible'
-        });
-      }
-    })
-    .addTo(controllerLaw);
-
-  var sceneProfiles2 = new ScrollMagic.Scene({
-      triggerElement: '#section-profiles .item-2',
-      triggerHook: 'onCenter',
-      // offset: 250
-    })
-    .setTween(tweenProfile2)
-    .addTo(controllerLaw);
-
-  var sceneProfiles3 = new ScrollMagic.Scene({
-      triggerElement: '#section-profiles .profiles-fade-out-trigger',
-      triggerHook: 'onCenter',
-      // offset: 250
-    })
-    .setTween(tweenProfile3)
-    .addTo(controllerLaw);
+  // var tweenProfile1 = new TimelineMax()
+  //   .fromTo(profileImg1, 0.25, { opacity: 0 }, { opacity: 1, overwrite: false });
+  //
+  // var tweenProfile2 = new TimelineMax()
+  //   .fromTo(profileImg1, 0.25, { opacity: 1 }, { opacity: 0, overwrite: false, immediateRender: false, delay: 0.25 }, 0)
+  //   .fromTo(profileImg2, 0.25, { opacity: 0 }, { opacity: 1, overwrite: false }, 0);
+  //
+  // var tweenProfile3 = new TimelineMax()
+  //   .fromTo(profileImg2, 0.25, { opacity: 1 }, { opacity: 0, overwrite: false, immediateRender: false, delay: 0.25 });
+  //
+  // var sceneProfiles1 = new ScrollMagic.Scene({
+  //     triggerElement: '#section-profiles .item-1',
+  //     triggerHook: 'onCenter',
+  //     // offset: 250
+  //   })
+  //   .setTween(tweenProfile1)
+  //   .on('enter leave', function(e) {
+  //     // console.log('direction :: ', e.scrollDirection);
+  //     if(e.scrollDirection === 'FORWARD') {
+  //       $('#section-map').css({
+  //         'visibility': 'hidden'
+  //       });
+  //     } else {
+  //       $('#section-map').css({
+  //         'visibility': 'visible'
+  //       });
+  //     }
+  //   })
+  //   //.addTo(controllerLaw);
+  //
+  // var sceneProfiles2 = new ScrollMagic.Scene({
+  //     triggerElement: '#section-profiles .item-2',
+  //     triggerHook: 'onCenter',
+  //     // offset: 250
+  //   })
+  //   .setTween(tweenProfile2)
+  //   .addTo(controllerLaw);
+  //
+  // var sceneProfiles3 = new ScrollMagic.Scene({
+  //     triggerElement: '#section-profiles .profiles-fade-out-trigger',
+  //     triggerHook: 'onCenter',
+  //     // offset: 250
+  //   })
+  //   .setTween(tweenProfile3)
+  //   .addTo(controllerLaw);
 
 
 
   /***************************
    * Animation: Photos
    ***************************/
+   // $('#section-photos .item-1').parallax({imageSrc: '/wp-content/themes/boundless/immersive-stories/img/law/photo-1.jpg'});
 
-  var photosImg1 = $('#section-photos .item-1 .img');
-  var photosImg2 = $('#section-photos .item-2 .img');
-  var photosImg3 = $('#section-photos .item-3 .img');
 
- var tweenPhoto1 = new TimelineMax()
-   .fromTo(photosImg1, 0.25, { autoAlpha: 0 }, { autoAlpha: 1, overwrite: false });
+  //var photosImg1 = $('#section-photos .item-1 .img');
+  // var photosImg2 = $('#section-photos .item-2 .img');
+  // var photosImg3 = $('#section-photos .item-3 .img');
+  //
+  var controllerPhoto1 = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: 'onEnter', duration: '200%'}});
+  new ScrollMagic.Scene({triggerElement: '#section-photos .item-1'})
+    .setTween('#section-photos .item-1 .img', {y:'30%', ease: Linear.easeNone})
+    .addTo(controllerPhoto1);
 
- var tweenPhoto2 = new TimelineMax()
-   .fromTo(photosImg1, 0.25, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: false, immediateRender: false, delay: 0.25 }, 0)
-   .fromTo(photosImg2, 0.25, { autoAlpha: 0 }, { autoAlpha: 1, overwrite: false }, 0);
+  var controllerPhoto2 = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: 'onEnter', duration: '200%'}});
+  new ScrollMagic.Scene({triggerElement: '#section-photos .item-2'})
+    .setTween('#section-photos .item-2 .img', {y:'30%', ease: Linear.easeNone})
+    .addTo(controllerPhoto2);
 
- var tweenPhoto3 = new TimelineMax()
-   .fromTo(photosImg2, 0.25, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: false, immediateRender: false, delay: 0.25 }, 0)
-   .fromTo(photosImg3, 0.25, { autoAlpha: 0 }, { autoAlpha: 1, overwrite: false }, 0);
-
- var tweenPhoto4 = new TimelineMax()
-   .fromTo(photosImg3, 0.25, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: false, immediateRender: false, delay: 0.25 });
-
- var scenePhotos1 = new ScrollMagic.Scene({
-     triggerElement: '#section-photos .item-1',
-     triggerHook: 'onCenter'
-   })
-   .setTween(tweenPhoto1)
-   .addTo(controllerLaw);
-
- var scenePhotos2 = new ScrollMagic.Scene({
-     triggerElement: '#section-photos .item-2',
-     triggerHook: 'onCenter',
-     offset: 150
-   })
-   .setTween(tweenPhoto2)
-   .addTo(controllerLaw);
-
- var scenePhotos3 = new ScrollMagic.Scene({
-     triggerElement: '#section-photos .item-3',
-     triggerHook: 'onCenter',
-     offset: 150
-   })
-   .setTween(tweenPhoto3)
-   .addTo(controllerLaw);
-
- var scenePhotos4 = new ScrollMagic.Scene({
-     triggerElement: '#section-photos .photos-fade-out-trigger',
-     triggerHook: 'onCenter',
-     offset: 150
-   })
-   .setTween(tweenPhoto4)
-   .addTo(controllerLaw);
+  var controllerPhoto3 = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: 'onEnter', duration: '200%'}});
+  new ScrollMagic.Scene({triggerElement: '#section-photos .item-3'})
+    .setTween('#section-photos .item-3 .img', {y:'30%', ease: Linear.easeNone})
+    .addTo(controllerPhoto3);
+ //
+ // var tweenPhoto1 = new TimelineMax()
+ //   .fromTo(photosImg1, 0.25, { autoAlpha: 0 }, { autoAlpha: 1, overwrite: false });
+ //
+ // var tweenPhoto2 = new TimelineMax()
+ //   .fromTo(photosImg1, 0.25, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: false, immediateRender: false, delay: 0.25 }, 0)
+ //   .fromTo(photosImg2, 0.25, { autoAlpha: 0 }, { autoAlpha: 1, overwrite: false }, 0);
+ //
+ // var tweenPhoto3 = new TimelineMax()
+ //   .fromTo(photosImg2, 0.25, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: false, immediateRender: false, delay: 0.25 }, 0)
+ //   .fromTo(photosImg3, 0.25, { autoAlpha: 0 }, { autoAlpha: 1, overwrite: false }, 0);
+ //
+ // var tweenPhoto4 = new TimelineMax()
+ //   .fromTo(photosImg3, 0.25, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: false, immediateRender: false, delay: 0.25 });
+ //
+ // var scenePhotos1 = new ScrollMagic.Scene({
+ //     triggerElement: '#section-photos .item-1',
+ //     triggerHook: 'onCenter'
+ //   })
+ //   .setTween(tweenPhoto1)
+ //   .addTo(controllerLaw);
+ //
+ // var scenePhotos2 = new ScrollMagic.Scene({
+ //     triggerElement: '#section-photos .item-2',
+ //     triggerHook: 'onCenter',
+ //     offset: 150
+ //   })
+ //   .setTween(tweenPhoto2)
+ //   .addTo(controllerLaw);
+ //
+ // var scenePhotos3 = new ScrollMagic.Scene({
+ //     triggerElement: '#section-photos .item-3',
+ //     triggerHook: 'onCenter',
+ //     offset: 150
+ //   })
+ //   .setTween(tweenPhoto3)
+ //   .addTo(controllerLaw);
+ //
+ // var scenePhotos4 = new ScrollMagic.Scene({
+ //     triggerElement: '#section-photos .photos-fade-out-trigger',
+ //     triggerHook: 'onCenter',
+ //     offset: 150
+ //   })
+ //   .setTween(tweenPhoto4)
+ //   .addTo(controllerLaw);
 
 
 
