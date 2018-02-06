@@ -28,7 +28,7 @@ function twitter_card($photo, $title, $descrpition) {
 
 add_filter( 'body_class', 'custom_class' );
 function custom_class( $classes ) {
-    if ( is_page( 'The Heart of Research' ) || is_page('Libraries Korean') ) {
+    if ( is_page( 'research-korean-dramas' ) || is_page('research-korean-dramas-kr') ) {
         $classes[] = 'animsition';
     }
     return $classes;

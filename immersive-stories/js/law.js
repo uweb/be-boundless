@@ -65,13 +65,9 @@ $(function () {
   }
 
   // show / hide description text in profiles and photos sections
-  var $profilesMoreBtns = $('#section-profiles a.read-more')
-    .off();
-  var $photosMoreBtns = $('#section-photos a.read-more')
-    .off();
-  var $allMoreBtns = $profilesMoreBtns.add($photosMoreBtns);
+  var $moreBtns = $('#section-profiles .item, #section-photos .item')
 
-  $allMoreBtns.click(function (e) {
+  $moreBtns.click(function (e) {
     e.preventDefault();
     $(this)
       .closest('.item')
@@ -117,122 +113,83 @@ $(function () {
     .get(0)
     .play();
 
-  // animation vars
-  var before1 = CSSRulePlugin.getRule("#section-map .item-1 .headline:before");
-  var before2 = CSSRulePlugin.getRule("#section-map .item-2 .headline:before");
-  var before3 = CSSRulePlugin.getRule("#section-map .item-3 .headline:before");
-  var after1 = CSSRulePlugin.getRule("#section-map .item-1 .headline:after");
-  var after2 = CSSRulePlugin.getRule("#section-map .item-2 .headline:after");
-  var after3 = CSSRulePlugin.getRule("#section-map .item-3 .headline:after");
-
 
 
   /***************************
    * Animation: Map
    ***************************/
 
-  // graph line SVG
-  var graphPaths = $('#map-graph-line .graph-path'),
-    graphCircs = $('#map-graph-line .graph-circ');
-
-  for (var i = 0; i < graphPaths.length; i++) {
-    initSvgPath(graphPaths[i]);
-  }
-
-  function initSvgPath(path) {
-    var pathLength = path.getTotalLength();
-    path.style.strokeDasharray = pathLength;
-    path.style.strokeDashoffset = pathLength;
-    path.style.opacity = 1;
-  }
+  // animation vars
+  var before1 = CSSRulePlugin.getRule("#section-map .item-1 .headline:before");
+  var before2 = CSSRulePlugin.getRule("#section-map .item-2 .headline:before");
+  var after1 = CSSRulePlugin.getRule("#section-map .item-1 .headline:after");
+  var after2 = CSSRulePlugin.getRule("#section-map .item-2 .headline:after");
+  var tweenMapDuration = 0.5;
 
   // build tween
   var tweenMap = new TimelineMax()
-    // graph svg lines
-    .to(graphPaths[0], 0.75, { css: { strokeDashoffset: 0 } }, 0)
-    .to(graphPaths[1], 0.75, { css: { strokeDashoffset: 0 } }, 0.75)
-    .to(graphPaths[2], 0.75, { css: { strokeDashoffset: 0 } }, 1.5)
-    .to(graphPaths[3], 0.75, { css: { strokeDashoffset: 0 } }, 2.25)
 
-    // graph svg points
-    .from(graphCircs[0], 0.25, { scale: 0, transformOrigin: '50% 50%', ease: Back.easeOut }, 0)
-    .from(graphCircs[1], 0.25, { scale: 0, transformOrigin: '50% 50%', ease: Back.easeOut }, 0.75)
-    .from(graphCircs[2], 0.25, { scale: 0, transformOrigin: '50% 50%', ease: Back.easeOut }, 1.5)
-    .from(graphCircs[3], 0.25, { scale: 0, transformOrigin: '50% 50%', ease: Back.easeOut }, 2.25)
-    .from(graphCircs[4], 0.25, { scale: 0, transformOrigin: '50% 50%', ease: Back.easeOut }, 3)
+    // section 1 out
+    .to(before1, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, 0)
+    .to(after1, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, 0)
+    .to("#section-map .item-1", tweenMapDuration * 0.25, { opacity: 0 }, tweenMapDuration * 0.75)
+    .to("#section-map .background-1", tweenMapDuration * 0.25, { scale: 1.2, opacity: 0 }, tweenMapDuration * 0.75)
 
-    // headline fades
-    .to("#section-map .item-1", 1, { opacity: 0 }, 0)
-    .to("#section-map .item-2", 1, { opacity: 1 }, 1)
-    .to("#section-map .item-2", 1, { opacity: 0 }, 2)
-    .to("#section-map .item-3", 1, { opacity: 1 }, 3)
-
-    // border animation
-    .to(before1, 1, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, 0)
-    .to(after1, 1, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, 0)
-
-    .from(before2, 1, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, 1)
-    .from(after2, 1, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, 1)
-    .to(before2, 1, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, 2)
-    .to(after2, 1, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, 2)
-
-    .from(before3, 1, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, 3)
-    .from(after3, 1, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, 3)
-
-    // image scaling
-    .to("#section-map .background-1", 1, { scale: 1.2, opacity: 0, transformOrigin: '15% 15%' }, 1)
-    .to("#section-map .background-2", 1, { scale: 1, transformOrigin: '15% 15%' }, 1)
-    .to("#section-map .background-2", 1, { scale: 1.2, opacity: 0, transformOrigin: '15% 15%' }, 3)
-    .to("#section-map .background-3", 1, { scale: 1, transformOrigin: '15% 15%' }, 3)
-    .to("#section-map .background-graph", 1, { opacity: 0 }, 3)
+    // section 2 in
+    .from(before2, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, tweenMapDuration)
+    .from(after2, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, tweenMapDuration)
+    .to("#section-map .item-2", tweenMapDuration * 0.25, { opacity: 1 }, tweenMapDuration)
+    .to("#section-map .background-2", tweenMapDuration * 0.25, { opacity: 1, scale: 1 }, tweenMapDuration)
 
   var sceneMap = new ScrollMagic.Scene({
       triggerElement: '#section-map',
       triggerHook: 0,
-      duration: '500%'
+      duration: '100%'
     })
     .setPin('#section-map', { pushFollowers: true })
-    .setTween(tweenMap)
-    .addTo(controllerLaw)
-    .on('progress', function (event) {
-      // console.log('Progress :: ', event.progress);
-      // console.log(this.triggerElement());
-      if (event.progress > 0.5) {
-        $(this.triggerElement())
-          .addClass('scrollHide');
+    .on('leave', function(e) {
+      console.log ( 'map leave' );
+      if(e.scrollDirection === 'REVERSE') {
+        $('#section-map').css({
+          'position': 'relative'
+        });
       } else {
-        $(this.triggerElement())
-          .removeClass('scrollHide');
+        // $('#section-map').css({
+        //   'position': 'fixed',
+        //   'top': 0,
+        //   'left': 0
+        // });
       }
-    });
+    })
+    .setTween(tweenMap)
+    .addTo(controllerLaw);
 
 
   /***************************
    * Animation: Body
    ***************************/
+
   var calloutLeft = $('#section-body .callout.left'),
     calloutRight = $('#section-body .callout.right');
 
   var tweenBodyLeft = new TimelineMax()
-    .from(calloutLeft, 0.5, { alpha: 0 })
-    .from(calloutLeft, 0.6, { x: '-=200px' }, 0);
+    .from(calloutLeft, 0.5, { alpha: 0, overwrite: false })
+    .from(calloutLeft, 0.6, { x: '-=200px', overwrite: false, immediateRender: false }, 0);
 
   var tweenBodyRight = new TimelineMax()
-    .from(calloutRight, 0.5, { alpha: 0 })
-    .from(calloutRight, 0.6, { x: '+=200px' }, 0);
+    .from(calloutRight, 0.5, { alpha: 0, overwrite: false })
+    .from(calloutRight, 0.6, { x: '+=200px', overwrite: false, immediateRender: false }, 0);
 
   var sceneBodyLeft = new ScrollMagic.Scene({
       triggerElement: '#section-body .callout.left',
-      duration: '100%',
-      offset: -550
+      offset: -200
     })
     .setTween(tweenBodyLeft)
     .addTo(controllerLaw);
 
   var sceneBodyRight = new ScrollMagic.Scene({
       triggerElement: '#section-body .callout.right',
-      duration: '100%',
-      offset: -550
+      offset: -200
     })
     .setTween(tweenBodyRight)
     .addTo(controllerLaw);
@@ -242,77 +199,133 @@ $(function () {
    * Animation: Profiles
    ***************************/
 
-  var tweenProfiles = new TimelineMax()
-    .set("#section-profiles .item-2", { autoAlpha: 0 })
-    .set("#section-profiles .item-1 .nav", { autoAlpha: 1 })
-    .set("#section-profiles .item-2 .nav", { autoAlpha: 0 })
+  var controllerProfile1 = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: 'onEnter', duration: '200%'}});
+  new ScrollMagic.Scene({triggerElement: '#section-profiles .item-1'})
+    .setTween('#section-profiles .item-1 .img', {y:'30%', ease: Linear.easeNone})
+    .addTo(controllerProfile1);
 
-    .to("#section-profiles .item-1", 1, { autoAlpha: 0 }, 0)
-    .to("#section-profiles .item-2", 1, { autoAlpha: 1 }, 0)
-    .to("#section-profiles .item-1 .nav", 0.5, { autoAlpha: 0 }, 0)
-    .to("#section-profiles .item-2 .nav", 0.5, { autoAlpha: 1 }, 0.5);
+  var controllerProfile2 = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: 'onEnter', duration: '200%'}});
+  new ScrollMagic.Scene({triggerElement: '#section-profiles .item-2'})
+    .setTween('#section-profiles .item-2 .img', {y:'30%', ease: Linear.easeNone})
+    .addTo(controllerProfile2);
 
-  tweenProfiles.addCallback(bringProfileElToTop, 0, ['.item-1']);
-  tweenProfiles.addCallback(bringProfileElToTop,
-    tweenProfiles.duration() / 2, ['.item-2']);
-
-  function bringProfileElToTop(el) {
-    $('#section-profiles .item')
-      .css('z-index', 0); // set all to 0
-    $('#section-profiles ' + el)
-      .css('z-index', 1); // bring passed to top
-  }
-
-  var sceneProfiles = new ScrollMagic.Scene({
-      triggerElement: '#section-profiles',
-      triggerHook: 0,
-      duration: '200%'
-    })
-    .setPin('#section-profiles', { pushFollowers: true })
-    .setTween(tweenProfiles)
-    .addTo(controllerLaw);
+  // var tweenProfile1 = new TimelineMax()
+  //   .fromTo(profileImg1, 0.25, { opacity: 0 }, { opacity: 1, overwrite: false });
+  //
+  // var tweenProfile2 = new TimelineMax()
+  //   .fromTo(profileImg1, 0.25, { opacity: 1 }, { opacity: 0, overwrite: false, immediateRender: false, delay: 0.25 }, 0)
+  //   .fromTo(profileImg2, 0.25, { opacity: 0 }, { opacity: 1, overwrite: false }, 0);
+  //
+  // var tweenProfile3 = new TimelineMax()
+  //   .fromTo(profileImg2, 0.25, { opacity: 1 }, { opacity: 0, overwrite: false, immediateRender: false, delay: 0.25 });
+  //
+  // var sceneProfiles1 = new ScrollMagic.Scene({
+  //     triggerElement: '#section-profiles .item-1',
+  //     triggerHook: 'onCenter',
+  //     // offset: 250
+  //   })
+  //   .setTween(tweenProfile1)
+  //   .on('enter leave', function(e) {
+  //     // console.log('direction :: ', e.scrollDirection);
+  //     if(e.scrollDirection === 'FORWARD') {
+  //       $('#section-map').css({
+  //         'visibility': 'hidden'
+  //       });
+  //     } else {
+  //       $('#section-map').css({
+  //         'visibility': 'visible'
+  //       });
+  //     }
+  //   })
+  //   //.addTo(controllerLaw);
+  //
+  // var sceneProfiles2 = new ScrollMagic.Scene({
+  //     triggerElement: '#section-profiles .item-2',
+  //     triggerHook: 'onCenter',
+  //     // offset: 250
+  //   })
+  //   .setTween(tweenProfile2)
+  //   .addTo(controllerLaw);
+  //
+  // var sceneProfiles3 = new ScrollMagic.Scene({
+  //     triggerElement: '#section-profiles .profiles-fade-out-trigger',
+  //     triggerHook: 'onCenter',
+  //     // offset: 250
+  //   })
+  //   .setTween(tweenProfile3)
+  //   .addTo(controllerLaw);
 
 
 
   /***************************
    * Animation: Photos
    ***************************/
+   // $('#section-photos .item-1').parallax({imageSrc: '/wp-content/themes/boundless/immersive-stories/img/law/photo-1.jpg'});
 
-  var tweenPhotos = new TimelineMax()
-    .set("#section-photos .item-2", { autoAlpha: 0 })
-    .set("#section-photos .item-3", { autoAlpha: 0 })
-    .set("#section-photos .item-1 .nav", { autoAlpha: 1 })
-    .set("#section-photos .item-2 .nav", { autoAlpha: 0 })
-    .set("#section-photos .item-3 .nav", { autoAlpha: 0 })
 
-    .to("#section-photos .item-1", 1, { autoAlpha: 0 }, 0)
-    .to("#section-photos .item-2", 1, { autoAlpha: 1 }, 0)
-    .to("#section-photos .item-3", 1, { autoAlpha: 1 }, 1)
-    .to("#section-photos .item-1 .nav", 0.5, { autoAlpha: 0 }, 0)
-    .to("#section-photos .item-2 .nav", 0.5, { autoAlpha: 1 }, 0.5)
-    .to("#section-photos .item-3 .nav", 0.5, { autoAlpha: 1 }, 1.5);
+  //var photosImg1 = $('#section-photos .item-1 .img');
+  // var photosImg2 = $('#section-photos .item-2 .img');
+  // var photosImg3 = $('#section-photos .item-3 .img');
+  //
+  var controllerPhoto1 = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: 'onEnter', duration: '200%'}});
+  new ScrollMagic.Scene({triggerElement: '#section-photos .item-1'})
+    .setTween('#section-photos .item-1 .img', {y:'30%', ease: Linear.easeNone})
+    .addTo(controllerPhoto1);
 
-  tweenPhotos.addCallback(bringPhotoElToTop, 0, ['.item-1']);
-  tweenPhotos.addCallback(bringPhotoElToTop,
-    tweenPhotos.duration() / 3, ['.item-2']);
-  tweenPhotos.addCallback(bringPhotoElToTop, (tweenPhotos.duration() /
-    3) * 2, ['.item-3']);
+  var controllerPhoto2 = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: 'onEnter', duration: '200%'}});
+  new ScrollMagic.Scene({triggerElement: '#section-photos .item-2'})
+    .setTween('#section-photos .item-2 .img', {y:'30%', ease: Linear.easeNone})
+    .addTo(controllerPhoto2);
 
-  function bringPhotoElToTop(el) {
-    $('#section-photos .item')
-      .css('z-index', 0); // set all to 0
-    $('#section-photos ' + el)
-      .css('z-index', 1); // bring passed to top
-  }
-
-  var scenePhotos = new ScrollMagic.Scene({
-      triggerElement: '#section-photos',
-      triggerHook: 0,
-      duration: '200%'
-    })
-    .setPin('#section-photos', { pushFollowers: true })
-    .setTween(tweenPhotos)
-    .addTo(controllerLaw);
+  var controllerPhoto3 = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: 'onEnter', duration: '200%'}});
+  new ScrollMagic.Scene({triggerElement: '#section-photos .item-3'})
+    .setTween('#section-photos .item-3 .img', {y:'30%', ease: Linear.easeNone})
+    .addTo(controllerPhoto3);
+ //
+ // var tweenPhoto1 = new TimelineMax()
+ //   .fromTo(photosImg1, 0.25, { autoAlpha: 0 }, { autoAlpha: 1, overwrite: false });
+ //
+ // var tweenPhoto2 = new TimelineMax()
+ //   .fromTo(photosImg1, 0.25, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: false, immediateRender: false, delay: 0.25 }, 0)
+ //   .fromTo(photosImg2, 0.25, { autoAlpha: 0 }, { autoAlpha: 1, overwrite: false }, 0);
+ //
+ // var tweenPhoto3 = new TimelineMax()
+ //   .fromTo(photosImg2, 0.25, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: false, immediateRender: false, delay: 0.25 }, 0)
+ //   .fromTo(photosImg3, 0.25, { autoAlpha: 0 }, { autoAlpha: 1, overwrite: false }, 0);
+ //
+ // var tweenPhoto4 = new TimelineMax()
+ //   .fromTo(photosImg3, 0.25, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: false, immediateRender: false, delay: 0.25 });
+ //
+ // var scenePhotos1 = new ScrollMagic.Scene({
+ //     triggerElement: '#section-photos .item-1',
+ //     triggerHook: 'onCenter'
+ //   })
+ //   .setTween(tweenPhoto1)
+ //   .addTo(controllerLaw);
+ //
+ // var scenePhotos2 = new ScrollMagic.Scene({
+ //     triggerElement: '#section-photos .item-2',
+ //     triggerHook: 'onCenter',
+ //     offset: 150
+ //   })
+ //   .setTween(tweenPhoto2)
+ //   .addTo(controllerLaw);
+ //
+ // var scenePhotos3 = new ScrollMagic.Scene({
+ //     triggerElement: '#section-photos .item-3',
+ //     triggerHook: 'onCenter',
+ //     offset: 150
+ //   })
+ //   .setTween(tweenPhoto3)
+ //   .addTo(controllerLaw);
+ //
+ // var scenePhotos4 = new ScrollMagic.Scene({
+ //     triggerElement: '#section-photos .photos-fade-out-trigger',
+ //     triggerHook: 'onCenter',
+ //     offset: 150
+ //   })
+ //   .setTween(tweenPhoto4)
+ //   .addTo(controllerLaw);
 
 
 
@@ -326,8 +339,13 @@ $(function () {
       sceneMap.update(true);
       sceneBodyLeft.update(true);
       sceneBodyRight.update(true);
-      sceneProfiles.update(true);
-      scenePhotos.update(true);
+      sceneProfiles1.update(true);
+      sceneProfiles2.update(true);
+      sceneProfiles3.update(true);
+      scenePhotos1.update(true);
+      scenePhotos2.update(true);
+      scenePhotos3.update(true);
+      scenePhotos4.update(true);
     });
 
 
@@ -336,7 +354,6 @@ $(function () {
    * Misc scripts
    ***************************/
 
-  // lazyloading (not IE) in 3... 2... 1...
   if (detectIE) {
     // fallback for object-fit: cover - header bg video
     // $('#section-intro video')
