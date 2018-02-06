@@ -76,9 +76,12 @@ button.lity-close {
         width: 100px;
         pointer-events: none;
     }
+    &:focus {
+        outline: -webkit-focus-ring-color auto 5px;
+    }
 }
 
-section:not(.active):not(.fixed-section):not(.scrollit){
+li:not(.active):not(.fixed-section):not(.scrollit){
     z-index: 0;
 }
 
@@ -90,7 +93,7 @@ section:not(.active):not(.fixed-section):not(.scrollit){
     }
 }
 
-section:not(.fp-auto-height) div.background {
+li:not(.fp-auto-height) div.background {
     height: 100%;
     max-height: calc(~"100vh - 90px");
     width: 100%;
@@ -116,7 +119,7 @@ section:not(.fp-auto-height) div.background {
 //     //.background-cover(cover);
 // }
 
-section.slide1 div.background {
+li.slide1 div.background {
     padding-top: 81px;
     @media(max-width:768px) {
         padding-top: 0;
@@ -563,8 +566,8 @@ section.slide1 div.background {
 //     z-index: 2;
 // }
 
-section.section div.background ,
-section.fixed-section div.background {
+li.section div.background ,
+li.fixed-section div.background {
     position: relative;
     &:before {
         content: '';
@@ -892,8 +895,8 @@ section.fixed-section div.background {
 }
 
 
-section.section div.background ,
-section.fixed-section div.background {
+li.section div.background ,
+li.fixed-section div.background {
     &:before {
         content: none;
     }
@@ -930,7 +933,7 @@ section.fixed-section div.background {
     }              
 }
 
-section.transparent-section {
+li.transparent-section {
     z-index: 1;
 }
 .transparent-section div.background {
@@ -1238,7 +1241,7 @@ div.background.photos {
 }
 
 @media(min-width:769px) {
-    section.icon-section.bg-show {
+    li.icon-section.bg-show {
         visibility: visible;
         opacity: 1.0;
         &:after{
@@ -1315,12 +1318,12 @@ section.fixed-section {
     }
 }
 
-section.blank-section {
-    //
-}
+// section.blank-section {
+//     //
+// }
 
-section.section div.background .intro-body.move-higher,
-section.fixed-section div.background .intro-body.move-higher {
+li.section div.background .intro-body.move-higher,
+li.fixed-section div.background .intro-body.move-higher {
     top: 37%;
 }
 
@@ -1409,7 +1412,13 @@ section.fixed-section div.background .intro-body.move-higher {
     }              
 }
 
+#students.active div.background #all-students.not-active {
+    opacity: 0;
+    visibility: hidden;
+}
+
 #students div.background {
+    margin-top: -30px;
     background-image: url("@{enviro}/student-valley.jpg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -1434,8 +1443,6 @@ section.fixed-section div.background .intro-body.move-higher {
         z-index: 2;
     }
     #all-students {
-        visibility: visible;
-        opacity: 1;
         .transition(all .5s ease-in-out);
         &.not-active {
             opacity: 0;
@@ -1651,6 +1658,9 @@ section.fixed-section div.background .intro-body.move-higher {
             visibility: visible;
             opacity: 1;
         }
+        &:focus {
+            outline: -webkit-focus-ring-color auto 5px;
+        }
     }
     @media @phone-only { 
         h1, h2 {
@@ -1670,6 +1680,11 @@ section.fixed-section div.background .intro-body.move-higher {
             span {}
         }
     }              
+}
+
+#students.active div.background #all-students {
+    visibility: visible;
+    opacity: 1;
 }
 
 .section-caption {
@@ -1805,7 +1820,7 @@ div.background {
         }
     }
 }
-section.icon-section {
+li.icon-section {
     z-index: 2;
     div.background {
         .intro-body h1,
@@ -2229,28 +2244,28 @@ img.circle.quote {
         }
     }
 
-    section.bg-pred {
+    li.bg-pred {
         background-position: right bottom;
         background-repeat: no-repeat;
         .background-size(cover);
         background-image: url("@{enviro}/PREDATOR_MOBILE_BG.png");
     }
 
-    section.bg-prey {
+    li.bg-prey {
         background-position: left bottom;
         background-repeat: no-repeat;
         .background-size(cover);
         background-image: url("@{enviro}/PREY_MOBILE_BG.jpg");
     }
 
-    section.bg-scav {
+    li.bg-scav {
         background-position: right bottom;
         background-repeat: no-repeat;
         .background-size(cover);
         background-image: url("@{enviro}/SCAV_MOBILE_BG.jpg");
     }
 
-    section.bg-peop {
+    li.bg-peop {
         background-position: center bottom;
         background-repeat: no-repeat;
         .background-size(cover);
@@ -2305,7 +2320,7 @@ img.circle.quote {
             display: none;
         }
     }
-    section.section div.background .text-box .row.centered.atts-pic {
+    li.section div.background .text-box .row.centered.atts-pic {
         display: block;
         img {
             margin: 0;
@@ -2353,7 +2368,7 @@ img.circle.quote {
         }
     }
 
-    section.section div.background {
+    li.section div.background {
         blockquote {
             font-size: 1em;
             line-height: 1.3;
@@ -2430,7 +2445,7 @@ img.circle.quote {
             animation-fill-mode: forwards;
         }
     }
-    section.icon-section div.audio {
+    li.icon-section div.audio {
         display: none;
     }
     div.lity-content {
@@ -2529,12 +2544,13 @@ div.fp-controlArrow {
             height: 50px;
             background: #FFFFFF;
             .skew(-15deg, 0);
-            div.empty-line {
+            ol.empty-line {
                 position: absolute;
                 bottom: 23px;
                 right: 5%;
                 height: 4px;
                 width: 85%;
+                margin-bottom: 0;
                 background: @ultralightgold;
                 //opacity: 0.6;
                 overflow: visible;
@@ -2547,6 +2563,11 @@ div.fp-controlArrow {
                     width: 0%;
                     background: @purple;
                     .transition(all 1s ease-in-out);
+                }
+                li {
+                    height: 0;
+                    width: 0;
+                    list-style: none;
                 }
                 a.dot {
                     position: absolute;
@@ -2714,7 +2735,7 @@ div.fp-controlArrow {
             }
             div.black {
                 width: 88%;
-                div.empty-line {
+                ol.empty-line {
                     width: 90%;
                     a.dot span p {
                         //font-size: 17px;
@@ -2820,7 +2841,7 @@ div.fp-controlArrow {
             }
         }
     }
-    section.section div.background {
+    li.section div.background {
         h2 {
             margin: 10px 0;
             font-size: 5vw;
@@ -2858,7 +2879,7 @@ div.fp-controlArrow {
     }
 }
 
-section.fp-auto-height.transparent-section {
+li.fp-auto-height.transparent-section {
     .background.photos {
         opacity: 0;
         .transition(opacity 1.0s ease-in-out);

@@ -1,4 +1,4 @@
-/*! Lity - v2.2.1 - 2016-11-21
+/*! Lity - v2.3 - 2017-07-17
 * http://sorgalla.com/lity/
 * Copyright (c) 2015-2016 Jan Sorgalla; Licensed MIT */
 (function(window, factory) {
@@ -27,6 +27,7 @@
     var _focusableElementsSelector = 'a[href],area[href],input:not([disabled]),select:not([disabled]),textarea:not([disabled]),button:not([disabled]),iframe,object,embed,[contenteditable],[tabindex]:not([tabindex^="-"])';
 
     var _defaultOptions = {
+        esc: true,
         handler: null,
         handlers: {
             image: imageHandler,
@@ -309,7 +310,7 @@
         }
 
         // ESC key
-        if (e.keyCode === 27) {
+        if (e.keyCode === 27 && !!current.options('esc')) {
             current.close();
         }
 
@@ -518,7 +519,12 @@
                     $.contains(element[0], document.activeElement)
                 )
             ) {
-                activeElement.focus();
+                try {
+                    activeElement.focus();
+                } catch (e) {
+                    // Ignore exceptions, eg. for SVG elements which can't be
+                    // focused in IE11
+                }
             }
 
             content.trigger('lity:close', [self]);
@@ -621,7 +627,7 @@
         }
     }
 
-    lity.version  = '2.2.1';
+    lity.version  = '@VERSION';
     lity.options  = $.proxy(settings, lity, _defaultOptions);
     lity.handlers = $.proxy(settings, lity, _defaultOptions.handlers);
     lity.current  = currentInstance;

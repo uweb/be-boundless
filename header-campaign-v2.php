@@ -31,7 +31,7 @@ global $styles;
 	</head>
 	<body id="immersive" <?php body_class(); ?>>
 		<header id="cv2-header" class="cv2-header" role="banner">
-			<div class="cv2-header-purple" role="navigation">
+			<div class="cv2-header-purple" role="navigation" aria-label="Main menu">
 				<div class="row">
 					<div class="col-sm-6 col-md-6 col-lg-6">
 						<a class="cv2-header-home" tabindex="-1" href="http://www.uw.edu">UW Home</a>
