@@ -27,6 +27,7 @@
     <div class="background">
       <!-- <button id="howto">Instructions</button> -->
       <button id="pause">Pause</button>
+      <button id="question"><span>Help</span>?</button>
       <video  autoplay data-autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/header-poster.png' ?>" class="fullscreen-bg__video">
          <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/environment/HEADER_LOOP.mp4' ?>" type="video/mp4">
       </video>
