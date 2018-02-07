@@ -224,7 +224,18 @@
                         <p>In her final year at the UW, Nelson plans to take classes that expand the knowledge she gained during field camp, and she’d like to continue with geology after graduation. Many other camp participants also intend to pursue careers in the field.</p>
 
                         <p>“When they come to camp, they’re geology students,” McGroder says. “When they leave, they’re geologists.”</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="single-column">
+            <div class="text-content container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <h2>Explore Mary Alice's journal</h2>
+                        <p>A first-hand account of her career-defining UW field camp experience.</p>
+                        <center><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/Coenv_link_ESS_Camp_IMGOnly.png' ?>"></center>
                     </div>
                 </div>
             </div>
