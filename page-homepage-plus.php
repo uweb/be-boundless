@@ -63,10 +63,10 @@
                     <p>Students spent a week of field camp at Block Mountain, with the goal of mapping the area’s puzzling geologic features.</p>
                 </div>
                 <div class="caption-text 2">
-                    <p>Students spent a week of field camp at Block Mountain, with the goal of mapping the area’s puzzling geologic features.</p>
+                    <p>Field camp instructor Michael McGroder helps Wylee Cleverley (left) and Madeline Hille work through a section of their map.</p>
                 </div>
                 <div class="caption-text 3">
-                    <p>Students spent a week of field camp at Block Mountain, with the goal of mapping the area’s puzzling geologic features.</p>
+                    <p>In this part of Montana, erosion has laid bare an astounding record of the Earth’s 4.5 billion years.</p>
                 </div>
             </div>
         </section>
@@ -110,13 +110,13 @@
         <section id="test2" class="gallery-2 full-screen-gallery">
             <div class="images">
                 <div class="caption2-text 1">
-                    <p>Students spent a week of field camp at Block Mountain, with the goal of mapping the area’s puzzling geologic features.</p>
+                    <p>Students hiked for miles each day to map Block Mountain, avoiding cacti and rattlesnakes during their trek.</p>
                 </div>
                 <div class="caption2-text 2">
-                    <p>Students spent a week of field camp at Block Mountain, with the goal of mapping the area’s puzzling geologic features.</p>
+                    <p>By examining the rocks in the area, students can see years’ worth of stress and change on the landscape.</p>
                 </div>
                 <div class="caption2-text 3">
-                    <p>Students spent a week of field camp at Block Mountain, with the goal of mapping the area’s puzzling geologic features.</p>
+                    <p>While most local animals seek shade during the day, at night you can encounter deer, mountain lions and even cows from nearby ranches.</p>
                 </div>
             </div>
         </section>
