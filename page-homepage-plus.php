@@ -63,13 +63,13 @@
             <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/3.jpg' ?>" alt="INSERT ALT TEXT HERE" class="slide">
             <div class="images">
                 <div class="caption-text 1" data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/1.jpg' ?>">
-                    <p>Students spent a week of field camp at Block Mountain, with the goal of mapping the area’s puzzling geologic features.</p>
+                    <p><span>Students spent a week of field camp at Block Mountain, with the goal of mapping the area’s puzzling geologic features.</span></p>
                 </div>
                 <div class="caption-text 2" data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/2.jpg' ?>">
-                    <p>Field camp instructor Michael McGroder helps Wylee Cleverley (left) and Madeline Hille work through a section of their map.</p>
+                    <p><span>Field camp instructor Michael McGroder helps Wylee Cleverley (left) and Madeline Hille work through a section of their map.</span></p>
                 </div>
                 <div class="caption-text 3" data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/3.jpg' ?>">
-                    <p>In this part of Montana, erosion has laid bare an astounding record of the Earth’s 4.5 billion years.</p>
+                    <p><span>In this part of Montana, erosion has laid bare an astounding record of the Earth’s 4.5 billion years.</span></p>
                 </div>h
             </div>
         </section>
@@ -116,13 +116,13 @@
             <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/9.jpg' ?>" alt="INSERT ALT TEXT HERE" class="slide">
             <div class="images">
                 <div class="caption2-text 1">
-                    <p>Students hiked for miles each day to map Block Mountain, avoiding cacti and rattlesnakes during their trek.</p>
+                    <p><span>Students hiked for miles each day to map Block Mountain, avoiding cacti and rattlesnakes during their trek.</span></p>
                 </div>
                 <div class="caption2-text 2">
-                    <p>By examining the rocks in the area, students can see years’ worth of stress and change on the landscape.</p>
+                    <p><span>By examining the rocks in the area, students can see years’ worth of stress and change on the landscape.</span></p>
                 </div>
                 <div class="caption2-text 3">
-                    <p>While most local animals seek shade during the day, at night you can encounter deer, mountain lions and even cows from nearby ranches.</p>
+                    <p><span>While most local animals seek shade during the day, at night you can encounter deer, mountain lions and even cows from nearby ranches.</span></p>
                 </div>
             </div>
         </section>
@@ -230,15 +230,7 @@
                         <p>In her final year at the UW, Nelson plans to take classes that expand the knowledge she gained during field camp, and she’d like to continue with geology after graduation. Many other camp participants also intend to pursue careers in the field.</p>
 
                         <p>“When they come to camp, they’re geology students,” McGroder says. “When they leave, they’re geologists.”</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="single-column">
-            <div class="text-content container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
+                        
                         <h2>Explore Mary Alice's journal</h2>
                         <p>A first-hand account of her career-defining UW field camp experience.</p>
                         <center><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/Coenv_link_ESS_Camp_IMGOnly.png' ?>"></center>
