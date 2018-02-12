@@ -111,6 +111,9 @@
 
 
         <section id="test2" class="gallery-2 full-screen-gallery">
+            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/7.jpg' ?>" alt="INSERT ALT TEXT HERE" class="slide">
+            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/8.jpg' ?>" alt="INSERT ALT TEXT HERE" class="slide">
+            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/9.jpg' ?>" alt="INSERT ALT TEXT HERE" class="slide">
             <div class="images">
                 <div class="caption2-text 1">
                     <p>Students hiked for miles each day to map Block Mountain, avoiding cacti and rattlesnakes during their trek.</p>
