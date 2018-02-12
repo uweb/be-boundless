@@ -58,16 +58,19 @@
 
 
         <section id="test" class="gallery-1 full-screen-gallery">
+            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/1.jpg' ?>" alt="INSERT ALT TEXT HERE" class="slide">
+            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/2.jpg' ?>" alt="INSERT ALT TEXT HERE" class="slide">
+            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/3.jpg' ?>" alt="INSERT ALT TEXT HERE" class="slide">
             <div class="images">
-                <div class="caption-text 1">
+                <div class="caption-text 1" data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/1.jpg' ?>">
                     <p>Students spent a week of field camp at Block Mountain, with the goal of mapping the area’s puzzling geologic features.</p>
                 </div>
-                <div class="caption-text 2">
+                <div class="caption-text 2" data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/2.jpg' ?>">
                     <p>Field camp instructor Michael McGroder helps Wylee Cleverley (left) and Madeline Hille work through a section of their map.</p>
                 </div>
-                <div class="caption-text 3">
+                <div class="caption-text 3" data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/3.jpg' ?>">
                     <p>In this part of Montana, erosion has laid bare an astounding record of the Earth’s 4.5 billion years.</p>
-                </div>
+                </div>h
             </div>
         </section>
 

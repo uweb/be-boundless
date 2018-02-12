@@ -5,13 +5,32 @@ $(function(){
     var slideshowFlag = true;
     var $windowHeight = $(window).height();
     var isMobile = ($(window).width() < 768) ? true : false;
+    var imgs = $.makeArray( $('#test img') );
+    function imageTransition(){
+        var tl = new TweenMax();
+        tl.to(imgs[1], 0.5,   {autoAlpha: 1, visibility: "visible", delay: 0, ease: Power2.easeOut}, "-=0.5")
+        tl.to(imgs[0], 0.5,   {autoAlpha: 0, delay: 0, ease: Power2.easeOut})
+        /* more tweens go here */
 
+        return tl;
+    }
     var captionAnimation = new TimelineMax()
         .to(".caption-text.1", 1,   {y: "-100%"})
-        .set("#test", {className:"+=image2"})
-        .to(".caption-text.2", 1,   {y: "-200%"})
-        .set("#test", {className:"+=image3"})
-        .to(".caption-text.3", 1,   {y: "-300%"});
+        // .to(imgs[0], 1, {css:{autoAlpha:0}, ease:Expo.easeOut, delay:0})
+        // .to(imgs[1], 1, {css:{autoAlpha:1}, ease:Expo.easeOut, delay:0}) 
+        .to(imgs[1], 0.5,   {autoAlpha: 1, visibility: "visible", delay: 0, ease: Power2.easeOut}, "-=0.5")
+        .to(imgs[0], 0.5,   {autoAlpha: 0, delay: 0, ease: Power2.easeOut})
+        // .set("#test", {className:"+=image2"})
+        // .to( $slides.eq(1), 1.3, {autoAlpha:0} )
+        // .add( imageTransition())
+        .to(".caption-text.2", 1,   {y: "-200%"}, "-=0.5")
+        .to(imgs[2], 0.5,   {autoAlpha: 1, visibility: "visible", delay: 0, ease: Power2.easeOut}, "-=0.5")
+        .to(imgs[1], 0.5,   {autoAlpha: 0, delay: 0, ease: Power2.easeOut})
+        // .to(imgs[1], 0.5, {css:{autoAlpha:0}})
+        // .to(imgs[2], 0.5, {css:{autoAlpha:1}}) 
+        // .set("#test", {className:"+=image3"})
+        // .to( $slides.eq(2), 1.3, {autoAlpha:0} )
+        .to(".caption-text.3", 1,   {y: "-250%"}, "-=0.5");
 
     var galleryAnimation = new TimelineMax()
         .to(".caption2-text.1", 1,   {y: "-100%"})
@@ -38,7 +57,9 @@ $(function(){
         triggerElement: '#test',
         triggerHook: 0,
         duration: '600%',
+        tweenChanges: 1
     })
+        .addIndicators()
         .setPin('.gallery-1',{pushFollowers:true})
         .setTween(captionAnimation)
         .addTo(controllerHP);
@@ -48,6 +69,7 @@ $(function(){
         triggerHook: 0,
         duration: '600%',
     })
+
         .setPin('.gallery-2',{pushFollowers:true})
         .setTween(galleryAnimation)
         .addTo(controllerHP);

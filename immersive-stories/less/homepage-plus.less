@@ -1382,10 +1382,10 @@ p {
 .full-screen-gallery {
     height: 100vh;
     overflow: hidden;
+    position: relative;
     .caption-text, .caption2-text {
-        padding-top: 105vh;
+        padding-top: 100vh;
         width: 100%;
-        position: relative;
         p {
             color: white;
             background-color: @purple;
@@ -1396,11 +1396,22 @@ p {
     }
 }
 
-#test {
-    background-image: url("@{ess}/1.jpg");
+.full-screen-gallery img {
+    position: absolute;
+    z-index: -1000;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    &:nth-child(1) {
+        opacity: 1;
+    }
 }
-#test.image2 {background-image: url("@{ess}/2.jpg") !important;}
-#test.image3 {background-image: url("@{ess}/3.jpg") !important;}
+
+// #test {
+//     background-image: url("@{ess}/1.jpg");
+// }
+// #test.image2 {background-image: url("@{ess}/2.jpg") !important;}
+// #test.image3 {background-image: url("@{ess}/3.jpg") !important;}
 
 #test2 {
     background-image: url("@{ess}/7.jpg");
