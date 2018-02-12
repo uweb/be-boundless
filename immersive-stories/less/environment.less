@@ -491,8 +491,10 @@ li.slide1 div.background {
     overflow-x: hidden;
     width: 45px;
     height: 45px;
-    right: 20px;
-    top: 125px;
+    // right: 20px;
+    // top: 125px;
+    left: 20px;
+    bottom: 45px;
     border: none;
     background: url("@{img}/pause.svg") no-repeat 0 0 transparent;
     z-index: 2;
@@ -550,6 +552,45 @@ li.slide1 div.background {
             outline-style: auto;
             outline-width: 5px;
         }
+    }
+}
+#question {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 45px;
+    height: 45px;
+    right: 20px;
+    top: 125px;
+    // left: 20px;
+    // bottom: 45px;
+    border: 3px white solid;
+    border-radius: 50%;
+    background: none;
+    z-index: 2;
+    color: #FFF;
+    font-family: @font-family-headline;
+    font-size: 23px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1;
+    &:hover,
+    &:focus {
+        color: @darkgold;
+        border-color: @darkgold;
+    }
+    &:focus {
+        outline-color: rgb(59, 153, 252);
+        outline-style: auto;
+        outline-width: 5px;
+    }
+    span {
+        text-indent: -999px;
+        overflow-x: hidden;
+        display: inline-block;
+    }
+    @media(max-width:768px) {
+        display: none;
     }
 }
 
@@ -1984,7 +2025,9 @@ img.circle.quote {
             left: 17px;
             pointer-events: none;
         }
-        &:hover {
+        &:hover,
+        &:active,
+        &:focus {
             color: @darkgold;
             border: 2px solid @darkgold;
             //&:before {}

@@ -220,6 +220,13 @@ $('#immersive-body').fullpage({
 
 $(document).keydown(keydownHandler);
 
+// Help Button
+  $( "#question" ).click(function() {     
+    lity( '<p>To progress to the next slide, scroll down with the mouse, or use the down arrow or the page down button on the keyboard.</p>' + 
+          '<p>To go to the previous slide, scroll up with the mouse, or use the up arrow or the page up button on the keyboard.</p>' + 
+          '<p>When a slideshow has been opened either by clicking a student in the students section or by opening a photo in the gallery sections, navigate through the slideshow by clicking the slideshow arrows with the mouse, or by navigating through the slides with the left and right arrow on the keyboard.</p>' +
+          '<style>p{color:#FFF;}</style>');
+  });
 
 // Video pause
   $( "#pause-yellow" ).click(function() {     
