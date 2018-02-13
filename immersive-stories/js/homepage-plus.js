@@ -19,10 +19,10 @@ $(function(){
         .add(TweenLite.to(imgs[1], 0.2,   {opacity: 1, visibility: "visible"}))
         .add(TweenLite.to(imgs[0], 0.2,   {opacity: 0}), "-=0.1")
         // .add( imageTransition() )
-        .to(".caption-text.2", 1,   {y: "-200%"}, "-=0.4") 
+        .to(".caption-text.2", 1,   {y: "-210%"}, "-=0.4") 
         .add(TweenLite.to(imgs[2], 0.2,   {opacity: 1, visibility: "visible"}))
-        .add(TweenLite.to(imgs[1], 0.2,   {opacity: 0}), "-=0.1")
-        .to(".caption-text.3", 0.5,   {y: "-250%"}, "-=0.4");
+        .add(TweenLite.to(imgs[1], 0.2,   {opacity: 0}), "-=0.2")
+        .to(".caption-text.3", 0.5,   {y: "-260%"}, "-=0.4");
 
     var galleryAnimation = new TimelineMax()
         // .to(".caption2-text.1", 1,   {y: "-100%"})
