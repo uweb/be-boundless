@@ -21,9 +21,9 @@
   get_header( "campaign-v2" );
 ?>
 
-<ul id="immersive-body" role=”main” >
+<div id="immersive-body" role="main" aria-label="main content carousel">
    <!--1. A WEEK IN THE WILD-->
-  <li class="section fp-noscroll slide1" id="intro-vid">
+  <section class="section fp-noscroll slide1" id="intro-vid">
     <div class="background">
       <!-- <button id="howto">Instructions</button> -->
       <button id="pause">Pause</button>
@@ -65,21 +65,21 @@
         </div> 
       </div>
       <span class="gold-tilt gold-tilt-2"></span>
-      <section class="scrollit read-more click-section" role="presentation">
+      <section class="scrollit read-more click-section" aria-hidden="true">
           <p>Click on any section to jump ahead</p>
           <div class="down-arrow"></div>
       </section>
-      <section class="scrollit read-more scroll-down" role="presentation">
+      <section class="scrollit read-more scroll-down" aria-hidden="true">
           <p>Scroll to continue</p>  
           <div class="mouse">
             <div class="scroll"></div>
           </div> 
       </section>
     </div>
-  </li>
+  </section>
 
    <!--2. EXPERIENCE YELLOWSTONE-->
-  <li class="section fp-noscroll" id="intro-yellow">
+  <section class="section fp-noscroll" id="intro-yellow">
     <div class="background">
       <button id="pause-yellow">Pause</button>
       <video  autoplay data-autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/DRONE_REVEAL.jpg' ?>" class="fullscreen-bg__video">
@@ -89,7 +89,7 @@
       <div class="intro-body less-margins">
          <div class="row">
               <div class="text-box" id='intro-text-yellow'>
-                  <h2 class=""><span>Experience</span> Yellowstone</h2>
+                  <h1 class=""><span>Experience</span>&nbsp;Yellowstone</h1>
                   <div class="row centered">
                     <p class="col-md-6 col-xs-12 mobile-shorten">
                         Yellowstone hosts a complex ecosystem of predators, prey, scavengers and people — those who work with animals inside the park, as well as ranchers and others operating just outside its borders.
@@ -98,26 +98,26 @@
                     </p>
                   </div>
                   <div class="col-md-7 col-xs-12">
-                    <a href="#meet" class="col-sm-2 col-sm-offset-1 col-xs-2 col-xs-offset-1 section-links" role="button"><span>Students</span></a>
-                    <a href="#predator" class="col-sm-2 col-xs-2 section-links" role="button"><span>Predators</span></a>
-                    <a href="#prey" class="col-sm-2 col-xs-2 section-links" role="button"><span>Prey</span></a>
-                    <a href="#scavenger" class="col-sm-2 col-xs-2 section-links" role="button"><span>Scavengers</span></a>
-                    <a href="#people" class="col-sm-2 col-xs-2 section-links" role="button"><span>Neighbors</span></a>
+                    <a href="#meet" class="col-sm-2 col-sm-offset-1 col-xs-2 col-xs-offset-1 section-links" role="button" aria-label="Shortcut to Students"><span>Students</span></a>
+                    <a href="#predator" class="col-sm-2 col-xs-2 section-links" role="button" aria-label="Shortcut to Predators"><span>Predators</span></a>
+                    <a href="#prey" class="col-sm-2 col-xs-2 section-links" role="button" aria-label="Shortcut to Prey"><span>Prey</span></a>
+                    <a href="#scavenger" class="col-sm-2 col-xs-2 section-links" role="button" aria-label="Shortcut to Scavengers"><span>Scavengers</span></a>
+                    <a href="#people" class="col-sm-2 col-xs-2 section-links" role="button" aria-label="Shortcut to Neighbors"><span>Neighbors</span></a>
                   </div>
               </div>         
           </div>
       </div>
-      <section class="scrollit read-more" role="presentation">
+      <section class="scrollit read-more" aria-hidden="true">
           <p>Scroll to continue</p>  
           <div class="mouse">
             <div class="scroll"></div>
           </div> 
       </section>
     </div>
-  </li>
+  </section>
 
    <!--3. STUDENTS START-->
-  <li class="section fp-noscroll no-arrows"  id="students">
+  <section class="section fp-noscroll no-arrows"  id="students">
     <div class="background">
        <!--3.1 STUDENTS - HOME-->
       <section id="all-students" class="all-students mobile-slide">
@@ -125,7 +125,7 @@
         <div class="intro-body">
            <div class="row">
                 <div class="text-box">
-                    <h2 class=""><span>Meet the</span> students</h2>
+                    <h1 class=""><span>Meet the</span> students</h1>
                     <div class="row centered">
                       <p class="col-md-6 col-xs-10 no-top no-bottom">
                           Who went to Yellowstone — and why? See what a handful of students had to say about their experience in the park.
@@ -150,7 +150,7 @@
         <!-- 3.2 -->
         <section id="student1" class="student student1 mobile-slide desktop-slide">
           <div class="name">
-            <h3>Loma</br>Pendergraft, Graduate student</h3>
+            <h2>Loma</br>Pendergraft, Graduate student</h2>
             <p class="major">Focus: Crow communication</p>
             <span class="udub-slant"><span></span></span>
             <!-- <p>lorem ipsum</p> -->
@@ -163,7 +163,7 @@
          <!-- 3.3 -->
         <section id="student2" class="student student2 mobile-slide desktop-slide">
           <div class="name">
-            <h3>Danyan</br>Leng, &rsquo;18</h3>
+            <h2>Danyan</br>Leng, &rsquo;18</h2>
             <p class="major">Majors: Environmental science and terrestrial resource management; economics</p>
             <span class="udub-slant"><span></span></span>
             <!-- <p>lorem ipsum</p> -->
@@ -176,7 +176,7 @@
          <!-- 3.4 -->
         <section id="student3" class="student student3 mobile-slide desktop-slide">
           <div class="name">
-            <h3>Hannah</br>Booth, &rsquo;18</h3>
+            <h2>Hannah</br>Booth, &rsquo;18</h2>
             <p class="major">Major: Environmental science and terrestrial resource management</p>
             <span class="udub-slant"><span></span></span>
             <!-- <p>lorem ipsum</p> -->
@@ -189,7 +189,7 @@
          <!-- 3.5 -->
         <section id="student4" class="student student4 mobile-slide desktop-slide">
           <div class="name">
-            <h3>Gavin</br>Forster, &rsquo;18</h3>
+            <h2>Gavin</br>Forster, &rsquo;18</h2>
             <p class="major">Major: Environmental science and terrestrial resource management</p>
             <span class="udub-slant"><span></span></span>
             <!-- <p>lorem ipsum</p> -->
@@ -202,7 +202,7 @@
          <!-- 3.6 -->
         <section id="student5" class="student student5 mobile-slide desktop-slide">
           <div class="name">
-            <h3>Courtney</br>Straight, &rsquo;18</h3>
+            <h2>Courtney</br>Straight, &rsquo;18</h2>
             <p class="major">Major: Environmental science and terrestrial resource management</p>
             <span class="udub-slant"><span></span></span>
             <!-- <p>lorem ipsum</p> -->
@@ -215,7 +215,7 @@
          <!-- 3.7 -->
         <section id="student6" class="student student6 mobile-slide desktop-slide">
           <div class="name">
-            <h3>Andrew</br>Wang, &rsquo;17</h3>
+            <h2>Andrew</br>Wang, &rsquo;17</h2>
             <p class="major">Major: Environmental science and terrestrial resource management</p>
             <span class="udub-slant"><span></span></span>
             <!-- <p>lorem ipsum</p> -->
@@ -234,7 +234,7 @@
         </svg>
       </button>
 
-      <section class="scrollit read-more" role="presentation">
+      <section class="scrollit read-more" aria-hidden="true">
           <p>Scroll to continue</p>  
           <div class="mouse">
             <div class="scroll"></div>
@@ -242,7 +242,7 @@
       </section>
 
     </div>
-  </li>
+  </section>
    <!--STUDENTS - END-->
 
    <!--****************************************
@@ -301,7 +301,7 @@
     *****************-->
 
    <!--4. PREDATOR - OPENING SLIDE-->
-  <li data-anchor="predator" class="dbg-pred bg-pred section fp-noscroll icon-section">
+  <section data-anchor="predator" class="dbg-pred bg-pred section fp-noscroll icon-section">
       <div class="background">
         <span class="lines right"></span>
         <span class="lines left"></span>
@@ -314,22 +314,22 @@
          <div class="row">
               <div class="text-box">
                   <div class="icon"></div>
-                  <h2 class="">Predators</h2>
+                  <h1 class="">Predators</h1>
                   <span class="col-md-4 col-xs-10"><span class="squiggle"></span></span>
               </div>         
           </div>
       </div>
-        <section class="scrollit read-more" role="presentation">
+        <section class="scrollit read-more" aria-hidden="true">
             <p>Scroll to continue</p>  
             <div class="mouse">
               <div class="scroll"></div>
             </div> 
         </section>
       </div>
-  </li>
+  </section>
 
      <!--5. PREDATOR - GALLERY-->
-    <li class="section transparent-section fp-auto-height bg-pred">
+    <section class="section transparent-section fp-auto-height bg-pred">
         <div class="background photos">
           <div class="section-caption"><p>Predators // The student experience</p></div>
            <!-- <div class="container"> -->
@@ -374,17 +374,17 @@
                <!--  </div> -->
               </div>
         <!-- </div> --> 
-        <section class="scrollit read-more" role="presentation">
+        <section class="scrollit read-more" aria-hidden="true">
           <p>Scroll to continue</p>  
           <div class="mouse">
             <div class="scroll"></div>
           </div> 
       </section>
       </div>     
-    </li>
+    </section>
 
     <!--6. PREDATOR - LECTURE-->
-    <li class="section fp-noscroll transparent-section bg-pred dbg-pred">
+    <section class="section fp-noscroll transparent-section bg-pred dbg-pred">
       <div class="background">
         <span class="lines right"></span>
         <span class="lines left"></span>
@@ -428,17 +428,17 @@
               </div>         
           </div>
         </div>
-        <section class="scrollit read-more" role="presentation">
+        <section class="scrollit read-more" aria-hidden="true">
             <p>Scroll to continue</p>  
             <div class="mouse">
               <div class="scroll"></div>
             </div> 
         </section>
       </div>
-    </li>
+    </section>
 
      <!--7. PREY - OPENING SLIDE-->
-  <li data-anchor="prey" class="section fp-noscroll bg-prey icon-section dbg-prey">
+  <section data-anchor="prey" class="section fp-noscroll bg-prey icon-section dbg-prey">
       <div class="background">
         <span class="lines right"></span>
         <span class="lines left"></span>
@@ -451,22 +451,22 @@
          <div class="row">
               <div class="text-box">
                   <div class="icon prey"></div>
-                  <h2 class="">Prey</h2>
+                  <h1 class="">Prey</h1>
                   <span class="col-md-4 col-xs-10"><span class="squiggle"></span></span>
               </div>         
           </div>
       </div>
-        <section class="scrollit read-more" role="presentation">
+        <section class="scrollit read-more" aria-hidden="true">
             <p>Scroll to continue</p>  
             <div class="mouse">
               <div class="scroll"></div>
             </div> 
         </section>
       </div>
-  </li>
+  </section>
 
      <!--8. PREY - GALLERY-->
-    <li class="section transparent-section bg-prey fp-auto-height">
+    <section class="section transparent-section bg-prey fp-auto-height">
         <div class="background photos">
           <div class="section-caption"><p>Prey // The student experience</p></div>
           <!-- <div class="intro-body"> -->
@@ -516,17 +516,17 @@
               </div>
          <!--  </div> -->
         <!-- </div> -->
-        <section class="scrollit read-more" role="presentation">
+        <section class="scrollit read-more" aria-hidden="true">
           <p>Scroll to continue</p>  
           <div class="mouse">
             <div class="scroll"></div>
           </div> 
       </section>
       </div>     
-    </li>
+    </section>
 
     <!--9. PREY - LECTURE-->
-    <li class="section fp-noscroll bg-prey transparent-section dbg-prey">
+    <section class="section fp-noscroll bg-prey transparent-section dbg-prey">
       <div class="background">
         <span class="lines right"></span>
         <span class="lines left"></span>
@@ -570,17 +570,17 @@
               </div>         
           </div>
         </div>
-        <section class="scrollit read-more" role="presentation">
+        <section class="scrollit read-more" aria-hidden="true">
             <p>Scroll to continue</p>  
             <div class="mouse">
               <div class="scroll"></div>
             </div> 
         </section>
       </div>
-    </li>
+    </section>
 
      <!--10. SCAVENGER - OPENING SLIDE-->
-  <li data-anchor="scavenger" class="section bg-scav fp-noscroll icon-section dbg-scav">
+  <section data-anchor="scavenger" class="section bg-scav fp-noscroll icon-section dbg-scav">
       <div class="background">
         <span class="lines right"></span>
         <span class="lines left"></span>
@@ -593,22 +593,22 @@
          <div class="row">
               <div class="text-box">
                   <div class="icon scav"></div>
-                  <h2 class="">Scavengers</h2>
+                  <h1 class="">Scavengers</h1>
                   <span class="col-md-4 col-xs-10"><span class="squiggle"></span></span>
               </div>         
           </div>
       </div>
-        <section class="scrollit read-more" role="presentation">
+        <section class="scrollit read-more" aria-hidden="true">
             <p>Scroll to continue</p>  
             <div class="mouse">
               <div class="scroll"></div>
             </div> 
         </section>
       </div>
-  </li>
+  </section>
 
      <!--11. SCAVENGER - GALLERY-->
-    <li class="section transparent-section bg-scav fp-auto-height">
+    <section class="section transparent-section bg-scav fp-auto-height">
         <div class="background photos">
           <div class="section-caption"><p>Scavengers // The student experience</p></div>
           <!-- <div class="intro-body"> -->
@@ -658,17 +658,17 @@
               </div>
          <!--  </div> -->
         <!-- </div> -->
-        <section class="scrollit read-more" role="presentation">
+        <section class="scrollit read-more" aria-hidden="true">
           <p>Scroll to continue</p>  
           <div class="mouse">
             <div class="scroll"></div>
           </div> 
       </section>
       </div>     
-    </li>
+    </section>
 
     <!--12. SCAVENGER - LECTURE-->
-    <li class="section fp-noscroll bg-scav transparent-section dbg-scav">
+    <section class="section fp-noscroll bg-scav transparent-section dbg-scav">
       <div class="background">
         <span class="lines right"></span>
         <span class="lines left"></span>
@@ -712,17 +712,17 @@
               </div>         
           </div>
         </div>
-        <section class="scrollit read-more" role="presentation">
+        <section class="scrollit read-more" aria-hidden="true">
             <p>Scroll to continue</p>  
             <div class="mouse">
               <div class="scroll"></div>
             </div> 
         </section>
       </div>
-    </li>
+    </section>
 
      <!--13. PEOPLE - OPENING SLIDE-->
-  <li data-anchor="people" class="section bg-peop fp-noscroll icon-section dbg-peop">
+  <section data-anchor="people" class="section bg-peop fp-noscroll icon-section dbg-peop">
       <div class="background">
         <span class="lines right"></span>
         <span class="lines left"></span>
@@ -735,22 +735,22 @@
          <div class="row">
               <div class="text-box">
                   <div class="icon people"></div>
-                  <h2 class="">Neighbors</h2>
+                  <h1 class="">Neighbors</h1>
                   <span class="col-md-4 col-xs-10"><span class="squiggle"></span></span>
               </div>         
           </div>
       </div>
-        <section class="scrollit read-more" role="presentation">
+        <section class="scrollit read-more" aria-hidden="true">
             <p>Scroll to continue</p>  
             <div class="mouse">
               <div class="scroll"></div>
             </div> 
         </section>
       </div>
-  </li>
+  </section>
 
      <!--14. PEOPLE - GALLERY-->
-    <li class="section transparent-section bg-peop fp-auto-height">
+    <section class="section transparent-section bg-peop fp-auto-height">
         <div class="background photos">
           <div class="section-caption"><p>Neighbors // The student experience</p></div>
           <!-- <div class="intro-body"> -->
@@ -796,17 +796,17 @@
               </div>
          <!--  </div> -->
         <!-- </div> -->
-        <section class="scrollit read-more" role="presentation">
+        <section class="scrollit read-more" aria-hidden="true">
           <p>Scroll to continue</p>  
           <div class="mouse">
             <div class="scroll"></div>
           </div> 
       </section>
       </div>     
-    </li>
+    </section>
 
     <!--15. PEOPLE - LECTURE-->
-    <li class="section fp-noscroll bg-peop transparent-section dbg-peop">
+    <section class="section fp-noscroll bg-peop transparent-section dbg-peop">
       <div class="background">
         <span class="lines right"></span>
         <span class="lines left"></span>
@@ -849,23 +849,23 @@
               </div>         
           </div>
         </div>
-        <section class="scrollit read-more" role="presentation">
+        <section class="scrollit read-more" aria-hidden="true">
             <p>Scroll to continue</p>  
             <div class="mouse">
               <div class="scroll"></div>
             </div> 
         </section>
       </div>
-    </li>
+    </section>
 
     <!--16. BACK TO WASHINGTON-->
-    <li class="section fp-noscroll" id="backto">
+    <section class="section fp-noscroll" id="backto">
     <div class="background">
       <!-- <div class="section-caption"><p>The experience begins</p></div> -->
       <div class="intro-body less-margins">
          <div class="row">
               <div class="text-box" id=''>
-                  <h2 class="">Back to Washington</h2>
+                  <h1 class="">Back to Washington</h1>
                   <div class="row centered">
                     <p class="col-md-8 col-xs-12">
                         Yellowstone National Park has long been a bellwether for scientists to study how ecosystems work. Learning about both wildlife and humans there has given students an experience they’ll bring back to their classrooms in Washington — and their careers in the wide landscape beyond.
@@ -880,23 +880,23 @@
               </div>         
           </div>
       </div>
-      <section class="scrollit read-more" role="presentation">
+      <section class="scrollit read-more" aria-hidden="true">
           <p>Scroll to continue</p>  
           <div class="mouse">
             <div class="scroll"></div>
           </div> 
       </section>
     </div>
-  </li>
+  </section>
 
   <!--17. WHAT YOU CARE ABOUT CAN CHANGE THE WORLD-->
-  <li class="section fp-noscroll" id="giving">
+  <section class="section fp-noscroll" id="giving">
     <div class="background">
       <!-- <div class="section-caption"><p>The experience begins</p></div> -->
       <div class="intro-body move-higher">
          <div class="row">
               <div class="text-box" id=''>
-                  <h2 class="">What you care about </br>can change the world</h2>
+                  <h1 class="">What you care about </br>can change the world</h1>
                   <div class="row centered add-spacing">
                     <p class="col-md-7 col-xs-12 no-top no-bottom add-bottom">
                         The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. When you support immersive learning experiences at the College of the Environment, you can make it possible for students to get hands-on experiences that propel them toward the careers of their dreams.
@@ -911,9 +911,9 @@
           </div>
       </div>
     </div>
-  </li>
+  </section>
 
- <section id="scrollbar" role=”navigation” aria-label="User menu">
+ <div id="scrollbar" role="navigation" aria-label="User menu">
    <h2>Navigate</h2>
    <div class="black">
      <ol class="empty-line">
@@ -937,10 +937,10 @@
        <span class="dash dash72"></span>
      </div>
    </div>
- </section>
+ </div>
 
 
-</ul>
+</div>
 
 <!-- <div id="immersive-body">
   <div id="pinContainer">

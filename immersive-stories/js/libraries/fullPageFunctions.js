@@ -1783,7 +1783,7 @@
 
             var activeElement = $(':focus');
 
-            if(event.which == 27) {
+            if(e.which == 27) {
                 if( $(activeElement).hasClass("audio-transcript") ){
                     console.log("test")
                     $(activeElement).find("span.close-transcript").trigger("click");
@@ -1791,7 +1791,7 @@
                 $('#close-modal').trigger('click');
               }
 
-            if( $(activeElement).hasClass("close-transcript") &&  ( event.which == 32 || event.which == 13 ) ) {
+            if( $(activeElement).hasClass("close-transcript") &&  ( e.which == 32 || e.which == 13 ) ) {
                 $(activeElement).trigger("click");
             }
 

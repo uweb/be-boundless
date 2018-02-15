@@ -47,7 +47,7 @@ global $styles;
 					</div><!-- .col-sm-6 .col-md-6 .col-lg-6 .cv2-header-menu -->
 				</div><!-- .row -->
 			</div><!-- .cv2-header-purple -->
-			<div class="cv2-header-mobile" role="navigation">
+			<div class="cv2-header-mobile" role="navigation" aria-label="Mobile menu">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<ul class="list-unstyled text-center">
@@ -61,7 +61,7 @@ global $styles;
 			<div class="cv2-header-white">
 				<div class="row">
 					<div class="col-sm-8 col-md-8 col-lg-8">
-						<form role="form">
+						<form role="region" aria-label="giving-widget">
 							<label for="cv2-header-give-amount">Make your gift today</label>
 							<span class="dollar">
 							$<input type="text" id="cv2-header-give-amount" />
@@ -74,7 +74,7 @@ global $styles;
 					</div><!-- .col-sm-4 .col-md-5 .col-lg-6 -->
 				</div><!-- .row -->
 			</div><!-- .cv2-header-white -->
-			<div class="cv2-header-grey" role="navigation">
+			<div class="cv2-header-grey" role="navigation" aria-label="More giving opportunities dropdown">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<p class="header">MORE GIVING OPPORTUNITIES</p>
