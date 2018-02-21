@@ -14,8 +14,8 @@
 
     <section class="intro" id="intro-vid">
         <button id="pause">Pause</button>
-        <video autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/law/poster.jpg' ?>" class="fullscreen-bg__video">
-            <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/ess/header.mov' ?>" type="video/mp4">
+        <video autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/header-preview.jpg' ?>" class="fullscreen-bg__video">
+            <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/ess/header2.mp4' ?>" type="video/mp4">
         </video>
         <div class="intro-body">
             <div class="row">
@@ -45,7 +45,7 @@
 
                         <p>Impervious to the heat, Michael McGroder climbs swiftly up a steep, rocky hill where a group of geology students and teaching assistants from the University of Washington stand observing two small ridges below.</p>
 
-                        <p>It’s their fourth day at Block Mountain, just outside the town of Dillon, and the students are trying to map an area known informally as the Rat’s Nest. The name is well earned by this giant tangle of rocks: The oldest layers are somehow on top of younger layers, some layers are upside down, and the entire Triassic period (the layer that formed between 251 million and 199 million years ago) is missing in places.</p>
+                        <p>It’s their fourth day at Block Mountain, just outside the town of Dillon, and the students are trying to map an area known informally as the Rat’s Nest. The name is well earned by this giant tangle of rocks: The oldest layers are somehow on top of younger layers, some layers are upside down, and the <i>entire</i> Triassic period (the layer that formed between 251 million and 199 million years ago) is missing in places.</p>
 
                         <p>“Geologists love a good murder mystery,” says McGroder, the group’s instructor — and making sense of geographic complexities is akin to tracking down the culprit.</p>
 
@@ -62,16 +62,25 @@
             <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/2.jpg' ?>" alt="INSERT ALT TEXT HERE" class="slide">
             <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/3.jpg' ?>" alt="INSERT ALT TEXT HERE" class="slide">
             <div class="images">
-                <div class="caption-text 1" data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/1.jpg' ?>">
-                    <p><span>Students spent a week of field camp at Block Mountain, with the goal of mapping the area’s puzzling geologic features.</span></p>
+                <div class="caption-text 1" id="slide-1" data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/1.jpg' ?>">
+                    <p>Students spent a week of field camp at Block Mountain, with the goal of mapping the area’s puzzling geologic features.</p>
                 </div>
-                <div class="caption-text 2" data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/2.jpg' ?>">
-                    <p><span>Field camp instructor Michael McGroder helps Wylee Cleverley (left) and Madeline Hille work through a section of their map.</span></p>
+                <div class="caption-text 2" id="slide-2" data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/2.jpg' ?>">
+                    <p>Field camp instructor Michael McGroder helps Wylee Cleverley (left) and Madeline Hille work through a section of their map.</p>
                 </div>
-                <div class="caption-text 3" data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/3.jpg' ?>">
-                    <p><span>In this part of Montana, erosion has laid bare an astounding record of the Earth’s 4.5 billion years.</span></p>
+                <div class="caption-text 3" id="slide-3" data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/3.jpg' ?>">
+                    <p>In this part of Montana, erosion has laid bare an astounding record of the Earth’s 4.5 billion years.</p>
                 </div>h
             </div>
+            <section id="sidescroll">
+                <p>Continue scrolling down</p>
+                <p class="sideways">
+                    <a id="marker-1" data-href="#slide-1"></a>
+                    <a id="marker-2" data-href="#slide-2"></a>
+                    <a id="marker-3" data-href="#slide-3"></a>
+                    <a id="marker-4" class="down" data-href="#charts"></a>
+                </p>
+            </section>
         </section>
 
         <!-- A landscape made for learning -->
@@ -97,7 +106,7 @@
                                 <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/6.jpg' ?>" alt="INSERT ALT TEXT">
                             </div>
                             <div class="caption">
-                                <strong>Top</strong>: Michael Barber (left) and Mary Alice Benson head to the top of a ridge. <strong>Bottom left</strong>: Joshua Anderson examines a piece of the hillside. <strong>Bottom right</strong>: Weston Brown (left) and Esten King try to determine if the land they’re on is part of a thrust fault.
+                                <strong>Top:</strong> Michael Barber <i>(left)</i> and Mary Alice Benson head to the top of a ridge. <strong>Bottom left:</strong> Joshua Anderson examines a piece of the hillside. <strong>Bottom right:</strong> Weston Brown <i>(left)</i> and Esten King try to determine if the land they’re on is part of a thrust fault.
                             </div>
                         </div>
 
@@ -116,13 +125,13 @@
             <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/9.jpg' ?>" alt="INSERT ALT TEXT HERE" class="slide">
             <div class="images">
                 <div class="caption2-text 1">
-                    <p><span>Students hiked for miles each day to map Block Mountain, avoiding cacti and rattlesnakes during their trek.</span></p>
+                    <p>Students hiked for miles each day to map Block Mountain, avoiding cacti and rattlesnakes during their trek.</p>
                 </div>
                 <div class="caption2-text 2">
-                    <p><span>By examining the rocks in the area, students can see years’ worth of stress and change on the landscape.</span></p>
+                    <p>By examining the rocks in the area, students can see years’ worth of stress and change on the landscape.</p>
                 </div>
                 <div class="caption2-text 3">
-                    <p><span>While most local animals seek shade during the day, at night you can encounter deer, mountain lions and even cows from nearby ranches.</span></p>
+                    <p>While most local animals seek shade during the day, at night you can encounter deer, mountain lions and even cows from nearby ranches.</p>
                 </div>
             </div>
         </section>
@@ -154,57 +163,57 @@
               <ul id="people">
                   <li class="pax-1 navy" tabindex="0">
                       <div class="hider">
-                          <h2>Madeline Hille (left) and Wylee Cleverley</h2>
+                          <h2>Madeline Hille, ‘18 (left)<br />and Wylee Cleverley, ‘17</h2>
                           <p><span>Home state: </span>Washington (Madeline)</p>
-                          <p><span>Home State: </span>Washington (Wylee)</p>
+                          <p><span>Home state: </span>Washington (Wylee)</p>
                       </div>
                   </li>
                   <li class="pax-2 airforce" tabindex="0">
                       <div class="hider">
-                          <h2>Jacqueline Sherburne</h2>
+                          <h2>Jacqueline Sherburne, ‘18</h2>
                           <p><span>Home state: </span>Washington</p>
                       </div>
                   </li>
                   <li class="pax-3" tabindex="0">
                       <div class="hider">
-                          <h2>Joshua Anderson</h2>
+                          <h2>Joshua Anderson, ‘18</h2>
                           <p><span>Home state: </span>Minnesota</p>
                       </div>
                   </li>
                   <li class="pax-4 navy" tabindex="0">
                       <div class="hider">
-                          <h2>Weston Brown</h2>
+                          <h2>Weston Brown, ‘18</h2>
                           <p><span>Home state: </span>California</p>
                       </div>
                   </li>
                   <li class="pax-5 army" tabindex="0">
                       <div class="hider">
-                          <h2>Allison Nelson</h2>
+                          <h2>Allison Nelson, ‘18</h2>
                           <p><span>Home state: </span>Washington</p>
                       </div>
                   </li>
                   <li class="pax-6 army" tabindex="0">
                       <div class="hider">
-                          <h2>Fairuz Aisyah Binti Ahmad Zamri</h2>
+                          <h2>Fairuz Aisyah Binti<br />Ahmad Zamri, ‘18</h2>
                           <p><span>Home country: </span>Malaysia</p>
                       </div>
                   </li>
 
                   <li class="pax-7 navy" tabindex="0">
                       <div class="hider">
-                          <h2>Ruslan Pavlenko</h2>
+                          <h2>Ruslan Pavlenko, ‘17</h2>
                           <p><span>Home state: </span>Washington</p>
                       </div>
                   </li>
                   <li class="pax-8 army" tabindex="0">
                       <div class="hider">
-                          <h2>Michael McGroder</h2>
+                          <h2>Michael McGroder, ‘88</h2>
                           <p><span>Home state: </span>Texas</p>
                       </div>
                   </li>
                   <li class="pax-9 army" tabindex="0">
                       <div class="hider">
-                          <h2>Bing Yu Lee</h2>
+                          <h2>Bing Yu Lee, ‘18</h2>
                           <p><span>Home country: </span>Malaysia</p>
                       </div>
                   </li>
@@ -230,10 +239,10 @@
                         <p>In her final year at the UW, Nelson plans to take classes that expand the knowledge she gained during field camp, and she’d like to continue with geology after graduation. Many other camp participants also intend to pursue careers in the field.</p>
 
                         <p>“When they come to camp, they’re geology students,” McGroder says. “When they leave, they’re geologists.”</p>
-                        
-                        <h2>Explore Mary Alice's journal</h2>
-                        <p>A first-hand account of her career-defining UW field camp experience.</p>
-                        <center><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/Coenv_link_ESS_Camp_IMGOnly.png' ?>"></center>
+
+                        <h2 style="text-align: center;">Mary Alice TK's journal</h2>
+                        <p style="text-align: center;"><a href="http://environment.uw.edu/fieldcamp"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/Coenv_link_ESS_Camp_IMGOnly.png' ?>"></a><br />
+                        <a href="http://environment.uw.edu/fieldcamp">Explore this firsthand account</a> of a UW senior’s career-defining field camp experience.</p>
                     </div>
                 </div>
             </div>

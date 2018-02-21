@@ -809,6 +809,7 @@ div.caption {
 
 .text-block.giving-widget.branded {
     margin-top: auto !important;
+    background-image: url("@{ess}/footer.jpg");
 }
 .source {
     font-size: 12px;
@@ -912,7 +913,7 @@ p {
                 }
             }
             h2 {
-                font-size: 26px;
+                font-size: 24px;
                 text-transform: uppercase;
                 font-family: @uni;
                 color: @lightgold;
@@ -1004,6 +1005,11 @@ p {
         max-width: inherit;
         height: 100vh;
     }
+    @media (min-width: 2000px) {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
     &:nth-child(1) {
         opacity: 1;
     }
@@ -1020,3 +1026,55 @@ p {
 // }
 // #test2.image2 {background-image: url("@{ess}/8.jpg") !important;}
 // #test2.image3 {background-image: url("@{ess}/9.jpg") !important;}
+
+
+#sidescroll {
+    position: absolute;
+     bottom: 35px;
+    left: 50%;
+    .translate(-50%,0);
+    text-align: center;
+    z-index: 1;
+    p {
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 0.5;
+        font-weight: 600;
+        .transition(all 1s);
+        a {
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            margin: 0 5px;
+            background-color: rgb(255,255,255);
+            opacity: 0.25;
+            display: inline-block;
+            .transition(all .5s);
+            &:nth-of-type(1) {
+                opacity: 0.95;
+            }
+            &.down {
+                display: block;
+                width: 40px;
+                height: 40px;
+                margin: -35px auto 0;
+                border-right: 2px solid #FFF;
+                border-bottom: 2px solid #FFF;
+                border-radius: 0;
+                background-color: transparent;
+                .rotate(45deg);
+                opacity: 0;
+                visibility: hidden;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    &.down p a {
+        opacity: 0;
+        &.down {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

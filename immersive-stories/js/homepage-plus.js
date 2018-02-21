@@ -7,6 +7,9 @@ $(function(){
     var isMobile = ($(window).width() < 768) ? true : false;
     var imgs = $.makeArray( $('#test img') );
     var imgs2 = $.makeArray( $('#test2 img') );
+    var xOffset = { '#slide-1': '0.2',
+                    '#slide-2': '0.8',
+                    '#slide-3': '1.0'   };
     function imageTransition(){
         var tl = new TimelineLite();
         tl.staggerFromTo(imgs[1], 0.5,   {opacity:0, ease:Back.easeInOut});
@@ -18,10 +21,16 @@ $(function(){
         .to(".caption-text.1", 1, {y: "-100%"})
         .add(TweenLite.to(imgs[1], 0.2,   {opacity: 1, visibility: "visible"}))
         .add(TweenLite.to(imgs[0], 0.2,   {opacity: 0}), "-=0.1")
+        .to("#marker-2", 0.2,   {opacity: 0.95}, "-=0.3")
+        .to("#marker-1", 0.2,   {opacity: 0.25}, "-=0.5")
+        .to("#marker-3", 0.2,   {opacity: 0.25}, "-=0.7")
         // .add( imageTransition() )
         .to(".caption-text.2", 1,   {y: "-210%"}, "-=0.4") 
         .add(TweenLite.to(imgs[2], 0.2,   {opacity: 1, visibility: "visible"}))
-        .add(TweenLite.to(imgs[1], 0.2,   {opacity: 0}), "-=0.2")
+        .add(TweenLite.to(imgs[1], 0.2,   {opacity: 0}), "-=0.1")        
+        .to("#marker-3", 0.2,   {opacity: 0.95}, "-=0.3")
+        .to("#marker-2", 0.2,   {opacity: 0.25}, "-=0.5")
+        .to("#marker-1", 0.2,   {opacity: 0.25}, "-=0.7")
         .to(".caption-text.3", 0.5,   {y: "-260%"}, "-=0.4");
 
     var galleryAnimation = new TimelineMax()
@@ -91,5 +100,26 @@ $(function(){
     var $vid = $(e.target).parent().find('video');
     if( $vid.get(0).paused ) { $vid.get(0).play() } else { $vid.get(0).pause() }
       $this.toggleClass('paused');
+    });
+
+    $("[data-href]").click(function() {
+        $destination = $(this).attr("data-href");
+        if($destination != "#charts") {
+            $xOff = xOffset[$destination];
+            // galleryHP.progress(1);
+            // var progress = galleryHP.progress();
+            TweenLite.to(captionAnimation, 1, {progress:$xOff, ease:Power2.easeIn});
+            captionAnimation.progress($xOff);
+            var Halfway = galleryHP.duration() * $xOff;
+            controller.scrollTo(galleryHP.scrollOffset() + Halfway);
+            console.log(Halfway);
+            controller.updateScene(galleryHP, true);
+            galleryHP.progress($xOff);
+
+        } else {
+            $('html, body').animate({
+                scrollTop: $($destination).offset().top
+            }, 1000);
+        }
     });
 })
