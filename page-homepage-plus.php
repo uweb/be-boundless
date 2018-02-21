@@ -70,7 +70,7 @@
                 </div>
                 <div class="caption-text 3" id="slide-3" data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/3.jpg' ?>">
                     <p>In this part of Montana, erosion has laid bare an astounding record of the Earth’s 4.5 billion years.</p>
-                </div>h
+                </div>
             </div>
             <section id="sidescroll">
                 <p>Continue scrolling down</p>
@@ -78,13 +78,13 @@
                     <a id="marker-1" data-href="#slide-1"></a>
                     <a id="marker-2" data-href="#slide-2"></a>
                     <a id="marker-3" data-href="#slide-3"></a>
-                    <a id="marker-4" class="down" data-href="#charts"></a>
+                    <a id="marker-next" class="down" data-href="#landscape"></a>
                 </p>
             </section>
         </section>
 
         <!-- A landscape made for learning -->
-        <section class="single-column">
+        <section class="single-column" id="landscape">
             <div class="text-content container">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1">
@@ -124,19 +124,28 @@
             <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/8.jpg' ?>" alt="INSERT ALT TEXT HERE" class="slide">
             <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/9.jpg' ?>" alt="INSERT ALT TEXT HERE" class="slide">
             <div class="images">
-                <div class="caption2-text 1">
+                <div class="caption-text 4" id="slide-4">
                     <p>Students hiked for miles each day to map Block Mountain, avoiding cacti and rattlesnakes during their trek.</p>
                 </div>
-                <div class="caption2-text 2">
+                <div class="caption-text 5" id="slide-5">
                     <p>By examining the rocks in the area, students can see years’ worth of stress and change on the landscape.</p>
                 </div>
-                <div class="caption2-text 3">
+                <div class="caption-text 6" id="slide-6">
                     <p>While most local animals seek shade during the day, at night you can encounter deer, mountain lions and even cows from nearby ranches.</p>
                 </div>
+            <section id="sidescroll">
+                <p>Continue scrolling down</p>
+                <p class="sideways">
+                    <a id="marker-4" data-href="#slide-4"></a>
+                    <a id="marker-5" data-href="#slide-5"></a>
+                    <a id="marker-6" data-href="#slide-6"></a>
+                    <a id="marker-next2" class="down" data-href="#going"></a>
+                </p>
+            </section>
             </div>
         </section>
 
-       <section class="single-column">
+       <section class="single-column" id="going">
             <div class="text-content container">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1">
