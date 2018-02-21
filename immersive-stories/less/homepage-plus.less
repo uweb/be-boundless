@@ -972,20 +972,22 @@ p {
 
 
 .full-screen-gallery {
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    position: relative;
-    .caption-text, .caption2-text {
-        padding-top: 100vh;
-        width: 100%;
-        p {
-            color: white;
-            background-color: @purple;
-            display: inline-block;
-            max-width: 30%;
-            margin-left: 10%;
-            padding: 0 10px;
+    @media (min-width: 1280px) {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
+        .caption-text, .caption2-text {
+            padding-top: 100vh;
+            width: 100%;
+            p {
+                color: white;
+                background-color: @purple;
+                display: inline-block;
+                max-width: 30%;
+                margin-left: 10%;
+                padding: 0 10px;
+            }
         }
     }
 }
@@ -1013,6 +1015,34 @@ p {
     &:nth-child(1) {
         opacity: 1;
     }
+}
+
+
+@media (max-width: 1280px) {
+    .full-screen-gallery {
+        width: 100%;
+        height: auto;
+        img {
+
+            display: block;
+            position: static;
+            opacity: 1;
+            width: 100%;
+            height: auto;
+        }
+        .caption-text, .caption2-text {
+            padding-top: 0;
+            width: 100%;
+            p {
+                background-color: @purple;
+                color: white;
+                display: block;
+                max-width: auto;
+                padding: 15px;
+            }
+        }
+    }
+
 }
 
 // #test {
@@ -1077,4 +1107,9 @@ p {
             visibility: visible;
         }
     }
+
+    @media (max-width: 1280px) {
+        display: none;
+    }
+
 }
