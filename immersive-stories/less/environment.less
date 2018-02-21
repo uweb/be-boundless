@@ -81,7 +81,7 @@ button.lity-close {
     }
 }
 
-li:not(.active):not(.fixed-section):not(.scrollit){
+section:not(.active):not(.fixed-section):not(.scrollit){
     z-index: 0;
 }
 
@@ -93,7 +93,7 @@ li:not(.active):not(.fixed-section):not(.scrollit){
     }
 }
 
-li:not(.fp-auto-height) div.background {
+section:not(.fp-auto-height) div.background {
     height: 100%;
     max-height: calc(~"100vh - 90px");
     width: 100%;
@@ -119,7 +119,7 @@ li:not(.fp-auto-height) div.background {
 //     //.background-cover(cover);
 // }
 
-li.slide1 div.background {
+section.slide1 div.background {
     padding-top: 81px;
     @media(max-width:768px) {
         padding-top: 0;
@@ -607,8 +607,8 @@ li.slide1 div.background {
 //     z-index: 2;
 // }
 
-li.section div.background ,
-li.fixed-section div.background {
+section.section div.background ,
+section.fixed-section div.background {
     position: relative;
     &:before {
         content: '';
@@ -936,8 +936,8 @@ li.fixed-section div.background {
 }
 
 
-li.section div.background ,
-li.fixed-section div.background {
+section.section div.background ,
+section.fixed-section div.background {
     &:before {
         content: none;
     }
@@ -974,7 +974,7 @@ li.fixed-section div.background {
     }              
 }
 
-li.transparent-section {
+section.transparent-section {
     z-index: 1;
 }
 .transparent-section div.background {
@@ -1282,7 +1282,7 @@ div.background.photos {
 }
 
 @media(min-width:769px) {
-    li.icon-section.bg-show {
+    section.icon-section.bg-show {
         visibility: visible;
         opacity: 1.0;
         &:after{
@@ -1363,8 +1363,8 @@ section.fixed-section {
 //     //
 // }
 
-li.section div.background .intro-body.move-higher,
-li.fixed-section div.background .intro-body.move-higher {
+section.section div.background .intro-body.move-higher,
+section.fixed-section div.background .intro-body.move-higher {
     top: 37%;
 }
 
@@ -1459,7 +1459,7 @@ li.fixed-section div.background .intro-body.move-higher {
 }
 
 #students div.background {
-    margin-top: -30px;
+    //margin-top: -30px;
     background-image: url("@{enviro}/student-valley.jpg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -1479,6 +1479,9 @@ li.fixed-section div.background .intro-body.move-higher {
     }
     .text-box {
         margin-top: -20vw;
+    }
+    .section-caption {
+       // margin-top: 30px;
     }
     .intro-body {
         z-index: 2;
@@ -1607,7 +1610,7 @@ li.fixed-section div.background .intro-body.move-higher {
             left: 5%;
             width: 300px;
             z-index: 1;
-            h3 {
+            h2 {
                 font-family: @font-family-base;
                 font-weight: 900;
                 font-size: 3.5em;
@@ -1861,7 +1864,7 @@ div.background {
         }
     }
 }
-li.icon-section {
+section.icon-section {
     z-index: 2;
     div.background {
         .intro-body h1,
@@ -2239,7 +2242,7 @@ img.circle.quote {
                 left: 15px;
                 width: 250px;
                 //max-width: 95%;
-                h3 {
+                h2 {
                     font-size: 24px;
                     margin: 20px 0 5px;
                 }
@@ -2287,28 +2290,28 @@ img.circle.quote {
         }
     }
 
-    li.bg-pred {
+    section.bg-pred {
         background-position: right bottom;
         background-repeat: no-repeat;
         .background-size(cover);
         background-image: url("@{enviro}/PREDATOR_MOBILE_BG.png");
     }
 
-    li.bg-prey {
+    section.bg-prey {
         background-position: left bottom;
         background-repeat: no-repeat;
         .background-size(cover);
         background-image: url("@{enviro}/PREY_MOBILE_BG.jpg");
     }
 
-    li.bg-scav {
+    section.bg-scav {
         background-position: right bottom;
         background-repeat: no-repeat;
         .background-size(cover);
         background-image: url("@{enviro}/SCAV_MOBILE_BG.jpg");
     }
 
-    li.bg-peop {
+    section.bg-peop {
         background-position: center bottom;
         background-repeat: no-repeat;
         .background-size(cover);
@@ -2363,7 +2366,7 @@ img.circle.quote {
             display: none;
         }
     }
-    li.section div.background .text-box .row.centered.atts-pic {
+    section.section div.background .text-box .row.centered.atts-pic {
         display: block;
         img {
             margin: 0;
@@ -2411,7 +2414,7 @@ img.circle.quote {
         }
     }
 
-    li.section div.background {
+    section.section div.background {
         blockquote {
             font-size: 1em;
             line-height: 1.3;
@@ -2488,7 +2491,7 @@ img.circle.quote {
             animation-fill-mode: forwards;
         }
     }
-    li.icon-section div.audio {
+    section.icon-section div.audio {
         display: none;
     }
     div.lity-content {
@@ -2851,7 +2854,7 @@ div.fp-controlArrow {
     #intro-yellow div.background {
         //sections to top
         //move watch button
-        h2 {
+        h1 {
             font-size: 5vw;
             span {
                 font-size: 8vw;
@@ -2884,8 +2887,8 @@ div.fp-controlArrow {
             }
         }
     }
-    li.section div.background {
-        h2 {
+    section.section div.background {
+        h1 {
             margin: 10px 0;
             font-size: 5vw;
             span {
@@ -2922,7 +2925,7 @@ div.fp-controlArrow {
     }
 }
 
-li.fp-auto-height.transparent-section {
+section.fp-auto-height.transparent-section {
     .background.photos {
         opacity: 0;
         .transition(opacity 1.0s ease-in-out);
@@ -3257,4 +3260,10 @@ a.student-link {
         outline-style: auto;
         outline-width: 5px;
     }
+}
+#give-iframe {
+    display: none; 
+}
+.give-modal-active #give-iframe {
+    display: block;
 }

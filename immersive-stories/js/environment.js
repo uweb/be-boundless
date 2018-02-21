@@ -81,7 +81,7 @@ if(!isMobile) {
 //FULL INIT
 $('#immersive-body').fullpage({
     //Navigation
-    // menu: '#menu',
+    // menu: '#cv2-header',
     // lockAnchors: false,
     anchors:['home', 'experience', 'meet', 'predator', 'predator-gallery', 'predator-lecture', 'prey', 'prey-gallery', 'prey-lecture', 'scavenger', 'scavenger-gallery', 'scavenger-lecture', 'people', 'people-gallery', 'people-lecture', 'explore', 'give'],
     // navigation: true,
@@ -131,7 +131,7 @@ $('#immersive-body').fullpage({
     // sectionsColor : ['#ccc', '#fff'],
     paddingTop: '60px',
     paddingBottom: '30px',
-    fixedElements: '#cv2-header, .fixed-section:not(.section), #scrollbar', //eventually will add scrollbar on bottom.
+    fixedElements: '.fixed-section:not(.section), #scrollbar', //eventually will add scrollbar on bottom.
     // responsiveWidth: 0,
     // responsiveHeight: 0,
     // responsiveSlides: false,
@@ -139,7 +139,7 @@ $('#immersive-body').fullpage({
     // parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
 
     //Custom selectors
-    sectionSelector: 'li.section',
+    sectionSelector: 'section.section',
     slideSelector: '.desktop-slide',
 
     lazyLoading: true,
@@ -406,7 +406,7 @@ $('#immersive-body').fullpage({
     // parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
 
     //Custom selectors
-    sectionSelector: 'li.section',
+    sectionSelector: 'section.section',
     slideSelector: '.mobile-slide',
 
     lazyLoading: true,
@@ -550,9 +550,9 @@ $(document).on('lity:ready', function(event, lightbox) {
   });
 
 
-$("li.section").each(function(){ 
-  //console.log( $(this).css("display") );
-});
+// $("section.section").each(function(){ 
+//   //console.log( $(this).css("display") );
+// });
 
 });
 
