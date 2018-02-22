@@ -70,7 +70,7 @@
                 </div>
                 <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/3.jpg' ?>" alt="INSERT ALT TEXT HERE" class="slide">
                 <div class="caption-text 3" id="slide-3" data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/3.jpg' ?>">
-                    <p>In this part of Montana, erosion has laid bare an astounding record of the Earth’s 4.5 billion years.</p>
+                    <p>In this part of Montana, erosion has laid bare an astounding record of Earth’s 4.5 billion years.</p>
                 </div>
             </div>
             <section id="sidescroll">
@@ -250,7 +250,7 @@
 
                         <p>“When they come to camp, they’re geology students,” McGroder says. “When they leave, they’re geologists.”</p>
 
-                        <h2 style="text-align: center;">Mary Alice TK's journal</h2>
+                        <h2 style="text-align: center;">Mary Alice Benson's journal</h2>
                         <p style="text-align: center;"><a href="http://environment.uw.edu/fieldcamp"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/Coenv_link_ESS_Camp_IMGOnly.png' ?>"></a><br />
                         <a href="http://environment.uw.edu/fieldcamp">Explore this firsthand account</a> of a UW senior’s career-defining field camp experience.</p>
                     </div>
