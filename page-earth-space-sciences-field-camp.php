@@ -92,7 +92,7 @@
                         <h2>A landscape made for learning</h2>
                         <p>UW students have been coming to field camp in Dillon for 25 years — and they’re not alone. Mud-splattered vans with license plates from West Virginia, Texas and Georgia attest to the area’s widespread draw. </p>
 
-                        <p>What brings people here? In this area, erosion has laid bare an astounding record of the Earth’s 4.5 billion years, giving students the opportunity to cut their teeth in geologic settings they’ve only read about before. </p>
+                        <p>What brings people here? In this area, erosion has laid bare an astounding record of the Earth’s 3.2 billion years, giving students the opportunity to cut their teeth in geologic settings they’ve only read about before. </p>
 
                         <p>“In the classroom, everything is much more black-and-white,” says field camp participant Ruslan Pavlenko, ’17. “Whereas here, it’s all right in front of you, and you’re able to see the bigger picture.”</p>
 
