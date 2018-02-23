@@ -47,7 +47,7 @@
 
                         <p>It’s their fourth day at Block Mountain, just outside the town of Dillon, and the students are trying to map an area known informally as the Rat’s Nest. The name is well earned by this giant tangle of rocks: The oldest layers are somehow on top of younger layers, some layers are upside down, and the <i>entire</i> Triassic period (the layer that formed between 251 million and 199 million years ago) is missing in places.</p>
 
-                        <p>“Geologists love a good murder mystery,” says McGroder, the group’s instructor — and making sense of geographic complexities is akin to tracking down the culprit.</p>
+                        <p>“Geologists love a good murder mystery,” says McGroder, the group’s instructor — and making sense of geologic complexities is akin to tracking down the culprit.</p>
 
                         <p>Over six weeks, his students tried out their detective skills by mapping, surveying and exploring this slice of Big Sky Country as part of the Department of Earth and Space Sciences’ geology field camp. For many of them, it was their first opportunity to practice geology like a professional would.</p>
 
@@ -70,7 +70,7 @@
                 </div>
                 <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/3.jpg' ?>" alt="INSERT ALT TEXT HERE" class="slide">
                 <div class="caption-text 3" id="slide-3" data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/3.jpg' ?>">
-                    <p>In this part of Montana, erosion has laid bare an astounding record of Earth’s 4.5 billion years.</p>
+                    <p>In this part of Montana, erosion has laid bare an astounding record of Earth’s 3.2 billion years.</p>
                 </div>
             </div>
             <section id="sidescroll">
@@ -107,7 +107,7 @@
                                 <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/6.jpg' ?>" alt="INSERT ALT TEXT">
                             </div>
                             <div class="caption">
-                                <strong>Top:</strong> Michael Barber <i>(left)</i> and Mary Alice Benson head to the top of a ridge. <strong>Bottom left:</strong> Joshua Anderson examines a piece of the hillside. <strong>Bottom right:</strong> Weston Brown <i>(left)</i> and Esten King try to determine if the land they’re on is part of a thrust fault.
+                                <strong>Top:</strong> Michael Barber <i>(left)</i> and Mary Alice Benson head to the top of a ridge. <strong>Bottom left:</strong> Joshua Anderson examines a piece of the hillside. <strong>Bottom right:</strong> Weston Brown <i>(left)</i> and Esten Kingis crossed by a thrust fault — where one section of land slips over another.
                             </div>
                         </div>
 
