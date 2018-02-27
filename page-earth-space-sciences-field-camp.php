@@ -60,15 +60,15 @@
         <section id="test" class="gallery-1 full-screen-gallery">
             
             <div class="images">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/1.jpg' ?>" alt="INSERT ALT TEXT HERE" class="slide">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/1.jpg' ?>" alt="Students at Block Mountain" class="slide">
                 <div class="caption-text 1" id="slide-1" data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/1.jpg' ?>">
                     <p>Students spent a week of field camp at Block Mountain, with the goal of mapping the area’s puzzling geologic features.</p>
                 </div>
-                 <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/2.jpg' ?>" alt="INSERT ALT TEXT HERE" class="slide">
+                 <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/2.jpg' ?>" alt="Michael McGroder, Wylee Cleverley, and Madeline Hille" class="slide">
                 <div class="caption-text 2" id="slide-2" data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/2.jpg' ?>">
                     <p>Field camp instructor Michael McGroder helps Wylee Cleverley (left) and Madeline Hille work through a section of their map.</p>
                 </div>
-                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/3.jpg' ?>" alt="INSERT ALT TEXT HERE" class="slide">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/3.jpg' ?>" alt="Erosion of top soil in Montana" class="slide">
                 <div class="caption-text 3" id="slide-3" data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/3.jpg' ?>">
                     <p>In this part of Montana, erosion has laid bare an astounding record of Earth’s 3.2 billion years.</p>
                 </div>
@@ -98,13 +98,13 @@
 
                         <div class="photo-collection">
                             <div class="col md-12">
-                                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/4.jpg' ?>" alt="INSERT ALT TEXT">
+                                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/4.jpg' ?>" alt="Michael Barber and Mary Alice Benson">
                             </div>
                             <div class="col-md-6">
-                                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/5.jpg' ?>" alt="INSERT ALT TEXT">
+                                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/5.jpg' ?>" alt="Joshua Anderson on a hillside">
                             </div>
                             <div class="col-md-6">                                    
-                                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/6.jpg' ?>" alt="INSERT ALT TEXT">
+                                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/6.jpg' ?>" alt="Weston Brown and Esten Kingis crossed by a thrust fault">
                             </div>
                             <div class="caption">
                                 <strong>Top:</strong> Michael Barber <i>(left)</i> and Mary Alice Benson head to the top of a ridge. <strong>Bottom left:</strong> Joshua Anderson examines a piece of the hillside. <strong>Bottom right:</strong> Weston Brown <i>(left)</i> and Esten Kingis crossed by a thrust fault — where one section of land slips over another.
@@ -122,15 +122,15 @@
 
         <section id="test2" class="gallery-2 full-screen-gallery">
           <div class="images">
-            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/7.jpg' ?>" alt="INSERT ALT TEXT HERE" class="slide">
+            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/7.jpg' ?>" alt="Block Mountain" class="slide">
             <div class="caption-text 4" id="slide-4">
               <p>Students hiked for miles each day to map Block Mountain, avoiding cacti and rattlesnakes during their trek.</p>
             </div>
-            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/8.jpg' ?>" alt="INSERT ALT TEXT HERE" class="slide">
+            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/8.jpg' ?>" alt="Student examines Block Mountain rocks" class="slide">
             <div class="caption-text 5" id="slide-5">
               <p>By examining the rocks in the area, students can see years’ worth of stress and change on the landscape.</p>
             </div>
-            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/9.jpg' ?>" alt="INSERT ALT TEXT HERE" class="slide">
+            <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/9.jpg' ?>" alt="Night shot of the mountain" class="slide">
             <div class="caption-text 6" id="slide-6">
               <p>While most local animals seek shade during the day, at night you can encounter deer, mountain lions and even cows from nearby ranches.</p>
             </div>
