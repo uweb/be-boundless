@@ -58,7 +58,7 @@
 
 
         <section id="test" class="gallery-1 full-screen-gallery">
-            
+
             <div class="images">
                 <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/1.jpg' ?>" alt="Students at Block Mountain" class="slide">
                 <div class="caption-text 1" id="slide-1" data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/1.jpg' ?>">
@@ -70,7 +70,7 @@
                 </div>
                 <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/3.jpg' ?>" alt="Erosion of top soil in Montana" class="slide">
                 <div class="caption-text 3" id="slide-3" data-src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/3.jpg' ?>">
-                    <p>In this part of Montana, erosion has laid bare an astounding record of Earth’s 3.2 billion years.</p>
+                    <p>In this part of Montana, erosion has laid bare an astounding 3.2 billion years of Earth history.</p>
                 </div>
             </div>
             <section id="sidescroll">
@@ -92,7 +92,7 @@
                         <h2>A landscape made for learning</h2>
                         <p>UW students have been coming to field camp in Dillon for 25 years — and they’re not alone. Mud-splattered vans with license plates from West Virginia, Texas and Georgia attest to the area’s widespread draw. </p>
 
-                        <p>What brings people here? In this area, erosion has laid bare an astounding record of the Earth’s 3.2 billion years, giving students the opportunity to cut their teeth in geologic settings they’ve only read about before. </p>
+                        <p>What brings people here? In this area, erosion has laid bare an astounding 3.2 billion years of Earth history, giving students the opportunity to cut their teeth in geologic settings they’ve only read about before. </p>
 
                         <p>“In the classroom, everything is much more black-and-white,” says field camp participant Ruslan Pavlenko, ’17. “Whereas here, it’s all right in front of you, and you’re able to see the bigger picture.”</p>
 
@@ -103,11 +103,11 @@
                             <div class="col-md-6">
                                 <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/5.jpg' ?>" alt="Joshua Anderson on a hillside">
                             </div>
-                            <div class="col-md-6">                                    
+                            <div class="col-md-6">
                                 <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/6.jpg' ?>" alt="Weston Brown and Esten Kingis crossed by a thrust fault">
                             </div>
                             <div class="caption">
-                                <strong>Top:</strong> Michael Barber <i>(left)</i> and Mary Alice Benson head to the top of a ridge. <strong>Bottom left:</strong> Joshua Anderson examines a piece of the hillside. <strong>Bottom right:</strong> Weston Brown <i>(left)</i> and Esten Kingis crossed by a thrust fault — where one section of land slips over another.
+                                <strong>Top:</strong> Michael Barber <i>(left)</i> and Mary Alice Benson head to the top of a ridge. <strong>Bottom left:</strong> Joshua Anderson examines a piece of the hillside. <strong>Bottom right:</strong> Weston Brown <i>(left)</i> and Esten King study a thrust fault — where one section of land slips over another.
                             </div>
                         </div>
 
