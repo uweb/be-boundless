@@ -41,7 +41,7 @@ global $styles;
 						<ul class="list-inline hidden-xs">
 						<li><a href="<?php echo get_site_url(); ?>/?utm_source=boundless&utm_medium=purple-topnav&utm_campaign=topnav-campaign-home">Campaign Home</a></li>
 						<li><a href="<?php echo get_site_url(); ?>/about/?utm_source=boundless&utm_medium=purple-topnav&utm_campaign=topnav-about-campaign">About</a></li>
-						<li><a href="<?php echo get_site_url(); ?>/archive/?utm_source=boundless&utm_medium=purple-topnav&utm_campaign=topnav-campaign-stories">Stories</a></li>
+						<li><a href="<?php echo get_site_url(); ?>/stories/?utm_source=boundless&utm_medium=purple-topnav&utm_campaign=topnav-campaign-stories">Stories</a></li>
 					</ul>
 						<button id="cv2-toggle" class="visible-xs-inline-block">Menu</button>
 					</div><!-- .col-sm-6 .col-md-6 .col-lg-6 .cv2-header-menu -->
@@ -53,7 +53,7 @@ global $styles;
 						<ul class="list-unstyled text-center">
 							<li><a href="<?php echo get_site_url(); ?>/?utm_source=boundless&utm_medium=purple-topnav&utm_campaign=topnav-campaign-home">Campaign Home</a></li>
 							<li><a href="<?php echo get_site_url(); ?>/about/?utm_source=boundless&utm_medium=purple-topnav&utm_campaign=topnav-about-campaign">About</a></li>
-							<li><a href="<?php echo get_site_url(); ?>/archive/?utm_source=boundless&utm_medium=purple-topnav&utm_campaign=topnav-campaign-stories">Stories</a></li>
+							<li><a href="<?php echo get_site_url(); ?>/stories/?utm_source=boundless&utm_medium=purple-topnav&utm_campaign=topnav-campaign-stories">Stories</a></li>
 						</ul>
 					</div><!-- .col-xs-12 .col-sm-12 .col-md-12 .col-lg-12 -->
 				</div><!-- .row -->
