@@ -29,7 +29,7 @@ html {
   height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #efeeea;
+  //background-color: #efeeea;
 }
 
 #immersive-body {
@@ -47,6 +47,10 @@ html {
   h5 {
     font-family: @headline;
     font-weight: @ultra;
+  }
+  h2,
+  h3 {
+    color: @purple;
   }
 
   .text-content {
@@ -237,7 +241,7 @@ html {
   .callout {
     width: 100%;
     display: inline-block;
-
+    margin-bottom: 50px;
     &:after {
         visibility: hidden;
         display: block;
@@ -254,6 +258,7 @@ html {
     .caption {
       text-align: left;
       text-transform: uppercase;
+      color: @gray; //@darkgray;
       margin: 0;
       font-size: 15px;
     }
@@ -272,12 +277,38 @@ html {
       &.right .float {
         margin-right: 0;
       }
+      img.image2 {
+        display: none;
+      }
     }
   }
 
   @media @tablet-portrait-up {
     .callout {
-      .float { width: 40vw; }
+      .float { 
+        width: 40vw; 
+        z-index: 1; //for hover state
+        img.image1 {
+          opacity: 1;
+          .transition(all .2s ease-in);
+        }
+        img.image2 {
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 14px 30px;
+          opacity: 0;
+          .transition(all .2s ease-in);
+        }
+        &:hover {
+          img.image1 {
+            opacity: 0;
+          }
+          img.image2 {
+            opacity: 1;
+          }
+        }
+      }
       .caption {
         position: absolute;
       }
@@ -343,7 +374,7 @@ html {
 
   @media @desktop-up {
     .callout {
-      .float { width: 55vw; }
+      //.float { width: 55vw; }
 
       &.left .float {
         margin-left: -15vw;
@@ -354,3 +385,411 @@ html {
       }
     }
   }
+
+
+  blockquote {
+    //font-family: @uni;
+    color: @purple;
+    //font-size: 27px;
+    line-height: 1.3;
+    position: relative;
+    border: none;
+    margin-bottom: 50px;
+    margin-top: 60px;
+    padding-left: 0;
+    &.quote {
+        margin-bottom: 10px;
+        &:before {
+            content: '\201C';
+            font-family: @encode;
+            font-weight: @ultra;
+            color: @purple;
+            font-size: 80px;
+            line-height: 0.0;
+            display: block;
+        }
+        &:after {
+            content: '\201D';
+            font-family: @encode;
+            font-weight: @ultra;
+            color: @purple;
+            font-size: 80px;
+            line-height: 0.0;
+            display: inline-block;
+            position: absolute;
+            margin: 70px 0;
+        }
+    }
+  }
+
+/*******************************
+ * Expander button and section *
+ *******************************/
+a#expander {
+  color: @text-color;
+  font-weight: 500;
+  //font-size: 16px;
+  font-family: @font-family-headline;
+  text-transform: uppercase;
+  display: inline-block;
+  text-shadow: none;
+  .transition(all .1s ease-in);
+  &:hover,
+  &.active, 
+  &:focus {
+    color: @lightgold;
+    //.translate(0, -5px);
+    &:after {
+      .rotate(45deg);
+      //.transform-origin(center center);
+    }
+  }
+  &:after {
+    content: "";
+    //background: url(../../immersive-stories/img/sprite.svg) no-repeat -308px 0px;
+    display: inline-block;
+    width: 10px;
+    height: 10px; 
+    margin: 0 0 1px 10px;
+    border: 2px solid @text-color;
+    border-bottom-right-radius: 2px;
+    border-top: none;
+    border-left: none;
+    .rotate(-45deg);
+    .transition(all .1s ease-in); 
+  }
+}
+div.hidden-part {
+  height: auto;
+  max-height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  margin-top: 10px;
+  .transition(all .2s ease-in-out);
+  &.show-part {
+    max-height: 9999px;
+    opacity: 1;
+    margin-top: 50px;
+    padding: 20px 0;
+  }
+}
+#expanding {
+  background: #F2F2F2;
+  margin-bottom: 50px;
+}
+h2.big-big,
+h3.big-big {
+    text-transform: uppercase;
+    text-align: center;
+    color: @purple;
+    font-size: 60px;
+} 
+.visible-part p {
+  border: 1px @lightgold solid;
+  border-left: none;
+  border-right: none;
+  padding: 10px 0;
+}
+
+.hidden-part .row {
+  //
+  .item-desc {
+    border-left: 2px solid @gray;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    h3 {
+      margin: -10px 0 0 0;
+      font-size: 36px;
+      line-height: 1;
+    }
+    span {
+      font-family: @uni;
+      color: @purple;
+      font-size: 40px;
+      line-height: 1.3;
+    }
+    p {
+      margin: 0 0 -10px 0;
+    }
+  }
+}
+
+/***************************
+ * Scrollbar and Scrollbar *
+ ***************************/
+ #scrollbar {
+    z-index: 10;
+    opacity: 0.95;
+    position: fixed;
+    top: 0;
+    height: 0;
+    width: 100%;
+    background-color: #ECECEC;
+    overflow: hidden;
+    .transition(all .2s ease-in);
+    &.active {
+      height: 50px;
+    }
+    span {
+      height: 100%; 
+      width: 0%;
+      display: block;
+      background-color: #E0E0E0;
+      .transition(all .1s ease-in);
+    }
+    .grayW {
+      position: absolute;
+      top: 5px;
+      height: 40px;
+      width: auto;
+      left: 50%;
+      .translate(-50%, 0);
+    }
+ }
+
+/**********************
+ * Videos and YouTube *
+ **********************/
+
+// .slideplay video, .slideplay img{
+//     //display: none;
+// }
+.slideplay.active video, .slideplay.active img{
+    display: block;
+}
+.slideplay{
+    //overflow: hidden;
+    position: relative;
+}
+.slideplay .possible{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 20;
+    width: 100%;
+    text-align: center;
+}
+.slideplay .possible h2{
+  color: white;
+  font-size: 14vw;
+  opacity: .2;
+  font-family: @uni;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  font-weight: normal;
+}
+.purp{
+  color: #4b2e83;
+}
+.slideplay .click{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 20;
+    font-family: @uni;
+    letter-spacing: .01em;
+    text-transform: uppercase;
+}
+.slideplay .fader{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 50px; //add only to second
+    position: relative;
+    opacity: 0;
+    transition: 600ms opacity;
+    pointer-events: none;
+    object-fit: cover;
+}
+.slideplay .fader.show{
+    opacity: 1;
+    pointer-events: all;
+}
+.slideplay img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.slideplay video{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    object-fit: cover;
+}
+
+.slideplay.frame {
+  height: 42.55vw;
+  //height: 56.25vw;
+  max-height: 100vh; 
+}
+.frame{
+    height: 600px;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    //overflow: hidden;
+}
+.frame.video{
+    //overflow: hidden;
+}
+.frame.video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+.frame.image{
+    //overflow: hidden;
+}
+.frame.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+.frame.active img{
+    display: block;
+}
+.slideplay {
+  opacity: 1;
+  .transition(opacity .2s ease-in-out);//this doesnt work bc of z-index
+  &.ophide {
+    opacity: 0;
+  }
+}
+#slideplay1 {
+  z-index: 3;
+  &.post-scene {
+    z-index: 1;
+  }
+}
+#slideplay2 {
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  [id$="youtube-video"] {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 9999;
+      margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  [id$="youtube-video"] {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    bottom: 40px;
+    width: 100% !important;
+    height: 42vw !important;
+  }
+}
+
+
+
+/*****************************
+ * Data Tooltips and Pop-ups *
+ *****************************/
+
+
+[data-tooltip] {
+    display: inline-block;
+    position: relative;
+    cursor: help;
+    font-weight: bold;
+    color: @lightgold;
+}
+/* Tooltip styling */
+[data-tooltip]:before {
+    content: attr(data-tooltip);
+    white-space: pre-line;
+    display: none;
+    position: absolute;
+    background: white;
+    color: #676767;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.4;
+    min-width: 310px;
+    text-align: left;
+    padding: 18px 30px;
+    border-radius: 4px;
+    background-color: #ECECEC;
+    @media @phone-only {  // (max-width: 599px)
+        min-width: 90px;
+    }
+}
+/* Dynamic horizontal centering */
+[data-tooltip-position="top"]:before{
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    @media @phone-only {  // (max-width: 599px)
+        //margin-left: -105px;
+    }
+}
+[data-tooltip-position="top"]:before {
+    bottom: 100%;
+    margin-bottom: 6px;
+}
+
+[data-tooltip]:after {
+    content: '';
+    display: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+[data-tooltip-position="top"]:after{
+    left: 50%;
+    margin-left: -10px;
+    margin-bottom: -4px;
+}
+[data-tooltip-position="top"]:after {
+    bottom: 100%;
+    border-width: 10px 10px 0;
+    border-top-color: #ECECEC;
+}
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+    display: block;
+    z-index: 50;
+}
+
+span.title {
+    display: none;
+    @media @phone-only {  // (max-width: 599px)
+        display: block;
+        z-index: 50;
+        content: attr(data-tooltip);
+        display: none;
+        position: absolute;
+        background: white;
+        color: #676767;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.4;
+        min-width: 90px;
+        text-align: left;
+        padding: 18px 30px;
+        border-radius: 4px;
+    }
+}
+
+
