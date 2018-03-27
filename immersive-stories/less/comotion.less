@@ -353,7 +353,7 @@ html {
 
   @media @tablet-landscape-up {
     .callout {
-      .float { width: 50vw; }
+      .float { width: 45vw; }
 
       &.left .float {
         //float: left;
@@ -399,6 +399,7 @@ html {
     padding-left: 0;
     &.quote {
         margin-bottom: 10px;
+        //margin-top: 20%;
         &:before {
             content: '\201C';
             font-family: @encode;
@@ -421,6 +422,13 @@ html {
         }
     }
   }
+
+  @media @tablet-portrait-up {
+    blockquote.quote {
+      margin-top: 20%;
+    }
+  }
+
 
 /*******************************
  * Expander button and section *
@@ -791,5 +799,17 @@ span.title {
         border-radius: 4px;
     }
 }
+
+
+/*****************
+ * Giving Widget *
+ *****************/
+
+ .text-block.giving-widget.branded {
+    background-image: url(../../immersive-stories/img/comotion/COMOTION_GIVING_FOOTER.jpg);
+    .background-size(cover);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+ }
 
 

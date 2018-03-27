@@ -175,7 +175,7 @@ var isMobile = (function(a){return /(android|bb\d+|meego).+mobile|avantgo|bada\/
           $(scene).toggleClass("active");
           if(isMobile) {
           	videoPlay("du-9QA8xbMA", 'slideplay1');
-          	videoPlay("du-9QA8xbMA", 'slideplay2');
+          	videoPlay("pslbmrOdSyg", 'slideplay2');
           } else {
           	$("#slideplay1").on("click", function(){
           	    //$(this).find(".fader").toggleClass("show");
@@ -205,7 +205,7 @@ var isMobile = (function(a){return /(android|bb\d+|meego).+mobile|avantgo|bada\/
 	      	$('#slideplay1 .close-video').trigger('click');
 
 	      	//autoplay vid 2
-	        videoPlay("du-9QA8xbMA", 'slideplay2');
+	        videoPlay("pslbmrOdSyg", 'slideplay2');
 	      	//fade out vid 1
 	      	$('#slideplay1').addClass('ophide');
 	      	$('#slideplay1').addClass('post-scene');

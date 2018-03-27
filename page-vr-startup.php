@@ -14,8 +14,8 @@
 
 	<section class="intro" id="intro-vid">
     <button id="pause">Pause</button>
-    <video autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/socialwork/poster.png' ?>" class="fullscreen-bg__video" id="full-bg-video">
-      <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/socialwork/header.mp4' ?>" type="video/mp4">
+    <video autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/HEADER.jpg' ?>" class="fullscreen-bg__video" id="full-bg-video">
+      <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/comotion/COMO_HEADER_TL_V2.mp4' ?>" type="video/mp4">
     </video>
     <div class="intro-body">
       <div class="row">
@@ -57,17 +57,17 @@
 
             <div class="callout right">
               <div class="float">
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/law/callout-ronwhitener.jpg" alt="" class="image1">
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/law/callout-briankilgore.jpg" alt="" class="image2">
-                <p class="caption no-cap">LACEY LEAVITT / CHIEF EXECUTIVE OFFICER, ELECTRIC DREAM FACTORY</p>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/comotion/LACEY_PHOTO_1.jpg" alt="" class="image1">
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/comotion/LACEY_PHOTO_2.jpg" alt="" class="image2">
+                <p class="caption no-cap">LACEY LEAVITT / CHIEF EXECUTIVE OFFICER<!-- , ELECTRIC DREAM FACTORY --></p>
               </div>
               <blockquote class="quote">With XR, we have the opportunity to set our intentions from the very beginning — to commit to being inclusive from the get-go.</blockquote>
             </div>
             <div class="callout left">
               <div class="float">
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/law/callout-briankilgore.jpg" alt="" class="image1">
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/law/callout-ronwhitener.jpg" alt="" class="image2">
-                <p class="caption no-cap">JOE JACOBS / CREATIVE TECHNICAL OFFICER, ELECTRIC DREAM FACTORY</p>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/comotion/JOE_PHOTO_1.jpg" alt="" class="image1">
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/comotion/JOE_PHOTO_2.jpg" alt="" class="image2">
+                <p class="caption no-cap">JOE JACOBS / CREATIVE TECHNICAL OFFICER<!-- , ELECTRIC DREAM FACTORY --></p>
               </div>
               <blockquote class="quote">This technology really moldable right now. The concrete is not even close to set. We’re still sculpting it.</blockquote>
             </div>
@@ -104,11 +104,14 @@
                   </div>
                   <div class="hidden-part">
                     <!-- [slide deck image] -->
+                    <!-- <img class="slide1" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/SLIDE_1.png' ?>"> -->
                     <!-- [slide deck image flipped] -->
+                    <!-- <img class="slide2" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/SLIDE_2.png' ?>"> -->
+
                     <div class="row">
                       <div class="col-md-6 col-sm-4 col-xs-10 col-sm-offset-0 col-xs-offset-1">
                         <!-- [stereoscope image] -->
-                        <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/viewmaster.jpg' ?>">
+                        <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/STEREOSCOPE.png' ?>">
                       </div>
                       <div class="item-desc col-md-6 col-sm-8 col-xs-10 col-sm-offset-0 col-xs-offset-1"> 
                         <h3>Late 19th century</h3>
@@ -119,7 +122,7 @@
                     <div class="row">
                       <div class="col-md-6 col-sm-4 col-xs-10 col-sm-offset-0 col-xs-offset-1">
                         <!-- [view master image] -->
-                        <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/viewmaster.jpg' ?>">
+                        <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/VIEWMASTER.png' ?>">
                       </div>
                       <div class="item-desc col-md-6 col-sm-8 col-xs-10 col-sm-offset-0 col-xs-offset-1">
                         <h3>1939</h3>
@@ -130,7 +133,7 @@
                     <div class="row">
                       <div class="col-md-6 col-sm-4 col-xs-10 col-sm-offset-0 col-xs-offset-1">
                         <!-- [Google cardboard image] -->
-                        <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/viewmaster.jpg' ?>">
+                        <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/GOOGLE_CARDBOARD.png' ?>">
                       </div>
                       <div class="item-desc col-md-6 col-sm-8 col-xs-10 col-sm-offset-0 col-xs-offset-1">
                         <h3>2014</h3>
@@ -141,7 +144,7 @@
                     <div class="row">
                       <div class="col-md-6 col-sm-4 col-xs-10 col-sm-offset-0 col-xs-offset-1">
                         <!-- [HTC VIVE image] -->
-                        <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/viewmaster.jpg' ?>">
+                        <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/HTC_VIVE.png' ?>">
                       </div>
                       <div class="item-desc col-md-6 col-sm-8 col-xs-10 col-sm-offset-0 col-xs-offset-1">
                         <h3>2016</h3>
@@ -187,7 +190,7 @@
         <div class="fader show">
             <section class="possible"><h2>Possible</h2></section>
             <a role="button" class="click">Click To Play</a>
-            <img alt="Fabric" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/04.jpg' ?>" />
+            <img alt="Fabric" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/comotion/VIDEO1.jpg' ?>" />
         </div>
         <div class="boundless-video"></div>
     </section>
@@ -198,7 +201,7 @@
         <div class="fader show">
             <section class="possible"><h2>Possible</h2></section>
             <section class="click">Click To Play</section>
-            <img alt="Fabric" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/04.jpg' ?>" />
+            <img alt="Fabric" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/comotion/VIDEO2.jpg' ?>" />
         </div>
         <div class="boundless-video"></div>
     </section>
@@ -227,6 +230,6 @@
 </div><!-- #immersive-body -->
 
 <?php
-    include(locate_template('include-giving.php'));
+    include(locate_template('include-giving.php'));//ADD CUSTOM PHOTO
     get_template_part('footer', 'campaign-v2');
 ?>
