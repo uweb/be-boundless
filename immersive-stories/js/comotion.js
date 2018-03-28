@@ -28,7 +28,7 @@ var isMobile = (function(a){return /(android|bb\d+|meego).+mobile|avantgo|bada\/
 
  //animate scrollbar span width based off page scroll
  var tweenScroll = new TimelineMax()
-      .to("#scrollbar span", 1, {width: '100%'}, 0);
+      .to("#scrollbar span", 1, {width: '102%'}, 0);
 
  var scrollProgress = new ScrollMagic.Scene({
 	 	//triggerElement: '#immersive-body',
@@ -50,9 +50,12 @@ var isMobile = (function(a){return /(android|bb\d+|meego).+mobile|avantgo|bada\/
   	e.stopPropagation();
   	$(this).toggleClass('active');
   	$('.expandable-container .hidden-part').toggleClass('show-part');
+    $('#expanding').toggleClass('expanded');
   	//compensate with scrollbar
-  	//scrollProgress.duration($(document).height());.update(true);
-  	//scrollProgress.update(true);
+    setTimeout(function(){
+      scrollProgress.duration($(document).height());
+      scrollProgress.update(true);
+    }, 500);
   });
 
   //Make expand button jump a little when reaching section? 
@@ -160,7 +163,23 @@ var isMobile = (function(a){return /(android|bb\d+|meego).+mobile|avantgo|bada\/
     	  }
     	}
 
+    //prevent accessibility link from scrolling to top  
+    $(".click").click(function(e){
+      e.preventDefault();
+    });
+
     	//_____
+      // animation vars
+      var before = CSSRulePlugin.getRule("#slideplay1 .fader:before");
+      var after = CSSRulePlugin.getRule("#slideplay1 .fader:after");
+
+      // build tween
+      var tweenMap = new TimelineMax()
+        // section 1 out
+        // .to(before, 1.0, { cssRule: { scaleY: 0, transformOrigin: '50% 0%' } }, 0)
+        // .to(after, 1.0, { cssRule: { scaleY: 0, transformOrigin: '50% 100%' } }, 0);
+        .to(before, 1.0, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, 0)
+        .to(after, 1.0, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, 0);
 
       var slideplayToggleIn = new ScrollMagic.Scene({
           triggerElement: "#slideplay1",
@@ -174,12 +193,12 @@ var isMobile = (function(a){return /(android|bb\d+|meego).+mobile|avantgo|bada\/
           var scene = this.triggerElement();
           $(scene).toggleClass("active");
           if(isMobile) {
-          	videoPlay("du-9QA8xbMA", 'slideplay1');
-          	videoPlay("pslbmrOdSyg", 'slideplay2');
+          	videoPlay("RJCCUz1esc0", 'slideplay1');
+          	videoPlay("du-9QA8xbMA", 'slideplay2');
           } else {
           	$("#slideplay1").on("click", function(){
           	    //$(this).find(".fader").toggleClass("show");
-          	    videoPlay("du-9QA8xbMA", 'slideplay1');
+          	    videoPlay("RJCCUz1esc0", 'slideplay1');
           	    //videoPlay("https://www.youtube.com/embed/du-9QA8xbMA?autoplay=1&rel=0&amp;showinfo=0&amp", '#slideplay2');
           	});
           }
@@ -200,21 +219,23 @@ var isMobile = (function(a){return /(android|bb\d+|meego).+mobile|avantgo|bada\/
 	      //.addIndicators()
 	      .addTo(controllerComo)
 	      .setPin("#slideplay1", {pushFollowers: false})
+        .setTween(tweenMap)
 	      .on("leave", function() { //or maybe on "end"?
 	      	//close vid 1
 	      	$('#slideplay1 .close-video').trigger('click');
 
 	      	//autoplay vid 2
-	        videoPlay("pslbmrOdSyg", 'slideplay2');
+	        videoPlay("du-9QA8xbMA", 'slideplay2');
 	      	//fade out vid 1
 	      	$('#slideplay1').addClass('ophide');
 	      	$('#slideplay1').addClass('post-scene');
+          $('#slideplay2').addClass('post-scene');
 	      	
 	      	//reset vid 1
+          slideplayPin.removePin(true);
 	      	setTimeout(function(){
-	      		slideplayPin.removePin(true);
 	      		$('#slideplay1').removeClass('ophide');
-	      	}, 2000)
+	      	}, 4000)
 	      });
 	  }
 
@@ -233,269 +254,5 @@ var isMobile = (function(a){return /(android|bb\d+|meego).+mobile|avantgo|bada\/
 	    }
 	  })
   }
-
-
-
-//   /***************************
-//    * Animation: Intro
-//    ***************************/
-
-//   var $introText = $('#section-intro .intro-text'),
-//     $introVid = $('#full-bg-video'),
-//     introVidObj = {
-//       volume: $introVid.prop('volume')
-//     };
-
-//   var tweenIntro = new TimelineMax()
-//     .to($introText, 1.5, { alpha: 0, transform: 'translateY(-100px)', ease: Power0.easeIn }, 0)
-//     .to(introVidObj, 1, {
-//       volume: 0,
-//       ease: Linear.easeNone,
-//       onUpdate: function () {
-//         $('#full-bg-video').prop('volume', this.target.volume);
-//       }
-//     }, 0.5);
-
-//   var sceneIntro = new ScrollMagic.Scene({
-//       triggerElement: '#section-intro',
-//       triggerHook: 0,
-//       duration: '100%'
-//     })
-//     .setPin('#section-intro', { pushFollowers: false })
-//     .setTween(tweenIntro)
-//     .addTo(controllerLaw);
-
-//   // Play video through pin
-//   $('video')
-//     .get(0)
-//     .play();
-
-
-
-//   /***************************
-//    * Animation: Map
-//    ***************************/
-
-//   // animation vars
-//   var before1 = CSSRulePlugin.getRule("#section-map .item-1 .headline:before");
-//   var before2 = CSSRulePlugin.getRule("#section-map .item-2 .headline:before");
-//   var after1 = CSSRulePlugin.getRule("#section-map .item-1 .headline:after");
-//   var after2 = CSSRulePlugin.getRule("#section-map .item-2 .headline:after");
-//   var tweenMapDuration = 0.5;
-
-//   // build tween
-//   var tweenMap = new TimelineMax()
-
-//     // section 1 out
-//     .to(before1, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, 0)
-//     .to(after1, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, 0)
-//     .to("#section-map .item-1", tweenMapDuration * 0.25, { opacity: 0 }, tweenMapDuration * 0.75)
-//     .to("#section-map .background-1", tweenMapDuration * 0.25, { scale: 1.2, opacity: 0 }, tweenMapDuration * 0.75)
-
-//     // section 2 in
-//     .from(before2, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, tweenMapDuration)
-//     .from(after2, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, tweenMapDuration)
-//     .to("#section-map .item-2", tweenMapDuration * 0.25, { opacity: 1 }, tweenMapDuration)
-//     .to("#section-map .background-2", tweenMapDuration * 0.25, { opacity: 1, scale: 1 }, tweenMapDuration)
-
-//   var sceneMap = new ScrollMagic.Scene({
-//       triggerElement: '#section-map',
-//       triggerHook: 0,
-//       duration: '100%'
-//     })
-//     .setPin('#section-map', { pushFollowers: true })
-//     .on('leave', function(e) {
-//       if(e.scrollDirection === 'REVERSE') {
-//         $('#section-map').css({
-//           'position': 'relative'
-//         });
-//       } else {
-//         // $('#section-map').css({
-//         //   'position': 'fixed',
-//         //   'top': 0,
-//         //   'left': 0
-//         // });
-//       }
-//     })
-//     .setTween(tweenMap)
-//     .addTo(controllerLaw);
-
-
-//   /***************************
-//    * Animation: Body
-//    ***************************/
-
-//   var calloutLeft = $('#section-body .callout.left'),
-//     calloutRight = $('#section-body .callout.right');
-
-//   var tweenBodyLeft = new TimelineMax()
-//     .from(calloutLeft, 0.5, { alpha: 0, overwrite: false })
-//     .from(calloutLeft, 0.6, { x: '-=200px', overwrite: false, immediateRender: false }, 0);
-
-//   var tweenBodyRight = new TimelineMax()
-//     .from(calloutRight, 0.5, { alpha: 0, overwrite: false })
-//     .from(calloutRight, 0.6, { x: '+=200px', overwrite: false, immediateRender: false }, 0);
-
-//   var sceneBodyLeft = new ScrollMagic.Scene({
-//       triggerElement: '#section-body .callout.left',
-//       offset: -200
-//     })
-//     .setTween(tweenBodyLeft)
-//     .addTo(controllerLaw);
-
-//   var sceneBodyRight = new ScrollMagic.Scene({
-//       triggerElement: '#section-body .callout.right',
-//       offset: -200
-//     })
-//     .setTween(tweenBodyRight)
-//     .addTo(controllerLaw);
-
-
-//   /***************************
-//    * Animation: Profiles
-//    ***************************/
-
-//   var controllerProfiles = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: '0', duration: "200%"}});
-
-//   var profilesTween = new TimelineMax()
-//     .fromTo("#section-profiles .item-1 .group", 0.25, {alpha:0}, {alpha:1})
-//     .fromTo("#section-profiles .item-1 .group", 0.75,
-//       {transform: 'translateY(50vh)'},
-//       {transform: 'translateY(-50vh)'}, "-=0.25"
-//     )
-//     .to("#section-profiles .item-1 .group", 0.25, {alpha:0}, "-=0.25")
-//     .to("#section-profiles .item-1", 0.25, {autoAlpha:0})
-//     // second slide
-//     .fromTo("#section-profiles .item-2 .group", 0.25, {alpha:0}, {alpha:1})
-//     .fromTo("#section-profiles .item-2 .group", 0.75,
-//       {transform: 'translateY(50vh)'},
-//       {transform: 'translateY(-50vh)'}, "-=0.25"
-//     )
-//     .to("#section-profiles .item-2 .group", 0.25, {alpha:0}, "-=0.25")
-//   new ScrollMagic.Scene({triggerElement: "#section-profiles"})
-//     .setPin("#section-profiles")
-//     .setTween(profilesTween)
-//     //.addIndicators({name: "pin profiles"})
-//     .addTo(controllerProfiles);
-
-//   /***************************
-//    * Animation: Photos
-//    ***************************/
-
-//    var controllerPhotos = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: '0', duration: '300%'}});
-
-//    var photosTween = new TimelineMax()
-//      .fromTo("#section-photos .item-1 .group", 0.25, {alpha:0}, {alpha:1})
-//      .fromTo("#section-photos .item-1 .group", 1,
-//        {transform: 'translateY(50vh)'},
-//        {transform: 'translateY(-50vh)'}, "-=0.25"
-//      )
-//      .to("#section-photos .item-1 .group", 0.25, {alpha:0}, "-=0.25")
-//      .to("#section-photos .item-1", 0.5, {autoAlpha:0})
-//      // second photo
-//      .fromTo("#section-photos .item-2 .group", 0.25, {alpha:0}, {alpha:1})
-//      .fromTo("#section-photos .item-2 .group", 1,
-//        {transform: 'translateY(50vh)'},
-//        {transform: 'translateY(-50vh)'}, "-=0.25"
-//      )
-//      .to("#section-photos .item-2 .group", 0.25, {alpha:0}, "-=0.25")
-//      .to("#section-photos .item-2", 0.5, {autoAlpha:0})
-//      // third photo
-//      .fromTo("#section-photos .item-3 .group", 0.25, {alpha:0}, {alpha:1})
-//      .fromTo("#section-photos .item-3 .group", 1,
-//        {transform: 'translateY(50vh)'},
-//        {transform: 'translateY(-50vh)'}, "-=0.25"
-//      )
-//      .to("#section-photos .item-3 .group", 0.25, {alpha:0}, "-=0.25")
-//   new ScrollMagic.Scene({triggerElement: "#section-photos"})
-//     .setPin("#section-photos")
-//     .setTween(photosTween)
-//     //.addIndicators({name: "pin photos"})
-//     .addTo(controllerPhotos);
-
-//   /***************************
-//    * Resizing
-//    ***************************/
-
-//   $(window)
-//     .resize(function () {
-//       sceneIntro.update(true);
-//       sceneMap.update(true);
-//       sceneBodyLeft.update(true);
-//       sceneBodyRight.update(true);
-//       sceneProfiles1.update(true);
-//       sceneProfiles2.update(true);
-//       sceneProfiles3.update(true);
-//       scenePhotos1.update(true);
-//       scenePhotos2.update(true);
-//       scenePhotos3.update(true);
-//       scenePhotos4.update(true);
-//     });
-
-
-
-//   /***************************
-//    * Misc scripts
-//    ***************************/
-
-//   if (detectIE) {
-//     // fallback for object-fit: cover - header bg video
-//     // $('#section-intro video')
-//     //   .css('height', 'auto');
-//   } else {
-//     // TODO: re-enable this
-//     // lazyload();
-//   }
-
-
-
-
-
-
-
-//   /**
-//    * detect IE
-//    * returns version of IE or false, if browser is not Internet Explorer
-//    */
-//   function detectIE() {
-//     var ua = window.navigator.userAgent;
-
-//     // Test values; Uncomment to check result
-
-//     // IE 10
-//     // ua = 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)';
-
-//     // IE 11
-//     // ua = 'Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko';
-
-//     // Edge 12 (Spartan)
-//     // ua = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36 Edge/12.0';
-
-//     // Edge 13
-//     // ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586';
-
-//     var msie = ua.indexOf('MSIE ');
-//     if (msie > 0) {
-//       // IE 10 or older => return version number
-//       return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
-//     }
-
-//     var trident = ua.indexOf('Trident/');
-//     if (trident > 0) {
-//       // IE 11 => return version number
-//       var rv = ua.indexOf('rv:');
-//       return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
-//     }
-
-//     var edge = ua.indexOf('Edge/');
-//     if (edge > 0) {
-//       // Edge (IE 12+) => return version number
-//       return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
-//     }
-
-//     // other browser
-//     return false;
-//   }
-
 
 });

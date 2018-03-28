@@ -13,6 +13,7 @@
 <div id="immersive-body">
 
 	<section class="intro" id="intro-vid">
+    <div id="vid-overlay"></div>
     <button id="pause">Pause</button>
     <video autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/HEADER.jpg' ?>" class="fullscreen-bg__video" id="full-bg-video">
       <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/comotion/COMO_HEADER_TL_V2.mp4' ?>" type="video/mp4">
@@ -93,6 +94,10 @@
     <!--Expanding block -->
     <section class="text-block" id="expanding">
       <div class="container">
+        <!-- [slide deck image] -->
+        <img class="slide1" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/SLIDE_1.png' ?>">
+        <!-- [slide deck image flipped] -->
+        <img class="slide2" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/SLIDE_2.png' ?>">
           <div class="row">
               <div class="col-md-10 col-md-offset-1 copy expandable-container">
                   <div class="visible-part">
@@ -103,11 +108,6 @@
                      <div style="text-align: center"><a id="expander" href="#" role="button">Show more</a></div>
                   </div>
                   <div class="hidden-part">
-                    <!-- [slide deck image] -->
-                    <!-- <img class="slide1" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/SLIDE_1.png' ?>"> -->
-                    <!-- [slide deck image flipped] -->
-                    <!-- <img class="slide2" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/SLIDE_2.png' ?>"> -->
-
                     <div class="row">
                       <div class="col-md-6 col-sm-4 col-xs-10 col-sm-offset-0 col-xs-offset-1">
                         <!-- [stereoscope image] -->
@@ -188,8 +188,12 @@
 <!-- 360 YOUTUBE VIDEO #1 56.25-->
     <section id="slideplay1" class="slideplay frame">
         <div class="fader show">
-            <section class="possible"><h2>Possible</h2></section>
-            <a role="button" class="click">Click To Play</a>
+            <!-- <section class="possible"><h2>Possible</h2></section> -->
+            <div class="icon">
+              <img alt="360 video icon" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/comotion/360.png' ?>" />
+              <a role="button" class="click" href="#">Meet the minds </br>behind Electric Dream Factory</a>
+            </div>
+            <!-- <a role="button" class="click" href="#">Click To Play</a> -->
             <img alt="Fabric" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/comotion/VIDEO1.jpg' ?>" />
         </div>
         <div class="boundless-video"></div>
@@ -199,8 +203,11 @@
 
     <section id="slideplay2" class="slideplay frame">
         <div class="fader show">
-            <section class="possible"><h2>Possible</h2></section>
-            <section class="click">Click To Play</section>
+            <div class="icon">
+              <img alt="360 video icon" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/comotion/360.png' ?>" />
+              <a role="button" class="click" href="#">Watch the work </br>of Electric Dream Factory</a>
+            </div>
+           <!--  <a role="button" class="click" href="#">Click To Play</a> -->
             <img alt="Fabric" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/comotion/VIDEO2.jpg' ?>" />
         </div>
         <div class="boundless-video"></div>
