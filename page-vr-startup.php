@@ -75,7 +75,7 @@
 
             <p>Jacobs was interested in how this rapidly developing technology could open up new storytelling possibilities. “I wandered into it with curiosity,” he says. “What’s the potential here?”</p>
 
-            <p>VR’s ability to create empathy was a major motivating factor for Leavitt: “It allows you to bring people into somebody else’s point of view,” she says.</p>
+            <p>VR’s ability to create empathy  — by putting viewers in the midst of 360-degree, virtual world — was a major motivating factor for Leavitt: “It allows you to bring people into somebody else’s point of view,” she says.</p>
 
             <p>Electric Dream Factory’s first VR short did just that. “Ch’aak’ S’aagi” (“Eagle Bone”), directed by Native American filmmaker and actress Tracy Rector, combines Pacific Northwest scenery, traditional Tlingit dance and a freestyle spoken-word meditation on the modern indigenous experience. Soon after, the studio produced “Potato Dreams,” a VR documentary about writer and director Wes Hurley’s struggles while growing up gay in the Soviet Union. Both films use their virtual environment to forge a deeper connection between viewer and subject, and Electric Dream Factory plans to create many more.</p>
 
@@ -212,7 +212,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-md-offset-1 copy">
-            <h2>About CoMotion and CoMotion Labs</h2>
+            <h2>Expanding impact: CoMotion and CoMotion Labs</h2>
             <p><b><a href="https://comotion.uw.edu/">CoMotion</a></b> seeks to expand the economic and social impact of the UW community by fostering innovation transfer, which helps researchers make the leap from idea to impact; creating strategic partnerships, such as the <a href="https://gix.uw.edu/">Global Innovation Exchange</a> and <a href="https://catalyst.amazon.com/uw/">Amazon Catalyst</a>; and encouraging innovative thinking through workshops, trainings and events for the UW and our broader community.
 
             <p>Faculty and student research cultivates groundbreaking ideas at the University of Washington. But without financial support, there’s a gap between research and real-world output. Helping researchers cross this gap is the CoMotion Innovation Fund, explains Vikram Jandhyala, executive director of CoMotion and vice president for innovation strategy at the UW.
