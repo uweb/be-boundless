@@ -284,7 +284,7 @@ html {
     .caption {
       text-align: left;
       text-transform: uppercase;
-      color: @gray; //@darkgray;
+      color: @darkgray;
       margin: 0;
       font-size: 15px;
     }
@@ -447,6 +447,14 @@ html {
   @media @tablet-landscape-up {
     blockquote.quote {
       margin-top: 20%;
+      font-size: 26px;
+      margin-left: -10%;
+      width: 50%;
+      margin-right: 60%;
+    }
+    .left blockquote.quote {
+      margin-right: -10%;
+      margin-left: 60%;
     }
   }
 
@@ -454,7 +462,7 @@ html {
 /*******************************
  * Expander button and section *
  *******************************/
-a#expander {
+a.expander {
   color: @text-color;
   font-weight: 500;
   //font-size: 16px;
@@ -470,6 +478,7 @@ a#expander {
     //.translate(0, -5px);
     &:after {
       .rotate(45deg);
+      border-color: @lightgold;
       //.transform-origin(center center);
     }
   }
@@ -486,6 +495,23 @@ a#expander {
     border-left: none;
     .rotate(-45deg);
     .transition(all .1s ease-in); 
+  }
+  &.less {
+    color: @lightgold;
+    margin-top: 30px;
+    //color: @darkgold;
+    &:after {
+      border-color: @lightgold;
+      .rotate(-135deg);
+    }
+    &:hover,
+    &:focus {
+      color: @darkgold;
+      &:after {
+        border-color: @darkgold;
+        //.rotate(-135deg);
+      }
+    }
   }
 }
 div.hidden-part {
@@ -504,7 +530,7 @@ div.hidden-part {
 }
 #expanding {
   background: #F2F2F2;
-  margin-bottom: 50px;
+  margin-top: 30px;
 }
 h2.big-big,
 h3.big-big {
@@ -512,6 +538,7 @@ h3.big-big {
     text-align: center;
     color: @purple;
     font-size: 60px;
+    margin-top: 10px;
 } 
 .visible-part p {
   border: 1px @lightgold solid;
@@ -566,7 +593,18 @@ img.slide2 {
       opacity: 1;
     }
   }
+  #expanding {
+    margin-bottom: 50px;
+    margin-top: 0;
+  }
+  .text-block .copy.expandable-container {
+    padding: 30px 90px;
+  }
+  section.small-top .text-block .copy {
+  padding-top: 30px;
 }
+}
+
 
 /***************************
  * Scrollbar and Scrollbar *
@@ -629,40 +667,71 @@ img.slide2 {
     .transition(all .2s ease-in-out);  
   }
   a.click {
-    font-size: 28px;
+    padding: 14px 150px 13px 10px;
+    font-size: 25px;
+    line-height: 1.4;
     display: block;
     font-family: "Encode Sans Normal",sans-serif;
     font-weight: 900;
     color: #FFFFFF;
     text-transform: uppercase;
     margin-top: 0;
+    opacity: 0.9;
     .transition(all .2s ease-in-out); 
   }
 }
-.slideplay:hover {
-  .icon a.click {
+.slideplay .icon a.click:hover {
+  outline: 15px solid rgba(183,165,122,0.2);
+  opacity: 1.0;
+  &:after {
+    .scale(1.1, 1.1);
+    opacity: 1.0;
     //color: @lightgold;
+    //background-position: -79px -416px;
   }
-  .icon:after {
-    opacity: 0.35;
-  }
+  // &:before {
+  //   opacity: 1.0;
+  // }
+  // .icon:after {
+  //   //opacity: 0.35;
+  //   //opacity: 0.8;
+  // }
 }
 //psuedo play button
-.slideplay .icon:after {
-  content: '';
-  position: absolute;
-  display: block;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-35%) translateY(-50%);
-  width: 300px;
-  height: 300px;
-  box-sizing: border-box;
-  border-style: solid;
-  border-width: 150px 0px 150px 300px;
-  border-color: transparent transparent transparent #FFFFFF;
-  opacity: 0;
-  .transition(opacity .2s ease-in-out); 
+.slideplay .icon a:after {
+  // content: '';
+  // position: absolute;
+  // display: block;
+  // top: 50%;
+  // left: 50%;
+  // transform: translateX(-35%) translateY(-50%);
+  // width: 300px;
+  // height: 300px;
+  // box-sizing: border-box;
+  // border-style: solid;
+  // border-width: 150px 0px 150px 300px;
+  // border-color: transparent transparent transparent #FFFFFF;
+  // opacity: 0;
+  // .transition(opacity .2s ease-in-out); 
+    content: "";
+    position: absolute;
+    background: url(../../immersive-stories/img/sprite.svg) no-repeat -79px -330px rgba(0,0,0,0);
+    width: 101px;
+    height: 95px;
+    bottom: -3px;
+    right: 0;
+    opacity: 0.9;
+    .transition( all .1s linear );
+}
+.slideplay .icon a:before {
+    content: "";
+    position: absolute;
+    background: url(../../immersive-stories/img/sprite.svg) no-repeat 9px -295px rgba(0,0,0,0);
+    width: 52px;
+    height: 145px;
+    bottom: -31px;
+    right: 100px;
+    opacity: 0.9;
 }
 
 // .slideplay .possible{
@@ -768,42 +837,42 @@ img.slide2 {
     opacity: 0;
   }
 }
-#slideplay2 {
-  opacity: 0;
-  .transition(opacity 2s ease-in-out);
-  &.post-scene {
-    opacity: 1;
-  }
-}
+// #slideplay2 {
+//   opacity: 0;
+//   .transition(opacity 2s ease-in-out);
+//   &.post-scene {
+//     opacity: 1;
+//   }
+// }
 #slideplay1 {
   z-index: 3;
   &.post-scene {
     z-index: 1;
   }
-  .fader {
-    &:after,
-    &:before {
-      content: '';
-      position: absolute;
-      display: block;
-      width: 120px;
-      height: 10px;
-      background-color: white;
-      opacity: 0.5;
-    }
-    &:after {
-      bottom: 0;
-      left: 0;
-    }
-    &:before {
-      top: 0;
-      right: 0;
-    }
-  }
+  // .fader {
+  //   &:after,
+  //   &:before {
+  //     content: '';
+  //     position: absolute;
+  //     display: block;
+  //     width: 120px;
+  //     height: 10px;
+  //     background-color: white;
+  //     opacity: 0.5;
+  //   }
+  //   &:after {
+  //     bottom: 0;
+  //     left: 0;
+  //   }
+  //   &:before {
+  //     top: 0;
+  //     right: 0;
+  //   }
+  // }
 }
-#slideplay2 {
-  z-index: 2;
-}
+// #slideplay2 {
+//   z-index: 2;
+// }
 @media (min-width: 768px) {
   [id$="youtube-video"] {
       position: absolute;
@@ -829,7 +898,6 @@ img.slide2 {
 }
 
 
-
 /*****************************
  * Data Tooltips and Pop-ups *
  *****************************/
@@ -840,10 +908,10 @@ img.slide2 {
     position: relative;
     cursor: help;
     font-weight: bold;
-    color: @lightgold;
+    color: @darkgold;
 }
 /* Tooltip styling */
-[data-tooltip]:before {
+[data-tooltip] span {
     content: attr(data-tooltip);
     white-space: pre-line;
     display: none;
@@ -861,9 +929,7 @@ img.slide2 {
     @media @phone-only {  // (max-width: 599px)
         min-width: 90px;
     }
-}
-/* Dynamic horizontal centering */
-[data-tooltip-position="top"]:before{
+    /* Dynamic horizontal centering */
     left: 50%;
     -ms-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -872,13 +938,11 @@ img.slide2 {
     @media @phone-only {  // (max-width: 599px)
         //margin-left: -105px;
     }
-}
-[data-tooltip-position="top"]:before {
     bottom: 100%;
     margin-bottom: 6px;
 }
 
-[data-tooltip]:after {
+[data-tooltip] span:after {
     content: '';
     display: none;
     position: absolute;
@@ -886,19 +950,15 @@ img.slide2 {
     height: 0;
     border-color: transparent;
     border-style: solid;
-}
-[data-tooltip-position="top"]:after{
     left: 50%;
     margin-left: -10px;
-    margin-bottom: -4px;
-}
-[data-tooltip-position="top"]:after {
-    bottom: 100%;
+    margin-bottom: -10px;
+    bottom: 0;
     border-width: 10px 10px 0;
     border-top-color: #ECECEC;
 }
-[data-tooltip]:hover:before,
-[data-tooltip]:hover:after {
+[data-tooltip]:hover span,
+[data-tooltip]:hover span:after {
     display: block;
     z-index: 50;
 }

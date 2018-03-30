@@ -45,7 +45,7 @@ var isMobile = (function(a){return /(android|bb\d+|meego).+mobile|avantgo|bada\/
    ***************************/
 
   //expand VR section on click
-  $('#expander').on('click', function(e){
+  $('.expander').on('click', function(e){
   	e.preventDefault();
   	e.stopPropagation();
   	$(this).toggleClass('active');
@@ -114,7 +114,7 @@ var isMobile = (function(a){return /(android|bb\d+|meego).+mobile|avantgo|bada\/
     	        videoHTMLMobile = 
     	        '<button class="close-video"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>' +
     	        '<div id="' + location + '-youtube-video">' + 
-    	        '<iframe title="YouTube video" id="embedVid" width=' + $video.width() + ' height=' + $video.height() + ' src="https://www.youtube.com/embed/' + videoSrc + '?autoplay=1&rel=0&amp;showinfo=0&amp" frameborder="0" allowfullscreen autoplay></iframe>' +
+    	        '<iframe title="YouTube video" id="embedVid" width=' + $video.width() + ' height=' + $video.height() + ' src="https://www.youtube.com/embed/' + videoSrc + '?autoplay=0&rel=0&amp;showinfo=0&amp" frameborder="0" allowfullscreen autoplay></iframe>' +
     	        '</div>';
 
 
@@ -170,31 +170,35 @@ var isMobile = (function(a){return /(android|bb\d+|meego).+mobile|avantgo|bada\/
 
     	//_____
       // animation vars
-      var before = CSSRulePlugin.getRule("#slideplay1 .fader:before");
-      var after = CSSRulePlugin.getRule("#slideplay1 .fader:after");
+      // var before = CSSRulePlugin.getRule("#slideplay1 .fader:before");
+      // var after = CSSRulePlugin.getRule("#slideplay1 .fader:after");
 
       // build tween
-      var tweenMap = new TimelineMax()
-        // section 1 out
-        // .to(before, 1.0, { cssRule: { scaleY: 0, transformOrigin: '50% 0%' } }, 0)
-        // .to(after, 1.0, { cssRule: { scaleY: 0, transformOrigin: '50% 100%' } }, 0);
-        .to(before, 1.0, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, 0)
-        .to(after, 1.0, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, 0);
+      // var tweenMap = new TimelineMax()
+      //   // section 1 out
+      //   // .to(before, 1.0, { cssRule: { scaleY: 0, transformOrigin: '50% 0%' } }, 0)
+      //   // .to(after, 1.0, { cssRule: { scaleY: 0, transformOrigin: '50% 100%' } }, 0);
+      //   .to(before, 1.0, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, 0)
+      //   .to(after, 1.0, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, 0);
 
       var slideplayToggleIn = new ScrollMagic.Scene({
           triggerElement: "#slideplay1",
           duration: 0,
           offset: -$(window).height(),
-          triggerHook: 0,
-          reverse: true
+          triggerHook: 1,
+          reverse: false
       })
+      //.addIndicators()
       .addTo(controllerComo)
       .on('start', function () {
-          var scene = this.triggerElement();
+          var scene = this.triggerElement(); 
           $(scene).toggleClass("active");
           if(isMobile) {
+            $('.fader .icon').hide();
           	videoPlay("RJCCUz1esc0", 'slideplay1');
-          	videoPlay("du-9QA8xbMA", 'slideplay2');
+            // $('#slideplay2').addClass('post-scene');
+            // videoPlay("du-9QA8xbMA", 'slideplay2');
+          	
           } else {
           	$("#slideplay1").on("click", function(){
           	    //$(this).find(".fader").toggleClass("show");
@@ -209,35 +213,35 @@ var isMobile = (function(a){return /(android|bb\d+|meego).+mobile|avantgo|bada\/
           slideplayToggleIn.update(true);
       });
 
-      if(!(isMobile)) {
-	      var slideplayPin = new ScrollMagic.Scene({
-	          triggerElement: "#slideplay2",
-	          duration: $("#slideplay2").height(),
-	          triggerHook: 1,
-	          reverse: false
-	      })
-	      //.addIndicators()
-	      .addTo(controllerComo)
-	      .setPin("#slideplay1", {pushFollowers: false})
-        .setTween(tweenMap)
-	      .on("leave", function() { //or maybe on "end"?
-	      	//close vid 1
-	      	$('#slideplay1 .close-video').trigger('click');
+   //    if(!(isMobile)) {
+	  //     var slideplayPin = new ScrollMagic.Scene({
+	  //         triggerElement: "#slideplay2",
+	  //         duration: $("#slideplay2").height(),
+	  //         triggerHook: 1,
+	  //         reverse: false
+	  //     })
+	  //     //.addIndicators()
+	  //     .addTo(controllerComo)
+	  //     .setPin("#slideplay1", {pushFollowers: false})
+   //      .setTween(tweenMap)
+	  //     .on("leave", function() { //or maybe on "end"?
+	  //     	//close vid 1
+	  //     	$('#slideplay1 .close-video').trigger('click');
 
-	      	//autoplay vid 2
-	        videoPlay("du-9QA8xbMA", 'slideplay2');
-	      	//fade out vid 1
-	      	$('#slideplay1').addClass('ophide');
-	      	$('#slideplay1').addClass('post-scene');
-          $('#slideplay2').addClass('post-scene');
+	  //     	//autoplay vid 2
+	  //       videoPlay("du-9QA8xbMA", 'slideplay2');
+	  //     	//fade out vid 1
+	  //     	$('#slideplay1').addClass('ophide');
+	  //     	$('#slideplay1').addClass('post-scene');
+   //        $('#slideplay2').addClass('post-scene');
 	      	
-	      	//reset vid 1
-          slideplayPin.removePin(true);
-	      	setTimeout(function(){
-	      		$('#slideplay1').removeClass('ophide');
-	      	}, 4000)
-	      });
-	  }
+	  //     	//reset vid 1
+   //        slideplayPin.removePin(true);
+	  //     	setTimeout(function(){
+	  //     		$('#slideplay1').removeClass('ophide');
+	  //     	}, 4000)
+	  //     });
+	  // }
 
 
    
