@@ -28,15 +28,18 @@ var isMobile = (function(a){return /(android|bb\d+|meego).+mobile|avantgo|bada\/
 
  //animate scrollbar span width based off page scroll
  var tweenScroll = new TimelineMax()
-      .to("#scrollbar span", 1, {width: '102%'}, 0);
+      .to("#scrollbar span", 1, {
+          width: '100%',
+          ease: Power0.easeNone
+      }, 0);
 
  var scrollProgress = new ScrollMagic.Scene({
 	 	//triggerElement: '#immersive-body',
 	 	triggerHook: 0,
-	 	duration: $(document).height()
+	 	duration: $(document).height() - $(window).height()
 	})
  	.setTween(tweenScroll)
-    .addTo(controllerComo);
+  .addTo(controllerComo);
 
 
 
