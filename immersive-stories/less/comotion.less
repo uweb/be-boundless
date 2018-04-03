@@ -985,7 +985,11 @@ img.slide2 {
     border-top-color: #ECECEC;
 }
 [data-tooltip]:hover span,
-[data-tooltip]:hover span:after {
+[data-tooltip]:active span,
+[data-tooltip]:focus span,
+[data-tooltip]:hover span:after ,
+[data-tooltip]:active span:after ,
+[data-tooltip]:focus span:after {
     display: block;
     z-index: 50;
 }
@@ -1006,7 +1010,9 @@ img.slide2 {
     //left: auto;
     content: none;
   }
-  [data-tooltip]:hover {
+  [data-tooltip]:hover ,
+  [data-tooltip]:active ,
+  [data-tooltip]:focus {
     //text-decoration: underline dashed;
     border-bottom: 1px dashed;
   }
