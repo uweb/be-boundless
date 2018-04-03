@@ -40,11 +40,11 @@
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-md-offset-1 copy">
-            <p>In many respects, CoMotion Labs @ HQ looks like you’d expect a startup incubator to look. Glass-walled conference rooms with idea maps sketched on whiteboards. Entrepreneurs in T-shirts with futuristic company names hanging above their desks: BiNomial. Pixel Fyzz. WiBiotic.</p>
+            <p>In many respects, CoMotion Labs @ HQ looks like you’d expect a startup incubator to look. Glass-walled conference rooms with idea maps sketched on whiteboards. Entrepreneurs in T-shirts with futuristic company names hanging above their desks: BiNomial. PixelFyzz. WiBiotic.</p>
 
-            <p>But then you see a woman with what looks like a black brick strapped over her eyes: a virtual reality headset. Depending on the startup, she could be exploring a virtual shopping experience, an architectural rendering of the inside of a building, or a rotating model of a human heart that will be used to educate patients.</p>
+            <p>But then you see a woman with what looks like a black brick strapped over her eyes: a virtual reality headset. Depending on the startup she works for, she could be exploring a virtual shopping experience, an architectural rendering of the inside of a building, or a rotating model of a human heart that will be used to educate patients.</p>
 
-            <p>She may even be watching a 360-degree film created by <a href="http://www.electricdreamfactory.com/">Electric Dream Factory</a>, a content studio that works with diverse creatives to tell stories through <span data-tooltip><span><span class="close">X</span><b>Virtual reality:</b> 360-degree video and/or computer-generated simulations that immerse users in a different world. Examples of VR hardware range from Google Cardboard to Oculus Rift headsets.</span>virtual</span>, <span data-tooltip><span><span class="close">X</span><b>Augmented reality:</b> Technology that overlays digital information onto the real world in real time.</span>augmented</span> and <span data-tooltip><span><span class="close">X</span><b>Mixed reality:</b> Like AR, MR combines digital information with the real world. The two terms are often used interchangeably, but a key distinction is that MR allows the physical and digital worlds to interact in real time — so virtual objects are treated as if they are actually present.</span>mixed reality</span>.</p>
+            <p>She may even be watching a 360-degree film created by <a href="http://www.electricdreamfactory.com/">Electric Dream Factory</a>, a content studio that works with diverse creatives to tell stories through <span data-tooltip><span><span class="close">X</span><b>Virtual reality:</b> 360-degree video and/or computer-generated simulations that immerse users in a different world. Examples of VR hardware range from Google Cardboard&trade; to Oculus Rift headsets.</span>virtual</span>, <span data-tooltip><span><span class="close">X</span><b>Augmented reality:</b> Technology that overlays digital information onto the real world in real time.</span>augmented</span> and <span data-tooltip><span><span class="close">X</span><b>Mixed reality:</b> Like AR, MR combines digital information with the real world. The two terms are often used interchangeably, but a key distinction is that MR allows the physical and digital worlds to interact in real time — so virtual objects are treated as if they are actually present.</span>mixed reality</span>.</p>
 
             <p>Founded by producer Lacey Leavitt, ’03, and editor Joe Jacobs, Electric Dream Factory moved into this workspace in 2016. Since then, they’ve created several virtual reality films — and as they harness the power of technology to help storytellers from different backgrounds make an impact on audiences, they’re benefiting from a startup incubator that shares their philosophy of <span data-tooltip><span><span class="close">X</span><b>Inclusive innovation:</b> The philosophy that including people from all backgrounds strengthens innovation and changes lives for the better. Creating a space and opportunity for this cross-pollination of ideas is core to the UW’s Innovation Imperative — an integrated approach that will drive positive change in our state and beyond.</span>inclusive innovation</span>.</p>
 
@@ -54,7 +54,7 @@
               <div class="float">
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/comotion/LACEY_PHOTO_1.jpg" alt="" class="image1">
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/comotion/LACEY_PHOTO_2.jpg" alt="" class="image2">
-                <p class="caption no-cap">LACEY LEAVITT / CHIEF EXECUTIVE OFFICER<!-- , ELECTRIC DREAM FACTORY --></p>
+                <p class="caption no-cap">LACEY LEAVITT / CHIEF EXECUTIVE OFFICER, ELECTRIC DREAM FACTORY</p>
               </div>
               <blockquote class="quote">With XR, we have the opportunity to set our intentions from the very beginning — to commit to being inclusive from the get-go.</blockquote>
             </div>
@@ -62,20 +62,20 @@
               <div class="float">
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/comotion/JOE_PHOTO_1.jpg" alt="" class="image1">
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/comotion/JOE_PHOTO_2.jpg" alt="" class="image2">
-                <p class="caption no-cap">JOE JACOBS / CREATIVE TECHNICAL OFFICER<!-- , ELECTRIC DREAM FACTORY --></p>
+                <p class="caption no-cap">JOE JACOBS / CREATIVE TECHNICAL OFFICER, ELECTRIC DREAM FACTORY</p>
               </div>
               <blockquote class="quote">This technology is really moldable right now. The concrete is not even close to set. We’re still sculpting it.</blockquote>
             </div>
             <h2>Virtual reality gets real</h2>
             <p>Leavitt and Jacobs, who’ve been friends since they worked on a student film together as undergraduates, both went on to cut their teeth in the New York City film industry. While Leavitt gained valuable experience there, she also learned a lesson that informed how — and where — she would shape her career.</p>
 
-            <p>“The New York and L.A. film industries are very male-dominated,” she says. “I just didn’t see being able to make a career like the one I wanted.”</p>
+            <p>“The New York and LA film industries are very male-dominated,” she says. “I just didn’t see being able to make a career like the one I wanted.”</p>
 
             <p>Eventually, both Leavitt and Jacobs made their way back to Seattle, where they teamed up in 2015 to form the company they now call Electric Dream Factory. It wasn’t long before they took another plunge: In addition to continuing their work on feature films, they ventured into <span data-tooltip><span><span class="close">X</span><b>Cross reality:</b> Any experience that combines digital and “real,” or physical, reality. This term is often used to encompass virtual-, augmented- and mixed-reality technology.</span>cross reality</span> (XR) filmmaking, with a focus on virtual reality (VR).</p>
 
             <p>Jacobs was interested in how this rapidly developing technology could open up new storytelling possibilities. “I wandered into it with curiosity,” he says. “What’s the potential here?”</p>
 
-            <p>VR’s ability to create empathy  — by putting viewers in the midst of 360-degree, virtual world — was a major motivating factor for Leavitt: “It allows you to bring people into somebody else’s point of view,” she says.</p>
+            <p>VR’s ability to create empathy  — by putting viewers in the midst of a 360-degree virtual world — was a major motivating factor for Leavitt: “It allows you to bring people into somebody else’s point of view,” she says.</p>
 
             <p>Electric Dream Factory’s first VR short did just that. “Ch’aak’ S’aagi” (“Eagle Bone”), directed by Native American filmmaker and actress Tracy Rector, combines Pacific Northwest scenery, traditional Tlingit dance and a freestyle spoken-word meditation on the modern indigenous experience. Soon after, the studio produced “Potato Dreams,” a VR documentary about writer and director Wes Hurley’s struggles while growing up gay in the Soviet Union. Both films use their virtual environment to forge a deeper connection between viewer and subject, and Electric Dream Factory plans to create many more.</p>
 
@@ -121,7 +121,7 @@
                       <div class="item-desc col-md-6 col-sm-8 col-xs-10 col-sm-offset-0 col-xs-offset-1">
                         <h3>1939</h3>
                         <span>View-Master</span>
-                        <p>Introduced in 1939 at the New York World’s Fair, the View-Master soon becomes a household toy that whisks people to destinations and scenes around the world. Shown at left is a Model G, circa 1959-1977.</p>
+                        <p>Introduced in 1939 at the New York World’s Fair, the View-Master&reg; soon becomes a household toy that whisks people to destinations and scenes around the world. Shown at left is a Model G, circa 1959-1977.</p>
                       </div>
                     </div>
                     <div class="row">
@@ -142,8 +142,8 @@
                       </div>
                       <div class="item-desc col-md-6 col-sm-8 col-xs-10 col-sm-offset-0 col-xs-offset-1">
                         <h3>2016</h3>
-                        <span>HTC VIVE SteamVR</span>
-                        <p>One of several commercial VR headsets in 2016, the SteamVR is part of a watershed moment in the progress of virtual technology.</p>
+                        <span>HTC VIVE</span>
+                        <p>One of several commercial VR headsets released in 2016, the HTC VIVE&trade; is part of a watershed moment in the progress of virtual technology.</p>
                       </div>
                     </div>
                     <div style="text-align: center"><a class="expander less" href="#" role="button">Show less</a></div>
@@ -184,8 +184,8 @@
         <div class="fader show">
             <!-- <section class="possible"><h2>Possible</h2></section> -->
             <div class="icon">
-              <img alt="360 video icon" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/comotion/360.png' ?>" />
-              <a role="button" class="click" href="#">Meet the minds </br>behind Electric Dream Factory</a>
+              <!-- <img alt="360 video icon" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/comotion/360.png' ?>" /> -->
+              <a role="button" class="click" href="#">Click and drag to experience video in 360 degrees</a>
             </div>
             <!-- <a role="button" class="click" href="#">Click To Play</a> -->
             <img alt="Fabric" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/comotion/VIDEO1.jpg' ?>" />
