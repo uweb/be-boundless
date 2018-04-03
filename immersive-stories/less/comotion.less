@@ -1010,6 +1010,16 @@ img.slide2 {
     z-index: 50;
 }
 
+[data-tooltip].on-hover span ,
+[data-tooltip].on-hover span:after ,
+[data-tooltip].on-hover span.close {
+    display: block;
+    z-index: 50;
+}
+[data-tooltip].on-hover {
+    border-bottom: 1px dashed;
+  }
+
 @media @phone-only {  // (max-width: 599px)
   [data-tooltip] {
     position: initial;
