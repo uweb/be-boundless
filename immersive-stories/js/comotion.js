@@ -198,6 +198,7 @@ var isMobile = (function(a){return /(android|bb\d+|meego).+mobile|avantgo|bada\/
           $(scene).toggleClass("active");
           if(isMobile) {
             $('.fader .icon').hide();
+            $('button.close-video').hide();
           	videoPlay("RJCCUz1esc0", 'slideplay1');
             // $('#slideplay2').addClass('post-scene');
             // videoPlay("du-9QA8xbMA", 'slideplay2');
@@ -251,15 +252,15 @@ var isMobile = (function(a){return /(android|bb\d+|meego).+mobile|avantgo|bada\/
   /***************************
    *   Tooltip for mobile    *
    ***************************/
-  if( isMobile ) {
-	  $("[data-tooltip]").click(function () {
-	    var $title = $(this).find(".title");
-	    if (!$title.length) {
-	      $(this).append('<span class="title">' + $(this).attr("data-tooltip") + '</span>');
-	    } else {
-	      $title.remove();
-	    }
-	  })
-  }
+  // if( isMobile ) {
+	 //  $("[data-tooltip]").click(function () {
+	 //    var $title = $(this).find(".title");
+	 //    if (!$title.length) {
+	 //      $(this).append('<span class="title">' + $(this).attr("data-tooltip") + '</span>');
+	 //    } else {
+	 //      $title.remove();
+	 //    }
+	 //  })
+  // }
 
 });
