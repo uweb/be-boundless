@@ -257,6 +257,7 @@ if (isMobile) {
   //(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); 
 
   $('[data-tooltip]').on('click', function(e){
+    //console.log("test")
     var tooltip = $(this);
     tooltip.toggleClass('on-hover');
     // $('span.close').on('click', function(e){
