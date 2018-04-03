@@ -542,6 +542,9 @@ h3.big-big {
     color: @purple;
     font-size: 60px;
     margin-top: 10px;
+    @media @phone-only {  // (max-width: 599px)
+      font-size: 40px;
+    }
 } 
 .visible-part p {
   border: 1px @lightgold solid;
@@ -921,6 +924,12 @@ img.slide2 {
     bottom: 40px;
     width: 100% !important;
     height: 42vw !important;
+  }
+  .slideplay .icon {
+    width: 90%;
+    a.click {
+      font-size: 16px;
+    }
   }
 }
 
