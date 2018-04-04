@@ -162,12 +162,22 @@
 
             <p>Across the room from Electric Dream Factory’s desks is a virtual reality space, sponsored by Booz Allen, that gives innovators the opportunity to test their projects using cutting-edge technology. Workshops and learning opportunities are a constant presence, too. “The classes in startup fundamentals have been amazing,” says Leavitt.</p> 
 
+            <div class="float-image right">
+              <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/comotion/comotion_workspaces.jpg" alt="">
+              <!-- <p class="caption no-cap">CAPTION</p> -->
+            </div>
+
             <p>Electric Dream Factory also participated in DubPitch, a philanthropically supported event that gives select CoMotion startups the chance to share their stories with local investors. In addition, Leavitt and Jacobs have connected with CoMotion Labs’ entrepreneurs in residence, who volunteer their time to consult with startups about intellectual property, business plans and more.</p>
 
             <p>The net effect of these resources? Startups can pour more energy into what they do best: building and creating. For Leavitt and Jacobs, that means more time spent shaping the virtual landscape — and helping others tell their stories in original, immersive ways.</p>
 
             <h2>Empowering diverse storytellers</h2>
             <p>In the spirit of inclusive innovation, Electric Dream Factory is developing a program that aims to support diverse storytelling through equipment access, training and mentorship opportunities, and project funding.</p> 
+            <div class="float-image right">
+              <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/comotion/comotion_photo_inset.jpg" alt="">
+              <!-- <p class="caption no-cap">CAPTION</p> -->
+            </div>
+
             <p>“Especially now, as we’re part of pioneering what XR filmmaking is, you want people from a variety of backgrounds and experiences to come to the table,” says Leavitt.</p>
 
             <p>On the horizon for Electric Dream Factory are films by artists who explore topics as wide-ranging as black female sexuality, the importance of support in the LGBTQ community, and economic disparity.</p> 

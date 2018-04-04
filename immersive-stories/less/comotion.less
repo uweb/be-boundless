@@ -472,6 +472,75 @@ html {
   }
 
 
+
+
+/****************************
+ *   Lower callout images   *
+ ****************************/
+
+
+  .float-image {
+    position: relative;
+    max-width: 600px;
+  }
+
+  @media @phone-only {
+    .left.float-image {
+      margin-left: 0;
+    }
+
+    .right.float-image {
+      margin-right: 0;
+    }
+  }
+
+  @media @tablet-portrait-up {
+    .float-image { 
+      width: 40vw;
+      padding: 20px 60px; 
+    }
+
+    .left.float-image {
+      float: left;
+      margin-left: 0;
+      //padding: 14px 30px;
+    }
+
+    .right.float-image {
+      float: right;
+      margin-right: 0;
+      //padding: 14px 30px;
+    }
+    .right {
+      text-align: left;
+    }
+  }
+
+  @media @tablet-landscape-up {
+    //.float-image { width: 45vw; }
+
+    .left.float-image {
+      margin-left: -10vw;
+    }
+
+    .right.float-image {
+      margin-right: -10vw;
+    }
+  }
+
+  @media @desktop-up {
+    //.float-image { width: 55vw; }
+
+    .left.float-image {
+      //margin-left: -15vw;
+    }
+
+    .right.float-image {
+      //margin-right: -15vw;
+    }
+  }
+
+
 /*******************************
  * Expander button and section *
  *******************************/
