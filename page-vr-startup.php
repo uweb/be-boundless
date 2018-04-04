@@ -182,12 +182,9 @@
 <!-- 360 YOUTUBE VIDEO #1 56.25-->
     <section id="slideplay1" class="slideplay frame">
         <div class="fader show">
-            <!-- <section class="possible"><h2>Possible</h2></section> -->
             <div class="icon">
-              <!-- <img alt="360 video icon" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/comotion/360.png' ?>" /> -->
               <a role="button" class="click" href="#">Click and drag to experience video in 360 degrees</a>
             </div>
-            <!-- <a role="button" class="click" href="#">Click To Play</a> -->
             <img alt="Fabric" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/comotion/VIDEO1.jpg' ?>" />
         </div>
         <div class="boundless-video"></div>
