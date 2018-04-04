@@ -69,6 +69,12 @@ html {
   .slideplay .fader .icon h2 {
     color: #FFFFFF;
   }
+
+  // span.trade ,
+  // span.reg {
+  //   vertical-align: super;
+  //   font-size: smaller;
+  // }
 }
 
 /*******************************
@@ -595,6 +601,9 @@ img.slide2 {
   background: #F2F2F2;
   &.text-block .copy.expandable-container {
     padding: 20px 90px 30px;
+    @media @phone-only {  // (max-width: 599px)
+      padding: 20px;
+    }
   }
 }
 #expanding + section.text-block.start .copy {

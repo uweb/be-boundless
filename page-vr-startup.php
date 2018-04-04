@@ -44,7 +44,7 @@
 
             <p>But then you see a woman with what looks like a black brick strapped over her eyes: a virtual reality headset. Depending on the startup she works for, she could be exploring a virtual shopping experience, an architectural rendering of the inside of a building, or a rotating model of a human heart that will be used to educate patients.</p>
 
-            <p>She may even be watching a 360-degree film created by <a href="http://www.electricdreamfactory.com/">Electric Dream Factory</a>, a content studio that works with diverse creatives to tell stories through <span data-tooltip><span><span class="close">X</span><b>Virtual reality:</b> 360-degree video and/or computer-generated simulations that immerse users in a different world. Examples of VR hardware range from Google Cardboard&trade; to Oculus Rift headsets.</span>virtual</span>, <span data-tooltip><span><span class="close">X</span><b>Augmented reality:</b> Technology that overlays digital information onto the real world in real time.</span>augmented</span> and <span data-tooltip><span><span class="close">X</span><b>Mixed reality:</b> Like AR, MR combines digital information with the real world. The two terms are often used interchangeably, but a key distinction is that MR allows the physical and digital worlds to interact in real time — so virtual objects are treated as if they are actually present.</span>mixed reality</span>.</p>
+            <p>She may even be watching a 360-degree film created by <a href="http://www.electricdreamfactory.com/">Electric Dream Factory</a>, a content studio that works with diverse creatives to tell stories through <span data-tooltip><span><span class="close">X</span><b>Virtual reality:</b> 360-degree video and/or computer-generated simulations that immerse users in a different world. Examples of VR hardware range from Google Cardboard<sup>&trade;</sup> to Oculus Rift headsets.</span>virtual</span>, <span data-tooltip><span><span class="close">X</span><b>Augmented reality:</b> Technology that overlays digital information onto the real world in real time.</span>augmented</span> and <span data-tooltip><span><span class="close">X</span><b>Mixed reality:</b> Like AR, MR combines digital information with the real world. The two terms are often used interchangeably, but a key distinction is that MR allows the physical and digital worlds to interact in real time — so virtual objects are treated as if they are actually present.</span>mixed reality</span>.</p>
 
             <p>Founded by producer Lacey Leavitt, ’03, and editor Joe Jacobs, Electric Dream Factory moved into this workspace in 2016. Since then, they’ve created several virtual reality films — and as they harness the power of technology to help storytellers from different backgrounds make an impact on audiences, they’re benefiting from a startup incubator that shares their philosophy of <span data-tooltip><span><span class="close">X</span><b>Inclusive innovation:</b> The philosophy that including people from all backgrounds strengthens innovation and changes lives for the better. Creating a space and opportunity for this cross-pollination of ideas is core to the UW’s Innovation Imperative — an integrated approach that will drive positive change in our state and beyond.</span>inclusive innovation</span>.</p>
 
@@ -121,7 +121,7 @@
                       <div class="item-desc col-md-6 col-sm-8 col-xs-10 col-sm-offset-0 col-xs-offset-1">
                         <h3>1939</h3>
                         <span>View-Master</span>
-                        <p>Introduced in 1939 at the New York World’s Fair, the View-Master&reg; soon becomes a household toy that whisks people to destinations and scenes around the world. Shown at left is a Model G, circa 1959-1977.</p>
+                        <p>Introduced in 1939 at the New York World’s Fair, the View-Master<sup>&reg;</sup> soon becomes a household toy that whisks people to destinations and scenes around the world. Shown at left is a Model G, circa 1959-1977.</p>
                       </div>
                     </div>
                     <div class="row">
@@ -143,7 +143,7 @@
                       <div class="item-desc col-md-6 col-sm-8 col-xs-10 col-sm-offset-0 col-xs-offset-1">
                         <h3>2016</h3>
                         <span>HTC VIVE</span>
-                        <p>One of several commercial VR headsets released in 2016, the HTC VIVE&trade; is part of a watershed moment in the progress of virtual technology.</p>
+                        <p>One of several commercial VR headsets released in 2016, the HTC VIVE<sup>&trade;</sup> is part of a watershed moment in the progress of virtual technology.</p>
                       </div>
                     </div>
                     <div style="text-align: center"><a class="expander less" href="#" role="button">Show less</a></div>
