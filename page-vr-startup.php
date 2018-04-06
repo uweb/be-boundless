@@ -78,7 +78,7 @@
             <p>VR’s ability to create empathy  — by putting viewers in the midst of a 360-degree virtual world — was a major motivating factor for Leavitt: “It allows you to bring people into somebody else’s point of view,” she says.</p>
 
             <div class="float-image right">
-              <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/comotion/eagle_bone.jpg" alt="">
+              <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/comotion/eaglebone.jpg" alt="">
               <p class="caption no-cap">A scene from “Ch’aak’ S’aagi”</p>
             </div>
 
