@@ -2,7 +2,7 @@
     $meta = '';
     $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/comotion.css' type='text/css' media='all' />";
     $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/comotion.min.js' type='text/javascript'></script>";
-    $storyCodes = '';
+    $storyCodes = 'COMOIF';
     $storyAppeal = 'When you support the CoMotion Innovation Fund, you can help projects with great potential create real-world impact.';
     get_header("campaign-v2");
 ?>
@@ -164,7 +164,7 @@
 
             <div class="float-image right">
               <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/comotion/comotion_workspaces.jpg" alt="">
-              <!-- <p class="caption no-cap">CAPTION</p> -->
+              <p class="caption no-cap">The office space at CoMotion Labs @ HQ</p>
             </div>
 
             <p>Electric Dream Factory also participated in DubPitch, a philanthropically supported event that gives select CoMotion startups the chance to share their stories with local investors. In addition, Leavitt and Jacobs have connected with CoMotion Labs’ entrepreneurs in residence, who volunteer their time to consult with startups about intellectual property, business plans and more.</p>
@@ -175,7 +175,7 @@
             <p>In the spirit of inclusive innovation, Electric Dream Factory is developing a program that aims to support diverse storytelling through equipment access, training and mentorship opportunities, and project funding.</p> 
             <div class="float-image right">
               <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/comotion/comotion_photo_inset.jpg" alt="">
-              <!-- <p class="caption no-cap">CAPTION</p> -->
+              <p class="caption no-cap">On the set of “Dom,” a VR documentary directed by Netsanet Tjirongo and produced by Electric Dream Factory</p>
             </div>
 
             <p>“Especially now, as we’re part of pioneering what XR filmmaking is, you want people from a variety of backgrounds and experiences to come to the table,” says Leavitt.</p>
