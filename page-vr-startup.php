@@ -77,6 +77,11 @@
 
             <p>VR’s ability to create empathy  — by putting viewers in the midst of a 360-degree virtual world — was a major motivating factor for Leavitt: “It allows you to bring people into somebody else’s point of view,” she says.</p>
 
+            <div class="float-image right">
+              <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/comotion/eagle_bone.jpg" alt="">
+              <p class="caption no-cap">A scene from “Ch’aak’ S’aagi”</p>
+            </div>
+
             <p>Electric Dream Factory’s first VR short did just that. “Ch’aak’ S’aagi” (“Eagle Bone”), directed by Native American filmmaker and actress Tracy Rector, combines Pacific Northwest scenery, traditional Tlingit dance and a freestyle spoken-word meditation on the modern indigenous experience. Soon after, the studio produced “Potato Dreams,” a VR documentary about writer and director Wes Hurley’s struggles while growing up gay in the Soviet Union. Both films use their virtual environment to forge a deeper connection between viewer and subject, and Electric Dream Factory plans to create many more.</p>
 
           </div><!-- .col-md-10 .col-md-offset-1 .copy -->
