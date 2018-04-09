@@ -16,18 +16,18 @@
 @open:        @font-family-base;
 @encode:      @font-family-headline;
 
-// @media @phone-only { }            (max-width: 599px)     
-// @media @tablet-portrait-up { }    (min-width: 600px) 
-// @media @tablet-portait-only { }   (min-width: 600px) and (max-width: 899px) 
+// @media @phone-only { }            (max-width: 599px)
+// @media @tablet-portrait-up { }    (min-width: 600px)
+// @media @tablet-portait-only { }   (min-width: 600px) and (max-width: 899px)
 // @media @tablet-landscape-up { }   (min-width: 900px)
-// @media @tablet-landscape-only { } (min-width: 900px) and (max-width: 1199px) 
+// @media @tablet-landscape-only { } (min-width: 900px) and (max-width: 1199px)
 // @media @desktop-up { }            (min-width: 1200px)
 // @media @desktop-only { }          (min-width: 1200px) and (max-width: 1799px)"
-// @media @big-desktop-up { }        (min-width: 1800px) 
+// @media @big-desktop-up { }        (min-width: 1800px)
 
 body {
     width: 100%;
-    height: auto;   
+    height: auto;
     position: relative;
     .uw-footer {
         margin-top: 0
@@ -39,7 +39,7 @@ body {
       display: none;
     }
     div.bothell-footer {
-        position: absolute; 
+        // position: absolute;
         bottom: 0;
         width: 100%;
         nav ul.footer-links li a {
@@ -63,7 +63,7 @@ p {
     @media(max-width:768px) {
         line-height: 1.5;
         font-size: 16px;
-    } 
+    }
     .giving-widget & {
         color: #696969;
     }
@@ -123,7 +123,7 @@ p {
         display: block;
         font-weight: 900;
     }
-    @media @phone-only { 
+    @media @phone-only {
         font-size: 18px;
         padding: 15px 0;
         margin: 10% 0;
@@ -131,13 +131,13 @@ p {
             display: none;
         }
     }
-    @media @tablet-portrait-up { 
+    @media @tablet-portrait-up {
         padding: 4% 0;
         margin: 10% 0;
         font-size: 2.2vw;
         line-height: 1.5;
     }
-    @media @desktop-up {  
+    @media @desktop-up {
         font-size: 1.6vw;
     }
 }
@@ -201,7 +201,7 @@ p {
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58d400', endColorstr='#1c7400',GradientType=0 ); /* IE6-9 */
         }
     }
-}            
+}
 
 
 
@@ -210,7 +210,7 @@ p {
   0% {      opacity: 0 }
   50% {     opacity: 1}
   100% {    opacity: 0 }
-} 
+}
 
 
 
@@ -321,7 +321,7 @@ p {
                 // padding: 0 28% 0 20px;
             }
         }
-    }    
+    }
 
     @media(min-width:768px) {
         background-image: url("@{bothell}/game-intro-II.jpg"), url("@{bothell}/game-intro-blur.jpg");
@@ -422,8 +422,8 @@ p {
     left: 0;
     top: 50%;
     height: 0;
-    @media @tablet-portrait-up { 
-        .ghost {    
+    @media @tablet-portrait-up {
+        .ghost {
             position: absolute;
             width: 60px;
             height: 85px;
@@ -459,35 +459,35 @@ p {
               transform: rotateY(-180deg);
               -webkit-transform: rotateY(-180deg);
             }
-            &:hover .back   { 
-                transform: -webkit-rotateY(0deg);   
-                transform: rotateY(0deg);   
+            &:hover .back   {
+                transform: -webkit-rotateY(0deg);
+                transform: rotateY(0deg);
             }
-            &:hover .front  { 
-                transform: -webkit-rotateY(180deg); 
-                transform: rotateY(180deg); 
+            &:hover .front  {
+                transform: -webkit-rotateY(180deg);
+                transform: rotateY(180deg);
             }
-            .front  { 
-                background-image: url("@{bothell}/ghost-2.png"); 
+            .front  {
+                background-image: url("@{bothell}/ghost-2.png");
                 &.red {
-                    background-image: url("@{bothell}/ghost-1-red.png"); 
+                    background-image: url("@{bothell}/ghost-1-red.png");
                     opacity: .4;
                 }
                 &.green {
-                    background-image: url("@{bothell}/ghost-1-green.png"); 
+                    background-image: url("@{bothell}/ghost-1-green.png");
                     opacity: .4;
                 }
                 &.franken {
-                    background-image: url("@{bothell}/ghost-1-franken.png"); 
+                    background-image: url("@{bothell}/ghost-1-franken.png");
                     opacity: .4;
                 }
                 &.monster {
-                    background-image: url("@{bothell}/ghost-1-monster.png"); 
+                    background-image: url("@{bothell}/ghost-1-monster.png");
                     opacity: .5;
                 }
             }
-            .back   { 
-                background-image: url("@{bothell}/ghost-1.png"); 
+            .back   {
+                background-image: url("@{bothell}/ghost-1.png");
             }
             &.g-1 { left: -10vw; top:  -21vh   ; .animation(swing 7s infinite ease-in-out .1s); }
             &.g-2 { left: -3vw;  top:  -58vh   ; .animation(swing 7s infinite ease-in-out .4s); }
@@ -497,7 +497,7 @@ p {
             &.g-6 { right: -10vw;top:  38vh   ;  .animation(swing 7s infinite ease-in-out .2s); }
             &.g-7 { right: -10vw;top:  -43vh  ;  .animation(swing 7s infinite ease-in-out .4s); }
             &.g-8 { right: -1vw; top:  6vh    ;  .animation(swing 7s infinite ease-in-out 1s); }
-        }    
+        }
     }
 }
 
@@ -520,13 +520,13 @@ p {
         bottom: 0;
         background-repeat: no-repeat;
     }
-    #faces { 
+    #faces {
         text-align: center;
     }
     @keyframes windmill {
       0% {      .rotate(0deg) }
       100% {    .rotate(360deg); }
-    }     
+    }
     #windmill {
         position: absolute;
         bottom: 100px;
@@ -539,7 +539,7 @@ p {
             .animation(windmill 6s infinite linear);
         }
     }
-  
+
     .copy {
         background-color: transparent;
         position: relative;
@@ -721,12 +721,12 @@ p {
             font-size: 20px;
         }
         p:last-child {
-            
+
         }
     }
-    @media @phone-only { 
+    @media @phone-only {
     }
-    @media @tablet-portrait-up { 
+    @media @tablet-portrait-up {
         .frame {
             width: 110px;
             height: 110px;
@@ -738,7 +738,7 @@ p {
             }
         }
     }
-    @media @desktop-up {  
+    @media @desktop-up {
         // margin: 10% 0 5%;
         .frame {
             width: 150px;
@@ -763,7 +763,7 @@ p {
                 .rotate(0deg);
                 top: 27px;
                 left: -70px;
-                margin-left: 0; 
+                margin-left: 0;
             }
             p:first-child {
             }
@@ -952,7 +952,7 @@ p {
             font-size: 55px;
             text-align: left;
         }
-        p {            
+        p {
             padding-right: 50%;
             text-align: left;
         }
@@ -996,7 +996,7 @@ p {
     }
 
     #cloud-1,
-    #cloud-2 { 
+    #cloud-2 {
         position: absolute;
         width: 30vw;
         height: 25vw;
@@ -1109,7 +1109,7 @@ p {
             padding: 60px 30px 60px;
         }
         #cloud-1,
-        #cloud-2 { 
+        #cloud-2 {
             width: 50vw;
             height: 40vw;
         }
@@ -1250,7 +1250,7 @@ p {
                 .transition(all .2s linear .1s);
                 z-index: 1;
                 pointer-events: none;
-    
+
                 &:before {
                     content: '\201C';
                     font-family: @font-family-base;
@@ -1304,7 +1304,7 @@ p {
             }
         }
     }
-    @media @phone-only { 
+    @media @phone-only {
         padding-left: 5%;
         padding-right: 5%;
         .team {
@@ -1324,7 +1324,7 @@ p {
             li {
                 max-width: 23%;
             }
-        }       
+        }
     }
     @media @desktop-up{ // (min-width: 1200px)
         padding-left: 0;
@@ -1364,7 +1364,7 @@ p {
                 }
             }
         }
-    } 
+    }
 }
 
 #creating {
@@ -1390,7 +1390,7 @@ p {
         background-color: transparent;
         position: relative;
     }
-    
+
     .dates {
         padding: 0;
         h3 {
@@ -1398,7 +1398,7 @@ p {
             font-size: 33px;
         }
         li {
-            list-style: none;  
+            list-style: none;
             font-weight: 900;
             color: white;
             span {
@@ -1511,25 +1511,25 @@ p {
                 }
             }
         }
-    }     
-    @media @tablet-portait-only { // (min-width: 600px) and (max-width: 899px) 
+    }
+    @media @tablet-portait-only { // (min-width: 600px) and (max-width: 899px)
         padding-bottom: 130px;
         .calloutBox {
             h2 {
                 font-size: 34px;
             }
         }
-    }   
+    }
     @media @tablet-landscape-up { }   // (min-width: 900px)
-    @media @tablet-landscape-only { } // (min-width: 900px) and (max-width: 1199px) 
+    @media @tablet-landscape-only { } // (min-width: 900px) and (max-width: 1199px)
     @media @desktop-up { }            // (min-width: 1200px)
     @media @desktop-only { }          // (min-width: 1200px) and (max-width: 1799px)
-    @media @big-desktop-up { }        // (min-width: 1800px) 
+    @media @big-desktop-up { }        // (min-width: 1800px)
 
 }
 
 
-// Tool tip 
+// Tool tip
 
 
 [data-tooltip] {
@@ -1732,7 +1732,7 @@ span.title {
         }
 
     }
-    @media @desktop-up { 
+    @media @desktop-up {
         width: 120%;
         margin: 10% -10%;
         .side-pic {
@@ -1749,7 +1749,7 @@ span.title {
                     z-index: 100;
                 }
             }
-        }        
+        }
     }
     @media @phone-only {
         .side-pic {
