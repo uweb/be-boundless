@@ -16,7 +16,7 @@
     <div id="vid-overlay"></div>
     <button id="pause">Pause</button>
     <video autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/HEADER.jpg' ?>" class="fullscreen-bg__video" id="full-bg-video">
-      <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/comotion/COMO_HEADER_TL_V4.mp4' ?>" type="video/mp4">
+      <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/comotion/HEADER_TL_V5.mp4' ?>" type="video/mp4">
     </video>
     <div class="intro-body">
       <div class="row">

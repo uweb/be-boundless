@@ -101,7 +101,7 @@ html {
     top: 0;
     bottom: 0;
     width: 100%;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.2);
   }
   #pause {
     position: absolute;
@@ -190,7 +190,11 @@ html {
 
     @media @phone-only {
       .background-cover(cover);
-      background-position: right center;
+      background-position: right top;
+
+      #vid-overlay {
+        //background: rgba(0,0,0,0.2);
+      }
 
       .intro-body {
         position: absolute;
