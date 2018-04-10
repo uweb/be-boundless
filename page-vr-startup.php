@@ -225,7 +225,7 @@
         <div class="row">
           <div class="col-md-10 col-md-offset-1 copy">
             <h2>Expanding impact: CoMotion and CoMotion Labs</h2>
-            <p><b><a href="https://comotion.uw.edu/">CoMotion</a></b> seeks to expand the economic and social impact of the UW community by fostering innovation transfer, which helps researchers make the leap from idea to impact; creating strategic partnerships, such as the <a href="https://gix.uw.edu/">Global Innovation Exchange</a> and <a href="https://catalyst.amazon.com/uw/">Amazon Catalyst</a> and encouraging innovative thinking through workshops, trainings and events for the UW and our broader community.
+            <p><b><a href="https://comotion.uw.edu/">CoMotion</a></b> seeks to expand the economic and social impact of the UW community by fostering innovation transfer, which helps researchers make the leap from idea to impact; creating strategic partnerships, such as the <a href="https://gix.uw.edu/">Global Innovation Exchange</a> and <a href="https://catalyst.amazon.com/uw/">Amazon Catalyst</a>; and encouraging innovative thinking through workshops, trainings and events for the UW and our broader community.
 
             <p>With three locations on the UW campus in Seattle, as well as a virtual lab in Spokane, CoMotion provides startups with learning programs, mentoring, networking and space. It also helps connect innovators with resources in a variety of industries, including engineering, IT, life sciences, medical devices, clean tech, blockchain, artificial intelligence, and augmented and virtual reality.</p>
 
