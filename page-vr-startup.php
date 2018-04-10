@@ -82,7 +82,7 @@
               <p class="caption no-cap">A scene from “Ch’aak’ S’aagi”</p>
             </div>
 
-            <p>Electric Dream Factory’s first VR short did just that. “Ch’aak’ S’aagi” (“Eagle Bone”), directed by Native American filmmaker and actress Tracy Rector, combines Pacific Northwest scenery, traditional Tlingit dance and a freestyle spoken-word meditation on the modern indigenous experience. Soon after, the studio produced “Potato Dreams,” a VR documentary about writer and director Wes Hurley’s struggles while growing up gay in the Soviet Union. Both films use their virtual environment to forge a deeper connection between viewer and subject, and Electric Dream Factory plans to create many more.</p>
+            <p>Electric Dream Factory’s first VR short did just that. “Ch’aak’ S’aagi” (“Eagle Bone”), directed by Native American filmmaker Tracy Rector, combines Pacific Northwest scenery, traditional Tlingit dance and a freestyle spoken-word meditation on the modern indigenous experience. Soon after, the studio co-produced “Potato Dreams,” a VR documentary about writer and director Wes Hurley’s struggles while growing up gay in the Soviet Union. Both films use their virtual environment to forge a deeper connection between viewer and subject, and Electric Dream Factory plans to create many more.</p>
 
           </div><!-- .col-md-10 .col-md-offset-1 .copy -->
         </div><!-- .row -->
@@ -165,7 +165,7 @@
             <h2>Incubating the future</h2>
             <p>Behind the scenes, Electric Dream Factory productions are supported by resources and guidance from the UW’s CoMotion Labs, which helps companies navigate the startup world.</p>
 
-            <p>Across the room from Electric Dream Factory’s desks is a virtual reality space, sponsored by Booz Allen, that gives innovators the opportunity to test their projects using cutting-edge technology. Workshops and learning opportunities are a constant presence, too. “The classes in startup fundamentals have been amazing,” says Leavitt.</p> 
+            <p>Across the room from Electric Dream Factory’s desks is a virtual reality space, sponsored by Booz Allen Hamilton, that gives innovators the opportunity to test their projects using cutting-edge technology. Workshops and learning opportunities are a constant presence, too. “The classes in startup fundamentals have been amazing,” says Leavitt.</p> 
 
             <div class="float-image right">
               <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/comotion/comotion_workspaces.jpg" alt="">
@@ -225,13 +225,15 @@
         <div class="row">
           <div class="col-md-10 col-md-offset-1 copy">
             <h2>Expanding impact: CoMotion and CoMotion Labs</h2>
-            <p><b><a href="https://comotion.uw.edu/">CoMotion</a></b> seeks to expand the economic and social impact of the UW community by fostering innovation transfer, which helps researchers make the leap from idea to impact; creating strategic partnerships, such as the <a href="https://gix.uw.edu/">Global Innovation Exchange</a> and <a href="https://catalyst.amazon.com/uw/">Amazon Catalyst</a>; and encouraging innovative thinking through workshops, trainings and events for the UW and our broader community.
+            <p><b><a href="https://comotion.uw.edu/">CoMotion</a></b> seeks to expand the economic and social impact of the UW community by fostering innovation transfer, which helps researchers make the leap from idea to impact; creating strategic partnerships, such as the <a href="https://gix.uw.edu/">Global Innovation Exchange</a> and <a href="https://catalyst.amazon.com/uw/">Amazon Catalyst</a> and encouraging innovative thinking through workshops, trainings and events for the UW and our broader community.
 
-            <p>Faculty and student research cultivates groundbreaking ideas at the University of Washington. But without financial support, there’s a gap between research and real-world output. Helping researchers cross this gap is the CoMotion Innovation Fund, explains Vikram Jandhyala, executive director of CoMotion and vice president for innovation strategy at the UW.
+            <p>With three locations on the UW campus in Seattle, as well as a virtual lab in Spokane, CoMotion provides startups with learning programs, mentoring, networking and space. It also helps connect innovators with resources in a variety of industries, including engineering, IT, life sciences, medical devices, clean tech, blockchain, artificial intelligence, and augmented and virtual reality.</p>
 
-            <p>“These are robust ideas that have benefited from years of research but need guidance and focused resources to make people’s lives better,” he says. “It’s a critical path for the future success of these breakthroughs.”<p>
+            <p>Faculty and student research cultivates groundbreaking ideas at the University of Washington. But without financial support, there’s a gap between research and real-world output. Helping researchers cross this gap is the CoMotion Innovation Fund, explains Vikram Jandhyala, executive director of CoMotion and vice president for innovation strategy at the UW.</p>
 
-            <p><b><a href="https://comotion.uw.edu/what-we-do/comotion-labs/home/">CoMotion Labs</a></b> — a self-sustaining, membership-supported program of CoMotion — is a multi-industry startup incubator that hosts more than 90 companies inside and outside the UW community. With three locations on the UW campus in Seattle, as well as a virtual lab in Spokane, CoMotion Labs provides startups with learning programs, mentoring, networking and space. It also helps connect innovators with resources in a variety of industries, including engineering, IT, life sciences, medical devices, clean tech, blockchain, artificial intelligence, and augmented and virtual reality.</p>
+            <p>“These are robust ideas that have benefited from years of research but need guidance and focused resources to make people’s lives better,” he says. “It’s a critical path for the future success of these breakthroughs.”</p>
+
+            <p><b><a href="https://comotion.uw.edu/what-we-do/comotion-labs/home/">CoMotion Labs</a></b> — a self-sustaining, membership-supported program of CoMotion — is a multi-industry startup incubator that hosts more than 90 companies inside and outside the UW community.</p>
           </div><!-- .col-md-10 .col-md-offset-1 .copy -->
         </div><!-- .row -->
       </div><!-- .container -->
