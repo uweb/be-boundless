@@ -779,7 +779,8 @@ img.slide2 {
 }
 .slideplay .icon {
   position: absolute;
-  top: 50%;
+  width: 60%;
+  top: 25%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   text-align: center;
@@ -796,7 +797,7 @@ img.slide2 {
     display: block;
     font-family: "Encode Sans Normal",sans-serif;
     font-weight: 900;
-    color: #FFFFFF;
+    color: @purple;
     text-transform: uppercase;
     margin-top: 0;
     opacity: 0.9;
@@ -838,7 +839,7 @@ img.slide2 {
   // .transition(opacity .2s ease-in-out); 
     content: "";
     position: absolute;
-    background: url(../../immersive-stories/img/sprite.svg) no-repeat -79px -330px rgba(0,0,0,0);
+    background: url(../../immersive-stories/img/sprite.svg) no-repeat -79px -504px rgba(0,0,0,0);
     width: 101px;
     height: 95px;
     bottom: -3px;
@@ -849,7 +850,7 @@ img.slide2 {
 .slideplay .icon a:before {
     content: "";
     position: absolute;
-    background: url(../../immersive-stories/img/sprite.svg) no-repeat 9px -295px rgba(0,0,0,0);
+    background: url(../../immersive-stories/img/sprite.svg) no-repeat 9px -463px rgba(0,0,0,0);
     width: 52px;
     height: 145px;
     bottom: -31px;
@@ -1024,7 +1025,20 @@ img.slide2 {
     width: 90%;
     a.click {
       font-size: 16px;
+      &:before {
+        height: 100px;
+        bottom: -26px;
+      }
+      &:after {
+        bottom: -26px;
+      }
     }
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 769px){
+  .slideplay .icon {
+    width: 80%;
   }
 }
 
