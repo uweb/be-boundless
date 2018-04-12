@@ -199,14 +199,14 @@ if(isMobile){ $('#immersive-body').addClass("no-hover"); }
           if(isMobile) {
             $('.fader .icon').hide();
             $('button.close-video').hide();
-          	videoPlay("du-9QA8xbMA", 'slideplay1');
+          	videoPlay("VQ-Wl0ij6NI", 'slideplay1');
             // $('#slideplay2').addClass('post-scene');
             // videoPlay("du-9QA8xbMA", 'slideplay2');
           	
           } else {
           	$("#slideplay1").on("click", function(){
           	    //$(this).find(".fader").toggleClass("show");
-          	    videoPlay("du-9QA8xbMA", 'slideplay1');
+          	    videoPlay("VQ-Wl0ij6NI", 'slideplay1');
           	    //videoPlay("https://www.youtube.com/embed/du-9QA8xbMA?autoplay=1&rel=0&amp;showinfo=0&amp", '#slideplay2');
           	});
           }
