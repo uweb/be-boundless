@@ -40,7 +40,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-md-offset-1 copy">
-            <p>In many respects, CoMotion Labs @ HQ looks like you’d expect a startup incubator to look. Glass-walled conference rooms with idea maps sketched on whiteboards. Entrepreneurs in T-shirts with futuristic company names hanging above their desks: BiNomial. PixelFyzz. WiBiotic.</p>
+            <p>In many respects, CoMotion Labs @ HQ looks like you’d expect a startup incubator to look. Glass-walled conference rooms with idea maps sketched on whiteboards. Entrepreneurs in T-shirts with futuristic company names hanging above their desks: BiNomial. PixelFyzz. WiBotic.</p>
 
             <p>But then you see a woman with what looks like a black brick strapped over her eyes: a virtual reality headset. Depending on the startup she works for, she could be exploring a virtual shopping experience, an architectural rendering of the inside of a building, or a rotating model of a human heart that will be used to educate patients.</p>
 
