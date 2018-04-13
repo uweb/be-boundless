@@ -233,7 +233,7 @@
 
             <p>“These are robust ideas that have benefited from years of research but need guidance and focused resources to make people’s lives better,” he says. “It’s a critical path for the future success of these breakthroughs.”</p>
 
-            <p><b><a href="https://comotion.uw.edu/what-we-do/comotion-labs/home/">CoMotion Labs</a></b> — a self-sustaining, membership-supported program of CoMotion — is a multi-industry startup incubator that hosts more than 90 companies inside and outside the UW community.</p>
+            <p><b><a href="https://comotion.uw.edu/what-we-do/comotion-labs/home/">CoMotion Labs</a></b> — a self-sustaining, membership-supported program of CoMotion — is a multi-industry startup incubator that hosts more than 90 companies inside and outside the UW community. One of many UW programs exploring the possibilities of XR technology, CoMotion Labs complements and supports innovative ventures across the University and beyond.</p>
           </div><!-- .col-md-10 .col-md-offset-1 .copy -->
         </div><!-- .row -->
       </div><!-- .container -->
