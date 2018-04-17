@@ -44,7 +44,7 @@
 
             <p>But then you see a woman with what looks like a black brick strapped over her eyes: a virtual reality headset. Depending on the startup she works for, she could be exploring a virtual shopping experience, an architectural rendering of the inside of a building, or a rotating model of a human heart that will be used to educate patients.</p>
 
-            <p>She may even be watching a 360-degree film created by <a href="http://www.electricdreamfactory.com/">Electric Dream Factory</a>, a content studio that works with diverse creatives to tell stories through <span data-tooltip><span><span class="close">X</span><b>Virtual reality:</b> 360-degree video and/or computer-generated simulations that immerse users in a different world. Examples of VR hardware range from Google Cardboard<sup>&trade;</sup> to Oculus Rift headsets.</span>virtual</span>, <span data-tooltip><span><span class="close">X</span><b>Augmented reality:</b> Technology that overlays digital information onto the real world in real time.</span>augmented</span> and <span data-tooltip><span><span class="close">X</span><b>Mixed reality:</b> Like AR, MR combines digital information with the real world. The two terms are often used interchangeably, but a key distinction is that MR allows the physical and digital worlds to interact in real time — so virtual objects are treated as if they are actually present.</span>mixed reality</span>.</p>
+            <p>She may even be watching a 360-degree film created by <a href="http://www.electricdreamfactory.com/">Electric Dream Factory</a>, a content studio that works with diverse creatives to tell stories through <span style="white-space: nowrap;"><span data-tooltip><span><span class="close">X</span><b>Virtual reality:</b> 360-degree video and/or computer-generated simulations that immerse users in a different world. Examples of VR hardware range from Google Cardboard<sup>&trade;</sup> to Oculus Rift headsets.</span>virtual</span>,</span> <span data-tooltip><span><span class="close">X</span><b>Augmented reality:</b> Technology that overlays digital information onto the real world in real time.</span>augmented</span> and <span data-tooltip><span><span class="close">X</span><b>Mixed reality:</b> Like AR, MR combines digital information with the real world. The two terms are often used interchangeably, but a key distinction is that MR allows the physical and digital worlds to interact in real time — so virtual objects are treated as if they are actually present.</span>mixed reality</span>.</p>
 
             <p>Founded by producer Lacey Leavitt, ’03, and editor Joe Jacobs, Electric Dream Factory moved into this workspace in 2016. Since then, they’ve created several virtual reality films — and as they harness the power of technology to help storytellers from different backgrounds make an impact on audiences, they’re benefiting from a startup incubator that shares their philosophy of <span data-tooltip><span><span class="close">X</span><b>Inclusive innovation:</b> The philosophy that including people from all backgrounds strengthens innovation and changes lives for the better. Creating a space and opportunity for this cross-pollination of ideas is core to the UW’s Innovation Imperative — an integrated approach that will drive positive change in our state and beyond.</span>inclusive innovation</span>.</p>
 
@@ -112,7 +112,7 @@
                         <!-- [stereoscope image] -->
                         <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/STEREOSCOPE.png' ?>">
                       </div>
-                      <div class="item-desc col-md-6 col-sm-8 col-xs-10 col-sm-offset-0 col-xs-offset-1"> 
+                      <div class="item-desc col-md-6 col-sm-8 col-xs-10 col-sm-offset-0 col-xs-offset-1">
                         <h3>Late 19th century</h3>
                         <span>Stereoscope</span>
                         <p>In 1838, British physicist Sir Charles Wheatstone publishes a paper explaining how the mind combines images from each eye to create depth perception. He coins it the “stereoscope,” and by the mid-19th century it has been adapted for handheld use and gained significant popularity.</p>
@@ -165,7 +165,7 @@
             <h2>Incubating the future</h2>
             <p>Behind the scenes, Electric Dream Factory productions are supported by resources and guidance from the UW’s CoMotion Labs, which helps companies navigate the startup world.</p>
 
-            <p>Across the room from Electric Dream Factory’s desks is a virtual reality space, sponsored by Booz Allen Hamilton, that gives innovators the opportunity to test their projects using cutting-edge technology. Workshops and learning opportunities are a constant presence, too. “The classes in startup fundamentals have been amazing,” says Leavitt.</p> 
+            <p>Across the room from Electric Dream Factory’s desks is a virtual reality space, sponsored by Booz Allen Hamilton, that gives innovators the opportunity to test their projects using cutting-edge technology. Workshops and learning opportunities are a constant presence, too. “The classes in startup fundamentals have been amazing,” says Leavitt.</p>
 
             <div class="float-image right">
               <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/comotion/comotion_workspaces.jpg" alt="">
@@ -177,7 +177,7 @@
             <p>The net effect of these resources? Startups can pour more energy into what they do best: building and creating. For Leavitt and Jacobs, that means more time spent shaping the virtual landscape — and helping others tell their stories in original, immersive ways.</p>
 
             <h2>Empowering diverse storytellers</h2>
-            <p>In the spirit of inclusive innovation, Electric Dream Factory is developing a program that aims to support diverse storytelling through equipment access, training and mentorship opportunities, and project funding.</p> 
+            <p>In the spirit of inclusive innovation, Electric Dream Factory is developing a program that aims to support diverse storytelling through equipment access, training and mentorship opportunities, and project funding.</p>
             <div class="float-image right">
               <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/comotion/comotion_photo_inset.jpg" alt="">
               <p class="caption no-cap">On the set of “Dom,” a VR documentary directed by Netsanet Tjirongo and produced by Electric Dream Factory</p>
@@ -185,7 +185,7 @@
 
             <p>“Especially now, as we’re part of pioneering what XR filmmaking is, you want people from a variety of backgrounds and experiences to come to the table,” says Leavitt.</p>
 
-            <p>On the horizon for Electric Dream Factory are films by artists who explore topics as wide-ranging as black female sexuality, the importance of support in the LGBTQ community, and economic disparity.</p> 
+            <p>On the horizon for Electric Dream Factory are films by artists who explore topics as wide-ranging as black female sexuality, the importance of support in the LGBTQ community, and economic disparity.</p>
 
             <p>“I think XR is going to be a very big part of our future,” says Leavitt, whose experience as a woman filmmaker in New York still powers her mindset. “It’s important for anyone who has any modicum of power to think about how we can make our industry inclusive.”</p>
 
