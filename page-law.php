@@ -2,8 +2,8 @@
     $meta = '';
     $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/law.css' type='text/css' media='all' />";
     $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/law.min.js' type='text/javascript'></script>";
-    $storyCodes = '';
-    $storyAppeal = '';
+    $storyCodes = 'INDLAW,LFUNRS,LAWGEN'; 
+    $storyAppeal = 'By contributing to the Native American Law Center Fund, Excellence in Law Fund, or the Law Student Scholarship Fund, you can help students gain hands-on legal experience as part of their studies at the UW School of Law.';
     get_header("campaign-v2");
 ?>
 
@@ -153,6 +153,66 @@
           </div>
         </div>
       </div>
+
+      <div class="item-3 item">
+        <div class="img"></div>
+        <div class="caption">
+          <div class="group">
+            <h4 class="headline">Header 1-3</h4>
+            <div class="inner">
+              <div class="more">
+                <svg id="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.98 4.46">
+                  <defs><style>.icon-line{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs>
+                  <title>Vector Smart Object1</title>
+                  <path class="icon-line" d="M.86,2.75c.43.55,1.68,2,3.17,2s2.77-1.44,3.18-2A4.44,4.44,0,0,0,4,.77C2.5.77,1.28,2.2.86,2.75Z" transform="translate(-0.55 -0.52)"/>
+                  <path class="icon-line" d="M4,3.94A1.19,1.19,0,1,1,5.23,2.75,1.19,1.19,0,0,1,4,3.94Z" transform="translate(-0.55 -0.52)"/></svg>
+                <span class="text">Read More</span>
+              </div>
+              <p class="description">Sed vel arcu aliquam, dictum arcu efficitur, dignissim urna. Pellentesque at metus tortor. Nulla aliquam nisl in velit efficitur ornare. In congue quis nisl et porta. Duis tincidunt fermentum enim eget aliquam. Praesent ullamcorper velit ut mi mattis vulputate. Nam imperdiet sit amet nunc eu congue. Donec commodo aliquam convallis</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item-4 item">
+        <div class="img"></div>
+        <div class="caption">
+          <div class="group">
+            <h4 class="headline">Header 1-4</h4>
+            <div class="inner">
+              <div class="more">
+                <svg id="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.98 4.46">
+                  <defs><style>.icon-line{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs>
+                  <title>Vector Smart Object1</title>
+                  <path class="icon-line" d="M.86,2.75c.43.55,1.68,2,3.17,2s2.77-1.44,3.18-2A4.44,4.44,0,0,0,4,.77C2.5.77,1.28,2.2.86,2.75Z" transform="translate(-0.55 -0.52)"/>
+                  <path class="icon-line" d="M4,3.94A1.19,1.19,0,1,1,5.23,2.75,1.19,1.19,0,0,1,4,3.94Z" transform="translate(-0.55 -0.52)"/></svg>
+                <span class="text">Read More</span>
+              </div>
+              <p class="description">Sed vel arcu aliquam, dictum arcu efficitur, dignissim urna. Pellentesque at metus tortor. Nulla aliquam nisl in velit efficitur ornare. In congue quis nisl et porta. Duis tincidunt fermentum enim eget aliquam. Praesent ullamcorper velit ut mi mattis vulputate. Nam imperdiet sit amet nunc eu congue. Donec commodo aliquam convallis</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item-5 item">
+        <div class="img"></div>
+        <div class="caption">
+          <div class="group">
+            <h4 class="headline">Header 1-5</h4>
+            <div class="inner">
+              <div class="more">
+                <svg id="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.98 4.46">
+                  <defs><style>.icon-line{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs>
+                  <title>Vector Smart Object1</title>
+                  <path class="icon-line" d="M.86,2.75c.43.55,1.68,2,3.17,2s2.77-1.44,3.18-2A4.44,4.44,0,0,0,4,.77C2.5.77,1.28,2.2.86,2.75Z" transform="translate(-0.55 -0.52)"/>
+                  <path class="icon-line" d="M4,3.94A1.19,1.19,0,1,1,5.23,2.75,1.19,1.19,0,0,1,4,3.94Z" transform="translate(-0.55 -0.52)"/></svg>
+                <span class="text">Read More</span>
+              </div>
+              <p class="description">Sed vel arcu aliquam, dictum arcu efficitur, dignissim urna. Pellentesque at metus tortor. Nulla aliquam nisl in velit efficitur ornare. In congue quis nisl et porta. Duis tincidunt fermentum enim eget aliquam. Praesent ullamcorper velit ut mi mattis vulputate. Nam imperdiet sit amet nunc eu congue. Donec commodo aliquam convallis</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section><!-- #section-profiles -->
 
     <section id="text-content-profiles" class="text-content container">
@@ -284,7 +344,7 @@
 					<h1><img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/law/lushootseed.svg" alt=""></h1>
           <h2>What you care about can change the world</h2>
           <p>The University of Washington is undertaking the most ambitious campaign in our history: Be Boundless — For Washington, For the World. By contributing to the Experiential Education Fund, you can help students gain hands-on legal experience as part of their studies at the UW School of Law.</p>
-					<div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="ESIEND" href="#giving-widget-promoted">Give now</a></span></div>
+					<div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="<?php echo $storyCodes; ?>" href="#giving-widget-promoted">Give now</a></span></div>
 				</div>
 			</div>
 		</section>

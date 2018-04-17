@@ -199,7 +199,7 @@ $(function () {
    * Animation: Profiles
    ***************************/
 
-  var controllerProfiles = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: '0', duration: "200%"}});
+  var controllerProfiles = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: '0', duration: "500%"}});
 
   var profilesTween = new TimelineMax()
     .fromTo("#section-profiles .item-1 .group", 0.25, {alpha:0}, {alpha:1})
@@ -216,6 +216,30 @@ $(function () {
       {transform: 'translateY(-50vh)'}, "-=0.25"
     )
     .to("#section-profiles .item-2 .group", 0.25, {alpha:0}, "-=0.25")
+    .to("#section-profiles .item-2", 0.25, {autoAlpha:0})
+    // third slide
+    .fromTo("#section-profiles .item-3 .group", 0.25, {alpha:0}, {alpha:1})
+    .fromTo("#section-profiles .item-3 .group", 0.75,
+      {transform: 'translateY(50vh)'},
+      {transform: 'translateY(-50vh)'}, "-=0.25"
+    )
+    .to("#section-profiles .item-3 .group", 0.25, {alpha:0}, "-=0.25")
+    .to("#section-profiles .item-3", 0.25, {autoAlpha:0})
+    //fourth slide
+    .fromTo("#section-profiles .item-4 .group", 0.25, {alpha:0}, {alpha:1})
+    .fromTo("#section-profiles .item-4 .group", 0.75,
+      {transform: 'translateY(50vh)'},
+      {transform: 'translateY(-50vh)'}, "-=0.25"
+    )
+    .to("#section-profiles .item-4 .group", 0.25, {alpha:0}, "-=0.25")
+    .to("#section-profiles .item-4", 0.25, {autoAlpha:0})
+    //fifth slide
+    .fromTo("#section-profiles .item-5 .group", 0.25, {alpha:0}, {alpha:1})
+    .fromTo("#section-profiles .item-5 .group", 0.75,
+      {transform: 'translateY(50vh)'},
+      {transform: 'translateY(-50vh)'}, "-=0.25"
+    )
+    .to("#section-profiles .item-5 .group", 0.25, {alpha:0}, "-=0.25")
   new ScrollMagic.Scene({triggerElement: "#section-profiles"})
     .setPin("#section-profiles")
     .setTween(profilesTween)
