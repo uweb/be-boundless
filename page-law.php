@@ -2,7 +2,7 @@
     $meta = '';
     $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/law.css' type='text/css' media='all' />";
     $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/law.min.js' type='text/javascript'></script>";
-    $storyCodes = 'INDLAW,LFUNRS,LAWGEN'; 
+    $storyCodes = 'INDLAW,LFUNRS,LAWGEN';
     $storyAppeal = 'By contributing to the Native American Law Center Fund, Excellence in Law Fund, or the Law Student Scholarship Fund, you can help students gain hands-on legal experience as part of their studies at the UW School of Law.';
     get_header("campaign-v2");
 ?>
@@ -338,16 +338,22 @@
       </div>
     </section>
 
-		<section id="section-end">
+		<section id="section-end" class="text-block giving-widget arrow branded">
 			<div class="inner">
 				<div class="col-xs-8 col-xs-offset-2">
 					<h1><img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/law/lushootseed.svg" alt=""></h1>
           <h2>What you care about can change the world</h2>
           <p>The University of Washington is undertaking the most ambitious campaign in our history: Be Boundless — For Washington, For the World. By contributing to the Experiential Education Fund, you can help students gain hands-on legal experience as part of their studies at the UW School of Law.</p>
-					<div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="<?php echo $storyCodes; ?>" href="#giving-widget-promoted">Give now</a></span></div>
+					<div class="visible-md-block visible-lg-block">
+            <div id="immersive-give-iframe"></div>
+            <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="<?php echo $storyCodes; ?>" href="#">Give now</a></span></div>
+            </div><!-- .visible-md-block .visible-lg-block -->
+          <div class="visible-xs-block visible-sm-block">
+            <div class="boundless-button sm dark give"><span><a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=3&source=<?php echo $storyCodes; ?>">Give now</a></span></div>
 				</div>
 			</div>
 		</section>
+
 
 	</main><!-- #main_content -->
 	<div id="popup"></div>
