@@ -670,6 +670,7 @@
 
    <hr style="max-width: 720px">
    <p style="text-align: center;"><small>Photos courtesy James Harnois, MadArt Seattle, Amie McNeel, Sam Stubblefield, Collin Bampton, Tzyy Yi (Amy) Young.</small></p>
+   <p style="text-align: center;"><small><em>Originally published November 2016</em></small></p>
 
 
 

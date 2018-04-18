@@ -480,7 +480,12 @@
                     </div>
 
 
-               </div> 
+               </div>
+               <div class="row">
+                  <div class="col-md-10 col-md-offset-1 copy">
+                    <p><em>Originally published December 2016</em></p>
+                  </div>
+                </div>
             </div> 
           </div>   
           <div id="swamp"></div>

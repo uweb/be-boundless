@@ -227,6 +227,8 @@
                   
                   <p>“Giving enables students to focus on being their best and brightest research selves,” says Wething. “I don’t have to worry about making ends meet. I can just be fully immersed in this process.”</p>
 
+                  <p><em>Originally published February 2017</em></p>
+
                 </div> 
           </div> 
         </div>   

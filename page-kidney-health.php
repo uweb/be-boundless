@@ -209,6 +209,7 @@
 						<p>For the researchers involved, kidney-on-a-chip might very well bring about changes in their lifetime, a rarity for big medical breakthroughs. This trailblazing science is made possible in large part by donors who support the Pharmaceutics Fund for Excellence, which invests in startup research projects like kidney-on-a-chip.</p>
 						<p>A mission to improve the lives of people around the world — and the solar system — is shared across the UW as part of the <a href="http://www.washington.edu/populationhealth">Population Health Initiative</a>. By leveraging capabilities and opportunities on campus and beyond, researchers will have the tools to create healthier and more fulfilling lives for all.</p>
 						<p>“As a pharmacist, I’m very satisfied to be able to show people what we’re doing and where their research dollars are going,” says Yeung. “With kidney-on-a-chip, we have an actual chance to impact the lives of patients.”</p>
+						<p><em>Originally published October 2017</em></p>
 						<div class="giving-widget">
 							<h2>What you care about can change the world</h2>
 							<p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. Support groundbreaking research and the future of health care by contributing to the School of Pharmacy.</p>

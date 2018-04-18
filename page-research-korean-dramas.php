@@ -340,6 +340,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<p style="margin-top: 15px;">Title image: Opening sequence for the K-drama “Reply 1997”</p>
+						<p><em>Originally published February 2018</em></p>
 					</div>
 				</div>
 			</div>

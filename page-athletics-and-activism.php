@@ -261,7 +261,7 @@
 <p>“I want to use this experience to immerse myself and learn all I can about black history globally,” says McElvaine, the first Husky student-athlete to be awarded the prestigious fellowship. “I want to answer questions like, ‘Is my experience here as a black woman specific to America? Is it specific to me? Is it a universal experience? How do black women around the world think about race and equity and how those things interact with gender and activism and social justice?’”</p>
 <p>Then she hopes to bring what she’s learned back home.  </p>
 <p>“I’m most excited to see how other people are finding ways to build community and connect with each other, in spite of all the challenges happening around the world. Whatever work I go into, whether that’s in athletics or some other sphere, I’m excited to inspire change and fight for social justice.” </p>
-
+<p><em>Originally published September 2017</em></p>
 
                       </div>                 
                       <div class="col-md-5 col-md-offset-1">

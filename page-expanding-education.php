@@ -254,6 +254,8 @@
                  
                  <p>“Kids are capable regardless of their socioeconomic status, but there’s so much about the professional workplace in poverty-impacted communities that makes it hard for teachers,” she says. “Investing in school leadership and professional development can make that change happen.”</p>
 
+                 <p><em>Originally published October 2016</em></p>
+
 
                 </div> 
           </div> 

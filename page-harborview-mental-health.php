@@ -185,6 +185,7 @@
 						<p>Now 50, Lovejoy has a smile that lights up the room and a lively, self-aware sense of humor. In addition to having a job she loves, she recently married her wife, Robie, and she has reconciled with her mother and her children. Lovejoy is in therapy, and she meditates; lithium helps, too. There are still bad days, but DBT has given her the tools to cope.</p>
 						<p>As Lovejoy says, recovery is not a straight upward line &mdash; there are hills and valleys, stops and starts. This is a truth that patients need to hear, especially when they’re having a hard time.</p>
 						<p>“You can get back to that high point again,” she tells them. “It’s a zigzag. It’s a journey. And it’s hard and joyous.”</p>
+						<p><em>Originally published November 2017</em></p>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 					<hr>
 				</div><!-- .row -->

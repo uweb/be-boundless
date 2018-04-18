@@ -254,6 +254,10 @@
                           </div> 
                     </div> 
                   </div>   
+                  <div style="margin-top:15px;text-align:center;">
+                    <p><em>Originally published October 2017</em></p>
+                  </div>
+
                 </section>
 
 

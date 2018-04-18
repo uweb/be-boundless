@@ -357,6 +357,7 @@
                   <p>Students also stand to benefit from taking part in such cutting-edge opportunities with training that equips them to provide quality care to patients who rely increasingly on technology.</p>
                   
                   <p>“We have these incredible technologies that, when put together, can help us better understand our daily lives and needs,” says Demiris. “I believe that technology can empower more people, especially older adults and their families, to become actively involved in their own health care.”</p>
+                  <p><em>Originally published May 2017</em></p>
 
                 </div> 
           </div> 

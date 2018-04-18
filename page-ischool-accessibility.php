@@ -296,6 +296,15 @@
 
         </div>
       </section>
+      <section class="text-block white">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1 copy">
+              <p><em>Originally published April 2017</em></p>
+            </div>
+          </div>
+        </div>
+      </section>
   </div>
 
 

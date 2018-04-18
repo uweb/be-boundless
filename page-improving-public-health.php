@@ -538,6 +538,8 @@
                 </p>
     
                 <p class="gold-quote headline-gold purple smaller">Health is a human right. The UW and the School of Public Health are working toward equity, and I think that’s pretty unique to the culture here. <b>– Arianna Means</b></p>
+
+                <p><em>Originally published February 2017</em></p>
           </div>
         </div> 
       </div>

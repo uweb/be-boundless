@@ -462,6 +462,9 @@
 			<li><a href="#tyler" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-tyler.jpg' ?>"></a></li>
 			<li><a href="#veronica" class="scrollPic"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/scholarship/scroll-veronica.jpg' ?>"></a></li>
 		</ul>
+		<div style="margin-top:15px;text-align:center;">
+			<p><em>Originally published October 2017</em></p>
+		</div>
 		<?php /*<section class="text-block giving-widget">
 			<div class="container">
 				<div class="row">

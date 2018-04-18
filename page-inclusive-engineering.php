@@ -267,7 +267,7 @@
 
 <p>“Eventually, the device could go away because the individual has regained function,” says Moritz. “The individuals, like Jayna, who might one day benefit from what the CSNE is developing are just a wonderful, inspiring, rewarding group of people to work with. This is the kind of research that makes being at the UW so special.” </p>
 
-
+<p><em>Originally published October 2016</em></p>
 
 
 <div id="eng-slideshow" class="engineering-slideshow">

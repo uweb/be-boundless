@@ -340,6 +340,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<p style="margin-top: 15px;">처음배경화면이미지: 한국드라마“응답하라 1997” 시작장면</p>
+						<p><em>Originally published February 2018</em></p>
 					</div>
 				</div>
 			</div>

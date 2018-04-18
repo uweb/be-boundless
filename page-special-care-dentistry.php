@@ -168,10 +168,13 @@
     </div> 
   </div>   
 </section>
-
- 
-
-
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 copy">
+      <p style="margin-top:15px;"><em>Originally published January 2017</em></p>
+    </div>
+  </div>
+</div>
 
   <?php /*<section class="text-block giving-widget">
       <div class="container">

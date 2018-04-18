@@ -302,6 +302,16 @@
              </div> 
            </section>
 
+      <section class="text-block white transparent">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 copy">
+                  <p><em>Originally published June 2017</em></p>
+                </div> 
+          </div> 
+        </div>   
+      </section>
+
 
 
 
