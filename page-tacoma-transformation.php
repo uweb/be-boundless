@@ -362,11 +362,6 @@ Sometimes I feel like the whole ‘jobs of the future’ thing is kind of a joke
 
         </div>
       </div>
-      <!-- DATE: -->
-      <div style="margin-top:15px;text-align:center;">
-        <p><em>Originally published October 2017</em></p>
-      </div>
-
     </section>
 
 </div>
@@ -403,6 +398,11 @@ Sometimes I feel like the whole ‘jobs of the future’ thing is kind of a joke
 
 
 </div>
+      <!-- DATE: -->
+      <div style="margin-top:15px;text-align:center;">
+        <p><em>Originally published October 2016</em></p>
+      </div>
+
 <?php
 	include(locate_template('include-giving.php'));
 	get_template_part('footer','campaign-v2');
