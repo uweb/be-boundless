@@ -400,7 +400,7 @@ Sometimes I feel like the whole ‘jobs of the future’ thing is kind of a joke
 </div>
       <!-- DATE: -->
       <div style="margin-top:15px;text-align:center;">
-        <p><em>Originally published October 2016</em></p>
+        <p><em>Originally published January 2017</em></p>
       </div>
 
 <?php
