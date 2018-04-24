@@ -60,6 +60,7 @@ module.exports = function(grunt) {
           'immersive-stories/js/libraries.js',
           'immersive-stories/js/homepage-plus.js',
           'immersive-stories/js/comotion.js',
+          'immersive-stories/js/puerto-rico.js',
           'campaign/js/main.js',
           'immersive-stories/js/education-map.js',
           'https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js',
@@ -232,7 +233,6 @@ module.exports = function(grunt) {
               'immersive-stories/js/lity.js',
               'immersive-stories/js/slick.js',
               'immersive-stories/js/libraries.js',
-              // 'immersive-stories/js/objectFitPolyfill.basic.js',
               'immersive-stories/js/libraries/animsition.min.js',
           ],
           'immersive-stories/js/homepage-plus.min.js': [
@@ -245,6 +245,14 @@ module.exports = function(grunt) {
             'immersive-stories/js/common.js',
             'immersive-stories/js/lity.js',
             'immersive-stories/js/comotion.js',
+          ],
+          'immersive-stories/js/puerto-rico.min.js': [
+            'immersive-stories/js/common.js',
+            'immersive-stories/js/lity.js',
+            'immersive-stories/js/puerto-rico.js',
+            'immersive-stories/js/libraries/animsition.min.js',
+            'immersive-stories/js/libraries/jquery.event.move.js',
+            'immersive-stories/js/libraries/jquery.twentytwenty.js',
           ],
           'campaign/js/main.min.js': [
             'campaign/js/main.js',
@@ -321,6 +329,7 @@ module.exports = function(grunt) {
                 'immersive-stories/css/libraries.css': 'immersive-stories/less/libraries.less',
                 'immersive-stories/css/homepage-plus.css': 'immersive-stories/less/homepage-plus.less',
                 'immersive-stories/css/comotion.css': 'immersive-stories/less/comotion.less',
+                'immersive-stories/css/puerto-rico.css': 'immersive-stories/less/puerto-rico.less',
                 'campaign/css/campaign-style.css': 'campaign/**/*.less',
                 'campaign/css/header.css': 'campaign/less/header.less',
                 'campaign/css/campaignv2-style.css': 'campaign/less/campaignv2-style.less',

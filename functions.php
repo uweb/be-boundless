@@ -17,7 +17,7 @@ require 'setup/class.campaign-functions.php';
 
 function twitter_card($photo, $title, $descrpition) {
 	$meta = '';
-	if ($title) { 
+	if ($title) {
 		$meta .= '<meta property="og:title" content="' . $title . '"/>' . PHP_EOL . "\t\t";
 		$meta .= '<meta property="og:description" content="' . $descrpition . '"/>' . PHP_EOL . "\t\t";
 		$meta .= '<meta property="og:image" content="' . $photo . '"/>' . PHP_EOL;
@@ -28,7 +28,7 @@ function twitter_card($photo, $title, $descrpition) {
 
 add_filter( 'body_class', 'custom_class' );
 function custom_class( $classes ) {
-    if ( is_page( 'research-korean-dramas' ) || is_page('research-korean-dramas-kr') ) {
+    if ( is_page( 'research-korean-dramas' ) || is_page('research-korean-dramas-kr') || is_page('puerto-rico') || is_page('puerto-rico-sp') ) {
         $classes[] = 'animsition';
     }
     return $classes;
