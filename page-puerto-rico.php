@@ -140,9 +140,8 @@
               <ul id="people">
                   <li class="pax-1 navy" tabindex="0">
                       <div class="hider">
-                          <h2>Madeline Hille, ‘18 (left)<br />and Wylee Cleverley, ‘17</h2>
+                          <h2>Madeline Hille, ‘18 (left)</h2>
                           <p><span>Home state: </span>Washington (Madeline)</p>
-                          <p><span>Home state: </span>Washington (Wylee)</p>
                       </div>
                   </li>
                   <li class="pax-2 airforce" tabindex="0">
