@@ -251,8 +251,6 @@ module.exports = function(grunt) {
             'immersive-stories/js/lity.js',
             'immersive-stories/js/puerto-rico.js',
             'immersive-stories/js/libraries/animsition.min.js',
-            'immersive-stories/js/libraries/jquery.event.move.js',
-            'immersive-stories/js/libraries/jquery.twentytwenty.js',
           ],
           'campaign/js/main.min.js': [
             'campaign/js/main.js',

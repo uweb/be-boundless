@@ -192,7 +192,7 @@
           </div><!-- .col-md-10 .col-md-offset-1 .copy -->
         </div><!-- .row -->
       </div><!-- .container -->
-    </section><!-- .text-block .start .white -->
+  </section><!-- .text-block .start .white -->
 
 <!-- 360 YOUTUBE VIDEO #1 56.25-->
     <section id="slideplay1" class="slideplay frame">
