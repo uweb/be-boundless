@@ -21,8 +21,8 @@
     <section class="intro" id="intro-vid">
         <div id="vid-overlay"></div>
         <button id="pause">Pause</button>
-        <video autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/header-preview.jpg' ?>" class="fullscreen-bg__video" id="full-bg-video">
-            <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/ess/header2.mp4' ?>" type="video/mp4">
+        <video autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/header.jpg' ?>" class="fullscreen-bg__video" id="full-bg-video">
+            <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/puerto-rico/header.mp4' ?>" type="video/mp4">
             </video>
             <div class="intro-body">
                 <div class="row">
@@ -122,9 +122,9 @@
             <section id="slideplay1" class="slideplay frame">
                 <div class="fader show">
                     <div class="icon">
-                        <a role="button" class="click" href="#">Click and drag to experience video in 360 degrees</a>
+                        <a role="button" class="click" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan nisi eget nulla pharetra suscipit. Curabitur id mi rhoncus, molestie orci sed, commodo eros. Maecenas vitae mollis est</a>
                     </div>
-                    <img alt="Fabric" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/comotion/VIDEO1.jpg' ?>" />
+                    <img alt="Fabric" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/puerto-rico/video.jpg' ?>" />
                 </div>
                 <div class="boundless-video"></div>
             </section>
