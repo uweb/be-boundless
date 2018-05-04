@@ -4,7 +4,7 @@
         $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/" . $slug . ".css' type='text/css' media='all' />";
         $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/" . $slug . ".min.js' type='text/javascript'></script>";
         $storyCodes = 'PRERFD';
-        $storyAppeal = 'PLACEHOLDER TEXT - PLEASE REPLACE';
+        $storyAppeal = 'Support Lilo Pozzo’s research team in their efforts to improve community health by contributing to the Puerto Rico Energy Recovery Fund.';
         get_header("campaign-v2");
 ?>
 
@@ -223,7 +223,7 @@
                         </li>
                         <li class="pax-2 airforce" tabindex="0">
                             <div class="hider">
-                                <h2>Chanaka Keerthisinghe, ‘XX</h2>
+                                <h2>Chanaka Keerthisinghe</h2>
                                 <p><span>Home town: </span>CITY</p>
                             </div>
                         </li>
@@ -235,7 +235,7 @@
                         </li>
                         <li class="pax-4 navy" tabindex="0">
                             <div class="hider">
-                                <h2>Marvi Matos, ‘XX</h2>
+                                <h2>Marvi Matos</h2>
                                 <p><span>Home town: </span>CITY</p>
                             </div>
                         </li>
@@ -247,7 +247,7 @@
                         </li>
                         <li class="pax-6 army" tabindex="0">
                             <div class="hider">
-                                <h2>Lilo Pozzo, ‘XX</h2>
+                                <h2>Lilo Pozzo</h2>
                                 <p><span>Home town: </span>CITY</p>
                             </div>
                         </li>
@@ -261,7 +261,7 @@
 
                         <li class="pax-8 navy" tabindex="0">
                             <div class="hider">
-                                <h2>Michael Chapko, ‘XX</h2>
+                                <h2>Michael Chapko</h2>
                                 <p><span>Home town: </span>CITY</p>
                             </div>
                         </li>
