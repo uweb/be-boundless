@@ -10,6 +10,7 @@
 @import "../../immersive-stories/less/lity.less";
 @import "./button-mute.less";
 @import "../../immersive-stories/css/libraries/animsition.min.css";
+@import "../../immersive-stories/less/slideshow.less";
 
 @comotion: "../../immersive-stories/img/comotion";
 @pr: "../../immersive-stories/img/puerto-rico";
@@ -1032,15 +1033,30 @@ div.hidden-part {
  * Giving Widget *
  *****************/
 
- .text-block.giving-widget.branded {
-        background-image: url("@{pr}/footer.jpg");
-        .background-size(cover);
-        background-position: center bottom;
-        background-repeat: no-repeat;
-        margin-top: 0;
- }
-        .arrow:after {
-            display: none !important;
-        }
+.text-block.giving-widget.branded {
+    background-image: url("@{pr}/footer.jpg");
+    .background-size(cover);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    margin-top: 0;
+}
+.arrow:after {
+    display: none !important;
+}
 
 
+/****************
+ * slick slider *
+ ****************/
+
+.slideshow-container {
+    float: right;
+    width: 50%;
+    margin: 20px 30px;
+    .slick-slider {
+        margin: 0;
+    }
+    .slick-dots {
+        bottom: inherit;
+    }
+}

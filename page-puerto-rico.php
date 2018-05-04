@@ -70,23 +70,47 @@
             <!-- GETTING TO THE HEART OF THE DAMAGE -->
             <section class="text-block start white small-top">
                 <div class="container">
-                  <div class="row">
-                    <div class="col-md-10 col-md-offset-1 copy">
-                      <h2>Getting to the heart of the damage</h2>
-                      <p>Ahumada, Tatum, Raj and Pontes are part of a team of UW engineers and public health scientists who are assessing the long-term impact of Puerto Rico’s power loss on the health of rural residents.</p>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1 copy">
+                            <h2>Getting to the heart of the damage</h2>
+                            <p>Ahumada, Tatum, Raj and Pontes are part of a team of UW engineers and public health scientists who are assessing the long-term impact of Puerto Rico’s power loss on the health of rural residents.</p>
 
-                      <p>Over four days in late March 2018, the researchers crisscrossed this 39-square-mile region on single-lane switchbacks, some of which have narrowed sharply since Hurricane Maria struck the U.S. territory last September. Jayuya is home to the highest peaks in Puerto Rico — and 17,000 people.</p>
+                            <p>Over four days in late March 2018, the researchers crisscrossed this 39-square-mile region on single-lane switchbacks, some of which have narrowed sharply since Hurricane Maria struck the U.S. territory last September. Jayuya is home to the highest peaks in Puerto Rico — and 17,000 people.</p>
+                            <div class="slideshow-container">
+                                <div id="eng-slideshow" class="foster-slideshow">
+                                    <div>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_1.jpg' ?>" alt="ALT TEXT HERE">
+                                        <p>CAPTION GOES HERE</p>
+                                    </div>
 
-                      <p>The team visited homes and community centers, interviewing dozens of caregivers and residents who use electronic medical devices, as part of a long-term field study on the impact of power loss on public health. They also donated and installed 17 solar/battery nanogrid systems —  prototypes of a sustainable, clean energy infrastructure that can buoy public health in rural areas when power grids fail.</p>
+                                    <div>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_2.jpg' ?>" alt="ALT TEXT HERE">
+                                        <p>CAPTION GOES HERE</p>
+                                    </div>
 
-                      <p>Their work is supported by the UW’s Clean Energy Institute and the Global Innovation Fund, and it aligns with the Population Health Initiative, a University-wide effort to eliminate health disparities around the world. Like many natural disasters, Hurricane Maria had a disproportionate effect on those with the fewest resources: low- and fixed-income families, the elderly, the sick and rural residents in places like Jayuya.</p>
+                                    <div>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_3.jpg' ?>" alt="ALT TEXT HERE">
+                                        <p>CAPTION GOES HERE</p>
+                                    </div>
 
-                      <p>Thousands have remained disconnected from the electrical grid since Maria sliced through. The UW team hopes that the storm’s lessons will help engineers develop better microgrids — like the prototypes they’ve installed — for an infrastructure that meets the needs of the most vulnerable communities.</p>
+                                    <div>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_4.jpg' ?>" alt="ALT TEXT HERE">
+                                        <p>CAPTION GOES HERE</p>
+                                    </div>
 
-                      <p>As the team has learned in their two trips here, the current infrastructure’s shortcomings have left deeper scars than downed utility poles and darkened homes.</p>
+                                </div>
+                            </div>
 
-                    </div><!-- .col-md-10 .col-md-offset-1 .copy -->
-                  </div><!-- .row -->
+                            <p>The team visited homes and community centers, interviewing dozens of caregivers and residents who use electronic medical devices, as part of a long-term field study on the impact of power loss on public health. They also donated and installed 17 solar/battery nanogrid systems —  prototypes of a sustainable, clean energy infrastructure that can buoy public health in rural areas when power grids fail.</p>
+
+                            <p>Their work is supported by the UW’s Clean Energy Institute and the Global Innovation Fund, and it aligns with the Population Health Initiative, a University-wide effort to eliminate health disparities around the world. Like many natural disasters, Hurricane Maria had a disproportionate effect on those with the fewest resources: low- and fixed-income families, the elderly, the sick and rural residents in places like Jayuya.</p>
+
+                            <p>Thousands have remained disconnected from the electrical grid since Maria sliced through. The UW team hopes that the storm’s lessons will help engineers develop better microgrids — like the prototypes they’ve installed — for an infrastructure that meets the needs of the most vulnerable communities.</p>
+
+                            <p>As the team has learned in their two trips here, the current infrastructure’s shortcomings have left deeper scars than downed utility poles and darkened homes.</p>
+
+                        </div><!-- .col-md-10 .col-md-offset-1 .copy -->
+                    </div><!-- .row -->
                 </div><!-- .container -->
             </section><!-- .text-block .start .white -->
 
@@ -103,6 +127,32 @@
                             <p>Blue FEMA tarps are still common, but many overt signs of storm damage have been repaired: People have cleared debris, replaced windows and patched roofs. But the UW researchers have documented myriad “hidden” adjustments that residents have made since losing power. These include eating canned and preserved food, despite the lower nutritional value, or making daily trips to a doctor’s office for refrigerated medicine.</p>
 
                             <p>“You adapt because you have to,” says Pozzo. “But you never achieve the normal life you had back when you had power.”</p>
+
+                            <div class="slideshow-container">
+                                <div id="eng-slideshow" class="foster-slideshow2">
+                                    <div>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_1.jpg' ?>" alt="ALT TEXT HERE">
+                                        <p>CAPTION GOES HERE</p>
+                                    </div>
+
+                                    <div>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_2.jpg' ?>" alt="ALT TEXT HERE">
+                                        <p>CAPTION GOES HERE</p>
+                                    </div>
+
+                                    <div>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_3.jpg' ?>" alt="ALT TEXT HERE">
+                                        <p>CAPTION GOES HERE</p>
+                                    </div>
+
+                                    <div>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_4.jpg' ?>" alt="ALT TEXT HERE">
+                                        <p>CAPTION GOES HERE</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
 
                             <p>Pozzo chose Jayuya for this study because her spouse, Marvi Matos, a chemical engineer, grew up there. Like many with family ties to Puerto Rico, the couple sent supplies to the island after the hurricane. But a month after Maria, barely 20 percent of the electricity grid had been restored.</p>
 

@@ -249,6 +249,7 @@ module.exports = function(grunt) {
           'immersive-stories/js/puerto-rico.min.js': [
             'immersive-stories/js/common.js',
             'immersive-stories/js/lity.js',
+            'immersive-stories/js/slick.js',
             'immersive-stories/js/puerto-rico.js',
             'immersive-stories/js/libraries/animsition.min.js',
           ],

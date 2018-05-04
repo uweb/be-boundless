@@ -65,6 +65,26 @@ var scrollIntro = new ScrollMagic.Scene({
  .addTo(controllerComo);
 
 
+ $('.foster-slideshow').slick({
+   lazyLoad: 'ondemand',
+   useTransform: true,
+   dots: true,
+   infinite: false,
+   speed: 300,
+   slidesToShow: 1,
+   slidesToScroll: 1,
+ });
+
+  $('.foster-slideshow2').slick({
+   lazyLoad: 'ondemand',
+   useTransform: true,
+   dots: true,
+   infinite: false,
+   speed: 300,
+   slidesToShow: 1,
+   slidesToScroll: 1,
+ });
+
 
     /***************************
      * Animation: VR Expansion
@@ -87,101 +107,70 @@ var scrollIntro = new ScrollMagic.Scene({
     //Make expand button jump a little when reaching section?
 
     /***************************
-     * Animation: Callouts
-     ***************************/
-
-     //animate in callout sides
-     var calloutLeft = $('#main_content .callout.left'),
-     calloutRight = $('#main_content .callout.right');
-
-     var tweenBodyLeft = new TimelineMax()
-     .from(calloutLeft, 0.5, { alpha: 0, overwrite: false })
-     .from(calloutLeft, 0.6, { x: '-=200px', overwrite: false, immediateRender: false }, 0);
-
-     var tweenBodyRight = new TimelineMax()
-     .from(calloutRight, 0.5, { alpha: 0, overwrite: false })
-     .from(calloutRight, 0.6, { x: '+=200px', overwrite: false, immediateRender: false }, 0);
-
-     var sceneBodyLeft = new ScrollMagic.Scene({
-        triggerElement: '#main_content .callout.left',
-        offset: -200
-     })
-     .setTween(tweenBodyLeft)
-     .addTo(controllerComo);
-
-     var sceneBodyRight = new ScrollMagic.Scene({
-        triggerElement: '#main_content .callout.right',
-        offset: -200
-     })
-     .setTween(tweenBodyRight)
-     .addTo(controllerComo);
-
-
-    /***************************
      * Animation: Videos       *
      ***************************/
-     var tag = document.createElement('script');
+//      var tag = document.createElement('script');
 
-     tag.src = "https://www.youtube.com/iframe_api";
-     var firstScriptTag = document.getElementsByTagName('script')[0];
-     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-
-     function videoPlay(vid, location){
-        var videoSrc = vid,
-        $video = $('#' + location),
-        $body = $("body"),
-        boundlessVideo = $video.find('.boundless-video')[0];
-        videoHTML =
-        '<button class="close-video"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>' +
-        '<div id="' + location + '-youtube-video">' +
-            '</div>';
-            videoHTMLMobile =
-            '<button class="close-video"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>' +
-            '<div id="' + location + '-youtube-video">' +
-            '<iframe title="YouTube video" id="embedVid" width=' + $video.width() + ' height=' + $video.height() + ' src="https://www.youtube.com/embed/' + videoSrc + '?autoplay=0&rel=0&amp;showinfo=0&amp" frameborder="0" allowfullscreen autoplay></iframe>' +
-            '</div>';
+//      tag.src = "https://www.youtube.com/iframe_api";
+//      var firstScriptTag = document.getElementsByTagName('script')[0];
+//      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 
-            if (isMobile) {
-                boundlessVideo.innerHTML = videoHTMLMobile;
-                $(".play").click(function(e){
-                    e.preventDefault();
-                });
-            } else {
-                boundlessVideo.innerHTML = videoHTML;
-                setTimeout( function(){
-                    $('#' + location + ' iframe')[0].focus()
-                }, 500 );
-            new YT.Player(location + '-youtube-video', {
-                height: $video.height(),
-                width: $video.width(),
-                videoId: videoSrc,
-                playerVars: { 'autoplay': 1, 'rel': 0, 'showinfo': 0 },
-                events: {
-                // 'onReady': onPlayerReady,
-                'onStateChange': function(event) {
-                    if(location == "slideplay1"){
-                        if (event.data == YT.PlayerState.ENDED) {
-                        //scroll to next video
-                        controllerComo.scrollTo(slideplayPin.scrollOffset() + slideplayPin.duration() + 1);
-                    }
-                }
-            }
-        }
-    });
-    //}
+//      function videoPlay(vid, location){
+//         var videoSrc = vid,
+//         $video = $('#' + location),
+//         $body = $("body"),
+//         boundlessVideo = $video.find('.boundless-video')[0];
+//         videoHTML =
+//         '<button class="close-video"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>' +
+//         '<div id="' + location + '-youtube-video">' +
+//             '</div>';
+//             videoHTMLMobile =
+//             '<button class="close-video"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>' +
+//             '<div id="' + location + '-youtube-video">' +
+//             '<iframe title="YouTube video" id="embedVid" width=' + $video.width() + ' height=' + $video.height() + ' src="https://www.youtube.com/embed/' + videoSrc + '?autoplay=0&rel=0&amp;showinfo=0&amp" frameborder="0" allowfullscreen autoplay></iframe>' +
+//             '</div>';
 
-    $(".close-video").click(function(e){
-        e.stopPropagation();
-        $(".play").removeClass("hidden");
-        $body.toggleClass("playing");
-        this.parentElement.innerHTML = '';
-    });
 
-    $body.toggleClass("playing");
-}
-}
+//             if (isMobile) {
+//                 boundlessVideo.innerHTML = videoHTMLMobile;
+//                 $(".play").click(function(e){
+//                     e.preventDefault();
+//                 });
+//             } else {
+//                 boundlessVideo.innerHTML = videoHTML;
+//                 setTimeout( function(){
+//                     $('#' + location + ' iframe')[0].focus()
+//                 }, 500 );
+//             new YT.Player(location + '-youtube-video', {
+//                 height: $video.height(),
+//                 width: $video.width(),
+//                 videoId: videoSrc,
+//                 playerVars: { 'autoplay': 1, 'rel': 0, 'showinfo': 0 },
+//                 events: {
+//                 // 'onReady': onPlayerReady,
+//                 'onStateChange': function(event) {
+//                     if(location == "slideplay1"){
+//                         if (event.data == YT.PlayerState.ENDED) {
+//                         //scroll to next video
+//                         controllerComo.scrollTo(slideplayPin.scrollOffset() + slideplayPin.duration() + 1);
+//                     }
+//                 }
+//             }
+//         }
+//     });
+//     //}
+
+//     $(".close-video").click(function(e){
+//         e.stopPropagation();
+//         $(".play").removeClass("hidden");
+//         $body.toggleClass("playing");
+//         this.parentElement.innerHTML = '';
+//     });
+
+//     $body.toggleClass("playing");
+// }
+// }
 
         //prevent accessibility link from scrolling to top
         $(".click").click(function(e){
