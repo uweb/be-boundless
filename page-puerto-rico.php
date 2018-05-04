@@ -49,7 +49,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy">
-                            <p>The stout house built into a hillside in Jayuya, a rural municipality in the mountains of central Puerto Rico, hasn’t been connected to the electricity grid for six months. Someone inside suffers from sleep apnea, and his family has relied on a noisy generator — and the gas it consumes — to power the machine he needs each night.</p>
+                            <p class="first">The stout house built into a hillside in Jayuya, a rural municipality in the mountains of central Puerto Rico, hasn’t been connected to the electricity grid for six months. Someone inside suffers from sleep apnea, and his family has relied on a noisy generator — and the gas it consumes — to power the machine he needs each night.</p>
 
                             <p>Outside, under the thin smile of a crescent moon, four engineers from the University of Washington complete their work. Soon a new solar/battery nanogrid will power the sleep-aid machine: no gas, no fumes, no cacophony.</p>
 
@@ -64,7 +64,7 @@
 
             <!-- MAP + STORM PATH ANIMATION -->
             <section>
-                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/map.jpg' ?>">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/map.jpg' ?>" class="img-responsive">
             </section>
 
             <!-- GETTING TO THE HEART OF THE DAMAGE -->
@@ -111,26 +111,33 @@
                             <p>“This storm’s lasting impact is that it uncovered the vulnerable places of Jayuya,” says Maria Pérez, a local community organizer. “It showed us the people in our midst who didn’t have help, who were living in inhumane conditions.”</p>
 
                             <blockquote>
-                                You adapt because you have to, but you never achieve the normal life you had back when you had power — Lilo Pozzo
+                                You adapt because you have to, but you never achieve the normal life you had back when you had power <span>— <span class="name">Lilo Pozzo</span></span>
                             </blockquote>
                         </div><!-- .col-md-10 .col-md-offset-1 .copy -->
                     </div><!-- .row -->
                 </div><!-- .container -->
             </section><!-- .text-block .start .white -->
 
-            <!-- VIDEO -->
-            <section id="slideplay1" class="slideplay frame">
-                <div class="fader show">
-                    <div class="icon">
-                        <a role="button" class="click" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan nisi eget nulla pharetra suscipit. Curabitur id mi rhoncus, molestie orci sed, commodo eros. Maecenas vitae mollis est</a>
-                    </div>
-                    <img alt="Fabric" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/puerto-rico/video.jpg' ?>" />
-                </div>
-                <div class="boundless-video"></div>
+            <!-- NEW VIDEO SECTION BASED ON LIBRARIES -->
+            <section id="video">
+                    <a data-lity="" href="https://www.youtube.com/embed/-zYESWG9HxE?autoplay=1&amp;rel=0&amp;showinfo=0" class="center-block play">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="125" height="125" viewBox="0 0 150 150" class="opening-slash">
+                                <circle id="play-cir" fill="none" stroke="#fff" stroke-width="7" stroke-miterlimit="10" cx="75" cy="75" r="55"></circle>
+                                <path id="play-tri" fill="#fff" d="M57.767,46.187L110.382,75l-52.616,28.816"></path>
+                            </svg>
+                            <div>Watch Story</div>
+                        </div>
+                        <div class="video-caption">
+                            <h3>FIRST NAME LAST NAME</h3>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan nisi eget nulla pharetra suscipit. Curabitur id mi rhoncus, molestie orci sed, commodo eros. Maecenas vitae mollis est
+                        </div>
+                    </a>
+                <img alt="Fabric" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/puerto-rico/video.jpg' ?>" />
             </section>
 
             <!-- DEDICATED TO A SUSTAINABLE FUTURE -->
-            <section class="text-block white small-top">
+            <section class="text-block start white small-top">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy">
@@ -160,59 +167,59 @@
                     <ul id="people">
                         <li class="pax-1 navy" tabindex="0">
                             <div class="hider">
-                                <h2>FIRSTNAME LASTNAME, ‘XX</h2>
-                                <p><span>Home town: </span>CITY</p>
+                                <h2>Anya Raj, ‘17</h2>
+                                <p><span>Home town: </span>Manchester, United Kingdom</p>
                             </div>
                         </li>
                         <li class="pax-2 airforce" tabindex="0">
                             <div class="hider">
-                                <h2>FIRSTNAME LASTNAME, ‘XX</h2>
+                                <h2>Chanaka Keerthisinghe, ‘XX</h2>
                                 <p><span>Home town: </span>CITY</p>
                             </div>
                         </li>
                         <li class="pax-3" tabindex="0">
                             <div class="hider">
-                                <h2>FIRSTNAME LASTNAME, ‘XX</h2>
-                                <p><span>Home town: </span>CITY</p>
+                                <h2>Mareldi Ahumada Parás, ‘22</h2>
+                                <p><span>Home town: </span>Mexico City, Mexico</p>
                             </div>
                         </li>
                         <li class="pax-4 navy" tabindex="0">
                             <div class="hider">
-                                <h2>FIRSTNAME LASTNAME, ‘XX</h2>
+                                <h2>Marvi Matos, ‘XX</h2>
                                 <p><span>Home town: </span>CITY</p>
                             </div>
                         </li>
                         <li class="pax-5 army" tabindex="0">
                             <div class="hider">
-                                <h2>FIRSTNAME LASTNAME, ‘XX</h2>
-                                <p><span>Home town: </span>CITY</p>
+                                <h2>Hugo Pontes, ‘20</h2>
+                                <p><span>Home town: </span>Rio de Janeiro, Brazil</p>
                             </div>
                         </li>
                         <li class="pax-6 army" tabindex="0">
                             <div class="hider">
-                                <h2>FIRSTNAME LASTNAME, ‘XX</h2>
+                                <h2>Lilo Pozzo, ‘XX</h2>
                                 <p><span>Home town: </span>CITY</p>
                             </div>
                         </li>
 
                         <li class="pax-7 navy" tabindex="0">
                             <div class="hider">
-                                <h2>FIRSTNAME LASTNAME, ‘XX</h2>
-                                <p><span>Home town: </span>CITY</p>
+                                <h2>Yohan Min, ‘21</h2>
+                                <p><span>Home town: </span>Seoul, South Korea</p>
                             </div>
                         </li>
 
                         <li class="pax-8 navy" tabindex="0">
                             <div class="hider">
-                                <h2>FIRSTNAME LASTNAME, ‘XX</h2>
+                                <h2>Michael Chapko, ‘XX</h2>
                                 <p><span>Home town: </span>CITY</p>
                             </div>
                         </li>
 
                         <li class="pax-9 navy" tabindex="0">
                             <div class="hider">
-                                <h2>FIRSTNAME LASTNAME, ‘XX</h2>
-                                <p><span>Home town: </span>CITY</p>
+                                <h2>Wesley K. Tatum, ‘20</h2>
+                                <p><span>Home town: </span>Vancouver, Washington</p>
                             </div>
                         </li>
                     </ul>
