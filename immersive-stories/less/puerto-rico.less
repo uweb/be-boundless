@@ -835,7 +835,7 @@ div.hidden-part {
 
 
 
-.slideplay.active video, .slideplay.active img{
+/*.slideplay.active video, .slideplay.active img{
         display: block;
 }
 .slideplay{
@@ -981,7 +981,7 @@ div.hidden-part {
         z-index: 1;
     }
 
-}
+}*/
 
 @media (min-width: 768px) {
     [id$="youtube-video"] {
@@ -1059,4 +1059,140 @@ div.hidden-part {
     .slick-dots {
         bottom: inherit;
     }
+}
+
+/*******************************
+* SECTION - PROFILES *
+*******************************/
+    #section-profiles {
+        padding-bottom:100vh; // very specific to what scrollmagic needs
+        .item-1 {
+            z-index:4;
+            .img {
+                background-image: url("@{pr}/community-1.jpg");
+                background-position: center top;
+            }
+        }
+    .item-2 {
+        z-index:3;
+        .img {
+            background-image: url("@{pr}/community-2.jpg");
+            background-position: center top;
+        }
+    }
+}
+
+#section-profiles {
+    position:relative;
+    .item {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100vh;
+        overflow:hidden;
+        &.show-description {
+            .caption {
+                background-color:rgba(0,0,0,0.5);
+                .group {
+                    .more {
+                        opacity:0;
+                    }
+                    .description {
+                        opacity:1;
+                    }
+                }
+            }
+        }
+        .img {
+            position:absolute;
+            z-index:0;
+            width:100%;
+            height:100vh;
+            background-size: cover;
+        }
+        .caption {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            color: white;
+            position:relative;
+            z-index:1;
+            text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+            .group {
+                position:absolute;
+                width:50%;
+                font-size: 20px;
+                font-family: "Encode Sans Thin",sans-serif;
+                font-weight: 300;
+                right: 0;
+                h2 {
+                    font-size: 1em;
+                }
+                .headline {
+                    font-size: 1.5em;
+                    text-transform: uppercase;
+                    margin: 0;
+                    white-space: nowrap;
+                    color: @darkgray;
+                }
+                .inner {
+                    position:relative;
+                }
+                .description {
+                    z-index:0;
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    opacity:0;
+                    color:inherit;
+                    margin: 0;
+                    pointer-events: none;
+                    transition:  all 300ms ease-out;
+                }
+                .more {
+                    position:relative;
+                    z-index:1;
+                    display: inline-block;
+                    /*height: 21px;*/
+                    cursor: pointer;
+                    background-color: @lightgold;
+                    .text,svg#icon-eye {
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    svg#icon-eye {
+                        margin-right: 6px;
+                        width: 32px;
+                        background-color: white;
+                        .icon-line {
+                            stroke: @darkgold;
+                        }
+                    }
+                    .text {
+                        color: white;
+                    }
+                    &:hover {
+                        .text {
+                            color: @darkgold;
+                        }
+                        .icon-line {
+                            stroke: @darkgold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*******************************
+* SECTION - TEXT-CONTENT-PROFILES *
+*******************************/
+
+#text-content-profiles {
+    padding-top:30px;
+    padding-bottom:30px;
 }

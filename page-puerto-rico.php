@@ -49,7 +49,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy">
-                            <p class="first">The stout house built into a hillside in Jayuya, a rural municipality in the mountains of central Puerto Rico, hasn’t been connected to the electricity grid for six months. Someone inside suffers from sleep apnea, and his family has relied on a noisy generator — and the gas it consumes — to power the machine he needs each night.</p>
+                            <p class="first">The stout house built into a hillside in Jayuya, a rural municipality in the mountains of central Puerto Rico, hasn’t been connected to the electricity grid for six months. Someone inside suffers from sleep apnea, and his family has relied on a noisy generator — and the gas it consumes — to power the machine he needs each night.
 
                             <p>Outside, under the thin smile of a crescent moon, four engineers from the University of Washington complete their work. Soon a new solar/battery nanogrid will power the sleep-aid machine: no gas, no fumes, no cacophony.</p>
 
@@ -75,7 +75,7 @@
                             <h2>Getting to the heart of the damage</h2>
                             <p>Ahumada, Tatum, Raj and Pontes are part of a team of UW engineers and public health scientists who are assessing the long-term impact of Puerto Rico’s power loss on the health of rural residents.</p>
 
-                            <p>Over four days in late March 2018, the researchers crisscrossed this 39-square-mile region on single-lane switchbacks, some of which have narrowed sharply since Hurricane Maria struck the U.S. territory last September. Jayuya is home to the highest peaks in Puerto Rico — and 17,000 people.</p>
+                            <p>Over four days in late March 2018, the researchers crisscrossed this 39-square-mile region on single-lane switchbacks, some of which have narrowed sharply since Hurricane Maria struck the U.S. territory last September. Jayuya is home to the highest peaks in Puerto Rico — and 17,000 people. </p>
                             <div class="slideshow-container">
                                 <div id="eng-slideshow" class="foster-slideshow">
                                     <div>
@@ -101,13 +101,15 @@
                                 </div>
                             </div>
 
-                            <p>The team visited homes and community centers, interviewing dozens of caregivers and residents who use electronic medical devices, as part of a long-term field study on the impact of power loss on public health. They also donated and installed 17 solar/battery nanogrid systems —  prototypes of a sustainable, clean energy infrastructure that can buoy public health in rural areas when power grids fail.</p>
+                            <p>The team visited homes and community centers, interviewing dozens of caregivers and residents who use electronic medical devices, as part of a long-term field study on the impact of power loss on public health. They also donated and installed 17 solar/battery nanogrid systems —  prototypes of a sustainable, clean energy infrastructure that can buoy public health in rural areas when power grids fail. </p>
 
-                            <p>Their work is supported by the UW’s Clean Energy Institute and the Global Innovation Fund, and it aligns with the Population Health Initiative, a University-wide effort to eliminate health disparities around the world. Like many natural disasters, Hurricane Maria had a disproportionate effect on those with the fewest resources: low- and fixed-income families, the elderly, the sick and rural residents in places like Jayuya.</p>
+                            <p>Their work is supported by the UW’s <a href="https://www.cei.washington.edu/" target="blank">Clean Energy Institute</a> and the <a href="http://www.washington.edu/globalaffairs/gif/" target="_blank">Global Innovation Fund</a>, and it aligns with the <a href="https://uw.edu/populationhealth/" target="_blank">Population Health Initiative</a>, a University-wide effort to eliminate health disparities around the world. Like many natural disasters, Hurricane Maria had a disproportionate effect on those with the fewest resources: low- and fixed-income families, the elderly, the sick and rural residents in places like Jayuya.</p>
 
-                            <p>Thousands have remained disconnected from the electrical grid since Maria sliced through. The UW team hopes that the storm’s lessons will help engineers develop better microgrids — like the prototypes they’ve installed — for an infrastructure that meets the needs of the most vulnerable communities.</p>
+                            <p>Thousands have remained disconnected from the electrical grid since Maria sliced through. The UW team hopes that the storm’s lessons will help engineers develop better microgrids — like the prototypes they’ve installed — for an infrastructure that meets the needs of the most vulnerable communities. </p>
 
                             <p>As the team has learned in their two trips here, the current infrastructure’s shortcomings have left deeper scars than downed utility poles and darkened homes.</p>
+
+                            <p>“It is invisible suffering,” says Lilo Pozzo, associate professor of chemical engineering, who has led both trips. “You don’t know what the situation is until you go into homes and see exactly how people are getting by.”</p>
 
                         </div><!-- .col-md-10 .col-md-offset-1 .copy -->
                     </div><!-- .row -->
@@ -115,8 +117,51 @@
             </section><!-- .text-block .start .white -->
 
             <!-- COMMUNITY MEMEBER PHOTOS W/ SCROLL -->
-            <section>
-            </section>
+            <section id="section-profiles">
+                <div class="item-1 item">
+                    <div class="img"></div>
+                        <div class="caption">
+                            <div class="group">
+                                <h2>Juyuya Community /</h2>
+                                <h3 class="headline">FIRSTNAME LASTNAME</h3>
+                                <div class="inner">
+                                    <div class="more">
+                                        <svg id="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.98 4.46">
+                                            <defs><style>.icon-line{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs>
+                                            <title>Vector Smart Object1</title>
+                                            <path class="icon-line" d="M.86,2.75c.43.55,1.68,2,3.17,2s2.77-1.44,3.18-2A4.44,4.44,0,0,0,4,.77C2.5.77,1.28,2.2.86,2.75Z" transform="translate(-0.55 -0.52)"/>
+                                            <path class="icon-line" d="M4,3.94A1.19,1.19,0,1,1,5.23,2.75,1.19,1.19,0,0,1,4,3.94Z" transform="translate(-0.55 -0.52)"/>
+                                        </svg>
+                                          <span class="text">Read More</span>
+                                      </div>
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et nunc sit amet quam tristique luctus. Nunc et felis erat. Cras luctus sem in enim varius tempus. Aliquam erat volutpat. Nullam in magna a mauris cursus sodales et faucibus odio. Maecenas non velit vitae neque luctus convallis. Suspendisse vel enim ut nisi egestas consequat. Phasellus a augue at turpis lacinia semper sed non quam.</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="item-2 item">
+                    <div class="img"></div>
+                    <div class="caption">
+                        <div class="group">
+                            <h2>Juyuya Community /</h2>
+                            <h3 class="headline">FIRSTNAME LASTNAME</h3>
+                            <div class="inner">
+                                <div class="more">
+                                      <span class="text">Read More</span>
+                                      <svg id="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.98 4.46">
+                                          <defs><style>.icon-line{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs>
+                                          <title>Vector Smart Object1</title>
+                                          <path class="icon-line" d="M.86,2.75c.43.55,1.68,2,3.17,2s2.77-1.44,3.18-2A4.44,4.44,0,0,0,4,.77C2.5.77,1.28,2.2.86,2.75Z" transform="translate(-0.55 -0.52)"/>
+                                          <path class="icon-line" d="M4,3.94A1.19,1.19,0,1,1,5.23,2.75,1.19,1.19,0,0,1,4,3.94Z" transform="translate(-0.55 -0.52)"/>
+                                      </svg>
+                                  </div>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et nunc sit amet quam tristique luctus. Nunc et felis erat. Cras luctus sem in enim varius tempus. Aliquam erat volutpat. Nullam in magna a mauris cursus sodales et faucibus odio. Maecenas non velit vitae neque luctus convallis. Suspendisse vel enim ut nisi egestas consequat. Phasellus a augue at turpis lacinia semper sed non quam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- #section-profiles -->
 
             <!-- EXPOSING THE BLUE -->
             <section class="text-block white small-top">

@@ -104,73 +104,6 @@ var scrollIntro = new ScrollMagic.Scene({
         }, 500);
     });
 
-    //Make expand button jump a little when reaching section?
-
-    /***************************
-     * Animation: Videos       *
-     ***************************/
-//      var tag = document.createElement('script');
-
-//      tag.src = "https://www.youtube.com/iframe_api";
-//      var firstScriptTag = document.getElementsByTagName('script')[0];
-//      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-
-//      function videoPlay(vid, location){
-//         var videoSrc = vid,
-//         $video = $('#' + location),
-//         $body = $("body"),
-//         boundlessVideo = $video.find('.boundless-video')[0];
-//         videoHTML =
-//         '<button class="close-video"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>' +
-//         '<div id="' + location + '-youtube-video">' +
-//             '</div>';
-//             videoHTMLMobile =
-//             '<button class="close-video"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>' +
-//             '<div id="' + location + '-youtube-video">' +
-//             '<iframe title="YouTube video" id="embedVid" width=' + $video.width() + ' height=' + $video.height() + ' src="https://www.youtube.com/embed/' + videoSrc + '?autoplay=0&rel=0&amp;showinfo=0&amp" frameborder="0" allowfullscreen autoplay></iframe>' +
-//             '</div>';
-
-
-//             if (isMobile) {
-//                 boundlessVideo.innerHTML = videoHTMLMobile;
-//                 $(".play").click(function(e){
-//                     e.preventDefault();
-//                 });
-//             } else {
-//                 boundlessVideo.innerHTML = videoHTML;
-//                 setTimeout( function(){
-//                     $('#' + location + ' iframe')[0].focus()
-//                 }, 500 );
-//             new YT.Player(location + '-youtube-video', {
-//                 height: $video.height(),
-//                 width: $video.width(),
-//                 videoId: videoSrc,
-//                 playerVars: { 'autoplay': 1, 'rel': 0, 'showinfo': 0 },
-//                 events: {
-//                 // 'onReady': onPlayerReady,
-//                 'onStateChange': function(event) {
-//                     if(location == "slideplay1"){
-//                         if (event.data == YT.PlayerState.ENDED) {
-//                         //scroll to next video
-//                         controllerComo.scrollTo(slideplayPin.scrollOffset() + slideplayPin.duration() + 1);
-//                     }
-//                 }
-//             }
-//         }
-//     });
-//     //}
-
-//     $(".close-video").click(function(e){
-//         e.stopPropagation();
-//         $(".play").removeClass("hidden");
-//         $body.toggleClass("playing");
-//         this.parentElement.innerHTML = '';
-//     });
-
-//     $body.toggleClass("playing");
-// }
-// }
 
         //prevent accessibility link from scrolling to top
         $(".click").click(function(e){
@@ -207,16 +140,52 @@ var scrollIntro = new ScrollMagic.Scene({
 
 
 
+  // show / hide description text in profiles and photos sections
+  var $moreBtns = $('#section-profiles .item, #section-photos .item')
+
+  $moreBtns.click(function (e) {
+    e.preventDefault();
+    $(this)
+      .closest('.item')
+      .toggleClass('show-description');
+  });
+
     /***************************
-     *   Tooltip for mobile    *
-     ***************************/
-     if (isMobile) {
+   * Animation: Profiles
+   ***************************/
 
-    $('[data-tooltip]').on('click', function(e){
-        var tooltip = $(this);
-        tooltip.toggleClass('on-hover');
-    })
+  var controllerProfiles = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: '0', duration: "200%"}});
 
+  var profilesTween = new TimelineMax()
+    .fromTo("#section-profiles .item-1 .group", 0.25, {alpha:0}, {alpha:1})
+    .fromTo("#section-profiles .item-1 .group", 0.75,
+      {transform: 'translateY(50vh)'},
+      {transform: 'translateY(-50vh)'}, "-=0.25"
+    )
+    .to("#section-profiles .item-1 .group", 0.25, {alpha:0}, "-=0.25")
+    .to("#section-profiles .item-1", 0.25, {autoAlpha:0})
+    // second slide
+    .fromTo("#section-profiles .item-2 .group", 0.25, {alpha:0}, {alpha:1})
+    .fromTo("#section-profiles .item-2 .group", 0.75,
+      {transform: 'translateY(50vh)'},
+      {transform: 'translateY(-50vh)'}, "-=0.25"
+    )
+    .to("#section-profiles .item-2 .group", 0.25, {alpha:0}, "-=0.25")
+    // .to("#section-profiles .item-2", 0.25, {autoAlpha:0})
+  new ScrollMagic.Scene({triggerElement: "#section-profiles"})
+    .setPin("#section-profiles")
+    .setTween(profilesTween)
+    //.addIndicators({name: "pin profiles"})
+    .addTo(controllerProfiles);
 
-}
+  $(window)
+    .resize(function () {
+      sceneIntro.update(true);
+      sceneMap.update(true);
+      sceneBodyLeft.update(true);
+      sceneBodyRight.update(true);
+      sceneProfiles1.update(true);
+      sceneProfiles2.update(true);
+    });
+
 });
