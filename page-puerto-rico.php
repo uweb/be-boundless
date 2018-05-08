@@ -267,58 +267,58 @@
                         <li class="pax-1 navy" tabindex="0">
                             <div class="hider">
                                 <h2>Anya Raj, ‘17</h2>
-                                <p><span>Home town: </span>Manchester, United Kingdom</p>
+                                <p><span>Hometown: </span>Manchester, United Kingdom</p>
                             </div>
                         </li>
                         <li class="pax-2 airforce" tabindex="0">
                             <div class="hider">
                                 <h2>Chanaka Keerthisinghe</h2>
-                                <p><span>Home town: </span>CITY</p>
+                                <p>Postdoctoral Researcher, Electrical Engineering</p>
                             </div>
                         </li>
                         <li class="pax-3" tabindex="0">
                             <div class="hider">
                                 <h2>Mareldi Ahumada Parás, ‘22</h2>
-                                <p><span>Home town: </span>Mexico City, Mexico</p>
+                                <p><span>Hometown: </span>Mexico City, Mexico</p>
                             </div>
                         </li>
                         <li class="pax-4 navy" tabindex="0">
                             <div class="hider">
                                 <h2>Marvi Matos</h2>
-                                <p><span>Home town: </span>CITY</p>
+                                <p>Engineer, Blue Origin</p>
                             </div>
                         </li>
                         <li class="pax-5 army" tabindex="0">
                             <div class="hider">
                                 <h2>Hugo Pontes, ‘20</h2>
-                                <p><span>Home town: </span>Rio de Janeiro, Brazil</p>
+                                <p><span>Hometown: </span>Rio de Janeiro, Brazil</p>
                             </div>
                         </li>
                         <li class="pax-6 army" tabindex="0">
                             <div class="hider">
                                 <h2>Lilo Pozzo</h2>
-                                <p><span>Home town: </span>CITY</p>
+                                <p>/ Associate Professor, Chemical Engineering and the Clean Energy Institute</p>
                             </div>
                         </li>
 
                         <li class="pax-7 navy" tabindex="0">
                             <div class="hider">
                                 <h2>Yohan Min, ‘21</h2>
-                                <p><span>Home town: </span>Seoul, South Korea</p>
+                                <p><span>Hometown: </span>Seoul, South Korea</p>
                             </div>
                         </li>
 
                         <li class="pax-8 navy" tabindex="0">
                             <div class="hider">
                                 <h2>Michael Chapko</h2>
-                                <p><span>Home town: </span>CITY</p>
+                                <p>Professor Emeritus, Health Services</p>
                             </div>
                         </li>
 
                         <li class="pax-9 navy" tabindex="0">
                             <div class="hider">
                                 <h2>Wesley K. Tatum, ‘20</h2>
-                                <p><span>Home town: </span>Vancouver, Washington</p>
+                                <p><span>Hometown: </span>Vancouver, Washington</p>
                             </div>
                         </li>
                     </ul>
