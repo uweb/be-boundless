@@ -126,7 +126,7 @@
                             <h3 class="headline">FIRSTNAME LASTNAME</h3>
                             <div class="inner">
                                 <div class="more">
-                                    <span class="text">Read More</span>
+                                    <span class="text">Read more</span>
                                     <div class="parallelogram">
                                         <svg id="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.98 4.46">
                                             <defs><style>.icon-line{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs>
@@ -150,7 +150,7 @@
                             <h3 class="headline">FIRSTNAME LASTNAME</h3>
                             <div class="inner">
                                 <div class="more">
-                                    <span class="text">Read More</span>
+                                    <span class="text">Read more</span>
                                     <div class="parallelogram">
                                         <svg id="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.98 4.46">
                                             <defs><style>.icon-line{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs>
@@ -297,7 +297,7 @@
                         <li class="pax-6 army" tabindex="0">
                             <div class="hider">
                                 <h2>Lilo Pozzo</h2>
-                                <p>/ Associate Professor, Chemical Engineering and the Clean Energy Institute</p>
+                                <p>Associate Professor, Chemical Engineering and the Clean Energy Institute</p>
                             </div>
                         </li>
 

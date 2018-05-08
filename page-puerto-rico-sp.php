@@ -1,11 +1,11 @@
 <?php
-    $meta = '';
-    $slug = 'puerto-rico';
-    $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/" . $slug . ".css' type='text/css' media='all' />";
-    $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/" . $slug . ".min.js' type='text/javascript'></script>";
-    $storyCodes = 'PRERFD';
-    $storyAppeal = 'PLACEHOLDER TEXT - PLEASE REPLACE';
-    get_header("campaign-v2");
+        $meta = '';
+        $slug = 'puerto-rico';
+        $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/" . $slug . ".css' type='text/css' media='all' />";
+        $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/" . $slug . ".min.js' type='text/javascript'></script>";
+        $storyCodes = 'PRERFD';
+        $storyAppeal = 'Support Lilo Pozzo’s research team in their efforts to improve community health by contributing to the Puerto Rico Energy Recovery Fund.';
+        get_header("campaign-v2");
 ?>
 
 <!-- INSERT SCROLL BAR -->
@@ -20,225 +20,341 @@
 
     <section class="intro" id="intro-vid">
         <div id="vid-overlay"></div>
-        <button id="pause">Pause</button>
-        <video autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/header-preview.jpg' ?>" class="fullscreen-bg__video" id="full-bg-video">
-            <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/ess/header2.mp4' ?>" type="video/mp4">
-        </video>
-        <div class="intro-body">
-            <div class="row">
-                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-1 col-md-offset-1 col-lg-offset-2" id='intro-text'>
-                    <h1>Grid by grid</h1>
-                    <span class="udub-slant"><span></span></span>
-                    <p>Months after Hurricane Maria, thousands in rural Puerto Rico still lack electricity. In partnership with local communities, UW researchers are working to restore their power.</p>
+        <button id="pause">Pausa</button>
+        <video autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/header.jpg' ?>" class="fullscreen-bg__video" id="full-bg-video">
+            <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/puerto-rico/header.mp4' ?>" type="video/mp4">
+            </video>
+            <div class="intro-body">
+                <div class="row">
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-1 col-md-offset-1 col-lg-offset-2" id='intro-text'>
+                        <h1>DE RED EN RED</h1>
+                        <span class="udub-slant"><span></span></span>
+                        <p>Meses después del huracán María, miles de personas en las zonas rurales de Puerto Rico todavía carecen de electricidad. En colaboración con las comunidades locales, los investigadores de UW están trabajando para restablecer su electricidad.</p>
+                    </div>
                 </div>
-            </div>
-        </div><!-- .intro-body -->
-        <section class="scrollit read-more">
-            <p>Scroll Down</p>
-            <div class="mouse">
-                <div class="scroll"></div>
-            </div><!-- .mouse -->
-        </section><!-- .scrollit .read-more -->
+            </div><!-- .intro-body -->
+            <section class="scrollit read-more">
+                <p>Desplazar hacia abajo</p>
+                <div class="mouse">
+                    <div class="scroll"></div>
+                </div><!-- .mouse -->
+            </section><!-- .scrollit .read-more -->
     </section><!-- .intro #intro-vid -->
 
 
-    <main id="main_content">
-        <section class="text-block start white">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1 copy">
-                        <p>In many respects, CoMotion Labs @ HQ looks like you’d expect a startup incubator to look. Glass-walled conference rooms with idea maps sketched on whiteboards. Entrepreneurs in T-shirts with futuristic company names hanging above their desks: BiNomial. PixelFyzz. WiBotic.</p>
+        <main id="main_content">
 
-                        <p>But then you see a woman with what looks like a black brick strapped over her eyes: a virtual reality headset. Depending on the startup she works for, she could be exploring a virtual shopping experience, an architectural rendering of the inside of a building, or a rotating model of a human heart that will be used to educate patients.</p>
+            <!-- INTRO PARAGRAPHS -->
+            <section class="text-block start white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1 copy">
+                            <p class="first">La sólida casa construida en una ladera de Jayuya, un municipio rural en las montañas de la zona central de Puerto Rico, no ha estado conectada a la red de electricidad por seis meses. Alguien en su interior padece de apnea del sueño, y su familia ha dependido de un generador ruidoso, y de la gasolina que consume, para proporcionar energía eléctrica a la máquina que él necesita cada noche.</p>
 
-                        <p>She may even be watching a 360-degree film created by <a href="http://www.electricdreamfactory.com/">Electric Dream Factory</a>, a content studio that works with diverse creatives to tell stories through <span style="white-space: nowrap;"><span data-tooltip><span><span class="close">X</span><b>Virtual reality:</b> 360-degree video and/or computer-generated simulations that immerse users in a different world. Examples of VR hardware range from Google Cardboard<sup>&trade;</sup> to Oculus Rift headsets.</span>virtual</span>,</span> <span data-tooltip><span><span class="close">X</span><b>Augmented reality:</b> Technology that overlays digital information onto the real world in real time.</span>augmented</span> and <span data-tooltip><span><span class="close">X</span><b>Mixed reality:</b> Like AR, MR combines digital information with the real world. The two terms are often used interchangeably, but a key distinction is that MR allows the physical and digital worlds to interact in real time — so virtual objects are treated as if they are actually present.</span>mixed reality</span>.</p>
+                            <p>Afuera, bajo la sonrisa delgada de una media luna, cuatro ingenieros de la Universidad de Washington finalizan su trabajo. Pronto, una nueva nanorred solar con batería proporcionará energía eléctrica a la máquina auxiliar para el sueño: sin gasolina, sin gases ni cacofonía. </p>
 
-                        <p>Founded by producer Lacey Leavitt, ’03, and editor Joe Jacobs, Electric Dream Factory moved into this workspace in 2016. Since then, they’ve created several virtual reality films — and as they harness the power of technology to help storytellers from different backgrounds make an impact on audiences, they’re benefiting from a startup incubator that shares their philosophy of <span data-tooltip><span><span class="close">X</span><b>Inclusive innovation:</b> The philosophy that including people from all backgrounds strengthens innovation and changes lives for the better. Creating a space and opportunity for this cross-pollination of ideas is core to the UW’s Innovation Imperative — an integrated approach that will drive positive change in our state and beyond.</span>inclusive innovation</span>.</p>
+                            <p>Los estudiantes de doctorado, Mareldi Ahumada y Wesley Tatum, instalan cuatro paneles solares flexibles al techo con una soga amarilla. Anya Raj, universitaria graduada en 2017, mete cables de los paneles en el techo a través de un agujero, mientras que el estudiante universitario de segundo año, Hugo Pontes, alumbra a Raj con su teléfono inteligente para que pueda trabajar.</p>
 
-                        <p>CoMotion Labs is part of CoMotion, the University of Washington’s collaborative innovation hub, a place that's about much more than technology — it’s about the people technology serves.</p>
+                            <p>El equipo conecta los paneles a una batería en el interior de la casa que se cargará con el sol de mañana. Terminan justo cuando aparecen los mosquitos.</p>
 
-                        <div class="callout right">
-                            <div class="float">
-                                <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/comotion/LACEY_PHOTO_1.jpg" alt="" class="image1">
-                                <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/comotion/LACEY_PHOTO_2.jpg" alt="" class="image2">
-                                <p class="caption no-cap">LACEY LEAVITT / CHIEF EXECUTIVE OFFICER, ELECTRIC DREAM FACTORY</p>
-                            </div>
-                            <blockquote class="quote">With XR, we have the opportunity to set our intentions from the very beginning — to commit to being inclusive from the get-go.</blockquote>
-                        </div>
-                        <div class="callout left">
-                            <div class="float">
-                                <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/comotion/JOE_PHOTO_1.jpg" alt="" class="image1">
-                                <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/comotion/JOE_PHOTO_2.jpg" alt="" class="image2">
-                                <p class="caption no-cap">JOE JACOBS / CREATIVE TECHNICAL OFFICER, ELECTRIC DREAM FACTORY</p>
-                            </div>
-                            <blockquote class="quote">This technology is really moldable right now. The concrete is not even close to set. We’re still sculpting it.</blockquote>
-                        </div>
-                        <h2>Virtual reality gets real</h2>
-                        <p>Leavitt and Jacobs, who’ve been friends since they worked on a student film together as undergraduates, both went on to cut their teeth in the New York City film industry. While Leavitt gained valuable experience there, she also learned a lesson that informed how — and where — she would shape her career.</p>
-
-                        <p>“The New York and LA film industries are very male-dominated,” she says. “I just didn’t see being able to make a career like the one I wanted.”</p>
-
-                        <p>Eventually, both Leavitt and Jacobs made their way back to Seattle, where they teamed up in 2015 to form the company they now call Electric Dream Factory. It wasn’t long before they took another plunge: In addition to continuing their work on feature films, they ventured into <span data-tooltip><span><span class="close">X</span><b>Cross reality:</b> Any experience that combines digital and “real,” or physical, reality. This term is often used to encompass virtual-, augmented- and mixed-reality technology.</span>cross reality</span> (XR) filmmaking, with a focus on virtual reality (VR).</p>
-
-                        <p>Jacobs was interested in how this rapidly developing technology could open up new storytelling possibilities. “I wandered into it with curiosity,” he says. “What’s the potential here?”</p>
-
-                        <p>VR’s ability to create empathy — by putting viewers in the midst of a 360-degree virtual world — was a major motivating factor for Leavitt: “It allows you to bring people into somebody else’s point of view,” she says.</p>
-
-                        <div class="float-image right">
-                            <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/comotion/eaglebone.jpg" alt="">
-                            <p class="caption no-cap">A scene from “Ch’aak’ S’aagi”</p>
-                        </div>
-
-                        <p>Electric Dream Factory’s first VR short did just that. “Ch’aak’ S’aagi” (“Eagle Bone”), directed by Native American filmmaker Tracy Rector, combines Pacific Northwest scenery, traditional Tlingit dance and a freestyle spoken-word meditation on the modern indigenous experience. Soon after, the studio co-produced “Potato Dreams,” a VR documentary about writer and director Wes Hurley’s struggles while growing up gay in the Soviet Union. Both films use their virtual environment to forge a deeper connection between viewer and subject, and Electric Dream Factory plans to create many more.</p>
-
-                    </div><!-- .col-md-10 .col-md-offset-1 .copy -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </section><!-- .text-block .start .white -->
-
-
-        <!--Expanding block -->
-        <section class="text-block" id="expanding">
-            <div class="container">
-                <!-- [slide deck image] -->
-                <img class="slide1" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/SLIDE_1.png' ?>">
-                <!-- [slide deck image flipped] -->
-                <img class="slide2" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/SLIDE_2.png' ?>">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1 copy expandable-container">
-                        <div class="visible-part">
-                            <h2 class="big-big">What is VR?</h2>
-
-                            <p>Virtual reality isn’t a new idea, but the technology that makes it possible is quickly catching up to experiences we’ve long dreamed of creating. From low-tech toys to high-tech headsets, here are a few examples of devices that have brought the virtual world into our lives.</p>
-
-                            <div style="text-align: center"><a id="expander" class="expander" href="#" role="button">Show more</a></div>
-                        </div>
-                        <div class="hidden-part">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-4 col-xs-10 col-sm-offset-0 col-xs-offset-1">
-                                    <!-- [stereoscope image] -->
-                                    <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/STEREOSCOPE.png' ?>">
-                                </div>
-                                <div class="item-desc col-md-6 col-sm-8 col-xs-10 col-sm-offset-0 col-xs-offset-1">
-                                    <h3>Late 19th century</h3>
-                                    <span>Stereoscope</span>
-                                    <p>In 1838, British physicist Sir Charles Wheatstone publishes a paper explaining how the mind combines images from each eye to create depth perception. He coins it the “stereoscope,” and by the mid-19th century it has been adapted for handheld use and gained significant popularity.</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-4 col-xs-10 col-sm-offset-0 col-xs-offset-1">
-                                    <!-- [view master image] -->
-                                    <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/VIEWMASTER.png' ?>">
-                                </div>
-                                <div class="item-desc col-md-6 col-sm-8 col-xs-10 col-sm-offset-0 col-xs-offset-1">
-                                    <h3>1939</h3>
-                                    <span>View-Master</span>
-                                    <p>Introduced in 1939 at the New York World’s Fair, the View-Master<sup>&reg;</sup> soon becomes a household toy that whisks people to destinations and scenes around the world. Shown at left is a Model G, circa 1959-1977.</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-4 col-xs-10 col-sm-offset-0 col-xs-offset-1">
-                                    <!-- [Google cardboard image] -->
-                                    <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/GOOGLE_CARDBOARD.png' ?>">
-                                </div>
-                                <div class="item-desc col-md-6 col-sm-8 col-xs-10 col-sm-offset-0 col-xs-offset-1">
-                                    <h3>2014</h3>
-                                    <span>Google Cardboard</span>
-                                    <p>Harnessing the smartphone’s power and small size, Google releases Google Cardboard, a DIY headset that offers a lightweight, relatively inexpensive way to experience virtual reality.</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-4 col-xs-10 col-sm-offset-0 col-xs-offset-1">
-                                    <!-- [HTC VIVE image] -->
-                                    <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/HTC_VIVE.png' ?>">
-                                </div>
-                                <div class="item-desc col-md-6 col-sm-8 col-xs-10 col-sm-offset-0 col-xs-offset-1">
-                                    <h3>2016</h3>
-                                    <span>HTC VIVE</span>
-                                    <p>One of several commercial VR headsets released in 2016, the HTC VIVE<sup>&trade;</sup> is part of a watershed moment in the progress of virtual technology.</p>
-                                </div>
-                            </div>
-                            <div style="text-align: center"><a class="expander less" href="#" role="button">Show less</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="text-block start white small-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1 copy">
-                        <h2>Incubating the future</h2>
-                        <p>Behind the scenes, Electric Dream Factory productions are supported by resources and guidance from the UW’s CoMotion Labs, which helps companies navigate the startup world.</p>
-
-                        <p>Across the room from Electric Dream Factory’s desks is a virtual reality space, sponsored by Booz Allen Hamilton, that gives innovators the opportunity to test their projects using cutting-edge technology. Workshops and learning opportunities are a constant presence, too. “The classes in startup fundamentals have been amazing,” says Leavitt.</p>
-
-                        <div class="float-image right">
-                            <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/comotion/comotion_workspaces.jpg" alt="">
-                            <p class="caption no-cap">The office space at CoMotion Labs @ HQ</p>
-                        </div>
-
-                        <p>Electric Dream Factory also participated in DubPitch, a philanthropically supported event that gives select CoMotion startups the chance to share their stories with local investors. In addition, Leavitt and Jacobs have connected with CoMotion Labs’ entrepreneurs in residence, who volunteer their time to consult with startups about intellectual property, business plans and more.</p>
-
-                        <p>The net effect of these resources? Startups can pour more energy into what they do best: building and creating. For Leavitt and Jacobs, that means more time spent shaping the virtual landscape — and helping others tell their stories in original, immersive ways.</p>
-
-                        <h2>Empowering diverse storytellers</h2>
-                        <p>In the spirit of inclusive innovation, Electric Dream Factory is developing a program that aims to support diverse storytelling through equipment access, training and mentorship opportunities, and project funding.</p>
-                        <div class="float-image right">
-                            <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/comotion/comotion_photo_inset.jpg" alt="">
-                            <p class="caption no-cap">On the set of “Dom,” a VR documentary directed by Netsanet Tjirongo and produced by Electric Dream Factory</p>
-                        </div>
-
-                        <p>“Especially now, as we’re part of pioneering what XR filmmaking is, you want people from a variety of backgrounds and experiences to come to the table,” says Leavitt.</p>
-
-                        <p>On the horizon for Electric Dream Factory are films by artists who explore topics as wide-ranging as black female sexuality, the importance of support in the LGBTQ community, and economic disparity.</p>
-
-                        <p>“I think XR is going to be a very big part of our future,” says Leavitt, whose experience as a woman filmmaker in New York still powers her mindset. “It’s important for anyone who has any modicum of power to think about how we can make our industry inclusive.”</p>
-
-                    </div><!-- .col-md-10 .col-md-offset-1 .copy -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </section><!-- .text-block .start .white -->
-
-        <!-- 360 YOUTUBE VIDEO #1 56.25-->
-        <section id="slideplay1" class="slideplay frame">
-            <div class="fader show">
-                <div class="icon">
-                    <a role="button" class="click" href="#">Click and drag to experience video in 360 degrees</a>
-                </div>
-                <img alt="Fabric" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/comotion/VIDEO1.jpg' ?>" />
-            </div>
-            <div class="boundless-video"></div>
-        </section>
-
-        <section class="text-block start white">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1 copy">
-                        <h2>Expanding impact: CoMotion and CoMotion Labs</h2>
-                        <p><b><a href="https://comotion.uw.edu/">CoMotion</a></b> seeks to expand the economic and social impact of the UW community by fostering innovation transfer, which helps researchers make the leap from idea to impact; creating strategic partnerships, such as the <a href="https://gix.uw.edu/">Global Innovation Exchange</a> and <a href="https://catalyst.amazon.com/uw/">Amazon Catalyst</a>; and encouraging innovative thinking through workshops, trainings and events for the UW and our broader community.
-
-                            <p>With three locations on the UW campus in Seattle, as well as a virtual lab in Spokane, CoMotion provides startups with learning programs, mentoring, networking and space. It also helps connect innovators with resources in a variety of industries, including engineering, IT, life sciences, medical devices, clean tech, blockchain, artificial intelligence, and augmented and virtual reality.</p>
-
-                            <p>Faculty and student research cultivates groundbreaking ideas at the University of Washington. But without financial support, there’s a gap between research and real-world output. Helping researchers cross this gap is the CoMotion Innovation Fund, explains Vikram Jandhyala, executive director of CoMotion and vice president for innovation strategy at the UW.</p>
-
-                            <p>“These are robust ideas that have benefited from years of research but need guidance and focused resources to make people’s lives better,” he says. “It’s a critical path for the future success of these breakthroughs.”</p>
-
-                            <p><b><a href="https://comotion.uw.edu/what-we-do/comotion-labs/home/">CoMotion Labs</a></b> — a self-sustaining, membership-supported program of CoMotion — is a multi-industry startup incubator that hosts more than 90 companies inside and outside the UW community. One of many UW programs exploring the possibilities of XR technology, CoMotion Labs complements and supports innovative ventures across the University and beyond.</p>
-                            <p><em>Originally published April 2018</em></p>
                         </div><!-- .col-md-10 .col-md-offset-1 .copy -->
                     </div><!-- .row -->
                 </div><!-- .container -->
             </section><!-- .text-block .start .white -->
 
-    </main><!-- #main_content -->
+            <!-- MAP + STORM PATH ANIMATION -->
+            <section>
+                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/map.jpg' ?>" class="img-responsive">
+            </section>
 
-    <div id="popup"></div>
+            <!-- GETTING TO THE HEART OF THE DAMAGE -->
+            <section class="text-block start white small-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1 copy">
+                            <h2>Arribo al centro de los daños</h2>
+                            <p>Ahumada, Tatum, Raj y Pontes son parte de un equipo de científicos de salud pública e ingenieros de UW que están evaluando el impacto a largo plazo de la pérdida de electricidad en los residentes de Puerto Rico.</p>
 
-</div><!-- #immersive-body -->
+                            <p>Durante cuatro días a finales de marzo de 2018, los investigadores entrecruzaron esta región de 101 kilómetros cuadrados (39 millas cuadradas) en caminos de fuertes altibajos de un solo carril, algunos de los cuales se estrecharon mucho desde que el huracán María golpeó el territorio estadounidense el septiembre pasado. Jayuya es el hogar de 17,000 personas, y allí se encuentran los picos más altos de Puerto Rico. </p>
+                            <div class="slideshow-container">
+                                <div id="eng-slideshow" class="foster-slideshow">
+                                    <div>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_1.jpg' ?>" alt="ALT TEXT HERE">
+                                        <p>CAPTION GOES HERE</p>
+                                    </div>
 
-<?php
-    include(locate_template('include-giving.php'));//ADD CUSTOM PHOTO
-    get_template_part('footer', 'campaign-v2');
-?>
+                                    <div>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_2.jpg' ?>" alt="ALT TEXT HERE">
+                                        <p>CAPTION GOES HERE</p>
+                                    </div>
+
+                                    <div>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_3.jpg' ?>" alt="ALT TEXT HERE">
+                                        <p>CAPTION GOES HERE</p>
+                                    </div>
+
+                                    <div>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_4.jpg' ?>" alt="ALT TEXT HERE">
+                                        <p>CAPTION GOES HERE</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <p>El equipo visitó hogares y centros comunitarios, y entrevistó a docenas de cuidadores y residentes que usan dispositivos médicos electrónicos, como parte de un estudio de campo a largo plazo sobre el impacto de la pérdida de electricidad en la salud pública. También donaron e instalaron 17 sistemas de nanorred solar con baterías, prototipos de una infraestructura de energía limpia y sostenible, que pueden mantener a flote la salud pública en las zonas rurales cuando fallan las redes de suministro eléctrico.</p>
+
+                            <p>Su trabajo es financiado por el <a href="https://www.cei.washington.edu/" target="blank">Clean Energy Institute</a> [Instituto de Energía Limpia] y el <a href="http://www.washington.edu/globalaffairs/gif/" target="_blank">Global Innovation Fund</a> [Fondo para la Innovación Mundial] de UW, y está alineado con la <a href="https://uw.edu/populationhealth/" target="_blank">Population Health Initiative</a> [Iniciativa de Salud Poblacional], una labor de toda la Universidad para eliminar las desigualdades en el campo de la salud por todo el mundo. Como es el caso en muchas catástrofes naturales, el huracán María tuvo un efecto desproporcionado en las personas de más bajos recursos: las familias tanto de ingresos bajos como de ingresos fijos, los ancianos, los enfermos y los residentes rurales de lugares como Jayuya.</p>
+
+                            <p>Miles de personas han permanecido desconectadas de la red de suministro eléctrico desde que María azotó la zona. El equipo de UW espera que las lecciones aprendidas de la tormenta ayuden a los ingenieros a diseñar mejores microrredes, como los prototipos que han instalado, para una infraestructura que satisfaga las necesidades de las comunidades más vulnerables.</p>
+
+                            <p>Una de las lecciones que el equipo ha aprendido en los dos viajes aquí, es que los defectos de la infraestructura actual han dejado cicatrices más profundas que los postes de luz tirados y las casas que están a oscuras.</p>
+
+                            <p>“Es un sufrimiento invisible”, comenta Lilo Pozzo, profesora asociada de ingeniería química, que ha dirigido ambos viajes. “No sabe uno cómo está la situación sino hasta que entra en los hogares y ve exactamente cómo está sobreviviendo la gente”.</p>
+
+                        </div><!-- .col-md-10 .col-md-offset-1 .copy -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </section><!-- .text-block .start .white -->
+
+            <!-- COMMUNITY MEMEBER PHOTOS W/ SCROLL -->
+            <section id="section-profiles">
+                <div class="item-1 item">
+                    <div class="img"></div>
+                    <div class="caption">
+                        <div class="group">
+                            <h2>Juyuya Community /</h2>
+                            <h3 class="headline">FIRSTNAME LASTNAME</h3>
+                            <div class="inner">
+                                <div class="more">
+                                    <span class="text">Read more</span>
+                                    <div class="parallelogram">
+                                        <svg id="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.98 4.46">
+                                            <defs><style>.icon-line{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs>
+                                            <title>Vector Smart Object1</title>
+                                            <path class="icon-line" d="M.86,2.75c.43.55,1.68,2,3.17,2s2.77-1.44,3.18-2A4.44,4.44,0,0,0,4,.77C2.5.77,1.28,2.2.86,2.75Z" transform="translate(-0.55 -0.52)"/>
+                                            <path class="icon-line" d="M4,3.94A1.19,1.19,0,1,1,5.23,2.75,1.19,1.19,0,0,1,4,3.94Z" transform="translate(-0.55 -0.52)"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et nunc sit amet quam tristique luctus. Nunc et felis erat. Cras luctus sem in enim varius tempus. Aliquam erat volutpat. Nullam in magna a mauris cursus sodales et faucibus odio. Maecenas non velit vitae neque luctus convallis. Suspendisse vel enim ut nisi egestas consequat. Phasellus a augue at turpis lacinia semper sed non quam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-2 item">
+                    <div class="img"></div>
+                    <div class="caption">
+                        <div class="group">
+                            <h2>Juyuya Community /</h2>
+                            <h3 class="headline">FIRSTNAME LASTNAME</h3>
+                            <div class="inner">
+                                <div class="more">
+                                    <span class="text">Read more</span>
+                                    <div class="parallelogram">
+                                        <svg id="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.98 4.46">
+                                            <defs><style>.icon-line{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs>
+                                            <title>Vector Smart Object1</title>
+                                            <path class="icon-line" d="M.86,2.75c.43.55,1.68,2,3.17,2s2.77-1.44,3.18-2A4.44,4.44,0,0,0,4,.77C2.5.77,1.28,2.2.86,2.75Z" transform="translate(-0.55 -0.52)"/>
+                                            <path class="icon-line" d="M4,3.94A1.19,1.19,0,1,1,5.23,2.75,1.19,1.19,0,0,1,4,3.94Z" transform="translate(-0.55 -0.52)"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et nunc sit amet quam tristique luctus. Nunc et felis erat. Cras luctus sem in enim varius tempus. Aliquam erat volutpat. Nullam in magna a mauris cursus sodales et faucibus odio. Maecenas non velit vitae neque luctus convallis. Suspendisse vel enim ut nisi egestas consequat. Phasellus a augue at turpis lacinia semper sed non quam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- #section-profiles -->
+
+            <!-- EXPOSING THE BLUE -->
+            <section class="text-block white small-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1 copy">
+                            <h2>Revelación del fondo azul</h2>
+                            <p>Todavía es común ver las lonas azules de FEMA, pero muchos de los signos manifiestos del daño de la tormenta se han reparado: las personas han limpiado escombros, reemplazado ventanas y parchado techos. Pero los investigadores de UW han documentado un sinnúmero de ajustes “ocultos” que los residentes han hecho desde que perdieron la electricidad. Estos incluyen comer alimentos enlatados y en conserva, a pesar de su valor nutricional más bajo, o asistir diariamente al consultorio de un médico para obtener medicamentos refrigerados.</p>
+
+                            <p>“Te adaptas porque no te queda otro remedio”, comenta Pozzo. “Pero nunca logras tener la vida normal que solías tener cuando tenías electricidad”.</p>
+
+                            <div class="slideshow-container">
+                                <div id="eng-slideshow" class="foster-slideshow2">
+                                    <div>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_1.jpg' ?>" alt="ALT TEXT HERE">
+                                        <p>CAPTION GOES HERE</p>
+                                    </div>
+
+                                    <div>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_2.jpg' ?>" alt="ALT TEXT HERE">
+                                        <p>CAPTION GOES HERE</p>
+                                    </div>
+
+                                    <div>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_3.jpg' ?>" alt="ALT TEXT HERE">
+                                        <p>CAPTION GOES HERE</p>
+                                    </div>
+
+                                    <div>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_4.jpg' ?>" alt="ALT TEXT HERE">
+                                        <p>CAPTION GOES HERE</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <p>Pozzo eligió a Jayuya para este estudio porque su esposa, Marvi Matos, una ingeniera química, creció allí. Como muchas de las personas con lazos familiares en Puerto Rico, la pareja envió suministros a la isla después del huracán. Pero, un mes después de María, apenas se había restablecido un 20 por ciento de la red de electricidad.</p>
+
+                            <p>Pozzo y Matos concibieron la idea de usar sus conocimientos expertos para descubrir el impacto de la tormenta en la salud y la infraestructura energética. Pozzo reclutó colaboradores de la Facultad de Salud Pública y la Facultad de Ingeniería. Recibieron financiamiento para el estudio del Clean Energy Institute y del Global Innovation Fund, mientras que donaciones privadas cubrieron el costo de las nanorredes. Unos contactos en Jayuya las pusieron en comunicación con organizadores comunitarios y familias necesitadas.</p>
+
+                            <p>“El impacto duradero de esta tormenta es que ha revelado los lugares vulnerables de Jayuya”, comenta María Pérez, una organizadora comunitaria local. “Nos mostró a las personas entre nosotros que no tenían ayuda, que estaban viviendo en condiciones inhumanas”.</p>
+
+                            <blockquote>
+                                You adapt because you have to, but you never achieve the normal life you had back when you had power <span>— <span class="name">Lilo Pozzo</span></span>
+                            </blockquote>
+                        </div><!-- .col-md-10 .col-md-offset-1 .copy -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </section><!-- .text-block .start .white -->
+
+            <!-- NEW VIDEO SECTION BASED ON LIBRARIES -->
+            <section id="video">
+                    <a data-lity="" href="https://www.youtube.com/embed/-zYESWG9HxE?autoplay=1&amp;rel=0&amp;showinfo=0" class="center-block play">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="125" height="125" viewBox="0 0 150 150" class="opening-slash">
+                                <circle id="play-cir" fill="none" stroke="#fff" stroke-width="7" stroke-miterlimit="10" cx="75" cy="75" r="55"></circle>
+                                <path id="play-tri" fill="#fff" d="M57.767,46.187L110.382,75l-52.616,28.816"></path>
+                            </svg>
+                            <div>Watch Story</div>
+                        </div>
+                        <div class="video-caption">
+                            <h3>FIRST NAME LAST NAME</h3>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan nisi eget nulla pharetra suscipit. Curabitur id mi rhoncus, molestie orci sed, commodo eros. Maecenas vitae mollis est
+                        </div>
+                    </a>
+                <img alt="Fabric" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/puerto-rico/video.jpg' ?>" />
+            </section>
+
+            <!-- DEDICATED TO A SUSTAINABLE FUTURE -->
+            <section class="text-block start white small-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1 copy">
+                            <h2>Dedicados a un futuro sostenible</h2>
+                            <p>El equipo de UW realizó su primera visita en noviembre de 2017, para reunir datos y donar cuatro sistemas solares con baterías. Para el viaje en marzo, ampliaron sus objetivos al comprar y montar tres tipos de sistemas solares con baterías. El más pequeño de estos puede proporcionar energía eléctrica a un refrigerador miniatura para almacenar suministros médicos como insulina, mientras que el más grande puede alimentar dispositivos más complejos, como un concentrador de oxígeno o un refrigerador de tamaño normal.</p>
+
+                            <p>“Queremos que estos sistemas sean sencillos para los pacientes y sus cuidadores”, indica Ahumada. “No tiene caso donar algo que no puedan usar fácilmente”.</p>
+
+                            <p>Los investigadores también instalaron 11 registradores de datos en algunas de las nanorredes. Estos dispositivos registrarán información sobre el uso de la energía eléctrica, datos que se podrán descargar durante visitas futuras.</p>
+
+                            <p>“Podemos agrupar la información de los registradores de datos con la que obtengamos de las entrevistas para diseñar microrredes todavía más eficaces”, comenta Chanaka Keerthisinghe, un investigador de posdoctorado en ingeniería eléctrica.</p>
+
+                            <p>Los datos que los investigadores reunieron en marzo, los cuales deberían ofrecer pistas para que puedan ayudar a descubrir y abordar más necesidades, están en espera de análisis. El equipo está planificando otro viaje a Jayuya este verano. Los colaboradores en Jayuya esperan listos para ayudarlos en sus tareas.</p>
+
+                            <p>Después de instalar la nanorred final, el equipo de UW pasó a un niño que jugaba frente a su casa, la cual carecía de electricidad. Llevaba puesto un disfraz de Capitán América y saludaba a los autos que pasaban. Una casa cercana tenía a la vista la bandera de la isla con un mensaje escrito a mano: Puerto Rico se levanta.</p>
+
+                            <p><b>Puerto Rico se levanta.</b></p>
+
+                        </div><!-- .col-md-10 .col-md-offset-1 .copy -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </section><!-- .text-block .start .white -->
+
+            <!-- PROFILES OF RESEARCHERS -->
+            <section id="profiles">
+                <div class="who-section">
+                    <ul id="people">
+                        <li class="pax-1 navy" tabindex="0">
+                            <div class="hider">
+                                <h2>Anya Raj, ‘17</h2>
+                                <p><span>Ciudad natal : </span>Manchester, United Kingdom</p>
+                            </div>
+                        </li>
+                        <li class="pax-2 airforce" tabindex="0">
+                            <div class="hider">
+                                <h2>Chanaka Keerthisinghe</h2>
+                                <p>Postdoctoral Researcher, Electrical Engineering</p>
+                            </div>
+                        </li>
+                        <li class="pax-3" tabindex="0">
+                            <div class="hider">
+                                <h2>Mareldi Ahumada Parás, ‘22</h2>
+                                <p><span>Ciudad natal : </span>Mexico City, Mexico</p>
+                            </div>
+                        </li>
+                        <li class="pax-4 navy" tabindex="0">
+                            <div class="hider">
+                                <h2>Marvi Matos</h2>
+                                <p>Engineer, Blue Origin</p>
+                            </div>
+                        </li>
+                        <li class="pax-5 army" tabindex="0">
+                            <div class="hider">
+                                <h2>Hugo Pontes, ‘20</h2>
+                                <p><span>Ciudad natal : </span>Rio de Janeiro, Brazil</p>
+                            </div>
+                        </li>
+                        <li class="pax-6 army" tabindex="0">
+                            <div class="hider">
+                                <h2>Lilo Pozzo</h2>
+                                <p>Associate Professor, Chemical Engineering and the Clean Energy Institute</p>
+                            </div>
+                        </li>
+
+                        <li class="pax-7 navy" tabindex="0">
+                            <div class="hider">
+                                <h2>Yohan Min, ‘21</h2>
+                                <p><span>Ciudad natal : </span>Seoul, South Korea</p>
+                            </div>
+                        </li>
+
+                        <li class="pax-8 navy" tabindex="0">
+                            <div class="hider">
+                                <h2>Michael Chapko</h2>
+                                <p>Professor Emeritus, Health Services</p>
+                            </div>
+                        </li>
+
+                        <li class="pax-9 navy" tabindex="0">
+                            <div class="hider">
+                                <h2>Wesley K. Tatum, ‘20</h2>
+                                <p><span>Ciudad natal : </span>Vancouver, Washington</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+            <!-- UW COLLABORATORS -->
+            <section class="text-block" id="expanding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1 copy expandable-container">
+                            <div class="visible-part">
+                                <h2>UW collaborators</h2>
+                                <div style="text-align: center"><a id="expander" class="expander" href="#" role="button">Mostrar más</a></div>
+                            </div>
+                            <div class="hidden-part">
+                                <strong>Dan Schwartz</strong>, director del Clean Energy Institute y profesor de ingeniería química<br />
+                                <strong>Charbel El Bcheraoui</strong>, profesor adjunto de salud mundial en el Institute for Health Metrics and Evaluation [Instituto de Evaluación y Métrica de la Salud]<br />
+                                <strong>Yougjun Choe</strong>, profesor adjunto de ingeniería industrial y en sistemas<br />
+                                <strong>Daniel Kirschen</strong>, profesor de ingeniería eléctrica<br />
+                                <strong>Jessica Kaminsky</strong>, profesora adjunta de ingeniería civil y ambiental<br />
+                                <div style="text-align: center"><a class="expander less" href="#" role="button">Mostrar menos</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main><!-- #main_content -->
+
+        <div id="popup"></div>
+
+    </div><!-- #immersive-body -->
+
+    <?php
+        include(locate_template('include-giving.php'));//ADD CUSTOM PHOTO
+        get_template_part('footer', 'campaign-v2');
+    ?>
