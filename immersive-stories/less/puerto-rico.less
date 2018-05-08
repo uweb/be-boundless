@@ -1064,20 +1064,21 @@ div.hidden-part {
 /*******************************
 * SECTION - PROFILES *
 *******************************/
-    #section-profiles {
-        padding-bottom:100vh; // very specific to what scrollmagic needs
-        .item-1 {
-            z-index:4;
-            .img {
-                background-image: url("@{pr}/community-1.jpg");
-                background-position: center top;
-            }
+#section-profiles {
+    padding-bottom:100vh; // very specific to what scrollmagic needs
+    .img {
+        background-position: center top;
+    }
+    .item-1 {
+        z-index:4;
+        .img {
+            background-image: url("@{pr}/community-1.jpg");
         }
+    }
     .item-2 {
         z-index:3;
         .img {
             background-image: url("@{pr}/community-2.jpg");
-            background-position: center top;
         }
     }
 }
@@ -1124,15 +1125,15 @@ div.hidden-part {
             .group {
                 position:absolute;
                 width:50%;
-                font-size: 20px;
-                font-family: "Encode Sans Thin",sans-serif;
+                font-size: 0.9em;
+                // font-family: "Encode Sans Thin",sans-serif;
                 font-weight: 300;
                 right: 0;
                 h2 {
-                    font-size: 1em;
+                    font-size: 1.2em;
                 }
                 .headline {
-                    font-size: 1.5em;
+                    font-size: 2em;
                     text-transform: uppercase;
                     margin: 0;
                     white-space: nowrap;
@@ -1140,6 +1141,7 @@ div.hidden-part {
                 }
                 .inner {
                     position:relative;
+                    margin-top: 10px;
                 }
                 .description {
                     z-index:0;
@@ -1152,27 +1154,63 @@ div.hidden-part {
                     pointer-events: none;
                     transition:  all 300ms ease-out;
                 }
+                 .parallelogram {
+                    display: inline-block;
+                    border-right: 7px solid white;
+                    border-left: 7px solid white;
+                    margin: 5px 0px 5px 0px;
+                    background-color: white;
+                    transform: skewX(-15deg);
+                 }
                 .more {
                     position:relative;
                     z-index:1;
                     display: inline-block;
                     /*height: 21px;*/
                     cursor: pointer;
-                    background-color: @lightgold;
+                    // background-color: @lightgold;
+                    margin-left: 7px;
+                    &:before {
+                        content: "";
+                        background-color: #b7a57a;
+                        display: block;
+                        height: 100%;
+                        position: absolute;
+                        left: -7px;
+                        top: 0;
+                        width: 100%;
+                        z-index: -100;
+                    }
+                    &:after {
+                        content: "";
+                        background-color: @lightgold;
+                        display: block;
+                        height: 100%;
+                        position: absolute;
+                        right: -7px;
+                        top: 0;
+                        width: 30px;
+                        transform: skewX(-15deg);
+                        z-index: -100;
+                    }
                     .text,svg#icon-eye {
                         display: inline-block;
                         vertical-align: middle;
+
                     }
                     svg#icon-eye {
-                        margin-right: 6px;
-                        width: 32px;
-                        background-color: white;
+                        // margin-right: 6px;
+                        width: 25px;
+                        /*background-color: white;*/
+
+                        transform: skewX(15deg);
                         .icon-line {
-                            stroke: @darkgold;
+                            stroke: black;
                         }
                     }
                     .text {
                         color: white;
+                        margin-right: 5px;
                     }
                     &:hover {
                         .text {

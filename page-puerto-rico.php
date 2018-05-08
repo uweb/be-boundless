@@ -39,7 +39,7 @@
                     <div class="scroll"></div>
                 </div><!-- .mouse -->
             </section><!-- .scrollit .read-more -->
-        </section><!-- .intro #intro-vid -->
+    </section><!-- .intro #intro-vid -->
 
 
         <main id="main_content">
@@ -120,24 +120,26 @@
             <section id="section-profiles">
                 <div class="item-1 item">
                     <div class="img"></div>
-                        <div class="caption">
-                            <div class="group">
-                                <h2>Juyuya Community /</h2>
-                                <h3 class="headline">FIRSTNAME LASTNAME</h3>
-                                <div class="inner">
-                                    <div class="more">
+                    <div class="caption">
+                        <div class="group">
+                            <h2>Juyuya Community /</h2>
+                            <h3 class="headline">FIRSTNAME LASTNAME</h3>
+                            <div class="inner">
+                                <div class="more">
+                                    <span class="text">Read More</span>
+                                    <div class="parallelogram">
                                         <svg id="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.98 4.46">
                                             <defs><style>.icon-line{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs>
                                             <title>Vector Smart Object1</title>
                                             <path class="icon-line" d="M.86,2.75c.43.55,1.68,2,3.17,2s2.77-1.44,3.18-2A4.44,4.44,0,0,0,4,.77C2.5.77,1.28,2.2.86,2.75Z" transform="translate(-0.55 -0.52)"/>
                                             <path class="icon-line" d="M4,3.94A1.19,1.19,0,1,1,5.23,2.75,1.19,1.19,0,0,1,4,3.94Z" transform="translate(-0.55 -0.52)"/>
                                         </svg>
-                                          <span class="text">Read More</span>
-                                      </div>
-                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et nunc sit amet quam tristique luctus. Nunc et felis erat. Cras luctus sem in enim varius tempus. Aliquam erat volutpat. Nullam in magna a mauris cursus sodales et faucibus odio. Maecenas non velit vitae neque luctus convallis. Suspendisse vel enim ut nisi egestas consequat. Phasellus a augue at turpis lacinia semper sed non quam.</p>
+                                    </div>
                                 </div>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et nunc sit amet quam tristique luctus. Nunc et felis erat. Cras luctus sem in enim varius tempus. Aliquam erat volutpat. Nullam in magna a mauris cursus sodales et faucibus odio. Maecenas non velit vitae neque luctus convallis. Suspendisse vel enim ut nisi egestas consequat. Phasellus a augue at turpis lacinia semper sed non quam.</p>
                             </div>
                         </div>
+                    </div>
                 </div>
 
                 <div class="item-2 item">
@@ -148,14 +150,16 @@
                             <h3 class="headline">FIRSTNAME LASTNAME</h3>
                             <div class="inner">
                                 <div class="more">
-                                      <span class="text">Read More</span>
-                                      <svg id="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.98 4.46">
-                                          <defs><style>.icon-line{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs>
-                                          <title>Vector Smart Object1</title>
-                                          <path class="icon-line" d="M.86,2.75c.43.55,1.68,2,3.17,2s2.77-1.44,3.18-2A4.44,4.44,0,0,0,4,.77C2.5.77,1.28,2.2.86,2.75Z" transform="translate(-0.55 -0.52)"/>
-                                          <path class="icon-line" d="M4,3.94A1.19,1.19,0,1,1,5.23,2.75,1.19,1.19,0,0,1,4,3.94Z" transform="translate(-0.55 -0.52)"/>
-                                      </svg>
-                                  </div>
+                                    <span class="text">Read More</span>
+                                    <div class="parallelogram">
+                                        <svg id="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.98 4.46">
+                                            <defs><style>.icon-line{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs>
+                                            <title>Vector Smart Object1</title>
+                                            <path class="icon-line" d="M.86,2.75c.43.55,1.68,2,3.17,2s2.77-1.44,3.18-2A4.44,4.44,0,0,0,4,.77C2.5.77,1.28,2.2.86,2.75Z" transform="translate(-0.55 -0.52)"/>
+                                            <path class="icon-line" d="M4,3.94A1.19,1.19,0,1,1,5.23,2.75,1.19,1.19,0,0,1,4,3.94Z" transform="translate(-0.55 -0.52)"/>
+                                        </svg>
+                                    </div>
+                                </div>
                                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et nunc sit amet quam tristique luctus. Nunc et felis erat. Cras luctus sem in enim varius tempus. Aliquam erat volutpat. Nullam in magna a mauris cursus sodales et faucibus odio. Maecenas non velit vitae neque luctus convallis. Suspendisse vel enim ut nisi egestas consequat. Phasellus a augue at turpis lacinia semper sed non quam.</p>
                             </div>
                         </div>
