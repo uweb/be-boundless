@@ -208,18 +208,18 @@ var tweenMap = new TimelineMax()
   // .to(before1, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, 0)
   // .to(after1, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, 0)
   // .to("#section-map .item-1", tweenMapDuration * 0.25, { opacity: 0 }, tweenMapDuration * 0.75)
-  .to("#section-map .background-1", tweenMapDuration * 0.25, { scale: 3, opacity: 0, transformOrigin:"70% 70%" }, tweenMapDuration * 0.75)
+  .to("#section-map .background-1", 0.75, { scale: 3, opacity: 0, transformOrigin:"65% 80%" }, 0.5)
 
   // section 2 in
   // .from(before2, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, tweenMapDuration)
   // .from(after2, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, tweenMapDuration)
   // .to("#section-map .item-2", tweenMapDuration * 0.25, { opacity: 1 }, tweenMapDuration)
-  .to("#section-map .background-2", tweenMapDuration * 0.5, { opacity: 1, scale: 1 }, tweenMapDuration)
+  .to("#section-map .background-2", 2, { opacity: 1, scale: 1 }, 0)
 
 var sceneMap = new ScrollMagic.Scene({
     triggerElement: '#section-map',
     triggerHook: 0,
-    duration: '100%'
+    duration: '200%'
   })
   .setPin('#section-map', { pushFollowers: true })
   .on('leave', function(e) {

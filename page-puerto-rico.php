@@ -70,10 +70,12 @@
                 </div>
                 <div class="background-1 background"></div>
                 <div class="background-2 background"></div>
+                <div class="background-3 background">
+                    <iframe width="2560" height="1440" src="https://www.youtube.com/embed/sYfkdUA2Rxw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                </div>
                 <!-- <a data-lity="" href="https://www.youtube-nocookie.com/embed/ezQxonSFCaU?rel=0&amp;controls=0&amp;showinfo=0&rel=0&loop=1" class="center-block play">View storm path</a> -->
-                <a role="button" class="click" href="#">Click and drag to experience video in 360 degrees</a>
 
-                <div class="boundless-video"></div>
+                <!-- <div class="boundless-video"></div> -->
             </section><!-- #section-map -->
 
             <!-- GETTING TO THE HEART OF THE DAMAGE -->
