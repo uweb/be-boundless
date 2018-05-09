@@ -14,6 +14,7 @@
 
 @comotion: "../../immersive-stories/img/comotion";
 @pr: "../../immersive-stories/img/puerto-rico";
+@law: "../../immersive-stories/img/law";
 @ess: "../../immersive-stories/img/ess";
 /******
     @media @phone-only{}
@@ -1091,4 +1092,149 @@ div.hidden-part {
 #text-content-profiles {
     padding-top:30px;
     padding-bottom:30px;
+}
+
+
+
+/*******************************
+ * SECTION - MAP *
+ *******************************/
+ #section-map {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    iframe {
+        max-height: inherit;
+    }
+    a {
+        position: absolute;
+        bottom: 100px;
+        right: 100px;
+        background-color: white;
+        z-index: 100;
+    }
+    .item {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        z-index: 5;
+
+        .headline {
+            position: relative;
+            width: 90%;
+            max-width: 890px;
+            margin: 0 auto;
+            font-size: 28px;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 30px 0;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            text-shadow: 0 0 3px rgba(37,37,37,0.65);
+
+            .source {
+                font-size: 16px;
+                position: absolute;
+                right: 0;
+                bottom: -30px;
+            }
+        }
+
+        .headline:after,
+        .headline:before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 120px;
+            height: 10px;
+            background-color: white;
+            opacity: 0.5;
+        }
+
+        .headline:after {
+            margin-top: 30px;
+        }
+
+        .headline:before {
+            top: -10px;
+            right: 0;
+        }
+    }
+
+    .item-1 {
+        .headline:before {
+            opacity: 0.5;
+        }
+
+        .headline:after {
+            opacity: 0.5;
+        }
+    }
+
+    .item-2 {
+        opacity: 0;
+
+        .headline:before {
+            opacity: 0.5;
+        }
+
+        .headline:after {
+            opacity: 0.5;
+        }
+    }
+
+    .background {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .background-graph {
+        z-index: 4;
+        background-image: url("@{law}/map-graph.png");
+
+        .graph-line {
+            position: absolute;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+                width: 100%;
+                height: 100%;
+                max-width: 1185px;
+                opacity: 0.3;
+            }
+        }
+    }
+
+    .background-1 {
+        z-index: 3;
+        background-image: url("@{pr}/map-1-loc.jpg");
+    }
+
+    .background-2 {
+        z-index: 2;
+        background-image: url("@{pr}/map-2-loc.jpg");
+    }
+    @media @tablet-portrait-up {
+        .item {
+            .headline {
+                font-size: 48px;
+            }
+        }
+    }
 }
