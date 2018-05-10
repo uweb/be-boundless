@@ -3,7 +3,7 @@
         $slug = 'puerto-rico';
         $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/" . $slug . ".css' type='text/css' media='all' />";
         $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/" . $slug . ".min.js' type='text/javascript'></script>";
-        $storyCodes = 'PRERFD';
+        $storyCodes = 'PRERFD,PHIGFD';
         $storyAppeal = 'Support Lilo Pozzo’s research team in their efforts to improve community health by contributing to the Puerto Rico Energy Recovery Fund.';
         get_header("campaign-v2");
 ?>
@@ -64,15 +64,15 @@
 
             <!-- MAP + STORM PATH ANIMATION -->
             <section id="section-map">
-                <div class="item-1 item">
+                <!-- <div class="item-1 item">
                 </div>
                 <div class="item-2 item">
+                </div> -->
+                <div class="background-3 background">
+                    <iframe width="2560" height="1440" src="https://www.youtube.com/embed/ezQxonSFCaU?rel=0&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="background-1 background"></div>
                 <div class="background-2 background"></div>
-                <div class="background-3 background">
-                    <iframe width="2560" height="1440" src="https://www.youtube.com/embed/sYfkdUA2Rxw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                </div>
                 <!-- <a data-lity="" href="https://www.youtube-nocookie.com/embed/ezQxonSFCaU?rel=0&amp;controls=0&amp;showinfo=0&rel=0&loop=1" class="center-block play">View storm path</a> -->
 
                 <!-- <div class="boundless-video"></div> -->
