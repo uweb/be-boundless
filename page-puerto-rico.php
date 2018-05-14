@@ -45,15 +45,15 @@
         <main id="main_content">
 
             <!-- INTRO PARAGRAPHS -->
-            <section class="text-block start white">
+            <section class="text-block white">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy">
-                            <p class="first">The stout house built into a hillside in Jayuya, a rural municipality in the mountains of central Puerto Rico, hasn’t been connected to the electricity grid for six months. Someone inside suffers from sleep apnea, and his family has relied on a noisy generator — and the gas it consumes — to power the machine he needs each night.
+                            <p class="first">The stout house built into a hillside in Jayuya, a rural municipality in the mountains of central Puerto Rico, hasn’t been connected to the electrical grid for six months. Someone inside suffers from sleep apnea, and his family has relied on a noisy generator — and the gas it consumes — to power the machine he needs each night.
 
                             <p>Outside, under the thin smile of a crescent moon, four engineers from the University of Washington complete their work. Soon a new solar/battery nanogrid will power the sleep-aid machine: no gas, no fumes, no cacophony.</p>
 
-                            <p>Doctoral students Mareldi Ahumada and Wesley Tatum secure four flexible solar panels to the roof using yellow rope. Anya Raj, ’17, feeds wires from the panels through a hole in the roof, while sophomore Hugo Pontes illuminates Raj’s efforts with his smartphone.</p>
+                            <p>Doctoral students Mareldi Ahumada Parás and Wesley Tatum secure four flexible solar panels to the roof using yellow rope. Anya Raj, ’17, feeds wires from the panels through a hole in the roof, while sophomore Hugo Pontes illuminates Raj’s efforts with his smartphone.</p>
 
                             <p>The team connects the panels to a battery inside the house that will be charged by tomorrow’s sun. They finish just as the mosquitoes emerge.</p>
 
@@ -64,22 +64,15 @@
 
             <!-- MAP + STORM PATH ANIMATION -->
             <section id="section-map">
-                <!-- <div class="item-1 item">
-                </div>
-                <div class="item-2 item">
-                </div> -->
-                <div class="background-3 background">
-                    <iframe width="2560" height="1440" src="https://www.youtube.com/embed/ezQxonSFCaU?rel=0&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="background-1 background"></div>
-                <div class="background-2 background"></div>
-                <!-- <a data-lity="" href="https://www.youtube-nocookie.com/embed/ezQxonSFCaU?rel=0&amp;controls=0&amp;showinfo=0&rel=0&loop=1" class="center-block play">View storm path</a> -->
+                <a role="button" class="click" href="#">View storm path</a>
 
-                <!-- <div class="boundless-video"></div> -->
+                <img alt="Puerto Rico map" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/puerto-rico/map-2-loc.jpg' ?>" />
+
+                <div class="boundless-video"></div>
             </section><!-- #section-map -->
 
             <!-- GETTING TO THE HEART OF THE DAMAGE -->
-            <section class="text-block start white small-top">
+            <section class="text-block white small-top">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy">
@@ -90,23 +83,23 @@
                             <div class="slideshow-container">
                                 <div id="eng-slideshow" class="foster-slideshow">
                                     <div>
-                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_1.jpg' ?>" alt="ALT TEXT HERE">
-                                        <p>CAPTION GOES HERE</p>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_1.jpg' ?>" alt="Lilo Pozzo">
+                                        <p>Lilo Pozzo instructs Juan on using the nanogrid that will power his mother’s refrigerator.</p>
                                     </div>
 
                                     <div>
-                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_2.jpg' ?>" alt="ALT TEXT HERE">
-                                        <p>CAPTION GOES HERE</p>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_2.jpg' ?>" alt="Marvi Matos and the UW team">
+                                        <p>Marvi Matos (center) presents the next day’s schedule to the UW team.</p>
                                     </div>
 
                                     <div>
-                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_3.jpg' ?>" alt="ALT TEXT HERE">
-                                        <p>CAPTION GOES HERE</p>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_3.jpg' ?>" alt="A UW team member sitting">
+                                        <p>A UW team member rests after interviewing a family in Jayuya.</p>
                                     </div>
 
                                     <div>
-                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_4.jpg' ?>" alt="ALT TEXT HERE">
-                                        <p>CAPTION GOES HERE</p>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_4.jpg' ?>" alt="Mareldi Ahumada Parás installing solar panel">
+                                        <p>Mareldi Ahumada Parás helps install a donated solar/battery nanogrid.</p>
                                     </div>
 
                                 </div>
@@ -133,7 +126,7 @@
                     <div class="img"></div>
                     <div class="caption">
                         <div class="group">
-                            <h2>Juyuya Community /</h2>
+                            <h2>Jayuya Community /</h2>
                             <h3 class="headline">FIRSTNAME LASTNAME</h3>
                             <div class="inner">
                                 <div class="more">
@@ -157,7 +150,7 @@
                     <div class="img"></div>
                     <div class="caption">
                         <div class="group">
-                            <h2>Juyuya Community /</h2>
+                            <h2>Jayuya Community /</h2>
                             <h3 class="headline">FIRSTNAME LASTNAME</h3>
                             <div class="inner">
                                 <div class="more">
@@ -183,7 +176,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy">
-                            <h2>Exposing the blue beneath</h2>
+                            <h2>Uncovering the hidden harm</h2>
                             <p>Blue FEMA tarps are still common, but many overt signs of storm damage have been repaired: People have cleared debris, replaced windows and patched roofs. But the UW researchers have documented myriad “hidden” adjustments that residents have made since losing power. These include eating canned and preserved food, despite the lower nutritional value, or making daily trips to a doctor’s office for refrigerated medicine.</p>
 
                             <p>“You adapt because you have to,” says Pozzo. “But you never achieve the normal life you had back when you had power.”</p>
@@ -191,23 +184,23 @@
                             <div class="slideshow-container">
                                 <div id="eng-slideshow" class="foster-slideshow2">
                                     <div>
-                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_1.jpg' ?>" alt="ALT TEXT HERE">
-                                        <p>CAPTION GOES HERE</p>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_1.jpg' ?>" alt="Roof covered in blue tarp">
+                                        <p>A home with a temporary roof in a sheltered valley of hilly Jayuya.</p>
                                     </div>
 
                                     <div>
-                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_2.jpg' ?>" alt="ALT TEXT HERE">
-                                        <p>CAPTION GOES HERE</p>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_2.jpg' ?>" alt="Jayuya electrical grid">
+                                        <p>Six months after Maria, many rural areas like Jayuya are still disconnected from the island’s electrical grid.</p>
                                     </div>
 
                                     <div>
-                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_3.jpg' ?>" alt="ALT TEXT HERE">
-                                        <p>CAPTION GOES HERE</p>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_3.jpg' ?>" alt="Puerto Rican flag">
+                                        <p>Due in part to steep topography, Jayuya remains largely disconnected from Puerto Rico’s power grid.</p>
                                     </div>
 
                                     <div>
-                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_4.jpg' ?>" alt="ALT TEXT HERE">
-                                        <p>CAPTION GOES HERE</p>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_4.jpg' ?>" alt="Yohan Min adjusting solar panel">
+                                        <p>Yohan Min adjusts a solar panel donated by the UW team last fall.</p>
                                     </div>
 
                                 </div>
@@ -221,7 +214,7 @@
                             <p>“This storm’s lasting impact is that it uncovered the vulnerable places of Jayuya,” says Maria Pérez, a local community organizer. “It showed us the people in our midst who didn’t have help, who were living in inhumane conditions.”</p>
 
                             <blockquote>
-                                You adapt because you have to, but you never achieve the normal life you had back when you had power <span>— <span class="name">Lilo Pozzo</span></span>
+                                You adapt because you have to, but you never achieve the normal life you had back when you had power. <span>— <span class="name">Lilo Pozzo</span></span>
                             </blockquote>
                         </div><!-- .col-md-10 .col-md-offset-1 .copy -->
                     </div><!-- .row -->
@@ -236,14 +229,14 @@
                                 <circle id="play-cir" fill="none" stroke="#fff" stroke-width="7" stroke-miterlimit="10" cx="75" cy="75" r="55"></circle>
                                 <path id="play-tri" fill="#fff" d="M57.767,46.187L110.382,75l-52.616,28.816"></path>
                             </svg>
-                            <div>Watch Story</div>
+                            <div>Watch story</div>
                         </div>
                         <div class="video-caption">
-                            <h3>FIRST NAME LAST NAME</h3>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan nisi eget nulla pharetra suscipit. Curabitur id mi rhoncus, molestie orci sed, commodo eros. Maecenas vitae mollis est
+                            <h3>Nani</h3>
+                            Nani and her family live in Utuado, a rural region just west of Jayuya. She describes the impact of Hurricane Maria on three generations of her family.
                         </div>
                     </a>
-                <img alt="Fabric" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/puerto-rico/video.jpg' ?>" />
+                <img alt="Nani" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/puerto-rico/video.jpg' ?>" />
             </section>
 
             <!-- DEDICATED TO A SUSTAINABLE FUTURE -->
@@ -252,7 +245,7 @@
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy">
                             <h2>Dedicated to a sustainable future</h2>
-                            <p>The UW team first visited in November 2017, gathering data and donating four solar/battery systems. They expanded their goals for the March trip, buying and assembling three types of solar/battery systems. The smallest can power a miniature refrigerator for storing medical supplies like insulin, while the largest can power more complex devices, such as an oxygen concentrator or a full-size refrigerator.</p>
+                            <p>The UW team first visited Jayuya in November 2017, gathering data and donating four solar/battery systems. They expanded their goals for the March trip, buying and assembling three types of solar/battery systems. The smallest can power a miniature refrigerator for storing medical supplies like insulin, while the largest can power more complex devices, such as an oxygen concentrator or a full-size refrigerator.</p>
 
                             <p>“We want these systems to be simple for the patients and their caregivers,” Ahumada says. “There’s no point in donating something that they’re unable to use easily.”</p>
 
@@ -260,7 +253,7 @@
 
                             <p>“We can combine the information that the data loggers record with information from the interviews to design even more effective microgrids,” says Chanaka Keerthisinghe, a postdoctoral researcher in electrical engineering.</p>
 
-                            <p>The data that the researchers collected in March, which should offer clues to more needs they can help uncover and address, awaits analysis. The team is planning another trip to Jayuya this summer. Partners in Jayuya stand ready to assist in their efforts.</p>
+                            <p>The data that the researchers collected in March, which should offer clues to more needs they can help uncover and address, awaits analysis. The team is planning another trip to Jayuya this summer. Partners in the community stand ready to assist in their efforts.</p>
 
                             <p>After installing their final nanogrid, the UW team passed a boy playing in front of his powerless house. He was wearing a Captain America costume and saluting passing cars. A nearby house sported the island’s flag with a handwritten message: Puerto Rico se levanta.</p>
 
@@ -342,18 +335,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy expandable-container">
-                            <div class="visible-part">
                                 <h2>UW collaborators</h2>
-                                <div style="text-align: center"><a id="expander" class="expander" href="#" role="button">Show more</a></div>
-                            </div>
-                            <div class="hidden-part">
-                                <strong>Dan Schwartz</strong>, director of the Clean Energy Institute and professor of chemical engineering<br />
-                                <strong>Charbel El Bcheraoui</strong>, assistant professor of global health at the Institute for Health Metrics and Evaluation<br />
-                                <strong>Yougjun Choe</strong>, assistant professor of industrial and systems engineering<br />
-                                <strong>Daniel Kirschen</strong>, professor of electrical engineering<br />
-                                <strong>Jessica Kaminsky</strong>, assistant professor of civil and environmental engineering<br />
-                                <div style="text-align: center"><a class="expander less" href="#" role="button">Show less</a></div>
-                            </div>
+                                <strong>Dan Schwartz</strong>, Director of the Clean Energy Institute and Professor of Chemical Engineering<br />
+                                <strong>Charbel El Bcheraoui</strong>, Assistant Professor of Global Health at the Institute for Health Metrics and Evaluation<br />
+                                <strong>Yougjun Choe</strong>, Assistant Professor of Industrial and Systems Engineering<br />
+                                <strong>Daniel Kirschen</strong>, Professor of Electrical Engineering<br />
+                                <strong>Jessica Kaminsky</strong>, Assistant Professor of Civil and Environmental Engineering<br /><br />
                         </div>
                     </div>
                 </div>

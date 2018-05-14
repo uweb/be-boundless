@@ -195,51 +195,41 @@ var scrollIntro = new ScrollMagic.Scene({
  ***************************/
 
 // animation vars
-// var before1 = CSSRulePlugin.getRule("#section-map .item-1 .headline:before");
-// var before2 = CSSRulePlugin.getRule("#section-map .item-2 .headline:before");
-// var after1 = CSSRulePlugin.getRule("#section-map .item-1 .headline:after");
-// var after2 = CSSRulePlugin.getRule("#section-map .item-2 .headline:after");
-var tweenMapDuration = 1;
+// var tweenMapDuration = 1;
 
-// build tween
-var tweenMap = new TimelineMax()
+// // build tween
+// var tweenMap = new TimelineMax()
 
-  // section 1 out
-  // .to(before1, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, 0)
-  // .to(after1, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, 0)
-  // .to("#section-map .item-1", tweenMapDuration * 0.25, { opacity: 0 }, tweenMapDuration * 0.75)
-  .to("#section-map .background-1", 0.75, { scale: 3, opacity: 0, transformOrigin:"65% 80%" }, 0.5)
+//   // section 1 out
+//   .to("#section-map .background-1", 0.75, { scale: 3, opacity: 0, transformOrigin:"65% 80%" }, 0.5)
 
-  // section 2 in
-  // .from(before2, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, tweenMapDuration)
-  // .from(after2, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, tweenMapDuration)
-  // .to("#section-map .item-2", tweenMapDuration * 0.25, { opacity: 1 }, tweenMapDuration)
-  .to("#section-map .background-2", 2, { opacity: 1, scale: 1 }, 1)
-  .to("#section-map .background-2", 2, { opacity: 0, scale: 1 }, 2)
-  .to("#section-map .background-3", 3, { opacity: 1, scale: 1 }, "-=2")
+//   // section 2 in
+//   .to("#section-map .background-2", 2, { opacity: 1, scale: 1 }, 1)
+//   .to("#section-map .background-2", 2, { opacity: 0, scale: 1 }, 2)
+//   .to("#section-map .background-3", 3, { opacity: 1, scale: 1 }, "-=2")
 
-var sceneMap = new ScrollMagic.Scene({
-    triggerElement: '#section-map',
-    triggerHook: 0,
-    duration: '300%'
-  })
-  .setPin('#section-map', { pushFollowers: true })
-  .on('leave', function(e) {
-    console.log ( 'map leave' );
-    if(e.scrollDirection === 'REVERSE') {
-      $('#section-map').css({
-        'position': 'relative'
-      });
-    } else {
-      // $('#section-map').css({
-      //   'position': 'fixed',
-      //   'top': 0,
-      //   'left': 0
-      // });
-    }
-  })
-  .setTween(tweenMap)
-  .addTo(controllerComo);
+// var sceneMap = new ScrollMagic.Scene({
+//     triggerElement: '#section-map',
+//     triggerHook: 0,
+//     duration: '300%'
+//   })
+//   .setPin('#section-map', { pushFollowers: true })
+//   .on('leave', function(e) {
+//     console.log ( 'map leave' );
+//     if(e.scrollDirection === 'REVERSE') {
+//       $('#section-map').css({
+//         'position': 'relative'
+//       });
+//     } else {
+//       // $('#section-map').css({
+//       //   'position': 'fixed',
+//       //   'top': 0,
+//       //   'left': 0
+//       // });
+//     }
+//   })
+//   .setTween(tweenMap)
+//   .addTo(controllerComo);
 
  /***************************
    * Animation: Videos       *
