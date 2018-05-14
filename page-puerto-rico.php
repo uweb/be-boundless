@@ -66,7 +66,7 @@
             <section id="section-map">
                 <a role="button" class="click" href="#">View storm path</a>
 
-                <img alt="Puerto Rico map" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/puerto-rico/map-2-loc.jpg' ?>" />
+                <div id="bg"><img alt="Puerto Rico map" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/puerto-rico/map-2-loc.jpg' ?>" /></div>
 
                 <div class="boundless-video"></div>
             </section><!-- #section-map -->
