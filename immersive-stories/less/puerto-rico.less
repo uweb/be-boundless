@@ -326,7 +326,7 @@ blockquote {
             }
         }
         @media (max-width: 768px) {
-            background-image: url(../../immersive-stories/img/comotion/HEADER.jpg);
+            background-image: url("@{pr}/header.jpg");
             .background-size(cover);
             background-position: right center;
             background-repeat: no-repeat;
@@ -1109,8 +1109,10 @@ div.hidden-part {
         max-height: inherit;
     }
     a {
-        right: 10%;
-        bottom: 10%;
+        right: 5%;
+        bottom: 20%;
+        left: inherit;
+        width: 15ch;
     }
     #bg {
         height: 75vh;
