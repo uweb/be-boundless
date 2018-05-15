@@ -38,7 +38,12 @@ html {
     height: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    //background-color: #efeeea;
+}
+@media only screen and (max-width: 767px) {
+    body {
+        margin-top: 0;
+    }
+
 }
 main {
     margin-top: 20px;
@@ -175,7 +180,6 @@ blockquote {
         content: open-quote;
         font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
         font-size: 200%;
-        // float: left;
         line-height: 1;
         position: absolute;
         margin-left: -35px;
@@ -192,6 +196,9 @@ blockquote {
         &.name {
             color: #818181;
         }
+    }
+    @media @phone-only{
+        font-size: 1.4em;
     }
 }
 
@@ -295,7 +302,6 @@ blockquote {
             background-position: right top;
 
             #vid-overlay {
-                //background: rgba(0,0,0,0.2);
             }
 
             .intro-body {
@@ -331,7 +337,6 @@ blockquote {
             background-position: right center;
             background-repeat: no-repeat;
             #vid-overlay{
-                //display: none;
             }
             video {
                 display: none;
@@ -361,7 +366,6 @@ blockquote {
         @media @tablet-landscape-up {
 
             h1 {
-                //font-size: 4.5vw;
             }
 
             .intro-body {
@@ -602,13 +606,11 @@ blockquote {
         .left.float-image {
             float: left;
             margin-left: 0;
-            //padding: 14px 30px;
         }
 
         .right.float-image {
             float: right;
             margin-right: 0;
-            //padding: 14px 30px;
         }
         .right {
             text-align: left;
@@ -616,8 +618,6 @@ blockquote {
     }
 
     @media @tablet-landscape-up {
-        //.float-image { width: 45vw; }
-
         .left.float-image {
             margin-left: -10vw;
         }
@@ -628,14 +628,9 @@ blockquote {
     }
 
     @media @desktop-up {
-        //.float-image { width: 55vw; }
-
         .left.float-image {
-            //margin-left: -15vw;
         }
-
         .right.float-image {
-            //margin-right: -15vw;
         }
     }
 
@@ -646,7 +641,6 @@ blockquote {
 a.expander {
     color: @text-color;
     font-weight: 500;
-    //font-size: 16px;
     font-family: @font-family-headline;
     text-transform: uppercase;
     display: inline-block;
@@ -656,11 +650,9 @@ a.expander {
     &.active,
     &:focus {
         color: @lightgold;
-        //.translate(0, -5px);
         &:after {
             .rotate(45deg);
             border-color: @lightgold;
-            //.transform-origin(center center);
         }
     }
     &:after {
@@ -679,7 +671,6 @@ a.expander {
     &.less {
         color: @lightgold;
         margin-top: 30px;
-        //color: @darkgold;
         &:after {
             border-color: @lightgold;
             .rotate(-135deg);
@@ -703,7 +694,6 @@ div.hidden-part {
     &.show-part {
         max-height: 9999px;
         opacity: 1;
-        // margin-top: 50px;
         padding: 20px 0;
     }
 }
@@ -717,7 +707,7 @@ div.hidden-part {
     background: #F2F2F2;
     &.text-block .copy.expandable-container {
         padding: 20px 90px 30px;
-        @media @phone-only {  // (max-width: 599px)
+        @media @phone-only {
             padding: 20px;
         }
     }
@@ -827,10 +817,7 @@ div.hidden-part {
 
 .lity-close, .lity-close:hover, .lity-close:focus, .lity-close:active {
     display: block;
-    // position: absolute;
     border: none;
-    // top: -55px;
-    // right: 0;
     z-index: 9999;
     text-indent: -9999px;
     width: 55px;
@@ -910,12 +897,24 @@ div.hidden-part {
     float: right;
     width: 50%;
     margin: 20px 30px;
+    @media (max-width: 992px) {
+        float: none;
+        clear:  both;
+        width: 100%;
+        margin: 0 0 40px;
+    }
     .slick-slider {
         margin: 0;
     }
     .slick-dots {
         bottom: inherit;
     }
+}
+
+#eng-slideshow.slideshow-container {
+    float: none;
+    width: 100%;
+    margin: 40px 0 60px;
 }
 
 /*******************************
@@ -925,6 +924,9 @@ div.hidden-part {
     padding-bottom:100vh; // very specific to what scrollmagic needs
     .img {
         background-position: center top;
+        @media ( max-width: 992px ) {
+            background-position: left bottom;
+        }
     }
     .item-1 {
         z-index:4;
@@ -986,7 +988,6 @@ div.hidden-part {
                 position:absolute;
                 width:50%;
                 font-size: 0.9em;
-                // font-family: "Encode Sans Thin",sans-serif;
                 font-weight: 300;
                 right: 0;
                 padding-right: 5%;
@@ -997,7 +998,7 @@ div.hidden-part {
                     font-size: 2em;
                     text-transform: uppercase;
                     margin: 0;
-                    white-space: nowrap;
+                    // white-space: nowrap;
                     color: @darkgray;
                 }
                 .inner {
@@ -1027,9 +1028,7 @@ div.hidden-part {
                     position:relative;
                     z-index:1;
                     display: inline-block;
-                    /*height: 21px;*/
                     cursor: pointer;
-                    // background-color: @lightgold;
                     margin-left: 7px;
                     &:before {
                         content: "";
@@ -1060,10 +1059,7 @@ div.hidden-part {
 
                     }
                     svg#icon-eye {
-                        // margin-right: 6px;
                         width: 25px;
-                        /*background-color: white;*/
-
                         transform: skewX(15deg);
                         .icon-line {
                             stroke: black;
@@ -1085,6 +1081,7 @@ div.hidden-part {
             }
         }
     }
+
 }
 
 /*******************************

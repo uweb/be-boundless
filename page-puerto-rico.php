@@ -151,7 +151,7 @@
                     <div class="caption">
                         <div class="group">
                             <h2>Jayuya Community /</h2>
-                            <h3 class="headline">FIRSTNAME LASTNAME</h3>
+                            <h3 class="headline">Ernesto Torres Rodriguez</h3>
                             <div class="inner">
                                 <div class="more">
                                     <span class="text">Read more</span>
@@ -164,7 +164,7 @@
                                         </svg>
                                     </div>
                                 </div>
-                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et nunc sit amet quam tristique luctus. Nunc et felis erat. Cras luctus sem in enim varius tempus. Aliquam erat volutpat. Nullam in magna a mauris cursus sodales et faucibus odio. Maecenas non velit vitae neque luctus convallis. Suspendisse vel enim ut nisi egestas consequat. Phasellus a augue at turpis lacinia semper sed non quam.</p>
+                                <p class="description">A nanogrid donated by UW researchers will get his elderly mother’s refrigerator up and running for the first time in six months, which will help with her restricted diet and daily insulin injections.</p>
                             </div>
                         </div>
                     </div>
@@ -181,8 +181,25 @@
 
                             <p>“You adapt because you have to,” says Pozzo. “But you never achieve the normal life you had back when you had power.”</p>
 
-                            <div class="slideshow-container">
-                                <div id="eng-slideshow" class="foster-slideshow2">
+
+                            <p>Pozzo chose Jayuya for this study because her spouse, Marvi Matos, a chemical engineer, grew up there. Like many with family ties to Puerto Rico, the couple sent supplies to the island after the hurricane. But a month after Maria, barely 20 percent of the electricity grid had been restored.</p>
+
+                            <p>Pozzo and Matos envisioned using their expertise to unearth the storm’s impact on health and energy infrastructure. Pozzo recruited partners from the School of Public Health and the College of Engineering. They received funding for the study from the Clean Energy Institute and the Global Innovation Fund, while private donations covered the cost of the nanogrids. Contacts in Jayuya connected them with community organizers and needy families.</p>
+
+                            <p>“This storm’s lasting impact is that it uncovered the vulnerable places of Jayuya,” says Maria Pérez, a local community organizer. “It showed us the people in our midst who didn’t have help, who were living in inhumane conditions.”</p>
+
+                            <blockquote>
+                                You adapt because you have to, but you never achieve the normal life you had back when you had power. <span>— <span class="name">Lilo Pozzo</span></span>
+                            </blockquote>
+
+                            <div id="eng-slideshow" class="slideshow-container">
+                                <div class="foster-slideshow2">
+                                    <div>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/COMMUNITY_PHOTO.jpg' ?>" alt="Community meeting in Jayuya">
+                                        <p>CAPTION ABOUT COMMUNITY MEETING</p>
+                                    </div>
+
+
                                     <div>
                                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_1.jpg' ?>" alt="Roof covered in blue tarp">
                                         <p>A home with a temporary roof in a sheltered valley of hilly Jayuya.</p>
@@ -206,23 +223,27 @@
                                 </div>
                             </div>
 
+                            <h2>Dedicated to a sustainable future</h2>
+                            <p>The UW team first visited Jayuya in November 2017, gathering data and donating four solar/battery systems. They expanded their goals for the March trip, buying and assembling three types of solar/battery systems. The smallest can power a miniature refrigerator for storing medical supplies like insulin, while the largest can power more complex devices, such as an oxygen concentrator or a full-size refrigerator.</p>
 
-                            <p>Pozzo chose Jayuya for this study because her spouse, Marvi Matos, a chemical engineer, grew up there. Like many with family ties to Puerto Rico, the couple sent supplies to the island after the hurricane. But a month after Maria, barely 20 percent of the electricity grid had been restored.</p>
+                            <p>“We want these systems to be simple for the patients and their caregivers,” Ahumada says. “There’s no point in donating something that they’re unable to use easily.”</p>
 
-                            <p>Pozzo and Matos envisioned using their expertise to unearth the storm’s impact on health and energy infrastructure. Pozzo recruited partners from the School of Public Health and the College of Engineering. They received funding for the study from the Clean Energy Institute and the Global Innovation Fund, while private donations covered the cost of the nanogrids. Contacts in Jayuya connected them with community organizers and needy families.</p>
+                            <p>The researchers also installed 11 data loggers into some of the nanogrids. These devices will record information on energy use for download during future visits.</p>
 
-                            <p>“This storm’s lasting impact is that it uncovered the vulnerable places of Jayuya,” says Maria Pérez, a local community organizer. “It showed us the people in our midst who didn’t have help, who were living in inhumane conditions.”</p>
+                            <p>“We can combine the information that the data loggers record with information from the interviews to design even more effective microgrids,” says Chanaka Keerthisinghe, a postdoctoral researcher in electrical engineering.</p>
 
-                            <blockquote>
-                                You adapt because you have to, but you never achieve the normal life you had back when you had power. <span>— <span class="name">Lilo Pozzo</span></span>
-                            </blockquote>
+                            <p>The data that the researchers collected in March, which should offer clues to more needs they can help uncover and address, awaits analysis. The team is planning another trip to Jayuya this summer. Partners in the community stand ready to assist in their efforts.</p>
+
+                            <p>After installing their final nanogrid, the UW team passed a boy playing in front of his powerless house. He was wearing a Captain America costume and saluting passing cars. A nearby house sported the island’s flag with a handwritten message: Puerto Rico se levanta.</p>
+
+                            <p><b>Puerto Rico rises.</b></p>
                         </div><!-- .col-md-10 .col-md-offset-1 .copy -->
                     </div><!-- .row -->
                 </div><!-- .container -->
             </section><!-- .text-block .start .white -->
 
             <!-- NEW VIDEO SECTION BASED ON LIBRARIES -->
-            <section id="video">
+            <!-- <section id="video">
                     <a data-lity="" href="https://www.youtube.com/embed/-zYESWG9HxE?autoplay=1&amp;rel=0&amp;showinfo=0" class="center-block play">
                         <div class="icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="125" height="125" viewBox="0 0 150 150" class="opening-slash">
@@ -237,10 +258,10 @@
                         </div>
                     </a>
                 <img alt="Nani" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/puerto-rico/video.jpg' ?>" />
-            </section>
+            </section> -->
 
             <!-- DEDICATED TO A SUSTAINABLE FUTURE -->
-            <section class="text-block start white small-top">
+           <!--  <section class="text-block start white small-top">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy">
@@ -259,10 +280,10 @@
 
                             <p><b>Puerto Rico rises.</b></p>
 
-                        </div><!-- .col-md-10 .col-md-offset-1 .copy -->
-                    </div><!-- .row -->
-                </div><!-- .container -->
-            </section><!-- .text-block .start .white -->
+                        </div>
+                    </div>
+                </div>
+            </section> -->
 
             <!-- PROFILES OF RESEARCHERS -->
             <section id="profiles">
