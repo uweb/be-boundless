@@ -166,16 +166,15 @@ p.first::first-letter {
     margin-right: 5px;
 }
 
-blockquote {
+blockquote, .byline {
     color: black;
     line-height: normal;
     font-family: "Encode Sans Light",sans-serif;
     font-size: 1.7em;
     border-left: none;
-    margin: 0;
+    margin: 0 0 0 35px;
     padding: 0;
     position: relative;
-    margin-left: 35px;
     &:before, &:after {
         content: open-quote;
         font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
@@ -183,25 +182,28 @@ blockquote {
         line-height: 1;
         position: absolute;
         margin-left: -35px;
-
     }
     &:after {
         content: close-quote;
         float: right;
         margin-left: 5px;
     }
-    span {
-        display: inline-block;
-        white-space: nowrap;
-        &.name {
-            color: #818181;
-        }
-    }
-    @media @phone-only{
-        font-size: 1.4em;
+}
+
+.byline {
+    margin: 10px 0 0;
+    text-align: center;
+    color: #818181;
+    &:before, &:after {
+        content: none;
     }
 }
 
+@media @phone-only{
+    .byline, blockquote {
+        font-size: 1.4em;
+    }
+}
 
 
 /*******************************

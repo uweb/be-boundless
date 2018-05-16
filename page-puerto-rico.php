@@ -127,7 +127,7 @@
                     <div class="caption">
                         <div class="group">
                             <h2>Jayuya Community /</h2>
-                            <h3 class="headline">FIRSTNAME LASTNAME</h3>
+                            <h3 class="headline">Alejandro De Jesús Quiles</h3>
                             <div class="inner">
                                 <div class="more">
                                     <span class="text">Read more</span>
@@ -140,7 +140,7 @@
                                         </svg>
                                     </div>
                                 </div>
-                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et nunc sit amet quam tristique luctus. Nunc et felis erat. Cras luctus sem in enim varius tempus. Aliquam erat volutpat. Nullam in magna a mauris cursus sodales et faucibus odio. Maecenas non velit vitae neque luctus convallis. Suspendisse vel enim ut nisi egestas consequat. Phasellus a augue at turpis lacinia semper sed non quam.</p>
+                                <p class="description">He sits next to his wife’s adjustable bed, which will be powered by a UW-installed nanogrid until their home in Jayuya is reconnected to the island’s electrical grid.</p>
                             </div>
                         </div>
                     </div>
@@ -189,8 +189,9 @@
                             <p>“This storm’s lasting impact is that it uncovered the vulnerable places of Jayuya,” says Maria Pérez, a local community organizer. “It showed us the people in our midst who didn’t have help, who were living in inhumane conditions.”</p>
 
                             <blockquote>
-                                You adapt because you have to, but you never achieve the normal life you had back when you had power. <span>— <span class="name">Lilo Pozzo</span></span>
+                                You adapt because you have to, but you never achieve the normal life you had back when you had power.
                             </blockquote>
+                            <div class="byline">Lilo Pozzo</div>
 
                             <div id="eng-slideshow" class="slideshow-container">
                                 <div class="foster-slideshow2">
