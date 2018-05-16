@@ -924,11 +924,14 @@ div.hidden-part {
 *******************************/
 #section-profiles {
     padding-bottom:100vh; // very specific to what scrollmagic needs
+    @media (max-width: 992px) {
+        padding-bottom: 0;
+    }
     .img {
-        background-position: center top;
-        @media ( max-width: 992px ) {
-            background-position: left bottom;
-        }
+        background-position: left bottom;
+        // @media ( max-width: 992px ) {
+        //     background-position: left bottom;
+        // }
     }
     .item-1 {
         z-index:4;
@@ -1084,6 +1087,73 @@ div.hidden-part {
         }
     }
 
+}
+@media (max-width: 992px) {
+    #section-profiles .item {
+        position: inherit;
+        height: auto;
+        overflow: inherit;
+        .img {
+            position: inherit;
+            z-index:0;
+            width:100%;
+            height:50vh;
+            background-size: cover;
+            display: block;
+        }
+        .caption {
+
+            background-color:rgba(0,0,0,0.5);
+            display: block;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            color: white;
+            position:relative;
+            z-index:1;
+            text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+            .group {
+                position: inherit;
+                width:100%;
+                font-size: 0.9em;
+                font-weight: 300;
+                right: 0;
+                padding: 10px;
+                h2 {
+                    margin-top: 0;
+                    font-size: 1em;
+                    color: white;
+                }
+                .headline {
+                    font-size: 1.5em;
+                    text-transform: uppercase;
+                    margin: 0;
+                    // white-space: nowrap;
+                    color: @darkgray;
+                    color: white;
+                }
+                .inner {
+                    position:relative;
+                    margin-top: 10px;
+                }
+                .description {
+                    z-index:0;
+                    position:inherit;
+                    top:0;
+                    left:0;
+                    opacity:1;
+                    color:inherit;
+                    margin: 0;
+                    pointer-events: none;
+                    transition:  all 300ms ease-out;
+                }
+                .more {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 
 /*******************************
