@@ -3,7 +3,7 @@
         $slug = 'puerto-rico';
         $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/" . $slug . ".css' type='text/css' media='all' />";
         $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/" . $slug . ".min.js' type='text/javascript'></script>";
-        $storyCodes = 'PRERFD,PHIGFD,OGAGIF';
+        $storyCodes = 'PRERFD,PHIGFD,OGAGIF,CEIGIF';
         $storyAppeal = 'Support Lilo Pozzo’s research team in their efforts to improve community health by contributing to the Puerto Rico Energy Recovery Fund.';
         get_header("campaign-v2");
 ?>
@@ -241,49 +241,6 @@
                     </div><!-- .row -->
                 </div><!-- .container -->
             </section><!-- .text-block .start .white -->
-
-            <!-- NEW VIDEO SECTION BASED ON LIBRARIES -->
-            <!-- <section id="video">
-                    <a data-lity="" href="https://www.youtube.com/embed/-zYESWG9HxE?autoplay=1&amp;rel=0&amp;showinfo=0" class="center-block play">
-                        <div class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="125" height="125" viewBox="0 0 150 150" class="opening-slash">
-                                <circle id="play-cir" fill="none" stroke="#fff" stroke-width="7" stroke-miterlimit="10" cx="75" cy="75" r="55"></circle>
-                                <path id="play-tri" fill="#fff" d="M57.767,46.187L110.382,75l-52.616,28.816"></path>
-                            </svg>
-                            <div>Watch story</div>
-                        </div>
-                        <div class="video-caption">
-                            <h3>Nani</h3>
-                            Nani and her family live in Utuado, a rural region just west of Jayuya. She describes the impact of Hurricane Maria on three generations of her family.
-                        </div>
-                    </a>
-                <img alt="Nani" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/puerto-rico/video.jpg' ?>" />
-            </section> -->
-
-            <!-- DEDICATED TO A SUSTAINABLE FUTURE -->
-           <!--  <section class="text-block start white small-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 col-md-offset-1 copy">
-                            <h2>Dedicated to a sustainable future</h2>
-                            <p>The UW team first visited Jayuya in November 2017, gathering data and donating four solar/battery systems. They expanded their goals for the March trip, buying and assembling three types of solar/battery systems. The smallest can power a miniature refrigerator for storing medical supplies like insulin, while the largest can power more complex devices, such as an oxygen concentrator or a full-size refrigerator.</p>
-
-                            <p>“We want these systems to be simple for the patients and their caregivers,” Ahumada says. “There’s no point in donating something that they’re unable to use easily.”</p>
-
-                            <p>The researchers also installed 11 data loggers into some of the nanogrids. These devices will record information on energy use for download during future visits.</p>
-
-                            <p>“We can combine the information that the data loggers record with information from the interviews to design even more effective microgrids,” says Chanaka Keerthisinghe, a postdoctoral researcher in electrical engineering.</p>
-
-                            <p>The data that the researchers collected in March, which should offer clues to more needs they can help uncover and address, awaits analysis. The team is planning another trip to Jayuya this summer. Partners in the community stand ready to assist in their efforts.</p>
-
-                            <p>After installing their final nanogrid, the UW team passed a boy playing in front of his powerless house. He was wearing a Captain America costume and saluting passing cars. A nearby house sported the island’s flag with a handwritten message: Puerto Rico se levanta.</p>
-
-                            <p><b>Puerto Rico rises.</b></p>
-
-                        </div>
-                    </div>
-                </div>
-            </section> -->
 
             <!-- PROFILES OF RESEARCHERS -->
             <section id="profiles">

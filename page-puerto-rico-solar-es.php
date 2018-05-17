@@ -3,7 +3,7 @@
         $slug = 'puerto-rico';
         $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/" . $slug . ".css' type='text/css' media='all' />";
         $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/" . $slug . ".min.js' type='text/javascript'></script>";
-        $storyCodes = 'PRERFD,PHIGFD,OGAGIF';
+        $storyCodes = 'PRERFD,PHIGFD,OGAGIF,CEIGIF';
         $storyAppeal = 'Support Lilo Pozzo’s research team in their efforts to improve community health by contributing to the Puerto Rico Energy Recovery Fund.';
         get_header("campaign-v2");
 ?>
@@ -27,7 +27,7 @@
             <div class="intro-body">
                 <div class="row">
                     <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-1 col-md-offset-1 col-lg-offset-2" id='intro-text'>
-                        <h1>DE RED EN RED</h1>
+                        <h1>De red en red</h1>
                         <span class="udub-slant"><span></span></span>
                         <p>Meses después del huracán María, miles de personas en las zonas rurales de Puerto Rico todavía carecen de electricidad. En colaboración con las comunidades locales, los investigadores de UW están trabajando para restablecer su electricidad.</p>
                     </div>
@@ -84,22 +84,22 @@
                                 <div id="eng-slideshow" class="foster-slideshow">
                                     <div>
                                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_1.jpg' ?>" alt="Lilo Pozzo">
-                                        <p>Lilo Pozzo instructs Juan on using the nanogrid that will power his mother’s refrigerator.</p>
+                                        <p>Lilo Pozzo enseña a Juan como usar un nanorred que le proporcionará electricidad al refrigerador de su mamá.</p>
                                     </div>
 
                                     <div>
                                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_2.jpg' ?>" alt="Marvi Matos and the UW team">
-                                        <p>Marvi Matos (center) presents the next day’s schedule to the UW team.</p>
+                                        <p>Marvi Matos (en el centro) presenta el horario del día siguiente al equipo de UW.</p>
                                     </div>
 
                                     <div>
                                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_3.jpg' ?>" alt="A UW team member sitting">
-                                        <p>A UW team member rests after interviewing a family in Jayuya.</p>
+                                        <p>Un miembro del equipo del UW descansa después de haber entrevistado a una familia en Jayuya.</p>
                                     </div>
 
                                     <div>
                                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_4.jpg' ?>" alt="Mareldi Ahumada Parás installing solar panel">
-                                        <p>Mareldi Ahumada Parás helps install a donated solar/battery nanogrid.</p>
+                                        <p>Mareldi Ahumada Parás ayuda instalar un nanorred solar con batería que fue donado.</p>
                                     </div>
 
                                 </div>
@@ -140,7 +140,7 @@
                                         </svg>
                                     </div>
                                 </div>
-                                <p class="description">He sits next to his wife’s adjustable bed, which will be powered by a UW-installed nanogrid until their home in Jayuya is reconnected to the island’s electrical grid.</p>
+                                <p class="description">Se sienta al lado de la cama ajustable de su esposa, que recibirá energía eléctrica de un nanorred instalado por la UW hasta que su casa en Jayuya se reconecta al red de suministro eléctrico de la isla.</p>
                             </div>
                         </div>
                     </div>
@@ -164,7 +164,7 @@
                                         </svg>
                                     </div>
                                 </div>
-                                <p class="description">A nanogrid donated by UW researchers will get his elderly mother’s refrigerator up and running for the first time in six months, which will help with her restricted diet and daily insulin injections.</p>
+                                <p class="description">Un nanorred donado por investigadores del UW tendrá la refrigeradora de su mama anciana funcionando por la primera vez en seis meses, lo cual ayudará con su dieta restringida y sus inyecciones diarias de insulina.</p>
                             </div>
                         </div>
                     </div>
@@ -176,7 +176,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy">
-                            <h2>Revelación del fondo azul</h2>
+                            <h2>Descubriendo el daño oculto</h2>
                             <p>Todavía es común ver las lonas azules de FEMA, pero muchos de los signos manifiestos del daño de la tormenta se han reparado: las personas han limpiado escombros, reemplazado ventanas y parchado techos. Pero los investigadores de UW han documentado un sinnúmero de ajustes “ocultos” que los residentes han hecho desde que perdieron la electricidad. Estos incluyen comer alimentos enlatados y en conserva, a pesar de su valor nutricional más bajo, o asistir diariamente al consultorio de un médico para obtener medicamentos refrigerados.</p>
 
                             <p>“Te adaptas porque no te queda otro remedio”, comenta Pozzo. “Pero nunca logras tener la vida normal que solías tener cuando tenías electricidad”.</p>
@@ -188,7 +188,7 @@
                             <p>“El impacto duradero de esta tormenta es que ha revelado los lugares vulnerables de Jayuya”, comenta María Pérez, una organizadora comunitaria local. “Nos mostró a las personas entre nosotros que no tenían ayuda, que estaban viviendo en condiciones inhumanas”.</p>
 
                             <blockquote>
-                                You adapt because you have to, but you never achieve the normal life you had back when you had power.
+                                Te adaptas porque no te queda otro remedio, pero nunca logras tener la vida normal que solías tener cuando tenías electricidad.
                             </blockquote>
                             <div class="byline">Lilo Pozzo</div>
 
@@ -196,28 +196,28 @@
                                 <div class="foster-slideshow2">
                                     <div>
                                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/COMMUNITY_PHOTO.jpg' ?>" alt="Community meeting in Jayuya">
-                                        <p>Residents share struggles and concerns with Jayuya’s municipal administrator at a community meeting held on March 20 in the central plaza.</p>
+                                        <p>Residentes comparten sus dificultades y preocupaciones con el administrador municipal de Jayuya en una reunión comunitaria el 20 de marzo en la plaza central.</p>
                                     </div>
 
 
                                     <div>
                                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_1.jpg' ?>" alt="Roof covered in blue tarp">
-                                        <p>A home with a temporary roof in a sheltered valley of hilly Jayuya.</p>
+                                        <p>Una casa con un techo temporal en un valle de las lomas de Jayuya.</p>
                                     </div>
 
                                     <div>
                                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_2.jpg' ?>" alt="Jayuya electrical grid">
-                                        <p>Six months after Maria, many rural areas like Jayuya are still disconnected from the island’s electrical grid.</p>
+                                        <p>Seis meses después de María, muchas áreas rurales como Jayuya permanecen desconectadas de la red de suministro eléctrico de la isla.</p>
                                     </div>
 
                                     <div>
                                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_3.jpg' ?>" alt="Puerto Rican flag">
-                                        <p>Due in part to steep topography, Jayuya remains largely disconnected from Puerto Rico’s power grid.</p>
+                                        <p>Debido en parte a su topografía empinado, la mayoría de Jayuya permanece desconectada de las redes de suministro eléctrico de Puerto Rico.</p>
                                     </div>
 
                                     <div>
                                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_4.jpg' ?>" alt="Yohan Min adjusting solar panel">
-                                        <p>Yohan Min adjusts a solar panel donated by the UW team last fall.</p>
+                                        <p>Yohan Min ajusta un panel solar donado el otoño pasado por el equipo del UW.</p>
                                     </div>
 
                                 </div>
@@ -234,6 +234,8 @@
                             <p>Los datos que los investigadores reunieron en marzo, los cuales deberían ofrecer pistas para que puedan ayudar a descubrir y abordar más necesidades, están en espera de análisis. El equipo está planificando otro viaje a Jayuya este verano. Los colaboradores en Jayuya esperan listos para ayudarlos en sus tareas.</p>
 
                             <p>Después de instalar la nanorred final, el equipo de UW pasó a un niño que jugaba frente a su casa, la cual carecía de electricidad. Llevaba puesto un disfraz de Capitán América y saludaba a los autos que pasaban. Una casa cercana tenía a la vista la bandera de la isla con un mensaje escrito a mano: <i>Puerto Rico se levanta</i>.</p>
+
+                            <p><b>Puerto Rico rises.</b></p>
                         </div><!-- .col-md-10 .col-md-offset-1 .copy -->
                     </div><!-- .row -->
                 </div><!-- .container -->
@@ -246,51 +248,51 @@
                         <li class="pax-1 navy" tabindex="0">
                             <div class="hider">
                                 <h2>Anya Raj, ‘17</h2>
-                                <p><span>Ciudad natal : </span>Manchester, United Kingdom</p>
+                                <p><span>Ciudad natal : </span>Manchester, Reino Unido</p>
                             </div>
                         </li>
                         <li class="pax-2 airforce" tabindex="0">
                             <div class="hider">
                                 <h2>Chanaka Keerthisinghe</h2>
-                                <p>Postdoctoral Researcher, Electrical Engineering</p>
+                                <p>Investigador Postdoctoral, Ingeniería Eléctrica</p>
                             </div>
                         </li>
                         <li class="pax-3" tabindex="0">
                             <div class="hider">
                                 <h2>Mareldi Ahumada Parás, ‘22</h2>
-                                <p><span>Ciudad natal : </span>Mexico City, Mexico</p>
+                                <p><span>Ciudad natal : </span>Ciudad de México, México</p>
                             </div>
                         </li>
                         <li class="pax-4 navy" tabindex="0">
                             <div class="hider">
                                 <h2>Marvi Matos</h2>
-                                <p>Engineer, Blue Origin</p>
+                                <p>Ingeniera, Blue Origin</p>
                             </div>
                         </li>
                         <li class="pax-5 army" tabindex="0">
                             <div class="hider">
                                 <h2>Hugo Pontes, ‘20</h2>
-                                <p><span>Ciudad natal : </span>Rio de Janeiro, Brazil</p>
+                                <p><span>Ciudad natal : </span>Río de Janeiro, Brasil</p>
                             </div>
                         </li>
                         <li class="pax-6 army" tabindex="0">
                             <div class="hider">
                                 <h2>Lilo Pozzo</h2>
-                                <p>Associate Professor, Chemical Engineering and the Clean Energy Institute</p>
+                                <p>Profesora Asociada, Ingeniería Química y el Instituto de Energía Limpia</p>
                             </div>
                         </li>
 
                         <li class="pax-7 navy" tabindex="0">
                             <div class="hider">
                                 <h2>Yohan Min, ‘21</h2>
-                                <p><span>Ciudad natal : </span>Seoul, South Korea</p>
+                                <p><span>Ciudad natal : </span>Seúl, Corea del Sur</p>
                             </div>
                         </li>
 
                         <li class="pax-8 navy" tabindex="0">
                             <div class="hider">
                                 <h2>Michael Chapko</h2>
-                                <p>Professor Emeritus, Health Services</p>
+                                <p>Profesor Emérito, Servicios de Salud</p>
                             </div>
                         </li>
 
@@ -310,12 +312,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy expandable-container">
-                                <h2>UW collaborators</h2>
-                                <strong>Dan Schwartz</strong>, director del Clean Energy Institute y profesor de ingeniería química<br />
-                                <strong>Charbel El Bcheraoui</strong>, profesor adjunto de salud mundial en el Institute for Health Metrics and Evaluation [Instituto de Evaluación y Métrica de la Salud]<br />
-                                <strong>Yougjun Choe</strong>, profesor adjunto de ingeniería industrial y en sistemas<br />
-                                <strong>Daniel Kirschen</strong>, profesor de ingeniería eléctrica<br />
-                                <strong>Jessica Kaminsky</strong>, profesora adjunta de ingeniería civil y ambiental<br />
+                                <h2>Colaboradores de UW</h2>
+                                <strong>Dan Schwartz</strong>, Director del Instituto de Energía Limpia y Profesor de Ingeniería Química<br />
+                                <strong>Charbel El Bcheraoui</strong>, Profesor Adjunto de Salud Mundial en el Instituto de Evaluación y Métrica de la Salud<br />
+                                <strong>Yougjun Choe</strong>, Profesor Adjunto de Ingeniería Industrial y en Sistemas<br />
+                                <strong>Daniel Kirschen</strong>, Profesor de Ingeniería Eléctrica<br />
+                                <strong>Jessica Kaminsky</strong>, Profesora Adjunta de Ingeniería Civil y Ambiental<br />
                         </div>
                     </div>
                 </div>
