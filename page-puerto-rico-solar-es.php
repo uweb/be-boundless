@@ -3,7 +3,7 @@
         $slug = 'puerto-rico';
         $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/" . $slug . ".css' type='text/css' media='all' />";
         $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/" . $slug . ".min.js' type='text/javascript'></script>";
-        $storyCodes = 'PRERFD,PHIGFD';
+        $storyCodes = 'PRERFD,PHIGFD,OGAGIF';
         $storyAppeal = 'Support Lilo Pozzo’s research team in their efforts to improve community health by contributing to the Puerto Rico Energy Recovery Fund.';
         get_header("campaign-v2");
 ?>
@@ -15,7 +15,7 @@
 <div id="immersive-body">
 
     <div class="version-switch">
-        <a href="../puerto-rico-sp"><button id="spanish" href="../puerto-rico" class="animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">Ver versión en ingles</button></a>
+        <a href="../puerto-rico-sp"><button id="spanish" href="../puerto-rico-solar" class="animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">Ver versión en ingles</button></a>
     </div>
 
     <section class="intro" id="intro-vid">
@@ -45,7 +45,7 @@
         <main id="main_content">
 
             <!-- INTRO PARAGRAPHS -->
-            <section class="text-block start white">
+            <section class="text-block white">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy">
@@ -64,22 +64,15 @@
 
             <!-- MAP + STORM PATH ANIMATION -->
             <section id="section-map">
-                <!-- <div class="item-1 item">
-                </div>
-                <div class="item-2 item">
-                </div> -->
-                <div class="background-3 background">
-                    <iframe width="2560" height="1440" src="https://www.youtube.com/embed/ezQxonSFCaU?rel=0&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="background-1 background"></div>
-                <div class="background-2 background"></div>
-                <!-- <a data-lity="" href="https://www.youtube-nocookie.com/embed/ezQxonSFCaU?rel=0&amp;controls=0&amp;showinfo=0&rel=0&loop=1" class="center-block play">View storm path</a> -->
+                <a role="button" class="click" href="#">View storm path</a>
 
-                <!-- <div class="boundless-video"></div> -->
+                <div id="bg"><img alt="Puerto Rico map" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/puerto-rico/map-2-loc.jpg' ?>" /></div>
+
+                <div class="boundless-video"></div>
             </section><!-- #section-map -->
 
             <!-- GETTING TO THE HEART OF THE DAMAGE -->
-            <section class="text-block start white small-top">
+            <section class="text-block white small-top">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy">
@@ -90,23 +83,23 @@
                             <div class="slideshow-container">
                                 <div id="eng-slideshow" class="foster-slideshow">
                                     <div>
-                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_1.jpg' ?>" alt="ALT TEXT HERE">
-                                        <p>CAPTION GOES HERE</p>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_1.jpg' ?>" alt="Lilo Pozzo">
+                                        <p>Lilo Pozzo instructs Juan on using the nanogrid that will power his mother’s refrigerator.</p>
                                     </div>
 
                                     <div>
-                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_2.jpg' ?>" alt="ALT TEXT HERE">
-                                        <p>CAPTION GOES HERE</p>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_2.jpg' ?>" alt="Marvi Matos and the UW team">
+                                        <p>Marvi Matos (center) presents the next day’s schedule to the UW team.</p>
                                     </div>
 
                                     <div>
-                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_3.jpg' ?>" alt="ALT TEXT HERE">
-                                        <p>CAPTION GOES HERE</p>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_3.jpg' ?>" alt="A UW team member sitting">
+                                        <p>A UW team member rests after interviewing a family in Jayuya.</p>
                                     </div>
 
                                     <div>
-                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_4.jpg' ?>" alt="ALT TEXT HERE">
-                                        <p>CAPTION GOES HERE</p>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_1_4.jpg' ?>" alt="Mareldi Ahumada Parás installing solar panel">
+                                        <p>Mareldi Ahumada Parás helps install a donated solar/battery nanogrid.</p>
                                     </div>
 
                                 </div>
@@ -133,8 +126,8 @@
                     <div class="img"></div>
                     <div class="caption">
                         <div class="group">
-                            <h2>Juyuya Community /</h2>
-                            <h3 class="headline">FIRSTNAME LASTNAME</h3>
+                            <h2>Jayuya Community /</h2>
+                            <h3 class="headline">Alejandro De Jesús Quiles</h3>
                             <div class="inner">
                                 <div class="more">
                                     <span class="text">Read more</span>
@@ -147,7 +140,7 @@
                                         </svg>
                                     </div>
                                 </div>
-                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et nunc sit amet quam tristique luctus. Nunc et felis erat. Cras luctus sem in enim varius tempus. Aliquam erat volutpat. Nullam in magna a mauris cursus sodales et faucibus odio. Maecenas non velit vitae neque luctus convallis. Suspendisse vel enim ut nisi egestas consequat. Phasellus a augue at turpis lacinia semper sed non quam.</p>
+                                <p class="description">He sits next to his wife’s adjustable bed, which will be powered by a UW-installed nanogrid until their home in Jayuya is reconnected to the island’s electrical grid.</p>
                             </div>
                         </div>
                     </div>
@@ -157,8 +150,8 @@
                     <div class="img"></div>
                     <div class="caption">
                         <div class="group">
-                            <h2>Juyuya Community /</h2>
-                            <h3 class="headline">FIRSTNAME LASTNAME</h3>
+                            <h2>Jayuya Community /</h2>
+                            <h3 class="headline">Ernesto Torres Rodriguez</h3>
                             <div class="inner">
                                 <div class="more">
                                     <span class="text">Read more</span>
@@ -171,7 +164,7 @@
                                         </svg>
                                     </div>
                                 </div>
-                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et nunc sit amet quam tristique luctus. Nunc et felis erat. Cras luctus sem in enim varius tempus. Aliquam erat volutpat. Nullam in magna a mauris cursus sodales et faucibus odio. Maecenas non velit vitae neque luctus convallis. Suspendisse vel enim ut nisi egestas consequat. Phasellus a augue at turpis lacinia semper sed non quam.</p>
+                                <p class="description">A nanogrid donated by UW researchers will get his elderly mother’s refrigerator up and running for the first time in six months, which will help with her restricted diet and daily insulin injections.</p>
                             </div>
                         </div>
                     </div>
@@ -188,32 +181,6 @@
 
                             <p>“Te adaptas porque no te queda otro remedio”, comenta Pozzo. “Pero nunca logras tener la vida normal que solías tener cuando tenías electricidad”.</p>
 
-                            <div class="slideshow-container">
-                                <div id="eng-slideshow" class="foster-slideshow2">
-                                    <div>
-                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_1.jpg' ?>" alt="ALT TEXT HERE">
-                                        <p>CAPTION GOES HERE</p>
-                                    </div>
-
-                                    <div>
-                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_2.jpg' ?>" alt="ALT TEXT HERE">
-                                        <p>CAPTION GOES HERE</p>
-                                    </div>
-
-                                    <div>
-                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_3.jpg' ?>" alt="ALT TEXT HERE">
-                                        <p>CAPTION GOES HERE</p>
-                                    </div>
-
-                                    <div>
-                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_4.jpg' ?>" alt="ALT TEXT HERE">
-                                        <p>CAPTION GOES HERE</p>
-                                    </div>
-
-                                </div>
-                            </div>
-
-
                             <p>Pozzo eligió a Jayuya para este estudio porque su esposa, Marvi Matos, una ingeniera química, creció allí. Como muchas de las personas con lazos familiares en Puerto Rico, la pareja envió suministros a la isla después del huracán. Pero, un mes después de María, apenas se había restablecido un 20 por ciento de la red de electricidad.</p>
 
                             <p>Pozzo y Matos concibieron la idea de usar sus conocimientos expertos para descubrir el impacto de la tormenta en la salud y la infraestructura energética. Pozzo reclutó colaboradores de la Facultad de Salud Pública y la Facultad de Ingeniería. Recibieron financiamiento para el estudio del Clean Energy Institute y del Global Innovation Fund, mientras que donaciones privadas cubrieron el costo de las nanorredes. Unos contactos en Jayuya las pusieron en comunicación con organizadores comunitarios y familias necesitadas.</p>
@@ -221,36 +188,40 @@
                             <p>“El impacto duradero de esta tormenta es que ha revelado los lugares vulnerables de Jayuya”, comenta María Pérez, una organizadora comunitaria local. “Nos mostró a las personas entre nosotros que no tenían ayuda, que estaban viviendo en condiciones inhumanas”.</p>
 
                             <blockquote>
-                                You adapt because you have to, but you never achieve the normal life you had back when you had power <span>— <span class="name">Lilo Pozzo</span></span>
+                                You adapt because you have to, but you never achieve the normal life you had back when you had power.
                             </blockquote>
-                        </div><!-- .col-md-10 .col-md-offset-1 .copy -->
-                    </div><!-- .row -->
-                </div><!-- .container -->
-            </section><!-- .text-block .start .white -->
+                            <div class="byline">Lilo Pozzo</div>
 
-            <!-- NEW VIDEO SECTION BASED ON LIBRARIES -->
-            <section id="video">
-                    <a data-lity="" href="https://www.youtube.com/embed/-zYESWG9HxE?autoplay=1&amp;rel=0&amp;showinfo=0" class="center-block play">
-                        <div class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="125" height="125" viewBox="0 0 150 150" class="opening-slash">
-                                <circle id="play-cir" fill="none" stroke="#fff" stroke-width="7" stroke-miterlimit="10" cx="75" cy="75" r="55"></circle>
-                                <path id="play-tri" fill="#fff" d="M57.767,46.187L110.382,75l-52.616,28.816"></path>
-                            </svg>
-                            <div>Watch Story</div>
-                        </div>
-                        <div class="video-caption">
-                            <h3>FIRST NAME LAST NAME</h3>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan nisi eget nulla pharetra suscipit. Curabitur id mi rhoncus, molestie orci sed, commodo eros. Maecenas vitae mollis est
-                        </div>
-                    </a>
-                <img alt="Fabric" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/puerto-rico/video.jpg' ?>" />
-            </section>
+                            <div id="eng-slideshow" class="slideshow-container">
+                                <div class="foster-slideshow2">
+                                    <div>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/COMMUNITY_PHOTO.jpg' ?>" alt="Community meeting in Jayuya">
+                                        <p>Residents share struggles and concerns with Jayuya’s municipal administrator at a community meeting held on March 20 in the central plaza.</p>
+                                    </div>
 
-            <!-- DEDICATED TO A SUSTAINABLE FUTURE -->
-            <section class="text-block start white small-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 col-md-offset-1 copy">
+
+                                    <div>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_1.jpg' ?>" alt="Roof covered in blue tarp">
+                                        <p>A home with a temporary roof in a sheltered valley of hilly Jayuya.</p>
+                                    </div>
+
+                                    <div>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_2.jpg' ?>" alt="Jayuya electrical grid">
+                                        <p>Six months after Maria, many rural areas like Jayuya are still disconnected from the island’s electrical grid.</p>
+                                    </div>
+
+                                    <div>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_3.jpg' ?>" alt="Puerto Rican flag">
+                                        <p>Due in part to steep topography, Jayuya remains largely disconnected from Puerto Rico’s power grid.</p>
+                                    </div>
+
+                                    <div>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_4.jpg' ?>" alt="Yohan Min adjusting solar panel">
+                                        <p>Yohan Min adjusts a solar panel donated by the UW team last fall.</p>
+                                    </div>
+
+                                </div>
+                            </div>
                             <h2>Dedicados a un futuro sostenible</h2>
                             <p>El equipo de UW realizó su primera visita en noviembre de 2017, para reunir datos y donar cuatro sistemas solares con baterías. Para el viaje en marzo, ampliaron sus objetivos al comprar y montar tres tipos de sistemas solares con baterías. El más pequeño de estos puede proporcionar energía eléctrica a un refrigerador miniatura para almacenar suministros médicos como insulina, mientras que el más grande puede alimentar dispositivos más complejos, como un concentrador de oxígeno o un refrigerador de tamaño normal.</p>
 
@@ -262,10 +233,7 @@
 
                             <p>Los datos que los investigadores reunieron en marzo, los cuales deberían ofrecer pistas para que puedan ayudar a descubrir y abordar más necesidades, están en espera de análisis. El equipo está planificando otro viaje a Jayuya este verano. Los colaboradores en Jayuya esperan listos para ayudarlos en sus tareas.</p>
 
-                            <p>Después de instalar la nanorred final, el equipo de UW pasó a un niño que jugaba frente a su casa, la cual carecía de electricidad. Llevaba puesto un disfraz de Capitán América y saludaba a los autos que pasaban. Una casa cercana tenía a la vista la bandera de la isla con un mensaje escrito a mano: Puerto Rico se levanta.</p>
-
-                            <p><b>Puerto Rico se levanta.</b></p>
-
+                            <p>Después de instalar la nanorred final, el equipo de UW pasó a un niño que jugaba frente a su casa, la cual carecía de electricidad. Llevaba puesto un disfraz de Capitán América y saludaba a los autos que pasaban. Una casa cercana tenía a la vista la bandera de la isla con un mensaje escrito a mano: <i>Puerto Rico se levanta</i>.</p>
                         </div><!-- .col-md-10 .col-md-offset-1 .copy -->
                     </div><!-- .row -->
                 </div><!-- .container -->
@@ -342,18 +310,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy expandable-container">
-                            <div class="visible-part">
                                 <h2>UW collaborators</h2>
-                                <div style="text-align: center"><a id="expander" class="expander" href="#" role="button">Mostrar más</a></div>
-                            </div>
-                            <div class="hidden-part">
                                 <strong>Dan Schwartz</strong>, director del Clean Energy Institute y profesor de ingeniería química<br />
                                 <strong>Charbel El Bcheraoui</strong>, profesor adjunto de salud mundial en el Institute for Health Metrics and Evaluation [Instituto de Evaluación y Métrica de la Salud]<br />
                                 <strong>Yougjun Choe</strong>, profesor adjunto de ingeniería industrial y en sistemas<br />
                                 <strong>Daniel Kirschen</strong>, profesor de ingeniería eléctrica<br />
                                 <strong>Jessica Kaminsky</strong>, profesora adjunta de ingeniería civil y ambiental<br />
-                                <div style="text-align: center"><a class="expander less" href="#" role="button">Mostrar menos</a></div>
-                            </div>
                         </div>
                     </div>
                 </div>

@@ -28,7 +28,7 @@ function twitter_card($photo, $title, $descrpition) {
 
 add_filter( 'body_class', 'custom_class' );
 function custom_class( $classes ) {
-    if ( is_page( 'research-korean-dramas' ) || is_page('research-korean-dramas-kr') || is_page('puerto-rico') || is_page('puerto-rico-sp') ) {
+    if ( is_page( 'research-korean-dramas' ) || is_page('research-korean-dramas-kr') || is_page('puerto-rico-solar') || is_page('puerto-rico-solar-es') ) {
         $classes[] = 'animsition';
     }
     return $classes;

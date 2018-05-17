@@ -15,7 +15,7 @@
 <div id="immersive-body">
 
     <div class="version-switch">
-        <a href="../puerto-rico-sp"><button id="spanish" href="../puerto-rico-sp" class="animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">View Spanish version</button></a>
+        <a href="../puerto-rico-sp"><button id="spanish" href="../puerto-rico-solar-es" class="animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">View Spanish version</button></a>
     </div>
 
     <section class="intro" id="intro-vid">
@@ -181,7 +181,6 @@
 
                             <p>“You adapt because you have to,” says Pozzo. “But you never achieve the normal life you had back when you had power.”</p>
 
-
                             <p>Pozzo chose Jayuya for this study because her spouse, Marvi Matos, a chemical engineer, grew up there. Like many with family ties to Puerto Rico, the couple sent supplies to the island after the hurricane. But a month after Maria, barely 20 percent of the electricity grid had been restored.</p>
 
                             <p>Pozzo and Matos envisioned using their expertise to unearth the storm’s impact on health and energy infrastructure. Pozzo recruited partners from the School of Public Health and the College of Engineering. They received funding for the study from the Clean Energy Institute and the Global Innovation Fund, while private donations covered the cost of the nanogrids. Contacts in Jayuya connected them with community organizers and needy families.</p>
@@ -197,7 +196,7 @@
                                 <div class="foster-slideshow2">
                                     <div>
                                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/COMMUNITY_PHOTO.jpg' ?>" alt="Community meeting in Jayuya">
-                                        <p>CAPTION ABOUT COMMUNITY MEETING</p>
+                                        <p>Residents share struggles and concerns with Jayuya’s municipal administrator at a community meeting held on March 20 in the central plaza.</p>
                                     </div>
 
 
@@ -235,7 +234,7 @@
 
                             <p>The data that the researchers collected in March, which should offer clues to more needs they can help uncover and address, awaits analysis. The team is planning another trip to Jayuya this summer. Partners in the community stand ready to assist in their efforts.</p>
 
-                            <p>After installing their final nanogrid, the UW team passed a boy playing in front of his powerless house. He was wearing a Captain America costume and saluting passing cars. A nearby house sported the island’s flag with a handwritten message: Puerto Rico se levanta.</p>
+                            <p>After installing their final nanogrid, the UW team passed a boy playing in front of his powerless house. He was wearing a Captain America costume and saluting passing cars. A nearby house sported the island’s flag with a handwritten message: <i>Puerto Rico se levanta</i>.</p>
 
                             <p><b>Puerto Rico rises.</b></p>
                         </div><!-- .col-md-10 .col-md-offset-1 .copy -->

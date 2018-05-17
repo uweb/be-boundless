@@ -847,12 +847,12 @@ div.hidden-part {
     [id$="youtube-video"] {
         margin: 0;
         position: absolute;
-        right: 0;
+        top: 0;
         left: 0;
         z-index: 999;
         bottom: 40px;
         width: 100% !important;
-        height: 42vw !important;
+        height: 100% !important;
     }
     .slideplay .icon {
         width: 90%;
@@ -936,7 +936,7 @@ div.hidden-part {
     .item-1 {
         z-index:4;
         .img {
-            background-image: url("@{pr}/community-1.jpg");
+            background-image: url("@{pr}/community-3.jpg");
         }
     }
     .item-2 {
@@ -1185,6 +1185,9 @@ div.hidden-part {
     }
     #bg {
         height: 75vh;
+        @media (max-width: 768px) {
+            height: auto;
+        }
     }
 
 }

@@ -159,10 +159,9 @@ var scrollIntro = new ScrollMagic.Scene({
    * Animation: Profiles
    ***************************/
 
-  var controllerProfiles = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: '0', duration: "200%"}});
-
   if (!isMobile) {
     if (!isMobileSize) {
+        var controllerProfiles = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: '0', duration: "200%"}});
       var profilesTween = new TimelineMax()
       .fromTo("#section-profiles .item-1 .group", 0.25, {alpha:0}, {alpha:1})
       .fromTo("#section-profiles .item-1 .group", 0.75,
@@ -272,53 +271,45 @@ var scrollIntro = new ScrollMagic.Scene({
               videoHTMLMobile =
               '<button class="close-video"><span class="top"></span><span class="left"></span><span class="bottom"></span></button>' +
               '<div id="' + location + '-youtube-video">' +
-              '<iframe title="YouTube video" id="embedVid" width=' + $video.width() + ' height=' + $video.height() + ' src="https://www.youtube.com/embed/' + videoSrc + '?autoplay=0&rel=0&amp;showinfo=0&amp" frameborder="0" allowfullscreen autoplay></iframe>' +
+              '<iframe title="YouTube video" id="embedVid" width=' + $video.width() + ' height=' + $video.height() + ' src="https://www.youtube.com/embed/' + videoSrc + '?autoplay=1&rel=0&amp;showinfo=0&amp" frameborder="0" allowfullscreen autoplay></iframe>' +
               '</div>';
 
 
-        if (isMobile) {
-          boundlessVideo.innerHTML = videoHTMLMobile;
-          $(".play").click(function(e){
-             e.preventDefault();
-          });
-        } else {
-           boundlessVideo.innerHTML = videoHTML;
-           setTimeout( function(){
-             $('#' + location + ' iframe')[0].focus()
-           }, 500 );
-           //if(location == "#slideplay1"){}
-
-         //   var player;
-          // function onYouTubeIframeAPIReady() {
-            //var player = new YT.Player(location + '-youtube-video', {
-            new YT.Player(location + '-youtube-video', {
-              height: $video.height(),
-              width: $video.width(),
-              videoId: videoSrc,
-              playerVars: { 'autoplay': 1, 'rel': 0, 'showinfo': 0, 'controls' : 0 },
-              events: {
-                // 'onReady': onPlayerReady,
-                'onStateChange': function(event) {
-                if(location == "section-map"){
-                  if (event.data == YT.PlayerState.ENDED) {
-                    //scroll to next video
-                    controller.scrollTo(slideplayPin.scrollOffset() + slideplayPin.duration() + 1);
+              if (isMobile) {
+                boundlessVideo.innerHTML = videoHTML;
+                $(".play").click(function(e){
+                 e.preventDefault();
+               });
+              } else {
+                boundlessVideo.innerHTML = videoHTML;
+                setTimeout( function(){
+                 $('#' + location + ' iframe')[0].focus()
+                }, 500 );
+                new YT.Player(location + '-youtube-video', {
+                  height: $video.height(),
+                  width: $video.width(),
+                  videoId: videoSrc,
+                  playerVars: { 'autoplay': 1, 'rel': 0, 'showinfo': 0, 'controls' : 0 },
+                  events: {
+                    'onStateChange': function(event) {
+                      if(location == "section-map"){
+                        if (event.data == YT.PlayerState.ENDED) {
+                          controller.scrollTo(slideplayPin.scrollOffset() + slideplayPin.duration() + 1);
+                        }
+                      }
+                    }
                   }
-              }
-              }
-              }
-            });
-          //}
+                });
 
-           $(".close-video").click(function(e){
-            e.stopPropagation();
-             $(".play").removeClass("hidden");
-             $body.toggleClass("playing");
-             this.parentElement.innerHTML = '';
-           });
+                 $(".close-video").click(function(e){
+                  e.stopPropagation();
+                   $(".play").removeClass("hidden");
+                   $body.toggleClass("playing");
+                   this.parentElement.innerHTML = '';
+                 });
 
-          $body.toggleClass("playing");
-        }
+                $body.toggleClass("playing");
+              }
       }
 
     //prevent accessibility link from scrolling to top
