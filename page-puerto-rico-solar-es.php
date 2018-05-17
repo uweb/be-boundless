@@ -37,7 +37,7 @@
             <section class="scrollit read-more">
                 <p>Desplazar hacia abajo</p>
                 <div class="mouse">
-                    <div class="scroll"></div>
+                    <div class="scroll"> </div>
                 </div><!-- .mouse -->
             </section><!-- .scrollit .read-more -->
     </section><!-- .intro #intro-vid -->
