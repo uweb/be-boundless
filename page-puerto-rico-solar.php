@@ -64,7 +64,46 @@
 
             <!-- MAP + STORM PATH ANIMATION -->
             <section id="section-map">
-                <a role="button" class="click" href="#">View storm path</a>
+                <a role="button" class="click" href="#">
+                View storm path
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="3 3 102 26">
+                        <style type="text/css">
+
+                        .st0{fill:#FFFFFF;}
+                        .st1{fill:#B6A87D;}
+                        .st2{opacity:0.16;}
+                        .st3{filter:url(#Adobe_OpacityMaskFilter);}
+                        .st4{opacity:0;mask:url(#SVGID_1_);}
+                        .st5{fill:#070808;}
+                        .st6{font-family:'UniSansLight';}
+                        .st7{font-size:12px;}
+                        .st8{fill:#82774F;}
+                        .st9{opacity:0.72;fill:#82774F;}
+                        .st10{fill:none;stroke:#FFFFFF;stroke-width:0.25;stroke-miterlimit:10;}
+
+                    </style>
+                    <polygon class="st0" points="98 28.4 4 28.4 4.3 3.4 104.7 3.4 "></polygon>
+                    <polygon class="st1" points="5.4 27.4 5.4 4.4 103.5 4.4 97.6 27.4 "></polygon>
+                    <g class="st2">
+                        <polygon class="st0" points="5.4 27.4 5.4 4.4 52.4 4.4 46.5 27.4 "></polygon>
+                        <defs>
+                            <filter filterUnits="userSpaceOnUse" x="5.4" y="4.4" width="47" height="23">
+                                <feColorMatrix type="matrix" values="-1 0 0 0 1  0 -1 0 0 1  0 0 -1 0 1  0 0 0 1 0" color-interpolation-filters="sRGB" result="source"></feColorMatrix>
+                            </filter>
+                        </defs>
+                        <g class="st4">
+                            <polygon class="st5" points="5.4 27.4 5.4 4.4 52.4 4.4 46.5 27.4 "></polygon>
+                        </g>
+                    </g>
+                    <text transform="matrix(1 0 0 1 19.328 20.4167)" class="st0 st6 st7">
+                        ON
+                    </text>
+                    <text transform="matrix(1 0 0 1 64.9947 20.4167)" class="st8 st6 st7">
+                        OFF
+                    </text>
+                    <polygon class="st9" points="45.7 27.4 51.6 4.4 52.3 4.4 46.4 27.4 "></polygon>
+                    <line class="st10" x1="19.3" y1="23" x2="35.7" y2="23"></line>
+                </svg></a>
 
                 <div id="bg"><img alt="Puerto Rico map" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/puerto-rico/map-2-loc.jpg' ?>" /></div>
 
@@ -261,7 +300,7 @@
                         <li class="pax-3" tabindex="0">
                             <div class="hider">
                                 <h2>Mareldi Ahumada Parás, ‘22</h2>
-                                <p><span>Hometown: </span>Mexico City, Mexico</p>
+                                <p><span>Hometown:  </span>Mexico City, Mexico</p>
                             </div>
                         </li>
                         <li class="pax-4 navy" tabindex="0">
