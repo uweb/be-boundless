@@ -15,7 +15,7 @@
 <div id="immersive-body">
 
     <div class="version-switch">
-        <a href="../puerto-rico-sp"><button id="spanish" href="../puerto-rico-solar-es" class="animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">View Spanish version</button></a>
+        <a href="../puerto-rico-sp"><button id="spanish" href="../puerto-rico-solar-es" class="animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">Ver versión en Español</button></a>
     </div>
 
     <section class="intro" id="intro-vid">
