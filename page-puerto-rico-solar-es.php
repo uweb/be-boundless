@@ -166,11 +166,11 @@
                     <div class="img"></div>
                     <div class="caption">
                         <div class="group">
-                            <h2>Jayuya Community /</h2>
+                            <h2>Comunidad de Jayuya /</h2>
                             <h3 class="headline">Alejandro De Jesús Quiles</h3>
                             <div class="inner">
                                 <div class="more">
-                                    <span class="text">Read more</span>
+                                    <span class="text">Leer más</span>
                                     <div class="parallelogram">
                                         <svg id="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.98 4.46">
                                             <defs><style>.icon-line{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs>
@@ -190,11 +190,11 @@
                     <div class="img"></div>
                     <div class="caption">
                         <div class="group">
-                            <h2>Jayuya Community /</h2>
+                            <h2>Comunidad de Jayuya /</h2>
                             <h3 class="headline">Ernesto Torres Rodriguez</h3>
                             <div class="inner">
                                 <div class="more">
-                                    <span class="text">Read more</span>
+                                    <span class="text">Leer más</span>
                                     <div class="parallelogram">
                                         <svg id="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.98 4.46">
                                             <defs><style>.icon-line{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs>
@@ -239,6 +239,10 @@
                                         <p>Residentes comparten sus dificultades y preocupaciones con el administrador municipal de Jayuya en una reunión comunitaria el 20 de marzo en la plaza central.</p>
                                     </div>
 
+                                    <div>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_2.jpg' ?>" alt="Jayuya electrical grid">
+                                        <p>Seis meses después de María, muchas áreas rurales como Jayuya permanecen desconectadas de la red de suministro eléctrico de la isla.</p>
+                                    </div>
 
                                     <div>
                                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_1.jpg' ?>" alt="Roof covered in blue tarp">
@@ -246,18 +250,13 @@
                                     </div>
 
                                     <div>
-                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_2.jpg' ?>" alt="Jayuya electrical grid">
-                                        <p>Seis meses después de María, muchas áreas rurales como Jayuya permanecen desconectadas de la red de suministro eléctrico de la isla.</p>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_4.jpg' ?>" alt="Yohan Min adjusting solar panel">
+                                        <p>Yohan Min ajusta un panel solar donado el otoño pasado por el equipo del UW.</p>
                                     </div>
 
                                     <div>
                                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_3.jpg' ?>" alt="Puerto Rican flag">
                                         <p>Debido en parte a su topografía empinado, la mayoría de Jayuya permanece desconectada de las redes de suministro eléctrico de Puerto Rico.</p>
-                                    </div>
-
-                                    <div>
-                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_4.jpg' ?>" alt="Yohan Min adjusting solar panel">
-                                        <p>Yohan Min ajusta un panel solar donado el otoño pasado por el equipo del UW.</p>
                                     </div>
 
                                 </div>

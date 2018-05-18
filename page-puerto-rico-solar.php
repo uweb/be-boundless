@@ -238,6 +238,10 @@
                                         <p>Residents share struggles and concerns with Jayuya’s municipal administrator at a community meeting held on March 20 in the central plaza.</p>
                                     </div>
 
+                                    <div>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_2.jpg' ?>" alt="Jayuya electrical grid">
+                                        <p>Six months after Maria, many rural areas like Jayuya are still disconnected from the island’s electrical grid.</p>
+                                    </div>
 
                                     <div>
                                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_1.jpg' ?>" alt="Roof covered in blue tarp">
@@ -245,18 +249,13 @@
                                     </div>
 
                                     <div>
-                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_2.jpg' ?>" alt="Jayuya electrical grid">
-                                        <p>Six months after Maria, many rural areas like Jayuya are still disconnected from the island’s electrical grid.</p>
+                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_4.jpg' ?>" alt="Yohan Min adjusting solar panel">
+                                        <p>Yohan Min adjusts a solar panel donated by the UW team last fall.</p>
                                     </div>
 
                                     <div>
                                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_3.jpg' ?>" alt="Puerto Rican flag">
                                         <p>Due in part to steep topography, Jayuya remains largely disconnected from Puerto Rico’s power grid.</p>
-                                    </div>
-
-                                    <div>
-                                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/puerto-rico/GALLERY_2_4.jpg' ?>" alt="Yohan Min adjusting solar panel">
-                                        <p>Yohan Min adjusts a solar panel donated by the UW team last fall.</p>
                                     </div>
 
                                 </div>
