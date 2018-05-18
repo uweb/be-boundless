@@ -131,11 +131,10 @@ var scrollIntro = new ScrollMagic.Scene({
                     $('button.close-video').hide();
                     videoPlay("ezQxonSFCaU", 'section-map');
 
-                    } else {
-                        $("#section-map").on("click", function(){
-                                videoPlay("ezQxonSFCaU", 'section-map');
-                            });
-                    }
+                  }
+                  $("#section-map").on("click", function(){
+                    videoPlay("ezQxonSFCaU", 'section-map');
+                  });
 
                 });
             $(window).resize(function(){
