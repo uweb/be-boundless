@@ -129,7 +129,6 @@ var scrollIntro = new ScrollMagic.Scene({
                 if(isMobile) {
                     $('.fader .icon').hide();
                     $('button.close-video').hide();
-                    videoPlay("ezQxonSFCaU", 'section-map');
 
                   }
                   $("#section-map").on("click", function(){
@@ -274,12 +273,12 @@ var scrollIntro = new ScrollMagic.Scene({
               '</div>';
 
 
-              if (isMobile) {
-                boundlessVideo.innerHTML = videoHTML;
-                $(".play").click(function(e){
-                 e.preventDefault();
-               });
-              } else {
+              // if (isMobile) {
+              //   boundlessVideo.innerHTML = videoHTMLMobile;
+              //   $(".play").click(function(e){
+              //    e.preventDefault();
+              //  });
+              // } else {
                 boundlessVideo.innerHTML = videoHTML;
                 setTimeout( function(){
                  $('#' + location + ' iframe')[0].focus()
@@ -308,7 +307,7 @@ var scrollIntro = new ScrollMagic.Scene({
                  });
 
                 $body.toggleClass("playing");
-              }
+              // }
       }
 
     //prevent accessibility link from scrolling to top
