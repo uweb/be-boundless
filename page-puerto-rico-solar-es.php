@@ -1,5 +1,8 @@
 <?php
-        $meta = '';
+        $twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/puerto-rico/twitter_card.jpg';
+        $twitter_title = 'De red en red';
+        $twitter_description = 'Meses después del huracán María, miles de personas en las zonas rurales de Puerto Rico todavía carecen de electricidad. En colaboración con las comunidades locales, los investigadores de UW están trabajando para restablecer su electricidad.';
+        $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
         $slug = 'puerto-rico';
         $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/" . $slug . ".css' type='text/css' media='all' />";
         $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/" . $slug . ".min.js' type='text/javascript'></script>";
