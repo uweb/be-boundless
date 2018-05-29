@@ -1,5 +1,5 @@
 <?php
-        $twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/puerto-rico/twitter_card.jpg';
+        $twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/puerto-rico/twitter-card.jpg';
         $twitter_title = 'Grid by grid';
         $twitter_description = 'Months after Hurricane Maria, thousands in rural Puerto Rico still lack electricity. In partnership with local communities, UW researchers are working to restore their power.';
         $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);

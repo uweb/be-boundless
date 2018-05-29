@@ -1,5 +1,5 @@
 <?php
-        $twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/puerto-rico/twitter_card.jpg';
+        $twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/puerto-rico/twitter-card.jpg';
         $twitter_title = 'De red en red';
         $twitter_description = 'Meses después del huracán María, miles de personas en las zonas rurales de Puerto Rico todavía carecen de electricidad. En colaboración con las comunidades locales, los investigadores de UW están trabajando para restablecer su electricidad.';
         $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
