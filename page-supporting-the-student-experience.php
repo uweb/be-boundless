@@ -1,5 +1,8 @@
 <?php
-	$meta = '';
+	$twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/scholarship/twitter-card.jpg';
+	$twitter_title = 'Unleashing the Husky experience';
+	$twitter_description = 'What is the Husky Experience? It’s all about discovering your passion, your place in the world — and it’s unique to every student at the University of Washington.';
+	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/scholarship.css' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/scholarship.min.js' type='text/javascript'></script>
 	";

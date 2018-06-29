@@ -1,5 +1,8 @@
 <?php
-	$meta = '';
+	$twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/medicine/twitter-card.jpg';
+	$twitter_title = 'Targeting cancer, precisely';
+	$twitter_description = 'In the vanguard of next-generation precision medicine, Dr. Pamela Becker is working with UW Medicine’s Institute for Stem Cell and Regenerative Medicine to pioneer groundbreaking treatments for cancer.';
+	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/medicine.css' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/medicine.min.js' type='text/javascript'></script>";
 	$storyCodes = 'HEMATL,PATHCA,STEMCR';
@@ -29,16 +32,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy">
-                  
+
                     <p class="headline-gold center">Dr. Pamela Becker is all <br>too familiar with long odds. </p>
-                    
+
                     <p>The UW Medicine hematologist who specializes in blood cancer often sees patients with diseases like acute myeloid leukemia (AML), a fast-progressing cancer that takes the lives of three out of every four patients within five years. </p>
 
                     <p>For AML patients over 65 years old, the survival rate drops to an abysmal 10 percent. Even with treatment, these patients survive less than a year on average.</p>
 
-                </div> 
-          </div> 
-        </div>   
+                </div>
+          </div>
+        </div>
       </section>
 
 
@@ -47,20 +50,20 @@
           <div class="container">
               <div class="row">
                   <div class="col-md-10 col-md-offset-1 copy">
-                      
+
   <p class="gold-quote headline-gold purple special"><b>"We have to do better</b>,” says Dr. Becker. “And if we get it figured out for leukemia, we can figure it out for other cancers, too.” </p>
 
   <p>That’s why she’s working with UW Medicine's Institute for Stem Cell and Regenerative Medicine (ISCRM) to pioneer groundbreaking treatments — and turn the odds in her patients’ favor.</p>
 
 
-                  </div> 
-            </div> 
-          </div>   
+                  </div>
+            </div>
+          </div>
         </section>
 
 
 
-    
+
   <section class="profile person-1 teacher"><div class="background-profile"><div class="transform">
                 <div class="skew"><div></div></div>
                 <div class="name-wrap">
@@ -74,7 +77,7 @@
                     <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
                     Your browser does not support HTML5 audio.
                   </audio>
-              
+
                   <div class="visually-hidden audio-transcript" tabindex="0">
                     <p>What I focus on is how patients with acute myeloid leukemia … why they don’t respond to the current treatment options. And what we learned was that when we tested individual patient samples against a large panel of different drug agents and drug combinations that each patient had a different response to every single drug. So that no patient looked like any other patient.</p>
                     <p>We have unique resources here at the Institute for Stem Cell and Regenerative Medicine. We have the Quellos High-throughput Core facility which can do screening of individual patient cell samples to look for the best drug for an individual patient.</p>
@@ -82,14 +85,14 @@
                     <p>So patients who have multiple relapses with their acute leukemia, and have had many prior therapies, typically their survival is quite limited. Perhaps less than even three months. And we’ve been able to extend survival. We now have many patients who’ve survived several months, or even a year after they’ve relapsed after a transplant for acute myeloid leukemia, and I think that this ability to keep treating and treating, and having patients survive longer is a consequence of this therapy so far.</p>
                     <p>And the hope of all of this is that eventually someday we may be able to do much better.</p>
                   </div>
-                  
+
                   <p class="audio-buttons">
-                    <button class="audio-ctrl audio-play" tabindex="0">1:09 / PLAY INTERVIEW</button>  
-                    <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
+                    <button class="audio-ctrl audio-play" tabindex="0">1:09 / PLAY INTERVIEW</button>
+                    <button class="audio-ctrl audio-pause" tabindex="0">pause</button>
                     <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                   </p>
                 </div>
-  
+
               </div></div>
         <div style="text-align: center"><div class="boundless-button sm dark"><span><a id="expander" href="http://www.uwmedicine.org/bios/pamela-becker">The Art of Empathy</a></span></div></div>
 
@@ -125,19 +128,19 @@
 
 <p>Typically, she explains, patients get the same treatment for leukemia: two types of chemotherapy drugs. The drug programs are intensive. They’re costly. They’re toxic, with life-threatening complications and severe side effects. And for a third of those patients, they don’t help at all.</p>
 
-<p>“But what if there weren’t just two types of drugs?” asks Dr. Becker. “And what if the drugs we used to fight AML were selected based on each patient’s unique biology?” 
+<p>“But what if there weren’t just two types of drugs?” asks Dr. Becker. “And what if the drugs we used to fight AML were selected based on each patient’s unique biology?”
 </p>
 
 <p>These are the questions she is working to address in her precision medicine approach to cancer treatment, and she’s already making significant progress.</p>
 
 <p>Crucial to her research has been ISCRM’s Quellos High-throughput Screening Core. Housed in a quiet lab at UW Medicine at South Lake Union, the facility’s automated machines can test high volumes of drug compounds at different concentrations, finding the best matches for each person’s cancer. And they can do so quickly, giving Dr. Becker and her patients an edge in the race against time.</p>
 
-<p>In a recent clinical trial, Dr. Becker’s team screened cancer cells from several late-stage AML patients against more than 160 drug compounds. Timothy Martins, Ph.D. ’84, director and principal scientist of the Quellos Core, recalls that about 25 years ago, it would take him over a month to test just 20 drug compounds. 
+<p>In a recent clinical trial, Dr. Becker’s team screened cancer cells from several late-stage AML patients against more than 160 drug compounds. Timothy Martins, Ph.D. ’84, director and principal scientist of the Quellos Core, recalls that about 25 years ago, it would take him over a month to test just 20 drug compounds.
 </p>
 
-                  </div> 
-            </div> 
-          </div>   
+                  </div>
+            </div>
+          </div>
         </section>
 
 
@@ -149,12 +152,12 @@
                   <div class="container">
                       <div class="row">
                           <div class="col-md-10 col-md-offset-1 copy">
-                              
+
           <p class="gold-quote headline-gold purple">“Now,” he marvels, <b>"it only takes five days to test 160 or more compounds.</b> The faster turnaround time is much better for these patients. Treatment can begin much sooner, rather than waiting weeks for the results of other tests."</p>
 
-                    </div> 
-              </div> 
-            </div>   
+                    </div>
+              </div>
+            </div>
           </section>
 
 
@@ -164,19 +167,19 @@
                  <div class="portrait"></div>
                  <div class="container">
                      <div class="row">
-                         <div class="col-md-12 copy"> 
+                         <div class="col-md-12 copy">
 
                          <a class="play" href="#">The fight against cancer <svg aria-hidden="true" x="0px" y="0px"
               width="14px" height="3px" viewBox="0 0 14 3" enable-background="new 0 0 14 3" xml:space="preserve">
            <rect fill="#FFFFFF" width="14" height="3"/>
            </svg></a>
 
-                     </div> 
-                   </div> 
-                 </div>   
+                     </div>
+                   </div>
+                 </div>
                  <div id="boundless-video"></div>
                  <!-- <small>Learn more about the Dream Project at <a href="http://www.uw.edu/dreamproject">uw.edu/dreamproject</a>.</small>       -->
-                 
+
           </section>
 
 
@@ -208,9 +211,9 @@
 
 <p class="gold-quote headline-gold purple">“I look forward to a day when 100 percent of our AML patients live for five years, rather than just 25 percent,” says Dr. Becker. “A future where we don’t ever have to lose a person to this disease again.”</p>
 
-                          </div> 
-                    </div> 
-                  </div>   
+                          </div>
+                    </div>
+                  </div>
                 </section>
 
 
@@ -231,7 +234,7 @@
                   <div class="container">
                       <div class="row">
                           <div class="col-md-10 col-md-offset-1 copy no-margin">
-                              
+
                             <h2>AT THE HEART OF THE CURE</h2>
                             <p>Chuck Murry shows off a tiny white scar on his forearm, left over from a biopsy. The cells he had removed are still alive, but they’re no longer skin cells.</p>
                             <p>“I had my own skin turned into stem cells,” he says. “It’s now three-dimensional heart muscle that’s beating in a dish.”</p>
@@ -251,9 +254,9 @@
                             <p>And, in just a decade, doctors at ISCRM have made significant progress — from developing a potential gene therapy for muscular dystrophy, to using patient-specific stem cells to find treatments for a condition that affects vision. </p>
                             <p>The future of ISCRM holds great possibility, and its success to date has hinged upon generous philanthropic support.</p>
                             <p>“It couldn’t be simpler,” says Dr. Murry. “Without the vision and generosity of our benefactors, there would be no stem cell institute.”</p>
-                          </div> 
-                    </div> 
-                  </div>   
+                          </div>
+                    </div>
+                  </div>
                   <div style="margin-top:15px;text-align:center;">
                     <p><em>Originally published October 2016</em></p>
                   </div>
@@ -265,7 +268,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-10 col-md-offset-1 copy">
-                              <div style="text-align: center">             
+                              <div style="text-align: center">
                                 <h2 class="headline-gold">Help make a difference</h2>
                                 <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless &mdash; For Washington, For the World. You can help UW Medicine expand our impact everywhere by contributing to these funds.</p>
                                 <div id="immersive-give-iframe"></div>

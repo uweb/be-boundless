@@ -1,5 +1,8 @@
 <?php
-	$meta = '';
+	$twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/arts/twitter-card.jpg';
+	$twitter_title = 'The portfolio of possibilities';
+	$twitter_description = 'What turns out to be possible when scientific curiosity and artistic mastery are given room to coexist? As a team of UW professors, former UW students and designers discovered: absolutely anything.';
+	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/arts.css?v=" . time() . "' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/arts.min.js?v=" . time() . "' type='text/javascript'></script>";
 	$storyCodes = 'ASDISC,CANART,AHDDIS,ARTGAL,ASUGSF,ASDISCR';
@@ -334,7 +337,7 @@
         <video muted="" loop="" autoplay="" playsinline poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/surprise-poster.jpg' ?>">
             <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/DEEP_DIVE_MESSAGE_REVEAL.mp4' ?>">
             <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/DEEP_DIVE_MESSAGE_REVEAL.webm' ?>">
-            
+
         </video>
         <button class="pause">Pause</button>
     </section>
@@ -398,8 +401,8 @@
                               <video muted autoplay poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/students.jpg' ?>">
                                   <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/STUDENTS.mp4' ?>">
                                   <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/STUDENTS.webm' ?>">
-                                  
-                              </video> 
+
+                              </video>
                               <div class="videoPlay"><a href="https://www.youtube.com/watch?v=dKimXqpt72Y" target="_blank">Watch full video <svg xmlns="http://www.w3.org/2000/svg" width="30.332" height="30.281" viewBox="0 0 30.332 30.281"><circle fill="none" stroke="#4B2E83" stroke-width="2" stroke-miterlimit="10" cx="15.103" cy="15.103" r="14.103"/><path fill="#4B2E83" d="M12.69 10.99l6.662 4.448-6.662 4.446"/></svg></a></div>
                              <button class="pause">Pause</button>
                           </div>
@@ -443,9 +446,9 @@
                                 <video muted autoplay poster="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/arts/teachers.jpg' ?>">
                                     <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/TEACHING.mp4' ?>">
                                     <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/video/arts/TEACHING.webm' ?>">
-                                    
-                                </video>   
-                                <div class="videoPlay"><a href="https://www.youtube.com/watch?v=GFOBx1_HX9w" target="_blank">Watch full video<svg xmlns="http://www.w3.org/2000/svg" width="30.332" height="30.281" viewBox="0 0 30.332 30.281"><circle fill="none" stroke="#4B2E83" stroke-width="2" stroke-miterlimit="10" cx="15.103" cy="15.103" r="14.103"/><path fill="#4B2E83" d="M12.69 10.99l6.662 4.448-6.662 4.446"/></svg></a></div>                             
+
+                                </video>
+                                <div class="videoPlay"><a href="https://www.youtube.com/watch?v=GFOBx1_HX9w" target="_blank">Watch full video<svg xmlns="http://www.w3.org/2000/svg" width="30.332" height="30.281" viewBox="0 0 30.332 30.281"><circle fill="none" stroke="#4B2E83" stroke-width="2" stroke-miterlimit="10" cx="15.103" cy="15.103" r="14.103"/><path fill="#4B2E83" d="M12.69 10.99l6.662 4.448-6.662 4.446"/></svg></a></div>
                                 <button class="pause">Pause</button>
                             </div>
                           </section>
@@ -507,9 +510,9 @@
 
     <section id="ispossible" class="frame pause-enabled">
         <section class="input">
-            
+
         </section>
-        
+
         <section class="text">
             <section class="block">
                 <h3>Discovery is <span>possible</span></h3>
@@ -615,7 +618,7 @@
                             </section>
                         </section>
                     </div>
-                </div>            
+                </div>
             </div>
 
             <div class="mouseHorz">
@@ -629,9 +632,9 @@
 
     <section id="anythingispossible" class="frame pause-enabled">
         <section class="input">
-            
+
         </section>
-        
+
         <section class="text">
             <section class="block">
                 <h3>Anything is <span>possible</span></h3>

@@ -4,10 +4,12 @@
   global $styles;
   global $scripts;
 
-
-  $meta = '';
-  $styles =  "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' />" . 
-            "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' />" . 
+  $twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/environment/twitter-card.jpg';
+  $twitter_title = 'A week in the wild';
+  $twitter_description = 'Students and professors from the UW College of the Environment made a classroom out of one of the world’s most closely monitored ecosystems: Yellowstone National Park. Experience the sights and sounds of the park through their eyes.';
+  $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
+  $styles =  "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' />" .
+            "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' />" .
             "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/libraries/jquery.fullpage.min.css' type='text/css' media='all' />" .
             "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/environment.css' type='text/css' media='all' />";
   // $scripts =  "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/header.js' type='text/javascript'></script>" .
@@ -39,7 +41,7 @@
                   <p class="col-md-4 col-sm-10 col-xs-12">
                       Students and professors from the College of the Environment made a classroom out of one of the world’s most closely monitored ecosystems: Yellowstone National Park. Explore their learning experience below.
                   </p>
-              </div>         
+              </div>
           </div>
           <!-- <div class="play-button mobile" >
               <a data-lity href="https://www.youtube.com/embed/bdxE1rqezB8?autoplay=1&rel=0&showinfo=0">
@@ -51,7 +53,7 @@
               </svg>
                 <p>Watch video</p>
               </a>
-          </div> --> 
+          </div> -->
           <div class="play-button" >
             <a data-lity href="https://www.youtube.com/embed/TLyNpX2-baE&?autoplay=1&rel=0&showinfo=0&yt:crop=16:9" role="button">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -62,7 +64,7 @@
             </svg>
               <p>Play full video</p>
             </a>
-        </div> 
+        </div>
       </div>
       <span class="gold-tilt gold-tilt-2"></span>
       <section class="scrollit read-more click-section" aria-hidden="true">
@@ -70,10 +72,10 @@
           <div class="down-arrow"></div>
       </section>
       <section class="scrollit read-more scroll-down" aria-hidden="true">
-          <p>Scroll to continue</p>  
+          <p>Scroll to continue</p>
           <div class="mouse">
             <div class="scroll"></div>
-          </div> 
+          </div>
       </section>
     </div>
   </section>
@@ -104,14 +106,14 @@
                     <a href="#scavenger" class="col-sm-2 col-xs-2 section-links" role="button" aria-label="Shortcut to Scavengers"><span>Scavengers</span></a>
                     <a href="#people" class="col-sm-2 col-xs-2 section-links" role="button" aria-label="Shortcut to Neighbors"><span>Neighbors</span></a>
                   </div>
-              </div>         
+              </div>
           </div>
       </div>
       <section class="scrollit read-more" aria-hidden="true">
-          <p>Scroll to continue</p>  
+          <p>Scroll to continue</p>
           <div class="mouse">
             <div class="scroll"></div>
-          </div> 
+          </div>
       </section>
     </div>
   </section>
@@ -134,7 +136,7 @@
                            You can <a class="underline no-arrows" data-fund="CELEND" href="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&frame_buster=flase&source_typ=3&appeal=17XIS&source=CELEND" data-lity role="button">support</a> immersive learning experiences at the College of the Environment and help propel students toward the careers of their dreams.
                       </p>
                     </div>
-                </div>         
+                </div>
             </div>
         </div>
        <!--  <div class="student-container"> -->
@@ -235,10 +237,10 @@
       </button>
 
       <section class="scrollit read-more" aria-hidden="true">
-          <p>Scroll to continue</p>  
+          <p>Scroll to continue</p>
           <div class="mouse">
             <div class="scroll"></div>
-          </div> 
+          </div>
       </section>
 
     </div>
@@ -316,14 +318,14 @@
                   <div class="icon"></div>
                   <h1 class="">Predators</h1>
                   <span class="col-md-4 col-xs-10"><span class="squiggle"></span></span>
-              </div>         
+              </div>
           </div>
       </div>
         <section class="scrollit read-more" aria-hidden="true">
-            <p>Scroll to continue</p>  
+            <p>Scroll to continue</p>
             <div class="mouse">
               <div class="scroll"></div>
-            </div> 
+            </div>
         </section>
       </div>
   </section>
@@ -334,7 +336,7 @@
           <div class="section-caption"><p>Predators // The student experience</p></div>
            <!-- <div class="container"> -->
                <!-- 5.1 -->
-               <div class="mobile-slide predgal"> 
+               <div class="mobile-slide predgal">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_1.jpg' ?>" alt="On a foggy day, Aaron Wirsing points out possible locations where wolves could be on a distant ridge." data-lity></span>
                 <p class="">On a foggy day, professor Aaron Wirsing points out possible locations where wolves could be on a distant ridge.</p>
               </div>
@@ -352,12 +354,12 @@
               <div class="mobile-slide predgal float-right">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_4.jpg' ?>" alt="During the weeklong course, students found many opportunities to record data that would be used for presentations at the end of the quarter." data-lity></span>
                 <p>During the weeklong course, students found many opportunities to record data that would be used for presentations at the end of the quarter.</p>
-              </div> 
+              </div>
               <!-- 5.5 -->
               <div class="mobile-slide predgal">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PRED_GAL_5.jpg' ?>" alt="At the site of a wolf-killed elk, biologist Ky Koitzsch explains how to conduct a necropsy, studying everything from the elk’s worn molars and bone marrow health to nearby wolf pawprints and raven droppings." data-lity></span>
                 <p>At the site of a wolf-killed elk, biologist Ky Koitzsch explains how to conduct a necropsy, studying everything from the elk’s worn molars and bone marrow health to nearby wolf pawprints and raven droppings.</p>
-              </div> 
+              </div>
               <!--IGNORED ON MOBILE -->
               <div class="student-quote predgal float-right">
                 <!-- <div class="row centered pad-top"> -->
@@ -373,14 +375,14 @@
                   </p>
                <!--  </div> -->
               </div>
-        <!-- </div> --> 
+        <!-- </div> -->
         <section class="scrollit read-more" aria-hidden="true">
-          <p>Scroll to continue</p>  
+          <p>Scroll to continue</p>
           <div class="mouse">
             <div class="scroll"></div>
-          </div> 
+          </div>
       </section>
-      </div>     
+      </div>
     </section>
 
     <!--6. PREDATOR - LECTURE-->
@@ -414,10 +416,10 @@
                         <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
                         Your browser does not support HTML5 audio.
                       </audio>
-                      
+
                       <p class="audio-buttons">
-                        <button class="audio-ctrl audio-play" tabindex="0">0:29 / PLAY LESSON</button>  
-                        <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
+                        <button class="audio-ctrl audio-play" tabindex="0">0:29 / PLAY LESSON</button>
+                        <button class="audio-ctrl audio-pause" tabindex="0">pause</button>
                         <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                       </p>
                       <div class="visually-hidden audio-transcript" tabindex="0">
@@ -425,14 +427,14 @@
                         <span class="close-transcript" role="button" aria-label="close transcript" tabindex="0"></span>
                       </div>
                     </div>
-              </div>         
+              </div>
           </div>
         </div>
         <section class="scrollit read-more" aria-hidden="true">
-            <p>Scroll to continue</p>  
+            <p>Scroll to continue</p>
             <div class="mouse">
               <div class="scroll"></div>
-            </div> 
+            </div>
         </section>
       </div>
     </section>
@@ -453,14 +455,14 @@
                   <div class="icon prey"></div>
                   <h1 class="">Prey</h1>
                   <span class="col-md-4 col-xs-10"><span class="squiggle"></span></span>
-              </div>         
+              </div>
           </div>
       </div>
         <section class="scrollit read-more" aria-hidden="true">
-            <p>Scroll to continue</p>  
+            <p>Scroll to continue</p>
             <div class="mouse">
               <div class="scroll"></div>
-            </div> 
+            </div>
         </section>
       </div>
   </section>
@@ -484,14 +486,14 @@
                   </video>
                 </div>
                 <p>Student’s-eye view: a morning drive; a talk about what animals to look for; exploring the surroundings for elk, bison, wolves and more.</p>
-              </div> 
+              </div>
               <!-- 8.2 -->
               <div class="mobile-slide prey">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_2.jpg' ?>" alt="Bighorn sheep are just one of the many animals that congregate in Yellowstone" data-lity></span>
                 <p class="">Bighorn sheep are just one of the many species of animals that congregate in Yellowstone.</p>
               </div>
               <!-- 8.4 -->
-              <div class="mobile-slide prey float-right"> 
+              <div class="mobile-slide prey float-right">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PREY_GAL_3.jpg' ?>" alt="Gavin Forster, ’18,  helps collect data for John Marzluff’s ongoing bird survey." data-lity></span>
                 <p class="">Gavin Forster, &rsquo;18,  helps collect data for John Marzluff’s ongoing bird survey.</p>
               </div>
@@ -517,12 +519,12 @@
          <!--  </div> -->
         <!-- </div> -->
         <section class="scrollit read-more" aria-hidden="true">
-          <p>Scroll to continue</p>  
+          <p>Scroll to continue</p>
           <div class="mouse">
             <div class="scroll"></div>
-          </div> 
+          </div>
       </section>
-      </div>     
+      </div>
     </section>
 
     <!--9. PREY - LECTURE-->
@@ -556,10 +558,10 @@
                         <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
                         Your browser does not support HTML5 audio.
                       </audio>
-                      
+
                       <p class="audio-buttons">
-                        <button class="audio-ctrl audio-play" tabindex="0">0:21 / PLAY LESSON</button>  
-                        <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
+                        <button class="audio-ctrl audio-play" tabindex="0">0:21 / PLAY LESSON</button>
+                        <button class="audio-ctrl audio-pause" tabindex="0">pause</button>
                         <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                       </p>
                       <div class="visually-hidden audio-transcript" tabindex="0">
@@ -567,14 +569,14 @@
                         <span class="close-transcript" role="button" aria-label="close transcript" tabindex="0"></span>
                       </div>
                     </div>
-              </div>         
+              </div>
           </div>
         </div>
         <section class="scrollit read-more" aria-hidden="true">
-            <p>Scroll to continue</p>  
+            <p>Scroll to continue</p>
             <div class="mouse">
               <div class="scroll"></div>
-            </div> 
+            </div>
         </section>
       </div>
     </section>
@@ -595,14 +597,14 @@
                   <div class="icon scav"></div>
                   <h1 class="">Scavengers</h1>
                   <span class="col-md-4 col-xs-10"><span class="squiggle"></span></span>
-              </div>         
+              </div>
           </div>
       </div>
         <section class="scrollit read-more" aria-hidden="true">
-            <p>Scroll to continue</p>  
+            <p>Scroll to continue</p>
             <div class="mouse">
               <div class="scroll"></div>
-            </div> 
+            </div>
         </section>
       </div>
   </section>
@@ -631,9 +633,9 @@
               <div class="mobile-slide scav">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_2.jpg' ?>" alt="The close-up intricacies of a feather." data-lity></span>
                 <p>The close-up intricacies of a feather.</p>
-              </div> 
+              </div>
               <!-- 11.4 -->
-              <div class="mobile-slide scav float-right"> 
+              <div class="mobile-slide scav float-right">
                <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/SCAV_GAL_3.jpg' ?>" alt="Two ravens make their presence known in the otherwise silent expanse of the Lamar Valley." data-lity></span>
                 <p class="">Two ravens make their presence known in the otherwise silent expanse of the Lamar Valley.</p>
               </div>
@@ -659,12 +661,12 @@
          <!--  </div> -->
         <!-- </div> -->
         <section class="scrollit read-more" aria-hidden="true">
-          <p>Scroll to continue</p>  
+          <p>Scroll to continue</p>
           <div class="mouse">
             <div class="scroll"></div>
-          </div> 
+          </div>
       </section>
-      </div>     
+      </div>
     </section>
 
     <!--12. SCAVENGER - LECTURE-->
@@ -698,10 +700,10 @@
                         <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
                         Your browser does not support HTML5 audio.
                       </audio>
-                      
+
                       <p class="audio-buttons">
-                        <button class="audio-ctrl audio-play" tabindex="0">0:21 / PLAY LESSON</button>  
-                        <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
+                        <button class="audio-ctrl audio-play" tabindex="0">0:21 / PLAY LESSON</button>
+                        <button class="audio-ctrl audio-pause" tabindex="0">pause</button>
                         <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                       </p>
                       <div class="visually-hidden audio-transcript" tabindex="0">
@@ -709,14 +711,14 @@
                         <span class="close-transcript" role="button" aria-label="close transcript" tabindex="0"></span>
                       </div>
                     </div>
-              </div>         
+              </div>
           </div>
         </div>
         <section class="scrollit read-more" aria-hidden="true">
-            <p>Scroll to continue</p>  
+            <p>Scroll to continue</p>
             <div class="mouse">
               <div class="scroll"></div>
-            </div> 
+            </div>
         </section>
       </div>
     </section>
@@ -737,14 +739,14 @@
                   <div class="icon people"></div>
                   <h1 class="">Neighbors</h1>
                   <span class="col-md-4 col-xs-10"><span class="squiggle"></span></span>
-              </div>         
+              </div>
           </div>
       </div>
         <section class="scrollit read-more" aria-hidden="true">
-            <p>Scroll to continue</p>  
+            <p>Scroll to continue</p>
             <div class="mouse">
               <div class="scroll"></div>
-            </div> 
+            </div>
         </section>
       </div>
   </section>
@@ -764,9 +766,9 @@
               <div class="mobile-slide peop float-right">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOPLE_GAL_2.jpg' ?>" alt="Horses, longhorns, goats and other domesticated animals pepper the many ranches in the expansive Tom Miner Basin, just miles from the Yellowstone Park border." data-lity></span>
                 <p>Horses, longhorns, goats and other domesticated animals pepper the many ranches in the expansive Tom Miner Basin, just miles from the Yellowstone Park border.</p>
-              </div> 
+              </div>
               <!-- 14.3 -->
-              <div class="mobile-slide peop"> 
+              <div class="mobile-slide peop">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOP-6.jpg' ?>" alt="At the site of a wolf-killed elk, wildlife biologist Ky Koitzsch (center) explains to students how to conduct a necropsy." data-lity></span>
                 <p class="">At the site of a wolf-killed elk, wildlife biologist Ky Koitzsch (center) explains to students how to conduct a necropsy.</p>
               </div>
@@ -774,12 +776,12 @@
               <div class="mobile-slide peop float-right">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOP-5.jpg' ?>" alt="Zach Gregory, ’15, a wildlife technician working alongside Koitzsch, shows Jenny Brent, ’19, how to enter data on a necropsy form. Gregory took this class as an undergraduate." data-lity></span>
                 <p>Zach Gregory (right), ’15, a wildlife technician working alongside Koitzsch, shows Jenny Brent, ’19, how to enter data on a necropsy form. Gregory took this class as an undergraduate.</p>
-              </div> 
+              </div>
               <!-- 14.5 -->
               <div class="mobile-slide peop">
                 <span><img class="draw-line-link" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/environment/PEOP-4.jpg' ?>" alt="Like Gregory, Connor Meyer (left, facing camera), ’16, took this class as an undergraduate and works in the park as a wildlife technician. He leads Wirsing (right, facing camera) and the rest of the class to the site of a cougar-killed elk." data-lity></span>
                 <p>Like Gregory, Connor Meyer (left, facing camera), ’16, took this class as an undergraduate and works in the park as a wildlife technician. He leads Wirsing (right, facing camera) and the rest of the class to the site of a cougar-killed elk.</p>
-              </div> 
+              </div>
               <!--IGNORED ON MOBILE-->
               <div class="student-quote peop float-right">
               <!-- <div class="row centered pad-top"> -->
@@ -797,12 +799,12 @@
          <!--  </div> -->
         <!-- </div> -->
         <section class="scrollit read-more" aria-hidden="true">
-          <p>Scroll to continue</p>  
+          <p>Scroll to continue</p>
           <div class="mouse">
             <div class="scroll"></div>
-          </div> 
+          </div>
       </section>
-      </div>     
+      </div>
     </section>
 
     <!--15. PEOPLE - LECTURE-->
@@ -835,10 +837,10 @@
                         <!-- <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/transcription.vtt" label="English Captions" kind="subtitles" srclang="en-us" default /> -->
                         Your browser does not support HTML5 audio.
                       </audio>
-                      
+
                       <p class="audio-buttons">
-                        <button class="audio-ctrl audio-play" tabindex="0">0:36 / PLAY LESSON</button>  
-                        <button class="audio-ctrl audio-pause" tabindex="0">pause</button>  
+                        <button class="audio-ctrl audio-play" tabindex="0">0:36 / PLAY LESSON</button>
+                        <button class="audio-ctrl audio-pause" tabindex="0">pause</button>
                         <button class="audio-ctrl audio-read" tabindex="0">read transcript</button>
                       </p>
                       <div class="visually-hidden audio-transcript" tabindex="0">
@@ -846,14 +848,14 @@
                         <span class="close-transcript" role="button" aria-label="close transcript" tabindex="0"></span>
                       </div>
                     </div>
-              </div>         
+              </div>
           </div>
         </div>
         <section class="scrollit read-more" aria-hidden="true">
-            <p>Scroll to continue</p>  
+            <p>Scroll to continue</p>
             <div class="mouse">
               <div class="scroll"></div>
-            </div> 
+            </div>
         </section>
       </div>
     </section>
@@ -873,18 +875,18 @@
                   </div>
                   <div class="row centered spaced">
                     <p class="col-md-7 col-xs-11 no-top no-bottom">
-                        Read more about who the students met in Yellowstone, the animals they saw and studied, and what they discovered about the challenges and rewards of careers in wildlife management. 
+                        Read more about who the students met in Yellowstone, the animals they saw and studied, and what they discovered about the challenges and rewards of careers in wildlife management.
                     </p>
                   </div>
                   <a href="http://www.washington.edu/boundless/yellowstone-students/" class="explore">Read more</a>
-              </div>         
+              </div>
           </div>
       </div>
       <section class="scrollit read-more" aria-hidden="true">
-          <p>Scroll to continue</p>  
+          <p>Scroll to continue</p>
           <div class="mouse">
             <div class="scroll"></div>
-          </div> 
+          </div>
       </section>
     </div>
   </section>
@@ -907,7 +909,7 @@
                 <div class="boundless-button sm dark give"><span><a id="give-now-button" data-fund="CELEND" href="#" data-lity data-lity-target="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&frame_buster=false&source_typ=3&appeal=17XIS&source=CELEND" role="button">Give now</a></span></div>
                 <!-- <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="CELEND" href="#" data-lity data-lity-target="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&frame_buster=false&source_typ=3&appeal=17XIS&source=CELEND">Give now</a></span></div> -->
               </div>
-            </div>         
+            </div>
           </div>
       </div>
     </div>
@@ -958,10 +960,10 @@
 <!-- <script src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/js/environment.min.js' ?>" type="text/javascript"></script> -->
 <!-- <script src="<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>" type="text/javascript"></script> -->
 
- 
+
 
  <?php //get_template_part('footer', 'campaign-v2'); ?>
-    
+
     <?php echo $scripts; ?>
     <?php if($_SERVER['HTTP_HOST'] != 'localhost'){ ?>
       <script>
@@ -984,6 +986,6 @@
     <?php } ?>
   </body>
 </html>
-<!-- 
+<!--
 </body>
 </html> -->

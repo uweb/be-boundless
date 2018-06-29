@@ -1,5 +1,8 @@
 <?php
-	$meta = '';
+	$twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/ischool/twitter-card.jpg';
+	$twitter_title = 'Slide to unlock';
+	$twitter_description = 'Today’s touch-screen world is leaving behind an entire segment of the population: those with motor impairments. UW Information School Ph.D. candidate Martez Mott wants to change that.';
+	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/ischool.css' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/ischool.min.js' type='text/javascript'></script>";
 	$storyCodes = 'WOBDIS';
@@ -20,14 +23,14 @@
           <div class="top-right"></div>
           <div class="top"></div>
         </div>
-      
+
         <div class="text">
-          <h1>Slide to unlock</h1>  
-          <p>Today’s touch-screen world is leaving behind an entire segment of the population: those with motor impairments. iSchool Ph.D. candidate Martez Mott wants to change that. 
-</p> 
+          <h1>Slide to unlock</h1>
+          <p>Today’s touch-screen world is leaving behind an entire segment of the population: those with motor impairments. iSchool Ph.D. candidate Martez Mott wants to change that.
+</p>
         </div>
-      
-    </div>            
+
+    </div>
     <section class="scrollit read-more">
         <p>Scroll Down</p>
         <div class="mouse">
@@ -44,15 +47,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy">
-                  
+
                     <p>We live in a touch-screen world. One where tiny computers full of information live in our pockets. Where boarding passes are printed at touch-screen kiosks and groceries are paid for at touch-screen card readers. A world where extending a finger and making contact with a particular point gets us what we want. </p>
 
-                    <p>Well, except for the millions of us across the world who experience motor impairments — the millions of us who are being left behind.</p> 
+                    <p>Well, except for the millions of us across the world who experience motor impairments — the millions of us who are being left behind.</p>
 
 
-                </div> 
-          </div> 
-        </div>   
+                </div>
+          </div>
+        </div>
       </section>
 
 
@@ -64,14 +67,14 @@
 
           <div class="b-1">
             <p>“I’m pretty sure if you went around and asked, ‘Hey, what do you think a touch is?’, you might get different answers, but it would probably converge around something that looks like this,” says Martez Mott, raising his pointer finger before tapping it on the table in front of him. “For the participants in my studies, that was not the case at all.”</p>
-          
+
               <p>Mott is a Ph.D. candidate in the UW’s <a href="https://ischool.uw.edu/">Information School</a> and an active member of the philanthropy-funded <a href="http://depts.washington.edu/madlab/">MAD</a> (Mobile + Accessible Design) Lab and the <a href="https://dub.washington.edu/">DUB</a> (Design. Use. Build.) Group, where his research centers on making touch screens accessible for people who live with motor impairments, from cerebral palsy to muscular dystrophy to Parkinson’s disease. </p>
-          
+
               <p>“Touch screens were developed for a certain type of use,” says Mott, who received financial support through the University of Washington Graduate Opportunity Award. It’s simple: If you want to interact with something on your device, you have to be able to extend a finger and touch it cleanly and accurately. “That’s it,” he says. “Everything else is relegated to some other type of functionality — if you touch your phone with two fingers, it thinks you’re trying to zoom.” </p>
-          
+
               <p>For those who live with cerebral palsy, however, touch might look like patting the screen with the back of the hand, or dragging a palm or a fist. “When that happens, the screen picks up a big blobby area,” says Mott, “and the system has no idea what to do with it.”  </p>
-          
-              <p>Yet.</p> 
+
+              <p>Yet.</p>
         </div>
 
         <div class="b-2">
@@ -87,12 +90,12 @@
           <div class="boundless-headline sm dark"><span><h2>How we touch</h2></span></div>
           <p>What happens if you can’t touch your device with a single finger?</p>
         </div>
-        <div class="block">         
+        <div class="block">
           <div>
             <img alt="ipad screen showing user touching with finger" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/ipad.png' ?>">
             <img class="animation" loop alt="ipad" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/single-loop.gif' ?>">
             <p>When a single finger makes contact with the screen, the device registers the center of that point as the user’s intended touch point. </p>
-          </div>     
+          </div>
           <div>
             <img alt="ipad screen showing user touching with whole hand" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/ipad.png' ?>">
             <img class="animation" loop alt="ipad" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/multiple-loop.gif' ?>">
@@ -100,7 +103,7 @@
           </div>
         </div>
       </section>
-      
+
 
       <section class="text-block yellow section-3">
         <div class="block">
@@ -108,7 +111,7 @@
           <div class="b-0"></div>
 
           <div class="b-1">
-            
+
             <div>
               <div id="martez-II"></div>
              <img data-object-fit="contain" id="martez" alt="Martez Mott" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ischool/smart.png' ?>">
@@ -116,10 +119,10 @@
 
             <div>
               <h2 class="mixed"><span>Say hello </span>to smart<br> touch</h2>
-              
+
               <p class="callout">Calibration software for touch-screen accessibility </p>
 
-              <p>Imagine a system that adapts to touch — whatever that might look like. Enter: Smart Touch. The project is a work in progress, constantly being tested and tuned by Mott and a small team of researchers, including his advisor, Associate Professor Jacob Wobbrock. </p> 
+              <p>Imagine a system that adapts to touch — whatever that might look like. Enter: Smart Touch. The project is a work in progress, constantly being tested and tuned by Mott and a small team of researchers, including his advisor, Associate Professor Jacob Wobbrock. </p>
 
               <p>The objective? To get touch-screen access to a level where anybody can pick up a device and, with a simple calibration procedure, be able to use it right out of the box without needing additional specialized technologies. </p>
 
@@ -136,12 +139,12 @@
                 <li>University of Washington Graduate Opportunity Award recipient </li>
                 <li>Post-grad plans: Teaching, preferably at the iSchool. “I’m working toward my Ph.D. because I love the research, but I also want to empower others the way my mentors have empowered me.” </li>
               </ul>
-              
+
 
             </div>
 
           </div>
-  
+
           <div class="b-2">
             <blockquote>The device asks you to touch a couple targets — a balloon or a bull’s-eye, for example — so it can pick up on your unique touch patterns and adjust how it responds.</blockquote>
           </div>
@@ -153,13 +156,13 @@
       <section class="text-block giving-widget-promoted">
               <div class="row">
                   <div class="first-col col-md-5 col-md-offset-4 col-sm-8 col-sm-offset-1 col-xs-offset-1 col-xs-10">
-                    <div>             
+                    <div>
                       <h2 class="headline-gold">You can make inclusive technology possible</h2>
                       <p>Mott is just one of many UW students and researchers working to make digital innovations accessible for everyone. By giving to the iSchool’s Human Computer Interaction Research Fund, you can fuel life-changing tech solutions for people of all abilities.</p>
                     </div>
                   </div>
                   <div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-offset-1 ">
-                    <div>                                 
+                    <div>
                       <div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="WOBDIS" href="#giving-widget-promoted">Give now</a></span></div>
                       <button id="close-give">Close</button>
                     </div>
@@ -182,13 +185,13 @@
         <div class="block">
 
           <div class="b-0"></div>
-          
+
           <div class="b-2">
           </div>
 
-          <div class="b-1">           
+          <div class="b-1">
               <h2 class="mixed"><span>Making smart</span> touch a reality</h2>
-              
+
               <p class="callout">With real-life users</p>
 
               <p>Two years ago, at the start of the project, Mott lugged a huge, table-sized Microsoft Surface into Provail: a local center that helps people with disabilities pursue the lives they want to live. Among the nonprofit’s many offerings? Computer classes — and lots of motivated learners willing to participate in his study. </p>
@@ -208,7 +211,7 @@
         </div>
       </section>
 
-      
+
 
       <section class="text-block section-5">
         <h2>A DJ with a dream</h2>
@@ -220,7 +223,7 @@
         </div>
       </section>
 
-      
+
 
   <div class="paraBackground">
       <div class="paraBG"></div>
@@ -228,10 +231,10 @@
         <div class="block">
 
 
-          <div class="b-1">           
+          <div class="b-1">
               <h2 class="mixed"><span>Touch screens, </span>everywhere</h2>
-              
-              <p>Failure is part of the learning process, and now — “after a <i>lot</i> of learning,” says Mott, laughing — he has a system up and running. And as he creates newer versions of Smart Touch over the next few years, retooling algorithms to improve accuracy and creating better designs for performance gains, the iterations will only get better. 
+
+              <p>Failure is part of the learning process, and now — “after a <i>lot</i> of learning,” says Mott, laughing — he has a system up and running. And as he creates newer versions of Smart Touch over the next few years, retooling algorithms to improve accuracy and creating better designs for performance gains, the iterations will only get better.
 </p>
 
               <p>“The hope is that you could buy a device, turn on an accessibility setting, and then go through a calibration procedure for better touch performance so you can use your phone or tablet however <i>you</i> like,” says Mott, who’s slated to wrap up his dissertation by 2019. </p>
@@ -247,7 +250,7 @@
               <p>And as far as rolling it into the market? That’s a few years away, but Mott has a vision — starting with buy-in from the tech industry. “I would love to see every touch-enabled device — public or private — be accessible, with this technology integrated into every operating system, quietly running in the background. I want to see a check-out kiosk at the grocery store embedded with intelligence that can infer people’s behaviors based on their unique touch,” he says. “We can do it. We just haven’t done it yet.” </p>
 
           </div>
-          
+
           <div class="b-2">
           </div>
 
@@ -256,7 +259,7 @@
       </section>
 
 
-      
+
       <section class="text-block yellow section-7">
         <div class="block">
 
@@ -270,7 +273,7 @@
               <a href="spotify:user:uofwa:playlist:0c3eH0VDqfviySoeAzOKQE">Listen</a>
               <p>(Requires <a href="https://www.spotify.com/us/download/other/">Spotify player</a>)</p>
             </div>
-            
+
 <!--             <ul>
               <li>The Wreck Of The Edmund Fitzgerald - Gordon Lightfoot</li>
               <li>Stayin' Alive - Bee Gees</li>
@@ -282,10 +285,10 @@
               <li>Movin’ N’ Grovin’ - Duane Eddy</li>
               <li>Rumble - Link Wray & His Ray Men</li>
               <li>Call Me The Breeze - J.J. Cale</li>
-            </ul> --> 
+            </ul> -->
           </div>
 
-          <div class="b-1">           
+          <div class="b-1">
             <div>
               <blockquote><span>&ldquo;</span>My hope for technology is that somebody like me can be clearly understood. Having a device I could use would mean freedom.<span>&rdquo;</span></blockquote>
               <p>Ken Frye</p>
@@ -312,7 +315,7 @@
           <div class="container">
               <div class="row">
                   <div class="col-md-10 col-md-offset-1 copy ">
-                    <div style="text-align: center">             
+                    <div style="text-align: center">
                       <h2 class="headline-gold">What you care about <br>can change the world</h2>
                       <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless – For Washington, For the World. You can be part of Mott’s project and help iSchool students like him make technology accessible for everyone at the MAD (Mobile + Accessible Design) Lab by making a gift to the Human Computer Interaction Research Fund.</p>
                       <div id="immersive-give-iframe"></div>

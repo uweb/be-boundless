@@ -1,5 +1,8 @@
 <?php
-	$meta = '';
+	$twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/socialwork/twitter-card.jpg';
+	$twitter_title = 'Creating communities that care';
+	$twitter_description = 'Across Seattle, students from the UW School of Social Work are partnering with community leaders to increase young people’s chances of achieving success.';
+	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/socialwork.css' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/socialwork.min.js' type='text/javascript'></script>";
 	$storyCodes = 'ESIEND';
@@ -95,7 +98,7 @@
 						<p>Little League coach Aaron Parker is using Communities in Action principles to help his team succeed both on the field and off.</p>
 						<p class="play-container">
 							<a data-lity class="play" href="https://www.youtube.com/embed/3DvGGqEh0ug?autoplay=1&rel=0&showinfo=0">
-								See his story 
+								See his story
 								<svg aria-hidden="true" x="0px" y="0px" width="14px" height="3px" viewBox="0 0 14 3" enable-background="new 0 0 14 3" xml:space="preserve"><rect fill="#4b2e83" width="14" height="3"/></svg>
 							</a>
 						</p>
@@ -149,7 +152,7 @@
 						<h4>Healthy behaviors</h4>
 						<p>Now that they’ve learned the social development strategy, children are more likely to choose healthy behaviors, like conflict resolution, over unhealthy ones, like drinking or doing drugs.</p>
 					</div>
-				</div>	
+				</div>
 			</div>
 		</section>
 		<section class="text-block white">

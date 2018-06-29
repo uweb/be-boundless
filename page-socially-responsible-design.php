@@ -1,5 +1,8 @@
 <?php
-	$meta = '';
+	$twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/built-env/twitter-card.jpg';
+	$twitter_title = 'Garden cities';
+	$twitter_description = 'At the UW’s College of Built Environments, students like David de la Cruz, ’17, are partnering with some of the world’s most vulnerable communities in the fight for environmental justice.';
+	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/built-env.css' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/built-env.min.js' type='text/javascript'></script>";
 	$storyCodes = 'AUPGEN,LSCHOL,LAPERU';
@@ -10,7 +13,7 @@
 <div id="immersive-body">
 
 
-<section class="intro" id="intro-vid">          
+<section class="intro" id="intro-vid">
 
 
   <button id="pause">Pause</button>
@@ -27,8 +30,8 @@
               <h1>Garden <br>cities</h1>
               <span class="udub-slant"><span></span></span>
               <p>At the UW’s College of Built Environments, students like David de la Cruz, ’17, are partnering with some of the world’s most vulnerable communities in the fight for environmental justice. </p>
-              
-          </div>          
+
+          </div>
           <div class="col-md-6 col-lg-3 col-md-offset-1 col-xs-12 col-lg-offset-1 col-xs-offset-1 play-button" >
               <a data-lity href="https://www.youtube.com/embed/Tr6KBzdaM0o?autoplay=1&rel=0&showinfo=0">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -87,14 +90,14 @@
 
 <p><i>Where</i> you live affects <i>how</i> you live. </p>
 
-                      </div>                 
-                       
+                      </div>
+
                     </div>
                 </div>
-          </div> 
-        </div>   
+          </div>
+        </div>
       </section>
-      
+
       <section class="para p-2">
         <h3><span>A legacy of pollution</span>  </h3>
         <div class="cutout">
@@ -121,15 +124,15 @@
 <p>Creating a world where all people can live healthier and more fulfilling lives is also the mission of the UW’s <a href="http://uw.edu/populationhealth">Population Health Initiative</a>, which leverages capabilities and opportunities at the UW and beyond to advance well-being on a local and global scale. </p>
 
 
-                      </div>                 
+                      </div>
                       <div class="col-md-5 col-md-offset-1">
                       <blockquote><span>&ldquo;</span>The community engagement work produced by the College of Built Environment’s landscape architecture department is what compelled me to apply to the UW. I’m interested in collaborating on socially responsible designs that strive for community well-being.<span>&rdquo;</span></blockquote>
                           <p class="attribute"> David de la Cruz, ’17</p>
                       </div>
                     </div>
                 </div>
-          </div> 
-        </div>   
+          </div>
+        </div>
       </section>
 
       <section class="para p-3">
@@ -153,20 +156,20 @@
 
 <p>“I was really interested in working with landscape architecture professors like Ben Spencer who have this emphasis on community engagement,” says de la Cruz, whose work was supported by the Margaret and Fritz Wagner Family Endowed Fellowship, the Norman J. Johnston Endowed Scholarship, and the University of Washington Graduate Opportunity Award.</p>
 
-<p>That emphasis is what inspired de la Cruz to apply to the UW, where socially responsible design is a solution to some of the world’s greatest health and equity challenges.</p> 
+<p>That emphasis is what inspired de la Cruz to apply to the UW, where socially responsible design is a solution to some of the world’s greatest health and equity challenges.</p>
 
 <p>He was also inspired by his mother, a longtime community leader in Pueblo del Rio whose outreach has included setting up neighborhood food banks and hosting support groups for widows and women who have experienced domestic violence. “Seeing my mother’s commitment to this idea of the collective well-being of her community — and the faith her community has in her — has shaped the work that I do.”</p>
 
-                      </div>                 
+                      </div>
                       <div class="col-md-5 col-md-offset-1">
                       <blockquote><span>&ldquo;</span>The College of Built Environments has a strong ethos of dedication to community-based development. Having colleagues, students and leadership who share the same philosophy of socially engaged, environmentally responsible design is a really important aspect of who we are.<span>&rdquo;</span></blockquote>
                           <p class="attribute">Ben Spencer</p>
                           <small>Associate Professor of Landscape Architecture</small>
-                      </div> 
+                      </div>
                     </div>
                 </div>
-          </div> 
-        </div>   
+          </div>
+        </div>
       </section>
 
 
@@ -181,7 +184,7 @@
         </div>
       </section>
 
-      
+
       <section class="text-block transparent no-pad">
         <div class="container">
             <div class="row">
@@ -194,16 +197,16 @@
 <p>These ranged from gentrification to displacement to toxic-emissions exposure. Some communities are plagued by drought, others by flooding. These historically oppressed groups have a feeling of being disposable, says de la Cruz. His goal? To work with communities to create longstanding solutions, together — an ethos core to the College of Built Environments. </p>
 <p>Through participatory design workshops, de la Cruz and the Informal Urban Communities Initiative partnered with residents, community leaders and local agencies as they worked to implement environments that better served the residents’ needs, whether that meant harvesting fog and constructing gardens to address a lack of water and food security in Lima or creating a safe, attractive green alleyway to enjoy in Phnom Penh. “My international experiences taught me how to build and cultivate working relationships with communities that have a wealth of information to tap into,” says de la Cruz. “Now I know what a successful workshop looks like and how to ensure that decisions are made in a way that benefits community members.” </p>
 
-                      </div>                 
+                      </div>
                       <div class="col-md-5 col-md-offset-1">
                         <blockquote><span>&ldquo;</span>Pursuing a profession such as landscape architecture provides me and others who share a traditionally ‘other’ identity with the ability to pursue problem-solving in the name of environmental justice.<span>&rdquo;</span></blockquote>
                         <p class="attribute">David de la Cruz, '17</p>
                         <img alt="David de la Cruz" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/built-env/CoBE_Immersive-2468.jpg' ?>" alt="">
-                      </div> 
+                      </div>
                     </div>
                 </div>
-          </div> 
-        </div>   
+          </div>
+        </div>
       </section>
 
 
@@ -212,7 +215,7 @@
 
           <div id="photo-1"></div>
           <div id="photo-2"></div>
-      
+
           <div class="text">
             <div><p>He's returning</p></div>
             <div><p id="fade-text">to the community that raised him</p></div>
@@ -220,7 +223,7 @@
 
       </section>
 
-  
+
       <section class="para p-5">
         <h3><span>Envisioning a garden city</span></h3>
         <div class="cutout">
@@ -251,18 +254,18 @@
 
 <p><i>Update</i>: After returning to his hometown, de la Cruz started working as a project manager for the Los Angeles Neighborhood Land Trust, an organization that creates parks and community gardens in underserved neighborhoods that have limited or no access to green space. He has also led an urban agriculture and community gardening workshop for local youth that was promoted by College Track, an organization focused on increasing educational attainment rates in communities of color nationwide.</p>
 <p><em>Originally published July 2017</em></p>
-                      </div>                 
+                      </div>
                       <div class="col-md-5 col-md-offset-1">
                         <blockquote><span>&ldquo;</span>People lose their way a little bit because of the example that’s been set for them, but David is a different example. He shows kids that you can go away to school and be all you want to be, and that you can bring it back and pay it forward.<span>&rdquo;</span></blockquote>
                         <p class="attribute">Carolynn Martin</p>
                         <small>Executive Director of the Wellness Station </small>
                         <img alt="David de la Cruz" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/built-env/de-la-cruz-mom.jpg' ?>" alt="">
                         <small style="margin-top: -25px">De la Cruz and his mother, Berta</small>
-                      </div> 
+                      </div>
                     </div>
                 </div>
-          </div> 
-        </div>   
+          </div>
+        </div>
       </section>
 
       <div class="clouds">
@@ -279,7 +282,7 @@
           <div class="container">
               <div class="row">
                   <div class="col-md-10 col-md-offset-1 copy ">
-                    <div style="text-align: center">             
+                    <div style="text-align: center">
                       <h2 class="headline-gold">What you care about <br>can change the world</h2>
                       <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. Invest in environmental justice and healthier, more fulfilling futures for all by contributing to the College of Built Environments and students like David de la Cruz. </p>
                       <div id="immersive-give-iframe"></div>

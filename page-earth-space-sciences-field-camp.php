@@ -1,6 +1,9 @@
 <?php
 
-    $meta = '';
+    $twitter_photo = '';
+    $twitter_title = 'Learning from the ground up';
+    $twitter_description = 'At the College of the Environment’s geology field camp, students hit the dirt for lessons you can’t find in a textbook.';
+    $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
     $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/homepage-plus.css' type='text/css' media='all' />";
     $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/homepage-plus.min.js' type='text/javascript'></script>";
     $storyCodes = 'GEOLUG';

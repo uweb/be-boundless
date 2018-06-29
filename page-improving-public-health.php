@@ -1,5 +1,8 @@
 <?php
-	$meta = '';
+	$twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/public-health/twitter-card.jpg';
+	$twitter_title = 'Bridging the "know-do" gap';
+	$twitter_description = 'The UW School of Public Health is helping turn research into action to interrupt the transmission of parasitic worms in developing countries.';
+	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/public-health.css' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/public-health.min.js' type='text/javascript'></script>";
 	$storyCodes = 'GHFEND,WACHPH';
@@ -16,7 +19,7 @@
 
 <div id="immersive-body">
 
-<section class="intro" id="intro-vid">          
+<section class="intro" id="intro-vid">
 
 
   <button id="pause">Pause</button>
@@ -29,20 +32,20 @@
 
   <div class="intro-body">
     <div id="slide-0">
-      <h1>Bridging the <span>“know-do” gap</span></h1>  
-      <hr> 
-      <p>Home to the world’s first Ph.D. program in implementation science, the School of Public Health is helping turn research into action to interrupt the transmission of parasitic worms in developing countries.</p>     
-    </div>            
+      <h1>Bridging the <span>“know-do” gap</span></h1>
+      <hr>
+      <p>Home to the world’s first Ph.D. program in implementation science, the School of Public Health is helping turn research into action to interrupt the transmission of parasitic worms in developing countries.</p>
+    </div>
     <div class="slides">
-      <div id="slide-1"><span><p>Anemia.</p></span></div>            
+      <div id="slide-1"><span><p>Anemia.</p></span></div>
       <div id="slide-2">
         <p><span id="word-1">Weak</span><span id="word-2">ness.</span></p>
-      </div>            
+      </div>
       <div id="slide-3">
         <p>Malaise,</p>
         <p>stomach aches, interrupted mental and physical development.</p>
       </div>
-    </div> 
+    </div>
   </div>
 
 
@@ -65,15 +68,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy">
-                  
+
                     <p class="headline-gold center">For two billion people across the planet, these symptoms are part of daily life.</p>
 
-                    <p>They’re part of sitting in class, trying to learn. They’re part of going to work, trying to provide. They’re part of living with soil-transmitted helminths (STH) — more commonly known as intestinal worms — inhabiting victims’ bellies, sapping their nutrients, and stunting their physical and cognitive development. </p> 
+                    <p>They’re part of sitting in class, trying to learn. They’re part of going to work, trying to provide. They’re part of living with soil-transmitted helminths (STH) — more commonly known as intestinal worms — inhabiting victims’ bellies, sapping their nutrients, and stunting their physical and cognitive development. </p>
                     <p>In countries where the disease is prevalent, soil-transmitted helminths have long been a public health problem and a human rights issue — and the <a href="http://sph.washington.edu/">UW School of Public Health</a> is doing something about it. Researchers are playing a leading role in <a href="http://www.nhm.ac.uk/our-science/our-work/sustainability/deworm3.html">DeWorm3</a>, a project coordinated by the Natural History Museum in London and funded by the <a href="http://www.gatesfoundation.org/">Bill &amp; Melinda Gates Foundation</a>. DeWorm3 is providing the platform for one of the largest implementation science projects in the field to date. Its core mission? To interrupt the transmission of intestinal worms.</p>
 
-                </div> 
-          </div> 
-        </div>   
+                </div>
+          </div>
+        </div>
       </section>
 
 
@@ -287,15 +290,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy transparent">
-                  
+
                     <p>It’s here in the <a href="http://globalhealth.washington.edu/">Department of Global Health</a>, in partnership with the <a href="http://www.uwmedicine.org/">School of Medicine</a>, that the first-ever Ph.D. program in metrics and implementation science is transforming the way people approach population health to improve lives. Implementation science is also key to the UW’s <a href="http://uw.edu/populationhealth">Population Health Initiative</a>, launched in 2016 with the goal of improving human health, environmental resilience and social and economic equity around the world.</p>
 
                     <p class="gold-quote headline-gold purple smaller">Implementation science works to equally value voices on the ground, giving as much weight to feedback from community members as it does to local health officials and funders. <b>– Arianna Means</b></p>
 
 
-                </div> 
-          </div> 
-        </div>   
+                </div>
+          </div>
+        </div>
       </section>
 
 
@@ -308,19 +311,19 @@
             <div style="text-align: center"><div class="boundless-button sm dark"><span><a role="button" id="expander" href="http://www.uwmedicine.org/bios/pamela-becker">Learn more about Peter</a></span></div></div>
       </section>
 
-    
+
 
   <section class="text-block" id="expanding">
       <div class="container">
           <div class="row">
               <div class="col-md-10 col-md-offset-1 copy">
- 
+
                 <p>In 2013, Dr. Peter Cherutich, ’06, ’15, — the first graduate of the world’s first Ph.D. program in implementation science — took on a contentious issue. As the deputy director of medical services in Kenya’s Ministry of Health and former head of its National AIDS and STI Control Program, he and his team pushed out an informative — and controversial — advertisement promoting condom use among married couples who were having affairs. </p>
-                
+
                 <p>In Dr. Cherutich’s home country of Kenya, that’s about 30 percent of the married population, most of whom don’t use condoms. In Kenya, 6 percent of adults are HIV positive. Religious leaders called for the ad’s removal, claiming it promoted extramarital affairs, but Dr. Cherutich knew something had to change. Through awareness efforts, large-scale male circumcision campaigns, and testing and care, he pursued one goal: HIV prevention. His work tripled population coverage in just three years, leading to an estimated 5,000 new HIV infections averted. </p>
 
 
-                <p>“Implementation science through research and rigorous political advocacy laid the foundation for a successful implementation of male circumcision by removing social and political opposition to the scale up,” says Dr. Cherutich. “Noting how many HIV infections have been avoided through male circumcision is very gratifying.”</p> 
+                <p>“Implementation science through research and rigorous political advocacy laid the foundation for a successful implementation of male circumcision by removing social and political opposition to the scale up,” says Dr. Cherutich. “Noting how many HIV infections have been avoided through male circumcision is very gratifying.”</p>
 
               </div>
           </div>
@@ -332,7 +335,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy marginless padless">
-                  
+
                 <p class="gold-quote headline-gold purple smaller">Implementation science is research-based and scientific, but it’s also action-oriented. It’s actually taking that next step, bridging the ‘know-do’ gap.<b> – Arianna Means</b></p>
 
 
@@ -348,14 +351,14 @@
                     </div>
                   </div>
 
-                </div> 
-          </div> 
-        </div>   
+                </div>
+          </div>
+        </div>
     </section>
 
 
 
-  
+
 
     <section class="text-block special">
         <div class="boundless-headline sm dark"><span><h2>Intestinal worms and poverty: <i>An ongoing cycle</i></h2></span></div>
@@ -367,13 +370,13 @@
 
                 <p>These worms are all over the world, but in countries like Japan and the United States, public health officials have been able to control or even disrupt the transmission of the disease as the nations develop economically. In impoverished areas of Africa and Asia, they're still battling the cycle. So what are the barriers to eradicating this malady on a global scale?  </p>
 
-                
-            </div>                  
-          </div> 
-        </div>   
+
+            </div>
+          </div>
+        </div>
     </section>
 
-  
+
 
 
     <section class="text-block special info-3 marginless">
@@ -393,7 +396,7 @@
           <li>Worms produce eggs, which are passed in feces</li>
           <li>People often defecate outside, contaminating soil and drinking water</li>
           <li>Larvae penetrate bare feet and enter the gut through the bloodstream (hookworm)</li>
-          <li>Crops are fertilized by feces which often contain eggs </li>    
+          <li>Crops are fertilized by feces which often contain eggs </li>
         </ul>
       </div>
     </section>
@@ -404,18 +407,18 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy transparent">
                   <p>The primary culprits are limited access to clean water and sanitation resources, and the fact that in current deworming programs, only preschool- and school-aged children are receiving treatment, says Means. </p>
-                </div> 
-          </div> 
-        </div>   
+                </div>
+          </div>
+        </div>
     </section>
-  
-          
-  
+
+
+
 
 
   <section class="infographic info-2 special marginless">
-    
-     <h3>The current deworming treatment</h3> 
+
+     <h3>The current deworming treatment</h3>
     <div>
       <div>
         <img width="239px" height="268px" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/public-health/stage-1.png' ?>" alt="">
@@ -429,14 +432,14 @@
       </div>
     </div>
 
-  </section>  
+  </section>
 
 
   <section class="text-block special marginless">
       <div class="container">
           <div class="row">
               <div class="col-md-10 col-md-offset-1 copy marginless transparent">
-                
+
                 <div class="row">
                   <div class="col-md-7">
                     <p>Worm infections come from eating unwashed fruits and vegetables that have a trace of fecal matter. They come from drinking contaminated water, or from simply walking barefoot — some worms migrate through the skin. Because only children are being treated, a child could be rid of his or her infection one day, then go back to their earthen-floor home and get re-infected the next. “Unless you can get this really intense community-wide treatment going, disrupting the transmission is pretty challenging,” says Means. </p>
@@ -450,14 +453,14 @@
                     <p class="caption">Prevention and treatment: Learn more about the current treatment and transmission of worms, and DeWorm3’s plan for community-wide efforts to prevent further infections </p>
                   </div>
                 </div>
-              
+
 
               <p class="gold-quote headline-gold purple smaller">We’re trying to see what happens if we actually treat the entire community — preschool-aged children to adults — and compare that to the current standard of only treating kids. <b>– Arianna Means</b></p>
 
 
-              </div> 
-        </div> 
-      </div>   
+              </div>
+        </div>
+      </div>
   </section>
 
 
@@ -468,14 +471,14 @@
           <div class="row">
               <div class="col-md-10 col-md-offset-1 copy marginless transparent reduced-pad">
                 <p>Mass drug administration programs have targeted entire communities before, and the strategy works. A large-scale effort to squash another parasitic disease, lymphatic filariasis (commonly known as elephantiasis), kicked off in 2000. Community-wide treatment helped transmission rates drop 43 percent in just 15 years. More than 800  million people have been treated so far, and in some countries, the transmission cycle has been interrupted. By 2020, the hope is for lymphatic filariasis to be eliminated completely.  </p>
-              
+
                 <p>There's an opportunity here, says Means, to leverage the existing treatment platforms already in place in Benin, Malawi and India for DeWorm3’s efforts. In fact, both lymphatic filariasis and intestinal worm treatments co-share a drug: albendazole. </p>
-              
+
                 <p>This is what implementation science is all about.  </p>
             </div>
 
-        </div> 
-      </div>   
+        </div>
+      </div>
 
       <section class="content-section text-center audio-block">
           <div class="who-section">
@@ -531,17 +534,17 @@
                 </div>
 
                 <p>Starting in 2017, at the end of the lymphatic filariasis programs in these countries, DeWorm3 will randomly assign communities to either maintain the standard program of only treating preschool- and school-aged children for intestinal worms, or go to a highly intensive treatment plan where they treat everyone in the community twice per year. And they will conduct further implementation science research activities along the way to understand best practices in intervention delivery and opportunities to maximize community participation. In 2020, both types of communities will stop all treatment. Two years later, DeWorm3 will compare the groups and determine whether the intensified treatment program was more successful. If so, they’ll work with policymakers to develop relevant guidelines that could be used to bring the intensified intervention to scale. </p>
-    
+
                 <p>Collaboration is the key to it all, says Means, who plans to continue working with DeWorm3 after earning her Ph.D. from the School of Public Health this year. “In each country, there’s a really passionate and amazing group of partners who are helping implement this work. It’s really rewarding to be sitting in a room full of people from all over the world who are all working toward the same goal.” </p>
-    
-                <p>The potential impact of DeWorm3’s work for an infection-free world is unparalleled, says Means. “For a parent, just knowing your kid isn’t at risk of contracting an     infection is huge,” she says. “There’s peace of mind in knowing your child can run around barefoot without getting a belly full of worms.”  
+
+                <p>The potential impact of DeWorm3’s work for an infection-free world is unparalleled, says Means. “For a parent, just knowing your kid isn’t at risk of contracting an     infection is huge,” she says. “There’s peace of mind in knowing your child can run around barefoot without getting a belly full of worms.”
                 </p>
-    
+
                 <p class="gold-quote headline-gold purple smaller">Health is a human right. The UW and the School of Public Health are working toward equity, and I think that’s pretty unique to the culture here. <b>– Arianna Means</b></p>
 
                 <p><em>Originally published February 2017</em></p>
           </div>
-        </div> 
+        </div>
       </div>
   </section>
 
@@ -551,7 +554,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-10 col-md-offset-1 copy ">
-                              <div style="text-align: center">             
+                              <div style="text-align: center">
                                 <h2 class="headline-gold">Help make a difference</h2>
                                 <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. You can help the School of Public Health drive the public good and improve lives around the world by contributing to these funds.</p>
                                 <div id="immersive-give-iframe"></div>
