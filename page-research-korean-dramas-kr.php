@@ -3,9 +3,9 @@
  * Template Name: Libraries
  */
 
-	$twitter_photo = '';
-	$twitter_title = '';
-	$twitter_description = '';
+	$twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/libraries/twitter-card.jpg';
+	$twitter_title = '연구의핵심';
+	$twitter_description = '한국 드라마를 주제로 한 졸업 논문을 쓰기 위하여 크리스티는 워싱턴 대학에 위치한 동아시아 도서관에 도움을 구했다. 그곳은 그녀에게 새로운 세상을 열어 주었다.';
 	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/libraries/animsition.min.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/libraries.css' type='text/css' media='all' />";
@@ -62,13 +62,13 @@
 						<p>도서관은 자료뿐 아니라 중요한 인적 자원도 제공한다: 각 주제에 박식한 주제 전문 사서, 기록 보관 담당자, 큐레이터분들이 학생들이 올바른 연구 과정을 밟을 수 있게 인도한다. </p>
 
 
-					</div>                 
+					</div>
 					<div class="col-md-6">
 						<div class="arrow-right"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/kristy-kwon-stacks.jpg' ?>" alt="크리스티 권"></div>
 						<div class="caption">크리스티 권 / 경제학 국제학 복수 전공 졸업반</div>
-					</div> 
+					</div>
 				</div>
-			</div>   
+			</div>
 		</section>
 
 		<!-- Libraries Stats -->
@@ -136,9 +136,9 @@
 							<div class="col-md-6">
 								<p>“저는 모국에 대해 자부심을 가지고 있기에 항상 한국에 대해서 연구를 해보고 싶었지만, 이때까지 학술적으로 연구할 기회가 없었습니다,” 크리스티는 말한다. 그래서인지 쉽게 학위 논문의 방향성을 결정할 수 있었다고 한다: “한국을 연구 주제로 선택한 것은 매우 당연했습니다.”</p>
 
-								<p>연구의 다음 단계는 그렇게 간단하지 않았다. 크리스티는 연구 주제 범위를 좁히는 데 애를 먹었는데 잭슨 국제대학 부교수이자 논문 지도교수인 데보라 포터 교수님이 한국 드라마를 통하여 한국사회 안의 여성의 역할을 연구해 보는 것을 제안했다. </p> 
+								<p>연구의 다음 단계는 그렇게 간단하지 않았다. 크리스티는 연구 주제 범위를 좁히는 데 애를 먹었는데 잭슨 국제대학 부교수이자 논문 지도교수인 데보라 포터 교수님이 한국 드라마를 통하여 한국사회 안의 여성의 역할을 연구해 보는 것을 제안했다. </p>
 
-								<p>한국 드라마도 미국 드라마와 비슷하게 진정한 사랑을 추구하는 이상적인 인물들이 주로 등장한다. 90년 후반대의 드라마 “그대 그리고 나” 같은 경우에는 마지막 회가 국내 67%의 시청률을 자랑했고, 스페인부터 짐바브웨까지의 시청자들도 이와 같은 인기 있는 드라마에 매료되었다. 고아가 최초의 여성 어의가 되는 이야기를 다룬 “대장금”은 91개의 나라에 배포되기도 하였다.</p> 
+								<p>한국 드라마도 미국 드라마와 비슷하게 진정한 사랑을 추구하는 이상적인 인물들이 주로 등장한다. 90년 후반대의 드라마 “그대 그리고 나” 같은 경우에는 마지막 회가 국내 67%의 시청률을 자랑했고, 스페인부터 짐바브웨까지의 시청자들도 이와 같은 인기 있는 드라마에 매료되었다. 고아가 최초의 여성 어의가 되는 이야기를 다룬 “대장금”은 91개의 나라에 배포되기도 하였다.</p>
 
 								<p class="callout">“드라마는 한국의 문화 중 큰 부분을 차지합니다,” 크리스티는 말한다. “저는 드라마를 보면서 자랐습니다. 그곳에서 태어났기에, 한국 드라마를 볼 때마다 소속감을 느끼곤 합니다.” 그러나 그녀는 드라마에서 남녀 차별과 세대 간 갈등이 묘사되고 있음을 인지했다고 덧붙였다. </p>
 
@@ -147,7 +147,7 @@
 								<p>그녀가 정한 논문의 가설은 현대 한국 여성들이 드라마의 보수적인 세계를 그들이 성장하고 교육받은 진보적인 현실과 차별화시킬 수 있기 때문에 드라마를 보고 즐길 수 있다는 주장이었다.</p>
 
 
-							</div>                 
+							</div>
 							<div class="col-md-5 col-md-offset-1">
 								<blockquote class="quote">저는 조국에 대해 자부심을 가지고 있기에 항상 한국에 대해서 연구를 해보고 싶었지만, 학술적으로 연구할 기회가 없었습니다</blockquote>
 								<!-- <span class="rq">&rdquo;</span> --><div class="attribute">-	크리스티 권, 4학년 재학생</div>
@@ -155,14 +155,14 @@
 								<div class="arrow-right" style="clear: both;"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/deborah-porter-stacks.jpg' ?>" alt="Deborah Porter"></div>
 								<div class="caption">Deborah Porter / 잭슨 국제 대학 부교수</div>
 
-							</div> 
+							</div>
 						</div>
 
 
 
 					</div>
 				</div>
-			</div>   
+			</div>
 		</section>
 
 
@@ -209,7 +209,7 @@
 						</div>
 						<div class="row">
 							<div class="col-md-6">
-								
+
 								<p>위 가설을 세운 후, 크리스티는 한국 드라마와 관련한 기존 연구 자료들을 우선적으로 참고했다. 많은 연구자료가 한국어로 된 데이터베이스를 통해서만 이용할 수 있었는데, 그녀는 이 자료들을 어떻게 검색하고 이용할 수 있는지 잘 몰랐다. 그래서 크리스티는 동아시아 도서관에 도움을 구했다.</p>
 
 								<p>시애틀의 워싱턴대학교 안에 위치한 동아시아 도서관은 77만 권 이상의 책들을 보유하고 있으며 전국에서 두 번째로 큰 한국어 장서를 자랑한다.</p>
@@ -221,16 +221,16 @@
 								<p>크리스티는 모든 자료를 자세히 살펴본 후, 서울로 가서 한국 여성들을 직접 인터뷰하며 자료를 수집해 보기로 했다. 이 여행은 그녀가 10년 이상 만나지 못했던 할머니와 이모들과 재회할 기회이기도 했다.</p>
 
 
-							</div>                 
+							</div>
 							<div class="col-md-5 col-md-offset-1">
 
 								<div class="arrow-right"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/hyokyoung-yi-stacks.jpg' ?>" alt="Hyokyoung Yi"></div>
 								<div class="caption">Hyokyoung Yi / 동아시아 도서관 한국학 사서</div>
-							</div> 
+							</div>
 						</div>
 					</div>
-				</div> 
-			</div>   
+				</div>
+			</div>
 		</section>
 
 
@@ -238,13 +238,13 @@
 		<section class="text-block giving-widget-promoted">
 			<div class="row">
 				<div class="first-col col-md-5 col-md-offset-2 col-sm-8 col-sm-offset-1 col-xs-offset-1 col-xs-10">
-					<div>             
+					<div>
 						<h2>학부 연구의 진보</h2>
 						<p>대학교 도서관을 지원함으로써, 크리스티 권 같은 학생들이 의미 있는 연구를 하는데 필요한 자료들을 열람할 수 있게 도울 수 있습니다.</p>
 					</div>
 				</div>
 				<div class="col-md-2 col-md-offset-2 col-sm-3 col-xs-offset-1 ">
-					<div>                                 
+					<div>
 						<div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="KORCAT,LIBDIS" href="#giving-widget-promoted">지금 기부</a></span></div>
 						<button id="close-give">Close</button>
 					</div>
@@ -264,7 +264,7 @@
 						</div>
 						<div class="row">
 							<div class="col-md-6">
-								
+
 								<p>서울에서의 시간을 최대한 활용하기 위해, 크리스티는 한국어 말하기와 쓰기 능력을 향상하는 동시에 자신의 연구 방법이 한국 사회의 규범에 어긋나지 않고자 노력했다. </p>
 
 								<p>한국을 자주 방문하는 이 사서는 크리스티가 문화적으로도 준비될 수 있게 도와주었다. 그녀는 또한 잭슨 국제대학의 한국학 및 역사학과 부교수인 남화숙 씨를 크리스티에게 소개해 주었다. 크리스티는 남 교수님을 통해 이화여자대학교에 있는 다른 교수님을 소개받아 수업에 참관하고 인터뷰 참가자를 모집할 기회를 얻었다.</p>
@@ -272,12 +272,12 @@
 								<p class="callout">2017년 9월경 크리스티는 한국을 방문할 채비를 마쳤다. 그 후 2주 동안 여성들을 인터뷰하고 가족들을 방문했으며, 남 교수님과 이 사서의 도움 덕분에 모든 일은 순조롭게 진행되었다.</p>
 
 
-							</div>                 
+							</div>
 							<div class="col-md-5 col-md-offset-1">
 
 								<div class="arrow-right"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/kristy-seoul.jpg' ?>" alt="서울을 방문한 크리스티 권"></div>
 								<div class="caption">서울을 방문한 크리스티 권</div>
-							</div> 
+							</div>
 						</div>
 						<div class="row">
 
@@ -288,15 +288,15 @@
 								<p>낙담이 되기도 했지만, 크리스티의 논문 지도교수는 오히려 새로운 기회를 제공하는 계기가 될 수 있다고 말한다. “저는 학생들에게 이런 일들이 일어날 때 오히려 기쁩니다. 왜냐하면, 이는 학생의 연구가 맞는 방향으로 가고 있다는 것을 의미하기 때문이에요,” 포터 교수는 말한다. “크리스티는 데이터가 연구에 어떻게 시사하는지를 목격하고 있는 것입니다.”</p>
 
 								<p>크리스티는 올봄 자신의 논문을 발표할 예정이며 대학도서관에서 제공하는 학부생 학술 연구상에도 지원할 계획이다. 졸업 후에 그녀는 법학 박사과정을 거쳐 이민법이나 형법을 공부해 미국 정부의 정책들이 소외된 지역 사회의 삶에 미치는 영향을 연구하고 싶어 한다.</p>
-								
+
 								<p>그녀는 동아시아 도서관이 자신의 논문에 지대한 도움을 준 것은 물론 개인적으로 소중한 연구 주제를 찾아 주었다고 한다. “저는 이 연구를 통해 비록 한국이 여성들을 돕는 많은 법을 만들었지만, 이것이 충분하지 않다는 것을 보여주고 싶습니다,” 크리스티는 말한다. “우리는 이러한 대화를 지속해 나가야 합니다.”</p>
-								
+
 								<p>대학도서관을 통해 크리스티 같은 학생들은 전 세계 어느 곳에 있는 어떤 형태의 지식에도 쉽게 접근할 수 있으며, 학부 연구로 시작된 여정이 결국 세상을 바꾸어 놓을 만한 결과를 낳을 수도 있다.</p>
 							</div>
 						</div>
 					</div>
-				</div> 
-			</div>   
+				</div>
+			</div>
 		</section>
 
 
@@ -332,7 +332,7 @@
 							<a href="../research-korean-dramas"><button id="korean" href="../research-korean-dramas" class="animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">영어 보기</button></a>
 						</div>
 					</div>
-				</div> 
+				</div>
 			</div>
 		</section>
 		<div class="text-block transparent no-pad">
