@@ -1,6 +1,6 @@
 <?php
 	$twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/public-health/twitter-card.jpg';
-	$twitter_title = 'Bridging the "know-do" gap';
+	$twitter_title = 'Bridging the &quot;know-do&quot; gap';
 	$twitter_description = 'The UW School of Public Health is helping turn research into action to interrupt the transmission of parasitic worms in developing countries.';
 	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/public-health.css' type='text/css' media='all' />";
