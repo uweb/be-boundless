@@ -360,6 +360,8 @@
                                 <strong>Yougjun Choe</strong>, Assistant Professor of Industrial and Systems Engineering<br />
                                 <strong>Daniel Kirschen</strong>, Professor of Electrical Engineering<br />
                                 <strong>Jessica Kaminsky</strong>, Assistant Professor of Civil and Environmental Engineering<br /><br />
+
+                            <p><em>Originally published May 2018</em></p>
                         </div>
                     </div>
                 </div>

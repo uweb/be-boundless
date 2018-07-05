@@ -360,6 +360,9 @@
                                 <strong>Yougjun Choe</strong>, Profesor Adjunto de Ingeniería Industrial y en Sistemas<br />
                                 <strong>Daniel Kirschen</strong>, Profesor de Ingeniería Eléctrica<br />
                                 <strong>Jessica Kaminsky</strong>, Profesora Adjunta de Ingeniería Civil y Ambiental<br />
+
+
+                                <p><em>Publicación original Mayo de 2018</em></p>
                         </div>
                     </div>
                 </div>
