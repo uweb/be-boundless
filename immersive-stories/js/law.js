@@ -65,14 +65,14 @@ $(function () {
   }
 
   // show / hide description text in profiles and photos sections
-  var $moreBtns = $('#section-profiles .item, #section-photos .item')
+  // var $moreBtns = $('#section-profiles .item, #section-photos .item')
 
-  $moreBtns.click(function (e) {
-    e.preventDefault();
-    $(this)
-      .closest('.item')
-      .toggleClass('show-description');
-  });
+  // $moreBtns.click(function (e) {
+  //   e.preventDefault();
+  //   $(this)
+  //     .closest('.item')
+  //     .toggleClass('show-description');
+  // });
 
   // main animation controller
   var controllerLaw = new ScrollMagic.Controller();
@@ -122,29 +122,43 @@ $(function () {
   // animation vars
   var before1 = CSSRulePlugin.getRule("#section-map .item-1 .headline:before");
   var before2 = CSSRulePlugin.getRule("#section-map .item-2 .headline:before");
+  var before3 = CSSRulePlugin.getRule("#section-map .item-3 .headline:before");
   var after1 = CSSRulePlugin.getRule("#section-map .item-1 .headline:after");
   var after2 = CSSRulePlugin.getRule("#section-map .item-2 .headline:after");
+  var after3 = CSSRulePlugin.getRule("#section-map .item-3 .headline:after");
   var tweenMapDuration = 0.5;
 
   // build tween
   var tweenMap = new TimelineMax()
 
     // section 1 out
-    .to(before1, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, 0)
-    .to(after1, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, 0)
-    .to("#section-map .item-1", tweenMapDuration * 0.25, { opacity: 0 }, tweenMapDuration * 0.75)
-    .to("#section-map .background-1", tweenMapDuration * 0.25, { scale: 1.2, opacity: 0 }, tweenMapDuration * 0.75)
+    .to(before1, tweenMapDuration * 0.5, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, 0)
+    .to(after1, tweenMapDuration * 0.5, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, 0)
+    .to("#section-map .item-1", tweenMapDuration * 0.125, { opacity: 0 }, tweenMapDuration * 0.375)
+    .to("#section-map .background-1", tweenMapDuration * 0.125, { scale: 1.2, opacity: 0 }, tweenMapDuration * 0.375)
 
     // section 2 in
-    .from(before2, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, tweenMapDuration)
-    .from(after2, tweenMapDuration, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, tweenMapDuration)
-    .to("#section-map .item-2", tweenMapDuration * 0.25, { opacity: 1 }, tweenMapDuration)
-    .to("#section-map .background-2", tweenMapDuration * 0.25, { opacity: 1, scale: 1 }, tweenMapDuration)
+    .from(before2, tweenMapDuration * 0.5, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, tweenMapDuration * 0.5)
+    .from(after2, tweenMapDuration * 0.5, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, tweenMapDuration * 0.5)
+    .to("#section-map .item-2", tweenMapDuration * 0.125, { opacity: 1 }, tweenMapDuration * 0.5)
+    .to("#section-map .background-2", tweenMapDuration * 0.125, { opacity: 1, scale: 1 }, tweenMapDuration * 0.5)
+
+    // section 2 out
+    //.to(before2, tweenMapDuration * 0.5, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, tweenMapDuration * 0.5)
+    //.to(after2, tweenMapDuration * 0.5, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, tweenMapDuration * 0.5)
+    .to("#section-map .item-2", tweenMapDuration * 0.625, { opacity: 0 }, tweenMapDuration * 0.875)
+    .to("#section-map .background-2", tweenMapDuration * 0.625, { scale: 1.2, opacity: 0 }, tweenMapDuration * 0.875)
+
+    // section 3 in
+    //.from(before3, tweenMapDuration * 0.5, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, tweenMapDuration)
+    //.from(after3, tweenMapDuration * 0.5, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, tweenMapDuration)
+    .to("#section-map .item-3", tweenMapDuration * 0.625, { opacity: 1 }, tweenMapDuration)
+    .to("#section-map .background-3", tweenMapDuration * 0.625, { opacity: 1, scale: 1 }, tweenMapDuration)
 
   var sceneMap = new ScrollMagic.Scene({
       triggerElement: '#section-map',
       triggerHook: 0,
-      duration: '100%'
+      duration: '200%'
     })
     .setPin('#section-map', { pushFollowers: true })
     .on('leave', function(e) {
@@ -250,7 +264,7 @@ $(function () {
    * Animation: Photos
    ***************************/
 
-   var controllerPhotos = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: '0', duration: '300%'}});
+   var controllerPhotos = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: '0', duration: '600%'}});
 
    var photosTween = new TimelineMax()
      .fromTo("#section-photos .item-1 .group", 0.25, {alpha:0}, {alpha:1})
@@ -275,6 +289,30 @@ $(function () {
        {transform: 'translateY(-50vh)'}, "-=0.25"
      )
      .to("#section-photos .item-3 .group", 0.25, {alpha:0}, "-=0.25")
+     .to("#section-photos .item-3", 0.5, {autoAlpha:0})
+     // fourth photo
+     .fromTo("#section-photos .item-4 .group", 0.25, {alpha:0}, {alpha:1})
+     .fromTo("#section-photos .item-4 .group", 1,
+       {transform: 'translateY(50vh)'},
+       {transform: 'translateY(-50vh)'}, "-=0.25"
+     )
+     .to("#section-photos .item-4 .group", 0.25, {alpha:0}, "-=0.25")
+     .to("#section-photos .item-4", 0.5, {autoAlpha:0})
+     // fifth photo
+     .fromTo("#section-photos .item-5 .group", 0.25, {alpha:0}, {alpha:1})
+     .fromTo("#section-photos .item-5 .group", 1,
+       {transform: 'translateY(50vh)'},
+       {transform: 'translateY(-50vh)'}, "-=0.25"
+     )
+     .to("#section-photos .item-5 .group", 0.25, {alpha:0}, "-=0.25")
+     .to("#section-photos .item-5", 0.5, {autoAlpha:0})
+     // sixth photo
+     .fromTo("#section-photos .item-6 .group", 0.25, {alpha:0}, {alpha:1})
+     .fromTo("#section-photos .item-6 .group", 1,
+       {transform: 'translateY(50vh)'},
+       {transform: 'translateY(-50vh)'}, "-=0.25"
+     )
+     .to("#section-photos .item-6 .group", 0.25, {alpha:0}, "-=0.25")
   new ScrollMagic.Scene({triggerElement: "#section-photos"})
     .setPin("#section-photos")
     .setTween(photosTween)
