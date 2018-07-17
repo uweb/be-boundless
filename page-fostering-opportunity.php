@@ -1,5 +1,8 @@
 <?php
-	$meta = '';
+	$twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/foster-school/twitter-card.jpg';
+	$twitter_title = 'Where will meets way';
+	$twitter_description = 'For Yakima-born student Yesenia Velasquez, the Young Executives of Color program at the UW Foster School of Business opened the door to a promising future she never knew existed.';
+	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/foster-school.css' type='text/css' media='all' /><link rel='stylesheet' href='//unpkg.com/leaflet@1.0.3/dist/leaflet.css' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/foster-school.min.js' type='text/javascript'></script><script src='//unpkg.com/leaflet@1.0.3/dist/leaflet.js' type='text/javascript'></script>";
 	$storyCodes = 'BEDDIS,UNDDIV,ACOUNT,YVBEND,EYEXCL';
@@ -10,7 +13,7 @@
 <div id="immersive-body">
 
 
-<section class="intro" id="intro-vid">          
+<section class="intro" id="intro-vid">
 
   <div class="intro-body">
         <div class="row">
@@ -47,22 +50,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy">
-                    
+
                     <p class="bolder"><b>From her first day of kindergarten, Yesenia Velasquez knew that she would have to work harder than the other kids.</b></p>
-                    
+
                     <p>She started school without many advantages, save for wit and genuine grit. Her parents had immigrated to the Yakima Valley from Jalisco, Mexico, before she was born. To make a life in the United States, they worked hard at thankless jobs &mdash; Gonzalo forged bricks and Catalina packed produce.</p>
-                    
+
                     <p>But they wanted more for their three daughters.</p>
-                    
+
                     <p>“My parents always taught me that education is the key to success,” says Velasquez. “That’s what made me an independent learner. I’ve always craved education.”</p>
 
 
-                </div> 
-          </div> 
-        </div>   
+                </div>
+          </div>
+        </div>
       </section>
 
-      
+
 
 
       <section class="profile profile-1">
@@ -73,7 +76,7 @@
             <p>Yesenia Velasquez</p>
             <blockquote><span>&ldquo;</span>My parents always taught me that education is the key to success. That’s what made me an independent learner. I’ve always craved education.<span>&rdquo;</span></blockquote>
           </div>
-        </div> 
+        </div>
       </section>
 
 
@@ -97,9 +100,9 @@
                   <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-1.jpg' ?>" alt="Yesenia’s parents">
                     <p>Yesenia’s parents, Catalina and Gonzalo Velasquez, at the plaza in Tepatitlán de Morelos, Jalisco, Mexico.</p>
                   </div>
-                
+
                   <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/slide-6.jpg' ?>" alt="Yesenia with others from her soccer team">
-                      <p>Yesenia (far right) with others from her soccer team, the Shooting Stars, after a game in the Tri-Cities. “That’s where my dad’s pride would come out a lot — he loves soccer,” says Yesenia.</p></div>      
+                      <p>Yesenia (far right) with others from her soccer team, the Shooting Stars, after a game in the Tri-Cities. “That’s where my dad’s pride would come out a lot — he loves soccer,” says Yesenia.</p></div>
 
 
                 </div>
@@ -120,11 +123,11 @@
                   <p>Her first YEOC session was the first time she’d visited a college campus. &ldquo;It was amazing,&rdquo; she recalls. &ldquo;Walking into the giant atrium of PACCAR Hall and thinking, &lsquo;OK, this is possible. I can see myself here.&rsquo;&rdquo;</p>
 
 
-                </div> 
-          </div> 
-        </div>   
+                </div>
+          </div>
+        </div>
       </section>
-      
+
       <section class="bus-map">
 
 
@@ -152,7 +155,7 @@
           <path fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" d="M1259.377,826.684
             c-0.55-2.579-4.976-4.536-9.931-4.638l0,0c-4.951-0.099-9.455,1.669-10.115,4.227l0,0c-0.752,2.911,3.64,5.681,9.9,5.811l0,0
             C1255.496,832.214,1259.997,829.622,1259.377,826.684L1259.377,826.684z"/>
-          
+
             <line fill="none" stroke="#4C2E82" stroke-width="1.9032" stroke-linecap="round" stroke-miterlimit="10" x1="1248.992" y1="778.213" x2="1248.992" y2="826.506"/>
           <polygon fill="#4C2E82" points="1182.854,809.262 1249.24,809.262 1249.24,784.021 1175.56,784.021  "/>
           <g>
@@ -168,7 +171,7 @@
             <path fill="#FFFFFF" d="M1231.71,800.58l2.488-7.954h3.644l2.488,7.954v0.12h-2.368l-0.491-1.647h-2.913l-0.479,1.647h-2.368
               V800.58z M1236.937,797.187l-0.338-1.2l-0.48-1.69h-0.196l-0.491,1.713l-0.327,1.178H1236.937z"/>
           </g>
-          
+
         </g>
         <g>
           <path fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" d="M320.875,508.553
@@ -204,14 +207,14 @@
           <p id="counter"></p><p> Miles</p>
         </div>
 
-      </section>      
+      </section>
 
       <section class="text-block bus arrow">
 
                 <div class="col-md-5 col-md-offset-6 col-xs-10 col-lg-offset-6 col-xs-offset-1 copy">
                   <p>Yesenia woke up at 4 a.m. to make the several-hour journey to Seattle, sometimes escorted by her family, sometimes alone on the bus.</p>
-                </div> 
- 
+                </div>
+
         <video  autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/bus2.jpg' ?>" class=" fullscreen-bg__video">
             <!-- <source src="img/street-bw-webm.webm" type="video/webm"> -->
             <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/foster-school/bus2.mp4' ?>" type="video/mp4">
@@ -219,12 +222,12 @@
         </video>
       </section>
 
-  
+
       <section class="text-block white transparent">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy">
-                  
+
                     <div class="inset-pics">
                       <div><img alt="Yesenia studying" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/paccar.jpg' ?>"></div>
                       <div><img alt="Yesenia working" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/studying-3.jpg' ?>"></div>
@@ -251,15 +254,15 @@
 <p>Reflecting on her family’s efforts, she muses, “Every now and then, it hits me. I’m in college. I work in a skyscraper. I’ve been to New York and San Francisco and Morocco — all of these things I could never have imagined when I was in middle school. No matter how hard I worked, I wouldn’t be where I am without YEOC.”</p>
 
 
-                </div> 
-          </div> 
-        </div>   
+                </div>
+          </div>
+        </div>
       </section>
 
-      
+
       <section class="callout">
         <div class="text-block">
-          <div class="copy"> 
+          <div class="copy">
             <img alt="Yesenia smiling" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/foster-school/yesenia-3.jpg' ?>">
             <blockquote><span>&ldquo;</span>No matter how hard I worked, I wouldn’t be where I am without YEOC.<span>&rdquo;</span></blockquote>
           </div>
@@ -286,9 +289,9 @@
                   <p>EY doesn’t just underwrite the UW Foster School’s Young Executives of Color program. It also provides volunteers, recruits high-level executives as keynote speakers, delivers professional development exercises and offers invaluable consulting on curriculum, topics and activities.</p>
                   <p>“The mission of YEOC aligns with EY's passion for promoting equity in the workforce — championing diversity and inclusiveness — which is at the very heart of EY's values,” says Christian Tinder, ’99, a principal in EY’s advisory practice and the firm’s coordinating partner with the UW.</p>
 
-                </div> 
-          </div> 
-        </div>   
+                </div>
+          </div>
+        </div>
       </section>
 
 
@@ -299,7 +302,7 @@
                <div class="copy">
                  <blockquote><span>&ldquo;</span>We are a purpose-driven organization. Our goal is to build a better working world. And part of that goal is building a more diverse working world. Diverse teams are better teams. When we bring diversity — of ethnicity, gender, experience, thought — to the table, we present better solutions to our clients.<span>&rdquo;</span></blockquote>
                </div>
-             </div> 
+             </div>
            </section>
 
       <section class="text-block white transparent">
@@ -307,9 +310,9 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy">
                   <p><em>Originally published June 2017</em></p>
-                </div> 
-          </div> 
-        </div>   
+                </div>
+          </div>
+        </div>
       </section>
 
 
@@ -319,7 +322,7 @@
           <div class="container">
               <div class="row">
                   <div class="col-md-10 col-md-offset-1 copy ">
-                    <div style="text-align: center">             
+                    <div style="text-align: center">
                       <h2 class="headline-gold">What you care about <br>can change the world</h2>
                       <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. You can help the Foster School of Business and Young Executives of Color transform the lives of more students like Yesenia Velasquez by contributing to these funds.</p>
                       <div id="immersive-give-iframe"></div>

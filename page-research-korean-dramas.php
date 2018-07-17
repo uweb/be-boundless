@@ -3,9 +3,9 @@
  * Template Name: Libraries
  */
 
-	$twitter_photo = '';
-	$twitter_title = '';
-	$twitter_description = '';
+	$twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/libraries/twitter-card.jpg';
+	$twitter_title = 'The heart of research';
+	$twitter_description = 'For help with her senior thesis on gender representation in Korean dramas, Kristy Kwon reached out to the UW’s East Asia Library. What she found there opened up her world.';
 	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/libraries/animsition.min.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/libraries.css' type='text/css' media='all' />";
@@ -62,13 +62,13 @@
 						<p>The Libraries also offers an even more valuable resource for students: librarians, archivists and curators who have deep knowledge of wide-ranging subjects — and who help undergraduates navigate each step of the research process.</p>
 
 
-					</div>                 
+					</div>
 					<div class="col-md-6">
 						<div class="arrow-right"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/kristy-kwon-stacks.jpg' ?>" alt="Kristy Kwon"></div>
 						<div class="caption">Kristy Kwon / Senior, Economics and International Studies</div>
-					</div> 
+					</div>
 				</div>
-			</div>   
+			</div>
 		</section>
 
 		<!-- Libraries Stats -->
@@ -136,9 +136,9 @@
 							<div class="col-md-6">
 								<p>“I’ve always wanted to research Korea because I feel a strong sense of pride for my country, but I’ve never had the chance to explore it academically,” says Kwon. So she had an easy time deciding on a direction for her honors thesis: “Of course, I chose South Korea.”</p>
 
-								<p>But the next step wasn’t as simple, and Kwon struggled to narrow down her research topic. Then her thesis adviser, Deborah Porter, an associate professor at the Jackson School of International Studies, suggested that Kwon use Korean television dramas — or “K-dramas” — as a lens through which to study women’s roles in Korean society. </p> 
+								<p>But the next step wasn’t as simple, and Kwon struggled to narrow down her research topic. Then her thesis adviser, Deborah Porter, an associate professor at the Jackson School of International Studies, suggested that Kwon use Korean television dramas — or “K-dramas” — as a lens through which to study women’s roles in Korean society. </p>
 
-								<p>Similar to American soap operas, K-dramas feature idealized characters on quests for true love. Nearly 67 percent of Korea watched the finale of the late ’90s drama “You and I,” and audiences from Spain to Zimbabwe have been captivated by these hugely popular shows: “Dae Jang Geum” (“Jewel in the Palace”), about an orphan who becomes the first female royal physician, was distributed to 91 countries.</p> 
+								<p>Similar to American soap operas, K-dramas feature idealized characters on quests for true love. Nearly 67 percent of Korea watched the finale of the late ’90s drama “You and I,” and audiences from Spain to Zimbabwe have been captivated by these hugely popular shows: “Dae Jang Geum” (“Jewel in the Palace”), about an orphan who becomes the first female royal physician, was distributed to 91 countries.</p>
 
 								<p class="callout">“Dramas are a huge cultural thing in Korea,” says Kwon. “I grew up watching them. And since I was born there, I feel a sense of belonging when I watch the shows.” However, she adds, she also recognizes the stark gender and generational contrasts portrayed in K-dramas. </p>
 
@@ -147,7 +147,7 @@
 								<p>Her current hypothesis argues that modern Korean women can watch and enjoy K-dramas because they’re able to differentiate the conservative world of the shows from the more progressive reality in which they were raised and educated.</p>
 
 
-							</div>                 
+							</div>
 							<div class="col-md-5 col-md-offset-1">
 								<blockquote class="quote">I’ve always wanted to research Korea because I feel a strong sense of pride for my country, but I’ve never had the chance to explore it academically.</blockquote>
 								<!-- <span class="rq">&rdquo;</span> --><div class="attribute">Kristy Kwon, Senior</div>
@@ -155,14 +155,14 @@
 								<div class="arrow-right" style="clear: both;"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/deborah-porter-stacks.jpg' ?>" alt="Deborah Porter"></div>
 								<div class="caption">Deborah Porter / Associate Professor, Jackson School of International Studies</div>
 
-							</div> 
+							</div>
 						</div>
 
 
 
 					</div>
 				</div>
-			</div>   
+			</div>
 		</section>
 
 
@@ -209,7 +209,7 @@
 						</div>
 						<div class="row">
 							<div class="col-md-6">
-								
+
 								<p>After settling on a hypothesis, Kwon began to read existing studies on K-drama consumption. Many were available only through Korean-language databases, which most students can’t access or navigate on their own. So Kwon reached out to the East Asia Library.</p>
 
 								<p>Located on the UW campus in Seattle, the East Asia Library houses more than 770,000 volumes — including the second-largest Korean-language collection in the country.</p>
@@ -221,16 +221,16 @@
 								<p>After combing through the available materials, Kwon decided to collect her own data by traveling to Seoul to interview South Korean women. The trip would also give her a chance to reunite with her grandmother and aunts, whom she hadn’t seen in more than a decade.</p>
 
 
-							</div>                 
+							</div>
 							<div class="col-md-5 col-md-offset-1">
 
 								<div class="arrow-right"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/hyokyoung-yi-stacks.jpg' ?>" alt="Hyokyoung Yi"></div>
 								<div class="caption">Hyokyoung Yi / Korean Studies Librarian, East Asia Library</div>
-							</div> 
+							</div>
 						</div>
 					</div>
-				</div> 
-			</div>   
+				</div>
+			</div>
 		</section>
 
 
@@ -238,13 +238,13 @@
 		<section class="text-block giving-widget-promoted">
 			<div class="row">
 				<div class="first-col col-md-5 col-md-offset-2 col-sm-8 col-sm-offset-1 col-xs-offset-1 col-xs-10">
-					<div>             
+					<div>
 						<h2>Advance undergraduate research</h2>
 						<p>By supporting the University Libraries, you can help students like Kristy Kwon access the resources they need to do research that makes an impact.</p>
 					</div>
 				</div>
 				<div class="col-md-2 col-md-offset-2 col-sm-3 col-xs-offset-1 ">
-					<div>                                 
+					<div>
 						<div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="KORCAT,LIBDIS" href="#giving-widget-promoted">Give now</a></span></div>
 						<button id="close-give">Close</button>
 					</div>
@@ -264,7 +264,7 @@
 						</div>
 						<div class="row">
 							<div class="col-md-6">
-								
+
 								<p>To make the most of her time in Seoul, Kwon wanted to improve her spoken and written Korean — and make sure that her research methods wouldn’t clash with Korean societal norms.</p>
 
 								<p>Yi, who travels to Korea frequently, was happy to help prepare Kwon for the cultural aspects of her trip. She also introduced Kwon to Hwasook Nam, the James B. Palais Endowed Associate Professor in Korea Studies at the Jackson School and the Department of History. Nam connected Kwon with a colleague at Ewha Womans University in Seoul who invited Kwon to visit her classroom and recruit interview participants. </p>
@@ -272,12 +272,12 @@
 								<p class="callout">By September 2017, Kwon was ready to return to South Korea. She spent two weeks interviewing women for her research and visiting with her family — and thanks to the help she received from Nam and Yi, all her conversations went smoothly.</p>
 
 
-							</div>                 
+							</div>
 							<div class="col-md-5 col-md-offset-1">
 
 								<div class="arrow-right"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/libraries/kristy-seoul.jpg' ?>" alt="Kristy Kwon visiting Seoul, Korea"></div>
 								<div class="caption">Kristy Kwon visiting Seoul, Korea</div>
-							</div> 
+							</div>
 						</div>
 						<div class="row">
 
@@ -288,15 +288,15 @@
 								<p>That may sound defeating, but Kwon’s thesis adviser believes it can create another opportunity. “I love it when that happens, because it means we’re on to something,” says Porter. “Kristy is really seeing how we let data speak to us.”</p>
 
 								<p>Kwon will defend her thesis in the spring, and she plans to apply for an undergraduate research award through the University Libraries. After graduation, she hopes to earn a J.D. in immigrant or criminal law and study the impact of U.S. government policies on the lives of marginalized communities. </p>
-								
+
 								<p>She credits the East Asia Library with providing crucial help for her work, as well as the connections to pursue a topic so close to her heart. “I want to use this research to show that although South Korea created a lot of laws to ensure positive change for women, it’s not enough,” Kwon says. “We need to keep having these conversations.”</p>
-								
+
 								<p>Through the University Libraries, students like Kwon gain access to knowledge in every format from everywhere around the globe — and the journey that begins with undergraduate research can end up changing the world.</p>
 							</div>
 						</div>
 					</div>
-				</div> 
-			</div>   
+				</div>
+			</div>
 		</section>
 
 
@@ -332,7 +332,7 @@
 							<a href="../research-korean-dramas-kr"><button id="korean" href="../research-korean-dramas-kr" class="animsition-link" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">View Korean version</button></a>
 						</div>
 					</div>
-				</div> 
+				</div>
 			</div>
 		</section>
 		<div class="text-block transparent no-pad">

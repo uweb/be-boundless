@@ -1,5 +1,8 @@
 <?php
-	$meta = '';
+	$twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/tacoma/twitter-card.jpg';
+	$twitter_title = 'The transformative power of UW Tacoma';
+	$twitter_description = 'After a debilitating accident at work, Tom Rochat was foraging for mushrooms just to get by. Today, he’s on the fast track to senior-level management at a global IT company — and he credits UW Tacoma for his transformation.';
+	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/tacoma.css?v=" . time() . "' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/tacoma.min.js' type='text/javascript'></script>";
 	$storyCodes = 'SCHTAC,AMOCAT';
@@ -20,7 +23,7 @@
         </div>
     </div>
   </div>
-   
+
 
   <a class="read-more" href="#main_content">Read the story</a>
 </div>
@@ -34,7 +37,7 @@
       <div class="container">
           <div class="row">
               <div class="col-md-10 col-md-offset-1 copy">
-                
+
                 <p class="gold-quote headline-gold purple">At UW Tacoma, it doesn’t matter where you came from. Once you’re there, you’re starting over. Once you’re there, you’re part of a family. </p>
 
                   <p>When Tom Rochat, ’13, purchased his first home in the sleepy, waterside town of Kingston, Washington, he wasn’t caught up in the three bedrooms or the endless backyard or the wood-burning stove. He was concerned about one thing, and one thing only: signal strength. He did his homework — complete with maps and diagrams — and calculated exactly where he’d get the strongest internet connection. Only then did he sign the papers. </p>
@@ -43,24 +46,24 @@
 
                   <p>But before he found his way at <a href="https://www.tacoma.uw.edu/">UW Tacoma</a>, Rochat was faced with a much heavier issue than a weak signal: how he and his family were going to escape homelessness from one month to the next.</p>
 
-              </div> 
-      </div> 
-    </div>   
+              </div>
+      </div>
+    </div>
   </section>
 
 
 <section class="photo-break pane-1">
-  
+
   <div class="row">
       <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
-        
+
         <div class="break-animate">
           <h2>The four-story fall</h2>
           <!-- <span class="udub-slant"><span></span></span> -->
           <p>&mdash; and a knack for hacking</p>
         </div>
 
-      </div> 
+      </div>
   </div>
 
 </section>
@@ -70,7 +73,7 @@
       <div class="container">
           <div class="row">
               <div class="col-md-10 col-md-offset-1 copy">
-                
+
 
 <p>Rochat was supposed to be a construction worker. </p>
 <p>He’d always found solace in working with his hands, so after the Poulsbo, Washington native completed his tours of duty as a paratrooper in the Army, the decision to go to Olympic College for welding technology was an easy one. He earned his associate degree, with plans to hop on a construction site — then the economy tanked. “I was ready with my tool bag and my welding hat, but suddenly there were no more jobs,” he says. </p>
@@ -89,14 +92,14 @@
 <p>With that encouragement, Rochat applied to UW Tacoma. “In a million years, I never thought I’d be accepted. UW Tacoma was the pinnacle,” he says. “Two weeks later, I was sitting in my first class. I didn’t even know how I got there.” </p>
 
 
-              </div> 
-        </div> 
-      </div>   
+              </div>
+        </div>
+      </div>
     </section>
 
 
 <section class="photo-break pane-2">
-  
+
   <div class="row">
       <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
         <div class="break-animate">
@@ -105,7 +108,7 @@
           <p>&mdash; and beyond</p>
         </div>
 
-      </div> 
+      </div>
   </div>
 
 </section>
@@ -115,7 +118,7 @@
       <div class="container">
           <div class="row">
               <div class="col-md-10 col-md-offset-1 copy">
-                
+
 
 <p>Rochat’s cohort was one of the first to go through UW Tacoma’s brand-new <a href="https://www.tacoma.uw.edu/institute-technology/institute-technology">information technology program</a>. “I thought I was going to be a bottom-rung student and need everybody’s help,” he says. “I quickly found myself near the top in almost every class. I didn’t realize what was common sense and easy to me was actually an extremely valuable skillset.”</p>
 
@@ -134,20 +137,20 @@
 <p>Now, Rochat pays it forward, purchasing school supplies for families who are struggling, lending a helping hand to family members when they need it most. He mentors the next generation of UW Tacoma graduates, guest lecturing on campus a few times a year. “If it wasn’t for the support UW Tacoma gave me, I wouldn’t be where I am today. I’m happy to give back to UW Tacoma any way that I can.”</p>
 
 
-      </div> 
-    </div> 
-  </div>   
+      </div>
+    </div>
+  </div>
 </section>
 
 
-<section class="photo-break pane-3">  
+<section class="photo-break pane-3">
   <div class="row">
       <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
         <div class="break-animate">
           <h2>The history &mdash; and <br>future &mdash; of Tacoma </h2>
           <!-- <span class="udub-slant"><span></span></span> -->
         </div>
-      </div> 
+      </div>
   </div>
 </section>
 
@@ -156,16 +159,16 @@
       <div class="container">
           <div class="row">
               <div class="col-md-10 col-md-offset-1 copy">
-                
+
 <p>At its height, Tacoma was a living, breathing labor union town, ripe with blue-collar jobs and a strong industrial pulse. A city held tightly by navy waters and purple mountains, driven by the railroad industry that chugged through to Union Station — an awe-inspiring, Beaux-Arts beauty. As it happens, it was the very fact that Tacoma was chosen to be the western terminus of the Northern Pacific Railroad that the city earned its late-19th-century nickname, the “City of Destiny.” </p>
 <p>But 30 years ago, the “City of Destiny” was a city of lost hope. It started with the collapse of the railroad industry after WWII. The jobs left, and Union Station was forgotten. Interstate 5 came through, followed by the Tacoma Mall. Retailers fled downtown for the new shopping center, and in the midst of everything, the beautiful old structures that made up the core of Tacoma became blighted old structures as squatters, street gangs, crime and drugs moved in.</p>
 <p>But then, it happened. The University of Washington was going to create UW Tacoma, and they were going to put it right where Tacoma needed it most: the downtown core. UW Tacoma held its inaugural classes in its one degree offering — liberal studies — in 1990. </p>
 <p>Since then, UW Tacoma has blossomed into a Washington Monthly–crowned “best bang for the buck” university. With nine schools and programs and an urban-serving campus that preserved and revitalized the city’s historic warehouse district, UW Tacoma has earned a reputation for transforming not just the brick-and-mortar bones of Tacoma, but the students who learn there, too. </p>
-<p>And it’s growing. In the next 25 years, UW Tacoma will continue to provide financial aid to students who straddle the qualifying line, meaning those who are strapped for resources can have a well-rounded student experience and a future that once felt out of reach. It will grow in its offerings: STEM programming, engineering degrees, a business incubator — opportunities that will fuel economic growth and innovation in a wanting world. And just like UW Tacoma <a href="http://www.tacoma.uw.edu/advancement/25th-anniversary-scrolling-timeline">transformed Tacoma</a>, it will continue to transform the lives of students like Tom Rochat.</p> 
+<p>And it’s growing. In the next 25 years, UW Tacoma will continue to provide financial aid to students who straddle the qualifying line, meaning those who are strapped for resources can have a well-rounded student experience and a future that once felt out of reach. It will grow in its offerings: STEM programming, engineering degrees, a business incubator — opportunities that will fuel economic growth and innovation in a wanting world. And just like UW Tacoma <a href="http://www.tacoma.uw.edu/advancement/25th-anniversary-scrolling-timeline">transformed Tacoma</a>, it will continue to transform the lives of students like Tom Rochat.</p>
 
-      </div> 
-    </div> 
-  </div>   
+      </div>
+    </div>
+  </div>
 </section>
 
 
@@ -195,7 +198,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy padless marginless">
-                  
+
                   <div class="fancy-quote gold">
                   <svg version="1.1"  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      width="136.039px" height="126.094px" viewBox="0 0 136.039 126.094" enable-background="new 0 0 136.039 126.094"
@@ -213,17 +216,17 @@
                       c0-1.7-0.511-3.103-1.517-4.17C113.083,113.95,111.732,113.407,110.08,113.407z"/>
                   </g>
                   <circle cx="7.115" cy="7.066" r="6.01"/>
-                  <polyline fill="none" stroke="#000000" stroke-width="1.3538" stroke-miterlimit="10" points="6.979,7.749 6.979,116.071 
+                  <polyline fill="none" stroke="#000000" stroke-width="1.3538" stroke-miterlimit="10" points="6.979,7.749 6.979,116.071
                     100.411,116.071 "/>
                   </svg>
                     <h3>I’ve really loved seeing the startup and entrepreneurial community grow. There are a lot of great organizations that have been popping up over the last few years, from creative business incubators to tech companies and everything in between. Tacoma is a blue-collar, community-powered city with a lot of art, music and cultural projects bubbling under the surface, and UW Tacoma is a really big part of that.”</h3>
 
                 </div>
 
-                </div> 
+                </div>
 
-          </div> 
-        </div>   
+          </div>
+        </div>
       </section>
 
       <section data-vid="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/tacoma/jason' ?>" class='video-auto'>
@@ -256,7 +259,7 @@
 
           <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/301086371&amp;color=4b2e83&show_artwork=false&show_user=false&show_bpm=false"></iframe>
 
-          <p class="transcript" tabindex="0">Really, UW Tacoma services a large part of the South Sound. Their technology programs really do help support the entire region, the Puget Sound region. It will grow bigger and bigger, and I’m happy to see that happen. But it still feels, you feel pretty darn connected to your instructors, to your professors, and that’s all really great. I think it’s fabulous. It’s one of the best things about UW Tacoma.</p> 
+          <p class="transcript" tabindex="0">Really, UW Tacoma services a large part of the South Sound. Their technology programs really do help support the entire region, the Puget Sound region. It will grow bigger and bigger, and I’m happy to see that happen. But it still feels, you feel pretty darn connected to your instructors, to your professors, and that’s all really great. I think it’s fabulous. It’s one of the best things about UW Tacoma.</p>
 
           <a href="#" class="transcript-trigger">Read full transcript</a>
 
@@ -291,7 +294,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy padless marginless">
-                  
+
                   <div class="fancy-quote gold">
                   <svg version="1.1"  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      width="136.039px" height="126.094px" viewBox="0 0 136.039 126.094" enable-background="new 0 0 136.039 126.094"
@@ -309,17 +312,17 @@
                       c0-1.7-0.511-3.103-1.517-4.17C113.083,113.95,111.732,113.407,110.08,113.407z"/>
                   </g>
                   <circle cx="7.115" cy="7.066" r="6.01"/>
-                  <polyline fill="none" stroke="#000000" stroke-width="1.3538" stroke-miterlimit="10" points="6.979,7.749 6.979,116.071 
+                  <polyline fill="none" stroke="#000000" stroke-width="1.3538" stroke-miterlimit="10" points="6.979,7.749 6.979,116.071
                     100.411,116.071 "/>
                   </svg>
                     <h3>What’s great about UW Tacoma’s campus is that it’s an urban campus — businesses will always be intertwined with classrooms, and as the future unfolds and UW Tacoma expands, there’s only going to be more of that. The Swiss is like a second home for people from all walks of life, and we feel really fortunate to be right in the heart and soul of campus where we can give back to this community in our own way.”  </h3>
 
                 </div>
 
-                </div> 
+                </div>
 
-          </div> 
-        </div>   
+          </div>
+        </div>
       </section>
 
       <section data-vid="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/tacoma/jack' ?>" class='video-auto'>
@@ -351,13 +354,13 @@
           </ul>
 
           <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/301086779&amp;color=4b2e83&show_artwork=false&show_user=false&show_bpm=false"></iframe>
-          
-          
+
+
           <p class="transcript" tabindex="0">Tacoma really feels like a small town. But I like to say that Tacoma’s small enough that you can make a difference, but it’s big enough that that matters; That someone can come in here and say like, I’m going to do this, whether that’s art or politics or something, and everyone’s going be like, yeah okay, do that. And it works.
 That ability for people to come in and actually make a dent in the universe and do something here is pretty cool.
 And I see that the people coming out of UW can really make a difference. And the more people that come to UW and then stay in Tacoma is good for Tacoma.
 Sometimes I feel like the whole ‘jobs of the future’ thing is kind of a joke, but here it’s actually real, where you see the computer programmers and you see all of those people who are doing those new jobs, those ‘jobs of the future,’ and they’re getting trained here. And hopefully that means that they’ll stay and contribute to the local economy.</p>
-          
+
           <a href="#" class="transcript-trigger">Read full transcript</a>
 
         </div>
@@ -377,13 +380,13 @@ Sometimes I feel like the whole ‘jobs of the future’ thing is kind of a joke
 
 
 
-        
+
 
         <?php /*<section class="text-block giving-widget">
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 copy">
-                      <div style="text-align: center">             
+                      <div style="text-align: center">
                         <h2 class="headline-gold">Help make a difference</h2>
                         <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. You can help UW Tacoma transform the lives of more students like Tom Rochat by contributing to these funds.</p>
                         <div id="immersive-give-iframe"></div>

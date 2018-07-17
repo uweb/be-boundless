@@ -1,5 +1,8 @@
 <?php
-	$meta = '';
+	$twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/bothell/twitter-card.jpg';
+	$twitter_title = 'Taking diversity to the next level';
+	$twitter_description = 'By highlighting and celebrating their varied experiences and perspectives, a group of students in the Digital Future Lab at UW Bothell are helping change the face of video game creation.';
+	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/bothell.css' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/bothell.min.js' type='text/javascript'></script>";
 	$storyCodes = 'UBPLAY,UWBSTU,UBSTEM';
@@ -30,7 +33,7 @@
 
 <div id="bar"><div></div><span></span></div>
 
-<main id="main_content"> 
+<main id="main_content">
 
     <section id="jason" class="text-block"><div id="back"></div><div id="middle"></div><div id="middle2">
       <svg version="1.1" id="windmill" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -91,7 +94,7 @@
       </svg>
     </div>
 
-    
+
     <div id="middle3"></div><!-- <div id="middle4"></div> --><div id="robot"></div><div id="fore"></div>
         <div class="container">
             <div class="row">
@@ -104,17 +107,17 @@
 <div class="faces aina">
   <div class="frame"><div class="pic pic-1">
     <div class="front"></div>
-    <div class="back"></div>  
+    <div class="back"></div>
   </div></div>
 
   <div class="frame lg"><div class="pic pic-2">
     <div class="front"></div>
-    <div class="back"></div>  
+    <div class="back"></div>
   </div></div>
 
   <div class="frame"><div class="pic pic-3">
     <div class="front"></div>
-    <div class="back"></div>  
+    <div class="back"></div>
   </div></div>
 
   <div class="names">
@@ -123,7 +126,7 @@
   </div>
 
 
-  
+
 
 
 </div>
@@ -139,17 +142,17 @@
 <div class="faces jason">
   <div class="frame"><div class="pic pic-1">
     <div class="front"></div>
-    <div class="back"></div>  
+    <div class="back"></div>
   </div></div>
 
   <div class="frame lg"><div class="pic pic-2">
     <div class="front"></div>
-    <div class="back"></div>  
+    <div class="back"></div>
   </div></div>
 
   <div class="frame"><div class="pic pic-3">
     <div class="front"></div>
-    <div class="back"></div>  
+    <div class="back"></div>
   </div></div>
 
   <div class="names">
@@ -170,9 +173,9 @@
   <div class="ghost g-8"><div class="front"></div><div class="back"></div></div>
 </div>
 
-             </div> 
-          </div> 
-        </div>   
+             </div>
+          </div>
+        </div>
     </section>
 
     <section class="text-block" id="ghosts">
@@ -180,7 +183,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy marginless">
- 
+
 <p class="callout"><span>Working to address the lack of diversity in video games and tech,</span> Pace and Braxton bring difference to the forefront of all they do.</p>
 <p>With a small core of professional staff, the lab’s team of more than 40 students from a variety of backgrounds takes on everything from art, design, music composition and programming to production, project management and marketing. Along the way are constant opportunities to recognize their diversity, to learn about different backgrounds and cultures and, ultimately, to become better communicators.</p>
 <p>The day’s check-in doesn’t last long, though: The agenda is packed.</p>
@@ -201,27 +204,27 @@
 </div>
 
 
-             </div> 
-          </div> 
-        </div>   
+             </div>
+          </div>
+        </div>
         <div class="bottom-smoke"></div>
     </section>
-    
+
 
      <section class="video-block" id="video">
            <div class="portrait"></div>
            <div class="container">
                <div class="row">
-                   <div class="col-md-12 copy"> 
+                   <div class="col-md-12 copy">
 
                    <a class="play" href="#">Play video <svg aria-hidden="true" x="0px" y="0px"
         width="14px" height="3px" viewBox="0 0 14 3" enable-background="new 0 0 14 3" xml:space="preserve">
      <rect fill="#FFFFFF" width="14" height="3"/>
      </svg></a>
 
-               </div> 
-             </div> 
-           </div>   
+               </div>
+             </div>
+           </div>
            <div id="boundless-video"></div>
     </section>
 
@@ -234,14 +237,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 copy marginless">
-    
+
     <h2>Behind the mission</h2>
     <p>For Pace, who came out as gay at age 16, the DFL is a chance to combine the activism of <span data-tooltip="Pace uses the gender-neutral pronouns they/them/their" data-tooltip-position="top">their</span> youth with a deep background in tech and gaming. </p>
     <p>Much of Pace’s two decades of software development experience was spent at Microsoft, helping direct and produce everything from casual games to the Xbox flagship title Halo. And while Pace loved the creative challenge, the work environment was far from ideal.</p>
     <p>“Video game studios are still very much a <span data-tooltip="When a person’s gender identity conforms with the gender they were assigned at birth; not transgender" data-tooltip-position="top">cisgender</span>, white, straight male world,” Pace says. And it’s not often a very tolerant world, either. One need go no further than video game forums, chatrooms or comment boards to see offensive slurs tossed around casually — or, worse, to see targeted hate campaigns.</p>
     <p>More broadly, the tech industry is often criticized for its dearth of diversity. <a href="https://www.eeoc.gov/eeoc/statistics/reports/hightech/?utm_content=&utm_medium=email&utm_name=&utm_source=govdelivery&utm_term=">Employment is skewed</a> in favor of whites and men, and against other groups.</p>
     <p>So when Pace joined UW Bothell in 2012, <span data-tooltip="Pace uses the gender-neutral pronouns they/them/their" data-tooltip-position="top">they</span> wanted to change that. The first step was hiring Braxton, a UW Bothell graduate who was committed to equity and social justice. Together, the two have focused their efforts on countering bias and toxic work culture. They have baked into the identity of the DFL what they call “radical diversity”: the intentional focus on maximizing and foregrounding difference on a team of people with different backgrounds, abilities and academic focuses.</p>
-    
+
     <div class="gallery">
       <div class="side-pic" id="pic2">
         <figure class="zoom-effect">
@@ -323,18 +326,18 @@
       </br> -->
       The full PC/Mac version, just released, is <span>available for full download on <a href="http://store.steampowered.com/app/559250">Steam</a>.</span>
     </p>
-    
-    
+
+
     <div class="giving">
       <h2>Teaching, learning — and creating</h2>
       <p>All of the Digital Future Lab’s games start as research prototypes led by the DFL and Professor of Computing and Software Systems (CSS) Kelvin Sung. Funded by a National Science Foundation grant and support from Google and Microsoft, Sung’s program gives introductory computer science students the opportunity to learn basic programming concepts by building casual games. </p>
       <p>Successful prototypes like Ghostlight Manor make their way into the co-curricular commercial pipeline of the DFL, opening up educational opportunities across all disciplines — from computer science and communication to social justice and art. Students can get involved through credit capstones and independent study projects, or even a course taught by Pace, who is core faculty in Interactive Media Design (IMD), and affiliate faculty in CSS and Interdisciplinary Arts & Sciences (IAS). </p>
       <p>Other students dip their toes into the world of game creation as game testers or junior designers or developers. Only a few students, though, hold paid senior internships, something Pace and Braxton wish to change.</p>
-      <p>“Unpaid internships aren’t sustainable,” says Braxton. “To create a truly equitable workplace, we need paid internships for more students — not just those who can afford to work without pay.”</p>  
+      <p>“Unpaid internships aren’t sustainable,” says Braxton. “To create a truly equitable workplace, we need paid internships for more students — not just those who can afford to work without pay.”</p>
       <h3 class="headline-gold">Help make a difference</h3>
       <p>When you support a student program like the Digital Future Lab, you can help students get hands-on, career-shaping experiences that prepare them for the workforce.</p>
       <div id="immersive-give-II-iframe"></div>
-      <div style="text-align: center;"><div class="boundless-button sm dark give"><span><a id="immersive-give-II" data-fund="UBPLAY,UWBSTU,UBSTEM" href="#">Give now</a></span></div></div>    
+      <div style="text-align: center;"><div class="boundless-button sm dark give"><span><a id="immersive-give-II" data-fund="UBPLAY,UWBSTU,UBSTEM" href="#">Give now</a></span></div></div>
     </div>
 
 
@@ -348,11 +351,11 @@
       <div class="ghost g-7"><div class="front red"></div><div class="back"></div></div>
       <div class="ghost g-8"><div class="front red"></div><div class="back"></div></div>
     </div>
-    
-    
-                 </div> 
-              </div> 
-            </div>   
+
+
+                 </div>
+              </div>
+            </div>
         </div>
 
     <div class="back"></div><div class="middle"></div><div class="fore"></div>
@@ -376,7 +379,7 @@
               <li>
                 <div><img width="127" height="140" alt="Emmett" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/avatars/Avatar_Emmett.png' ?>">
                 <p class="name">Emmett Scout <span>Senior // Major: Interactive Media and Social Justice</span></p></div>
-                <p class="quotes">I’m a much better designer for having shared studio space with so many different kinds of brains, skills and disciplines.</p>    
+                <p class="quotes">I’m a much better designer for having shared studio space with so many different kinds of brains, skills and disciplines.</p>
               </li>
               <li>
                 <div><img width="127" height="140" alt="Jason" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/bothell/avatars/Avatar_Jason.png' ?>">
@@ -486,8 +489,8 @@
                     <p><em>Originally published December 2016</em></p>
                   </div>
                 </div>
-            </div> 
-          </div>   
+            </div>
+          </div>
           <div id="swamp"></div>
       </section>
 
@@ -500,7 +503,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy">
-                  <div style="text-align: center">             
+                  <div style="text-align: center">
                     <h2 class="headline-gold">Help make a difference</h2>
                     <p>When you support a student program like the Digital Future Lab, you can help students get hands-on, career-shaping experiences that prepare them for the workforce.</p>
                     <div id="immersive-give-iframe"></div>

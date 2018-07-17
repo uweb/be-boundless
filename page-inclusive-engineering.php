@@ -1,5 +1,8 @@
 <?php
-	$meta = '';
+	$twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/engineering/twitter-card.jpg';
+	$twitter_title = 'Helping the body heal, feel and move again';
+	$twitter_description = 'By creating innovative but easy-to-use mechanical solutions, the UW College of Engineering is helping people of all abilities defy the odds and pursue their dreams.';
+	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/engineering.css?v=" . time() . "' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/engineering.min.js' type='text/javascript'></script>";
 	$storyCodes = 'MEHTIF,CSNEDI,ENGSEN';
@@ -30,31 +33,31 @@
       <div class="container">
           <div class="row">
               <div class="col-md-10 col-md-offset-1 copy">
-                
+
                   <p class="headline-gold center">"The day Jayna Bean Doll was born, May 11, 2006, we noticed seizure-like behavior. After close supervision, her doctor confirmed the seizures and ordered a CT scan of her brain. He closed the door to our room to give us the news… <span>we knew right away, our lives were never going to be the same…"</span></p>
                   <p class="center">– Jayna’s mother Sunshine Glynn, via CaringBridge</p>
-                  
-              </div> 
-        </div> 
-      </div>   
+
+              </div>
+        </div>
+      </div>
     </section>
 
     <section class="video-block" id="video">
           <div class="portrait"></div>
           <div class="container">
               <div class="row">
-                  <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 copy"> 
+                  <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 copy">
 
                   <a class="play" href="#">Watch Jayna's story <svg aria-hidden="true" x="0px" y="0px"
        width="14px" height="3px" viewBox="0 0 14 3" enable-background="new 0 0 14 3" xml:space="preserve">
     <rect fill="#FFFFFF" width="14" height="3"/>
     </svg></a>
 
-              </div> 
-            </div> 
-          </div>   
+              </div>
+            </div>
+          </div>
           <div id="boundless-video"></div>
-          
+
    </section>
 
 
@@ -92,13 +95,13 @@
                    <path fill="#4B2E83" d="M53.915,61.075"/>
                    </svg>
                  </a>
-                 
+
                  <p>The diagnosis was hemimegalencephaly, a rare condition in which one half of the brain develops abnormally larger than the other. The seizures, a symptom of the condition, lasted minutes, consuming Jayna’s entire being. Medication didn’t work. The only answer, at 28 days old, was a hemispherectomy — performed on the youngest patient in the world at the time — by <a href="http://www.seattlechildrens.org">Seattle Children’s</a> neurosurgeon and <a href="http://www.csne-erc.org">Center for Sensorimotor Neural Engineering</a> (CSNE) member Dr. Jeff Ojemann. The surgery to disconnect the right hemisphere of her brain was successful, but the outlook was dim: doctors told Jayna’s family she’d likely never walk or talk. That they’d have only a few years with her, at best. </p>
 
                  <p>Fast-forward a decade, and Jayna — who lives life with partial blindness and hemiplegia, a weakness of the left side of her body — is the happiest walking, talking 10-year-old you’ll ever meet. And, as a participant in the College of Engineering’s <a href="https://depts.washington.edu/uwsteele/">Ability &amp; Innovation Lab</a> pioneered by assistant professor of <a href="https://www.me.washington.edu/">mechanical engineering</a> and CSNE member Kat Steele, Jayna is working with mechanical engineering students to design body-powered orthoses to enrich not just her own life, but the lives of others. </p>
-                 </div> 
-           </div> 
-         </div>   
+                 </div>
+           </div>
+         </div>
        </section>
 
 
@@ -118,9 +121,9 @@
                       <p>“With Jayna, we’ve been working on a simple, mechanical solution that’s easy to use in daily life, and we’re really excited by the future opportunities in neural engineering with our partners at the CSNE,” says Steele. “There, researchers are working hard to develop the future of brain-computer interfaces that will let an individual simply think and move these devices.”</p>
 
                       <p>For the uninitiated, it sounds like science fiction: humans using brain control to bring robotic limbs — or even their own paralyzed limbs — to life. For CSNE director Rajesh Rao and CSNE deputy director Chet Moritz, it’s the future of neural engineering — and it’s less than a decade away.</p>
-                   </div> 
-             </div> 
-           </div>   
+                   </div>
+             </div>
+           </div>
          </section>
 
 
@@ -133,7 +136,7 @@
                           <p><span>Director</span> / Center for Sensorimotor Neural Engineering</p>
                           <p><span>Professor</span> / Computer Science &amp; Engineering</p>
                           <p><span>Adjunct Professor</span> / Bioengineering<br> Electrical Engineering</p>
-                          <p><span>Faculty Member</span> / Graduate Program in Neuroscience</p>                          
+                          <p><span>Faculty Member</span> / Graduate Program in Neuroscience</p>
                       </div>
                       <svg class="svg-plus" xmlns="http://www.w3.org/2000/svg" width="50.98" height="50.6" viewBox="0 0 50.98 50.6"><path fill="#B7A57A" d="M46.684 0v46.684H0"/><g fill="#FFF"><path d="M31.374 25.113h1.98v14.502h-1.98z"/><path d="M25.113 31.374h14.503v1.98H25.113z"/></g></svg>
 
@@ -143,8 +146,8 @@
                           <h2>Chet Moritz</h2>
                           <p><span>Deputy Director</span> / Center for Sensorimotor Neural Engineering</p>
                           <p><span>Associate Professor</span> / Rehabilitation Medicine<br> Physiology and Biophysics</p>
-                          <p><span>Adjunct Associate Professor</span> / Electrical Engineering</p>   
-                          <p><span>Faculty Member</span> / Graduate Program in Neuroscience</p>         
+                          <p><span>Adjunct Associate Professor</span> / Electrical Engineering</p>
+                          <p><span>Faculty Member</span> / Graduate Program in Neuroscience</p>
                       </div>
                       <svg class="svg-plus" xmlns="http://www.w3.org/2000/svg" width="50.98" height="50.6" viewBox="0 0 50.98 50.6"><path fill="#B7A57A" d="M46.684 0v46.684H0"/><g fill="#FFF"><path d="M31.374 25.113h1.98v14.502h-1.98z"/><path d="M25.113 31.374h14.503v1.98H25.113z"/></g></svg>
                   </li>
@@ -175,25 +178,25 @@
            <div class="container">
                <div class="row">
                    <div class="col-md-10 col-md-offset-1 copy padless marginless">
-                      <p> Housed in the <a href="https://www.engr.washington.edu/">College of Engineering</a>, the CSNE is a cross-disciplinary hub that brings together medicine and engineering to develop novel solutions for conditions that range from stroke to spinal cord injury. It’s an ecosystem of innovation centered on a shared mission: empowering people with disabilities through connecting brains with technology.</p> 
+                      <p> Housed in the <a href="https://www.engr.washington.edu/">College of Engineering</a>, the CSNE is a cross-disciplinary hub that brings together medicine and engineering to develop novel solutions for conditions that range from stroke to spinal cord injury. It’s an ecosystem of innovation centered on a shared mission: empowering people with disabilities through connecting brains with technology.</p>
 
                       <p>“The CSNE has become the catalyst for almost seamless collaboration between neuroscientists, neurosurgeons, neuroethicists and engineers,” says Rao. “Together, we’re paving the way for next-generation neurotechnologies that will help the body heal, feel and move again.”</p>
-                      
-                      <p>When the average able-bodied individual wants to sip a cup of coffee, for instance, they don’t think about bringing the mug to their lips — they just do it. But while the intent to move is still there for individuals who have undergone stroke or spinal cord injury and experience paralysis, there’s a missing link — say, a damaged nerve — in the loop that sends that message from the brain to the muscle. That’s where the CSNE comes in. </p>
-                      
 
-                      <p>The brain is the control center for the nervous system, firing neurons full of information and commands through our bodies. At the CSNE, researchers are unpacking what exactly the intent to move looks like by recording brain activity through electrocorticography (ECoG), a monitoring practice in which a grid of electrodes is placed directly on the surface of the brain. </p>     
+                      <p>When the average able-bodied individual wants to sip a cup of coffee, for instance, they don’t think about bringing the mug to their lips — they just do it. But while the intent to move is still there for individuals who have undergone stroke or spinal cord injury and experience paralysis, there’s a missing link — say, a damaged nerve — in the loop that sends that message from the brain to the muscle. That’s where the CSNE comes in. </p>
+
+
+                      <p>The brain is the control center for the nervous system, firing neurons full of information and commands through our bodies. At the CSNE, researchers are unpacking what exactly the intent to move looks like by recording brain activity through electrocorticography (ECoG), a monitoring practice in which a grid of electrodes is placed directly on the surface of the brain. </p>
 
                       <p>The participants in the CSNE’s ECoG studies are epilepsy patients who have volunteered to assist the CSNE with its research (ECoG is the go-to approach for mapping the origin of seizures) during their one- to two-week hospital stay. There, CSNE researchers supervised by Dr. Ojemann connect the signals measured directly from the brain to a computer translator of sorts and, without physically lifting a finger, the participants practice thinking of controlling a cursor on a screen, an avatar hand, or even a robotic arm. The researchers ask the participant to imagine completing a task — grabbing that cup of coffee, perhaps — then use those signals to enable the participant to control the electronic limb with their brain. </p>
 
 
-                   </div> 
-             </div> 
-           </div>   
+                   </div>
+             </div>
+           </div>
        </section>
 
       <section id="chart" class="charts">
-        <p class="headline-gold center">Controlling Robotics <br>with the Brain</p> 
+        <p class="headline-gold center">Controlling Robotics <br>with the Brain</p>
         <div>
           <div>
             <p><span>1</span>For those who experience paralysis, the intent to move is intact, but the ability is not.   </p>
@@ -224,14 +227,14 @@
 
 <p>The concept is this: the brain activity is recorded, decoded and an algorithm is created. That information is then used to program the implantable BCI — essentially, chips and wires that act as a pseudo nervous system, creating a bridge to reconnect the brain to the spinal cord below the injury. The device listens to the brain, and then says ‘Oh, the person wants to do this — let’s help them,’” says Moritz. “We’re trying to make the algorithms smarter, to allow the device learn in real time. Just as our brain or spinal cord would learn with practice, so would this little implant.” </p>
 
-                   </div> 
-             </div> 
-           </div>   
+                   </div>
+             </div>
+           </div>
          </section>
 
 
          <section id="infographic" class="charts">
-           <p class="headline-gold center">The Future: Internal BCI  <br>and Healing Connections</p> 
+           <p class="headline-gold center">The Future: Internal BCI  <br>and Healing Connections</p>
            <div>
              <div>
                <p><span>1</span>For those who experience paralysis, the intent to move is intact, but  the ability is not.</p>
@@ -281,22 +284,22 @@
 
   <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/slide-5.jpg' ?>" alt="">
     <p>Human test subject wearing an electroencephalogram (EEG) cap and bioengineering graduate student Dev Sarma in Rajesh Rao’s lab. In this experiment the EEG cap picks up electrical signals coming from the test subject’s brain and feeds them into a processor that controls a cursor on a video screen the subject is viewing. In effect, it allows the test subject to control the cursor on-screen through her thoughts alone.</p></div>
-  
+
   <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/slide-4.jpg' ?>" alt="">
       <p>Close-up of an electrocorticography (ECoG) grid. This ECoG grid is designed to both pick up and transmit electrical signals to and from the surface of the brain.</p></div>
-  
+
   <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/slide-1.jpg' ?>" alt="">
     <p>The CSNE offers research experiences, classroom visits and outreach events for precollege students and educators. Pictured is a demonstration at the Bloomin’ Brains Summer Camp showing how the electrical signal from muscles can power a robotic gripper.</p></div>
-  
+
     <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/slide-6.jpg' ?>" alt="">
       <p>CSNE neuroethics predoctoral fellow Tim Brown and electrical engineering graduate student Tyson Heo work with electromyography (EMG) sensing and haptic feedback in the UW BioRobotics lab.
-  </p></div>   
+  </p></div>
 
 </div>
 
-                   </div> 
-             </div> 
-           </div>   
+                   </div>
+             </div>
+           </div>
          </section>
 
 
@@ -304,7 +307,7 @@
              <div class="container">
                  <div class="row">
                      <div class="col-md-10 col-md-offset-1 copy">
-                       <div style="text-align: center">             
+                       <div style="text-align: center">
                          <h2 class="headline-gold">Help make a difference</h2>
                          <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless &mdash; For Washington, For the World. You can help the College of Engineering empower possibility through innovation by contributing to these funds.</p>
                          <div id="immersive-give-iframe"></div>
