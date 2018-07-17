@@ -226,6 +226,7 @@ module.exports = function(grunt) {
           'immersive-stories/js/law.min.js': [
             'immersive-stories/js/common.js',
             'immersive-stories/js/lity.js',
+            'immersive-stories/js/slick.js',
             'immersive-stories/js/law.js',
           ],
           'immersive-stories/js/libraries.min.js': [

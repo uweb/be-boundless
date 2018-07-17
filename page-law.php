@@ -1,9 +1,14 @@
 <?php
+<<<<<<< HEAD
+    $meta = '';
+    $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/law.css' type='text/css' media='all' /><link rel='stylesheet' href='http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css' type='text/css' media='all'/><link rel='stylesheet' href='http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css' type='text/css' media='all'/>";
+=======
     $twitter_photo = '';
     $twitter_title = 'Sentenced to treatment';
     $twitter_description = 'Struck by the number of nonviolent offenders imprisoned on drug charges, UW Law grad Brian Kilgore and the Tulalip Tribes have partnered to offer second chances through treatment.';
     $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
     $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/law.css' type='text/css' media='all' />";
+>>>>>>> c2afbe15ef5adc0308ee92d5c1f78a0b62b5980b
     $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/law.min.js' type='text/javascript'></script>";
     $storyCodes = 'INDLAW,LFUNRS,LAWGEN';
     $storyAppeal = 'By contributing to the Native American Law Center Fund, Excellence in Law Fund, or the Law Student Scholarship Fund, you can help students gain hands-on legal experience as part of their studies at the UW School of Law.';
@@ -63,8 +68,10 @@
       <div class="item-2 item">
 	         <h2 class="headline">The wellness court is changing the paradigm.</h2>
       </div>
+      <div class="item-3 item"></div>
       <div class="background-1 background"></div>
       <div class="background-2 background"></div>
+      <div class="background-3 background"></div>
 		</section><!-- #section-map -->
 
     <section id="section-body">
@@ -92,7 +99,7 @@
                 <p class="caption no-cap">BRIAN KILGORE, &rsquo;11, serves as a prosecutor at the Tulalip Tribal Court.</p>
 
                 <audio id="audio-callout" preload="auto">
-                  <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/law/sample_audio.mp3' ?>" type="audio/mpeg">
+                  <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/audio/law/BRIAN_INTERVIEW_CUT.mp3' ?>" type="audio/mpeg">
                 </audio>
 
             </div>
@@ -117,101 +124,72 @@
     </section>
 
     <section id="section-profiles">
+      <!-- Verle -->
       <div class="item-1 item">
         <div class="img"></div>
         <div class="caption">
           <div class="group">
-            <h4 class="headline">Header 1-1</h4>
+            <h4 class="headline">Verle Smith</h4>
             <div class="inner">
               <div class="more">
-                <svg id="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.98 4.46">
-                  <defs><style>.icon-line{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs>
-                  <title>Vector Smart Object1</title>
-                  <path class="icon-line" d="M.86,2.75c.43.55,1.68,2,3.17,2s2.77-1.44,3.18-2A4.44,4.44,0,0,0,4,.77C2.5.77,1.28,2.2.86,2.75Z" transform="translate(-0.55 -0.52)"/>
-                  <path class="icon-line" d="M4,3.94A1.19,1.19,0,1,1,5.23,2.75,1.19,1.19,0,0,1,4,3.94Z" transform="translate(-0.55 -0.52)"/></svg>
-                <span class="text">Read More</span>
+                <span class="text">Healing to Wellness Court participant</span>
               </div>
-              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et nunc sit amet quam tristique luctus. Nunc et felis erat. Cras luctus sem in enim varius tempus. Aliquam erat volutpat. Nullam in magna a mauris cursus sodales et faucibus odio. Maecenas non velit vitae neque luctus convallis. Suspendisse vel enim ut nisi egestas consequat. Phasellus a augue at turpis lacinia semper sed non quam.</p>
             </div>
           </div>
         </div>
       </div>
-
+      <!-- Matthew -->
       <div class="item-2 item">
         <div class="img"></div>
         <div class="caption">
           <div class="group">
-            <h4 class="headline">Header 1-2</h4>
+            <h4 class="headline">Matthew Pablo</h4>
             <div class="inner">
               <div class="more">
-                <svg id="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.98 4.46">
-                  <defs><style>.icon-line{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs>
-                  <title>Vector Smart Object1</title>
-                  <path class="icon-line" d="M.86,2.75c.43.55,1.68,2,3.17,2s2.77-1.44,3.18-2A4.44,4.44,0,0,0,4,.77C2.5.77,1.28,2.2.86,2.75Z" transform="translate(-0.55 -0.52)"/>
-                  <path class="icon-line" d="M4,3.94A1.19,1.19,0,1,1,5.23,2.75,1.19,1.19,0,0,1,4,3.94Z" transform="translate(-0.55 -0.52)"/></svg>
-                <span class="text">Read More</span>
+                <span class="text">Healing to Wellness Court participant</span>
               </div>
-              <p class="description">Sed vel arcu aliquam, dictum arcu efficitur, dignissim urna. Pellentesque at metus tortor. Nulla aliquam nisl in velit efficitur ornare. In congue quis nisl et porta. Duis tincidunt fermentum enim eget aliquam. Praesent ullamcorper velit ut mi mattis vulputate. Nam imperdiet sit amet nunc eu congue. Donec commodo aliquam convallis</p>
             </div>
           </div>
         </div>
       </div>
-
+      <!-- Summer -->
       <div class="item-3 item">
         <div class="img"></div>
         <div class="caption">
           <div class="group">
-            <h4 class="headline">Header 1-3</h4>
+            <h4 class="headline">Summer Blankenship</h4>
             <div class="inner">
               <div class="more">
-                <svg id="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.98 4.46">
-                  <defs><style>.icon-line{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs>
-                  <title>Vector Smart Object1</title>
-                  <path class="icon-line" d="M.86,2.75c.43.55,1.68,2,3.17,2s2.77-1.44,3.18-2A4.44,4.44,0,0,0,4,.77C2.5.77,1.28,2.2.86,2.75Z" transform="translate(-0.55 -0.52)"/>
-                  <path class="icon-line" d="M4,3.94A1.19,1.19,0,1,1,5.23,2.75,1.19,1.19,0,0,1,4,3.94Z" transform="translate(-0.55 -0.52)"/></svg>
-                <span class="text">Read More</span>
+                <span class="text">Healing to Wellness Court participant</span>
               </div>
-              <p class="description">Sed vel arcu aliquam, dictum arcu efficitur, dignissim urna. Pellentesque at metus tortor. Nulla aliquam nisl in velit efficitur ornare. In congue quis nisl et porta. Duis tincidunt fermentum enim eget aliquam. Praesent ullamcorper velit ut mi mattis vulputate. Nam imperdiet sit amet nunc eu congue. Donec commodo aliquam convallis</p>
             </div>
           </div>
         </div>
       </div>
-
+      <!-- Whakaadup -->
       <div class="item-4 item">
         <div class="img"></div>
         <div class="caption">
           <div class="group">
-            <h4 class="headline">Header 1-4</h4>
+            <h4 class="headline">Robert &lsquo;Whaa-Ka-Dup&rsquo; Monger</h4>
             <div class="inner">
               <div class="more">
-                <svg id="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.98 4.46">
-                  <defs><style>.icon-line{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs>
-                  <title>Vector Smart Object1</title>
-                  <path class="icon-line" d="M.86,2.75c.43.55,1.68,2,3.17,2s2.77-1.44,3.18-2A4.44,4.44,0,0,0,4,.77C2.5.77,1.28,2.2.86,2.75Z" transform="translate(-0.55 -0.52)"/>
-                  <path class="icon-line" d="M4,3.94A1.19,1.19,0,1,1,5.23,2.75,1.19,1.19,0,0,1,4,3.94Z" transform="translate(-0.55 -0.52)"/></svg>
-                <span class="text">Read More</span>
+                <span class="text">Treatment and Cultural Specialist</span>
               </div>
-              <p class="description">Sed vel arcu aliquam, dictum arcu efficitur, dignissim urna. Pellentesque at metus tortor. Nulla aliquam nisl in velit efficitur ornare. In congue quis nisl et porta. Duis tincidunt fermentum enim eget aliquam. Praesent ullamcorper velit ut mi mattis vulputate. Nam imperdiet sit amet nunc eu congue. Donec commodo aliquam convallis</p>
             </div>
           </div>
         </div>
       </div>
-
+      <!-- Randy -->
       <div class="item-5 item">
         <div class="img"></div>
         <div class="caption">
           <div class="group">
-            <h4 class="headline">Header 1-5</h4>
+            <h4 class="headline">Randy Turner</h4>
             <div class="inner">
               <div class="more">
-                <svg id="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.98 4.46">
-                  <defs><style>.icon-line{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs>
-                  <title>Vector Smart Object1</title>
-                  <path class="icon-line" d="M.86,2.75c.43.55,1.68,2,3.17,2s2.77-1.44,3.18-2A4.44,4.44,0,0,0,4,.77C2.5.77,1.28,2.2.86,2.75Z" transform="translate(-0.55 -0.52)"/>
-                  <path class="icon-line" d="M4,3.94A1.19,1.19,0,1,1,5.23,2.75,1.19,1.19,0,0,1,4,3.94Z" transform="translate(-0.55 -0.52)"/></svg>
-                <span class="text">Read More</span>
+                <span class="text">Healing to Wellness Court participant</span>
               </div>
-              <p class="description">Sed vel arcu aliquam, dictum arcu efficitur, dignissim urna. Pellentesque at metus tortor. Nulla aliquam nisl in velit efficitur ornare. In congue quis nisl et porta. Duis tincidunt fermentum enim eget aliquam. Praesent ullamcorper velit ut mi mattis vulputate. Nam imperdiet sit amet nunc eu congue. Donec commodo aliquam convallis</p>
             </div>
           </div>
         </div>
@@ -233,17 +211,11 @@
         <div class="img"></div>
         <div class="caption">
           <div class="group">
-            <h4 class="headline">Header 2-1</h4>
+            <!-- <h4 class="headline">Header 2-1</h4> -->
             <div class="inner">
               <div class="more">
-                <svg id="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.98 4.46">
-                  <defs><style>.icon-line{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs>
-                  <title>Vector Smart Object1</title>
-                  <path class="icon-line" d="M.86,2.75c.43.55,1.68,2,3.17,2s2.77-1.44,3.18-2A4.44,4.44,0,0,0,4,.77C2.5.77,1.28,2.2.86,2.75Z" transform="translate(-0.55 -0.52)"/>
-                  <path class="icon-line" d="M4,3.94A1.19,1.19,0,1,1,5.23,2.75,1.19,1.19,0,0,1,4,3.94Z" transform="translate(-0.55 -0.52)"/></svg>
-                <span class="text">Read More</span>
+                <span class="text">Heating up stones, known as grandfathers and grandmothers by the Tulalip Tribes, for the Inipi (sweat lodge) ceremony.</span>
               </div>
-              <p class="description">Item 1 Etiam scelerisque laoreet urna, ut ullamcorper enim ultricies non. Ut tempus rhoncus orci, hendrerit rhoncus sapien auctor ut. Duis lobortis augue eros. Nunc bibendum mi ut dolor pulvinar, id mattis mauris efficitur.</p>
           </div>
         </div>
       </div>
@@ -253,17 +225,11 @@
       <div class="img"></div>
       <div class="caption">
         <div class="group">
-          <h4 class="headline">Header 2-2</h4>
+          <!-- <h4 class="headline">Header 2-2</h4> -->
           <div class="inner">
             <div class="more">
-              <svg id="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.98 4.46">
-                <defs><style>.icon-line{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs>
-                <title>Vector Smart Object1</title>
-                <path class="icon-line" d="M.86,2.75c.43.55,1.68,2,3.17,2s2.77-1.44,3.18-2A4.44,4.44,0,0,0,4,.77C2.5.77,1.28,2.2.86,2.75Z" transform="translate(-0.55 -0.52)"/>
-                <path class="icon-line" d="M4,3.94A1.19,1.19,0,1,1,5.23,2.75,1.19,1.19,0,0,1,4,3.94Z" transform="translate(-0.55 -0.52)"/></svg>
-              <span class="text">Read More</span>
-            </div>
-            <p class="description">Item 2 Mauris malesuada leo non tincidunt consequat. Phasellus sem ante, malesuada non elit consectetur, ullamcorper facilisis ex. Quisque quis accumsan magna, in mattis lorem. Donec sodales elit at orci elementum dapibus. Vivamus volutpat sit amet lectus eu tempor.</p>
+                <span class="text">Robert &ldquo;Whaa-Ka-Dup&rdquo; Monger and Wellness Court participants place blankets on the Inipi structure.</span>
+              </div>
           </div>
         </div>
       </div>
@@ -273,17 +239,53 @@
       <div class="img"></div>
       <div class="caption">
         <div class="group">
-          <h4 class="headline">Header 2-3</h4>
+          <!-- <h4 class="headline">Header 2-3</h4> -->
           <div class="inner">
             <div class="more">
-              <svg id="icon-eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.98 4.46">
-                <defs><style>.icon-line{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs>
-                <title>Vector Smart Object1</title>
-                <path class="icon-line" d="M.86,2.75c.43.55,1.68,2,3.17,2s2.77-1.44,3.18-2A4.44,4.44,0,0,0,4,.77C2.5.77,1.28,2.2.86,2.75Z" transform="translate(-0.55 -0.52)"/>
-                <path class="icon-line" d="M4,3.94A1.19,1.19,0,1,1,5.23,2.75,1.19,1.19,0,0,1,4,3.94Z" transform="translate(-0.55 -0.52)"/></svg>
-              <span class="text">Read More</span>
-            </div>
-            <p class="description">Item 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et nunc sit amet quam tristique luctus. Nunc et felis erat. Cras luctus sem in enim varius tempus. Aliquam erat volutpat. Nullam in magna a mauris cursus sodales et faucibus odio. Maecenas non velit vitae neque luctus convallis. Suspendisse vel enim ut nisi egestas consequat. Phasellus a augue at turpis lacinia semper sed non quam.</p>
+                <span class="text">Healing Lodge (qʷibilalʔtxʷ) residents and Wellness Court participants take part in a pottery-making session.</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-4 item">
+      <div class="img"></div>
+      <div class="caption">
+        <div class="group">
+          <!-- <h4 class="headline">Header 2-4</h4> -->
+          <div class="inner">
+            <div class="more">
+                <span class="text">As part of art therapy, a Wellness Court participant learns how to use a pottery wheel.</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-5 item">
+      <div class="img"></div>
+      <div class="caption">
+        <div class="group">
+          <!-- <h4 class="headline">Header 2-5</h4> -->
+          <div class="inner">
+            <div class="more">
+                <span class="text">Wellness Court participant Karolyn tightens the deer hide on her handmade drum.</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-6 item">
+      <div class="img"></div>
+      <div class="caption">
+        <div class="group">
+          <!-- <h4 class="headline">Header 2-6</h4> -->
+          <div class="inner">
+            <div class="more">
+                <span class="text">Verle, a Wellness Court participant, makes a drum as his children look on.</span>
+              </div>
           </div>
         </div>
       </div>
@@ -295,7 +297,7 @@
         <div class="col-md-8 col-md-offset-2">
           <h2 class="headline">Connecting with tribal culture</h2>
           <p>But the process is far from easy. Many participants don&rsquo;t have a support system to help them through — in fact, their social network may be part of the reason they struggle with addiction.</p>
-          <p>To that end, participants have the option of living at the Tulalip Healing Lodge, a transitional home with a cultural and spiritual slant for people who are pursuing a sober lifestyle. Under the guidance of community member Robert &ldquo;Whaakadup&rdquo; Monger, participants reconnect with their native roots by singing and praying in sweat lodge ceremonies, making traditional drums or weaving baskets. &ldquo;Some of them have never had somebody like me in their life; somebody who walks and talks and lives and breathes the spiritual way of life,&rdquo; says Monger, who&rsquo;s nearly 20 years sober himself. &ldquo;Some of them are hungry for it.&rdquo;</p>
+          <p>To that end, participants have the option of living at the Tulalip Healing Lodge, a transitional home with a cultural and spiritual slant for people who are pursuing a sober lifestyle. Under the guidance of community member Robert &ldquo;Whaa-Ka-Dup&rdquo; Monger, participants reconnect with their native roots by singing and praying in sweat lodge ceremonies, making traditional drums or weaving baskets. &ldquo;Some of them have never had somebody like me in their life; somebody who walks and talks and lives and breathes the spiritual way of life,&rdquo; says Monger, who&rsquo;s nearly 20 years sober himself. &ldquo;Some of them are hungry for it.&rdquo;</p>
           <p>With Monger&rsquo;s help, participants work through &ldquo;The Red Road to Wellbriety,&rdquo; a book about healing written specifically for tribal culture by tribal members. &ldquo;I&rsquo;m very fortunate and blessed to be able to do this kind of work,&rdquo; says Monger.</p>
         </div>
       </div>
@@ -309,7 +311,7 @@
               <div class="quote-mark quote-top">"</div>
               <h1 class="headline">When they busted in my door in 1993, I decided it was time for Robert Monger to get to know who he was. So that&rsquo;s when I picked up my native name.</h1>
               <div class="quote-mark quote-bottom">"</div>
-              <a data-lity class="play-video" href="https://www.youtube.com/embed/3DvGGqEh0ug?autoplay=1&rel=0&showinfo=0" title="Learn more about Monger and the cultural component of the Healing to Wellness Court">
+              <a data-lity class="play-video" href="  " title="Learn more about Monger and the cultural component of the Healing to Wellness Court">
                 <svg id="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155.48 155.48" focusable="false">
                   <defs>
                     <style>
