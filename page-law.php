@@ -1,6 +1,6 @@
 <?php
     $meta = '';
-    $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/law.css' type='text/css' media='all' />";
+    $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/law.css' type='text/css' media='all' /><link rel='stylesheet' href='http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css' type='text/css' media='all'/><link rel='stylesheet' href='http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css' type='text/css' media='all'/>";
     $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/law.min.js' type='text/javascript'></script>";
     $storyCodes = 'INDLAW,LFUNRS,LAWGEN';
     $storyAppeal = 'By contributing to the Native American Law Center Fund, Excellence in Law Fund, or the Law Student Scholarship Fund, you can help students gain hands-on legal experience as part of their studies at the UW School of Law.';
@@ -163,7 +163,7 @@
         <div class="img"></div>
         <div class="caption">
           <div class="group">
-            <h4 class="headline">Robert ‘Whaa-Ka-Dup’ Monger</h4>
+            <h4 class="headline">Robert &lsquo;Whaa-Ka-Dup&rsquo; Monger</h4>
             <div class="inner">
               <div class="more">
                 <span class="text">Treatment and Cultural Specialist</span>
@@ -220,7 +220,7 @@
           <!-- <h4 class="headline">Header 2-2</h4> -->
           <div class="inner">
             <div class="more">
-                <span class="text">Robert “Whaakadup” Monger and Wellness Court participants place blankets on the Inipi structure.</span>
+                <span class="text">Robert &ldquo;Whaa-Ka-Dup&rdquo; Monger and Wellness Court participants place blankets on the Inipi structure.</span>
               </div>
           </div>
         </div>
@@ -289,7 +289,7 @@
         <div class="col-md-8 col-md-offset-2">
           <h2 class="headline">Connecting with tribal culture</h2>
           <p>But the process is far from easy. Many participants don&rsquo;t have a support system to help them through — in fact, their social network may be part of the reason they struggle with addiction.</p>
-          <p>To that end, participants have the option of living at the Tulalip Healing Lodge, a transitional home with a cultural and spiritual slant for people who are pursuing a sober lifestyle. Under the guidance of community member Robert &ldquo;Whaakadup&rdquo; Monger, participants reconnect with their native roots by singing and praying in sweat lodge ceremonies, making traditional drums or weaving baskets. &ldquo;Some of them have never had somebody like me in their life; somebody who walks and talks and lives and breathes the spiritual way of life,&rdquo; says Monger, who&rsquo;s nearly 20 years sober himself. &ldquo;Some of them are hungry for it.&rdquo;</p>
+          <p>To that end, participants have the option of living at the Tulalip Healing Lodge, a transitional home with a cultural and spiritual slant for people who are pursuing a sober lifestyle. Under the guidance of community member Robert &ldquo;Whaa-Ka-Dup&rdquo; Monger, participants reconnect with their native roots by singing and praying in sweat lodge ceremonies, making traditional drums or weaving baskets. &ldquo;Some of them have never had somebody like me in their life; somebody who walks and talks and lives and breathes the spiritual way of life,&rdquo; says Monger, who&rsquo;s nearly 20 years sober himself. &ldquo;Some of them are hungry for it.&rdquo;</p>
           <p>With Monger&rsquo;s help, participants work through &ldquo;The Red Road to Wellbriety,&rdquo; a book about healing written specifically for tribal culture by tribal members. &ldquo;I&rsquo;m very fortunate and blessed to be able to do this kind of work,&rdquo; says Monger.</p>
         </div>
       </div>
@@ -303,7 +303,7 @@
               <div class="quote-mark quote-top">"</div>
               <h1 class="headline">When they busted in my door in 1993, I decided it was time for Robert Monger to get to know who he was. So that&rsquo;s when I picked up my native name.</h1>
               <div class="quote-mark quote-bottom">"</div>
-              <a data-lity class="play-video" href="https://www.youtube.com/embed/3DvGGqEh0ug?autoplay=1&rel=0&showinfo=0" title="Learn more about Monger and the cultural component of the Healing to Wellness Court">
+              <a data-lity class="play-video" href="  " title="Learn more about Monger and the cultural component of the Healing to Wellness Court">
                 <svg id="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155.48 155.48" focusable="false">
                   <defs>
                     <style>
