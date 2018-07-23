@@ -849,7 +849,8 @@ html {
     }
 
     #section-profiles,
-    #section-photos {
+    #section-photos,
+    #profiles {
       ul.slick-dots li button:before {
         font-size: 8px;
       }
@@ -1143,5 +1144,169 @@ html {
     transform: translateY(20px);
   }
 }
+
+
+
+/*******************************
+ * Farmer Brown profile styles *
+ *******************************/
+
+#profiles {
+        width: 100%;
+        // padding: 50px 0;
+        color: white;
+        overflow: hidden;
+        .container {
+                text-align: right;
+        }
+        #people {
+            padding-left: 0;
+            text-align: center;
+            li.pax {
+                width: 50%;
+                margin: 0;
+                float: left;
+                height: 25vw;
+                .background-cover(cover);
+                background-position: center center;
+                position: relative;
+                overflow: hidden;
+                display: inline-block;
+                outline: 5px solid #fff;
+                &.active-focus,
+                &.active {
+                    cursor: pointer;
+                    div.hider {
+                            .scale(1,1);
+                            opacity: 1;
+                    }
+                }
+                &.active {
+                    div.hider {
+                        &:after {
+                                .translate(0,0);
+                        }
+                    }
+                }
+                a {
+                    text-decoration: underline;
+                }
+                div.hider {
+                    .scale(2,2);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    padding: 15% 10% 15%;
+                    background-color: rgba(183, 165, 122, 0.69);
+                    .transition(all .1s linear);
+                    opacity: 0;
+                    vertical-align: middle;
+                }
+                div.mobile-hider {
+                  opacity: 0;
+                  display: none; 
+                }
+                .hider > p {
+                    font-size: 14px;
+                    color: white;
+                    padding: 5px 0;
+                    border: 4px solid white;
+                    margin-bottom: -4px;
+                    background-color: @lightgold;
+                        line-height: normal;
+                    span {
+                            font-weight: bold;
+                    }
+                }
+                h2 {
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    font-family: @uni;
+                    color: @lightgold;
+                    background-color: #fff;
+                    padding: 5px 0;
+                    margin: 0;
+                }
+            }
+        }
+        @media(min-width:768px) {
+            #people {
+                li.pax {
+                    width: 50%;
+                    height: 25vw;
+                    display: table;
+                    div.hider {
+                        padding: 0 15%;
+                        display: table-cell;
+                        position: static;
+                    }
+                    div.hider > p {
+                        font-size: 15px;
+                        line-height: normal;
+                    }
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        cursor: pointer;
+                        div.hider {
+                                .scale(1,1);
+                                opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+        @media only screen and (min-width : 768px ) and (max-width : 992px) {
+                #people {
+                    li.pax {
+                        width: 50%;
+                        height: 25vw;
+                    }
+                }
+        }
+        @media(max-width:768px) {
+                #people {
+                    list-style: none;
+                    li.pax {
+                        height: 50vw;
+                        width: 100%;
+                        float: none;
+                        outline: none;
+                        list-style: none;
+                        &:after {
+                          //info icon
+
+                        }
+                    }
+                }
+        }
+}
+
+
+.pax-1 { background-image: url("@{law}/Portrait-summer.jpg") }
+.pax-2 { background-image: url("@{law}/Portrait-verle.jpg") }
+.pax-3 { background-image: url("@{law}/Portrait-matthew.jpg") }
+.pax-4 { background-image: url("@{law}/Portrait-whakaadup.jpg") }
+.slick-slider .slick-list:after {
+    background-color: rgba(0,0,0,0.3);
+    padding: 0px 12px;
+    position: absolute;
+    content: "i";
+    font-family: "Encode Sans Compressed",sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    bottom: 10px;
+    right: 10px;
+    border: 2px solid white;
+    color: white;
+    opacity: 1;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    pointer-events: none;
+}
+
 
 
