@@ -118,9 +118,9 @@
       </div>
     </section>
 
-    <section id="section-profiles">
+    <!-- <section id="section-profiles"> -->
       <!-- Verle -->
-      <div class="item-1 item">
+      <!-- <div class="item-1 item">
         <div class="img"></div>
         <div class="caption">
           <div class="group">
@@ -132,9 +132,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- Matthew -->
-      <div class="item-2 item">
+      <!-- <div class="item-2 item">
         <div class="img"></div>
         <div class="caption">
           <div class="group">
@@ -146,9 +146,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- Summer -->
-      <div class="item-3 item">
+      <!-- <div class="item-3 item">
         <div class="img"></div>
         <div class="caption">
           <div class="group">
@@ -160,9 +160,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- Whakaadup -->
-      <div class="item-4 item">
+      <!-- <div class="item-4 item">
         <div class="img"></div>
         <div class="caption">
           <div class="group">
@@ -174,9 +174,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- Randy -->
-      <div class="item-5 item">
+      <!-- <div class="item-5 item">
         <div class="img"></div>
         <div class="caption">
           <div class="group">
@@ -189,7 +189,38 @@
           </div>
         </div>
       </div>
-    </section><!-- #section-profiles -->
+    </section> --><!-- #section-profiles -->
+
+      <section id="profiles">
+                <div class="who-section">
+                    <ul id="people">
+                        <li class="pax pax-1 navy" tabindex="0">
+                            <div class="hider">
+                                <h2>Summer Blankenship</h2>
+                                <p>Healing to Wellness Court participant</p>
+                            </div>
+                        </li>
+                        <li class="pax pax-2 airforce" tabindex="0">
+                            <div class="hider">
+                                <h2>Verle Smith</h2>
+                                <p>Healing to Wellness Court participant</p>
+                            </div>
+                        </li>
+                        <li class="pax pax-3" tabindex="0">
+                            <div class="hider">
+                                <h2>Matthew Pablo</h2>
+                                <p>Healing to Wellness Court participant</p>
+                            </div>
+                        </li>
+                        <li class="pax pax-4 navy" tabindex="0">
+                            <div class="hider">
+                                <h2>Robert &lsquo;Whaa-Ka-Dup&rsquo; Monger</h2>
+                                <p>Treatment and Cultural Specialist</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
     <section id="text-content-profiles" class="text-content container">
       <div class="row">
