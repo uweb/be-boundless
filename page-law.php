@@ -27,7 +27,7 @@
         <div class="row">
   				<div class="intro-text">
   					<h1>Hoy yud dud</h1>
-            <h2 class="headline">Sentenced to treatment</h2>
+            <h2 class="headline">A road to recovery</h2>
   					<p>Struck by the number of nonviolent offenders imprisoned on drug charges, UW Law grad Brian Kilgore and the Tulalip Tribes have partnered to offer second chances through treatment.</p>
   				</div><!-- .col-xs-8 .col-sm-8 .col-md-8 .col-lg-8 .col-xs-offset-1 .col-md-offset-1 .col-lg-offset-2 #intro-text -->
   			</div><!-- .row -->
