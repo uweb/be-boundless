@@ -1,6 +1,6 @@
 <?php
     $twitter_photo = '';
-    $twitter_title = 'Sentenced to treatment';
+    $twitter_title = 'A road to recovery';
     $twitter_description = 'Struck by the number of nonviolent offenders imprisoned on drug charges, UW Law grad Brian Kilgore and the Tulalip Tribes have partnered to offer second chances through treatment.';
     $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
     $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/law.css' type='text/css' media='all' /><link rel='stylesheet' href='http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css' type='text/css' media='all'/><link rel='stylesheet' href='http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css' type='text/css' media='all'/>";
