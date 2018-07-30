@@ -1,5 +1,5 @@
 <?php
-    $twitter_photo = '';
+    $twitter_photo = ''; 
     $twitter_title = 'A road to recovery';
     $twitter_description = 'Struck by the number of nonviolent offenders imprisoned on drug charges, UW Law grad Brian Kilgore and the Tulalip Tribes have partnered to offer second chances through treatment.';
     $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
