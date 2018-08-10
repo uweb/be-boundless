@@ -16,7 +16,18 @@ global $styles;
 		<meta name="twitter:creator" content="@UW">
 		<meta property="og:url" content='<?php echo get_permalink( $post->ID ); ?>' />
 		<meta property="og:type" content="website" />
-		<?php echo $meta; ?>
+		<!-- <?php echo $meta; ?> -->
+		<!-- <?php
+			if(strlen($meta) == 0) {
+				echo '<script>alert(\'no meta\');</script>';}
+		?> -->
+		<!-- <?php custom_meta(); ?> -->
+		<?php
+			$meta = custom_meta($meta);
+			foreach ($meta as $key => $value) {
+				echo $value . PHP_EOL;
+			}
+		 ?>
 
 		<meta name="viewport" content="initial-scale=.95 width=device-width maximum-scale=1 user-scalable=no" />
 
