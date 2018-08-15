@@ -16,14 +16,9 @@ global $styles;
 		<meta name="twitter:creator" content="@UW">
 		<meta property="og:url" content='<?php echo get_permalink( $post->ID ); ?>' />
 		<meta property="og:type" content="website" />
-		<!-- <?php echo $meta; ?> -->
-		<!-- <?php
-			if(strlen($meta) == 0) {
-				echo '<script>alert(\'no meta\');</script>';}
-		?> -->
-		<!-- <?php custom_meta(); ?> -->
+
 		<?php
-			$meta = custom_meta($meta);
+			$meta = custom_meta($meta, get_post());
 			foreach ($meta as $key => $value) {
 				echo $value . PHP_EOL;
 			}

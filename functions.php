@@ -6,6 +6,7 @@ require( 'setup/class.boundless.php' );
 //require( 'setup/class.post-type-navigation.php' );
 require 'setup/class.boundless-custom-post.php';
 require 'setup/class.boundless-page-attributes-meta-box.php';
+require 'setup/class.boundless-custom-meta.php';
 //require 'setup/class.boundless-video-post.php';
 require 'setup/class.url-meta-field.php';
 //require 'setup/custom-post-types.php';
@@ -16,39 +17,38 @@ require 'setup/class.campaign-functions.php';
 
 
 function twitter_card($photo, $title, $descrpition) {
-	// $meta = '';
-	// if ($title) {
-	// 	$meta .= '<meta property="og:title" content="' . $title . '"/>' . PHP_EOL . "\t\t";
-	// 	$meta .= '<meta property="og:description" content="' . $descrpition . '"/>' . PHP_EOL . "\t\t";
-	// 	$meta .= '<meta property="og:image" content="' . $photo . '"/>' . PHP_EOL;
-	// }
 
 	$meta = array();
 	if ($title) {
 		$meta['og:title'] = '<meta property="og:title" content="' . $title . '"/>';
 		$meta['og:description'] = '<meta property="og:description" content="' . $descrpition . '"/>';
+		$meta['description'] = '<meta name="description" content="' . $descrpition . '"/>';
 		$meta['og:image'] = '<meta property="og:image" content="' . $photo . '"/>';
 	}
 
 	return $meta;
 }
 
-// requires that custom meta fields must be named meta_ + property
-// example: if you want a meta tag with the property set to 'og:title' the custom
-// 					field should be named 'meta_og:title' and the value should be the content
-//					you want to show in the meta tag
+// takes an array of meta tags and post information and replaces any instances
+// of the default meta tags created by the twitter card function with the custom
+// meta tags specified by the user in custom fields
+//
 // this function overrides the default twitter og meta tags
-function custom_meta($meta) {
-	//$meta = '';
-	$custom_fields = get_post_custom();
+function custom_meta($meta, $post) {
 
-	foreach($custom_fields as $key => $value) {
-		$keyinfo = explode('_', $key);
-		if ($keyinfo[0] == 'meta') {
-			$meta[$keyinfo[1]] = '<meta property="'.$keyinfo[1].'" content="'.implode(",", $value).'">';
-			//$meta .= '<meta property="'.$keyinfo[1].'" content="'.implode(",", $value).'">';
-		}
+	if (isset($post->title_meta)) {
+		$meta['og:title'] = '<meta property="og:title" content="' . $post->title_meta . '"/>';
 	}
+
+	if (isset($post->description_meta)) {
+		$meta['og:description'] = '<meta property="og:description" content="' . $post->description_meta . '"/>';
+		$meta['description'] = '<meta name="description" content="' . $post->description_meta . '"/>';
+	}
+
+	if (isset($post->image_meta)) {
+		$meta['og:image'] = '<meta property="og:image" content="' . $post->image_meta . '"/>';
+	}
+
 	return $meta;
 }
 
@@ -59,5 +59,7 @@ function custom_class( $classes ) {
     }
     return $classes;
 }
+
+
 
 ?>
