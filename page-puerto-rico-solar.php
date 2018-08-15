@@ -32,7 +32,7 @@
                     <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-1 col-md-offset-1 col-lg-offset-2" id='intro-text'>
                         <h1>Grid by grid</h1>
                         <span class="udub-slant"><span></span></span>
-                        <p>Months after Hurricane Maria, thousands in rural Puerto Rico still lack electricity. In partnership with local communities, UW researchers are working to restore their power.</p>
+                        <p>Months after Hurricane Maria, thousands in rural Puerto Rico still lacked electricity. In partnership with local communities, UW researchers are worked to restore their power.</p>
                     </div>
                 </div>
             </div><!-- .intro-body -->
