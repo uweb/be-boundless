@@ -1,7 +1,7 @@
 <?php
         $twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/puerto-rico/twitter-card.jpg';
         $twitter_title = 'Grid by grid';
-        $twitter_description = 'Months after Hurricane Maria, thousands in rural Puerto Rico still lack electricity. In partnership with local communities, UW researchers are working to restore their power.';
+        $twitter_description = 'Months after Hurricane Maria, thousands in rural Puerto Rico still lacked electricity. In partnership with local communities, UW researchers worked to restore their power.';
         $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
         $slug = 'puerto-rico';
         $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/" . $slug . ".css' type='text/css' media='all' />";
@@ -32,7 +32,7 @@
                     <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-1 col-md-offset-1 col-lg-offset-2" id='intro-text'>
                         <h1>Grid by grid</h1>
                         <span class="udub-slant"><span></span></span>
-                        <p>Months after Hurricane Maria, thousands in rural Puerto Rico still lacked electricity. In partnership with local communities, UW researchers are worked to restore their power.</p>
+                        <p>Months after Hurricane Maria, thousands in rural Puerto Rico still lacked electricity. In partnership with local communities, UW researchers worked to restore their power.</p>
                     </div>
                 </div>
             </div><!-- .intro-body -->
