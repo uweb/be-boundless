@@ -18,10 +18,16 @@ global $styles;
 		<meta property="og:type" content="website" />
 
 		<?php
-			$meta = custom_meta($meta, get_post());
-			foreach ($meta as $key => $value) {
-				echo $value . PHP_EOL;
-			}
+			$post = get_post();
+
+			$title = (isset($post->title_meta) && $post->title_meta != '') ? $post->title_meta : $meta['og:title'];
+			$description = (isset($post->description_meta) && $post->description_meta != '') ? $post->description_meta : $meta['og:description'];
+			$image = (isset($post->image_meta) && $post->image_meta != '') ? $post->image_meta : $meta['og:image'];
+
+			echo '<meta name="description" content="' . $description . '"/>' . PHP_EOL;
+			echo '<meta property="og:title" content="' . $title . '"/>' . PHP_EOL;
+			echo '<meta property="og:description" content="' . $description . '"/>' . PHP_EOL;
+			echo '<meta property="og:image" content="' . $image . '"/>' . PHP_EOL;
 		 ?>
 
 		<meta name="viewport" content="initial-scale=.95 width=device-width maximum-scale=1 user-scalable=no" />

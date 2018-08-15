@@ -20,37 +20,15 @@ function twitter_card($photo, $title, $descrpition) {
 
 	$meta = array();
 	if ($title) {
-		$meta['og:title'] = '<meta property="og:title" content="' . $title . '"/>';
-		$meta['og:description'] = '<meta property="og:description" content="' . $descrpition . '"/>';
-		$meta['description'] = '<meta name="description" content="' . $descrpition . '"/>';
-		$meta['og:image'] = '<meta property="og:image" content="' . $photo . '"/>';
+		$meta['og:title'] = $title;
+		$meta['og:description'] = $descrpition;
+		$meta['og:image'] = $photo;
 	}
 
 	return $meta;
 }
 
-// takes an array of meta tags and post information and replaces any instances
-// of the default meta tags created by the twitter card function with the custom
-// meta tags specified by the user in custom fields
-//
-// this function overrides the default twitter og meta tags
-function custom_meta($meta, $post) {
 
-	if (isset($post->title_meta)) {
-		$meta['og:title'] = '<meta property="og:title" content="' . $post->title_meta . '"/>';
-	}
-
-	if (isset($post->description_meta)) {
-		$meta['og:description'] = '<meta property="og:description" content="' . $post->description_meta . '"/>';
-		$meta['description'] = '<meta name="description" content="' . $post->description_meta . '"/>';
-	}
-
-	if (isset($post->image_meta)) {
-		$meta['og:image'] = '<meta property="og:image" content="' . $post->image_meta . '"/>';
-	}
-
-	return $meta;
-}
 
 add_filter( 'body_class', 'custom_class' );
 function custom_class( $classes ) {
