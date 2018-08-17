@@ -69,6 +69,14 @@ $(function () {
     $calloutAudioContainer.toggleClass('muted');
   }
 
+  // Toggle audio transcript
+  $(document).ready(
+    function(){
+        $("#audio-transcript-toggle").click(function () {
+            $("#audio-transcript").fadeToggle();
+        });
+    });
+
   // show / hide description text in profiles and photos sections
   // var $moreBtns = $('#section-profiles .item, #section-photos .item')
 

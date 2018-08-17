@@ -556,12 +556,16 @@ html {
   }
 
   #mute-btn-callout {
-    bottom: 70px;
+    // bottom: 70px;
     left: 35px;
 
     &:focus {
       outline: none;
     }
+  }
+
+  #audio-transcript{
+    display:none;
   }
 
 }
@@ -633,14 +637,16 @@ html {
   .item-3 {
     z-index:3;
     .img {
-      background-image: url("../img/law/Cultural-activity-3.jpg");
+      // background-image: url("../img/law/Cultural-activity-3.jpg");
+      background-image: url("../img/law/Cultural-activity-4.jpg");
       background-position: right top;
     }
   }
   .item-4 {
     z-index:2;
     .img {
-      background-image: url("../img/law/Cultural-activity-4.jpg");
+      // background-image: url("../img/law/Cultural-activity-4.jpg");
+      background-image: url("../img/law/Cultural-activity-3.jpg");
       background-position: right top;
     }
   }
@@ -986,6 +992,10 @@ html {
   position: relative;
   min-height: 100vh;
 
+  h1{
+    color:white;
+  }
+
   .inner {
     background: transparent;
     background: rgba(0,0,0,0.56);
@@ -1175,7 +1185,8 @@ html {
                 outline: 5px solid #fff;
                 &.active-focus,
                 &.active {
-                    cursor: pointer;
+                    // cursor: pointer;
+                    cursor:default;
                     div.hider {
                             .scale(1,1);
                             opacity: 1;
@@ -1249,7 +1260,8 @@ html {
                     &:hover,
                     &:active,
                     &:focus {
-                        cursor: pointer;
+                        // cursor: pointer;
+                        cursor: default;
                         div.hider {
                                 .scale(1,1);
                                 opacity: 1;
@@ -1308,5 +1320,11 @@ html {
     pointer-events: none;
 }
 
+/* Remove scoll indicator on small height screens */
+@media screen and (max-height:701px){
+  #section-intro .scrollit{
+    display:none;
+  }
+}
 
 
