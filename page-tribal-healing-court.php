@@ -68,7 +68,7 @@
       <div class="item-3 item"></div>
       <div class="background-1 background"></div>
       <div class="background-2 background"></div>
-      <div class="background-3 background"></div>
+      <!--<div class="background-3 background"></div>-->
 		</section><!-- #section-map -->
 
     <section id="section-body">
@@ -95,9 +95,12 @@
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/law/callout-briankilgore.jpg" alt="">
                 <p class="caption no-cap">BRIAN KILGORE, &rsquo;11, serves as a prosecutor at the Tulalip Tribal Court. <a id="audio-transcript-toggle" href="javascript:void(0);">Read audio transcript</a></p>
                 <div id="audio-transcript">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum aliquid ad vitae voluptate incidunt iure cumque dolor voluptatum iste dignissimos est a pariatur ipsa qui facere cupiditate, ab molestias impedit!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci magnam error quod dicta corrupti a officiis, nihil nesciunt iste nemo natus vel laborum ratione atque incidunt alias optio facilis aliquam?</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, recusandae molestias, error nulla atque magnam ratione beatae blanditiis voluptate neque est. Unde officia, dicta vero fuga veniam accusamus omnis expedita.</p>
+                  <p>Tribes call their drug courts &ldquo;healing to wellness&rdquo; courts. States call their drug courts &ldquo;drug courts.&rdquo; They are all drug courts. They are all therapeutic courts. They are all based on the same set of best practices. And so that&rsquo;s where we get into the wellness court model. And one is that we recognize that you can punish, but you can also incentivize.</p>
+                  <p>Just looking in that room &mdash; and the difference between those folks sitting in there for their court hearings and during their court hearings, and after their court hearings &mdash; compared to regular defendants in the criminal court, they are more alive, they are more human, they are more interactive, and I think you can see the benefit of positive reinforcement.</p>
+                  <p>Regular court really kind of stops at that. It&rsquo;s like, &ldquo;OK, well you&rsquo;ve done bad and we&rsquo;ve punished you.&rdquo; And that&rsquo;s our purpose is to punish people who do bad. If you take it a step deeper &mdash; like, &ldquo;OK, well the purpose should be to protect the community or to reduce harms.&rdquo; We use incentives and sanctions, as opposed to just sanctions &mdash; or, as they would be called in the court systems, &ldquo;mostly punishments.&rdquo; It&rsquo;s not that punishment can&rsquo;t change behavior; it&rsquo;s just that we&rsquo;ve learned, maybe slower than we should have, that that&rsquo;s not really the best way to get behavior change.</p>
+                  <p>The big difference between drug courts and regular courts is that we&rsquo;ve taken that purpose of the courts, which is really a fight about whether or not you are guilty or innocent, and we have put that to the side. We&rsquo;re not concerned about that anymore. It&rsquo;s been decided: You are guilty, but, you know, we&rsquo;re going to maybe tear that up and make that go away if you are able to complete some requirements.</p>
+                  <p>And that lets us focus on where we have the shared interest, which is them living a clean and sober life, entering and maintaining recovery &mdash; not being involved in the criminal justice system anymore.</p>
+                  <p>We should be empowering people to change their lives.</p>
                 </div><!-- .transcript -->
 
                 <audio id="audio-callout" preload="auto">
@@ -276,7 +279,8 @@
           <!-- <h4 class="headline">Header 2-3</h4> -->
           <div class="inner">
             <div class="more">
-                <span class="text">Healing Lodge (qʷibilalʔtxʷ) residents and Wellness Court participants take part in a pottery-making session.</span>
+                <!--<span class="text">Healing Lodge (qʷibilalʔtxʷ) residents and Wellness Court participants take part in a pottery-making session.</span>-->
+                <span class="text">As part of art therapy, a Wellness Court participant learns how to use a pottery wheel.</span>
               </div>
           </div>
         </div>
@@ -290,7 +294,8 @@
           <!-- <h4 class="headline">Header 2-4</h4> -->
           <div class="inner">
             <div class="more">
-                <span class="text">As part of art therapy, a Wellness Court participant learns how to use a pottery wheel.</span>
+                <!--<span class="text">As part of art therapy, a Wellness Court participant learns how to use a pottery wheel.</span>-->
+                <span class="text">Healing Lodge (qʷibilalʔtxʷ) residents and Wellness Court participants take part in a pottery-making session.</span>
               </div>
           </div>
         </div>

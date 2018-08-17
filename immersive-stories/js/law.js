@@ -135,10 +135,10 @@ $(function () {
   // animation vars
   var before1 = CSSRulePlugin.getRule("#section-map .item-1 .headline:before");
   var before2 = CSSRulePlugin.getRule("#section-map .item-2 .headline:before");
-  var before3 = CSSRulePlugin.getRule("#section-map .item-3 .headline:before");
+  // var before3 = CSSRulePlugin.getRule("#section-map .item-3 .headline:before");
   var after1 = CSSRulePlugin.getRule("#section-map .item-1 .headline:after");
   var after2 = CSSRulePlugin.getRule("#section-map .item-2 .headline:after");
-  var after3 = CSSRulePlugin.getRule("#section-map .item-3 .headline:after");
+  // var after3 = CSSRulePlugin.getRule("#section-map .item-3 .headline:after");
   var tweenMapDuration = 0.5;
 
   // build tween
@@ -160,13 +160,14 @@ $(function () {
     //.to(before2, tweenMapDuration * 0.5, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, tweenMapDuration * 0.5)
     //.to(after2, tweenMapDuration * 0.5, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, tweenMapDuration * 0.5)
     .to("#section-map .item-2", tweenMapDuration * 0.625, { opacity: 0 }, tweenMapDuration * 0.875)
-    .to("#section-map .background-2", tweenMapDuration * 0.625, { scale: 1.2, opacity: 0 }, tweenMapDuration * 0.875)
+    // .to("#section-map .background-2", tweenMapDuration * 0.625, { scale: 1.2, opacity: 0 }, tweenMapDuration * 0.875)
+    .to("#section-map .background-2", tweenMapDuration * 0.625, { opacity: 1, scale: 1 }, tweenMapDuration)
 
     // section 3 in
     //.from(before3, tweenMapDuration * 0.5, { cssRule: { scaleX: 0, transformOrigin: '100% 50%' } }, tweenMapDuration)
     //.from(after3, tweenMapDuration * 0.5, { cssRule: { scaleX: 0, transformOrigin: '0% 50%' } }, tweenMapDuration)
-    .to("#section-map .item-3", tweenMapDuration * 0.625, { opacity: 1 }, tweenMapDuration)
-    .to("#section-map .background-3", tweenMapDuration * 0.625, { opacity: 1, scale: 1 }, tweenMapDuration)
+    // .to("#section-map .item-3", tweenMapDuration * 0.625, { opacity: 1 }, tweenMapDuration)
+    // .to("#section-map .background-3", tweenMapDuration * 0.625, { opacity: 1, scale: 1 }, tweenMapDuration)
 
   var sceneMap = new ScrollMagic.Scene({
       triggerElement: '#section-map',
