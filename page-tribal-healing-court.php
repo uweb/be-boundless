@@ -26,9 +26,7 @@
       <div class="inner">
         <div class="row">
   				<div class="intro-text">
-  					<!--<h1>Hoy yud dud</h1>-->
-            <!--<h1>huyadadčǝɬ</h1>-->
-            <h1>huyadad&#269;&#477;&#620;</h1>
+            <h1><img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/law/header.svg" alt="huyadadčǝɬ - Hoy yud dud" /></h1>
             <h2 class="headline">A road to recovery</h2>
   					<p>Struck by the number of nonviolent offenders imprisoned on drug charges, the Tulalip Tribes and UW Law alum Brian Kilgore are offering second chances through treatment.</p>
   				</div><!-- .col-xs-8 .col-sm-8 .col-md-8 .col-lg-8 .col-xs-offset-1 .col-md-offset-1 .col-lg-offset-2 #intro-text -->
@@ -52,6 +50,7 @@
             <p>When Everest* was 12 years old, an inline skating accident left her with a compound fracture. The excruciating break was made bearable only by Percocet, a high-octane prescription of acetaminophen and oxycodone.</p>
             <p>The combination is fairly standard but dangerously addictive. Everest, a citizen of the Tulalip Tribes in the central Puget Sound region, became dependent before she even realized it. Percocet led to meth, which quickly gave way to heroin. Fifteen years later, Everest has more than 20 drug charges on her record and jail time hanging over her head.</p>
             <p>Her story is a common one across America. But Tulalip Tribal Court prosecutor and University of Washington School of Law graduate Brian Kilgore, &rsquo;11, doesn&rsquo;t believe that jail time and a criminal record are how these stories should end &mdash; and neither does the community he serves.</p>
+            <p>Enter the Tulalip Healing to Wellness Court. Presided over by Tulalip Tribal Court chief judge and UW School of Law graduate Ron Whitener, &rsquo;94, a citizen of the Squaxin Island Tribe, the Wellness Court provides nonviolent offenders whose crimes stem from drug abuse and mental health conditions with an alternative to incarceration: real help.</p>
             <p><em class="small">*Name has been changed.</em></p>
           </div>
         </div>
@@ -75,7 +74,6 @@
       <div class="text-content container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
-            <p>Enter the Tulalip Healing to Wellness Court. Presided over by Tulalip Tribal Court chief judge and UW School of Law graduate Ron Whitener, &rsquo;94, a citizen of the Squaxin Island Tribe, the Wellness Court provides nonviolent offenders whose crimes stem from drug abuse and mental health conditions with an alternative to incarceration: real help.</p>
 
             <div class="callout left">
               <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/law/callout-ronwhitener.jpg" alt="">
@@ -385,8 +383,7 @@
 		<section id="section-end" class="text-block giving-widget arrow branded">
 			<div class="inner">
 				<div class="col-xs-8 col-xs-offset-2">
-          <!--<h1><img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/law/lushootseed.svg" alt=""></h1>-->
-          <h1>s&#477;sq'<sup>w</sup>u<sup>&#660;</sup> &#269;&#477;&#620; &#620;uhuyud<h1>
+          <h1><img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/law/footer.svg" alt="s&#477;sq'wu&#660; &#269;&#477;&#620; &#620;uhuyud"></h1>
           <h2>What you care about can change the world</h2>
           <p>The University of Washington is undertaking the most ambitious campaign in our history: Be Boundless &mdash; For Washington, For the World. By contributing to the Experiential Education Fund, you can help students gain hands-on legal experience as part of their studies at the UW School of Law.</p>
 					<div class="visible-md-block visible-lg-block">
