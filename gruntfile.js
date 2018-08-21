@@ -74,7 +74,9 @@ module.exports = function(grunt) {
          'campaign/ScrollMagic-master/scrollmagic/uncompressed/plugins/animation.gsap.js',
          'campaign/ScrollMagic-master/scrollmagic/uncompressed/plugins/debug.addIndicators.js',
          'campaign/ScrollMagic-master/js/lib/greensock/plugins/CSSPlugin.min.js',
-         'campaign/ScrollMagic-master/js/lib/greensock/plugins/CSSRulePlugin.min.js'
+         'campaign/ScrollMagic-master/js/lib/greensock/plugins/CSSRulePlugin.min.js',
+         'campaign/js/odometer-small/odometer-animate.js',
+         'campaign/js/odometer-small/odometer.min.js'
         ],
         environmentLibraries : [
           'immersive-stories/js/libraries/jquery.easings.min.js',
