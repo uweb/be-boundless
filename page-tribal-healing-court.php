@@ -83,7 +83,7 @@
             <h2 class="headline">Taking a repatriation approach</h2>
             <p>&ldquo;The traditional criminal justice system says, &lsquo;We&rsquo;re going to punish you, and you&rsquo;re going to behave differently,&rsquo;&rdquo; says Kilgore, who joined the Tulalip Office of the Reservation Attorney in 2015. But reality proves otherwise &mdash; studies show that up to 80 percent of drug abusers commit a new crime once they&rsquo;re released from prison, and 95 percent start using again.</p>
             <p>&ldquo;The tribal drug court says the reason some people commit crimes isn&rsquo;t because they&rsquo;re bad people, but because they&rsquo;re addicts,&rdquo; Kilgore continues. &ldquo;Punishment won&rsquo;t change their behavior, but resources and options and tools will help them develop into people who aren&rsquo;t going to use drugs or be back in the criminal justice system.&rdquo;</p>
-            <p>During his student internship at the philanthropy-supported Tribal Court Public Defense Clinic in 2010, Kilgore witnessed firsthand how crucial a tribal court was to the health and well-being of the Tulalip community. The clinic &mdash; a partnership between the UW and the Tulalip Tribes &mdash; offers students the chance to get hands-on experience in public defense, and Tulalip Tribes citizens receive legal representation.</p>
+            <p>As a law student in 2010, Kilgore honed his skills at the philanthropy-supported Tribal Court Public Defense Clinic, where he witnessed firsthand how crucial a tribal court was to the health and well-being of the Tulalip community. The clinic &mdash; a partnership between the UW School of Law&rsquo;s Native American Law Center and the Tulalip Tribes &mdash; offers students the chance to get hands-on experience in public defense under faculty supervision, and Tulalip Tribes citizens receive legal representation.</p>
 
             <div class="callout right">
                 <button id="mute-btn-callout" class="mute-btn">
@@ -127,103 +127,30 @@
       </div>
     </section>
 
-    <!-- <section id="section-profiles"> -->
-      <!-- Verle -->
-      <!-- <div class="item-1 item">
-        <div class="img"></div>
-        <div class="caption">
-          <div class="group">
-            <h4 class="headline">Verle Smith</h4>
-            <div class="inner">
-              <div class="more">
-                <span class="text">Healing to Wellness Court participant</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <!-- Matthew -->
-      <!-- <div class="item-2 item">
-        <div class="img"></div>
-        <div class="caption">
-          <div class="group">
-            <h4 class="headline">Matthew Pablo</h4>
-            <div class="inner">
-              <div class="more">
-                <span class="text">Healing to Wellness Court participant</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <!-- Summer -->
-      <!-- <div class="item-3 item">
-        <div class="img"></div>
-        <div class="caption">
-          <div class="group">
-            <h4 class="headline">Summer Blankenship</h4>
-            <div class="inner">
-              <div class="more">
-                <span class="text">Healing to Wellness Court participant</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <!-- Whakaadup -->
-      <!-- <div class="item-4 item">
-        <div class="img"></div>
-        <div class="caption">
-          <div class="group">
-            <h4 class="headline">Robert &lsquo;Whaa-Ka-Dup&rsquo; Monger</h4>
-            <div class="inner">
-              <div class="more">
-                <span class="text">Treatment and Cultural Specialist</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <!-- Randy -->
-      <!-- <div class="item-5 item">
-        <div class="img"></div>
-        <div class="caption">
-          <div class="group">
-            <h4 class="headline">Randy Turner</h4>
-            <div class="inner">
-              <div class="more">
-                <span class="text">Healing to Wellness Court participant</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> --><!-- #section-profiles -->
-
       <section id="profiles">
                 <div class="who-section">
                     <ul id="people">
                         <li class="pax pax-1 navy" tabindex="0">
                             <div class="hider">
-                                <h2>SUMMER BLANKENSHIP</h2>
+                                <h2>SUMMER</h2>
                                 <p>Healing to Wellness Court participant</p>
                             </div>
                         </li>
                         <li class="pax pax-2 airforce" tabindex="0">
                             <div class="hider">
-                                <h2>VERLE SMITH</h2>
+                                <h2>VERLE</h2>
                                 <p>Healing to Wellness Court participant</p>
                             </div>
                         </li>
                         <li class="pax pax-3" tabindex="0">
                             <div class="hider">
-                                <h2>MATTHEW PABLO</h2>
+                                <h2>MATTHEW</h2>
                                 <p>Healing to Wellness Court participant</p>
                             </div>
                         </li>
                         <li class="pax pax-4 navy" tabindex="0">
                             <div class="hider">
-                                <h2>ROBERT &ldquo;WHAA-KA-DUP&rdquo; MONGER</h2>
+                                <h2>ROBERT (&ldquo;WHAA-KA-DUP&rdquo;)</h2>
                                 <p>Treatment and cultural specialist</p>
                             </div>
                         </li>
@@ -321,7 +248,7 @@
           <!-- <h4 class="headline">Header 2-6</h4> -->
           <div class="inner">
             <div class="more">
-                <span class="text">Verle Smith, a Wellness Court participant, makes a drum as his children look on.</span>
+                <span class="text">Verle, a Wellness Court participant, makes a drum as his children look on.</span>
               </div>
           </div>
         </div>
