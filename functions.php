@@ -54,7 +54,7 @@ function custom_meta($post, $meta) {
 	$output .= (isset($post->site_name_meta) && $post->site_name_meta != '') ? '<meta property="og:site_name" content="' . $post->site_name_meta . '" />' . PHP_EOL : '';
 
 	if(isset($post->type_meta) && $post->type_meta == 'article') {
-		$output .= (isset($post->author_meta) && $post->author_meta != '') ? 'meta property="article:author" content="' . $post->author_meta . '" />' . PHP_EOL : '';
+		$output .= (isset($post->author_meta) && $post->author_meta != '') ? '<meta property="article:author" content="' . $post->author_meta . '" />' . PHP_EOL : '';
 	}
 
 	echo $output;
