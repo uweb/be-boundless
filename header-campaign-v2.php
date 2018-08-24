@@ -10,24 +10,12 @@ global $styles;
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<meta name="keywords" content="University of Washington Boundless Campaign" />
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@UW">
-		<meta name="twitter:creator" content="@UW">
-		<meta property="og:url" content='<?php echo get_permalink( $post->ID ); ?>' />
-		<meta property="og:type" content="website" />
+		<!-- <meta property="og:url" content='<?php //echo get_permalink( $post->ID ); ?>' /> -->
 
 		<?php
 			$post = get_post();
 
-			$title = (isset($post->title_meta) && $post->title_meta != '') ? $post->title_meta : $meta['og:title'];
-			$description = (isset($post->description_meta) && $post->description_meta != '') ? $post->description_meta : $meta['og:description'];
-			$image = (isset($post->image_meta) && $post->image_meta != '') ? $post->image_meta : $meta['og:image'];
-
-			echo '<meta name="description" content="' . $description . '"/>' . PHP_EOL;
-			echo '<meta property="og:title" content="' . $title . '"/>' . PHP_EOL;
-			echo '<meta property="og:description" content="' . $description . '"/>' . PHP_EOL;
-			echo '<meta property="og:image" content="' . $image . '"/>' . PHP_EOL;
+			custom_meta($post, $meta);
 		 ?>
 
 		<meta name="viewport" content="initial-scale=.95 width=device-width maximum-scale=1 user-scalable=no" />
