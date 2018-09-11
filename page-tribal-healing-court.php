@@ -26,7 +26,7 @@
       <div class="inner">
         <div class="row">
   				<div class="intro-text">
-            <h1><img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/law/header.svg" alt="huyadadčǝɬ - Hoy yud dud" /></h1>
+            <h1><img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/law/header.svg"  Text in Salish language: 'huyadadčǝɬ - Hoy yud dud'" /></h1>
             <h2 class="headline">A road to recovery</h2>
   					<p>Struck by the number of nonviolent offenders imprisoned on drug charges, the Tulalip Tribes and UW Law alum Brian Kilgore are offering second chances through treatment.</p>
   				</div><!-- .col-xs-8 .col-sm-8 .col-md-8 .col-lg-8 .col-xs-offset-1 .col-md-offset-1 .col-lg-offset-2 #intro-text -->
@@ -76,21 +76,21 @@
           <div class="col-md-8 col-md-offset-2">
 
             <div class="callout left">
-              <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/law/callout-ronwhitener.jpg" alt="">
+              <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/law/callout-ronwhitener.jpg" alt="Photograph of Ron Whitener">
               <p class="caption no-cap">RON WHITENER, &rsquo;94, chief judge at the Tulalip Tribal Court, is a citizen of the Squaxin Island Tribe.</p>
             </div>
 
             <h2 class="headline">Taking a repatriation approach</h2>
             <p>&ldquo;The traditional criminal justice system says, &lsquo;We&rsquo;re going to punish you, and you&rsquo;re going to behave differently,&rsquo;&rdquo; says Kilgore, who joined the Tulalip Office of the Reservation Attorney in 2015. But reality proves otherwise &mdash; studies show that up to 80 percent of drug abusers commit a new crime once they&rsquo;re released from prison, and 95 percent start using again.</p>
             <p>&ldquo;The tribal drug court says the reason some people commit crimes isn&rsquo;t because they&rsquo;re bad people, but because they&rsquo;re addicts,&rdquo; Kilgore continues. &ldquo;Punishment won&rsquo;t change their behavior, but resources and options and tools will help them develop into people who aren&rsquo;t going to use drugs or be back in the criminal justice system.&rdquo;</p>
-            <p>As a law student in 2010, Kilgore honed his skills at the philanthropy-supported Tribal Court Public Defense Clinic, where he witnessed firsthand how crucial a tribal court was to the health and well-being of the Tulalip community. The clinic &mdash; a partnership between the UW School of Law&rsquo;s Native American Law Center and the Tulalip Tribes &mdash; offers students the chance to get hands-on experience in public defense under faculty supervision, and Tulalip Tribes citizens receive legal representation.</p>
-
+            <p>As a law student in 2010, Kilgore honed his skills at the Tribal Court Public Defense Clinic, where he witnessed firsthand how crucial a tribal court was to the health and well-being of the Tulalip community. After deciding to take back jurisdiction on the reservation from the state of Washington in 2001, the Tulalip Tribes approached the UW School of Law&rsquo;s Native American Law Center about establishing this partnership to address the tribes&rsquo; need for legal representation.</p>
+            <p>Since 2002, the philanthropy-supported Tribal Court Public Defense Clinic has offered students the chance to get hands-on experience in public defense under faculty supervision, while Tulalip Tribes citizens receive legal counsel. &ldquo;It&rsquo;s an incredible opportunity to contribute,&rdquo; says Brenda Williams, who co-directs the clinic. &ldquo;I try to instill students with an approach to their practice that centers justice for their clients while supporting tribal sovereignty.&rdquo;</p>
             <div class="callout right">
                 <button id="mute-btn-callout" class="mute-btn">
                     <span class="icon"></span>
                     <span class="text">Turn Audio On / Off</span>
                 </button>
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/law/callout-briankilgore.jpg" alt="">
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/law/callout-briankilgore.jpg" alt="Photograph of Brian Kilgore">
                 <p class="caption no-cap">BRIAN KILGORE, &rsquo;11, serves as a prosecutor at the Tulalip Tribal Court. <a id="audio-transcript-toggle" href="javascript:void(0);">Read audio transcript</a></p>
                 <div id="audio-transcript">
                   <p>Tribes call their drug courts &ldquo;healing to wellness&rdquo; courts. States call their drug courts &ldquo;drug courts.&rdquo; They are all drug courts. They are all therapeutic courts. They are all based on the same set of best practices. And so that&rsquo;s where we get into the wellness court model. And one is that we recognize that you can punish, but you can also incentivize.</p>
@@ -310,9 +310,9 @@
 		<section id="section-end" class="text-block giving-widget arrow branded">
 			<div class="inner">
 				<div class="col-xs-8 col-xs-offset-2">
-          <h1><img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/law/footer.svg" alt="s&#477;sq'wu&#660; &#269;&#477;&#620; &#620;uhuyud"></h1>
+          <h1><img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/law/footer.svg" alt="Text in Salish language: 's&#477;sq'wu&#660; &#269;&#477;&#620; &#620;uhuyud'"></h1>
           <h2>What you care about can change the world</h2>
-          <p>The University of Washington is undertaking the most ambitious campaign in our history: Be Boundless &mdash; For Washington, For the World. By contributing to the Experiential Education Fund, you can help students gain hands-on legal experience as part of their studies at the UW School of Law.</p>
+          <p>The University of Washington is undertaking the most ambitious campaign in our history: Be Boundless &mdash; For Washington, For the World. By contributing to the Experiential Education Fund, you can help School of Law students gain hands-on experience and cultural perspective as they make a difference in our communities.</p>
 					<div class="visible-md-block visible-lg-block">
             <div id="immersive-give-iframe"></div>
             <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="<?php echo $storyCodes; ?>" href="#">Give now</a></span></div>
