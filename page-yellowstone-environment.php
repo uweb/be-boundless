@@ -962,7 +962,7 @@
 
 
 
- <?php //get_template_part('footer', 'campaign-v2'); ?>
+
 
     <?php echo $scripts; ?>
     <?php if($_SERVER['HTTP_HOST'] != 'localhost'){ ?>
