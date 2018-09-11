@@ -85,6 +85,7 @@ global $scripts;
 
 			  gtag('config', 'UA-15747328-1');
 			</script> -->
+
 		<?php } ?>
 	</body>
 </html>
