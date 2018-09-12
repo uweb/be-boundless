@@ -92,7 +92,7 @@ module.exports = function(grunt) {
         sourceMap: false,
         // sourceMapIncludeSources: true,
         // sourceMapIn: 'js/.tmp.boundless.js.map'
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today() %> */\n'
+        // banner: '/*! <%= pkg.name %> <%= grunt.template.today() %> */\n'
       },
       dist: {
         files: {
@@ -259,7 +259,7 @@ module.exports = function(grunt) {
             'immersive-stories/js/common.js',
             'immersive-stories/js/lity.js',
             'immersive-stories/js/slick.js',
-            'immersive-stories/js/libraries/prognroll.min.js',
+            'js/libraries/prognroll.js',
             'immersive-stories/js/stars.js',
           ],
           'campaign/js/main.min.js': [

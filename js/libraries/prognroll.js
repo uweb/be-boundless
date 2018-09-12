@@ -3,8 +3,8 @@
     $.fn.prognroll = function(options) {
 
         var settings = $.extend({
-            height: 5, //Progress bar height
-            color: "#50bcb6", //Progress bar background color
+            height: 30, //Progress bar height
+            color: "#E0E0E0", //Progress bar background color
             custom: false //If you make it true, you can add your custom div and see it's scroll progress on the page.
         }, options);
 
@@ -15,12 +15,12 @@
             $(this).data('prognroll', true);
 
             var $span = $("<span>", {
-                class: "bar"
+                class: "bar",
             });
-            $("body").prepend($span);
+            $("#scrollbar").prepend($span);
 
             $span.css({
-                position: "fixed",
+                position: "relative",
                 top: 0,
                 left: 0,
                 width: 0,

@@ -576,7 +576,7 @@ blockquote, .byline {
         opacity: 1.0;
         position: fixed;
         top: 0;
-        height: 0;
+        height: 0px;
         width: 100%;
         background-color: #ECECEC;
         overflow: hidden;
@@ -585,11 +585,13 @@ blockquote, .byline {
             height: 30px;
         }
         span {
-            height: 100%;
+            position: relative !important;
+            height: 100% !important;
             width: 0%;
             display: block;
             background-color: #E0E0E0;
             .transition(all .1s ease-in);
+            z-index: 9 !important;
         }
         .grayW {
             position: absolute;
@@ -598,7 +600,12 @@ blockquote, .byline {
             width: auto;
             left: 50%;
             .translate(-50%, 0);
+            z-index: 10;
         }
+ }
+
+ .bar {
+    background-color: #E0E0E0 !important;
  }
 
 /**********************

@@ -1,6 +1,20 @@
 $(function () {
 
   $("#main_content").prognroll();
+
+
+  // $("#scrollbar").hide(); //hide your div initially
+  var topOfOthIntro = $("#intro-vid").offset().top;  //set manually for example
+  var introHeight = $("#intro-vid").outerHeight(); //gets height of header
+    $(window).scroll(function() {
+      if($(window).scrollTop() > ( topOfOthIntro + introHeight ) ) { //scrolled past the other div?
+         $("#scrollbar").addClass('active'); //reached the desired point -- show div
+      } else {
+         $("#scrollbar").removeClass('active'); //reached the desired point -- hide div
+      }
+    });
+
+
   var $windowHeight = $(window).height();
 
   var isMobileSize = ($(window).width() < 993) ? true : false;
