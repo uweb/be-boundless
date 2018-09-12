@@ -10,7 +10,7 @@
 						<div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="<?php echo $storyCodes; ?>" href="#">Give now</a></span></div>
 						</div><!-- .visible-md-block .visible-lg-block -->
 					<div class="visible-xs-block visible-sm-block">
-						<div class="boundless-button sm dark give"><span><a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=3&source=<?php echo $storyCodes; ?>">Give now</a></span></div>
+						<div class="boundless-button sm dark give"><span><a href="https://online.gifts.washington.edu/secure?nobanner=true&page=funds&source_typ=3&source=<?php echo $storyCodes; ?>">Give now</a></span></div>
 					</div><!-- .visible-xs-block .visible-sm-block -->
 				</div><!-- .text-center -->
 			</div><!-- .col-md-10 .col-md-offset-1 .copy -->
