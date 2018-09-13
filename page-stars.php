@@ -7,8 +7,8 @@
         $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
         $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/" . $slug . ".css' type='text/css' media='all' />";
         $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/" . $slug . ".min.js' type='text/javascript'></script>";
-        $storyCodes = '';
-        $storyAppeal = 'You can help students like Tammy Teal and Ivan Cordero pursue engineering by giving to the STARS program’s [TK FUND].';
+        $storyCodes = 'STARSS';
+        $storyAppeal = 'You can help students like Tammy Teal and Ivan Cordero pursue engineering by giving to the STARS Program Student Support Fund.';
         get_header("campaign-v2");
 ?>
 
@@ -101,6 +101,7 @@
                             <p>STARS participants hit the ground running, with advising and orientation before school starts.</p>
 
                             <p>During fall quarter, they take introductory math and chemistry to prepare for upcoming prerequisite courses. Weekend study sessions help them tackle challenging classes like calculus and physics. Students also enroll in a STARS seminar on study skills, UW resources and professional development.</p>
+
                             <p>In their second year, they attend some STARS programming and meet regularly with academic advisers. But, says Cunningham, “Our job is to make sure that you don’t need us anymore.” </p>
 
                             <p>This is also when students choose their major. All STARS students are guaranteed a spot in the College of Engineering, but they must identify a specific degree program to pursue. Teal picked civil engineering, and Cordero went with aeronautics and astronautics.</p>
@@ -154,7 +155,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy">
-                            <h2>The power of a support network</h2>
+                            <h2>Expanding diversity in engineering </h2>
 
                             <p>Fifteen students from the first STARS cohort, including Teal, graduated with engineering degrees in 2018. Teal is now a transportation engineer with Jacobs Engineering Group, working on projects like the revitalization of the downtown Seattle waterfront. </p>
 
@@ -164,7 +165,7 @@
 
                             <p>STARS is clearly making an impact on all its participants: <strong>84 percent of students enrolled in the program stick with engineering through their junior year, compared to 24 percent of non-STARS students.</strong></p>
 
-                            <p>The program is also helping increase diversity in the major. Engineering is still predominantly white and male in the U.S., but <strong>half of STARS students come from underrepresented minority backgrounds.</strong> </p>
+                            <p>The program is also helping increase diversity in the major. Engineering is still predominantly white and male in the U.S., but <strong>half of STARS students come from underrepresented minority backgrounds.</strong></p>
 
                             <p>As engineering continues to grow in popularity — and the UW freshman class keeps increasing in size — more funding will be needed for STARS to expand its cohorts. There were just 30 students in the first one, but 50 Huskies are part of the current cohort, and Cunningham hopes to enroll even more in 2019.</p>
 
