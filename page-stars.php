@@ -49,7 +49,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy">
-                            <blockquote class="blockquote-bold">Fewer than half of all first-year students who enter the University of Washington planning to study engineering will earn a degree in the field — and for students from underserved and low-income communities, that number drops even further.</blockquote>
+                            <blockquote class="blockquote-bold"><span>Fewer than half of all first-year students who enter the University of Washington planning to study engineering will earn a degree in the field — and for students from <strong>underserved and low-income communities</strong>, that number drops even further. <!-- <div class="after"></div> --></span></blockquote>
 
                             <p>One likely cause? “These students are not getting the same level of high school education as peers from highly resourced schools,” says Sonya Cunningham, director of the STARS program at the UW’s College of Engineering. </p>
 
@@ -80,15 +80,67 @@
 
 
             <!-- Tammy's quote + video -->
-            <section>
+            <section class="image-slide left-img">
+                <!-- <div class="container"> -->
+                    <div class="slide-content">
+                        <blockquote>
+                            I know that without STARS, I wouldn't be an engineer. <br />
+                            <cite>— Tammy Teal</cite>
+                        </blockquote>
+                    </div>
+                <!-- </div> -->
+                <div class="photo arrow-right">
 
+                    <a data-lity href="//vimeo.com/286270367/6da8dccb29" class="center-block play">
+                        <img class="responsive-img" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/stars/tammy.jpg' ?>">
+                        <div class="playit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 150 150" class="opening-slash" aria-role="">
+                                <circle id="play-cir" fill="none" stroke="#fff" stroke-width="4.649" stroke-miterlimit="10" cx="75" cy="75" r="70"/>
+                                <path id="play-tri" fill="#fff" d="M57.767,46.187L110.382,75l-52.616,28.816"/>
+                            </svg>
+                            <span>Play Tammy's Video _</span>
+                        </div>
+                    </a>
+                </div>
             </section>
 
 
 
             <!-- Tammy's slideshow -->
             <section>
+                <div class="slick">
+                    <div>
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/1.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                    </div>
 
+                    <div>
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/2.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                    </div>
+
+                    <div>
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/3.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                    </div>
+
+                    <div>
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/4.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                    </div>
+                    <div>
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/5.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                    </div>
+
+                    <div>
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/6.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                    </div>
+
+                    <div>
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/7.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                    </div>
+
+                    <div>
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/8.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                    </div>
+
+                </div>
             </section>
 
             <!-- How STARS makes an engineering degree possible -->
@@ -114,15 +166,70 @@
 
 
             <!-- Ivan's quote + video -->
-            <section>
-
+            <section class="image-slide right-img">
+                <!-- <div class="container"> -->
+                    <div class="slide-content">
+                        <blockquote>
+                            I never thought I’d be doing the things I am now, I want a good career, so in the future I can support my parents the way they’ve supported me. <br />
+                            <cite>— Ivan Cordero</cite>
+                        </blockquote>
+                    </div>
+                <!-- </div> -->
+                <div class="photo arrow-left">
+                    <a data-lity href="//vimeo.com/286270367/6da8dccb29" class="center-block play">
+                        <img class="responsive-img" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/stars/ivan.jpg' ?>">
+                        <div class="playit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 150 150" class="opening-slash" aria-role="">
+                                <circle id="play-cir" fill="none" stroke="#474747" stroke-width="4.649" stroke-miterlimit="10" cx="75" cy="75" r="70"/>
+                                <path id="play-tri" fill="#474747" d="M57.767,46.187L110.382,75l-52.616,28.816"/>
+                            </svg>
+                            <span>Play Ivan's Video _</span>
+                        </div>
+                    </a>
+                </div>
             </section>
 
 
 
             <!-- Ivan's slideshow -->
             <section>
+                <div class="slick">
+                    <div>
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/1.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                    </div>
 
+                    <div>
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/2.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                    </div>
+
+                    <div>
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/3.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                    </div>
+
+                    <div>
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/4.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                    </div>
+                    <div>
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/5.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                    </div>
+
+                    <div>
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/6.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                    </div>
+
+                    <div>
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/7.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                    </div>
+
+                    <div>
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/8.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                    </div>
+
+                    <div>
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/9.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                    </div>
+
+                </div>
             </section>
 
 
@@ -148,7 +255,28 @@
                 </div><!-- .container -->
             </section><!-- .text-block .start .white -->
 
+            <!-- Sonya's Video -->
+            <section class="video arrow">
+                <a data-lity href="//vimeo.com/286270367/6da8dccb29" class="center-block play">
+                    <div class="container">
+                        <div class="col-md-4 col-md-offset-8">
 
+                            <blockquote>
+                                Cohort one and I both had a lot of growing pains. It was more like these are the students that I'm working with, and what is going to help them succeed?
+                                <cite>— Sonya Cunningham</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="playit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 150 150" class="opening-slash" aria-role="">
+                            <circle id="play-cir" fill="none" stroke="#fff" stroke-width="4.649" stroke-miterlimit="10" cx="75" cy="75" r="70"/>
+                            <path id="play-tri" fill="#fff" d="M57.767,46.187L110.382,75l-52.616,28.816"/>
+                        </svg>
+                        <span>Play Sonya's Video _</span>
+                    </div>
+                </a>
+            </section>
 
             <!-- Expanding diversity in engineering -->
             <section class="text-block white">
@@ -161,6 +289,24 @@
 
                             <p>“I know that without STARS, I wouldn’t be an engineer,” she says. She hopes to pay her success forward by volunteering with <a href="https://www.ewb-usa.org/" target="_blank">Engineers Without Borders</a> and providing financial assistance to her family.</p>
 
+                            <div class="slick original-slideshow">
+                                <div>
+                                    <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/slideshow/1.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                                    <p>INSERT CAPTION HERE</p>
+                                </div>
+
+                                <div>
+                                    <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/slideshow/2.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                                    <p>INSERT CAPTION HERE</p>
+                                </div>
+
+                                <div>
+                                    <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/slideshow/3.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                                    <p>INSERT CAPTION HERE</p>
+                                </div>
+
+                            </div>
+
                             <p>Cordero also has bright prospects: He finished his third internship with Boeing this summer, and he hopes to join the company full time as an engineer after graduation. “I never thought I’d be doing the things I am now,” he says. “I want a good career, so in the future I can support my parents the way they’ve supported me.”</p>
 
                             <p>STARS is clearly making an impact on all its participants: <strong>84 percent of students enrolled in the program stick with engineering through their junior year, compared to 24 percent of non-STARS students.</strong></p>
@@ -171,6 +317,7 @@
 
                             <p>With additional staff and resources, STARS can continue to help students chart a successful course in school and in life. “It can be challenging to be at a university like this without someone to support you,” says Cordero. “The STARS program does a really good job of that.”</p>
 
+                            <p><em>Originally published October 2018</em></p>
 
                         </div><!-- .col-md-10 .col-md-offset-1 .copy -->
                     </div><!-- .row -->

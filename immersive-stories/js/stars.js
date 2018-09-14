@@ -32,7 +32,7 @@ if(isMobile){ $('#immersive-body').addClass("no-hover"); }
         // var controller = new ScrollMagic.Controller();
 
 
- $('.foster-slideshow').slick({
+ $('.slick').slick({
      lazyLoad: 'ondemand',
      useTransform: true,
      dots: true,
@@ -40,16 +40,7 @@ if(isMobile){ $('#immersive-body').addClass("no-hover"); }
      speed: 300,
      slidesToShow: 1,
      slidesToScroll: 1,
- });
-
-    $('.foster-slideshow2').slick({
-     lazyLoad: 'ondemand',
-     useTransform: true,
-     dots: true,
-     infinite: false,
-     speed: 300,
-     slidesToShow: 1,
-     slidesToScroll: 1,
+     mobileFirst: true,
  });
 
 
