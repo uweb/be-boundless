@@ -13,6 +13,8 @@
 
 @pr: "../../immersive-stories/img/puerto-rico";
 
+@stars: "../../immersive-stories/img/stars";
+
 /******
     @media @phone-only{}
     @media (max-width: 500px){}
@@ -608,7 +610,7 @@ blockquote {
         padding: 0 5% 0 8%;
         blockquote {
             color: black;
-            font-size: 1.5em;
+            font-size: 1.2em;
             cite {
               color: #818181;
               display: inline-block;
@@ -678,12 +680,26 @@ blockquote {
     background-color: @gray;
     height: 500px;
     position: relative;
+    background: url(../../immersive-stories/img/stars/sonya.jpg) center center;
+    background-size: cover;
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        content: "";
+        height: 100%;
+        opacity: .5;
+        background: #5A5A5A;
+        z-index: 0;
+    }
     blockquote {
         color: white;
-        font-size: 1.3em;
+        font-size: 1.2em;
         margin-top: 60px;
+        text-shadow: 0 0 3px rgba(38,38,38,0.65);
         cite {
-          color: #818181;
+          color: white;
           display: inline-block;
           &::before {
                 content: attr(data-text);
@@ -734,7 +750,7 @@ blockquote {
             text-transform: uppercase;
             font-size: 18px;
             font-weight: bold;
-            text-shadow: 0 0 3px rgba(255,255,255,0.65);
+            text-shadow: 0 0 3px rgba(38,38,38,0.65);
             @media (max-width: 499px){
                 display: none;
             }
@@ -750,7 +766,7 @@ blockquote {
             }
             svg {
                 transform-origin: center center;
-                text-shadow: 0 0 3px rgba(255,255,255,0.65);
+                text-shadow: 0 0 3px rgba(38,38,38,0.65);
                 //.scale(1.2, 1.2);
             }
             div, span {
@@ -798,7 +814,7 @@ blockquote {
         position: absolute;
         bottom: 20px;
         right: 5px;
-        text-shadow: 0 0 3px rgba(255,255,255,0.65);
+        text-shadow: 0 0 3px rgba(38,38,38,0.65);
         color: white;
         // color: @purple;
         font-size: 18px;

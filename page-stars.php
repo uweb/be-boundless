@@ -257,7 +257,7 @@
 
             <!-- Sonya's Video -->
             <section class="video arrow">
-                <a data-lity href="//vimeo.com/286270367/6da8dccb29" class="center-block play">
+                <a data-lity href="//vimeo.com/282595440/489786cd2c" class="center-block play">
                     <div class="container">
                         <div class="col-md-4 col-md-offset-8">
 
