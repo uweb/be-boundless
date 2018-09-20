@@ -53,7 +53,7 @@
 
                             <p>One likely cause? “These students are not getting the same level of high school education as peers from highly resourced schools,” says Sonya Cunningham, director of the STARS program at the UW’s College of Engineering. </p>
 
-                            <p>Since 2013, STARS — the Washington STate Academic RedShirt Program — has provided the extra support that underserved students from Washington need to succeed in engineering. It’s also helping increase diversity in engineering at the UW. </p>
+                            <p>Since 2013, STARS — the Washington <strong>ST</strong>ate <strong>A</strong>cademic <strong>R</strong>ed<strong>S</strong>hirt Program — has provided the extra support that underserved students from Washington need to succeed in engineering. It’s also helping increase diversity in engineering at the UW. </p>
 
                             <p>Initially funded by two National Science Foundation (NSF) grants, the program was later supplemented by funding from the Washington State Opportunity Scholarship and an additional NSF grant. </p>
 
@@ -83,10 +83,8 @@
             <section class="image-slide left-img">
                 <!-- <div class="container"> -->
                     <div class="slide-content">
-                        <blockquote>
-                            I know that without STARS, I wouldn't be an engineer. <br />
-                            <cite>— Tammy Teal</cite>
-                        </blockquote>
+                        <blockquote>I know that without STARS, I wouldn't be an engineer.</blockquote>
+                        <cite>— Tammy Teal</cite>
                     </div>
                 <!-- </div> -->
                 <div class="photo arrow-right">
@@ -94,7 +92,7 @@
                     <a data-lity href="//vimeo.com/286270367/6da8dccb29" class="center-block play">
                         <img class="responsive-img" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/stars/tammy.jpg' ?>">
                         <div class="playit">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 150 150" class="opening-slash" aria-role="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150" class="opening-slash" aria-role="">
                                 <circle id="play-cir" fill="none" stroke="#fff" stroke-width="4.649" stroke-miterlimit="10" cx="75" cy="75" r="70"/>
                                 <path id="play-tri" fill="#fff" d="M57.767,46.187L110.382,75l-52.616,28.816"/>
                             </svg>
@@ -169,10 +167,8 @@
             <section class="image-slide right-img">
                 <!-- <div class="container"> -->
                     <div class="slide-content">
-                        <blockquote>
-                            I never thought I’d be doing the things I am now, I want a good career, so in the future I can support my parents the way they’ve supported me. <br />
-                            <cite>— Ivan Cordero</cite>
-                        </blockquote>
+                        <blockquote>I never thought I’d be doing the things I am now, I want a good career, so in the future I can support my parents the way they’ve supported me.</blockquote>
+                        <cite>— Ivan Cordero</cite>
                     </div>
                 <!-- </div> -->
                 <div class="photo arrow-left">
@@ -262,14 +258,14 @@
                         <div class="col-md-4 col-md-offset-8">
 
                             <blockquote>
-                                Cohort one and I both had a lot of growing pains. It was more like these are the students that I'm working with, and what is going to help them succeed?
+                                Going to college changed my life and changed the life of my family — completely and totally.
                                 <cite>— Sonya Cunningham</cite>
                             </blockquote>
                         </div>
                     </div>
 
                     <div class="playit">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 150 150" class="opening-slash" aria-role="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 150 150" class="opening-slash" aria-role="">
                             <circle id="play-cir" fill="none" stroke="#fff" stroke-width="4.649" stroke-miterlimit="10" cx="75" cy="75" r="70"/>
                             <path id="play-tri" fill="#fff" d="M57.767,46.187L110.382,75l-52.616,28.816"/>
                         </svg>
@@ -309,9 +305,9 @@
 
                             <p>Cordero also has bright prospects: He finished his third internship with Boeing this summer, and he hopes to join the company full time as an engineer after graduation. “I never thought I’d be doing the things I am now,” he says. “I want a good career, so in the future I can support my parents the way they’ve supported me.”</p>
 
-                            <p>STARS is clearly making an impact on all its participants: <strong>84 percent of students enrolled in the program stick with engineering through their junior year, compared to 24 percent of non-STARS students.</strong></p>
+                            <blockquote class="blockquote-bold"><span>STARS is clearly making an impact on all its participants: 84 percent of students enrolled in the program stick with engineering through their junior year, compared to 24 percent of non-STARS students.</span></blockquote>
 
-                            <p>The program is also helping increase diversity in the major. Engineering is still predominantly white and male in the U.S., but <strong>half of STARS students come from underrepresented minority backgrounds.</strong></p>
+                            <p>The program is also helping increase diversity in the major. Engineering is still predominantly white and male in the U.S., but half of STARS students come from underrepresented minority backgrounds.</p>
 
                             <p>As engineering continues to grow in popularity — and the UW freshman class keeps increasing in size — more funding will be needed for STARS to expand its cohorts. There were just 30 students in the first one, but 50 Huskies are part of the current cohort, and Cunningham hopes to enroll even more in 2019.</p>
 

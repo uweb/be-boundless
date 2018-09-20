@@ -283,7 +283,7 @@ blockquote {
  * Scrollbar and Scrollbar *
  ***************************/
  #scrollbar, .bar {
-        z-index: 10;
+        z-index: 900;
         opacity: 1.0;
         position: fixed;
         top: 0;
@@ -302,7 +302,7 @@ blockquote {
             display: block;
             background-color: #E0E0E0;
             .transition(all .1s ease-in);
-            z-index: 9 !important;
+            z-index: 899 !important;
         }
         .grayW {
             position: absolute;
@@ -311,7 +311,7 @@ blockquote {
             width: auto;
             left: 50%;
             .translate(-50%, 0);
-            z-index: 10;
+            z-index: 900;
         }
  }
 
@@ -475,7 +475,7 @@ blockquote {
         width: 55%;                     /* No flex here, other cols take up remaining space */
 
         -moz-box-flex: 1;               /* Without this, Firefox 19- expands to widest paragraph, overrides width */
-        max-height: 500px;
+        max-height: 90vh;
         img {
             width: 100%;
             overflow: hidden;
@@ -491,31 +491,6 @@ blockquote {
             .video-caption,
             &:before {
                 .transition(all .2s);
-            }
-            svg {
-                // position: absolute;
-                // right: 0;
-                // width: 100%;
-                margin-top: 20px;
-            }
-            div {
-                // text-shadow: 0 0 3px rgba(37,37,37,0.65);
-                //width: calc(~"50vw - 200px");
-            }
-
-            span {
-                display: block;
-                // color: white;
-                color: @darkgray;
-                font-family: @uni;
-                text-transform: uppercase;
-                font-size: 18px;
-                font-weight: bold;
-                text-shadow: 0 0 3px rgba(255,255,255,0.65);
-                @media (max-width: 499px){
-                    display: none;
-                }
-
             }
             &:hover {
                 cursor: pointer;
@@ -577,10 +552,24 @@ blockquote {
             right: 5px;
             text-shadow: 0 0 3px rgba(255,255,255,0.65);
             color: white;
-            // color: @purple;
-            font-size: 18px;
             display: block;
             text-align: center;
+            // color: @purple;
+            // font-size: 26px;
+            span {
+                display: block;
+                color: white;
+                font-family: @uni;
+                text-transform: uppercase;
+                // color: @darkgray;
+                // font-size: 18px;
+                // font-weight: bold;
+                // text-shadow: 0 0 3px rgba(255,255,255,0.65);
+                @media (max-width: 499px){
+                    display: none;
+                }
+
+            }
         }
 
         @media (max-width: 768px ) {
@@ -611,13 +600,7 @@ blockquote {
         blockquote {
             color: black;
             font-size: 1.2em;
-            cite {
-              color: #818181;
-              display: inline-block;
-              &::before {
-                    content: attr(data-text);
-                  }
-            }
+            margin: 0;
             &:before, &:after {
                 content: open-quote;
                 font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
@@ -629,8 +612,16 @@ blockquote {
             &:after {
                 content: close-quote;
                 float: right;
-                margin-left: 5px;
+                margin-left: 10px;
             }
+        }
+        cite {
+            color: #818181;
+            display: inline-block;
+            font-size: 1.2em;
+        }
+        @media screen and (min-width: 1600px) {
+            width: 75%;
         }
     }
     &.right-img {
@@ -813,11 +804,11 @@ blockquote {
     .playit {
         position: absolute;
         bottom: 20px;
-        right: 5px;
+        right: 5%;
         text-shadow: 0 0 3px rgba(38,38,38,0.65);
         color: white;
         // color: @purple;
-        font-size: 18px;
+        font-size: 25px;
         display: block;
         text-align: center;
     }
