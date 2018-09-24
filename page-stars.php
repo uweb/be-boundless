@@ -107,10 +107,6 @@
                     </div>
 
                     <div>
-                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/2.jpg' ?>" alt="***********INSERT ALT TEXT**********">
-                    </div>
-
-                    <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/3.jpg' ?>" alt="***********INSERT ALT TEXT**********">
                     </div>
 
@@ -279,6 +275,10 @@
                             <p>“I know that without STARS, I wouldn’t be an engineer,” she says. She hopes to pay her success forward by volunteering with <a href="https://www.ewb-usa.org/" target="_blank">Engineers Without Borders</a> and providing financial assistance to her family.</p>
 
                             <div class="slick original-slideshow">
+
+                                <div>
+                                    <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/2.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                                </div>
                                 <div>
                                     <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/slideshow/1.jpg' ?>" alt="***********INSERT ALT TEXT**********">
                                     <p>INSERT CAPTION HERE</p>
