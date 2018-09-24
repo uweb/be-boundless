@@ -21,8 +21,8 @@
     <section class="intro" id="intro-vid">
         <div id="vid-overlay"></div>
         <button id="pause">Pause</button>
-        <video autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/" . $slug . "/header.jpg' ?>" class="fullscreen-bg__video" id="full-bg-video">
-            <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/" . $slug . "/header.mp4' ?>" type="video/mp4">
+        <video autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/' . $slug . '/header.jpg' ?>" class="fullscreen-bg__video" id="full-bg-video">
+            <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/' . $slug . '/header.mp4' ?>" type="video/mp4">
             </video>
             <div class="intro-body">
                 <div class="row">
@@ -87,7 +87,7 @@
                 <div class="slide-content">
                     <blockquote>I know that without STARS, I wouldn't be an engineer.</blockquote>
                     <cite>— Tammy Teal</cite>
-                    <div class="playit" data-lity href="//vimeo.com/282595440/489786cd2c" role="button" tabindex="0">
+                    <div class="playit" data-lity href="//vimeo.com/286270367/6da8dccb29" role="button" tabindex="0">
                         <span>play Tammy's video</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 150 150" class="opening-slash" aria-role="">
                             <circle id="play-cir" fill="none" stroke="#474747" stroke-width="6" stroke-miterlimit="10" cx="75" cy="75" r="60"/>
@@ -168,7 +168,7 @@
                 <div class="slide-content">
                     <blockquote>I never thought I’d be doing the things I am now, I want a good career, so in the future I can support my parents the way they’ve supported me.</blockquote>
                     <cite>— Ivan Cordero</cite>
-                    <div class="playit">
+                    <div class="playit" data-lity href="//vimeo.com/285920597/caf50b0d6c" role="button" tabindex="0">
                         <span>play Ivan's video</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 150 150" class="opening-slash" aria-role="">
                             <circle id="play-cir" fill="none" stroke="#474747" stroke-width="6" stroke-miterlimit="10" cx="75" cy="75" r="60"/>
