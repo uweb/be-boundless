@@ -81,31 +81,26 @@
 
             <!-- Tammy's quote + video -->
             <section class="image-slide left-img">
-                <!-- <div class="container"> -->
-                    <div class="slide-content">
-                        <blockquote>I know that without STARS, I wouldn't be an engineer.</blockquote>
-                        <cite>— Tammy Teal</cite>
-                    </div>
-                <!-- </div> -->
                 <div class="photo arrow-right">
-
-                    <a data-lity href="//vimeo.com/286270367/6da8dccb29" class="center-block play">
-                        <img class="responsive-img" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/stars/tammy.jpg' ?>">
-                        <div class="playit">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150" class="opening-slash" aria-role="">
-                                <circle id="play-cir" fill="none" stroke="#fff" stroke-width="4.649" stroke-miterlimit="10" cx="75" cy="75" r="70"/>
-                                <path id="play-tri" fill="#fff" d="M57.767,46.187L110.382,75l-52.616,28.816"/>
-                            </svg>
-                            <span>Play Tammy's Video _</span>
-                        </div>
-                    </a>
+                    <img class="responsive-img" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/stars/tammy.jpg' ?>">
+                </div>
+                <div class="slide-content">
+                    <blockquote>I know that without STARS, I wouldn't be an engineer.</blockquote>
+                    <cite>— Tammy Teal</cite>
+                    <div class="playit" data-lity href="//vimeo.com/282595440/489786cd2c" role="button" tabindex="0">
+                        <span>play Tammy's video</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 150 150" class="opening-slash" aria-role="">
+                            <circle id="play-cir" fill="none" stroke="#474747" stroke-width="6" stroke-miterlimit="10" cx="75" cy="75" r="60"/>
+                            <path id="play-tri" fill="#474747" d="M57.767,46.187L110.382,75l-52.616,28.816"/>
+                        </svg>
+                    </div>
                 </div>
             </section>
 
 
 
             <!-- Tammy's slideshow -->
-            <section>
+            <section class="sticky">
                 <div class="slick">
                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/1.jpg' ?>" alt="***********INSERT ALT TEXT**********">
@@ -165,23 +160,21 @@
 
             <!-- Ivan's quote + video -->
             <section class="image-slide right-img">
-                <!-- <div class="container"> -->
-                    <div class="slide-content">
-                        <blockquote>I never thought I’d be doing the things I am now, I want a good career, so in the future I can support my parents the way they’ve supported me.</blockquote>
-                        <cite>— Ivan Cordero</cite>
-                    </div>
-                <!-- </div> -->
                 <div class="photo arrow-left">
                     <a data-lity href="//vimeo.com/286270367/6da8dccb29" class="center-block play">
                         <img class="responsive-img" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/stars/ivan.jpg' ?>">
-                        <div class="playit">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 150 150" class="opening-slash" aria-role="">
-                                <circle id="play-cir" fill="none" stroke="#474747" stroke-width="4.649" stroke-miterlimit="10" cx="75" cy="75" r="70"/>
-                                <path id="play-tri" fill="#474747" d="M57.767,46.187L110.382,75l-52.616,28.816"/>
-                            </svg>
-                            <span>Play Ivan's Video _</span>
-                        </div>
                     </a>
+                </div>
+                <div class="slide-content">
+                    <blockquote>I never thought I’d be doing the things I am now, I want a good career, so in the future I can support my parents the way they’ve supported me.</blockquote>
+                    <cite>— Ivan Cordero</cite>
+                    <div class="playit">
+                        <span>play Ivan's video</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 150 150" class="opening-slash" aria-role="">
+                            <circle id="play-cir" fill="none" stroke="#474747" stroke-width="6" stroke-miterlimit="10" cx="75" cy="75" r="60"/>
+                            <path id="play-tri" fill="#474747" d="M57.767,46.187L110.382,75l-52.616,28.816"/>
+                        </svg>
+                    </div>
                 </div>
             </section>
 
@@ -269,7 +262,7 @@
                             <circle id="play-cir" fill="none" stroke="#fff" stroke-width="4.649" stroke-miterlimit="10" cx="75" cy="75" r="70"/>
                             <path id="play-tri" fill="#fff" d="M57.767,46.187L110.382,75l-52.616,28.816"/>
                         </svg>
-                        <span>Play Sonya's Video _</span>
+                        <span>Play Sonya's Video</span>
                     </div>
                 </a>
             </section>

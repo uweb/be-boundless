@@ -6,7 +6,6 @@ $(function () {
 
     $("#main_content").prognroll();
 
-
     // $("#scrollbar").hide(); //hide your div initially
     var topOfOthIntro = $("#intro-vid").offset().top;  //set manually for example
     var introHeight = $("#intro-vid").outerHeight(); //gets height of header
@@ -38,6 +37,7 @@ if(isMobile){ $('#immersive-body').addClass("no-hover"); }
      dots: true,
      infinite: true,
      speed: 300,
+     fade: true,
      slidesToShow: 1,
      slidesToScroll: 1,
      mobileFirst: true,
