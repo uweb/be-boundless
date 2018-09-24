@@ -45,7 +45,7 @@
         <main id="main_content">
 
             <!-- INTRO PARAGRAPHS -->
-            <section class="text-block white">
+            <section class="text-block">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy">
@@ -100,7 +100,7 @@
 
 
             <!-- Tammy's slideshow -->
-            <section class="sticky">
+            <section  class="slideshow">
                 <div class="slick">
                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/1.jpg' ?>" alt="***********INSERT ALT TEXT**********">
@@ -137,7 +137,7 @@
             </section>
 
             <!-- How STARS makes an engineering degree possible -->
-            <section class="text-block white">
+            <section class="text-block">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy">
@@ -154,7 +154,7 @@
                         </div><!-- .col-md-10 .col-md-offset-1 .copy -->
                     </div><!-- .row -->
                 </div><!-- .container -->
-            </section><!-- .text-block .start .white -->
+            </section><!-- .text-block -->
 
 
 
@@ -181,7 +181,7 @@
 
 
             <!-- Ivan's slideshow -->
-            <section>
+            <section class="slideshow">
                 <div class="slick">
                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/1.jpg' ?>" alt="***********INSERT ALT TEXT**********">
@@ -224,7 +224,7 @@
 
 
             <!-- The power of a support network -->
-            <section class="text-block white">
+            <section class="text-block">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy">
@@ -242,7 +242,7 @@
                         </div><!-- .col-md-10 .col-md-offset-1 .copy -->
                     </div><!-- .row -->
                 </div><!-- .container -->
-            </section><!-- .text-block .start .white -->
+            </section><!-- .text-block -->
 
             <!-- Sonya's Video -->
             <section class="video arrow">
@@ -268,7 +268,7 @@
             </section>
 
             <!-- Expanding diversity in engineering -->
-            <section class="text-block white">
+            <section class="text-block ">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy">
@@ -311,7 +311,7 @@
                         </div><!-- .col-md-10 .col-md-offset-1 .copy -->
                     </div><!-- .row -->
                 </div><!-- .container -->
-            </section><!-- .text-block .start .white -->
+            </section><!-- .text-block -->
 
 
         </main><!-- #main_content -->
