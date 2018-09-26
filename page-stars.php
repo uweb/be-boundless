@@ -85,8 +85,8 @@
                     <img class="responsive-img" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/stars/tammy.jpg' ?>">
                 </div>
                 <div class="slide-content">
-                    <blockquote>I know that without STARS, I wouldn't be an engineer.</blockquote>
-                    <cite>— Tammy Teal</cite>
+                    <blockquote>I know that without STARS, I wouldn’t be an engineer.</blockquote>
+                    <cite>— Tammy Teal, ’18</cite>
                     <div class="playit" data-lity href="//vimeo.com/286270367/6da8dccb29" role="button" tabindex="0">
                         <span>play Tammy&rsquo;s video</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 150 150" class="opening-slash" aria-role="">
@@ -181,8 +181,8 @@
                     <img class="responsive-img" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/stars/ivan.jpg' ?>">
                 </div>
                 <div class="slide-content">
-                    <blockquote>I never thought I’d be doing the things I am now, I want a good career, so in the future I can support my parents the way they’ve supported me.</blockquote>
-                    <cite>— Ivan Cordero</cite>
+                    <blockquote>I never thought I’d be doing the things I am now. I want a good career, so in the future I can support my parents the way they’ve supported me.</blockquote>
+                    <cite>— Ivan Cordero, Senior</cite>
                     <div class="playit" data-lity href="//vimeo.com/285920597/caf50b0d6c" role="button" tabindex="0">
                         <span>play Ivan&rsquo;s video</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 150 150" class="opening-slash" aria-role="">
