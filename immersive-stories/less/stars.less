@@ -94,9 +94,6 @@ blockquote {
         }
     }
 }
-.text-block {
-    background: transparent;
-}
 
 
 /*******************************
@@ -168,7 +165,19 @@ blockquote {
     .background-cover(cover);
     background-position: center center;
     margin-bottom: 0;
-
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: -webkit-linear-gradient(bottom left, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%);
+        background: -o-linear-gradient(bottom left, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%);
+        background: linear-gradient(to top right, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bd000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
     p {
         color: white;
         text-shadow: 0 0 3px rgba(37, 37, 37, 0.65);
@@ -179,7 +188,7 @@ blockquote {
         color: white;
         line-height: 1.1;
         text-shadow: 0 0 3px rgba(37, 37, 37, 0.65);
-        font-size: 6.5vw;
+        font-size: 5.5vw;
     }
 
     .intro-body {
@@ -230,7 +239,7 @@ blockquote {
         }
     }
     @media (max-width: 768px) {
-        background-image: url("@{pr}/header.jpg");
+        background-image: url("@{stars}/header.jpg");
         .background-size(cover);
         background-position: right center;
         background-repeat: no-repeat;
@@ -436,24 +445,6 @@ blockquote {
     }
 }
 
-/*****************
- * Giving Widget *
- *****************/
-
-// .text-block.giving-widget.branded {
-//     background-image: url("@{pr}/footer.jpg");
-//     .background-size(cover);
-//     background-position: center bottom;
-//     background-repeat: no-repeat;
-//     margin-top: 0;
-//     &.active {
-//         .background-size(cover);
-//     }
-// }
-// .arrow:after {
-//     display: none !important;
-// }
-
 
 
 /** Image slides with blockquoes */
@@ -621,6 +612,9 @@ blockquote {
     position: relative;
     background: url(../../immersive-stories/img/stars/sonya.jpg) center center;
     background-size: cover;
+    text-shadow: 0 0 3px rgba(38,38,38,0.65);
+    color: white;
+    font-size: 1.2em;
     &:before {
         position: absolute;
         top: 0;
@@ -632,18 +626,11 @@ blockquote {
         background: #5A5A5A;
         z-index: 0;
     }
+    .container {
+        padding-top: 10%;
+    }
     blockquote {
-        color: white;
-        font-size: 1.2em;
-        margin-top: 60px;
-        text-shadow: 0 0 3px rgba(38,38,38,0.65);
-        cite {
-          color: white;
-          display: inline-block;
-          &::before {
-                content: attr(data-text);
-              }
-        }
+        margin: 60px 0 0;
         &:before, &:after {
             content: open-quote;
             font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
@@ -655,8 +642,13 @@ blockquote {
         &:after {
             content: close-quote;
             float: right;
-            margin-left: 5px;
+            margin-left: 10px;
         }
+    }
+    cite {
+        color: white;
+        display: inline-block;
+        font-size: 1.2em;
     }
     a {
         // position: relative;
@@ -689,7 +681,6 @@ blockquote {
             text-transform: uppercase;
             font-size: 18px;
             font-weight: bold;
-            text-shadow: 0 0 3px rgba(38,38,38,0.65);
             @media (max-width: 499px){
                 display: none;
             }
@@ -779,3 +770,19 @@ section.slideshow .slick-slider {
 .slick-dots {
     z-index: 10;
 }
+
+/*****************
+ * Giving Widget *
+ *****************/
+
+.text-block.giving-widget.branded {
+    background-image: url("@{stars}/footer.jpg");
+    .background-size(cover);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    background-color: #505050;
+}
+// .arrow:after {
+//     display: none !important;
+// }

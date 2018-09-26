@@ -49,7 +49,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy">
-                            <blockquote class="blockquote-bold"><span>Fewer than half of all first-year students who enter the University of Washington planning to study engineering will earn a degree in the field — and for students from <strong>underserved and low-income communities</strong>, that number drops even further. <!-- <div class="after"></div> --></span></blockquote>
+                            <blockquote class="blockquote-bold"><span>Fewer than half of all first-year students who enter the University of Washington planning to study engineering will earn a degree in the field — and for students from underserved and low-income communities, that number drops even further. <!-- <div class="after"></div> --></span></blockquote>
 
                             <p>One likely cause? “These students are not getting the same level of high school education as peers from highly resourced schools,” says Sonya Cunningham, director of the STARS program at the UW’s College of Engineering. </p>
 
@@ -88,7 +88,7 @@
                     <blockquote>I know that without STARS, I wouldn't be an engineer.</blockquote>
                     <cite>— Tammy Teal</cite>
                     <div class="playit" data-lity href="//vimeo.com/286270367/6da8dccb29" role="button" tabindex="0">
-                        <span>play Tammy's video</span>
+                        <span>play Tammy&rsquo;s video</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 150 150" class="opening-slash" aria-role="">
                             <circle id="play-cir" fill="none" stroke="#474747" stroke-width="6" stroke-miterlimit="10" cx="75" cy="75" r="60"/>
                             <path id="play-tri" fill="#474747" d="M57.767,46.187L110.382,75l-52.616,28.816"/>
@@ -104,29 +104,50 @@
                 <div class="slick">
                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/1.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <div class="caption">
+                            <p>INSERT CAPTION HERE</p>
+                        </div>
                     </div>
 
                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/3.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <div class="caption">
+                            <p>INSERT CAPTION HERE</p>
+                        </div>
                     </div>
 
                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/4.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <div class="caption">
+                            <p>INSERT CAPTION HERE</p>
+                        </div>
                     </div>
                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/5.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <div class="caption">
+                            <p>INSERT CAPTION HERE</p>
+                        </div>
                     </div>
 
                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/6.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <div class="caption">
+                            <p>INSERT CAPTION HERE</p>
+                        </div>
                     </div>
 
                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/7.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <div class="caption">
+                            <p>INSERT CAPTION HERE</p>
+                        </div>
                     </div>
 
                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/8.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <div class="caption">
+                            <p>INSERT CAPTION HERE</p>
+                        </div>
                     </div>
 
                 </div>
@@ -157,15 +178,13 @@
             <!-- Ivan's quote + video -->
             <section class="image-slide right-img">
                 <div class="photo arrow-left">
-                    <a data-lity href="//vimeo.com/286270367/6da8dccb29" class="center-block play">
-                        <img class="responsive-img" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/stars/ivan.jpg' ?>">
-                    </a>
+                    <img class="responsive-img" src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/stars/ivan.jpg' ?>">
                 </div>
                 <div class="slide-content">
                     <blockquote>I never thought I’d be doing the things I am now, I want a good career, so in the future I can support my parents the way they’ve supported me.</blockquote>
                     <cite>— Ivan Cordero</cite>
                     <div class="playit" data-lity href="//vimeo.com/285920597/caf50b0d6c" role="button" tabindex="0">
-                        <span>play Ivan's video</span>
+                        <span>play Ivan&rsquo;s video</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 150 150" class="opening-slash" aria-role="">
                             <circle id="play-cir" fill="none" stroke="#474747" stroke-width="6" stroke-miterlimit="10" cx="75" cy="75" r="60"/>
                             <path id="play-tri" fill="#474747" d="M57.767,46.187L110.382,75l-52.616,28.816"/>
@@ -181,37 +200,64 @@
                 <div class="slick">
                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/1.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <div class="caption">
+                            <p>INSERT CAPTION HERE</p>
+                        </div>
                     </div>
 
                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/2.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <div class="caption">
+                            <p>INSERT CAPTION HERE</p>
+                        </div>
                     </div>
 
                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/3.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <div class="caption">
+                            <p>INSERT CAPTION HERE</p>
+                        </div>
                     </div>
 
                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/4.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <div class="caption">
+                            <p>INSERT CAPTION HERE</p>
+                        </div>
                     </div>
                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/5.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <div class="caption">
+                            <p>INSERT CAPTION HERE</p>
+                        </div>
                     </div>
 
                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/6.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <div class="caption">
+                            <p>INSERT CAPTION HERE</p>
+                        </div>
                     </div>
 
                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/7.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <div class="caption">
+                            <p>INSERT CAPTION HERE</p>
+                        </div>
                     </div>
 
                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/8.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <div class="caption">
+                            <p>INSERT CAPTION HERE</p>
+                        </div>
                     </div>
 
                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/9.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <div class="caption">
+                            <p>INSERT CAPTION HERE</p>
+                        </div>
                     </div>
 
                 </div>
@@ -248,8 +294,8 @@
 
                             <blockquote>
                                 Going to college changed my life and changed the life of my family — completely and totally.
-                                <cite>— Sonya Cunningham</cite>
                             </blockquote>
+                            <cite>— Sonya Cunningham</cite>
                         </div>
                     </div>
 
@@ -258,7 +304,7 @@
                             <circle id="play-cir" fill="none" stroke="#fff" stroke-width="4.649" stroke-miterlimit="10" cx="75" cy="75" r="70"/>
                             <path id="play-tri" fill="#fff" d="M57.767,46.187L110.382,75l-52.616,28.816"/>
                         </svg>
-                        <span>Play Sonya's Video</span>
+                        <span>Play Sonya&rsquo;s Video</span>
                     </div>
                 </a>
             </section>
@@ -278,20 +324,29 @@
 
                                 <div>
                                     <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/2.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                                    <div class="caption">
+                                        <p>INSERT CAPTION HERE</p>
+                                    </div>
                                 </div>
                                 <div>
                                     <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/slideshow/1.jpg' ?>" alt="***********INSERT ALT TEXT**********">
-                                    <p>INSERT CAPTION HERE</p>
+                                    <div class="caption">
+                                        <p>INSERT CAPTION HERE</p>
+                                    </div>
                                 </div>
 
                                 <div>
                                     <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/slideshow/2.jpg' ?>" alt="***********INSERT ALT TEXT**********">
-                                    <p>INSERT CAPTION HERE</p>
+                                    <div class="caption">
+                                        <p>INSERT CAPTION HERE</p>
+                                    </div>
                                 </div>
 
                                 <div>
                                     <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/slideshow/3.jpg' ?>" alt="***********INSERT ALT TEXT**********">
-                                    <p>INSERT CAPTION HERE</p>
+                                    <div class="caption">
+                                        <p>INSERT CAPTION HERE</p>
+                                    </div>
                                 </div>
 
                             </div>
@@ -315,8 +370,6 @@
 
 
         </main><!-- #main_content -->
-
-        <div id="popup"></div>
 
     </div><!-- #immersive-body -->
 
