@@ -10,6 +10,9 @@
     get_header("campaign-v2");
 ?>
 
+<!-- INSERT SCROLL BAR -->
+<div id="scrollbar"><span></span><img class="grayW" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/W-Logo_gray.png' ?>"></div>
+
 
 <div id="immersive-body">
 
@@ -28,7 +31,7 @@
   				<div class="intro-text">
             <h1><img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/law/header.svg"  Text in Salish language: 'huyadadčǝɬ - Hoy yud dud'" /></h1>
             <h2 class="headline">A road to recovery</h2>
-  					<p>Struck by the number of nonviolent offenders imprisoned on drug charges, the Tulalip Tribes and UW Law alum Brian Kilgore are offering second chances through treatment.</p>
+  					<p>Struck by the number of nonviolent offenders imprisoned on drug charges, the Tulalip Tribes and UW Law alumnus Brian Kilgore are offering second chances through treatment.</p>
   				</div><!-- .col-xs-8 .col-sm-8 .col-md-8 .col-lg-8 .col-xs-offset-1 .col-md-offset-1 .col-lg-offset-2 #intro-text -->
   			</div><!-- .row -->
       </div>
@@ -80,17 +83,19 @@
               <p class="caption no-cap">RON WHITENER, &rsquo;94, chief judge at the Tulalip Tribal Court, is a citizen of the Squaxin Island Tribe.</p>
             </div>
 
-            <h2 class="headline">Taking a repatriation approach</h2>
+            <h2 class="headline">Taking a therapeutic approach</h2>
             <p>&ldquo;The traditional criminal justice system says, &lsquo;We&rsquo;re going to punish you, and you&rsquo;re going to behave differently,&rsquo;&rdquo; says Kilgore, who joined the Tulalip Office of the Reservation Attorney in 2015. But reality proves otherwise &mdash; studies show that up to 80 percent of drug abusers commit a new crime once they&rsquo;re released from prison, and 95 percent start using again.</p>
             <p>&ldquo;The tribal drug court says the reason some people commit crimes isn&rsquo;t because they&rsquo;re bad people, but because they&rsquo;re addicts,&rdquo; Kilgore continues. &ldquo;Punishment won&rsquo;t change their behavior, but resources and options and tools will help them develop into people who aren&rsquo;t going to use drugs or be back in the criminal justice system.&rdquo;</p>
             <p>As a law student in 2010, Kilgore honed his skills at the Tribal Court Public Defense Clinic, where he witnessed firsthand how crucial a tribal court was to the health and well-being of the Tulalip community. After deciding to take back jurisdiction on the reservation from the state of Washington in 2001, the Tulalip Tribes approached the UW School of Law&rsquo;s Native American Law Center about establishing this partnership to address the tribes&rsquo; need for legal representation.</p>
             <p>Since 2002, the philanthropy-supported Tribal Court Public Defense Clinic has offered students the chance to get hands-on experience in public defense under faculty supervision, while Tulalip Tribes citizens receive legal counsel. &ldquo;It&rsquo;s an incredible opportunity to contribute,&rdquo; says Brenda Williams, who co-directs the clinic. &ldquo;I try to instill students with an approach to their practice that centers justice for their clients while supporting tribal sovereignty.&rdquo;</p>
             <div class="callout right">
-                <button id="mute-btn-callout" class="mute-btn">
-                    <span class="icon"></span>
-                    <span class="text">Turn Audio On / Off</span>
-                </button>
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/law/callout-briankilgore.jpg" alt="Photograph of Brian Kilgore">
+                <div class="photo">
+                  <img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/law/callout-briankilgore.jpg" alt="Photograph of Brian Kilgore">
+                  <button id="mute-btn-callout" class="mute-btn">
+                      <span class="icon"></span>
+                      <span class="text">Turn Audio On / Off</span>
+                  </button>
+                </div>
                 <p class="caption no-cap">BRIAN KILGORE, &rsquo;11, serves as a prosecutor at the Tulalip Tribal Court. <a id="audio-transcript-toggle" href="javascript:void(0);">Read audio transcript</a></p>
                 <div id="audio-transcript">
                   <p>Tribes call their drug courts &ldquo;healing to wellness&rdquo; courts. States call their drug courts &ldquo;drug courts.&rdquo; They are all drug courts. They are all therapeutic courts. They are all based on the same set of best practices. And so that&rsquo;s where we get into the wellness court model. And one is that we recognize that you can punish, but you can also incentivize.</p>
@@ -162,6 +167,7 @@
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <p>Participants must also appear in Wellness Court every week to check in with their team and speak face-to-face with Judge Whitener. They share how many days they&rsquo;ve been sober &mdash; often to cheers of encouragement &mdash; and talk through their successes and struggles. If it was a good week, Judge Whitener may reward them with incentives such as fewer court appearances and later curfews. After a hard week, there will likely be sanctions. Either way, the team is there to help the participant succeed.</p>
+
           <p>&ldquo;The whole goal of the program is to not have people come back through the criminal justice system,&rdquo; says Kilgore. If done right, the diversion program takes 18 months to two years to complete and ends with a case dismissal. If the participant doesn&rsquo;t complete the program, they&rsquo;re found guilty and wind up right back where they started. So there&rsquo;s nothing to lose &mdash; and everything to gain.</p>
         </div>
       </div>
@@ -261,7 +267,7 @@
         <div class="col-md-8 col-md-offset-2">
           <h2 class="headline">Connecting with tribal culture</h2>
           <p>The process is far from easy. Many participants don&rsquo;t have a support system to help them through &mdash; in fact, their social network may be part of the reason they struggle with addiction.</p>
-          <p>To that end, participants have the option of living at the Tulalip Healing Lodge, a transitional home with a cultural and spiritual slant for people who are pursuing a sober lifestyle. Under the guidance of community member Robert &ldquo;Whaa-Ka-Dup&rdquo; Monger, participants reconnect with their native roots by singing and praying in sweat lodge ceremonies, making traditional drums or weaving baskets. &ldquo;Some of them have never had somebody like me in their life; somebody who walks and talks and lives and breathes the spiritual way of life,&rdquo; says Monger, who&rsquo;s nearly 20 years sober himself. &ldquo;Some of them are hungry for it.&rdquo;</p>
+          <p>To that end, participants have the option of living at the Tulalip Healing Lodge, a transitional home with a cultural and spiritual slant for people who are pursuing a sober lifestyle. Under the guidance of community member Robert &ldquo;Whaa-Ka-Dup&rdquo; Monger, participants reconnect with their native roots by singing and praying in sweat lodge ceremonies, making traditional drums or weaving baskets. While there are other healing courts in operation, this cultural component is distinctive to Tulalip’s. &ldquo;Some of them have never had somebody like me in their life; somebody who walks and talks and lives and breathes the spiritual way of life,&rdquo; says Monger, who&rsquo;s nearly 20 years sober himself. &ldquo;Some of them are hungry for it.&rdquo;</p>
           <p>With Monger&rsquo;s help, participants work through &ldquo;The Red Road to Wellbriety,&rdquo; a book about healing written specifically for tribal culture by tribal citizens. &ldquo;I&rsquo;m very fortunate and blessed to be able to do this kind of work,&rdquo; says Monger.</p>
         </div>
       </div>
@@ -275,7 +281,7 @@
               <div class="quote-mark quote-top">"</div>
               <h1 class="headline">&ldquo;WHEN THEY BUSTED IN MY DOOR IN 1993, I DECIDED IT WAS TIME FOR ROBERT MONGER TO GET TO KNOW WHO HE WAS. SO THAT&rsquo;S WHEN I PICKED UP MY NATIVE NAME.&rdquo;</h1>
               <div class="quote-mark quote-bottom">"</div>
-              <a data-lity class="play-video" href="https://youtu.be/F5uR1Jtg_g0?rel=0" title="Learn more about Monger and the cultural component of the Healing to Wellness Court">
+              <a data-lity class="play-video" href="https://youtu.be/F5uR1Jtg_g0?&amp;rel=0" title="Learn more about Monger and the cultural component of the Healing to Wellness Court">
                 <svg id="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155.48 155.48" focusable="false">
                   <defs>
                     <style>
@@ -300,8 +306,11 @@
         <div class="col-md-8 col-md-offset-2">
           <h2 class="headline">The future of the Wellness Court</h2>
           <p>The first group of participants will graduate in 2018, and Kilgore, Monger and the rest of the Healing to Wellness Court community have great expectations for them. &ldquo;Numbers around the country show that this model is far more effective than conventional prosecution,&rdquo; says Kilgore. &ldquo;People who graduate commit new crimes at much lower rates. It&rsquo;s better for them, it&rsquo;s better for their families and it&rsquo;s better for the court system.&rdquo;</p>
-          <p>As the program expands, he hopes to serve people whose cases aren&rsquo;t qualified as high-risk or high-need, but whose challenges are just as important.</p>
+
+          <p>Participants like Everest face significant hurdles during treatment, but the Tulalip Healing to Wellness Court offers a special link to tribal culture that has inspired many of them to reconnect. As the program expands, he hopes to serve people whose cases aren&rsquo;t qualified as high-risk or high-need, but whose challenges are just as important.</p>
+
           <p>&ldquo;Almost every case we file is a result of addiction,&rdquo; says Kilgore, &ldquo;and my hope and dream is that the Healing to Wellness Court will expand to cover every one of them.&rdquo;</p>
+
           <p>Monger agrees, and he also wants to widen the program even further &mdash; to reach young adults before they start using. &ldquo;It&rsquo;s better for us to reach these youngsters before they get into the system,&rdquo; he says. &ldquo;These are human beings. We need to continue doing things differently to try to help them overcome these addictions.&rdquo;</p>
         </div>
       </div>
@@ -312,7 +321,7 @@
 				<div class="col-xs-8 col-xs-offset-2">
           <h1><img src="<?php echo get_stylesheet_directory_uri() ?>/immersive-stories/img/law/footer.svg" alt="Text in Salish language: 's&#477;sq'wu&#660; &#269;&#477;&#620; &#620;uhuyud'"></h1>
           <h2>What you care about can change the world</h2>
-          <p>The University of Washington is undertaking the most ambitious campaign in our history: Be Boundless &mdash; For Washington, For the World. By contributing to the Experiential Education Fund, you can help School of Law students gain hands-on experience and cultural perspective as they make a difference in our communities.</p>
+          <p>The University of Washington is undertaking the most ambitious campaign in our history: Be Boundless &mdash; For Washington, For the World. By supporting experiential education, you can help School of Law students gain hands-on experience and cultural perspective as they make a difference in our communities.</p>
 					<div class="visible-md-block visible-lg-block">
             <div id="immersive-give-iframe"></div>
             <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="<?php echo $storyCodes; ?>" href="#">Give now</a></span></div>

@@ -192,6 +192,32 @@ $(function () {
     .addTo(controllerLaw);
 
 
+/***************************
+* Animation: Scrollbar
+***************************/
+//animate scrollbar in on header exit (add class = active)
+var scrollIntro = new ScrollMagic.Scene({
+    triggerElement: '#main_content',
+    triggerHook: 0,
+    duration: 0
+})
+.setClassToggle('#scrollbar','active')
+.addTo(controllerLaw);
+
+ //animate scrollbar span width based off page scroll
+ var tweenScroll = new TimelineMax()
+ .to("#scrollbar span", 1, {
+    width: '100%',
+    ease: Power0.easeNone
+ }, 0);
+
+ var scrollProgress = new ScrollMagic.Scene({
+        triggerHook: 0,
+        duration: $(document).height() - $(window).height()
+    })
+ .setTween(tweenScroll)
+ .addTo(controllerLaw);
+
   /***************************
    * Animation: Body
    ***************************/
