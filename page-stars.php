@@ -102,51 +102,52 @@
             <!-- Tammy's slideshow -->
             <section  class="slideshow">
                 <div class="slick">
+
                     <div>
-                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/1.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/8.jpg' ?>" alt="Tammy and her mother">
                         <div class="caption">
-                            <p>INSERT CAPTION HERE</p>
+                            <p>Tammy Teal’s mother was diagnosed with multiple sclerosis at age 20. </p>
                         </div>
                     </div>
 
                     <div>
-                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/3.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/1.jpg' ?>" alt="Tammy Teal with her mother and brother"></img>
                         <div class="caption">
-                            <p>INSERT CAPTION HERE</p>
+                            <p>Teal and her siblings were raised by their mother in Mukilteo.</p>
                         </div>
                     </div>
 
                     <div>
-                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/4.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/3.jpg' ?>" alt="Tammy and coworker on worksite">
                         <div class="caption">
-                            <p>INSERT CAPTION HERE</p>
-                        </div>
-                    </div>
-                    <div>
-                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/5.jpg' ?>" alt="***********INSERT ALT TEXT**********">
-                        <div class="caption">
-                            <p>INSERT CAPTION HERE</p>
+                            <p>Teal was inspired to become an engineer after seeing relatives in Cambodia who didn’t have electricity or running water.</p>
                         </div>
                     </div>
 
                     <div>
-                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/6.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/4.jpg' ?>" alt="Tammy on highway">
                         <div class="caption">
-                            <p>INSERT CAPTION HERE</p>
+                            <p>Today, Teal is a transportation engineer with Jacobs Engineering Group.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/5.jpg' ?>" alt="Tammy holding notebook">
+                        <div class="caption">
+                            <p>Her current projects include working on storm water inventory mapping.</p>
                         </div>
                     </div>
 
                     <div>
-                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/7.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/6.jpg' ?>" alt="Tammy w/hair up and bun">
                         <div class="caption">
-                            <p>INSERT CAPTION HERE</p>
+                            <p>“I’m outside every day in my boots, vest and hard hat. I’m doing what I always imagined engineers do,” says Teal.</p>
                         </div>
                     </div>
 
                     <div>
-                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/8.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/7.jpg' ?>" alt="Orange sign in foreground">
                         <div class="caption">
-                            <p>INSERT CAPTION HERE</p>
+                            <p>“STARS helped me get to where I am today,” Teal says.</p>
                         </div>
                     </div>
 
@@ -199,64 +200,65 @@
             <section class="slideshow">
                 <div class="slick">
                     <div>
-                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/1.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/4.jpg' ?>" alt="Dad leaning on ladder and Ivan kneeling">
                         <div class="caption">
-                            <p>INSERT CAPTION HERE</p>
+                            <p>“I try to go home whenever I can,” says Ivan Cordero. “It makes me feel good knowing that I can help my parents.”</p>
                         </div>
                     </div>
 
                     <div>
-                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/2.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/1.jpg' ?>" alt="Ivan and his dad sitting">
                         <div class="caption">
-                            <p>INSERT CAPTION HERE</p>
+                            <p>Cordero and his father chat with an orchard manager while taking a break from the sun.</p>
                         </div>
                     </div>
 
                     <div>
-                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/3.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/3.jpg' ?>" alt="Ivan and dad on ladders">
                         <div class="caption">
-                            <p>INSERT CAPTION HERE</p>
+                            <p>Cordero and his father prune apple trees in an orchard near Yakima.</p>
                         </div>
                     </div>
 
                     <div>
-                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/4.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/2.jpg' ?>" alt="Ivan at top of ladder w/cutters">
                         <div class="caption">
-                            <p>INSERT CAPTION HERE</p>
-                        </div>
-                    </div>
-                    <div>
-                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/5.jpg' ?>" alt="***********INSERT ALT TEXT**********">
-                        <div class="caption">
-                            <p>INSERT CAPTION HERE</p>
+                            <p>Now a senior at the UW, Cordero is pursuing a degree in aerospace engineering.</p>
                         </div>
                     </div>
 
                     <div>
-                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/6.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/5.jpg' ?>" alt="Dad and Ivan carrying ladder">
                         <div class="caption">
-                            <p>INSERT CAPTION HERE</p>
+                            <p>“I want my parents to feel like they’re on this journey with me,” Cordero says.</p>
                         </div>
                     </div>
 
                     <div>
-                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/7.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/6.jpg' ?>" alt="Dad at top of ladder">
                         <div class="caption">
-                            <p>INSERT CAPTION HERE</p>
+                            <p>“We’ve worked [in the orchards] so that our children can do something more,” says Cordero’s father.</p>
                         </div>
                     </div>
 
                     <div>
-                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/8.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/8.jpg' ?>" alt="Ivan and dad leaning against crates">
                         <div class="caption">
-                            <p>INSERT CAPTION HERE</p>
+                            <p>“I want a good career, so in the future I can support my parents the way they’ve supported me,” says Cordero.</p>
                         </div>
                     </div>
 
                     <div>
-                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/9.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/7.jpg' ?>" alt="Apple">
                         <div class="caption">
-                            <p>INSERT CAPTION HERE</p>
+                            <p>Apples get their color from sun exposure, which is why workers prune the tops of apple trees.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/9.jpg' ?>" alt="Honeycrisp sign">
+                        <div class="caption">
+                            <p>On this day, Cordero and his father picked Honeycrisp apples.</p>
                         </div>
                     </div>
 
@@ -323,29 +325,29 @@
                             <div class="slick original-slideshow">
 
                                 <div>
-                                    <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/2.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                                    <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/tammy/2.jpg' ?>" alt="Tammy at worksite">
                                     <div class="caption">
-                                        <p>INSERT CAPTION HERE</p>
+                                        <p>Tammy Teal and a colleague at a work site south of Seattle.</p>
                                     </div>
                                 </div>
                                 <div>
-                                    <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/slideshow/1.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                                    <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/slideshow/1.jpg' ?>" alt="Ivan and dad sitting">
                                     <div class="caption">
-                                        <p>INSERT CAPTION HERE</p>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/slideshow/2.jpg' ?>" alt="***********INSERT ALT TEXT**********">
-                                    <div class="caption">
-                                        <p>INSERT CAPTION HERE</p>
+                                        <p>Ivan Cordero and his father at a cherry orchard near Yakima.</p>
                                     </div>
                                 </div>
 
                                 <div>
-                                    <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/slideshow/3.jpg' ?>" alt="***********INSERT ALT TEXT**********">
+                                    <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/slideshow/2.jpg' ?>" alt="Ivan at fence">
                                     <div class="caption">
-                                        <p>INSERT CAPTION HERE</p>
+                                        <p>“I could never have pictured myself doing the things I am now, like interning at Boeing,” says Cordero.</p>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/slideshow/3.jpg' ?>" alt="Cherries">
+                                    <div class="caption">
+                                        <p>Cherries at an orchard near Yakima.</p>
                                     </div>
                                 </div>
 
