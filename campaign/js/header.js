@@ -80,7 +80,8 @@ if(give){
 
 		if(isEmpty($('#give-iframe'))) {
 			$('<iframe>', {
-				src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0&appeal=19XBS&code=IMPFND',
+				// src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0&appeal=19XBS&code=IMPFND',
+				src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0&appeal=' + e.target.getAttribute('data-appeal') + '&code=' + e.target.getAttribute('data-fund'),
 				frameborder: 0,
 				width: '100%',
 				height: '100%',
@@ -107,7 +108,8 @@ if(giveNew){
 
 		if(isEmpty($('#give-iframe .container'))) {
 			$('<iframe>', {
-				src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0&appeal=19XBS&page=make&code=' + 'IMPFND' + '&amount=' + $("#cv2-header-give-amount").val().replace(/,/g, ''),
+				// src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0&appeal=19XBS&page=make&code=' + 'IMPFND' + '&amount=' + $("#cv2-header-give-amount").val().replace(/,/g, ''),
+				src: 'https://online.gifts.washington.edu/secure/?nobanner=true&activateTab=0&appeal=' + e.target.getAttribute('data-appeal') + '&page=make&code=' + e.target.getAttribute('data-fund'),
 				frameborder: 0,
 				width: '100%',
 				height: '100%',
