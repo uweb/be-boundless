@@ -19,7 +19,6 @@
 <div id="immersive-body">
 
     <section class="intro" id="intro-vid">
-        <div id="vid-overlay"></div>
         <button id="pause">Pause</button>
         <video autoplay loop muted playsinline class="media" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/' . $slug . '/header.jpg' ?>" class="fullscreen-bg__video" id="full-bg-video">
             <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/' . $slug . '/header.mp4' ?>" type="video/mp4">
@@ -183,7 +182,7 @@
                 </div>
                 <div class="slide-content">
                     <blockquote>I never thought I’d be doing the things I am now. I want a good career, so in the future I can support my parents the way they’ve supported me.</blockquote>
-                    <cite>— Ivan Cordero, Senior</cite>
+                    <cite>— Ivan Cordero, ’19</cite>
                     <div class="playit" data-lity href="//vimeo.com/285920597/caf50b0d6c" role="button" tabindex="0">
                         <span>play Ivan&rsquo;s video</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 150 150" class="opening-slash" aria-role="">
@@ -355,7 +354,7 @@
 
                             <p>Cordero also has bright prospects: He finished his third internship with Boeing this summer, and he hopes to join the company full time as an engineer after graduation. “I never thought I’d be doing the things I am now,” he says. “I want a good career, so in the future I can support my parents the way they’ve supported me.”</p>
 
-                            <blockquote class="blockquote-bold"><span>STARS is clearly making an impact on all its participants: 84 percent of students enrolled in the program stick with engineering through their junior year, compared to 24 percent of non-STARS students.</span></blockquote>
+                            <blockquote class="blockquote-bold"><span>STARS is clearly making an impact on all its participants: 84 percent of students enrolled in the program stick with engineering through their junior year, compared with 24 percent of non-STARS students.</span></blockquote>
 
                             <p>The program is also helping increase diversity in the major. Engineering is still predominantly white and male in the U.S., but half of STARS students come from underrepresented minority backgrounds.</p>
 
