@@ -71,7 +71,6 @@ if(!$storyAppealCodes || $storyAppealCodes == ''){
 							$<input type="text" id="cv2-header-give-amount" />
 							</span>*/ ?>
 							<button id="cv2-give" data-fund="<?php echo $storyCodes; ?>" data-appeal="<?php echo $storyAppealCodes; ?>">Give</button>
-							<span>Fund Codes: <?php echo $storyCodes; ?> | Appeal Codes: <?php echo $storyAppealCodes; ?></span>
 						</form>
 					</div><!-- .col-sm-8 .col-md-7 .col-lg-6 -->
 					<div class="col-sm-4 col-md-4 col-lg-4 cv2-mobile-grey">
