@@ -279,7 +279,7 @@
           <div class=" row">
             <div class="group col-sm-8 col-sm-offset-2">
               <div class="quote-mark quote-top">"</div>
-              <h1 class="headline">&ldquo;WHEN THEY BUSTED IN MY DOOR IN 1993, I DECIDED IT WAS TIME FOR ROBERT MONGER TO GET TO KNOW WHO HE WAS. SO THAT&rsquo;S WHEN I PICKED UP MY NATIVE NAME.&rdquo;</h1>
+              <h1 class="headline">WHEN THEY BUSTED IN MY DOOR IN 1993, I DECIDED IT WAS TIME FOR ROBERT MONGER TO GET TO KNOW WHO HE WAS. SO THAT&rsquo;S WHEN I PICKED UP MY NATIVE NAME.</h1>
               <div class="quote-mark quote-bottom">"</div>
               <a data-lity class="play-video" href="https://youtu.be/a2G1iH-b5vE?&amp;rel=0" title="Learn more about Monger and the cultural component of the Healing to Wellness Court">
                 <svg id="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155.48 155.48" focusable="false">
