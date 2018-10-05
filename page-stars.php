@@ -199,16 +199,16 @@
             <section class="slideshow">
                 <div class="slick">
                     <div>
-                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/4.jpg' ?>" alt="Dad leaning on ladder and Ivan kneeling">
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/ivan_plane.jpg' ?>" alt="Ivan at boeing field">
                         <div class="caption">
-                            <p>“I try to go home whenever I can,” says Ivan Cordero. “It makes me feel good knowing that I can help my parents.”</p>
+                            <p>An aerospace engineering major, Ivan Cordero has interned with Boeing and hopes to work for the company after graduating.</p>
                         </div>
                     </div>
 
                     <div>
-                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/ivan_plane.jpg' ?>" alt="Ivan at boeing field">
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/4.jpg' ?>" alt="Dad leaning on ladder and Ivan kneeling">
                         <div class="caption">
-                            <p>An aerospace engineering major, Ivan Cordero has interned with Boeing and hopes to work for the company after graduating.</p>
+                            <p>“I try to go home whenever I can,” says Ivan Cordero. “It makes me feel good knowing that I can help my parents.”</p>
                         </div>
                     </div>
 
