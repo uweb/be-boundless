@@ -86,7 +86,7 @@
                 <div class="slide-content">
                     <blockquote>I know that without STARS, I wouldn’t be an engineer.</blockquote>
                     <cite>— Tammy Teal, ’18</cite>
-                    <div class="playit" data-lity href="//vimeo.com/286270367/6da8dccb29" role="button" tabindex="0">
+                    <div class="playit" data-lity href="//youtu.be/4H8L3xOIkHI?&rel=0" role="button" tabindex="0">
                         <span>play Tammy&rsquo;s video</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 150 150" class="opening-slash" aria-role="">
                             <circle id="play-cir" fill="none" stroke="#474747" stroke-width="6" stroke-miterlimit="10" cx="75" cy="75" r="60"/>
@@ -183,7 +183,7 @@
                 <div class="slide-content">
                     <blockquote>I never thought I’d be doing the things I am now. I want a good career, so in the future I can support my parents the way they’ve supported me.</blockquote>
                     <cite>— Ivan Cordero, ’19</cite>
-                    <div class="playit" data-lity href="//vimeo.com/285920597/caf50b0d6c" role="button" tabindex="0">
+                    <div class="playit" data-lity href="//youtu.be/CwfaBkY6BUU?&rel=0" role="button" tabindex="0">
                         <span>play Ivan&rsquo;s video</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 150 150" class="opening-slash" aria-role="">
                             <circle id="play-cir" fill="none" stroke="#474747" stroke-width="6" stroke-miterlimit="10" cx="75" cy="75" r="60"/>
@@ -206,11 +206,18 @@
                     </div>
 
                     <div>
+                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/ivan_plane.jpg' ?>" alt="Ivan at boeing field">
+                        <div class="caption">
+                            <p>An aerospace engineering major, Ivan Cordero has interned with Boeing and hopes to work for the company after graduating.</p>
+                        </div>
+                    </div>
+
+<!--                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/1.jpg' ?>" alt="Ivan and his dad sitting">
                         <div class="caption">
                             <p>Cordero and his father chat with an orchard manager while taking a break from the sun.</p>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/3.jpg' ?>" alt="Ivan and dad on ladders">
@@ -233,12 +240,12 @@
                         </div>
                     </div>
 
-                    <div>
+                    <!-- <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/6.jpg' ?>" alt="Dad at top of ladder">
                         <div class="caption">
                             <p>“We’ve worked [in the orchards] so that our children can do something more,” says Cordero’s father.</p>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/8.jpg' ?>" alt="Ivan and dad leaning against crates">
@@ -247,12 +254,12 @@
                         </div>
                     </div>
 
-                    <div>
+                    <!-- <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/7.jpg' ?>" alt="Apple">
                         <div class="caption">
                             <p>Apples get their color from sun exposure, which is why workers prune the tops of apple trees.</p>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/9.jpg' ?>" alt="Honeycrisp sign">
@@ -289,16 +296,7 @@
 
             <!-- Sonya's Video -->
             <section class="video arrow">
-                <a data-lity href="//vimeo.com/282595440/489786cd2c" class="center-block play">
-                    <div class="container">
-                        <div class="col-md-4 col-md-offset-8">
-
-                            <blockquote>
-                                Going to college changed my life and changed the life of my family — completely and totally.
-                            </blockquote>
-                            <cite>— Sonya Cunningham</cite>
-                        </div>
-                    </div>
+                <a data-lity href="//youtu.be/vY3RjXNw1D0?&rel=0" class="center-block play">
 
                     <div class="playit">
                         <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 150 150" class="opening-slash" aria-role="">
@@ -308,6 +306,12 @@
                         <span>Play Sonya&rsquo;s Video</span>
                     </div>
                 </a>
+                <div class="contain">
+                    <blockquote>
+                        Going to college changed my life and changed the life of my family — completely and totally.
+                    </blockquote>
+                    <cite>— Sonya Cunningham</cite>
+                </div>
             </section>
 
             <!-- Expanding diversity in engineering -->
@@ -340,6 +344,13 @@
                                     <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/slideshow/2.jpg' ?>" alt="Ivan at fence">
                                     <div class="caption">
                                         <p>“I could never have pictured myself doing the things I am now, like interning at Boeing,” says Cordero.</p>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/6.jpg' ?>" alt="Dad at top of ladder">
+                                    <div class="caption">
+                                        <p>“We’ve worked [in the orchards] so that our children can do something more,” says Cordero’s father.</p>
                                     </div>
                                 </div>
 

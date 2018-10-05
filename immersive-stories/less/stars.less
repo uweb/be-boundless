@@ -173,10 +173,16 @@ blockquote {
         top: 0;
         height: 100%;
         width: 100%;
-        background: -webkit-linear-gradient(bottom left, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%);
-        background: -o-linear-gradient(bottom left, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%);
-        background: linear-gradient(to top right, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background: -webkit-linear-gradient(bottom left, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 37%);
+        background: -o-linear-gradient(bottom left, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 37%);
+        background: linear-gradient(to top right, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 37%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bd000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        @media screen and (max-width: 768px) {
+                background: -webkit-linear-gradient(bottom left, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%);
+                background: -o-linear-gradient(bottom left, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%);
+                background: linear-gradient(to top right, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 67%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bd000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            }
     }
     p {
         color: white;
@@ -241,7 +247,7 @@ blockquote {
     @media (max-width: 768px) {
         background-image: url("@{stars}/header.jpg");
         .background-size(cover);
-        background-position: right center;
+        background-position: center center;
         background-repeat: no-repeat;
         #vid-overlay{
         }
@@ -253,7 +259,7 @@ blockquote {
     @media @tablet-portrait-up {}
 
     @media @tablet-portait-only {
-        background-position: right center;
+        background-position: center center;
 
         .intro-body {
             position: absolute;
@@ -607,53 +613,74 @@ blockquote {
 
 /** Sonya's video section */
 .video {
-    background-color: @gray;
-    height: 500px;
+    // background-color: @gray;
     position: relative;
-    background: url(../../immersive-stories/img/stars/sonya.jpg) center center;
-    background-size: cover;
     text-shadow: 0 0 3px rgba(38,38,38,0.65);
     color: white;
     font-size: 1.2em;
-    &:before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        content: "";
-        height: 100%;
-        opacity: .5;
-        background: #5A5A5A;
-        z-index: 0;
-    }
-    .container {
-        padding-top: 10%;
-    }
-    blockquote {
-        margin: 60px 0 0;
-        &:before, &:after {
-            content: open-quote;
-            font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
-            font-size: 200%;
-            line-height: 1.1;
-            position: absolute;
-            margin-left: -35px;
-        }
-        &:after {
-            content: close-quote;
-            float: right;
-            margin-left: 10px;
-        }
-    }
-    cite {
-        color: white;
-        display: inline-block;
-        font-size: 1.2em;
+    .contain {
+       position: absolute;
+       top: 15%;
+       right: 10%;
+       width: 30%;
+       blockquote {
+           margin: 60px 0 0;
+           &:before, &:after {
+               content: open-quote;
+               font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+               font-size: 200%;
+               line-height: 1.1;
+               position: absolute;
+               margin-left: -35px;
+           }
+           &:after {
+               content: close-quote;
+               float: right;
+               margin-left: 10px;
+           }
+       }
+       cite {
+           color: white;
+           display: inline-block;
+           font-size: 1.2em;
+       }
+       @media screen and (max-width: 768px) {
+           position: relative;
+           width: auto;
+           top: 0;
+           right: 0;
+           padding: 0 5% 0 8%;
+           blockquote {
+                margin: 0;
+                // margin-left: 35px;
+                color:black;
+                text-shadow: none;
+           }
+           cite {
+                color: #818181;
+                text-shadow: none;
+           }
+       }
     }
     a {
         // position: relative;
+        background: url(../../immersive-stories/img/stars/sonya.jpg) center center;
+        background-size: cover;
         justify-content: center;
+        height: 500px;
         align-items: center;
+        position: relative;
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            content: "";
+            height: 100%;
+            opacity: .5;
+            background: #5A5A5A;
+            z-index: 0;
+        }
         svg,
         #play-cir,
         #play-tri,
@@ -682,17 +709,17 @@ blockquote {
             font-size: 18px;
             font-weight: bold;
             @media (max-width: 499px){
-                display: none;
+                // display: none;
             }
 
         }
         &:hover {
             cursor: pointer;
             #play-cir {
-                stroke: @darkgold;
+                stroke: @lightgold;
             }
             #play-tri {
-                fill: @darkgold;
+                fill: @lightgold;
             }
             svg {
                 transform-origin: center center;
@@ -700,17 +727,17 @@ blockquote {
                 //.scale(1.2, 1.2);
             }
             div, span {
-                color: @darkgold;
+                color: @lightgold;
             }
-            &:before {
-                background: @darkgold;
-            }
+            // &:before {
+            //     background: @darkgold;
+            // }
+        }
+        @media screen and (max-width: 768px) {
+            height: 250px;
         }
     }
     @media @phone-only {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         a {
             // margin-top: 0;
             svg {
@@ -723,14 +750,11 @@ blockquote {
                 // margin-right: 80px;
             }
             &:before {
-                display: none;
+                // display: none;
             }
         }
     }
     @media @tablet-portait-only {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         a {
             svg {
                 .scale(0.9,0.9);
@@ -750,6 +774,10 @@ blockquote {
         font-size: 25px;
         display: block;
         text-align: center;
+        @media (max-width: 768px) {
+            top: 20px;
+            bottom: auto;
+        }
     }
 
     @media (max-width: 768px ) {
@@ -763,8 +791,10 @@ blockquote {
     margin: 0;
 }
 
-section.slideshow .slick-slider {
-    margin-bottom: 0px;
+@media (min-width: 769px ) {
+    section.slideshow .slick-slider {
+        margin-bottom: 0px;
+    }
 }
 
 .slick-dots {
