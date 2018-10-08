@@ -93,6 +93,10 @@ blockquote {
             transform: rotate(15deg);
         }
     }
+
+    @media @phone-only {
+        font-size: 18px;
+    }
 }
 
 
@@ -159,7 +163,7 @@ blockquote {
 .intro {
     position: relative;
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
     height: calc(~"103vh - 171px");
     .background-cover(cover);
@@ -251,9 +255,9 @@ blockquote {
         background-repeat: no-repeat;
         #vid-overlay{
         }
-        video {
-            display: none;
-        }
+        // video {
+        //     display: none;
+        // }
     }
 
     @media @tablet-portrait-up {}
@@ -808,7 +812,7 @@ blockquote {
 .text-block.giving-widget.branded {
     background-image: url("@{stars}/footer.jpg");
     .background-size(cover);
-    background-position: center bottom;
+    background-position: 20% bottom;
     background-repeat: no-repeat;
     margin-top: 0;
     // background-color: #505050;
