@@ -33,7 +33,7 @@
                     <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-1 col-md-offset-1 col-lg-offset-2" id='intro-text'>
                         <h1>De red en red</h1>
                         <span class="udub-slant"><span></span></span>
-                        <p>Meses después del huracán María, miles de personas en las zonas rurales de Puerto Rico todavía carecen de electricidad. En colaboración con las comunidades locales, los investigadores de UW están trabajando para restablecer su electricidad.</p>
+                        <p>Meses después del huracán María, miles de personas en las zonas rurales de Puerto Rico todavía carecían de electricidad. En colaboración con las comunidades locales, los investigadores de UW han trabajado para restablecer su electricidad.</p>
                     </div>
                 </div>
             </div><!-- .intro-body -->
@@ -278,6 +278,8 @@
                             <p>Después de instalar la nanorred final, el equipo de UW pasó a un niño que jugaba frente a su casa, la cual carecía de electricidad. Llevaba puesto un disfraz de Capitán América y saludaba a los autos que pasaban. Una casa cercana tenía a la vista la bandera de la isla con un mensaje escrito a mano: <i>Puerto Rico se levanta</i>.</p>
 
                             <p><b>Puerto Rico rises.</b></p>
+
+                            <p><em>El día 14 de agosto de 2018, la Autoridad de Energía Eléctrica anuncio que los esfuerzos de restauración de electricidad por toda la isla de Puerto Rico se han cumplido. Pero el trabajo del equipo de UW continúa, para establecer una infraestructura de electricidad que satisfaga las necesidades de las comunidades más vulnerables; incluso cuando los desastres naturales golpeen.</em></p>
                         </div><!-- .col-md-10 .col-md-offset-1 .copy -->
                     </div><!-- .row -->
                 </div><!-- .container -->
@@ -360,6 +362,9 @@
                                 <strong>Yougjun Choe</strong>, Profesor Adjunto de Ingeniería Industrial y en Sistemas<br />
                                 <strong>Daniel Kirschen</strong>, Profesor de Ingeniería Eléctrica<br />
                                 <strong>Jessica Kaminsky</strong>, Profesora Adjunta de Ingeniería Civil y Ambiental<br />
+
+
+                                <p><em>Publicación original Mayo de 2018</em></p>
                         </div>
                     </div>
                 </div>

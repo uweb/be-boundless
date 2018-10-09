@@ -61,6 +61,7 @@ module.exports = function(grunt) {
           'immersive-stories/js/homepage-plus.js',
           'immersive-stories/js/comotion.js',
           'immersive-stories/js/puerto-rico.js',
+          'immersive-stories/js/stars.js',
           'campaign/js/main.js',
           'immersive-stories/js/education-map.js',
           'https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js',
@@ -91,7 +92,7 @@ module.exports = function(grunt) {
         sourceMap: false,
         // sourceMapIncludeSources: true,
         // sourceMapIn: 'js/.tmp.boundless.js.map'
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today() %> */\n'
+        // banner: '/*! <%= pkg.name %> <%= grunt.template.today() %> */\n'
       },
       dist: {
         files: {
@@ -226,6 +227,7 @@ module.exports = function(grunt) {
           'immersive-stories/js/law.min.js': [
             'immersive-stories/js/common.js',
             'immersive-stories/js/lity.js',
+            'immersive-stories/js/slick.js',
             'immersive-stories/js/law.js',
           ],
           'immersive-stories/js/libraries.min.js': [
@@ -252,6 +254,13 @@ module.exports = function(grunt) {
             'immersive-stories/js/slick.js',
             'immersive-stories/js/puerto-rico.js',
             'immersive-stories/js/libraries/animsition.min.js',
+          ],
+          'immersive-stories/js/stars.min.js': [
+            'immersive-stories/js/common.js',
+            'immersive-stories/js/lity.js',
+            'immersive-stories/js/slick.js',
+            'js/libraries/prognroll.js',
+            'immersive-stories/js/stars.js',
           ],
           'campaign/js/main.min.js': [
             'campaign/js/main.js',
@@ -329,6 +338,7 @@ module.exports = function(grunt) {
                 'immersive-stories/css/homepage-plus.css': 'immersive-stories/less/homepage-plus.less',
                 'immersive-stories/css/comotion.css': 'immersive-stories/less/comotion.less',
                 'immersive-stories/css/puerto-rico.css': 'immersive-stories/less/puerto-rico.less',
+                'immersive-stories/css/stars.css': 'immersive-stories/less/stars.less',
                 'campaign/css/campaign-style.css': 'campaign/**/*.less',
                 'campaign/css/header.css': 'campaign/less/header.less',
                 'campaign/css/campaignv2-style.css': 'campaign/less/campaignv2-style.less',

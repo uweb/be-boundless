@@ -1,12 +1,18 @@
 <?php
 global $meta;
 global $styles;
-
+global $storyCodes;
+global $storyAppealCodes;
+if(!$storyCodes || $storyCodes == ''){
+	$storyCodes = 'IMPFND';
+}
+if(!$storyAppealCodes || $storyAppealCodes == ''){
+	$storyAppealCodes = '19XBS';
+}
 ?>
 
 <!DOCTYPE html>
 <html class="no-js" lang="<?php echo ( is_page('research-korean-dramas-kr') ? "ko" :  ( is_page("puerto-rico-solar-es") ? "es" : "en" ) ); ?>">
-
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -17,9 +23,7 @@ global $styles;
 
 			custom_meta($post, $meta);
 		 ?>
-
 		<meta name="viewport" content="initial-scale=.95 width=device-width maximum-scale=1 user-scalable=no" />
-
 		<title><?php wp_title(' | ',TRUE,'right'); bloginfo('name'); ?></title>
 		<link rel='stylesheet' id='uw-master-css'  href='<?php echo bloginfo("template_directory") . '/style.css' ?>' type='text/css' media='all' />
 		<link rel='stylesheet' id='google-font-open-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C700italic%2C400%2C700&#038;' type='text/css' media='all' />
@@ -63,10 +67,10 @@ global $styles;
 					<div class="col-sm-8 col-md-8 col-lg-8">
 						<form role="region" aria-label="giving-widget">
 							<label for="cv2-header-give-amount">Make your gift today</label>
-							<span class="dollar">
+							<?php /*<span class="dollar">
 							$<input type="text" id="cv2-header-give-amount" />
-							</span>
-							<button id="cv2-give">Give</button>
+							</span>*/ ?>
+							<button id="cv2-give" data-fund="<?php echo $storyCodes; ?>" data-appeal="<?php echo $storyAppealCodes; ?>">Give</button>
 						</form>
 					</div><!-- .col-sm-8 .col-md-7 .col-lg-6 -->
 					<div class="col-sm-4 col-md-4 col-lg-4 cv2-mobile-grey">
@@ -80,7 +84,6 @@ global $styles;
 						<p class="header">MORE GIVING OPPORTUNITIES</p>
 					</div><!-- .col-xs-12 .col-sm-12 .col-md-12 .col-lg-12 -->
 				</div><!-- .row -->
-
 				<div class="row">
 					<div class="col-sm-4 col-md-4 col-lg-4">
 						<ul class="list-unstyled">

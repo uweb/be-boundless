@@ -37,7 +37,6 @@ global $scripts;
 									returnURL: "http://www.washington.edu/boundless/subscription-center/",
 								});
 							</script>
-							<?php /*<iframe id="campnews" src="http://depts.washington.edu/uweb/campaignnewsletter/index.php"></iframe>*/?>
 						</div><!-- .cv2-campnews -->
 					</div><!-- .cv2-col-inner -->
 				</div><!-- .col-md-7 .col-lg-5 .cv2-newsletter -->
@@ -85,6 +84,30 @@ global $scripts;
 
 			  gtag('config', 'UA-15747328-1');
 			</script> -->
+			<!-- uw munchkin -->
+			<!-- UWMunchkin.init('munchkinID', 'serviceKey', 'testIP')-->
+			<script type="text/javascript">
+				(function () {
+					var didInit = false,
+					s = document.createElement('script');
+					s.type = 'text/javascript';
+					s.async = true;
+					s.src = 'https://subscribe.gifts.washington.edu/Scripts/uwmunchkin/uwmunchkin.min.js';
+					s.onreadystatechange = function () {
+						if (this.readyState == 'complete' || this.readyState == 'loaded') {
+							initUWMunchkin();
+						}
+					};
+					s.onload = initUWMunchkin;
+					document.getElementsByTagName('head')[0].appendChild(s);
+					function initUWMunchkin() {
+						if (didInit === false) {
+							didInit = true;
+							UWMunchkin.init('131-AQO-225', '555556', null);
+						}
+					}
+				})();
+			</script>
 		<?php } ?>
 	</body>
 </html>

@@ -63,7 +63,7 @@ $(function(){
       
       if(isEmpty($immersiveGiveIframe)) {
         $('<iframe>', {
-          src: 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&source_typ=3&appeal=17XIS&source=' + e.target.getAttribute('data-fund'),
+          src: 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&source_typ=3&appeal=' + e.target.getAttribute('data-appeal') + '&source=' + e.target.getAttribute('data-fund'),
           frameborder: 0,
           width: '100%',
           height: 'auto',
@@ -90,7 +90,7 @@ $(function(){
       
       if(isEmpty($immersiveGiveIframe)) {
         $('<iframe>', {
-          src: 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&source_typ=3&appeal=17XIS&source=' + e.target.getAttribute('data-fund'),
+          src: 'https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&source_typ=3&appeal=' + e.target.getAttribute('data-appeal') + '&source=' + e.target.getAttribute('data-fund'),
           frameborder: 0,
           width: '100%',
           height: 'auto',

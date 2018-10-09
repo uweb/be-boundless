@@ -4,3 +4,4 @@ node_modules
 .tmp*
 *.map
 .DS_Store
+immersive-stories/img/stars/nope
