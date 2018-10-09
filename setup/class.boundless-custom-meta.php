@@ -19,6 +19,12 @@ class Boundless_Custom_Meta {
             'description' => 'Changes the content value of the meta og:title tag.'
         ),
         array(
+            'id' => 'tag_meta',
+            'title' => 'Custom Meta Keywords',
+            'callback' => 'add_tag_meta',
+            'description' => 'Changes the content of the keywords meta tag.'
+        ),
+        array(
             'id' => 'description_meta',
             'title' => 'Custom Description Tag',
             'callback' => 'add_description_meta_field',
@@ -59,12 +65,6 @@ class Boundless_Custom_Meta {
             'title' => 'Custom Author Tag',
             'callback' => 'add_author_field',
             'description' => 'Changes the content value fo the article:author meta tag. Only shows if the og:type meta tag is set to \'article\'.'
-        ),
-        array(
-            'id' => 'tag_meta',
-            'title' => 'Custom Meta Keywords',
-            'callback' => 'add_tag_meta',
-            'description' => 'Changes the content of the keywords meta tag.'
         ),
         array(
             'id' => 'twitter_site_meta',

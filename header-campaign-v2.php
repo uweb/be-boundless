@@ -18,11 +18,11 @@ if(!$storyAppealCodes || $storyAppealCodes == ''){
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 		<title><?php wp_title(' | ',TRUE,'right'); bloginfo('name'); ?></title>
-<?php
-$post = get_post();
+		<?php
+		$post = get_post();
 
-custom_meta($post, $meta);
-?>
+		custom_meta($post, $meta);
+		?>
 		<meta name="viewport" content="initial-scale=.95 width=device-width maximum-scale=1 user-scalable=no" />
 		<link rel='stylesheet' id='uw-master-css'  href='<?php echo bloginfo("template_directory") . '/style.css' ?>' type='text/css' media='all' />
 		<link rel='stylesheet' id='google-font-open-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C700italic%2C400%2C700&#038;' type='text/css' media='all' />
