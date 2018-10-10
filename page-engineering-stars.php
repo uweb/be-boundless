@@ -7,7 +7,14 @@
         $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
         $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/" . $slug . ".css' type='text/css' media='all' />";
         $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/" . $slug . ".min.js' type='text/javascript'></script>";
+
+        // The fund code(s) for the giving widget in a comma delimited list
         $storyCodes = 'STARSS';
+
+        // The appeal code for the story
+        $storyAppealCodes = 'IES19';
+
+        // The call to action for the giving widget
         $storyAppeal = 'You can help students like Tammy Teal and Ivan Cordero pursue engineering by giving to the STARS Program Student Support Fund.';
         get_header("campaign-v2");
 ?>
@@ -52,9 +59,9 @@
 
                             <p>One likely cause? “These students are not getting the same level of high school education as peers from highly resourced schools,” says Sonya Cunningham, director of the STARS program at the UW’s College of Engineering. </p>
 
-                            <p>Since 2013, STARS — the Washington <strong>ST</strong>ate <strong>A</strong>cademic <strong>R</strong>ed<strong>S</strong>hirt Program — has provided the extra support that underserved students from Washington need to succeed in engineering. It’s also helping increase diversity in engineering at the UW. </p>
+                            <p>Since 2013, STARS — the Washington <strong>ST</strong>ate <strong>A</strong>cademic <strong>R</strong>ed<strong>S</strong>hirt program — has provided the extra support that underserved students from Washington need to succeed in engineering. It’s also helping increase diversity in engineering at the UW. </p>
 
-                            <p>Initially funded by two National Science Foundation (NSF) grants, the program was later supplemented by funding from the Washington State Opportunity Scholarship and an additional NSF grant. </p>
+                            <p>Initially funded by a National Science Foundation (NSF) grant, the program was later supplemented by funding from the Washington State Opportunity Scholarship and an additional NSF grant. </p>
 
                             <p>Borrowing a term from college sports, STARS gives its students an additional “redshirt” year at the UW before they officially begin their engineering curricula. For Tammy Teal, ’18, and Ivan Cordero, a current senior, that year made all the difference.</p>
 
@@ -183,7 +190,7 @@
                 <div class="slide-content">
                     <blockquote>I never thought I’d be doing the things I am now. I want a good career, so in the future I can support my parents the way they’ve supported me.</blockquote>
                     <cite>— Ivan Cordero, ’19</cite>
-                    <div class="playit" data-lity href="//youtu.be/CwfaBkY6BUU?&rel=0" role="button" tabindex="0">
+                    <div class="playit" data-lity href="//youtu.be/cLRGno_3F3s?&rel=0" role="button" tabindex="0">
                         <span>play Ivan&rsquo;s video</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 150 150" class="opening-slash" aria-role="">
                             <circle id="play-cir" fill="none" stroke="#474747" stroke-width="6" stroke-miterlimit="10" cx="75" cy="75" r="60"/>
@@ -208,7 +215,7 @@
                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/4.jpg' ?>" alt="Dad leaning on ladder and Ivan kneeling">
                         <div class="caption">
-                            <p>“I try to go home whenever I can,” says Ivan Cordero. “It makes me feel good knowing that I can help my parents.”</p>
+                            <p>“I try to go home whenever I can,” says Cordero. “It makes me feel good knowing that I can help my parents.”</p>
                         </div>
                     </div>
 
@@ -229,7 +236,7 @@
                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/2.jpg' ?>" alt="Ivan at top of ladder w/cutters">
                         <div class="caption">
-                            <p>Now a senior at the UW, Cordero is pursuing a degree in aerospace engineering.</p>
+                            <p>With his entry into STARS, Cordero had the support he needed to navigate college.</p>
                         </div>
                     </div>
 
@@ -365,7 +372,7 @@
 
                             <p>Cordero also has bright prospects: He finished his third internship with Boeing this summer, and he hopes to join the company full time as an engineer after graduation. “I never thought I’d be doing the things I am now,” he says. “I want a good career, so in the future I can support my parents the way they’ve supported me.”</p>
 
-                            <blockquote class="blockquote-bold"><span>STARS is clearly making an impact on all its participants: 84 percent of students enrolled in the program stick with engineering through their junior year, compared with 24 percent of non-STARS students.</span></blockquote>
+                            <blockquote class="blockquote-bold"><span>STARS is clearly making an impact on all its participants: 95 percent of students enrolled in the program have stuck with engineering through their junior year, compared with 33 percent of students from similar backgrounds who also expressed an interest in engineering when they began at the UW.</span></blockquote>
 
                             <p>The program is also helping increase diversity in the major. Engineering is still predominantly white and male in the U.S., but half of STARS students come from underrepresented minority backgrounds.</p>
 
