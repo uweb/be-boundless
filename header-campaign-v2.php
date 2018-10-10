@@ -16,15 +16,14 @@ if(!$storyAppealCodes || $storyAppealCodes == ''){
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<meta name="keywords" content="University of Washington Boundless Campaign" />
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@UW">
-		<meta name="twitter:creator" content="@UW">
-		<meta property="og:url" content='<?php echo get_permalink( $post->ID ); ?>' />
-		<meta property="og:type" content="website" />
-		<?php echo $meta; ?>
-		<meta name="viewport" content="initial-scale=.95 width=device-width maximum-scale=1 user-scalable=no" />
+
 		<title><?php wp_title(' | ',TRUE,'right'); bloginfo('name'); ?></title>
+		<?php
+		$post = get_post();
+
+		custom_meta($post, $meta);
+		?>
+		<meta name="viewport" content="initial-scale=.95 width=device-width maximum-scale=1 user-scalable=no" />
 		<link rel='stylesheet' id='uw-master-css'  href='<?php echo bloginfo("template_directory") . '/style.css' ?>' type='text/css' media='all' />
 		<link rel='stylesheet' id='google-font-open-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C700italic%2C400%2C700&#038;' type='text/css' media='all' />
 		<link rel='stylesheet' id='uw-boundless-css'  href='<?php echo get_stylesheet_directory_uri() . '/style.css' ?>' type='text/css' media='all' />
