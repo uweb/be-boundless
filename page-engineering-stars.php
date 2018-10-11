@@ -2,7 +2,7 @@
 
         $slug = 'stars';
         $twitter_photo = "http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/" . $slug . "/twitter-card.jpg";
-        $twitter_title = 'Changing the face of engineering';
+        $twitter_title = 'Changing the future of engineering';
         $twitter_description = 'A redshirt year helps athletes gain confidence and skills. One UW program is doing the same for engineering students.';
         $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
         $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/" . $slug . ".css' type='text/css' media='all' />";
@@ -33,7 +33,7 @@
             <div class="intro-body">
                 <div class="row">
                     <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-1 col-md-offset-1 col-lg-offset-2" id='intro-text'>
-                        <h1>Changing the face of engineering</h1>
+                        <h1>Changing the future of engineering</h1>
                         <span class="udub-slant"><span></span></span>
                         <p>A redshirt year helps athletes gain confidence and skills. One UW program is doing the same for engineering students.</p>
                     </div>
