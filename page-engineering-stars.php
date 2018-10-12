@@ -55,13 +55,13 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy">
-                            <blockquote class="blockquote-bold"><span>Fewer than half of all first-year students who enter the University of Washington planning to study engineering will earn a degree in the field — and for students from underserved and low-income communities, that number drops even further. <!-- <div class="after"></div> --></span></blockquote>
+                            <blockquote class="blockquote-bold"><span>Across the country, colleges and universities are helping students from underserved communities pursue careers in engineering. But one key factor is often overlooked: how to keep supporting these students <em>after</em> they start school.</span></blockquote>
 
-                            <p>One likely cause? “These students are not getting the same level of high school education as peers from highly resourced schools,” says Sonya Cunningham, director of the STARS program at the UW’s College of Engineering. </p>
+                            <p>Only 25 percent of first-generation and low-income students who enter the UW as pre-engineers will go on to earn a degree in the field. One likely cause? “These students are not getting the same level of high school education as peers from highly resourced schools,” says Sonya Cunningham, director of the STARS program at the College of Engineering.</p>
 
                             <p>Since 2013, STARS — the Washington <strong>ST</strong>ate <strong>A</strong>cademic <strong>R</strong>ed<strong>S</strong>hirt program — has provided the extra support that underserved students from Washington need to succeed in engineering. It’s also helping increase diversity in engineering at the UW. </p>
 
-                            <p>Initially funded by a National Science Foundation (NSF) grant, the program was later supplemented by funding from the Washington State Opportunity Scholarship and an additional NSF grant. </p>
+                            <p>Initially funded by a National Science Foundation (NSF) grant, the program was later supplemented by funding from the Washington State Opportunity Scholarship and an additional NSF grant.</p>
 
                             <p>Borrowing a term from college sports, STARS gives its students an additional “redshirt” year at the UW before they officially begin their engineering curricula. For Tammy Teal, ’18, and Ivan Cordero, a current senior, that year made all the difference.</p>
 
@@ -218,13 +218,6 @@
                             <p>“I try to go home whenever I can,” says Cordero. “It makes me feel good knowing that I can help my parents.”</p>
                         </div>
                     </div>
-
-<!--                     <div>
-                        <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/1.jpg' ?>" alt="Ivan and his dad sitting">
-                        <div class="caption">
-                            <p>Cordero and his father chat with an orchard manager while taking a break from the sun.</p>
-                        </div>
-                    </div> -->
 
                     <div>
                         <img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/stars/ivan/3.jpg' ?>" alt="Ivan and dad on ladders">
