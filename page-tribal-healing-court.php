@@ -5,7 +5,14 @@
     $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
     $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/law.css' type='text/css' media='all' /><link rel='stylesheet' href='http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css' type='text/css' media='all'/><link rel='stylesheet' href='http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css' type='text/css' media='all'/>";
     $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/law.min.js' type='text/javascript'></script>";
+
+    // The fund code(s) for the giving widget in a comma delimited list
     $storyCodes = 'INDLAW,LFUNRS,LAWGEN';
+
+    // The appeal code for the story
+    $storyAppealCodes = 'ILA19';
+
+    // The call to action for the giving widget
     $storyAppeal = 'By contributing to the Native American Law Center Fund, Excellence in Law Fund, or the Law Student Scholarship Fund, you can help students gain hands-on legal experience as part of their studies at the UW School of Law.';
     get_header("campaign-v2");
 ?>
@@ -65,7 +72,7 @@
            <h2 class="headline">THE NUMBER OF PEOPLE INCARCERATED FOR NONVIOLENT DRUG OFFENSES IN THE U.S. INCREASED MORE THAN TWELVEFOLD BETWEEN 1980 AND 2011. <span class="source">SOURCE: THE NEW YORK TIMES</span></h2>
       </div>
       <div class="item-2 item">
-	         <h2 class="headline">THE WELLNESS COURT IS CHANGING THE PARADIGM.</h2>
+	         <h2 class="headline">THE TULALIP WELLNESS COURT IS CHANGING THE PARADIGM.</h2>
       </div>
       <div class="item-3 item"></div>
       <div class="background-1 background"></div>
