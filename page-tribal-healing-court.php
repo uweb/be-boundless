@@ -14,6 +14,10 @@
 
     // The call to action for the giving widget
     $storyAppeal = 'By contributing to the Native American Law Center Fund, Excellence in Law Fund, or the Law Student Scholarship Fund, you can help students gain hands-on legal experience as part of their studies at the UW School of Law.';
+
+    // Original publication month and year
+    $publishMonthYear = 'November 2018';
+
     get_header("campaign-v2");
 ?>
 
@@ -107,7 +111,7 @@
                 <div id="audio-transcript">
                   <p>Tribes call their drug courts &ldquo;healing to wellness&rdquo; courts. States call their drug courts &ldquo;drug courts.&rdquo; They are all drug courts. They are all therapeutic courts. They are all based on the same set of best practices. And so that&rsquo;s where we get into the wellness court model. And one is that we recognize that you can punish, but you can also incentivize.</p>
                   <p>Just looking in that room &mdash; and the difference between those folks sitting in there for their court hearings and during their court hearings, and after their court hearings &mdash; compared to regular defendants in the criminal court, they are more alive, they are more human, they are more interactive, and I think you can see the benefit of positive reinforcement.</p>
-                  <p>Regular court really kind of stops at that. It&rsquo;s like, &ldquo;OK, well you&rsquo;ve done bad and we&rsquo;ve punished you.&rdquo; And that&rsquo;s our purpose is to punish people who do bad. If you take it a step deeper &mdash; like, &ldquo;OK, well the purpose should be to protect the community or to reduce harms.&rdquo; We use incentives and sanctions, as opposed to just sanctions &mdash; or, as they would be called in the court systems, &ldquo;mostly punishments.&rdquo; It&rsquo;s not that punishment can&rsquo;t change behavior; it&rsquo;s just that we&rsquo;ve learned, maybe slower than we should have, that that&rsquo;s not really the best way to get behavior change.</p>
+                  <p>Regular court really kind of stops at that. It&rsquo;s like, &ldquo;OK, well, you&rsquo;ve done bad and we&rsquo;ve punished you.&rdquo; And that&rsquo;s our purpose is to punish people who do bad. If you take it a step deeper &mdash; like, &ldquo;OK, well the purpose should be to protect the community or to reduce harms.&rdquo; We use incentives and sanctions, as opposed to just sanctions &mdash; or, as they would be called in the court systems, &ldquo;mostly punishments.&rdquo; It&rsquo;s not that punishment can&rsquo;t change behavior; it&rsquo;s just that we&rsquo;ve learned, maybe slower than we should have, that that&rsquo;s not really the best way to get behavior change.</p>
                   <p>The big difference between drug courts and regular courts is that we&rsquo;ve taken that purpose of the courts, which is really a fight about whether or not you are guilty or innocent, and we have put that to the side. We&rsquo;re not concerned about that anymore. It&rsquo;s been decided: You are guilty, but, you know, we&rsquo;re going to maybe tear that up and make that go away if you are able to complete some requirements.</p>
                   <p>And that lets us focus on where we have the shared interest, which is them living a clean and sober life, entering and maintaining recovery &mdash; not being involved in the criminal justice system anymore.</p>
                   <p>We should be empowering people to change their lives.</p>
@@ -132,7 +136,7 @@
 
             <h2 class="headline">Setting a holistic path</h2>
             <p>Each week, stories of addiction come across Kilgore&rsquo;s desk, slipped inside a packet with a cover sheet from the police department outlining each offender&rsquo;s history.</p>
-            <p>If an offender meets the high-risk, high-need requirements for participating in the Wellness Court, they go up for review by the team: judge, prosecutor, defense attorney, coordinator, case manager, chemical dependency counselor, law enforcement officer and tribal community member, who helps with cultural reintegration. Everyone works together to support the participants during their journey.</p>
+            <p>If an offender meets the high-risk, high-need requirements for participating in the Wellness Court, they go up for review by the team: judge, prosecutor, defense attorney, coordinator, case manager, chemical dependency counselor, law enforcement officer and tribal community member, who supports cultural reintegration — an element that distinguishes the Tulalip Wellness Court from other state drug court programs. Everyone works together to support the participants during their journey.</p>
             <p>Candidates accepted to the five-stage diversion program typically start with 28 days of intensive inpatient treatment, then focus on finding sober housing during the early stages. By the time they reach stage four, participants are working on community service projects and taking part in education and job training.</p>
           </div>
         </div>
@@ -319,6 +323,8 @@
           <p>&ldquo;Almost every case we file is a result of addiction,&rdquo; says Kilgore, &ldquo;and my hope and dream is that the Healing to Wellness Court will expand to cover every one of them.&rdquo;</p>
 
           <p>Monger agrees, and he also wants to widen the program even further &mdash; to reach young adults before they start using. &ldquo;It&rsquo;s better for us to reach these youngsters before they get into the system,&rdquo; he says. &ldquo;These are human beings. We need to continue doing things differently to try to help them overcome these addictions.&rdquo;</p>
+
+          <p><em>Originally published <?php echo $publishMonthYear; ?></em></p>
         </div>
       </div>
     </section>

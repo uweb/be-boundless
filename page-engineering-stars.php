@@ -16,6 +16,10 @@
 
         // The call to action for the giving widget
         $storyAppeal = 'You can help students like Tammy Teal and Ivan Cordero pursue engineering by giving to the STARS Program Student Support Fund.';
+
+        // Original publication month and year
+        $publishMonthYear = 'October 2018';
+
         get_header("campaign-v2");
 ?>
 
@@ -373,7 +377,8 @@
 
                             <p>With additional staff and resources, STARS can continue to help students chart a successful course in school and in life. “It can be challenging to be at a university like this without someone to support you,” says Cordero. “The STARS program does a really good job of that.”</p>
 
-                            <p><em>Originally published October 2018</em></p>
+
+                            <p><em>Originally published <?php echo $publishMonthYear; ?></em></p>
 
                         </div><!-- .col-md-10 .col-md-offset-1 .copy -->
                     </div><!-- .row -->
