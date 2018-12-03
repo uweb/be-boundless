@@ -14,7 +14,7 @@
 
 <div id="immersive-body">
 
-<section class="intro" id="intro-vid">          
+<section class="intro" id="intro-vid">
   <!-- <div class="pic-fade"></div> -->
 
   <button id="pause">Pause</button>
@@ -28,8 +28,8 @@
               <h1><span>Havana McElvaine:</span> Changing the game</h1>
               <span class="udub-slant"><span></span></span>
               <p>A champion for racial equity and social justice, Husky women’s soccer standout Havana McElvaine, ’17, is exploring what it means to be black in America — and around the globe. </p>
-              
-          </div>          
+
+          </div>
           <div class="col-md-4 col-lg-3 col-md-offset-1 col-xs-12 col-lg-offset-1 col-xs-offset-1 play-button" >
           </div>
       </div>
@@ -67,21 +67,21 @@
                           <p>The UW was one of the first universities that recruited McElvaine, who earned her bachelor’s in sociology in 2017. “I remember sitting in Coach Gallimore’s office when I was a junior in high school and hearing her offer me a scholarship,” she says. “My mom and I just looked at each other like, ‘What? That’s <i>huge</i>.’ Someone cared enough about me doing something I loved that they were willing to support it so I could do it without any financial burden, and that’s a massive privilege.” </p>
                           <p>For McElvaine, soccer — not school — had always been her sole identity. When she became a Husky, that all changed. </p>
 
-                      </div>       
+                      </div>
                       <div class="col-md-5 col-md-offset-1">
 
                           <div class="featured-full arrow-right">
                             <img alt="Husky women’s soccer standout Havana McElvaine, ’17." title="Husky women’s soccer standout Havana McElvaine, ’17." src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ica/players.jpg' ?>">
                           </div>
 
-                      </div>                 
-                       
+                      </div>
+
                     </div>
                 </div>
-          </div> 
-        </div>   
+          </div>
+        </div>
       </section>
-      
+
       <iframe width="2560" height="1440" src="https://www.youtube.com/embed/sYfkdUA2Rxw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 
@@ -110,22 +110,22 @@
 
 <p>“That was the first time I’d ever had a professor who looked like me, and that was transformative,” she says. “Her class is what sparked my interest in sociology and looking at these problems in a really scientific, pragmatic, critical way.” </p>
 
-                      </div>                 
+                      </div>
                       <div class="col-md-5 col-md-offset-1">
                       <blockquote><span>&ldquo;</span>Havana is committed to and passionate about justice. She’s one of those students I think most professors wish they had in their class. She makes you think about the question you just asked, and think about it differently.<span>&rdquo;</span></blockquote>
                           <p class="attribute"> Alexes Harris, Professor of Sociology </p>
                       </div>
                     </div>
                 </div>
-          </div> 
-        </div>   
+          </div>
+        </div>
       </section>
 
       <section class="text-block transSection mentors-caption">
 
           <div id="photo-1"></div>
           <div id="photo-2"></div>
-      
+
           <p><span>McElvaine and her mentors <i>(from left)</i>: Lesle Gallimore, Head Coach, Husky Women’s Soccer; Dorothy Bullitt, Senior Lecturer, Evans School; Alexes Harris, Professor, Department of Sociology</span></p>
 
       </section>
@@ -158,27 +158,27 @@
 <p>“The next day, before the national anthem, Coach Gallimore looked at me and said, ‘Havana, if you want to kneel, you can,’” recalls McElvaine. “I hadn’t even thought about kneeling, but in that moment, she really knew me better than I knew myself. She enabled me to be in solidarity with a movement I cared about, and that was really powerful for me.” </p>
 
 
-                      </div>                 
+                      </div>
                       <div class="col-md-5 col-md-offset-1">
                         <blockquote><span>&ldquo;</span>Havana’s journey to figure out who she was and what she stood for was one of the most interesting examples of soul-searching I’ve witnessed in a young person.<span>&rdquo;</span></blockquote>
-                          <p class="attribute"> Lesle Gallimore, Head Coach, Husky Women’s Soccer</p>                  
-                      </div> 
+                          <p class="attribute"> Lesle Gallimore, Head Coach, Husky Women’s Soccer</p>
+                      </div>
                     </div>
                 </div>
-          </div> 
-        </div>   
+          </div>
+        </div>
       </section>
 
       <section class="text-block giving-widget-promoted">
               <div class="row">
                   <div class="first-col col-md-5 col-md-offset-4 col-sm-8 col-sm-offset-1 col-xs-offset-1 col-xs-10">
-                    <div>             
+                    <div>
                       <h2 class="headline-gold">You can be a game-changer</h2>
                       <p>Havana McElvaine is one of countless student-athletes with big dreams on the field and off — but many cannot afford to pursue them. You can help these students get the edge they need in competition, in school and in life.</p>
                     </div>
                   </div>
                   <div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-offset-1 ">
-                    <div>                                 
+                    <div>
                       <div class="boundless-button sm dark give"><span><a id="immersive-give-promoted" data-fund="CPEDGE" href="#giving-widget-promoted">Give now</a></span></div>
                       <button id="close-give">Close</button>
                     </div>
@@ -200,7 +200,7 @@
         </div>
       </section>
 
-      
+
       <section class="text-block transparent no-pad">
         <div class="container">
             <div class="row">
@@ -215,7 +215,7 @@
 <p>In a series of focus groups with black men on campus, McElvaine asked them what it meant to see these incredibly violent incidents happening in real time — over and over again. “The conversations were heavy,” says McElvaine, “but so important.” </p>
 
 
-                      </div>                 
+                      </div>
                       <div class="col-md-5 col-md-offset-1">
                         <blockquote><span>&ldquo;</span>I think to create connection, healing and togetherness, you need an ability to empathize with people who are different from you.<span>&rdquo;</span></blockquote>
                         <p class="attribute">Havana McElvaine, ’17</p>
@@ -225,17 +225,17 @@
                           <small>McElvaine and fellow student-athletes at the 47th annual Celebration, hosted by the UW Office of Minority Affairs & Diversity and the Friends of the Educational Opportunity Program.</small>
                         </div>
 
-                      </div> 
+                      </div>
                     </div>
                 </div>
-          </div> 
-        </div>   
+          </div>
+        </div>
       </section>
 
 
 
 
-  
+
       <section class="para arrow-top p-5">
         <h3><span>The opportunity <i>of a lifetime</i></span></h3>
         <div class="cutout" title="UW President Ana Mari Cauce presents McElvaine with the University of Washington Athletic Scholar award at the 47th annual Celebration.">
@@ -261,9 +261,10 @@
 <p>“I want to use this experience to immerse myself and learn all I can about black history globally,” says McElvaine, the first Husky student-athlete to be awarded the prestigious fellowship. “I want to answer questions like, ‘Is my experience here as a black woman specific to America? Is it specific to me? Is it a universal experience? How do black women around the world think about race and equity and how those things interact with gender and activism and social justice?’”</p>
 <p>Then she hopes to bring what she’s learned back home.  </p>
 <p>“I’m most excited to see how other people are finding ways to build community and connect with each other, in spite of all the challenges happening around the world. Whatever work I go into, whether that’s in athletics or some other sphere, I’m excited to inspire change and fight for social justice.” </p>
+<p><em>Update</em>: In December 2018, Havana McElvaine was awarded a prestigious Marshall Scholarship. Named for former U.S. Secretary of State George C. Marshall, these scholarships enable young American college graduates who have demonstrated exceptional scholarship and leadership to complete two fully funded years of graduate-level academic work in the United Kingdom. The University of Washington congratulates McElvaine and her family on this tremendous honor.</p>
 <p><em>Originally published September 2017</em></p>
 
-                      </div>                 
+                      </div>
                       <div class="col-md-5 col-md-offset-1">
                         <blockquote><span>&ldquo;</span>I was proud beyond belief when Havana was selected for the Bonderman. She’ll soak in each and every one of her experiences abroad, and I know that whatever she does down the road will be impactful.<span>&rdquo;</span></blockquote>
                         <p class="attribute">Lesle Gallimore, Head Coach, Husky Women’s Soccer</p>
@@ -271,11 +272,11 @@
                         <div class="featured-full arrow-right">
                           <img alt="McElvaine at home in the classroom." title="McElvaine at home in the classroom." src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ica/havana.jpg' ?>">
                         </div>
-                      </div> 
+                      </div>
                     </div>
                 </div>
-          </div> 
-        </div>   
+          </div>
+        </div>
       </section>
 
       <section class="text-block transSection bottom-map">
@@ -284,7 +285,7 @@
           <video muted playsinline class="media" id="map-video" data-object-fit poster="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ica/Map_V.5.jpg' ?>" class="fullscreen-bg__video" id="full-bg-video">
               <source src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/ica/Havana-Map.mp4' ?>" type="video/mp4">
           </video>
-      
+
           <p>McElvaine’s international journey will be supported by a Bonderman Fellowship.</p>
 
       </section>
@@ -293,7 +294,7 @@
           <div class="container">
               <div class="row">
                   <div class="col-md-10 col-md-offset-1 copy ">
-                    <div style="text-align: center">             
+                    <div style="text-align: center">
                       <h2 class="headline-gold">What you care about <br>can change the world</h2>
                       <p>The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. By supporting Husky Athletics, you can transform the Husky Experience and help more student-athletes like Havana McElvaine pursue their passions. </p>
                       <div id="immersive-give-iframe"></div>
