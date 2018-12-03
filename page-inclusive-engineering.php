@@ -275,7 +275,7 @@
 
 <div id="eng-slideshow" class="engineering-slideshow">
   <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/slide-2.jpg' ?>" alt="">
-    <p>CSNE Young Scholars Program participant Emily Boeschoten and electrical engineering postdoctoral fellow Ivana Milvanovic work on optimizing sensory feedback through novel haptic devices in Chet Moritz’ lab.</p>
+    <p>CSNE Young Scholars Program participant Emily Boeschoten and electrical engineering postdoctoral fellow Ivana Milovanovic work on optimizing sensory feedback through novel haptic devices in Chet Moritz’ lab.</p>
   </div>
 
   <div><img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/engineering/slide-3.jpg' ?>" alt="">
