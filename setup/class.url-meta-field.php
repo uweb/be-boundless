@@ -21,7 +21,7 @@ class URL_Meta_Field {
 
   function save_meta($post_id){
     $post = get_post($post_id);
-    if ($post->post_type == 'post'){
+    if ($post->post_type == 'post' && isset( $_POST['source_url'] ) ){
       $source_url = $_POST['source_url'];
       update_post_meta($post_id, 'source_url', $source_url);
     }

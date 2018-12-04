@@ -31,11 +31,17 @@ function twitter_card($photo, $title, $descrpition) {
 function custom_meta($post, $meta) {
 	$output = '';
 
-	$title = (isset($post->title_meta) && $post->title_meta != '') ? $post->title_meta : $meta['og:title'];
+	$title = (!empty($post->title_meta)) 	? 	$post->title_meta
+			: (isset($meta['og:title'])) 	? 	$meta['og:title']
+			: 									'' ;
 
-	$description = (isset($post->description_meta) && $post->description_meta != '') ? $post->description_meta : $meta['og:description'];
+	$description = 	(!empty($post->description_meta)) 	? 	$post->description_meta
+					: (isset($meta['og:description'])) 	? 	$meta['og:description']
+					:										'';
 
-	$image = (isset($post->image_meta) && $post->image_meta != '') ? $post->image_meta : $meta['og:image'];
+	$image = 	(!empty($post->image_meta)) 	? 	$post->image_meta
+				: (isset($meta['og:image']))	?	$meta['og:image']
+				:									'';
 
 	// Description tags / og:description
 	$output .= '<meta name="description" content="' . $description . '"/>' . PHP_EOL;

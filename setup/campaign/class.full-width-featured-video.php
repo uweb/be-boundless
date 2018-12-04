@@ -38,11 +38,11 @@ function cv2_video_meta_box_callback() {
 
     <!-- Your add & remove image links -->
     <p class="hide-if-no-js">
-        <a class="upload-video <?php if ( $video_src  ) { echo 'hidden'; } ?>" 
+        <a class="upload-video <?php if ( $video_src  ) { echo 'hidden'; } ?>"
            href="<?php echo $upload_link ?>">
             <?php _e('Set video') ?>
         </a>
-        <a class="delete-video <?php if ( ! $video_src  ) { echo 'hidden'; } ?>" 
+        <a class="delete-video <?php if ( ! $video_src  ) { echo 'hidden'; } ?>"
           href="#">
             <?php _e('Remove video') ?>
         </a>
@@ -55,7 +55,7 @@ function cv2_video_meta_box_callback() {
 add_action('save_post', 'cv2_save_meta_box_page_details');
 function cv2_save_meta_box_page_details() {
   global $post;
-  if (get_post_type($post) == 'page') {
+  if (get_post_type($post) == 'page' && isset($_POST['video-id'])) {
     update_post_meta($post->ID, 'video-id', $_POST['video-id']);
   }
 }
