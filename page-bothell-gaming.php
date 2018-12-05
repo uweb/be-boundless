@@ -1,13 +1,24 @@
 <?php
-	$twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/bothell/twitter-card.jpg';
-	$twitter_title = 'Taking diversity to the next level';
-	$twitter_description = 'By highlighting and celebrating their varied experiences and perspectives, a group of students in the Digital Future Lab at UW Bothell are helping change the face of video game creation.';
-	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
-	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/bothell.css' type='text/css' media='all' />";
-	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/bothell.min.js' type='text/javascript'></script>";
-	$storyCodes = 'UBPLAY,UWBSTU,UBSTEM';
-	$storyAppeal = 'When you support a student program like the Digital Future Lab, you can help students get hands-on, career-shaping experiences that prepare them for the workforce.';
-	get_header( "campaign-v2" );
+  $twitter_photo = 'http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/bothell/twitter-card.jpg';
+  $twitter_title = 'Taking diversity to the next level';
+  $twitter_description = 'By highlighting and celebrating their varied experiences and perspectives, a group of students in the Digital Future Lab at UW Bothell are helping change the face of video game creation.';
+  $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
+  $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/bothell.css' type='text/css' media='all' />";
+  $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/bothell.min.js' type='text/javascript'></script>";
+
+  // The fund code(s) for the giving widget in a comma delimited list
+  $storyCodes = 'UBPLAY,UWBSTU,UBSTEM';
+
+  // The appeal code for the story
+  $storyAppealCodes = 'IBP19';
+
+  // The call to action for the giving widget
+  $storyAppeal = 'When you support a student program like the Digital Future Lab, you can help students get hands-on, career-shaping experiences that prepare them for the workforce.';
+
+  // Original publication month and year
+  $publishMonthYear = 'December 2016';
+
+  get_header("campaign-v2");
 ?>
 
 <div id="immersive-body">
@@ -486,7 +497,7 @@
                </div>
                <div class="row">
                   <div class="col-md-10 col-md-offset-1 copy">
-                    <p><em>Originally published December 2016</em></p>
+                    <?php campaign_pubdate($post, $publishMonthYear); ?>
                   </div>
                 </div>
             </div>

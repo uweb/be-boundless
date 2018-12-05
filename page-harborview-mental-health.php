@@ -5,9 +5,20 @@
 	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/lovejoy.css' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/lovejoy.min.js' type='text/javascript'></script>";
+
+    // The fund code(s) for the giving widget in a comma delimited list
 	$storyCodes = 'EXCELL';
+
+    // The appeal code for the story
+    $storyAppealCodes = 'IHM19';
+
+    // The call to action for the giving widget
 	$storyAppeal = 'Lorem ipsum dolor sit amet...';
-	get_header( "campaign-v2" );
+
+    // Original publication month and year
+    $publishMonthYear = 'November 2017';
+
+    get_header("campaign-v2");
 ?>
 <div id="immersive-body">
 	<section class="intro" id="intro-vid">
@@ -188,7 +199,7 @@
 						<p>Now 50, Lovejoy has a smile that lights up the room and a lively, self-aware sense of humor. In addition to having a job she loves, she recently married her wife, Robie, and she has reconciled with her mother and her children. Lovejoy is in therapy, and she meditates; lithium helps, too. There are still bad days, but DBT has given her the tools to cope.</p>
 						<p>As Lovejoy says, recovery is not a straight upward line &mdash; there are hills and valleys, stops and starts. This is a truth that patients need to hear, especially when they’re having a hard time.</p>
 						<p>“You can get back to that high point again,” she tells them. “It’s a zigzag. It’s a journey. And it’s hard and joyous.”</p>
-						<p><em>Originally published November 2017</em></p>
+                        <?php campaign_pubdate($post, $publishMonthYear); ?>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 					<hr>
 				</div><!-- .row -->

@@ -5,16 +5,26 @@
 	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/public-health.css' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/public-health.min.js' type='text/javascript'></script>";
-	$storyCodes = 'GHFEND,WACHPH';
-	$storyAppeal = 'You can help the School of Public Health drive the public good and improve lives around the world by contributing to these funds.';
 
-	function prefix_conditional_body_class( $classes ) {
-		$classes[] = 'cv2-header-hold';
-		return $classes;
-	}
-	add_filter( 'body_class', 'prefix_conditional_body_class' );
+  function prefix_conditional_body_class( $classes ) {
+    $classes[] = 'cv2-header-hold';
+    return $classes;
+  }
+  add_filter( 'body_class', 'prefix_conditional_body_class' );
 
-	get_header( "campaign-v2" );
+    // The fund code(s) for the giving widget in a comma delimited list
+    $storyCodes = 'GHFEND,WACHPH';
+
+    // The appeal code for the story
+    $storyAppealCodes = 'IPB19';
+
+    // The call to action for the giving widget
+    $storyAppeal = 'You can help the School of Public Health drive the public good and improve lives around the world by contributing to these funds.';
+
+    // Original publication month and year
+    $publishMonthYear = 'February 2017';
+
+    get_header("campaign-v2");
 ?>
 
 <div id="immersive-body">
@@ -542,7 +552,7 @@
 
                 <p class="gold-quote headline-gold purple smaller">Health is a human right. The UW and the School of Public Health are working toward equity, and I think that’s pretty unique to the culture here. <b>– Arianna Means</b></p>
 
-                <p><em>Originally published February 2017</em></p>
+                <?php campaign_pubdate($post, $publishMonthYear); ?>
           </div>
         </div>
       </div>

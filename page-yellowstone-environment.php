@@ -20,7 +20,19 @@
               "<script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/libraries/fullPageFunctions.js' type='text/javascript'></script>" .
               "<script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/environment.js' type='text/javascript'></script>";
 
-  get_header( "campaign-v2" );
+    // The fund code(s) for the giving widget in a comma delimited list
+    $storyCodes = 'CELEND';
+
+    // The appeal code for the story
+    $storyAppealCodes = 'IEW19';
+
+    // The call to action for the giving widget
+    $storyAppeal = 'When you support immersive learning experiences at the College of the Environment, you can make it possible for students to get hands-on experiences that propel them toward the careers of their dreams.';
+
+    // Original publication month and year
+    $publishMonthYear = '';
+
+    get_header("campaign-v2");
 ?>
 
 <div id="immersive-body" role="main" aria-label="main content carousel">
@@ -901,12 +913,12 @@
                   <h1 class="">What you care about </br>can change the world</h1>
                   <div class="row centered add-spacing">
                     <p class="col-md-7 col-xs-12 no-top no-bottom add-bottom">
-                        The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. When you support immersive learning experiences at the College of the Environment, you can make it possible for students to get hands-on experiences that propel them toward the careers of their dreams.
+                        The University of Washington is undertaking its most ambitious campaign ever: Be Boundless — For Washington, For the World. <?php echo $storyAppeal; ?>
                     </p>
                   </div>
               <div class="col-xs-12">
                 <div id="immersive-give-iframe"></div>
-                <div class="boundless-button sm dark give"><span><a id="give-now-button" data-fund="CELEND" href="#" data-lity data-lity-target="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&frame_buster=false&source_typ=3&appeal=17XIS&source=CELEND" role="button">Give now</a></span></div>
+                <div class="boundless-button sm dark give"><span><a id="give-now-button" data-fund="<?php echo $storyCodes; ?>" href="#" data-lity data-lity-target="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&frame_buster=false&source_typ=3&appeal=<?php echo $storyAppealCodes; ?>&source=<?php echo $storyCodes; ?>" role="button">Give now</a></span></div>
                 <!-- <div class="boundless-button sm dark give"><span><a id="immersive-give" data-fund="CELEND" href="#" data-lity data-lity-target="https://online.gifts.washington.edu/secure/makeagift/givingOpps.aspx?nobanner=true&frame_buster=false&source_typ=3&appeal=17XIS&source=CELEND">Give now</a></span></div> -->
               </div>
             </div>

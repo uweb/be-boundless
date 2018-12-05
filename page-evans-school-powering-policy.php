@@ -5,9 +5,20 @@
 	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/evans-school.css' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/evans-school.min.js' type='text/javascript'></script>";
-	$storyCodes = 'GSPAED,EVAN50';
-	$storyAppeal = 'By supporting the Evans School of Public Policy &amp; Governance, more students can take part in opportunities that change not only their lives, but also those of people around the world.';
-	get_header( "campaign-v2" );
+
+    // The fund code(s) for the giving widget in a comma delimited list
+    $storyCodes = 'GSPAED,EVAN50';
+
+    // The appeal code for the story
+    $storyAppealCodes = 'IEP19';
+
+    // The call to action for the giving widget
+    $storyAppeal = 'By supporting the Evans School of Public Policy &amp; Governance, more students can take part in opportunities that change not only their lives, but also those of people around the world.';
+
+    // Original publication month and year
+    $publishMonthYear = 'February 2017';
+
+    get_header("campaign-v2");
 ?>
 
 <div id="immersive-body">
@@ -230,7 +241,7 @@
 
                   <p>“Giving enables students to focus on being their best and brightest research selves,” says Wething. “I don’t have to worry about making ends meet. I can just be fully immersed in this process.”</p>
 
-                  <p><em>Originally published February 2017</em></p>
+                  <?php campaign_pubdate($post, $publishMonthYear); ?>
 
                 </div>
           </div>

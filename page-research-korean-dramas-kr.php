@@ -11,9 +11,20 @@
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/libraries/animsition.min.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/libraries.css' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/libraries.min.js' type='text/javascript'></script>";
 	// $scripts .= "<script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/libraries/animsition.min.js' type='text/javascript'></script>";
+
+    // The fund code(s) for the giving widget in a comma delimited list
 	$storyCodes = 'KORCAT,LIBDIS';
+
+    // The appeal code for the story
+    $storyAppealCodes = 'ILK19';
+
+    // The call to action for the giving widget
 	$storyAppeal = 'Support undergraduate research and the future of invaluable library collections by contributing to the University Libraries.';
-	get_header( "campaign-v2" );
+
+    // Original publication month and year
+    $publishMonthYear = '';
+
+    get_header("campaign-v2");
 
 
 ?>

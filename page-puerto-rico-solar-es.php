@@ -6,8 +6,19 @@
         $slug = 'puerto-rico';
         $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/" . $slug . ".css' type='text/css' media='all' />";
         $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/" . $slug . ".min.js' type='text/javascript'></script>";
+
+        // The fund code(s) for the giving widget in a comma delimited list
         $storyCodes = 'PRERFD,PHIGFD,OGAGIF,CEIGIF';
+
+        // The appeal code for the story
+        $storyAppealCodes = 'IPS19';
+
+        // The call to action for the giving widget
         $storyAppeal = 'Support Lilo Pozzo’s research team in their efforts to improve community health by contributing to the Puerto Rico Energy Recovery Fund.';
+
+        // Original publication month and year
+        $publishMonthYear = '';
+
         get_header("campaign-v2");
 ?>
 

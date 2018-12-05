@@ -5,9 +5,20 @@
 	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/foster-school.css' type='text/css' media='all' /><link rel='stylesheet' href='//unpkg.com/leaflet@1.0.3/dist/leaflet.css' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/foster-school.min.js' type='text/javascript'></script><script src='//unpkg.com/leaflet@1.0.3/dist/leaflet.js' type='text/javascript'></script>";
-	$storyCodes = 'BEDDIS,UNDDIV,ACOUNT,YVBEND,EYEXCL';
-	$storyAppeal = 'You can help the Foster School of Business and Young Executives of Color transform the lives of more students like Yesenia Velasquez by contributing to these funds.';
-	get_header( "campaign-v2" );
+
+    // The fund code(s) for the giving widget in a comma delimited list
+    $storyCodes = 'BEDDIS,UNDDIV,ACOUNT,YVBEND,EYEXCL';
+
+    // The appeal code for the story
+    $storyAppealCodes = 'IFW19';
+
+    // The call to action for the giving widget
+    $storyAppeal = 'You can help the Foster School of Business and Young Executives of Color transform the lives of more students like Yesenia Velasquez by contributing to these funds.';
+
+    // Original publication month and year
+    $publishMonthYear = 'June 2017';
+
+    get_header("campaign-v2");
 ?>
 
 <div id="immersive-body">
@@ -309,7 +320,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 copy">
-                  <p><em>Originally published June 2017</em></p>
+                  <?php campaign_pubdate($post, $publishMonthYear); ?>
                 </div>
           </div>
         </div>

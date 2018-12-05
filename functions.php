@@ -87,6 +87,10 @@ function custom_class( $classes ) {
     return $classes;
 }
 
+function campaign_pubdate( $post = '', $monthyear = '' ) {
+	$date = empty($monthyear) ? date("F Y", strtotime($post->post_date)) : $monthyear;
+	print '<p><em>Originally published ' . $date . '</em></p>';
+}
 
 
 ?>

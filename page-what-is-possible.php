@@ -5,9 +5,21 @@
 	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/arts.css?v=" . time() . "' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/arts.min.js?v=" . time() . "' type='text/javascript'></script>";
+
+    // The fund code(s) for the giving widget in a comma delimited list
 	$storyCodes = 'ASDISC,CANART,AHDDIS,ARTGAL,ASUGSF,ASDISCR';
+
+    // The appeal code for the story
+    $storyAppealCodes = 'ICP19';
+
+    // The call to action for the giving widget
 	$storyAppeal = 'You can empower possibility, drive innovation, and enhance the student experience in the College of Arts &amp; Sciences by contributing to these funds.';
-	get_header( "campaign-v2" );
+
+    // Original publication month and year
+    $publishMonthYear = 'November 2016';
+
+    get_header("campaign-v2");
+
 ?>
 
 <section id="immersive-body" class="arts">
@@ -673,7 +685,7 @@
 
    <hr style="max-width: 720px">
    <p style="text-align: center;"><small>Photos courtesy James Harnois, MadArt Seattle, Amie McNeel, Sam Stubblefield, Collin Bampton, Tzyy Yi (Amy) Young.</small></p>
-   <p style="text-align: center;"><small><em>Originally published November 2016</em></small></p>
+   <?php campaign_pubdate($post, $publishMonthYear); ?>
 
 
 

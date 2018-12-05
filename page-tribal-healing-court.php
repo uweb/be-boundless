@@ -11,6 +11,7 @@
 
     // The appeal code for the story
     $storyAppealCodes = 'ILA19';
+    // $storyAppealCodes = 'ILT19';
 
     // The call to action for the giving widget
     $storyAppeal = 'By contributing to the Native American Law Center Fund, Excellence in Law Fund, or the Law Student Scholarship Fund, you can help students gain hands-on legal experience as part of their studies at the UW School of Law.';
@@ -324,7 +325,7 @@
 
           <p>Monger agrees, and he also wants to widen the program even further &mdash; to reach young adults before they start using. &ldquo;It&rsquo;s better for us to reach these youngsters before they get into the system,&rdquo; he says. &ldquo;These are human beings. We need to continue doing things differently to try to help them overcome these addictions.&rdquo;</p>
 
-          <p><em>Originally published <?php echo $publishMonthYear; ?></em></p>
+          <?php campaign_pubdate($post, $publishMonthYear); ?>
         </div>
       </div>
     </section>

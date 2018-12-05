@@ -5,9 +5,20 @@
 	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/ischool.css' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/ischool.min.js' type='text/javascript'></script>";
-	$storyCodes = 'WOBDIS';
-	$storyAppeal = 'You can be part of Mott’s project and help iSchool students like him make technology accessible for everyone at the MAD (Mobile + Accessible Design) Lab by making a gift to the Human Computer Interaction Research Fund.';
-	get_header( "campaign-v2" );
+
+    // The fund code(s) for the giving widget in a comma delimited list
+    $storyCodes = 'WOBDIS';
+
+    // The appeal code for the story
+    $storyAppealCodes = 'IIS19';
+
+    // The call to action for the giving widget
+    $storyAppeal = 'You can be part of Mott’s project and help iSchool students like him make technology accessible for everyone at the MAD (Mobile + Accessible Design) Lab by making a gift to the Human Computer Interaction Research Fund.';
+
+    // Original publication month and year
+    $publishMonthYear = 'April 2017';
+
+    get_header("campaign-v2");
 ?>
 
 <div id="immersive-body">
@@ -303,7 +314,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-10 col-md-offset-1 copy">
-              <p><em>Originally published April 2017</em></p>
+              <?php campaign_pubdate($post, $publishMonthYear); ?>
             </div>
           </div>
         </div>

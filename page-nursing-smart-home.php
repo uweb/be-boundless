@@ -5,9 +5,20 @@
 	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/nursing.css' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/nursing.min.js' type='text/javascript'></script>";
-	$storyCodes = 'BNHIAG';
-	$storyAppeal = 'By supporting the School of Nursing, you can help more faculty and students undertake research with the potential to transform lives not just here and now, but around the world and in the future.';
-	get_header( "campaign-v2" );
+
+    // The fund code(s) for the giving widget in a comma delimited list
+    $storyCodes = 'BNHIAG';
+
+    // The appeal code for the story
+    $storyAppealCodes = 'INS19';
+
+    // The call to action for the giving widget
+    $storyAppeal = 'By supporting the School of Nursing, you can help more faculty and students undertake research with the potential to transform lives not just here and now, but around the world and in the future.';
+
+    // Original publication month and year
+    $publishMonthYear = 'May 2017';
+
+    get_header("campaign-v2");
 ?>
 
 <div id="immersive-body">
@@ -360,7 +371,7 @@
                   <p>Students also stand to benefit from taking part in such cutting-edge opportunities with training that equips them to provide quality care to patients who rely increasingly on technology.</p>
 
                   <p>“We have these incredible technologies that, when put together, can help us better understand our daily lives and needs,” says Demiris. “I believe that technology can empower more people, especially older adults and their families, to become actively involved in their own health care.”</p>
-                  <p><em>Originally published May 2017</em></p>
+                  <?php campaign_pubdate($post, $publishMonthYear); ?>
 
                 </div>
           </div>

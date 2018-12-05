@@ -5,8 +5,19 @@
     $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
     $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/comotion.css' type='text/css' media='all' />";
     $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/comotion.min.js' type='text/javascript'></script>";
+
+    // The fund code(s) for the giving widget in a comma delimited list
     $storyCodes = 'COMOIF';
+
+    // The appeal code for the story
+    $storyAppealCodes = 'ICR19';
+
+    // The call to action for the giving widget
     $storyAppeal = 'When you support the CoMotion Innovation Fund, you can help projects with great potential create real-world impact.';
+
+    // Original publication month and year
+    $publishMonthYear = 'April 2018';
+
     get_header("campaign-v2");
 ?>
 
@@ -237,7 +248,7 @@
             <p>“These are robust ideas that have benefited from years of research but need guidance and focused resources to make people’s lives better,” he says. “It’s a critical path for the future success of these breakthroughs.”</p>
 
             <p><b><a href="https://comotion.uw.edu/what-we-do/comotion-labs/home/">CoMotion Labs</a></b> — a self-sustaining, membership-supported program of CoMotion — is a multi-industry startup incubator that hosts more than 90 companies inside and outside the UW community. One of many UW programs exploring the possibilities of XR technology, CoMotion Labs complements and supports innovative ventures across the University and beyond.</p>
-            <p><em>Originally published April 2018</em></p>
+            <?php campaign_pubdate($post, $publishMonthYear); ?>
           </div><!-- .col-md-10 .col-md-offset-1 .copy -->
         </div><!-- .row -->
       </div><!-- .container -->

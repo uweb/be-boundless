@@ -5,9 +5,20 @@
 	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/dentistry.css?v=" . time() . "' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/dentistry.min.js' type='text/javascript'></script>";
+
+  // The fund code(s) for the giving widget in a comma delimited list
 	$storyCodes = 'UNCOMP';
+
+  // The appeal code for the story
+  $storyAppealCodes = 'IDH19';
+
+  // The call to action for the giving widget
 	$storyAppeal = ' By supporting the School of Dentistry, you can help expand access to dental care for adults and children with special needs.';
-	get_header( "campaign-v2" );
+
+  // Original publication month and year
+  $publishMonthYear = 'January 2017';
+
+  get_header("campaign-v2");
 ?>
 
 <div id="immersive-body">
@@ -174,7 +185,8 @@
 <div class="container">
   <div class="row">
     <div class="col-md-10 col-md-offset-1 copy">
-      <p style="margin-top:15px;"><em>Originally published January 2017</em></p>
+      <P></P>
+      <?php campaign_pubdate($post, $publishMonthYear); ?>
     </div>
   </div>
 </div>

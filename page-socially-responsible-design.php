@@ -5,9 +5,20 @@
 	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/built-env.css' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/built-env.min.js' type='text/javascript'></script>";
-	$storyCodes = 'AUPGEN,LSCHOL,LAPERU';
-	$storyAppeal = 'Invest in environmental justice and healthier, more fulfilling futures for all by contributing to the College of Built Environments and students like David de la Cruz.';
-	get_header( "campaign-v2" );
+
+    // The fund code(s) for the giving widget in a comma delimited list
+    $storyCodes = 'AUPGEN,LSCHOL,LAPERU';
+
+    // The appeal code for the story
+    $storyAppealCodes = 'IBG19';
+
+    // The call to action for the giving widget
+    $storyAppeal = 'Invest in environmental justice and healthier, more fulfilling futures for all by contributing to the College of Built Environments and students like David de la Cruz.';
+
+    // Original publication month and year
+    $publishMonthYear = 'July 2017';
+
+    get_header("campaign-v2");
 ?>
 
 <div id="immersive-body">
@@ -253,7 +264,7 @@
 <p>“Through community involvement and participation, I’m hoping to work with residents to articulate how we can transform these larger infrastructures — ghosted railways, abandoned factories, the Los Angeles River — in a way that benefits them,” says de la Cruz. “So much knowledge already exists in these communities, and there are opportunities to have more landscape architects who come from diverse backgrounds. My mission isn’t to lead, but to help community members realize their leadership potential.” </p>
 
 <p><i>Update</i>: After returning to his hometown, de la Cruz started working as a project manager for the Los Angeles Neighborhood Land Trust, an organization that creates parks and community gardens in underserved neighborhoods that have limited or no access to green space. He has also led an urban agriculture and community gardening workshop for local youth that was promoted by College Track, an organization focused on increasing educational attainment rates in communities of color nationwide.</p>
-<p><em>Originally published July 2017</em></p>
+  <?php campaign_pubdate($post, $publishMonthYear); ?>
                       </div>
                       <div class="col-md-5 col-md-offset-1">
                         <blockquote><span>&ldquo;</span>People lose their way a little bit because of the example that’s been set for them, but David is a different example. He shows kids that you can go away to school and be all you want to be, and that you can bring it back and pay it forward.<span>&rdquo;</span></blockquote>

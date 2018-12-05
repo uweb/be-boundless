@@ -5,9 +5,20 @@
 	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/farmer-brown.css' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/farmer-brown.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/campaign/js/header.js' type='text/javascript'></script><script src='//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js' type='text/javascript'></script><script src='//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js' type='text/javascript'></script><script src='//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js' type='text/javascript'></script>";
-	$storyCodes = 'ESIEND';
-	$storyAppeal = 'Your support of students like Stephan Blount and programs like Communities That Care propels our global community forward, giving all children the chance to reach their fullest potential.';
-	get_header( "campaign-v2" );
+
+    // The fund code(s) for the giving widget in a comma delimited list
+    $storyCodes = 'ESIEND';
+
+    // The appeal code for the story
+    $storyAppealCodes = 'ICC19';
+
+    // The call to action for the giving widget
+    $storyAppeal = 'Your support of students like Stephan Blount and programs like Communities That Care propels our global community forward, giving all children the chance to reach their fullest potential.';
+
+    // Original publication month and year
+    $publishMonthYear = '';
+
+    get_header("campaign-v2");
 ?>
 
 <section class="intro" id="intro-vid">
@@ -673,6 +684,9 @@
                 <p>His professors supported him as he focused many of his research projects on furthering the mission of Growing Veterans. And, though his concentration was in integrative health and mental health practice, Brown also learned about leadership and community building.</p>
 
                 <p>“Many of my professors also ran their own foundations and brought their worldly experience to the classroom,” he says. “They helped challenge and refine not only my understanding of how to work with others, but my view of the world, too.”</p>
+
+                <?php campaign_pubdate($post, $publishMonthYear); ?>
+
             </div>
         </div>
       </div>

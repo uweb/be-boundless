@@ -6,8 +6,19 @@
     $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
     $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/homepage-plus.css' type='text/css' media='all' />";
     $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/homepage-plus.min.js' type='text/javascript'></script>";
+
+    // The fund code(s) for the giving widget in a comma delimited list
     $storyCodes = 'GEOLUG';
+
+    // The appeal code for the story
+    $storyAppealCodes = 'IEG19';
+
+    // The call to action for the giving widget
     $storyAppeal = '';
+
+    // Original publication month and year
+    $publishMonthYear = '';
+
     get_header("campaign-v2");
 
 ?>
@@ -256,6 +267,8 @@
                         <h2 style="text-align: center;">Mary Alice Benson's journal</h2>
                         <p style="text-align: center;"><a href="http://environment.uw.edu/fieldcamp"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/ess/Coenv_link_ESS_Camp_IMGOnly.png' ?>"></a><br />
                         <a href="http://environment.uw.edu/fieldcamp">Explore this firsthand account</a> of a UW senior’s career-defining field camp experience.</p>
+
+                        <?php campaign_pubdate($post, $publishMonthYear); ?>
                     </div>
                 </div>
             </div>

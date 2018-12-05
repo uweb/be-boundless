@@ -5,9 +5,20 @@
 	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/engineering.css?v=" . time() . "' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/engineering.min.js' type='text/javascript'></script>";
-	$storyCodes = 'MEHTIF,CSNEDI,ENGSEN';
-	$storyAppeal = 'You can help the College of Engineering empower possibility through innovation by contributing to these funds.';
-	get_header( "campaign-v2" );
+
+    // The fund code(s) for the giving widget in a comma delimited list
+    $storyCodes = 'MEHTIF,CSNEDI,ENGSEN';
+
+    // The appeal code for the story
+    $storyAppealCodes = 'IEB19';
+
+    // The call to action for the giving widget
+    $storyAppeal = 'You can help the College of Engineering empower possibility through innovation by contributing to these funds.';
+
+    // Original publication month and year
+    $publishMonthYear = 'October 2016';
+
+    get_header("campaign-v2");
 ?>
 
 <div id="immersive-body">
@@ -270,7 +281,7 @@
 
 <p>“Eventually, the device could go away because the individual has regained function,” says Moritz. “The individuals, like Jayna, who might one day benefit from what the CSNE is developing are just a wonderful, inspiring, rewarding group of people to work with. This is the kind of research that makes being at the UW so special.” </p>
 
-<p><em>Originally published October 2016</em></p>
+  <?php campaign_pubdate($post, $publishMonthYear); ?>
 
 
 <div id="eng-slideshow" class="engineering-slideshow">

@@ -378,7 +378,7 @@
                             <p>With additional staff and resources, STARS can continue to help students chart a successful course in school and in life. “It can be challenging to be at a university like this without someone to support you,” says Cordero. “The STARS program does a really good job of that.”</p>
 
 
-                            <p><em>Originally published <?php echo $publishMonthYear; ?></em></p>
+                            <?php campaign_pubdate($post, $publishMonthYear); ?>
 
                         </div><!-- .col-md-10 .col-md-offset-1 .copy -->
                     </div><!-- .row -->

@@ -9,6 +9,8 @@ if(!$storyCodes || $storyCodes == ''){
 if(!$storyAppealCodes || $storyAppealCodes == ''){
 	$storyAppealCodes = '19XBS';
 }
+global $post;
+
 ?>
 
 <!DOCTYPE html>

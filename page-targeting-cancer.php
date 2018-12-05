@@ -5,9 +5,20 @@
 	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/medicine.css' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/medicine.min.js' type='text/javascript'></script>";
+
+  // The fund code(s) for the giving widget in a comma delimited list
 	$storyCodes = 'HEMATL,PATHCA,STEMCR';
+
+  // The appeal code for the story
+  $storyAppealCodes = 'IMC19';
+
+  // The call to action for the giving widget
 	$storyAppeal = 'You can help UW Medicine expand our impact everywhere by contributing to these funds.';
-	get_header( "campaign-v2" );
+
+  // Original publication month and year
+  $publishMonthYear = 'October 2016';
+
+  get_header("campaign-v2");
 ?>
 
 <div id="immersive-body">
@@ -258,7 +269,7 @@
                     </div>
                   </div>
                   <div style="margin-top:15px;text-align:center;">
-                    <p><em>Originally published October 2016</em></p>
+                    <?php campaign_pubdate($post, $publishMonthYear); ?>
                   </div>
 
                 </section>

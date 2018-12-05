@@ -5,9 +5,20 @@
 	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/education.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/education-map.css' type='text/css' media='all' /><link rel='stylesheet' href='//npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/education.min.js' type='text/javascript'></script>";
-	$storyCodes = 'DREAMD,MATSCH,EDUIIF,ACKPAR';
-	$storyAppeal = 'You can help the College of Education drive the public good by contributing to these funds.';
-	get_header( "campaign-v2" );
+
+    // The fund code(s) for the giving widget in a comma delimited list
+    $storyCodes = 'DREAMD,MATSCH,EDUIIF,ACKPAR';
+
+    // The appeal code for the story
+    $storyAppealCodes = 'IEN19';
+
+    // The call to action for the giving widget
+    $storyAppeal = 'You can help the College of Education drive the public good by contributing to these funds.';
+
+    // Original publication month and year
+    $publishMonthYear = 'October 2016';
+
+    get_header("campaign-v2");
 ?>
 
 <div id="immersive-body">
@@ -257,8 +268,7 @@
 
                  <p>“Kids are capable regardless of their socioeconomic status, but there’s so much about the professional workplace in poverty-impacted communities that makes it hard for teachers,” she says. “Investing in school leadership and professional development can make that change happen.”</p>
 
-                 <p><em>Originally published October 2016</em></p>
-
+                 <?php campaign_pubdate($post, $publishMonthYear); ?>
 
                 </div>
           </div>

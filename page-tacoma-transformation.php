@@ -5,9 +5,20 @@
 	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/tacoma.css?v=" . time() . "' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/tacoma.min.js' type='text/javascript'></script>";
+
+    // The fund code(s) for the giving widget in a comma delimited list
 	$storyCodes = 'SCHTAC,AMOCAT';
+
+    // The appeal code for the story
+  $storyAppealCodes = 'ITT19';
+
+    // The call to action for the giving widget
 	$storyAppeal = 'You can help UW Tacoma transform the lives of more students like Tom Rochat by contributing to these funds.';
-	get_header( "campaign-v2" );
+
+    // Original publication month and year
+  $publishMonthYear = 'January 2017';
+
+  get_header("campaign-v2");
 ?>
 
 <div id="immersive-body">
@@ -403,7 +414,7 @@ Sometimes I feel like the whole ‘jobs of the future’ thing is kind of a joke
 </div>
       <!-- DATE: -->
       <div style="margin-top:15px;text-align:center;">
-        <p><em>Originally published January 2017</em></p>
+        <?php campaign_pubdate($post, $publishMonthYear); ?>
       </div>
 
 <?php

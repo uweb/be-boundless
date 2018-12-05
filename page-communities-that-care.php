@@ -5,9 +5,21 @@
 	$meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
 	$styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/socialwork.css' type='text/css' media='all' />";
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/socialwork.min.js' type='text/javascript'></script>";
+
+	// The fund code(s) for the giving widget in a comma delimited list
 	$storyCodes = 'ESIEND';
+
+	// The appeal code for the story
+	$storyAppealCodes = 'ISC19';
+
+	// The call to action for the giving widget
 	$storyAppeal = 'Your support of students like Stephan Blount, Kelley Pascoe and Eric Agyemang and programs like Communities That Care propels our global community forward, giving all children the chance to reach their fullest potential.';
-	get_header( "campaign-v2" );
+
+	// Original publication month and year
+	$publishMonthYear = 'October 2017';
+
+	get_header("campaign-v2");
+
 ?>
 
 <div id="immersive-body">
@@ -289,7 +301,7 @@
 						<p class="caption">*Washington State Institute for Public Policy, May 2017</p>
 						<p>Alongside the valuable partnerships with community members, a big part of the success of CTC and Communities in Action has been student support from the Excellence in Social Impact Scholarship. Blount, Agyemang and Pascoe all received scholarships from this fund, which was established in 2016 to help reduce the debt load of social work students. The fund is transforming the School of Social Work’s ability to prepare highly gifted students to lead, innovate and serve in local, national and global communities.</p>
 						<p>For Blount, this financial support meant that he could focus time and energy on his studies and his students at Madrona Elementary. Even more important, it has helped him explore the career he knows he was meant to pursue. “I have always been set on doing some sort of human services or social work,” he says. “I don’t see myself doing anything else.”</p>
-						<p><em>Originally published October 2017</em></p>
+						<?php campaign_pubdate($post, $publishMonthYear); ?>
 					</div><!-- .col-md-10 .col-md-offset-1 .copy -->
 				</div><!-- .row -->
 			</div><!-- .container -->
