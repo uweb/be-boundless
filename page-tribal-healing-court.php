@@ -325,7 +325,7 @@
 
           <p>Monger agrees, and he also wants to widen the program even further &mdash; to reach young adults before they start using. &ldquo;It&rsquo;s better for us to reach these youngsters before they get into the system,&rdquo; he says. &ldquo;These are human beings. We need to continue doing things differently to try to help them overcome these addictions.&rdquo;</p>
 
-          <p><em>Update:</em> In December 2018, the Tulalip Healing to Wellness Court celebrated its very first graduate, Verle Smith, in a ceremony at the Don Hatch Youth Center. According to the <a href="https://www.heraldnet.com/news/tulalip-man-first-to-graduate-from-tribes-wellness-court/">Everett Herald</a>, "Smith made a drum during his time there and had it signed by the others in his group. He left it with the staff, who say it’s going to hang in their meeting room from now on." The UW offers our warmest congratulations to Smith on his graduation, as well as our gratitude for his participation in the story told above.</p>
+          <p><em>Update:</em> In December 2018, the Tulalip Healing to Wellness Court celebrated its very first graduate, Verle Smith, in a ceremony at the Don Hatch Youth Center. According to the <a href="https://www.heraldnet.com/news/tulalip-man-first-to-graduate-from-tribes-wellness-court/">Everett Herald</a>, &ldquo;Smith made a drum during his time there and had it signed by the others in his group. He left it with the staff, who say it’s going to hang in their meeting room from now on.&rdquo; The UW offers our warmest congratulations to Smith on his graduation, as well as our gratitude for his participation in the story told above.</p>
 
           <?php campaign_pubdate($post, $publishMonthYear); ?>
         </div>
