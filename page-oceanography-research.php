@@ -40,7 +40,7 @@
                         <p>Oceanography major Deana Crouser is doing more than get her feet wet on the RV Rachel Carson. She's helping peer into the future of our oceans.</p>
                     </div>
                     <div class="col-md-6 col-lg-3 col-md-offset-1 col-xs-12 col-lg-offset-1 col-xs-offset-1 play-button" >
-                        <a data-lity href="https://www.youtube.com/embed/Tr6KBzdaM0o?autoplay=1&rel=0&showinfo=0">
+                        <a data-lity href="https://www.youtube.com/embed/I_GvxsadWmM?autoplay=1&rel=0&showinfo=0">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="137.909px" height="137.131px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131"
                          xml:space="preserve">
@@ -174,7 +174,7 @@
                                 <p class="para3-8">Whatever the findings, says Keister, "it could have significant implications for the food web." This includes humans: where we harvest animals, and what we are (or are not) able to catch.</p>
 
                                 <div class="photo-caption overlap-photo video">
-                                    <a class="zooplankton-video" data-lity href="https://www.youtube.com/embed/Tr6KBzdaM0o?autoplay=1&rel=0&showinfo=0">
+                                    <a class="zooplankton-video" data-lity href="https://www.youtube.com/embed/I_GvxsadWmM?autoplay=1&rel=0&showinfo=0">
                                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                          width="50px" height="50px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131"
                                          xml:space="preserve">
@@ -185,7 +185,7 @@
                                     <p class="caption">VIDEO PLACEHOLDER</p>
                                 </div>
                                 <div class="photo-caption animation">
-                                    <a class="zooplankton-animation" data-lity href="https://www.youtube.com/embed/Tr6KBzdaM0o?autoplay=1&rel=0&showinfo=0">
+                                    <a class="zooplankton-animation" data-lity href="https://www.youtube.com/embed/I_GvxsadWmM?autoplay=1&rel=0&showinfo=0">
                                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                          width="137.909px" height="137.131px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131"
                                          xml:space="preserve">
