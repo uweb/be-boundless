@@ -90,7 +90,7 @@
 
                                 <p class="para6">"Even if I don’t know exactly what I’m doing, I still need to show up and show other people that they can be where I'm standing," she says.</p>
 
-                                <h2 class="heading2">Tiny animals, big impact</h2>
+                                <h2 class="heading1-2">Tiny animals, big impact</h2>
                                 <p class="para7">Crouser admits that when she started her internship, "I didn't know the name of one kind of zooplankton. I didn't even know where they were in the food web." Now she grasps their immense importance.</p>
 
                                 <p class="para8">Zooplankton spend their lives evading predators and searching for food &ndash; usually phytoplankton, the microscopic algae that are the linchpin of all ocean life. Where phytoplankton bloom, so do zooplankton; and where zooplankton thrive, so do larger marine animals, from salmon to orca whales.</p>
@@ -100,14 +100,14 @@
                                 <p class="para10">These are big questions with big ramifications. To help peer into the future, Keister and fellow UW School of Oceanography Professor Daniel Gr&#252;nbaum are starting very, very small.</p>
 
                                 <div class="photo-caption overlap-photo image1">
-                                    <img src="http://placekitten.com/600/400" alt="Oceanography major Deana Crouser, '19." />
+                                    <img src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/rv-carson/deana-crouser.jpg' ?>" alt="Oceanography major Deana Crouser, '19." />
                                     <p class="caption">Oceanography major Deana Crouser, '19</p>
                                 </div>
 
                                 <blockquote class="quote1">It felt like I was in a TED Talk every time I went to class, the lab was very hands-on. You have to do lots of experiments, and then you go on a day trip on the RV Carson. Once I did that, I was all in. <cite>&mdash; Deana Crouser</cite></blockquote>
 
                                 <div class="photo-caption image2">
-                                    <img src="http://placekitten.com/600/400" alt="A type of zooplankton called a calanoid." class="" />
+                                    <img src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/rv-carson/zooplankton-calanoid.jpg' ?>" class="" />
                                     <p class="caption">A type of zooplankton called a calanoid</p>
                                 </div>
                             </div><!-- .row .grid -->
@@ -116,8 +116,7 @@
                 </div><!-- .container -->
             </section><!-- .text-block -->
 
-            <section class="photo-block no-pad arrow arrow-bottom">
-                <h2>(photo of researchers holding pole overboard photo block - gradient into text section above)</h2>
+            <section class="photo-block no-pad arrow arrow-bottom researchers">
             </section><!-- .photo-block .arrow .arrow-bottom  -->
 
             <section class="text-block photo-back-mid no-pad">
@@ -125,7 +124,7 @@
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy">
                             <div class="row grid">
-                                <h2 class="heading1">A backyard laboratory</h2>
+                                <h2 class="heading2">A backyard laboratory</h2>
                                 <p class="para2-1">For 10 days in September, Keister and Gr&#252;nbaum cruised around Hood Canal on the RV Carson, researching how zooplankton change their behavior in response to environmental conditions. Assisting them were Crouser, oceanography graduate students Sasha Seroy and Amy Wyeth, and volunteer Juhi LaFuente.</p>
 
                                 <p class="para2-2">Part of Puget Sound, Hood Canal is a nearly 70-mile-long glacial fjord that runs down the east side of Washington's Olympic Peninsula, then crooks back to the northeast. Its waters are naturally more acidic than the open ocean's, and its oxygen content drops in late summer and fall.</p>
@@ -135,12 +134,12 @@
                                 <p class="para2-4">Adds Crouser, "If you want to find out how ocean acidification and hypoxia affect everything from the bottom of the food web up, this is the place to do it."</p>
 
                                 <div class="photo-caption overlap-photo image2-1">
-                                    <img src="http://placekitten.com/600/400" alt="Professor Julie Keister stacks samples from different depths to show how zooplankton migrate in the water column." />
+                                    <img src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/rv-carson/julie-keister.jpg' ?>" alt="Professor Julie Keister stacks samples from different depths to show how zooplankton migrate in the water column." />
                                     <p class="caption">Professor Julie Keister stacks samples from different depths to show how zooplankton migrate in the water column.</p>
                                 </div>
 
                                 <div class="photo-caption image2-2">
-                                    <img src="http://placekitten.com/600/400" alt="Professor Daniel Gr&#252;nbaum assembles infrared cameras to film zooplankton in dark waters." />
+                                    <img src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/rv-carson/daniel-grunbaum.jpg' ?>" alt="Professor Daniel Gr&#252;nbaum assembles infrared cameras to film zooplankton in dark waters." />
                                     <p class="caption">Professor Daniel Gr&#252;nbaum assembles infrared cameras to film zooplankton in dark waters.</p>
                                 </div>
                             </div><!-- .row .grid -->
@@ -149,8 +148,7 @@
                 </div><!-- .container -->
             </section><!-- .text-block .photo-back-mid .no-pad  -->
 
-            <section class="photo-block no-pad arrow arrow-bottom">
-                <h2>(Photo of samples photo block)</h2>
+            <section class="photo-block no-pad arrow arrow-bottom samples">
             </section><!-- .photo-block .arrow .arrow-bottom  -->
 
             <section class="text-block transparent no-pad">
@@ -158,7 +156,7 @@
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy">
                             <div class="row grid">
-                                <h2 class="heading1">Lessons from the microscopic</h2>
+                                <h2 class="heading3">Lessons from the microscopic</h2>
                                 <p class="para3-1">Back on the RV Carson, Crouser and Seroy are labeling containers full of specimens that were just hauled up from different depths.</p>
 
                                 <p class="para3-2">One contains a thick soup of tiny krill and zooplankton. Another sample, from shallower water, is sparsely populated. It's a vertical snapshot of a mass migration: Zooplankton surface at night to eat phytoplankton, then head back to deeper, darker water to avoid being seen by predators in the daylight.</p>
@@ -175,13 +173,27 @@
 
                                 <p class="para3-8">Whatever the findings, says Keister, "it could have significant implications for the food web." This includes humans: where we harvest animals, and what we are (or are not) able to catch.</p>
 
-                                <div class="photo-caption overlap-photo image3-1">
-                                    <img src="http://placekitten.com/600/400" alt="." />
-                                    <p class="caption">VIDEO</p>
+                                <div class="photo-caption overlap-photo video">
+                                    <a class="zooplankton-video" data-lity href="https://www.youtube.com/embed/Tr6KBzdaM0o?autoplay=1&rel=0&showinfo=0">
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         width="50px" height="50px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131"
+                                         xml:space="preserve">
+                                            <ellipse fill="none" stroke="#FFFFFF" stroke-width="7.8281" stroke-miterlimit="10" cx="68.399" cy="68.344" rx="57.675" ry="59.214"/>
+                                            <polygon fill="#FFFFFF" points="48.611,37.617 103.268,68.345 48.611,99.072 "/>
+                                        </svg>
+                                    </a>
+                                    <p class="caption">VIDEO PLACEHOLDER</p>
                                 </div>
-                                <div class="photo-caption image3-2">
-                                    <img src="http://placekitten.com/600/400" alt="" />
-                                    <p class="caption">ANIMATION</p>
+                                <div class="photo-caption animation">
+                                    <a class="zooplankton-animation" data-lity href="https://www.youtube.com/embed/Tr6KBzdaM0o?autoplay=1&rel=0&showinfo=0">
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         width="137.909px" height="137.131px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131"
+                                         xml:space="preserve">
+                                            <ellipse fill="none" stroke="#FFFFFF" stroke-width="7.8281" stroke-miterlimit="10" cx="68.399" cy="68.344" rx="57.675" ry="59.214"/>
+                                            <polygon fill="#FFFFFF" points="48.611,37.617 103.268,68.345 48.611,99.072 "/>
+                                        </svg>
+                                    </a>
+                                    <p class="caption">ANIMATION PLACEHOLDER</p>
                                 </div>
                             </div><!-- .row .grid -->
                         </div><!-- .col-md-10 .col-md-offset-1 .copy -->
@@ -189,8 +201,7 @@
                 </div><!-- .container -->
             </section><!-- .text-block  -->
 
-            <section class="photo-block no-pad arrow arrow-bottom">
-                <h2>(Bow of Boat in daylight photo block)</h2>
+            <section class="photo-block no-pad arrow arrow-bottom daylight">
             </section><!-- .photo-block .arrow .arrow-bottom  -->
 
             <section class="text-block transparent no-pad">
@@ -198,7 +209,7 @@
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy">
                             <div class="row grid">
-                                <h2 class="heading1">The ocean of tomorrow</h2>
+                                <h2 class="heading4">The ocean of tomorrow</h2>
                                 <p class="para4-1">It's nearly 2 p.m., and Crouser has helped haul up the last of the drifters. Dozens of containers of specimens await transport to UW labs, where they'll be studied and added to a host of data from the previous year that may help shed light on the future of our oceans.</p>
 
                                 <p class="para4-2">For having been awake since 3 a.m., Crouser is remarkably alert &ndash; and optimistic about her place in the future of oceanography, whether by measuring environmental impact or by increasing diversity in STEM professions.</p>
@@ -210,7 +221,7 @@
                                 <p class="para4-5">"There's a lot at stake when it comes to the ocean," she says. "It can be sad at times. But schools like this are what give me hope. It's this research. It's the UW."</p>
 
                                 <div class="photo-caption overlap-photo image4-1">
-                                    <img src="http://placekitten.com/600/400" alt="Graduate student Amy Wyeth rinses off equipment before it is reused on a zooplankton-catching device known as a multinet." />
+                                    <img src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/rv-carson/amy-wyeth.jpg' ?>" alt="Graduate student Amy Wyeth rinses off equipment before it is reused on a zooplankton-catching device known as a multinet." />
                                     <p class="caption">Graduate student Amy Wyeth rinses off equipment before it is reused on a zooplankton-catching device known as a multinet.</p>
                                 </div>
                                 <blockquote class="quote4-1">There's a lot at stake when it comes to the ocean. It can be sad at times. But schools like this are what give me hope. It's this research. It's the UW. <cite>&mdash; Deana Crouser</cite></blockquote>
@@ -220,8 +231,7 @@
                 </div><!-- .container -->
             </section><!-- .text-block  -->
 
-            <section class="photo-block no-pad arrow arrow-bottom">
-                <h2>(RV Carson photo block)</h2>
+            <section class="photo-block no-pad arrow arrow-bottom rv-carson">
             </section><!-- .photo-block .arrow .arrow-bottom  -->
 
             <section class="text-block transparent no-pad">
@@ -230,7 +240,7 @@
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy">
                             <div class="row grid">
-                                <h2 class="heading1">The RV Carson: Bringing research to life</h2>
+                                <h2 class="heading5">The RV Carson: Bringing research to life</h2>
                                 <p class="para5-1">The RV Rachel Carson is a 78-foot research vessel purchased in 2017 with the help of a $1 million donation from William and Beatrice Booth. Beatrice, who earned her master's in biological oceanography from the UW in 1969, was one of the first women scientists in the graduate program. She devoted much of her life to our oceans, working here as a biological oceanography researcher for 24 years.</p>
 
                                 <p class="para5-2">Named after celebrated American conservationist Rachel Carson, the RV Carson unlocks many possibilities for UW researchers. Compared to its predecessor, the much smaller RV Barnes &ndash; a former tug boat &ndash; the RV Carson was designed as a research ship. With larger lab space, better tools for lowering equipment into water and more space for people to sleep, the ship is much better equipped for multiday trips with more researchers. And, unlike the RV Barnes, the RV Carson is capable of traveling offshore for coastal ocean research.</p>
@@ -240,8 +250,8 @@
                                 <div class="para5-4"><?php campaign_pubdate($post, $publishMonthYear); ?></div>
 
                                 <div class="photo-caption overlap-photo image5-1">
-                                    <img src="http://placekitten.com/600/400" alt="Graduate student Amy Wyeth rinses off equipment before it is reused on a zooplankton-catching device known as a multinet." />
-                                    <p class="caption">Graduate student Amy Wyeth rinses off equipment before it is reused on a zooplankton-catching device known as a multinet.</p>
+                                    <img src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/rv-carson/rachel-carson-fremont-bridge.jpg' ?>" alt="The RV Carson passes under the Fremont Bridge on its way back to the UW." />
+                                    <p class="caption">The RV Carson passes under the Fremont Bridge on its way back to the UW.</p>
                                 </div>
                             </div><!-- .row .grid -->
                         </div><!-- .col-md-10 .col-md-offset-1 .copy -->
