@@ -70,7 +70,11 @@ html {
         color: #818181;
     }
 
+    @media @tablet-landscape-up {
+        h2.heading2 { color: #3d3d3d; }
+    }
 }
+
 blockquote {
     // display: inline;
     color: black;
@@ -176,9 +180,9 @@ video {
     .background-cover(cover);
     background-position: center center;
     margin-bottom: 0;
-    background-image: url("@{rvcarson}/intro.jpg");
+    background-image: url("@{rvcarson}/header-top.jpg");
 
-    &:before {
+    /*&:before {
         content: '';
         display: block;
         position: absolute;
@@ -190,7 +194,7 @@ video {
     background: -o-linear-gradient(bottom right, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 100%);
     background: linear-gradient(to top left, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bd000000', endColorstr='#00000000',GradientType=1 );
-    }
+    }*/
 
     @media @phone-only {
         &:after {
@@ -535,7 +539,7 @@ video {
  *****************/
 
 .photo-back-top {
-    background-image: url("@{rvcarson}/intro-bottom-background.jpg");
+    background-image: url("@{rvcarson}/header-intro.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -554,7 +558,7 @@ video {
     }
 
     .copy {
-        padding: 30px 0 60px;
+        padding: 60px 0;
         p {
             color: #ddd;
         }
@@ -581,11 +585,13 @@ video {
     .photo-caption {
         p.caption {
             font-size: .85em;
+            font-style: italic;
             line-height: 1.35;
             margin-top: 10px;
 
             @media @tablet-landscape-up {
                 color: black;
+                font-style: normal;
             }
         }
     }
@@ -637,6 +643,24 @@ video {
             margin-top: -300px;
             height: 100vh;
         }
+
+        @media (min-width: 600px) and (max-width: 768px) {
+            margin-top: -200px;
+        }
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+        background: -webkit-linear-gradient(rgba(255,255,255,1.0) 0%, rgba(221,226,230,0.0) 20%);
+        background: -o-linear-gradient(rgba(255,255,255,1.0) 0%, rgba(221,226,230,0.0) 20%);
+        background: linear-gradient(to bottom, rgba(255,255,255,1.0) 0%, rgba(221,226,230,0.0) 20%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dde2e6',GradientType=1 );
+        }
     }
 }
 
@@ -662,7 +686,7 @@ video {
             padding-right: 0;
         }
 
-        .image1, .image2-1, .video, .image4-1, .image5-1 {
+        .image1, .image2-1, .image3-1, .image4-1, .image5-1 {
             -ms-grid-column: 2;
             grid-column: 2;
             -ms-grid-row: 1;
@@ -685,17 +709,19 @@ video {
             -ms-grid-row: 4;
             -ms-grid-row-span: 3;
             grid-row: 4 / span 3;
+            display: block;
         }
         .para4 { -ms-grid-row: 5; grid-row: 5; }
         .para5 { -ms-grid-row: 6; grid-row: 6; }
         .para6 { -ms-grid-row: 7; grid-row: 7; }
-        .image2 {
+        .video {
             -ms-grid-column: 2;
             grid-column: 2;
             -ms-grid-row: 7;
             -ms-grid-row-span: 4;
             grid-row: 7 / span 4;
         }
+
         .heading1-2 { -ms-grid-row: 8; grid-row: 8; }
         .para7 { -ms-grid-row: 9; grid-row: 9; }
         .para8 { -ms-grid-row: 10; grid-row: 10; }
@@ -706,14 +732,6 @@ video {
         .para2-2 { -ms-grid-row: 3; grid-row: 3; }
         .para2-3 { -ms-grid-row: 4; grid-row: 4; }
         .para2-4 { -ms-grid-row: 5; grid-row: 5; }
-        .image2-2 {
-            -ms-grid-column: 2;
-            grid-column: 2;
-            -ms-grid-row: 3;
-            -ms-grid-row-span: 3;
-            grid-row: 3 / span 3;
-            margin-top: 56px;
-        }
 
         .para3-1 { -ms-grid-row: 2; grid-row: 2; }
         .para3-2 { -ms-grid-row: 3; grid-row: 3; }
@@ -724,12 +742,20 @@ video {
         .para3-7 { -ms-grid-row: 8; grid-row: 8; }
         .para3-8 { -ms-grid-row: 9; grid-row: 9; }
 
+        .image3-2 {
+            -ms-grid-column: 2;
+            grid-column: 2;
+            -ms-grid-row: 4;
+            -ms-grid-row-span: 3;
+            grid-row: 4 / span 3;
+        }
+
         .animation {
             -ms-grid-column: 2;
             grid-column: 2;
-            -ms-grid-row: 5;
+            -ms-grid-row: 7;
             -ms-grid-row-span: 3;
-            grid-row: 5 / span 3;
+            grid-row: 7 / span 3;
         }
 
         .para4-1 { -ms-grid-row: 2; grid-row: 2; }
@@ -744,6 +770,7 @@ video {
             -ms-grid-row: 4;
             -ms-grid-row-span: 3;
             grid-row: 4 / span 3;
+            display: block;
         }
 
         .para5-1 { -ms-grid-row: 2; grid-row: 2; }
@@ -770,7 +797,7 @@ video {
     .para4 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 6; grid-row: 6; }
     .para5 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 7; grid-row: 7; }
     .para6 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 8; grid-row: 8; }
-    .image2 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 9; grid-row: 9; }
+    .video { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 9; grid-row: 9; }
     .heading1-2 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 10; grid-row: 10; }
     .para7 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 11; grid-row: 11; }
     .para8 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 12; grid-row: 12; }
@@ -779,22 +806,22 @@ video {
 
     .heading2, .heading3, .heading4, .heading5 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 1; grid-row: 1; }
     .para2-1 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 2; grid-row: 2; }
-    .image2-1 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 3; grid-row: 3; }
-    .para2-2 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 4; grid-row: 4; }
-    .image2-2 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 5; grid-row: 5; border-top: 3px solid white; }
+    .para2-2 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 3; grid-row: 3; }
+    .image2-1 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 4; grid-row: 4; }
     .para2-3 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 5; grid-row: 5; }
     .para2-4 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 6; grid-row: 6; }
 
     .para3-1 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 2; grid-row: 2; }
-    .video { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 3; grid-row: 3; }
-    .para3-2 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 4; grid-row: 4; }
+    .para3-2 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 3; grid-row: 3; }
+    .image3-2 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 4; grid-row: 4; }
     .para3-3 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 5; grid-row: 5; }
     .para3-4 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 6; grid-row: 6; }
-    .animation { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 7; grid-row: 7; }
+    .image3-1 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 7; grid-row: 7; }
     .para3-5 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 8; grid-row: 8; }
     .para3-6 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 9; grid-row: 9; }
-    .para3-7 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 10; grid-row: 10; }
-    .para3-8 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 11; grid-row: 11; }
+    .animation { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 10; grid-row: 10; }
+    .para3-7 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 11; grid-row: 11; }
+    .para3-8 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 12; grid-row: 12; }
 
     .para4-1 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 2; grid-row: 2; }
     .para4-2 { -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 3; grid-row: 3; }
@@ -1055,12 +1082,12 @@ video {
 .text-block.giving-widget.branded {
     background-image: url("@{rvcarson}/footer.jpg");
     .background-size(cover);
-    background-position: center bottom;
+    background-position: right bottom;
     background-repeat: no-repeat;
     margin-top: 0;
 
-    @media @phone-only {
-        background-position: 85% bottom;
+    @media (max-width: 768px) {
+        background-image: url("@{rvcarson}/footer-mobile.jpg");
         height: 100vh;
     }
 
