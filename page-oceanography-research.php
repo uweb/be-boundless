@@ -2,8 +2,8 @@
 
         $slug = 'oceanography-research';
         $twitter_photo = "http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/" . $slug . "/twitter-card.jpg"; // NEED
-        $twitter_title = ''; // NEED
-        $twitter_description = ''; // NEED
+        $twitter_title = 'Sea lessons';
+        $twitter_description = 'Oceanography major Deana Crouser is doing more than get her feet wet on the RV Rachel Carson. She&rsquo;s helping peer into the future of our oceans.';
         $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
         $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/" . $slug . ".css' type='text/css' media='all' />";
         $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/" . $slug . ".min.js' type='text/javascript'></script>";
