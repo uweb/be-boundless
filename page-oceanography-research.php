@@ -9,7 +9,7 @@
         $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/" . $slug . ".min.js' type='text/javascript'></script>";
 
         // The fund code(s) for the giving widget in a comma delimited list
-        $storyCodes = ''; // NEED
+        $storyCodes = 'CELEND';
 
         // The appeal code for the story
         $storyAppealCodes = 'IRV19';
@@ -242,7 +242,7 @@
                         <div class="col-md-10 col-md-offset-1 copy">
                             <div class="row grid">
                                 <h2 class="heading5">The RV Carson: Bringing research to life</h2>
-                                <p class="para5-1">The RV Rachel Carson is a 78-foot research vessel purchased in 2017 with the help of a $1 million donation from William and Beatrice Booth. Beatrice, who earned her master&rsquo;s in biological oceanography from the UW in 1969, was one of the first women scientists in the graduate program. She devoted much of her life to our oceans, working here as a biological oceanography researcher for 24 years.</p>
+                                <p class="para5-1">The <a href="https://www.washington.edu/news/2018/05/10/new-uw-vessel-rv-rachel-carson-will-explore-regional-waters">RV Rachel Carson</a> is a 78-foot research vessel purchased in 2017 with the help of a $1 million donation from William and Beatrice Booth. Beatrice, who earned her master&rsquo;s in biological oceanography from the UW in 1969, was one of the first women scientists in the graduate program. She devoted much of her life to our oceans, working here as a biological oceanography researcher for 24 years.</p>
 
                                 <p class="para5-2">Named after celebrated American conservationist Rachel Carson, the RV Carson unlocks many possibilities for UW researchers. Compared to its predecessor, the much smaller RV Barnes &mdash; a former tug boat &mdash; the RV Carson was designed as a research ship. With larger lab space, better tools for lowering equipment into water and more space for people to sleep, the ship is much better equipped for multiday trips with more researchers. And, unlike the RV Barnes, the RV Carson is capable of traveling offshore for coastal ocean research.</p>
 
