@@ -82,7 +82,7 @@
 
                                 <p class="para2">&ldquo;It felt like I was in a TED Talk every time I went to class,&rdquo; says Crouser, now a senior. &ldquo;The lab is very hands-on. You have to do lots of experiments, and then you go on a day trip on the RV Carson. Once I did that, I was all in.&rdquo;</p>
 
-                                <p class="para3">After changing her major to oceanography, Crouser landed a summer internship, funded by the National Science Foundation, that culminated in this research cruise. For several weeks beforehand, she spent time in the lab of oceanography professor Julie Keister, helping investigate the relationship between local water conditions and zooplankton populations.</p>
+                                <p class="para3">After changing her major to oceanography within the College of the Environment, Crouser landed a summer internship, funded by the National Science Foundation, that culminated in this research cruise. For several weeks beforehand, she spent time in the lab of oceanography professor Julie Keister, helping investigate the relationship between local water conditions and zooplankton populations.</p>
 
                                 <p class="para4">It&rsquo;s been a steep learning curve, but Crouser embraces it. &ldquo;There’s always something to look forward to,&rdquo; she says. &ldquo;I feel like this internship gave me life again.&rdquo;</p>
 
@@ -107,7 +107,7 @@
                                 <blockquote class="quote1">It felt like I was in a TED Talk every time I went to class, the lab was very hands-on. You have to do lots of experiments, and then you go on a day trip on the RV Carson. Once I did that, I was all in. <cite>&mdash; Deana Crouser</cite></blockquote>
 
                                 <div class="photo-caption video">
-                                    <a class="zooplankton-video" data-lity href="https://www.youtube.com/embed/I_GvxsadWmM?autoplay=1&rel=0&showinfo=0">
+                                    <a class="zooplankton-video" data-lity href="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/rv-carson/microscope.mp4' ?>">
                                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                          width="50px" height="50px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131"
                                          xml:space="preserve">
@@ -115,7 +115,7 @@
                                             <polygon fill="#FFFFFF" points="48.611,37.617 103.268,68.345 48.611,99.072 "/>
                                         </svg>
                                     </a>
-                                    <p class="caption">VIDEO PLACEHOLDER</p>
+                                    <p class="caption"><a data-lity href="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/video/rv-carson/microscope.mp4' ?>">Play full video</a></p>
                                 </div>
                             </div><!-- .row .grid -->
                         </div><!-- .col-md-10 .col-md-offset-1 .copy -->
