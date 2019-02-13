@@ -3,7 +3,7 @@
         $slug = 'oceanography-research';
         $twitter_photo = "http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/" . $slug . "/twitter-card.jpg"; // NEED
         $twitter_title = 'Sea lessons';
-        $twitter_description = 'Oceanography major Deana Crouser is doing more than get her feet wet on the RV Rachel Carson. She&rsquo;s helping peer into the future of our oceans.';
+        $twitter_description = 'Oceanography major Deana Crouser is doing more than get her feet wet on the R/V Rachel Carson. She&rsquo;s helping peer into the future of our oceans.';
         $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
         $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/" . $slug . ".css' type='text/css' media='all' />";
         $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/" . $slug . ".min.js' type='text/javascript'></script>";
@@ -37,7 +37,7 @@
                     <div class="col-md-6 col-lg-4 col-md-offset-1 col-xs-10 col-lg-offset-2 col-xs-offset-1" id='intro-text'>
                         <h1>Sea lessons</h1>
                         <span class="udub-slant"><span></span></span>
-                        <p>Oceanography major Deana Crouser is doing more than get her feet wet on the RV Rachel Carson. She&rsquo;s helping peer into the future of our oceans.</p>
+                        <p>Oceanography major Deana Crouser is doing more than get her feet wet on the R/V Rachel Carson. She&rsquo;s helping peer into the future of our oceans.</p>
                     </div>
                     <div class="col-md-6 col-lg-3 col-md-offset-1 col-xs-12 col-lg-offset-1 col-xs-offset-1 play-button" >
                         <a data-lity href="https://www.youtube.com/embed/I_GvxsadWmM?autoplay=1&rel=0&showinfo=0">
@@ -63,7 +63,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-5 col-md-offset-1 copy">
-                            <p>At 5:24 a.m., the RV Carson&rsquo;s engine has slowed to an idle. Under the light of a full moon, UW oceanography student Deana Crouser helps researchers lift up a drifter &mdash; a floating contraption fitted with a waterproof infrared camera &mdash; over the bow and into Hood Canal.</p>
+                            <p>At 5:24 a.m., the R/V Carson&rsquo;s engine has slowed to an idle. Under the light of a full moon, UW oceanography student Deana Crouser helps researchers lift up a drifter &mdash; a floating contraption fitted with a waterproof infrared camera &mdash; over the bow and into Hood Canal.</p>
 
                             <p>Like that of the researchers, the drifter&rsquo;s work has just begun. As the boat motors on, the drifter&rsquo;s underwater camera begins capturing videos of tiny animals that play a crucial part in the marine food web: zooplankton.</p>
                         </div><!-- .col-md-5 .col-md-offset-1 .copy -->
@@ -80,7 +80,7 @@
                                 <h2 class="heading1">No longer adrift</h2>
                                 <p class="para1">A year ago, Crouser would never have imagined herself filming marine animals in the dark. At the time, she was a chemical engineering major struggling to figure out how to apply her education to helping the environment, a cause she had always believed in. Then she took an introduction to oceanography course.</p>
 
-                                <p class="para2">&ldquo;It felt like I was in a TED Talk every time I went to class,&rdquo; says Crouser, now a senior. &ldquo;The lab is very hands-on. You have to do lots of experiments, and then you go on a day trip on the RV Carson. Once I did that, I was all in.&rdquo;</p>
+                                <p class="para2">&ldquo;It felt like I was in a TED Talk every time I went to class,&rdquo; says Crouser, now a senior. &ldquo;The lab is very hands-on. You have to do lots of experiments, and then you go on a day trip on the R/V Carson. Once I did that, I was all in.&rdquo;</p>
 
                                 <p class="para3">After changing her major to oceanography within the College of the Environment, Crouser landed a summer internship, funded by the National Science Foundation, that culminated in this research cruise. For several weeks beforehand, she spent time in the lab of oceanography professor Julie Keister, helping investigate the relationship between local water conditions and zooplankton populations.</p>
 
@@ -104,7 +104,7 @@
                                     <p class="caption">Oceanography major Deana Crouser, &rsquo;19</p>
                                 </div>
 
-                                <blockquote class="quote1">It felt like I was in a TED Talk every time I went to class. You have to do lots of experiments, and then you go on a day trip on the RV Carson. Once I did that, I was all in. <cite>&mdash; Deana Crouser</cite></blockquote>
+                                <blockquote class="quote1">It felt like I was in a TED Talk every time I went to class. You have to do lots of experiments, and then you go on a day trip on the R/V Carson. Once I did that, I was all in. <cite>&mdash; Deana Crouser</cite></blockquote>
 
                                 <div class="photo-caption animation">
                                     <a class="zooplankton-animation" data-lity href="https://www.youtube.com/embed/I_GvxsadWmM?autoplay=1&rel=0&showinfo=0">
@@ -133,7 +133,7 @@
                         <div class="col-md-10 col-md-offset-1 copy">
                             <div class="row grid">
                                 <h2 class="heading2">A backyard laboratory</h2>
-                                <p class="para2-1">For 10 days in September, Keister and Gr&#252;nbaum cruised around Hood Canal on the RV Carson, researching how zooplankton change their behavior in response to environmental conditions. Assisting them were Crouser, oceanography graduate students Sasha Seroy and Amy Wyeth, and volunteer Juhi LaFuente.</p>
+                                <p class="para2-1">For 10 days in September, Keister and Gr&#252;nbaum cruised around Hood Canal on the R/V Carson, researching how zooplankton change their behavior in response to environmental conditions. Assisting them were Crouser, oceanography graduate students Sasha Seroy and Amy Wyeth, and volunteer Juhi LaFuente.</p>
 
                                 <p class="para2-2">Part of Puget Sound, Hood Canal is a nearly 70-mile-long glacial fjord that runs down the east side of Washington&rsquo;s Olympic Peninsula, then crooks back to the northeast. Its waters are naturally more acidic than the open ocean&rsquo;s, and its oxygen content drops in late summer and fall.</p>
 
@@ -160,7 +160,7 @@
                         <div class="col-md-10 col-md-offset-1 copy">
                             <div class="row grid">
                                 <h2 class="heading3">Lessons from the microscopic</h2>
-                                <p class="para3-1">Back on the RV Carson, Crouser and Seroy are labeling containers full of specimens that were just hauled up from different depths.</p>
+                                <p class="para3-1">Back on the R/V Carson, Crouser and Seroy are labeling containers full of specimens that were just hauled up from different depths.</p>
 
                                 <p class="para3-2">One contains a thick soup of tiny krill and zooplankton. Another sample, from shallower water, is sparsely populated. It&rsquo;s a vertical snapshot of a mass migration: Zooplankton surface at night to eat phytoplankton, then head back to deeper, darker water to avoid being seen by predators in the daylight.</p>
 
@@ -242,18 +242,18 @@
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 copy">
                             <div class="row grid">
-                                <h2 class="heading5">The RV Carson: Bringing research to life</h2>
-                                <p class="para5-1">The <a href="https://www.washington.edu/news/2018/05/10/new-uw-vessel-rv-rachel-carson-will-explore-regional-waters">RV Rachel Carson</a> is a 78-foot research vessel purchased in 2017 with the help of a $1 million donation from William and Beatrice Booth. Beatrice, who earned her master&rsquo;s in biological oceanography from the UW in 1969, was one of the first women scientists in the graduate program. She devoted much of her life to our oceans, working here as a biological oceanography researcher for 24 years.</p>
+                                <h2 class="heading5">The R/V Carson: Bringing research to life</h2>
+                                <p class="para5-1">The <a href="https://www.washington.edu/news/2018/05/10/new-uw-vessel-rv-rachel-carson-will-explore-regional-waters">R/V Rachel Carson</a> is a 78-foot research vessel purchased in 2017 with the help of a $1 million donation from William and Beatrice Booth. Beatrice, who earned her master&rsquo;s in biological oceanography from the UW in 1969, was one of the first women scientists in the graduate program. She devoted much of her life to our oceans, working here as a biological oceanography researcher for 24 years.</p>
 
-                                <p class="para5-2">Named after celebrated American conservationist Rachel Carson, the RV Carson unlocks many possibilities for UW researchers. Compared to its predecessor, the much smaller RV Barnes &mdash; a former tug boat &mdash; the RV Carson was designed as a research ship. With larger lab space, better tools for lowering equipment into water and more space for people to sleep, the ship is much better equipped for multiday trips with more researchers. And, unlike the RV Barnes, the RV Carson is capable of traveling offshore for coastal ocean research.</p>
+                                <p class="para5-2">Named after celebrated American conservationist Rachel Carson, the R/V Carson unlocks many possibilities for UW researchers. Compared to its predecessor, the much smaller R/V Barnes &mdash; a former tug boat &mdash; the R/V Carson was designed as a research ship. With larger lab space, better tools for lowering equipment into water and more space for people to sleep, the ship is much better equipped for multiday trips with more researchers. And, unlike the R/V Barnes, the R/V Carson is capable of traveling offshore for coastal ocean research.</p>
 
-                                <p class="para5-3">The RV Carson also helps connect scientists and students to their nearby waters: It&rsquo;s available for use by oceanographic researchers and instructors from outside the UW, too.</p>
+                                <p class="para5-3">The R/V Carson also helps connect scientists and students to their nearby waters: It&rsquo;s available for use by oceanographic researchers and instructors from outside the UW, too.</p>
 
                                 <div class="para5-4"><?php campaign_pubdate($post, $publishMonthYear); ?></div>
 
                                 <div class="photo-caption overlap-photo image5-1">
-                                    <img src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/rv-carson/rachel-carson-fremont-bridge.jpg' ?>" alt="The RV Carson passes under the Fremont Bridge on its way back to the UW." />
-                                    <p class="caption">The RV Carson passes under the Fremont Bridge on its way back to the UW.</p>
+                                    <img src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/rv-carson/rachel-carson-fremont-bridge.jpg' ?>" alt="The R/V Carson passes under the Fremont Bridge on its way back to the UW." />
+                                    <p class="caption">The R/V Carson passes under the Fremont Bridge on its way back to the UW.</p>
                                 </div>
                             </div><!-- .row .grid -->
                         </div><!-- .col-md-10 .col-md-offset-1 .copy -->
