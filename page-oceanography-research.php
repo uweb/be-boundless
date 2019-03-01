@@ -115,6 +115,7 @@
                                             <polygon fill="#FFFFFF" points="48.611,37.617 103.268,68.345 48.611,99.072 "/>
                                         </svg>
                                     </a>
+                                    <p class="caption">What are zooplankton, and why do they matter?</p>
                                 </div>
 
                             </div><!-- .row .grid -->
@@ -194,6 +195,7 @@
                                             <polygon fill="#FFFFFF" points="48.611,37.617 103.268,68.345 48.611,99.072 "/>
                                         </svg>
                                     </a>
+                                    <p class="caption">Zooplankton under a microscope</p>
                                 </div>
                             </div><!-- .row .grid -->
                         </div><!-- .col-md-10 .col-md-offset-1 .copy -->
