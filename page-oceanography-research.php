@@ -18,7 +18,7 @@
         $storyAppeal = 'When you support immersive learning at the College of the Environment, you help students get hands-on experiences that prepare them for their dream careers.';
 
         // Original publication month and year
-        $publishMonthYear = 'February 2019';
+        $publishMonthYear = 'March 2019';
 
         get_header("campaign-v2");
 ?>
@@ -37,7 +37,7 @@
                     <div class="col-md-6 col-lg-4 col-md-offset-1 col-xs-10 col-lg-offset-2 col-xs-offset-1" id='intro-text'>
                         <h1>Sea lessons</h1>
                         <span class="udub-slant"><span></span></span>
-                        <p>Oceanography major Deana Crouser is doing more than get her feet wet on the R/V Rachel Carson. She&rsquo;s helping peer into the future of our oceans.</p>
+                        <p>Oceanography major Deana Crouser is doing more than getting her feet wet on the R/V Rachel Carson. She&rsquo;s helping peer into the future of our oceans.</p>
                     </div>
                     <div class="col-md-6 col-lg-3 col-md-offset-1 col-xs-12 col-lg-offset-1 col-xs-offset-1 play-button" >
                         <a data-lity href="https://www.youtube.com/embed/I_GvxsadWmM?autoplay=1&rel=0&showinfo=0">
@@ -107,7 +107,7 @@
                                 <blockquote class="quote1">It felt like I was in a TED Talk every time I went to class. You have to do lots of experiments, and then you go on a day trip on the R/V Carson. Once I did that, I was all in. <cite>&mdash; Deana Crouser</cite></blockquote>
 
                                 <div class="photo-caption animation">
-                                    <a class="zooplankton-animation" data-lity href="https://www.youtube.com/embed/I_GvxsadWmM?autoplay=1&rel=0&showinfo=0">
+                                    <a class="zooplankton-animation" data-lity href="https://www.youtube.com/embed/abZ7PWO97DA?autoplay=1&rel=0&showinfo=0">
                                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                          width="137.909px" height="137.131px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131"
                                          xml:space="preserve">
@@ -115,7 +115,6 @@
                                             <polygon fill="#FFFFFF" points="48.611,37.617 103.268,68.345 48.611,99.072 "/>
                                         </svg>
                                     </a>
-                                    <p class="caption">ANIMATION PLACEHOLDER</p>
                                 </div>
 
                             </div><!-- .row .grid -->
@@ -187,7 +186,7 @@
                                 </div>
 
                                 <div class="photo-caption video">
-                                    <a class="zooplankton-video" data-lity href="https://www.youtube.com/embed/J5YOMEcYpUg?autoplay=1&rel=0&showinfo=0">
+                                    <a class="zooplankton-video" data-lity href="https://www.youtube.com/embed/mtq_Dq0JGWQ?autoplay=1&rel=0&showinfo=0">
                                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                          width="50px" height="50px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131"
                                          xml:space="preserve">
@@ -195,7 +194,6 @@
                                             <polygon fill="#FFFFFF" points="48.611,37.617 103.268,68.345 48.611,99.072 "/>
                                         </svg>
                                     </a>
-                                    <p class="caption"><a data-lity href="https://www.youtube.com/embed/J5YOMEcYpUg?autoplay=1&rel=0&showinfo=0">Play full video</a></p>
                                 </div>
                             </div><!-- .row .grid -->
                         </div><!-- .col-md-10 .col-md-offset-1 .copy -->
