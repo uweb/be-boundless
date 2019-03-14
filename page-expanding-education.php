@@ -7,7 +7,7 @@
 	$scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/education.min.js' type='text/javascript'></script>";
 
     // The fund code(s) for the giving widget in a comma delimited list
-    $storyCodes = 'DREAMD,MATSCH,EDUIIF,ACKPAR';
+    $storyCodes = 'INSPIR,MATSCH,EDUIIF,ACKPAR';
 
     // The appeal code for the story
     $storyAppealCodes = 'IEN19';
