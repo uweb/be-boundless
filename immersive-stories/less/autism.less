@@ -411,6 +411,24 @@ html {
                     background: url('@{autism}/gareth-playground.jpg');
                     background-position: 80% center;
                     .background-cover(cover);
+                    display: grid;
+
+                    a.play-video {
+                        text-align: center;
+                        text-transform: uppercase;
+                        position: relative;
+                        align-self: center;
+
+                        p {
+                            color: white;
+                        }
+
+                        &:hover, &:active, &:focus {
+                            p { color: @lightgold; }
+                            ellipse { stroke: @lightgold; }
+                            polygon { fill: @lightgold; }
+                        }
+                    }
                 }
             }
 
@@ -435,6 +453,9 @@ html {
         .col-xs-10 { /* small screens */
             width: 100%;
             padding: 40px;
+        }
+        .img-last.gareth a.play-video {
+            display: none;
         }
     }
 

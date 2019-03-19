@@ -61,7 +61,18 @@
 
                                 <p>For Gareth and his family, the UW&rsquo;s work has helped them have more good days.</p>
                             </div>
-                            <div class="img-last gareth"></div>
+                            <div class="img-last gareth">
+                                <a class="play-video" data-lity href="https://www.youtube.com/embed/m_dqkuviBVI?autoplay=1&rel=0&showinfo=0">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         width="137.909px" height="137.131px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131"
+                         xml:space="preserve">
+                                    <ellipse fill="none" stroke="#FFFFFF" stroke-width="7.8281" stroke-miterlimit="10" cx="68.399" cy="68.344" rx="57.675" ry="59.214"/>
+                                    <polygon fill="#FFFFFF" points="48.611,37.617 103.268,68.345 48.611,99.072 "/>
+                                    </svg>
+
+                                    <p>Play full video</p>
+                                </a>
+                            </div>
                         </div><!-- .col-lg-12 .copy .grid -->
                     </div><!-- .row -->
                 </div><!-- .container -->
@@ -117,7 +128,7 @@
 
                             <p>&ldquo;One problem we continue to face in the U.S. is that children with disabilities are more likely to be educated in segregated settings and excluded from extracurricular and school-based activities,&rdquo; says Ilene Schwartz, Ph.D., the center&rsquo;s director. </p>
 
-                            <div class="video-placeholder"><img src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/autism/video-placeholder.jpg' ?>" alt="placeholder for video" width="500" /></div>
+                            <div class="video-placeholder"><a data-lity href="https://www.youtube.com/embed/UtlaTNI1TaU?autoplay=1&rel=0&showinfo=0"><img src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/autism/video-placeholder.jpg' ?>" alt="placeholder for video" width="500" /></a></div>
 
                             <p>That&rsquo;s despite studies showing the immense benefits of inclusive classrooms, says Jennifer Fung, the center&rsquo;s assistant director of research: &ldquo;We know that kids who are included more have higher graduation rates, are more likely to be employed and live more independently.&rdquo;</p>
 
