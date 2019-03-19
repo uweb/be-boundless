@@ -1,0 +1,607 @@
+/*********************************************
+ * Importing from UW2014 and other immersives *
+ **********************************************/
+@import "../../themes/uw-2014/less/uw.variables.less";
+@import "../../themes/uw-2014/less/flat/mixins.less";
+@import "../../themes/uw-2014/less/flexbox.less";
+@import "../../immersive-stories/less/text-block-new.less";
+@import "../../immersive-stories/less/button.less";
+@import "../../immersive-stories/less/common.less";
+@import "../../immersive-stories/less/queries.less";
+@import "../../immersive-stories/less/lity.less";
+@import "../../immersive-stories/less/slideshow.less";
+// @import "../../immersive-stories/css/libraries/leaflet.css";
+
+@autism: "../../immersive-stories/img/autism";
+
+// @media @phone-only { }              //  (max-width: 599px)
+// @media @tablet-portrait-up { }      //  (min-width: 600px)
+// @media @tablet-portait-only { }     //  (min-width: 600px) and (max-width: 899px)
+// @media @tablet-landscape-up { }     //  (min-width: 900px)
+// @media @tablet-landscape-only { }   //  (min-width: 900px) and (max-width: 1199px)
+// @media @desktop-up { }              //  (min-width: 1200px)
+// @media @desktop-only { }            //  (min-width: 1200px) and (max-width: 1799px)"
+// @media @big-desktop-up { }          //  (min-width: 1800px)
+
+
+/***************************************************
+ * Namespacing to prevent bleed over to /boundless *
+ ***************************************************/
+body,
+html {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@media only screen and (max-width: 767px) {
+    body {
+        margin-top: 0;
+    }
+}
+
+/*****************
+ * Text and Such *
+ *****************/
+#immersive-body {
+    overflow: hidden;
+
+    p {
+        font-size: 17px;
+        line-height: 32px;
+    }
+
+    h1, h3 {
+        font-family: @headline;
+        font-weight: @ultra;
+        color: white;
+    }
+
+    h2,
+    h4,
+    h5 {
+        font-family: "Encode Sans Regular", sans-serif;
+        font-weight: 100;
+        text-transform: uppercase;
+        color: #818181;
+    }
+
+    .photo-block h2 {
+        font-size: 3vw;
+        color: white;
+        font-family: @headline;
+        font-weight: @ultra;
+        line-height: 1.1;
+        text-shadow: 0px 0px 3px rgba(37, 37, 37, 0.65);
+        .skew(-15deg,0);
+        position: absolute;
+        bottom: 20px;
+
+        &.answers {
+            width: 35%;
+
+            @media (max-width: 900px) { width: 90%; }
+        }
+        &.learning {
+            width: 35%;
+
+            @media (max-width: 900px) { width: 90%; }
+        }
+        &.diagnosis, &.access {
+            width: 40%;
+
+            @media (max-width: 900px) { width: 90%; }
+        }
+        &.future {
+            width: 20%;
+
+            @media (max-width: 900px) { width: 90%; }
+        }
+
+        @media @phone-only { width: 90%; font-size: 7vw; left: 40px; }
+        @media (min-width: 601px) and (max-width: 900px) { width: 90%; font-size: 6vw; left: 40px; }
+        @media (min-width: 901px) and (max-width: 1400px) { font-size: 4vw; }
+        @media (min-width: 992px) and (max-width: 1092px) { left: 40px; }
+        @media (min-width: 1200px) and (max-width: 1300px) { left: 40px; }
+    }
+
+    @media @tablet-landscape-up {
+        h2.heading2 { color: #3d3d3d; }
+    }
+
+    .quote-cite {
+        blockquote {
+            margin: 0;
+            padding: 0;
+            color: black;
+            border: none;
+            font-family: @headline;
+            font-weight: @ultra;
+            position: relative;
+            text-align: left;
+
+            cite {
+                font-family: "Encode Sans Regular", sans-serif;;
+                font-weight: 100;
+                color: #818181;
+                font-size: 15px;
+            }
+
+            &:before, &:after {
+                font-family: "Arial Black","Arial Bold",Gadget,sans-serif;
+                font-size: 200%;
+                color: @purple;
+                line-height: 0.5;
+            }
+
+            &:before {
+                content: open-quote;
+                display: block;
+            }
+            &:after {
+                content: close-quote;
+                position: relative;
+                top: 12px;
+                left: 10px;
+            }
+        }
+
+        &.center {
+            width: 50%;
+            margin: 60px auto 20px;
+            text-align: center;
+
+            @media (max-width: 900px) {
+                width: 90%;
+                margin-top: 40px;
+            }
+
+            blockquote { text-align: center; }
+
+            blockquote:before {
+                display: inline;
+                top: 12px;
+                position: relative;
+                left: -10px;
+            }
+        }
+        &.center-mobile {
+            @media (max-width: 900px) {
+                width: 90%;
+                margin: 0 auto 40px;
+                text-align: center;
+
+                blockquote { text-align: center; }
+
+                blockquote:before {
+                    display: inline;
+                    top: 12px;
+                    position: relative;
+                    left: -10px;
+                }
+            }
+        }
+        &.bottom-quote { margin-bottom: 80px; }
+        &.top-quote blockquote { margin-top: 12px; }
+    }
+    .text-block { overflow: visible; }
+}
+
+/*******************************
+ * Intro and associated styles *
+ *******************************/
+.intro {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(~"103vh - 171px");
+    background-image: url('@{autism}/header.jpg');
+    .background-cover(cover);
+    background-position: center center;
+    margin-bottom: 0;
+
+    .intro-parallax {
+        content:'';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(~"103vh - 171px");
+        width: 100vw;
+        background-image: url('@{autism}/header-overlay.png');
+        .background-cover(cover);
+        margin-bottom: 0;
+        background-position: 50% 0;
+        background-repeat: repeat-y;
+        -moz-transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+
+        @media (max-width: 768px) {
+            height: calc(100vh);
+        }
+    }
+
+    @media (max-width: 768px) {
+        height: calc(100vh);
+        background-position: 38% center;
+    }
+
+    .intro-body {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        .translate(0,-50%);
+
+        h1 {
+            text-transform: uppercase;
+            color: white;
+            line-height: 1.1;
+            text-shadow: 0px 0px 3px rgba(37, 37, 37, 0.65);
+            font-size: 4.5vw;
+            .skew(-15deg,0);
+
+            @media (min-width: 992px) and (max-width: 1199px) {
+                width: 80%;
+            }
+        }
+
+        p {
+            color: white;
+            text-shadow: 0 0 3px rgba(37,37,37,0.65);
+            width: 75%;
+
+            @media (min-width: 1200px) and (max-width: 1224px) {
+                width: 70%;
+            }
+
+            @media (min-width: 1003px) and (max-width: 1016px) {
+                width: 68%;
+            }
+        }
+
+
+
+        @media (min-width: 992px) {
+            #intro-text:after {
+                content: "";
+                width: 2px;
+                height: 100%;
+                top: 0;
+                .rotate(15deg);
+                right: 60px;
+                position: absolute;
+                background-color: white;
+            }
+        }
+
+        @media (max-width: 768px) {
+            position: relative;
+
+            h1 { font-size: 8vw; }
+
+            p { width: 100%; }
+
+            #intro-text {
+                float: none;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+/***************************
+ * Scrollbar and Scrollbar *
+ ***************************/
+ #scrollbar, .bar {
+    z-index: 900;
+    opacity: 1.0;
+    position: fixed;
+    top: 0;
+    height: 0px;
+    width: 100%;
+    background-color: #ECECEC;
+    overflow: hidden;
+    .transition(all .2s ease-in);
+    &.active {
+       height: 30px;
+    }
+    span {
+        position: relative !important;
+        height: 100% !important;
+        width: 0%;
+        display: block;
+        background-color: #E0E0E0;
+        .transition(all .1s ease-in);
+        z-index: 899 !important;
+    }
+    .grayW {
+        position: absolute;
+        top: 5px;
+        height: 20px;
+        width: auto;
+        left: 50%;
+        .translate(-50%, 0);
+        z-index: 900;
+    }
+ }
+
+ .bar {
+    background-color: #E0E0E0 !important;
+ }
+
+/**********************
+ * Videos and YouTube *
+ **********************/
+
+.video-placeholder {
+    float: right;
+    margin-left: 40px;
+
+    @media @phone-only {
+        margin: 20px 0 40px;
+    }
+}
+
+/******************
+ * Content Blocks *
+ ******************/
+
+.photo-text-block {
+    @media @tablet-landscape-up {
+        .container {
+            width: 100%;
+            padding: 0;
+        }
+        .row .grid {
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: 150px 2.5fr 1.5fr;
+            grid-template-columns: 150px 2.5fr 1.5fr;
+
+            .img-first {
+                -ms-grid-column: 1;
+                grid-column: 1;
+
+                &.grandfather {
+                    background: url('@{autism}/gareth-grandpa.jpg');
+                    background-position: bottom;
+                    .background-cover(cover);
+                }
+
+                &.gareth {
+                    background: url('@{autism}/gareth-side.jpg');
+                    background-position: bottom;
+                    .background-cover(cover);
+                }
+
+                &.arrow-left {
+                    position: relative;
+                    &:after {
+                        content: "";
+                        border-color: rgba(255,255,255,0) white;
+                        border-style: solid;
+                        border-width: 30px 40px 30px 0;
+                        height: 0;
+                        width: 0;
+                        position: absolute;
+                        top: 20%;
+                        right: 0;
+                        margin-top: -35px;
+                    }
+                }
+            }
+
+            .copy {
+                -ms-grid-column: 2;
+                grid-column: 2;
+                background: white;
+            }
+
+            .img-last {
+                -ms-grid-column: 3;
+                grid-column: 3;
+
+                &.gareth {
+                    background: url('@{autism}/gareth-playground.jpg');
+                    background-position: 80% center;
+                    .background-cover(cover);
+                }
+            }
+
+            .quote-cite {
+                -ms-grid-column: 1;
+                grid-column: 1;
+                -ms-grid-row: 2;
+                grid-row: 2;
+
+                @media @tablet-landscape-up {
+                    -ms-grid-column: 3;
+                    grid-column: 3;
+                    -ms-grid-row: 1;
+                    grid-row: 1;
+                    align-self: center;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 900px) {
+        .col-xs-10 { /* small screens */
+            width: 100%;
+            padding: 40px;
+        }
+    }
+
+    .copy {
+        padding: 40px 20px;
+
+        @media @tablet-landscape-up {
+            padding: 40px 60px;
+        }
+    }
+}
+
+.photo-block {
+    background: @lightgold;
+    background-position: center center;
+    .background-cover(cover);
+    height: 70vh;
+    width: 100%;
+    position: relative;
+
+    &.answers {
+        background-image: url('@{autism}/looking-for-answers.jpg');
+
+        @media @phone-only {
+            background-position: 65% center;
+        }
+
+        @media (min-width: 600px) and (max-width: 900px) {
+            background-position: 80% center;
+        }
+    }
+
+    &.learning {
+        background-image: url('@{autism}/learning-better-together.jpg');
+
+        @media @phone-only {
+            background-position: 0 center;
+        }
+    }
+
+    &.diagnosis {
+        background-image: url('@{autism}/importance-early-diagnosis.jpg');
+
+        @media @phone-only {
+            background-position: 80% center;
+        }
+    }
+
+    &.access {
+        background-image: url('@{autism}/helping-families-acess-care.jpg');
+
+        @media @phone-only {
+            background-position: 65% center;
+        }
+    }
+
+    &.future {
+        background-image: url('@{autism}/more-inclusive-future.jpg');
+
+        @media (max-width: 1000px) {
+            background-position: 70% center;
+        }
+    }
+}
+
+.text-block .copy {
+    float: none;
+    clear: both;
+    padding: 40px 20px;
+
+    @media @tablet-landscape-up { padding: 40px 0; }
+}
+
+.text-block .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+
+    .copy {
+        -ms-grid-column: 1;
+        grid-column: 1;
+        -ms-grid-row: 1;
+        grid-row: 1;
+        padding-bottom: 0;
+    }
+
+    .quote-cite {
+        -ms-grid-column: 1;
+        grid-column: 1;
+        -ms-grid-row: 4;
+        grid-row: 4;
+    }
+}
+
+@media @tablet-landscape-up {
+    .text-block .row .grid {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        -ms-grid-column-gap: 5em;
+        grid-column-gap: 5em;
+
+        .copy {
+            -ms-grid-column: 1;
+            grid-column: 1 ;
+            -ms-grid-row: 1;
+            grid-row: 1;
+            padding-bottom: 20px;
+        }
+
+        .quote-cite {
+            -ms-grid-column: 2;
+            grid-column: 2;
+            -ms-grid-row: 1;
+            grid-row: 1;
+            align-self: center;
+        }
+    }
+}
+
+/*****************
+ * DNA Tags      *
+ *****************/
+.dna-tag {
+    background-color: #ed2229;
+    color: black;
+    font-size: 0.8em;
+    font-weight: 900;
+    padding: 0 20px;
+    position: absolute;
+}
+
+.tag-row { position: relative; }
+.tag1 {
+    left: 10px;
+    top: -70px;
+}
+
+.tag2 {
+    left: 10px;
+    top: -40px;
+}
+
+.tag3 {
+    left: 10px;
+    top: -10px;
+}
+
+.tag4 {
+    left: 60px;
+    top: -10px;
+}
+
+/*****************
+ * Giving Widget *
+ *****************/
+
+ .text-block.giving-widget.branded {
+    background-image: url("@{autism}/footer.jpg");
+    .background-size(cover);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    margin-top: 0;
+
+    @media @phone-only {
+        height: 100vh;
+    }
+ }
