@@ -128,8 +128,6 @@
 
                             <p>&ldquo;One problem we continue to face in the U.S. is that children with disabilities are more likely to be educated in segregated settings and excluded from extracurricular and school-based activities,&rdquo; says Ilene Schwartz, Ph.D., the center&rsquo;s director. </p>
 
-                            <div class="video-placeholder"><a data-lity href="https://www.youtube.com/embed/UtlaTNI1TaU?autoplay=1&rel=0&showinfo=0"><img src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/autism/video-placeholder.jpg' ?>" alt="placeholder for video" width="500" /></a></div>
-
                             <p>That&rsquo;s despite studies showing the immense benefits of inclusive classrooms, says Jennifer Fung, the center&rsquo;s assistant director of research: &ldquo;We know that kids who are included more have higher graduation rates, are more likely to be employed and live more independently.&rdquo;</p>
 
                             <p>Typically developing peers benefit from the experience, too. &ldquo;When you talk about how everyone is different and how that&rsquo;s exciting and useful, it normalizes it,&rdquo; says Fung. &ldquo;Children are more accepting and have a greater capacity for friendship.&rdquo;</p>
@@ -173,10 +171,9 @@
 
                                 <p>Those few years can make a huge difference. &ldquo;Evidence-based early intervention has been shown to move the needle tremendously,&rdquo; Estes says &mdash; and the earlier a child receives those interventions, the more effective they are.</p>
                             </div>
-                            <div class="quote-cite center-mobile">
-                                <blockquote>We have evidence-based early intervention approaches that have been shown to move the needle.</blockquote>
-                                <cite>&mdash; Annette Estes / Director, UW Autism Center</cite>
-                            </div><!-- .quote-cite .center-mobile -->
+                            <div class="video-last video-placeholder">
+                                <a data-lity href="https://www.youtube.com/embed/UtlaTNI1TaU?autoplay=1&rel=0&showinfo=0"><img src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/autism/video-placeholder.jpg' ?>" alt="placeholder for video" width="500" /></a>
+                            </div>
                         </div><!-- .col-lg-12 .grid -->
                     </div><!-- .row -->
                 </div><!-- .container -->

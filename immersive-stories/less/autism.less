@@ -364,14 +364,7 @@ html {
  * Videos and YouTube *
  **********************/
 
-.video-placeholder {
-    float: right;
-    margin-left: 40px;
 
-    @media @phone-only {
-        margin: 20px 0 40px;
-    }
-}
 
 /******************
  * Content Blocks *
@@ -457,6 +450,12 @@ html {
                 }
             }
 
+            .video-last {
+                -ms-grid-column: 3;
+                grid-column: 3;
+                align-self: center;
+            }
+
             .quote-cite {
                 -ms-grid-column: 1;
                 grid-column: 1;
@@ -481,6 +480,11 @@ html {
         }
         .img-last.gareth a.play-video {
             display: none;
+        }
+
+        .video-last {
+            margin-bottom: 40px;
+            text-align: center;
         }
     }
 
