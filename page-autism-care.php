@@ -12,7 +12,7 @@
         $storyCodes = 'AUTHCC,EXDISC,HCSEND';
 
         // The appeal code for the story
-        $storyAppealCodes = ''; // NEED
+        $storyAppealCodes = 'IAU19';
 
         // The call to action for the giving widget
         $storyAppeal = 'The Haring Center and UW Medicine are working to create a healthier, more inclusive future for children and families. By supporting their efforts, you can help kids of all abilities access the services they need to succeed in school and in life.';
@@ -29,7 +29,7 @@
 
 <div id="immersive-body">
 
-    <section class="intro" id="intro-vid"><div class="intro-parallax"></div>
+    <section class="intro" id="intro-vid"><div class="intro-rollover"></div>
             <div class="intro-body">
                 <div class="row">
                     <div class="col-md-6 col-lg-5 col-md-offset-1 col-xs-10 col-lg-offset-2 col-xs-offset-1" id="intro-text">

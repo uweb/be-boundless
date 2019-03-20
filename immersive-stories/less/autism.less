@@ -200,7 +200,12 @@ html {
     background-position: center center;
     margin-bottom: 0;
 
-    .intro-parallax {
+    @media (max-width: 768px) {
+        height: calc(100vh);
+        background-position: 38% center;
+    }
+
+    /*.intro-parallax {
         content:'';
         position: absolute;
         top: 0;
@@ -222,12 +227,32 @@ html {
         @media (max-width: 768px) {
             height: calc(100vh);
         }
+    }*/
+
+    .intro-rollover {
+        // rollover testing
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(~"103vh - 171px");
+        width: 100vw;
+        background-image: url('@{autism}/header-overlay.png');
+        .background-cover(cover);
+        margin-bottom: 0;
+        background-position: center center;
+        transition: transform .5s cubic-bezier(.215, .61, .355, 1),box-shadow .5s cubic-bezier(.215, .61, .355, 1);
+        transform: perspective(1500px) translateZ(50px);
+        transform-style: preserve-3d;
+
+        @media (max-width: 768px) {
+            height: calc(100vh);
+        }
     }
 
-    @media (max-width: 768px) {
-        height: calc(100vh);
-        background-position: 38% center;
-    }
+
 
     .intro-body {
         position: absolute;
