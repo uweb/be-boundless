@@ -41,36 +41,6 @@ $(function () {
         e.preventDefault();
     });
 
-    // header "scroll" effect
-    //var $el = $('.intro-parallax');
-    //$(window).on('scroll', function () {
-    //    var scroll = $(document).scrollTop();
-    //    $el.css({
-    //        'background-position':'50% '+(-0.5*scroll)+'px'
-    //    });
-    //});
-
-    $( document )
-        .on( "mousemove", ".intro-rollover", function( event ) {
-
-        var halfW = ( this.clientWidth / 2 );
-        var halfH = ( this.clientHeight / 2 );
-
-        var coorX = ( halfW - ( event.pageX - this.offsetLeft ) );
-        var coorY = ( halfH - ( event.pageY - $(this).offset().top ) ); // this is the problem
-
-        var degX  = ( ( coorY / halfH ) * 10 ) + 'deg'; // max. degree = 10 /// this is the problem
-        var degY  = ( ( coorX / halfW ) * -10 ) + 'deg'; // max. degree = 10
-
-        $( this ).css( 'transform', function() {
-          return 'perspective( 600px ) translate3d( 0, 0, 30px )  rotateX('+ degX +') rotateY('+ degY +')';
-        } )
-
-      } )
-        .on( "mouseout", ".para", function() {
-        $( this ).removeAttr( 'style' )
-    } );
-
 });
 
 

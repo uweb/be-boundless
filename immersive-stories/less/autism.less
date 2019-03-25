@@ -135,7 +135,10 @@ html {
 
             &:before {
                 content: open-quote;
-                display: block;
+                display: inline;
+                position: relative;
+                top: 12px;
+                left: -10px;
             }
             &:after {
                 content: close-quote;
@@ -157,12 +160,12 @@ html {
 
             blockquote { text-align: center; }
 
-            blockquote:before {
+            /*blockquote:before {
                 display: inline;
                 top: 12px;
                 position: relative;
                 left: -10px;
-            }
+            }*/
         }
         &.center-mobile {
             @media (max-width: 900px) {
@@ -172,16 +175,16 @@ html {
 
                 blockquote { text-align: center; }
 
-                blockquote:before {
+                /*blockquote:before {
                     display: inline;
                     top: 12px;
                     position: relative;
                     left: -10px;
-                }
+                }*/
             }
         }
         &.bottom-quote { margin-bottom: 80px; }
-        &.top-quote blockquote { margin-top: 12px; }
+        //&.top-quote blockquote { margin-top: 12px; }
     }
     .text-block { overflow: visible; }
 }
@@ -197,7 +200,7 @@ html {
     height: calc(~"103vh - 171px");
     background-image: url('@{autism}/header.jpg');
     .background-cover(cover);
-    background-position: center center;
+    background-position: center top;
     margin-bottom: 0;
 
     @media (max-width: 768px) {
@@ -205,51 +208,18 @@ html {
         background-position: 38% center;
     }
 
-    /*.intro-parallax {
-        content:'';
+    &:before {
+        content: '';
+        display: block;
         position: absolute;
-        top: 0;
         left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: calc(~"103vh - 171px");
-        width: 100vw;
-        background-image: url('@{autism}/header-overlay.png');
-        .background-cover(cover);
-        margin-bottom: 0;
-        background-position: 50% 0;
-        background-repeat: repeat-y;
-        -moz-transform: translate3d(0,0,0);
-        -webkit-transform: translate3d(0,0,0);
-        transform: translate3d(0,0,0);
-
-        @media (max-width: 768px) {
-            height: calc(100vh);
-        }
-    }*/
-
-    .intro-rollover {
-        // rollover testing
-        position: absolute;
         top: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: calc(~"103vh - 171px");
-        width: 100vw;
-        background-image: url('@{autism}/header-overlay.png');
-        .background-cover(cover);
-        margin-bottom: 0;
-        background-position: center center;
-        transition: transform .5s cubic-bezier(.215, .61, .355, 1),box-shadow .5s cubic-bezier(.215, .61, .355, 1);
-        transform: perspective(600px) translateZ(50px);
-        transform-style: preserve-3d;
-
-        @media (max-width: 768px) {
-            height: calc(100vh);
-        }
+        height: 100%;
+        width: 100%;
+        background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.0) 70%);
+        background: -o-linear-gradient(bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.0) 70%);
+        background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.0) 70%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#222222',GradientType=1 );
     }
 
     .intro-body {
@@ -275,8 +245,9 @@ html {
 
         p {
             color: white;
-            text-shadow: 0 0 3px rgba(37,37,37,0.65);
+            text-shadow: 0 0 3px rgba(37,37,37,0.85);
             width: 75%;
+            font-weight: 900;
 
             @media (min-width: 1200px) and (max-width: 1224px) {
                 width: 70%;
@@ -526,6 +497,20 @@ html {
     &.diagnosis {
         background-image: url('@{autism}/importance-early-diagnosis.jpg');
 
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.0) 40%);
+            background: -o-linear-gradient(bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.0) 40%);
+            background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.0) 40%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#222222',GradientType=1 );
+        }
+
         @media @phone-only {
             background-position: 80% center;
         }
@@ -603,39 +588,6 @@ html {
             align-self: center;
         }
     }
-}
-
-/*****************
- * DNA Tags      *
- *****************/
-.dna-tag {
-    background-color: #ed2229;
-    color: black;
-    font-size: 0.8em;
-    font-weight: 900;
-    padding: 0 20px;
-    position: absolute;
-}
-
-.tag-row { position: relative; }
-.tag1 {
-    left: 10px;
-    top: -70px;
-}
-
-.tag2 {
-    left: 10px;
-    top: -40px;
-}
-
-.tag3 {
-    left: 10px;
-    top: -10px;
-}
-
-.tag4 {
-    left: 60px;
-    top: -10px;
 }
 
 /*****************

@@ -29,7 +29,7 @@
 
 <div id="immersive-body">
 
-    <section class="intro" id="intro-vid"><div class="intro-rollover"></div>
+    <section class="intro" id="intro-vid"><!--<div class="intro-rollover"></div>-->
             <div class="intro-body">
                 <div class="row">
                     <div class="col-md-6 col-lg-5 col-md-offset-1 col-xs-10 col-lg-offset-2 col-xs-offset-1" id="intro-text">
@@ -103,11 +103,6 @@
                         </div><!-- .col-lg-12 .copy .grid -->
                     </div><!-- .row -->
                 </div><!-- .container -->
-                <!-- <div class="row tag-row">
-                    <span class="dna-tag tag1">T</span>
-                    <span class="dna-tag tag2">T</span>
-                    <span class="dna-tag tag3">G</span><span class="dna-tag tag4">T</span>
-                </div> -->
             </section><!-- .text-block -->
 
             <section class="photo-block learning arrow">
@@ -128,9 +123,9 @@
 
                             <p>&ldquo;One problem we continue to face in the U.S. is that children with disabilities are more likely to be educated in segregated settings and excluded from extracurricular and school-based activities,&rdquo; says Ilene Schwartz, Ph.D., the center&rsquo;s director. </p>
 
-                            <p>That&rsquo;s despite studies showing the immense benefits of inclusive classrooms, says Jennifer Fung, the center&rsquo;s assistant director of research: &ldquo;We know that kids who are included more have higher graduation rates, are more likely to be employed and live more independently.&rdquo;</p>
+                            <p>That&rsquo;s despite studies showing the immense benefits of inclusive classrooms, says Jennifer Fung, Ph.D., a research scientist for the center: &ldquo;We know that kids who are included more have higher graduation rates, are more likely to be employed and live more independently.&rdquo;</p>
 
-                            <p>Typically developing peers benefit from the experience, too. &ldquo;When you talk about how everyone is different and how that&rsquo;s exciting and useful, it normalizes it,&rdquo; says Fung. &ldquo;Children are more accepting and have a greater capacity for friendship.&rdquo;</p>
+                            <p>Typically developing peers benefit from the experience, too. &ldquo;When you talk about how everyone is different and how that&rsquo;s exciting and beneficial, it normalizes it,&rdquo; says Fung. &ldquo;Children are more accepting and have a greater capacity for friendship.&rdquo;</p>
 
                             <p>&ldquo;It was wonderful to see other kids at the Haring Center trying to engage Gareth or just be his friend and play with him, even if he couldn&rsquo;t communicate with them in a typical way,&rdquo; says Alyssa.</p>
 
@@ -140,7 +135,7 @@
 
                             <div class="quote-cite center">
                                 <blockquote>One problem we continue to face is that children with disabilities are more likely to be educated in segregated settings and excluded from extracurricular and school-based activities.</blockquote>
-                                <cite>&mdash; Irene Schwartz / Director, Haring Center for Inclusive Education</cite>
+                                <cite>&mdash; Ilene Schwartz / Director, Haring Center for Inclusive Education</cite>
                             </div>
                         </div><!-- .col-lg-12 .copy -->
                     </div><!-- .row -->
@@ -165,7 +160,7 @@
 
                                 <p>This testing revealed that Gareth&rsquo;s delays were likely caused by a new mutation of the ZNF292 gene. Since then, Bill &mdash; who received his doctorate from the UW&rsquo;s Department of Physiology and Biophysics in 1998 &mdash; has worked with researchers at the UW and Seattle Children&rsquo;s Hospital to better understand the function of the gene.</p>
 
-                                <p>The Sunderlands also began attending workshops for parents of children with autism at the <a href="https://depts.washington.edu/uwautism/">UW Autism Center</a>, another unit of the CHDD. With faculty and staff from the School of Medicine, the College of Arts &amp; Sciences and the College of Education, the Autism Center conducts research on autism and trains UW students and community professionals in providing services.</p>
+                                <p>The Sunderlands also began attending workshops for parents of children with autism at the <a href="http://projectdata.haringcenter.org/project-data/">UW Autism Center</a>, another unit of the CHDD. With faculty and staff from the School of Medicine, the College of Arts &amp; Sciences and the College of Education, the Autism Center conducts research on autism and trains UW students and community professionals in providing services.</p>
 
                                 <p>Though Gareth was diagnosed as a toddler, most families don&rsquo;t find out until much later. &ldquo;We can identify the signs and symptoms in almost every case of autism before children are 24 months old, but the average age in the U.S. for diagnosing autism is four to five years old,&rdquo; says Annette Estes, Ph.D., the center&rsquo;s director.</p>
 
@@ -224,7 +219,7 @@
 
                             <p>At the UW, they&rsquo;ve dedicated philanthropic support to Access to On-Time Intervention, a partnership between the Haring Center and the UW Autism Center. The project, which launched in May 2018, enables researchers and educators to develop a program for helping children from low-income and underserved families connect with autism intervention, support and education.</p>
 
-                            <p>The Sunderlands have also joined UW Foundation Board member Mike Halperin, M.D., in supporting a new autism initiative from the UW and Seattle Children&rsquo;s that aims both to foster collaboration between local organizations that focus on autism and to expand resources for families across Washington state.</p>
+                            <p>The Sunderlands have also joined UW Foundation Board member Mike Halperin, M.D., in supporting the recently announced Autism Spectrum 360 Initiative, which aims to foster collaboration between local organizations that focus on autism and to expand resources for families across Washington state.</p>
 
                             <p>&ldquo;Very few families are as lucky as we are,&rdquo; says Bill. &ldquo;There are a lot of kids who could benefit from the services Gareth received, and there&rsquo;s no reason why they shouldn&rsquo;t be easily accessible.&rdquo;</p>
 
