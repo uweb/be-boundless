@@ -129,7 +129,7 @@
 
                             <p>&ldquo;It was wonderful to see other kids at the Haring Center trying to engage Gareth or just be his friend and play with him, even if he couldn&rsquo;t communicate with them in a typical way,&rdquo; says Alyssa.</p>
 
-                            <p>To ensure that all students can take part in activities, EEU teachers provide personalized help to students who need it. For children with autism, much of that care stems from one of the center&rsquo;s largest research efforts, <a href="http://projectdata.haringcenter.org/">Project DATA</a> (Developmentally Appropriate Treatment for Autism).</p>
+                            <p>To ensure that all students can take part in activities, EEU teachers provide personalized help to students who need it. For children with autism, much of that care stems from one of the center&rsquo;s largest research efforts, <a href="http://projectdata.haringcenter.org/project-data/">Project DATA</a> (Developmentally Appropriate Treatment for Autism).</p>
 
                             <p>As part of Project DATA, Gareth spent the first half of his day with typically developing peers and the second half receiving intensive individualized instruction. If he still struggled, teachers would map out a new strategy for the next day. Since it began in 1997, the Project DATA model has been adopted by teachers in more than 25 states.</p>
 
@@ -160,7 +160,7 @@
 
                                 <p>This testing revealed that Gareth&rsquo;s delays were likely caused by a new mutation of the ZNF292 gene. Since then, Bill &mdash; who received his doctorate from the UW&rsquo;s Department of Physiology and Biophysics in 1998 &mdash; has worked with researchers at the UW and Seattle Children&rsquo;s Hospital to better understand the function of the gene.</p>
 
-                                <p>The Sunderlands also began attending workshops for parents of children with autism at the <a href="http://projectdata.haringcenter.org/project-data/">UW Autism Center</a>, another unit of the CHDD. With faculty and staff from the School of Medicine, the College of Arts &amp; Sciences and the College of Education, the Autism Center conducts research on autism and trains UW students and community professionals in providing services.</p>
+                                <p>The Sunderlands also began attending workshops for parents of children with autism at the <a href="https://depts.washington.edu/uwautism/">UW Autism Center</a>, another unit of the CHDD. With faculty and staff from the School of Medicine, the College of Arts &amp; Sciences and the College of Education, the Autism Center conducts research on autism and trains UW students and community professionals in providing services.</p>
 
                                 <p>Though Gareth was diagnosed as a toddler, most families don&rsquo;t find out until much later. &ldquo;We can identify the signs and symptoms in almost every case of autism before children are 24 months old, but the average age in the U.S. for diagnosing autism is four to five years old,&rdquo; says Annette Estes, Ph.D., the center&rsquo;s director.</p>
 

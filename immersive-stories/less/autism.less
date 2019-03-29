@@ -467,7 +467,7 @@ html {
 }
 
 .photo-block {
-    background: @lightgold;
+    background: white;
     background-position: center center;
     .background-cover(cover);
     height: 70vh;
@@ -478,7 +478,8 @@ html {
         background-image: url('@{autism}/looking-for-answers.jpg');
 
         @media @phone-only {
-            background-position: 65% center;
+            //background-position: 65% center;
+            background-image: url('@{autism}/looking-for-answers-mobile.jpg');
         }
 
         @media (min-width: 600px) and (max-width: 900px) {
@@ -489,8 +490,23 @@ html {
     &.learning {
         background-image: url('@{autism}/learning-better-together.jpg');
 
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: -webkit-linear-gradient(left bottom, right top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.0) 40%);
+            background: -o-linear-gradient(45deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.0) 40%);
+            background: linear-gradient(45deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.0) 40%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#cccccc',GradientType=1 );
+        }
+
         @media @phone-only {
-            background-position: 0 center;
+            //background-position: 0 center;
+            background-image: url('@{autism}/learning-better-together-mobile.jpg');
         }
     }
 
@@ -512,15 +528,17 @@ html {
         }
 
         @media @phone-only {
-            background-position: 80% center;
+            //background-position: 80% center;
+            background-image: url('@{autism}/importance-early-diagnosis-mobile.jpg');
         }
     }
 
     &.access {
-        background-image: url('@{autism}/helping-families-acess-care.jpg');
+        background-image: url('@{autism}/helping-families-access-care.jpg');
 
         @media @phone-only {
-            background-position: 65% center;
+            //background-position: 65% center;
+            background-image: url('@{autism}/helping-families-access-care-mobile.jpg');
         }
     }
 
@@ -528,7 +546,7 @@ html {
         background-image: url('@{autism}/more-inclusive-future.jpg');
 
         @media (max-width: 1000px) {
-            background-position: 70% center;
+            background-position: 65% center;
         }
     }
 }
@@ -605,3 +623,5 @@ html {
         height: 100vh;
     }
  }
+
+
