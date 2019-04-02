@@ -553,8 +553,8 @@ html {
             background: black; // temp
             display: -ms-grid;
             display: grid;
-            -ms-grid-columns: auto 2fr 1fr;
-            grid-template-columns: auto 2fr 1fr;
+            -ms-grid-columns: auto 2fr 1.5fr;
+            grid-template-columns: auto 2fr 1.5fr;
             -ms-grid-rows: auto auto 1fr;
             grid-template-rows: auto auto 1fr;
 
@@ -641,11 +641,34 @@ html {
                 -ms-grid-row-span: 3;
                 grid-row: 1 / span 3;
                 border-left: 5px solid @lightgold;
-                background: url('@{taskforce}/alumni-box-sample.jpg');
                 .background-cover(cover);
                 background-position: center center;
                 background-repeat: no-repeat;
                 position: relative;
+
+                &.yokohama {
+                    background-image: url('@{taskforce}/yokohama-map.jpg');
+                }
+
+                &.cape-town {
+                    background-image: url('@{taskforce}/cape-town-map.jpg');
+                }
+
+                &.san-fran {
+                    background-image: url('@{taskforce}/san-fran-map.jpg');
+                }
+
+                &.bellevue {
+                    background-image: url('@{taskforce}/bellevue-map.jpg');
+                }
+
+                &.seattle {
+                    background-image: url('@{taskforce}/seattle-map.jpg');
+                }
+
+                &.sample {
+                    background-image: url('@{taskforce}/alumni-box-sample.jpg');
+                }
 
                 span {
                     position: absolute;

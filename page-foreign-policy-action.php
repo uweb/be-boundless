@@ -253,42 +253,42 @@
                                     <h4>Carmela Conroy</h4>
                                     <p class="grad-year">1984</p>
                                     <blockquote>&ldquo;One thing I remember from the Task Force is Professor Hellmann and Professor Pyle pushing us to think about realistic ways to accomplish goals&mdash;to apply theory in the real world. Since then, as a deputy prosecutor and as a Foreign Service Officer, I strive to remember that my job isn&rsquo;t just to admire a problem, it&rsquo;s to solve it.&rdquo;</blockquote>
-                                    <div class="alum-map"><span>Yokohama, Japan</span></div>
+                                    <div class="alum-map yokohama"><span>Yokohama, Japan</span></div>
                                 </div>
                                 <div class="tf-alumni-box">
                                     <img class="headshot" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/' . $slug . '/andrew-lambert.jpg' ?>" alt="Andrew Lambert" width="100" />
                                     <h4>Andrew Lambert</h4>
                                     <p class="grad-year">1994</p>
                                     <blockquote>&ldquo;Task Force inspired me to think more broadly about global development outside of what is learned in a text book. That it is equally important to take into consideration and incorporate in any possible solution the wide array of beliefs and lived histories of individuals and groups in order to find solutions that can be adopted and sustained moving forward as a collective.&rdquo;</blockquote>
-                                    <div class="alum-map"><span>Cape Town, South Africa</span></div>
+                                    <div class="alum-map cape-town"><span>Cape Town, South Africa</span></div>
                                 </div>
                                 <div class="tf-alumni-box">
                                     <img class="headshot" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/' . $slug . '/gennie-gebhart.jpg' ?>" alt="Gennie Gebhart" width="100" />
                                     <h4>Gennie Gebhart</h4>
                                     <p class="grad-year">2013</p>
                                     <blockquote>&ldquo;Task Force taught me how to dive deep into a topic, write collaboratively about it for a professional audience, and balance tight deadlines and group priorities. At every stage of my early career since then, those skills have been valuable no matter what I'm working on or where I'm working on it.&rdquo;</blockquote>
-                                    <div class="alum-map"><span>San Francisco, CA</span></div>
+                                    <div class="alum-map san-fran"><span>San Francisco, CA</span></div>
                                 </div>
                                 <div class="tf-alumni-box hide-mobile">
                                     <img class="headshot" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/' . $slug . '/julia-yoon.jpg' ?>" alt="Julia Yoon" width="100" />
                                     <h4>Julia Yoon</h4>
-                                    <p class="grad-year">2017</p>
+                                    <p class="grad-year">2018</p>
                                     <blockquote>&ldquo;Task Force provided me with unique challenges that made me who I am today. The opportunities it provided led me to the start of a career I am proud of. I developed the right skills and attitude to make something of myself.&rdquo;</blockquote>
-                                    <div class="alum-map"><span>Bellevue, WA</span></div>
+                                    <div class="alum-map bellevue"><span>Bellevue, WA</span></div>
                                 </div>
                                 <div class="tf-alumni-box hide-mobile">
                                     <img class="headshot" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/' . $slug . '/teresa-hillis.jpg' ?>" alt="Teresa Hillis" width="100" />
                                     <h4>Teresa Hillis</h4>
                                     <p class="grad-year">2006</p>
                                     <blockquote>&ldquo;I was able to participate in the Winter 2005 Task Force on &lsquo;Intellectual Property and Access to Medicines in the Global South&rsquo; under Professor Angelina Godoy... &rdquo;</blockquote>
-                                    <div class="alum-map"><span>Seattle, WA</span></div>
+                                    <div class="alum-map seattle"><span>Seattle, WA</span></div>
                                 </div>
                                 <div class="tf-alumni-box hide-mobile">
                                     <img class="headshot" src="https://placekitten.com/g/100/100" alt="alumni name" />
                                     <h4>Alumni Name</h4>
                                     <p class="grad-year">2018</p>
                                     <blockquote>Cat ipsum dolor sit amet, cat gets stuck in tree firefighters try to get cat down.</blockquote>
-                                    <div class="alum-map"><span>LAT / LONG / LOCATION</span></div>
+                                    <div class="alum-map sample"><span>LAT / LONG / LOCATION</span></div>
                                 </div>
                             </div>
 
