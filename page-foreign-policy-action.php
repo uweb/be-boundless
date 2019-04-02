@@ -270,18 +270,18 @@
                                     <div class="alum-map"><span>San Francisco, CA</span></div>
                                 </div>
                                 <div class="tf-alumni-box hide-mobile">
-                                    <img class="headshot" src="https://placekitten.com/g/100/100" alt="alumni name" />
-                                    <h4>Alumni Name</h4>
-                                    <p class="grad-year">2018</p>
-                                    <blockquote>Cat ipsum dolor sit amet, cat gets stuck in tree firefighters try to get cat down.</blockquote>
-                                    <div class="alum-map"><span>LAT / LONG / LOCATION</span></div>
+                                    <img class="headshot" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/' . $slug . '/julia-yoon.jpg' ?>" alt="Julia Yoon" width="100" />
+                                    <h4>Julia Yoon</h4>
+                                    <p class="grad-year">2017</p>
+                                    <blockquote>&ldquo;Task Force provided me with unique challenges that made me who I am today. The opportunities it provided led me to the start of a career I am proud of. I developed the right skills and attitude to make something of myself.&rdquo;</blockquote>
+                                    <div class="alum-map"><span>Bellevue, WA</span></div>
                                 </div>
                                 <div class="tf-alumni-box hide-mobile">
-                                    <img class="headshot" src="https://placekitten.com/g/100/100" alt="alumni name" />
-                                    <h4>Alumni Name</h4>
-                                    <p class="grad-year">2018</p>
-                                    <blockquote>Cat ipsum dolor sit amet, cat gets stuck in tree firefighters try to get cat down.</blockquote>
-                                    <div class="alum-map"><span>LAT / LONG / LOCATION</span></div>
+                                    <img class="headshot" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/' . $slug . '/teresa-hillis.jpg' ?>" alt="Teresa Hillis" width="100" />
+                                    <h4>Teresa Hillis</h4>
+                                    <p class="grad-year">2006</p>
+                                    <blockquote>&ldquo;I was able to participate in the Winter 2005 Task Force on &lsquo;Intellectual Property and Access to Medicines in the Global South&rsquo; under Professor Angelina Godoy... &rdquo;</blockquote>
+                                    <div class="alum-map"><span>Seattle, WA</span></div>
                                 </div>
                                 <div class="tf-alumni-box hide-mobile">
                                     <img class="headshot" src="https://placekitten.com/g/100/100" alt="alumni name" />
