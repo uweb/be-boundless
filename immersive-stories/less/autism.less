@@ -65,47 +65,74 @@ html {
         color: #818181;
     }
 
-    .photo-block h2 {
-        font-size: 3vw;
-        color: white;
-        font-family: @headline;
-        font-weight: @ultra;
-        line-height: 1.1;
-        text-shadow: 0px 0px 3px rgba(37, 37, 37, 0.65);
-        .skew(-15deg,0);
-        position: absolute;
-        bottom: 20px;
+    .photo-block {
+        h2 {
+            font-size: 3vw;
+            color: white;
+            font-family: @headline;
+            font-weight: @ultra;
+            line-height: 1.1;
+            text-shadow: 0px 0px 3px rgba(37, 37, 37, 0.65);
+            .skew(-15deg,0);
+            position: absolute;
+            bottom: 20px;
 
-        &.answers {
-            width: 35%;
+            &.answers {
+                width: 35%;
 
-            @media (max-width: 900px) { width: 90%; }
+                @media (max-width: 900px) { width: 90%; }
+            }
+            &.learning {
+                width: 35%;
+
+                @media (max-width: 900px) { width: 90%; }
+            }
+            &.diagnosis, &.access {
+                width: 40%;
+
+                @media (max-width: 900px) { width: 90%; }
+            }
+            &.future {
+                width: 20%;
+
+                @media (max-width: 900px) { width: 90%; }
+            }
+
+            @media @phone-only { width: 90%; font-size: 7vw; left: 40px; }
+            @media (min-width: 601px) and (max-width: 900px) { width: 90%; font-size: 6vw; left: 40px; }
+            @media (min-width: 901px) and (max-width: 1400px) { font-size: 4vw; }
+            @media (min-width: 992px) and (max-width: 1092px) { left: 40px; }
+            @media (min-width: 1200px) and (max-width: 1300px) { left: 40px; }
         }
-        &.learning {
-            width: 35%;
 
-            @media (max-width: 900px) { width: 90%; }
+        p.caption {
+            position: absolute;
+            bottom: -50px;
+            z-index: 5;
+            margin-top: 0;
+
+            @media @phone-only { bottom: -70px; }
         }
-        &.diagnosis, &.access {
-            width: 40%;
-
-            @media (max-width: 900px) { width: 90%; }
-        }
-        &.future {
-            width: 20%;
-
-            @media (max-width: 900px) { width: 90%; }
-        }
-
-        @media @phone-only { width: 90%; font-size: 7vw; left: 40px; }
-        @media (min-width: 601px) and (max-width: 900px) { width: 90%; font-size: 6vw; left: 40px; }
-        @media (min-width: 901px) and (max-width: 1400px) { font-size: 4vw; }
-        @media (min-width: 992px) and (max-width: 1092px) { left: 40px; }
-        @media (min-width: 1200px) and (max-width: 1300px) { left: 40px; }
     }
 
     @media @tablet-landscape-up {
         h2.heading2 { color: #3d3d3d; }
+    }
+
+    p.caption {
+        font-style: italic;
+        font-size: 15px;
+        line-height: 1.5;
+        margin-top: 10px;
+
+        @media @phone-only {
+            padding: 0 20px;
+        }
+    }
+    .copy p.caption {
+        @media @phone-only {
+            padding: 0;
+        }
     }
 
     .quote-cite {
@@ -340,6 +367,17 @@ html {
  ******************/
 
 .photo-text-block {
+    &.gareth-img-vid {
+        .copy {
+            padding-top: 0;
+        }
+        p.caption {
+            margin-top: -25px;
+            margin-bottom: 40px;
+            padding: 0;
+        }
+    }
+
     @media @tablet-landscape-up {
         .container {
             width: 100%;
@@ -473,6 +511,7 @@ html {
     height: 70vh;
     width: 100%;
     position: relative;
+    margin-bottom: 40px;
 
     &.answers {
         background-image: url('@{autism}/looking-for-answers.jpg');
@@ -512,6 +551,7 @@ html {
 
     &.diagnosis {
         background-image: url('@{autism}/importance-early-diagnosis.jpg');
+        margin-bottom: 0;
 
         &:before {
             content: '';

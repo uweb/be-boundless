@@ -53,7 +53,7 @@
                             <div class="copy">
                                 <p>Gareth had a good day.</p>
 
-                                <p>His grandpa picked up him in the morning for a trip to the park, where the 6-year-old showed his prowess on the monkey bars. Back at home, he bounced through the door and headed down to the basement playroom with his brother and sister under the watchful eye of their parents, Bill and Alyssa Sunderland.</p>
+                                <p>His grandpa picked up him in the morning for a trip to the park, where the 6-year-old showed his prowess on the monkey bars. Back at home, he bounced through the door and headed down to the basement playroom with his brother and sister under the watchful eyes of their parents, Bill and Alyssa Sunderland.</p>
 
                                 <p>This could describe a typical Saturday for many kids in the United States. But for Gareth, who has autism, good days are precious.</p>
 
@@ -70,7 +70,7 @@
                                     <polygon fill="#FFFFFF" points="48.611,37.617 103.268,68.345 48.611,99.072 "/>
                                     </svg>
 
-                                    <p>Play full video</p>
+                                    <p>Watch Gareth&rsquo;s Story</p>
                                 </a>
                             </div>
                         </div><!-- .col-lg-12 .copy .grid -->
@@ -82,6 +82,7 @@
                 <div class="container">
                     <div class="row">
                         <h2 class="answers">Looking for answers</h2>
+                        <p class="caption">Gareth was diagnosed with autism spectrum disorder when he was about 2.</p>
                     </div><!-- .row -->
                 </div><!-- .container -->
             </section><!-- .photo-block -->
@@ -109,6 +110,7 @@
                 <div class="container">
                     <div class="row">
                         <h2 class="learning">Learning better by learning together</h2>
+                        <p class="caption">Children with and without disabilities learn and play together in the Haring Center&rsquo;s inclusive classrooms.</p>
                     </div><!-- .row -->
                 </div><!-- .container -->
             </section><!-- .photo-block -->
@@ -150,12 +152,13 @@
                 </div><!-- .container -->
             </section><!-- .photo-block -->
 
-            <section class="photo-text-block">
+            <section class="photo-text-block gareth-img-vid">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 grid">
                             <div class="img-first gareth arrow-left"></div>
                             <div class="copy">
+                                <p class="caption">The Sunderlands are working to help other kids access the same care their son received.</p>
                                 <p>When Gareth was about 2 years old, Haring Center staff recommended that he visit the UW&rsquo;s Center on Human Development and Disability (CHDD), where he could receive an official diagnosis of autism spectrum disorder and undergo genomic sequencing to find a potential genetic cause of his autism.</p>
 
                                 <p>This testing revealed that Gareth&rsquo;s delays were likely caused by a new mutation of the ZNF292 gene. Since then, Bill &mdash; who received his doctorate from the UW&rsquo;s Department of Physiology and Biophysics in 1998 &mdash; has worked with researchers at the UW and Seattle Children&rsquo;s Hospital to better understand the function of the gene.</p>
@@ -168,6 +171,7 @@
                             </div>
                             <div class="video-last video-placeholder">
                                 <a data-lity href="https://www.youtube.com/embed/UtlaTNI1TaU?autoplay=1&rel=0&showinfo=0"><img src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/autism/video-placeholder.jpg' ?>" alt="placeholder for video" width="500" /></a>
+                                <p class="caption">Gareth graduated from the Haring Center in a ceremony designed to include all students.</p>
                             </div>
                         </div><!-- .col-lg-12 .grid -->
                     </div><!-- .row -->
@@ -178,6 +182,7 @@
                 <div class="container">
                     <div class="row">
                         <h2 class="access">Helping more families access autism care</h2>
+                        <p class="caption">Every Saturday, Gareth&rsquo;s grandpa takes him to the park to climb as high as he can.</p>
                     </div><!-- .row -->
                 </div><!-- .container -->
             </section><!-- .photo-block -->
@@ -207,6 +212,7 @@
                 <div class="container">
                     <div class="row">
                         <h2 class="future">A more inclusive future</h2>
+                        <p class="caption">The Sunderland family in their playroom, from left: Yuri, Keziah, Alyssa, Bill and Gareth.</p>
                     </div><!-- .row -->
                 </div><!-- .container -->
             </section><!-- .photo-block -->
