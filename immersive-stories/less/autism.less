@@ -237,6 +237,7 @@ html {
 
     @media @phone-only {
         background-image: url('@{autism}/header-animated.gif');
+        background-position: center top;
     }
 
     &:before {
@@ -446,7 +447,16 @@ html {
                         text-align: center;
                         text-transform: uppercase;
                         position: relative;
+                        -ms-grid-row-align: center;
                         align-self: center;
+                        -ms-grid-column-align: center;
+                        justify-self: center;
+                        display: block;
+                        margin-top: 45%;
+
+                        @supports (grid-column-gap: 1rem) {
+                            margin-top: 0;
+                        }
 
                         p {
                             color: white;
@@ -464,6 +474,7 @@ html {
             .video-last {
                 -ms-grid-column: 3;
                 grid-column: 3;
+                -ms-grid-row-align: center;
                 align-self: center;
             }
 
@@ -478,6 +489,7 @@ html {
                     grid-column: 3;
                     -ms-grid-row: 1;
                     grid-row: 1;
+                    -ms-grid-row-align: center;
                     align-self: center;
                 }
             }
@@ -631,8 +643,6 @@ html {
         display: grid;
         -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        -ms-grid-column-gap: 5em;
-        grid-column-gap: 5em;
 
         .copy {
             -ms-grid-column: 1;
@@ -640,6 +650,7 @@ html {
             -ms-grid-row: 1;
             grid-row: 1;
             padding-bottom: 20px;
+            margin-right: 2.5em;
         }
 
         .quote-cite {
@@ -647,7 +658,16 @@ html {
             grid-column: 2;
             -ms-grid-row: 1;
             grid-row: 1;
+            -ms-grid-row-align: center;
             align-self: center;
+            margin-left: 2.5em;
+        }
+
+        @supports (grid-column-gap: 1rem) {
+            grid-column-gap: 5em;
+
+            .copy { margin-right: 0; }
+            .quote-cite { margin-left: 0; }
         }
     }
 }

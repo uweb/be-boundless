@@ -29,7 +29,7 @@
 
 <div id="immersive-body">
 
-    <section class="intro" id="intro-vid"><!--<div class="intro-rollover"></div>-->
+    <section class="intro" id="intro-vid">
             <div class="intro-body">
                 <div class="row">
                     <div class="col-md-6 col-lg-5 col-md-offset-1 col-xs-10 col-lg-offset-2 col-xs-offset-1" id="intro-text">
