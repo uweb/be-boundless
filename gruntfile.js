@@ -277,6 +277,7 @@ module.exports = function(grunt) {
               'js/libraries/prognroll.js',
               'immersive-stories/js/lity.js',
               'immersive-stories/js/slick.js',
+              'immersive-stories/js/leaflet.js',
               'immersive-stories/js/task-force.js',
           ],
           'immersive-stories/js/autism.min.js': [

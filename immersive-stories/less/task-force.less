@@ -10,7 +10,7 @@
 @import "../../immersive-stories/less/queries.less";
 @import "../../immersive-stories/less/lity.less";
 @import "../../immersive-stories/less/slideshow.less";
-// @import "../../immersive-stories/css/libraries/leaflet.css";
+@import "../../immersive-stories/css/libraries/leaflet.css";
 
 @taskforce: "../../immersive-stories/img/task-force";
 
@@ -88,7 +88,8 @@ html {
     }
 
     h2.tf.tf-map {
-        text-transform: uppercase;;
+        text-transform: uppercase;
+        margin-bottom: 40px;
     }
 
     h2.centered {
@@ -116,11 +117,54 @@ html {
         align-items: center;
         justify-content: center;
         height: calc(~"103vh - 171px");
-        background-image: url("@{taskforce}/masthead.jpg");
+        background-image: url("@{taskforce}/header.jpg");
         .background-cover(cover);
         background-position: center center;
         background-repeat: no-repeat;
         margin-bottom: 0;
+
+        #area-1, #area-2, #area-3, #area-4, #area-5 {
+            position: absolute;
+            z-index: 9999999;
+
+            &:hover {
+                background-color: rgba(255,255,255,0.1);
+            }
+        }
+
+        #area-1 {
+            width: 300px;
+            height: 150px;
+            top: 30%;
+            left: 15%;
+        }
+        #area-2 {
+            width: 200px;
+            height: 300px;
+            top: 40%;
+            left: 8%;
+        }
+
+        #area-3 {
+            width: 150px;
+            height: 250px;
+            top: 25%;
+            left: 65%;
+        }
+
+        #area-4 {
+            width: 300px;
+            height: 180px;
+            top: 55%;
+            left: 70%;
+        }
+
+        #area-5 {
+            width: 200px;
+            height: 200px;
+            top: 68%;
+            left: 35%;
+        }
 
         .intro-body {
             position: absolute;
@@ -220,69 +264,8 @@ html {
             color: white;
             text-transform: uppercase;
             text-align: center;
-            //width: 56%;
             margin: 0 auto;
             position: relative;
-
-            /*.letters-1, .letters-2, .letters-3 {
-                position: absolute;
-                margin: auto;
-                left: 0;
-                top: 0;
-                right: 0;
-                opacity: 0;
-                display: flex;
-
-                .will1 {
-                    font-size: 100px;
-
-                }
-                .q1 {
-                    font-size: 30px;
-
-                }
-            }
-
-            #pause {
-                position: absolute;
-                display: block;
-                text-indent: -999px;
-                overflow: hidden;
-                width: 45px;
-                height: 45px;
-                left: -200px;
-                top: 200px;
-                border: none;
-                background: url("@{img}/pause.svg") no-repeat 0 0 transparent;
-                z-index: 2;
-                &:hover,
-                &:focus {
-                    background-position-x: -47px;
-                }
-                &:focus {
-                    outline-color: rgb(59, 153, 252);
-                    outline-style: auto;
-                    outline-width: 5px;
-                }
-                @media (max-width:768px) {
-                    display: none;
-                }
-            }
-
-            &.paused {
-                #pause {
-                    background-position: 0 -49px;
-                    &:hover {
-                        background-position-x: -47px;
-                    }
-                    &:focus {
-                        outline-color: rgb(59, 153, 252);
-                        outline-style: auto;
-                        outline-width: 5px;
-                    }
-                }
-            }*/
-
         }
     }
 
@@ -320,7 +303,6 @@ html {
                     margin-top: 0;
                 }
             }
-
         }
 
         &.alumni {
@@ -358,8 +340,6 @@ html {
                 display: grid;
                 -ms-grid-columns: 0.5fr 1.5fr 1fr 0.5fr;
                 grid-template-columns: 0.5fr 1.5fr 1fr 0.5fr;
-                align-items: center;
-                justify-items: center;
 
                 @media @phone-only {
                     grid-template-columns: 1fr;
@@ -400,9 +380,7 @@ html {
                         max-width: 90%;
                     }
                 }
-                .img-resat .caption {
-                    margin: -2vw 0 0 3.5vw;
-
+                .img-resat .caption, .video-mark .caption {
                     @media @phone-only {
                         margin: -15px 0 0 30px;
                         line-height: 1;
@@ -413,6 +391,9 @@ html {
                     }
                 }
 
+                .img-resat .caption { margin: -2vw 0 0 3.5vw; }
+                .video-mark .caption { margin: 0; line-height: 1.3; padding-top: 1vw;}
+
                 .video-mark {
                     position: relative;
                     padding-right: 20px;
@@ -421,7 +402,7 @@ html {
 
                     a {
                         position: absolute;
-                        bottom: 35px;
+                        bottom: 65px;
                         left: 10px;
 
                         &:hover, &:active, &:focus {
@@ -440,7 +421,7 @@ html {
                     margin: 0;
                     font-family: "Encode Sans Compressed", sans-serif;
                     font-weight: 900;
-                    font-size: 3.4vw;
+                    font-size: 3vw;
                     line-height: 1.25;
                     text-transform: uppercase;
 
@@ -495,6 +476,30 @@ html {
                 }
             }
         }
+
+        &.maya .grid, &.mark .grid {
+            blockquote { margin-top: 10vw; }
+        }
+        &.resat .grid {
+            blockquote { margin-top: 5vw; }
+        }
+        &.maya .grid, &.mark .grid, &.resat .grid {
+            @supports (align-items: center) {
+                align-items: center;
+
+                blockquote {
+                    margin-top: 0;
+                }
+            }
+
+            @supports (justify-items: center) {
+                justify-items: center;
+
+                blockquote {
+                    margin-top: 0;
+                }
+            }
+        }
     }
 
     .copy {
@@ -505,9 +510,9 @@ html {
         }
     }
 
-    /******************
-     * World Map      *
-     ******************/
+    /*********************
+     * World Map/Leaflet *
+     ********************/
 
     .map-block {
         background-color: #E6E6E6;
@@ -528,6 +533,28 @@ html {
         @media @phone-only {
             display: none;
         }
+
+        #tfMap {
+            width:100%;
+            height: 500px;
+            background: none;
+
+            .leaflet-tooltip {
+                background: none;
+                border: none;
+                color: white;
+                box-shadow: 0 0 0;
+
+                .job-title {
+                    line-height: 1;
+                }
+
+                .location {
+                    font-style: italic;
+                    line-height: 1;
+                }
+            }
+        }
     }
 
     /******************
@@ -539,9 +566,6 @@ html {
         grid-template-columns: 1fr;
         -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-column-gap: 20px;
-        grid-row-gap: 40px;
-        margin-bottom: 40px;
 
         @media (min-width: 1600px) {
             -ms-grid-columns: 1fr 1fr;
@@ -549,6 +573,7 @@ html {
         }
 
         .tf-alumni-box {
+            margin-bottom: 40px;
             border-left: 10px solid @purple;
             background: black; // temp
             display: -ms-grid;
@@ -577,10 +602,12 @@ html {
                 -ms-grid-column: 1;
                 grid-column: 1;
                 -ms-grid-row: 1;
-                -ms-grid-row-span: 2;
-                grid-row: 1 / span 2;
+                -ms-grid-row-span: 4;
+                grid-row: 1 / span 4;
                 border-radius: 50%;
                 margin: 10px 10px 0 10px;
+                width: 100px;
+                height: 100px;
 
                 @media @phone-only {
                     margin-bottom: 10px;
@@ -593,14 +620,14 @@ html {
                 -ms-grid-row: 1;
                 grid-row: 1;
                 padding: 0;
-                margin: 0;
+                margin: 10px 0 0 0;
                 color: white;
                 text-transform: none;
                 font-weight: 900;
                 align-self: end;
                 font-family: "Encode Sans Compressed", sans-serif;
             }
-            .grad-year {
+            .alum-title {
                 -ms-grid-column: 2;
                 grid-column: 2;
                 -ms-grid-row: 2;
@@ -611,15 +638,26 @@ html {
                 font-size: 20px;
                 font-family: "Encode Sans Compressed", sans-serif;
             }
-            blockquote {
+            .grad-year {
                 -ms-grid-column: 2;
                 grid-column: 2;
                 -ms-grid-row: 3;
                 grid-row: 3;
+                padding: 0;
+                margin: 0;
+                color: white;
+                font-size: 20px;
+                font-family: "Encode Sans Compressed", sans-serif;
+            }
+            blockquote {
+                -ms-grid-column: 2;
+                grid-column: 2;
+                -ms-grid-row: 4;
+                grid-row: 4;
                 color: white;
                 border-left: 0 none;
                 padding: 0 10px 20px 0;
-                margin: 0;
+                margin: 20px 0 0 0;
                 font-family: "Encode Sans Compressed", sans-serif;
                 font-weight: 900;
                 font-size: 19px;
@@ -638,8 +676,8 @@ html {
                 -ms-grid-column: 3;
                 grid-column: 3;
                 -ms-grid-row: 1;
-                -ms-grid-row-span: 3;
-                grid-row: 1 / span 3;
+                -ms-grid-row-span: 4;
+                grid-row: 1 / span 4;
                 border-left: 5px solid @lightgold;
                 .background-cover(cover);
                 background-position: center center;
@@ -652,10 +690,6 @@ html {
 
                 &.cape-town {
                     background-image: url('@{taskforce}/cape-town-map.jpg');
-                }
-
-                &.san-fran {
-                    background-image: url('@{taskforce}/san-fran-map.jpg');
                 }
 
                 &.bellevue {
@@ -688,6 +722,13 @@ html {
                     border-top: 4px solid @lightgold;
                 }
             }
+        }
+
+        @supports (grid-gap: 1rem) {
+            grid-column-gap: 20px;
+            grid-row-gap: 40px;
+
+            .tf-alumni-box { margin: 0; }
         }
     }
 }
