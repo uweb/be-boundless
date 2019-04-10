@@ -29,11 +29,12 @@
 
 <div id="immersive-body">
     <section class="intro" id="intro-vid">
-        <span id="area-1" aria-hidden="true"></span>
-        <span id="area-2" aria-hidden="true"></span>
-        <span id="area-3" aria-hidden="true"></span>
-        <span id="area-4" aria-hidden="true"></span>
-        <span id="area-5" aria-hidden="true"></span>
+        <span id="area-1" class="areas" aria-hidden="true"></span>
+        <span id="area-2" class="areas" aria-hidden="true"></span>
+        <span id="area-3" class="areas" aria-hidden="true"></span>
+        <span id="area-4" class="areas" aria-hidden="true"></span>
+        <span id="area-5" class="areas" aria-hidden="true"></span>
+        <!-- <span id="pause-play-button" aria-hidden="true">pause/play</span> -->
         <div class="intro-body">
             <div class="row">
                 <div class="col-md-6" id="intro-text">

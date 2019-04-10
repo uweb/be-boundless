@@ -3,7 +3,6 @@ $(function () {
     /*************************
      *  Scroll progress bar  *
      *************************/
-
     $("#main_content").prognroll();
 
     // $("#scrollbar").hide(); //hide your div initially
@@ -36,7 +35,7 @@ $(function () {
      });
 
 
-    //prevent accessibility link from scrolling to top
+    // prevent accessibility link from scrolling to top
     $(".click").click(function(e){
         e.preventDefault();
     });
@@ -499,9 +498,23 @@ $(function () {
         },
         onEachFeature: onEachFeature
       }).addTo(mymap);
-
-
-
     });
+
+  //$('.areas').each(function(i, obj) {
+    //$(obj).animate({
+      //$(obj).addClass('active').fadeIn(5000).delay(5000).addClass('active');
+    //}
+    //});
+  //});
+
+  $('#area-1').animate({ opacity: 0.1 }, 400).delay(80).queue(function() {
+    $('#area-2').animate({ opacity: 0.1 }, 400).delay(80).queue(function() {
+      $('#area-4').animate({ opacity: 0.1 }, 400).delay(80).queue(function() {
+        $('#area-3').animate({ opacity: 0.1 }, 400).delay(80).queue(function() {
+          $('#area-5').animate({ opacity: 0.1 }, 400);
+        });
+      });
+    });
+  });
 
 });
