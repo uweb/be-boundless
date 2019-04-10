@@ -500,21 +500,26 @@ $(function () {
       }).addTo(mymap);
     });
 
-  //$('.areas').each(function(i, obj) {
-    //$(obj).animate({
-      //$(obj).addClass('active').fadeIn(5000).delay(5000).addClass('active');
-    //}
-    //});
-  //});
+  // header map areas
+  function toggleBars() {
+    $('#area-1').fadeIn(1000).fadeToggle(2000).delay(1000)
+    $('#area-2').fadeIn(2000).fadeToggle(2000).delay(2000)
+    $('#area-4').fadeIn(3000).fadeToggle(2000).delay(3000)
+    $('#area-3').fadeIn(4000).fadeToggle(2000).delay(4000)
+    $('#area-5').fadeIn(5000).fadeToggle(2000).delay(5000)
+    $('#area-10').fadeIn(5000).fadeToggle(2000).delay(6000)
+    $('#area-6').fadeIn(7000).fadeToggle(2000).delay(7000)
+    $('#area-9').fadeIn(8000).fadeToggle(2000).delay(8000)
+    $('#area-7').fadeIn(9000).fadeToggle(2000).delay(9000)
+    $('#area-8').fadeIn(10000).fadeToggle(2000).delay(10000)
+    setTimeout(function(){
+        toggleBars();
+    }, 10);
+  }
 
-  $('#area-1').animate({ opacity: 0.1 }, 400).delay(80).queue(function() {
-    $('#area-2').animate({ opacity: 0.1 }, 400).delay(80).queue(function() {
-      $('#area-4').animate({ opacity: 0.1 }, 400).delay(80).queue(function() {
-        $('#area-3').animate({ opacity: 0.1 }, 400).delay(80).queue(function() {
-          $('#area-5').animate({ opacity: 0.1 }, 400);
-        });
-      });
-    });
-  });
+  toggleBars();
+
+  //$('#area-2').hide();
+
 
 });

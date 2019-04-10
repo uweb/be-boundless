@@ -34,7 +34,11 @@
         <span id="area-3" class="areas" aria-hidden="true"></span>
         <span id="area-4" class="areas" aria-hidden="true"></span>
         <span id="area-5" class="areas" aria-hidden="true"></span>
-        <!-- <span id="pause-play-button" aria-hidden="true">pause/play</span> -->
+        <span id="area-6" class="areas" aria-hidden="true"></span>
+        <span id="area-7" class="areas" aria-hidden="true"></span>
+        <span id="area-8" class="areas" aria-hidden="true"></span>
+        <span id="area-9" class="areas" aria-hidden="true"></span>
+        <span id="area-10" class="areas" aria-hidden="true"></span>
         <div class="intro-body">
             <div class="row">
                 <div class="col-md-6" id="intro-text">
