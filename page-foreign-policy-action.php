@@ -72,22 +72,6 @@
                 </div><!-- .container -->
             </section><!-- .text-block -->
 
-            <section class="photo-text-block moving-type">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 video">
-
-                            Video placeholder
-
-                            <!--<div aria-hidden="true"><span class="letters-1"><span class="will1">Will</span> <span class="q1">you need armed protection to reach people safely?</span></span> <span class="letters-2"><span class="will2">Will</span> <span class="q2">some groups see you as a threat?</span></span> <span class="letters q3 letters-3">Should you even be doing this?</span> <button id="pause">Pause</button></div> -->
-
-                            <p class="screen-reader-only">Will you need armed protection to reach people safely? Will some groups see you as a threat? Should you even be doing this?</p>
-
-                        </div><!-- .col-lg-12 .grid -->
-                    </div><!-- .row -->
-                </div><!-- .container -->
-            </section><!-- .photo-text-block -->
-
             <section class="text-block">
                 <div class="container">
                     <div class="row">
