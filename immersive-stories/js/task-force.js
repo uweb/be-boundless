@@ -502,16 +502,16 @@ $(function () {
 
   // header map areas
   function toggleBars() {
-    $('#area-1').fadeIn(1000).fadeToggle(2000).delay(1000)
-    $('#area-2').fadeIn(2000).fadeToggle(2000).delay(2000)
-    $('#area-4').fadeIn(3000).fadeToggle(2000).delay(3000)
-    $('#area-3').fadeIn(4000).fadeToggle(2000).delay(4000)
-    $('#area-5').fadeIn(5000).fadeToggle(2000).delay(5000)
-    $('#area-10').fadeIn(5000).fadeToggle(2000).delay(6000)
-    $('#area-6').fadeIn(7000).fadeToggle(2000).delay(7000)
-    $('#area-9').fadeIn(8000).fadeToggle(2000).delay(8000)
-    $('#area-7').fadeIn(9000).fadeToggle(2000).delay(9000)
-    $('#area-8').fadeIn(10000).fadeToggle(2000).delay(10000)
+    $('#area-1').fadeIn(1000).fadeOut(5000).delay(1000)
+    $('#area-2').fadeIn(2000).fadeOut(5000).delay(2000)
+    $('#area-4').fadeIn(3000).fadeOut(5000).delay(3000)
+    $('#area-3').fadeIn(4000).fadeOut(5000).delay(4000)
+    $('#area-5').fadeIn(5000).fadeOut(5000).delay(5000)
+    $('#area-10').fadeIn(5000).fadeOut(5000).delay(6000)
+    $('#area-6').fadeIn(7000).fadeOut(5000).delay(7000)
+    $('#area-9').fadeIn(8000).fadeOut(5000).delay(8000)
+    $('#area-7').fadeIn(9000).fadeOut(5000).delay(9000)
+    $('#area-8').fadeIn(10000).fadeOut(5000).delay(10000)
     setTimeout(function(){
         toggleBars();
     }, 10);

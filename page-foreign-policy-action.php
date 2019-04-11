@@ -286,7 +286,7 @@
                                     <p class="alum-title">Infrastructure Sustainability and Resilience Specialist</p>
                                     <p class="grad-year">2011</p>
                                     <blockquote>&ldquo;Task Force gave me my first opportunity to see how policy shapes the world we live in and to engage with it in a hands-on way. This had a major influence on my career, as I saw the impact that appropriate policy can have on the people it is designed to serve and protect.&rdquo;</blockquote>
-                                    <div class="alum-map sample"><span>Copenhagen, Denmark</span></div>
+                                    <div class="alum-map denmark"><span>Copenhagen, Denmark</span></div>
                                 </div>
                                 <div class="tf-alumni-box hide-mobile">
                                     <img class="headshot" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/' . $slug . '/sarah-boone.jpg' ?>" alt="Sarah Boone" width="100" height="100" />
@@ -294,7 +294,7 @@
                                     <p class="alum-title">Senior Policy Analyst</p>
                                     <p class="grad-year">2013</p>
                                     <blockquote>&ldquo;The value of Task Force is the way it replicates the complex policymaking environment. It forced me and my team to grapple with the real ambiguities of policy work, preparing me well for my current role advising political decision-makers.&rdquo;</blockquote>
-                                    <div class="alum-map sample"><span>Wellington, New Zealand</span></div>
+                                    <div class="alum-map wellington"><span>Wellington, New Zealand</span></div>
                                 </div>
                                 <div class="tf-alumni-box hide-mobile">
                                     <img class="headshot" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/' . $slug . '/julia-yoon.jpg' ?>" alt="Julia Yoon" width="100" height="100" />
