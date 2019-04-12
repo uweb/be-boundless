@@ -122,7 +122,7 @@ $(function () {
           },
           { "type": "Feature",
             "geometry": {"type": "Point", "coordinates": [18.417396, -33.928992]},
-            "properties": {"location": "Cape Town, South Africa", "jobTitle": "Key Populations Senior Technical Advisor"}
+            "properties": {"location": "Cape Town, South Africa", "jobTitle": "Key Populations Senior Technical Adviser"}
           },
           { "type": "Feature",
             "geometry": {"type": "Point", "coordinates": [-87.624421, 41.875555]},
@@ -374,7 +374,7 @@ $(function () {
           },
           { "type": "Feature",
             "geometry": {"type": "Point", "coordinates": [-46.633308, -23.550520]},
-            "properties": {"location": "S&atilde;o Paulo, Brazil", "jobTitle": "CFO/Investor Relations"}
+            "properties": {"location": "S&atilde;o Paulo, Brazil", "jobTitle": "CFO, Investor Relations"}
           },
           { "type": "Feature",
             "geometry": {"type": "Point", "coordinates": [18.386687, 43.851977]},
@@ -382,7 +382,7 @@ $(function () {
           },
           { "type": "Feature",
             "geometry": {"type": "Point", "coordinates": [-122.330062, 47.603832]},
-            "properties": {"location": "Seattle, Washington", "jobTitle": "Ship's officer"}
+            "properties": {"location": "Seattle, Washington", "jobTitle": "Ship&rsquo;s Officer"}
           },
           { "type": "Feature",
             "geometry": {"type": "Point", "coordinates": [-14.452961, 14.475061]},
@@ -398,7 +398,7 @@ $(function () {
           },
           { "type": "Feature",
             "geometry": {"type": "Point", "coordinates": [49.083416, 8.367677]},
-            "properties": {"location": "Somalia", "jobTitle": "Deputy Director Horn of Africa"}
+            "properties": {"location": "Somalia", "jobTitle": "Deputy Director, Horn of Africa"}
           },
           { "type": "Feature",
             "geometry": {"type": "Point", "coordinates": [22.937506, -30.559483]},
@@ -458,7 +458,7 @@ $(function () {
           },
           { "type": "Feature",
             "geometry": {"type": "Point", "coordinates": [174.776230, -41.286461]},
-            "properties": {"location": "Wellington, New Zealand", "jobTitle": "Senior Quantitative Analyst"}
+            "properties": {"location": "Wellington, New Zealand", "jobTitle": "Senior Policy Analyst"}
           },
           { "type": "Feature",
             "geometry": {"type": "Point", "coordinates": [-120.310349, 47.42346]},
@@ -500,26 +500,76 @@ $(function () {
       }).addTo(mymap);
     });
 
+
   // header map areas
+  var tfGlobalID;
+  var tfPauseButton = document.getElementById('tfPauseButton');
+  var tfPlayButton = document.getElementById('tfPlayButton');
+
+  // all the "bars" on the header image
   function toggleBars() {
-    $('#area-1').fadeIn(1000).fadeOut(5000).delay(1000)
-    $('#area-2').fadeIn(2000).fadeOut(5000).delay(2000)
-    $('#area-4').fadeIn(3000).fadeOut(5000).delay(3000)
-    $('#area-3').fadeIn(4000).fadeOut(5000).delay(4000)
-    $('#area-5').fadeIn(5000).fadeOut(5000).delay(5000)
-    $('#area-10').fadeIn(5000).fadeOut(5000).delay(6000)
-    $('#area-6').fadeIn(7000).fadeOut(5000).delay(7000)
-    $('#area-9').fadeIn(8000).fadeOut(5000).delay(8000)
-    $('#area-7').fadeIn(9000).fadeOut(5000).delay(9000)
-    $('#area-8').fadeIn(10000).fadeOut(5000).delay(10000)
-    setTimeout(function(){
-        toggleBars();
-    }, 10);
+    $('#area-1').fadeIn(1000).fadeOut(5000).delay(1000);
+    $('#area-2').fadeIn(2000).fadeOut(5000).delay(2000);
+    $('#area-4').fadeIn(3000).fadeOut(5000).delay(3000);
+    $('#area-3').fadeIn(4000).fadeOut(5000).delay(4000);
+    $('#area-5').fadeIn(5000).fadeOut(5000).delay(5000);
+    $('#area-10').fadeIn(5000).fadeOut(5000).delay(6000);
+    $('#area-6').fadeIn(7000).fadeOut(5000).delay(7000);
+    $('#area-9').fadeIn(8000).fadeOut(5000).delay(8000);
+    $('#area-7').fadeIn(9000).fadeOut(5000).delay(9000);
+    $('#area-8').fadeIn(10000).fadeOut(5000).delay(10000);
+    tfGlobalID = window.requestAnimationFrame(toggleBars);
   }
 
-  toggleBars();
+  // pause button event listener
+  function tfPauseButtonEventListener() {
+    tfPauseButton.addEventListener('click', function() {
+      tfPauseButtonAction();
+      tfPauseButtonEventListener();
+    });
+  }
 
-  //$('#area-2').hide();
+  // play button event listener
+  function tfPlayButtonEventListener() {
+    tfPlayButton.addEventListener('click', function() {
+      tfPlayButtonAction();
+      tfPlayButtonEventListener();
+    });
+  }
 
+  // initally start the animation when the page loads
+  $(document).ready(function() {
+    tfGlobalID = window.requestAnimationFrame(toggleBars);
+
+    tfPauseButtonEventListener();
+  });
+
+  // pause the animation
+  function tfPauseButtonAction() {
+    $('#area-1').stop(true, false);
+    $('#area-2').stop(true, false);
+    $('#area-4').stop(true, false);
+    $('#area-3').stop(true, false);
+    $('#area-5').stop(true, false);
+    $('#area-10').stop(true, false);
+    $('#area-6').stop(true, false);
+    $('#area-9').stop(true, false);
+    $('#area-7').stop(true, false);
+    $('#area-8').stop(true, false);
+    window.cancelAnimationFrame(tfGlobalID);
+
+    $(tfPauseButton).hide();
+    $(tfPlayButton).show();
+    tfPlayButtonEventListener();
+  }
+
+  // restart the animation
+  function tfPlayButtonAction() {
+    tfGlobalID = window.requestAnimationFrame(toggleBars);
+
+    $(tfPlayButton).hide();
+    $(tfPauseButton).show();
+    tfPauseButtonEventListener();
+  }
 
 });

@@ -89,7 +89,7 @@ html {
 
     h2.tf.tf-map {
         text-transform: uppercase;
-        margin-bottom: 40px;
+        margin-bottom: 10px;
     }
 
     h2.centered {
@@ -198,6 +198,23 @@ html {
             height: 100px;
             top: 90%;
             left: 90%;
+        }
+
+        button#tfPauseButton, button#tfPlayButton {
+            z-index:999999999;
+            background: none;
+            border: 0 none;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        button#tfPlayButton {
+            display: none;
+        }
+
+        button#tfPauseButton {
+            color: #fff;
         }
 
 
@@ -542,6 +559,7 @@ html {
             width:100%;
             height: 500px;
             background: none;
+            margin-top: 40px;
 
             .leaflet-tooltip {
                 background: none;
@@ -606,8 +624,8 @@ html {
                 -ms-grid-column: 1;
                 grid-column: 1;
                 -ms-grid-row: 1;
-                -ms-grid-row-span: 4;
-                grid-row: 1 / span 4;
+                -ms-grid-row-span: 2;
+                grid-row: 1 / span 2;
                 border-radius: 50%;
                 margin: 10px 10px 0 10px;
                 width: 100px;
@@ -642,17 +660,6 @@ html {
                 font-size: 20px;
                 font-family: "Encode Sans Compressed", sans-serif;
             }
-            .grad-year {
-                -ms-grid-column: 2;
-                grid-column: 2;
-                -ms-grid-row: 3;
-                grid-row: 3;
-                padding: 0;
-                margin: 0;
-                color: white;
-                font-size: 20px;
-                font-family: "Encode Sans Compressed", sans-serif;
-            }
             blockquote {
                 -ms-grid-column: 2;
                 grid-column: 2;
@@ -661,9 +668,9 @@ html {
                 color: white;
                 border-left: 0 none;
                 padding: 0 10px 20px 0;
-                margin: 20px 0 0 0;
+                margin: 10px 0 0 0;
                 font-family: "Encode Sans Compressed", sans-serif;
-                font-weight: 900;
+                font-weight: 600;
                 font-size: 19px;
 
                 @media @phone-only {
@@ -672,7 +679,7 @@ html {
                     grid-column: 1 / span 2;
                     -ms-grid-row: 3;
                     grid-row: 3;
-                    margin: 60px 0 30px;
+                    margin: 20px 0 30px;
                     padding: 0 10px;
                 }
             }
@@ -780,9 +787,6 @@ html {
  .bar {
     background-color: #E0E0E0 !important;
  }
-
-
-
 
 /*****************
  * Giving Widget *

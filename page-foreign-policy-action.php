@@ -2,8 +2,8 @@
 
         $slug = 'task-force';
         $twitter_photo = "http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/" . $slug . "/twitter-card.jpg"; // NEED
-        $twitter_title = ''; // NEED
-        $twitter_description = ''; // NEED
+        $twitter_title = 'Policy in action';
+        $twitter_description = 'Through the Task Force program, students in the Jackson School of International Studies tackle critical policy challenges &mdash; and set their career paths in motion.';
         $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
         $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/" . $slug . ".css' type='text/css' media='all' />";
         $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/" . $slug . ".min.js' type='text/javascript'></script>";
@@ -39,6 +39,21 @@
         <span id="area-8" class="areas" aria-hidden="true"></span>
         <span id="area-9" class="areas" aria-hidden="true"></span>
         <span id="area-10" class="areas" aria-hidden="true"></span>
+        <button id="tfPauseButton" aria-hidden="true">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="50px" height="50px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131" xml:space="preserve">
+              <ellipse fill="none" stroke="#FFFFFF" stroke-width="7.8281" stroke-miterlimit="10" cx="68.399" cy="68.344" rx="57.675" ry="59.214"/>
+              <line id='line1' x1="60" y1="50" x2="60" y2="90" style="stroke-width:5px;stroke:white;stroke-linecap: round;" />
+              <line id='line2' x1="80" y1="50" x2="80" y2="90" style="stroke-width:5px;stroke:white;stroke-linecap: round;" />
+            </svg>
+        </button>
+        <button id="tfPlayButton" aria-hidden="true">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="50px" height="50px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131" xml:space="preserve">
+                <ellipse fill="none" stroke="#FFFFFF" stroke-width="7.8281" stroke-miterlimit="10" cx="68.399" cy="68.344" rx="57.675" ry="59.214"/>
+                <polygon fill="#FFFFFF" points="48.611,37.617 103.268,68.345 48.611,99.072 "/>
+            </svg>
+        </button>
         <div class="intro-body">
             <div class="row">
                 <div class="col-md-6" id="intro-text">
@@ -117,7 +132,7 @@
                         <div class="col-md-10 col-md-offset-1 copy">
                             <h2 class="tf">Learning the world of policy</h2>
                             <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/' . $slug . '/heading-underline.jpg' ?>" class="tf hr" />
-                            <p>Task Force was founded in 1983 by Professor Emeritus Donald C. Hellmann, then director of the international studies program. In gratitude for a generous gift from the Hellmann family, the Jackson School later renamed the program in his honor.</p>
+                            <p>Task Force was founded in 1983 by Professor Emeritus Donald C. Hellmann, then director of the international studies program.  In gratitude for a generous gift from Hellmann&rsquo;s son Jack and daughter-in-law Betsy, the Jackson School later renamed the program in his honor.</p>
 
                             <p>Hellmann worked in international relations for decades. His experiences led to his idea that the best way to prepare students for the field was to help them test the waters.</p>
 
@@ -187,7 +202,7 @@
                                         <polygon fill="#FFFFFF" points="48.611,37.617 103.268,68.345 48.611,99.072 "/>
                                     </svg>
                                 </a>
-                                <p class="caption reverse"><strong>Mark Ward</strong>, Task Force instructor and former Foreign Service Career Minister </p>
+                                <p class="caption reverse"><strong>Mark Ward</strong>, Task Force instructor and former Foreign Service career minister</p>
                             </div>
 
                             <blockquote class="gold">I&rsquo;ve seen what humanitarian aid can do, how politicized and manipulated it can be.</blockquote>
@@ -202,9 +217,9 @@
                         <div class="col-md-10 col-md-offset-1 copy">
                             <h2 class="tf">Next steps for Task Force</h2>
                             <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/' . $slug . '/heading-underline.jpg' ?>" class="tf hr" />
-                            <p>After graduation, Sullivan plans to either start working with an NGO or the Foreign Service or get her master&rsquo;s degree, she says. She credits the Jackson School, including her Hellmann Scholar Award, for making this path possible.</p>
+                            <p>After graduation, Sullivan plans to either start working with an NGO or the Foreign Service or get her master&rsquo;s degree, she says. She credits the Jackson School, including her Hellmann Scholar Award, for making those paths possible.</p>
 
-                            <p>That award is part of the <a href="http://giving.uw.edu/make-a-gift/?source_typ=3&source=HELLEX">Hellmann Fund for Innovation and Excellence</a>, which also supports the Task Force program. In the future, more funding will be needed to ensure that Task Force can continue educating global citizens who are equipped to make a difference in our politically intricate world.</p>
+                            <p>That award is part of the the Donald C. Hellmann Task Force Endowment. In the future, more funding will be needed to ensure that Task Force can continue educating global citizens who are equipped to make a difference in our politically intricate world.</p>
 
                             <p>In particular, the school wants to expand the number of sections held abroad. One Task Force takes place in Italy, and Kasaba hopes to add other countries. A major part of this effort would be providing travel scholarships so that students from any financial background can participate.</p>
 
@@ -225,6 +240,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <h2 class="tf tf-map">The Global Reach of Task Force</h2>
+                            <p>Thousands of UW students have taken part in the Task Force program. See below to find out where some of them landed after graduation.</p>
                             <div id="tfMap"></div>
                         </div><!-- .col-md-10 .col-md-offset-1 -->
                     </div><!-- .row -->
@@ -241,50 +257,44 @@
                             <div class="tf-alumni-boxes">
                                 <div class="tf-alumni-box">
                                     <img class="headshot" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/' . $slug . '/carmela-conroy.jpg' ?>" alt="Carmela Conroy" width="100" height="100" />
-                                    <h4>Carmela Conroy</h4>
-                                    <p class="alum-title">Director, Foreign Service Institute Japanese Field School</p>
-                                    <p class="grad-year">1984</p>
+                                    <h4>Carmela Conroy, &rsquo;84</h4>
+                                    <p class="alum-title">Director, Japanese Field School, Foreign Service Institute</p>
                                     <blockquote>&ldquo;I remember Professor Hellmann and Professor Pyle pushing us to think about realistic ways to accomplish goals. As a deputy prosecutor and Foreign Service officer, I strive to remember that my job isn&rsquo;t just to admire a problem &mdash; it&rsquo;s to solve it.&rdquo;</blockquote>
                                     <div class="alum-map yokohama"><span>Yokohama, Japan</span></div>
                                 </div>
                                 <div class="tf-alumni-box">
                                     <img class="headshot" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/' . $slug . '/andrew-lambert.jpg' ?>" alt="Andrew Lambert" width="100" height="100" />
-                                    <h4>Andrew Lambert</h4>
+                                    <h4>Andrew Lambert, &rsquo;94</h4>
                                     <p class="alum-title">Key Populations Senior Technical Adviser</p>
-                                    <p class="grad-year">1994</p>
                                     <blockquote>&ldquo;Task Force inspired me to think about global development outside of what is in a textbook. In order to find solutions that can be adopted, it is important to incorporate the wide array of beliefs and lived histories of individuals and groups.&rdquo;</blockquote>
                                     <div class="alum-map cape-town"><span>Cape Town, South Africa</span></div>
                                 </div>
 
                                 <div class="tf-alumni-box">
                                     <img class="headshot" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/' . $slug . '/teresa-hillis.jpg' ?>" alt="Teresa Hillis" width="100" height="100" />
-                                    <h4>Teresa Hillis</h4>
+                                    <h4>Teresa Hillis, &rsquo;06</h4>
                                     <p class="alum-title">Director, 30/30 Project</p>
-                                    <p class="grad-year">2006</p>
                                     <blockquote>&ldquo;I participated in the &lsquo;Intellectual Property and Access to Medicines in the Global South&rsquo; Task Force, and the topic of access to quality health care has continued to be a defining point in my career. I&rsquo;m currently wrapping up the 30/30 Project, which helps fund and build health-care facilities in communities that are impacted by HIV/AIDS.&rdquo;</blockquote>
                                     <div class="alum-map seattle"><span>Seattle, WA</span></div>
                                 </div>
                                 <div class="tf-alumni-box hide-mobile">
                                     <img class="headshot" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/' . $slug . '/geoffrey-morgan.jpg' ?>" alt="Geoffrey Morgan" width="100" height="100" />
-                                    <h4>Geoffrey Morgan</h4>
+                                    <h4>Geoffrey Morgan, &rsquo;11</h4>
                                     <p class="alum-title">Infrastructure Sustainability and Resilience Specialist</p>
-                                    <p class="grad-year">2011</p>
                                     <blockquote>&ldquo;Task Force gave me my first opportunity to see how policy shapes the world we live in and to engage with it in a hands-on way. This had a major influence on my career, as I saw the impact that appropriate policy can have on the people it is designed to serve and protect.&rdquo;</blockquote>
                                     <div class="alum-map denmark"><span>Copenhagen, Denmark</span></div>
                                 </div>
                                 <div class="tf-alumni-box hide-mobile">
                                     <img class="headshot" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/' . $slug . '/sarah-boone.jpg' ?>" alt="Sarah Boone" width="100" height="100" />
-                                    <h4>Sarah Boone</h4>
+                                    <h4>Sarah Boone, &rsquo;13</h4>
                                     <p class="alum-title">Senior Policy Analyst</p>
-                                    <p class="grad-year">2013</p>
                                     <blockquote>&ldquo;The value of Task Force is the way it replicates the complex policymaking environment. It forced me and my team to grapple with the real ambiguities of policy work, preparing me well for my current role advising political decision-makers.&rdquo;</blockquote>
                                     <div class="alum-map wellington"><span>Wellington, New Zealand</span></div>
                                 </div>
                                 <div class="tf-alumni-box hide-mobile">
                                     <img class="headshot" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/' . $slug . '/julia-yoon.jpg' ?>" alt="Julia Yoon" width="100" height="100" />
-                                    <h4>Julia Yoon</h4>
+                                    <h4>Julia Yoon, &rsquo;18</h4>
                                     <p class="alum-title">Associate Security Engineer</p>
-                                    <p class="grad-year">2018</p>
                                     <blockquote>&ldquo;Task Force provided me with unique challenges that made me who I am today. The opportunities it provided led me to the start of a career I am proud of. I developed the right skills and attitude to make something of myself.&rdquo;</blockquote>
                                     <div class="alum-map bellevue"><span>Bellevue, WA</span></div>
                                 </div>
