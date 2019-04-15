@@ -107,7 +107,8 @@ html {
 
         p.caption {
             position: absolute;
-            bottom: -50px;
+            bottom: -40px;
+            right: 20px;
             z-index: 5;
             margin-top: 0;
 
@@ -352,17 +353,6 @@ html {
  ******************/
 
 .photo-text-block {
-    &.gareth-img-vid {
-        .copy {
-            padding-top: 0;
-        }
-        p.caption {
-            margin-top: -25px;
-            margin-bottom: 40px;
-            padding: 0;
-        }
-    }
-
     @media @tablet-landscape-up {
         .container {
             width: 100%;
@@ -458,6 +448,8 @@ html {
                 align-self: center;
 
                 iframe[src*="youtube.com"] { margin: 0; }
+                
+                .caption { padding-right: 10px; }
             }
 
             .quote-cite {
@@ -499,6 +491,10 @@ html {
         @media @tablet-landscape-up {
             padding: 40px 60px;
         }
+    }
+
+    &.gareth-img-vid .copy {
+        padding-top: 60px;
     }
 }
 

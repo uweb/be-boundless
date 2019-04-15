@@ -27,7 +27,7 @@
 <div id="scrollbar"><span></span><img class="grayW" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/W-Logo_gray.png' ?>"></div>
 
 <div id="immersive-body">
-    <section class="intro">
+    <section class="intro" id="intro-vid">
         <div class="intro-body">
             <div class="row">
                 <div class="col-md-6 col-lg-5 col-md-offset-1 col-xs-10 col-lg-offset-2 col-xs-offset-1" id="intro-text">
@@ -146,6 +146,7 @@
                 <div class="container">
                     <div class="row">
                         <h2 class="diagnosis">The importance of early diagnosis</h2>
+                        <p class="caption">The Sunderlands are working to help other kids access the same care their son received.</p>
                     </div><!-- .row -->
                 </div><!-- .container -->
             </section><!-- .photo-block -->
@@ -156,7 +157,6 @@
                         <div class="col-lg-12 grid">
                             <div class="img-first gareth arrow-left"></div>
                             <div class="copy">
-                                <p class="caption">The Sunderlands are working to help other kids access the same care their son received.</p>
                                 <p>When Gareth was about 2 years old, Haring Center staff recommended that he visit the UW&rsquo;s Center on Human Development and Disability (CHDD), where he could receive an official diagnosis of autism spectrum disorder and undergo genomic sequencing to find a potential genetic cause of his autism.</p>
 
                                 <p>This testing revealed that Gareth&rsquo;s delays were likely caused by a new mutation of the ZNF292 gene. Since then, Bill &mdash; who received his doctorate from the UW&rsquo;s Department of Physiology and Biophysics in 1998 &mdash; has worked with researchers at the UW and Seattle Children&rsquo;s Hospital to better understand the function of the gene.</p>
