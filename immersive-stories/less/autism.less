@@ -186,13 +186,6 @@ html {
             }
 
             blockquote { text-align: center; }
-
-            /*blockquote:before {
-                display: inline;
-                top: 12px;
-                position: relative;
-                left: -10px;
-            }*/
         }
         &.center-mobile {
             @media (max-width: 900px) {
@@ -201,13 +194,6 @@ html {
                 text-align: center;
 
                 blockquote { text-align: center; }
-
-                /*blockquote:before {
-                    display: inline;
-                    top: 12px;
-                    position: relative;
-                    left: -10px;
-                }*/
             }
         }
         &.bottom-quote { margin-bottom: 80px; }
@@ -230,14 +216,16 @@ html {
     background-position: center top;
     margin-bottom: 0;
 
+    .mobile-only { display: none; }
+
     @media (max-width: 768px) {
         height: calc(100vh);
-        background-position: 38% center;
+        /*background-position: 38% center;*/
+        background-position: top center;
     }
 
     @media @phone-only {
         background-image: url('@{autism}/header-animated.gif');
-        background-position: center top;
     }
 
     &:before {
@@ -289,8 +277,6 @@ html {
                 width: 68%;
             }
         }
-
-
 
         @media (min-width: 992px) {
             #intro-text:after {
@@ -360,12 +346,6 @@ html {
  .bar {
     background-color: #E0E0E0 !important;
  }
-
-/**********************
- * Videos and YouTube *
- **********************/
-
-
 
 /******************
  * Content Blocks *
@@ -476,6 +456,8 @@ html {
                 grid-column: 3;
                 -ms-grid-row-align: center;
                 align-self: center;
+
+                iframe[src*="youtube.com"] { margin: 0; }
             }
 
             .quote-cite {
@@ -533,7 +515,6 @@ html {
         background-image: url('@{autism}/looking-for-answers.jpg');
 
         @media @phone-only {
-            //background-position: 65% center;
             background-image: url('@{autism}/looking-for-answers-mobile.jpg');
         }
 
@@ -560,7 +541,6 @@ html {
         }
 
         @media @phone-only {
-            //background-position: 0 center;
             background-image: url('@{autism}/learning-better-together-mobile.jpg');
         }
     }
@@ -584,7 +564,6 @@ html {
         }
 
         @media @phone-only {
-            //background-position: 80% center;
             background-image: url('@{autism}/importance-early-diagnosis-mobile.jpg');
         }
     }
@@ -593,7 +572,6 @@ html {
         background-image: url('@{autism}/helping-families-access-care.jpg');
 
         @media @phone-only {
-            //background-position: 65% center;
             background-image: url('@{autism}/helping-families-access-care-mobile.jpg');
         }
     }
@@ -687,5 +665,3 @@ html {
         height: 100vh;
     }
  }
-
-

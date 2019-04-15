@@ -3,7 +3,7 @@
         $slug = 'autism';
         $twitter_photo = "http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/" . $slug . "/twitter-card.jpg"; // NEED
         $twitter_title = 'Caring for every child';
-        $twitter_description = ''; // NEED
+        $twitter_description = 'The Sunderlands were changed forever by the UW&rsquo;s groundbreaking support for children with autism. Now they want to help other families access the same opportunities.';
         $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
         $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/" . $slug . ".css' type='text/css' media='all' />";
         $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/" . $slug . ".min.js' type='text/javascript'></script>";
@@ -26,19 +26,17 @@
 <!-- INSERT SCROLL BAR -->
 <div id="scrollbar"><span></span><img class="grayW" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/W-Logo_gray.png' ?>"></div>
 
-
 <div id="immersive-body">
-
-    <section class="intro" id="intro-vid">
-            <div class="intro-body">
-                <div class="row">
-                    <div class="col-md-6 col-lg-5 col-md-offset-1 col-xs-10 col-lg-offset-2 col-xs-offset-1" id="intro-text">
-                        <h1>Caring for Every Child</h1>
-                        <span class="udub-slant"><span></span></span>
-                        <p>The Sunderlands were changed forever by the UW&rsquo;s groundbreaking support for children with autism. Now they want to help other families access the same opportunities.</p>
-                    </div>
-                </div><!-- .row -->
-            </div><!-- .intro-body -->
+    <section class="intro">
+        <div class="intro-body">
+            <div class="row">
+                <div class="col-md-6 col-lg-5 col-md-offset-1 col-xs-10 col-lg-offset-2 col-xs-offset-1" id="intro-text">
+                    <h1>Caring for Every Child</h1>
+                    <span class="udub-slant"><span></span></span>
+                    <p>The Sunderlands were changed forever by the UW&rsquo;s groundbreaking support for children with autism. Now they want to help other families access the same opportunities.</p>
+                </div>
+            </div><!-- .row -->
+        </div><!-- .intro-body -->
     </section><!-- .intro #intro-vid -->
 
 
@@ -169,8 +167,8 @@
 
                                 <p>Those few years can make a huge difference. &ldquo;Evidence-based early intervention has been shown to move the needle tremendously,&rdquo; Estes says &mdash; and the earlier a child receives those interventions, the more effective they are.</p>
                             </div>
-                            <div class="video-last video-placeholder">
-                                <a data-lity href="https://www.youtube.com/embed/UtlaTNI1TaU?autoplay=1&rel=0&showinfo=0"><img src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/autism/video-placeholder.jpg' ?>" alt="placeholder for video" width="500" /></a>
+                            <div class="video-last">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/rUL8YiCQZ6g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 <p class="caption">Gareth graduated from the Haring Center in a ceremony designed to include all students.</p>
                             </div>
                         </div><!-- .col-lg-12 .grid -->
