@@ -447,8 +447,26 @@ html {
                 -ms-grid-row-align: center;
                 align-self: center;
 
-                iframe[src*="youtube.com"] { margin: 0; }
-                
+                &.gareth {
+                    position: relative;
+
+                    a {
+                        position: absolute;
+                        bottom: 55px;
+                        left: 10px;
+
+                        &:hover, &:active, &:focus {
+                            p { color: @lightgold; }
+                            ellipse { stroke: @lightgold; }
+                            polygon { fill: @lightgold; }
+                        }
+
+                        @media (min-width: 900px) and (max-width: 970px) {
+                            bottom: 75px;
+                        }
+                        p { color: white; }
+                    }
+                }
                 .caption { padding-right: 10px; }
             }
 
@@ -495,6 +513,48 @@ html {
 
     &.gareth-img-vid .copy {
         padding-top: 60px;
+    }
+
+    .video-last {
+        @media (min-width: 600px) and (max-width: 899px) {
+            &.gareth {
+                position: relative;
+
+                a {
+                    position: absolute;
+                    bottom: 35px;
+                    left: 20%;
+                    text-align: left;
+
+                    &:hover, &:active, &:focus {
+                        p { color: @lightgold; }
+                        ellipse { stroke: @lightgold; }
+                        polygon { fill: @lightgold; }
+                    }
+                    p { color: white; }
+                }
+            }
+            .caption { padding-right: 10px; }
+        }
+        @media @phone-only {
+            &.gareth {
+                position: relative;
+
+                a {
+                    position: absolute;
+                    bottom: 45px;
+                    left: 10%;
+                    text-align: left;
+
+                    &:hover, &:active, &:focus {
+                        p { color: @lightgold; }
+                        ellipse { stroke: @lightgold; }
+                        polygon { fill: @lightgold; }
+                    }
+                    p { color: white; }
+                }
+            }
+        }
     }
 }
 

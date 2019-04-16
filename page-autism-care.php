@@ -90,13 +90,13 @@
                     <div class="row">
                         <div class="col-lg-12 grid">
                             <div class="copy">
-                                <p>&ldquo;We knew something wasn&rsquo;t right as early as six months,&rdquo; says Alyssa. Gareth was a happy baby who showed signs of growth and language development, but not in the usual forward trajectory. &ldquo;He would say a word or gain a skill, then lose another,&rdquo; she says.</p>
+                                <p>&ldquo;We knew something wasn&rsquo;t right as early as seven months,&rdquo; says Alyssa. Gareth was a happy baby who showed signs of growth and language development, but not in the usual forward trajectory. &ldquo;He would say a word or gain a skill, then lose another,&rdquo; she says.</p>
                                 <p>When Gareth was 15 months old, the Sunderlands&rsquo; pediatrician recommended that he be screened for developmental delays through a birth-to-three program. One option stood out immediately: the UW&rsquo;s <a href="https://haringcenter.org/">Haring Center for Inclusive Education</a>.</p>
                                 <p>&ldquo;We knew the UW well since Bill earned his Ph.D. there, but we&rsquo;d never heard of the Haring Center,&rdquo; says Alyssa. &ldquo;We didn&rsquo;t know just how lucky we were in making that decision.&rdquo;</p>
                             </div>
 
                             <div class="quote-cite center-mobile top-quote">
-                                <blockquote>We knew something wasn&rsquo;t right as early as six months.</blockquote>
+                                <blockquote>We knew something wasn&rsquo;t right as early as seven months.</blockquote>
                                 <cite>&mdash; Alyssa Sunderland</cite>
                             </div>
                         </div><!-- .col-lg-12 .copy .grid -->
@@ -167,8 +167,18 @@
 
                                 <p>Those few years can make a huge difference. &ldquo;Evidence-based early intervention has been shown to move the needle tremendously,&rdquo; Estes says &mdash; and the earlier a child receives those interventions, the more effective they are.</p>
                             </div>
-                            <div class="video-last">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/rUL8YiCQZ6g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="video-last gareth">
+                                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/' . $slug . '/gareth-graduation.jpg' ?>" />
+                                <a class="play-video" data-lity href="https://www.youtube.com/embed/rUL8YiCQZ6g?autoplay=1&rel=0&showinfo=0">
+                                    <svg version="1.1" id="gareth-graduation-video" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         width="80px" height="80px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131"
+                         xml:space="preserve">
+                                    <ellipse fill="none" stroke="#FFFFFF" stroke-width="7.8281" stroke-miterlimit="10" cx="68.399" cy="68.344" rx="57.675" ry="59.214"/>
+                                    <polygon fill="#FFFFFF" points="48.611,37.617 103.268,68.345 48.611,99.072 "/>
+                                    </svg>
+
+                                    <p>Watch Gareth&rsquo;s Graduation</p>
+                                </a>                                
                                 <p class="caption">Gareth graduated from the Haring Center in a ceremony designed to include all students.</p>
                             </div>
                         </div><!-- .col-lg-12 .grid -->
