@@ -233,7 +233,7 @@
 
                             <p>At the UW, they&rsquo;ve dedicated philanthropic support to Access to On-Time Intervention, a partnership between the Haring Center and the UW Autism Center. The project, which launched in May 2018, enables researchers and educators to develop a program for helping children from low-income and underserved families connect with autism intervention, support and education.</p>
 
-                            <p>The Sunderlands have also joined UW Foundation Board member Mike Halperin, M.D., in supporting the recently announced Autism Spectrum 360 Initiative, which aims to foster collaboration between local organizations that focus on autism and to expand resources for families across Washington state.</p>
+                            <p>The Sunderlands have also joined UW Foundation Board member Mike Halperin, M.D., in supporting the recently announced Autism Spectrum 360 Initiative, which aims to foster collaboration between Seattle Children&rsquo;s and local organizations that focus on autism and to expand resources for families across Washington state.</p>
 
                             <p>&ldquo;Very few families are as lucky as we are,&rdquo; says Bill. &ldquo;There are a lot of kids who could benefit from the services Gareth received, and there&rsquo;s no reason why they shouldn&rsquo;t be easily accessible.&rdquo;</p>
 
