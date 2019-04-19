@@ -39,7 +39,7 @@
         <span id="area-8" class="areas" aria-hidden="true"></span>
         <span id="area-9" class="areas" aria-hidden="true"></span>
         <span id="area-10" class="areas" aria-hidden="true"></span>
-        <button id="tfPauseButton" aria-hidden="true">
+        <button id="tfPauseButton" aria-hidden="true" title="Pause animation" alt="Pause animation">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="50px" height="50px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131" xml:space="preserve">
               <ellipse fill="none" stroke="#FFFFFF" stroke-width="7.8281" stroke-miterlimit="10" cx="68.399" cy="68.344" rx="57.675" ry="59.214"/>
@@ -47,7 +47,7 @@
               <line id='line2' x1="80" y1="50" x2="80" y2="90" style="stroke-width:5px;stroke:white;stroke-linecap: round;" />
             </svg>
         </button>
-        <button id="tfPlayButton" aria-hidden="true">
+        <button id="tfPlayButton" aria-hidden="true" title="Play animation" alt="Play animation">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="50px" height="50px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131" xml:space="preserve">
                 <ellipse fill="none" stroke="#FFFFFF" stroke-width="7.8281" stroke-miterlimit="10" cx="68.399" cy="68.344" rx="57.675" ry="59.214"/>
@@ -192,11 +192,11 @@
                     <div class="row">
                         <div class="col-lg-12 grid">
                             <div class="video-mark">
-                                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/' . $slug . '/mark-ward.jpg' ?>" />
+                                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/' . $slug . '/mark-ward.jpg' ?>" alt="Mark Ward" />
                                 <a data-lity href="https://www.youtube.com/embed/kK_B8Gnrb8M?autoplay=1&rel=0&showinfo=0">
                                     <svg version="1.1" id="mark-ward-video" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                  width="137.909px" height="137.131px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131"
-                                 xml:space="preserve">
+                                 xml:space="preserve" alt="Play Mark Ward video">
                                         <ellipse fill="none" stroke="#FFFFFF" stroke-width="7.8281" stroke-miterlimit="10" cx="68.399" cy="68.344" rx="57.675" ry="59.214"/>
                                         <polygon fill="#FFFFFF" points="48.611,37.617 103.268,68.345 48.611,99.072 "/>
                                     </svg>
