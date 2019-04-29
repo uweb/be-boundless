@@ -168,7 +168,7 @@
                                 <p>Those few years can make a huge difference. &ldquo;Evidence-based early intervention has been shown to move the needle tremendously,&rdquo; Estes says &mdash; and the earlier a child receives those interventions, the more effective they are.</p>
                             </div>
                             <div class="video-last gareth">
-                                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/' . $slug . '/gareth-graduation.jpg' ?>" />
+                                <img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/' . $slug . '/gareth-graduation.jpg' ?>" alt="Gareth's Graduation Day" />
                                 <a class="play-video" data-lity href="https://www.youtube.com/embed/rUL8YiCQZ6g?autoplay=1&rel=0&showinfo=0">
                                     <svg version="1.1" id="gareth-graduation-video" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="80px" height="80px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131"
