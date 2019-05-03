@@ -28,6 +28,22 @@
 
 <div id="immersive-body">
     <section class="intro" id="intro-vid">
+        <button id="tfPauseButton" class="mobile-only" aria-hidden="true" title="Pause animation" alt="Pause animation">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="50px" height="50px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131" xml:space="preserve">
+            <ellipse fill="none" stroke="#FFFFFF" stroke-width="7.8281" stroke-miterlimit="10" cx="68.399" cy="68.344" rx="57.675" ry="59.214"/>
+            <line id='line1' x1="60" y1="50" x2="60" y2="90" style="stroke-width:5px;stroke:white;stroke-linecap: round;" />
+            <line id='line2' x1="80" y1="50" x2="80" y2="90" style="stroke-width:5px;stroke:white;stroke-linecap: round;" />
+            </svg>
+        </button>
+        <button id="tfPlayButton" class="mobile-only" aria-hidden="true" title="Play animation" alt="Play animation">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="50px" height="50px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131" xml:space="preserve">
+                <ellipse fill="none" stroke="#FFFFFF" stroke-width="7.8281" stroke-miterlimit="10" cx="68.399" cy="68.344" rx="57.675" ry="59.214"/>
+                <polygon fill="#FFFFFF" points="48.611,37.617 103.268,68.345 48.611,99.072 "/>
+            </svg>
+        </button>
+
         <div class="intro-body">
             <div class="row">
                 <div class="col-md-6 col-lg-5 col-md-offset-1 col-xs-10 col-lg-offset-2 col-xs-offset-1" id="intro-text">
@@ -60,7 +76,7 @@
                                 <p>For Gareth and his family, the UW&rsquo;s work has helped them have more good days.</p>
                             </div>
                             <div class="img-last gareth">
-                                <a class="play-video" data-lity href="https://www.youtube.com/embed/x4nlcEWAV3s?autoplay=1&rel=0&showinfo=0">
+                                <a class="play-video" data-lity href="https://www.youtube.com/embed/DWa5TAuaHuI?autoplay=1&rel=0&showinfo=0">
                                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="137.909px" height="137.131px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131"
                          xml:space="preserve">

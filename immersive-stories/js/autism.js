@@ -41,4 +41,19 @@ $(function () {
         e.preventDefault();
     });
 
+
+    var tfPauseButton = document.getElementById('tfPauseButton');
+    var tfPlayButton = document.getElementById('tfPlayButton');
+    tfPlayButton.addEventListener('click', function() {
+        $('#tfPlayButton').hide();
+        $('#tfPauseButton').show();
+        $('.intro').addClass('animated-header');
+    });
+
+    tfPauseButton.addEventListener('click', function() {
+        $('#tfPlayButton').show();
+        $('#tfPauseButton').hide();
+        $('.intro').removeClass('animated-header');
+    });
+
 });

@@ -226,7 +226,33 @@ html {
     }
 
     @media @phone-only {
-        background-image: url('@{autism}/header-animated.gif');
+        background-image: url('@{autism}/header-still.png');
+        position: relative;
+
+        &.animated-header { 
+            background-image: url('@{autism}/header-animated.gif');
+        }
+    
+        #tfPlayButton { display: block; }
+
+        button#tfPauseButton, button#tfPlayButton {
+            z-index:999999999;
+            background: none;
+            border: 0 none;
+            position: absolute;
+            top: 70px;
+            left: 0;
+
+            &:hover, &:active, &:focus {
+                ellipse, line { stroke: @lightgold; }
+                polygon { fill: @lightgold; }
+            }
+        }
+
+        button#tfPauseButton {
+            color: #fff;
+        }
+
     }
 
     &:before {
