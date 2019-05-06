@@ -65,6 +65,7 @@ module.exports = function(grunt) {
           'immersive-stories/js/oceanography-research.js',
           'immersive-stories/js/task-force.js',
           'immersive-stories/js/autism.js',
+          'immersive-stories/js/hometown-huskies.js',
           'campaign/js/main.js',
           'immersive-stories/js/education-map.js',
           'https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js',
@@ -287,6 +288,13 @@ module.exports = function(grunt) {
               'immersive-stories/js/slick.js',
               'immersive-stories/js/autism.js',
           ],
+          'immersive-stories/js/hometown-huskies.min.js': [
+            'immersive-stories/js/common.js',
+            'js/libraries/prognroll.js',
+            'immersive-stories/js/lity.js',
+            'immersive-stories/js/slick.js',
+            'immersive-stories/js/hometown-huskies.js',
+        ],
           'campaign/js/main.min.js': [
             'campaign/js/main.js',
           ],
@@ -367,6 +375,7 @@ module.exports = function(grunt) {
                 'immersive-stories/css/oceanography-research.css': 'immersive-stories/less/oceanography-research.less',
                 'immersive-stories/css/task-force.css': 'immersive-stories/less/task-force.less',
                 'immersive-stories/css/autism.css': 'immersive-stories/less/autism.less',
+                'immersive-stories/css/hometown-huskies.css': 'immersive-stories/less/hometown-huskies.less',
                 'campaign/css/campaign-style.css': 'campaign/**/*.less',
                 'campaign/css/header.css': 'campaign/less/header.less',
                 'campaign/css/campaignv2-style.css': 'campaign/less/campaignv2-style.less',
@@ -383,7 +392,7 @@ module.exports = function(grunt) {
       config : {
         files : ['gruntfile.js'],
         options : {
-          reload: true
+          reload: true,
         }
       },
       js: {

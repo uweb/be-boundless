@@ -1,0 +1,420 @@
+/*********************************************
+ * Importing from UW2014 and other immersives *
+ **********************************************/
+ @import "../../themes/uw-2014/less/uw.variables.less";
+ @import "../../themes/uw-2014/less/flat/mixins.less";
+ @import "../../themes/uw-2014/less/flexbox.less";
+ @import "../../immersive-stories/less/text-block-new.less";
+ @import "../../immersive-stories/less/button.less";
+ @import "../../immersive-stories/less/common.less";
+ @import "../../immersive-stories/less/queries.less";
+ @import "../../immersive-stories/less/lity.less";
+ @import "../../immersive-stories/less/slideshow.less";
+ @import "../../immersive-stories/css/libraries/leaflet.css";
+ 
+ @hometownhuskies: "../../immersive-stories/img/hometown-huskies";
+ 
+ // @media @phone-only { }              //  (max-width: 599px)
+ // @media @tablet-portrait-up { }      //  (min-width: 600px)
+ // @media @tablet-portait-only { }     //  (min-width: 600px) and (max-width: 899px)
+ // @media @tablet-landscape-up { }     //  (min-width: 900px)
+ // @media @tablet-landscape-only { }   //  (min-width: 900px) and (max-width: 1199px)
+ // @media @desktop-up { }              //  (min-width: 1200px)
+ // @media @desktop-only { }            //  (min-width: 1200px) and (max-width: 1799px)"
+ // @media @big-desktop-up { }          //  (min-width: 1800px)
+ 
+ 
+ /***************************************************
+  * Namespacing to prevent bleed over to /boundless *
+  ***************************************************/
+body,
+html {
+	 height: 100%;
+	 -webkit-font-smoothing: antialiased;
+	 -moz-osx-font-smoothing: grayscale;
+}
+@media only screen and (max-width: 767px) {
+	body {
+		 margin-top: 0;
+	}
+	.cv2-header {
+		 position: relative;
+	}
+}
+ 
+#immersive-body {
+	/*****************
+	  * Text and Such *
+	  *****************/
+	 overflow: hidden;
+ 
+	 p {
+		 font-size: 17px;
+		 line-height: 32px;
+	 }
+ 
+	 h1, h3 {
+		 font-family: @headline;
+		 font-weight: @ultra;
+		 color: white;
+	 }
+ 
+	 h2 {
+		font-family: @headline;
+		font-weight: @ultra;
+		color: @lightgold;
+	 }
+
+	 h4,
+	 h5 {
+		 font-family: "Encode Sans Regular", sans-serif;
+		 font-weight: 100;
+		 text-transform: uppercase;
+		 color: #818181;
+	 }
+ 
+	 /**********************
+	  * Heading/Intro      *
+	  **********************/
+	 .intro {
+		 position: relative;
+		 display: flex;
+		 align-items: center;
+		 justify-content: center;
+		 height: calc(~"103vh - 171px");
+		 background-image: url("@{hometownhuskies}/header-top.jpg");
+		 .background-cover(cover);
+		 background-position: center center;
+		 background-repeat: no-repeat;
+		 margin-bottom: 0;
+ 
+		 h1 {
+			text-transform: uppercase;
+			color: white;
+			line-height: 1.1;
+			text-shadow: 0px 0px 3px rgba(37, 37, 37, 0.65);
+			font-size: 7vw;
+			text-align: left;
+
+			@media @phone-only {
+				font-size: 8vw;
+			}
+		}
+
+		p {
+			color: white;
+		}
+
+		 .intro-body {
+			position: absolute;
+			z-index: 1;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			.translate(0,-50%);
+
+			& > div {
+				.play-button {
+					text-align: center;
+					text-transform: uppercase;
+					margin-top: 6.3vw;
+	
+					@media (max-width: 900px) {
+						text-align: left;
+						svg {
+							float: left;
+							height: 30px;
+							width: 30px;
+							margin-right: 10px;
+						}
+					}
+					a:hover, a:active, a:focus {
+						p { color: @lightgold; }
+						ellipse { stroke: @lightgold; }
+						polygon { fill: @lightgold; }
+					}
+				}
+			}
+
+			a.read-more {
+				display: block;
+				position: absolute;
+				left: 50%;
+				margin-left: -20px;
+				text-indent: -999px;
+				overflow: hidden;
+				width: 40px;
+				height: 50px;
+				background: url("@{img}/sprite.svg") 0 0 no-repeat transparent;
+				z-index: 1;
+				&:hover,
+				&:active,
+				&:focus {
+					.translate(0,10px);
+				}
+			}
+		
+			@media @phone-only {
+				.intro-body {
+					position: absolute;
+					top: 50%;
+					left: 0;
+					width: 100%;
+					margin-top: 0;
+					.translate(0,
+					-50%);
+				}
+		
+				p {
+					line-height: 1.4;
+					font-size: .65em;
+				}
+		
+				.udub-slant {
+					display: none;
+				}
+			}
+		
+			@media (max-width: 500px) {
+				.intro-body {
+					.col-xs-8 {
+						width: 85%;
+					}
+				}
+			}
+			@media (max-width: 768px) {
+				.background-size(cover);
+				background-position: 80% center;
+				background-repeat: no-repeat;
+			}
+		
+			@media @tablet-portait-only {
+				background-position: center center;
+		
+				.intro-body {
+					position: absolute;
+					top: 50%;
+					left: 0;
+					width: 100%;
+					margin-top: 0;
+					.translate(0,
+					-50%);
+				}
+		
+				p {
+					line-height: 1.4;
+				}
+			}
+		
+			@media @tablet-landscape-up {
+				.intro-body {
+					.intro-body {
+						& > div {
+							.play-button {
+								// something will go here!
+							}
+						}
+					}
+					& > div {
+		
+						.flex-display(flex);
+						.align-content(center);
+						.play-button {
+							position: relative;
+							.flex-display(flex);
+							.align-items(center);
+							&:after {
+								content: "";
+								width: 2px;
+								height: 100%;
+								left: 0;
+								top: 0;
+								.rotate(15deg);
+								left: -70px;
+								position: absolute;
+								background-color: white;
+							}
+						}
+					}
+				}
+			}
+		 }
+	 }
+ 
+	 /******************
+	  * Content Blocks *
+	  ******************/
+	.photo-text-block {
+		 &.rowing-background {
+			background-image: url("@{hometownhuskies}/header-bottom.jpg");
+			.background-cover(cover);
+			background-position: bottom center;
+			background-repeat: no-repeat;
+
+			.container {
+				.row {
+					.copy {
+						padding: 60px 0;
+
+						p {
+							color: white;
+						}
+					}
+				}
+			}
+
+		 }
+	}
+
+	.photo-block {
+		.background-cover(cover);
+		background-position: center center;
+		background-repeat: no-repeat;
+		position: relative;
+
+		.container { 
+			height: 100%;
+
+			.row { 
+				height: 100%;
+				display: flex;
+				align-items: center;
+			}
+		}
+
+		&.photo-quote {
+			&.hallie-close {
+				margin: 40px 40px 0 40px;
+				background-image: url("@{hometownhuskies}/hallie-close.jpg");
+				height: 50vh;
+
+				blockquote { max-width: 65%; }
+			}
+
+			&.classroom {
+				background-image: url("@{hometownhuskies}/classroom.jpg");
+				height: 70vh;
+			}
+
+			&.gym-rowing {
+				background-image: url("@{hometownhuskies}/rowing-1.jpg");
+				height: 70vh;
+			}
+
+			&.hallie-rowing {
+				background-image: url("@{hometownhuskies}/hallie-rowing.jpg");
+				height: 70vh;
+			}
+
+			blockquote {
+				color: white; 
+				font-family: @headline;
+				font-weight: @ultra;
+				text-transform: uppercase;
+				font-size: 3vw;
+				line-height: 2;
+				max-width: 70%;
+				margin: 0 auto;
+				border-left: 0 none;
+				padding-left: 0;
+				text-align: center;
+
+				&:before {
+					content: open-quote;
+					display: block;
+					position: relative;
+					top: 2.5vw;
+					left: 1vw;
+					text-align: left;
+				}
+
+				.caption {
+					color: white;
+					text-align: right;
+					text-transform: none;
+					position: relative;
+					
+					&:after {
+						content: close-quote;
+						position: relative;
+						font-family: @headline;
+						font-weight: @ultra;
+						font-size: 3vw;
+						top: 1.2vw;
+						left: 1vw;
+					}
+				}
+			}
+		}
+
+		&.hallie-starting {
+			background-image: url("@{hometownhuskies}/running.jpg");
+			height: 100vh;
+		}
+	}
+ }
+ 
+ /***************************
+  * Scrollbar and Scrollbar *
+  ***************************/
+  #scrollbar, .bar {
+	 z-index: 900;
+	 opacity: 1.0;
+	 position: fixed;
+	 top: 0;
+	 height: 0px;
+	 width: 100%;
+	 background-color: #ECECEC;
+	 overflow: hidden;
+	 .transition(all .2s ease-in);
+	 &.active {
+		 height: 30px;
+	 }
+	 span {
+		 position: relative !important;
+		 height: 100% !important;
+		 width: 0%;
+		 display: block;
+		 background-color: #E0E0E0;
+		 .transition(all .1s ease-in);
+		 z-index: 899 !important;
+	 }
+	 .grayW {
+		 position: absolute;
+		 top: 5px;
+		 height: 20px;
+		 width: auto;
+		 left: 50%;
+		 .translate(-50%, 0);
+		 z-index: 900;
+	 }
+  }
+ 
+  .bar {
+	 background-color: #E0E0E0 !important;
+  }
+ 
+ /*****************
+  * Giving Widget *
+  *****************/
+ .text-block.giving-widget.branded {
+	 background-color: #838383;
+	 background-image: url("@{hometownhuskies}/footer.jpg"); // UPDATE
+	 .background-size(cover);
+	 background-position: right bottom;
+	 background-repeat: no-repeat;
+	 margin-top: 0;
+
+	.text-center {
+		max-width: 600px; margin: 0 auto;
+	}
+
+	 h2.headline-gold, .copy p { color: @purple; text-shadow: 0 0 0; }
+
+	 .copy p { 
+		 border-top: 1px solid @purple;
+		 border-bottom: 1px solid @purple;
+		 padding: 20px 15px;
+	 }
+ }
+ 
