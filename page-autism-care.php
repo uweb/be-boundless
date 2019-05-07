@@ -9,13 +9,13 @@
         $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/" . $slug . ".min.js' type='text/javascript'></script>";
 
         // The fund code(s) for the giving widget in a comma delimited list
-        $storyCodes = 'AUTHCC,EXDISC,HCSEND';
+        $storyCodes = 'AUTHCC,EXDISC,HCSEND,CHDDAT';
 
         // The appeal code for the story
         $storyAppealCodes = 'IAU19';
 
         // The call to action for the giving widget
-        $storyAppeal = 'The Haring Center and UW Medicine are working to create a healthier, more inclusive future for children and families. By supporting their efforts, you can help kids of all abilities access the services they need to succeed in school and in life.';
+        $storyAppeal = 'The Haring Center and the UW Autism Center are working to create a healthier, more inclusive future for children and families. By supporting their efforts, you can help kids of all abilities access the services they need to succeed in school and in life.';
 
         // Original publication month and year
         $publishMonthYear = 'May 2019';
