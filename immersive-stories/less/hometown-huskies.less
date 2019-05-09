@@ -9,8 +9,8 @@
  @import "../../immersive-stories/less/common.less";
  @import "../../immersive-stories/less/queries.less";
  @import "../../immersive-stories/less/lity.less";
- @import "../../immersive-stories/less/slideshow.less";
- @import "../../immersive-stories/css/libraries/leaflet.css";
+ //@import "../../immersive-stories/less/slideshow.less";
+ @import "../../immersive-stories/less/slideshow-simple.less";
  
  @hometownhuskies: "../../immersive-stories/img/hometown-huskies";
  
@@ -87,6 +87,10 @@ html {
 		 background-position: center center;
 		 background-repeat: no-repeat;
 		 margin-bottom: 0;
+
+		 @media @phone-only {
+			background-position: 80% center;
+		 }
  
 		 h1 {
 			text-transform: uppercase;
@@ -111,7 +115,7 @@ html {
 			top: 50%;
 			left: 0;
 			width: 100%;
-			.translate(0,-50%);
+			.translate(0, -50%);
 
 			& > div {
 				.play-button {
@@ -119,8 +123,11 @@ html {
 					text-transform: uppercase;
 					margin-top: 6.3vw;
 	
-					@media (max-width: 900px) {
+					@media (max-width: 991px) {
+						margin-top: 0;
+						margin-left: 0;
 						text-align: left;
+
 						svg {
 							float: left;
 							height: 30px;
@@ -135,36 +142,15 @@ html {
 					}
 				}
 			}
-
-			a.read-more {
-				display: block;
+		
+			@media (max-width: 991px) {
 				position: absolute;
-				left: 50%;
-				margin-left: -20px;
-				text-indent: -999px;
-				overflow: hidden;
-				width: 40px;
-				height: 50px;
-				background: url("@{img}/sprite.svg") 0 0 no-repeat transparent;
-				z-index: 1;
-				&:hover,
-				&:active,
-				&:focus {
-					.translate(0,10px);
-				}
-			}
-		
-			@media @phone-only {
-				.intro-body {
-					position: absolute;
-					top: 50%;
-					left: 0;
-					width: 100%;
-					margin-top: 0;
-					.translate(0,
-					-50%);
-				}
-		
+				top: 70%;
+				left: 10%;
+				width: 80%;
+				margin-top: 0;
+				.translate(0, -50%);
+
 				p {
 					line-height: 1.4;
 					font-size: .65em;
@@ -175,46 +161,8 @@ html {
 				}
 			}
 		
-			@media (max-width: 500px) {
-				.intro-body {
-					.col-xs-8 {
-						width: 85%;
-					}
-				}
-			}
-			@media (max-width: 768px) {
-				.background-size(cover);
-				background-position: 80% center;
-				background-repeat: no-repeat;
-			}
-		
-			@media @tablet-portait-only {
-				background-position: center center;
-		
-				.intro-body {
-					position: absolute;
-					top: 50%;
-					left: 0;
-					width: 100%;
-					margin-top: 0;
-					.translate(0,
-					-50%);
-				}
-		
-				p {
-					line-height: 1.4;
-				}
-			}
-		
 			@media @tablet-landscape-up {
 				.intro-body {
-					.intro-body {
-						& > div {
-							.play-button {
-								// something will go here!
-							}
-						}
-					}
 					& > div {
 		
 						.flex-display(flex);
@@ -251,10 +199,18 @@ html {
 			background-position: bottom center;
 			background-repeat: no-repeat;
 
+			@media (min-width: 992px) {
+				background-position: center right;
+			}
+
 			.container {
 				.row {
 					.copy {
-						padding: 60px 0;
+						padding: 100px 30px;
+
+						@media @tablet-landscape-up {
+							padding: 60px 0;
+						}
 
 						p {
 							color: white;
@@ -284,11 +240,15 @@ html {
 
 		&.photo-quote {
 			&.hallie-close {
-				margin: 40px 40px 0 40px;
+				margin: 20px 0 0;
 				background-image: url("@{hometownhuskies}/hallie-close.jpg");
 				height: 50vh;
 
-				blockquote { max-width: 65%; }
+				blockquote { max-width: 65vw; }
+
+				@media @tablet-landscape-up {
+					margin: 40px 40px 0 40px;
+				}
 			}
 
 			&.classroom {
@@ -296,14 +256,60 @@ html {
 				height: 70vh;
 			}
 
-			&.gym-rowing {
+			&.gym-rowing, &.gym-rowing-1 {
 				background-image: url("@{hometownhuskies}/rowing-1.jpg");
 				height: 70vh;
+				-webkit-transition: all 2s ease;
+				-moz-transition: all 2s ease;
+				-o-transition: all 2s ease;
+				transition: all 2s ease;
+			}
+
+			&.gym-rowing-2 {
+				background-image: url("@{hometownhuskies}/rowing-2.jpg");
+				height: 70vh;
+				-webkit-transition: all 2s ease;
+				-moz-transition: all 2s ease;
+				-o-transition: all 2s ease;
+				transition: all 2s ease;
 			}
 
 			&.hallie-rowing {
 				background-image: url("@{hometownhuskies}/hallie-rowing.jpg");
 				height: 70vh;
+			}
+
+			&.focus-blur:before {
+				content: "";
+				position:absolute;
+				width: 100%;
+				height: 100%;
+				background: inherit;
+				z-index: 1;
+			
+				transition: all 2s ease;
+				-moz-transition: all 2s ease;
+				-webkit-transition: all 2s ease;
+				-o-transition: all 2s ease;
+			}
+
+			&.blur-focus:before {
+				content: "";
+				position:absolute;
+				width: 100%;
+				height: 100%;
+				background: inherit;
+				z-index: 1;
+			
+				filter: blur(10px);
+				-moz-filter: blur(10px);
+				-webkit-filter: blur(10px);
+				-o-filter: blur(10px);
+			
+				transition: all 4s ease;
+				-moz-transition: all 4s ease;
+				-webkit-transition: all 4s ease;
+				-o-transition: all 4s ease;
 			}
 
 			blockquote {
@@ -313,11 +319,16 @@ html {
 				text-transform: uppercase;
 				font-size: 3vw;
 				line-height: 2;
-				max-width: 70%;
+				max-width: 68vw;
 				margin: 0 auto;
 				border-left: 0 none;
 				padding-left: 0;
 				text-align: center;
+				z-index: 10;
+
+				@media @big-desktop-up {
+					line-height: 1.5
+				}
 
 				&:before {
 					content: open-quote;
@@ -349,11 +360,53 @@ html {
 
 		&.hallie-starting {
 			background-image: url("@{hometownhuskies}/running.jpg");
+			background-position: 25% top;
 			height: 100vh;
+
+			@media @tablet-landscape-up {
+				background-position: top center;
+			}
+		}
+	}
+	.text-block {
+		.copy {
+			padding: 30px;
+
+			@media @tablet-landscape-up {
+				padding: 70px 90px 60px 90px;
+			}
 		}
 	}
  }
- 
+
+  /***************************
+  * Slick slider			 *
+  ***************************/
+.slick-slider {
+	.slick-slide {
+		border: 5px solid white;
+		border-top: 0 none;
+	
+		@media @tablet-landscape-up {
+			border-top: 10px solid white;
+		}
+
+		img {
+			width: auto;
+		}
+
+		.caption {
+			padding-left: 40px;
+			padding-right: 40px;
+
+			@media @tablet-landscape-up {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	}
+}
+
  /***************************
   * Scrollbar and Scrollbar *
   ***************************/
@@ -404,12 +457,19 @@ html {
 	 background-position: right bottom;
 	 background-repeat: no-repeat;
 	 margin-top: 0;
+	 
+	@media (max-width: 768px) {
+        height: 100vh;
+    }
 
 	.text-center {
 		max-width: 600px; margin: 0 auto;
 	}
 
-	 h2.headline-gold, .copy p { color: @purple; text-shadow: 0 0 0; }
+	h2.headline-gold, .copy p { 
+		color: @purple;
+		text-shadow: 0 0 0; 
+	}
 
 	 .copy p { 
 		 border-top: 1px solid @purple;

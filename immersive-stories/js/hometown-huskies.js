@@ -25,20 +25,73 @@ $(function () {
 
 
      $('.slick').slick({
-         lazyLoad: 'ondemand',
-         useTransform: true,
-         dots: true,
-         infinite: true,
-         speed: 300,
-         fade: true,
-         slidesToShow: 1,
-         slidesToScroll: 1,
-         mobileFirst: true,
+        centerMode: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        infinite: true,
+        speed: 300,
+        cssEase: 'linear',
+        lazyLoad: 'ondemand',
+        variableWidth: true,
+        mobileFirst: true
      });
+
 
     //prevent accessibility link from scrolling to top
     $(".click").click(function(e){
         e.preventDefault();
     });
 
+    // Rowing image swap on scroll
+    var swapScrollNum = 0;
+    var rowingPanel = $('.gym-rowing').offset().top;
+    $(window).scroll(function () { 
+        swapScrollNum = $(window).scrollTop();
+
+        if (swapScrollNum > (rowingPanel - $('.gym-rowing').height() / 2) && (swapScrollNum < (rowingPanel + $('.gym-rowing').height() / 1.5))) {
+            $('.gym-rowing').addClass('gym-rowing-2');
+            $('.gym-rowing').removeClass('gym-rowing-1');
+        } else {
+            $('.gym-rowing').addClass('gym-rowing-1');
+            $('.gym-rowing').removeClass('gym-rowing-2');
+        }
+    });
+
+    // Blur to focus on scroll images
+    var blurScroll = 0;
+    var hallieClose = $('.hallie-close').offset().top;
+    var hallieClass = $('.classroom').offset().top;
+    var hallieRowing = $('.hallie-rowing').offset().top;
+
+    $(window).scroll(function () { 
+        blurScroll = $(window).scrollTop();
+
+        // hallie up close photo
+        if (blurScroll > (hallieClose - $('.blur-focus').height() / 2) && (blurScroll < (hallieClose + $('.hallie-close').height() / 1.5))) {
+            $('.hallie-close').removeClass('blur-focus');
+            $('.hallie-close').addClass('focus-blur');
+        } else {
+            $('.hallie-close').removeClass('focus-blur');
+            $('.hallie-close').addClass('blur-focus');
+        }
+
+        // hallie in the classroom photo
+        if (blurScroll > (hallieClass - $('.classroom').height() / 2) && (blurScroll < (hallieClass + $('.classroom').height() / 1.5))) {
+            $('.classroom').removeClass('blur-focus');
+            $('.classroom').addClass('focus-blur');
+        } else {
+            $('.classroom').removeClass('focus-blur');
+            $('.classroom').addClass('blur-focus');
+        }
+
+        // hallie rowing photo
+        if (blurScroll > (hallieRowing - $('.hallie-rowing').height() / 2) && (blurScroll < (hallieRowing + $('.hallie-rowing').height() / 1.5))) {
+            $('.hallie-rowing').removeClass('blur-focus');
+            $('.hallie-rowing').addClass('focus-blur');
+        } else {
+            $('.hallie-rowing').removeClass('focus-blur');
+            $('.hallie-rowing').addClass('blur-focus');
+        }
+    });
 });

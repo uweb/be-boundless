@@ -76,7 +76,7 @@
 			</div><!-- .container -->
 		</section><!-- .photo-text-block -->
 
-		<section class="photo-block photo-quote hallie-close">
+		<section class="photo-block photo-quote hallie-close blur-focus">
 			<div class="container">
 				<div class="row">
 					<blockquote>I just expected that I was going to play basketball or run track at a small school.
@@ -126,10 +126,10 @@
 			</div><!-- .container -->
 		</section><!-- .text-block -->
 
-		<section class="photo-block photo-quote classroom">
+		<section class="photo-block photo-quote classroom blur-focus">
 			<div class="container">
 				<div class="row">
-					<blockquote>TBD
+					<blockquote>Excellence should be a habit in both the classroom and the boathouse.
 						<p class="caption">Hallie Jensen</p>
 					</blockquote>
 				</div><!-- .row -->
@@ -194,7 +194,7 @@
 			</div><!-- .container -->
 		</section><!-- .text-block -->
 
-		<section class="photo-block photo-quote hallie-rowing">
+		<section class="photo-block photo-quote hallie-rowing blur-focus">
 			<div class="container">
 				<div class="row">
 					<blockquote>They put a lot of trust in me, it&rsquo;s my duty to prove that they made the right choice.
@@ -205,15 +205,56 @@
 		</section><!-- .photo-block -->
 
 		<section class="slideshow">
-			<div style="text-align: center; margin-top: 40px;">(slideshow will go here)</div>
-			<!-- <div class="slick">
+			<div class="slick">
 				<div>
-					<img data-lazy="<?php echo get_stylesheet_directory_uri() . 'path to image' ?>" alt="">
+					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/1.jpg' ?>" alt="TBD">
                     <div class="caption">
-                        <p></p>
+                        <p>Caption TBD</p>
                     </div>
 				</div>
-			</div> -->
+				<div>
+					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/2.jpg' ?>" alt="TBD">
+                    <div class="caption">
+                        <p>Caption TBD</p>
+                    </div>
+				</div>
+				<div>
+					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/3.jpg' ?>" alt="TBD">
+                    <div class="caption">
+                        <p>Caption TBD</p>
+                    </div>
+				</div>
+				<div>
+					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/4.jpg' ?>" alt="TBD">
+                    <div class="caption">
+                        <p>Caption TBD</p>
+                    </div>
+				</div>
+				<div>
+					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/5.jpg' ?>" alt="TBD">
+                    <div class="caption">
+                        <p>Caption TBD</p>
+                    </div>
+				</div>
+				<div>
+					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/6.jpg' ?>" alt="TBD">
+                    <div class="caption">
+                        <p>Caption TBD</p>
+                    </div>
+				</div>
+				<div>
+					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/7.jpg' ?>" alt="TBD">
+                    <div class="caption">
+                        <p>Caption TBD</p>
+                    </div>
+				</div>
+				<div>
+					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/8.jpg' ?>" alt="TBD">
+                    <div class="caption">
+                        <p>Caption TBD</p>
+                    </div>
+				</div>
+			</div>
 		</section><!-- .slideshow -->
 
 		<section class="text-block">
