@@ -272,7 +272,7 @@
 
 						<p>&ldquo;I could barely hold myself up, but I was very proud of our performance,&rdquo; says Jensen later in the day. Then she turns quickly to the next hurdle. &ldquo;Hopefully I&rsquo;ll get to race at the San Diego Crew Classic next weekend,&rdquo; she says. &ldquo;After that, who knows?&rdquo;</p>
 
-						<p>Jensen has a lot to look forward to in the next three years. She hopes to keep challenging herself and her teammates, contributing to the UW&rdquo;s winning legacy along the way.</p>
+						<p>Jensen has a lot to look forward to in the next three years. She hopes to keep challenging herself and her teammates, contributing to the UW&rsquo;s winning legacy along the way.</p>
 
 						<p>&ldquo;I could have played it safe and pursued collegiate running or basketball,&rdquo; she says. &ldquo;But since the first day of training, I&rsquo;ve felt that this is where I should be. I love this program and feel so blessed that I get to live out this dream.&rdquo;</p>
 
@@ -285,7 +285,7 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .text-block -->
-
+		<div id="preload"><img src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/rowing-2.jpg' ?>" alt=""></div>
 	</main><!-- #main_content -->
 </div><!-- #immersive-body -->
 

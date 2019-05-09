@@ -25,8 +25,8 @@
  
  
  /***************************************************
-  * Namespacing to prevent bleed over to /boundless *
-  ***************************************************/
+	* Namespacing to prevent bleed over to /boundless *
+	***************************************************/
 body,
 html {
 	 height: 100%;
@@ -44,8 +44,8 @@ html {
  
 #immersive-body {
 	/*****************
-	  * Text and Such *
-	  *****************/
+		* Text and Such *
+		*****************/
 	 overflow: hidden;
  
 	 p {
@@ -74,8 +74,8 @@ html {
 	 }
  
 	 /**********************
-	  * Heading/Intro      *
-	  **********************/
+		* Heading/Intro      *
+		**********************/
 	 .intro {
 		 position: relative;
 		 display: flex;
@@ -90,6 +90,20 @@ html {
 
 		 @media @phone-only {
 			background-position: 80% center;
+
+			&:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.0) 40%);
+        background: -o-linear-gradient(bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.0) 40%);
+        background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.0) 40%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#222222',GradientType=1 );
+    	}
 		 }
  
 		 h1 {
@@ -190,8 +204,8 @@ html {
 	 }
  
 	 /******************
-	  * Content Blocks *
-	  ******************/
+		* Content Blocks *
+		******************/
 	.photo-text-block {
 		 &.rowing-background {
 			background-image: url("@{hometownhuskies}/header-bottom.jpg");
@@ -277,6 +291,7 @@ html {
 			&.hallie-rowing {
 				background-image: url("@{hometownhuskies}/hallie-rowing.jpg");
 				height: 70vh;
+				background-position: top center;
 			}
 
 			&.focus-blur:before {
@@ -330,6 +345,12 @@ html {
 					line-height: 1.5
 				}
 
+				@media @phone-only {
+					font-size: 5vw;
+				}
+
+				@media @desktop-only { line-height: 1.5 }
+
 				&:before {
 					content: open-quote;
 					display: block;
@@ -379,9 +400,9 @@ html {
 	}
  }
 
-  /***************************
-  * Slick slider			 *
-  ***************************/
+	/***************************
+	* Slick slider			 *
+	***************************/
 .slick-slider {
 	.slick-slide {
 		border: 5px solid white;
@@ -408,9 +429,9 @@ html {
 }
 
  /***************************
-  * Scrollbar and Scrollbar *
-  ***************************/
-  #scrollbar, .bar {
+	* Scrollbar and Scrollbar *
+	***************************/
+	#scrollbar, .bar {
 	 z-index: 900;
 	 opacity: 1.0;
 	 position: fixed;
@@ -441,15 +462,17 @@ html {
 		 .translate(-50%, 0);
 		 z-index: 900;
 	 }
-  }
+	}
  
-  .bar {
+	.bar {
 	 background-color: #E0E0E0 !important;
-  }
+	}
  
+div#preload { display: none !important; }
+
  /*****************
-  * Giving Widget *
-  *****************/
+	* Giving Widget *
+	*****************/
  .text-block.giving-widget.branded {
 	 background-color: #838383;
 	 background-image: url("@{hometownhuskies}/footer.jpg"); // UPDATE
@@ -459,8 +482,22 @@ html {
 	 margin-top: 0;
 	 
 	@media (max-width: 768px) {
-        height: 100vh;
-    }
+				height: 100vh;
+
+				&:before {
+					content: '';
+					display: block;
+					position: absolute;
+					left: 0;
+					top: 0;
+					height: 100%;
+					width: 100%;
+					background: -webkit-linear-gradient(top, rgba(34,52,64, 0.8) 0%, rgba(0,0,0,0.0) 60%);
+					background: -o-linear-gradient(top, rgba(34,52,64, 0.8) 0%, rgba(0,0,0,0.0) 60%);
+					background: linear-gradient(to tbottom, rgba(34,52,64, 0.8) 0%, rgba(0,0,0,0.0) 60%);
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#223440',GradientType=1 );
+				}
+		}
 
 	.text-center {
 		max-width: 600px; margin: 0 auto;
@@ -469,12 +506,20 @@ html {
 	h2.headline-gold, .copy p { 
 		color: @purple;
 		text-shadow: 0 0 0; 
+
+		@media (max-width: 768px) {
+			color: white;
+		}
 	}
 
 	 .copy p { 
 		 border-top: 1px solid @purple;
 		 border-bottom: 1px solid @purple;
 		 padding: 20px 15px;
+
+		 @media (max-width: 768px) {
+			 border-color: white;
+		 }
 	 }
  }
  
