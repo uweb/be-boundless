@@ -225,12 +225,6 @@
                     </div>
 				</div>
 				<div>
-					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/4.jpg' ?>" alt="TBD">
-                    <div class="caption">
-                        <p>Caption TBD</p>
-                    </div>
-				</div>
-				<div>
 					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/5.jpg' ?>" alt="TBD">
                     <div class="caption">
                         <p>Caption TBD</p>
