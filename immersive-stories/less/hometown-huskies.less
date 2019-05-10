@@ -92,18 +92,18 @@ html {
 			background-position: 80% center;
 
 			&:before {
-        content: '';
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.0) 40%);
-        background: -o-linear-gradient(bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.0) 40%);
-        background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.0) 40%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#222222',GradientType=1 );
-    	}
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 100%;
+				width: 100%;
+				background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.0) 40%);
+				background: -o-linear-gradient(bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.0) 40%);
+				background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.0) 40%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#222222',GradientType=1 );
+			}
 		 }
  
 		 h1 {
@@ -469,6 +469,35 @@ html {
 	}
  
 div#preload { display: none !important; }
+
+ /*****************
+  * Image arrows  *
+  *****************/
+.arrow.arrow-bottom-left:after {
+    border-width: 0 30px 30px 30px;
+    bottom: 0;
+    top: inherit;
+    left: 17%;
+}
+
+.arrow.arrow-bottom-right:after {
+    border-width: 0 30px 30px 30px;
+    bottom: 0;
+	top: inherit;
+	left: auto;
+    right: 17%;
+}
+
+.blur-focus .arrow { display: none; }
+.focus-blur .arrow.arrow-top-right:after {
+    border-width: 30px 30px 0 30px;
+    bottom: 0;
+	top: 0;
+	left: auto;
+	right: 17%;
+	z-index: 99;
+}
+
 
  /*****************
 	* Giving Widget *

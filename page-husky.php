@@ -28,7 +28,7 @@
 
 <div id="immersive-body">
     <section class="intro" id="intro-vid">
-        <div class="intro-body">
+		<div class="intro-body">
             <div class="row">
                 <div class="col-md-6 col-md-offset-1" id="intro-text">
                     <h1>Setting the Pace</h1>
@@ -77,6 +77,7 @@
 		</section><!-- .photo-text-block -->
 
 		<section class="photo-block photo-quote hallie-close blur-focus">
+			<span class="arrow arrow-top-right"></span>
 			<div class="container">
 				<div class="row">
 					<blockquote>I just expected that I was going to play basketball or run track at a small school.
@@ -105,7 +106,7 @@
 			</div><!-- .container -->
 		</section><!-- .text-block -->
 
-		<section class="photo-block hallie-starting"></section><!-- .photo-block -->
+		<section class="photo-block hallie-starting arrow arrow-bottom-right"></section><!-- .photo-block -->
 
 		<section class="text-block">
 			<div class="container">
@@ -155,7 +156,7 @@
 			</div><!-- .container -->
 		</section><!-- .text-block -->
 
-		<section class="photo-block photo-quote gym-rowing">
+		<section class="photo-block photo-quote gym-rowing arrow arrow-bottom-left">
 			<div class="container">
 				<div class="row">
 					<blockquote>Rowing is like cross-country on steroids. It&rsquo;s endurance and strength &mdash; everything about it just locked me in.
