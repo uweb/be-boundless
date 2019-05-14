@@ -223,6 +223,9 @@
 						<p>For the researchers involved, kidney-on-a-chip might very well bring about changes in their lifetime, a rarity for big medical breakthroughs. This trailblazing science is made possible in large part by donors who support the Pharmaceutics Fund for Excellence, which invests in startup research projects like kidney-on-a-chip.</p>
 						<p>A mission to improve the lives of people around the world — and the solar system — is shared across the UW as part of the <a href="http://www.washington.edu/populationhealth">Population Health Initiative</a>. By leveraging capabilities and opportunities on campus and beyond, researchers will have the tools to create healthier and more fulfilling lives for all.</p>
 						<p>“As a pharmacist, I’m very satisfied to be able to show people what we’re doing and where their research dollars are going,” says Yeung. “With kidney-on-a-chip, we have an actual chance to impact the lives of patients.”</p>
+
+						<p><em>Update:</em> At 2:48 a.m. on May 4, 2019, SpaceX launched the CRS-17 cargo mission to resupply the International Space Station with 5,500 pounds of crew supplies and research materials &mdash; including kidney-on-a-chip. A few days prior, <a href="https://sop.washington.edu/kidney-on-a-chip-has-gone-to-outer-space">Ed Kelly spoke at NASA</a> about how his team and their partners had prepared for the mission. Congratulations to all!</p>
+
                         <?php campaign_pubdate($post, $publishMonthYear); ?>
 						<div class="giving-widget">
 							<h2>What you care about can change the world</h2>
