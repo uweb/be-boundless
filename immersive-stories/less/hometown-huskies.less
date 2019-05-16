@@ -374,10 +374,14 @@ html {
 			}
 			p.caption {
 				color: white;
-				text-align: right;
+				text-align: center;
 				text-transform: none;
 				position: relative;
 				z-index: 10;
+
+				@media @phone-only {
+					max-width: 80%;
+				}
 			}
 		}
 
