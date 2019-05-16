@@ -80,9 +80,8 @@
 			<span class="arrow arrow-top-right"></span>
 			<div class="container">
 				<div class="row">
-					<blockquote>I just expected that I was going to play basketball or run track at a small school.
-						<p class="caption">Hallie Jensen</p>
-					</blockquote>
+					<blockquote>Since the first day of training, I&rsquo;ve felt that this is where I should be.</blockquote>
+					<p class="caption">&mdash; Hallie Jensen</p>
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .photo-block -->
@@ -115,7 +114,7 @@
 						<h2>Keeping it local</h2>
 						<p>UW Women&rsquo;s Rowing recruits top talent from around the world. But, says Josh Gautreau, assistant coach and lead recruiter, much of the team&rsquo;s historic success stems from walk-ons from Washington state. Like Jensen, many have proven themselves in a range of other sports.</p>
 
-						<p>They have what Gautreau calls &ldquo;engines,&rdquo; and those engines have powered success: &ldquo;At each of the last five Olympics, someone who walked on at the UW has medaled,&rdquo; he says.</p>
+						<p>They have what Gautreau calls &ldquo;engines,&rdquo; and those engines have powered success: &ldquo;At each of the last four Olympics, someone who walked on at the UW has medaled,&rdquo; he says.</p>
 
 						<p>Gautreau helped launch Hometown Huskies to broaden the walk-on talent pipeline even more. The program offers a one-year, full-tuition scholarship to a promising student-athlete from Washington state who has never rowed before. If she excels, she may earn additional rowing scholarships. But first she has to prove herself.</p>
 
@@ -130,9 +129,8 @@
 		<section class="photo-block photo-quote classroom blur-focus">
 			<div class="container">
 				<div class="row">
-					<blockquote>Excellence should be a habit in both the classroom and the boathouse.
-						<p class="caption">Hallie Jensen</p>
-					</blockquote>
+					<blockquote>Excellence should be a habit in both the classroom and the boathouse.</blockquote>
+					<p class="caption">&mdash; Hallie Jensen</p>
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .photo-block -->
@@ -148,7 +146,7 @@
 
 						<p>&ldquo;I really like the atmosphere of my classes and and studying things I&rsquo;m interested in,&rdquo; Jensen says, citing her courses in English, women&rsquo;s studies and the history of classical music. Though her schedule is packed, Jensen has adjusted quickly to the independence of university life. &ldquo;I&rsquo;ve really enjoyed being in charge of my time so far,&rdquo; she says.</p>
 
-						<p>Between two-a-day practices at Conibear Shellhouse, Jensen can usually be found studying at the nearby <a href="https://gohuskies.com/sports/2016/10/2/saas_about.aspx">Ackerley Academic Center</a>. With group and private study space, computers and tutors, the center has been crucial in helping Jensen stay on top of her schoolwork.</p>
+						<p>Between two-a-day practices at Conibear Shellhouse, Jensen can usually be found studying at the nearby <a href="https://gohuskies.com/sports/2016/10/2/saas_about.aspx">Ackerley Academic Center</a>. With group and private study space, computers and tutors, the center has been crucial in helping her stay on top of her schoolwork.</p>
 
 						<p>&ldquo;Excellence should be a habit in both the classroom and the boathouse,&rdquo; says Jensen, who hopes to become a coach and a high school English teacher. &ldquo;Ultimately, I know I&rsquo;m here to get an education.&rdquo;</p>
 					</div><!-- .copy -->
@@ -159,9 +157,8 @@
 		<section class="photo-block photo-quote gym-rowing arrow arrow-bottom-left">
 			<div class="container">
 				<div class="row">
-					<blockquote>Rowing is like cross-country on steroids. It&rsquo;s endurance and strength &mdash; everything about it just locked me in.
-						<p class="caption">Hallie Jensen</p>
-					</blockquote>
+					<blockquote>At each of the last four Olympics, someone who walked on at the UW has medaled.</blockquote>
+					<p class="caption">&mdash; Josh Gautreau, assistant coach and lead recruiter, UW Women&rsquo;s Rowing</p>
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .photo-block -->
@@ -198,9 +195,8 @@
 		<section class="photo-block photo-quote hallie-rowing blur-focus">
 			<div class="container">
 				<div class="row">
-					<blockquote>They put a lot of trust in me, it&rsquo;s my duty to prove that they made the right choice.
-						<p class="caption">Hallie Jensen</p>
-					</blockquote>
+					<blockquote>They put a lot of trust in me. It&rsquo;s my duty to prove that they made the right choice.</blockquote>
+					<p class="caption">&mdash; Hallie Jensen</p>
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</section><!-- .photo-block -->
@@ -208,45 +204,45 @@
 		<section class="slideshow">
 			<div class="slick">
 				<div>
-					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/1.jpg' ?>" alt="TBD">
+					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/1.jpg' ?>" alt="Hallie Jensen in her dorm room">
                     <div class="caption">
-                        <p>Caption TBD</p>
+                        <p>Jensen in her dorm room in newly rebuilt McCarty Hall</p>
                     </div>
 				</div>
 				<div>
-					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/2.jpg' ?>" alt="TBD">
+					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/2.jpg' ?>" alt="Hallie and her friends get ice cream">
                     <div class="caption">
-                        <p>Caption TBD</p>
+                        <p>On a rare free afternoon, Jensen and friends from the team grab ice cream in Seattle&rsquo;s Capitol Hill neighborhood.</p>
                     </div>
 				</div>
 				<div>
-					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/3.jpg' ?>" alt="TBD">
+					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/3.jpg' ?>" alt="Hallie in class">
                     <div class="caption">
-                        <p>Caption TBD</p>
+                        <p>Jensen hopes to become an English teacher after graduation.</p>
                     </div>
 				</div>
 				<div>
-					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/5.jpg' ?>" alt="TBD">
+					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/5.jpg' ?>" alt="Early morning practice">
                     <div class="caption">
-                        <p>Caption TBD</p>
+                        <p>Early practices sometimes come with a sunrise over Lake Washington&rsquo;s Union Bay.</p>
                     </div>
 				</div>
 				<div>
-					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/6.jpg' ?>" alt="TBD">
+					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/6.jpg' ?>" alt="Hallie and crew carrying boat">
                     <div class="caption">
-                        <p>Caption TBD</p>
+                        <p>&ldquo;Rowing is such a demanding sport &mdash; but we keep coming back to it because every day, we get to work toward something greater than ourselves,&rdquo; says Jensen.</p>
                     </div>
 				</div>
 				<div>
-					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/7.jpg' ?>" alt="TBD">
+					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/7.jpg' ?>" alt="Hallie and crew on the water">
                     <div class="caption">
-                        <p>Caption TBD</p>
+                        <p>Jensen&rsquo;s boat won at the Husky Open, but it wasn&rsquo;t as easy as it looked. &ldquo;Rowing a 2K is the hardest thing I&rsquo;ve ever done,&rdquo; she says.</p>
                     </div>
 				</div>
 				<div>
-					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/8.jpg' ?>" alt="TBD">
+					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/8.jpg' ?>" alt="Hallie Jensen stretching on the track">
                     <div class="caption">
-                        <p>Caption TBD</p>
+                        <p>Jensen excelled as a track, cross-country and basketball star at Lakeside High in Nine Mile Falls, Washington.</p>
                     </div>
 				</div>
 			</div>

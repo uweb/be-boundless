@@ -249,6 +249,8 @@ html {
 				height: 100%;
 				display: flex;
 				align-items: center;
+				flex-direction: column;
+				justify-content: center;
 			}
 		}
 
@@ -360,22 +362,22 @@ html {
 					text-align: left;
 				}
 
-				.caption {
-					color: white;
-					text-align: right;
-					text-transform: none;
+				&:after {
+					content: close-quote;
 					position: relative;
-					
-					&:after {
-						content: close-quote;
-						position: relative;
-						font-family: @headline;
-						font-weight: @ultra;
-						font-size: 3vw;
-						top: 1.2vw;
-						left: 1vw;
-					}
+					font-family: @headline;
+					font-weight: @ultra;
+					font-size: 3vw;
+					top: 1.5vw;
+					left: 1vw;
 				}
+			}
+			p.caption {
+				color: white;
+				text-align: right;
+				text-transform: none;
+				position: relative;
+				z-index: 10;
 			}
 		}
 
@@ -416,13 +418,14 @@ html {
 			width: auto;
 		}
 
-		.caption {
+		.caption p  {
 			padding-left: 40px;
 			padding-right: 40px;
+			max-width: 70%;
+			margin: 0 auto;
 
 			@media @tablet-landscape-up {
-				padding-left: 0;
-				padding-right: 0;
+				max-width: inherit;
 			}
 		}
 	}
