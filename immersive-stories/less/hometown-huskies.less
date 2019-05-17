@@ -84,27 +84,38 @@ html {
 		 height: calc(~"103vh - 171px");
 		 background-image: url("@{hometownhuskies}/header-top.jpg");
 		 .background-cover(cover);
-		 background-position: center center;
+		 background-position: top center;
 		 background-repeat: no-repeat;
+		 margin-top: -20px;
 		 margin-bottom: 0;
+
+		 @media (min-width: 1400px) {
+			 margin-top: -40px;
+		 }
 
 		 @media @phone-only {
 			background-position: 80% center;
+		 }
 
-			&:before {
-				content: '';
-				display: block;
-				position: absolute;
-				left: 0;
-				top: 0;
-				height: 100%;
-				width: 100%;
+		 &:before {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.0) 20%);
+			background: -o-linear-gradient(bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.0) 20%);
+			background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.0) 20%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#222222',GradientType=1 );
+
+			@media @phone-only {
 				background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.0) 40%);
 				background: -o-linear-gradient(bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.0) 40%);
 				background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.0) 40%);
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#222222',GradientType=1 );
 			}
-		 }
+		}
  
 		 h1 {
 			text-transform: uppercase;
@@ -212,6 +223,21 @@ html {
 			.background-cover(cover);
 			background-position: bottom center;
 			background-repeat: no-repeat;
+			position: relative;
+
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 100%;
+				width: 100%;
+				background: -webkit-linear-gradient(top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.0) 40%);
+				background: -o-linear-gradient(top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.0) 40%);
+				background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.0) 40%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#222222',GradientType=1 );
+			}
 
 			@media (min-width: 992px) {
 				background-position: center right;
@@ -432,6 +458,10 @@ html {
 
 			@media @tablet-landscape-up {
 				background-position: top center;
+			}
+
+			@media @desktop-up {
+				height: 140vh;
 			}
 		}
 	}
