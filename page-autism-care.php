@@ -1,7 +1,7 @@
 <?php
 
         $slug = 'autism';
-        $twitter_photo = "http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/" . $slug . "/twitter-card.jpg"; // NEED
+        $twitter_photo = "http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/" . $slug . "/twitter-card.jpg";
         $twitter_title = 'Caring for every child';
         $twitter_description = 'The Sunderlands were changed forever by the UW&rsquo;s groundbreaking support for children with autism. Now they want to help other families access the same opportunities.';
         $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);

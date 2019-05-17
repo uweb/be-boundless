@@ -1,9 +1,9 @@
 <?php
 
         $slug = 'hometown-huskies';
-        $twitter_photo = "http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/" . $slug . "/twitter-card.jpg"; // NEED
-        $twitter_title = ''; // NEED
-        $twitter_description = "Last year, standout high school athlete Hallie Jensen had never rowed - but now she's training on the UW's Division I crew team, thanks to the Hometown Huskies program."; // NEED
+        $twitter_photo = "http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/" . $slug . "/twitter-card.jpg";
+        $twitter_title = 'Setting the pace';
+        $twitter_description = "Last year, standout high school athlete Hallie Jensen had never rowed - but now she's training on the UW's Division I crew team, thanks to the Hometown Huskies program.";
         $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);
         $styles = "<link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/campaign/css/header.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/common.css' type='text/css' media='all' /><link rel='stylesheet' href='" . get_stylesheet_directory_uri() . "/immersive-stories/css/" . $slug . ".css' type='text/css' media='all' />";
         $scripts = "<script src='" . get_stylesheet_directory_uri() . "/campaign/js/animationLibraries.min.js' type='text/javascript'></script><script src='" . get_stylesheet_directory_uri() . "/immersive-stories/js/" . $slug . ".min.js' type='text/javascript'></script>";
@@ -24,7 +24,7 @@
 ?>
 
 <!-- INSERT SCROLL BAR -->
-<div id="scrollbar"><span></span><img class="grayW" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/W-Logo_gray.png' ?>"></div>
+<div id="scrollbar"><span></span><img class="grayW" src="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/comotion/W-Logo_gray.png' ?>" alt=""></div>
 
 <div id="immersive-body">
     <section class="intro" id="intro-vid">
@@ -210,9 +210,9 @@
                     </div>
 				</div>
 				<div>
-					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/2.jpg' ?>" alt="Hallie and her friends get ice cream">
+					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/2.jpg' ?>" alt="Hallie working hard">
                     <div class="caption">
-                        <p>On a rare free afternoon, Jensen and friends from the team grab ice cream in Seattle&rsquo;s Capitol Hill neighborhood.</p>
+                        <p></p>
                     </div>
 				</div>
 				<div>

@@ -1,7 +1,7 @@
 <?php
 
         $slug = 'task-force';
-        $twitter_photo = "http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/" . $slug . "/twitter-card.jpg"; // NEED
+        $twitter_photo = "http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/" . $slug . "/twitter-card.jpg";
         $twitter_title = 'Policy in action';
         $twitter_description = 'Through the Task Force program, students in the Jackson School of International Studies tackle critical policy challenges &mdash; and set their career paths in motion.';
         $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);

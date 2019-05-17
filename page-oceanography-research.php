@@ -1,7 +1,7 @@
 <?php
 
         $slug = 'oceanography-research';
-        $twitter_photo = "http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/" . $slug . "/twitter-card.jpg"; // NEED
+        $twitter_photo = "http://www.washington.edu/wp-content/themes/be-boundless/immersive-stories/img/" . $slug . "/twitter-card.jpg";
         $twitter_title = 'Sea lessons';
         $twitter_description = 'Oceanography major Deana Crouser is doing more than get her feet wet on the R/V Rachel Carson. She&rsquo;s helping peer into the future of our oceans.';
         $meta = twitter_card($twitter_photo, $twitter_title, $twitter_description);

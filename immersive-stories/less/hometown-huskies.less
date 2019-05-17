@@ -241,6 +241,7 @@ html {
 		background-position: center center;
 		background-repeat: no-repeat;
 		position: relative;
+		height: 100vh;
 
 		.container { 
 			height: 100%;
@@ -256,43 +257,59 @@ html {
 
 		&.photo-quote {
 			&.hallie-close {
-				margin: 20px 0 0;
+				margin: 20px 5px 0 15px;
 				background-image: url("@{hometownhuskies}/hallie-close.jpg");
-				height: 50vh;
+				background-position: bottom right;
 
 				blockquote { max-width: 65vw; }
 
 				@media @tablet-landscape-up {
-					margin: 40px 40px 0 40px;
+					margin: 40px 20px 0 40px;
 				}
 			}
 
 			&.classroom {
 				background-image: url("@{hometownhuskies}/classroom.jpg");
-				height: 70vh;
 			}
 
 			&.gym-rowing, &.gym-rowing-1 {
 				background-image: url("@{hometownhuskies}/rowing-1.jpg");
-				height: 70vh;
-				-webkit-transition: all 2s ease;
-				-moz-transition: all 2s ease;
-				-o-transition: all 2s ease;
-				transition: all 2s ease;
+
+				@media (prefers-reduced-motion: no-preference) {
+					-webkit-transition: all 2s ease;
+					-moz-transition: all 2s ease;
+					-o-transition: all 2s ease;
+					transition: all 2s ease;
+				}
+
+				@media (prefers-reduced-motion: reduce) {
+					-webkit-transition: none 0s ease-in;
+					-moz-transition: none 0s ease-in;
+					-o-transition: none 0s ease-in;
+					transition: none 0s ease-in;
+				}
 			}
 
 			&.gym-rowing-2 {
 				background-image: url("@{hometownhuskies}/rowing-2.jpg");
-				height: 70vh;
-				-webkit-transition: all 2s ease;
-				-moz-transition: all 2s ease;
-				-o-transition: all 2s ease;
-				transition: all 2s ease;
+				
+				@media (prefers-reduced-motion: no-preference) {
+					-webkit-transition: all 2s ease;
+					-moz-transition: all 2s ease;
+					-o-transition: all 2s ease;
+					transition: all 2s ease;
+				}
+
+				@media (prefers-reduced-motion: reduce) {
+					-webkit-transition: none 0s ease-in;
+					-moz-transition: none 0s ease-in;
+					-o-transition: none 0s ease-in;
+					transition: none 0s ease-in;
+				}
 			}
 
 			&.hallie-rowing {
 				background-image: url("@{hometownhuskies}/hallie-rowing.jpg");
-				height: 70vh;
 				background-position: top center;
 			}
 
@@ -304,10 +321,19 @@ html {
 				background: inherit;
 				z-index: 1;
 			
-				transition: all 2s ease;
-				-moz-transition: all 2s ease;
-				-webkit-transition: all 2s ease;
-				-o-transition: all 2s ease;
+				@media (prefers-reduced-motion: no-preference) {
+					-webkit-transition: all 2s ease;
+					-moz-transition: all 2s ease;
+					-o-transition: all 2s ease;
+					transition: all 2s ease;
+				}
+
+				@media (prefers-reduced-motion: reduce) {
+					-webkit-transition: none 0s ease-in;
+					-moz-transition: none 0s ease-in;
+					-o-transition: none 0s ease-in;
+					transition: none 0s ease-in;
+				}
 			}
 
 			&.blur-focus:before {
@@ -323,10 +349,19 @@ html {
 				-webkit-filter: blur(10px);
 				-o-filter: blur(10px);
 			
-				transition: all 4s ease;
-				-moz-transition: all 4s ease;
-				-webkit-transition: all 4s ease;
-				-o-transition: all 4s ease;
+				@media (prefers-reduced-motion: no-preference) {
+					-webkit-transition: all 4s ease;
+					-moz-transition: all 4s ease;
+					-o-transition: all 4s ease;
+					transition: all 4s ease;
+				}
+
+				@media (prefers-reduced-motion: reduce) {
+					-webkit-transition: none 0s ease-in;
+					-moz-transition: none 0s ease-in;
+					-o-transition: none 0s ease-in;
+					transition: none 0s ease-in;
+				}
 			}
 
 			blockquote {
@@ -334,6 +369,7 @@ html {
 				font-family: @headline;
 				font-weight: @ultra;
 				text-transform: uppercase;
+				text-shadow: 0 0 3px rgba(37,37,37,0.65);
 				font-size: 3vw;
 				line-height: 2;
 				max-width: 68vw;
@@ -360,14 +396,15 @@ html {
 					top: 2.5vw;
 					left: 1vw;
 					text-align: left;
+
+					@media @phone-only {
+						line-height: .5em;
+					}
 				}
 
 				&:after {
 					content: close-quote;
 					position: relative;
-					font-family: @headline;
-					font-weight: @ultra;
-					font-size: 3vw;
 					top: 1.5vw;
 					left: 1vw;
 				}
@@ -378,6 +415,8 @@ html {
 				text-transform: none;
 				position: relative;
 				z-index: 10;
+				font-size: 20px;
+				text-shadow: 0 0 3px rgba(37,37,37,0.65);
 
 				@media @phone-only {
 					max-width: 80%;
