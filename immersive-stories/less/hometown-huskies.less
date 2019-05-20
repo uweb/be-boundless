@@ -132,6 +132,7 @@ html {
 
 		p {
 			color: white;
+			text-shadow: 0 0 3px rgba(37,37,37,0.65)
 		}
 
 		 .intro-body {
@@ -146,7 +147,7 @@ html {
 				.play-button {
 					text-align: center;
 					text-transform: uppercase;
-					margin-top: 6.3vw;
+					margin-top: 10vw;
 	
 					@media (max-width: 991px) {
 						margin-top: 0;
@@ -186,29 +187,26 @@ html {
 				}
 			}
 		
-			@media @tablet-landscape-up {
-				.intro-body {
-					& > div {
-		
+			@media (min-width: 992px) {
+				& > div {
+					.flex-display(flex);
+					.align-content(center);
+					justify-items: center;
+					justify-content: center;
+
+					.play-button {
+						position: relative;
 						.flex-display(flex);
-						.align-content(center);
-						.play-button {
-							position: relative;
-							.flex-display(flex);
-							.align-items(center);
-							&:after {
-								content: "";
-								width: 2px;
-								height: 100%;
-								left: 0;
-								top: 0;
-								.rotate(15deg);
-								left: -70px;
-								position: absolute;
-								background-color: white;
-							}
-						}
+						.align-items(center);
 					}
+				}
+				.row { margin-top: 50px; }
+			}
+
+			@media (min-width: 1440px) {
+				.play-button {
+					margin-top: 12vw;
+					padding-left: 10vw;
 				}
 			}
 		 }
@@ -497,6 +495,7 @@ html {
 			padding-right: 40px;
 			max-width: 70%;
 			margin: 0 auto;
+			background-color: rgba(0,0,0,0.7);
 
 			@media @tablet-landscape-up {
 				max-width: inherit;

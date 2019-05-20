@@ -34,7 +34,8 @@ $(function () {
         cssEase: 'linear',
         lazyLoad: 'ondemand',
         variableWidth: true,
-        mobileFirst: true
+        mobileFirst: true,
+        focusOnSelect: true
      });
 
 
