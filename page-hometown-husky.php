@@ -36,7 +36,7 @@
                     <p>Last year, standout high school athlete Hallie Jensen had never rowed &mdash; but now she&rsquo;s competing on the UW&rsquo;s Division I crew team, thanks to the Hometown Huskies program.</p>
                 </div>
 				<div class="col-md-4 col-lg-3 col-md-offset-1 col-xs-12 col-lg-offset-1 col-xs-offset-1 play-button" >
-                        <a data-lity href="https://www.youtube.com/embed/a6KGPBflhiM?autoplay=1&rel=0&showinfo=0">
+                        <a data-lity href="https://www.youtube.com/embed/dX-m_FnrOew?autoplay=1&rel=0&showinfo=0">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="137.909px" height="137.131px" viewBox="0 0 137.909 137.131" enable-background="new 0 0 137.909 137.131"
                          xml:space="preserve">
