@@ -33,7 +33,7 @@
                 <div class="col-md-6 col-md-offset-1" id="intro-text">
                     <h1>Setting the Pace</h1>
                     <span class="udub-slant"><span></span></span>
-                    <p>Last year, standout high school athlete Hallie Jensen had never rowed &mdash; but now she&rsquo;s training on the UW&rsquo;s Division I crew team, thanks to the Hometown Huskies program.</p>
+                    <p>Last year, standout high school athlete Hallie Jensen had never rowed &mdash; but now she&rsquo;s competing on the UW&rsquo;s Division I crew team, thanks to the Hometown Huskies program.</p>
                 </div>
 				<div class="col-md-4 col-lg-3 col-md-offset-1 col-xs-12 col-lg-offset-1 col-xs-offset-1 play-button" >
                         <a data-lity href="https://www.youtube.com/embed/a6KGPBflhiM?autoplay=1&rel=0&showinfo=0">
@@ -144,7 +144,7 @@
 
 						<p>These qualities have served Jensen well over the past year. She has thrived in her transition to a fulfilling student life, as well as Division I athletics.</p>
 
-						<p>&ldquo;I really like the atmosphere of my classes and and studying things I&rsquo;m interested in,&rdquo; Jensen says, citing her courses in English, women&rsquo;s studies and the history of classical music. Though her schedule is packed, Jensen has adjusted quickly to the independence of university life. &ldquo;I&rsquo;ve really enjoyed being in charge of my time so far,&rdquo; she says.</p>
+						<p>&ldquo;I really like the atmosphere of my classes and studying things I&rsquo;m interested in,&rdquo; Jensen says, citing her courses in English, women&rsquo;s studies and the history of classical music. Though her schedule is packed, she has adjusted quickly to the independence of university life. &ldquo;I&rsquo;ve really enjoyed being in charge of my time so far,&rdquo; she says.</p>
 
 						<p>Between two-a-day practices at Conibear Shellhouse, Jensen can usually be found studying at the nearby <a href="https://gohuskies.com/sports/2016/10/2/saas_about.aspx">Ackerley Academic Center</a>. With group and private study space, computers and tutors, the center has been crucial in helping her stay on top of her schoolwork.</p>
 
@@ -178,7 +178,7 @@
 
 						<p><em>Get your minds right. Demand more earlier!</em></p>
 
-						<p>Especially in the dark hours of fall and early winter, it can be tough. When race season is still far off, the qualities of patience, commitment and positivity can be as important as talent. Jensen has the added motivation &mdash; and pressure &mdash; of her Hometown Husky scholarship.</p>
+						<p>Especially in the dark hours of fall and early winter, it can be tough. When race season is still far off, the qualities of patience, commitment and positivity can be as important as talent. Jensen has the added motivation &mdash; and pressure &mdash; of her Hometown Huskies scholarship.</p>
 
 						<p>&ldquo;They put a lot of trust in me by selecting me,&rdquo; she says. &ldquo;It&rsquo;s my duty to prove that they made the right choice.&rdquo;</p>
 
@@ -212,7 +212,7 @@
 				<div>
 					<img data-lazy="<?php echo get_stylesheet_directory_uri() . '/immersive-stories/img/hometown-huskies/slider/2.jpg' ?>" alt="Hallie working hard">
                     <div class="caption">
-                        <p></p>
+                        <p>&ldquo;Hallie is blossoming,&rdquo; says Head Coach Yasmin Farooq. &ldquo;She&rsquo;s just started to realize what she&rsquo;s capable of doing.&rdquo;</p>
                     </div>
 				</div>
 				<div>
