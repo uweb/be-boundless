@@ -7,7 +7,7 @@ if(!$storyCodes || $storyCodes == ''){
 	$storyCodes = 'IMPFND';
 }
 if(!$storyAppealCodes || $storyAppealCodes == ''){
-	$storyAppealCodes = '19XBS';
+	$storyAppealCodes = '20XBS';
 }
 global $post;
 
