@@ -2,18 +2,14 @@
   "name": "be-boundless",
   "version": "0.1.0",
   "devDependencies": {
-    "clean-css": "*",
-    "grunt": "*",
+    "clean-css": "^4.2.1",
+    "grunt": "^1.0.4",
     "grunt-contrib-concat": "*",
-    "grunt-contrib-jshint": "*",
-    "grunt-contrib-less": "*",
-    "grunt-contrib-uglify": "*",
-    "grunt-contrib-watch": "*",
+    "grunt-contrib-jshint": "^2.1.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-notify": "*"
   },
-  "dependencies": {
-    "clean-css": "^3.4.23",
-    "grunt-contrib-jshint": "^1.1.0",
-    "grunt-contrib-uglify": "^2.0.0"
-  }
+  "dependencies": {}
 }
