@@ -1,6 +1,6 @@
 <?php
 
-//test comment
+//
 require( 'setup/class.boundless.php' );
 //require( 'setup/class.post-type-map-points.php' );
 //require( 'setup/class.post-type-gallery.php' );
