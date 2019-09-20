@@ -75,7 +75,28 @@ global $scripts;
 				ga('create', 'UA-15747328-1', 'auto', {'allowLinker': true});
 				ga('require', 'linker');
 				ga('linker:autoLink', ['online.gifts.washington.edu'], ['gifts.washington.edu']);
+				ga('require', 'ecommerce');
+				// add transaction
+				ga('ecommerce:addTransaction', {
+					'id': transaction[0][5],            // Transaction ID. Required.
+					'affiliation': transaction[0][1],   // Affiliation.
+					'revenue': transaction[0][3],       // Grand Total.
+				});
+
+				// add items
+				for (i; i < fundsLength; i++) {
+					ga('ecommerce:addItem', {
+							'id': transaction[0][5],        // Transaction ID. Required.
+							'name': transaction[1][i][1],   // Product name. Required. (Fund Name)
+							'sku': transaction[1][i][3],    // SKU. (Allocation)
+							'price': transaction[1][i][5],  // Unit price.
+							'quantity': '1',
+							'category': transaction[0][1]  // set product category = Appeal Code
+						});
+					}
+
 				ga('send', 'pageview');
+
 			</script>
 			<!-- Global site tag (gtag.js) - Google Analytics -->
 			<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15747328-1"></script>
