@@ -34,6 +34,14 @@ global $post;
 		<!-- <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script> -->
 		<script type='text/javascript' src='<?php echo get_stylesheet_directory_uri() . '/campaign/js/vendor/jquery-1.11.3.min.js' ?>'></script>
 		<script type='text/javascript' src='<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>'></script>
+		
+		<script src="https://cdn.variametrix.com/d2insights/tracker.min.js"></script>
+		<script>
+			var _iaq = _iaq || [];
+			_iaq.push(['enableHeartBeatTimer', '30']);
+			_iaq.push(['setSiteId', '7a490682-d908-4153-b1b4-ba39c8085050']);
+			_iaq.push(['setCustomerId', '7a490682-d908-4153-b1b4-ba39c8085050']);
+		</script>
 	</head>
 	<body id="immersive" <?php body_class(); ?>>
 		<header id="cv2-header" class="cv2-header" role="banner">
