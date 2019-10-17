@@ -26,4 +26,7 @@
 @media (max-width: 767px) { .uw-story-body figure.quote-block div { width: 50%; } .uw-story-body figure.quote-block div blockquote { font-size: 2.5rem; } #quote-block-7 { background-position: 60% center; } .uw-story-body figure.quote-block div.text-white figcaption { font-size: 1.5rem; }
 .uw-story-body #flex-content-section-4 p { font-size: 2rem; }
 .uw-story-body .flexible-content.overlap-section .row { top: -150px; margin-bottom: -250px; }
+.uw-story-body .carousel.full-width .carousel-inner .carousel-item img { height: 50vh;}
+.uw-story-body .carousel.full-width .carousel-control-next, .uw-story-body .carousel.full-width .carousel-control-prev { width: 5rem; }
+.uw-story-body .flexible-content.full-height.background-video { height: 50vh; min-height: 50vh; }
 }
