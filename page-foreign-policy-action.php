@@ -228,7 +228,7 @@
 
                             <p>&ldquo;In five years, I&rsquo;ll be able to look back and say, &lsquo;I learned these skills from Task Force,&rsquo;&rdquo; she says. &ldquo;I just hope I do some good for the world.&rdquo;</p>
 
-
+                            <p><em>Update:</em> Maya Sullivan, &rsquo;19, was awarded a Fulbright Research Grant to Oman for the 2019-2020 academic year.</p>
                         </div><!-- .col-md-10 .col-md-offset-1 .copy -->
                     </div><!-- .row -->
                 </div><!-- .container -->
