@@ -16,3 +16,4 @@
 .uw-story-body .giving-widget .col-md-10, .uw-story-body .giving-widget:before { z-index: 999; }
 .uw-story-body .flexible-content.full-height.background-video { height: 80vh; }
 .flexible-content.background-video #pause { left: 20px; top: 50px; }
+.uw-story-body #toggle-12 .row { padding-top: 0; }
