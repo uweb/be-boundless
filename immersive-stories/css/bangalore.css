@@ -31,6 +31,9 @@ div#flex-content-section-10 { min-height: 70vw; }
 #copy-block-11 .row { padding-top: 0; }
 .uw-story-body .flexible-content.overlap-section .row { top: -150px; margin-bottom: -250px; }
 .uw-story-body .carousel.full-width .carousel-inner .carousel-item img { height: 50vh;}
+.uw-story-body .carousel.full-width .carousel-inner .carousel-item.slide-0 img, .uw-story-body .carousel.full-width .carousel-inner .carousel-item.slide-3 img { object-position: 30% center; }
+.uw-story-body .carousel.full-width .carousel-inner .carousel-item.slide-2 img { object-position: 10% center; }
+.uw-story-body .carousel.full-width .carousel-inner .carousel-item.slide-4 img { object-position: right center; }
 .uw-story-body .carousel.full-width .carousel-control-next, .uw-story-body .carousel.full-width .carousel-control-prev { width: 5rem; }
 .uw-story-body .flexible-content.full-height.background-video { height: 50vh; min-height: 50vh; }
 .uw-story-body .giving-widget { background-position: 70% center; }
