@@ -1,6 +1,6 @@
 .uw-story-header { background-position: right center; }
-.uw-story-header h1.text-white { transform: none; font-family: 'Encode Sans Normal', sans-serif; padding-left: 0; text-shadow: 0 0 0; }
-.uw-story-header .text-white p { text-shadow: 0 0 0; line-height: 1.5; max-width: 80%; }
+.uw-story-header h1.text-white { transform: none; font-family: 'Encode Sans Normal', sans-serif; padding-left: 0; }
+.uw-story-header .text-white p { line-height: 1.5; max-width: 80%; }
 .uw-story-header svg { height: 50px; }
 .uw-story-body .copy h2 { color: #373A3C; font-family: 'Encode Sans', sans-serif; font-weight: normal; }
 .uw-story-body .copy .callout { font-family: 'Encode Sans Compressed', sans-serif; font-size: 24px; line-height: 36px; }
@@ -10,7 +10,7 @@
 .uw-story-body figure.quote-block div { border-left: 0; padding: 0; margin-left: 10vw; width: 35%; }
 .uw-story-body figure.quote-block div blockquote { font-family: 'Encode Sans', sans-serif; font-size: 3.5rem; line-height: 1.4; font-weight: 600; }
 .uw-story-body figure.quote-block div figcaption .uw-slant-inline { display: none; }
-.uw-story-body figure.quote-block div blockquote:before { content: open-quote; display: block; position: relative; top: 2vw; left: 0; font-family: 'Encode Sans Normal', sans-serif; }
+.uw-story-body figure.quote-block div blockquote:before { content: open-quote; display: block; position: relative; bottom: -2.5rem; left: 0; font-family: 'Encode Sans Normal', sans-serif; }
 .uw-story-body figure.quote-block div blockquote:after { content: close-quote; position: relative; bottom: -30px; left: 10px; font-family: 'Encode Sans Normal', sans-serif; }
 .uw-story-body .flexible-content.overlap-section .row { top: -200px; margin-bottom: -300px; }
 .uw-story-body .giving-widget:after { content: ''; border: 0 none; display: block; position: absolute; left: 0; top: 0; height: 100%; width: 120%; background: rgba(0,0,0,0.52); }
@@ -22,13 +22,14 @@
 .flexible-content.foreground-image.overlap-section .image:before { content: ''; position: absolute; top: 0; left: -8px; width: 8px; height: 200px; border-left: 8px solid white; }
 .flexible-content.foreground-image.overlap-section .image:after { content: ''; position: absolute; top: -8px; left: -8px; width: 200px; height: 8px; border-top: 8px solid white; }
 .uw-story-body .carousel.full-width .carousel-inner .carousel-caption { background: none; right: inherit; left: 10rem; padding: 0 0 10px 0; font-style: italic;}
-.uw-story-body .carousel.full-width .carousel-inner .carousel-caption p { background: transparent; }
+.uw-story-body .carousel.full-width .carousel-inner .carousel-caption p { background: transparent; text-shadow: 0 0 3px rgba(37, 37, 37, 0.65); }
 @media (min-width: 768px) and (max-width: 989px) {.uw-story-body #flex-content-section-4 p { font-size: 3rem; }}
 @media (max-width: 767px) {
 .uw-story-header { background-position: 90% center; }
 .uw-story-header .w-50 { padding: 0 0 0 2rem; }
 .uw-story-body figure.quote-block div { width: 50%; }
 .uw-story-body figure.quote-block div blockquote { font-size: 2.5rem; }
+.uw-story-body figure.quote-block div blockquote:before { bottom: -1.5rem; }
 #quote-block-7 { background-position: 60% center; }
 .uw-story-body figure.quote-block div.text-white figcaption { font-size: 1.5rem; }
 .uw-story-body #flex-content-section-4 { background-position: 80% center; }
