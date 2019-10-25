@@ -14,7 +14,7 @@
 .uw-story-body figure.quote-block div blockquote:after { content: close-quote; position: relative; bottom: -30px; left: 10px; font-family: 'Encode Sans Normal', sans-serif; }
 .uw-story-body .flexible-content.overlap-section .row { top: -200px; margin-bottom: -300px; }
 .uw-story-body .giving-widget:after { content: ''; border: 0 none; display: block; position: absolute; left: 0; top: 0; height: 100%; width: 120%; background: rgba(0,0,0,0.52); }
-.uw-story-body .giving-widget .col-md-10, .uw-story-body .giving-widget:before { z-index: 999; }
+.uw-story-body .giving-widget .col-md-10, .uw-story-body .giving-widget:before { z-index: 99; }
 .uw-story-body .flexible-content.full-height.background-video { height: 80vh; }
 .flexible-content.background-video #pause { left: 20px; top: 50px; }
 .uw-story-body #toggle-12 .row { padding-top: 0; }
