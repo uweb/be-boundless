@@ -21,7 +21,7 @@
 .flexible-content.foreground-image.overlap-section .image { position: relative; }
 .flexible-content.foreground-image.overlap-section .image:before { content: ''; position: absolute; top: 0; left: -8px; width: 8px; height: 200px; border-left: 8px solid white; }
 .flexible-content.foreground-image.overlap-section .image:after { content: ''; position: absolute; top: -8px; left: -8px; width: 200px; height: 8px; border-top: 8px solid white; }
-.uw-story-body .carousel.full-width .carousel-inner .carousel-caption { background: rgba(75, 46, 131, 0.8); padding: 0 0 10px 0; font-style: italic;}
+.uw-story-body .carousel.full-width .carousel-inner .carousel-caption { background: rgba(75, 46, 131, 0.8); padding: 0 0 10px 0; font-style: italic; left: 10rem; right: inherit; width: 70% !important; }
 .uw-story-body .carousel.full-width .carousel-inner .carousel-caption p { background: none; text-shadow: 0 0 3px rgba(37, 37, 37, 0.65); }
 .uw-story-body .carousel.full-width .carousel-control-next, .uw-story-body .carousel.full-width .carousel-control-prev { background: rgba(183, 165, 122, 0.65); width: 6rem; }
 .uw-story-body .carousel .carousel-control-next .carousel-control-next-icon { left: -6px; }
@@ -46,6 +46,8 @@ div#flex-content-section-10 { min-height: 70vw; }
 .uw-story-body .carousel.full-width .carousel-inner .carousel-item.slide-2 img { object-position: 10% center; }
 .uw-story-body .carousel.full-width .carousel-inner .carousel-item.slide-4 img { object-position: right center; }
 .uw-story-body .carousel.full-width .carousel-control-next, .uw-story-body .carousel.full-width .carousel-control-prev { width: 5rem; }
+.uw-story-body .carousel.full-width .carousel-inner .carousel-caption { width: 80% !important; background: rgba(75, 46, 131, 0.8) !important; left: 5rem; }
+.uw-story-body .carousel.full-width .carousel-inner .carousel-caption p { line-height: 1.2; }
 .uw-story-body .flexible-content.full-height.background-video { height: 50vh; min-height: 50vh; }
 .uw-story-body .giving-widget { background-position: 70% center; }
 }
