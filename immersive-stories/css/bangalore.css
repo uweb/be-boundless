@@ -21,8 +21,8 @@
 .flexible-content.foreground-image.overlap-section .image { position: relative; }
 .flexible-content.foreground-image.overlap-section .image:before { content: ''; position: absolute; top: 0; left: -8px; width: 8px; height: 200px; border-left: 8px solid white; }
 .flexible-content.foreground-image.overlap-section .image:after { content: ''; position: absolute; top: -8px; left: -8px; width: 200px; height: 8px; border-top: 8px solid white; }
-.uw-story-body .carousel.full-width .carousel-inner .carousel-caption { background: none; right: inherit; left: 10rem; padding: 0 0 10px 0; font-style: italic;}
-.uw-story-body .carousel.full-width .carousel-inner .carousel-caption p { background: transparent; text-shadow: 0 0 3px rgba(37, 37, 37, 0.65); }
+.uw-story-body .carousel.full-width .carousel-inner .carousel-caption { left: inherit; padding: 0 0 10px 0; font-style: italic;}
+.uw-story-body .carousel.full-width .carousel-inner .carousel-caption p { text-shadow: 0 0 3px rgba(37, 37, 37, 0.65); }
 @media (min-width: 768px) and (max-width: 989px) {.uw-story-body #flex-content-section-4 p { font-size: 3rem; }}
 @media (max-width: 767px) {
 .uw-story-header { background-position: 90% center; }
