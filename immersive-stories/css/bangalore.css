@@ -23,7 +23,9 @@
 .flexible-content.foreground-image.overlap-section .image:after { content: ''; position: absolute; top: -8px; left: -8px; width: 200px; height: 8px; border-top: 8px solid white; }
 .uw-story-body .carousel.full-width .carousel-inner .carousel-caption { background: rgba(75, 46, 131, 0.8); padding: 0 0 10px 0; font-style: italic;}
 .uw-story-body .carousel.full-width .carousel-inner .carousel-caption p { background: none; text-shadow: 0 0 3px rgba(37, 37, 37, 0.65); }
-.uw-story-body .carousel.full-width .carousel-control-next { background: rgba(183, 165, 122, 0.65); }
+.uw-story-body .carousel.full-width .carousel-control-next, .uw-story-body .carousel.full-width .carousel-control-prev { background: rgba(183, 165, 122, 0.65); width: 6rem; }
+.uw-story-body .carousel .carousel-control-next .carousel-control-next-icon { left: -6px; }
+.uw-story-body .carousel .carousel-control-prev .carousel-control-prev-icon { left: 6px; }
 .uw-story-body .carousel.full-width .carousel-control-next:hover, .uw-story-body .carousel.full-width .carousel-control-prev:hover { background: rgba(75, 46, 131, 0.8); }
 @media (min-width: 768px) and (max-width: 989px) {.uw-story-body #flex-content-section-4 p { font-size: 3rem; }}
 @media (max-width: 767px) {
