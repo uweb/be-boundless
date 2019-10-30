@@ -34,6 +34,7 @@
 @media (max-width: 767px) {
 .uw-story-header { background-position: 90% center; }
 .uw-story-header .w-50 { padding: 0 0 0 2rem; }
+#flex-content-section-1 .row { padding: 60px 30px; }
 .uw-story-body figure.quote-block div { width: 50%; }
 .uw-story-body figure.quote-block div blockquote { font-size: 2.5rem; }
 .uw-story-body figure.quote-block div blockquote:before { bottom: -1.5rem; }
