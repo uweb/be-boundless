@@ -57,3 +57,4 @@ div#flex-content-section-10 { min-height: 70vw; }
 .uw-story-body .flexible-content.full-height.background-video { height: 50vh; min-height: 50vh; }
 .uw-story-body .giving-widget { background-position: 70% center; }
 }
+.uw-body-copy h3 a { text-decoration: underline !important; color: #0074bb;}
