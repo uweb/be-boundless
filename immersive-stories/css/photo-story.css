@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i&display=swap');
+
+.uw-story-header svg.slant-pattern {
+	height: 6vh;
+}
+
+.uw-story-body .copy h2 { color: #373A3C; text-transform: uppercase; font-family: 'Encode Sans Compressed', sans-serif; font-weight: 900; }
+
+.uw-story-columns .row .left-column .copy p,
+.uw-story-columns .row .right-column .copy p,
+#copy-block-8 p, #copy-block-11 p {
+	font-size: 21px;
+	font-family: 'Encode Sans Compressed', sans-serif;
+	font-weight: 600;
+	line-height: 1.3;
+}
+
+#copy-block-8 .row, #copy-block-11 .row {
+	padding-top: 0;
+	padding-bottom: 20px;
+}
+
+.uw-story-columns .row .left-column .copy p,
+.uw-story-columns .row .right-column .copy p {
+	padding: 0 40px;
+}
+
+.copy p {
+	font-weight: 300;
+}
+
+.uw-story-body #uw-carousel-15 {
+	margin-top: 60px;
+}
+
+.uw-story-body .carousel .carousel-control-next, .uw-story-body .carousel .carousel-control-prev {
+	background: rgba(183, 165, 122, 0.65);
+	width: 6rem;
+}
+
+.uw-story-body .carousel .carousel-control-next .carousel-control-next-icon { left: -6px; }
+.uw-story-body .carousel .carousel-control-prev .carousel-control-prev-icon { left: 6px; }
+
+.uw-story-body .giving-widget:after {
+	content: ''; border: 0 none; display: block; position: absolute; left: 0; top: 0; height: 100%; width: 120%; background: rgba(0,0,0,0.52);
+}
+
+.uw-story-body .giving-widget .col-md-10, .uw-story-body .giving-widget:before { z-index: 99; }
+
+@media (min-width: 1024px) {
+	#copy-block-8, #copy-block-11 { width: 50vw; }
+}
+
+@media (max-width: 767px) {
+	.uw-story-header {
+		background-position: 75% center;
+	}
+	#half-columns-18 .row { padding-top: 0; }
+}
