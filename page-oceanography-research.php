@@ -37,7 +37,7 @@
                     <div class="col-md-6 col-lg-4 col-md-offset-1 col-xs-10 col-lg-offset-2 col-xs-offset-1" id='intro-text'>
                         <h1>Sea lessons</h1>
                         <span class="udub-slant"><span></span></span>
-                        <p>Oceanography major Deana Crouser is doing more than getting her feet wet on the R/V Rachel Carson. She&rsquo;s helping peer into the future of our oceans.</p>
+                        <p>Oceanography major Deana Crouser, &rsquo;19, did more than just get her feet wet on the R/V Rachel Carson. She helped peer into the future of our oceans.</p>
                     </div>
                     <div class="col-md-6 col-lg-3 col-md-offset-1 col-xs-12 col-lg-offset-1 col-xs-offset-1 play-button" >
                         <a data-lity href="https://www.youtube.com/embed/I_GvxsadWmM?autoplay=1&rel=0&showinfo=0">
@@ -249,7 +249,9 @@
 
                                 <p class="para5-3">The R/V Carson also helps connect scientists and students to their nearby waters: It&rsquo;s available for use by oceanographic researchers and instructors from outside the UW, too.</p>
 
-                                <div class="para5-4"><?php campaign_pubdate($post, $publishMonthYear); ?></div>
+                                <p class="para5-4"><em>Since this story was published in March 2019, Crouser has graduated from the UW, participated in another research cruise on the R/V Carson and started working as a zooplankton ecologist for Lynker Technologies.</em></p>
+
+                                <div class="para5-5"><?php campaign_pubdate($post, $publishMonthYear); ?></div>
 
                                 <div class="photo-caption overlap-photo image5-1">
                                     <img src="<?php echo get_stylesheet_directory_uri() .'/immersive-stories/img/rv-carson/rachel-carson-fremont-bridge.jpg' ?>" alt="The R/V Carson passes under the Fremont Bridge on its way back to the UW." />
