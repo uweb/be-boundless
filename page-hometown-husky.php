@@ -33,7 +33,7 @@
                 <div class="col-md-6 col-md-offset-1" id="intro-text">
                     <h1>Setting the Pace</h1>
                     <span class="udub-slant"><span></span></span>
-                    <p>Last year, standout high school athlete Hallie Jensen had never rowed &mdash; but now she&rsquo;s competing on the UW&rsquo;s Division I crew team, thanks to the Hometown Huskies program.</p>
+					<p>Hallie Jensen was a standout athlete in high school, but she had never rowed. Now she&rsquo;s competing on the UW&rsquo;s Division I crew team, thanks to the Hometown Huskies program.</p>
                 </div>
 				<div class="col-md-4 col-lg-3 col-md-offset-1 col-xs-12 col-lg-offset-1 col-xs-offset-1 play-button" >
                         <a data-lity href="https://www.youtube.com/embed/dX-m_FnrOew?autoplay=1&rel=0&showinfo=0">
@@ -50,7 +50,7 @@
             </div><!-- .row -->
         </div><!-- .intro-body -->
 	</section><!-- .intro #intro-vid -->
-	
+
     <main id="main_content">
 		<!-- CONTENT SECTIONS -->
 		<section class="photo-text-block rowing-background">
@@ -268,10 +268,12 @@
 						<p>&ldquo;I could have played it safe and pursued collegiate running or basketball,&rdquo; she says. &ldquo;But since the first day of training, I&rsquo;ve felt that this is where I should be. I love this program and feel so blessed that I get to live out this dream.&rdquo;</p>
 
 						<h2>About Hometown Huskies</h2>
-						
+
 						<p>The Hometown Huskies program is open to athletes from across Washington state. Current and future UW students are invited to try out for the women&rsquo;s crew team, and the scholarship is awarded annually to the most deserving walk-on athlete.</p>
 
-						<?php campaign_pubdate($post, $publishMonthYear); ?>
+						<p><em>Originally published June 2019. Jensen&rsquo;s novice eight boat won their race at the Pac-12 championships in Gold River, California, in May. The varsity boats swept all three grand finals in the NCAA championship in June, clinching their fifth national rowing title. Jensen, now a sophomore, has already wrapped up her fall season with UW Women&rsquo;s Rowing. She has her sights set on a varsity spot this coming spring.</em></p>
+
+						<?php //campaign_pubdate($post, $publishMonthYear); ?>
 					</div><!-- .copy -->
 				</div><!-- .row -->
 			</div><!-- .container -->
