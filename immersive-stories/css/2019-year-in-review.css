@@ -1,3 +1,15 @@
 #flex-content-section-1 { margin-top: 0; }
 #flex-content-section-1 img, #flex-content-section-2 img { object-position: top }
 #flex-content-section-5 img, #flex-content-section-14 img, #flex-content-section-15 img { object-position: bottom; }
+
+@media (max-width: 767px) {
+	.uw-story-body .row {
+		padding: 0 0 60px 0;
+	}
+	.uw-story-columns .row {
+		padding-bottom: 0;
+	}
+	#half-columns-18 { margin-bottom: 60px; }
+
+	#flex-content-section-11 { margin-bottom: 0; }
+}
