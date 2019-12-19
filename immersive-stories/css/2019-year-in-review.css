@@ -65,3 +65,23 @@ body { background: black; }
 		object-position: center;
 	}
 }
+
+@media (prefers-reduced-motion: reduce) {
+	#flex-content-section-1 img,
+	#flex-content-section-5 img,
+	#flex-content-section-8 img,
+	#flex-content-section-16 img {
+		transition: none 0s ease-in;
+		filter: none;
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	#flex-content-section-1 img,
+	#flex-content-section-5 img,
+	#flex-content-section-8 img,
+	#flex-content-section-16 img {
+		transition: filter 0.5s ease-in;
+		filter: blur(5px);
+	}
+}
