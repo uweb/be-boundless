@@ -1,10 +1,14 @@
 $(function () {
     // Blur to focus on scroll images
     var blurScroll = 0;
-    var diverPhoto = $( '#flex-content-section-1' ).offset().top;
-    var crewPhoto = $( '#flex-content-section-5' ).offset().top;
+	var diverPhoto = $( '#flex-content-section-1' ).offset().top;
+	console.log(diverPhoto);
+	var crewPhoto = $( '#flex-content-section-5' ).offset().top;
+	console.log(crewPhoto);
 	var forestPhoto = $( '#flex-content-section-8' ).offset().top;
+	console.log(forestPhoto);
 	var microplasticsPhoto = $( '#flex-content-section-16' ).offset().top;
+	console.log(microplasticsPhoto);
 
 	$( '#flex-content-section-1 img' ).addClass('blur-focus');
 	$( '#flex-content-section-5 img' ).addClass('blur-focus');
@@ -12,7 +16,8 @@ $(function () {
 	$( '#flex-content-section-16 img' ).addClass('blur-focus');
 
     $(window).scroll(function () {
-        blurScroll = $(window).scrollTop();
+		blurScroll = $(window).scrollTop();
+		console.log(blurScroll);
 
         // diver photo
         if (blurScroll > diverPhoto + 50 ) {
