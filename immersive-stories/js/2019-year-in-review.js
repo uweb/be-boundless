@@ -26,19 +26,19 @@ $(function () {
         }
 
         // crew photo
-        if ( blurScroll > ( crewPhoto * 2 ) ) {
+        if ( blurScroll > ( crewPhoto + 1500 ) ) {
 			$('#flex-content-section-5 img').removeClass('blur-focus');
 			$('#flex-content-section-5 img').addClass('focus-blur');
         }
 
         // forest photo
-        if ( blurScroll > ( forestPhoto * 2 ) ) {
+        if ( blurScroll > ( forestPhoto + 2000 ) ) {
             $('#flex-content-section-8 img').removeClass('blur-focus');
             $('#flex-content-section-8 img').addClass('focus-blur');
         }
 
 		// microplastics photo
-		if ( blurScroll > ( microplasticsPhoto * 2 ) ) {
+		if ( blurScroll > ( microplasticsPhoto * 1.5 ) ) {
             $('#flex-content-section-16 img').removeClass('blur-focus');
             $('#flex-content-section-16 img').addClass('focus-blur');
         }
