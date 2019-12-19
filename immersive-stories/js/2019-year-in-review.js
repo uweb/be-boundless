@@ -15,25 +15,25 @@ $(function () {
         blurScroll = $(window).scrollTop();
 
         // diver photo
-        if ( (blurScroll > diverPhoto + 20 ) ) {
+        if (blurScroll > diverPhoto ) {
 			$('#flex-content-section-1 img').removeClass('blur-focus');
 			$('#flex-content-section-8 img').addClass('focus-blur');
         }
 
         // crew photo
-        if ( (blurScroll > crewPhoto + 20 ) ) {
+        if (blurScroll > crewPhoto ) {
 			$('#flex-content-section-5 img').removeClass('blur-focus');
 			$('#flex-content-section-8 img').addClass('focus-blur');
         }
 
         // forest photo
-        if ( (blurScroll > forestPhoto + 20 ) ) {
+        if (blurScroll > forestPhoto ) {
             $('#flex-content-section-8 img').removeClass('blur-focus');
             $('#flex-content-section-8 img').addClass('focus-blur');
         }
 
 		// microplastics photo
-		if ( (blurScroll > microplasticsPhoto + 20 ) ) {
+		if (blurScroll > microplasticsPhoto ) {
             $('#flex-content-section-16 img').removeClass('blur-focus');
             $('#flex-content-section-16 img').addClass('focus-blur');
         }
