@@ -19,7 +19,7 @@ $(function () {
         }
 
         // crew photo
-        if (blurScroll > (crewPhoto - $('#flex-content-section-5 img').height() / 2) && (blurScroll < (crewPhoto + $('#flex-content-section-5 img').height() / 1.5))) {
+        if (blurScroll > (crewPhoto - $('#flex-content-section-5 img').height() / 2) ) {
             $('#flex-content-section-5 img').removeClass('blur-focus');
             $('#flex-content-section-5 img').addClass('focus-blur');
         } else {
