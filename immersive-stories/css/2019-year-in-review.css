@@ -74,7 +74,7 @@ svg.slant-pattern { height: 50px; }
 	}
 }
 
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
 	#flex-content-section-1 img,
 	#flex-content-section-5 img,
 	#flex-content-section-8 img,
@@ -92,4 +92,4 @@ svg.slant-pattern { height: 50px; }
 		transition: filter 0.5s ease-in;
 		filter: blur(5px);
 	}
-}
+} */
