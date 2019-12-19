@@ -56,3 +56,12 @@ body { background: black; }
 		padding-right: 0;
 	}
 }
+
+@media (min-width: 1400px ) {
+	#flex-content-section-8 img {
+		object-position: bottom;
+	}
+	#flex-content-section-15 img {
+		object-position: center;
+	}
+}
