@@ -22,7 +22,7 @@ body { background: black; }
 	padding-bottom: 0;
 }
 
-#half-columns-4 .copy, #half-columns-18 .copy {
+#half-columns-4, #half-columns-18 {
 	font-family: "Encode Sans Compressed", sans-serif;
 	font-weight: 600;
 	font-size: 21px;
