@@ -10,7 +10,7 @@ $(function () {
         blurScroll = $(window).scrollTop();
 
         // diver photo
-        if (blurScroll > ( diverPhoto + 100 ) && (blurScroll < (diverPhoto + $('#flex-content-section-1 img').height() - 50 ))) {
+        if ( (blurScroll > diverPhoto) && (blurScroll < (diverPhoto + $('#flex-content-section-1 img').height() ))) {
             $('#flex-content-section-1 img').removeClass('blur-focus');
             $('#flex-content-section-1 img').addClass('focus-blur');
         } else {
@@ -19,7 +19,7 @@ $(function () {
         }
 
         // crew photo
-        if (blurScroll > (crewPhoto + 100 ) && (blurScroll < (crewPhoto + $('#flex-content-section-5 img').height() - 50 ))) {
+        if ( (blurScroll > crewPhoto) && (blurScroll < (crewPhoto + $('#flex-content-section-5 img').height() ))) {
             $('#flex-content-section-5 img').removeClass('blur-focus');
             $('#flex-content-section-5 img').addClass('focus-blur');
         } else {
@@ -28,7 +28,7 @@ $(function () {
         }
 
         // forest photo
-        if (blurScroll > (forestPhoto + 100 ) && (blurScroll < (forestPhoto + $('#flex-content-section-8 img').height() - 50 ))) {
+        if ( (blurScroll > forestPhoto) && (blurScroll < (forestPhoto + $('#flex-content-section-8 img').height() ))) {
             $('#flex-content-section-8 img').removeClass('blur-focus');
             $('#flex-content-section-8 img').addClass('focus-blur');
         } else {
@@ -37,7 +37,7 @@ $(function () {
 		}
 
 		// microplastics photo
-		if (blurScroll > (microplasticsPhoto + 100 ) && (blurScroll < (microplasticsPhoto + $('#flex-content-section-16 img').height() - 50 ))) {
+		if ( (blurScroll > microplasticsPhoto ) && (blurScroll < (microplasticsPhoto + $('#flex-content-section-16 img').height() ))) {
             $('#flex-content-section-16 img').removeClass('blur-focus');
             $('#flex-content-section-16 img').addClass('focus-blur');
         } else {
