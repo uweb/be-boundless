@@ -22,15 +22,15 @@ body { background: black; }
 	padding-bottom: 0;
 }
 
-#half-columns-4, #half-columns-18 {
+#half-columns-4 .copy p, #half-columns-18 .copy p {
 	font-family: "Encode Sans Compressed", sans-serif;
 	font-weight: 600;
 	font-size: 21px;
 	color: white;
 }
 
-#half-columns-4 { padding-left: 50px; }
-#half-columns-18 { padding-right: 50px; }
+#half-columns-4 .right-column { padding-left: 50px; }
+#half-columns-18 .left-column { padding-right: 50px; }
 
 #flex-content-section-14 {
 	margin-top: 80px;
@@ -38,11 +38,11 @@ body { background: black; }
 }
 
 @media (max-width: 767px) {
-	#half-columns-4 {
+	#half-columns-4 .right-column {
 		padding-left: 0;
 	}
 
-	#half-columns-18 {
+	#half-columns-18 .left-column {
 		padding-right: 0;
 	}
 
