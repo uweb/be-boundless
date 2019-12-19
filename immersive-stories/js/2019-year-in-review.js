@@ -17,13 +17,13 @@ $(function () {
         // diver photo
         if (blurScroll > diverPhoto ) {
 			$('#flex-content-section-1 img').removeClass('blur-focus');
-			$('#flex-content-section-8 img').addClass('focus-blur');
+			$('#flex-content-section-1 img').addClass('focus-blur');
         }
 
         // crew photo
         if (blurScroll > crewPhoto ) {
 			$('#flex-content-section-5 img').removeClass('blur-focus');
-			$('#flex-content-section-8 img').addClass('focus-blur');
+			$('#flex-content-section-5 img').addClass('focus-blur');
         }
 
         // forest photo
