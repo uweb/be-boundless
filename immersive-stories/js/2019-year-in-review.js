@@ -38,7 +38,7 @@ $(function () {
         }
 
 		// microplastics photo
-		if ( blurScroll > ( microplasticsPhoto * 2 ) ) {
+		if ( blurScroll > ( microplasticsPhoto * 1.9 ) ) {
             $('#flex-content-section-16 img').removeClass('blur-focus');
             $('#flex-content-section-16 img').addClass('focus-blur');
         }
