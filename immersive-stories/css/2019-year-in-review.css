@@ -48,6 +48,12 @@ body { background: black; }
 }
 
 @media (max-width: 767px) {
+	.uw-story-header {
+		background-position: 72% center;
+	}
+
+	svg.slant-pattern { display: none; }
+
 	#half-columns-4 .right-column {
 		padding-left: 0;
 	}
