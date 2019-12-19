@@ -32,6 +32,16 @@ body { background: black; }
 #half-columns-4 .right-column { padding-left: 50px; }
 #half-columns-18 .left-column { padding-right: 50px; }
 
+.right-column p a, .left-column p a {
+	color: white;
+}
+
+.right-column p a:hover, .left-column p a:hover,
+.right-column p a:active, .left-column p a:active,
+.right-column p a:focus, .left-column p a:focus {
+	color: #B7A57A;
+}
+
 #flex-content-section-14 {
 	margin-top: 80px;
 	margin-bottom: 80px;
