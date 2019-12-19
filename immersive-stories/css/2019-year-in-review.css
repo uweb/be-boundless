@@ -27,8 +27,10 @@ body { background: black; }
 	font-weight: 600;
 	font-size: 21px;
 	color: white;
-	padding-left: 50px;
 }
+
+#half-columns-4 { padding-left: 50px; }
+#half-columns-18 { padding-right: 50px; }
 
 #flex-content-section-14 {
 	margin-top: 80px;
@@ -38,6 +40,10 @@ body { background: black; }
 @media (max-width: 767px) {
 	#half-columns-4 {
 		padding-left: 0;
+	}
+
+	#half-columns-18 {
+		padding-right: 0;
 	}
 
 	/*.uw-story-body .row {
