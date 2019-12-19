@@ -13,6 +13,8 @@ body { background: black; }
 	background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0, rgba(0, 0, 0, 0) 70%);
 }*/
 
+svg.slant-pattern { height: 50px; }
+
 .uw-story-body .flexible-content.foreground-image .image-caption.captions-branded {
 	background: black;
 	position: relative;
