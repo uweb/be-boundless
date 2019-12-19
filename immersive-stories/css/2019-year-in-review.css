@@ -22,7 +22,24 @@ body { background: black; }
 	padding-bottom: 0;
 }
 
+#half-columns-4 .copy, #half-columns-18 .copy {
+	font-family: "Encode Sans Compressed", sans-serif;
+	font-weight: 600;
+	font-size: 21px;
+	color: white;
+	padding-left: 50px;
+}
+
+#flex-content-section-14 {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
 @media (max-width: 767px) {
+	#half-columns-4 {
+		padding-left: 0;
+	}
+
 	/*.uw-story-body .row {
 		padding: 0 0 60px 0;
 	}
