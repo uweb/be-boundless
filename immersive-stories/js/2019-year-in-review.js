@@ -6,10 +6,10 @@ $(function () {
 	var forestPhoto = $( '#flex-content-section-8 img' ).offset().top;
 	var microplasticsPhoto = $( '#flex-content-section-16 img' ).offset().top;
 
-	diverPhoto.addClass('focus-blur');
-	crewPhoto.addClass('focus-blur');
-	forestPhoto.addClass('focus-blur');
-	microplasticsPhoto.addClass('focus-blur');
+	$( '#flex-content-section-1 img' ).addClass('blur-focus');
+	$( '#flex-content-section-5 img' ).addClass('blur-focus');
+	$( '#flex-content-section-8 img' ).addClass('blur-focus');
+	$( '#flex-content-section-16 img' ).addClass('blur-focus');
 
     $(window).scroll(function () {
         blurScroll = $(window).scrollTop();
