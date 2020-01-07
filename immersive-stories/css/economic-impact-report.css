@@ -2,3 +2,7 @@
 	background-color: rgba(0, 0, 0, 0.5);
 	padding: 10px 10px 5px 10px;
 }
+
+.uw-story-body figure.quote-block div figcaption { text-align: left; }
+
+.uw-story-body figure.quote-block.quote-image { min-height: 70vh; }
