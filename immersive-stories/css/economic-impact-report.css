@@ -6,3 +6,5 @@
 .uw-story-body figure.quote-block div figcaption { text-align: left; }
 
 .uw-story-body figure.quote-block.quote-image { min-height: 70vh; }
+
+#copy-block-5 .row, #copy-block-7 .row, #copy-block-9 .row { padding: 0; }
