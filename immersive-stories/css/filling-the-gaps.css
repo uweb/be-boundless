@@ -1,3 +1,5 @@
-.uw-story-header {
-	background-position: 85% center;
+@media (max-width: 767px) {
+	.uw-story-header {
+		background-position: 85% center;
+	}
 }
