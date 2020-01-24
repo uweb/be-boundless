@@ -2,4 +2,22 @@
 	.uw-story-header {
 		background-position: 85% center;
 	}
+
+	.uw-story-body #flex-content-section-2 .row {
+		padding: 0;
+	}
+
+	.uw-story-body #flex-content-section-2 .image-caption p {
+		color: #373A3C;
+	}
+}
+.uw-story-body #flex-content-section-2 .row .image {
+	margin-bottom: 0;
+}
+
+.uw-story-body #flex-content-section-2 .image-caption {
+	position: relative;
+	left: 0;
+	width: auto;
+	padding-bottom: 20px;
 }
