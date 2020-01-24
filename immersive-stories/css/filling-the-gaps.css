@@ -10,6 +10,10 @@
 	.uw-story-body #flex-content-section-2 .image-caption p {
 		color: #373A3C;
 	}
+
+	.uw-story-body #flex-content-section-8 {
+		height: 100vw;
+	}
 }
 .uw-story-body #flex-content-section-2 .row .image {
 	margin-bottom: 0;
