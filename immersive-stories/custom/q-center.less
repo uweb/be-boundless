@@ -1,10 +1,34 @@
 .uw-story-header {
 	align-items: unset !important;
+	background-color: black;
+	background-position: center 200px;
+	@media (max-width: 767px) {
+		background-position: center 100px;
+	}
+	.w-50 {
+		.udub-slant-divider{
+			display: none;
+		}
+		position: unset;
+		padding: 6rem 0;
+		text-align: center !important;
+		margin: 0 auto;
+		.col-md-8 {
+			flex: unset;
+			width: 100%;
+			max-width: 100%;
+		}
+	}
 }
-.w-50 {
-	width: 100% !important;
-	text-align: center !important;
-
+@media (min-width: 768px) {
+	.uw-story-header {
+		height: 70vw;
+		min-height: 1330px;
+	}
+}
+.uw-story-header.mobile-header-center.white.background-image:before,
+.uw-story-header.mobile-header-center.white.background-video:before {
+	background: none;
 }
 .q-quotes {
 	padding-bottom: 0 !important;
@@ -12,6 +36,7 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: row;
+	padding-top: 0 !important;
 	@media (min-width: 992px) {
 		&.even {
 			margin-right: -300px;
@@ -28,7 +53,7 @@
 	font-size: 40px;
 	text-transform: uppercase;
 	@media (max-width: 767px) {
-		font-size: 30px;
+		font-size: 25px;
 	}
 }
 .uw-story-body figure.quote-block div.text-center {
@@ -41,7 +66,7 @@
 .q-quotes figcaption {
 	padding-top: 15px;
 	font-family: "Encode Sans Compressed", sans-serif;
-	font-weight: 900;
+	font-weight: 700;
 }
 .q-quotes figcaption .quote-source-title {
 	font-weight: bold;
