@@ -50,7 +50,11 @@
 }
 .q-quotes span.intro {
 	font-family: "Encode Sans Condensed", sans-serif !important;
-	text-transform: uppercase !important;
+	// text-transform: uppercase !important;
+
+	@media (min-width: 992px) {
+		font-size: 30px;
+	}
 }
 .q-quotes figcaption {
 	padding-top: 15px;
@@ -93,7 +97,7 @@ figure.quote-block div.text-center {
 // 	}
 // }
 .uw-story-body figure.quote-block.quote-image {
-	min-height: 70vh;
+	min-height: 80vh;
 	// padding: 33vh 0 15vh;
 }
 .uw-story-body figure.quote-block div.text-right {
@@ -101,6 +105,9 @@ figure.quote-block div.text-center {
 	border-right: none;
 	position: absolute;
 	right: 30px;
+	@media (max-width: 767px) {
+		right: 0px;
+	}
 }
 #flex-content-section-1 {
 	max-height: 30vh;
