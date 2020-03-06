@@ -67,11 +67,6 @@
 	opacity: 80%;
 	font-size: 13px;
 }
-.uw-accordion-shortcode__header:hover, .uw-accordion-shortcode__header:focus {
-	background-color: white;
-	color: black;
-	font-size: 23px;
-}
 .uw-accordion-shortcode__header {
 	background-color: black;
 	color: white;
@@ -114,4 +109,26 @@ figure.quote-block div.text-center {
 }
 #flex-content-section-3 {
 	max-height: 15vh;
+}
+.uw-accordion-shortcode__header:before {
+	background-position: unset !important;
+}
+.uw-accordion-shortcode__header[aria-expanded="false"]:before {
+	background-image: url(PLUS_WHITE.svg);
+}
+.uw-accordion-shortcode__header[aria-expanded="true"]:before {
+	background-image: url(MINUS_WHITE.svg);
+}
+.uw-accordion-shortcode__header:hover:before,
+.uw-accordion-shortcode__header[aria-expanded="false"]:focus:before{
+	background-image: url(PLUS_black.svg);
+}
+.uw-accordion-shortcode__header[aria-expanded="true"]:focus:before,
+.uw-accordion-shortcode__header[aria-expanded="true"]:hover:before {
+	background-image: url(MINUS_black.svg);
+}
+.uw-accordion-shortcode__header:hover, .uw-accordion-shortcode__header:focus {
+	background-color: white;
+	color: black;
+	font-size: 23px;
 }
