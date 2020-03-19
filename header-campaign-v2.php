@@ -4,7 +4,7 @@ global $styles;
 global $storyCodes;
 global $storyAppealCodes;
 if(!$storyCodes || $storyCodes == ''){
-	$storyCodes = 'IMPFND';
+	$storyCodes = 'HEROES,SEALTS,KATRIN,UWTCHA,UWBSEF,IMPFND';
 }
 if(!$storyAppealCodes || $storyAppealCodes == ''){
 	$storyAppealCodes = '20XBS';
@@ -34,7 +34,7 @@ global $post;
 		<!-- <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script> -->
 		<script type='text/javascript' src='<?php echo get_stylesheet_directory_uri() . '/campaign/js/vendor/jquery-1.11.3.min.js' ?>'></script>
 		<script type='text/javascript' src='<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>'></script>
-		
+
 		<script src="https://cdn.variametrix.com/d2insights/tracker.min.js"></script>
 		<script>
 			var _iaq = _iaq || [];
