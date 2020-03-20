@@ -1,0 +1,73 @@
+@media (min-width: 1430px) {
+	.uw-body-copy .uw-story-header .w-50 { width: 35vw !important; }
+}
+
+@media (min-width: 768px) and (max-width: 1429px) {
+	.uw-body-copy .uw-story-header .w-50 { width: 40vw !important; }
+}
+
+.uw-body-copy .uw-story-header { background-position: center right; }
+.uw-story-body .copy .callout { font-family: 'Encode Sans Compressed', sans-serif; font-size: 24px; line-height: 36px; }
+.uw-story-body .copy h2 { color: #373A3C; font-family: 'Encode Sans', sans-serif; font-weight: normal; }
+#copy-block-1 .row { padding-bottom: 0; }
+#copy-block-2 .row { padding-bottom: 0; }
+#copy-block-3, #copy-block-5, #copy-block-7, #copy-block-9 { background: white; z-index: 999; }
+#quote-block-4, #flex-content-section-6, #quote-block-8, #quote-block-10 { margin-top: -50px; z-index: -1; }
+
+#flex-content-section-6 { background-position: center top; }
+
+#flex-content-section-6.lushootseed-writing-1 {
+	background-image: url(http://impactful-story-plugin.local/wp-content/uploads/2020/03/2019_11_06_Lanuguage-Test_0370.png) !important;
+}
+
+#flex-content-section-6.lushootseed-writing-2 {
+	background-image: url(http://impactful-story-plugin.local/wp-content/uploads/2020/03/2019_11_06_Lanuguage-Test_0372.png) !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	#flex-content-section-6 { transition: background-image 2s ease-in-out; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	#flex-content-section-6 { transition: none 0s; }
+}
+
+.uw-story-body .carousel.full-width .carousel-control-prev, .uw-story-body .carousel.full-width .carousel-control-next { height: 80vh; }
+
+.uw-story-body #uw-carousel-4 .carousel-inner .carousel-item.slide-0 img {
+	object-position: top center;
+}
+
+#quote-block-8 { background-position: top center; }
+
+.uw-story-body figure.quote-block { justify-content: start; height: 80vh;}
+.uw-story-body figure.quote-block div { border-left: 0; padding: 0; margin-left: 10vw; width: 35%; }
+.uw-story-body figure.quote-block div blockquote { font-family: 'Encode Sans', sans-serif; font-size: 3.5rem; line-height: 1.4; font-weight: 600; color: white; }
+.uw-story-body figure.quote-block div figcaption { color: white; }
+.uw-story-body figure.quote-block div figcaption .uw-slant-inline { display: none; }
+.uw-story-body figure.quote-block div blockquote:before { content: open-quote; display: block; position: relative; bottom: -2.5rem; left: 0; font-family: 'Encode Sans Normal', sans-serif; }
+.uw-story-body figure.quote-block div blockquote:after { content: close-quote; position: relative; bottom: -30px; left: 10px; font-family: 'Encode Sans Normal', sans-serif; }
+
+@media (max-width: 767px) {
+	.uw-body-copy .uw-story-header .w-50 { padding: 0 0 10rem 2rem !important; }
+	.uw-story-body figure.quote-block div { width: 50%; }
+	.uw-story-body figure.quote-block div blockquote { font-size: 2.5rem; }
+	.uw-story-body figure.quote-block div blockquote:before { bottom: -1.5rem; }
+	.uw-story-body figure.quote-block div.text-white figcaption { font-size: 1.5rem; }
+	.uw-story-body #flex-content-section-6 {
+		min-height: 80vh;
+		background-position: 65% center;
+	}
+}
+
+@media (min-width: 1300px) {
+	.uw-story-body .giving-widget.branded {
+		background-position: right center;
+	}
+}
+
+@media (max-width: 1299px) {
+	.uw-story-body .giving-widget.branded {
+		background-position: 80% center;
+	}
+}
