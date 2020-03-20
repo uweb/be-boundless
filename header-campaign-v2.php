@@ -8,7 +8,7 @@ if(!$storyCodes || $storyCodes == ''){
 	// $storyCodes = 'HEROES,SEALTS,KATRIN,UWTCHA,UWBSEF,IMPFND';
 
 	//COVID-19 specific relief funds + messaging
-	$storyCodes = 'HEROES,SEALTS,SEACOV,TACCOV,BOTCOV,IMPFND';
+	$storyCodes = 'UWMCOV,SEALTS,SEACOV,TACCOV,BOTCOV,IMPFND';
 }
 if(!$storyAppealCodes || $storyAppealCodes == ''){
 	$storyAppealCodes = '20XBS';
