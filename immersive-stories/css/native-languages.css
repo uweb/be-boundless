@@ -16,13 +16,23 @@
 
 #flex-content-section-6 { background-position: center top; }
 
+/* Local dev - remove before launch */
 #flex-content-section-6.lushootseed-writing-1 {
+	background-image: url(http://impactful-story-plugin.local/wp-content/uploads/2020/03/2019_11_06_Lanuguage-Test_0370.png) !important;
+}
+
+#flex-content-section-6.lushootseed-writing-2 {
+	background-image: url(http://impactful-story-plugin.local/wp-content/uploads/2020/03/2019_11_06_Lanuguage-Test_0372.png) !important;
+}
+
+/* cmsdev - remove before launch */
+/* #flex-content-section-6.lushootseed-writing-1 {
 	background-image: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2020/03/2019_11_06_Lanuguage-Test_0370.png) !important;
 }
 
 #flex-content-section-6.lushootseed-writing-2 {
 	background-image: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2020/03/2019_11_06_Lanuguage-Test_0372.png) !important;
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
 	#flex-content-section-6 { transition: background-image 2s ease-in-out; }
@@ -40,9 +50,78 @@
 
 #quote-block-8 { background-position: top center; }
 
+.uw-story-body .carousel.captions-simple .slide-0 .carousel-caption {
+	padding: 0;
+	margin-left: 0;
+	width: 35% !important;
+	background: none;
+	position: absolute;
+	top: 27%;
+	left: 15%;
+	right: inherit;
+	bottom: inherit;
+}
+
+@media (min-width: 768px) and (max-width: 1040px) {
+	.uw-story-body .carousel.captions-simple .slide-0 .carousel-caption {
+		top: 20%;
+	}
+
+	.uw-story-body .carousel.captions-simple .slide-0 .carousel-caption p, .uw-story-body figure.quote-block div blockquote {
+		font-size: 3rem;
+	}
+}
+
+@media (min-width: 645px) and (max-width: 767px) {
+	.uw-story-body .carousel.captions-simple .slide-0 .carousel-caption {
+		top: 15%;
+	}
+
+	.uw-story-body .carousel.captions-simple .carousel-inner .slide-0 .carousel-caption p {
+		font-size: 2.5rem;
+	}
+}
+
+@media (max-width: 644px) {
+	.uw-story-body .carousel.captions-simple .slide-0 .carousel-caption {
+		top: 0%;
+	}
+
+	.uw-story-body .carousel.captions-simple .carousel-inner .slide-0 .carousel-caption p {
+		font-size: 2.5rem;
+	}
+}
+
+.uw-story-body .carousel.captions-simple .slide-0 .carousel-caption:after {
+	content: "Tami Hohn";
+	display: block;
+	text-align: right;
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	margin-right: 60px;
+	margin-top: 40px;
+}
+
+.uw-story-body .carousel.captions-simple .slide-0 .carousel-caption p {
+	font-family: 'Encode Sans', sans-serif;
+	font-size: 3.5rem;
+	line-height: 1.4;
+	font-weight: 500;
+	font-style: normal;
+	color: white;
+	border-bottom: 0 none;
+	background: none;
+	padding: 0;
+}
+
+.slide-0 .carousel-caption p:before { content: open-quote; display: block; position: relative; bottom: -2.5rem; left: 0; font-family: 'Encode Sans Normal', sans-serif; }
+
+.slide-0 .carousel-caption p:after { content: close-quote; position: relative; bottom: -30px; left: 10px; font-family: 'Encode Sans Normal', sans-serif; }
+
 .uw-story-body figure.quote-block { justify-content: start; height: 80vh;}
 .uw-story-body figure.quote-block div { border-left: 0; padding: 0; margin-left: 10vw; width: 35%; }
-.uw-story-body figure.quote-block div blockquote { font-family: 'Encode Sans', sans-serif; font-size: 3.5rem; line-height: 1.4; font-weight: 600; color: white; }
+.uw-story-body figure.quote-block div blockquote { font-family: 'Encode Sans', sans-serif; font-size: 3.5rem; line-height: 1.4; font-weight: 500; color: white; }
 .uw-story-body figure.quote-block div figcaption { color: white; }
 .uw-story-body figure.quote-block div figcaption .uw-slant-inline { display: none; }
 .uw-story-body figure.quote-block div blockquote:before { content: open-quote; display: block; position: relative; bottom: -2.5rem; left: 0; font-family: 'Encode Sans Normal', sans-serif; }
@@ -52,7 +131,7 @@
 	.uw-body-copy .uw-story-header .w-50 { padding: 0 0 10rem 2rem !important; }
 	.uw-story-body figure.quote-block div { width: 50%; }
 	.uw-story-body figure.quote-block div blockquote { font-size: 2.5rem; }
-	.uw-story-body figure.quote-block div blockquote:before { bottom: -1.5rem; }
+	.uw-story-body figure.quote-block div blockquote:before, .slide-0 .carousel-caption p:before { bottom: -1.5rem; }
 	.uw-story-body figure.quote-block div.text-white figcaption { font-size: 1.5rem; }
 	.uw-story-body #flex-content-section-6 {
 		min-height: 80vh;
@@ -71,3 +150,7 @@
 		background-position: 80% center;
 	}
 }
+
+.uw-story-body .giving-widget:after { content: ''; border: 0 none; display: block; position: absolute; left: 0; top: 0; height: 100%; width: 120%; background: rgba(0,0,0,0.32); }
+
+.uw-story-body .giving-widget .col-md-10, .uw-story-body .giving-widget:before { z-index: 99; }
