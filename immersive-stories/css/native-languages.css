@@ -62,10 +62,17 @@
 	}
 }
 
-
 .image-audio:after { content: ''; border: 0 none; display: block; position: absolute; left: 0; top: 0; height: 100%; width: 100%; background: rgba(0,0,0,0.52); }
 
 .audio-image-caption, .soundcloud { z-index: 99; }
+
+.audio-image-caption {
+	order: 2;
+}
+
+.soundcloud {
+	order: 1;
+}
 
 .audio-image-caption p {
 	font-family: 'Encode Sans', sans-serif;
