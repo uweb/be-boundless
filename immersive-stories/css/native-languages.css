@@ -191,6 +191,8 @@
 
 .slide-0 .carousel-caption p:after { content: close-quote; position: relative; bottom: -30px; left: 10px; font-family: 'Encode Sans Normal', sans-serif; }
 
+.uw-story-body #uw-carousel-4 .carousel-inner .carousel-item.slide-1 img { object-position: right center; }
+
 .uw-story-body figure.quote-block { justify-content: start; height: 80vh; min-height: 500px !important; }
 .uw-story-body figure.quote-block div { border-left: 0; padding: 0; margin-left: 10vw; width: 35%; }
 .uw-story-body figure.quote-block div blockquote { font-family: 'Encode Sans', sans-serif; font-size: 3.5rem; line-height: 1.4; font-weight: 500; color: white; }
@@ -221,17 +223,10 @@
 		min-height: 500px;
 		width: 5rem;
 	}
-
-	.uw-story-body #uw-carousel-4 .carousel-inner .carousel-item.slide-1 img {
-		object-position: right center;
-	}
 }
 
 /* iPhone/iPad hack */
 @media (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-	.uw-story-body #uw-carousel-4 .carousel-inner .carousel-item.slide-1 img {
-		object-position: right center;
-	}
 	.uw-body-copy .uw-story-header:before {
 		content: '';
 		border: 0 none;
