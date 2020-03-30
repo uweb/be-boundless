@@ -117,15 +117,19 @@
 	width: 35% !important;
 	background: none;
 	position: absolute;
-	top: 27%;
+	top: 20%;
 	left: 15%;
 	right: inherit;
 	bottom: inherit;
 }
 
+@media (min-width: 1295px) {
+	.uw-story-body .carousel.captions-simple .slide-0 .carousel-caption { top: 25%; }
+}
+
 @media (min-width: 768px) and (max-width: 1040px) {
 	.uw-story-body .carousel.captions-simple .slide-0 .carousel-caption {
-		top: 20%;
+		top: 12%;
 	}
 
 	.uw-story-body .carousel.captions-simple .slide-0 .carousel-caption p, .uw-story-body figure.quote-block div blockquote {
