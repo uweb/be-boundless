@@ -55,7 +55,7 @@
 	position: relative;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
 	.image-audio {
 		grid-template-columns: inherit;
 		grid-column-gap: inherit;
