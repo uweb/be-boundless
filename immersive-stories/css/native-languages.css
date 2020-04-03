@@ -82,7 +82,7 @@
 #quote-block-8 { background-position: top right; }
 #quote-block-10 { background-position: center right; }
 
-#quote-block-10:before {
+#quote-block-8:before, #quote-block-10:before {
 	content: '';
 	border: 0 none;
 	display: block;
@@ -91,7 +91,7 @@
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0, rgba(0, 0, 0, 0) 60%);
+	background: linear-gradient(to right, rgba(156, 143, 143, 0.9) 0, rgba(0, 0, 0, 0) 60%);
 }
 
 .quote-block .mb-0 {
@@ -238,10 +238,10 @@
 
 @media (max-width: 1299px) {
 	.uw-story-body .giving-widget.branded {
-		background-position: 80% center;
+		background-position: 90% center;
 	}
 }
 
-.uw-story-body .giving-widget:after { content: ''; border: 0 none; display: block; position: absolute; left: 0; top: 0; height: 100%; width: 120%; background: rgba(0,0,0,0.32); }
+.uw-story-body .giving-widget:after { content: ''; border: 0 none; display: block; position: absolute; left: 0; top: 0; height: 100%; width: 120%; background: linear-gradient(to right, rgba(0,0,0,0.52) 0, rgba(0, 0, 0, 0) 80%); }
 
 .uw-story-body .giving-widget .col-md-10, .uw-story-body .giving-widget:before { z-index: 99; }
