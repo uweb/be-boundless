@@ -91,7 +91,7 @@
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background: linear-gradient(to right, rgba(156, 143, 143, 0.9) 0, rgba(0, 0, 0, 0) 60%);
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0, rgba(0, 0, 0, 0) 60%);
 }
 
 .quote-block .mb-0 {
