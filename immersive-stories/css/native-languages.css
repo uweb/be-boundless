@@ -16,15 +16,6 @@
 
 #flex-content-section-6 { background-position: center top; }
 
-/* Local dev - remove before launch */
-/* .uw-body-copy #flex-content-section-6.lushootseed-writing-1 {
-	background-image: url(http://impactful-story-plugin.local/wp-content/uploads/2020/03/2019_11_06_Lanuguage-Test_0370.png) !important;
-}
-
-.uw-body-copy #flex-content-section-6.lushootseed-writing-2 {
-	background-image: url(http://impactful-story-plugin.local/wp-content/uploads/2020/03/2019_11_06_Lanuguage-Test_0372.png) !important;
-} */
-
 /* cmsdev - remove before launch */
 .uw-body-copy #flex-content-section-6.lushootseed-writing-1 {
 	background-image: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2020/04/tami-1.jpg) !important;
@@ -43,7 +34,6 @@
 }
 
 .image-audio {
-	/* background-image: url(http://impactful-story-plugin.local/wp-content/uploads/2020/03/RECORD.png); */
 	background-image: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2020/04/record.jpg);
 	background-size: cover;
 	background-position: center center;
