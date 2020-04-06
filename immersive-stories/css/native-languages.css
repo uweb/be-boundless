@@ -11,8 +11,8 @@
 .uw-story-body .copy h2 { color: #373A3C; font-family: 'Encode Sans', sans-serif; font-weight: normal; }
 #copy-block-1 .row { padding-bottom: 0; }
 #copy-block-2 .row { padding-bottom: 0; }
-#copy-block-3, #copy-block-5, #copy-block-7, #copy-block-9 { background: white; z-index: 999; }
-#quote-block-4, #flex-content-section-6, #quote-block-8, #quote-block-10 { margin-top: -50px; z-index: -1; }
+#copy-block-3, #copy-block-5, #copy-block-9 { background: white; z-index: 999; }
+#quote-block-4, #flex-content-section-6, #quote-block-10 { margin-top: -50px; z-index: -1; }
 
 #flex-content-section-6 { background-position: center top; }
 
