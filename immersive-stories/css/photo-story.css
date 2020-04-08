@@ -36,6 +36,7 @@
 .uw-story-body .carousel .carousel-control-next, .uw-story-body .carousel .carousel-control-prev {
 	background: rgba(183, 165, 122, 0.65);
 	width: 6rem;
+	height: 80vh;
 }
 
 .uw-story-body .carousel .carousel-control-next .carousel-control-next-icon { left: -6px; }
