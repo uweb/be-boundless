@@ -1,0 +1,171 @@
+#copy-block-3,
+#copy-block-5,
+#copy-block-7,
+#copy-block-10,
+#copy-block-13,
+#copy-block-19,
+#copy-block-21 {
+	border: solid #2D1A6D;
+	border-width: 10px 10px 0 10px;
+	padding: 0;
+}
+
+#copy-block-13 { border-bottom: 10px solid #2D1A6D; }
+#copy-block-13, #copy-block-21 { border-top: 0 none; }
+
+#copy-block-3,
+#copy-block-7,
+#copy-block-10 {
+	margin-top: -100px;
+	z-index: 999999;
+}
+
+#copy-block-3 .row,
+#copy-block-5 .row,
+#copy-block-7 .row,
+#copy-block-10 .row,
+#copy-block-13 .row,
+#copy-block-19 .row,
+#copy-block-21 .row {
+	background-color: #2D1A6D;
+	border: solid white;
+	border-width: 3px 3px 0 3px;
+	margin: 0;
+	padding: 80px 40px;
+}
+
+#copy-block-13 .row { border-bottom: 3px solid white; }
+
+#copy-block-5, #copy-block-5 .row, #copy-block-13 .row, #copy-block-21 .row { border-top: 0 none; }
+
+#flex-content-section-2,
+#flex-content-section-4,
+#flex-content-section-6,
+#flex-content-section-9,
+#flex-content-section-12,
+#flex-content-section-20,
+#flex-content-section-22 {
+	box-shadow: 0 9px 12px rgba(0, 0, 0, 0.14);
+}
+
+#flex-content-section-2,
+#flex-content-section-4,
+#flex-content-section-6,
+#flex-content-section-9 {
+	z-index: -1;
+}
+
+#flex-content-section-6,
+#flex-content-section-8,
+#flex-content-section-11 {
+	border-top: #B7A57A solid 5px;
+
+}
+#flex-content-section-6,
+#flex-content-section-9 {
+	border-bottom: #B7A57A solid 5px;
+}
+
+#copy-block-3 .row p,
+#copy-block-5 .row p,
+#copy-block-7 .row p,
+#copy-block-10 .row p,
+#copy-block-13 .row p,
+#copy-block-19 .row p,
+#copy-block-21 .row p {
+	color: white;
+	font-size: 24px;
+	text-align: center;
+	width: 70%;
+	margin: 0 auto 40px;
+}
+
+#copy-block-10 .row p { width: 60%; }
+
+.uw-story-header .w-50 {
+	background-color: rgba(255,255,255,0.8);
+	width: 80vw !important;
+	text-align: center;
+	position: relative;
+	padding: 4rem 3rem 3rem 3rem;
+	align-self: flex-end;
+}
+
+.uw-story-header h1.text-primary, #copy-block-14 h2 {
+	padding-top: 0;
+	margin-top: 0;
+	font-family: 'Encode Sans Normal';
+	font-size: 3.3vw;
+	text-align: center;
+	text-transform: uppercase;
+	color: #4b2e83;
+}
+
+.uw-story-header .udub-slant-divider { display: none !important; }
+
+.uw-story-header .text-dark p { font-size: 18px; font-weight: 600; margin-top: 10px; }
+
+.flexible-content .copy.text-dark {
+	background-color: rgba(255, 255, 255, 0.8);
+	width: 50vw;
+}
+
+.highlight-larger {
+	font-size: 42px;
+	font-family: "Encode Sans Normal", sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.extra-borders {
+	display: block;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	margin-bottom: 60px;
+	border-top: 1px solid #9f94c3;
+	border-bottom: 1px solid #9f94c3;
+}
+
+.flexible-content .copy.text-dark p {
+	font-family: "Encode Sans Normal", sans-serif;
+	font-size: 25px;
+	line-height: 1.5;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#flex-content-section-1 .copy.text-dark p {
+	text-transform: none;
+}
+
+#copy-block-14 .row {
+	padding-top: 100px;
+	padding-bottom: 60px;
+}
+
+#copy-block-25 .row { padding-bottom: 20px; }
+#copy-block-26 .row { padding-top: 20px; }
+
+.uw-story-body .copy h3 {
+	font-family: "Encode Sans Normal", sans-serif;
+	font-weight: normal;
+	margin-bottom: 60px;
+}
+
+.uw-story-body .copy p {
+	font-family: "Uni Sans", sans-serif;
+}
+
+.heading-borders {
+	border: 4px solid #4C2C85;
+	padding: 10px 30px;
+}
+
+.uw-story-body .uw-story-columns .row { grid-template-columns: 0.65fr 1fr; }
+.uw-story-body .uw-story-columns .row .right-column .quote-block.quote-simple blockquote { font-size: 3.5rem; }
+.uw-story-body .uw-story-columns .row figure.quote-block div figcaption { text-align: left; }
+.uw-story-body .uw-story-columns .row .right-column .quote-block.quote-simple figcaption { font-family: "Encode Sans Normal", sans-serif; font-weight: bold; }
+.uw-story-body .uw-story-columns .row .right-column .quote-block.quote-simple figcaption .quote-source-title { font-family: "Uni Sans", sans-serif; font-weight: normal; font-style: normal; }
+
+.uw-story-body .giving-widget:after { content: ''; border: 0 none; display: block; position: absolute; left: 0; top: 0; height: 100%; width: 120%; background: rgba(0,0,0,0.52); }
+.uw-story-body .giving-widget .col-md-10, .uw-story-body .giving-widget:before { z-index: 99; }
