@@ -133,10 +133,6 @@
 	padding-bottom: 60px;
 }
 
-.uw-story-body .flexible-content.background-image.full-height {
-	height: 90vh;
-}
-
 #flex-content-section-11:before {
 	content: 'A year later';
 	text-transform: uppercase;
