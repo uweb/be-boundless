@@ -1,8 +1,6 @@
 .uw-story-body .flexible-content.scrollStoryItem {
 	opacity: 0;
 	transition: all 0s ease;
-	transform-style: preserve-3d;
-	perspective: 1px;
 	height: 150vh;
 	background-attachment: fixed;
 }
