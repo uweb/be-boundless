@@ -1,3 +1,20 @@
+.uw-story-body .flexible-content.scrollStoryItem {
+	opacity: 0;
+	transition: all 0s ease;
+	transform-style: preserve-3d;
+	perspective: 1px;
+	height: 150vh;
+	background-attachment: fixed;
+}
+.uw-story-body .flexible-content.inviewport {
+	opacity: 0.3;
+	transition: all 1.5s ease;
+}
+.uw-story-body .flexible-content.active {
+	opacity: 1;
+	transition: all 2s ease;
+}
+
 #copy-block-3,
 #copy-block-5,
 #copy-block-7,
@@ -45,7 +62,7 @@
 #flex-content-section-12,
 #flex-content-section-22,
 #flex-content-section-24 {
-	box-shadow: 0 9px 12px rgba(0, 0, 0, 0.14);
+	box-shadow: 0 9px 12px -12px rgba(0, 0, 0, 0.14);
 }
 
 #flex-content-section-2,
@@ -147,14 +164,25 @@
 	left: 8vw;
 }
 
-#flex-content-section-24 .copy {
+#flex-content-section-22 { height: 250vh; }
+
+
+#flex-content-section-22 .copy {
 	position: absolute;
 	top: 8vh;
-	left: 8vw;
+	right: 8vw;
 }
 
-#flex-content-section-24 .copy .row {
+#flex-content-section-22 .copy .row { padding: 0; }
+
+#flex-content-section-22 .copy.text-dark { background: none; }
+
+#flex-content-section-22 .copy.text-dark p {
+	background: url(/wp-content/themes/be-boundless/immersive-stories/custom/quote-bubble-right.png) no-repeat;
+	width: 509px;
+	height: 393px;
 	padding: 100px 40px;
+	margin: 100px 0 300px;
 }
 
 #flex-content-section-24 .copy.text-dark {
@@ -163,6 +191,14 @@
 	width: 509px;
 	height: 393px;
 }
+
+#flex-content-section-24 .copy {
+	position: absolute;
+	top: 8vh;
+	left: 8vw;
+}
+
+#flex-content-section-24 .copy .row { padding: 100px 40px; }
 
 #copy-block-15 .row { padding-top: 0; }
 #copy-block-25 .row { padding-bottom: 0; }
