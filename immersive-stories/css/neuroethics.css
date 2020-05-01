@@ -139,9 +139,7 @@
 	text-align: center;
 }
 
-#flex-content-section-1 .copy.text-dark p {
-	text-transform: none;
-}
+#flex-content-section-1 .copy.text-dark p { text-transform: none; }
 
 #copy-block-14 .row {
 	padding-top: 100px;
@@ -206,9 +204,7 @@
 	margin-bottom: 60px;
 }
 
-.uw-story-body .copy p {
-	font-family: "Uni Sans Regular", sans-serif;
-}
+.uw-story-body .copy p { font-family: "Uni Sans Regular", sans-serif; }
 
 .heading-borders {
 	border: 4px solid #4C2C85;
@@ -216,6 +212,7 @@
 }
 
 .uw-story-body .uw-story-columns .row { grid-template-columns: 0.65fr 1fr; }
+.uw-story-body .uw-story-columns .row .right-column .quote-block.quote-simple .text-primary { padding-top: 0; }
 .uw-story-body .uw-story-columns .row .right-column .quote-block.quote-simple blockquote { font-size: 3.5rem; }
 .uw-story-body .uw-story-columns .row figure.quote-block div figcaption { text-align: left; }
 .uw-story-body .uw-story-columns .row .right-column .quote-block.quote-simple figcaption { font-family: "Encode Sans Normal", sans-serif; font-weight: bold; }
@@ -224,3 +221,63 @@
 .uw-story-body .giving-widget:after { content: ''; border: 0 none; display: block; position: absolute; left: 0; top: 0; height: 100%; width: 120%; background: rgba(0,0,0,0.52); }
 .uw-story-body .giving-widget .col-md-10, .uw-story-body .giving-widget:before { z-index: 99; }
 .uw-story-body .giving-widget .col-md-10 { padding: 60% 90px 10%; }
+
+/* iPhone/iPad hack */
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+	.uw-story-header { height: 50vh; }
+	.uw-story-header h1.text-primary, #copy-block-14 h2 { font-size: 4vw; }
+	.flexible-content .copy.text-dark { width: 60vw; }
+	.highlight-larger { font-size: 38px; }
+	#flex-content-section-2 { background-position: 80% center; }
+	#flex-content-section-6, #flex-content-section-12 { background-position: 40% center; }
+	#flex-content-section-22 { background-position: 30% center; }
+	#flex-content-section-22 .copy.text-dark { right: 0; }
+}
+
+/* iPad Pro hack */
+@media (min-device-width: 768px) and (max-device-width: 833px) and (-webkit-min-device-pixel-ratio: 2) {
+	#flex-content-section-22 .copy.text-dark { right: 5vw; }
+}
+
+@media (max-width: 1023px) {
+	.uw-story-body .uw-story-columns .row {
+		grid-template-columns: none;
+		column-gap: 0;
+	}
+	.uw-story-body .uw-story-columns .row .left-column .single-image {
+		width: auto;
+		left: auto;
+		right: auto;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0 10px;
+	}
+
+	.uw-story-body .uw-story-columns .row .right-column .quote-block.quote-simple blockquote { font-size: 3rem; }
+}
+
+@media (max-width: 767px) {
+	.uw-story-header .w-50 { padding: 2rem !important; }
+	.flexible-content .copy.text-dark { width: 80vw; }
+	.uw-story-body .row { padding: 30px 0 20px; }
+	.flexible-content .copy.text-dark p { font-size: 20px; }
+	#flex-content-section-2 { background-position: 80% center; }
+	#flex-content-section-6 { background-position: 20% center; }
+	#flex-content-section-8, #flex-content-section-12, #flex-content-section-22 { background-position: 30% center; }
+	#flex-content-section-9 { background-position: 55% center; }
+	#copy-block-3 .row, #copy-block-5 .row, #copy-block-7 .row, #copy-block-10 .row, #copy-block-13 .row, #copy-block-21 .row, #copy-block-23 .row { padding: 40px 0px; }
+	#copy-block-3 .row p, #copy-block-5 .row p, #copy-block-7 .row p, #copy-block-10 .row p, #copy-block-13 .row p, #copy-block-21 .row p, #copy-block-23 .row p { width: 85%; }
+	.highlight-larger { font-size: 28px; }
+	.uw-story-header h1.text-primary, #copy-block-14 h2 { font-size: 30px; }
+	.uw-story-body .copy h3 span { border: 0 none; padding: 0; }
+	.uw-story-body .copy h3 { border: 4px solid #4C2C85; padding: 10px; }
+	.uw-story-body .uw-story-columns .row .right-column .quote-block.quote-simple blockquote { font-size: 2.1rem; }
+	.uw-story-body .uw-story-columns .row .right-column .quote-block.quote-simple figcaption { margin-top: 30px; }
+	#flex-content-section-22 .copy.text-dark p { background: none; background: rgba(255, 255, 255, 0.8); width: 80vw; height: auto; padding: 40px; }
+	#flex-content-section-24 .copy.text-dark { background: none; background: rgba(255, 255, 255, 0.8); width: 80vw; height: auto; }
+	#flex-content-section-24 .copy .row { padding: 40px; }
+	#flex-content-section-22 .copy.text-dark p:before, #flex-content-section-24 .copy.text-dark p:before { content: open-quote; }
+	#flex-content-section-22 .copy.text-dark p:after, #flex-content-section-24 .copy.text-dark p:after { content: close-quote; }
+	#flex-content-section-24 .copy { top: 15vh; }
+	.uw-story-body .giving-widget .col-md-10 { padding: 30% 10%; }
+}
