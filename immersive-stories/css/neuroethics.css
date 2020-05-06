@@ -1,6 +1,6 @@
 .uw-story-body .flexible-content.full-height {
 	background-attachment: fixed;
-	height: 150vh;
+	height: 100vh;
 	will-change: opacity;
 }
 
@@ -205,7 +205,7 @@
 	left: 8vw;
 }
 
-#flex-content-section-22 { height: 300vh; }
+#flex-content-section-22 { height: 250vh; }
 
 #flex-content-section-22 .copy {
 	position: absolute;
