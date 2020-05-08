@@ -37,7 +37,7 @@
 
 .uw-story-body .profile-boxes ul.profiles li.profile .modal .modal-dialog .modal-content:before {
 	content: '';
-	background: url(http://impactful-stories.local/wp-content/themes/be-boundless/immersive-stories/custom/gold-foil.png) no-repeat;
+	background: url(/wp-content/themes/be-boundless/immersive-stories/custom/gold-foil.png) no-repeat;
 	background-size: cover;
 	background-position: center center;
 	width: calc(100% + 20px);
@@ -55,7 +55,7 @@
 .uw-story-body .profile-boxes ul.profiles li.profile .modal .modal-body:after {
 	content: '';
 	display: block;
-	background: url(http://impactful-stories.local/wp-content/themes/be-boundless/immersive-stories/custom/50th-AofE.png) no-repeat;
+	background: url(/wp-content/themes/be-boundless/immersive-stories/custom/50th-AofE.png) no-repeat;
 	height: 100px;
 	width: 100px;
 	background-size: contain;
@@ -63,7 +63,7 @@
 }
 
 .uw-story-body .profile-boxes ul.profiles li.profile:hover .profile-cover.enable, .uw-story-body .profile-boxes ul.profiles li.profile:active .profile-cover.enable, .uw-story-body .profile-boxes ul.profiles li.profile:focus .profile-cover.enable, .uw-story-body .profile-boxes ul.profiles li.profile.active-focus .profile-cover.enable, .uw-story-body .profile-boxes ul.profiles li.profile.active .profile-cover.enable {
-	background: url(http://impactful-stories.local/wp-content/themes/be-boundless/immersive-stories/custom/gold-foil.png) no-repeat;
+	background: url(/wp-content/themes/be-boundless/immersive-stories/custom/gold-foil.png) no-repeat;
 	background-size: cover;
 	background-position: center center;
 	padding: 0 5%;
@@ -78,7 +78,7 @@
 .uw-story-body .profile-boxes ul.profiles li.profile:hover .profile-cover.enable:before, .uw-story-body .profile-boxes ul.profiles li.profile:active .profile-cover.enable:before, .uw-story-body .profile-boxes ul.profiles li.profile:focus .profile-cover.enable:before, .uw-story-body .profile-boxes ul.profiles li.profile.active-focus .profile-cover.enable:before, .uw-story-body .profile-boxes ul.profiles li.profile.active .profile-cover.enable:before {
 	content: '';
 	display: block;
-	background: url(http://impactful-stories.local/wp-content/themes/be-boundless/immersive-stories/custom/50th-AofE-hover.png) no-repeat;
+	background: url(/wp-content/themes/be-boundless/immersive-stories/custom/50th-AofE-hover.png) no-repeat;
 	height: 200px;
 	width: 200px;
 	background-size: contain;
