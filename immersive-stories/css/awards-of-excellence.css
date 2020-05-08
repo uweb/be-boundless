@@ -1,0 +1,139 @@
+.udub-slant-divider.white span { background-color: #4b2e83; }
+.uw-story-header.background-image.half-height { background-position: center right; }
+.uw-story-header .w-50 { padding: 6rem 1rem 6rem 0; }
+.uw-story-header .w-50 .text-primary { width: 75%; }
+.uw-story-header .w-50 .text-primary p { line-height: 1.4; }
+.uw-story-header h1 { font-family: 'Encode Sans Normal', sans-serif; font-size: 3.4vw; }
+
+@media (min-width: 768px) {
+	.uw-story-header .text-primary p { font-size: 22px; }
+}
+
+@media (max-width: 767px) {
+	.uw-story-header.background-image.half-height { background-position: 85% center; }
+	.uw-story-header .w-50 .text-primary { width: 100%; }
+	.uw-story-header .w-50 .text-primary p:first-of-type { color: white !important; }
+	.uw-story-header .w-50 h1 { font-size: 30px !important; }
+	.uw-story-header.mobile-header-bottom.white.background-image:before { background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.2) 90%)}
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.uw-story-header .w-50 h1 { font-size: 4vw; }
+	.uw-story-header .w-50 { margin-left: 2vw; }
+}
+
+@media (min-width: 1024px) and (max-width: 1139px) {
+	.uw-story-header .w-50 { margin-left: 5vw; }
+}
+
+@media (min-width: 1140px) and (max-width: 1279px) {
+	.uw-story-header .w-50 { margin-left: 10vw; }
+}
+
+@media (min-width: 1280px) {
+	.uw-story-header .w-50 { margin-left: 18vw; }
+}
+
+.uw-story-body .profile-boxes ul.profiles li.profile .modal .modal-dialog .modal-content:before {
+	content: '';
+	background: url(http://impactful-stories.local/wp-content/themes/be-boundless/immersive-stories/custom/gold-foil.png) no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: calc(100% + 20px);
+	height: calc(100% + 20px);
+	position: absolute;
+	left: -10px;
+	top: -10px;
+	bottom: -10px;
+	z-index: -1;
+}
+.uw-story-body .profile-boxes ul.profiles li.profile .modal .modal-dialog .modal-content {
+	box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+}
+
+.uw-story-body .profile-boxes ul.profiles li.profile .modal .modal-body:after {
+	content: '';
+	display: block;
+	background: url(http://impactful-stories.local/wp-content/themes/be-boundless/immersive-stories/custom/50th-AofE.png) no-repeat;
+	height: 100px;
+	width: 100px;
+	background-size: contain;
+	margin: 0 auto;
+}
+
+.uw-story-body .profile-boxes ul.profiles li.profile:hover .profile-cover.enable, .uw-story-body .profile-boxes ul.profiles li.profile:active .profile-cover.enable, .uw-story-body .profile-boxes ul.profiles li.profile:focus .profile-cover.enable, .uw-story-body .profile-boxes ul.profiles li.profile.active-focus .profile-cover.enable, .uw-story-body .profile-boxes ul.profiles li.profile.active .profile-cover.enable {
+	background: url(http://impactful-stories.local/wp-content/themes/be-boundless/immersive-stories/custom/gold-foil.png) no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding: 0 5%;
+}
+
+.uw-story-body .profile-boxes ul.profiles li.profile:hover .profile-cover.enable h3, .uw-story-body .profile-boxes ul.profiles li.profile:active .profile-cover.enable h3, .uw-story-body .profile-boxes ul.profiles li.profile:focus .profile-cover.enable h3, .uw-story-body .profile-boxes ul.profiles li.profile.active-focus .profile-cover.enable h3, .uw-story-body .profile-boxes ul.profiles li.profile.active .profile-cover.enable h3 {
+	background: none;
+	color: white;
+	border: 0 none;
+}
+
+.uw-story-body .profile-boxes ul.profiles li.profile:hover .profile-cover.enable:before, .uw-story-body .profile-boxes ul.profiles li.profile:active .profile-cover.enable:before, .uw-story-body .profile-boxes ul.profiles li.profile:focus .profile-cover.enable:before, .uw-story-body .profile-boxes ul.profiles li.profile.active-focus .profile-cover.enable:before, .uw-story-body .profile-boxes ul.profiles li.profile.active .profile-cover.enable:before {
+	content: '';
+	display: block;
+	background: url(http://impactful-stories.local/wp-content/themes/be-boundless/immersive-stories/custom/50th-AofE-hover.png) no-repeat;
+	height: 200px;
+	width: 200px;
+	background-size: contain;
+	margin: 0 auto;
+}
+
+.uw-story-body .profile-boxes ul.profiles li.profile:hover .profile-cover.enable p, .uw-story-body .profile-boxes ul.profiles li.profile:active .profile-cover.enable p, .uw-story-body .profile-boxes ul.profiles li.profile:focus .profile-cover.enable p, .uw-story-body .profile-boxes ul.profiles li.profile.active-focus .profile-cover.enable p, .uw-story-body .profile-boxes ul.profiles li.profile.active .profile-cover.enable p { display: none; }
+
+.uw-story-body .profile-boxes ul.profiles li.profile:hover .profile-cover.enable h3, .uw-story-body .profile-boxes ul.profiles li.profile:active .profile-cover.enable h3, .uw-story-body .profile-boxes ul.profiles li.profile:focus .profile-cover.enable h3, .uw-story-body .profile-boxes ul.profiles li.profile.active-focus .profile-cover.enable h3, .uw-story-body .profile-boxes ul.profiles li.profile.active .profile-cover.enable h3 {
+	font-family: 'Encode Sans Compressed', sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	line-height: 1.1;
+	text-transform: uppercase;
+	align-self: center;
+	color: white;
+	text-shadow: 0 0 3px rgba(37,37,37,0.65);
+	text-align: center;
+}
+
+.uw-story-body .profile-boxes ul.profiles li.profile .profile-cover.enable .modal-btn { font-size: 18px; padding: 10px 0; }
+.uw-story-body .profile-boxes ul.profiles li.profile .profile-cover.enable .modal-btn span { padding: 6px 14px; border: 2px solid #4b2e83; }
+.uw-story-body .profile-boxes ul.profiles li.profile .profile-cover.enable .modal-btn:hover span, .uw-story-body .profile-boxes ul.profiles li.profile .profile-cover.enable .modal-btn:active span, .uw-story-body .profile-boxes ul.profiles li.profile .profile-cover.enable .modal-btn:focus span {
+	border: 2px solid #4b2e83;
+	background: none;
+}
+
+.uw-story-header .btn.btn-lg { padding-left: 0; }
+
+.uw-story-header .btn.btn-lg span { border: 2px solid #4b2e83; font-size: 17px; }
+
+.btn.btn-lg.purple.arrow:active span, .btn.btn-lg.purple.arrow:focus span, .btn.btn-lg.purple.arrow:hover span {
+	border-color: white;
+	background-color: white;
+	color: #4b2e83;
+}
+
+.btn.btn-lg.purple.arrow span.arrow-box, .btn-group-lg > .btn.purple.arrow span.arrow-box, .btn.btn-lg.primary.arrow span.arrow-box, .btn-group-lg > .btn.primary.arrow span.arrow-box, .btn.btn-lg.btn-primary.arrow span.arrow-box, .btn-group-lg > .btn.btn-primary.arrow span.arrow-box, .btn.btn-sm.purple.arrow span.arrow-box, .btn-group-sm > .btn.purple.arrow span.arrow-box, .btn.btn-sm.primary.arrow span.arrow-box, .btn-group-sm > .btn.primary.arrow span.arrow-box, .btn.btn-sm.btn-primary.arrow span.arrow-box, .btn-group-sm > .btn.btn-primary.arrow span.arrow-box {
+	background-color: #4b2e83;
+}
+
+.btn.btn-lg.purple.arrow span.arrow-box .arrow, .btn-group-lg > .btn.purple.arrow span.arrow-box .arrow, .btn.btn-lg.primary.arrow span.arrow-box .arrow, .btn-group-lg > .btn.primary.arrow span.arrow-box .arrow, .btn.btn-lg.btn-primary.arrow span.arrow-box .arrow, .btn-group-lg > .btn.btn-primary.arrow span.arrow-box .arrow, .btn.btn-sm.purple.arrow span.arrow-box .arrow, .btn-group-sm > .btn.purple.arrow span.arrow-box .arrow, .btn.btn-sm.primary.arrow span.arrow-box .arrow, .btn-group-sm > .btn.primary.arrow span.arrow-box .arrow, .btn.btn-sm.btn-primary.arrow span.arrow-box .arrow, .btn-group-sm > .btn.btn-primary.arrow span.arrow-box .arrow {
+	border-color: white;
+	background-color: #4b2e83;
+}
+
+.btn.btn-lg.purple.arrow:active span.arrow-box .arrow, .btn.btn-lg.purple.arrow:hover span.arrow-box .arrow, .btn.btn-lg.purple.arrow:focus span.arrow-box .arrow {
+	border-color: white;
+	background-color: #4b2e83;
+}
+
+.uw-story-header .btn.btn-lg.purple.arrow:active span.arrow-box, .uw-story-header .btn.btn-lg.purple.arrow:focus span.arrow-box, .uw-story-header .btn.btn-lg.purple.arrow:hover span.arrow-box {
+	background: #4b2e83;
+	border-color: #4b2e83;
+}
+
+.arrow:after { display: none !important; }
