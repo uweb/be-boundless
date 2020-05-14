@@ -165,7 +165,7 @@
 	left: 8vw;
 }
 
-#flex-content-section-22 { height: 250vh; }
+#flex-content-section-22 { height: 300vh; }
 
 #flex-content-section-22 .copy {
 	position: absolute;
@@ -183,6 +183,11 @@
 	height: 393px;
 	padding: 100px 40px;
 	margin: 100px 0 300px;
+}
+
+@media (max-height: 650px) {
+	#flex-content-section-22 { height: 400vh; }
+	#flex-content-section-22 .copy.text-dark p { margin: 100px 0 150px; }
 }
 
 #flex-content-section-24 .copy.text-dark {
