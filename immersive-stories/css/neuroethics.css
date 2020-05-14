@@ -4,46 +4,6 @@
 	will-change: opacity;
 }
 
-/* @media screen and (-webkit-min-device-pixel-ratio:0) {
-    .uw-story-body .flexible-content.full-height {
-		background-attachment: scroll;
-		height: 100vh;
-    }
-} */
-
-/* .uw-story-body .flexible-content {
-	overflow: hidden;
-	background-image: none !important;
-	background-color: white;
-}
-
-.uw-story-body .flexible-content:before {
-	content: '';
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-	left: 0;
-    background-color: white;
-	background-repeat: no-repeat;
-	background-position: center center;
-    background-size: cover;
-    will-change: transform;
-    z-index: -1;
-}
-
-#flex-content-section-1:before { background-image: url(http://impactful-story-plugin.local/wp-content/uploads/2020/04/PANE_1.png); }
-#flex-content-section-2:before { background-image: url(http://impactful-story-plugin.local/wp-content/uploads/2020/04/PANE_2.png); }
-#flex-content-section-4:before { background-image: url(http://impactful-story-plugin.local/wp-content/uploads/2020/04/PANE_3.png); }
-#flex-content-section-6:before { background-image: url(http://impactful-story-plugin.local/wp-content/uploads/2020/04/PANE_4.png); }
-#flex-content-section-8:before { background-image: url(http://impactful-story-plugin.local/wp-content/uploads/2020/04/PANE_5a.png); }
-#flex-content-section-9:before { background-image: url(http://impactful-story-plugin.local/wp-content/uploads/2020/04/PANE_6.png); }
-#flex-content-section-11:before { background-image: url(http://impactful-story-plugin.local/wp-content/uploads/2020/04/PANE_7.png); }
-#flex-content-section-12:before { background-image: url(http://impactful-story-plugin.local/wp-content/uploads/2020/04/PANE_8.png); }
-#flex-content-section-22:before { background-image: url(http://impactful-story-plugin.local/wp-content/uploads/2020/04/PANE_TIM_QUESTION.jpg); }
-#flex-content-section-24:before { background-image: url(http://impactful-story-plugin.local/wp-content/uploads/2020/04/FRED_PORT.png); } */
-
-
 .uw-story-body .flexible-content.scrollStoryItem {
 	opacity: 0;
 	transition: opacity 0s ease;
@@ -267,23 +227,6 @@
 .uw-story-body .giving-widget .col-md-10, .uw-story-body .giving-widget:before { z-index: 99; }
 .uw-story-body .giving-widget .col-md-10 { padding: 60% 90px 10%; }
 
-/* iPhone/iPad hack */
-@media (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-	.uw-story-header { height: 50vh; }
-	.uw-story-header h1.text-primary, #copy-block-14 h2 { font-size: 4vw; }
-	.flexible-content .copy.text-dark { width: 60vw; }
-	.highlight-larger { font-size: 38px; }
-	#flex-content-section-2 { background-position: 80% center; }
-	#flex-content-section-6, #flex-content-section-12 { background-position: 40% center; }
-	#flex-content-section-22 { background-position: 30% center; }
-	#flex-content-section-22 .copy.text-dark { right: 0; }
-}
-
-/* iPad Pro hack */
-@media (min-device-width: 768px) and (max-device-width: 833px) and (-webkit-min-device-pixel-ratio: 2) {
-	#flex-content-section-22 .copy.text-dark { right: 5vw; }
-}
-
 @media (max-width: 1023px) {
 	.uw-story-body .uw-story-columns .row {
 		grid-template-columns: none;
@@ -325,4 +268,152 @@
 	#flex-content-section-22 .copy.text-dark p:after, #flex-content-section-24 .copy.text-dark p:after { content: close-quote; }
 	#flex-content-section-24 .copy { top: 15vh; }
 	.uw-story-body .giving-widget .col-md-10 { padding: 30% 10%; }
+}
+
+/* iPad hack */
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+	.uw-story-header { height: 50vh; }
+	.uw-story-header h1.text-primary, #copy-block-14 h2 { font-size: 4vw; }
+	.flexible-content .copy.text-dark { width: 60vw; }
+	.highlight-larger { font-size: 38px; }
+	#flex-content-section-2 { background-position: 80% center; }
+	#flex-content-section-6, #flex-content-section-12 { background-position: 40% center; }
+	#flex-content-section-22 { background-position: 30% center; }
+	#flex-content-section-22 .copy.text-dark { right: 0; }
+}
+
+/* iPad Pro hack */
+@media (min-device-width: 768px) and (max-device-width: 833px) and (-webkit-min-device-pixel-ratio: 2) {
+	#flex-content-section-22 .copy.text-dark { right: 5vw; }
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+	.uw-story-body .flexible-content.full-height {
+		background-attachment: scroll !important;
+		-webkit-background-size: auto 150%;
+	}
+	#flex-content-section-2,
+	#flex-content-section-4,
+	#flex-content-section-6,
+	#flex-content-section-9 {
+		z-index: 1 !important;
+	}
+	#copy-block-3,
+	#copy-block-7,
+	#copy-block-10 {
+		margin-top: 0;
+	}
+	#flex-content-section-22 { height: 100vh; }
+	#flex-content-section-22 .copy.text-dark p { margin: 300px 0 300px; }
+	#flex-content-section-22 .row p:nth-child(1), #flex-content-section-22 .row p:nth-child(2) { display: none; }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+	.uw-story-body .flexible-content.full-height {
+		background-attachment: scroll !important;
+		-webkit-background-size: auto 150%;
+	}
+	#flex-content-section-2,
+	#flex-content-section-4,
+	#flex-content-section-6,
+	#flex-content-section-9 {
+		z-index: 1 !important;
+	}
+	#copy-block-3,
+	#copy-block-7,
+	#copy-block-10 {
+		margin-top: 0;
+	}
+	#flex-content-section-22 { height: 100vh; }
+	#flex-content-section-22 .copy.text-dark p { margin: 300px 0 300px; }
+	#flex-content-section-22 .row p:nth-child(1), #flex-content-section-22 .row p:nth-child(2) { display: none; }
+}
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+	.uw-story-body .flexible-content.full-height {
+		background-attachment: scroll !important;
+		-webkit-background-size: auto 150%;
+	}
+	#flex-content-section-2,
+	#flex-content-section-4,
+	#flex-content-section-6,
+	#flex-content-section-9 {
+		z-index: 1 !important;
+	}
+	#copy-block-3,
+	#copy-block-7,
+	#copy-block-10 {
+		margin-top: 0;
+	}
+	#flex-content-section-22 { height: 100vh; }
+	#flex-content-section-22 .copy.text-dark p { margin: 300px 0 300px; }
+	#flex-content-section-22 .row p:nth-child(1), #flex-content-section-22 .row p:nth-child(2) { display: none; }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+	.uw-story-body .flexible-content.full-height {
+		background-attachment: scroll !important;
+		-webkit-background-size: auto 150%;
+	}
+	#flex-content-section-2,
+	#flex-content-section-4,
+	#flex-content-section-6,
+	#flex-content-section-9 {
+		z-index: 1 !important;
+	}
+	#copy-block-3,
+	#copy-block-7,
+	#copy-block-10 {
+		margin-top: 0;
+	}
+	#flex-content-section-22 { height: 100vh; }
+	#flex-content-section-22 .copy.text-dark p { margin: 300px 0 300px; }
+	#flex-content-section-22 .row p:nth-child(1), #flex-content-section-22 .row p:nth-child(2) { display: none; }
+}
+
+/* ----------- iPhone X ----------- */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+	.uw-story-body .flexible-content.full-height {
+		background-attachment: scroll !important;
+		-webkit-background-size: auto 150%;
+	}
+	#flex-content-section-2,
+	#flex-content-section-4,
+	#flex-content-section-6,
+	#flex-content-section-9 {
+		z-index: 1 !important;
+	}
+	#copy-block-3,
+	#copy-block-7,
+	#copy-block-10 {
+		margin-top: 0;
+	}
+	#flex-content-section-22 { height: 100vh; }
+	#flex-content-section-22 .row p { margin-top: 300px; }
+	#flex-content-section-22 .row p:nth-child(1), #flex-content-section-22 .row p:nth-child(2) { display: none; }
 }
