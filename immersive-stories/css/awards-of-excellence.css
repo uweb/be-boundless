@@ -5,6 +5,8 @@
 .uw-story-header .w-50 .text-primary p { line-height: 1.4; }
 .uw-story-header h1 { font-family: 'Encode Sans Normal', sans-serif; font-size: 3.4vw; }
 
+.uw-story-header.half-height { max-height: 40vh; }
+
 @media (min-width: 768px) {
 	.uw-story-header .text-primary p { font-size: 22px; }
 }
@@ -75,6 +77,16 @@
 	border: 0 none;
 }
 
+.uw-story-body .profile-boxes ul.profiles li.profile .profile-image-info span {
+	background: none;
+	color: #4b2e83;
+}
+
+.uw-story-body .profile-boxes ul.profiles li.profile .profile-image-info span.desc-image {
+	height: 70px;
+	min-height: 70px /* TBD */
+}
+
 .uw-story-body .profile-boxes ul.profiles li.profile:hover .profile-cover.enable:before, .uw-story-body .profile-boxes ul.profiles li.profile:active .profile-cover.enable:before, .uw-story-body .profile-boxes ul.profiles li.profile:focus .profile-cover.enable:before, .uw-story-body .profile-boxes ul.profiles li.profile.active-focus .profile-cover.enable:before, .uw-story-body .profile-boxes ul.profiles li.profile.active .profile-cover.enable:before {
 	content: '';
 	display: block;
@@ -85,7 +97,22 @@
 	margin: 0 auto;
 }
 
-.uw-story-body .profile-boxes ul.profiles li.profile:hover .profile-cover.enable p, .uw-story-body .profile-boxes ul.profiles li.profile:active .profile-cover.enable p, .uw-story-body .profile-boxes ul.profiles li.profile:focus .profile-cover.enable p, .uw-story-body .profile-boxes ul.profiles li.profile.active-focus .profile-cover.enable p, .uw-story-body .profile-boxes ul.profiles li.profile.active .profile-cover.enable p { display: none; }
+.uw-story-body .profile-boxes ul.profiles li.profile:hover .profile-cover.enable p.profile-description, .uw-story-body .profile-boxes ul.profiles li.profile:active .profile-cover.enable p.profile-description, .uw-story-body .profile-boxes ul.profiles li.profile:focus .profile-cover.enable p.profile-description, .uw-story-body .profile-boxes ul.profiles li.profile.active-focus .profile-cover.enable p.profile-description, .uw-story-body .profile-boxes ul.profiles li.profile.active .profile-cover.enable p.profile-description { display: none; }
+
+.uw-story-body .profile-boxes ul.profiles li.profile:hover .profile-cover.enable p.profile-caption,
+.uw-story-body .profile-boxes ul.profiles li.profile:active .profile-cover.enable p.profile-caption,
+.uw-story-body .profile-boxes ul.profiles li.profile:focus .profile-cover.enable p.profile-caption,
+.uw-story-body .profile-boxes ul.profiles li.profile.active-focus .profile-cover.enable p.profile-caption,
+.uw-story-body .profile-boxes ul.profiles li.profile.active .profile-cover.enable p.profile-caption {
+	font-family: 'Encode Sans Normal', sans-serif;
+	text-transform: uppercase;
+	color: white;
+	color: #4b2e83;
+	background: none;
+	border: 0 none;
+	font-weight: 900;
+	font-size: 16px;
+}
 
 .uw-story-body .profile-boxes ul.profiles li.profile:hover .profile-cover.enable h3, .uw-story-body .profile-boxes ul.profiles li.profile:active .profile-cover.enable h3, .uw-story-body .profile-boxes ul.profiles li.profile:focus .profile-cover.enable h3, .uw-story-body .profile-boxes ul.profiles li.profile.active-focus .profile-cover.enable h3, .uw-story-body .profile-boxes ul.profiles li.profile.active .profile-cover.enable h3 {
 	font-family: 'Encode Sans Compressed', sans-serif;
