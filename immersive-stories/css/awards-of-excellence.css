@@ -89,9 +89,9 @@
 .uw-story-body .profile-boxes ul.profiles li.profile .profile-image-info { background: none; }
 
 .uw-story-body .profile-boxes ul.profiles li.profile .profile-image-info span {
-	padding: 0 20px;
+	padding: 0 10px;
 	color: #4b2e83;
-	height: 75px;
+	height: 70px;
 }
 
 @media (min-width: 770px) and (max-width: 849px) {
