@@ -221,6 +221,8 @@
 
 	.uw-story-body .profile-boxes ul.profiles li.profile .profile-image-info span {
 		padding: 0 20px;
+		display: block;
+		text-align: center;
 	}
 
 	.uw-story-body .profile-boxes ul.profiles li.profile .profile-cover.enable button {
