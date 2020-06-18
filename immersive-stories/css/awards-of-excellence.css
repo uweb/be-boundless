@@ -231,6 +231,11 @@
 	}
 }
 
+/* edge only */
+@supports (-ms-ime-align: auto) {
+	.uw-story-body .profile-boxes ul.profiles li.profile { display: block; }
+}
+
 @media (min-width: 1705px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 	#profiles-section-1 #profile-0 { -ms-grid-column: 1; -ms-grid-row: 1; }
 	#profiles-section-1 #profile-1 { -ms-grid-column: 2; -ms-grid-row: 1; }
