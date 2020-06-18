@@ -210,7 +210,10 @@
 		display: -ms-grid;
 	}
 
-	.uw-story-body .profile-boxes ul.profiles li.profile { display: block; }
+	.uw-story-body .profile-boxes ul.profiles li.profile {
+		display: block;
+		max-width: 280px;
+	}
 
 	.uw-story-body .profile-boxes ul.profiles li.profile .profile-image-info {
 		display: block !important;
