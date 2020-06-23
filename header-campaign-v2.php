@@ -20,6 +20,14 @@ global $post;
 <!DOCTYPE html>
 <html class="no-js" lang="<?php echo ( is_page('research-korean-dramas-kr') ? "ko" :  ( is_page("puerto-rico-solar-es") ? "es" : "en" ) ); ?>">
 	<head>
+		<!-- Google Tag Manager as of 6/23/2020 TJS -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-KQ6QQBT');</script>
+		<!-- End Google Tag Manager -->
+
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
@@ -39,15 +47,20 @@ global $post;
 		<script type='text/javascript' src='<?php echo get_stylesheet_directory_uri() . '/campaign/js/vendor/jquery-1.11.3.min.js' ?>'></script>
 		<script type='text/javascript' src='<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>'></script>
 
+		<!-- Moved to GTM 6/23/2020 TJS
 		<script src="https://cdn.variametrix.com/d2insights/tracker.min.js"></script>
 		<script>
 			var _iaq = _iaq || [];
 			_iaq.push(['enableHeartBeatTimer', '30']);
 			_iaq.push(['setSiteId', '7a490682-d908-4153-b1b4-ba39c8085050']);
 			_iaq.push(['setCustomerId', '7a490682-d908-4153-b1b4-ba39c8085050']);
-		</script>
+		</script> -->
 	</head>
 	<body id="immersive" <?php body_class(); ?>>
+	<!-- Google Tag Manager (noscript) as of 6/23/2020 TJS -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ6QQBT"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 		<header id="cv2-header" class="cv2-header" role="banner">
 			<div class="cv2-header-purple" role="navigation" aria-label="Main menu">
 				<div class="row">
