@@ -23,7 +23,7 @@ global $scripts;
 				<div class="col-md-7 col-lg-5 cv2-newsletter">
 					<div class="cv2-col-inner cv2-col-inner-campnews">
 						<div class="cv2-campnews hidden-xs hidden-sm">
-							<h4 id="signup-form-label">Campaign newsletter</h4>
+							<h4 id="signup-form-label">Stay informed</h4>
 							<script type="text/javascript" src="https://subscribe.gifts.washington.edu/Scripts/submanbuilder/submanbuilder.js" id="uwSubscriptionManager"></script>
 							<script type="text/javascript">
 								SUBMANBUILDER.makeIframe({
