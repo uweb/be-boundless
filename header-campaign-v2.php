@@ -11,7 +11,7 @@ if(!$storyCodes || $storyCodes == ''){
 	$storyCodes = 'UWMCOV,SEACOV,TACCOV,BOTCOV,PHICOV,SEALTS,IMPFND';
 }
 if(!$storyAppealCodes || $storyAppealCodes == ''){
-	$storyAppealCodes = '20XBS';
+	$storyAppealCodes = '21XBS';
 }
 global $post;
 
