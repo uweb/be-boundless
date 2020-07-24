@@ -1,5 +1,27 @@
+.uw-story-header { background-position: right center; }
 .uw-story-body .copy h2 { color: #373A3C; font-family: 'Encode Sans', sans-serif; font-weight: normal; }
 .uw-story-body .copy .callout { font-family: 'Encode Sans Compressed', sans-serif; font-size: 24px; line-height: 36px; }
-
 #copy-block-3 { background: white; z-index: 999; }
 #flex-content-section-4 { margin-top: -50px; z-index: -1; }
+
+#flex-content-section-2 .copy .row {
+	width: 60%;
+	background: rgba(0, 0, 0, 0.42);
+	padding: 10px 40px 30px;
+}
+
+#flex-content-section-2 .copy p {
+	font-family: 'Encode Sans', sans-serif;
+	font-size: 3.5rem;
+	line-height: 1.4;
+	font-weight: 500;
+	font-style: normal;
+	color: white;
+	border-bottom: 0 none;
+	background: none;
+	padding: 0;
+}
+
+#flex-content-section-2 .copy p:before { content: open-quote; display: block; position: relative; bottom: -2.5rem; left: 0; font-family: 'Encode Sans Normal', sans-serif; }
+
+#flex-content-section-2 .copy p:after { content: close-quote; position: relative; bottom: -30px; left: 10px; font-family: 'Encode Sans Normal', sans-serif; }
