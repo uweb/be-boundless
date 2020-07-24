@@ -10,7 +10,12 @@
 	padding: 10px 40px 30px;
 }
 
-#flex-content-section-2 .copy p {
+#flex-content-section-4 .copy .row {
+	width: 60%;
+	margin-left: 40%;
+}
+
+#flex-content-section-2 .copy p, #flex-content-section-4 .copy p {
 	font-family: 'Encode Sans', sans-serif;
 	font-size: 3.5rem;
 	line-height: 1.4;
@@ -22,6 +27,8 @@
 	padding: 0;
 }
 
-#flex-content-section-2 .copy p:before { content: open-quote; display: block; position: relative; bottom: -2.5rem; left: 0; font-family: 'Encode Sans Normal', sans-serif; }
+#flex-content-section-2 .copy p:before,
+#flex-content-section-4 .copy p:before { content: open-quote; display: block; position: relative; bottom: -2.5rem; left: 0; font-family: 'Encode Sans Normal', sans-serif; }
 
-#flex-content-section-2 .copy p:after { content: close-quote; position: relative; bottom: -30px; left: 10px; font-family: 'Encode Sans Normal', sans-serif; }
+#flex-content-section-2 .copy p:after,
+#flex-content-section-4 .copy p:after { content: close-quote; position: relative; bottom: -30px; left: 10px; font-family: 'Encode Sans Normal', sans-serif; }
