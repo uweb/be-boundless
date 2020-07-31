@@ -47,11 +47,6 @@
 }
 
 @media (max-width: 1024px) {
-	.uw-story-body .carousel.full-width .carousel-inner .carousel-item.slide-0 img,
-	.uw-story-body .carousel.full-width .carousel-inner .carousel-item.slide-2 img,
-	.uw-story-body .carousel.full-width .carousel-inner .carousel-item.slide-3 img {
-		object-position: center right;
-	}
 }
 
 @media (max-width: 1200px) {
@@ -62,4 +57,9 @@
 		min-height: auto;
 	}
 
+	.uw-story-body .carousel.full-width .carousel-inner .carousel-item.slide-0 img,
+	.uw-story-body .carousel.full-width .carousel-inner .carousel-item.slide-2 img,
+	.uw-story-body .carousel.full-width .carousel-inner .carousel-item.slide-3 img {
+		object-position: center right;
+	}
 }
