@@ -34,10 +34,11 @@
 #flex-content-section-4 .copy p:after { content: close-quote; position: relative; bottom: -1.2em; left: -0.7em; font-family: 'Encode Sans Normal', sans-serif; }
 
 @media (max-width: 768px) {
-	#flex-content-section-2 .copy p, #flex-content-section-4 .copy p { font-size: 1.5rem; color: #3D3D3D; text-shadow: 0 0 0 transparent; }
+	#flex-content-section-2 .copy p, #flex-content-section-4 .copy p { font-size: 2rem; color: #3D3D3D; text-shadow: 0 0 0 transparent; }
 	.uw-story-body .flexible-content.background-video .copy { top: 100%; width: 100%; }
-	#flex-content-section-2 .copy .row { width: 100%; background: white; }
-	#copy-block-3 { margin-top: 100px; }
+	#flex-content-section-2 .copy .row { width: 100%; background: white; padding: 10px 20px 20px; }
+	#copy-block-3 { margin-top: 150px; }
+	#flex-content-section-2 .copy p:before, #flex-content-section-4 .copy p:before { bottom: -0.65em; }
 }
 
 @media (max-width: 1024px) {
