@@ -52,14 +52,14 @@
 	.uw-story-body .carousel.full-width .carousel-inner .carousel-item.slide-3 img {
 		object-position: center right;
 	}
-
-	.uw-story-body .flexible-content.full-height {
-		min-height: auto;
-	}
 }
 
 @media (max-width: 1200px) {
 	.uw-story-header .w-50 {
 		bottom: 40px;
 	}
+	.uw-story-body .flexible-content.full-height {
+		min-height: auto;
+	}
+
 }
