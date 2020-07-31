@@ -36,7 +36,8 @@
 @media (max-width: 768px) {
 	#flex-content-section-2 .copy p, #flex-content-section-4 .copy p { font-size: 1.5rem; color: #3D3D3D; text-shadow: 0 0 0 transparent; }
 	.uw-story-body .flexible-content.background-video .copy { top: 100%; width: 100%; }
-	#flex-content-section-2 .copy .row { width: 100%; }
+	#flex-content-section-2 .copy .row { width: 100%; background: white; }
+	#copy-block-3 { margin-top: 100px; }
 }
 
 @media (max-width: 1024px) {
