@@ -33,7 +33,7 @@
 #flex-content-section-2 .copy p:after,
 #flex-content-section-4 .copy p:after { content: close-quote; position: relative; bottom: -1.2em; left: -0.7em; font-family: 'Encode Sans Normal', sans-serif; }
 
-@media (max-height: 768px) {
+@media (max-width: 768px) {
 	#flex-content-section-2 .copy p, #flex-content-section-4 .copy p { font-size: 1.5rem; color: #3D3D3D; text-shadow: 0 0 0 transparent; }
 	.uw-story-body .flexible-content.background-video .copy { top: 100%; width: 100%; }
 	#flex-content-section-2 .copy .row { width: 100%; }
