@@ -33,8 +33,10 @@
 #flex-content-section-2 .copy p:after,
 #flex-content-section-4 .copy p:after { content: close-quote; position: relative; bottom: -1.2em; left: -0.7em; font-family: 'Encode Sans Normal', sans-serif; }
 
-.uw-story-body .carousel.full-width .carousel-inner .carousel-item.slide-0 img,
-.uw-story-body .carousel.full-width .carousel-inner .carousel-item.slide-2 img,
-.uw-story-body .carousel.full-width .carousel-inner .carousel-item.slide-3 img {
-	object-position: center right;
+@media (max-width: 1023px) {
+	.uw-story-body .carousel.full-width .carousel-inner .carousel-item.slide-0 img,
+	.uw-story-body .carousel.full-width .carousel-inner .carousel-item.slide-2 img,
+	.uw-story-body .carousel.full-width .carousel-inner .carousel-item.slide-3 img {
+		object-position: center right;
+	}
 }
