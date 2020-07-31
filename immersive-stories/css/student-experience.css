@@ -40,6 +40,8 @@
 	#flex-content-section-2 .copy .row  { width: 100%; background: white; padding: 10px 20px 20px; }
 	#copy-block-3 { margin-top: 150px; }
 	#flex-content-section-2 .copy p:before, #flex-content-section-4 .copy p:before { bottom: -0.65em; }
+	#copy-block-5 h2 { font-size: 27px; }
+	.uw-story-body .carousel.captions-simple .carousel-caption { width: 90% !important; }
 }
 
 @media (max-width: 1024px) {
