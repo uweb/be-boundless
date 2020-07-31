@@ -31,4 +31,10 @@
 #flex-content-section-4 .copy p:before { content: open-quote; display: block; position: relative; bottom: -2.5rem; left: 0; font-family: 'Encode Sans Normal', sans-serif; }
 
 #flex-content-section-2 .copy p:after,
-#flex-content-section-4 .copy p:after { content: close-quote; position: relative; bottom: -30px; left: 10px; font-family: 'Encode Sans Normal', sans-serif; }
+#flex-content-section-4 .copy p:after { content: close-quote; position: relative; bottom: -1.2em; left: -0.7em; font-family: 'Encode Sans Normal', sans-serif; }
+
+.uw-story-body .carousel.full-width .carousel-inner .carousel-item.slide-0 img,
+.uw-story-body .carousel.full-width .carousel-inner .carousel-item.slide-2 img,
+.uw-story-body .carousel.full-width .carousel-inner .carousel-item.slide-3 img {
+	object-position: center right;
+}
