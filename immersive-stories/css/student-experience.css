@@ -35,10 +35,11 @@
 
 @media (max-width: 768px) {
 	#flex-content-section-2 .copy p, #flex-content-section-4 .copy p { font-size: 2rem; color: #3D3D3D; text-shadow: 0 0 0 transparent; }
-	.uw-story-body .flexible-content.background-video .copy { top: 100%; width: 100%; }
-	#flex-content-section-2 .copy .row { width: 100%; background: white; padding: 10px 20px 20px; }
-	#copy-block-3 { margin-top: 150px; }
+	.uw-story-body .flexible-content.background-video .copy, #flex-content-section-4 .copy { top: 100%; width: 100%; }
+	#flex-content-section-2 .copy .row, #flex-content-section-4 .copy .row { width: 100%; background: white; padding: 10px 20px 20px; }
+	#copy-block-3, #copy-block-5 { margin-top: 150px; }
 	#flex-content-section-2 .copy p:before, #flex-content-section-4 .copy p:before { bottom: -0.65em; }
+	#flex-content-section-4 { background-position: center center; }
 }
 
 @media (max-width: 1024px) {
