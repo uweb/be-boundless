@@ -4,7 +4,6 @@
 #copy-block-1 {
 	background: #4c2b85;
 	margin: 0;
-	padding: 30px 40px;
 	width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -26,6 +25,7 @@
 	max-width: 100vw;
 	padding: 0;
 }
+#copy-block-1 .row { padding: 30px 40px; }
 #copy-block-1 p { color: white; }
 
 #copy-block-4 { background: white; z-index: 999; }
