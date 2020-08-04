@@ -75,6 +75,14 @@
 	.uw-story-body .carousel .carousel-control-next, .uw-story-body .carousel .carousel-control-prev { width: 6rem;}
 }
 
+@media (max-width: 300px) {
+	#copy-block-4 { margin-top: 300px; }
+}
+
+@media (min-width: 301px) and (max-width: 425px) {
+	#copy-block-4 { margin-top: 150px; }
+}
+
 @media (max-width: 1200px) {
 	.uw-story-header .w-50 {
 		bottom: 40px;
