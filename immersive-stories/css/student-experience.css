@@ -1,21 +1,21 @@
 .uw-story-header { background-position: right center; }
 .uw-story-body .copy h2 { color: #373A3C; font-family: 'Encode Sans', sans-serif; font-weight: normal; }
 .uw-story-body .copy .callout { font-family: 'Encode Sans Compressed', sans-serif; font-size: 24px; line-height: 36px; }
-#copy-block-3 { background: white; z-index: 999; }
-#flex-content-section-4 { margin-top: -50px; z-index: -1; }
+#copy-block-4 { background: white; z-index: 999; }
+#flex-content-section-5 { margin-top: -50px; z-index: -1; }
 
-#flex-content-section-2 .copy .row {
+#flex-content-section-3 .copy .row {
 	width: 60%;
 	background: rgba(0, 0, 0, 0.42);
 	padding: 10px 40px 30px;
 }
 
-#flex-content-section-4 .copy .row {
+#flex-content-section-5 .copy .row {
 	width: 60%;
 	margin-left: 40%;
 }
 
-#flex-content-section-2 .copy p, #flex-content-section-4 .copy p {
+#flex-content-section-3 .copy p, #flex-content-section-5 .copy p {
 	font-family: 'Encode Sans', sans-serif;
 	font-size: 3.5rem;
 	line-height: 1.4;
@@ -27,26 +27,23 @@
 	padding: 0;
 }
 
-#flex-content-section-2 .copy p:before,
-#flex-content-section-4 .copy p:before { content: open-quote; display: block; position: relative; bottom: -2.5rem; left: 0; font-family: 'Encode Sans Normal', sans-serif; }
+#flex-content-section-3 .copy p:before,
+#flex-content-section-5 .copy p:before { content: open-quote; display: block; position: relative; bottom: -2.5rem; left: 0; font-family: 'Encode Sans Normal', sans-serif; }
 
-#flex-content-section-2 .copy p:after,
-#flex-content-section-4 .copy p:after { content: close-quote; position: relative; bottom: -1.2em; left: -0.7em; font-family: 'Encode Sans Normal', sans-serif; }
+#flex-content-section-3 .copy p:after,
+#flex-content-section-5 .copy p:after { content: close-quote; position: relative; bottom: -1.2em; left: -0.7em; font-family: 'Encode Sans Normal', sans-serif; }
 
 @media (max-width: 768px) {
-	#flex-content-section-2 .copy p { font-size: 2rem; color: #3D3D3D; text-shadow: 0 0 0 transparent; }
-	#flex-content-section-4 .copy p { font-size: 1.5rem; }
+	#flex-content-section-3 .copy p { font-size: 2rem; color: #3D3D3D; text-shadow: 0 0 0 transparent; }
+	#flex-content-section-5 .copy p { font-size: 1.5rem; }
 	.uw-story-body .flexible-content.background-video .copy { top: 100%; width: 100%; }
-	#flex-content-section-2 .copy .row  { width: 100%; background: white; padding: 10px 20px 20px; }
+	#flex-content-section-3 .copy .row  { width: 100%; background: white; padding: 10px 20px 20px; }
 	#copy-block-3 { margin-top: 150px; }
-	#flex-content-section-2 .copy p:before, #flex-content-section-4 .copy p:before { bottom: -0.65em; }
-	#copy-block-5 h2 { font-size: 27px; }
+	#flex-content-section-3 .copy p:before, #flex-content-section-4 .copy p:before { bottom: -0.65em; }
+	#copy-block-6 h2 { font-size: 27px; }
 	.uw-story-body .carousel.captions-simple .carousel-caption { width: 90% !important; }
 	.uw-story-body .giving-widget { background-position: 28% center; }
 	.uw-story-body .giving-widget .col-md-10 { padding: 0; margin: 0 0 0 40%; }
-}
-
-@media (max-width: 1024px) {
 }
 
 @media (max-width: 1200px) {
