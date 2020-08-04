@@ -43,7 +43,7 @@
 	#copy-block-5 h2 { font-size: 27px; }
 	.uw-story-body .carousel.captions-simple .carousel-caption { width: 90% !important; }
 	.uw-story-body .giving-widget { background-position: 28% center; }
-	.uw-story-body .giving-widget .col-md-10 { padding: 0; margin: 0 0 0 40%; background: rgba(0, 0, 0, 0.42); }
+	.uw-story-body .giving-widget .col-md-10 { padding: 0; margin: 0 0 0 40%; }
 }
 
 @media (max-width: 1024px) {
