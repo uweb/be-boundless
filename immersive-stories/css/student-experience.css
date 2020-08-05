@@ -83,7 +83,7 @@
 
 @media (min-width: 769px) {
 	#flex-content-section-3 .copy { left: 40px; }
-	#flex-content-section-3 { height: 80vh; }
+	#flex-content-section-3 { height: 90vh; }
 	#flex-content-section-3 video { height: 100%; object-position: 50% 100%; }
 }
 
