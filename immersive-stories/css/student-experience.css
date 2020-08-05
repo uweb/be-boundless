@@ -63,7 +63,9 @@
 #flex-content-section-3 .copy p:after,
 #flex-content-section-5 .copy p:after { content: close-quote; position: relative; bottom: -1.2em; left: -0.7em; font-family: 'Encode Sans Normal', sans-serif; }
 
-.uw-story-body .carousel .carousel-control-next, .uw-story-body .carousel .carousel-control-prev { width: 6rem;}
+.uw-story-body .carousel .carousel-control-next, .uw-story-body .carousel .carousel-control-prev { width: 6rem; }
+.uw-story-body .carousel .carousel-control-next .carousel-control-prev-icon { left: 8px; }
+.uw-story-body .carousel .carousel-control-prev .carousel-control-prev-icon { right: 8px; }
 
 @media (max-width: 768px) {
 	#flex-content-section-3 .copy p { font-size: 2rem; color: #3D3D3D; text-shadow: 0 0 0 transparent; }
