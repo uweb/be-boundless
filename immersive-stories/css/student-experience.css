@@ -109,3 +109,7 @@
 		object-position: center right;
 	}
 }
+
+@media (min-width: 1600px) {
+	.uw-story-header .w-50 { padding: 6rem; }
+}
