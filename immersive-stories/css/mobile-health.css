@@ -1,0 +1,23 @@
+@media (min-width: 751px) {
+
+	.uw-story-body .profile-boxes ul.profiles.four-columns {
+		grid-template-columns: 1fr 2fr;
+	}
+	.uw-story-body .profile-boxes ul.profiles.five-columns {
+		grid-template-columns: 2fr 1fr;
+	}
+	.uw-story-body .profile-boxes ul.profiles li.profile img {
+		width: 75vw;
+		min-height: 100%;
+	}
+}
+
+
+.uw-story-body .profile-boxes ul.profiles li.profile {
+	max-height: 500px;
+	max-height: 70vh;
+}
+
+.uw-story-body .profile-boxes ul.profiles {
+	grid-gap: 20px;
+}
