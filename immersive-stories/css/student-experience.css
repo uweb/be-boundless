@@ -63,6 +63,8 @@
 #flex-content-section-3 .copy p:after,
 #flex-content-section-5 .copy p:after { content: close-quote; position: relative; bottom: -1.2em; left: -0.7em; font-family: 'Encode Sans Normal', sans-serif; }
 
+.uw-story-body .carousel .carousel-control-next, .uw-story-body .carousel .carousel-control-prev { width: 6rem;}
+
 @media (max-width: 768px) {
 	#flex-content-section-3 .copy p { font-size: 2rem; color: #3D3D3D; text-shadow: 0 0 0 transparent; }
 	#flex-content-section-5 .copy p { font-size: 1.5rem; }
@@ -75,7 +77,6 @@
 	.uw-story-body .giving-widget { background-position: 28% center; }
 	.uw-story-body .giving-widget .col-md-10 { padding: 0; margin: 0 0 0 40%; }
 	#flex-content-section-5 { margin-top: 0; }
-	.uw-story-body .carousel .carousel-control-next, .uw-story-body .carousel .carousel-control-prev { width: 6rem;}
 }
 
 @media (min-width: 769px) {
