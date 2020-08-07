@@ -6,6 +6,9 @@
 	.uw-story-body .profile-boxes ul.profiles.five-columns {
 		grid-template-columns: 2fr 1fr;
 	}
+	.uw-story-body .profile-boxes ul.profiles.three-columns {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 	.uw-story-body .profile-boxes ul.profiles li.profile img {
 		width: 75vw;
 		min-height: 100%;
@@ -20,4 +23,81 @@
 
 .uw-story-body .profile-boxes ul.profiles {
 	grid-gap: 20px;
+}
+
+.uw-story-body .copy h2 {
+	font-family: "Encode Sans Black", sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 35px;
+}
+
+.uw-accordion-shortcode__header {
+	font-family: "Encode Sans Compressed", sans-serif;
+	font-size: 25px;
+	padding: 20px;
+	margin-left: -20px;
+	width: calc(100% + 40px);
+	line-height: normal;
+}
+
+.uw-accordion-shortcode__header:before {
+	background-position: unset !important;
+	height: 35px;
+	width: 35px;
+	margin: 0;
+}
+.uw-accordion-shortcode__header[aria-expanded="false"]:before {
+	background-image: url(../custom/PLUS_black.svg);
+}
+.uw-accordion-shortcode__header[aria-expanded="true"]:before {
+	background-image: url(../custom/MINUS_black.svg);
+}
+.uw-accordion-shortcode__header:hover:before,
+.uw-accordion-shortcode__header[aria-expanded="false"]:focus:before{
+	background-image: url(../custom/PLUS_WHITE.svg);
+}
+.uw-accordion-shortcode__header[aria-expanded="true"]:focus:before,
+.uw-accordion-shortcode__header[aria-expanded="true"]:hover:before {
+	background-image: url(../custom/MINUS_WHITE.svg);
+}
+.uw-accordion-shortcode__header:hover,
+.uw-accordion-shortcode__header:focus {
+	background-color: #4b2e83;
+	color: white;
+}
+
+.uw-story-columns .quote-block:before {
+	content: "";
+	display: block;
+	height: 100%;
+	max-height: 300px;
+	position: absolute;
+	z-index: -1;
+	width: 100vw;
+	background: #ECDFC2 0% 0% no-repeat padding-box;
+	border-radius: 155px;
+	opacity: 0.46;
+}
+
+.uw-story-columns .right-column .quote-block:before {
+	left: 50px;
+
+}
+.uw-story-columns .left-column .quote-block:before {
+	right: 50px;
+	background: #4C2B85 0% 0% no-repeat padding-box;
+	opacity: 0.12;
+}
+.uw-story-body figure.quote-block div {
+	border-left: none;
+	padding: 0;
+}
+
+.uw-story-body figure.quote-block div blockquote {
+	font-family: "Encode Sans Light", sans-serif;
+	font-weight: 200;
+	font-size: 50px;
+	color: #373A3C;
+	line-height: normal;
 }
