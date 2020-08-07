@@ -127,3 +127,10 @@
 }
 #copy-block-1 .row { padding: 30px 40px; max-width: 1400px; }
 #copy-block-1 p { color: white; }
+
+.uw-story-columns p strong {
+	font-family: Encode Sans Compressed,sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+	color: #4b2e83;
+}
