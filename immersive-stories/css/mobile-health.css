@@ -105,6 +105,7 @@
 	font-size: 50px;
 	color: #373A3C;
 	line-height: normal;
+	margin-bottom: 0;
 }
 
 #half-columns-3 .left-column .quote-block:before,
@@ -157,6 +158,10 @@
 	font-weight: 900;
 }
 
+#copy-block-5 .row, #copy-block-8 .row, #copy-block-11 .row, #copy-block-14 .row, #copy-block-17 .row, #copy-block-20 .row, #copy-block-23 .row { padding-top: 0; }
+
+#copy-block-23 .row { padding-bottom: 80px; }
+
 @media (max-width: 767px) {
 	#flex-content-section-2  .row {
 		padding: 60px 40px;
@@ -170,6 +175,20 @@
 	.uw-story-body .copy h2 {
 		font-size: 30px;
 	}
+	.uw-story-header.mobile-header-center.primary.background-image:before {
+		background: -webkit-gradient(linear,left top,left bottom,color-stop(20%,hsla(0,0%,100%,0)),color-stop(50%,hsla(0,0%,100%,.9)),color-stop(80%,hsla(0,0%,100%,0)));
+		background: linear-gradient(180deg,hsla(0,0%,100%,0) 20%,hsla(0,0%,100%,.9) 50%,hsla(0,0%,100%,0) 80%);
+	}
+
+	.uw-story-header.mobile-header-center .w-50 { width: 65% !important; margin-top: 80px; }
+}
+
+@media (min-width: 310px) and (max-width: 383px) {
+	.uw-story-header.mobile-header-center.background-image .w-50 { width: 80% !important; }
+}
+
+@media (max-width: 309px) {
+	.uw-story-header.mobile-header-center.background-image .w-50 { width: 100% !important; padding: 0 20px !important; background: white; }
 }
 
 @media (max-width: 1023px) {
