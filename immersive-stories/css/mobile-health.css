@@ -224,5 +224,5 @@ body { overflow-x: hidden; }
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
-	.uw-story-body .profile-boxes ul.profiles li.profile { max-height: 50vh; }
+	.uw-story-body .profile-boxes ul.profiles li.profile { max-height: 40vh; }
 }
