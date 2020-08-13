@@ -200,16 +200,15 @@ body { overflow-x: hidden; }
 	}
 }
 
-@media (min-width: 384px) and (max-width: 767px) {
+@media (min-width: 477px) and (max-width: 767px) {
 	.uw-story-header.mobile-header-center.background-image .w-50 { width: 80% !important; margin-top: 80px; }
 }
 
-@media (min-width: 310px) and (max-width: 383px) {
+@media (min-width: 310px) and (max-width: 476px) {
 	.uw-story-header.mobile-header-center.background-image .w-50 { width: 100% !important; padding: 20px !important; background:rgba(255,255,255,0.8); }
 }
 
 @media (max-width: 1023px) {
-
 	#half-columns-6 .right-column,
 	#half-columns-12 .right-column,
 	#half-columns-18 .right-column {
