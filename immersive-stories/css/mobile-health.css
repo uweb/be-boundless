@@ -198,7 +198,9 @@ body { overflow-x: hidden; }
 		background: -webkit-gradient(linear,left top,left bottom,color-stop(20%,hsla(0,0%,100%,0)),color-stop(50%,hsla(0,0%,100%,.9)),color-stop(80%,hsla(0,0%,100%,0)));
 		background: linear-gradient(180deg,hsla(0,0%,100%,0) 20%,hsla(0,0%,100%,.9) 50%,hsla(0,0%,100%,0) 80%);
 	}
+}
 
+@media (min-width: 384px) and (max-width: 767px) {
 	.uw-story-header.mobile-header-center .w-50 { width: 65% !important; margin-top: 80px; }
 }
 
