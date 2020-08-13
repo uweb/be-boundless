@@ -130,6 +130,7 @@ body { overflow-x: hidden; }
 @media (min-width: 769px) {
 	.uw-story-body .uw-story-columns .row .right-column .quote-block { padding: 0 0 0 40px; }
 	.uw-story-body .uw-story-columns .row .left-column .quote-block { padding: 0 40px 0 0; }
+	.uw-story-body #half-columns-15 .row .left-column .quote-block { padding: 0 20px 0 0; }
 }
 
 #half-columns-3 .left-column .quote-block:before,
