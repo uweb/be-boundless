@@ -43,7 +43,7 @@ body { overflow-x: hidden; }
 	}
 }
 
-.uw-story-body .profile-boxes ul.profiles li.profile img:focus {
+.uw-story-body .profile-boxes ul.profiles li.profile:focus, .uw-story-body .profile-boxes ul.profiles li.profile img:focus {
 	outline: none;
 }
 
@@ -223,6 +223,6 @@ body { overflow-x: hidden; }
 	}
 }
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media (min-device-width: 481px) and (max-device-width: 1024px) {
 	.uw-story-body .profile-boxes ul.profiles li.profile { max-height: 40vh; }
 }
