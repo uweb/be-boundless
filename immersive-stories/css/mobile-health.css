@@ -223,6 +223,6 @@ body { overflow-x: hidden; }
 	}
 }
 
-@media (min-device-width: 481px) and (max-device-width: 1024px) {
+@media (min-width: 481px) and (max-width: 1024px) {
 	.uw-story-body .profile-boxes ul.profiles li.profile { max-height: 40vh; }
 }
