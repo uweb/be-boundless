@@ -1,0 +1,28 @@
+#copy-block-1 {
+	background: #4c2b85;
+	margin: 0;
+	width: 100vw;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	background-size: cover;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	max-width: 100vw;
+	padding: 0;
+  }
+
+  #copy-block-1 .row { padding: 30px 40px; max-width: 1400px; }
+
+  #copy-block-1 p { color: white; }
