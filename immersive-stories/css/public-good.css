@@ -45,11 +45,11 @@
 
 #half-columns-4 .row { padding-bottom: 0; }
 
-.uw-story-body .uw-story-columns .row .right-column .quote-block.quote-simple blockquote:before, .uw-story-body .uw-story-columns .row .right-column .quote-block.quote-simple blockquote:after {
+.uw-story-body .uw-story-columns .row .right-column .quote-block.quote-simple blockquote:before, .uw-story-body figure.quote-block.quote-simple blockquote:before, .uw-story-body .uw-story-columns .row .right-column .quote-block.quote-simple blockquote:after, .uw-story-body figure.quote-block.quote-simple blockquote:after {
 	display: none;
 }
 
-.uw-story-body .uw-story-columns .row .right-column .quote-block.quote-simple blockquote {
+.uw-story-body .uw-story-columns .row .right-column .quote-block.quote-simple blockquote, .uw-story-body figure.quote-block.quote-simple blockquote {
 	font-family: 'Encode Sans Compressed', sans-serif;
 	font-size: 50px;
 	font-weight: 900;
