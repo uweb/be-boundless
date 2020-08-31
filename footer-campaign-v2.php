@@ -69,13 +69,14 @@ global $scripts;
 		<?php if($_SERVER['HTTP_HOST'] != 'localhost'){ ?>
 			<script>
 				// Moved to GTM 6/23/2020 TJS
-				// (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-				// (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-				// m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-				// })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-				// ga('create', 'UA-15747328-1', 'auto', {'allowLinker': true});
-				// ga('require', 'linker');
-				// ga('linker:autoLink', ['online.gifts.washington.edu'], ['gifts.washington.edu']);
+				// Still need this part 08/31/2020 TJS
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-15747328-1', 'auto', {'allowLinker': true});
+				ga('require', 'linker');
+				ga('linker:autoLink', ['online.gifts.washington.edu'], ['gifts.washington.edu']);
 
 				ga('send', 'pageview');
 				var GIFTLISTENER = {
@@ -151,40 +152,6 @@ global $scripts;
 				};
 
 			</script>
-			<!-- Global site tag (gtag.js) - Google Analytics -->
-			<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15747328-1"></script>
-			<script>
-			  window.dataLayer = window.dataLayer || [];
-			  function gtag(){dataLayer.push(arguments);}
-			  gtag('js', new Date());
-
-			  gtag('config', 'UA-15747328-1');
-			</script> -->
-			<!-- Moved to GTM 6/23/2020 TJS -->
-			<!-- uw munchkin -->
-			<!-- UWMunchkin.init('munchkinID', 'serviceKey', 'testIP')-->
-			<!-- <script type="text/javascript">
-				(function () {
-					var didInit = false,
-					s = document.createElement('script');
-					s.type = 'text/javascript';
-					s.async = true;
-					s.src = 'https://subscribe.gifts.washington.edu/Scripts/uwmunchkin/uwmunchkin.min.js';
-					s.onreadystatechange = function () {
-						if (this.readyState == 'complete' || this.readyState == 'loaded') {
-							initUWMunchkin();
-						}
-					};
-					s.onload = initUWMunchkin;
-					document.getElementsByTagName('head')[0].appendChild(s);
-					function initUWMunchkin() {
-						if (didInit === false) {
-							didInit = true;
-							UWMunchkin.init('131-AQO-225', '555556', null);
-						}
-					}
-				})();
-			</script> -->
 		<?php } ?>
 	</body>
 </html>
