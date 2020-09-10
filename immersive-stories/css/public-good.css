@@ -60,3 +60,32 @@
 #flex-content-section-8 .image-caption span {
 	display: block;
 }
+
+@media (max-width: 767px) {
+	.uw-story-header {
+		background-position: 90%;
+	}
+	svg.slant-pattern {
+		height: 40px;
+	}
+	.uw-story-body .flexible-content.full-height {
+		background-position: 90%;
+	}
+	#flex-content-section-3 .copy .row p {
+		font-size: 35px !important;
+		width: 60% !important;
+	}
+	.uw-story-body figure.quote-block div {
+		padding: 0;
+	}
+	.uw-story-body .uw-story-columns .row .right-column .quote-block.quote-simple blockquote,
+	.uw-story-body figure.quote-block.quote-simple blockquote {
+		font-size: 40px !important;
+	}
+	.uw-story-body .flexible-content.foreground-image .row {
+		padding: 0;
+	}
+	.uw-story-body .giving-widget {
+		background-position: 90%;
+	}
+}
