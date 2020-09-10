@@ -106,6 +106,9 @@ div.audio p.audio-buttons {
 }
 div.audio p.audio-buttons button.audio-play {
 	background-color: white;
+	padding: 0 15px;
+	font-family: 'Encode Sans Compressed', sans-serif;
+	font-weight: normal;
 }
 
 @media (max-width: 767px) {
