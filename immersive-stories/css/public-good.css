@@ -117,12 +117,6 @@ div.audio p.audio-buttons button.audio-play {
 	letter-spacing: normal;
 }
 
-@media (max-width: 767px) {
-	div.audio {
-		margin: 0;
-		padding: 35px;
-	}
-}
 div.audio:after {
 	display: none !important;
 }
