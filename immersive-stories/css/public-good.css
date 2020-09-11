@@ -95,6 +95,20 @@
 	.uw-story-body .giving-widget {
 		background-position: 90%;
 	}
+
+	.uw-story-body .giving-widget .col-md-10 {
+		padding: 10% 40% 30% 1%;
+	}
+
+	.uw-story-body .giving-widget.overlay.overlay-default:after {
+		background: linear-gradient(90deg,rgba(0,0,0,.65) 0,transparent 90%);
+	}
+
+	#flex-content-section-10 {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
 	.wp-video, video.wp-video-shortcode, .mejs-container, .mejs-overlay.load {
 		width: 100% !important;
 		height: 100% !important;
