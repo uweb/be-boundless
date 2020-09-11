@@ -62,6 +62,10 @@
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
+#half-columns-9 .right-column {
+	align-self: top;
+}
+
 @media (max-width: 767px) {
 	.uw-story-header {
 		background-position: 90%;
@@ -147,4 +151,9 @@ div.audio.active-audio .audio-buttons {
 	bottom: -40px;
 	background-color: #525252;
 	width: 99.9%
+}
+
+div.audio.active-audio .audio-buttons button:nth-child(2), div.audio.active-audio .audio-buttons button:nth-child(3) {
+	position: relative;
+	top: -5px;
 }
