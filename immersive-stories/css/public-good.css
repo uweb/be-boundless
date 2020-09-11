@@ -68,8 +68,12 @@
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
-	.uw-story-header {
+	.uw-story-header, #flex-content-section-3 {
 		background-position: 70%;
+	}
+
+	#flex-content-section-3 .copy .row p {
+		width: 68%;
 	}
 }
 
