@@ -63,7 +63,7 @@
 }
 
 #half-columns-9 .right-column {
-	align-self: top;
+	align-self: start;
 }
 
 @media (max-width: 767px) {
