@@ -67,6 +67,12 @@
 	align-self: start;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+	.uw-story-header {
+		background-position: 70%;
+	}
+}
+
 @media (max-width: 767px) {
 	.uw-story-header {
 		background-position: 90%;
