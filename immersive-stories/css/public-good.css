@@ -60,6 +60,7 @@
 
 .uw-story-body #profiles-section-6 ul.profiles.three-columns {
 	grid-template-columns: 1fr 1fr 1fr;
+	max-height: 90vh;
 }
 
 #half-columns-9 .right-column {
