@@ -101,9 +101,7 @@ div.audio {
 div.audio p.audio-buttons {
 	color: #4c2b85;
 }
-.audio-buttons .audio-play {
 
-}
 div.audio p.audio-buttons button.audio-play {
 	background-color: white;
 	padding: 5px 20px 5px 10px;
@@ -133,4 +131,20 @@ div.audio .audio-buttons:before {
 	border-style: solid;
 	border-width: 10px 0 10px 17.3px;
 	border-color: transparent transparent transparent #ffffff;
+}
+
+div.audio.active-audio { border: 0 none; }
+
+div.audio.active-audio p.audio-buttons button.audio-play {
+	background-color: transparent;
+}
+
+div.audio.active-audio .audio-buttons:before {
+	display: none;
+}
+
+div.audio.active-audio .audio-buttons {
+	bottom: -40px;
+	background-color: #525252;
+	width: 99.9%
 }
