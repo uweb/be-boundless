@@ -210,4 +210,8 @@ div.audio.active-audio .audio-buttons button:nth-child(2), div.audio.active-audi
 	top: -5px;
 }
 
-
+.audio-transcript h3 {
+	color: white;
+	font-family: "Open Sans";
+	letter-spacing: normal;
+}
