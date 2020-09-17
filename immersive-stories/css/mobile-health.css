@@ -1,4 +1,7 @@
-body { overflow-x: hidden; }
+/* fix Safari bug */
+@media not all and (min-resolution:.001dpcm) {
+	body { overflow-x: hidden; }
+}
 
 @media (min-width: 751px) {
 

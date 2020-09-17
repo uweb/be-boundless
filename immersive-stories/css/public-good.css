@@ -1,4 +1,8 @@
-body { overflow-x: hidden; }
+/* fix Safari bug */
+@media not all and (min-resolution:.001dpcm) {
+	body { overflow-x: hidden; }
+}
+
 #copy-block-1 {
 	background: #4c2b85;
 	margin: 0;

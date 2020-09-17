@@ -1,4 +1,8 @@
-body { overflow-x: hidden; }
+/* fix Safari bug */
+@media not all and (min-resolution:.001dpcm) {
+	body { overflow-x: hidden; }
+}
+
 .uw-story-header { background-position: right center; }
 .uw-story-body .copy h2 { color: #373A3C; font-family: 'Encode Sans', sans-serif; font-weight: normal; }
 .uw-story-body .copy .callout { font-family: 'Encode Sans Compressed', sans-serif; font-size: 24px; line-height: 36px; }
