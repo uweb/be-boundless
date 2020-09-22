@@ -157,13 +157,16 @@
 	}
 }
 
+#half-columns-9 .row { padding-bottom: 0;}
+
 div.audio {
-	margin: 40px 0;
+	margin: 20px 0 0;
 	padding: 5px 10px 10px 10px;
 	border: 2px solid #4c2b85;
 	border-radius: 0;
 	background-color: #4c2b85;
 }
+
 div.audio p.audio-buttons {
 	color: #4c2b85;
 }
