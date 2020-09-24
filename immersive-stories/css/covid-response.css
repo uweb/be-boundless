@@ -107,6 +107,19 @@ h2 { color: #373a3c; }
 	filter: brightness(0.6);
 }
 
+#story-scroll-section-4.active:after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 30%);
+	background: -o-linear-gradient(bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 30%);
+	background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 30%);
+}
+
 .uw-story-body #story-scroll-section-4.active .scroll-story-container {
 	z-index: 3;
 }
