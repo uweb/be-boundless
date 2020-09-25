@@ -1,3 +1,15 @@
+.uw-story-header .w-50 {
+	bottom: 0;
+}
+
+.uw-story-header.background-image.mobile-header-bottom.white.full-height:before {
+	content: '';
+	height: 100%;
+	width: 100%;
+	background: rgb(0,0,0);
+	background: linear-gradient(200deg, rgba(0,0,0,0.0) 50%, rgba(0,0,0,1) 100%);
+}
+
 #copy-block-1 {
 	background: #4c2b85 !important;
 	margin: 0;
