@@ -1,3 +1,32 @@
+#copy-block-1 {
+	background: #4c2b85;
+	margin: 0;
+	width: 100vw;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	background-size: cover;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	max-width: 100vw;
+	padding: 0;
+}
+
+#copy-block-1 .row { padding: 30px 40px; max-width: 1400px; }
+
+#copy-block-1 p { color: white; font-family: "Open Sans", sans-serif; font-size: 17px; }
+
 /* #copy-block-4 .row {
 	height: 60vh;
 	width: 100vw;
@@ -9,4 +38,4 @@
 	min-height: 1112px;
 } */
 
-#flex-content-section-11 .image img { object-position: top center; }
+#flex-content-section-12 .image img { object-position: top center; }
