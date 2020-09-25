@@ -206,6 +206,10 @@ h2 { color: #373a3c; }
 }
 
 @media (max-width: 767px) {
+	.uw-story-header.background-video .w-50 {
+		padding: 0px 0px 10rem 4rem !important
+	}
+
 	.uw-story-body .carousel.captions-simple .carousel-control-next, .uw-story-body .carousel.captions-simple .carousel-control-prev {
 		width: 3rem;
 		background: rgba(75,46,131,.8);
@@ -218,6 +222,27 @@ h2 { color: #373a3c; }
 	.uw-story-body .carousel .carousel-control-next .carousel-control-next-icon, .uw-story-body .carousel .carousel-control-prev .carousel-control-next-icon {
 		border-width: 0 2px 2px 0;
 		padding: 0;
+	}
+
+	.uw-story-body #story-scroll-section-3 .scroll-story-container .scroll-story-copy, .uw-story-body #story-scroll-section-4 .scroll-story-container .scroll-story-copy, .uw-story-body #story-scroll-section-5 .scroll-story-container .scroll-story-copy {
+		width: 80%;
+		max-width: 80%;
+	}
+
+	.uw-story-body #story-scroll-section-3 .scroll-story-container .scroll-story-copy h3, .uw-story-body #story-scroll-section-4 .scroll-story-container .scroll-story-copy h3 {
+		font-size: 70px;
+	}
+
+	.uw-story-body #story-scroll-section-3 .scroll-story-container .scroll-story-copy p {
+		font-size: 40px;
+	}
+	.uw-story-body #story-scroll-section-4 .scroll-story-container .scroll-story-copy p,
+	.uw-story-body #story-scroll-section-5 .scroll-story-container .scroll-story-copy p {
+		font-size: 30px;
+	}
+
+	.uw-story-body .giving-widget .col-md-10 {
+		padding: 10% 5% 30%;
 	}
 }
 
