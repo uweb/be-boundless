@@ -1,5 +1,5 @@
 #copy-block-1 {
-	background: #4c2b85;
+	background: #4c2b85 !important;
 	margin: 0;
 	width: 100vw;
 	display: -webkit-box;
@@ -24,8 +24,11 @@
 }
 
 #copy-block-1 .row { padding: 30px 40px; max-width: 1400px; }
-
 #copy-block-1 p { color: white; font-family: "Open Sans", sans-serif; font-size: 17px; }
+#flex-content-section-13 .image img { object-position: top center; }
+.uw-story-body .heading .row { padding: 60px 40px 0; }
+.uw-story-body .flexible-content.foreground-image { margin-bottom: 80px; }
+
 
 /* #copy-block-4 .row {
 	height: 60vh;
@@ -37,5 +40,3 @@
 	margin-right: -50vw;
 	min-height: 1112px;
 } */
-
-#flex-content-section-12 .image img { object-position: top center; }
