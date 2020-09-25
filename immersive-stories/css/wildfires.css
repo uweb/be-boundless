@@ -40,7 +40,7 @@
 #flex-content-section-13 .image img { object-position: top center; }
 .uw-story-body .heading .row { padding: 60px 40px 0; }
 .uw-story-body .flexible-content.foreground-image { margin-bottom: 80px; }
-#flex-content-section-14 .row, #flex-content-section-23 .row { margin-bottom: 0; }
+#flex-content-section-14, #flex-content-section-23 { margin-bottom: 0; }
 #copy-block-25 .row { padding-top: 20px; }
 
 /* #copy-block-4 .row {
