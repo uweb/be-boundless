@@ -1,7 +1,6 @@
-.uw-story-header .w-50 {
-	bottom: 0;
-}
-
+/* fix Safari bug */
+@media not all and (min-resolution:.001dpcm) { body { overflow-x: hidden; } }
+.uw-story-header .w-50 { bottom: 0; }
 .uw-story-header.background-image.mobile-header-bottom.white.full-height:before {
 	content: '';
 	height: 100%;
@@ -45,14 +44,3 @@
 .uw-story-body .flexible-content.foreground-image { margin-bottom: 80px; }
 #flex-content-section-15, #flex-content-section-24 { margin-bottom: 0; }
 #copy-block-25 .row { padding-top: 20px; }
-
-/* #copy-block-4 .row {
-	height: 60vh;
-	width: 100vw;
-	position: relative;
-	left: 50%;
-	right: 50%;
-	margin-left: -50vw;
-	margin-right: -50vw;
-	min-height: 1112px;
-} */
