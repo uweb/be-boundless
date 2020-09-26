@@ -37,10 +37,13 @@
 
 #copy-block-1 .row { padding: 30px 40px; max-width: 1400px; }
 #copy-block-1 p { color: white; font-family: "Open Sans", sans-serif; font-size: 17px; }
-#flex-content-section-13 .image img { object-position: top center; }
+#flex-content-section-2 p { color: #000; }
+#flex-content-section-2 .row { padding: 60px 40px 60px 40%; }
+#copy-block-14 .row { padding-top: 0; }
+#flex-content-section-17 .image img { object-position: top center; }
 .uw-story-body .heading .row { padding: 60px 40px 0; }
 .uw-story-body .flexible-content.foreground-image { margin-bottom: 80px; }
-#flex-content-section-14, #flex-content-section-23 { margin-bottom: 0; }
+#flex-content-section-15, #flex-content-section-24 { margin-bottom: 0; }
 #copy-block-25 .row { padding-top: 20px; }
 
 /* #copy-block-4 .row {
