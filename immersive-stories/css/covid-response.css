@@ -203,7 +203,7 @@ h2 { color: #373a3c; }
 
 @media (min-width: 768px) and (max-width: 991px) {
 	.uw-story-body .carousel.captions-simple .carousel-control-next, .uw-story-body .carousel.captions-simple .carousel-control-prev {
-		height: 86.1%
+		height: 81.1%
 	}
 	.uw-story-body .story-scroll img.background-image {
 		object-position: left center;
