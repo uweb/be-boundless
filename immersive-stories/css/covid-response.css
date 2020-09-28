@@ -224,6 +224,10 @@ h2 { color: #373a3c; }
 		padding: 0;
 	}
 
+	.uw-story-body .story-scroll img.background-image {
+		object-position: left center;
+	}
+
 	.uw-story-body #story-scroll-section-3 .scroll-story-container .scroll-story-copy, .uw-story-body #story-scroll-section-4 .scroll-story-container .scroll-story-copy, .uw-story-body #story-scroll-section-5 .scroll-story-container .scroll-story-copy {
 		width: 80%;
 		max-width: 80%;
@@ -243,6 +247,12 @@ h2 { color: #373a3c; }
 
 	.uw-story-body .giving-widget .col-md-10 {
 		padding: 10% 5% 30%;
+	}
+
+	.uw-story-body #flex-content-section-7 .image-caption.captions-simple {
+		width: 100%;
+		margin: 0;
+		padding: 15px;
 	}
 }
 
