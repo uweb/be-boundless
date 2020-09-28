@@ -210,6 +210,7 @@ h2 { color: #373a3c; }
 	}
 	.uw-story-body #story-scroll-section-5 .scroll-story-container .scroll-story-copy, .uw-story-body #story-scroll-section-6 .scroll-story-container .scroll-story-copy, .uw-story-body #story-scroll-section-7 .scroll-story-container .scroll-story-copy {
 		width: 100%;
+		max-width: 80%;
 	}
 
 	.uw-story-body #story-scroll-section-5 .scroll-story-container .scroll-story-copy h3, .uw-story-body #story-scroll-section-6 .scroll-story-container .scroll-story-copy h3 {
