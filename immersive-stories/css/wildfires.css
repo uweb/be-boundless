@@ -45,4 +45,7 @@
 #flex-content-section-9, #flex-content-section-15, #flex-content-section-24 { margin-bottom: 0; }
 #copy-block-25 .row { padding-top: 20px; }
 #flex-content-section-12 { margin-bottom: 40px; }
-/* #copy-block-13 .row { padding: 0 0 0 25px; } */
+
+#copy-block-26 .row { display: flex; }
+#copy-block-26 .row .col-8 { padding-left: 0; }
+#copy-block-26 .row .col-4 { padding-right: 0; }
