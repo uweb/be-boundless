@@ -42,5 +42,7 @@
 #flex-content-section-17 .image img { object-position: top center; }
 .uw-story-body .heading .row { padding: 60px 40px 0; }
 .uw-story-body .flexible-content.foreground-image { margin-bottom: 80px; }
-#flex-content-section-15, #flex-content-section-24 { margin-bottom: 0; }
+#flex-content-section-9, #flex-content-section-15, #flex-content-section-24 { margin-bottom: 0; }
 #copy-block-25 .row { padding-top: 20px; }
+#flex-content-section-12 { margin-bottom: 40px; }
+#copy-block-13 .row { padding: 0 0 0 25px; }
