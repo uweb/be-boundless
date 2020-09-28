@@ -1,7 +1,7 @@
 /* fix Safari bug */
 @media not all and (min-resolution:.001dpcm) { body { overflow-x: hidden; } }
 .uw-story-header .w-50 { bottom: 0; }
-.uw-story-header.background-image.mobile-header-bottom.white.full-height:before {
+.uw-story-header.background-image.mobile-header-center.white.full-height:before {
 	content: '';
 	height: 100%;
 	width: 100%;
