@@ -285,10 +285,10 @@ h2 { color: #373a3c; }
 
 @media (max-width: 552px) {
 	.uw-story-body .carousel .carousel-item {
-		min-height: 30vh;
+		min-height: 41vh;
 	}
 
 	.uw-story-body .carousel.captions-simple .carousel-control-next, .uw-story-body .carousel.captions-simple .carousel-control-prev {
-		height: 72%
+		height: 66.5%
 	}
 }
