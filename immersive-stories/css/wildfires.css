@@ -92,7 +92,7 @@
 
 @media (max-width: 767px) {
 	.uw-body-copy .uw-story-header .w-50 { padding: 0 0 5rem 4rem !important; }
-	#flex-content-section-2 .row { padding: 60px 0 300px; }
+	#flex-content-section-2 .row { padding: 60px 20px 300px; }
 	#flex-content-section-2 { background-position: 2%; }
 	.uw-story-body .heading .row { padding: 60px 0 0; }
 	.uw-story-body .heading h2.text-white { font-size: 5vw; }
@@ -106,4 +106,5 @@
 
 @media (max-width: 575px) {
 	body.dark-mode .uw-story-body .flexible-content.foreground-image .image-caption.captions-branded { padding: 10px 10px 0 20px; }
+	#heading-25 .row { margin-left: 10px; }
 }
