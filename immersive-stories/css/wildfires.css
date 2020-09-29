@@ -99,6 +99,7 @@
 	.uw-story-body .flexible-content.foreground-image .row { padding: 0; }
 	body.dark-mode .uw-story-body .flexible-content.foreground-image .image-caption.captions-branded { padding: 10px 0 0; }
 	.uw-story-body .flexible-content.foreground-image .image-caption p { padding: 1rem 0; }
+	#copy-block-26 .row .col-md-8, #copy-block-26 .row .col-md-4 { padding: 0; }
 }
 
 @media (max-width: 575px) {
