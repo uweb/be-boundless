@@ -93,6 +93,10 @@
 	#copy-block-13 .row iframe { min-height: 333px; height: 333px; }
 }
 
-@media (max-width: 555px) {
+@media (min-width: 540px) and (max-width: 555px) {
+	#copy-block-13 .row iframe { min-height: 330px; height: 330px; }
+}
+
+@media (max-width: 539px) {
 	#copy-block-13 .row iframe { min-height: 296px; height: 296px; }
 }
