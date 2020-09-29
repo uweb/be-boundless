@@ -274,13 +274,21 @@ h2 { color: #373a3c; }
 }
 
 @media (min-width: 553px) and (max-width: 767px) {
+	.uw-story-body .carousel .carousel-item {
+		min-height: 30vh;
+	}
+
 	.uw-story-body .carousel.captions-simple .carousel-control-next, .uw-story-body .carousel.captions-simple .carousel-control-prev {
-		height: 81%
+		height: 74.5%
 	}
 }
 
 @media (max-width: 552px) {
+	.uw-story-body .carousel .carousel-item {
+		min-height: 30vh;
+	}
+
 	.uw-story-body .carousel.captions-simple .carousel-control-next, .uw-story-body .carousel.captions-simple .carousel-control-prev {
-		height: 79%
+		height: 72%
 	}
 }
