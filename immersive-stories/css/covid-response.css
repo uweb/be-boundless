@@ -273,22 +273,18 @@ h2 { color: #373a3c; }
 	}
 }
 
-@media (min-width: 553px) and (max-width: 767px) {
-	.uw-story-body .carousel .carousel-item {
-		min-height: 30vh;
+@media (max-width: 767px) {
+	.uw-story-body .carousel.captions-simple .carousel-control-next,
+	.uw-story-body .carousel.captions-simple .carousel-control-prev,
+	.uw-story-body .carousel .carousel-control-next:hover,
+	.uw-story-body .carousel .carousel-control-prev:hover {
+		background: none;
 	}
-
-	.uw-story-body .carousel.captions-simple .carousel-control-next, .uw-story-body .carousel.captions-simple .carousel-control-prev {
-		height: 74.5%
-	}
-}
-
-@media (max-width: 552px) {
-	.uw-story-body .carousel .carousel-item {
-		min-height: 41vh;
-	}
-
-	.uw-story-body .carousel.captions-simple .carousel-control-next, .uw-story-body .carousel.captions-simple .carousel-control-prev {
-		height: 66.5%
+	.uw-story-body .carousel .carousel-control-next .carousel-control-next-icon,
+	.uw-story-body .carousel .carousel-control-prev .carousel-control-prev-icon,
+	.uw-story-body .carousel .carousel-control-next:hover .carousel-control-next-icon,
+	.uw-story-body .carousel .carousel-control-prev:hover .carousel-control-prev-icon {
+		border-color: #4c2b85;
 	}
 }
+
