@@ -112,3 +112,10 @@
 	body.dark-mode .uw-story-body .flexible-content.foreground-image .image-caption.captions-branded { padding: 10px 10px 0 20px; }
 	#heading-25 .row { margin-left: 10px; }
 }
+
+/* AKA iPads */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+	#flex-content-section-8 { margin-bottom: 0; }
+	#heading-10 .row { padding-top: 0; }
+	#copy-block-26 .row .col-md-8, #copy-block-26 .row .col-md-4 { width: 100%; max-width: 100%; min-width: 100%; }
+}
