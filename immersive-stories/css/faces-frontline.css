@@ -28,4 +28,4 @@
 #copy-block-1 .row { padding: 30px 40px; max-width: 1400px; }
 #copy-block-1 p { color: white; }
 
-.uw-story-body figure.quote-block div figcaption { font-weight: 200; }
+.uw-story-body figure.quote-block div figcaption { font-weight: 200; font-size: 17px; }
