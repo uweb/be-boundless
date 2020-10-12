@@ -29,3 +29,5 @@
 #copy-block-1 p { color: white; }
 
 .uw-story-body figure.quote-block div figcaption { font-weight: 200; font-size: 17px; }
+
+body.dark-mode .uw-story-body .carousel.captions-simple .carousel-caption p, body.dark-mode .uw-story-body .flexible-content.foreground-image .image-caption.captions-simple p { font-size: 0.9em; }
