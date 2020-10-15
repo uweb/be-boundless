@@ -14,4 +14,4 @@ body.dark-mode .uw-story-body .carousel.captions-simple .carousel-caption p, bod
 	justify-content: flex-start;
 }
 
-#quote-block-4 figure.quote-block div { margin-left: 5%; }
+#quote-block-4 .mb-0 { margin-left: 5%; }
