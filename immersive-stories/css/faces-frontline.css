@@ -1,33 +1,9 @@
 /* fix Safari bug */
 @media not all and (min-resolution:.001dpcm) { body { overflow-x: hidden; } }
 
-#copy-block-1 {
-	background: #4c2b85;
-	margin: 0;
-	width: 100vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    background-size: cover;
-    background-position: 50%;
-	background-repeat: no-repeat;
-	max-width: 100vw;
-	padding: 0;
-}
-#copy-block-1 .row { padding: 30px 40px; max-width: 1400px; }
-#copy-block-1 p { color: white; }
-
 .uw-story-body figure.quote-block div figcaption { font-weight: 200; font-size: 17px; }
 
 body.dark-mode .uw-story-body .carousel.captions-simple .carousel-caption p, body.dark-mode .uw-story-body .flexible-content.foreground-image .image-caption.captions-simple p { font-size: 0.9em; }
+
+.uw-story-header h1.text-dark, .uw-story-header .text-dark p { color: black !important; }
+.udub-slant-divider span { background-color: black; }
