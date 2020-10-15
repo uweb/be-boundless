@@ -15,3 +15,7 @@ body.dark-mode .uw-story-body .carousel.captions-simple .carousel-caption p, bod
 }
 
 #quote-block-4 .mb-0 { margin-left: 5%; }
+
+#quote-block-4 div figcaption,
+#half-columns-11 div figcaption,
+#half-columns-16 div figcaption { text-align: left; }
