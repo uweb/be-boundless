@@ -19,3 +19,15 @@ body.dark-mode .uw-story-body .carousel.captions-simple .carousel-caption p, bod
 #quote-block-4 div figcaption,
 #half-columns-11 div figcaption,
 #half-columns-16 div figcaption { text-align: left; }
+
+@media (min-width: 769px) {
+	.uw-story-body .profile-boxes ul.profiles.three-columns {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media (max-width: 1024px) {
+	.uw-story-header {
+		background-position: 80% center;
+	}
+}
