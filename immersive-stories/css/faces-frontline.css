@@ -9,7 +9,7 @@ body.dark-mode .uw-story-body .carousel.captions-simple .carousel-caption p, bod
 .udub-slant-divider span { background-color: black; }
 
 #quote-block-4 {
-	background-position: right center;
+	background-position: right top;
 	min-height: 100vh;
 	justify-content: flex-start;
 }
