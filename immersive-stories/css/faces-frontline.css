@@ -33,7 +33,12 @@ body.dark-mode .uw-story-body .carousel.captions-simple .carousel-caption p, bod
 }
 
 @media (max-width: 768px) {
-	#separator-10, #separator-18, #separator-22 { display: none; }
+	#separator-10, #separator-18, #separator-22, #separator-26 { display: none; }
 	#half-columns-12, #half-columns-16, #half-columns-17, #half-columns-21 { padding-top: 0; }
-	#separator-5 .no-line, #separator-7 .no-line, #separator-13 .no-line, #separator-26 .no-line, #separator-28 .no-line { margin-top: 25px; margin-bottom: 25px; }
+	#separator-5 .no-line, #separator-7 .no-line, #separator-13 .no-line, #separator-28 .no-line {
+		margin-top: 25px !important;
+		margin-bottom: 25px !important;
+	}
+
+	#half-columns-12 .left-column, #half-columns-16 .left-column { order: 2; }
 }
