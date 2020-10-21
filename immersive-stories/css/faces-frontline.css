@@ -45,6 +45,13 @@
 @media (max-width: 1024px) {
 	.uw-story-header {
 		background-position: 95% center;
+		-webkit-box-align: end;
+		-ms-flex-align: end;
+		align-items: flex-end;
+	}
+	.uw-story-header .w-50 {
+		width: 95% !important;
+		padding: 0 0 5rem 2rem !important;
 	}
 }
 
