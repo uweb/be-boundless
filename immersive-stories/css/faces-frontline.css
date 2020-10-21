@@ -17,14 +17,15 @@
 .uw-story-header h1.text-dark, .uw-story-header .text-dark p { color: black !important; }
 .udub-slant-divider span { background-color: black; }
 
-#quote-block-8 {
+#quote-block-4, #quote-block-8 {
 	background-position: right top;
 	min-height: 100vh;
 	justify-content: flex-start;
 }
 
-#quote-block-8 .mb-0 { margin-left: 5%; }
+#quote-block-4 .mb-0, #quote-block-8 .mb-0 { margin-left: 5%; }
 
+#quote-block-4 div figcaption,
 #quote-block-8 div figcaption,
 #half-columns-13 div figcaption,
 #half-columns-18 div figcaption { text-align: left; }
