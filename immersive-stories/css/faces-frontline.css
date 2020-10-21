@@ -4,12 +4,12 @@
 .uw-story-body figure.quote-block div figcaption { font-weight: 200; font-size: 17px; }
 
 .uw-story-body .flexible-content.foreground-image .image-caption.captions-simple {
-	width: 1170px;
-	position: absolute;
-	top: 101%;
+	width: 1140px;
+	position: relative;
+	margin-top: 10px;
 	bottom: auto;
 	left: 10%;
-	padding: 0 40px 60px;
+	padding: 0 0 60px;
 }
 
 .uw-story-body .flexible-content.foreground-image .image-caption.captions-simple p { font-size: 0.9em; }
