@@ -24,6 +24,9 @@ body.dark-mode .uw-story-body .carousel.captions-simple .carousel-caption p, bod
 	.uw-story-body .profile-boxes ul.profiles.three-columns {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
+	.uw-story-body .profile-boxes ul.profiles li.profile.active-focus .profile-cover.enable, .uw-story-body .profile-boxes ul.profiles li.profile.active .profile-cover.enable, .uw-story-body .profile-boxes ul.profiles li.profile:active .profile-cover.enable, .uw-story-body .profile-boxes ul.profiles li.profile:focus .profile-cover.enable, .uw-story-body .profile-boxes ul.profiles li.profile:hover .profile-cover.enable {
+		display: none;
+	}
 }
 
 @media (max-width: 1024px) {
@@ -41,4 +44,5 @@ body.dark-mode .uw-story-body .carousel.captions-simple .carousel-caption p, bod
 	}
 
 	#half-columns-12 .left-column, #half-columns-16 .left-column { order: 2; }
+	.profile-block-caption { display: none; }
 }
