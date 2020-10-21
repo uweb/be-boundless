@@ -48,6 +48,24 @@
 }
 
 @media (max-width: 768px) {
+	#quote-block-4, #quote-block-8 {
+		align-items: flex-end;
+	}
+
+	#quote-block-4:after, #quote-block-8:after {
+		content: '';
+		border: 0 none;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background: linear-gradient(to top, rgba(0, 0, 0, 0.52) 0, rgba(0, 0, 0, 0) 90%);
+	}
+
+	#quote-block-4 .mb-0, #quote-block-8 .mb-0 { z-index: 9999999999; }
+
 	/* #separator-10, #separator-18, #separator-22, #separator-26 { display: none; }
 	#half-columns-12, #half-columns-16, #half-columns-17, #half-columns-21 { padding-top: 0; }
 	#separator-5 .no-line, #separator-7 .no-line, #separator-13 .no-line, #separator-28 .no-line {
