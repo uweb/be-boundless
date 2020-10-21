@@ -6,13 +6,16 @@
 .uw-story-body .flexible-content.foreground-image .image-caption.captions-simple {
 	width: 1140px;
 	position: relative;
-	margin-top: 10px;
+	margin: 10px auto 0;
 	bottom: auto;
 	left: 10%;
 	padding: 0 0 60px;
 }
 
-.uw-story-body .flexible-content.foreground-image .image-caption.captions-simple p { font-size: 0.9em; }
+.uw-story-body .flexible-content.foreground-image .image-caption.captions-simple p {
+	font-size: 0.9em;
+	display: inline;
+}
 
 .uw-story-header h1.text-dark, .uw-story-header .text-dark p { color: black !important; }
 .udub-slant-divider span { background-color: black; }
