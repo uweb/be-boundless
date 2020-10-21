@@ -3,22 +3,31 @@
 
 .uw-story-body figure.quote-block div figcaption { font-weight: 200; font-size: 17px; }
 
-body.dark-mode .uw-story-body .carousel.captions-simple .carousel-caption p, body.dark-mode .uw-story-body .flexible-content.foreground-image .image-caption.captions-simple p { font-size: 0.9em; }
+.uw-story-body .flexible-content.foreground-image .image-caption.captions-simple {
+	width: 1170px;
+	position: absolute;
+	top: 101%;
+	bottom: auto;
+	left: 10%;
+	padding: 0 40px 60px;
+}
+
+.uw-story-body .flexible-content.foreground-image .image-caption.captions-simple p { font-size: 0.9em; }
 
 .uw-story-header h1.text-dark, .uw-story-header .text-dark p { color: black !important; }
 .udub-slant-divider span { background-color: black; }
 
-#quote-block-4 {
+#quote-block-8 {
 	background-position: right top;
 	min-height: 100vh;
 	justify-content: flex-start;
 }
 
-#quote-block-4 .mb-0 { margin-left: 5%; }
+#quote-block-8 .mb-0 { margin-left: 5%; }
 
-#quote-block-4 div figcaption,
-#half-columns-11 div figcaption,
-#half-columns-16 div figcaption { text-align: left; }
+#quote-block-8 div figcaption,
+#half-columns-13 div figcaption,
+#half-columns-18 div figcaption { text-align: left; }
 
 @media (min-width: 769px) {
 	.uw-story-body .profile-boxes ul.profiles.three-columns {
@@ -36,13 +45,13 @@ body.dark-mode .uw-story-body .carousel.captions-simple .carousel-caption p, bod
 }
 
 @media (max-width: 768px) {
-	#separator-10, #separator-18, #separator-22, #separator-26 { display: none; }
+	/* #separator-10, #separator-18, #separator-22, #separator-26 { display: none; }
 	#half-columns-12, #half-columns-16, #half-columns-17, #half-columns-21 { padding-top: 0; }
 	#separator-5 .no-line, #separator-7 .no-line, #separator-13 .no-line, #separator-28 .no-line {
 		margin-top: 25px !important;
 		margin-bottom: 25px !important;
 	}
 
-	#half-columns-12 .left-column, #half-columns-16 .left-column { order: 2; }
+	#half-columns-12 .left-column, #half-columns-16 .left-column { order: 2; } */
 	.profile-block-caption { display: none; }
 }
