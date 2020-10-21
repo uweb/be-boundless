@@ -74,6 +74,6 @@
 		margin-bottom: 25px !important;
 	}
 
-	#half-columns-13 .left-column, #half-columns-17 .left-column { order: 2; }
+	#half-columns-13 .left-column, #half-columns-17 .left-column, #half-columns-23 .left-column { order: 2; }
 	.profile-block-caption { display: none; }
 }
