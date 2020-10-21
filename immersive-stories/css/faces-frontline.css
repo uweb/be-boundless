@@ -4,6 +4,7 @@
 .uw-story-body figure.quote-block div figcaption { font-weight: 200; font-size: 17px; }
 
 .uw-story-body .flexible-content.foreground-image .image-caption.captions-simple {
+	width: 1140px;
 	max-width: 1140px;
 	position: relative;
 	margin: 10px auto 0;
