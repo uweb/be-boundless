@@ -78,7 +78,7 @@
 		top: 0;
 		height: 100%;
 		width: 100%;
-		background: linear-gradient(to top, rgba(0, 0, 0, 0.52) 0, rgba(0, 0, 0, 0) 90%);
+		background: linear-gradient(to bottom, rgba(255,255,255, 0) 0, rgba(255,255,255, 0.9) 90%)
 	}
 
 	#quote-block-4 .mb-0, #quote-block-8 .mb-0 { z-index: 9999999999; }
@@ -90,6 +90,6 @@
 		margin-bottom: 25px !important;
 	}
 
-	#half-columns-13 .left-column, #half-columns-17 .left-column, #half-columns-23 .left-column { order: 2; }
+	#half-columns-13 .left-column, #half-columns-17 .left-column { order: 2; }
 	.profile-block-caption { display: none; }
 }
