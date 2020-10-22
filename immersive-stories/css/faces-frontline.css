@@ -64,6 +64,10 @@
 	line-height: 0;
 }
 
+.uw-story-body .uw-story-columns .row .left-column .quote-block.quote-simple .text-right blockquote:before {
+	text-align: left;
+}
+
 @media (min-width: 769px) {
 	.uw-story-body .profile-boxes ul.profiles.three-columns {
 		grid-template-columns: 1fr 1fr 1fr;
