@@ -68,6 +68,10 @@
 	text-align: left;
 }
 
+.uw-story-body .giving-widget .col-md-10 {
+	padding: 25% 90px 20%;
+}
+
 @media (min-width: 769px) {
 	.uw-story-body .profile-boxes ul.profiles.three-columns {
 		grid-template-columns: 1fr 1fr 1fr;
