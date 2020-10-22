@@ -33,6 +33,37 @@
 #half-columns-13 div figcaption,
 #half-columns-18 div figcaption { text-align: left; }
 
+#half-columns-17 blockquote span,
+#half-columns-17 blockquote em {
+	display: block;
+}
+
+#half-columns-17 blockquote em {
+	margin-top: 40px;
+}
+
+#half-columns-17 blockquote:before, #half-columns-17 blockquote:after { display: none; }
+
+#half-columns-17 blockquote span:before {
+	content: open-quote;
+	display: block;
+	position: relative;
+	bottom: -2.2rem;
+	left: 0;
+	font-family: Encode Sans Normal,sans-serif;
+	font-size: 3rem;
+}
+
+#half-columns-17 blockquote span:after {
+	content: close-quote;
+	position: relative;
+	bottom: -35px;
+	left: -15px;
+	font-family: Encode Sans Normal,sans-serif;
+	font-size: 3rem;
+	line-height: 0;
+}
+
 @media (min-width: 769px) {
 	.uw-story-body .profile-boxes ul.profiles.three-columns {
 		grid-template-columns: 1fr 1fr 1fr;
