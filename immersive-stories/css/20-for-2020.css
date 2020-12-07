@@ -1,0 +1,10 @@
+.single-uw_stories .uw-story-header {
+	background-position: center right;
+}
+
+#flex-content-section-6 .row .image img,
+#flex-content-section-25 .row .image img {
+	object-position: center right;
+}
+
+#copy-block-2 .row p { font-size: 19px; }
