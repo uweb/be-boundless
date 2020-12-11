@@ -18,3 +18,5 @@
 
 .video-caption p { font-style: italic; }
 
+#flex-content-section-9 .image-caption span { display: block; }
+#flex-content-section-9 .image-caption span:first-of-type { margin-bottom: 20px; }
