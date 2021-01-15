@@ -27,7 +27,7 @@ global $scripts;
 							<script type="text/javascript" src="https://subscribe.gifts.washington.edu/Scripts/submanbuilder/submanbuilder.js" id="uwSubscriptionManager"></script>
 							<script type="text/javascript">
 								SUBMANBUILDER.makeIframe({
-									subscriptionID: 205,
+									subscriptionID: 1444,
 									fromName: "University of Washington", //OPTIONAL: From Name of the confirmation email
 									fromEmail: "uwcmpgn@uw.edu",
 									showPlaceHolders: true,
