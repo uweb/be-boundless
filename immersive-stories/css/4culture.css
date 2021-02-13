@@ -75,10 +75,8 @@
 #half-columns-5 .row {
 	max-width: 1110px;
 	margin: 0 auto;
-	padding: 0 40px 55px;
+	padding: 0 40px 40px 55px;
 }
-
-#half-columns-5 .row .left-column { padding-left: 15px;}
 
 #half-columns-5 blockquote {
 	font-family: "Uni Sans", sans-serif;
@@ -102,3 +100,40 @@
 }
 
 #half-columns-5 blockquote:before, #half-columns-5 blockquote:after { display: none; }
+
+#copy-block-8, #copy-block-9, #copy-block-10, .published-date {
+	background-color: #e9eff9;
+	width: 100vw;
+	max-width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	background-size: cover;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	overflow: hidden;
+}
+
+#copy-block-8 .row, #copy-block-9 .row, #copy-block-10 .row, .published-date .row {
+	max-width: 1110px;
+	margin: 0 auto;
+}
+
+#copy-block-8 .row { padding: 60px 40px 40px 55px; }
+#copy-block-9 .row { padding: 0; }
+#copy-block-10 .row { padding: 0 40px 40px 55px; }
+
+#copy-block-9 img {
+	border-radius: 50%;
+}
+
+#copy-block-9 p {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+}
