@@ -1,0 +1,27 @@
+@media (max-width: 767px) {
+	.uw-story-header.background-image.header-img-v-center.header-img-right {
+		background-position: 75% bottom;
+	}
+	#flex-content-section-2 {
+		background-position: 0;
+		margin-bottom: 100%;
+	}
+
+	#flex-content-section-2 .copy {
+		position: relative;
+		top: 100%;
+	}
+
+	#flex-content-section-2 .copy .row div { margin: 0 20px !important; }
+	#flex-content-section-2 .copy div, #flex-content-section-2 .copy p { color: #3D3D3D; text-shadow: 0 0; font-size: 18px; }
+
+	#copy-block-3 .row { padding-top: 0; }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.uw-story-header.background-image.header-img-v-center.header-img-right {
+		background-position: 50% bottom;
+	}
+}
+
