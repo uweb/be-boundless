@@ -28,6 +28,8 @@
 		margin: 0 20px !important;
 	}
 
+	#flex-content-section-4 .copy .row div { width: 80%; }
+
 	#flex-content-section-2 .copy div, #flex-content-section-2 .copy blockquote p,
 	#flex-content-section-4 .copy div, #flex-content-section-4 .copy blockquote p,
 	#flex-content-section-6 .copy div, #flex-content-section-6 .copy blockquote p {
@@ -36,7 +38,13 @@
 		font-size: 18px;
 	}
 
-	#copy-block-3 .row, #copy-block-5 .row { padding: 0; }
+	#flex-content-section-2 .copy blockquote p strong,
+	#flex-content-section-4 .copy blockquote p strong,
+	#flex-content-section-6 .copy blockquote p strong {
+		font-size: 20px !important;
+	}
+
+	/* #copy-block-3 .row, #copy-block-5 .row { padding: 0; } */
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
