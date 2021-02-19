@@ -1,13 +1,47 @@
 .uw-story-body .copy h2 {
-	font-family: "Encode Sans Normal";
+	font-family: 'Encode Sans Normal';
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #373A3C;
 }
 
-#separator-4 {
+.uw-story-header.background-image.header-img-top.header-img-h-center {
+	background-position: center 10%;
+}
+
+.uw-story-header .w-50 {
+	background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/MASTHEAD_STAGE.png) no-repeat;
+	background-size: contain;
+	height: 78%;
+	padding: 10rem 0 0 6rem;
+}
+
+.uw-story-header h1.text-primary {
+	width: 60%;
+	font-size: 3vw;
+	font-family: 'Encode Sans Normal', sans-serif;
+}
+
+.uw-story-header .w-50 div p {
+	width: 65%;
+	font-weight: 600;
+}
+
+#copy-block-1 {
+	background-color: black;
+	margin-top: 100px;
+}
+
+#copy-block-1 p {
+	font-family: 'Encode Sans Normal', sans-serif;
+	font-size: 3rem;
+	color: white;
+
+}
+
+#separator-5 {
 	height: 100px;
-	background-color: #fef4f6;
+	background-color: #fdf3f5;
 	width: 100vw;
 	max-width: 100vw;
 	position: relative;
@@ -24,7 +58,7 @@
 	overflow: hidden;
 }
 
-#separator-4 .no-line {
+#separator-5 .no-line {
 	display: block;
 	position: relative;
 	height: 40px;
@@ -33,19 +67,19 @@
 	width: 100%;
 }
 
-#separator-4 .no-line:before {
+#separator-5 .no-line:before {
 	content: "";
 	display: block;
 	position: absolute;
 	border-radius: 100%;
 	width: 100%;
 	height: 300px;
-	background-color: #fef4f6;
+	background-color: #fdf3f5;
 	left: -25%;
 	top: 20px;
 }
 
-#separator-4 .no-line:after {
+#separator-5 .no-line:after {
 	content: "";
 	display: block;
 	position: absolute;
@@ -57,8 +91,8 @@
 	top: -240px;
 }
 
-#half-columns-5 {
-	background-color: #fef4f6;
+#half-columns-6 {
+	background-color: #fdf3f5;
 	width: 100vw;
 	max-width: 100vw;
 	position: relative;
@@ -72,20 +106,20 @@
 	padding: 0;
 }
 
-#half-columns-5 .row {
+#half-columns-6 .row {
 	max-width: 1110px;
 	margin: 0 auto;
 	padding: 0 40px 40px 55px;
 }
 
-#half-columns-5 blockquote {
+#half-columns-6 blockquote {
 	font-family: "Uni Sans", sans-serif;
 	font-weight: 100;
 	text-transform: uppercase;
 	font-size: 3rem;
 }
 
-#half-columns-5 figcaption {
+#half-columns-6 figcaption {
 	font-family: "Uni Sans", sans-serif;
 	font-weight: 100;
 	text-transform: uppercase;
@@ -94,15 +128,15 @@
 	color: #373A3C;
 }
 
-#half-columns-5 figcaption span {
+#half-columns-6 figcaption span {
 	font-size: 17px;
 	font-style: normal;
 }
 
-#half-columns-5 blockquote:before, #half-columns-5 blockquote:after { display: none; }
+#half-columns-6 blockquote:before, #half-columns-6 blockquote:after { display: none; }
 
-#copy-block-8, #copy-block-9, #copy-block-10, .published-date {
-	background-color: #e9eff9;
+#copy-block-9, #copy-block-10, #copy-block-11, .published-date {
+	background-color: rgba(62, 111, 198, 0.12);
 	width: 100vw;
 	max-width: 100vw;
 	position: relative;
@@ -119,21 +153,103 @@
 	overflow: hidden;
 }
 
-#copy-block-8 .row, #copy-block-9 .row, #copy-block-10 .row, .published-date .row {
+#copy-block-9 .row, #copy-block-11 .row, .published-date .row {
 	max-width: 1110px;
 	margin: 0 auto;
 }
 
-#copy-block-8 .row { padding: 60px 40px 40px 55px; }
-#copy-block-9 .row { padding: 0; }
-#copy-block-10 .row { padding: 0 40px 40px 55px; }
+.uw-story-body .published-date .row {
+	padding: 0 40px 40px 55px;
+}
 
-#copy-block-9 img {
+#copy-block-10 .row {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+#copy-block-9 .row { padding: 60px 40px 40px 55px; }
+#copy-block-10 .row { padding: 0; }
+#copy-block-11 .row { padding: 0 40px 40px 55px; }
+
+#copy-block-10 img {
 	border-radius: 50%;
 }
 
-#copy-block-9 p {
-	display: flex;
-	flex-flow: row;
+#copy-block-10 p {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+	justify-items: center;
 	justify-content: space-between;
+}
+
+#lightbox-8 .slide-4 img,
+#lightbox-8 .slide-5 img,
+#lightbox-8 .slide-6 img,
+#lightbox-8 .slide-11 img,
+#lightbox-8 .slide-12 img,
+#lightbox-8 .slide-15 img {
+	height: 80vh !important;
+	width: auto !important;
+	margin: 0 auto;
+}
+
+#copy-block-3 .row {
+	max-width: 80%;
+	padding-top: 0;
+}
+
+#copy-block-2 { padding: 0; }
+#copy-block-2:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: -150px;
+	background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/PORT_2-test.png) no-repeat;
+	width: 263px;
+	height: 500px;
+	z-index: 1;
+}
+
+#copy-block-2:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 140px;
+	background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/PORT_1-sm.png) no-repeat;
+	width: 317px;
+	height: 488px;
+	z-index: 1;
+}
+
+.cutout-name, .cutout-title {
+	font-family: 'Encode Sans Light', sans-serif;
+	text-transform: uppercase;
+}
+
+.cutout-name {
+	font-size: 24px;
+}
+
+.cutout-title {
+	font-size: 14px;
+}
+
+.cutout-name-title { position: absolute; }
+.joshua-heim {
+	top: 0;
+	left: 0;
+}
+
+.brian-carter {
+	top: 400px;
+	right: 0;
+}
+
+.cutout-name-title.cutout-name-title-right {
+	transform: matrix(0.75, -0.66, 0.66, 0.75, 0, 0);
+}
+
+.cutout-name-title.cutout-name-title-left {
+	transform: matrix(0.87, 0.5, -0.5, 0.87, 0, 0);
 }
