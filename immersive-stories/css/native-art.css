@@ -2,12 +2,15 @@
 	.uw-story-header.background-image.header-img-v-center.header-img-right {
 		background-position: 75% bottom;
 	}
-	#flex-content-section-2 {
+
+	#flex-content-section-2,
+	#flex-content-section-4 {
 		background-position: 0;
 		margin-bottom: 100%;
 	}
 
-	#flex-content-section-2 .copy {
+	#flex-content-section-2 .copy,
+	#flex-content-section-4 .copy {
 		position: relative;
 		top: 100%;
 	}
