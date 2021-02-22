@@ -11,7 +11,8 @@
 }
 
 .uw-story-header .w-50 {
-	background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/MASTHEAD_STAGE.png) no-repeat;
+	/* background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/MASTHEAD_STAGE.png) no-repeat; */
+	background: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2021/02/MASTHEAD_STAGE.png) no-repeat;
 	background-size: contain;
 	height: 78%;
 	padding: 10rem 0 0 6rem;
@@ -222,7 +223,8 @@
 	position: absolute;
 	left: 0;
 	top: -150px;
-	background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/PORT_2.png) no-repeat;
+	/* background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/PORT_2.png) no-repeat; */
+	background: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2021/02/PORT_2.png) no-repeat;
 	width: 263px;
 	height: 500px;
 	background-size: contain;
@@ -234,7 +236,8 @@
 	position: absolute;
 	right: 0;
 	top: 140px;
-	background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/PORT_1.png) no-repeat;
+	/* background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/PORT_1.png) no-repeat; */
+	background: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2021/02/PORT_1.png) no-repeat;
 	width: 453px;
 	height: 700px;
 	background-size: contain;
@@ -246,7 +249,8 @@
 	position: absolute;
 	left: 0;
 	top: -430px;
-	background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/PORT_3.png) no-repeat;
+	/* background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/PORT_3.png) no-repeat; */
+	background: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2021/02/PORT_3.png) no-repeat;
 	width: 261px;
 	height: 534px;
 	background-size: contain;
@@ -299,7 +303,8 @@
 	position: absolute;
 	left: 0;
 	top: -250px;
-	background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/SIDE_1-sm.png) no-repeat;
+	/* background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/SIDE_1.png) no-repeat; */
+	background: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2021/02/SIDE_1.png) no-repeat;
 	width: 200px;
 	height: 1049px;
 	background-size: contain;
@@ -311,7 +316,8 @@
 	position: absolute;
 	right: 0;
 	top: -500px;
-	background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/SIDE_2-sm.png) no-repeat;
+	/* background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/SIDE_2.png) no-repeat; */
+	background: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2021/02/SIDE_2.png) no-repeat;
 	width: 221px;
 	height: 1140px;
 	background-size: contain;
@@ -323,7 +329,8 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/SIDE_3.png) no-repeat;
+	/* background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/SIDE_3.png) no-repeat; */
+	background: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2021/02/SIDE_3.png) no-repeat;
 	width: 207px;
 	height: 1000px;
 	background-size: contain;
@@ -335,7 +342,8 @@
 	position: absolute;
 	right: 0;
 	top: 0;
-	background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/SIDE_4.png) no-repeat;
+	/* background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/SIDE_4.png) no-repeat; */
+	background: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2021/02/SIDE_4.png) no-repeat;
 	width: 133px;
 	height: 800px;
 	background-size: contain;
@@ -347,7 +355,8 @@
 	position: absolute;
 	left: 0;
 	top: -200px;
-	background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/SIDE_5.png) no-repeat;
+	/* background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/SIDE_5.png) no-repeat; */
+	background: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2021/02/SIDE_5.png) no-repeat;
 	width: 191px;
 	height: 1000px;
 	background-size: contain;
@@ -359,7 +368,8 @@
 	position: absolute;
 	right: 0;
 	top: -500px;
-	background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/SIDE_6.png) no-repeat;
+	/* background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/SIDE_6.png) no-repeat; */
+	background: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2021/02/SIDE_6.png) no-repeat;
 	width: 204px;
 	height: 1004px;
 	background-size: contain;
