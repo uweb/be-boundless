@@ -286,7 +286,49 @@
 	}
 }
 
-@media (min-width: 1024px) and (max-width: 1629px) {
+/* iPad Pro only */
+@media only screen
+and (min-device-width: 1024px)
+and (max-device-width: 1024px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.uw-story-body #copy-block-2:before {
+		top: 0;
+		width: 180px;
+		height: 342px;
+	}
+
+	.uw-story-body #copy-block-2 .joshua-heim { top: 380px; left: 10px; }
+
+	.uw-story-body #copy-block-2:after {
+		width: 200px;
+		height: 430px;
+	}
+
+	.uw-story-body #copy-block-2 .brian-carter { top: 460px; right: 10px; }
+
+	.uw-story-body #copy-block-4:before {
+		width: 200px;
+		height: 408px;
+		top: -600px;
+	}
+
+	.uw-story-body #copy-block-4 .chieko-phillips { top: -150px; left: 10px; }
+}
+
+/* iPad only */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.uw-story-header.mobile-header-center.primary.background-image:before {
+		display: none;
+	}
+	.uw-main .uw-story-header .w-50 { padding: 2rem 0 7rem 2rem !important; }
+}
+
+@media (min-width: 768px) and (max-width: 1629px) {
 	#copy-block-2:before {
 		width: 240px;
 		height: 456px;
@@ -327,6 +369,40 @@
 		margin-right: auto;
 		width: 75%;
 	}
+}
+
+@media (min-width: 768px) and (max-width: 929px) {
+	#copy-block-1 p { font-size: 2rem; }
+	#copy-block-1 .row { padding: 40px 20px; }
+	#copy-block-2 .row { padding: 60px 0 0 0; }
+
+	.uw-story-body #copy-block-2:before {
+		top: 0;
+		width: 180px;
+		height: 342px;
+	}
+
+	.uw-story-body #copy-block-2 .joshua-heim { top: 380px; left: 10px; }
+
+	.uw-story-body #copy-block-2:after {
+		width: 200px;
+		height: 430px;
+	}
+
+	.uw-story-body #copy-block-2 .brian-carter { top: 460px; right: 10px; }
+
+	.uw-story-body #copy-block-4:before {
+		width: 200px;
+		height: 408px;
+		top: -1030px;
+	}
+
+	.uw-story-body .chieko-phillips { top: -600px; left: 10px; }
+
+	.uw-story-body #copy-block-6:before { top: -290px; width: 180px; height: 944px; }
+	.uw-story-body #copy-block-6:after { width: 200px; height: 1031px; }
+	.uw-story-body #copy-block-14:before { width: 170px; height: 890px; }
+	.uw-story-body #copy-block-14:after { width: 180px; height: 885px; }
 }
 
 #copy-block-2:before {
@@ -399,7 +475,7 @@
 	left: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	#copy-block-1 p { font-size: 2rem; }
 	#copy-block-1 .row { padding: 40px 20px; }
 	#copy-block-2 .row { padding: 60px 0 0 0; }
