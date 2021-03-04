@@ -663,8 +663,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	width: 1328px;
 	height: 483px;
 	background-size: contain;
-	padding: 0 40px 0 60px;
+	padding: 20px 40px 0 60px;
 }
+
+#copy-block-16 p { font-size: 15px; }
 
 @media (min-width: 992px) and (max-width: 1359px) {
 	#copy-block-16 .row {
