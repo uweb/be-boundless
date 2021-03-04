@@ -184,7 +184,7 @@
 #half-columns-8 blockquote:before,
 #half-columns-8 blockquote:after { display: none; }
 
-#copy-block-12, #copy-block-13, #copy-block-15, .published-date {
+#copy-block-12, #copy-block-13, #copy-block-15, #copy-block-16, #copy-block-17, .published-date {
 	background-color: #e8edf8;
 	width: 100vw;
 	max-width: 100vw;
@@ -202,7 +202,7 @@
 	overflow: hidden;
 }
 
-#copy-block-12 .row, #copy-block-15 .row, .published-date .row {
+#copy-block-12 .row, #copy-block-15 .row, #copy-block-16 .row, #copy-block-17 .row, .published-date .row {
 	max-width: 1110px;
 	margin: 0 auto;
 }
@@ -415,7 +415,9 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	#copy-block-5 .row,
 	#half-columns-8 .row,
 	#copy-block-12 .row,
-	#copy-block-15 .row {
+	#copy-block-15 .row,
+	#copy-block-16 .row,
+	#copy-block-17 .row {
 		margin-left: auto;
 		margin-right: auto;
 		width: 65%;
@@ -538,7 +540,9 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	#half-columns-8 .row,
 	#copy-block-12 .row,
 	#copy-block-13 .row,
-	#copy-block-15 .row {
+	#copy-block-15 .row,
+	#copy-block-16 .row,
+	#copy-block-17 .row {
 		width: 100% !important;
 		max-width: 100% !important;
 	}
@@ -652,4 +656,22 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	height: 1004px;
 	background-size: contain;
 	z-index: 1;
+}
+
+#copy-block-16 .row {
+	/* background: url(#) no-repeat; */
+	background: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2021/03/stat-bio-background.png) no-repeat;
+	width: 1328px;
+	height: 483px;
+	background-size: contain;
+	display: grid;
+	align-items: center;
+	padding: 0 40px 0 20px;
+}
+
+#copy-block-16 p {
+	font-family: 'Encode Sans Normal', sans-serif;
+	font-size: 3rem;
+	color: white;
+	width: 95%;
 }
