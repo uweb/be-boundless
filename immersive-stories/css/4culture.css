@@ -698,7 +698,13 @@ and (-webkit-min-device-pixel-ratio: 2) {
 }
 
 @media (max-width: 900px) {
-	#copy-block-16 .row { background: none; background-color: black; }
+	#copy-block-16 .row {
+		background: none;
+		background-color: black !important;
+		width: 100%;
+		height: auto;
+		padding: 20px 40px 40px;
+	}
 }
 
 #copy-block-17 .row { padding-top: 0; }
