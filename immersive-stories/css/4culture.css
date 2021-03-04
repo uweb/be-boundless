@@ -416,8 +416,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	#half-columns-8 .row,
 	#copy-block-12 .row,
 	#copy-block-15 .row,
-	#copy-block-16 .row,
-	#copy-block-17 .row {
+	#copy-block-16 .row {
 		margin-left: auto;
 		margin-right: auto;
 		width: 65%;
@@ -687,16 +686,18 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	}
 }
 
-@media (min-width: 768px) and (max-width: 929px) {
+@media (min-width: 901px) and (max-width: 929px) {
 	#copy-block-16 .row {
 		position: relative;
 		width: 100%;
 		height: 350px;
 		align-items: start;
 	}
+
+	#copy-block-16 h3 { margin-top: 10px; }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
 	#copy-block-16 .row { background: none; background-color: black; }
 }
 
