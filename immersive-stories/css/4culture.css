@@ -664,14 +664,5 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	width: 1328px;
 	height: 483px;
 	background-size: contain;
-	display: grid;
-	align-items: center;
-	padding: 0 40px 0 20px;
-}
-
-#copy-block-16 p {
-	font-family: 'Encode Sans Normal', sans-serif;
-	font-size: 3rem;
-	color: white;
-	width: 95%;
+	padding: 60px 40px 0 60px;
 }
