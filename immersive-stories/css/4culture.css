@@ -514,17 +514,17 @@ and (-webkit-min-device-pixel-ratio: 2) {
 .cutout-name-title { position: absolute; }
 .joshua-heim {
 	top: 380px;
-	left: 30px;
+	left: 10px;
 }
 
 .brian-carter {
 	top: 760px;
-	right: 30px;
+	right: 10px;
 }
 
 .chieko-phillips {
 	top: 120px;
-	left: 30px;
+	left: 10px;
 }
 
 @media (max-width: 767px) {
@@ -701,6 +701,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 }
 
 @media (max-width: 900px) {
+	#copy-block-16 { background-color: black !important; }
 	#copy-block-16 .row {
 		background: none;
 		background-color: black !important;
