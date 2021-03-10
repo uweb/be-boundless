@@ -1,3 +1,5 @@
+#scrollbar { border-bottom: 1px solid #707070; }
+
 .uw-story-body .copy h2 {
 	font-family: 'Encode Sans Normal';
 	font-weight: bold;
@@ -308,14 +310,14 @@ and (-webkit-min-device-pixel-ratio: 2) {
 		height: 342px;
 	}
 
-	.uw-story-body #copy-block-2 .joshua-heim { top: 380px; left: 10px; }
+	.uw-story-body #copy-block-2 .joshua-heim { top: 380px; left: 0; }
 
 	.uw-story-body #copy-block-2:after {
 		width: 200px;
 		height: 430px;
 	}
 
-	.uw-story-body #copy-block-2 .brian-carter { top: 460px; right: 10px; }
+	.uw-story-body #copy-block-2 .brian-carter { top: 460px; right: 0; }
 
 	.uw-story-body #copy-block-4:before {
 		width: 200px;
@@ -323,7 +325,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
 		top: -600px;
 	}
 
-	.uw-story-body #copy-block-4 .chieko-phillips { top: -150px; left: 10px; }
+	.uw-story-body #copy-block-4 .chieko-phillips { top: -150px; left: 0; }
+	#copy-block-16 { background-color: black !important; }
 }
 
 /* iPad only */
