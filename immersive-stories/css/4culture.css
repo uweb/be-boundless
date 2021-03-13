@@ -49,8 +49,7 @@
 
 @media (min-width: 500px) {
 	.uw-story-header .w-50 {
-		/* background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/MASTHEAD_STAGE.png) no-repeat; */
-		background: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2021/02/MASTHEAD_STAGE.png) no-repeat;
+		background: url(https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/85/2021/03/12160022/MASTHEAD_STAGE.png) no-repeat;
 		background-size: contain;
 		height: 78%;
 	}
@@ -69,8 +68,7 @@
 
 #copy-block-1 {
 	margin-top: 100px;
-	/* background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/CALLOUT_W_BLOB.png) no-repeat; */
-	background: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2021/02/CALLOUT_W_BLOB.png) no-repeat;
+	background: url(https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/85/2021/03/12161408/CALLOUT_W_BLOB.png) no-repeat;
 	width: 1110px;
 	height: 451px;
 	background-size: contain;
@@ -471,8 +469,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	position: absolute;
 	left: 0;
 	top: -150px;
-	/* background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/PORT_2.png) no-repeat; */
-	background: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2021/02/PORT_2.png) no-repeat;
+	background: url(https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/85/2021/03/12160028/PORT_2.png) no-repeat;
 	background-size: contain;
 	z-index: 1;
 }
@@ -482,8 +479,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	position: absolute;
 	right: 0;
 	top: 140px;
-	/* background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/PORT_1.png) no-repeat; */
-	background: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2021/02/PORT_1.png) no-repeat;
+	background: url(https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/85/2021/03/12160025/PORT_1.png) no-repeat;
 	background-size: contain;
 	z-index: 1;
 }
@@ -493,8 +489,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	position: absolute;
 	left: 0;
 	top: -430px;
-	/* background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/PORT_3.png) no-repeat; */
-	background: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2021/02/PORT_3.png) no-repeat;
+	background: url(https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/85/2021/03/12160030/PORT_3.png) no-repeat;
 	background-size: contain;
 	z-index: 1;
 }
@@ -587,8 +582,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	position: absolute;
 	left: 0;
 	top: -250px;
-	/* background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/SIDE_1.png) no-repeat; */
-	background: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2021/02/SIDE_1.png) no-repeat;
+	background: url(https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/85/2021/03/12160033/SIDE_1.png) no-repeat;
 	width: 200px;
 	height: 1049px;
 	background-size: contain;
@@ -600,8 +594,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	position: absolute;
 	right: 0;
 	top: -500px;
-	/* background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/SIDE_2.png) no-repeat; */
-	background: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2021/02/SIDE_2.png) no-repeat;
+	background: url(https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/85/2021/03/12160036/SIDE_2.png) no-repeat;
 	width: 221px;
 	height: 1140px;
 	background-size: contain;
@@ -613,8 +606,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	position: absolute;
 	left: 0;
 	top: 0;
-	/* background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/SIDE_3.png) no-repeat; */
-	background: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2021/02/SIDE_3.png) no-repeat;
+	background: url(https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/85/2021/03/12160039/SIDE_3.png) no-repeat;
 	width: 207px;
 	height: 1000px;
 	background-size: contain;
@@ -626,8 +618,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	position: absolute;
 	right: 0;
 	top: 0;
-	/* background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/SIDE_4.png) no-repeat; */
-	background: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2021/02/SIDE_4.png) no-repeat;
+	background: url(https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/85/2021/03/12160041/SIDE_4.png) no-repeat;
 	width: 133px;
 	height: 800px;
 	background-size: contain;
@@ -639,8 +630,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	position: absolute;
 	left: 0;
 	top: -200px;
-	/* background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/SIDE_5.png) no-repeat; */
-	background: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2021/02/SIDE_5.png) no-repeat;
+	background: url(https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/85/2021/03/12160043/SIDE_5.png) no-repeat;
 	width: 191px;
 	height: 1000px;
 	background-size: contain;
@@ -652,8 +642,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	position: absolute;
 	right: 0;
 	top: -500px;
-	/* background: url(http://impactful-story-plugin.local/wp-content/uploads/2021/02/SIDE_6.png) no-repeat; */
-	background: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2021/02/SIDE_6.png) no-repeat;
+	background: url(https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/85/2021/03/12160045/SIDE_6.png) no-repeat;
 	width: 204px;
 	height: 1004px;
 	background-size: contain;
@@ -661,8 +650,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 }
 
 #copy-block-16 .row {
-	/* background: url(#) no-repeat; */
-	background: url(http://cmsdev.uw.edu/cms/boundless/wp-content/uploads/sites/2/2021/03/stat-bio-background.png) no-repeat;
+	background: url(https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/85/2021/03/12160047/stat-bio-background.png) no-repeat;
 	width: 1328px;
 	height: 483px;
 	background-size: contain;
