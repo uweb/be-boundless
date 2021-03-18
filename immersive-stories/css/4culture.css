@@ -725,3 +725,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 }
 
 #flex-content-section-9.foreground-video .embed-container { overflow: visible; }
+
+.uw-story-body .profile-boxes .lightbox .modal-content .modal-body .carousel .carousel-caption {
+	position: relative;
+}
