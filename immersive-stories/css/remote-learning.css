@@ -1,3 +1,9 @@
+.uw-story-body .flexible-content.foreground-image .row { position: relative; }
+
 .uw-story-body .flexible-content.foreground-image .image-caption.captions-branded {
 	width: auto;
+	position: absolute;
+	left: 40px;
 }
+
+#copy-block-3 .row { padding-top: 10px; }
