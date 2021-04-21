@@ -1,10 +1,19 @@
 .uw-story-body .flexible-content.foreground-image .row { position: relative; }
 
-.uw-story-body .flexible-content.foreground-image .image-caption.captions-branded {
-	width: auto;
-	position: absolute;
-	left: 40px;
+@media (min-width: 768px) {
+	.uw-story-body .flexible-content.foreground-image .image-caption.captions-branded {
+		width: auto;
+		position: absolute;
+		left: 40px;
+	}
 }
 
-#copy-block-3 .row { padding-top: 10px; }
+#copy-block-3 .row,
+#copy-block-5 .row,
+#copy-block-7 .row,
+#copy-block-9 .row,
+#copy-block-11 .row,
+#copy-block-13 .row,
+#copy-block-15 .row,
+#copy-block-17 .row { padding-top: 10px; }
 
