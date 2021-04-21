@@ -8,6 +8,14 @@
 	}
 }
 
+@media (max-width: 767px) {
+	.uw-story-body .flexible-content.foreground-image .image-caption.captions-branded {
+		padding: 0;
+	}
+	.uw-story-body .flexible-content.foreground-image .row { padding: 0 20px; }
+	#copy-block-13 .row div { float: none !important; margin-left: 0 !important; }
+}
+
 #copy-block-3 .row,
 #copy-block-5 .row,
 #copy-block-7 .row,
