@@ -6,6 +6,11 @@
 		position: absolute;
 		left: 40px;
 	}
+
+	#copy-block-9 .row,
+	#copy-block-11 .row {
+		padding-bottom: 0;
+	}
 }
 
 @media (max-width: 767px) {
@@ -24,4 +29,3 @@
 #copy-block-13 .row,
 #copy-block-15 .row,
 #copy-block-17 .row { padding-top: 10px; }
-
