@@ -19,6 +19,18 @@
 	}
 	.uw-story-body .flexible-content.foreground-image .row { padding: 0 20px; }
 	#copy-block-13 .row div { float: none !important; margin-left: 0 !important; }
+
+
+	#copy-block-15 .row div div {
+		float: none;
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	#copy-block-15 .row div div:last-of-type {
+		margin-bottom: 40px;
+	}
 }
 
 #copy-block-3 .row,
