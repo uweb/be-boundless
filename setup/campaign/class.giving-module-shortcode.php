@@ -1,7 +1,7 @@
-<?php 
+<?php
 
 /*
- *  
+ *
  */
 
 class Campaign_Giving
@@ -20,7 +20,7 @@ class Campaign_Giving
         //$classes = array('campaign-intro');
 
         $attributes = shortcode_atts( array(
-            'image' => null, 
+            'image' => null,
             'align' => 'left'
         ), $atts );
 
@@ -31,7 +31,7 @@ class Campaign_Giving
         $alignClass = 'align-' . $attributes['align'];
 
         $givingWidget = '<div class="donate-widget">' .
-                          '<form action="<?php echo get_permalink( get_page_by_path(\'make-a-gift\') ); ?>" id="make-a-gift-widget">' .
+                          '<form action="#" id="make-a-gift-widget">' .
                           '<input name="page" type="hidden" value="make" />' .
                           '<input id="recurring" name="RecurringGift" type="hidden" value="yes" />' .
                           '<input id="frequency" name="RecurringFrequency" type="hidden" value="monthly" />' .
