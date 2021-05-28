@@ -152,7 +152,7 @@
 .uw-story-body .profile-boxes ul.profiles li.profile .profile-cover.enable .modal-btn { 
 	font-size: 18px; 
 	padding: 10px 0; 
-	margin-top: auto;
+	margin-top: auto !important;
 	place-self: flex-end;
 }
 .uw-story-body .profile-boxes ul.profiles li.profile .profile-cover.enable .modal-btn span { 
