@@ -67,7 +67,7 @@
 	background-size: cover;
 	background-position: center center;
 	padding: 0 5% 5%;
-	justify-content: center;
+	justify-content: flex-end;
 }
 
 .uw-story-body .profile-boxes ul.profiles li.profile:hover .profile-cover.enable h3, .uw-story-body .profile-boxes ul.profiles li.profile:active .profile-cover.enable h3, .uw-story-body .profile-boxes ul.profiles li.profile:focus .profile-cover.enable h3, .uw-story-body .profile-boxes ul.profiles li.profile.active-focus .profile-cover.enable h3, .uw-story-body .profile-boxes ul.profiles li.profile.active .profile-cover.enable h3 {
@@ -146,10 +146,19 @@
 	color: white;
 	text-shadow: 0 0 3px rgba(37,37,37,0.65);
 	text-align: center;
+	margin-top: auto;
 }
 
-.uw-story-body .profile-boxes ul.profiles li.profile .profile-cover.enable .modal-btn { font-size: 18px; padding: 10px 0; }
-.uw-story-body .profile-boxes ul.profiles li.profile .profile-cover.enable .modal-btn span { padding: 6px 14px; border: 2px solid #4b2e83; }
+.uw-story-body .profile-boxes ul.profiles li.profile .profile-cover.enable .modal-btn { 
+	font-size: 18px; 
+	padding: 10px 0; 
+	margin-top: auto;
+	place-self: flex-end;
+}
+.uw-story-body .profile-boxes ul.profiles li.profile .profile-cover.enable .modal-btn span { 
+	padding: 6px 14px; 
+	border: 2px solid #4b2e83; 
+}
 .uw-story-body .profile-boxes ul.profiles li.profile .profile-cover.enable .modal-btn:hover span, .uw-story-body .profile-boxes ul.profiles li.profile .profile-cover.enable .modal-btn:active span, .uw-story-body .profile-boxes ul.profiles li.profile .profile-cover.enable .modal-btn:focus span {
 	border: 2px solid #4b2e83;
 	background: none;
