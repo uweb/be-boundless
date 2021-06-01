@@ -63,7 +63,7 @@ $(function(){
     	$slideWidth = (!$isMobile ? $storyWidth*3 : $storyWidth*2) + 90;
     	$currentSlide = 1;
 
-console.log($storySlides)
+//console.log($storySlides)
 
     // Right/Left arrow event listener
 	$('#impact-stories button').on('click',function(e){
@@ -112,7 +112,7 @@ console.log($storySlides)
 	$('a:not([data-lity]):not(".video")').on('click', function(e) {
 		e.stopPropagation();
 		this.click();
-		console.log('a not lity, not video click event');
+		//console.log('a not lity, not video click event');
 	});
 
 
