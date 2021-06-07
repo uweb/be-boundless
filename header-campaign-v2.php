@@ -43,18 +43,8 @@ global $post;
 		<link rel='stylesheet' id='uw-boundless-css'  href='<?php echo get_stylesheet_directory_uri() . '/style.css' ?>' type='text/css' media='all' />
 		<link rel='stylesheet' id='uw-campaign-css'  href='<?php echo get_stylesheet_directory_uri() . '/campaign/css/campaignv2-style.css' ?>' type='text/css' media='all' />
 		<?php echo $styles; ?>
-		<!-- <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script> -->
 		<script type='text/javascript' src='<?php echo get_stylesheet_directory_uri() . '/campaign/js/vendor/jquery-1.11.3.min.js' ?>'></script>
 		<script type='text/javascript' src='<?php echo get_stylesheet_directory_uri() . '/campaign/js/header.js' ?>'></script>
-
-		<!-- Moved to GTM 6/23/2020 TJS
-		<script src="https://cdn.variametrix.com/d2insights/tracker.min.js"></script>
-		<script>
-			var _iaq = _iaq || [];
-			_iaq.push(['enableHeartBeatTimer', '30']);
-			_iaq.push(['setSiteId', '7a490682-d908-4153-b1b4-ba39c8085050']);
-			_iaq.push(['setCustomerId', '7a490682-d908-4153-b1b4-ba39c8085050']);
-		</script> -->
 	</head>
 	<body id="immersive" <?php body_class(); ?>>
 	<!-- Google Tag Manager (noscript) as of 6/23/2020 TJS -->
@@ -69,8 +59,7 @@ global $post;
 					</div><!-- .col-sm-6 .col-md-6 .col-lg-6 -->
 					<div class="col-sm-6 col-md-6 col-lg-6 cv2-header-menu">
 						<ul class="list-inline hidden-xs">
-						<li><a href="<?php echo get_site_url(); ?>/?utm_source=boundless&utm_medium=purple-topnav&utm_campaign=topnav-campaign-home">Campaign Home</a></li>
-						<li><a href="<?php echo get_site_url(); ?>/about/?utm_source=boundless&utm_medium=purple-topnav&utm_campaign=topnav-about-campaign">About</a></li>
+						<li><a href="<?php echo get_site_url(); ?>/?utm_source=boundless&utm_medium=purple-topnav&utm_campaign=topnav-campaign-home">Home</a></li>
 						<li><a href="<?php echo get_site_url(); ?>/stories/?utm_source=boundless&utm_medium=purple-topnav&utm_campaign=topnav-campaign-stories">Stories</a></li>
 					</ul>
 						<button id="cv2-toggle" class="visible-xs-inline-block">Menu</button>
@@ -81,8 +70,7 @@ global $post;
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<ul class="list-unstyled text-center">
-							<li><a href="<?php echo get_site_url(); ?>/?utm_source=boundless&utm_medium=purple-topnav&utm_campaign=topnav-campaign-home">Campaign Home</a></li>
-							<li><a href="<?php echo get_site_url(); ?>/about/?utm_source=boundless&utm_medium=purple-topnav&utm_campaign=topnav-about-campaign">About</a></li>
+							<li><a href="<?php echo get_site_url(); ?>/?utm_source=boundless&utm_medium=purple-topnav&utm_campaign=topnav-campaign-home">Home</a></li>
 							<li><a href="<?php echo get_site_url(); ?>/stories/?utm_source=boundless&utm_medium=purple-topnav&utm_campaign=topnav-campaign-stories">Stories</a></li>
 						</ul>
 					</div><!-- .col-xs-12 .col-sm-12 .col-md-12 .col-lg-12 -->
@@ -93,9 +81,6 @@ global $post;
 					<div class="col-sm-8 col-md-8 col-lg-8">
 						<form role="region" aria-label="giving-widget">
 							<label for="cv2-header-give-amount">Make your gift today</label>
-							<?php /*<span class="dollar">
-							$<input type="text" id="cv2-header-give-amount" />
-							</span>*/ ?>
 							<button id="cv2-give" data-fund="<?php echo $storyCodes; ?>" data-appeal="<?php echo $storyAppealCodes; ?>">Give</button>
 						</form>
 					</div><!-- .col-sm-8 .col-md-7 .col-lg-6 -->
