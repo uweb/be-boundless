@@ -5,7 +5,7 @@
 .uw-story-header .w-50 .text-primary p { line-height: 1.4; }
 .uw-story-header h1 { font-family: 'Encode Sans Normal', sans-serif; font-size: 3.4vw; }
 
-.uw-story-header.half-height { max-height: 40vh; min-height: 450px; }
+.uw-story-header.half-height { max-height: 40vh; min-height: 500px; }
 
 @media (min-width: 768px) {
 	.uw-story-header .text-primary p { font-size: 22px; }
