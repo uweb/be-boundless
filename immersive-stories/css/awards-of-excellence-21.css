@@ -1,11 +1,11 @@
 .udub-slant-divider.white span { background-color: #4b2e83; }
-.uw-story-header.background-image.half-height { background-position: center right; }
+.uw-story-header.background-image.half-height { background-position: center right !important; }
 .uw-story-header .w-50 { padding: 6rem 1rem 6rem 0; }
 .uw-story-header .w-50 .text-primary { width: 75%; }
 .uw-story-header .w-50 .text-primary p { line-height: 1.4; }
 .uw-story-header h1 { font-family: 'Encode Sans Normal', sans-serif; font-size: 3.4vw; }
 
-.uw-story-header.half-height { max-height: 40vh; min-height: 350px; }
+.uw-story-header.half-height { max-height: 40vh; min-height: 450px; }
 
 @media (min-width: 768px) {
 	.uw-story-header .text-primary p { font-size: 22px; }
