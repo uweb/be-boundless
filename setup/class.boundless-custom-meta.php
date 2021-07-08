@@ -92,7 +92,7 @@ class Boundless_Custom_Meta {
             if ($tag['id'] == 'image_meta') {
                 $input = '<h4>' . $tag['title'] . '</h4><p>' . $tag['description'] . '</p><input style="width: 80%" id="image_meta" name="image_meta" type="text" value="' . $post->image_meta . '" placeholder="Add media link"> <input style="width: 19%" class="button meta_media" id="upload_button" name="upload_button" type="button" value="Upload" /><p></p><br>';
             } else {
-                $input = '<h4>' . $tag['title'] . '</h4><p>' . $tag['description'] . '</p><input style="width: 100%" id="' . $tag['id'] . '" name="' . $tag['id'] . '" type="text" placeholder="Enter ' . $tag['title'] . ' value" value="' . $post->$tag['id'] . '"></input><p></p><br>';
+                $input = '<h4>' . $tag['title'] . '</h4><p>' . $tag['description'] . '</p><input style="width: 100%" id="' . $tag['id'] . '" name="' . $tag['id'] . '" type="text" placeholder="Enter ' . $tag['title'] . ' value" value="' . $tag['id'] . '"></input><p></p><br>';
             }
             echo $input;
         }
