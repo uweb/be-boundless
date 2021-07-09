@@ -1,4 +1,18 @@
-@media screen and (max-width: 768px) { .uw-story-header.background-image.header-img-v-center.header-img-right { background-position: 85%; } }
+@media screen and (max-width: 767px) { .uw-story-header.background-image.header-img-v-center.header-img-right { background-position: 85%; } }
+
+@media screen and (max-width: 1125px) and (min-width: 973px) {
+	.uw-story-header .w-50 {
+		width: 40% !important;
+	}
+}
+
+@media screen and (max-width: 972px) and (min-width: 768px) {
+	.uw-story-header .w-50 {
+		width: 30% !important;
+		padding-top: 0;
+	}
+	.uw-story-header .w-50 h1 { margin-top: 0; }
+}
 
 #copy-block-2 .row { padding-top: 0; }
 #copy-block-4 .row { padding-bottom: 0; }
@@ -6,33 +20,96 @@
 
 .uw-story-body .carousel.full-width .carousel-inner .carousel-item img { object-position: right center; }
 
-.uw-story-body .carousel .carousel-item .carousel-caption {
-	position:absolute;
-	top: 30%;
-	background: none;
-	width: 30% !important;
+@media screen and (min-width: 768px) {
+	.uw-story-body .carousel .carousel-item .carousel-caption {
+		position: absolute;
+		background: none;
+		width: 30% !important;
+		right: auto;
+		left: 10%;
+	}
+
+	.uw-story-body .carousel .slide-0.carousel-item .carousel-caption {
+		top: auto;
+		bottom: 5%;
+		width: 35% !important;
+	}
+
+	.uw-story-body .carousel .slide-1.carousel-item .carousel-caption {
+		top: auto;
+		bottom: 5%;
+	}
+
+	.uw-story-body .carousel .slide-2.carousel-item .carousel-caption {
+		top: auto;
+		bottom: 5%;
+	}
+
+	.carousel.full-width .carousel-inner .carousel-caption .display-3, .carousel.full-width .carousel-inner .carousel-caption p {
+		color: #fff;
+		font-family: 'Encode Sans', sans-serif;
+		font-size: 3rem;
+		line-height: 1.2;
+		font-weight: 500;
+		font-style: normal;
+		border-bottom: 0 none;
+		background: none;
+		padding: 0;
+	}
+
+	.carousel.full-width .carousel-inner .carousel-caption .display-3, .carousel.full-width .carousel-inner .carousel-caption p span {
+		color: #fff;
+		font-family: 'Encode Sans', sans-serif;
+		font-size: 8rem;
+		line-height: 1;
+		font-weight: 500;
+		background: none;
+		display: block;
+		margin-bottom:10px
+	}
 }
 
-.carousel.full-width .carousel-inner .carousel-caption .display-3, .carousel.full-width .carousel-inner .carousel-caption p {
-	color: #fff;
-	font-family: 'Encode Sans', sans-serif;
-	font-size: 3rem;
-	line-height: 1.4;
-	font-weight: 500;
-	font-style: normal;
-	border-bottom: 0 none;
-	background: none;
-	padding: 0;
+@media screen and (max-width: 1060px) and (min-width: 768px) {
+	.uw-story-body .carousel .slide-0.carousel-item .carousel-caption {
+		top: 5%;
+		bottom: auto;
+	}
+
+	.carousel.full-width .carousel-inner .carousel-caption .display-3, .carousel.full-width .carousel-inner .carousel-caption p span { font-size: 5rem; }
+
+	.carousel.full-width .carousel-inner .carousel-caption .display-3, .carousel.full-width .carousel-inner .carousel-caption p { font-size: 2rem; }
+
+	.uw-story-body .carousel .slide-1.carousel-item .carousel-caption {
+		bottom: 0;
+		top: auto;
+		width: 100% !important;
+	}
+
+	.uw-story-body .carousel .slide-2.carousel-item .carousel-caption {
+		bottom: 0;
+		left: 6rem;
+		top: auto;
+	}
 }
 
-.carousel.full-width .carousel-inner .carousel-caption .display-3, .carousel.full-width .carousel-inner .carousel-caption p span {
-	color: #fff;
-	font-family: 'Encode Sans', sans-serif;
-	font-size: 8rem;
-	line-height: 1;
-	font-weight: 500;
-	background: none;
-	display: block;
+@media screen and (max-width: 767px) {
+	.carousel.full-width .carousel-inner .carousel-caption {
+		background: white !important;
+		position: relative;
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 95% !important;
+	}
+
+	.carousel.full-width .carousel-inner .carousel-caption .display-3, .carousel.full-width .carousel-inner .carousel-caption p {
+		background: white;
+		color: gray;
+		font-style: italic;
+	}
 }
 
-@media screen and (max-width: 768px) { #half-columns-5 .row { padding: 0; } }
+@media screen and (max-width: 767px) {
+	#half-columns-1 .row { padding-left: 0; padding-right: 0; padding-bottom: 40px; }
+	#half-columns-5 .row { padding: 0 0 40px 0; }
+	#flex-content-section-6 .row { padding: 0; }
+}
