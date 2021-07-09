@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px) { .uw-story-header.background-image.header-img-v-center.header-img-right { background-position: 85%; } }
+
+#copy-block-2 .row { padding-top: 0; }
+#copy-block-4 .row { padding-bottom: 0; }
+#copy-block-7 h2 { margin-top: 0; }
+
+.uw-story-body .carousel.full-width .carousel-inner .carousel-item img { object-position: right center; }
+
+#half-columns-5 .row { padding: 0; }
