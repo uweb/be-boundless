@@ -6,4 +6,33 @@
 
 .uw-story-body .carousel.full-width .carousel-inner .carousel-item img { object-position: right center; }
 
-#half-columns-5 .row { padding: 0; }
+.uw-story-body .carousel .carousel-item .carousel-caption {
+	position:absolute;
+	top: 30%;
+	background: none;
+	width: 30% !important;
+}
+
+.carousel.full-width .carousel-inner .carousel-caption .display-3, .carousel.full-width .carousel-inner .carousel-caption p {
+	color: #fff;
+	font-family: 'Encode Sans', sans-serif;
+	font-size: 3rem;
+	line-height: 1.4;
+	font-weight: 500;
+	font-style: normal;
+	border-bottom: 0 none;
+	background: none;
+	padding: 0;
+}
+
+.carousel.full-width .carousel-inner .carousel-caption .display-3, .carousel.full-width .carousel-inner .carousel-caption p span {
+	color: #fff;
+	font-family: 'Encode Sans', sans-serif;
+	font-size: 8rem;
+	line-height: 1;
+	font-weight: 500;
+	background: none;
+	display: block;
+}
+
+@media screen and (max-width: 768px) { #half-columns-5 .row { padding: 0; } }
