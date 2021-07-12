@@ -112,7 +112,7 @@
 	#half-columns-5 .row { padding: 0 0 40px 0; }
 }
 
-#toggle-6 { padding-top: 0; }
+#toggle-6 .row { padding-top: 0; }
 
 @media screen and (min-width: 768px) {
 	#toggle-6 img.alignright {
