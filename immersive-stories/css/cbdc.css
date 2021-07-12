@@ -16,7 +16,6 @@
 
 #copy-block-2 .row { padding-top: 0; }
 #copy-block-4 .row { padding-bottom: 0; }
-#copy-block-7 h2 { margin-top: 0; }
 
 .uw-story-body .carousel.full-width .carousel-inner .carousel-item img { object-position: right center; }
 
@@ -111,5 +110,12 @@
 @media screen and (max-width: 767px) {
 	#half-columns-1 .row { padding-left: 0; padding-right: 0; padding-bottom: 40px; }
 	#half-columns-5 .row { padding: 0 0 40px 0; }
-	#flex-content-section-6 .row { padding: 0; }
+}
+
+#toggle-6 { padding-top: 0; }
+
+@media screen and (min-width: 768px) {
+	#toggle-6 img.alignright {
+		margin: 20px 20px 10px 60px;
+	}
 }
