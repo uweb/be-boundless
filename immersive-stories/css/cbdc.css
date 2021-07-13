@@ -118,4 +118,9 @@
 	#toggle-6 img.alignright {
 		margin: 20px 20px 10px 60px;
 	}
+
+	.uw-story-body .carousel .slide-1.carousel-item .carousel-caption p,
+	.uw-story-body .carousel .slide-2.carousel-item .carousel-caption p {
+		text-shadow: 1px 1px 3px rgb(0 0 0 / 40%);
+	}
 }
