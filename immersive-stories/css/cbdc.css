@@ -125,9 +125,9 @@
 
 @media screen and (min-width: 1024px) {
 	#half-columns-6 .row {
+		-ms-grid-columns: 2fr 40px 1fr;
 		grid-template-columns: 2fr 1fr;
 		grid-column-gap: 40px;
-		column-gap: 40px;
 	}
 
 	#half-columns-6 .right-column p { font-size: 16px; }
