@@ -64,7 +64,7 @@ if ( ! post_type_exists( 'stories' ) ):
 
     $return = '<section id="impact-stories">' .
                 '<div class="content">' .
-                    '<h2>Stories of impact</h2>' .
+                    '<h2>More stories of impact</h2>' .
                     '<hr class="no-margin">' .
                 '</div>' .
                 '<div class="container"><div class="story-container"><div id="story-slider">';
