@@ -1,0 +1,5 @@
+@media (max-width: 767px) {
+	.uw-story-header.background-image.header-img-v-center.header-img-right {
+		background-position: 80% center;
+	}
+}
