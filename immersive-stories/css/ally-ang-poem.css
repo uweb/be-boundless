@@ -12,4 +12,23 @@
 	#copy-block-1 .row div {
 		padding-left: 0 !important;
 	}
+
+	.uw-story-header.full-video .modal .modal-content {
+		height: 50%;
+		max-height: none;
+		/* align-content: flex-start; */
+	}
+
+	.uw-story-header.full-video .modal .modal-dialog {
+		max-height: none;
+		height: auto;
+	}
+
+	.uw-story-header.full-video .modal .modal-content .modal-body {
+		height: 100%;
+	}
+
+	.uw-story-header.full-video .modal .modal-content .modal-body iframe {
+		max-height: none;
+	}
 }
