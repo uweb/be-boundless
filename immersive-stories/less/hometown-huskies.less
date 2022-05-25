@@ -11,9 +11,9 @@
  @import "../../immersive-stories/less/lity.less";
  //@import "../../immersive-stories/less/slideshow.less";
  @import "../../immersive-stories/less/slideshow-simple.less";
- 
+
  @hometownhuskies: "../../immersive-stories/img/hometown-huskies";
- 
+
  // @media @phone-only { }              //  (max-width: 599px)
  // @media @tablet-portrait-up { }      //  (min-width: 600px)
  // @media @tablet-portait-only { }     //  (min-width: 600px) and (max-width: 899px)
@@ -22,8 +22,8 @@
  // @media @desktop-up { }              //  (min-width: 1200px)
  // @media @desktop-only { }            //  (min-width: 1200px) and (max-width: 1799px)"
  // @media @big-desktop-up { }          //  (min-width: 1800px)
- 
- 
+
+
  /***************************************************
 	* Namespacing to prevent bleed over to /boundless *
 	***************************************************/
@@ -41,24 +41,24 @@ html {
 		 position: relative;
 	}
 }
- 
+
 #immersive-body {
 	/*****************
 		* Text and Such *
 		*****************/
 	 overflow: hidden;
- 
+
 	 p {
 		 font-size: 17px;
 		 line-height: 32px;
 	 }
- 
+
 	 h1, h3 {
 		 font-family: @headline;
 		 font-weight: @ultra;
 		 color: white;
 	 }
- 
+
 	 h2 {
 		font-family: @headline;
 		font-weight: @ultra;
@@ -72,7 +72,7 @@ html {
 		 text-transform: uppercase;
 		 color: #818181;
 	 }
- 
+
 	 /**********************
 		* Heading/Intro      *
 		**********************/
@@ -87,7 +87,7 @@ html {
 		 background-position: top center;
 		 background-repeat: no-repeat;
 		 margin-top: -20px;
-		 margin-bottom: 0;
+		 margin-bottom: 0 !important;
 
 		 @media (min-width: 1400px) {
 			 margin-top: -40px;
@@ -116,7 +116,7 @@ html {
 				background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.0) 40%);
 			}
 		}
- 
+
 		 h1 {
 			text-transform: uppercase;
 			color: white;
@@ -149,7 +149,7 @@ html {
 					text-align: center;
 					text-transform: uppercase;
 					margin-top: 10vw;
-	
+
 					@media (max-width: 991px) {
 						margin-top: 0;
 						margin-left: 0;
@@ -169,7 +169,7 @@ html {
 					}
 				}
 			}
-		
+
 			@media (max-width: 991px) {
 				position: absolute;
 				top: 70%;
@@ -182,12 +182,12 @@ html {
 					line-height: 1.4;
 					font-size: .65em;
 				}
-		
+
 				.udub-slant {
 					display: none;
 				}
 			}
-		
+
 			@media (min-width: 992px) {
 				& > div {
 					.flex-display(flex);
@@ -212,7 +212,7 @@ html {
 			}
 		 }
 	 }
- 
+
 	 /******************
 		* Content Blocks *
 		******************/
@@ -269,10 +269,10 @@ html {
 		height: 100vh;
 		overflow: hidden;
 
-		.container { 
+		.container {
 			height: 100%;
 
-			.row { 
+			.row {
 				height: 100%;
 				display: flex;
 				align-items: center;
@@ -318,7 +318,7 @@ html {
 
 			&.gym-rowing-2 {
 				background-image: url("@{hometownhuskies}/rowing-2.jpg");
-				
+
 				@media (prefers-reduced-motion: no-preference) {
 					-webkit-transition: all 2s ease;
 					-moz-transition: all 2s ease;
@@ -346,7 +346,7 @@ html {
 				height: 100%;
 				background: inherit;
 				z-index: 1;
-			
+
 				@media (prefers-reduced-motion: no-preference) {
 					-webkit-transition: all 2s ease;
 					-moz-transition: all 2s ease;
@@ -369,12 +369,12 @@ html {
 				height: 100%;
 				background: inherit;
 				z-index: 1;
-			
+
 				filter: blur(10px);
 				-moz-filter: blur(10px);
 				-webkit-filter: blur(10px);
 				-o-filter: blur(10px);
-			
+
 				@media (prefers-reduced-motion: no-preference) {
 					-webkit-transition: all 4s ease;
 					-moz-transition: all 4s ease;
@@ -391,7 +391,7 @@ html {
 			}
 
 			blockquote {
-				color: white; 
+				color: white;
 				font-family: @headline;
 				font-weight: @ultra;
 				text-transform: uppercase;
@@ -482,7 +482,7 @@ html {
 	.slick-slide {
 		border: 5px solid white;
 		border-top: 0 none;
-	
+
 		@media @tablet-landscape-up {
 			border-top: 10px solid white;
 		}
@@ -540,11 +540,11 @@ html {
 		 z-index: 900;
 	 }
 	}
- 
+
 	.bar {
 	 background-color: #E0E0E0 !important;
 	}
- 
+
 div#preload { display: none !important; }
 
  /*****************
@@ -586,7 +586,7 @@ div#preload { display: none !important; }
 	 background-position: right bottom;
 	 background-repeat: no-repeat;
 	 margin-top: 0;
-	 
+
 	@media (max-width: 768px) {
 				height: 100vh;
 
@@ -609,16 +609,16 @@ div#preload { display: none !important; }
 		max-width: 600px; margin: 0 auto;
 	}
 
-	h2.headline-gold, .copy p { 
+	h2.headline-gold, .copy p {
 		color: @purple;
-		text-shadow: 0 0 0; 
+		text-shadow: 0 0 0;
 
 		@media (max-width: 768px) {
 			color: white;
 		}
 	}
 
-	 .copy p { 
+	 .copy p {
 		 border-top: 1px solid @purple;
 		 border-bottom: 1px solid @purple;
 		 padding: 20px 15px;
@@ -628,4 +628,3 @@ div#preload { display: none !important; }
 		 }
 	 }
  }
- 
