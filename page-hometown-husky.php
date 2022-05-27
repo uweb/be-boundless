@@ -271,7 +271,7 @@
 
 						<p>The Hometown Huskies program is open to athletes from across Washington state. Current and future UW students are invited to try out for the women&rsquo;s crew team, and the scholarship is awarded annually to the most deserving walk-on athlete.</p>
 
-						<p><em>Originally published June 2019. Jensen&rsquo;s novice eight boat won their race at the Pac-12 championships in Gold River, California, in May. The varsity boats swept all three grand finals in the NCAA championship in June, clinching their fifth national rowing title. Jensen, now a sophomore, has already wrapped up her fall season with UW Women&rsquo;s Rowing. She has her sights set on a varsity spot this coming spring.</em></p>
+						<p><em>Originally published June 2019</em></p>
 
 						<?php //campaign_pubdate($post, $publishMonthYear); ?>
 					</div><!-- .copy -->
