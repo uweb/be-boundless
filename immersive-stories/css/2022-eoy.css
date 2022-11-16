@@ -1,1 +1,1 @@
-@media screen and (min-width:1280px){.uw-story-body .profile-boxes ul.profiles.five-columns{grid-template-columns:repeat(5,1fr)}}@media screen and (max-width:1279px){.uw-story-body .profile-boxes ul.profiles.five-columns{grid-template-columns:repeat(auto-fill,minmax(449px,1fr))}}
+@media screen and (min-width:1024px){.uw-story-body .profile-boxes ul.profiles.five-columns{grid-template-columns:repeat(5,1fr)}}@media screen and (max-width:1023px){.uw-story-body .profile-boxes ul.profiles.five-columns{grid-template-columns:repeat(auto-fill,minmax(449px,1fr))}}
