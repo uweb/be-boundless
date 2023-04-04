@@ -1,7 +1,7 @@
 @media (max-width: 768px) {
 	.uw-story-header {
 		height: 100%;
-		min-height: 100%;
+		min-height: 300px;
 		margin-top: 14px;
 		align-items: center;
 	}
