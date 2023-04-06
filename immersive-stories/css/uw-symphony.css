@@ -34,4 +34,5 @@
 		max-height: none;
 		height: 100%;
 	}
+	.uw-story-header.mobile-header-center.white.background-image:before, .uw-story-header.mobile-header-center.white.background-video:before { background: transparent; }
 }
