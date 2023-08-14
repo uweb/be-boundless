@@ -66,92 +66,15 @@ global $scripts;
 			</div><!-- .row -->
 		</div><!-- .cv2-footer -->
 		<?php echo $scripts; ?>
-		<?php if($_SERVER['HTTP_HOST'] != 'localhost'){ ?>
-			<script>
-				// Moved to GTM 6/23/2020 TJS
-				// Still need this part 08/31/2020 TJS
-				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-				ga('create', 'UA-15747328-1', 'auto', {'allowLinker': true});
-				ga('require', 'linker');
-				ga('linker:autoLink', ['online.gifts.washington.edu'], ['gifts.washington.edu']);
-
-				ga('send', 'pageview');
-				var GIFTLISTENER = {
-				    serverValues: {},
-				    init: function init(or) {
-				        var arr = or.split("/");
-
-				        this.serverValues.origin = arr[0] + "//" + arr[2];
-
-				        // Setup an event listener that calls receiveMessage() when the window
-				        // receives a new MessageEvent.
-				        window.addEventListener('message', GIFTLISTENER.receiveMessage);
-
-				        // test
-				        //GIFTLISTENER.parseMsg("AppealCode|x|15XMG|x|TotalAmount|x|20|x|DonationID|x|113813|x|Funds|x|Fund|x|Libraries Excellence Fund|x|AllocationCode|x|LIBDIS|x|Amount|x|10|x|,|x|Fund|x|Students First Scholarship Fund|x|AllocationCode|x|SFIRST|x|Amount|x|10");
-
-				    },
-				    receiveMessage: function receiveMessage(e) {
-				        // A function to process messages received by the window.
-				        // Check to make sure that this message came from the correct domain.
-				        var regex = new RegExp(GIFTLISTENER.serverValues.origin + '$'),
-				            strD;
-
-				        if (!e.origin.match(regex)) {
-				            return;
-				        }
-				        strD = e.data + "";
-				        GIFTLISTENER.sendTransactionGA(GIFTLISTENER.parseMsg(strD));
-				    },
-				    parseMsg: function parseMsg(msg) {
-				        // Parse message recieved
-				        var transaction = (msg.slice(0, msg.indexOf("|x|Funds|x|"))).split("|x|"),
-				            funds = (msg.slice((msg.indexOf("Funds|x|") + 8), msg.length)).split("|x|,|x|"),
-				            fundsLength = funds.length,
-				            i = 0;
-
-				        for (i; i < fundsLength; i++) {
-				            funds[i] = funds[i].split("|x|");
-				        }
-
-				        return [transaction, funds];
-				    },
-				    sendTransactionGA: function sendTransactionGA(transaction) {
-				        // Send transaction to GA
-				        // Requires e-commerce feature to be activated on your analytics account
-				        var fundsLength = transaction[1].length,
-				            i = 0;
-
-				        // remove this if you have already added it somewhere else after integrating GA e-commerce
-				        ga('require', 'ecommerce');
-
-				        // add transaction
-				        ga('ecommerce:addTransaction', {
-				            'id': transaction[0][5],            // Transaction ID. Required.
-				            'affiliation': transaction[0][1],   // Affiliation.
-				            'revenue': transaction[0][3],       // Grand Total.
-				        });
-
-				        // add items
-				        for (i; i < fundsLength; i++) {
-				            ga('ecommerce:addItem', {
-				                'id': transaction[0][5],        // Transaction ID. Required.
-				                'name': transaction[1][i][1],   // Product name. Required.
-				                'sku': transaction[1][i][3],    // SKU.
-				                'price': transaction[1][i][5],  // Unit price.
-				                'quantity': '1'
-				            });
-				        }
-
-				        // send transaction w/items
-				        ga('ecommerce:send');
-				    }
-				};
-
-			</script>
-		<?php } ?>
+		<script type="text/javascript">
+		//set up gift listener
+		//GIFTLISTENER.init(string iframeOrigin, string syntax)
+		window.onload = function() {
+			GIFTLISTENER.init("https://www.washington.edu","GTAG");
+		}
+		//reference the giftListener.js script
+		</script>
+		
+		<script type="text/javascript" src="https://online.gifts.washington.edu/secure/Scripts/Extensions/ADVSTI_giftListener.js"></script>
 	</body>
 </html>
