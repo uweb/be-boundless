@@ -70,7 +70,7 @@ global $scripts;
 		//set up gift listener
 		//GIFTLISTENER.init(string iframeOrigin, string syntax)
 		window.onload = function() {
-			GIFTLISTENER.init("https://online.gifts.washington.edu/","GTAG");
+			GIFTLISTENER.init("https://online.gifts.washington.edu","GTAG");
 		}
 		//reference the giftListener.js script
 		</script>
