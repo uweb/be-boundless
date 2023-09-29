@@ -21,7 +21,7 @@ function twitter_card($photo, $title, $descrpition) {
 
 	$meta = array();
 	if ($title) {
-		$meta['og:title'] = $title;
+		$meta['og:title'] = wp_strip_all_tags( $title );
 		$meta['og:description'] = $descrpition;
 		$meta['og:image'] = $photo;
 	}
@@ -56,7 +56,7 @@ function custom_meta($post, $meta) {
 
 
 	// Title / og:title
-	$output .= '<meta property="og:title" content="' . $title . '"/>' . PHP_EOL;
+	$output .= '<meta property="og:title" content="' . wp_strip_all_tags( $title ) . '"/>' . PHP_EOL;
 
 	// Image + twitter image / og:image
 	$output .= '<meta property="og:image" content="' . $image . '"/>' . PHP_EOL;
