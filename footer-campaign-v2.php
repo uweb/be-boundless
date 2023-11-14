@@ -66,15 +66,43 @@ global $scripts;
 			</div><!-- .row -->
 		</div><!-- .cv2-footer -->
 		<?php echo $scripts; ?>
-		<script type="text/javascript">
-		//set up gift listener
-		//GIFTLISTENER.init(string iframeOrigin, string syntax)
-		window.onload = function() {
-			GIFTLISTENER.init("https://online.gifts.washington.edu");
-		}
-		//reference the giftListener.js script
-		</script>
+		<script type="text/javascript" src="https://online.gifts.washington.edu/secure/Scripts/Extensions/dist/OGEventListener.js"></script>
+		<script>
+		(function () {
+			//initialize OGEventListener with iframeOrigin parameter
+			//The iframeOrigin parameter passed should match the url of your online giving iframe source.
+			OGEventListener.init("https://online.gifts.washington.edu");
+			
+			//register giftEvent hook and send purchase event with gtag.js
+			OGEventListener.registerHook('giftEvent', function (data) {
+				var transactionItems = [];
+				for (var i = 0; i < data.funds.length; i++) {
+					transactionItems.push({
+					"item_id": data.funds[i].fundCode,    // Fund code
+					"item_name": data.funds[i].fundName,  // Fund name. Required.
+					"quantity": 1,    // Quantity
+					"price": data.funds[i].amount,    // Gift amount
+					"affiliation": (data.appealCode === '') ? "N/A" : data.appealCode,    // Appeal code
+					"item_brand": data.inboundChannel // Inbound channel
+					});
+				}
+				dataLayer.push({
+					"transaction_id": data.donationID,  // Donation ID. Required.
+					"items": transactionItems,  // Items
+					"value": data.totalAmount,  // Total
+					"currency": "USD"
+				});
+			});
 		
-		<script type="text/javascript" src="https://online.gifts.washington.edu/secure/Scripts/Extensions/ADVSTI_giftListener.js"></script>
+			//register searchEvent hook and send search event with gtag.js
+			OGEventListener.registerHook('searchEvent', function (data) {
+				dataLayer.push({
+					'search_term': data.searchTerm
+				});
+			});
+		})();
+		</script>
 	</body>
 </html>
+
+
