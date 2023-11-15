@@ -29,6 +29,9 @@ global $post;
 		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 		})(window,document,'script','dataLayer','GTM-KQ6QQBT');</script>
 		<!-- End Google Tag Manager -->
+		<script>
+			var dataLayer = dataLayer || [];
+		</script>
 
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />

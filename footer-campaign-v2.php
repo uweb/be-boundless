@@ -73,7 +73,7 @@ global $scripts;
 			//The iframeOrigin parameter passed should match the url of your online giving iframe source.
 			OGEventListener.init("https://online.gifts.washington.edu");
 			
-			//register giftEvent hook and send purchase event with gtag.js
+			//register giftEvent hook and send purchase event with gtm.js
 			OGEventListener.registerHook('giftEvent', function (data) {
 				var transactionItems = [];
 				for (var i = 0; i < data.funds.length; i++) {
@@ -94,7 +94,7 @@ global $scripts;
 				});
 			});
 		
-			//register searchEvent hook and send search event with gtag.js
+			//register searchEvent hook and send search event with gtm.js
 			OGEventListener.registerHook('searchEvent', function (data) {
 				dataLayer.push({
 					'search_term': data.searchTerm
