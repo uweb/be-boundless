@@ -87,6 +87,7 @@ global $scripts;
 					});
 				}
 				dataLayer.push({
+					"event": "giftEvent",
 					"transaction_id": data.donationID,  // Donation ID. Required.
 					"items": transactionItems,  // Items
 					"value": data.totalAmount,  // Total
@@ -97,6 +98,7 @@ global $scripts;
 			//register searchEvent hook and send search event with gtm.js
 			OGEventListener.registerHook('searchEvent', function (data) {
 				dataLayer.push({
+					'event': 'giftSearch',
 					'search_term': data.searchTerm
 				});
 			});
