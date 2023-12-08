@@ -66,44 +66,6 @@ global $scripts;
 			</div><!-- .row -->
 		</div><!-- .cv2-footer -->
 		<?php echo $scripts; ?>
-		<script type="text/javascript" src="https://online.gifts.washington.edu/secure/Scripts/Extensions/dist/OGEventListener.js"></script>
-		<script>
-		(function () {
-			//initialize OGEventListener with iframeOrigin parameter
-			//The iframeOrigin parameter passed should match the url of your online giving iframe source.
-			OGEventListener.init("https://online.gifts.washington.edu");
-			
-			//register giftEvent hook and send purchase event with gtm.js
-			OGEventListener.registerHook('giftEvent', function (data) {
-				var transactionItems = [];
-				for (var i = 0; i < data.funds.length; i++) {
-					transactionItems.push({
-					"item_id": data.funds[i].fundCode,    // Fund code
-					"item_name": data.funds[i].fundName,  // Fund name. Required.
-					"quantity": 1,    // Quantity
-					"price": data.funds[i].amount,    // Gift amount
-					"affiliation": (data.appealCode === '') ? "N/A" : data.appealCode,    // Appeal code
-					"item_brand": data.inboundChannel // Inbound channel
-					});
-				}
-				dataLayer.push({
-					"event": "giftEvent",
-					"transaction_id": data.donationID,  // Donation ID. Required.
-					"items": transactionItems,  // Items
-					"value": data.totalAmount,  // Total
-					"currency": "USD"
-				});
-			});
-		
-			//register searchEvent hook and send search event with gtm.js
-			OGEventListener.registerHook('searchEvent', function (data) {
-				dataLayer.push({
-					'event': 'giftSearch',
-					'search_term': data.searchTerm
-				});
-			});
-		})();
-		</script>
 	</body>
 </html>
 
